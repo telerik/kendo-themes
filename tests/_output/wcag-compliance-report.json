@@ -1,835 +1,22 @@
 {
   "meta": {
-    "timestamp": "2026-01-29T20:13:48.787Z",
+    "timestamp": "2026-01-30T12:44:40.754Z",
     "complianceLevel": "AA",
-    "filesTested": 2,
+    "filesTested": 5,
     "wcagVersion": "2.2"
   },
   "summary": {
-    "totalViolations": 2,
-    "totalPasses": 46,
-    "avgScore": 95.8
+    "totalViolations": 0,
+    "totalPasses": 104,
+    "avgScore": 100
   },
-  "criteriaGroups": {
-    "2.5.8": {
-      "criterion": "2.5.8",
-      "level": "AA",
-      "violations": [
-        {
-          "page": "./tests/suggestion/suggestion-group.html",
-          "rule": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "impact": "serious",
-          "nodeCount": 16
-        },
-        {
-          "page": "./tests/suggestion/suggestion-group-scroll-gradient.html",
-          "rule": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "impact": "serious",
-          "nodeCount": 2
-        }
-      ],
-      "affectedPages": [
-        "./tests/suggestion/suggestion-group.html",
-        "./tests/suggestion/suggestion-group-scroll-gradient.html"
-      ],
-      "pageCount": 2
-    }
-  },
+  "criteriaGroups": {},
   "detailedResults": [
     {
-      "filePath": "./tests/suggestion/suggestion-group.html",
-      "timestamp": "2026-01-29T20:13:48.022Z",
-      "violations": [
-        {
-          "id": "target-size",
-          "impact": "serious",
-          "tags": [
-            "cat.sensory-and-visual-cues",
-            "wcag22aa",
-            "wcag258"
-          ],
-          "description": "Ensure touch targets have sufficient size and space",
-          "help": "All touch targets must be 24px large, or leave sufficient space",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/target-size?application=webdriverjs",
-          "nodes": [
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 96.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 96.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion</span>",
-              "target": [
-                "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(1)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 96.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 63.4,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 63.4px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-hover\">Hover</span>",
-              "target": [
-                "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-hover.k-suggestion[role=\"button\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 63.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 64.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-focus\">Focus</span>",
-              "target": [
-                "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-focus.k-suggestion[role=\"button\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 64.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-active\">Active</span>",
-              "target": [
-                "section:nth-child(6) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-active.k-suggestion[role=\"button\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 96.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 96.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(1)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 96.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 63.4,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 63.4px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-hover k-suggestion-base\">Hover</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-hover.k-suggestion-base.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 63.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 64.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-focus k-suggestion-base\">Focus</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-focus.k-suggestion-base.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 64.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-base\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-base.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-active k-suggestion-base\">Active</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-active.k-suggestion-base.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 96.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 96.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(1)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 96.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 63.4,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 63.4px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-hover k-suggestion-primary\">Hover</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-hover.k-suggestion-primary.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 63.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 64.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-focus k-suggestion-primary\">Focus</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-focus.k-suggestion-primary.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 64.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-primary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-primary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-active k-suggestion-primary\">Active</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-active.k-suggestion-primary.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 96.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 96.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(1)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 96.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 63.4,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 63.4px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-hover k-suggestion-secondary\">Hover</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-hover.k-suggestion-secondary.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 63.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 64.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-focus k-suggestion-secondary\">Focus</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-focus.k-suggestion-secondary.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 64.1,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 20,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-suggestion-secondary\">Suggestion with very very very very very very very very very very very very very very very long text</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion-secondary.k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion k-active k-suggestion-secondary\">Active</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-active.k-suggestion-secondary.k-suggestion"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 64.1px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            }
-          ],
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "severity": "serious"
-        }
-      ],
-      "filteredPageLevel": 3,
+      "filePath": "./tests/breadcrumb/breadcrumb.html",
+      "timestamp": "2026-01-30T12:44:38.856Z",
+      "violations": [],
+      "filteredPageLevel": 4,
       "passes": [
         {
           "id": "aria-allowed-attr",
@@ -839,27 +26,8 @@
           ]
         },
         {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
-          "id": "aria-command-name",
-          "description": "Ensure every ARIA button, link and menuitem has an accessible name",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "aria-conditional-attr",
           "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -887,20 +55,6 @@
           ]
         },
         {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "aria-valid-attr-value",
           "description": "Ensure all ARIA attributes have valid values",
           "wcagCriteria": [
@@ -919,13 +73,6 @@
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
             "1.4.1"
-          ]
-        },
-        {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
           ]
         },
         {
@@ -950,6 +97,28 @@
           ]
         },
         {
+          "id": "link-name",
+          "description": "Ensure links have discernible text",
+          "wcagCriteria": [
+            "2.4.4",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "list",
+          "description": "Ensure that lists are structured correctly",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "listitem",
+          "description": "Ensure <li> elements are used semantically",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
           "id": "meta-viewport-large",
           "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
@@ -962,20 +131,8 @@
           ]
         },
         {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "tabindex",
-          "description": "Ensure tabindex attribute values are not greater than 0",
           "wcagCriteria": []
         },
         {
@@ -986,129 +143,23 @@
           ]
         }
       ],
-      "incomplete": [],
-      "inapplicable": 63
+      "incomplete": [
+        {
+          "id": "bypass",
+          "description": "Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "wcagCriteria": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ],
+      "inapplicable": 66
     },
     {
-      "filePath": "./tests/suggestion/suggestion-group-scroll-gradient.html",
-      "timestamp": "2026-01-29T20:13:48.560Z",
-      "violations": [
-        {
-          "id": "target-size",
-          "impact": "serious",
-          "tags": [
-            "cat.sensory-and-visual-cues",
-            "wcag22aa",
-            "wcag258"
-          ],
-          "description": "Ensure touch targets have sufficient size and space",
-          "help": "All touch targets must be 24px large, or leave sufficient space",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/target-size?application=webdriverjs",
-          "nodes": [
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 127.2,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion Last</span>",
-                      "target": [
-                        "section:nth-child(3) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 127.2px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 6,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion Last</span>",
-                      "target": [
-                        "section:nth-child(3) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion First</span>",
-              "target": [
-                "section:nth-child(3) > .k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(1)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 127.2px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
-            },
-            {
-              "any": [
-                {
-                  "id": "target-size",
-                  "data": {
-                    "messageKey": "partiallyObscured",
-                    "minSize": 24,
-                    "width": 127.2,
-                    "height": 20
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion Last</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group-scrollable-end > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient size because it is partially obscured (smallest space is 127.2px by 20px, should be at least 24px by 24px)"
-                },
-                {
-                  "id": "target-offset",
-                  "data": {
-                    "closestOffset": 6,
-                    "minOffset": 24
-                  },
-                  "relatedNodes": [
-                    {
-                      "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\">Suggestion Last</span>",
-                      "target": [
-                        ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group-scrollable-end > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(5)"
-                      ]
-                    }
-                  ],
-                  "impact": "serious",
-                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<span role=\"button\" tabindex=\"0\" class=\"k-suggestion\" style=\"margin-inline-start: -30px;\">Suggestion First</span>",
-              "target": [
-                ".k-suggestion-group-scrollable.k-suggestion-group-scrollable-start.k-suggestion-group-scrollable-end > .k-suggestions-scroll > .k-suggestion[role=\"button\"]:nth-child(1)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 127.2px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
-            }
-          ],
-          "wcagCriteria": [
-            "2.5.8"
-          ],
-          "severity": "serious"
-        }
-      ],
-      "filteredPageLevel": 3,
+      "filePath": "./tests/breadcrumb/breadcrumb-size.html",
+      "timestamp": "2026-01-30T12:44:39.316Z",
+      "violations": [],
+      "filteredPageLevel": 4,
       "passes": [
         {
           "id": "aria-allowed-attr",
@@ -1118,27 +169,8 @@
           ]
         },
         {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
-          "id": "aria-command-name",
-          "description": "Ensure every ARIA button, link and menuitem has an accessible name",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "aria-conditional-attr",
           "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -1166,15 +198,144 @@
           ]
         },
         {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
           "wcagCriteria": [
             "4.1.2"
           ]
         },
         {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "link-name",
+          "description": "Ensure links have discernible text",
+          "wcagCriteria": [
+            "2.4.4",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "list",
+          "description": "Ensure that lists are structured correctly",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "listitem",
+          "description": "Ensure <li> elements are used semantically",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "bypass",
+          "description": "Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "wcagCriteria": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ],
+      "inapplicable": 66
+    },
+    {
+      "filePath": "./tests/breadcrumb/breadcrumb-rtl.html",
+      "timestamp": "2026-01-30T12:44:39.647Z",
+      "violations": [],
+      "filteredPageLevel": 4,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -1201,13 +362,6 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
@@ -1226,6 +380,209 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "link-name",
+          "description": "Ensure links have discernible text",
+          "wcagCriteria": [
+            "2.4.4",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "list",
+          "description": "Ensure that lists are structured correctly",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "listitem",
+          "description": "Ensure <li> elements are used semantically",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "bypass",
+          "description": "Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "wcagCriteria": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ],
+      "inapplicable": 66
+    },
+    {
+      "filePath": "./tests/breadcrumb/breadcrumb-items.html",
+      "timestamp": "2026-01-30T12:44:39.952Z",
+      "violations": [],
+      "filteredPageLevel": 4,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
+        },
+        {
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "link-name",
+          "description": "Ensure links have discernible text",
+          "wcagCriteria": [
+            "2.4.4",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "list",
+          "description": "Ensure that lists are structured correctly",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "listitem",
+          "description": "Ensure <li> elements are used semantically",
+          "wcagCriteria": [
+            "1.3.1"
           ]
         },
         {
@@ -1253,8 +610,191 @@
           "wcagCriteria": []
         },
         {
-          "id": "tabindex",
-          "description": "Ensure tabindex attribute values are not greater than 0",
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "bypass",
+          "description": "Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "wcagCriteria": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ],
+      "inapplicable": 59
+    },
+    {
+      "filePath": "./tests/breadcrumb/breadcrumb-items-rtl.html",
+      "timestamp": "2026-01-30T12:44:40.505Z",
+      "violations": [],
+      "filteredPageLevel": 4,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "image-alt",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "wcagCriteria": [
+            "1.1.1"
+          ]
+        },
+        {
+          "id": "image-redundant-alt",
+          "description": "Ensure image alternative is not repeated as text",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "link-name",
+          "description": "Ensure links have discernible text",
+          "wcagCriteria": [
+            "2.4.4",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "list",
+          "description": "Ensure that lists are structured correctly",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "listitem",
+          "description": "Ensure <li> elements are used semantically",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
         },
         {
@@ -1265,8 +805,17 @@
           ]
         }
       ],
-      "incomplete": [],
-      "inapplicable": 63
+      "incomplete": [
+        {
+          "id": "bypass",
+          "description": "Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "wcagCriteria": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ],
+      "inapplicable": 59
     }
   ]
 }

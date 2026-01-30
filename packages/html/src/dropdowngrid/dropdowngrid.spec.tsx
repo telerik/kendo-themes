@@ -59,6 +59,10 @@ export type KendoDropdownGridProps = KendoDropdownGridOptions & {
     adaptiveSettings?: KendoActionSheetProps;
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
+    id?: string;
+    activeDescendantId?: string;
+    listboxId?: string;
+    ariaLabel?: string;
 };
 
 export type KendoDropdownGridState = { [K in (typeof states)[number]]?: boolean };
@@ -91,6 +95,10 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
         adaptiveSettings,
         adaptiveTitle,
         adaptiveSubtitle,
+        id,
+        activeDescendantId,
+        listboxId,
+        ariaLabel,
         ...other
     } = props;
 
@@ -122,7 +130,19 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                         {separators && <InputSeparator />}
                     </>
                 }
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput
+                    placeholder={placeholder}
+                    value={value}
+                    role="combobox"
+                    aria-label={ariaLabel}
+                    aria-haspopup="listbox"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-autocomplete="list"
+                    {...(opened && listboxId && { 'aria-controls': listboxId })}
+                    {...(opened && activeDescendantId && { 'aria-activedescendant': activeDescendantId })}
+                    disabled={disabled}
+                    readonly={readonly}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -147,6 +167,8 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                     icon="caret-alt-down"
                     size={size}
                     fillMode={fillMode}
+                    aria-label="Open"
+                    tabIndex={-1}
                 />
             </Input>
             {opened && popup &&
@@ -158,7 +180,7 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Confirm selection" />}
                             input={true}
                             inputValue={value}
                             inputPlaceholder={placeholder}
@@ -186,18 +208,18 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                                 <TableListTh text="Initial group"></TableListTh>
                             </TableGroupStickyHeader>
                             <TableBody>
-                                <TableList>
-                                    <TableListRow>
+                                <TableList role="listbox" aria-label="DropdownGrid options">
+                                    <TableListRow role="option" id={`${id}-option-1`} tabIndex={-1}>
                                         <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
                                         <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
                                         <TableListTd text="Data 1.3"></TableListTd>
                                     </TableListRow>
-                                    <TableListRow alt>
+                                    <TableListRow role="option" id={`${id}-option-2`} alt tabIndex={-1}>
                                         <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
                                         <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
                                         <TableListTd text="Data 2.3"></TableListTd>
                                     </TableListRow>
-                                    <TableListRow>
+                                    <TableListRow role="option" id={`${id}-option-3`} tabIndex={-1}>
                                         <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
                                         <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
                                         <TableListTd text="Data 3.3"></TableListTd>
@@ -205,17 +227,17 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                                     <TableListGroupRow>
                                         <TableListTh text="Group"></TableListTh>
                                     </TableListGroupRow>
-                                    <TableListRow>
+                                    <TableListRow role="option" id={`${id}-option-4`} tabIndex={-1}>
                                         <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
                                         <TableListTd text="Data 4.2" style={{ width: '160px' }}></TableListTd>
                                         <TableListTd text="Data 4.3"></TableListTd>
                                     </TableListRow>
-                                    <TableListRow alt>
+                                    <TableListRow role="option" id={`${id}-option-5`} alt tabIndex={-1}>
                                         <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
                                         <TableListTd text="Data 5.2 (alt)" style={{ width: '160px' }}></TableListTd>
                                         <TableListTd text="Data 5.3"></TableListTd>
                                     </TableListRow>
-                                    <TableListRow>
+                                    <TableListRow role="option" id={`${id}-option-6`} tabIndex={-1}>
                                         <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
                                         <TableListTd text="Data 6.2" style={{ width: '160px' }}></TableListTd>
                                         <TableListTd text="Data 6.3"></TableListTd>

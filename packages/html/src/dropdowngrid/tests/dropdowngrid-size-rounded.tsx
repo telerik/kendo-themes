@@ -22,7 +22,7 @@ export default () =>(
                     { DropdownGrid.options.size.map((size) => (
                         <>
                             <div>
-                                <DropdownGridNormal size={size} rounded={rounded} value="DropdownGrid"/>
+                                <DropdownGridNormal ariaLabel="DropdownGrid" size={size} rounded={rounded} value="DropdownGrid"/>
                             </div>
                         </>
                     ))}

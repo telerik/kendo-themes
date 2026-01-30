@@ -11,6 +11,10 @@ const states = [
 
 export type KendoTableListRowProps = {
     alt?: boolean;
+    role?: string;
+    'aria-selected'?: 'true' | 'false';
+    id?: string;
+    tabIndex?: number;
 };
 
 export type KendoTableListRowState = { [K in (typeof states)[number]]?: boolean };
@@ -27,6 +31,10 @@ export const TableListRow = (
         selected,
         disabled,
         alt,
+        role,
+        'aria-selected': ariaSelected,
+        id,
+        tabIndex,
         ...other
     } = props;
 
@@ -46,6 +54,10 @@ export const TableListRow = (
                     selected,
                 })
             )}
+            {...(role && { role })}
+            {...(ariaSelected && { 'aria-selected': ariaSelected })}
+            {...(id && { id })}
+            {...(tabIndex !== undefined && { tabIndex })}
         >
             {props.children}
         </li>

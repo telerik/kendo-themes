@@ -1,1804 +1,419 @@
 {
-  "timestamp": "2026-01-29T20:00:59.991Z",
+  "timestamp": "2026-01-30T11:46:36.334Z",
   "summary": {
-    "filesTested": 5,
+    "filesTested": 8,
     "skipped": 0,
-    "passed": 32,
-    "violations": 133
+    "passed": 1290,
+    "violations": 8
   },
   "results": [
     {
-      "filePath": "./tests/stepper/stepper.html",
-      "spec": "aria/stepper_aria.md",
-      "totalRules": 5,
-      "testedRules": 4,
+      "filePath": "./tests/dropdowngrid/dropdowngrid.html",
+      "spec": "aria/dropdowngrid_aria.md",
+      "totalRules": 21,
+      "testedRules": 9,
       "untestedRules": [
         {
-          "selector": ".k-step-disabled>.k-step-link",
-          "attribute": "aria-disabled=true",
-          "usage": "A disabled (inactive) link."
+          "selector": ".k-combobox .k-input-inner",
+          "attribute": "role=combobox",
+          "usage": "Announces the presence of a combobox as an inner element of the combobox used for filtering."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
+          "attribute": "aria-controls=.k-table-list id",
+          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
+          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
+          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "readonly=readonly or aria-readonly=true",
+          "usage": "The attribute is rendered only when the ComboBox is read-only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-busy=true",
+          "usage": "The attribute is rendered only when the ComboBox is loading data."
+        },
+        {
+          "selector": ".k-table-list",
+          "attribute": "role=listbox",
+          "usage": "The `ul` element that contains the options must have `role=listbox`."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "role=option",
+          "usage": "Identifies the `li` element as a listbox option."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "id",
+          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
+        },
+        {
+          "selector": ".k-table-row:not(.k-focus)",
+          "attribute": "tabindex=-1",
+          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+        },
+        {
+          "selector": ".k-table-row.k-selected",
+          "attribute": "aria-selected=true",
+          "usage": "Indicates the selected state of the item."
+        },
+        {
+          "selector": ".k-table-group-row",
+          "attribute": "role=presentation",
+          "usage": "Group header rows should have `role=presentation`."
         }
       ],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">5</span>\n                            </",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">5</span>\n                            </",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">1</span>\n                            </",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-lock\" aria-hid",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-track-changes\"",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-lock\" aria-hid",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-track-changes\"",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                            </spa",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                              ",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">1</span>\n                            </",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 12,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">4</span>\n                            </",
-          "index": 13,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">6</span>\n                            </",
-          "index": 14,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">7</span>\n                            </",
-          "index": 15,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">8</span>\n                            </",
-          "index": 16,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        }
-      ],
-      "passed": 6,
-      "violationCount": 29
+      "violations": [],
+      "passed": 146,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/stepper/stepper-vertical.html",
-      "spec": "aria/stepper_aria.md",
-      "totalRules": 5,
-      "testedRules": 4,
+      "filePath": "./tests/dropdowngrid/dropdowngrid-solid.html",
+      "spec": "aria/dropdowngrid_aria.md",
+      "totalRules": 21,
+      "testedRules": 10,
       "untestedRules": [
         {
-          "selector": ".k-step-disabled>.k-step-link",
-          "attribute": "aria-disabled=true",
-          "usage": "A disabled (inactive) link."
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
+          "attribute": "aria-controls=.k-table-list id",
+          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
+          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
+          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "readonly=readonly or aria-readonly=true",
+          "usage": "The attribute is rendered only when the ComboBox is read-only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-busy=true",
+          "usage": "The attribute is rendered only when the ComboBox is loading data."
+        },
+        {
+          "selector": ".k-table-list",
+          "attribute": "role=listbox",
+          "usage": "The `ul` element that contains the options must have `role=listbox`."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "role=option",
+          "usage": "Identifies the `li` element as a listbox option."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "id",
+          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
+        },
+        {
+          "selector": ".k-table-row:not(.k-focus)",
+          "attribute": "tabindex=-1",
+          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+        },
+        {
+          "selector": ".k-table-row.k-selected",
+          "attribute": "aria-selected=true",
+          "usage": "Indicates the selected state of the item."
+        },
+        {
+          "selector": ".k-table-group-row",
+          "attribute": "role=presentation",
+          "usage": "Group header rows should have `role=presentation`."
         }
       ],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">1</span>\n                            </",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-lock\" aria-hid",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-track-changes\"",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                            </spa",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                              ",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">1</span>\n                            </",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        }
-      ],
-      "passed": 5,
-      "violationCount": 20
+      "violations": [],
+      "passed": 170,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/stepper/stepper-vertical-rtl.html",
-      "spec": "aria/stepper_aria.md",
-      "totalRules": 5,
-      "testedRules": 4,
+      "filePath": "./tests/dropdowngrid/dropdowngrid-size-rounded.html",
+      "spec": "aria/dropdowngrid_aria.md",
+      "totalRules": 21,
+      "testedRules": 7,
       "untestedRules": [
         {
-          "selector": ".k-step-disabled>.k-step-link",
-          "attribute": "aria-disabled=true",
-          "usage": "A disabled (inactive) link."
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
+          "attribute": "aria-controls=.k-table-list id",
+          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
+          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
+          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "readonly=readonly or aria-readonly=true",
+          "usage": "The attribute is rendered only when the ComboBox is read-only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-busy=true",
+          "usage": "The attribute is rendered only when the ComboBox is loading data."
+        },
+        {
+          "selector": ".k-combobox.k-invalid .k-input-inner,.k-combobox.ng-invalid .k-input-inner",
+          "attribute": "aria-invalid=true",
+          "usage": "The attribute is rendered only when the ComboBox is in a form, and announces the valid state of the component."
+        },
+        {
+          "selector": ".k-combobox.k-disabled .k-input-inner",
+          "attribute": "disabled=disabled or aria-disabled=true",
+          "usage": "The attribute is rendered only when the ComboBox is disabled."
+        },
+        {
+          "selector": ".k-combobox.k-disabled .k-button",
+          "attribute": "disabled or aria-disabled=true",
+          "usage": "Attribute is rendered only when the picker is disabled."
+        },
+        {
+          "selector": ".k-table-list",
+          "attribute": "role=listbox",
+          "usage": "The `ul` element that contains the options must have `role=listbox`."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "role=option",
+          "usage": "Identifies the `li` element as a listbox option."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "id",
+          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
+        },
+        {
+          "selector": ".k-table-row:not(.k-focus)",
+          "attribute": "tabindex=-1",
+          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+        },
+        {
+          "selector": ".k-table-row.k-selected",
+          "attribute": "aria-selected=true",
+          "usage": "Indicates the selected state of the item."
+        },
+        {
+          "selector": ".k-table-group-row",
+          "attribute": "role=presentation",
+          "usage": "Group header rows should have `role=presentation`."
         }
       ],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">1</span>\n                            </",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-lock\" aria-hid",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-track-changes\"",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                            </spa",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                              ",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        }
-      ],
-      "passed": 4,
-      "violationCount": 16
+      "violations": [],
+      "passed": 168,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/stepper/stepper-states.html",
-      "spec": "aria/stepper_aria.md",
-      "totalRules": 5,
-      "testedRules": 4,
+      "filePath": "./tests/dropdowngrid/dropdowngrid-prefix-suffix.html",
+      "spec": "aria/dropdowngrid_aria.md",
+      "totalRules": 21,
+      "testedRules": 10,
       "untestedRules": [
         {
-          "selector": ".k-step-disabled>.k-step-link",
-          "attribute": "aria-disabled=true",
-          "usage": "A disabled (inactive) link."
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
+          "attribute": "aria-controls=.k-table-list id",
+          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
+          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
+          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "readonly=readonly or aria-readonly=true",
+          "usage": "The attribute is rendered only when the ComboBox is read-only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-busy=true",
+          "usage": "The attribute is rendered only when the ComboBox is loading data."
+        },
+        {
+          "selector": ".k-table-list",
+          "attribute": "role=listbox",
+          "usage": "The `ul` element that contains the options must have `role=listbox`."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "role=option",
+          "usage": "Identifies the `li` element as a listbox option."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "id",
+          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
+        },
+        {
+          "selector": ".k-table-row:not(.k-focus)",
+          "attribute": "tabindex=-1",
+          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+        },
+        {
+          "selector": ".k-table-row.k-selected",
+          "attribute": "aria-selected=true",
+          "usage": "Indicates the selected state of the item."
+        },
+        {
+          "selector": ".k-table-group-row",
+          "attribute": "role=presentation",
+          "usage": "Group header rows should have `role=presentation`."
         }
       ],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                                ",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                                ",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                            </spa",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                            </",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                            </spa",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                            </",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                            </spa",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                            </",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 12,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 13,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 14,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                            </spa",
-          "index": 15,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 16,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                            </",
-          "index": 17,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 18,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 19,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 20,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                                <",
-          "index": 21,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                                ",
-          "index": 22,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                              ",
-          "index": 23,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 24,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 25,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 26,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                                <",
-          "index": 27,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                                ",
-          "index": 28,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                              ",
-          "index": 29,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        }
-      ],
-      "passed": 12,
-      "violationCount": 48
+      "violations": [],
+      "passed": 348,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/stepper/stepper-horizontal-rtl.html",
-      "spec": "aria/stepper_aria.md",
-      "totalRules": 5,
-      "testedRules": 4,
+      "filePath": "./tests/dropdowngrid/dropdowngrid-outline.html",
+      "spec": "aria/dropdowngrid_aria.md",
+      "totalRules": 21,
+      "testedRules": 10,
       "untestedRules": [
         {
-          "selector": ".k-step-disabled>.k-step-link",
-          "attribute": "aria-disabled=true",
-          "usage": "A disabled (inactive) link."
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
+          "attribute": "aria-controls=.k-table-list id",
+          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
+          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
+          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "readonly=readonly or aria-readonly=true",
+          "usage": "The attribute is rendered only when the ComboBox is read-only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-busy=true",
+          "usage": "The attribute is rendered only when the ComboBox is loading data."
+        },
+        {
+          "selector": ".k-table-list",
+          "attribute": "role=listbox",
+          "usage": "The `ul` element that contains the options must have `role=listbox`."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "role=option",
+          "usage": "Identifies the `li` element as a listbox option."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "id",
+          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
+        },
+        {
+          "selector": ".k-table-row:not(.k-focus)",
+          "attribute": "tabindex=-1",
+          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+        },
+        {
+          "selector": ".k-table-row.k-selected",
+          "attribute": "aria-selected=true",
+          "usage": "Indicates the selected state of the item."
+        },
+        {
+          "selector": ".k-table-group-row",
+          "attribute": "role=presentation",
+          "usage": "Group header rows should have `role=presentation`."
+        }
+      ],
+      "violations": [],
+      "passed": 170,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/dropdowngrid/dropdowngrid-opened.html",
+      "spec": "aria/dropdowngrid_aria.md",
+      "totalRules": 21,
+      "testedRules": 18,
+      "untestedRules": [
+        {
+          "selector": ".k-combobox.k-invalid .k-input-inner,.k-combobox.ng-invalid .k-input-inner",
+          "attribute": "aria-invalid=true",
+          "usage": "The attribute is rendered only when the ComboBox is in a form, and announces the valid state of the component."
+        },
+        {
+          "selector": ".k-combobox.k-disabled .k-input-inner",
+          "attribute": "disabled=disabled or aria-disabled=true",
+          "usage": "The attribute is rendered only when the ComboBox is disabled."
+        },
+        {
+          "selector": ".k-combobox.k-disabled .k-button",
+          "attribute": "disabled or aria-disabled=true",
+          "usage": "Attribute is rendered only when the picker is disabled."
         }
       ],
       "violations": [
         {
           "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
+            "selector": ".k-table-row",
+            "attribute": "role=option",
+            "usage": "Identifies the `li` element as a listbox option."
           },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
+          "element": "<tr class=\"k-table-row\">\n                                                <th class=\"k-table-th\">ID</th>\n                                                <th class=\"k-table-th\">Name</th>\n               ",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-current",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
+            "selector": ".k-table-row",
+            "attribute": "role=option",
+            "usage": "Identifies the `li` element as a listbox option."
           },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step-current>.k-step-link",
-            "attribute": "aria-current=step",
-            "usage": "The currently selected link."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-current",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">2</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-user\" aria-hid",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step.k-focus .k-step-link",
-            "attribute": "tabindex=0",
-            "usage": "Adds an element to the page's tab order. Set based on the roving tabindex navigation when the tab is focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Personal Info</span>\n                            </sp",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-check\" aria-hi",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">1</span>\n                            </",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-text\">3</span>\n                            </",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-lock\" aria-hid",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-track-changes\"",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-lock\" aria-hid",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
-            "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
-          },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-indicator\">\n                                <span class=\"k-step-indicator-icon k-icon k-svg-icon k-svg-i-track-changes\"",
+          "element": "<tr class=\"k-table-row\">\n                                                <th class=\"k-table-th\">ID</th>\n                                                <th class=\"k-table-th\">Name</th>\n               ",
           "index": 7,
           "valid": false,
           "reason": "missing",
-          "expected": "tabindex",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
+            "selector": ".k-table-row:not(.k-focus)",
             "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
+            "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
           },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Account Info</span>\n                            </spa",
-          "index": 8,
+          "element": "<tr class=\"k-table-row\">\n                                                <th class=\"k-table-th\">ID</th>\n                                                <th class=\"k-table-th\">Name</th>\n               ",
+          "index": 0,
           "valid": false,
           "reason": "missing",
           "expected": "tabindex",
@@ -1806,20 +421,195 @@
         },
         {
           "rule": {
-            "selector": ".k-step:not(.k-focus) .k-step-link",
+            "selector": ".k-table-row:not(.k-focus)",
             "attribute": "tabindex=-1",
-            "usage": "Removes the element from the page's tab order. Set based on the roving tabindex navigation when a tab is not focused."
+            "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
           },
-          "element": "<a href=\"#\" class=\"k-step-link\">\n                            <span class=\"k-step-label\">\n                                <span class=\"k-step-text\">Payment Details</span>\n                              ",
-          "index": 9,
+          "element": "<tr class=\"k-table-row\">\n                                                <th class=\"k-table-th\">ID</th>\n                                                <th class=\"k-table-th\">Name</th>\n               ",
+          "index": 6,
           "valid": false,
           "reason": "missing",
           "expected": "tabindex",
           "actual": null
         }
       ],
-      "passed": 5,
-      "violationCount": 20
+      "passed": 62,
+      "violationCount": 4
+    },
+    {
+      "filePath": "./tests/dropdowngrid/dropdowngrid-flat.html",
+      "spec": "aria/dropdowngrid_aria.md",
+      "totalRules": 21,
+      "testedRules": 10,
+      "untestedRules": [
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
+          "attribute": "aria-controls=.k-table-list id",
+          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
+          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
+          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "readonly=readonly or aria-readonly=true",
+          "usage": "The attribute is rendered only when the ComboBox is read-only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-busy=true",
+          "usage": "The attribute is rendered only when the ComboBox is loading data."
+        },
+        {
+          "selector": ".k-table-list",
+          "attribute": "role=listbox",
+          "usage": "The `ul` element that contains the options must have `role=listbox`."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "role=option",
+          "usage": "Identifies the `li` element as a listbox option."
+        },
+        {
+          "selector": ".k-table-row",
+          "attribute": "id",
+          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
+        },
+        {
+          "selector": ".k-table-row:not(.k-focus)",
+          "attribute": "tabindex=-1",
+          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+        },
+        {
+          "selector": ".k-table-row.k-selected",
+          "attribute": "aria-selected=true",
+          "usage": "Indicates the selected state of the item."
+        },
+        {
+          "selector": ".k-table-group-row",
+          "attribute": "role=presentation",
+          "usage": "Group header rows should have `role=presentation`."
+        }
+      ],
+      "violations": [],
+      "passed": 170,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/dropdowngrid/dropdowngrid-adaptive.html",
+      "spec": "aria/dropdowngrid_aria.md",
+      "totalRules": 21,
+      "testedRules": 12,
+      "untestedRules": [
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
+          "attribute": "aria-controls=.k-table-list id",
+          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
+          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
+          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "readonly=readonly or aria-readonly=true",
+          "usage": "The attribute is rendered only when the ComboBox is read-only."
+        },
+        {
+          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
+          "attribute": "aria-busy=true",
+          "usage": "The attribute is rendered only when the ComboBox is loading data."
+        },
+        {
+          "selector": ".k-combobox.k-invalid .k-input-inner,.k-combobox.ng-invalid .k-input-inner",
+          "attribute": "aria-invalid=true",
+          "usage": "The attribute is rendered only when the ComboBox is in a form, and announces the valid state of the component."
+        },
+        {
+          "selector": ".k-combobox.k-disabled .k-input-inner",
+          "attribute": "disabled=disabled or aria-disabled=true",
+          "usage": "The attribute is rendered only when the ComboBox is disabled."
+        },
+        {
+          "selector": ".k-combobox.k-disabled .k-button",
+          "attribute": "disabled or aria-disabled=true",
+          "usage": "Attribute is rendered only when the picker is disabled."
+        },
+        {
+          "selector": ".k-table-row.k-selected",
+          "attribute": "aria-selected=true",
+          "usage": "Indicates the selected state of the item."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-table-row",
+            "attribute": "role=option",
+            "usage": "Identifies the `li` element as a listbox option."
+          },
+          "element": "<tr class=\"k-table-row\">\n                                                                <th class=\"k-table-th\">ID</th>\n                                                                <th class=\"k-tab",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-table-row",
+            "attribute": "role=option",
+            "usage": "Identifies the `li` element as a listbox option."
+          },
+          "element": "<tr class=\"k-table-row\">\n                                                                <th class=\"k-table-th\">ID</th>\n                                                                <th class=\"k-tab",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-table-row:not(.k-focus)",
+            "attribute": "tabindex=-1",
+            "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+          },
+          "element": "<tr class=\"k-table-row\">\n                                                                <th class=\"k-table-th\">ID</th>\n                                                                <th class=\"k-tab",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-table-row:not(.k-focus)",
+            "attribute": "tabindex=-1",
+            "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+          },
+          "element": "<tr class=\"k-table-row\">\n                                                                <th class=\"k-table-th\">ID</th>\n                                                                <th class=\"k-tab",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        }
+      ],
+      "passed": 56,
+      "violationCount": 4
     }
   ]
 }

@@ -1,5 +1,6 @@
 import { Dialog } from "../../dialog";
 import { Button } from "../../button";
+import { InputInnerInput } from "../../input";
 
 export const DialogPredefined = (props) => (
     <div {...props}>
@@ -15,11 +16,7 @@ export const DialogPredefined = (props) => (
             }
         >
             Please enter your name:
-            <input
-                type="text"
-                className="k-input k-input-md k-rounded-md k-input-solid"
-                aria-label="Name"
-            />
+            <InputInnerInput className="k-input k-input-md k-rounded-md k-input-solid" aria-label="Name" />
         </Dialog>
 
         <Dialog

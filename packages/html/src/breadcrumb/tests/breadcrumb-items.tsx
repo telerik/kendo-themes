@@ -185,7 +185,7 @@ export default () =>(
             <div>
                 <BreadcrumbCollapsingAuto>
                     <BreadcrumbInputContainer>
-                        <Textbox showClearButton={false} value="First item/Second item/Third item" />
+                        <Textbox showClearButton={false} value="First item/Second item/Third item" inputProps={{ 'aria-label': 'Breadcrumb path' }} />
                     </BreadcrumbInputContainer>
                 </BreadcrumbCollapsingAuto>
             </div>

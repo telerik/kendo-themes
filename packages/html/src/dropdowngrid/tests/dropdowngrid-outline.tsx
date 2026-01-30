@@ -15,36 +15,36 @@ export default () =>(
             <span>DropdownGrid Outline RTL</span>
 
             <div>
-                <DropdownGridNormal fillMode="outline" />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="outline" />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal fillMode="outline" />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="outline" />
             </div>
 
             <div>
-                <DropdownGridNormal fillMode="outline" placeholder="placeholder..." />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal fillMode="outline" placeholder="placeholder..." />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="outline" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DropdownGrid.states ].map((state) => (
                 <>
                     <div>
-                        <DropdownGridNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                        <DropdownGridNormal ariaLabel="DropdownGrid" { ...{ [state]: true }} fillMode="outline" value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DropdownGridNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                        <DropdownGridNormal ariaLabel="DropdownGrid" { ...{ [state]: true }} fillMode="outline" value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DropdownGridNormal fillMode="outline" value="invalid focus" invalid focus />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="outline" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal fillMode="outline" value="invalid focus" invalid focus />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="outline" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

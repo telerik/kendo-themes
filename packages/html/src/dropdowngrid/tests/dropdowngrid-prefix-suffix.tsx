@@ -19,15 +19,15 @@ export default () =>(
 
                     <span>normal</span>
                     <div>
-                        <DropdownGridPrefix fillMode={fillMode} value="Prefix"/>
+                        <DropdownGridPrefix ariaLabel="DropdownGrid" fillMode={fillMode} value="Prefix"/>
                     </div>
 
                     <div>
-                        <DropdownGridSuffix fillMode={fillMode} value="Suffix"/>
+                        <DropdownGridSuffix ariaLabel="DropdownGrid" fillMode={fillMode} value="Suffix"/>
                     </div>
 
                     <div>
-                        <DropdownGridNormal fillMode={fillMode} value="Prefix & Suffix"
+                        <DropdownGridNormal ariaLabel="DropdownGrid" fillMode={fillMode} value="Prefix & Suffix"
                             prefix={
                                 <>
                                     <Icon icon="map-marker-target" />
@@ -43,15 +43,15 @@ export default () =>(
 
                     <span>disabled</span>
                     <div>
-                        <DropdownGridPrefix fillMode={fillMode} value="Prefix" disabled/>
+                        <DropdownGridPrefix ariaLabel="DropdownGrid" fillMode={fillMode} value="Prefix" disabled/>
                     </div>
 
                     <div>
-                        <DropdownGridSuffix fillMode={fillMode} value="Suffix" disabled/>
+                        <DropdownGridSuffix ariaLabel="DropdownGrid" fillMode={fillMode} value="Suffix" disabled/>
                     </div>
 
                     <div>
-                        <DropdownGridNormal fillMode={fillMode} value="Prefix & Suffix" disabled
+                        <DropdownGridNormal ariaLabel="DropdownGrid" fillMode={fillMode} value="Prefix & Suffix" disabled
                             prefix={
                                 <>
                                     <Icon icon="map-marker-target" />
@@ -67,15 +67,15 @@ export default () =>(
 
                     <span>validation</span>
                     <div>
-                        <DropdownGridPrefix fillMode={fillMode} value="Prefix" invalid/>
+                        <DropdownGridPrefix ariaLabel="DropdownGrid" fillMode={fillMode} value="Prefix" invalid/>
                     </div>
 
                     <div>
-                        <DropdownGridSuffix fillMode={fillMode} value="Suffix" invalid/>
+                        <DropdownGridSuffix ariaLabel="DropdownGrid" fillMode={fillMode} value="Suffix" invalid/>
                     </div>
 
                     <div>
-                        <DropdownGridNormal fillMode={fillMode} value="Prefix & Suffix" invalid
+                        <DropdownGridNormal ariaLabel="DropdownGrid" fillMode={fillMode} value="Prefix & Suffix" invalid
                             prefix={
                                 <>
                                     <Icon icon="map-marker-target" />
@@ -91,15 +91,15 @@ export default () =>(
 
                     <span>RTL</span>
                     <div dir="rtl">
-                        <DropdownGridPrefix fillMode={fillMode} value="Prefix"/>
+                        <DropdownGridPrefix ariaLabel="DropdownGrid" fillMode={fillMode} value="Prefix"/>
                     </div>
 
                     <div dir="rtl">
-                        <DropdownGridSuffix fillMode={fillMode} value="Suffix"/>
+                        <DropdownGridSuffix ariaLabel="DropdownGrid" fillMode={fillMode} value="Suffix"/>
                     </div>
 
                     <div dir="rtl">
-                        <DropdownGridNormal fillMode={fillMode} value="Prefix & Suffix"
+                        <DropdownGridNormal ariaLabel="DropdownGrid" fillMode={fillMode} value="Prefix & Suffix"
                             prefix={
                                 <>
                                     <Icon icon="map-marker-target" />

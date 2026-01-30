@@ -24,11 +24,11 @@ export default () =>(
 
             <section>
                  <div className="k-label">Label</div>
-                <DropdownGridAdaptive adaptiveTitle="Label" placeholder="Placeholder" />
+                <DropdownGridAdaptive ariaLabel="DropdownGrid" adaptiveTitle="Label" placeholder="Placeholder" />
             </section>
             <section>
                  <div className="k-label">Label</div>
-                <DropdownGridAdaptive adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
+                <DropdownGridAdaptive ariaLabel="DropdownGrid" adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

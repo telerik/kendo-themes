@@ -18,6 +18,8 @@ export type KendoTableListOptions = {
 
 export type KendoTableListProps = KendoTableListOptions & {
     virtualization?: boolean;
+    role?: string;
+    id?: string;
 };
 
 export const TableList: KendoComponent<KendoTableListProps & React.HTMLAttributes<HTMLUListElement>> = (
@@ -27,6 +29,8 @@ export const TableList: KendoComponent<KendoTableListProps & React.HTMLAttribute
     const {
         size,
         virtualization,
+        role,
+        id,
         ...other
     } = props;
 
@@ -44,6 +48,8 @@ export const TableList: KendoComponent<KendoTableListProps & React.HTMLAttribute
                     'k-virtual-table': virtualization,
                 }
             )}
+            {...(role && { role })}
+            {...(id && { id })}
         >
             {props.children}
         </ul>

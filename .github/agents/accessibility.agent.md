@@ -161,7 +161,13 @@ When asked to apply accessibility to a specific component:
    - This updates the tracking file to reflect completion
    - **CRITICAL**: Always call this to keep tracking synchronized
 
-9. **Generate Report**
+9. **Commit Changes**
+   - Use `chore(a11y): [description]` commit format (NOT feat/fix)
+   - Example: `chore(a11y): apply ARIA to dialog component`
+   - Example: `chore(a11y): fix breadcrumb label violations - 100% WCAG`
+   - **NEVER** use `feat:` or `fix:` prefixes for accessibility work
+
+10. **Generate Report**
    - Summarize changes made
    - List any violations found
    - Suggest fixes or improvements
@@ -191,6 +197,7 @@ When asked to apply ARIA to all components in the HTML package:
    - Run tests after each component
    - Fix violations before moving on
    - **Mark complete**: Run `node scripts/aria-bulk-apply.mjs complete [component]`
+   - **Commit**: Use `chore(a11y): [description]` format (NOT feat/fix)
    - Commit after each successful component
 
 4. **Dependency Handling**

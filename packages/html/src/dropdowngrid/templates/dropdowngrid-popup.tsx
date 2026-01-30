@@ -3,7 +3,10 @@ import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader,
 
 export const DropdownGridPopup = (props) => (
     <DropdownGrid
+        id="dropdowngrid"
         opened={true}
+        activeDescendantId="dropdowngrid-option-3"
+        listboxId="dropdowngrid-listbox"
         popup={
             <DataTable>
                 <TableHeader>
@@ -24,18 +27,18 @@ export const DropdownGridPopup = (props) => (
                     <TableListTh text="Initial group"></TableListTh>
                 </TableGroupStickyHeader>
                 <TableBody>
-                    <TableList>
-                        <TableListRow>
+                    <TableList role="listbox" id="dropdowngrid-listbox" aria-label="DropdownGrid options">
+                        <TableListRow role="option" id="dropdowngrid-option-1" tabIndex={-1}>
                             <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
                             <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
                             <TableListTd text="Data 1.3"></TableListTd>
                         </TableListRow>
-                        <TableListRow alt>
+                        <TableListRow role="option" id="dropdowngrid-option-2" alt tabIndex={-1}>
                             <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
                             <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
                             <TableListTd text="Data 2.3"></TableListTd>
                         </TableListRow>
-                        <TableListRow>
+                        <TableListRow role="option" id="dropdowngrid-option-3" focus selected tabIndex={0} aria-selected="true">
                             <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
                             <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
                             <TableListTd text="Data 3.3"></TableListTd>
@@ -43,17 +46,17 @@ export const DropdownGridPopup = (props) => (
                         <TableListGroupRow>
                             <TableListTh text="Group"></TableListTh>
                         </TableListGroupRow>
-                        <TableListRow>
+                        <TableListRow role="option" id="dropdowngrid-option-4" tabIndex={-1}>
                             <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
                             <TableListTd text="Data 4.2" style={{ width: '160px' }}></TableListTd>
                             <TableListTd text="Data 4.3"></TableListTd>
                         </TableListRow>
-                        <TableListRow alt>
+                        <TableListRow role="option" id="dropdowngrid-option-5" alt tabIndex={-1}>
                             <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
                             <TableListTd text="Data 5.2 (alt)" style={{ width: '160px' }}></TableListTd>
                             <TableListTd text="Data 5.3"></TableListTd>
                         </TableListRow>
-                        <TableListRow>
+                        <TableListRow role="option" id="dropdowngrid-option-6" tabIndex={-1}>
                             <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
                             <TableListTd text="Data 6.2" style={{ width: '160px' }}></TableListTd>
                             <TableListTd text="Data 6.3"></TableListTd>

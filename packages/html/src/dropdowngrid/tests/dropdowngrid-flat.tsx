@@ -15,36 +15,36 @@ export default () =>(
             <span>DropdownGrid Flat RTL</span>
 
             <div>
-                <DropdownGridNormal fillMode="flat" />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="flat" />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal fillMode="flat" />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="flat" />
             </div>
 
             <div>
-                <DropdownGridNormal fillMode="flat" placeholder="placeholder..." />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal fillMode="flat" placeholder="placeholder..." />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="flat" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DropdownGrid.states ].map((state) => (
                 <>
                     <div>
-                        <DropdownGridNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                        <DropdownGridNormal ariaLabel="DropdownGrid" { ...{ [state]: true }} fillMode="flat" value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DropdownGridNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                        <DropdownGridNormal ariaLabel="DropdownGrid" { ...{ [state]: true }} fillMode="flat" value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DropdownGridNormal fillMode="flat" value="invalid focus" invalid focus />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="flat" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal fillMode="flat" value="invalid focus" invalid focus />
+                <DropdownGridNormal ariaLabel="DropdownGrid" fillMode="flat" value="invalid focus" invalid focus />
             </div>
         </div>
     </>

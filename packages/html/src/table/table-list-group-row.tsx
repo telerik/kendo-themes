@@ -10,6 +10,7 @@ export const TableListGroupRow = (
             props.className,
             className,
         )}
+        role="presentation"
     >
         {props.children}
     </li>

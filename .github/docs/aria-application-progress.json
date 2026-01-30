@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-29T09:57:20.105Z",
+  "lastUpdated": "2026-01-30T11:55:43.646Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -32,7 +32,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "navigation",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -87,7 +87,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "navigation",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -441,7 +441,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "containers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -603,7 +603,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "button-groups",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -761,17 +761,18 @@
       "notes": ""
     },
     "multicolumncombobox": {
-      "status": "blocked",
+      "status": "completed",
       "specExists": true,
       "priority": "lists",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": "No packages/html/src/multicolumncombobox implementation found."
+      "notes": "No packages/html/src/multicolumncombobox implementation found.",
+      "completedAt": "2026-01-30T11:51:39.314Z"
     },
     "multiselect": {
       "status": "completed",
@@ -1112,7 +1113,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "button-groups",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,

@@ -19,10 +19,10 @@ export default () =>(
             <span>DropdownGrid RTL</span>
 
             <div>
-                <DropdownGridPopup value="Opened" />
+                <DropdownGridPopup ariaLabel="DropdownGrid" value="Opened" />
             </div>
             <div dir="rtl">
-                <DropdownGridPopup value="Opened" />
+                <DropdownGridPopup ariaLabel="DropdownGrid RTL" value="Opened" />
             </div>
 
         </div>
