@@ -2,7 +2,11 @@
 import { Button, KendoButtonProps } from '../../button';
 
 const states = Button.states;
-const defaults = Button.defaultOptions;
+const defaults = {
+  ...Button.defaultOptions,
+  variant: 'normal',
+};
+
 const options = {
   ...Button.options,
   // Remove Clear and Link FillModes for the SpeechToText Button
@@ -11,30 +15,31 @@ const options = {
 
 
 const modifiers = [
+];
+
+const variants = [
+  {
+    name: 'normal',
+    title: 'Normal',
+  },
   {
     name: 'listening',
     title: 'Listening',
   },
 ];
-const variants = [];
 
 export const SpeechToTextButtonDemo = (
   props: KendoButtonProps & {
-    modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
+    variants?: { [key: (typeof variants)[number]['name']]: boolean };
   }
 ) => {
-  const { modifiers: mods, ...other } = { ...defaults, ...props };
+  const { variant, ...other } = { ...defaults, ...props };
   let additionalProps: any = {};
 
-  Object.keys(mods || {}).forEach((modifier) => {
-    switch (modifier) {
-      case 'listening':
-        additionalProps.listening = mods?.[modifier] ? true : false;
-        break;
-      default:
-        break;
-    }
-  });
+  if (variant === 'listening') {
+    additionalProps.listening = true;
+  }
+
 
   return <SpeechToTextButton {...other} {...additionalProps} />;
 }
@@ -47,4 +52,3 @@ SpeechToTextButtonDemo.defaultOptions = defaults;
 SpeechToTextButtonDemo.modifiers = modifiers;
 
 export default SpeechToTextButtonDemo;
-
