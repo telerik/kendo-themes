@@ -49,30 +49,30 @@
                 <div class="k-window-content">
                     <div class="k-tabstrip k-tabstrip-top">
                         <div class="k-tabstrip-items-wrapper k-hstack">
-                            <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
-                                <li class="k-tabstrip-item k-first">
+                            <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                                <li class="k-tabstrip-item k-first" role="tab">
                                     <span class="k-link">
                                         <span class="k-link-text">General</span>
                                     </span>
                                 </li>
-                                <li class="k-tabstrip-item k-active">
+                                <li class="k-tabstrip-item k-active" role="tab" aria-selected="true">
                                     <span class="k-link">
                                         <span class="k-link-text">Resources</span>
                                     </span>
                                 </li>
-                                <li class="k-tabstrip-item">
+                                <li class="k-tabstrip-item" role="tab">
                                     <span class="k-link">
                                         <span class="k-link-text">Predecessors</span>
                                     </span>
                                 </li>
-                                <li class="k-tabstrip-item k-last">
+                                <li class="k-tabstrip-item k-last" role="tab">
                                     <span class="k-link">
                                         <span class="k-link-text">Successors</span>
                                     </span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="k-tabstrip-content k-active">
+                        <div class="k-tabstrip-content k-active" role="tabpanel">
                             <div class="k-grid-no-scrollbar k-grid">
                                 <div class="k-grid-toolbar k-grid-toolbar k-toolbar" role="toolbar">
                                     <button class="k-toolbar-button  k-button">
@@ -177,9 +177,9 @@
                                                             </span>
                                                         </td>
                                                         <td class="k-table-td">
-                                                            <span class="k-dropdownlist k-picker" role="combobox" aria-label="DropdownList, -Select resource-" aria-haspopup="listbox" aria-expanded="false" aria-describedby="dropdownlist-value" tabindex="0">
-                                                                <span id="dropdownlist-value" class="k-input-inner">-Select resource-</span>
-                                                                <button class="k-input-button k-button k-icon-button" aria-label="Open dropdown" tabindex="-1">
+                                                            <span class="k-dropdownlist k-picker">
+                                                                <span class="k-input-inner">-Select resource-</span>
+                                                                <button class="k-input-button k-button k-icon-button">
                                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                             <path d="M256 352 128 160h256z"></path>
