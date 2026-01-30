@@ -396,13 +396,13 @@
                             <div>
                                 <div class="k-animation-container k-animation-container-shown">
                                     <div class="k-child-animation-container">
-                                        <div class="k-notification k-notification-primary k-notification-closable">
+                                        <div class="k-notification k-notification-primary k-notification-closable" role="alert" aria-live="polite" aria-label="Notification" aria-describedby="k-notification-content">
                                             <span class="k-notification-status k-icon k-svg-icon k-svg-i-exclamation-circle" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M224 128h64v160h-64zm0 256h64v-64h-64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224m-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192"></path>
                                                 </svg>
                                             </span>
-                                            <div class="k-notification-content">Closable notification with icon</div>
+                                            <div id="k-notification-content" class="k-notification-content">Closable notification with icon</div>
                                             <span class="k-notification-actions">
                                                 <span class="k-notification-action k-notification-close-action">
                                                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -1299,8 +1299,8 @@
                             </div>
                         </div>
                         <div>
-                            <ul class="k-panelbar">
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                            <ul class="k-panelbar" id="k-panelbar" role="tree">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                                     <span class="k-link">
                                         <span class="k-panelbar-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1314,8 +1314,9 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                                     <span class="k-link k-hover">
                                         <span class="k-panelbar-item-icon k-image"></span>
                                         <span class="k-panelbar-item-text">Root hover</span>
@@ -1325,8 +1326,9 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                                     <span class="k-link k-focus">
                                         <span class="k-panelbar-item-icon k-sprite"></span>
                                         <span class="k-panelbar-item-text">Root focus</span>
@@ -1336,8 +1338,9 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                                     <span class="k-link k-hover k-focus">
                                         <span class="k-panelbar-item-icon k-sprite"></span>
                                         <span class="k-panelbar-item-text">Root hover&amp;focus</span>
@@ -1347,8 +1350,9 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                                     <span class="k-link k-disabled">
                                         <span class="k-panelbar-item-text">Root disabled</span>
                                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -1357,8 +1361,9 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="true">
                                     <span class="k-link k-selected">
                                         <span class="k-panelbar-item-text">Root selected</span>
                                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -1367,8 +1372,9 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="true">
                                     <span class="k-link k-hover k-selected">
                                         <span class="k-panelbar-item-text">Root selected hover</span>
                                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -1377,8 +1383,9 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="true">
                                     <span class="k-link k-focus k-selected">
                                         <span class="k-panelbar-item-text">Root selected focus</span>
                                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -1387,8 +1394,9 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
-                                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="true">
                                     <span class="k-link k-hover k-focus k-selected">
                                         <span class="k-panelbar-item-text">Root selected hover&amp;focus</span>
                                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -1397,12 +1405,13 @@
                                             </svg>
                                         </span>
                                     </span>
+                                    <div class="k-panelbar-content">content</div>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <div class="k-expander">
-                                <div class="k-expander-header">
+                                <div class="k-expander-header" role="button" aria-controls="k-expansionpanel-content" aria-expanded="false" tabindex="0">
                                     <div class="k-expander-title">Collapsed panel</div>
                                     <span class="k-spacer"></span>
                                     <div class="k-expander-sub-title">Normal</div>
@@ -1414,14 +1423,14 @@
                                         </span>
                                     </span>
                                 </div>
-                                <div class="k-expander-content-wrapper k-hidden">
+                                <div id="k-expansionpanel-content" class="k-expander-content-wrapper k-hidden">
                                     <div class="k-expander-content">
                                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="k-expander k-hover">
-                                <div class="k-expander-header k-hover">
+                                <div class="k-expander-header k-hover" role="button" aria-controls="k-expansionpanel-content" aria-expanded="false" tabindex="0">
                                     <div class="k-expander-title">Collapsed panel</div>
                                     <span class="k-spacer"></span>
                                     <div class="k-expander-sub-title">Hover</div>
@@ -1433,14 +1442,14 @@
                                         </span>
                                     </span>
                                 </div>
-                                <div class="k-expander-content-wrapper k-hidden">
+                                <div id="k-expansionpanel-content" class="k-expander-content-wrapper k-hidden">
                                     <div class="k-expander-content">
                                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="k-expander k-focus">
-                                <div class="k-expander-header">
+                                <div class="k-expander-header" role="button" aria-controls="k-expansionpanel-content" aria-expanded="false" tabindex="0">
                                     <div class="k-expander-title">Collapsed panel</div>
                                     <span class="k-spacer"></span>
                                     <div class="k-expander-sub-title">Focus</div>
@@ -1452,14 +1461,14 @@
                                         </span>
                                     </span>
                                 </div>
-                                <div class="k-expander-content-wrapper k-hidden">
+                                <div id="k-expansionpanel-content" class="k-expander-content-wrapper k-hidden">
                                     <div class="k-expander-content">
                                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="k-expander k-hover k-focus">
-                                <div class="k-expander-header k-hover">
+                                <div class="k-expander-header k-hover" role="button" aria-controls="k-expansionpanel-content" aria-expanded="false" tabindex="0">
                                     <div class="k-expander-title">Collapsed panel</div>
                                     <span class="k-spacer"></span>
                                     <div class="k-expander-sub-title">Hover &amp; Focus</div>
@@ -1471,14 +1480,14 @@
                                         </span>
                                     </span>
                                 </div>
-                                <div class="k-expander-content-wrapper k-hidden">
+                                <div id="k-expansionpanel-content" class="k-expander-content-wrapper k-hidden">
                                     <div class="k-expander-content">
                                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="k-expander k-expanded">
-                                <div class="k-expander-header">
+                                <div class="k-expander-header" role="button" aria-controls="k-expansionpanel-content" aria-expanded="true" tabindex="0">
                                     <div class="k-expander-title">Expanded panel</div>
                                     <span class="k-spacer"></span>
                                     <div class="k-expander-sub-title">Subtitle</div>
@@ -1490,7 +1499,7 @@
                                         </span>
                                     </span>
                                 </div>
-                                <div class="k-expander-content-wrapper">
+                                <div id="k-expansionpanel-content" class="k-expander-content-wrapper">
                                     <div class="k-expander-content">
                                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
                                     </div>
@@ -1957,7 +1966,7 @@
                                                 </div>
                                                 <div class="k-tabstrip-content k-active" role="tabpanel">
                                                     <div class="k-expander k-expanded">
-                                                        <div class="k-expander-header">
+                                                        <div class="k-expander-header" role="button" aria-controls="k-expansionpanel-content" aria-expanded="true" tabindex="0">
                                                             <div class="k-expander-title">Bar chart</div>
                                                             <span class="k-spacer"></span>
                                                             <div class="k-expander-sub-title"></div>
@@ -1969,7 +1978,7 @@
                                                                 </span>
                                                             </span>
                                                         </div>
-                                                        <div class="k-expander-content-wrapper">
+                                                        <div id="k-expansionpanel-content" class="k-expander-content-wrapper">
                                                             <div class="k-expander-content">
                                                                 <div class="k-chart-types-wrapper">
                                                                     <div class="k-icon-text-wrapper">
@@ -2004,7 +2013,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="k-expander k-expanded">
-                                                        <div class="k-expander-header">
+                                                        <div class="k-expander-header" role="button" aria-controls="k-expansionpanel-content" aria-expanded="true" tabindex="0">
                                                             <div class="k-expander-title">Pie chart</div>
                                                             <span class="k-spacer"></span>
                                                             <div class="k-expander-sub-title"></div>
@@ -2016,7 +2025,7 @@
                                                                 </span>
                                                             </span>
                                                         </div>
-                                                        <div class="k-expander-content-wrapper">
+                                                        <div id="k-expansionpanel-content" class="k-expander-content-wrapper">
                                                             <div class="k-expander-content">
                                                                 <div class="k-chart-types-wrapper">
                                                                     <div class="k-icon-text-wrapper">
@@ -2033,7 +2042,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="k-expander k-expanded">
-                                                        <div class="k-expander-header">
+                                                        <div class="k-expander-header" role="button" aria-controls="k-expansionpanel-content" aria-expanded="true" tabindex="0">
                                                             <div class="k-expander-title">Column chart</div>
                                                             <span class="k-spacer"></span>
                                                             <div class="k-expander-sub-title"></div>
@@ -2045,7 +2054,7 @@
                                                                 </span>
                                                             </span>
                                                         </div>
-                                                        <div class="k-expander-content-wrapper">
+                                                        <div id="k-expansionpanel-content" class="k-expander-content-wrapper">
                                                             <div class="k-expander-content">
                                                                 <div class="k-chart-types-wrapper">
                                                                     <div class="k-icon-text-wrapper">
@@ -2080,7 +2089,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="k-expander k-expanded">
-                                                        <div class="k-expander-header">
+                                                        <div class="k-expander-header" role="button" aria-controls="k-expansionpanel-content" aria-expanded="true" tabindex="0">
                                                             <div class="k-expander-title">Line chart</div>
                                                             <span class="k-spacer"></span>
                                                             <div class="k-expander-sub-title"></div>
@@ -2092,7 +2101,7 @@
                                                                 </span>
                                                             </span>
                                                         </div>
-                                                        <div class="k-expander-content-wrapper">
+                                                        <div id="k-expansionpanel-content" class="k-expander-content-wrapper">
                                                             <div class="k-expander-content">
                                                                 <div class="k-chart-types-wrapper">
                                                                     <div class="k-icon-text-wrapper">
@@ -2127,7 +2136,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="k-expander k-expanded">
-                                                        <div class="k-expander-header">
+                                                        <div class="k-expander-header" role="button" aria-controls="k-expansionpanel-content" aria-expanded="true" tabindex="0">
                                                             <div class="k-expander-title">Scatter chart</div>
                                                             <span class="k-spacer"></span>
                                                             <div class="k-expander-sub-title"></div>
@@ -2139,7 +2148,7 @@
                                                                 </span>
                                                             </span>
                                                         </div>
-                                                        <div class="k-expander-content-wrapper">
+                                                        <div id="k-expansionpanel-content" class="k-expander-content-wrapper">
                                                             <div class="k-expander-content">
                                                                 <div class="k-chart-types-wrapper">
                                                                     <div class="k-icon-text-wrapper">

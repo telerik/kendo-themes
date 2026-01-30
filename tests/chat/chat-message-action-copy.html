@@ -255,13 +255,13 @@
         </div>
         <div class="copy-notification k-animation-container k-animation-container-shown">
             <div class="k-child-animation-container">
-                <div class="k-notification k-notification-dark">
+                <div class="k-notification k-notification-dark" role="alert" aria-live="polite" aria-describedby="k-notification-content">
                     <span class="k-notification-status k-icon k-svg-icon k-svg-i-copy" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M384 96H192c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V192zm64 352H192V128h160v96h96zM64 384h64v32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32h192l32 32H64z"></path>
                         </svg>
                     </span>
-                    <div class="k-notification-content">Message copied to clipboard.</div>
+                    <div id="k-notification-content" class="k-notification-content">Message copied to clipboard.</div>
                 </div>
             </div>
         </div>
