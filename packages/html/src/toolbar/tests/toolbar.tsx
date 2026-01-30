@@ -14,7 +14,7 @@ export default () =>(
             <span className="k-colspan-all k-col-span-full">Toolbar</span>
             <section className="k-colspan-all k-col-span-full">
                 <ToolbarResizable>
-                    <Button icon="bold"></Button>
+                    <Button icon="bold" title="Bold"></Button>
                     <Button>Button</Button>
                     <Button>Toggle</Button>
                     <ToolbarSeparator></ToolbarSeparator>
@@ -32,14 +32,14 @@ export default () =>(
                     </ToolbarItem>
                     <Switch checked />
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none"></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" id="toolbar-1-overflow" aria-haspopup="menu" aria-expanded="false" aria-controls="toolbar-1-menu" title="More actions"></Button>
                 </ToolbarResizable>
             </section>
 
             <span className="k-colspan-all k-col-span-full">RTL</span>
             <section className="k-colspan-all k-col-span-full" dir="rtl">
                 <ToolbarResizable>
-                    <Button icon="bold"></Button>
+                    <Button icon="bold" title="Bold"></Button>
                     <Button>Button</Button>
                     <Button>Toggle</Button>
                     <ToolbarSeparator></ToolbarSeparator>
@@ -57,7 +57,7 @@ export default () =>(
                     </ToolbarItem>
                     <Switch checked />
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none"></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" id="toolbar-2-overflow" aria-haspopup="menu" aria-expanded="false" aria-controls="toolbar-2-menu" title="More actions"></Button>
                 </ToolbarResizable>
             </section>
 
@@ -72,14 +72,14 @@ export default () =>(
                     <Button selected>Selected</Button>
                     <Button disabled>Disabled</Button>
                     <ToolbarSeparator></ToolbarSeparator>
-                    <Button icon="bold"></Button>
-                    <Button icon="bold" hover></Button>
-                    <Button icon="bold" focus></Button>
-                    <Button icon="bold" active></Button>
-                    <Button icon="bold" selected></Button>
-                    <Button icon="bold" disabled></Button>
+                    <Button icon="bold" title="Bold"></Button>
+                    <Button icon="bold" hover title="Bold"></Button>
+                    <Button icon="bold" focus title="Bold"></Button>
+                    <Button icon="bold" active title="Bold"></Button>
+                    <Button icon="bold" selected title="Bold"></Button>
+                    <Button icon="bold" disabled title="Bold"></Button>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" hover></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" hover id="toolbar-3-overflow" aria-haspopup="menu" aria-expanded="false" aria-controls="toolbar-3-menu" title="More actions"></Button>
                 </ToolbarResizable>
             </section>
             <section className="k-colspan-all k-col-span-full">
@@ -91,7 +91,7 @@ export default () =>(
                     <Button icon="align-left" selected>Selected</Button>
                     <Button icon="align-left" disabled>Disabled</Button>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" focus></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" focus id="toolbar-4-overflow" aria-haspopup="menu" aria-expanded="false" aria-controls="toolbar-4-menu" title="More actions"></Button>
                 </ToolbarResizable>
             </section>
             <section className="k-colspan-all k-col-span-full">
@@ -103,7 +103,7 @@ export default () =>(
                     <Button themeColor="primary" icon="align-left" selected>Selected</Button>
                     <Button themeColor="primary" icon="align-left" disabled>Disabled</Button>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" active></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" active id="toolbar-5-overflow" aria-haspopup="menu" aria-expanded="false" aria-controls="toolbar-5-menu" title="More actions"></Button>
                 </ToolbarResizable>
             </section>
 
@@ -118,7 +118,7 @@ export default () =>(
                         <Button className="k-group-end" icon="align-center" disabled>Button 2</Button>
                     </ButtonGroup>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" disabled focus></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" disabled focus id="toolbar-6-overflow" aria-haspopup="menu" aria-expanded="false" aria-controls="toolbar-6-menu" title="More actions"></Button>
                 </ToolbarResizable>
             </section>
 

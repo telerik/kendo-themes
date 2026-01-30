@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -26,23 +26,25 @@
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-toolbar-popup k-popup">
-                        <ul class="k-menu-group">
-                            <li class="k-menu-item k-item k-first">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 1</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 2</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item k-last">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 3</span>
-                                </span>
-                            </li>
-                        </ul>
+                        <div class="k-menu-group" role="menu">
+                            <ul class="k-menu-group" role="menu">
+                                <li class="k-menu-item k-item k-first" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 1</span>
+                                    </span>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 2</span>
+                                    </span>
+                                </li>
+                                <li class="k-menu-item k-item k-last" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 3</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,38 +53,40 @@
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-toolbar-popup k-popup">
-                        <ul class="k-menu-group">
-                            <li class="k-menu-item k-item k-first">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
+                        <div class="k-menu-group" role="menu">
+                            <ul class="k-menu-group" role="menu">
+                                <li class="k-menu-item k-item k-first" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Item 1</span>
                                     </span>
-                                    <span class="k-menu-link-text">Item 1</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Item 2</span>
                                     </span>
-                                    <span class="k-menu-link-text">Item 2</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item k-last">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
+                                </li>
+                                <li class="k-menu-item k-item k-last" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Item 3</span>
                                     </span>
-                                    <span class="k-menu-link-text">Item 3</span>
-                                </span>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,34 +95,36 @@
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-toolbar-popup k-popup">
-                        <ul class="k-menu-group">
-                            <li class="k-menu-item k-item k-first">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 1</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 2</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 3</span>
-                                </span>
-                            </li>
-                            <li class="k-item k-separator k-separator-horizontal"></li>
-                            <li class="k-menu-item k-item k-last">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
+                        <div class="k-menu-group" role="menu">
+                            <ul class="k-menu-group" role="menu">
+                                <li class="k-menu-item k-item k-first" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 1</span>
                                     </span>
-                                    <span class="k-menu-link-text">Item after separator</span>
-                                </span>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 2</span>
+                                    </span>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 3</span>
+                                    </span>
+                                </li>
+                                <li class="k-item k-separator k-separator-horizontal" role="presentation"></li>
+                                <li class="k-menu-item k-item k-last" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Item after separator</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,23 +134,25 @@
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-toolbar-popup k-popup">
-                        <ul class="k-menu-group">
-                            <li class="k-menu-item k-item k-first">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 1</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 2</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item k-last">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 3</span>
-                                </span>
-                            </li>
-                        </ul>
+                        <div class="k-menu-group" role="menu">
+                            <ul class="k-menu-group" role="menu">
+                                <li class="k-menu-item k-item k-first" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 1</span>
+                                    </span>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 2</span>
+                                    </span>
+                                </li>
+                                <li class="k-menu-item k-item k-last" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 3</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,38 +161,40 @@
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-toolbar-popup k-popup">
-                        <ul class="k-menu-group">
-                            <li class="k-menu-item k-item k-first">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
+                        <div class="k-menu-group" role="menu">
+                            <ul class="k-menu-group" role="menu">
+                                <li class="k-menu-item k-item k-first" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Item 1</span>
                                     </span>
-                                    <span class="k-menu-link-text">Item 1</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Item 2</span>
                                     </span>
-                                    <span class="k-menu-link-text">Item 2</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item k-last">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
+                                </li>
+                                <li class="k-menu-item k-item k-last" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Item 3</span>
                                     </span>
-                                    <span class="k-menu-link-text">Item 3</span>
-                                </span>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,34 +203,71 @@
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-toolbar-popup k-popup">
-                        <ul class="k-menu-group">
-                            <li class="k-menu-item k-item k-first">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 1</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 2</span>
-                                </span>
-                            </li>
-                            <li class="k-menu-item k-item">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-text">Item 3</span>
-                                </span>
-                            </li>
-                            <li class="k-item k-separator k-separator-horizontal"></li>
-                            <li class="k-menu-item k-item k-last">
-                                <span class="k-link k-menu-link">
-                                    <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
+                        <div class="k-menu-group" role="menu">
+                            <ul class="k-menu-group" role="menu">
+                                <li class="k-menu-item k-item k-first" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 1</span>
                                     </span>
-                                    <span class="k-menu-link-text">Item after separator</span>
-                                </span>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 2</span>
+                                    </span>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 3</span>
+                                    </span>
+                                </li>
+                                <li class="k-item k-separator k-separator-horizontal" role="presentation"></li>
+                                <li class="k-menu-item k-item k-last" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Item after separator</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <span class="k-colspan-all k-col-span-full">Menu popup with aria-labelledby</span>
+        <section>
+            <button id="toolbar-overflow-button-test" aria-haspopup="menu" aria-expanded="true" aria-controls="toolbar-menu-group-test" title="More actions" class="k-button k-icon-button">
+                <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                    </svg>
+                </span>
+            </button>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-menu-popup k-toolbar-popup k-popup">
+                        <div class="k-menu-group" role="menu" id="toolbar-menu-group-test" aria-labelledby="toolbar-overflow-button-test">
+                            <ul class="k-menu-group" role="menu">
+                                <li class="k-menu-item k-item k-first" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 1</span>
+                                    </span>
+                                </li>
+                                <li class="k-menu-item k-item" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 2</span>
+                                    </span>
+                                </li>
+                                <li class="k-menu-item k-item k-last" role="menuitem">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Item 3</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

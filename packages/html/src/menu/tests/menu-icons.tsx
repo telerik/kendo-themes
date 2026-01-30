@@ -23,7 +23,7 @@ export default () =>(
                 <MenuNormal popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "110px", top: "auto" }}>
-                                <MenuList>
+                                <MenuList id="menu-icons-popup-1">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
                                     <MenuListItem text="Hover" hover showArrow></MenuListItem>
@@ -35,7 +35,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="caret-alt-down" aria-controls="menu-icons-popup-1"></MenuItem>
                     <MenuItem last selected text="Selected" icon="folder"></MenuItem>
                 </MenuNormal>
             </section>
@@ -44,7 +44,7 @@ export default () =>(
                 <MenuNormal dir="rtl"  popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "780px", top: "auto" }} dir="rtl">
-                                <MenuList dir="rtl">
+                                <MenuList dir="rtl" id="menu-icons-popup-rtl-1">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
                                     <MenuListItem text="Hover" hover showArrow></MenuListItem>
@@ -56,7 +56,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="caret-alt-down" aria-controls="menu-icons-popup-rtl-1"></MenuItem>
                     <MenuItem last selected text="Selected" icon="folder"></MenuItem>
                 </MenuNormal>
             </section>
@@ -68,7 +68,7 @@ export default () =>(
                 <MenuNormal popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "110px", top: "auto" }}>
-                                <MenuList>
+                                <MenuList id="menu-icons-popup-2">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
                                     <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-right"></MenuListItem>
@@ -80,7 +80,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down"></MenuItem>
+                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down" aria-controls="menu-icons-popup-2"></MenuItem>
                     <MenuItem last selected text="Selected" icon="folder"></MenuItem>
                 </MenuNormal>
             </section>
@@ -89,7 +89,7 @@ export default () =>(
                 <MenuNormal dir="rtl"  popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "780px", top: "auto" }} dir="rtl">
-                                <MenuList dir="rtl">
+                                <MenuList dir="rtl" id="menu-icons-popup-rtl-2">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
                                     <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-left"></MenuListItem>
@@ -101,7 +101,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down"></MenuItem>
+                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down" aria-controls="menu-icons-popup-rtl-2"></MenuItem>
                     <MenuItem last selected text="Selected" icon="folder"></MenuItem>
                 </MenuNormal>
             </section>
@@ -113,11 +113,11 @@ export default () =>(
                 <MenuNormal popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "110px", top: "auto" }}>
-                                <MenuList>
+                                <MenuList id="menu-icons-popup-3">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-right"></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow arrowIconName="chevron-right"></MenuListItem>
+                                    <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-right" aria-controls="submenu3-hover"></MenuListItem>
+                                    <MenuListItem text="Active" active showArrow arrowIconName="chevron-right" aria-controls="submenu3-active"></MenuListItem>
                                     <MenuListItem text="Focus" focus></MenuListItem>
                                     <MenuListItem last text="Focus & Active" active focus></MenuListItem>
                                 </MenuList>
@@ -125,7 +125,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal" icon="folder" iconPosition="after"></MenuItem>
-                    <MenuItem text="Active" icon="folder" iconPosition="after" active showArrow arrowIconName="chevron-down"></MenuItem>
+                    <MenuItem text="Active" icon="folder" iconPosition="after" active showArrow arrowIconName="chevron-down" aria-controls="menu-icons-popup-3"></MenuItem>
                     <MenuItem last selected text="Selected" icon="folder" iconPosition="after"></MenuItem>
                 </MenuNormal>
             </section>
@@ -134,11 +134,11 @@ export default () =>(
                 <MenuNormal dir="rtl" popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "780px", top: "auto" }} dir="rtl">
-                                <MenuList dir="rtl">
+                                <MenuList dir="rtl" id="menu-icons-popup-rtl-3">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-left"></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow arrowIconName="chevron-left"></MenuListItem>
+                                    <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-left" aria-controls="submenu3-hover-rtl"></MenuListItem>
+                                    <MenuListItem text="Active" active showArrow arrowIconName="chevron-left" aria-controls="submenu3-active-rtl"></MenuListItem>
                                     <MenuListItem text="Focus" focus></MenuListItem>
                                     <MenuListItem last text="Focus & Active" active focus></MenuListItem>
                                 </MenuList>
@@ -146,7 +146,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal" icon="folder" iconPosition="after"></MenuItem>
-                    <MenuItem text="Active" icon="folder" iconPosition="after" active showArrow arrowIconName="chevron-down"></MenuItem>
+                    <MenuItem text="Active" icon="folder" iconPosition="after" active showArrow arrowIconName="chevron-down" aria-controls="menu-icons-popup-rtl-3"></MenuItem>
                     <MenuItem last selected text="Selected" icon="folder" iconPosition="after" showArrow arrowIconName="chevron-down"></MenuItem>
                 </MenuNormal>
             </section>

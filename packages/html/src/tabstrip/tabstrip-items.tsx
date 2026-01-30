@@ -12,6 +12,7 @@ const defaultOptions = {
 
 export type KendoTabStripItemsProps = {
     tabAlignment?: string;
+    orientation?: 'horizontal' | 'vertical';
 };
 
 export const TabStripItems = (
@@ -21,8 +22,11 @@ export const TabStripItems = (
     const {
         children,
         tabAlignment,
+        orientation,
         ...other
     } = props;
+
+    const ariaOrientation = orientation === 'vertical' ? 'vertical' : undefined;
 
     return (
         <ul
@@ -31,7 +35,9 @@ export const TabStripItems = (
                 TABSTRIPITEMS_CLASSNAME,
                 "k-reset",
                 `k-tabstrip-items-${tabAlignment}`
-            )}>
+            )}
+            role="tablist"
+            aria-orientation={ariaOrientation}>
             {children}
         </ul>
     );

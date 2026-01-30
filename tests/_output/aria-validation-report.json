@@ -1,615 +1,1377 @@
 {
-  "timestamp": "2026-01-30T11:46:36.334Z",
+  "timestamp": "2026-01-30T16:35:09.047Z",
   "summary": {
-    "filesTested": 8,
+    "filesTested": 12,
     "skipped": 0,
-    "passed": 1290,
-    "violations": 8
+    "passed": 108,
+    "violations": 50
   },
   "results": [
     {
-      "filePath": "./tests/dropdowngrid/dropdowngrid.html",
-      "spec": "aria/dropdowngrid_aria.md",
-      "totalRules": 21,
-      "testedRules": 9,
+      "filePath": "./tests/toolbar/toolbar.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 6,
       "untestedRules": [
         {
-          "selector": ".k-combobox .k-input-inner",
-          "attribute": "role=combobox",
-          "usage": "Announces the presence of a combobox as an inner element of the combobox used for filtering."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
-          "attribute": "aria-controls=.k-table-list id",
-          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
-          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
-          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "readonly=readonly or aria-readonly=true",
-          "usage": "The attribute is rendered only when the ComboBox is read-only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-busy=true",
-          "usage": "The attribute is rendered only when the ComboBox is loading data."
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-table-list",
-          "attribute": "role=listbox",
-          "usage": "The `ul` element that contains the options must have `role=listbox`."
-        },
-        {
-          "selector": ".k-table-row",
-          "attribute": "role=option",
-          "usage": "Identifies the `li` element as a listbox option."
-        },
-        {
-          "selector": ".k-table-row",
-          "attribute": "id",
-          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
-        },
-        {
-          "selector": ".k-table-row:not(.k-focus)",
-          "attribute": "tabindex=-1",
-          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
-        },
-        {
-          "selector": ".k-table-row.k-selected",
-          "attribute": "aria-selected=true",
-          "usage": "Indicates the selected state of the item."
-        },
-        {
-          "selector": ".k-table-group-row",
-          "attribute": "role=presentation",
-          "usage": "Group header rows should have `role=presentation`."
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
         }
       ],
-      "violations": [],
-      "passed": 146,
-      "violationCount": 0
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-hover k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidd",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-focus k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidd",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-active k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hid",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-focus k-disabled k-icon-button\" disabled=\"\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-m",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-hover k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidd",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-focus k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidd",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-active k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hid",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-focus k-disabled k-icon-button\" disabled=\"\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-m",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-hover k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidd",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-focus k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidd",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-active k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hid",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-focus k-disabled k-icon-button\" disabled=\"\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-m",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        }
+      ],
+      "passed": 14,
+      "violationCount": 18
     },
     {
-      "filePath": "./tests/dropdowngrid/dropdowngrid-solid.html",
-      "spec": "aria/dropdowngrid_aria.md",
-      "totalRules": 21,
-      "testedRules": 10,
+      "filePath": "./tests/toolbar/toolbar-sizes.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 6,
       "untestedRules": [
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
-          "attribute": "aria-controls=.k-table-list id",
-          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
-          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
-          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "readonly=readonly or aria-readonly=true",
-          "usage": "The attribute is rendered only when the ComboBox is read-only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-busy=true",
-          "usage": "The attribute is rendered only when the ComboBox is loading data."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
         },
         {
-          "selector": ".k-table-list",
-          "attribute": "role=listbox",
-          "usage": "The `ul` element that contains the options must have `role=listbox`."
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-table-row",
-          "attribute": "role=option",
-          "usage": "Identifies the `li` element as a listbox option."
-        },
-        {
-          "selector": ".k-table-row",
-          "attribute": "id",
-          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
-        },
-        {
-          "selector": ".k-table-row:not(.k-focus)",
-          "attribute": "tabindex=-1",
-          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
-        },
-        {
-          "selector": ".k-table-row.k-selected",
-          "attribute": "aria-selected=true",
-          "usage": "Indicates the selected state of the item."
-        },
-        {
-          "selector": ".k-table-group-row",
-          "attribute": "role=presentation",
-          "usage": "Group header rows should have `role=presentation`."
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
         }
       ],
-      "violations": [],
-      "passed": 170,
-      "violationCount": 0
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-sm k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-md k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-haspopup=menu",
+            "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-lg k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-haspopup",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-sm k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-md k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-expanded=true/false",
+            "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-lg k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-expanded",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-hidden=\"true",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-sm k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-md k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+            "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the content it controls."
+          },
+          "element": "<button class=\"k-toolbar-overflow-button k-button k-button-lg k-button-flat k-rounded-none k-icon-button\">\n                    <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-more-vertical\" aria-",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-controls",
+          "actual": null
+        }
+      ],
+      "passed": 8,
+      "violationCount": 12
     },
     {
-      "filePath": "./tests/dropdowngrid/dropdowngrid-size-rounded.html",
-      "spec": "aria/dropdowngrid_aria.md",
-      "totalRules": 21,
+      "filePath": "./tests/toolbar/toolbar-section.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
       "testedRules": 7,
       "untestedRules": [
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
-          "attribute": "aria-controls=.k-table-list id",
-          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
-          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
-          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "readonly=readonly or aria-readonly=true",
-          "usage": "The attribute is rendered only when the ComboBox is read-only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-busy=true",
-          "usage": "The attribute is rendered only when the ComboBox is loading data."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-combobox.k-invalid .k-input-inner,.k-combobox.ng-invalid .k-input-inner",
-          "attribute": "aria-invalid=true",
-          "usage": "The attribute is rendered only when the ComboBox is in a form, and announces the valid state of the component."
-        },
-        {
-          "selector": ".k-combobox.k-disabled .k-input-inner",
-          "attribute": "disabled=disabled or aria-disabled=true",
-          "usage": "The attribute is rendered only when the ComboBox is disabled."
-        },
-        {
-          "selector": ".k-combobox.k-disabled .k-button",
-          "attribute": "disabled or aria-disabled=true",
-          "usage": "Attribute is rendered only when the picker is disabled."
-        },
-        {
-          "selector": ".k-table-list",
-          "attribute": "role=listbox",
-          "usage": "The `ul` element that contains the options must have `role=listbox`."
-        },
-        {
-          "selector": ".k-table-row",
-          "attribute": "role=option",
-          "usage": "Identifies the `li` element as a listbox option."
-        },
-        {
-          "selector": ".k-table-row",
-          "attribute": "id",
-          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
-        },
-        {
-          "selector": ".k-table-row:not(.k-focus)",
-          "attribute": "tabindex=-1",
-          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
-        },
-        {
-          "selector": ".k-table-row.k-selected",
-          "attribute": "aria-selected=true",
-          "usage": "Indicates the selected state of the item."
-        },
-        {
-          "selector": ".k-table-group-row",
-          "attribute": "role=presentation",
-          "usage": "Group header rows should have `role=presentation`."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
         }
       ],
       "violations": [],
-      "passed": 168,
+      "passed": 18,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dropdowngrid/dropdowngrid-prefix-suffix.html",
-      "spec": "aria/dropdowngrid_aria.md",
-      "totalRules": 21,
-      "testedRules": 10,
+      "filePath": "./tests/toolbar/toolbar-section-sizes.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 7,
       "untestedRules": [
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
-          "attribute": "aria-controls=.k-table-list id",
-          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
-          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
-          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "readonly=readonly or aria-readonly=true",
-          "usage": "The attribute is rendered only when the ComboBox is read-only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-busy=true",
-          "usage": "The attribute is rendered only when the ComboBox is loading data."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-table-list",
-          "attribute": "role=listbox",
-          "usage": "The `ul` element that contains the options must have `role=listbox`."
-        },
-        {
-          "selector": ".k-table-row",
-          "attribute": "role=option",
-          "usage": "Identifies the `li` element as a listbox option."
-        },
-        {
-          "selector": ".k-table-row",
-          "attribute": "id",
-          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
-        },
-        {
-          "selector": ".k-table-row:not(.k-focus)",
-          "attribute": "tabindex=-1",
-          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
-        },
-        {
-          "selector": ".k-table-row.k-selected",
-          "attribute": "aria-selected=true",
-          "usage": "Indicates the selected state of the item."
-        },
-        {
-          "selector": ".k-table-group-row",
-          "attribute": "role=presentation",
-          "usage": "Group header rows should have `role=presentation`."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
         }
       ],
       "violations": [],
-      "passed": 348,
+      "passed": 24,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dropdowngrid/dropdowngrid-outline.html",
-      "spec": "aria/dropdowngrid_aria.md",
-      "totalRules": 21,
-      "testedRules": 10,
+      "filePath": "./tests/toolbar/toolbar-scrollable-components.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 2,
       "untestedRules": [
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
-          "attribute": "aria-controls=.k-table-list id",
-          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
-          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
-          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "readonly=readonly or aria-readonly=true",
-          "usage": "The attribute is rendered only when the ComboBox is read-only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-busy=true",
-          "usage": "The attribute is rendered only when the ComboBox is loading data."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-table-list",
-          "attribute": "role=listbox",
-          "usage": "The `ul` element that contains the options must have `role=listbox`."
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
         },
         {
-          "selector": ".k-table-row",
-          "attribute": "role=option",
-          "usage": "Identifies the `li` element as a listbox option."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
         },
         {
-          "selector": ".k-table-row",
-          "attribute": "id",
-          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
         },
         {
-          "selector": ".k-table-row:not(.k-focus)",
-          "attribute": "tabindex=-1",
-          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
         },
         {
-          "selector": ".k-table-row.k-selected",
-          "attribute": "aria-selected=true",
-          "usage": "Indicates the selected state of the item."
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-table-group-row",
-          "attribute": "role=presentation",
-          "usage": "Group header rows should have `role=presentation`."
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
         }
       ],
       "violations": [],
-      "passed": 170,
+      "passed": 4,
       "violationCount": 0
     },
     {
-      "filePath": "./tests/dropdowngrid/dropdowngrid-opened.html",
-      "spec": "aria/dropdowngrid_aria.md",
-      "totalRules": 21,
-      "testedRules": 18,
+      "filePath": "./tests/toolbar/toolbar-scrollable-buttons.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 2,
       "untestedRules": [
         {
-          "selector": ".k-combobox.k-invalid .k-input-inner,.k-combobox.ng-invalid .k-input-inner",
-          "attribute": "aria-invalid=true",
-          "usage": "The attribute is rendered only when the ComboBox is in a form, and announces the valid state of the component."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox.k-disabled .k-input-inner",
-          "attribute": "disabled=disabled or aria-disabled=true",
-          "usage": "The attribute is rendered only when the ComboBox is disabled."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox.k-disabled .k-button",
-          "attribute": "disabled or aria-disabled=true",
-          "usage": "Attribute is rendered only when the picker is disabled."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
+        }
+      ],
+      "violations": [],
+      "passed": 3,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/toolbar/toolbar-scrollable-buttons-hidden.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 2,
+      "untestedRules": [
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
+        }
+      ],
+      "violations": [],
+      "passed": 4,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/toolbar/toolbar-popup.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 2,
+      "untestedRules": [
+        {
+          "selector": ".k-toolbar",
+          "attribute": "role=toolbar",
+          "usage": "The component role."
+        },
+        {
+          "selector": ".k-toolbar",
+          "attribute": "aria-label or aria-labelledby",
+          "usage": "Must be supplied on each toolbar only when the application contains more than one toolbars."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
         }
       ],
       "violations": [
         {
           "rule": {
-            "selector": ".k-table-row",
-            "attribute": "role=option",
-            "usage": "Identifies the `li` element as a listbox option."
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
           },
-          "element": "<tr class=\"k-table-row\">\n                                                <th class=\"k-table-th\">ID</th>\n                                                <th class=\"k-table-th\">Name</th>\n               ",
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n       ",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "role",
+          "expected": "aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-table-row",
-            "attribute": "role=option",
-            "usage": "Identifies the `li` element as a listbox option."
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
           },
-          "element": "<tr class=\"k-table-row\">\n                                                <th class=\"k-table-th\">ID</th>\n                                                <th class=\"k-table-th\">Name</th>\n               ",
-          "index": 7,
+          "element": "<ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-menu-link\">\n    ",
+          "index": 1,
           "valid": false,
           "reason": "missing",
-          "expected": "role",
+          "expected": "aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-table-row:not(.k-focus)",
-            "attribute": "tabindex=-1",
-            "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
           },
-          "element": "<tr class=\"k-table-row\">\n                                                <th class=\"k-table-th\">ID</th>\n                                                <th class=\"k-table-th\">Name</th>\n               ",
-          "index": 0,
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n       ",
+          "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "tabindex",
+          "expected": "aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-table-row:not(.k-focus)",
-            "attribute": "tabindex=-1",
-            "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
           },
-          "element": "<tr class=\"k-table-row\">\n                                                <th class=\"k-table-th\">ID</th>\n                                                <th class=\"k-table-th\">Name</th>\n               ",
+          "element": "<ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-menu-link\">\n    ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n       ",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-menu-link\">\n    ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n       ",
           "index": 6,
           "valid": false,
           "reason": "missing",
-          "expected": "tabindex",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-menu-link\">\n    ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n       ",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-menu-link\">\n    ",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n       ",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-menu-link\">\n    ",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
           "actual": null
         }
       ],
-      "passed": 62,
-      "violationCount": 4
+      "passed": 12,
+      "violationCount": 12
     },
     {
-      "filePath": "./tests/dropdowngrid/dropdowngrid-flat.html",
-      "spec": "aria/dropdowngrid_aria.md",
-      "totalRules": 21,
-      "testedRules": 10,
+      "filePath": "./tests/toolbar/toolbar-popup-size.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 2,
       "untestedRules": [
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
-          "attribute": "aria-controls=.k-table-list id",
-          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
+          "selector": ".k-toolbar",
+          "attribute": "role=toolbar",
+          "usage": "The component role."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
-          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
+          "selector": ".k-toolbar",
+          "attribute": "aria-label or aria-labelledby",
+          "usage": "Must be supplied on each toolbar only when the application contains more than one toolbars."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
-          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "readonly=readonly or aria-readonly=true",
-          "usage": "The attribute is rendered only when the ComboBox is read-only."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
         },
         {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-busy=true",
-          "usage": "The attribute is rendered only when the ComboBox is loading data."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
         },
         {
-          "selector": ".k-table-list",
-          "attribute": "role=listbox",
-          "usage": "The `ul` element that contains the options must have `role=listbox`."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
         },
         {
-          "selector": ".k-table-row",
-          "attribute": "role=option",
-          "usage": "Identifies the `li` element as a listbox option."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
         },
         {
-          "selector": ".k-table-row",
-          "attribute": "id",
-          "usage": "List items should have an `id` attribute for `aria-activedescendant` navigation."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
         },
         {
-          "selector": ".k-table-row:not(.k-focus)",
-          "attribute": "tabindex=-1",
-          "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
         },
         {
-          "selector": ".k-table-row.k-selected",
-          "attribute": "aria-selected=true",
-          "usage": "Indicates the selected state of the item."
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
         },
         {
-          "selector": ".k-table-group-row",
-          "attribute": "role=presentation",
-          "usage": "Group header rows should have `role=presentation`."
-        }
-      ],
-      "violations": [],
-      "passed": 170,
-      "violationCount": 0
-    },
-    {
-      "filePath": "./tests/dropdowngrid/dropdowngrid-adaptive.html",
-      "spec": "aria/dropdowngrid_aria.md",
-      "totalRules": 21,
-      "testedRules": 12,
-      "untestedRules": [
-        {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"]",
-          "attribute": "aria-controls=.k-table-list id",
-          "usage": "Points to the listbox element when the popup is open and the element exists. Signifies that the `combobox` controls the `listbox` element."
-        },
-        {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-activedescendant=.k-list-item.k-focus id",
-          "usage": "Points to the focused item in the popup. The focused item is changed through keyboard navigation. If the popup is not visible or no item is focused, the attribute must be removed."
-        },
-        {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-autocomplete=list or aria-autocomplete=both or aria-autocomplete=inline",
-          "usage": "The attribute value depends on enabled features: `list` for filtering, `both` for filtering + suggest, `inline` for suggest only."
-        },
-        {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "readonly=readonly or aria-readonly=true",
-          "usage": "The attribute is rendered only when the ComboBox is read-only."
-        },
-        {
-          "selector": ".k-combobox .k-input-inner[aria-expanded=\"true\"][aria-activedescendant]",
-          "attribute": "aria-busy=true",
-          "usage": "The attribute is rendered only when the ComboBox is loading data."
-        },
-        {
-          "selector": ".k-combobox.k-invalid .k-input-inner,.k-combobox.ng-invalid .k-input-inner",
-          "attribute": "aria-invalid=true",
-          "usage": "The attribute is rendered only when the ComboBox is in a form, and announces the valid state of the component."
-        },
-        {
-          "selector": ".k-combobox.k-disabled .k-input-inner",
-          "attribute": "disabled=disabled or aria-disabled=true",
-          "usage": "The attribute is rendered only when the ComboBox is disabled."
-        },
-        {
-          "selector": ".k-combobox.k-disabled .k-button",
-          "attribute": "disabled or aria-disabled=true",
-          "usage": "Attribute is rendered only when the picker is disabled."
-        },
-        {
-          "selector": ".k-table-row.k-selected",
-          "attribute": "aria-selected=true",
-          "usage": "Indicates the selected state of the item."
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
         }
       ],
       "violations": [
         {
           "rule": {
-            "selector": ".k-table-row",
-            "attribute": "role=option",
-            "usage": "Identifies the `li` element as a listbox option."
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
           },
-          "element": "<tr class=\"k-table-row\">\n                                                                <th class=\"k-table-th\">ID</th>\n                                                                <th class=\"k-tab",
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n       ",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "role",
+          "expected": "aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-table-row",
-            "attribute": "role=option",
-            "usage": "Identifies the `li` element as a listbox option."
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
           },
-          "element": "<tr class=\"k-table-row\">\n                                                                <th class=\"k-table-th\">ID</th>\n                                                                <th class=\"k-tab",
+          "element": "<ul class=\"k-menu-group\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-menu-link\">\n    ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group k-menu-group-sm\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"me",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<ul class=\"k-menu-group k-menu-group-sm\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group k-menu-group-md\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"me",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<ul class=\"k-menu-group k-menu-group-md\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<div class=\"k-menu-group\" role=\"menu\">\n                            <ul class=\"k-menu-group k-menu-group-lg\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"me",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+            "usage": "Associates the title of the menu toggle button."
+          },
+          "element": "<ul class=\"k-menu-group k-menu-group-lg\" role=\"menu\">\n                                <li class=\"k-menu-item k-item k-first\" role=\"menuitem\">\n                                    <span class=\"k-link k-",
           "index": 7,
           "valid": false,
           "reason": "missing",
-          "expected": "role",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-table-row:not(.k-focus)",
-            "attribute": "tabindex=-1",
-            "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
-          },
-          "element": "<tr class=\"k-table-row\">\n                                                                <th class=\"k-table-th\">ID</th>\n                                                                <th class=\"k-tab",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-table-row:not(.k-focus)",
-            "attribute": "tabindex=-1",
-            "usage": "Only the focused option should have `tabindex=0`, all others should be `-1`."
-          },
-          "element": "<tr class=\"k-table-row\">\n                                                                <th class=\"k-table-th\">ID</th>\n                                                                <th class=\"k-tab",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "tabindex",
+          "expected": "aria-labelledby",
           "actual": null
         }
       ],
-      "passed": 56,
-      "violationCount": 4
+      "passed": 8,
+      "violationCount": 8
+    },
+    {
+      "filePath": "./tests/toolbar/toolbar-popup-legacy.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 0,
+      "untestedRules": [
+        {
+          "selector": ".k-toolbar",
+          "attribute": "role=toolbar",
+          "usage": "The component role."
+        },
+        {
+          "selector": ".k-toolbar",
+          "attribute": "aria-label or aria-labelledby",
+          "usage": "Must be supplied on each toolbar only when the application contains more than one toolbars."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
+        }
+      ],
+      "violations": [],
+      "passed": 0,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/toolbar/toolbar-fill-modes.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 2,
+      "untestedRules": [
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
+        }
+      ],
+      "violations": [],
+      "passed": 8,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/toolbar/toolbar-components.html",
+      "spec": "aria/toolbar_aria.md",
+      "totalRules": 13,
+      "testedRules": 2,
+      "untestedRules": [
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-haspopup=menu",
+          "usage": "The value of the \"aria-haspopup\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow popup."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-menu-group id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "role=menu",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-menu-group",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id",
+          "usage": "Associates the title of the menu toggle button."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-expanded=true/false",
+          "usage": "The value of the \"aria-expanded\" attribute of the button that opens the overflow section."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-label or title",
+          "usage": "The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text)."
+        },
+        {
+          "selector": ".k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)",
+          "attribute": "aria-controls=.k-toolbar-popup .k-toolbar-items-list id",
+          "usage": "Indicates the connection between the toggle button and the content it controls."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "role=toolbar",
+          "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+          "selector": ".k-toolbar-popup .k-toolbar-items-list",
+          "attribute": "aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id",
+          "usage": "Associates the title of the section toggle button."
+        }
+      ],
+      "violations": [],
+      "passed": 5,
+      "violationCount": 0
     }
   ]
 }

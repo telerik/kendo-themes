@@ -106,7 +106,8 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             rounded: Roundness.none
                         }),
                         'k-icon-button',
-                    )}>
+                    )}
+                    aria-hidden="true">
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["prev"]}`} />
                     </span>
                 }
@@ -120,7 +121,8 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             rounded: Roundness.none
                         }),
                         'k-icon-button',
-                    )}>
+                    )}
+                    aria-hidden="true">
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
                     </span>
                 }
@@ -128,6 +130,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                     id={tabStripItemsId}
                     className={classNames({[`k-tabstrip-items-scroll`]: scrollable && scrollButtons === 'hidden'})}
                     tabAlignment={tabAlignmentMap[tabAlignment]}
+                    orientation={orientationMap[position]}
                 >
                     {tabStripItems}
                 </TabStripItems>
@@ -141,7 +144,8 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             rounded: Roundness.none
                         }),
                         'k-icon-button',
-                    )}>
+                    )}
+                    aria-hidden="true">
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["prev"]}`} />
                     </span>
                 }
@@ -156,7 +160,8 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             rounded: Roundness.none
                         }),
                         'k-icon-button',
-                    )}>
+                    )}
+                    aria-hidden="true">
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
                     </span>
                 }

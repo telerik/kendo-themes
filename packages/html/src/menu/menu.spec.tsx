@@ -18,6 +18,7 @@ export type KendoMenuProps = {
     wrapperStyles?: React.CSSProperties;
     dir?: "rtl" | "ltr";
     popup?: React.JSX.Element;
+    id?: string;
 };
 
 const defaultOptions = {
@@ -39,6 +40,7 @@ export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLULis
         wrapperStyles,
         dir,
         popup,
+        id,
         ...other
     } = props;
 
@@ -59,7 +61,10 @@ export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLULis
                     [`${MENU_CLASSNAME}-${orientation}`]: orientation,
                     ["k-header"]: header
                 }
-            )}>
+            )}
+            {...(!props.className?.includes('k-context-menu') && { role: 'menubar' })}
+            {...(orientation === 'vertical' && { 'aria-orientation': 'vertical' })}
+            {...(id && { id })}>
             {children}
         </ul>
     )
@@ -71,26 +76,26 @@ export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLULis
                     {scrollButtonsPosition === 'start' &&
                         <>
                             <Button fillMode="flat"
-                                icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>
+                                icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" aria-label="Scroll to previous"></Button>
                             <Button fillMode="flat"
-                                icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>
+                                icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" aria-label="Scroll to next"></Button>
                         </>
                     }
                     {scrollButtonsPosition === 'around' &&
                         <Button fillMode="flat"
-                            icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>}
+                            icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" aria-label="Scroll to previous"></Button>}
                     {ulMenu}
                     {scrollButtonsPosition === 'end' &&
                         <>
                             <Button fillMode="flat"
-                                icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>
+                                icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" aria-label="Scroll to previous"></Button>
                             <Button fillMode="flat"
-                                icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>
+                                icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" aria-label="Scroll to next"></Button>
                         </>
                     }
                     {scrollButtonsPosition === 'around' &&
                         <Button fillMode="flat"
-                            icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>}
+                            icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" aria-label="Scroll to next"></Button>}
                 </MenuScrollableWrapper>) :
                 ulMenu
             }

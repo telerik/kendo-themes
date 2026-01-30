@@ -28,17 +28,17 @@ export default () =>(
                 <MenuNormal popup={
                     <>
                         <Popup className="k-menu-popup" offset={{ left: "165px", top: "auto" }}>
-                            <MenuList>
+                            <MenuList id="menu-popup-1">
                                 <MenuListItem first text="Disabled" disabled></MenuListItem>
                                 <MenuListItem text="Normal"></MenuListItem>
-                                <MenuListItem text="Hover" hover showArrow></MenuListItem>
+                                <MenuListItem text="Hover" hover showArrow aria-controls="menu-popup-2"></MenuListItem>
                                 <MenuListItem text="Active" active showArrow></MenuListItem>
                                 <MenuListItem text="Focus" focus></MenuListItem>
                                 <MenuListItem last text="Focus & Active" active focus></MenuListItem>
                             </MenuList>
                         </Popup>
                         <Popup className="k-menu-popup" offset={{ left: "300px", top: "175px" }}>
-                            <MenuList>
+                            <MenuList id="menu-popup-2">
                                 <MenuListItem first text="Disabled" disabled></MenuListItem>
                                 <MenuListItem text="Normal"></MenuListItem>
                                 <MenuListItem text="Hover" hover showArrow></MenuListItem>
@@ -50,7 +50,7 @@ export default () =>(
                     </>
                     }>
                     <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down" aria-controls="menu-popup-1"></MenuItem>
                     <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
@@ -69,7 +69,7 @@ export default () =>(
                 <MenuNormal dir="rtl" popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "220px", top: "auto" }} dir="rtl">
-                                <MenuList dir="rtl">
+                                <MenuList dir="rtl" id="menu-popup-rtl">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
                                     <MenuListItem text="Hover" hover showArrow></MenuListItem>
@@ -81,7 +81,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down" aria-controls="menu-popup-rtl"></MenuItem>
                     <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>

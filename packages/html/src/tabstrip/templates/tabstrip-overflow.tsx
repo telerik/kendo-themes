@@ -4,12 +4,12 @@ import { Popup } from "../../popup";
 
 const defaultTabStripItems = (
   <>
-    <TabStripItem first value="Tab 1" />
-    <TabStripItem value="Tab 2" />
-    <TabStripItem active value="Tab 3" />
-    <TabStripItem value="Tab 4" />
-    <TabStripItem value="Tab 5" />
-    <TabStripItem last value="Tab 6" />
+    <TabStripItem first value="Tab 1" id="tab-overflow-1" />
+    <TabStripItem value="Tab 2" id="tab-overflow-2" />
+    <TabStripItem active value="Tab 3" id="tab-overflow-3" aria-controls="tabpanel-overflow-3" />
+    <TabStripItem value="Tab 4" id="tab-overflow-4" />
+    <TabStripItem value="Tab 5" id="tab-overflow-5" />
+    <TabStripItem last value="Tab 6" id="tab-overflow-6" />
   </>
 );
 
@@ -29,7 +29,7 @@ export const TabStripOverflow = ({ children, showMenu = true, popupOffset = {}, 
       {...other}
     >
       {children || (
-        <TabStripContent active>
+        <TabStripContent active id="tabpanel-overflow-3" aria-labelledby="tab-overflow-3">
           <div>TabStrip Content</div>
         </TabStripContent>
       )}

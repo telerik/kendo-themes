@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -14,35 +14,35 @@
         <section>
             <div class="k-tabstrip k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                        <li id="tab-1" class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">First</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active">
+                        <li id="tab-2" class="k-tabstrip-item k-active" role="tab" aria-selected="true" aria-controls="tabpanel-2">
                             <span class="k-link">
                                 <span class="k-link-text">Second</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-3" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Third</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-4" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fourth</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-last">
+                        <li id="tab-5" class="k-tabstrip-item k-last" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fifth</span>
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-2" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-2">
                     <div>Start Alignment</div>
                 </div>
             </div>
@@ -50,35 +50,35 @@
         <section>
             <div class="k-tabstrip k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-center">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-center" role="tablist">
+                        <li id="tab-1" class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">First</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active">
+                        <li id="tab-2" class="k-tabstrip-item k-active" role="tab" aria-selected="true" aria-controls="tabpanel-2">
                             <span class="k-link">
                                 <span class="k-link-text">Second</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-3" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Third</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-4" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fourth</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-last">
+                        <li id="tab-5" class="k-tabstrip-item k-last" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fifth</span>
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-center-2" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-center-2">
                     <div>Center Alignment</div>
                 </div>
             </div>
@@ -86,35 +86,35 @@
         <section>
             <div class="k-tabstrip k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-end">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-end" role="tablist">
+                        <li id="tab-1" class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">First</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active">
+                        <li id="tab-2" class="k-tabstrip-item k-active" role="tab" aria-selected="true" aria-controls="tabpanel-2">
                             <span class="k-link">
                                 <span class="k-link-text">Second</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-3" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Third</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-4" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fourth</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-last">
+                        <li id="tab-5" class="k-tabstrip-item k-last" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fifth</span>
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-end-2" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-end-2">
                     <div>End Alignment</div>
                 </div>
             </div>
@@ -122,35 +122,35 @@
         <section>
             <div class="k-tabstrip k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-stretched">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-stretched" role="tablist">
+                        <li id="tab-1" class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">First</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active">
+                        <li id="tab-2" class="k-tabstrip-item k-active" role="tab" aria-selected="true" aria-controls="tabpanel-2">
                             <span class="k-link">
                                 <span class="k-link-text">Second</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-3" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Third</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-4" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fourth</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-last">
+                        <li id="tab-5" class="k-tabstrip-item k-last" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fifth</span>
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-stretched-2" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-stretched-2">
                     <div>Stretched Alignment</div>
                 </div>
             </div>
@@ -158,35 +158,35 @@
         <section>
             <div class="k-tabstrip k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-justify">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-justify" role="tablist">
+                        <li id="tab-1" class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">First</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active">
+                        <li id="tab-2" class="k-tabstrip-item k-active" role="tab" aria-selected="true" aria-controls="tabpanel-2">
                             <span class="k-link">
                                 <span class="k-link-text">Second</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-3" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Third</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-4" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fourth</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-last">
+                        <li id="tab-5" class="k-tabstrip-item k-last" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Fifth</span>
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-justify-2" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-justify-2">
                     <div>Justified Alignment</div>
                 </div>
             </div>

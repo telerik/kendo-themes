@@ -15,6 +15,8 @@ export type KendoMenuListOptions = {
     children?: React.JSX.Element | React.JSX.Element[];
     size?: (typeof options.size)[number] | null;
     dir?: "rtl" | "ltr";
+    id?: string;
+    role?: string;
 };
 
 const defaultOptions = {
@@ -29,6 +31,8 @@ export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttribute
         children,
         size,
         dir = defaultOptions.dir,
+        id,
+        role,
         ...other
     } = props;
 
@@ -61,7 +65,9 @@ export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttribute
                 optionClassNames(MENULIST_CLASSNAME, {
                     size,
                 })
-            )}>
+            )}
+            role={role || 'menu'}
+            {...(id && { id })}>
             {listChildren}
         </ul>
     );

@@ -6,7 +6,7 @@ import { SplitButton } from '../../split-button';
 import { ToolbarSeparator } from "../toolbar-separator";
 import ToolbarPopup from "../toolbar-popup.spec";
 
-export const ToolbarSection = ({ fillMode, size, ...other }: any) => (
+export const ToolbarSection = ({ fillMode, size, id = 'toolbar-section', ...other }: any) => (
     <>
         <Toolbar section fillMode={fillMode} size={size} children={[
             <Button key="toolbar-button" fillMode={fillMode} size={size}>Button</Button>,
@@ -16,11 +16,21 @@ export const ToolbarSection = ({ fillMode, size, ...other }: any) => (
                 <Button className="k-group-end" icon="align-right" fillMode={fillMode} size={size}>Right</Button>
             </ButtonGroup>,
             <ToolbarSeparator className="k-toolbar-button-separator" />,
-            <Button icon="more-horizontal" className="k-toolbar-overflow-button" fillMode="flat" size={size} rounded="none"></Button>
+            <Button
+                icon="more-horizontal"
+                className="k-toolbar-overflow-button"
+                fillMode="flat"
+                size={size}
+                rounded="none"
+                id={`${id}-overflow-button`}
+                aria-expanded="false"
+                aria-controls={`${id}-items-list`}
+                title="More tools"
+            />
         ]}
         {...other}>
         </Toolbar>
-        <ToolbarPopup size={size} fillMode={fillMode} section {...other} >
+        <ToolbarPopup size={size} fillMode={fillMode} section contentId={`${id}-items-list`} aria-labelledby={`${id}-overflow-button`} {...other} >
             <SplitButton key="toolbar-split-button" fillMode={fillMode} size={size}>Split button</SplitButton>
             <Button key="toolbar-button" fillMode={fillMode} size={size}>Button</Button>
             <ToolbarSeparator />

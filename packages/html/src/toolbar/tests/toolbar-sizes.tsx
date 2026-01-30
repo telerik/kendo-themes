@@ -8,12 +8,12 @@ import { ToolbarItem, ToolbarSeparator, ToolbarResizable, Toolbar } from '../../
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
-            { Toolbar.options.size.map((size) => (
+            { Toolbar.options.size.map((size, index) => (
                 <>
                     <span className="k-colspan-all k-col-span-full">{`${size}`}</span>
                     <section className="k-colspan-all k-col-span-full">
                         <ToolbarResizable size={size}>
-                            <Button size={size} icon="bold"></Button>
+                            <Button size={size} icon="bold" title="Bold"></Button>
                             <Button size={size}>Button</Button>
                             <Button size={size}>Toggle</Button>
                             <ToolbarSeparator></ToolbarSeparator>
@@ -31,7 +31,7 @@ export default () =>(
                             </ToolbarItem>
                             <Switch size={size} checked />
                             <ToolbarSeparator className="k-toolbar-button-separator" />
-                            <Button size={size} icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none"></Button>
+                            <Button size={size} icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" id={`toolbar-size-${index}-overflow`} aria-haspopup="menu" aria-expanded="false" aria-controls={`toolbar-size-${index}-menu`} title="More actions"></Button>
                         </ToolbarResizable>
                     </section>
                 </>

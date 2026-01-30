@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-30T11:55:43.646Z",
+  "lastUpdated": "2026-01-30T16:55:22.156Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -465,17 +465,18 @@
       "notes": ""
     },
     "drawer": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "navigation",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T15:53:57.450Z"
     },
     "dropdownbutton": {
       "status": "completed",
@@ -748,17 +749,18 @@
       "notes": ""
     },
     "menu": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "navigation",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T15:27:35.548Z"
     },
     "multicolumncombobox": {
       "status": "completed",
@@ -1150,17 +1152,18 @@
       "notes": ""
     },
     "stepper": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "navigation",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T15:55:52.271Z"
     },
     "switch": {
       "status": "completed",
@@ -1177,17 +1180,18 @@
       "completedAt": "2026-01-28T12:52:14.872Z"
     },
     "tabstrip": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "navigation",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T16:32:18.117Z"
     },
     "taskboard": {
       "status": "pending",
@@ -1299,17 +1303,18 @@
       "notes": ""
     },
     "toolbar": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "navigation",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T16:55:22.155Z"
     },
     "tooltip": {
       "status": "pending",

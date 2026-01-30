@@ -1,5 +1,6 @@
 import { MenuListItem, MenuSeparator, MenuList } from '../../menu';
 import { ToolbarPopup } from '../../toolbar';
+import { Button } from '../../button';
 
 
 const style = `
@@ -74,6 +75,29 @@ export default () =>(
                         <MenuListItem text="Item 3"></MenuListItem>
                         <MenuSeparator></MenuSeparator>
                         <MenuListItem last text="Item after separator" icon="plus"></MenuListItem>
+                    </MenuList>
+                </ToolbarPopup>
+            </section>
+
+            <span className="k-colspan-all k-col-span-full">Menu popup with aria-labelledby</span>
+            <section>
+                <Button
+                    id="toolbar-overflow-button-test"
+                    icon="more-vertical"
+                    aria-haspopup="menu"
+                    aria-expanded="true"
+                    aria-controls="toolbar-menu-group-test"
+                    title="More actions"
+                />
+                <ToolbarPopup
+                    className="k-menu-popup"
+                    contentId="toolbar-menu-group-test"
+                    aria-labelledby="toolbar-overflow-button-test"
+                >
+                    <MenuList>
+                        <MenuListItem first text="Item 1"></MenuListItem>
+                        <MenuListItem text="Item 2"></MenuListItem>
+                        <MenuListItem last text="Item 3"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>

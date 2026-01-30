@@ -26,6 +26,8 @@ export type KendoDrawerItemProps = {
     expanded?: boolean;
     hasChildren?: boolean;
     level?: number | string;
+    mini?: boolean;
+    'aria-label'?: string;
 };
 
 export type KendoDrawerItemState = { [K in (typeof states)[number]]?: boolean };
@@ -44,8 +46,17 @@ export const DrawerItem: KendoComponent<KendoDrawerItemProps & KendoDrawerItemSt
         selected,
         disabled,
         expanded,
-        hasChildren
+        hasChildren,
+        'aria-label': ariaLabel
     } = props;
+
+    // Compute ARIA attributes
+    // aria-label is required when there's no visible text content
+    const computedAriaLabel = !text ? (ariaLabel || text) : ariaLabel;
+
+    const ariaProps = {
+        ...(computedAriaLabel && { 'aria-label': computedAriaLabel }),
+    } as React.HTMLAttributes<HTMLLIElement>;
 
     return (
         <li className={classNames(
@@ -60,7 +71,10 @@ export const DrawerItem: KendoComponent<KendoDrawerItemProps & KendoDrawerItemSt
             {
                 [`k-level-${level}`]: level || level === 0
             }
-        )}>
+        )}
+            role="menuitem"
+            {...ariaProps}
+        >
             {icon && ( <Icon icon= {icon}/> )}
             {text && ( <span className="k-item-text">{text}</span> )}
             {hasChildren && (

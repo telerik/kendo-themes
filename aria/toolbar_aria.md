@@ -12,10 +12,10 @@ This section lists the selectors, attributes, and behavior patterns supported by
 |  | `aria-controls=.k-toolbar-popup .k-menu-group id` | Indicates the connection between the toggle button and the content it controls. |
 |  | `aria-label` or `title` | The button that opens the overflow popup must have a descriptive text set, as it contains only an icon (no text). |
 | `.k-toolbar-popup .k-menu-group` | `role=menu` | The role of the tools wrapper in the overflow section. |
-|  | `aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id` | Associates the title of the menu toggle button. |
+| `.k-toolbar-popup .k-menu-group[aria-labelledby]` | `aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-vertical) id` | Associates the title of the menu toggle button. Only present when linked to a toggle button. |
 | `.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal)` | `aria-expanded=true/false` | The value of the "aria-expanded" attribute of the button that opens the overflow section. |
 |  | `aria-label` or `title` | The button that opens the overflow section must have a descriptive text set, as it contains only an icon (no text). |
 |  | `aria-controls=.k-toolbar-popup .k-toolbar-items-list id` | Indicates the connection between the toggle button and the content it controls. |
 | `.k-toolbar-popup .k-toolbar-items-list` | `role=toolbar` | The role of the tools wrapper in the overflow section. |
-|  | `aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id` | Associates the title of the section toggle button. |
+| `.k-toolbar-popup .k-toolbar-items-list[aria-labelledby]` | `aria-labelledby=.k-toolbar .k-toolbar-overflow-button:has(.k-svg-i-more-horizontal) id` | Associates the title of the section toggle button. Only present when linked to a toggle button. |
 

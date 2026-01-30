@@ -62,7 +62,7 @@ export const Drawer: KendoComponent<KendoDrawerProps & React.HTMLAttributes<HTML
                     }
                 )}>
                 <div className="k-drawer-wrapper" style={{ width: width }}>
-                    <ul className="k-drawer-items">
+                    <ul className="k-drawer-items" role="menubar" aria-orientation="vertical">
                         {items}
                     </ul>
                 </div>

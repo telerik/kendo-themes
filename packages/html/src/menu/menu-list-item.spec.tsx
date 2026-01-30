@@ -27,6 +27,9 @@ export type KendoMenuListItemProps = {
     dir?: "rtl" | "ltr";
     children?: React.JSX.Element[];
     popup?: React.JSX.Element;
+    'aria-haspopup'?: 'true' | 'false';
+    'aria-controls'?: string;
+    'aria-expanded'?: 'true' | 'false';
 };
 
 export type KendoMenuListItemState = { [K in (typeof states)[number]]?: boolean };
@@ -57,6 +60,8 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
         dir = defaultOptions.dir,
         children,
         popup,
+        'aria-controls': ariaControls,
+        'aria-expanded': ariaExpanded,
         ...other
     } = props;
 
@@ -81,6 +86,18 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
             : 'caret-alt-right';
     }
 
+    const computedTabIndex = focus ? 0 : undefined;
+    const computedAriaHaspopup = showArrow ? 'menu' : undefined;
+    const computedAriaExpanded = showArrow ? (ariaExpanded || 'false') : undefined;
+    const computedAriaDisabled = disabled ? 'true' : undefined;
+
+    const ariaProps = {
+        ...(computedAriaHaspopup && { 'aria-haspopup': computedAriaHaspopup }),
+        ...(ariaControls && { 'aria-controls': ariaControls }),
+        ...(computedAriaExpanded && { 'aria-expanded': computedAriaExpanded }),
+        ...(computedAriaDisabled && { 'aria-disabled': computedAriaDisabled }),
+    } as React.HTMLAttributes<HTMLLIElement>;
+
     return (
 
         <li
@@ -97,7 +114,10 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
                     ["k-first"]: first,
                     ["k-last"]: last,
                 }
-            )}>
+            )}
+            role="menuitem"
+            tabIndex={computedTabIndex}
+            {...ariaProps}>
             <span
 
                 className={classNames(
@@ -112,7 +132,7 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
                 {icon && iconPosition === 'before' && <Icon className="k-menu-link-icon" icon={icon} />}
                 <span className="k-menu-link-text">{text}</span>
                 {icon && iconPosition === 'after' && <Icon className="k-menu-link-icon" icon={icon} />}
-                {showArrow && <span className="k-menu-expand-arrow"><Icon icon={expandArrowName} /></span>}
+                {showArrow && <span className="k-menu-expand-arrow" aria-hidden="true"><Icon icon={expandArrowName} /></span>}
             </span>
             {contentTemplate}
             {popup}

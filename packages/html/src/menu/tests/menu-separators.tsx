@@ -25,12 +25,12 @@ export default () =>(
                 <MenuNormal popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "175px", top: "auto" }}>
-                                <MenuList>
+                                <MenuList id="menu-sep-popup-1">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow></MenuListItem>
+                                    <MenuListItem text="Hover" hover showArrow aria-controls="submenu-hover"></MenuListItem>
                                     <MenuSeparator></MenuSeparator>
-                                    <MenuListItem text="Active" active showArrow></MenuListItem>
+                                    <MenuListItem text="Active" active showArrow aria-controls="submenu-active"></MenuListItem>
                                     <MenuListItem text="Focus" focus></MenuListItem>
                                     <MenuListItem last text="Focus & Active" active focus></MenuListItem>
                                 </MenuList>
@@ -38,7 +38,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down" aria-controls="menu-sep-popup-1"></MenuItem>
                     <MenuSeparator></MenuSeparator>
                     <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
@@ -51,7 +51,7 @@ export default () =>(
                 <MenuVertical popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "520px", top: "160px" }}>
-                                <MenuList>
+                                <MenuList id="menu-sep-vertical-popup-1">
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
                                     <MenuListItem text="Hover" hover showArrow></MenuListItem>
@@ -64,7 +64,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down" aria-controls="menu-sep-vertical-popup-1"></MenuItem>
                     <MenuSeparator></MenuSeparator>
                     <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>

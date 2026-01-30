@@ -1,5 +1,5 @@
 import { TabStripContent, TabStripItem, TabStripNormal } from '..';
-import Button from "../../button/button.spec";
+import { Icon } from "../../icon";
 
 
 export default () => (
@@ -10,17 +10,17 @@ export default () => (
                 <TabStripNormal
                   tabStripItems={
                     <>
-                      <TabStripItem first value="One Action" actions={<Button fillMode="flat" icon="pin"></Button>}/>
+                      <TabStripItem first value="One Action" actions={<span className="k-link-action" title="Pin tab"><Icon icon="pin" /></span>} id="tab-action-1" />
                       <TabStripItem active value="Two Actions" actions={
                         <>
-                          <Button fillMode="flat" icon="pin"></Button>
-                          <Button fillMode="flat" icon="more-vertical"></Button>
-                        </>}/>
-                        <TabStripItem last value="Action and Close" closable actions={<Button fillMode="flat" icon="pin"></Button>}/>
+                          <span className="k-link-action" title="Pin tab"><Icon icon="pin" /></span>
+                          <span className="k-link-action" title="More options"><Icon icon="more-vertical" /></span>
+                        </>} id="tab-action-2" aria-controls="tabpanel-action-2" />
+                        <TabStripItem last value="Action and Close" closable actions={<span className="k-link-action" title="Pin tab"><Icon icon="pin" /></span>} id="tab-action-3" />
                     </>
                 }
                 >
-                    <TabStripContent active>
+                    <TabStripContent active id="tabpanel-action-2" aria-labelledby="tab-action-2">
                       <div>Tab Actions</div>
                     </TabStripContent>
                 </TabStripNormal>

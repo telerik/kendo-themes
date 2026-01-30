@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -15,40 +15,40 @@
             <h4>TabStrip - No Overflow</h4>
             <div class="k-tabstrip k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                        <li id="tab-nooverflow-1" class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 1</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-nooverflow-2" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 2</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active">
+                        <li id="tab-nooverflow-3" class="k-tabstrip-item k-active" role="tab" aria-selected="true" aria-controls="tabpanel-nooverflow-3">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 3</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-nooverflow-4" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 4</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-nooverflow-5" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 5</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-last">
+                        <li id="tab-nooverflow-6" class="k-tabstrip-item k-last" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 6</span>
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-nooverflow-3" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-nooverflow-3">
                     <div>TabStrip Content</div>
                 </div>
             </div>
@@ -57,33 +57,33 @@
             <h4>TabStrip - With Overflow</h4>
             <div class="k-tabstrip k-tabstrip-top k-tabstrip-overflow">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                        <li id="tab-overflow-1" class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 1</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-overflow-2" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 2</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active">
+                        <li id="tab-overflow-3" class="k-tabstrip-item k-active" role="tab" aria-selected="true" aria-controls="tabpanel-overflow-3">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 3</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-overflow-4" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 4</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-overflow-5" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 5</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-last">
+                        <li id="tab-overflow-6" class="k-tabstrip-item k-last" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 6</span>
                             </span>
@@ -99,25 +99,25 @@
                         </button>
                     </div>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-overflow-3" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-overflow-3">
                     <div>TabStrip Content</div>
                 </div>
             </div>
             <div class="k-animation-container k-animation-container-shown" style="top: 110px; left: 921px;">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-popup">
-                        <ul class="k-menu-group">
-                            <li class="k-menu-item k-item k-first">
+                        <ul class="k-menu-group" role="menu">
+                            <li class="k-menu-item k-item k-first" role="menuitem">
                                 <span class="k-link k-menu-link">
                                     <span class="k-menu-link-text">Tab 7</span>
                                 </span>
                             </li>
-                            <li class="k-menu-item k-item">
+                            <li class="k-menu-item k-item" role="menuitem">
                                 <span class="k-link k-menu-link">
                                     <span class="k-menu-link-text">Tab 8</span>
                                 </span>
                             </li>
-                            <li class="k-menu-item k-item k-last">
+                            <li class="k-menu-item k-item k-last" role="menuitem">
                                 <span class="k-link k-menu-link">
                                     <span class="k-menu-link-text">Tab 9</span>
                                 </span>
@@ -131,40 +131,40 @@
             <h4>TabStrip - No Overflow, Active Tab</h4>
             <div class="k-tabstrip k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                        <li id="tab-nooverflow2-1" class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 1</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-nooverflow2-2" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 2</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-nooverflow2-3" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 3</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-nooverflow2-4" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 4</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li id="tab-nooverflow2-5" class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 5</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active k-last">
+                        <li id="tab-nooverflow2-6" class="k-tabstrip-item k-active k-last" role="tab" aria-selected="true" aria-controls="tabpanel-nooverflow2-6">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 6</span>
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-nooverflow2-6" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-nooverflow2-6">
                     <div>TabStrip Content</div>
                 </div>
             </div>
@@ -173,23 +173,23 @@
             <h4>TabStrip - With Overflow, Active Tab Preceded by Overflow Tabs</h4>
             <div class="k-tabstrip k-tabstrip-top k-tabstrip-overflow" style="width: 380px;">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
-                        <li class="k-tabstrip-item k-first">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                        <li class="k-tabstrip-item k-first" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 1</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 2</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item">
+                        <li class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 3</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-active k-last">
+                        <li class="k-tabstrip-item k-active k-last" role="tab" aria-selected="true">
                             <span class="k-link">
                                 <span class="k-link-text">Tab 6</span>
                             </span>
@@ -205,20 +205,20 @@
                         </button>
                     </div>
                 </div>
-                <div class="k-tabstrip-content k-active">
+                <div id="tabpanel-overflow-3" class="k-tabstrip-content k-active" role="tabpanel" aria-labelledby="tab-overflow-3">
                     <div>TabStrip Content</div>
                 </div>
             </div>
             <div class="k-animation-container k-animation-container-shown" style="top: 283px; left: 831px;">
                 <div class="k-child-animation-container">
                     <div class="k-menu-popup k-popup">
-                        <ul class="k-menu-group">
-                            <li class="k-menu-item k-item k-first">
+                        <ul class="k-menu-group" role="menu">
+                            <li class="k-menu-item k-item k-first" role="menuitem">
                                 <span class="k-link k-menu-link">
                                     <span class="k-menu-link-text">Tab 4</span>
                                 </span>
                             </li>
-                            <li class="k-menu-item k-item k-last">
+                            <li class="k-menu-item k-item k-last" role="menuitem">
                                 <span class="k-link k-menu-link">
                                     <span class="k-menu-link-text">Tab 5</span>
                                 </span>

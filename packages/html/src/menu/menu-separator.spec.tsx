@@ -32,7 +32,8 @@ export const MenuSeparator: KendoComponent<KendoMenuSeparatorProps & React.HTMLA
                 {
                     [`${SEPARATOR_CLASSNAME}-${orientation}`]: orientation
                 }
-            )}>
+            )}
+            role="presentation">
         </li>
     );
 };

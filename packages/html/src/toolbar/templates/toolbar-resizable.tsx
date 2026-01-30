@@ -5,7 +5,7 @@ import { MenuButton } from '../../menu-button';
 import { SplitButton } from '../../split-button';
 import { ToolbarSeparator } from "../toolbar-separator";
 
-export const ToolbarResizable = (props) => (
+export const ToolbarResizable = ({ id = 'toolbar-resizable', ...props }) => (
     <Toolbar resizable children={[
         <Button key="toolbar-button">Button</Button>,
         <MenuButton key="toolbar-menu-button" text="Menu button"></MenuButton>,
@@ -16,7 +16,17 @@ export const ToolbarResizable = (props) => (
             <Button className="k-group-end" icon="align-right">Right</Button>
         </ButtonGroup>,
         <ToolbarSeparator className="k-toolbar-button-separator" />,
-        <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none"></Button>
+        <Button
+            icon="more-vertical"
+            className="k-toolbar-overflow-button"
+            fillMode="flat"
+            rounded="none"
+            id={`${id}-overflow-button`}
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-controls={`${id}-menu-group`}
+            title="More actions"
+        />
     ]}
     {...props}>
     </Toolbar>

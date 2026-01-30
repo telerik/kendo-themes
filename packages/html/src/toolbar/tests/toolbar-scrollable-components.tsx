@@ -23,7 +23,7 @@ export default () =>(
                     <span className="k-colspan-all k-col-span-full">{`${size}`}</span>
                     <section className="k-colspan-all k-col-span-full">
                         <ToolbarScrollable size={size}>
-                            <Button size={size} icon="bold" focus></Button>
+                            <Button size={size} icon="bold" focus title="Bold"></Button>
                             <Button size={size} focus>Button</Button>
                             <ToolbarSeparator></ToolbarSeparator>
                             <ButtonGroup>

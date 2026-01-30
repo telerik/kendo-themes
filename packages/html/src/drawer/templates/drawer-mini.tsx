@@ -4,11 +4,11 @@ export const DrawerMini = (props) => (
     <Drawer mini
         items={
             <>
-                <DrawerItem icon="inbox" text="Inbox" level={''} />
-                <DrawerItem icon="bell" text="Notification" level={''} />
+                <DrawerItem icon="inbox" text="Inbox" level={''} mini aria-label="Inbox" />
+                <DrawerItem icon="bell" text="Notification" level={''} mini aria-label="Notification" />
                 <DrawerItemSeparator />
-                <DrawerItem icon="star" text="Favourites" level={''} />
-                <DrawerItem icon="calendar" text="Calendar" level={''} />
+                <DrawerItem icon="star" text="Favourites" level={''} mini aria-label="Favourites" />
+                <DrawerItem icon="calendar" text="Calendar" level={''} mini aria-label="Calendar" />
             </>
         }
         {...props}

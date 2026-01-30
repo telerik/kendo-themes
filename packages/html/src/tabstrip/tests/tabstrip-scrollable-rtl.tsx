@@ -20,7 +20,7 @@ export default () => (
 
             <section>
                 <TabStripNormal scrollable dir="rtl">
-                    <TabStripContent active>
+                    <TabStripContent active id="tabpanel-2" aria-labelledby="tab-2">
                         <div>Top scrollable</div>
                     </TabStripContent>
                 </TabStripNormal>
@@ -28,7 +28,7 @@ export default () => (
 
             <section>
                 <TabStripBottom scrollable dir="rtl">
-                    <TabStripContent active>
+                    <TabStripContent active id="tabpanel-2" aria-labelledby="tab-2">
                         <div>Bottom scrollable</div>
                     </TabStripContent>
                 </TabStripBottom>
@@ -36,7 +36,7 @@ export default () => (
 
             <section>
                 <TabStripLeft scrollable dir="rtl">
-                    <TabStripContent active>
+                    <TabStripContent active id="tabpanel-2" aria-labelledby="tab-2">
                         <div>Left scrollable</div>
                     </TabStripContent>
                 </TabStripLeft>
@@ -44,7 +44,7 @@ export default () => (
 
             <section>
                 <TabStripRight scrollable dir="rtl">
-                    <TabStripContent active>
+                    <TabStripContent active id="tabpanel-2" aria-labelledby="tab-2">
                         <div>Right scrollable</div>
                     </TabStripContent>
                 </TabStripRight>

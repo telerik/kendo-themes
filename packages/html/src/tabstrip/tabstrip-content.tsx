@@ -11,18 +11,33 @@ const options = {};
 
 const defaultOptions = {};
 
+export type KendoTabStripContentProps = {
+    'aria-labelledby'?: string;
+    persisted?: boolean;
+};
+
 export type KendoTabStripContentState = { [K in (typeof states)[number]]?: boolean };
 
 export const TabStripContent = (
-    props: KendoTabStripContentState &
+    props: KendoTabStripContentProps &
+        KendoTabStripContentState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
         active,
         focus,
         children,
+        'aria-labelledby': ariaLabelledby,
+        persisted,
         ...other
     } = props;
+
+    const ariaHidden = !active && persisted ? 'true' : undefined;
+
+    const ariaProps = {
+        ...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby }),
+        ...(ariaHidden && { 'aria-hidden': ariaHidden }),
+    } as React.HTMLAttributes<HTMLDivElement>;
 
     return (
         <div
@@ -35,7 +50,9 @@ export const TabStripContent = (
                     focus,
                 }),
                 props.className
-            )}>
+            )}
+            role="tabpanel"
+            {...ariaProps}>
             {children}
         </div>
     );

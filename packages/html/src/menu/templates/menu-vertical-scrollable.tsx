@@ -3,7 +3,7 @@ import { Menu, MenuItem } from "..";
 export const MenuVerticalScrollable = (props) => (
     <Menu scrollable orientation="vertical" children={
             <>
-                <MenuItem first text="Item 1"></MenuItem>
+                <MenuItem first text="Item 1" focus tabIndex={0}></MenuItem>
                 <MenuItem text="Item 2"></MenuItem>
                 <MenuItem text="Item 3"></MenuItem>
                 <MenuItem text="Item 4"></MenuItem>

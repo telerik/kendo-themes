@@ -19,6 +19,8 @@ export type KendoToolbarPopupOptions = {
 
 export type KendoToolbarPopupProps = KendoToolbarPopupOptions & {
     section?: boolean;
+    'aria-labelledby'?: string;
+    contentId?: string;
 };
 
 const defaultOptions = {
@@ -33,6 +35,8 @@ export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAtt
         size,
         fillMode,
         section,
+        'aria-labelledby': ariaLabelledby,
+        contentId,
         ...other
     } = props;
 
@@ -44,14 +48,24 @@ export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAtt
                 TOOLBARPOPUP_CLASSNAME
             )}>
              {section
-                ? <span className={classNames(
-                    'k-toolbar-items-list',
-                    optionClassNames('k-toolbar-items-list', {
-                        size,
-                        fillMode
-                    })
-                )}>{props.children}</span>
-                : props.children
+                ? <span
+                    className={classNames(
+                        'k-toolbar-items-list',
+                        optionClassNames('k-toolbar-items-list', {
+                            size,
+                            fillMode
+                        })
+                    )}
+                    role="toolbar"
+                    {...(contentId && { id: contentId })}
+                    {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
+                >{props.children}</span>
+                : <div
+                    className="k-menu-group"
+                    role="menu"
+                    {...(contentId && { id: contentId })}
+                    {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
+                >{props.children}</div>
             }
 
         </Popup>
