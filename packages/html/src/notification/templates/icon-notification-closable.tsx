@@ -5,6 +5,7 @@ export const IconNotificationClosable = (props) => (
         closable={true}
         text="Notification"
         icon="exclamation-circle"
+        aria-label="Notification"
         actions={<NotificationAction type="close" />}
         {...props} />
 );

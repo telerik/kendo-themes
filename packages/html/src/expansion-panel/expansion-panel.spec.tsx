@@ -20,6 +20,7 @@ export type KendoExpansionPanelProps = {
     subtitle?: string;
     dir?: 'ltr' | 'rtl';
     contentStyle?: React.CSSProperties;
+    id?: string;
 };
 
 export type KendoExpansionPanelState = { [K in (typeof states)[number]]?: boolean };
@@ -40,8 +41,11 @@ export const ExpansionPanel: KendoComponent<KendoExpansionPanelProps & KendoExpa
         disabled,
         dir,
         contentStyle,
+        id = 'k-expansionpanel',
         ...other
     } = props;
+
+    const contentWrapperId = `${id}-content`;
 
     return (
         <div
@@ -56,12 +60,19 @@ export const ExpansionPanel: KendoComponent<KendoExpansionPanelProps & KendoExpa
                     expanded
                 })
             )} dir={dir}>
-            <div className={classNames(
-                'k-expander-header',
-                stateClassNames(EXPANSION_PANEL_CLASSNAME, {
-                    hover
-                })
-            )}>
+            <div
+                className={classNames(
+                    'k-expander-header',
+                    stateClassNames(EXPANSION_PANEL_CLASSNAME, {
+                        hover
+                    })
+                )}
+                role="button"
+                aria-controls={contentWrapperId}
+                aria-expanded={expanded ? 'true' : 'false'}
+                tabIndex={0}
+                {...(disabled && { 'aria-disabled': 'true' })}
+            >
                 <div className="k-expander-title">{title}</div>
                 <span className="k-spacer"></span>
                 <div className="k-expander-sub-title">{subtitle}</div>
@@ -69,12 +80,15 @@ export const ExpansionPanel: KendoComponent<KendoExpansionPanelProps & KendoExpa
                     {!expanded ? <Icon icon="chevron-down" /> : <Icon icon="chevron-up" />}
                 </span>
             </div>
-            <div className={classNames(
-                'k-expander-content-wrapper',
-                {
-                    'k-hidden': !expanded
-                }
-            )}>
+            <div
+                id={contentWrapperId}
+                className={classNames(
+                    'k-expander-content-wrapper',
+                    {
+                        'k-hidden': !expanded
+                    }
+                )}
+            >
                 <div className="k-expander-content" style={contentStyle}>
                     {props.children}
                 </div>

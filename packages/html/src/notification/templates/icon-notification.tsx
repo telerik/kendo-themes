@@ -4,6 +4,7 @@ export const IconNotification = (props) => (
     <Notification
         text="Notification"
         icon="exclamation-circle"
+        aria-label="Notification"
         {...props}
     />
 );

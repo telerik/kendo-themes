@@ -8,10 +8,10 @@ export const PanelBarExpandGroup = (props) => (
                     <PanelBarContent>content</PanelBarContent>
                 </PanelBarItem>
                 <PanelBarItem header expanded text="Item 2">
-                    <PanelBarGroup>
+                    <PanelBarGroup parentExpanded={true}>
                         <PanelBarItem level={1} text="Child 1" />
                         <PanelBarItem level={1} expanded text="Child 2">
-                            <PanelBarGroup>
+                            <PanelBarGroup parentExpanded={true}>
                                 <PanelBarItem level={2} text="Child 2.1" />
                                 <PanelBarItem level={2} text="Child 2.2" />
                             </PanelBarGroup>
@@ -25,7 +25,12 @@ export const PanelBarExpandGroup = (props) => (
                 <PanelBarItem header text="Item 3">
                     <PanelBarContent>content</PanelBarContent>
                 </PanelBarItem>
-                <PanelBarItem header text="Item 4" />
+                <PanelBarItem header text="Item 4">
+                    <PanelBarGroup parentExpanded={false}>
+                        <PanelBarItem level={1} text="Hidden Child 1" />
+                        <PanelBarItem level={1} text="Hidden Child 2" />
+                    </PanelBarGroup>
+                </PanelBarItem>
             </>
         }
         {...props}

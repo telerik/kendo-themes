@@ -10,10 +10,17 @@ const options = {};
 
 const defaultOptions = {};
 
-export const PanelBar: KendoComponent<React.HTMLAttributes<HTMLUListElement>> = (
-    props: React.HTMLAttributes<HTMLUListElement>
+export type KendoPanelBarProps = {
+    id?: string;
+    activedescendantId?: string;
+};
+
+export const PanelBar: KendoComponent<KendoPanelBarProps & React.HTMLAttributes<HTMLUListElement>> = (
+    props: KendoPanelBarProps & React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
+        id = 'k-panelbar',
+        activedescendantId,
         ...other
     } = props;
 
@@ -24,6 +31,9 @@ export const PanelBar: KendoComponent<React.HTMLAttributes<HTMLUListElement>> = 
                 props.className,
                 PANELBAR_CLASSNAME
             )}
+            id={id}
+            role="tree"
+            {...(activedescendantId && { 'aria-activedescendant': activedescendantId })}
         >
             {props.children}
         </ul>

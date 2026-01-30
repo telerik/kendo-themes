@@ -4,6 +4,7 @@ export const CARDMEDIA_CLASSNAME = `k-card-media`;
 
 export type KendoCardMediaProps = {
     src?: string;
+    alt?: string;
 };
 
 export const CardMedia = (
@@ -12,6 +13,7 @@ export const CardMedia = (
 ) => {
     const {
         src,
+        alt,
         ...other
     } = props;
 
@@ -26,6 +28,7 @@ export const CardMedia = (
                             CARDMEDIA_CLASSNAME,
                         )}
                         src={src}
+                        alt={alt || ''}
                     />
                     : <span
                         {...other}

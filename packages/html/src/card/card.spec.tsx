@@ -32,6 +32,8 @@ export type KendoCardOptions = {
 export type KendoCardProps = KendoCardOptions & {
     orientation?: null | 'vertical' | 'horizontal';
     callout?: null | 'true' | 'top' | 'bottom' | 'left' | 'right';
+    navigable?: boolean;
+    titleId?: string;
 };
 
 export type KendoCardState = { [K in (typeof states)[number]]?: boolean };
@@ -49,6 +51,8 @@ export const Card: KendoComponent<KendoCardProps & KendoCardState & React.HTMLAt
         focus,
         selected,
         disabled,
+        navigable,
+        titleId,
         ...other
     } = props;
 
@@ -71,7 +75,14 @@ export const Card: KendoComponent<KendoCardProps & KendoCardState & React.HTMLAt
                     [`k-card-${orientation}`]: orientation,
                     'k-card-with-callout': callout,
                 },
-            )}>
+            )}
+            {...(navigable && {
+                role: 'listitem',
+                tabIndex: 0,
+                ...(titleId && { 'aria-describedby': titleId }),
+                'aria-keyshortcuts': 'Enter'
+            })}
+        >
             {callout && callout !== 'true' &&
                 <CardCallout callout={callout} />
             }

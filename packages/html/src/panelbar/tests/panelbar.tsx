@@ -77,6 +77,12 @@ export default () =>(
                         </PanelBarGroup>
                     </PanelBarItem>
                     <PanelBarItem header text="Last" />
+                    <PanelBarItem header text="Collapsed with group">
+                        <PanelBarGroup parentExpanded={false}>
+                            <PanelBarItem level={1} text="Hidden child 1" />
+                            <PanelBarItem level={1} text="Hidden child 2" />
+                        </PanelBarGroup>
+                    </PanelBarItem>
                 </PanelBarNormal>
             </section>
 

@@ -21,7 +21,11 @@ export const CardList: KendoComponent<KendoCardListProps & KendoCardListState & 
   const { ...other } = props;
 
   return (
-    <div {...other} className={classNames(props.className, CARD_LIST_CLASSNAME, stateClassNames(CARD_LIST_CLASSNAME, {}))}>
+    <div
+      {...other}
+      className={classNames(props.className, CARD_LIST_CLASSNAME, stateClassNames(CARD_LIST_CLASSNAME, {}))}
+      role="list"
+    >
       <>{props.children}</>
     </div>
   );

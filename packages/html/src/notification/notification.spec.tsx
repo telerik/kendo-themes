@@ -33,6 +33,9 @@ export type KendoNotificationProps = KendoNotificationOptions & {
     closable?: boolean;
     text?: string;
     icon?: string;
+    id?: string;
+    'aria-label'?: string;
+    'aria-labelledby'?: string;
 };
 
 const defaultOptions = {
@@ -49,8 +52,13 @@ export const Notification: KendoComponent<KendoNotificationProps & React.HTMLAtt
         text,
         icon,
         closable = defaultOptions.closable,
+        id = 'k-notification',
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledby,
         ...other
     } = props;
+
+    const contentId = `${id}-content`;
 
     return (
         <div
@@ -64,18 +72,24 @@ export const Notification: KendoComponent<KendoNotificationProps & React.HTMLAtt
                 {
                     'k-notification-closable': closable
                 }
-            )}>
+            )}
+            role="alert"
+            aria-live="polite"
+            {...(ariaLabel && { 'aria-label': ariaLabel })}
+            {...(ariaLabelledby && { 'aria-labelledby': ariaLabelledby })}
+            aria-describedby={contentId}
+        >
             {icon && <Icon className="k-notification-status" icon={icon} />}
 
             {props.children
                 ?
-                <div className="k-notification-content">
+                <div id={contentId} className="k-notification-content">
                     {text}
                     {props.children}
                 </div>
                 :
                 <>
-                    {text && <div className="k-notification-content">{text}</div>}
+                    {text && <div id={contentId} className="k-notification-content">{text}</div>}
                 </>
             }
 

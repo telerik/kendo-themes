@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-30T16:55:22.156Z",
+  "lastUpdated": "2026-01-30T22:15:42.117Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -153,7 +153,7 @@
       "completedAt": "2026-01-28T14:11:52.601Z"
     },
     "card": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "containers",
       "complianceScore": null,
@@ -163,7 +163,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T19:20:37.894Z"
     },
     "carousel": {
       "status": "pending",
@@ -534,7 +535,7 @@
       "notes": ""
     },
     "expansionpanel": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "containers",
       "complianceScore": null,
@@ -544,7 +545,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T19:44:53.189Z"
     },
     "filemanager": {
       "status": "pending",
@@ -818,7 +820,7 @@
       "notes": ""
     },
     "notification": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "containers",
       "complianceScore": null,
@@ -828,7 +830,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T19:53:03.598Z"
     },
     "numerictextbox": {
       "status": "completed",
@@ -885,7 +888,7 @@
       "notes": ""
     },
     "panelbar": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "containers",
       "complianceScore": null,
@@ -895,7 +898,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T21:14:38.802Z"
     },
     "pdfviewer": {
       "status": "pending",
@@ -924,7 +928,7 @@
       "notes": ""
     },
     "popover": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "containers",
       "complianceScore": null,
@@ -934,7 +938,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T22:15:42.116Z"
     },
     "progressbar": {
       "status": "completed",

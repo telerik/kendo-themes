@@ -8,10 +8,15 @@ const options = {};
 
 const defaultOptions = {};
 
+export type KendoPanelBarGroupProps = {
+    parentExpanded?: boolean;
+};
+
 export const PanelBarGroup = (
-    props: React.HTMLAttributes<HTMLUListElement>
+    props: KendoPanelBarGroupProps & React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
+        parentExpanded,
         ...other
     } = props;
 
@@ -22,6 +27,8 @@ export const PanelBarGroup = (
                 props.className,
                 PANELBARGROUP_CLASSNAME
             )}
+            role="group"
+            {...(parentExpanded === false && { 'aria-hidden': 'true' })}
         >
             {props.children}
         </ul>

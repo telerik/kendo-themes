@@ -21,7 +21,7 @@ export default () =>(
             </CardHorizontal>
 
             <CardHorizontal>
-                <CardMedia src="/packages/html/assets/avatar.jpg" />
+                <CardMedia src="/packages/html/assets/avatar.jpg" alt="Card media" />
                 <Layout orientation="vertical" className="k-flex">
                     <CardBody title="Card Title" subtitle="Card Subtitle">
                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -36,7 +36,7 @@ export default () =>(
 
             <CardHorizontal>
                 <CardMedia>
-                    <img src="/packages/html/assets/avatar.jpg" />
+                    <img src="/packages/html/assets/avatar.jpg" alt="Card media" />
                 </CardMedia>
                 <span className="k-separator k-separator-vertical"></span>
                 <Layout orientation="vertical" className="k-flex">
@@ -123,7 +123,7 @@ export default () =>(
             <CardNormal>
                 <CardHeader className="k-d-flex">
                     <Avatar type="image" themeColor="primary" rounded="medium" className="bg-img">
-                        <img src="/packages/html/assets/avatar.jpg" />
+                        <img src="/packages/html/assets/avatar.jpg" alt="User avatar" />
                     </Avatar>
                     <div>
                         <CardTitle>Thumbnail and Footer</CardTitle>

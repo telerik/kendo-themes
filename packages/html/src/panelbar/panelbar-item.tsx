@@ -19,6 +19,7 @@ export type KendoPanelBarItemProps = {
     icon?: string;
     iconClass?: string;
     text?: string;
+    id?: string;
 };
 
 export type PanelBarItemState = { [K in (typeof states)[number]]?: boolean };
@@ -46,12 +47,14 @@ export const PanelBarItem = (
         icon,
         iconClass,
         children,
+        id,
         ...other
     } = props;
 
     return (
         <li
             {...other}
+            {...(id && { id })}
             className={classNames(
                 props.className,
                 PANELBARITEM_CLASSNAME,
@@ -61,6 +64,9 @@ export const PanelBarItem = (
                     ["k-expanded"]: expanded
                 }
             )}
+            role="treeitem"
+            {...(children && { 'aria-expanded': expanded ? 'true' : 'false' })}
+            aria-selected={selected ? 'true' : 'false'}
         >
             <span
                 className={classNames(
@@ -88,7 +94,7 @@ export const PanelBarItem = (
                 }
             </span>
 
-            {expanded && children }
+            {children}
         </li>
     );
 };
