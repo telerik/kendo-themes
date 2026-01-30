@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.2...v13.0.0-dev.3) (2026-01-30)
+
+
+### Bug Fixes
+
+* resolve unit tests sass warnings ([1cc38b0](https://github.com/telerik/kendo-themes/commit/1cc38b0baa09b61279effcf8c9009952cbaa4645))
+
+
+
+
+
 # [13.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.1...v13.0.0-dev.2) (2026-01-27)
 
 
