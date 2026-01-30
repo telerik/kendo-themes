@@ -33,6 +33,7 @@ The popup element of the AutoComplete has to implement the WAI-ARIA specificatio
 | `.k-autocomplete-popup-container` | `role=region` | When the component container is appended to the `<body>` element of the document, it requires you to assing a `landmark` role to it. Otherwise, append it to an element with an appropriate `landmark` role. |
 |  | `aria-label` or `aria-labelledby` | When the container has a `region` role assigned, povides a label. |
 | `.k-list .k-no-data` | `aria-live=polite` | Identifies the element as a live region in the `polite` state, meaning assistive technology users are informed about changes to the region at the next available opportunity. |
+| `.k-list-item-icon` | `aria-hidden=true` | Ensures that the icon itself is hidden from assistive technologies since it is decorative. |
 | `.k-list-content[role="listbox"]` | `role=listbox` | For grouped lists, the wrapper must have `role=listbox`. For ungrouped lists, the UL element has this role instead. |
 |  | `aria-label` or `aria-labelledby` | Provides a label for grouped listboxes. |
 | `.k-list-ul[role="listbox"]` | `role=listbox` | For ungrouped lists, the `ul` element has `role=listbox` with appropriate aria-label/labelledby. |
@@ -41,7 +42,7 @@ The popup element of the AutoComplete has to implement the WAI-ARIA specificatio
 |  | `id` | List items should have an `id` attribute for `aria-activedescendant` navigation. |
 | `.k-list-item:not(.k-focus)` | `tabindex=-1` | Only the focused option should have `tabindex=0`, all others should be `-1`. |
 | `.k-list-item.k-selected` | `aria-selected=true` | Indicates the selected state of the item. |
-| `.k-list-header` | `role=presentation` | For grouped lists, the group header element should have `role=presentation`. |
+| `.k-list-group-item` | `role=presentation` | For grouped lists, the group header element should have `role=presentation`. |
 |  | `id` | The group header must have an id that the corresponding `ul` element references via `aria-labelledby`. |
 
 ### Adaptive Mode

@@ -78,7 +78,7 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
             {...(tabIndex !== undefined && { tabIndex })}
         >
             {showCheckbox && <Checkbox checked={checked} />}
-            {iconName && <span className="k-list-item-icon-wrapper"><Icon icon={iconName} className={classNames("k-list-item-icon", iconClassName)} /></span>}
+            {iconName && <span className="k-list-item-icon-wrapper"><Icon icon={iconName} className={classNames("k-list-item-icon", iconClassName)} aria-hidden="true" /></span>}
             <span className="k-list-item-text">{textOrChildren}</span>
             {actions && <div className="k-list-item-actions">{actions}</div>}
             {description && <span className="k-list-item-description">{description}</span>}
