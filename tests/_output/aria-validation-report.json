@@ -1,35 +1,1487 @@
 {
-  "timestamp": "2026-01-30T22:14:41.039Z",
+  "timestamp": "2026-01-30T22:23:39.664Z",
   "summary": {
-    "filesTested": 1,
+    "filesTested": 3,
     "skipped": 0,
-    "passed": 28,
-    "violations": 1
+    "passed": 18,
+    "violations": 111
   },
   "results": [
     {
-      "filePath": "./tests/popover/popover.html",
-      "spec": "aria/popover_aria.md",
-      "totalRules": 6,
-      "testedRules": 6,
+      "filePath": "./tests/tilelayout/tilelayout.html",
+      "spec": "aria/tilelayout_aria.md",
+      "totalRules": 8,
+      "testedRules": 8,
       "untestedRules": [],
       "violations": [
         {
           "rule": {
-            "selector": ".k-popover",
-            "attribute": "aria-describedby=.k-popover-body id",
-            "usage": "Links the popover container with the popover body element when there is focusable content."
+            "selector": ".k-tilelayout",
+            "attribute": "role=list",
+            "usage": "Sets list role to the TileLayout wrapper."
           },
-          "element": "<div class=\"k-popover k-popup\" id=\"k-popover\" role=\"tooltip\" aria-labelledby=\"k-popover-header\" style=\"height: 150px;\">\n                        <div class=\"k-popover-callout k-callout-w\"></div>\n      ",
+          "element": "<div class=\"k-tilelayout\" style=\"grid-template-columns: repeat(5, minmax(0px, 1fr)); grid-auto-rows: minmax(0px, 1fr); gap: 16px; width: 1000px;\">\n            <div class=\"k-tilelayout-item k-focus k-c",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-focus k-card\" style=\"order: 0; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n     ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 1; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 2; grid-column-end: span 1; grid-row-end: span 2; width: 250px; position: absolute; height: 198px; left: 410px; top: 16px; z-index: 1;\">\n           ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 3; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 4; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
           "index": 4,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-describedby",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 5; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 6; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 7; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 8; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 9; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-focus k-card\" style=\"order: 0; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n     ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 1; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 2; grid-column-end: span 1; grid-row-end: span 2; width: 250px; position: absolute; height: 198px; left: 410px; top: 16px; z-index: 1;\">\n           ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 3; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 4; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 5; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 6; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 7; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 8; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 9; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-focus k-card\" style=\"order: 0; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n     ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 1; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 2; grid-column-end: span 1; grid-row-end: span 2; width: 250px; position: absolute; height: 198px; left: 410px; top: 16px; z-index: 1;\">\n           ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 3; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 4; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 5; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 6; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 7; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 8; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 9; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-focus k-card\" style=\"order: 0; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n     ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 1; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 2; grid-column-end: span 1; grid-row-end: span 2; width: 250px; position: absolute; height: 198px; left: 410px; top: 16px; z-index: 1;\">\n           ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 3; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 4; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 5; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 6; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 7; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 8; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 9; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-focus k-card\" style=\"order: 0; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n     ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 1; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 2; grid-column-end: span 1; grid-row-end: span 2; width: 250px; position: absolute; height: 198px; left: 410px; top: 16px; z-index: 1;\">\n           ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 3; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 4; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 5; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 6; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 7; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 8; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 9; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-focus k-card\" style=\"order: 0; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n     ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 1; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 2; grid-column-end: span 1; grid-row-end: span 2; width: 250px; position: absolute; height: 198px; left: 410px; top: 16px; z-index: 1;\">\n           ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 3; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 4; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 5; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 6; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 7; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 8; grid-column-end: span 1; grid-row-end: span 1;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"order: 9; grid-column-end: span 1; grid-row-end: span 2;\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n             ",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
           "actual": null
         }
       ],
-      "passed": 28,
-      "violationCount": 1
+      "passed": 10,
+      "violationCount": 61
+    },
+    {
+      "filePath": "./tests/tilelayout/tilelayout-resizing.html",
+      "spec": "aria/tilelayout_aria.md",
+      "totalRules": 8,
+      "testedRules": 8,
+      "untestedRules": [],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-tilelayout",
+            "attribute": "role=list",
+            "usage": "Sets list role to the TileLayout wrapper."
+          },
+          "element": "<div class=\"k-tilelayout\" style=\"grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 16px;\">\n            <div class=\"k-tilelayout-item k-resize-x k-card\">\n                <div class=\"k-tilelayout",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-x k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-y k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n      ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n               ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-x k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-y k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n      ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n               ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-x k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-y k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n      ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n               ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-x k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-y k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n      ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n               ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-x k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-y k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n      ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n               ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-x k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize-y k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n    ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-resize k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n      ",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\">\n                <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                    <div class=\"k-card-title\">Card Title</div>\n               ",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        }
+      ],
+      "passed": 4,
+      "violationCount": 25
+    },
+    {
+      "filePath": "./tests/tilelayout/tilelayout-react.html",
+      "spec": "aria/tilelayout_aria.md",
+      "totalRules": 8,
+      "testedRules": 8,
+      "untestedRules": [],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-tilelayout",
+            "attribute": "role=list",
+            "usage": "Sets list role to the TileLayout wrapper."
+          },
+          "element": "<div class=\"k-tilelayout k-grid-flow-col\" style=\"grid-template-columns: repeat(3, minmax(0px, 1fr)); grid-auto-rows: minmax(0px, 200px); gap: 10px; padding: 10px;\">\n            <div style=\"grid-area: ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element (.k-tilelayout-item-header .k-card-title)."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "tabindex",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-keyshortcuts",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action, supported by the drop-target (resizing or reordering) will be executed when the item is dropped."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-dropeffect",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "The \"aria-grabbed\" state indicates an element's 'grabbed' state in a drag-and-drop operation."
+          },
+          "element": "<div class=\"k-tilelayout-item k-card\" style=\"height: 100%;\">\n                    <div class=\"k-tilelayout-item-header k-cursor-move k-card-header\">\n                        <div class=\"k-card-title\">Ti",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-grabbed",
+          "actual": null
+        }
+      ],
+      "passed": 4,
+      "violationCount": 25
     }
   ]
 }

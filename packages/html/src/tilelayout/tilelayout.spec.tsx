@@ -39,11 +39,13 @@ export const TileLayout: KendoComponent<KendoTileLayoutProps & React.HTMLAttribu
     };
 
     return (
-        <div className={classNames(
-            props.className,
-            TILELAYOUT_CLASSNAME,
-        )}
-        style={tileLayoutStyles}
+        <div
+            className={classNames(
+                props.className,
+                TILELAYOUT_CLASSNAME,
+            )}
+            style={tileLayoutStyles}
+            role="list"
         >
             {children}
         </div>

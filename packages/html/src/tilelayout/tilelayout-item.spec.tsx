@@ -1,6 +1,6 @@
 import React from 'react';
 import { classNames, stateClassNames, States } from '../misc';
-import { Card, CardBody, CardHeader } from '../card';
+import { Card, CardBody, CardHeader, CardTitle } from '../card';
 
 import { KendoComponent } from '../_types/component';
 import { TILELAYOUT_FOLDER_NAME, TILELAYOUT_MODULE_NAME } from './constants';
@@ -18,6 +18,8 @@ export type KendoTileLayoutItemProps = {
     focus?: boolean;
     resize?: true | 'vertical' | 'horizontal';
     style?: React.CSSProperties;
+    id?: string;
+    grabbed?: boolean;
 };
 
 const defaultOptions = {};
@@ -30,29 +32,42 @@ export const TileLayoutItem: KendoComponent<KendoTileLayoutItemProps & React.HTM
         body,
         focus,
         resize,
-        style
+        style,
+        id = 'k-tilelayout-item',
+        grabbed = false
     } = props;
+
+    const headerId = `${id}-header`;
 
     return (
 
-        <Card className={classNames(
-            props.className,
-            TILELAYOUTITEM_CLASSNAME,
-            stateClassNames(TILELAYOUTITEM_CLASSNAME, {
-                focus,
-            }),
-            {
-                'k-resize': resize === true,
-                'k-resize-x': resize === 'horizontal',
-                'k-resize-y': resize === 'vertical'
-            }
-        )}
-        style={style}
+        <Card
+            className={classNames(
+                props.className,
+                TILELAYOUTITEM_CLASSNAME,
+                stateClassNames(TILELAYOUTITEM_CLASSNAME, {
+                    focus,
+                }),
+                {
+                    'k-resize': resize === true,
+                    'k-resize-x': resize === 'horizontal',
+                    'k-resize-y': resize === 'vertical'
+                }
+            )}
+            style={style}
+            role="listitem"
+            aria-labelledby={headerId}
+            tabIndex={0}
+            aria-keyshortcuts="Enter"
+            aria-dropeffect="execute"
+            aria-grabbed={grabbed ? 'true' : 'false'}
         >
             {header &&
                 React.isValidElement(header)
                 ? <CardHeader className="k-tilelayout-item-header k-cursor-move">{header}</CardHeader>
-                : <CardHeader className="k-tilelayout-item-header k-cursor-move" title={header as string} />
+                : <CardHeader className="k-tilelayout-item-header k-cursor-move">
+                    <CardTitle id={headerId}>{header as string}</CardTitle>
+                  </CardHeader>
             }
             {body &&
                 <CardBody className="k-tilelayout-item-body">

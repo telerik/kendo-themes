@@ -1,20 +1,20 @@
 {
   "meta": {
-    "timestamp": "2026-01-30T22:14:53.781Z",
+    "timestamp": "2026-01-30T22:24:15.459Z",
     "complianceLevel": "AA",
-    "filesTested": 1,
+    "filesTested": 2,
     "wcagVersion": "2.2"
   },
   "summary": {
     "totalViolations": 0,
-    "totalPasses": 21,
+    "totalPasses": 42,
     "avgScore": 100
   },
   "criteriaGroups": {},
   "detailedResults": [
     {
-      "filePath": "./tests/popover/popover.html",
-      "timestamp": "2026-01-30T22:14:53.532Z",
+      "filePath": "./tests/tilelayout/tilelayout.html",
+      "timestamp": "2026-01-30T22:24:14.976Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -67,15 +67,22 @@
           ]
         },
         {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
+          "id": "aria-required-children",
+          "description": "Ensure elements with an ARIA role that require child roles contain them",
           "wcagCriteria": [
-            "4.1.2"
+            "1.3.1"
           ]
         },
         {
-          "id": "aria-tooltip-name",
-          "description": "Ensure every ARIA tooltip node has an accessible name",
+          "id": "aria-required-parent",
+          "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -102,10 +109,165 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "empty-heading",
+          "description": "Ensure headings have discernible text",
+          "wcagCriteria": []
+        },
+        {
+          "id": "heading-order",
+          "description": "Ensure the order of headings is semantically correct",
+          "wcagCriteria": []
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "tabindex",
+          "description": "Ensure tabindex attribute values are not greater than 0",
+          "wcagCriteria": []
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
           "wcagCriteria": [
             "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ],
+      "inapplicable": 63
+    },
+    {
+      "filePath": "./tests/tilelayout/tilelayout-resizing.html",
+      "timestamp": "2026-01-30T22:24:15.284Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-allowed-role",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "wcagCriteria": []
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-deprecated-role",
+          "description": "Ensure elements do not use deprecated roles",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-attr",
+          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-required-children",
+          "description": "Ensure elements with an ARIA role that require child roles contain them",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "aria-required-parent",
+          "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "aria-roles",
+          "description": "Ensure all elements with a role attribute use a valid value",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
           ]
         },
         {
@@ -142,23 +304,14 @@
           ]
         },
         {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
           "wcagCriteria": []
         },
         {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
+          "id": "tabindex",
+          "description": "Ensure tabindex attribute values are not greater than 0",
+          "wcagCriteria": []
         }
       ],
       "incomplete": [
@@ -168,10 +321,10 @@
           "wcagCriteria": [
             "4.1.2"
           ],
-          "nodes": 2
+          "nodes": 1
         }
       ],
-      "inapplicable": 64
+      "inapplicable": 65
     }
   ]
 }
