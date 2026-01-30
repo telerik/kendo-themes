@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-height</td>
     <td>Number</td>
-    <td><code>600px</code></td>
-    <td><code>600px</code></td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the Chat.</div></div>
