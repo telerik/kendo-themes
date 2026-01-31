@@ -21,15 +21,15 @@ export default () => (
             <span>modern calendar week number with footer</span>
 
             <section>
-                <CalendarNormal showOtherMonth={true} />
+                <CalendarNormal showOtherMonth={true} titleId="calendar-1-title" activeCellId="calendar-1-active" />
             </section>
 
             <section>
-                <CalendarWithWeeks showOtherMonth/>
+                <CalendarWithWeeks showOtherMonth titleId="calendar-2-title" activeCellId="calendar-2-active" />
             </section>
 
             <section>
-                <CalendarWithWeeks showOtherMonth showCalendarFooter/>
+                <CalendarWithWeeks showOtherMonth showCalendarFooter titleId="calendar-3-title" activeCellId="calendar-3-active" />
             </section>
 
             <span>modern calendar year</span>
@@ -37,15 +37,15 @@ export default () => (
             <span>modern calendar century</span>
 
             <section>
-                <CalendarYear />
+                <CalendarYear titleId="calendar-4-title" activeCellId="calendar-4-active" />
             </section>
 
             <section>
-                <CalendarDecade />
+                <CalendarDecade titleId="calendar-5-title" activeCellId="calendar-5-active" />
             </section>
 
             <section>
-                <CalendarCentury />
+                <CalendarCentury titleId="calendar-6-title" activeCellId="calendar-6-active" />
             </section>
 
         </div>

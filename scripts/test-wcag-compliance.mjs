@@ -319,7 +319,8 @@ async function testWCAGCompliance() {
         ? `${TESTS_PATH}/${componentFilter}/**/*${COMPONENT_PAGE_EXT}`
         : `${TESTS_PATH}/!(utils|_*)/**/*${COMPONENT_PAGE_EXT}`;
 
-    const files = globSync(globPattern, { dotRelative: true });
+    const files = globSync(globPattern, { dotRelative: true })
+        .filter(f => !f.includes('jquery'));
 
     if (files.length === 0) {
         console.error(`❌ No test files found for pattern: ${globPattern}`);

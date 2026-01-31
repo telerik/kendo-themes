@@ -21,6 +21,7 @@ export type KendoCalendarCellProps = {
     empty?: boolean;
     dayIndicator?: boolean;
     ariaLabel?: string;
+    multiView?: boolean;
 };
 
 export type KendoCalendarCellState = { [K in (typeof states)[number]]?: boolean };
@@ -43,6 +44,7 @@ export const CalendarCell = (
         dayIndicator,
         empty,
         ariaLabel,
+        multiView,
         hover,
         focus,
         active,
@@ -105,7 +107,8 @@ export const CalendarCell = (
     return (
         <td
             {...other}
-            role="gridcell"
+            {...(multiView && { role: 'gridcell' })}
+            {...(!multiView && { role: 'gridcell' })}
             {...(selected && { 'aria-selected': 'true' })}
             {...(disabled && { 'aria-disabled': 'true' })}
             {...(ariaLabel && { 'aria-label': ariaLabel })}

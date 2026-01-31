@@ -54,6 +54,7 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     dir?: 'ltr' | 'rtl';
+    id?: string;
 };
 
 export type KendoDatePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -85,8 +86,14 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
         adaptiveTitle,
         adaptiveSubtitle,
         dir,
+        id = 'k-datepicker',
         ...other
     } = props;
+
+    // Generate IDs for ARIA relationships
+    const calendarId = `${id}-calendar`;
+    const activeCellId = `${id}-active-cell`;
+    const titleId = `${id}-title`;
 
 
     return (
@@ -115,7 +122,8 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                     aria-label="Date picker"
                     aria-haspopup="grid"
                     aria-expanded={opened ? 'true' : 'false'}
-                    aria-controls="datepicker-calendar"
+                    aria-controls={calendarId}
+                    {...(opened && { 'aria-activedescendant': activeCellId })}
                     aria-required={required ? 'true' : undefined}
                     aria-invalid={invalid ? 'true' : undefined}
                     aria-disabled={disabled ? 'true' : undefined}
@@ -149,8 +157,8 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                 />
             </Input>
             {opened &&
-                <Popup id="datepicker-calendar" className="k-calendar-container k-datepicker-popup">
-                    <CalendarNormal dir={dir} />
+                <Popup id={calendarId} className="k-calendar-container k-datepicker-popup">
+                    <CalendarNormal dir={dir} titleId={titleId} activeCellId={activeCellId} />
                 </Popup>
             }
             {adaptive &&
@@ -163,7 +171,7 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                         />
                     }
                 >
-                    <CalendarNormal size="large"></CalendarNormal>
+                    <CalendarNormal size="large" titleId={titleId} activeCellId={activeCellId}></CalendarNormal>
                 </ActionSheet>
             }
         </>

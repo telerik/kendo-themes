@@ -28,6 +28,8 @@ export type KendoCalendarProps = KendoCalendarOptions & {
     calendarFooterText?: string;
     dir?: 'ltr' | 'rtl';
     activeCellId?: string;
+    titleId?: string;
+    multiView?: boolean;
 };
 
 const defaultOptions = {
@@ -52,6 +54,8 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
         calendarFooterText,
         dir,
         activeCellId,
+        titleId = 'k-calendar-title',
+        multiView,
         ...other
     } = props;
 
@@ -78,12 +82,16 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
                     orientation={orientation}
                     size={size}
                     dir={dir}
+                    titleId={titleId}
                 />
             }
 
             <CalendarView
                 calendarView={calendarView}
                 orientation={orientation}
+                multiView={multiView}
+                titleId={multiView ? titleId : undefined}
+                activeCellId={multiView ? activeCellId : undefined}
             >
                 {props.children}
             </CalendarView>

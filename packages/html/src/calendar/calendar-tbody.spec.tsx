@@ -4,8 +4,12 @@ import { KendoComponent } from '../_types/component';
 import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';
 const className = `k-calendar-tbody`;
 
-export const CalendarTbody: KendoComponent<React.HTMLAttributes<HTMLTableSectionElement>> = (
-    props: React.HTMLAttributes<HTMLTableSectionElement>
+export type KendoCalendarTbodyProps = {
+    multiView?: boolean;
+};
+
+export const CalendarTbody: KendoComponent<KendoCalendarTbodyProps & React.HTMLAttributes<HTMLTableSectionElement>> = (
+    props: KendoCalendarTbodyProps & React.HTMLAttributes<HTMLTableSectionElement>
 ) => {
     const {
         ...other

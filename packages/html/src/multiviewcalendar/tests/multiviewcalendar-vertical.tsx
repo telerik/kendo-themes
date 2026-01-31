@@ -18,27 +18,27 @@ export default () => (
 
             <section>
                 <span>Month View</span>
-                <MultiViewCalendarNormal orientation="vertical"/>
+                <MultiViewCalendarNormal id="vertical-1" activeCellId="vertical-1-active" titleId="vertical-1-title" orientation="vertical"/>
             </section>
 
             <section>
                 <span>Month View with Week Numbers</span>
-                <MultiViewCalendarWithWeeks orientation="vertical" calendarTitleText="October 2021 - November 2021"/>
+                <MultiViewCalendarWithWeeks id="vertical-2" activeCellId="vertical-2-active" titleId="vertical-2-title" orientation="vertical" calendarTitleText="October 2021 - November 2021"/>
             </section>
 
             <section>
                 <span>Year View</span>
-                <MultiViewCalendarYear orientation="vertical"/>
+                <MultiViewCalendarYear id="vertical-3" activeCellId="vertical-3-active" titleId="vertical-3-title" orientation="vertical"/>
             </section>
 
             <section>
                 <span>Decade View</span>
-                <MultiViewCalendarDecade orientation="vertical"/>
+                <MultiViewCalendarDecade id="vertical-4" activeCellId="vertical-4-active" titleId="vertical-4-title" orientation="vertical"/>
             </section>
 
             <section>
                 <span>Century View</span>
-                <MultiViewCalendarCentury orientation="vertical"/>
+                <MultiViewCalendarCentury id="vertical-5" activeCellId="vertical-5-active" titleId="vertical-5-title" orientation="vertical"/>
             </section>
 
         </div>

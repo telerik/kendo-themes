@@ -13,32 +13,32 @@ export default () => (
 
             <section>
                 <div>Month View</div>
-                <MultiViewCalendarNormal/>
+                <MultiViewCalendarNormal id="multiview-1" activeCellId="multiview-1-active" titleId="multiview-1-title" />
             </section>
 
             <section>
                 <div>Month View with Week Numbers</div>
-                <MultiViewCalendarWithWeeks calendarTitleText="October 2021 - November 2021"/>
+                <MultiViewCalendarWithWeeks id="multiview-2" activeCellId="multiview-2-active" titleId="multiview-2-title" calendarTitleText="October 2021 - November 2021"/>
             </section>
 
             <section>
                 <div>Year View</div>
-                <MultiViewCalendarYear/>
+                <MultiViewCalendarYear id="multiview-3" activeCellId="multiview-3-active" titleId="multiview-3-title" />
             </section>
 
             <section>
                 <div>Decade View</div>
-                <MultiViewCalendarDecade/>
+                <MultiViewCalendarDecade id="multiview-4" activeCellId="multiview-4-active" titleId="multiview-4-title" />
             </section>
 
             <section>
                 <div>Century View</div>
-                <MultiViewCalendarCentury/>
+                <MultiViewCalendarCentury id="multiview-5" activeCellId="multiview-5-active" titleId="multiview-5-title" />
             </section>
 
             <section>
                 <div>With Footer</div>
-                <MultiViewCalendarNormal showCalendarFooter/>
+                <MultiViewCalendarNormal id="multiview-6" activeCellId="multiview-6-active" titleId="multiview-6-title" showCalendarFooter/>
             </section>
 
         </div>

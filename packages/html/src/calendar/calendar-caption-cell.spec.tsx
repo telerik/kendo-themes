@@ -20,13 +20,14 @@ export const CalendarCaptionCell: KendoComponent<KendoCalendarCaptionCellProps &
     return (
         <th
             {...other}
-            scope={scope}
-            colSpan={colSpan}
-            rowSpan={rowSpan}
             className={classNames(
                 props.className,
                 className
-            )}>
+            )}
+            role="columnheader"
+            scope={scope}
+            colSpan={colSpan}
+            rowSpan={rowSpan}>
             {text}
         </th>
     );

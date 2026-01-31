@@ -42,6 +42,8 @@ export type KendoCalendarInfiniteProps = {
     calendarWeekdays?: KendoCalendarInfiniteViewProps['weekdayCellsText'];
     navigationItems?: string[];
     navigationMarkerConfig?: { [key: string]: string };
+    id?: string;
+    activeCellId?: string;
 
 };
 
@@ -67,6 +69,8 @@ export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & Kendo
         showWeekNumbers,
         showNavigationButtons,
         calendarWeekdays,
+        id,
+        activeCellId,
         ...other
     } = props;
 
@@ -92,6 +96,8 @@ export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & Kendo
                 showNavigationButtons={showNavigationButtons}
                 orientation="vertical"
                 weekdayCellsText={calendarWeekdays}
+                id={id}
+                activeCellId={activeCellId}
             >
                 {props.children}
             </CalendarInfiniteView>

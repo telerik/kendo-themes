@@ -15,6 +15,9 @@ export type KendoCalendarHeaderProps = {
     size?: (typeof options.size)[number] | null;
     orientation?: 'vertical' | 'horizontal';
     dir?: 'ltr' | 'rtl';
+    titleId?: string;
+    disablePrev?: boolean;
+    disableNext?: boolean;
 };
 
 const defaultOptions = {
@@ -36,6 +39,9 @@ export const CalendarHeader = (
         size,
         calendarView,
         dir,
+        titleId = 'k-calendar-title',
+        disablePrev,
+        disableNext,
         ...other
     } = props;
 
@@ -52,12 +58,12 @@ export const CalendarHeader = (
                     'k-vstack': orientation === 'vertical',
                 }
             )}>
-            <Button disabled={calendarView === "century"} className="k-calendar-title" text={calendarTitleText} size={size} fillMode="flat" themeColor="primary" aria-label={calendarTitleText} tabIndex={-1} aria-disabled={calendarView === "century" ? 'true' : undefined}></Button>
+            <Button disabled={calendarView === "century"} id={titleId} className="k-calendar-title" text={calendarTitleText} size={size} fillMode="flat" themeColor="primary" aria-label={calendarTitleText} tabIndex={-1} aria-disabled={calendarView === "century" ? 'true' : undefined}></Button>
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
-                {showNavigationButtons && <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat" aria-label="Previous" tabIndex={-1}></Button>}
-                {showToday && <Button size={size} fillMode="flat" className="k-calendar-nav-today" tabIndex={-1}>Today</Button>}
-                {showNavigationButtons && <Button className="k-calendar-nav-next" icon={iconNext} size={size} fillMode="flat" aria-label="Next" tabIndex={-1}></Button>}
+                {showNavigationButtons && <Button disabled={disablePrev} className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat" aria-label="Previous" tabIndex={-1} aria-disabled={disablePrev ? 'true' : undefined}></Button>}
+                {showToday && <Button size={size} fillMode="flat" className="k-calendar-nav-today" role="link" tabIndex={-1}>Today</Button>}
+                {showNavigationButtons && <Button disabled={disableNext} className="k-calendar-nav-next" icon={iconNext} size={size} fillMode="flat" aria-label="Next" tabIndex={-1} aria-disabled={disableNext ? 'true' : undefined}></Button>}
             </span>
         </div>
     );

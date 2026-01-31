@@ -15,6 +15,8 @@ export type KendoCalendarInfiniteViewProps = {
     showWeekNumbers?: boolean;
     showNavigationButtons?: boolean;
     weekdayCellsText?: string[];
+    id?: string;
+    activeCellId?: string;
 };
 
 const defaultOptions = {
@@ -73,7 +75,7 @@ export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps
             </CalendarInfiniteTable>
             }
             <div className="k-content k-scrollable">
-                <CalendarInfiniteTable>
+                <CalendarInfiniteTable ariaLabel={headerText}>
                     {props.children}
                 </CalendarInfiniteTable>
                 <div className="k-scrollable-placeholder" style={{ height: "1000px" }}></div>

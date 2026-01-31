@@ -1,26 +1,26 @@
 import { Calendar, CalendarCell, CalendarTable, CalendarTableRow } from "..";
 
-export const CalendarYear = (props: any) => (
+export const CalendarYear = ({ titleId, activeCellId, ...props }: any) => (
     <Calendar calendarView="year" calendarTitleText="2019"
         children={
-            <CalendarTable>
+            <CalendarTable titleId={titleId} ariaActivedescendant={activeCellId}>
                 <CalendarTableRow>
-                    <CalendarCell text="Jan" />
-                    <CalendarCell text="Feb" />
-                    <CalendarCell text="Mar" />
-                    <CalendarCell text="Apr" />
+                    <CalendarCell text="Jan" ariaLabel="January" />
+                    <CalendarCell text="Feb" ariaLabel="February" />
+                    <CalendarCell text="Mar" ariaLabel="March" />
+                    <CalendarCell text="Apr" ariaLabel="April" />
                 </CalendarTableRow>
                 <CalendarTableRow>
-                    <CalendarCell text="May" />
-                    <CalendarCell text="Jun" />
-                    <CalendarCell text="Jul" />
-                    <CalendarCell text="Au" />
+                    <CalendarCell text="May" ariaLabel="May" />
+                    <CalendarCell text="Jun" ariaLabel="June" />
+                    <CalendarCell text="Jul" ariaLabel="July" />
+                    <CalendarCell text="Au" ariaLabel="August" />
                 </CalendarTableRow>
                 <CalendarTableRow>
-                    <CalendarCell text="Sep" />
-                    <CalendarCell text="Oct" today />
-                    <CalendarCell text="Nov" />
-                    <CalendarCell text="Dec" />
+                    <CalendarCell text="Sep" ariaLabel="September" />
+                    <CalendarCell text="Oct" today id={activeCellId} ariaLabel="October" />
+                    <CalendarCell text="Nov" ariaLabel="November" />
+                    <CalendarCell text="Dec" ariaLabel="December" />
                 </CalendarTableRow>
             </CalendarTable>
         }

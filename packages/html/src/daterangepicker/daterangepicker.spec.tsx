@@ -100,7 +100,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         aria-label="Start date"
                         aria-haspopup="grid"
                         aria-expanded={opened ? 'true' : 'false'}
-                        aria-controls="daterangepicker-calendar"
+                        aria-controls={`${id}-calendar`}
                         {...(opened && focus && { 'aria-activedescendant': `${id}-active` })}
                         aria-readonly={readonly ? 'true' : undefined}
                         aria-invalid={invalid ? 'true' : undefined}
@@ -132,7 +132,8 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         aria-label="End date"
                         aria-haspopup="grid"
                         aria-expanded={opened ? 'true' : 'false'}
-                        aria-controls="daterangepicker-calendar"
+                        aria-controls={`${id}-calendar`}
+                        {...(opened && { 'aria-activedescendant': `${id}-active` })}
                         aria-readonly={readonly ? 'true' : undefined}
                         aria-invalid={invalid ? 'true' : undefined}
                         aria-disabled={disabled ? 'true' : undefined}
@@ -141,8 +142,8 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                 </FloatingLabel>
             </span>
             {opened &&
-                <Popup id="daterangepicker-calendar" className="k-calendar-container k-daterangepicker-popup">
-                    <MultiViewCalendarNormal dir={dir} activeCellId={focus ? `${id}-active` : undefined} />
+                <Popup id={`${id}-calendar`} className="k-calendar-container k-daterangepicker-popup">
+                    <MultiViewCalendarNormal dir={dir} activeCellId={`${id}-active`} titleId={`${id}-title`} />
                 </Popup>
             }
             {adaptive &&

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-30T22:25:03.716Z",
+  "lastUpdated": "2026-01-31T19:09:56.929Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -126,17 +126,18 @@
       "completedAt": "2026-01-29T09:19:35.262Z"
     },
     "calendar": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "calendars",
-      "complianceScore": null,
+      "complianceScore": 97.3,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
-        "minor": 0
+        "minor": 5
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-31T15:20:45.608Z"
     },
     "captcha": {
       "status": "completed",
@@ -400,7 +401,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "pickers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -408,13 +409,13 @@
         "minor": 0
       },
       "notes": "",
-      "completedAt": "2026-01-28T14:40:39.629Z"
+      "completedAt": "2026-01-31T10:39:44.798Z"
     },
     "daterangepicker": {
       "status": "completed",
       "specExists": true,
       "priority": "pickers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -422,13 +423,13 @@
         "minor": 0
       },
       "notes": "",
-      "completedAt": "2026-01-28T15:13:40.743Z"
+      "completedAt": "2026-01-31T10:39:52.073Z"
     },
     "datetimepicker": {
       "status": "completed",
       "specExists": true,
       "priority": "pickers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -436,7 +437,7 @@
         "minor": 0
       },
       "notes": "",
-      "completedAt": "2026-01-28T14:51:32.853Z"
+      "completedAt": "2026-01-31T10:39:52.017Z"
     },
     "dialog": {
       "status": "completed",
@@ -546,7 +547,7 @@
         "minor": 0
       },
       "notes": "",
-      "completedAt": "2026-01-30T19:44:53.189Z"
+      "completedAt": "2026-01-30T22:31:30.846Z"
     },
     "filemanager": {
       "status": "pending",
@@ -683,17 +684,18 @@
       "notes": ""
     },
     "infinitecalendar": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "calendars",
-      "complianceScore": null,
+      "complianceScore": 97.3,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
-        "minor": 0
+        "minor": 5
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-31T15:19:23.756Z"
     },
     "listbox": {
       "status": "completed",
@@ -807,23 +809,24 @@
       "completedAt": "2026-01-29T08:45:49.397Z"
     },
     "multiviewcalendar": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "calendars",
-      "complianceScore": null,
+      "complianceScore": 96.7,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
-        "minor": 0
+        "minor": 3
       },
-      "notes": ""
+      "notes": "Minor violations: empty-table-header (week number column headers)",
+      "completedAt": "2026-01-31T19:09:56.928Z"
     },
     "notification": {
       "status": "completed",
       "specExists": true,
       "priority": "containers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -831,7 +834,7 @@
         "minor": 0
       },
       "notes": "",
-      "completedAt": "2026-01-30T19:53:03.598Z"
+      "completedAt": "2026-01-30T22:33:37.481Z"
     },
     "numerictextbox": {
       "status": "completed",
@@ -891,7 +894,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "containers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -899,7 +902,7 @@
         "minor": 0
       },
       "notes": "",
-      "completedAt": "2026-01-30T21:14:38.802Z"
+      "completedAt": "2026-01-30T22:33:37.524Z"
     },
     "pdfviewer": {
       "status": "pending",
@@ -931,7 +934,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "containers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -939,7 +942,7 @@
         "minor": 0
       },
       "notes": "",
-      "completedAt": "2026-01-30T22:15:42.116Z"
+      "completedAt": "2026-01-30T22:33:37.568Z"
     },
     "progressbar": {
       "status": "completed",
@@ -1131,17 +1134,18 @@
       "completedAt": "2026-01-29T09:43:45.628Z"
     },
     "splitter": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "containers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-01-30T22:33:37.657Z"
     },
     "spreadsheet": {
       "status": "pending",
@@ -1243,7 +1247,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "containers",
-      "complianceScore": null,
+      "complianceScore": 100,
       "violations": {
         "critical": 0,
         "serious": 0,
@@ -1251,7 +1255,7 @@
         "minor": 0
       },
       "notes": "",
-      "completedAt": "2026-01-30T22:25:03.704Z"
+      "completedAt": "2026-01-30T22:33:37.614Z"
     },
     "timedurationpicker": {
       "status": "completed",

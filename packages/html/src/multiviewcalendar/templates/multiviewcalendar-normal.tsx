@@ -1,11 +1,11 @@
 import { MultiViewCalendar } from "..";
 import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
 
-export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, activeCellId, ...props }: any) => (
-    <MultiViewCalendar calendarView="month" activeCellId={activeCellId}
+export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, activeCellId, titleId, ...props }: any) => (
+    <MultiViewCalendar calendarView="month" activeCellId={activeCellId} titleId={titleId}
         children={
             <>
-                <CalendarTable calendarCaption={showCaptions && "October 2021"} showTableHead>
+                <CalendarTable calendarCaption={showCaptions && "October 2021"} showTableHead titleId={titleId} ariaActivedescendant={activeCellId} multiView>
                     <CalendarTableRow>
                         <CalendarCell text="26" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
                         <CalendarCell text="27" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
@@ -18,9 +18,9 @@ export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, activeCe
                     <CalendarTableRow>
                         <CalendarCell text="3" weekend />
                         <CalendarCell text="4" />
-                        <CalendarCell text="5" />
+                        <CalendarCell text="5" disabled />
                         <CalendarCell text="6" />
-                        <CalendarCell text="7" />
+                        <CalendarCell text="7" selected />
                         <CalendarCell text="8" />
                         <CalendarCell text="9" weekend />
                     </CalendarTableRow>
@@ -61,7 +61,7 @@ export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, activeCe
                         <CalendarCell text="6" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
                     </CalendarTableRow>
                 </CalendarTable>
-                <CalendarTable calendarCaption={showCaptions && "November 2021"} showTableHead>
+                <CalendarTable calendarCaption={showCaptions && "November 2021"} showTableHead titleId={titleId} ariaActivedescendant={activeCellId} multiView>
                     <CalendarTableRow>
                         <CalendarCell text="31" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
                         <CalendarCell text="1" />

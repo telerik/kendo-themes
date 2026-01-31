@@ -32,38 +32,39 @@ export default () =>(
 
             <section>
                 <div>infinite calendar month</div>
-                <CalendarInfiniteNormal />
+                <CalendarInfiniteNormal id="infinite-1" />
             </section>
 
             <section>
                 <div>infinite calendar month without navigation bar</div>
-                <CalendarInfiniteNormal showNavigation={false} />
+                <CalendarInfiniteNormal id="infinite-2" showNavigation={false} />
             </section>
 
             <section>
                 <div>infinite calendar - week number column</div>
-                <CalendarInfiniteWeekNumber />
+                <CalendarInfiniteWeekNumber id="infinite-3" />
             </section>
 
             <section>
                 <div>infinite calendar year</div>
-                <CalendarInfiniteYear />
+                <CalendarInfiniteYear id="infinite-4" activeCellId="infinite-4-active" />
             </section>
 
             <section>
                 <div>infinite calendar decade</div>
-                <CalendarInfiniteDecade />
+                <CalendarInfiniteDecade id="infinite-5" activeCellId="infinite-5-active" />
             </section>
 
             <section>
                 <div>infinite calendar century</div>
-                <CalendarInfiniteCentury />
+                <CalendarInfiniteCentury id="infinite-6" activeCellId="infinite-6-active" />
             </section>
 
             <section>
                 <div>infinite calendar empty cells</div>
                 <CalendarInfiniteYear
                     id="empty-cells"
+                    activeCellId="empty-cells-active"
                     calendarTitleText="2018"
                     showWeekdays={false}
                     navigationItems={[ '2018', '2019' ]}
@@ -94,8 +95,8 @@ export default () =>(
                                 <CalendarTableRow>
                                     <CalendarCell empty />
                                     <CalendarCell empty />
-                                    <CalendarCell text="Nov" />
-                                    <CalendarCell text="Dec" />
+                                    <CalendarCell text="Nov" ariaLabel="November" />
+                                    <CalendarCell text="Dec" ariaLabel="December" />
                                 </CalendarTableRow>
                             </CalendarTbody>
                             <CalendarTbody>
@@ -103,9 +104,9 @@ export default () =>(
                                     <CalendarCaptionCell text="2019" scope="col" colSpan={4} />
                                 </CalendarTableRow>
                                 <CalendarTableRow>
-                                    <CalendarCell text="Jan" />
-                                    <CalendarCell text="Feb" />
-                                    <CalendarCell text="Mar" today />
+                                    <CalendarCell text="Jan" ariaLabel="January" />
+                                    <CalendarCell text="Feb" ariaLabel="February" />
+                                    <CalendarCell text="Mar" ariaLabel="March" today />
                                     <CalendarCell empty />
                                 </CalendarTableRow>
                                 <CalendarTableRow>
@@ -129,6 +130,8 @@ export default () =>(
             <section>
                 <div>infinite calendar - week number column with selected range</div>
                 <CalendarInfiniteWeekNumber
+                    id="infinite-7"
+                    activeCellId="infinite-7-active"
                     className="k-calendar-range"
                     children={
                         <>

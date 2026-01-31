@@ -1,13 +1,13 @@
 import { Calendar, CalendarTableRow, CalendarCell, CalendarTable } from "..";
 
-export const CalendarCentury = ({ showOtherCentury, ...props }: any) => (
+export const CalendarCentury = ({ showOtherCentury, titleId, activeCellId, ...props }: any) => (
     <Calendar calendarView="century" calendarTitleText="2000 - 2099"
         children={
-            <CalendarTable>
+            <CalendarTable titleId={titleId} ariaActivedescendant={activeCellId}>
                 <CalendarTableRow>
                     <CalendarCell text="1990 - 1999" />
                     <CalendarCell text="2000 - 2009" />
-                    <CalendarCell text="2010 - 2019" today />
+                    <CalendarCell text="2010 - 2019" today id={activeCellId} />
                     <CalendarCell text="2020 - 2029" />
                 </CalendarTableRow>
                 <CalendarTableRow>

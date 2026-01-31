@@ -4,8 +4,12 @@ import { KendoComponent } from '../_types/component';
 import { CALENDAR_FOLDER_NAME, CALENDAR_MODULE_NAME } from './constants';
 const className = `k-calendar-tr`;
 
-export const CalendarTableRow: KendoComponent<React.HTMLAttributes<HTMLTableRowElement>> = (
-    props: React.HTMLAttributes<HTMLTableRowElement>
+export type KendoCalendarTableRowProps = {
+    multiView?: boolean;
+};
+
+export const CalendarTableRow: KendoComponent<KendoCalendarTableRowProps & React.HTMLAttributes<HTMLTableRowElement>> = (
+    props: KendoCalendarTableRowProps & React.HTMLAttributes<HTMLTableRowElement>
 ) => {
     const {
         ...other

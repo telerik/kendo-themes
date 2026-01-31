@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 0px;">
 <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -108,17 +108,17 @@
                 </div>
                 <div class="k-calendar-view k-calendar-monthview k-vstack">
                     <div class="k-calendar-header">
-                        <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="January 2021" tabindex="-1">
+                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="January 2021" tabindex="-1">
                             <span class="k-button-text">January 2021</span>
                         </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav">
-                            <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                            <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                 <span class="k-button-text">Today</span>
                             </button>
                         </span>
                     </div>
-                    <table class="k-calendar-weekdays k-calendar-table">
+                    <table class="k-calendar-weekdays k-calendar-table" role="grid" tabindex="0">
                         <colgroup>
                             <col>
                             <col>
@@ -141,7 +141,7 @@
                         </thead>
                     </table>
                     <div class="k-content k-scrollable">
-                        <table class="k-calendar-table">
+                        <table class="k-calendar-table" role="grid" aria-label="January 2021" tabindex="0">
                             <colgroup>
                                 <col>
                                 <col>
@@ -153,7 +153,7 @@
                             </colgroup>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="7" class="k-calendar-caption">January 2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="7">January 2021</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td k-empty">&nbsp;</td>
@@ -274,7 +274,7 @@
                             </tbody>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="7" class="k-calendar-caption">February 2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="7">February 2021</th>
                                 </tr>
                             </tbody>
                         </table>
@@ -288,17 +288,17 @@
             <div dir="rtl" class="k-calendar k-calendar-infinite">
                 <div class="k-calendar-view k-calendar-monthview k-vstack">
                     <div class="k-calendar-header">
-                        <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="January 2021" tabindex="-1">
+                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="January 2021" tabindex="-1">
                             <span class="k-button-text">January 2021</span>
                         </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav">
-                            <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                            <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                 <span class="k-button-text">Today</span>
                             </button>
                         </span>
                     </div>
-                    <table class="k-calendar-weekdays k-calendar-table">
+                    <table class="k-calendar-weekdays k-calendar-table" role="grid" tabindex="0">
                         <colgroup>
                             <col>
                             <col>
@@ -321,7 +321,7 @@
                         </thead>
                     </table>
                     <div class="k-content k-scrollable">
-                        <table class="k-calendar-table">
+                        <table class="k-calendar-table" role="grid" aria-label="January 2021" tabindex="0">
                             <colgroup>
                                 <col>
                                 <col>
@@ -333,7 +333,7 @@
                             </colgroup>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="7" class="k-calendar-caption">January 2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="7">January 2021</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td k-empty">&nbsp;</td>
@@ -454,7 +454,7 @@
                             </tbody>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="7" class="k-calendar-caption">February 2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="7">February 2021</th>
                                 </tr>
                             </tbody>
                         </table>
@@ -548,17 +548,17 @@
                 </div>
                 <div class="k-calendar-view k-calendar-monthview k-vstack">
                     <div class="k-calendar-header">
-                        <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="January 2021" tabindex="-1">
+                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="January 2021" tabindex="-1">
                             <span class="k-button-text">January 2021</span>
                         </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav">
-                            <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                            <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                 <span class="k-button-text">Today</span>
                             </button>
                         </span>
                     </div>
-                    <table class="k-calendar-weekdays k-calendar-table">
+                    <table class="k-calendar-weekdays k-calendar-table" role="grid" tabindex="0">
                         <colgroup>
                             <col>
                             <col>
@@ -570,7 +570,7 @@
                         </colgroup>
                         <thead role="rowgroup" class="k-calendar-thead">
                             <tr role="row" class="k-calendar-tr">
-                                <th role="columnheader" scope="col" class="k-calendar-th k-alt"></th>
+                                <th role="columnheader" scope="col" aria-label="Week number" class="k-calendar-th k-alt"></th>
                                 <th role="columnheader" scope="col" aria-label="Sunday" class="k-calendar-th">Su</th>
                                 <th role="columnheader" scope="col" aria-label="Monday" class="k-calendar-th">Mo</th>
                                 <th role="columnheader" scope="col" aria-label="Tuesday" class="k-calendar-th">Tu</th>
@@ -582,7 +582,7 @@
                         </thead>
                     </table>
                     <div class="k-content k-scrollable">
-                        <table class="k-calendar-table">
+                        <table class="k-calendar-table" role="grid" aria-label="January 2021" tabindex="0">
                             <colgroup>
                                 <col>
                                 <col>
@@ -594,7 +594,7 @@
                             </colgroup>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="7" class="k-calendar-caption">January 2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="7">January 2021</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td k-alt">1</td>
@@ -721,7 +721,7 @@
                             </tbody>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="7" class="k-calendar-caption">February 2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="7">February 2021</th>
                                 </tr>
                             </tbody>
                         </table>
@@ -824,18 +824,18 @@
                 </div>
                 <div class="k-calendar-view k-calendar-yearview k-vstack">
                     <div class="k-calendar-header">
-                        <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="2021" tabindex="-1">
+                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="2021" tabindex="-1">
                             <span class="k-button-text">2021</span>
                         </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav">
-                            <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                            <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                 <span class="k-button-text">Today</span>
                             </button>
                         </span>
                     </div>
                     <div class="k-content k-scrollable">
-                        <table class="k-calendar-table">
+                        <table class="k-calendar-table" role="grid" aria-label="2021" tabindex="0">
                             <colgroup>
                                 <col>
                                 <col>
@@ -844,94 +844,94 @@
                             </colgroup>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="4" class="k-calendar-caption">2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="4">2021</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
-                                    <td role="gridcell" class="k-calendar-td k-today">
+                                    <td role="gridcell" aria-label="January" class="k-calendar-td k-today">
                                         <span class="k-link">Jan</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="February" class="k-calendar-td">
                                         <span class="k-link">Feb</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="March" class="k-calendar-td">
                                         <span class="k-link">Mar</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="April" class="k-calendar-td">
                                         <span class="k-link">Apr</span>
                                     </td>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="May" class="k-calendar-td">
                                         <span class="k-link">May</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="June" class="k-calendar-td">
                                         <span class="k-link">Jun</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="July" class="k-calendar-td">
                                         <span class="k-link">Jul</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="August" class="k-calendar-td">
                                         <span class="k-link">Aug</span>
                                     </td>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="September" class="k-calendar-td">
                                         <span class="k-link">Sep</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="October" class="k-calendar-td">
                                         <span class="k-link">Oct</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="November" class="k-calendar-td">
                                         <span class="k-link">Nov</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="December" class="k-calendar-td">
                                         <span class="k-link">Dec</span>
                                     </td>
                                 </tr>
                             </tbody>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="4" class="k-calendar-caption">2022</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="4">2022</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="January" class="k-calendar-td">
                                         <span class="k-link">Jan</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="February" class="k-calendar-td">
                                         <span class="k-link">Feb</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="March" class="k-calendar-td">
                                         <span class="k-link">Mar</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="April" class="k-calendar-td">
                                         <span class="k-link">Apr</span>
                                     </td>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="May" class="k-calendar-td">
                                         <span class="k-link">May</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="June" class="k-calendar-td">
                                         <span class="k-link">Jun</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="July" class="k-calendar-td">
                                         <span class="k-link">Jul</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="August" class="k-calendar-td">
                                         <span class="k-link">Aug</span>
                                     </td>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="September" class="k-calendar-td">
                                         <span class="k-link">Sep</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="October" class="k-calendar-td">
                                         <span class="k-link">Oct</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="November" class="k-calendar-td">
                                         <span class="k-link">Nov</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="December" class="k-calendar-td">
                                         <span class="k-link">Dec</span>
                                     </td>
                                 </tr>
@@ -994,18 +994,18 @@
                 </div>
                 <div class="k-calendar-view k-calendar-decadeview k-vstack">
                     <div class="k-calendar-header">
-                        <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="2020 - 2029" tabindex="-1">
+                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="2020 - 2029" tabindex="-1">
                             <span class="k-button-text">2020 - 2029</span>
                         </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav">
-                            <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                            <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                 <span class="k-button-text">Today</span>
                             </button>
                         </span>
                     </div>
                     <div class="k-content k-scrollable">
-                        <table class="k-calendar-table">
+                        <table class="k-calendar-table" role="grid" aria-label="2020 - 2029" tabindex="0">
                             <colgroup>
                                 <col>
                                 <col>
@@ -1014,7 +1014,7 @@
                             </colgroup>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="4" class="k-calendar-caption">2020 - 2029</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="4">2020 - 2029</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td k-today">
@@ -1057,7 +1057,7 @@
                             </tbody>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="4" class="k-calendar-caption">2030 - 2039</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="4">2030 - 2039</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td">
@@ -1123,18 +1123,18 @@
                 </div>
                 <div class="k-calendar-view k-calendar-centuryview k-vstack">
                     <div class="k-calendar-header">
-                        <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="2000 - 2099" tabindex="-1">
+                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="2000 - 2099" tabindex="-1">
                             <span class="k-button-text">2000 - 2099</span>
                         </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav">
-                            <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                            <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                 <span class="k-button-text">Today</span>
                             </button>
                         </span>
                     </div>
                     <div class="k-content k-scrollable">
-                        <table class="k-calendar-table">
+                        <table class="k-calendar-table" role="grid" aria-label="2000 - 2099" tabindex="0">
                             <colgroup>
                                 <col>
                                 <col>
@@ -1143,7 +1143,7 @@
                             </colgroup>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="4" class="k-calendar-caption">2000 - 2099</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="4">2000 - 2099</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td">
@@ -1194,7 +1194,7 @@
         </section>
         <section>
             <div>infinite calendar empty cells</div>
-            <div dir="rtl" id="empty-cells" class="k-calendar k-calendar-infinite">
+            <div dir="rtl" class="k-calendar k-calendar-infinite">
                 <div class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
                     <div class="k-content k-scrollable">
@@ -1211,18 +1211,18 @@
                 </div>
                 <div class="k-calendar-view k-calendar-yearview k-vstack">
                     <div class="k-calendar-header">
-                        <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="2018" tabindex="-1">
+                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="2018" tabindex="-1">
                             <span class="k-button-text">2018</span>
                         </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav">
-                            <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                            <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                 <span class="k-button-text">Today</span>
                             </button>
                         </span>
                     </div>
                     <div class="k-content k-scrollable">
-                        <table class="k-calendar-table">
+                        <table class="k-calendar-table" role="grid" aria-label="2018" tabindex="0">
                             <colgroup>
                                 <col>
                                 <col>
@@ -1231,7 +1231,7 @@
                             </colgroup>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="4" class="k-calendar-caption">2018</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="4">2018</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td k-empty">&nbsp;</td>
@@ -1248,26 +1248,26 @@
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td k-empty">&nbsp;</td>
                                     <td role="gridcell" class="k-calendar-td k-empty">&nbsp;</td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="November" class="k-calendar-td">
                                         <span class="k-link">Nov</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="December" class="k-calendar-td">
                                         <span class="k-link">Dec</span>
                                     </td>
                                 </tr>
                             </tbody>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="4" class="k-calendar-caption">2019</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="4">2019</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="January" class="k-calendar-td">
                                         <span class="k-link">Jan</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td">
+                                    <td role="gridcell" aria-label="February" class="k-calendar-td">
                                         <span class="k-link">Feb</span>
                                     </td>
-                                    <td role="gridcell" class="k-calendar-td k-today">
+                                    <td role="gridcell" aria-label="March" class="k-calendar-td k-today">
                                         <span class="k-link">Mar</span>
                                     </td>
                                     <td role="gridcell" class="k-calendar-td k-empty">&nbsp;</td>
@@ -1377,17 +1377,17 @@
                 </div>
                 <div class="k-calendar-view k-calendar-monthview k-vstack">
                     <div class="k-calendar-header">
-                        <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="January 2021" tabindex="-1">
+                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="January 2021" tabindex="-1">
                             <span class="k-button-text">January 2021</span>
                         </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav">
-                            <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                            <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                 <span class="k-button-text">Today</span>
                             </button>
                         </span>
                     </div>
-                    <table class="k-calendar-weekdays k-calendar-table">
+                    <table class="k-calendar-weekdays k-calendar-table" role="grid" tabindex="0">
                         <colgroup>
                             <col>
                             <col>
@@ -1399,7 +1399,7 @@
                         </colgroup>
                         <thead role="rowgroup" class="k-calendar-thead">
                             <tr role="row" class="k-calendar-tr">
-                                <th role="columnheader" scope="col" class="k-calendar-th k-alt"></th>
+                                <th role="columnheader" scope="col" aria-label="Week number" class="k-calendar-th k-alt"></th>
                                 <th role="columnheader" scope="col" aria-label="Sunday" class="k-calendar-th">Su</th>
                                 <th role="columnheader" scope="col" aria-label="Monday" class="k-calendar-th">Mo</th>
                                 <th role="columnheader" scope="col" aria-label="Tuesday" class="k-calendar-th">Tu</th>
@@ -1411,7 +1411,7 @@
                         </thead>
                     </table>
                     <div class="k-content k-scrollable">
-                        <table class="k-calendar-table">
+                        <table class="k-calendar-table" role="grid" aria-label="January 2021" tabindex="0">
                             <colgroup>
                                 <col>
                                 <col>
@@ -1424,7 +1424,7 @@
                             </colgroup>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="7" class="k-calendar-caption">January 2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="7">January 2021</th>
                                 </tr>
                                 <tr role="row" class="k-calendar-tr">
                                     <td role="gridcell" class="k-calendar-td k-alt">1</td>
@@ -1551,7 +1551,7 @@
                             </tbody>
                             <tbody role="rowgroup" class="k-calendar-tbody">
                                 <tr role="row" class="k-calendar-tr">
-                                    <th scope="col" colspan="7" class="k-calendar-caption">February 2021</th>
+                                    <th class="k-calendar-caption" role="columnheader" scope="col" colspan="7">February 2021</th>
                                 </tr>
                             </tbody>
                         </table>

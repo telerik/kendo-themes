@@ -1,4 +1,4 @@
-import { Calendar, CalendarCell, CalendarTable, CalendarTableRow, CalendarWithWeeks, CalendarYear } from '../../calendar';
+import { Calendar, CalendarCell, CalendarHeader, CalendarTable, CalendarTableRow, CalendarView, CalendarWithWeeks, CalendarYear } from '../../calendar';
 
 const styles = `
     #test-area {
@@ -88,7 +88,7 @@ export default () => (
             </section>
 
             <section>
-                <Calendar className="k-calendar-range" calendarView="month" showWeek>
+                <Calendar className="k-calendar-range" calendarView="month" showWeek titleId="cells-2-title" activeCellId="cells-2-active">
                     <CalendarTable showWeek showTableHead>
                         <CalendarTableRow>
                             <CalendarCell text="39" weekCell />
@@ -155,32 +155,99 @@ export default () => (
             </section>
 
             <section>
-                <CalendarWithWeeks showOtherMonth />
+                <CalendarWithWeeks showOtherMonth titleId="cells-3-title" activeCellId="cells-3-active" />
             </section>
 
             <section>
-                <CalendarYear>
-                    <CalendarTable>
+                <CalendarYear titleId="cells-4-title" activeCellId="cells-4-active">
+                    <CalendarTable titleId="cells-4-title" ariaActivedescendant="cells-4-active">
                         <CalendarTableRow>
-                            <CalendarCell text="Normal" />
-                            <CalendarCell text="Hover" hover />
-                            <CalendarCell text="Focus" focus />
-                            <CalendarCell text="Selected" selected />
+                            <CalendarCell text="Normal" ariaLabel="Normal state" />
+                            <CalendarCell text="Hover" ariaLabel="Hover state" hover />
+                            <CalendarCell text="Focus" ariaLabel="Focus state" focus />
+                            <CalendarCell text="Selected" ariaLabel="Selected state" selected />
                         </CalendarTableRow>
                         <CalendarTableRow>
-                            <CalendarCell text="Hover Focus" hover focus />
-                            <CalendarCell text="Hover Selected" hover selected />
-                            <CalendarCell text="Today" today />
-                            <CalendarCell text="Today focus" today focus />
+                            <CalendarCell text="Hover Focus" ariaLabel="Hover and focus state" hover focus />
+                            <CalendarCell text="Hover Selected" ariaLabel="Hover and selected state" hover selected />
+                            <CalendarCell text="Today" ariaLabel="Today state" today id="cells-4-active" />
+                            <CalendarCell text="Today focus" ariaLabel="Today with focus state" today focus />
                         </CalendarTableRow>
                         <CalendarTableRow>
-                            <CalendarCell text="Today Selected" today selected />
-                            <CalendarCell text="Today Hover" today hover />
-                            <CalendarCell text="Today Hover Focus" today hover focus />
-                            <CalendarCell text="Today Hover Selected" today hover selected />
+                            <CalendarCell text="Today Selected" ariaLabel="Today and selected state" today selected />
+                            <CalendarCell text="Today Hover" ariaLabel="Today and hover state" today hover />
+                            <CalendarCell text="Today Hover Focus" ariaLabel="Today, hover, and focus state" today hover focus />
+                            <CalendarCell text="Today Hover Selected" ariaLabel="Today, hover, and selected state" today hover selected />
+                        </CalendarTableRow>
+                        <CalendarTableRow>
+                            <CalendarCell text="Disabled" ariaLabel="Disabled state" disabled />
+                            <CalendarCell text="Disabled Hover" ariaLabel="Disabled and hover state" disabled hover />
+                            <CalendarCell text="Disabled Focus" ariaLabel="Disabled and focus state" disabled focus />
+                            <CalendarCell text="Disabled Selected" ariaLabel="Disabled and selected state" disabled selected />
                         </CalendarTableRow>
                     </CalendarTable>
                 </CalendarYear>
+            </section>
+
+            <span>Disabled navigation buttons</span>
+            <span></span>
+            <span></span>
+
+            <section>
+                <Calendar calendarView="month" showCalendarHeader={false} titleId="cells-5-title" activeCellId="cells-5-active">
+                    <CalendarHeader calendarView="month" disablePrev />
+                    <CalendarView calendarView="month">
+                        <CalendarTable showTableHead titleId="cells-5-title" ariaActivedescendant="cells-5-active">
+                            <CalendarTableRow>
+                                <CalendarCell text="10" weekend />
+                                <CalendarCell text="11" />
+                                <CalendarCell text="12" today id="cells-5-active" />
+                                <CalendarCell text="13" />
+                                <CalendarCell text="14" />
+                                <CalendarCell text="15" />
+                                <CalendarCell text="16" weekend />
+                            </CalendarTableRow>
+                        </CalendarTable>
+                    </CalendarView>
+                </Calendar>
+            </section>
+
+            <section>
+                <Calendar calendarView="month" showCalendarHeader={false} titleId="cells-6-title" activeCellId="cells-6-active">
+                    <CalendarHeader calendarView="month" disableNext />
+                    <CalendarView calendarView="month">
+                        <CalendarTable showTableHead titleId="cells-6-title" ariaActivedescendant="cells-6-active">
+                            <CalendarTableRow>
+                                <CalendarCell text="10" weekend />
+                                <CalendarCell text="11" />
+                                <CalendarCell text="12" today id="cells-6-active" />
+                                <CalendarCell text="13" />
+                                <CalendarCell text="14" />
+                                <CalendarCell text="15" />
+                                <CalendarCell text="16" weekend />
+                            </CalendarTableRow>
+                        </CalendarTable>
+                    </CalendarView>
+                </Calendar>
+            </section>
+
+            <section>
+                <Calendar calendarView="month" showCalendarHeader={false} titleId="cells-7-title" activeCellId="cells-7-active">
+                    <CalendarHeader calendarView="month" disablePrev disableNext />
+                    <CalendarView calendarView="month">
+                        <CalendarTable showTableHead titleId="cells-7-title" ariaActivedescendant="cells-7-active">
+                            <CalendarTableRow>
+                                <CalendarCell text="10" weekend />
+                                <CalendarCell text="11" />
+                                <CalendarCell text="12" today id="cells-7-active" />
+                                <CalendarCell text="13" />
+                                <CalendarCell text="14" />
+                                <CalendarCell text="15" />
+                                <CalendarCell text="16" weekend />
+                            </CalendarTableRow>
+                        </CalendarTable>
+                    </CalendarView>
+                </Calendar>
             </section>
 
         </div>

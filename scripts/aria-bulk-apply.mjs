@@ -349,10 +349,11 @@ switch (command) {
         break;
     case 'complete': {
         if (!arg) {
-            console.error('\n❌ Usage: node scripts/aria-bulk-apply.mjs complete <component-name>\n');
+            console.error('\n❌ Usage: node scripts/aria-bulk-apply.mjs complete <component-name> [score]\n');
             process.exit(1);
         }
-        markComplete(arg);
+        const score = process.argv[4];
+        markComplete(arg, score);
         break;
     }
     case 'init': {

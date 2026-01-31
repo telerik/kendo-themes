@@ -19,25 +19,25 @@ export default () => (
             <span>large</span>
 
             <section>
-                <CalendarNormal size="small"/>
+                <CalendarNormal size="small" titleId="size-1-title" activeCellId="size-1-active" />
             </section>
             <section>
-                <CalendarNormal size="medium" showOtherMonth/>
+                <CalendarNormal size="medium" showOtherMonth titleId="size-2-title" activeCellId="size-2-active" />
             </section>
             <section>
-                <CalendarWithWeeks size="large" showOtherMonth/>
-            </section>
-
-            <section>
-                <CalendarYear size="small"/>
+                <CalendarWithWeeks size="large" showOtherMonth titleId="size-3-title" activeCellId="size-3-active" />
             </section>
 
             <section>
-                <CalendarDecade />
+                <CalendarYear size="small" titleId="size-4-title" activeCellId="size-4-active" />
             </section>
 
             <section>
-                <CalendarCentury size= "large"/>
+                <CalendarDecade titleId="size-5-title" activeCellId="size-5-active" />
+            </section>
+
+            <section>
+                <CalendarCentury size="large" titleId="size-6-title" activeCellId="size-6-active" />
             </section>
         </div>
 

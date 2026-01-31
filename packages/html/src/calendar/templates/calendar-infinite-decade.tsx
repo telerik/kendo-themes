@@ -1,6 +1,6 @@
 import { CalendarCaptionCell, CalendarCell, CalendarInfinite, CalendarTableRow, CalendarTbody } from '../index';
 
-export const CalendarInfiniteDecade = ({ firstCaption = "2020 - 2029", secondCaption = "2030 - 2039", ...other }: any) => (
+export const CalendarInfiniteDecade = ({ firstCaption = "2020 - 2029", secondCaption = "2030 - 2039", activeCellId, ...other }: any) => (
     <CalendarInfinite calendarView="decade" showWeekdays={false} calendarTitleText="2020 - 2029"
         navigationItems={[
             '1970', '1980', '1990', '2000', '2010', '2020',
@@ -20,7 +20,7 @@ export const CalendarInfiniteDecade = ({ firstCaption = "2020 - 2029", secondCap
                         <CalendarCaptionCell scope="col" colSpan={4} text={firstCaption} />
                     </CalendarTableRow>
                     <CalendarTableRow>
-                        <CalendarCell text="2020" today></CalendarCell>
+                        <CalendarCell text="2020" today id={activeCellId}></CalendarCell>
                         <CalendarCell text="2021"></CalendarCell>
                         <CalendarCell text="2022"></CalendarCell>
                         <CalendarCell text="2023"></CalendarCell>

@@ -95,8 +95,8 @@ export default () =>(
                                 <CalendarTableRow>
                                     <CalendarCell empty />
                                     <CalendarCell empty />
-                                    <CalendarCell text="Nov" />
-                                    <CalendarCell text="Dec" />
+                                    <CalendarCell text="Nov" ariaLabel="November" />
+                                    <CalendarCell text="Dec" ariaLabel="December" />
                                 </CalendarTableRow>
                             </CalendarTbody>
                             <CalendarTbody>
@@ -104,9 +104,9 @@ export default () =>(
                                     <CalendarCaptionCell text="2019" scope="col" colSpan={4} />
                                 </CalendarTableRow>
                                 <CalendarTableRow>
-                                    <CalendarCell text="Jan" />
-                                    <CalendarCell text="Feb" />
-                                    <CalendarCell text="Mar" today />
+                                    <CalendarCell text="Jan" ariaLabel="January" />
+                                    <CalendarCell text="Feb" ariaLabel="February" />
+                                    <CalendarCell text="Mar" ariaLabel="March" today />
                                     <CalendarCell empty />
                                 </CalendarTableRow>
                                 <CalendarTableRow>

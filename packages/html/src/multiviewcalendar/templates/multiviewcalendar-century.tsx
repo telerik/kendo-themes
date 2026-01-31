@@ -1,11 +1,11 @@
 import { MultiViewCalendar } from "..";
 import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
 
-export const MultiViewCalendarCentury = ({ showCaptions ,showOtherCentury, ...props }: any) => (
-    <MultiViewCalendar calendarView="century" calendarTitleText="1900 - 2099"
+export const MultiViewCalendarCentury = ({ showCaptions ,showOtherCentury, activeCellId, titleId, ...props }: any) => (
+    <MultiViewCalendar calendarView="century" calendarTitleText="1900 - 2099" activeCellId={activeCellId} titleId={titleId}
         children={
             <>
-                <CalendarTable calendarCaption={showCaptions && "1900 - 1999"}>
+                <CalendarTable multiView calendarCaption={showCaptions && "1900 - 1999"}>
                     <CalendarTableRow>
                         <CalendarCell text="1890 - 1899" empty={!showOtherCentury}/>
                         <CalendarCell text="1900 - 1909" />
@@ -25,7 +25,7 @@ export const MultiViewCalendarCentury = ({ showCaptions ,showOtherCentury, ...pr
                         <CalendarCell text="2000 - 2009" empty={!showOtherCentury} />
                     </CalendarTableRow>
                 </CalendarTable>
-                <CalendarTable calendarCaption={showCaptions && "2000 - 2099"}>
+                <CalendarTable multiView calendarCaption={showCaptions && "2000 - 2099"}>
                     <CalendarTableRow>
                         <CalendarCell text="1990 - 1999" empty={!showOtherCentury}/>
                         <CalendarCell text="2000 - 2009" />
@@ -34,7 +34,7 @@ export const MultiViewCalendarCentury = ({ showCaptions ,showOtherCentury, ...pr
                     </CalendarTableRow>
                     <CalendarTableRow>
                         <CalendarCell text="2030 - 2039" />
-                        <CalendarCell text="2040 - 2049" />
+                        <CalendarCell text="2020 - 2029" today id={activeCellId} focus={!!activeCellId} />
                         <CalendarCell text="2050 - 2059" />
                         <CalendarCell text="2060 - 2069" />
                     </CalendarTableRow>

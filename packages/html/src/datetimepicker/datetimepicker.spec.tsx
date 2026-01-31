@@ -157,7 +157,7 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
             </Input>
             {opened &&
                 <Popup className="k-datetime-container k-datetimepicker-popup" dir={dir} id={`${id}-popup`}>
-                    <DateTimeSelector size={size} tab={tab} dir={dir} activeCellId={`${id}-active`} />
+                    <DateTimeSelector size={size} tab={tab} dir={dir} activeCellId={`${id}-active`} titleId={`${id}-title`} />
                 </Popup>
             }
             {adaptive &&

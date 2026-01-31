@@ -1,11 +1,11 @@
 import { MultiViewCalendar } from "..";
 import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
 
-export const MultiViewCalendarWithWeeks = ({ showCaptions, showOtherMonth, ...other }: any) => (
-    <MultiViewCalendar calendarView="month" showWeek
+export const MultiViewCalendarWithWeeks = ({ showCaptions, showOtherMonth, activeCellId, titleId, ...other }: any) => (
+    <MultiViewCalendar calendarView="month" showWeek activeCellId={activeCellId} titleId={titleId}
         children={
             <>
-                <CalendarTable calendarCaption={showCaptions && "October 2021"} showTableHead showWeek>
+                <CalendarTable multiView calendarCaption={showCaptions && "October 2021"} showTableHead showWeek>
                     <CalendarTableRow>
                         <CalendarCell text="39" weekCell />
                         <CalendarCell text="26" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
@@ -30,7 +30,7 @@ export const MultiViewCalendarWithWeeks = ({ showCaptions, showOtherMonth, ...ot
                         <CalendarCell text="41" weekCell />
                         <CalendarCell text="10" weekend />
                         <CalendarCell text="11" />
-                        <CalendarCell text="12" today />
+                        <CalendarCell text="12" today id={activeCellId} focus={!!activeCellId} />
                         <CalendarCell text="13" />
                         <CalendarCell text="14" />
                         <CalendarCell text="15" />
@@ -67,7 +67,7 @@ export const MultiViewCalendarWithWeeks = ({ showCaptions, showOtherMonth, ...ot
                         <CalendarCell text="6" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
                     </CalendarTableRow>
                 </CalendarTable>
-                <CalendarTable calendarCaption={showCaptions && "November 2021"} showTableHead showWeek>
+                <CalendarTable multiView calendarCaption={showCaptions && "November 2021"} showTableHead showWeek>
                     <CalendarTableRow>
                         <CalendarCell text="45" weekCell />
                         <CalendarCell text="31" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />

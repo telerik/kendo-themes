@@ -1,9 +1,9 @@
 import { Calendar, CalendarTableRow, CalendarCell, CalendarTable } from "..";
 
-export const CalendarNormal = ({ showCaptions, showOtherMonth, activeCellId, ...props }: any) => (
+export const CalendarNormal = ({ showCaptions, showOtherMonth, activeCellId, titleId, ...props }: any) => (
     <Calendar calendarView="month"
         children={
-            <CalendarTable calendarCaption={showCaptions && "October 2021"} showTableHead>
+            <CalendarTable calendarCaption={showCaptions && "October 2021"} showTableHead titleId={titleId} ariaActivedescendant={activeCellId}>
                 <CalendarTableRow>
                     <CalendarCell text="26" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
                     <CalendarCell text="27" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />

@@ -7,6 +7,7 @@ const CALEENDARTABLEHEAD_CLASSNAME = `k-calendar-thead`;
 export type KendoCalendarTableHeadProps = {
     showWeek?: boolean;
     cellsText?: string[];
+    multiView?: boolean;
 };
 
 const defaultOptions = {
@@ -22,6 +23,7 @@ export const CalendarTableHead = (
     const {
         showWeek,
         cellsText = defaultOptions.cellsText,
+        multiView,
         ...other
     } = props;
 
@@ -30,9 +32,9 @@ export const CalendarTableHead = (
             {...other}
             role="rowgroup"
             className={classNames(props.className, CALEENDARTABLEHEAD_CLASSNAME)}>
-            <CalendarTableRow>
-                {showWeek && <CalendarCell weekCell headerCell /> }
-                {cellsText.map((text, index) => <CalendarCell key={index} text={text} headerCell ariaLabel={fullDayNames[index]} />)}
+            <CalendarTableRow multiView={multiView}>
+                {showWeek && <CalendarCell weekCell headerCell ariaLabel="Week number" multiView={multiView} /> }
+                {cellsText.map((text, index) => <CalendarCell key={index} text={text} headerCell ariaLabel={fullDayNames[index]} multiView={multiView} />)}
             </CalendarTableRow>
         </thead>
     );
