@@ -77,7 +77,7 @@
                                             <div class="k-datetime-calendar-wrap">
                                                 <div class="k-calendar k-calendar-lg">
                                                     <div class="k-calendar-header">
-                                                        <button class="k-calendar-title k-button k-button-lg k-button-flat k-button-primary" aria-label="October 2021" tabindex="-1">
+                                                        <button id="k-calendar-title" class="k-calendar-title k-button k-button-lg k-button-flat k-button-primary" aria-label="October 2021" tabindex="-1">
                                                             <span class="k-button-text">October 2021</span>
                                                         </button>
                                                         <span class="k-spacer"></span>
@@ -89,7 +89,7 @@
                                                                     </svg>
                                                                 </span>
                                                             </button>
-                                                            <button class="k-calendar-nav-today k-button k-button-lg k-button-flat" tabindex="-1">
+                                                            <button class="k-calendar-nav-today k-button k-button-lg k-button-flat" role="link" tabindex="-1">
                                                                 <span class="k-button-text">Today</span>
                                                             </button>
                                                             <button class="k-calendar-nav-next k-button k-button-lg k-button-flat k-icon-button" aria-label="Next" tabindex="-1">
@@ -102,7 +102,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack">
-                                                        <table role="grid" aria-labelledby="calendar-title-id" tabindex="0" class="k-calendar-table">
+                                                        <table role="grid" aria-labelledby="k-datetime-title" tabindex="0" class="k-calendar-table">
                                                             <thead role="rowgroup" class="k-calendar-thead">
                                                                 <tr role="row" class="k-calendar-tr">
                                                                     <th role="columnheader" scope="col" aria-label="Sunday" class="k-calendar-th">Su</th>

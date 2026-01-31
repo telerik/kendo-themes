@@ -27,7 +27,7 @@
         <span>DatePicker RTL</span>
         <div>
             <span class="k-datepicker k-input">
-                <input role="combobox" aria-label="Date picker" aria-haspopup="grid" aria-expanded="true" aria-controls="datepicker-calendar" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
+                <input role="combobox" aria-label="Date picker" aria-haspopup="grid" aria-expanded="true" aria-controls="k-datepicker-calendar" aria-activedescendant="k-datepicker-active-cell" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -43,12 +43,12 @@
                     </span>
                 </button>
             </span>
-            <div id="datepicker-calendar" class="k-animation-container k-animation-container-shown">
+            <div id="k-datepicker-calendar" class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-calendar-container k-datepicker-popup k-popup">
                         <div class="k-calendar">
                             <div class="k-calendar-header">
-                                <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="October 2021" tabindex="-1">
+                                <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="October 2021" tabindex="-1">
                                     <span class="k-button-text">October 2021</span>
                                 </button>
                                 <span class="k-spacer"></span>
@@ -60,7 +60,7 @@
                                             </svg>
                                         </span>
                                     </button>
-                                    <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                                    <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                         <span class="k-button-text">Today</span>
                                     </button>
                                     <button class="k-calendar-nav-next k-button k-button-flat k-icon-button" aria-label="Next" tabindex="-1">
@@ -73,7 +73,7 @@
                                 </span>
                             </div>
                             <div class="k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack">
-                                <table role="grid" aria-labelledby="calendar-title-id" tabindex="0" class="k-calendar-table">
+                                <table role="grid" aria-labelledby="k-datepicker-title" aria-activedescendant="k-datepicker-active-cell" tabindex="0" class="k-calendar-table">
                                     <thead role="rowgroup" class="k-calendar-thead">
                                         <tr role="row" class="k-calendar-tr">
                                             <th role="columnheader" scope="col" aria-label="Sunday" class="k-calendar-th">Su</th>
@@ -129,7 +129,7 @@
                                             <td role="gridcell" class="k-calendar-td">
                                                 <span class="k-link">11</span>
                                             </td>
-                                            <td role="gridcell" class="k-calendar-td k-today">
+                                            <td id="k-datepicker-active-cell" role="gridcell" class="k-calendar-td k-today">
                                                 <span class="k-link">12</span>
                                             </td>
                                             <td role="gridcell" class="k-calendar-td">
@@ -212,7 +212,7 @@
         </div>
         <div dir="rtl">
             <span dir="rtl" class="k-datepicker k-input">
-                <input role="combobox" aria-label="Date picker" aria-haspopup="grid" aria-expanded="true" aria-controls="datepicker-calendar" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
+                <input role="combobox" aria-label="Date picker" aria-haspopup="grid" aria-expanded="true" aria-controls="k-datepicker-calendar" aria-activedescendant="k-datepicker-active-cell" tabindex="0" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -228,12 +228,12 @@
                     </span>
                 </button>
             </span>
-            <div id="datepicker-calendar" class="k-animation-container k-animation-container-shown">
+            <div id="k-datepicker-calendar" class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-calendar-container k-datepicker-popup k-popup">
                         <div dir="rtl" class="k-calendar">
                             <div class="k-calendar-header">
-                                <button class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="October 2021" tabindex="-1">
+                                <button id="k-calendar-title" class="k-calendar-title k-button k-button-flat k-button-primary" aria-label="October 2021" tabindex="-1">
                                     <span class="k-button-text">October 2021</span>
                                 </button>
                                 <span class="k-spacer"></span>
@@ -245,7 +245,7 @@
                                             </svg>
                                         </span>
                                     </button>
-                                    <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
+                                    <button class="k-calendar-nav-today k-button k-button-flat" role="link" tabindex="-1">
                                         <span class="k-button-text">Today</span>
                                     </button>
                                     <button class="k-calendar-nav-next k-button k-button-flat k-icon-button" aria-label="Next" tabindex="-1">
@@ -258,7 +258,7 @@
                                 </span>
                             </div>
                             <div class="k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack">
-                                <table role="grid" aria-labelledby="calendar-title-id" tabindex="0" class="k-calendar-table">
+                                <table role="grid" aria-labelledby="k-datepicker-title" aria-activedescendant="k-datepicker-active-cell" tabindex="0" class="k-calendar-table">
                                     <thead role="rowgroup" class="k-calendar-thead">
                                         <tr role="row" class="k-calendar-tr">
                                             <th role="columnheader" scope="col" aria-label="Sunday" class="k-calendar-th">Su</th>
@@ -314,7 +314,7 @@
                                             <td role="gridcell" class="k-calendar-td">
                                                 <span class="k-link">11</span>
                                             </td>
-                                            <td role="gridcell" class="k-calendar-td k-today">
+                                            <td id="k-datepicker-active-cell" role="gridcell" class="k-calendar-td k-today">
                                                 <span class="k-link">12</span>
                                             </td>
                                             <td role="gridcell" class="k-calendar-td">
