@@ -1,200 +1,443 @@
 {
-  "timestamp": "2026-01-31T19:05:15.696Z",
+  "timestamp": "2026-02-01T12:48:43.745Z",
   "summary": {
-    "filesTested": 3,
+    "filesTested": 5,
     "skipped": 0,
-    "passed": 2586,
-    "violations": 12
+    "passed": 585,
+    "violations": 29
   },
   "results": [
     {
-      "filePath": "./tests/multiviewcalendar/multiviewcalendar.html",
-      "spec": "aria/multiviewcalendar_aria.md",
-      "totalRules": 18,
-      "testedRules": 18,
+      "filePath": "./tests/pager/pager.html",
+      "spec": "aria/pager_aria.md",
+      "totalRules": 11,
+      "testedRules": 11,
       "untestedRules": [],
       "violations": [
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack\" role=\"grid\" aria-labelledby=\"multiview-2-title\" tabindex=\"0\">\n                    <table role=\"n",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
           "index": 1,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-yearview k-align-items-start k-justify-content-center k-hstack\" role=\"grid\" aria-labelledby=\"multiview-3-title\" tabindex=\"0\">\n                    <table role=\"no",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
           "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-decadeview k-align-items-start k-justify-content-center k-hstack\" role=\"grid\" aria-labelledby=\"multiview-4-title\" tabindex=\"0\">\n                    <table role=\"",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
           "index": 3,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-centuryview k-align-items-start k-justify-content-center k-hstack\" role=\"grid\" aria-labelledby=\"multiview-5-title\" tabindex=\"0\">\n                    <table role=",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
           "index": 4,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
           "actual": null
         }
       ],
-      "passed": 942,
-      "violationCount": 4
+      "passed": 230,
+      "violationCount": 12
     },
     {
-      "filePath": "./tests/multiviewcalendar/multiviewcalendar-vertical.html",
-      "spec": "aria/multiviewcalendar_aria.md",
-      "totalRules": 18,
-      "testedRules": 18,
+      "filePath": "./tests/pager/pager-sizes.html",
+      "spec": "aria/pager_aria.md",
+      "totalRules": 11,
+      "testedRules": 11,
       "untestedRules": [],
       "violations": [
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-vstack\" role=\"grid\" aria-labelledby=\"vertical-2-title\" tabindex=\"0\">\n                    <table role=\"no",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n                ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n                ",
           "index": 1,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-yearview k-align-items-start k-justify-content-center k-vstack\" role=\"grid\" aria-labelledby=\"vertical-3-title\" tabindex=\"0\">\n                    <table role=\"non",
+          "element": "<span class=\"k-dropdownlist k-picker k-picker-sm\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
           "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-decadeview k-align-items-start k-justify-content-center k-vstack\" role=\"grid\" aria-labelledby=\"vertical-4-title\" tabindex=\"0\">\n                    <table role=\"n",
+          "element": "<span class=\"k-dropdownlist k-picker k-picker-sm\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
           "index": 3,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-centuryview k-align-items-start k-justify-content-center k-vstack\" role=\"grid\" aria-labelledby=\"vertical-5-title\" tabindex=\"0\">\n                    <table role=\"",
+          "element": "<span class=\"k-dropdownlist k-picker k-picker-md\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
           "index": 4,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker k-picker-md\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker k-picker-lg\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker k-picker-lg\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
           "actual": null
         }
       ],
-      "passed": 702,
-      "violationCount": 4
+      "passed": 148,
+      "violationCount": 8
     },
     {
-      "filePath": "./tests/multiviewcalendar/multiviewcalendar-captions.html",
-      "spec": "aria/multiviewcalendar_aria.md",
-      "totalRules": 18,
-      "testedRules": 18,
+      "filePath": "./tests/pager/pager-responsive.html",
+      "spec": "aria/pager_aria.md",
+      "totalRules": 11,
+      "testedRules": 11,
       "untestedRules": [],
       "violations": [
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack\" role=\"grid\" aria-labelledby=\"captions-2-title\" tabindex=\"0\">\n                    <table role=\"no",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
           "index": 1,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-yearview k-align-items-start k-justify-content-center k-hstack\" role=\"grid\" aria-labelledby=\"captions-3-title\" tabindex=\"0\">\n                    <table role=\"non",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
           "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-decadeview k-align-items-start k-justify-content-center k-hstack\" role=\"grid\" aria-labelledby=\"captions-4-title\" tabindex=\"0\">\n                    <table role=\"n",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
           "index": 3,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-calendar-view",
-            "attribute": "aria-activedescendant=.k-calendar-td.k-focus id",
-            "usage": "Pointing to the currently active (focused) date/month/year/decade cell in the table."
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
           },
-          "element": "<div class=\"k-calendar-view k-calendar-centuryview k-align-items-start k-justify-content-center k-hstack\" role=\"grid\" aria-labelledby=\"captions-5-title\" tabindex=\"0\">\n                    <table role=\"",
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
           "index": 4,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-activedescendant",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
           "actual": null
         }
       ],
-      "passed": 942,
-      "violationCount": 4
+      "passed": 132,
+      "violationCount": 6
+    },
+    {
+      "filePath": "./tests/pager/pager-overflow.html",
+      "spec": "aria/pager_aria.md",
+      "totalRules": 11,
+      "testedRules": 11,
+      "untestedRules": [],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        }
+      ],
+      "passed": 37,
+      "violationCount": 2
+    },
+    {
+      "filePath": "./tests/pager/pager-adaptive-popup.html",
+      "spec": "aria/pager_aria.md",
+      "totalRules": 11,
+      "testedRules": 11,
+      "untestedRules": [],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "attribute": "aria-label",
+            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+          },
+          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-label",
+          "actual": null
+        }
+      ],
+      "passed": 38,
+      "violationCount": 1
     }
   ]
 }

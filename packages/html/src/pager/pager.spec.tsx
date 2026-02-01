@@ -137,25 +137,31 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                     <Button
                         className={classNames(
                             'k-pager-nav',
-                            'k-pager-first'
+                            'k-pager-first',
+                            {
+                                'k-disabled': currentPage === 1 || disabled
+                            }
                         )}
-                        disabled={currentPage === 1 && !disabled}
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left"}
                         title="Go to the first page"
                         aria-label="Go to the first page"
+                        {...((currentPage === 1 || disabled) && { 'aria-disabled': 'true' })}
                     >
                     </Button><Button
                         className={classNames(
-                            'k-pager-nav'
+                            'k-pager-nav',
+                            {
+                                'k-disabled': currentPage === 1 || disabled
+                            }
                         )}
-                        disabled={currentPage === 1 && !disabled}
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left"}
                         title="Go to the previous page"
                         aria-label="Go to the previous page"
+                        {...((currentPage === 1 || disabled) && { 'aria-disabled': 'true' })}
                     >
                     </Button>
                 </>
@@ -187,27 +193,33 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                 <>
                     <Button
                         className={classNames(
-                            'k-pager-nav'
+                            'k-pager-nav',
+                            {
+                                'k-disabled': currentPage === maxPages || disabled
+                            }
                         )}
-                        disabled={currentPage === maxPages && !disabled}
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
                         title="Go to the next page"
                         aria-label="Go to the next page"
+                        {...((currentPage === maxPages || disabled) && { 'aria-disabled': 'true' })}
                     >
                     </Button>
                     <Button
                         className={classNames(
                             'k-pager-nav',
-                            'k-pager-last'
+                            'k-pager-last',
+                            {
+                                'k-disabled': currentPage === maxPages || disabled
+                            }
                         )}
-                        disabled={currentPage === maxPages && !disabled}
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
                         title="Go to the last page"
                         aria-label="Go to the last page"
+                        {...((currentPage === maxPages || disabled) && { 'aria-disabled': 'true' })}
                     >
                     </Button>
                 </>

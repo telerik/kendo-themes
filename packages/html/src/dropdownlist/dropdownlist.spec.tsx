@@ -94,6 +94,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveFilter,
+        'aria-label': ariaLabel,
         ...other
     } = props;
 
@@ -120,6 +121,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                         'k-icon-picker': !showValue && valueIconName
                     }
                 )}
+                {...(ariaLabel && { 'aria-label': ariaLabel })}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerSpan
@@ -142,6 +144,8 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     icon={arrowIconName}
                     size={props.size}
                     fillMode={props.fillMode}
+                    aria-label={ariaLabel}
+                    tabIndex={-1}
                 />
             </Picker>
             {opened && popup &&

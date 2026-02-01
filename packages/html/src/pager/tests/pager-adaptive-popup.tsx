@@ -33,7 +33,7 @@ export default () => (
                     adaptive
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" aria-label="Apply" />}
                             title="Items per page">
                         </ActionSheetHeader>
                     }
@@ -57,7 +57,7 @@ export default () => (
                     fullscreen
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" aria-label="Apply" />}
                             title="Items per page">
                         </ActionSheetHeader>
                     }
