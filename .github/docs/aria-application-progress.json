@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-31T19:09:56.929Z",
+  "lastUpdated": "2026-02-01T13:18:57.390Z",
   "components": {
     "action-sheet": {
       "status": "pending",
@@ -576,7 +576,7 @@
       "notes": ""
     },
     "filter": {
-      "status": "pending",
+      "status": "completed",
       "specExists": true,
       "priority": "data",
       "complianceScore": null,
@@ -586,7 +586,8 @@
         "moderate": 0,
         "minor": 0
       },
-      "notes": ""
+      "notes": "",
+      "completedAt": "2026-02-01T13:18:57.389Z"
     },
     "flatcolorpicker": {
       "status": "completed",
@@ -881,7 +882,7 @@
       "status": "completed",
       "specExists": true,
       "priority": "data",
-      "complianceScore": 97.0,
+      "complianceScore": 97,
       "violations": {
         "critical": 0,
         "serious": 4,

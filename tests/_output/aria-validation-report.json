@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-02-01T12:48:43.745Z",
+  "timestamp": "2026-02-01T13:16:41.986Z",
   "summary": {
-    "filesTested": 5,
+    "filesTested": 2,
     "skipped": 0,
-    "passed": 585,
-    "violations": 29
+    "passed": 40,
+    "violations": 16
   },
   "results": [
     {
-      "filePath": "./tests/pager/pager.html",
-      "spec": "aria/pager_aria.md",
-      "totalRules": 11,
-      "testedRules": 11,
+      "filePath": "./tests/filter/filter.html",
+      "spec": "aria/filter_aria.md",
+      "totalRules": 6,
+      "testedRules": 6,
       "untestedRules": [],
       "violations": [
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "element": "<div class=\"k-toolbar k-focus\" role=\"toolbar\">\n                            <div class=\"k-toolbar-button-group  k-button-group\" role=\"group\">\n                                <button class=\"k-group-star",
           "index": 0,
           "valid": false,
           "reason": "missing",
@@ -29,11 +29,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
           "index": 1,
           "valid": false,
           "reason": "missing",
@@ -42,11 +42,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
           "index": 2,
           "valid": false,
           "reason": "missing",
@@ -55,11 +55,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "element": "<div class=\"k-toolbar k-focus\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-pic",
           "index": 3,
           "valid": false,
           "reason": "missing",
@@ -68,11 +68,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
           "index": 4,
           "valid": false,
           "reason": "missing",
@@ -81,11 +81,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-toolbar-button-group  k-button-group\" role=\"group\">\n                                        <button class=\"k-gr",
           "index": 5,
           "valid": false,
           "reason": "missing",
@@ -94,11 +94,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                            <div class=\"k-filter-field k-toolbar-item\">\n                                                <span class=\"k-dropdownli",
           "index": 6,
           "valid": false,
           "reason": "missing",
@@ -107,178 +107,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        }
-      ],
-      "passed": 230,
-      "violationCount": 12
-    },
-    {
-      "filePath": "./tests/pager/pager-sizes.html",
-      "spec": "aria/pager_aria.md",
-      "totalRules": 11,
-      "testedRules": 11,
-      "untestedRules": [],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n                ",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n                ",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker k-picker-sm\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker k-picker-sm\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker k-picker-md\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker k-picker-md\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker k-picker-lg\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker k-picker-lg\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">500</span>\n                    </span>\n    ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                            <div class=\"k-filter-field k-toolbar-item\">\n                                                <span class=\"k-dropdownli",
           "index": 7,
           "valid": false,
           "reason": "missing",
@@ -286,23 +119,23 @@
           "actual": null
         }
       ],
-      "passed": 148,
+      "passed": 20,
       "violationCount": 8
     },
     {
-      "filePath": "./tests/pager/pager-responsive.html",
-      "spec": "aria/pager_aria.md",
-      "totalRules": 11,
-      "testedRules": 11,
+      "filePath": "./tests/filter/filter-preview.html",
+      "spec": "aria/filter_aria.md",
+      "totalRules": 6,
+      "testedRules": 6,
       "untestedRules": [],
       "violations": [
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "element": "<div class=\"k-toolbar k-focus\" role=\"toolbar\">\n                            <div class=\"k-toolbar-button-group  k-button-group\" role=\"group\">\n                                <button class=\"k-group-star",
           "index": 0,
           "valid": false,
           "reason": "missing",
@@ -311,11 +144,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
           "index": 1,
           "valid": false,
           "reason": "missing",
@@ -324,11 +157,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
           "index": 2,
           "valid": false,
           "reason": "missing",
@@ -337,11 +170,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "element": "<div class=\"k-toolbar k-focus\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-pic",
           "index": 3,
           "valid": false,
           "reason": "missing",
@@ -350,11 +183,11 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
           "index": 4,
           "valid": false,
           "reason": "missing",
@@ -363,36 +196,12 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-toolbar-button-group  k-button-group\" role=\"group\">\n                                        <button class=\"k-gr",
           "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        }
-      ],
-      "passed": 132,
-      "violationCount": 6
-    },
-    {
-      "filePath": "./tests/pager/pager-overflow.html",
-      "spec": "aria/pager_aria.md",
-      "totalRules": 11,
-      "testedRules": 11,
-      "untestedRules": [],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
-            "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
-          },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
-          "index": 0,
           "valid": false,
           "reason": "missing",
           "expected": "aria-label",
@@ -400,44 +209,33 @@
         },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                    <span class=\"k-input-inner\">\n                        <span class=\"k-input-value-text\">5</span>\n                    </span>\n                  ",
-          "index": 1,
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                            <div class=\"k-filter-field k-toolbar-item\">\n                                                <span class=\"k-dropdownli",
+          "index": 6,
           "valid": false,
           "reason": "missing",
           "expected": "aria-label",
           "actual": null
-        }
-      ],
-      "passed": 37,
-      "violationCount": 2
-    },
-    {
-      "filePath": "./tests/pager/pager-adaptive-popup.html",
-      "spec": "aria/pager_aria.md",
-      "totalRules": 11,
-      "testedRules": 11,
-      "untestedRules": [],
-      "violations": [
+        },
         {
           "rule": {
-            "selector": ".k-pager-sizes>.k-dropdownlist",
+            "selector": ".k-toolbar",
             "attribute": "aria-label",
-            "usage": "The DropDownList element requires an \"aria-label\" to specify its purpose (e.g., \"Items per page\")."
+            "usage": "Specifies a label for the toolbar."
           },
-          "element": "<span class=\"k-dropdownlist k-picker\">\n                        <span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">5</span>\n                        </span>\n      ",
-          "index": 0,
+          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                            <div class=\"k-filter-field k-toolbar-item\">\n                                                <span class=\"k-dropdownli",
+          "index": 7,
           "valid": false,
           "reason": "missing",
           "expected": "aria-label",
           "actual": null
         }
       ],
-      "passed": 38,
-      "violationCount": 1
+      "passed": 20,
+      "violationCount": 8
     }
   ]
 }
