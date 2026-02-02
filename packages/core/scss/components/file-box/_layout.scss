@@ -44,7 +44,7 @@
     .k-file-box-wrapper-scrollable-end::before,
     .k-file-box-wrapper-scrollable-start::after{
         content: '';
-        aspect-ratio: .3;
+        aspect-ratio: .5;
         position: absolute;
         z-index: k-z-index("base", 3);
         height: calc(100% - #{$kendo-file-box-padding-y} * 2 );
