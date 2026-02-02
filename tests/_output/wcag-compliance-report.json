@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2026-02-01T13:18:08.904Z",
+    "timestamp": "2026-02-01T13:26:00.163Z",
     "complianceLevel": "AA",
     "filesTested": 2,
     "wcagVersion": "2.2"
@@ -14,7 +14,7 @@
   "detailedResults": [
     {
       "filePath": "./tests/filter/filter.html",
-      "timestamp": "2026-02-01T13:18:08.225Z",
+      "timestamp": "2026-02-01T13:25:59.403Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -241,7 +241,7 @@
     },
     {
       "filePath": "./tests/filter/filter-preview.html",
-      "timestamp": "2026-02-01T13:18:08.639Z",
+      "timestamp": "2026-02-01T13:25:59.800Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [

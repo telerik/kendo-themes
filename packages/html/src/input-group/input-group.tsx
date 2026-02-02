@@ -16,9 +16,7 @@ export type KendoInputGroupOptions = {
 
 export type KendoInputGroupState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultOptions = {
-    fillMode: FillMode.solid
-};
+const defaultOptions = {};
 
 export const InputGroup = (
     props: KendoInputGroupOptions &
@@ -26,7 +24,7 @@ export const InputGroup = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        fillMode = defaultOptions.fillMode,
+        fillMode,
         disabled,
         ...other
     } = props;
