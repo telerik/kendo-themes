@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.5](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.4...v13.0.0-dev.5) (2026-02-02)
+
+
+### Bug Fixes
+
+* **tabstrip:** remove bottom border of selected tabs in scrollable mode ([31d994a](https://github.com/telerik/kendo-themes/commit/31d994aa9965c9ee45485192c0c113f29b909b21))
+
+
+
+
+
 # [13.0.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.3...v13.0.0-dev.4) (2026-02-02)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic
