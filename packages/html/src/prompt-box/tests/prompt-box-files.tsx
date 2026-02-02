@@ -2,7 +2,11 @@ import { PromptBoxLineModeMulti } from '..';
 import { IconButton } from '../../button';
 import { FileBoxWrapper, FileBox } from "../../file-box";
 
-const styles = ``;
+const styles = `
+    #test-area {
+        width: 700px;
+    }
+`;
 
 export default () =>(
     <>
