@@ -78,6 +78,8 @@
     "aria:plan": "node ./scripts/aria-bulk-apply.mjs plan",
     "aria:next": "node ./scripts/aria-bulk-apply.mjs next",
     "aria:init": "node ./scripts/aria-bulk-apply.mjs init",
+    "a11y": "node ./scripts/a11y-pre-commit.mjs",
+    "a11y:check": "node ./scripts/a11y-pre-commit.mjs --check-only",
     "test:create-screenshots": "./build/create-screenshots.sh",
     "test:integrations": "npm run build --prefix integrations",
     "test:units": "npm run test --prefix units",

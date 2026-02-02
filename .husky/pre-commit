@@ -1,1 +1,4 @@
 npm run lint:staged
+
+# Check for a11y-related changes and prompt for tests
+node scripts/a11y-pre-commit.mjs --from-hook
