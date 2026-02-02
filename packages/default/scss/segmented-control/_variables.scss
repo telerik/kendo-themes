@@ -21,7 +21,7 @@ $kendo-segmented-control-border-radius: k-border-radius(full) !default;
 
 /// The background color of the Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-bg: k-color(base-subtle) !default;
+$kendo-segmented-control-bg: color-mix(in srgb, k-color(base), currentColor 6%) !default;
 /// The text color of the Segmented Control.
 /// @group segmented-control
 $kendo-segmented-control-text: k-color(on-base) !default;
@@ -58,7 +58,7 @@ $kendo-segmented-control-thumb-border-radius: $kendo-segmented-control-border-ra
 $kendo-segmented-control-thumb-shadow: none !default;
 /// The background of the Segmented Control thumb.
 /// @group segmented-control
-$kendo-segmented-control-thumb-bg: k-color(surface-alt) !default;
+$kendo-segmented-control-thumb-bg: k-color(app-surface) !default;
 /// The text color of the Segmented Control thumb.
 /// @group segmented-control
 $kendo-segmented-control-thumb-text: $kendo-segmented-control-text !default;
@@ -103,10 +103,10 @@ $kendo-segmented-control-lg-button-gap: k-spacing(2) !default;
 
 /// The background color of the hovered button inside Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-button-hover-bg: k-color(base-active) !default;
+$kendo-segmented-control-button-hover-bg: color-mix(in srgb, currentColor 16%, k-color(base-hover)) !default;
 /// The indication of the focused button inside Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-button-focus-indicator: inset 0 0 0 2px color-mix(in srgb, currentColor 25%, transparent) !default;
+$kendo-segmented-control-button-focus-indicator: inset 0 0 0 2px color-mix(in srgb, currentColor 35%, transparent) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/segmented-control/_variables.scss" with (
