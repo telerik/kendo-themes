@@ -1,6 +1,7 @@
 ﻿import { MenuButton } from '../menu-button.spec';
 import { Button, KendoButtonProps } from '../../button';
 import { MenuList, MenuListItem } from '../../menu';
+import { ReactElement } from 'react';
 
 const states = Button.states;
 const defaults = {
@@ -46,21 +47,10 @@ export const MenuButtonDemo = (
     </MenuList>
   );
 
-  Object.keys(mods || {}).forEach((modifier) => {
-    switch (modifier) {
-      case 'opened':
-        additionalProps.opened = mods?.[modifier] ? true : false;
-        additionalProps.popup = mods?.[modifier] ? popup : '';
-        break;
-      default:
-        break;
-    }
-  });
-
-
+  let button: ReactElement;
   switch (variant) {
     case 'icon-only':
-      return (
+      button = (
         <div>
           <MenuButton
             {...other}
@@ -69,8 +59,10 @@ export const MenuButtonDemo = (
           />
         </div>
       );
+
+      break;
     case 'icon-and-text':
-      return (
+      button = (
         <div>
           <MenuButton
             {...other}
@@ -81,9 +73,11 @@ export const MenuButtonDemo = (
           </MenuButton>
         </div>
       );
+
+      break;
     case 'text':
     default:
-      return (
+      button = (
         <div>
           <MenuButton
             {...other}
@@ -93,8 +87,17 @@ export const MenuButtonDemo = (
           </MenuButton>
         </div>
       );
+
+      break;
   }
-}
+
+  return (
+    <>
+      {button}
+      {mods?.opened && popup}
+    </>
+  );
+};
 
 
 MenuButtonDemo.options = options;
