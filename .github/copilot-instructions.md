@@ -168,6 +168,16 @@ npm run clean                   # Full cleanup (includes node_modules)
 - **Linting** - Enforced on all commits via Husky + lint-staged
 - **Accessibility tests** - Run automatically on default-ocean-blue-a11y swatch
 
+### Accessibility Automation
+
+For ARIA specification management and accessibility compliance workflows, see:
+- **Documentation**: `.github/docs/accessibility-automation.md` - Complete guide to automation tools
+- **Key Commands**:
+  - `npm run aria:generate [component]` - Generate ARIA spec from TSX analysis
+  - `npm run aria:sync [component]` - Full compliance workflow (spec + validate + test)
+  - `npm run test:aria [component]` - Validate ARIA attributes
+  - `npm run test:wcag [component]` - Test WCAG 2.2 compliance
+
 ## Common Issues
 
 - **Unit tests failing**: Run `npm run docs` first to generate metadata

@@ -398,6 +398,34 @@ When a component is disabled, the `disabled` prop must be passed to all interact
 - Pass IDs through component hierarchy as needed
 - Ensure ID uniqueness within the page context
 
+## File Creation Workflow
+
+When creating new files with substantial content (>50 lines, complex formatting):
+
+### CORRECT Approach
+1. **Create empty file:** `touch path/to/file.md`
+2. **Build incrementally** using `replace_string_in_file`:
+   - Start with `oldString=""` (empty string)
+   - Add small chunks (5-10 lines per operation)
+   - Use exact context from previous chunk for next `oldString`
+   - Continue until complete
+
+### NEVER Use These Methods
+❌ `cat` with heredoc - fails with special characters and terminal encoding
+❌ `echo` or `printf` for multi-line - escaping issues
+❌ Inline Node.js with `-e` flag - complex escaping breaks
+❌ Any terminal command that writes file content directly
+
+### Why This Matters
+Terminal commands fail unpredictably with:
+- Backticks and template literals
+- Quote characters in content
+- Special shell characters
+- Unicode and non-ASCII text
+- Large content buffers
+
+The `replace_string_in_file` tool handles all these cases correctly.
+
 ## Validation Interpretation
 
 ### ARIA Attribute Validation
