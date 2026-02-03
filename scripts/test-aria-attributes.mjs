@@ -105,6 +105,81 @@ function parseAriaSpec(componentName) {
 }
 
 /**
+ * Extract referenced component specs from markdown
+ * @param {string} content - Markdown content
+ * @returns {string[]} Array of referenced component names
+ */
+function extractReferencedSpecs(content) {
+    const references = [];
+    // Match links to other aria specs: [Component](component_aria.md) or [text](component_aria.md)
+    const refRegex = /\[([^\]]+)\]\(([^)]+_aria\.md)\)/g;
+    let match;
+    while ((match = refRegex.exec(content)) !== null) {
+        const specFile = match[2];
+        const componentName = specFile.replace('_aria.md', '');
+        references.push(componentName);
+    }
+    return [...new Set(references)]; // Dedupe
+}
+
+/**
+ * Parse ARIA spec with references
+ * @param {string} componentName - Component name
+ * @returns {object} Spec with rules and references
+ */
+function parseAriaSpecWithReferences(componentName) {
+    const spec = parseAriaSpec(componentName);
+    if (!spec) {
+        return null;
+    }
+
+    const content = readFileSync(spec.specFile, 'utf-8');
+    spec.references = extractReferencedSpecs(content);
+
+    return spec;
+}
+
+/**
+ * Get all rules including referenced component specs
+ * @param {string} componentName - Component name
+ * @returns {object} Combined spec with all rules
+ */
+function getFullSpec(componentName) {
+    const mainSpec = parseAriaSpecWithReferences(componentName);
+    if (!mainSpec) {
+        return null;
+    }
+
+    const allRules = [...mainSpec.rules];
+    const loadedRefs = new Set([componentName]);
+
+    // Load referenced specs
+    for (const ref of mainSpec.references) {
+        if (loadedRefs.has(ref)) {
+            continue;
+        }
+        loadedRefs.add(ref);
+
+        const refSpec = parseAriaSpec(ref);
+        if (refSpec && refSpec.rules) {
+            // Add rules from referenced spec, marking their source
+            for (const rule of refSpec.rules) {
+                allRules.push({
+                    ...rule,
+                    source: ref // Track where rule came from
+                });
+            }
+        }
+    }
+
+    return {
+        ...mainSpec,
+        allRules,
+        referencedSpecs: mainSpec.references
+    };
+}
+
+/**
  * Validate attribute on an element
  * @param {WebElement} element - Element to validate
  * @param {object} rule - ARIA rule
@@ -331,7 +406,16 @@ async function validatePage(filePath, ariaSpec, browser) {
     const testedRules = new Set();
 
     for (const rule of ariaSpec.rules) {
-        const { selector } = rule;
+        const { selector, attribute, usage } = rule;
+
+        // Skip rules with empty attributes or TODO markers - these are placeholders
+        if (!attribute || attribute.trim() === '' ||
+            (usage && (usage.includes('TODO') || usage.toLowerCase().includes('define ')))) {
+            if (verboseMode) {
+                console.log(`  ℹ Skipping placeholder rule: ${selector} (${usage?.slice(0, 40)}...)`);
+            }
+            continue;
+        }
 
         try {
             let elements = [];
@@ -499,8 +583,8 @@ async function validateAriaAttributes() {
             console.log(`Testing ${file}...`);
         }
 
-        // Get ARIA spec
-        const ariaSpec = parseAriaSpec(componentName);
+        // Get ARIA spec with referenced specs
+        const ariaSpec = getFullSpec(componentName);
 
         if (!ariaSpec) {
             if (verboseMode) {
@@ -510,8 +594,14 @@ async function validateAriaAttributes() {
             continue;
         }
 
-        // Validate page
-        const result = await validatePage(file, ariaSpec, browser);
+        // Log referenced specs being tested
+        if (verboseMode && ariaSpec.referencedSpecs && ariaSpec.referencedSpecs.length > 0) {
+            console.log(`  Including specs from: ${ariaSpec.referencedSpecs.join(', ')}`);
+        }
+
+        // Validate page using allRules (includes referenced specs)
+        const specForValidation = { ...ariaSpec, rules: ariaSpec.allRules };
+        const result = await validatePage(file, specForValidation, browser);
 
         if (result.skipped || result.error) {
             skipped++;
@@ -551,20 +641,20 @@ async function validateAriaAttributes() {
         const componentName = pathParts[1];
 
         if (!componentCoverage[componentName]) {
-            // Get the full spec for this component
-            const ariaSpec = parseAriaSpec(componentName);
+            // Get the full spec for this component (including references)
+            const ariaSpec = getFullSpec(componentName);
+            const allRules = ariaSpec ? ariaSpec.allRules : [];
             componentCoverage[componentName] = {
-                totalRules: result.totalRules,
-                allRules: ariaSpec ? ariaSpec.rules : [],
+                totalRules: allRules.length,
+                allRules: allRules,
                 allTestedRules: new Set(),
-                untestedRules: new Map()
+                untestedRules: new Map(),
+                referencedSpecs: ariaSpec ? ariaSpec.referencedSpecs : []
             };
             // Initialize all rules as untested
-            if (ariaSpec) {
-                for (const rule of ariaSpec.rules) {
-                    const ruleKey = `${rule.selector}|${rule.attribute}`;
-                    componentCoverage[componentName].untestedRules.set(ruleKey, rule);
-                }
+            for (const rule of allRules) {
+                const ruleKey = `${rule.selector}|${rule.attribute}`;
+                componentCoverage[componentName].untestedRules.set(ruleKey, rule);
             }
         }
 

@@ -39,9 +39,13 @@ function extractComponents(files) {
     const components = new Set();
     for (const file of files) {
         const tsxMatch = file.match(/packages\/html\/src\/([^/]+)\//);
-        if (tsxMatch) components.add(tsxMatch[1]);
+        if (tsxMatch) {
+            components.add(tsxMatch[1]);
+        }
         const ariaMatch = file.match(/aria\/([^_]+)_aria\.md$/);
-        if (ariaMatch) components.add(ariaMatch[1]);
+        if (ariaMatch) {
+            components.add(ariaMatch[1]);
+        }
     }
     return Array.from(components);
 }
@@ -157,8 +161,12 @@ async function main() {
     for (const r of results) {
         const status = r.ariaPassed && r.wcagPassed ? '✅' : '❌';
         const details = [];
-        if (!r.ariaPassed) details.push('ARIA');
-        if (!r.wcagPassed) details.push('WCAG');
+        if (!r.ariaPassed) {
+            details.push('ARIA');
+        }
+        if (!r.wcagPassed) {
+            details.push('WCAG');
+        }
         const suffix = details.length ? ` (${details.join(', ')} failed)` : '';
         log(`   ${status} ${r.component}${suffix}`);
     }

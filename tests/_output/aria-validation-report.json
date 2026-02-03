@@ -1,240 +1,288 @@
 {
-  "timestamp": "2026-02-01T13:16:41.986Z",
+  "timestamp": "2026-02-02T16:32:42.656Z",
   "summary": {
-    "filesTested": 2,
+    "filesTested": 4,
     "skipped": 0,
-    "passed": 40,
-    "violations": 16
+    "passed": 171,
+    "violations": 15
   },
   "results": [
     {
-      "filePath": "./tests/filter/filter.html",
-      "spec": "aria/filter_aria.md",
-      "totalRules": 6,
-      "testedRules": 6,
-      "untestedRules": [],
+      "filePath": "./tests/prompt-box/prompt-box.html",
+      "spec": "aria/prompt-box_aria.md",
+      "totalRules": 10,
+      "testedRules": 9,
+      "untestedRules": [
+        {
+          "selector": ".k-prompt-box.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the component is disabled."
+        }
+      ],
       "violations": [
         {
           "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
           },
-          "element": "<div class=\"k-toolbar k-focus\" role=\"toolbar\">\n                            <div class=\"k-toolbar-button-group  k-button-group\" role=\"group\">\n                                <button class=\"k-group-star",
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-label",
+          "expected": "aria-disabled",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
           },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
           "index": 1,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-label",
+          "expected": "aria-disabled",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
           },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
           "index": 2,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-label",
+          "expected": "aria-disabled",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
           },
-          "element": "<div class=\"k-toolbar k-focus\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-pic",
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
           "index": 3,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-toolbar-button-group  k-button-group\" role=\"group\">\n                                        <button class=\"k-gr",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                            <div class=\"k-filter-field k-toolbar-item\">\n                                                <span class=\"k-dropdownli",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                            <div class=\"k-filter-field k-toolbar-item\">\n                                                <span class=\"k-dropdownli",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
+          "expected": "aria-disabled",
           "actual": null
         }
       ],
-      "passed": 20,
-      "violationCount": 8
+      "passed": 35,
+      "violationCount": 4
     },
     {
-      "filePath": "./tests/filter/filter-preview.html",
-      "spec": "aria/filter_aria.md",
-      "totalRules": 6,
-      "testedRules": 6,
-      "untestedRules": [],
+      "filePath": "./tests/prompt-box/prompt-box-stop-response.html",
+      "spec": "aria/prompt-box_aria.md",
+      "totalRules": 10,
+      "testedRules": 7,
+      "untestedRules": [
+        {
+          "selector": ".k-prompt-box.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the component is disabled."
+        },
+        {
+          "selector": ".k-prompt-box textarea",
+          "attribute": "aria-label or aria-labelledby",
+          "usage": "Textarea needs accessible name (if not associated with visible label)."
+        },
+        {
+          "selector": ".k-prompt-box textarea",
+          "attribute": "aria-multiline=true",
+          "usage": "Announces the multi-line behavior of the textarea."
+        }
+      ],
       "violations": [
         {
           "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
           },
-          "element": "<div class=\"k-toolbar k-focus\" role=\"toolbar\">\n                            <div class=\"k-toolbar-button-group  k-button-group\" role=\"group\">\n                                <button class=\"k-group-star",
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar k-focus\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-pic",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-filter-field k-toolbar-item\">\n                                        <span class=\"k-dropdownlist k-picker\" ari",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                    <div class=\"k-toolbar-button-group  k-button-group\" role=\"group\">\n                                        <button class=\"k-gr",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                            <div class=\"k-filter-field k-toolbar-item\">\n                                                <span class=\"k-dropdownli",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-toolbar",
-            "attribute": "aria-label",
-            "usage": "Specifies a label for the toolbar."
-          },
-          "element": "<div class=\"k-toolbar\" role=\"toolbar\">\n                                            <div class=\"k-filter-field k-toolbar-item\">\n                                                <span class=\"k-dropdownli",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "aria-label",
+          "expected": "aria-disabled",
           "actual": null
         }
       ],
-      "passed": 20,
+      "passed": 16,
+      "violationCount": 1
+    },
+    {
+      "filePath": "./tests/prompt-box/prompt-box-files.html",
+      "spec": "aria/prompt-box_aria.md",
+      "totalRules": 10,
+      "testedRules": 8,
+      "untestedRules": [
+        {
+          "selector": ".k-prompt-box.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the component is disabled."
+        },
+        {
+          "selector": ".k-prompt-box input",
+          "attribute": "aria-label or aria-labelledby",
+          "usage": "Input needs accessible name (if not associated with visible label)."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        }
+      ],
+      "passed": 30,
+      "violationCount": 2
+    },
+    {
+      "filePath": "./tests/prompt-box/prompt-box-affixes.html",
+      "spec": "aria/prompt-box_aria.md",
+      "totalRules": 10,
+      "testedRules": 9,
+      "untestedRules": [
+        {
+          "selector": ".k-prompt-box.k-disabled",
+          "attribute": "aria-disabled=true",
+          "usage": "Attribute is rendered only when the component is disabled."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-prompt-box .k-button.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Keeps button in focus order while indicating it is not interactive. Use `[disabled]` attribute to remove from focus order entirely."
+          },
+          "element": "<button aria-label=\"Send prompt\" class=\"k-button k-button-sm k-rounded-full k-disabled k-icon-button\" disabled=\"\">\n                            <span class=\"k-button-icon k-icon k-svg-icon k-svg-i-arro",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-disabled",
+          "actual": null
+        }
+      ],
+      "passed": 90,
       "violationCount": 8
     }
   ]

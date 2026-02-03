@@ -20,9 +20,11 @@ export const FileBoxWrapper = (
         ...other
     } = props;
 
-    return (
+    const listElement = (
         <ul
             {...other}
+            role="list"
+            aria-label={other['aria-label'] || 'Attached files'}
             className={classNames(
                 props.className,
                 FILE_BOX_WRAPPER_CLASSNAME,
@@ -34,15 +36,21 @@ export const FileBoxWrapper = (
                 }
             )}
         >
-            {layout === "horizontal" ? (
-                <div className="k-files-scroll">
-                    {props.children}
-                </div>
-            ) : (
-                props.children
-            )}
+            {props.children}
         </ul>
-    )
+    );
+
+    // For horizontal layout, wrap the list in a scroll container
+    // This preserves valid list structure (li elements are direct children of ul)
+    if (layout === "horizontal") {
+        return (
+            <div className="k-files-scroll">
+                {listElement}
+            </div>
+        );
+    }
+
+    return listElement;
 };
 
 FileBoxWrapper.className = FILE_BOX_WRAPPER_CLASSNAME;

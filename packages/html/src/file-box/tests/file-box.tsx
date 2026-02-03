@@ -1,4 +1,4 @@
-import { FileBox } from '..';
+import { FileBox, FileBoxWrapper } from '..';
 
 
 const styles = `
@@ -14,7 +14,9 @@ export default () =>(
             <span>File box</span>
 
             <section>
-                <FileBox />
+                <FileBoxWrapper layout="vertical">
+                    <FileBox />
+                </FileBoxWrapper>
             </section>
 
         </div>

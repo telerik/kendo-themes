@@ -25,6 +25,24 @@ export default () =>(
                 <PromptBoxLineModeMulti endAffix placeholder="Type a message" />
             </div>
 
+            <span>disabled - auto</span>
+            <span>disabled - auto + expanded</span>
+            <span>disabled - single</span>
+            <span>disabled - multi</span>
+
+            <div>
+                <PromptBoxLineModeAuto endAffix placeholder="Type a message" disabled />
+            </div>
+            <div>
+                <PromptBoxLineModeAutoExpanded endAffix placeholder="Type a message" disabled />
+            </div>
+            <div>
+                <PromptBoxLineModeSingle endAffix placeholder="Type a message" disabled />
+            </div>
+             <div>
+                <PromptBoxLineModeMulti endAffix placeholder="Type a message" disabled />
+            </div>
+
         </div>
     </>
 );

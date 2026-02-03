@@ -57,14 +57,23 @@ export const PromptBox = (
         hover,
         focus,
         disabled,
+        'aria-label': ariaLabel,
+        'aria-labelledby': ariaLabelledby,
         ...other
     } = props;
 
     const isMultiline = lineMode === 'multi' || (lineMode === 'auto' && isExpanded);
 
+    // Compute aria-label for inputs - use provided label or derive from placeholder
+    const inputAriaLabel = ariaLabelledby ? undefined : (ariaLabel || placeholder || 'AI prompt input');
+
     return (
         <div
             {...other}
+            role="group"
+            aria-disabled={disabled ? true : undefined}
+            aria-label={ariaLabelledby ? undefined : ariaLabel}
+            aria-labelledby={ariaLabelledby}
             className={classNames(
                 className,
                 'k-input',
@@ -88,6 +97,8 @@ export const PromptBox = (
                         placeholder={placeholder}
                         className={`${PROMPT_BOX_CLASSNAME}-input`}
                         type="text"
+                        aria-label={inputAriaLabel}
+                        disabled={disabled}
                     />
                 ) : (
                     <InputInnerTextarea
@@ -95,17 +106,20 @@ export const PromptBox = (
                         placeholder={placeholder}
                         className={`${PROMPT_BOX_CLASSNAME}-textarea`}
                         rows={lineMode === 'multi' || isExpanded ? 3 : 1}
+                        aria-label={inputAriaLabel}
+                        disabled={disabled}
                     />
                 )}
                 {endAffix && <div className={`${PROMPT_BOX_CLASSNAME}-affix`}>
                     {endAffix}
-                    <SpeechToTextButton size="small" fillMode="flat" />
+                    <SpeechToTextButton size="small" fillMode="flat" disabled={disabled} />
                     <IconButton
                         icon={generating ? "stop-sm" : "arrow-up-outline"}
                         size="small"
                         rounded="full"
                         active={generating}
-                        disabled={!value && !generating}
+                        disabled={(!value && !generating) || disabled}
+                        aria-label={generating ? "Stop generating" : "Send prompt"}
                         className={classNames({ "k-generating": generating })}
                     />
                 </div>}

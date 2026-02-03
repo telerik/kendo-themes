@@ -44,9 +44,14 @@ export const FileBox = (
         ...other
     } = props;
 
+    // Construct accessible description from file info
+    const fileDescription = [name, size, status].filter(Boolean).join(', ');
+
     return (
         <li
             {...other}
+            role="listitem"
+            aria-label={other['aria-label'] || fileDescription}
             className={classNames(
                 FILE_BOX_CLASSNAME,
                 props.className,
@@ -54,15 +59,15 @@ export const FileBox = (
                     'k-file-deleted': deleted,
                 },
             )}>
-            <Icon icon={icon} size="xlarge"></Icon>
+            <Icon icon={icon} size="xlarge" aria-hidden="true"></Icon>
             <div className='k-file-info'>
                 {name && <span className="k-file-name">{name}</span>}
                 {size && <span className="k-file-size">{size}</span>}
                 {status && <span className="k-file-status">{status}</span>}
             </div>
             {showButton && (removeButton ?
-                <IconButton icon="x-mark-sm-outline" fillMode="flat"></IconButton> :
-                <MenuButton icon="more-vertical" fillMode="flat" showArrow={false}></MenuButton>
+                <IconButton icon="x-mark-sm-outline" fillMode="flat" aria-label={`Remove ${name}`}></IconButton> :
+                <MenuButton icon="more-vertical" fillMode="flat" showArrow={false} aria-label={`More options for ${name}`}></MenuButton>
             )}
         </li>
     );
