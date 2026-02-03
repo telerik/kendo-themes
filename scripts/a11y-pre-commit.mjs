@@ -2,8 +2,13 @@
 /* eslint-disable no-console */
 
 /**
- * Pre-commit A11y Check Script
- * Detects a11y-related file changes and runs accessibility tests
+ * Pre-commit/Pre-push A11y Check Script
+ *
+ * Usage:
+ *   --info-only     Show changed a11y files (pre-commit, non-blocking)
+ *   --check-only    Run tests and block on failure (pre-push)
+ *   --prompt        Prompt to skip (for pre-push with option to bypass)
+ *   (no args)       Interactive mode for manual runs
  */
 
 import { execSync } from 'child_process';
@@ -57,6 +62,7 @@ function hasAriaSpec(component) {
 async function prompt(question) {
     let input = process.stdin;
 
+    // Use /dev/tty if stdin is not a TTY (like in git hooks)
     if (!process.stdin.isTTY) {
         try {
             input = createReadStream('/dev/tty');
@@ -69,7 +75,7 @@ async function prompt(question) {
     return new Promise(resolve => {
         rl.question(question, answer => {
             rl.close();
-            resolve(answer.toLowerCase());
+            resolve(answer.toLowerCase().trim());
         });
     });
 }
@@ -104,24 +110,7 @@ function testComponent(component) {
     return { ariaPassed, wcagPassed };
 }
 
-async function main() {
-    const args = process.argv.slice(2);
-    const isFromHook = args.includes('--from-hook');
-    const checkOnly = args.includes('--check-only');
-
-    const stagedFiles = getStagedFiles();
-    const a11yFiles = stagedFiles.filter(f =>
-        f.match(/packages\/html\/src\/.*\.tsx?$/) ||
-        f.match(/aria\/.*_aria\.md$/)
-    );
-
-    if (a11yFiles.length === 0) {
-        log('No accessibility-related files staged.', 'dim');
-        process.exit(0);
-    }
-
-    const components = extractComponents(a11yFiles);
-
+function showInfo(a11yFiles, components, missingSpecs) {
     log('\n🔍 Accessibility-related files changed:', 'cyan');
     a11yFiles.slice(0, 5).forEach(f => log(`   ${f}`));
     if (a11yFiles.length > 5) {
@@ -130,27 +119,16 @@ async function main() {
 
     log(`\nComponents affected: ${components.join(', ')}`, 'cyan');
 
-    const missingSpecs = components.filter(c => !hasAriaSpec(c));
     if (missingSpecs.length > 0) {
         log(`\n⚠️  Missing ARIA specs for: ${missingSpecs.join(', ')}`, 'yellow');
         log('   Consider creating specs in aria/[component]_aria.md', 'dim');
     }
 
-    if (isFromHook) {
-        const answer = await prompt('\nRun accessibility tests? (y/n/s[kip]): ');
-        if (answer === null) {
-            log('⚠️  Unable to prompt for input. Running accessibility tests by default.', 'yellow');
-        }
-        if (answer === 's' || answer === 'skip') {
-            log('⏭️  Skipping - will validate in CI', 'yellow');
-            process.exit(0);
-        }
-        if (answer && answer !== 'y' && answer !== 'yes') {
-            log('⏭️  Skipping accessibility tests', 'dim');
-            process.exit(0);
-        }
-    }
+    log('\n💡 Tip: A11y tests will run on push. Run manually with:', 'dim');
+    log(`   npm run test:aria ${components[0]}`, 'dim');
+}
 
+function runTests(components) {
     log('\n📋 Running accessibility validation...', 'cyan');
 
     let allPassed = true;
@@ -184,14 +162,87 @@ async function main() {
         log(`   ${status} ${r.component}${suffix}`);
     }
 
+    return { allPassed, results };
+}
+
+async function main() {
+    const args = process.argv.slice(2);
+    const infoOnly = args.includes('--info-only');
+    const checkOnly = args.includes('--check-only');
+    const promptMode = args.includes('--prompt');
+
+    const stagedFiles = getStagedFiles();
+    const a11yFiles = stagedFiles.filter(f =>
+        f.match(/packages\/html\/src\/.*\.tsx?$/) ||
+        f.match(/aria\/.*_aria\.md$/)
+    );
+
+    if (a11yFiles.length === 0) {
+        if (!infoOnly) {
+            log('No accessibility-related files staged.', 'dim');
+        }
+        process.exit(0);
+    }
+
+    const components = extractComponents(a11yFiles);
+    const missingSpecs = components.filter(c => !hasAriaSpec(c));
+
+    // Info-only mode: just show what changed (pre-commit)
+    if (infoOnly) {
+        showInfo(a11yFiles, components, missingSpecs);
+        process.exit(0);
+    }
+
+    // Prompt mode: ask before running (pre-push with skip option)
+    if (promptMode) {
+        showInfo(a11yFiles, components, missingSpecs);
+        const answer = await prompt('\nRun accessibility tests before push? (y/n/s[kip]): ');
+        
+        if (answer === 's' || answer === 'skip') {
+            log('⏭️  Skipping - tests will run in CI', 'yellow');
+            process.exit(0);
+        }
+        if (answer !== 'y' && answer !== 'yes') {
+            log('⏭️  Skipping accessibility tests', 'dim');
+            process.exit(0);
+        }
+        
+        // Proceed to run tests
+        const { allPassed } = runTests(components);
+        if (!allPassed) {
+            log('\n❌ Push blocked: accessibility violations detected.', 'red');
+            log('   Run `npm run test:aria [component] -- --verbose` for details.', 'dim');
+            log('   Fix violations before pushing, or use --no-verify to bypass.', 'dim');
+            process.exit(1);
+        } else {
+            log('\n✅ All accessibility checks passed!', 'green');
+        }
+        process.exit(0);
+    }
+
+    // Check-only mode: run tests and fail on violations (pre-push, no prompt)
+    if (checkOnly) {
+        showInfo(a11yFiles, components, missingSpecs);
+        const { allPassed } = runTests(components);
+
+        if (!allPassed) {
+            log('\n❌ Push blocked: accessibility violations detected.', 'red');
+            log('   Run `npm run test:aria [component] -- --verbose` for details.', 'dim');
+            log('   Fix violations before pushing, or use --no-verify to bypass.', 'dim');
+            process.exit(1);
+        } else {
+            log('\n✅ All accessibility checks passed!', 'green');
+        }
+        process.exit(0);
+    }
+
+    // Interactive mode: for manual runs
+    showInfo(a11yFiles, components, missingSpecs);
+    const { allPassed } = runTests(components);
+
     if (!allPassed) {
         log('\n❌ Some components have accessibility violations.', 'red');
         log('   Run `npm run test:aria [component] -- --verbose` for details.', 'dim');
-        if (checkOnly) {
-            process.exit(1);
-        } else {
-            log('\n   Commit will proceed. Fix violations before merging.', 'yellow');
-        }
     } else {
         log('\n✅ All accessibility checks passed!', 'green');
     }

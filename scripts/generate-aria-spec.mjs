@@ -4,17 +4,19 @@
 /**
  * Generates ARIA specification files for Kendo UI components.
  * Usage: node scripts/generate-aria-spec.mjs [component-name]
+ *
+ * This module also exports functions for reuse by other scripts (e.g., aria-sync.mjs).
  */
 
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
-const ROOT = new URL('..', import.meta.url).pathname;
-const HTML_SRC = join(ROOT, 'packages/html/src');
-const ARIA_DIR = join(ROOT, 'aria');
+export const ROOT = new URL('..', import.meta.url).pathname;
+export const HTML_SRC = join(ROOT, 'packages/html/src');
+export const ARIA_DIR = join(ROOT, 'aria');
 
 // WAI-ARIA APG patterns for common component types
-const ARIA_PATTERNS = {
+export const ARIA_PATTERNS = {
     button: { role: 'button', attrs: ['aria-pressed', 'aria-expanded', 'aria-disabled'] },
     dialog: { role: 'dialog', attrs: ['aria-modal', 'aria-labelledby', 'aria-describedby'] },
     alertdialog: { role: 'alertdialog', attrs: ['aria-modal', 'aria-labelledby', 'aria-describedby'] },
@@ -38,7 +40,7 @@ const ARIA_PATTERNS = {
 };
 
 // Maps component folder names to their aria pattern
-const COMPONENT_PATTERNS = {
+export const COMPONENT_PATTERNS = {
     button: 'button', 'split-button': 'button', 'menu-button': 'button',
     dialog: 'dialog', window: 'dialog',
     listbox: 'listbox', dropdownlist: 'listbox', combobox: 'combobox',
@@ -51,7 +53,7 @@ const COMPONENT_PATTERNS = {
 };
 
 // State classes - valid as combined selectors for ARIA state attributes
-const STATE_CLASSES = new Set([
+export const STATE_CLASSES = new Set([
     'k-disabled', 'k-focus', 'k-hover', 'k-active', 'k-selected',
     'k-expanded', 'k-collapsed', 'k-checked', 'k-readonly', 'k-invalid',
 ]);
@@ -59,7 +61,7 @@ const STATE_CLASSES = new Set([
 // State class to ARIA attribute mapping
 // Note: tabindex handled separately - native focusable elements (input, button, a[href], select, textarea)
 // don't need tabindex=0. For roving tabindex patterns, non-active items need tabindex=-1.
-const STATE_TO_ARIA = {
+export const STATE_TO_ARIA = {
     'k-disabled': 'aria-disabled=true',
     'k-selected': 'aria-selected=true',
     'k-expanded': 'aria-expanded=true',
@@ -70,14 +72,14 @@ const STATE_TO_ARIA = {
 };
 
 // Pure utility classes to exclude (layout/display only)
-const UTILITY_CLASSES = new Set([
+export const UTILITY_CLASSES = new Set([
     'k-hidden', 'k-d-flex', 'k-d-grid', 'k-d-block', 'k-d-inline', 'k-d-none',
     'k-spacer', 'k-generating', 'k-loading',
     'k-flex-row', 'k-flex-col', 'k-align-items-center', 'k-justify-content-center',
 ]);
 
 // Extracts detailed info from TSX files
-function analyzeComponent(componentDir, componentName) {
+export function analyzeComponent(componentDir, componentName) {
     const componentClasses = new Set();
     const stateClasses = new Set();
     const elements = { buttons: [], inputs: [], textareas: [], links: [] };
@@ -147,7 +149,7 @@ function analyzeComponent(componentDir, componentName) {
 }
 
 // Reads existing ARIA spec if present
-function readExistingSpec(component) {
+export function readExistingSpec(component) {
     const specPath = join(ARIA_DIR, `${component}_aria.md`);
     if (existsSync(specPath)) {
         return readFileSync(specPath, 'utf-8');
@@ -156,7 +158,7 @@ function readExistingSpec(component) {
 }
 
 // Finds similar components' specs for reference
-function findSimilarSpecs(component) {
+export function findSimilarSpecs(component) {
     const pattern = COMPONENT_PATTERNS[component];
     if (!pattern) {
         return [];
@@ -175,13 +177,13 @@ function findSimilarSpecs(component) {
 }
 
 // Common inner focusable element classes
-const FOCUSABLE_INNER_CLASSES = new Set([
+export const FOCUSABLE_INNER_CLASSES = new Set([
     'k-input', 'k-input-inner', 'k-button', 'k-draghandle', 'k-link',
     'k-textbox', 'k-textarea', 'k-picker-wrap', 'k-searchbar',
 ]);
 
 // Generates the markdown spec content
-function generateSpecContent(component, analysis, pattern) {
+export function generateSpecContent(component, analysis, pattern) {
     const { componentClasses, stateClasses, elements, imports } = analysis;
     const componentName = component.split('-').map(w =>
         w.charAt(0).toUpperCase() + w.slice(1)
@@ -370,4 +372,7 @@ function main() {
     }
 }
 
-main();
+// Only run main when executed directly (not when imported as module)
+if (import.meta.url === `file://${process.argv[1]}`) {
+    main();
+}
