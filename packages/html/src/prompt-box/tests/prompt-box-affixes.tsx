@@ -30,9 +30,6 @@ export default () =>(
             <div>
                 <PromptBoxLineModeAutoExpanded
                     placeholder="Type a message"
-                    startAffix={<>
-                        <Icon icon="plus"/>
-                    </>}
                     endAffix={<>
                         <Icon icon="plus"/>
                         <div className="k-spacer"></div>
@@ -90,9 +87,6 @@ export default () =>(
                     placeholder="Type a message"
                     header={<>
                     <Button>Button in header</Button>
-                    </>}
-                    startAffix={<>
-                        <Icon icon="plus"/>
                     </>}
                     endAffix={<>
                         <Icon icon="plus"/>
