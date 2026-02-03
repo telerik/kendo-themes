@@ -1,11 +1,15 @@
 ﻿import { Menu, KendoMenuProps } from '../menu.spec';
+import { MenuList } from '../menu-list.spec';
+import { MenuListItem } from '../menu-list-item.spec';
+import { MenuSeparator } from '../menu-separator.spec';
 import { MenuNormal } from '../templates/menu-normal';
+import { Popup } from '../../popup';
 
 const options = Menu.options;
 const states = Menu.states;
 const defaults = {
-  ...Menu.defaultOptions,
-  variant: 'horizontal',
+    ...Menu.defaultOptions,
+    variant: 'horizontal',
 };
 
 const variants = [
@@ -24,6 +28,10 @@ const modifiers = [
         name: 'scrollable',
         title: 'Scrollable',
     },
+    {
+        name: 'opened',
+        title: 'Opened',
+    },
 ];
 
 export const MenuDemo = (
@@ -37,16 +45,31 @@ export const MenuDemo = (
 
     Object.keys(mods || {}).forEach((modifier) => {
         switch (modifier) {
-            case 'scrollable': {
+            case 'scrollable':
                 additionalProps.scrollable = mods?.[modifier] ? true : false;
-            }
+
+                break;
+
+            case 'opened':
+                additionalProps.opened = mods?.[modifier] ? true : false;
+                additionalProps.popup = (
+                    <Popup className="k-menu-popup">
+                        <MenuList>
+                            <MenuListItem text="Item 1"></MenuListItem>
+                            <MenuListItem text="Item 2"></MenuListItem>
+                            <MenuSeparator></MenuSeparator>
+                            <MenuListItem text="Item 3"></MenuListItem>
+                        </MenuList>
+                    </Popup>);
+
+                break;
         }
     });
 
     switch (variant) {
         case 'vertical':
             return (
-                <MenuNormal {...other} {...additionalProps} orientation="vertical" style={{width: "200px"}}></MenuNormal>
+                <MenuNormal {...other} {...additionalProps} orientation="vertical" style={{ width: "200px" }}></MenuNormal>
             );
         case 'horizontal':
         default:
