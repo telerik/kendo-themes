@@ -7,7 +7,7 @@
  */
 
 import { execSync } from 'child_process';
-import { existsSync } from 'fs';
+import { existsSync, createReadStream } from 'fs';
 import { createInterface } from 'readline';
 import path from 'path';
 
@@ -55,7 +55,17 @@ function hasAriaSpec(component) {
 }
 
 async function prompt(question) {
-    const rl = createInterface({ input: process.stdin, output: process.stdout });
+    let input = process.stdin;
+
+    if (!process.stdin.isTTY) {
+        try {
+            input = createReadStream('/dev/tty');
+        } catch {
+            return null;
+        }
+    }
+
+    const rl = createInterface({ input, output: process.stdout });
     return new Promise(resolve => {
         rl.question(question, answer => {
             rl.close();
@@ -126,13 +136,16 @@ async function main() {
         log('   Consider creating specs in aria/[component]_aria.md', 'dim');
     }
 
-    if (isFromHook && process.stdin.isTTY) {
+    if (isFromHook) {
         const answer = await prompt('\nRun accessibility tests? (y/n/s[kip]): ');
+        if (answer === null) {
+            log('⚠️  Unable to prompt for input. Running accessibility tests by default.', 'yellow');
+        }
         if (answer === 's' || answer === 'skip') {
             log('⏭️  Skipping - will validate in CI', 'yellow');
             process.exit(0);
         }
-        if (answer !== 'y' && answer !== 'yes') {
+        if (answer && answer !== 'y' && answer !== 'yes') {
             log('⏭️  Skipping accessibility tests', 'dim');
             process.exit(0);
         }

@@ -31,6 +31,5 @@ The PromptBox component is a composite input widget for AI prompt entry. It cont
 
 This component uses the following child components that have their own accessibility specs:
 
-- [button](button_aria.md)
-- [speech-to-text-button](speech-to-text-button_aria.md)
+
 
