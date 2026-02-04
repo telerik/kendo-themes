@@ -4,8 +4,11 @@ import { Textbox } from '../../textbox';
 const options = Label.options;
 const states = Label.states;
 const defaults = Label.defaultOptions;
-const variants = [];
-const modifiers = [
+const variants = [
+    {
+        name: 'default',
+        title: 'Default',
+    },
     {
         name: 'optional',
         title: 'Optional',
@@ -15,29 +18,26 @@ const modifiers = [
         title: 'Info',
     },
 ];
+const modifiers = [];
 
 export const LabelDemo = (
     props: KendoLabelProps &
         KendoLabelState & {
-            modifiers?: { [key: string]: boolean };
+            variant?: (typeof variants)[number]['name'];
         }
 ) => {
-    const { modifiers: mods, ...other } = { ...defaults, ...props };
+    const { variant = 'default', ...other } = { ...defaults, ...props };
 
     let additionalProps: KendoLabelProps = {};
 
-    Object.keys(mods || {}).forEach((modifier) => {
-        switch (modifier) {
-            case 'optional': {
-                additionalProps.optional = mods?.[modifier] ? true : false;
-                break;
-            }
-            case 'info': {
-                additionalProps.info = mods?.[modifier] ? '(field info)' : undefined;
-                break;
-            }
-        }
-    });
+    switch (variant) {
+        case 'optional':
+            additionalProps.optional = true;
+            break;
+        case 'info':
+            additionalProps.info = '(field info)';
+            break;
+    }
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
