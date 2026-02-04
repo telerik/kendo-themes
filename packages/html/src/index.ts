@@ -24,6 +24,7 @@ export * from './skeleton/index';
 
 // Native forms
 export * from './form/index';
+export * from './label/index';
 export * from './button/index';
 export * from './button-group/index';
 export * from './menu-button/index';
