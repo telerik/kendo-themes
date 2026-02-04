@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-accent-icon-color</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #8142BF"></span><code>#8142BF</code></td>
-    <td><span class="color-preview" style="background-color: #8142BF"></span><code>#8142BF</code></td>
+    <td><span class="color-preview" style="background-color: #987CE4"></span><code>#987CE4</code></td>
+    <td><span class="color-preview" style="background-color: #987CE4"></span><code>#987CE4</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>

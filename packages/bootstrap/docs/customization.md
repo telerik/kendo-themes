@@ -29079,8 +29079,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-segmented-control-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
+    <td><code>k-color(base)</code></td>
+    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Segmented Control.</div></div>
@@ -29329,8 +29329,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-segmented-control-button-focus-indicator</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 16%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 16%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 35%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 35%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indication of the focused button inside Segmented Control.</div></div>
