@@ -67,6 +67,7 @@ packages/
 ├── fluent/            # Fluent theme
 ├── utils/             # Utility CSS classes (standalone)
 └── html/              # React component specs & tests
+aria/                  # ARIA accessibility specifications (per-component)
 scripts/               # Build utilities and automation
 tests/                 # Visual test outputs
 build/                 # CI/CD scripts
@@ -143,6 +144,10 @@ npm run clean                   # Full cleanup (includes node_modules)
 
 - Refer to ${variable-docs.prompt.md} for SassDoc documentation standards
 
+### Accessibility
+
+- Refer to ${accessibility.prompt.md} for ARIA attribute patterns and WCAG compliance
+
 ### SCSS Standards
 
 - Use **dart-sass syntax** - avoid deprecated node-sass features
@@ -170,13 +175,33 @@ npm run clean                   # Full cleanup (includes node_modules)
 
 ### Accessibility Automation
 
-For ARIA specification management and accessibility compliance workflows, see:
-- **Documentation**: `.github/docs/accessibility-automation.md` - Complete guide to automation tools
-- **Key Commands**:
-  - `npm run aria:generate [component]` - Generate ARIA spec from TSX analysis
-  - `npm run aria:sync [component]` - Full compliance workflow (spec + validate + test)
-  - `npm run test:aria [component]` - Validate ARIA attributes
-  - `npm run test:wcag [component]` - Test WCAG 2.2 compliance
+ARIA specifications in `aria/[component]_aria.md` define accessibility requirements for each component. These specs are applied directly to TSX component files.
+
+**Workflow:**
+1. Check ARIA spec: `aria/[component]_aria.md`
+2. Apply attributes to: `packages/html/src/[component]/*.spec.tsx` and `templates/*.tsx`
+3. Verify coverage: ensure all spec rules match rendered HTML
+4. Add templates: create new templates for unmatched scenarios (disabled, expanded, etc.)
+5. Export templates: update `index.ts` to export new templates for consuming products
+6. Validate: `npm run test:aria [component]`
+7. Check WCAG: `npm run test:wcag [component]`
+
+**Key Commands:**
+```bash
+npm run test:aria [component]   # Validate against aria/*.md spec rules
+npm run test:wcag [component]   # Validate WAI-ARIA standards via axe-core
+npm run test:a11y               # Run ARIA + WCAG + contrast tests
+npm run test:contrast           # Validate color contrast ratios
+```
+
+**Guidelines:**
+- Add ARIA attributes after `className` prop
+- Use semantic HTML elements when possible
+- Use `${id}-suffix` pattern for related IDs
+- Never modify HTML structure, only add attributes
+- Icon-only buttons require `aria-label`
+
+For detailed patterns, see: `.github/prompts/accessibility.prompt.md`
 
 ## Common Issues
 
