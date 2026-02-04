@@ -1,4 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
+import { Label } from '../label/label.spec';
+import { FormHint } from './form-hint.spec';
+import { FormError } from './form-error.spec';
 
 export const FORMFIELD_CLASSNAME = 'k-form-field';
 
@@ -51,20 +54,15 @@ export const FormField = (
                 }
             )} dir={dir}>
             {label &&
-                            <label className={classNames(
-                                'k-label',
-                                'k-form-label'
-                            )}>
-                                {label}
-                                {optional && <span className="k-label-optional">(Optional)</span>}
-                                {info && <span className="k-field-info">(field info)</span>}
-                            </label>
+                <Label className="k-form-label" optional={optional} info={info ? "(field info)" : undefined}>
+                    {label}
+                </Label>
             }
             { orientation === 'horizontal' && !label && <span className="k-label k-form-label k-label-empty"></span> }
             <div className="k-form-field-wrap">
                 {editor}
-                {hint && <div className="k-form-hint">{hint}</div>}
-                {error && <div className="k-form-error">{error}</div>}
+                {hint && <FormHint>{hint}</FormHint>}
+                {error && <FormError>{error}</FormError>}
             </div>
         </div>
     );
