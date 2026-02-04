@@ -18455,8 +18455,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-accent-icon-color</td>
     <td>String</td>
-    <td><code>var( --kendo-accent-icon-color, #{k-color(tertiary-active)} )</code></td>
-    <td><code>var(--kendo-accent-icon-color, var(--kendo-color-tertiary-active, #962c8a))</code></td>
+    <td><code>var( --kendo-accent-icon-color, #87A7FF )</code></td>
+    <td><code>var(--kendo-accent-icon-color, #87A7FF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
@@ -30110,8 +30110,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-segmented-control-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-segmented-control-bg, #{k-color(base-subtle)} )</code></td>
-    <td><code>var(--kendo-segmented-control-bg, var(--kendo-color-base-subtle, #f5f5f5))</code></td>
+    <td><code>var( --kendo-segmented-control-bg, color-mix(in srgb, k-color(base), currentColor 12%) )</code></td>
+    <td><code>var(--kendo-segmented-control-bg, color-mix(in srgb, var(--kendo-color-base, #ffffff), currentColor 12%))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Segmented Control.</div></div>
@@ -30350,8 +30350,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-segmented-control-button-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-segmented-control-button-hover-bg, k-color(base-hover) )</code></td>
-    <td><code>var(--kendo-segmented-control-button-hover-bg, var(--kendo-color-base-hover, #f5f5f5))</code></td>
+    <td><code>var( --kendo-segmented-control-button-hover-bg, color-mix(in srgb, k-color(base-hover), currentColor 16%) )</code></td>
+    <td><code>var(--kendo-segmented-control-button-hover-bg, color-mix(in srgb, var(--kendo-color-base-hover, #f5f5f5), currentColor 16%))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered button inside Segmented Control.</div></div>
@@ -30360,8 +30360,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-segmented-control-button-focus-indicator</td>
     <td>String</td>
-    <td><code>var( --kendo-segmented-control-button-focus-indicator, inset 0 0 0 2px color-mix(in srgb, currentColor 30%, transparent) )</code></td>
-    <td><code>var(--kendo-segmented-control-button-focus-indicator, inset 0 0 0 2px color-mix(in srgb, currentColor 30%, transparent))</code></td>
+    <td><code>var( --kendo-segmented-control-button-focus-indicator, inset 0 0 0 2px k-color(on-base) )</code></td>
+    <td><code>var(--kendo-segmented-control-button-focus-indicator, inset 0 0 0 2px var(--kendo-color-on-base, #242424))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indication of the focused button inside Segmented Control.</div></div>

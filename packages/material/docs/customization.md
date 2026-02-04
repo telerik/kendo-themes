@@ -13438,8 +13438,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-box-wrapper-scroll-gradient</td>
     <td>List</td>
-    <td><code>rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100%</code></td>
-    <td><code>(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)</code></td>
+    <td><code>rgba(255, 255, 255, 0.00) 0%, k-color(surface) 100%</code></td>
+    <td><code>(rgba(255, 255, 255, 0) 0%, var(--kendo-color-surface, #F7F3FA) 100%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for the File Box wrapper scrolling indicator.</div></div>
@@ -17546,8 +17546,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-accent-icon-color</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #8142BF"></span><code>#8142BF</code></td>
-    <td><span class="color-preview" style="background-color: #8142BF"></span><code>#8142BF</code></td>
+    <td><span class="color-preview" style="background-color: #987CE4"></span><code>#987CE4</code></td>
+    <td><span class="color-preview" style="background-color: #987CE4"></span><code>#987CE4</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
@@ -29105,8 +29105,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-segmented-control-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
+    <td><code>color-mix(in srgb, k-color(surface), currentColor 8%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-surface, #F7F3FA), currentColor 8%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Segmented Control.</div></div>
@@ -29215,8 +29215,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-segmented-control-thumb-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active, #D9CCF1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the Segmented Control thumb.</div></div>
@@ -29345,8 +29345,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-segmented-control-button-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(base-hover), currentColor 4% )</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-hover, #E2DDE5), currentColor 4%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered button inside Segmented Control.</div></div>
@@ -29355,8 +29355,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-segmented-control-button-focus-indicator</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 12%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 30%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indication of the focused button inside Segmented Control.</div></div>

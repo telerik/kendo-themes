@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle, #f0f0f0)</code></td>
+    <td><code>color-mix(in srgb, k-color(base), currentColor 6%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base, #ebebeb), currentColor 6%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Segmented Control.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-thumb-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the Segmented Control thumb.</div></div>
@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-button-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
+    <td><code>color-mix(in srgb, currentColor 16%, k-color(base-hover))</code></td>
+    <td><code>color-mix(in srgb, currentColor 16%, var(--kendo-color-base-hover, #dddddd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered button inside Segmented Control.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-button-focus-indicator</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 25%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 25%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 35%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 35%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indication of the focused button inside Segmented Control.</div></div>
