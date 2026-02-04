@@ -1,1 +1,4 @@
 npm run lint:staged
+
+# Info-only: show which a11y-related files changed (tests run on push)
+node scripts/a11y-pre-commit.mjs --info-only

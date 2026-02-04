@@ -1,1 +1,4 @@
 npm run sass && npm run docs:check
+
+# Run a11y validation on changed components (with prompt to skip)
+node scripts/a11y-pre-commit.mjs --prompt

@@ -145,8 +145,66 @@ npm test                # Run Jest tests
 npm start               # Start dev server
 ```
 
+## Accessibility Requirements
+
+All components must be WCAG 2.2 Level AA compliant. ARIA attributes are integral to component specs.
+
+### ARIA Integration
+
+- **Spec files**: Check `aria/[component]_aria.md` for component-specific accessibility requirements
+- **Apply attributes**: Add ARIA attributes directly in `.spec.tsx` and `templates/*.tsx` files
+- **Validation**: Run both ARIA and WCAG tests to verify compliance
+- **Prompt reference**: See `${accessibility.prompt.md}` for detailed patterns
+
+### Two-Level Validation
+
+| Test | Command | Purpose |
+|------|---------|--------|
+| **ARIA** | `npm run test:aria [component]` | Validates against custom rules in `aria/*.md` specs |
+| **WCAG** | `npm run test:wcag [component]` | Validates against WAI-ARIA standards using axe-core |
+
+### Key Rules
+
+1. **Attribute placement**: Always place ARIA attributes after `className`
+2. **Semantic HTML**: Prefer native elements (`<button>`) over roles (`role="button"`)
+3. **Dynamic IDs**: Use template strings for related IDs (`${id}-popup`, `${id}-listbox`)
+4. **State attributes**: Use conditional rendering for state-dependent attributes
+5. **Icon buttons**: Always provide `aria-label` for icon-only buttons
+6. **Full coverage**: Every ARIA spec rule must match rendered HTML
+
+### Rule Coverage
+
+If an ARIA spec rule doesn't match any rendered HTML:
+
+1. **Check if spec is outdated** — update selector to match current rendering
+2. **Add missing template** — create template for the scenario (disabled, expanded, etc.)
+3. **Export from index.ts** — so consuming products can import the scenario
+
+### Example Pattern
+
+```tsx
+// Component with accessibility attributes
+<div
+    className="k-dialog"
+    role="dialog"
+    aria-modal={modal ? 'true' : undefined}
+    aria-labelledby={`${id}-title`}
+>
+    <div id={`${id}-title`} className="k-dialog-title">{title}</div>
+</div>
+```
+
+### Accessibility Commands
+
+```bash
+npm run test:aria [component]   # Validate against aria/*.md spec rules
+npm run test:wcag [component]   # Validate against WAI-ARIA via axe-core
+npm run test:a11y               # Run both ARIA + WCAG + contrast tests
+```
+
 ## Related Documentation
 
 - Root instructions: `../../.github/copilot-instructions.md`
 - Package README: `../README.md`
+- Accessibility prompt: `../../.github/prompts/accessibility.prompt.md`
 
