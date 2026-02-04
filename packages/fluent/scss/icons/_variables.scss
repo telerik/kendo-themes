@@ -40,7 +40,7 @@ $kendo-icon-spacing: k-spacing(2) !default;
 $kendo-icon-padding: k-spacing(1) !default;
 /// The color of accent icons.
 /// @group icon
-$kendo-accent-icon-color: var( --kendo-accent-icon-color, #{k-color(tertiary-active)} ) !default;
+$kendo-accent-icon-color: var( --kendo-accent-icon-color, #87A7FF ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/icons/_variables.scss" with (
     $kendo-icon-default-size: $kendo-icon-default-size,
