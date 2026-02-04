@@ -1,48 +1,75 @@
-﻿import { ChipList } from '../chip-list.spec';
-import { KendoChipProps } from '../chip.spec';
-import { ChipNormal } from '../templates/chip-normal';
-import { ChipAction } from '../chip-action';
+import { ChipAction } from "../chip-action";
+import { Chip, KendoChipProps } from "../chip.spec";
 
-const options = ChipList.options;
+const states = Chip.states;
+const defaults = Chip.defaultOptions;
+const options = Chip.options;
 const variants = [];
-const states = ChipList.states;
-const defaults = ChipList.defaultOptions;
 const modifiers = [
   {
     name: 'icon',
     title: 'Icon',
-    type: 'boolean',
-  },
-  {
-    name: 'actions',
-    title: 'Actions',
-    type: 'boolean',
   },
   {
     name: 'avatar',
     title: 'Avatar',
-    type: 'boolean',
+  },
+  {
+    name: 'remove-icon',
+    title: '`Remove` Icon',
+  },
+  {
+    name: 'more-options',
+    title: '`More options` Icon',
   },
 ];
 
-export const ChipDemo = (props:
-  KendoChipProps & {
-    modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean }
-  }) => {
-  const { size, modifiers } = props;
-  const hasIcon = modifiers?.icon;
-  const hasActions = modifiers?.actions;
-  const hasAvatar = modifiers?.avatar;
+export const ChipDemo = (
+  props: KendoChipProps & {
+    modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
+  }
+) => {
+  const { modifiers: mods, ...other } = props;
+
+  let additionalProps: any = {};
+
+  Object.keys(mods || {}).forEach((modifier) => {
+    switch (modifier) {
+      case 'icon':
+        additionalProps.icon = mods?.[modifier] ? 'arrow-down' : undefined;
+        break;
+      case 'avatar':
+        additionalProps.showAvatar = mods?.[modifier] ? true : false;
+        additionalProps.avatarImage = mods?.[modifier] ? "https://demos.telerik.com/kendo-ui/content/web/Customers/RICSU.jpg" : undefined;
+        break;
+      case 'more-options':
+        if (!additionalProps.actions) {
+          additionalProps.actions = [];
+        }
+        additionalProps.actions[0] = mods?.[modifier] ? (
+          <ChipAction type="more" />
+        ) : undefined;
+        break;
+      case 'remove-icon':
+        if (!additionalProps.actions) {
+          additionalProps.actions = [];
+        }
+        additionalProps.actions[1] = mods?.[modifier] ? (
+          <ChipAction type="remove" />
+        ) : undefined;
+        break;
+
+      default:
+        break;
+    }
+  });
 
   return (
-    <ChipList size={size}>
-      <ChipNormal {...props} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-      <ChipNormal {...props} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-      <ChipNormal {...props} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-    </ChipList>
+    <Chip {...other} {...additionalProps}>
+      Chip component
+    </Chip>
   );
 }
-
 
 ChipDemo.options = options;
 ChipDemo.states = states;
@@ -51,4 +78,3 @@ ChipDemo.defaultOptions = defaults;
 ChipDemo.modifiers = modifiers;
 
 export default ChipDemo;
-
