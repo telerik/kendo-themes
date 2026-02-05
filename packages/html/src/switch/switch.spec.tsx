@@ -47,6 +47,8 @@ export const Switch: KendoComponent<KendoSwitchProps & KendoSwitchState & React.
         hover,
         focus,
         disabled,
+        required,
+        invalid,
         ...other
     } = props;
 
@@ -54,6 +56,14 @@ export const Switch: KendoComponent<KendoSwitchProps & KendoSwitchState & React.
 
         <span
             {...other}
+            role="switch"
+            tabIndex={0}
+            aria-label={props['aria-label'] || 'Switch'}
+            aria-checked={checked ? 'true' : 'false'}
+            aria-required={required ? 'true' : undefined}
+            aria-invalid={invalid ? 'true' : undefined}
+            aria-disabled={disabled ? 'true' : undefined}
+            aria-describedby={props['aria-describedby']}
             className={classNames(
                 props.className,
                 SWITCH_CLASSNAME,
