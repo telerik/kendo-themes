@@ -41,11 +41,10 @@ function getStagedFiles() {
             // Check files changed in unpushed commits
             const output = execSync('git diff --name-only origin/$(git rev-parse --abbrev-ref HEAD)..HEAD 2>/dev/null || git diff --name-only HEAD~1..HEAD', { encoding: 'utf-8' });
             return output.trim().split('\n').filter(f => f);
-        } else {
-            // Check staged files (for pre-commit)
-            const output = execSync('git diff --cached --name-only', { encoding: 'utf-8' });
-            return output.trim().split('\n').filter(f => f);
         }
+        // Check staged files (for pre-commit)
+        const output = execSync('git diff --cached --name-only', { encoding: 'utf-8' });
+        return output.trim().split('\n').filter(f => f);
     } catch {
         return [];
     }
@@ -53,6 +52,12 @@ function getStagedFiles() {
 
 function extractComponents(files) {
     const components = new Set();
+    
+    // Map ARIA spec names to actual component folder names
+    const componentNameMap = {
+        'radiobutton': 'radio'
+    };
+    
     for (const file of files) {
         const tsxMatch = file.match(/packages\/html\/src\/([^/]+)\//);
         if (tsxMatch) {
@@ -60,7 +65,9 @@ function extractComponents(files) {
         }
         const ariaMatch = file.match(/aria\/([^_]+)_aria\.md$/);
         if (ariaMatch) {
-            components.add(ariaMatch[1]);
+            const specName = ariaMatch[1];
+            const componentName = componentNameMap[specName] || specName;
+            components.add(componentName);
         }
     }
     return Array.from(components);
