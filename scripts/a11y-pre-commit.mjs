@@ -58,16 +58,24 @@ function extractComponents(files) {
         'radiobutton': 'radio'
     };
     
+    // Skip shared/utility folders that are not standalone components
+    const skipComponents = new Set(['input']);
+    
     for (const file of files) {
         const tsxMatch = file.match(/packages\/html\/src\/([^/]+)\//);
         if (tsxMatch) {
-            components.add(tsxMatch[1]);
+            const componentName = tsxMatch[1];
+            if (!skipComponents.has(componentName)) {
+                components.add(componentName);
+            }
         }
         const ariaMatch = file.match(/aria\/([^_]+)_aria\.md$/);
         if (ariaMatch) {
             const specName = ariaMatch[1];
             const componentName = componentNameMap[specName] || specName;
-            components.add(componentName);
+            if (!skipComponents.has(componentName)) {
+                components.add(componentName);
+            }
         }
     }
     return Array.from(components);
