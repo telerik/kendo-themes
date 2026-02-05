@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/segmented-control/_layout.scss" as *;
+
+
+@mixin kendo-segmented-control--layout() {
+    @include kendo-segmented-control--layout-base();
+}

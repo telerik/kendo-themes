@@ -12,7 +12,7 @@ import {
 import { Button } from '../button';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListCustomValue, ListItem } from '../list';
+import { List, ListContent, ListCustomValue, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
 import { COMBOBOX_FOLDER_NAME, COMBOBOX_MODULE_NAME } from './constants';
@@ -141,7 +141,6 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                 <Button
                     className="k-input-button"
                     icon="caret-alt-down"
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                 />
@@ -166,9 +165,11 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                 >
                     <div className="k-list-container">
                         <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
+                            <ListContent>
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>

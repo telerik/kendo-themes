@@ -16,3 +16,4 @@ export * from './templates/timeline-normal';
 export * from './templates/timeline-normal-collapsible';
 export * from './templates/timeline-normal-alternating';
 export * from './templates/timeline-horizontal';
+export * from './demos/timeline';

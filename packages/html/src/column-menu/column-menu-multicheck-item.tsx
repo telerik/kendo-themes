@@ -9,10 +9,6 @@ const options = {
 
 const states = [];
 
-const defaultOptions = {
-    size: Size.medium
-};
-
 export type KendoColumnMenuMulticheckItemOptions = {
     size?: (typeof options.size)[number] | null;
 }
@@ -48,6 +44,5 @@ export const ColumnMenuMulticheckItem = (
 
 ColumnMenuMulticheckItem.states = states;
 ColumnMenuMulticheckItem.options = options;
-ColumnMenuMulticheckItem.defaultOptions = defaultOptions;
 
 export default ColumnMenuMulticheckItem;

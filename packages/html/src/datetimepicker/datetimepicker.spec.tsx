@@ -129,7 +129,6 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                 <Button
                     className="k-input-button"
                     icon={tab === 'time' ? "clock" : "calendar"}
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                 />
@@ -151,7 +150,7 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                     footer={
 
                         <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" className="k-time-cancel" />
+                            <Button text="Cancel" size="large" className="k-time-cancel" />
                             <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
                         </ActionSheetFooter>
                     }

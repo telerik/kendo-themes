@@ -4150,7 +4150,7 @@ The following table lists the available variables for customizing the Theme Core
     <td>$kendo-elevation</td>
     <td>Map</td>
     <td><code>$default-elevation</code></td>
-    <td><ul><li>1: (0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>3: (0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>4: (0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>5: (0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>6: (0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>7: (0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>8: (0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>9: (0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12))</li></ul></td>
+    <td><ul><li>1: (0 2px 3px rgba(0, 0, 0, 0.04))</li><li>2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>3: (0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>4: (0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>5: (0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>6: (0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>7: (0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>8: (0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12))</li><li>9: (0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
@@ -4608,7 +4608,7 @@ The following table lists the available variables for customizing the Theme Core
     <td>$kendo-easings</td>
     <td>Map</td>
     <td><code>$default-easings</code></td>
-    <td><ul><li>linear: cubic-bezier(0, 0, 1, 1)</li><li>accelerate: cubic-bezier(0.42, 0, 1, 1)</li><li>decelerate: cubic-bezier(0, 0, 0.58, 1)</li><li>standard: cubic-bezier(0.42, 0, 0.58, 1)</li><li>sharp: cubic-bezier(0.75, 0, 0.25, 1)</li><li>bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55)</li><li>elastic: cubic-bezier(0.5, -0.5, 0.5, 1.5)</li></ul></td>
+    <td><ul><li>linear: cubic-bezier(0, 0, 1, 1)</li><li>accelerate: cubic-bezier(0.42, 0, 1, 1)</li><li>decelerate: cubic-bezier(0, 0, 0.58, 1)</li><li>standard: cubic-bezier(0.42, 0, 0.58, 1)</li><li>sharp: cubic-bezier(0.75, 0, 0.25, 1)</li><li>bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55)</li><li>elastic: cubic-bezier(0.5, -0.5, 0.5, 1.5)</li><li>stretchy: cubic-bezier(0.07, 1.81, 0.3, 0.81)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global map of motion easing tokens.</div></div>
@@ -4983,6 +4983,58 @@ The following table lists the available variables for customizing the Theme Core
 </tbody>
 </table>
 
+### SegmentedControl
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-segmented-control-sizes</td>
+    <td></td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-segmented-control-sm-font-size,
+        line-height: $kendo-segmented-control-sm-line-height,
+        button-padding-x: $kendo-segmented-control-sm-button-padding-x,
+        button-padding-y: $kendo-segmented-control-sm-button-padding-y,
+        button-gap: $kendo-segmented-control-sm-button-gap
+    ),
+    md: (
+        font-size: $kendo-segmented-control-md-font-size,
+        line-height: $kendo-segmented-control-md-line-height,
+        button-padding-x: $kendo-segmented-control-md-button-padding-x,
+        button-padding-y: $kendo-segmented-control-md-button-padding-y,
+        button-gap: $kendo-segmented-control-md-button-gap
+    ),
+    lg: (
+        font-size: $kendo-segmented-control-lg-font-size,
+        line-height: $kendo-segmented-control-lg-line-height,
+        button-padding-x: $kendo-segmented-control-lg-button-padding-x,
+        button-padding-y: $kendo-segmented-control-lg-button-padding-y,
+        button-gap: $kendo-segmented-control-lg-button-gap
+    )
+)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Segmented Control.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Signature
 
 <table class="theme-variables">
@@ -5024,6 +5076,50 @@ The following table lists the available variables for customizing the Theme Core
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Signature.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### SmartBox
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-smart-box-sizes</td>
+    <td></td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-smart-box-sm-padding-x,
+        prefix-margin-x: $kendo-smart-box-sm-prefix-margin-x,
+    ),
+    md: (
+        padding-x: $kendo-smart-box-md-padding-x,
+        prefix-margin-x: $kendo-smart-box-md-prefix-margin-x,
+    ),
+    lg: (
+        padding-x: $kendo-smart-box-lg-padding-x,
+        prefix-margin-x: $kendo-smart-box-lg-prefix-margin-x,
+
+    )
+)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Smart box components.</div></div>
     </td>
 </tr>
 </tbody>

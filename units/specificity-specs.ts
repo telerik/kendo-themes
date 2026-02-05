@@ -66,6 +66,7 @@ import { DropdownTree } from "../packages/html/src/dropdowntree/dropdowntree.spe
 import { Dropzone } from "../packages/html/src/dropzone/dropzone.spec";
 import { Editor } from "../packages/html/src/editor/editor.spec";
 import { ExpansionPanel } from "../packages/html/src/expansion-panel/expansion-panel.spec";
+import { FileBox } from "../packages/html/src/file-box/file-box.spec";
 import { FloatingActionButton } from "../packages/html/src/fab/fab.spec";
 import { FileManager } from "../packages/html/src/filemanager/filemanager.spec";
 import { FileManagerBreadcrumb } from "../packages/html/src/filemanager/filemanager-breadcrumb.spec";
@@ -111,7 +112,6 @@ import { Icon } from "../packages/html/src/icon/icon.spec";
 import { ImageEditor } from "../packages/html/src/imageeditor/imageeditor.spec";
 import { Input } from "../packages/html/src/input/input.spec";
 import { List } from "../packages/html/src/list/list.spec";
-import { ListAngular } from "../packages/html/src/list/list-angular.spec";
 import { ListContainer } from "../packages/html/src/list/list-container.spec";
 // import { ListItem } from "../packages/html/src/list/list-item.spec";
 import { ListBox } from "../packages/html/src/listbox/listbox.spec";
@@ -148,6 +148,7 @@ import { Popover } from "../packages/html/src/popover/popover.spec";
 import { Popup } from "../packages/html/src/popup/popup.spec";
 import { ProgressBar } from "../packages/html/src/progressbar/progressbar.spec";
 import { Prompt } from "../packages/html/src/prompt/prompt.spec";
+import { PromptBox } from "../packages/html/src/prompt-box/prompt-box.spec";
 // import { PropertyGrid } from "../packages/html/src/propertygrid/propertygrid.spec";
 import { RadioButton } from "../packages/html/src/radio/radio.spec";
 import { RadioGroup } from "../packages/html/src/radio/radio-group.spec";
@@ -171,9 +172,11 @@ import { SchedulerToolbar } from "../packages/html/src/scheduler/scheduler-toolb
 import { SchedulerView } from "../packages/html/src/scheduler/scheduler-view.spec";
 // import { SearchBar } from "../packages/html/src/searchbar/searchbar.spec";
 import { Searchbox } from "../packages/html/src/searchbox/searchbox.spec";
+import { SegmentedControl } from "../packages/html/src/segmented-control/segmented-control.spec";
 import { Signature } from "../packages/html/src/signature/signature.spec";
 import { Skeleton } from "../packages/html/src/skeleton/skeleton.spec";
 import { Slider } from "../packages/html/src/slider/slider.spec";
+import { SmartBox } from "../packages/html/src/smart-box/smart-box.spec";
 import { SpeechToTextButton } from "../packages/html/src/speech-to-text-button/speech-to-text-button.spec";
 // import { SpinButton } from "../packages/html/src/spinbutton/spinbutton.spec";
 import { SplitButton } from "../packages/html/src/split-button/split-button.spec";
@@ -237,7 +240,6 @@ import { Upload } from "../packages/html/src/upload/upload.spec";
 import { Window } from "../packages/html/src/window/window.spec";
 import { WindowContent } from "../packages/html/src/window/window-content.spec";
 import { Wizard } from "../packages/html/src/wizard/wizard.spec";
-
 import { KendoComponent } from "../packages/html/src/_types/component";
 
 export interface SpecComponent extends KendoComponent<any> {
@@ -324,6 +326,7 @@ export const allComponents: SpecComponent[] = [
   Dropzone,
   Editor,
   ExpansionPanel,
+  FileBox,
   FloatingActionButton,
   FileManager,
   FileManagerBreadcrumb,
@@ -369,7 +372,6 @@ export const allComponents: SpecComponent[] = [
   ImageEditor,
   Input,
   List,
-  ListAngular,
   ListContainer,
   // ListItem, - SKIPPED, specificity error
   ListBox,
@@ -406,6 +408,7 @@ export const allComponents: SpecComponent[] = [
   Popup,
   ProgressBar,
   Prompt,
+  PromptBox,
   // PropertyGrid, - SKIPPED, class does not have styles
   RadioButton,
   RadioGroup,
@@ -429,9 +432,11 @@ export const allComponents: SpecComponent[] = [
   SchedulerView,
   // SearchBar, - SKIPPED, specificity error
   Searchbox,
+  SegmentedControl,
   Signature,
   Skeleton,
   Slider,
+  SmartBox,
   SpeechToTextButton,
   // SpinButton, - SKIPPED, class does not have styles
   SplitButton,

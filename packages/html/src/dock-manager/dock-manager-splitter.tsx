@@ -15,6 +15,7 @@ export const DockManagerSplitter = (
 ) => {
     const {
         children,
+        panes,
         ...other
     } = props;
 
@@ -25,6 +26,7 @@ export const DockManagerSplitter = (
                 props.className,
                 DOCKMANAGERSPLITTER_CLASSNAME,
             )}
+            panes={panes}
         >
             {children}
         </Splitter>

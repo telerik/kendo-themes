@@ -13,7 +13,7 @@ import { Button } from '../button';
 import { ChipList } from '../chip';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListCustomValue, ListItem } from '../list';
+import { List, ListContent, ListCustomValue, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
 import { MULTISELECT_FOLDER_NAME, MULTISELECT_MODULE_NAME } from './constants';
@@ -155,7 +155,6 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                     <Button
                         className="k-input-button"
                         icon="caret-alt-down"
-                        rounded={null}
                         size={size}
                         fillMode={fillMode}
                     />
@@ -181,10 +180,11 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                 >
                     <div className="k-list-container">
                         <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
-                            <ListItem text="List item" />
+                            <ListContent>
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                                <ListItem text="List item" />
+                            </ListContent>
                         </List>
                     </div>
                 </ActionSheet>

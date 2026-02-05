@@ -1,0 +1,143 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+
+
+// Segmented control
+
+/// The default size of the Segmented control.
+/// @group segmented-control
+/// @role default
+$kendo-segmented-control-default-size: "md" !default;
+
+/// The horizontal padding of the Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-padding-x: k-spacing(0.5) !default;
+/// The vertical padding of the Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-padding-y: k-spacing(0.5) !default;
+/// The border radius of the Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-border-radius: k-border-radius(full) !default;
+
+/// The background color of the Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-bg: color-mix(in srgb, k-color(base), currentColor 6%) !default;
+/// The text color of the Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-text: k-color(on-base) !default;
+
+/// The font size of the small Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-sm-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the medium Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-md-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the large Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+
+/// The font family of the Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-font-family: var( --kendo-font-family, inherit ) !default;
+
+/// The line height of the small Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-sm-line-height: var( --kendo-line-height, normal ) !default;
+/// The line height of the medium Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-md-line-height: var( --kendo-line-height, normal ) !default;
+/// The line height of the large Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
+
+/// The border radius of the Segmented Control thumb.
+/// @group segmented-control
+$kendo-segmented-control-thumb-border-radius: $kendo-segmented-control-border-radius !default;
+/// The box shadow of the Segmented Control thumb.
+/// @group segmented-control
+$kendo-segmented-control-thumb-shadow: none !default;
+/// The background of the Segmented Control thumb.
+/// @group segmented-control
+$kendo-segmented-control-thumb-bg: k-color(app-surface) !default;
+/// The text color of the Segmented Control thumb.
+/// @group segmented-control
+$kendo-segmented-control-thumb-text: $kendo-segmented-control-text !default;
+
+/// The horizontal padding of the small Segmented Control button.
+/// @group segmented-control
+$kendo-segmented-control-sm-button-padding-x: k-spacing(3) !default;
+/// The horizontal padding of the medium Segmented Control button.
+/// @group segmented-control
+$kendo-segmented-control-md-button-padding-x: k-spacing(3) !default;
+/// The horizontal padding of the large Segmented Control button.
+/// @group segmented-control
+$kendo-segmented-control-lg-button-padding-x: k-spacing(3) !default;
+
+/// The vertical padding of the small Segmented Control button.
+/// @group segmented-control
+$kendo-segmented-control-sm-button-padding-y: k-spacing(1px) !default;
+/// The vertical padding of the medium Segmented Control button.
+/// @group segmented-control
+$kendo-segmented-control-md-button-padding-y: calc( #{k-spacing(.5)} + 1px ) !default;
+/// The vertical padding of the large Segmented Control button.
+/// @group segmented-control
+$kendo-segmented-control-lg-button-padding-y: calc( #{k-spacing(1.5)} + 1px ) !default;
+
+
+/// The width of the border around the Segmented Control button.
+/// @group segmented-control
+$kendo-segmented-control-button-border-width: 0px !default;
+/// The border radius of the Segmented Control button.
+/// @group segmented-control
+$kendo-segmented-control-button-border-radius: $kendo-segmented-control-thumb-border-radius !default;
+
+/// The gap of the items inside the small Segmented Control buttons.
+/// @group segmented-control
+$kendo-segmented-control-sm-button-gap: k-spacing(1.5) !default;
+/// The gap of the items inside the medium Segmented Control buttons.
+/// @group segmented-control
+$kendo-segmented-control-md-button-gap: k-spacing(1.5) !default;
+/// The gap of the items inside the large Segmented Control buttons.
+/// @group segmented-control
+$kendo-segmented-control-lg-button-gap: k-spacing(2) !default;
+
+/// The background color of the hovered button inside Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-button-hover-bg: color-mix(in srgb, currentColor 16%, k-color(base-hover)) !default;
+/// The indication of the focused button inside Segmented Control.
+/// @group segmented-control
+$kendo-segmented-control-button-focus-indicator: inset 0 0 0 2px color-mix(in srgb, currentColor 35%, transparent) !default;
+
+
+@forward "@progress/kendo-theme-core/scss/components/segmented-control/_variables.scss" with (
+    $kendo-segmented-control-default-size: $kendo-segmented-control-default-size,
+    $kendo-segmented-control-padding-x: $kendo-segmented-control-padding-x,
+    $kendo-segmented-control-padding-y: $kendo-segmented-control-padding-y,
+    $kendo-segmented-control-border-radius: $kendo-segmented-control-border-radius,
+    $kendo-segmented-control-bg: $kendo-segmented-control-bg,
+    $kendo-segmented-control-text: $kendo-segmented-control-text,
+    $kendo-segmented-control-sm-font-size: $kendo-segmented-control-sm-font-size,
+    $kendo-segmented-control-md-font-size: $kendo-segmented-control-md-font-size,
+    $kendo-segmented-control-lg-font-size: $kendo-segmented-control-lg-font-size,
+    $kendo-segmented-control-font-family: $kendo-segmented-control-font-family,
+    $kendo-segmented-control-sm-line-height: $kendo-segmented-control-sm-line-height,
+    $kendo-segmented-control-md-line-height: $kendo-segmented-control-md-line-height,
+    $kendo-segmented-control-lg-line-height: $kendo-segmented-control-lg-line-height,
+    $kendo-segmented-control-thumb-border-radius: $kendo-segmented-control-thumb-border-radius,
+    $kendo-segmented-control-thumb-shadow: $kendo-segmented-control-thumb-shadow,
+    $kendo-segmented-control-thumb-bg: $kendo-segmented-control-thumb-bg,
+    $kendo-segmented-control-thumb-text: $kendo-segmented-control-thumb-text,
+    $kendo-segmented-control-sm-button-padding-x: $kendo-segmented-control-sm-button-padding-x,
+    $kendo-segmented-control-md-button-padding-x: $kendo-segmented-control-md-button-padding-x,
+    $kendo-segmented-control-lg-button-padding-x: $kendo-segmented-control-lg-button-padding-x,
+    $kendo-segmented-control-sm-button-padding-y: $kendo-segmented-control-sm-button-padding-y,
+    $kendo-segmented-control-md-button-padding-y: $kendo-segmented-control-md-button-padding-y,
+    $kendo-segmented-control-lg-button-padding-y: $kendo-segmented-control-lg-button-padding-y,
+    $kendo-segmented-control-button-border-width: $kendo-segmented-control-button-border-width,
+    $kendo-segmented-control-button-border-radius: $kendo-segmented-control-button-border-radius,
+    $kendo-segmented-control-sm-button-gap: $kendo-segmented-control-sm-button-gap,
+    $kendo-segmented-control-md-button-gap: $kendo-segmented-control-md-button-gap,
+    $kendo-segmented-control-lg-button-gap: $kendo-segmented-control-lg-button-gap,
+    $kendo-segmented-control-button-hover-bg: $kendo-segmented-control-button-hover-bg,
+    $kendo-segmented-control-button-focus-indicator: $kendo-segmented-control-button-focus-indicator,
+);

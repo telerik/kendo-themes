@@ -388,6 +388,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-toolbar-smart-box-min-width</td>
+    <td>Number</td>
+    <td><code>350px</code></td>
+    <td><code>350px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the Smart ToolBox in the Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
     <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>

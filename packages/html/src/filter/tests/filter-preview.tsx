@@ -12,7 +12,32 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <Filter showApplyButton={true}>
+            <Filter
+                showApplyButton={true}
+                expressionPreview={
+                    <FilterPreview
+                        fields={[
+                            { name: "bracket", value: "(" },
+                            { name: "field", value: "Discontinued" },
+                            { name: "criteria", value: "Is equal to" },
+                            { name: "value", value: "'False'" },
+                            { name: "operator", value: "AND" },
+                            { name: "field", value: "Price" },
+                            { name: "criteria", value: "Is greater than" },
+                            { name: "value", value: "'100,00'" },
+                            { name: "operator", value: "AND" },
+                            { name: "bracket", value: "(" },
+                            { name: "bracket", value: "(" },
+                            { name: "field", value: "FirstOrdered" },
+                            { name: "criteria", value: "Is before" },
+                            { name: "value", value: "'Thursday Jan 21 2021'" },
+                            { name: "bracket", value: ")" },
+                            { name: "bracket", value: ")" },
+                            { name: "bracket", value: ")" },
+                        ]}
+                    />
+                }
+            >
                 <FilterToolbar>
                     <Toolbar focus>
                         <ButtonGroup>
@@ -128,27 +153,6 @@ export default () =>(
                         </FilterLines>
                     </FilterItem>
                 </FilterLines>
-                <FilterPreview
-                    fields={[
-                        { name: "bracket", value: "(" },
-                        { name: "field", value: "Discontinued" },
-                        { name: "criteria", value: "Is equal to" },
-                        { name: "value", value: "'False'" },
-                        { name: "operator", value: "AND" },
-                        { name: "field", value: "Price" },
-                        { name: "criteria", value: "Is greater than" },
-                        { name: "value", value: "'100,00'" },
-                        { name: "operator", value: "AND" },
-                        { name: "bracket", value: "(" },
-                        { name: "bracket", value: "(" },
-                        { name: "field", value: "FirstOrdered" },
-                        { name: "criteria", value: "Is before" },
-                        { name: "value", value: "'Thursday Jan 21 2021'" },
-                        { name: "bracket", value: ")" },
-                        { name: "bracket", value: ")" },
-                        { name: "bracket", value: ")" },
-                    ]}>
-                </FilterPreview>
             </Filter>
         </div>
     </>

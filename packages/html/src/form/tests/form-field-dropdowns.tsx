@@ -69,6 +69,7 @@ export default () =>(
                     formButtons={null}
                 >
                     <FormField
+                        orientation="horizontal"
                         label="AutoComplete:"
                         editor={
                             <Autocomplete placeholder="Autocomplete..." />
@@ -77,6 +78,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         label="ComboBox:"
                         editor={
                             <Combobox placeholder="Combobox..." />
@@ -85,6 +87,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         label="DropDownList:"
                         editor={
                             <DropdownList placeholder="DropdownList..." />
@@ -93,6 +96,7 @@ export default () =>(
                     </FormField>
 
                     <FormField
+                        orientation="horizontal"
                         label="MultiSelect:"
                         editor={
                             <MultiSelect

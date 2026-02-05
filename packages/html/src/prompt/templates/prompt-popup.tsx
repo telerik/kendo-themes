@@ -17,7 +17,7 @@ export const PromptInPopup = (props) => (
                     <IconTextButton fillMode="flat" themeColor="primary" icon="comment" rounded="full">Output</IconTextButton>
                     <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full"></IconButton>
                     <span className="k-spacer"></span>
-                    <IconButton fillMode="flat" themeColor="base" icon="x" rounded="full"></IconButton>
+                    <IconButton fillMode="flat" icon="x" rounded="full"></IconButton>
                 </Toolbar>
             </PromptHeader>
             <PromptContent>

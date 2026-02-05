@@ -1,5 +1,6 @@
+import React from 'react';
 import { classNames, optionClassNames, Size } from '../misc';
-import { ListItem, ListGroup, ListContent } from '../list';
+import { ListHeader } from './list-header';
 import { NoData } from '../nodata';
 
 import { KendoComponent } from '../_types/component';
@@ -18,9 +19,11 @@ export type KendoListOptions = {
 
 export type KendoListProps = KendoListOptions & {
     virtualization?: boolean;
-    children?: React.JSX.Element[];
-    optionLabel?: React.JSX.Element;
-    customValue?: React.JSX.Element;
+    children?: React.ReactNode;
+    header?: React.ReactNode;
+    optionLabel?: React.ReactNode;
+    customValue?: React.ReactNode;
+    noData?: React.ReactNode;
     screenReaders?: boolean;
 };
 
@@ -38,63 +41,19 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
         size,
         virtualization,
         children,
+        header,
         optionLabel,
         customValue,
+        noData,
         screenReaders,
         ...other
     } = props;
 
-    let listHeader: string | undefined;
-    let listGroup: string | number | boolean | React.JSX.Element | null | undefined;
-    let listContent: string | number | boolean | React.JSX.Element | null | undefined;
-    let listNoData: React.JSX.Element | undefined;
-    const listChildren : React.JSX.Element[] = [];
-
-    if (children) {
-        children.map((child, index) => {
-            if ( child.type === ListGroup) {
-                if (child.props.root === true) {
-                    listHeader = child.props.label;
-
-                    child.props.children.map( (optChild, index) => {
-                        listChildren.push(
-                            <ListItem
-                                key={`optChild-${index}-${new Date().getTime()}`}
-                                {...optChild.props}
-                            />
-                        );
-                    });
-
-                } else {
-                    child.props.children.forEach( ( optChild, index ) => {
-                        let groupLabel = '';
-
-                        if ( index === 0 ) {
-                            groupLabel = child.props.label;
-                        }
-
-                        listChildren.push(
-                            <ListItem
-                                className={index === 0 ? 'k-first' : ''}
-                                key={`groupLabel-${index}-${new Date().getTime()}`}
-                                {...optChild.props}
-                                groupLabel={groupLabel}
-                            />
-                        );
-                    });
-                }
-
-                listGroup = <ListGroup label={listHeader} virtualization={virtualization}>{listChildren}</ListGroup>;
-
-            } else if ( child.type === ListItem ) {
-                listChildren.push( <ListItem key={`${child.type}-${index}`} {...child.props} /> );
-                listContent = <ListContent virtualization={virtualization}>{listChildren}</ListContent>;
-                screenReaders && (listNoData = <NoData className="k-sr-only">{listChildren.length} items found.</NoData>);
-            }
-        });
-    } else {
-        listNoData = <NoData>No data found.</NoData>;
-    }
+    const childArray = React.Children.toArray(children);
+    const firstChild = childArray[0] as React.ReactElement<{ children?: React.ReactNode }>;
+    const itemCount = firstChild?.props?.children
+        ? React.Children.count(firstChild.props.children)
+        : React.Children.count(children);
 
     return (
         <div
@@ -111,9 +70,9 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
             )}>
             {optionLabel}
             {customValue}
-            {listGroup}
-            {listContent}
-            {listNoData}
+            {header && <ListHeader>{header}</ListHeader>}
+            {children ? children : (noData !== undefined ? noData : <NoData>No data found.</NoData>)}
+            {screenReaders && children && <NoData className="k-sr-only">{itemCount} items found.</NoData>}
         </div>
     );
 };

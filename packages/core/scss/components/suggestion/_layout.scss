@@ -2,6 +2,7 @@
 @use "../../mixins/index.scss" as *;
 @use "../../motion/index.scss" as *;
 @use "../../spacing/index.scss" as *;
+@use "../../z-index/index.scss" as *;
 
 @mixin kendo-suggestion--layout-base() {
     .k-suggestion-scrollwrap {
@@ -10,29 +11,31 @@
         display: flex;
         align-items: center;
         position: relative;
-        gap: $kendo-suggestion-spacing;
-
-        .k-suggestion-group {
-            padding-block: calc( #{$kendo-suggestion-padding-y} / 2 );
-            flex: 1 1 auto;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            scrollbar-width: none;
-            white-space: nowrap;
-        }
+        gap: k-spacing(.5);
     }
 
     .k-suggestion-group {
+        padding-block: calc( #{$kendo-suggestion-padding-y} / 2 );
         display: flex;
+        flex: 1;
         flex-wrap: wrap;
         gap: $kendo-suggestion-spacing;
         align-self: normal;
+        overflow: hidden;
 
         &.k-suggestion-group-scrollable {
             flex-wrap: nowrap;
+        }
+
+        .k-suggestions-scroll {
+            padding-block: calc( #{$kendo-suggestion-padding-y} / 2 );
+            margin-block: calc( #{$kendo-suggestion-padding-y} / -2 );
+            display: flex;
             overflow-x: auto;
             scrollbar-width: none;
-            padding-block: calc( #{$kendo-suggestion-padding-y} / 2 );
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            gap: $kendo-suggestion-spacing;
         }
     }
 
@@ -44,6 +47,11 @@
         }
     }
 
+    .k-suggestion-group-scrollable,
+    .k-suggestion-scrollwrap .k-suggestion-group {
+        position: relative;
+    }
+
     .k-suggestion {
         @include border-radius( $kendo-suggestion-border-radius );
         max-width: 100%;
@@ -52,6 +60,7 @@
         box-sizing: border-box;
         border-width: $kendo-suggestion-border-width;
         border-style: $kendo-suggestion-border-style;
+        font-size: $kendo-suggestion-font-size;
         line-height: $kendo-suggestion-line-height;
         flex: 0 0 auto;
         transition: background-color k-transition(rapid), box-shadow k-transition(rapid);
@@ -60,6 +69,22 @@
         white-space: normal;
     }
 
+    .k-suggestion-group-scrollable-end::before,
+    .k-suggestion-group-scrollable-start::after,
+    .k-suggestion-scrollwrap .k-suggestion-group-scrollable-end::before,
+    .k-suggestion-scrollwrap .k-suggestion-group-scrollable-start::after {
+        content: '';
+        aspect-ratio: .3;
+        position: absolute;
+        top: 0;
+        z-index: k-z-index("base", 3);
+        height: calc( #{$kendo-suggestion-font-size} * #{$kendo-suggestion-line-height} + #{$kendo-suggestion-padding-y} * 2 + #{$kendo-suggestion-padding-y} + #{$kendo-suggestion-border-width} * 2);
+    }
+
+    .k-suggestion-group-scrollable-start::after,
+    .k-suggestion-scrollwrap .k-suggestion-group-scrollable-start::after {
+        inset-inline-end: 0;
+    }
 
 }
 

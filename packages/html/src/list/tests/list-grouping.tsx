@@ -1,10 +1,14 @@
-import { ListWithGrouping, VirtualListWithGrouping, AngularListWithGrouping, AngularVirtualListWithGrouping } from '../../list';
+import { List, ListWithGrouping, VirtualListWithGrouping, ListItem, ListGroupItem, ListContent, ListUl } from '../../list';
 
 const style = `
     .k-virtual-list > .k-item,
     .k-virtual-list .k-list-item,
     .k-virtual-list .k-list-group-item {
         position: relative;
+    }
+
+    section {
+        outline: 1px dotted;
     }
 `;
 
@@ -13,10 +17,10 @@ export default () =>(
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
-            <span>Universal</span>
-            <span>Universal virtual</span>
-            <span>Universal (rtl)</span>
-            <span>Universal virtual (rtl)</span>
+            <span>Grouping with sticky header</span>
+            <span>Virtual grouping with sticky header</span>
+            <span>Grouping with sticky header (rtl)</span>
+            <span>Virtual grouping with sticky header (rtl)</span>
 
             <section>
                 <ListWithGrouping></ListWithGrouping>
@@ -34,25 +38,153 @@ export default () =>(
                 <VirtualListWithGrouping></VirtualListWithGrouping>
             </section>
 
-            <span>Angular</span>
-            <span>Angular virtual</span>
-            <span>Angular (rtl)</span>
-            <span>Angular virtual (rtl)</span>
+
+            <span>Grouping</span>
+            <span>Virtual grouping</span>
+            <span>Grouping (rtl)</span>
+            <span>Virtual grouping (rtl)</span>
+
 
             <section>
-                <AngularListWithGrouping></AngularListWithGrouping>
+                <List>
+                    <ListContent grouping>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem>List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem>Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
             </section>
 
-            <section>
-                <AngularVirtualListWithGrouping></AngularVirtualListWithGrouping>
+                       <section>
+                <List virtualization>
+                    <ListContent grouping virtualization>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem>List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem>Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
             </section>
 
             <section dir="rtl">
-                <AngularListWithGrouping></AngularListWithGrouping>
+                <List>
+                    <ListContent grouping>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem>List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem>Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
             </section>
 
             <section dir="rtl">
-                <AngularVirtualListWithGrouping></AngularVirtualListWithGrouping>
+                <List virtualization>
+                    <ListContent grouping virtualization>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem>List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem>Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
+            </section>
+
+
+            <span>Group with icon</span>
+            <span>Virtual grouping with icon</span>
+            <span>Group with icon (rtl)</span>
+            <span>Virtual grouping with icon (rtl)</span>
+
+            <section>
+                <List>
+                    <ListContent grouping>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem>List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem groupIconName="gear">Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
+            </section>
+
+            <section>
+                <List virtualization>
+                    <ListContent grouping virtualization>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem>List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem groupIconName="gear">Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
+            </section>
+
+            <section dir="rtl">
+                <List>
+                    <ListContent grouping>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem>List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem groupIconName="gear">Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
+            </section>
+
+            <section dir="rtl">
+                <List virtualization>
+                    <ListContent grouping virtualization>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem>List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem groupIconName="gear">Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
             </section>
         </div>
     </>

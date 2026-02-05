@@ -41,7 +41,7 @@ export default () => (
                             <GridToolbar>
                                 <div className="k-badge-container">
                                     <Button icon="filter" selected>Filter</Button>
-                                    <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder></Badge>
+                                    <Badge position="edge" rounded="full" align="top-end" cutoutBorder></Badge>
                                 </div>
                                 <Button icon="arrows-swap">Sort</Button>
                                 <Button icon="group">Group</Button>
@@ -158,7 +158,7 @@ export default () => (
                             <GridToolbar>
                                 <div className="k-badge-container">
                                     <Button icon="filter" selected>Filter</Button>
-                                    <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder></Badge>
+                                    <Badge position="edge" rounded="full" align="top-end" cutoutBorder></Badge>
                                 </div>
                                 <Button icon="arrows-swap">Sort</Button>
                                 <Button icon="group">Group</Button>

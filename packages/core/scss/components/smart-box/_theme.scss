@@ -1,0 +1,5 @@
+@mixin kendo-smart-box--theme-base() {
+    .k-smart-box-no-data .k-icon {
+        opacity: 0.3;
+    }
+}

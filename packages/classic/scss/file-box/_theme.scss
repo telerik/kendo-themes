@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/file-box/_theme.scss" as *;
+
+
+@mixin kendo-file-box--theme() {
+    @include kendo-file-box--theme-base();
+}

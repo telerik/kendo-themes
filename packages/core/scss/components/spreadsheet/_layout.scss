@@ -178,7 +178,8 @@
         flex: 1 1 auto;
         overflow: hidden;
     }
-    .k-spreadsheet-sheets .k-tabstrip-items-wrapper {
+    // Remove tabstrip border (both real and pseudo-element)
+    .k-spreadsheet-sheets.k-tabstrip-scrollable.k-tabstrip-bottom > .k-tabstrip-items-wrapper::after {
         border-width: 0;
     }
 

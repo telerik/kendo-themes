@@ -1,0 +1,38 @@
+@use "../../mixins/index.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-segmented-control--theme-base() {
+    .k-segmented-control {
+        background-color: $kendo-segmented-control-bg;
+        color: $kendo-segmented-control-text;
+    }
+
+    .k-segmented-control-thumb {
+        background-color: $kendo-segmented-control-thumb-bg;
+        box-shadow: $kendo-segmented-control-thumb-shadow;
+    }
+
+    .k-segmented-control-button {
+        color: inherit;
+        background-color: transparent;
+
+        &:hover,
+        &.k-hover {
+            background-color: $kendo-segmented-control-button-hover-bg;
+        }
+
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-segmented-control-button-focus-indicator, true, true );
+        }
+
+        &.k-selected {
+            color: $kendo-segmented-control-thumb-text;
+
+            &:hover,
+            &.k-hover {
+                background-color: transparent;
+            }
+        }
+    }
+}

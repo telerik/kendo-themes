@@ -129,7 +129,7 @@ export default () => (
                                 <Button icon="filter">Filter</Button>
                                 <div className="k-badge-container">
                                     <Button icon="arrows-swap" selected>Sort</Button>
-                                    <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder></Badge>
+                                    <Badge position="edge" rounded="full" align="top-end" cutoutBorder></Badge>
                                 </div>
                                 <Button icon="group">Group</Button>
                                 <Button icon="columns">Manage Columns</Button>
@@ -223,7 +223,7 @@ export default () => (
                                 <Button icon="filter">Filter</Button>
                                 <div className="k-badge-container">
                                     <Button icon="arrows-swap" selected>Sort</Button>
-                                    <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder></Badge>
+                                    <Badge position="edge" rounded="full" align="top-end" cutoutBorder></Badge>
                                 </div>
                                 <Button icon="group">Group</Button>
                                 <Button icon="columns">Manage Columns</Button>

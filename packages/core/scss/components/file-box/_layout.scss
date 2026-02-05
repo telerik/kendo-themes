@@ -1,0 +1,123 @@
+@use "./_variables.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../motion/index.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../z-index/index.scss" as *;
+@use "../button/_variables.scss" as *;
+
+@mixin kendo-file-box--layout-base() {
+
+    .k-file-box-wrapper {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        padding-inline: $kendo-file-box-padding-x;
+        padding-block: $kendo-file-box-padding-y;
+        margin: 0;
+        gap: $kendo-file-box-gap;
+        box-sizing: border-box;
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        &.k-files-wrap {
+            flex-flow: row wrap;
+        }
+
+        &.k-files-vertical {
+            flex-flow: column wrap;
+        }
+    }
+
+    .k-files-scroll {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1;
+        overflow-x: auto;
+        scrollbar-width: none;
+        white-space: nowrap;
+        gap: $kendo-file-box-gap;
+    }
+
+    .k-file-box-wrapper-scrollable-end::before,
+    .k-file-box-wrapper-scrollable-start::after{
+        content: '';
+        aspect-ratio: .5;
+        position: absolute;
+        z-index: k-z-index("base", 3);
+        height: calc(100% - #{$kendo-file-box-padding-y} * 2 );
+    }
+
+    .k-file-box-wrapper-scrollable-end::before {
+        left: 0;
+    }
+
+    .k-file-box-wrapper-scrollable-start::after {
+        right: 0;
+    }
+
+    .k-file-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        box-sizing: border-box;
+        gap: $kendo-file-box-gap;
+        border-width: $kendo-file-box-border-width;
+        border-style: $kendo-file-box-border-style;
+        padding-inline: $kendo-file-box-padding-x;
+        padding-block: $kendo-file-box-padding-y;
+        border-radius: $kendo-file-box-border-radius;
+        width: 100%;
+        min-width: $kendo-file-box-min-width;
+        max-width: $kendo-file-box-max-width;
+        flex-shrink: 0;
+
+        >.k-icon {
+            flex-shrink: 0;
+        }
+
+        .k-file-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: start;
+            flex: 1;
+            overflow: hidden;
+            min-width: 0;
+            max-width: 100%;
+            text-overflow: ellipsis;
+        }
+
+        .k-file-box-name,
+        .k-file-name {
+            font-weight: bold;
+            font-size: $kendo-file-box-name-font-size;
+            line-height: $kendo-file-box-name-line-height;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .k-file-box-size,
+        .k-file-box-status,
+        .k-file-size,
+        .k-file-status {
+            font-size: $kendo-file-box-size-font-size;
+            line-height: $kendo-file-box-size-line-height;
+        }
+
+        &.k-file-deleted {
+            min-height: calc( #{$kendo-button-md-calc-size} + 2 * #{$kendo-file-box-padding-y} + 2 * #{$kendo-file-box-border-width});
+        }
+
+    }
+
+}
+
+@mixin kendo-file-box--layout() {
+    @include kendo-file-box--layout-base();
+}

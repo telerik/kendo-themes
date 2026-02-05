@@ -36,6 +36,9 @@ export * from './radio/index';
 export * from './listbox/index';
 export * from './progressbar/index';
 export * from './slider/index';
+export * from './segmented-control/index';
+export * from './smart-box/index';
+export * from './prompt-box/index';
 
 // Augmented inputs
 export * from './floating-label/index';
@@ -127,12 +130,14 @@ export * from './message-box/index';
 export * from './scrollview/index';
 export * from './overlay/index';
 export * from './prompt/index';
+export * from './file-box/index';
 
 // Dataviz
 // export * from './dataviz/index';
 export * from './map/index';
 export * from './orgchart/index';
 export * from './signature/index';
+export * from './chart/index';
 
 // Editors
 export * from './editor/index';
@@ -153,3 +158,6 @@ export * from './ripple/index';
 
 // PDF
 export * from './pdf/index';
+
+// Configuration Context
+export * from './configuration/configuration-context';

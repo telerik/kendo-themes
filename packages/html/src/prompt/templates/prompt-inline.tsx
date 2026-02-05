@@ -15,7 +15,7 @@ export const PromptInline = ({ text, ...other }: any) => (
                         <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
                         <IconTextButton fillMode="flat" themeColor="primary" icon="insert-bottom">Insert</IconTextButton>
                         <IconTextButton fillMode="flat" themeColor="primary" icon="check">Replace</IconTextButton>
-                        <IconTextButton fillMode="flat" themeColor="base" icon="cancel-outline">Discard</IconTextButton>
+                        <IconTextButton fillMode="flat" icon="cancel-outline">Discard</IconTextButton>
                     </ActionButtons>
                 </Card>
                 <Textarea rows={1} placeholder="Edit, generate or explain ..." resize="none" flow="horizontal" suffixSeparator={false}

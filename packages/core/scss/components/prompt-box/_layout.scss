@@ -1,0 +1,71 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-prompt-box--layout-base() {
+
+    .k-prompt-box {
+        border-radius: $kendo-prompt-box-border-radius;
+        flex-flow: column nowrap;
+
+        .k-input-inner {
+            padding: $kendo-prompt-box-input-inner-padding;
+        }
+    }
+
+    .k-prompt-box-header {
+        padding: $kendo-prompt-box-header-padding $kendo-prompt-box-header-padding 0;
+    }
+
+    .k-prompt-box-affix {
+        padding: $kendo-prompt-box-affix-padding;
+        border-color: inherit;
+        display: flex;
+        align-items: center;
+        flex: none;
+        gap: $kendo-prompt-box-affix-spacing;
+    }
+
+    .k-prompt-box-textarea {
+        resize: none;
+        white-space: nowrap;
+        flex: 1 1 auto;
+    }
+
+    .k-prompt-box-textarea + .k-prompt-box-affix {
+        justify-content: flex-end;
+    }
+
+    .k-prompt-box-content {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .k-prompt-box:not(.k-prompt-box-multiline) {
+        .k-prompt-box-affix:has(+.k-input-inner) {
+            padding-inline-end: 0;
+        }
+
+        .k-input-inner + .k-prompt-box-affix {
+            padding-inline-start: 0;
+        }
+    }
+
+    .k-prompt-box-multiline {
+        .k-prompt-box-content {
+            flex-direction: column;
+        }
+
+        .k-prompt-box-textarea {
+            white-space: normal;
+            overflow: auto;
+        }
+
+        .k-prompt-box-affix:has(+.k-input-inner) {
+            padding-block-end: 0;
+        }
+
+        .k-input-inner + .k-prompt-box-affix {
+            padding-block-start: 0;
+        }
+    }
+
+}

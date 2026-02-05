@@ -13,10 +13,12 @@ export type KendoSuggestionGroupOptions = {};
 
 export type KendoSuggestionGroupProps = KendoSuggestionGroupOptions & {
     layout?: 'scrollable' | 'scrollButtons' | 'wrap';
+    scrollingPosition?: "start" | "end" | "both";
 };
 
 const defaultOptions = {
-    layout: 'scrollable'
+    layout: 'scrollable',
+    scrollingPosition: 'start'
 };
 
 export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -25,6 +27,7 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
 ) => {
     const {
         layout = defaultOptions.layout,
+        scrollingPosition,
         ...other
     } = props;
 
@@ -33,19 +36,27 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
             {...other}
             className={classNames(
                 SUGGESTIONGROUP_CLASSNAME,
-                {[`k-suggestion-group-scrollable`]: layout =='scrollable'},
+                {
+                    [`k-suggestion-group-scrollable`]: layout == 'scrollable',
+                    [`${SUGGESTIONGROUP_CLASSNAME}-scrollable-start`]: scrollingPosition === 'start' || scrollingPosition === 'both',
+                    [`${SUGGESTIONGROUP_CLASSNAME}-scrollable-end`]: scrollingPosition === 'end' || scrollingPosition === 'both'
+                },
                 props.className
             )}>
-            {props.children}
+            {(layout === 'scrollable' || layout === 'scrollButtons') ? (
+                <div className="k-suggestions-scroll">
+                    {props.children}
+                </div>
+            ) : props.children}
         </div>
     );
 
     if (layout =='scrollButtons') {
         return (
             <div className="k-suggestion-scrollwrap">
-                <Button icon="chevron-left"></Button>
+                <Button fillMode={"flat"} icon="chevron-left" size="small"></Button>
                 {suggestionContent}
-                <Button icon="chevron-right"></Button>
+                <Button fillMode={"flat"} icon="chevron-right" size="small"></Button>
             </div>
         );
     }

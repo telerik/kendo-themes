@@ -1,5 +1,5 @@
 import { DropdownList } from '..';
-import { List, ListItem, ListOptionLabel } from '../../list';
+import { List, ListContent, ListItem, ListOptionLabel } from '../../list';
 
 
 const styles = `
@@ -23,9 +23,11 @@ export default () =>(
                 <DropdownList value="-Select item-" opened focus
                     popup={(
                         <List optionLabel={<ListOptionLabel text="-Select item-" />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                            <ListContent>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                            </ListContent>
                         </List>
                     )}
                 />
@@ -37,9 +39,11 @@ export default () =>(
                 <DropdownList value="-Select item-" opened focus
                     popup={(
                         <List optionLabel={<ListOptionLabel text="-Select item-" hover />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                            <ListContent>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                            </ListContent>
                         </List>
                     )}
                 />
@@ -51,9 +55,11 @@ export default () =>(
                 <DropdownList value="-Select item-" opened focus
                     popup={(
                         <List optionLabel={<ListOptionLabel text="-Select item-" focus />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                            <ListContent>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                            </ListContent>
                         </List>
                     )}
                 />
@@ -65,9 +71,11 @@ export default () =>(
                 <DropdownList value="-Select item-" opened focus
                     popup={(
                         <List optionLabel={<ListOptionLabel text="-Select item-" selected />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                            <ListContent>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                            </ListContent>
                         </List>
                     )}
                 />
@@ -79,9 +87,11 @@ export default () =>(
                 <DropdownList value="-Select item-" opened focus
                     popup={(
                         <List optionLabel={<ListOptionLabel text="-Select item-" disabled />}>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
+                            <ListContent>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                                <ListItem>List item</ListItem>
+                            </ListContent>
                         </List>
                     )}
                 />

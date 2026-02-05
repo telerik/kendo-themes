@@ -1,21 +1,24 @@
 import Autocomplete from "../autocomplete.spec";
-import { List, ListGroup, ListItem } from "../../list";
+import { List, ListContent, ListUl, ListItem, ListGroupItem } from "../../list";
 
 export const AutocompleteGrouping = (props) => (
     <Autocomplete
         opened
         popup={
-            <List>
-                <ListGroup label={"Group 1"} root>
-                    <ListItem>List group 1 item 1</ListItem>
-                    <ListItem>List group 1 item 2</ListItem>
-                    <ListItem>List group 1 item 3</ListItem>
-                </ListGroup>
-                <ListGroup label={"Group 2"} >
-                    <ListItem>List group 1 item 1</ListItem>
-                    <ListItem>List group 1 item 2</ListItem>
-                    <ListItem>List group 1 item 3</ListItem>
-                </ListGroup>
+            <List header="Group 1">
+                <ListContent grouping>
+                    <ListUl>
+                        <ListItem>List group 1 item 1</ListItem>
+                        <ListItem>List group 1 item 2</ListItem>
+                        <ListItem>List group 1 item 3</ListItem>
+                    </ListUl>
+                    <ListUl>
+                        <ListGroupItem>Group 2</ListGroupItem>
+                        <ListItem>List group 1 item 1</ListItem>
+                        <ListItem>List group 1 item 2</ListItem>
+                        <ListItem>List group 1 item 3</ListItem>
+                    </ListUl>
+                </ListContent>
             </List>
         }
         {...props}

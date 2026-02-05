@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.5](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.4...v13.0.0-dev.5) (2026-02-02)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+# [13.0.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.3...v13.0.0-dev.4) (2026-02-02)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+# [13.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.2...v13.0.0-dev.3) (2026-01-30)
+
+
+### Bug Fixes
+
+* **chat:** decrease min-height ([127b774](https://github.com/telerik/kendo-themes/commit/127b77455f377d3d5b001dfe1ba4dfb79144635c))
+
+
+
+
+
+# [13.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.1...v13.0.0-dev.2) (2026-01-27)
+
+
+### Features
+
+* **chat:** enhance styles with new and improved features ([873580d](https://github.com/telerik/kendo-themes/commit/873580d18bb30b47c285d1f9926834d6f1250507))
+* **file-box:** add styles ([bf5d9c2](https://github.com/telerik/kendo-themes/commit/bf5d9c2dbc4aa430a5513cf55175ee7eae2d2b57))
+* **list:** enhance styles ([c1d7740](https://github.com/telerik/kendo-themes/commit/c1d77403f023969cac59060bbb4f0ad6b60f6a0d))
+* **prompt-box:** add styles ([eb646a9](https://github.com/telerik/kendo-themes/commit/eb646a91a41a26cddd142986cebced468548a028))
+* **segmented-contro:** add styles ([c751a50](https://github.com/telerik/kendo-themes/commit/c751a50010aedee661519855488d77397de6bd60))
+* **smart-box:** add styles ([3370960](https://github.com/telerik/kendo-themes/commit/337096071696dc38000f712688c7ef86c17a86b3))
+* **treeview:** enhance styles ([46e15d4](https://github.com/telerik/kendo-themes/commit/46e15d40d6c811d21819e9fe03ac1e0a9ef7fb9a))
+
+
+
+
+
 # [13.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.0...v13.0.0-dev.1) (2026-01-26)
 
 

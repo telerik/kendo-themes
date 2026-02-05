@@ -69,11 +69,11 @@ export default () =>(
                 <MenuNormal dir="rtl" popup={
                         <>
                             <Popup className="k-menu-popup" offset={{ left: "220px", top: "auto" }} dir="rtl">
-                                <MenuList dir="rtl">
+                                <MenuList>
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow></MenuListItem>
+                                    <MenuListItem text="Hover" hover showArrow dir="rtl"></MenuListItem>
+                                    <MenuListItem text="Active" active showArrow dir="rtl"></MenuListItem>
                                     <MenuListItem text="Focus" focus></MenuListItem>
                                     <MenuListItem last text="Focus & Active" active focus></MenuListItem>
                                 </MenuList>

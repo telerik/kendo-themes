@@ -1,6 +1,19 @@
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/treeview/_theme.scss" as *;
 
 
 @mixin kendo-treeview--theme() {
     @include kendo-treeview--theme-base();
+
+    .k-treeview-item-content.k-selected {
+
+        .k-checkbox:checked,
+        .k-checkbox.k-checked,
+        .k-checkbox:indeterminate,
+        .k-checkbox.k-indeterminate {
+            border-color: k-color(on-primary);
+            background-color: k-color(on-primary);
+            color: k-color(primary);
+        }
+    }
 }

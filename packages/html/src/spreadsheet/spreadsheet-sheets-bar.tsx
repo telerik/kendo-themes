@@ -1,4 +1,7 @@
-import { Button, MenuButton, TabStrip, TabStripItem } from '..';
+import { Button } from '../button/button.spec';
+import { MenuButton } from '../menu-button/menu-button.spec';
+import { TabStrip } from '../tabstrip/tabstrip.spec';
+import { TabStripItem } from '../tabstrip/tabstrip-item';
 import { classNames } from '../misc';
 
 export const SPREADSHEETSHEETSBAR_CLASSNAME = `k-spreadsheet-sheets-bar`;
@@ -14,22 +17,22 @@ export type KendoSpreadsheetSheetsBarProps = {
 const defaultTabStripItems = (
     <>
         <TabStripItem first value="Sheet 1" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem value="Sheet 2" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem value="Sheet 3" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem value="Sheet 4" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem value="Sheet 5" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
         <TabStripItem last value="Sheet 6" actions={
-            <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
         }></TabStripItem>
     </>
 );

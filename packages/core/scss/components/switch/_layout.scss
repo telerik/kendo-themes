@@ -67,11 +67,11 @@
                 }
 
                 &.k-switch-on .k-switch-thumb-wrap {
-                    inset-inline-start: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+                    inset-inline-start: calc( 100% - #{$_thumb-width} / 2 - #{$_thumb-offset} );
                     transition: left k-transition(bouncy);
                 }
                 &.k-switch-off .k-switch-thumb-wrap {
-                    inset-inline-start: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+                    inset-inline-start: calc( #{$_thumb-width} / 2 + #{$_thumb-offset} );
                     transition: left k-transition(snappy);
                 }
             }

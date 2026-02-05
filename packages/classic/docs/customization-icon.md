@@ -137,6 +137,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default icon padding.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-accent-icon-color</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #8B7CF6"></span><code>#8B7CF6</code></td>
+    <td><span class="color-preview" style="background-color: #8B7CF6"></span><code>#8B7CF6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

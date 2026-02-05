@@ -1,4 +1,5 @@
-import { Button, Combobox } from '..';
+import { Button } from '../button/button.spec';
+import { Combobox } from '../combobox/combobox.spec';
 import { classNames } from '../misc';
 
 export const SPREADSHEETACTIONBAR_CLASSNAME = `k-spreadsheet-action-bar`;
@@ -53,7 +54,7 @@ export const SpreadsheetActionBar = (
                 <Button icon="formula-fx" fillMode="flat" />
                 <span className="k-separator k-separator-vertical"></span>
 
-                <div className="k-spreadsheet-formula-input k-textbox k-input k-input-md k-input-flat k-rounded-md">
+                <div className="k-spreadsheet-formula-input k-textbox k-input k-input-flat">
                     {formula}
                 </div>
             </div>

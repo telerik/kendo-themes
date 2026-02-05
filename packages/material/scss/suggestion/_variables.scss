@@ -3,7 +3,7 @@
 
 /// The vertical padding of the Suggestion wrapper.
 /// @group suggestion
-$kendo-suggestion-padding-y: k-spacing(2) !default;
+$kendo-suggestion-padding-y: k-spacing(2.5) !default;
 /// The horizontal padding of the Suggestion wrapper.
 /// @group suggestion
 $kendo-suggestion-padding-x: k-spacing(3) !default;
@@ -17,12 +17,16 @@ $kendo-suggestion-border-width: 1px !default;
 /// @group suggestion
 $kendo-suggestion-border-style: solid !default;
 
+/// The font size of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-font-size: var( --kendo-font-size, inherit ) !default;
+
 /// The line height of the Suggestion.
 /// @group suggestion
-$kendo-suggestion-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-suggestion-line-height: var( --kendo-line-height-sm, normal ) !default;
 /// The border radius of the Suggestion.
 /// @group suggestion
-$kendo-suggestion-border-radius: k-border-radius(xxl) !default;
+$kendo-suggestion-border-radius: k-border-radius(full) !default;
 
 /// The shadow blur of the focused Suggestion.
 /// @group suggestion
@@ -39,16 +43,22 @@ $kendo-suggestion-focus-shadow-color: k-color(surface) !default;
 /// @role default
 $kendo-suggestion-default-theme-color: "base" !default;
 
+/// The gradient used for scroll indicators in the Suggestion group.
+/// @group suggestion
+$kendo-suggestion-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100% !default;
+
 @forward "@progress/kendo-theme-core/scss/components/suggestion/_variables.scss" with (
     $kendo-suggestion-padding-y: $kendo-suggestion-padding-y,
     $kendo-suggestion-padding-x: $kendo-suggestion-padding-x,
     $kendo-suggestion-spacing: $kendo-suggestion-spacing,
     $kendo-suggestion-border-width: $kendo-suggestion-border-width,
     $kendo-suggestion-border-style: $kendo-suggestion-border-style,
+    $kendo-suggestion-font-size: $kendo-suggestion-font-size,
     $kendo-suggestion-line-height: $kendo-suggestion-line-height,
     $kendo-suggestion-border-radius: $kendo-suggestion-border-radius,
     $kendo-suggestion-focus-shadow-blur: $kendo-suggestion-focus-shadow-blur,
     $kendo-suggestion-focus-shadow-spread: $kendo-suggestion-focus-shadow-spread,
     $kendo-suggestion-focus-shadow-color: $kendo-suggestion-focus-shadow-color,
-    $kendo-suggestion-default-theme-color: $kendo-suggestion-default-theme-color
+    $kendo-suggestion-default-theme-color: $kendo-suggestion-default-theme-color,
+    $kendo-suggestion-scroll-gradient: $kendo-suggestion-scroll-gradient,
 );

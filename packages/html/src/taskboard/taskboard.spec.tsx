@@ -1,4 +1,5 @@
-import { TaskBoardPane, TaskBoardToolbar } from '.';
+import { TaskBoardPane } from './taskboard-pane';
+import { TaskBoardToolbar } from './taskboard-toolbar';
 import { Button } from '../button';
 import { FormNormal, FormField } from '../form';
 import { States, classNames, stateClassNames } from '../misc';

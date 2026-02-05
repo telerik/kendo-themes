@@ -432,7 +432,7 @@ export default () => (
                             <GridToolbar>
                                 <div className="k-badge-container">
                                     <Button selected size="large" icon="filter" />
-                                    <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder />
+                                    <Badge position="edge" rounded="full" align="top-end" cutoutBorder />
                                 </div>
                                 <Button size="large" icon="arrows-swap" />
                                 <Button size="large" icon="group" />

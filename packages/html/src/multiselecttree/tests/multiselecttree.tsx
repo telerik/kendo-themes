@@ -72,7 +72,6 @@ export default () =>(
             <div>multi line + overflow</div>
             <div>
                 <MultiSelectTreeNormal
-                    fillMode="solid"
                     tags={(
                         <>
                             <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
@@ -83,7 +82,6 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <MultiSelectTreeNormal
-                    fillMode="solid"
                     tags={(
                         <>
                             <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />

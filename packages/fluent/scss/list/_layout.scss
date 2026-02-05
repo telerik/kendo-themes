@@ -6,24 +6,4 @@
 
 @mixin kendo-list--layout() {
     @include kendo-list--layout-base();
-
-    .k-list {
-        border-radius: 0;
-    }
-
-    .k-list-group-sticky-header {
-        z-index: k-z-index("base", 1);
-    }
-
-    .k-list-ul {
-        display: flex;
-        flex-direction: column;
-        padding: $kendo-list-content-padding;
-        gap: $kendo-list-item-spacing;
-    }
-
-    .k-list-item {
-        border-radius: $kendo-list-item-border-radius;
-    }
-
 }

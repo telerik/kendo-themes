@@ -6,3 +6,4 @@ export * from './templates/slider-range';
 export * from './templates/slider-range-vertical';
 export * from './templates/slider-gradient';
 export * from './templates/slider-gradient-vertical';
+export * from './demos/slider';

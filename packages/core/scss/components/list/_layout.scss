@@ -15,13 +15,18 @@
         > .k-list {
             flex: 1;
             height: 100%;
+            border-radius: 0;
+        }
+
+        &.k-popup {
+            padding-inline: $kendo-list-container-padding-inline;
+            padding-block: $kendo-list-container-padding-block;
         }
     }
 
     // List
     .k-list {
         margin: 0;
-        padding: 0;
         box-sizing: border-box;
         border-radius: inherit;
         font-family: $kendo-list-font-family;
@@ -90,6 +95,20 @@
                     line-height: $_item-line-height;
                 }
 
+                &:has(.k-list-item-icon) .k-list-item,
+                &:has(.k-list-item-icon) .k-list-group-item {
+                    padding-inline-start:  calc( #{$kendo-icon-size} + $_item-padding-x + #{$kendo-list-item-gap} );
+                }
+
+                .k-list-item:has(.k-list-item-icon) .k-list-item-description {
+                    padding-inline-start:  calc( #{$kendo-icon-size} + #{$kendo-list-item-gap});
+                }
+
+                .k-list-item:has(.k-list-item-icon),
+                .k-list-group-item:has(.k-list-item-icon) {
+                    padding-inline: $_item-padding-x;
+                }
+
                 .k-list-group-item {
                     padding-block: $_group-item-padding-y;
                     padding-inline: $_group-item-padding-x;
@@ -155,6 +174,13 @@
         border-color: inherit;
         height: auto;
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: $kendo-list-item-spacing;
+    }
+
+    .k-list-ul + .k-list-ul {
+        margin-block-start: $kendo-list-item-spacing;
     }
 
 
@@ -172,7 +198,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: $kendo-icon-spacing;
+        column-gap: $kendo-list-item-gap;
         position: relative;
 
         transition: color k-transition(snappy), background-color k-transition(snappy), outline-color k-transition(snappy), box-shadow k-transition(snappy);
@@ -206,6 +232,41 @@
         position: sticky;
     }
 
+    .k-list-item {
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: $kendo-list-item-border-radius;
+    }
+
+    .k-list-item-text {
+        flex: 1;
+        text-overflow: ellipsis;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .k-list-item-icon-wrapper,
+    .k-list-item-actions,
+    .k-list-item-text {
+        align-self: flex-start;
+    }
+
+    .k-list-item-actions {
+        display: flex;
+        align-items: center;
+        gap: $kendo-list-item-gap;
+    }
+
+    .k-list-item:has(.k-list-item-icon) .k-list-item-text::before,
+    .k-list-item:has(.k-list-item-actions) .k-list-item-text::before {
+        content: none;
+    }
+
+    .k-list .k-list-item-description {
+        flex-basis: 100%;
+        font-size: $kendo-list-item-description-font-size;
+        line-height: $kendo-list-item-description-line-height;
+    }
 
     // List group item
     .k-list-group-item {
@@ -222,7 +283,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: $kendo-icon-spacing;
+        gap: $kendo-list-item-gap;
         position: relative;
     }
 
@@ -268,5 +329,4 @@
         box-sizing: border-box;
         flex: none;
     }
-
 }

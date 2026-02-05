@@ -7,10 +7,10 @@ import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Toolbar, ToolbarItem } from '../../toolbar';
 
-export const FilterNormal = (props) => (
-    <Filter
-        children={[
-            <FilterToolbar key="filter-toolbar">
+export const FilterNormal = ({ children, ...other }: any) => (
+    <Filter {...other}>
+        {children || <>
+            <FilterToolbar>
                 <Toolbar>
                     <ButtonGroup>
                         <Button className="k-group-start" selected>And</Button>
@@ -20,8 +20,8 @@ export const FilterNormal = (props) => (
                     <Button icon="filter-add-group">Add Group</Button>
                     <Button fillMode="flat" icon="x"></Button>
                 </Toolbar>
-            </FilterToolbar>,
-            <FilterLines key="filter-lines">
+            </FilterToolbar>
+            <FilterLines>
                 <FilterItem>
                     <FilterToolbar>
                         <Toolbar>
@@ -71,8 +71,6 @@ export const FilterNormal = (props) => (
                     </FilterToolbar>
                 </FilterItem>
             </FilterLines>
-        ]}
-        {...props}
-    >
+        </>}
     </Filter>
 );

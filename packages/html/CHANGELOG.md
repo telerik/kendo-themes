@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.5](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.4...v13.0.0-dev.5) (2026-02-02)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [13.0.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.3...v13.0.0-dev.4) (2026-02-02)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [13.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.2...v13.0.0-dev.3) (2026-01-30)
+
+
+### Bug Fixes
+
+* **html:** remove redundant themeColor and roundness from components ([c94dbd1](https://github.com/telerik/kendo-themes/commit/c94dbd10d73ebd1956e298f19e28710b8c72f54c))
+
+
+
+
+
+# [13.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.1...v13.0.0-dev.2) (2026-01-27)
+
+
+### Bug Fixes
+
+* **html:** remove reduntant component option classes ([e469603](https://github.com/telerik/kendo-themes/commit/e469603d860545412fc2f352d16149ba23f46dc2))
+
+
+### Features
+
+* **html:** add prompt-box component ([814a401](https://github.com/telerik/kendo-themes/commit/814a40172948656b29d39fe6abf1ec53dc0a43aa))
+* **html:** add segmented control rendering and tests ([da0d1e1](https://github.com/telerik/kendo-themes/commit/da0d1e17104e0b34d34479ded52531d7d324cab0))
+* **html:** add smart-box component rendering and tests ([baf91f5](https://github.com/telerik/kendo-themes/commit/baf91f5d514355c6f50224ab01625acffc53cf1d))
+* **html:** add support for overflow menu to tabstrip specs and templates ([03d8a01](https://github.com/telerik/kendo-themes/commit/03d8a018166a12c8508975d64711c21f3be42502))
+* **html:** enhance chat rendering with new and improved features ([252041e](https://github.com/telerik/kendo-themes/commit/252041ef2879517f35926ba2171627656205550d))
+* **html:** enhance treeview rendering ([e164789](https://github.com/telerik/kendo-themes/commit/e164789bcd5076f966e78d4107b1668ca0c0cfbb))
+* **html:** extract file-box component ([f8507e4](https://github.com/telerik/kendo-themes/commit/f8507e436af569568a63854b05ba1a08ec680d20))
+* **list:** enhance rendering with modern grouping, icons and actions ([d458dde](https://github.com/telerik/kendo-themes/commit/d458dde6205c4bbbf5c6f23a4f2c9ab8f0c10f07))
+
+
+
+
+
 # [13.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.0...v13.0.0-dev.1) (2026-01-26)
 
 

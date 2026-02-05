@@ -7,3 +7,4 @@ export * from "./templates/treeview-hierarchy";
 export * from "./templates/treeview-icons";
 export * from "./templates/treeview-checkboxes";
 export * from "./templates/treeview-load-more";
+export * from './demos/treeview';

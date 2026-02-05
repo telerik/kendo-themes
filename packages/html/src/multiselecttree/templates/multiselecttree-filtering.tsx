@@ -25,18 +25,18 @@ export const MultiSelectTreeFiltering = (props) => (
                     </span>
                 </div>
                 <Treeview dir={props.dir}>
-                    <TreeviewItem top text="Furniture" showCheckbox >
+                    <TreeviewItem text="Furniture" showCheckbox >
                         <TreeviewGroup>
-                            <TreeviewItem top text="Child 1" showCheckbox />
+                            <TreeviewItem text="Child 1" showCheckbox />
                             <TreeviewItem text="Child 2" showCheckbox />
-                            <TreeviewItem bottom text="Child 3" showCheckbox />
+                            <TreeviewItem text="Child 3" showCheckbox />
                         </TreeviewGroup>
                     </TreeviewItem>
-                    <TreeviewItem bottom text="Decor" showCheckbox>
+                    <TreeviewItem text="Decor" showCheckbox>
                         <TreeviewGroup>
-                            <TreeviewItem top text="Child 1" showCheckbox />
+                            <TreeviewItem text="Child 1" showCheckbox />
                             <TreeviewItem text="Child 2" showCheckbox />
-                            <TreeviewItem bottom text="Child 3" showCheckbox />
+                            <TreeviewItem text="Child 3" showCheckbox />
                         </TreeviewGroup>
                     </TreeviewItem>
                 </Treeview>

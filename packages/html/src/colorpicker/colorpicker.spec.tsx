@@ -128,7 +128,6 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
                 <Button
                     className="k-input-button"
                     icon={arrowIconName}
-                    rounded={null}
                     size={size}
                     fillMode={fillMode}
                 />
@@ -149,7 +148,7 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Cancel" size="large" />
                             <Button text="Set" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }

@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0-dev.5](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.4...v13.0.0-dev.5) (2026-02-02)
+
+
+### Bug Fixes
+
+* **tabstrip:** remove bottom border of selected tabs in scrollable mode ([31d994a](https://github.com/telerik/kendo-themes/commit/31d994aa9965c9ee45485192c0c113f29b909b21))
+
+
+
+
+
+# [13.0.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.3...v13.0.0-dev.4) (2026-02-02)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [13.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.2...v13.0.0-dev.3) (2026-01-30)
+
+
+### Bug Fixes
+
+* **chat:** decrease min-height ([127b774](https://github.com/telerik/kendo-themes/commit/127b77455f377d3d5b001dfe1ba4dfb79144635c))
+* **fluent:** resolve calc related parse errors ([274b1b2](https://github.com/telerik/kendo-themes/commit/274b1b2d7fb4987bd130f5ee3d40b5ddfe4b586b))
+* **html:** remove redundant themeColor and roundness from components ([c94dbd1](https://github.com/telerik/kendo-themes/commit/c94dbd10d73ebd1956e298f19e28710b8c72f54c))
+* **material:** resolve unit test sass warnings ([c0cfa8b](https://github.com/telerik/kendo-themes/commit/c0cfa8b0fa4ff36eab2541383b40f84a48a755a1))
+* resolve unit tests sass warnings ([1cc38b0](https://github.com/telerik/kendo-themes/commit/1cc38b0baa09b61279effcf8c9009952cbaa4645))
+
+
+
+
+
+# [13.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.1...v13.0.0-dev.2) (2026-01-27)
+
+
+### Bug Fixes
+
+* **fluent:** do not use global built-in index function ([9bbd1de](https://github.com/telerik/kendo-themes/commit/9bbd1dee3c6a44678089bacb82ba0215c7d2530a))
+* **html:** remove reduntant component option classes ([e469603](https://github.com/telerik/kendo-themes/commit/e469603d860545412fc2f352d16149ba23f46dc2))
+
+
+### Features
+
+* **chat:** enhance styles with new and improved features ([873580d](https://github.com/telerik/kendo-themes/commit/873580d18bb30b47c285d1f9926834d6f1250507))
+* **file-box:** add styles ([bf5d9c2](https://github.com/telerik/kendo-themes/commit/bf5d9c2dbc4aa430a5513cf55175ee7eae2d2b57))
+* **html:** add prompt-box component ([814a401](https://github.com/telerik/kendo-themes/commit/814a40172948656b29d39fe6abf1ec53dc0a43aa))
+* **html:** add segmented control rendering and tests ([da0d1e1](https://github.com/telerik/kendo-themes/commit/da0d1e17104e0b34d34479ded52531d7d324cab0))
+* **html:** add smart-box component rendering and tests ([baf91f5](https://github.com/telerik/kendo-themes/commit/baf91f5d514355c6f50224ab01625acffc53cf1d))
+* **html:** add support for overflow menu to tabstrip specs and templates ([03d8a01](https://github.com/telerik/kendo-themes/commit/03d8a018166a12c8508975d64711c21f3be42502))
+* **html:** enhance chat rendering with new and improved features ([252041e](https://github.com/telerik/kendo-themes/commit/252041ef2879517f35926ba2171627656205550d))
+* **html:** enhance treeview rendering ([e164789](https://github.com/telerik/kendo-themes/commit/e164789bcd5076f966e78d4107b1668ca0c0cfbb))
+* **html:** extract file-box component ([f8507e4](https://github.com/telerik/kendo-themes/commit/f8507e436af569568a63854b05ba1a08ec680d20))
+* **list:** enhance rendering with modern grouping, icons and actions ([d458dde](https://github.com/telerik/kendo-themes/commit/d458dde6205c4bbbf5c6f23a4f2c9ab8f0c10f07))
+* **list:** enhance styles ([c1d7740](https://github.com/telerik/kendo-themes/commit/c1d77403f023969cac59060bbb4f0ad6b60f6a0d))
+* **motion:** add stretchy easing ([2c45c46](https://github.com/telerik/kendo-themes/commit/2c45c46504846817e390bc2c2e1c160b90510fa7))
+* **prompt-box:** add styles ([eb646a9](https://github.com/telerik/kendo-themes/commit/eb646a91a41a26cddd142986cebced468548a028))
+* **segmented-contro:** add styles ([c751a50](https://github.com/telerik/kendo-themes/commit/c751a50010aedee661519855488d77397de6bd60))
+* **smart-box:** add styles ([3370960](https://github.com/telerik/kendo-themes/commit/337096071696dc38000f712688c7ef86c17a86b3))
+* **tabstrip:** add overflow menu styles ([34893ae](https://github.com/telerik/kendo-themes/commit/34893ae094663fca07c7ca4b7fa1b55609468c28))
+* **treeview:** enhance styles ([46e15d4](https://github.com/telerik/kendo-themes/commit/46e15d40d6c811d21819e9fe03ac1e0a9ef7fb9a))
+
+
+
+
+
 # [13.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.0...v13.0.0-dev.1) (2026-01-26)
 
 

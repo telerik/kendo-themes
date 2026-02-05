@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/smart-box/_theme.scss" as *;
+
+
+@mixin kendo-smart-box--theme() {
+    @include kendo-smart-box--theme-base();
+}

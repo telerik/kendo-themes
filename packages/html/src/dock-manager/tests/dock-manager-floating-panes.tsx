@@ -85,8 +85,8 @@ export default () => (
                 actions={["window-minimize", "window", "more-vertical"]}
                 children={
                 <>
-                    <DockManagerSplitter>
-                        <SplitterPane>
+                    <DockManagerSplitter panes={[
+                        <SplitterPane key="pane-1">
                             <PaneScrollable title="Pane Title 1" actions={
                                 <>
                                     <Button fillMode="flat" icon="pin"></Button>
@@ -97,8 +97,8 @@ export default () => (
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis mollitia dicta expedita numquam reprehenderit assumenda rem eum id voluptas laborum pariatur ab alias iure accusantium blanditiis, corporis, ut maxime?
                                 </p>
                             </PaneScrollable>
-                        </SplitterPane>
-                        <SplitterPane>
+                        </SplitterPane>,
+                        <SplitterPane key="pane-2">
                             <PaneScrollable title="Pane Title 2" actions={
                                 <>
                                     <Button fillMode="flat" icon="pin"></Button>
@@ -110,8 +110,7 @@ export default () => (
                                 </p>
                             </PaneScrollable>
                         </SplitterPane>
-
-                    </DockManagerSplitter>
+                    ]} />
                 </>
             }/>
         </section>

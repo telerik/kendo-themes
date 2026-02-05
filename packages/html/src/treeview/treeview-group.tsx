@@ -1,45 +1,35 @@
-import TreeviewItem from './treeview-item.spec';
+import React from 'react';
 import { classNames } from '../misc';
 
 const className = `k-treeview-group`;
 
 export type KendoTreeviewGroupProps = {
-    children?: React.JSX.Element | React.JSX.Element[];
+    children?: React.ReactNode;
     dir?: 'ltr' | 'rtl';
+    level?: number;
 };
 
 export const TreeviewGroup = (
     props: KendoTreeviewGroupProps &
-    React.HTMLAttributes<HTMLLIElement>
+    React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
         children,
-        dir
+        dir,
+        level = 1,
+        ...other
     } = props;
 
-    const listChildren : React.JSX.Element[] = [];
-
-    if (children) {
-        if (Array.isArray(children)) {
-            children.map((child, index) => {
-                if ( child.type === TreeviewItem) {
-                    listChildren.push(
-                        <TreeviewItem {...child.props} dir={dir} key={index} />
-                    );
-                }
-            });
-        } else {
-            if ( children.type === TreeviewItem) {
-                listChildren.push(
-                    <TreeviewItem {...children.props} dir={dir} />
-                );
-            }
-        }
-    }
-
     return (
-        <ul className={classNames(props.className, className)}>
-            {listChildren}
+        <ul
+            {...other}
+            className={classNames(props.className, className)}
+        >
+            {React.Children.map(children, (child, index) =>
+                React.isValidElement(child)
+                    ? React.cloneElement(child, { dir, level, key: index } as React.Attributes)
+                    : child
+            )}
         </ul>
     );
 };

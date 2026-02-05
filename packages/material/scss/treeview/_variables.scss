@@ -7,6 +7,12 @@
 /// @group treeview
 /// @role default
 $kendo-treeview-default-size: "md" !default;
+/// The gap of the TreeView.
+/// @group treeview
+$kendo-treeview-gap: k-spacing(0.5) !default;
+/// The border radius of the TreeView.
+/// @group treeview
+$kendo-treeview-border-radius: k-border-radius(md) !default;
 
 /// The font family of the TreeView.
 /// @group treeview
@@ -62,7 +68,7 @@ $kendo-treeview-lg-item-padding-y: k-spacing(3) !default;
 $kendo-treeview-item-border-width: 0px !default;
 /// The border radius of the TreeView items.
 /// @group treeview
-$kendo-treeview-item-border-radius: k-border-radius(md) !default;
+$kendo-treeview-item-border-radius: k-border-radius(xl) !default;
 
 /// The horizontal padding of the checkbox in the small TreeView.
 /// @group treeview
@@ -109,16 +115,20 @@ $kendo-treeview-item-hover-gradient: null !default;
 
 /// The background color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-bg: null !default;
+$kendo-treeview-item-selected-bg: k-color(primary-subtle) !default;
 /// The text color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-text: k-color(primary-on-surface) !default;
+$kendo-treeview-item-selected-text: k-color(base-on-subtle) !default;
 /// The border color of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-border: null !default;
 /// The background gradient of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-gradient: null !default;
+
+/// The background color of selected and hovered TreeView items.
+/// @group treeview
+$kendo-treeview-item-selected-hover-bg: k-color(primary-subtle-hover) !default;
 
 /// The box shadow of focused TreeView items.
 /// @group treeview
@@ -160,6 +170,8 @@ $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !defaul
 
 @forward "@progress/kendo-theme-core/scss/components/treeview/_variables.scss" with (
     $kendo-treeview-default-size: $kendo-treeview-default-size,
+    $kendo-treeview-gap: $kendo-treeview-gap,
+    $kendo-treeview-border-radius: $kendo-treeview-border-radius,
     $kendo-treeview-font-family: $kendo-treeview-font-family,
     $kendo-treeview-font-size: $kendo-treeview-font-size,
     $kendo-treeview-sm-font-size: $kendo-treeview-sm-font-size,
@@ -195,6 +207,7 @@ $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !defaul
     $kendo-treeview-item-selected-text: $kendo-treeview-item-selected-text,
     $kendo-treeview-item-selected-border: $kendo-treeview-item-selected-border,
     $kendo-treeview-item-selected-gradient: $kendo-treeview-item-selected-gradient,
+    $kendo-treeview-item-selected-hover-bg: $kendo-treeview-item-selected-hover-bg,
     $kendo-treeview-item-focus-shadow: $kendo-treeview-item-focus-shadow,
     $kendo-treeview-loadmore-bg: $kendo-treeview-loadmore-bg,
     $kendo-treeview-loadmore-text: $kendo-treeview-loadmore-text,

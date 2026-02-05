@@ -1,4 +1,4 @@
-import { List, ListItem } from '../../list';
+import { List, ListContent, ListItem } from '../../list';
 import { Searchbox } from '../../searchbox';
 import { Popup } from '../../popup';
 
@@ -66,10 +66,12 @@ export default () =>(
                         <Searchbox placeholder="Filter..." />
                     </div>
                     <List screenReaders>
-                        <ListItem text="List item" />
-                        <ListItem text="List item" />
-                        <ListItem text="List item" />
-                        <ListItem text="List item" />
+                        <ListContent>
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                        </ListContent>
                     </List>
                 </Popup>
             </section>
@@ -80,10 +82,12 @@ export default () =>(
                         <Searchbox placeholder="Filter..." />
                     </div>
                     <List screenReaders>
-                        <ListItem text="List item" />
-                        <ListItem text="List item" />
-                        <ListItem text="List item" />
-                        <ListItem text="List item" />
+                        <ListContent>
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                        </ListContent>
                     </List>
                 </Popup>
             </section>

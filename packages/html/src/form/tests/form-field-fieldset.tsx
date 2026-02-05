@@ -40,13 +40,13 @@ export default () =>(
                     formButtons={null}
                 >
                     <Fieldset legend="Please fill in the fields:">
-                        <FormField label="First Name:" editor={ <Textbox /> }></FormField>
-                        <FormField label="Last Name:" editor={ <Textbox /> }></FormField>
+                        <FormField orientation="horizontal" label="First Name:" editor={ <Textbox /> }></FormField>
+                        <FormField orientation="horizontal" label="Last Name:" editor={ <Textbox /> }></FormField>
                     </Fieldset>
 
                     <Fieldset legend="Please fill in your address details:">
-                        <FormField label="City:" editor={ <Textbox /> }></FormField>
-                        <FormField label="Address:" editor={ <Textarea rows={3} /> }></FormField>
+                        <FormField orientation="horizontal" label="City:" editor={ <Textbox /> }></FormField>
+                        <FormField orientation="horizontal" label="Address:" editor={ <Textarea rows={3} /> }></FormField>
                     </Fieldset>
                 </FormHorizontal>
             </section>
