@@ -13,6 +13,9 @@ export type InputInnerInputProps = {
     autocomplete?: string;
     min?: number;
     max?: number;
+    disabled?: boolean;
+    required?: boolean;
+    invalid?: boolean;
 };
 
 const defaultOptions = {

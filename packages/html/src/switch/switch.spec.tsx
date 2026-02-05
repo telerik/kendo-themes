@@ -26,6 +26,8 @@ export type KendoSwitchOptions = {
 export type KendoSwitchProps = KendoSwitchOptions & {
     onLabel?: string;
     offLabel?: string;
+    required?: boolean;
+    invalid?: boolean;
 };
 
 export type KendoSwitchState = { [K in (typeof states)[number]]?: boolean };

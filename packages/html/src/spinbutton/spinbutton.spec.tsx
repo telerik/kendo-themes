@@ -20,6 +20,7 @@ export type KendoSpinButtonOptions = {
 export type KendoSpinButtonProps = KendoSpinButtonOptions & {
   icon?: string;
   text?: string;
+  disabled?: boolean;
 };
 
 const defaultOptions = {};
