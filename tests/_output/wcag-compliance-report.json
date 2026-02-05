@@ -1,104 +1,38 @@
 {
   "meta": {
-    "timestamp": "2026-02-05T10:44:41.246Z",
+    "timestamp": "2026-02-05T11:41:00.247Z",
     "complianceLevel": "AA",
-    "filesTested": 8,
+    "filesTested": 6,
     "wcagVersion": "2.2"
   },
   "summary": {
-    "totalViolations": 0,
-    "totalPasses": 100,
-    "avgScore": 100
+    "totalViolations": 1,
+    "totalPasses": 116,
+    "avgScore": 99.25
   },
-  "criteriaGroups": {},
+  "criteriaGroups": {
+    "2.5.8": {
+      "criterion": "2.5.8",
+      "level": "AA",
+      "violations": [
+        {
+          "page": "./tests/checkbox/checkbox-group.html",
+          "rule": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "impact": "serious",
+          "nodeCount": 3
+        }
+      ],
+      "affectedPages": [
+        "./tests/checkbox/checkbox-group.html"
+      ],
+      "pageCount": 1
+    }
+  },
   "detailedResults": [
     {
-      "filePath": "./tests/button/button.html",
-      "timestamp": "2026-02-05T10:44:37.862Z",
-      "violations": [],
-      "filteredPageLevel": 3,
-      "passes": [
-        {
-          "id": "aria-hidden-body",
-          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
-          "wcagCriteria": [
-            "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "avoid-inline-spacing",
-          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-          "wcagCriteria": [
-            "1.4.1"
-          ]
-        },
-        {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
-          "wcagCriteria": [
-            "2.4.2"
-          ]
-        },
-        {
-          "id": "html-has-lang",
-          "description": "Ensure every HTML document has a lang attribute",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "html-lang-valid",
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "meta-viewport-large",
-          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport",
-          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
-          "wcagCriteria": [
-            "1.4.4"
-          ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
-        }
-      ],
-      "incomplete": [],
-      "inapplicable": 75
-    },
-    {
-      "filePath": "./tests/button/button-states.html",
-      "timestamp": "2026-02-05T10:44:38.839Z",
+      "filePath": "./tests/checkbox/checkbox.html",
+      "timestamp": "2026-02-05T11:40:58.621Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -121,13 +55,6 @@
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -160,17 +87,24 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
           "wcagCriteria": [
             "4.1.2"
           ]
         },
         {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
           "wcagCriteria": [
-            "2.4.2"
+            "3.3.2"
           ]
         },
         {
@@ -185,6 +119,18 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -220,95 +166,11 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 69
+      "inapplicable": 67
     },
     {
-      "filePath": "./tests/button/button-solid.html",
-      "timestamp": "2026-02-05T10:44:39.180Z",
-      "violations": [],
-      "filteredPageLevel": 3,
-      "passes": [
-        {
-          "id": "aria-hidden-body",
-          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
-          "wcagCriteria": [
-            "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "avoid-inline-spacing",
-          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-          "wcagCriteria": [
-            "1.4.1"
-          ]
-        },
-        {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
-          "wcagCriteria": [
-            "2.4.2"
-          ]
-        },
-        {
-          "id": "html-has-lang",
-          "description": "Ensure every HTML document has a lang attribute",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "html-lang-valid",
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "meta-viewport-large",
-          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport",
-          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
-          "wcagCriteria": [
-            "1.4.4"
-          ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
-        }
-      ],
-      "incomplete": [],
-      "inapplicable": 75
-    },
-    {
-      "filePath": "./tests/button/button-size.html",
-      "timestamp": "2026-02-05T10:44:39.509Z",
+      "filePath": "./tests/checkbox/checkbox-states.html",
+      "timestamp": "2026-02-05T11:40:58.964Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -331,13 +193,6 @@
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-hidden-focus",
-          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -370,17 +225,17 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
           ]
         },
         {
@@ -395,6 +250,18 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -430,19 +297,54 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 69
+      "inapplicable": 68
     },
     {
-      "filePath": "./tests/button/button-outline.html",
-      "timestamp": "2026-02-05T10:44:39.864Z",
+      "filePath": "./tests/checkbox/checkbox-size.html",
+      "timestamp": "2026-02-05T11:40:59.268Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
         {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -454,17 +356,24 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
           "wcagCriteria": [
             "4.1.2"
           ]
         },
         {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
           "wcagCriteria": [
-            "2.4.2"
+            "3.3.2"
           ]
         },
         {
@@ -479,6 +388,18 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -514,19 +435,54 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 75
+      "inapplicable": 67
     },
     {
-      "filePath": "./tests/button/button-link.html",
-      "timestamp": "2026-02-05T10:44:40.220Z",
+      "filePath": "./tests/checkbox/checkbox-rounded.html",
+      "timestamp": "2026-02-05T11:40:59.544Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
         {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -538,17 +494,17 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "document-title",
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
           ]
         },
         {
@@ -563,6 +519,18 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -598,19 +566,54 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 75
+      "inapplicable": 68
     },
     {
-      "filePath": "./tests/button/button-flat.html",
-      "timestamp": "2026-02-05T10:44:40.590Z",
+      "filePath": "./tests/checkbox/checkbox-label-position.html",
+      "timestamp": "2026-02-05T11:40:59.803Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
         {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -622,17 +625,24 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
           "wcagCriteria": [
             "4.1.2"
           ]
         },
         {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
           "wcagCriteria": [
-            "2.4.2"
+            "3.3.2"
           ]
         },
         {
@@ -647,6 +657,32 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "list",
+          "description": "Ensure that lists are structured correctly",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "listitem",
+          "description": "Ensure <li> elements are used semantically",
+          "wcagCriteria": [
+            "1.3.1"
           ]
         },
         {
@@ -682,19 +718,199 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 75
+      "inapplicable": 65
     },
     {
-      "filePath": "./tests/button/button-clear.html",
-      "timestamp": "2026-02-05T10:44:40.967Z",
-      "violations": [],
+      "filePath": "./tests/checkbox/checkbox-group.html",
+      "timestamp": "2026-02-05T11:41:00.053Z",
+      "violations": [
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag22aa",
+            "wcag258"
+          ],
+          "description": "Ensure touch targets have sufficient size and space",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/target-size?application=webdriverjs",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "target-size",
+                  "data": {
+                    "minSize": 24,
+                    "width": 2,
+                    "height": 2
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has insufficient size (2px by 2px, should be at least 24px by 24px)"
+                },
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 12,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+                      "target": [
+                        ".k-list-horizontal:nth-child(7) > li:nth-child(2) > .k-checkbox-wrap > input"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+              "target": [
+                ".k-list-horizontal:nth-child(7) > li:nth-child(1) > .k-checkbox-wrap > input"
+              ],
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+            },
+            {
+              "any": [
+                {
+                  "id": "target-size",
+                  "data": {
+                    "minSize": 24,
+                    "width": 2,
+                    "height": 2
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has insufficient size (2px by 2px, should be at least 24px by 24px)"
+                },
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 12,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+                      "target": [
+                        ".k-list-horizontal:nth-child(7) > li:nth-child(1) > .k-checkbox-wrap > input"
+                      ]
+                    },
+                    {
+                      "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+                      "target": [
+                        ".k-list-horizontal:nth-child(7) > li:nth-child(3) > .k-checkbox-wrap > input"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+              "target": [
+                ".k-list-horizontal:nth-child(7) > li:nth-child(2) > .k-checkbox-wrap > input"
+              ],
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+            },
+            {
+              "any": [
+                {
+                  "id": "target-size",
+                  "data": {
+                    "minSize": 24,
+                    "width": 2,
+                    "height": 2
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has insufficient size (2px by 2px, should be at least 24px by 24px)"
+                },
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 12,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+                      "target": [
+                        ".k-list-horizontal:nth-child(7) > li:nth-child(2) > .k-checkbox-wrap > input"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+              "target": [
+                ".k-list-horizontal:nth-child(7) > li:nth-child(3) > .k-checkbox-wrap > input"
+              ],
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
+            }
+          ],
+          "wcagCriteria": [
+            "2.5.8"
+          ],
+          "severity": "serious"
+        }
+      ],
       "filteredPageLevel": 3,
       "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
         {
           "id": "aria-hidden-body",
           "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
           "wcagCriteria": [
             "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
             "4.1.2"
           ]
         },
@@ -706,17 +922,24 @@
           ]
         },
         {
-          "id": "button-name",
-          "description": "Ensure buttons have discernible text",
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "duplicate-id-aria",
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
           "wcagCriteria": [
             "4.1.2"
           ]
         },
         {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
           "wcagCriteria": [
-            "2.4.2"
+            "3.3.2"
           ]
         },
         {
@@ -731,6 +954,32 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "list",
+          "description": "Ensure that lists are structured correctly",
+          "wcagCriteria": [
+            "1.3.1"
+          ]
+        },
+        {
+          "id": "listitem",
+          "description": "Ensure <li> elements are used semantically",
+          "wcagCriteria": [
+            "1.3.1"
           ]
         },
         {
@@ -766,7 +1015,7 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 75
+      "inapplicable": 65
     }
   ]
 }

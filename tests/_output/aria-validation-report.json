@@ -1,0 +1,1661 @@
+{
+  "timestamp": "2026-02-05T11:24:23.675Z",
+  "summary": {
+    "filesTested": 6,
+    "skipped": 0,
+    "passed": 120,
+    "violations": 120
+  },
+  "results": [
+    {
+      "filePath": "./tests/checkbox/checkbox.html",
+      "spec": "aria/checkbox_aria.md",
+      "totalRules": 7,
+      "testedRules": 6,
+      "untestedRules": [
+        {
+          "selector": ".k-invalid,.ng-invalid",
+          "attribute": "aria-invalid=true",
+          "usage": "The attribute is rendered only when the CheckBox is in a `form` HTML element and announces the invalid state of the component."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch1\" class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch1-rtl\" class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch3\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch3-rtl\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"chInd\" class=\"k-checkbox k-indeterminate\" type=\"checkbox\">",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-indeterminate\" type=\"checkbox\">",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"chInd-rtl\" class=\"k-checkbox k-indeterminate\" type=\"checkbox\">",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-indeterminate\" type=\"checkbox\">",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-ripple-focus k-checkbox k-focus\" id=\"chRipple\" type=\"checkbox\">",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-ripple-focus k-checkbox k-focus\" type=\"checkbox\">",
+          "index": 13,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-ripple-focus k-checkbox k-focus\" id=\"chRipple-rtl\" type=\"checkbox\">",
+          "index": 14,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-ripple-focus k-checkbox k-focus\" type=\"checkbox\">",
+          "index": 15,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"chLong\" class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 16,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 17,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"chLong-rtl\" class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 18,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 19,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        }
+      ],
+      "passed": 20,
+      "violationCount": 20
+    },
+    {
+      "filePath": "./tests/checkbox/checkbox-states.html",
+      "spec": "aria/checkbox_aria.md",
+      "totalRules": 7,
+      "testedRules": 7,
+      "untestedRules": [],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-hover\" type=\"checkbox\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-focus\" type=\"checkbox\">",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-disabled\" type=\"checkbox\">",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-hover k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-focus k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checked k-disabled\" type=\"checkbox\" checked=\"\">",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-indeterminate\" type=\"checkbox\">",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-hover k-indeterminate\" type=\"checkbox\">",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-focus k-indeterminate\" type=\"checkbox\">",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-disabled k-indeterminate\" type=\"checkbox\">",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-invalid\" type=\"checkbox\">",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-invalid k-hover\" type=\"checkbox\">",
+          "index": 13,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-invalid k-focus\" type=\"checkbox\">",
+          "index": 14,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-invalid k-disabled\" type=\"checkbox\">",
+          "index": 15,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        }
+      ],
+      "passed": 16,
+      "violationCount": 16
+    },
+    {
+      "filePath": "./tests/checkbox/checkbox-size.html",
+      "spec": "aria/checkbox_aria.md",
+      "totalRules": 7,
+      "testedRules": 7,
+      "untestedRules": [],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-unchecked-\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-unchecked-small\" class=\"k-checkbox k-checkbox-sm\" type=\"checkbox\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-unchecked-medium\" class=\"k-checkbox k-checkbox-md\" type=\"checkbox\">",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-unchecked-large\" class=\"k-checkbox k-checkbox-lg\" type=\"checkbox\">",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-hover-\" class=\"k-checkbox k-hover\" type=\"checkbox\">",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-hover-small\" class=\"k-checkbox k-checkbox-sm k-hover\" type=\"checkbox\">",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-hover-medium\" class=\"k-checkbox k-checkbox-md k-hover\" type=\"checkbox\">",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-hover-large\" class=\"k-checkbox k-checkbox-lg k-hover\" type=\"checkbox\">",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-focus-\" class=\"k-checkbox k-focus\" type=\"checkbox\">",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-focus-small\" class=\"k-checkbox k-checkbox-sm k-focus\" type=\"checkbox\">",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-focus-medium\" class=\"k-checkbox k-checkbox-md k-focus\" type=\"checkbox\">",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-focus-large\" class=\"k-checkbox k-checkbox-lg k-focus\" type=\"checkbox\">",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-valid-\" class=\"k-checkbox k-valid\" type=\"checkbox\">",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-valid-small\" class=\"k-checkbox k-checkbox-sm k-valid\" type=\"checkbox\">",
+          "index": 13,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-valid-medium\" class=\"k-checkbox k-checkbox-md k-valid\" type=\"checkbox\">",
+          "index": 14,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-valid-large\" class=\"k-checkbox k-checkbox-lg k-valid\" type=\"checkbox\">",
+          "index": 15,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-invalid-\" class=\"k-checkbox k-invalid\" type=\"checkbox\">",
+          "index": 16,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-invalid-small\" class=\"k-checkbox k-checkbox-sm k-invalid\" type=\"checkbox\">",
+          "index": 17,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-invalid-medium\" class=\"k-checkbox k-checkbox-md k-invalid\" type=\"checkbox\">",
+          "index": 18,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-invalid-large\" class=\"k-checkbox k-checkbox-lg k-invalid\" type=\"checkbox\">",
+          "index": 19,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-required-\" required=\"\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 20,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-required-small\" required=\"\" class=\"k-checkbox k-checkbox-sm\" type=\"checkbox\">",
+          "index": 21,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-required-medium\" required=\"\" class=\"k-checkbox k-checkbox-md\" type=\"checkbox\">",
+          "index": 22,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-required-large\" required=\"\" class=\"k-checkbox k-checkbox-lg\" type=\"checkbox\">",
+          "index": 23,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-disabled-\" class=\"k-checkbox k-disabled\" type=\"checkbox\">",
+          "index": 24,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-disabled-small\" class=\"k-checkbox k-checkbox-sm k-disabled\" type=\"checkbox\">",
+          "index": 25,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-disabled-medium\" class=\"k-checkbox k-checkbox-md k-disabled\" type=\"checkbox\">",
+          "index": 26,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-disabled-large\" class=\"k-checkbox k-checkbox-lg k-disabled\" type=\"checkbox\">",
+          "index": 27,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-checked-\" class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 28,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-checked-small\" class=\"k-checkbox k-checkbox-sm k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 29,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-checked-medium\" class=\"k-checkbox k-checkbox-md k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 30,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-checked-large\" class=\"k-checkbox k-checkbox-lg k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 31,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-indeterminate-\" class=\"k-checkbox k-indeterminate\" type=\"checkbox\">",
+          "index": 32,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-indeterminate-small\" class=\"k-checkbox k-checkbox-sm k-indeterminate\" type=\"checkbox\">",
+          "index": 33,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-indeterminate-medium\" class=\"k-checkbox k-checkbox-md k-indeterminate\" type=\"checkbox\">",
+          "index": 34,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch-indeterminate-large\" class=\"k-checkbox k-checkbox-lg k-indeterminate\" type=\"checkbox\">",
+          "index": 35,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        }
+      ],
+      "passed": 36,
+      "violationCount": 36
+    },
+    {
+      "filePath": "./tests/checkbox/checkbox-rounded.html",
+      "spec": "aria/checkbox_aria.md",
+      "totalRules": 7,
+      "testedRules": 6,
+      "untestedRules": [
+        {
+          "selector": ".k-invalid,.ng-invalid",
+          "attribute": "aria-invalid=true",
+          "usage": "The attribute is rendered only when the CheckBox is in a `form` HTML element and announces the invalid state of the component."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-sm k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-md k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-lg k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-rounded-none k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-sm k-rounded-none k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-md k-rounded-none k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-lg k-rounded-none k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-rounded-sm k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-sm k-rounded-sm k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-md k-rounded-sm k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-lg k-rounded-sm k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-rounded-md k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-sm k-rounded-md k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 13,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-md k-rounded-md k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 14,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-lg k-rounded-md k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 15,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-rounded-lg k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 16,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-sm k-rounded-lg k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 17,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-md k-rounded-lg k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 18,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-lg k-rounded-lg k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 19,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-rounded-full k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 20,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-sm k-rounded-full k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 21,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-md k-rounded-full k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 22,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox k-checkbox-lg k-rounded-full k-checked\" type=\"checkbox\" checked=\"\">",
+          "index": 23,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        }
+      ],
+      "passed": 24,
+      "violationCount": 24
+    },
+    {
+      "filePath": "./tests/checkbox/checkbox-label-position.html",
+      "spec": "aria/checkbox_aria.md",
+      "totalRules": 7,
+      "testedRules": 6,
+      "untestedRules": [
+        {
+          "selector": ".k-invalid,.ng-invalid",
+          "attribute": "aria-invalid=true",
+          "usage": "The attribute is rendered only when the CheckBox is in a `form` HTML element and announces the invalid state of the component."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"vertical-after-one\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"vertical-after-two\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"vertical-after-thee\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"vertical-before-one\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"vertical-before-two\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"vertical-before-thee\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"horizontal-after-one\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"horizontal-after-two\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"horizontal-after-three\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"horizontal-before-one\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"horizontal-before-two\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"horizontal-before-three\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        }
+      ],
+      "passed": 12,
+      "violationCount": 12
+    },
+    {
+      "filePath": "./tests/checkbox/checkbox-group.html",
+      "spec": "aria/checkbox_aria.md",
+      "totalRules": 7,
+      "testedRules": 6,
+      "untestedRules": [
+        {
+          "selector": ".k-invalid,.ng-invalid",
+          "attribute": "aria-invalid=true",
+          "usage": "The attribute is rendered only when the CheckBox is in a `form` HTML element and announces the invalid state of the component."
+        }
+      ],
+      "violations": [
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 1,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 2,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch1-vert\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 3,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch2-vert\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch3-vert\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 5,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 6,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 7,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch1-hor\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 9,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch2-hor\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 10,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-checkbox",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name to which it will be assigned."
+          },
+          "element": "<input id=\"ch3-hor\" class=\"k-checkbox\" type=\"checkbox\">",
+          "index": 11,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        }
+      ],
+      "passed": 12,
+      "violationCount": 12
+    }
+  ]
+}

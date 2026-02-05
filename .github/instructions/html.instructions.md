@@ -172,6 +172,15 @@ All components must be WCAG 2.2 Level AA compliant. ARIA attributes are integral
 5. **Icon buttons**: Always provide `aria-label` for icon-only buttons
 6. **Full coverage**: Every ARIA spec rule must match rendered HTML
 
+### Known Exceptions
+
+Some WCAG violations are beyond the scope of theme/HTML changes and should be noted but accepted:
+
+- **Target Size (2.5.8)**: Touch target size requirements are controlled by product implementations, not theme styles
+- **Page-level violations**: Document structure issues (e.g., missing `<title>`, language) are test harness artifacts
+
+These violations should be documented in commit messages but do not block component completion.
+
 ### Rule Coverage
 
 If an ARIA spec rule doesn't match any rendered HTML:
