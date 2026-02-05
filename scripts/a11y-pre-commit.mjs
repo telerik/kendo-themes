@@ -72,11 +72,13 @@ function hasAriaSpec(component) {
 
 async function prompt(question) {
     let input = process.stdin;
+    let needsCleanup = false;
 
     // Use /dev/tty if stdin is not a TTY (like in git hooks)
     if (!process.stdin.isTTY) {
         try {
             input = createReadStream('/dev/tty');
+            needsCleanup = true;
         } catch {
             return null;
         }
@@ -86,6 +88,9 @@ async function prompt(question) {
     return new Promise(resolve => {
         rl.question(question, answer => {
             rl.close();
+            if (needsCleanup && input.destroy) {
+                input.destroy();
+            }
             resolve(answer.toLowerCase().trim());
         });
     });
