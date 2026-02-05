@@ -49,17 +49,20 @@ export const RadioButton: KendoComponent<RadioButtonProps & RadioButtonState & R
     return (
         <span className="k-radio-wrap">
             <input
-                {...other}
                 id={id}
                 type="radio"
                 checked={checked}
                 required={required}
+                disabled={disabled}
                 className={classNames(
                     props.className,
                     RADIOBUTTON_CLASSNAME,
                     optionClassNames(RADIOBUTTON_CLASSNAME, { size }),
                     stateClassNames(RADIOBUTTON_CLASSNAME, { hover, focus, disabled, invalid, valid, checked }),
                 )}
+                aria-label={props['aria-label'] || 'Radio button'}
+                aria-invalid={invalid ? 'true' : undefined}
+                {...other}
             />
         </span>
     );

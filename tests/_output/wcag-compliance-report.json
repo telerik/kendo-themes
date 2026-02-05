@@ -1,14 +1,14 @@
 {
   "meta": {
-    "timestamp": "2026-02-05T11:50:15.351Z",
+    "timestamp": "2026-02-05T12:59:48.631Z",
     "complianceLevel": "AA",
-    "filesTested": 6,
+    "filesTested": 5,
     "wcagVersion": "2.2"
   },
   "summary": {
     "totalViolations": 1,
-    "totalPasses": 116,
-    "avgScore": 99.25
+    "totalPasses": 98,
+    "avgScore": 99.1
   },
   "criteriaGroups": {
     "2.5.8": {
@@ -16,7 +16,7 @@
       "level": "AA",
       "violations": [
         {
-          "page": "./tests/checkbox/checkbox-group.html",
+          "page": "./tests/radio/radio-group.html",
           "rule": "target-size",
           "description": "Ensure touch targets have sufficient size and space",
           "impact": "serious",
@@ -24,15 +24,15 @@
         }
       ],
       "affectedPages": [
-        "./tests/checkbox/checkbox-group.html"
+        "./tests/radio/radio-group.html"
       ],
       "pageCount": 1
     }
   },
   "detailedResults": [
     {
-      "filePath": "./tests/checkbox/checkbox.html",
-      "timestamp": "2026-02-05T11:50:13.719Z",
+      "filePath": "./tests/radio/radio.html",
+      "timestamp": "2026-02-05T12:59:47.100Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -169,8 +169,8 @@
       "inapplicable": 67
     },
     {
-      "filePath": "./tests/checkbox/checkbox-states.html",
-      "timestamp": "2026-02-05T11:50:14.063Z",
+      "filePath": "./tests/radio/radio-states.html",
+      "timestamp": "2026-02-05T12:59:47.477Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -300,8 +300,8 @@
       "inapplicable": 68
     },
     {
-      "filePath": "./tests/checkbox/checkbox-size.html",
-      "timestamp": "2026-02-05T11:50:14.351Z",
+      "filePath": "./tests/radio/radio-size.html",
+      "timestamp": "2026-02-05T12:59:47.769Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -438,139 +438,8 @@
       "inapplicable": 67
     },
     {
-      "filePath": "./tests/checkbox/checkbox-rounded.html",
-      "timestamp": "2026-02-05T11:50:14.648Z",
-      "violations": [],
-      "filteredPageLevel": 3,
-      "passes": [
-        {
-          "id": "aria-allowed-attr",
-          "description": "Ensure an element's role supports its ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-conditional-attr",
-          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-hidden-body",
-          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
-          "wcagCriteria": [
-            "1.3.1",
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-prohibited-attr",
-          "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr-value",
-          "description": "Ensure all ARIA attributes have valid values",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-valid-attr",
-          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "avoid-inline-spacing",
-          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-          "wcagCriteria": [
-            "1.4.1"
-          ]
-        },
-        {
-          "id": "document-title",
-          "description": "Ensure each HTML document contains a non-empty <title> element",
-          "wcagCriteria": [
-            "2.4.2"
-          ]
-        },
-        {
-          "id": "form-field-multiple-labels",
-          "description": "Ensure form field does not have multiple label elements",
-          "wcagCriteria": [
-            "3.3.2"
-          ]
-        },
-        {
-          "id": "html-has-lang",
-          "description": "Ensure every HTML document has a lang attribute",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "html-lang-valid",
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "wcagCriteria": [
-            "3.1.1"
-          ]
-        },
-        {
-          "id": "label-title-only",
-          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-          "wcagCriteria": []
-        },
-        {
-          "id": "label",
-          "description": "Ensure every form element has a label",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "meta-viewport-large",
-          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
-          "wcagCriteria": []
-        },
-        {
-          "id": "meta-viewport",
-          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
-          "wcagCriteria": [
-            "1.4.4"
-          ]
-        },
-        {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "region",
-          "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "target-size",
-          "description": "Ensure touch targets have sufficient size and space",
-          "wcagCriteria": [
-            "2.5.8"
-          ]
-        }
-      ],
-      "incomplete": [],
-      "inapplicable": 68
-    },
-    {
-      "filePath": "./tests/checkbox/checkbox-label-position.html",
-      "timestamp": "2026-02-05T11:50:14.912Z",
+      "filePath": "./tests/radio/radio-label-position.html",
+      "timestamp": "2026-02-05T12:59:48.099Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -721,8 +590,8 @@
       "inapplicable": 65
     },
     {
-      "filePath": "./tests/checkbox/checkbox-group.html",
-      "timestamp": "2026-02-05T11:50:15.158Z",
+      "filePath": "./tests/radio/radio-group.html",
+      "timestamp": "2026-02-05T12:59:48.407Z",
       "violations": [
         {
           "id": "target-size",
@@ -757,9 +626,9 @@
                   },
                   "relatedNodes": [
                     {
-                      "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+                      "html": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
                       "target": [
-                        ".k-list-horizontal:nth-child(7) > li:nth-child(2) > .k-checkbox-wrap > input"
+                        "li:nth-child(2) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
                       ]
                     }
                   ],
@@ -770,9 +639,9 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+              "html": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
               "target": [
-                ".k-list-horizontal:nth-child(7) > li:nth-child(1) > .k-checkbox-wrap > input"
+                "li:nth-child(1) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
               ],
               "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
             },
@@ -797,15 +666,15 @@
                   },
                   "relatedNodes": [
                     {
-                      "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+                      "html": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
                       "target": [
-                        ".k-list-horizontal:nth-child(7) > li:nth-child(1) > .k-checkbox-wrap > input"
+                        "li:nth-child(1) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
                       ]
                     },
                     {
-                      "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+                      "html": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
                       "target": [
-                        ".k-list-horizontal:nth-child(7) > li:nth-child(3) > .k-checkbox-wrap > input"
+                        "li:nth-child(3) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
                       ]
                     }
                   ],
@@ -816,9 +685,9 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+              "html": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
               "target": [
-                ".k-list-horizontal:nth-child(7) > li:nth-child(2) > .k-checkbox-wrap > input"
+                "li:nth-child(2) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
               ],
               "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
             },
@@ -843,9 +712,9 @@
                   },
                   "relatedNodes": [
                     {
-                      "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+                      "html": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
                       "target": [
-                        ".k-list-horizontal:nth-child(7) > li:nth-child(2) > .k-checkbox-wrap > input"
+                        "li:nth-child(2) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
                       ]
                     }
                   ],
@@ -856,9 +725,9 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<input aria-label=\"Checkbox\" class=\"k-checkbox\" type=\"checkbox\">",
+              "html": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
               "target": [
-                ".k-list-horizontal:nth-child(7) > li:nth-child(3) > .k-checkbox-wrap > input"
+                "li:nth-child(3) > .k-radio-wrap > input[name=\"normal-horizontal\"]"
               ],
               "failureSummary": "Fix any of the following:\n  Target has insufficient size (2px by 2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 12px instead of at least 24px."
             }
