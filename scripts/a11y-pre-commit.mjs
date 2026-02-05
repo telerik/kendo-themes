@@ -33,8 +33,19 @@ function log(msg, color = 'reset') {
 
 function getStagedFiles() {
     try {
-        const output = execSync('git diff --cached --name-only', { encoding: 'utf-8' });
-        return output.trim().split('\n').filter(f => f);
+        // In pre-push hook, check commits being pushed (HEAD vs origin)
+        // In pre-commit hook, check staged files
+        const isPush = process.argv.includes('--prompt') || process.argv.includes('--check-only');
+        
+        if (isPush) {
+            // Check files changed in unpushed commits
+            const output = execSync('git diff --name-only origin/$(git rev-parse --abbrev-ref HEAD)..HEAD 2>/dev/null || git diff --name-only HEAD~1..HEAD', { encoding: 'utf-8' });
+            return output.trim().split('\n').filter(f => f);
+        } else {
+            // Check staged files (for pre-commit)
+            const output = execSync('git diff --cached --name-only', { encoding: 'utf-8' });
+            return output.trim().split('\n').filter(f => f);
+        }
     } catch {
         return [];
     }
@@ -100,8 +111,34 @@ function testComponent(component) {
     }
 
     try {
-        execSync(`npm run test:wcag ${component}`, { stdio: 'pipe' });
-        log('    ✅ WCAG compliance passed', 'green');
+        const wcagOutput = execSync(`npm run test:wcag ${component} -- --verbose`, { encoding: 'utf-8', stdio: 'pipe' });
+        
+        // Check if violations exist by looking at the summary
+        const summaryMatch = wcagOutput.match(/Top 5 Most Violated Success Criteria:\s+(.+?)(?=\n\n|$)/s);
+        
+        if (summaryMatch) {
+            const criteria = summaryMatch[1];
+            const violatedCriteria = criteria.match(/\d+\.\s+(\d+\.\d+\.\d+)/g);
+            
+            if (violatedCriteria && violatedCriteria.length > 0) {
+                // Extract just the criterion numbers (e.g., "2.5.8")
+                const criterionNumbers = violatedCriteria.map(v => v.match(/(\d+\.\d+\.\d+)/)[1]);
+                
+                // Check if all violations are 2.5.8 (target-size - documented exception)
+                const onlyTargetSize = criterionNumbers.every(c => c === '2.5.8');
+                
+                if (!onlyTargetSize) {
+                    log('    ❌ WCAG compliance failed', 'red');
+                    wcagPassed = false;
+                } else {
+                    log('    ✅ WCAG compliance passed (2.5.8 target-size exception noted)', 'green');
+                }
+            } else {
+                log('    ✅ WCAG compliance passed', 'green');
+            }
+        } else {
+            log('    ✅ WCAG compliance passed', 'green');
+        }
     } catch {
         log('    ❌ WCAG compliance failed', 'red');
         wcagPassed = false;
