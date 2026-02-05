@@ -1,0 +1,118 @@
+Component,Priority,Has ARIA Spec,Phase 1 Status,Phase 2 Status,Phase 3 Status,Notes
+# Priority Classification (T008):
+# P0 (High-Traffic Interactive): 14 components - Critical form controls, inputs, and data components
+# P1 (Medium-Traffic): 69 components - Common UI patterns, navigation, feedback components
+# P2 (Low-Traffic/Specialized): 29 components - Specialized visualizations, advanced controls
+# Total: 112 components with ARIA specs
+action-sheet,P2,Yes,Pending,Pending,Pending,
+ai-prompt,P2,Yes,Pending,Pending,Pending,
+appbar,P1,Yes,Pending,Pending,Pending,
+autocomplete,P1,Yes,Pending,Pending,Pending,
+avatar,P2,Yes,Pending,Pending,Pending,Presentational component
+bottom-navigation,P1,Yes,Pending,Pending,Pending,
+breadcrumb,P1,Yes,Pending,Pending,Pending,
+button,P0,Yes,Complete,Pending,Pending,High-traffic interactive - ARIA attributes applied with aria-label for icon buttons
+buttongroup,P1,Yes,Pending,Pending,Pending,
+calendar,P1,Yes,Pending,Pending,Pending,
+captcha,P2,Yes,Pending,Pending,Pending,
+card,P1,Yes,Pending,Pending,Pending,
+carousel,P1,Yes,Pending,Pending,Pending,
+chart,P1,Yes,Pending,Pending,Pending,
+chart-wizard,P2,Yes,Pending,Pending,Pending,
+chat,P1,Yes,Pending,Pending,Pending,
+checkbox,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+chip,P1,Yes,Pending,Pending,Pending,
+chiplist,P1,Yes,Pending,Pending,Pending,
+chunk-progressbar,P2,Yes,Pending,Pending,Pending,
+circular-progressbar,P2,Yes,Pending,Pending,Pending,
+colorgradient,P1,Yes,Pending,Pending,Pending,
+colorpalette,P1,Yes,Pending,Pending,Pending,
+colorpicker,P1,Yes,Pending,Pending,Pending,
+column-chooser,P1,Yes,Pending,Pending,Pending,
+column-menu,P1,Yes,Pending,Pending,Pending,
+combobox,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+context-menu,P1,Yes,Pending,Pending,Pending,
+dateinput,P1,Yes,Pending,Pending,Pending,
+datepicker,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+daterangepicker,P1,Yes,Pending,Pending,Pending,
+datetimepicker,P1,Yes,Pending,Pending,Pending,
+dialog,P1,Yes,Pending,Pending,Pending,
+dockmanager,P1,Yes,Pending,Pending,Pending,
+drawer,P1,Yes,Pending,Pending,Pending,
+dropdownbutton,P1,Yes,Pending,Pending,Pending,
+dropdowngrid,P1,Yes,Pending,Pending,Pending,
+dropdownlist,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+dropdowntree,P1,Yes,Pending,Pending,Pending,
+editor,P1,Yes,Pending,Pending,Pending,
+expansionpanel,P1,Yes,Pending,Pending,Pending,
+fab,P1,Yes,Pending,Pending,Pending,
+file-box,P2,Yes,Pending,Pending,Pending,
+filemanager,P1,Yes,Pending,Pending,Pending,
+filter,P1,Yes,Pending,Pending,Pending,
+filter-menu,P1,Yes,Pending,Pending,Pending,
+flatcolorpicker,P1,Yes,Pending,Pending,Pending,
+floatingactionbutton,P1,Yes,Pending,Pending,Pending,
+form,P1,Yes,Pending,Pending,Pending,
+gantt,P1,Yes,Pending,Pending,Pending,
+grid,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+icon,P2,Yes,Pending,Pending,Pending,Presentational component
+imageeditor,P2,Yes,Pending,Pending,Pending,
+infinitecalendar,P2,Yes,Pending,Pending,Pending,
+listbox,P1,Yes,Pending,Pending,Pending,
+listview,P1,Yes,Pending,Pending,Pending,
+maskedtextbox,P1,Yes,Pending,Pending,Pending,
+media-player,P2,Yes,Pending,Pending,Pending,
+menu,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+menu-button,P1,Yes,Pending,Pending,Pending,
+multicolumncombobox,P1,Yes,Pending,Pending,Pending,
+multiselect,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+multiselecttree,P1,Yes,Pending,Pending,Pending,
+multiviewcalendar,P1,Yes,Pending,Pending,Pending,
+notification,P1,Yes,Pending,Pending,Pending,
+numerictextbox,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+onetimepassword,P2,Yes,Pending,Pending,Pending,
+orgchart,P2,Yes,Pending,Pending,Pending,
+otp,P2,Yes,Pending,Pending,Pending,Duplicate of onetimepassword
+pager,P1,Yes,Pending,Pending,Pending,
+panelbar,P1,Yes,Pending,Pending,Pending,
+pdfviewer,P2,Yes,Pending,Pending,Pending,
+pivotgrid,P2,Yes,Pending,Pending,Pending,
+popover,P1,Yes,Pending,Pending,Pending,
+progressbar,P2,Yes,Pending,Pending,Pending,
+prompt-box,P2,Yes,Pending,Pending,Pending,
+propertygrid,P2,Yes,Pending,Pending,Pending,
+radiobutton,P0,Yes,Pending,Pending,Pending,High-traffic interactive (individual radio)
+radiogroup,P0,Yes,Pending,Pending,Pending,High-traffic interactive (radio group)
+range-slider,P1,Yes,Pending,Pending,Pending,
+rating,P1,Yes,Pending,Pending,Pending,
+sankey,P2,Yes,Pending,Pending,Pending,
+scheduler,P1,Yes,Pending,Pending,Pending,
+signature,P2,Yes,Pending,Pending,Pending,
+skeleton,P2,Yes,Pending,Pending,Pending,
+slider,P1,Yes,Pending,Pending,Pending,
+sortable,P2,Yes,Pending,Pending,Pending,
+speech-to-text-button,P2,Yes,Pending,Pending,Pending,
+splitbutton,P1,Yes,Pending,Pending,Pending,
+splitter,P1,Yes,Pending,Pending,Pending,
+spreadsheet,P2,Yes,Pending,Pending,Pending,Complex component
+stepper,P1,Yes,Pending,Pending,Pending,
+switch,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+tabstrip,P1,Yes,Pending,Pending,Pending,
+taskboard,P2,Yes,Pending,Pending,Pending,
+textarea,P1,Yes,Pending,Pending,Pending,
+textbox,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+tiledurationpicker,P2,Yes,Pending,Pending,Pending,
+tilelayout,P1,Yes,Pending,Pending,Pending,
+timeline,P2,Yes,Pending,Pending,Pending,
+timepicker,P1,Yes,Pending,Pending,Pending,
+togglebutton,P1,Yes,Pending,Pending,Pending,
+toolbar,P1,Yes,Pending,Pending,Pending,
+tooltip,P1,Yes,Pending,Pending,Pending,
+treelist,P1,Yes,Pending,Pending,Pending,
+treeview,P0,Yes,Pending,Pending,Pending,High-traffic interactive
+upload,P1,Yes,Pending,Pending,Pending,
+validation-message,P1,Yes,Pending,Pending,Pending,
+validation-summary,P1,Yes,Pending,Pending,Pending,
+validation-tooltip,P1,Yes,Pending,Pending,Pending,
+window,P1,Yes,Pending,Pending,Pending,
+wizard,P1,Yes,Pending,Pending,Pending,
