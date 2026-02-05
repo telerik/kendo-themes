@@ -62,6 +62,7 @@
             margin-block-start: $kendo-smart-box-popup-segmented-control-margin;
             margin-inline: $kendo-smart-box-popup-segmented-control-margin;
             width: calc(100% - #{$kendo-smart-box-popup-segmented-control-margin} * 2);
+            flex-shrink: 0;
         }
 
         .k-list-item-text {
