@@ -82,6 +82,9 @@
   "engines": {
     "node": "^22"
   },
+  "overrides": {
+    "tar": "7.5.7"
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint",
     "*.{css,scss}": "stylelint"
