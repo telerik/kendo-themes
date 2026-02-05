@@ -31,6 +31,7 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
     const {
         size,
         fillMode,
+        disabled,
         ...other
     } = props;
 
@@ -45,13 +46,17 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
                 className="k-spinner-increase"
                 icon="caret-alt-up"
                 size={size}
-                fillMode={fillMode}>
+                fillMode={fillMode}
+                disabled={disabled}
+                aria-label="Increase value">
             </Button>
             <Button
                 className="k-spinner-decrease"
                 icon="caret-alt-down"
                 size={size}
-                fillMode={fillMode}>
+                fillMode={fillMode}
+                disabled={disabled}
+                aria-label="Decrease value">
             </Button>
         </span>
     );

@@ -1,994 +1,1123 @@
 {
-  "timestamp": "2026-02-05T12:53:01.715Z",
+  "timestamp": "2026-02-05T13:39:58.041Z",
   "summary": {
-    "filesTested": 5,
+    "filesTested": 6,
     "skipped": 0,
-    "passed": 203,
-    "violations": 70
+    "passed": 1512,
+    "violations": 80
   },
   "results": [
     {
-      "filePath": "./tests/radio/radio.html",
-      "spec": "aria/radio_aria.md",
-      "totalRules": 7,
-      "testedRules": 6,
+      "filePath": "./tests/numerictextbox/numerictextbox.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 12,
+      "testedRules": 12,
+      "untestedRules": [],
+      "violations": [],
+      "passed": 216,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/numerictextbox/numerictextbox-solid.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 12,
+      "testedRules": 12,
+      "untestedRules": [],
+      "violations": [],
+      "passed": 216,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/numerictextbox/numerictextbox-size-rounded.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 12,
+      "testedRules": 10,
       "untestedRules": [
         {
-          "selector": ".k-invalid,.ng-invalid",
-          "attribute": "aria-invalid=true",
-          "usage": "The attribute is rendered only when the radio button is in a form and announces the valid state of the component."
+          "selector": ".k-numerictextbox.k-disabled .k-input-inner",
+          "attribute": "disabled=disabled or aria-disabled=true",
+          "usage": "The attribute is rendered only when the NumericTextBox is disabled."
+        },
+        {
+          "selector": ".k-numerictextbox.k-disabled .k-spin-button>.k-button",
+          "attribute": "disabled or aria-disabled",
+          "usage": "Attribute is rendered only when the picker is disabled."
         }
       ],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-unchecked\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-unchecked-rtl\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        }
-      ],
-      "passed": 32,
-      "violationCount": 4
+      "violations": [],
+      "passed": 216,
+      "violationCount": 0
     },
     {
-      "filePath": "./tests/radio/radio-states.html",
-      "spec": "aria/radio_aria.md",
-      "totalRules": 7,
-      "testedRules": 7,
+      "filePath": "./tests/numerictextbox/numerictextbox-prefix-suffix.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 12,
+      "testedRules": 12,
       "untestedRules": [],
       "violations": [
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input class=\"k-radio k-hover\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio k-focus\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input disabled=\"\" class=\"k-radio k-disabled\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio k-invalid\" aria-label=\"Radio button\" aria-invalid=\"true\" type=\"radio\">",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio k-invalid k-hover\" aria-label=\"Radio button\" aria-invalid=\"true\" type=\"radio\">",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio k-invalid k-focus\" aria-label=\"Radio button\" aria-invalid=\"true\" type=\"radio\">",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input disabled=\"\" class=\"k-radio k-invalid k-disabled\" aria-label=\"Radio button\" aria-invalid=\"true\" type=\"radio\">",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        }
-      ],
-      "passed": 35,
-      "violationCount": 8
-    },
-    {
-      "filePath": "./tests/radio/radio-size.html",
-      "spec": "aria/radio_aria.md",
-      "totalRules": 7,
-      "testedRules": 7,
-      "untestedRules": [],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-unchecked-\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-unchecked-small\" class=\"k-radio k-radio-sm\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-unchecked-medium\" class=\"k-radio k-radio-md\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-unchecked-large\" class=\"k-radio k-radio-lg\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-hover-\" class=\"k-radio k-hover\" aria-label=\"Radio button\" type=\"radio\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 4,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"rad-hover-small\" class=\"k-radio k-radio-sm k-hover\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-hover-medium\" class=\"k-radio k-radio-md k-hover\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-hover-large\" class=\"k-radio k-radio-lg k-hover\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-focus-\" class=\"k-radio k-focus\" aria-label=\"Radio button\" type=\"radio\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 8,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"rad-focus-small\" class=\"k-radio k-radio-sm k-focus\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-focus-medium\" class=\"k-radio k-radio-md k-focus\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-focus-large\" class=\"k-radio k-radio-lg k-focus\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-valid-\" class=\"k-radio k-valid\" aria-label=\"Radio button\" type=\"radio\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 12,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"rad-valid-small\" class=\"k-radio k-radio-sm k-valid\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 13,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-valid-medium\" class=\"k-radio k-radio-md k-valid\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 14,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-valid-large\" class=\"k-radio k-radio-lg k-valid\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 15,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-invalid-\" class=\"k-radio k-invalid\" aria-label=\"Radio button\" aria-invalid=\"true\" type=\"radio\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 16,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"rad-invalid-small\" class=\"k-radio k-radio-sm k-invalid\" aria-label=\"Radio button\" aria-invalid=\"true\" type=\"radio\">",
-          "index": 17,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-invalid-medium\" class=\"k-radio k-radio-md k-invalid\" aria-label=\"Radio button\" aria-invalid=\"true\" type=\"radio\">",
-          "index": 18,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-invalid-large\" class=\"k-radio k-radio-lg k-invalid\" aria-label=\"Radio button\" aria-invalid=\"true\" type=\"radio\">",
-          "index": 19,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-required-\" required=\"\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 20,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"rad-required-small\" required=\"\" class=\"k-radio k-radio-sm\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 21,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-required-medium\" required=\"\" class=\"k-radio k-radio-md\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 22,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-required-large\" required=\"\" class=\"k-radio k-radio-lg\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 23,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-disabled-\" disabled=\"\" class=\"k-radio k-disabled\" aria-label=\"Radio button\" type=\"radio\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 24,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"rad-disabled-small\" disabled=\"\" class=\"k-radio k-radio-sm k-disabled\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 25,
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 28,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"rad-disabled-medium\" disabled=\"\" class=\"k-radio k-radio-md k-disabled\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 26,
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 32,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"rad-disabled-large\" disabled=\"\" class=\"k-radio k-radio-lg k-disabled\" aria-label=\"Radio button\" type=\"radio\">",
-          "index": 27,
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 36,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "role",
           "actual": null
-        }
-      ],
-      "passed": 76,
-      "violationCount": 28
-    },
-    {
-      "filePath": "./tests/radio/radio-label-position.html",
-      "spec": "aria/radio_aria.md",
-      "totalRules": 7,
-      "testedRules": 6,
-      "untestedRules": [
-        {
-          "selector": ".k-invalid,.ng-invalid",
-          "attribute": "aria-invalid=true",
-          "usage": "The attribute is rendered only when the radio button is in a form and announces the valid state of the component."
-        }
-      ],
-      "violations": [
+        },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
           },
-          "element": "<input id=\"vertical-after-one\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"vertical-after\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 40,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 44,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 48,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 52,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 56,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "role=spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 60,
+          "valid": false,
+          "reason": "missing",
+          "expected": "role",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 0,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "label for or aria-label or aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
           },
-          "element": "<input id=\"vertical-after-two\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"vertical-after\">",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"vertical-after-thee\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"vertical-after\">",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"vertical-before-one\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"vertical-before\">",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"vertical-before-two\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"vertical-before\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 4,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "label for or aria-label or aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
           },
-          "element": "<input id=\"vertical-before-thee\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"vertical-before\">",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"horizontal-after-one\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"horizontal-after\">",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"horizontal-after-two\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"horizontal-after\">",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"horizontal-after-three\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"horizontal-after\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 8,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "label for or aria-label or aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
           },
-          "element": "<input id=\"horizontal-before-one\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"horizontal-before\">",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"horizontal-before-two\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"horizontal-before\">",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"horizontal-before-three\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"horizontal-before\">",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        }
-      ],
-      "passed": 24,
-      "violationCount": 12
-    },
-    {
-      "filePath": "./tests/radio/radio-group.html",
-      "spec": "aria/radio_aria.md",
-      "totalRules": 7,
-      "testedRules": 6,
-      "untestedRules": [
-        {
-          "selector": ".k-invalid,.ng-invalid",
-          "attribute": "aria-invalid=true",
-          "usage": "The attribute is rendered only when the radio button is in a form and announces the valid state of the component."
-        }
-      ],
-      "violations": [
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-vertical\">",
-          "index": 0,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-vertical\">",
-          "index": 1,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-vertical\">",
-          "index": 2,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-vertical-one\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"label-vertical\">",
-          "index": 3,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-vertical-two\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"label-vertical\">",
-          "index": 4,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-vertical-thee\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"label-vertical\">",
-          "index": 5,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"inside-label-vertical\">",
-          "index": 6,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"inside-label-vertical\">",
-          "index": 7,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"inside-label-vertical\">",
-          "index": 8,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
-          "index": 9,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
-          "index": 10,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"normal-horizontal\">",
-          "index": 11,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-horizontal-one\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"label-horizontal\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 12,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "label for or aria-label or aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
           },
-          "element": "<input id=\"rad-horizontal-two\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"label-horizontal\">",
-          "index": 13,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input id=\"rad-horizontal-thee\" class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"label-horizontal\">",
-          "index": 14,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"inside-label-horizontal\">",
-          "index": 15,
-          "valid": false,
-          "reason": "missing",
-          "expected": "checked",
-          "actual": null
-        },
-        {
-          "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
-          },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"inside-label-horizontal\">",
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
           "index": 16,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "label for or aria-label or aria-labelledby",
           "actual": null
         },
         {
           "rule": {
-            "selector": ".k-radio",
-            "attribute": "checked",
-            "usage": "Boolean attribute. Present when radio button is checked, absent when unchecked. Announces the checked state of the radio button."
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
           },
-          "element": "<input class=\"k-radio\" aria-label=\"Radio button\" type=\"radio\" name=\"inside-label-horizontal\">",
-          "index": 17,
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 20,
           "valid": false,
           "reason": "missing",
-          "expected": "checked",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 24,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 28,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 32,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 36,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 40,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 44,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 48,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 52,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 56,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input requires an accessible name that will be assigned to it."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 60,
+          "valid": false,
+          "reason": "missing",
+          "expected": "label for or aria-label or aria-labelledby",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 16,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 20,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 24,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 28,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 32,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 36,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 40,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 44,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 48,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 52,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 56,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the value for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 60,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuenow",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 16,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 20,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 24,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 28,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 32,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 36,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 40,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 44,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 48,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 52,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 56,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 60,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemin",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 0,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 4,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 8,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 12,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 16,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 20,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 24,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 28,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 32,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 36,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 40,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 44,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 48,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 52,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 56,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
+          "actual": null
+        },
+        {
+          "rule": {
+            "selector": ".k-numerictextbox .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum value allowed for the component."
+          },
+          "element": "<span class=\"k-input-inner\">\n                            <span class=\"k-input-value-text\">mm</span>\n                        </span>",
+          "index": 60,
+          "valid": false,
+          "reason": "missing",
+          "expected": "aria-valuemax",
           "actual": null
         }
       ],
-      "passed": 36,
-      "violationCount": 18
+      "passed": 432,
+      "violationCount": 80
+    },
+    {
+      "filePath": "./tests/numerictextbox/numerictextbox-outline.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 12,
+      "testedRules": 12,
+      "untestedRules": [],
+      "violations": [],
+      "passed": 216,
+      "violationCount": 0
+    },
+    {
+      "filePath": "./tests/numerictextbox/numerictextbox-flat.html",
+      "spec": "aria/numerictextbox_aria.md",
+      "totalRules": 12,
+      "testedRules": 12,
+      "untestedRules": [],
+      "violations": [],
+      "passed": 216,
+      "violationCount": 0
     }
   ]
 }

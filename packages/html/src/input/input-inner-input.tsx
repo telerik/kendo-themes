@@ -11,6 +11,8 @@ export type InputInnerInputProps = {
     type?: string;
     placeholder?: string;
     autocomplete?: string;
+    min?: number;
+    max?: number;
 };
 
 const defaultOptions = {
@@ -32,6 +34,8 @@ export const InputInnerInput = (
         disabled,
         required,
         invalid,
+        min,
+        max,
         ...other
     } = props;
 
@@ -49,6 +53,9 @@ export const InputInnerInput = (
             aria-invalid={invalid ? 'true' : undefined}
             aria-disabled={disabled ? 'true' : undefined}
             aria-describedby={props['aria-describedby']}
+            aria-valuenow={props['aria-valuenow']}
+            aria-valuemin={min}
+            aria-valuemax={max}
             {...other}
         />
     );
