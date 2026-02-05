@@ -21,8 +21,18 @@ Your goal is to apply WAI-ARIA attributes to TSX component specs and ensure WCAG
 - **Apply attributes**: Add ARIA attributes to TSX files in `packages/html/src/[component]/`
 - **Target root and templates only**: Edit `.spec.tsx` and `templates/*.tsx` files
 - **Never edit tests**: Do NOT modify files in `tests/` folder
-- **Validate changes**: Run `npm run test:aria [component]` after changes
+- **Regenerate test HTML**: Run `node scripts/render-test-pages.mjs [component]` (fast, component-specific)
+- **Validate changes**: Run `npm run test:aria [component]` and `npm run test:wcag [component]`
 - **Typecheck**: Run `npm run typecheck --prefix packages/html` before completing
+
+### Workflow for Each Component
+1. Read `aria/[component]_aria.md` specification
+2. Apply ARIA attributes to `.spec.tsx` and `templates/*.tsx`
+3. Regenerate test HTML: `node scripts/render-test-pages.mjs [component]`
+4. Validate ARIA: `npm run test:aria [component]`
+5. Validate WCAG: `npm run test:wcag [component]`
+6. Type check: `cd packages/html && npm run typecheck`
+7. Commit changes (source files + generated test HTML)
 
 ### Quality Control
 - **Semantic HTML first**: Prefer `<button>` over `<div role="button">`

@@ -194,12 +194,30 @@ If an ARIA spec rule doesn't match any rendered HTML:
 </div>
 ```
 
+### Accessibility Workflow
+
+When applying ARIA attributes to a component:
+
+1. **Edit source files**: Modify `.spec.tsx` and `templates/*.tsx` files
+2. **Regenerate test HTML**: `node scripts/render-test-pages.mjs [component]` (faster than full rebuild)
+3. **Validate ARIA**: `npm run test:aria [component]`
+4. **Validate WCAG**: `npm run test:wcag [component]`
+5. **Type check**: `cd packages/html && npm run typecheck`
+6. **Commit**: Include source changes + generated test HTML files
+
 ### Accessibility Commands
 
 ```bash
+# Fast test regeneration for specific component (recommended)
+node scripts/render-test-pages.mjs [component]
+
+# Validation commands
 npm run test:aria [component]   # Validate against aria/*.md spec rules
 npm run test:wcag [component]   # Validate against WAI-ARIA via axe-core
 npm run test:a11y               # Run both ARIA + WCAG + contrast tests
+
+# Full rebuild (slower, use only when needed)
+npm run build:tests             # Rebuild all component tests
 ```
 
 ## Related Documentation
