@@ -1,6 +1,6 @@
 {
   "meta": {
-    "timestamp": "2026-02-05T11:41:00.247Z",
+    "timestamp": "2026-02-05T11:50:15.351Z",
     "complianceLevel": "AA",
     "filesTested": 6,
     "wcagVersion": "2.2"
@@ -32,7 +32,7 @@
   "detailedResults": [
     {
       "filePath": "./tests/checkbox/checkbox.html",
-      "timestamp": "2026-02-05T11:40:58.621Z",
+      "timestamp": "2026-02-05T11:50:13.719Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -170,7 +170,7 @@
     },
     {
       "filePath": "./tests/checkbox/checkbox-states.html",
-      "timestamp": "2026-02-05T11:40:58.964Z",
+      "timestamp": "2026-02-05T11:50:14.063Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -301,7 +301,7 @@
     },
     {
       "filePath": "./tests/checkbox/checkbox-size.html",
-      "timestamp": "2026-02-05T11:40:59.268Z",
+      "timestamp": "2026-02-05T11:50:14.351Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -439,7 +439,7 @@
     },
     {
       "filePath": "./tests/checkbox/checkbox-rounded.html",
-      "timestamp": "2026-02-05T11:40:59.544Z",
+      "timestamp": "2026-02-05T11:50:14.648Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -570,7 +570,7 @@
     },
     {
       "filePath": "./tests/checkbox/checkbox-label-position.html",
-      "timestamp": "2026-02-05T11:40:59.803Z",
+      "timestamp": "2026-02-05T11:50:14.912Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -722,7 +722,7 @@
     },
     {
       "filePath": "./tests/checkbox/checkbox-group.html",
-      "timestamp": "2026-02-05T11:41:00.053Z",
+      "timestamp": "2026-02-05T11:50:15.158Z",
       "violations": [
         {
           "id": "target-size",
