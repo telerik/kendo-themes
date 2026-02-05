@@ -1,20 +1,20 @@
 {
   "meta": {
-    "timestamp": "2026-02-05T13:21:40.784Z",
+    "timestamp": "2026-02-05T13:25:44.700Z",
     "complianceLevel": "AA",
-    "filesTested": 2,
+    "filesTested": 6,
     "wcagVersion": "2.2"
   },
   "summary": {
     "totalViolations": 0,
-    "totalPasses": 42,
+    "totalPasses": 116,
     "avgScore": 100
   },
   "criteriaGroups": {},
   "detailedResults": [
     {
-      "filePath": "./tests/switch/switch.html",
-      "timestamp": "2026-02-05T13:21:39.760Z",
+      "filePath": "./tests/textbox/textbox.html",
+      "timestamp": "2026-02-05T13:25:42.866Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -26,20 +26,8 @@
           ]
         },
         {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
           "id": "aria-conditional-attr",
           "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -53,29 +41,15 @@
           ]
         },
         {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-prohibited-attr",
           "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-toggle-field-name",
-          "description": "Ensure every ARIA toggle field has an accessible name",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -95,6 +69,13 @@
           ]
         },
         {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
@@ -109,6 +90,13 @@
           ]
         },
         {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
           "id": "html-has-lang",
           "description": "Ensure every HTML document has a lang attribute",
           "wcagCriteria": [
@@ -120,6 +108,439 @@
           "description": "Ensure the lang attribute of the <html> element has a valid value",
           "wcagCriteria": [
             "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 67
+    },
+    {
+      "filePath": "./tests/textbox/textbox-solid.html",
+      "timestamp": "2026-02-05T13:25:43.206Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 67
+    },
+    {
+      "filePath": "./tests/textbox/textbox-size-rounded.html",
+      "timestamp": "2026-02-05T13:25:43.494Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 67
+    },
+    {
+      "filePath": "./tests/textbox/textbox-prefix-suffix.html",
+      "timestamp": "2026-02-05T13:25:43.837Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "button-name",
+          "description": "Ensure buttons have discernible text",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
           ]
         },
         {
@@ -144,11 +565,6 @@
         {
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "tabindex",
-          "description": "Ensure tabindex attribute values are not greater than 0",
           "wcagCriteria": []
         },
         {
@@ -163,8 +579,8 @@
       "inapplicable": 65
     },
     {
-      "filePath": "./tests/switch/switch-size-rounded.html",
-      "timestamp": "2026-02-05T13:21:40.315Z",
+      "filePath": "./tests/textbox/textbox-outline.html",
+      "timestamp": "2026-02-05T13:25:44.207Z",
       "violations": [],
       "filteredPageLevel": 3,
       "passes": [
@@ -176,20 +592,8 @@
           ]
         },
         {
-          "id": "aria-allowed-role",
-          "description": "Ensure role attribute has an appropriate value for the element",
-          "wcagCriteria": []
-        },
-        {
           "id": "aria-conditional-attr",
           "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-deprecated-role",
-          "description": "Ensure elements do not use deprecated roles",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -203,29 +607,15 @@
           ]
         },
         {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "aria-prohibited-attr",
           "description": "Ensure ARIA attributes are not prohibited for an element's role",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-required-attr",
-          "description": "Ensure elements with ARIA roles have all required ARIA attributes",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-roles",
-          "description": "Ensure all elements with a role attribute use a valid value",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
-          "id": "aria-toggle-field-name",
-          "description": "Ensure every ARIA toggle field has an accessible name",
           "wcagCriteria": [
             "4.1.2"
           ]
@@ -245,6 +635,13 @@
           ]
         },
         {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
           "id": "avoid-inline-spacing",
           "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
           "wcagCriteria": [
@@ -256,6 +653,13 @@
           "description": "Ensure each HTML document contains a non-empty <title> element",
           "wcagCriteria": [
             "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
           ]
         },
         {
@@ -273,6 +677,18 @@
           ]
         },
         {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
           "id": "meta-viewport-large",
           "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
           "wcagCriteria": []
@@ -285,20 +701,8 @@
           ]
         },
         {
-          "id": "nested-interactive",
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "wcagCriteria": [
-            "4.1.2"
-          ]
-        },
-        {
           "id": "region",
           "description": "Ensure all page content is contained by landmarks",
-          "wcagCriteria": []
-        },
-        {
-          "id": "tabindex",
-          "description": "Ensure tabindex attribute values are not greater than 0",
           "wcagCriteria": []
         },
         {
@@ -310,7 +714,145 @@
         }
       ],
       "incomplete": [],
-      "inapplicable": 65
+      "inapplicable": 67
+    },
+    {
+      "filePath": "./tests/textbox/textbox-flat.html",
+      "timestamp": "2026-02-05T13:25:44.480Z",
+      "violations": [],
+      "filteredPageLevel": 3,
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "description": "Ensure an element's role supports its ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-conditional-attr",
+          "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-body",
+          "description": "Ensure aria-hidden=\"true\" is not present on the document body.",
+          "wcagCriteria": [
+            "1.3.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "description": "Ensure all ARIA attributes have valid values",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "aria-valid-attr",
+          "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "autocomplete-valid",
+          "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+          "wcagCriteria": [
+            "1.3.5"
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "wcagCriteria": [
+            "1.4.1"
+          ]
+        },
+        {
+          "id": "document-title",
+          "description": "Ensure each HTML document contains a non-empty <title> element",
+          "wcagCriteria": [
+            "2.4.2"
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "description": "Ensure form field does not have multiple label elements",
+          "wcagCriteria": [
+            "3.3.2"
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "description": "Ensure every HTML document has a lang attribute",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "wcagCriteria": [
+            "3.1.1"
+          ]
+        },
+        {
+          "id": "label-title-only",
+          "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+          "wcagCriteria": []
+        },
+        {
+          "id": "label",
+          "description": "Ensure every form element has a label",
+          "wcagCriteria": [
+            "4.1.2"
+          ]
+        },
+        {
+          "id": "meta-viewport-large",
+          "description": "Ensure <meta name=\"viewport\"> can scale a significant amount",
+          "wcagCriteria": []
+        },
+        {
+          "id": "meta-viewport",
+          "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "wcagCriteria": [
+            "1.4.4"
+          ]
+        },
+        {
+          "id": "region",
+          "description": "Ensure all page content is contained by landmarks",
+          "wcagCriteria": []
+        },
+        {
+          "id": "target-size",
+          "description": "Ensure touch targets have sufficient size and space",
+          "wcagCriteria": [
+            "2.5.8"
+          ]
+        }
+      ],
+      "incomplete": [],
+      "inapplicable": 67
     }
   ]
 }

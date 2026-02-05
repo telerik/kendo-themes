@@ -29,17 +29,27 @@ export const InputInnerInput = (
         type = defaultOptions.type,
         placeholder = defaultOptions.placeholder,
         autocomplete = defaultOptions.autocomplete,
+        disabled,
+        required,
+        invalid,
         ...other
     } = props;
 
     return (
         <input
-            {...other}
             type={type}
+            disabled={disabled}
+            required={required}
             className={classNames(props.className, className, optionClassNames(className, props))}
             placeholder={placeholder}
             autoComplete={autocomplete}
             defaultValue={value}
+            aria-label={props['aria-label'] || 'Textbox'}
+            aria-required={required ? 'true' : undefined}
+            aria-invalid={invalid ? 'true' : undefined}
+            aria-disabled={disabled ? 'true' : undefined}
+            aria-describedby={props['aria-describedby']}
+            {...other}
         />
     );
 };
