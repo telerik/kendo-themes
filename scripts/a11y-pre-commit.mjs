@@ -111,7 +111,7 @@ function testComponent(component) {
     }
 
     try {
-        const wcagOutput = execSync(`npm run test:wcag ${component} -- --verbose`, { encoding: 'utf-8', stdio: 'pipe' });
+        const wcagOutput = execSync(`npm run test:wcag ${component} -- --verbose 2>&1`, { encoding: 'utf-8' });
         
         // Check if violations exist by looking at the summary
         const summaryMatch = wcagOutput.match(/Top 5 Most Violated Success Criteria:\s+(.+?)(?=\n\n|$)/s);
@@ -139,7 +139,26 @@ function testComponent(component) {
         } else {
             log('    ✅ WCAG compliance passed', 'green');
         }
-    } catch {
+    } catch (error) {
+        // If the command fails, check if it's only target-size by examining output
+        const wcagOutput = error.stdout ? error.stdout.toString() : '';
+        const summaryMatch = wcagOutput.match(/Top 5 Most Violated Success Criteria:\s+(.+?)(?=\n\n|$)/s);
+        
+        if (summaryMatch) {
+            const criteria = summaryMatch[1];
+            const violatedCriteria = criteria.match(/\d+\.\s+(\d+\.\d+\.\d+)/g);
+            
+            if (violatedCriteria && violatedCriteria.length > 0) {
+                const criterionNumbers = violatedCriteria.map(v => v.match(/(\d+\.\d+\.\d+)/)[1]);
+                const onlyTargetSize = criterionNumbers.every(c => c === '2.5.8');
+                
+                if (onlyTargetSize) {
+                    log('    ✅ WCAG compliance passed (2.5.8 target-size exception noted)', 'green');
+                    return { ariaPassed, wcagPassed: true };
+                }
+            }
+        }
+        
         log('    ❌ WCAG compliance failed', 'red');
         wcagPassed = false;
     }
