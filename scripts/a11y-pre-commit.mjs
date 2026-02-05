@@ -59,7 +59,7 @@ function extractComponents(files) {
     };
     
     // Skip shared/utility folders that are not standalone components
-    const skipComponents = new Set(['input']);
+    const skipComponents = new Set(['input', 'spinbutton']);
     
     for (const file of files) {
         const tsxMatch = file.match(/packages\/html\/src\/([^/]+)\//);
