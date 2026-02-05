@@ -270,9 +270,11 @@ async function main() {
             log('   Run `npm run test:aria [component] -- --verbose` for details.', 'dim');
             log('   Fix violations before pushing, or use --no-verify to bypass.', 'dim');
             process.exit(1);
-        } else {
-            log('\n✅ All accessibility checks passed!', 'green');
         }
+        
+        log('\n✅ All accessibility checks passed!', 'green');
+        // Ensure all output is flushed before exiting
+        await new Promise(resolve => setImmediate(resolve));
         process.exit(0);
     }
 
