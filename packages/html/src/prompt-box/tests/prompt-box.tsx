@@ -13,16 +13,16 @@ export default () =>(
             <span>lineMode - multi</span>
 
             <div>
-                <PromptBoxLineModeAuto endAffix placeholder="Type a message" />
+                <PromptBoxLineModeAuto placeholder="Type a message" />
             </div>
             <div>
-                <PromptBoxLineModeAutoExpanded endAffix placeholder="Type a message" />
+                <PromptBoxLineModeAutoExpanded placeholder="Type a message" />
             </div>
             <div>
-                <PromptBoxLineModeSingle endAffix placeholder="Type a message" />
+                <PromptBoxLineModeSingle placeholder="Type a message" />
             </div>
              <div>
-                <PromptBoxLineModeMulti endAffix placeholder="Type a message" />
+                <PromptBoxLineModeMulti placeholder="Type a message" />
             </div>
 
         </div>

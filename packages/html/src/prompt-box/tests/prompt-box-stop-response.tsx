@@ -11,10 +11,10 @@ export default () =>(
             <span>Stop response Button</span>
 
             <div>
-                <PromptBoxLineModeSingle endAffix placeholder="Type a message" />
+                <PromptBoxLineModeSingle placeholder="Type a message" />
             </div>
             <div>
-                <PromptBoxStopResponse endAffix placeholder="Type a message" />
+                <PromptBoxStopResponse placeholder="Type a message" />
             </div>
         </div>
     </>
