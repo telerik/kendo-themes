@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { FAB_FOLDER_NAME, FAB_MODULE_NAME } from './constants';
@@ -16,7 +16,6 @@ const states = [
 const options = {
     size: [ Size.undefined, Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
     themeColor: [
         ThemeColor.undefined,
         ThemeColor.base,
@@ -36,7 +35,6 @@ const options = {
 export type KendoFloatingActionButtonOptions = {
   size?: (typeof options.size)[number] | null;
   rounded?: (typeof options.rounded)[number] | null;
-  fillMode?: (typeof options.fillMode)[number] | null;
   themeColor?: (typeof options.themeColor)[number] | null;
 };
 
@@ -61,7 +59,6 @@ export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps
     const {
         size,
         rounded,
-        fillMode,
         themeColor,
         text,
         icon,
@@ -85,7 +82,6 @@ export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps
                 optionClassNames(FLOATINGACTIONBUTTON_CLASSNAME, {
                     size,
                     rounded,
-                    fillMode,
                     themeColor,
                 }),
                 stateClassNames(FLOATINGACTIONBUTTON_CLASSNAME, {
