@@ -18,14 +18,13 @@ const variants = [
     name: 'adaptive',
     title: 'Adaptive',
   },
+  {
+    name: 'fullScreen',
+    title: 'Full Screen',
+  },
 ];
 
 const modifiers = [
-  {
-    name: 'fullScreen',
-    title: 'FullScreen',
-    type: 'boolean',
-  },
   {
     name: 'actions',
     title: 'Titlebar Actions',
@@ -63,11 +62,12 @@ export const ActionSheetDemo = (
   const subtitle = 'Choose from the items below';
   const title = 'Select Item';
 
+  if (variant === 'fullScreen') {
+    additionalProps.fullScreen = true;
+  }
+
   Object.keys(mods || {}).forEach((modifier) => {
     switch (modifier) {
-      case 'fullScreen':
-        additionalProps.fullScreen = mods?.[modifier] ? true : false;
-        break;
       case 'actions':
         additionalProps.actionsStart = mods?.[modifier] ? true : false;
         additionalProps.actionsEnd = mods?.[modifier] ? true : false;
