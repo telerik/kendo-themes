@@ -99,7 +99,7 @@ export const PromptBox = (
                 )}
                 {endAffix && <div className={`${PROMPT_BOX_CLASSNAME}-affix`}>
                     {endAffix}
-                    <SpeechToTextButton size="small" fillMode="flat" />
+                    <SpeechToTextButton size="small" fillMode="flat" rounded="full"/>
                     <IconButton
                         icon={generating ? "stop-sm" : "arrow-up-outline"}
                         size="small"

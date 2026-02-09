@@ -27,7 +27,7 @@ export type KendoChatProps = {
 }
 
 const defaultTools = <>
-    <IconButton key="paperclip" icon="paperclip-outline-alt-right" fillMode="clear" />
+    <IconButton key="paperclip" icon="paperclip-outline-alt-right" fillMode="clear" rounded="full" />
     <div className="k-spacer"></div>
 </>;
 
