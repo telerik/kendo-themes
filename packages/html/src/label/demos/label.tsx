@@ -3,7 +3,10 @@ import { Textbox } from '../../textbox';
 
 const options = Label.options;
 const states = Label.states;
-const defaults = Label.defaultOptions;
+const defaults = { 
+    ...Label.defaultOptions,
+    variant: 'default',
+};
 const variants = [
     {
         name: 'default',
