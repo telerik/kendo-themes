@@ -14,8 +14,6 @@ on:
   workflow_run:
     workflows:
       - "Publish to npm"
-    branches:
-      - master
     types:
       - completed
 
@@ -41,7 +39,19 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v6
         with:
-          ref: ${{ github.event.inputs.ref }}
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.event.inputs.ref }}
+
+      - name: Read version
+        run: |
+          echo "VERSION=$(jq -r '.version' lerna.json)" >> $GITHUB_ENV
+
+      - name: Check if dev release
+        if: github.event_name == 'workflow_run'
+        run: |
+          if [[ "$VERSION" == *"-dev"* ]]; then
+            echo "Dev release detected ($VERSION), skipping swatch publish"
+            exit 0
+          fi
 
       - name: Setup node
         id: setup-node
@@ -71,10 +81,6 @@ jobs:
           token: ${{ steps.import-secrets.outputs.GH_TOKEN }}
           path: themes-cdn
           lfs: true
-
-      - name: Read version
-        run: |
-          echo "VERSION=$(jq -r '.version' lerna.json)" >> $GITHUB_ENV
 
       - name: Install rename
         run: |
