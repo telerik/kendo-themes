@@ -20,13 +20,13 @@ export type KendoFormProps = KendoFormOptions & {
     formButtons?: React.ReactNode;
     cols?: number;
     gutters?: string | { rows?: string; cols?: string };
-    tag?: string;
+    tag?: 'form' | 'div';
     children?: React.ReactNode;
 };
 
 const defaultOptions = {
     layout: 'basic',
-    tag: 'form'
+    tag: 'form' as const
 };
 
 export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -44,19 +44,21 @@ export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivE
         children
     } = props;
 
-    const Parent = ({ tag, className, children }) => ( tag === 'form' ? <form className={className}>{children}</form> : <div className={className}>{children}</div> );
+    const Tag = tag;
 
-    return (
-        <Parent tag={tag} className={classNames(
-            props.className,
-            FORM_CLASSNAME,
-            optionClassNames(FORM_CLASSNAME, {
-                size
-            }),
-            {
-                [`${FORM_CLASSNAME}-${orientation}`]: orientation
-            }
-        )}>
+    const formClassNames = classNames(
+        props.className,
+        FORM_CLASSNAME,
+        optionClassNames(FORM_CLASSNAME, {
+            size
+        }),
+        {
+            [`${FORM_CLASSNAME}-${orientation}`]: orientation
+        }
+    );
+
+    const content = (
+        <>
             { layout === 'grid' ?
                 <div className={classNames(
                     'k-form-layout',
@@ -79,8 +81,10 @@ export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivE
                     {formButtons}
                 </div>
             }
-        </Parent>
+        </>
     );
+
+    return <Tag className={formClassNames}>{content}</Tag>;
 };
 
 Form.states = states;
