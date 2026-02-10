@@ -45,7 +45,7 @@ $kendo-suggestion-default-theme-color: "base" !default;
 
 /// The gradient used for scroll indicators in the Suggestion group.
 /// @group suggestion
-$kendo-suggestion-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100% !default;
+$kendo-suggestion-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, k-color(app-surface) 100% !default;
 
 @forward "@progress/kendo-theme-core/scss/components/suggestion/_variables.scss" with (
     $kendo-suggestion-padding-y: $kendo-suggestion-padding-y,
