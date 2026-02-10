@@ -122,7 +122,7 @@ $kendo-chat-toolbar-border: inherit !default;
 
 /// The background color of the Chat.
 /// @group chat
-$kendo-chat-bg: transparent !default;
+$kendo-chat-bg: k-color(app-surface) !default;
 /// The text color of the Chat.
 /// @group chat
 $kendo-chat-text: k-color(on-app-surface) !default;
