@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-wrapper-scroll-gradient</td>
     <td>List</td>
-    <td><code>rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100%</code></td>
-    <td><code>(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)</code></td>
+    <td><code>rgba(255, 255, 255, 0.00) 0%, k-color(app-surface) 100%</code></td>
+    <td><code>(rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface, #ffffff) 100%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for the File Box wrapper scrolling indicator.</div></div>
