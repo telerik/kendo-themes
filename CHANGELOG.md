@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.0...v13.0.1-dev.0) (2026-02-10)
+
+
+### Bug Fixes
+
+* **material:** remove the hover/focus borders for buttons inside outline pickers ([0f37537](https://github.com/telerik/kendo-themes/commit/0f37537fad277818f8767fa3795748b5f298ee9c))
+
+
+
+
+
 # [13.0.0](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.7...v13.0.0) (2026-02-09)
 
 **Note:** Version bump only for package kendo-themes.repo
