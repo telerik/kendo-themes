@@ -168,6 +168,15 @@
 
             @include border-radius( $kendo-input-border-radius );
 
+            .k-button {
+                &:hover,
+                &.k-hover,
+                &:focus,
+                &.k-focus {
+                    border: none;
+                }
+            }
+
             &::after {
                 border-width: $_kendo-input-ripple-border-width;
                 transform: none;
@@ -193,7 +202,6 @@
                 box-shadow: none;
                 outline: none;
                 background-color: inherit;
-                border: none;
             }
         }
 
