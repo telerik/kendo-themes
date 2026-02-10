@@ -1,6 +1,8 @@
 ﻿import { MenuButton } from '../menu-button.spec';
-import { Button, KendoButtonProps } from '../../button';
-import { MenuList, MenuListItem } from '../../menu';
+import { Button, KendoButtonProps } from '../../button/button.spec';
+import { MenuList } from '../../menu/menu-list.spec';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
+import { Popup } from '../../popup/popup.spec';
 import { ReactElement } from 'react';
 
 const states = Button.states;
@@ -40,11 +42,13 @@ export const MenuButtonDemo = (
   let additionalProps: any = {};
 
   const popup = (
-    <MenuList size={other.size}>
+    <Popup className="k-menu-popup">
+      <MenuList size={other.size}>
       <MenuListItem first text="Menu Item"></MenuListItem>
       <MenuListItem text="Menu Item"></MenuListItem>
       <MenuListItem last text="Menu Item"></MenuListItem>
-    </MenuList>
+      </MenuList>
+    </Popup>
   );
 
   let button: ReactElement;
