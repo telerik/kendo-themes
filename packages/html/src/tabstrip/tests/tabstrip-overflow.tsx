@@ -1,5 +1,9 @@
-import { TabStripContent, TabStripItem, TabStrip, TabStripOverflow } from '..';
-import { MenuList, MenuListItem } from '../../menu';
+import { TabStripContent } from '../tabstrip-content';
+import { TabStripItem } from '../tabstrip-item';
+import { TabStrip } from '../tabstrip.spec';
+import { TabStripOverflow } from '../templates/tabstrip-overflow';
+import { MenuList } from '../../menu/menu-list.spec';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
 
 
 export default () => (

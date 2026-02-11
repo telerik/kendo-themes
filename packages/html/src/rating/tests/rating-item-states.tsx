@@ -1,4 +1,4 @@
-import { RatingItem } from '..';
+import { RatingItem } from '../rating-item';
 
 
 const styles = `

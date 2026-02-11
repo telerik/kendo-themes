@@ -1,4 +1,4 @@
-import { DrawerWithOverlay } from '..';
+import { DrawerWithOverlay } from '../templates/drawer-with-overlay';
 
 const styles = `
     #test-area .k-drawer,

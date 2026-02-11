@@ -1,6 +1,6 @@
 ﻿import { Dialog, KendoDialogProps } from '../dialog.spec';
 import { DialogNormal } from '../templates/dialog-normal';
-import { Button } from '../../button';
+import { Button } from '../../button/button.spec';
 
 const options = Dialog.options.themeColor;
 const variants = [];

@@ -1,8 +1,12 @@
-import { DockManagerNormal, PaneScrollable, DockManagerSplitter } from "../";
-import { Button } from "../../button";
-import { SplitterPane } from "../../splitter";
-import { TabStripNormal, TabStripItem, TabStripContent } from "../../tabstrip";
-import { ToolbarSeparator } from "../../toolbar";
+import { DockManagerNormal } from "../templates/dock-manager-normal";
+import { PaneScrollable } from "../pane-scrollable";
+import { DockManagerSplitter } from "../dock-manager-splitter";
+import { Button } from "../../button/button.spec";
+import { SplitterPane } from "../../splitter/splitter-pane";
+import { TabStripNormal } from "../../tabstrip/templates/tabstrip-normal";
+import { TabStripItem } from "../../tabstrip/tabstrip-item";
+import { TabStripContent } from "../../tabstrip/tabstrip-content";
+import { ToolbarSeparator } from "../../toolbar/toolbar-separator";
 
 const styles = `
     #test-area {

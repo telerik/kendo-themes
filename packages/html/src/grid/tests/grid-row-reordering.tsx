@@ -1,5 +1,6 @@
-import { Button } from '../../button';
-import { GridWithRowReordering, GridToolbar } from '../../grid';
+import { Button } from '../../button/button.spec';
+import { GridWithRowReordering } from '../templates/grid-with-row-reordering';
+import { GridToolbar } from '../grid-toolbar.spec';
 
 
 export default () => (

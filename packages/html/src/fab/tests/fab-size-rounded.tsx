@@ -1,4 +1,7 @@
-import { FloatingActionButton, IconFloatingActionButton, IconTextFloatingActionButton, TextFloatingActionButton } from '..';
+import { FloatingActionButton } from '../fab.spec';
+import { IconFloatingActionButton } from '../templates/icon-fab';
+import { IconTextFloatingActionButton } from '../templates/icon-text-fab';
+import { TextFloatingActionButton } from '../templates/text-fab';
 
 
 const styles = `

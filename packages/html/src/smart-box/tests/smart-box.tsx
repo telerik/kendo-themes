@@ -1,4 +1,4 @@
-import { SmartBoxNormal,  } from '..';
+import { SmartBoxNormal } from '../templates/smart-box-normal';
 
 const styles = `
     #test-area {

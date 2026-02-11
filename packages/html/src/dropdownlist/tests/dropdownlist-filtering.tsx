@@ -1,4 +1,4 @@
-import { DropdownListFiltering } from "../../dropdownlist";
+import { DropdownListFiltering } from "../../dropdownlist/templates/dropdownlist-filtering";
 
 const styles = `
     #test-area {

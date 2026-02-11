@@ -1,4 +1,4 @@
-import { MultiSelectAdaptive } from '../../multiselect';
+import { MultiSelectAdaptive } from '../../multiselect/templates/multiselect-adaptive';
 
 const styles = `
     #test-area {

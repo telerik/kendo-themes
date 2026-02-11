@@ -1,4 +1,8 @@
-import { MultiViewCalendarNormal, MultiViewCalendarYear, MultiViewCalendarDecade, MultiViewCalendarCentury, MultiViewCalendarWithWeeks } from '../../multiviewcalendar';
+import { MultiViewCalendarNormal } from "../templates/multiviewcalendar-normal";
+import { MultiViewCalendarWithWeeks } from "../templates/multiviewcalendar-with-weeks";
+import { MultiViewCalendarYear } from "../templates/multiviewcalendar-year";
+import { MultiViewCalendarDecade } from "../templates/multiviewcalendar-decade";
+import { MultiViewCalendarCentury } from "../templates/multiviewcalendar-century";
 
 const styles = `
     #test-area {

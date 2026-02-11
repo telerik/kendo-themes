@@ -1,10 +1,17 @@
-import { ExpansionPanel } from '../../expansion-panel';
-import { Form, Fieldset } from '../../form';
-import { DropdownList } from '../../dropdownlist';
-import { Icon } from '../../icon';
-import { Grid, GridToolbar, GridContainer, GridContent, GridTable } from '../../grid';
-import { TableTbody, TableRow, TableTd } from '../../table';
-import { Button } from '../../button';
+import { ExpansionPanel } from '../../expansion-panel/expansion-panel.spec';
+import { Form } from '../../form/form.spec';
+import { Fieldset } from '../../form/fieldset';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { Icon } from '../../icon/icon.spec';
+import { Grid } from '../../grid/grid.spec';
+import { GridToolbar } from '../../grid/grid-toolbar.spec';
+import { GridContainer } from '../../grid/grid-container.spec';
+import { GridContent } from '../../grid/grid-content.spec';
+import { GridTable } from '../../grid/grid-table.spec';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Button } from '../../button/button.spec';
 
 
 const styles = `

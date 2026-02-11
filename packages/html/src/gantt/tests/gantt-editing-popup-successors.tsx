@@ -1,9 +1,21 @@
-import { WindowNormal } from '../../window';
-import { DropdownList } from '../../dropdownlist';
-import { Button } from '../../button';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from "../../grid";
-import { TableRow, TableTbody, TableTd, TableThead } from '../../table';
-import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { Button } from '../../button/button.spec';
+import { Grid } from "../../grid/grid.spec";
+import { GridHeader } from "../../grid/grid-header.spec";
+import { GridHeaderTable } from "../../grid/grid-header-table.spec";
+import { GridHeaderCell } from "../../grid/grid-header-cell.spec";
+import { GridContainer } from "../../grid/grid-container.spec";
+import { GridContent } from "../../grid/grid-content.spec";
+import { GridTable } from "../../grid/grid-table.spec";
+import { GridToolbar } from "../../grid/grid-toolbar.spec";
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
+import { TableThead } from '../../table/table-thead';
+import { TabStripNormal } from '../../tabstrip/templates/tabstrip-normal';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
 
 const styles = `
     .k-window {

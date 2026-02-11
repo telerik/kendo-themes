@@ -1,4 +1,12 @@
-import { DataTable, TableBody, TableHeader, TableList, TableListRow, TableListTd, TableRow, TableTh, TableThead } from '../../table';
+import { DataTable } from '../../table/data-table.spec';
+import { TableBody } from '../../table/table-body';
+import { TableList } from '../../table/table-list.spec';
+import { TableListRow } from '../../table/table-list-row';
+import { TableListTd } from '../../table/table-list-td';
+import { TableHeader } from '../../table/table-header.spec';
+import { TableRow } from '../../table/table-row';
+import { TableTh } from '../../table/table-th.spec';
+import { TableThead } from '../../table/table-thead';
 
 export const DataTableVirtualization = (props) => (
     <DataTable {...props}>

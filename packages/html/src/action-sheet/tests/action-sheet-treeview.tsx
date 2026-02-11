@@ -1,6 +1,8 @@
-import { ActionSheet, ActionSheetHeader } from '../../action-sheet';
-import { Button } from '../../button';
-import { Treeview, TreeviewItem } from '../../treeview';
+import { ActionSheet } from '../../action-sheet/action-sheet.spec';
+import { ActionSheetHeader } from '../../action-sheet/actionsheet-header';
+import { Button } from '../../button/button.spec';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
 
 
 const styles = `

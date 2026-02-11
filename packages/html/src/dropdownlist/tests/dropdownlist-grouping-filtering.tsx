@@ -1,4 +1,4 @@
-import { DropdownListGroupingFiltering } from "../../dropdownlist";
+import { DropdownListGroupingFiltering } from "../../dropdownlist/templates/dropdownlist-grouping-filtering";
 
 const styles = `
     #test-area {

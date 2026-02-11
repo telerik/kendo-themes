@@ -1,5 +1,10 @@
 import Autocomplete from "../autocomplete.spec";
-import { List, ListContent, ListUl, ListItem, ListGroupItem, ListCustomValue } from "../../list";
+import { List } from "../../list/list.spec";
+import { ListContent } from "../../list/list-content";
+import { ListUl } from "../../list/list-ul";
+import { ListItem } from "../../list/list-item.spec";
+import { ListGroupItem } from "../../list/list-group-item";
+import { ListCustomValue } from "../../list/list-custom-value";
 
 export const AutocompleteGroupingModernCustomValue = ({ value="Custom value", ...other }: any) => (
     <Autocomplete value={value}

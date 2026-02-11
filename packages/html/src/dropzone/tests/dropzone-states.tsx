@@ -1,4 +1,5 @@
-import { Dropzone, DropzoneWithNote } from '..';
+import { Dropzone } from '../dropzone.spec';
+import { DropzoneWithNote } from '../templates/dropzone-with-note';
 
 
 export default () =>(

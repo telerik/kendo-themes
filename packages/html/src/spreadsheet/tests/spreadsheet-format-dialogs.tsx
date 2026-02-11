@@ -1,13 +1,14 @@
-import { WindowNormal } from '../../window';
-import { Button } from '../../button';
-import { FormNormal, FormField } from '../../form';
-import { Textbox } from '../../textbox';
-import { DropdownList } from '../../dropdownlist';
-import { ListBox } from '../../listbox';
-import { ListItem } from '../../list';
-import { DateInput } from '../../dateinput';
-import { ColorPicker } from '../../colorpicker';
-import { Toolbar } from '../../toolbar';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Button } from '../../button/button.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { Textbox } from '../../textbox/textbox.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { ListBox } from '../../listbox/listbox.spec';
+import { ListItem } from '../../list/list-item.spec';
+import { DateInput } from '../../dateinput/dateinput.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { Toolbar } from '../../toolbar/toolbar.spec';
 
 
 const style = `

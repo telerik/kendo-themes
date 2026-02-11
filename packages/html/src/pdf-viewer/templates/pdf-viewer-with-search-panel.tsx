@@ -1,4 +1,5 @@
-import { PDFViewer, PDFViewerPage } from "..";
+import { PDFViewer } from '../pdf-viewer.spec';
+import { PDFViewerPage } from '../pdf-viewer-page';
 
 export const PDFViewerWithSearchPanel = (props) => (
     <PDFViewer

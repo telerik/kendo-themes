@@ -1,4 +1,5 @@
-import { PagerNormal, PagerInput } from "../../pager";
+import { PagerNormal } from "../../pager/templates/pager-normal";
+import { PagerInput } from "../../pager/templates/pager-input";
 
 const styles = `
     #test-area {

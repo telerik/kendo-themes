@@ -1,6 +1,7 @@
-import { PropertyGridNormal } from "..";
-import { Button } from "../../button";
-import { Splitter, SplitterPane } from "../../splitter";
+import { PropertyGridNormal } from '../templates/propertygrid-normal';
+import { Button } from "../../button/button.spec";
+import { Splitter } from "../../splitter/splitter.spec";
+import { SplitterPane } from "../../splitter/splitter-pane";
 
 export const PropertyGridWithPreview = ({ content, ...other }: any) => (
     <Splitter panes={[

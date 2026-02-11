@@ -1,4 +1,4 @@
-import { DropdownTreeAdaptive } from '../../dropdowntree';
+import { DropdownTreeAdaptive } from '../../dropdowntree/templates/dropdowntree-adaptive';
 
 
 const styles = `

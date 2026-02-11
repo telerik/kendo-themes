@@ -1,5 +1,6 @@
-import { Appbar, AppbarSection } from '../../appbar';
-import { Icon } from '../../icon';
+import { Appbar } from '../appbar.spec';
+import { AppbarSection } from '../appbar-section';
+import { Icon } from '../../icon/icon.spec';
 
 export const AppbarNormal = (props) => (
     <Appbar children={

@@ -1,4 +1,4 @@
-import { ChatTextareaFile } from '..';
+import { ChatTextareaFile } from '../templates/chat-textarea-file';
 
 const styles = `
     #test-area {

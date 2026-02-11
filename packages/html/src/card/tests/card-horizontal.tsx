@@ -1,6 +1,10 @@
-import { CardHorizontal, CardHeader, CardBody, CardFooter, CardMedia } from '../../card';
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
+import { CardHorizontal } from '../templates/card-horizontal';
+import { CardHeader } from '../card-header';
+import { CardBody } from '../card-body';
+import { CardFooter } from '../card-footer';
+import { CardMedia } from '../card-media';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
 
 const styles = `
     .k-card {

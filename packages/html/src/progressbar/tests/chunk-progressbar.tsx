@@ -1,4 +1,4 @@
-import { ChunkProgressBarNormal } from '../../progressbar';
+import { ChunkProgressBarNormal } from '../../progressbar/templates/chunk-progressbar-normal';
 
 
 const style = `

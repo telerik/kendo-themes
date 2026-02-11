@@ -1,13 +1,25 @@
-import { Button, IconButton, IconTextButton } from "../../button";
-import { WindowNormal } from "../../window";
-import { Prompt, PromptContent, PromptExpander, PromptFooter, PromptHeader, PromptStopFloatingActionButton, PromptView } from "../../prompt";
-import { Toolbar } from "../../toolbar";
-import { ActionButtons } from "../../action-buttons";
-import { Suggestion, SuggestionGroup } from "../../suggestion";
-import { SpeechToTextButton } from "../../speech-to-text-button";
-import { Textarea } from "../../textarea";
-import { Card, CardHeader, CardBody } from "../../card";
-import { Skeleton, SkeletonRectangle } from "../../skeleton";
+import { Button } from "../../button/button.spec";
+import { IconButton } from "../../button/templates/icon-button";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { WindowNormal } from "../../window/templates/window-normal";
+import { Prompt } from "../../prompt/prompt.spec";
+import { PromptHeader } from "../../prompt/prompt-header";
+import { PromptContent } from "../../prompt/prompt-content";
+import { PromptFooter } from "../../prompt/prompt-footer";
+import { PromptView } from "../../prompt/prompt-view";
+import { PromptExpander } from "../../prompt/prompt-expander";
+import { PromptStopFloatingActionButton } from "../../prompt/prompt-stop-fab";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { Suggestion } from "../../suggestion/suggestion";
+import { SuggestionGroup } from "../../suggestion/suggestion-group.spec";
+import { SpeechToTextButton } from "../../speech-to-text-button/speech-to-text-button.spec";
+import { Textarea } from "../../textarea/textarea.spec";
+import { Card } from "../../card/card.spec";
+import { CardHeader } from "../../card/card-header";
+import { CardBody } from "../../card/card-body";
+import { Skeleton } from "../../skeleton/skeleton.spec";
+import { SkeletonRectangle } from "../../skeleton/templates/skeleton-rectangle";
 
 const styles = `
 

@@ -1,4 +1,6 @@
-import { RadioButtonNormal, RadioItem, RadioGroup } from "..";
+import { RadioButtonNormal } from '../templates/radio-normal';
+import { RadioItem } from '../radio-item.spec';
+import { RadioGroup } from '../radio-group.spec';
 
 export const RadioGroupHorizontal = ({ name, ...other }: any) => (
     <RadioGroup children={

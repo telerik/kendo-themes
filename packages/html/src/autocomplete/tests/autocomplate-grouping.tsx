@@ -1,4 +1,4 @@
-import { AutocompleteGrouping } from "..";
+import { AutocompleteGrouping } from "../templates/autocomplete-grouping";
 
 const styles = `
     #test-area {

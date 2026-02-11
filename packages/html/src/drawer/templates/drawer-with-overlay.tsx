@@ -1,5 +1,7 @@
 
-import { Drawer, DrawerContent, DrawerItem } from "..";
+import { Drawer } from '../drawer.spec';
+import { DrawerContent } from '../drawer-content.spec';
+import { DrawerItem } from '../drawer-item.spec';
 
 export const DrawerWithOverlay = (props) => (
     <Drawer expanded mode="overlay"

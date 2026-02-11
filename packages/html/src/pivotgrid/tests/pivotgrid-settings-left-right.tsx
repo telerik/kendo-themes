@@ -1,4 +1,4 @@
-import { PivotGridWithConfiguratorOpened } from '../';
+import { PivotGridWithConfiguratorOpened } from '../templates/pivotgrid-with-configurator-opened';
 
 
 export default () => (

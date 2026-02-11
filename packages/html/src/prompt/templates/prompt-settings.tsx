@@ -1,10 +1,18 @@
-import { ActionButtons } from "../../action-buttons";
-import { IconTextButton, IconButton } from "../../button";
-import { ChipList, Chip } from "../../chip";
-import { Toolbar } from "../../toolbar";
-import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptSetting, PromptView, PromptExpander } from "..";
-import { SpeechToTextButton } from "../../speech-to-text-button";
-import { Textarea } from "../../textarea";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { IconButton } from "../../button/templates/icon-button";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { Chip } from "../../chip/chip.spec";
+import { ChipList } from "../../chip/chip-list.spec";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { Prompt } from "../prompt.spec";
+import { PromptContent } from "../prompt-content";
+import { PromptHeader } from "../prompt-header";
+import { PromptView } from "../prompt-view";
+import { PromptFooter } from "../prompt-footer";
+import { PromptExpander } from "../prompt-expander";
+import { PromptSetting } from "../prompt-setting";
+import { SpeechToTextButton } from "../../speech-to-text-button/speech-to-text-button.spec";
+import { Textarea } from "../../textarea/textarea.spec";
 
 export const PromptSettings = (props) => (
     <Prompt {...props}>

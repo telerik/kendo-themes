@@ -1,6 +1,8 @@
 
-import { Checkbox } from "../../checkbox";
-import { TreeviewGroup, TreeviewItem, Treeview } from "../../treeview";
+import { Checkbox } from "../../checkbox/checkbox.spec";
+import { TreeviewGroup } from "../../treeview/treeview-group";
+import { TreeviewItem } from "../../treeview/treeview-item.spec";
+import { Treeview } from "../../treeview/treeview.spec";
 import MultiSelectTree from "../multiselecttree.spec";
 
 export const MultiSelectTreePopup = (props) => (

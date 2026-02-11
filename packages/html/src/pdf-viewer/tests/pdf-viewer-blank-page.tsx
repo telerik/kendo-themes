@@ -1,4 +1,4 @@
-import { PDFViewerBlank } from '../../pdf-viewer';
+import { PDFViewerBlank } from '../../pdf-viewer/templates/pdf-viewer-blank';
 
 
 const styles = `

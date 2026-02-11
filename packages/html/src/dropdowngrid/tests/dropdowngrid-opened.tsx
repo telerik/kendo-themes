@@ -1,4 +1,4 @@
-import { DropdownGridPopup } from '../../dropdowngrid';
+import { DropdownGridPopup } from '../../dropdowngrid/templates/dropdowngrid-popup';
 
 const styles = `
     #test-area {

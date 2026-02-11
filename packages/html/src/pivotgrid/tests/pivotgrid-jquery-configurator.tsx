@@ -1,5 +1,8 @@
-import { Chip, ChipAction, ChipList } from '../../chip';
-import { Treeview, TreeviewItem } from '../../treeview';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { ChipList } from '../../chip/chip-list.spec';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
 
 
 const styles = `

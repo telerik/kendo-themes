@@ -1,6 +1,20 @@
-import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
-import { Button } from '../../button';
-import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../../table';
+import { ActionSheet } from '../../action-sheet/action-sheet.spec';
+import { ActionSheetHeader } from '../../action-sheet/actionsheet-header';
+import { ActionSheetFooter } from '../../action-sheet/actionsheet-footer';
+import { Button } from '../../button/button.spec';
+import { DataTable } from '../../table/data-table.spec';
+import { TableBody } from '../../table/table-body';
+import { TableFooter } from '../../table/table-footer.spec';
+import { TableGroupStickyHeader } from '../../table/table-group-sticky-header';
+import { TableHeader } from '../../table/table-header.spec';
+import { TableList } from '../../table/table-list.spec';
+import { TableListGroupRow } from '../../table/table-list-group-row';
+import { TableListRow } from '../../table/table-list-row';
+import { TableListTd } from '../../table/table-list-td';
+import { TableListTh } from '../../table/table-list-th';
+import { TableRow } from '../../table/table-row';
+import { TableTh } from '../../table/table-th.spec';
+import { TableThead } from '../../table/table-thead';
 
 
 const styles = `

@@ -1,4 +1,5 @@
-import { SegmentedControl, SegmentedControlButton } from '..';
+import { SegmentedControl } from '../segmented-control.spec';
+import { SegmentedControlButton } from '../segmented-control-button.spec';
 
 
 const styles = `

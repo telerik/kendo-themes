@@ -1,5 +1,5 @@
-import { ListViewNormal, ListViewItem } from '../../listview';
-
+import { ListViewNormal } from '../../listview/templates/listview-normal';
+import { ListViewItem } from '../../listview/listview-item.spec';
 
 const styles = `
     .k-listview-header,

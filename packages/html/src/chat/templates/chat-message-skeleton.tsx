@@ -1,5 +1,8 @@
-import { Chat, ChatMessage, ChatMessageGroup } from "..";
-import { SkeletonNormal, SkeletonRectangle } from "../../skeleton";
+import { Chat } from "../chat.spec";
+import { ChatMessage } from "../chat-message";
+import { ChatMessageGroup } from "../chat-message-group";
+import { SkeletonNormal } from "../../skeleton/templates/skeleton-normal";
+import { SkeletonRectangle } from "../../skeleton/templates/skeleton-rectangle";
 
 export const ChatMessageSkeleton = (props) => (
     <Chat children={

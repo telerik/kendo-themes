@@ -1,6 +1,9 @@
-import { Combobox, ComboboxNormal, ComboboxPrefix, ComboboxSuffix } from '..';
-import { IconButton } from '../../button';
-import { Icon } from '../../icon';
+import { Combobox } from '../combobox.spec';
+import { ComboboxNormal } from '../templates/combobox-normal';
+import { ComboboxPrefix } from '../templates/combobox-prefix';
+import { ComboboxSuffix } from '../templates/combobox-suffix';
+import { IconButton } from '../../button/templates/icon-button';
+import { Icon } from '../../icon/icon.spec';
 
 const styles = `
     #test-area {

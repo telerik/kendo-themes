@@ -1,4 +1,4 @@
-import { TimeDurationPickerPopup } from '../../timedurationpicker';
+import { TimeDurationPickerPopup } from '../../timedurationpicker/templates/timedurationpicker-popup';
 
 
 const style = `

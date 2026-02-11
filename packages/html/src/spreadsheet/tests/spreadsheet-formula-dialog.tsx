@@ -1,9 +1,10 @@
-import { WindowNormal } from '../../window';
-import { Button } from '../../button';
-import { FormNormal, FormField } from '../../form';
-import { DropdownList } from '../../dropdownlist';
-import { ListBox } from '../../listbox';
-import { ListItem } from '../../list';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Button } from '../../button/button.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { ListBox } from '../../listbox/listbox.spec';
+import { ListItem } from '../../list/list-item.spec';
 
 
 const style = `

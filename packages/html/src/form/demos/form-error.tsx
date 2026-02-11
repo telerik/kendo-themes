@@ -1,5 +1,5 @@
 import { FormError, KendoFormErrorProps } from '../form-error.spec';
-import { Textbox } from '../../textbox';
+import { Textbox } from '../../textbox/textbox.spec';
 
 const options = FormError.options;
 const states = FormError.states;

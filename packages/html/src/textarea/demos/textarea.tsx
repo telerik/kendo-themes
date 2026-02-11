@@ -1,5 +1,5 @@
 ﻿import { Textarea, KendoTextareaProps } from '../textarea.spec';
-import { Icon } from '../../icon';
+import { Icon } from '../../icon/icon.spec';
 
 const options = Textarea.options;
 const states = Textarea.states;

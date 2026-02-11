@@ -1,4 +1,5 @@
-import { RadioButtonWithLabelAfter, RadioButtonInsideLabel } from '../../radio';
+import { RadioButtonWithLabelAfter } from "../templates/radio-with-label-after";
+import { RadioButtonInsideLabel } from "../templates/radio-inside-label";
 
 const styles = `
     .k-ripple-container .k-radio:focus::after,

@@ -1,4 +1,14 @@
-import { DataTable, TableBody, TableFooter, TableGroupHeader, TableHeader, TableList, TableListRow, TableListTd, TableRow, TableTh, TableThead } from '../../table';
+import { TableRow } from '../../table/table-row';
+import { TableTh } from '../../table/table-th.spec';
+import { DataTable } from '../../table/data-table.spec';
+import { TableBody } from '../../table/table-body';
+import { TableFooter } from '../../table/table-footer.spec';
+import { TableHeader } from '../../table/table-header.spec';
+import { TableList } from '../../table/table-list.spec';
+import { TableListRow } from '../../table/table-list-row';
+import { TableListTd } from '../../table/table-list-td';
+import { TableThead } from '../../table/table-thead';
+import { TableGroupHeader } from '../../table/table-group-header';
 
 
 const style = `

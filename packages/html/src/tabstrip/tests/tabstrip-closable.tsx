@@ -1,4 +1,4 @@
-import { TabStripClosable } from '..';
+import { TabStripClosable } from '../templates/tabstrip-closable';
 
 export default () => (
     <>

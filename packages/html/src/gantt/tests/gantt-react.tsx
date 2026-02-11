@@ -1,10 +1,19 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { Icon } from '../../icon';
-import { Gantt, GanttHeaderToolbar, GanttContent, GanttColumnsTable, GanttTaskDot, GanttTask } from '../../gantt';
-import { TreeList } from '../../treelist';
-import { GridHeaderCell } from '../../grid';
-import { Table, TableThead, TableRow, TableTbody, TableTd } from '../../table';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Icon } from '../../icon/icon.spec';
+import { Gantt } from "../gantt.spec";
+import { GanttHeaderToolbar } from "../gantt-header-toolbar.spec";
+import { GanttContent } from "../gantt-content.spec";
+import { GanttColumnsTable } from "../gantt-columns-table.spec";
+import { GanttTask } from "../gantt-task.spec";
+import { GanttTaskDot } from "../gantt-task-dot.spec";
+import { TreeList } from '../../treelist/treelist.spec';
+import { GridHeaderCell } from '../../grid/grid-header-cell.spec';
+import { Table } from '../../table/table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
 
 const styles = `
     .k-gantt {

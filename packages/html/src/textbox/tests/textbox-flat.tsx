@@ -1,4 +1,5 @@
-import { Textbox, TextboxNormal } from '../../textbox';
+import { Textbox } from '../../textbox/textbox.spec';
+import { TextboxNormal } from '../templates/textbox-normal';
 
 const styles = `
     #test-area {

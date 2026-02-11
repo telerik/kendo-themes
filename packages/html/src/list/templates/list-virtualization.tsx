@@ -1,4 +1,6 @@
-import { List, ListItem, ListContent } from "..";
+import { List } from '../list.spec';
+import { ListItem } from '../list-item.spec';
+import { ListContent } from '../list-content';
 
 export const ListVirtualization = ({ children, ...other }: any) => (
     <List

@@ -1,7 +1,12 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { Calendar, CalendarTable, CalendarTableRow, CalendarCell } from '../../calendar';
-import { Scheduler, SchedulerBody, SchedulerToolbar } from '../index';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Calendar } from '../../calendar/calendar.spec';
+import { CalendarTable } from '../../calendar/calendar-table';
+import { CalendarTableRow } from '../../calendar/calendar-table-row.spec';
+import { CalendarCell } from '../../calendar/calendar-cell';
+import { Scheduler } from '../scheduler.spec';
+import { SchedulerBody } from '../scheduler-body.spec';
+import { SchedulerToolbar } from '../scheduler-toolbar.spec';
 
 
 export const SchedulerFlexYear = ({ style, ...props }: any) => (

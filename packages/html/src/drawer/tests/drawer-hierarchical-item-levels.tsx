@@ -1,4 +1,4 @@
-import { DrawerWithHierarchy } from '..';
+import { DrawerWithHierarchy } from '../templates/drawer-with-hierarchy';
 
 const styles = `
     #test-area .k-drawer-content {

@@ -1,5 +1,9 @@
-import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, } from '../../grid';
-import { TableRow, TableThead } from '../../table';
+import { GridNormal } from '../templates/grid-normal';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { TableRow } from '../../table/table-row';
+import { TableThead } from '../../table/table-thead';
 
 const styles = `
     .section {

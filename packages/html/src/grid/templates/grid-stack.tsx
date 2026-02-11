@@ -7,7 +7,9 @@ import { GridStackRow } from '../grid-stack-row.spec';
 import { Button } from '../../button/button.spec';
 import { CheckboxNormal } from '../../checkbox/templates/checkbox-normal';
 import { Icon } from '../../icon/icon.spec';
-import { TableTbody, TableRow, TableTd } from '../../table';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 import GridStackCell from '../grid-stack-cell.spec';
 
 export const GridStack = ({ reorderable, checkbox, aggregates, sticky, detailRow, cols, ...other }: any) => (

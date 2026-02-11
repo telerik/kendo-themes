@@ -1,5 +1,5 @@
 import { ButtonGroup } from "../button-group.spec";
-import { Button } from "../../button";
+import { Button } from "../../button/button.spec";
 
 export const IconTextButtonGroup = (props) => (
     <ButtonGroup children={

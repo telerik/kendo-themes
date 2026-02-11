@@ -1,4 +1,8 @@
-import { CalendarCaptionCell, CalendarCell, CalendarInfinite, CalendarTableRow, CalendarTbody } from '../index';
+import { CalendarCaptionCell } from '../calendar-caption-cell.spec';
+import { CalendarCell } from '../calendar-cell';
+import { CalendarInfinite } from '../calendar-infinite.spec';
+import { CalendarTableRow } from '../calendar-table-row.spec';
+import { CalendarTbody } from '../calendar-tbody.spec';
 
 export const CalendarInfiniteYear = ({ firstCaption = "2021", secondCaption = "2022", ...other }: any) => (
     <CalendarInfinite calendarView="year" showWeekdays={false} calendarTitleText="2021"

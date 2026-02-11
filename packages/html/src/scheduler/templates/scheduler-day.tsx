@@ -1,5 +1,14 @@
-import { Button } from '../../button';
-import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimes, SchedulerToolbar, SchedulerEvent } from '../index';
+import { Button } from '../../button/button.spec';
+import { Scheduler } from '../scheduler.spec';
+import { SchedulerBody } from '../scheduler-body.spec';
+import { SchedulerCell } from '../scheduler-cell.spec';
+import { SchedulerContent } from '../scheduler-content.spec';
+import { SchedulerHead } from '../scheduler-head.spec';
+import { SchedulerHeader } from '../scheduler-header.spec';
+import { SchedulerTable } from '../scheduler-table.spec';
+import { SchedulerToolbar } from '../scheduler-toolbar.spec';
+import { SchedulerTimes } from '../scheduler-times.spec';
+import { SchedulerEvent } from '../scheduler-event.spec';
 
 export const SchedulerDay = ({ style, ...props }: any) => (
     <Scheduler

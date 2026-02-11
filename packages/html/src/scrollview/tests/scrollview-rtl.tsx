@@ -1,4 +1,4 @@
-import { ScrollViewNormal } from '../../scrollview';
+import { ScrollViewNormal } from '../../scrollview/templates/scrollview-normal';
 
 const style = `
     .k-scrollview {

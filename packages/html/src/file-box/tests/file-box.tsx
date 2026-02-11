@@ -1,4 +1,4 @@
-import { FileBox } from '..';
+import { FileBox } from '../file-box.spec';
 
 
 const styles = `

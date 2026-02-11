@@ -1,4 +1,4 @@
-import { TimelineHorizontal } from '../../timeline';
+import { TimelineHorizontal } from '../../timeline/templates/timeline-horizontal';
 
 const style = `
     .k-card-media {

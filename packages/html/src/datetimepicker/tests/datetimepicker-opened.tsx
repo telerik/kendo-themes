@@ -1,4 +1,4 @@
-import { DateTimePickerPopup } from '../../datetimepicker';
+import { DateTimePickerPopup } from '../../datetimepicker/templates/datetimepicker-popup';
 
 
 const styles = `

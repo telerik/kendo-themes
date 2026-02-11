@@ -1,6 +1,9 @@
-import { ChatNormal, ChatMessage, ChatMessageGroup } from '..';
-import { IconTextButton } from '../../button';
-import { FileBoxWrapper, FileBox } from '../../file-box';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatMessage } from '../chat-message';
+import { ChatMessageGroup } from '../chat-message-group';
+import { IconTextButton } from '../../button/templates/icon-text-button';
+import { FileBoxWrapper } from '../../file-box/file-box-wrapper.spec';
+import { FileBox } from '../../file-box/file-box.spec';
 
 const styles = `
     #test-area {

@@ -1,4 +1,7 @@
-import { Calendar, CalendarCell, CalendarTable, CalendarTableRow } from "..";
+import { Calendar } from "../calendar.spec";
+import { CalendarCell } from "../calendar-cell";
+import { CalendarTable } from "../calendar-table";
+import { CalendarTableRow } from "../calendar-table-row.spec";
 
 export const CalendarYear = (props: any) => (
     <Calendar calendarView="year" calendarTitleText="2019"

@@ -1,5 +1,5 @@
 import Textarea from "../textarea.spec";
-import { IconButton } from '../../button';
+import { IconButton } from '../../button/templates/icon-button';
 
 export const TextareaSuffix = (props) => (
     <Textarea

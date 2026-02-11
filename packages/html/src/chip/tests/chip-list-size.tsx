@@ -1,4 +1,5 @@
-import { Chip, ChipList } from '../../chip';
+import { Chip } from '../../chip/chip.spec';
+import { ChipList } from '../../chip/chip-list.spec';
 
 
 export default () =>(

@@ -1,6 +1,12 @@
-import { Button } from "../../button";
-import { ActionSheetNormal, ActionSheetHeader, ActionSheetFooter, ActionSheetView } from "../../action-sheet";
-import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander } from "../../column-menu";
+import { Button } from "../../button/button.spec";
+import { ActionSheetNormal } from "../templates/action-sheet-normal";
+import { ActionSheetHeader } from "../actionsheet-header";
+import { ActionSheetFooter } from "../actionsheet-footer";
+import { ActionSheetView } from "../actionsheet-view";
+import { ColumnMenuNormal } from "../../column-menu/templates/column-menu-normal";
+import { ColumnMenuItemWrapper } from "../../column-menu/column-menu-item-wrapper";
+import { ColumnMenuItem } from "../../column-menu/column-menu-item.spec";
+import { ColumnMenuExpander } from "../../column-menu/column-menu-expander.spec";
 
 const styles = `
     #test-area {

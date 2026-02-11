@@ -1,5 +1,8 @@
-import { Chat, ChatMessage, ChatMessageGroup } from "..";
-import { FileBoxWrapper, FileBox } from "../../file-box";
+import { Chat } from "../chat.spec";
+import { ChatMessage } from "../chat-message";
+import { ChatMessageGroup } from "../chat-message-group";
+import { FileBoxWrapper } from "../../file-box/file-box-wrapper.spec";
+import { FileBox } from "../../file-box/file-box.spec";
 
 export const ChatTextareaFile = (props) => (
     <Chat

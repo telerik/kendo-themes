@@ -1,4 +1,5 @@
-import { ListGroup, ListGroupItem } from '../../listgroup';
+import { ListGroup } from '../../listgroup/listgroup.spec';
+import { ListGroupItem } from '../../listgroup/listgroup-item.spec';
 
 export const ListGroupNormal = (props) => (
     <ListGroup

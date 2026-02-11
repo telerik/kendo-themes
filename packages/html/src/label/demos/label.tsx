@@ -1,5 +1,5 @@
 import { Label, KendoLabelProps, KendoLabelState } from '../label.spec';
-import { Textbox } from '../../textbox';
+import { Textbox } from '../../textbox/textbox.spec';
 
 const options = Label.options;
 const states = Label.states;

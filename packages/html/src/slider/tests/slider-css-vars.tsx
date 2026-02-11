@@ -1,4 +1,8 @@
-import { SliderNormal, SliderVertical, SliderRange, SliderRangeVertical, SliderTick } from '../../slider';
+import { SliderNormal } from '../../slider/templates/slider-normal';
+import { SliderVertical } from '../../slider/templates/slider-vertical';
+import { SliderRange } from '../../slider/templates/slider-range';
+import { SliderRangeVertical } from '../../slider/templates/slider-range-vertical';
+import { SliderTick } from '../../slider/slider-tick';
 
 
 const style = `

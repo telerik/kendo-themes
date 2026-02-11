@@ -1,5 +1,5 @@
 import Combobox from "../combobox.spec";
-import { Icon } from '../../icon';
+import { Icon } from '../../icon/icon.spec';
 
 export const ComboboxPrefix = (props) => (
     <Combobox

@@ -1,4 +1,4 @@
-import { DropdownGridAdaptive } from '../../dropdowngrid';
+import { DropdownGridAdaptive } from '../../dropdowngrid/templates/dropdowngrid-adaptive';
 
 const styles = `
     #test-area {

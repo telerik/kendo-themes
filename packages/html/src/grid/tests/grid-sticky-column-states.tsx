@@ -1,6 +1,15 @@
-import { Icon } from '../../icon';
-import { GridContainer, GridContent, GridHeader, GridHeaderCell, GridHeaderTable, GridTable, GridWithStickyColumns } from '../../grid';
-import { TableThead, TableRow, TableTbody, TableTd } from '../../table';
+import { Icon } from '../../icon/icon.spec';
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridWithStickyColumns } from "../templates/grid-with-sticky-columns";
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
 
 const styles = `
     #test-area {

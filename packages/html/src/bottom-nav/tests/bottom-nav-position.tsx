@@ -1,4 +1,4 @@
-import { BottomNavNormal } from '../../bottom-nav';
+import { BottomNavNormal } from '../templates/bottom-nav-normal';
 
 
 const styles = `

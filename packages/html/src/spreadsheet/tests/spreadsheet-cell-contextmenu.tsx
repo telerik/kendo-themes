@@ -1,7 +1,12 @@
-import { MenuListItem, MenuSeparator } from "../../menu";
-import { Popup } from "../../popup";
-import { SpreadsheetActionBar, SpreadsheetHeader, SpreadsheetNormal, SpreadsheetSheetsBar, SpreadsheetView } from "..";
-import { ContextMenuNormal } from "../../context-menu";
+import { MenuListItem } from "../../menu/menu-list-item.spec";
+import { MenuSeparator } from "../../menu/menu-separator.spec";
+import { Popup } from "../../popup/popup.spec";
+import { SpreadsheetActionBar } from "../spreadsheet-action-bar";
+import { SpreadsheetHeader } from "../spreadsheet-header";
+import { SpreadsheetNormal } from "../templates/spreadsheet-normal";
+import { SpreadsheetSheetsBar } from "../spreadsheet-sheets-bar";
+import { SpreadsheetView } from "../spreadsheet-view";
+import { ContextMenuNormal } from "../../context-menu/templates/context-menu-normal";
 
 const style = `
     #test-area {

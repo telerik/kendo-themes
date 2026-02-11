@@ -1,5 +1,8 @@
-import { Menu, MenuItem, MenuList, MenuListItem } from "..";
-import { Popup } from "../../popup";
+import { Menu } from "../menu.spec";
+import { MenuItem } from "../menu-item.spec";
+import { MenuList } from "../menu-list.spec";
+import { MenuListItem } from "../menu-list-item.spec";
+import { Popup } from "../../popup/popup.spec";
 
 export const MenuPopup = (props) => (
     <Menu  popup={

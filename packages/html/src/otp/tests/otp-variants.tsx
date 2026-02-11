@@ -1,6 +1,8 @@
-import { OneTimePassword, OneTimePasswordInput, OneTimePasswordSeparator } from '..';
-import { Icon } from '../../icon';
-import { InputGroup } from '../../input-group';
+import { OneTimePassword } from "../otp.spec";
+import { OneTimePasswordInput } from "../otp-input";
+import { OneTimePasswordSeparator } from "../otp-separator";
+import { Icon } from '../../icon/icon.spec';
+import { InputGroup } from '../../input-group/input-group';
 
 const styles = `
     #test-area {

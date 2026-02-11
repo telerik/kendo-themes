@@ -1,7 +1,9 @@
-import { Icon } from '../../icon';
-import { Popup } from '../../popup';
-import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuNormal } from '../../column-menu';
-import { GridWithGrouping } from '../../grid';
+import { Icon } from '../../icon/icon.spec';
+import { Popup } from '../../popup/popup.spec';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
+import { ColumnMenuNormal } from '../../column-menu/templates/column-menu-normal';
+import { GridWithGrouping } from '../templates/grid-with-grouping';
 
 
 const styles = `

@@ -1,6 +1,8 @@
-import { Appbar, AppbarNormal, AppbarSection } from '../../appbar';
-import { Icon } from '../../icon';
-import { Textbox } from '../../textbox';
+import { Appbar } from '../appbar.spec';
+import { AppbarNormal } from '../templates/appbar-normal';
+import { AppbarSection } from '../appbar-section';
+import { Icon } from '../../icon/icon.spec';
+import { Textbox } from '../../textbox/textbox.spec';
 
 
 const styles = `

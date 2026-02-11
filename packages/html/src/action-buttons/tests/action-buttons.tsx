@@ -1,5 +1,5 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
 
 
 const styles = `

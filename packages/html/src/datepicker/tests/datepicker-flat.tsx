@@ -1,4 +1,5 @@
-import { DatePicker, DatePickerNormal } from '../../datepicker';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { DatePickerNormal } from '../../datepicker/templates/datepicker-normal';
 
 
 const styles = `

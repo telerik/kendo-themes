@@ -1,5 +1,7 @@
-import { TabStrip, TabStripItem, TabStripContent } from '../../tabstrip';
-import { ExpansionPanel } from '../../expansion-panel';
+import { TabStrip } from '../../tabstrip/tabstrip.spec';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
+import { ExpansionPanel } from '../../expansion-panel/expansion-panel.spec';
 
 
 const styles = `

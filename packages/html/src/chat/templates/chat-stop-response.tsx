@@ -1,4 +1,6 @@
-import { Chat, ChatMessage, ChatMessageGroup } from "..";
+import { Chat } from '../chat.spec';
+import { ChatMessage } from '../chat-message';
+import { ChatMessageGroup } from '../chat-message-group';
 
 export const ChatStopResponse = (props) => (
     <Chat generating children={

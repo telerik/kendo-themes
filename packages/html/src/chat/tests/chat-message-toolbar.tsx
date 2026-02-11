@@ -1,6 +1,8 @@
-import { ChatMessage, ChatMessageGroup, ChatTimestamp } from '..';
-import { Button } from '../../button';
-import { ToolbarSeparator } from '../../toolbar';
+import { ChatTimestamp } from '../chat-timestamp';
+import { ChatMessage } from '../chat-message';
+import { ChatMessageGroup } from '../chat-message-group';
+import { Button } from '../../button/button.spec';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
 import { ChatMessageToolbar } from '../templates/chat-message-toolbar';
 
 

@@ -1,4 +1,5 @@
-import { ListBox, ListBoxNormal } from '../../listbox';
+import { ListBox } from '../../listbox/listbox.spec';
+import { ListBoxNormal } from '../../listbox/templates/listbox-normal';
 
 
 const styles = `

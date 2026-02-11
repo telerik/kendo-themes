@@ -1,8 +1,10 @@
-import { ChatNormal, ChatUpload } from '..';
-import { Dialog } from '../../dialog';
-import { Button } from '../../button';
-import { Dropzone } from '../../dropzone';
-import { Upload, UploadFile } from '../../upload';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatUpload } from '../templates/chat-upload';
+import { Dialog } from '../../dialog/dialog.spec';
+import { Button } from '../../button/button.spec';
+import { Dropzone } from '../../dropzone/dropzone.spec';
+import { Upload } from '../../upload/upload.spec';
+import { UploadFile } from '../../upload/upload-file';
 
 const styles = `
     #test-area {

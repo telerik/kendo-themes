@@ -1,4 +1,4 @@
-import { BubbleNormal } from '..';
+import { BubbleNormal } from '../templates/bubble-normal';
 
 export default () =>(
     <>

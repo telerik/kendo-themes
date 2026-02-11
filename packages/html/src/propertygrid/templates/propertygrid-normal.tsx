@@ -1,10 +1,15 @@
-import { PropertyGrid } from "..";
-import { Button } from "../../button";
-import { DropdownList } from "../../dropdownlist";
-import { GridToolbar, GridContainer, GridContent, GridTable } from "../../grid";
-import { Icon } from "../../icon";
-import { TableTbody, TableRow, TableTd } from "../../table";
-import { Textbox } from "../../textbox";
+import { PropertyGrid } from "../propertygrid.spec";
+import { Button } from "../../button/button.spec";
+import { DropdownList } from "../../dropdownlist/dropdownlist.spec";
+import { GridToolbar } from "../../grid/grid-toolbar.spec";
+import { GridContainer } from "../../grid/grid-container.spec";
+import { GridContent } from "../../grid/grid-content.spec";
+import { GridTable } from "../../grid/grid-table.spec";
+import { Icon } from "../../icon/icon.spec";
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Textbox } from "../../textbox/textbox.spec";
 
 export const PropertyGridNormal = ({ content, ...other }: any) => (
     <PropertyGrid

@@ -1,4 +1,4 @@
-import { ChipList } from '../../chip';
+import { ChipList } from '../../chip/chip-list.spec';
 import { ChipNormal } from '../templates/chip-normal';
 
 

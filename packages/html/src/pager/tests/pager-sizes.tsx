@@ -1,4 +1,6 @@
-import { Pager, PagerNormal, PagerInput } from "../../pager";
+import { Pager } from "../../pager/pager.spec";
+import { PagerNormal } from "../../pager/templates/pager-normal";
+import { PagerInput } from "../../pager/templates/pager-input";
 
 
 export default () =>(

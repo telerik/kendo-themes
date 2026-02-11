@@ -1,4 +1,5 @@
-import { SpeechToTextButtonNormal, SpeechToTextButtonListening } from '../';
+import { SpeechToTextButtonNormal } from '../templates/speech-to-text-button-normal';
+import { SpeechToTextButtonListening } from '../templates/speech-to-text-button-listening';
 
 const styles = `
     #test-area {

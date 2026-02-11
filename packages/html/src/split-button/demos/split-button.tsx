@@ -1,5 +1,6 @@
 ﻿import { SplitButton, KendoSplitButtonProps } from '../split-button.spec';
-import { MenuList, MenuListItem } from '../../menu';
+import { MenuList } from '../../menu/menu-list.spec';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
 
 const states = SplitButton.states;
 const defaults = {

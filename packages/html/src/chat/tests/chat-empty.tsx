@@ -1,4 +1,4 @@
-import { ChatEmpty } from '..';
+import { ChatEmpty } from '../templates/chat-empty';
 
 const styles = `
     #test-area {

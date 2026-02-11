@@ -1,4 +1,5 @@
-import { SmartBoxProcessing, SmartBoxNormal } from '..';
+import { SmartBoxProcessing } from '../templates/smart-box-processing';
+import { SmartBoxNormal } from '../templates/smart-box-normal';
 
 const styles = `
     #test-area {

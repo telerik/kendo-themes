@@ -1,5 +1,5 @@
-import { LoaderContainer, LoaderContainerNormal } from '../../loader';
-
+import { LoaderContainer } from '../../loader/loader-container.spec';
+import { LoaderContainerNormal } from '../../loader/templates/loader-container-normal';
 
 const styles = `
     #test-area {

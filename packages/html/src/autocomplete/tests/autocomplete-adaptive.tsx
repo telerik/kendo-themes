@@ -1,4 +1,4 @@
-import { AutocompleteAdaptive } from '../../autocomplete';
+import { AutocompleteAdaptive } from '../templates/autocomplete-adaptive';
 
 const styles = `
     #test-area {

@@ -1,7 +1,7 @@
 ﻿import { Stepper, KendoStepperProps } from '../stepper.spec';
 import { Step } from '../step';
 import { StepList } from '../step-list';
-import { ProgressBarNormal } from '../../progressbar';
+import { ProgressBarNormal } from '../../progressbar/templates/progressbar-normal';
 
 const options = Stepper.options;
 const states = Stepper.states;

@@ -1,6 +1,12 @@
-import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
-import { Button } from '../../button';
-import { List, ListContent, ListGroupItem, ListItem, ListUl } from '../../list';
+import { ActionSheet } from '../../action-sheet/action-sheet.spec';
+import { ActionSheetHeader } from '../../action-sheet/actionsheet-header';
+import { ActionSheetFooter } from '../../action-sheet/actionsheet-footer';
+import { Button } from '../../button/button.spec';
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListGroupItem } from '../../list/list-group-item';
+import { ListItem } from '../../list/list-item.spec';
+import { ListUl } from '../../list/list-ul';
 
 
 const styles = `

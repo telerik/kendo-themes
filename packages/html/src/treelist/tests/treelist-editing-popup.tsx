@@ -1,10 +1,11 @@
-import { WindowNormal } from '../../window';
-import { Checkbox } from '../../checkbox';
-import { NumericTextbox } from '../../numerictextbox';
-import { Textbox } from '../../textbox';
-import { Button } from '../../button';
-import { DatePicker } from '../../datepicker';
-import { FormNormal, FormField } from '../../form';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { Button } from '../../button/button.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
 
 
 const styles = `

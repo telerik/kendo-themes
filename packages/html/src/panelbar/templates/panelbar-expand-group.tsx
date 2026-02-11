@@ -1,4 +1,7 @@
-import { PanelBar, PanelBarContent, PanelBarGroup, PanelBarItem } from "..";
+import { PanelBar } from '../panelbar.spec';
+import { PanelBarContent } from '../panelbar-content';
+import { PanelBarGroup } from '../panelbar-group';
+import { PanelBarItem } from '../panelbar-item';
 
 export const PanelBarExpandGroup = (props) => (
     <PanelBar

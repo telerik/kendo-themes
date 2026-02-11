@@ -1,5 +1,7 @@
 import Autocomplete from "../autocomplete.spec";
-import { List, ListContent, ListItem } from "../../list";
+import { List } from "../../list/list.spec";
+import { ListContent } from "../../list/list-content";
+import { ListItem } from "../../list/list-item.spec";
 
 export const AutocompletePopup = (props) => (
     <Autocomplete

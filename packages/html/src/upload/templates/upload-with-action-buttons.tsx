@@ -1,4 +1,5 @@
-import { UploadFile, Upload } from "..";
+import { UploadFile } from '../upload-file';
+import { Upload } from '../upload.spec';
 
 export const UploadWithActionButtons = (props) => (
     <Upload async actions

@@ -1,4 +1,4 @@
-import { ColorGradientContrast } from '../../colorgradient';
+import { ColorGradientContrast } from '../../colorgradient/templates/colorgradient-contrast';
 
 
 const styles = `

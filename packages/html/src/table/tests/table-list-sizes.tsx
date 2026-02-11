@@ -1,4 +1,5 @@
-import { DataTable, DataTableList } from '../../table';
+import { DataTable } from '../../table/data-table.spec';
+import { DataTableList } from '../../table/templates/table-list';
 
 
 const style = `

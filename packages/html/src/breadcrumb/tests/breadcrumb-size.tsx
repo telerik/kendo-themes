@@ -1,5 +1,11 @@
-import { Icon } from "../../icon";
-import { Breadcrumb, BreadcrumbCollapsingWrap, BreadcrumbContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbRootItemContainer } from "..";
+import { Icon } from "../../icon/icon.spec";
+import { Breadcrumb } from '../breadcrumb.spec';
+import { BreadcrumbContainer } from '../breadcrumb-container';
+import { BreadcrumbRootItemContainer } from '../breadcrumb-root-item-container';
+import { BreadcrumbItem } from '../breadcrumb-item';
+import { BreadcrumbItemText } from '../breadcrumb-item-text';
+import { BreadcrumbLink } from '../breadcrumb-link';
+import { BreadcrumbCollapsingWrap } from '../templates/breadcrumb-collapsing-wrap';
 
 export default () => (
   <>

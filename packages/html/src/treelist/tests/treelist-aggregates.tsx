@@ -1,7 +1,10 @@
-import { Icon } from '../../icon';
-import { GridContent, GridTable } from '../../grid';
-import { TableTbody, TableRow, TableTd } from '../../table';
-import { TreeListAggregates } from '..';
+import { Icon } from '../../icon/icon.spec';
+import { GridContent } from '../../grid/grid-content.spec';
+import { GridTable } from '../../grid/grid-table.spec';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { TreeListAggregates } from '../templates/treelist-aggregates';
 
 export default () =>(
     <>

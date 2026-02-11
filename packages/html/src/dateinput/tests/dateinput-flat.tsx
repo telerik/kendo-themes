@@ -1,4 +1,5 @@
-import { DateInput, DateInputNormal } from '../../dateinput';
+import { DateInput } from '../../dateinput/dateinput.spec';
+import { DateInputNormal } from '../../dateinput/templates/dateinput-normal';
 
 const styles = `
     #test-area {

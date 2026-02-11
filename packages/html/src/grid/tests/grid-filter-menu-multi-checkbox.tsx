@@ -1,8 +1,8 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { Searchbox } from '../../searchbox';
-import { AnimationContainer } from '../../animation-container';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Searchbox } from '../../searchbox/searchbox.spec';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
 
 
 const styles = `

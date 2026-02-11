@@ -1,6 +1,6 @@
-import { AnimationContainer } from '../../animation-container';
-import { NoData } from '../../nodata';
-import { TooltipNormal } from '../../tooltip';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
+import { NoData } from '../../nodata/nodata';
+import { TooltipNormal } from '../../tooltip/templates/tooltip-normal';
 
 const style = `
     /* rest position and visibility */

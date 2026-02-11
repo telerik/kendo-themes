@@ -1,4 +1,4 @@
-import { WindowNormal } from '..';
+import { WindowNormal } from '../templates/window-normal';
 
 const style = `
     .k-window {

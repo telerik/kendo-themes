@@ -1,4 +1,5 @@
-import { NumericTextbox, NumericTextboxNormal } from '../../numerictextbox';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { NumericTextboxNormal } from '../templates/numerictextbox-normal';
 
 const styles = `
     #test-area {

@@ -1,5 +1,6 @@
-import { SliderNormal, SliderVertical, SliderTick } from '../../slider';
-
+import { SliderNormal } from '../../slider/templates/slider-normal';
+import { SliderVertical } from '../../slider/templates/slider-vertical';
+import { SliderTick } from '../../slider/slider-tick';
 
 const style = `
     .k-slider-horizontal {

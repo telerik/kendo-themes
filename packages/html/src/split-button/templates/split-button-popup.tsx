@@ -1,5 +1,6 @@
 import { SplitButton } from "../split-button.spec";
-import { MenuList, MenuListItem } from '../../menu';
+import { MenuList } from '../../menu/menu-list.spec';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
 
 export const SplitButtonPopup = (props) => (
     <SplitButton

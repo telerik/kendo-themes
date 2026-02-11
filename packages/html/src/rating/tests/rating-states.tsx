@@ -1,4 +1,5 @@
-import { Rating, RatingNormal } from '..';
+import { Rating } from '../rating.spec';
+import { RatingNormal } from '../templates/rating-normal';
 
 
 const styles = `

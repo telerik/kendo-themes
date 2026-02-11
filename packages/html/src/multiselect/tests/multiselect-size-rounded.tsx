@@ -1,4 +1,5 @@
-import { MultiSelect, MultiSelectValue } from '../../multiselect';
+import { MultiSelect } from '../../multiselect/multiselect.spec';
+import { MultiSelectValue } from '../../multiselect/templates/multiselect-value';
 
 const styles = `
     #test-area {

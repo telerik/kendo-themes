@@ -1,5 +1,8 @@
-import { NotificationNormal, NotificationClosable, IconNotification, IconNotificationClosable } from '..';
-import { AnimationContainer } from '../../animation-container';
+import { NotificationNormal } from '../templates/notification-normal';
+import { IconNotification } from '../templates/icon-notification';
+import { NotificationClosable } from '../templates/notification-closable';
+import { IconNotificationClosable } from '../templates/icon-notification-closable';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
 
 const styles = `
     .k-notification-group, .k-animation-container {

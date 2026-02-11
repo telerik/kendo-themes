@@ -1,4 +1,4 @@
-import { LoaderContainerNormal } from '../../loader';
+import { LoaderContainerNormal } from '../../loader/templates/loader-container-normal';
 
 
 const styles = `

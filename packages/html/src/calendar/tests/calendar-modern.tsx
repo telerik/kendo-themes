@@ -1,4 +1,8 @@
-import { CalendarCentury, CalendarDecade, CalendarNormal, CalendarWithWeeks, CalendarYear } from '..';
+import { CalendarCentury } from '../templates/calendar-century';
+import { CalendarDecade } from '../templates/calendar-decade';
+import { CalendarNormal } from '../templates/calendar-normal';
+import { CalendarWithWeeks } from '../templates/calendar-with-weeks';
+import { CalendarYear } from '../templates/calendar-year';
 
 const styles = `
     #test-area {

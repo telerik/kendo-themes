@@ -1,4 +1,5 @@
-import { Checkbox, CheckboxWithLabelAfter } from '../../checkbox';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { CheckboxWithLabelAfter } from '../../checkbox/templates/checkbox-with-label-after';
 
 const styles = `
     #test-area {

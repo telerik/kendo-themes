@@ -1,4 +1,7 @@
-import { PromptBoxLineModeSingle, PromptBoxLineModeMulti, PromptBoxLineModeAuto, PromptBoxLineModeAutoExpanded } from '..';
+import { PromptBoxLineModeSingle } from '../templates/prompt-box-single';
+import { PromptBoxLineModeMulti } from '../templates/prompt-box-multi';
+import { PromptBoxLineModeAuto } from '../templates/prompt-box-auto';
+import { PromptBoxLineModeAutoExpanded } from '../templates/prompt-box-auto-expandend';
 
 const styles = ``;
 

@@ -1,4 +1,4 @@
-import { ToolbarScrollableButtonsHidden } from '..';
+import { ToolbarScrollableButtonsHidden } from '../templates/toolbar-scrollable-buttons-hidden';
 
 
 export default () =>(

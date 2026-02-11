@@ -1,4 +1,4 @@
-import { Notification } from "..";
+import { Notification } from "../notification.spec";
 
 export const NotificationNormal = (props) => (
     <Notification

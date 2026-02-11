@@ -1,8 +1,18 @@
-import { Button } from "../../button";
-import { ButtonGroup } from "../../button-group";
-import { Toolbar } from "../../toolbar";
-import { SchedulerBody, SchedulerCell, SchedulerContent, SchedulerEvent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimeline, SchedulerTimes, SchedulerToolbar, SchedulerWeek } from "..";
-import { Icon } from "../../icon";
+import { Button } from "../../button/button.spec";
+import { ButtonGroup } from "../../button-group/button-group.spec";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { SchedulerBody } from '../scheduler-body.spec';
+import { SchedulerHeader } from '../scheduler-header.spec';
+import { SchedulerCell } from '../scheduler-cell.spec';
+import { SchedulerHead } from '../scheduler-head.spec';
+import { SchedulerToolbar } from '../scheduler-toolbar.spec';
+import { SchedulerTimes } from '../scheduler-times.spec';
+import { SchedulerContent } from '../scheduler-content.spec';
+import { SchedulerTable } from '../scheduler-table.spec';
+import { SchedulerEvent } from '../scheduler-event.spec';
+import { SchedulerTimeline } from '../templates/scheduler-timeline';
+import { SchedulerWeek } from '../templates/scheduler-week';
+import { Icon } from "../../icon/icon.spec";
 
 export default () => (
     <>

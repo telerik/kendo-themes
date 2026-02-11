@@ -1,5 +1,6 @@
-import { Notification, NotificationClosable } from '..';
-import { AnimationContainer } from '../../animation-container';
+import { Notification } from '../notification.spec';
+import { NotificationClosable } from '../templates/notification-closable';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
 
 
 const styles = `

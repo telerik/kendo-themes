@@ -1,4 +1,4 @@
-import { NoData } from "../../nodata";
+import { NoData } from "../../nodata/nodata";
 
 export default () => (
   <>

@@ -1,4 +1,4 @@
-import { ColorPicker } from '..';
+import { ColorPicker } from '../colorpicker.spec';
 
 
 const styles = `

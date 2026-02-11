@@ -1,4 +1,5 @@
-import { Slider, SliderNormal } from '../../slider';
+import { Slider } from '../../slider/slider.spec';
+import { SliderNormal } from '../../slider/templates/slider-normal';
 
 
 const style = `

@@ -1,5 +1,5 @@
-import { ListBox } from "..";
-import { ListItem } from '../../list';
+import { ListBox } from '../listbox.spec';
+import { ListItem } from '../../list/list-item.spec';
 
 export const ListBoxNormal = (props) => (
     <ListBox

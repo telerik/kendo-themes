@@ -1,5 +1,5 @@
 import Combobox from "../combobox.spec";
-import { IconButton } from "../../button";
+import { IconButton } from '../../button/templates/icon-button';
 
 export const ComboboxSuffix = (props) => (
     <Combobox

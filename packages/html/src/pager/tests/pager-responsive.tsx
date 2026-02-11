@@ -1,4 +1,5 @@
-import { PagerResponsive, PagerInput } from "..";
+import { PagerResponsive } from "../templates/pager-responsive";
+import { PagerInput } from "../templates/pager-input";
 
 
 const styles = `

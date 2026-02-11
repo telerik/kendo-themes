@@ -1,4 +1,6 @@
-import { CardBody, CardDeck, CardHorizontal } from '../../card';
+import { CardBody } from '../card-body';
+import { CardDeck } from '../card-deck.spec';
+import { CardHorizontal } from '../templates/card-horizontal';
 
 
 const styles = `

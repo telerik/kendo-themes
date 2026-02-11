@@ -1,10 +1,13 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { Icon } from '../../icon';
-import { Searchbox } from '../../searchbox';
-import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
-import { AnimationContainer } from '../../animation-container';
-import { ColumnMenuItemWrapper, ColumnMenuItem } from '../../column-menu';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { Icon } from '../../icon/icon.spec';
+import { Searchbox } from '../../searchbox/searchbox.spec';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewGroup } from '../../treeview/treeview-group';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
 
 
 const style = `

@@ -1,5 +1,5 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { TimeSelectorColumn } from '.';
+import { TimeSelectorColumn } from './time-selector-column';
 
 import { KendoComponent } from '../_types/component';
 import { TIME_SELECTOR_FOLDER_NAME, TIME_SELECTOR_MODULE_NAME } from './constants';

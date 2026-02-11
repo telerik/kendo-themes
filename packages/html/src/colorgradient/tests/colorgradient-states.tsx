@@ -1,4 +1,5 @@
-import { ColorGradient, ColorGradientNormal } from '../../colorgradient';
+import { ColorGradient } from '../../colorgradient/color-gradient.spec';
+import { ColorGradientNormal } from '../../colorgradient/templates/colorgradient-normal';
 
 
 const styles = `

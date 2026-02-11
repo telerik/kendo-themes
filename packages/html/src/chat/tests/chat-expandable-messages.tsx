@@ -1,4 +1,7 @@
-import { ChatMessage, ChatNormal, ChatTimestamp, ChatMessageGroup } from '..';
+import { ChatMessage } from '../chat-message';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatTimestamp } from '../chat-timestamp';
+import { ChatMessageGroup } from '../chat-message-group';
 
 
 const styles = `

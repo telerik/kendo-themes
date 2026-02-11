@@ -1,7 +1,7 @@
-import { Skeleton } from "..";
+import { Skeleton } from "../skeleton.spec";
 
 export const SkeletonCircle = (props) =>
     <Skeleton
-        shape={'circle'}
+        variant={'circle'}
         {...props}
     />;

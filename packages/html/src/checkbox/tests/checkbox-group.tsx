@@ -1,4 +1,7 @@
-import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroupHorizontal, CheckboxGroupNormal } from '../../checkbox';
+import { CheckboxItem } from '../../checkbox/checkbox-item.spec';
+import { CheckboxWithLabelAfter } from '../../checkbox/templates/checkbox-with-label-after';
+import { CheckboxGroupHorizontal } from '../../checkbox/templates/checkbox-group-horizontal';
+import { CheckboxGroupNormal } from '../../checkbox/templates/checkbox-group-normal';
 
 const styles = `
     #test-area {

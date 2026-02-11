@@ -1,5 +1,7 @@
 ﻿import { ContextMenuNormal } from '../templates/context-menu-normal';
-import { Menu, KendoMenuProps, MenuListItem, MenuSeparator } from '../../menu';
+import { Menu, KendoMenuProps } from '../../menu/menu.spec';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
+import { MenuSeparator } from '../../menu/menu-separator.spec';
 
 const options = Menu.options;
 const states = Menu.states;

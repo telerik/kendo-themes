@@ -1,4 +1,4 @@
-import { MultiSelectGrouping } from "../../multiselect";
+import { MultiSelectGrouping } from "../../multiselect/templates/multiselect-grouping";
 
 const styles = `
     #test-area {

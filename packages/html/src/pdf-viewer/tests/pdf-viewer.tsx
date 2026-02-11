@@ -1,4 +1,4 @@
-import { PDFViewerNormal } from '../../pdf-viewer';
+import { PDFViewerNormal } from '../../pdf-viewer/templates/pdf-viewer-normal';
 
 const styles = `
     #test-area .k-pdf-viewer {

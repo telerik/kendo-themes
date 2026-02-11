@@ -1,5 +1,6 @@
-import { AnimationContainer } from '../../animation-container';
-import { TooltipNormal, TooltipClosable } from '../../tooltip';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
+import { TooltipNormal } from '../../tooltip/templates/tooltip-normal';
+import { TooltipClosable } from '../../tooltip/templates/tooltip-closable';
 
 const style = `
     #test-area {

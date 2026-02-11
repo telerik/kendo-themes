@@ -1,15 +1,31 @@
-import { FileManager, FileManagerBreadcrumb, FileManagerToolbar, FileManagerTreeview, FilePreview } from "..";
-import { BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from "../../breadcrumb";
-import { Button } from "../../button";
-import { ButtonGroup } from "../../button-group";
-import { Icon } from "../../icon";
-import { Searchbox } from "../../searchbox";
-import { SplitButton } from "../../split-button";
-import { Splitter, SplitterPane } from "../../splitter";
-import { Switch } from "../../switch";
-import { TableThead, TableRow, TableTbody, TableTd } from "../../table";
-import { TreeviewItem } from "../../treeview";
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from "../../grid";
+import { FileManager } from "../filemanager.spec";
+import { FileManagerToolbar } from "../filemanager-toolbar.spec";
+import { FileManagerTreeview } from "../filemanager-treeview.spec";
+import { FileManagerBreadcrumb } from "../filemanager-breadcrumb.spec";
+import { FilePreview } from "../file-preview";
+import { BreadcrumbContainer } from "../../breadcrumb/breadcrumb-container";
+import { BreadcrumbItem } from "../../breadcrumb/breadcrumb-item";
+import { BreadcrumbLink } from "../../breadcrumb/breadcrumb-link";
+import { Button } from "../../button/button.spec";
+import { ButtonGroup } from "../../button-group/button-group.spec";
+import { Icon } from "../../icon/icon.spec";
+import { Searchbox } from "../../searchbox/searchbox.spec";
+import { SplitButton } from "../../split-button/split-button.spec";
+import { Splitter } from "../../splitter/splitter.spec";
+import { SplitterPane } from "../../splitter/splitter-pane";
+import { Switch } from "../../switch/switch.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
+import { TreeviewItem } from "../../treeview/treeview-item.spec";
+import { Grid } from "../../grid/grid.spec";
+import { GridHeader } from "../../grid/grid-header.spec";
+import { GridHeaderTable } from "../../grid/grid-header-table.spec";
+import { GridHeaderCell } from "../../grid/grid-header-cell.spec";
+import { GridContainer } from "../../grid/grid-container.spec";
+import { GridContent } from "../../grid/grid-content.spec";
+import { GridTable } from "../../grid/grid-table.spec";
 
 export const FileManagerGrid = (props) => (
     <FileManager toolbar={

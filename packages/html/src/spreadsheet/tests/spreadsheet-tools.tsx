@@ -1,11 +1,14 @@
-import { Button } from "../../button";
-import { ButtonGroup } from "../../button-group";
+import { Button } from "../../button/button.spec";
+import { ButtonGroup } from "../../button-group/button-group.spec";
 import { MenuButton } from "../../menu-button/menu-button.spec";
-import { ToolbarItem, ToolbarSeparator } from "../../toolbar";
-import { Spreadsheet, SpreadsheetHeader, SpreadsheetNormal } from "..";
-import { MenuItem } from "../../menu";
-import { ColorPicker } from "../../colorpicker";
-import { DropdownList } from "../../dropdownlist";
+import { ToolbarItem } from "../../toolbar/toolbar-item.spec";
+import { ToolbarSeparator } from "../../toolbar/toolbar-separator";
+import { Spreadsheet } from "../spreadsheet.spec";
+import { SpreadsheetHeader } from "../spreadsheet-header";
+import { SpreadsheetNormal } from "../templates/spreadsheet-normal";
+import { MenuItem } from "../../menu/menu-item.spec";
+import { ColorPicker } from "../../colorpicker/colorpicker.spec";
+import { DropdownList } from "../../dropdownlist/dropdownlist.spec";
 
 const style = `
     #test-area {

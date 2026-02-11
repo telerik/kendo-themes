@@ -1,11 +1,14 @@
-import { Button } from '../../button';
-import { WindowNormal } from '../../window';
-import { Textbox } from '../../textbox';
-import { DateTimePicker } from '../../datetimepicker';
-import { NumericTextbox } from '../../numerictextbox';
-import { DropdownList } from '../../dropdownlist';
-import { FormNormal, FormField } from '../../form';
-import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
+import { Button } from '../../button/button.spec';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Textbox } from '../../textbox/textbox.spec';
+import { DateTimePicker } from '../../datetimepicker/datetimepicker.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { TabStripNormal } from '../../tabstrip/templates/tabstrip-normal';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
 
 
 const styles = `

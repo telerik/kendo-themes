@@ -1,5 +1,5 @@
-import { IconButton } from "../../button";
-import DropdownGrid from "../dropdowngrid.spec";
+import { IconButton } from '../../button/templates/icon-button';
+import DropdownGrid from '../dropdowngrid.spec';
 
 export const DropdownGridSuffix = (props) => (
     <DropdownGrid

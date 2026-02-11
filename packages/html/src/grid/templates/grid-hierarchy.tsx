@@ -1,6 +1,15 @@
-import { Icon } from '../../icon';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { Icon } from '../../icon/icon.spec';
+import { Grid } from '../grid.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridTable } from '../grid-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 export const GridHierarchy = ({ containerClassName, ...other }: any) => (
     <Grid _renderAriaRoot

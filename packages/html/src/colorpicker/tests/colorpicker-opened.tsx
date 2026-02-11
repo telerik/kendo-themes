@@ -1,4 +1,5 @@
-import { ColorPickerPopupPalette, ColorPickerPopupGradient } from '..';
+import { ColorPickerPopupPalette } from '../templates/colorpicker-popup-palette';
+import { ColorPickerPopupGradient } from '../templates/colorpicker-popup-gradient';
 
 
 const styles = `

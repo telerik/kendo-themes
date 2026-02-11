@@ -1,13 +1,32 @@
-import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable, GridPager } from "../";
-import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal, ActionSheetView } from "../../action-sheet";
-import { ColumnMenuExpander, ColumnMenuItemWrapper, ColumnMenuMulticheckItem, ColumnMenuMulticheckWrap, ColumnMenuNormal, FilterMenu } from "../../column-menu";
-import { NumericTextbox } from "../../numerictextbox";
-import { ButtonGroup } from "../../button-group";
-import { DropdownList } from "../../dropdownlist";
-import { Button } from "../../button";
-import { Badge } from "../../badge";
-import { Searchbox } from "../../searchbox";
+import { Grid } from "../grid.spec";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridPager } from "../grid-pager.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { ActionSheetFooter } from "../../action-sheet/actionsheet-footer";
+import { ActionSheetHeader } from "../../action-sheet/actionsheet-header";
+import { ActionSheetNormal } from "../../action-sheet/templates/action-sheet-normal";
+import { ActionSheetView } from "../../action-sheet/actionsheet-view";
+import { ColumnMenuExpander } from "../../column-menu/column-menu-expander.spec";
+import { ColumnMenuItemWrapper } from "../../column-menu/column-menu-item-wrapper";
+import { ColumnMenuMulticheckItem } from "../../column-menu/column-menu-multicheck-item";
+import { ColumnMenuMulticheckWrap } from "../../column-menu/column-menu-multicheck-wrap";
+import { ColumnMenuNormal } from "../../column-menu/templates/column-menu-normal";
+import { FilterMenu } from "../../column-menu/filter-menu.spec";
+import { NumericTextbox } from "../../numerictextbox/numerictextbox.spec";
+import { ButtonGroup } from "../../button-group/button-group.spec";
+import { DropdownList } from "../../dropdownlist/dropdownlist.spec";
+import { Button } from "../../button/button.spec";
+import { Badge } from "../../badge/badge.spec";
+import { Searchbox } from "../../searchbox/searchbox.spec";
 
 const styles = `
     #test-area {

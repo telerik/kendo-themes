@@ -1,4 +1,7 @@
-import { ColorEditorNormal, ColorEditorPalette, ColorEditorGroup, ColorEditorPaletteGroup } from '../../coloreditor';
+import { ColorEditorNormal } from '../../coloreditor/templates/coloreditor-normal';
+import { ColorEditorPalette } from '../../coloreditor/templates/coloreditor-palette';
+import { ColorEditorGroup } from '../../coloreditor/templates/coloreditor-group';
+import { ColorEditorPaletteGroup } from '../../coloreditor/templates/coloreditor-palette-group';
 
 
 const styles = `

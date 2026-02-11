@@ -1,7 +1,11 @@
-import { DockManager, DockManagerSplitter, PaneScrollable } from "..";
-import { Button } from "../../button";
-import { SplitterPane } from "../../splitter";
-import { TabStripNormal, TabStripItem, TabStripContent } from "../../tabstrip";
+import { DockManager } from "../dock-manager.spec";
+import { DockManagerSplitter } from "../dock-manager-splitter";
+import { PaneScrollable } from "../pane-scrollable";
+import { Button } from "../../button/button.spec";
+import { SplitterPane } from "../../splitter/splitter-pane";
+import { TabStripNormal } from "../../tabstrip/templates/tabstrip-normal";
+import { TabStripItem } from "../../tabstrip/tabstrip-item";
+import { TabStripContent } from "../../tabstrip/tabstrip-content";
 
 export const DockManagerUnpinnedPane = (props) => (
     <DockManager

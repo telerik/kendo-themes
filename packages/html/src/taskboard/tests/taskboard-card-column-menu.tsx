@@ -1,5 +1,7 @@
-import { Popup } from '../../popup';
-import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuNormal } from '../../column-menu';
+import { Popup } from '../../popup/popup.spec';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
+import { ColumnMenuNormal } from '../../column-menu/templates/column-menu-normal';
 
 const styles = `
     .k-animation-container,

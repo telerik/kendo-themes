@@ -1,5 +1,5 @@
 import DropdownGrid from "../dropdowngrid.spec";
-import { Icon } from '../../icon';
+import { Icon } from '../../icon/icon.spec';
 
 export const DropdownGridPrefix = (props) => (
     <DropdownGrid

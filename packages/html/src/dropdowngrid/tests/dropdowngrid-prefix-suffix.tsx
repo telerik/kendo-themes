@@ -1,6 +1,9 @@
-import { DropdownGrid, DropdownGridPrefix, DropdownGridSuffix, DropdownGridNormal } from '..';
-import { IconButton } from '../../button';
-import { Icon } from '../../icon';
+import { DropdownGrid } from '../dropdowngrid.spec';
+import { DropdownGridNormal } from '../templates/dropdowngrid-normal';
+import { DropdownGridPrefix } from '../templates/dropdowngrid-prefix';
+import { DropdownGridSuffix } from '../templates/dropdowngrid-suffix';
+import { IconButton } from '../../button/templates/icon-button';
+import { Icon } from '../../icon/icon.spec';
 
 const styles = `
     #test-area {

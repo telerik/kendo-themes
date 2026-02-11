@@ -1,10 +1,20 @@
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { NumericTextbox } from '../../numerictextbox';
-import { Textbox } from '../../textbox';
-import { TooltipNormal } from '../../tooltip';
-import { GridWithEditRow, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { TooltipNormal } from '../../tooltip/templates/tooltip-normal';
+import { GridWithEditRow } from '../templates/grid-with-edit-row';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { GridToolbar } from '../grid-toolbar.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 
 export default () =>(

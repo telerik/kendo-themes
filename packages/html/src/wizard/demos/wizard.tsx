@@ -3,8 +3,10 @@ import { WizardStep } from '../wizard-step';
 import { WizardSteps } from '../wizard-steps';
 import { WizardNormal } from '../templates/wizard-normal';
 import { WizardVertical } from '../templates/wizard-vertical';
-import { ProgressBarNormal } from '../../progressbar';
-import { Stepper, Step, StepList } from '../../stepper';
+import { ProgressBarNormal } from '../../progressbar/templates/progressbar-normal';
+import { Stepper } from '../../stepper/stepper.spec';
+import { Step } from '../../stepper/step';
+import { StepList } from '../../stepper/step-list';
 
 const options = Wizard.options;
 const states = Wizard.states;

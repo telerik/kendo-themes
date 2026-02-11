@@ -1,9 +1,21 @@
-import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable, GridPager } from "../";
-import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { Popup } from "../../popup";
-import { Button } from "../../button";
-import { ActionButtons } from "../../action-buttons";
-import { ColumnList, ColumnListItem } from "../../column-menu";
+import { Grid } from '../grid.spec';
+import { GridToolbar } from '../grid-toolbar.spec';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { GridPager } from '../grid-pager.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Popup } from "../../popup/popup.spec";
+import { Button } from "../../button/button.spec";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { ColumnList } from "../../column-menu/column-list.spec";
+import { ColumnListItem } from "../../column-menu/column-list-item";
 
 const styles = `
     .k-grid {

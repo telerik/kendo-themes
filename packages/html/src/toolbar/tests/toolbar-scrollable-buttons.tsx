@@ -1,4 +1,4 @@
-import { ToolbarScrollable } from '..';
+import { ToolbarScrollable } from '../templates/toolbar-scrollable';
 
 
 export default () =>(

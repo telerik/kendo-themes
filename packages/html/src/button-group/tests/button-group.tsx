@@ -1,5 +1,5 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
 
 
 const styles = `

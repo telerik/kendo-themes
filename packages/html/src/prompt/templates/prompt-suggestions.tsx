@@ -1,10 +1,17 @@
-import { ActionButtons } from "../../action-buttons";
-import { IconTextButton, IconButton } from "../../button";
-import { Toolbar } from "../../toolbar";
-import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptView, PromptExpander } from "..";
-import { SpeechToTextButton } from "../../speech-to-text-button";
-import { Textarea } from "../../textarea";
-import { SuggestionGroup, Suggestion } from "../../suggestion";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { IconButton } from "../../button/templates/icon-button";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { Prompt } from "../prompt.spec";
+import { PromptContent } from "../prompt-content";
+import { PromptHeader } from "../prompt-header";
+import { PromptView } from "../prompt-view";
+import { PromptFooter } from "../prompt-footer";
+import { PromptExpander } from "../prompt-expander";
+import { SpeechToTextButton } from "../../speech-to-text-button/speech-to-text-button.spec";
+import { Textarea } from "../../textarea/textarea.spec";
+import { Suggestion } from "../../suggestion/suggestion";
+import { SuggestionGroup } from "../../suggestion/suggestion-group.spec";
 
 
 export const PromptSuggestions = (props) => (

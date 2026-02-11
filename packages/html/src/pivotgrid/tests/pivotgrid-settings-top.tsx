@@ -1,13 +1,23 @@
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { ChipList, Chip, ChipAction } from '../../chip';
-import { DropdownList } from '../../dropdownlist';
-import { Icon } from '../../icon';
-import { Searchbox } from '../../searchbox';
-import { Textbox } from '../../textbox';
-import { Treeview, TreeviewItem, TreeviewGroup } from '../../treeview';
-import { CalculatedField, PivotGrid, PivotGridCell, PivotGridConfigurator, PivotGridRow, PivotGridTable, PivotGridTbody } from '..';
-import { Form } from '../../form';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { ChipList } from '../../chip/chip-list.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { Icon } from '../../icon/icon.spec';
+import { Searchbox } from '../../searchbox/searchbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewGroup } from '../../treeview/treeview-group';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
+import { CalculatedField } from '../calculated-field';
+import { PivotGrid } from '../pivotgrid.spec';
+import { PivotGridCell } from '../pivotgrid-cell';
+import { PivotGridConfigurator } from '../pivotgrid-configurator';
+import { PivotGridRow } from '../pivotgrid-row';
+import { PivotGridTable } from '../pivotgrid-table';
+import { PivotGridTbody } from '../pivotgrid-tbody';
+import { Form } from '../../form/form.spec';
 
 
 export default () => (

@@ -1,4 +1,4 @@
-import { TooltipNormal } from '../../tooltip';
+import { TooltipNormal } from '../../tooltip/templates/tooltip-normal';
 
 const styles = `
     .k-tooltip {

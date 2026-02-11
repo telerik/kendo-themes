@@ -1,12 +1,15 @@
 ﻿import { Chat, KendoChatProps } from '../chat.spec';
-import { FileBox, FileBoxWrapper } from '../../file-box';
+import { FileBox } from '../../file-box/file-box.spec';
+import { FileBoxWrapper } from '../../file-box/file-box-wrapper.spec';
 import { ChatMessage } from '../chat-message';
 import { ChatMessageGroup } from '../chat-message-group';
 import { ChatMessageReference } from '../chat-message-reference';
 import { ChatNormal } from '../templates/chat-normal';
-import { Appbar, AppbarSection } from '../../appbar';
-import { Button } from '../../button';
-import { Suggestion, SuggestionGroup } from '../../suggestion';
+import { Appbar } from '../../appbar/appbar.spec';
+import { AppbarSection } from '../../appbar/appbar-section';
+import { Button } from '../../button/button.spec';
+import { Suggestion } from '../../suggestion/suggestion';
+import { SuggestionGroup } from '../../suggestion/suggestion-group.spec';
 
 const states = Chat.states;
 const defaults = Chat.defaultOptions;

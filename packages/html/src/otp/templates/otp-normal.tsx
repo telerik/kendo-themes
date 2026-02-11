@@ -1,4 +1,5 @@
-import { OneTimePassword, OneTimePasswordInput } from "..";
+import { OneTimePassword } from '../otp.spec';
+import { OneTimePasswordInput } from '../otp-input';
 
 export const OneTimePasswordNormal = ({ hover, focus, invalid, fillMode, size, ...props}: any) => (
     <OneTimePassword invalid={invalid} size={size} children={

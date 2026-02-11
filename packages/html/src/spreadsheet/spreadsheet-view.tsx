@@ -1,7 +1,9 @@
 import React from 'react';
 import { classNames } from '../misc';
 import { Tooltip } from '../tooltip';
-import { SpreadsheetRowHeader, SpreadsheetColumnHeader, SpreadsheetData } from '.';
+import { SpreadsheetRowHeader } from './spreadsheet-row-header';
+import { SpreadsheetColumnHeader } from './spreadsheet-column-header';
+import { SpreadsheetData } from './spreadsheet-data';
 
 export const SPREADSHEETVIEW_CLASSNAME = `k-spreadsheet-view`;
 

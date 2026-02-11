@@ -1,8 +1,8 @@
-import { FilterMenu } from "../../column-menu";
-import { DropdownList } from "../../dropdownlist";
-import { Textbox } from "../../textbox";
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
+import { FilterMenu } from "../../column-menu/filter-menu.spec";
+import { DropdownList } from "../../dropdownlist/dropdownlist.spec";
+import { Textbox } from "../../textbox/textbox.spec";
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
 
 export const FilterMenuNormal = (props) => (
     <FilterMenu

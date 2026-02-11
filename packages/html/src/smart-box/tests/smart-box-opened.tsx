@@ -1,4 +1,4 @@
-import { SmartBoxOpened } from '..';
+import { SmartBoxOpened } from '../templates/smart-box-opened';
 
 const styles = `
     #test-area {

@@ -1,4 +1,6 @@
-import { ListNormal, ListVirtualization, ListItem } from '..';
+import { ListNormal } from '../templates/list-normal';
+import { ListVirtualization } from '../templates/list-virtualization';
+import { ListItem } from '../list-item.spec';
 
 const style = `
     .k-virtual-list > .k-item,

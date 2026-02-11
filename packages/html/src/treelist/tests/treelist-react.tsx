@@ -1,12 +1,16 @@
-import { Icon } from '../../icon';
-import { Button } from '../../button';
-import { DropdownList } from '../../dropdownlist';
-import { DatePicker } from '../../datepicker';
-import { NumericTextbox } from '../../numerictextbox';
-import { Textbox } from '../../textbox';
-import { TreeList } from '../../treelist';
-import { GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd, TableTh } from '../../table';
+import { Icon } from '../../icon/icon.spec';
+import { Button } from '../../button/button.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { TreeList } from '../../treelist/treelist.spec';
+import { GridTable } from '../../grid/grid-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { TableTh } from '../../table/table-th.spec';
 
 
 export default () =>(

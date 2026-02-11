@@ -1,5 +1,8 @@
-import { TaskBoard, TaskBoardCard, TaskBoardColumn } from "..";
-import { CardHeader, CardBody } from "../../card";
+import { TaskBoard } from "../taskboard.spec";
+import { TaskBoardCard } from "../taskboard-card";
+import { TaskBoardColumn } from "../taskboard-column";
+import { CardHeader } from "../../card/card-header";
+import { CardBody } from "../../card/card-body";
 
 export const TaskBoardNormal = (props) =>
     <TaskBoard children={

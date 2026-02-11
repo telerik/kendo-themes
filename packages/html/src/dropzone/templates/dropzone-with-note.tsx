@@ -1,4 +1,4 @@
-import { Dropzone } from "..";
+import { Dropzone } from '../dropzone.spec';
 
 export const DropzoneWithNote = (props) =>
     <Dropzone

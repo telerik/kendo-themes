@@ -1,4 +1,4 @@
-import { GridLayoutNormal } from '../../layout';
+import { GridLayoutNormal } from '../../layout/templates/grid-layout-normal';
 
 
 const styles = `

@@ -1,5 +1,7 @@
-import { FloatingLabel, FloatingLabelNormal, FloatingLabelInputValue } from '..';
-import { TextboxNormal } from '../../textbox';
+import { FloatingLabel } from '../floating-label.spec';
+import { FloatingLabelInputValue } from '../templates/floating-label-input-value';
+import { FloatingLabelNormal } from '../templates/floating-label-normal';
+import { TextboxNormal } from '../../textbox/templates/textbox-normal';
 
 const styles = `
     #test-area {

@@ -1,6 +1,8 @@
-import { Checkbox } from '../../checkbox';
-import { Textbox } from '../../textbox';
-import { FormField, FormHorizontal, FormNormal } from '../../form';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { FormField } from '../../form/form-field';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormHorizontal } from '../../form/templates/form-horizontal';
 
 
 const styles = `

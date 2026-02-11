@@ -1,5 +1,11 @@
-import { BreadcrumbCollapsingAuto, BreadcrumbCollapsingNone, BreadcrumbCollapsingWrap, BreadcrumbContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink } from '..';
-import { Icon } from '../../icon';
+import { BreadcrumbContainer } from '../breadcrumb-container';
+import { BreadcrumbItem } from '../breadcrumb-item';
+import { BreadcrumbItemText } from '../breadcrumb-item-text';
+import { BreadcrumbLink } from '../breadcrumb-link';
+import { BreadcrumbCollapsingAuto } from '../templates/breadcrumb-collapsing-auto';
+import { BreadcrumbCollapsingWrap } from '../templates/breadcrumb-collapsing-wrap';
+import { BreadcrumbCollapsingNone } from '../templates/breadcrumb-collapsing-none';
+import { Icon } from '../../icon/icon.spec';
 
 const styles = `
     #test-area {

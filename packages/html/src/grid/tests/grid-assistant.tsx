@@ -1,13 +1,30 @@
-import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable } from "..";
-import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { Button, IconTextButton } from "../../button";
-import { WindowNormal } from "../../window";
-import { Prompt, PromptContent, PromptExpander, PromptFooter, PromptHeader, PromptView } from "../../prompt";
-import { Toolbar } from "../../toolbar";
-import { ActionButtons } from "../../action-buttons";
-import { Suggestion, SuggestionGroup } from "../../suggestion";
-import { SpeechToTextButton } from "../../speech-to-text-button";
-import { Textarea } from "../../textarea";
+import { Grid } from "../grid.spec";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Button } from "../../button/button.spec";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { WindowNormal } from "../../window/templates/window-normal";
+import { Prompt } from "../../prompt/prompt.spec";
+import { PromptContent } from "../../prompt/prompt-content";
+import { PromptExpander } from "../../prompt/prompt-expander";
+import { PromptFooter } from "../../prompt/prompt-footer";
+import { PromptHeader } from "../../prompt/prompt-header";
+import { PromptView } from "../../prompt/prompt-view";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { Suggestion } from "../../suggestion/suggestion";
+import { SuggestionGroup } from "../../suggestion/suggestion-group.spec";
+import { SpeechToTextButton } from "../../speech-to-text-button/speech-to-text-button.spec";
+import { Textarea } from "../../textarea/textarea.spec";
 
 const styles = `
     .k-grid {

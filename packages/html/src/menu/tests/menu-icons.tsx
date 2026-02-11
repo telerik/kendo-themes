@@ -1,5 +1,8 @@
-import { MenuItem, MenuNormal, MenuList, MenuListItem } from '..';
-import { Popup } from '../../popup';
+import { MenuItem } from "../menu-item.spec";
+import { MenuList } from "../menu-list.spec";
+import { MenuListItem } from "../menu-list-item.spec";
+import { MenuNormal } from "../templates/menu-normal";
+import { Popup } from '../../popup/popup.spec';
 
 const style = `
     #test-area section {

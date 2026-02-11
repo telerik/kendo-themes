@@ -1,4 +1,6 @@
-import { TabStripContent, TabStripItem, TabStripNormal } from '..';
+import { TabStripContent } from '../tabstrip-content';
+import { TabStripItem } from '../tabstrip-item';
+import { TabStripNormal } from '../templates/tabstrip-normal';
 import Button from "../../button/button.spec";
 
 

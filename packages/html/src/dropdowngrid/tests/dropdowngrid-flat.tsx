@@ -1,4 +1,5 @@
-import { DropdownGrid, DropdownGridNormal } from '../../dropdowngrid';
+import { DropdownGrid } from '../../dropdowngrid/dropdowngrid.spec';
+import { DropdownGridNormal } from '../../dropdowngrid/templates/dropdowngrid-normal';
 
 const styles = `
     #test-area {

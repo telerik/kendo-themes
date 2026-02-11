@@ -1,6 +1,8 @@
-import { PDFViewerWithAnnotations, PDFViewerPage } from '..';
-import { Button } from '../../button';
-import { Toolbar, ToolbarSeparator } from '../../toolbar';
+import { PDFViewerWithAnnotations } from '../templates/pdf-viewer-with-annotations';
+import { PDFViewerPage } from '../pdf-viewer-page';
+import { Button } from '../../button/button.spec';
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { ToolbarSeparator } from "../../toolbar/toolbar-separator";
 
 const styles = `
     #test-area .k-pdf-viewer {

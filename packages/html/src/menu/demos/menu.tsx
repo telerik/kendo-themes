@@ -3,7 +3,7 @@ import { MenuList } from '../menu-list.spec';
 import { MenuListItem } from '../menu-list-item.spec';
 import { MenuSeparator } from '../menu-separator.spec';
 import { MenuNormal } from '../templates/menu-normal';
-import { Popup } from '../../popup';
+import { Popup } from '../../popup/popup.spec';
 
 const options = Menu.options;
 const states = Menu.states;

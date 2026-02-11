@@ -1,7 +1,19 @@
-import { Icon } from '../../icon';
-import { Chip, ChipList, ChipAction } from '../../chip';
-import { GridWithStickyColumns, GridGroupingHeader, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { Icon } from '../../icon/icon.spec';
+import { Chip } from '../../chip/chip.spec';
+import { ChipList } from '../../chip/chip-list.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridGroupingHeader } from "../grid-grouping-header.spec";
+import { GridWithStickyColumns } from "../templates/grid-with-sticky-columns";
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 const styles = `
     .k-grid-header-wrap {

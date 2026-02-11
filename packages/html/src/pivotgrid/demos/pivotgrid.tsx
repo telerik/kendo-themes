@@ -6,9 +6,12 @@ import { PivotGridRow } from '../pivotgrid-row';
 import { PivotGridTable } from '../pivotgrid-table';
 import { PivotGridTbody } from '../pivotgrid-tbody';
 import { PivotGridNormal } from '../templates/pivotgrid-normal';
-import { Chip, ChipAction, ChipList } from '../../chip';
-import { Form } from '../../form';
-import { Treeview, TreeviewItem } from '../../treeview';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { ChipList } from '../../chip/chip-list.spec';
+import { Form } from '../../form/form.spec';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
 
 const options = PivotGrid.options;
 const states = PivotGrid.states;

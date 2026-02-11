@@ -1,9 +1,9 @@
 ﻿import { Editor, KendoEditorProps } from '../editor.spec';
 import { EditorNormal } from '../templates/editor-normal';
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { DropdownList } from '../../dropdownlist';
-import { ToolbarItem } from '../../toolbar';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
 
 const options = Editor.options;
 const states = Editor.states;

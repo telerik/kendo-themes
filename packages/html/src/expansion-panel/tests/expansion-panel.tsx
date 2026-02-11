@@ -1,4 +1,6 @@
-import { ExpansionPanel, ExpansionPanelNormal, ExpansionPanelExpanded } from '../../expansion-panel';
+import { ExpansionPanel } from '../../expansion-panel/expansion-panel.spec';
+import { ExpansionPanelNormal } from '../../expansion-panel/templates/expansion-panel-normal';
+import { ExpansionPanelExpanded } from '../../expansion-panel/templates/expansion-panel-expanded';
 
 export default () =>(
     <>

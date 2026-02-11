@@ -1,5 +1,5 @@
-import { Editor, EditorNormal } from '../../editor';
-
+import { Editor } from '../../editor/editor.spec';
+import { EditorNormal } from '../../editor/templates/editor-normal';
 
 const styles = `
     #test-area {

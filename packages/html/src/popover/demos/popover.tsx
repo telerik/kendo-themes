@@ -1,7 +1,7 @@
 ﻿import { Popover, KendoPopoverProps } from '../popover.spec';
 import { PopoverNormal } from '../templates/popover-normal';
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
 
 const options = Popover.options;
 const states = Popover.states;

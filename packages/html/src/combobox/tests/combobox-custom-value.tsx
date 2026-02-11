@@ -1,4 +1,5 @@
-import { ComboboxCustomValue, ComboboxGroupingModernCustomValue } from "..";
+import { ComboboxCustomValue } from '../templates/combobox-custom-value';
+import { ComboboxGroupingModernCustomValue } from '../templates/combobox-grouping-modern-custom-value';
 
 const styles = `
     #test-area {

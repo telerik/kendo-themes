@@ -1,5 +1,6 @@
 import MultiSelectTree from "../multiselecttree.spec";
-import { Chip, ChipAction } from '../../chip';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
 
 export const MultiSelectTreeValue = ({ size, rounded, children, ...other }: any) => (
     <>

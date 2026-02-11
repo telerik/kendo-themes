@@ -1,5 +1,9 @@
-import { Chip, ChipAction } from '../../chip';
-import { MultiSelect, MultiSelectNormal, MultiSelectArrowButton, MultiSelectValue } from '../../multiselect';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { MultiSelect } from '../../multiselect/multiselect.spec';
+import { MultiSelectNormal } from '../../multiselect/templates/multiselect-normal';
+import { MultiSelectArrowButton } from '../../multiselect/templates/multiselect-arrow-button';
+import { MultiSelectValue } from '../../multiselect/templates/multiselect-value';
 
 const styles = `
     #test-area {

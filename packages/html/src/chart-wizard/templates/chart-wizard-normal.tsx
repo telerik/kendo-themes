@@ -1,7 +1,13 @@
-import { ChartWizard, ChartWizardSplitter, ChartWizardPreviewPanelContent, ChartWizardChartTypesWrapper, ChartWizardIconTextWrapper } from "..";
-import { ExpansionPanel } from '../../expansion-panel';
-import { TabStrip, TabStripItem, TabStripContent } from '../../tabstrip';
-import { SplitterPane } from '../../splitter';
+import { ChartWizard } from '../chart-wizard.spec';
+import { ChartWizardSplitter } from '../chart-wizard-splitter';
+import { ChartWizardPreviewPanelContent } from '../chart-wizard-preview-panel-content';
+import { ChartWizardChartTypesWrapper } from '../chart-wizard-chart-types-wrapper';
+import { ChartWizardIconTextWrapper } from '../chart-wizard-icon-text-wrapper';
+import { ExpansionPanel } from '../../expansion-panel/expansion-panel.spec';
+import { TabStrip } from '../../tabstrip/tabstrip.spec';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
+import { SplitterPane } from '../../splitter/splitter-pane';
 
 
 export const ChartWizardNormal = (props) => (

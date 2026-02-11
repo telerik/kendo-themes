@@ -1,6 +1,9 @@
-import { TabStrip, TabStripContent, TabStripItem } from "..";
-import { MenuList, MenuListItem } from "../../menu";
-import { Popup } from "../../popup";
+import { TabStrip } from '../tabstrip.spec';
+import { TabStripContent } from '../tabstrip-content';
+import { TabStripItem } from '../tabstrip-item';
+import { MenuList } from "../../menu/menu-list.spec";
+import { MenuListItem } from "../../menu/menu-list-item.spec";
+import { Popup } from "../../popup/popup.spec";
 
 const defaultTabStripItems = (
   <>

@@ -1,5 +1,8 @@
-import { ChatMessage, ChatNormal, ChatStopResponse, ChatMessageGroup } from '..';
-import { SkeletonNormal } from '../../skeleton';
+import { ChatMessage } from '../chat-message';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatStopResponse } from '../templates/chat-stop-response';
+import { ChatMessageGroup } from '../chat-message-group';
+import { SkeletonNormal } from '../../skeleton/templates/skeleton-normal';
 
 
 const styles = `

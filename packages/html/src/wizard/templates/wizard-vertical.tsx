@@ -1,5 +1,7 @@
-import { Wizard, WizardStep, WizardSteps } from "..";
-import { StepperVertical } from "../../stepper";
+import { Wizard } from '../wizard.spec';
+import { WizardStep } from '../wizard-step';
+import { WizardSteps } from '../wizard-steps';
+import { StepperVertical } from "../../stepper/templates/stepper-vertical";
 
 export const WizardVertical = ({ ...other }: any) => (
     <Wizard

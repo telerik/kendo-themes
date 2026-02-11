@@ -1,7 +1,9 @@
-import { FilterMenu, ColumnMenuMulticheckWrap, ColumnMenuMulticheckItem } from "../../column-menu";
-import { Searchbox } from '../../searchbox';
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
+import { FilterMenu } from "../../column-menu/filter-menu.spec";
+import { ColumnMenuMulticheckWrap } from "../../column-menu/column-menu-multicheck-wrap";
+import { ColumnMenuMulticheckItem } from "../../column-menu/column-menu-multicheck-item";
+import { Searchbox } from '../../searchbox/searchbox.spec';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
 
 export const FilterMenuMultiCheck = (props) => (
     <FilterMenu

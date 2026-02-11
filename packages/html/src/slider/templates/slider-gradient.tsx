@@ -1,4 +1,4 @@
-import { Slider } from "../../slider";
+import { Slider } from "../../slider/slider.spec";
 
 export const SliderGradient = (props) => (
     <Slider

@@ -1,4 +1,7 @@
-import { Splitter, SplitterPane, SplitterNormal, SplitterVertical } from '../../splitter';
+import { Splitter } from '../../splitter/splitter.spec';
+import { SplitterPane } from '../../splitter/splitter-pane';
+import { SplitterNormal } from '../../splitter/templates/splitter-normal';
+import { SplitterVertical } from '../../splitter/templates/splitter-vertical';
 
 
 export default () =>(

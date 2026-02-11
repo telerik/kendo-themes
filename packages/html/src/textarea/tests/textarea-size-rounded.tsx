@@ -1,4 +1,5 @@
-import { Textarea, TextareaNormal } from '../../textarea';
+import { Textarea } from '../../textarea/textarea.spec';
+import { TextareaNormal } from '../templates/textarea-normal';
 
 const styles = `
     #test-area {

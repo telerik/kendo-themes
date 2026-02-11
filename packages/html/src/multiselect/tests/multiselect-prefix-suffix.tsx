@@ -1,7 +1,11 @@
-import { MultiSelect, MultiSelectNormal, MultiSelectPrefix, MultiSelectSuffix } from '..';
-import { TextButton } from '../../button';
-import { Chip, ChipAction } from '../../chip';
-import { Icon } from '../../icon';
+import { MultiSelect } from '../../multiselect/multiselect.spec';
+import { MultiSelectNormal } from '../../multiselect/templates/multiselect-normal';
+import { MultiSelectPrefix } from '../../multiselect/templates/multiselect-prefix';
+import { MultiSelectSuffix } from '../../multiselect/templates/multiselect-suffix';
+import { TextButton } from '../../button/templates/text-button';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { Icon } from '../../icon/icon.spec';
 
 const styles = `
     #test-area {

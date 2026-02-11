@@ -1,9 +1,14 @@
-import { ActionButtons } from "../../action-buttons";
-import { IconButton, IconTextButton } from "../../button";
-import { Prompt, PromptContent, PromptView, PromptSendButton } from "..";
-import { Card, CardBody } from "../../card";
-import { Textarea } from "../../textarea";
-import { SpeechToTextButton } from "../../speech-to-text-button";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { IconButton } from "../../button/templates/icon-button";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { Prompt } from "../prompt.spec";
+import { PromptContent } from "../prompt-content";
+import { PromptView } from "../prompt-view";
+import { PromptSendButton } from "../prompt-send-button";
+import { Card } from "../../card/card.spec";
+import { CardBody } from "../../card/card-body";
+import { Textarea } from "../../textarea/textarea.spec";
+import { SpeechToTextButton } from "../../speech-to-text-button/speech-to-text-button.spec";
 
 export const PromptInline = ({ text, ...other }: any) => (
     <Prompt {...other} >

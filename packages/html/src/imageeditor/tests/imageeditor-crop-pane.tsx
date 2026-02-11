@@ -1,4 +1,4 @@
-import { ImageEditorCrop } from '..';
+import { ImageEditorCrop } from '../templates/imageeditor-crop';
 
 
 export default () =>(

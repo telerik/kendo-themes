@@ -1,14 +1,28 @@
-import { GridNormal, GridContainer, GridContent, GridHeader, GridTable, GridHeaderTable, GridHeaderCell, GridPager, GridToolbar, GridGroupingHeader } from '../../grid';
-import { TableThead, TableRow, TableTbody, TableTd } from '../../table';
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { Chip, ChipAction, ChipList } from '../../chip';
-import { DropdownList } from '../../dropdownlist';
-import { Icon } from '../../icon';
-import { NumericTextbox } from '../../numerictextbox';
-import { SkeletonNormal } from '../../skeleton';
-import { Textbox } from '../../textbox';
-import { TooltipNormal } from '../../tooltip';
+import { GridNormal } from "../templates/grid-normal";
+import { GridHeader } from "../grid-header.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridPager } from "../grid-pager.spec";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { GridGroupingHeader } from "../grid-grouping-header.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { ChipList } from '../../chip/chip-list.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { Icon } from '../../icon/icon.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { SkeletonNormal } from '../../skeleton/templates/skeleton-normal';
+import { Textbox } from '../../textbox/textbox.spec';
+import { TooltipNormal } from '../../tooltip/templates/tooltip-normal';
 
 
 const styles = `

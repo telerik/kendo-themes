@@ -1,8 +1,8 @@
 import { Toolbar } from "../toolbar.spec";
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { MenuButton } from '../../menu-button';
-import { SplitButton } from '../../split-button';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { MenuButton } from '../../menu-button/menu-button.spec';
+import { SplitButton } from '../../split-button/split-button.spec';
 
 export const ToolbarScrollable = (props) => (
     <Toolbar scrollable {...props} children={[

@@ -2,7 +2,9 @@ import ColumnMenu from "../column-menu.spec";
 import ColumnMenuExpander from "../column-menu-expander.spec";
 import { ColumnMenuItemWrapper } from "../column-menu-item-wrapper";
 import ColumnMenuItem from "../column-menu-item.spec";
-import { ColumnListItem, ColumnList, ColumnMenuNormal } from ".."
+import { ColumnListItem } from "../column-list-item";
+import { ColumnList } from "../column-list.spec";
+import { ColumnMenuNormal } from "../templates/column-menu-normal";
 
 export default () => (
     <>

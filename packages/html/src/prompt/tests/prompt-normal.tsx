@@ -1,4 +1,4 @@
-import { Popup } from "../../popup";
+import { Popup } from "../../popup/popup.spec";
 import { PromptNormal } from "../templates/prompt-normal";
 import { PromptSettings } from "../templates/prompt-settings";
 import { PromptSuggestions } from "../templates/prompt-suggestions";

@@ -1,5 +1,8 @@
-import { Avatar, AvatarText, AvatarImage, AvatarIcon } from "..";
-import { Icon } from "../../icon";
+import { Avatar } from '../avatar.spec';
+import { AvatarImage } from '../templates/avatar-image';
+import { AvatarIcon } from '../templates/avatar-icon';
+import { AvatarText } from '../templates/avatar-text';
+import { Icon } from "../../icon/icon.spec";
 
 const styles = `
     #test-area {

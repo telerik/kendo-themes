@@ -1,8 +1,9 @@
-import { ColorEditorPaletteGroup } from '../../coloreditor';
+import { ColorEditorPaletteGroup } from '../../coloreditor/templates/coloreditor-palette-group';
 import { PALETTEPRESETS } from '../../colorpalette/colorpalette-presets';
-import { Combobox } from '../../combobox';
-import { FormNormal, FormField } from '../../form';
-import { Popup } from '../../popup';
+import { Combobox } from '../../combobox/combobox.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { Popup } from '../../popup/popup.spec';
 
 const styles = `
     #test-area {

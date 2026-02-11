@@ -1,5 +1,7 @@
-import { OneTimePassword, OneTimePasswordInput, OneTimePasswordSeparator } from "..";
-import { InputGroup } from "../../input-group";
+import { OneTimePassword } from "../otp.spec";
+import { OneTimePasswordInput } from "../otp-input";
+import { OneTimePasswordSeparator } from "../otp-separator";
+import { InputGroup } from "../../input-group/input-group";
 
 export const OneTimePasswordGroupsNoSpace = ({ hover, focus, invalid, fillMode, size, ...props }: any) => (
     <OneTimePassword invalid={invalid} size={size} children={

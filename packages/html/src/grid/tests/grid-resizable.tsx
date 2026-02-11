@@ -1,4 +1,4 @@
-import { GridNormal } from '../../grid';
+import { GridNormal } from '../../grid/templates/grid-normal';
 
 export default () =>(
     <>

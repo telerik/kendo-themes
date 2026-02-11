@@ -1,4 +1,7 @@
-import { ColorPalette, ColorPaletteNormal, ColorPaletteRow, ColorPaletteTile } from '../../colorpalette';
+import { ColorPalette } from '../../colorpalette/colorpalette.spec';
+import { ColorPaletteNormal } from '../../colorpalette/templates/colorpalette-normal';
+import { ColorPaletteRow } from '../../colorpalette/colorpalette-row';
+import { ColorPaletteTile } from '../../colorpalette/colorpalette-tile';
 
 
 export default () =>(

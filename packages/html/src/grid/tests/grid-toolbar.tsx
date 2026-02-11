@@ -1,9 +1,11 @@
-import { Button, IconButton } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { Searchbox } from '../../searchbox';
-import { Grid, GridToolbar } from '../../grid';
-import { SmartBox } from '../../smart-box';
-import { Icon } from '../../icon';
+import { Button } from '../../button/button.spec';
+import { IconButton } from '../../button/templates/icon-button';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Searchbox } from '../../searchbox/searchbox.spec';
+import { Grid } from '../grid.spec';
+import { GridToolbar } from '../grid-toolbar.spec';
+import { SmartBox } from '../../smart-box/smart-box.spec';
+import { Icon } from '../../icon/icon.spec';
 
 
 const styles = `

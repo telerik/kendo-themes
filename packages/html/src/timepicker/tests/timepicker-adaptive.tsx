@@ -1,4 +1,4 @@
-import { TimePickerAdaptive } from '../../timepicker';
+import { TimePickerAdaptive } from '../../timepicker/templates/timepicker-adaptive';
 
 const styles = `
     #test-area {

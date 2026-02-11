@@ -1,4 +1,4 @@
-import { SegmentedControlNormal } from '../../segmented-control';
+import { SegmentedControlNormal } from '../../segmented-control/templates/segmented-control-normal';
 
 
 const styles = `

@@ -1,5 +1,5 @@
-import { ColorEditor } from "../../coloreditor";
-import { ColorPicker } from "..";
+import { ColorEditor } from "../../coloreditor/color-editor.spec";
+import { ColorPicker } from "../colorpicker.spec";
 
 export const ColorPickerPopupGradient = ({ value, color, currentColor, ...other }: any) => (
     <ColorPicker

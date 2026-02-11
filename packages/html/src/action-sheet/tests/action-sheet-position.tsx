@@ -1,5 +1,7 @@
-import { ActionSheetLeft, ActionSheetRight, ActionSheetTop, ActionSheetNormal } from '../../action-sheet';
-
+import { ActionSheetLeft } from '../../action-sheet/templates/action-sheet-left';
+import { ActionSheetRight } from '../../action-sheet/templates/action-sheet-right';
+import { ActionSheetTop } from '../../action-sheet/templates/action-sheet-top';
+import { ActionSheetNormal } from '../../action-sheet/templates/action-sheet-normal';
 
 const styles = `
     #test-area {

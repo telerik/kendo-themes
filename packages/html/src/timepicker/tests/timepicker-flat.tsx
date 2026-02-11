@@ -1,5 +1,5 @@
-import { TimePicker, TimePickerNormal } from '../../timepicker';
-
+import { TimePicker } from '../../timepicker/timepicker.spec';
+import { TimePickerNormal } from '../../timepicker/templates/timepicker-normal';
 
 const styles = `
     #test-area {

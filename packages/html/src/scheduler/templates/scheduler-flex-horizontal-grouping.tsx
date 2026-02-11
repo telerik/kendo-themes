@@ -1,6 +1,12 @@
-import { Button } from '../../button';
-import { Scheduler, SchedulerBody, SchedulerCell, SchedulerHead, SchedulerToolbar, SchedulerEvent, SchedulerGroup, SchedulerRow } from '../index';
-
+import { Button } from '../../button/button.spec';
+import { Scheduler } from '../scheduler.spec';
+import { SchedulerBody } from '../scheduler-body.spec';
+import { SchedulerCell } from '../scheduler-cell.spec';
+import { SchedulerHead } from '../scheduler-head.spec';
+import { SchedulerToolbar } from '../scheduler-toolbar.spec';
+import { SchedulerEvent } from '../scheduler-event.spec';
+import { SchedulerRow } from '../scheduler-row.spec';
+import { SchedulerGroup } from '../scheduler-group.spec';
 
 export const SchedulerFlexHorizontalGrouping = (...props) => (
     <Scheduler

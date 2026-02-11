@@ -1,5 +1,6 @@
-import { Icon } from "../../icon";
-import { Badge, IconBadge } from "../../badge";
+import { Icon } from "../../icon/icon.spec";
+import { Badge } from "../badge.spec";
+import { IconBadge } from "../templates/icon-badge";
 
 const styles = `
     #test-area {

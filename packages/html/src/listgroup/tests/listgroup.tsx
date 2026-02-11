@@ -1,5 +1,6 @@
-import { Icon } from '../../icon';
-import { ListGroupItem, ListGroupNormal } from '../../listgroup';
+import { Icon } from '../../icon/icon.spec';
+import { ListGroupNormal } from '../../listgroup/templates/listgroup-normal';
+import { ListGroupItem } from '../../listgroup/listgroup-item.spec';
 
 
 export default () => (

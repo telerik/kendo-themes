@@ -1,4 +1,4 @@
-import { TimeDurationPickerNormal } from '../../timedurationpicker';
+import { TimeDurationPickerNormal } from '../../timedurationpicker/templates/timedurationpicker-normal';
 
 
 const styles = `

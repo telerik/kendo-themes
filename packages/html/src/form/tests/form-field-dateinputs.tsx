@@ -1,9 +1,11 @@
-import { DateInput } from '../../dateinput';
-import { DatePicker } from '../../datepicker';
-import { DateRangePicker } from '../../daterangepicker';
-import { DateTimePicker } from '../../datetimepicker';
-import { TimePicker } from '../../timepicker';
-import { FormField, FormHorizontal, FormNormal } from '../../form';
+import { DateInput } from '../../dateinput/dateinput.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { DateRangePicker } from '../../daterangepicker/daterangepicker.spec';
+import { DateTimePicker } from '../../datetimepicker/datetimepicker.spec';
+import { TimePicker } from '../../timepicker/timepicker.spec';
+import { FormField } from '../../form/form-field';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormHorizontal } from '../../form/templates/form-horizontal';
 
 
 const styles = `

@@ -1,6 +1,7 @@
-import { ActionSheet, ActionSheetHeader } from '..';
-import { Button } from '../../button';
-import { CalendarInfiniteNormal } from '../../calendar';
+import { ActionSheet } from '../action-sheet.spec';
+import { ActionSheetHeader } from '../actionsheet-header';
+import { Button } from '../../button/button.spec';
+import { CalendarInfiniteNormal } from '../../calendar/templates/calendar-infinite-normal';
 
 
 const styles = `

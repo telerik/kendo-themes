@@ -1,7 +1,11 @@
-import { Icon } from '../../icon';
-import { TreeList } from '../../treelist';
-import { GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd, TableTh } from '../../table';
+import { Icon } from '../../icon/icon.spec';
+import { TreeList } from '../../treelist/treelist.spec';
+import { GridTable } from '../../grid/grid-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { TableTh } from '../../table/table-th.spec';
 
 export default () =>(
     <>

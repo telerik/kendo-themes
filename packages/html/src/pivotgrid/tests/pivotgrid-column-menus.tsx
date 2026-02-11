@@ -1,9 +1,15 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
-import { Popup } from '../../popup';
-import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuNormal } from "../../column-menu";
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewGroup } from '../../treeview/treeview-group';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
+import { Popup } from '../../popup/popup.spec';
+import { ColumnMenuNormal } from "../../column-menu/templates/column-menu-normal";
+import { ColumnMenuItemWrapper } from "../../column-menu/column-menu-item-wrapper";
+import { ColumnMenuItem } from "../../column-menu/column-menu-item.spec";
+import { ColumnMenuExpander } from "../../column-menu/column-menu-expander.spec";
+import { FilterMenuNormal } from "../../column-menu/templates/filter-menu-normal";
 
 const styles = `
     .k-animation-container {

@@ -1,6 +1,6 @@
 import { KendoCardProps, Card } from '../card';
 import { classNames } from '../misc';
-import { TimelineCardCallout } from '.';
+import { TimelineCardCallout } from './timeline-card-callout';
 
 const states = [];
 

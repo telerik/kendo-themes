@@ -1,4 +1,6 @@
-import { TimeSelectorAll, TimeSelectorHour, TimeSelectorMinute } from "../../time-selector";
+import { TimeSelectorAll } from "../../time-selector/templates/time-selector-all";
+import { TimeSelectorHour } from "../../time-selector/templates/time-selector-hour";
+import { TimeSelectorMinute } from "../../time-selector/templates/time-selector-minute";
 
 const style = `
     #test-area {

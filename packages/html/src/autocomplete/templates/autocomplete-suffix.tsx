@@ -1,5 +1,5 @@
 import Autocomplete from "../autocomplete.spec";
-import { TextButton } from '../../button';
+import { TextButton } from '../../button/templates/text-button';
 
 export const AutocompleteSuffix = (props) => (
     <Autocomplete

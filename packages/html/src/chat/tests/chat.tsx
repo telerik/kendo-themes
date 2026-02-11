@@ -1,5 +1,10 @@
-import { ChatHeader, ChatMessage, ChatNormal, ChatTimestamp, ChatMessageGroup, ChatEvent } from '..';
-import { ToolbarItem } from '../../toolbar';
+import { ChatHeader } from '../chat-header';
+import { ChatMessage } from '../chat-message';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatTimestamp } from '../chat-timestamp';
+import { ChatMessageGroup } from '../chat-message-group';
+import { ChatEvent } from '../chat-event';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
 
 
 const styles = `

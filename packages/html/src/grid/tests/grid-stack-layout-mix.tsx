@@ -1,7 +1,21 @@
-import { GridNormal, GridContainer, GridContent, GridTable, GridHeader, GridHeaderTable, GridHeaderCell, GridPager, GridToolbar, GridStackCell, GridStackRow } from '..';
-import { Button } from '../../button';
-import { Icon } from '../../icon';
-import { TableTbody, TableRow, TableTd, TableThead } from '../../table';
+
+import { GridStackRow } from "../grid-stack-row.spec";
+import { GridStackCell } from "../grid-stack-cell.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridPager } from "../grid-pager.spec";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { GridNormal } from "../templates/grid-normal";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { Button } from '../../button/button.spec';
+import { Icon } from '../../icon/icon.spec';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { TableThead } from '../../table/table-thead';
 
 export default () =>(
     <>

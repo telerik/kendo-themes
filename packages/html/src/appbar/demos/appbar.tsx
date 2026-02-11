@@ -1,9 +1,10 @@
 ﻿import { Appbar, KendoAppbarProps } from '../appbar.spec';
 import { AppbarSection } from '../appbar-section';
 import { AppbarNormal } from '../templates/appbar-normal';
-import { AvatarImage } from '../../avatar';
-import { IconButton, TextButton } from '../../button';
-import { TextboxNormal } from '../../textbox';
+import { AvatarImage } from '../../avatar/templates/avatar-image';
+import { IconButton } from '../../button/templates/icon-button';
+import { TextButton } from '../../button/templates/text-button';
+import { TextboxNormal } from '../../textbox/templates/textbox-normal';
 
 const options = { ...Appbar.options };
 const states = Appbar.states;

@@ -1,5 +1,7 @@
-import { WizardVertical, WizardStep, WizardSteps } from '..';
-import { StepperVertical } from '../../stepper';
+import { WizardVertical } from '../templates/wizard-vertical';
+import { WizardStep } from '../wizard-step';
+import { WizardSteps } from '../wizard-steps';
+import { StepperVertical } from '../../stepper/templates/stepper-vertical';
 
 
 const style = `

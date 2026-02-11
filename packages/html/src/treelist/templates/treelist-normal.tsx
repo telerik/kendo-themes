@@ -1,7 +1,15 @@
-import { TreeList } from "..";
-import { GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from "../../grid";
-import { Icon } from "../../icon";
-import { TableThead, TableRow, TableTbody, TableTd } from "../../table";
+import { TreeList } from '../treelist.spec';
+import { GridHeader } from '../../grid/grid-header.spec';
+import { GridHeaderTable } from '../../grid/grid-header-table.spec';
+import { GridHeaderCell } from '../../grid/grid-header-cell.spec';
+import { GridContent } from '../../grid/grid-content.spec';
+import { GridContainer } from '../../grid/grid-container.spec';
+import { GridTable } from '../../grid/grid-table.spec';
+import { Icon } from "../../icon/icon.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
 
 export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any) => (
     <TreeList id="treelist" _renderAriaRoot {...other}>

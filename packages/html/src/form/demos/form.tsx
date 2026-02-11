@@ -1,10 +1,10 @@
 ﻿import { Form, KendoFormProps } from '../form.spec';
 import { Fieldset } from '../fieldset';
 import { FormField } from '../form-field';
-import { Button } from '../../button';
-import { DropdownList } from '../../dropdownlist';
-import { RadioButton } from '../../radio';
-import { Textbox } from '../../textbox';
+import { Button } from '../../button/button.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { RadioButton } from '../../radio/radio.spec';
+import { Textbox } from '../../textbox/textbox.spec';
 
 const options = Form.options;
 const states = Form.states;

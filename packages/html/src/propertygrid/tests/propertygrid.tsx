@@ -1,4 +1,4 @@
-import { PropertyGridWithPreview } from "..";
+import { PropertyGridWithPreview } from '../templates/propertygrid-with-preview';
 
 const styles = `
     .k-pane:nth-child(1) {

@@ -1,4 +1,6 @@
-import { Checkbox, CheckboxItem, CheckboxGroup } from "..";
+import { Checkbox } from '../checkbox.spec';
+import { CheckboxItem } from '../checkbox-item.spec';
+import { CheckboxGroup } from '../checkbox-group.spec';
 
 export const CheckboxGroupHorizontal = (props: any) => (
     <CheckboxGroup children={

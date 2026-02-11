@@ -1,4 +1,5 @@
-import { Dialog, DialogNormal } from '../../dialog';
+import { Dialog } from '../../dialog/dialog.spec';
+import { DialogNormal } from '../../dialog/templates/dialog-normal';
 
 const styles = `
     .k-dialog {

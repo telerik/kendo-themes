@@ -1,4 +1,5 @@
-import { Badge, BadgeNormal } from '../../badge';
+import { Badge } from '../badge.spec';
+import { BadgeNormal } from '../templates/badge-normal';
 
 export default () =>(
     <>

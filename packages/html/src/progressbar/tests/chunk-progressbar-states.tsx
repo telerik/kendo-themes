@@ -1,4 +1,5 @@
-import { ChunkProgressBar, ChunkProgressBarNormal } from '../../progressbar';
+import { ChunkProgressBar } from '../../progressbar/chunk-progressbar.spec';
+import { ChunkProgressBarNormal } from '../../progressbar/templates/chunk-progressbar-normal';
 
 const style = `
     .k-progressbar-indeterminate,

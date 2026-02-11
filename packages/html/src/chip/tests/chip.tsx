@@ -1,5 +1,8 @@
-import { Chip, ChipAvatar, ChipIcon, ChipNormal, ChipRemovable } from '../../chip';
-
+import { Chip } from '../../chip/chip.spec';
+import { ChipAvatar } from '../../chip/templates/chip-avatar';
+import { ChipIcon } from '../../chip/templates/chip-icon';
+import { ChipNormal } from '../../chip/templates/chip-normal';
+import { ChipRemovable } from '../../chip/templates/chip-removable';
 
 export default () =>(
     <>

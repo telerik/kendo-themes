@@ -1,6 +1,9 @@
-import { Popup } from '../../popup';
-import { MenuList, MenuItem, MenuNormal, MenuListItem, MenuScrollable } from '../../menu';
-
+import { Popup } from '../../popup/popup.spec';
+import { MenuList } from "../menu-list.spec";
+import { MenuListItem } from "../menu-list-item.spec";
+import { MenuNormal } from "../templates/menu-normal";
+import { MenuItem } from "../menu-item.spec";
+import { MenuScrollable } from "../templates/menu-scrollable";
 
 const style = `
     #test-area {

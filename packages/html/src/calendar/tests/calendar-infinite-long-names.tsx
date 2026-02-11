@@ -1,4 +1,4 @@
-import { CalendarInfiniteNormal } from '../index';
+import { CalendarInfiniteNormal } from '../templates/calendar-infinite-normal';
 
 export default () => (
     <>

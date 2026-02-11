@@ -1,4 +1,5 @@
-import { RatingNormal, RatingWithLabel } from '..';
+import { RatingNormal } from '../templates/rating-normal';
+import { RatingWithLabel } from '../templates/rating-with-label';
 
 
 const styles = `

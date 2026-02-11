@@ -1,6 +1,7 @@
-import { Textarea, TextareaNormal } from '..';
-import { IconButton } from '../../button';
-import { Icon } from '../../icon';
+import { Textarea } from '../../textarea/textarea.spec';
+import { TextareaNormal } from '../templates/textarea-normal';
+import { IconButton } from '../../button/templates/icon-button';
+import { Icon } from '../../icon/icon.spec';
 
 const styles = `
     #test-area {

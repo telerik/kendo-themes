@@ -1,5 +1,5 @@
-﻿import { ColorEditor } from "../../coloreditor";
-import ColorPicker, { KendoColorPickerProps } from "../colorpicker.spec";
+﻿import { ColorEditor } from "../../coloreditor/color-editor.spec";
+import { ColorPicker, KendoColorPickerProps } from "../colorpicker.spec";
 import { ColorPickerNormal } from "../templates/colorpicker-normal";
 
 const options = ColorPicker.options;

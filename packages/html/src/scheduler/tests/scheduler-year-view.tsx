@@ -1,4 +1,4 @@
-import { SchedulerFlexYear } from '../../scheduler';
+import { SchedulerFlexYear } from '../../scheduler/templates/scheduler-flex-year';
 
 const styles = `
     .k-scheduler-body {

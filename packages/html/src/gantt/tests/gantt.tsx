@@ -1,4 +1,4 @@
-import { GanttNormal } from '..';
+import { GanttNormal } from '../templates/gantt-normal';
 
 
 export default () =>(

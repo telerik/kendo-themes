@@ -1,4 +1,6 @@
-import { MenuItem, MenuVertical, MenuVerticalScrollable } from '..';
+import { MenuItem } from '../menu-item.spec';
+import { MenuVertical } from '../templates/menu-vertical';
+import { MenuVerticalScrollable } from '../templates/menu-vertical-scrollable';
 
 
 const style = `

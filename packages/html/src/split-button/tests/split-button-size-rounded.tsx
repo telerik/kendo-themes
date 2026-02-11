@@ -1,4 +1,6 @@
-import { SplitButton, IconTextSplitButton, IconSplitButton } from '../../split-button';
+import { SplitButton } from '../../split-button/split-button.spec';
+import { IconSplitButton } from '../../split-button/templates/icon-split-button';
+import { IconTextSplitButton } from '../../split-button/templates/icon-text-split-button';
 
 const styles = `
     #test-area {

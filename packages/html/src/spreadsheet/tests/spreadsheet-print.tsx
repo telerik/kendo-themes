@@ -1,12 +1,20 @@
-import { WindowNormal } from '../../window';
-import { Button } from '../../button';
-import { FormNormal, Fieldset, FormField } from '../../form';
-import { RadioButtonWithLabelAfter, RadioGroupHorizontal, RadioItem } from '../../radio';
-import { Textbox } from '../../textbox';
-import { DropdownList } from '../../dropdownlist';
-import { NumericTextbox } from '../../numerictextbox';
-import { CheckboxGroupNormal, CheckboxItem, CheckboxWithLabelAfter } from '../../checkbox';
-import { TabStripNormal, TabStripContent, TabStripItem } from '../../tabstrip';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Button } from '../../button/button.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { Fieldset } from '../../form/fieldset';
+import { FormField } from '../../form/form-field';
+import { RadioButtonWithLabelAfter } from '../../radio/templates/radio-with-label-after';
+import { RadioGroupHorizontal } from '../../radio/templates/radio-group-horizontal';
+import { RadioItem } from '../../radio/radio-item.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { CheckboxGroupNormal } from '../../checkbox/templates/checkbox-group-normal';
+import { CheckboxItem } from '../../checkbox/checkbox-item.spec';
+import { CheckboxWithLabelAfter } from '../../checkbox/templates/checkbox-with-label-after';
+import { TabStripNormal } from '../../tabstrip/templates/tabstrip-normal';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
 
 
 const style = `

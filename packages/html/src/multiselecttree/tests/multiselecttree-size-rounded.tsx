@@ -1,5 +1,7 @@
-import { Chip, ChipAction } from '../../chip';
-import { MultiSelectTree, MultiSelectTreeNormal } from '..';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { MultiSelectTree } from '../multiselecttree.spec';
+import { MultiSelectTreeNormal } from '../templates/multiselecttree-normal';
 
 
 const styles = `

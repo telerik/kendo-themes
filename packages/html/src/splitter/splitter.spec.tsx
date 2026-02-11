@@ -11,7 +11,7 @@ const options = {};
 export type KendoSplitterProps = {
     orientation?: "vertical" | "horizontal";
     children?: React.ReactNode;
-    panes?: React.JSX.Element[];
+    panes?: React.ReactElement<KendoSplitterPaneProps>[];
 }
 
 const defaultOptions = {
@@ -34,8 +34,8 @@ export const Splitter: KendoComponent<KendoSplitterProps & React.HTMLAttributes<
     if (panes) {
         panes.forEach((pane, index) => {
             const nextPane = panes[index + 1];
-            const paneProps: KendoSplitterPaneProps = pane.props;
-            const nextPaneProps: KendoSplitterPaneProps = nextPane?.props;
+            const paneProps = pane.props as KendoSplitterPaneProps;
+            const nextPaneProps = (nextPane?.props ?? {}) as KendoSplitterPaneProps;
 
             renderedPanes.push(
                 <SplitterPane {...paneProps} key={index} />

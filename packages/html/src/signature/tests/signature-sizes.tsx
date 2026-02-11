@@ -1,4 +1,5 @@
-import { Signature, SignatureNormal } from '../../signature';
+import { Signature } from '../../signature/signature.spec';
+import { SignatureNormal } from '../../signature/templates/signature-normal';
 
 
 const styles = `

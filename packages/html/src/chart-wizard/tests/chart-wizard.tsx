@@ -1,4 +1,4 @@
-import { ChartWizardNormal } from "..";
+import { ChartWizardNormal } from '../templates/chart-wizard-normal';
 
 const styles = `
     #test-area {

@@ -1,11 +1,11 @@
 ﻿import { PDFViewer, KendoPDFViewerProps } from '../pdf-viewer.spec';
 import { PDFViewerPage } from '../pdf-viewer-page';
 import { PDFViewerNormal } from '../templates/pdf-viewer-normal';
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { Combobox } from '../../combobox';
-import { Pager } from '../../pager';
-import { Toolbar } from '../../toolbar';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Combobox } from '../../combobox/combobox.spec';
+import { Pager } from '../../pager/pager.spec';
+import { Toolbar } from '../../toolbar/toolbar.spec';
 
 const options = PDFViewer.options;
 const states = PDFViewer.states;

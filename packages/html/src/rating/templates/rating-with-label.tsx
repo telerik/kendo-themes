@@ -1,4 +1,4 @@
-import { Rating } from "..";
+import { Rating } from '../rating.spec';
 
 export const RatingWithLabel = ({ value = 2.5, max = 5, ...props }: any) =>(
     <Rating

@@ -1,4 +1,4 @@
-import { SvgIcon } from '../../icon';
+import { SvgIcon } from '../../icon/svg-icon';
 import * as SVGIcons from "@progress/kendo-svg-icons";
 
 

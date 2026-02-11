@@ -1,5 +1,14 @@
-import { GridContainer, GridContent, GridHeader, GridHeaderCell, GridHeaderTable, GridTable, GridWithLockedColumns } from '../../grid';
-import { TableThead, TableRow, TableTbody, TableTd } from '../../table';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridTable } from '../grid-table.spec';
+import { GridWithLockedColumns } from '../templates/grid-with-locked-columns';
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
 
 export default () => (
     <>

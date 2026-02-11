@@ -1,4 +1,7 @@
-import { ActionSheet, ActionSheetHeader, ActionSheetItem, ActionSheetItems } from '../../action-sheet';
+import { ActionSheet } from '../../action-sheet/action-sheet.spec';
+import { ActionSheetHeader } from '../actionsheet-header';
+import { ActionSheetItems } from '../actionsheet-items';
+import { ActionSheetItem } from '../actionsheet-item';
 
 export const ActionSheetNormal = ({ title = "Select item", ...other }) => (
     <ActionSheet

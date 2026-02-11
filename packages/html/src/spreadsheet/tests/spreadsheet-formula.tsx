@@ -1,4 +1,8 @@
-import { Spreadsheet, SpreadsheetActionBar, SpreadsheetHeader, SpreadsheetSheetsBar, SpreadsheetView } from "..";
+import { Spreadsheet } from '../spreadsheet.spec';
+import { SpreadsheetActionBar } from '../spreadsheet-action-bar';
+import { SpreadsheetHeader } from '../spreadsheet-header';
+import { SpreadsheetSheetsBar } from '../spreadsheet-sheets-bar';
+import { SpreadsheetView } from '../spreadsheet-view';
 import Button from "../../button/button.spec";
 
 const style = `

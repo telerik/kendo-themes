@@ -1,11 +1,21 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { Icon } from '../../icon';
-import { Popup } from '../../popup';
-import { SkeletonNormal } from '../../skeleton';
-import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridToolbar } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Icon } from '../../icon/icon.spec';
+import { Popup } from '../../popup/popup.spec';
+import { SkeletonNormal } from '../../skeleton/templates/skeleton-normal';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridNormal } from '../templates/grid-normal';
+import { GridToolbar } from '../grid-toolbar.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 
 export default () =>(

@@ -1,12 +1,16 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { DatePicker } from '../../datepicker';
-import { DropdownList } from '../../dropdownlist';
-import { NumericTextbox } from '../../numerictextbox';
-import { Textbox } from '../../textbox';
-import { Toolbar, ToolbarItem } from '../../toolbar';
-import { Filter, FilterToolbar, FilterLines, FilterPreview, FilterItem } from '..';
-
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { Toolbar } from '../../toolbar/toolbar.spec';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
+import { Filter } from '../filter.spec';
+import { FilterPreview } from '../filter-preview';
+import { FilterToolbar } from '../filter-toolbar';
+import { FilterLines } from '../filter-lines';
+import { FilterItem } from '../filter-item';
 
 export default () =>(
     <>

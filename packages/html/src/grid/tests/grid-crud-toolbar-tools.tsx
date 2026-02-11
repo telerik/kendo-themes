@@ -1,12 +1,23 @@
-import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable,} from '..';
-import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { Button } from "../../button";
-import { WindowNormal } from '../../window';
-import { FormField, FormNormal } from '../../form';
-import { TextboxNormal } from '../../textbox';
-import { NumericTextboxNormal } from '../../numerictextbox';
-import { DatePickerNormal } from '../../datepicker';
-import { CheckboxNormal } from '../../checkbox';
+import { Grid } from '../grid.spec';
+import { GridToolbar } from '../grid-toolbar.spec';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Button } from "../../button/button.spec";
+import { WindowNormal } from '../../window/templates/window-normal';
+import { FormField } from '../../form/form-field';
+import { FormNormal } from '../../form/templates/form-normal';
+import { TextboxNormal } from '../../textbox/templates/textbox-normal';
+import { NumericTextboxNormal } from '../../numerictextbox/templates/numerictextbox-normal';
+import { DatePickerNormal } from '../../datepicker/templates/datepicker-normal';
+import { CheckboxNormal } from '../../checkbox/templates/checkbox-normal';
 
 const styles = `
     .k-window {

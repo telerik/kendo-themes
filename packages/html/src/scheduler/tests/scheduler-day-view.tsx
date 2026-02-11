@@ -1,4 +1,5 @@
-import { SchedulerDay, SchedulerFlexDay } from '../';
+import { SchedulerDay } from '../templates/scheduler-day';
+import { SchedulerFlexDay } from '../templates/scheduler-flex-day';
 
 export default () => (
     <>

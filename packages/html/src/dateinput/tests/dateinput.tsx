@@ -1,4 +1,5 @@
-import { DateInput, DateInputNormal } from '..';
+import { DateInput } from '../dateinput.spec';
+import { DateInputNormal } from '../templates/dateinput-normal';
 
 
 const styles = `

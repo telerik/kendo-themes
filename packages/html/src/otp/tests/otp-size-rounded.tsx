@@ -1,4 +1,6 @@
-import { OneTimePasswordGroups, OneTimePasswordGroupsNoSpace, OneTimePasswordInput } from '..';
+import { OneTimePasswordGroups } from '../templates/otp-groups';
+import { OneTimePasswordGroupsNoSpace } from '../templates/otp-groups-no-space';
+import { OneTimePasswordInput } from '../otp-input';
 
 const styles = `
     #test-area {

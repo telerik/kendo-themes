@@ -1,7 +1,9 @@
-import { FloatingLabelNormal } from '..';
-import { Input } from '../../input';
-import { TextareaNormal, TextareaPrefix } from '../../textarea';
-import { TextboxNormal, TextboxPrefix } from '../../textbox';
+import { FloatingLabelNormal } from '../templates/floating-label-normal';
+import { Input } from '../../input/input.spec';
+import { TextareaNormal } from '../../textarea/templates/textarea-normal';
+import { TextareaPrefix } from '../../textarea/templates/textarea-prefix';
+import { TextboxNormal } from '../../textbox/templates/textbox-normal';
+import { TextboxPrefix } from '../../textbox/templates/textbox-prefix';
 
 const styles = `
     #test-area {

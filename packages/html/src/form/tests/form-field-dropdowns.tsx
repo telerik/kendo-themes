@@ -1,9 +1,12 @@
-import { Autocomplete } from '../../autocomplete';
-import { Chip, ChipAction } from '../../chip';
-import { Combobox } from '../../combobox';
-import { DropdownList } from '../../dropdownlist';
-import { MultiSelect } from '../../multiselect';
-import { FormField, FormHorizontal, FormNormal } from '../../form';
+import { Autocomplete } from '../../autocomplete/autocomplete.spec';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { Combobox } from '../../combobox/combobox.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { MultiSelect } from '../../multiselect/multiselect.spec';
+import { FormField } from '../../form/form-field';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormHorizontal } from '../../form/templates/form-horizontal';
 
 
 const styles = `

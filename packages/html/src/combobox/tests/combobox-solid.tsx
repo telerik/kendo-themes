@@ -1,4 +1,5 @@
-import { Combobox, ComboboxNormal } from '../../combobox';
+import { Combobox } from '../../combobox/combobox.spec';
+import { ComboboxNormal } from '../../combobox/templates/combobox-normal';
 
 
 const styles = `

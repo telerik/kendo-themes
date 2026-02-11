@@ -1,4 +1,5 @@
-import { Treeview, TreeviewHierarchy } from '../../treeview';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewHierarchy } from "../../treeview/templates/treeview-hierarchy";
 
 export default () =>(
     <>

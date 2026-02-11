@@ -1,6 +1,10 @@
-import { Popup } from '../../popup';
-import { MenuList, MenuItem, MenuVertical, MenuNormal, MenuListItem, MenuSeparator } from '..';
-
+import { Popup } from '../../popup/popup.spec';
+import { MenuList } from "../menu-list.spec";
+import { MenuListItem } from "../menu-list-item.spec";
+import { MenuNormal } from "../templates/menu-normal";
+import { MenuVertical } from "../templates/menu-vertical";
+import { MenuItem } from "../menu-item.spec";
+import { MenuSeparator } from "../menu-separator.spec";
 
 const style = `
     #test-area section {

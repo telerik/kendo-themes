@@ -1,9 +1,16 @@
-import { FileManagerBreadcrumb, FileManagerListView, FileManagerNormal, FileManagerTreeview, FilePreview } from '../../filemanager';
-import { BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
-import { Icon } from '../../icon';
-import { ListViewItem } from '../../listview';
-import { TreeviewItem } from '../../treeview';
-import { Splitter, SplitterPane } from '../../splitter';
+import { FileManagerTreeview } from '../filemanager-treeview.spec';
+import { FileManagerBreadcrumb } from '../filemanager-breadcrumb.spec';
+import { FilePreview } from '../file-preview';
+import { FileManagerListView } from '../filemanager-listview.spec';
+import { FileManagerNormal } from '../templates/filemanager-normal';
+import { BreadcrumbContainer } from '../../breadcrumb/breadcrumb-container';
+import { BreadcrumbItem } from '../../breadcrumb/breadcrumb-item';
+import { BreadcrumbLink } from '../../breadcrumb/breadcrumb-link';
+import { Icon } from '../../icon/icon.spec';
+import { ListViewItem } from '../../listview/listview-item.spec';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
+import { Splitter } from '../../splitter/splitter.spec';
+import { SplitterPane } from '../../splitter/splitter-pane';
 
 
 export default () =>(

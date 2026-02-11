@@ -1,5 +1,11 @@
-import { ColumnMenuTabbed, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuNormal } from '../../column-menu';
-import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
+import { ColumnMenuTabbed } from '../../column-menu/templates/column-menu-tabbed';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuExpander } from '../../column-menu/column-menu-expander.spec';
+import { FilterMenuNormal } from '../../column-menu/templates/filter-menu-normal';
+import { TabStripNormal } from '../../tabstrip/templates/tabstrip-normal';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
 
 const styles = `
     .k-animation-container,

@@ -1,10 +1,15 @@
-import { ActionButtons } from "../../action-buttons";
-import { IconTextButton, IconButton } from "../../button";
-import { Toolbar } from "../../toolbar";
-import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptView } from "..";
-import { Popup } from "../../popup";
-import { SpeechToTextButton } from "../../speech-to-text-button";
-import { Textarea } from "../../textarea";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { IconButton } from "../../button/templates/icon-button";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { Prompt } from "../prompt.spec";
+import { PromptContent } from "../prompt-content";
+import { PromptHeader } from "../prompt-header";
+import { PromptView } from "../prompt-view";
+import { PromptFooter } from "../prompt-footer";
+import { Popup } from "../../popup/popup.spec";
+import { SpeechToTextButton } from "../../speech-to-text-button/speech-to-text-button.spec";
+import { Textarea } from "../../textarea/textarea.spec";
 
 export const PromptInPopup = (props) => (
     <Popup className="k-prompt-popup">

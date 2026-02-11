@@ -1,9 +1,18 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { Searchbox } from '../../searchbox';
-import { Popup } from '../../popup';
-import { ColumnMenuTabbed, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuMultiCheck, FilterMenuNormal, ColumnMenuMulticheckItem, ColumnMenuMulticheckWrap } from '../../column-menu';
-import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { Searchbox } from '../../searchbox/searchbox.spec';
+import { Popup } from '../../popup/popup.spec';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
+import { ColumnMenuExpander } from '../../column-menu/column-menu-expander.spec';
+import { FilterMenuMultiCheck } from '../../column-menu/templates/filter-menu-multi-check';
+import { FilterMenuNormal } from '../../column-menu/templates/filter-menu-normal';
+import { ColumnMenuTabbed } from '../../column-menu/templates/column-menu-tabbed';
+import { ColumnMenuMulticheckWrap } from '../../column-menu/column-menu-multicheck-wrap';
+import { ColumnMenuMulticheckItem } from '../../column-menu/column-menu-multicheck-item';
+import { TabStripNormal } from '../../tabstrip/templates/tabstrip-normal';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
 
 const styles = `
     .k-animation-container,

@@ -1,15 +1,24 @@
-import { Autocomplete } from '../../autocomplete';
-import { Combobox } from '../../combobox';
-import { DateInput } from '../../dateinput';
-import { DatePicker } from '../../datepicker';
-import { DateTimePicker } from '../../datetimepicker';
-import { DropdownList } from '../../dropdownlist';
-import { MultiSelect } from '../../multiselect';
-import { NumericTextbox } from '../../numerictextbox';
-import { Switch } from '../../switch';
-import { TimePicker } from '../../timepicker';
-import { GridWithEditRow, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { Autocomplete } from '../../autocomplete/autocomplete.spec';
+import { Combobox } from '../../combobox/combobox.spec';
+import { DateInput } from '../../dateinput/dateinput.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { DateTimePicker } from '../../datetimepicker/datetimepicker.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { MultiSelect } from '../../multiselect/multiselect.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Switch } from '../../switch/switch.spec';
+import { TimePicker } from '../../timepicker/timepicker.spec';
+import { GridWithEditRow } from '../templates/grid-with-edit-row';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 
 export default () =>(

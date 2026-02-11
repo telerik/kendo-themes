@@ -2,7 +2,7 @@
 import { OneTimePasswordNoSpace } from '../templates/otp-no-space';
 import { OneTimePasswordGroups } from '../templates/otp-groups';
 import { OneTimePasswordGroupsNoSpace } from '../templates/otp-groups-no-space';
-import { Textbox } from '../../textbox';
+import { Textbox } from '../../textbox/textbox.spec';
 
 const options = Textbox.options;
 const states = Textbox.states;
