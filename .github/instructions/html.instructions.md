@@ -15,6 +15,31 @@ React component specifications and HTML templates for visual testing and documen
 
 **Tech Stack:** TypeScript, React, TSX, ESBuild, Jest
 
+## Important Guidelines
+
+⚠️ **Bundle Size Optimization**: Always import from specific component files, NOT from index files.
+
+## Code Review Guidelines
+
+When reviewing code changes in the HTML package, **always check imports** and report violations:
+
+### Import Violations to Flag:
+- ❌ `from '../../button'` or `from "../../button"` - missing file name (uses index)
+- ❌ `from '../../button/'` or `from "../../button/"` - trailing slash (uses index)
+- ❌ `from '../../button/index'` or `from "../../button/index"` - explicit index import
+- ❌ `from '..'` or `from ".."` - parent directory (uses index)
+- ❌ `from '../'` or `from "../"` - parent directory with trailing slash (uses index)
+- ❌ `from '.'` or `from "."` - current directory (uses index)
+- ❌ `from './'` or `from "./"` - current directory with trailing slash (uses index)
+- ✅ `from '../../button/button.spec'` or `from "../../button/button.spec"` - correct specific file import
+- ✅ `from '../wizard-steps'` or `from "../wizard-steps"` - correct direct file import (not a directory)
+
+**Required Check**: For every import from `../../[component-name]` without a file path, verify that the imported path is:
+1. A **specific file** (e.g., `button.spec`, `toolbar-popup.spec`)
+2. NOT a **directory** that contains an index file
+
+Report any violations with: "Bundle size issue: Import uses barrel file. Change `from '../../X'` to `from '../../X/X.spec'` or specific file."
+
 ## Package Structure
 
 ```
@@ -71,6 +96,7 @@ export interface ButtonProps {
 
 **Naming Convention**:
 - Use descriptive file names: `card-normal.tsx`, `card-horizontal.tsx`
+- Standard template naming: `[component]-normal.tsx` (e.g., `ButtonNormal` comes from `templates/button-normal.tsx`)
 - Export from component's `index.ts`
 
 **Example**:
