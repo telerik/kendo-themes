@@ -84,7 +84,25 @@ module.exports = [
             "@typescript-eslint/no-non-null-assertion": "off",
             "@typescript-eslint/no-unused-vars": ["error", {"varsIgnorePattern": "^_"}],
             "no-unused-vars": "off",
-            "no-undef": 'off'
+            "no-undef": 'off',
+            "no-restricted-imports": ["error", {
+                "patterns": [
+                    {
+                        "group": ["*/index", "*/index.ts", "*/index.tsx", "**/index", "**/index.ts", "**/index.tsx"],
+                        "message": "Import from specific files instead of index to reduce bundle size. Use the specific component file (e.g., '../../button/button.spec' instead of '../../button/index')."
+                    }
+                ]
+            }]
+        }
+    },
+    {
+        name: "html-components-index-exception",
+        files: [
+            "packages/html/src/index.ts",
+            "packages/html/src/*/index.ts"
+        ],
+        rules: {
+            "no-restricted-imports": "off"
         }
     }
 ]
