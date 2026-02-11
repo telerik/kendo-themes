@@ -1,5 +1,5 @@
 
-import { AnimationContainer } from '../../animation-container';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
 
 const style = `
     .k-animation-container {

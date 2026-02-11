@@ -1,4 +1,5 @@
-import { CardBody, CardHeader } from '../../card';
+import { CardBody } from '../../card/card-body';
+import { CardHeader } from '../../card/card-header';
 import TaskBoardCard from '../taskboard-card';
 import TaskBoardColumn from '../taskboard-column';
 

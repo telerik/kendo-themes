@@ -1,7 +1,11 @@
-import { PivotGridConfigurator, PivotGridNormal } from "..";
-import { ChipList, Chip, ChipAction } from "../../chip";
-import { Form } from "../../form";
-import { Treeview, TreeviewItem } from "../../treeview";
+import { PivotGridConfigurator } from "../../pivotgrid/pivotgrid-configurator";
+import { PivotGridNormal } from "./pivotgrid-normal";
+import { ChipList } from "../../chip/chip-list.spec";
+import { Chip } from "../../chip/chip.spec";
+import { ChipAction } from "../../chip/chip-action";
+import { Form } from "../../form/form.spec";
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
 
 export const PivotGridWithConfiguratorOpened = ({ formOrientation = "vertical", ...other }) => (
     <PivotGridNormal

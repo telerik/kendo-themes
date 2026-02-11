@@ -1,4 +1,4 @@
-import { ImageEditorResize } from '..';
+import { ImageEditorResize } from '../templates/imageeditor-resize';
 
 
 export default () =>(

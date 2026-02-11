@@ -1,4 +1,9 @@
-import { TabStripBottom, TabStripContent, TabStripItem, TabStripLeft, TabStripNormal, TabStripRight } from '..';
+import { TabStripBottom } from '../templates/tabstrip-bottom';
+import { TabStripContent } from '../tabstrip-content';
+import { TabStripItem } from '../tabstrip-item';
+import { TabStripLeft } from '../templates/tabstrip-left';
+import { TabStripNormal } from '../templates/tabstrip-normal';
+import { TabStripRight } from '../templates/tabstrip-right';
 
 
 export default () => (

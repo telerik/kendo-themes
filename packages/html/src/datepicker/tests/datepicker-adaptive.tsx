@@ -1,4 +1,4 @@
-import { DatePickerAdaptive } from '../../datepicker';
+import { DatePickerAdaptive } from '../../datepicker/templates/datepicker-adaptive';
 
 const styles = `
     #test-area {

@@ -1,5 +1,5 @@
-import { ColorEditor } from "../../coloreditor";
-import { ColorPicker } from "..";
+import { ColorEditor } from "../../coloreditor/color-editor.spec";
+import { ColorPicker } from "../colorpicker.spec";
 
 export const ColorPickerPopupPalette = ({ value = "fuchsia", color = "fuchsia", currentColor = "fuchsia", ...other }: any) => (
     <ColorPicker

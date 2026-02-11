@@ -1,10 +1,11 @@
-import { WindowNormal } from '../../window';
-import { Button } from '../../button';
-import { FormNormal, FormField } from '../../form';
-import { Textbox } from '../../textbox';
-import { DropdownList } from '../../dropdownlist';
-import { UploadNormal } from '../../upload';
-import { DropzoneNormal } from '../../dropzone';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Button } from '../../button/button.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { Textbox } from '../../textbox/textbox.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { UploadNormal } from '../../upload/templates/upload-normal';
+import { DropzoneNormal } from '../../dropzone/templates/dropzone-normal';
 
 
 const style = `

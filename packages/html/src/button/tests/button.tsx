@@ -1,4 +1,5 @@
-import { Button, TextButton } from '..';
+import { Button } from '../button.spec';
+import { TextButton } from '../templates/text-button';
 
 
 const styles = `

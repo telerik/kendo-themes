@@ -1,4 +1,9 @@
-import { List, ListItem, ListGroupItem, ListCustomValue, ListContent, ListUl } from "../../list";
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListItem } from '../../list/list-item.spec';
+import { ListCustomValue } from '../../list/list-custom-value';
+import { ListGroupItem } from '../../list/list-group-item';
+import { ListUl } from '../../list/list-ul';
 import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectGroupingCustomValue = ({ value="Custom value", ...other }: any) => (

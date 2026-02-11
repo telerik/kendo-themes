@@ -1,7 +1,10 @@
-import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
-import { Button } from '../../button';
-import { CalendarNormal } from '../../calendar';
-import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
+import { ActionSheet } from '../../action-sheet/action-sheet.spec';
+import { ActionSheetHeader } from '../../action-sheet/actionsheet-header';
+import { ActionSheetFooter } from '../../action-sheet/actionsheet-footer';
+import { Button } from '../../button/button.spec';
+import { CalendarNormal } from '../../calendar/templates/calendar-normal';
+import { TimeSelector } from '../../time-selector/time-selector.spec';
+import { TimeSelectorHeader } from '../../time-selector/time-selector-header';
 
 
 const styles = `

@@ -1,13 +1,12 @@
-import {
-    CalendarInfiniteNormal,
-    CalendarInfiniteYear,
-    CalendarInfiniteDecade,
-    CalendarInfiniteCentury,
-    CalendarInfiniteWeekNumber,
-    CalendarTbody,
-    CalendarTableRow,
-    CalendarCell,
-    CalendarCaptionCell } from '../index';
+import { CalendarInfiniteNormal } from '../templates/calendar-infinite-normal';
+import { CalendarInfiniteYear } from '../templates/calendar-infinite-year';
+import { CalendarInfiniteDecade } from '../templates/calendar-infinite-decade';
+import { CalendarInfiniteCentury } from '../templates/calendar-infinite-century';
+import { CalendarInfiniteWeekNumber } from '../templates/calendar-infinite-week-number';
+import { CalendarTbody } from '../calendar-tbody.spec';
+import { CalendarTableRow } from '../calendar-table-row.spec';
+import { CalendarCell } from '../calendar-cell';
+import { CalendarCaptionCell } from '../calendar-caption-cell.spec';
 
 
 const styles = `

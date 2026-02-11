@@ -1,4 +1,4 @@
-import { MultiSelectPopup } from '..';
+import { MultiSelectPopup } from '../templates/multiselect-popup';
 
 const styles = `
     #test-area {

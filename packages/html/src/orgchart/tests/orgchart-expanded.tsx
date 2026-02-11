@@ -1,4 +1,8 @@
-import { OrgchartVertical, OrgchartNode, OrgchartGroupVertical, OrgchartGroup, OrgchartNodeGroup } from '..';
+import { OrgchartVertical } from '../templates/orgchart-vertical';
+import { OrgchartNode } from '../orgchart-node';
+import { OrgchartGroupVertical } from '../templates/orgchart-group-vertical';
+import { OrgchartGroup } from '../orgchart-group';
+import { OrgchartNodeGroup } from '../orgchart-node-group';
 
 
 const styles = `

@@ -1,5 +1,5 @@
 import FloatingLabel from "../floating-label.spec";
-import { Textbox } from '../../textbox';
+import { Textbox } from '../../textbox/textbox.spec';
 
 export const FloatingLabelNormal = (props) => (
     <FloatingLabel

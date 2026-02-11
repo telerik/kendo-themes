@@ -1,10 +1,10 @@
-import { Button } from '../../button';
-import { SplitButton } from '../../split-button';
-import { MenuButton } from '../../menu-button';
-import { DropdownList } from '../../dropdownlist';
-import { Combobox } from '../../combobox';
-import { ToolbarNormal } from '../../toolbar';
-import { ButtonGroup } from '../../button-group';
+import { Button } from '../../button/button.spec';
+import { SplitButton } from '../../split-button/split-button.spec';
+import { MenuButton } from '../../menu-button/menu-button.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { Combobox } from '../../combobox/combobox.spec';
+import { ToolbarNormal } from '../../toolbar/templates/toolbar-normal';
+import { ButtonGroup } from '../../button-group/button-group.spec';
 
 export default () =>(
     <>

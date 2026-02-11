@@ -1,6 +1,7 @@
-import { Button } from '../../button';
-import { CardBody, CardHeader } from '../../card';
-import { Textbox } from '../../textbox';
+import { Button } from '../../button/button.spec';
+import { CardBody } from '../../card/card-body';
+import { CardHeader } from '../../card/card-header';
+import { Textbox } from '../../textbox/textbox.spec';
 import TaskBoardCard from '../taskboard-card';
 import TaskBoardColumn from '../taskboard-column';
 import TaskBoard from '../taskboard.spec';

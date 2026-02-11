@@ -1,6 +1,8 @@
-import { ListNormal, ListVirtualization, ListItem } from '../../list';
-import { Icon } from '../../icon';
-import { IconButton } from '../../button';
+import { ListItem } from "../../list/list-item.spec";
+import { ListNormal } from "../../list/templates/list-normal";
+import { ListVirtualization } from "../../list/templates/list-virtualization";
+import { Icon } from '../../icon/icon.spec';
+import { IconButton } from '../../button/templates/icon-button';
 
 const style = `
     #test-area {

@@ -1,5 +1,17 @@
-import { TypographyCode, TypographyDisplay1, TypographyDisplay2, TypographyDisplay3, TypographyDisplay4, TypographyH1, TypographyH2, TypographyH3, TypographyH4, TypographyH5, TypographyH6, TypographyP, TypographyPre } from '../../typography';
-import { Button } from '../../button';
+import { TypographyCode } from '../../typography/typography-code.spec';
+import { TypographyDisplay1 } from '../../typography/typography-display1.spec';
+import { TypographyDisplay2 } from '../../typography/typography-display2.spec';
+import { TypographyDisplay3 } from '../../typography/typography-display3.spec';
+import { TypographyDisplay4 } from '../../typography/typography-display4.spec';
+import { TypographyH1 } from '../../typography/typography-h1.spec';
+import { TypographyH2 } from '../../typography/typography-h2.spec';
+import { TypographyH3 } from '../../typography/typography-h3.spec';
+import { TypographyH4 } from '../../typography/typography-h4.spec';
+import { TypographyH5 } from '../../typography/typography-h5.spec';
+import { TypographyH6 } from '../../typography/typography-h6.spec';
+import { TypographyP } from '../../typography/typography-p.spec';
+import { TypographyPre } from '../../typography/typography-pre.spec';
+import { Button } from '../../button/button.spec';
 
 const styles = `
    #test-area {

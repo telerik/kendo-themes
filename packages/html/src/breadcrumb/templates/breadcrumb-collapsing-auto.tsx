@@ -1,5 +1,9 @@
-import { Breadcrumb, BreadcrumbContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink } from "..";
-import { Icon } from "../../icon";
+import { Breadcrumb } from '../breadcrumb.spec';
+import { BreadcrumbContainer } from '../breadcrumb-container';
+import { BreadcrumbItem } from '../breadcrumb-item';
+import { BreadcrumbItemText } from '../breadcrumb-item-text';
+import { BreadcrumbLink } from '../breadcrumb-link';
+import { Icon } from "../../icon/icon.spec";
 
 export const BreadcrumbCollapsingAuto = ({ dir, ...other }: any) => (
     <Breadcrumb

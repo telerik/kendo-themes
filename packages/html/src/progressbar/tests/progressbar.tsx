@@ -1,4 +1,4 @@
-import { ProgressBarNormal } from '../../progressbar';
+import { ProgressBarNormal } from '../../progressbar/templates/progressbar-normal';
 
 
 const style = `

@@ -1,4 +1,5 @@
-import { Captcha, CaptchaNormal } from '../../captcha';
+import { Captcha } from '../captcha.spec';
+import { CaptchaNormal } from '../templates/captcha-normal';
 
 
 export default () =>(

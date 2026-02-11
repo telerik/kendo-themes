@@ -1,10 +1,13 @@
-import { ImageEditor } from "..";
-import { Button } from "../../button";
-import { CheckboxWithLabelAfter } from "../../checkbox";
-import { DropdownList } from "../../dropdownlist";
-import { FormNormal, Fieldset, FormField } from "../../form";
-import { NumericTextbox } from "../../numerictextbox";
-import { ToolbarSeparator, ToolbarItem } from "../../toolbar";
+import { ImageEditor } from '../imageeditor.spec';
+import { Button } from "../../button/button.spec";
+import { CheckboxWithLabelAfter } from "../../checkbox/templates/checkbox-with-label-after";
+import { DropdownList } from "../../dropdownlist/dropdownlist.spec";
+import { FormNormal } from "../../form/templates/form-normal";
+import { Fieldset } from "../../form/fieldset";
+import { FormField } from "../../form/form-field";
+import { NumericTextbox } from "../../numerictextbox/numerictextbox.spec";
+import { ToolbarSeparator } from "../../toolbar/toolbar-separator";
+import { ToolbarItem } from "../../toolbar/toolbar-item.spec";
 
 export const ImageEditorResize = (props: any) => (
     <ImageEditor

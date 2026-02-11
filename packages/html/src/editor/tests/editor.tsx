@@ -1,9 +1,11 @@
-import { EditorNormal, EditorResizable, EditorResponsiveToolbar } from '../../editor';
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { ColorPicker } from '../../colorpicker';
-import { DropdownList } from '../../dropdownlist';
-import { ToolbarItem } from '../../toolbar';
+import { EditorNormal } from '../../editor/templates/editor-normal';
+import { EditorResizable } from '../../editor/templates/editor-resizable';
+import { EditorResponsiveToolbar } from '../../editor/templates/editor-responsive-toolbar';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
 
 
 const styles = `

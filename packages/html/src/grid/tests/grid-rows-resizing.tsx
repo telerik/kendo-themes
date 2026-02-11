@@ -1,7 +1,17 @@
-import { Button } from '../../button';
-import { Searchbox } from '../../searchbox';
-import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
-import { TableRow, TableThead, TableTbody, TableTd } from '../../table';
+import { Button } from '../../button/button.spec';
+import { Searchbox } from '../../searchbox/searchbox.spec';
+import { GridNormal } from "../templates/grid-normal";
+import { GridHeader } from "../grid-header.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridToolbar } from '../grid-toolbar.spec';
+import { TableRow } from '../../table/table-row';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
 
 export default () =>(
     <>

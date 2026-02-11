@@ -1,4 +1,6 @@
-﻿import { ColorEditor, ColorEditorGroup, ColorEditorPaletteGroup, KendoColorEditorProps } from '..';
+﻿import { ColorEditor, KendoColorEditorProps } from '../color-editor.spec';
+import { ColorEditorGroup } from '../templates/coloreditor-group';
+import { ColorEditorPaletteGroup } from '../templates/coloreditor-palette-group';
 
 const options = ColorEditor.options;
 const states = ColorEditor.states;

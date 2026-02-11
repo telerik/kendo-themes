@@ -1,4 +1,5 @@
-import { ColorPalette, ColorPaletteNormal } from '../../colorpalette';
+import { ColorPalette } from '../../colorpalette/colorpalette.spec';
+import { ColorPaletteNormal } from '../../colorpalette/templates/colorpalette-normal';
 
 export default () =>(
     <>

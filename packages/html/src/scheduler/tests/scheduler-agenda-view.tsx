@@ -1,4 +1,5 @@
-import { SchedulerAgenda, SchedulerFlexAgenda } from '../';
+import { SchedulerAgenda } from '../templates/scheduler-agenda';
+import { SchedulerFlexAgenda } from '../templates/scheduler-flex-agenda';
 
 export default () => (
     <>

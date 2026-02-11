@@ -1,5 +1,7 @@
-import { AnimationContainer } from '../../animation-container';
-import { Tooltip, TooltipNormal, TooltipClosable } from '../../tooltip';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
+import { Tooltip } from '../../tooltip/tooltip.spec';
+import { TooltipNormal } from '../../tooltip/templates/tooltip-normal';
+import { TooltipClosable } from '../../tooltip/templates/tooltip-closable';
 
 const style = `
         .k-animation-container {

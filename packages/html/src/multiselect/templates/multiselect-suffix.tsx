@@ -1,5 +1,6 @@
-import { TextButton } from "../../button";
-import { Chip, ChipAction } from "../../chip";
+import { TextButton } from "../../button/templates/text-button";
+import { Chip } from "../../chip/chip.spec";
+import { ChipAction } from "../../chip/chip-action";
 import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectSuffix = (props) => (

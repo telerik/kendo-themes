@@ -1,6 +1,7 @@
-import { Chip, ChipAction } from '../../chip';
-import { Icon } from '../../icon';
-import { Toolbar } from '../../toolbar';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { Icon } from '../../icon/icon.spec';
+import { Toolbar } from '../../toolbar/toolbar.spec';
 
 
 export default () =>(

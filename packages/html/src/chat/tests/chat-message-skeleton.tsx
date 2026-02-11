@@ -1,4 +1,4 @@
-import { ChatMessageSkeleton } from '..';
+import { ChatMessageSkeleton } from '../templates/chat-message-skeleton';
 
 
 const styles = `

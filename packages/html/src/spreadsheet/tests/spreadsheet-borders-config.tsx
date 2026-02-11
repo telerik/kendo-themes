@@ -1,6 +1,6 @@
-import { Button } from '../../button';
-import { ColorEditorPaletteGroup } from '../../coloreditor';
-import { Popup } from '../../popup';
+import { Button } from '../../button/button.spec';
+import { ColorEditorPaletteGroup } from '../../coloreditor/templates/coloreditor-palette-group';
+import { Popup } from '../../popup/popup.spec';
 
 const style = `
     .k-animation-container {

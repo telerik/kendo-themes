@@ -1,16 +1,19 @@
-import { WindowNormal } from '../../window';
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { Textarea } from '../../textarea';
-import { Textbox } from '../../textbox';
-import { DateTimePicker } from '../../datetimepicker';
-import { Combobox } from '../../combobox';
-import { MultiSelect } from '../../multiselect';
-import { FormNormal, FormField } from '../../form';
-import { ButtonGroup } from '../../button-group';
-import { RadioButtonWithLabelAfter, RadioGroupNormal, RadioItem } from '../../radio';
-import { NumericTextbox } from '../../numerictextbox';
-import { DatePicker } from '../../datepicker';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Textarea } from '../../textarea/textarea.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { DateTimePicker } from '../../datetimepicker/datetimepicker.spec';
+import { Combobox } from '../../combobox/combobox.spec';
+import { MultiSelect } from '../../multiselect/multiselect.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { RadioButtonWithLabelAfter } from '../../radio/templates/radio-with-label-after';
+import { RadioGroupNormal } from '../../radio/templates/radio-group-normal';
+import { RadioItem } from '../../radio/radio-item.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
 
 
 const style = `

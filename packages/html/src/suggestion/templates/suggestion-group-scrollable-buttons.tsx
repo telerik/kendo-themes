@@ -1,4 +1,5 @@
-import { SuggestionGroup, Suggestion } from "..";
+import { SuggestionGroup } from '../suggestion-group.spec';
+import { Suggestion } from '../suggestion';
 
 export const SuggestionScrollableButtons = (props: any) => (
     <SuggestionGroup layout="scrollButtons" children={(

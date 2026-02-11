@@ -1,5 +1,5 @@
 import Textbox from "../textbox.spec";
-import { Icon } from '../../icon';
+import { Icon } from '../../icon/icon.spec';
 
 export const TextboxPrefix = (props) => (
     <Textbox

@@ -2,7 +2,8 @@
 import { TaskBoardCard } from '../taskboard-card';
 import { TaskBoardColumn } from '../taskboard-column';
 import { TaskBoardNormal } from '../templates/taskboard-normal';
-import { CardBody, CardHeader } from '../../card';
+import { CardBody } from '../../card/card-body';
+import { CardHeader } from '../../card/card-header';
 
 const options = TaskBoard.options;
 const states = TaskBoard.states;

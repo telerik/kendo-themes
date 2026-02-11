@@ -1,4 +1,6 @@
-import { SkeletonCircle, SkeletonNormal, SkeletonRectangle } from '../../skeleton';
+import { SkeletonCircle } from '../../skeleton/templates/skeleton-circle';
+import { SkeletonNormal } from '../../skeleton/templates/skeleton-normal';
+import { SkeletonRectangle } from '../../skeleton/templates/skeleton-rectangle';
 
 const style = `
     .k-skeleton-container {

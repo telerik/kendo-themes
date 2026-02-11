@@ -1,4 +1,7 @@
-import { TabStripClosable, TabStripContent, TabStripItem, TabStripNormal } from '..';
+import { TabStripClosable } from '../templates/tabstrip-closable';
+import { TabStripContent } from '../tabstrip-content';
+import { TabStripItem } from '../tabstrip-item';
+import { TabStripNormal } from '../templates/tabstrip-normal';
 
 export default () => (
     <>

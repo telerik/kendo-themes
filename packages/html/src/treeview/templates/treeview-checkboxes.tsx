@@ -1,4 +1,6 @@
-import { Treeview, TreeviewItem, TreeviewGroup } from "../../treeview";
+import { Treeview } from "../../treeview/treeview.spec";
+import { TreeviewItem  } from "../../treeview/treeview-item.spec";
+import { TreeviewGroup } from "../../treeview/treeview-group";
 
 export const TreeviewCheckboxes = ({ children, ...other }: any) => (
     <Treeview {...other}>

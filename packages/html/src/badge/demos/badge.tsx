@@ -1,6 +1,6 @@
 ﻿import { Badge, KendoBadgeProps } from '../badge.spec';
-import { Icon } from '../../icon';
-import { AvatarIcon } from '../../avatar';
+import { Icon } from '../../icon/icon.spec';
+import { AvatarIcon } from '../../avatar/templates/avatar-icon';
 
 const options = Badge.options;
 const states = Badge.states;

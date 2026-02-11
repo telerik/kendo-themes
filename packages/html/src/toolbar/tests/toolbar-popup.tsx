@@ -1,5 +1,7 @@
-import { MenuListItem, MenuSeparator, MenuList } from '../../menu';
-import { ToolbarPopup } from '../../toolbar';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
+import { MenuList } from '../../menu/menu-list.spec';
+import { MenuSeparator } from '../../menu/menu-separator.spec';
+import { ToolbarPopup } from '../../toolbar/toolbar-popup.spec';
 
 
 const style = `

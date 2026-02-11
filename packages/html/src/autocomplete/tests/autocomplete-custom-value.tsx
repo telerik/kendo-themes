@@ -1,4 +1,5 @@
-import { AutocompleteCustomValue, AutocompleteGroupingModernCustomValue } from '..';
+import { AutocompleteCustomValue } from '../templates/autocomplete-custom-value';
+import { AutocompleteGroupingModernCustomValue } from '../templates/autocomplete-grouping-modern-custom-value';
 
 const styles = `
     #test-area {

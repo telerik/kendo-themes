@@ -1,4 +1,4 @@
-import { DatePickerPopup } from '../../datepicker';
+import { DatePickerPopup } from '../../datepicker/templates/datepicker-popup';
 
 const styles = `
     #test-area {

@@ -1,4 +1,8 @@
-import { List, ListItem, ListGroupItem, ListContent, ListUl } from "..";
+import { List } from '../list.spec';
+import { ListItem } from '../list-item.spec';
+import { ListGroupItem } from '../list-group-item';
+import { ListContent } from '../list-content';
+import { ListUl } from '../list-ul';
 
 export const ListWithGrouping = ({ children, ...other }: any) => (
     <List header="Group 1" {...other}>

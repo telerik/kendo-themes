@@ -1,4 +1,10 @@
-import { List, ListWithGrouping, VirtualListWithGrouping, ListItem, ListGroupItem, ListContent, ListUl } from '../../list';
+import { List } from '../../list/list.spec';
+import { ListWithGrouping } from '../../list/templates/list-grouping';
+import { VirtualListWithGrouping } from '../../list/templates/list-virtualization-grouping';
+import { ListItem } from '../../list/list-item.spec';
+import { ListGroupItem } from '../../list/list-group-item';
+import { ListContent } from '../../list/list-content';
+import { ListUl } from '../../list/list-ul';
 
 const style = `
     .k-virtual-list > .k-item,

@@ -1,6 +1,11 @@
-import { Checkbox } from '../../checkbox';
-import { GridNormal, GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTh, TableTd } from '../../table';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { GridNormal } from "../templates/grid-normal";
+import { GridTable } from "../grid-table.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTh } from '../../table/table-th.spec';
+import { TableTd } from '../../table/table-td';
 
 
 const styles = `

@@ -1,14 +1,23 @@
-import { GridContainer, GridContent, GridFooter, GridFooterTable, GridPager, GridTable, GridToolbar } from '..';
-import { TableTbody, TableRow, TableTd, TableTfoot } from '../../table';
-import { Textbox } from '../../textbox';
-import { DropdownList } from '../../dropdownlist';
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridPager } from "../grid-pager.spec";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { GridFooterTable } from "../grid-footer-table.spec";
+import { GridFooter } from "../grid-footer.spec";
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { TableTfoot } from '../../table/table-tfoot';
+import { Textbox } from '../../textbox/textbox.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
 import { GridStack } from '../templates/grid-stack';
-import { Button } from '../../button';
-import { Icon } from '../../icon';
+import { Button } from '../../button/button.spec';
+import { Icon } from '../../icon/icon.spec';
 import GridStackCell from '../grid-stack-cell.spec';
 import GridStackRow from '../grid-stack-row.spec';
-import { CheckboxWithLabelAfter } from '../../checkbox';
-import { ToolbarItem } from '../../toolbar';
+import { CheckboxWithLabelAfter } from '../../checkbox/templates/checkbox-with-label-after';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
 
 export default () =>(
     <>

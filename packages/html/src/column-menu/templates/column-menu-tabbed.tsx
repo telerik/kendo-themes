@@ -1,5 +1,7 @@
-import { ColumnMenu } from "../../column-menu";
-import { TabStripNormal, TabStripContent, TabStripItem } from "../../tabstrip";
+import { ColumnMenu } from "../../column-menu/column-menu.spec";
+import { TabStripNormal } from "../../tabstrip/templates/tabstrip-normal";
+import { TabStripContent } from "../../tabstrip/tabstrip-content";
+import { TabStripItem } from "../../tabstrip/tabstrip-item";
 
 export const ColumnMenuTabbed = (props) => (
     <ColumnMenu

@@ -1,4 +1,6 @@
-import { MultiSelectCustomValue, MultiSelectGroupingCustomValue, MultiSelectGroupingVirtualCustomValue } from '..';
+import { MultiSelectCustomValue } from '../templates/multiselect-custom-value';
+import { MultiSelectGroupingCustomValue } from '../templates/multiselect-grouping-custom-value';
+import { MultiSelectGroupingVirtualCustomValue } from '../templates/multiselect-grouping-virtual-custom-value';
 
 const styles = `
     #test-area {

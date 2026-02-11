@@ -1,6 +1,9 @@
-import { MaskedTextbox, MaskedTextboxNormal, MaskedTextboxPrefix, MaskedTextboxSuffix } from '..';
-import { TextButton } from '../../button';
-import { Icon } from '../../icon';
+import { MaskedTextbox } from '../../maskedtextbox/maskedtextbox.spec';
+import { MaskedTextboxNormal } from '../templates/maskedtextbox-normal';
+import { MaskedTextboxPrefix } from '../templates/maskedtextbox-prefix';
+import { MaskedTextboxSuffix } from '../templates/maskedtextbox-suffix';
+import { TextButton } from '../../button/templates/text-button';
+import { Icon } from '../../icon/icon.spec';
 
 const styles = `
     #test-area {

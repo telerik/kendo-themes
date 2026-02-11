@@ -1,4 +1,5 @@
-import { DataTable, TableNative } from '../../table';
+import { DataTable } from '../../table/data-table.spec';
+import { TableNative } from '../templates/table-native';
 
 const styles = `
 #test-area {

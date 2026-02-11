@@ -1,6 +1,6 @@
-import { ContextMenuNormal } from "../../context-menu";
-import { MenuListItem } from "../../menu";
-import { Popup } from "../../popup";
+import { ContextMenuNormal } from "../../context-menu/templates/context-menu-normal";
+import { MenuListItem } from "../../menu/menu-list-item.spec";
+import { Popup } from "../../popup/popup.spec";
 import { PromptInline } from "../templates/prompt-inline";
 import { PromptInlineInputOnly } from "../templates/prompt-inline-input-only";
 

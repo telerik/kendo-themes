@@ -1,4 +1,4 @@
-import { BadgeNormal } from '..';
+import { BadgeNormal } from '../templates/badge-normal';
 
 
 const styles = `

@@ -1,11 +1,15 @@
-import { Filter, FilterToolbar, FilterLines, FilterItem } from "../../filter";
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { DatePicker } from '../../datepicker';
-import { DropdownList } from '../../dropdownlist';
-import { NumericTextbox } from '../../numerictextbox';
-import { Textbox } from '../../textbox';
-import { Toolbar, ToolbarItem } from '../../toolbar';
+import { Filter } from '../filter.spec';
+import { FilterToolbar } from '../filter-toolbar';
+import { FilterLines } from '../filter-lines';
+import { FilterItem } from '../filter-item';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { Toolbar } from '../../toolbar/toolbar.spec';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
 
 export const FilterNormal = ({ children, ...other }: any) => (
     <Filter {...other}>

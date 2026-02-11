@@ -1,7 +1,20 @@
-import { Icon } from "../../icon";
-import { Chip, ChipList, ChipAction } from "../../chip";
-import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable, GridStickyContainer } from "../../grid";
-import { TableThead, TableRow, TableTd, TableTbody } from "../../table";
+import { Icon } from "../../icon/icon.spec";
+import { Chip } from "../../chip/chip.spec";
+import { ChipList } from "../../chip/chip-list.spec";
+import { ChipAction } from "../../chip/chip-action";
+import { Grid } from "../grid.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridGroupingHeader } from "../grid-grouping-header.spec";
+import { GridStickyContainer } from "../grid-sticky-container.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { TableTbody } from '../../table/table-tbody';
 
 export default () => (
   <>

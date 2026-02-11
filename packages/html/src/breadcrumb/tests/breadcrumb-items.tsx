@@ -1,6 +1,13 @@
-import { Icon } from '../../icon';
-import { Textbox } from '../../textbox';
-import { BreadcrumbCollapsingAuto, BreadcrumbCollapsingWrap, BreadcrumbContainer, BreadcrumbInputContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbRootItemContainer } from '..';
+import { Icon } from '../../icon/icon.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { BreadcrumbContainer } from '../breadcrumb-container';
+import { BreadcrumbInputContainer } from '../breadcrumb-input-container';
+import { BreadcrumbRootItemContainer } from '../breadcrumb-root-item-container';
+import { BreadcrumbItem } from '../breadcrumb-item';
+import { BreadcrumbItemText } from '../breadcrumb-item-text';
+import { BreadcrumbLink } from '../breadcrumb-link';
+import { BreadcrumbCollapsingAuto } from '../templates/breadcrumb-collapsing-auto';
+import { BreadcrumbCollapsingWrap } from '../templates/breadcrumb-collapsing-wrap';
 
 
 export default () =>(

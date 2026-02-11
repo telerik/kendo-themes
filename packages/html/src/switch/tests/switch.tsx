@@ -1,4 +1,6 @@
-import { Switch, SwitchNormal, SwitchChecked } from '../../switch';
+import { Switch } from "../../switch/switch.spec";
+import { SwitchChecked } from "../templates/switch-checked";
+import { SwitchNormal } from "../templates/switch-normal";
 
 const styles = `
     body {

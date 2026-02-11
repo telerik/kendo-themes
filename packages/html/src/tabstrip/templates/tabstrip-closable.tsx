@@ -1,4 +1,6 @@
-import { TabStrip, TabStripContent, TabStripItem } from "..";
+import { TabStrip } from '../tabstrip.spec';
+import { TabStripContent } from '../tabstrip-content';
+import { TabStripItem } from '../tabstrip-item';
 
 export const TabStripClosable = ({ children, ...other }: any) => (
     <TabStrip

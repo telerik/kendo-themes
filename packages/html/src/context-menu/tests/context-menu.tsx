@@ -1,5 +1,5 @@
-import { MenuListItem } from '../../menu';
-import { Popup } from '../../popup';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
+import { Popup } from '../../popup/popup.spec';
 import { ContextMenuNormal } from '../templates/context-menu-normal';
 
 

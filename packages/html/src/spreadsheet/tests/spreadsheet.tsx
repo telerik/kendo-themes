@@ -1,4 +1,8 @@
-import { SpreadsheetActionBar, SpreadsheetHeader, SpreadsheetSheetsBar, SpreadsheetView, SpreadsheetNormal } from "..";
+import { SpreadsheetActionBar } from '../spreadsheet-action-bar';
+import { SpreadsheetHeader } from '../spreadsheet-header';
+import { SpreadsheetSheetsBar } from '../spreadsheet-sheets-bar';
+import { SpreadsheetView } from '../spreadsheet-view';
+import { SpreadsheetNormal } from '../templates/spreadsheet-normal';
 
 const style = `
     #test-area {

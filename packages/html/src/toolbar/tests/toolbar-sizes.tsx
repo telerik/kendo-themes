@@ -1,8 +1,11 @@
-import { Button } from '../../button';
-import { ColorPicker } from '../../colorpicker';
-import { Switch } from '../../switch';
-import { ButtonGroup } from '../../button-group';
-import { ToolbarItem, ToolbarSeparator, ToolbarResizable, Toolbar } from '../../toolbar';
+import { Button } from '../../button/button.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { Switch } from '../../switch/switch.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Toolbar } from '../../toolbar/toolbar.spec';
+import { ToolbarResizable } from '../../toolbar/templates/toolbar-resizable';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
 
 
 export default () =>(

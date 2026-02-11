@@ -1,4 +1,4 @@
-import { DropdownList } from '..';
+import { DropdownList } from '../dropdownlist.spec';
 
 
 const styles = `

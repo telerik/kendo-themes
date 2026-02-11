@@ -1,8 +1,10 @@
 ﻿import { Combobox, KendoComboboxProps } from '../combobox.spec';
 import { ComboboxNormal } from '../templates/combobox-normal';
-import { Icon } from '../../icon';
-import { IconButton } from '../../button';
-import { List, ListContent, ListItem } from '../../list';
+import { Icon } from '../../icon/icon.spec';
+import { IconButton } from '../../button/templates/icon-button';
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListItem } from '../../list/list-item.spec';
 
 const states = Combobox.states;
 const defaults = Combobox.defaultOptions;

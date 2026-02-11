@@ -1,10 +1,15 @@
-import { ActionButtons } from "../../action-buttons";
-import { IconButton, IconTextButton } from "../../button";
-import { Card, CardBody } from "../../card";
-import { Popup } from "../../popup";
-import { Prompt, PromptContent, PromptView, PromptSendButton } from "../../prompt";
-import { SpeechToTextButton } from "../../speech-to-text-button";
-import { Textarea } from "../../textarea";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { IconButton } from "../../button/templates/icon-button";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { Card } from "../../card/card.spec";
+import { CardBody } from "../../card/card-body";
+import { Popup } from "../../popup/popup.spec";
+import { Prompt } from "../prompt.spec";
+import { PromptContent } from "../prompt-content";
+import { PromptView } from "../prompt-view";
+import { PromptSendButton } from "../prompt-send-button";
+import { SpeechToTextButton } from "../../speech-to-text-button/speech-to-text-button.spec";
+import { Textarea } from "../../textarea/textarea.spec";
 
 const styles = `
     .k-animation-container:first-child {

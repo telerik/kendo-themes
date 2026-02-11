@@ -1,4 +1,4 @@
-import { Chip } from '../../chip';
+import { Chip } from '../../chip/chip.spec';
 import { ChipAvatar } from '../templates/chip-avatar';
 import { ChipIcon } from '../templates/chip-icon';
 import { ChipNormal } from '../templates/chip-normal';

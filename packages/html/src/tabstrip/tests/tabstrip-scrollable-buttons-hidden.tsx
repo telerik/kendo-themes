@@ -1,4 +1,6 @@
-import { TabStripContent, TabStripItem, TabStripScrollableButtonsHidden } from '..';
+import { TabStripContent } from '../tabstrip-content';
+import { TabStripItem } from '../tabstrip-item';
+import { TabStripScrollableButtonsHidden } from '../templates/tabstrip-scrollable-buttons-hidden';
 
 const style = ``;
 

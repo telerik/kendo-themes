@@ -1,7 +1,7 @@
 ﻿import { MaskedTextbox, KendoMaskedTextboxProps } from '../maskedtextbox.spec';
 import { MaskedTextboxNormal } from '../templates/maskedtextbox-normal';
-import { Icon } from '../../icon';
-import { DropdownList } from '../../dropdownlist';
+import { Icon } from '../../icon/icon.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
 
 const states = MaskedTextbox.states;
 const defaults = MaskedTextbox.defaultOptions;

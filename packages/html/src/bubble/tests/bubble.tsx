@@ -1,4 +1,6 @@
-import { BubbleNormal, BubbleExpandable, BubbleExpanded } from '../../bubble';
+import { BubbleNormal } from '../templates/bubble-normal';
+import { BubbleExpanded } from '../templates/bubble-expanded';
+import { BubbleExpandable } from '../templates/bubble-expandable';
 
 export default () =>(
     <>

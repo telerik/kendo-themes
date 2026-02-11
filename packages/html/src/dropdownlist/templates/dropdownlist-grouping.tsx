@@ -1,4 +1,8 @@
-import { List, ListContent, ListUl, ListItem, ListGroupItem } from "../../list";
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListItem } from '../../list/list-item.spec';
+import { ListUl } from '../../list/list-ul';
+import { ListGroupItem } from '../../list/list-group-item';
 import DropdownList from "../dropdownlist.spec";
 
 export const DropdownListGrouping = (props) => (

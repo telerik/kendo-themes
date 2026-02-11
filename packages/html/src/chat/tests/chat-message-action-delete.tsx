@@ -1,7 +1,9 @@
-import { ChatMessage, ChatNormal, ChatMessageGroup } from '..';
-import { Popup } from '../../popup';
-import { MenuListItem } from '../../menu';
-import { ContextMenu } from '../../context-menu';
+import { ChatMessage } from '../chat-message';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatMessageGroup } from '../chat-message-group';
+import { Popup } from '../../popup/popup.spec';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
+import { ContextMenu } from '../../context-menu/context-menu.spec';
 
 const styles = `
     #test-area {

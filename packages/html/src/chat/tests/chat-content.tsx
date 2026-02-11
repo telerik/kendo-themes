@@ -1,5 +1,8 @@
-import { Card, CardBody } from '../../card';
-import { ChatMessage, ChatMessageGroup, ChatNormal } from '..';
+import { Card } from '../../card/card.spec';
+import { CardBody } from '../../card/card-body';
+import { ChatNormal } from "../templates/chat-normal";
+import { ChatMessage } from "../chat-message";
+import { ChatMessageGroup } from "../chat-message-group";
 
 
 const styles = `

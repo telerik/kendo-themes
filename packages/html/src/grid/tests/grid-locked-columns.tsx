@@ -1,7 +1,19 @@
-import { Checkbox } from '../../checkbox';
-import { Icon } from '../../icon';
-import { GridWithLockedColumns, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
-import { TableThead, TableTbody, TableTfoot, TableRow, TableTd } from '../../table';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Icon } from '../../icon/icon.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridTable } from '../grid-table.spec';
+import { GridWithLockedColumns } from '../templates/grid-with-locked-columns';
+import { GridFooter } from '../grid-footer.spec';
+import { GridFooterTable } from '../grid-footer-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTfoot } from '../../table/table-tfoot';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 const styles = `
     /* These overrides are needed for the "Angular Grid with locked columns, Grouping and Multiline headers" example ->

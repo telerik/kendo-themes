@@ -1,4 +1,5 @@
-import { FileManagerDragHint, FileManagerNormal } from '../../filemanager';
+import { FileManagerNormal } from '../../filemanager/templates/filemanager-normal';
+import { FileManagerDragHint } from '../../filemanager/filemanager-drag-hint';
 
 
 const styles = `

@@ -1,4 +1,8 @@
-import { PivotGrid, PivotGridCell, PivotGridRow, PivotGridTable, PivotGridTbody } from '..';
+import { PivotGrid } from '../pivotgrid.spec';
+import { PivotGridCell } from '../pivotgrid-cell';
+import { PivotGridRow } from '../pivotgrid-row';
+import { PivotGridTable } from '../pivotgrid-table';
+import { PivotGridTbody } from '../pivotgrid-tbody';
 
 
 export default () => (

@@ -1,4 +1,4 @@
-import { ComboboxPopup } from '../../combobox';
+import { ComboboxPopup } from '../../combobox/templates/combobox-popup';
 
 const styles = `
     #test-area {

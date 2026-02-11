@@ -1,4 +1,4 @@
-import { ComboboxAdaptive } from '../../combobox';
+import { ComboboxAdaptive } from '../../combobox/templates/combobox-adaptive';
 
 const styles = `
     #test-area {

@@ -1,7 +1,9 @@
-import { Textarea } from '../../textarea';
-import { Textbox } from '../../textbox';
-import { FormField, Fieldset, FormNormal, FormHorizontal } from '../../form';
-
+import { Textarea } from '../../textarea/textarea.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { FormField } from '../../form/form-field';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormHorizontal } from '../../form/templates/form-horizontal';
+import { Fieldset } from '../fieldset';
 
 const styles = `
     section {

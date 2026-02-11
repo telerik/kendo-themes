@@ -1,7 +1,7 @@
-import { ContextMenuNormal } from '../../context-menu';
-import { FileManagerNormal } from '../../filemanager';
-import { MenuListItem } from '../../menu';
-import { Popup } from '../../popup';
+import { ContextMenuNormal } from '../../context-menu/templates/context-menu-normal';
+import { FileManagerNormal } from '../../filemanager/templates/filemanager-normal';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
+import { Popup } from '../../popup/popup.spec';
 
 
 const styles = `

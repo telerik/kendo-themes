@@ -1,5 +1,7 @@
-import { MultiSelectTreeFiltering, MultiSelectTreePopup } from '..';
-import { Chip, ChipAction } from '../../chip';
+import { MultiSelectTreePopup } from "../templates/multiselecttree-popup";
+import { MultiSelectTreeFiltering } from "../templates/multiselecttree-filtering";
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
 
 const styles = `
     #test-area {

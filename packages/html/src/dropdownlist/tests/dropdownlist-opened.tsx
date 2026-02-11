@@ -1,4 +1,4 @@
-import { DropdownListPopup } from '../../dropdownlist';
+import { DropdownListPopup } from '../../dropdownlist/templates/dropdownlist-popup';
 
 
 const styles = `

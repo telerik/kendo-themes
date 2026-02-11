@@ -1,4 +1,4 @@
-import { TimelineNormalAlternating } from '../../timeline';
+import { TimelineNormalAlternating } from '../../timeline/templates/timeline-normal-alternating';
 
 const style = ``;
 

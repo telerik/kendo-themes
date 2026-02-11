@@ -1,4 +1,4 @@
-import { GanttRowReordering } from '..';
+import { GanttRowReordering } from '../templates/gantt-row-reordering';
 
 
 export default () => (

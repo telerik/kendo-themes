@@ -1,6 +1,12 @@
-import { ChatMessage, ChatNormal, ChatMessageGroup, ChatTimestamp, ChatMessageReference, ChatHeader } from '..';
-import { ToolbarItem } from '../../toolbar';
-import { FileBoxWrapper, FileBox } from '../../file-box';
+import { ChatMessage } from '../chat-message';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatMessageGroup } from '../chat-message-group';
+import { ChatTimestamp } from '../chat-timestamp';
+import { ChatMessageReference } from '../chat-message-reference';
+import { ChatHeader } from '../chat-header';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
+import { FileBoxWrapper } from '../../file-box/file-box-wrapper.spec';
+import { FileBox } from '../../file-box/file-box.spec';
 
 const styles = `
     .k-chat {

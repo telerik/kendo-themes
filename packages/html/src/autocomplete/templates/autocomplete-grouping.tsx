@@ -1,5 +1,9 @@
 import Autocomplete from "../autocomplete.spec";
-import { List, ListContent, ListUl, ListItem, ListGroupItem } from "../../list";
+import { List } from "../../list/list.spec";
+import { ListContent } from "../../list/list-content";
+import { ListUl } from "../../list/list-ul";
+import { ListItem } from "../../list/list-item.spec";
+import { ListGroupItem } from "../../list/list-group-item";
 
 export const AutocompleteGrouping = (props) => (
     <Autocomplete

@@ -1,4 +1,9 @@
-import { RadioGroup, RadioItem, RadioButtonWithLabelAfter, RadioButtonInsideLabel, RadioGroupNormal, RadioGroupHorizontal } from '../../radio';
+import { RadioGroup } from '../../radio/radio-group.spec';
+import { RadioItem } from '../../radio/radio-item.spec';
+import { RadioButtonWithLabelAfter } from '../../radio/templates/radio-with-label-after';
+import { RadioButtonInsideLabel } from '../../radio/templates/radio-inside-label';
+import { RadioGroupNormal } from '../../radio/templates/radio-group-normal';
+import { RadioGroupHorizontal } from '../../radio/templates/radio-group-horizontal';
 
 const styles = `
     #test-area {

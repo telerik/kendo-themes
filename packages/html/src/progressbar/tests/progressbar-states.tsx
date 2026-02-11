@@ -1,4 +1,5 @@
-import { ProgressBar, ProgressBarNormal } from '../../progressbar';
+import { ProgressBar } from '../../progressbar/progressbar.spec';
+import { ProgressBarNormal } from '../../progressbar/templates/progressbar-normal';
 
 const style = `
     .k-progressbar-indeterminate,

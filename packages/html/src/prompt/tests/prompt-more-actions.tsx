@@ -1,4 +1,4 @@
-import { Popup } from "../../popup";
+import { Popup } from "../../popup/popup.spec";
 import { PromptMoreActions } from "../templates/prompt-more-actions";
 
 const styles = `

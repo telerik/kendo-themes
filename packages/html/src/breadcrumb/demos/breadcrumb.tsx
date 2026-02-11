@@ -3,7 +3,7 @@ import { BreadcrumbContainer } from '../breadcrumb-container';
 import { BreadcrumbItem } from '../breadcrumb-item';
 import { BreadcrumbItemText } from '../breadcrumb-item-text';
 import { BreadcrumbLink } from '../breadcrumb-link';
-import { Icon } from '../../icon';
+import { Icon } from '../../icon/icon.spec';
 
 const options = Breadcrumb.options;
 const states = Breadcrumb.states;

@@ -1,5 +1,5 @@
-import { Badge } from "..";
-import { Icon } from "../../icon";
+import { Badge } from "../badge.spec";
+import { Icon } from "../../icon/icon.spec";
 
 export const IconBadge = (props) =>
     <Badge

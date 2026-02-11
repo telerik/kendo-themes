@@ -1,4 +1,4 @@
-import { SplitButtonPopup } from '../../split-button';
+import { SplitButtonPopup } from '../../split-button/templates/split-button-popup';
 
 const styles = `
     #test-area {

@@ -1,5 +1,6 @@
 import { TreeviewItem, TreeviewNormal } from "../..";
-import { DropdownTreePopup, DropdownTreeFiltering } from "../../dropdowntree";
+import { DropdownTreePopup } from "../../dropdowntree/templates/dropdowntree-popup";
+import { DropdownTreeFiltering } from "../../dropdowntree/templates/dropdowntree-filtering";
 
 const styles = `
     .k-animation-container {

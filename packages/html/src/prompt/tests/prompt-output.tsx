@@ -1,4 +1,4 @@
-import { Popup } from "../../popup";
+import { Popup } from "../../popup/popup.spec";
 import { PromptOutput } from "../templates/prompt-output";
 
 const styles = `

@@ -1,4 +1,6 @@
-import { List, ListNormal, ListWithGrouping } from '../../list';
+import { List } from '../../list/list.spec';
+import { ListWithGrouping } from '../../list/templates/list-grouping';
+import { ListNormal } from '../../list/templates/list-normal';
 
 export default () =>(
     <>

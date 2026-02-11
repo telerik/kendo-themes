@@ -1,4 +1,4 @@
-import { DialogNormal } from '../../dialog';
+import { DialogNormal } from '../../dialog/templates/dialog-normal';
 
 
 const styles = `

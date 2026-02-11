@@ -1,8 +1,20 @@
 ﻿import { DropdownGrid, KendoDropdownGridProps } from '../dropdowngrid.spec';
 import { DropdownGridNormal } from '../templates/dropdowngrid-normal';
-import { Icon } from '../../icon';
-import { IconButton } from '../../button';
-import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../../table';
+import { Icon } from '../../icon/icon.spec';
+import { IconButton } from '../../button/templates/icon-button';
+import { DataTable } from '../../table/data-table.spec';
+import { TableBody } from '../../table/table-body';
+import { TableFooter } from '../../table/table-footer.spec';
+import { TableGroupStickyHeader } from '../../table/table-group-sticky-header';
+import { TableHeader } from '../../table/table-header.spec';
+import { TableList } from '../../table/table-list.spec';
+import { TableListGroupRow } from '../../table/table-list-group-row';
+import { TableListRow } from '../../table/table-list-row';
+import { TableListTd } from '../../table/table-list-td';
+import { TableListTh } from '../../table/table-list-th';
+import { TableRow } from '../../table/table-row';
+import { TableTh } from '../../table/table-th.spec';
+import { TableThead } from '../../table/table-thead';
 
 const states = DropdownGrid.states;
 const defaults = DropdownGrid.defaultOptions;

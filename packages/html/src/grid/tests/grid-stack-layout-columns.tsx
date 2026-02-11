@@ -1,9 +1,16 @@
-import { GridContainer, GridContent, GridTable, GridStack, GridPager, GridToolbar } from '..';
-import { TableTbody, TableRow, TableTd } from '../../table';
-import { Textbox } from '../../textbox';
-import { DropdownList } from '../../dropdownlist';
-import { NumericTextbox } from '../../numerictextbox';
-import { Button } from '../../button';
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridPager } from "../grid-pager.spec";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { GridStack } from "../templates/grid-stack";
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Textbox } from '../../textbox/textbox.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Button } from '../../button/button.spec';
 import GridStackCell from '../grid-stack-cell.spec';
 import GridStackRow from '../grid-stack-row.spec';
 

@@ -1,11 +1,30 @@
-import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable, GridPager } from "../";
-import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { Button } from "../../button";
-import { ActionSheetNormal, ActionSheetHeader, ActionSheetFooter, ActionSheetView } from "../../action-sheet";
-import { ButtonGroup } from "../../button-group";
-import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenu, ColumnList, ColumnListItem } from "../../column-menu";
-import { DropdownList } from "../../dropdownlist";
-import { NumericTextbox } from "../../numerictextbox";
+import { Grid } from "../grid.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridPager } from "../grid-pager.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Button } from "../../button/button.spec";
+import { ActionSheetNormal } from "../../action-sheet/templates/action-sheet-normal";
+import { ActionSheetHeader } from "../../action-sheet/actionsheet-header";
+import { ActionSheetFooter } from "../../action-sheet/actionsheet-footer";
+import { ActionSheetView } from "../../action-sheet/actionsheet-view";
+import { ButtonGroup } from "../../button-group/button-group.spec";
+import { ColumnMenuNormal } from "../../column-menu/templates/column-menu-normal";
+import { ColumnMenuItemWrapper } from "../../column-menu/column-menu-item-wrapper";
+import { ColumnMenuItem } from "../../column-menu/column-menu-item.spec";
+import { ColumnMenuExpander } from "../../column-menu/column-menu-expander.spec";
+import { FilterMenu } from "../../column-menu/filter-menu.spec";
+import { ColumnList } from "../../column-menu/column-list.spec";
+import { ColumnListItem } from "../../column-menu/column-list-item";
+import { DropdownList } from "../../dropdownlist/dropdownlist.spec";
+import { NumericTextbox } from "../../numerictextbox/numerictextbox.spec";
 
 const styles = `
     #test-area {

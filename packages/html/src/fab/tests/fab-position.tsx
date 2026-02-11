@@ -1,4 +1,4 @@
-import { IconFloatingActionButton } from '../../fab';
+import { IconFloatingActionButton } from '../../fab/templates/icon-fab';
 
 
 const styles = `

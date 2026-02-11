@@ -3,7 +3,7 @@ import { ActionSheetHeader } from '../actionsheet-header';
 import { ActionSheetFooter } from '../actionsheet-footer';
 import { ActionSheetItems } from '../actionsheet-items';
 import { ActionSheetItem } from '../actionsheet-item';
-import { Button } from '../../button';
+import { Button } from '../../button/button.spec';
 
 const options = ActionSheet.options;
 const states = ActionSheet.states;

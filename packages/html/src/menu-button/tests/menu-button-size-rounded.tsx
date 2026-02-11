@@ -1,4 +1,6 @@
-import { MenuButton, IconMenuButton, IconTextMenuButton } from '../../menu-button';
+import { MenuButton } from '../../menu-button/menu-button.spec';
+import { IconMenuButton } from '../../menu-button/templates/icon-menu-button';
+import { IconTextMenuButton } from '../../menu-button/templates/icon-text-menu-button';
 
 const style = `
     #test-area {

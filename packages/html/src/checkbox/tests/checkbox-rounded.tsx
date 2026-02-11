@@ -1,4 +1,5 @@
-import { Checkbox, CheckboxChecked } from '..';
+import { Checkbox } from '../checkbox.spec';
+import { CheckboxChecked } from '../templates/checkbox-checked';
 
 
 const styles = `

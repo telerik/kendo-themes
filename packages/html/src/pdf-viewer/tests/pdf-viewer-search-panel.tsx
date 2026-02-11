@@ -1,4 +1,5 @@
-import { PDFViewerWithAnnotations, PDFViewerWithSearchPanel } from '../../pdf-viewer';
+import { PDFViewerWithAnnotations } from '../templates/pdf-viewer-with-annotations';
+import { PDFViewerWithSearchPanel } from '../templates/pdf-viewer-with-search-panel';
 
 const styles = `
     #test-area .k-pdf-viewer {

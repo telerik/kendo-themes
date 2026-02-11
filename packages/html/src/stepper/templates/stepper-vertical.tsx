@@ -1,5 +1,7 @@
-import { Step, StepList, Stepper } from "..";
-import { ProgressBarNormal } from "../../progressbar";
+import { Step } from '../step';
+import { StepList } from '../step-list';
+import { Stepper } from '../stepper.spec';
+import { ProgressBarNormal } from "../../progressbar/templates/progressbar-normal";
 
 export const StepperVertical = ({ gridTemplateRows = "repeat(3, 1fr)", ...other }: any) => (
     <Stepper

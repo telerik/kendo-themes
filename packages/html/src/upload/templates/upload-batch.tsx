@@ -1,4 +1,6 @@
-import { Upload, UploadFileMultiple, UploadFileInfo } from "..";
+import { Upload } from '../upload.spec';
+import { UploadFileMultiple } from '../upload-file-multiple';
+import { UploadFileInfo } from '../upload-file-info';
 
 export const UploadBatch = (props) => (
     <Upload async children={

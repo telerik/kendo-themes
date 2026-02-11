@@ -1,6 +1,9 @@
-import { Autocomplete, AutocompleteNormal, AutocompletePrefix, AutocompleteSuffix } from '..';
-import { TextButton } from '../../button';
-import { Icon } from '../../icon';
+import { Autocomplete } from '../autocomplete.spec';
+import { AutocompleteNormal } from '../templates/autocomplete-normal';
+import { AutocompletePrefix } from '../templates/autocomplete-prefix';
+import { AutocompleteSuffix } from '../templates/autocomplete-suffix';
+import { TextButton } from '../../button/templates/text-button';
+import { Icon } from '../../icon/icon.spec';
 
 const styles = `
     #test-area {

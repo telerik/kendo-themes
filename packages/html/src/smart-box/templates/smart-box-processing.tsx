@@ -1,6 +1,7 @@
-import { SmartBox, SmartBoxSendButton }  from "../";
-import { Icon } from '../../icon';
-import { IconButton } from '../../button';
+import { SmartBox } from '../smart-box.spec';
+import { SmartBoxSendButton } from '../smart-box-send-button';
+import { Icon } from '../../icon/icon.spec';
+import { IconButton } from '../../button/templates/icon-button';
 
 export const SmartBoxProcessing = (props) =>
     <SmartBox {...props}

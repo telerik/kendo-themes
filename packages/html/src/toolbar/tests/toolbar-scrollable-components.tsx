@@ -1,10 +1,11 @@
-import { Button } from '../../button';
-import { ToolbarScrollable } from '..';
-import { ButtonGroup } from '../../button-group';
-import { Badge } from '../../badge';
-import { Textbox } from '../../textbox';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Badge } from '../../badge/badge.spec';
+import { Textbox } from '../../textbox/textbox.spec';
 
-import { ToolbarSeparator, Toolbar } from '..';
+import { Toolbar } from '../../toolbar/toolbar.spec';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
+import { ToolbarScrollable } from '../../toolbar/templates/toolbar-scrollable';
 
 const style = `
     #test-area {

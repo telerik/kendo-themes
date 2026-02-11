@@ -1,5 +1,8 @@
-import { ChatNormal, ChatMessage, ChatMessageGroup } from '..';
-import { SuggestionGroup, Suggestion } from '../../suggestion';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatMessage } from '../chat-message';
+import { ChatMessageGroup } from '../chat-message-group';
+import { SuggestionGroup } from '../../suggestion/suggestion-group.spec';
+import { Suggestion } from '../../suggestion/suggestion';
 
 const styles = `
     .k-chat {

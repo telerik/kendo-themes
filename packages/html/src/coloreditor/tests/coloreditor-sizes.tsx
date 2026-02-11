@@ -1,4 +1,6 @@
-import { ColorEditor, ColorEditorGroup, ColorEditorPaletteGroup } from "../../coloreditor";
+import { ColorEditor } from '../../coloreditor/color-editor.spec';
+import { ColorEditorGroup } from '../../coloreditor/templates/coloreditor-group';
+import { ColorEditorPaletteGroup } from '../../coloreditor/templates/coloreditor-palette-group';
 
 const styles = `
     #test-area {

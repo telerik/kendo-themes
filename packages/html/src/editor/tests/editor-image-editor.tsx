@@ -1,7 +1,8 @@
-import { Button } from '../../button';
-import { Textbox } from '../../textbox';
-import { WindowNormal } from '../../window';
-import { FormNormal, FormField } from '../../form';
+import { Button } from '../../button/button.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
 
 
 const styles = `

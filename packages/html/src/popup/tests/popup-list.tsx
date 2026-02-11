@@ -1,5 +1,7 @@
-import { List, ListContent, ListItem } from '../../list';
-import { Popup } from '../../popup';
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListItem } from '../../list/list-item.spec';
+import { Popup } from '../../popup/popup.spec';
 
 
 const style = `

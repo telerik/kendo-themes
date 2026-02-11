@@ -1,6 +1,8 @@
-import { Card, CardHeader, CardBody } from '../../card';
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
+import { Card } from '../card.spec';
+import { CardHeader } from '../card-header';
+import { CardBody } from '../card-body';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
 
 export const CardNormal = (props) => (
     <Card orientation="vertical"

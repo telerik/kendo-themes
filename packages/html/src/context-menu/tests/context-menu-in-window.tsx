@@ -1,7 +1,7 @@
 import { ContextMenuNormal } from '../templates/context-menu-normal';
-import { WindowNormal } from '../../window';
-import { MenuListItem } from '../../menu';
-import { Popup } from '../../popup';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
+import { Popup } from '../../popup/popup.spec';
 
 
 const styles = `

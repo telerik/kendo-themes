@@ -1,4 +1,7 @@
-import { Calendar, CalendarTableRow, CalendarCell, CalendarTable } from "..";
+import { Calendar } from "../calendar.spec";
+import { CalendarTableRow } from "../calendar-table-row.spec";
+import { CalendarCell } from "../calendar-cell";
+import { CalendarTable } from "../calendar-table";
 
 export const CalendarDecade = ({ showOtherDecade, ...props }: any) => (
     <Calendar calendarView="decade" calendarTitleText="2020 - 2029"

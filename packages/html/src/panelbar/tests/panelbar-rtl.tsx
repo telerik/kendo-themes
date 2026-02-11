@@ -1,4 +1,7 @@
-import { PanelBarGroup, PanelBarContent, PanelBarItem, PanelBarNormal } from '..';
+import { PanelBarGroup } from '../panelbar-group';
+import { PanelBarContent } from '../panelbar-content';
+import { PanelBarItem } from '../panelbar-item';
+import { PanelBarNormal } from '../templates/panelbar-normal';
 
 
 const styles = `

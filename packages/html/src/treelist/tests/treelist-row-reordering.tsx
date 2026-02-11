@@ -1,4 +1,4 @@
-import { TreeListRowReordering } from '..';
+import { TreeListRowReordering } from '../templates/treelist-row-reordering';
 
 export default () => (
     <>

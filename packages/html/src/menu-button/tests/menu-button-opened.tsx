@@ -1,4 +1,4 @@
-import { MenuButtonPopup } from '../../menu-button';
+import { MenuButtonPopup } from '../../menu-button/templates/menu-button-popup';
 
 const styles = `
     #test-area {

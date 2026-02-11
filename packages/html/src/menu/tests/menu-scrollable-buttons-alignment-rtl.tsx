@@ -1,4 +1,5 @@
-import { MenuScrollable, MenuVerticalScrollable } from '..';
+import { MenuScrollable } from '../templates/menu-scrollable';
+import { MenuVerticalScrollable } from '../templates/menu-vertical-scrollable';
 
 export default () =>(
     <>

@@ -1,5 +1,5 @@
 import Autocomplete from "../autocomplete.spec";
-import { Icon } from '../../icon';
+import { Icon } from '../../icon/icon.spec';
 
 export const AutocompletePrefix = (props) => (
     <Autocomplete

@@ -1,7 +1,9 @@
 import DropdownTree from "../dropdowntree.spec";
-import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
-import { Icon } from "../../icon";
-import { Textbox } from "../../textbox";
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewGroup } from '../../treeview/treeview-group';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
+import { Icon } from "../../icon/icon.spec";
+import { Textbox } from "../../textbox/textbox.spec";
 
 export const DropdownTreeFiltering = (props) => (
     <DropdownTree

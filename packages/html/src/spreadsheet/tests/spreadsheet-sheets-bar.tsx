@@ -1,13 +1,16 @@
-import { Button } from "../../button";
-import { MenuListItem, MenuSeparator } from "../../menu";
-import { MenuButton } from "../../menu-button";
-import { WindowNormal } from "../../window";
-import { Popup } from "../../popup";
-import { FormNormal, FormField } from "../../form";
-import { Textbox } from "../../textbox";
-import { SpreadsheetNormal, SpreadsheetSheetsBar } from "..";
-import { TabStripItem } from "../../tabstrip";
-import { ContextMenuNormal } from "../../context-menu";
+import { Button } from "../../button/button.spec";
+import { MenuListItem } from "../../menu/menu-list-item.spec";
+import { MenuSeparator } from "../../menu/menu-separator.spec";
+import { MenuButton } from "../../menu-button/menu-button.spec";
+import { WindowNormal } from "../../window/templates/window-normal";
+import { Popup } from "../../popup/popup.spec";
+import { FormNormal } from "../../form/templates/form-normal";
+import { FormField } from "../../form/form-field";
+import { Textbox } from "../../textbox/textbox.spec";
+import { SpreadsheetNormal } from "../templates/spreadsheet-normal";
+import { SpreadsheetSheetsBar } from "../spreadsheet-sheets-bar";
+import { TabStripItem } from "../../tabstrip/tabstrip-item";
+import { ContextMenuNormal } from "../../context-menu/templates/context-menu-normal";
 
 const style = `
     #test-area {

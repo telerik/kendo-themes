@@ -1,4 +1,5 @@
-import { RadioButton, RadioButtonWithLabelAfter } from "../../radio";
+import { RadioButton } from "../../radio/radio.spec";
+import { RadioButtonWithLabelAfter } from "../templates/radio-with-label-after";
 
 const styles = `
     #test-area {

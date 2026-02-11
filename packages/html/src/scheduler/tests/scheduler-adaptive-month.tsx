@@ -1,7 +1,7 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { Icon } from '../../icon';
-import { Toolbar } from '../../toolbar';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Icon } from '../../icon/icon.spec';
+import { Toolbar } from '../../toolbar/toolbar.spec';
 
 
 export default () =>(

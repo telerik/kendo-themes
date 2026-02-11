@@ -1,4 +1,5 @@
-import { ColorPickerNormal, ColorPicker } from '../../colorpicker';
+import { ColorPickerNormal } from '../../colorpicker/templates/colorpicker-normal';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
 
 const styles = `
     #test-area {

@@ -1,4 +1,5 @@
-import { TimelineNormal, TimelineNormalCollapsible } from '../../timeline';
+import { TimelineNormal } from '../../timeline/templates/timeline-normal';
+import { TimelineNormalCollapsible } from '../../timeline/templates/timeline-normal-collapsible';
 
 const style = `
     .k-timeline .k-timeline-card .k-card {

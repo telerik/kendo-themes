@@ -1,5 +1,6 @@
-import { ExpansionPanel } from '../../expansion-panel';
-import { ChartWizardChartTypesWrapper, ChartWizardIconTextWrapper } from "..";
+import { ExpansionPanel } from '../../expansion-panel/expansion-panel.spec';
+import { ChartWizardChartTypesWrapper } from '../chart-wizard-chart-types-wrapper';
+import { ChartWizardIconTextWrapper } from '../chart-wizard-icon-text-wrapper';
 
 const styles = `
     #test-area {

@@ -1,4 +1,7 @@
-import { Loader, LoaderConverging, LoaderInfinite, LoaderNormal } from '..';
+import { Loader } from '../loader.spec';
+import { LoaderConverging } from '../templates/loader-converging';
+import { LoaderInfinite } from '../templates/loader-infinite';
+import { LoaderNormal } from '../templates/loader-normal';
 
 
 export default () =>(

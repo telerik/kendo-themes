@@ -1,9 +1,20 @@
-import { MenuListItem, MenuSeparator } from "../../menu";
-import { Popup } from "../../popup";
-import { ContextMenu } from "../../context-menu";
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridStickyContainer } from "../../grid";
-import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { Icon } from "../../icon";
+import { MenuListItem } from "../../menu/menu-list-item.spec";
+import { MenuSeparator } from "../../menu/menu-separator.spec";
+import { Popup } from "../../popup/popup.spec";
+import { ContextMenu } from "../../context-menu/context-menu.spec";
+import { Grid } from "../grid.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridStickyContainer } from "../grid-sticky-container.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Icon } from "../../icon/icon.spec";
 
 export default () => (
   <>

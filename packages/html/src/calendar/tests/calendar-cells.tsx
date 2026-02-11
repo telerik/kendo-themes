@@ -1,4 +1,9 @@
-import { Calendar, CalendarCell, CalendarTable, CalendarTableRow, CalendarWithWeeks, CalendarYear } from '../../calendar';
+import { Calendar } from '../calendar.spec';
+import { CalendarCell } from '../calendar-cell';
+import { CalendarTable } from '../calendar-table';
+import { CalendarTableRow } from '../calendar-table-row.spec';
+import { CalendarWithWeeks } from '../templates/calendar-with-weeks';
+import { CalendarYear } from '../templates/calendar-year';
 
 const styles = `
     #test-area {

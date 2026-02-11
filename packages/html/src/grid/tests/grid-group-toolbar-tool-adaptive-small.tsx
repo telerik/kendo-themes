@@ -1,8 +1,23 @@
-import { GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable, GridNormal } from "../";
-import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { Button } from "../../button";
-import { ActionSheetNormal, ActionSheetHeader, ActionSheetFooter } from "../../action-sheet";
-import { GroupMenu, GroupMenuItemWrapper, GroupMenuItem, GroupMenuItemAction } from "../../column-menu";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridNormal } from "../templates/grid-normal";
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Button } from "../../button/button.spec";
+import { ActionSheetNormal } from "../../action-sheet/templates/action-sheet-normal";
+import { ActionSheetHeader } from "../../action-sheet/actionsheet-header";
+import { ActionSheetFooter } from "../../action-sheet/actionsheet-footer";
+import { GroupMenu } from "../../column-menu/group-menu.spec";
+import { GroupMenuItemWrapper } from "../../column-menu/group-menu-item-wrap";
+import { GroupMenuItem } from "../../column-menu/group-menu-item.spec";
+import { GroupMenuItemAction } from "../../column-menu/group-menu-item-action";
 
 
 const styles = `

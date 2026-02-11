@@ -1,6 +1,6 @@
-import { Button } from '../../button';
-import { DialogNormal } from '../../dialog';
-import { UploadNormal } from '../../upload';
+import { Button } from '../../button/button.spec';
+import { DialogNormal } from '../../dialog/templates/dialog-normal';
+import { UploadNormal } from '../../upload/templates/upload-normal';
 
 
 const styles = `

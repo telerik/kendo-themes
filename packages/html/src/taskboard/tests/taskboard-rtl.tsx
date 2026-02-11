@@ -1,4 +1,4 @@
-import { TaskBoardNormal } from "..";
+import { TaskBoardNormal } from '../templates/taskboard-normal';
 
 
 const style = `

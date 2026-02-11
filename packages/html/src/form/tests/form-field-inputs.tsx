@@ -1,14 +1,20 @@
-import { Checkbox } from '../../checkbox';
-import { ColorPicker } from '../../colorpicker';
-import { FloatingLabel } from '../../floating-label';
-import { MaskedTextbox } from '../../maskedtextbox';
-import { NumericTextbox } from '../../numerictextbox';
-import { RadioButtonWithLabelAfter, RadioGroupHorizontal, RadioGroupNormal, RadioItem } from '../../radio';
-import { Switch } from '../../switch';
-import { Textbox } from '../../textbox';
-import { UploadChunk, UploadFile } from '../../upload';
-import { FormField, FormHorizontal, FormNormal } from '../../form';
-import { SliderNormal } from '../../slider';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { FloatingLabel } from '../../floating-label/floating-label.spec';
+import { MaskedTextbox } from '../../maskedtextbox/maskedtextbox.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { RadioButtonWithLabelAfter } from '../../radio/templates/radio-with-label-after';
+import { RadioGroupHorizontal } from '../../radio/templates/radio-group-horizontal';
+import { RadioGroupNormal } from '../../radio/templates/radio-group-normal';
+import { RadioItem } from '../../radio/radio-item.spec';
+import { Switch } from '../../switch/switch.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { UploadChunk } from '../../upload/templates/upload-chunk';
+import { UploadFile } from '../../upload/upload-file';
+import { FormField } from '../../form/form-field';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormHorizontal } from '../../form/templates/form-horizontal';
+import { SliderNormal } from '../../slider/templates/slider-normal';
 
 
 const styles = `

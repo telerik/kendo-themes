@@ -1,6 +1,6 @@
-import { WindowNormal } from '../../window';
-import { Textarea } from '../../textarea';
-import { Button } from '../../button';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Textarea } from '../../textarea/textarea.spec';
+import { Button } from '../../button/button.spec';
 
 
 const styles = `

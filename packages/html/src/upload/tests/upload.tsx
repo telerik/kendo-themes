@@ -1,4 +1,8 @@
-import { UploadFile, UploadFileMultiple, UploadFileInfo, UploadChunk, UploadBatch } from '..';
+import { UploadFile } from '../upload-file';
+import { UploadFileMultiple } from '../upload-file-multiple';
+import { UploadFileInfo } from '../upload-file-info';
+import { UploadChunk } from '../templates/upload-chunk';
+import { UploadBatch } from '../templates/upload-batch';
 
 
 export default () =>(

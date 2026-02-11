@@ -1,6 +1,8 @@
-import { Card, CardNormal, CardBody } from '../../card';
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
+import { Card } from '../card.spec';
+import { CardNormal } from '../templates/card-normal';
+import { CardBody } from '../card-body';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
 
 
 export default () =>(

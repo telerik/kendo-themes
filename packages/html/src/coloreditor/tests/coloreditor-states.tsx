@@ -1,4 +1,5 @@
-import { ColorEditor, ColorEditorNormal } from '../../coloreditor';
+import { ColorEditor } from '../../coloreditor/color-editor.spec';
+import { ColorEditorNormal } from '../../coloreditor/templates/coloreditor-normal';
 
 
 const styles = `

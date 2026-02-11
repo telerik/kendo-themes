@@ -1,7 +1,13 @@
-import { IconTextButton, IconButton } from "../../button";
-import { Toolbar } from "../../toolbar";
-import { Prompt, PromptContent, PromptHeader, PromptView } from "..";
-import { PanelBarGroup, PanelBarItem, PanelBarNormal } from "../../panelbar";
+import { IconButton } from "../../button/templates/icon-button";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { Prompt } from "../prompt.spec";
+import { PromptContent } from "../prompt-content";
+import { PromptHeader } from "../prompt-header";
+import { PromptView } from "../prompt-view";
+import { PanelBarGroup } from "../../panelbar/panelbar-group";
+import { PanelBarItem } from "../../panelbar/panelbar-item";
+import { PanelBarNormal } from "../../panelbar/templates/panelbar-normal";
 
 export const PromptMoreActions = (props) => (
     <Prompt

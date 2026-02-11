@@ -1,9 +1,19 @@
-import { CardHorizontal, CardNormal, CardHeader, CardBody, CardFooter, CardTitle, CardSubtitle, CardMedia } from '../../card';
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { Layout } from '../../layout';
-import { Avatar } from '../../avatar';
-import { TypographyDisplay1, TypographyDisplay2, TypographyH2, TypographyH3 } from '../../typography';
+import { CardHorizontal } from '../templates/card-horizontal';
+import { CardNormal } from '../templates/card-normal';
+import { CardHeader } from '../card-header';
+import { CardBody } from '../card-body';
+import { CardFooter } from '../card-footer';
+import { CardTitle } from '../card-title';
+import { CardSubtitle } from '../card-subtitle';
+import { CardMedia } from '../card-media';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { Layout } from '../../layout/layout';
+import { Avatar } from '../../avatar/avatar.spec';
+import { TypographyDisplay1 } from '../../typography/typography-display1.spec';
+import { TypographyDisplay2 } from '../../typography/typography-display2.spec';
+import { TypographyH2 } from '../../typography/typography-h2.spec';
+import { TypographyH3 } from '../../typography/typography-h3.spec';
 
 
 export default () =>(

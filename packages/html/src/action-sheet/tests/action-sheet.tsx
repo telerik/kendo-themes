@@ -1,5 +1,9 @@
-import { ActionSheetItems, ActionSheetItem, ActionSheetNormal, ActionSheetFooter, ActionSheetHeader } from '..';
-import { Button } from '../../button';
+import { ActionSheetItem } from '../actionsheet-item';
+import { ActionSheetItems } from '../actionsheet-items';
+import { ActionSheetHeader } from '../actionsheet-header';
+import { ActionSheetFooter } from '../actionsheet-footer';
+import { ActionSheetNormal } from '../templates/action-sheet-normal';
+import { Button } from '../../button/button.spec';
 
 
 const styles = `

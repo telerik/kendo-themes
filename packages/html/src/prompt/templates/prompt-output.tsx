@@ -1,8 +1,15 @@
-import { ActionButtons } from "../../action-buttons";
-import { IconTextButton, IconButton } from "../../button";
-import { Toolbar } from "../../toolbar";
-import { Prompt, PromptContent, PromptHeader, PromptStopFloatingActionButton, PromptView } from "..";
-import { Card, CardHeader, CardBody } from "../../card";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { IconButton } from "../../button/templates/icon-button";
+import { IconTextButton } from "../../button/templates/icon-text-button";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { Prompt } from "../prompt.spec";
+import { PromptContent } from "../prompt-content";
+import { PromptHeader } from "../prompt-header";
+import { PromptStopFloatingActionButton } from "../prompt-stop-fab";
+import { PromptView } from "../prompt-view";
+import { Card } from "../../card/card.spec";
+import { CardHeader } from "../../card/card-header";
+import { CardBody } from "../../card/card-body";
 
 export const PromptOutput = (props) => (
     <Prompt

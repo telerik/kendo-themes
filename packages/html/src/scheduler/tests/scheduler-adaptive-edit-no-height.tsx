@@ -1,5 +1,5 @@
-import { Button } from '../../button';
-import { Icon } from '../../icon';
+import { Button } from '../../button/button.spec';
+import { Icon } from '../../icon/icon.spec';
 
 
 export default () =>(

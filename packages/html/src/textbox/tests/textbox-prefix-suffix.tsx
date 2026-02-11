@@ -1,5 +1,9 @@
-import { InputPrefixText, InputSuffixText } from '../../input';
-import { Textbox, TextboxNormal, TextboxPrefix, TextboxSuffix } from '..';
+import { InputPrefixText } from '../../input/input-prefix-text';
+import { InputSuffixText } from '../../input/input-suffix-text';
+import { Textbox } from '../textbox.spec';
+import { TextboxNormal } from '../templates/textbox-normal';
+import { TextboxPrefix } from '../templates/textbox-prefix';
+import { TextboxSuffix } from '../templates/textbox-suffix';
 
 const styles = `
     #test-area {

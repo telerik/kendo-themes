@@ -1,4 +1,4 @@
-import { ColorPaletteNormal } from '../../colorpalette';
+import { ColorPaletteNormal } from '../../colorpalette/templates/colorpalette-normal';
 import { PALETTEPRESETS } from '../colorpalette-presets';
 
 

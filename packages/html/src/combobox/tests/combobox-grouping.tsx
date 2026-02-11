@@ -1,4 +1,4 @@
-import { ComboboxGrouping } from "../../combobox";
+import { ComboboxGrouping } from "../../combobox/templates/combobox-grouping";
 
 const styles = `
     #test-area {

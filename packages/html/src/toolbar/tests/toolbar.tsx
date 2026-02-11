@@ -1,10 +1,13 @@
-import { Button } from '../../button';
-import { SplitButton } from '../../split-button';
-import { MenuButton } from '../../menu-button';
-import { ColorPicker } from '../../colorpicker';
-import { Switch } from '../../switch';
-import { ButtonGroup } from '../../button-group';
-import { ToolbarNormal, ToolbarResizable, ToolbarItem, ToolbarSeparator } from '../../toolbar';
+import { Button } from '../../button/button.spec';
+import { SplitButton } from '../../split-button/split-button.spec';
+import { MenuButton } from '../../menu-button/menu-button.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { Switch } from '../../switch/switch.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { ToolbarNormal } from '../../toolbar/templates/toolbar-normal';
+import { ToolbarResizable } from '../../toolbar/templates/toolbar-resizable';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
 
 
 export default () =>(

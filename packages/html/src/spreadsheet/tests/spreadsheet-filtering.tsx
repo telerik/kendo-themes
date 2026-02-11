@@ -1,5 +1,9 @@
-import { Icon } from "../../icon";
-import { SpreadsheetActionBar, SpreadsheetHeader, SpreadsheetNormal, SpreadsheetSheetsBar, SpreadsheetView } from "..";
+import { Icon } from "../../icon/icon.spec";
+import { SpreadsheetActionBar } from "../spreadsheet-action-bar";
+import { SpreadsheetHeader } from "../spreadsheet-header";
+import { SpreadsheetNormal } from "../templates/spreadsheet-normal";
+import { SpreadsheetSheetsBar } from "../spreadsheet-sheets-bar";
+import { SpreadsheetView } from "../spreadsheet-view";
 
 const style = `
     #test-area {

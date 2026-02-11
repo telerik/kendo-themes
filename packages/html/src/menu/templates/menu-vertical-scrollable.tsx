@@ -1,4 +1,5 @@
-import { Menu, MenuItem } from "..";
+import { Menu } from '../menu.spec';
+import { MenuItem } from '../menu-item.spec';
 
 export const MenuVerticalScrollable = (props) => (
     <Menu scrollable orientation="vertical" children={

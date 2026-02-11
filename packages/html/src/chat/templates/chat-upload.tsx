@@ -1,8 +1,10 @@
-import { Chat, ChatMessage, ChatMessageGroup } from "..";
-import { Button } from "../../button";
-import { Dialog } from "../../dialog";
-import { Dropzone } from "../../dropzone";
-import { Upload } from "../../upload";
+import { Chat } from "../chat.spec";
+import { ChatMessage } from "../chat-message";
+import { ChatMessageGroup } from "../chat-message-group";
+import { Button } from "../../button/button.spec";
+import { Dialog } from "../../dialog/dialog.spec";
+import { Dropzone } from "../../dropzone/dropzone.spec";
+import { Upload } from "../../upload/upload.spec";
 
 export const ChatUpload = (props) => (
     <>

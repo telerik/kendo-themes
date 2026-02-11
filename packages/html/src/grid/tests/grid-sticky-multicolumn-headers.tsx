@@ -1,5 +1,9 @@
-import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell } from '../../grid';
-import { TableThead, TableRow } from '../../table';
+import { GridNormal } from '../templates/grid-normal';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
 
 export default () =>(
     <>

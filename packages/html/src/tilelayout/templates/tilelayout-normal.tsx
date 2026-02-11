@@ -1,4 +1,5 @@
-import { TileLayout, TileLayoutItem } from "../../tilelayout";
+import { TileLayout } from "../../tilelayout/tilelayout.spec";
+import { TileLayoutItem } from "../../tilelayout/tilelayout-item.spec";
 
 export const TileLayoutNormal = (props) => (
     <TileLayout

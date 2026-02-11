@@ -1,4 +1,6 @@
-import { Signature, SignatureMaximized, SignatureNormal } from '../../signature';
+import { Signature } from '../../signature/signature.spec';
+import { SignatureMaximized } from '../../signature/templates/signature-maximized';
+import { SignatureNormal } from '../../signature/templates/signature-normal';
 
 
 const styles = `

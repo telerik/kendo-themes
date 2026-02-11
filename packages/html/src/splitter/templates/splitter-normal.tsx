@@ -1,4 +1,5 @@
-import { Splitter, SplitterPane } from "..";
+import { Splitter } from "../splitter.spec";
+import { SplitterPane } from "../splitter-pane";
 
 export const SplitterNormal = (props) => (
     <Splitter

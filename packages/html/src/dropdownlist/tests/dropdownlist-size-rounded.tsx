@@ -1,4 +1,5 @@
-import { DropdownList, DropdownListNormal } from '..';
+import { DropdownList } from '../dropdownlist.spec';
+import { DropdownListNormal } from '../templates/dropdownlist-normal';
 
 const styles = `
     #test-area {

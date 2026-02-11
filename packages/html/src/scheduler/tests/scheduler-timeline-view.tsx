@@ -1,4 +1,5 @@
-import { SchedulerTimeline, SchedulerFlexTimeline } from "../";
+import { SchedulerTimeline } from '../templates/scheduler-timeline';
+import { SchedulerFlexTimeline } from '../templates/scheduler-flex-timeline';
 
 export default () => (
     <>

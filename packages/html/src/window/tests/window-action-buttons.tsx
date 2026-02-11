@@ -1,5 +1,5 @@
-import { Button } from '../../button';
-import { WindowNormal } from '../../window';
+import { Button } from '../../button/button.spec';
+import { WindowNormal } from '../../window/templates/window-normal';
 
 
 const style = `

@@ -1,10 +1,12 @@
-import { PDFViewer, PDFViewerPage } from "..";
-import { Button } from "../../button";
-import { ButtonGroup } from "../../button-group";
-import { Combobox } from "../../combobox";
-import { MenuButton } from "../../menu-button";
-import { PagerInput } from "../../pager";
-import { Toolbar, ToolbarSeparator } from "../../toolbar";
+import { PDFViewer } from '../pdf-viewer.spec';
+import { PDFViewerPage } from '../pdf-viewer-page';
+import { Button } from "../../button/button.spec";
+import { ButtonGroup } from "../../button-group/button-group.spec";
+import { Combobox } from "../../combobox/combobox.spec";
+import { MenuButton } from "../../menu-button/menu-button.spec";
+import { PagerInput } from "../../pager/templates/pager-input";
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { ToolbarSeparator } from "../../toolbar/toolbar-separator";
 
 export const PDFViewerWithAnnotations = (props) => (
     <PDFViewer

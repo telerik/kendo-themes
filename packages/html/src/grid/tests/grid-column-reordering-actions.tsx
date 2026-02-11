@@ -1,7 +1,10 @@
-import { Icon } from '../../icon';
-import { Popup } from '../../popup';
-import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuExpander, ColumnMenuNormal } from '../../column-menu';
-import { GridWithColumnMenu } from '../../grid';
+import { Icon } from '../../icon/icon.spec';
+import { Popup } from '../../popup/popup.spec';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
+import { ColumnMenuExpander } from '../../column-menu/column-menu-expander.spec';
+import { ColumnMenuNormal } from '../../column-menu/templates/column-menu-normal';
+import { GridWithColumnMenu } from '../../grid/templates/grid-with-column-menu';
 
 const styles = `
     .k-animation-container,

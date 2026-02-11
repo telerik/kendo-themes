@@ -1,5 +1,7 @@
-import { MultiViewCalendar } from "..";
-import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
+import { MultiViewCalendar } from "../multiviewcalendar.spec";
+import { CalendarTable } from "../../calendar/calendar-table";
+import { CalendarTableRow } from "../../calendar/calendar-table-row.spec";
+import { CalendarCell } from "../../calendar/calendar-cell";
 
 export const MultiViewCalendarYear = ({ showCaptions, ...props }: any) => (
     <MultiViewCalendar calendarView="year" calendarTitleText="2021"

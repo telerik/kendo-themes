@@ -1,4 +1,4 @@
-import { TimePickerPopup } from '..';
+import { TimePickerPopup } from '../templates/timepicker-popup';
 
 const styles = `
     #test-area {

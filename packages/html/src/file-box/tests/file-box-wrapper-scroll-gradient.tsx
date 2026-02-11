@@ -1,4 +1,5 @@
-import { FileBox, FileBoxWrapper } from '..';
+import { FileBox } from '../file-box.spec';
+import { FileBoxWrapper } from '../file-box-wrapper.spec';
 
 
 const styles = `

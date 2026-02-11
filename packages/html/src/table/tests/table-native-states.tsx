@@ -1,4 +1,9 @@
-import { TableNative, TableRow, TableTbody, TableTd, TableTh, TableThead } from '../../table';
+import { TableNative } from '../templates/table-native';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
+import { TableTh } from '../../table/table-th.spec';
+import { TableThead } from '../../table/table-thead';
 
 export default () =>(
     <>

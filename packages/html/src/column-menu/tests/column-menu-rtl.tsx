@@ -1,6 +1,11 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuExpander, ColumnMenuNormal, ColumnList, ColumnListItem } from '../../column-menu';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
+import { ColumnMenuExpander } from '../../column-menu/column-menu-expander.spec';
+import { ColumnMenuNormal } from '../../column-menu/templates/column-menu-normal';
+import { ColumnList } from '../../column-menu/column-list.spec';
+import { ColumnListItem } from '../../column-menu/column-list-item';
 
 const styles = `
     .k-animation-container,

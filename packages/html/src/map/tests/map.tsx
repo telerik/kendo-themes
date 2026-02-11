@@ -1,4 +1,4 @@
-import { Map } from '..';
+import { Map } from '../map.spec';
 
 
 const styles = `

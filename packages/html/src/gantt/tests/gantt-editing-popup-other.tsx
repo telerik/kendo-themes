@@ -1,12 +1,15 @@
-import { Button } from '../../button';
-import { WindowNormal } from '../../window';
-import { Textarea } from '../../textarea';
-import { Textbox } from '../../textbox';
-import { DatePicker } from '../../datepicker';
-import { NumericTextbox } from '../../numerictextbox';
-import { Checkbox } from '../../checkbox';
-import { FormNormal, FormField } from '../../form';
-import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
+import { Button } from '../../button/button.spec';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Textarea } from '../../textarea/textarea.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { TabStripNormal } from '../../tabstrip/templates/tabstrip-normal';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
 
 
 const styles = `

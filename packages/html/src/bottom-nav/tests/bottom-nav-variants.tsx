@@ -1,4 +1,7 @@
-import { BottomNavNormal, BottomNavItem, BottomNavIcons, BottomNavLinks } from '..';
+import { BottomNavNormal } from '../templates/bottom-nav-normal';
+import { BottomNavItem } from '../bottom-nav-item';
+import { BottomNavIcons } from '../templates/bottom-nav-icons';
+import { BottomNavLinks } from '../templates/bottom-nav-links';
 
 
 const styles = `

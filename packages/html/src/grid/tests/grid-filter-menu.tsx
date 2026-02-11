@@ -1,8 +1,8 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { DropdownList } from '../../dropdownlist';
-import { NumericTextbox } from '../../numerictextbox';
-import { AnimationContainer } from '../../animation-container';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
 
 
 const styles = `

@@ -1,6 +1,11 @@
-import { ChatHeader, ChatNormal, ChatMessage, ChatMessageReference, ChatMessageGroup } from '..';
-import { ToolbarItem } from '../../toolbar';
-import { FileBoxWrapper, FileBox } from '../../file-box';
+import { ChatHeader } from '../chat-header';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatMessage } from '../chat-message';
+import { ChatMessageReference } from '../chat-message-reference';
+import { ChatMessageGroup } from '../chat-message-group';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
+import { FileBoxWrapper } from '../../file-box/file-box-wrapper.spec';
+import { FileBox } from '../../file-box/file-box.spec';
 
 const styles = `
     .k-chat {

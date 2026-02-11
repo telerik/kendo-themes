@@ -1,4 +1,7 @@
-import { Drawer, DrawerContent, DrawerItem, DrawerItemSeparator } from "..";
+import { Drawer } from '../drawer.spec';
+import { DrawerContent } from '../drawer-content.spec';
+import { DrawerItem } from '../drawer-item.spec';
+import { DrawerItemSeparator } from '../drawer-item-separator';
 
 export const DrawerMini = (props) => (
     <Drawer mini

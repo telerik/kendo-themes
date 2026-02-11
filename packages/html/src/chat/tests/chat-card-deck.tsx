@@ -1,6 +1,10 @@
-import { Button } from '../../button';
-import { Card, CardDeck, CardBody } from '../../card';
-import { ChatMessage, ChatMessageGroup, ChatNormal } from '..';
+import { Button } from '../../button/button.spec';
+import { Card } from '../../card/card.spec';
+import { CardDeck } from '../../card/card-deck.spec';
+import { CardBody } from '../../card/card-body';
+import { ChatNormal } from "../templates/chat-normal";
+import { ChatMessage } from "../chat-message";
+import { ChatMessageGroup } from "../chat-message-group";
 
 
 const styles = `

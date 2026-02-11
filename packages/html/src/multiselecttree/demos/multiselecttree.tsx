@@ -1,9 +1,11 @@
 ﻿import { MultiSelectTree, KendoMultiSelectTreeProps } from '../multiselecttree.spec';
 import { MultiSelectTreeNormal } from '../templates/multiselecttree-normal';
-import { Chip } from '../../chip';
-import { Checkbox } from '../../checkbox';
-import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
-import { KendoMultiSelectProps } from '../../multiselect';
+import { Chip } from '../../chip/chip.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewGroup } from '../../treeview/treeview-group';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
+import { KendoMultiSelectProps } from '../../multiselect/multiselect.spec';
 
 const options = MultiSelectTree.options;
 const variants = [];

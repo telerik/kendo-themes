@@ -1,4 +1,5 @@
-import { Searchbox, SearchboxNormal } from '../../searchbox';
+import { Searchbox } from '../../searchbox/searchbox.spec';
+import { SearchboxNormal } from '../templates/searchbox-normal';
 
 const styles = `
     #test-area {

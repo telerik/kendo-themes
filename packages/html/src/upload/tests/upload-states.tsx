@@ -1,4 +1,5 @@
-import { Upload, UploadNormal } from '../../upload';
+import { Upload } from '../../upload/upload.spec';
+import { UploadNormal } from '../../upload/templates/upload-normal';
 
 
 const styles = `

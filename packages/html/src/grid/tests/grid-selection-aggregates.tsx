@@ -1,4 +1,5 @@
-import { GridWithSelectionAggregates, GridPager } from '../../grid';
+import { GridWithSelectionAggregates } from '../templates/grid-with-selection-aggregates';
+import { GridPager } from '../grid-pager.spec';
 
 
 export default () =>(

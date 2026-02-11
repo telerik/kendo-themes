@@ -1,4 +1,7 @@
-import { Orgchart, OrgchartNode, OrgchartGroup, OrgchartNodeGroup } from "..";
+import { Orgchart } from '../orgchart.spec';
+import { OrgchartNode } from '../orgchart-node';
+import { OrgchartGroup } from '../orgchart-group';
+import { OrgchartNodeGroup } from '../orgchart-node-group';
 
 export const OrgchartGroupVertical = ({ details, orientation, justifyContent, ...other }: any) => (
     <Orgchart

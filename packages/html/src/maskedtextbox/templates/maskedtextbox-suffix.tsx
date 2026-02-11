@@ -1,5 +1,5 @@
 import Textbox from "../maskedtextbox.spec";
-import { Icon } from '../../icon';
+import { Icon } from '../../icon/icon.spec';
 
 export const MaskedTextboxSuffix = (props) => (
     <Textbox

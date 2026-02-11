@@ -1,6 +1,9 @@
-import { InputSuffixText } from '../../input';
-import { NumericTextbox, NumericTextboxNormal, NumericTextboxPrefix, NumericTextboxSuffix } from '..';
-import { Icon } from '../../icon';
+import { InputSuffixText } from '../../input/input-suffix-text';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { NumericTextboxNormal } from '../templates/numerictextbox-normal';
+import { NumericTextboxPrefix } from '../templates/numerictextbox-prefix';
+import { NumericTextboxSuffix } from '../templates/numerictextbox-suffix';
+import { Icon } from '../../icon/icon.spec';
 
 const styles = `
     #test-area {

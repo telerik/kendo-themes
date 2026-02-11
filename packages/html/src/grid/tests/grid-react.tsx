@@ -1,6 +1,18 @@
-import { Icon } from '../../icon';
-import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
-import { TableRow, TableThead, TableTbody, TableTfoot, TableTd } from '../../table';
+import { Icon } from '../../icon/icon.spec';
+import { GridNormal } from '../templates/grid-normal';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { GridFooterTable } from '../grid-footer-table.spec';
+import { GridFooter } from '../grid-footer.spec';
+import { TableRow } from '../../table/table-row';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTfoot } from '../../table/table-tfoot';
+import { TableTd } from '../../table/table-td';
 
 export default () => (
     <>

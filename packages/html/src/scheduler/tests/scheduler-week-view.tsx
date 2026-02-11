@@ -1,4 +1,5 @@
-import { SchedulerWeek, SchedulerFlexWeek } from '../';
+import { SchedulerWeek } from '../templates/scheduler-week';
+import { SchedulerFlexWeek } from '../templates/scheduler-flex-week';
 
 export default () => (
     <>

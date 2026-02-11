@@ -1,4 +1,7 @@
-import { ColumnMenu, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander } from "../../column-menu";
+import { ColumnMenu } from "../../column-menu/column-menu.spec";
+import { ColumnMenuItemWrapper } from "../../column-menu/column-menu-item-wrapper";
+import { ColumnMenuItem } from "../../column-menu/column-menu-item.spec";
+import { ColumnMenuExpander } from "../../column-menu/column-menu-expander.spec";
 
 export const ColumnMenuNormal = (props) => (
     <ColumnMenu

@@ -1,4 +1,5 @@
-import { Autocomplete, AutocompleteNormal } from '../../autocomplete';
+import { Autocomplete } from '../autocomplete.spec';
+import { AutocompleteNormal } from '../templates/autocomplete-normal';
 
 const styles = `
     #test-area {

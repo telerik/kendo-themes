@@ -1,5 +1,6 @@
-import { Form, FormNormal, FormHorizontal } from '../../form';
-
+import { Form } from '../../form/form.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormHorizontal } from '../../form/templates/form-horizontal';
 
 const styles = `
     #test-area {

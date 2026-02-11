@@ -1,4 +1,4 @@
-import { StackLayout } from "..";
+import { StackLayout } from '../stack-layout.spec';
 
 export const StackLayoutNormal = ({ alignItems = "start", justifyContent = "start", ...other }: any) => (
     <StackLayout

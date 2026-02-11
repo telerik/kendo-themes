@@ -1,5 +1,6 @@
-import { MenuList, MenuListItem } from '../../menu';
-import { Popup } from '../../popup';
+import { MenuList } from "../menu-list.spec";
+import { MenuListItem } from "../menu-list-item.spec";
+import { Popup } from '../../popup/popup.spec';
 
 
 const style = `

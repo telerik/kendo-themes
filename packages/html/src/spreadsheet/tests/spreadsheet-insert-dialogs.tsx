@@ -1,13 +1,14 @@
-import { WindowNormal } from '../../window';
-import { Textarea } from '../../textarea';
-import { Button } from '../../button';
-import { FormNormal, FormField } from '../../form';
-import { Textbox } from '../../textbox';
-import { UploadNormal } from '../../upload';
-import { DropzoneWithNote } from '../../dropzone';
-import { DropdownList } from '../../dropdownlist';
-import { ListBox } from '../../listbox';
-import { ListItem } from '../../list';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Textarea } from '../../textarea/textarea.spec';
+import { Button } from '../../button/button.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { Textbox } from '../../textbox/textbox.spec';
+import { UploadNormal } from '../../upload/templates/upload-normal';
+import { DropzoneWithNote } from '../../dropzone/templates/dropzone-with-note';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { ListBox } from '../../listbox/listbox.spec';
+import { ListItem } from '../../list/list-item.spec';
 
 
 const style = `

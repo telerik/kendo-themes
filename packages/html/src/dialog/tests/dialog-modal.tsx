@@ -1,4 +1,5 @@
-import { DialogNonModal, DialogNormal } from '../../dialog';
+import { DialogNonModal } from '../../dialog/templates/dialog-non-modal';
+import { DialogNormal } from '../../dialog/templates/dialog-normal';
 
 
 const styles = `

@@ -1,4 +1,5 @@
-import { DockNavigator, DockIndicator } from '..';
+import { DockNavigator } from '../dock-navigator';
+import { DockIndicator } from '../dock-indicator';
 
 const styles = `
 

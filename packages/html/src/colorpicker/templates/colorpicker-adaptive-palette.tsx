@@ -1,4 +1,4 @@
-import { ColorEditor } from "../../coloreditor";
+import { ColorEditor } from "../../coloreditor/color-editor.spec";
 
 export const ColorPickerAdaptivePalette = ({ color, currentColor, ...other }: any) => (
     <ColorEditor

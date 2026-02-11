@@ -1,4 +1,4 @@
-import { DataTableVirtualization } from '../../table';
+import { DataTableVirtualization } from '../../table/templates/table-list-virtualization';
 
 const style = `
     #test-area {

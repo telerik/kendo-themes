@@ -1,4 +1,4 @@
-import { DateTimePickerAdaptive } from '../../datetimepicker';
+import { DateTimePickerAdaptive } from '../../datetimepicker/templates/datetimepicker-adaptive';
 
 
 const styles = `

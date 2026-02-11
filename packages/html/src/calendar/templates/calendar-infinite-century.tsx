@@ -1,4 +1,8 @@
-import { CalendarCaptionCell, CalendarCell, CalendarInfinite, CalendarTableRow, CalendarTbody } from '../index';
+import { CalendarCaptionCell } from '../calendar-caption-cell.spec';
+import { CalendarCell } from '../calendar-cell';
+import { CalendarInfinite } from '../calendar-infinite.spec';
+import { CalendarTableRow } from '../calendar-table-row.spec';
+import { CalendarTbody } from '../calendar-tbody.spec';
 
 export const CalendarInfiniteCentury = ({ firstCaption = "2000 - 2099", ...other }: any) => (
     <CalendarInfinite calendarView="century" showWeekdays={false} calendarTitleText="2000 - 2099"

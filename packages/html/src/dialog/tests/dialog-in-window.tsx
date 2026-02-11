@@ -1,5 +1,5 @@
-import { WindowNormal } from '../../window';
-import { DialogNormal } from '../../dialog';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { DialogNormal } from '../../dialog/templates/dialog-normal';
 
 
 const styles = `

@@ -1,5 +1,5 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { CalendarNavigation } from '.';
+import { CalendarNavigation } from './calendar-navigation.spec';
 import { CalendarInfiniteView, KendoCalendarInfiniteViewProps } from './calendar-infinite-view.spec';
 
 import { KendoComponent } from '../_types/component';

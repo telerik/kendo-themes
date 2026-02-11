@@ -1,4 +1,8 @@
-import { TreeviewItem, TreeviewNormal, TreeviewHierarchy, TreeviewIcons, TreeviewCheckboxes } from "../../treeview";
+import { TreeviewItem  } from "../../treeview/treeview-item.spec";
+import { TreeviewNormal } from "../../treeview/templates/treeview-normal";
+import { TreeviewCheckboxes } from "../../treeview/templates/treeview-checkboxes";
+import { TreeviewIcons } from "../../treeview/templates/treeview-icons";
+import { TreeviewHierarchy } from "../../treeview/templates/treeview-hierarchy";
 
 const style = `
     #test-area {

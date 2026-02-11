@@ -1,4 +1,7 @@
-import { Calendar, CalendarTableRow, CalendarCell, CalendarTable } from "..";
+import { Calendar } from "../calendar.spec";
+import { CalendarTableRow } from "../calendar-table-row.spec";
+import { CalendarCell } from "../calendar-cell";
+import { CalendarTable } from "../calendar-table";
 
 export const CalendarWithWeeks = ({ showOtherMonth, ...props }: any) => (
     <Calendar calendarView="month" showWeek

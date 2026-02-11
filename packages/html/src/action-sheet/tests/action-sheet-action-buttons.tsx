@@ -1,5 +1,8 @@
-import { ActionSheetItems, ActionSheetItem, ActionSheetNormal, ActionSheetFooter } from '..';
-import { Button } from '../../button';
+import { ActionSheetItem } from '../actionsheet-item';
+import { ActionSheetItems } from '../actionsheet-items';
+import { ActionSheetFooter } from '../actionsheet-footer';
+import { ActionSheetNormal } from '../templates/action-sheet-normal';
+import { Button } from '../../button/button.spec';
 
 const styles = `
     #test-area > section {

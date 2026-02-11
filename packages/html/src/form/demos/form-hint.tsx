@@ -1,5 +1,5 @@
 import { FormHint, KendoFormHintProps } from '../form-hint.spec';
-import { Textbox } from '../../textbox';
+import { Textbox } from '../../textbox/textbox.spec';
 
 const options = FormHint.options;
 const states = FormHint.states;

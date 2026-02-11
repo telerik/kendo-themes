@@ -1,4 +1,5 @@
-import { Notification, NotificationAction } from "..";
+import { Notification } from "../notification.spec";
+import { NotificationAction } from "../notification-action";
 
 export const NotificationClosable = (props) => (
     <Notification

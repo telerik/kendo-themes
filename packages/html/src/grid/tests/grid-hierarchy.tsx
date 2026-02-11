@@ -1,4 +1,4 @@
-import { GridHierarchy } from '../../grid';
+import { GridHierarchy } from '../../grid/templates/grid-hierarchy';
 
 export default () =>(
     <>

@@ -1,4 +1,5 @@
-import { SuggestionGroup, Suggestion } from "..";
+import { SuggestionGroup } from '../suggestion-group.spec';
+import { Suggestion } from '../suggestion';
 
 export const SuggestionGroupNormal = (props: any) => (
     <SuggestionGroup children={(

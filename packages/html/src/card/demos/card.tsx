@@ -5,8 +5,8 @@ import { CardHeader } from '../card-header';
 import { CardMedia } from '../card-media';
 import { CardNormal } from '../templates/card-normal';
 import { CardHorizontal } from '../templates/card-horizontal';
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
 
 const options = Card.options.themeColor;
 const states = Card.states;

@@ -1,4 +1,5 @@
-import { OrgchartVertical, OrgchartNormal } from '../../orgchart';
+import { OrgchartNormal } from '../../orgchart/templates/orgchart-normal';
+import { OrgchartVertical } from '../../orgchart/templates/orgchart-vertical';
 
 
 const styles = `

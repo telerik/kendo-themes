@@ -1,11 +1,25 @@
-import { FileManagerBreadcrumb, FileManagerGrid, FileManagerTreeview, FilePreview } from '..';
-import { BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
-import { Icon } from '../../icon';
-import { Splitter, SplitterPane } from '../../splitter';
-import { TableRow, TableTbody, TableTd, TableThead } from '../../table';
-import { TreeviewItem } from '../../treeview';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from "../../grid";
-
+import { FileManagerTreeview } from '../filemanager-treeview.spec';
+import { FileManagerBreadcrumb } from '../filemanager-breadcrumb.spec';
+import { FilePreview } from '../file-preview';
+import { FileManagerGrid } from '../templates/filemanager-grid';
+import { BreadcrumbContainer } from '../../breadcrumb/breadcrumb-container';
+import { BreadcrumbItem } from '../../breadcrumb/breadcrumb-item';
+import { BreadcrumbLink } from '../../breadcrumb/breadcrumb-link';
+import { Icon } from '../../icon/icon.spec';
+import { Splitter } from '../../splitter/splitter.spec';
+import { SplitterPane } from '../../splitter/splitter-pane';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
+import { TableThead } from '../../table/table-thead';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
+import { Grid } from '../../grid/grid.spec';
+import { GridHeader } from '../../grid/grid-header.spec';
+import { GridHeaderTable } from '../../grid/grid-header-table.spec';
+import { GridHeaderCell } from '../../grid/grid-header-cell.spec';
+import { GridContainer } from '../../grid/grid-container.spec';
+import { GridContent } from '../../grid/grid-content.spec';
+import { GridTable } from '../../grid/grid-table.spec';
 
 export default () =>(
     <>

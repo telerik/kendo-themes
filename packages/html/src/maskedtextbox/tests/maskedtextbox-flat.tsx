@@ -1,5 +1,5 @@
-import { MaskedTextbox, MaskedTextboxNormal } from '../../maskedtextbox';
-
+import { MaskedTextbox } from '../../maskedtextbox/maskedtextbox.spec';
+import { MaskedTextboxNormal } from '../templates/maskedtextbox-normal';
 
 const styles = `
     #test-area {

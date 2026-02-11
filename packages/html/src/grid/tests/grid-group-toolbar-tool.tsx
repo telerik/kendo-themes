@@ -1,9 +1,22 @@
-import { GridNormal, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable } from "../";
-import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { Popup } from "../../popup";
-import { GroupMenu, GroupMenuItemWrapper, GroupMenuItem, GroupMenuItemAction } from "../../column-menu";
-import { Button } from "../../button";
-import { ActionButtons } from "../../action-buttons";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridNormal } from "../templates/grid-normal";
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { Popup } from "../../popup/popup.spec";
+import { GroupMenu } from "../../column-menu/group-menu.spec";
+import { GroupMenuItemWrapper } from "../../column-menu/group-menu-item-wrap";
+import { GroupMenuItem } from "../../column-menu/group-menu-item.spec";
+import { GroupMenuItemAction } from "../../column-menu/group-menu-item-action";
+import { Button } from "../../button/button.spec";
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
 
 const styles = `
     .k-grid {

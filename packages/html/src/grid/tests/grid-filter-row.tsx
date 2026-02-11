@@ -1,15 +1,20 @@
-import { Autocomplete } from '../../autocomplete';
-import { Button } from '../../button';
-import { ColorPicker } from '../../colorpicker';
-import { Combobox } from '../../combobox';
-import { DatePicker } from '../../datepicker';
-import { DateTimePicker } from '../../datetimepicker';
-import { DropdownList } from '../../dropdownlist';
-import { NumericTextbox } from '../../numerictextbox';
-import { Textbox } from '../../textbox';
-import { TimePicker } from '../../timepicker';
-import { Grid, GridHeader, GridHeaderTable, GridWithFilterRow } from '../../grid';
-import { TableThead, TableRow, TableTd } from '../../table';
+import { Autocomplete } from '../../autocomplete/autocomplete.spec';
+import { Button } from '../../button/button.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { Combobox } from '../../combobox/combobox.spec';
+import { DatePicker } from '../../datepicker/datepicker.spec';
+import { DateTimePicker } from '../../datetimepicker/datetimepicker.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { TimePicker } from '../../timepicker/timepicker.spec';
+import { Grid } from '../grid.spec';
+import { GridWithFilterRow } from '../templates/grid-with-filter-row';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 export default () =>(
     <>

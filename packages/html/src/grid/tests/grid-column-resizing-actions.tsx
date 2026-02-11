@@ -1,11 +1,15 @@
-import { Popup } from '../../popup';
-import { WindowNormal } from '../../window';
-import { Button } from '../../button';
-import { FormNormal, FormField } from '../../form';
-import { Checkbox } from '../../checkbox';
-import { Textbox } from '../../textbox';
-import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuExpander, ColumnMenuNormal } from '../../column-menu';
-import { GridWithColumnMenu } from '../../grid';
+import { Popup } from '../../popup/popup.spec';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { Button } from '../../button/button.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
+import { ColumnMenuExpander } from '../../column-menu/column-menu-expander.spec';
+import { ColumnMenuNormal } from '../../column-menu/templates/column-menu-normal';
+import { GridWithColumnMenu } from '../../grid/templates/grid-with-column-menu';
 
 
 const styles = `

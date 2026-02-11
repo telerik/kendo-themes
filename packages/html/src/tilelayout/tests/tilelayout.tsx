@@ -1,4 +1,4 @@
-import { TileLayoutNormal } from '../../tilelayout';
+import { TileLayoutNormal } from '../../tilelayout/templates/tilelayout-normal';
 import { TileLayoutItem } from '../tilelayout-item.spec';
 import TileLayoutItemHint from '../tilelayout-item-hint.spec';
 

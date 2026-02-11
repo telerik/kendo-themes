@@ -1,8 +1,15 @@
 
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { SchedulerBody, SchedulerCell, SchedulerEvent, SchedulerFlexTimeline, SchedulerGroup, SchedulerHead, SchedulerRow, SchedulerStickyCell, SchedulerToolbar } from '../';
-
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { SchedulerBody } from '../scheduler-body.spec';
+import { SchedulerCell } from '../scheduler-cell.spec';
+import { SchedulerHead } from '../scheduler-head.spec';
+import { SchedulerToolbar } from '../scheduler-toolbar.spec';
+import { SchedulerEvent } from '../scheduler-event.spec';
+import { SchedulerFlexTimeline } from '../templates/scheduler-flex-timeline';
+import { SchedulerStickyCell } from '../scheduler-sticky-cell.spec';
+import { SchedulerGroup } from '../scheduler-group.spec';
+import { SchedulerRow } from '../scheduler-row.spec';
 
 const style = `
     #test-area {

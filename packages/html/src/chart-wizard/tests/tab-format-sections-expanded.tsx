@@ -1,12 +1,14 @@
-import { ExpansionPanel } from '../../expansion-panel';
-import { Form, Fieldset, FormField } from '../../form';
-import { DropdownList } from '../../dropdownlist';
-import { Textbox } from '../../textbox';
-import { NumericTextbox } from '../../numerictextbox';
-import { ColorPicker } from '../../colorpicker';
-import { Combobox } from '../../combobox';
-import { Checkbox } from '../../checkbox';
-import { Switch } from '../../switch';
+import { ExpansionPanel } from '../../expansion-panel/expansion-panel.spec';
+import { Form } from '../../form/form.spec';
+import { Fieldset } from '../../form/fieldset';
+import { FormField } from '../../form/form-field';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { Combobox } from '../../combobox/combobox.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { Switch } from '../../switch/switch.spec';
 
 
 const styles = `

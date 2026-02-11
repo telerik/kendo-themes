@@ -1,4 +1,4 @@
-import { ListBoxNormal } from '../../listbox';
+import { ListBoxNormal } from '../../listbox/templates/listbox-normal';
 
 const styles = `
     #test-area {

@@ -1,8 +1,10 @@
-import { Fieldset, Form, FormField } from "..";
-import { Button } from "../../button";
-import { DropdownList } from "../../dropdownlist";
-import { RadioButton } from "../../radio";
-import { Textbox } from "../../textbox";
+import { Fieldset } from '../fieldset';
+import { Form } from '../form.spec';
+import { FormField } from '../form-field';
+import { Button } from "../../button/button.spec";
+import { DropdownList } from "../../dropdownlist/dropdownlist.spec";
+import { RadioButton } from "../../radio/radio.spec";
+import { Textbox } from "../../textbox/textbox.spec";
 
 export const FormNormal = (props: any) => {
     const { size, children, ...other } = props;

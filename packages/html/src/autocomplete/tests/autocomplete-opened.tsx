@@ -1,4 +1,4 @@
-import { AutocompletePopup } from '../../autocomplete';
+import { AutocompletePopup } from '../templates/autocomplete-popup';
 
 const styles = `
     #test-area {

@@ -1,9 +1,11 @@
 ﻿import { KendoAutocompleteProps } from '../autocomplete.spec';
 import { AutocompleteNormal } from '../templates/autocomplete-normal';
-import { Textbox } from '../../textbox';
-import { Icon } from '../../icon';
-import { TextButton } from '../../button';
-import { List, ListContent, ListItem } from '../../list';
+import { Textbox } from '../../textbox/textbox.spec';
+import { Icon } from '../../icon/icon.spec';
+import { TextButton } from '../../button/templates/text-button';
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListItem } from '../../list/list-item.spec';
 
 const states = Textbox.states;
 const defaults = Textbox.defaultOptions;

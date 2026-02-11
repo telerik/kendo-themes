@@ -1,5 +1,6 @@
 import MultiSelect from "../multiselect.spec";
-import { Chip, ChipAction } from '../../chip';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
 
 export const MultiSelectValue = ({ size, rounded, children, ...other }: any) => (
     <>

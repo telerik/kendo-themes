@@ -1,4 +1,4 @@
-import { DateRangePickerPopup } from '..';
+import { DateRangePickerPopup } from '../templates/daterangepicker-popup';
 
 const styles = `
     .k-animation-container {

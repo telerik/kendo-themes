@@ -1,4 +1,6 @@
-import { IconButton, IconTextButton, TextButton } from '..';
+import { IconButton } from '../templates/icon-button';
+import { IconTextButton } from '../templates/icon-text-button';
+import { TextButton } from '../templates/text-button';
 
 const styles = `
     #test-area {

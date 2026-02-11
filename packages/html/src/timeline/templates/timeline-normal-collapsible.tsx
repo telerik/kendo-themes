@@ -1,4 +1,6 @@
-import { Timeline, TimelineFlagWrap, VerticalTimelineEvent } from "../../timeline";
+import { Timeline } from "../../timeline/timeline.spec";
+import { TimelineFlagWrap } from "../../timeline/timeline-flag-wrap.spec";
+import { VerticalTimelineEvent } from "../../timeline/vertical-timeline-event.spec";
 
 export const TimelineNormalCollapsible = (props) => (
     <Timeline

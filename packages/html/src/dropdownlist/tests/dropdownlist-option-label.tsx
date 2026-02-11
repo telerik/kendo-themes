@@ -1,5 +1,8 @@
-import { DropdownList } from '..';
-import { List, ListContent, ListItem, ListOptionLabel } from '../../list';
+import { DropdownList } from '../dropdownlist.spec';
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListItem } from '../../list/list-item.spec';
+import { ListOptionLabel } from '../../list/list-option-label';
 
 
 const styles = `

@@ -1,12 +1,17 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroupNormal } from '../../checkbox';
-import { Textbox } from '../../textbox';
-import { EditorNormal } from '../../editor';
-import { WindowNormal } from '../../window';
-import { ButtonGroup } from '../../button-group';
-import { FormField, FormNormal } from '../../form';
-import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { CheckboxItem } from '../../checkbox/checkbox-item.spec';
+import { CheckboxWithLabelAfter } from '../../checkbox/templates/checkbox-with-label-after';
+import { CheckboxGroupNormal } from '../../checkbox/templates/checkbox-group-normal';
+import { Textbox } from '../../textbox/textbox.spec';
+import { EditorNormal } from '../../editor/templates/editor-normal';
+import { WindowNormal } from '../../window/templates/window-normal';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { FormField } from '../../form/form-field';
+import { FormNormal } from '../../form/templates/form-normal';
+import { TabStripNormal } from '../../tabstrip/templates/tabstrip-normal';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
 
 
 const styles = `

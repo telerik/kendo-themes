@@ -1,6 +1,8 @@
-import { Fieldset, Form, FormField } from "..";
-import { DropdownList } from "../../dropdownlist";
-import { Textbox } from "../../textbox";
+import { Fieldset } from '../fieldset';
+import { Form } from '../form.spec';
+import { FormField } from '../form-field';
+import { DropdownList } from "../../dropdownlist/dropdownlist.spec";
+import { Textbox } from "../../textbox/textbox.spec";
 
 export const FormGridLayout = (props: any) => {
     const { cols = 2, gutters, children, ...other } = props;

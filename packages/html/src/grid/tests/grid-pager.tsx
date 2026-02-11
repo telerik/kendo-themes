@@ -1,5 +1,15 @@
-import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { GridNormal } from '../templates/grid-normal';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { GridPager } from '../grid-pager.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 
 export default () => (

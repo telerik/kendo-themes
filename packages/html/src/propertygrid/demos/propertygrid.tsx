@@ -1,8 +1,9 @@
 ﻿import { PropertyGrid } from '../propertygrid.spec';
 import { PropertyGridNormal } from '../templates/propertygrid-normal';
-import { KendoGridProps } from '../../grid';
-import { Button } from '../../button';
-import { Splitter, SplitterPane } from '../../splitter';
+import { KendoGridProps } from '../../grid/grid.spec';
+import { Button } from '../../button/button.spec';
+import { Splitter } from '../../splitter/splitter.spec';
+import { SplitterPane } from '../../splitter/splitter-pane';
 
 const options = PropertyGrid.options;
 const states = PropertyGrid.states;

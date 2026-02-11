@@ -1,7 +1,7 @@
 ﻿import { NumericTextbox, KendoNumericTextboxProps } from '../numerictextbox.spec';
 import { NumericTextboxNormal } from '../templates/numerictextbox-normal';
-import { DropdownList } from '../../dropdownlist';
-import { InputSuffixText } from '../../input';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { InputSuffixText } from '../../input/input-suffix-text';
 
 const states = NumericTextbox.states;
 const defaults = NumericTextbox.defaultOptions;

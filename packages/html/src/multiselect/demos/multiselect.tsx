@@ -1,9 +1,12 @@
 ﻿import { MultiSelect, KendoMultiSelectProps } from '../multiselect.spec';
 import { MultiSelectNormal } from '../templates/multiselect-normal';
-import { Icon } from '../../icon';
-import { TextButton } from '../../button';
-import { Chip, ChipAction } from '../../chip';
-import { List, ListContent, ListItem } from '../../list';
+import { Icon } from '../../icon/icon.spec';
+import { TextButton } from '../../button/templates/text-button';
+import { Chip } from '../../chip/chip.spec';
+import { ChipAction } from '../../chip/chip-action';
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListItem } from '../../list/list-item.spec';
 
 const states = MultiSelect.states;
 const defaults = MultiSelect.defaultOptions;

@@ -1,9 +1,13 @@
-import { Button } from '../../button';
-import { ColorPicker } from '../../colorpicker';
-import { ButtonGroup } from '../../button-group';
-import { ToolbarItem, ToolbarSeparator, ToolbarResizable, Toolbar, ToolbarScrollableButtonsHidden } from '../../toolbar';
-import { Combobox } from '../../combobox';
-import { MenuButton } from '../../menu-button';
+import { Button } from '../../button/button.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { ToolbarItem } from '../../toolbar/toolbar-item.spec';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
+import { ToolbarResizable } from '../../toolbar/templates/toolbar-resizable';
+import { Toolbar } from '../../toolbar/toolbar.spec';
+import { ToolbarScrollableButtonsHidden } from '../../toolbar/templates/toolbar-scrollable-buttons-hidden';
+import { Combobox } from '../../combobox/combobox.spec';
+import { MenuButton } from '../../menu-button/menu-button.spec';
 
 
 export default () =>(

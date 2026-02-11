@@ -1,4 +1,6 @@
-import { SuggestionGroupNormal, SuggestionScrollableButtons, Suggestion } from '..';
+import { SuggestionGroupNormal } from '../templates/suggestion-group-normal';
+import { SuggestionScrollableButtons } from '../templates/suggestion-group-scrollable-buttons';
+import { Suggestion } from '../suggestion';
 
 const style = ``;
 

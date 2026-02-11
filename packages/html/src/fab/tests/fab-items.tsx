@@ -1,5 +1,7 @@
-import { FloatingActionButtonItems, FloatingActionButtonItem, IconFloatingActionButton, FloatingActionButton } from '../../fab';
-
+import { FloatingActionButton } from '../../fab/fab.spec';
+import { FloatingActionButtonItem } from '../../fab/fab-item';
+import { FloatingActionButtonItems } from '../../fab/fab-items';
+import { IconFloatingActionButton } from '../../fab/templates/icon-fab';
 
 const styles = `
     #test-area {

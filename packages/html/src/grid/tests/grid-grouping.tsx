@@ -1,8 +1,20 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { Icon } from '../../icon';
-import { GridNormal, GridWithGrouping, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
-import { TableThead, TableRow, TableTd, TableTbody } from '../../table';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Icon } from '../../icon/icon.spec';
+import { GridHeader } from "../grid-header.spec";
+import { GridHeaderCell } from "../grid-header-cell.spec";
+import { GridHeaderTable } from "../grid-header-table.spec";
+import { GridContainer } from "../grid-container.spec";
+import { GridContent } from "../grid-content.spec";
+import { GridTable } from "../grid-table.spec";
+import { GridNormal } from "../templates/grid-normal";
+import { GridGroupingHeader } from "../grid-grouping-header.spec";
+import { GridWithGrouping } from "../templates/grid-with-grouping";
+import { GridToolbar } from "../grid-toolbar.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { TableTbody } from '../../table/table-tbody';
 
 
 const styles = `

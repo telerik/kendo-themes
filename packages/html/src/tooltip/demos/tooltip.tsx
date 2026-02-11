@@ -1,7 +1,7 @@
 ﻿import { Tooltip, KendoTooltipProps } from '../tooltip.spec';
 import { TooltipNormal } from '../templates/tooltip-normal';
-import { AnimationContainer } from '../../animation-container';
-import { Button } from '../../button';
+import { AnimationContainer } from '../../animation-container/animation-container.spec';
+import { Button } from '../../button/button.spec';
 
 const options = Tooltip.options.themeColor;
 const states = Tooltip.states;

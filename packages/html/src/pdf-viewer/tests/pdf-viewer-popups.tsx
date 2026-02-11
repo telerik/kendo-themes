@@ -1,8 +1,10 @@
-import { Button } from "../../button";
-import { MenuList, MenuListItem, MenuSeparator } from "../../menu";
-import { MenuButton } from "../../menu-button";
-import { Popup } from "../../popup";
-import { Toolbar } from "../../toolbar";
+import { Button } from "../../button/button.spec";
+import { MenuList } from "../../menu/menu-list.spec";
+import { MenuListItem } from "../../menu/menu-list-item.spec";
+import { MenuSeparator } from "../../menu/menu-separator.spec";
+import { MenuButton } from "../../menu-button/menu-button.spec";
+import { Popup } from "../../popup/popup.spec";
+import { Toolbar } from "../../toolbar/toolbar.spec";
 
 const styles = `
     #test-area {

@@ -1,5 +1,5 @@
-import { DateTimeSelector } from '..';
-import { Popup } from '../../popup';
+import { DateTimeSelector } from '../datetime-selector.spec';
+import { Popup } from '../../popup/popup.spec';
 
 
 const style = `

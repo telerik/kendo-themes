@@ -1,5 +1,9 @@
-import { ChatNormal, ChatMessage, ChatMessageGroup, ChatTimestamp } from '..';
-import { FileBoxWrapper, FileBox } from '../../file-box';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatMessage } from '../chat-message';
+import { ChatMessageGroup } from '../chat-message-group';
+import { ChatTimestamp } from '../chat-timestamp';
+import { FileBoxWrapper } from '../../file-box/file-box-wrapper.spec';
+import { FileBox } from '../../file-box/file-box.spec';
 
 const styles = `
     .k-chat {

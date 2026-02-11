@@ -1,4 +1,5 @@
-import { PromptBoxLineModeSingle, PromptBoxStopResponse } from '..';
+import { PromptBoxLineModeSingle } from '../templates/prompt-box-single';
+import { PromptBoxStopResponse } from '../templates/prompt-box-stop-response';
 
 const styles = ``;
 

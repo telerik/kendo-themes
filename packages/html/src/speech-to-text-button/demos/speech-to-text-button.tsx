@@ -1,5 +1,5 @@
 ﻿import { SpeechToTextButton } from '../speech-to-text-button.spec';
-import { Button, KendoButtonProps } from '../../button';
+import { Button, KendoButtonProps } from '../../button/button.spec';
 
 const states = Button.states;
 const defaults = {

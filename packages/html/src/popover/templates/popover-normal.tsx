@@ -1,6 +1,6 @@
-import { Popover } from "..";
-import { ActionButtons } from "../../action-buttons";
-import { Button } from "../../button";
+import { Popover } from '../popover.spec';
+import { ActionButtons } from "../../action-buttons/action-buttons.spec";
+import { Button } from "../../button/button.spec";
 
 export const PopoverNormal = (props) => (
     <Popover

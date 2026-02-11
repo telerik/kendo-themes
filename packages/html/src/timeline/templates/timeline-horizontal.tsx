@@ -1,4 +1,11 @@
-import { Timeline, TimelineTrackWrap, TimelineTrackItem, TimelineFlag, TimelineDateWrap, TimelineCircle, TimelineEventList, HorizontalTimelineEvent } from "../../timeline";
+import { Timeline } from "../../timeline/timeline.spec";
+import { TimelineTrackWrap } from "../../timeline/timeline-track-wrap.spec";
+import { TimelineTrackItem } from "../../timeline/timeline-track-item.spec";
+import { TimelineFlag } from "../../timeline/timeline-flag.spec";
+import { TimelineDateWrap } from "../../timeline/timeline-date-wrap.spec";
+import { TimelineCircle } from "../../timeline/timeline-circle.spec";
+import { TimelineEventList } from "../../timeline/timeline-event-list.spec";
+import { HorizontalTimelineEvent } from "../../timeline/horizontal-timeline-event.spec";
 
 export const TimelineHorizontal = (props) => (
     <Timeline

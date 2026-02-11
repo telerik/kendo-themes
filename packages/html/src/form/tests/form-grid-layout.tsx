@@ -1,8 +1,10 @@
-import { CheckboxWithLabelAfter } from '../../checkbox';
-import { DropdownList } from '../../dropdownlist';
-import { Fieldset, FormField, FormGridLayout } from '../../form';
-import { RadioButton } from '../../radio';
-import { Textbox } from '../../textbox';
+import { CheckboxWithLabelAfter } from '../../checkbox/templates/checkbox-with-label-after';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { Fieldset } from '../../form/fieldset';
+import { FormGridLayout } from '../../form/templates/form-grid-layout';
+import { FormField } from '../../form/form-field';
+import { RadioButton } from '../../radio/radio.spec';
+import { Textbox } from '../../textbox/textbox.spec';
 
 const styles = `
     section {

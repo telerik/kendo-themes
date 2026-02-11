@@ -1,7 +1,16 @@
-import { Icon } from '../../icon';
-import { GridHeader, GridHeaderTable, GridHeaderCell, GridContent, GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
-import { TreeListNormal, TreeListWithColumnMenu, TreeListWithFilterMenu } from '..';
+import { Icon } from '../../icon/icon.spec';
+import { GridHeader } from '../../grid/grid-header.spec';
+import { GridHeaderTable } from '../../grid/grid-header-table.spec';
+import { GridHeaderCell } from '../../grid/grid-header-cell.spec';
+import { GridContent } from '../../grid/grid-content.spec';
+import { GridTable } from '../../grid/grid-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
+import { TreeListNormal } from '../templates/treelist-normal';
+import { TreeListWithColumnMenu } from '../templates/treelist-with-column-menu';
+import { TreeListWithFilterMenu } from '../templates/treelist-with-filter-menu';
 
 export default () =>(
     <>

@@ -1,4 +1,5 @@
-import { DataTable, DataTableNormal } from '../../table';
+import { DataTable } from '../../table/data-table.spec';
+import { DataTableNormal } from '../templates/data-table-normal';
 
 
 const style = `

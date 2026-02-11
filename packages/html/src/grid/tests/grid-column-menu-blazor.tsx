@@ -1,7 +1,16 @@
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { GridWithColumnMenu, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { GridWithColumnMenu } from '../templates/grid-with-column-menu';
+import { GridHeader } from '../grid-header.spec';
+import { GridHeaderTable } from '../grid-header-table.spec';
+import { GridHeaderCell } from '../grid-header-cell.spec';
+import { GridContainer } from '../grid-container.spec';
+import { GridContent } from '../grid-content.spec';
+import { GridTable } from '../grid-table.spec';
+import { TableThead } from '../../table/table-thead';
+import { TableTbody } from '../../table/table-tbody';
+import { TableRow } from '../../table/table-row';
+import { TableTd } from '../../table/table-td';
 
 export default () =>(
     <>

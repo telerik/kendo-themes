@@ -1,5 +1,5 @@
 ﻿import { FloatingLabel, KendoFloatingLabelProps } from '../floating-label.spec';
-import { TextboxNormal } from '../../textbox';
+import { TextboxNormal } from '../../textbox/templates/textbox-normal';
 
 const options = FloatingLabel.options;
 const variants = [];

@@ -1,4 +1,5 @@
-import { DropdownTree, DropdownTreeNormal } from '../../dropdowntree';
+import { DropdownTree } from '../../dropdowntree/dropdowntree.spec';
+import { DropdownTreeNormal } from '../../dropdowntree/templates/dropdowntree-normal';
 
 
 const styles = `

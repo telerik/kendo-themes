@@ -1,5 +1,6 @@
-import { Icon } from '../../icon';
-import { BottomNavNormal, BottomNavItem } from '../../bottom-nav';
+import { Icon } from '../../icon/icon.spec';
+import { BottomNavNormal } from '../templates/bottom-nav-normal';
+import { BottomNavItem } from '../bottom-nav-item';
 
 const styles = `
 #test-area {

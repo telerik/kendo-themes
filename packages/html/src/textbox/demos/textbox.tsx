@@ -1,7 +1,7 @@
 ﻿import { Textbox, KendoTextboxProps } from '../textbox.spec';
 import { TextboxNormal } from '../templates/textbox-normal';
-import { Icon } from '../../icon';
-import { TextButton } from '../../button';
+import { Icon } from '../../icon/icon.spec';
+import { TextButton } from '../../button/templates/text-button';
 
 const states = Textbox.states;
 const defaults = Textbox.defaultOptions;

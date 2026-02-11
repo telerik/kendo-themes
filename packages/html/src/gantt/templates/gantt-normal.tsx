@@ -1,11 +1,33 @@
-import { Gantt, GanttColumnsTable, GanttContent, GanttFooterToolbar, GanttHeaderToolbar, GanttLine, GanttRowsTable, GanttTables, GanttTask, GanttTaskContent, GanttTaskDot, GanttTaskWrap, GanttTasksTable } from "..";
-import { GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, Grid } from "../../grid";
-import { TableThead, TableRow, TableTbody, TableTd } from "../../table";
-import { Splitter, SplitterPane } from "../../splitter";
-import { ButtonGroup } from "../../button-group";
-import { TreeList } from "../../treelist";
-import { Button } from "../../button";
-import { Icon } from "../../icon";
+import { Gantt } from "../gantt.spec";
+import { GanttHeaderToolbar } from "../gantt-header-toolbar.spec";
+import { GanttFooterToolbar } from "../gantt-footer-toolbar.spec";
+import { GanttContent } from "../gantt-content.spec";
+import { GanttTables } from "../gantt-tables-wrapper.spec";
+import { GanttRowsTable } from "../gantt-rows-table.spec";
+import { GanttColumnsTable } from "../gantt-columns-table.spec";
+import { GanttTasksTable } from "../gantt-tasks-table.spec";
+import { GanttTaskWrap } from "../gantt-task-wrap.spec";
+import { GanttTask } from "../gantt-task.spec";
+import { GanttTaskContent } from "../gantt-task-content.spec";
+import { GanttTaskDot } from "../gantt-task-dot.spec";
+import { GanttLine } from "../gantt-line.spec";
+import { Grid } from "../../grid/grid.spec";
+import { GridHeader } from "../../grid/grid-header.spec";
+import { GridHeaderTable } from "../../grid/grid-header-table.spec";
+import { GridHeaderCell } from "../../grid/grid-header-cell.spec";
+import { GridContainer } from "../../grid/grid-container.spec";
+import { GridContent } from "../../grid/grid-content.spec";
+import { GridTable } from "../../grid/grid-table.spec";
+import { TableThead } from '../../table/table-thead';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
+import { Splitter } from "../../splitter/splitter.spec";
+import { SplitterPane } from "../../splitter/splitter-pane";
+import { ButtonGroup } from "../../button-group/button-group.spec";
+import { TreeList } from "../../treelist/treelist.spec";
+import { Button } from "../../button/button.spec";
+import { Icon } from "../../icon/icon.spec";
 
 
 export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "180px", tablesWidth = "675px", tablesHeight = "828px", currentTimeLeftOffset = "243px", ganttDependencies, menu, ...other }: any) => (

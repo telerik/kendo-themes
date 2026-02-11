@@ -1,10 +1,11 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { Combobox } from '../../combobox';
-import { MenuButton } from '../../menu-button';
-import { PagerInput } from '../../pager';
-import { PDFViewerWithAnnotations } from '../../pdf-viewer';
-import { Toolbar, ToolbarSeparator } from '../../toolbar';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Combobox } from '../../combobox/combobox.spec';
+import { MenuButton } from '../../menu-button/menu-button.spec';
+import { PagerInput } from "../../pager/templates/pager-input";
+import { PDFViewerWithAnnotations } from '../../pdf-viewer/templates/pdf-viewer-with-annotations';
+import { Toolbar } from "../../toolbar/toolbar.spec";
+import { ToolbarSeparator } from "../../toolbar/toolbar-separator";
 
 const styles = `
     #test-area .k-pdf-viewer {

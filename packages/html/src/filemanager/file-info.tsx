@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { classNames } from '../misc';
-import { FilePreview } from '.';
+import { FilePreview } from './file-preview';
 
 const FILEINFO_CLASSNAME = 'k-file-info';
 

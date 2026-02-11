@@ -1,9 +1,14 @@
-import { SmartBoxOpened } from '../../smart-box';
-import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
-import { List, ListItem, ListGroupItem, ListContent, ListUl } from '../../list';
-import { Icon } from "../../icon";
-import { IconButton } from '../../button';
-import { NoData } from "../../nodata";
+import { SmartBoxOpened } from '../../smart-box/templates/smart-box-opened';
+import { SegmentedControl } from '../../segmented-control/segmented-control.spec';
+import { SegmentedControlButton } from '../../segmented-control/segmented-control-button.spec';
+import { List } from '../../list/list.spec';
+import { ListItem } from '../../list/list-item.spec';
+import { ListGroupItem } from '../../list/list-group-item';
+import { ListContent } from '../../list/list-content';
+import { ListUl } from '../../list/list-ul';
+import { Icon } from "../../icon/icon.spec";
+import { IconButton } from '../../button/templates/icon-button';
+import { NoData } from "../../nodata/nodata";
 
 
 const styles = `

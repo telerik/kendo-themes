@@ -1,4 +1,6 @@
-import { ChatMessage, ChatNormal, ChatMessageGroup} from '..';
+import { ChatMessage } from '../chat-message';
+import { ChatNormal } from '../templates/chat-normal';
+import { ChatMessageGroup } from '../chat-message-group';
 
 const styles = `
     .k-chat {

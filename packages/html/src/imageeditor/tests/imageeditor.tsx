@@ -1,4 +1,4 @@
-import { ImageEditorNormal } from '..';
+import { ImageEditorNormal } from '../templates/imageeditor-normal';
 
 
 export default () =>(

@@ -1,4 +1,4 @@
-import { GridLayout } from "..";
+import { GridLayout } from '../grid-layout.spec';
 
 export const GridLayoutNormal = ({ alignItems = "start", justifyItems = "start", ...other }: any) => (
     <GridLayout

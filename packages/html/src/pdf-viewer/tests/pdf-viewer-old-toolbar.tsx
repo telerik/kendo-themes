@@ -1,9 +1,9 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
-import { Combobox } from '../../combobox';
-import { PagerInput } from '../../pager';
-import { PDFViewerNormal } from '../../pdf-viewer';
-import { Toolbar } from '../../toolbar';
+import { Button } from '../../button/button.spec';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Combobox } from '../../combobox/combobox.spec';
+import { PagerInput } from "../../pager/templates/pager-input";
+import { PDFViewerNormal } from '../../pdf-viewer/templates/pdf-viewer-normal';
+import { Toolbar } from '../../toolbar/toolbar.spec';
 
 const styles = `
     #test-area .k-pdf-viewer {

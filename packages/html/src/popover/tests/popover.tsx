@@ -1,4 +1,4 @@
-import { PopoverNormal } from '../../popover';
+import { PopoverNormal } from '../../popover/templates/popover-normal';
 
 
 const styles = `

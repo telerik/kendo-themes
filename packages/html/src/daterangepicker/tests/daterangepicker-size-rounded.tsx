@@ -1,4 +1,5 @@
-import { DateRangePicker, DateRangePickerNormal } from '../../daterangepicker';
+import { DateRangePicker } from '../../daterangepicker/daterangepicker.spec';
+import { DateRangePickerNormal } from '../../daterangepicker/templates/daterangepicker-normal';
 
 const styles = `
     #test-area {

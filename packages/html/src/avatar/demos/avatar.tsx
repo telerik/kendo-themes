@@ -2,7 +2,7 @@
 import { AvatarImage } from '../templates/avatar-image';
 import { AvatarIcon } from '../templates/avatar-icon';
 import { AvatarText } from '../templates/avatar-text';
-import { Icon } from '../../icon';
+import { Icon } from '../../icon/icon.spec';
 
 const options = Avatar.options;
 const states = Avatar.states;

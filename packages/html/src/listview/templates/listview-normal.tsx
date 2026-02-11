@@ -1,4 +1,5 @@
-import { ListView, ListViewItem } from '../../listview';
+import { ListView } from '../../listview/listview.spec';
+import { ListViewItem } from '../../listview/listview-item.spec';
 
 export const ListViewNormal = (props) => (
     <ListView children={

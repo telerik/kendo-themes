@@ -1,6 +1,7 @@
-import { PromptBoxLineModeMulti } from '..';
-import { IconButton } from '../../button';
-import { FileBoxWrapper, FileBox } from "../../file-box";
+import { PromptBoxLineModeMulti } from '../templates/prompt-box-multi';
+import { IconButton } from '../../button/templates/icon-button';
+import { FileBox } from "../../file-box/file-box.spec";
+import { FileBoxWrapper } from "../../file-box/file-box-wrapper.spec";
 
 const styles = `
     #test-area {

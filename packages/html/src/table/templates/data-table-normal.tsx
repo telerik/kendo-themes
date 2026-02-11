@@ -1,4 +1,15 @@
-import { DataTable, Table, TableBody, TableFooter, TableGroupRow, TableHeader, TableRow, TableTbody, TableTd, TableTfoot, TableTh, TableThead } from '../../table';
+import { DataTable } from '../../table/data-table.spec';
+import { Table } from '../../table/table.spec';
+import { TableBody } from '../../table/table-body';
+import { TableFooter } from '../../table/table-footer.spec';
+import { TableGroupRow } from '../../table/table-group-row';
+import { TableHeader } from '../../table/table-header.spec';
+import { TableRow } from '../../table/table-row';
+import { TableTbody } from '../../table/table-tbody';
+import { TableTd } from '../../table/table-td';
+import { TableTfoot } from '../../table/table-tfoot';
+import { TableTh } from '../../table/table-th.spec';
+import { TableThead } from '../../table/table-thead';
 
 export const DataTableNormal = (props) => (
     <DataTable {...props}>

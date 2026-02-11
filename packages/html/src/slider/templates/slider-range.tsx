@@ -1,4 +1,5 @@
-import { Slider, SliderTick } from "../../slider";
+import { Slider } from "../../slider/slider.spec";
+import { SliderTick } from "../../slider/slider-tick";
 
 export const SliderRange = (props) => (
     <Slider

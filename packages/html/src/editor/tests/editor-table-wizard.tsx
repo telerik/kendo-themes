@@ -1,15 +1,19 @@
-import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { ColorPicker } from '../../colorpicker';
-import { DropdownList } from '../../dropdownlist';
-import { FormNormal, FormField, Fieldset } from '../../form';
-import { Icon } from '../../icon';
-import { NumericTextbox } from '../../numerictextbox';
-import { Popup } from '../../popup';
-import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
-import { Textarea } from '../../textarea';
-import { Textbox } from '../../textbox';
-import { WindowNormal } from '../../window';
+import { Button } from '../../button/button.spec';
+import { Checkbox } from '../../checkbox/checkbox.spec';
+import { ColorPicker } from '../../colorpicker/colorpicker.spec';
+import { DropdownList } from '../../dropdownlist/dropdownlist.spec';
+import { FormNormal } from '../../form/templates/form-normal';
+import { FormField } from '../../form/form-field';
+import { Fieldset } from '../../form/fieldset';
+import { Icon } from '../../icon/icon.spec';
+import { NumericTextbox } from '../../numerictextbox/numerictextbox.spec';
+import { Popup } from '../../popup/popup.spec';
+import { TabStripNormal } from '../../tabstrip/templates/tabstrip-normal';
+import { TabStripItem } from '../../tabstrip/tabstrip-item';
+import { TabStripContent } from '../../tabstrip/tabstrip-content';
+import { Textarea } from '../../textarea/textarea.spec';
+import { Textbox } from '../../textbox/textbox.spec';
+import { WindowNormal } from '../../window/templates/window-normal';
 
 
 const styles = `

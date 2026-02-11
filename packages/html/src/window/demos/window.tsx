@@ -1,5 +1,5 @@
 ﻿import { Window, KendoWindowProps } from '../window.spec';
-import { Button } from '../../button';
+import { Button } from '../../button/button.spec';
 
 const options = Window.options.themeColor;
 const states = Window.states;

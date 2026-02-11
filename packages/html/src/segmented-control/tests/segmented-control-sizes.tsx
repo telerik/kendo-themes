@@ -1,4 +1,4 @@
-import { SegmentedControlNormal } from '..';
+import { SegmentedControlNormal } from '../templates/segmented-control-normal';
 import { SegmentedControl } from '../segmented-control.spec';
 
 

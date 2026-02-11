@@ -1,5 +1,5 @@
-import { OrgchartGroupNormal, OrgchartGroupVertical } from '../../orgchart';
-
+import { OrgchartGroupVertical } from '../../orgchart/templates/orgchart-group-vertical';
+import { OrgchartGroupNormal } from '../../orgchart/templates/orgchart-group-normal';
 
 const styles = `
     #test-area {

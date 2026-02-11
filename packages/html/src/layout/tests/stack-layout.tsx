@@ -1,4 +1,5 @@
-import { StackLayoutNormal, StackLayoutVertical } from '../../layout';
+import { StackLayoutNormal } from '../../layout/templates/stack-layout-normal';
+import { StackLayoutVertical } from '../../layout/templates/stack-layout-vertical';
 
 
 const styles = `

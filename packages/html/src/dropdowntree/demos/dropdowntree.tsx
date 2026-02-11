@@ -1,5 +1,7 @@
 ﻿import { DropdownTree, KendoDropdownTreeProps } from '../dropdowntree.spec';
-import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
+import { Treeview } from '../../treeview/treeview.spec';
+import { TreeviewGroup } from '../../treeview/treeview-group';
+import { TreeviewItem } from '../../treeview/treeview-item.spec';
 
 const states = DropdownTree.states;
 const defaults = DropdownTree.defaultOptions;

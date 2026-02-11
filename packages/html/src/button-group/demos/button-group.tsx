@@ -1,5 +1,5 @@
 ﻿import { ButtonGroup } from '../button-group.spec';
-import { Button, KendoButtonProps } from '../../button';
+import { Button, KendoButtonProps } from '../../button/button.spec';
 
 const options = Button.options;
 const states = Button.states;

@@ -1,4 +1,5 @@
-import { DrawerMini, DrawerNormal } from '..';
+import { DrawerMini } from '../templates/drawer-mini';
+import { DrawerNormal } from '../templates/drawer-normal';
 
 const styles = `
     #test-area .k-drawer-content {

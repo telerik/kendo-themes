@@ -1,8 +1,8 @@
 import TimeSelector from "../time-selector.spec";
-import { Button } from '../../button';
-import { ActionButtons } from '../../action-buttons';
+import { Button } from '../../button/button.spec';
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
 import { TimeSelectorHeader } from '../time-selector-header';
-import { Popup } from '../../popup';
+import { Popup } from '../../popup/popup.spec';
 
 export const TimeSelectorMinute = (props) => (
     <Popup

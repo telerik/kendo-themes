@@ -1,6 +1,9 @@
-import { ActionSheet, ActionSheetHeader } from '../../action-sheet';
-import { Button } from '../../button';
-import { List, ListContent, ListItem } from '../../list';
+import { ActionSheet } from '../../action-sheet/action-sheet.spec';
+import { ActionSheetHeader } from '../../action-sheet/actionsheet-header';
+import { Button } from '../../button/button.spec';
+import { List } from '../../list/list.spec';
+import { ListContent } from '../../list/list-content';
+import { ListItem } from '../../list/list-item.spec';
 import { PagerInput } from '../templates/pager-input';
 
 

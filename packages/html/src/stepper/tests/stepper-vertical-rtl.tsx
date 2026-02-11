@@ -1,5 +1,7 @@
-import { Step, StepList, StepperVertical } from '..';
-import { ProgressBarNormal } from '../../progressbar';
+import { Step } from '../step';
+import { StepList } from '../step-list';
+import { StepperVertical } from '../templates/stepper-vertical';
+import { ProgressBarNormal } from '../../progressbar/templates/progressbar-normal';
 
 
 const style = `

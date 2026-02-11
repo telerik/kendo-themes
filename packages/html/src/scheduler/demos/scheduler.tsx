@@ -5,7 +5,7 @@ import { SchedulerFlexDay } from '../templates/scheduler-flex-day';
 import { SchedulerFlexMonth } from '../templates/scheduler-flex-month';
 import { SchedulerFlexTimeline } from '../templates/scheduler-flex-timeline';
 import { SchedulerFlexWeek } from '../templates/scheduler-flex-week';
-import { Button } from '../../button';
+import { Button } from '../../button/button.spec';
 
 const options = Scheduler.options;
 const states = Scheduler.states;

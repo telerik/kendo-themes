@@ -1,9 +1,15 @@
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { Icon } from '../../icon';
-import { Popup } from '../../popup';
-import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuNormal, FilterMenuMultiCheck, ColumnList, ColumnListItem } from "../../column-menu";
-
+import { ActionButtons } from '../../action-buttons/action-buttons.spec';
+import { Button } from '../../button/button.spec';
+import { Icon } from '../../icon/icon.spec';
+import { Popup } from '../../popup/popup.spec';
+import { ColumnMenuItem } from '../../column-menu/column-menu-item.spec';
+import { ColumnMenuItemWrapper } from '../../column-menu/column-menu-item-wrapper';
+import { ColumnMenuExpander } from '../../column-menu/column-menu-expander.spec';
+import { FilterMenuMultiCheck } from '../../column-menu/templates/filter-menu-multi-check';
+import { FilterMenuNormal } from '../../column-menu/templates/filter-menu-normal';
+import { ColumnList } from '../../column-menu/column-list.spec';
+import { ColumnListItem } from '../../column-menu/column-list-item';
+import { ColumnMenuNormal } from '../../column-menu/templates/column-menu-normal';
 
 const styles = `
     .k-animation-container,

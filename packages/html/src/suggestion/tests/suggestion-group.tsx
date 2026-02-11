@@ -1,4 +1,7 @@
-import { SuggestionGroupNormal, SuggestionGroupWrap, SuggestionScrollableButtons, Suggestion } from '..';
+import { SuggestionGroupNormal } from '../templates/suggestion-group-normal';
+import { SuggestionGroupWrap } from '../templates/suggestion-group-wrap';
+import { SuggestionScrollableButtons } from '../templates/suggestion-group-scrollable-buttons';
+import { Suggestion } from '../suggestion';
 
 const style = `
     #test-area {

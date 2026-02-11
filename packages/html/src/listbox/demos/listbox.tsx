@@ -1,5 +1,5 @@
 ﻿import { ListBox, KendoListBoxProps } from '../listbox.spec';
-import { ListItem } from '../../list';
+import { ListItem } from '../../list/list-item.spec';
 import { ListBoxNormal } from '../templates/listbox-normal';
 
 const options = ListBox.options;

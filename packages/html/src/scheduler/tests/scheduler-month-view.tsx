@@ -1,4 +1,5 @@
-import { SchedulerMonth, SchedulerFlexMonth } from "..";
+import { SchedulerMonth } from '../templates/scheduler-month';
+import { SchedulerFlexMonth } from '../templates/scheduler-flex-month';
 
 export default () => (
     <>

@@ -1,4 +1,4 @@
-import { MultiSelectTreeAdaptive } from '../../multiselecttree';
+import { MultiSelectTreeAdaptive } from '../../multiselecttree/templates/multiselecttree-adaptive';
 
 const styles = `
     #test-area {

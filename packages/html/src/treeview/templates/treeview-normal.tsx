@@ -1,4 +1,5 @@
-import { Treeview, TreeviewItem } from "../../treeview";
+import { Treeview } from "../../treeview/treeview.spec";
+import { TreeviewItem  } from "../../treeview/treeview-item.spec";
 
 export const TreeviewNormal = ({ children, ...other }: any) => (
     <Treeview {...other}>

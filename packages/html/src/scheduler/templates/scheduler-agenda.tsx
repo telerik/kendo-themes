@@ -1,6 +1,13 @@
-import { ButtonGroup } from '../../button-group';
-import { Button } from '../../button';
-import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerToolbar } from '../index';
+import { ButtonGroup } from '../../button-group/button-group.spec';
+import { Button } from '../../button/button.spec';
+import { Scheduler } from '../scheduler.spec';
+import { SchedulerBody } from '../scheduler-body.spec';
+import { SchedulerCell } from '../scheduler-cell.spec';
+import { SchedulerContent } from '../scheduler-content.spec';
+import { SchedulerHead } from '../scheduler-head.spec';
+import { SchedulerHeader } from '../scheduler-header.spec';
+import { SchedulerTable } from '../scheduler-table.spec';
+import { SchedulerToolbar } from '../scheduler-toolbar.spec';
 import SchedulerTask from '../scheduler-task.spec';
 
 export const SchedulerAgenda = ({ style, ...props }: any) => (
