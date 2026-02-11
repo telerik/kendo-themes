@@ -71,7 +71,8 @@ export interface ButtonProps {
 
 **Naming Convention**:
 - Use descriptive file names: `card-normal.tsx`, `card-horizontal.tsx`
-- Export from component's `index.ts`
+- Prefer `[component]-normal.tsx` when the template represents the default rendering of a component; otherwise use a descriptive template name (e.g., `text-button.tsx`, `icon-button.tsx`)
+- Add exports to component's `index.ts` for external package consumers (but don't import FROM index.ts within the package)
 
 **Example**:
 ```typescript
@@ -115,6 +116,9 @@ export default () => (
 - Export all templates
 - Export test utilities
 - Maintain clean import paths
+- **NOT for internal imports** - tests, demos, and templates should use direct file imports
+
+**Internal Usage Rule**: Files within `packages/html/src/` should import directly from specific files, not from index files. Index files exist only to define the public API for external consumers.
 
 ## Coding Standards
 
@@ -133,6 +137,46 @@ export default () => (
 - Tests: kebab-case (`button-solid.tsx`)
 - Specs: kebab-case (` button.spec.tsx`)
 - CSS classes: BEM with `k-` prefix (`k-button`, `k-button-solid`)
+
+## Development Workflow
+
+The HTML package follows a modular architecture where components are built from discrete files:
+
+1. **Spec files** (`.spec.tsx`) - Define component interfaces and props
+2. **Template files** (`templates/*.tsx`) - Implement reusable UI patterns
+3. **Test files** (`tests/*.tsx`) - Create visual test scenarios
+4. **Index files** (`index.ts`) - Export public API for external consumers
+
+**Internal Import Pattern**: Within the package, files import directly from specific files to avoid bundling unnecessary code. For example, a test file imports `from '../button.spec'` rather than `from '..'` to ensure only the needed code is included.
+
+**External Import Pattern**: External consumers use the package via `import { Button } from '@progress/kendo-theme-html'`, which uses the index files.
+
+This separation keeps bundle sizes minimal and enables tree-shaking for downstream consumers.
+
+## Important Guidelines
+
+⚠️ **Bundle Size Optimization**: Always import from specific component files, NOT from index files.
+
+## Code Review Guidelines
+
+When reviewing code changes in the HTML package, **always check imports** and report violations:
+
+### Import Violations to Flag:
+- ❌ `from '../../button'` or `from "../../button"` - missing file name (uses index)
+- ❌ `from '../../button/'` or `from "../../button/"` - trailing slash (uses index)
+- ❌ `from '../../button/index'` or `from "../../button/index"` - explicit index import
+- ❌ `from '..'` or `from ".."` - parent directory (uses index)
+- ❌ `from '../'` or `from "../"` - parent directory with trailing slash (uses index)
+- ❌ `from '.'` or `from "."` - current directory (uses index)
+- ❌ `from './'` or `from "./"` - current directory with trailing slash (uses index)
+- ✅ `from '../../button/button.spec'` or `from "../../button/button.spec"` - correct specific file import
+- ✅ `from '../wizard-steps'` or `from "../wizard-steps"` - correct direct file import (not a directory)
+
+**Required Check**: For every import from `../../[component-name]` without a file path, verify that the imported path is:
+1. A **specific file** (e.g., `button.spec`, `toolbar-popup.spec`)
+2. NOT a **directory** that contains an index file
+
+Report any violations with: "Bundle size issue: Import uses barrel file. Change `from '../../X'` to `from '../../X/X.spec'` or specific file."
 
 ## Build Commands
 
