@@ -51,7 +51,7 @@ $kendo-file-box-border: $kendo-file-box-bg !default;
 
 /// The gradient used for the File Box wrapper scrolling indicator.
 /// @group file-box
-$kendo-file-box-wrapper-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100% !default;
+$kendo-file-box-wrapper-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, k-color(app-surface) 100% !default;
 
 @forward "@progress/kendo-theme-core/scss/components/file-box/_variables.scss" with (
     $kendo-file-box-padding-x: $kendo-file-box-padding-x,
