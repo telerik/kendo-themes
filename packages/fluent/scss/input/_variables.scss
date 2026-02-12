@@ -203,7 +203,7 @@ $kendo-input-flat-text: var( --kendo-input-flat-text, k-color(on-app-surface) ) 
 
 /// The background color of the flat Input components.
 /// @group input
-$kendo-input-flat-bg: var( --kendo-input-flat-bg, k-color(app-surface) ) !default;
+$kendo-input-flat-bg: var( --kendo-input-flat-bg, transparent ) !default;
 
 /// The border color of the flat Input components.
 /// @group input
@@ -215,7 +215,7 @@ $kendo-input-flat-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered flat Input components.
 /// @group input
-$kendo-input-flat-hover-bg: k-color(app-surface) !default;
+$kendo-input-flat-hover-bg: transparent !default;
 
 /// The border color of the hovered flat Input components.
 /// @group input
@@ -227,7 +227,7 @@ $kendo-input-flat-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused flat Input components.
 /// @group input
-$kendo-input-flat-focus-bg: k-color(app-surface) !default;
+$kendo-input-flat-focus-bg: transparent !default;
 
 /// The border color of the focused flat Input components.
 /// @group input
@@ -374,7 +374,7 @@ $kendo-picker-flat-text: var( --kendo-picker-flat-text, k-color(on-app-surface) 
 
 /// The background color of the flat Picker components.
 /// @group picker
-$kendo-picker-flat-bg: var( --kendo-picker-flat-bg, none ) !default;
+$kendo-picker-flat-bg: var( --kendo-picker-flat-bg, transparent ) !default;
 
 /// The border color of the flat Picker components.
 /// @group picker
