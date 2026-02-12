@@ -6,8 +6,8 @@ import { InputSeparator } from '../input-separator';
 import { InputClearValue } from '../input-clear-value';
 import { InputValidationIcon } from '../input-validation-icon';
 import { InputLoadingIcon } from '../input-loading-icon';
-import { Icon } from '../../icon';
-import { TextButton } from '../../button';
+import { Icon } from '../../icon/icon.spec';
+import { TextButton } from '../../button/templates/text-button';
 
 const states = Input.states;
 const defaults = Input.defaultOptions;
