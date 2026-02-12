@@ -11,3 +11,4 @@ export * from './input-suffix';
 export * from './input-prefix-text';
 export * from './input-suffix-text';
 export * from './input-separator';
+export * from './demos/input';
