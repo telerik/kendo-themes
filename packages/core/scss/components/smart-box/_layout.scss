@@ -16,7 +16,7 @@
             cursor: pointer;
         }
 
-         // Roundness
+        // Roundness
         @each $roundness in $kendo-smart-box-roundness {
             #{k-when-default($kendo-smart-box-default-roundness, $roundness)}
             &.k-rounded-#{$roundness} {
