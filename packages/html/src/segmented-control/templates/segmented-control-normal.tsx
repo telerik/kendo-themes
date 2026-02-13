@@ -5,7 +5,7 @@ export const SegmentedControlNormal = (props) => (
     <SegmentedControl {...props} children={
         <>
             <SegmentedControlButton icon="search" selected>Search</SegmentedControlButton>
-            <SegmentedControlButton icon="sparkles"> AI Assisstant</SegmentedControlButton>
+            <SegmentedControlButton icon="sparkles"> AI Assistant</SegmentedControlButton>
         </>
     } />
 );

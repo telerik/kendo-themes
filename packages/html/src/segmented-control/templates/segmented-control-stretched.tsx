@@ -5,7 +5,7 @@ export const SegmentedControlStretched = (props) => (
     <SegmentedControl {...props} stretched children={
         <>
             <SegmentedControlButton icon="search" selected>Search</SegmentedControlButton>
-            <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon"> AI Assisstant</SegmentedControlButton>
+            <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon"> AI Assistant</SegmentedControlButton>
         </>
     } />
 );
