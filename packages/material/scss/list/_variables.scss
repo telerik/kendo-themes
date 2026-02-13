@@ -358,7 +358,7 @@ $kendo-list-option-label-text: k-color(subtle) !default;
 $kendo-list-item-description-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The line of the list item description.
 /// @group list
-$kendo-list-item-description-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-list-item-description-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the list item description.
 /// @group list
 $kendo-list-item-description-text: k-color(subtle) !default;

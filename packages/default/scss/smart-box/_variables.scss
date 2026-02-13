@@ -18,7 +18,7 @@ $kendo-smart-box-suffix-spacing: k-spacing(1) !default;
 
 /// The horizontal padding of the small Smart box.
 /// @group smart-box
-$kendo-smart-box-sm-padding-x: k-spacing(0) !default;
+$kendo-smart-box-sm-padding-x: 0 !default;
 /// The horizontal padding of the medium Smart box.
 /// @group smart-box
 $kendo-smart-box-md-padding-x: k-spacing(.5) !default;
@@ -34,7 +34,7 @@ $kendo-smart-box-sm-prefix-margin-x: k-spacing(1) !default;
 $kendo-smart-box-md-prefix-margin-x: k-spacing(1) !default;
 /// The horizontal margin of the prefix icon in the large Smart box.
 /// @group smart-box
-$kendo-smart-box-lg-prefix-margin-x: k-spacing(0) !default;
+$kendo-smart-box-lg-prefix-margin-x: 0 !default;
 
 /// The inline padding of the popup of the Smart box.
 /// @group smart-box
