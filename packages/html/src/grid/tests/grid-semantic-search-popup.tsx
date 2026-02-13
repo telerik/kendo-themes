@@ -24,8 +24,8 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
             <span>Search + Semantic Search + AI Prompt</span>
+            <span>Semantic Search Selected</span>
             <span>Search + AI Prompt</span>
-            <span>No previous searches</span>
 
             <section>
                 <SmartBoxOpened
@@ -43,10 +43,10 @@ export default () =>(
                     }
                     popup={
                         <>
-                            <SegmentedControl stretched children={
+                            <SegmentedControl size="small" stretched children={
                                 <>
                                     <SegmentedControlButton icon="search">Search</SegmentedControlButton>
-                                    <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon" selected> AI Assisstant</SegmentedControlButton>
+                                    <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon" selected> AI Assistant</SegmentedControlButton>
                                 </>
                             } />
                             <List>
@@ -82,25 +82,23 @@ export default () =>(
                     }
                     popup={
                         <>
-                            <SegmentedControl stretched children={
+                            <SegmentedControl size="small" stretched children={
                                 <>
-                                    <SegmentedControlButton icon="search">Search</SegmentedControlButton>
-                                    <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon" selected> AI Assisstant</SegmentedControlButton>
+                                    <SegmentedControlButton icon="zoom-sparkle">Search</SegmentedControlButton>
+                                    <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon" selected> AI Assistant</SegmentedControlButton>
                                 </>
                             } />
                             <List>
                                 <ListContent grouping>
                                     <ListUl>
-                                        <ListGroupItem groupIconName="lightbulb-outline">Suggested prompts</ListGroupItem>
-                                        <ListItem>Filter by account type</ListItem>
-                                        <ListItem>Show only failed transactions</ListItem>
-                                        <ListItem>Hide Currency column</ListItem>
-                                        <ListItem>Sort by Customer Name ascending</ListItem>
+                                        <ListItem description='Fuzzy relevance across fields using similarity scoring'>Search</ListItem>
+                                        <ListItem iconName="check" iconClassName="k-smart-box-check-icon" description='Keyword + semantic ranking for best results'>Semantic Search</ListItem>
                                     </ListUl>
                                     <ListUl>
-                                        <ListGroupItem groupIconName="clock-arrow-rotate">Previously asked</ListGroupItem>
-                                        <ListItem description="03:07">Sort by amount descending</ListItem>
-                                        <ListItem description="10:02">Sort by amount ascending</ListItem>
+                                        <ListGroupItem groupIconName="clock-arrow-rotate">Previously searched</ListGroupItem>
+                                        <ListItem>account</ListItem>
+                                        <ListItem>transactions Long long long long long content</ListItem>
+                                        <ListItem>customer</ListItem>
                                     </ListUl>
                                 </ListContent>
                             </List>
@@ -122,11 +120,58 @@ export default () =>(
                         </>
                     }
                     popup={
+                        <>
+                            <SegmentedControl size="small" stretched children={
+                                <>
+                                    <SegmentedControlButton icon="search">Search</SegmentedControlButton>
+                                    <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon" selected> AI Assistant</SegmentedControlButton>
+                                </>
+                            } />
+                            <List>
+                                <ListContent grouping>
+                                    <ListUl>
+                                        <ListGroupItem groupIconName="lightbulb-outline">Suggested prompts</ListGroupItem>
+                                        <ListItem>Filter by account type</ListItem>
+                                        <ListItem>Show only failed transactions</ListItem>
+                                        <ListItem>Hide Currency column</ListItem>
+                                        <ListItem>Sort by Customer Name ascending</ListItem>
+                                    </ListUl>
+                                    <ListUl>
+                                        <ListGroupItem groupIconName="clock-arrow-rotate">Previously asked</ListGroupItem>
+                                        <ListItem description="03:07">Sort by amount descending</ListItem>
+                                        <ListItem description="10:02">Sort by amount ascending</ListItem>
+                                    </ListUl>
+                                </ListContent>
+                            </List>
+                    </>} />
+            </section>
+
+
+            <span>No previous searches</span>
+            <span></span>
+            <span></span>
+
+
+            <section>
+                <SmartBoxOpened
+                    separators={false}
+                    prefix={
+                        <>
+                            <Icon icon="sparkles" className='k-accent-icon' />
+                        </>
+                    }
+                    suffix={
+                        <>
+                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
+                        </>
+                    }
+                    popup={
                     <>
-                        <SegmentedControl stretched children={
+                        <SegmentedControl size="small" stretched children={
                             <>
                                 <SegmentedControlButton icon="search">Search</SegmentedControlButton>
-                                <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon" selected> AI Assisstant</SegmentedControlButton>
+                                <SegmentedControlButton icon="sparkles" iconClassName="k-accent-icon" selected> AI Assistant</SegmentedControlButton>
                             </>
                         } />
                         <NoData className="k-smart-box-no-data">
