@@ -3,6 +3,7 @@
 @use "../core/z-index/index.scss" as *;
 @use "../core/motion/index.scss" as *;
 @use "../core/functions/index.scss" as *;
+@use "../core/border-radii/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
 
 
@@ -23,7 +24,7 @@
                 #{k-when-default($kendo-input-default-roundness, $roundness)}
                 &.k-rounded-#{$roundness} {
                     @include border-bottom-radius( 0 );
-                    @include border-top-radius( $roundness );
+                    @include border-top-radius( k-border-radius($roundness) );
                 }
             }
         }
@@ -103,7 +104,7 @@
                 #{k-when-default($kendo-picker-default-roundness, $roundness)}
                 &.k-rounded-#{$roundness} {
                     @include border-bottom-radius( 0 );
-                    @include border-top-radius( $roundness );
+                    @include border-top-radius( k-border-radius($roundness) );
                 }
             }
 
