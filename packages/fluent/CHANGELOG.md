@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.0...v13.0.1-dev.1) (2026-02-13)
+
+
+### Bug Fixes
+
+* **chat:** should use k-color-app-surface as a background ([b32d507](https://github.com/telerik/kendo-themes/commit/b32d507f4ded93197d2c8613b01b525b52393c19))
+* **file-box:** scroll gradient should use k-color-app-surface as an end color ([da0a0f1](https://github.com/telerik/kendo-themes/commit/da0a0f1efac19726929e8b7c001307af35cda624))
+* **forms:** do not apply margin to first children in vertical forms ([5ad47dc](https://github.com/telerik/kendo-themes/commit/5ad47dc6b338421845e49166eb0dfaffe06556b9))
+* **suggestion:** scroll gradient should use k-color-app-surface as an end color ([07f6239](https://github.com/telerik/kendo-themes/commit/07f6239d3d7ef41e044552aefcc716a4c2015f1f))
+
+
+
+
+
 ## [13.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.0...v13.0.1-dev.0) (2026-02-10)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

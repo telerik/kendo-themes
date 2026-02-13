@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.0...v13.0.1-dev.1) (2026-02-13)
+
+
+### Bug Fixes
+
+* **html:** add rounded full to prompt box affix icon buttons ([ea4a41d](https://github.com/telerik/kendo-themes/commit/ea4a41de94eabc49c3de31be40b6e0487b707fb9))
+* **html:** all built-in buttons should have full roundness ([d6bc61a](https://github.com/telerik/kendo-themes/commit/d6bc61accfcc5e808de04e607e04704339b03032))
+* **html:** built-in buttons in prompt-box should be always visible ([d53faa8](https://github.com/telerik/kendo-themes/commit/d53faa852e4e676ca3e12cfe02907cf6bf57f131))
+* **html:** chat default tools should be small size ([da69fa0](https://github.com/telerik/kendo-themes/commit/da69fa0e5bc3bab37eb34ace74798f70943a63f0))
+
+
+
+
+
 ## [13.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.0...v13.0.1-dev.0) (2026-02-10)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
