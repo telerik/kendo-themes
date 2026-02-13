@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-default-roundness</td>
     <td>String</td>
-    <td><code>"full"</code></td>
-    <td><code>"full"</code></td>
+    <td><code>"lg"</code></td>
+    <td><code>"lg"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the SmartBox.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-smart-box-sm-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0, 0px)</code></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Smart box.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-smart-box-lg-prefix-margin-x</td>
-    <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0, 0px)</code></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the prefix icon in the large Smart box.</div></div>
@@ -185,7 +185,7 @@ The following table lists the available variables for customization.
 
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0, 0px)","prefix-margin-x":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "padding-x":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","prefix-margin-x":"var(--kendo-spacing-1, 0.25rem)"</li><li>lg: "padding-x":"calc(var(--kendo-spacing-1\\.5, 0.375rem) + 1px)","prefix-margin-x":"var(--kendo-spacing-0, 0px)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":0,"prefix-margin-x":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "padding-x":"calc(var(--kendo-spacing-0\\.5, 0.125rem) + 1px)","prefix-margin-x":"var(--kendo-spacing-1, 0.25rem)"</li><li>lg: "padding-x":"calc(var(--kendo-spacing-1\\.5, 0.375rem) + 1px)","prefix-margin-x":0</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Smart box components.</div></div>
