@@ -39,9 +39,10 @@ async function generateTestModules() {
   return testModules;
 }
 
-describe("Component Requirements", async () => {
-  const testModules = await generateTestModules();
+// Load test modules at module level using top-level await (proper ESM pattern)
+const testModules = await generateTestModules();
 
+describe("Component Requirements", () => {
   // Generate tests for each component
   testModules.forEach(({ module, moduleName }) => {
     const components = Object.entries(module).filter(([name, value]) =>

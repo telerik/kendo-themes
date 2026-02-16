@@ -966,8 +966,38 @@ interface TestSpecificityOptions {
 }
 
 /**
+ * Generate specificity tests for a set of selectors
+ * Handles empty selector sets gracefully using it.skip() instead of placeholder tests
+ */
+function generateSpecificityTests(
+  selectors: SelectorInfo[],
+  Component: SpecComponent,
+  thresholdOptions: SpecificityThresholdOptions
+): void {
+  if (selectors.length === 0) {
+    it.skip(`no component-specific selectors found for ${Component.name}`);
+    return;
+  }
+
+  selectors.forEach(({ selector, specificity, sourceLocation }) => {
+    const expectedSpecificity = calculateSpecificityThreshold(selector, Component, thresholdOptions);
+
+    it(`"${selector}" ([${specificity}])`, () => {
+      try {
+        expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity.threshold)}]`);
+      } catch (error) {
+        const result = calculateSpecificityThreshold(selector, Component, thresholdOptions);
+        const breakdownInfo = formatSpecificityBreakdown(result.breakdown);
+
+        throw new Error(`${error.message}\n` + `Source: ${sourceLocation}\n` + `${breakdownInfo}`);
+      }
+    });
+  });
+}
+
+/**
  * Utility function to test component specificity for multiple components
- * Handles compilation and generates Jest test cases for an array of components
+ * Handles compilation and generates Vitest test cases for an array of components
  *
  * @param theme - Theme name (e.g., "default", "bootstrap", "material", "fluent")
  * @param options - Configuration options (preset)
@@ -1017,30 +1047,7 @@ function testSpecificity(options: TestSpecificityOptions = {}, components: SpecC
             sourceMap: themeResult.sourceMap,
           });
 
-          // Add a placeholder test if no selectors found (Vitest requires at least one test per suite)
-          if (selectors.length === 0) {
-            it("has no component-specific selectors", () => {
-              expect(true).toBe(true);
-            });
-            return;
-          }
-
-          // Generate test cases for each selector
-          selectors.forEach(({ selector, specificity, sourceLocation }) => {
-            const expectedSpecificity = calculateSpecificityThreshold(selector, Component, thresholdOptions);
-
-            it(`"${selector}" ([${specificity}])`, () => {
-              try {
-                expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity.threshold)}]`);
-              } catch (error) {
-                // Get detailed breakdown for debugging when test fails
-                const result = calculateSpecificityThreshold(selector, Component, thresholdOptions);
-                const breakdownInfo = formatSpecificityBreakdown(result.breakdown);
-
-                throw new Error(`${error.message}\n` + `Source: ${sourceLocation}\n` + `${breakdownInfo}`);
-              }
-            });
-          });
+          generateSpecificityTests(selectors, Component, thresholdOptions);
         });
       });
       break;
@@ -1070,30 +1077,7 @@ function testSpecificity(options: TestSpecificityOptions = {}, components: SpecC
             sourceMap: result.sourceMap,
           });
 
-          // Add a placeholder test if no selectors found (Vitest requires at least one test per suite)
-          if (selectors.length === 0) {
-            it("has no component-specific selectors", () => {
-              expect(true).toBe(true);
-            });
-            return;
-          }
-
-          // Generate test cases for each selector
-          selectors.forEach(({ selector, specificity, sourceLocation }) => {
-            const expectedSpecificity = calculateSpecificityThreshold(selector, Component, thresholdOptions);
-
-            it(`"${selector}" ([${specificity}])`, () => {
-              try {
-                expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity.threshold)}]`);
-              } catch (error) {
-                // Get detailed breakdown for debugging when test fails
-                const result = calculateSpecificityThreshold(selector, Component, thresholdOptions);
-                const breakdownInfo = formatSpecificityBreakdown(result.breakdown);
-
-                throw new Error(`${error.message}\n` + `Source: ${sourceLocation}\n` + `${breakdownInfo}`);
-              }
-            });
-          });
+          generateSpecificityTests(selectors, Component, thresholdOptions);
         });
       });
       break;
