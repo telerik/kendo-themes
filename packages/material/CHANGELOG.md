@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.3...v13.0.1) (2026-02-16)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [13.0.1-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.2...v13.0.1-dev.3) (2026-02-16)
+
+
+### Bug Fixes
+
+* **smart-box:** fix style glitches ([73617d0](https://github.com/telerik/kendo-themes/commit/73617d05513807929d833d25d2828b2a215c2bc1))
+
+
+
+
+
 ## [13.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.1...v13.0.1-dev.2) (2026-02-16)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
