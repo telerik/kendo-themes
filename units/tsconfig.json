@@ -14,7 +14,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strictNullChecks": true,
-    "types": ["vitest/globals", "node"],
+    "types": ["node"],
     "allowJs": true
   },
   "include": ["./**/*.ts", "./**/*.tsx"]

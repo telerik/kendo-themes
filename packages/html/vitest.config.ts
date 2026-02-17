@@ -6,6 +6,7 @@ export default defineConfig({
     include: ['tests/**/*.(test|spec).+(ts|tsx|js)'],
     globals: false,
     coverage: {
+      provider: 'v8',
       include: ['src/**/*.{ts,tsx}'],
       exclude: ['src/**/*.d.ts', 'src/**/*.spec.{ts,tsx}'],
     },
