@@ -9903,8 +9903,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(dark) 30%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-dark, #322F35) 30%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 30%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 30%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient.</div></div>
@@ -9923,8 +9923,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-offset</td>
     <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient.</div></div>
@@ -10836,8 +10836,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px rcolor-mix(in srgb, k-color(light) 50%, transparent)</code></td>
-    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark, #322F35) 30%, transparent), inset 0 0 0 1px rcolor-mix(in srgb, var(--kendo-color-light, #F7F3FA) 50%, transparent))</code></td>
+    <td><code>inset 0 0 0 3px k-color(app-surface)</code></td>
+    <td><code>(inset 0 0 0 3px var(--kendo-color-app-surface, #FEFBFF))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -16840,9 +16840,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-grid-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-table-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 20%, transparent))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Grid.</div></div>
@@ -19630,9 +19630,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 20%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 20%, transparent))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>
@@ -20307,9 +20307,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-listview-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 20%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 20%, transparent))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ListView items.</div></div>
@@ -25955,9 +25955,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-pivotgrid-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 20%, transparent))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
@@ -33650,9 +33650,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-table-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 20%, transparent))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>

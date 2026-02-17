@@ -734,8 +734,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-actionsheet-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #212529) 13%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused ActionSheet item.</div></div>
@@ -2300,8 +2300,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 2px 1px color-mix(in srgb, currentColor 25%, transparent)</code></td>
-    <td><code>(0 0 2px 1px color-mix(in srgb, currentColor 25%, transparent))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, currentColor 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, currentColor 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb.</div></div>
@@ -2550,8 +2550,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent)</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb link.</div></div>
@@ -2651,7 +2651,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-breadcrumb-root-link-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-breadcrumb-link-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb root link.</div></div>
@@ -2915,8 +2915,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-bubble-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 8%, transparent))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(base-on-subtle) 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-base-on-subtle, #212529) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Bubble.</div></div>
@@ -3015,8 +3015,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chat-alt-bubble-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(primary) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 16%, transparent))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, currentColor 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, currentColor 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused alt Bubble.</div></div>
@@ -3465,8 +3465,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(border) 50%, transparent)</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, currentColor 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, currentColor 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>
@@ -4434,8 +4434,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>List</td>
-    <td><code>inset $kendo-button-focus-shadow</code></td>
-    <td><code>(inset (0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused cells in the Calendar.</div></div>
@@ -4444,8 +4444,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-calendar-cell-selected-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(primary-active) 50%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary-active, #0a58ca) 50%, transparent))</code></td>
+    <td><code>$kendo-calendar-cell-focus-shadow</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected and focused cells in the Calendar.</div></div>
@@ -5126,8 +5126,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-card-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Card.</div></div>
@@ -5576,8 +5576,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4)))</code></td>
+    <td><code>inset 0 0 0 2px k-color(primary-emphasis)</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused area around the chart type icon.</div></div>
@@ -8212,8 +8212,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</code></td>
-    <td><code>(0 0 0 2px rgba(var(--kendo-color-base-subtle, #e9ecef), 0.16))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 50%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface, #212529) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
@@ -8282,8 +8282,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(base) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base, #dee2e6) 16%, transparent))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 50%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface, #212529) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>
@@ -10773,8 +10773,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 50%, transparent)</code></td>
-    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark, #212529) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, #f8f9fa) 50%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(app-surface) 50%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -12345,8 +12345,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-drawer-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 15%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #212529) 15%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>
@@ -13066,7 +13066,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-expander-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel.</div></div>
@@ -13146,7 +13146,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-expander-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel header.</div></div>
@@ -14035,8 +14035,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-filter-toolbar-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Filter toolbar.</div></div>
@@ -16839,7 +16839,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-grid-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-table-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #212529) 8%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Grid.</div></div>
@@ -19638,8 +19638,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, k-color(on-app-surface) 15%, transparent)</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>
@@ -20295,8 +20295,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-listview-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, k-color(on-app-surface) 15%, transparent)</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ListView items.</div></div>
@@ -21385,8 +21385,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-menu-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, k-color(on-app-surface) 15%, transparent)</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item.</div></div>
@@ -21976,7 +21976,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-menu-popup-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-menu-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item in popup.</div></div>
@@ -22869,7 +22869,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-orgchart-node-group-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
@@ -22969,7 +22969,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-orgchart-card-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart Card.</div></div>
@@ -23844,8 +23844,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-pager-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 8%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #212529) 8%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager.</div></div>
@@ -24554,7 +24554,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-panelbar-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused PanelBar header.</div></div>
@@ -24844,7 +24844,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-panelbar-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused PanelBar items.</div></div>
@@ -25914,7 +25914,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pivotgrid-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
@@ -29957,8 +29957,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 3px color-mix(in srgb, k-color(primary) 50%, transparent)</code></td>
-    <td><code>(0 0 0 3px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 50%, transparent))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider drag handle.</div></div>
@@ -30292,7 +30292,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-split-button-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, currentColor 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the SplitButton.</div></div>
@@ -32271,8 +32271,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-suggestion-focus-shadow-color</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(base-on-subtle) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle, #212529) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow color of the focused Suggestion.</div></div>
@@ -33575,8 +33575,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-table-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 8%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #212529) 8%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
@@ -34125,7 +34125,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-tabstrip-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TabStrip items.</div></div>
@@ -34994,7 +34994,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-taskboard-card-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TaskBoard Card.</div></div>
@@ -35164,7 +35164,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-tile-layout-card-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the TileLayout card.</div></div>
@@ -35961,9 +35961,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-timeline-track-item-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2, 0px 2px 7px rgba(0, 0, 0, 0.075))</code></td>
+    <td>List</td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline's focused track items.</div></div>
@@ -36622,8 +36622,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>
@@ -37331,8 +37331,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 15%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of focused TreeView items.</div></div>
@@ -37432,7 +37432,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-treeview-loadmore-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-treeview-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
@@ -39084,8 +39084,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-upload-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #212529) 13%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Upload button, actions and uploaded items.</div></div>
@@ -39383,9 +39383,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-window-focus-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td>List</td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>
