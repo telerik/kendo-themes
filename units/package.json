@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test:default": "THEME=default vitest run default",
-    "test:bootstrap": "THEME=bootstrap vitest run bootstrap",
-    "test:material": "THEME=material vitest run material",
-    "test:classic": "THEME=classic vitest run classic",
-    "test:fluent": "THEME=fluent vitest run fluent",
+    "test:default": "vitest run default",
+    "test:bootstrap": "vitest run bootstrap",
+    "test:material": "vitest run material",
+    "test:classic": "vitest run classic",
+    "test:fluent": "vitest run fluent",
     "test": "vitest run",
     "test:watch": "vitest"
   }
