@@ -1,0 +1,56 @@
+/* stylelint-disable */
+@use "./functions/string" as *;
+@use "./color-system/index.scss" as *;
+@use "./typography/index.scss" as *;
+@use "./spacing/index.scss" as *;
+@use "./border-radii/index.scss" as *;
+@use "./elevation/index.scss" as *;
+
+/// Generates a Tailwind v4 adapter that maps Kendo Design Tokens to Tailwind Classes.
+
+@theme {
+    // Generate color tokens from $kendo-colors map
+    @each $key, $value in $kendo-colors {
+        --color-#{$key}: var(--kendo-color-#{$key});
+    }
+
+    // Font Family
+    @each $family, $value in $kendo-font-families {
+        --font-#{$family}: var(--kendo-font-family-#{$family});
+    }
+
+    // Font Weight
+    @each $weight, $value in $kendo-font-weights {
+        --font-weight-#{$weight}: var(--kendo-font-weight-#{$weight});
+    }
+
+    // Font Size
+    @each $size, $value in $kendo-font-sizes {
+        --text-#{$size}: var(--kendo-font-size-#{$size});
+    }
+
+    // Line Height
+    @each $size, $value in $kendo-line-heights {
+        --leading-#{$size}: var(--kendo-line-height-#{$size});
+    }
+
+    // Letter Spacing
+    @each $spacing, $value in $kendo-letter-spacings {
+        --tracking-#{$spacing}: var(--kendo-letter-spacing-#{$spacing});
+    }
+
+    // Border Radius
+    @each $key, $value in $kendo-border-radii {
+        --radius-#{$key}: var(--kendo-border-radius-#{$key});
+    }
+
+    // Elevation / Shadows
+    @each $level, $shadow in $kendo-elevation {
+        --shadow-#{$level}: var(--kendo-elevation-#{$level});
+    }
+
+    // Spacing
+    @each $step, $spacing in $kendo-spacing {
+        --spacing-#{$step}: var(--kendo-spacing-#{k-escape-class-name($step)});
+    }
+}
