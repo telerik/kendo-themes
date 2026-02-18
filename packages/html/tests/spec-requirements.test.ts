@@ -23,12 +23,12 @@ async function generateTestModules() {
 
   for (const exportPath of getExportPaths()) {
     const moduleName = exportPath.replace("/index", "");
-    const specFile = `${moduleName}/${path.basename(moduleName)}.spec.tsx`;
-    const fullSpecPath = path.join(__dirname, "..", "src", specFile);
+    const specFileName = `${path.basename(moduleName)}.spec`;
+    const fullSpecPath = path.join(__dirname, "..", "src", moduleName, `${specFileName}.tsx`);
 
     if (fs.existsSync(fullSpecPath)) {
       try {
-        const specModule = await import(`../src/${specFile.replace(".tsx", "")}`);
+        const specModule = await import(`../src/${moduleName}/${specFileName}.tsx`);
         testModules.push({ module: specModule, moduleName });
       } catch (error) {
         console.warn(`Could not import spec module for ${moduleName}:`, (error as Error).message);
