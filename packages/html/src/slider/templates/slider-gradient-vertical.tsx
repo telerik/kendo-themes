@@ -6,6 +6,7 @@ export const SliderGradientVertical = (props) => (
         orientation="vertical"
         showButtons={false}
         showTicks={false}
-        {...props}>
-    </Slider>
+        {...props}
+        aria-label={props['aria-label'] || "Color slider"}
+    />
 );

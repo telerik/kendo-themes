@@ -3,16 +3,19 @@
 /**
  * Unified A11y Test Runner
  *
+ * Single entry point for all a11y validation: manual, CI, and pre-push.
  * Renders HTML package templates via specToHtml, then validates ARIA attributes
  * (JSDOM) and WCAG compliance (axe-core in browser). Uses the htmlPackage
  * export metadata (folderName, ariaSpec) to discover components and rules —
  * no filename-to-export-name overrides needed.
  *
  * Usage:
- *   npm run test:a11y:unified                    # Test all components
- *   npm run test:a11y:unified button             # Test specific component
- *   npm run test:a11y:unified -- --affected      # Test only changed components
- *   npm run test:a11y:unified -- --verbose       # Detailed output
+ *   npm run test:a11y                            # Test all components
+ *   npm run test:a11y button                     # Test specific component
+ *   npm run test:a11y -- --affected              # Test only git-changed components
+ *   npm run test:a11y -- --prompt                # Pre-push: prompt before running (implies --affected)
+ *   npm run test:a11y -- --affected --verbose    # Detailed output
+ *   npm run test:a11y -- --build                 # Build HTML package first
  */
 
 import { Browser, specToHtml } from '@progress/kendo-e2e';
@@ -20,10 +23,11 @@ import AxeBuilder from '@axe-core/webdriverjs';
 import { JSDOM } from 'jsdom';
 import { createServer } from 'http-server';
 import { globSync } from 'glob';
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { createReadStream, readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { execSync } from 'child_process';
 import { basename } from 'path';
 import { createRequire } from 'module';
+import { createInterface } from 'readline';
 
 const require = createRequire(import.meta.url);
 const htmlPackage = require('../packages/html/dist/cjs/index.js');
@@ -36,7 +40,9 @@ const OUTPUT_PATH = './tests/_output';
 const args = process.argv.slice(2);
 const componentFilters = args.filter(a => !a.startsWith('--'));
 const verboseMode = args.includes('--verbose');
-const affectedMode = args.includes('--affected');
+const promptMode = args.includes('--prompt');
+const affectedMode = args.includes('--affected') || promptMode;
+const buildMode = args.includes('--build');
 
 // Page-level axe rules irrelevant for isolated component testing
 const PAGE_LEVEL_RULES = [
@@ -422,10 +428,61 @@ function wrapInHtmlPage(componentHtml) {
 </html>`;
 }
 
+async function promptUser(question) {
+    let input = process.stdin;
+    let needsCleanup = false;
+
+    if (!process.stdin.isTTY) {
+        try {
+            input = createReadStream('/dev/tty');
+            needsCleanup = true;
+        } catch {
+            return null;
+        }
+    }
+
+    const rl = createInterface({ input, output: process.stdout });
+    return new Promise(resolve => {
+        rl.question(question, answer => {
+            rl.close();
+            if (needsCleanup && input.destroy) { input.destroy(); }
+            resolve(answer.toLowerCase().trim());
+        });
+    });
+}
+
 async function main() {
+    // --build: build HTML package before testing (useful for pre-push / CI)
+    if (buildMode) {
+        console.log('📦 Building HTML package...');
+        try {
+            execSync('npm run build --prefix packages/html', { stdio: 'pipe' });
+            console.log('  ✅ HTML package built\n');
+        } catch (err) {
+            console.error('  ❌ Failed to build HTML package');
+            console.error('  ' + (err.message || 'Unknown error'));
+            process.exit(1);
+        }
+    }
+
     const specRegistry = buildSpecRegistry();
     const affected = affectedMode ? getChangedComponents() : null;
-    if (affected?.length) { console.log(`📋 Affected: ${affected.join(', ')}\n`); }
+
+    // --prompt: show affected components and ask before running (pre-push)
+    if (promptMode && affectedMode) {
+        if (!affected?.length) {
+            console.log('No accessibility-related files in unpushed commits.');
+            process.exit(0);
+        }
+        console.log(`📋 Affected components: ${affected.join(', ')}\n`);
+        const answer = await promptUser('Run accessibility tests before push? (y/n): ');
+        if (!answer || (answer !== 'y' && answer !== 'yes')) {
+            console.log('⏭️  Skipping — tests will run in CI');
+            process.exit(0);
+        }
+    } else if (affected?.length) {
+        console.log(`📋 Affected: ${affected.join(', ')}\n`);
+    }
 
     // Determine which component folders to test
     let folders;

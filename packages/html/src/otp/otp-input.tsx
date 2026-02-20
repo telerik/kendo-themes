@@ -30,6 +30,7 @@ export type KendoOneTimePasswordInputProps = KendoOneTimePasswordInputOptions & 
     value?: string;
     placeholder?: string;
     autocomplete?: string;
+    'aria-label'?: string;
 };
 
 export type KendoOneTimePasswordInputState = { [K in (typeof states)[number]]?: boolean };

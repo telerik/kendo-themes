@@ -14,9 +14,11 @@ export const SliderVertical = (props) => (
                 <SliderTick />
                 <SliderTick />
                 <SliderTick />
-                <SliderTick className="k-last" label large text="10" /></>
+                <SliderTick className="k-last" label large text="10" />
+            </>
         }
+        aria-label={props['aria-label'] || "Vertical slider"}
         {...props}
-        orientation="vertical">
-    </Slider>
+        orientation="vertical"
+    />
 );

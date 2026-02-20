@@ -5,6 +5,7 @@ export const SliderGradient = (props) => (
         type="gradient"
         showButtons={false}
         showTicks={false}
-        {...props}>
-    </Slider>
+        {...props}
+        aria-label={props['aria-label'] || "Color slider"}
+    />
 );

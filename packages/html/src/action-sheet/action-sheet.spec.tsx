@@ -22,6 +22,11 @@ export type KendoActionSheetProps = {
     overlay?: boolean;
     template?: React.JSX.Element | React.JSX.Element[];
     side?: 'top' | 'right' | 'bottom' | 'left';
+    /**
+     * Unique identifier for the ActionSheet. Used for aria-labelledby.
+     * @aria aria-labelledby references ${id}-title
+     */
+    id?: string;
 }
 
 const defaultOptions = {
@@ -44,8 +49,11 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
         children,
         header,
         footer,
+        id,
         ...other
     } = props;
+
+    const titleId = id && !template && header ? `${id}-title` : undefined;
 
     return (
         <div className="k-actionsheet-container">
@@ -60,6 +68,9 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
                 }}>
                 <div
                     {...other}
+                    role="dialog"
+                    aria-modal={overlay ? "true" : undefined}
+                    aria-labelledby={titleId}
                     className={classNames(
                         props.className,
                         ACTIONSHEET_CLASSNAME,
@@ -70,7 +81,7 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
                         },
                     )}>
                     {template ? template :
-                        <ActionSheetView header={header} footer={footer} adaptive={adaptive} {...props}>
+                        <ActionSheetView header={header} footer={footer} adaptive={adaptive} titleId={titleId} {...props}>
                             {children}
                         </ActionSheetView>
                     }
@@ -86,5 +97,27 @@ ActionSheet.className = ACTIONSHEET_CLASSNAME;
 ActionSheet.defaultOptions = defaultOptions;
 ActionSheet.moduleName = ACTION_SHEET_MODULE_NAME;
 ActionSheet.folderName = ACTION_SHEET_FOLDER_NAME;
+
+/**
+ * Accessibility specification for ActionSheet.
+ *
+ * @accessibility
+ * - Has role="dialog" with aria-modal="true" when overlay is enabled
+ * - aria-labelledby references the title element
+ * - Content is arbitrary; components using ActionSheet in adaptive mode
+ *   are responsible for their internal content's ARIA attributes
+ *
+ * @wcag 4.1.2 Name, Role, Value - dialog pattern with labeled title
+ */
+ActionSheet.ariaSpec = {
+    selector: '.k-actionsheet',
+    rules: [
+        { selector: '.k-actionsheet', attribute: 'role=dialog', usage: 'Announces the dialog role of the component.' },
+        { selector: '.k-actionsheet', attribute: 'aria-labelledby (when has title)', usage: 'Associates the title of the action sheet.' },
+        { selector: '.k-actionsheet', attribute: 'aria-hidden=true/false (when hidden)', usage: 'Announces the hidden state of the ActionSheet container.' },
+        { selector: '.k-actionsheet', attribute: 'aria-modal=true (when modal)', usage: 'Announces that the action sheet is modal.' },
+        { selector: '.k-actionsheet .k-actionsheet-title', attribute: 'id', usage: 'Used to associate the title with the action sheet wrapper element.' },
+    ]
+};
 
 export default ActionSheet;

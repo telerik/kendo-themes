@@ -14,6 +14,11 @@ export type KendoActionSheetHeaderProps = {
     inputValue?: string;
     inputPlaceholder?: string;
     adaptive?: boolean;
+    /**
+     * ID for the title element, used by aria-labelledby on the ActionSheet.
+     * @aria Referenced by aria-labelledby on the ActionSheet dialog
+     */
+    titleId?: string;
 }
 
 const defaultOptions = {};
@@ -32,6 +37,7 @@ export const ActionSheetHeader = (
         inputValue,
         inputPlaceholder,
         adaptive,
+        titleId,
         children,
         ...other
     } = props;
@@ -50,12 +56,12 @@ export const ActionSheetHeader = (
                     </div>
                 )}
                 {!children &&
-                    <div className="k-actionsheet-title">
+                    <div className="k-actionsheet-title" id={titleId}>
                         {title && <div className="k-text-center">{title}</div>}
                         {subtitle && <div className="k-actionsheet-subtitle k-text-center">{subtitle}</div>}
                     </div>
                 }
-                {children && <div className="k-actionsheet-title">{children}</div>}
+                {children && <div className="k-actionsheet-title" id={titleId}>{children}</div>}
                 {actionsEnd && (
                     <div className="k-actionsheet-actions">
                         {actionsEnd}
@@ -65,9 +71,9 @@ export const ActionSheetHeader = (
             {(input || filter) && (
                 <div className="k-actionsheet-titlebar-group k-actionsheet-filter">
                     {input ? (
-                        <Textbox value={inputValue} placeholder={inputPlaceholder} size={adaptive ? "large" : "medium"} />
+                        <Textbox value={inputValue} placeholder={inputPlaceholder} size={adaptive ? "large" : "medium"} aria-label={title || inputPlaceholder || "Input"} />
                     ) : (
-                        <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} />
+                        <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} aria-label="Filter options" />
                     )}
                 </div>
             )}

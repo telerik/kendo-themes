@@ -20,9 +20,15 @@ export type KendoSpinButtonOptions = {
 export type KendoSpinButtonProps = KendoSpinButtonOptions & {
   icon?: string;
   text?: string;
+  disabled?: boolean;
+  increaseLabel?: string;
+  decreaseLabel?: string;
 };
 
-const defaultOptions = {};
+const defaultOptions = {
+    increaseLabel: 'Increase value',
+    decreaseLabel: 'Decrease value'
+};
 
 export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoSpinButtonProps &
@@ -31,6 +37,9 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
     const {
         size,
         fillMode,
+        disabled,
+        increaseLabel = defaultOptions.increaseLabel,
+        decreaseLabel = defaultOptions.decreaseLabel,
         ...other
     } = props;
 
@@ -45,13 +54,17 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
                 className="k-spinner-increase"
                 icon="caret-alt-up"
                 size={size}
-                fillMode={fillMode}>
+                fillMode={fillMode}
+                disabled={disabled}
+                aria-label={increaseLabel}>
             </Button>
             <Button
                 className="k-spinner-decrease"
                 icon="caret-alt-down"
                 size={size}
-                fillMode={fillMode}>
+                fillMode={fillMode}
+                disabled={disabled}
+                aria-label={decreaseLabel}>
             </Button>
         </span>
     );

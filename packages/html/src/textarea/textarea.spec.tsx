@@ -80,6 +80,9 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
         invalid,
         required,
         disabled,
+        id,
+        'aria-label': ariaLabel,
+        'aria-describedby': ariaDescribedBy,
         ...other
     } = props;
 
@@ -133,6 +136,11 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
                 value={value}
                 placeholder={placeholder}
                 rows={rows}
+                disabled={disabled}
+                id={id}
+                aria-label={ariaLabel}
+                aria-describedby={ariaDescribedBy}
+                aria-invalid={invalid ? 'true' : undefined}
             />
             {suffix &&
             <>
@@ -156,5 +164,24 @@ Textarea.className = TEXTAREA_CLASSNAME;
 Textarea.defaultOptions = defaultOptions;
 Textarea.moduleName = TEXTAREA_MODULE_NAME;
 Textarea.folderName = TEXTAREA_FOLDER_NAME;
+
+/**
+ * Accessibility specification for Textarea.
+ * @accessibility
+ * - Uses semantic `<textarea>` element (role="textbox" implicit, multiline)
+ * - Requires accessible name via label, aria-label, or aria-labelledby
+ * - Disabled state uses native disabled attribute
+ */
+Textarea.ariaSpec = {
+    selector: '.k-textarea',
+    rules: [
+        { selector: '.k-textarea > .k-input-inner', attribute: 'role=textbox or nodeName=textarea', usage: 'Describes the role of the component.' },
+        { selector: '.k-textarea > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The textarea requires an accessible name (provided by consuming app).' },
+        { selector: '.k-textarea > .k-input-inner', attribute: 'aria-multiline=true (when role=textbox)', usage: 'Required on role=textbox to indicate multi-line behavior. Implicit on native <textarea>, so not needed there.' },
+        { selector: '.k-textarea > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered only when the TextArea is in a form and announces the invalid state.' },
+        { selector: '.k-textarea > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message for the textarea.' },
+        { selector: '.k-textarea.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered only when the TextArea is disabled.' },
+    ]
+};
 
 export default Textarea;
