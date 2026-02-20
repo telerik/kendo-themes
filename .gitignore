@@ -20,3 +20,6 @@ debug.log
 # NX
 .nx/cache
 .nx/workspace-data
+
+# Generated a11y test reports (not tracked; screenshots in tests/_output/ ARE tracked)
+tests/_output/*.json

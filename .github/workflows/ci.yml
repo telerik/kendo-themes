@@ -191,6 +191,22 @@ jobs:
       - name: Done
         run: echo "Done!"
 
+  a11y-specs:
+    name: A11y Specs
+    needs: [ compile-themes ]
+    uses: ./.github/workflows/_test-a11y-specs.yml
+
+  ci-a11y-specs:
+    name: Status check > A11y Specs (non-blocking)
+    runs-on: ubuntu-latest
+    if: ${{ always() }}
+    needs: [ a11y-specs ]
+    steps:
+      - name: Report status
+        run: |
+          echo "A11y specs check completed (outcome: ${{ needs.a11y-specs.result }})"
+          echo "This check is informational and does not block PR merging."
+
 
   docs:
     name: Docs
