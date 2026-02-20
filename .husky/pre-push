@@ -1,1 +1,4 @@
 npm run sass && npm run docs:check
+
+# Prompt to run a11y tests on affected components
+node scripts/a11y-pre-push.mjs --prompt
