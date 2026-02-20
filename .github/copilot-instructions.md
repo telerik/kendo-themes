@@ -67,6 +67,7 @@ packages/
 ├── fluent/            # Fluent theme
 ├── utils/             # Utility CSS classes (standalone)
 └── html/              # React component specs & tests
+aria/                  # ARIA accessibility specifications (per-component)
 scripts/               # Build utilities and automation
 tests/                 # Visual test outputs
 build/                 # CI/CD scripts
@@ -143,6 +144,11 @@ npm run clean                   # Full cleanup (includes node_modules)
 
 - Refer to ${variable-docs.prompt.md} for SassDoc documentation standards
 
+### Accessibility
+
+- Use the `/accessibility` prompt for applying ARIA to components
+- Refer to `.github/prompts/accessibility.prompt.md` for patterns and rules
+
 ### SCSS Standards
 
 - Use **dart-sass syntax** - avoid deprecated node-sass features
@@ -167,6 +173,19 @@ npm run clean                   # Full cleanup (includes node_modules)
 - **Integration tests** - Validate SCSS compilation with major bundlers
 - **Linting** - Enforced on all commits via Husky + lint-staged
 - **Accessibility tests** - Run automatically on default-ocean-blue-a11y swatch
+
+### Accessibility Automation
+
+ARIA specifications are defined as `ariaSpec.rules` on TSX spec components (single source of truth). Reference docs live in `aria/[component]_aria.md`.
+
+Use the `/accessibility` prompt for the full workflow and rules. Key commands:
+
+```bash
+npm run test:a11y [component]           # Validate ARIA + WCAG (recommended)
+npm run test:a11y:unified [component]   # Same as above (alias)
+npm run test:a11y:affected              # Test only git-changed components
+npm run test:contrast                   # Validate color contrast ratios
+```
 
 ## Common Issues
 
