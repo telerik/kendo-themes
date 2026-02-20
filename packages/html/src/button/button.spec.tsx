@@ -50,6 +50,11 @@ export type KendoButtonProps = KendoButtonOptions & {
   iconClassName?: string;
   showArrow?: boolean;
   arrowIconName?: string;
+  /**
+   * When true, the button acts as a toggle button with aria-pressed attribute.
+   * @aria aria-pressed="true"|"false" based on selected state
+   */
+  togglable?: boolean;
 };
 
 export type KendoButtonState = { [K in (typeof states)[number]]?: boolean };
@@ -59,6 +64,25 @@ const defaultOptions = {
     arrowIconName: "caret-alt-down"
 };
 
+/**
+ * Button component - interactive button element.
+ *
+ * @accessibility
+ * - Uses semantic `<button>` element (role="button" is implicit)
+ * - Icon-only buttons MUST have `aria-label` prop for accessible name
+ * - Disabled state uses native `disabled` attribute
+ *
+ * @example
+ * ```tsx
+ * // Text button - accessible name from content
+ * <Button>Save</Button>
+ *
+ * // Icon-only button - requires aria-label
+ * <Button icon="close" aria-label="Close dialog" />
+ * ```
+ *
+ * @wcag 4.1.2 Name, Role, Value - button must have accessible name
+ */
 export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoButtonProps &
         KendoButtonState &
@@ -77,9 +101,11 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
         active,
         selected,
         disabled,
+        togglable,
         icon,
         text,
         iconClassName,
+        className,
         ...other
     } = props;
 
@@ -88,9 +114,8 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
 
     return (
         <button
-            {...other}
             className={classNames(
-                props.className,
+                className,
                 BUTTON_CLASSNAME,
                 variantClassNames(BUTTON_CLASSNAME, variant),
                 optionClassNames(BUTTON_CLASSNAME, {
@@ -111,6 +136,9 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
                     ['k-icon-button']: !text && !hasChildren && hasIcon,
                 }
             )}
+            {...other}
+            aria-pressed={togglable ? (selected ? 'true' : 'false') : undefined}
+            disabled={disabled || undefined}
         >
             {icon && (
                 <Icon
@@ -141,5 +169,18 @@ Button.className = BUTTON_CLASSNAME;
 Button.defaultOptions = defaultOptions;
 Button.moduleName = BUTTON_MODULE_NAME;
 Button.folderName = BUTTON_FOLDER_NAME;
+
+/**
+ * Accessibility specification for Button.
+ */
+Button.ariaSpec = {
+    selector: '.k-button',
+    rules: [
+        { selector: '.k-button', attribute: 'role=button or nodeName=button', usage: 'The button role is implicit from the native <button> element.' },
+        { selector: '.k-button', attribute: 'aria-label (when icon-only)', usage: 'Required for icon-only buttons that have no visible text.' },
+        { selector: '.k-button', attribute: 'aria-pressed (when togglable)', usage: 'Indicates the pressed state of a toggle button.' },
+        { selector: '.k-button', attribute: 'disabled (when disabled)', usage: 'Rendered when the button is disabled.' },
+    ]
+};
 
 export default Button;

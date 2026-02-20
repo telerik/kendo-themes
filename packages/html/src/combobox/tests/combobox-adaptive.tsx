@@ -24,11 +24,11 @@ export default () => (
 
             <section>
                 <div className="k-label">Label</div>
-                <ComboboxAdaptive adaptiveTitle="Label" placeholder="Placeholder" />
+                <ComboboxAdaptive id="combobox-partial" adaptiveTitle="Label" placeholder="Placeholder" />
             </section>
             <section>
                 <div className="k-label">Label</div>
-                <ComboboxAdaptive adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
+                <ComboboxAdaptive id="combobox-full" adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
             </section>
 
             <span>partial (custom value)</span>
@@ -36,11 +36,11 @@ export default () => (
 
             <section>
                 <div className="k-label">Label</div>
-                <ComboboxAdaptive adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" />
+                <ComboboxAdaptive id="combobox-partial-custom" adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" />
             </section>
             <section>
                 <div className="k-label">Label</div>
-                <ComboboxAdaptive adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
+                <ComboboxAdaptive id="combobox-full-custom" adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

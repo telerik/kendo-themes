@@ -11,8 +11,17 @@ const states = [
 ];
 
 export type KendoActionSheetItemProps = {
+    /**
+     * Primary text label for the action item.
+     */
     text?: string;
+    /**
+     * Secondary description text.
+     */
     description?: string;
+    /**
+     * Icon name to display.
+     */
     iconName?: string;
 }
 

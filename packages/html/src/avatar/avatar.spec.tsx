@@ -57,6 +57,16 @@ const defaultOptions = {
     border: false
 };
 
+/**
+ * Avatar component - displays user profile images, icons, or initials.
+ *
+ * @accessibility
+ * - When using `type="image"` with an `<img>` child, the image MUST have an `alt` attribute
+ * - For decorative avatars, use `alt=""`
+ * - For meaningful avatars, use descriptive alt text: `alt="John Doe's profile picture"`
+ *
+ * @wcag 1.1.1 Non-text Content - images must have text alternatives
+ */
 export const Avatar: KendoComponent<KendoAvatarProps & KendoAvatarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoAvatarProps &
         KendoAvatarState &
@@ -102,5 +112,12 @@ Avatar.className = AVATAR_CLASSNAME;
 Avatar.defaultOptions = defaultOptions;
 Avatar.moduleName = AVATAR_MODULE_NAME;
 Avatar.folderName = AVATAR_FOLDER_NAME;
+
+Avatar.ariaSpec = {
+    selector: '.k-avatar',
+    rules: [
+        { selector: '.k-avatar img', attribute: 'alt', usage: 'Images inside Avatar must have alt text for screen readers.' },
+    ]
+};
 
 export default Avatar;

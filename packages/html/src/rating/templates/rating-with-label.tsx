@@ -6,5 +6,6 @@ export const RatingWithLabel = ({ value = 2.5, max = 5, ...props }: any) =>(
         value={value}
         max={max}
         {...props}
+        aria-label={props['aria-label'] || "Rating"}
     />
 );

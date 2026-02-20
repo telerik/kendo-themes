@@ -21,8 +21,8 @@ export type KendoLabelProps = {
 
 const defaultOptions = {};
 
-export const Label: KendoComponent<KendoLabelState & KendoLabelProps & React.HTMLAttributes<HTMLLabelElement>> = (
-    props: KendoLabelState & KendoLabelProps & React.HTMLAttributes<HTMLLabelElement>
+export const Label: KendoComponent<KendoLabelState & KendoLabelProps & React.LabelHTMLAttributes<HTMLLabelElement>> = (
+    props: KendoLabelState & KendoLabelProps & React.LabelHTMLAttributes<HTMLLabelElement>
 ) => {
     const {
         disabled,

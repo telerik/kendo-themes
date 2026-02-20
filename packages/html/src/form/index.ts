@@ -6,6 +6,7 @@ export * from './fieldset';
 export * from './templates/form-normal';
 export * from './templates/form-horizontal';
 export * from './templates/form-grid-layout';
+export * from './templates/form-with-hints';
 export * from './demos/form';
 export * from './demos/form-hint';
 export * from './demos/form-error';

@@ -55,7 +55,7 @@ jobs:
         id: a11y-tests
         continue-on-error: true
         run: |
-          xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test:a11y:unified -- --affected --verbose 2>&1 | tee a11y-test-output.txt
+          xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test:a11y -- --affected --verbose 2>&1 | tee a11y-test-output.txt
 
       - name: Report test results
         run: |

@@ -154,7 +154,7 @@ For applying ARIA to a component, use the `/accessibility` prompt — it contain
 Quick reference:
 - ARIA specs per component: `aria/[component]_aria.md`
 - Edit only `.spec.tsx` and `templates/*.tsx` (avoid `tests/` unless needed for coverage)
-- Validate: `npm run test:a11y:unified [component]`
+- Validate: `npm run test:a11y [component]`
 - Completed components with `ariaSpec` serve as reference for new work
 
 ## Related Documentation

@@ -110,4 +110,14 @@ Icon.className = ICON_CLASSNAME;
 Icon.moduleName = ICON_MODULE_NAME;
 Icon.folderName = ICON_FOLDER_NAME;
 
+/**
+ * Accessibility specification for Icon.
+ */
+Icon.ariaSpec = {
+    selector: '.k-icon, .k-svg-icon',
+    rules: [
+        { selector: '.k-icon, .k-svg-icon', attribute: 'aria-hidden=true', usage: 'Hides the icon element and all its children from assistive technologies.' },
+    ]
+};
+
 export default Icon;

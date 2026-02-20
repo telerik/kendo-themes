@@ -5,7 +5,7 @@ export const MaskedTextboxPrefix = (props) => (
     <Textbox
         prefix={
             <>
-                <DropdownList value="Choose" fillMode="flat" />
+                <DropdownList value="Choose" fillMode="flat" aria-label="Prefix selector" />
             </>
         }
         {...props}

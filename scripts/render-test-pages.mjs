@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 import { Browser, snapshotMarkup } from '@progress/kendo-e2e';
 import { createServer } from 'http-server';
 import { globSync } from 'glob';
@@ -49,6 +50,11 @@ server.listen(PORT, HOST, async() => {
     const files = globSync(globPattern, { dotRelative: true });
 
     if (files.length === 0) {
+        console.error(`No test pages found matching pattern: ${globPattern}`);
+        console.error(componentFilter
+            ? `Component "${componentFilter}" has no test pages. Check that ${TESTS_PATH}/${componentFilter}/ exists and contains ${COMPONENT_PAGE_EXT} files.`
+            : `No test pages found in ${TESTS_PATH}/. Run "npm run build:tests" first.`
+        );
         await browser.close();
         server.close();
         process.exit(1);
