@@ -16959,6 +16959,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-pinned-container-shadow</td>
+    <td>String</td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-column-menu-width</td>
     <td>Number</td>
     <td><code>250px</code></td>
