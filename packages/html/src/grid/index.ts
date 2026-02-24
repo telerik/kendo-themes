@@ -1,6 +1,7 @@
 export * from './grid.spec';
 export * from './grid-header.spec';
 export * from './grid-grouping-header.spec';
+export * from './grid-pinned-container.spec';
 export * from './grid-sticky-container.spec';
 export * from './grid-header-table.spec';
 export * from './grid-header-cell.spec';

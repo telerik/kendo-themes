@@ -7,7 +7,7 @@ import { GridContent } from "../grid-content.spec";
 import GridHeaderCell from "../grid-header-cell.spec";
 import { GridHeaderTable } from "../grid-header-table.spec";
 import { GridHeader } from "../grid-header.spec";
-import { GridStickyContainer } from "../grid-sticky-container.spec";
+import { GridPinnedContainer } from "../grid-pinned-container.spec";
 import { GridTable } from "../grid-table.spec";
 import Grid from "../grid.spec";
 
@@ -287,26 +287,29 @@ export default () => (
               </GridHeaderTable>
             </div>
           </GridHeader>
+          {/* Pinned Content - Row pinned to top */}
+          <GridPinnedContainer>
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-master-row">
+                    <TableTd>Shelden Greyes</TableTd>
+                    <TableTd>Operator</TableTd>
+                    <TableTd>UK</TableTd>
+                    <TableTd>5/5</TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
           <GridContainer>
             <GridContent>
-              <GridStickyContainer>
-                <GridTable>
-                  <colgroup>
-                    <col />
-                    <col />
-                    <col />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-master-row">
-                      <TableTd>Shelden Greyes</TableTd>
-                      <TableTd>Operator</TableTd>
-                      <TableTd>UK</TableTd>
-                      <TableTd>5/5</TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
               <GridTable>
                 <colgroup>
                   <col />
