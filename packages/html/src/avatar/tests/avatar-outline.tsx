@@ -28,14 +28,18 @@ export default () => (
         <>
           <span>{`${themeColor}`}</span>
           <AvatarImage fillMode="outline" themeColor={themeColor}>
-            <img src="/packages/html/assets/avatar.jpg" />
+            <img src="/packages/html/assets/avatar.jpg" alt="User avatar" />
           </AvatarImage>
           <AvatarImage border fillMode="outline" themeColor={themeColor}>
-            <img src="/packages/html/assets/avatar.jpg" />
+            <img src="/packages/html/assets/avatar.jpg" alt="User avatar" />
           </AvatarImage>
 
-          <AvatarImage fillMode="outline" type="image" themeColor={themeColor}></AvatarImage>
-          <AvatarImage border fillMode="outline" type="image" themeColor={themeColor}></AvatarImage>
+          <AvatarImage fillMode="outline" type="image" themeColor={themeColor}>
+            <img src="/packages/html/assets/avatar.jpg" alt="User avatar" />
+          </AvatarImage>
+          <AvatarImage border fillMode="outline" type="image" themeColor={themeColor}>
+            <img src="/packages/html/assets/avatar.jpg" alt="User avatar" />
+          </AvatarImage>
 
           <AvatarIcon fillMode="outline" themeColor={themeColor}>
             <Icon icon="x" />

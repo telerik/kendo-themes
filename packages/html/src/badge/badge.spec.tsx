@@ -2,6 +2,31 @@ import { classNames, optionClassNames, Size, Roundness, FillMode, ThemeColor } f
 
 import { KendoComponent } from '../_types/component';
 import { BADGE_FOLDER_NAME, BADGE_MODULE_NAME } from './constants';
+
+/**
+ * Badge component specification.
+ *
+ * @accessibility
+ * - Badges render as `<span>` elements containing text or counts
+ * - Content is accessible to screen readers via the text content
+ * - When used as a notification indicator on another element, ensure
+ *   the parent element has appropriate `aria-describedby` or `aria-label`
+ *   to communicate the badge meaning to assistive technologies
+ * - Empty/dot badges that convey status should be accompanied by visually
+ *   hidden text for screen reader users
+ *
+ * @example
+ * ```tsx
+ * // Badge with visible text - accessible by default
+ * <Badge>5 new messages</Badge>
+ *
+ * // Empty badge on button - needs aria context on parent
+ * <button aria-label="Notifications, 3 unread">
+ *   <span>Notifications</span>
+ *   <Badge>3</Badge>
+ * </button>
+ * ```
+ */
 export const BADGE_CLASSNAME = `k-badge`;
 
 const states = [];
@@ -88,5 +113,18 @@ Badge.className = BADGE_CLASSNAME;
 Badge.defaultOptions = defaultOptions;
 Badge.moduleName = BADGE_MODULE_NAME;
 Badge.folderName = BADGE_FOLDER_NAME;
+
+/**
+ * Accessibility specification for Badge.
+ *
+ * No dedicated aria MD exists for Badge. The badge renders as a `<span>`
+ * with text content that is accessible by default. When used as a status
+ * indicator, the parent element should provide context via aria-label
+ * or aria-describedby.
+ */
+Badge.ariaSpec = {
+    selector: '.k-badge',
+    rules: []
+};
 
 export default Badge;

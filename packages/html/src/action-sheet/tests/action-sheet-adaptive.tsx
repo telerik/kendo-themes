@@ -26,9 +26,10 @@ export default () => (
 
             <section>
                 <ActionSheetNormal
+                    id="actionsheet-adaptive-1"
                     adaptive
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Title" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Title" subtitle="Subtitle" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -53,9 +54,10 @@ export default () => (
 
             <section className="k-rtl">
                 <ActionSheetNormal
+                    id="actionsheet-adaptive-2"
                     adaptive
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Title" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Title" subtitle="Subtitle" />
                     }
                     footer={
                         <ActionSheetFooter>

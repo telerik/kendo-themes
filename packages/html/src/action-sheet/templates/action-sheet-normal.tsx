@@ -1,7 +1,8 @@
 import { ActionSheet, ActionSheetHeader, ActionSheetItem, ActionSheetItems } from '../../action-sheet';
 
-export const ActionSheetNormal = ({ title = "Select item", ...other }) => (
+export const ActionSheetNormal = ({ title = "Select item", id = "actionsheet-1", ...other }) => (
     <ActionSheet
+        id={id}
         header={
             <ActionSheetHeader
                 title={title}

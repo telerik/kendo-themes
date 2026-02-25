@@ -13,6 +13,7 @@ export type KendoFormFieldProps = {
     label?: null | string;
     orientation?: string;
     optional?: boolean;
+    editorId?: string;
     editor?: React.JSX.Element | string;
     hint?: null | string;
     error?: null | string;
@@ -31,6 +32,7 @@ export const FormField = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        editorId,
         label,
         orientation,
         optional,
@@ -40,11 +42,13 @@ export const FormField = (
         info,
         disabled,
         dir,
-        colSpan
+        colSpan,
+        ...other
     } = props;
 
     return (
         <div
+            {...other}
             className={classNames(
                 FORMFIELD_CLASSNAME,
                 props.className,
@@ -54,15 +58,15 @@ export const FormField = (
                 }
             )} dir={dir}>
             {label &&
-                <Label className="k-form-label" optional={optional} info={info ? "(field info)" : undefined}>
+                <Label className="k-form-label" htmlFor={editorId || undefined} optional={optional} info={info ? "(field info)" : undefined}>
                     {label}
                 </Label>
             }
             { orientation === 'horizontal' && !label && <span className="k-label k-form-label k-label-empty"></span> }
             <div className="k-form-field-wrap">
                 {editor}
-                {hint && <FormHint>{hint}</FormHint>}
-                {error && <FormError>{error}</FormError>}
+                {hint && <FormHint id={editorId ? `${editorId}-hint` : undefined}>{hint}</FormHint>}
+                {error && <FormError id={editorId ? `${editorId}-error` : undefined}>{error}</FormError>}
             </div>
         </div>
     );

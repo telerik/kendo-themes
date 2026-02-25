@@ -29,6 +29,25 @@ const defaultOptions = {
     animation: 'pulse' as const
 };
 
+/**
+ * Skeleton component - displays placeholder loading indicators.
+ *
+ * @accessibility
+ * - The Skeleton itself does not have ARIA attributes as it is a purely visual indicator
+ * - Accessibility must be handled by the parent/container element:
+ *   - Use `aria-busy="true"` on the focusable element that is loading
+ *   - Use `role="alert"` with live region to announce loading state changes
+ *
+ * @example
+ * ```tsx
+ * // Parent container handles accessibility
+ * <div aria-busy="true" aria-label="Loading content">
+ *   <Skeleton variant="text" />
+ * </div>
+ * ```
+ *
+ * @wcag 4.1.3 Status Messages - loading states should be announced to assistive technology
+ */
 export const Skeleton: KendoComponent<KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
@@ -65,5 +84,18 @@ Skeleton.className = SKELETON_CLASSNAME;
 Skeleton.defaultOptions = defaultOptions;
 Skeleton.moduleName = SKELETON_MODULE_NAME;
 Skeleton.folderName = SKELETON_FOLDER_NAME;
+
+/**
+ * Accessibility specification for Skeleton.
+ *
+ * The Skeleton itself is a purely visual placeholder indicator.
+ * Accessibility must be handled by the parent/container element:
+ *   - Use `aria-busy="true"` on the focusable element that is loading
+ *   - Use `role="alert"` with live region to announce loading state changes
+ */
+Skeleton.ariaSpec = {
+    selector: '.k-skeleton',
+    rules: []
+};
 
 export default Skeleton;

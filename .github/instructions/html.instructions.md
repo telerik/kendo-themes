@@ -145,8 +145,21 @@ npm test                # Run Jest tests
 npm start               # Start dev server
 ```
 
+## Accessibility
+
+All components must be WCAG 2.2 Level AA compliant. ARIA attributes are applied directly in `.spec.tsx` and `templates/*.tsx` files.
+
+For applying ARIA to a component, use the `/accessibility` prompt — it contains the full workflow, rules, and patterns.
+
+Quick reference:
+- ARIA specs per component: `aria/[component]_aria.md`
+- Edit only `.spec.tsx` and `templates/*.tsx` (avoid `tests/` unless needed for coverage)
+- Validate: `npm run test:a11y [component]`
+- Completed components with `ariaSpec` serve as reference for new work
+
 ## Related Documentation
 
 - Root instructions: `../../.github/copilot-instructions.md`
 - Package README: `../README.md`
+- Accessibility prompt: `../../.github/prompts/accessibility.prompt.md`
 

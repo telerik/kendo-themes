@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.1...v13.0.2-dev.0) (2026-02-23)
+
+
+### Bug Fixes
+
+* **html:** add rounded full to prompt box endAffix icon button ([ebe6c3e](https://github.com/telerik/kendo-themes/commit/ebe6c3e629cee744e3e9c0b9b717dd6f04fdbd32))
+
+
+
+
+
 ## [13.0.1](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.3...v13.0.1) (2026-02-16)
 
 **Note:** Version bump only for package kendo-themes.repo

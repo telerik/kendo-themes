@@ -1,15 +1,15 @@
 import { OneTimePassword, OneTimePasswordInput, OneTimePasswordSeparator } from "..";
 
-export const OneTimePasswordGroups = ({ hover, focus, invalid, fillMode, size, ...props}: any) => (
-    <OneTimePassword invalid={invalid} size={size} children={
+export const OneTimePasswordGroups = ({ hover, focus, invalid, fillMode, size, disabled, ...props}: any) => (
+    <OneTimePassword invalid={invalid} size={size} aria-label="One-time password" children={
         <>
-            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} focus={focus} hover={hover} {...props}></OneTimePasswordInput>
-            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} {...props}></OneTimePasswordInput>
-            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} {...props}></OneTimePasswordInput>
+            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} disabled={disabled} focus={focus} hover={hover} aria-label="Digit 1 of 6" {...props}></OneTimePasswordInput>
+            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} disabled={disabled} aria-label="Digit 2 of 6" {...props}></OneTimePasswordInput>
+            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} disabled={disabled} aria-label="Digit 3 of 6" {...props}></OneTimePasswordInput>
             <OneTimePasswordSeparator>-</OneTimePasswordSeparator>
-            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} {...props}></OneTimePasswordInput>
-            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} {...props}></OneTimePasswordInput>
-            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} {...props}></OneTimePasswordInput>
+            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} disabled={disabled} aria-label="Digit 4 of 6" {...props}></OneTimePasswordInput>
+            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} disabled={disabled} aria-label="Digit 5 of 6" {...props}></OneTimePasswordInput>
+            <OneTimePasswordInput size={size} fillMode={fillMode} invalid={invalid} disabled={disabled} aria-label="Digit 6 of 6" {...props}></OneTimePasswordInput>
         </>
     } />
 );

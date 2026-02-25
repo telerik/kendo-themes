@@ -5,6 +5,7 @@ export const SliderRangeVertical = (props) => (
         type="range"
         orientation="vertical"
         showButtons={false}
+        aria-label={props['aria-label'] || "Vertical range slider"}
         children={
             <>
                 <SliderTick className="k-first" label large text="0"/>
@@ -17,8 +18,9 @@ export const SliderRangeVertical = (props) => (
                 <SliderTick />
                 <SliderTick />
                 <SliderTick />
-                <SliderTick className="k-last" label large text="10"/></>
+                <SliderTick className="k-last" label large text="10"/>
+            </>
         }
-        {...props}>
-    </Slider>
+        {...props}
+    />
 );

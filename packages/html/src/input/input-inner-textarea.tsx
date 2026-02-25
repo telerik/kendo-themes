@@ -10,6 +10,7 @@ export type InputInnerTextareaProps = {
     value?: string;
     placeholder?: string;
     rows?: number;
+    disabled?: boolean;
 };
 
 const defaultOptions = {
@@ -25,6 +26,7 @@ export const InputInnerTextarea = (
         value = defaultOptions.value,
         placeholder = defaultOptions.placeholder,
         rows,
+        disabled,
         ...other
     } = props;
 
@@ -35,6 +37,7 @@ export const InputInnerTextarea = (
             placeholder={placeholder}
             rows={rows}
             defaultValue={value}
+            disabled={disabled || undefined}
         />
     );
 };

@@ -34,6 +34,15 @@ export type FontIconProps = FontIconOptions & {
 
 const defaultOptions = {};
 
+/**
+ * FontIcon component - renders decorative font-based icons.
+ *
+ * @accessibility
+ * - Always renders `aria-hidden="true"` as icons are decorative
+ * - Screen readers will skip this element entirely
+ *
+ * @wcag 1.1.1 Non-text Content - decorative images hidden from AT
+ */
 export const FontIcon = (
     props: FontIconProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
@@ -67,6 +76,7 @@ export const FontIcon = (
                     'k-flip-v': flip === 'v' || flip === 'both'
                 }
             )}
+            aria-hidden="true"
         />
     );
 };

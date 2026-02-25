@@ -1,5 +1,5 @@
 ---
-mode: "agent"
+agent: "agent"
 tools: ["codebase", "editFiles"]
 description: "Create new SCSS variables using Kendo UI themes best practices"
 ---

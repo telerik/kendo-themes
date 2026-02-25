@@ -26,10 +26,10 @@ export default () => (
             <span>full screen</span>
 
             <section>
-                <ActionSheet adaptive={true}
+                <ActionSheet id="actionsheet-datatable-1" adaptive={true}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
                             filter={true}
                             title="Select Item">
                         </ActionSheetHeader>
@@ -106,10 +106,10 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheet adaptive={true} fullscreen={true}
+                <ActionSheet id="actionsheet-datatable-2" adaptive={true} fullscreen={true}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
                             filter={true}
                             title="Select Item">
                         </ActionSheetHeader>
