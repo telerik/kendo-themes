@@ -24,7 +24,7 @@ export default () =>(
                     {Avatar.options.size.map((size) => (
                         <span className="k-d-flex k-gap-1">
                             <AvatarImage size={size} rounded={roundness}>
-                                <img src="/packages/html/assets/avatar.jpg" />
+                                <img src="/packages/html/assets/avatar.jpg" alt="User avatar" />
                             </AvatarImage>
                             <AvatarIcon size={size} rounded={roundness}>
                                 <Icon icon="x" />

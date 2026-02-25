@@ -1,4 +1,7 @@
 import { classNames, stateClassNames, States } from '../misc';
+import { Label } from '../label/label.spec';
+import { FormHint } from './form-hint.spec';
+import { FormError } from './form-error.spec';
 
 export const FORMFIELD_CLASSNAME = 'k-form-field';
 
@@ -10,6 +13,7 @@ export type KendoFormFieldProps = {
     label?: null | string;
     orientation?: string;
     optional?: boolean;
+    editorId?: string;
     editor?: React.JSX.Element | string;
     hint?: null | string;
     error?: null | string;
@@ -28,6 +32,7 @@ export const FormField = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        editorId,
         label,
         orientation,
         optional,
@@ -37,11 +42,13 @@ export const FormField = (
         info,
         disabled,
         dir,
-        colSpan
+        colSpan,
+        ...other
     } = props;
 
     return (
         <div
+            {...other}
             className={classNames(
                 FORMFIELD_CLASSNAME,
                 props.className,
@@ -51,20 +58,15 @@ export const FormField = (
                 }
             )} dir={dir}>
             {label &&
-                            <label className={classNames(
-                                'k-label',
-                                'k-form-label'
-                            )}>
-                                {label}
-                                {optional && <span className="k-label-optional">(Optional)</span>}
-                                {info && <span className="k-field-info">(field info)</span>}
-                            </label>
+                <Label className="k-form-label" htmlFor={editorId || undefined} optional={optional} info={info ? "(field info)" : undefined}>
+                    {label}
+                </Label>
             }
             { orientation === 'horizontal' && !label && <span className="k-label k-form-label k-label-empty"></span> }
             <div className="k-form-field-wrap">
                 {editor}
-                {hint && <div className="k-form-hint">{hint}</div>}
-                {error && <div className="k-form-error">{error}</div>}
+                {hint && <FormHint id={editorId ? `${editorId}-hint` : undefined}>{hint}</FormHint>}
+                {error && <FormError id={editorId ? `${editorId}-error` : undefined}>{error}</FormError>}
             </div>
         </div>
     );

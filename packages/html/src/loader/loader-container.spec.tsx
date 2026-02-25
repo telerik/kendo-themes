@@ -44,6 +44,21 @@ const defaultOptions = {
     panel: false
 } as const;
 
+/**
+ * LoaderContainer component - displays a loader with optional overlay and label.
+ *
+ * @accessibility
+ * - Uses `role="status"` with `aria-live="polite"` to announce loading state politely
+ * - The "Loading..." label provides visible text for the loading state
+ * - Overlay prevents interaction with content behind the loader
+ *
+ * @example
+ * ```tsx
+ * <LoaderContainer aria-label="Loading page content" />
+ * ```
+ *
+ * @wcag 4.1.3 Status Messages - loading states announced via live region
+ */
 export const LoaderContainer: KendoComponent<KendoLoaderContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoLoaderContainerProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -71,6 +86,9 @@ export const LoaderContainer: KendoComponent<KendoLoaderContainerProps & React.H
                     [`k-loader-${position}`]: position,
                 },
             )}
+            role="status"
+            aria-live="polite"
+            aria-label={other['aria-label'] || 'Loading'}
         >
             <div className={`k-loader-container-overlay k-overlay-${overlay}`}></div>
             <div className={classNames(
@@ -94,5 +112,17 @@ LoaderContainer.className = LOADERCONTAINER_CLASSNAME;
 LoaderContainer.defaultOptions = defaultOptions;
 LoaderContainer.moduleName = LOADER_MODULE_NAME;
 LoaderContainer.folderName = LOADER_FOLDER_NAME;
+
+/**
+ * Accessibility specification for LoaderContainer.
+ */
+LoaderContainer.ariaSpec = {
+    selector: '.k-loader-container',
+    rules: [
+        { selector: '.k-loader-container', attribute: 'role=status', usage: 'Live region for loading state.' },
+        { selector: '.k-loader-container', attribute: 'aria-live=polite', usage: 'Polite announcements of loading state changes.' },
+        { selector: '.k-loader-container', attribute: 'aria-label', usage: 'Accessible name for the loader container.' },
+    ]
+};
 
 export default LoaderContainer;

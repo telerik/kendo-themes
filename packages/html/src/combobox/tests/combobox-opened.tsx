@@ -1,4 +1,4 @@
-import { ComboboxPopup } from '../../combobox';
+import { ComboboxPopup, ComboboxNoData, ComboboxWithIcons } from '../../combobox';
 
 const styles = `
     #test-area {
@@ -22,6 +22,16 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <ComboboxPopup value="Opened" />
+            </div>
+
+            <span>ComboBox No Data</span>
+            <span>ComboBox With Icons</span>
+
+            <div>
+                <ComboboxNoData value="No results" />
+            </div>
+            <div>
+                <ComboboxWithIcons value="With icons" />
             </div>
         </div>
     </>

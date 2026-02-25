@@ -24,7 +24,7 @@
             <div class="k-messagebox k-messagebox-error">Error: The quick brown fox jumps over the lazy dog.</div>
             <form class="k-form">
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">Normal:<span class="k-label-optional">(Optional)</span>
+                    <label class="k-form-label k-label">Normal:<span class="k-label-optional">(Optional)</span>
                     </label>
                     <div class="k-form-field-wrap">
                         <span class="k-textbox k-input">
@@ -35,12 +35,12 @@
                     </div>
                 </div>
                 <div class="k-form-field k-form-field-error">
-                    <label class="k-label k-form-label">Error:<span class="k-field-info">(field info)</span>
+                    <label class="k-form-label k-label">Error:<span class="k-field-info">(field info)</span>
                     </label>
                     <div class="k-form-field-wrap">
                         <span class="k-textbox k-input k-invalid">
-                            <input class="k-input-inner" placeholder="Textbox..." autocomplete="off" type="text" value="">
-                            <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle">
+                            <input aria-invalid="true" class="k-input-inner" placeholder="Textbox..." autocomplete="off" type="text" value="">
+                            <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
                                 </svg>
@@ -51,17 +51,17 @@
                     </div>
                 </div>
                 <div class="k-form-field k-disabled">
-                    <label class="k-label k-form-label">Disabled:</label>
+                    <label class="k-form-label k-label">Disabled:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-textbox k-input k-disabled">
-                            <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Disabled">
+                            <input class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="Disabled">
                         </span>
                         <div class="k-form-hint">Hint: hint message</div>
                         <div class="k-form-error">Error: error message</div>
                     </div>
                 </div>
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">Checkbox:</label>
+                    <label class="k-form-label k-label">Checkbox:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-checkbox-wrap">
                             <input class="k-checkbox" type="checkbox">
@@ -94,7 +94,7 @@
             <div class="k-messagebox k-messagebox-error">Error: The quick brown fox jumps over the lazy dog.</div>
             <form class="k-form k-form-horizontal">
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">Normal:<span class="k-label-optional">(Optional)</span>
+                    <label class="k-form-label k-label">Normal:<span class="k-label-optional">(Optional)</span>
                     </label>
                     <div class="k-form-field-wrap">
                         <span class="k-textbox k-input">
@@ -105,12 +105,12 @@
                     </div>
                 </div>
                 <div class="k-form-field k-form-field-error">
-                    <label class="k-label k-form-label">Error:<span class="k-field-info">(field info)</span>
+                    <label class="k-form-label k-label">Error:<span class="k-field-info">(field info)</span>
                     </label>
                     <div class="k-form-field-wrap">
                         <span class="k-textbox k-input k-invalid">
-                            <input class="k-input-inner" placeholder="Textbox..." autocomplete="off" type="text" value="">
-                            <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle">
+                            <input aria-invalid="true" class="k-input-inner" placeholder="Textbox..." autocomplete="off" type="text" value="">
+                            <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
                                 </svg>
@@ -121,17 +121,17 @@
                     </div>
                 </div>
                 <div class="k-form-field k-disabled">
-                    <label class="k-label k-form-label">Disabled:</label>
+                    <label class="k-form-label k-label">Disabled:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-textbox k-input k-disabled">
-                            <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Disabled">
+                            <input class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="Disabled">
                         </span>
                         <div class="k-form-hint">Hint: hint message</div>
                         <div class="k-form-error">Error: error message</div>
                     </div>
                 </div>
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">Checkbox:</label>
+                    <label class="k-form-label k-label">Checkbox:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-checkbox-wrap">
                             <input class="k-checkbox" type="checkbox">

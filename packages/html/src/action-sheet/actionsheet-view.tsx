@@ -16,6 +16,10 @@ export type KendoActionSheetViewProps = {
     footer?: React.ReactElement<typeof ActionSheetFooter>;
     adaptive?: boolean;
     animated?: boolean;
+    /**
+     * ID for the title element, used by aria-labelledby on the ActionSheet.
+     */
+    titleId?: string;
 }
 
 export const ActionSheetView = (
@@ -28,10 +32,11 @@ export const ActionSheetView = (
         children,
         header,
         footer,
+        titleId,
         ...other
     } = props;
 
-    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} {...header?.props} />;
+    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} titleId={titleId} {...header?.props} />;
     const _ActionSheetFooter = footer?.type === ActionSheetFooter && <ActionSheetFooter {...footer?.props} />;
 
     return (

@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.1...v13.0.2-dev.0) (2026-02-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+## [13.0.1](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.3...v13.0.1) (2026-02-16)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+## [13.0.1-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.2...v13.0.1-dev.3) (2026-02-16)
+
+
+### Bug Fixes
+
+* **smart-box:** fix style glitches ([73617d0](https://github.com/telerik/kendo-themes/commit/73617d05513807929d833d25d2828b2a215c2bc1))
+
+
+
+
+
+## [13.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.1...v13.0.1-dev.2) (2026-02-16)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+## [13.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.0...v13.0.1-dev.1) (2026-02-13)
+
+
+### Bug Fixes
+
+* **forms:** do not apply margin to first children in vertical forms ([5ad47dc](https://github.com/telerik/kendo-themes/commit/5ad47dc6b338421845e49166eb0dfaffe06556b9))
+
+
+
+
+
+## [13.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.0...v13.0.1-dev.0) (2026-02-10)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+# [13.0.0](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.7...v13.0.0) (2026-02-09)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+# [13.0.0-dev.7](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.6...v13.0.0-dev.7) (2026-02-09)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+# [13.0.0-dev.6](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.5...v13.0.0-dev.6) (2026-02-05)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
 # [13.0.0-dev.5](https://github.com/telerik/kendo-themes/compare/v13.0.0-dev.4...v13.0.0-dev.5) (2026-02-02)
 
 

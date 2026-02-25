@@ -3,7 +3,11 @@ import { Button, KendoButtonProps } from '../../button';
 
 const options = Button.options;
 const states = Button.states;
-const defaults = Button.defaultOptions;
+const defaults = {
+  ...Button.defaultOptions,
+  variant: 'text-button',
+};
+
 const variants = [
   {
     name: 'icon-button',

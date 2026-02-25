@@ -7,4 +7,5 @@ export * from "./templates/radio-with-label-before";
 export * from "./templates/radio-inside-label";
 export * from "./templates/radio-group-normal";
 export * from "./templates/radio-group-horizontal";
+export * from "./templates/radio-invalid";
 export * from './demos/radio';

@@ -1,6 +1,9 @@
 ﻿import { MenuButton } from '../menu-button.spec';
-import { Button, KendoButtonProps } from '../../button';
-import { MenuList, MenuListItem } from '../../menu';
+import { Button, KendoButtonProps } from '../../button/button.spec';
+import { MenuList } from '../../menu/menu-list.spec';
+import { MenuListItem } from '../../menu/menu-list-item.spec';
+import { Popup } from '../../popup/popup.spec';
+import { ReactElement } from 'react';
 
 const states = Button.states;
 const defaults = {
@@ -39,28 +42,19 @@ export const MenuButtonDemo = (
   let additionalProps: any = {};
 
   const popup = (
-    <MenuList size={other.size}>
+    <Popup className="k-menu-popup">
+      <MenuList size={other.size}>
       <MenuListItem first text="Menu Item"></MenuListItem>
       <MenuListItem text="Menu Item"></MenuListItem>
       <MenuListItem last text="Menu Item"></MenuListItem>
-    </MenuList>
+      </MenuList>
+    </Popup>
   );
 
-  Object.keys(mods || {}).forEach((modifier) => {
-    switch (modifier) {
-      case 'opened':
-        additionalProps.opened = mods?.[modifier] ? true : false;
-        additionalProps.popup = mods?.[modifier] ? popup : '';
-        break;
-      default:
-        break;
-    }
-  });
-
-
+  let button: ReactElement;
   switch (variant) {
     case 'icon-only':
-      return (
+      button = (
         <div>
           <MenuButton
             {...other}
@@ -69,8 +63,10 @@ export const MenuButtonDemo = (
           />
         </div>
       );
+
+      break;
     case 'icon-and-text':
-      return (
+      button = (
         <div>
           <MenuButton
             {...other}
@@ -81,9 +77,11 @@ export const MenuButtonDemo = (
           </MenuButton>
         </div>
       );
+
+      break;
     case 'text':
     default:
-      return (
+      button = (
         <div>
           <MenuButton
             {...other}
@@ -93,8 +91,17 @@ export const MenuButtonDemo = (
           </MenuButton>
         </div>
       );
+
+      break;
   }
-}
+
+  return (
+    <>
+      {button}
+      {mods?.opened && popup}
+    </>
+  );
+};
 
 
 MenuButtonDemo.options = options;

@@ -7,4 +7,8 @@ export * from "./templates/combobox-prefix";
 export * from "./templates/combobox-suffix";
 export * from "./templates/combobox-custom-value";
 export * from "./templates/combobox-grouping-modern-custom-value";
+export * from "./templates/combobox-disabled";
+export * from "./templates/combobox-invalid";
+export * from "./templates/combobox-nodata";
+export * from "./templates/combobox-with-icons";
 export * from './demos/combobox';

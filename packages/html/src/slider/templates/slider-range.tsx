@@ -4,6 +4,7 @@ export const SliderRange = (props) => (
     <Slider
         type="range"
         showButtons={false}
+        aria-label={props['aria-label'] || "Range slider"}
         children={
             <>
                 <SliderTick className="k-first" label large text="0"/>
@@ -16,8 +17,9 @@ export const SliderRange = (props) => (
                 <SliderTick />
                 <SliderTick />
                 <SliderTick />
-                <SliderTick className="k-last" label large text="10"/></>
+                <SliderTick className="k-last" label large text="10"/>
+            </>
         }
-        {...props}>
-    </Slider>
+        {...props}
+    />
 );

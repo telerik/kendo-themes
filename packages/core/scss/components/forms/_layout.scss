@@ -72,13 +72,6 @@
             margin: $kendo-form-fieldset-margin;
             padding: $kendo-form-fieldset-padding;
             border: 0;
-
-            > * {
-                &:not(.k-hidden):first-child,
-                &.k-hidden + :not(.k-hidden) {
-                    margin-block-start: 0;
-                }
-            }
         }
 
         .k-form-legend {
@@ -96,14 +89,6 @@
         .k-form-group {
             padding: 0;
         }
-
-        > * {
-            &:not(.k-hidden):first-child,
-            &.k-hidden + :not(.k-hidden) {
-                margin-block-start: 0;
-            }
-        }
-
 
         // Form field
         .k-form-field,
@@ -220,6 +205,22 @@
                 .k-form-field,
                 .k-form-buttons {
                     margin-block-start: $_form-rows-spacing;
+                }
+
+                .k-form-field-set {
+                    > * {
+                        &:not(.k-hidden):first-child,
+                        &.k-hidden + :not(.k-hidden) {
+                            margin-block-start: 0;
+                        }
+                    }
+                }
+
+                > * {
+                    &:not(.k-hidden):first-child,
+                    &.k-hidden + :not(.k-hidden) {
+                        margin-block-start: 0;
+                    }
                 }
             }
         }

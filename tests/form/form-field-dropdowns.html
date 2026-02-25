@@ -23,7 +23,7 @@
         <section>
             <form class="k-form">
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">AutoComplete:</label>
+                    <label class="k-form-label k-label">AutoComplete:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-autocomplete k-input">
                             <input class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" type="text" value="">
@@ -31,12 +31,12 @@
                     </div>
                 </div>
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">ComboBox:</label>
+                    <label class="k-form-label k-label">ComboBox:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-combobox k-input">
-                            <input class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
-                            <button class="k-input-button k-button k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <input role="combobox" aria-haspopup="listbox" aria-expanded="false" class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
+                            <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
                                     </svg>
@@ -46,12 +46,12 @@
                     </div>
                 </div>
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">DropDownList:</label>
+                    <label class="k-form-label k-label">DropDownList:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-dropdownlist k-picker">
                             <span class="k-input-inner">DropdownList...</span>
-                            <button class="k-input-button k-button k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <button class="k-input-button k-button k-icon-button" aria-label="DropdownList...">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
                                     </svg>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">MultiSelect:</label>
+                    <label class="k-form-label k-label">MultiSelect:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-multiselect k-input">
                             <div class="k-input-values">
@@ -72,7 +72,7 @@
                                         </span>
                                         <span class="k-chip-actions">
                                             <span class="k-chip-action k-chip-remove-action">
-                                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
                                                     </svg>
@@ -84,7 +84,7 @@
                                 <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                             </div>
                             <span class="k-clear-value">
-                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                     </svg>
@@ -98,7 +98,7 @@
         <section>
             <form class="k-form k-form-horizontal">
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">AutoComplete:</label>
+                    <label class="k-form-label k-label">AutoComplete:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-autocomplete k-input">
                             <input class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" type="text" value="">
@@ -106,12 +106,12 @@
                     </div>
                 </div>
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">ComboBox:</label>
+                    <label class="k-form-label k-label">ComboBox:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-combobox k-input">
-                            <input class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
-                            <button class="k-input-button k-button k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <input role="combobox" aria-haspopup="listbox" aria-expanded="false" class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
+                            <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
                                     </svg>
@@ -121,12 +121,12 @@
                     </div>
                 </div>
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">DropDownList:</label>
+                    <label class="k-form-label k-label">DropDownList:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-dropdownlist k-picker">
                             <span class="k-input-inner">DropdownList...</span>
-                            <button class="k-input-button k-button k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                            <button class="k-input-button k-button k-icon-button" aria-label="DropdownList...">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
                                     </svg>
@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <div class="k-form-field">
-                    <label class="k-label k-form-label">MultiSelect:</label>
+                    <label class="k-form-label k-label">MultiSelect:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-multiselect k-input">
                             <div class="k-input-values">
@@ -147,7 +147,7 @@
                                         </span>
                                         <span class="k-chip-actions">
                                             <span class="k-chip-action k-chip-remove-action">
-                                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
+                                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
                                                     </svg>
@@ -159,7 +159,7 @@
                                 <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                             </div>
                             <span class="k-clear-value">
-                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                     </svg>

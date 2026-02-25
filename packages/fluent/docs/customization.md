@@ -7269,8 +7269,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-bg, transparent )</code></td>
-    <td><code>var(--kendo-chat-bg, transparent)</code></td>
+    <td><code>var( --kendo-chat-bg, #{k-color(app-surface)} )</code></td>
+    <td><code>var(--kendo-chat-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat.</div></div>
@@ -13954,8 +13954,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-box-wrapper-scroll-gradient</td>
     <td>String</td>
-    <td><code>var(--kendo-file-box-wrapper-scroll-gradient, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100% )</code></td>
-    <td><code>var(--kendo-file-box-wrapper-scroll-gradient, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)</code></td>
+    <td><code>var(--kendo-file-box-wrapper-scroll-gradient, rgba(255, 255, 255, 0.00) 0%, #{k-color(app-surface)} 100% )</code></td>
+    <td><code>var(--kendo-file-box-wrapper-scroll-gradient, rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface, #fafafa) 100%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for the File Box wrapper scrolling indicator.</div></div>
@@ -19365,8 +19365,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-input-flat-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-input-flat-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var( --kendo-input-flat-bg, transparent )</code></td>
+    <td><code>var(--kendo-input-flat-bg, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Input components.</div></div>
@@ -19394,9 +19394,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-input-flat-hover-bg</td>
-    <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #fafafa)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered flat Input components.</div></div>
@@ -19424,9 +19424,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-input-flat-focus-bg</td>
-    <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #fafafa)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused flat Input components.</div></div>
@@ -26351,8 +26351,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-picker-flat-bg, none )</code></td>
-    <td><code>var(--kendo-picker-flat-bg, none)</code></td>
+    <td><code>var( --kendo-picker-flat-bg, transparent )</code></td>
+    <td><code>var(--kendo-picker-flat-bg, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Picker components.</div></div>
@@ -31238,8 +31238,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-smart-box-sm-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-sm-padding-x, k-spacing(0) )</code></td>
-    <td><code>var(--kendo-smart-box-sm-padding-x, var(--kendo-spacing-0, 0px))</code></td>
+    <td><code>var( --kendo-smart-box-sm-padding-x, 0 )</code></td>
+    <td><code>var(--kendo-smart-box-sm-padding-x, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Smart box.</div></div>
@@ -31288,8 +31288,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-smart-box-lg-prefix-margin-x</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-lg-icon-margin-x, k-spacing(0) )</code></td>
-    <td><code>var(--kendo-smart-box-lg-icon-margin-x, var(--kendo-spacing-0, 0px))</code></td>
+    <td><code>var( --kendo-smart-box-lg-icon-margin-x, 0 )</code></td>
+    <td><code>var(--kendo-smart-box-lg-icon-margin-x, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the prefix icon in the large Smart box.</div></div>
@@ -31363,7 +31363,7 @@ The following table lists the available variables for customizing the Fluent the
 
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-smart-box-sm-padding-x, var(--kendo-spacing-0, 0px))","prefix-margin-x":"var(--kendo-smart-box-sm-icon-margin-x, var(--kendo-spacing-1, 0.25rem))"</li><li>md: "padding-x":"var(--kendo-smart-box-md-padding-x, var(--kendo-spacing-0\\.5, 0.125rem))","prefix-margin-x":"var(--kendo-smart-box-md-icon-margin-x, var(--kendo-spacing-1, 0.25rem))"</li><li>lg: "padding-x":"var(--kendo-smart-box-lg-padding-x, var(--kendo-spacing-2, 0.5rem))","prefix-margin-x":"var(--kendo-smart-box-lg-icon-margin-x, var(--kendo-spacing-0, 0px))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-smart-box-sm-padding-x, 0)","prefix-margin-x":"var(--kendo-smart-box-sm-icon-margin-x, var(--kendo-spacing-1, 0.25rem))"</li><li>md: "padding-x":"var(--kendo-smart-box-md-padding-x, var(--kendo-spacing-0\\.5, 0.125rem))","prefix-margin-x":"var(--kendo-smart-box-md-icon-margin-x, var(--kendo-spacing-1, 0.25rem))"</li><li>lg: "padding-x":"var(--kendo-smart-box-lg-padding-x, var(--kendo-spacing-2, 0.5rem))","prefix-margin-x":"var(--kendo-smart-box-lg-icon-margin-x, 0)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Smart box components.</div></div>
@@ -33342,8 +33342,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-suggestion-scroll-gradient</td>
     <td>String</td>
-    <td><code>var( --kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 1) 100% )</code></td>
-    <td><code>var(--kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)</code></td>
+    <td><code>var( --kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0.00) 0%, #{k-color(app-surface)} 100% )</code></td>
+    <td><code>var(--kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface, #fafafa) 100%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for scroll indicators in the Suggestion group.</div></div>

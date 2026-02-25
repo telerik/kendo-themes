@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-themes-html",
   "description": "A collection of HTML helpers used for developing Kendo UI themes",
-  "version": "13.0.0-dev.5",
+  "version": "13.0.2-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -12,9 +12,9 @@
   ],
   "types": "./dist/types/index.d.ts",
   "exports": {
+    "types": "./dist/types/index.d.ts",
     "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js",
-    "types": "./dist/types/index.d.ts"
+    "require": "./dist/cjs/index.js"
   },
   "files": [
     "dist/**/*.js",
@@ -43,9 +43,9 @@
     "typegen": "npx tsc --emitDeclarationOnly --declaration --declarationDir dist/types/",
     "typecheck": "npx tsc --noEmit --emitDeclarationOnly false --project tsconfig.json ",
     "build:tests": "node ./scripts/build-tests.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "prepublishOnly": "npm run build && npm run typegen"
   },
   "dependencies": {
@@ -57,8 +57,9 @@
   },
   "devDependencies": {
     "@types/react": "^19.0.8",
+    "@vitest/coverage-v8": "^3.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "ts-jest": "^29.2.0"
+    "vitest": "^3.0.0"
   }
 }

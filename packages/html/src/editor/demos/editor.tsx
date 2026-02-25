@@ -7,34 +7,30 @@ import { ToolbarItem } from '../../toolbar';
 
 const options = Editor.options;
 const states = Editor.states;
-const defaults = Editor.defaultOptions;
+const defaults = {
+    ...Editor.defaultOptions,
+    variant: 'normal',
+};
 
-const modifiers = [
+const modifiers = [];
+const variants = [
     {
+        name: 'normal',
+        title: 'Normal',
+    }, {
         name: 'resizable',
         title: 'Resizable',
     },
 ];
-const variants = [];
 
-export const EditorDemo = (props: KendoEditorProps & {
-    modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
-}
+export const EditorDemo = (props: KendoEditorProps & { variant?: (typeof variants)[number]['name'] }
 ) => {
-
-    const { modifiers: mods, ...other } = { ...defaults, ...props };
+    const { variant, ...other } = { ...defaults, ...props };
 
     let additionalProps: any = {};
-
-    Object.keys(mods || {}).forEach((modifier) => {
-        switch (modifier) {
-            case 'resizable':
-                additionalProps.resizable = mods?.[modifier] ? true : false;
-                break;
-            default:
-                break;
-        }
-    });
+    if (variant === 'resizable') {
+        additionalProps.resizable = true;
+    }
 
     return (
         <EditorNormal focus {...additionalProps} style={{ width: "750px", height: "375px" }} {...other}

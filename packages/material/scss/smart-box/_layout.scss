@@ -1,6 +1,24 @@
+@use "../core/functions/index.scss" as *;
+@use "../core/mixins/index.scss" as *;
+@use "../input/_variables.scss" as *;
+@use "../smart-box/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/smart-box/_layout.scss" as *;
 
 
 @mixin kendo-smart-box--layout() {
     @include kendo-smart-box--layout-base();
+
+    .k-smart-box {
+        // Set the border radius to 0 for the bottom corners only for solid fill mode.
+        #{k-when-default($kendo-input-default-fill-mode, "solid")}
+        &.k-input-solid {
+
+            @each $roundness in $kendo-smart-box-roundness {
+                #{k-when-default($kendo-smart-box-default-roundness, $roundness)}
+                &.k-rounded-#{$roundness} {
+                    @include border-bottom-radius( 0 );
+                }
+            }
+        }
+    }
 }

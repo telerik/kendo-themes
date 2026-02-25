@@ -97,9 +97,9 @@ export const PromptBox = (
                         rows={lineMode === 'multi' || isExpanded ? 3 : 1}
                     />
                 )}
-                {endAffix && <div className={`${PROMPT_BOX_CLASSNAME}-affix`}>
+                <div className={`${PROMPT_BOX_CLASSNAME}-affix`}>
                     {endAffix}
-                    <SpeechToTextButton size="small" fillMode="flat" />
+                    <SpeechToTextButton size="small" fillMode="flat" rounded="full"/>
                     <IconButton
                         icon={generating ? "stop-sm" : "arrow-up-outline"}
                         size="small"
@@ -108,7 +108,7 @@ export const PromptBox = (
                         disabled={!value && !generating}
                         className={classNames({ "k-generating": generating })}
                     />
-                </div>}
+                </div>
             </div>
             {children}
         </div>

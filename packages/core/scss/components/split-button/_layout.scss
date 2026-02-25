@@ -34,7 +34,7 @@
         padding-block: $kendo-split-button-arrow-padding-y;
         padding-inline: $kendo-split-button-arrow-padding-x;
 
-        .k-button-icon {
+        &.k-icon-button .k-button-icon {
             min-width: 0;
         }
     }
