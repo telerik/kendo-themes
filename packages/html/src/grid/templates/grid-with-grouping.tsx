@@ -33,8 +33,8 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="ID"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Price"></GridHeaderCell>

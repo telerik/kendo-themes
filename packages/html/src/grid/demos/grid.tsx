@@ -225,7 +225,7 @@ export const GridDemo = (
                   </colgroup>
                   <TableThead>
                     <TableRow>
-                      <GridHeaderCell className="k-drag-cell"></GridHeaderCell>
+                      <GridHeaderCell className="k-drag-cell" accessibleLabel="Reorder"></GridHeaderCell>
                       <GridHeaderCell columnTitle="ID"></GridHeaderCell>
                       <GridHeaderCell columnTitle="Product Name"></GridHeaderCell>
                       <GridHeaderCell columnTitle="Units in Stock"></GridHeaderCell>

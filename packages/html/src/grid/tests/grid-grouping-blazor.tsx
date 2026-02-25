@@ -100,7 +100,7 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-group-cell" colspan={1} rowspan={1}></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" colspan={1} rowspan={1} accessibleLabel="Group"></GridHeaderCell>
                                     <GridHeaderCell colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
@@ -200,8 +200,8 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-group-cell" colspan={1} rowspan={1}></GridHeaderCell>
-                                    <GridHeaderCell className="k-group-cell" colspan={1} rowspan={1}></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" colspan={1} rowspan={1} accessibleLabel="Group"></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" colspan={1} rowspan={1} accessibleLabel="Group"></GridHeaderCell>
                                     <GridHeaderCell colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>

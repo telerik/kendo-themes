@@ -17,7 +17,7 @@ export const GridWithRowReordering = ({ contentClassName, ...other }: any) => (
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell accessibleLabel="Reorder"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Product Id"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Unit Price"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Discontinued"></GridHeaderCell>

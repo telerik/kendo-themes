@@ -27,7 +27,7 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell sticky columnTitle="Team" colspan={1} style={{ left: '0px', right: '0px' }}></GridHeaderCell>
                                     <GridHeaderCell sticky columnTitle="Active Projects" colspan={1}></GridHeaderCell>

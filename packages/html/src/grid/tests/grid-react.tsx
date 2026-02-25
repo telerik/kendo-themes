@@ -24,7 +24,7 @@ export default () => (
                                 </colgroup>
                                 <TableThead>
                                     <TableRow>
-                                        <GridHeaderCell sticky style={{ left: '0px', right: "240px" }}></GridHeaderCell>
+                                        <GridHeaderCell sticky accessibleLabel="Select" style={{ left: '0px', right: "240px" }}></GridHeaderCell>
                                         <GridHeaderCell columnTitle="ID"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Name"></GridHeaderCell>
                                         <GridHeaderCell sticky columnTitle="Price" style={{ left: "60px", right: "120px" }}></GridHeaderCell>
