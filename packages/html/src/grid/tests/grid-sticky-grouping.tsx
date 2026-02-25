@@ -40,7 +40,7 @@ export default () => (
               </colgroup>
               <TableThead>
                 <TableRow>
-                  <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell"></GridHeaderCell>
+                  <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                   <GridHeaderCell colspan={1} columnTitle="Contact Name"></GridHeaderCell>
                   <GridHeaderCell colspan={1} columnTitle="Job Title"></GridHeaderCell>
                   <GridHeaderCell colspan={1} columnTitle="Country"></GridHeaderCell>

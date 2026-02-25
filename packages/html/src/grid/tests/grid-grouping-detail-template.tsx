@@ -23,7 +23,7 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-hierarchy-cell"></GridHeaderCell>
+                                    <GridHeaderCell className="k-hierarchy-cell" accessibleLabel="Detail"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox id="k-grid0-select-all" />
                                     </GridHeaderCell>
@@ -101,8 +101,8 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-group-cell"></GridHeaderCell>
-                                    <GridHeaderCell className="k-hierarchy-cell"></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
+                                    <GridHeaderCell className="k-hierarchy-cell" accessibleLabel="Detail"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
@@ -201,9 +201,9 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-group-cell"></GridHeaderCell>
-                                    <GridHeaderCell className="k-group-cell"></GridHeaderCell>
-                                    <GridHeaderCell className="k-hierarchy-cell"></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
+                                    <GridHeaderCell className="k-hierarchy-cell" accessibleLabel="Detail"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
@@ -322,9 +322,9 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-group-cell"></GridHeaderCell>
-                                    <GridHeaderCell className="k-group-cell"></GridHeaderCell>
-                                    <GridHeaderCell className="k-hierarchy-cell"></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
+                                    <GridHeaderCell className="k-hierarchy-cell" accessibleLabel="Detail"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>

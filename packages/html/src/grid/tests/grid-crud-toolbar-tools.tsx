@@ -49,7 +49,7 @@ export default () => (
                                                 <GridHeaderCell columnTitle="Header for Num"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header for Date"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header for Bool"></GridHeaderCell>
-                                                <GridHeaderCell></GridHeaderCell>
+                                                <GridHeaderCell accessibleLabel="Commands"></GridHeaderCell>
                                             </TableRow>
                                         </TableThead>
                                     </GridHeaderTable>
@@ -153,7 +153,7 @@ export default () => (
                                                 <GridHeaderCell columnTitle="Header for Num"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header for Date"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header for Bool"></GridHeaderCell>
-                                                <GridHeaderCell></GridHeaderCell>
+                                                <GridHeaderCell accessibleLabel="Commands"></GridHeaderCell>
                                             </TableRow>
                                         </TableThead>
                                     </GridHeaderTable>

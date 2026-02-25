@@ -36,8 +36,8 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow role="row" style={{ touchAction: "none" }}>
-                                    <GridHeaderCell colspan={1} rowspan={1} style={{ left: '0px', right: '0px' }}></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-hierarchy-cell" style={{ left: '0px', right: '0px' }}></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} accessibleLabel="Select" style={{ left: '0px', right: '0px' }}></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-hierarchy-cell" accessibleLabel="Detail" style={{ left: '0px', right: '0px' }}></GridHeaderCell>
                                     <GridHeaderCell sticky columnTitle="customerID" colspan={1} rowspan={1} style={{ left: '90px', right: '0px' }}></GridHeaderCell>
                                     <GridHeaderCell columnTitle="customerID" colspan={1} rowspan={1} sortable sortIcon="sort-desc-small"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="shipName" colspan={1} rowspan={1}></GridHeaderCell>
