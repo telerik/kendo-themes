@@ -30,7 +30,7 @@ import { createRequire } from 'module';
 import { createInterface } from 'readline';
 
 const require = createRequire(import.meta.url);
-const htmlPackage = require('../packages/html/dist/cjs/index.js');
+let htmlPackage;
 
 const PORT = 18114;
 const HOST = 'localhost';
@@ -464,6 +464,9 @@ async function main() {
             process.exit(1);
         }
     }
+
+    // Load HTML package after potential build step so that --build can create dist first
+    htmlPackage = require('../packages/html/dist/cjs/index.js');
 
     const specRegistry = buildSpecRegistry();
     const affected = affectedMode ? getChangedComponents() : null;
