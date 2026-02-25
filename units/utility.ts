@@ -1,7 +1,7 @@
 import * as sass from "sass";
 import * as fs from "fs";
 import * as path from "path";
-import { describe, it, expect } from "@jest/globals";
+import { describe, it, expect } from "vitest";
 
 const theme = process.env.THEME as string;
 const themeDir = path.resolve(__dirname, "../packages", theme);

@@ -3,7 +3,7 @@
     "target": "es2020",
     "lib": ["es2020", "dom"],
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -14,7 +14,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strictNullChecks": true,
-    "types": ["jest", "node"],
+    "types": ["node"],
     "allowJs": true
   },
   "include": ["./**/*.ts", "./**/*.tsx"]

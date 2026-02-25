@@ -1,7 +1,7 @@
 import "./theme.env.js";
 import * as sass from "sass";
 import * as path from "path";
-import { describe, it, expect } from "@jest/globals";
+import { describe, it, expect, beforeAll } from "vitest";
 
 const functions = ["k-color", "k-elevation", "k-border-radius", "k-spacing", "k-z-index", "k-duration", "k-easing", "k-transition"];
 
