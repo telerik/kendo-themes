@@ -3,15 +3,16 @@
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
+@use "../../transparency/index.scss" as *;
 
 @mixin kendo-spreadsheet--theme-base() {
 
     // Spreadsheet
     .k-spreadsheet {
         @include fill(
-            $kendo-spreadsheet-text,
-            $kendo-spreadsheet-bg,
-            $kendo-spreadsheet-border
+            $color: $kendo-spreadsheet-text,
+            // $kendo-spreadsheet-bg,
+            $border: $kendo-spreadsheet-border
         );
     }
 
@@ -23,6 +24,13 @@
             $kendo-spreadsheet-header-border,
             $kendo-spreadsheet-header-gradient
         );
+
+        @include k-transparency(heavy, $bg: $kendo-spreadsheet-bg);
+    }
+
+    .k-spreadsheet-action-bar,
+    .k-spreadsheet-view {
+        background-color: $kendo-spreadsheet-bg;
     }
 
     // Row / Column Headers

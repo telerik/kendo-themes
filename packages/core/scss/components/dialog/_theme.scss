@@ -2,12 +2,11 @@
 @use "../../mixins/index.scss" as *;
 @use "../../functions/index.scss" as *;
 @use "../../_variables.scss" as *;
+@use "../../transparency/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-dialog--theme-base() {
     .k-dialog {
-        background-color: $kendo-dialog-bg;
-
         // Dialog theme colors
         @each $name in $kendo-dialog-theme-colors {
 
@@ -21,6 +20,12 @@
         }
     }
 
+    // .k-dialog-titlebar,
+    // .k-dialog-content,
+    .k-dialog-actions {
+        background-color: $kendo-dialog-bg;
+    }
+
     // Dialog titlebar
     .k-dialog-titlebar {
         @include fill(
@@ -28,5 +33,11 @@
             $kendo-dialog-titlebar-bg,
             $kendo-dialog-titlebar-border
         );
+
+        // @include k-transparency(glass, $bg: $kendo-dialog-titlebar-bg);
     }
+}
+
+.k-dialog-wrapper:not(:has(.k-overlay)) .k-dialog-titlebar {
+    @include k-transparency(glass, $bg: $kendo-dialog-titlebar-bg);
 }

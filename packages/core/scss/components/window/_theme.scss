@@ -2,6 +2,7 @@
 @use "../../mixins/index.scss" as *;
 @use "../../functions/index.scss" as *;
 @use "../../_variables.scss" as *;
+@use "../../transparency/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-window--theme-base() {
@@ -9,9 +10,8 @@
     // Window
     .k-window {
         @include fill(
-            $kendo-window-text,
-            $kendo-window-bg,
-            $kendo-window-border
+            $color: $kendo-window-text,
+            $border: $kendo-window-border
         );
         @include box-shadow( $kendo-window-shadow );
 
@@ -28,6 +28,10 @@
         }
     }
 
+    .k-window-content {
+        background-color: $kendo-window-bg;
+    }
+
     .k-window:focus,
     .k-window.k-focus {
         @include focus-indicator( $kendo-window-focus-shadow );
@@ -42,6 +46,15 @@
             $kendo-window-titlebar-border,
             $kendo-window-titlebar-gradient
         );
+
+        // @include k-transparency(heavy, $bg: $kendo-window-titlebar-bg, $border: green);
+        @include k-transparency(heavy, $bg: $kendo-window-titlebar-bg);
+
+        // backdrop-filter: blur(#{k-backdrop-blur(xl)});
+        // background-color: $kendo-window-titlebar-bg;
+
+        // Surface preset with multiple overrides
+        // @include k-transparency(heavy, $bg: $kendo-window-titlebar-bg, $blur: sm, $bg-opacity: subtle);
     }
 
 }

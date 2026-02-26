@@ -1,14 +1,17 @@
 @use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
+@use "../../transparency/index.scss" as *;
 
 @mixin kendo-drawer--theme-base() {
 
     .k-drawer {
         @include fill(
-            $kendo-drawer-text,
-            $kendo-drawer-bg,
-            $kendo-drawer-border
+            $color: $kendo-drawer-text,
+            // $kendo-drawer-bg,
+            $border: $kendo-drawer-border
         );
+
+        @include k-transparency(heavy, $bg: $kendo-drawer-bg);
     }
 
     // Drawer items

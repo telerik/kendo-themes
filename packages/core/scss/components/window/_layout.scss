@@ -118,6 +118,14 @@
         margin-block-start: - list.slash( $kendo-window-inner-padding-y, 2 );
     }
 
+    .k-window > .k-window-content:first-child {
+        @include border-top-radius( $kendo-window-border-radius );
+    }
+
+    .k-window-content:not(:has(+.k-window-actions)) {
+        @include border-bottom-radius( $kendo-window-border-radius );
+    }
+
     // TODO: Check if we can remove
     .k-window-content:first-child {
         padding-block-start: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );
