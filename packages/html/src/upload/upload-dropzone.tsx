@@ -25,7 +25,7 @@ export const UploadDropzone = (
         ...other
     } = props;
 
-    let statusMsg = <></>;
+    let statusMsg;
 
     switch (status) {
         case 'uploading':

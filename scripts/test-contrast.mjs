@@ -514,7 +514,7 @@ const getContrastViolations = async() => {
     let incomplete = {};
     let aaa = {};
     let focusContrast = {};
-    let result = {};
+    let result;
 
     const browser = new Browser();
     const server = createServer({
