@@ -22,6 +22,7 @@ export type KendoGridHeaderCellProps = KendoTableThProps & {
     scope?: string;
     sortIcon?: string;
     sortOrder?: number;
+    accessibleLabel?: string;
 };
 
 const defaultOptions = {
@@ -47,6 +48,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
         active,
         sortIcon = defaultOptions.sortIcon,
         sortOrder,
+        accessibleLabel,
         ...others
     } = props;
 
@@ -99,6 +101,9 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
                 )
 
             }
+            {!columnTitle && accessibleLabel && (
+                <span className="k-sr-only">{accessibleLabel}</span>
+            )}
             {props.children}
             {resizable && ( <span className="k-column-resizer k-touch-action-none"></span> )}
         </TableTh>

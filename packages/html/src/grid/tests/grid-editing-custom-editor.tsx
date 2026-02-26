@@ -25,7 +25,7 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell accessibleLabel="Commands"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Autocomplete"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Combobox"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Dropdown"></GridHeaderCell>
@@ -89,7 +89,7 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell accessibleLabel="Commands"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Datepicker"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Timepicker"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Datetime"></GridHeaderCell>
@@ -153,10 +153,10 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell accessibleLabel="Commands"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Numeric"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Switch"></GridHeaderCell>
-                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell accessibleLabel="Commands"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>

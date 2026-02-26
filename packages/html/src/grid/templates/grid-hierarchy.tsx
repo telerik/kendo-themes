@@ -17,7 +17,7 @@ export const GridHierarchy = ({ containerClassName, ...other }: any) => (
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-hierarchy-cell"></GridHeaderCell>
+                                    <GridHeaderCell className="k-hierarchy-cell" accessibleLabel="Detail"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="ID"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Category Name"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Description"></GridHeaderCell>

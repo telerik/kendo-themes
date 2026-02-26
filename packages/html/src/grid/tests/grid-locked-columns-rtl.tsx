@@ -30,12 +30,12 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow style={{ height: "38px" }}>
-                                    <GridHeaderCell className="k-group-cell"></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                                     <GridHeaderCell rowspan={2} colspan={1} columnTitle="Product ID"></GridHeaderCell>
                                     <GridHeaderCell rowspan={2} colspan={1} columnTitle="Product Name"></GridHeaderCell>
                                 </TableRow>
                                 <TableRow style={{ height: "38px" }}>
-                                    <GridHeaderCell className="k-group-cell"></GridHeaderCell>
+                                    <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
