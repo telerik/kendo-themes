@@ -1,6 +1,12 @@
 @use "@progress/kendo-theme-core/scss/components/table/_theme.scss" as *;
-
+@use "../core/_index.scss" as *;
 
 @mixin kendo-table--theme() {
     @include kendo-table--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-table-thead {
+            background-color: transparent;
+        }
+    }
 }
