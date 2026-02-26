@@ -30,7 +30,8 @@ export const NotificationAction = (
             props.className,
             className,
             `k-notification-${type}-action`
-        )}>
+        )}
+        >
             {icon}
         </span>
     );

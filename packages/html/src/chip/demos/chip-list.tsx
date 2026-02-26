@@ -36,9 +36,9 @@ export const ChipListDemo = (props:
 
   return (
     <ChipList size={size}>
-      <ChipNormal {...props} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-      <ChipNormal {...props} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-      <ChipNormal {...props} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
+      <ChipNormal {...props} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
+      <ChipNormal {...props} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
+      <ChipNormal {...props} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
     </ChipList>
   );
 }

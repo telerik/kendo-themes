@@ -27,7 +27,7 @@ export const ListGroupItem = (props: ListGroupItemProps & React.HTMLAttributes<H
             role="presentation"
             className={classNames(className, props.className)}
         >
-            {groupIconName && <span className="k-list-item-icon-wrapper"><Icon icon={groupIconName} className="k-list-item-icon" aria-hidden="true" /></span>}
+            {groupIconName && <span className="k-list-item-icon-wrapper"><Icon icon={groupIconName} className="k-list-item-icon" /></span>}
             <span className="k-list-item-text">{props.children}</span>
         </li>
     );

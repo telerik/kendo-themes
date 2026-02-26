@@ -1,4 +1,5 @@
 import { List, ListItem, ListContent } from "../../list";
+import { nextId } from "../../misc";
 
 export const ListNormal = ({ children, ...other }: any) => (
     <List
@@ -7,9 +8,9 @@ export const ListNormal = ({ children, ...other }: any) => (
         <ListContent listboxId="list-normal-listbox" aria-label="Options">
             {children || (
                 <>
-                    <ListItem key="list-item-1" id="list-item-1">List item</ListItem>
-                    <ListItem key="list-item-2" id="list-item-2">List item</ListItem>
-                    <ListItem key="list-item-3" id="list-item-3">List item</ListItem>
+                    <ListItem key="list-item-1" id={nextId('list-item')}>List item</ListItem>
+                    <ListItem key="list-item-2" id={nextId('list-item')}>List item</ListItem>
+                    <ListItem key="list-item-3" id={nextId('list-item')}>List item</ListItem>
                 </>
             )}
         </ListContent>

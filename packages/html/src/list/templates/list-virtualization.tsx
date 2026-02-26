@@ -1,4 +1,5 @@
 import { List, ListItem, ListContent } from "..";
+import { nextId } from "../../misc";
 
 export const ListVirtualization = ({ children, ...other }: any) => (
     <List
@@ -8,9 +9,9 @@ export const ListVirtualization = ({ children, ...other }: any) => (
         <ListContent virtualization listboxId="list-virt-listbox" aria-label="Options">
             {children || (
                 <>
-                    <ListItem key="list-item-1" id="list-virt-item-1">List item</ListItem>
-                    <ListItem key="list-item-2" id="list-virt-item-2">List item</ListItem>
-                    <ListItem key="list-item-3" id="list-virt-item-3">List item</ListItem>
+                    <ListItem key="list-item-1" id={nextId('list-virt-item')}>List item</ListItem>
+                    <ListItem key="list-item-2" id={nextId('list-virt-item')}>List item</ListItem>
+                    <ListItem key="list-item-3" id={nextId('list-virt-item')}>List item</ListItem>
                 </>
             )}
         </ListContent>

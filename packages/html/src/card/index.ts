@@ -13,4 +13,5 @@ export * from './card-deck.spec';
 export * from './card-deck-scrollwrap.spec';
 export * from './templates/card-normal';
 export * from './templates/card-horizontal';
+export * from './templates/card-list-normal';
 export * from './demos/card';
