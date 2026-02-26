@@ -69,9 +69,18 @@ function buildSpecRegistry() {
     for (const [name, exp] of Object.entries(htmlPackage)) {
         if (typeof exp === 'function' && exp.folderName) {
             const folder = exp.folderName;
-            // Prefer the export that has ariaSpec
-            if (!registry[folder] || exp.ariaSpec) {
-                registry[folder] = { specName: name, ariaSpec: exp.ariaSpec || null };
+            if (!registry[folder]) {
+                registry[folder] = { specName: name, ariaSpec: exp.ariaSpec ? { ...exp.ariaSpec } : null };
+            } else if (exp.ariaSpec?.rules?.length) {
+                // Merge rules from multiple specs in the same folder (e.g. Chip + ChipList)
+                if (!registry[folder].ariaSpec) {
+                    registry[folder].ariaSpec = { ...exp.ariaSpec };
+                } else {
+                    registry[folder].ariaSpec.rules = [
+                        ...(registry[folder].ariaSpec.rules || []),
+                        ...exp.ariaSpec.rules
+                    ];
+                }
             }
         }
     }
@@ -491,15 +500,15 @@ async function main() {
     let folders;
     if (componentFilters.length) {
         folders = componentFilters;
+    } else if (affectedMode) {
+        // --affected: only test components with changes in packages/html/src/
+        folders = affected || [];
     } else {
         // All folders that have templates
         folders = [...new Set(
             globSync(`${HTML_SRC_PATH}/*/templates/`, { dotRelative: true })
                 .map(p => p.replace('./', '').split('/')[3])
         )];
-    }
-    if (affected?.length) {
-        folders = folders.filter(f => affected.includes(f));
     }
 
     if (!folders.length) {
