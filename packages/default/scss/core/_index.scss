@@ -1,5 +1,7 @@
 // Core Index
-@forward "@progress/kendo-theme-core/scss/index.scss";
+@forward "@progress/kendo-theme-core/scss/index.scss" with (
+    $kendo-enable-transparency: true
+);
 
 // Variables
 @forward "../_variables.scss";
