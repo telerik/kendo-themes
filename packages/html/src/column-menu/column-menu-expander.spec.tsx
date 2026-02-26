@@ -37,13 +37,11 @@ export const ColumnMenuExpander: KendoComponent<KendoColumnMenuExpanderProps & R
         ...other
     } = props;
 
-    let icon = <></>;
-
-    if ( !expanded && !expanderIcon) {
-        icon = <Icon icon="chevron-down" />;
-    } else if (expanded && !expanderIcon) {
-        icon = <Icon icon="chevron-up" />;
-    } else { icon = <Icon icon={expanderIcon} />; }
+    const icon = !expanded && !expanderIcon
+        ? <Icon icon="chevron-down" />
+        : expanded && !expanderIcon
+            ? <Icon icon="chevron-up" />
+            : <Icon icon={expanderIcon} />;
 
     return (
         <div

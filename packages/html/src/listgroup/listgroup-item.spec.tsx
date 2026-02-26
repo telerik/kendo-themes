@@ -10,9 +10,6 @@ const options = {};
 
 export type KendoListGroupItemProps = {
     text?: string;
-    icon?: string;
-    showArrow?: boolean;
-    arrowIconName?: string;
     children?: React.JSX.Element;
     href?: string;
     pseudo?: boolean;
@@ -31,21 +28,11 @@ export const ListGroupItem: KendoComponent<KendoListGroupItemProps & KendoListGr
 ) => {
     const {
         text,
-        arrowIconName,
-        dir = defaultOptions.dir,
         children,
         href,
         pseudo,
         ...other
     } = props;
-
-    let expandArrowName = arrowIconName;
-
-    if ( !expandArrowName ) {
-        expandArrowName = dir === 'rtl'
-            ? 'chevron-left'
-            : 'chevron-right';
-    }
 
     return (
 
