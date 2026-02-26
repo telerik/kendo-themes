@@ -77,7 +77,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow>
-                                        <GridHeaderCell className="k-hierarchy-cell"></GridHeaderCell>
+                                        <GridHeaderCell className="k-hierarchy-cell" accessibleLabel="Detail"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Default" menu="filter"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Hover" menu="filter" hover></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Focus" menu="filter" focus></GridHeaderCell>
@@ -144,7 +144,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow>
-                                        <GridHeaderCell></GridHeaderCell>
+                                        <GridHeaderCell accessibleLabel="Reorder"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Company Name"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Country"></GridHeaderCell>
                                     </TableRow>

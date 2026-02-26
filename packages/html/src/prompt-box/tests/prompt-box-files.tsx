@@ -19,7 +19,7 @@ export default () =>(
                 <PromptBoxLineModeMulti
                     placeholder="Type a message"
                     endAffix={<>
-                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" />
+                        <IconButton icon="paperclip-outline-alt-right" size="small" fillMode="flat" rounded="full" />
                         <div className="k-spacer"></div>
                     </>}
                 />

@@ -19,9 +19,9 @@ export default () => (
             <span className='k-colspan-3'>Header Actions - LTR</span>
 
             <section>
-                <ActionSheetNormal adaptive fullscreen
+                <ActionSheetNormal id="actionsheet-actions-1" adaptive fullscreen
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} title="Start" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" aria-label="Back" />} title="Start" />
                     }
                 >
                     <ActionSheetItems>
@@ -33,9 +33,9 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheetNormal adaptive fullscreen
+                <ActionSheetNormal id="actionsheet-actions-2" adaptive fullscreen
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="End" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="End" />
                     }
                 >
                     <ActionSheetItems>
@@ -47,9 +47,9 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheetNormal adaptive fullscreen
+                <ActionSheetNormal id="actionsheet-actions-3" adaptive fullscreen
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Start & End" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Start & End" />
                     }
                 >
                     <ActionSheetItems>
@@ -63,9 +63,9 @@ export default () => (
             <span className='k-colspan-3'>Header Actions - RTL</span>
 
             <section className="k-rtl">
-                <ActionSheetNormal adaptive fullscreen
+                <ActionSheetNormal id="actionsheet-actions-4" adaptive fullscreen
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" />} title="Start" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" aria-label="Back" />} title="Start" />
                     }
                 >
                     <ActionSheetItems>
@@ -77,9 +77,9 @@ export default () => (
             </section>
 
             <section className="k-rtl">
-                <ActionSheetNormal adaptive fullscreen
+                <ActionSheetNormal id="actionsheet-actions-5" adaptive fullscreen
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="End" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="End" />
                     }
                 >
                     <ActionSheetItems>
@@ -91,9 +91,9 @@ export default () => (
             </section>
 
             <section className="k-rtl">
-                <ActionSheetNormal adaptive fullscreen
+                <ActionSheetNormal id="actionsheet-actions-6" adaptive fullscreen
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Start & End" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Start & End" />
                     }
                 >
                     <ActionSheetItems>

@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.1...v13.0.2-dev.0) (2026-02-23)
+
+
+### Bug Fixes
+
+* **html:** add rounded full to prompt box endAffix icon button ([ebe6c3e](https://github.com/telerik/kendo-themes/commit/ebe6c3e629cee744e3e9c0b9b717dd6f04fdbd32))
+
+
+
+
+
+## [13.0.1](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.3...v13.0.1) (2026-02-16)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+## [13.0.1-dev.3](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.2...v13.0.1-dev.3) (2026-02-16)
+
+
+### Bug Fixes
+
+* **html:** update segmented-control size smartBox ([f1d1455](https://github.com/telerik/kendo-themes/commit/f1d145560cdb81eafeea792410184ac18ffc52b8))
+
+
+
+
+
 ## [13.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v13.0.1-dev.1...v13.0.1-dev.2) (2026-02-16)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

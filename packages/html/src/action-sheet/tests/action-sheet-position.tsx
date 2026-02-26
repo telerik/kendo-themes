@@ -20,16 +20,16 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
             <section>
-                <ActionSheetLeft title="Left action sheet" />
+                <ActionSheetLeft id="actionsheet-left" title="Left action sheet" />
             </section>
             <section>
-                <ActionSheetRight title="Right action sheet" />
+                <ActionSheetRight id="actionsheet-right" title="Right action sheet" />
             </section>
             <section>
-                <ActionSheetTop title="Top action sheet" />
+                <ActionSheetTop id="actionsheet-top" title="Top action sheet" />
             </section>
             <section>
-                <ActionSheetNormal title="Bottom action sheet" />
+                <ActionSheetNormal id="actionsheet-bottom" title="Bottom action sheet" />
             </section>
         </div>
     </>

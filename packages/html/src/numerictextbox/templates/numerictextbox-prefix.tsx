@@ -5,7 +5,7 @@ export const NumericTextboxPrefix = (props) => (
     <NumericTextbox
         prefix={
             <>
-                <DropdownList fillMode="flat" value="mm"></DropdownList>
+                <DropdownList fillMode="flat" value="mm" aria-label="Unit selector"></DropdownList>
             </>
         }
         {...props}

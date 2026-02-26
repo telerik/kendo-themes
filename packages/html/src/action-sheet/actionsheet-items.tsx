@@ -1,5 +1,8 @@
 import { classNames } from "../misc";
 
+/**
+ * Container for ActionSheet items.
+ */
 export const ActionSheetItems = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {

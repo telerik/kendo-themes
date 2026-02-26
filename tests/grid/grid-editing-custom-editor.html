@@ -25,7 +25,9 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th"></th>
+                                    <th class="k-header k-table-th">
+                                        <span class="k-sr-only">Commands</span>
+                                    </th>
                                     <th class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
@@ -80,9 +82,9 @@
                                         </td>
                                         <td class="k-table-td">
                                             <span class="k-combobox k-input">
-                                                <input class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
-                                                <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 352 128 160h256z"></path>
                                                         </svg>
@@ -93,8 +95,8 @@
                                         <td class="k-table-td">
                                             <span class="k-dropdownlist k-picker">
                                                 <span class="k-input-inner">DropdownList...</span>
-                                                <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                <button class="k-input-button k-button k-icon-button" aria-label="DropdownList...">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 352 128 160h256z"></path>
                                                         </svg>
@@ -120,9 +122,9 @@
                                         </td>
                                         <td class="k-table-td">
                                             <span class="k-rtl k-combobox k-input">
-                                                <input class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
-                                                <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 352 128 160h256z"></path>
                                                         </svg>
@@ -133,8 +135,8 @@
                                         <td class="k-table-td">
                                             <span class="k-rtl k-dropdownlist k-picker">
                                                 <span class="k-input-inner">DropdownList...</span>
-                                                <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                <button class="k-input-button k-button k-icon-button" aria-label="DropdownList...">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 352 128 160h256z"></path>
                                                         </svg>
@@ -172,7 +174,9 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th"></th>
+                                    <th class="k-header k-table-th">
+                                        <span class="k-sr-only">Commands</span>
+                                    </th>
                                     <th class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
@@ -224,7 +228,7 @@
                                             <span class="k-datepicker k-input">
                                                 <input class="k-input-inner" placeholder="DatePicker..." autocomplete="off" type="text" value="">
                                                 <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                                                         </svg>
@@ -236,7 +240,7 @@
                                             <span class="k-timepicker k-input">
                                                 <input class="k-input-inner" placeholder="TimePicker..." autocomplete="off" type="text" value="">
                                                 <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
                                                         </svg>
@@ -248,7 +252,7 @@
                                             <span class="k-datetimepicker k-input">
                                                 <input class="k-input-inner" placeholder="DateTimePicker..." autocomplete="off" type="text" value="">
                                                 <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                                                         </svg>
@@ -268,7 +272,7 @@
                                             <span class="k-rtl k-datepicker k-input">
                                                 <input class="k-input-inner" placeholder="DatePicker..." autocomplete="off" type="text" value="">
                                                 <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                                                         </svg>
@@ -280,7 +284,7 @@
                                             <span class="k-rtl k-timepicker k-input">
                                                 <input class="k-input-inner" placeholder="TimePicker..." autocomplete="off" type="text" value="">
                                                 <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
                                                         </svg>
@@ -292,7 +296,7 @@
                                             <span class="k-rtl k-datetimepicker k-input">
                                                 <input class="k-input-inner" placeholder="DateTimePicker..." autocomplete="off" type="text" value="">
                                                 <button class="k-input-button k-button k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                                                         </svg>
@@ -326,7 +330,9 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th"></th>
+                                    <th class="k-header k-table-th">
+                                        <span class="k-sr-only">Commands</span>
+                                    </th>
                                     <th class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
@@ -341,7 +347,9 @@
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th"></th>
+                                    <th class="k-header k-table-th">
+                                        <span class="k-sr-only">Commands</span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -362,17 +370,17 @@
                                         <td class="k-table-td">LTR</td>
                                         <td class="k-table-td">
                                             <span class="k-numerictextbox k-input">
-                                                <input class="k-input-inner" placeholder="Numeric..." autocomplete="off" type="text" value="">
+                                                <input role="spinbutton" class="k-input-inner" placeholder="Numeric..." autocomplete="off" type="text" value="">
                                                 <span class="k-spin-button k-input-spinner">
-                                                    <button class="k-spinner-increase k-button k-icon-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="m256 160 128 192H128z"></path>
                                                             </svg>
                                                         </span>
                                                     </button>
-                                                    <button class="k-spinner-decrease k-button k-icon-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="M256 352 128 160h256z"></path>
                                                             </svg>
@@ -382,7 +390,7 @@
                                             </span>
                                         </td>
                                         <td class="k-table-td">
-                                            <span class="k-switch k-switch-on">
+                                            <span class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
                                                 <span class="k-switch-track"></span>
                                                 <span class="k-switch-thumb-wrap">
                                                     <span class="k-switch-thumb"></span>
@@ -395,17 +403,17 @@
                                         <td class="k-table-td">RTL</td>
                                         <td class="k-table-td">
                                             <span class="k-rtl k-numerictextbox k-input">
-                                                <input class="k-input-inner" placeholder="Numeric..." autocomplete="off" type="text" value="">
+                                                <input role="spinbutton" class="k-input-inner" placeholder="Numeric..." autocomplete="off" type="text" value="">
                                                 <span class="k-spin-button k-input-spinner">
-                                                    <button class="k-spinner-increase k-button k-icon-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-up" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="m256 160 128 192H128z"></path>
                                                             </svg>
                                                         </span>
                                                     </button>
-                                                    <button class="k-spinner-decrease k-button k-icon-button">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="M256 352 128 160h256z"></path>
                                                             </svg>
@@ -415,7 +423,7 @@
                                             </span>
                                         </td>
                                         <td class="k-table-td">
-                                            <span class="k-rtl k-switch k-switch-on">
+                                            <span class="k-rtl k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
                                                 <span class="k-switch-track"></span>
                                                 <span class="k-switch-thumb-wrap">
                                                     <span class="k-switch-thumb"></span>

@@ -26,8 +26,9 @@ export default () => (
 
             <section>
                 <ActionSheetNormal
+                    id="actionsheet-main-1"
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" fillMode="flat" />} actionsEnd={<Button icon="x" fillMode="flat" />} title="Title" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" fillMode="flat" aria-label="Close" />} title="Title" subtitle="Subtitle" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -52,8 +53,9 @@ export default () => (
 
             <section className="k-rtl">
                 <ActionSheetNormal
+                    id="actionsheet-main-2"
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" fillMode="flat" />} actionsEnd={<Button icon="x" fillMode="flat" />} title="Title" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" fillMode="flat" aria-label="Close" />} title="Title" subtitle="Subtitle" />
                     }
                     footer={
                         <ActionSheetFooter>

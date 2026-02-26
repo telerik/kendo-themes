@@ -93,7 +93,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow>
-                                        <GridHeaderCell className="k-hierarchy-cell"></GridHeaderCell>
+                                        <GridHeaderCell className="k-hierarchy-cell" accessibleLabel="Detail"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Default" menu="filter"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Hover" menu="filter" hover></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Focus" menu="filter" focus></GridHeaderCell>
@@ -303,7 +303,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow>
-                                        <GridHeaderCell className="k-group-cell"></GridHeaderCell>
+                                        <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Name"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Price"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Available"></GridHeaderCell>

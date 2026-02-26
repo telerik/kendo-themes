@@ -68,6 +68,9 @@ export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState
         readonly,
         showClearButton,
         showSpinButton,
+        id,
+        'aria-label': ariaLabel,
+        'aria-describedby': ariaDescribedBy,
         ...other
     } = props;
 
@@ -88,7 +91,7 @@ export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState
             readonly={readonly}
             className={classNames(props.className, DATEINPUT_CLASSNAME)}
         >
-            <InputInnerInput placeholder={placeholder} value={value} />
+            <InputInnerInput id={id} placeholder={placeholder} value={value} disabled={disabled} aria-label={ariaLabel} aria-describedby={ariaDescribedBy} aria-invalid={invalid ? 'true' : undefined} />
             <InputValidationIcon
                 valid={valid}
                 invalid={invalid}
@@ -107,6 +110,7 @@ export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState
                     className="k-input-spinner"
                     size={size}
                     fillMode={fillMode}
+                    disabled={disabled}
                 />
             )}
         </Input>
@@ -119,5 +123,25 @@ DateInput.className = DATEINPUT_CLASSNAME;
 DateInput.defaultOptions = defaultOptions;
 DateInput.moduleName = DATEINPUT_MODULE_NAME;
 DateInput.folderName = DATEINPUT_FOLDER_NAME;
+
+/**
+ * Accessibility specification for DateInput.
+ * @accessibility
+ * - Uses semantic `<input>` element (role="textbox" implicit)
+ * - Requires accessible name via label, aria-label, or aria-labelledby
+ * - Disabled state uses native disabled attribute
+ */
+DateInput.ariaSpec = {
+    selector: '.k-dateinput',
+    rules: [
+        { selector: '.k-dateinput > .k-input-inner', attribute: 'role=textbox or nodeName=input', usage: 'The element should be an input or have role="textbox".' },
+        { selector: '.k-dateinput > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name (provided by consuming app).' },
+        { selector: '.k-dateinput > .k-input-inner', attribute: 'tabindex=0', usage: 'The element should be focusable.' },
+        { selector: '.k-dateinput > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the DateInput is in an invalid state.' },
+        { selector: '.k-dateinput > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message.' },
+        { selector: '.k-dateinput > .k-input-inner', attribute: 'readonly=readonly or aria-readonly=true (when readonly)', usage: 'Rendered when the DateInput is readonly.' },
+        { selector: '.k-dateinput.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the DateInput is disabled.' },
+    ]
+};
 
 export default DateInput;

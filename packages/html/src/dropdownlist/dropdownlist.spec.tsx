@@ -142,6 +142,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     icon={arrowIconName}
                     size={props.size}
                     fillMode={props.fillMode}
+                    aria-label={placeholder || "Toggle dropdown"}
                 />
             </Picker>
             {opened && popup &&

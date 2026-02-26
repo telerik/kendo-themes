@@ -27,7 +27,7 @@ export const GridWithEditRow = (props) => (
                                     <GridHeaderCell columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Price"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Available"></GridHeaderCell>
-                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell accessibleLabel="Commands"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>

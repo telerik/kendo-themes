@@ -4,13 +4,13 @@ export const CheckboxGroupNormal = (props: any) => (
     <CheckboxGroup children={
         <>
             <CheckboxItem>
-                <Checkbox/>
+                <Checkbox aria-label="Option 1"/>
             </CheckboxItem>
             <CheckboxItem>
-                <Checkbox/>
+                <Checkbox aria-label="Option 2"/>
             </CheckboxItem>
             <CheckboxItem>
-                <Checkbox/>
+                <Checkbox aria-label="Option 3"/>
             </CheckboxItem>
         </>
     }

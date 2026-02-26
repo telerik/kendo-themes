@@ -237,7 +237,7 @@ export default () => (
                 </colgroup>
                 <TableThead>
                   <TableRow>
-                    <GridHeaderCell></GridHeaderCell>
+                    <GridHeaderCell accessibleLabel="Actions"></GridHeaderCell>
                     <GridHeaderCell columnTitle="Contact Name" />
                     <GridHeaderCell columnTitle="Job Title" />
                     <GridHeaderCell columnTitle="Country" />
@@ -302,7 +302,7 @@ export default () => (
                 </colgroup>
                 <TableThead>
                   <TableRow>
-                    <GridHeaderCell></GridHeaderCell>
+                    <GridHeaderCell accessibleLabel="Actions"></GridHeaderCell>
                     <GridHeaderCell columnTitle="Contact Name" />
                     <GridHeaderCell columnTitle="Job Title" />
                     <GridHeaderCell columnTitle="Country" />
@@ -378,7 +378,7 @@ export default () => (
                 </colgroup>
                 <TableThead>
                   <TableRow>
-                    <GridHeaderCell></GridHeaderCell>
+                    <GridHeaderCell accessibleLabel="Actions"></GridHeaderCell>
                     <GridHeaderCell columnTitle="Contact Name" />
                     <GridHeaderCell columnTitle="Job Title" />
                     <GridHeaderCell columnTitle="Country" />
@@ -458,7 +458,7 @@ export default () => (
                 </colgroup>
                 <TableThead>
                   <TableRow>
-                    <GridHeaderCell></GridHeaderCell>
+                    <GridHeaderCell accessibleLabel="Actions"></GridHeaderCell>
                     <GridHeaderCell columnTitle="Contact Name" />
                     <GridHeaderCell columnTitle="Job Title" />
                     <GridHeaderCell columnTitle="Country" />
@@ -515,7 +515,7 @@ export default () => (
                 </colgroup>
                 <TableThead>
                   <TableRow>
-                    <GridHeaderCell></GridHeaderCell>
+                    <GridHeaderCell accessibleLabel="Actions"></GridHeaderCell>
                     <GridHeaderCell columnTitle="Contact Name" />
                     <GridHeaderCell columnTitle="Job Title" />
                     <GridHeaderCell columnTitle="Country" />
@@ -591,7 +591,7 @@ export default () => (
                 </colgroup>
                 <TableThead>
                   <TableRow>
-                    <GridHeaderCell></GridHeaderCell>
+                    <GridHeaderCell accessibleLabel="Actions"></GridHeaderCell>
                     <GridHeaderCell columnTitle="Contact Name" />
                     <GridHeaderCell columnTitle="Job Title" />
                     <GridHeaderCell columnTitle="Country" />

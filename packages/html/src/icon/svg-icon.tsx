@@ -43,6 +43,16 @@ const defaultOptions = {
     viewBox: '0 0 24 24'
 };
 
+/**
+ * SvgIcon component - renders decorative SVG-based icons.
+ *
+ * @accessibility
+ * - Always renders `aria-hidden="true"` as icons are decorative
+ * - Inner SVG also has `aria-hidden` and `focusable="false"`
+ * - Screen readers will skip this element entirely
+ *
+ * @wcag 1.1.1 Non-text Content - decorative images hidden from AT
+ */
 export const SvgIcon = (
     props: SvgIconProps & React.HTMLAttributes<HTMLOrSVGElement>
 ) => {
@@ -61,14 +71,20 @@ export const SvgIcon = (
     }
 
     if (icon === 'none') {
-        <span
-            {...other}
-            className={classNames(
-                props.className,
-                SVGICON_CLASSNAME,
-                'k-none'
-            )}
-        />;
+        return (
+            <span
+                {...other}
+                className={classNames(
+                    props.className,
+                    SVGICON_CLASSNAME,
+                    optionClassNames('k-icon', {
+                        size,
+                    }),
+                    'k-none'
+                )}
+                aria-hidden="true"
+            />
+        );
     }
 
     const name = (typeof icon === "object" && icon.name) && icon.name;
@@ -90,6 +106,7 @@ export const SvgIcon = (
                     'k-flip-v': flip === 'v' || flip === 'both'
                 }
             )}
+            aria-hidden="true"
         >
             <svg
                 aria-hidden={true}

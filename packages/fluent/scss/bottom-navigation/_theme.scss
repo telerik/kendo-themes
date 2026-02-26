@@ -60,6 +60,10 @@
                     background-color: k-color(app-surface);
                     border-color: color-mix(in srgb, k-color(border) 16%, transparent);
 
+                    @if ($name == "warning" or $name == "dark" or $name == "inverse") {
+                        border-color: k-color(#{$name});
+                    }
+
                     .k-bottom-nav-item {
                         &:focus,
                         &.k-focus {
@@ -83,10 +87,6 @@
                             background-color: initial;
                             border-color: initial;
                         }
-                    }
-
-                    @if ($name == "warning" or $name == "dark" or $name == "inverse") {
-                        border-color: k-color(#{$name});
                     }
                 }
             }

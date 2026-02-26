@@ -71,8 +71,8 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
             {optionLabel}
             {customValue}
             {header && <ListHeader>{header}</ListHeader>}
-            {children ? children : (noData !== undefined ? noData : <NoData>No data found.</NoData>)}
-            {screenReaders && children && <NoData className="k-sr-only">{itemCount} items found.</NoData>}
+            {children ? children : (noData !== undefined ? noData : <NoData live>No data found.</NoData>)}
+            {screenReaders && children && <NoData className="k-sr-only" live>{itemCount} items found.</NoData>}
         </div>
     );
 };
@@ -83,5 +83,24 @@ List.className = LIST_CLASSNAME;
 List.defaultOptions = defaultOptions;
 List.moduleName = LIST_MODULE_NAME;
 List.folderName = LIST_FOLDER_NAME;
+
+/**
+ * Accessibility specification for List.
+ *
+ * @accessibility
+ * - List is a container for listbox content used in dropdowns
+ * - NoData element should have aria-live="polite" for announcements
+ * - Screen reader helper announces item count
+ *
+ * @see ListContent.ariaSpec for listbox role details
+ * @see ListItem.ariaSpec for option role details
+ * @see ListUl.ariaSpec for list structure details
+ */
+List.ariaSpec = {
+    selector: '.k-list',
+    rules: [
+        { selector: '.k-list .k-no-data', attribute: 'aria-live=polite', usage: 'Announces "No data found" to screen readers.' },
+    ]
+};
 
 export default List;

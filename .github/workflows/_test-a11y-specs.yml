@@ -1,0 +1,89 @@
+name: Test A11y Specs
+
+on:
+  workflow_call:
+
+concurrency:
+  group: test-a11y-specs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0  # Needed for affected detection
+
+      - name: Install virtual display on Linux
+        run: sudo apt-get install xvfb
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v5
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v7
+        with:
+          path: .tmp
+
+      - name: Unpack artifacts
+        run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
+
+      - name: Build HTML package
+        run: npm run build --prefix packages/html
+
+      - name: Run unified A11y tests (affected components)
+        id: a11y-tests
+        continue-on-error: true
+        run: |
+          xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test:a11y -- --affected --verbose 2>&1 | tee a11y-test-output.txt
+
+      - name: Report test results
+        run: |
+          echo "## A11y Spec Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "${{ steps.a11y-tests.outcome }}" == "success" ]; then
+            echo ":white_check_mark: Unified A11y tests passed (ARIA + WCAG)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo ":x: A11y tests failed" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "_Tested affected components only for faster CI._" >> $GITHUB_STEP_SUMMARY
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Test Output" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat a11y-test-output.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "_Note: This check is non-blocking and does not prevent PR merging._" >> $GITHUB_STEP_SUMMARY
+
+      - name: Check for failures
+        run: |
+          if [ "${{ steps.a11y-tests.outcome }}" == "failure" ]; then
+            echo "A11y spec tests failed. See summary above for details."
+            exit 1
+          fi
