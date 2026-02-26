@@ -1,0 +1,145 @@
+@use "sass:map";
+@use "../_variables.scss" as *;
+
+
+// Backdrop Blur Scale
+// Defines the blur radius applied to the content behind a translucent surface.
+$default-backdrop-blur: (
+    none: 0px,
+    sm: 4px,
+    md: 8px,
+    lg: 12px,
+    xl: 20px
+) !default;
+
+/// The global Backdrop Blur map.
+/// @group transparency
+$kendo-backdrop-blur: $default-backdrop-blur !default;
+$kendo-backdrop-blur: map.merge($default-backdrop-blur, $kendo-backdrop-blur);
+
+
+// Background Opacity Scale
+// Defines the opacity percentage for surface backgrounds via color-mix.
+$default-bg-opacity: (
+    solid: 10%,
+    subtle: 9%,
+    moderate: 8%,
+    strong: 6%
+) !default;
+
+/// The global Background Opacity map.
+/// @group transparency
+$kendo-bg-opacity: $default-bg-opacity !default;
+$kendo-bg-opacity: map.merge($default-bg-opacity, $kendo-bg-opacity);
+
+
+// Border Opacity Scale
+// Defines the opacity percentage for surface borders via color-mix.
+$default-border-opacity: (
+    solid: 10%,
+    subtle: 8%,
+    moderate: 6%,
+    strong: 4%
+) !default;
+
+/// The global Border Opacity map.
+/// @group transparency
+$kendo-border-opacity: $default-border-opacity !default;
+$kendo-border-opacity: map.merge($default-border-opacity, $kendo-border-opacity);
+
+
+// Transparent surface presets
+$default-transparent-surfaces: (
+    clear: (
+        blur: none,
+        bg-opacity: solid,
+        border-opacity: solid,
+    ),
+    subtle: (
+        blur: sm,
+        bg-opacity: subtle,
+        border-opacity: subtle,
+    ),
+    frosted: (
+        blur: md,
+        bg-opacity: moderate,
+        border-opacity: moderate,
+    ),
+    glass: (
+        blur: lg,
+        bg-opacity: strong,
+        border-opacity: strong,
+    ),
+    heavy: (
+        blur: xl,
+        bg-opacity: strong,
+        border-opacity: solid,
+    ),
+) !default;
+
+/// The global map of surface transparency tokens.
+/// @group transparency
+$kendo-transparent-surfaces: $default-transparent-surfaces !default;
+$kendo-transparent-surfaces: map.merge($default-transparent-surfaces, $kendo-transparent-surfaces);
+
+@function k-backdrop-blur($level) {
+    @return var(--kendo-backdrop-blur-#{$level}, #{map.get($kendo-backdrop-blur, $level)});
+}
+
+@function k-bg-opacity($level) {
+    @return var(--kendo-bg-opacity-#{$level}, #{map.get($kendo-bg-opacity, $level)});
+}
+
+@function k-border-opacity($level) {
+    @return var(--kendo-border-opacity-#{$level}, #{map.get($kendo-border-opacity, $level)});
+}
+
+@mixin k-transparency(
+    $surface: frosted,
+    $bg: null,
+    $border: null,
+    $blur: null,
+    $bg-opacity: null,
+    $border-opacity: null
+) {
+    @if $kendo-enable-transparency {
+        $config: map.get($kendo-transparent-surfaces, $surface);
+
+        $_blur: if($blur, $blur, map.get($config, blur));
+        $_bg-opacity: if($bg-opacity, $bg-opacity, map.get($config, bg-opacity));
+        $_border-opacity: if($border-opacity, $border-opacity, map.get($config, border-opacity));
+
+        @if $bg {
+            background-color: color-mix(in srgb, #{$bg} #{k-bg-opacity($_bg-opacity)}, transparent);
+        }
+
+        @if $border {
+            border-color: color-mix(in srgb, #{$border} #{k-border-opacity($_border-opacity)}, transparent);
+        }
+
+        backdrop-filter: blur(#{k-backdrop-blur($_blur)});
+    }
+}
+
+
+@mixin kendo-transparency--styles() {
+    @if $kendo-enable-transparency {
+        :root {
+            @each $level, $value in $kendo-backdrop-blur {
+                --kendo-backdrop-blur-#{$level}: #{$value};
+            }
+            @each $level, $value in $kendo-bg-opacity {
+                --kendo-bg-opacity-#{$level}: #{$value};
+            }
+            @each $level, $value in $kendo-border-opacity {
+                --kendo-border-opacity-#{$level}: #{$value};
+            }
+
+            @each $key, $config in $kendo-transparent-surfaces {
+                --kendo-surface-#{$key}-blur: #{k-backdrop-blur(map.get($config, blur))};
+                --kendo-surface-#{$key}-bg-opacity: #{k-bg-opacity(map.get($config, bg-opacity))};
+                --kendo-surface-#{$key}-border-opacity: #{k-border-opacity(map.get($config, border-opacity))};
+            }
+        }
+    }
+}
