@@ -11,7 +11,7 @@ $kendo-dialog-default-theme-color: null !default;
 
 /// The background color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-bg: unset !default;
+$kendo-dialog-titlebar-bg: k-color(surface-alt) !default;
 /// The text color of the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-text: unset !default;

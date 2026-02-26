@@ -95,7 +95,7 @@ $kendo-window-focus-shadow: none !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: unset !default;
+$kendo-window-titlebar-bg: $kendo-window-bg !default;
 /// The text color of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-text: inherit !default;
