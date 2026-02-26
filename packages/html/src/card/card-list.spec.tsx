@@ -21,7 +21,7 @@ export const CardList: KendoComponent<KendoCardListProps & KendoCardListState & 
   const { ...other } = props;
 
   return (
-    <div {...other} className={classNames(props.className, CARD_LIST_CLASSNAME, stateClassNames(CARD_LIST_CLASSNAME, {}))}>
+    <div {...other} className={classNames(props.className, CARD_LIST_CLASSNAME, stateClassNames(CARD_LIST_CLASSNAME, {}))} role="list">
       <>{props.children}</>
     </div>
   );
@@ -33,5 +33,22 @@ CardList.className = CARD_LIST_CLASSNAME;
 CardList.defaultOptions = defaultOptions;
 CardList.moduleName = CARD_MODULE_NAME;
 CardList.folderName = CARD_FOLDER_NAME;
+
+/**
+ * Accessibility specification for CardList.
+ *
+ * @wcag 1.3.1 Info and Relationships - list container for cards
+ * @see Card.ariaSpec for card-level rules when inside a list
+ */
+CardList.ariaSpec = {
+    selector: '.k-card-list',
+    rules: [
+        { selector: '.k-card-list', attribute: 'role=list', usage: 'The card list container announces its list role.' },
+        { selector: '.k-card-list .k-card', attribute: 'role=listitem', usage: 'Each card in the list has the listitem role.' },
+        { selector: '.k-card-list .k-card', attribute: 'tabindex=0', usage: 'The card is focusable when navigatable.' },
+        { selector: '.k-card-list .k-card', attribute: 'aria-describedby=.k-card-title id', usage: 'Associate the card to its title element.' },
+        { selector: '.k-card-list .k-card', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces the Enter key for navigation inside the card.' },
+    ]
+};
 
 export default CardList;

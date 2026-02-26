@@ -337,7 +337,7 @@
                                             </a>
                                         </li>
                                     </ol>
-                                    <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
+                                    <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                                         <span class="k-progress-status-wrap k-progress-start"></span>
                                         <div class="k-progressbar-value k-selected">
                                             <span class="k-progress-status-wrap k-progress-start"></span>
@@ -396,16 +396,16 @@
                             <div>
                                 <div class="k-animation-container k-animation-container-shown">
                                     <div class="k-child-animation-container">
-                                        <div class="k-notification k-notification-primary k-notification-closable">
+                                        <div class="k-notification k-notification-primary k-notification-closable" role="status" aria-live="polite" aria-describedby="k-notification-content-1">
                                             <span class="k-notification-status k-icon k-svg-icon k-svg-i-exclamation-circle" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M224 128h64v160h-64zm0 256h64v-64h-64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224m-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192"></path>
                                                 </svg>
                                             </span>
-                                            <div class="k-notification-content">Closable notification with icon</div>
+                                            <div id="k-notification-content-1" class="k-notification-content">Closable notification with icon</div>
                                             <span class="k-notification-actions">
                                                 <span class="k-notification-action k-notification-close-action">
-                                                    <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                    <span aria-hidden="true" class="k-icon k-svg-icon k-svg-i-x">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
                                                         </svg>
@@ -528,8 +528,8 @@
                             <div>
                                 <span class="k-multiselect k-input">
                                     <div class="k-input-values">
-                                        <div class="k-chip-list">
-                                            <div class="k-chip">
+                                        <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                                            <div class="k-chip" role="button" aria-pressed="false">
                                                 <span class="k-chip-content">
                                                     <span class="k-chip-label">Chip 1</span>
                                                 </span>
@@ -543,7 +543,7 @@
                                                     </span>
                                                 </span>
                                             </div>
-                                            <div class="k-chip">
+                                            <div class="k-chip" role="button" aria-pressed="false">
                                                 <span class="k-chip-content">
                                                     <span class="k-chip-label">Chip 2</span>
                                                 </span>
@@ -586,7 +586,7 @@
                         </div>
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
-                                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
+                                <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                                     <span class="k-progress-status-wrap k-progress-center">
                                         <span class="k-progress-status">50%</span>
                                     </span>
@@ -598,7 +598,7 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="k-progressbar k-chunk-progressbar k-progressbar-horizontal">
+                                <div class="k-progressbar k-chunk-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5">
                                     <ul class="k-progressbar-chunks k-reset">
                                         <li class="k-progressbar-chunk k-first k-selected"></li>
                                         <li class="k-progressbar-chunk k-selected"></li>
@@ -781,9 +781,9 @@
                             <div>
                                 <div class="k-animation-container k-animation-container-shown">
                                     <div class="k-child-animation-container">
-                                        <div class="k-tooltip k-tooltip-closable">
+                                        <div class="k-tooltip k-tooltip-closable" role="tooltip" id="k-tooltip-1">
                                             <div class="k-tooltip-content">Closeable tooltip content</div>
-                                            <div class="k-tooltip-button">
+                                            <div class="k-tooltip-button" role="button" aria-label="Close" tabindex="0">
                                                 <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -3157,7 +3157,7 @@
                                         </table>
                                     </div>
                                     <div class="k-spreadsheet-cell-editor k-spreadsheet-formula-input" data-role="formulainput" style="white-space: pre;">216321</div>
-                                    <div class="k-tooltip" style="position: absolute; display: none;">
+                                    <div class="k-tooltip" role="tooltip" id="k-tooltip-2" style="position: absolute; display: none;">
                                         <div class="k-tooltip-content">A1</div>
                                     </div>
                                     <div class="k-list-group-sticky-header" style="display: none;"></div>

@@ -53,7 +53,8 @@ Edit `.spec.tsx` and `templates/*.tsx`. Rules:
 - **Attributes after `className`** — always place ARIA props after the className prop
 - **Semantic HTML first** — prefer `<button>` over `<div role="button">`
 - **Conditional values** — `aria-pressed={selected ? 'true' : 'false'}`, use `undefined` to omit
-- **Dynamic IDs** — ``aria-controls={`${id}-listbox`}``; IDs must reference real DOM elements
+- **Dynamic IDs** — use `nextId(prefix)` from `misc` to generate unique IDs (see patterns below); never hardcode sequential IDs like `item-1`, `item-2`
+- **Coordinated IDs** — when an ARIA attribute references another element's `id` (e.g. `aria-labelledby`, `aria-controls`, `aria-activedescendant`), store the `nextId()` result in a variable and use that variable in both places
 - **Icon-only buttons** — require `aria-label`
 - **`disabled` propagation** — pass to all interactive children
 - **No structural changes** — only add attributes; never add or remove HTML elements
@@ -80,7 +81,32 @@ Edit `.spec.tsx` and `templates/*.tsx`. Rules:
 />
 ```
 
-**Dynamic ID references:**
+**Dynamic ID references — use `nextId()` from `misc`:**
+
+Single-use IDs (each element gets its own unique ID):
+```tsx
+import { nextId } from '../../misc';
+
+<ListItem id={nextId('list-item')}>Item 1</ListItem>
+<ListItem id={nextId('list-item')}>Item 2</ListItem>
+// Produces: id="k-list-item-1", id="k-list-item-2"
+```
+
+Cross-referenced IDs (ARIA attribute references another element's ID — must use a variable):
+```tsx
+import { nextId } from '../../misc';
+
+// ❌ BAD — two nextId() calls produce different values
+<ListUl aria-labelledby={nextId('group')}>
+    <ListGroupItem id={nextId('group')}>Group</ListGroupItem>  {/* IDs won't match! */}
+
+// ✅ GOOD — same variable used in both places
+const groupId = nextId('group');
+<ListUl aria-labelledby={groupId}>
+    <ListGroupItem id={groupId}>Group</ListGroupItem>
+```
+
+Spec-level IDs (component root with derived sub-IDs):
 ```tsx
 const { id = 'combobox' } = props;
 
@@ -88,7 +114,6 @@ const { id = 'combobox' } = props;
     className="k-input-inner"
     role="combobox"
     aria-controls={opened ? `${id}-listbox` : undefined}
-    aria-activedescendant={opened ? `${id}-item-${focusedIndex}` : undefined}
 />
 ```
 

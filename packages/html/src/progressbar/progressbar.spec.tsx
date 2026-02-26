@@ -21,6 +21,8 @@ export type KendoProgressBarProps = {
     reverse?: boolean;
     value?: string;
     width?: string;
+    /** @aria aria-label - accessible name for the progressbar */
+    ariaLabel?: string;
 };
 
 export type KendoProgressBarState = { [K in (typeof states)[number]]?: boolean };
@@ -50,6 +52,7 @@ export const ProgressBar: KendoComponent<KendoProgressBarProps & KendoProgressBa
         value = defaultOptions.value,
         width,
         style,
+        ariaLabel,
         ...other
     } = props;
 
@@ -73,6 +76,11 @@ export const ProgressBar: KendoComponent<KendoProgressBarProps & KendoProgressBa
                 "--kendo-progressbar-value": value,
                 [orientation === "horizontal" ? "height" : "width"]: orientation === "horizontal" ? height : width
             } as React.CSSProperties}
+            role="progressbar"
+            aria-label={ariaLabel || 'progress'}
+            aria-valuenow={indeterminate ? undefined : Number(value)}
+            aria-valuemin={0}
+            aria-valuemax={100}
         >
             <span className={classNames(
                 'k-progress-status-wrap',
@@ -104,5 +112,17 @@ ProgressBar.className = PROGRESSBAR_CLASSNAME;
 ProgressBar.defaultOptions = defaultOptions;
 ProgressBar.moduleName = PROGRESSBAR_MODULE_NAME;
 ProgressBar.folderName = PROGRESSBAR_FOLDER_NAME;
+
+ProgressBar.ariaSpec = {
+    selector: '.k-progressbar',
+    implicitRole: 'progressbar',
+    rules: [
+        { selector: '.k-progressbar', attribute: 'role=progressbar', usage: 'Sets the proper role for ProgressBar.' },
+        { selector: '.k-progressbar', attribute: 'aria-label or aria-labelledby', usage: 'The ProgressBar needs an accessible name to be assigned to it.' },
+        { selector: '.k-progressbar:not(.k-progressbar-indeterminate)', attribute: 'aria-valuenow', usage: 'Required if the value is not indeterminate. Decimal value between aria-valuemin and aria-valuemax.' },
+        { selector: '.k-progressbar', attribute: 'aria-valuemin', usage: 'Minimum value. Defaults to 0.' },
+        { selector: '.k-progressbar', attribute: 'aria-valuemax', usage: 'Maximum value. Defaults to 100.' },
+    ]
+};
 
 export default ProgressBar;

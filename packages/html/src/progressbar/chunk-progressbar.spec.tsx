@@ -19,6 +19,8 @@ export type KendoChunkProgressBarProps = {
     progress: number;
     orientation?: 'horizontal' | 'vertical';
     reverse?: boolean;
+    /** @aria aria-label - accessible name for the progressbar */
+    ariaLabel?: string;
 };
 
 export type KendoChunkProgressBarState = { [K in (typeof states)[number]]?: boolean };
@@ -41,6 +43,7 @@ export const ChunkProgressBar: KendoComponent<KendoChunkProgressBarProps & Kendo
         orientation = defaultOptions.orientation,
         progress = defaultOptions.progress,
         reverse,
+        ariaLabel,
         ...other
     } = props;
 
@@ -59,7 +62,13 @@ export const ChunkProgressBar: KendoComponent<KendoChunkProgressBarProps & Kendo
                     [`${PROGRESSBAR_CLASSNAME}-indeterminate`]: indeterminate,
                     [`${PROGRESSBAR_CLASSNAME}-reverse`]: reverse
                 }
-            )}>
+            )}
+            role="progressbar"
+            aria-label={ariaLabel || 'progress'}
+            aria-valuenow={indeterminate ? undefined : progress}
+            aria-valuemin={0}
+            aria-valuemax={chunkCount}
+        >
             <ul className="k-progressbar-chunks k-reset">
                 {[ ...Array(chunkCount) ].map((_el, i) =>
                     <li key={i} className={classNames(
@@ -82,5 +91,17 @@ ChunkProgressBar.className = CHUNKPROGRESSBAR_CLASSNAME;
 ChunkProgressBar.defaultOptions = defaultOptions;
 ChunkProgressBar.moduleName = PROGRESSBAR_MODULE_NAME;
 ChunkProgressBar.folderName = PROGRESSBAR_FOLDER_NAME;
+
+ChunkProgressBar.ariaSpec = {
+    selector: '.k-chunk-progressbar',
+    implicitRole: 'progressbar',
+    rules: [
+        { selector: '.k-chunk-progressbar', attribute: 'role=progressbar', usage: 'Sets the proper role for ChunkProgressBar.' },
+        { selector: '.k-chunk-progressbar', attribute: 'aria-label or aria-labelledby', usage: 'The ChunkProgressBar needs an accessible name to be assigned to it.' },
+        { selector: '.k-chunk-progressbar:not(.k-progressbar-indeterminate)', attribute: 'aria-valuenow', usage: 'Required if the value is not indeterminate. Value between aria-valuemin and aria-valuemax.' },
+        { selector: '.k-chunk-progressbar', attribute: 'aria-valuemin', usage: 'Minimum value. Defaults to 0.' },
+        { selector: '.k-chunk-progressbar', attribute: 'aria-valuemax', usage: 'Maximum value. Defaults to chunk count.' },
+    ]
+};
 
 export default ChunkProgressBar;

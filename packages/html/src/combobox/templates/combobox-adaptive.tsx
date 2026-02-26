@@ -1,4 +1,5 @@
 import { List, ListContent, ListItem } from "../../list";
+import { nextId } from "../../misc";
 import Combobox from "../combobox.spec";
 
 export const ComboboxAdaptive = (props) => (
@@ -10,9 +11,9 @@ export const ComboboxAdaptive = (props) => (
         popup={
             <List>
                 <ListContent listboxId="combobox-adaptive-listbox" aria-label="Company options">
-                    <ListItem id="combobox-adaptive-item-0">Option 1</ListItem>
-                    <ListItem id="combobox-adaptive-item-1" focus>Option 2</ListItem>
-                    <ListItem id="combobox-adaptive-item-2">Option 3</ListItem>
+                    <ListItem id={nextId('combobox-adaptive-item')}>Option 1</ListItem>
+                    <ListItem id={nextId('combobox-adaptive-item')} focus>Option 2</ListItem>
+                    <ListItem id={nextId('combobox-adaptive-item')}>Option 3</ListItem>
                 </ListContent>
             </List>
         }
