@@ -80,6 +80,16 @@
                 &.k-chip-#{$name} {
                     color: k-color(#{$name}-on-subtle);
 
+                    @if ($name == "warning") {
+                        color: k-color(#{$name}-on-surface);
+                        background-color: transparent;
+                        border-color: currentColor;
+                    }
+
+                    @if ($name == "base") {
+                        border-color: $kendo-chip-border;
+                    }
+
                     &:hover,
                     &.k-hover {
                         color: k-color(#{$name}-on-subtle);
@@ -100,15 +110,7 @@
                         border-color: k-color(#{$name}-on-surface);
                     }
 
-                    @if ($name == "warning") {
-                        color: k-color(#{$name}-on-surface);
-                        background-color: transparent;
-                        border-color: currentColor;
-                    }
-
                     @if ($name == "base") {
-                        border-color: $kendo-chip-border;
-
                         &:active,
                         &.k-active,
                         &.k-selected {
