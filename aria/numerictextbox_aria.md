@@ -12,7 +12,7 @@ This section lists the selectors, attributes, and behavior patterns supported by
 |  | `aria-valuenow` | Announces the value for the component. |
 |  | `aria-valuemin` | Announces the minimum value allowed for the component. |
 |  | `aria-valuemax` | Announces the maximum value allowed for the component. |
-|  | `aria-invalid=true` | The attribute is rendered only when the NumericTextBox is in a form and announces the valid state of the component. |
+|  | `aria-invalid=true` | The attribute is rendered only when the NumericTextBox is in a form and announces the invalid state of the component. |
 | `.k-numerictextbox.k-disabled > .k-input-inner` | `disabled=disabled` or `aria-disabled=true` | The attribute is rendered only when the NumericTextBox is disabled. |
 | `.k-spin-button > .k-button` | `role=button` or `nodeName=button` | Announces the spin button capabilities of the NumericTextBox. |
 |  | `aria-label` | The button element must have discernible text. |

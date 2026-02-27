@@ -41,6 +41,9 @@ export const ColorPaletteTile = (
     return (
         <td
             {...other}
+            role="gridcell"
+            aria-label={color}
+            aria-selected={selected ? 'true' : undefined}
             className={classNames(
                 props.className,
                 COLORPALETTETILE_CLASSNAME,

@@ -18,7 +18,7 @@ The following table summarizes the selectors and attributes supported by the Dro
 |  | `aria-describedby=.k-input-inner id` | Announces the selected value of the drop-down. |
 |  | `aria-readonly=true` | The attribute is rendered only when the drop-down is read-only. |
 | `.k-dropdowntree[aria-autocomplete="list"]` | `aria-autocomplete=list` | The attribute is rendered and the value is set to `list` when the filtering feature is enabled. |
-| `.k-dropdowntree.k-invalid` | `aria-invalid=true` | The attribute is rendered only when the drop-down is in a form and announces the valid state of the component. |
+| `.k-dropdowntree.k-invalid` | `aria-invalid=true` | The attribute is rendered only when the drop-down is in a form and announces the invalid state of the component. |
 | `.k-dropdowntree.k-loading` | `aria-busy=true` | The attribute is rendered only when the drop-down is loading data. |
 |  | `tabindex=0` | The element must be focusable. |
 | `.k-dropdowntree.k-disabled` | `aria-disabled=true` | The attribute is rendered only when the drop-down is disabled. |

@@ -20,7 +20,7 @@ The following table summarizes the selectors and attributes supported by the Com
 |  | `readonly=readonly` or `aria-readonly=true` | The attribute is rendered only when the ComboBox is read-only. |
 |  | `aria-busy=true` | The attribute is rendered only when the ComboBox is loading data. |
 |  | `tabindex=0` | The element must be focusable. |
-| `.k-combobox.k-invalid .k-input-inner,.k-combobox.ng-invalid .k-input-inner` | `aria-invalid=true` | The attribute is rendered only when the ComboBox is in a form, and announces the valid state of the component. |
+| `.k-combobox.k-invalid .k-input-inner,.k-combobox.ng-invalid .k-input-inner` | `aria-invalid=true` | The attribute is rendered only when the ComboBox is in a form, and announces the invalid state of the component. |
 | `.k-combobox.k-disabled .k-input-inner` | `disabled=disabled` or `aria-disabled=true` | The attribute is rendered only when the ComboBox is disabled. |
 | `.k-input-button` | `role=button` or `nodeName=button` | The element must either be a `<button>` element or must have the `role="button"` assigned. |
 |  | `aria-label` | The button element must have discernible text. |

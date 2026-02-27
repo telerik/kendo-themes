@@ -16,7 +16,7 @@ export const CalendarInfiniteDecade = ({ firstCaption = "2020 - 2029", secondCap
                     <col />
                 </colgroup>
                 <CalendarTbody>
-                    <CalendarTableRow>
+                    <CalendarTableRow aria-hidden="true">
                         <CalendarCaptionCell scope="col" colSpan={4} text={firstCaption} />
                     </CalendarTableRow>
                     <CalendarTableRow>
@@ -39,7 +39,7 @@ export const CalendarInfiniteDecade = ({ firstCaption = "2020 - 2029", secondCap
                     </CalendarTableRow>
                 </CalendarTbody>
                 <CalendarTbody>
-                    <CalendarTableRow>
+                    <CalendarTableRow aria-hidden="true">
                         <CalendarCaptionCell scope="col" colSpan={4} text={secondCaption} />
                     </CalendarTableRow>
                     <CalendarTableRow>

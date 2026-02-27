@@ -15,7 +15,7 @@ This section lists the selectors, attributes, and behavior patterns supported by
 |  | `aria-autocomplete=list` | Attribute is rendered and value is set to list when **filtering** feature is enabled. |
 |  | `aria-describedby=.k-chip-list id` | Points to the taglist element that contains the selected items. |
 |  | `aria-readonly=true` | Attribute is rendered only when the multiselect is readonly. |
-|  | `aria-invalid=true` | Attribute is rendered only when the multiselect is in form and announces the valid state of the component. |
+|  | `aria-invalid=true` | Attribute is rendered only when the multiselect is in form and announces the invalid state of the component. |
 |  | `aria-busy=true` | Attribute is rendered only when the multiselect is loading data. |
 |  | `tabindex=0` | The element should be focusable. |
 | `.k-multiselecttree.k-disabled .k-input-inner` | `aria-disabled=true` | Attribute is rendered only when the multiselect is disabled. |

@@ -16,7 +16,7 @@ The ColorPicker popup contains in itself ColorGradient, ColorPalette, a UI to sw
 |  | `aria-expanded` | Announces the state of the visibility of the popup. |
 |  | `aria-controls=.k-colorpicker-popup id` | Points to the popup element. Signifies that the `combobox` element controls the `dialog`. |
 |  | `tabindex=0` | The element must be focusable. |
-| `.k-invalid,.ng-invalid` | `aria-invalid=true` | Attribute is rendered only when the picker is in form and announces the valid state of the component. |
+| `.k-invalid,.ng-invalid` | `aria-invalid=true` | Attribute is rendered only when the picker is in form and announces the invalid state of the component. |
 | `.k-colorpicker.k-disabled` | `aria-disabled=true` | Attribute is rendered only when the picker is disabled. |
 | `.k-colorpicker.k-disabled .k-button` | `disabled` or `aria-disabled=true` | Attribute is rendered only when the picker is disabled. |
 

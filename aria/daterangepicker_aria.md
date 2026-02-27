@@ -17,7 +17,7 @@ This section lists the selectors, attributes, and behavior patterns supported by
 |  | `aria-activedescendant=.k-calendar-td.k-focus id` | Points to the focused item (date/month/year) in the Calendar Popup. Should only be present when the Popup is open. |
 |  | `readonly=readonly` or `aria-readonly=true` | Attribute is rendered only when the DateRangePicker is readonly. |
 |  | `tabindex=0` | The element should be focusable. |
-| `.k-invalid .k-input-inner,.ng-invalid .k-input-inner` | `aria-invalid=true` | Attribute is rendered only when the combobox is in form and announces the valid state of the component. |
+| `.k-invalid .k-input-inner,.ng-invalid .k-input-inner` | `aria-invalid=true` | Attribute is rendered only when the combobox is in form and announces the invalid state of the component. |
 | `.k-disabled .k-input-inner` | `disabled=disabled` or `aria-disabled=true` | Attribute is rendered only when the DateRangePicker is disabled. |
 
 ### Calendars Popup

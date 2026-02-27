@@ -14,7 +14,7 @@ export const CalendarInfiniteWeekNumber = ({ firstCaption = "January 2021", seco
                     <col />
                 </colgroup>
                 <CalendarTbody>
-                    <CalendarTableRow>
+                    <CalendarTableRow aria-hidden="true">
                         <CalendarCaptionCell scope="col" colSpan={7} text={firstCaption}></CalendarCaptionCell>
                     </CalendarTableRow>
                     <CalendarTableRow>
@@ -79,7 +79,7 @@ export const CalendarInfiniteWeekNumber = ({ firstCaption = "January 2021", seco
                     </CalendarTableRow>
                 </CalendarTbody>
                 <CalendarTbody>
-                    <CalendarTableRow>
+                    <CalendarTableRow aria-hidden="true">
                         <CalendarCaptionCell scope="col" colSpan={7} text={secondCaption}></CalendarCaptionCell>
                     </CalendarTableRow>
                 </CalendarTbody>

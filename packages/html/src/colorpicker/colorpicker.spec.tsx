@@ -91,6 +91,8 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
     } = props;
 
 
+    const popupId = 'colorpicker-popup';
+
     return (
         <>
             <Picker
@@ -104,6 +106,13 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
                 invalid={invalid}
                 required={required}
                 disabled={disabled}
+                role="combobox"
+                aria-haspopup="dialog"
+                aria-expanded={opened ? 'true' : 'false'}
+                aria-controls={(opened || adaptive) ? popupId : undefined}
+                aria-label="Color picker"
+                tabIndex={0}
+                aria-disabled={disabled ? 'true' : undefined}
                 className={classNames(
                     props.className,
                     COLORPICKER_CLASSNAME,
@@ -130,18 +139,21 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
                     icon={arrowIconName}
                     size={size}
                     fillMode={fillMode}
+                    tabIndex={-1}
+                    aria-label="Open color picker"
+                    disabled={disabled}
                 />
             </Picker>
             {opened && popup &&
-                <Popup className="k-colorpicker-popup">
+                <Popup id={popupId} className="k-colorpicker-popup">
                     {popup}
                 </Popup>
             }
             {adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings}
+                <ActionSheet adaptive={true} id={popupId} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />
@@ -170,5 +182,33 @@ ColorPicker.className = COLORPICKER_CLASSNAME;
 ColorPicker.defaultOptions = defaultOptions;
 ColorPicker.moduleName = COLORPICKER_MODULE_NAME;
 ColorPicker.folderName = COLORPICKER_FOLDER_NAME;
+
+/**
+ * Accessibility specification for ColorPicker.
+ *
+ * @accessibility
+ * - Wrapper has role=combobox with aria-haspopup=dialog
+ * - aria-expanded indicates popup visibility
+ * - tabindex=0 makes element focusable
+ * - Disabled state uses aria-disabled=true
+ * - Inner ColorGradient in popup has tabindex=-1
+ * - Adaptive mode follows ActionSheet ARIA spec
+ *
+ * @wcag 4.1.2 Name, Role, Value - combobox pattern for color selection
+ */
+ColorPicker.ariaSpec = {
+    selector: '.k-colorpicker',
+    rules: [
+        { selector: '.k-colorpicker', attribute: 'role=combobox', usage: 'The focusable element should have role combobox (input with popup).' },
+        { selector: '.k-colorpicker', attribute: 'aria-label or aria-labelledby', usage: 'The component needs an accessible name including the currently selected value.' },
+        { selector: '.k-colorpicker', attribute: 'aria-haspopup=dialog', usage: 'Indicates the component has a Dialog Popup.' },
+        { selector: '.k-colorpicker', attribute: 'aria-expanded=true/false', usage: 'Announces the visibility state of the popup.' },
+        { selector: '.k-colorpicker', attribute: 'aria-controls (when open)', usage: 'Points to the popup element.' },
+        { selector: '.k-colorpicker', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
+        { selector: '.k-colorpicker.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
+        { selector: '.k-colorpicker.k-disabled .k-button', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
+        { selector: '.k-colorgradient', attribute: 'tabindex=-1', usage: 'The inner ColorGradient must be removed from the page tab sequence.' },
+    ]
+};
 
 export default ColorPicker;

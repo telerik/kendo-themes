@@ -32,7 +32,7 @@
                 <div class="k-overlay"></div>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
-                        <div role="dialog" aria-modal="true" aria-labelledby="actionsheet-cal-inf-1-title" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
+                        <div id="actionsheet-cal-inf-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-cal-inf-1-title" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
                             <div id="actionsheet-cal-inf-1" class="k-actionsheet-view">
                                 <div class="k-actionsheet-titlebar">
                                     <div class="k-actionsheet-titlebar-group">
@@ -54,17 +54,17 @@
                                     <div class="k-calendar k-calendar-infinite k-calendar-lg">
                                         <div class="k-calendar-view k-calendar-monthview k-vstack">
                                             <div class="k-calendar-header">
-                                                <button class="k-calendar-title k-button k-button-flat k-button-primary">
+                                                <button class="k-calendar-title k-button k-button-flat k-button-primary" id="k-calendar-title-1" tabindex="-1" aria-label="Navigate to parent view: January 2021">
                                                     <span class="k-button-text">January 2021</span>
                                                 </button>
                                                 <span class="k-spacer"></span>
                                                 <span class="k-calendar-nav">
-                                                    <button class="k-calendar-nav-today k-button k-button-flat">
+                                                    <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
                                                         <span class="k-button-text">Today</span>
                                                     </button>
                                                 </span>
                                             </div>
-                                            <table class="k-calendar-weekdays k-calendar-table">
+                                            <table class="k-calendar-weekdays k-calendar-table" role="table">
                                                 <colgroup>
                                                     <col>
                                                     <col>
@@ -74,20 +74,20 @@
                                                     <col>
                                                     <col>
                                                 </colgroup>
-                                                <thead class="k-calendar-thead">
-                                                    <tr class="k-calendar-tr">
-                                                        <th class="k-calendar-th">Su</th>
-                                                        <th class="k-calendar-th">Mo</th>
-                                                        <th class="k-calendar-th">Tu</th>
-                                                        <th class="k-calendar-th">We</th>
-                                                        <th class="k-calendar-th">Th</th>
-                                                        <th class="k-calendar-th">Fr</th>
-                                                        <th class="k-calendar-th">Sa</th>
+                                                <thead class="k-calendar-thead" role="rowgroup">
+                                                    <tr class="k-calendar-tr" role="row">
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Sunday">Su</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Monday">Mo</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Tuesday">Tu</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Wednesday">We</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Thursday">Th</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Friday">Fr</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Saturday">Sa</th>
                                                     </tr>
                                                 </thead>
                                             </table>
-                                            <div class="k-content k-scrollable">
-                                                <table class="k-calendar-table">
+                                            <div class="k-content k-scrollable" role="none">
+                                                <table class="k-calendar-table" role="grid" aria-labelledby="k-calendar-infinite-title-1" tabindex="0">
                                                     <colgroup>
                                                         <col>
                                                         <col>
@@ -97,129 +97,129 @@
                                                         <col>
                                                         <col>
                                                     </colgroup>
-                                                    <tbody class="k-calendar-tbody">
-                                                        <tr class="k-calendar-tr">
+                                                    <tbody class="k-calendar-tbody" role="rowgroup">
+                                                        <tr aria-hidden="true" class="k-calendar-tr" role="row">
                                                             <th scope="col" colspan="7" class="k-calendar-caption">January 2021</th>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">1</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">2</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">3</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">4</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">5</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">6</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">7</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">8</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">9</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">10</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">11</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">12</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">13</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">14</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">15</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">16</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">17</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">18</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">19</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">20</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">21</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">22</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">23</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">24</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">25</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">26</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">27</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">28</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">29</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">30</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">31</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                                         </tr>
                                                     </tbody>
-                                                    <tbody class="k-calendar-tbody">
-                                                        <tr class="k-calendar-tr">
+                                                    <tbody class="k-calendar-tbody" role="rowgroup">
+                                                        <tr aria-hidden="true" class="k-calendar-tr" role="row">
                                                             <th scope="col" colspan="7" class="k-calendar-caption">February 2021</th>
                                                         </tr>
                                                     </tbody>
@@ -240,7 +240,7 @@
                 <div class="k-overlay"></div>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                        <div role="dialog" aria-modal="true" aria-labelledby="actionsheet-cal-inf-2-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                        <div id="actionsheet-cal-inf-2" role="dialog" aria-modal="true" aria-labelledby="actionsheet-cal-inf-2-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
                             <div id="actionsheet-cal-inf-2" class="k-actionsheet-view">
                                 <div class="k-actionsheet-titlebar">
                                     <div class="k-actionsheet-titlebar-group">
@@ -262,17 +262,17 @@
                                     <div class="k-calendar k-calendar-infinite k-calendar-lg">
                                         <div class="k-calendar-view k-calendar-monthview k-vstack">
                                             <div class="k-calendar-header">
-                                                <button class="k-calendar-title k-button k-button-flat k-button-primary">
+                                                <button class="k-calendar-title k-button k-button-flat k-button-primary" id="k-calendar-title-2" tabindex="-1" aria-label="Navigate to parent view: January 2021">
                                                     <span class="k-button-text">January 2021</span>
                                                 </button>
                                                 <span class="k-spacer"></span>
                                                 <span class="k-calendar-nav">
-                                                    <button class="k-calendar-nav-today k-button k-button-flat">
+                                                    <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
                                                         <span class="k-button-text">Today</span>
                                                     </button>
                                                 </span>
                                             </div>
-                                            <table class="k-calendar-weekdays k-calendar-table">
+                                            <table class="k-calendar-weekdays k-calendar-table" role="table">
                                                 <colgroup>
                                                     <col>
                                                     <col>
@@ -282,20 +282,20 @@
                                                     <col>
                                                     <col>
                                                 </colgroup>
-                                                <thead class="k-calendar-thead">
-                                                    <tr class="k-calendar-tr">
-                                                        <th class="k-calendar-th">Su</th>
-                                                        <th class="k-calendar-th">Mo</th>
-                                                        <th class="k-calendar-th">Tu</th>
-                                                        <th class="k-calendar-th">We</th>
-                                                        <th class="k-calendar-th">Th</th>
-                                                        <th class="k-calendar-th">Fr</th>
-                                                        <th class="k-calendar-th">Sa</th>
+                                                <thead class="k-calendar-thead" role="rowgroup">
+                                                    <tr class="k-calendar-tr" role="row">
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Sunday">Su</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Monday">Mo</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Tuesday">Tu</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Wednesday">We</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Thursday">Th</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Friday">Fr</th>
+                                                        <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Saturday">Sa</th>
                                                     </tr>
                                                 </thead>
                                             </table>
-                                            <div class="k-content k-scrollable">
-                                                <table class="k-calendar-table">
+                                            <div class="k-content k-scrollable" role="none">
+                                                <table class="k-calendar-table" role="grid" aria-labelledby="k-calendar-infinite-title-2" tabindex="0">
                                                     <colgroup>
                                                         <col>
                                                         <col>
@@ -305,129 +305,129 @@
                                                         <col>
                                                         <col>
                                                     </colgroup>
-                                                    <tbody class="k-calendar-tbody">
-                                                        <tr class="k-calendar-tr">
+                                                    <tbody class="k-calendar-tbody" role="rowgroup">
+                                                        <tr aria-hidden="true" class="k-calendar-tr" role="row">
                                                             <th scope="col" colspan="7" class="k-calendar-caption">January 2021</th>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">1</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">2</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">3</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">4</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">5</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">6</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">7</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">8</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">9</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">10</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">11</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">12</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">13</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">14</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">15</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">16</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">17</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">18</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">19</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">20</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">21</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">22</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">23</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">24</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">25</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">26</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">27</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">28</span>
                                                             </td>
-                                                            <td class="k-calendar-td">
+                                                            <td class="k-calendar-td" role="gridcell">
                                                                 <span class="k-link">29</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-weekend">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">30</span>
                                                             </td>
                                                         </tr>
-                                                        <tr class="k-calendar-tr">
-                                                            <td class="k-calendar-td k-weekend">
+                                                        <tr class="k-calendar-tr" role="row">
+                                                            <td class="k-calendar-td k-weekend" role="gridcell">
                                                                 <span class="k-link">31</span>
                                                             </td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                            <td class="k-calendar-td k-empty">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                            <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                                         </tr>
                                                     </tbody>
-                                                    <tbody class="k-calendar-tbody">
-                                                        <tr class="k-calendar-tr">
+                                                    <tbody class="k-calendar-tbody" role="rowgroup">
+                                                        <tr aria-hidden="true" class="k-calendar-tr" role="row">
                                                             <th scope="col" colspan="7" class="k-calendar-caption">February 2021</th>
                                                         </tr>
                                                     </tbody>

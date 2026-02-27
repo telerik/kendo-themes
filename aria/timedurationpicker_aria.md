@@ -13,7 +13,7 @@ This section lists the selectors, attributes, and behavior patterns supported by
 |  | `aria-haspopup=dialog` | Indicates the component has a Dialog Popup |
 |  | `aria-controls=.k-popup id` | Points to the popup element. Signifies that the `combobox` element controls the `dialog` popup. |
 |  | `readonly` or `aria-readonly` | The attribute is rendered only when the DatePicker is readonly. |
-| `.k-invalid .k-input-inner,.ng-invalid .k-input-inner` | `aria-invalid=true` | An attribute is rendered only when the picker is in form and announces the valid state of the component. |
+| `.k-invalid .k-input-inner,.ng-invalid .k-input-inner` | `aria-invalid=true` | An attribute is rendered only when the picker is in form and announces the invalid state of the component. |
 | `.k-disabled .k-input-inner` | `disabled=disabled` or `aria-disabled=true` | An attribute is rendered only when the DatePicker is disabled. |
 | `.k-input-button` | `aria-hidden=true` | The button element must be hidden from the assistive technologies. |
 |  | `tabindex=-1` | The button element must not be focusable. |

@@ -61,29 +61,56 @@ console.log('🔍 Unified A11y Test Runner\n');
 // ============================================================================
 
 /**
- * Build a registry of { folderName → { specName, ariaSpec } } from htmlPackage
- * exports that carry a `folderName` static property (i.e. spec components).
+ * Build a registry of { directoryName → { specName, ariaSpec } } keyed by
+ * the actual filesystem directory under packages/html/src/.
+ *
+ * For each directory that has templates, we read its spec files and find the
+ * matching export in the HTML package to grab its ariaSpec.
  */
 function buildSpecRegistry() {
     const registry = {};
-    for (const [name, exp] of Object.entries(htmlPackage)) {
-        if (typeof exp === 'function' && exp.folderName) {
-            const folder = exp.folderName;
-            if (!registry[folder]) {
-                registry[folder] = { specName: name, ariaSpec: exp.ariaSpec ? { ...exp.ariaSpec } : null };
-            } else if (exp.ariaSpec?.rules?.length) {
-                // Merge rules from multiple specs in the same folder (e.g. Chip + ChipList)
-                if (!registry[folder].ariaSpec) {
-                    registry[folder].ariaSpec = { ...exp.ariaSpec };
-                } else {
-                    registry[folder].ariaSpec.rules = [
-                        ...(registry[folder].ariaSpec.rules || []),
-                        ...exp.ariaSpec.rules
-                    ];
+
+    // Scan every directory that contains templates
+    const templateDirs = globSync(`${HTML_SRC_PATH}/*/templates/`)
+        .map(p => {
+            const parts = p.replace(/\/+$/, '').split('/');
+            // parts = [..., '<component-folder>', 'templates']
+            return parts.at(-2);
+        })
+        .filter(Boolean);
+
+    for (const dir of templateDirs) {
+        // Read spec files in this directory to find exported component names
+        const specFiles = globSync(`${HTML_SRC_PATH}/${dir}/*.spec.tsx`);
+
+        for (const specFile of specFiles) {
+            const content = readFileSync(specFile, 'utf-8');
+            // Find all `export const Xxx` declarations and check each against htmlPackage
+            const exportMatches = content.matchAll(/export\s+const\s+(\w+)\s*[=:]/g);
+
+            for (const match of exportMatches) {
+                const name = match[1];
+                const exp = htmlPackage[name];
+
+                if (typeof exp === 'function' && exp.ariaSpec) {
+                    if (!registry[dir]) {
+                        registry[dir] = { specName: name, ariaSpec: { ...exp.ariaSpec } };
+                    } else if (exp.ariaSpec?.rules?.length) {
+                        // Merge rules from multiple specs in the same folder (e.g. Chip + ChipList)
+                        if (!registry[dir].ariaSpec) {
+                            registry[dir].ariaSpec = { ...exp.ariaSpec };
+                        } else {
+                            registry[dir].ariaSpec.rules = [
+                                ...(registry[dir].ariaSpec.rules || []),
+                                ...exp.ariaSpec.rules
+                            ];
+                        }
+                    }
                 }
             }
         }
     }
+
     return registry;
 }
 

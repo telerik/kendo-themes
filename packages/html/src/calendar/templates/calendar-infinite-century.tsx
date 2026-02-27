@@ -13,7 +13,7 @@ export const CalendarInfiniteCentury = ({ firstCaption = "2000 - 2099", ...other
                     <col />
                 </colgroup>
                 <CalendarTbody>
-                    <CalendarTableRow>
+                    <CalendarTableRow aria-hidden="true">
                         <CalendarCaptionCell scope="col" colSpan={4} text={firstCaption} />
                     </CalendarTableRow>
                     <CalendarTableRow>

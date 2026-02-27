@@ -53,12 +53,10 @@ export const TimeSelectorColumn = (
             break;
     }
 
-    const items = columnData.map(data=>
-        <>
-            <li className="k-item">
-                <span>{data}</span>
-            </li>
-        </>
+    const items = columnData.map((data, index) =>
+        <li key={index} className="k-item" role="option" aria-selected="false">
+            <span>{data}</span>
+        </li>
     );
 
     return (
@@ -78,9 +76,9 @@ export const TimeSelectorColumn = (
                     })
                 )}>
                 <span className="k-title">{text}</span>
-                <div className="k-time-list">
+                <div className="k-time-list" role="listbox" aria-label={text}>
                     <div className="k-content k-scrollable k-time-container">
-                        <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
+                        <ul className="k-reset" style={{ transform: "translateY(97px)" }} role="none">
                             {items}
                         </ul>
                         <div className="k-scrollable-placeholder"></div>

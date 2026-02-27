@@ -1,4 +1,4 @@
-import { classNames, States, Size, Roundness, FillMode } from '../misc';
+import { classNames, States, Size, Roundness, FillMode, nextId } from '../misc';
 import {
     Input,
     InputPrefix,
@@ -79,6 +79,8 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
     } = props;
 
 
+    const popupId = nextId('timedurationpicker-popup');
+
     return (
         <>
             <Input
@@ -97,7 +99,15 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
                 className={classNames(props.className, TIMEDURATIONPICKER_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput placeholder={placeholder} value={value}
+                    role="combobox"
+                    aria-haspopup="dialog"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={opened ? popupId : undefined}
+                    aria-invalid={invalid ? 'true' : undefined}
+                    aria-label="Select time duration"
+                    disabled={disabled}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -117,10 +127,13 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
                     icon="clock-arrow-rotate"
                     size={size}
                     fillMode={fillMode}
+                    tabIndex={-1}
+                    aria-label="Select time duration"
+                    disabled={disabled}
                 />
             </Input>
             { opened &&
-                <Popup className="k-timedurationpicker-popup">
+                <Popup id={popupId} className="k-timedurationpicker-popup">
                     <TimeSelector columns={[ "dd", "HH", "mm" ]} focusedColumn="HH" fastSelection={(<TimeSelectorFastSelection/>)}/>
                     <ActionButtons alignment="stretched" className="k-timeduration-footer">
                         <Button className="k-time-cancel">Cancel</Button>
@@ -138,5 +151,36 @@ TimeDurationPicker.className = TIMEDURATIONPICKER_CLASSNAME;
 TimeDurationPicker.defaultOptions = defaultOptions;
 TimeDurationPicker.moduleName = TIMEDURATIONPICKER_MODULE_NAME;
 TimeDurationPicker.folderName = TIMEDURATIONPICKER_FOLDER_NAME;
+
+/**
+ * Accessibility specification for TimeDurationPicker.
+ *
+ * @accessibility
+ * - Input has role=combobox with aria-haspopup=dialog
+ * - aria-expanded indicates popup visibility
+ * - Icon button has tabindex=-1 and aria-label
+ * - Time lists in popup follow listbox pattern
+ *
+ * @wcag 4.1.2 Name, Role, Value - combobox pattern for time duration selection
+ */
+TimeDurationPicker.ariaSpec = {
+    selector: '.k-timedurationpicker',
+    rules: [
+        { selector: '.k-timedurationpicker .k-input-inner', attribute: 'role=combobox', usage: 'The input element follows the combobox specification.' },
+        { selector: '.k-timedurationpicker .k-input-inner', attribute: 'aria-haspopup=dialog', usage: 'Indicates the component has a Dialog Popup.' },
+        { selector: '.k-timedurationpicker .k-input-inner', attribute: 'aria-expanded=true/false', usage: 'Announces whether the Popup is visible or not.' },
+        { selector: '.k-timedurationpicker .k-input-inner', attribute: 'aria-controls (when open)', usage: 'Points to the popup element.' },
+        { selector: '.k-timedurationpicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'The input needs an accessible name.' },
+        { selector: '.k-invalid .k-input-inner', attribute: 'aria-invalid=true', usage: 'Rendered only when the picker is in form and announces invalid state.' },
+        { selector: '.k-disabled .k-input-inner', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
+        { selector: '.k-timedurationpicker .k-input-button', attribute: 'tabindex=-1', usage: 'Button element must not be focusable.' },
+        { selector: '.k-timedurationpicker .k-input-button', attribute: 'aria-label', usage: 'The button needs an accessible name.' },
+        { selector: '.k-timedurationpicker.k-disabled .k-button', attribute: 'disabled or aria-disabled', usage: 'Rendered only when the picker is disabled.' },
+        { selector: '.k-time-list', attribute: 'role=listbox', usage: 'The timelist elements must have listbox role.' },
+        { selector: '.k-time-list', attribute: 'aria-label or aria-labelledby', usage: 'The listbox needs an accessible name.' },
+        { selector: '.k-time-list-wrapper .k-reset', attribute: 'role=none', usage: 'The ul element semantic meaning must be removed.' },
+        { selector: '.k-time-list-wrapper .k-item', attribute: 'role=option', usage: 'The available options must be marked as such.' },
+    ]
+};
 
 export default TimeDurationPicker;
