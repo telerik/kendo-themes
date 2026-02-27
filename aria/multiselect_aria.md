@@ -19,7 +19,7 @@ The following table summarizes the selectors and attributes supported by the Mul
 |  | `aria-describedby=.k-chip-list id` | Points to the `taglist` element that contains the selected items. |
 | `.k-multiselect .k-input-inner[aria-expanded="true"][aria-activedescendant]` | `aria-activedescendant=.k-list-item.k-focus id` | Points to the focused item,which is either an item from the popup or a tag item from the selected items. The focused item is changed through keyboard navigation. If the focus is not currently on a tag item and the popup is not visible, the attribute must not point to any element or must be removed. |
 |  | `aria-readonly=true` | The attribute is rendered only when the MultiSelect is read-only. |
-|  | `aria-invalid=true` | The attribute is rendered only when the MultiSelect is in a form and announces the valid state of the component. |
+|  | `aria-invalid=true` | The attribute is rendered only when the MultiSelect is in a form and announces the invalid state of the component. |
 |  | `aria-busy=true` | The attribute is rendered only when the MultiSelect is loading data. |
 |  | `tabindex=0` | The element must be focusable. |
 | `.k-multiselect.k-disabled .k-input-inner` | `aria-disabled=true` | The attribute is rendered only when the MultiSelect is disabled. |

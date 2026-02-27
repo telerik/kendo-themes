@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 import { CalendarCell } from '../calendar';
 
-const CALEENDARTABLEHEAD_CLASSNAME = `k-calendar-thead`;
+const CALENDARTABLEHEAD_CLASSNAME = `k-calendar-thead`;
 
 export type KendoCalendarTableHeadProps = {
     showWeek?: boolean;
@@ -25,16 +25,17 @@ export const CalendarTableHead = (
     return (
         <thead
             {...other}
-            className={classNames(props.className, CALEENDARTABLEHEAD_CLASSNAME)}>
-            <tr className="k-calendar-tr">
-                {showWeek && <CalendarCell weekCell headerCell /> }
+            className={classNames(props.className, CALENDARTABLEHEAD_CLASSNAME)}
+            role="rowgroup">
+            <tr className="k-calendar-tr" role="row">
+                {showWeek && <CalendarCell weekCell headerCell text="W" /> }
                 {cellsText.map((text, index) => <CalendarCell key={index} text={text} headerCell />)}
             </tr>
         </thead>
     );
 };
 
-CalendarTableHead.className = CALEENDARTABLEHEAD_CLASSNAME;
+CalendarTableHead.className = CALENDARTABLEHEAD_CLASSNAME;
 CalendarTableHead.defaultOptions = defaultOptions;
 
 export default CalendarTableHead;

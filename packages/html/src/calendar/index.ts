@@ -23,4 +23,6 @@ export * from './templates/calendar-infinite-year';
 export * from './templates/calendar-infinite-decade';
 export * from './templates/calendar-infinite-century';
 export * from './templates/calendar-infinite-week-number';
+export * from './templates/calendar-selected';
+export * from './templates/calendar-infinite-selected';
 export * from './demos/calendar';

@@ -156,13 +156,13 @@
                             <div class="k-toolbar-separator k-separator"></div>
                             <div class="k-toolbar-item">
                                 <label>Label:</label>
-                                <span class="k-colorpicker k-icon-picker k-picker">
+                                <span role="combobox" aria-haspopup="dialog" aria-expanded="false" aria-label="Color picker" tabindex="0" class="k-colorpicker k-icon-picker k-picker">
                                     <span class="k-input-inner">
                                         <span class="k-value-icon k-color-preview k-no-color">
                                             <span class="k-color-preview-mask"></span>
                                         </span>
                                     </span>
-                                    <button class="k-input-button k-button k-icon-button">
+                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Open color picker">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
@@ -515,8 +515,8 @@
                             </div>
                             <div>
                                 <span class="k-datepicker k-input">
-                                    <input class="k-input-inner" placeholder="placeholder..." autocomplete="off" type="text" value="">
-                                    <button class="k-input-button k-button k-icon-button">
+                                    <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="placeholder..." autocomplete="off" type="text" value="">
+                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
@@ -799,22 +799,22 @@
                         <div>
                             <div class="k-calendar-range k-calendar k-week-number">
                                 <div class="k-calendar-header">
-                                    <button class="k-calendar-title k-button k-button-flat k-button-primary">
+                                    <button class="k-calendar-title k-button k-button-flat k-button-primary" id="k-calendar-title-1" tabindex="-1" aria-label="Navigate to parent view: October 2021">
                                         <span class="k-button-text">October 2021</span>
                                     </button>
                                     <span class="k-spacer"></span>
                                     <span class="k-calendar-nav">
-                                        <button class="k-calendar-nav-prev k-button k-button-flat k-icon-button">
+                                        <button class="k-calendar-nav-prev k-button k-button-flat k-icon-button" tabindex="-1" aria-label="Navigate to previous view">
                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                                                 </svg>
                                             </span>
                                         </button>
-                                        <button class="k-calendar-nav-today k-button k-button-flat">
+                                        <button class="k-calendar-nav-today k-button k-button-flat" tabindex="-1">
                                             <span class="k-button-text">Today</span>
                                         </button>
-                                        <button class="k-calendar-nav-next k-button k-button-flat k-icon-button">
+                                        <button class="k-calendar-nav-next k-button k-button-flat k-icon-button" tabindex="-1" aria-label="Navigate to next view">
                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
@@ -823,142 +823,144 @@
                                         </button>
                                     </span>
                                 </div>
-                                <div class="k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack">
-                                    <table class="k-calendar-table">
-                                        <thead class="k-calendar-thead">
-                                            <tr class="k-calendar-tr">
-                                                <th class="k-calendar-th k-alt"></th>
-                                                <th class="k-calendar-th">Su</th>
-                                                <th class="k-calendar-th">Mo</th>
-                                                <th class="k-calendar-th">Tu</th>
-                                                <th class="k-calendar-th">We</th>
-                                                <th class="k-calendar-th">Th</th>
-                                                <th class="k-calendar-th">Fr</th>
-                                                <th class="k-calendar-th">Sa</th>
+                                <div class="k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack" role="grid" aria-labelledby="k-calendar-title-1" tabindex="0">
+                                    <table class="k-calendar-table" role="none">
+                                        <thead class="k-calendar-thead" role="rowgroup">
+                                            <tr class="k-calendar-tr" role="row">
+                                                <th class="k-calendar-th k-alt" role="columnheader" scope="col" aria-label="Week number">
+                                                    <span class="k-sr-only">Week number</span>
+                                                </th>
+                                                <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Sunday">Su</th>
+                                                <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Monday">Mo</th>
+                                                <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Tuesday">Tu</th>
+                                                <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Wednesday">We</th>
+                                                <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Thursday">Th</th>
+                                                <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Friday">Fr</th>
+                                                <th class="k-calendar-th" role="columnheader" scope="col" aria-label="Saturday">Sa</th>
                                             </tr>
                                         </thead>
-                                        <tbody class="k-calendar-tbody">
-                                            <tr class="k-calendar-tr">
+                                        <tbody class="k-calendar-tbody" role="rowgroup">
+                                            <tr class="k-calendar-tr" role="row">
                                                 <td class="k-calendar-td k-alt">39</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">1</span>
                                                 </td>
-                                                <td class="k-calendar-td k-weekend">
+                                                <td class="k-calendar-td k-weekend" role="gridcell">
                                                     <span class="k-link">2</span>
                                                 </td>
                                             </tr>
-                                            <tr class="k-calendar-tr">
+                                            <tr class="k-calendar-tr" role="row">
                                                 <td class="k-calendar-td k-alt">40</td>
-                                                <td class="k-calendar-td k-weekend">
+                                                <td class="k-calendar-td k-weekend" role="gridcell">
                                                     <span class="k-link">3</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">4</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">5</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">6</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">7</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">8</span>
                                                 </td>
-                                                <td class="k-calendar-td k-weekend">
+                                                <td class="k-calendar-td k-weekend" role="gridcell">
                                                     <span class="k-link">9</span>
                                                 </td>
                                             </tr>
-                                            <tr class="k-calendar-tr">
+                                            <tr class="k-calendar-tr" role="row">
                                                 <td class="k-calendar-td k-alt">41</td>
-                                                <td class="k-calendar-td k-weekend">
+                                                <td class="k-calendar-td k-weekend" role="gridcell">
                                                     <span class="k-link">10</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">11</span>
                                                 </td>
-                                                <td class="k-calendar-td k-today">
+                                                <td class="k-calendar-td k-today" role="gridcell">
                                                     <span class="k-link">12</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">13</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">14</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">15</span>
                                                 </td>
-                                                <td class="k-calendar-td k-weekend">
+                                                <td class="k-calendar-td k-weekend" role="gridcell">
                                                     <span class="k-link">16</span>
                                                 </td>
                                             </tr>
-                                            <tr class="k-calendar-tr">
+                                            <tr class="k-calendar-tr" role="row">
                                                 <td class="k-calendar-td k-alt">42</td>
-                                                <td class="k-calendar-td k-weekend">
+                                                <td class="k-calendar-td k-weekend" role="gridcell">
                                                     <span class="k-link">17</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">18</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">19</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">20</span>
                                                 </td>
-                                                <td class="k-calendar-td k-selected k-range-start">
+                                                <td class="k-calendar-td k-selected k-range-start" role="gridcell" aria-selected="true">
                                                     <span class="k-link">21</span>
                                                 </td>
-                                                <td class="k-calendar-td k-range-mid">
+                                                <td class="k-calendar-td k-range-mid" role="gridcell">
                                                     <span class="k-link">22</span>
                                                 </td>
-                                                <td class="k-calendar-td k-weekend k-range-mid">
+                                                <td class="k-calendar-td k-weekend k-range-mid" role="gridcell">
                                                     <span class="k-link">23</span>
                                                 </td>
                                             </tr>
-                                            <tr class="k-calendar-tr">
+                                            <tr class="k-calendar-tr" role="row">
                                                 <td class="k-calendar-td k-alt">43</td>
-                                                <td class="k-calendar-td k-weekend k-range-mid">
+                                                <td class="k-calendar-td k-weekend k-range-mid" role="gridcell">
                                                     <span class="k-link">24</span>
                                                 </td>
-                                                <td class="k-calendar-td k-focus k-selected k-range-end">
+                                                <td class="k-calendar-td k-focus k-selected k-range-end" role="gridcell" aria-selected="true">
                                                     <span class="k-link">25</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">26</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">27</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">28</span>
                                                 </td>
-                                                <td class="k-calendar-td">
+                                                <td class="k-calendar-td" role="gridcell">
                                                     <span class="k-link">29</span>
                                                 </td>
-                                                <td class="k-calendar-td k-weekend">
+                                                <td class="k-calendar-td k-weekend" role="gridcell">
                                                     <span class="k-link">30</span>
                                                 </td>
                                             </tr>
-                                            <tr class="k-calendar-tr">
+                                            <tr class="k-calendar-tr" role="row">
                                                 <td class="k-calendar-td k-alt">44</td>
-                                                <td class="k-calendar-td k-weekend">
+                                                <td class="k-calendar-td k-weekend" role="gridcell">
                                                     <span class="k-link">31</span>
                                                 </td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
-                                                <td class="k-calendar-td k-empty">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
+                                                <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -969,7 +971,7 @@
                             <div class="k-animation-container k-animation-container-shown">
                                 <div class="k-child-animation-container">
                                     <div class="k-popup">
-                                        <div class="k-timeselector">
+                                        <div class="k-timeselector" role="group" aria-label="Time selector">
                                             <div class="k-time-header">
                                                 <span class="k-title">13:14:07:189 PM</span>
                                                 <button class="k-time-now k-button k-button-flat">
@@ -980,37 +982,37 @@
                                                 <span class="k-time-highlight"></span>
                                                 <div class="k-time-list-wrapper k-focus">
                                                     <span class="k-title">Hour</span>
-                                                    <div class="k-time-list">
+                                                    <div class="k-time-list" role="listbox" aria-label="Hour">
                                                         <div class="k-content k-scrollable k-time-container">
-                                                            <ul class="k-reset" style="transform: translateY(97px);">
-                                                                <li class="k-item">
+                                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>00</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>01</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>02</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>03</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>04</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>05</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>06</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>07</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>08</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>09</span>
                                                                 </li>
                                                             </ul>
@@ -1021,37 +1023,37 @@
                                                 <div class="k-time-separator">:</div>
                                                 <div class="k-time-list-wrapper">
                                                     <span class="k-title">Minute</span>
-                                                    <div class="k-time-list">
+                                                    <div class="k-time-list" role="listbox" aria-label="Minute">
                                                         <div class="k-content k-scrollable k-time-container">
-                                                            <ul class="k-reset" style="transform: translateY(97px);">
-                                                                <li class="k-item">
+                                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>00</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>01</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>02</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>03</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>04</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>05</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>06</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>07</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>08</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>09</span>
                                                                 </li>
                                                             </ul>
@@ -1062,37 +1064,37 @@
                                                 <div class="k-time-separator">:</div>
                                                 <div class="k-time-list-wrapper">
                                                     <span class="k-title">Second</span>
-                                                    <div class="k-time-list">
+                                                    <div class="k-time-list" role="listbox" aria-label="Second">
                                                         <div class="k-content k-scrollable k-time-container">
-                                                            <ul class="k-reset" style="transform: translateY(97px);">
-                                                                <li class="k-item">
+                                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>00</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>01</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>02</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>03</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>04</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>05</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>06</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>07</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>08</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>09</span>
                                                                 </li>
                                                             </ul>
@@ -1103,37 +1105,37 @@
                                                 <div class="k-time-separator">:</div>
                                                 <div class="k-time-list-wrapper">
                                                     <span class="k-title">Millisecond</span>
-                                                    <div class="k-time-list">
+                                                    <div class="k-time-list" role="listbox" aria-label="Millisecond">
                                                         <div class="k-content k-scrollable k-time-container">
-                                                            <ul class="k-reset" style="transform: translateY(97px);">
-                                                                <li class="k-item">
+                                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>000</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>001</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>002</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>003</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>004</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>005</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>006</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>007</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>008</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>009</span>
                                                                 </li>
                                                             </ul>
@@ -1143,13 +1145,13 @@
                                                 </div>
                                                 <div class="k-time-list-wrapper">
                                                     <span class="k-title">AM/PM</span>
-                                                    <div class="k-time-list">
+                                                    <div class="k-time-list" role="listbox" aria-label="AM/PM">
                                                         <div class="k-content k-scrollable k-time-container">
-                                                            <ul class="k-reset" style="transform: translateY(97px);">
-                                                                <li class="k-item">
+                                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>AM</span>
                                                                 </li>
-                                                                <li class="k-item">
+                                                                <li class="k-item" role="option" aria-selected="false">
                                                                     <span>PM</span>
                                                                 </li>
                                                             </ul>
@@ -4049,8 +4051,8 @@
                                                             </div>
                                                             <div class="k-filter-value k-toolbar-item">
                                                                 <span class="k-datepicker k-input">
-                                                                    <input class="k-input-inner" placeholder="1/21/2021" autocomplete="off" type="text" value="">
-                                                                    <button class="k-input-button k-button k-icon-button">
+                                                                    <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="1/21/2021" autocomplete="off" type="text" value="">
+                                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
                                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                                 <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>

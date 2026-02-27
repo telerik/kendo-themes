@@ -15,6 +15,8 @@ export type KendoCalendarInfiniteViewProps = {
     showWeekNumbers?: boolean;
     showNavigationButtons?: boolean;
     weekdayCellsText?: string[];
+    /** @aria aria-labelledby for the content grid table */
+    gridLabelledBy?: string;
 };
 
 const defaultOptions = {
@@ -38,6 +40,7 @@ export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps
         showNavigationButtons = defaultOptions.showNavigationButtons,
         showWeekNumbers,
         weekdayCellsText,
+        gridLabelledBy,
         ...other
     } = props;
 
@@ -59,7 +62,7 @@ export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps
                 orientation="horizontal"
             />
             {showWeekdays &&
-            <CalendarInfiniteTable className="k-calendar-weekdays" >
+            <CalendarInfiniteTable className="k-calendar-weekdays" tableRole="table">
                 <colgroup>
                     <col />
                     <col />
@@ -72,8 +75,8 @@ export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps
                 <CalendarTableHead cellsText={weekdayCellsText} showWeek={showWeekNumbers} />
             </CalendarInfiniteTable>
             }
-            <div className="k-content k-scrollable">
-                <CalendarInfiniteTable>
+            <div className="k-content k-scrollable" role="none">
+                <CalendarInfiniteTable tableRole="grid" ariaLabelledBy={gridLabelledBy}>
                     {props.children}
                 </CalendarInfiniteTable>
                 <div className="k-scrollable-placeholder" style={{ height: "1000px" }}></div>

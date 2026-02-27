@@ -75,10 +75,29 @@ export const CalendarCell = (
         }
     ];
 
+    const fullDayNames: { [key: string]: string } = {
+        'Su': 'Sunday',
+        'Mo': 'Monday',
+        'Tu': 'Tuesday',
+        'We': 'Wednesday',
+        'Th': 'Thursday',
+        'Fr': 'Friday',
+        'Sa': 'Saturday',
+        'W': 'Week number'
+    };
+
     if (headerCell) {
+        const labelText = text ? (fullDayNames[text] || text) : undefined;
         return (
-            <th {...other} className={classNames(calendarCellClasses)}>
-                {text}
+            <th {...other}
+                className={classNames(calendarCellClasses)}
+                role="columnheader"
+                scope="col"
+                aria-label={labelText}>
+                {weekCell
+                    ? <span className="k-sr-only">{labelText}</span>
+                    : text
+                }
             </th>
         );
     }
@@ -92,7 +111,11 @@ export const CalendarCell = (
     }
 
     return (
-        <td {...other} className={classNames(calendarCellClasses)}>
+        <td {...other}
+            className={classNames(calendarCellClasses)}
+            role="gridcell"
+            {...(selected ? { 'aria-selected': 'true' } : {})}
+            {...(disabled ? { 'aria-disabled': 'true' } : {})}>
             {empty && !showOtherMonth
                 ? <>&nbsp;</>
                 : <span className="k-link">

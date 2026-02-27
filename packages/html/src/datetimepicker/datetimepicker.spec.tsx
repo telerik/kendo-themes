@@ -1,4 +1,4 @@
-import { classNames, States, Size, Roundness, FillMode } from '../misc';
+import { classNames, States, Size, Roundness, FillMode, nextId } from '../misc';
 import {
     Input,
     InputPrefix,
@@ -92,6 +92,8 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
     } = props;
 
 
+    const popupId = nextId('datetimepicker-popup');
+
     return (
         <>
             <Input
@@ -111,7 +113,15 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                 className={classNames(props.className, DATETIMEPICKER_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput placeholder={placeholder} value={value}
+                    role="combobox"
+                    aria-haspopup="dialog"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={(opened || adaptive) ? popupId : undefined}
+                    aria-invalid={invalid ? 'true' : undefined}
+                    aria-label="Select date and time"
+                    disabled={disabled}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -131,18 +141,21 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                     icon={tab === 'time' ? "clock" : "calendar"}
                     size={size}
                     fillMode={fillMode}
+                    tabIndex={-1}
+                    aria-label="Select date and time"
+                    disabled={disabled}
                 />
             </Input>
             {opened &&
-                <Popup className="k-datetime-container k-datetimepicker-popup" dir={dir}>
+                <Popup id={popupId} className="k-datetime-container k-datetimepicker-popup" dir={dir}>
                     <DateTimeSelector size={size} tab={tab} dir={dir} />
                 </Popup>
             }
             {adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings}
+                <ActionSheet adaptive={true} id={popupId} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />
@@ -168,5 +181,35 @@ DateTimePicker.className = DATETIMEPICKER_CLASSNAME;
 DateTimePicker.defaultOptions = defaultOptions;
 DateTimePicker.moduleName = DATETIMEPICKER_MODULE_NAME;
 DateTimePicker.folderName = DATETIMEPICKER_FOLDER_NAME;
+
+/**
+ * Accessibility specification for DateTimePicker.
+ *
+ * @accessibility
+ * - Input has role=combobox with aria-haspopup=dialog
+ * - aria-expanded indicates popup visibility
+ * - Icon button has tabindex=-1 and aria-label
+ * - Calendar popup follows Calendar ARIA spec
+ * - Date/Time view chooser follows ButtonGroup spec
+ * - Adaptive mode follows ActionSheet ARIA spec
+ *
+ * @wcag 4.1.2 Name, Role, Value - combobox pattern for date/time selection
+ */
+DateTimePicker.ariaSpec = {
+    selector: '.k-datetimepicker',
+    rules: [
+        { selector: '.k-datetimepicker .k-input-inner', attribute: 'role=combobox', usage: 'The input element follows the combobox specification.' },
+        { selector: '.k-datetimepicker .k-input-inner', attribute: 'aria-haspopup=dialog', usage: 'Indicates the component has a Dialog Popup.' },
+        { selector: '.k-datetimepicker .k-input-inner', attribute: 'aria-expanded=true/false', usage: 'Announces whether the Popup is visible or not.' },
+        { selector: '.k-datetimepicker .k-input-inner', attribute: 'aria-controls (when open)', usage: 'Points to the popup element containing the calendar or time selector.' },
+        { selector: '.k-datetimepicker .k-input-inner', attribute: 'aria-activedescendant (when open)', usage: 'Points to the focused item in the Calendar or Time Popup.' },
+        { selector: '.k-datetimepicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'The input needs an accessible name.' },
+        { selector: '.k-invalid .k-input-inner', attribute: 'aria-invalid=true', usage: 'Rendered only when the picker is in form and announces invalid state.' },
+        { selector: '.k-disabled .k-input-inner', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
+        { selector: '.k-datetimepicker .k-input-button', attribute: 'tabindex=-1', usage: 'Button element must not be focusable.' },
+        { selector: '.k-datetimepicker .k-input-button', attribute: 'aria-label', usage: 'The button needs an accessible name.' },
+        { selector: '.k-datetimepicker.k-disabled .k-button', attribute: 'disabled or aria-disabled', usage: 'Rendered only when the picker is disabled.' },
+    ]
+};
 
 export default DateTimePicker;

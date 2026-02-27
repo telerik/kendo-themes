@@ -15,6 +15,6 @@ No role attribute is implemented as the `html input type="text"` element is suff
 |  | `aria-required=true` | The attribute is rendered only when the OTP is in a `form` HTML element and announces the required state of the component. |
 |  | `aria-describedby=.k-form-hint id/.k-form-error id` | Points to the hint for the input, or if the input is invalid, to the error message. This attribute should only be present when a hint is set or when the input is invalid. |
 |  | `autocomplete=off` | Sets the default autocomplete for the input. |
-| `.k-otp.k-invalid .k-otp-input > .k-input-inner,.k-otp.ng-invalid .k-otp-input > .k-input-inner` | `aria-invalid=true` | The attribute is rendered only when the OTP is in a form and announces the valid state of the component. |
+| `.k-otp.k-invalid .k-otp-input > .k-input-inner,.k-otp.ng-invalid .k-otp-input > .k-input-inner` | `aria-invalid=true` | The attribute is rendered only when the OTP is in a form and announces the invalid state of the component. |
 | `.k-otp.k-disabled .k-otp-input > .k-input-inner` | `disabled=disabled` or `aria-disabled=true` | The attribute is rendered only when the OTP is disabled. |
 

@@ -20,7 +20,7 @@ The following table summarizes the selectors and attributes supported by the Dro
 |  | `aria-readonly=true` | The attribute is rendered only when the DropDownList is read-only. |
 |  | `aria-busy=true` | The attribute is rendered only when the DropDownList is loading data. |
 |  | `tabindex=0` | The element must be focusable. |
-| `.k-dropdownlist.k-invalid .k-input-inner,.k-dropdownlist.ng-invalid .k-input-inner` | `aria-invalid=true` | The attribute is rendered only when the DropDownList is in a form, and announces the valid state of the component. |
+| `.k-dropdownlist.k-invalid .k-input-inner,.k-dropdownlist.ng-invalid .k-input-inner` | `aria-invalid=true` | The attribute is rendered only when the DropDownList is in a form, and announces the invalid state of the component. |
 | `.k-dropdownlist.k-disabled` | `aria-disabled=true` | The attribute is rendered only when the DropDownList is disabled. |
 | `.k-input-button` | `role=button` or `nodeName=button` | The element must either be a `<button>` element or must have the `role="button"` assigned. |
 |  | `aria-label` | The button requires an accessible name that will be assigned to it. |

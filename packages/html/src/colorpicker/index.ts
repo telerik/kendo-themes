@@ -5,4 +5,5 @@ export * from './templates/colorpicker-popup-palette';
 export * from './templates/colorpicker-adaptive';
 export * from './templates/colorpicker-adaptive-gradient';
 export * from './templates/colorpicker-adaptive-palette';
+export * from './templates/colorpicker-disabled';
 export * from './demos/colorpicker';

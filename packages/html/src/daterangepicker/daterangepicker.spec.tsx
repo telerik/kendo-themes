@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
+import { classNames, stateClassNames, States, Size, Roundness, FillMode, nextId } from '../misc';
 import { DateInput } from '../dateinput';
 import { FloatingLabel } from '../floating-label';
 import { Button } from '../button';
@@ -65,6 +65,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
         ...other
     } = props;
 
+    const popupId = nextId('daterangepicker-popup');
 
     return (
         <>
@@ -84,6 +85,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         size={size}
                         rounded={rounded}
                         fillMode={fillMode}
+                        aria-label="Start date"
                     />
                 </FloatingLabel>
                 {swapButton && (
@@ -93,6 +95,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         fillMode="flat"
                         icon="arrows-swap"
                         iconClassName="k-rotate-90"
+                        aria-label="Swap dates"
                     />
                 )}
                 <FloatingLabel label="End">
@@ -102,6 +105,7 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                         size={size}
                         rounded={rounded}
                         fillMode={fillMode}
+                        aria-label="End date"
                     />
                 </FloatingLabel>
             </span>
@@ -111,10 +115,10 @@ export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDa
                 </Popup>
             }
             {adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings}
+                <ActionSheet adaptive={true} id={popupId} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />
@@ -141,5 +145,22 @@ DateRangePicker.className = DATERANGEPICKER_CLASSNAME;
 DateRangePicker.defaultOptions = defaultOptions;
 DateRangePicker.moduleName = DATERANGEPICKER_MODULE_NAME;
 DateRangePicker.folderName = DATERANGEPICKER_FOLDER_NAME;
+
+/**
+ * Accessibility specification for DateRangePicker.
+ *
+ * @accessibility
+ * - Contains two DateInput elements (start and end)
+ * - Calendar popup follows MultiViewCalendar ARIA spec
+ * - Adaptive mode follows ActionSheet ARIA spec
+ *
+ * @wcag 4.1.2 Name, Role, Value - combobox pattern for date range selection
+ */
+DateRangePicker.ariaSpec = {
+    selector: '.k-daterangepicker',
+    rules: [
+        { selector: '.k-daterangepicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'Each date input needs an accessible name.' },
+    ]
+};
 
 export default DateRangePicker;

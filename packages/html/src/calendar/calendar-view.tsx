@@ -5,6 +5,10 @@ const CALENDARVIEW_CLASSNAME = `k-calendar-view`;
 export type KendoCalendarViewProps = {
     orientation?: 'vertical' | 'horizontal',
     calendarView?: 'month' | 'year' | 'decade' | 'century';
+    /** @aria When true, this view acts as the grid root (multiview/range calendar) */
+    gridRole?: boolean;
+    /** @aria aria-labelledby pointing to the calendar title */
+    ariaLabelledBy?: string;
 };
 
 const defaultOptions = {
@@ -19,6 +23,8 @@ export const CalendarView = (
     const {
         orientation = defaultOptions.orientation,
         calendarView = defaultOptions.calendarView,
+        gridRole,
+        ariaLabelledBy,
         ...other
     } = props;
 
@@ -35,7 +41,12 @@ export const CalendarView = (
                     'k-hstack': orientation === 'horizontal',
                     'k-vstack': orientation === 'vertical',
                 }
-            )}>
+            )}
+            {...(gridRole ? {
+                role: 'grid',
+                'aria-labelledby': ariaLabelledBy,
+                tabIndex: 0
+            } : {})}>
             {props.children}
         </div>
     );

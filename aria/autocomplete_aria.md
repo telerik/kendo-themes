@@ -20,7 +20,7 @@ The following table summarizes the selectors and attributes supported by the Aut
 |  | `readonly` or `aria-readonly` | The attribute is rendered only when the AutoComplete is read-only. |
 |  | `aria-busy=true` | The attribute is rendered only when the AutoComplete is loading data. |
 |  | `tabindex=0` | The element must be focusable. |
-| `.k-autocomplete.k-invalid .k-input-inner,.k-autocomplete.ng-invalid .k-input-inner` | `aria-invalid=true` | The attribute is rendered only when the AutoComplete is in a form and announces the valid state of the component. |
+| `.k-autocomplete.k-invalid .k-input-inner,.k-autocomplete.ng-invalid .k-input-inner` | `aria-invalid=true` | The attribute is rendered only when the AutoComplete is in a form and announces the invalid state of the component. |
 | `.k-autocomplete.k-disabled .k-input-inner` | `disabled=disabled` or `aria-disabled=true` | The attribute is rendered only when the AutoComplete is disabled. |
 
 ### Popup Listbox

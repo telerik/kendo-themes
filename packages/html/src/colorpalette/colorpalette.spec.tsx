@@ -72,6 +72,10 @@ export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPal
     return (
         <div
             {...other}
+            role="grid"
+            aria-label="Color palette"
+            tabIndex={0}
+            aria-disabled={disabled ? 'true' : undefined}
             className={classNames(
                 props.className,
                 COLORPALETTE_CLASSNAME,
@@ -81,7 +85,7 @@ export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPal
                 optionClassNames(COLORPALETTE_CLASSNAME, { size }),
             )}>
 
-            <table className="k-colorpalette-table">
+            <table className="k-colorpalette-table" role="none">
                 <tbody>
                     {newChildren.length > 0 ? newChildren : props.children}
                 </tbody>
@@ -97,5 +101,34 @@ ColorPalette.className = COLORPALETTE_CLASSNAME;
 ColorPalette.defaultOptions = defaultOptions;
 ColorPalette.moduleName = COLORPALETTE_MODULE_NAME;
 ColorPalette.folderName = COLORPALETTE_FOLDER_NAME;
+
+/**
+ * Accessibility specification for ColorPalette.
+ *
+ * @accessibility
+ * - Wrapper has role=grid with aria-label and tabindex=0
+ * - Table has role=none to negate default semantics
+ * - Rows have role=row
+ * - Tiles have role=gridcell with aria-label for color value
+ * - Selected tile has aria-selected=true
+ * - Disabled palette has aria-disabled=true
+ *
+ * @wcag 4.1.2 Name, Role, Value - grid pattern for color selection
+ */
+ColorPalette.ariaSpec = {
+    selector: '.k-colorpalette',
+    rules: [
+        { selector: '.k-colorpalette', attribute: 'role=grid', usage: 'The focusable wrapper announces its role as a grid.' },
+        { selector: '.k-colorpalette', attribute: 'aria-label or aria-labelledby', usage: 'The component needs an accessible name including the currently selected value.' },
+        { selector: '.k-colorpalette', attribute: 'aria-activedescendant', usage: 'Points to the focused cell in the table.' },
+        { selector: '.k-colorpalette', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
+        { selector: '.k-colorpalette.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the ColorPalette is disabled.' },
+        { selector: '.k-colorpalette-table', attribute: 'role=none or role=presentation', usage: 'Negates the default role of the table element.' },
+        { selector: '.k-colorpalette-table>tbody>tr', attribute: 'role=row', usage: 'Required as the semantic role of the parent table has been removed.' },
+        { selector: '.k-colorpalette-tile', attribute: 'role=gridcell', usage: 'Required as the semantic role of the parent table has been removed.' },
+        { selector: '.k-colorpalette-tile', attribute: 'aria-label or title', usage: 'The text representation of the color value for the current cell.' },
+        { selector: '.k-colorpalette-tile.k-selected', attribute: 'aria-selected=true', usage: 'Present on the currently selected cell.' },
+    ]
+};
 
 export default ColorPalette;

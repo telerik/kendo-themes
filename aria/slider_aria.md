@@ -9,7 +9,7 @@ This section lists the selectors, attributes, and behavior patterns supported by
 | -------- | --------- | ----- |
 | `.k-draghandle` | `role=slider` | Sets the proper role for Slider. |
 |  | `aria-label` or `aria-labelledby` or `title` | The Slider needs an accessible name to be assigned to it. |
-|  | `aria-invalid=true` | Attribute is rendered only when the Slider is in form and announces the valid state of the component. |
+|  | `aria-invalid=true` | Attribute is rendered only when the Slider is in form and announces the invalid state of the component. |
 | `.k-draghandle:not(.k-hsv-draghandle)` | `aria-valuenow` | Specifies the currently selected value in the Slider. |
 |  | `aria-valuemin` | Specifies the minimum available value in the Slider. |
 |  | `aria-valuemax` | Specifies the maximum available value in the Slider. |

@@ -68,6 +68,7 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
                 }}>
                 <div
                     {...other}
+                    id={id}
                     role="dialog"
                     aria-modal={overlay ? "true" : undefined}
                     aria-labelledby={titleId}

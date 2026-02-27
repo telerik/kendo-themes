@@ -70,12 +70,18 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
         hoverHandle,
         focusHandle,
         canvasOrientation = defaultOptions.canvasOrientation,
+        role: roleProp,
+        tabIndex: tabIndexProp,
         ...other
     } = props;
 
     return (
         <div
             {...other}
+            role={roleProp ?? 'textbox'}
+            aria-label={roleProp === 'none' ? undefined : 'Color gradient'}
+            tabIndex={tabIndexProp ?? 0}
+            aria-disabled={disabled ? 'true' : undefined}
             className={classNames(
                 props.className,
                 COLOR_GRADIENT_CLASSNAME,
@@ -99,7 +105,15 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                                     'k-hover': hoverHandle,
                                     'k-focus': focusHandle
                                 }
-                            )} style={dragHandleStyle} ></div>
+                            )} style={dragHandleStyle}
+                            role="slider"
+                            aria-orientation={"undefined" as React.AriaAttributes['aria-orientation']}
+                            aria-label="Color well with two-dimensional slider for selecting saturation and lightness"
+                            aria-valuetext="X: 73, Y: 50"
+                            aria-valuenow={50}
+                            aria-valuemin={0}
+                            aria-valuemax={100}
+                            ></div>
                         </div>
                     </div>
                     <div className="k-hsv-controls k-hstack">
@@ -122,7 +136,15 @@ export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorG
                                     'k-hover': hoverHandle,
                                     'k-focus': focusHandle
                                 }
-                            )} style={dragHandleStyle} ></div>
+                            )} style={dragHandleStyle}
+                            role="slider"
+                            aria-orientation={"undefined" as React.AriaAttributes['aria-orientation']}
+                            aria-label="Color well with two-dimensional slider for selecting saturation and lightness"
+                            aria-valuetext="X: 73, Y: 50"
+                            aria-valuenow={50}
+                            aria-valuemin={0}
+                            aria-valuemax={100}
+                            ></div>
                         </div>
                     </div>
                     <div className="k-hsv-controls k-vstack">
@@ -146,5 +168,35 @@ ColorGradient.className = COLOR_GRADIENT_CLASSNAME;
 ColorGradient.defaultOptions = defaultOptions;
 ColorGradient.moduleName = COLORGRADIENT_MODULE_NAME;
 ColorGradient.folderName = COLORGRADIENT_FOLDER_NAME;
+
+/**
+ * Accessibility specification for ColorGradient.
+ *
+ * @accessibility
+ * - Wrapper has role=textbox with aria-label and tabindex=0
+ * - HSV draghandle has aria-orientation=undefined, aria-label, aria-valuetext
+ * - Disabled state uses aria-disabled=true
+ * - Slider drag handles follow Slider ARIA spec
+ * - NumericTextbox inputs need aria-label for channel names
+ *
+ * @wcag 4.1.2 Name, Role, Value - textbox pattern for color value
+ */
+ColorGradient.ariaSpec = {
+    selector: '.k-colorgradient',
+    rules: [
+        { selector: '.k-colorgradient', attribute: 'role=textbox', usage: 'The focusable wrapper should be considered a textbox with a value that could be submitted.' },
+        { selector: '.k-colorgradient', attribute: 'aria-label or aria-labelledby', usage: 'The component needs an accessible name including the currently selected value.' },
+        { selector: '.k-colorgradient', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
+        { selector: '.k-colorgradient.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the ColorGradient is disabled.' },
+        { selector: '.k-hsv-draghandle', attribute: 'role=slider', usage: 'The 2D draghandle must have slider role for ARIA-allowed attributes.' },
+        { selector: '.k-hsv-draghandle', attribute: 'aria-orientation=undefined', usage: 'The implicit orientation for the slider must be removed for the 2D handle.' },
+        { selector: '.k-hsv-draghandle', attribute: 'aria-label', usage: 'Must provide information about the purpose of the slider and the currently selected color.' },
+        { selector: '.k-hsv-draghandle', attribute: 'aria-valuetext', usage: 'Must specify the values on both X and Y axis.' },
+        { selector: '.k-hsv-draghandle', attribute: 'aria-valuenow', usage: 'Required by the slider role.' },
+        { selector: '.k-hsv-draghandle', attribute: 'aria-valuemin', usage: 'Required by the slider role.' },
+        { selector: '.k-hsv-draghandle', attribute: 'aria-valuemax', usage: 'Required by the slider role.' },
+        { selector: '.k-numerictextbox>.k-input-inner', attribute: 'aria-label', usage: 'Must provide the name of the channel (red, green, blue, or alpha).' },
+    ]
+};
 
 export default ColorGradient;

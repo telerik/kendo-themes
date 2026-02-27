@@ -16,7 +16,7 @@ This section lists the selectors, attributes, and behavior patterns supported by
 |  | `aria-controls=.k-calendar-container id` | Points to the popup element. Signifies that the `combobox` element controls the Calendar `grid`. |
 |  | `aria-activedescendant=.k-calendar-td.k-focus id` | Points to the focused item (date/month/year/hour/minute) in the Calendar Popup or the Time Popup. Should only be present when the Popup is open. |
 |  | `readonly=readonly` or `aria-readonly=true` | Attribute is rendered only when the DateTimePicker is readonly. |
-|  | `aria-invalid=true` | Attribute is rendered only when the DateTimePicker is in form and announces the valid state of the component. |
+|  | `aria-invalid=true` | Attribute is rendered only when the DateTimePicker is in form and announces the invalid state of the component. |
 |  | `tabindex=0` | The element should be focusable. |
 | `.k-disabled .k-input-inner` | `disabled=disabled` or `aria-disabled=true` | Attribute is rendered only when the DateTimePicker is disabled. |
 | `.k-input-button` | `role=button` or `nodeName=button` | The element should either be a `<button>` element or should have `role="button"` assigned. |

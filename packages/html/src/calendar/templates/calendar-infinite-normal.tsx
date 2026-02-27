@@ -15,7 +15,7 @@ export const CalendarInfiniteNormal = ({ firstCaption = "January 2021", secondCa
                     <col />
                 </colgroup>
                 <CalendarTbody>
-                    <CalendarTableRow>
+                    <CalendarTableRow aria-hidden="true">
                         <CalendarCaptionCell scope="col" colSpan={7} text={firstCaption}></CalendarCaptionCell>
                     </CalendarTableRow>
                     <CalendarTableRow>
@@ -74,7 +74,7 @@ export const CalendarInfiniteNormal = ({ firstCaption = "January 2021", secondCa
                     </CalendarTableRow>
                 </CalendarTbody>
                 <CalendarTbody>
-                    <CalendarTableRow>
+                    <CalendarTableRow aria-hidden="true">
                         <CalendarCaptionCell scope="col" colSpan={7} text={secondCaption}></CalendarCaptionCell>
                     </CalendarTableRow>
                 </CalendarTbody>

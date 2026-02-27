@@ -3,4 +3,5 @@ export * from './color-input';
 export * from './color-contrast';
 export * from './templates/colorgradient-normal';
 export * from './templates/colorgradient-contrast';
+export * from './templates/colorgradient-disabled';
 export * from './demos/colorgradient';
