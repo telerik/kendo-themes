@@ -1,7 +1,7 @@
 import { Icon } from '../icon';
 import { classNames, optionClassNames, stateClassNames, variantClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
-import { KendoComponent } from '../_types/component';
+import { KendoComponent, KendoBaseProps } from '../_types/component';
 import { BUTTON_FOLDER_NAME, BUTTON_MODULE_NAME } from './constants';
 export const BUTTON_CLASSNAME = `k-button`;
 
@@ -86,9 +86,11 @@ const defaultOptions = {
 export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoButtonProps &
         KendoButtonState &
+        KendoBaseProps &
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
+        as: Component = 'button',
         size,
         rounded,
         fillMode,
@@ -113,7 +115,7 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
     const hasChildren = props.children !== undefined;
 
     return (
-        <button
+        <Component
             className={classNames(
                 className,
                 BUTTON_CLASSNAME,
@@ -158,7 +160,7 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
 
             {showArrow && (<span className="k-menu-button-arrow k-button-arrow"><Icon icon= {arrowIconName} /></span>)}
 
-        </button>
+        </Component>
     );
 };
 

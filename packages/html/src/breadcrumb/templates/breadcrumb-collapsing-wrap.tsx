@@ -41,7 +41,7 @@ export const BreadcrumbCollapsingWrap = ({ dir, ...other }: any) => (
                     </BreadcrumbItem>
                     <BreadcrumbItem last>
                         <Icon className="k-breadcrumb-delimiter-icon" icon={`chevron-${dir === "rtl" ? "left" : "right"}`} size="xsmall" />
-                        <BreadcrumbLink>
+                        <BreadcrumbLink last>
                             <BreadcrumbItemText text="Fifth Item"></BreadcrumbItemText>
                         </BreadcrumbLink>
                     </BreadcrumbItem>

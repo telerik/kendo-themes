@@ -60,7 +60,8 @@ export const DrawerItem: KendoComponent<KendoDrawerItemProps & KendoDrawerItemSt
             {
                 [`k-level-${level}`]: level || level === 0
             }
-        )}>
+        )}
+        role="menuitem">
             {icon && ( <Icon icon= {icon}/> )}
             {text && ( <span className="k-item-text">{text}</span> )}
             {hasChildren && (

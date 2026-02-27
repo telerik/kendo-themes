@@ -36,7 +36,9 @@ export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttribute
                 optionClassNames(MENULIST_CLASSNAME, {
                     size,
                 })
-            )}>
+            )}
+            role="menu"
+        >
             {children}
         </ul>
     );

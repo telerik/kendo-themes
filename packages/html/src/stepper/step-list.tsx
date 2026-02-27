@@ -9,6 +9,8 @@ const options = {};
 export type KendoStepListProps = {
     style?: React.CSSProperties;
     orientation?: "horizontal" | "vertical";
+    /** @aria When true, renders with role=tablist for wizard context */
+    wizardContext?: boolean;
 }
 
 const defaultOptions = {
@@ -22,6 +24,7 @@ export const StepList = (
     const {
         style,
         orientation = defaultOptions.orientation,
+        wizardContext,
         ...other
     } = props;
 
@@ -35,7 +38,9 @@ export const StepList = (
                 {
                     [`${STEPLIST_CLASSNAME}-${orientation}`]: orientation,
                 }
-            )}>
+            )}
+            {...(wizardContext && { role: 'tablist' })}
+        >
             {props.children}
         </ol>
     );

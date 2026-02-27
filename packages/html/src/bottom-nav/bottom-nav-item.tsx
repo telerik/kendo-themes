@@ -44,7 +44,11 @@ export const BottomNavItem = (
                 selected,
                 disabled
             })
-        )}>
+        )}
+            role="link"
+            {...(selected && { 'aria-current': 'true' })}
+            {...(!text && !link && icon && { 'aria-label': icon })}
+        >
             { icon && <Icon className="k-bottom-nav-item-icon" icon={icon} size="xlarge" /> }
 
             { text && <span className="k-bottom-nav-item-text">{text}</span> }

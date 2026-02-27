@@ -1,6 +1,6 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
-import { classNames, optionClassNames, ThemeColor } from '../misc';
+import { classNames, optionClassNames, ThemeColor, nextId } from '../misc';
 import { WindowContent } from '../window/window-content.spec';
 
 import { KendoComponent } from '../_types/component';
@@ -50,6 +50,9 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
         ...other
     } = props;
 
+    const titlebarId = title !== undefined ? nextId('dialog-titlebar') : undefined;
+    const contentId = nextId('dialog-content');
+
     return (
         <div className="k-dialog-wrapper">
             { modal &&
@@ -61,21 +64,25 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
                     DIALOG_CLASSNAME,
                     "k-window",
                     optionClassNames(DIALOG_CLASSNAME, { themeColor })
-                )}>
+                )}
+                role="dialog"
+                aria-labelledby={titlebarId}
+                aria-describedby={contentId}
+                {...(modal && { 'aria-modal': 'true' })}>
 
                 {(title !== undefined || actions) &&
-                <div className="k-window-titlebar k-dialog-titlebar">
+                <div className="k-window-titlebar k-dialog-titlebar" id={titlebarId}>
                     {title !== undefined && <span className="k-window-title k-dialog-title">{title}</span>}
                     {actions && <>
                         <div className="k-window-titlebar-actions k-dialog-titlebar-actions">
                             {actions.map(actionName =>
-                                <Button key={actionName} icon={actionName} fillMode="flat" className="k-window-titlebar-action k-dialog-titlebar-action"></Button>
+                                <Button key={actionName} icon={actionName} fillMode="flat" className="k-window-titlebar-action k-dialog-titlebar-action" aria-label={actionName}></Button>
                             )}
                         </div>
                     </>}
                 </div>
                 }
-                <WindowContent className="k-dialog-content">
+                <WindowContent className="k-dialog-content" id={contentId}>
                     {props.children}
                 </WindowContent>
                 {actionButtons &&
@@ -94,5 +101,25 @@ Dialog.className = DIALOG_CLASSNAME;
 Dialog.defaultOptions = defaultOptions;
 Dialog.moduleName = DIALOG_MODULE_NAME;
 Dialog.folderName = DIALOG_FOLDER_NAME;
+
+/**
+ * Accessibility specification for Dialog.
+ *
+ * @accessibility
+ * - Dialog has role=dialog with aria-labelledby and aria-describedby
+ * - Modal dialogs have aria-modal=true
+ * - Action buttons have aria-label
+ *
+ * @wcag 4.1.2 Name, Role, Value - dialog pattern
+ */
+Dialog.ariaSpec = {
+    selector: '.k-dialog',
+    rules: [
+        { selector: '.k-dialog', attribute: 'role=dialog or role=alertdialog', usage: 'Announces the dialog or alertdialog role of the component.' },
+        { selector: '.k-dialog', attribute: 'aria-labelledby', usage: 'Associate the title of the dialog.' },
+        { selector: '.k-dialog', attribute: 'aria-describedby', usage: 'Associate the dialog content to the wrap element.' },
+        { selector: '.k-overlay + .k-dialog', attribute: 'aria-modal=true', usage: 'Announces that the dialog is modal. Attribute is added only when the dialog is modal.' },
+    ]
+};
 
 export default Dialog;

@@ -49,6 +49,7 @@ export const Splitter: KendoComponent<KendoSplitterProps & React.HTMLAttributes<
                         collapsePrev={paneProps.collapsible}
                         collapseNext={nextPaneProps.collapsible}
                         orientation={orientation}
+                        ariaLabel={`Pane separator`}
                     />
                 );
             }
@@ -77,5 +78,27 @@ Splitter.className = SPLITTER_CLASSNAME;
 Splitter.defaultOptions = defaultOptions;
 Splitter.moduleName = SPLITTER_MODULE_NAME;
 Splitter.folderName = SPLITTER_FOLDER_NAME;
+
+/**
+ * Accessibility specification for Splitter.
+ *
+ * @accessibility
+ * - Panes have role=group
+ * - SplitBar has role=separator with aria-label
+ * - Horizontal splitbars have aria-orientation=vertical
+ * - Keyboard shortcuts announced via aria-keyshortcuts
+ *
+ * @wcag 4.1.2 Name, Role, Value - separator pattern for resizable panes
+ */
+Splitter.ariaSpec = {
+    selector: '.k-splitter',
+    rules: [
+        { selector: '.k-pane', attribute: 'role=group', usage: 'Sets the proper role for the Splitter pane.' },
+        { selector: '.k-splitbar', attribute: 'role=separator', usage: 'Sets the proper role for the Splitter split-bar element.' },
+        { selector: '.k-splitbar', attribute: 'aria-label', usage: 'An accessible name for the separator.' },
+        { selector: '.k-splitbar-horizontal', attribute: 'aria-orientation=vertical', usage: 'When a splitbar separates two panes horizontally, its aria-orientation must be explicitly set to vertical.' },
+        { selector: '.k-splitbar', attribute: 'aria-keyshortcuts', usage: 'Announces available keyboard shortcuts.' },
+    ]
+};
 
 export default Splitter;

@@ -35,7 +35,9 @@ export const TabStripContent = (
                     focus,
                 }),
                 props.className
-            )}>
+            )}
+            role="tabpanel"
+        >
             {children}
         </div>
     );

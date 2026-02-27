@@ -22,25 +22,25 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
-            <div class="k-window">
+            <div class="k-window" role="dialog" aria-labelledby="k-window-title-1">
                 <div class="k-window-titlebar">
-                    <span class="k-window-title">Edit event</span>
+                    <span class="k-window-title" id="k-window-title-1">Edit event</span>
                     <div class="k-window-titlebar-actions">
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button">
+                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="window-minimize">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-window-minimize" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M416 288v64H96v-64z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button">
+                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="window">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-window" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M96 96v320h320V96zm288 288H128V192h256z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button">
+                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -160,7 +160,7 @@
                             <label class="k-form-label k-label">Repeat</label>
                             <div class="k-form-field-wrap">
                                 <div class="k-recurrence-editor">
-                                    <div class="k-scheduler-recurrence-repeat k-button-group k-button-group-stretched">
+                                    <div role="group" class="k-scheduler-recurrence-repeat k-button-group k-button-group-stretched">
                                         <button class="k-group-start k-button">
                                             <span class="k-button-text">Never</span>
                                         </button>
@@ -207,7 +207,7 @@
                                             <div class="k-form-field">
                                                 <label class="k-form-label k-label">Repeat on:</label>
                                                 <div class="k-form-field-wrap">
-                                                    <div class="k-button-group k-button-group-stretched">
+                                                    <div role="group" class="k-button-group k-button-group-stretched">
                                                         <button class="k-group-start k-button">
                                                             <span class="k-button-text">Sun</span>
                                                         </button>
@@ -237,14 +237,14 @@
                                             <div class="k-form-field">
                                                 <label class="k-form-label k-label">End</label>
                                                 <div class="k-form-field-wrap">
-                                                    <ul class="k-radio-list k-list-vertical">
-                                                        <li class="k-radio-list-item">
+                                                    <ul class="k-radio-list k-list-vertical" role="radiogroup">
+                                                        <li class="k-radio-list-item" role="none">
                                                             <span class="k-radio-wrap">
                                                                 <input id="k-endrule-never" class="k-radio" type="radio">
                                                             </span>
                                                             <label class="k-radio-label" for="k-endrule-never">Never</label>
                                                         </li>
-                                                        <li class="k-radio-list-item">
+                                                        <li class="k-radio-list-item" role="none">
                                                             <span class="k-radio-wrap">
                                                                 <input id="k-endrule-count" class="k-radio" type="radio">
                                                             </span>
@@ -270,7 +270,7 @@
                                                             </span>
                                                             <span>occurrence(s)</span>
                                                         </li>
-                                                        <li class="k-radio-list-item">
+                                                        <li class="k-radio-list-item" role="none">
                                                             <span class="k-radio-wrap">
                                                                 <input id="k-endrule-until" class="k-radio" type="radio">
                                                             </span>

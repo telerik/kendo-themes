@@ -15,6 +15,7 @@ export type KendoSplitterSplitbarProps = {
     draggable?: boolean,
     collapsePrev?: boolean;
     collapseNext?: boolean;
+    ariaLabel?: string;
 };
 
 export type KendoSplitterSplitbarState = { [K in (typeof states)[number]]?: boolean };
@@ -36,6 +37,7 @@ export const SplitterSplitbar = (
         draggable = defaultOptions.draggable,
         collapsePrev,
         collapseNext,
+        ariaLabel,
         ...other
     } = props;
 
@@ -54,7 +56,11 @@ export const SplitterSplitbar = (
                     [`${SPLITTERSPLITBAR_CLASSNAME}-draggable-${orientation}`]: draggable,
                     [`${SPLITTERSPLITBAR_CLASSNAME}-static-${orientation}`]: !draggable && !collapsePrev && !collapseNext,
                 },
-            )}>
+            )}
+            role="separator"
+            aria-label={ariaLabel}
+            {...(orientation === 'horizontal' && { 'aria-orientation': 'vertical' })}
+            aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
             {collapsePrev &&
                 <>
                     <div className="k-collapse-prev">

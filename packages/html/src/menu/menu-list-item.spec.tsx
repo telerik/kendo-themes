@@ -27,6 +27,8 @@ export type KendoMenuListItemProps = {
     dir?: "rtl" | "ltr";
     children?: React.JSX.Element[];
     popup?: React.JSX.Element;
+    /** @aria aria-expanded state for expandable items */
+    expanded?: boolean;
 };
 
 export type KendoMenuListItemState = { [K in (typeof states)[number]]?: boolean };
@@ -57,6 +59,7 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
         dir = defaultOptions.dir,
         children,
         popup,
+        expanded,
         ...other
     } = props;
 
@@ -84,7 +87,13 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
                     ["k-first"]: first,
                     ["k-last"]: last,
                 }
-            )}>
+            )}
+            role="menuitem"
+            {...(showArrow && { 'aria-haspopup': 'menu' as const })}
+            {...(showArrow && { 'aria-expanded': expanded ? 'true' : 'false' })}
+            {...(disabled && { 'aria-disabled': 'true' })}
+            {...(focus && { tabIndex: 0 })}
+        >
             <span
 
                 className={classNames(
@@ -99,7 +108,7 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
                 {icon && iconPosition === 'before' && <Icon className="k-menu-link-icon" icon={icon} />}
                 <span className="k-menu-link-text">{text}</span>
                 {icon && iconPosition === 'after' && <Icon className="k-menu-link-icon" icon={icon} />}
-                {showArrow && <span className="k-menu-expand-arrow"><Icon icon={expandArrowName} /></span>}
+                {showArrow && <span className="k-menu-expand-arrow" aria-hidden="true"><Icon icon={expandArrowName} /></span>}
             </span>
             {children}
             {popup}

@@ -75,7 +75,9 @@ export const BottomNav: KendoComponent<KendoBottomNavProps & KendoBottomNavState
             stateClassNames(BOTTOM_NAV_CLASSNAME, {
                 disabled,
             }),
-        )} dir={dir}>
+        )} dir={dir}
+            aria-label="Bottom navigation"
+        >
             {props.children}
         </nav>
     );
@@ -87,5 +89,22 @@ BottomNav.className = BOTTOM_NAV_CLASSNAME;
 BottomNav.defaultOptions = defaultOptions;
 BottomNav.moduleName = BOTTOM_NAV_MODULE_NAME;
 BottomNav.folderName = BOTTOM_NAV_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * BottomNav uses nav landmark with navigation items.
+ *
+ * - nav: aria-label="Bottom navigation"
+ * - Items: implicit link role via <a> or explicit role="link"
+ * - Selected item: aria-current="true"
+ */
+BottomNav.ariaSpec = {
+    selector: '.k-bottom-nav',
+    rules: [
+        { selector: '.k-bottom-nav', attribute: 'role=navigation or nodeName=nav', usage: 'The landmark role navigation must be assigned to the bottom navigation.' },
+        { selector: '.k-bottom-nav-item', attribute: 'role=link or nodeName=a', usage: 'Associate the link purpose of the bottom navigation items.' },
+        { selector: '.k-bottom-nav-item.k-selected', attribute: 'aria-current=true', usage: 'Indicates the selected navigation item.' },
+    ]
+};
 
 export default BottomNav;

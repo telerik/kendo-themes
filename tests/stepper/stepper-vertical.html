@@ -29,10 +29,10 @@
         <span>Icon</span>
         <span>Label</span>
         <section>
-            <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+            <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                     <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Step">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -43,14 +43,14 @@
                         </a>
                     </li>
                     <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Step 2">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">2</span>
                             </span>
                         </a>
                     </li>
                     <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Step 3">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">3</span>
                             </span>
@@ -69,10 +69,10 @@
             </nav>
         </section>
         <section>
-            <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+            <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                     <li class="k-step k-step-done k-step-first k-step-success" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Account Info with too long label">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">1</span>
                             </span>
@@ -87,7 +87,7 @@
                         </a>
                     </li>
                     <li class="k-step k-step-current k-step-error k-focus" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Personal Info">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">2</span>
                             </span>
@@ -102,7 +102,7 @@
                         </a>
                     </li>
                     <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Payment Details">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">3</span>
                             </span>
@@ -122,10 +122,10 @@
             </nav>
         </section>
         <section>
-            <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+            <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                     <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Step">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-lock" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -136,7 +136,7 @@
                         </a>
                     </li>
                     <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Step">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-user" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -147,7 +147,7 @@
                         </a>
                     </li>
                     <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Step">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-track-changes" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -170,24 +170,24 @@
             </nav>
         </section>
         <section>
-            <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+            <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                     <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Account Info">
                             <span class="k-step-label">
                                 <span class="k-step-text">Account Info</span>
                             </span>
                         </a>
                     </li>
                     <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Personal Info">
                             <span class="k-step-label">
                                 <span class="k-step-text">Personal Info</span>
                             </span>
                         </a>
                     </li>
                     <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Payment Details">
                             <span class="k-step-label">
                                 <span class="k-step-text">Payment Details</span>
                                 <span class="k-step-label-optional">(Optional)</span>
@@ -206,10 +206,10 @@
         <hr>
         <span class="col-4">Content Between Steps</span>
         <section class="col-4">
-            <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+            <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                     <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Account Info">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">1</span>
                             </span>
@@ -219,7 +219,7 @@
                         </a>
                     </li>
                     <li class="k-step k-step-current k-focus" style="height: auto;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Personal Info">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">2</span>
                             </span>
@@ -241,7 +241,7 @@
                         </div>
                     </li>
                     <li class="k-step k-step-last" style="max-height: 33.333%;">
-                        <a href="#" class="k-step-link">
+                        <a href="#" class="k-step-link" tabindex="-1" aria-label="Payment Details">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">3</span>
                             </span>

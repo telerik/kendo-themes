@@ -60,7 +60,7 @@ export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React
             role="group"
             aria-label="Date and time selector">
             <div className="k-datetime-buttongroup" role="tablist">
-                <ButtonGroup stretched>
+                <ButtonGroup stretched role="presentation">
                     <Button className="k-group-start" size={size} selected={tab === 'date'} role="tab" aria-selected={tab === 'date' ? 'true' : 'false'}>Date</Button>
                     <Button className="k-group-end" size={size} selected={tab === 'time'} role="tab" aria-selected={tab === 'time' ? 'true' : 'false'}>Time</Button>
                 </ButtonGroup>

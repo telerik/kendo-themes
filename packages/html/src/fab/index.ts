@@ -4,4 +4,5 @@ export * from './fab-item';
 export * from './templates/text-fab';
 export * from './templates/icon-fab';
 export * from './templates/icon-text-fab';
+export * from './templates/fab-disabled';
 export * from './demos/fab';

@@ -12,6 +12,8 @@ export type KendoBreadcrumbLinkProps = {
     root?: boolean;
     icon?: boolean;
     icontext?: boolean;
+    /** @aria Last item in breadcrumb gets aria-current="page" and aria-disabled="true" */
+    last?: boolean;
 };
 
 export type KendoBreadcrumbLinkState = { [K in (typeof states)[number]]?: boolean };
@@ -28,6 +30,7 @@ export const BreadcrumbLink = (
         hover,
         focus,
         disabled,
+        last,
         ...other
     } = props;
 
@@ -48,7 +51,10 @@ export const BreadcrumbLink = (
                     'k-breadcrumb-icon-link': icon,
                     'k-breadcrumb-icontext-link': icontext,
                 },
-            )}>
+            )}
+            {...(last && { 'aria-current': 'page' as const })}
+            {...(last && { 'aria-disabled': 'true' })}
+        >
             {props.children}
         </a>
     );

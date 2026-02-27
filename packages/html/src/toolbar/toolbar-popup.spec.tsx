@@ -50,7 +50,7 @@ export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAtt
                         size,
                         fillMode
                     })
-                )}>{props.children}</span>
+                )} role="toolbar">{props.children}</span>
                 : props.children
             }
 

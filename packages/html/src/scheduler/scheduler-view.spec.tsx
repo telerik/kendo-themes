@@ -14,11 +14,8 @@ export type KendoSchedulerViewProps = {
     view?: "day" | "week" | "month" | "agenda" | "timeline" | "year";
 };
 
-export const SchedulerView: KendoComponent<KendoSchedulerViewProps & ( | ( React.HTMLAttributes<HTMLDivElement> & { as: 'div' } ) | ( React.HTMLAttributes<HTMLTableElement> & { as: 'table' } ) )> = (
-    props: KendoSchedulerViewProps & (
-        | ( React.HTMLAttributes<HTMLDivElement> & { as: 'div' } )
-        | ( React.HTMLAttributes<HTMLTableElement> & { as: 'table' } )
-    )
+export const SchedulerView: KendoComponent<KendoSchedulerViewProps & React.HTMLAttributes<HTMLElement> & { as?: 'div' | 'table' }> = (
+    props: KendoSchedulerViewProps & React.HTMLAttributes<HTMLElement> & { as?: 'div' | 'table' }
 ) => {
     const {
         as: Component = 'div',

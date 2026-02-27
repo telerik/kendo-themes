@@ -6,7 +6,7 @@ export const MixedButtonGroup = (props) => (
         <>
             <Button className="k-group-start" {...props}>First</Button>
             <Button {...props} icon="star">Middle</Button>
-            <Button className="k-group-end" {...props} icon="star" />
+            <Button className="k-group-end" {...props} icon="star" aria-label="Star" />
         </>
     } />
 );

@@ -21,8 +21,8 @@
     </style>
     <div id="test-area" class="k-d-grid">
         <section>
-            <div class="k-dock-manager">
-                <div class="k-toolbar-left k-dock-manager-toolbar k-toolbar">
+            <div class="k-dock-manager" role="application" aria-live="polite">
+                <div class="k-toolbar-left k-dock-manager-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
                     <button class="k-toolbar-button  k-button k-button-sm k-button-flat">
                         <span class="k-button-text">File 3</span>
                     </button>
@@ -33,21 +33,21 @@
                 </div>
                 <div class="k-dock-manager-pane-container">
                     <div class="k-dock-manager-splitter k-splitter k-splitter-vertical k-splitter-flex">
-                        <div class="k-pane k-pane-static" style="flex-basis: 70%;">
+                        <div class="k-pane k-pane-static" role="group" style="flex-basis: 70%;">
                             <div class="k-dock-manager-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                                <div class="k-pane k-pane-static k-pane-pinned" style="flex-basis: 20%;">
+                                <div class="k-pane k-pane-static k-pane-pinned" role="group" style="flex-basis: 20%;">
                                     <div class="k-pane-scrollable">
                                         <div class="k-pane-header">
                                             <span class="k-pane-title">Tools</span>
                                             <div class="k-pane-actions">
-                                                <button class="k-button k-button-flat k-icon-button">
+                                                <button class="k-button k-button-flat k-icon-button" aria-label="Pin pane">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-pin" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32zm-128 0V96h64v160z"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
-                                                <button class="k-button k-button-flat k-icon-button">
+                                                <button class="k-button k-button-flat k-icon-button" aria-label="More actions">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -59,14 +59,14 @@
                                         <div class="k-pane-content">Some tools.</div>
                                     </div>
                                 </div>
-                                <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                                <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                                     <div class="k-resize-handle"></div>
                                 </div>
-                                <div class="k-pane k-pane-static k-pane-tabbed" style="flex-basis: 40%;">
+                                <div class="k-pane k-pane-static k-pane-tabbed" role="group" style="flex-basis: 40%;">
                                     <div class="k-tabstrip k-tabstrip-top" style="height: 100%;">
                                         <div class="k-tabstrip-items-wrapper k-hstack">
-                                            <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
-                                                <li class="k-tabstrip-item k-active k-first">
+                                            <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                                                <li class="k-tabstrip-item k-active k-first" role="tab" aria-selected="true">
                                                     <span class="k-link">
                                                         <span class="k-link-text">File 1</span>
                                                     </span>
@@ -87,7 +87,7 @@
                                                         </button>
                                                     </span>
                                                 </li>
-                                                <li class="k-tabstrip-item k-last">
+                                                <li class="k-tabstrip-item k-last" role="tab">
                                                     <span class="k-link">
                                                         <span class="k-link-text">File 2</span>
                                                     </span>
@@ -110,19 +110,19 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="k-tabstrip-content k-active">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit porro optio veritatis obcaecati nostrum molestias dolor maxime! Molestias ducimus placeat quia possimus esse atque odio, a recusandae iste exercitationem. Sapiente fugit assumenda at explicabo quos consequuntur dicta cumque ex aspernatur, nesciunt itaque doloremque exercitationem eaque iusto. Iste non officia consequatur quis veritatis magni, quo autem dolores numquam dignissimos nemo.</div>
+                                        <div class="k-tabstrip-content k-active" role="tabpanel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit porro optio veritatis obcaecati nostrum molestias dolor maxime! Molestias ducimus placeat quia possimus esse atque odio, a recusandae iste exercitationem. Sapiente fugit assumenda at explicabo quos consequuntur dicta cumque ex aspernatur, nesciunt itaque doloremque exercitationem eaque iusto. Iste non officia consequatur quis veritatis magni, quo autem dolores numquam dignissimos nemo.</div>
                                     </div>
                                 </div>
-                                <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                                <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                                     <div class="k-resize-handle"></div>
                                 </div>
-                                <div class="k-pane">
+                                <div class="k-pane" role="group">
                                     <div class="k-dock-manager-splitter k-splitter k-splitter-vertical k-splitter-flex">
-                                        <div class="k-pane k-pane-static k-pane-tabbed" style="flex-basis: 50%;">
+                                        <div class="k-pane k-pane-static k-pane-tabbed" role="group" style="flex-basis: 50%;">
                                             <div class="k-tabstrip k-tabstrip-top" style="height: 100%;">
                                                 <div class="k-tabstrip-items-wrapper k-hstack">
-                                                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
-                                                        <li class="k-tabstrip-item k-active k-first">
+                                                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                                                        <li class="k-tabstrip-item k-active k-first" role="tab" aria-selected="true">
                                                             <span class="k-link">
                                                                 <span class="k-link-text">File 5</span>
                                                             </span>
@@ -143,7 +143,7 @@
                                                                 </button>
                                                             </span>
                                                         </li>
-                                                        <li class="k-tabstrip-item k-last">
+                                                        <li class="k-tabstrip-item k-last" role="tab">
                                                             <span class="k-link">
                                                                 <span class="k-link-text">File 6</span>
                                                             </span>
@@ -166,25 +166,25 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="k-tabstrip-content k-active">Properties content.</div>
+                                                <div class="k-tabstrip-content k-active" role="tabpanel">Properties content.</div>
                                             </div>
                                         </div>
-                                        <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+                                        <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" role="separator" aria-label="Pane separator" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                                             <div class="k-resize-handle"></div>
                                         </div>
-                                        <div class="k-pane k-pane-pinned">
+                                        <div class="k-pane k-pane-pinned" role="group">
                                             <div class="k-pane-scrollable">
                                                 <div class="k-pane-header">
                                                     <span class="k-pane-title">Layers</span>
                                                     <div class="k-pane-actions">
-                                                        <button class="k-button k-button-flat k-icon-button">
+                                                        <button class="k-button k-button-flat k-icon-button" aria-label="Pin pane">
                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-pin" aria-hidden="true">
                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                     <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32zm-128 0V96h64v160z"></path>
                                                                 </svg>
                                                             </span>
                                                         </button>
-                                                        <button class="k-button k-button-flat k-icon-button">
+                                                        <button class="k-button k-button-flat k-icon-button" aria-label="More actions">
                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                     <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -200,22 +200,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+                        <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" role="separator" aria-label="Pane separator" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                             <div class="k-resize-handle"></div>
                         </div>
-                        <div class="k-pane k-pane-pinned">
+                        <div class="k-pane k-pane-pinned" role="group">
                             <div class="k-pane-scrollable">
                                 <div class="k-pane-header">
                                     <span class="k-pane-title">Console</span>
                                     <div class="k-pane-actions">
-                                        <button class="k-button k-button-flat k-icon-button">
+                                        <button class="k-button k-button-flat k-icon-button" aria-label="Pin pane">
                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-pin" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32zm-128 0V96h64v160z"></path>
                                                 </svg>
                                             </span>
                                         </button>
-                                        <button class="k-button k-button-flat k-icon-button">
+                                        <button class="k-button k-button-flat k-icon-button" aria-label="More actions">
                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>

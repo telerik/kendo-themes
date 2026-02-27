@@ -30,10 +30,10 @@
             <div class="wrapper">
                 <p>Vertical wizard; Content is placed to the right (Default)</p>
                 <div id="wizard" class="k-wizard k-wizard-vertical k-wizard-right">
-                    <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+                    <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                         <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                             <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" tabindex="-1" aria-label="Step">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -44,14 +44,14 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Step 2">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">2</span>
                                     </span>
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" tabindex="-1" aria-label="Step 3">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -69,7 +69,7 @@
                         </div>
                     </nav>
                     <div class="k-wizard-steps">
-                        <div class="k-wizard-step k-focus">
+                        <div class="k-wizard-step k-focus" role="tabpanel" aria-label="Step" tabindex="0">
                             <div class="k-wizard-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
                             <div class="k-wizard-buttons">
                                 <span class="k-wizard-buttons-left">
@@ -91,10 +91,10 @@
             <div class="wrapper">
                 <p>Small height set</p>
                 <div id="wizard" class="k-wizard k-wizard-vertical k-wizard-right" style="height: 200px;">
-                    <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+                    <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                         <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                             <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" tabindex="-1" aria-label="Step">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -105,14 +105,14 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Step 2">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">2</span>
                                     </span>
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" tabindex="-1" aria-label="Step 3">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -130,7 +130,7 @@
                         </div>
                     </nav>
                     <div class="k-wizard-steps">
-                        <div class="k-wizard-step">
+                        <div class="k-wizard-step" role="tabpanel" aria-label="Step" tabindex="0">
                             <div class="k-wizard-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
                             <div class="k-wizard-buttons">
                                 <span class="k-wizard-buttons-left">
@@ -152,10 +152,10 @@
             <div class="wrapper">
                 <p>Short content</p>
                 <div id="wizard" class="k-wizard k-wizard-vertical k-wizard-right">
-                    <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
-                        <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
-                            <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                    <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+                        <ol class="k-step-list k-step-list-vertical" role="tablist" style="grid-row: 1 / -1;">
+                            <li class="k-step k-step-done k-step-first" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" tabindex="-1" aria-label="Step">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -165,15 +165,15 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                            <li class="k-step k-step-current k-focus" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" aria-current="true" aria-selected="true" tabindex="0" aria-label="Step 2">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">2</span>
                                     </span>
                                 </a>
                             </li>
-                            <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                            <li class="k-step k-step-last k-step-optional" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" tabindex="-1" aria-label="Step 3">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -183,7 +183,7 @@
                                 </a>
                             </li>
                         </ol>
-                        <div class="k-progressbar k-progressbar-vertical k-progressbar-reverse" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
+                        <div aria-hidden="true" class="k-progressbar k-progressbar-vertical k-progressbar-reverse" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                             <span class="k-progress-status-wrap k-progress-start"></span>
                             <div class="k-progressbar-value k-selected">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -191,7 +191,7 @@
                         </div>
                     </nav>
                     <div class="k-wizard-steps">
-                        <div class="k-wizard-step">
+                        <div class="k-wizard-step" role="tabpanel" aria-label="Step 2 of 3" tabindex="0">
                             <div class="k-wizard-content">Short content</div>
                             <div class="k-wizard-buttons">
                                 <span class="k-wizard-buttons-left">
@@ -213,10 +213,10 @@
             <div class="wrapper">
                 <p>Short content; Big height set</p>
                 <div id="wizard" class="k-wizard k-wizard-vertical k-wizard-right" style="height: 280px;">
-                    <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
-                        <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
-                            <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                    <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+                        <ol class="k-step-list k-step-list-vertical" role="tablist" style="grid-row: 1 / -1;">
+                            <li class="k-step k-step-done k-step-first" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" tabindex="-1" aria-label="Step">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -226,15 +226,15 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                            <li class="k-step k-step-current k-focus" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" aria-current="true" aria-selected="true" tabindex="0" aria-label="Step 2">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">2</span>
                                     </span>
                                 </a>
                             </li>
-                            <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                            <li class="k-step k-step-last k-step-optional" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" tabindex="-1" aria-label="Step 3">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -244,7 +244,7 @@
                                 </a>
                             </li>
                         </ol>
-                        <div class="k-progressbar k-progressbar-vertical k-progressbar-reverse" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
+                        <div aria-hidden="true" class="k-progressbar k-progressbar-vertical k-progressbar-reverse" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                             <span class="k-progress-status-wrap k-progress-start"></span>
                             <div class="k-progressbar-value k-selected">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -252,7 +252,7 @@
                         </div>
                     </nav>
                     <div class="k-wizard-steps">
-                        <div class="k-wizard-step">
+                        <div class="k-wizard-step" role="tabpanel" aria-label="Step 2 of 3" tabindex="0">
                             <div class="k-wizard-content">Short content</div>
                             <div class="k-wizard-buttons">
                                 <span class="k-wizard-buttons-left">
@@ -276,10 +276,10 @@
             <div class="wrapper">
                 <p>Vertical wizard; Content is placed to the left</p>
                 <div id="wizard" class="k-wizard k-wizard-vertical k-wizard-left">
-                    <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+                    <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                         <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                             <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" tabindex="-1" aria-label="Step">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -290,14 +290,14 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Step 2">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">2</span>
                                     </span>
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" tabindex="-1" aria-label="Step 3">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -315,7 +315,7 @@
                         </div>
                     </nav>
                     <div class="k-wizard-steps">
-                        <div class="k-wizard-step k-focus">
+                        <div class="k-wizard-step k-focus" role="tabpanel" aria-label="Step" tabindex="0">
                             <div class="k-wizard-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
                             <div class="k-wizard-buttons">
                                 <span class="k-wizard-buttons-left">
@@ -337,10 +337,10 @@
             <div class="wrapper">
                 <p>Small height set</p>
                 <div id="wizard" class="k-wizard k-wizard-vertical k-wizard-left" style="height: 200px;">
-                    <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+                    <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
                         <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
                             <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" tabindex="-1" aria-label="Step">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -351,14 +351,14 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" aria-current="step" tabindex="0" aria-label="Step 2">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">2</span>
                                     </span>
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                                <a href="#" class="k-step-link" tabindex="-1" aria-label="Step 3">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -376,7 +376,7 @@
                         </div>
                     </nav>
                     <div class="k-wizard-steps">
-                        <div class="k-wizard-step">
+                        <div class="k-wizard-step" role="tabpanel" aria-label="Step" tabindex="0">
                             <div class="k-wizard-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
                             <div class="k-wizard-buttons">
                                 <span class="k-wizard-buttons-left">
@@ -398,10 +398,10 @@
             <div class="wrapper">
                 <p>Short content</p>
                 <div id="wizard" class="k-wizard k-wizard-vertical k-wizard-left">
-                    <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
-                        <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
-                            <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                    <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+                        <ol class="k-step-list k-step-list-vertical" role="tablist" style="grid-row: 1 / -1;">
+                            <li class="k-step k-step-done k-step-first" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" tabindex="-1" aria-label="Step">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -411,15 +411,15 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                            <li class="k-step k-step-current k-focus" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" aria-current="true" aria-selected="true" tabindex="0" aria-label="Step 2">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">2</span>
                                     </span>
                                 </a>
                             </li>
-                            <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                            <li class="k-step k-step-last k-step-optional" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" tabindex="-1" aria-label="Step 3">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -429,7 +429,7 @@
                                 </a>
                             </li>
                         </ol>
-                        <div class="k-progressbar k-progressbar-vertical k-progressbar-reverse" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
+                        <div aria-hidden="true" class="k-progressbar k-progressbar-vertical k-progressbar-reverse" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                             <span class="k-progress-status-wrap k-progress-start"></span>
                             <div class="k-progressbar-value k-selected">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -437,7 +437,7 @@
                         </div>
                     </nav>
                     <div class="k-wizard-steps">
-                        <div class="k-wizard-step">
+                        <div class="k-wizard-step" role="tabpanel" aria-label="Step 2 of 3" tabindex="0">
                             <div class="k-wizard-content">Short content</div>
                             <div class="k-wizard-buttons">
                                 <span class="k-wizard-buttons-left">
@@ -459,10 +459,10 @@
             <div class="wrapper">
                 <p>Short content; Big height set</p>
                 <div id="wizard" class="k-wizard k-wizard-vertical k-wizard-left" style="height: 280px;">
-                    <nav class="k-stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
-                        <ol class="k-step-list k-step-list-vertical" style="grid-row: 1 / -1;">
-                            <li class="k-step k-step-done k-step-first" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                    <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-rows: repeat(3, 1fr);">
+                        <ol class="k-step-list k-step-list-vertical" role="tablist" style="grid-row: 1 / -1;">
+                            <li class="k-step k-step-done k-step-first" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" tabindex="-1" aria-label="Step">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -472,15 +472,15 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="k-step k-step-current k-focus" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                            <li class="k-step k-step-current k-focus" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" aria-current="true" aria-selected="true" tabindex="0" aria-label="Step 2">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">2</span>
                                     </span>
                                 </a>
                             </li>
-                            <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%;">
-                                <a href="#" class="k-step-link">
+                            <li class="k-step k-step-last k-step-optional" role="none" style="max-height: 33.333%;">
+                                <a href="#" class="k-step-link" role="tab" tabindex="-1" aria-label="Step 3">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -490,7 +490,7 @@
                                 </a>
                             </li>
                         </ol>
-                        <div class="k-progressbar k-progressbar-vertical k-progressbar-reverse" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
+                        <div aria-hidden="true" class="k-progressbar k-progressbar-vertical k-progressbar-reverse" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                             <span class="k-progress-status-wrap k-progress-start"></span>
                             <div class="k-progressbar-value k-selected">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -498,7 +498,7 @@
                         </div>
                     </nav>
                     <div class="k-wizard-steps">
-                        <div class="k-wizard-step">
+                        <div class="k-wizard-step" role="tabpanel" aria-label="Step 2 of 3" tabindex="0">
                             <div class="k-wizard-content">Short content</div>
                             <div class="k-wizard-buttons">
                                 <span class="k-wizard-buttons-left">

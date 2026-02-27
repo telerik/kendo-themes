@@ -22,7 +22,8 @@ export const DockNavigator = (
             className={classNames(
                 props.className,
                 DOCKNAVIGATOR_CLASSNAME
-            )}>
+            )}
+            aria-hidden="true">
             <DockIndicator position="top"/>
             <DockIndicator position="right"/>
             <DockIndicator position="bottom"/>

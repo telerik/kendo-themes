@@ -16,7 +16,7 @@ export const ToolbarResizable = (props) => (
             <Button className="k-group-end" icon="align-right">Right</Button>
         </ButtonGroup>,
         <ToolbarSeparator className="k-toolbar-button-separator" />,
-        <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none"></Button>
+        <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded="none" aria-label="More options" aria-haspopup="menu" aria-expanded="false"></Button>
     ]}
     {...props}>
     </Toolbar>

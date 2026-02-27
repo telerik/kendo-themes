@@ -25,6 +25,10 @@ export type KendoStepProps = {
     text?: string;
     icon?: string;
     stepContent?: React.JSX.Element;
+    /** @aria When true, Step renders with wizard tab pattern (role=none on li, role=tab on link) */
+    wizardContext?: boolean;
+    /** @aria aria-controls for the step link, pointing to the associated tabpanel id */
+    ariaControls?: string;
 }
 
 export type StepState = { [K in (typeof states)[number]]?: boolean };
@@ -51,11 +55,15 @@ export const Step = (
         text,
         icon,
         stepContent,
+        wizardContext,
+        ariaControls,
         ...other
     } = props;
 
     const iconName = invalid ? 'warning-circle' : 'check-circle';
     const renderValidationIcon = Boolean( valid || invalid );
+
+    const stepAriaLabel = label || (text ? `Step ${text}` : (icon ? `Step` : undefined));
 
     return (
         <li
@@ -74,9 +82,19 @@ export const Step = (
                     [`${STEP_CLASSNAME}-error`]: invalid,
                 },
                 stateClassNames(STEP_CLASSNAME, { hover, focus, disabled }),
-            )}>
+            )}
+            {...(wizardContext && { role: 'none' })}
+        >
 
-            <a href="#" className="k-step-link">
+            <a href="#" className="k-step-link"
+                {...(wizardContext && { role: 'tab' })}
+                {...(ariaControls && { 'aria-controls': ariaControls })}
+                {...(current && { 'aria-current': wizardContext ? 'true' as const : 'step' as const })}
+                {...(current && wizardContext && { 'aria-selected': 'true' })}
+                {...(disabled && { 'aria-disabled': 'true' })}
+                tabIndex={focus || current ? 0 : -1}
+                aria-label={stepAriaLabel}
+            >
 
                 { text && !icon &&
                     <span className="k-step-indicator">

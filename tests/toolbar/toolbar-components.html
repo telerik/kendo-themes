@@ -13,8 +13,8 @@
     <div id="test-area" class="k-d-grid">
         <span>Menu button</span>
         <section>
-            <div class="k-toolbar">
-                <button class="k-toolbar-menu-button  k-menu-button k-button">
+            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                <button class="k-toolbar-menu-button  k-menu-button k-button" aria-expanded="false">
                     <span class="k-button-text">Normal</span>
                     <span class="k-menu-button-arrow k-button-arrow">
                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
@@ -24,7 +24,7 @@
                         </span>
                     </span>
                 </button>
-                <button class="k-toolbar-menu-button  k-menu-button k-button k-hover">
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-hover" aria-expanded="false">
                     <span class="k-button-text">Hover</span>
                     <span class="k-menu-button-arrow k-button-arrow">
                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
@@ -34,7 +34,7 @@
                         </span>
                     </span>
                 </button>
-                <button class="k-toolbar-menu-button  k-menu-button k-button k-focus">
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-focus" aria-expanded="false">
                     <span class="k-button-text">Focus</span>
                     <span class="k-menu-button-arrow k-button-arrow">
                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
@@ -44,7 +44,7 @@
                         </span>
                     </span>
                 </button>
-                <button class="k-toolbar-menu-button  k-menu-button k-button k-disabled" disabled="">
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-disabled" aria-expanded="false" aria-disabled="true" disabled="">
                     <span class="k-button-text">Disabled</span>
                     <span class="k-menu-button-arrow k-button-arrow">
                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
@@ -58,12 +58,12 @@
         </section>
         <span>Split button</span>
         <section>
-            <div class="k-toolbar">
+            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
                 <div class="k-toolbar-split-button  k-split-button k-button-group">
                     <button class="k-button">
                         <span class="k-button-text">Normal</span>
                     </button>
-                    <button class="k-split-button-arrow k-button k-icon-button">
+                    <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 352 128 160h256z"></path>
@@ -75,7 +75,7 @@
                     <button class="k-button k-hover">
                         <span class="k-button-text">Hover</span>
                     </button>
-                    <button class="k-split-button-arrow k-button k-icon-button">
+                    <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 352 128 160h256z"></path>
@@ -87,7 +87,7 @@
                     <button class="k-button k-focus">
                         <span class="k-button-text">Focus</span>
                     </button>
-                    <button class="k-split-button-arrow k-button k-icon-button">
+                    <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 352 128 160h256z"></path>
@@ -99,7 +99,7 @@
                     <button class="k-button k-disabled" disabled="">
                         <span class="k-button-text">Disabled</span>
                     </button>
-                    <button class="k-split-button-arrow k-button k-disabled k-icon-button" disabled="">
+                    <button class="k-split-button-arrow k-button k-disabled k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1" aria-disabled="true" disabled="">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 352 128 160h256z"></path>
@@ -111,8 +111,8 @@
         </section>
         <span>Button group</span>
         <section>
-            <div class="k-toolbar">
-                <div class="k-toolbar-button-group  k-button-group">
+            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                <div role="group" class="k-toolbar-button-group  k-button-group">
                     <button class="k-group-start k-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -162,7 +162,7 @@
                         <span class="k-button-text">Disabled</span>
                     </button>
                 </div>
-                <div class="k-toolbar-button-group  k-button-group">
+                <div role="group" class="k-toolbar-button-group  k-button-group">
                     <button class="k-group-start k-button">
                         <span class="k-button-text">Adjacent</span>
                     </button>
@@ -174,7 +174,7 @@
         </section>
         <span>Dropdownlist in Toolbar</span>
         <section>
-            <div class="k-toolbar">
+            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
                 <div>
                     <span class="k-dropdownlist k-picker">
                         <span class="k-input-inner">
@@ -235,7 +235,7 @@
         </section>
         <span>Combobox in Toolbar</span>
         <section>
-            <div class="k-toolbar">
+            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
                 <div>
                     <span class="k-combobox k-input">
                         <input role="combobox" aria-haspopup="listbox" aria-expanded="false" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Normal">
