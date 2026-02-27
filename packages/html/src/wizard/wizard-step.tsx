@@ -11,6 +11,8 @@ const options = {};
 
 export type KendoWizardStepProps = {
     buttons?: React.JSX.Element;
+    /** @aria aria-label for the tabpanel, e.g. "Step 2 of 3" */
+    stepLabel?: string;
 };
 
 export type KendoWizardStepState = { [K in (typeof states)[number]]?: boolean };
@@ -37,6 +39,7 @@ export const WizardStep = (
     const {
         focus,
         buttons = defaultOptions.buttons,
+        stepLabel,
         ...other
     } = props;
 
@@ -47,7 +50,11 @@ export const WizardStep = (
                 props.className,
                 WIZZARDSTEP_CLASSNAME,
                 stateClassNames(WIZZARDSTEP_CLASSNAME, { focus }),
-            )}>
+            )}
+            role="tabpanel"
+            aria-label={stepLabel || "Step"}
+            tabIndex={0}
+        >
 
             <div className="k-wizard-content">
                 {props.children}

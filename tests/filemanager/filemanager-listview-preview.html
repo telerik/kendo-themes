@@ -14,14 +14,14 @@
         <span>Preview - File info</span>
         <div class="k-filemanager">
             <div class="k-filemanager-header">
-                <div class="k-filemanager-toolbar k-toolbar">
+                <div class="k-filemanager-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">New Folder</span>
                     </button>
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Upload</span>
                     </button>
-                    <div class="k-toolbar-button-group  k-button-group">
+                    <div role="group" class="k-toolbar-button-group  k-button-group">
                         <button class="k-group-start k-button k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -41,7 +41,7 @@
                         <button class="k-button">
                             <span class="k-button-text">Sort By</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
+                        <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
@@ -49,7 +49,7 @@
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
+                    <div role="group" class="k-toolbar-button-group  k-button-group">
                         <button class="k-group-start k-button k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-grid" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -87,7 +87,7 @@
             </div>
             <div class="k-filemanager-content-container">
                 <div class="k-filemanager-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" style="flex-basis: 25%;">
+                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 25%;">
                         <div class="k-filemanager-treeview k-treeview">
                             <ul class="k-treeview-lines k-treeview-group">
                                 <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
@@ -100,7 +100,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                         <div class="k-collapse-prev">
                             <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -110,8 +110,8 @@
                         </div>
                         <div class="k-resize-handle"></div>
                     </div>
-                    <div class="k-filemanager-content k-pane k-scrollable">
-                        <nav class="k-filemanager-breadcrumb k-breadcrumb">
+                    <div class="k-filemanager-content k-pane k-scrollable" role="group">
+                        <nav class="k-filemanager-breadcrumb k-breadcrumb" aria-label="Breadcrumb">
                             <ol class="k-breadcrumb-container">
                                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                                     <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link">
@@ -149,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                         <div class="k-resize-handle"></div>
                         <div class="k-collapse-next">
                             <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right" aria-hidden="true">
@@ -159,7 +159,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="k-filemanager-preview k-pane k-pane-static k-scrollable" style="flex-basis: 25%;">
+                    <div class="k-filemanager-preview k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 25%;">
                         <div class="k-file-info">
                             <span class="k-file-preview">
                                 <span class="k-file-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-file-image" aria-hidden="true">
@@ -191,14 +191,14 @@
         <span>Preview - No file selected</span>
         <div class="k-filemanager">
             <div class="k-filemanager-header">
-                <div class="k-filemanager-toolbar k-toolbar">
+                <div class="k-filemanager-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">New Folder</span>
                     </button>
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Upload</span>
                     </button>
-                    <div class="k-toolbar-button-group  k-button-group">
+                    <div role="group" class="k-toolbar-button-group  k-button-group">
                         <button class="k-group-start k-button k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -218,7 +218,7 @@
                         <button class="k-button">
                             <span class="k-button-text">Sort By</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
+                        <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
@@ -226,7 +226,7 @@
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
+                    <div role="group" class="k-toolbar-button-group  k-button-group">
                         <button class="k-group-start k-button k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-grid" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -264,7 +264,7 @@
             </div>
             <div class="k-filemanager-content-container">
                 <div class="k-filemanager-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" style="flex-basis: 25%;">
+                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 25%;">
                         <div class="k-filemanager-treeview k-treeview">
                             <ul class="k-treeview-lines k-treeview-group">
                                 <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
@@ -277,7 +277,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                         <div class="k-collapse-prev">
                             <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -287,8 +287,8 @@
                         </div>
                         <div class="k-resize-handle"></div>
                     </div>
-                    <div class="k-filemanager-content k-pane k-scrollable">
-                        <nav class="k-filemanager-breadcrumb k-breadcrumb">
+                    <div class="k-filemanager-content k-pane k-scrollable" role="group">
+                        <nav class="k-filemanager-breadcrumb k-breadcrumb" aria-label="Breadcrumb">
                             <ol class="k-breadcrumb-container">
                                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                                     <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link">
@@ -326,7 +326,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                         <div class="k-resize-handle"></div>
                         <div class="k-collapse-next">
                             <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right" aria-hidden="true">
@@ -336,7 +336,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="k-filemanager-preview k-pane k-pane-static k-scrollable" style="flex-basis: 25%;">
+                    <div class="k-filemanager-preview k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 25%;">
                         <div class="k-file-info">
                             <span class="k-file-preview">
                                 <span class="k-file-icon k-icon k-svg-icon k-icon-xxxl k-none" aria-hidden="true"></span>
@@ -350,14 +350,14 @@
         <span>Preview - Multiple files selected</span>
         <div class="k-filemanager">
             <div class="k-filemanager-header">
-                <div class="k-filemanager-toolbar k-toolbar">
+                <div class="k-filemanager-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">New Folder</span>
                     </button>
                     <button class="k-toolbar-button  k-button">
                         <span class="k-button-text">Upload</span>
                     </button>
-                    <div class="k-toolbar-button-group  k-button-group">
+                    <div role="group" class="k-toolbar-button-group  k-button-group">
                         <button class="k-group-start k-button k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -377,7 +377,7 @@
                         <button class="k-button">
                             <span class="k-button-text">Sort By</span>
                         </button>
-                        <button class="k-split-button-arrow k-button k-icon-button">
+                        <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 352 128 160h256z"></path>
@@ -385,7 +385,7 @@
                             </span>
                         </button>
                     </div>
-                    <div class="k-toolbar-button-group  k-button-group">
+                    <div role="group" class="k-toolbar-button-group  k-button-group">
                         <button class="k-group-start k-button k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-grid" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -423,7 +423,7 @@
             </div>
             <div class="k-filemanager-content-container">
                 <div class="k-filemanager-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" style="flex-basis: 25%;">
+                    <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 25%;">
                         <div class="k-filemanager-treeview k-treeview">
                             <ul class="k-treeview-lines k-treeview-group">
                                 <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
@@ -436,7 +436,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                         <div class="k-collapse-prev">
                             <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -446,8 +446,8 @@
                         </div>
                         <div class="k-resize-handle"></div>
                     </div>
-                    <div class="k-filemanager-content k-pane k-scrollable">
-                        <nav class="k-filemanager-breadcrumb k-breadcrumb">
+                    <div class="k-filemanager-content k-pane k-scrollable" role="group">
+                        <nav class="k-filemanager-breadcrumb k-breadcrumb" aria-label="Breadcrumb">
                             <ol class="k-breadcrumb-container">
                                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                                     <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link">
@@ -485,7 +485,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                         <div class="k-resize-handle"></div>
                         <div class="k-collapse-next">
                             <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right" aria-hidden="true">
@@ -495,7 +495,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="k-filemanager-preview k-pane k-pane-static k-scrollable" style="flex-basis: 25%;">
+                    <div class="k-filemanager-preview k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 25%;">
                         <div class="k-file-info">
                             <span class="k-file-preview">
                                 <span class="k-file-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-file" aria-hidden="true">

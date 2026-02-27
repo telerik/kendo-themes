@@ -14,17 +14,32 @@ Given a component name or `.spec.tsx` file, apply WAI-ARIA attributes to make it
 - Read `aria/[component]_aria.md` if it exists (reference documentation)
 - Read `packages/html/src/[component]/[component].spec.tsx` and `templates/*.tsx`
 - Look at similarly completed components (those with an `ariaSpec.rules` array) for reference patterns
+- Read the component's sub-component specs (e.g. `tabstrip-item.tsx`, `step.tsx`) to understand rendered HTML structure
 
 ### 2. Build the `ariaSpec` rules
 
 The `ariaSpec` static object on the spec component is the **single source of truth** for ARIA testing. It must include a `rules` array — each entry maps a CSS selector to an expected attribute.
 
-If `aria/[component]_aria.md` exists, migrate its rule table into `ariaSpec.rules`. If no markdown spec exists, create rules based on:
+If `aria/[component]_aria.md` exists, migrate its rule table into `ariaSpec.rules`. **Every single row** from the markdown table must appear in `ariaSpec.rules` — no exceptions, no cherry-picking. If a rule seems wrong, fix the selector or attribute but still include it. If no markdown spec exists, create rules based on:
 - WAI-ARIA 1.2 Authoring Practices and WCAG 2.2
 - The component's rendered HTML structure and interactive behavior
 - Specs from similar components (e.g. `combobox` ↔ `autocomplete`)
 
 Flag and fix issues before applying (wrong selectors, contradictory roles like `role="alert"` + `aria-live="polite"`, missing states).
+
+**Selector validation — always verify against actual rendered HTML:**
+
+The markdown spec selectors may not match the actual class names or DOM structure produced by the TSX component. Before adding a rule, check that:
+- The CSS class in the selector matches what the component actually renders (e.g. `stateClassNames()` produces `k-disabled` not `k-step-disabled`, so `.k-step-disabled` must become `.k-step.k-disabled`)
+- Child `>` vs descendant ` ` selectors match the actual nesting depth
+- Selectors don't assume a specific icon rendering mode — use `[class*="i-icon-name"]` instead of `.k-svg-i-icon-name` to match both SVG (`k-svg-i-*`) and font (`k-i-*`) icon classes
+
+**Conditional/cross-reference rules:**
+
+Rules with `aria-controls`, `aria-labelledby`, or similar ID-reference attributes often require:
+- A selector guard like `[aria-controls]` to only match when the attribute is actually present (e.g. `.k-button[aria-controls]` instead of `.k-button`)
+- Templates that render both the referencing element AND the target element with matching IDs
+- Sub-component prop additions (e.g. adding an `ariaControls` prop to a child component so the link `<a>` can receive `aria-controls`)
 
 **Format:**
 
@@ -58,6 +73,7 @@ Edit `.spec.tsx` and `templates/*.tsx`. Rules:
 - **Icon-only buttons** — require `aria-label`
 - **`disabled` propagation** — pass to all interactive children
 - **No structural changes** — only add attributes; never add or remove HTML elements
+- **Verify spec HTML matches real product HTML** — check that components render using the same element types as the real product. For example, if the product uses `<span class="k-remove-tab k-button ...">` for a close button, don't use `<IconButton>` (which renders a `<button>`) in the spec — use `<span>` with the appropriate classes to avoid WCAG violations like `nested-interactive`
 - **`tests/` folder** — do not modify unless specifically needed for missing coverage
 
 #### Patterns
@@ -157,7 +173,23 @@ export type KendoComponentProps = {
 };
 ```
 
-### 4. Validate iteratively
+### 4. Ensure full coverage — no gaps allowed
+
+After adding rules, ensure **every rule** is tested by at least one template:
+
+1. Run `npm run build --prefix packages/html && npm run test:a11y [component]`
+2. Check the output for **coverage gaps** — rules where the selector never matched any element in any template
+3. For each gap, create a new template that renders the component in the required state (disabled, selected, expanded, focused, etc.)
+4. Export the new template from the component's `index.ts`
+5. Re-run until: **0 ARIA violations, 0 WCAG violations, 0 coverage gaps**
+
+Common states that need dedicated templates:
+- **Disabled** — for `aria-disabled` rules
+- **Selected/Active** — for `aria-selected`, `aria-current`, `aria-pressed` rules
+- **Expanded** — for `aria-expanded`, `aria-controls`, nested popup/submenu rules
+- **Focused** — for `tabindex=0` on focused items
+
+### 5. Validate iteratively
 
 Run after every edit round:
 

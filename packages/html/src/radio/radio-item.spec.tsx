@@ -26,6 +26,7 @@ export const RadioItem: KendoComponent<KendoRadioItemState & React.HTMLAttribute
                 props.className,
                 RADIOITEM_CLASSNAME,
             )}
+            role="none"
         >
             {props.children}
         </li>

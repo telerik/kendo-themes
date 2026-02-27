@@ -21,8 +21,8 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-pdf-viewer">
-            <div class="k-toolbar k-toolbar-flat k-toolbar-resizable">
-                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat k-disabled k-icon-button" disabled="">
+            <div class="k-toolbar k-toolbar-flat k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat k-disabled k-icon-button" aria-expanded="false" aria-label="Menu" aria-disabled="true" disabled="">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-menu" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M480 32v96H32V32zM32 192v96h448v-96zm448 160H32v96h448z"></path>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <span class="k-spacer"></span>
-                <div class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
                     <button class="k-group-start k-button k-button-flat k-disabled k-icon-button" disabled="">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-zoom-out" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -96,7 +96,7 @@
                         </span>
                     </button>
                 </span>
-                <div class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
                     <button class="k-group-start k-button k-button-flat k-disabled k-icon-button" disabled="">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-pointer" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

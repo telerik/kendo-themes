@@ -13,7 +13,7 @@
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <span class="k-colspan-all k-col-span-full">Toolbar</span>
         <section class="k-colspan-all k-col-span-full">
-            <div class="k-toolbar k-toolbar-resizable">
+            <div class="k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button  k-button k-icon-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-bold" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -28,7 +28,7 @@
                     <span class="k-button-text">Toggle</span>
                 </button>
                 <div class="k-toolbar-separator k-separator"></div>
-                <div class="k-toolbar-button-group  k-button-group">
+                <div role="group" class="k-toolbar-button-group  k-button-group">
                     <button class="k-group-start k-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -94,7 +94,7 @@
         </section>
         <span class="k-colspan-all k-col-span-full">RTL</span>
         <section class="k-colspan-all k-col-span-full" dir="rtl">
-            <div class="k-toolbar k-toolbar-resizable">
+            <div class="k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button  k-button k-icon-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-bold" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -109,7 +109,7 @@
                     <span class="k-button-text">Toggle</span>
                 </button>
                 <div class="k-toolbar-separator k-separator"></div>
-                <div class="k-toolbar-button-group  k-button-group">
+                <div role="group" class="k-toolbar-button-group  k-button-group">
                     <button class="k-group-start k-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -175,7 +175,7 @@
         </section>
         <span class="k-colspan-all k-col-span-full">Button states</span>
         <section class="k-colspan-all k-col-span-full">
-            <div class="k-toolbar k-toolbar-resizable">
+            <div class="k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button  k-button">
                     <span class="k-button-text">Normal</span>
                 </button>
@@ -248,7 +248,7 @@
             </div>
         </section>
         <section class="k-colspan-all k-col-span-full">
-            <div class="k-toolbar k-toolbar-resizable">
+            <div class="k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button  k-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -308,7 +308,7 @@
             </div>
         </section>
         <section class="k-colspan-all k-col-span-full">
-            <div class="k-toolbar k-toolbar-resizable">
+            <div class="k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button  k-button k-button-primary">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -369,11 +369,11 @@
         </section>
         <span class="k-colspan-all k-col-span-full">Disabled focus state of buttons</span>
         <section class="k-colspan-all k-col-span-full">
-            <div class="k-toolbar k-toolbar-resizable">
+            <div class="k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button  k-button k-focus k-disabled" disabled="">
                     <span class="k-button-text">Button</span>
                 </button>
-                <button class="k-toolbar-menu-button  k-menu-button k-button k-focus k-disabled" disabled="">
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-focus k-disabled" aria-expanded="false" aria-disabled="true" disabled="">
                     <span class="k-button-text">Menu button</span>
                     <span class="k-menu-button-arrow k-button-arrow">
                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
@@ -387,7 +387,7 @@
                     <button class="k-button k-focus k-disabled" disabled="">
                         <span class="k-button-text">Split button</span>
                     </button>
-                    <button class="k-split-button-arrow k-button k-disabled k-icon-button" disabled="">
+                    <button class="k-split-button-arrow k-button k-disabled k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1" aria-disabled="true" disabled="">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 352 128 160h256z"></path>
@@ -395,7 +395,7 @@
                         </span>
                     </button>
                 </div>
-                <div class="k-toolbar-button-group  k-button-group">
+                <div role="group" class="k-toolbar-button-group  k-button-group">
                     <button class="k-group-start k-button k-focus k-disabled" disabled="">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -426,11 +426,11 @@
         <span>wrapped</span>
         <span>wrapped rtl</span>
         <section>
-            <div class="k-toolbar">
+            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button  k-button">
                     <span class="k-button-text">Button</span>
                 </button>
-                <button class="k-toolbar-menu-button  k-menu-button k-button">
+                <button class="k-toolbar-menu-button  k-menu-button k-button" aria-expanded="false">
                     <span class="k-button-text">Menu button</span>
                     <span class="k-menu-button-arrow k-button-arrow">
                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
@@ -444,7 +444,7 @@
                     <button class="k-button">
                         <span class="k-button-text">Split button</span>
                     </button>
-                    <button class="k-split-button-arrow k-button k-icon-button">
+                    <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 352 128 160h256z"></path>
@@ -452,7 +452,7 @@
                         </span>
                     </button>
                 </div>
-                <div class="k-toolbar-button-group  k-button-group">
+                <div role="group" class="k-toolbar-button-group  k-button-group">
                     <button class="k-group-start k-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -481,11 +481,11 @@
             </div>
         </section>
         <section dir="rtl">
-            <div class="k-toolbar">
+            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button  k-button">
                     <span class="k-button-text">Button</span>
                 </button>
-                <button class="k-toolbar-menu-button  k-menu-button k-button">
+                <button class="k-toolbar-menu-button  k-menu-button k-button" aria-expanded="false">
                     <span class="k-button-text">Menu button</span>
                     <span class="k-menu-button-arrow k-button-arrow">
                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
@@ -499,7 +499,7 @@
                     <button class="k-button">
                         <span class="k-button-text">Split button</span>
                     </button>
-                    <button class="k-split-button-arrow k-button k-icon-button">
+                    <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 352 128 160h256z"></path>
@@ -507,7 +507,7 @@
                         </span>
                     </button>
                 </div>
-                <div class="k-toolbar-button-group  k-button-group">
+                <div role="group" class="k-toolbar-button-group  k-button-group">
                     <button class="k-group-start k-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

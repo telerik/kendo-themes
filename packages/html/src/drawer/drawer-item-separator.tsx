@@ -21,7 +21,8 @@ export const DrawerItemSeparator = (
             className={classNames(
                 "k-drawer-item",
                 DRAWERITEMSEPARATOR_CLASSNAME
-            )}>
+            )}
+            role="separator">
         </div>
     );
 };

@@ -11,8 +11,8 @@ export const DockManagerUnpinnedPane = (props) => (
         unpinnedPane={
             <PaneScrollable title="Tools" actions={
                 <>
-                    <Button fillMode="flat" icon="unpin"></Button>
-                    <Button fillMode="flat" icon="more-vertical"></Button>
+                    <Button fillMode="flat" icon="unpin" aria-label="Unpin pane"></Button>
+                    <Button fillMode="flat" icon="more-vertical" aria-label="More actions"></Button>
                 </>
             }>
             Some tools.
@@ -27,8 +27,8 @@ export const DockManagerUnpinnedPane = (props) => (
                                 <>
                                     <TabStripItem first value="File 1" active actions={
                                         <>
-                                            <Button fillMode="flat" icon="pin"></Button>
-                                            <Button fillMode="flat" icon="more-vertical"></Button>
+                                            <Button as="span" icon="pin" fillMode="flat" aria-hidden="true" />
+                                            <Button as="span" icon="more-vertical" fillMode="flat" aria-hidden="true" />
                                         </>
                                     }></TabStripItem>
                                 </>
@@ -47,14 +47,14 @@ export const DockManagerUnpinnedPane = (props) => (
                                         <>
                                             <TabStripItem first value="Properties" active actions={
                                                 <>
-                                                    <Button fillMode="flat" icon="pin"></Button>
-                                                    <Button fillMode="flat" icon="more-vertical"></Button>
+                                                    <Button as="span" icon="pin" fillMode="flat" aria-hidden="true" />
+                                                    <Button as="span" icon="more-vertical" fillMode="flat" aria-hidden="true" />
                                                 </>
                                             }></TabStripItem>
                                             <TabStripItem last value="History" actions={
                                                 <>
-                                                    <Button fillMode="flat" icon="pin"></Button>
-                                                    <Button fillMode="flat" icon="more-vertical"></Button>
+                                                    <Button as="span" icon="pin" fillMode="flat" aria-hidden="true" />
+                                                    <Button as="span" icon="more-vertical" fillMode="flat" aria-hidden="true" />
                                                 </>
                                             }></TabStripItem>
                                         </>

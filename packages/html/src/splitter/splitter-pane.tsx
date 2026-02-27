@@ -56,7 +56,8 @@ export const SplitterPane = (
                     [`${SPLITTERPANE_CLASSNAME}-unpinned`]: unpinned,
                     [`${SPLITTERPANE_CLASSNAME}-tabbed`]: tabbed,
                 },
-            )}>
+            )}
+            role="group">
             {props.children}
         </div>
     );

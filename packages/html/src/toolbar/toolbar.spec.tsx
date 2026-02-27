@@ -196,6 +196,8 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                     [`${TOOLBAR_CLASSNAME}-section`]: section,
                 }
             )}
+            role="toolbar"
+            aria-label="Toolbar"
         >
             {!scrollable && toolbarChildren}
 
@@ -214,7 +216,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                                 fillMode
                             }),
                             'k-icon-button',
-                        )}>
+                        )} aria-hidden="true">
                             <Icon className='k-button-icon' icon= "caret-alt-left" />
                         </span>
                         <span className={classNames(
@@ -225,7 +227,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                                 fillMode
                             }),
                             'k-icon-button',
-                        )}>
+                        )} aria-hidden="true">
                             <Icon className='k-button-icon' icon= "caret-alt-right" />
                         </span>
                     </ButtonGroup>
@@ -247,7 +249,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                                 fillMode
                             }),
                             'k-icon-button',
-                        )}>
+                        )} aria-hidden="true">
                             <Icon className='k-button-icon' icon= "caret-alt-left" />
                         </span>
                         <span className={classNames(
@@ -258,7 +260,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                                 fillMode
                             }),
                             'k-icon-button',
-                        )}>
+                        )} aria-hidden="true">
                             <Icon className='k-button-icon' icon= "caret-alt-right" />
                         </span>
                     </ButtonGroup>
@@ -275,7 +277,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             fillMode
                         }),
                         'k-icon-button',
-                    )}>
+                    )} aria-hidden="true">
                         <Icon className='k-button-icon' icon= "caret-alt-left" />
                     </span>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
@@ -289,7 +291,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             fillMode
                         }),
                         'k-icon-button',
-                    )}>
+                    )} aria-hidden="true">
                         <Icon className='k-button-icon' icon= "caret-alt-right" />
                     </span>
                 </>
@@ -305,5 +307,36 @@ Toolbar.className = TOOLBAR_CLASSNAME;
 Toolbar.defaultOptions = defaultOptions;
 Toolbar.moduleName = TOOLBAR_MODULE_NAME;
 Toolbar.folderName = TOOLBAR_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * Toolbar implements the WAI-ARIA toolbar pattern.
+ *
+ * - Root: role="toolbar", aria-label
+ * - Overflow button: aria-haspopup, aria-expanded, aria-label
+ * - Overflow menu: role="menu"
+ */
+Toolbar.ariaSpec = {
+    selector: '.k-toolbar',
+    rules: [
+        { selector: '.k-toolbar', attribute: 'role=toolbar', usage: 'The component role.' },
+        { selector: '.k-toolbar', attribute: 'aria-label or aria-labelledby', usage: 'Must be supplied when multiple toolbars exist.' },
+        // Vertical overflow button (more-vertical → menu popup)
+        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-vertical"])', attribute: 'aria-haspopup=menu', usage: 'The overflow button opens a menu popup.' },
+        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-vertical"])', attribute: 'aria-expanded=true/false', usage: 'Announces popup visibility state.' },
+        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-vertical"])[aria-controls]', attribute: 'aria-controls=.k-toolbar-popup .k-menu-group id', usage: 'Indicates the connection between the toggle button and the menu popup.' },
+        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-vertical"])', attribute: 'aria-label or title', usage: 'Icon-only button must have accessible text.' },
+        // Vertical overflow popup
+        { selector: '.k-toolbar-popup .k-menu-group', attribute: 'role=menu', usage: 'The role of the tools wrapper in the overflow section.' },
+        { selector: '.k-toolbar-popup .k-menu-group[aria-labelledby]', attribute: 'aria-labelledby=.k-toolbar-overflow-button id', usage: 'Associates the title of the menu toggle button.' },
+        // Horizontal overflow button (more-horizontal → section popup)
+        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-horizontal"])', attribute: 'aria-expanded=true/false', usage: 'Announces section popup visibility state.' },
+        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-horizontal"])', attribute: 'aria-label or title', usage: 'Icon-only button must have accessible text.' },
+        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-horizontal"])[aria-controls]', attribute: 'aria-controls=.k-toolbar-popup .k-toolbar-items-list id', usage: 'Indicates the connection between the toggle button and the section popup.' },
+        // Horizontal overflow popup
+        { selector: '.k-toolbar-popup .k-toolbar-items-list', attribute: 'role=toolbar', usage: 'The role of the tools wrapper in the overflow section.' },
+        { selector: '.k-toolbar-popup .k-toolbar-items-list[aria-labelledby]', attribute: 'aria-labelledby=.k-toolbar-overflow-button id', usage: 'Associates the title of the section toggle button.' },
+    ]
+};
 
 export default Toolbar;

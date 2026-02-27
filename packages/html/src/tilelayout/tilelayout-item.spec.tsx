@@ -1,5 +1,5 @@
 import React from 'react';
-import { classNames, stateClassNames, States } from '../misc';
+import { classNames, stateClassNames, States, nextId } from '../misc';
 import { Card, CardBody, CardHeader } from '../card';
 
 import { KendoComponent } from '../_types/component';
@@ -33,6 +33,8 @@ export const TileLayoutItem: KendoComponent<KendoTileLayoutItemProps & React.HTM
         style
     } = props;
 
+    const titleId = nextId('tilelayout-title');
+
     return (
 
         <Card className={classNames(
@@ -48,11 +50,17 @@ export const TileLayoutItem: KendoComponent<KendoTileLayoutItemProps & React.HTM
             }
         )}
         style={style}
+        role="listitem"
+        aria-labelledby={titleId}
+        tabIndex={0}
+        aria-keyshortcuts="Enter"
+        aria-dropeffect="execute"
+        aria-grabbed="false"
         >
             {header &&
                 React.isValidElement(header)
-                ? <CardHeader className="k-tilelayout-item-header k-cursor-move">{header}</CardHeader>
-                : <CardHeader className="k-tilelayout-item-header k-cursor-move" title={header as string} />
+                ? <CardHeader className="k-tilelayout-item-header k-cursor-move"><div className="k-card-title" id={titleId}>{header}</div></CardHeader>
+                : <CardHeader className="k-tilelayout-item-header k-cursor-move"><div className="k-card-title" id={titleId}>{header}</div></CardHeader>
             }
             {body &&
                 <CardBody className="k-tilelayout-item-body">

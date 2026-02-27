@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 import { ActionButtons } from '../action-buttons';
+import { KendoBaseProps } from '../_types/component';
 
 export const ACTIONSHEETFOOTER_CLASSNAME = `k-actionsheet-footer`;
 
@@ -7,7 +8,6 @@ export type KendoActionSheetFooterProps = {
     alignment?: 'start' | 'center' | 'end' | 'stretched' | 'justify';
     orientation?: 'horizontal' | 'vertical';
     template?: boolean;
-    as?: React.ElementType;
 }
 
 const defaultOptions = {
@@ -17,6 +17,7 @@ const defaultOptions = {
 
 export const ActionSheetFooter = (
     props: KendoActionSheetFooterProps &
+        KendoBaseProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {

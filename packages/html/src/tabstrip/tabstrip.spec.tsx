@@ -104,7 +104,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             rounded: Roundness.none
                         }),
                         'k-icon-button',
-                    )}>
+                    )} aria-hidden="true">
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["prev"]}`} />
                     </span>
                 }
@@ -118,12 +118,13 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             rounded: Roundness.none
                         }),
                         'k-icon-button',
-                    )}>
+                    )} aria-hidden="true">
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
                     </span>
                 }
                 <TabStripItems className={classNames({[`k-tabstrip-items-scroll`]: scrollable && scrollButtons === 'hidden'})}
-                tabAlignment={tabAlignmentMap[tabAlignment]}>
+                tabAlignment={tabAlignmentMap[tabAlignment]}
+                orientation={orientationMap[position] as 'horizontal' | 'vertical'}>
                     {tabStripItems}
                 </TabStripItems>
                 {scrollable && scrollButtons === 'end' &&
@@ -136,7 +137,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             rounded: Roundness.none
                         }),
                         'k-icon-button',
-                    )}>
+                    )} aria-hidden="true">
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["prev"]}`} />
                     </span>
                 }
@@ -151,7 +152,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                             rounded: Roundness.none
                         }),
                         'k-icon-button',
-                    )}>
+                    )} aria-hidden="true">
                         <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
                     </span>
                 }
@@ -178,5 +179,29 @@ TabStrip.className = TABSTRIP_CLASSNAME;
 TabStrip.defaultOptions = defaultOptions;
 TabStrip.moduleName = TABSTRIP_MODULE_NAME;
 TabStrip.folderName = TABSTRIP_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * TabStrip implements the WAI-ARIA tabs pattern.
+ *
+ * - TabList: role="tablist", aria-orientation="vertical" for left/right position
+ * - Tab items: role="tab", aria-selected="true" for active tab
+ * - Tab content: role="tabpanel"
+ * - Scroll buttons: aria-hidden="true"
+ */
+TabStrip.ariaSpec = {
+    selector: '.k-tabstrip',
+    rules: [
+        { selector: '.k-tabstrip-items', attribute: 'role=tablist', usage: 'Indicates the tablist role for the ul element.' },
+        { selector: '.k-tabstrip.k-tabstrip-left .k-tabstrip-items,.k-tabstrip.k-tabstrip-right .k-tabstrip-items', attribute: 'aria-orientation=vertical', usage: 'Indicates the orientation when vertical.' },
+        { selector: '.k-tabstrip-item', attribute: 'role=tab', usage: 'The tab li element.' },
+        { selector: '.k-tabstrip .k-tabstrip-item.k-active', attribute: 'aria-selected=true', usage: 'Announces the selected state of the tab.' },
+        { selector: '.k-tabstrip-content', attribute: 'role=tabpanel', usage: 'The content div of the tab.' },
+        { selector: '.k-tabstrip .k-tabstrip-item.k-active[aria-controls]', attribute: 'aria-controls', usage: 'Announces the relation between the panel and active tab. Only present when tab controls a specific panel.' },
+        { selector: '.k-tabstrip-content', attribute: 'aria-hidden=true (when not active)', usage: 'Only if the component implements a feature to control whether the content should be persisted.' },
+        { selector: '.k-tabstrip-content[aria-labelledby]', attribute: 'aria-labelledby', usage: 'Refers to the tab element that controls the panel. Only present when panel has an associated tab.' },
+        { selector: '.k-tabstrip-scrollable .k-button', attribute: 'aria-hidden=true', usage: 'Scroll buttons are hidden from assistive technologies.' },
+    ]
+};
 
 export default TabStrip;

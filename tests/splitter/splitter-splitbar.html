@@ -19,28 +19,28 @@
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>Splitbar horizontal</span>
         <div class="k-splitter k-splitter-horizontal k-splitter-flex" style="height: 150px;">
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter static</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-horizontal k-splitbar-static-horizontal">
+            <div class="k-splitbar k-splitbar-horizontal k-splitbar-static-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-resize-handle"></div>
             </div>
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter draggable</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-resize-handle"></div>
             </div>
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter draggable - collapse right</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-resize-handle"></div>
                 <div class="k-collapse-next">
                     <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right" aria-hidden="true">
@@ -50,12 +50,12 @@
                     </span>
                 </div>
             </div>
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter draggable - collapse left &amp; right</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-collapse-prev">
                     <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -72,12 +72,12 @@
                     </span>
                 </div>
             </div>
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter draggable - collapse left</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-collapse-prev">
                     <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -87,32 +87,32 @@
                 </div>
                 <div class="k-resize-handle"></div>
             </div>
-            <div class="k-pane"></div>
+            <div class="k-pane" role="group"></div>
         </div>
         <span>Splitbar vertical</span>
         <div class="k-splitter k-splitter-vertical k-splitter-flex">
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter static</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-vertical k-splitbar-static-vertical">
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-static-vertical" role="separator" aria-label="Pane separator" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-resize-handle"></div>
             </div>
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter draggable</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" role="separator" aria-label="Pane separator" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-resize-handle"></div>
             </div>
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter draggable - collapse down</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" role="separator" aria-label="Pane separator" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-resize-handle"></div>
                 <div class="k-collapse-next">
                     <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-down" aria-hidden="true">
@@ -122,12 +122,12 @@
                     </span>
                 </div>
             </div>
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter draggable - collapse down &amp; top</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" role="separator" aria-label="Pane separator" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-collapse-prev">
                     <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-up" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -144,12 +144,12 @@
                     </span>
                 </div>
             </div>
-            <div class="k-pane">
+            <div class="k-pane" role="group">
                 <div class="content">
                     <p>Splitter draggable - collapse top</p>
                 </div>
             </div>
-            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" role="separator" aria-label="Pane separator" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                 <div class="k-collapse-prev">
                     <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-up" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -159,7 +159,7 @@
                 </div>
                 <div class="k-resize-handle"></div>
             </div>
-            <div class="k-pane"></div>
+            <div class="k-pane" role="group"></div>
         </div>
     </div>
 </body>

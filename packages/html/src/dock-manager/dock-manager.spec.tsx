@@ -34,7 +34,9 @@ export const DockManager: KendoComponent<KendoDockManagerProps & React.HTMLAttri
             className={classNames(
                 props.className,
                 DOCKMANAGER_CLASSNAME
-            )}>
+            )}
+            role="application"
+            aria-live="polite">
             {toolbarItems &&
                 <DockManagerToolbar className="k-toolbar-left" toolbarItems={toolbarItems} />
             }
@@ -59,5 +61,23 @@ DockManager.className = DOCKMANAGER_CLASSNAME;
 DockManager.defaultOptions = defaultOptions;
 DockManager.moduleName = DOCK_MANAGER_MODULE_NAME;
 DockManager.folderName = DOCK_MANAGER_FOLDER_NAME;
+
+/**
+ * Accessibility specification for DockManager.
+ *
+ * @accessibility
+ * - DockManager has role=application with aria-live=polite
+ * - DockNavigator is aria-hidden=true (only appears on drag)
+ * - Inner components (Toolbar, TabStrip, Splitter, Window) follow their own ARIA specs
+ *
+ * @wcag 4.1.2 Name, Role, Value - application pattern with custom keyboard navigation
+ */
+DockManager.ariaSpec = {
+    selector: '.k-dock-manager',
+    rules: [
+        { selector: '.k-dock-manager', attribute: 'role=application', usage: 'Indicates that the DockManager has its own keyboard navigation implemented.' },
+        { selector: '.k-dock-manager', attribute: 'aria-live=polite', usage: 'Defines dynamic content changes within the DockManager container.' },
+    ]
+};
 
 export default DockManager;

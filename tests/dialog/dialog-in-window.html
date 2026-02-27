@@ -28,25 +28,25 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <section>
-            <div class="k-window-wrapper k-window">
+            <div class="k-window-wrapper k-window" role="dialog" aria-labelledby="k-window-title-1">
                 <div class="k-window-titlebar">
-                    <span class="k-window-title">Window with dialog</span>
+                    <span class="k-window-title" id="k-window-title-1">Window with dialog</span>
                     <div class="k-window-titlebar-actions">
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button">
+                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="window-minimize">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-window-minimize" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M416 288v64H96v-64z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button">
+                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="window">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-window" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M96 96v320h320V96zm288 288H128V192h256z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button">
+                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -57,11 +57,11 @@
                 </div>
                 <div class="k-window-content">Window content<div class="k-dialog-wrapper">
                         <div class="k-overlay"></div>
-                        <div class="k-dialog k-window">
-                            <div class="k-window-titlebar k-dialog-titlebar">
+                        <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-1" aria-describedby="k-dialog-content-1" aria-modal="true">
+                            <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-1">
                                 <span class="k-window-title k-dialog-title">Dialog in window</span>
                                 <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button">
+                                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -70,7 +70,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="k-window-content k-dialog-content">Dialog content</div>
+                            <div class="k-window-content k-dialog-content" id="k-dialog-content-1">Dialog content</div>
                         </div>
                     </div>
                 </div>

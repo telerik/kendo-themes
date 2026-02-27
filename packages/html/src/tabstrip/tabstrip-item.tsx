@@ -1,5 +1,5 @@
+import { Button } from '../button';
 import { Icon } from '../icon/icon.spec';
-import { IconButton } from '../button/templates/icon-button';
 import { States, classNames, stateClassNames } from '../misc';
 
 export const TABSTRIPITEM_CLASSNAME = `k-tabstrip-item`;
@@ -69,7 +69,11 @@ export const TabStripItem = (
                     ["k-first"]: first,
                     ["k-last"]: last,
                 }
-            )}>
+            )}
+            role="tab"
+            {...(active && { 'aria-selected': 'true' })}
+            {...(disabled && { 'aria-disabled': 'true' })}
+        >
             <span className="k-link">
                 {icon && iconPosition === 'before' && <Icon icon={icon} />}
                 {value && <span className="k-link-text">{value}</span>}
@@ -77,7 +81,7 @@ export const TabStripItem = (
             </span>
             {(actions || closable) && <span className="k-item-actions">
                 {actions}
-                {closable && <IconButton fillMode="flat" icon="x"/>}
+                {closable && <Button as="span" className="k-remove-tab" icon="x" fillMode="flat" title="Close" aria-hidden="true" />}
             </span>}
             {children}
         </li>

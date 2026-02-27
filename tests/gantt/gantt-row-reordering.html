@@ -12,7 +12,7 @@
 <body id="app" class="k-body">
     <div id="test-area">
         <div class="k-gantt">
-            <div class="k-gantt-header k-gantt-toolbar k-toolbar">
+            <div class="k-gantt-header k-gantt-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button k-gantt-toggle k-button k-icon-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-layout-1-by-4" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -35,7 +35,7 @@
                         <option value="week">Week</option>
                         <option value="month">Month</option>
                     </select>
-                    <div class="k-gantt-views k-button-group">
+                    <div role="group" class="k-gantt-views k-button-group">
                         <button class="k-view-day k-group-start k-button">
                             <span class="k-button-text">Day</span>
                         </button>
@@ -50,7 +50,7 @@
             </div>
             <div class="k-gantt-content">
                 <div class="k-gantt-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                    <div class="k-gantt-treelist k-pane k-pane-static" style="flex-basis: 30%;">
+                    <div class="k-gantt-treelist k-pane k-pane-static" role="group" style="flex-basis: 30%;">
                         <div class="k-treelist k-grid">
                             <div class="k-grid-aria-root">
                                 <div class="k-grid-header">
@@ -178,10 +178,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
                         <div class="k-resize-handle"></div>
                     </div>
-                    <div class="k-gantt-timeline-pane k-pane">
+                    <div class="k-gantt-timeline-pane k-pane" role="group">
                         <div class="k-gantt-timeline k-grid">
                             <div class="k-grid-header">
                                 <div class="k-grid-header-wrap">
@@ -379,7 +379,7 @@
                     </div>
                 </div>
             </div>
-            <div class="k-gantt-footer k-gantt-toolbar k-toolbar">
+            <div class="k-gantt-footer k-gantt-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
                 <button class="k-toolbar-button k-gantt-create k-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

@@ -94,7 +94,11 @@ export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps
                 {
                     [`!k-pos-absolute k-${position}`]: position,
                 }
-            )}>
+            )}
+            {...(!text && icon && !props['aria-label'] && { 'aria-label': 'Action' })}
+            {...(disabled && { 'aria-disabled': 'true' })}
+            disabled={disabled || undefined}
+        >
             {icon && <Icon className="k-fab-icon" icon={icon} /> }
             {text && <span className="k-fab-text">{text}</span>}
         </button>
@@ -107,5 +111,22 @@ FloatingActionButton.className = FLOATINGACTIONBUTTON_CLASSNAME;
 FloatingActionButton.defaultOptions = defaultOptions;
 FloatingActionButton.moduleName = FAB_MODULE_NAME;
 FloatingActionButton.folderName = FAB_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * FloatingActionButton follows button-only accessibility specification.
+ *
+ * - Uses semantic <button> element (role="button" is implicit)
+ * - Icon-only: requires aria-label or title
+ * - When disabled: aria-disabled="true"
+ */
+FloatingActionButton.ariaSpec = {
+    selector: '.k-fab',
+    rules: [
+        { selector: '.k-fab', attribute: 'role=button or nodeName=button', usage: 'Omitted if the <button> DOM element is used.' },
+        { selector: '.k-fab', attribute: 'aria-label or title (when icon-only)', usage: 'The attribute must be present when no text is initially visible in the button.' },
+        { selector: '.k-fab.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the button is disabled.' },
+    ]
+};
 
 export default FloatingActionButton;

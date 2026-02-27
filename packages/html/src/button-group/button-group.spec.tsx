@@ -38,6 +38,7 @@ export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGrou
 
     return (
         <div
+            role="group"
             {...other}
             className={classNames(
                 props.className,
@@ -52,6 +53,7 @@ export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGrou
                     [`${BUTTONGROUP_CLASSNAME}-stretched`]: stretched,
                 }
             )}
+            {...(disabled && { 'aria-disabled': 'true' })}
         >
             { props.children }
         </div>
@@ -64,5 +66,22 @@ ButtonGroup.className = BUTTONGROUP_CLASSNAME;
 ButtonGroup.defaultOptions = defaultOptions;
 ButtonGroup.moduleName = BUTTON_GROUP_MODULE_NAME;
 ButtonGroup.folderName = BUTTON_GROUP_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * ButtonGroup implements the WAI-ARIA group pattern.
+ *
+ * - Container: role="group"
+ * - When disabled: aria-disabled="true"
+ * - Child buttons: aria-pressed for toggle state
+ */
+ButtonGroup.ariaSpec = {
+    selector: '.k-button-group',
+    rules: [
+        { selector: '.k-button-group:not(.k-split-button)', attribute: 'role=group', usage: 'Sets the proper role for the group of buttons.' },
+        { selector: '.k-button-group.k-disabled', attribute: 'aria-disabled=true', usage: 'The attribute is rendered only when the entire button group is disabled.' },
+        { selector: '.k-button-group:not(.k-split-button):not(.k-scheduler-navigation):not(.k-zoom-control) .k-button', attribute: 'aria-pressed (when selected)', usage: 'Specifies the current state of the ButtonGroup. Only the selected button within the group will have this attribute set to true.' },
+    ]
+};
 
 export default ButtonGroup;

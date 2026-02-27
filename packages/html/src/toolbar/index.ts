@@ -8,4 +8,6 @@ export * from './templates/toolbar-resizable';
 export * from './templates/toolbar-scrollable';
 export * from './templates/toolbar-scrollable-buttons-hidden';
 export * from './templates/toolbar-section';
+export * from './templates/toolbar-overflow-expanded';
+export * from './templates/toolbar-section-overflow';
 export * from './demos/toolbar';
