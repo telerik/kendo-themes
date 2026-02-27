@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-titlebar-bg</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>$kendo-window-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window titlebar.</div></div>

@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dialog-titlebar-bg</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog titlebar.</div></div>
