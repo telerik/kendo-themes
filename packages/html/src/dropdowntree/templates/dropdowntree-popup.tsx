@@ -3,7 +3,10 @@ import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 
 export const DropdownTreePopup = (props) => (
     <DropdownTree
+        id="ddt-1"
+        aria-label="Select item"
         opened={true}
+        treeviewId="ddt-1-treeview"
         popup={
             <>
                 <Treeview dir={props.dir}>

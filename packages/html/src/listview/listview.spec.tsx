@@ -26,6 +26,10 @@ export type KendoListViewProps = {
     flexDirection?: 'row' | 'row-reverse' | 'col' | 'col-reverse';
     flexWrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
     gridColumns?: number;
+    /** @aria When true, renders with k-selectable class; content role=listbox, items role=option */
+    selectable?: boolean;
+    /** @aria Accessible name for the listview content element (required when selectable/role=listbox) */
+    contentAriaLabel?: string;
 };
 
 export type KendoListViewState = { [K in (typeof states)[number]]?: boolean };
@@ -51,6 +55,8 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
         gridColumns,
         loading,
         disabled,
+        selectable,
+        contentAriaLabel,
         ...other
     } = props;
 
@@ -71,7 +77,8 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
                 props.className,
                 LISTVIEW_CLASSNAME,
                 {
-                    'k-listview-bordered': bordered
+                    'k-listview-bordered': bordered,
+                    'k-selectable': selectable,
                 },
                 stateClassNames(LISTVIEW_CLASSNAME, {
                     disabled,
@@ -88,7 +95,10 @@ export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & 
                     [`k-flex-${flexWrap}`]: flexWrap,
                     [`k-grid-cols-${gridColumns}`]: gridColumns,
                 }
-            )}>
+            )}
+                role={selectable ? 'listbox' : 'list'}
+                aria-label={contentAriaLabel}
+            >
                 { props.children }
             </div>
             { loading && loader }
@@ -104,5 +114,27 @@ ListView.className = LISTVIEW_CLASSNAME;
 ListView.defaultOptions = defaultOptions;
 ListView.moduleName = LISTVIEW_MODULE_NAME;
 ListView.folderName = LISTVIEW_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * ListView implements a list or listbox pattern.
+ *
+ * - Non-selectable: content role="list", items role="listitem"
+ * - Selectable: content role="listbox", items role="option"
+ * - Items have aria-setsize and aria-posinset
+ * - First item has tabindex=0
+ */
+ListView.ariaSpec = {
+    selector: '.k-listview',
+    rules: [
+        { selector: '.k-listview:not(.k-selectable) .k-listview-content', attribute: 'role=list', usage: 'Specifies the role of non selectable ListView content element.' },
+        { selector: '.k-listview.k-selectable .k-listview-content', attribute: 'role=listbox', usage: 'Specifies the role of selectable ListView content element.' },
+        { selector: '.k-listview:not(.k-selectable) .k-listview-item', attribute: 'role=listitem', usage: 'Specifies the role of each item in a non selectable ListView.' },
+        { selector: '.k-listview.k-selectable .k-listview-item', attribute: 'role=option', usage: 'Specifies the role of each item in a selectable ListView.' },
+        { selector: '.k-listview-item', attribute: 'aria-setsize', usage: 'Specifies the total number of items present in the ListView.' },
+        { selector: '.k-listview-item', attribute: 'aria-posinset', usage: 'Specifies the position of the current item in the entire list.' },
+        { selector: '.k-listview-item:nth-child(1)', attribute: 'tabindex=0', usage: 'The first item in the ListView must be focusable by default.' },
+    ]
+};
 
 export default ListView;

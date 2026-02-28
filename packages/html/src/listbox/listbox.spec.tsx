@@ -23,6 +23,12 @@ export type KendoListBoxProps = KendoListBoxOptions & {
     actionsPosition?: 'left' | 'right' | 'top' | 'bottom';
     actions?: string[];
     dir?: 'ltr' | 'rtl';
+    /** @aria aria-label for the listbox element */
+    'aria-label'?: string;
+    /** @aria aria-multiselectable when multiple selection is enabled */
+    multiselectable?: boolean;
+    /** @aria ID for the listbox element, referenced by toolbar aria-controls */
+    id?: string;
 };
 
 export type KendoListBoxState = { [K in (typeof states)[number]]?: boolean };
@@ -43,8 +49,23 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
         actionsPosition = defaultOptions.actionsPosition,
         actions,
         dir,
+        'aria-label': ariaLabel,
+        multiselectable,
+        id,
         ...other
     } = props;
+
+    const listId = id ? `${id}-list` : undefined;
+
+    const actionsLabelMap: Record<string, string> = {
+        "left": "Move left",
+        "right": "Move right",
+        "to": "Move all right",
+        "from": "Move all left",
+        "up": "Move up",
+        "down": "Move down",
+        "x": "Remove"
+    };
 
     return (
         <div
@@ -62,7 +83,11 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
             )}
         >
             { actions && (
-                <div className="k-listbox-actions">
+                <div className="k-listbox-actions"
+                    role="toolbar"
+                    aria-label="ListBox actions"
+                    aria-controls={listId}
+                >
                     {actions.map(action => {
 
                         const actionsIconMap = {
@@ -75,7 +100,7 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
                             "x": "x"
                         };
 
-                        return <Button key={action} icon={actionsIconMap[action]} size={size} />;
+                        return <Button key={action} icon={actionsIconMap[action]} size={size} aria-label={actionsLabelMap[action] || action} />;
                     })}
                 </div>
             )}
@@ -84,7 +109,11 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
                 'k-selectable'
             )}>
                 <List size={size}>
-                    <ListContent>{children}</ListContent>
+                    <ListContent
+                        aria-label={ariaLabel}
+                        aria-multiselectable={multiselectable}
+                        listboxId={listId}
+                    >{children}</ListContent>
                 </List>
             </div>
         </div>
@@ -97,5 +126,29 @@ ListBox.className = LISTBOX_CLASSNAME;
 ListBox.defaultOptions = defaultOptions;
 ListBox.moduleName = LISTBOX_MODULE_NAME;
 ListBox.folderName = LISTBOX_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * ListBox implements the WAI-ARIA listbox pattern.
+ *
+ * - List: role="listbox" with aria-label and optional aria-multiselectable
+ * - Items: role="option" with aria-selected and tabindex
+ * - Toolbar: role="toolbar" with aria-label and aria-controls
+ * - Toolbar buttons have aria-label for accessible names
+ */
+ListBox.ariaSpec = {
+    selector: '.k-listbox',
+    rules: [
+        { selector: '.k-listbox .k-list-ul', attribute: 'role=listbox', usage: 'Specifies the role of the ListBox list element.' },
+        { selector: '.k-listbox .k-list-ul', attribute: 'aria-label or aria-labelledby', usage: 'Adds a label to the list element of the ListBox.' },
+        { selector: '.k-listbox .k-list-item', attribute: 'role=option', usage: 'Specifies the role of the ListBox item element.' },
+        { selector: '.k-listbox .k-list-item', attribute: 'aria-selected=true/false', usage: 'Set to true if the item is selected.' },
+        { selector: '.k-listbox .k-list-item', attribute: 'tabindex', usage: 'The focused listbox item should have tabindex 0, all others -1.' },
+        { selector: '.k-listbox-actions', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons.' },
+        { selector: '.k-listbox-actions', attribute: 'aria-label', usage: 'Clarifies the purpose of the toolbar.' },
+        { selector: '.k-listbox-actions[aria-controls]', attribute: 'aria-controls', usage: 'Points to the id of the listbox element being controlled.' },
+        { selector: '.k-listbox-actions .k-button', attribute: 'aria-label or title', usage: 'All buttons in the toolbar must have labels.' },
+    ]
+};
 
 export default ListBox;

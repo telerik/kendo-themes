@@ -1,4 +1,4 @@
-import { classNames } from '../misc';
+import { classNames, nextId } from '../misc';
 import { CardHeader, CardBody, CardSubtitle } from '../card';
 import { TimelineCard, TimelineCardTitle, TimelineCircle } from '../timeline';
 
@@ -19,6 +19,8 @@ export type KendoVerticalTimelineEventProps = {
     title?: string;
     subtitle?: string;
     showCollapseButton?: boolean;
+    /** @aria unique id for aria-describedby linking */
+    id?: string;
 };
 
 const defaultOptions = {
@@ -41,8 +43,11 @@ export const VerticalTimelineEvent: KendoComponent<KendoVerticalTimelineEventPro
         title = defaultOptions.title,
         subtitle = defaultOptions.subtitle,
         showCollapseButton,
+        id = nextId('timeline-event'),
         ...other
     } = props;
+
+    const dateId = `${id}-date`;
 
     return (
         <li
@@ -52,10 +57,17 @@ export const VerticalTimelineEvent: KendoComponent<KendoVerticalTimelineEventPro
                 TIMELINEVERTICALEVENT_CLASSNAME,
                 { "k-reverse": reverse }
             )}>
-            {date && <div className="k-timeline-date-wrap"><span className="k-timeline-date">{date}</span></div>}
+            {date && <div className="k-timeline-date-wrap"><span className="k-timeline-date" id={dateId}>{date}</span></div>}
             {<TimelineCircle />}
             {content && <div className={classNames('k-timeline-card', { 'k-collapsed': collapsed } )}>
-                <TimelineCard { ...(reverse ? { callout: "right" } : { callout: "left" } )} >
+                <TimelineCard
+                    { ...(reverse ? { callout: "right" } : { callout: "left" } )}
+                    ariaRole="button"
+                    ariaDescribedBy={date ? dateId : undefined}
+                    ariaLive="polite"
+                    cardTabIndex={0}
+                    ariaExpanded={showCollapseButton ? !collapsed : undefined}
+                >
                     <div className="k-card-inner">
                         <CardHeader>
                             <TimelineCardTitle collapsible={showCollapseButton}>{title}</TimelineCardTitle>

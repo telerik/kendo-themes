@@ -5,11 +5,15 @@ import { Textbox } from "../../textbox";
 
 export const DropdownTreeFiltering = (props) => (
     <DropdownTree
+        id="ddt-filter"
+        aria-label="Select option"
         opened={true}
+        treeviewId="ddt-filter-treeview"
         popup={(
             <>
                 <div className="k-list-filter">
                     <Textbox
+                        aria-label="Search"
                         prefix={
                             <>
                                 <Icon icon="search" />

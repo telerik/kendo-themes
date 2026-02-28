@@ -4,6 +4,8 @@ import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectSuffix = (props) => (
     <MultiSelect
+        id="ms-suffix"
+        aria-label="Select options"
         suffix={
             <>
                 <TextButton fillMode="clear">Cc</TextButton>
@@ -11,7 +13,7 @@ export const MultiSelectSuffix = (props) => (
         }
         tags={(
             <>
-                <Chip text="Suffix" actions={ <ChipAction type="remove"/> } />
+                <Chip text="Suffix" role="option" selected actions={ <ChipAction type="remove"/> } />
             </>
         )}
         {...props}

@@ -3,10 +3,12 @@ import { List, ListContent, ListCustomValue, ListItem } from "../../list";
 
 export const AutocompleteCustomValue = ({ value="Custom value", ...other }: any) => (
     <Autocomplete value={value}
+        id="ac-custom"
+        aria-label="Search options"
         opened
         popup={
             <List customValue={<ListCustomValue text={`Use "${value}"`}/>} >
-                <ListContent>
+                <ListContent aria-label="Options">
                     <ListItem>List item</ListItem>
                     <ListItem>List item</ListItem>
                     <ListItem>List item</ListItem>

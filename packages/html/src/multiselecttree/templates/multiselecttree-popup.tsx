@@ -4,7 +4,11 @@ import { TreeviewGroup, TreeviewItem, Treeview } from "../../treeview";
 import MultiSelectTree from "../multiselecttree.spec";
 
 export const MultiSelectTreePopup = (props) => (
-    <MultiSelectTree opened
+    <MultiSelectTree
+        id="mst-1"
+        aria-label="Select items"
+        treeviewId="mst-1-treeview"
+        opened
         popup={(
             <>
                 <div className="k-check-all">

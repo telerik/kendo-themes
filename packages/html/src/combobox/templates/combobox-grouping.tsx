@@ -14,6 +14,7 @@ export const ComboboxGrouping = (props) => {
                 <List header="Group 1">
                     <ListContent grouping listboxId="combobox-grp-listbox" aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
+                            <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
                             <ListItem id={nextId('combobox-grp-item')}>List group 1 item 1</ListItem>
                             <ListItem id={nextId('combobox-grp-item')}>List group 1 item 2</ListItem>
                             <ListItem id={nextId('combobox-grp-item')}>List group 1 item 3</ListItem>

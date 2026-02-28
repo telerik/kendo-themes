@@ -7,10 +7,14 @@ import MultiSelectTree from "../multiselecttree.spec";
 
 export const MultiSelectTreeFiltering = (props) => (
     <MultiSelectTree opened
+        id="mst-filter"
+        aria-label="Select options"
+        treeviewId="mst-filter-treeview"
         popup={(
             <>
                 <div className="k-list-filter">
                     <Textbox
+                        aria-label="Search"
                         prefix={
                             <>
                                 <Icon icon="search" />
@@ -19,7 +23,7 @@ export const MultiSelectTreeFiltering = (props) => (
                     />
                 </div>
                 <div className="k-check-all">
-                    <Checkbox />
+                    <Checkbox aria-label="Check all" />
                     <span className="k-checkbox-label">
                         Check all
                     </span>

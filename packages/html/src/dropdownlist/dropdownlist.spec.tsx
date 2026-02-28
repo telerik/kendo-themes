@@ -54,6 +54,16 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveFilter?: boolean;
+    /**
+     * Unique identifier for the dropdownlist. Used to generate related IDs.
+     * @aria Controls aria-controls and aria-activedescendant references
+     */
+    id?: string;
+    /**
+     * ID of the currently focused/active item in the listbox.
+     * @aria aria-activedescendant - Points to focused item when popup is open
+     */
+    activeDescendant?: string;
 };
 
 export type KendoDropdownListState = { [K in (typeof states)[number]]?: boolean };
@@ -94,8 +104,14 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveFilter,
+        id,
+        activeDescendant,
+        'aria-label': ariaLabel,
         ...other
     } = props;
+
+    const listboxId = id ? `${id}-listbox` : undefined;
+    const innerSpanId = id ? `${id}-value` : undefined;
 
 
     return (
@@ -120,6 +136,15 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                         'k-icon-picker': !showValue && valueIconName
                     }
                 )}
+                role="combobox"
+                aria-haspopup="listbox"
+                aria-expanded={opened ? 'true' : 'false'}
+                aria-controls={opened ? listboxId : undefined}
+                aria-activedescendant={opened && activeDescendant ? activeDescendant : undefined}
+                aria-describedby={opened ? innerSpanId : undefined}
+                aria-disabled={disabled ? 'true' : undefined}
+                aria-label={ariaLabel}
+                tabIndex={0}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerSpan
@@ -127,6 +152,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     value={value}
                     showValue={showValue}
                     valueIconName={valueIconName}
+                    id={innerSpanId}
                 />
                 <InputValidationIcon
                     valid={valid}
@@ -143,10 +169,16 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     size={props.size}
                     fillMode={props.fillMode}
                     aria-label={placeholder || "Toggle dropdown"}
+                    tabIndex={-1}
                 />
             </Picker>
             {opened && popup &&
-                <Popup className="k-list-container k-dropdownlist-popup">
+                <Popup
+                    className="k-list-container k-dropdownlist-popup"
+                    containerClassName="k-dropdownlist-popup-container"
+                    containerRole="region"
+                    containerAriaLabel="Dropdown suggestions"
+                >
                     {popup}
                 </Popup>
             }
@@ -154,7 +186,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}
                             filter={adaptiveFilter}
                             inputValue={value}
                             inputPlaceholder={placeholder}
@@ -165,7 +197,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                 >
                     <div className="k-list-container">
                         <List size="large">
-                            <ListContent>
+                            <ListContent aria-label="Options">
                                 <ListItem text="List item" />
                                 <ListItem text="List item" />
                                 <ListItem text="List item" />
@@ -184,5 +216,25 @@ DropdownList.className = DROPDOWNLIST_CLASSNAME;
 DropdownList.defaultOptions = defaultOptions;
 DropdownList.moduleName = DROPDOWNLIST_MODULE_NAME;
 DropdownList.folderName = DROPDOWNLIST_FOLDER_NAME;
+
+/**
+ * @see List ariaSpec for popup listbox content
+ * @see ActionSheet ariaSpec for adaptive mode
+ */
+DropdownList.ariaSpec = {
+    rules: [
+        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'role=combobox', usage: 'Announces the dropdown element.' },
+        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-haspopup=listbox', usage: 'Indicates the presence of a listbox popup.' },
+        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-expanded', usage: 'Announces the visibility state of the popup.' },
+        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-label', usage: 'Accessible name for the dropdown.' },
+        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
+        { selector: '.k-dropdownlist.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered when the dropdown is disabled.' },
+        { selector: '.k-dropdownlist .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
+        { selector: '.k-dropdownlist .k-input-button', attribute: 'tabindex=-1', usage: 'The button must not be focusable.' },
+        { selector: '.k-dropdownlist-popup .k-list-content, .k-dropdownlist-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
+        { selector: '.k-dropdownlist-popup .k-list-ul[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
+        { selector: '.k-dropdownlist-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
+    ]
+};
 
 export default DropdownList;

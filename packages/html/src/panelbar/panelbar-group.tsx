@@ -8,10 +8,16 @@ const options = {};
 
 const defaultOptions = {};
 
+export type KendoPanelBarGroupProps = {
+    /** @aria When true, hides group from assistive technologies (parent collapsed) */
+    ariaHidden?: boolean;
+};
+
 export const PanelBarGroup = (
-    props: React.HTMLAttributes<HTMLUListElement>
+    props: KendoPanelBarGroupProps & React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
+        ariaHidden,
         ...other
     } = props;
 
@@ -22,6 +28,8 @@ export const PanelBarGroup = (
                 props.className,
                 PANELBARGROUP_CLASSNAME
             )}
+            role="group"
+            aria-hidden={ariaHidden ? 'true' : undefined}
         >
             {props.children}
         </ul>

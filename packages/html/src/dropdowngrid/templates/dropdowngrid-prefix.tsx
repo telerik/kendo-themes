@@ -3,6 +3,8 @@ import { Icon } from '../../icon';
 
 export const DropdownGridPrefix = (props) => (
     <DropdownGrid
+        id="ddg-prefix"
+        aria-label="Select option"
         prefix={
             <>
                 <Icon icon="map-marker-target" />

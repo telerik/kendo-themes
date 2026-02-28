@@ -15,6 +15,7 @@ export const ComboboxGroupingModernCustomValue = ({ value="Custom value", ...oth
                     <List header="Group 1" customValue={<ListCustomValue text={`Use "${value}"`}/>} >
                         <ListContent grouping listboxId="combobox-gcv-listbox" aria-label="Options">
                             <ListUl role="group" aria-labelledby={group1Id}>
+                                <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
                                 <ListItem id={nextId('combobox-gcv-item')}>List group 1 item 1</ListItem>
                                 <ListItem id={nextId('combobox-gcv-item')}>List group 1 item 2</ListItem>
                                 <ListItem id={nextId('combobox-gcv-item')}>List group 1 item 3</ListItem>

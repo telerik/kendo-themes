@@ -27,6 +27,20 @@ The following table summarizes the selectors and attributes supported by the Mul
 |  | `aria-label` | The button needs an accessible name that will be assigned to it. |
 |  | `tabindex=-1` | The button element must not be focusable. |
 
+### TagList
+
+
+The taglist element displays the selected items as chips. The following table summarizes the selectors and attributes supported by the taglist:
+
+| Selector | Attribute | Usage |
+| -------- | --------- | ----- |
+| `.k-multiselect .k-chip-list` | `role=listbox` | The taglist has listbox role to contain the selected items as options. |
+|  | `aria-label` or `aria-labelledby` | The taglist needs an accessible name. When a `<label>` element is associated with the MultiSelect, `aria-labelledby` should reference the label's `id`. |
+|  | `aria-orientation=horizontal` | Specifies the horizontal orientation of the taglist. |
+|  | `aria-multiselectable=true` | Announces multiple selection capability when applicable. |
+| `.k-multiselect .k-chip-list .k-chip` | `role=option` | Each tag chip is an option within the taglist listbox. |
+|  | `aria-selected=true` | Tags represent selected items and must have `aria-selected="true"`. |
+
 ### Popup Listbox
 
 

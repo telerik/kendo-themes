@@ -1,3 +1,4 @@
+import React from 'react';
 import { Icon } from '../icon';
 import { States, classNames, stateClassNames } from '../misc';
 
@@ -19,6 +20,8 @@ export type KendoPanelBarItemProps = {
     icon?: string;
     iconClass?: string;
     text?: string;
+    /** @aria aria-selected="true" when selected */
+    ariaSelected?: boolean;
 };
 
 export type PanelBarItemState = { [K in (typeof states)[number]]?: boolean };
@@ -45,9 +48,12 @@ export const PanelBarItem = (
         disabled,
         icon,
         iconClass,
+        ariaSelected,
         children,
         ...other
     } = props;
+
+    const hasChildren = !!children;
 
     return (
         <li
@@ -61,6 +67,10 @@ export const PanelBarItem = (
                     ["k-expanded"]: expanded
                 }
             )}
+            role="treeitem"
+            aria-expanded={hasChildren ? (expanded ? 'true' : 'false') : undefined}
+            aria-selected={ariaSelected ? 'true' : 'false'}
+            aria-disabled={disabled ? 'true' : undefined}
         >
             <span
                 className={classNames(
@@ -78,7 +88,7 @@ export const PanelBarItem = (
 
                 <span className="k-panelbar-item-text">{text}</span>
 
-                {children &&
+                {hasChildren &&
                     <Icon className={classNames(
                         "k-panelbar-toggle",
                         expanded
@@ -89,6 +99,9 @@ export const PanelBarItem = (
             </span>
 
             {expanded && children }
+            {!expanded && children && React.Children.map(children, child =>
+                React.isValidElement(child) ? React.cloneElement(child, { ariaHidden: true, style: { display: 'none' } } as any) : child
+            )}
         </li>
     );
 };
