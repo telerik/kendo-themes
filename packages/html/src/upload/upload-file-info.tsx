@@ -28,7 +28,7 @@ export const UploadFileInfo = (
             )}>
             {name && <span className="k-file-name">{name}</span>}
             {size && <span className="k-file-size">{size}</span>}
-            {validationMsg && <span className="k-file-validation-message">{validationMsg}</span>}
+            {validationMsg && <span className="k-file-validation-message" aria-live="polite">{validationMsg}</span>}
         </div>
     );
 };

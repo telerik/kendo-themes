@@ -12,7 +12,7 @@ export const PromptOutput = (props) => (
             <Toolbar fillMode="flat">
                 <IconTextButton fillMode="flat" themeColor="primary" icon="sparkles" rounded="full">Ask AI</IconTextButton>
                 <IconTextButton fillMode="flat" themeColor="primary" icon="comment" rounded="full" selected>Output</IconTextButton>
-                <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full"></IconButton>
+                <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full" aria-label="More actions"></IconButton>
             </Toolbar>
         </PromptHeader>
         <PromptContent>
@@ -27,10 +27,10 @@ export const PromptOutput = (props) => (
                         <ActionButtons className="k-card-actions" alignment="start">
                             <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
                             <IconTextButton fillMode="flat" icon="arrow-rotate-cw">Retry</IconTextButton>
-                            <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal"></IconButton>
+                            <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" aria-label="More actions"></IconButton>
                             <span className="k-spacer"></span>
-                            <IconButton fillMode="flat" icon="thumb-up-outline"></IconButton>
-                            <IconButton fillMode="flat" icon="thumb-down-outline"></IconButton>
+                            <IconButton fillMode="flat" icon="thumb-up-outline" aria-label="Thumbs up"></IconButton>
+                            <IconButton fillMode="flat" icon="thumb-down-outline" aria-label="Thumbs down"></IconButton>
                         </ActionButtons>
                     </Card>
 
@@ -42,10 +42,10 @@ export const PromptOutput = (props) => (
                         <ActionButtons className="k-card-actions" alignment="start">
                             <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
                             <IconTextButton fillMode="flat" icon="arrow-rotate-cw">Retry</IconTextButton>
-                            <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal"></IconButton>
+                            <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" aria-label="More actions"></IconButton>
                             <span className="k-spacer"></span>
-                            <IconButton fillMode="flat" icon="thumb-up-outline"></IconButton>
-                            <IconButton fillMode="flat" icon="thumb-down-outline"></IconButton>
+                            <IconButton fillMode="flat" icon="thumb-up-outline" aria-label="Thumbs up"></IconButton>
+                            <IconButton fillMode="flat" icon="thumb-down-outline" aria-label="Thumbs down"></IconButton>
                         </ActionButtons>
                     </Card>
                 </div>

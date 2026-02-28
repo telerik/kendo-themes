@@ -10,6 +10,9 @@ const states = [
 
 export type KendoUploadDropzoneProps = {
     status?: 'upload' | 'uploading' | 'done' | 'failed';
+    disabled?: boolean;
+    hasFiles?: boolean;
+    filesId?: string;
 };
 
 export type KendoUploadDropzoneState = { [K in (typeof states)[number]]?: boolean };
@@ -22,6 +25,9 @@ export const UploadDropzone = (
     const {
         hover,
         status,
+        disabled,
+        hasFiles,
+        filesId,
         ...other
     } = props;
 
@@ -55,10 +61,14 @@ export const UploadDropzone = (
             )}
         >
             <div className="k-upload-button-wrap">
-                <Button className="k-upload-button">
+                <Button
+                    className="k-upload-button"
+                    aria-disabled={disabled ? 'true' : 'false'}
+                    {...(hasFiles && filesId ? { 'aria-controls': filesId } : {})}
+                >
                     Select files...
                 </Button>
-                <input id="upload-input" className="k-hidden" />
+                <input id="upload-input" className="k-hidden" tabIndex={-1} aria-hidden="true" />
             </div>
             <span className={classNames(
                 'k-dropzone-hint',

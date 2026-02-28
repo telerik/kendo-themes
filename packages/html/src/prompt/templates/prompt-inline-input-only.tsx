@@ -8,8 +8,9 @@ export const PromptInlineInputOnly = ({ ...other }: any) => (
         <PromptContent>
             <PromptView>
                 <Textarea rows={1} placeholder="Edit, generate or explain ..." resize="none" flow="horizontal" suffixSeparator={false}
+                    aria-label="Edit, generate or explain"
                     prefix={<>
-                        <IconButton fillMode="flat" icon="menu" />
+                        <IconButton fillMode="flat" icon="menu" aria-label="Menu" />
                         <SpeechToTextButton fillMode="flat" />
                     </>}
                     suffix={<>

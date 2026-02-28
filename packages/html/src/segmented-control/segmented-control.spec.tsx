@@ -47,8 +47,9 @@ export const SegmentedControl: KendoComponent<KendoSegmentedControlProps & Kendo
                     [`${SEGMENTED_CONTROL_CLASSNAME}-stretched`]: stretched
                 }
             )}
+            role="group"
         >
-            <div className="k-segmented-control-thumb"></div>
+            <div className="k-segmented-control-thumb" aria-hidden="true"></div>
             { children }
         </div>
     );
@@ -59,5 +60,19 @@ SegmentedControl.options = options;
 SegmentedControl.className = SEGMENTED_CONTROL_CLASSNAME;
 SegmentedControl.moduleName = SEGMENTED_CONTROL_MODULE_NAME;
 SegmentedControl.folderName = SEGMENTED_CONTROL_FOLDER_NAME;
+
+/**
+ * @see Button ariaSpec for base button accessibility within segmented control buttons
+ */
+SegmentedControl.ariaSpec = {
+    selector: '.k-segmented-control',
+    rules: [
+        { selector: '.k-segmented-control', attribute: 'role=group', usage: 'Sets the proper role for the group of buttons.' },
+        { selector: '.k-segmented-control-button', attribute: 'role=button or nodeName=button', usage: 'Each button must have the appropriate button role.' },
+        { selector: '.k-segmented-control-button.k-selected', attribute: 'aria-pressed=true', usage: 'Only the selected button within the group will have this attribute set to true.' },
+        { selector: '.k-segmented-control-button.k-disabled', attribute: 'aria-disabled=true', usage: 'Indicates that the button is disabled and cannot be interacted with.' },
+        { selector: '.k-segmented-control-thumb', attribute: 'aria-hidden=true', usage: 'The thumb is purely decorative and should be hidden from screen readers.' },
+    ]
+};
 
 export default SegmentedControl;

@@ -14,18 +14,18 @@ export type KendoImageEditorToolbarProps = {
 };
 
 const defaultToolbarItems = [
-    <Button key="toolbar-button-1" icon="upload"></Button>,
-    <Button key="toolbar-button-2" disabled icon="download"></Button>,
+    <Button key="toolbar-button-1" icon="upload" aria-label="Upload"></Button>,
+    <Button key="toolbar-button-2" disabled icon="download" aria-label="Download"></Button>,
     <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
-    <Button key="toolbar-button-3" disabled icon="undo"></Button>,
-    <Button key="toolbar-button-4" disabled icon="redo"></Button>,
+    <Button key="toolbar-button-3" disabled icon="undo" aria-label="Undo"></Button>,
+    <Button key="toolbar-button-4" disabled icon="redo" aria-label="Redo"></Button>,
     <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
-    <Button key="toolbar-button-5" disabled icon="crop"></Button>,
-    <Button key="toolbar-button-6" disabled icon="image-resize"></Button>,
-    <Button key="toolbar-button-7" disabled icon="zoom-in"></Button>,
-    <Button key="toolbar-button-8" disabled icon="zoom-out"></Button>,
+    <Button key="toolbar-button-5" disabled icon="crop" aria-label="Crop"></Button>,
+    <Button key="toolbar-button-6" disabled icon="image-resize" aria-label="Resize"></Button>,
+    <Button key="toolbar-button-7" disabled icon="zoom-in" aria-label="Zoom in"></Button>,
+    <Button key="toolbar-button-8" disabled icon="zoom-out" aria-label="Zoom out"></Button>,
     <ToolbarItem key="toolbar-item-1">
-        <DropdownList disabled value="Zoom options" />
+        <DropdownList disabled value="Zoom options" aria-label="Zoom options" />
     </ToolbarItem>
 ];
 

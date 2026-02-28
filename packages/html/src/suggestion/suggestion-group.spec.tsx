@@ -42,7 +42,9 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
                     [`${SUGGESTIONGROUP_CLASSNAME}-scrollable-end`]: scrollingPosition === 'end' || scrollingPosition === 'both'
                 },
                 props.className
-            )}>
+            )}
+            role="group"
+        >
             {(layout === 'scrollable' || layout === 'scrollButtons') ? (
                 <div className="k-suggestions-scroll">
                     {props.children}

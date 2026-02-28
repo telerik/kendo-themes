@@ -27,6 +27,8 @@ If `aria/[component]_aria.md` exists, migrate its rule table into `ariaSpec.rule
 
 Flag and fix issues before applying (wrong selectors, contradictory roles like `role="alert"` + `aria-live="polite"`, missing states).
 
+**Rule changes require explicit user permission:** Never add, remove, or modify ariaSpec rules without asking the user first. Present proposed rule changes and wait for approval before applying them.
+
 **Selector validation — always verify against actual rendered HTML:**
 
 The markdown spec selectors may not match the actual class names or DOM structure produced by the TSX component. Before adding a rule, check that:
