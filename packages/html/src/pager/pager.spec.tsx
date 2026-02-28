@@ -130,6 +130,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left"}
+                        aria-label="Go to first page"
                     >
                     </Button><Button
                         className={classNames(
@@ -139,6 +140,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left"}
+                        aria-label="Go to previous page"
                     >
                     </Button>
                 </>
@@ -157,7 +159,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                             'k-pager-input'
                         )}>
                         { pageTitleInfo && <span>Page</span> }
-                        <NumericTextbox value={`${currentPage}`} size={size} showSpinButton={false} showClearButton={false}></NumericTextbox>
+                        <NumericTextbox value={`${currentPage}`} size={size} showSpinButton={false} showClearButton={false} aria-label="Current page"></NumericTextbox>
                         <span>{ maxPagesInfo && `of ${maxPages}`}</span>
                     </span> }
                 {previousNext &&
@@ -170,6 +172,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
+                        aria-label="Go to next page"
                     >
                     </Button>
                     <Button
@@ -181,6 +184,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
+                        aria-label="Go to last page"
                     >
                     </Button>
                 </>

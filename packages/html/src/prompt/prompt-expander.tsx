@@ -1,5 +1,5 @@
 import { IconTextButton } from '../button';
-import { classNames } from '../misc';
+import { classNames, nextId } from '../misc';
 
 export const PROMPTEXPANDER_CLASSNAME = `k-prompt-expander`;
 
@@ -19,6 +19,9 @@ export const PromptExpander = (
         expanded,
         ...other
     } = props;
+
+    const contentId = nextId('prompt-expander-content');
+
     return (
         <div
             {...other}
@@ -29,11 +32,13 @@ export const PromptExpander = (
             <IconTextButton
                 fillMode="flat"
                 icon={expanded ? "chevron-up" : "chevron-down"}
+                aria-expanded={expanded ? 'true' : 'false'}
+                aria-controls={expanded ? contentId : undefined}
             >
                 {title}
             </IconTextButton>
             {expanded && (
-                <div className="k-prompt-expander-content">
+                <div className="k-prompt-expander-content" id={contentId}>
                     {children}
                 </div>
             )}

@@ -7,4 +7,5 @@ export * from './templates/upload-chunk';
 export * from './templates/upload-batch';
 export * from './templates/upload-normal';
 export * from './templates/upload-with-action-buttons';
+export * from './templates/upload-validation';
 export * from './demos/upload';

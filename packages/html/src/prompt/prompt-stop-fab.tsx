@@ -40,6 +40,7 @@ export const PromptStopFloatingActionButton = (
             position="bottom-end"
             icon={generating ? 'stop-sm' : icon}
             active={generating}
+            aria-label={generating ? 'Stop generating' : 'Action'}
         >
         </FloatingActionButton>
     );

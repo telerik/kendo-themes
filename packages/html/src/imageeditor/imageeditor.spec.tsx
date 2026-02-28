@@ -43,7 +43,7 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
             <div className="k-imageeditor-content" style={{ height: contentHeight }}>
                 <div className="k-imageeditor-canvas-container">
                     <div className="k-imageeditor-canvas">
-                        {children}
+                        {children || <canvas role="img" aria-label="Image being edited" />}
                     </div>
                 </div>
 
@@ -61,5 +61,17 @@ ImageEditor.className = IMAGEEDITOR_CLASSNAME;
 ImageEditor.defaultOptions = defaultOptions;
 ImageEditor.moduleName = IMAGEEDITOR_MODULE_NAME;
 ImageEditor.folderName = IMAGEEDITOR_FOLDER_NAME;
+
+/**
+ * @see Toolbar ariaSpec for the image editor toolbar
+ * @see Form ariaSpec for the crop/resize action pane
+ */
+ImageEditor.ariaSpec = {
+    selector: '.k-imageeditor',
+    rules: [
+        { selector: '.k-imageeditor-canvas>canvas', attribute: 'role=img', usage: 'Indicates the canvas role as an image.' },
+        { selector: '.k-imageeditor-canvas>canvas', attribute: 'aria-label or aria-labelledby', usage: 'Provides an accessible name for the canvas by describing the image content.' },
+    ]
+};
 
 export default ImageEditor;
