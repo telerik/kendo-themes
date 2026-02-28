@@ -31,6 +31,8 @@ export type KendoTreeviewItemProps = {
     checked?: boolean;
     dir?: 'ltr' | 'rtl';
     level?: number;
+    /** @aria aria-selected="true" when node is selected */
+    ariaSelected?: boolean;
 };
 
 export type KendoTreeviewItemState = { [K in (typeof states)[number]]?: boolean };
@@ -56,6 +58,7 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
         disabled,
         dir,
         level = 1,
+        ariaSelected,
         ...other
     } = props;
 
@@ -69,6 +72,11 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
                 TREEVIEWITEM_CLASSNAME
             )}
             style={{ '--kendo-treeview-level': level } as React.CSSProperties}
+            role="treeitem"
+            aria-expanded={_hasChildren ? (expanded ? 'true' : 'false') : undefined}
+            aria-checked={showCheckbox ? (checked ? 'true' : 'false') : undefined}
+            aria-selected={ariaSelected ? 'true' : undefined}
+            aria-disabled={disabled ? 'true' : undefined}
         >
             <span
                 className={classNames(
@@ -91,7 +99,7 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
                     </span>
                 )}
                 {showCheckbox && (
-                    <Checkbox checked={checked} disabled={disabled} />
+                    <Checkbox checked={checked} disabled={disabled} aria-label={text} tabIndex={-1} />
                 )}
                 <TreeviewLeaf
                     className={leafClassName}

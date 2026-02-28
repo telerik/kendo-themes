@@ -6,14 +6,35 @@ const states = [];
 
 const defaultOptions = {};
 
+export type KendoTimelineCardProps = KendoCardProps & {
+    /** @aria role for the card element (button for vertical, tabpanel for horizontal) */
+    ariaRole?: string;
+    /** @aria aria-describedby pointing to the date element */
+    ariaDescribedBy?: string;
+    /** @aria aria-live region for vertical cards */
+    ariaLive?: 'polite' | 'off';
+    /** @aria aria-expanded for collapsible vertical cards */
+    ariaExpanded?: boolean;
+    /** @aria aria-label for horizontal tabpanel */
+    ariaLabel?: string;
+    /** @aria tab index for focusable cards */
+    cardTabIndex?: number;
+};
+
 export const TimelineCard = (
     props:
-    KendoCardProps &
+    KendoTimelineCardProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
         callout,
         children,
+        ariaRole,
+        ariaDescribedBy,
+        ariaLive,
+        ariaExpanded,
+        ariaLabel,
+        cardTabIndex,
         ...other
     } = props;
 
@@ -24,6 +45,12 @@ export const TimelineCard = (
             )}
             orientation="vertical"
             callout="true"
+            role={ariaRole}
+            aria-describedby={ariaDescribedBy}
+            aria-live={ariaLive}
+            aria-expanded={ariaExpanded !== undefined ? (ariaExpanded ? 'true' : 'false') : undefined}
+            aria-label={ariaLabel}
+            tabIndex={cardTabIndex}
             {...other}
         >
             { callout && <TimelineCardCallout callout={callout} />}

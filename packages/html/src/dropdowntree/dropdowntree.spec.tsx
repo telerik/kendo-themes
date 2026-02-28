@@ -55,6 +55,16 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     adaptiveSubtitle?: string;
     adaptiveFilter?: boolean;
     dir?: 'ltr' | 'rtl';
+    /**
+     * Unique identifier for the dropdowntree. Used to generate related IDs.
+     * @aria Controls aria-controls references
+     */
+    id?: string;
+    /**
+     * ID of the treeview element in the popup.
+     * @aria aria-controls - Points to treeview when popup is open
+     */
+    treeviewId?: string;
 };
 
 export type KendoDropdownTreeState = { [K in (typeof states)[number]]?: boolean };
@@ -96,8 +106,13 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
         adaptiveSubtitle,
         adaptiveFilter,
         dir,
+        id,
+        treeviewId,
+        'aria-label': ariaLabel,
         ...other
     } = props;
+
+    const innerSpanId = id ? `${id}-value` : undefined;
 
 
     return (
@@ -123,6 +138,14 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                         'k-icon-picker': !showValue && valueIconName
                     }
                 )}
+                role="combobox"
+                aria-haspopup="tree"
+                aria-expanded={opened ? 'true' : 'false'}
+                aria-controls={opened ? treeviewId : undefined}
+                aria-describedby={opened ? innerSpanId : undefined}
+                aria-disabled={disabled ? 'true' : undefined}
+                aria-label={ariaLabel}
+                tabIndex={0}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerSpan
@@ -130,6 +153,7 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                     value={value}
                     showValue={showValue}
                     valueIconName={valueIconName}
+                    id={innerSpanId}
                 />
                 <InputValidationIcon
                     valid={valid}
@@ -145,10 +169,18 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                     icon={arrowIconName}
                     size={props.size}
                     fillMode={props.fillMode}
+                    aria-label="Open popup"
+                    tabIndex={-1}
                 />
             </Picker>
             {opened && popup &&
-                <Popup className="k-list-container k-dropdowntree-popup" dir={dir}>
+                <Popup
+                    className="k-list-container k-dropdowntree-popup"
+                    dir={dir}
+                    containerClassName="k-dropdowntree-popup-container"
+                    containerRole="region"
+                    containerAriaLabel="DropdownTree options"
+                >
                     {popup}
                 </Popup>
             }
@@ -156,7 +188,7 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                 header={
                     <ActionSheetHeader
-                        actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                        actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}
                         filter={adaptiveFilter}
                         inputValue={value}
                         inputPlaceholder={placeholder}
@@ -198,5 +230,22 @@ DropdownTree.className = DROPDOWNTREE_CLASSNAME;
 DropdownTree.defaultOptions = defaultOptions;
 DropdownTree.moduleName = DROPDOWNTREE_MODULE_NAME;
 DropdownTree.folderName = DROPDOWNTREE_FOLDER_NAME;
+
+/**
+ * @see Treeview ariaSpec for the tree in the popup
+ * @see ActionSheet ariaSpec for adaptive mode
+ */
+DropdownTree.ariaSpec = {
+    rules: [
+        { selector: '.k-dropdowntree', attribute: 'role=combobox', usage: 'Announces the dropdown tree element.' },
+        { selector: '.k-dropdowntree', attribute: 'aria-haspopup=tree', usage: 'Indicates the presence of a tree popup.' },
+        { selector: '.k-dropdowntree', attribute: 'aria-expanded', usage: 'Announces the popup visibility state.' },
+        { selector: '.k-dropdowntree', attribute: 'aria-label', usage: 'Accessible name for the dropdown tree.' },
+        { selector: '.k-dropdowntree', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
+        { selector: '.k-dropdowntree.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered when the dropdown tree is disabled.' },
+        { selector: '.k-dropdowntree .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
+        { selector: '.k-dropdowntree .k-input-button', attribute: 'tabindex=-1', usage: 'The button must not be focusable.' },
+    ]
+};
 
 export default DropdownTree;

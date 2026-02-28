@@ -4,14 +4,16 @@ import DropdownList from "../dropdownlist.spec";
 
 export const DropdownListFiltering = (props) => (
     <DropdownList
+        id="ddl-filtering"
+        aria-label="Filter options"
         opened={true}
         popup={
             <>
                 <div className="k-list-filter">
-                    <Searchbox />
+                    <Searchbox aria-label="Search" />
                 </div>
                 <List>
-                    <ListContent>
+                    <ListContent aria-label="Options">
                         <ListItem>List item</ListItem>
                         <ListItem>List item</ListItem>
                         <ListItem>List item</ListItem>

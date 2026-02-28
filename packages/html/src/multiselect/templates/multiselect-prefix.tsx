@@ -4,6 +4,8 @@ import { Chip, ChipAction } from "../../chip";
 
 export const MultiSelectPrefix = (props) => (
     <MultiSelect
+        id="ms-prefix"
+        aria-label="Select options"
         prefix={
             <>
                 <Icon icon="user" />
@@ -11,7 +13,7 @@ export const MultiSelectPrefix = (props) => (
         }
         tags={(
             <>
-                <Chip text="Prefix" actions={ <ChipAction type="remove"/> } />
+                <Chip text="Prefix" role="option" selected actions={ <ChipAction type="remove"/> } />
             </>
         )}
         {...props}

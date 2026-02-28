@@ -3,11 +3,13 @@ import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectCustomValue = ({ value="Custom value", ...other }: any) => (
     <MultiSelect value={value}
+        id="ms-custom"
+        aria-label="Select options"
         opened
         popup={(
             <>
                 <List customValue={<ListCustomValue text={`Use "${value}"`}/>} >
-                    <ListContent>
+                    <ListContent aria-label="Options">
                         <ListItem>List item</ListItem>
                         <ListItem>List item</ListItem>
                         <ListItem>List item</ListItem>

@@ -10,4 +10,5 @@ export * from "./templates/multiselect-grouping-virtual-custom-value";
 export * from "./templates/multiselect-prefix";
 export * from "./templates/multiselect-suffix";
 export * from "./templates/multiselect-custom-value";
+export * from "./templates/multiselect-disabled";
 export * from './demos/multiselect';

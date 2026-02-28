@@ -4,13 +4,22 @@ const className = `k-table-group-row`;
 
 export const TableListGroupRow = (
     props: React.HTMLAttributes<HTMLLIElement>
-) => (
-    <li
-        className={classNames(
-            props.className,
-            className,
-        )}
-    >
-        {props.children}
-    </li>
-);
+) => {
+    const {
+        className: propsClassName,
+        children,
+        ...other
+    } = props;
+
+    return (
+        <li
+            {...other}
+            className={classNames(
+                propsClassName,
+                className,
+            )}
+        >
+            {children}
+        </li>
+    );
+};

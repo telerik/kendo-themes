@@ -58,6 +58,16 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveCustomValue?: boolean;
+    /**
+     * Unique identifier for the multiselect. Used to generate related IDs.
+     * @aria Controls aria-controls references
+     */
+    id?: string;
+    /**
+     * ID of the currently focused/active item in the listbox.
+     * @aria aria-activedescendant - Points to focused item when popup is open
+     */
+    activeDescendant?: string;
 };
 
 export type KendoMultiSelectState = { [K in (typeof states)[number]]?: boolean };
@@ -97,8 +107,14 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveCustomValue,
+        id,
+        activeDescendant,
+        'aria-label': ariaLabel,
         ...other
     } = props;
+
+    const listboxId = id ? `${id}-listbox` : undefined;
+    const chipListId = id ? `${id}-taglist` : undefined;
 
 
     return (
@@ -125,12 +141,27 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                     </>
                 }
                 <div className="k-input-values">
-                    <ChipList size={size}>
+                    <ChipList size={size} id={chipListId}>
                         <>
                             {tags}
                         </>
                     </ChipList>
-                    <InputInnerInput placeholder={placeholder} value={value} />
+                    <InputInnerInput
+                        placeholder={placeholder}
+                        value={value}
+                        role="combobox"
+                        aria-haspopup="listbox"
+                        aria-expanded={opened ? 'true' : 'false'}
+                        aria-controls={opened ? listboxId : undefined}
+                        aria-activedescendant={opened && activeDescendant ? activeDescendant : undefined}
+                        aria-autocomplete="list"
+                        aria-describedby={tags ? chipListId : undefined}
+                        aria-invalid={invalid ? 'true' : undefined}
+                        aria-busy={loading ? 'true' : undefined}
+                        aria-label={ariaLabel}
+                        disabled={disabled}
+                        readOnly={readonly}
+                    />
                 </div>
                 <InputValidationIcon
                     valid={valid}
@@ -157,11 +188,18 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                         icon="caret-alt-down"
                         size={size}
                         fillMode={fillMode}
+                        aria-label="Toggle dropdown"
+                        tabIndex={-1}
                     />
                 )}
             </Input>
             {opened && popup &&
-                <Popup className="k-list-container k-multiselect-popup">
+                <Popup
+                    className="k-list-container k-multiselect-popup"
+                    containerClassName="k-multiselect-popup-container"
+                    containerRole="region"
+                    containerAriaLabel="MultiSelect suggestions"
+                >
                     {popup}
                 </Popup>
             }
@@ -169,7 +207,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}
                             input={true}
                             inputValue={value}
                             inputPlaceholder={placeholder}
@@ -180,7 +218,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                 >
                     <div className="k-list-container">
                         <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-                            <ListContent>
+                            <ListContent aria-label="Options">
                                 <ListItem text="List item" />
                                 <ListItem text="List item" />
                                 <ListItem text="List item" />
@@ -199,5 +237,32 @@ MultiSelect.className = MULTISELECT_CLASSNAME;
 MultiSelect.defaultOptions = defaultOptions;
 MultiSelect.moduleName = MULTISELECT_MODULE_NAME;
 MultiSelect.folderName = MULTISELECT_FOLDER_NAME;
+
+/**
+ * @see List ariaSpec for popup listbox content
+ * @see ActionSheet ariaSpec for adaptive mode
+ */
+MultiSelect.ariaSpec = {
+    rules: [
+        // Combobox input
+        { selector: '.k-multiselect .k-input-inner', attribute: 'role=combobox', usage: 'Announces the multiselect input.' },
+        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the component has a listbox popup.' },
+        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-expanded', usage: 'Announces the popup visibility.' },
+        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the multiselect.' },
+        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-autocomplete=list', usage: 'Indicates list filtering capability.' },
+        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-describedby', usage: 'Points to the taglist element that contains the selected items.' },
+        { selector: '.k-multiselect.k-disabled .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the multiselect is disabled.' },
+        // TagList (ChipList)
+        { selector: '.k-multiselect .k-chip-list', attribute: 'role=listbox', usage: 'The taglist has listbox role for selected items.' },
+        { selector: '.k-multiselect .k-chip-list', attribute: 'aria-label or aria-labelledby', usage: 'The taglist needs an accessible name.' },
+        { selector: '.k-multiselect .k-chip-list', attribute: 'aria-orientation=horizontal', usage: 'Specifies horizontal orientation of the taglist.' },
+        { selector: '.k-multiselect .k-chip-list .k-chip', attribute: 'role=option', usage: 'Each tag chip is an option within the taglist listbox.' },
+        { selector: '.k-multiselect .k-chip-list .k-chip', attribute: 'aria-selected=true', usage: 'Tags represent selected items and must have aria-selected=true.' },
+        // Popup listbox
+        { selector: '.k-multiselect-popup .k-list-content, .k-multiselect-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
+        { selector: '.k-multiselect-popup .k-list-ul[role="listbox"], .k-multiselect-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
+        { selector: '.k-multiselect-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
+    ]
+};
 
 export default MultiSelect;
