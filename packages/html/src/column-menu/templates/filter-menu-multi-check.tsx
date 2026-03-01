@@ -7,7 +7,7 @@ export const FilterMenuMultiCheck = (props) => (
     <FilterMenu
         children={
             <>
-                <Searchbox placeholder="Search..." />
+                <Searchbox placeholder="Search..." aria-label="Search columns" />
                 <ColumnMenuMulticheckWrap>
                     <ColumnMenuMulticheckItem text="Select All" className="k-check-all-wrap" />
                     <ColumnMenuMulticheckItem text="Column 1" />

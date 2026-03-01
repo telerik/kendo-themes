@@ -11,62 +11,62 @@ export const FilterNormal = ({ children, ...other }: any) => (
     <Filter {...other}>
         {children || <>
             <FilterToolbar>
-                <Toolbar>
+                <Toolbar aria-label="Filter group">
                     <ButtonGroup>
                         <Button className="k-group-start" selected>And</Button>
                         <Button className="k-group-end">Or</Button>
                     </ButtonGroup>
                     <Button icon="filter-add-expression">Add Expression</Button>
                     <Button icon="filter-add-group">Add Group</Button>
-                    <Button fillMode="flat" icon="x"></Button>
+                    <Button fillMode="flat" icon="x" aria-label="Remove group" title="Remove group"></Button>
                 </Toolbar>
             </FilterToolbar>
             <FilterLines>
                 <FilterItem>
                     <FilterToolbar>
-                        <Toolbar>
+                        <Toolbar aria-label="Filter expression">
                             <ToolbarItem className="k-filter-field">
-                                <DropdownList value="Name" />
+                                <DropdownList value="Name" aria-label="Field" />
                             </ToolbarItem>
                             <ToolbarItem className="k-filter-operator">
-                                <DropdownList value="Is equal to" />
+                                <DropdownList value="Is equal to" aria-label="Operator" />
                             </ToolbarItem>
                             <ToolbarItem className="k-filter-value">
-                                <Textbox placeholder="James"/>
+                                <Textbox placeholder="James" aria-label="Value"/>
                             </ToolbarItem>
-                            <Button fillMode="flat" icon="x"></Button>
+                            <Button fillMode="flat" icon="x" aria-label="Remove expression" title="Remove expression"></Button>
                         </Toolbar>
                     </FilterToolbar>
                 </FilterItem>
                 <FilterItem>
                     <FilterToolbar>
-                        <Toolbar>
+                        <Toolbar aria-label="Filter expression">
                             <ToolbarItem className="k-filter-field">
-                                <DropdownList value="Price" />
+                                <DropdownList value="Price" aria-label="Field" />
                             </ToolbarItem>
                             <ToolbarItem className="k-filter-operator">
-                                <DropdownList value="Is greater than" />
+                                <DropdownList value="Is greater than" aria-label="Operator" />
                             </ToolbarItem>
                             <ToolbarItem className="k-filter-value">
-                                <NumericTextbox placeholder="100,00"/>
+                                <NumericTextbox placeholder="100,00" aria-label="Value"/>
                             </ToolbarItem>
-                            <Button fillMode="flat" icon="x"></Button>
+                            <Button fillMode="flat" icon="x" aria-label="Remove expression" title="Remove expression"></Button>
                         </Toolbar>
                     </FilterToolbar>
                 </FilterItem>
                 <FilterItem>
                     <FilterToolbar>
-                        <Toolbar>
+                        <Toolbar aria-label="Filter expression">
                             <ToolbarItem className="k-filter-field">
-                                <DropdownList value="First Ordered" />
+                                <DropdownList value="First Ordered" aria-label="Field" />
                             </ToolbarItem>
                             <ToolbarItem className="k-filter-operator">
-                                <DropdownList value="Is before" />
+                                <DropdownList value="Is before" aria-label="Operator" />
                             </ToolbarItem>
                             <ToolbarItem className="k-filter-value">
                                 <DatePicker placeholder="1/21/2021" />
                             </ToolbarItem>
-                            <Button fillMode="flat" icon="x"></Button>
+                            <Button fillMode="flat" icon="x" aria-label="Remove expression" title="Remove expression"></Button>
                         </Toolbar>
                     </FilterToolbar>
                 </FilterItem>

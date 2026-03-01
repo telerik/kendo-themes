@@ -8,11 +8,11 @@ export const FilterMenuNormal = (props) => (
     <FilterMenu
         children={
             <>
-                <DropdownList value="Contains" />
-                <Textbox placeholder="Filter..." />
-                <DropdownList value="And" className="k-filter-and" />
-                <DropdownList value="Contains" />
-                <Textbox placeholder="Filter..." />
+                <DropdownList value="Contains" aria-label="First filter operator" />
+                <Textbox placeholder="Filter..." aria-label="First filter value" />
+                <DropdownList value="And" className="k-filter-and" aria-label="Logic operator" />
+                <DropdownList value="Contains" aria-label="Second filter operator" />
+                <Textbox placeholder="Filter..." aria-label="Second filter value" />
                 <ActionButtons alignment="stretched">
                     <Button icon="filter" themeColor="primary">Filter</Button>
                     <Button icon="filter-clear">Clear</Button>
