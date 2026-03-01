@@ -26,11 +26,12 @@ export const FileManagerListView: KendoComponent<KendoListViewProps & React.HTML
             className={classNames(
                 props.className,
                 FILEMANAGERLISTVIEW_CLASSNAME,
-                "k-selectable",
             )}
             layout="flex"
             flexDirection="row"
             flexWrap="wrap"
+            selectable
+            contentAriaLabel="Files"
             {...other}
         >
             {children}
