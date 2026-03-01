@@ -2,9 +2,8 @@ import { SmartBox, SmartBoxSendButton }  from "../";
 import { Icon } from '../../icon';
 import { IconButton } from '../../button';
 
-export const SmartBoxProcessing = (props) =>
+export const SmartBoxDisabledSend = (props) =>
     <SmartBox {...props}
-        processing
         separators={false}
         inputAriaLabel="AI-powered search"
         prefix={
@@ -15,7 +14,7 @@ export const SmartBoxProcessing = (props) =>
         suffix={
             <>
                 <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" aria-label="Start voice input" />
-                <SmartBoxSendButton processing />
+                <SmartBoxSendButton disabled />
             </>
         }
     />;
