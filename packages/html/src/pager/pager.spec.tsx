@@ -84,16 +84,19 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
     for (let i = 1; i <= maxPages; i++) {
         pageButtons.push(
             <Button
+                key={i}
                 selected={i === currentPage ? true : false}
                 fillMode="flat"
                 themeColor="primary"
                 size={size}
+                aria-label={`Page ${i}`}
+                {...(i === currentPage && { 'aria-current': 'page' as const })}
             >
                 {i}
             </Button>
         );
         options.push(
-            <option selected={i === currentPage ? true : false}>{i}</option>
+            <option key={i} selected={i === currentPage ? true : false}>{i}</option>
         );
     }
 
@@ -114,7 +117,11 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                 {
                     ['k-pager-responsive']: responsive
                 }
-            )}>
+            )}
+            role="application"
+            aria-roledescription="pager"
+            aria-keyshortcuts="Enter ArrowRight ArrowLeft"
+            aria-label={`Page ${currentPage} of ${maxPages}`}>
             <div
                 className={classNames(
                     'k-pager-numbers-wrap'
@@ -126,21 +133,23 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                             'k-pager-nav',
                             'k-pager-first'
                         )}
-                        disabled={currentPage === 1 && !disabled}
+                        ariaDisabled={currentPage === 1}
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left"}
-                        aria-label="Go to first page"
+                        title="Go to the first page"
+                        aria-label="Go to the first page"
                     >
                     </Button><Button
                         className={classNames(
                             'k-pager-nav'
                         )}
-                        disabled={currentPage === 1 && !disabled}
+                        ariaDisabled={currentPage === 1}
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left"}
-                        aria-label="Go to previous page"
+                        title="Go to the previous page"
+                        aria-label="Go to the previous page"
                     >
                     </Button>
                 </>
@@ -168,11 +177,12 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         className={classNames(
                             'k-pager-nav'
                         )}
-                        disabled={currentPage === maxPages && !disabled}
+                        ariaDisabled={currentPage === maxPages}
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
-                        aria-label="Go to next page"
+                        title="Go to the next page"
+                        aria-label="Go to the next page"
                     >
                     </Button>
                     <Button
@@ -180,11 +190,12 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                             'k-pager-nav',
                             'k-pager-last'
                         )}
-                        disabled={currentPage === maxPages && !disabled}
+                        ariaDisabled={currentPage === maxPages}
                         fillMode="flat"
                         size={size}
                         icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
-                        aria-label="Go to last page"
+                        title="Go to the last page"
+                        aria-label="Go to the last page"
                     >
                     </Button>
                 </>
@@ -195,7 +206,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                     className={classNames(
                         'k-pager-sizes'
                     )}>
-                    <DropdownList value={`${itemsPerPage}`} size={size} />
+                    <DropdownList value={`${itemsPerPage}`} size={size} aria-label="Items per page" />
                     { pagerSizeInfo &&
                         <span>items per page</span>
                     }
@@ -209,6 +220,8 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                     fillMode="flat"
                     size={size}
                     icon="arrow-rotate-cw"
+                    title="Refresh"
+                    aria-label="Refresh"
                 >
                 </Button>
             }
@@ -230,5 +243,42 @@ Pager.className = PAGER_CLASSNAME;
 Pager.defaultOptions = defaultOptions;
 Pager.moduleName = PAGER_MODULE_NAME;
 Pager.folderName = PAGER_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * Pager implements a custom keyboard navigation pattern.
+ *
+ * - Root: role="application" with aria-roledescription="pager"
+ * - Navigation buttons: native <button> with title and aria-label
+ * - Page number buttons: aria-label="Page N", aria-current="page" on selected
+ * - Page sizes: DropdownList with aria-label
+ * - Page input: NumericTextbox with aria-label
+ * - Refresh: icon-only button with aria-label
+ */
+Pager.ariaSpec = {
+    selector: '.k-pager',
+    rules: [
+        // Pager root
+        { selector: '.k-pager', attribute: 'role=application', usage: 'Indicates that the pager has its own keyboard navigation implemented.' },
+        { selector: '.k-pager', attribute: 'aria-roledescription=pager', usage: 'Clarifies the role of the Pager.' },
+        { selector: '.k-pager', attribute: 'aria-keyshortcuts=Enter ArrowRight ArrowLeft', usage: 'Announces the available keyboard shortcuts.' },
+        { selector: '.k-pager', attribute: 'aria-label', usage: 'Announces the currently selected page and the number of available pages.' },
+
+        // Navigation buttons
+        { selector: '.k-pager-nav', attribute: 'role=button or nodeName=button', usage: 'Specifies the role of the navigation element.' },
+        { selector: '.k-pager-nav.k-disabled', attribute: 'aria-disabled=true', usage: 'Present when the navigation button is non-interactive.' },
+        { selector: '.k-pager-nav', attribute: 'title', usage: 'Specifies the purpose of each navigation button.' },
+
+        // Page number buttons
+        { selector: '.k-pager-numbers .k-button', attribute: 'aria-label or title', usage: 'Specifies the purpose of each page link, e.g., Page 6.' },
+        { selector: '.k-pager-numbers .k-button.k-selected', attribute: 'aria-current=page', usage: 'Present on the currently selected page element.' },
+
+        // Page sizes DropdownList
+        { selector: '.k-pager-sizes .k-dropdownlist', attribute: 'aria-label or aria-labelledby', usage: 'The DropDownList requires a label to specify its purpose.' },
+
+        // Page input (numeric textbox)
+        { selector: '.k-pager-input .k-input-inner', attribute: 'aria-label', usage: 'The input requires a label to specify its purpose.' },
+    ]
+};
 
 export default Pager;

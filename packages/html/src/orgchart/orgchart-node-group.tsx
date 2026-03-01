@@ -50,7 +50,8 @@ export const OrgchartNodeGroup = (
                 ORGCHARTNODEGROUP_CLASSNAME,
                 'k-vstack',
                 'k-align-items-center',
-            )}>
+            )}
+            role="group">
 
             {lineTop && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             <div
@@ -71,13 +72,14 @@ export const OrgchartNodeGroup = (
                         {
                             [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
                         }
-                    )}>
+                    )}
+                    role="presentation">
                     {props.children}
                 </div>
             </div>
             {lineBottom && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             {button && (
-                <Button className="k-orgchart-button" icon={buttonIcon}></Button>
+                <Button className="k-orgchart-button" icon={buttonIcon} role="presentation" aria-hidden="true" tabIndex={-1}></Button>
             )}
         </div>
     );

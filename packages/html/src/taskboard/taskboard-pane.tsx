@@ -10,16 +10,10 @@ const options = {};
 
 export type KendoTaskBoardPaneProps = {
     header?: React.JSX.Element;
+    paneHeaderId?: string;
 };
 
-const defaultHeader =
-    <>
-        <div className="k-taskboard-pane-header-text">Card X</div>
-        <span className="k-spacer"></span>
-        <div className="k-taskboard-pane-header-actions">
-            <Button fillMode="flat" icon="x"></Button>
-        </div>
-    </>;
+const defaultHeader = undefined as React.JSX.Element | undefined;
 
 const defaultOptions = {
     header: defaultHeader,
@@ -31,7 +25,8 @@ export const TaskBoardPane = (
     props: KendoTaskBoardPaneProps & KendoTaskBoardPaneState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        header = defaultOptions.header,
+        header,
+        paneHeaderId,
         ...other
     } = props;
 
@@ -45,7 +40,15 @@ export const TaskBoardPane = (
             )}
         >
             <div className="k-taskboard-pane-header">
-                {header}
+                {header || (
+                    <>
+                        <div className="k-taskboard-pane-header-text" id={paneHeaderId}>Card X</div>
+                        <span className="k-spacer"></span>
+                        <div className="k-taskboard-pane-header-actions">
+                            <Button fillMode="flat" icon="x" aria-label="Close" title="Close"></Button>
+                        </div>
+                    </>
+                )}
             </div>
 
             <div className="k-taskboard-pane-content">

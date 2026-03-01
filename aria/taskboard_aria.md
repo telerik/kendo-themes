@@ -20,11 +20,12 @@ Each Column contains:
 | Selector | Attribute | Usage |
 | -------- | --------- | ----- |
 | `.k-taskboard` | `role=application` | The TaskBoard has `role=application` as its inner navigation requires the use of arrows. |
-| `.k-taskboard-column` | `role=list` | The TaskBoard Column is a collection of list items. |
-|  | `tabindex=0` | The TaskBoard Column must be focusable. |
-|  | `aria-labelledby=.k-taskboard-column-header id` | The TaskBoard Column must be labelled by its header. |
-| `.k-taskboard-column-action-button` | `role=button` or `nodeName=button` | The TaskBoard Column actions are buttons. |
+| `.k-taskboard-column-cards-container` | `role=list` | The TaskBoard Column cards container is a collection of list items. |
+|  | `tabindex=0` | The TaskBoard Column cards container must be focusable. |
+|  | `aria-labelledby=.k-taskboard-column-header-text id` | The TaskBoard Column cards container must be labelled by its column header. |
+| `.k-taskboard-column-header-actions > .k-button` | `role=button` or `nodeName=button` | The TaskBoard Column actions are buttons. |
 |  | `aria-label` or `title` | Each action must have an accessible name as they are represented by icons and no text is available in their contents. |
+| `.k-taskboard-column-cards` | `role=presentation` | The cards inner container must not break the list-listitem relationship. |
 | `.k-taskboard-card` | `role=listitem` | The TaskBoard Tasks (cards) are list items. |
 |  | `tabindex=0` | The TaskBoard Card must be focusable. |
 | `.k-taskboard-card-menu-button` | `role=button` or `nodeName=button` | The TaskBoard card menu element must be a button. |
