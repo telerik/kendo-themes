@@ -84,7 +84,9 @@ export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivE
         </>
     );
 
-    return <Tag className={formClassNames}>{content}</Tag>;
+    const { role, 'aria-labelledby': ariaLabelledby, 'aria-label': ariaLabel, id } = props as any;
+
+    return <Tag className={formClassNames} role={role} aria-labelledby={ariaLabelledby} aria-label={ariaLabel} id={id}>{content}</Tag>;
 };
 
 Form.states = states;

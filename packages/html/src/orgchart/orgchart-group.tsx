@@ -11,6 +11,8 @@ export type KendoOrgchartGroupProps = {
     nodes?: React.ReactNode;
     orientation?: 'horizontal' | 'vertical';
     justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around';
+    /** @aria When level=1, adds k-orgchart-level-1 class and role="tree" */
+    level?: number;
 };
 
 const defaultOptions = {
@@ -26,8 +28,11 @@ export const OrgchartGroup = (
         nodes,
         orientation = defaultOptions.orientation,
         justifyContent,
+        level,
         ...other
     } = props;
+
+    const isRoot = level === 1;
 
     return (
         <div
@@ -38,8 +43,11 @@ export const OrgchartGroup = (
                 {
                     [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
                     [`k-justify-content-${justifyContent}`]: justifyContent,
+                    'k-orgchart-level-1': isRoot,
                 }
             )}
+            role={isRoot ? 'tree' : 'group'}
+            aria-orientation={isRoot ? 'horizontal' : undefined}
             style={{ width: '100%' }}>
 
             {nodes &&
@@ -50,7 +58,8 @@ export const OrgchartGroup = (
                         {
                             [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
                         }
-                    )}>
+                    )}
+                    role="presentation">
                     {nodes}
                 </div>
             }

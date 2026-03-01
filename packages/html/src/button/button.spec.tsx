@@ -55,6 +55,12 @@ export type KendoButtonProps = KendoButtonOptions & {
    * @aria aria-pressed="true"|"false" based on selected state
    */
   togglable?: boolean;
+  /**
+   * When true, the button is visually disabled and announced as disabled to AT,
+   * but remains focusable (no native `disabled` attribute).
+   * @aria aria-disabled="true" and k-disabled class without native disabled
+   */
+  ariaDisabled?: boolean;
 };
 
 export type KendoButtonState = { [K in (typeof states)[number]]?: boolean };
@@ -104,6 +110,7 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
         selected,
         disabled,
         togglable,
+        ariaDisabled,
         icon,
         text,
         iconClassName,
@@ -130,7 +137,7 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
                     hover,
                     focus,
                     active,
-                    disabled,
+                    disabled: disabled || ariaDisabled,
                     selected,
                 }),
                 {
@@ -140,6 +147,7 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
             )}
             {...other}
             aria-pressed={togglable ? (selected ? 'true' : 'false') : undefined}
+            aria-disabled={ariaDisabled ? 'true' : undefined}
             disabled={disabled || undefined}
         >
             {icon && (

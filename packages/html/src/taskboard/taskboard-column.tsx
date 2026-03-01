@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames } from '../misc';
+import { classNames, nextId } from '../misc';
 
 export const TASKBOARDCOLUMN_CLASSNAME = `k-taskboard-column`;
 
@@ -12,19 +12,8 @@ export type KendoTaskBoardColumnProps = {
     edit?: boolean;
 };
 
-const defaultHeader =
-    <>
-        <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
-        <span className="k-spacer"></span>
-        <div className="k-taskboard-column-header-actions">
-            <Button fillMode="flat" icon="pencil"></Button>
-            <Button fillMode="flat" icon="plus"></Button>
-            <Button fillMode="flat" icon="x"></Button>
-        </div>
-    </>;
-
 const defaultOptions = {
-    header: defaultHeader,
+    header: undefined as React.JSX.Element | undefined,
 };
 
 export type KendoTaskBoardColumnState = { [K in (typeof states)[number]]?: boolean };
@@ -33,10 +22,12 @@ export const TaskBoardColumn = (
     props: KendoTaskBoardColumnProps & KendoTaskBoardColumnState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        header = defaultOptions.header,
+        header,
         edit,
         ...other
     } = props;
+
+    const columnHeaderId = nextId('taskboard-column-header');
 
     return (
         <div
@@ -50,11 +41,25 @@ export const TaskBoardColumn = (
             )}
         >
             <div className="k-taskboard-column-header">
-                {header}
+                {header || (
+                    <>
+                        <div className="k-taskboard-column-header-text k-text-ellipsis" id={columnHeaderId}>Column Header</div>
+                        <span className="k-spacer"></span>
+                        <div className="k-taskboard-column-header-actions">
+                            <Button fillMode="flat" icon="pencil" aria-label="Edit column" title="Edit column"></Button>
+                            <Button fillMode="flat" icon="plus" aria-label="Add card" title="Add card"></Button>
+                            <Button fillMode="flat" icon="x" aria-label="Delete column" title="Delete column"></Button>
+                        </div>
+                    </>
+                )}
             </div>
 
-            <div className="k-taskboard-column-cards-container">
-                <div className="k-taskboard-column-cards">
+            <div className="k-taskboard-column-cards-container"
+                role="list"
+                tabIndex={0}
+                aria-labelledby={columnHeaderId}
+            >
+                <div className="k-taskboard-column-cards" role="presentation">
                     {props.children}
                 </div>
             </div>
