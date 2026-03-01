@@ -118,6 +118,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         <>
             <Picker
                 {...other}
+                id={id}
                 size={size}
                 rounded={rounded}
                 fillMode={fillMode}

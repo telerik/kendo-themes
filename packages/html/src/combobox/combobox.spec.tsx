@@ -140,6 +140,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                     </>
                 }
                 <InputInnerInput
+                    id={id}
                     placeholder={placeholder}
                     value={value}
                     role="combobox"
