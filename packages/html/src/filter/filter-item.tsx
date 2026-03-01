@@ -18,7 +18,7 @@ export const FilterItem = (
     const { children } = props;
 
     return (
-        <li className={classNames(FILTER_ITEM_CLASSNAME)}>
+        <li className={classNames(FILTER_ITEM_CLASSNAME)} role="treeitem">
             {children}
         </li>
     );
