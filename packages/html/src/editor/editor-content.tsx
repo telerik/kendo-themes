@@ -37,6 +37,7 @@ export const EditorContent = (
                 }),
             )}
             contentEditable={readonly ? 'false' : 'true'}
+            suppressContentEditableWarning
             role="textbox"
             aria-label={ariaLabel || 'Editor content'}
             aria-readonly={readonly ? 'true' : undefined}

@@ -6,14 +6,15 @@ export const SmartBoxNormal = (props) =>
     <SmartBox {...props}
         value="Smart box"
         separators={false}
+        inputAriaLabel="AI-powered search"
         prefix={
             <>
-                <Icon icon="sparkles" className="k-accent-icon"/>
+                <Icon icon="sparkles" className="k-accent-icon" aria-hidden="true" />
             </>
         }
         suffix={
             <>
-                <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
+                <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" aria-label="Start voice input" />
                 <SmartBoxSendButton />
             </>
         }

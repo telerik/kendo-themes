@@ -13,4 +13,8 @@ export * from './templates/chat-message-skeleton';
 export * from './templates/chat-stop-response';
 export * from './templates/chat-upload';
 export * from './templates/chat-empty';
+export * from './templates/chat-typing';
+export * from './templates/chat-expandable';
+export * from './templates/chat-pinned';
+export * from './templates/chat-failed';
 export * from './demos/chat';
