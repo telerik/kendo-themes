@@ -1,5 +1,6 @@
 ﻿import { DropdownList, KendoDropdownListProps } from '../dropdownlist.spec';
 import { List, ListContent, ListItem } from '../../list';
+import { Searchbox } from '../../searchbox/searchbox.spec';
 
 const states = DropdownList.states;
 const defaults = DropdownList.defaultOptions;
@@ -22,13 +23,18 @@ export const DropdownlistDemo = (props: KendoDropdownListProps & {
   let additionalProps: KendoDropdownListProps = {};
 
   const popup = (
-    <List style={{ width: 300 }} size={other.size}>
-      <ListContent>
-        <ListItem>List item</ListItem>
-        <ListItem>List item</ListItem>
-        <ListItem>List item</ListItem>
-      </ListContent>
-    </List>
+    <>
+      <div className="k-list-filter">
+        <Searchbox />
+      </div>
+      <List style={{ width: 300 }} size={other.size}>
+        <ListContent>
+          <ListItem>List item</ListItem>
+          <ListItem>List item</ListItem>
+          <ListItem>List item</ListItem>
+        </ListContent>
+      </List>
+    </>
   );
 
   Object.keys(mods || {}).forEach((modifier) => {

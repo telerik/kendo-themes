@@ -10,3 +10,4 @@ export * from "./templates/radio-group-horizontal";
 export * from "./templates/radio-group-disabled";
 export * from "./templates/radio-invalid";
 export * from './demos/radio';
+export * from './demos/radio-group';

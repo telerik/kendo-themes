@@ -4,11 +4,16 @@ import { TabStripLeft } from '../templates/tabstrip-left';
 import { TabStripRight } from '../templates/tabstrip-right';
 import { TabStripBottom } from '../templates/tabstrip-bottom';
 
-const options = TabStrip.options;
+const options = {
+    ...TabStrip.options,
+    scrollable: { type: "boolean" },
+};
+
 const states = TabStrip.states;
 const defaults = {
-  ...TabStrip.defaultOptions,
-  variant: 'up',
+    ...TabStrip.defaultOptions,
+    scrollable: false,
+    variant: 'up',
 };
 
 const variants = [
@@ -30,30 +35,14 @@ const variants = [
     },
 ];
 
-const modifiers = [
-    {
-        name: 'scrollable',
-        title: 'Scrollable',
-    }
-];
+const modifiers = [];
 
 export const TabstripDemo = (
-    props: KendoTabStripProps & { variant?: (typeof variants)[number]['name'] } & {
-        modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
-    }
+    props: KendoTabStripProps & { variant?: (typeof variants)[number]['name'] }
 ) => {
-    const { variant, modifiers: mods, ...other } = { ...defaults, ...props };
+    const { variant, ...other } = { ...defaults, ...props };
 
     let additionalProps: any = {};
-
-    Object.keys(mods || {}).forEach((modifier) => {
-        switch (modifier) {
-            case 'scrollable': {
-                additionalProps.scrollable = mods?.[modifier] ? true : false;
-                break;
-            }
-        }
-    });
 
     switch (variant) {
         case 'right':
@@ -75,7 +64,6 @@ export const TabstripDemo = (
             );
     }
 }
-
 
 TabstripDemo.options = options;
 TabstripDemo.states = states;
