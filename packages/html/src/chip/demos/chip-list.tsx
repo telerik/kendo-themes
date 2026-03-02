@@ -1,12 +1,20 @@
-﻿import { ChipList } from '../chip-list.spec';
-import { KendoChipProps } from '../chip.spec';
+﻿import { ChipList, KendoChipListProps } from '../chip-list.spec';
 import { ChipNormal } from '../templates/chip-normal';
 import { ChipAction } from '../chip-action';
+import Chip, { KendoChipProps } from '../chip.spec';
 
-const options = ChipList.options;
+const options = {
+  ...Chip.options,
+  ...ChipList.options,
+};
+
 const variants = [];
 const states = ChipList.states;
-const defaults = ChipList.defaultOptions;
+const defaults = {
+  ...Chip.defaultOptions,
+  ...ChipList.defaultOptions,
+};
+
 const modifiers = [
   {
     name: 'icon',
@@ -26,19 +34,20 @@ const modifiers = [
 ];
 
 export const ChipListDemo = (props:
-  KendoChipProps & {
+  KendoChipListProps & KendoChipProps & {
+    className?: string,
     modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean }
   }) => {
-  const { size, modifiers } = props;
+  const { modifiers, className, ...other } = props;
   const hasIcon = modifiers?.icon;
   const hasActions = modifiers?.actions;
   const hasAvatar = modifiers?.avatar;
 
   return (
-    <ChipList size={size}>
-      <ChipNormal {...props} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-      <ChipNormal {...props} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-      <ChipNormal {...props} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
+    <ChipList size={other.size}  className={className}>
+      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
+      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
+      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
     </ChipList>
   );
 }

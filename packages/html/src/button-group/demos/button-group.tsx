@@ -1,10 +1,15 @@
-﻿import { ButtonGroup } from '../button-group.spec';
-import { Button, KendoButtonProps } from '../../button';
+﻿import { ButtonGroup, KendoButtonGroupProps } from '../button-group.spec';
+import { Button } from '../../button';
 
-const options = Button.options;
+const options = {
+  ...Button.options,
+  ...ButtonGroup.options,
+};
+
 const states = Button.states;
 const defaults = {
   ...Button.defaultOptions,
+  ...ButtonGroup.defaultOptions,
   variant: 'text-button',
 };
 
@@ -25,13 +30,13 @@ const variants = [
 const modifiers = [];
 
 export const ButtonGroupDemo = (
-  props: KendoButtonProps & { variant?: (typeof variants)[number]['name'] }
+  props: KendoButtonGroupProps & { variant?: (typeof variants)[number]['name'], className?: string }
 ) => {
-  const { variant, ...other } = props;
+  const { variant, className, ...other } = props;
 
   if (variant === 'icon-button') {
     return (
-      <ButtonGroup>
+      <ButtonGroup fillMode={other.fillMode} className={className}>
         <Button {...other} icon="star"></Button>
         <Button {...other} icon="star"></Button>
         <Button {...other} icon="star"></Button>
@@ -39,7 +44,7 @@ export const ButtonGroupDemo = (
     );
   } else if (variant === 'icon-text-button') {
     return (
-      <ButtonGroup>
+      <ButtonGroup fillMode={other.fillMode} className={className}>
         <Button {...other} icon="star">First</Button>
         <Button {...other} icon="star">Middle</Button>
         <Button {...other} icon="star">Last</Button>
@@ -48,7 +53,7 @@ export const ButtonGroupDemo = (
   }
 
   return (
-    <ButtonGroup>
+    <ButtonGroup fillMode={other.fillMode} className={className}>
       <Button {...other}>First</Button>
       <Button {...other}>Middle</Button>
       <Button {...other}>Last</Button>

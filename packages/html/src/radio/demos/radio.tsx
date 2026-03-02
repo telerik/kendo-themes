@@ -1,68 +1,22 @@
-﻿import { RadioGroup, KendoRadioGroupProps } from '../radio-group.spec';
-import { RadioItem } from '../radio-item.spec';
+﻿import RadioButton, { RadioButtonProps } from '../radio.spec';
 import { RadioButtonWithLabelAfter } from '../templates/radio-with-label-after';
 
-const options = RadioGroup.options;
-const states = RadioGroup.states;
-const defaults = {
-  ...RadioGroup.defaultOptions,
-  variant: 'vertical',
-};
+const options = RadioButton.options;
+const states = RadioButton.states;
+const defaults = RadioButton.defaultOptions;
 
-const variants = [
-    {
-        name: 'vertical',
-        title: 'Vertical',
-    },
-    {
-        name: 'horizontal',
-        title: 'Horizontal',
-    },
-];
+const variants = [];
 const modifiers = [];
 
-export const RadioDemo = (props: KendoRadioGroupProps & { variant?: (typeof variants)[number]['name'] }) => {
-    const { variant, ...other } = props;
+export const RadioButtonDemo = (props: RadioButtonProps) => (
+    <RadioButtonWithLabelAfter id="radio-button-demo-radio-button" name="value" {...props}>Label</RadioButtonWithLabelAfter>
+);
 
-    switch (variant) {
-        case 'horizontal':
-            return (
-                <RadioGroup layout="horizontal" {...other}>
-                    <RadioItem>
-                        <RadioButtonWithLabelAfter id="first" name="value" defaultChecked={true}>Label</RadioButtonWithLabelAfter>
-                    </RadioItem>
-                    <RadioItem>
-                        <RadioButtonWithLabelAfter id="second" name="value">Label</RadioButtonWithLabelAfter>
-                    </RadioItem>
-                    <RadioItem>
-                        <RadioButtonWithLabelAfter id="third" name="value">Label</RadioButtonWithLabelAfter>
-                    </RadioItem>
-                </RadioGroup>
-            );
-        case 'vertical':
-        default:
-            return (
-                <RadioGroup {...other}>
-                    <RadioItem>
-                        <RadioButtonWithLabelAfter id="first" name="value" defaultChecked={true}>Label</RadioButtonWithLabelAfter>
-                    </RadioItem>
-                    <RadioItem>
-                        <RadioButtonWithLabelAfter id="second" name="value">Label</RadioButtonWithLabelAfter>
-                    </RadioItem>
-                    <RadioItem>
-                        <RadioButtonWithLabelAfter id="third" name="value">Label</RadioButtonWithLabelAfter>
-                    </RadioItem>
-                </RadioGroup>
-            );
-    }
-}
+RadioButtonDemo.options = options;
+RadioButtonDemo.states = states;
+RadioButtonDemo.variants = variants;
+RadioButtonDemo.defaultOptions = defaults;
+RadioButtonDemo.modifiers = modifiers;
 
-
-RadioDemo.options = options;
-RadioDemo.states = states;
-RadioDemo.variants = variants;
-RadioDemo.defaultOptions = defaults;
-RadioDemo.modifiers = modifiers;
-
-export default RadioDemo;
+export default RadioButtonDemo;
 

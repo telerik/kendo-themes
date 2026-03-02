@@ -8,4 +8,5 @@ export * from "./templates/checkbox-group-normal";
 export * from "./templates/checkbox-normal";
 export * from "./templates/checkbox-checked";
 export * from "./templates/checkbox-invalid";
+export * from './demos/checkbox-list';
 export * from './demos/checkbox';

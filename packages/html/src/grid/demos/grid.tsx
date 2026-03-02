@@ -16,6 +16,7 @@ import { Pager } from '../../pager';
 import { Textbox } from '../../textbox';
 import { Icon } from '../../icon';
 import { Chip, ChipAction, ChipList } from '../../chip';
+import { GridWithFilterRow } from '../templates/grid-with-filter-row';
 
 const options = Grid.options;
 const states = Grid.states;
@@ -28,6 +29,10 @@ const variants = [
   {
     name: 'column-menu',
     title: 'Column Menu',
+  },
+  {
+    name: 'filter-menu',
+    title: 'Filter Menu',
   },
   {
     name: 'filter-row',
@@ -105,7 +110,8 @@ export const GridDemo = (
 
   const variants: any = {
     "column-menu": { menu: "column" },
-    "filter-row": { menu: "filter" },
+    "filter-menu": { menu: "filter" },
+    "filter-row": {},
   };
 
   const defaultGridContent = (
@@ -287,6 +293,11 @@ export const GridDemo = (
             </GridContainer>
           </>
         </Grid>
+      );
+
+    case 'filter-row':
+      return (
+        <GridWithFilterRow {...other} {...additionalProps} />
       );
     case 'normal':
     default:
