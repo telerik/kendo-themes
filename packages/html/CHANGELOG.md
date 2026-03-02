@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.2-dev.0...v13.1.0-dev.0) (2026-03-02)
+
+
+### Bug Fixes
+
+* **html:** add a11y sr-only element to grid empty headers ([6fe06ee](https://github.com/telerik/kendo-themes/commit/6fe06eeaafe584705357c65a1bdc4a4c242bd17c))
+
+
+### Features
+
+* **html:** add a11y to date, time, color pickers, calendars ([9411f0b](https://github.com/telerik/kendo-themes/commit/9411f0be99bf05609171b9ac9f2cced34775835d))
+* **html:** add accessibility attributes to html rendering ([d2b17ce](https://github.com/telerik/kendo-themes/commit/d2b17ce63bee87f0c1ebf2d91cabac6e074d6be4))
+* **html:** add aria for chip, chiplist, tooltip, popover, and progressbars ([33fe470](https://github.com/telerik/kendo-themes/commit/33fe470f35e21f11ccb252c7ffe65f1d9fde8758))
+* **html:** add aria to navigation, layout and dialogs components ([4dee6c0](https://github.com/telerik/kendo-themes/commit/4dee6c0ee7a919f29f84120ef81e0b2c1e7ccaf7))
+
+
+
+
+
 ## [13.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.1...v13.0.2-dev.0) (2026-02-23)
 
 

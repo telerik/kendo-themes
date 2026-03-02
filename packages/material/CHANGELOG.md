@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.2-dev.0...v13.1.0-dev.0) (2026-03-02)
+
+
+### Bug Fixes
+
+* **segmented-control:** add units to padding for calc compatibility ([c2690bc](https://github.com/telerik/kendo-themes/commit/c2690bc2e57414839844dd20af7e7a5255325acd))
+
+
+
+
+
 ## [13.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.0.1...v13.0.2-dev.0) (2026-02-23)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
