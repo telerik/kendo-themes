@@ -7,7 +7,7 @@ export const TaskBoardWithPane = (props) =>
             <TaskBoardColumn>
                 <TaskBoardCard menuButton>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
+                        <a className="k-card-title k-link">Card Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>

@@ -263,10 +263,11 @@ const attrValidators = {
 
     role: (el, _attr, val) => {
         const explicit = el.getAttribute('role');
-        if (explicit === val) { return { matched: true, actual: explicit }; }
+        const alternatives = val.includes('/') ? val.split('/').map(v => v.trim()) : [val];
+        if (alternatives.includes(explicit)) { return { matched: true, actual: explicit }; }
         const implicit = getImplicitRole(el);
-        if (implicit === val) { return { matched: true, actual: `${val} (implicit from <${el.nodeName.toLowerCase()}>)` }; }
-        return { matched: false, actual: explicit || implicit || null, expected: val };
+        if (alternatives.includes(implicit)) { return { matched: true, actual: `${implicit} (implicit from <${el.nodeName.toLowerCase()}>)` }; }
+        return { matched: false, actual: explicit || implicit || null, expected: alternatives.join(' or ') };
     },
 
     nativeFocusable: () =>

@@ -11,10 +11,10 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
             <SchedulerToolbar>
                 <ButtonGroup className="k-scheduler-navigation">
                     <Button className="k-group-start">Today</Button>
-                    <Button icon="caret-alt-left"></Button>
-                    <Button className="k-group-end" icon="caret-alt-right"></Button>
+                    <Button icon="caret-alt-left" aria-label="Navigate to previous period"></Button>
+                    <Button className="k-group-end" icon="caret-alt-right" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
-                <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                     6/24/2024 - 6/25/2024
                 </Button>
                 <span className="k-spacer"></span>
@@ -29,18 +29,18 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
         }
         children={
             <>
-                <SchedulerHead as="div">
-                    <SchedulerGroup orientation="vertical">
-                        <SchedulerRow>
-                            <SchedulerCell as="div" className="k-group-content">
-                                <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-datecolumn" style={{ minWidth: "168px" }}>
+                <SchedulerHead as="div" role="rowgroup">
+                    <SchedulerGroup orientation="vertical" role="presentation">
+                        <SchedulerRow role="presentation">
+                            <SchedulerCell as="div" className="k-group-content" role="presentation">
+                                <SchedulerRow role="row">
+                                    <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-datecolumn" style={{ minWidth: "168px" }} role="columnheader">
                                         Date
                                     </SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-timecolumn" style={{ minWidth: "595px" }}>
+                                    <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-timecolumn" style={{ minWidth: "595px" }} role="columnheader">
                                         Time
                                     </SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-eventcolumn" style={{ minWidth: "168px" }}>
+                                    <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-eventcolumn" style={{ minWidth: "168px" }} role="columnheader">
                                         Event
                                     </SchedulerCell>
                                 </SchedulerRow>
@@ -48,17 +48,17 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
                         </SchedulerRow>
                     </SchedulerGroup>
                 </SchedulerHead>
-                <SchedulerBody as="div">
-                    <SchedulerGroup orientation="vertical">
-                        <SchedulerRow className="k-scheduler-content">
-                            <SchedulerCell as="div" cellType={[ "group", "slot" ]} className="k-scheduler-datecolumn" style={{ minWidth: "168px" }}>
+                <SchedulerBody as="div" role="rowgroup">
+                    <SchedulerGroup orientation="vertical" role="presentation">
+                        <SchedulerRow className="k-scheduler-content" role="row">
+                            <SchedulerCell as="div" cellType={[ "group", "slot" ]} className="k-scheduler-datecolumn" style={{ minWidth: "168px" }} role="rowheader">
                                 <div>
                                     <strong className="k-scheduler-agendaday">25</strong>
                                     <em className="k-scheduler-agendaweek">Monday</em>
                                     <span className="k-scheduler-agendadate">Jun 2024</span>
                                 </div>
                             </SchedulerCell>
-                            <SchedulerCell as="div" className="k-group-content">
+                            <SchedulerCell as="div" className="k-group-content" role="gridcell">
                                 <SchedulerRow>
                                     <SchedulerCell as="div" className="k-scheduler-timecolumn" style={{ minWidth: "595px" }}>
                                         <div>11:30 AM-1:00 PM</div>
@@ -85,15 +85,15 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
                                 </SchedulerRow>
                             </SchedulerCell>
                         </SchedulerRow>
-                        <SchedulerRow className="k-scheduler-content">
-                            <SchedulerCell as="div" cellType={[ "group", "slot" ]} className="k-scheduler-datecolumn" style={{ minWidth: "168px" }}>
+                        <SchedulerRow className="k-scheduler-content" role="row">
+                            <SchedulerCell as="div" cellType={[ "group", "slot" ]} className="k-scheduler-datecolumn" style={{ minWidth: "168px" }} role="rowheader">
                                 <div>
                                     <strong className="k-scheduler-agendaday">25</strong>
                                     <em className="k-scheduler-agendaweek">Tuesday</em>
                                     <span className="k-scheduler-agendadate">Jun 2024</span>
                                 </div>
                             </SchedulerCell>
-                            <SchedulerCell as="div" className="k-group-content">
+                            <SchedulerCell as="div" className="k-group-content" role="gridcell">
                                 <SchedulerRow>
                                     <SchedulerCell as="div" className="k-scheduler-timecolumn" style={{ minWidth: "595px" }}>
                                         <div>9:30 AM-11:00 AM</div>

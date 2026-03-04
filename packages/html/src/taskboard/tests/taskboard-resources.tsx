@@ -11,7 +11,7 @@ export default () =>(
             <TaskBoardColumn>
                 <TaskBoardCard category style={{ borderLeftColor: "orange" }}>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
+                        <a className="k-card-title k-link">Card Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>
@@ -20,7 +20,7 @@ export default () =>(
                 </TaskBoardCard>
                 <TaskBoardCard category style={{ borderLeftColor: "teal" }}>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
+                        <a className="k-card-title k-link">Card Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>

@@ -12,10 +12,10 @@ export const SchedulerMonth = ({ style, ...props }: any) => (
             <SchedulerToolbar>
                 <ButtonGroup className="k-scheduler-navigation">
                     <Button className="k-group-start">Today</Button>
-                    <Button icon="caret-alt-left"></Button>
-                    <Button className="k-group-end" icon="caret-alt-right"></Button>
+                    <Button icon="caret-alt-left" aria-label="Navigate to previous period"></Button>
+                    <Button className="k-group-end" icon="caret-alt-right" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
-                <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                         Jun, 2024
                 </Button>
                 <span className="k-spacer"></span>
@@ -52,7 +52,7 @@ export const SchedulerMonth = ({ style, ...props }: any) => (
                     </SchedulerHead>
                     <SchedulerBody as="tr">
                         <td>
-                            <SchedulerContent style={{ height: "195px" }}>
+                            <SchedulerContent style={{ height: "195px" }} tabIndex={0}>
                                 <SchedulerTable>
                                     <tbody>
                                         <tr>

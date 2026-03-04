@@ -10,7 +10,7 @@ export default () => (
             <section>
                 <ListGroupNormal>
                     <ListGroupItem text="Item"></ListGroupItem>
-                    <ListGroupItem text="Link" href="#"></ListGroupItem>
+                    <ListGroupItem text="Link" href></ListGroupItem>
                     <ListGroupItem text="Pseudo link" pseudo></ListGroupItem>
                 </ListGroupNormal>
             </section>
@@ -18,7 +18,7 @@ export default () => (
             <section>
                 <ListGroupNormal>
                     <ListGroupItem>
-                        <a href="#" className="k-link">
+                        <a className="k-link">
                             Link
                             <span className="k-select"><Icon icon="chevron-right" /></span>
                         </a>
