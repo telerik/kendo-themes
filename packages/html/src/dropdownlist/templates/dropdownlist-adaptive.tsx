@@ -1,12 +1,13 @@
 import DropdownList from "../dropdownlist.spec";
+import { nextId } from "../../misc";
 
 export const DropdownListAdaptive = (props) => (
     <DropdownList
-        id="ddl-adaptive"
+        id={nextId('ddl')}
         aria-label="Select option"
         adaptive={true}
         adaptiveTitle="DropdownList"
-        adaptiveSettings={{ id: 'ddl-adaptive-as' }}
+        adaptiveSettings={{ id: nextId('ddl-as') }}
         {...props}
     />
 );

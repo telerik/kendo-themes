@@ -4,12 +4,14 @@ import { Searchbox } from "../../searchbox";
 import DropdownList from "../dropdownlist.spec";
 
 export const DropdownListGroupingFiltering = (props) => {
+    const ddlId = nextId('ddl');
+    const listboxId = nextId('ddl-listbox');
     const group1Id = nextId('ddl-gf-group');
     const group2Id = nextId('ddl-gf-group');
 
     return (
         <DropdownList
-            id="ddl-group-filter"
+            id={ddlId}
             aria-label="Filter group options"
             opened
             popup={
@@ -18,7 +20,7 @@ export const DropdownListGroupingFiltering = (props) => {
                         <Searchbox aria-label="Search" />
                     </div>
                     <List header="Group 1">
-                        <ListContent grouping listboxId="ddl-gf-listbox" aria-label="Options">
+                        <ListContent grouping listboxId={listboxId} aria-label="Options">
                             <ListUl role="group" aria-labelledby={group1Id}>
                                 <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
                                 <ListItem id={nextId('ddl-gf-item')}>List group 1 item 1</ListItem>

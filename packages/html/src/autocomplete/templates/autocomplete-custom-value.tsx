@@ -1,9 +1,10 @@
 import Autocomplete from "../autocomplete.spec";
 import { List, ListContent, ListCustomValue, ListItem } from "../../list";
+import { nextId } from "../../misc";
 
 export const AutocompleteCustomValue = ({ value="Custom value", ...other }: any) => (
     <Autocomplete value={value}
-        id="ac-custom"
+        id={nextId('ac')}
         aria-label="Search options"
         opened
         popup={

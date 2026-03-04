@@ -1,9 +1,10 @@
 import Autocomplete from "../autocomplete.spec";
 import { TextButton } from '../../button';
+import { nextId } from "../../misc";
 
 export const AutocompleteSuffix = (props) => (
     <Autocomplete
-        id="ac-suffix"
+        id={nextId('ac')}
         aria-label="Search options"
         suffix={
             <>

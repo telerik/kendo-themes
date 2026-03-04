@@ -3,17 +3,19 @@ import { nextId } from "../../misc";
 import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectGroupingCustomValue = ({ value="Custom value", ...other }: any) => {
+    const msId = nextId('ms');
+    const listboxId = nextId('ms-listbox');
     const group1Id = nextId('ms-grpcv-group');
     const group2Id = nextId('ms-grpcv-group');
 
     return (
         <MultiSelect  value={value}
-            id="ms-grp-custom"
+            id={msId}
             aria-label="Select options"
             opened
             popup={
                 <List header="Group 1" customValue={<ListCustomValue text={`Use "${value}"`}/>}>
-                    <ListContent grouping listboxId="ms-grpcv-listbox" aria-label="Options">
+                    <ListContent grouping listboxId={listboxId} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
                             <ListItem id={nextId('ms-grpcv-item')}>List group 1 item 1</ListItem>

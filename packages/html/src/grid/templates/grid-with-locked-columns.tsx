@@ -62,9 +62,9 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                 </colgroup>
                                 <TableThead role="none">
                                     <TableRow role="none">
-                                        <GridHeaderCell filterable menu="column" columnTitle="Ship Country" id={nlHdr_c0}></GridHeaderCell>
-                                        <GridHeaderCell filterable menu="column" columnTitle="Ship City" id={nlHdr_c1}></GridHeaderCell>
-                                        <GridHeaderCell filterable menu="column" columnTitle="Ship Address" id={nlHdr_c2}></GridHeaderCell>
+                                        <GridHeaderCell filterable menu="column" columnTitle="Ship Country" id={nlHdr_c0} role="columnheader"></GridHeaderCell>
+                                        <GridHeaderCell filterable menu="column" columnTitle="Ship City" id={nlHdr_c1} role="columnheader"></GridHeaderCell>
+                                        <GridHeaderCell filterable menu="column" columnTitle="Ship Address" id={nlHdr_c2} role="columnheader"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -125,44 +125,44 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                 </colgroup>
                                 <TableTbody role="none">
                                     <TableRow className="k-master-row" role="none">
-                                        <TableTd id={nlCell_r0_c0}>France</TableTd>
-                                        <TableTd id={nlCell_r0_c1}>Reims</TableTd>
-                                        <TableTd id={nlCell_r0_c2}>59 rue de l&apos;Abbaye</TableTd>
+                                        <TableTd id={nlCell_r0_c0} role="gridcell">France</TableTd>
+                                        <TableTd id={nlCell_r0_c1} role="gridcell">Reims</TableTd>
+                                        <TableTd id={nlCell_r0_c2} role="gridcell">59 rue de l&apos;Abbaye</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" alt role="none">
-                                        <TableTd id={nlCell_r1_c0}>Germany</TableTd>
-                                        <TableTd id={nlCell_r1_c1}>Münster</TableTd>
-                                        <TableTd id={nlCell_r1_c2}>Luisenstr. 48</TableTd>
+                                        <TableTd id={nlCell_r1_c0} role="gridcell">Germany</TableTd>
+                                        <TableTd id={nlCell_r1_c1} role="gridcell">Münster</TableTd>
+                                        <TableTd id={nlCell_r1_c2} role="gridcell">Luisenstr. 48</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="none">
-                                        <TableTd id={nlCell_r2_c0}>Brazil</TableTd>
-                                        <TableTd id={nlCell_r2_c1}>Rio de Janeiro</TableTd>
-                                        <TableTd id={nlCell_r2_c2}>Rua do Paço, 67</TableTd>
+                                        <TableTd id={nlCell_r2_c0} role="gridcell">Brazil</TableTd>
+                                        <TableTd id={nlCell_r2_c1} role="gridcell">Rio de Janeiro</TableTd>
+                                        <TableTd id={nlCell_r2_c2} role="gridcell">Rua do Paço, 67</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" alt role="none">
-                                        <TableTd id={nlCell_r3_c0}>France</TableTd>
-                                        <TableTd id={nlCell_r3_c1}>Lyon</TableTd>
-                                        <TableTd id={nlCell_r3_c2}>2, rue du Commerce</TableTd>
+                                        <TableTd id={nlCell_r3_c0} role="gridcell">France</TableTd>
+                                        <TableTd id={nlCell_r3_c1} role="gridcell">Lyon</TableTd>
+                                        <TableTd id={nlCell_r3_c2} role="gridcell">2, rue du Commerce</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="none">
-                                        <TableTd id={nlCell_r4_c0}>Belgium</TableTd>
-                                        <TableTd id={nlCell_r4_c1}>Charleroi</TableTd>
-                                        <TableTd id={nlCell_r4_c2}>Boulevard Tirou, 255</TableTd>
+                                        <TableTd id={nlCell_r4_c0} role="gridcell">Belgium</TableTd>
+                                        <TableTd id={nlCell_r4_c1} role="gridcell">Charleroi</TableTd>
+                                        <TableTd id={nlCell_r4_c2} role="gridcell">Boulevard Tirou, 255</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" alt role="none">
-                                        <TableTd id={nlCell_r5_c0}>Germany</TableTd>
-                                        <TableTd id={nlCell_r5_c1}>Münster</TableTd>
-                                        <TableTd id={nlCell_r5_c2}>Luisenstr. 48</TableTd>
+                                        <TableTd id={nlCell_r5_c0} role="gridcell">Germany</TableTd>
+                                        <TableTd id={nlCell_r5_c1} role="gridcell">Münster</TableTd>
+                                        <TableTd id={nlCell_r5_c2} role="gridcell">Luisenstr. 48</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="none">
-                                        <TableTd id={nlCell_r6_c0}>Brazil</TableTd>
-                                        <TableTd id={nlCell_r6_c1}>Rio de Janeiro</TableTd>
-                                        <TableTd id={nlCell_r6_c2}>Rua do Paço, 67</TableTd>
+                                        <TableTd id={nlCell_r6_c0} role="gridcell">Brazil</TableTd>
+                                        <TableTd id={nlCell_r6_c1} role="gridcell">Rio de Janeiro</TableTd>
+                                        <TableTd id={nlCell_r6_c2} role="gridcell">Rua do Paço, 67</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" alt role="none">
-                                        <TableTd id={nlCell_r7_c0}>France</TableTd>
-                                        <TableTd id={nlCell_r7_c1}>Lyon</TableTd>
-                                        <TableTd id={nlCell_r7_c2}>2, rue du Commerce</TableTd>
+                                        <TableTd id={nlCell_r7_c0} role="gridcell">France</TableTd>
+                                        <TableTd id={nlCell_r7_c1} role="gridcell">Lyon</TableTd>
+                                        <TableTd id={nlCell_r7_c2} role="gridcell">2, rue du Commerce</TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>

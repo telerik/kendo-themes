@@ -1,12 +1,13 @@
 import DropdownGrid from "../dropdowngrid.spec";
+import { nextId } from "../../misc";
 
 export const DropdownGridAdaptive = (props) => (
     <DropdownGrid
-        id="ddg-adaptive"
+        id={nextId('ddg')}
         aria-label="Select option"
         adaptive={true}
         adaptiveTitle="DropdownGrid"
-        adaptiveSettings={{ id: 'ddg-adaptive-as' }}
+        adaptiveSettings={{ id: nextId('ddg-as') }}
         {...props}
     />
 );

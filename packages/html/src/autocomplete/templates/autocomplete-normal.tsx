@@ -1,3 +1,4 @@
 import Autocomplete from "../autocomplete.spec";
+import { nextId } from "../../misc";
 
-export const AutocompleteNormal = (props) => <Autocomplete id="ac-normal" aria-label="Search" {...props} />;
+export const AutocompleteNormal = (props) => <Autocomplete id={nextId('ac')} aria-label="Search" {...props} />;

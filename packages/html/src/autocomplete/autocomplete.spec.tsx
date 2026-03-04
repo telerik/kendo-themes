@@ -177,7 +177,6 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
             {opened && popup &&
                 <Popup
                     className="k-list-container k-autocomplete-popup"
-                    containerClassName="k-autocomplete-popup-container"
                     containerRole="region"
                     containerAriaLabel="Autocomplete suggestions"
                 >

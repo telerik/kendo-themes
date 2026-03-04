@@ -3,17 +3,19 @@ import { nextId } from "../../misc";
 import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectGrouping = (props) => {
+    const msId = nextId('ms');
+    const listboxId = nextId('ms-listbox');
     const group1Id = nextId('ms-grp-group');
     const group2Id = nextId('ms-grp-group');
 
     return (
         <MultiSelect
-            id="ms-grouping"
+            id={msId}
             aria-label="Select options"
             opened
             popup={
                 <List header="Group 1">
-                    <ListContent grouping listboxId="ms-grp-listbox" aria-label="Options">
+                    <ListContent grouping listboxId={listboxId} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
                             <ListItem id={nextId('ms-grp-item')}>List group 1 item 1</ListItem>

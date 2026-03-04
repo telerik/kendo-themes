@@ -177,7 +177,6 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                 <Popup
                     className="k-list-container k-dropdowntree-popup"
                     dir={dir}
-                    containerClassName="k-dropdowntree-popup-container"
                     containerRole="region"
                     containerAriaLabel="DropdownTree options"
                 >

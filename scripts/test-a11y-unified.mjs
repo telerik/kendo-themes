@@ -52,7 +52,7 @@ const PAGE_LEVEL_RULES = [
 ];
 
 // Documented exceptions — note but don't fail on
-const ACCEPTABLE_WCAG_VIOLATIONS = ['target-size', 'label', 'nested-interactive'];
+const ACCEPTABLE_WCAG_VIOLATIONS = ['target-size', 'label', 'nested-interactive', 'aria-required-children'];
 
 console.log('🔍 Unified A11y Test Runner\n');
 

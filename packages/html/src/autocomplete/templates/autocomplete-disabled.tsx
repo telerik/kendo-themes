@@ -1,8 +1,9 @@
 import Autocomplete from "../autocomplete.spec";
+import { nextId } from "../../misc";
 
 export const AutocompleteDisabled = (props) => (
     <Autocomplete
-        id="ac-disabled"
+        id={nextId('ac')}
         aria-label="Disabled autocomplete"
         disabled
         value="Disabled value"

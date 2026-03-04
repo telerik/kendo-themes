@@ -1,9 +1,10 @@
 import { IconButton } from "../../button";
 import DropdownGrid from "../dropdowngrid.spec";
+import { nextId } from "../../misc";
 
 export const DropdownGridSuffix = (props) => (
     <DropdownGrid
-        id="ddg-suffix"
+        id={nextId('ddg')}
         aria-label="Select option"
         suffix={
             <>

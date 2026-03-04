@@ -160,6 +160,8 @@ Grid.ariaSpec = {
         { selector: '.k-grid-content-locked table tr[aria-owns]', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows.' },
         { selector: '.k-grid-lockedcolumns .k-grid-header-wrap table tr', attribute: 'role=none', usage: 'Non-locked header rows have their semantic role removed when locked columns exist.' },
         { selector: '.k-grid-lockedcolumns .k-grid-content table tr', attribute: 'role=none', usage: 'Non-locked content rows have their semantic role removed when locked columns exist.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-header-wrap th[id]', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-content td[id]', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns.' },
 
         // ── Filter Menu (open) ──
         { selector: 'th[aria-expanded="true"][aria-controls]', attribute: 'aria-expanded=true', usage: 'Header cell announces the open state of the filter/column menu popup.' },

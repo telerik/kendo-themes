@@ -178,7 +178,6 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                 <Popup
                     className="k-multiselecttree-popup"
                     dir={dir}
-                    containerClassName="k-multiselecttree-popup-container"
                     containerRole="region"
                     containerAriaLabel="MultiSelectTree options"
                 >

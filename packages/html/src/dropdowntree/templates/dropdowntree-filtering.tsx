@@ -1,14 +1,19 @@
 import DropdownTree from "../dropdowntree.spec";
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 import { Icon } from "../../icon";
+import { nextId } from "../../misc";
 import { Textbox } from "../../textbox";
 
-export const DropdownTreeFiltering = (props) => (
-    <DropdownTree
-        id="ddt-filter"
-        aria-label="Select option"
-        opened={true}
-        treeviewId="ddt-filter-treeview"
+export const DropdownTreeFiltering = (props) => {
+    const ddtId = nextId('ddt');
+    const treeviewId = nextId('ddt-tv');
+
+    return (
+        <DropdownTree
+            id={ddtId}
+            aria-label="Select option"
+            opened={true}
+            treeviewId={treeviewId}
         popup={(
             <>
                 <div className="k-list-filter">
@@ -39,4 +44,5 @@ export const DropdownTreeFiltering = (props) => (
         )}
         {...props}
     />
-);
+    );
+};

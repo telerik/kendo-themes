@@ -1,12 +1,13 @@
 import DropdownTree from "../dropdowntree.spec";
+import { nextId } from "../../misc";
 
 export const DropdownTreeAdaptive = (props) => (
     <DropdownTree
-        id="ddt-adaptive"
+        id={nextId('ddt')}
         aria-label="Select option"
         adaptive={true}
         adaptiveTitle="DropdownTree"
-        adaptiveSettings={{ id: 'ddt-adaptive-as' }}
+        adaptiveSettings={{ id: nextId('ddt-as') }}
         {...props}
     />
 );

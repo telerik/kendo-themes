@@ -187,7 +187,6 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
             {opened && popup &&
                 <Popup
                     className="k-list-container k-combobox-popup"
-                    containerClassName="k-combobox-popup-container"
                     containerRole="region"
                     containerAriaLabel="Combobox suggestions"
                 >
