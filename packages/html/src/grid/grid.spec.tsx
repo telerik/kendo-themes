@@ -30,6 +30,8 @@ export type KendoGridProps = KendoGridOptions & {
     ariaRowCount?: number;
     /** @aria ID for the .k-grid-aria-root element, used by aria-controls on toolbar/grouping header. */
     ariaRootId?: string;
+    /** @aria Role for the .k-grid-aria-root element. Defaults to "grid", overridden to "treegrid" for TreeList. */
+    ariaRole?: string;
 };
 
 const defaultOptions = {
@@ -52,6 +54,7 @@ export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivE
         ariaColCount,
         ariaRowCount,
         ariaRootId,
+        ariaRole = 'grid',
         ...other
     } = props;
 
@@ -71,7 +74,7 @@ export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivE
             {pagerPosition === 'top' && pager}
             {groupingHeader}
             { props.children && _renderAriaRoot ?
-                <div className="k-grid-aria-root" role="grid"
+                <div className="k-grid-aria-root" role={ariaRole}
                     id={ariaRootId}
                     aria-colcount={ariaColCount}
                     aria-rowcount={ariaRowCount}
