@@ -196,7 +196,6 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
             {opened && popup &&
                 <Popup
                     className="k-list-container k-multiselect-popup"
-                    containerClassName="k-multiselect-popup-container"
                     containerRole="region"
                     containerAriaLabel="MultiSelect suggestions"
                 >

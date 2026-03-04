@@ -78,6 +78,7 @@ TreeList.ariaSpec = {
 
         // ── TreeList-Specific ──
         { selector: '.k-grid-content>table>tbody>tr[aria-expanded]', attribute: 'aria-expanded', usage: 'Set on the currently expanded row(s).' },
+        { selector: '.k-grid-content>table>tbody>tr[aria-expanded] td[aria-expanded]', attribute: 'aria-expanded', usage: 'The cell containing the expand/collapse toggle also carries aria-expanded matching the row value, as it is the navigable focusable element.' },
         { selector: '.k-treelist-toggle[class*="i-caret-alt-down"],.k-treelist-toggle[class*="i-caret-alt-right"]', attribute: 'aria-hidden=true', usage: 'Removes the expand/collapse icon from the accessibility tree.' },
 
         // ── Filter Menu (open) ──
@@ -100,6 +101,14 @@ TreeList.ariaSpec = {
         { selector: '.k-grid-columnmenu-popup .k-column-list', attribute: 'aria-label', usage: 'Accessible name for the column list.' },
         { selector: '.k-grid-columnmenu-popup .k-column-list-item', attribute: 'role=option', usage: 'Column list items are options.' },
         { selector: '.k-grid-columnmenu-popup .k-column-list-item', attribute: 'aria-checked', usage: 'Column list items announce their checked state.' },
+
+        // ── Locked Columns ──
+        { selector: '.k-grid-header-locked table tr[aria-owns]', attribute: 'aria-owns', usage: 'Locked header rows own cells from the corresponding non-locked header table rows.' },
+        { selector: '.k-grid-content-locked table tr[aria-owns]', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-header-wrap table tr', attribute: 'role=none', usage: 'Non-locked header rows have their semantic role removed when locked columns exist.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-content table tr', attribute: 'role=none', usage: 'Non-locked content rows have their semantic role removed when locked columns exist.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-header-wrap th[id]', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-content td[id]', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns.' },
 
         // ── Drag Cell ──
         { selector: '.k-drag-cell', attribute: 'aria-label', usage: 'Must be present in a Drag Row scenario on the cell containing the drag handle.' },

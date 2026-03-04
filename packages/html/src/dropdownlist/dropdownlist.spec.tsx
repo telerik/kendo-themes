@@ -176,7 +176,6 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
             {opened && popup &&
                 <Popup
                     className="k-list-container k-dropdownlist-popup"
-                    containerClassName="k-dropdownlist-popup-container"
                     containerRole="region"
                     containerAriaLabel="Dropdown suggestions"
                 >

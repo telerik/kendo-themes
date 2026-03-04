@@ -36,6 +36,7 @@ export const BreadcrumbLink = (
 
     return (
         <a
+            href="#"
             {...other}
             className={classNames(
                 props.className,

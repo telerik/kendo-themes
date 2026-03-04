@@ -1,12 +1,17 @@
 import DropdownTree from "../dropdowntree.spec";
+import { nextId } from "../../misc";
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 
-export const DropdownTreePopup = (props) => (
-    <DropdownTree
-        id="ddt-1"
-        aria-label="Select item"
-        opened={true}
-        treeviewId="ddt-1-treeview"
+export const DropdownTreePopup = (props) => {
+    const ddtId = nextId('ddt');
+    const treeviewId = nextId('ddt-tv');
+
+    return (
+        <DropdownTree
+            id={ddtId}
+            aria-label="Select item"
+            opened={true}
+            treeviewId={treeviewId}
         popup={
             <>
                 <Treeview dir={props.dir}>
@@ -27,4 +32,5 @@ export const DropdownTreePopup = (props) => (
         }
         {...props}
     />
-);
+    );
+};

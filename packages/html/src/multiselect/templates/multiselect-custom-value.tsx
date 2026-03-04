@@ -1,9 +1,10 @@
 import { List, ListContent, ListCustomValue, ListItem } from "../../list";
+import { nextId } from "../../misc";
 import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectCustomValue = ({ value="Custom value", ...other }: any) => (
     <MultiSelect value={value}
-        id="ms-custom"
+        id={nextId('ms')}
         aria-label="Select options"
         opened
         popup={(

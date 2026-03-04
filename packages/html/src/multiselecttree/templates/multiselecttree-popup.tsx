@@ -1,13 +1,18 @@
 
 import { Checkbox } from "../../checkbox";
+import { nextId } from "../../misc";
 import { TreeviewGroup, TreeviewItem, Treeview } from "../../treeview";
 import MultiSelectTree from "../multiselecttree.spec";
 
-export const MultiSelectTreePopup = (props) => (
-    <MultiSelectTree
-        id="mst-1"
-        aria-label="Select items"
-        treeviewId="mst-1-treeview"
+export const MultiSelectTreePopup = (props) => {
+    const mstId = nextId('mst');
+    const treeviewId = nextId('mst-tv');
+
+    return (
+        <MultiSelectTree
+            id={mstId}
+            aria-label="Select items"
+            treeviewId={treeviewId}
         opened
         popup={(
             <>
@@ -37,4 +42,5 @@ export const MultiSelectTreePopup = (props) => (
         )}
         {...props}
     />
-);
+    );
+};

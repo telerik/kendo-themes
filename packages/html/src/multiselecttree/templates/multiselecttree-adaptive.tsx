@@ -1,12 +1,13 @@
 import MultiSelectTree from "../multiselecttree.spec";
+import { nextId } from "../../misc";
 
 export const MultiSelectTreeAdaptive = (props) => (
     <MultiSelectTree
-        id="mst-adaptive"
+        id={nextId('mst')}
         aria-label="Select options"
         adaptive={true}
         adaptiveTitle="MultiSelectTree"
-        adaptiveSettings={{ id: 'mst-adaptive-as' }}
+        adaptiveSettings={{ id: nextId('mst-as') }}
         {...props}
     />
 );

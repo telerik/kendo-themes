@@ -45,15 +45,15 @@ export const TreeListWithToolbar = ({ ...other }: any) => {
                                 </colgroup>
                                 <TableTbody role="rowgroup">
                                     <TableRow role="row" aria-rowindex={2} aria-expanded="true">
-                                        <TableTd role="gridcell" aria-colindex={1}>
+                                        <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                             <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                             Daryl Sweeney
                                         </TableTd>
                                         <TableTd role="gridcell" aria-colindex={2}>CEO</TableTd>
                                         <TableTd role="gridcell" aria-colindex={3}>February 7, 2012</TableTd>
                                     </TableRow>
-                                    <TableRow role="row" alt aria-rowindex={3}>
-                                        <TableTd role="gridcell" aria-colindex={1}>
+                                    <TableRow role="row" alt aria-rowindex={3} aria-expanded="false">
+                                        <TableTd role="gridcell" aria-colindex={1} aria-expanded="false">
                                             <Icon className="k-treelist-toggle" icon="none" />
                                             <Icon className="k-treelist-toggle" icon="caret-alt-right" />
                                             Guy Wooten

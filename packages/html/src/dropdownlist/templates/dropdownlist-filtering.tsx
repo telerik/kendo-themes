@@ -1,10 +1,11 @@
 import { List, ListContent, ListItem } from "../../list";
+import { nextId } from "../../misc";
 import { Searchbox } from "../../searchbox";
 import DropdownList from "../dropdownlist.spec";
 
 export const DropdownListFiltering = (props) => (
     <DropdownList
-        id="ddl-filtering"
+        id={nextId('ddl')}
         aria-label="Filter options"
         opened={true}
         popup={

@@ -8,7 +8,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
     const treelistId = nextId('treelist');
 
     return (
-        <TreeList id="treelist" _renderAriaRoot ariaRootId={treelistId} ariaColCount={3} ariaRowCount={6} {...other}>
+        <TreeList id={nextId('treelist')} _renderAriaRoot ariaRootId={treelistId} ariaColCount={3} ariaRowCount={6} {...other}>
             {gridHeader ||
                 <GridHeader>
                     <div className="k-grid-header-wrap">
@@ -40,7 +40,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                             </colgroup>
                             <TableTbody role="rowgroup">
                                 <TableRow role="row" aria-rowindex={2} aria-expanded="true">
-                                    <TableTd role="gridcell" aria-colindex={1}>
+                                    <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
                                         Daryl
                                     </TableTd>
@@ -48,7 +48,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                     <TableTd role="gridcell" aria-colindex={3}>CEO</TableTd>
                                 </TableRow>
                                 <TableRow role="row" alt aria-rowindex={3} aria-expanded="true">
-                                    <TableTd role="gridcell" aria-colindex={1}>
+                                    <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
                                         Guy
@@ -57,7 +57,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                     <TableTd role="gridcell" aria-colindex={3}>Chief Technical Officer</TableTd>
                                 </TableRow>
                                 <TableRow role="row" aria-rowindex={4} aria-expanded="true">
-                                    <TableTd role="gridcell" aria-colindex={1}>
+                                    <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
@@ -67,7 +67,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                     <TableTd role="gridcell" aria-colindex={3}>VP, Engineering</TableTd>
                                 </TableRow>
                                 <TableRow role="row" alt aria-rowindex={5} aria-expanded="true">
-                                    <TableTd role="gridcell" aria-colindex={1}>
+                                    <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>

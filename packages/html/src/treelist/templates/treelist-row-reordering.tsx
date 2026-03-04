@@ -8,7 +8,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
     const treelistId = nextId('treelist');
 
     return (
-        <TreeList id="treelist" _renderAriaRoot ariaRootId={treelistId} ariaColCount={4} ariaRowCount={6} {...other} >
+        <TreeList id={nextId('treelist')} _renderAriaRoot ariaRootId={treelistId} ariaColCount={4} ariaRowCount={6} {...other} >
             {gridHeader ||
                 <GridHeader>
                     <div className="k-grid-header-wrap">
@@ -46,7 +46,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                     <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder">
                                         <Icon icon="reorder"/>
                                     </TableTd>
-                                    <TableTd role="gridcell" aria-colindex={2}>
+                                    <TableTd role="gridcell" aria-colindex={2} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down"/>
                                         Daryl
                                     </TableTd>
@@ -57,7 +57,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                     <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder">
                                         <Icon icon="reorder"/>
                                     </TableTd>
-                                    <TableTd role="gridcell" aria-colindex={2}>
+                                    <TableTd role="gridcell" aria-colindex={2} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                         Guy
@@ -69,7 +69,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                     <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder">
                                         <Icon icon="reorder"/>
                                     </TableTd>
-                                    <TableTd role="gridcell" aria-colindex={2}>
+                                    <TableTd role="gridcell" aria-colindex={2} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
@@ -82,7 +82,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                     <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder">
                                         <Icon icon="reorder"/>
                                     </TableTd>
-                                    <TableTd role="gridcell" aria-colindex={2}>
+                                    <TableTd role="gridcell" aria-colindex={2} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />

@@ -1,10 +1,11 @@
 import { TextButton } from "../../button";
 import { Chip, ChipAction } from "../../chip";
+import { nextId } from "../../misc";
 import MultiSelect from "../multiselect.spec";
 
 export const MultiSelectSuffix = (props) => (
     <MultiSelect
-        id="ms-suffix"
+        id={nextId('ms')}
         aria-label="Select options"
         suffix={
             <>
