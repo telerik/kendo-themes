@@ -8,17 +8,17 @@ export const GridWithColumnMenu = ({ contentClassName, sortable, resizable, ...o
             <>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable>
+                        <GridHeaderTable role="none">
                             <colgroup>
                                 <col style={{ width: "100px" }} />
                                 <col style={{ width: "100px" }} />
                                 <col style={{ width: "150px" }} />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="ID" filterable></GridHeaderCell>
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Name" filterable></GridHeaderCell>
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Category" filterable></GridHeaderCell>
+                            <TableThead role="rowgroup">
+                                <TableRow role="row">
+                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="ID" filterable role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Name" filterable role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Category" filterable role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -26,37 +26,37 @@ export const GridWithColumnMenu = ({ contentClassName, sortable, resizable, ...o
                 </GridHeader>
                 <GridContainer>
                     <GridContent className={contentClassName}>
-                        <GridTable>
+                        <GridTable role="none">
                             <colgroup>
                                 <col style={{ width: "100px" }} />
                                 <col style={{ width: "100px" }} />
                                 <col style={{ width: "150px" }} />
                             </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-master-row">
-                                    <TableTd>1</TableTd>
-                                    <TableTd>Chai</TableTd>
-                                    <TableTd>Beverages</TableTd>
+                            <TableTbody role="rowgroup">
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd role="gridcell">1</TableTd>
+                                    <TableTd role="gridcell">Chai</TableTd>
+                                    <TableTd role="gridcell">Beverages</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd>2</TableTd>
-                                    <TableTd>Chang</TableTd>
-                                    <TableTd>Beverages</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd role="gridcell">2</TableTd>
+                                    <TableTd role="gridcell">Chang</TableTd>
+                                    <TableTd role="gridcell">Beverages</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
-                                    <TableTd>3</TableTd>
-                                    <TableTd>Aniseed Syrup</TableTd>
-                                    <TableTd>Condiments</TableTd>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd role="gridcell">3</TableTd>
+                                    <TableTd role="gridcell">Aniseed Syrup</TableTd>
+                                    <TableTd role="gridcell">Condiments</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd>4</TableTd>
-                                    <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
-                                    <TableTd>Condiments</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd role="gridcell">4</TableTd>
+                                    <TableTd role="gridcell">Chef Anton&apos;s Cajun Seasoning</TableTd>
+                                    <TableTd role="gridcell">Condiments</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
-                                    <TableTd>5</TableTd>
-                                    <TableTd>Grandma&apos;s Boysenberry Spread</TableTd>
-                                    <TableTd>Condiments</TableTd>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd role="gridcell">5</TableTd>
+                                    <TableTd role="gridcell">Grandma&apos;s Boysenberry Spread</TableTd>
+                                    <TableTd role="gridcell">Condiments</TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>
