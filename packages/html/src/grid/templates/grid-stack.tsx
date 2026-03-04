@@ -17,13 +17,13 @@ export const GridStack = ({ reorderable, checkbox, aggregates, sticky, detailRow
             <>
                 <GridContainer>
                     <GridContent>
-                        <GridTable>
+                        <GridTable role="none">
                             <colgroup>
                                 <col />
                             </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-master-row">
-                                    <TableTd className={`${sticky ? 'k-grid-row-sticky' : ''}`}>
+                            <TableTbody role="rowgroup">
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd className={`${sticky ? 'k-grid-row-sticky' : ''}`} role="gridcell" tabIndex={0}>
                                         <GridStackRow cols={cols}>
                                             {reorderable && (
                                                 <GridStackCell cellContent={<><Icon icon="reorder" /><span>Reorder</span></>} className="k-drag-cell" />
@@ -34,9 +34,9 @@ export const GridStack = ({ reorderable, checkbox, aggregates, sticky, detailRow
                                             {checkbox && (
                                                 <GridStackCell cellContent={<CheckboxNormal />} />
                                             )}
-                                            <GridStackCell cellHeader="Contact Name" cellContent="Maria Anders" />
-                                            <GridStackCell cellHeader="Company Name" cellContent="Alfreds Futterkiste" />
-                                            <GridStackCell cellHeader="Country" cellContent="Germany" />
+                                            <GridStackCell cellHeader="Contact Name" cellContent="Maria Anders" tabIndex={0} />
+                                            <GridStackCell cellHeader="Company Name" cellContent="Alfreds Futterkiste" tabIndex={0} />
+                                            <GridStackCell cellHeader="Country" cellContent="Germany" tabIndex={0} />
                                             {detailRow && (
                                                  <GridStackCell cellContent={<Button icon="minus" text="Collapse Details" fillMode="flat" themeColor="primary" />} />
                                             )}
@@ -44,8 +44,8 @@ export const GridStack = ({ reorderable, checkbox, aggregates, sticky, detailRow
                                     </TableTd>
                                 </TableRow>
                                 {detailRow && (
-                                    <TableRow className="k-detail-row">
-                                        <TableTd className="k-detail-cell">
+                                    <TableRow className="k-detail-row" role="row">
+                                        <TableTd className="k-detail-cell" role="gridcell">
                                             {/* Custom Detail Row Template */}
                                             <div>
                                                 <span className="k-font-bold">In stock: </span>
@@ -58,8 +58,8 @@ export const GridStack = ({ reorderable, checkbox, aggregates, sticky, detailRow
                                         </TableTd>
                                     </TableRow>
                                 )}
-                                <TableRow alt className="k-master-row">
-                                    <TableTd>
+                                <TableRow alt className="k-master-row" role="row">
+                                    <TableTd role="gridcell" tabIndex={0}>
                                         <GridStackRow cols={cols}>
                                             {reorderable && (
                                                 <GridStackCell cellContent={<><Icon icon="reorder" /><span>Reorder</span></>} className="k-drag-cell" />
@@ -70,9 +70,9 @@ export const GridStack = ({ reorderable, checkbox, aggregates, sticky, detailRow
                                             {checkbox && (
                                                 <GridStackCell cellContent={<CheckboxNormal />} />
                                             )}
-                                            <GridStackCell cellHeader="Contact Name" cellContent="Ana Trujillo" />
-                                            <GridStackCell cellHeader="Company Name" cellContent="Ana Trujillo Emparedados y helados" />
-                                            <GridStackCell cellHeader="Country" cellContent="Mexico" />
+                                            <GridStackCell cellHeader="Contact Name" cellContent="Ana Trujillo" tabIndex={0} />
+                                            <GridStackCell cellHeader="Company Name" cellContent="Ana Trujillo Emparedados y helados" tabIndex={0} />
+                                            <GridStackCell cellHeader="Country" cellContent="Mexico" tabIndex={0} />
                                             {detailRow && (
                                                 <GridStackCell cellContent={<Button icon="plus" text="Expand Details" fillMode="flat" themeColor="primary" />} />
                                             )}
@@ -87,7 +87,7 @@ export const GridStack = ({ reorderable, checkbox, aggregates, sticky, detailRow
         )}
         gridSelectionAggregates={(
             aggregates && (
-                <div className="k-selection-aggregates k-grid-selection-aggregates">
+                <div className="k-selection-aggregates k-grid-selection-aggregates" aria-live="polite">
                     <div className="k-selection-aggregates-item">
                         <span className="k-selection-aggregates-item-text">Sum:</span>
                         <span className="k-selection-aggregates-item-value">122.00</span>
