@@ -177,13 +177,17 @@ export type KendoComponentProps = {
 
 ### 4. Ensure full coverage — no gaps allowed
 
-After adding rules, ensure **every rule** is tested by at least one template:
+After adding rules, ensure **every single rule** is tested by at least one template. **Coverage gaps are NOT acceptable** — every ariaSpec rule MUST be matched by at least one rendered element across all templates. Gaps mean the test infrastructure cannot verify that the rule is correctly applied, which defeats the purpose of the ariaSpec.
 
 1. Run `npm run build --prefix packages/html && npm run test:a11y [component]`
 2. Check the output for **coverage gaps** — rules where the selector never matched any element in any template
-3. For each gap, create a new template that renders the component in the required state (disabled, selected, expanded, focused, etc.)
-4. Export the new template from the component's `index.ts`
+3. For each gap, either:
+   - Modify an existing template to render the missing state/element, OR
+   - Create a new template that renders the component in the required state
+4. Export any new template from the component's `index.ts`
 5. Re-run until: **0 ARIA violations, 0 WCAG violations, 0 coverage gaps**
+
+**This step is mandatory.** Do NOT consider the task complete if coverage gaps remain.
 
 Common states that need dedicated templates:
 - **Disabled** — for `aria-disabled` rules
@@ -207,7 +211,10 @@ Fix violations and re-run until clean. Also run `npm run typecheck --prefix pack
 These are out of scope — note but don't try to fix:
 - `label` — form labels provided by consuming apps
 - `target-size` (2.5.8) — controlled by product implementations
+- `nested-interactive` — in some composite components (e.g. MenuButton inside TabStripItem), interactive controls are nested within interactive containers; these are documented as known exceptions in the component's ariaSpec and markdown spec
 - jQuery legacy specs — excluded from compliance testing
+
+When an acceptable violation is encountered, it will appear in test output with `ℹ️` prefix. Document the exception in both the ariaSpec (as a comment) and the component's `aria/[component]_aria.md`.
 
 ### Must-fix violations
 

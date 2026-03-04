@@ -22,6 +22,8 @@ export type KendoTabStripProps = KendoTabStripOptions & {
     position?: "top" | "bottom" | "left" | "right";
     tabAlignment?: "start" | "center" | "end" | "justify" | "stretched";
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
+    /** @aria Optional id applied to the TabStripItems (ul) element for aria-controls references. */
+    tabStripItemsId?: string;
     scrollable?: boolean;
     scrollButtons?: "around" | "start" | "end" | "hidden";
     scrollingPosition?: "start" | "end" | "both";
@@ -44,6 +46,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
         scrollable,
         children,
         tabStripItems,
+        tabStripItemsId,
         position = defaultOptions.position,
         tabAlignment = defaultOptions.tabAlignment,
         scrollButtons = defaultOptions.scrollButtons,
@@ -124,7 +127,8 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                 }
                 <TabStripItems className={classNames({[`k-tabstrip-items-scroll`]: scrollable && scrollButtons === 'hidden'})}
                 tabAlignment={tabAlignmentMap[tabAlignment]}
-                orientation={orientationMap[position] as 'horizontal' | 'vertical'}>
+                orientation={orientationMap[position] as 'horizontal' | 'vertical'}
+                {...(tabStripItemsId && { id: tabStripItemsId })}>
                     {tabStripItems}
                 </TabStripItems>
                 {scrollable && scrollButtons === 'end' &&
