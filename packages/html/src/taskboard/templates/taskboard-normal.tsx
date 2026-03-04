@@ -7,7 +7,7 @@ export const TaskBoardNormal = (props) =>
             <TaskBoardColumn>
                 <TaskBoardCard menuButton>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
+                        <a className="k-card-title k-link">Card Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>
@@ -16,7 +16,7 @@ export const TaskBoardNormal = (props) =>
                 </TaskBoardCard>
                 <TaskBoardCard menuButton>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
+                        <a className="k-card-title k-link">Card Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>
@@ -25,27 +25,7 @@ export const TaskBoardNormal = (props) =>
                 </TaskBoardCard>
                 <TaskBoardCard menuButton>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
-                        <span className="k-spacer"></span>
-                    </CardHeader>
-                    <CardBody>
-                        <p>Card Body</p>
-                    </CardBody>
-                </TaskBoardCard>
-            </TaskBoardColumn>
-            <TaskBoardColumn>
-                <TaskBoardCard menuButton>
-                    <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
-                        <span className="k-spacer"></span>
-                    </CardHeader>
-                    <CardBody>
-                        <p>Card Body</p>
-                    </CardBody>
-                </TaskBoardCard>
-                <TaskBoardCard menuButton>
-                    <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
+                        <a className="k-card-title k-link">Card Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>
@@ -56,7 +36,27 @@ export const TaskBoardNormal = (props) =>
             <TaskBoardColumn>
                 <TaskBoardCard menuButton>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Card Title</a>
+                        <a className="k-card-title k-link">Card Title</a>
+                        <span className="k-spacer"></span>
+                    </CardHeader>
+                    <CardBody>
+                        <p>Card Body</p>
+                    </CardBody>
+                </TaskBoardCard>
+                <TaskBoardCard menuButton>
+                    <CardHeader className="k-hbox" details>
+                        <a className="k-card-title k-link">Card Title</a>
+                        <span className="k-spacer"></span>
+                    </CardHeader>
+                    <CardBody>
+                        <p>Card Body</p>
+                    </CardBody>
+                </TaskBoardCard>
+            </TaskBoardColumn>
+            <TaskBoardColumn>
+                <TaskBoardCard menuButton>
+                    <CardHeader className="k-hbox" details>
+                        <a className="k-card-title k-link">Card Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>

@@ -86,7 +86,7 @@ export const Step = (
             {...(wizardContext && { role: 'none' })}
         >
 
-            <a href="#" className="k-step-link"
+            <a className="k-step-link"
                 {...(wizardContext && { role: 'tab' })}
                 {...(ariaControls && { 'aria-controls': ariaControls })}
                 {...(current && { 'aria-current': wizardContext ? 'true' as const : 'step' as const })}

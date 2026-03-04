@@ -23,6 +23,10 @@ export const SchedulerView: KendoComponent<KendoSchedulerViewProps & React.HTMLA
         ...other
     } = props;
 
+    const viewRole = view === 'agenda'
+        ? 'grid'
+        : (view === 'year' ? undefined : 'none');
+
     return (
         <Component
             {...other}
@@ -32,7 +36,9 @@ export const SchedulerView: KendoComponent<KendoSchedulerViewProps & React.HTMLA
                 {
                     [`k-scheduler-${view}view`]: view,
                 }
-            )}>
+            )}
+            {...(viewRole && { role: viewRole })}
+        >
             {props.children}
         </Component>
     );

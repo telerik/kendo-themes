@@ -12,10 +12,10 @@ export const SchedulerFlexMonth = ({ style, ...props } :any) => (
             <SchedulerToolbar>
                 <ButtonGroup className="k-scheduler-navigation">
                     <Button className="k-group-start">Today</Button>
-                    <Button icon="caret-alt-left"></Button>
-                    <Button className="k-group-end" icon="caret-alt-right"></Button>
+                    <Button icon="caret-alt-left" aria-label="Navigate to previous period"></Button>
+                    <Button className="k-group-end" icon="caret-alt-right" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
-                <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                     June 23 2024
                 </Button>
                 <span className="k-spacer"></span>
@@ -63,7 +63,7 @@ export const SchedulerFlexMonth = ({ style, ...props } :any) => (
                                 <SchedulerRow>
                                     <SchedulerCell as="div" cellType={[ "slot" ]}>
                                         <span className="k-link k-nav-day">02</span>
-                                        <Button className="k-more-events" icon="more-horizontal"></Button>
+                                        <Button className="k-more-events" icon="more-horizontal" aria-label="Show more events"></Button>
                                     </SchedulerCell>
                                     <SchedulerCell as="div" cellType={[ "slot" ]} text="03" />
                                     <SchedulerCell as="div" cellType={[ "slot" ]} text="04" />
