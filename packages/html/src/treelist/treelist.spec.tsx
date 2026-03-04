@@ -17,6 +17,7 @@ export const TreeList: KendoComponent<KendoGridProps & React.HTMLAttributes<HTML
 ) => (
     <Grid
         {...props}
+        ariaRole="treegrid"
         className={classNames(
             TREELIST_CLASSNAME,
             props.className
@@ -32,5 +33,77 @@ TreeList.className = TREELIST_CLASSNAME;
 TreeList.defaultOptions = defaultOptions;
 TreeList.moduleName = TREELIST_MODULE_NAME;
 TreeList.folderName = TREELIST_FOLDER_NAME;
+
+/**
+ * @ariaSpec
+ * The TreeList is a composite component that consists of 2 logically separated structural elements:
+ * - Toolbar (role=toolbar)
+ * - Tree Grid (role=treegrid)
+ *
+ * The element with role=treegrid must not include the ToolBar element.
+ * It implements the Grid ARIA specification with treegrid-specific additions.
+ *
+ * @see aria/treelist_aria.md
+ */
+TreeList.ariaSpec = {
+    selector: '.k-treelist',
+    rules: [
+        // ── TreeList Toolbar ──
+        { selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons and inputs.' },
+        { selector: '.k-grid-toolbar', attribute: 'aria-label', usage: 'Clarifies the purpose of the toolbar.' },
+        { selector: '.k-grid-toolbar[aria-controls]', attribute: 'aria-controls=.k-grid-aria-root id', usage: 'Pointing to the id of the element with role=treegrid.' },
+
+        // ── TreeGrid Element ──
+        { selector: '.k-treelist .k-grid-aria-root', attribute: 'role=treegrid', usage: 'The role specifies the element is a TreeGrid.' },
+        { selector: '.k-grid-aria-root[aria-colcount]', attribute: 'aria-colcount', usage: 'The total number of columns.' },
+        { selector: '.k-grid-aria-root[aria-rowcount]', attribute: 'aria-rowcount', usage: 'The total number of rows in the table.' },
+
+        // ── TreeList Header ──
+        { selector: '.k-grid-header-wrap>table', attribute: 'role=none', usage: 'Negates the default semantic role of the <table> element.' },
+        { selector: '.k-grid-header-wrap>table>thead', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr[aria-rowindex]', attribute: 'aria-rowindex', usage: 'Row number.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr>th:not(.k-hierarchy-cell):not(.k-group-cell):not(.k-drag-cell)', attribute: 'role=columnheader', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr>th[aria-sort]', attribute: 'aria-sort', usage: 'Present if sorting is enabled for that column.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr>th[aria-colindex]', attribute: 'aria-colindex', usage: 'Col number.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr>th[aria-haspopup]', attribute: 'aria-haspopup=dialog', usage: 'Present if the column has a ColumnMenu or FilterMenu.' },
+
+        // ── TreeList Content ──
+        { selector: '.k-grid-content>table', attribute: 'role=none', usage: 'Negates the default semantic role of the <table> element.' },
+        { selector: '.k-grid-content>table>tbody', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-content>table>tbody>tr', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-content>table>tbody>tr[aria-rowindex]', attribute: 'aria-rowindex', usage: 'Row number.' },
+        { selector: '.k-grid-content>table>tbody>tr>td', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-content>table>tbody>tr>td[aria-colindex]', attribute: 'aria-colindex', usage: 'Col number.' },
+
+        // ── TreeList-Specific ──
+        { selector: '.k-grid-content>table>tbody>tr[aria-expanded]', attribute: 'aria-expanded', usage: 'Set on the currently expanded row(s).' },
+        { selector: '.k-treelist-toggle[class*="i-caret-alt-down"],.k-treelist-toggle[class*="i-caret-alt-right"]', attribute: 'aria-hidden=true', usage: 'Removes the expand/collapse icon from the accessibility tree.' },
+
+        // ── Filter Menu (open) ──
+        { selector: 'th[aria-expanded="true"][aria-controls]', attribute: 'aria-expanded=true', usage: 'Header cell announces the open state of the filter/column menu popup.' },
+        { selector: 'th[aria-expanded="true"][aria-controls]', attribute: 'aria-controls', usage: 'Points to the id of the popup dialog element.' },
+        { selector: '.k-grid-filter-popup[role="dialog"]', attribute: 'role=dialog', usage: 'The filter menu popup has dialog role.' },
+        { selector: '.k-grid-filter-popup[role="dialog"]', attribute: 'id', usage: 'Unique id linked to the header cell aria-controls attribute.' },
+        { selector: '.k-grid-filter-popup[role="dialog"]', attribute: 'aria-label', usage: 'Descriptive label for the filter menu.' },
+
+        // ── Column Menu (open) ──
+        { selector: '.k-grid-columnmenu-popup[role="dialog"]', attribute: 'role=dialog', usage: 'The column menu popup has dialog role.' },
+        { selector: '.k-grid-columnmenu-popup[role="dialog"]', attribute: 'id', usage: 'Unique id linked to the header cell aria-controls attribute.' },
+        { selector: '.k-grid-columnmenu-popup[role="dialog"]', attribute: 'aria-label', usage: 'Descriptive label for the column menu.' },
+        { selector: '.k-grid-columnmenu-popup .k-columnmenu-item', attribute: 'role=button', usage: 'Column menu items have button role.' },
+        { selector: '.k-grid-columnmenu-popup .k-columnmenu-item', attribute: 'tabindex=0', usage: 'Column menu items are focusable.' },
+        { selector: '.k-grid-columnmenu-popup .k-columnmenu-item[aria-expanded]', attribute: 'aria-expanded', usage: 'Expandable column menu items announce their expanded state.' },
+        { selector: '.k-grid-columnmenu-popup .k-columnmenu-item[aria-controls]', attribute: 'aria-controls', usage: 'Expandable items point to the id of the content they control.' },
+        { selector: '.k-grid-columnmenu-popup .k-column-list', attribute: 'role=listbox', usage: 'The column list is a listbox.' },
+        { selector: '.k-grid-columnmenu-popup .k-column-list', attribute: 'aria-multiselectable=true', usage: 'The column list supports multiple selections.' },
+        { selector: '.k-grid-columnmenu-popup .k-column-list', attribute: 'aria-label', usage: 'Accessible name for the column list.' },
+        { selector: '.k-grid-columnmenu-popup .k-column-list-item', attribute: 'role=option', usage: 'Column list items are options.' },
+        { selector: '.k-grid-columnmenu-popup .k-column-list-item', attribute: 'aria-checked', usage: 'Column list items announce their checked state.' },
+
+        // ── Drag Cell ──
+        { selector: '.k-drag-cell', attribute: 'aria-label', usage: 'Must be present in a Drag Row scenario on the cell containing the drag handle.' },
+    ]
+};
 
 export default TreeList;
