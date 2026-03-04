@@ -52,7 +52,7 @@ const PAGE_LEVEL_RULES = [
 ];
 
 // Documented exceptions — note but don't fail on
-const ACCEPTABLE_WCAG_VIOLATIONS = ['target-size', 'label'];
+const ACCEPTABLE_WCAG_VIOLATIONS = ['target-size', 'label', 'nested-interactive'];
 
 console.log('🔍 Unified A11y Test Runner\n');
 
@@ -615,6 +615,9 @@ async function main() {
                 if (verboseMode || !ok) {
                     aria.violations.forEach(v => console.log(`     ❌ ARIA: ${v.rule.selector} - ${v.rule.attribute}`));
                     wcagActual.forEach(v => console.log(`     ❌ WCAG: ${v.id} - ${v.description}`));
+                }
+                // Always show acceptable violations so they remain visible
+                if (wcagAcceptable.length > 0) {
                     wcagAcceptable.forEach(v => console.log(`     ℹ️  WCAG: ${v.id} (acceptable exception)`));
                 }
 

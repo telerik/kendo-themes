@@ -12,4 +12,5 @@ export * from './spreadsheet.spec';
 // @deprecated Legacy component - will be removed in future version
 export * from './spreadsheet-legacy.spec';
 export * from './templates/spreadsheet-normal';
+export * from './templates/spreadsheet-formula-open';
 export * from './demos/spreadsheet';

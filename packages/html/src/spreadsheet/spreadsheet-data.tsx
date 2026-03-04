@@ -38,6 +38,11 @@ export const SpreadsheetData = (
 
     const spreadsheetData = activeCellIndex ? addActiveCell(data, activeCellIndex) : data;
 
+    // Add keys to avoid React "unique key" warnings
+    const keyedItems = [ ...axis, ...spreadsheetData ].map((el, i) =>
+        el.key ? el : <div key={i} style={el.props.style} className={el.props.className}>{el.props.children}</div>
+    );
+
     return (
         <div
             {...other}
@@ -45,7 +50,7 @@ export const SpreadsheetData = (
                 SPREADSHEETDATA_CLASSNAME,
                 props.className
             )}>
-            {[ ...axis, ...spreadsheetData ]}
+            {keyedItems}
         </div>
     );
 };
