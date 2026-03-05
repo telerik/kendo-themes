@@ -288,7 +288,9 @@
 
 
     // Input value
-    // Input value
+    .k-input-value-icon {
+        flex: none;
+    }
     .k-input-value-text {
         flex: 1;
         overflow: hidden;
