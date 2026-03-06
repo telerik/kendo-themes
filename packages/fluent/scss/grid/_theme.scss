@@ -126,6 +126,12 @@
 
     }
 
+    .k-grid-pinned-wrap {
+        > .k-table {
+            box-shadow: $kendo-grid-border-width 0 0 0 $kendo-grid-border;
+        }
+    }
+
 
     // Column/Filter Menu
     .k-filter-menu.k-popup,
