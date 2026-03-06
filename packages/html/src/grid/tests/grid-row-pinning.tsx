@@ -1,7 +1,7 @@
 import { MenuListItem, MenuSeparator } from "../../menu";
 import { Popup } from "../../popup";
 import { ContextMenu } from "../../context-menu";
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridStickyContainer } from "../../grid";
+import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPinnedContainer } from "../../grid";
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
 import { Icon } from "../../icon";
 
@@ -104,25 +104,27 @@ export default () => (
               </GridHeaderTable>
             </div>
           </GridHeader>
+          {/* Pinned Content - Row pinned to top */}
+          <GridPinnedContainer>
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-master-row">
+                    <TableTd>Shelden Greyes</TableTd>
+                    <TableTd>Operator</TableTd>
+                    <TableTd>UK</TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
           <GridContainer>
             <GridContent>
-              {/* Pinned Content - Row pinned to top */}
-              <GridStickyContainer>
-                <GridTable>
-                  <colgroup>
-                    <col />
-                    <col />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-master-row">
-                      <TableTd>Shelden Greyes</TableTd>
-                      <TableTd>Operator</TableTd>
-                      <TableTd>UK</TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
               <GridTable>
                 <colgroup>
                   <col />
@@ -198,25 +200,27 @@ export default () => (
                   </TableRow>
                 </TableTbody>
               </GridTable>
-              {/* Pinned Content - Row pinned to bottom */}
-              <GridStickyContainer position="bottom" style={{ insetBlockEnd: 0 }}>
-                <GridTable>
-                  <colgroup>
-                    <col />
-                    <col />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-master-row">
-                      <TableTd>Shelden Greyes</TableTd>
-                      <TableTd>Operator</TableTd>
-                      <TableTd>UK</TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
             </GridContent>
           </GridContainer>
+          {/* Pinned Content - Row pinned to bottom */}
+          <GridPinnedContainer position="bottom">
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-master-row">
+                    <TableTd>Shelden Greyes</TableTd>
+                    <TableTd>Operator</TableTd>
+                    <TableTd>UK</TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
         </Grid>
       </section>
 
@@ -311,27 +315,29 @@ export default () => (
               </GridHeaderTable>
             </div>
           </GridHeader>
+          {/* Pinned Content - Row pinned to top */}
+          <GridPinnedContainer>
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col style={{ width: "48px" }} />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-master-row">
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd>Shelden Greyes</TableTd>
+                    <TableTd>Operator</TableTd>
+                    <TableTd>UK</TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
           <GridContainer>
             <GridContent>
-              {/* Pinned Content - Row pinned to top */}
-              <GridStickyContainer>
-                <GridTable>
-                  <colgroup>
-                    <col style={{ width: "48px" }} />
-                    <col />
-                    <col />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-master-row">
-                      <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /></span></TableTd>
-                      <TableTd>Shelden Greyes</TableTd>
-                      <TableTd>Operator</TableTd>
-                      <TableTd>UK</TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
               <GridTable>
                 <colgroup>
                   <col style={{ width: "48px" }} />
@@ -417,27 +423,29 @@ export default () => (
                   </TableRow>
                 </TableTbody>
               </GridTable>
-              {/* Pinned Content - Row pinned to bottom */}
-              <GridStickyContainer position="bottom" style={{ insetBlockEnd: 0 }}>
-                <GridTable>
-                  <colgroup>
-                    <col style={{ width: "48px" }} />
-                    <col />
-                    <col />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-master-row">
-                      <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /></span></TableTd>
-                      <TableTd>Shelden Greyes</TableTd>
-                      <TableTd>Operator</TableTd>
-                      <TableTd>UK</TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
             </GridContent>
           </GridContainer>
+          {/* Pinned Content - Row pinned to bottom */}
+          <GridPinnedContainer position="bottom">
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col style={{ width: "48px" }} />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-master-row">
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd>Shelden Greyes</TableTd>
+                    <TableTd>Operator</TableTd>
+                    <TableTd>UK</TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
         </Grid>
       </section>
 
@@ -524,27 +532,29 @@ export default () => (
               </GridHeaderTable>
             </div>
           </GridHeader>
+          {/* Pinned Content - Row pinned to top */}
+          <GridPinnedContainer>
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col style={{ width: "72px" }} />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-master-row">
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /><Icon icon="pin-outline-bottom" /></span></TableTd>
+                    <TableTd>Shelden Greyes</TableTd>
+                    <TableTd>Operator</TableTd>
+                    <TableTd>UK</TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
           <GridContainer>
             <GridContent>
-              {/* Pinned Content - Row pinned to top */}
-              <GridStickyContainer>
-                <GridTable>
-                  <colgroup>
-                    <col style={{ width: "72px" }} />
-                    <col />
-                    <col />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-master-row">
-                      <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /><Icon icon="pin-outline-bottom" /></span></TableTd>
-                      <TableTd>Shelden Greyes</TableTd>
-                      <TableTd>Operator</TableTd>
-                      <TableTd>UK</TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
               <GridTable>
                 <colgroup>
                   <col style={{ width: "72px" }} />
@@ -630,27 +640,29 @@ export default () => (
                   </TableRow>
                 </TableTbody>
               </GridTable>
-              {/* Pinned Content - Row pinned to bottom */}
-              <GridStickyContainer position="bottom" style={{ insetBlockEnd: 0 }}>
-                <GridTable>
-                  <colgroup>
-                    <col style={{ width: "72px" }} />
-                    <col />
-                    <col />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-master-row">
-                      <TableTd><span className="k-pin-cell"><Icon icon="pin-outline-top" /><Icon icon="unpin-outline" /></span></TableTd>
-                      <TableTd>Shelden Greyes</TableTd>
-                      <TableTd>Operator</TableTd>
-                      <TableTd>UK</TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
             </GridContent>
           </GridContainer>
+          {/* Pinned Content - Row pinned to bottom */}
+          <GridPinnedContainer position="bottom">
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col style={{ width: "72px" }} />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-master-row">
+                    <TableTd><span className="k-pin-cell"><Icon icon="pin-outline-top" /><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd>Shelden Greyes</TableTd>
+                    <TableTd>Operator</TableTd>
+                    <TableTd>UK</TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
         </Grid>
       </section>
     </div>

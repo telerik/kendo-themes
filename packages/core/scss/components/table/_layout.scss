@@ -141,12 +141,12 @@
             position: sticky;
 
             &::before {
-                content: "\200b";
-                padding-block: $kendo-table-md-cell-padding-y;
-                padding-inline: 0;
+                content: "";
+                height: 1lh;
                 width: 0;
                 display: block;
                 overflow: hidden;
+                box-sizing: content-box;
             }
 
             .k-table-th {
