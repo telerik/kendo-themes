@@ -55,31 +55,31 @@ export default () => (
           </div>
         </GridHeader>
         <GridContainer>
+          <GridStickyContainer>
+            <GridTable className="k-grid-group-sticky-header-table">
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <TableTbody>
+                <TableRow className="k-table-group-row k-grouping-row">
+                  <TableTd colspan={9}>
+                    <p className="k-reset">
+                      <Icon icon="caret-alt-right" />
+                      Rating 3/5
+                    </p>
+                  </TableTd>
+                </TableRow>
+              </TableTbody>
+            </GridTable>
+          </GridStickyContainer>
           <GridContent>
-            <GridStickyContainer>
-              <GridTable className="k-grid-group-sticky-header-table">
-                <colgroup>
-                  <col />
-                  <col />
-                  <col />
-                  <col />
-                  <col />
-                  <col />
-                  <col />
-                  <col />
-                </colgroup>
-                <TableTbody>
-                  <TableRow className="k-table-group-row k-grouping-row">
-                    <TableTd colspan={9}>
-                      <p className="k-reset">
-                        <Icon icon="caret-alt-right" />
-                        Rating 3/5
-                      </p>
-                    </TableTd>
-                  </TableRow>
-                </TableTbody>
-              </GridTable>
-            </GridStickyContainer>
             <GridTable>
               <colgroup>
                   <col className="k-group-col" />
@@ -316,26 +316,26 @@ export default () => (
                 </TableRow>
               </TableTbody>
             </GridTable>
-            <GridStickyContainer position="bottom" style={{ insetBlockEnd: 0 }}>
-              <GridTable className="k-grid-group-sticky-footer-table">
-                <colgroup>
-                <col />
-                <col />
-                <col />
-                <col />
-                <col />
-                <col />
-                <col />
-                <col />
-                </colgroup>
-                <TableTbody>
-                  <TableRow className="k-group-footer">
-                    <TableTd colspan={9}>Total items: 0</TableTd>
-                  </TableRow>
-                </TableTbody>
-              </GridTable>
-            </GridStickyContainer>
           </GridContent>
+          <GridStickyContainer position="bottom">
+            <GridTable className="k-grid-group-sticky-footer-table">
+              <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              </colgroup>
+              <TableTbody>
+                <TableRow className="k-group-footer">
+                  <TableTd colspan={9}>Total items: 0</TableTd>
+                </TableRow>
+              </TableTbody>
+            </GridTable>
+          </GridStickyContainer>
         </GridContainer>
       </Grid>
     </div>
