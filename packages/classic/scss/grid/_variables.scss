@@ -346,6 +346,10 @@ $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
 /// @group grid
 $kendo-grid-sticky-container-shadow: k-elevation(2) !default;
 
+/// The box shadow of the pinned container in the Grid.
+/// @group grid
+$kendo-grid-pinned-container-shadow: k-elevation(3) !default;
+
 
 /// The width of the Grid column menu.
 /// @group grid
@@ -631,5 +635,6 @@ $kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-bold, 700 ) !def
     $kendo-grid-stack-focus-outline: $kendo-grid-stack-focus-outline,
     $kendo-grid-stack-expandable-shadow: $kendo-grid-stack-expandable-shadow,
     $kendo-grid-pinned-source-font-weight: $kendo-grid-pinned-source-font-weight,
-    $kendo-grid-sticky-container-shadow: $kendo-grid-sticky-container-shadow
+    $kendo-grid-sticky-container-shadow: $kendo-grid-sticky-container-shadow,
+    $kendo-grid-pinned-container-shadow: $kendo-grid-pinned-container-shadow
 );

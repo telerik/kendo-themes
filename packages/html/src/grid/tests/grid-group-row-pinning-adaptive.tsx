@@ -10,7 +10,7 @@ import { GridGroupingHeader } from "../grid-grouping-header.spec";
 import GridHeaderCell from "../grid-header-cell.spec";
 import { GridHeaderTable } from "../grid-header-table.spec";
 import { GridHeader } from "../grid-header.spec";
-import { GridStickyContainer } from "../grid-sticky-container.spec";
+import { GridPinnedContainer } from "../grid-pinned-container.spec";
 import { GridTable } from "../grid-table.spec";
 import Grid from "../grid.spec";
 
@@ -283,7 +283,7 @@ export default () => (
             <ColumnMenuItemWrapper>
               <ColumnMenuItem text="Hide row" startIcon="eye-slash" />
               <ColumnMenuItem text="Set row sticky" startIcon="stick" />
-              <ColumnMenuExpander itemText="Pin group" itemStartIcon="pin" expanderIcon="chevron-right" />
+              <ColumnMenuExpander itemText="Pin group" itemStartIcon="pin-outline" expanderIcon="chevron-right" />
               <ColumnMenuExpander itemText="Copy" itemStartIcon="copy" expanderIcon="chevron-right" />
               <ColumnMenuItem text="Select all rows" startIcon="grid-layout" />
               <ColumnMenuExpander itemText="Export" itemStartIcon="export" expanderIcon="chevron-right" />
@@ -423,8 +423,8 @@ export default () => (
         >
           <ColumnMenuNormal size="large">
             <ColumnMenuItemWrapper>
-              <ColumnMenuItem text="Pin group to top" startIcon="pin" selected />
-              <ColumnMenuItem text="Pin group to bottom" startIcon="pin" />
+              <ColumnMenuItem text="Pin group to top" startIcon="pin-outline-top" selected />
+              <ColumnMenuItem text="Pin group to bottom" startIcon="pin-outline-bottom" />
             </ColumnMenuItemWrapper>
           </ColumnMenuNormal>
         </ActionSheetNormal>
@@ -470,26 +470,28 @@ export default () => (
               </GridHeaderTable>
             </div>
           </GridHeader>
+          <GridPinnedContainer>
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col className="k-group-col" />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-table-group-row k-grouping-row">
+                    <TableTd colspan={5}>
+                      <p className="k-reset">
+                        <Icon icon="none" />
+                        Rating 1/5
+                      </p>
+                    </TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
           <GridContainer>
             <GridContent>
-              <GridStickyContainer>
-                <GridTable>
-                  <colgroup>
-                    <col className="k-group-col" />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-table-group-row k-grouping-row">
-                      <TableTd colspan={5}>
-                        <p className="k-reset">
-                          <Icon icon="none" />
-                          Rating 1/5
-                        </p>
-                      </TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
               <GridTable>
                 <colgroup>
                   <col className="k-group-col" />
