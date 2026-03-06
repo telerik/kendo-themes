@@ -1208,6 +1208,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-pinned-container-shadow</td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0 4px 8px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-filter-menu-container-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-filter-menu-container-padding-y, #{k-spacing(3)} )</code></td>
