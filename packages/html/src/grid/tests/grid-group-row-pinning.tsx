@@ -1,6 +1,6 @@
 import { Icon } from "../../icon";
 import { Chip, ChipList, ChipAction } from "../../chip";
-import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable, GridStickyContainer } from "../../grid";
+import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable, GridPinnedContainer } from "../../grid";
 import { TableThead, TableRow, TableTd, TableTbody } from "../../table";
 import { ContextMenu } from "../../context-menu";
 import { MenuListItem } from "../../menu";
@@ -174,26 +174,28 @@ export default () => (
               </GridHeaderTable>
             </div>
           </GridHeader>
+          <GridPinnedContainer>
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col className="k-group-col" />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-table-group-row k-grouping-row">
+                    <TableTd colspan={9}>
+                      <p className="k-reset">
+                        <Icon icon="none" />
+                        Rating 1/5
+                      </p>
+                    </TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
           <GridContainer>
             <GridContent>
-              <GridStickyContainer>
-                <GridTable>
-                  <colgroup>
-                    <col className="k-group-col" />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-table-group-row k-grouping-row">
-                      <TableTd colspan={9}>
-                        <p className="k-reset">
-                          <Icon icon="none" />
-                          Rating 1/5
-                        </p>
-                      </TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
               <GridTable>
                 <colgroup>
                   <col className="k-group-col" />
@@ -363,26 +365,28 @@ export default () => (
                   </TableRow>
                 </TableTbody>
               </GridTable>
-              <GridStickyContainer position="bottom" style={{ insetBlockEnd: "0" }}>
-                <GridTable>
-                  <colgroup>
-                    <col className="k-group-col" />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-table-group-row k-grouping-row">
-                      <TableTd colspan={4}>
-                        <p className="k-reset">
-                          <Icon icon="none" />
-                          Rating 1/5
-                        </p>
-                      </TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
             </GridContent>
           </GridContainer>
+          <GridPinnedContainer position="bottom">
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col className="k-group-col" />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-table-group-row k-grouping-row">
+                    <TableTd colspan={4}>
+                      <p className="k-reset">
+                        <Icon icon="none" />
+                        Rating 1/5
+                      </p>
+                    </TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
         </Grid>
       </section>
 
@@ -548,29 +552,31 @@ export default () => (
               </GridHeaderTable>
             </div>
           </GridHeader>
+          <GridPinnedContainer>
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col className="k-group-col" />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-table-group-row k-grouping-row">
+                    <TableTd colspan={9}>
+                      <p className="k-reset">
+                        <span className="k-pin-cell">
+                          <Icon icon="unpin-outline" />
+                        </span>
+                        <Icon icon="none" />
+                        Rating 1/5
+                      </p>
+                    </TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
           <GridContainer>
             <GridContent>
-              <GridStickyContainer>
-                <GridTable>
-                  <colgroup>
-                    <col className="k-group-col" />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-table-group-row k-grouping-row">
-                      <TableTd colspan={9}>
-                        <p className="k-reset">
-                          <span className="k-pin-cell">
-                            <Icon icon="unpin-outline" />
-                          </span>
-                          <Icon icon="none" />
-                          Rating 1/5
-                        </p>
-                      </TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
               <GridTable>
                 <colgroup>
                   <col className="k-group-col" />
@@ -752,29 +758,31 @@ export default () => (
                   </TableRow>
                 </TableTbody>
               </GridTable>
-              <GridStickyContainer position="bottom" style={{ insetBlockEnd: "0" }}>
-                <GridTable>
-                  <colgroup>
-                    <col className="k-group-col" />
-                    <col />
-                  </colgroup>
-                  <TableTbody>
-                    <TableRow className="k-table-group-row k-grouping-row">
-                      <TableTd colspan={4}>
-                        <p className="k-reset">
-                          <span className="k-pin-cell">
-                            <Icon icon="unpin-outline" />
-                          </span>
-                          <Icon icon="none" />
-                          Rating 1/5
-                        </p>
-                      </TableTd>
-                    </TableRow>
-                  </TableTbody>
-                </GridTable>
-              </GridStickyContainer>
             </GridContent>
           </GridContainer>
+          <GridPinnedContainer position="bottom">
+            <div className="k-grid-pinned-wrap">
+              <GridTable>
+                <colgroup>
+                  <col className="k-group-col" />
+                  <col />
+                </colgroup>
+                <TableTbody>
+                  <TableRow className="k-table-group-row k-grouping-row">
+                    <TableTd colspan={4}>
+                      <p className="k-reset">
+                        <span className="k-pin-cell">
+                          <Icon icon="unpin-outline" />
+                        </span>
+                        <Icon icon="none" />
+                        Rating 1/5
+                      </p>
+                    </TableTd>
+                  </TableRow>
+                </TableTbody>
+              </GridTable>
+            </div>
+          </GridPinnedContainer>
         </Grid>
       </section>
     </div>
