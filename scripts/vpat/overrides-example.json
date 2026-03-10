@@ -1,0 +1,28 @@
+{
+    "$schema": "../vpat-config-schema.json",
+    "_comment": "Example product-specific overrides. Pass via: node scripts/vpat/generate-vpat.mjs --overrides scripts/vpat/overrides-example.json",
+
+    "product": {
+        "name": "Kendo UI for Angular",
+        "version": "13.0.0",
+        "description": "Kendo UI for Angular is a library of 110+ fully native components for building high-quality modern Angular UI."
+    },
+
+    "knownExceptions": [
+        {
+            "wcagCriteria": "1.4.3",
+            "criteriaName": "Contrast (Minimum)",
+            "wcagLevel": "AA",
+            "wcagUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+            "axeRuleId": "color-contrast",
+            "conformanceLevel": "Partially Supports",
+            "affectedComponents": ["BottomNavigation", "Chip"],
+            "explanation": "Product-specific: Some color themes using solid/flat fill modes do not achieve the minimum 4.5:1 contrast ratio for text. Use the Default Ocean Blue A11y swatch for full AA contrast compliance."
+        }
+    ],
+
+    "additionalProductNotes": {
+        "Angular-Specific Notes": "Kendo UI for Angular components leverage Angular's change detection and zone.js. ARIA attributes are managed reactively and update automatically when component state changes. No manual attribute management is required.",
+        "Upgrade Guidance": "When upgrading between major versions, review the accessibility changelog for any changes to ARIA patterns or keyboard navigation behavior."
+    }
+}
