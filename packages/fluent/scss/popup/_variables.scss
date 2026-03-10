@@ -41,6 +41,10 @@ $kendo-popup-border: var( --kendo-popup-border, transparent ) !default;
 /// @group popup
 $kendo-popup-shadow: var( --kendo-popup-shadow, k-elevation(5) ) !default;
 
+/// Vertical spacing between the popup and the element it is anchored to.
+/// @group popup
+$kendo-popup-spacing-y: var( --kendo-popup-spacing-y, 0 ) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/popup/_variables.scss" with (
     $kendo-popup-border-width: $kendo-popup-border-width,
     $kendo-popup-border-radius: $kendo-popup-border-radius,
@@ -51,5 +55,6 @@ $kendo-popup-shadow: var( --kendo-popup-shadow, k-elevation(5) ) !default;
     $kendo-popup-bg: $kendo-popup-bg,
     $kendo-popup-text: $kendo-popup-text,
     $kendo-popup-border: $kendo-popup-border,
-    $kendo-popup-shadow: $kendo-popup-shadow
+    $kendo-popup-shadow: $kendo-popup-shadow,
+    $kendo-popup-spacing-y: $kendo-popup-spacing-y
 );
