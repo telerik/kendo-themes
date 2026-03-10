@@ -263,7 +263,7 @@
             text-align: start;
             margin-block-end: $kendo-fieldset-legend-margin;
 
-            > span:not(.k-widget) {
+            > span {
                 width: $kendo-inline-form-element-width;
                 text-align: end;
                 line-height: var( --kendo-line-height, normal );
@@ -343,11 +343,6 @@
 
     .k-edit-field {
 
-        > .k-widget {
-            width: 100%;
-            box-sizing: border-box;
-        }
-
         input[type="radio"]:not(.k-radio),
         input[type="checkbox"]:not(.k-checkbox) {
             margin-inline-end: .4ex;
@@ -360,10 +355,6 @@
 
         > .k-reset > li + li {
             margin-block-start: k-spacing(2);
-        }
-
-        .k-reset .k-widget {
-            margin: 0 .4ex 0 1ex;
         }
     }
 
