@@ -13,7 +13,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area">
 
-            <div className="k-widget k-chat">
+            <div className="k-chat">
                 <div className="k-message-list k-avatars">
                     <div className="k-message-list-content">
                         <CardDeck>
