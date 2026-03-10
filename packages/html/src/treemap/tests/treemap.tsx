@@ -4,7 +4,7 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <div id="treeMap" style={{ height: "600px", fontSize: "12px" }} className="k-widget k-treemap">
+            <div id="treeMap" style={{ height: "600px", fontSize: "12px" }} className="k-treemap">
                 <div className="k-treemap-tile" style={{ width: "1423px", height: "600px", left: '0px', top: '0px', display: "block" }}>
                     <div className="k-treemap-title">
                         <div>Population in USA</div>
