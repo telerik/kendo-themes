@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.1...v13.1.0-dev.2) (2026-03-09)
+
+
+### Bug Fixes
+
+* **grid:** fix virtualization issues with sticky and pinned containers ([465abb3](https://github.com/telerik/kendo-themes/commit/465abb38a064a3478702850a81e481021d23a9ef))
+
+
+
+
+
 # [13.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.0...v13.1.0-dev.1) (2026-03-02)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
