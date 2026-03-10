@@ -27658,6 +27658,16 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow around the popup.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-popup-spacing-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-popup-spacing-y, 0 )</code></td>
+    <td><code>var(--kendo-popup-spacing-y, 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical spacing between the popup and the element it is anchored to.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
