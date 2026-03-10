@@ -6,13 +6,16 @@
 @mixin kendo-input--theme-base() {
 
     .k-input {
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid);
+
         // Solid input
         #{k-when-default($kendo-input-default-fill-mode, "solid")}
         &.k-input-solid {
             @include fill(
                 $kendo-input-text,
                 $kendo-input-bg,
-                $kendo-input-border
+                $kendo-input-border,
+                $starting-style: true
             );
             @include box-shadow( $kendo-input-shadow );
 
@@ -106,7 +109,8 @@
             @include fill (
                 $kendo-input-outline-text,
                 $kendo-input-outline-bg,
-                $kendo-input-outline-border
+                $kendo-input-outline-border,
+                $starting-style: true
             );
 
             & > .k-input-button {
@@ -205,7 +209,8 @@
             @include fill (
                 $kendo-input-flat-text,
                 $kendo-input-flat-bg,
-                $kendo-input-flat-border
+                $kendo-input-flat-border,
+                $starting-style: true
             );
 
             // Hover
@@ -287,6 +292,8 @@
     }
 
     .k-picker {
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid);
+
         // Solid picker
         #{k-when-default($kendo-picker-default-fill-mode, "solid")}
         &.k-picker-solid {
@@ -294,7 +301,8 @@
                 $kendo-picker-text,
                 $kendo-picker-bg,
                 $kendo-picker-border,
-                $kendo-picker-gradient
+                $kendo-picker-gradient,
+                $starting-style: true
             );
 
             // Hover
@@ -369,7 +377,8 @@
             @include fill (
                 $kendo-picker-outline-text,
                 $kendo-picker-outline-bg,
-                $kendo-picker-outline-border
+                $kendo-picker-outline-border,
+                $starting-style: true
             );
 
             // Hover
@@ -451,7 +460,8 @@
             @include fill (
                 $kendo-picker-flat-text,
                 $kendo-picker-flat-bg,
-                $kendo-picker-flat-border
+                $kendo-picker-flat-border,
+                $starting-style: true
             );
 
             // Hover
