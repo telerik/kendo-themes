@@ -223,10 +223,6 @@
         position: relative;
         z-index: k-z-index("base", 2);
 
-        .k-widget {
-            font-size: inherit;
-        }
-
         // Current date
         .k-nav-current {
             color: inherit;

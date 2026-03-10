@@ -675,8 +675,7 @@
     .k-grid .k-grid-edit-row .k-table-td {
 
         > input:not([type="checkbox"]):not([type="radio"]),
-        > select,
-        > .k-widget:not(.k-switch) {
+        > select {
             width: 100%;
             vertical-align: middle;
             box-sizing: border-box;

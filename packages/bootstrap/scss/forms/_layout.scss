@@ -39,7 +39,7 @@
         }
 
         .k-form-field {
-            > span:not(.k-widget) {
+            > span {
                 padding: calc( #{k-spacing(4)} - #{$kendo-input-border-width} ) 0;
                 padding-inline-end: k-spacing(4);
             }
