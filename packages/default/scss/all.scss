@@ -2,33 +2,304 @@
 @use "./index.scss" as *;
 
 @include kendo-theme--styles();
+// ============================================================================
+// OKLCH Adaptive Color Token System (POC)
+// ============================================================================
+//
+// All derived tokens are computed from user-provided seed colors via CSS
+// relative color syntax:  oklch(from <seed> <L'> <C'> <H'>).
+//
+// Seeds are arbitrary -- the user or an LLM can set them to ANY oklch value.
+// Every other token adapts automatically using the rules below.
+//
+// --------------------------------------------------------------------------
+//  ADAPTIVE SCHEMA
+// --------------------------------------------------------------------------
+//
+//  Token            | Dark seed (L < 0.6)        | Light seed (L >= 0.6)
+//  -----------------+----------------------------+------------------------
+//  hover            | Lighten  (+d)              | Darken  (-d)
+//  active           | Lighten more (+2d)         | Darken more (-2d)
+//  subtle           | Near-white wash (fixed L)  | Near-white wash (fixed L)
+//  emphasis         | Lighten moderately (tint)  | Lighten moderately (tint)
+//  on-{X}           | White text  (L ~ 0.98)     | Dark text   (L ~ 0.10)
+//  {X}-on-subtle    | Dark text  (readable on    | Dark text   (readable on
+//                   |   light subtle bg)         |   light subtle bg)
+//  {X}-on-surface   | Seed L clamped to          | Seed L clamped to
+//                   |   readable range           |   readable range
+//
+// --------------------------------------------------------------------------
+//  KEY TECHNIQUE -- CSS-only if/else via sign selector
+// --------------------------------------------------------------------------
+//
+//  The expression:
+//      (0.6 - l) * 99999
+//  produces a very large POSITIVE number when l < 0.6 (dark seed)
+//  and a very large NEGATIVE number when l > 0.6 (light seed).
+//
+//  Wrapping it in clamp(-d, ..., +d) collapses it to exactly +/-d,
+//  giving us a directional lightness shift without @media or JS.
+//
+//  hover  = calc(l + clamp(-d, (0.6 - l) * 99999, +d))
+//         => dark seed  => l + d   (lighten)
+//         => light seed => l - d   (darken)
+//         => threshold  => l + 0   (no change -- graceful boundary)
+//
+// --------------------------------------------------------------------------
+//  NOTE ON SUBTLE TOKENS
+// --------------------------------------------------------------------------
+//  Subtle backgrounds use FIXED high lightness (~ 0.96, 0.93, 0.89) with
+//  reduced chroma.  They are always a near-white tinted wash of the seed,
+//  regardless of whether the seed is dark or light.  This is correct for
+//  a light-theme system.  A dark-theme variant would need inverted subtle
+//  logic (low L, low C).
+//
+// --------------------------------------------------------------------------
+//  NOTE ON EMPHASIS
+// --------------------------------------------------------------------------
+//  For chromatic colors, emphasis always produces a LIGHTER, less saturated
+//  tint -- formula:  L' = l * 0.65 + 0.33  (converges toward ~ 0.93).
+//  This naturally compresses: dark seeds lighten a lot, light seeds barely
+//  move.  Chroma is scaled to 55% of the seed.
+//
+//  For base (neutral chrome), emphasis uses the adaptive delta approach
+//  (same direction as hover, larger step) because base emphasis represents
+//  a stronger neutral, not a pastel tint.
+//
+// ============================================================================
 
 :root {
 
-    --kendo-color-primary: oklch(0.6985 0.1923 27.19);
+    // -----------------------------------------
+    //  SEED COLORS -- change these to re-theme
+    // -----------------------------------------
+    --kendo-color-primary:        oklch(0.6985 0.1923 27.19);
+    --kendo-color-secondary:      oklch(0.50 0 0);
+    --kendo-color-tertiary:       oklch(0.67 0.15 230);
+    --kendo-color-info:           oklch(0.48 0.22 264);
+    --kendo-color-success:        oklch(0.63 0.20 142);
+    --kendo-color-warning:        oklch(0.84 0.17 90);
+    --kendo-color-error:          oklch(0.59 0.24 29);
+    --kendo-color-base:           oklch(0.97 0 0);
+    --kendo-color-app-surface:    oklch(1 0 0);
+    --kendo-color-subtle:         oklch(0.50 0 0);
+    --kendo-color-surface:        oklch(0.98 0 0);
+    --kendo-color-border:         oklch(0 0 0 / 0.08);
+    --kendo-color-border-alt:     oklch(0 0 0 / 0.16);
 
-    /* Interactive states: shift lightness */
-    --kendo-color-primary-hover: oklch(from var(--kendo-color-primary) calc(l - 0.05) c h);
-    --kendo-color-primary-active: oklch(from var(--kendo-color-primary) calc(l - 0.1) c h);
+    // --- Misc (derived) -------------------------
+    --kendo-color-on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h);
+    --kendo-color-surface-alt:    oklch(from var(--kendo-color-surface) calc(l + 0.02) c h);
 
-    /* Subtle backgrounds: high lightness, reduced chroma */
-    --kendo-color-primary-subtle: oklch(from var(--kendo-color-primary) 0.96 calc(c * 0.12) h);
-    --kendo-color-primary-subtle-hover: oklch(from var(--kendo-color-primary) 0.93 calc(c * 0.18) h);
+    // =============================================================
+    //  BASE -- neutral chrome (adaptive)
+    // =============================================================
+    //  Base is the component chrome area (toolbars, headers, rows).
+    //  All derived states move AWAY from the nearest extreme so they
+    //  always produce visible differentiation.
+    //
+    //  L=0.97 (light theme): hover -> 0.93 (darker)
+    //  L=0.20 (dark theme):  hover -> 0.24 (lighter)
+    // -------------------------------------------------------------
+    --kendo-color-base-hover:         oklch(from var(--kendo-color-base) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-base-active:        oklch(from var(--kendo-color-base) calc(l + clamp(-0.10, (0.6 - l) * 99999, 0.10)) c h);
+    --kendo-color-base-subtle:        oklch(from var(--kendo-color-base) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-base-subtle-hover:  oklch(from var(--kendo-color-base) calc(l + clamp(-0.07, (0.6 - l) * 99999, 0.07)) c h);
+    --kendo-color-base-subtle-active: oklch(from var(--kendo-color-base) calc(l + clamp(-0.10, (0.6 - l) * 99999, 0.10)) c h);
+    --kendo-color-base-emphasis:      oklch(from var(--kendo-color-base) calc(l + clamp(-0.17, (0.6 - l) * 99999, 0.17)) c h);
+    --kendo-color-base-on-subtle:     oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h);
+    --kendo-color-on-base:            oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h);
+    --kendo-color-base-on-surface:    oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h);
+
+
+    // =============================================================
+    //  PRIMARY -- chromatic adaptive
+    // =============================================================
+    //  hover/active:   +/-d via sign selector (move away from extreme)
+    //  subtle:         fixed high L, low C (near-white tinted wash)
+    //  emphasis:       L' = l*0.65+0.33 (always lighter, caps ~0.93)
+    //  on-{X}:         auto white/dark text via sign selector
+    //  on-subtle:      always dark (l*0.35) -- readable on light subtle bg
+    //  on-surface:     seed L clamped [0.20..0.60] -- readable on neutral bg
+    // -------------------------------------------------------------
+    --kendo-color-primary-hover:         oklch(from var(--kendo-color-primary) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-primary-active:        oklch(from var(--kendo-color-primary) calc(l + clamp(-0.08, (0.6 - l) * 99999, 0.08)) c h);
+    --kendo-color-primary-subtle:        oklch(from var(--kendo-color-primary) 0.96 calc(c * 0.12) h);
+    --kendo-color-primary-subtle-hover:  oklch(from var(--kendo-color-primary) 0.93 calc(c * 0.18) h);
     --kendo-color-primary-subtle-active: oklch(from var(--kendo-color-primary) 0.89 calc(c * 0.25) h);
+    --kendo-color-primary-emphasis:      oklch(from var(--kendo-color-primary) calc(l * 0.65 + 0.33) calc(c * 0.55) h);
+    --kendo-color-primary-on-subtle:     oklch(from var(--kendo-color-primary) calc(l * 0.35) c h);
+    --kendo-color-on-primary:            oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h);
+    --kendo-color-primary-on-surface:    oklch(from var(--kendo-color-primary) clamp(0.20, l, 0.60) c h);
 
-    /* Emphasis: lighter, softer */
-    --kendo-color-primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.15) calc(c * 0.65) h);
 
-    /* Text colors — accessibility-critical */
-    /* on-primary: text ON the primary bg → white/black switch */
-    --kendo-color-on-primary: oklch(from var(--kendo-color-primary) clamp(0, (0.6 - l) * 99999, 1) 0.01 h);
+    // =============================================================
+    //  SECONDARY -- chromatic adaptive (same template)
+    // =============================================================
+    --kendo-color-secondary-hover:         oklch(from var(--kendo-color-secondary) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-secondary-active:        oklch(from var(--kendo-color-secondary) calc(l + clamp(-0.08, (0.6 - l) * 99999, 0.08)) c h);
+    --kendo-color-secondary-subtle:        oklch(from var(--kendo-color-secondary) 0.96 calc(c * 0.12) h);
+    --kendo-color-secondary-subtle-hover:  oklch(from var(--kendo-color-secondary) 0.93 calc(c * 0.18) h);
+    --kendo-color-secondary-subtle-active: oklch(from var(--kendo-color-secondary) 0.89 calc(c * 0.25) h);
+    --kendo-color-secondary-emphasis:      oklch(from var(--kendo-color-secondary) calc(l * 0.65 + 0.33) calc(c * 0.55) h);
+    --kendo-color-secondary-on-subtle:     oklch(from var(--kendo-color-secondary) calc(l * 0.35) c h);
+    --kendo-color-on-secondary:            oklch(from var(--kendo-color-secondary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h);
+    --kendo-color-secondary-on-surface:    oklch(from var(--kendo-color-secondary) clamp(0.20, l, 0.60) c h);
 
-    /* primary-on-subtle: text ON subtle bg → dark, high-contrast version of primary */
-    --kendo-color-primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l * 0.35) c h);
 
-    /* primary-on-surface: text ON app surface (white bg) → same as primary if dark enough, darker otherwise */
-    --kendo-color-primary-on-surface: oklch(from var(--kendo-color-primary) clamp(0.2, l, 0.65) c h);
+    // =============================================================
+    //  TERTIARY -- chromatic adaptive
+    // =============================================================
+    --kendo-color-tertiary-hover:         oklch(from var(--kendo-color-tertiary) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-tertiary-active:        oklch(from var(--kendo-color-tertiary) calc(l + clamp(-0.08, (0.6 - l) * 99999, 0.08)) c h);
+    --kendo-color-tertiary-subtle:        oklch(from var(--kendo-color-tertiary) 0.96 calc(c * 0.12) h);
+    --kendo-color-tertiary-subtle-hover:  oklch(from var(--kendo-color-tertiary) 0.93 calc(c * 0.18) h);
+    --kendo-color-tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) 0.89 calc(c * 0.25) h);
+    --kendo-color-tertiary-emphasis:      oklch(from var(--kendo-color-tertiary) calc(l * 0.65 + 0.33) calc(c * 0.55) h);
+    --kendo-color-tertiary-on-subtle:     oklch(from var(--kendo-color-tertiary) calc(l * 0.35) c h);
+    --kendo-color-on-tertiary:            oklch(from var(--kendo-color-tertiary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h);
+    --kendo-color-tertiary-on-surface:    oklch(from var(--kendo-color-tertiary) clamp(0.20, l, 0.60) c h);
 
+
+    // =============================================================
+    //  INFO -- chromatic adaptive
+    // =============================================================
+    --kendo-color-info-hover:         oklch(from var(--kendo-color-info) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-info-active:        oklch(from var(--kendo-color-info) calc(l + clamp(-0.08, (0.6 - l) * 99999, 0.08)) c h);
+    --kendo-color-info-subtle:        oklch(from var(--kendo-color-info) 0.96 calc(c * 0.12) h);
+    --kendo-color-info-subtle-hover:  oklch(from var(--kendo-color-info) 0.93 calc(c * 0.18) h);
+    --kendo-color-info-subtle-active: oklch(from var(--kendo-color-info) 0.89 calc(c * 0.25) h);
+    --kendo-color-info-emphasis:      oklch(from var(--kendo-color-info) calc(l * 0.65 + 0.33) calc(c * 0.55) h);
+    --kendo-color-info-on-subtle:     oklch(from var(--kendo-color-info) calc(l * 0.35) c h);
+    --kendo-color-on-info:            oklch(from var(--kendo-color-info) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h);
+    --kendo-color-info-on-surface:    oklch(from var(--kendo-color-info) clamp(0.20, l, 0.60) c h);
+
+
+    // =============================================================
+    //  SUCCESS -- chromatic adaptive
+    // =============================================================
+    --kendo-color-success-hover:         oklch(from var(--kendo-color-success) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-success-active:        oklch(from var(--kendo-color-success) calc(l + clamp(-0.08, (0.6 - l) * 99999, 0.08)) c h);
+    --kendo-color-success-subtle:        oklch(from var(--kendo-color-success) 0.96 calc(c * 0.12) h);
+    --kendo-color-success-subtle-hover:  oklch(from var(--kendo-color-success) 0.93 calc(c * 0.18) h);
+    --kendo-color-success-subtle-active: oklch(from var(--kendo-color-success) 0.89 calc(c * 0.25) h);
+    --kendo-color-success-emphasis:      oklch(from var(--kendo-color-success) calc(l * 0.65 + 0.33) calc(c * 0.55) h);
+    --kendo-color-success-on-subtle:     oklch(from var(--kendo-color-success) calc(l * 0.35) c h);
+    --kendo-color-on-success:            oklch(from var(--kendo-color-success) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h);
+    --kendo-color-success-on-surface:    oklch(from var(--kendo-color-success) clamp(0.20, l, 0.60) c h);
+
+
+    // =============================================================
+    //  WARNING -- chromatic adaptive
+    // =============================================================
+    --kendo-color-warning-hover:         oklch(from var(--kendo-color-warning) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-warning-active:        oklch(from var(--kendo-color-warning) calc(l + clamp(-0.08, (0.6 - l) * 99999, 0.08)) c h);
+    --kendo-color-warning-subtle:        oklch(from var(--kendo-color-warning) 0.96 calc(c * 0.12) h);
+    --kendo-color-warning-subtle-hover:  oklch(from var(--kendo-color-warning) 0.93 calc(c * 0.18) h);
+    --kendo-color-warning-subtle-active: oklch(from var(--kendo-color-warning) 0.89 calc(c * 0.25) h);
+    --kendo-color-warning-emphasis:      oklch(from var(--kendo-color-warning) calc(l * 0.65 + 0.33) calc(c * 0.55) h);
+    --kendo-color-warning-on-subtle:     oklch(from var(--kendo-color-warning) calc(l * 0.35) c h);
+    --kendo-color-on-warning:            oklch(from var(--kendo-color-warning) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h);
+    --kendo-color-warning-on-surface:    oklch(from var(--kendo-color-warning) clamp(0.20, l, 0.60) c h);
+
+
+    // =============================================================
+    //  ERROR -- chromatic adaptive
+    // =============================================================
+    --kendo-color-error-hover:         oklch(from var(--kendo-color-error) calc(l + clamp(-0.04, (0.6 - l) * 99999, 0.04)) c h);
+    --kendo-color-error-active:        oklch(from var(--kendo-color-error) calc(l + clamp(-0.08, (0.6 - l) * 99999, 0.08)) c h);
+    --kendo-color-error-subtle:        oklch(from var(--kendo-color-error) 0.96 calc(c * 0.12) h);
+    --kendo-color-error-subtle-hover:  oklch(from var(--kendo-color-error) 0.93 calc(c * 0.18) h);
+    --kendo-color-error-subtle-active: oklch(from var(--kendo-color-error) 0.89 calc(c * 0.25) h);
+    --kendo-color-error-emphasis:      oklch(from var(--kendo-color-error) calc(l * 0.65 + 0.33) calc(c * 0.55) h);
+    --kendo-color-error-on-subtle:     oklch(from var(--kendo-color-error) calc(l * 0.35) c h);
+    --kendo-color-on-error:            oklch(from var(--kendo-color-error) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h);
+    --kendo-color-error-on-surface:    oklch(from var(--kendo-color-error) clamp(0.20, l, 0.60) c h);
+
+
+    // =============================================================
+    //  LIGHT -- structural, fixed neutrals
+    // =============================================================
+    --kendo-color-light-subtle:        oklch(0.98 0 0);
+    --kendo-color-light-subtle-hover:  oklch(0.97 0 0);
+    --kendo-color-light-subtle-active: oklch(0.93 0 0);
+    --kendo-color-light:               oklch(0.93 0 0);
+    --kendo-color-light-hover:         oklch(0.90 0 0);
+    --kendo-color-light-active:        oklch(0.87 0 0);
+    --kendo-color-light-emphasis:      oklch(0.87 0 0);
+    --kendo-color-light-on-subtle:     oklch(0.14 0 0);
+    --kendo-color-on-light:            oklch(0 0 0);
+    --kendo-color-light-on-surface:    oklch(0.90 0 0);
+
+
+    // =============================================================
+    //  DARK -- structural, fixed neutrals
+    // =============================================================
+    --kendo-color-dark-subtle:        oklch(0.80 0 0);
+    --kendo-color-dark-subtle-hover:  oklch(0.73 0 0);
+    --kendo-color-dark-subtle-active: oklch(0.66 0 0);
+    --kendo-color-dark:               oklch(0.32 0 0);
+    --kendo-color-dark-hover:         oklch(0.24 0 0);
+    --kendo-color-dark-active:        oklch(0.19 0 0);
+    --kendo-color-dark-emphasis:      oklch(0.50 0 0);
+    --kendo-color-dark-on-subtle:     oklch(0.19 0 0);
+    --kendo-color-on-dark:            oklch(1 0 0);
+    --kendo-color-dark-on-surface:    oklch(0.14 0 0);
+
+
+    // =============================================================
+    //  INVERSE -- structural
+    // =============================================================
+    --kendo-color-inverse-subtle:        oklch(0.50 0 0);
+    --kendo-color-inverse-subtle-hover:  oklch(0.41 0 0);
+    --kendo-color-inverse-subtle-active: oklch(0.32 0 0);
+    --kendo-color-inverse:               oklch(0.32 0 0);
+    --kendo-color-inverse-hover:         oklch(0.24 0 0);
+    --kendo-color-inverse-active:        oklch(0.19 0 0);
+    --kendo-color-inverse-emphasis:      oklch(0.66 0 0);
+    --kendo-color-inverse-on-subtle:     oklch(1 0 0);
+    --kendo-color-on-inverse:            oklch(1 0 0);
+    --kendo-color-inverse-on-surface:    oklch(0.14 0 0);
+
+
+    // =============================================================
+    //  SERIES -- chart/data-viz colors
+    // =============================================================
+    //  bold/bolder: darken proportionally (l * factor)
+    //  subtle/subtler: lighten proportionally (toward white)
+    --kendo-color-series-a:         oklch(0.6985 0.1923 27.19);
+    --kendo-color-series-a-bold:    oklch(from var(--kendo-color-series-a) calc(l * 0.75) c h);
+    --kendo-color-series-a-bolder:  oklch(from var(--kendo-color-series-a) calc(l * 0.50) c h);
+    --kendo-color-series-a-subtle:  oklch(from var(--kendo-color-series-a) calc(l * 0.50 + 0.50) c h);
+    --kendo-color-series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l * 0.75 + 0.25) c h);
+
+    --kendo-color-series-b:         oklch(0.91 0.13 99);
+    --kendo-color-series-b-bold:    oklch(from var(--kendo-color-series-b) calc(l * 0.75) c h);
+    --kendo-color-series-b-bolder:  oklch(from var(--kendo-color-series-b) calc(l * 0.50) c h);
+    --kendo-color-series-b-subtle:  oklch(from var(--kendo-color-series-b) calc(l * 0.50 + 0.50) c h);
+    --kendo-color-series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l * 0.75 + 0.25) c h);
+
+    --kendo-color-series-c:         oklch(0.77 0.15 155);
+    --kendo-color-series-c-bold:    oklch(from var(--kendo-color-series-c) calc(l * 0.75) c h);
+    --kendo-color-series-c-bolder:  oklch(from var(--kendo-color-series-c) calc(l * 0.50) c h);
+    --kendo-color-series-c-subtle:  oklch(from var(--kendo-color-series-c) calc(l * 0.50 + 0.50) c h);
+    --kendo-color-series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l * 0.75 + 0.25) c h);
+
+    --kendo-color-series-d:         oklch(0.54 0.23 278);
+    --kendo-color-series-d-bold:    oklch(from var(--kendo-color-series-d) calc(l * 0.75) c h);
+    --kendo-color-series-d-bolder:  oklch(from var(--kendo-color-series-d) calc(l * 0.50) c h);
+    --kendo-color-series-d-subtle:  oklch(from var(--kendo-color-series-d) calc(l * 0.50 + 0.50) c h);
+    --kendo-color-series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l * 0.75 + 0.25) c h);
+
+    --kendo-color-series-e:         oklch(0.59 0.25 304);
+    --kendo-color-series-e-bold:    oklch(from var(--kendo-color-series-e) calc(l * 0.75) c h);
+    --kendo-color-series-e-bolder:  oklch(from var(--kendo-color-series-e) calc(l * 0.50) c h);
+    --kendo-color-series-e-subtle:  oklch(from var(--kendo-color-series-e) calc(l * 0.50 + 0.50) c h);
+    --kendo-color-series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l * 0.75 + 0.25) c h);
+
+    --kendo-color-series-f:         oklch(0.63 0.21 357);
+    --kendo-color-series-f-bold:    oklch(from var(--kendo-color-series-f) calc(l * 0.75) c h);
+    --kendo-color-series-f-bolder:  oklch(from var(--kendo-color-series-f) calc(l * 0.50) c h);
+    --kendo-color-series-f-subtle:  oklch(from var(--kendo-color-series-f) calc(l * 0.50 + 0.50) c h);
+    --kendo-color-series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l * 0.75 + 0.25) c h);
 }
-
-
