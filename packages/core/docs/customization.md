@@ -2200,6 +2200,122 @@ k-escape-class-name($text) // => String
 }
 ```
 
+### `k-backdrop-blur`
+
+Get a blur value from the backdrop blur scale.
+
+
+#### Syntax
+
+```scss
+k-backdrop-blur($level) // => Length
+```
+
+#### Parameters
+
+
+`<String> $level`
+: The blur level key
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/transparency/index.scss#L118-L120
+@function k-backdrop-blur($level) {
+    @return var(--kendo-backdrop-blur-#{$level}, #{map.get($kendo-backdrop-blur, $level)});
+}
+```
+
+### `k-bg-opacity`
+
+Get a background opacity value.
+
+
+#### Syntax
+
+```scss
+k-bg-opacity($level) // => Percentage
+```
+
+#### Parameters
+
+
+`<String> $level`
+: The opacity level key
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/transparency/index.scss#L125-L127
+@function k-bg-opacity($level) {
+    @return var(--kendo-bg-opacity-#{$level}, #{map.get($kendo-bg-opacity, $level)});
+}
+```
+
+### `k-border-opacity`
+
+Get a border opacity value.
+
+
+#### Syntax
+
+```scss
+k-border-opacity($level) // => Percentage
+```
+
+#### Parameters
+
+
+`<String> $level`
+: The opacity level key
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/transparency/index.scss#L132-L134
+@function k-border-opacity($level) {
+    @return var(--kendo-border-opacity-#{$level}, #{map.get($kendo-border-opacity, $level)});
+}
+```
+
+### `k-get-preset`
+
+Get a transparency preset configuration.
+
+
+#### Syntax
+
+```scss
+k-get-preset($name) // => Map
+```
+
+#### Parameters
+
+
+`<String> $name`
+: The preset name
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/transparency/index.scss#L139-L141
+@function k-get-preset($name) {
+    @return map.get($kendo-transparency-presets, $name);
+}
+```
+
 ### `k-z-index`
 
 Return a z-index value based on layer and number of steps.
@@ -2247,6 +2363,136 @@ k-z-index($layer, $Number, $Balancing) // => Number
 ## Variables
 
 The following table lists the available variables for customizing the Theme Core theme.
+
+### Common
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$default-backdrop-blur</td>
+    <td>Map</td>
+    <td><code>(
+    none: 0px,
+    sm: 4px,
+    md: 8px,
+    lg: 12px,
+    xl: 20px
+)</code></td>
+    <td><ul><li>none: 0px</li><li>sm: 4px</li><li>md: 8px</li><li>lg: 12px</li><li>xl: 20px</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Defines the blur radius applied to the content behind a translucent surface.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$default-bg-opacity</td>
+    <td>Map</td>
+    <td><code>(
+    solid: 100%,
+    subtle: 90%,
+    moderate: 80%,
+    strong: 60%
+)</code></td>
+    <td><ul><li>solid: 100%</li><li>subtle: 90%</li><li>moderate: 80%</li><li>strong: 60%</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background Opacity Scale<br />Defines the opacity percentage for surface backgrounds via color-mix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$default-border-opacity</td>
+    <td>Map</td>
+    <td><code>(
+    solid: 100%,
+    subtle: 60%,
+    moderate: 40%,
+    strong: 20%
+)</code></td>
+    <td><ul><li>solid: 100%</li><li>subtle: 60%</li><li>moderate: 40%</li><li>strong: 20%</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border Opacity Scale<br />Defines the opacity percentage for surface borders via color-mix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$default-transparency-presets</td>
+    <td>Map</td>
+    <td><code>(
+    clear: (
+        blur: none,
+        bg-opacity: solid,
+        border-opacity: solid
+    ),
+    subtle: (
+        blur: sm,
+        bg-opacity: subtle,
+        border-opacity: subtle
+    ),
+    frosted: (
+        blur: md,
+        bg-opacity: moderate,
+        border-opacity: moderate
+    ),
+    glass: (
+        blur: lg,
+        bg-opacity: strong,
+        border-opacity: strong
+    ),
+    heavy: (
+        blur: xl,
+        bg-opacity: strong,
+        border-opacity: solid
+    )
+)</code></td>
+    <td><ul><li>clear: "blur":"none","bg-opacity":"solid","border-opacity":"solid"</li><li>subtle: "blur":"sm","bg-opacity":"subtle","border-opacity":"subtle"</li><li>frosted: "blur":"md","bg-opacity":"moderate","border-opacity":"moderate"</li><li>glass: "blur":"lg","bg-opacity":"strong","border-opacity":"strong"</li><li>heavy: "blur":"xl","bg-opacity":"strong","border-opacity":"solid"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transparency visual behavior presets - combinations of blur and opacity settings.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$default-transparency-targets</td>
+    <td>Map</td>
+    <td><code>(
+    // Chrome surfaces - parts of components
+    header: glass,
+    header-sticky: heavy,
+    footer: glass,
+    toolbar: subtle,
+    // toolbar-floating: frosted,
+
+    // Floating surfaces - entire floating elements
+    popup: glass,
+    // dropdown: glass,
+    // menu: glass,
+    // notification: frosted,
+    // toast: frosted,
+
+    // Blocking surfaces - overlays
+    // overlay: clear,
+    // overlay-light: clear
+)</code></td>
+    <td><ul><li>header: glass</li><li>header-sticky: heavy</li><li>footer: glass</li><li>toolbar: subtle</li><li>popup: glass</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transparency Targets - Semantic UI parts mapped to presets<br />Only parts that need transparency are defined here.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
 
 ### Accessibility
 
@@ -5415,6 +5661,76 @@ The following table lists the available variables for customizing the Theme Core
 </tbody>
 </table>
 
+### Transparency
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-backdrop-blur</td>
+    <td>Map</td>
+    <td><code>$default-backdrop-blur</code></td>
+    <td><ul><li>none: 0px</li><li>sm: 4px</li><li>md: 8px</li><li>lg: 12px</li><li>xl: 20px</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global Backdrop Blur map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bg-opacity</td>
+    <td>Map</td>
+    <td><code>$default-bg-opacity</code></td>
+    <td><ul><li>solid: 100%</li><li>subtle: 90%</li><li>moderate: 80%</li><li>strong: 60%</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global Background Opacity map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-opacity</td>
+    <td>Map</td>
+    <td><code>$default-border-opacity</code></td>
+    <td><ul><li>solid: 100%</li><li>subtle: 60%</li><li>moderate: 40%</li><li>strong: 20%</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global Border Opacity map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-transparency-presets</td>
+    <td>Map</td>
+    <td><code>$default-transparency-presets</code></td>
+    <td><ul><li>clear: "blur":"none","bg-opacity":"solid","border-opacity":"solid"</li><li>subtle: "blur":"sm","bg-opacity":"subtle","border-opacity":"subtle"</li><li>frosted: "blur":"md","bg-opacity":"moderate","border-opacity":"moderate"</li><li>glass: "blur":"lg","bg-opacity":"strong","border-opacity":"strong"</li><li>heavy: "blur":"xl","bg-opacity":"strong","border-opacity":"solid"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global map of transparency token presets.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-transparency-targets</td>
+    <td>Map</td>
+    <td><code>$default-transparency-targets</code></td>
+    <td><ul><li>header: glass</li><li>header-sticky: heavy</li><li>footer: glass</li><li>toolbar: subtle</li><li>popup: glass</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global transparency targets map.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Treeview
 
 <table class="theme-variables">
@@ -5978,6 +6294,155 @@ Outputs a module once, no matter how many times it is included.
     @if (list.index( $_kendo-imported-modules, $name ) == null) { // stylelint-disable-line
         $_kendo-imported-modules: list.append( $_kendo-imported-modules, $name ) !global;
         @content;
+    }
+}
+```
+
+### `k-transparency`
+
+Apply transparency using a preset.
+
+
+#### Syntax
+
+```scss
+@include k-transparency($preset, $bg, $border, $blur, $bg-opacity, $border-opacity);
+```
+#### Parameters
+
+
+`<String> $preset`
+: The preset name (clear, subtle, frosted, glass, heavy)
+
+`<Color> $bg`
+: Background color to apply opacity to
+
+`<Color> $border`
+: Border color to apply opacity to
+
+`<String> $blur`
+: Override blur level
+
+`<String> $bg-opacity`
+: Override background opacity level
+
+`<String> $border-opacity`
+: Override border opacity level
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/transparency/index.scss#L151-L178
+@mixin k-transparency($preset, $bg, $border, $blur, $bg-opacity, $border-opacity) {
+    @if $kendo-enable-transparency {
+        $config: k-get-preset($preset);
+
+        $_blur: if($blur, $blur, map.get($config, blur));
+        $_bg-opacity: if($bg-opacity, $bg-opacity, map.get($config, bg-opacity));
+        $_border-opacity: if($border-opacity, $border-opacity, map.get($config, border-opacity));
+
+        @if $bg {
+            background-color: color-mix(in srgb, #{$bg} #{k-bg-opacity($_bg-opacity)}, transparent);
+        }
+
+        @if $border {
+            border-color: color-mix(in srgb, #{$border} #{k-border-opacity($_border-opacity)}, transparent);
+        }
+
+        @if $_blur and $_blur != none {
+            backdrop-filter: blur(#{k-backdrop-blur($_blur)});
+        }
+    }
+}
+```
+
+### `k-transparency-target`
+
+Apply transparency using a semantic target name.
+This resolves the target to its mapped preset and applies the styles.
+
+
+#### Syntax
+
+```scss
+@include k-transparency-target($name, $bg, $border);
+```
+#### Parameters
+
+
+`<String> $name`
+: The target name (header, footer, popup, overlay, etc.)
+
+`<Color> $bg`
+: Background color to apply opacity to
+
+`<Color> $border`
+: Border color to apply opacity to
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/transparency/index.scss#L186-L200
+@mixin k-transparency-target($name, $bg, $border) {
+    @if $kendo-enable-transparency {
+        $preset-name: map.get($kendo-transparency-targets, $name);
+
+        @if $preset-name {
+            @include k-transparency($preset-name, $bg: $bg, $border: $border);
+        } @else {
+            @warn "Target '#{$name}' not found in $kendo-transparency-targets map.";
+        }
+    }
+}
+```
+
+### `kendo-transparency--styles`
+
+Outputs CSS custom properties for the transparency system.
+
+
+#### Syntax
+
+```scss
+@include kendo-transparency--styles();
+```
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/transparency/index.scss#L204-L235
+@mixin kendo-transparency--styles() {
+    @if $kendo-enable-transparency {
+        :root {
+            // Blur scale
+            @each $level, $value in $kendo-backdrop-blur {
+                --kendo-backdrop-blur-#{$level}: #{$value};
+            }
+
+            // Background opacity scale
+            @each $level, $value in $kendo-bg-opacity {
+                --kendo-bg-opacity-#{$level}: #{$value};
+            }
+
+            // Border opacity scale
+            @each $level, $value in $kendo-border-opacity {
+                --kendo-border-opacity-#{$level}: #{$value};
+            }
+
+            // Preset references
+            @each $key, $config in $kendo-transparency-presets {
+                --kendo-preset-#{$key}-blur: #{k-backdrop-blur(map.get($config, blur))};
+                --kendo-preset-#{$key}-bg-opacity: #{k-bg-opacity(map.get($config, bg-opacity))};
+                --kendo-preset-#{$key}-border-opacity: #{k-border-opacity(map.get($config, border-opacity))};
+            }
+
+            // Target mappings
+            @each $name, $preset in $kendo-transparency-targets {
+                --kendo-transparency-target-#{$name}: #{$preset};
+            }
+        }
     }
 }
 ```

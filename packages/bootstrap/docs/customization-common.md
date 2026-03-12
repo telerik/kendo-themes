@@ -28,123 +28,113 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-base-bg</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(surface), $kendo-color-light)</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td>$default-backdrop-blur</td>
+    <td>Map</td>
+    <td><code>(
+    none: 0px,
+    sm: 4px,
+    md: 8px,
+    lg: 12px,
+    xl: 20px
+)</code></td>
+    <td><ul><li>none: 0px</li><li>sm: 4px</li><li>md: 8px</li><li>lg: 12px</li><li>xl: 20px</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Defines the blur radius applied to the content behind a translucent surface.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-base-text</td>
-    <td>String</td>
-    <td><code>$kendo-body-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
+    <td>$default-bg-opacity</td>
+    <td>Map</td>
+    <td><code>(
+    solid: 100%,
+    subtle: 90%,
+    moderate: 80%,
+    strong: 60%
+)</code></td>
+    <td><ul><li>solid: 100%</li><li>subtle: 90%</li><li>moderate: 80%</li><li>strong: 60%</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background Opacity Scale<br />Defines the opacity percentage for surface backgrounds via color-mix.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-base-border</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, $kendo-app-border, k-try-shade( $kendo-base-bg, 1 ))</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
+    <td>$default-border-opacity</td>
+    <td>Map</td>
+    <td><code>(
+    solid: 100%,
+    subtle: 60%,
+    moderate: 40%,
+    strong: 20%
+)</code></td>
+    <td><ul><li>solid: 100%</li><li>subtle: 60%</li><li>moderate: 40%</li><li>strong: 20%</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the components' chrome area.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border Opacity Scale<br />Defines the opacity percentage for surface borders via color-mix.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-base-gradient</td>
-    <td>Null</td>
-    <td><code>if($kendo-enable-color-system, null, none)</code></td>
-    <td><code>null</code></td>
+    <td>$default-transparency-presets</td>
+    <td>Map</td>
+    <td><code>(
+    clear: (
+        blur: none,
+        bg-opacity: solid,
+        border-opacity: solid
+    ),
+    subtle: (
+        blur: sm,
+        bg-opacity: subtle,
+        border-opacity: subtle
+    ),
+    frosted: (
+        blur: md,
+        bg-opacity: moderate,
+        border-opacity: moderate
+    ),
+    glass: (
+        blur: lg,
+        bg-opacity: strong,
+        border-opacity: strong
+    ),
+    heavy: (
+        blur: xl,
+        bg-opacity: strong,
+        border-opacity: solid
+    )
+)</code></td>
+    <td><ul><li>clear: "blur":"none","bg-opacity":"solid","border-opacity":"solid"</li><li>subtle: "blur":"sm","bg-opacity":"subtle","border-opacity":"subtle"</li><li>frosted: "blur":"md","bg-opacity":"moderate","border-opacity":"moderate"</li><li>glass: "blur":"lg","bg-opacity":"strong","border-opacity":"strong"</li><li>heavy: "blur":"xl","bg-opacity":"strong","border-opacity":"solid"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transparency visual behavior presets - combinations of blur and opacity settings.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-hover-bg</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover), #e9ecef)</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover, #dee2e6)</code></td>
+    <td>$default-transparency-targets</td>
+    <td>Map</td>
+    <td><code>(
+    // Chrome surfaces - parts of components
+    header: glass,
+    header-sticky: heavy,
+    footer: glass,
+    toolbar: subtle,
+    // toolbar-floating: frosted,
+
+    // Floating surfaces - entire floating elements
+    popup: glass,
+    // dropdown: glass,
+    // menu: glass,
+    // notification: frosted,
+    // toast: frosted,
+
+    // Blocking surfaces - overlays
+    // overlay: clear,
+    // overlay-light: clear
+)</code></td>
+    <td><ul><li>header: glass</li><li>header-sticky: heavy</li><li>footer: glass</li><li>toolbar: subtle</li><li>popup: glass</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-hover-text</td>
-    <td>String</td>
-    <td><code>$kendo-base-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-hover-border</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, $kendo-base-border, k-try-shade( $kendo-hover-bg, 1 ))</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-hover-gradient</td>
-    <td>Null</td>
-    <td><code>if($kendo-enable-color-system, null, none)</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hovered items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-selected-bg</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-selected-text</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(on-primary), $kendo-color-primary-contrast)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-selected-border</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), k-try-shade( $kendo-selected-bg, 1 ))</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-selected-gradient</td>
-    <td>Null</td>
-    <td><code>if($kendo-enable-color-system, null, none)</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transparency Targets - Semantic UI parts mapped to presets<br />Only parts that need transparency are defined here.</div></div>
     </td>
 </tr>
 </tbody>
