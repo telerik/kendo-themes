@@ -7,6 +7,7 @@
 @forward "./border-radii/index.scss";
 @forward "./motion/index.scss";
 @forward "./z-index/index.scss";
+@forward "./transparency/index.scss";
 @forward "./styles/index.scss";
 
 @use "./color-system/index.scss" as *;
@@ -16,6 +17,7 @@
 @use "./spacing/index.scss" as *;
 @use "./motion/index.scss" as *;
 @use "./border-radii/index.scss" as *;
+@use "./transparency/index.scss" as *;
 @use "./styles/index.scss" as *;
 
 @mixin core-styles() {
@@ -26,6 +28,7 @@
         @include kendo-elevation--styles();
         @include kendo-core--typography--styles();
         @include kendo-motion--styles();
+        @include kendo-transparency--styles();
         @include kendo-core--styles();
     }
 }

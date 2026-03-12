@@ -1,0 +1,235 @@
+@use "sass:map";
+@use "../_variables.scss" as *;
+
+
+// Backdrop Blur Scale
+/// Defines the blur radius applied to the content behind a translucent surface.
+$default-backdrop-blur: (
+    none: 0px,
+    sm: 4px,
+    md: 8px,
+    lg: 12px,
+    xl: 20px
+) !default;
+
+/// The global Backdrop Blur map.
+/// @group transparency
+$kendo-backdrop-blur: $default-backdrop-blur !default;
+$kendo-backdrop-blur: map.merge($default-backdrop-blur, $kendo-backdrop-blur);
+
+
+/// Background Opacity Scale
+/// Defines the opacity percentage for surface backgrounds via color-mix.
+$default-bg-opacity: (
+    solid: 100%,
+    subtle: 90%,
+    moderate: 80%,
+    strong: 60%
+) !default;
+
+/// The global Background Opacity map.
+/// @group transparency
+$kendo-bg-opacity: $default-bg-opacity !default;
+$kendo-bg-opacity: map.merge($default-bg-opacity, $kendo-bg-opacity);
+
+
+
+/// Border Opacity Scale
+/// Defines the opacity percentage for surface borders via color-mix.
+$default-border-opacity: (
+    solid: 100%,
+    subtle: 60%,
+    moderate: 40%,
+    strong: 20%
+) !default;
+
+/// The global Border Opacity map.
+/// @group transparency
+$kendo-border-opacity: $default-border-opacity !default;
+$kendo-border-opacity: map.merge($default-border-opacity, $kendo-border-opacity);
+
+
+/// Transparency visual behavior presets - combinations of blur and opacity settings.
+$default-transparency-presets: (
+    clear: (
+        blur: none,
+        bg-opacity: solid,
+        border-opacity: solid
+    ),
+    subtle: (
+        blur: sm,
+        bg-opacity: subtle,
+        border-opacity: subtle
+    ),
+    frosted: (
+        blur: md,
+        bg-opacity: moderate,
+        border-opacity: moderate
+    ),
+    glass: (
+        blur: lg,
+        bg-opacity: strong,
+        border-opacity: strong
+    ),
+    heavy: (
+        blur: xl,
+        bg-opacity: strong,
+        border-opacity: solid
+    )
+) !default;
+
+/// The global map of transparency token presets.
+/// @group transparency
+$kendo-transparency-presets: $default-transparency-presets !default;
+$kendo-transparency-presets: map.merge($default-transparency-presets, $kendo-transparency-presets);
+
+/// Transparency Targets - Semantic UI parts mapped to presets
+/// Only parts that need transparency are defined here.
+$default-transparency-targets: (
+    // Chrome surfaces - parts of components
+    header: glass,
+    header-sticky: heavy,
+    footer: glass,
+    toolbar: subtle,
+    // toolbar-floating: frosted,
+
+    // Floating surfaces - entire floating elements
+    popup: glass,
+    // dropdown: glass,
+    // menu: glass,
+    // notification: frosted,
+    // toast: frosted,
+
+    // Blocking surfaces - overlays
+    // overlay: clear,
+    // overlay-light: clear
+) !default;
+
+/// The global transparency targets map.
+/// @group transparency
+$kendo-transparency-targets: $default-transparency-targets !default;
+$kendo-transparency-targets: map.merge($default-transparency-targets, $kendo-transparency-targets);
+
+
+
+/// Get a blur value from the backdrop blur scale.
+/// @param {String} $level - The blur level key
+/// @return {Length} The blur value with CSS variable fallback
+@function k-backdrop-blur($level) {
+    @return var(--kendo-backdrop-blur-#{$level}, #{map.get($kendo-backdrop-blur, $level)});
+}
+
+/// Get a background opacity value.
+/// @param {String} $level - The opacity level key
+/// @return {Percentage} The opacity percentage with CSS variable fallback
+@function k-bg-opacity($level) {
+    @return var(--kendo-bg-opacity-#{$level}, #{map.get($kendo-bg-opacity, $level)});
+}
+
+/// Get a border opacity value.
+/// @param {String} $level - The opacity level key
+/// @return {Percentage} The opacity percentage with CSS variable fallback
+@function k-border-opacity($level) {
+    @return var(--kendo-border-opacity-#{$level}, #{map.get($kendo-border-opacity, $level)});
+}
+
+/// Get a transparency preset configuration.
+/// @param {String} $name - The preset name
+/// @return {Map} The preset configuration
+@function k-get-preset($name) {
+    @return map.get($kendo-transparency-presets, $name);
+}
+
+
+/// Apply transparency using a preset.
+/// @param {String} $preset - The preset name (clear, subtle, frosted, glass, heavy)
+/// @param {Color} $bg [null] - Background color to apply opacity to
+/// @param {Color} $border [null] - Border color to apply opacity to
+/// @param {String} $blur [null] - Override blur level
+/// @param {String} $bg-opacity [null] - Override background opacity level
+/// @param {String} $border-opacity [null] - Override border opacity level
+@mixin k-transparency(
+    $preset: frosted,
+    $bg: null,
+    $border: null,
+    $blur: null,
+    $bg-opacity: null,
+    $border-opacity: null
+) {
+    @if $kendo-enable-transparency {
+        $config: k-get-preset($preset);
+
+        $_blur: if($blur, $blur, map.get($config, blur));
+        $_bg-opacity: if($bg-opacity, $bg-opacity, map.get($config, bg-opacity));
+        $_border-opacity: if($border-opacity, $border-opacity, map.get($config, border-opacity));
+
+        @if $bg {
+            background-color: color-mix(in srgb, #{$bg} #{k-bg-opacity($_bg-opacity)}, transparent);
+        }
+
+        @if $border {
+            border-color: color-mix(in srgb, #{$border} #{k-border-opacity($_border-opacity)}, transparent);
+        }
+
+        @if $_blur and $_blur != none {
+            backdrop-filter: blur(#{k-backdrop-blur($_blur)});
+        }
+    }
+}
+
+
+/// Apply transparency using a semantic target name.
+/// This resolves the target to its mapped preset and applies the styles.
+/// @param {String} $name - The target name (header, footer, popup, overlay, etc.)
+/// @param {Color} $bg [null] - Background color to apply opacity to
+/// @param {Color} $border [null] - Border color to apply opacity to
+@mixin k-transparency-target(
+    $name,
+    $bg: null,
+    $border: null
+) {
+    @if $kendo-enable-transparency {
+        $preset-name: map.get($kendo-transparency-targets, $name);
+
+        @if $preset-name {
+            @include k-transparency($preset-name, $bg: $bg, $border: $border);
+        } @else {
+            @warn "Target '#{$name}' not found in $kendo-transparency-targets map.";
+        }
+    }
+}
+
+
+/// Outputs CSS custom properties for the transparency system.
+@mixin kendo-transparency--styles() {
+    @if $kendo-enable-transparency {
+        :root {
+            // Blur scale
+            @each $level, $value in $kendo-backdrop-blur {
+                --kendo-backdrop-blur-#{$level}: #{$value};
+            }
+
+            // Background opacity scale
+            @each $level, $value in $kendo-bg-opacity {
+                --kendo-bg-opacity-#{$level}: #{$value};
+            }
+
+            // Border opacity scale
+            @each $level, $value in $kendo-border-opacity {
+                --kendo-border-opacity-#{$level}: #{$value};
+            }
+
+            // Preset references
+            @each $key, $config in $kendo-transparency-presets {
+                --kendo-preset-#{$key}-blur: #{k-backdrop-blur(map.get($config, blur))};
+                --kendo-preset-#{$key}-bg-opacity: #{k-bg-opacity(map.get($config, bg-opacity))};
+                --kendo-preset-#{$key}-border-opacity: #{k-border-opacity(map.get($config, border-opacity))};
+            }
+
+            // Target mappings
+            @each $name, $preset in $kendo-transparency-targets {
+                --kendo-transparency-target-#{$name}: #{$preset};
+            }
+        }
+    }
+}
