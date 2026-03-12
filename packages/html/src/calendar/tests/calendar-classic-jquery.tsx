@@ -21,7 +21,7 @@ export default () =>(
             <span>jquery classic weeknumber with selected range</span>
 
             <section>
-                <div className="k-calendar k-calendar-md">
+                <div className="k-calendar">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">March 2018</Button>
@@ -189,7 +189,7 @@ export default () =>(
             </section>
 
             <section>
-                <div className="k-calendar k-week-number k-calendar-md">
+                <div className="k-calendar k-week-number">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">March 2018</Button>
@@ -364,7 +364,7 @@ export default () =>(
             </section>
 
             <section>
-                <div className="k-calendar k-week-number k-calendar-range k-calendar-md">
+                <div className="k-calendar k-week-number k-calendar-range">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">March 2018</Button>
@@ -543,7 +543,7 @@ export default () =>(
             <span>jquery classic century</span>
 
             <section>
-                <div className="k-calendar k-calendar-md">
+                <div className="k-calendar">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2018</Button>
@@ -604,7 +604,7 @@ export default () =>(
             </section>
 
             <section>
-                <div className="k-calendar k-calendar-md">
+                <div className="k-calendar">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2010 - 2019</Button>
@@ -661,7 +661,7 @@ export default () =>(
             </section>
 
             <section>
-                <div className="k-calendar k-calendar-md">
+                <div className="k-calendar">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2000 - 2099</Button>
