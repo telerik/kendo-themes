@@ -1,6 +1,35 @@
 @use "@progress/kendo-theme-core/scss/components/bottom-navigation/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 
 @mixin kendo-bottom-navigation--theme() {
     @include kendo-bottom-navigation--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-bottom-nav {
+            // Fillmode: solid
+            #{k-when-default($kendo-bottom-nav-default-fill-mode, "solid")}
+            &.k-bottom-nav-solid {
+                // Theme colors
+                @each $name in $kendo-bottom-navigation-theme-colors {
+                    #{k-when-default($kendo-bottom-nav-default-theme-color, $name)}
+                    &.k-bottom-nav-#{$name} {
+                        @include k-transparency(glass, $bg: k-color(#{$name}));
+                    }
+                }
+            }
+
+            // Fillmode: flat
+            #{k-when-default($kendo-bottom-nav-default-fill-mode, "flat")}
+            &.k-bottom-nav-flat {
+                @each $name in $kendo-bottom-navigation-theme-colors {
+                    #{k-when-default($kendo-bottom-nav-default-theme-color, $name)}
+                    &.k-bottom-nav-#{$name} {
+                        @include k-transparency(glass, $bg: $kendo-bottom-nav-flat-bg);
+                    }
+                }
+            }
+        }
+    }
 }

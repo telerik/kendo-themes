@@ -1,6 +1,14 @@
 @use "@progress/kendo-theme-core/scss/components/drawer/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-drawer--theme() {
     @include kendo-drawer--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-drawer {
+            background: transparent;
+            @include k-transparency(heavy, $bg: $kendo-drawer-bg);
+        }
+    }
 }

@@ -1,6 +1,18 @@
 @use "@progress/kendo-theme-core/scss/components/tabstrip/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-tabstrip--theme() {
     @include kendo-tabstrip--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-tabstrip-items-wrapper {
+            @include k-transparency(heavy, $bg: $kendo-tabstrip-bg);
+        }
+
+        .k-tabstrip-content,
+        .k-tabstrip-items-wrapper .k-tabstrip-item.k-active {
+            @include k-transparency(heavy, $bg: $kendo-tabstrip-item-selected-bg);
+        }
+    }
 }

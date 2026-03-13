@@ -1,6 +1,12 @@
 @use "@progress/kendo-theme-core/scss/components/menu/_theme.scss" as *;
-
+@use "../core/_index.scss" as *;
 
 @mixin kendo-menu--theme() {
     @include kendo-menu--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-menu-group {
+            background-color: transparent;
+        }
+    }
 }

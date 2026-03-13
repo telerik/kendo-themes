@@ -1,6 +1,18 @@
 @use "@progress/kendo-theme-core/scss/components/dialog/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-dialog--theme() {
     @include kendo-dialog--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-dialog-actions {
+            background-color: $kendo-dialog-bg;
+        }
+        
+        .k-dialog-wrapper:not(:has(.k-overlay)) .k-dialog-titlebar {
+            @include k-transparency(glass, $bg: $kendo-dialog-titlebar-bg);
+        }
+        
+    }
 }

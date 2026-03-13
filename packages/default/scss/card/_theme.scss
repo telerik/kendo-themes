@@ -1,6 +1,13 @@
 @use "@progress/kendo-theme-core/scss/components/card/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-card--theme() {
     @include kendo-card--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-card {
+            @include k-transparency(heavy, $bg: $kendo-card-bg);
+        }
+    }
 }

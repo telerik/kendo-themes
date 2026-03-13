@@ -1,6 +1,13 @@
 @use "@progress/kendo-theme-core/scss/components/expansion-panel/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-expander--theme() {
     @include kendo-expander--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-expander {
+            @include k-transparency(heavy, $bg: $kendo-expander-bg);
+        }
+    }
 }

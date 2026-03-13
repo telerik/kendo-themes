@@ -1,6 +1,13 @@
 @use "@progress/kendo-theme-core/scss/components/popup/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-popup--theme() {
     @include kendo-popup--theme-base();
+
+     @if $kendo-enable-transparency {
+        .k-popup {
+            @include k-transparency(heavy, $bg: $kendo-popup-bg);
+        }
+    }
 }

@@ -1,6 +1,13 @@
 @use "@progress/kendo-theme-core/scss/components/pager/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-pager--theme() {
     @include kendo-pager--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-pager {
+            @include k-transparency(heavy, $bg: $kendo-pager-bg);
+        }
+    }
 }

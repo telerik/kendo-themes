@@ -62,7 +62,7 @@ $kendo-tabstrip-wrapper-border: null !default;
 
 /// The background color of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-bg: null !default;
+$kendo-tabstrip-bg: k-color(surface-alt) !default;
 /// The text color of the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-text: k-color(on-app-surface) !default;

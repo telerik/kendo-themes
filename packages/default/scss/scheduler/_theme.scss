@@ -1,6 +1,22 @@
 @use "@progress/kendo-theme-core/scss/components/scheduler/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-scheduler--theme() {
     @include kendo-scheduler--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-scheduler {
+            background: transparent;
+        }
+
+        .k-scheduler-layout {
+            background-color: $kendo-scheduler-bg;
+        }
+
+        .k-scheduler-toolbar,
+        .k-scheduler-footer {
+            @include k-transparency(heavy, $bg: $kendo-scheduler-toolbar-bg);
+        }
+    }
 }

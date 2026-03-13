@@ -1,6 +1,13 @@
 @use "@progress/kendo-theme-core/scss/components/switch/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-switch--theme() {
     @include kendo-switch--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-switch-off .k-switch-track {
+            @include k-transparency(heavy, $bg: $kendo-switch-off-track-bg);
+        }
+    }
 }

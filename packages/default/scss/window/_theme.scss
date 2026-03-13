@@ -1,6 +1,29 @@
 @use "@progress/kendo-theme-core/scss/components/window/_theme.scss" as *;
-
+@use "./variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-window--theme() {
     @include kendo-window--theme-base();
+
+    @if $kendo-enable-transparency {
+        .k-window {
+            background-color: transparent;
+        }
+
+        .k-window-content {
+            background-color: $kendo-window-bg;
+        }
+        
+        .k-window-titlebar {
+            // @include k-transparency(heavy, $bg: $kendo-window-titlebar-bg, $border: green);
+            @include k-transparency(heavy, $bg: $kendo-window-titlebar-bg);
+
+            // backdrop-filter: blur(#{k-backdrop-blur(xl)});
+            // background-color: $kendo-window-titlebar-bg;
+
+            // Surface preset with multiple overrides
+            // @include k-transparency(heavy, $bg: $kendo-window-titlebar-bg, $blur: sm, $bg-opacity: subtle);
+        }
+        
+    }
 }
