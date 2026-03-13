@@ -2,7 +2,6 @@
 @use "../../mixins/index.scss" as *;
 @use "../../functions/index.scss" as *;
 @use "../../_variables.scss" as *;
-@use "../../transparency/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-scheduler--theme-base() {
@@ -10,14 +9,10 @@
     // Appearance
     .k-scheduler {
         @include fill(
-            $color: $kendo-scheduler-text,
-            // $kendo-scheduler-bg,
-            $border: $kendo-scheduler-border
+            $kendo-scheduler-text,
+            $kendo-scheduler-bg,
+            $kendo-scheduler-border
         );
-    }
-
-    .k-scheduler-layout {
-        background-color: $kendo-scheduler-bg;
     }
 
     // Header and footer
@@ -29,7 +24,6 @@
             $kendo-scheduler-toolbar-gradient
         );
 
-        @include k-transparency(heavy, $bg: $kendo-scheduler-toolbar-bg);
     }
     .k-scheduler-footer {
         @include fill(
