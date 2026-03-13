@@ -265,39 +265,52 @@
     // =============================================================
     //  SERIES -- chart/data-viz colors
     // =============================================================
+    //  Single seed color -- all 6 series are derived by rotating
+    //  the hue in 60° increments (360° / 6) around the oklch wheel.
+    //  Change this one value to re-palette all chart colors at once.
+    //
     //  bold/bolder: darken proportionally (l * factor)
     //  subtle/subtler: lighten proportionally (toward white)
-    --kendo-color-series-a:         oklch(0.6985 0.1923 27.19);
+    // -------------------------------------------------------------
+    --kendo-color-series:           oklch(0.65 0.20 27);
+
+    // --- Series A (seed hue + 0°) --------------------------------
+    --kendo-color-series-a:         var(--kendo-color-series);
     --kendo-color-series-a-bold:    oklch(from var(--kendo-color-series-a) calc(l * 0.75) c h);
     --kendo-color-series-a-bolder:  oklch(from var(--kendo-color-series-a) calc(l * 0.50) c h);
     --kendo-color-series-a-subtle:  oklch(from var(--kendo-color-series-a) calc(l * 0.50 + 0.50) c h);
     --kendo-color-series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l * 0.75 + 0.25) c h);
 
-    --kendo-color-series-b:         oklch(0.91 0.13 99);
+    // --- Series B (seed hue + 60°) -------------------------------
+    --kendo-color-series-b:         oklch(from var(--kendo-color-series) l c calc(h + 60));
     --kendo-color-series-b-bold:    oklch(from var(--kendo-color-series-b) calc(l * 0.75) c h);
     --kendo-color-series-b-bolder:  oklch(from var(--kendo-color-series-b) calc(l * 0.50) c h);
     --kendo-color-series-b-subtle:  oklch(from var(--kendo-color-series-b) calc(l * 0.50 + 0.50) c h);
     --kendo-color-series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l * 0.75 + 0.25) c h);
 
-    --kendo-color-series-c:         oklch(0.77 0.15 155);
+    // --- Series C (seed hue + 120°) ------------------------------
+    --kendo-color-series-c:         oklch(from var(--kendo-color-series) l c calc(h + 120));
     --kendo-color-series-c-bold:    oklch(from var(--kendo-color-series-c) calc(l * 0.75) c h);
     --kendo-color-series-c-bolder:  oklch(from var(--kendo-color-series-c) calc(l * 0.50) c h);
     --kendo-color-series-c-subtle:  oklch(from var(--kendo-color-series-c) calc(l * 0.50 + 0.50) c h);
     --kendo-color-series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l * 0.75 + 0.25) c h);
 
-    --kendo-color-series-d:         oklch(0.54 0.23 278);
+    // --- Series D (seed hue + 180°) ------------------------------
+    --kendo-color-series-d:         oklch(from var(--kendo-color-series) l c calc(h + 180));
     --kendo-color-series-d-bold:    oklch(from var(--kendo-color-series-d) calc(l * 0.75) c h);
     --kendo-color-series-d-bolder:  oklch(from var(--kendo-color-series-d) calc(l * 0.50) c h);
     --kendo-color-series-d-subtle:  oklch(from var(--kendo-color-series-d) calc(l * 0.50 + 0.50) c h);
     --kendo-color-series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l * 0.75 + 0.25) c h);
 
-    --kendo-color-series-e:         oklch(0.59 0.25 304);
+    // --- Series E (seed hue + 240°) ------------------------------
+    --kendo-color-series-e:         oklch(from var(--kendo-color-series) l c calc(h + 240));
     --kendo-color-series-e-bold:    oklch(from var(--kendo-color-series-e) calc(l * 0.75) c h);
     --kendo-color-series-e-bolder:  oklch(from var(--kendo-color-series-e) calc(l * 0.50) c h);
     --kendo-color-series-e-subtle:  oklch(from var(--kendo-color-series-e) calc(l * 0.50 + 0.50) c h);
     --kendo-color-series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l * 0.75 + 0.25) c h);
 
-    --kendo-color-series-f:         oklch(0.63 0.21 357);
+    // --- Series F (seed hue + 300°) ------------------------------
+    --kendo-color-series-f:         oklch(from var(--kendo-color-series) l c calc(h + 300));
     --kendo-color-series-f-bold:    oklch(from var(--kendo-color-series-f) calc(l * 0.75) c h);
     --kendo-color-series-f-bolder:  oklch(from var(--kendo-color-series-f) calc(l * 0.50) c h);
     --kendo-color-series-f-subtle:  oklch(from var(--kendo-color-series-f) calc(l * 0.50 + 0.50) c h);
