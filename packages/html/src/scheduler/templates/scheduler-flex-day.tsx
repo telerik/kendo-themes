@@ -25,13 +25,6 @@ export const SchedulerFlexDay = ({ style, ...props }: any) => (
                     <Button>Timeline</Button>
                     <Button className="k-group-end">Agenda</Button>
                 </ButtonGroup>
-                <select className="k-views-dropdown" aria-label="Select scheduler view">
-                    <option>Day</option>
-                    <option>Week</option>
-                    <option>Month</option>
-                    <option>Timeline</option>
-                    <option>Agenda</option>
-                </select>
             </SchedulerToolbar>
         }
         footer={

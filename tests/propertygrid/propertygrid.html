@@ -30,11 +30,11 @@
                 </button>
             </div>
             <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
-                <div class="k-resize-handle"></div>
+                <div class="k-resize-handle" aria-hidden="true"></div>
             </div>
             <div class="k-pane k-scrollable" role="group">
                 <div class="k-treelist k-property-grid k-grid" style="height: 450px;">
-                    <div class="k-grid-toolbar k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
+                    <div role="toolbar" aria-label="Toolbar" aria-controls="k-propertygrid-1" class="k-grid-toolbar k-toolbar k-toolbar-resizable">
                         <span class="k-textbox k-input">
                             <span class="k-input-prefix k-input-prefix-horizontal">
                                 <span class="k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
@@ -44,13 +44,13 @@
                                 </span>
                             </span>
                             <span class="k-input-separator k-input-separator-vertical"></span>
-                            <input class="k-input-inner" placeholder="Search..." autocomplete="off" type="text" value="">
+                            <input aria-label="Search properties" class="k-input-inner" placeholder="Search..." autocomplete="off" type="text" value="">
                         </span>
-                        <span class="k-toolbar-dropdownlist  k-dropdownlist k-picker">
+                        <span class="k-toolbar-dropdownlist  k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Sort order" tabindex="0">
                             <span class="k-input-inner">
                                 <span class="k-input-value-text">Default Sort</span>
                             </span>
-                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
@@ -58,14 +58,14 @@
                                 </span>
                             </button>
                         </span>
-                        <button class="k-toolbar-button  k-button k-icon-button">
+                        <button class="k-toolbar-button  k-button k-icon-button" aria-label="Categorize">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-categorize" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M32 32v192l160-96zm0 448V288l160 96zM192 64h288v32H192zm0 96h288v32H192zm0 160h288v32H192zm0 96h288v32H192z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-toolbar-button  k-button k-icon-button">
+                        <button class="k-toolbar-button  k-button k-icon-button" aria-label="Info">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-info-circle" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M288 352h32v32H192v-32h32v-96h-32v-32h96zm0-224h-64v64h64zm192 128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224m-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192"></path>
@@ -73,93 +73,95 @@
                             </span>
                         </button>
                     </div>
-                    <div class="k-grid-container">
-                        <div class="k-auto-scrollable k-grid-content">
-                            <table class="k-grid-table k-table">
-                                <colgroup>
-                                    <col style="width: 200px;">
-                                    <col style="width: 250px;">
-                                </colgroup>
-                                <tbody class="k-table-tbody">
-                                    <tr class="k-table-row">
-                                        <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>size
-                                        </td>
-                                        <td class="k-table-td">
-                                            <b>medium</b>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-table-row k-table-alt-row">
-                                        <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>themeColor
-                                        </td>
-                                        <td class="k-table-td">
-                                            <b>base</b>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-table-row">
-                                        <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>fillMode
-                                        </td>
-                                        <td class="k-table-td">
-                                            <b>solid</b>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-table-row k-table-alt-row">
-                                        <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>rounded
-                                        </td>
-                                        <td class="k-table-td">
-                                            <b>medium</b>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-table-row">
-                                        <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>icon
-                                        </td>
-                                        <td class="k-table-td">
-                                            <span class="k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-table-row k-table-alt-row">
-                                        <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M256 352 128 160h256z"></path>
-                                                </svg>
-                                            </span>font
-                                        </td>
-                                        <td class="k-table-td">Roboto 400</td>
-                                    </tr>
-                                    <tr class="k-table-row">
-                                        <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>font-weight
-                                        </td>
-                                        <td class="k-table-td">
-                                            <b>400</b>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-table-row k-table-alt-row">
-                                        <td class="k-table-td">
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
-                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>font-family
-                                        </td>
-                                        <td class="k-table-td">
-                                            <b>Roboto</b>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-hidden k-bottom k-sticky k-footer-template k-table-row">
-                                        <td colspan="2" class="k-table-td">
-                                            <span>&nbsp;</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="k-grid-aria-root" role="treegrid" id="k-propertygrid-1" aria-colcount="2" aria-rowcount="9">
+                        <div class="k-grid-container">
+                            <div class="k-auto-scrollable k-grid-content">
+                                <table role="none" class="k-grid-table k-table">
+                                    <colgroup>
+                                        <col style="width: 200px;">
+                                        <col style="width: 250px;">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr role="row" aria-rowindex="1" class="k-table-row">
+                                            <td role="gridcell" aria-colindex="1" class="k-table-td">
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>size
+                                            </td>
+                                            <td role="gridcell" aria-colindex="2" class="k-table-td">
+                                                <b>medium</b>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="2" class="k-table-row k-table-alt-row">
+                                            <td role="gridcell" aria-colindex="1" class="k-table-td">
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>themeColor
+                                            </td>
+                                            <td role="gridcell" aria-colindex="2" class="k-table-td">
+                                                <b>base</b>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="3" class="k-table-row">
+                                            <td role="gridcell" aria-colindex="1" class="k-table-td">
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>fillMode
+                                            </td>
+                                            <td role="gridcell" aria-colindex="2" class="k-table-td">
+                                                <b>solid</b>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="4" class="k-table-row k-table-alt-row">
+                                            <td role="gridcell" aria-colindex="1" class="k-table-td">
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>rounded
+                                            </td>
+                                            <td role="gridcell" aria-colindex="2" class="k-table-td">
+                                                <b>medium</b>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="5" class="k-table-row">
+                                            <td role="gridcell" aria-colindex="1" class="k-table-td">
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>icon
+                                            </td>
+                                            <td role="gridcell" aria-colindex="2" class="k-table-td">
+                                                <span class="k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                                    </svg>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="6" aria-expanded="true" class="k-table-row k-table-alt-row">
+                                            <td role="gridcell" aria-colindex="1" class="k-table-td">
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z"></path>
+                                                    </svg>
+                                                </span>font
+                                            </td>
+                                            <td role="gridcell" aria-colindex="2" class="k-table-td">Roboto 400</td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="7" class="k-table-row">
+                                            <td role="gridcell" aria-colindex="1" class="k-table-td">
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>font-weight
+                                            </td>
+                                            <td role="gridcell" aria-colindex="2" class="k-table-td">
+                                                <b>400</b>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="8" class="k-table-row k-table-alt-row">
+                                            <td role="gridcell" aria-colindex="1" class="k-table-td">
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                                <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>font-family
+                                            </td>
+                                            <td role="gridcell" aria-colindex="2" class="k-table-td">
+                                                <b>Roboto</b>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-hidden k-bottom k-sticky k-footer-template k-table-row">
+                                            <td colspan="2" class="k-table-td">
+                                                <span>&nbsp;</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

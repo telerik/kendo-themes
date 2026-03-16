@@ -11,6 +11,7 @@ The FileBoxWrapper component is a list container for file attachments.
 | -------- | --------- | ----- |
 | `.k-file-box-wrapper` | `role=list` | Explicitly sets the UL role to list. |
 |  | `aria-label` | Provides an accessible name for the list (e.g. "Attached files"). |
+| `.k-file-box-wrapper .k-files-scroll` | `role=presentation` | The scrollable container between the list and its items is presentational, ensuring the list→listitem relationship is preserved in the accessibility tree. |
 
 ### FileBox
 

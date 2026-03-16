@@ -13,11 +13,19 @@
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <section>
             <div class="k-d-flex k-flex-row k-pos-relative">
-                <div class="k-pivotgrid" style="height: 550px; grid-template-columns: 150px auto; grid-template-rows: 242px auto;">
-                    <span class="k-pivotgrid-empty-cell">
-                        <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
-                    </span>
-                    <div class="k-pivotgrid-column-headers">
+                <div class="k-pivotgrid" role="grid" style="height: 550px; grid-template-columns: 150px auto; grid-template-rows: 242px auto;">
+                    <div class="k-pivotgrid-empty-cell" role="none">
+                        <table role="none">
+                            <thead role="none">
+                                <tr role="none">
+                                    <th aria-colspan="1" aria-rowspan="1" id="k-pivotgrid-empty-1">
+                                        <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="k-pivotgrid-column-headers" role="none">
                         <table class="k-pivotgrid-table">
                             <colgroup>
                                 <col width="120">
@@ -172,7 +180,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="k-pivotgrid-row-headers">
+                    <div class="k-pivotgrid-row-headers" role="none">
                         <table class="k-pivotgrid-table">
                             <colgroup>
                                 <col>
@@ -240,7 +248,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="k-pivotgrid-values">
+                    <div class="k-pivotgrid-values" role="none">
                         <table class="k-pivotgrid-table" style="width: 1200px;">
                             <colgroup>
                                 <col width="120">

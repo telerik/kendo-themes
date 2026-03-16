@@ -14,7 +14,7 @@ export const MultiSelectSuffix = (props) => (
         }
         tags={(
             <>
-                <Chip text="Suffix" role="option" selected actions={ <ChipAction type="remove"/> } />
+                <Chip text="Suffix" role="option" aria-selected="true" actions={ <ChipAction type="remove"/> } />
             </>
         )}
         {...props}

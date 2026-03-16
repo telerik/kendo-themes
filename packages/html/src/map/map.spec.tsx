@@ -22,7 +22,7 @@ export type KendoMapState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultAttribution = (
     <>
-        &copy; <a>Attribution</a>
+        &copy; <a href="#">Attribution</a>
     </>
 );
 

@@ -26,7 +26,7 @@
         <div>Opened</div>
         <div>
             <span class="k-multiselecttree k-input">
-                <div class="k-input-values k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                <div class="k-input-values k-chip-list" id="k-mst-1-taglist" role="listbox" aria-label="chip list" aria-orientation="horizontal">
                     <div class="k-chip" role="button" aria-pressed="false">
                         <span class="k-chip-content">
                             <span class="k-chip-label">Furniture</span>
@@ -42,7 +42,7 @@
                         </span>
                     </div>
                 </div>
-                <span class="k-input-inner"></span>
+                <span class="k-input-inner" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-mst-tv-1" aria-autocomplete="list" aria-describedby="k-mst-1-taglist" aria-label="Select items" tabindex="0"></span>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -51,7 +51,7 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelectTree options">
                 <div class="k-child-animation-container">
                     <div class="k-multiselecttree-popup k-popup">
                         <div class="k-check-all">
@@ -61,8 +61,8 @@
                             <span class="k-checkbox-label">Check all</span>
                         </div>
                         <div class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="false" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -72,14 +72,14 @@
                                             </span>
                                         </span>
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Furniture" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Furniture</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="false" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -89,7 +89,7 @@
                                             </span>
                                         </span>
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Decor" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Decor</span>
@@ -104,7 +104,7 @@
         </div>
         <div>
             <span dir="rtl" class="k-multiselecttree k-input">
-                <div class="k-input-values k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                <div class="k-input-values k-chip-list" id="k-mst-2-taglist" role="listbox" aria-label="chip list" aria-orientation="horizontal">
                     <div class="k-chip" role="button" aria-pressed="false">
                         <span class="k-chip-content">
                             <span class="k-chip-label">Furniture</span>
@@ -120,7 +120,7 @@
                         </span>
                     </div>
                 </div>
-                <span class="k-input-inner"></span>
+                <span class="k-input-inner" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-mst-tv-2" aria-autocomplete="list" aria-describedby="k-mst-2-taglist" aria-label="Select items" tabindex="0"></span>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -129,7 +129,7 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelectTree options">
                 <div class="k-child-animation-container">
                     <div class="k-multiselecttree-popup k-popup" dir="rtl">
                         <div class="k-check-all">
@@ -139,8 +139,8 @@
                             <span class="k-checkbox-label">Check all</span>
                         </div>
                         <div dir="rtl" class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="false" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
@@ -150,14 +150,14 @@
                                             </span>
                                         </span>
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Furniture" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Furniture</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="false" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
@@ -167,7 +167,7 @@
                                             </span>
                                         </span>
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Decor" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Decor</span>
@@ -183,7 +183,7 @@
         <div>Filtering</div>
         <div>
             <span class="k-multiselecttree k-input">
-                <div class="k-input-values k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                <div class="k-input-values k-chip-list" id="k-mst-3-taglist" role="listbox" aria-label="chip list" aria-orientation="horizontal">
                     <div class="k-chip" role="button" aria-pressed="false">
                         <span class="k-chip-content">
                             <span class="k-chip-label">Furniture</span>
@@ -199,7 +199,7 @@
                         </span>
                     </div>
                 </div>
-                <span class="k-input-inner"></span>
+                <span class="k-input-inner" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-mst-tv-3" aria-autocomplete="list" aria-describedby="k-mst-3-taglist" aria-label="Select options" tabindex="0"></span>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -208,7 +208,7 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelectTree options">
                 <div class="k-child-animation-container">
                     <div class="k-multiselecttree-popup k-popup">
                         <div class="k-list-filter">
@@ -221,18 +221,18 @@
                                     </span>
                                 </span>
                                 <span class="k-input-separator k-input-separator-vertical"></span>
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                <input aria-label="Search" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                             </span>
                         </div>
                         <div class="k-check-all">
                             <span class="k-checkbox-wrap">
-                                <input class="k-checkbox" type="checkbox">
+                                <input aria-label="Check all" class="k-checkbox" type="checkbox">
                             </span>
                             <span class="k-checkbox-label">Check all</span>
                         </div>
                         <div class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="false" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -242,14 +242,14 @@
                                             </span>
                                         </span>
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Furniture" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Furniture</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="false" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -259,7 +259,7 @@
                                             </span>
                                         </span>
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Decor" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Decor</span>
@@ -274,7 +274,7 @@
         </div>
         <div>
             <span dir="rtl" class="k-multiselecttree k-input">
-                <div class="k-input-values k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                <div class="k-input-values k-chip-list" id="k-mst-4-taglist" role="listbox" aria-label="chip list" aria-orientation="horizontal">
                     <div class="k-chip" role="button" aria-pressed="false">
                         <span class="k-chip-content">
                             <span class="k-chip-label">Furniture</span>
@@ -290,7 +290,7 @@
                         </span>
                     </div>
                 </div>
-                <span class="k-input-inner"></span>
+                <span class="k-input-inner" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-mst-tv-4" aria-autocomplete="list" aria-describedby="k-mst-4-taglist" aria-label="Select options" tabindex="0"></span>
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -299,7 +299,7 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelectTree options">
                 <div class="k-child-animation-container">
                     <div class="k-multiselecttree-popup k-popup" dir="rtl">
                         <div class="k-list-filter">
@@ -312,18 +312,18 @@
                                     </span>
                                 </span>
                                 <span class="k-input-separator k-input-separator-vertical"></span>
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                <input aria-label="Search" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                             </span>
                         </div>
                         <div class="k-check-all">
                             <span class="k-checkbox-wrap">
-                                <input class="k-checkbox" type="checkbox">
+                                <input aria-label="Check all" class="k-checkbox" type="checkbox">
                             </span>
                             <span class="k-checkbox-label">Check all</span>
                         </div>
                         <div dir="rtl" class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="false" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
@@ -333,14 +333,14 @@
                                             </span>
                                         </span>
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Furniture" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Furniture</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="false" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
@@ -350,7 +350,7 @@
                                             </span>
                                         </span>
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Decor" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Decor</span>

@@ -73,7 +73,7 @@ export const PivotGrid: KendoComponent<KendoPivotGridProps & React.HTMLAttribute
                 </div>
             </div>
             {(configurator && configuratorDisplay === "opened") && configurator}
-            {(configurator && configuratorDisplay === "closed") && React.cloneElement(configurator as React.ReactElement, { 'aria-hidden': 'true' })}
+            {(configurator && configuratorDisplay === "closed") && React.cloneElement(configurator as React.ReactElement<React.HTMLAttributes<HTMLElement>>, { 'aria-hidden': 'true' })}
             {(configuratorDisplay !== "none") && <PivotGridConfiguratorButton />}
         </div>
     );

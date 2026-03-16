@@ -14,7 +14,7 @@ export const MultiSelectPrefix = (props) => (
         }
         tags={(
             <>
-                <Chip text="Prefix" role="option" selected actions={ <ChipAction type="remove"/> } />
+                <Chip text="Prefix" role="option" aria-selected="true" actions={ <ChipAction type="remove"/> } />
             </>
         )}
         {...props}

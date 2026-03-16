@@ -36,7 +36,8 @@ export const GanttLine: KendoComponent<KendoGanttLineProps & React.HTMLAttribute
                     [`k-gantt-line-h`]: orientation === "horizontal",
                     [`k-gantt-line-v`]: orientation === "vertical"
                 }
-            )}>
+            )}
+            aria-hidden="true">
         </div>
     );
 };
