@@ -9,10 +9,11 @@ import { TableThead, TableRow, TableTd, TableTbody } from '../../table';
  * When grouping is enabled with sticky headers, the grid renders additional
  * tables inside `.k-grid-sticky-container` elements — one at the top for the
  * current group header and one at the bottom for the group footer.
- * These are visual duplicates and must be hidden from assistive technologies.
+ * These are interactive (clickable, keyboard-navigable) and carry the same
+ * ARIA semantics as the real group header/footer rows they mirror.
  */
 export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
-    <Grid _renderAriaRoot
+    <Grid _renderAriaRoot ariaRowCount={5}
         groupingHeader={(
             <GridGroupingHeader role="toolbar" aria-label="Grouping">
                 <ChipList role="none">
@@ -33,8 +34,8 @@ export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
                                 <col className="k-group-col" /><col /><col /><col />
                             </colgroup>
                             <TableThead role="rowgroup">
-                                <TableRow role="row">
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group" />
+                                <TableRow role="row" aria-rowindex={1}>
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" role="presentation" />
                                     <GridHeaderCell colspan={1} columnTitle="Contact Name" role="columnheader" />
                                     <GridHeaderCell colspan={1} columnTitle="Job Title" role="columnheader" />
                                     <GridHeaderCell colspan={1} columnTitle="Country" role="columnheader" />
@@ -44,15 +45,15 @@ export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    {/* Sticky group header — visual duplicate, hidden from AT */}
-                    <GridStickyContainer role="none" aria-hidden="true">
+                    {/* Sticky group header — mirrors real group header row semantics */}
+                    <GridStickyContainer role="none">
                         <GridTable className="k-grid-group-sticky-header-table" role="none">
                             <colgroup>
                                 <col /><col /><col /><col />
                             </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-table-group-row k-grouping-row">
-                                    <TableTd colspan={4}>
+                            <TableTbody role="rowgroup">
+                                <TableRow className="k-table-group-row k-grouping-row" role="row" aria-rowindex={2}>
+                                    <TableTd colspan={4} role="gridcell" aria-expanded={false} tabIndex={-1} aria-colindex={1}>
                                         <p className="k-reset">
                                             <Icon icon="caret-alt-right" />
                                             Rating 3/5
@@ -70,7 +71,7 @@ export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
                                 <col className="k-group-col" /><col /><col /><col />
                             </colgroup>
                             <TableTbody role="rowgroup">
-                                <TableRow className="k-table-group-row k-grouping-row" role="row">
+                                <TableRow className="k-table-group-row k-grouping-row" role="row" aria-rowindex={2}>
                                     <TableTd colspan={4} role="gridcell" aria-expanded="true">
                                         <p className="k-reset">
                                             <Icon icon="caret-alt-down" />
@@ -78,31 +79,34 @@ export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
                                         </p>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" role="row">
-                                    <TableTd className="k-table-group-td k-group-cell" role="gridcell" />
+                                <TableRow className="k-master-row" role="row" aria-rowindex={3}>
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation" />
                                     <TableTd colspan={1} role="gridcell">Shelden Greyes</TableTd>
                                     <TableTd colspan={1} role="gridcell">Operator</TableTd>
                                     <TableTd colspan={1} role="gridcell">UK</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" role="row" alt>
-                                    <TableTd className="k-table-group-td k-group-cell" role="gridcell" />
+                                <TableRow className="k-master-row" role="row" aria-rowindex={4} alt>
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation" />
                                     <TableTd colspan={1} role="gridcell">Nerissa Dapple</TableTd>
                                     <TableTd colspan={1} role="gridcell">Web Designer</TableTd>
                                     <TableTd colspan={1} role="gridcell">Norway</TableTd>
+                                </TableRow>
+                                <TableRow className="k-group-footer" role="row" aria-rowindex={5}>
+                                    <TableTd colspan={4} role="gridcell">Total items: 2</TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>
                     </GridContent>
 
-                    {/* Sticky group footer — visual duplicate, hidden from AT */}
-                    <GridStickyContainer position="bottom" role="none" aria-hidden="true">
+                    {/* Sticky group footer — mirrors real group footer row semantics */}
+                    <GridStickyContainer position="bottom" role="none">
                         <GridTable className="k-grid-group-sticky-footer-table" role="none">
                             <colgroup>
                                 <col /><col /><col /><col />
                             </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-group-footer">
-                                    <TableTd colspan={4}>Total items: 2</TableTd>
+                            <TableTbody role="rowgroup">
+                                <TableRow className="k-group-footer" role="row" aria-rowindex={5}>
+                                    <TableTd colspan={4} role="gridcell" tabIndex={-1}>Total items: 2</TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>

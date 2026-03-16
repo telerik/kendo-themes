@@ -33,8 +33,8 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                             </colgroup>
                             <TableThead role="rowgroup">
                                 <TableRow role="row">
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" role="presentation"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" role="presentation"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="ID" role="columnheader"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Name" role="columnheader"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Price" role="columnheader"></GridHeaderCell>
@@ -68,7 +68,7 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                                     </TableTd>
                                 </TableRow>
                                 <TableRow className="k-table-group-row k-grouping-row" role="row">
-                                    <TableTd className="k-table-group-td k-group-cell" role="gridcell"></TableTd>
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                     <TableTd colspan={5} role="gridcell" aria-expanded="true">
                                         <p className="k-reset">
                                             <Icon icon="caret-alt-down" />
@@ -77,8 +77,8 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                                     </TableTd>
                                 </TableRow>
                                 <TableRow className="k-master-row" role="row" alt>
-                                    <TableTd className="k-table-group-td k-group-cell" role="gridcell"></TableTd>
-                                    <TableTd className="k-table-group-td k-group-cell" role="gridcell"></TableTd>
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                     <TableTd colspan={0} role="gridcell">2</TableTd>
                                     <TableTd colspan={0} role="gridcell">Chang</TableTd>
                                     <TableTd colspan={0} role="gridcell">$19.00</TableTd>
