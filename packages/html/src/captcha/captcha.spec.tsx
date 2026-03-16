@@ -70,7 +70,7 @@ export const Captcha: KendoComponent<KendoCaptchaProps & KendoCaptchaState & Rea
                     <Button icon="arrow-rotate-cw" disabled={loading === true}></Button>
                 </div>
                 <div className="k-captcha-volume-control k-vstack k-pos-absolute k-hidden">
-                    <div className="k-widget k-slider k-slider-vertical"></div>
+                    <div className="k-slider k-slider-vertical"></div>
                 </div>
             </div>
             <div className="k-captcha-input k-vstack">

@@ -6,9 +6,9 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <div className="k-pane-wrapper k-widget" style={{ height: "600px" }}>
+                <div className="k-pane-wrapper" style={{ height: "600px" }}>
                     <div className="k-pane">
-                        <div className="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view k-widget">
+                        <div className="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view">
                             <div className="k-appbar k-appbar-primary">
                                 <Button className="k-header-cancel" fillMode="flat" icon="chevron-left"></Button>
                                 <span className="k-spacer"></span>

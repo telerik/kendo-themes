@@ -6,7 +6,7 @@ const modifiers = [];
 
 export const ChartDemo = () => {
     return (
-        <div className="k-chart k-widget" style={{ position: "relative", width: "660px", height: "400px" }}>
+        <div className="k-chart" style={{ position: "relative", width: "660px", height: "400px" }}>
             <div
                 className="k-chart-surface"
                 tabIndex={0}
