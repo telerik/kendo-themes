@@ -5,7 +5,7 @@ import { Form } from "../../form";
 import { Treeview, TreeviewItem } from "../../treeview";
 import { nextId } from "../../misc";
 
-export const PivotGridWithConfiguratorOpened = ({ formOrientation = "vertical", ...other }) => {
+export const PivotGridWithConfiguratorDisabledActions = ({ formOrientation = "vertical", ...other }) => {
     const headerId = nextId('pivotgrid-configurator-header');
     const fieldsLabelId = nextId('pivotgrid-label');
     const columnsLabelId = nextId('pivotgrid-label');
@@ -15,7 +15,7 @@ export const PivotGridWithConfiguratorOpened = ({ formOrientation = "vertical", 
     const actionButtons = (
         <>
             <Button>Cancel</Button>
-            <Button themeColor="primary">Apply</Button>
+            <Button themeColor="primary" ariaDisabled>Apply</Button>
         </>
     );
 
@@ -32,8 +32,8 @@ export const PivotGridWithConfiguratorOpened = ({ formOrientation = "vertical", 
                                 <Treeview aria-labelledby={`${headerId} ${fieldsLabelId}`}>
                                     <TreeviewItem checked showCheckbox text="Category" />
                                     <TreeviewItem checked showCheckbox text="Product" />
-                                    <TreeviewItem checked showCheckbox text="Region" />
-                                    <TreeviewItem checked showCheckbox text="Country" />
+                                    <TreeviewItem showCheckbox text="Region" />
+                                    <TreeviewItem showCheckbox text="Country" />
                                     <TreeviewItem hasChildren text="Measures" />
                                 </Treeview>
                             </div>
@@ -66,43 +66,11 @@ export const PivotGridWithConfiguratorOpened = ({ formOrientation = "vertical", 
                         <div className="k-form-field">
                             <label className="k-label" id={rowsLabelId}>Rows</label>
                         </div>
-                        <ChipList className="k-row-fields" aria-labelledby={`${headerId} ${rowsLabelId}`}>
-                            <Chip
-                                role="option"
-                                text="Region"
-                                actions={
-                                    <>
-                                        <ChipAction type="more" />
-                                        <ChipAction type="remove" />
-                                    </>
-                                }
-                            />
-                            <Chip
-                                role="option"
-                                text="Country"
-                                actions={
-                                    <>
-                                        <ChipAction type="more" />
-                                        <ChipAction type="remove" />
-                                    </>
-                                }
-                            />
-                        </ChipList>
+                        <div className="k-settings-description">Select some fields to begin setup.</div>
                         <div className="k-form-field">
                             <label className="k-label" id={valuesLabelId}>Values</label>
                         </div>
-                        <ChipList className="k-filter-fields" aria-labelledby={`${headerId} ${valuesLabelId}`}>
-                            <Chip
-                                role="option"
-                                text="Total"
-                                actions={
-                                    <>
-                                        <ChipAction type="more" />
-                                        <ChipAction type="remove" />
-                                    </>
-                                }
-                            />
-                        </ChipList>
+                        <div className="k-settings-description">Select some fields to begin setup.</div>
                     </Form>
                 </PivotGridConfigurator>
             }
