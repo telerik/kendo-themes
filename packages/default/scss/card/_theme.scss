@@ -7,7 +7,35 @@
 
     @if $kendo-enable-transparency {
         .k-card {
-            @include k-transparency(heavy, $bg: $kendo-card-bg);
+            @include k-transparency(heavy);
+            // @include k-transparency(heavy, $bg: $kendo-card-bg, $border: $kendo-card-border, $border-opacity: 0.4);
+            // @include k-transparency(heavy, $bg: $kendo-card-bg, $blur: sm);
+
+            isolation: isolate;
+
+
+
+
+
+
+
+
+            /* $border: 5px;
+            border: none;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                // z-index: -1;
+                padding: $border;
+                border-radius: inherit;
+                background: linear-gradient(to right, red, orange);
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                mask-composite: exclude;
+                -webkit-mask-composite: xor;
+            } */
         }
     }
 }
