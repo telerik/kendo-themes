@@ -117,9 +117,9 @@ Grid.ariaSpec = {
         { selector: '.k-grid-toolbar', attribute: 'aria-label', usage: 'Clarifies the purpose of the toolbar.' },
         { selector: '.k-grid-toolbar', attribute: 'aria-controls=.k-grid-aria-root id (when present)', usage: 'Pointing to the id of the element with role=grid.' },
 
-        // ── Grid Grouping Header ──
-        { selector: '.k-grouping-header', attribute: 'role=toolbar', usage: 'The Grouping header is a ToolBar (collection of buttons).' },
-        { selector: '.k-grouping-header', attribute: 'aria-label', usage: 'Clarifies the purpose of the header.' },
+        // ── Grid Grouping Pane ──
+        { selector: '.k-grouping-header', attribute: 'role=toolbar', usage: 'The Grouping pane is a ToolBar (collection of buttons).' },
+        { selector: '.k-grouping-header', attribute: 'aria-label', usage: 'Clarifies the purpose of the grouping pane.' },
         { selector: '.k-grouping-header', attribute: 'aria-controls=.k-grid-aria-root id (when present)', usage: 'Pointing to the id of the element with role=grid.' },
         { selector: '.k-grouping-header .k-chip-list', attribute: 'role=none', usage: 'The ChipList default listbox role is removed to keep the toolbar --> button roles hierarchy.' },
         { selector: '.k-grouping-header .k-chip', attribute: 'role=button', usage: 'If the element used is not <button>, then the role must be specified.' },
@@ -154,6 +154,7 @@ Grid.ariaSpec = {
         { selector: 'tr.k-selected', attribute: 'aria-selected=true', usage: 'Set on the currently selected row(s). Applies to both regular and pinned rows.' },
         { selector: 'td.k-selected', attribute: 'aria-selected=true', usage: 'Set on the currently selected cell(s). Only used when selection mode is set to cell.' },
         { selector: '.k-master-row .k-hierarchy-cell, .k-grouping-row>td', attribute: 'aria-expanded', usage: 'For cells holding grouping criteria values and for Master row cells in Detail template scenario.' },
+        { selector: '.k-group-cell', attribute: 'role=presentation', usage: 'Group offset cells (header and content) are non-interactive placeholders with no semantic role.' },
         { selector: '.k-drag-cell', attribute: 'aria-label', usage: 'Must be present in a Drag Row scenario on the cell containing the drag handle.' },
 
         // ── Locked Columns ──
@@ -198,10 +199,18 @@ Grid.ariaSpec = {
 
         // ── Sticky Group Header / Footer ──
         // When grouping with sticky headers is enabled, the grid renders duplicate
-        // tables inside .k-grid-sticky-container elements. These are purely visual
-        // and must be completely hidden from assistive technologies.
+        // group header/footer rows inside .k-grid-sticky-container elements.
+        // These are interactive (keyboard-navigable and clickable), so they must
+        // carry the same semantics as the real group header/footer rows.
         { selector: '.k-grid-sticky-container', attribute: 'role=none', usage: 'Sticky group container has no semantic role.' },
-        { selector: '.k-grid-sticky-container', attribute: 'aria-hidden=true', usage: 'Sticky group header/footer is a visual duplicate and must be hidden from assistive technologies.' },
+        { selector: '.k-grid-sticky-container .k-grid-table', attribute: 'role=none', usage: 'Negates the default semantic role of the sticky group <table> element.' },
+        { selector: '.k-grid-sticky-container tbody', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-sticky-container tr', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-sticky-container tr', attribute: 'aria-rowindex', usage: 'Matches the aria-rowindex of the real group header/footer row it mirrors.' },
+        { selector: '.k-grid-sticky-container td', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-sticky-container .k-grouping-row>td', attribute: 'aria-expanded', usage: 'Mirrors the expanded/collapsed state of the real group header row.' },
+        { selector: '.k-grid-sticky-container td', attribute: 'tabindex', usage: 'Receives tabindex 0 when focused, -1 otherwise, for keyboard navigation.' },
+        { selector: '.k-grid-sticky-container td', attribute: 'aria-colindex (when present)', usage: 'Col number. Typically 1 for the group header cell spanning all columns.' },
 
         // ── Pinned Rows ──
         // Structural table/tbody/tr/td rules are covered by the combined selectors
