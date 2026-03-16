@@ -12,7 +12,7 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
         <div class="k-grid-lockedcolumns k-grid-no-scrollbar k-grid" style="height: 300px;">
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-locked" style="width: 300px;">
                         <table class="k-grid-header-table k-table">
@@ -131,10 +131,10 @@
         </div>
         <div class="k-rtl">
             <div class="k-grid-no-scrollbar k-grid">
-                <div class="k-grid-aria-root">
+                <div class="k-grid-aria-root" role="grid">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap k-auto-scrollable">
-                            <table class="k-grid-header-table k-table">
+                            <table role="none" class="k-grid-header-table k-table">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -142,15 +142,15 @@
                                     <col>
                                 </colgroup>
                                 <thead class="k-table-thead">
-                                    <tr class="k-table-row">
-                                        <th colspan="1" rowspan="3" class="k-header k-table-th">
+                                    <tr role="row" class="k-table-row">
+                                        <th colspan="1" rowspan="3" role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">ID</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th colspan="3" rowspan="1" class="k-header k-table-th">
+                                        <th colspan="3" rowspan="1" role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Product Information</span>
@@ -158,15 +158,15 @@
                                             </span>
                                         </th>
                                     </tr>
-                                    <tr class="k-table-row">
-                                        <th colspan="1" rowspan="2" class="k-first k-header k-table-th">
+                                    <tr role="row" class="k-table-row">
+                                        <th colspan="1" rowspan="2" class="k-first k-header k-table-th" role="columnheader">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Product Name</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th colspan="2" rowspan="1" class="k-header k-table-th">
+                                        <th colspan="2" rowspan="1" role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Unit</span>
@@ -174,15 +174,15 @@
                                             </span>
                                         </th>
                                     </tr>
-                                    <tr class="k-table-row">
-                                        <th colspan="1" rowspan="1" class="k-first k-header k-table-th">
+                                    <tr role="row" class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-first k-header k-table-th" role="columnheader">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Units In Stock</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                        <th colspan="1" rowspan="1" role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Units Price</span>
@@ -196,7 +196,7 @@
                     </div>
                     <div class="k-grid-container">
                         <div class="k-auto-scrollable k-grid-content">
-                            <table class="k-grid-table k-table">
+                            <table role="none" class="k-grid-table k-table">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -204,35 +204,35 @@
                                     <col>
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td">1</td>
-                                        <td class="k-table-td">Chai</td>
-                                        <td class="k-table-td">39</td>
-                                        <td class="k-table-td">18</td>
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td">1</td>
+                                        <td role="gridcell" class="k-table-td">Chai</td>
+                                        <td role="gridcell" class="k-table-td">39</td>
+                                        <td role="gridcell" class="k-table-td">18</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row">
-                                        <td class="k-table-td">2</td>
-                                        <td class="k-table-td">Chang</td>
-                                        <td class="k-table-td">17</td>
-                                        <td class="k-table-td">19</td>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                        <td role="gridcell" class="k-table-td">2</td>
+                                        <td role="gridcell" class="k-table-td">Chang</td>
+                                        <td role="gridcell" class="k-table-td">17</td>
+                                        <td role="gridcell" class="k-table-td">19</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td">3</td>
-                                        <td class="k-table-td">Aniseed Syrup</td>
-                                        <td class="k-table-td">13</td>
-                                        <td class="k-table-td">10</td>
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td">3</td>
+                                        <td role="gridcell" class="k-table-td">Aniseed Syrup</td>
+                                        <td role="gridcell" class="k-table-td">13</td>
+                                        <td role="gridcell" class="k-table-td">10</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row">
-                                        <td class="k-table-td">4</td>
-                                        <td class="k-table-td">Chef Anton's Cajun Seasoning</td>
-                                        <td class="k-table-td">53</td>
-                                        <td class="k-table-td">22</td>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                        <td role="gridcell" class="k-table-td">4</td>
+                                        <td role="gridcell" class="k-table-td">Chef Anton's Cajun Seasoning</td>
+                                        <td role="gridcell" class="k-table-td">53</td>
+                                        <td role="gridcell" class="k-table-td">22</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td">5</td>
-                                        <td class="k-table-td">Chef Anton's Gumbo Mix</td>
-                                        <td class="k-table-td">0</td>
-                                        <td class="k-table-td">21.35</td>
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td">5</td>
+                                        <td role="gridcell" class="k-table-td">Chef Anton's Gumbo Mix</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
+                                        <td role="gridcell" class="k-table-td">21.35</td>
                                     </tr>
                                 </tbody>
                             </table>

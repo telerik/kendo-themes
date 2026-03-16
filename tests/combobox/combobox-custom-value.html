@@ -24,7 +24,7 @@
         <span>Combobox Custom Value</span>
         <div>
             <span class="k-combobox k-input k-focus">
-                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="combobox-cv-listbox" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                <input id="combobox-cv" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="combobox-cv-listbox" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -40,7 +40,7 @@
                     </span>
                 </button>
             </span>
-            <div class="k-combobox-popup-container k-animation-container k-animation-container-shown" role="region" aria-label="Combobox suggestions">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Combobox suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-combobox-popup k-popup">
                         <div class="k-list">
@@ -65,7 +65,7 @@
         </div>
         <div dir="rtl">
             <span class="k-combobox k-input k-focus">
-                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="combobox-cv-listbox" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                <input id="combobox-cv" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="combobox-cv-listbox" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -81,7 +81,7 @@
                     </span>
                 </button>
             </span>
-            <div class="k-combobox-popup-container k-animation-container k-animation-container-shown" role="region" aria-label="Combobox suggestions">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Combobox suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-combobox-popup k-popup">
                         <div class="k-list">
@@ -108,7 +108,7 @@
         <span>Custom Value and Modern Combobox Grouping RTL</span>
         <div>
             <span class="k-combobox k-input k-focus">
-                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="combobox-gcv-listbox" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                <input id="k-combobox-1" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-combobox-1-listbox" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -124,7 +124,7 @@
                     </span>
                 </button>
             </span>
-            <div class="k-combobox-popup-container k-animation-container k-animation-container-shown" role="region" aria-label="Combobox suggestions">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Combobox suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-combobox-popup k-popup">
                         <div class="k-list">
@@ -132,29 +132,32 @@
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox" id="combobox-gcv-listbox" aria-label="Options">
-                                <ul aria-labelledby="k-combobox-gcv-group-1" role="group" class="k-list-ul">
-                                    <li id="k-combobox-gcv-item-1" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                            <div class="k-list-content" role="listbox" id="k-combobox-1-listbox" aria-label="Options">
+                                <ul aria-labelledby="k-combobox-group-1" role="group" class="k-list-ul">
+                                    <li id="k-combobox-group-1" role="presentation" class="k-list-group-item">
+                                        <span class="k-list-item-text">Group 1</span>
+                                    </li>
+                                    <li id="k-combobox-item-1" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-2" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-2" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>
-                                <ul aria-labelledby="k-combobox-gcv-group-2" role="group" class="k-list-ul">
-                                    <li id="k-combobox-gcv-group-2" role="presentation" class="k-list-group-item">
+                                <ul aria-labelledby="k-combobox-group-2" role="group" class="k-list-ul">
+                                    <li id="k-combobox-group-2" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 2</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-4" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-4" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-5" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-5" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>
@@ -166,7 +169,7 @@
         </div>
         <div dir="rtl">
             <span class="k-combobox k-input k-focus">
-                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="combobox-gcv-listbox" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                <input id="k-combobox-2" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-combobox-2-listbox" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -182,7 +185,7 @@
                     </span>
                 </button>
             </span>
-            <div class="k-combobox-popup-container k-animation-container k-animation-container-shown" role="region" aria-label="Combobox suggestions">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Combobox suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-combobox-popup k-popup">
                         <div class="k-list">
@@ -190,29 +193,32 @@
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox" id="combobox-gcv-listbox" aria-label="Options">
-                                <ul aria-labelledby="k-combobox-gcv-group-3" role="group" class="k-list-ul">
-                                    <li id="k-combobox-gcv-item-7" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                            <div class="k-list-content" role="listbox" id="k-combobox-2-listbox" aria-label="Options">
+                                <ul aria-labelledby="k-combobox-group-3" role="group" class="k-list-ul">
+                                    <li id="k-combobox-group-3" role="presentation" class="k-list-group-item">
+                                        <span class="k-list-item-text">Group 1</span>
+                                    </li>
+                                    <li id="k-combobox-item-7" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-8" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-8" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-9" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-9" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>
-                                <ul aria-labelledby="k-combobox-gcv-group-4" role="group" class="k-list-ul">
-                                    <li id="k-combobox-gcv-group-4" role="presentation" class="k-list-group-item">
+                                <ul aria-labelledby="k-combobox-group-4" role="group" class="k-list-ul">
+                                    <li id="k-combobox-group-4" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 2</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-10" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-10" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-11" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-11" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
-                                    <li id="k-combobox-gcv-item-12" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-combobox-item-12" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>

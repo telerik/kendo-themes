@@ -13,10 +13,10 @@
     <div id="test-area" class="k-d-grid">
         <h3>Base</h3>
         <div class="telerik-blazor k-grid">
-            <div class="k-grouping-header">
+            <div role="toolbar" aria-label="Grouping" aria-controls="k-grid-1" class="k-grouping-header">
                 <div class="k-grouping-drop-container">Drag a column header and drop it here to group by that column</div>
             </div>
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid" id="k-grid-1" aria-colcount="4" aria-rowcount="8">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">
@@ -146,7 +146,7 @@
                 </div>
                 <div class="k-grouping-drop-container"></div>
             </div>
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header k-grid-draggable-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">
@@ -319,7 +319,7 @@
                 </div>
                 <div class="k-grouping-drop-container"></div>
             </div>
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header k-grid-draggable-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">

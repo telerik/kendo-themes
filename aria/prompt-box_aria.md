@@ -45,6 +45,10 @@ The primary action button for submitting the prompt or stopping generation.
 
 The Speech-to-Text Button follows the [Speech-to-Text Button accessibility specification](speech-to-text-button_aria.md).
 
+### File Attachments
+
+When file attachments are present, the file attachment section follows the [FileBox accessibility specification](file-box_aria.md).
+
 ### References
 
 - [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/patterns/)

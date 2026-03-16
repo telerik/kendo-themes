@@ -14,10 +14,10 @@
         <span class="col-2">Base State (RTL)</span>
         <section class="col-2 k-rtl">
             <div class="k-grid-no-scrollbar k-grid">
-                <div class="k-grid-aria-root">
+                <div class="k-grid-aria-root" role="grid">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table">
+                            <table role="none" class="k-grid-header-table k-table">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -25,29 +25,29 @@
                                     <col>
                                 </colgroup>
                                 <thead class="k-table-thead">
-                                    <tr class="k-table-row">
-                                        <th class="k-header k-table-th">
+                                    <tr role="row" class="k-table-row">
+                                        <th role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Product Name</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-header k-table-th">
+                                        <th role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Units In Stock</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-header k-table-th">
+                                        <th role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Discontinued</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-header k-table-th">
+                                        <th role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Units in Order</span>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="k-grid-container">
                         <div class="k-grid-content">
-                            <table class="k-grid-table k-table">
+                            <table role="none" class="k-grid-table k-table">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -69,57 +69,57 @@
                                     <col>
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td">Chai</td>
-                                        <td class="k-table-td">39</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-table-td">0</td>
+                                    <tr class="k-master-row k-selected k-table-row" role="row" aria-selected="true">
+                                        <td role="gridcell" aria-selected="true" class="k-table-td k-selected">Chai</td>
+                                        <td role="gridcell" aria-selected="true" class="k-table-td k-selected">39</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row">
-                                        <td class="k-table-td">Chang</td>
-                                        <td class="k-table-td">17</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-table-td">40</td>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                        <td role="gridcell" class="k-table-td">Chang</td>
+                                        <td role="gridcell" class="k-table-td">17</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td role="gridcell" class="k-table-td">40</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td">Aniseed Syrup</td>
-                                        <td class="k-table-td">13</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-table-td">70</td>
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td">Aniseed Syrup</td>
+                                        <td role="gridcell" class="k-table-td">13</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td role="gridcell" class="k-table-td">70</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row">
-                                        <td class="k-table-td">Chef Anton's Cajun Seasoning</td>
-                                        <td class="k-table-td">53</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-table-td">0</td>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                        <td role="gridcell" class="k-table-td">Chef Anton's Cajun Seasoning</td>
+                                        <td role="gridcell" class="k-table-td">53</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td">Chef Anton's Gumbo Mix</td>
-                                        <td class="k-table-td">0</td>
-                                        <td class="k-table-td">true</td>
-                                        <td class="k-table-td">0</td>
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td">Chef Anton's Gumbo Mix</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
+                                        <td role="gridcell" class="k-table-td">true</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-                <div class="k-selection-aggregates k-grid-selection-aggregates">
+                <div class="k-selection-aggregates k-grid-selection-aggregates" aria-live="polite">
                     <div class="k-selection-aggregates-item">
                         <span class="k-selection-aggregates-item-text">Count:</span>
                         <span class="k-selection-aggregates-item-value">0</span>
                     </div>
                 </div>
-                <div dir="rtl" class="k-grid-pager k-pager k-pager-responsive">
+                <div dir="rtl" class="k-grid-pager k-pager k-pager-responsive" role="application" aria-roledescription="pager" aria-keyshortcuts="Enter ArrowRight ArrowLeft" aria-label="Page 1 of 6">
                     <div class="k-pager-numbers-wrap">
-                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" disabled="">
+                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" title="Go to the first page" aria-label="Go to the first page" aria-disabled="true">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" disabled="">
+                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" aria-disabled="true">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 256 160 384V128z"></path>
@@ -127,33 +127,33 @@
                             </span>
                         </button>
                         <div class="k-pager-numbers">
-                            <button class="k-button k-button-flat k-button-primary k-selected">
+                            <button class="k-button k-button-flat k-button-primary k-selected" aria-label="Page 1" aria-current="page">
                                 <span class="k-button-text">1</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 2">
                                 <span class="k-button-text">2</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 3">
                                 <span class="k-button-text">3</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 4">
                                 <span class="k-button-text">4</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 5">
                                 <span class="k-button-text">5</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 6">
                                 <span class="k-button-text">6</span>
                             </button>
                         </div>
-                        <button class="k-pager-nav k-button k-button-flat k-icon-button">
+                        <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m160 256 192-128v256z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button">
+                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button" title="Go to the last page" aria-label="Go to the last page">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
@@ -162,11 +162,11 @@
                         </button>
                     </div>
                     <span class="k-pager-sizes">
-                        <span class="k-dropdownlist k-picker">
+                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Items per page" tabindex="0">
                             <span class="k-input-inner">
                                 <span class="k-input-value-text">5</span>
                             </span>
-                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
@@ -176,7 +176,7 @@
                         </span>
                         <span>items per page</span>
                     </span>
-                    <button class="k-pager-refresh k-button k-button-flat k-icon-button">
+                    <button class="k-pager-refresh k-button k-button-flat k-icon-button" title="Refresh" aria-label="Refresh">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-cw" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112"></path>
@@ -190,10 +190,10 @@
         <span class="col-2">Aggregated (RTL)</span>
         <section class="col-2 k-rtl">
             <div class="k-grid-no-scrollbar k-grid">
-                <div class="k-grid-aria-root">
+                <div class="k-grid-aria-root" role="grid">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table">
+                            <table role="none" class="k-grid-header-table k-table">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -201,29 +201,29 @@
                                     <col>
                                 </colgroup>
                                 <thead class="k-table-thead">
-                                    <tr class="k-table-row">
-                                        <th class="k-header k-table-th">
+                                    <tr role="row" class="k-table-row">
+                                        <th role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Product Name</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-header k-table-th">
+                                        <th role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Units In Stock</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-header k-table-th">
+                                        <th role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Discontinued</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-header k-table-th">
+                                        <th role="columnheader" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Units in Order</span>
@@ -237,7 +237,7 @@
                     </div>
                     <div class="k-grid-container">
                         <div class="k-grid-content">
-                            <table class="k-grid-table k-table">
+                            <table role="none" class="k-grid-table k-table">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -245,42 +245,42 @@
                                     <col>
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td k-selected">Chai</td>
-                                        <td class="k-table-td k-selected">39</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-table-td">0</td>
+                                    <tr class="k-master-row k-selected k-table-row" role="row" aria-selected="true">
+                                        <td role="gridcell" aria-selected="true" class="k-table-td k-selected">Chai</td>
+                                        <td role="gridcell" aria-selected="true" class="k-table-td k-selected">39</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row">
-                                        <td class="k-table-td k-selected">Chang</td>
-                                        <td class="k-table-td k-selected">17</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-table-td">40</td>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                        <td role="gridcell" aria-selected="true" class="k-table-td k-selected">Chang</td>
+                                        <td role="gridcell" aria-selected="true" class="k-table-td k-selected">17</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td role="gridcell" class="k-table-td">40</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td k-selected">Aniseed Syrup</td>
-                                        <td class="k-table-td k-selected">13</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-table-td">70</td>
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td k-selected">Aniseed Syrup</td>
+                                        <td role="gridcell" class="k-table-td k-selected">13</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td role="gridcell" class="k-table-td">70</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row">
-                                        <td class="k-table-td k-selected">Chef Anton's Cajun Seasoning</td>
-                                        <td class="k-table-td k-selected">53</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-table-td">0</td>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                        <td role="gridcell" class="k-table-td k-selected">Chef Anton's Cajun Seasoning</td>
+                                        <td role="gridcell" class="k-table-td k-selected">53</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td">Chef Anton's Gumbo Mix</td>
-                                        <td class="k-table-td">0</td>
-                                        <td class="k-table-td">true</td>
-                                        <td class="k-table-td">0</td>
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td">Chef Anton's Gumbo Mix</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
+                                        <td role="gridcell" class="k-table-td">true</td>
+                                        <td role="gridcell" class="k-table-td">0</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-                <div class="k-selection-aggregates k-grid-selection-aggregates">
+                <div class="k-selection-aggregates k-grid-selection-aggregates" aria-live="polite">
                     <div class="k-selection-aggregates-item">
                         <span class="k-selection-aggregates-item-text">Sum:</span>
                         <span class="k-selection-aggregates-item-value">122.00</span>
@@ -302,16 +302,16 @@
                         <span class="k-selection-aggregates-item-value">8</span>
                     </div>
                 </div>
-                <div dir="rtl" class="k-grid-pager k-pager k-pager-responsive">
+                <div dir="rtl" class="k-grid-pager k-pager k-pager-responsive" role="application" aria-roledescription="pager" aria-keyshortcuts="Enter ArrowRight ArrowLeft" aria-label="Page 1 of 6">
                     <div class="k-pager-numbers-wrap">
-                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" disabled="">
+                        <button class="k-pager-nav k-pager-first k-button k-button-flat k-disabled k-icon-button" title="Go to the first page" aria-label="Go to the first page" aria-disabled="true">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" disabled="">
+                        <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" aria-disabled="true">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 256 160 384V128z"></path>
@@ -319,33 +319,33 @@
                             </span>
                         </button>
                         <div class="k-pager-numbers">
-                            <button class="k-button k-button-flat k-button-primary k-selected">
+                            <button class="k-button k-button-flat k-button-primary k-selected" aria-label="Page 1" aria-current="page">
                                 <span class="k-button-text">1</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 2">
                                 <span class="k-button-text">2</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 3">
                                 <span class="k-button-text">3</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 4">
                                 <span class="k-button-text">4</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 5">
                                 <span class="k-button-text">5</span>
                             </button>
-                            <button class="k-button k-button-flat k-button-primary">
+                            <button class="k-button k-button-flat k-button-primary" aria-label="Page 6">
                                 <span class="k-button-text">6</span>
                             </button>
                         </div>
-                        <button class="k-pager-nav k-button k-button-flat k-icon-button">
+                        <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="m160 256 192-128v256z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button">
+                        <button class="k-pager-nav k-pager-last k-button k-button-flat k-icon-button" title="Go to the last page" aria-label="Go to the last page">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
@@ -354,11 +354,11 @@
                         </button>
                     </div>
                     <span class="k-pager-sizes">
-                        <span class="k-dropdownlist k-picker">
+                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Items per page" tabindex="0">
                             <span class="k-input-inner">
                                 <span class="k-input-value-text">5</span>
                             </span>
-                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 352 128 160h256z"></path>
@@ -368,7 +368,7 @@
                         </span>
                         <span>items per page</span>
                     </span>
-                    <button class="k-pager-refresh k-button k-button-flat k-icon-button">
+                    <button class="k-pager-refresh k-button k-button-flat k-icon-button" title="Refresh" aria-label="Refresh">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-cw" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112"></path>

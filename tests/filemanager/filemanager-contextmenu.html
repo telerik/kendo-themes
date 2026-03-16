@@ -32,14 +32,14 @@
                         <span class="k-button-text">Upload</span>
                     </button>
                     <div role="group" class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button k-icon-button">
+                        <button class="k-group-start k-button k-icon-button" aria-label="Sort ascending">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-group-end k-button k-icon-button">
+                        <button class="k-group-end k-button k-icon-button" aria-label="Sort descending">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
@@ -60,14 +60,14 @@
                         </button>
                     </div>
                     <div role="group" class="k-toolbar-button-group  k-button-group">
-                        <button class="k-group-start k-button k-icon-button">
+                        <button class="k-group-start k-button k-icon-button" aria-label="Grid view">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-grid" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M32 32h128v128H32zm160 448h128V352H192zm-160 0h128V352H32zm0-160h128V192H32zm160 0h128V192H192zM352 32v128h128V32zm0 288h128V192H352zM192 160h128V32H192zm160 320h128V352H352z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-group-end k-button k-selected k-icon-button">
+                        <button class="k-group-end k-button k-selected k-icon-button" aria-label="List view">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-grid-layout" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M32 32h96v96H32zm128 0v96h320V32zM32 288h96v-96H32zm128 0h320v-96H160zM32 448h96v-96H32zm128 0h320v-96H160z"></path>
@@ -78,7 +78,7 @@
                     <div class="k-spacer"></div>
                     <div class="k-filemanager-details-toggle">
                         <label>View Details</label>
-                        <span class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                        <span aria-label="View Details" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
                             <span class="k-switch-track"></span>
                             <span class="k-switch-thumb-wrap">
                                 <span class="k-switch-thumb"></span>
@@ -99,8 +99,8 @@
                 <div class="k-filemanager-splitter k-splitter k-splitter-horizontal k-splitter-flex">
                     <div class="k-filemanager-navigation k-pane k-pane-static k-scrollable" role="group" style="flex-basis: 25%;">
                         <div class="k-filemanager-treeview k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Folder</span>
@@ -118,13 +118,13 @@
                                 </svg>
                             </span>
                         </div>
-                        <div class="k-resize-handle"></div>
+                        <div class="k-resize-handle" aria-hidden="true"></div>
                     </div>
                     <div class="k-filemanager-content k-pane k-scrollable" role="group">
                         <nav class="k-filemanager-breadcrumb k-breadcrumb" aria-label="Breadcrumb">
                             <ol class="k-breadcrumb-container">
                                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
-                                    <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link">
+                                    <a href="#" aria-label="Home" class="k-breadcrumb-root-link k-breadcrumb-icon-link">
                                         <span class="k-icon k-svg-icon k-svg-i-home" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M480 256c0 17.7-14.3 32-32 32-9.1 0-17.4-3.8-23.2-10l-8.8-8.7V416c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32v-96h-64v96c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32V268.6l-8.3 8.9C81.8 284 73.4 288 64 288c-17.7 0-32-14.3-32-32 0-8.5 3.3-16.1 8.6-21.9l.2-.2 1-1 191-191.3 1-1c5.8-5.5 13.6-8.9 22.2-8.9 9.1 0 17.3 3.8 23.1 9.9L470.3 233l.7.7.3.3c5.4 5.8 8.7 13.5 8.7 22"></path>
@@ -134,9 +134,9 @@
                                 </li>
                             </ol>
                         </nav>
-                        <div class="k-filemanager-listview k-selectable k-listview">
-                            <div class="k-listview-content k-d-flex k-flex-row k-flex-wrap">
-                                <div class="k-listview-item">
+                        <div class="k-filemanager-listview k-listview k-selectable">
+                            <div class="k-listview-content k-d-flex k-flex-row k-flex-wrap" role="listbox" aria-label="Files">
+                                <div class="k-listview-item" role="option" aria-setsize="2" aria-posinset="1" tabindex="0">
                                     <span class="k-file-preview">
                                         <span class="k-file-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-folder" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -146,7 +146,7 @@
                                     </span>
                                     <span class="k-file-name">Folder</span>
                                 </div>
-                                <div class="k-listview-item">
+                                <div class="k-listview-item" role="option" aria-setsize="2" aria-posinset="2" tabindex="-1">
                                     <span class="k-file-preview">
                                         <span class="k-file-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-file-image" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

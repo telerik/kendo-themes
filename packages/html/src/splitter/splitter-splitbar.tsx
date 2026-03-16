@@ -68,7 +68,7 @@ export const SplitterSplitbar = (
                     </div>
                 </>
             }
-            <div className="k-resize-handle"></div>
+            <div className="k-resize-handle" aria-hidden="true"></div>
             {collapseNext &&
                 <>
                     <div className="k-collapse-next">

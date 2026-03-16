@@ -37,7 +37,7 @@ export const FileBoxWrapper = (
             )}
         >
             {layout === "horizontal" ? (
-                <div className="k-files-scroll">
+                <div className="k-files-scroll" role="presentation">
                     {props.children}
                 </div>
             ) : (

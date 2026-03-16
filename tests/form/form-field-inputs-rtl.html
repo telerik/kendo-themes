@@ -166,22 +166,22 @@
                                 </span>
                             </button>
                             <div class="k-slider-track-wrap">
-                                <ul class="k-reset k-slider-items">
-                                    <li class="k-first k-tick k-tick-large">
+                                <ul class="k-reset k-slider-items" aria-hidden="true">
+                                    <li class="k-first k-tick k-tick-large" role="presentation" title="0">
                                         <span class="k-label">0</span>
                                     </li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick k-tick-large">
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="5" class="k-tick k-tick-large">
                                         <span class="k-label">5</span>
                                     </li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-last k-tick k-tick-large">
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li class="k-last k-tick k-tick-large" role="presentation" title="10">
                                         <span class="k-label">10</span>
                                     </li>
                                 </ul>
@@ -226,10 +226,10 @@
                         <div class="k-upload k-upload-async">
                             <div class="k-upload-dropzone k-dropzone">
                                 <div class="k-upload-button-wrap">
-                                    <button class="k-upload-button k-button">
+                                    <button class="k-upload-button k-button" aria-controls="upload-files-list">
                                         <span class="k-button-text">Select files...</span>
                                     </button>
-                                    <input id="upload-input" class="k-hidden">
+                                    <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                                 </div>
                                 <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
                                 <span class="k-upload-status">
@@ -240,8 +240,8 @@
                                     </span>Done
                                 </span>
                             </div>
-                            <ul class="k-upload-files">
-                                <li class="k-file k-file-success">
+                            <ul class="k-upload-files" role="list" id="upload-files-list">
+                                <li class="k-file k-file-success" role="listitem" tabindex="0">
                                     <div class="k-file-single">
                                         <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
                                             <span class="k-progress-status-wrap k-progress-start"></span>
@@ -258,10 +258,10 @@
                                         </span>
                                         <div class="k-file-info">
                                             <span class="k-file-name">test long long long long long long long long long long long long long.pdf</span>
-                                            <span class="k-file-validation-message">File successfully uploaded.</span>
+                                            <span class="k-file-validation-message" aria-live="polite">File successfully uploaded.</span>
                                         </div>
                                         <div class="k-upload-actions">
-                                            <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                            <button class="k-upload-action k-button k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -419,22 +419,22 @@
                                 </span>
                             </button>
                             <div class="k-slider-track-wrap">
-                                <ul class="k-reset k-slider-items">
-                                    <li class="k-first k-tick k-tick-large">
+                                <ul class="k-reset k-slider-items" aria-hidden="true">
+                                    <li class="k-first k-tick k-tick-large" role="presentation" title="0">
                                         <span class="k-label">0</span>
                                     </li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick k-tick-large">
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="5" class="k-tick k-tick-large">
                                         <span class="k-label">5</span>
                                     </li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-tick"></li>
-                                    <li class="k-last k-tick k-tick-large">
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li role="presentation" title="Tick" class="k-tick"></li>
+                                    <li class="k-last k-tick k-tick-large" role="presentation" title="10">
                                         <span class="k-label">10</span>
                                     </li>
                                 </ul>
@@ -481,10 +481,10 @@
                         <div class="k-upload k-upload-async">
                             <div class="k-upload-dropzone k-dropzone">
                                 <div class="k-upload-button-wrap">
-                                    <button class="k-upload-button k-button">
+                                    <button class="k-upload-button k-button" aria-controls="upload-files-list">
                                         <span class="k-button-text">Select files...</span>
                                     </button>
-                                    <input id="upload-input" class="k-hidden">
+                                    <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                                 </div>
                                 <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
                                 <span class="k-upload-status">
@@ -495,8 +495,8 @@
                                     </span>Done
                                 </span>
                             </div>
-                            <ul class="k-upload-files">
-                                <li class="k-file k-file-success">
+                            <ul class="k-upload-files" role="list" id="upload-files-list">
+                                <li class="k-file k-file-success" role="listitem" tabindex="0">
                                     <div class="k-file-single">
                                         <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
                                             <span class="k-progress-status-wrap k-progress-start"></span>
@@ -513,10 +513,10 @@
                                         </span>
                                         <div class="k-file-info">
                                             <span class="k-file-name">test long long long long long long long long long long long long long.pdf</span>
-                                            <span class="k-file-validation-message">File successfully uploaded.</span>
+                                            <span class="k-file-validation-message" aria-live="polite">File successfully uploaded.</span>
                                         </div>
                                         <div class="k-upload-actions">
-                                            <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                            <button class="k-upload-action k-button k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>

@@ -11,9 +11,9 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area">
-        <div class="k-gantt">
-            <div class="k-gantt-header k-gantt-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
-                <button class="k-toolbar-button k-gantt-toggle k-button k-icon-button">
+        <div class="k-gantt" role="application" aria-roledescription="Gantt Chart">
+            <div aria-label="Toolbar" class="k-gantt-header k-gantt-toolbar k-toolbar" role="toolbar">
+                <button class="k-toolbar-button k-gantt-toggle k-button k-icon-button" aria-label="Toggle TreeList">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-layout-1-by-4" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M32 0h192v480H32zm224 0v96h192V0zm0 224h192v-96H256zm0 128h192v-96H256zm0 128h192v-96H256z"></path>
@@ -30,7 +30,7 @@
                 </button>
                 <span class="k-spacer"></span>
                 <div class="k-gantt-views-wrapper">
-                    <select class="k-picker k-dropdown-list k-dropdown k-views-dropdown">
+                    <select class="k-picker k-dropdown-list k-dropdown k-views-dropdown" aria-label="Select view">
                         <option value="day">Day</option>
                         <option value="week">Week</option>
                         <option value="month">Month</option>
@@ -52,7 +52,7 @@
                 <div class="k-gantt-splitter k-splitter k-splitter-horizontal k-splitter-flex">
                     <div class="k-gantt-treelist k-pane k-pane-static" role="group" style="flex-basis: 30%;">
                         <div class="k-treelist k-grid">
-                            <div class="k-grid-aria-root">
+                            <div class="k-grid-aria-root" role="treegrid">
                                 <div class="k-grid-header">
                                     <div class="k-grid-header-wrap">
                                         <table class="k-grid-header-table k-table" style="min-width: 250px;">
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
-                        <div class="k-resize-handle"></div>
+                        <div class="k-resize-handle" aria-hidden="true"></div>
                     </div>
                     <div class="k-gantt-timeline-pane k-pane" role="group">
                         <div class="k-gantt-timeline k-grid">
@@ -174,9 +174,9 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="k-grid-content" style="height: 180px;">
+                            <div role="tree" class="k-grid-content" style="height: 180px;">
                                 <div class="k-gantt-tables">
-                                    <table class="k-grid-table k-gantt-rows k-table" style="width: 675px;">
+                                    <table class="k-grid-table k-gantt-rows k-table" role="presentation" style="width: 675px;">
                                         <colgroup>
                                             <col>
                                         </colgroup>
@@ -198,7 +198,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="k-gantt-columns k-table" style="width: 675px; height: 828px;">
+                                    <table class="k-gantt-columns k-table" role="presentation" style="width: 675px; height: 828px;">
                                         <colgroup>
                                             <col>
                                             <col>
@@ -220,7 +220,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="k-gantt-tasks k-table" style="width: 675px;">
+                                    <table class="k-gantt-tasks k-table" role="presentation" style="width: 675px;">
                                         <colgroup>
                                             <col>
                                         </colgroup>
@@ -228,46 +228,46 @@
                                             <tr class="k-table-row">
                                                 <td class="k-table-td">
                                                     <div class="k-task-wrap k-summary-wrap" style="left: 113px;">
-                                                        <div class="k-task k-task-summary" style="width: 4000px;">
+                                                        <div aria-label="Software validation, research and implementation" class="k-task k-task-summary" role="treeitem" aria-level="1" style="width: 4000px;">
                                                             <div class="k-task-summary-progress" style="width: 1720px;">
                                                                 <div class="k-task-summary-complete" style="width: 4000px;"></div>
                                                             </div>
                                                         </div>
-                                                        <div class="k-task-dot k-task-start"></div>
-                                                        <div class="k-task-dot k-task-end" style="right: 0px;"></div>
+                                                        <div class="k-task-dot k-task-start" aria-hidden="true"></div>
+                                                        <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="k-table-row">
                                                 <td class="k-table-td">
                                                     <div class="k-task-wrap k-milestone-wrap" style="left: 113px;">
-                                                        <div class="k-task k-task-milestone"></div>
-                                                        <div class="k-task-dot k-task-start"></div>
-                                                        <div class="k-task-dot k-task-end" style="right: 0px;"></div>
+                                                        <div aria-label="Project Kickoff" class="k-task k-task-milestone" role="treeitem" aria-level="2"></div>
+                                                        <div class="k-task-dot k-task-start" aria-hidden="true"></div>
+                                                        <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="k-table-row">
                                                 <td class="k-table-td">
                                                     <div class="k-task-wrap k-summary-wrap" style="left: 113px;">
-                                                        <div class="k-task k-task-summary" style="width: 500px;">
+                                                        <div aria-label="Research" class="k-task k-task-summary" role="treeitem" aria-level="2" style="width: 500px;">
                                                             <div class="k-task-summary-progress" style="width: 215px;">
                                                                 <div class="k-task-summary-complete" style="width: 500px;"></div>
                                                             </div>
                                                         </div>
-                                                        <div class="k-task-dot k-task-start"></div>
-                                                        <div class="k-task-dot k-task-end" style="right: 0px;"></div>
+                                                        <div class="k-task-dot k-task-start" aria-hidden="true"></div>
+                                                        <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="k-table-row">
                                                 <td class="k-table-td">
                                                     <div class="k-task-wrap" style="left: 113px;">
-                                                        <div class="k-task k-task-single" style="width: 200px;">
-                                                            <div class="k-task-complete" style="width: 50px;"></div>
+                                                        <div aria-label="Validation with Customers" class="k-task k-task-single" role="treeitem" aria-level="3" style="width: 200px;">
+                                                            <div class="k-task-complete" aria-hidden="true" style="width: 50px;"></div>
                                                             <div class="k-task-content">
                                                                 <div class="k-task-template">Validation with Customers</div>
-                                                                <span class="k-task-actions">
+                                                                <span class="k-task-actions" aria-hidden="true">
                                                                     <a class="k-link k-task-delete">
                                                                         <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -276,24 +276,24 @@
                                                                         </span>
                                                                     </a>
                                                                 </span>
-                                                                <span class="k-resize-handle k-resize-w"></span>
-                                                                <span class="k-resize-handle k-resize-e"></span>
+                                                                <span class="k-resize-handle k-resize-w" aria-hidden="true"></span>
+                                                                <span class="k-resize-handle k-resize-e" aria-hidden="true"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="k-task-dot k-task-start"></div>
-                                                        <div class="k-task-dot k-task-end" style="right: 0px;"></div>
-                                                        <div class="k-task-draghandle" style="left: 50px;"></div>
+                                                        <div class="k-task-dot k-task-start" aria-hidden="true"></div>
+                                                        <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
+                                                        <div class="k-task-draghandle" aria-hidden="true" style="left: 50px;"></div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="k-table-row">
                                                 <td class="k-table-td">
                                                     <div class="k-task-wrap" style="left: 113px;">
-                                                        <div class="k-task k-task-single" style="width: 200px;">
-                                                            <div class="k-task-complete" style="width: 164px;"></div>
+                                                        <div aria-label="Market Research" class="k-task k-task-single" role="treeitem" aria-level="3" style="width: 200px;">
+                                                            <div class="k-task-complete" aria-hidden="true" style="width: 164px;"></div>
                                                             <div class="k-task-content">
                                                                 <div class="k-task-template">Market Research</div>
-                                                                <span class="k-task-actions">
+                                                                <span class="k-task-actions" aria-hidden="true">
                                                                     <a class="k-link k-task-delete">
                                                                         <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -302,46 +302,46 @@
                                                                         </span>
                                                                     </a>
                                                                 </span>
-                                                                <span class="k-resize-handle k-resize-w"></span>
-                                                                <span class="k-resize-handle k-resize-e"></span>
+                                                                <span class="k-resize-handle k-resize-w" aria-hidden="true"></span>
+                                                                <span class="k-resize-handle k-resize-e" aria-hidden="true"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="k-task-dot k-task-start"></div>
-                                                        <div class="k-task-dot k-task-end" style="right: 0px;"></div>
-                                                        <div class="k-task-draghandle" style="left: 164px;"></div>
+                                                        <div class="k-task-dot k-task-start" aria-hidden="true"></div>
+                                                        <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
+                                                        <div class="k-task-draghandle" aria-hidden="true" style="left: 164px;"></div>
                                                     </div>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="k-gantt-dependencies" style="width: 675px;">
-                                    <div class="k-gantt-line k-gantt-line-h" style="left: 124.5px; top: 53px; width: 10px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-v" style="left: 132.5px; top: 53px; height: 18px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-h" style="left: 103px; top: 71px; width: 31.5px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-v" style="left: 103px; top: 71px; height: 54px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-h" style="left: 103px; top: 125px; width: 9px;">
+                                <div class="k-gantt-dependencies" aria-hidden="true" style="width: 675px;">
+                                    <div class="k-gantt-line k-gantt-line-h" aria-hidden="true" style="left: 124.5px; top: 53px; width: 10px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-v" aria-hidden="true" style="left: 132.5px; top: 53px; height: 18px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-h" aria-hidden="true" style="left: 103px; top: 71px; width: 31.5px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-v" aria-hidden="true" style="left: 103px; top: 71px; height: 54px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-h" aria-hidden="true" style="left: 103px; top: 125px; width: 9px;">
                                         <span class="k-arrow-e"></span>
                                     </div>
-                                    <div class="k-gantt-line k-gantt-line-h" style="left: 124.5px; top: 53px; width: 10px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-v" style="left: 132.5px; top: 53px; height: 18px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-h" style="left: 103px; top: 71px; width: 31.5px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-v" style="left: 103px; top: 71px; height: 90px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-h" style="left: 103px; top: 161px; width: 9px;">
+                                    <div class="k-gantt-line k-gantt-line-h" aria-hidden="true" style="left: 124.5px; top: 53px; width: 10px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-v" aria-hidden="true" style="left: 132.5px; top: 53px; height: 18px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-h" aria-hidden="true" style="left: 103px; top: 71px; width: 31.5px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-v" aria-hidden="true" style="left: 103px; top: 71px; height: 90px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-h" aria-hidden="true" style="left: 103px; top: 161px; width: 9px;">
                                         <span class="k-arrow-e"></span>
                                     </div>
-                                    <div class="k-gantt-line k-gantt-line-h" style="left: 313px; top: 125px; width: 10px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-v" style="left: 321px; top: 125px; height: 18px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-h" style="left: 303px; top: 143px; width: 20px;"></div>
-                                    <div class="k-gantt-line k-gantt-line-v" style="left: 303px; top: 143px; height: 18px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-h" aria-hidden="true" style="left: 313px; top: 125px; width: 10px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-v" aria-hidden="true" style="left: 321px; top: 125px; height: 18px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-h" aria-hidden="true" style="left: 303px; top: 143px; width: 20px;"></div>
+                                    <div class="k-gantt-line k-gantt-line-v" aria-hidden="true" style="left: 303px; top: 143px; height: 18px;"></div>
                                 </div>
-                                <div class="k-current-time" style="left: 243px; top: 0px; width: 1px; height: 828px;"></div>
+                                <div class="k-current-time" aria-hidden="true" style="left: 243px; top: 0px; width: 1px; height: 828px;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="k-gantt-footer k-gantt-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
+            <div aria-label="Toolbar" class="k-gantt-footer k-gantt-toolbar k-toolbar" role="toolbar">
                 <button class="k-toolbar-button k-gantt-create k-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

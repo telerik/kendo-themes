@@ -100,7 +100,7 @@ export const PanelBarItem = (
 
             {expanded && children }
             {!expanded && children && React.Children.map(children, child =>
-                React.isValidElement(child) ? React.cloneElement(child, { ariaHidden: true, style: { display: 'none' } } as any) : child
+                React.isValidElement(child) ? React.cloneElement(child, { 'aria-hidden': 'true', style: { display: 'none' } } as any) : child
             )}
         </li>
     );

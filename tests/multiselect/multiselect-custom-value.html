@@ -30,17 +30,17 @@
         <div>
             <span class="k-multiselect k-input k-focus">
                 <div class="k-input-values">
-                    <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                    <div id="k-ms-1-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-1-listbox" aria-autocomplete="list" aria-label="Select options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 </div>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-multiselect-popup k-popup">
                         <div class="k-list">
                             <div class="k-list-custom-value">Use "Custom value"</div>
                             <div class="k-list-content">
-                                <ul role="listbox" class="k-list-ul">
+                                <ul aria-label="Options" role="listbox" class="k-list-ul">
                                     <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List item</span>
                                     </li>
@@ -60,17 +60,17 @@
         <div dir="rtl">
             <span class="k-multiselect k-input k-focus">
                 <div class="k-input-values">
-                    <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                    <div id="k-ms-2-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-2-listbox" aria-autocomplete="list" aria-label="Select options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 </div>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-multiselect-popup k-popup">
                         <div class="k-list">
                             <div class="k-list-custom-value">Use "Custom value"</div>
                             <div class="k-list-content">
-                                <ul role="listbox" class="k-list-ul">
+                                <ul aria-label="Options" role="listbox" class="k-list-ul">
                                     <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List item</span>
                                     </li>
@@ -92,11 +92,11 @@
         <div>
             <span class="k-multiselect k-input k-focus">
                 <div class="k-input-values">
-                    <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                    <div id="k-ms-3-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-3-listbox" aria-autocomplete="list" aria-label="Select options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 </div>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-multiselect-popup k-popup">
                         <div class="k-list">
@@ -104,23 +104,26 @@
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox">
-                                <ul class="k-list-ul">
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                            <div class="k-list-content" role="listbox" id="k-ms-listbox-1" aria-label="Options">
+                                <ul aria-labelledby="k-ms-grpcv-group-1" role="group" class="k-list-ul">
+                                    <li id="k-ms-grpcv-group-1" role="presentation" class="k-list-group-item">
+                                        <span class="k-list-item-text">Group 1</span>
+                                    </li>
+                                    <li id="k-ms-grpcv-item-1" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpcv-item-2" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                 </ul>
-                                <ul class="k-list-ul">
-                                    <li role="presentation" class="k-list-group-item">
+                                <ul aria-labelledby="k-ms-grpcv-group-2" role="group" class="k-list-ul">
+                                    <li id="k-ms-grpcv-group-2" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpcv-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpcv-item-4" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                 </ul>
@@ -133,11 +136,11 @@
         <div dir="rtl">
             <span class="k-multiselect k-input k-focus">
                 <div class="k-input-values">
-                    <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                    <div id="k-ms-4-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-4-listbox" aria-autocomplete="list" aria-label="Select options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 </div>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-multiselect-popup k-popup">
                         <div class="k-list">
@@ -145,23 +148,26 @@
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox">
-                                <ul class="k-list-ul">
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                            <div class="k-list-content" role="listbox" id="k-ms-listbox-2" aria-label="Options">
+                                <ul aria-labelledby="k-ms-grpcv-group-3" role="group" class="k-list-ul">
+                                    <li id="k-ms-grpcv-group-3" role="presentation" class="k-list-group-item">
+                                        <span class="k-list-item-text">Group 1</span>
+                                    </li>
+                                    <li id="k-ms-grpcv-item-5" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpcv-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                 </ul>
-                                <ul class="k-list-ul">
-                                    <li role="presentation" class="k-list-group-item">
+                                <ul aria-labelledby="k-ms-grpcv-group-4" role="group" class="k-list-ul">
+                                    <li id="k-ms-grpcv-group-4" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpcv-item-7" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpcv-item-8" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                 </ul>
@@ -176,11 +182,11 @@
         <div>
             <span class="k-multiselect k-input k-focus">
                 <div class="k-input-values">
-                    <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                    <div id="k-ms-5-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-5-listbox" aria-autocomplete="list" aria-label="Select options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 </div>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-multiselect-popup k-popup">
                         <div class="k-list k-virtual-list">
@@ -188,23 +194,26 @@
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox">
-                                <ul class="k-list-ul">
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                            <div class="k-list-content" role="listbox" id="k-ms-listbox-3" aria-label="Options">
+                                <ul aria-labelledby="k-ms-grpvcv-group-1" role="group" class="k-list-ul">
+                                    <li id="k-ms-grpvcv-group-1" role="presentation" class="k-list-group-item">
+                                        <span class="k-list-item-text">Group 1</span>
+                                    </li>
+                                    <li id="k-ms-grpvcv-item-1" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpvcv-item-2" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                 </ul>
-                                <ul class="k-list-ul">
-                                    <li role="presentation" class="k-list-group-item">
+                                <ul aria-labelledby="k-ms-grpvcv-group-2" role="group" class="k-list-ul">
+                                    <li id="k-ms-grpvcv-group-2" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpvcv-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpvcv-item-4" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                 </ul>
@@ -220,11 +229,11 @@
         <div dir="rtl">
             <span class="k-multiselect k-input k-focus">
                 <div class="k-input-values">
-                    <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                    <div id="k-ms-6-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-6-listbox" aria-autocomplete="list" aria-label="Select options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 </div>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-multiselect-popup k-popup">
                         <div class="k-list k-virtual-list">
@@ -232,23 +241,26 @@
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox">
-                                <ul class="k-list-ul">
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                            <div class="k-list-content" role="listbox" id="k-ms-listbox-4" aria-label="Options">
+                                <ul aria-labelledby="k-ms-grpvcv-group-3" role="group" class="k-list-ul">
+                                    <li id="k-ms-grpvcv-group-3" role="presentation" class="k-list-group-item">
+                                        <span class="k-list-item-text">Group 1</span>
+                                    </li>
+                                    <li id="k-ms-grpvcv-item-5" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpvcv-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                 </ul>
-                                <ul class="k-list-ul">
-                                    <li role="presentation" class="k-list-group-item">
+                                <ul aria-labelledby="k-ms-grpvcv-group-4" role="group" class="k-list-ul">
+                                    <li id="k-ms-grpvcv-group-4" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpvcv-item-7" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ms-grpvcv-item-8" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                 </ul>

@@ -12,7 +12,7 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
         <div class="k-grid-no-scrollbar k-grid">
-            <div class="k-grid-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
+            <div role="toolbar" aria-label="Toolbar" aria-controls="k-grid-1" class="k-grid-toolbar k-toolbar">
                 <button class="k-toolbar-button  k-button">
                     <span class="k-button-text">Add new</span>
                 </button>
@@ -23,10 +23,10 @@
                     <span class="k-button-text">Cancel Changes</span>
                 </button>
             </div>
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid" id="k-grid-1">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table">
+                        <table role="none" class="k-grid-header-table k-table">
                             <colgroup>
                                 <col>
                                 <col>
@@ -34,22 +34,22 @@
                                 <col style="width: 300px;">
                             </colgroup>
                             <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
+                                <tr role="row" class="k-table-row">
+                                    <th role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Price</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Available</span>
@@ -67,7 +67,7 @@
                 <div class="k-grid-container">
                     <div class="k-grid-content">
                         <div>
-                            <table class="k-grid-table k-table">
+                            <table role="none" class="k-grid-table k-table">
                                 <colgroup>
                                     <col>
                                     <col>
@@ -75,10 +75,10 @@
                                     <col style="width: 300px;">
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr class="k-master-row k-grid-add-row k-grid-edit-row k-table-row">
-                                        <td class="k-table-td">
+                                    <tr class="k-master-row k-grid-add-row k-grid-edit-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td">
                                             <span class="k-textbox k-input">
-                                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Towel">
+                                                <input aria-label="Name" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Towel">
                                                 <span class="k-clear-value">
                                                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -88,9 +88,9 @@
                                                 </span>
                                             </span>
                                         </td>
-                                        <td class="k-table-td">
+                                        <td role="gridcell" class="k-table-td">
                                             <span class="k-numerictextbox k-input">
-                                                <input role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="42">
+                                                <input role="spinbutton" aria-label="Price" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="42">
                                                 <span class="k-clear-value">
                                                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -116,12 +116,12 @@
                                                 </span>
                                             </span>
                                         </td>
-                                        <td class="k-table-td">
+                                        <td role="gridcell" class="k-table-td">
                                             <span class="k-checkbox-wrap">
-                                                <input class="k-checkbox" type="checkbox">
+                                                <input aria-label="Available" class="k-checkbox" type="checkbox">
                                             </span>
                                         </td>
-                                        <td class="k-command-cell k-table-td">
+                                        <td class="k-command-cell k-table-td" role="gridcell">
                                             <button class="k-button">
                                                 <span class="k-button-text">Add</span>
                                             </button>
@@ -130,21 +130,21 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row">
-                                        <td class="k-table-td">Chai</td>
-                                        <td class="k-table-td">18</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-command-cell k-table-td">
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td role="gridcell" class="k-table-td">Chai</td>
+                                        <td role="gridcell" class="k-table-td">18</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td class="k-command-cell k-table-td" role="gridcell">
                                             <button class="k-button">
                                                 <span class="k-button-text">Remove</span>
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row">
-                                        <td class="k-table-td">Chang</td>
-                                        <td class="k-table-td">19</td>
-                                        <td class="k-table-td">false</td>
-                                        <td class="k-command-cell k-table-td">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                        <td role="gridcell" class="k-table-td">Chang</td>
+                                        <td role="gridcell" class="k-table-td">19</td>
+                                        <td role="gridcell" class="k-table-td">false</td>
+                                        <td class="k-command-cell k-table-td" role="gridcell">
                                             <button class="k-button">
                                                 <span class="k-button-text">Remove</span>
                                             </button>
@@ -168,7 +168,7 @@
                     <span class="k-button-text">Add new record</span>
                 </button>
             </div>
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid" id="k-grid-2">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">

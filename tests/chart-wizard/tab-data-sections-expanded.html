@@ -20,7 +20,7 @@
         <section>
             <span class="k-font-bold">Configuration section expanded</span>
             <div class="k-expander k-expanded">
-                <div class="k-expander-header">
+                <div class="k-expander-header" role="button" aria-controls="k-expander-content-1" aria-expanded="true" tabindex="0">
                     <div class="k-expander-title">Configuration</div>
                     <span class="k-spacer"></span>
                     <div class="k-expander-sub-title"></div>
@@ -32,16 +32,16 @@
                         </span>
                     </span>
                 </div>
-                <div class="k-expander-content-wrapper">
+                <div class="k-expander-content-wrapper" id="k-expander-content-1">
                     <div class="k-expander-content">
                         <form class="k-form">
                             <fieldset class="k-form-fieldset">
                                 <legend class="k-form-legend">X axis (category)</legend>
-                                <span class="k-dropdownlist k-picker k-picker-outline">
+                                <span class="k-dropdownlist k-picker k-picker-outline" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
                                     <span class="k-input-inner">
                                         <span class="k-input-value-text">Current item</span>
                                     </span>
-                                    <button class="k-input-button k-button k-button-outline k-icon-button" aria-label="Toggle dropdown">
+                                    <button class="k-input-button k-button k-button-outline k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
@@ -63,7 +63,7 @@
                                             <span class="k-button-text">Add</span>
                                         </button>
                                     </div>
-                                    <div class="k-grid-aria-root">
+                                    <div class="k-grid-aria-root" role="grid">
                                         <div class="k-grid-container">
                                             <div class="k-grid-content">
                                                 <table class="k-grid-table k-table">
@@ -177,11 +177,11 @@
                             </fieldset>
                             <fieldset class="k-form-fieldset">
                                 <legend class="k-form-legend">Y axis (value)</legend>
-                                <span class="k-dropdownlist k-picker k-picker-outline">
+                                <span class="k-dropdownlist k-picker k-picker-outline" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
                                     <span class="k-input-inner">
                                         <span class="k-input-value-text">Current item</span>
                                     </span>
-                                    <button class="k-input-button k-button k-button-outline k-icon-button" aria-label="Toggle dropdown">
+                                    <button class="k-input-button k-button k-button-outline k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>

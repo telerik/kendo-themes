@@ -145,6 +145,7 @@ PromptBox.ariaSpec = {
         // Send/stop button
         { selector: '.k-prompt-box-affix .k-button:not(.k-speech-to-text-button)', attribute: 'aria-label', usage: 'The send/stop button is labelled to indicate its current action.' },
         { selector: '.k-prompt-box-affix .k-button:not(.k-speech-to-text-button)', attribute: 'aria-live=polite', usage: 'Announces the change in status of the send/stop button.' },
+        // File attachments follow the FileBox ariaSpec (see file-box.spec.tsx)
     ]
 };
 

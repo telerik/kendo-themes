@@ -67,7 +67,7 @@ export const FileBox = (
             </div>
             {showButton && (removeButton ?
                 <Button as="span" icon="x-mark-sm-outline" fillMode="flat" aria-hidden="true" /> :
-                <MenuButton icon="more-vertical" fillMode="flat" showArrow={false}></MenuButton>
+                <MenuButton icon="more-vertical" fillMode="flat" showArrow={false} aria-label="File actions"></MenuButton>
             )}
         </li>
     );
@@ -84,6 +84,7 @@ FileBox.ariaSpec = {
     rules: [
         { selector: '.k-file-box-wrapper', attribute: 'role=list', usage: 'Explicitly sets the UL role to list.' },
         { selector: '.k-file-box-wrapper', attribute: 'aria-label', usage: 'Provides an accessible name for the file list (e.g. "Attached files").' },
+        { selector: '.k-file-box-wrapper .k-files-scroll', attribute: 'role=presentation', usage: 'The scrollable container between the list and its items is presentational, ensuring the list→listitem relationship is preserved in the accessibility tree.' },
         { selector: '.k-file-box-wrapper .k-file-box', attribute: 'role=listitem', usage: 'Explicitly sets the LI role to listitem.' },
         { selector: '.k-file-box-wrapper .k-file-box', attribute: 'tabindex', usage: 'Makes the file box focusable. Uses roving tabindex: 0 for the focused item, -1 for the rest.' },
         { selector: '.k-file-box-wrapper .k-file-box', attribute: 'aria-label', usage: 'Provides an accessible name describing the file. Can include the file name and size (e.g. "FileName.pdf 2MB").' },

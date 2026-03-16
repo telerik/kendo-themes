@@ -33,7 +33,7 @@ export const GanttTaskContent: KendoComponent<KendoGanttTaskContentProps & React
                 GANTTTASKCONTENT_CLASSNAME
             )}>
             { content && <div className="k-task-template">{content}</div> }
-            <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+            <span className="k-task-actions" aria-hidden="true"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w" aria-hidden="true"></span><span className="k-resize-handle k-resize-e" aria-hidden="true"></span>
         </div>
     );
 };

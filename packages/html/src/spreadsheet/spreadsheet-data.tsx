@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { classNames } from '../misc';
 import { data, axis } from './data';
 
@@ -40,7 +41,7 @@ export const SpreadsheetData = (
 
     // Add keys to avoid React "unique key" warnings
     const keyedItems = [ ...axis, ...spreadsheetData ].map((el, i) =>
-        el.key ? el : <div key={i} style={el.props.style} className={el.props.className}>{el.props.children}</div>
+        el.key ? el : React.cloneElement(el, { key: i })
     );
 
     return (

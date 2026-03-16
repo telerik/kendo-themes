@@ -43,7 +43,7 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
             <div className="k-imageeditor-content" style={{ height: contentHeight }}>
                 <div className="k-imageeditor-canvas-container">
                     <div className="k-imageeditor-canvas">
-                        {children || <canvas role="img" aria-label="Image being edited" />}
+                        {children}
                     </div>
                 </div>
 
@@ -69,8 +69,9 @@ ImageEditor.folderName = IMAGEEDITOR_FOLDER_NAME;
 ImageEditor.ariaSpec = {
     selector: '.k-imageeditor',
     rules: [
-        { selector: '.k-imageeditor-canvas>canvas', attribute: 'role=img', usage: 'Indicates the canvas role as an image.' },
-        { selector: '.k-imageeditor-canvas>canvas', attribute: 'aria-label or aria-labelledby', usage: 'Provides an accessible name for the canvas by describing the image content.' },
+        // Canvas rules apply only when an image is loaded (the canvas element is not rendered without an image)
+        { selector: '.k-imageeditor-canvas>canvas', attribute: 'role=img', usage: 'Indicates the canvas role as an image. Applicable when an image is loaded.' },
+        { selector: '.k-imageeditor-canvas>canvas', attribute: 'aria-label or aria-labelledby', usage: 'Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded.' },
     ]
 };
 

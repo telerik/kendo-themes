@@ -16,15 +16,15 @@
         <span>medium</span>
         <span>large</span>
         <div class="k-treeview">
-            <ul class="k-treeview-lines k-treeview-group">
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-leaf">
                             <span class="k-treeview-leaf-text">Root 1</span>
                         </span>
                     </span>
                 </li>
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-toggle">
                             <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -37,15 +37,15 @@
                             <span class="k-treeview-leaf-text">Root 2</span>
                         </span>
                     </span>
-                    <ul class="k-treeview-group">
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                    <ul class="k-treeview-group" role="group">
+                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-leaf">
                                     <span class="k-treeview-leaf-text">Child 2.1</span>
                                 </span>
                             </span>
                         </li>
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                        <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-toggle">
                                     <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -59,7 +59,7 @@
                                 </span>
                             </span>
                         </li>
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-leaf">
                                     <span class="k-treeview-leaf-text">Child 2.3</span>
@@ -68,7 +68,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-toggle">
                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -85,15 +85,15 @@
             </ul>
         </div>
         <div class="k-treeview k-treeview-sm">
-            <ul class="k-treeview-lines k-treeview-group">
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-leaf">
                             <span class="k-treeview-leaf-text">Root 1</span>
                         </span>
                     </span>
                 </li>
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-toggle">
                             <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -106,15 +106,15 @@
                             <span class="k-treeview-leaf-text">Root 2</span>
                         </span>
                     </span>
-                    <ul class="k-treeview-group">
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                    <ul class="k-treeview-group" role="group">
+                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-leaf">
                                     <span class="k-treeview-leaf-text">Child 2.1</span>
                                 </span>
                             </span>
                         </li>
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                        <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-toggle">
                                     <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -128,7 +128,7 @@
                                 </span>
                             </span>
                         </li>
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-leaf">
                                     <span class="k-treeview-leaf-text">Child 2.3</span>
@@ -137,7 +137,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-toggle">
                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -154,15 +154,15 @@
             </ul>
         </div>
         <div class="k-treeview k-treeview-md">
-            <ul class="k-treeview-lines k-treeview-group">
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-leaf">
                             <span class="k-treeview-leaf-text">Root 1</span>
                         </span>
                     </span>
                 </li>
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-toggle">
                             <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -175,15 +175,15 @@
                             <span class="k-treeview-leaf-text">Root 2</span>
                         </span>
                     </span>
-                    <ul class="k-treeview-group">
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                    <ul class="k-treeview-group" role="group">
+                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-leaf">
                                     <span class="k-treeview-leaf-text">Child 2.1</span>
                                 </span>
                             </span>
                         </li>
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                        <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-toggle">
                                     <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -197,7 +197,7 @@
                                 </span>
                             </span>
                         </li>
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-leaf">
                                     <span class="k-treeview-leaf-text">Child 2.3</span>
@@ -206,7 +206,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-toggle">
                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -223,15 +223,15 @@
             </ul>
         </div>
         <div class="k-treeview k-treeview-lg">
-            <ul class="k-treeview-lines k-treeview-group">
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-leaf">
                             <span class="k-treeview-leaf-text">Root 1</span>
                         </span>
                     </span>
                 </li>
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-toggle">
                             <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -244,15 +244,15 @@
                             <span class="k-treeview-leaf-text">Root 2</span>
                         </span>
                     </span>
-                    <ul class="k-treeview-group">
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                    <ul class="k-treeview-group" role="group">
+                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-leaf">
                                     <span class="k-treeview-leaf-text">Child 2.1</span>
                                 </span>
                             </span>
                         </li>
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                        <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-toggle">
                                     <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
@@ -266,7 +266,7 @@
                                 </span>
                             </span>
                         </li>
-                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                             <span class="k-treeview-item-content">
                                 <span class="k-treeview-leaf">
                                     <span class="k-treeview-leaf-text">Child 2.3</span>
@@ -275,7 +275,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 1;">
                     <span class="k-treeview-item-content">
                         <span class="k-treeview-toggle">
                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">

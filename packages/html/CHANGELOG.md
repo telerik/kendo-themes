@@ -3,18 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [13.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.2...v13.1.0-dev.3) (2026-03-16)
-
-
-### Bug Fixes
-
-* **html:** remove calendar-md class from jquery classic calendar ([98b1a42](https://github.com/telerik/kendo-themes/commit/98b1a426ca10a4dda291d97ec9bd211e2221ff39))
-* **html:** remove obsolete k-widget class from specs ([5a4b807](https://github.com/telerik/kendo-themes/commit/5a4b80794d8cf1dbfa40d758d415cdb444895b13))
-
-
-
-
-
 # [13.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.1...v13.1.0-dev.2) (2026-03-09)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

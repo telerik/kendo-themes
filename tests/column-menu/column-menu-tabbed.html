@@ -98,14 +98,14 @@
                     </div>
                     <div class="k-tabstrip-content k-active" role="tabpanel">
                         <div class="k-columnmenu-item-wrapper">
-                            <div class="k-columnmenu-item">
+                            <div class="k-columnmenu-item" role="button" tabindex="0">
                                 <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                                     </svg>
                                 </span>Item 1
                             </div>
-                            <div class="k-columnmenu-item">
+                            <div class="k-columnmenu-item" role="button" tabindex="0">
                                 <span class="k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                         <div class="k-columnmenu-item-wrapper">
-                            <div class="k-columnmenu-item">
+                            <div class="k-columnmenu-item" role="button" tabindex="0">
                                 <span class="k-icon k-svg-icon k-svg-i-group" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M32 256h192v192H32zm0-32h192V32H32zm224 224h192V256H256zm0-416v192h192V32z"></path>
@@ -124,7 +124,7 @@
                         </div>
                         <div class="k-columnmenu-item-wrapper">
                             <div class="k-expander">
-                                <div class="k-columnmenu-item">
+                                <div class="k-columnmenu-item" role="button" tabindex="0" aria-expanded="false" aria-controls="k-columnmenu-content-1">
                                     <span class="k-icon k-svg-icon k-svg-i-set-column-position" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M448 32H64c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32M192 416H96V96h96zm224 0H224v-32h192zm0-64H224v-64h192zm0-96H224v-64h192zm0-96H224V96h192z"></path>
@@ -174,11 +174,11 @@
                     <div class="k-tabstrip-content k-active" role="tabpanel">
                         <form class="k-filter-menu">
                             <div class="k-filter-menu-container">
-                                <span class="k-dropdownlist k-picker">
+                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="First filter operator" tabindex="0">
                                     <span class="k-input-inner">
                                         <span class="k-input-value-text">Contains</span>
                                     </span>
-                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
@@ -187,13 +187,13 @@
                                     </button>
                                 </span>
                                 <span class="k-textbox k-input">
-                                    <input class="k-input-inner" placeholder="Filter..." autocomplete="off" type="text" value="">
+                                    <input aria-label="First filter value" class="k-input-inner" placeholder="Filter..." autocomplete="off" type="text" value="">
                                 </span>
-                                <span class="k-filter-and k-dropdownlist k-picker">
+                                <span class="k-filter-and k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Logic operator" tabindex="0">
                                     <span class="k-input-inner">
                                         <span class="k-input-value-text">And</span>
                                     </span>
-                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
@@ -201,11 +201,11 @@
                                         </span>
                                     </button>
                                 </span>
-                                <span class="k-dropdownlist k-picker">
+                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Second filter operator" tabindex="0">
                                     <span class="k-input-inner">
                                         <span class="k-input-value-text">Contains</span>
                                     </span>
-                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
@@ -214,7 +214,7 @@
                                     </button>
                                 </span>
                                 <span class="k-textbox k-input">
-                                    <input class="k-input-inner" placeholder="Filter..." autocomplete="off" type="text" value="">
+                                    <input aria-label="Second filter value" class="k-input-inner" placeholder="Filter..." autocomplete="off" type="text" value="">
                                 </span>
                                 <div class="k-actions k-actions-stretched k-actions-horizontal">
                                     <button class="k-button k-button-primary">
@@ -259,11 +259,11 @@
                     <div class="k-tabstrip-content k-active" role="tabpanel">
                         <form class="k-filter-menu">
                             <div class="k-filter-menu-container">
-                                <span class="k-dropdownlist k-picker">
+                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="First filter operator" tabindex="0">
                                     <span class="k-input-inner">
                                         <span class="k-input-value-text">Contains</span>
                                     </span>
-                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
@@ -272,13 +272,13 @@
                                     </button>
                                 </span>
                                 <span class="k-textbox k-input">
-                                    <input class="k-input-inner" placeholder="Filter..." autocomplete="off" type="text" value="">
+                                    <input aria-label="First filter value" class="k-input-inner" placeholder="Filter..." autocomplete="off" type="text" value="">
                                 </span>
-                                <span class="k-filter-and k-dropdownlist k-picker">
+                                <span class="k-filter-and k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Logic operator" tabindex="0">
                                     <span class="k-input-inner">
                                         <span class="k-input-value-text">And</span>
                                     </span>
-                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
@@ -286,11 +286,11 @@
                                         </span>
                                     </button>
                                 </span>
-                                <span class="k-dropdownlist k-picker">
+                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Second filter operator" tabindex="0">
                                     <span class="k-input-inner">
                                         <span class="k-input-value-text">Contains</span>
                                     </span>
-                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown">
+                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
@@ -299,7 +299,7 @@
                                     </button>
                                 </span>
                                 <span class="k-textbox k-input">
-                                    <input class="k-input-inner" placeholder="Filter..." autocomplete="off" type="text" value="">
+                                    <input aria-label="Second filter value" class="k-input-inner" placeholder="Filter..." autocomplete="off" type="text" value="">
                                 </span>
                                 <div class="k-actions k-actions-stretched k-actions-horizontal">
                                     <button class="k-button k-button-primary">

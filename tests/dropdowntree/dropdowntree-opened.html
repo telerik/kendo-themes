@@ -21,11 +21,11 @@
         <span>DropdownTree Filtering</span>
         <span>DropdownTree Treeview States</span>
         <div>
-            <span class="k-dropdowntree k-picker">
-                <span class="k-input-inner">
+            <span class="k-dropdowntree k-picker" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-ddt-tv-1" aria-describedby="k-ddt-1-value" aria-label="Select item" tabindex="0">
+                <span id="k-ddt-1-value" class="k-input-inner">
                     <span class="k-input-value-text">Opened</span>
                 </span>
-                <button class="k-input-button k-button k-icon-button">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -33,19 +33,19 @@
                     </span>
                 </button>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="DropdownTree options">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-dropdowntree-popup k-popup">
                         <div class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Root 1</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -58,8 +58,8 @@
                                             <span class="k-treeview-leaf-text">Root 2</span>
                                         </span>
                                     </span>
-                                    <ul class="k-treeview-group">
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                    <ul class="k-treeview-group" role="group">
+                                        <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-toggle">
                                                     <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -72,8 +72,8 @@
                                                     <span class="k-treeview-leaf-text">Child 2.1</span>
                                                 </span>
                                             </span>
-                                            <ul class="k-treeview-group">
-                                                <li class="k-treeview-item" style="--kendo-treeview-level: 3;">
+                                            <ul class="k-treeview-group" role="group">
+                                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 3;">
                                                     <span class="k-treeview-item-content">
                                                         <span class="k-treeview-leaf">
                                                             <span class="k-treeview-leaf-text">Child 2.1.1</span>
@@ -82,14 +82,14 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-leaf">
                                                     <span class="k-treeview-leaf-text">Child 2.2</span>
                                                 </span>
                                             </span>
                                         </li>
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-load-more-button k-treeview-leaf">
                                                     <span class="k-treeview-leaf-text">Load more ...</span>
@@ -105,11 +105,11 @@
             </div>
         </div>
         <div>
-            <span class="k-dropdowntree k-picker">
-                <span class="k-input-inner">
+            <span class="k-dropdowntree k-picker" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-ddt-tv-2" aria-describedby="k-ddt-2-value" aria-label="Select option" tabindex="0">
+                <span id="k-ddt-2-value" class="k-input-inner">
                     <span class="k-input-value-text">Filtering</span>
                 </span>
-                <button class="k-input-button k-button k-icon-button">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -117,7 +117,7 @@
                     </span>
                 </button>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="DropdownTree options">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-dropdowntree-popup k-popup">
                         <div class="k-list-filter">
@@ -130,19 +130,19 @@
                                     </span>
                                 </span>
                                 <span class="k-input-separator k-input-separator-vertical"></span>
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                <input aria-label="Search" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                             </span>
                         </div>
                         <div class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Root 1</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -155,8 +155,8 @@
                                             <span class="k-treeview-leaf-text">Root 2</span>
                                         </span>
                                     </span>
-                                    <ul class="k-treeview-group">
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                    <ul class="k-treeview-group" role="group">
+                                        <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-toggle">
                                                     <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -169,8 +169,8 @@
                                                     <span class="k-treeview-leaf-text">Child 2.1</span>
                                                 </span>
                                             </span>
-                                            <ul class="k-treeview-group">
-                                                <li class="k-treeview-item" style="--kendo-treeview-level: 3;">
+                                            <ul class="k-treeview-group" role="group">
+                                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 3;">
                                                     <span class="k-treeview-item-content">
                                                         <span class="k-treeview-leaf">
                                                             <span class="k-treeview-leaf-text">Child 2.1.1</span>
@@ -179,14 +179,14 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-leaf">
                                                     <span class="k-treeview-leaf-text">Child 2.2</span>
                                                 </span>
                                             </span>
                                         </li>
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-load-more-button k-treeview-leaf">
                                                     <span class="k-treeview-leaf-text">Load more ...</span>
@@ -202,11 +202,11 @@
             </div>
         </div>
         <div>
-            <span class="k-dropdowntree k-picker">
-                <span class="k-input-inner">
+            <span class="k-dropdowntree k-picker" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-ddt-tv-3" aria-describedby="k-ddt-3-value" aria-label="Select item" tabindex="0">
+                <span id="k-ddt-3-value" class="k-input-inner">
                     <span class="k-input-value-text">Opened</span>
                 </span>
-                <button class="k-input-button k-button k-icon-button">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -214,125 +214,125 @@
                     </span>
                 </button>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="DropdownTree options">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-dropdowntree-popup k-popup">
                         <div arialabel="States treeview" class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-hover">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Hover" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Hover</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-focus">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Focus" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-hover k-focus">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Hover + Focus" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Hover + Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="Checked" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Checked</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Selected" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Selected</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="Checked + Selected" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Checked + Selected</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-hover k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="^ Hover" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">^ Hover</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-focus k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="^ Focus" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">^ Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-hover k-focus k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="^ Hover + Focus" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">^ Hover + Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" aria-disabled="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-disabled">
                                         <span class="k-checkbox-wrap">
-                                            <input disabled="" class="k-checkbox k-disabled" type="checkbox">
+                                            <input aria-label="Disabled" tabindex="-1" disabled="" class="k-checkbox k-disabled" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Disabled</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" aria-disabled="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-focus k-disabled">
                                         <span class="k-checkbox-wrap">
-                                            <input disabled="" class="k-checkbox k-disabled" type="checkbox">
+                                            <input aria-label="Disabled + Focus" tabindex="-1" disabled="" class="k-checkbox k-disabled" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Disabled + Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Load more..." tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-load-more-button k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Load more...</span>
@@ -349,11 +349,11 @@
         <span>DropdownTree Filtering RTL</span>
         <span>DropdownTree Treeview States RTL</span>
         <div>
-            <span dir="rtl" class="k-dropdowntree k-picker">
-                <span class="k-input-inner">
+            <span dir="rtl" class="k-dropdowntree k-picker" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-ddt-tv-4" aria-describedby="k-ddt-4-value" aria-label="Select item" tabindex="0">
+                <span id="k-ddt-4-value" class="k-input-inner">
                     <span class="k-input-value-text">Opened</span>
                 </span>
-                <button class="k-input-button k-button k-icon-button">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -361,19 +361,19 @@
                     </span>
                 </button>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="DropdownTree options">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-dropdowntree-popup k-popup" dir="rtl">
                         <div dir="rtl" class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Root 1</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -386,8 +386,8 @@
                                             <span class="k-treeview-leaf-text">Root 2</span>
                                         </span>
                                     </span>
-                                    <ul class="k-treeview-group">
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                    <ul class="k-treeview-group" role="group">
+                                        <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-toggle">
                                                     <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -400,8 +400,8 @@
                                                     <span class="k-treeview-leaf-text">Child 2.1</span>
                                                 </span>
                                             </span>
-                                            <ul class="k-treeview-group">
-                                                <li class="k-treeview-item" style="--kendo-treeview-level: 3;">
+                                            <ul class="k-treeview-group" role="group">
+                                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 3;">
                                                     <span class="k-treeview-item-content">
                                                         <span class="k-treeview-leaf">
                                                             <span class="k-treeview-leaf-text">Child 2.1.1</span>
@@ -410,14 +410,14 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-leaf">
                                                     <span class="k-treeview-leaf-text">Child 2.2</span>
                                                 </span>
                                             </span>
                                         </li>
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-load-more-button k-treeview-leaf">
                                                     <span class="k-treeview-leaf-text">Load more ...</span>
@@ -433,11 +433,11 @@
             </div>
         </div>
         <div>
-            <span dir="rtl" class="k-dropdowntree k-picker">
-                <span class="k-input-inner">
+            <span dir="rtl" class="k-dropdowntree k-picker" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-ddt-tv-5" aria-describedby="k-ddt-5-value" aria-label="Select option" tabindex="0">
+                <span id="k-ddt-5-value" class="k-input-inner">
                     <span class="k-input-value-text">Filtering</span>
                 </span>
-                <button class="k-input-button k-button k-icon-button">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -445,7 +445,7 @@
                     </span>
                 </button>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="DropdownTree options">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-dropdowntree-popup k-popup" dir="rtl">
                         <div class="k-list-filter">
@@ -458,19 +458,19 @@
                                     </span>
                                 </span>
                                 <span class="k-input-separator k-input-separator-vertical"></span>
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                <input aria-label="Search" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                             </span>
                         </div>
                         <div dir="rtl" class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Root 1</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-treeview-toggle">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -483,8 +483,8 @@
                                             <span class="k-treeview-leaf-text">Root 2</span>
                                         </span>
                                     </span>
-                                    <ul class="k-treeview-group">
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                    <ul class="k-treeview-group" role="group">
+                                        <li class="k-treeview-item" role="treeitem" aria-expanded="true" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-toggle">
                                                     <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -497,8 +497,8 @@
                                                     <span class="k-treeview-leaf-text">Child 2.1</span>
                                                 </span>
                                             </span>
-                                            <ul class="k-treeview-group">
-                                                <li class="k-treeview-item" style="--kendo-treeview-level: 3;">
+                                            <ul class="k-treeview-group" role="group">
+                                                <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 3;">
                                                     <span class="k-treeview-item-content">
                                                         <span class="k-treeview-leaf">
                                                             <span class="k-treeview-leaf-text">Child 2.1.1</span>
@@ -507,14 +507,14 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-leaf">
                                                     <span class="k-treeview-leaf-text">Child 2.2</span>
                                                 </span>
                                             </span>
                                         </li>
-                                        <li class="k-treeview-item" style="--kendo-treeview-level: 2;">
+                                        <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 2;">
                                             <span class="k-treeview-item-content">
                                                 <span class="k-treeview-load-more-button k-treeview-leaf">
                                                     <span class="k-treeview-leaf-text">Load more ...</span>
@@ -530,11 +530,11 @@
             </div>
         </div>
         <div>
-            <span dir="rtl" class="k-dropdowntree k-picker">
-                <span class="k-input-inner">
+            <span dir="rtl" class="k-dropdowntree k-picker" role="combobox" aria-haspopup="tree" aria-expanded="true" aria-controls="k-ddt-tv-6" aria-describedby="k-ddt-6-value" aria-label="Select item" tabindex="0">
+                <span id="k-ddt-6-value" class="k-input-inner">
                     <span class="k-input-value-text">Opened</span>
                 </span>
-                <button class="k-input-button k-button k-icon-button">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -542,125 +542,125 @@
                     </span>
                 </button>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="DropdownTree options">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-dropdowntree-popup k-popup" dir="rtl">
                         <div dir="rtl" class="k-treeview">
-                            <ul class="k-treeview-lines k-treeview-group">
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                            <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-hover">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Hover" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Hover</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-focus">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Focus" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-hover k-focus">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Hover + Focus" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Hover + Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="Checked" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Checked</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Selected" tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Selected</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="Checked + Selected" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Checked + Selected</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-hover k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="^ Hover" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">^ Hover</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-focus k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="^ Focus" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">^ Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-hover k-focus k-selected">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                            <input aria-label="^ Hover + Focus" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">^ Hover + Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" aria-disabled="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-disabled">
                                         <span class="k-checkbox-wrap">
-                                            <input disabled="" class="k-checkbox k-disabled" type="checkbox">
+                                            <input aria-label="Disabled" tabindex="-1" disabled="" class="k-checkbox k-disabled" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Disabled</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" aria-disabled="true" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content k-focus k-disabled">
                                         <span class="k-checkbox-wrap">
-                                            <input disabled="" class="k-checkbox k-disabled" type="checkbox">
+                                            <input aria-label="Disabled + Focus" tabindex="-1" disabled="" class="k-checkbox k-disabled" type="checkbox">
                                         </span>
                                         <span class="k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Disabled + Focus</span>
                                         </span>
                                     </span>
                                 </li>
-                                <li class="k-treeview-item" style="--kendo-treeview-level: 1;">
+                                <li class="k-treeview-item" role="treeitem" aria-checked="false" style="--kendo-treeview-level: 1;">
                                     <span class="k-treeview-item-content">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Load more..." tabindex="-1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-treeview-load-more-button k-treeview-leaf">
                                             <span class="k-treeview-leaf-text">Load more...</span>

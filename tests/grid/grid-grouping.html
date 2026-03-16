@@ -55,7 +55,7 @@
                 <div class="k-grouping-dropclue"></div>
                 <div class="k-grouping-drop-container">Drag a column header and drop it here to group by that column</div>
             </div>
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid" id="k-grid-1" aria-colcount="4" aria-rowcount="8">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">
@@ -265,10 +265,10 @@
                     </button>
                 </div>
             </div>
-            <div class="k-grouping-header">
+            <div role="toolbar" aria-label="Grouping" class="k-grouping-header">
                 <div class="k-grouping-dropclue"></div>
-                <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
-                    <div class="k-chip" role="button" aria-pressed="false">
+                <div role="none" class="k-chip-list">
+                    <div role="button" class="k-chip" aria-pressed="false">
                         <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
@@ -294,7 +294,7 @@
                             </span>
                         </span>
                     </div>
-                    <div class="k-chip" role="button" aria-pressed="false">
+                    <div role="button" class="k-chip" aria-pressed="false">
                         <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-desc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
@@ -323,10 +323,10 @@
                 </div>
                 <div class="k-grouping-drop-container"></div>
             </div>
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header k-grid-draggable-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table">
+                        <table role="none" class="k-grid-header-table k-table">
                             <colgroup>
                                 <col class="k-group-col">
                                 <col class="k-group-col">
@@ -336,35 +336,35 @@
                                 <col>
                             </colgroup>
                             <thead class="k-table-thead">
-                                <tr class="k-table-row">
+                                <tr role="row" class="k-table-row">
                                     <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th">
                                         <span class="k-sr-only">Group</span>
                                     </th>
                                     <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th">
                                         <span class="k-sr-only">Group</span>
                                     </th>
-                                    <th colspan="1" class="k-header k-table-th">
+                                    <th colspan="1" role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">ID</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" class="k-header k-table-th">
+                                    <th colspan="1" role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" class="k-header k-table-th">
+                                    <th colspan="1" role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Price</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" class="k-header k-table-th">
+                                    <th colspan="1" role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Category</span>
@@ -378,7 +378,7 @@
                 </div>
                 <div class="k-grid-container">
                     <div class="k-grid-content">
-                        <table class="k-grid-table k-table">
+                        <table role="none" class="k-grid-table k-table">
                             <colgroup>
                                 <col class="k-group-col">
                                 <col class="k-group-col">
@@ -388,8 +388,8 @@
                                 <col>
                             </colgroup>
                             <tbody class="k-table-tbody">
-                                <tr class="k-table-group-row k-grouping-row k-table-row">
-                                    <td colspan="6" class="k-table-td">
+                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
+                                    <td colspan="6" role="gridcell" aria-expanded="false" class="k-table-td">
                                         <p class="k-reset">
                                             <span class="k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -399,8 +399,8 @@
                                         </p>
                                     </td>
                                 </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row">
-                                    <td colspan="6" class="k-table-td">
+                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
+                                    <td colspan="6" role="gridcell" aria-expanded="true" class="k-table-td">
                                         <p class="k-reset">
                                             <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -410,9 +410,9 @@
                                         </p>
                                     </td>
                                 </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="5" class="k-table-td">
+                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
+                                    <td class="k-table-group-td k-group-cell k-table-td" role="gridcell"></td>
+                                    <td colspan="5" role="gridcell" aria-expanded="true" class="k-table-td">
                                         <p class="k-reset">
                                             <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -422,13 +422,13 @@
                                         </p>
                                     </td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="0" class="k-table-td">2</td>
-                                    <td colspan="0" class="k-table-td">Chang</td>
-                                    <td colspan="0" class="k-table-td">$19.00</td>
-                                    <td colspan="0" class="k-table-td">Beverages</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                    <td class="k-table-group-td k-group-cell k-table-td" role="gridcell"></td>
+                                    <td class="k-table-group-td k-group-cell k-table-td" role="gridcell"></td>
+                                    <td colspan="0" role="gridcell" class="k-table-td">2</td>
+                                    <td colspan="0" role="gridcell" class="k-table-td">Chang</td>
+                                    <td colspan="0" role="gridcell" class="k-table-td">$19.00</td>
+                                    <td colspan="0" role="gridcell" class="k-table-td">Beverages</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -465,10 +465,10 @@
                     </button>
                 </div>
             </div>
-            <div class="k-grouping-header">
+            <div role="toolbar" aria-label="Grouping" class="k-grouping-header">
                 <div class="k-grouping-dropclue"></div>
-                <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
-                    <div class="k-chip" role="button" aria-pressed="false">
+                <div role="none" class="k-chip-list">
+                    <div role="button" class="k-chip" aria-pressed="false">
                         <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
@@ -494,7 +494,7 @@
                             </span>
                         </span>
                     </div>
-                    <div class="k-chip" role="button" aria-pressed="false">
+                    <div role="button" class="k-chip" aria-pressed="false">
                         <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-desc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
@@ -525,7 +525,7 @@
             </div>
             <div class="k-grid-header k-grid-draggable-header">
                 <div class="k-grid-header-wrap">
-                    <table class="k-grid-header-table k-table">
+                    <table role="none" class="k-grid-header-table k-table">
                         <colgroup>
                             <col class="k-group-col">
                             <col class="k-group-col">
@@ -535,35 +535,35 @@
                             <col>
                         </colgroup>
                         <thead class="k-table-thead">
-                            <tr class="k-table-row">
+                            <tr role="row" class="k-table-row">
                                 <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th">
                                     <span class="k-sr-only">Group</span>
                                 </th>
                                 <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th">
                                     <span class="k-sr-only">Group</span>
                                 </th>
-                                <th colspan="1" class="k-header k-table-th">
+                                <th colspan="1" role="columnheader" class="k-header k-table-th">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">ID</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th colspan="1" class="k-header k-table-th">
+                                <th colspan="1" role="columnheader" class="k-header k-table-th">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">Name</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th colspan="1" class="k-header k-table-th">
+                                <th colspan="1" role="columnheader" class="k-header k-table-th">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">Price</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th colspan="1" class="k-header k-table-th">
+                                <th colspan="1" role="columnheader" class="k-header k-table-th">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">Category</span>
@@ -577,7 +577,7 @@
             </div>
             <div class="k-grid-container">
                 <div class="k-grid-content">
-                    <table class="k-grid-table k-table">
+                    <table role="none" class="k-grid-table k-table">
                         <colgroup>
                             <col class="k-group-col">
                             <col class="k-group-col">
@@ -587,8 +587,8 @@
                             <col>
                         </colgroup>
                         <tbody class="k-table-tbody">
-                            <tr class="k-table-group-row k-grouping-row k-table-row">
-                                <td colspan="6" class="k-table-td">
+                            <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
+                                <td colspan="6" role="gridcell" aria-expanded="false" class="k-table-td">
                                     <p class="k-reset">
                                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -598,8 +598,8 @@
                                     </p>
                                 </td>
                             </tr>
-                            <tr class="k-table-group-row k-grouping-row k-table-row">
-                                <td colspan="6" class="k-table-td">
+                            <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
+                                <td colspan="6" role="gridcell" aria-expanded="true" class="k-table-td">
                                     <p class="k-reset">
                                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -609,9 +609,9 @@
                                     </p>
                                 </td>
                             </tr>
-                            <tr class="k-table-group-row k-grouping-row k-table-row">
-                                <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                <td colspan="5" class="k-table-td">
+                            <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
+                                <td class="k-table-group-td k-group-cell k-table-td" role="gridcell"></td>
+                                <td colspan="5" role="gridcell" aria-expanded="true" class="k-table-td">
                                     <p class="k-reset">
                                         <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -621,13 +621,13 @@
                                     </p>
                                 </td>
                             </tr>
-                            <tr class="k-master-row k-table-row k-table-alt-row">
-                                <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                <td colspan="0" class="k-table-td">2</td>
-                                <td colspan="0" class="k-table-td">Chang</td>
-                                <td colspan="0" class="k-table-td">$19.00</td>
-                                <td colspan="0" class="k-table-td">Beverages</td>
+                            <tr class="k-master-row k-table-row k-table-alt-row" role="row">
+                                <td class="k-table-group-td k-group-cell k-table-td" role="gridcell"></td>
+                                <td class="k-table-group-td k-group-cell k-table-td" role="gridcell"></td>
+                                <td colspan="0" role="gridcell" class="k-table-td">2</td>
+                                <td colspan="0" role="gridcell" class="k-table-td">Chang</td>
+                                <td colspan="0" role="gridcell" class="k-table-td">$19.00</td>
+                                <td colspan="0" role="gridcell" class="k-table-td">Beverages</td>
                             </tr>
                         </tbody>
                     </table>

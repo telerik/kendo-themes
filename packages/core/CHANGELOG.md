@@ -3,18 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [13.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.2...v13.1.0-dev.3) (2026-03-16)
-
-
-### Bug Fixes
-
-* **list:** incorrect alignment in rtl mode ([d3db5f4](https://github.com/telerik/kendo-themes/commit/d3db5f41523e8dc52950312f81577020c455fc39))
-* remove obsolete k-widget class from styles ([84e46a1](https://github.com/telerik/kendo-themes/commit/84e46a153e896a8551c32000b83d0616f9a16127))
-
-
-
-
-
 # [13.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.1...v13.1.0-dev.2) (2026-03-09)
 
 
