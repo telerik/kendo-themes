@@ -83,9 +83,9 @@ Treeview.ariaSpec = {
         { selector: '.k-treeview-lines', attribute: 'role=tree', usage: 'The root list element of the treeview.' },
         { selector: '.k-treeview-group:not(.k-treeview-lines)', attribute: 'role=group', usage: 'The ul element that wraps child nodes.' },
         { selector: '.k-treeview-item', attribute: 'role=treeitem', usage: 'The li element rendered for a tree node.' },
-        { selector: '.k-treeview-item[aria-expanded]', attribute: 'aria-expanded=true/false', usage: 'Announces the expanded state of the node.' },
-        { selector: '.k-treeview-item[aria-checked]', attribute: 'aria-checked=true/false', usage: 'Announces the checked state of the node when checkboxes are enabled.' },
-        { selector: '.k-treeview-item[aria-selected]', attribute: 'aria-selected=true', usage: 'Announces the selected state of the node when selection is enabled.' },
+        { selector: '.k-treeview-item', attribute: 'aria-expanded=true/false (when present)', usage: 'Announces the expanded state of the node.' },
+        { selector: '.k-treeview-item', attribute: 'aria-checked=true/false (when present)', usage: 'Announces the checked state of the node when checkboxes are enabled.' },
+        { selector: '.k-treeview-item', attribute: 'aria-selected=true (when present)', usage: 'Announces the selected state of the node when selection is enabled.' },
         { selector: '.k-treeview-item .k-checkbox', attribute: 'aria-label', usage: 'The checkbox input must have an accessible name matching the treeview item text.' },
         { selector: '.k-treeview-item .k-checkbox', attribute: 'tabindex=-1', usage: 'The checkbox input must not be in the tab order. Keyboard interaction is handled by the treeitem.' },
     ]

@@ -64,7 +64,7 @@ Spreadsheet.ariaSpec = {
         // Formula input
         { selector: '.k-spreadsheet-formula-bar .k-spreadsheet-formula-input', attribute: 'role=combobox', usage: 'The focusable element of the component should have role combobox (an input with popup).' },
         { selector: '.k-spreadsheet-formula-bar .k-spreadsheet-formula-input', attribute: 'aria-haspopup=menu', usage: 'Specifies that the formula input opens a popup.' },
-        { selector: '.k-spreadsheet-formula-bar .k-spreadsheet-formula-input[aria-controls]', attribute: 'aria-controls=.k-spreadsheet-formula-list id', usage: 'Points to the formulas list with role menu. Signifies that the formula input element controls the popup.' },
+        { selector: '.k-spreadsheet-formula-bar .k-spreadsheet-formula-input', attribute: 'aria-controls=.k-spreadsheet-formula-list id (when present)', usage: 'Points to the formulas list with role menu. Signifies that the formula input element controls the popup.' },
         { selector: '.k-spreadsheet-formula-bar .k-spreadsheet-formula-input', attribute: 'aria-expanded=true/false', usage: 'Announces the state of the popup visibility.' },
         { selector: '.k-spreadsheet-formula-bar .k-spreadsheet-formula-input', attribute: 'title', usage: 'The Formula input must have a title specifying its purpose.' },
 
@@ -76,13 +76,13 @@ Spreadsheet.ariaSpec = {
         // Add new sheet button
         { selector: '.k-spreadsheet-sheet-add', attribute: 'role=button or nodeName=button', usage: 'The add new sheet element is a button.' },
         { selector: '.k-spreadsheet-sheet-add', attribute: 'aria-label or title', usage: 'The add new sheet element must have a label as it does not have text content.' },
-        { selector: '.k-spreadsheet-sheet-add[aria-controls]', attribute: 'aria-controls=.k-tabstrip-items id', usage: 'Points to the ul element of the TabStrip that contains all tabs.' },
+        { selector: '.k-spreadsheet-sheet-add', attribute: 'aria-controls=.k-tabstrip-items id (when present)', usage: 'Points to the ul element of the TabStrip that contains all tabs.' },
 
         // Menu sheet button — follows DropDownButton spec (dropdownbutton_aria.md)
         // The Sheets menu button follows the DropDownButton accessibility specification.
         { selector: '.k-spreadsheet-sheets-menu', attribute: 'role=button or nodeName=button', usage: 'Follows DropDownButton spec: omitted if the button DOM element is used.' },
         { selector: '.k-spreadsheet-sheets-menu', attribute: 'aria-label or title', usage: 'Follows DropDownButton spec: required when no text is visible.' },
-        { selector: '.k-spreadsheet-sheets-menu[aria-controls]', attribute: 'aria-controls=.k-tabstrip-items id', usage: 'Points to the ul element of the TabStrip that contains all tabs.' },
+        { selector: '.k-spreadsheet-sheets-menu', attribute: 'aria-controls=.k-tabstrip-items id (when present)', usage: 'Points to the ul element of the TabStrip that contains all tabs.' },
 
         // Sheets bar — follows TabStrip spec (tabstrip_aria.md)
         // The Sheets bar TabStrip follows the TabStrip accessibility specification.

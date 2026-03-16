@@ -146,7 +146,7 @@ ListBox.ariaSpec = {
         { selector: '.k-listbox .k-list-item', attribute: 'tabindex', usage: 'The focused listbox item should have tabindex 0, all others -1.' },
         { selector: '.k-listbox-actions', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons.' },
         { selector: '.k-listbox-actions', attribute: 'aria-label', usage: 'Clarifies the purpose of the toolbar.' },
-        { selector: '.k-listbox-actions[aria-controls]', attribute: 'aria-controls', usage: 'Points to the id of the listbox element being controlled.' },
+        { selector: '.k-listbox-actions', attribute: 'aria-controls (when present)', usage: 'Points to the id of the listbox element being controlled.' },
         { selector: '.k-listbox-actions .k-button', attribute: 'aria-label or title', usage: 'All buttons in the toolbar must have labels.' },
     ]
 };

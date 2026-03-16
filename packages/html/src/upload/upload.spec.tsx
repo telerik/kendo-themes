@@ -95,7 +95,7 @@ Upload.ariaSpec = {
     selector: '.k-upload',
     rules: [
         { selector: '.k-upload .k-upload-button', attribute: 'aria-disabled', usage: 'Announces the disabled state of the upload button.' },
-        { selector: '.k-upload .k-upload-button[aria-controls]', attribute: 'aria-controls', usage: 'Creates the relationship between the button and the list of selected files when the list is present.' },
+        { selector: '.k-upload .k-upload-button', attribute: 'aria-controls (when present)', usage: 'Creates the relationship between the button and the list of selected files when the list is present.' },
         { selector: '.k-upload input', attribute: 'tabindex=-1', usage: 'Assures that the input element inside the upload is not focusable.' },
         { selector: '.k-upload input', attribute: 'aria-hidden=true', usage: 'The input needs to be hidden from screen readers.' },
         { selector: '.k-upload-files', attribute: 'role=list', usage: 'Explicitly sets the UL role to list.' },

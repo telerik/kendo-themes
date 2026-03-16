@@ -29,4 +29,7 @@ export * from './templates/grid-with-locked-columns';
 export * from './templates/grid-with-sticky-columns';
 export * from './templates/grid-with-edit-row';
 export * from './templates/grid-stack';
+export * from './templates/grid-with-pinned-rows';
+export * from './templates/grid-with-pinned-rows-pin-column';
+export * from './templates/grid-with-sticky-grouping';
 export * from './demos/grid';

@@ -51,51 +51,49 @@ TreeList.ariaSpec = {
         // ── TreeList Toolbar ──
         { selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons and inputs.' },
         { selector: '.k-grid-toolbar', attribute: 'aria-label', usage: 'Clarifies the purpose of the toolbar.' },
-        { selector: '.k-grid-toolbar[aria-controls]', attribute: 'aria-controls=.k-grid-aria-root id', usage: 'Pointing to the id of the element with role=treegrid.' },
+        { selector: '.k-grid-toolbar', attribute: 'aria-controls=.k-grid-aria-root id (when present)', usage: 'Pointing to the id of the element with role=treegrid.' },
 
         // ── TreeGrid Element ──
         { selector: '.k-treelist .k-grid-aria-root', attribute: 'role=treegrid', usage: 'The role specifies the element is a TreeGrid.' },
-        { selector: '.k-grid-aria-root[aria-colcount]', attribute: 'aria-colcount', usage: 'The total number of columns.' },
-        { selector: '.k-grid-aria-root[aria-rowcount]', attribute: 'aria-rowcount', usage: 'The total number of rows in the table.' },
+        { selector: '.k-grid-aria-root', attribute: 'aria-colcount (when present)', usage: 'The total number of columns.' },
+        { selector: '.k-grid-aria-root', attribute: 'aria-rowcount (when present)', usage: 'The total number of rows in the table.' },
 
         // ── TreeList Header ──
         { selector: '.k-grid-header-wrap>table', attribute: 'role=none', usage: 'Negates the default semantic role of the <table> element.' },
         { selector: '.k-grid-header-wrap>table>thead', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
         { selector: '.k-grid-header-wrap>table>thead>tr', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-grid-header-wrap>table>thead>tr[aria-rowindex]', attribute: 'aria-rowindex', usage: 'Row number.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr', attribute: 'aria-rowindex (when present)', usage: 'Row number.' },
         { selector: '.k-grid-header-wrap>table>thead>tr>th:not(.k-hierarchy-cell):not(.k-group-cell):not(.k-drag-cell)', attribute: 'role=columnheader', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-grid-header-wrap>table>thead>tr>th[aria-sort]', attribute: 'aria-sort', usage: 'Present if sorting is enabled for that column.' },
-        { selector: '.k-grid-header-wrap>table>thead>tr>th[aria-colindex]', attribute: 'aria-colindex', usage: 'Col number.' },
-        { selector: '.k-grid-header-wrap>table>thead>tr>th[aria-haspopup]', attribute: 'aria-haspopup=dialog', usage: 'Present if the column has a ColumnMenu or FilterMenu.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr>th', attribute: 'aria-sort (when present)', usage: 'Present if sorting is enabled for that column.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr>th', attribute: 'aria-colindex (when present)', usage: 'Col number.' },
+        { selector: '.k-grid-header-wrap>table>thead>tr>th', attribute: 'aria-haspopup=dialog (when present)', usage: 'Present if the column has a ColumnMenu or FilterMenu.' },
 
         // ── TreeList Content ──
         { selector: '.k-grid-content>table', attribute: 'role=none', usage: 'Negates the default semantic role of the <table> element.' },
         { selector: '.k-grid-content>table>tbody', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
         { selector: '.k-grid-content>table>tbody>tr', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-grid-content>table>tbody>tr[aria-rowindex]', attribute: 'aria-rowindex', usage: 'Row number.' },
+        { selector: '.k-grid-content>table>tbody>tr', attribute: 'aria-rowindex (when present)', usage: 'Row number.' },
         { selector: '.k-grid-content>table>tbody>tr>td', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-grid-content>table>tbody>tr>td[aria-colindex]', attribute: 'aria-colindex', usage: 'Col number.' },
+        { selector: '.k-grid-content>table>tbody>tr>td', attribute: 'aria-colindex (when present)', usage: 'Col number.' },
 
         // ── TreeList-Specific ──
-        { selector: '.k-grid-content>table>tbody>tr[aria-expanded]', attribute: 'aria-expanded', usage: 'Set on the currently expanded row(s).' },
-        { selector: '.k-grid-content>table>tbody>tr[aria-expanded] td[aria-expanded]', attribute: 'aria-expanded', usage: 'The cell containing the expand/collapse toggle also carries aria-expanded matching the row value, as it is the navigable focusable element.' },
+        { selector: '.k-grid-content>table>tbody>tr', attribute: 'aria-expanded (when present)', usage: 'Set on the currently expanded row(s).' },
+        { selector: '.k-grid-content>table>tbody>tr td', attribute: 'aria-expanded (when present)', usage: 'The cell containing the expand/collapse toggle also carries aria-expanded matching the row value, as it is the navigable focusable element.' },
         { selector: '.k-treelist-toggle[class*="i-caret-alt-down"],.k-treelist-toggle[class*="i-caret-alt-right"]', attribute: 'aria-hidden=true', usage: 'Removes the expand/collapse icon from the accessibility tree.' },
 
         // ── Filter Menu (open) ──
-        { selector: 'th[aria-expanded="true"][aria-controls]', attribute: 'aria-expanded=true', usage: 'Header cell announces the open state of the filter/column menu popup.' },
-        { selector: 'th[aria-expanded="true"][aria-controls]', attribute: 'aria-controls', usage: 'Points to the id of the popup dialog element.' },
-        { selector: '.k-grid-filter-popup[role="dialog"]', attribute: 'role=dialog', usage: 'The filter menu popup has dialog role.' },
-        { selector: '.k-grid-filter-popup[role="dialog"]', attribute: 'id', usage: 'Unique id linked to the header cell aria-controls attribute.' },
-        { selector: '.k-grid-filter-popup[role="dialog"]', attribute: 'aria-label', usage: 'Descriptive label for the filter menu.' },
+        { selector: '.k-grid-filter-popup', attribute: 'role=dialog', usage: 'The filter menu popup has dialog role.' },
+        { selector: '.k-grid-filter-popup', attribute: 'id', usage: 'Unique id linked to the header cell aria-controls attribute.' },
+        { selector: '.k-grid-filter-popup', attribute: 'aria-label', usage: 'Descriptive label for the filter menu.' },
 
         // ── Column Menu (open) ──
-        { selector: '.k-grid-columnmenu-popup[role="dialog"]', attribute: 'role=dialog', usage: 'The column menu popup has dialog role.' },
-        { selector: '.k-grid-columnmenu-popup[role="dialog"]', attribute: 'id', usage: 'Unique id linked to the header cell aria-controls attribute.' },
-        { selector: '.k-grid-columnmenu-popup[role="dialog"]', attribute: 'aria-label', usage: 'Descriptive label for the column menu.' },
+        { selector: '.k-grid-columnmenu-popup', attribute: 'role=dialog', usage: 'The column menu popup has dialog role.' },
+        { selector: '.k-grid-columnmenu-popup', attribute: 'id', usage: 'Unique id linked to the header cell aria-controls attribute.' },
+        { selector: '.k-grid-columnmenu-popup', attribute: 'aria-label', usage: 'Descriptive label for the column menu.' },
         { selector: '.k-grid-columnmenu-popup .k-columnmenu-item', attribute: 'role=button', usage: 'Column menu items have button role.' },
         { selector: '.k-grid-columnmenu-popup .k-columnmenu-item', attribute: 'tabindex=0', usage: 'Column menu items are focusable.' },
-        { selector: '.k-grid-columnmenu-popup .k-columnmenu-item[aria-expanded]', attribute: 'aria-expanded', usage: 'Expandable column menu items announce their expanded state.' },
-        { selector: '.k-grid-columnmenu-popup .k-columnmenu-item[aria-controls]', attribute: 'aria-controls', usage: 'Expandable items point to the id of the content they control.' },
+        { selector: '.k-grid-columnmenu-popup .k-columnmenu-item', attribute: 'aria-expanded (when present)', usage: 'Expandable column menu items announce their expanded state.' },
+        { selector: '.k-grid-columnmenu-popup .k-columnmenu-item', attribute: 'aria-controls (when present)', usage: 'Expandable items point to the id of the content they control.' },
         { selector: '.k-grid-columnmenu-popup .k-column-list', attribute: 'role=listbox', usage: 'The column list is a listbox.' },
         { selector: '.k-grid-columnmenu-popup .k-column-list', attribute: 'aria-multiselectable=true', usage: 'The column list supports multiple selections.' },
         { selector: '.k-grid-columnmenu-popup .k-column-list', attribute: 'aria-label', usage: 'Accessible name for the column list.' },
@@ -103,12 +101,12 @@ TreeList.ariaSpec = {
         { selector: '.k-grid-columnmenu-popup .k-column-list-item', attribute: 'aria-checked', usage: 'Column list items announce their checked state.' },
 
         // ── Locked Columns ──
-        { selector: '.k-grid-header-locked table tr[aria-owns]', attribute: 'aria-owns', usage: 'Locked header rows own cells from the corresponding non-locked header table rows.' },
-        { selector: '.k-grid-content-locked table tr[aria-owns]', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows.' },
+        { selector: '.k-grid-header-locked table tr', attribute: 'aria-owns', usage: 'Locked header rows own cells from the corresponding non-locked header table rows.' },
+        { selector: '.k-grid-content-locked table tr', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows.' },
         { selector: '.k-grid-lockedcolumns .k-grid-header-wrap table tr', attribute: 'role=none', usage: 'Non-locked header rows have their semantic role removed when locked columns exist.' },
         { selector: '.k-grid-lockedcolumns .k-grid-content table tr', attribute: 'role=none', usage: 'Non-locked content rows have their semantic role removed when locked columns exist.' },
-        { selector: '.k-grid-lockedcolumns .k-grid-header-wrap th[id]', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
-        { selector: '.k-grid-lockedcolumns .k-grid-content td[id]', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-header-wrap th', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-content td', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns.' },
 
         // ── Drag Cell ──
         { selector: '.k-drag-cell', attribute: 'aria-label', usage: 'Must be present in a Drag Row scenario on the cell containing the drag handle.' },
