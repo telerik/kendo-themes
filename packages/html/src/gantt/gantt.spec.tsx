@@ -89,8 +89,8 @@ Gantt.ariaSpec = {
         { selector: '.k-gantt-timeline .k-gantt-columns', attribute: 'role=presentation', usage: 'The columns grid is presentational.' },
         { selector: '.k-gantt-timeline .k-gantt-tasks', attribute: 'role=presentation', usage: 'The tasks table is presentational.' },
         { selector: '.k-gantt-timeline .k-task', attribute: 'role=treeitem', usage: 'Each task in the timeline is a tree item.' },
-        { selector: '.k-gantt-timeline .k-task[aria-level]', attribute: 'aria-level', usage: 'Specifies the nesting level of the task.' },
-        { selector: '.k-gantt-timeline .k-task[aria-describedby]', attribute: 'aria-describedby', usage: 'References the tooltip providing task details (when visible).' },
+        { selector: '.k-gantt-timeline .k-task', attribute: 'aria-level (when present)', usage: 'Specifies the nesting level of the task.' },
+        { selector: '.k-gantt-timeline .k-task', attribute: 'aria-describedby (when present)', usage: 'References the tooltip providing task details (when visible).' },
         { selector: '.k-gantt-timeline .k-task .k-task-complete', attribute: 'aria-hidden=true', usage: 'The progress indicator is decorative.' },
         { selector: '.k-gantt-timeline .k-task .k-task-actions', attribute: 'aria-hidden=true', usage: 'Task action buttons are hidden from the accessibility tree.' },
 

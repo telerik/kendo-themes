@@ -86,8 +86,8 @@ Orgchart.ariaSpec = {
         { selector: '.k-orgchart-node', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces that the edit menu of the OrgChart can be activated via the Enter key.' },
 
         // Expanded nodes
-        { selector: '.k-orgchart-node[aria-owns]', attribute: 'aria-expanded=true or aria-expanded=false', usage: 'Present when a node has subitems. Announces the expanded state of the node.' },
-        { selector: '.k-orgchart-node[aria-expanded]', attribute: 'aria-owns', usage: 'Present when a node has subitems. The value is the id of the group containing child nodes.' },
+        { selector: '.k-orgchart-node', attribute: 'aria-expanded=true or aria-expanded=false (when present)', usage: 'Present when a node has subitems. Announces the expanded state of the node.' },
+        { selector: '.k-orgchart-node', attribute: 'aria-owns (when present)', usage: 'Present when a node has subitems. The value is the id of the group containing child nodes.' },
 
         // Selected/focused nodes
         { selector: '.k-orgchart-node.k-focus', attribute: 'aria-selected=true', usage: 'Announces the selected (focused) item in the OrgChart.' },

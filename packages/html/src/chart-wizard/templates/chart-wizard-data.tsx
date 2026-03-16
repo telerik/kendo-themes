@@ -57,7 +57,7 @@ export const ChartWizardData = (props) => (
                                                 )}>
                                                 <GridContainer>
                                                     <GridContent>
-                                                        <GridTable>
+                                                        <GridTable role="none">
                                                             <colgroup>
                                                                 <col style={{ width: "40px" }} />
                                                                 <col />

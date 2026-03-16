@@ -43,7 +43,7 @@ Prompt.ariaSpec = {
         { selector: '.k-input-suffix > .k-button', attribute: 'aria-label or title', usage: 'The buttons must be properly labelled.' },
         { selector: '.k-input-suffix > .k-prompt-send.k-disabled', attribute: 'disabled', usage: 'Announces send action as disabled if necessary.' },
         // Suggestion component
-        { selector: '.k-prompt-expander .k-button[aria-controls]', attribute: 'aria-controls', usage: 'Points to the controlled element based on the given id.' },
+        { selector: '.k-prompt-expander .k-button', attribute: 'aria-controls (when present)', usage: 'Points to the controlled element based on the given id.' },
         { selector: '.k-prompt-expander .k-button', attribute: 'aria-expanded', usage: 'Indicates the expanded state of the prompt expander content.' },
         { selector: '.k-prompt-expander .k-suggestion-group', attribute: 'role=group', usage: 'Indicates that the suggestion container element is a group.' },
         { selector: '.k-prompt-expander .k-suggestion', attribute: 'role=button', usage: 'Indicates that the suggestion element is a button.' },
