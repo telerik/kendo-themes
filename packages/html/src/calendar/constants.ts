@@ -1,2 +1,3 @@
 export const CALENDAR_MODULE_NAME = 'calendar';
 export const CALENDAR_FOLDER_NAME = CALENDAR_MODULE_NAME;
+// test: trigger a11y affected detection
