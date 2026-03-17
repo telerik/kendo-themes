@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the DockManager component.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-pane-header-bg</td>
     <td>String</td>
     <td><code>k-color(surface)!default</code></td>
-    <td><code>var(--kendo-color-surface, #fafafa)</code></td>
+    <td><code>var(--kendo-color-surface, oklch(96.92% 0.0034 247.86deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the pane header in the DockManager component.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-unpinned-container-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-surface-alt, oklch(from var(--kendo-color-surface) calc(l + 0.02) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background-color of the unpinned pane container in the DockManager component.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #fafafa)</code></td>
+    <td><code>var(--kendo-color-surface, oklch(96.92% 0.0034 247.86deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the dock indicator in the DockManager component.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-text</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the dock indicator in the DockManager component.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-outline</td>
     <td>String</td>
     <td><code>$kendo-dock-indicator-text</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the dock indicator in the DockManager component.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> The background color of the hovered dock indicator in the DockManager component.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-hover-text</td>
     <td>String</td>
     <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>var(--kendo-color-on-primary, oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered dock indicator in the DockManager component.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(primary) 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg)) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the dropping area in the DockManager component.</div></div>
@@ -371,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-dock-preview-border</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the dropping area in the DockManager component.</div></div>

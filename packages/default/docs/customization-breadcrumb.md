@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the Breadcrumb.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 2px 1px k-color(border)</code></td>
-    <td><code>(0 0 2px 1px var(--kendo-color-border, rgba(0, 0, 0, 0.08)))</code></td>
+    <td><code>(0 0 2px 1px var(--kendo-color-border, oklch(0% 0 0deg / 0.08)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-link-text</td>
     <td>String</td>
     <td><code>k-color( primary-on-surface)</code></td>
-    <td><code>var(--kendo-color-primary-on-surface, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary-on-surface, oklch(from var(--kendo-color-primary) clamp(0.20, l, 0.60) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Breadcrumb link.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-link-hover-text</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(primary-on-surface) 80%, k-color(on-app-surface))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary-on-surface, #ff6358) 80%, var(--kendo-color-on-app-surface, #3d3d3d))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-on-surface, oklch(from var(--kendo-color-primary) clamp(0.20, l, 0.60) c h)) 80%, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Breadcrumb link.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-link-focus-text</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Breadcrumb link.</div></div>
@@ -461,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16)))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, oklch(0% 0 0deg / 0.16)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb link.</div></div>
@@ -561,7 +561,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-root-link-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-breadcrumb-link-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16)))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, oklch(0% 0 0deg / 0.16)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb root link.</div></div>

@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-surface-alt, oklch(from var(--kendo-color-surface) calc(l + 0.02) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper indicator.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper indicator.</div></div>
@@ -301,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper indicator.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-hover-bg</td>
     <td>String</td>
     <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
+    <td><code>var(--kendo-color-base-hover, oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.02, (0.35 - l) * 99999, 0.02)), 0.99) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Stepper indicator.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 60%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Stepper indicator.</div></div>
@@ -371,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-done-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's done indicator.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-done-text</td>
     <td>String</td>
     <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>var(--kendo-color-on-primary, oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's done indicator.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-done-border</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-bg</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's done indicator.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-done-hover-bg</td>
     <td>String</td>
     <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #ea5a51)</code></td>
+    <td><code>var(--kendo-color-primary-hover, oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's hovered done indicator.</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(primary) 60%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg)) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's disabled done indicator.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-done-disabled-text</td>
     <td>String</td>
     <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>var(--kendo-color-on-primary, oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled done indicator.</div></div>
@@ -451,7 +451,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-done-disabled-border</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg)) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled done indicator.</div></div>
@@ -461,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-current-bg</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-bg</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper current indicator.</div></div>
@@ -471,7 +471,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-current-text</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-text</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>var(--kendo-color-on-primary, oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper current indicator.</div></div>
@@ -481,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-current-border</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-border</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper current indicator.</div></div>
@@ -491,7 +491,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-current-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-hover-bg</code></td>
-    <td><code>var(--kendo-color-primary-hover, #ea5a51)</code></td>
+    <td><code>var(--kendo-color-primary-hover, oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's hovered current indicator.</div></div>
@@ -521,7 +521,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-current-disabled-bg</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg)) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's disabled current indicator.</div></div>
@@ -531,7 +531,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-current-disabled-text</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-text</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>var(--kendo-color-on-primary, oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled current indicator.</div></div>
@@ -541,7 +541,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-indicator-current-disabled-border</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-border</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg)) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled current indicator.</div></div>
@@ -561,7 +561,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-label-success-text</td>
     <td>String</td>
     <td><code>k-color(success-on-surface)!default</code></td>
-    <td><code>var(--kendo-color-success-on-surface, #2d9600)</code></td>
+    <td><code>var(--kendo-color-success-on-surface, oklch(from var(--kendo-color-success) clamp(0.20, l, 0.60) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the Stepper label.</div></div>
@@ -571,7 +571,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-label-error-text</td>
     <td>String</td>
     <td><code>k-color(error-on-surface)</code></td>
-    <td><code>var(--kendo-color-error-on-surface, #ca1400)</code></td>
+    <td><code>var(--kendo-color-error-on-surface, oklch(from var(--kendo-color-error) clamp(0.20, l, 0.60) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the Stepper label.</div></div>
@@ -581,7 +581,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-label-hover-text</td>
     <td>String</td>
     <td><code>k-color(on-base)</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-base, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Stepper label.</div></div>
@@ -591,7 +591,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-label-disabled-text</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 60%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Stepper label.</div></div>
@@ -601,7 +601,7 @@ The following table lists the available variables for customization.
     <td>$kendo-stepper-optional-label-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #666666)</code></td>
+    <td><code>var(--kendo-color-subtle, oklch(28.36% 0.0243 261.13deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the optional Stepper label.</div></div>

@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-bg</td>
     <td>String</td>
     <td><code>$kendo-button-bg</code></td>
-    <td><code>var(--kendo-color-base, #f5f5f5)</code></td>
+    <td><code>var(--kendo-color-base, oklch(96.92% 0.0034 247.86deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Picker components.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-text</td>
     <td>String</td>
     <td><code>$kendo-button-text</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-base, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Picker components.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-border</td>
     <td>String</td>
     <td><code>$kendo-button-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Picker components.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-button-hover-bg</code></td>
-    <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
+    <td><code>var(--kendo-color-base-hover, oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.02, (0.35 - l) * 99999, 0.02)), 0.99) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Picker components.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-hover-text</td>
     <td>String</td>
     <td><code>$kendo-button-hover-text</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-base, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Picker components.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-hover-border</td>
     <td>String</td>
     <td><code>$kendo-button-hover-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Picker components.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Picker components.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-outline-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Picker components.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-outline-border</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Picker components.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-outline-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-picker-outline-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline hovered Picker components.</div></div>
@@ -301,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-outline-hover-text</td>
     <td>String</td>
     <td><code>k-color(base)</code></td>
-    <td><code>var(--kendo-color-base, #f5f5f5)</code></td>
+    <td><code>var(--kendo-color-base, oklch(96.92% 0.0034 247.86deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline hovered Picker components.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-outline-hover-border</td>
     <td>String</td>
     <td><code>$kendo-picker-outline-hover-bg</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered Picker components.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-outline-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Picker components.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-flat-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Picker components.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-flat-border</td>
     <td>String</td>
     <td><code>$kendo-button-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Picker components.</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-flat-hover-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat hovered Picker components.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-flat-hover-border</td>
     <td>String</td>
     <td><code>k-color(border-alt)</code></td>
-    <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16))</code></td>
+    <td><code>var(--kendo-color-border-alt, oklch(0% 0 0deg / 0.16))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Picker components.</div></div>
@@ -481,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-picker-flat-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Picker components.</div></div>

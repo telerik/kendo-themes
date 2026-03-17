@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-notification-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-surface-alt, oklch(from var(--kendo-color-surface) calc(l + 0.02) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Notification.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-notification-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Notification.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-notification-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Notification.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-notification-theme</td>
     <td>Map</td>
     <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-inverse, #3d3d3d)","border":"var(--kendo-color-inverse, #3d3d3d)"</li><li>light: "color":"var(--kendo-color-on-light, #000000)","background-color":"var(--kendo-color-light, #ebebeb)","border":"var(--kendo-color-light, #ebebeb)"</li><li>dark: "color":"var(--kendo-color-on-dark, #ffffff)","background-color":"var(--kendo-color-dark, #3d3d3d)","border":"var(--kendo-color-dark, #3d3d3d)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #f31700)","border":"var(--kendo-color-error, #f31700)"</li><li>warning: "color":"var(--kendo-color-on-warning, #3d3d3d)","background-color":"var(--kendo-color-warning, #ffc000)","border":"var(--kendo-color-warning, #ffc000)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #37b400)","border":"var(--kendo-color-success, #37b400)"</li><li>info: "color":"var(--kendo-color-on-info, #ffffff)","background-color":"var(--kendo-color-info, #0058e9)","border":"var(--kendo-color-info, #0058e9)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #03a9f4)","border":"var(--kendo-color-tertiary, #03a9f4)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #ffffff)","background-color":"var(--kendo-color-secondary, #666666)","border":"var(--kendo-color-secondary, #666666)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #ff6358)","border":"var(--kendo-color-primary, #ff6358)"</li><li>base: "color":"var(--kendo-color-on-base, #3d3d3d)","background-color":"var(--kendo-color-base, #f5f5f5)","border":"var(--kendo-color-base, #f5f5f5)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, oklch(100% 0 0deg))","background-color":"var(--kendo-color-inverse, oklch(32% 0 0deg))","border":"var(--kendo-color-inverse, oklch(32% 0 0deg))"</li><li>light: "color":"var(--kendo-color-on-light, oklch(0% 0 0deg))","background-color":"var(--kendo-color-light, oklch(93% 0 0deg))","border":"var(--kendo-color-light, oklch(93% 0 0deg))"</li><li>dark: "color":"var(--kendo-color-on-dark, oklch(100% 0 0deg))","background-color":"var(--kendo-color-dark, oklch(32% 0 0deg))","border":"var(--kendo-color-dark, oklch(32% 0 0deg))"</li><li>error: "color":"var(--kendo-color-on-error, oklch(from var(--kendo-color-error) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))","background-color":"var(--kendo-color-error, oklch(61.07% 0.2435 30.2deg))","border":"var(--kendo-color-error, oklch(61.07% 0.2435 30.2deg))"</li><li>warning: "color":"var(--kendo-color-on-warning, oklch(from var(--kendo-color-warning) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))","background-color":"var(--kendo-color-warning, oklch(84.22% 0.1727 84.58deg))","border":"var(--kendo-color-warning, oklch(84.22% 0.1727 84.58deg))"</li><li>success: "color":"var(--kendo-color-on-success, oklch(from var(--kendo-color-success) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))","background-color":"var(--kendo-color-success, oklch(67.45% 0.2171 139.99deg))","border":"var(--kendo-color-success, oklch(67.45% 0.2171 139.99deg))"</li><li>info: "color":"var(--kendo-color-on-info, oklch(from var(--kendo-color-info) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))","background-color":"var(--kendo-color-info, oklch(51.78% 0.2301 261.43deg))","border":"var(--kendo-color-info, oklch(51.78% 0.2301 261.43deg))"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, oklch(from var(--kendo-color-tertiary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))","background-color":"var(--kendo-color-tertiary, oklch(72.46% 0.1727 310.67deg))","border":"var(--kendo-color-tertiary, oklch(72.46% 0.1727 310.67deg))"</li><li>secondary: "color":"var(--kendo-color-on-secondary, oklch(from var(--kendo-color-secondary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))","background-color":"var(--kendo-color-secondary, oklch(54.53% 0.2124 275.85deg))","border":"var(--kendo-color-secondary, oklch(54.53% 0.2124 275.85deg))"</li><li>primary: "color":"var(--kendo-color-on-primary, oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))","background-color":"var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))","border":"var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))"</li><li>base: "color":"var(--kendo-color-on-base, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))","background-color":"var(--kendo-color-base, oklch(96.92% 0.0034 247.86deg))","border":"var(--kendo-color-base, oklch(96.92% 0.0034 247.86deg))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>

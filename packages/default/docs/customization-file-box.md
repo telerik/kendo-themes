@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-box-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(base-on-subtle) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle, #3d3d3d) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the File Box.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-box-text</td>
     <td>String</td>
     <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-base-on-subtle, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the File Box.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-box-border</td>
     <td>String</td>
     <td><code>$kendo-file-box-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle, #3d3d3d) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the File Box.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-box-wrapper-scroll-gradient</td>
     <td>List</td>
     <td><code>rgba(255, 255, 255, 0.00) 0%, k-color(app-surface) 100%</code></td>
-    <td><code>(rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface, #ffffff) 100%)</code></td>
+    <td><code>(rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface, oklch(100% 0 0deg)) 100%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for the File Box wrapper scrolling indicator.</div></div>

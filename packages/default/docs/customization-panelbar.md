@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-surface-alt, oklch(from var(--kendo-color-surface) calc(l + 0.02) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PanelBar.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PanelBar.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-header-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-surface-alt, oklch(from var(--kendo-color-surface) calc(l + 0.02) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar header.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-header-text</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PanelBar header.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-header-hover-bg</td>
     <td>String</td>
     <td><code>color-mix( in srgb, k-color(on-app-surface) 8%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar header.</div></div>
@@ -301,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16)))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, oklch(0% 0 0deg / 0.16)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused PanelBar header.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar header.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-header-selected-text</td>
     <td>String</td>
     <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>var(--kendo-color-on-primary, oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected PanelBar header.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
     <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #ea5a51)</code></td>
+    <td><code>var(--kendo-color-primary-hover, oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar header.</div></div>
@@ -511,7 +511,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-item-hover-bg</td>
     <td>String</td>
     <td><code>color-mix( in srgb, k-color(on-app-surface) 8%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar items.</div></div>
@@ -591,7 +591,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16)))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, oklch(0% 0 0deg / 0.16)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused PanelBar items.</div></div>
@@ -641,7 +641,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar items.</div></div>
@@ -651,7 +651,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-item-selected-text</td>
     <td>String</td>
     <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+    <td><code>var(--kendo-color-on-primary, oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected PanelBar items.</div></div>
@@ -681,7 +681,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
     <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #ea5a51)</code></td>
+    <td><code>var(--kendo-color-primary-hover, oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar items.</div></div>

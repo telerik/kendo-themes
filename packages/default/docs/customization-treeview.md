@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TreeView.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-item-hover-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 6%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 6%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 6%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered TreeView items.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-item-hover-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered TreeView items.</div></div>
@@ -371,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 12%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-item-selected-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected TreeView items.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-item-selected-hover-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 18%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 18%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 18%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected and hovered TreeView items.</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16)))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, oklch(0% 0 0deg / 0.16)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of focused TreeView items.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-loadmore-text</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Load More button in the TreeView</div></div>
@@ -471,7 +471,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-loadmore-hover-text</td>
     <td>String</td>
     <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #ea5a51)</code></td>
+    <td><code>var(--kendo-color-primary-hover, oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Load More button in the TreeView.</div></div>
@@ -501,7 +501,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-loadmore-focus-text</td>
     <td>String</td>
     <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover, #ea5a51)</code></td>
+    <td><code>var(--kendo-color-primary-hover, oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Load More button in the TreeView.</div></div>
@@ -521,7 +521,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-loadmore-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-treeview-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16)))</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt, oklch(0% 0 0deg / 0.16)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>

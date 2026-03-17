@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-suggestion-scroll-gradient</td>
     <td>List</td>
     <td><code>rgba(255, 255, 255, 0.00) 0%, k-color(app-surface) 100%</code></td>
-    <td><code>(rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface, #ffffff) 100%)</code></td>
+    <td><code>(rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface, oklch(100% 0 0deg)) 100%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for scroll indicators in the Suggestion group.</div></div>

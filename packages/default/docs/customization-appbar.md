@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-appbar-light-bg</td>
     <td>String</td>
     <td><code>k-color(light)</code></td>
-    <td><code>var(--kendo-color-light, #ebebeb)</code></td>
+    <td><code>var(--kendo-color-light, oklch(93% 0 0deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AppBar based on light theme color.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-appbar-light-text</td>
     <td>String</td>
     <td><code>k-color(on-light)</code></td>
-    <td><code>var(--kendo-color-on-light, #000000)</code></td>
+    <td><code>var(--kendo-color-on-light, oklch(0% 0 0deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar based on light theme color.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-appbar-dark-bg</td>
     <td>String</td>
     <td><code>k-color(dark)</code></td>
-    <td><code>var(--kendo-color-dark, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-dark, oklch(32% 0 0deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AppBar based on dark theme color.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-appbar-dark-text</td>
     <td>String</td>
     <td><code>k-color(on-dark)</code></td>
-    <td><code>var(--kendo-color-on-dark, #ffffff)</code></td>
+    <td><code>var(--kendo-color-on-dark, oklch(100% 0 0deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar based on dark theme color.</div></div>

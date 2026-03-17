@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-segmented-control-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(base), currentColor 6%)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base, #f5f5f5), currentColor 6%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base, oklch(96.92% 0.0034 247.86deg)), currentColor 6%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Segmented Control.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-segmented-control-text</td>
     <td>String</td>
     <td><code>k-color(on-base)</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-base, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Segmented Control.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-segmented-control-thumb-bg</td>
     <td>String</td>
     <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, oklch(100% 0 0deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the Segmented Control thumb.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-segmented-control-thumb-text</td>
     <td>String</td>
     <td><code>$kendo-segmented-control-text</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-base, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Segmented Control thumb.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-segmented-control-button-hover-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, currentColor 16%, k-color(base-hover))</code></td>
-    <td><code>color-mix(in srgb, currentColor 16%, var(--kendo-color-base-hover, #ebebeb))</code></td>
+    <td><code>color-mix(in srgb, currentColor 16%, var(--kendo-color-base-hover, oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.02, (0.35 - l) * 99999, 0.02)), 0.99) c h)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered button inside Segmented Control.</div></div>

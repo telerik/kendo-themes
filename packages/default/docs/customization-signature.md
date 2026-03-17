@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-line-color</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(info) 24%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-info, #0058e9) 24%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-info, oklch(51.78% 0.2301 261.43deg)) 24%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Signature line.</div></div>

@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 50%, transparent)</code></td>
-    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark, #3d3d3d) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, #ebebeb) 50%, transparent))</code></td>
+    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark, oklch(32% 0 0deg)) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, oklch(93% 0 0deg)) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>List</td>
     <td><code>0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 80%, transparent)</code></td>
-    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark, #3d3d3d) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, #ebebeb) 80%, transparent))</code></td>
+    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark, oklch(32% 0 0deg)) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, oklch(93% 0 0deg)) 80%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette hovered tile.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-palette-tile-selected-shadow</td>
     <td>List</td>
     <td><code>0 1px 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 100%, transparent)</code></td>
-    <td><code>(0 1px 3px 1px color-mix(in srgb, var(--kendo-color-dark, #3d3d3d) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, #ebebeb) 100%, transparent))</code></td>
+    <td><code>(0 1px 3px 1px color-mix(in srgb, var(--kendo-color-dark, oklch(32% 0 0deg)) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light, oklch(93% 0 0deg)) 100%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette selected tile.</div></div>

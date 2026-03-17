@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #fafafa)</code></td>
+    <td><code>var(--kendo-color-surface, oklch(96.92% 0.0034 247.86deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Toolbar.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Toolbar.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>List</td>
     <td><code>$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
-    <td><code>(var(--kendo-color-surface, #fafafa), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
+    <td><code>(var(--kendo-color-surface, oklch(96.92% 0.0034 247.86deg)), color-mix(in srgb, var(--kendo-color-app-surface, oklch(100% 0 0deg)) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the Toolbar.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-outline-text</td>
     <td>String</td>
     <td><code>$kendo-button-text</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-on-base, oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Toolbar.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-outline-border</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the outline Toolbar.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-outline-scroll-overlay</td>
     <td>List</td>
     <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
-    <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
+    <td><code>(var(--kendo-color-app-surface, oklch(100% 0 0deg)), color-mix(in srgb, var(--kendo-color-app-surface, oklch(100% 0 0deg)) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the outline Toolbar.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-flat-border</td>
     <td>String</td>
     <td><code>$kendo-toolbar-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
+    <td><code>var(--kendo-color-border, oklch(0% 0 0deg / 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the flat Toolbar.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-flat-scroll-overlay</td>
     <td>List</td>
     <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
-    <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
+    <td><code>(var(--kendo-color-app-surface, oklch(100% 0 0deg)), color-mix(in srgb, var(--kendo-color-app-surface, oklch(100% 0 0deg)) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the flat Toolbar.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)) 8%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>

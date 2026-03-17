@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chart-wizard-icon-area-color</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the area around the chart type icon.</div></div>
@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chart-wizard-icon-area-bg</td>
     <td>String</td>
     <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #ffeceb)</code></td>
+    <td><code>var(--kendo-color-primary-subtle, oklch(from var(--kendo-color-primary) calc(l * 0.05 + 0.95) calc(c * 0.12) h))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the area around the chart type icon.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, #ff9d97))</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, oklch(from var(--kendo-color-primary) calc(l * 0.21 + 0.79) calc(c * 0.55) h)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused area around the chart type icon.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chart-wizard-icon-area-selected-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-chart-wizard-icon-area-color</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #ff6358))</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected area around the chart type icon.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chart-wizard-chart-type-selected-color</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
+    <td><code>var(--kendo-color-primary, oklch(37.17% 0.0392 257.29deg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the selected chart type items in the Property panel.</div></div>
