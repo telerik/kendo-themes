@@ -1,4 +1,5 @@
 ﻿import Checkbox, { CheckboxProps } from '../checkbox.spec';
+import { nextId } from '../../misc';
 import { CheckboxWithLabelAfter } from '../templates/checkbox-with-label-after';
 
 const options = Checkbox.options;
@@ -9,7 +10,7 @@ const variants = [];
 const modifiers = [];
 
 export const CheckboxDemo = (props: CheckboxProps & { variant?: (typeof variants)[number]['name'] }) => (
-    <CheckboxWithLabelAfter id="checkbox-demo-checkbox" {...props} defaultChecked={true}>Label</CheckboxWithLabelAfter>
+    <CheckboxWithLabelAfter id={nextId('checkbox')} {...props} defaultChecked={true}>Label</CheckboxWithLabelAfter>
 );
 
 CheckboxDemo.options = options;

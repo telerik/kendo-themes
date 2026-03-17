@@ -13,7 +13,7 @@ export const TimelineHorizontal = (props) => (
                         <TimelineDateWrap date="Jan 14, 2015"></TimelineDateWrap>
                         <TimelineCircle></TimelineCircle>
                     </TimelineTrackItem>
-                    <TimelineTrackItem focus>
+                    <TimelineTrackItem focus ariaSelected ariaDescribedBy="panel-1">
                         <TimelineDateWrap date="Jun 1, 2015"></TimelineDateWrap>
                         <TimelineCircle></TimelineCircle>
                     </TimelineTrackItem>
@@ -26,7 +26,7 @@ export const TimelineHorizontal = (props) => (
                     </TimelineTrackItem>
                 </TimelineTrackWrap>
                 <TimelineEventList>
-                    <HorizontalTimelineEvent />
+                    <HorizontalTimelineEvent ariaLabel="Jun 1, 2015" panelTabIndex={0} />
                 </TimelineEventList>
             </>
         }

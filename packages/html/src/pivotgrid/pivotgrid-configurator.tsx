@@ -1,6 +1,6 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
-import { classNames } from '../misc';
+import { classNames, nextId } from '../misc';
 
 export const PIVOTGRIDCONFIGURATOR_CLASSNAME = `k-pivotgrid-configurator`;
 
@@ -13,6 +13,7 @@ export type KendoPivotGridConfiguratorProps = {
     orientation?: "horizontal" | "vertical";
     mode?: "overlay" | "push";
     header?: string;
+    headerId?: string;
 };
 
 const defaultActionButtons = (
@@ -38,9 +39,12 @@ export const PivotGridConfigurator = (
         mode = defaultOptions.mode,
         actionButtons = defaultOptions.actionButtons,
         header = defaultOptions.header,
+        headerId: headerIdProp,
         children,
         ...other
     } = props;
+
+    const headerId = headerIdProp || nextId('pivotgrid-configurator-header');
 
     return (
         <div
@@ -48,7 +52,9 @@ export const PivotGridConfigurator = (
             className={classNames(
                 props.className,
                 PIVOTGRIDCONFIGURATOR_CLASSNAME
-            )}>
+            )}
+            role="dialog"
+            aria-labelledby={headerId}>
             <div className={classNames(
                 "k-pivotgrid-configurator-panel",
                 {
@@ -57,7 +63,7 @@ export const PivotGridConfigurator = (
                 }
             )}>
                 <div className="k-pivotgrid-configurator-header">
-                    <div className="k-pivotgrid-configurator-header-text">{header}</div>
+                    <div className="k-pivotgrid-configurator-header-text" id={headerId}>{header}</div>
                 </div>
                 <div className="k-pivotgrid-configurator-content">
                     {children}

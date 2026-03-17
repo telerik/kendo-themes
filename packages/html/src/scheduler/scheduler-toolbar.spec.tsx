@@ -26,19 +26,20 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
                     [ footer ? 'k-scheduler-footer' : className ]: true
                 }
             )}
+            aria-label={others['aria-label'] || (footer ? 'Scheduler footer' : 'Scheduler toolbar')}
         >
             {props.children ||
                 [
-                    <ButtonGroup className="k-scheduler-navigation">
+                    <ButtonGroup key="nav" className="k-scheduler-navigation">
                         <Button className="k-group-start">Today</Button>
-                        <Button icon="caret-alt-left"></Button>
-                        <Button className="k-group-end" icon="caret-alt-right"></Button>
+                        <Button icon="caret-alt-left" aria-label="Navigate to previous period"></Button>
+                        <Button className="k-group-end" icon="caret-alt-right" aria-label="Navigate to next period"></Button>
                     </ButtonGroup>,
-                    <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                    <Button key="current" icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                         Monday, June 13, 2022
                     </Button>,
-                    <span className="k-spacer"></span>,
-                    <ButtonGroup className="k-scheduler-views">
+                    <span key="spacer" className="k-spacer"></span>,
+                    <ButtonGroup key="views" className="k-scheduler-views">
                         <Button className="k-group-start" selected>Day</Button>
                         <Button>Week</Button>
                         <Button>Month</Button>

@@ -58,7 +58,7 @@ export const FormField = (
                 }
             )} dir={dir}>
             {label &&
-                <Label className="k-form-label" htmlFor={editorId || undefined} optional={optional} info={info ? "(field info)" : undefined}>
+                <Label className="k-form-label" id={editorId ? `${editorId}-label` : undefined} htmlFor={editorId || undefined} optional={optional} info={info ? "(field info)" : undefined}>
                     {label}
                 </Label>
             }

@@ -30,8 +30,8 @@
         <section>
             <div class="k-label">Label</div>
             <span class="k-dropdowngrid k-combobox k-input">
-                <input class="k-input-inner" placeholder="Placeholder" autocomplete="off" type="text" value="">
-                <button class="k-input-button k-button k-icon-button">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select option" class="k-input-inner" placeholder="Placeholder" autocomplete="off" type="text" value="">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -43,15 +43,15 @@
                 <div class="k-overlay"></div>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
-                        <div role="dialog" aria-modal="true" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
-                            <div class="k-actionsheet-view">
+                        <div id="k-ddg-as-1" role="dialog" aria-modal="true" aria-labelledby="k-ddg-as-1-title" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
+                            <div id="k-ddg-as-1" class="k-actionsheet-view">
                                 <div class="k-actionsheet-titlebar">
                                     <div class="k-actionsheet-titlebar-group">
-                                        <div class="k-actionsheet-title">
+                                        <div class="k-actionsheet-title" id="k-ddg-as-1-title">
                                             <div class="k-text-center">Label</div>
                                         </div>
                                         <div class="k-actionsheet-actions">
-                                            <button class="k-button k-button-lg k-button-flat k-button-primary k-icon-button">
+                                            <button class="k-button k-button-lg k-button-flat k-button-primary k-icon-button" aria-label="Apply selection">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
@@ -91,36 +91,36 @@
                                                 <span class="k-table-th">Initial group</span>
                                             </div>
                                             <div class="k-table-body k-table-scroller">
-                                                <ul class="k-table k-table-list">
-                                                    <li class="k-table-row">
+                                                <ul role="listbox" id="k-ddg-1-table-list" aria-label="Options" class="k-table k-table-list">
+                                                    <li role="option" class="k-table-row">
                                                         <span class="k-table-td" style="width: 50px;">1</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 1.2</span>
                                                         <span class="k-table-td">Data 1.3</span>
                                                     </li>
-                                                    <li class="k-table-row k-table-alt-row">
+                                                    <li role="option" class="k-table-row k-table-alt-row">
                                                         <span class="k-table-td" style="width: 50px;">2</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 2.2 (alt)</span>
                                                         <span class="k-table-td">Data 2.3</span>
                                                     </li>
-                                                    <li class="k-table-row">
+                                                    <li role="option" class="k-table-row">
                                                         <span class="k-table-td" style="width: 50px;">3</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 3.2</span>
                                                         <span class="k-table-td">Data 3.3</span>
                                                     </li>
-                                                    <li class="k-table-group-row">
+                                                    <li role="presentation" class="k-table-group-row">
                                                         <span class="k-table-th">Group</span>
                                                     </li>
-                                                    <li class="k-table-row">
+                                                    <li role="option" class="k-table-row">
                                                         <span class="k-table-td" style="width: 50px;">4</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 4.2</span>
                                                         <span class="k-table-td">Data 4.3</span>
                                                     </li>
-                                                    <li class="k-table-row k-table-alt-row">
+                                                    <li role="option" class="k-table-row k-table-alt-row">
                                                         <span class="k-table-td" style="width: 50px;">5</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 5.2 (alt)</span>
                                                         <span class="k-table-td">Data 5.3</span>
                                                     </li>
-                                                    <li class="k-table-row">
+                                                    <li role="option" class="k-table-row">
                                                         <span class="k-table-td" style="width: 50px;">6</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 6.2</span>
                                                         <span class="k-table-td">Data 6.3</span>
@@ -142,8 +142,8 @@
         <section>
             <div class="k-label">Label</div>
             <span class="k-dropdowngrid k-combobox k-input">
-                <input class="k-input-inner" placeholder="Placeholder" autocomplete="off" type="text" value="">
-                <button class="k-input-button k-button k-icon-button">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select option" class="k-input-inner" placeholder="Placeholder" autocomplete="off" type="text" value="">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -163,7 +163,7 @@
                                             <div class="k-text-center">Label</div>
                                         </div>
                                         <div class="k-actionsheet-actions">
-                                            <button class="k-button k-button-lg k-button-flat k-button-primary k-icon-button">
+                                            <button class="k-button k-button-lg k-button-flat k-button-primary k-icon-button" aria-label="Apply selection">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
@@ -203,36 +203,36 @@
                                                 <span class="k-table-th">Initial group</span>
                                             </div>
                                             <div class="k-table-body k-table-scroller">
-                                                <ul class="k-table k-table-list">
-                                                    <li class="k-table-row">
+                                                <ul role="listbox" id="k-ddg-2-table-list" aria-label="Options" class="k-table k-table-list">
+                                                    <li role="option" class="k-table-row">
                                                         <span class="k-table-td" style="width: 50px;">1</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 1.2</span>
                                                         <span class="k-table-td">Data 1.3</span>
                                                     </li>
-                                                    <li class="k-table-row k-table-alt-row">
+                                                    <li role="option" class="k-table-row k-table-alt-row">
                                                         <span class="k-table-td" style="width: 50px;">2</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 2.2 (alt)</span>
                                                         <span class="k-table-td">Data 2.3</span>
                                                     </li>
-                                                    <li class="k-table-row">
+                                                    <li role="option" class="k-table-row">
                                                         <span class="k-table-td" style="width: 50px;">3</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 3.2</span>
                                                         <span class="k-table-td">Data 3.3</span>
                                                     </li>
-                                                    <li class="k-table-group-row">
+                                                    <li role="presentation" class="k-table-group-row">
                                                         <span class="k-table-th">Group</span>
                                                     </li>
-                                                    <li class="k-table-row">
+                                                    <li role="option" class="k-table-row">
                                                         <span class="k-table-td" style="width: 50px;">4</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 4.2</span>
                                                         <span class="k-table-td">Data 4.3</span>
                                                     </li>
-                                                    <li class="k-table-row k-table-alt-row">
+                                                    <li role="option" class="k-table-row k-table-alt-row">
                                                         <span class="k-table-td" style="width: 50px;">5</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 5.2 (alt)</span>
                                                         <span class="k-table-td">Data 5.3</span>
                                                     </li>
-                                                    <li class="k-table-row">
+                                                    <li role="option" class="k-table-row">
                                                         <span class="k-table-td" style="width: 50px;">6</span>
                                                         <span class="k-table-td" style="width: 160px;">Data 6.2</span>
                                                         <span class="k-table-td">Data 6.3</span>

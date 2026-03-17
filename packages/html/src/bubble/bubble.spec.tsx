@@ -65,10 +65,11 @@ export const Bubble: KendoComponent<KendoBubbleProps &
                     'k-expanded': expanded,
                 },
             )}
+            tabIndex={0}
         >
         <div className="k-bubble-content">{content ?? props.children}</div>
         { expandable &&
-            <span className="k-bubble-expandable-indicator">
+            <span className="k-bubble-expandable-indicator" role="button" aria-label={expanded ? "Show less" : "Show more"} tabIndex={0}>
                 { !expanded ? <Icon icon="chevron-down" /> : <Icon icon="chevron-up" /> }
             </span>
         }
@@ -81,5 +82,15 @@ Bubble.className = BUBBLE_CLASSNAME;
 Bubble.defaultOptions = defaultOptions;
 Bubble.moduleName = BUBBLE_MODULE_NAME;
 Bubble.folderName = BUBBLE_FOLDER_NAME;
+
+Bubble.ariaSpec = {
+    selector: '.k-bubble',
+    rules: [
+        { selector: '.k-bubble', attribute: 'tabindex=0', usage: 'The Chat bubble must be focusable.' },
+        { selector: '.k-bubble-expandable-indicator', attribute: 'role=button', usage: 'The expandable indicator must have an appropriate role.' },
+        { selector: '.k-bubble-expandable-indicator', attribute: 'aria-label or title', usage: 'The expandable indicator must be properly labelled.' },
+        { selector: '.k-bubble-expandable-indicator', attribute: 'tabindex=0', usage: 'The expandable indicator must be part of the page tabsequence.' },
+    ]
+};
 
 export default Bubble;

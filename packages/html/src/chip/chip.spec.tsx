@@ -94,7 +94,7 @@ export const Chip: KendoComponent<KendoChipProps & KendoChipState & React.HTMLAt
             )}
             role={props.role || 'button'}
             aria-pressed={props.role === 'option' ? undefined : (selected ? 'true' : 'false')}
-            aria-selected={props.role === 'option' ? (selected ? 'true' : 'false') : undefined}
+            {...(props.role === 'option' && selected !== undefined && { 'aria-selected': selected ? 'true' : 'false' })}
             aria-disabled={disabled ? 'true' : undefined}
         >
             {icon && <Icon className="k-chip-icon" icon={icon} size="small" /> }

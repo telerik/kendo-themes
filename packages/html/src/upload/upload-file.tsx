@@ -41,6 +41,8 @@ export const UploadFile = (
                     [`k-file-${status}`]: status,
                 }
             )}
+            role="listitem"
+            tabIndex={0}
         >
             <div className="k-file-single">
                 <ProgressBar className={classNames(
@@ -58,10 +60,10 @@ export const UploadFile = (
                         ?
                         <>
                             <span className="k-upload-pct">{progress}%</span>
-                            <Button icon="pause-sm" fillMode="flat" className="k-upload-action"></Button>
-                            <Button icon="cancel" fillMode="flat" className="k-upload-action"></Button>
+                            <Button icon="pause-sm" fillMode="flat" className="k-upload-action" aria-label="Pause upload" tabIndex={-1}></Button>
+                            <Button icon="cancel" fillMode="flat" className="k-upload-action" aria-label="Cancel upload" tabIndex={-1}></Button>
                         </>
-                        : <Button icon="x" fillMode="flat" className="k-upload-action"></Button>
+                        : <Button icon="x" fillMode="flat" className="k-upload-action" aria-label="Remove file" tabIndex={-1}></Button>
                     }
                 </div>
             </div>

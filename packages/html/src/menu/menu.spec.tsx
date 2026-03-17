@@ -129,15 +129,15 @@ Menu.ariaSpec = {
         { selector: '.k-menu:not(.k-context-menu)', attribute: 'role=menubar', usage: 'Announces the Menu menubar role.' },
         { selector: '.k-menu.k-menu-vertical', attribute: 'aria-orientation=vertical', usage: 'Announces the Menu orientation when vertical.' },
         { selector: '.k-menu-item', attribute: 'role=menuitem', usage: 'Announces the Menu item role.' },
-        { selector: '.k-menu-item[aria-haspopup]', attribute: 'aria-haspopup=menu', usage: 'Indicates a popup menu is associated with the item.' },
-        { selector: '.k-menu-item[aria-haspopup]', attribute: 'aria-expanded=true/false', usage: 'Indicates whether the submenu is expanded.' },
+        { selector: '.k-menu-item', attribute: 'aria-haspopup=menu (when present)', usage: 'Indicates a popup menu is associated with the item.' },
+        { selector: '.k-menu-item', attribute: 'aria-expanded=true/false (when present)', usage: 'Indicates whether the submenu is expanded.' },
         { selector: '.k-menu-item.k-disabled', attribute: 'aria-disabled=true', usage: 'Informs assistive technologies that a Menu item is disabled.' },
         { selector: '.k-menu-expand-arrow', attribute: 'aria-hidden=true', usage: 'Expand arrow elements are hidden from assistive technologies.' },
         { selector: '.k-menu-popup .k-menu-group', attribute: 'role=menu', usage: 'The role of the nested menu displayed in a popup.' },
         { selector: '.k-menu-scroll-button', attribute: 'tabindex=-1', usage: 'Scroll buttons are removed from the tab sequence.' },
         { selector: '.k-menu-scroll-button', attribute: 'aria-label', usage: 'Scroll buttons have an accessible label.' },
         { selector: '.k-menu-item.k-focus', attribute: 'tabindex=0', usage: 'The focused item has tabindex 0.' },
-        { selector: '.k-menu-item[aria-haspopup][aria-controls]', attribute: 'aria-controls=ul.k-menu-group id', usage: 'Points to the ID of the submenu. Only present when the item controls a submenu element.' },
+        { selector: '.k-menu-item', attribute: 'aria-controls=ul.k-menu-group id (when present)', usage: 'Points to the ID of the submenu. Only present when the item controls a submenu element.' },
         { selector: '.k-menu-popup .k-menu-group', attribute: 'id', usage: 'Each nested menu has a deterministic id linked to the parent aria-controls.' },
     ]
 };

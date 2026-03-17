@@ -3,30 +3,35 @@ import { Checkbox } from '../../checkbox';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
+import { nextId } from '../../misc';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
-export const GridWithEditRow = (props) => (
-    <Grid _renderAriaRoot
-        toolbar={(
-            <GridToolbar>
-                <Button>Add new</Button>
-                <Button>Save Changes</Button>
-                <Button>Cancel Changes</Button>
-            </GridToolbar>
-        )}
+export const GridWithEditRow = (props) => {
+    const gridId = nextId('grid');
+
+    return (
+        <Grid _renderAriaRoot
+            ariaRootId={gridId}
+            toolbar={(
+                <GridToolbar role="toolbar" aria-label="Grid toolbar" aria-controls={gridId}>
+                    <Button>Add new</Button>
+                    <Button>Save Changes</Button>
+                    <Button>Cancel Changes</Button>
+                </GridToolbar>
+            )}
         children={(
             <>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable>
+                        <GridHeaderTable role="none">
                             <colgroup>
                                 <col /><col /><col /><col style={{ width: "300px" }} />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Price"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Available"></GridHeaderCell>
+                            <TableThead role="rowgroup">
+                                <TableRow role="row">
+                                    <GridHeaderCell columnTitle="Name" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Price" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Available" role="columnheader"></GridHeaderCell>
                                     <GridHeaderCell accessibleLabel="Commands"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -36,37 +41,37 @@ export const GridWithEditRow = (props) => (
                 <GridContainer>
                     <GridContent>
                         <div>
-                            <GridTable>
+                            <GridTable role="none">
                                 <colgroup>
                                     <col /><col /><col /><col style={{ width: "300px" }} />
                                 </colgroup>
-                                <TableTbody>
-                                    <TableRow className="k-master-row k-grid-add-row k-grid-edit-row">
-                                        <TableTd>
-                                            <Textbox value="Towel" />
+                                <TableTbody role="rowgroup">
+                                    <TableRow className="k-master-row k-grid-add-row k-grid-edit-row" role="row">
+                                        <TableTd role="gridcell">
+                                            <Textbox value="Towel" aria-label="Name" />
                                         </TableTd>
-                                        <TableTd>
-                                            <NumericTextbox value="42" />
+                                        <TableTd role="gridcell">
+                                            <NumericTextbox value="42" aria-label="Price" />
                                         </TableTd>
-                                        <TableTd><Checkbox /></TableTd>
-                                        <TableTd className="k-command-cell">
+                                        <TableTd role="gridcell"><Checkbox aria-label="Available" /></TableTd>
+                                        <TableTd className="k-command-cell" role="gridcell">
                                             <Button>Add</Button>
                                             <Button>Cancel</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row">
-                                        <TableTd>Chai</TableTd>
-                                        <TableTd>18</TableTd>
-                                        <TableTd>false</TableTd>
-                                        <TableTd className="k-command-cell">
+                                    <TableRow className="k-master-row" role="row">
+                                        <TableTd role="gridcell">Chai</TableTd>
+                                        <TableTd role="gridcell">18</TableTd>
+                                        <TableTd role="gridcell">false</TableTd>
+                                        <TableTd className="k-command-cell" role="gridcell">
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row" alt>
-                                        <TableTd>Chang</TableTd>
-                                        <TableTd>19</TableTd>
-                                        <TableTd>false</TableTd>
-                                        <TableTd className="k-command-cell">
+                                    <TableRow className="k-master-row" role="row" alt>
+                                        <TableTd role="gridcell">Chang</TableTd>
+                                        <TableTd role="gridcell">19</TableTd>
+                                        <TableTd role="gridcell">false</TableTd>
+                                        <TableTd className="k-command-cell" role="gridcell">
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
@@ -79,4 +84,5 @@ export const GridWithEditRow = (props) => (
         )}
         {...props}>
     </Grid>
-);
+    );
+};

@@ -24,7 +24,7 @@
         <span>DropdownGrid RTL</span>
         <div>
             <span class="k-dropdowngrid k-combobox k-input">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ddg-1-table-list" aria-label="Select item" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -32,7 +32,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-icon-button">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -66,36 +66,36 @@
                                 <span class="k-table-th">Initial group</span>
                             </div>
                             <div class="k-table-body k-table-scroller">
-                                <ul class="k-table k-table-list">
-                                    <li class="k-table-row">
+                                <ul role="listbox" id="k-ddg-tl-1" aria-label="Options" class="k-table k-table-list">
+                                    <li role="option" id="k-ddg-row-1" class="k-table-row">
                                         <span class="k-table-td" style="width: 50px;">1</span>
                                         <span class="k-table-td" style="width: 160px;">Data 1.2</span>
                                         <span class="k-table-td">Data 1.3</span>
                                     </li>
-                                    <li class="k-table-row k-table-alt-row">
+                                    <li role="option" id="k-ddg-row-2" class="k-table-row k-table-alt-row">
                                         <span class="k-table-td" style="width: 50px;">2</span>
                                         <span class="k-table-td" style="width: 160px;">Data 2.2 (alt)</span>
                                         <span class="k-table-td">Data 2.3</span>
                                     </li>
-                                    <li class="k-table-row">
+                                    <li role="option" id="k-ddg-row-3" class="k-table-row">
                                         <span class="k-table-td" style="width: 50px;">3</span>
                                         <span class="k-table-td" style="width: 160px;">Data 3.2</span>
                                         <span class="k-table-td">Data 3.3</span>
                                     </li>
-                                    <li class="k-table-group-row">
+                                    <li role="presentation" class="k-table-group-row">
                                         <span class="k-table-th">Group</span>
                                     </li>
-                                    <li class="k-table-row">
+                                    <li role="option" id="k-ddg-row-4" class="k-table-row">
                                         <span class="k-table-td" style="width: 50px;">4</span>
                                         <span class="k-table-td" style="width: 160px;">Data 4.2</span>
                                         <span class="k-table-td">Data 4.3</span>
                                     </li>
-                                    <li class="k-table-row k-table-alt-row">
+                                    <li role="option" id="k-ddg-row-5" class="k-table-row k-table-alt-row">
                                         <span class="k-table-td" style="width: 50px;">5</span>
                                         <span class="k-table-td" style="width: 160px;">Data 5.2 (alt)</span>
                                         <span class="k-table-td">Data 5.3</span>
                                     </li>
-                                    <li class="k-table-row">
+                                    <li role="option" id="k-ddg-row-6" class="k-table-row">
                                         <span class="k-table-td" style="width: 50px;">6</span>
                                         <span class="k-table-td" style="width: 160px;">Data 6.2</span>
                                         <span class="k-table-td">Data 6.3</span>
@@ -112,7 +112,7 @@
         </div>
         <div dir="rtl">
             <span class="k-dropdowngrid k-combobox k-input">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ddg-2-table-list" aria-label="Select item" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -120,7 +120,7 @@
                         </svg>
                     </span>
                 </span>
-                <button class="k-input-button k-button k-icon-button">
+                <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256z"></path>
@@ -154,36 +154,36 @@
                                 <span class="k-table-th">Initial group</span>
                             </div>
                             <div class="k-table-body k-table-scroller">
-                                <ul class="k-table k-table-list">
-                                    <li class="k-table-row">
+                                <ul role="listbox" id="k-ddg-tl-2" aria-label="Options" class="k-table k-table-list">
+                                    <li role="option" id="k-ddg-row-7" class="k-table-row">
                                         <span class="k-table-td" style="width: 50px;">1</span>
                                         <span class="k-table-td" style="width: 160px;">Data 1.2</span>
                                         <span class="k-table-td">Data 1.3</span>
                                     </li>
-                                    <li class="k-table-row k-table-alt-row">
+                                    <li role="option" id="k-ddg-row-8" class="k-table-row k-table-alt-row">
                                         <span class="k-table-td" style="width: 50px;">2</span>
                                         <span class="k-table-td" style="width: 160px;">Data 2.2 (alt)</span>
                                         <span class="k-table-td">Data 2.3</span>
                                     </li>
-                                    <li class="k-table-row">
+                                    <li role="option" id="k-ddg-row-9" class="k-table-row">
                                         <span class="k-table-td" style="width: 50px;">3</span>
                                         <span class="k-table-td" style="width: 160px;">Data 3.2</span>
                                         <span class="k-table-td">Data 3.3</span>
                                     </li>
-                                    <li class="k-table-group-row">
+                                    <li role="presentation" class="k-table-group-row">
                                         <span class="k-table-th">Group</span>
                                     </li>
-                                    <li class="k-table-row">
+                                    <li role="option" id="k-ddg-row-10" class="k-table-row">
                                         <span class="k-table-td" style="width: 50px;">4</span>
                                         <span class="k-table-td" style="width: 160px;">Data 4.2</span>
                                         <span class="k-table-td">Data 4.3</span>
                                     </li>
-                                    <li class="k-table-row k-table-alt-row">
+                                    <li role="option" id="k-ddg-row-11" class="k-table-row k-table-alt-row">
                                         <span class="k-table-td" style="width: 50px;">5</span>
                                         <span class="k-table-td" style="width: 160px;">Data 5.2 (alt)</span>
                                         <span class="k-table-td">Data 5.3</span>
                                     </li>
-                                    <li class="k-table-row">
+                                    <li role="option" id="k-ddg-row-12" class="k-table-row">
                                         <span class="k-table-td" style="width: 50px;">6</span>
                                         <span class="k-table-td" style="width: 160px;">Data 6.2</span>
                                         <span class="k-table-td">Data 6.3</span>

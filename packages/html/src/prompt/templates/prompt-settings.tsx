@@ -12,7 +12,7 @@ export const PromptSettings = (props) => (
             <Toolbar fillMode="flat">
                 <IconTextButton fillMode="flat" themeColor="primary" icon="sparkles" rounded="full" selected>Ask AI</IconTextButton>
                 <IconTextButton fillMode="flat" themeColor="primary" icon="comment" rounded="full">Output</IconTextButton>
-                <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full"></IconButton>
+                <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full" aria-label="More actions"></IconButton>
             </Toolbar>
         </PromptHeader>
         <PromptContent>
@@ -22,6 +22,7 @@ export const PromptSettings = (props) => (
                     rows={1}
                     suffixSeparator={false}
                     placeholder="Ask or generate content with AI"
+                    aria-label="Ask or generate content with AI"
                     suffix={
                         <>
                             <SpeechToTextButton fillMode="flat" />
@@ -31,20 +32,20 @@ export const PromptSettings = (props) => (
                 <PromptExpander expanded title="Settings">
                     <PromptSetting>
                         Length:
-                        <ChipList>
-                            <Chip text="Small" />
-                            <Chip text="Medium" />
-                            <Chip text="Large" />
+                        <ChipList ariaLabel="Length">
+                            <Chip text="Small" role="option" />
+                            <Chip text="Medium" role="option" />
+                            <Chip text="Large" role="option" />
                         </ChipList>
                     </PromptSetting>
                     <PromptSetting>
                         Tone:
-                        <ChipList>
-                            <Chip text="Professional" />
-                            <Chip text="Friendly" />
-                            <Chip text="Casual" />
-                            <Chip text="Straightforward" />
-                            <Chip text="Confident" />
+                        <ChipList ariaLabel="Tone">
+                            <Chip text="Professional" role="option" />
+                            <Chip text="Friendly" role="option" />
+                            <Chip text="Casual" role="option" />
+                            <Chip text="Straightforward" role="option" />
+                            <Chip text="Confident" role="option" />
                         </ChipList>
                     </PromptSetting>
                 </PromptExpander>

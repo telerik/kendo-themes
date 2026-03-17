@@ -59,4 +59,20 @@ MediaPlayer.defaultOptions = defaultOptions;
 MediaPlayer.moduleName = MEDIAPLAYER_MODULE_NAME;
 MediaPlayer.folderName = MEDIAPLAYER_FOLDER_NAME;
 
+/**
+ * @see Toolbar ariaSpec for the media player toolbar
+ * @see Slider ariaSpec for the seekbar and volume sliders
+ */
+MediaPlayer.ariaSpec = {
+    selector: '.k-mediaplayer',
+    rules: [
+        { selector: '.k-play-button', attribute: 'aria-label', usage: 'Specifies label for the play/pause button.' },
+        { selector: '.k-play-button', attribute: 'aria-pressed', usage: 'Specifies whether play is active or not.' },
+        { selector: '.k-volume-button', attribute: 'aria-label', usage: 'Specifies label for the mute button.' },
+        { selector: '.k-volume-button', attribute: 'aria-pressed', usage: 'Specifies whether mute is active or not.' },
+        { selector: '.k-fullscreen-button', attribute: 'aria-label', usage: 'Specifies label for the full screen button.' },
+        { selector: '.k-fullscreen-button', attribute: 'aria-pressed', usage: 'Specifies whether full screen is active or not.' },
+    ]
+};
+
 export default MediaPlayer;

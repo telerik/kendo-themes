@@ -6,15 +6,15 @@ import { TableThead, TableRow, TableTd, TableTbody } from '../../table';
 export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) => (
     <Grid _renderAriaRoot
         groupingHeader={(
-            <GridGroupingHeader dropClue={dropClue} >
-                <ChipList>
-                    <Chip icon="sort-asc-small" text="ID" actions={
+            <GridGroupingHeader dropClue={dropClue} role="toolbar" aria-label="Grouping">
+                <ChipList role="none">
+                    <Chip icon="sort-asc-small" text="ID" role="button" actions={
                         <>
                             <ChipAction type="more"/>
                             <ChipAction type="remove"/>
                         </>
                     }/>
-                    <Chip icon="sort-desc-small" text="Name" actions={
+                    <Chip icon="sort-desc-small" text="Name" role="button" actions={
                         <>
                             <ChipAction type="more"/>
                             <ChipAction type="remove"/>
@@ -27,18 +27,18 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
             <>
                 <GridHeader draggable>
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable>
+                        <GridHeaderTable role="none">
                             <colgroup>
                                 <col className="k-group-col"/><col className="k-group-col"/><col /><col /><col /><col />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="Price"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="Category"></GridHeaderCell>
+                            <TableThead role="rowgroup">
+                                <TableRow role="row">
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" role="presentation"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" role="presentation"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} columnTitle="ID" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} columnTitle="Name" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} columnTitle="Price" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} columnTitle="Category" role="columnheader"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -46,43 +46,43 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                 </GridHeader>
                 <GridContainer>
                     <GridContent className={contentClassName}>
-                        <GridTable>
+                        <GridTable role="none">
                             <colgroup>
                                 <col className="k-group-col"/><col className="k-group-col"/><col /><col /><col /><col />
                             </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-table-group-row k-grouping-row">
-                                    <TableTd colspan={6}>
+                            <TableTbody role="rowgroup">
+                                <TableRow className="k-table-group-row k-grouping-row" role="row">
+                                    <TableTd colspan={6} role="gridcell" aria-expanded="false">
                                         <p className="k-reset">
                                             <Icon icon="caret-alt-right" />
                                             ID: 1
                                         </p>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-table-group-row k-grouping-row">
-                                    <TableTd colspan={6}>
+                                <TableRow className="k-table-group-row k-grouping-row" role="row">
+                                    <TableTd colspan={6} role="gridcell" aria-expanded="true">
                                         <p className="k-reset">
                                             <Icon icon="caret-alt-down" />
                                             ID: 2
                                         </p>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-table-group-row k-grouping-row">
-                                    <TableTd className="k-table-group-td k-group-cell"></TableTd>
-                                    <TableTd colspan={5}>
+                                <TableRow className="k-table-group-row k-grouping-row" role="row">
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
+                                    <TableTd colspan={5} role="gridcell" aria-expanded="true">
                                         <p className="k-reset">
                                             <Icon icon="caret-alt-down" />
                                             Name: Chang
                                         </p>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd className="k-table-group-td k-group-cell"></TableTd>
-                                    <TableTd className="k-table-group-td k-group-cell"></TableTd>
-                                    <TableTd colspan={0}>2</TableTd>
-                                    <TableTd colspan={0}>Chang</TableTd>
-                                    <TableTd colspan={0}>$19.00</TableTd>
-                                    <TableTd colspan={0}>Beverages</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
+                                    <TableTd colspan={0} role="gridcell">2</TableTd>
+                                    <TableTd colspan={0} role="gridcell">Chang</TableTd>
+                                    <TableTd colspan={0} role="gridcell">$19.00</TableTd>
+                                    <TableTd colspan={0} role="gridcell">Beverages</TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>

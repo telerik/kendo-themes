@@ -19,7 +19,7 @@ export const TimelineTrack: KendoComponent<React.HTMLAttributes<HTMLDivElement>>
                 props.className,
                 TIMELINETRACK_CLASSNAME
             )}>
-            <ul className="k-timeline-scrollable-wrap">
+            <ul className="k-timeline-scrollable-wrap" role="tablist">
                 {props.children}
             </ul>
         </div>

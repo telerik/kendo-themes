@@ -1,4 +1,4 @@
-import { ColumnMenu, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander } from "../../column-menu";
+import { ColumnMenu, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, ColumnList, ColumnListItem } from "../../column-menu";
 
 export const ColumnMenuNormal = (props) => (
     <ColumnMenu
@@ -9,7 +9,15 @@ export const ColumnMenuNormal = (props) => (
                     <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                 </ColumnMenuItemWrapper>
                 <ColumnMenuItemWrapper>
-                    <ColumnMenuExpander itemText="Columns" itemStartIcon="columns" />
+                    <ColumnMenuExpander itemText="Columns" itemStartIcon="columns" expanded
+                        itemContent={
+                            <ColumnList aria-label="Columns">
+                                <ColumnListItem label="Column 1" checked focus />
+                                <ColumnListItem label="Column 2" checked />
+                                <ColumnListItem label="Column 3" />
+                            </ColumnList>
+                        }
+                    />
                 </ColumnMenuItemWrapper>
                 <ColumnMenuItemWrapper>
                     <ColumnMenuExpander itemText="Filter" itemStartIcon="filter" />

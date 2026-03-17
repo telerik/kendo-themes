@@ -25,9 +25,23 @@ Below are listed the requirements for those components part of the ToolBar.
 
 | Selector | Attribute | Usage |
 | -------- | --------- | ----- |
-| `.k-nav-prev,.k-nav-next` | `aria-label` | Required as those buttons contain only icon (no text). |
+| `.k-scheduler-navigation .k-button:has([class*="i-caret-alt-left"])` | `aria-label` | Required as the previous navigation button contains only an icon (no text). |
+| `.k-scheduler-navigation .k-button:has([class*="i-caret-alt-right"])` | `aria-label` | Required as the next navigation button contains only an icon (no text). |
 | `.k-nav-current` | `aria-live=polite` | The new date of the Scheduler view will be announced upon navigation to new time span / view type. |
 | `.k-views-dropdown` | `aria-label` | Specifies the purpose of the element. The `<select>` element visible on the toolbar on small screens must have its "aria-label" set. |
+
+
+### Scheduler View Selector
+
+
+The view selector ButtonGroup in the Scheduler toolbar follows the ButtonGroup accessibility specification.
+
+[ButtonGroup accessibility specification](../packages/html/src/button-group/button-group.spec.tsx)
+
+| Selector | Attribute | Usage |
+| -------- | --------- | ----- |
+| `.k-scheduler-views` | `role=group` | Follows ButtonGroup spec: sets the proper role for the group of view buttons. |
+| `.k-scheduler-views .k-button` | `aria-pressed (when selected)` | Follows ButtonGroup spec: specifies the current state of the view ButtonGroup. Only the selected button within the group will have this attribute set to true. |
 
 
 Depending on the current view, The Scheduler component implements different roles. Below are described the three possible approaches:
@@ -68,7 +82,7 @@ For the rest of the views the `role="none/presentation"` must be used on all inn
 
 | Selector | Attribute | Usage |
 | -------- | --------- | ----- |
-| `.k-scheduler-dayview,.k-scheduler-monthview,.k-scheduler-timelineview` | `role=none/presentation` | All `<table>` elements within the Scheduler must have their semantic role removed. |
+| `.k-scheduler-dayview,.k-scheduler-weekview,.k-scheduler-monthview,.k-scheduler-timelineview` | `role=none/presentation` | All `<table>` elements within the Scheduler must have their semantic role removed. |
 | `.k-event` | `role=button` | Indicating that the events element is interactive. |
 |  | `aria-label` | Label containing the title, start, and end date of the appointment, so that all of them are announced upon navigation to an appointment. |
 | `.k-scheduler-layout:not(.k-scheduler-agendaview) .k-scheduler-content` | `tabindex=0` | Scrollable elements need to be focusable (does not apply to agenda view) to ensure scrolling with the arrow keys is available. |

@@ -22,6 +22,8 @@ export const FileBoxWrapper = (
 
     return (
         <ul
+            role="list"
+            aria-label="Attached files"
             {...other}
             className={classNames(
                 props.className,
@@ -35,7 +37,7 @@ export const FileBoxWrapper = (
             )}
         >
             {layout === "horizontal" ? (
-                <div className="k-files-scroll">
+                <div className="k-files-scroll" role="presentation">
                     {props.children}
                 </div>
             ) : (

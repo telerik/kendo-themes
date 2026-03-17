@@ -16,7 +16,7 @@ const options = {};
 const defaultOptions = {
     resizable: 'vertical',
     eventPrefix: <Icon icon="arrow-rotate-cw" />,
-    eventSuffix: <><a href="#" className="k-link k-event-delete"><Icon icon="x" /></a></>
+    eventSuffix: <><a className="k-link k-event-delete" aria-label="Delete event"><Icon icon="x" /></a></>
 } as const;
 
 export type KendoSchedulerEventProps = {
@@ -64,6 +64,8 @@ export const SchedulerEvent: KendoComponent<KendoSchedulerEventProps & React.HTM
                     'k-event-ongoing': ongoing,
                 }
             )}
+            role="button"
+            aria-label={others['aria-label'] || 'Event'}
         >
             <span className="k-event-actions">
                 {eventPrefix}

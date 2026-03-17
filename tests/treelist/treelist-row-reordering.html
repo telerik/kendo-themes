@@ -11,11 +11,11 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area">
-        <div id="treelist" class="k-treelist k-grid">
-            <div class="k-grid-aria-root">
+        <div id="k-treelist-2" class="k-treelist k-grid">
+            <div class="k-grid-aria-root" role="treegrid" id="k-treelist-1" aria-colcount="4" aria-rowcount="6">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table">
+                        <table role="none" class="k-grid-header-table k-table">
                             <colgroup>
                                 <col class="k-drag-col">
                                 <col>
@@ -23,23 +23,25 @@
                                 <col>
                             </colgroup>
                             <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th class="k-header k-table-th"></th>
-                                    <th class="k-header k-table-th">
+                                <tr role="row" aria-rowindex="1" class="k-table-row">
+                                    <th role="columnheader" class="k-header k-table-th">
+                                        <span class="k-sr-only">Drag column</span>
+                                    </th>
+                                    <th role="columnheader" aria-colindex="2" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">First Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th role="columnheader" aria-colindex="3" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Last Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th role="columnheader" aria-colindex="4" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Position</span>
@@ -53,7 +55,7 @@
                 </div>
                 <div class="k-grid-container">
                     <div class="k-grid-content">
-                        <table class="k-grid-table k-table">
+                        <table role="none" class="k-grid-table k-table">
                             <colgroup>
                                 <col class="k-drag-col">
                                 <col>
@@ -61,33 +63,33 @@
                                 <col>
                             </colgroup>
                             <tbody class="k-table-tbody">
-                                <tr class="k-table-row">
-                                    <td class="k-drag-cell k-table-td">
+                                <tr role="row" aria-rowindex="2" aria-expanded="true" class="k-table-row">
+                                    <td class="k-drag-cell k-table-td" role="gridcell" aria-label="Reorder">
                                         <span class="k-icon k-svg-icon k-svg-i-reorder" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td class="k-table-td">
+                                    <td role="gridcell" aria-colindex="2" aria-expanded="true" class="k-table-td">
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M256 352 128 160h256z"></path>
                                             </svg>
                                         </span>Daryl
                                     </td>
-                                    <td class="k-table-td">Sweeney</td>
-                                    <td class="k-table-td">CEO</td>
+                                    <td role="gridcell" aria-colindex="3" class="k-table-td">Sweeney</td>
+                                    <td role="gridcell" aria-colindex="4" class="k-table-td">CEO</td>
                                 </tr>
-                                <tr class="k-table-row k-table-alt-row">
-                                    <td class="k-drag-cell k-table-td">
+                                <tr role="row" aria-rowindex="3" aria-expanded="true" class="k-table-row k-table-alt-row">
+                                    <td class="k-drag-cell k-table-td" role="gridcell" aria-label="Reorder">
                                         <span class="k-icon k-svg-icon k-svg-i-reorder" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td class="k-table-td">
+                                    <td role="gridcell" aria-colindex="2" aria-expanded="true" class="k-table-td">
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -95,18 +97,18 @@
                                             </svg>
                                         </span>Guy
                                     </td>
-                                    <td class="k-table-td">Wooten</td>
-                                    <td class="k-table-td">Chief Technical Officer</td>
+                                    <td role="gridcell" aria-colindex="3" class="k-table-td">Wooten</td>
+                                    <td role="gridcell" aria-colindex="4" class="k-table-td">Chief Technical Officer</td>
                                 </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-drag-cell k-table-td">
+                                <tr role="row" aria-rowindex="4" aria-expanded="true" class="k-table-row">
+                                    <td class="k-drag-cell k-table-td" role="gridcell" aria-label="Reorder">
                                         <span class="k-icon k-svg-icon k-svg-i-reorder" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td class="k-table-td">
+                                    <td role="gridcell" aria-colindex="2" aria-expanded="true" class="k-table-td">
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
@@ -115,18 +117,18 @@
                                             </svg>
                                         </span>Buffy
                                     </td>
-                                    <td class="k-table-td">Weber</td>
-                                    <td class="k-table-td">VP, Engineering</td>
+                                    <td role="gridcell" aria-colindex="3" class="k-table-td">Weber</td>
+                                    <td role="gridcell" aria-colindex="4" class="k-table-td">VP, Engineering</td>
                                 </tr>
-                                <tr class="k-table-row k-table-alt-row">
-                                    <td class="k-drag-cell k-table-td">
+                                <tr role="row" aria-rowindex="5" aria-expanded="true" class="k-table-row k-table-alt-row">
+                                    <td class="k-drag-cell k-table-td" role="gridcell" aria-label="Reorder">
                                         <span class="k-icon k-svg-icon k-svg-i-reorder" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td class="k-table-td">
+                                    <td role="gridcell" aria-colindex="2" aria-expanded="true" class="k-table-td">
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
@@ -136,26 +138,26 @@
                                             </svg>
                                         </span>Hyacinth
                                     </td>
-                                    <td class="k-table-td">Hood</td>
-                                    <td class="k-table-td">Team Lead</td>
+                                    <td role="gridcell" aria-colindex="3" class="k-table-td">Hood</td>
+                                    <td role="gridcell" aria-colindex="4" class="k-table-td">Team Lead</td>
                                 </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-drag-cell k-table-td">
+                                <tr role="row" aria-rowindex="6" class="k-table-row">
+                                    <td class="k-drag-cell k-table-td" role="gridcell" aria-label="Reorder">
                                         <span class="k-icon k-svg-icon k-svg-i-reorder" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td class="k-table-td">
+                                    <td role="gridcell" aria-colindex="2" class="k-table-td">
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
                                         <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>Akeem
                                     </td>
-                                    <td class="k-table-td">Carr</td>
-                                    <td class="k-table-td">Junior Software Developer</td>
+                                    <td role="gridcell" aria-colindex="3" class="k-table-td">Carr</td>
+                                    <td role="gridcell" aria-colindex="4" class="k-table-td">Junior Software Developer</td>
                                 </tr>
                             </tbody>
                         </table>

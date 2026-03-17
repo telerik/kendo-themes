@@ -59,7 +59,11 @@ export const Suggestion = (
                 optionClassNames(SUGGESTION_CLASSNAME, {
                     themeColor,
                 }),
-            )}>
+            )}
+            role="button"
+            tabIndex={0}
+            aria-label={text}
+        >
             {text}
         </span>
     );

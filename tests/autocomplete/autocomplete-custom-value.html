@@ -24,7 +24,7 @@
         <span>Autocomplete Custom Value RTL</span>
         <div>
             <span class="k-autocomplete k-input k-focus">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ac-1-listbox" aria-label="Search options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -33,13 +33,13 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Autocomplete suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-autocomplete-popup k-popup">
                         <div class="k-list">
                             <div class="k-list-custom-value">Use "Custom value"</div>
                             <div class="k-list-content">
-                                <ul role="listbox" class="k-list-ul">
+                                <ul aria-label="Options" role="listbox" class="k-list-ul">
                                     <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List item</span>
                                     </li>
@@ -58,7 +58,7 @@
         </div>
         <div dir="rtl">
             <span class="k-autocomplete k-input k-focus">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ac-2-listbox" aria-label="Search options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -67,13 +67,13 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Autocomplete suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-autocomplete-popup k-popup">
                         <div class="k-list">
                             <div class="k-list-custom-value">Use "Custom value"</div>
                             <div class="k-list-content">
-                                <ul role="listbox" class="k-list-ul">
+                                <ul aria-label="Options" role="listbox" class="k-list-ul">
                                     <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List item</span>
                                     </li>
@@ -94,7 +94,7 @@
         <span>Custom Value and Autocomplete Custom Value RTL</span>
         <div>
             <span class="k-autocomplete k-input k-focus">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ac-3-listbox" aria-label="Search options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -103,7 +103,7 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Autocomplete suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-autocomplete-popup k-popup">
                         <div class="k-list">
@@ -111,29 +111,32 @@
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox">
-                                <ul class="k-list-ul">
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                            <div class="k-list-content" role="listbox" id="k-ac-3-listbox" aria-label="Options">
+                                <ul aria-labelledby="k-ac-group-1" role="group" class="k-list-ul">
+                                    <li id="k-ac-group-1" role="presentation" class="k-list-group-item">
+                                        <span class="k-list-item-text">Group 1</span>
+                                    </li>
+                                    <li id="k-ac-item-1" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-2" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>
-                                <ul class="k-list-ul">
-                                    <li role="presentation" class="k-list-group-item">
+                                <ul aria-labelledby="k-ac-group-2" role="group" class="k-list-ul">
+                                    <li id="k-ac-group-2" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-4" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-5" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>
@@ -145,7 +148,7 @@
         </div>
         <div dir="rtl">
             <span class="k-autocomplete k-input k-focus">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ac-4-listbox" aria-label="Search options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom value">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -154,7 +157,7 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Autocomplete suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-autocomplete-popup k-popup">
                         <div class="k-list">
@@ -162,29 +165,32 @@
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox">
-                                <ul class="k-list-ul">
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                            <div class="k-list-content" role="listbox" id="k-ac-4-listbox" aria-label="Options">
+                                <ul aria-labelledby="k-ac-group-3" role="group" class="k-list-ul">
+                                    <li id="k-ac-group-3" role="presentation" class="k-list-group-item">
+                                        <span class="k-list-item-text">Group 1</span>
+                                    </li>
+                                    <li id="k-ac-item-7" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-8" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-9" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>
-                                <ul class="k-list-ul">
-                                    <li role="presentation" class="k-list-group-item">
+                                <ul aria-labelledby="k-ac-group-4" role="group" class="k-list-ul">
+                                    <li id="k-ac-group-4" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-10" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-11" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-12" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>

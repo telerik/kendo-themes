@@ -26,7 +26,7 @@ export default () =>(
                     <TaskBoardColumn>
                         <TaskBoardCard>
                             <CardHeader className="k-hbox" details>
-                                <a className="k-card-title k-link" href="#">Card Title</a>
+                                <a className="k-card-title k-link">Card Title</a>
                                 <span className="k-spacer"></span>
                             </CardHeader>
                             <CardBody>
@@ -49,7 +49,7 @@ export default () =>(
                     }>
                         <TaskBoardCard>
                             <CardHeader className="k-hbox" details>
-                                <a className="k-card-title k-link" href="#">Card Title</a>
+                                <a className="k-card-title k-link">Card Title</a>
                                 <span className="k-spacer"></span>
                             </CardHeader>
                             <CardBody>
@@ -78,7 +78,7 @@ export default () =>(
                     <TaskBoardColumn className="k-focus">
                         <TaskBoardCard>
                             <CardHeader className="k-hbox" details>
-                                <a className="k-card-title k-link" href="#">Card Title</a>
+                                <a className="k-card-title k-link">Card Title</a>
                                 <span className="k-spacer"></span>
                             </CardHeader>
                             <CardBody>
@@ -99,7 +99,7 @@ export default () =>(
                     }>
                         <TaskBoardCard>
                             <CardHeader className="k-hbox" details>
-                                <a className="k-card-title k-link" href="#">Card Title</a>
+                                <a className="k-card-title k-link">Card Title</a>
                                 <span className="k-spacer"></span>
                             </CardHeader>
                             <CardBody>

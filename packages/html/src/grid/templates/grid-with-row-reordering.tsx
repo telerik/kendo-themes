@@ -9,19 +9,19 @@ export const GridWithRowReordering = ({ contentClassName, ...other }: any) => (
             <>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable>
+                        <GridHeaderTable role="none">
                             <colgroup>
                                 <col className="k-drag-col" />
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
+                            <TableThead role="rowgroup">
+                                <TableRow role="row">
                                     <GridHeaderCell accessibleLabel="Reorder"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Product Id"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Unit Price"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Discontinued"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Category"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Product Id" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Unit Price" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Discontinued" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Category" role="columnheader"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -29,47 +29,47 @@ export const GridWithRowReordering = ({ contentClassName, ...other }: any) => (
                 </GridHeader>
                 <GridContainer>
                     <GridContent className={contentClassName}>
-                        <GridTable>
+                        <GridTable role="none">
                             <colgroup>
                                 <col className="k-drag-col" />
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-master-row">
-                                    <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
-                                    <TableTd>Chef Anton's Gumbo</TableTd>
-                                    <TableTd>21.35</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>Condiments</TableTd>
+                            <TableTbody role="rowgroup">
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder"><Icon icon="reorder"/></TableTd>
+                                    <TableTd role="gridcell">Chef Anton's Gumbo</TableTd>
+                                    <TableTd role="gridcell">21.35</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
+                                    <TableTd role="gridcell">Condiments</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
-                                    <TableTd>Alice Mutton</TableTd>
-                                    <TableTd>39</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>Meat/Poultry</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder"><Icon icon="reorder"/></TableTd>
+                                    <TableTd role="gridcell">Alice Mutton</TableTd>
+                                    <TableTd role="gridcell">39</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
+                                    <TableTd role="gridcell">Meat/Poultry</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
-                                    <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
-                                    <TableTd>Singaporean Hokkien Fried Mee</TableTd>
-                                    <TableTd>123.79</TableTd>
-                                    <TableTd>true</TableTd>
-                                    <TableTd>Meat/Poultry</TableTd>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder"><Icon icon="reorder"/></TableTd>
+                                    <TableTd role="gridcell">Singaporean Hokkien Fried Mee</TableTd>
+                                    <TableTd role="gridcell">123.79</TableTd>
+                                    <TableTd role="gridcell">true</TableTd>
+                                    <TableTd role="gridcell">Meat/Poultry</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
-                                    <TableTd>Gorgonzola Telino</TableTd>
-                                    <TableTd>12.5</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>Meat/Poultry</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder"><Icon icon="reorder"/></TableTd>
+                                    <TableTd role="gridcell">Gorgonzola Telino</TableTd>
+                                    <TableTd role="gridcell">12.5</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
+                                    <TableTd role="gridcell">Meat/Poultry</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
-                                    <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
-                                    <TableTd>Perth Pasties</TableTd>
-                                    <TableTd>32.8</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>Meat/Poultry</TableTd>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd className="k-drag-cell" role="gridcell" aria-label="Reorder"><Icon icon="reorder"/></TableTd>
+                                    <TableTd role="gridcell">Perth Pasties</TableTd>
+                                    <TableTd role="gridcell">32.8</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
+                                    <TableTd role="gridcell">Meat/Poultry</TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>

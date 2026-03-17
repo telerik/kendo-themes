@@ -39,6 +39,8 @@ export const SpeechToTextButton: KendoComponent<KendoSpeechToTextButtonProps & K
                     ["k-listening"]: listening,
                 }
             )}
+            aria-pressed={listening ? 'true' : 'false'}
+            aria-label={listening ? 'Stop listening' : 'Start listening'}
         >
         </Button>
     );
@@ -50,5 +52,17 @@ SpeechToTextButton.className = SPEECH_TO_TEXT_BUTTON_CLASSNAME;
 SpeechToTextButton.defaultOptions = defaultOptions;
 SpeechToTextButton.moduleName = SPEECH_TO_TEXT_BUTTON_MODULE_NAME;
 SpeechToTextButton.folderName = SPEECH_TO_TEXT_BUTTON_FOLDER_NAME;
+
+/**
+ * @see Button ariaSpec for base button accessibility
+ */
+SpeechToTextButton.ariaSpec = {
+    selector: '.k-speech-to-text-button',
+    rules: [
+        { selector: '.k-button.k-speech-to-text-button', attribute: 'role=button or nodeName=button', usage: 'If the used element is not <button>, explicitly set its role to button.' },
+        { selector: '.k-button.k-speech-to-text-button', attribute: 'aria-pressed', usage: 'Announces the toggle behaviour of the button.' },
+        { selector: '.k-button.k-speech-to-text-button', attribute: 'aria-label', usage: 'Accessible name for the speech-to-text button.' },
+    ]
+};
 
 export default SpeechToTextButton;

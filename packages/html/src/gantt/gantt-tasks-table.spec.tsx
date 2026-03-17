@@ -15,6 +15,7 @@ export const GanttTasksTable: KendoComponent<KendoTableOptions & React.HTMLAttri
             props.className,
             GANTTTASKSTABLE_CLASSNAME,
         )}
+        role="presentation"
     >
         {props.children}
     </Table>

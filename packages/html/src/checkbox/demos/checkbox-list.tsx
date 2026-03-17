@@ -1,5 +1,6 @@
 ﻿import { CheckboxGroup, KendoCheckboxGroupProps } from '../checkbox-group.spec';
 import { CheckboxItem } from '../checkbox-item.spec';
+import { nextId } from '../../misc';
 import { CheckboxWithLabelAfter } from '../templates/checkbox-with-label-after';
 
 const options = CheckboxGroup.options;
@@ -29,13 +30,13 @@ export const CheckboxListDemo = (props: KendoCheckboxGroupProps & { variant?: (t
             return (
                 <CheckboxGroup layout="horizontal" {...other}>
                     <CheckboxItem>
-                        <CheckboxWithLabelAfter id="first" defaultChecked={true}>Label</CheckboxWithLabelAfter>
+                        <CheckboxWithLabelAfter id={nextId('cb')} defaultChecked={true}>Label</CheckboxWithLabelAfter>
                     </CheckboxItem>
                     <CheckboxItem>
-                        <CheckboxWithLabelAfter id="second">Label</CheckboxWithLabelAfter>
+                        <CheckboxWithLabelAfter id={nextId('cb')}>Label</CheckboxWithLabelAfter>
                     </CheckboxItem>
                     <CheckboxItem>
-                        <CheckboxWithLabelAfter id="third">Label</CheckboxWithLabelAfter>
+                        <CheckboxWithLabelAfter id={nextId('cb')}>Label</CheckboxWithLabelAfter>
                     </CheckboxItem>
                 </CheckboxGroup>
             );
@@ -44,13 +45,13 @@ export const CheckboxListDemo = (props: KendoCheckboxGroupProps & { variant?: (t
             return (
                 <CheckboxGroup {...other}>
                     <CheckboxItem>
-                        <CheckboxWithLabelAfter id="first" defaultChecked={true}>Label</CheckboxWithLabelAfter>
+                        <CheckboxWithLabelAfter id={nextId('cb')} defaultChecked={true}>Label</CheckboxWithLabelAfter>
                     </CheckboxItem>
                     <CheckboxItem>
-                        <CheckboxWithLabelAfter id="second">Label</CheckboxWithLabelAfter>
+                        <CheckboxWithLabelAfter id={nextId('cb')}>Label</CheckboxWithLabelAfter>
                     </CheckboxItem>
                     <CheckboxItem>
-                        <CheckboxWithLabelAfter id="third">Label</CheckboxWithLabelAfter>
+                        <CheckboxWithLabelAfter id={nextId('cb')}>Label</CheckboxWithLabelAfter>
                     </CheckboxItem>
                 </CheckboxGroup>
             );

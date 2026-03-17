@@ -14,7 +14,7 @@ export default () =>(
                     {[ "normal", ...Card.states ].map((state) => (
                         <TaskBoardCard {...{ [state]: true }}>
                             <CardHeader className="k-hbox" details>
-                                <a className="k-card-title k-link" href="#">{state} card</a>
+                                <a className="k-card-title k-link">{state} card</a>
                                 <span className="k-spacer"></span>
                             </CardHeader>
                             <CardBody>
@@ -28,7 +28,7 @@ export default () =>(
                 <TaskBoardColumn>
                     <TaskBoardCard>
                         <CardHeader className="k-hbox" details>
-                            <a className="k-card-title k-link" href="#">normal card title</a>
+                            <a className="k-card-title k-link">normal card title</a>
                             <span className="k-spacer"></span>
                         </CardHeader>
                         <CardBody>
@@ -37,7 +37,7 @@ export default () =>(
                     </TaskBoardCard>
                     <TaskBoardCard hover>
                         <CardHeader className="k-hbox" details>
-                            <a className="k-card-title k-link k-hover" href="#">hovered card title</a>
+                            <a className="k-card-title k-link k-hover">hovered card title</a>
                             <span className="k-spacer"></span>
                         </CardHeader>
                         <CardBody>
@@ -46,7 +46,7 @@ export default () =>(
                     </TaskBoardCard>
                     <TaskBoardCard focus>
                         <CardHeader className="k-hbox" details>
-                            <a className="k-card-title k-link k-focus" href="#">focused card title</a>
+                            <a className="k-card-title k-link k-focus">focused card title</a>
                             <span className="k-spacer"></span>
                         </CardHeader>
                         <CardBody>
@@ -55,7 +55,7 @@ export default () =>(
                     </TaskBoardCard>
                     <TaskBoardCard selected>
                         <CardHeader className="k-hbox" details>
-                            <a className="k-card-title k-link" href="#">this is a very very very very very very very very very very very very very very very long card title</a>
+                            <a className="k-card-title k-link">this is a very very very very very very very very very very very very very very very long card title</a>
                             <span className="k-spacer"></span>
                         </CardHeader>
                         <CardBody>

@@ -44,7 +44,7 @@
                                         </span>
                                         <span class="k-button-text">Output</span>
                                     </button>
-                                    <button class="k-toolbar-button  k-button k-button-flat k-button-primary k-rounded-full k-selected k-icon-button" aria-label="Folder">
+                                    <button class="k-toolbar-button  k-button k-button-flat k-button-primary k-rounded-full k-selected k-icon-button" aria-label="More actions">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-horizontal" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M128 240c0-26.4-21.6-48-48-48s-48 21.6-48 48 21.6 48 48 48 48-21.6 48-48m64 0c0 26.4 21.6 48 48 48s48-21.6 48-48-21.6-48-48-48-48 21.6-48 48m160 0c0 26.4 21.6 48 48 48s48-21.6 48-48-21.6-48-48-48-48 21.6-48 48"></path>
@@ -55,13 +55,13 @@
                             </div>
                             <div class="k-prompt-content">
                                 <div class="k-prompt-view">
-                                    <ul class="k-panelbar">
-                                        <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                    <ul class="k-panelbar" role="tree">
+                                        <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-selected="false">
                                             <span class="k-link">
                                                 <span class="k-panelbar-item-text">Command</span>
                                             </span>
                                         </li>
-                                        <li class="k-panelbar-item k-panelbar-header k-level-0 k-expanded">
+                                        <li class="k-panelbar-item k-panelbar-header k-level-0 k-expanded" role="treeitem" aria-expanded="true" aria-selected="false">
                                             <span class="k-link">
                                                 <span class="k-panelbar-item-text">Command Expanded</span>
                                                 <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
@@ -70,8 +70,8 @@
                                                     </svg>
                                                 </span>
                                             </span>
-                                            <ul class="k-panelbar-group">
-                                                <li class="k-panelbar-item k-level-1 k-expanded">
+                                            <ul class="k-panelbar-group" role="group">
+                                                <li class="k-panelbar-item k-level-1 k-expanded" role="treeitem" aria-expanded="true" aria-selected="false">
                                                     <span class="k-link">
                                                         <span class="k-panelbar-item-text">Child Expanded</span>
                                                         <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
@@ -80,32 +80,32 @@
                                                             </svg>
                                                         </span>
                                                     </span>
-                                                    <ul class="k-panelbar-group">
-                                                        <li class="k-panelbar-item k-level-2">
+                                                    <ul class="k-panelbar-group" role="group">
+                                                        <li class="k-panelbar-item k-level-2" role="treeitem" aria-selected="false">
                                                             <span class="k-link">
                                                                 <span class="k-panelbar-item-text">Child</span>
                                                             </span>
                                                         </li>
-                                                        <li class="k-panelbar-item k-level-2">
+                                                        <li class="k-panelbar-item k-level-2" role="treeitem" aria-selected="false">
                                                             <span class="k-link">
                                                                 <span class="k-panelbar-item-text">Child</span>
                                                             </span>
                                                         </li>
-                                                        <li class="k-panelbar-item k-level-2">
+                                                        <li class="k-panelbar-item k-level-2" role="treeitem" aria-selected="false">
                                                             <span class="k-link">
                                                                 <span class="k-panelbar-item-text">Child</span>
                                                             </span>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="k-panelbar-item k-level-1">
+                                                <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                                                     <span class="k-link">
                                                         <span class="k-panelbar-item-text">Child</span>
                                                     </span>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="k-panelbar-item k-panelbar-header k-level-0">
+                                        <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-selected="false">
                                             <span class="k-link">
                                                 <span class="k-panelbar-item-text">Command</span>
                                             </span>

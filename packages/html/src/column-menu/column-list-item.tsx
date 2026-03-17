@@ -22,7 +22,7 @@ export type KendoColumnListItemState = { [K in (typeof states)[number]]?: boolea
 
 export const ColumnListItem = (
     props: KendoColumnListItemProps & KendoColumnListItemState &
-        React.HTMLAttributes<HTMLLabelElement>
+        React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
         label,
@@ -34,7 +34,7 @@ export const ColumnListItem = (
     } = props;
 
     return (
-        <label
+        <span
             {...other}
             className={classNames(
                 props.className,
@@ -44,10 +44,13 @@ export const ColumnListItem = (
                     hover,
                     disabled
                 })
-            )}>
-            <Checkbox disabled={disabled} checked={checked} />
+            )}
+            role="option"
+            aria-checked={checked ? 'true' : 'false'}
+        >
+            <Checkbox disabled={disabled} checked={checked} aria-label={label} />
             <span className="k-checkbox-label">{label}</span>
-        </label>
+        </span>
     );
 };
 

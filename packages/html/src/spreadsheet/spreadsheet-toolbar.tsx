@@ -27,6 +27,7 @@ export const SpreadsheetToolbar = (
                 SPREADSHEETTOOLBAR_CLASSNAME,
             )}
             fillMode="flat"
+            aria-label={other['aria-label'] || "Spreadsheet toolbar"}
         >
             {children}
         </Toolbar>

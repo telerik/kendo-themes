@@ -1,0 +1,20 @@
+import { SmartBox, SmartBoxSendButton }  from "../";
+import { Icon } from '../../icon';
+import { IconButton } from '../../button';
+
+export const SmartBoxDisabledSend = (props) =>
+    <SmartBox {...props}
+        separators={false}
+        inputAriaLabel="AI-powered search"
+        prefix={
+            <>
+                <Icon icon="sparkles" className="k-accent-icon" aria-hidden="true" />
+            </>
+        }
+        suffix={
+            <>
+                <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" aria-label="Start voice input" />
+                <SmartBoxSendButton disabled />
+            </>
+        }
+    />;

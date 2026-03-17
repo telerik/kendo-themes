@@ -23,13 +23,6 @@ The Spreadsheet is a composite component that is used to render spreadsheet data
 | -------- | --------- | ----- |
 | `.k-spreadsheet` | `role=application` | Indicates the Spreadsheets' role as an application. |
 
-### Quick access elements
-
-| Selector | Attribute | Usage |
-| -------- | --------- | ----- |
-| `.k-spreadsheet-quick-access-toolbar>.k-button` | `role=button` | The two quick access elements are buttons. |
-|  | `aria-label` or `title` | The two quick access elements must have labels as they do not have text content. |
-
 ### ToolBar Menu
 
 
@@ -73,13 +66,6 @@ The Name editor must implement the spec for a ComboBox component.
 | `.k-spreadsheet-formula-list` | `role=menu` | Announces the `menu` role of the popup. |
 | `.k-spreadsheet-formula-list .k-list-item` | `role=menuitem` | Announces the `menuitem` role of the popup items. |
 
-### Sheet area
-
-
-The Sheet area must implement the spec for a Grid component. The column header cells are header cells are the members of the `.k-spreadsheet-column-header` element. The row header cells are the members of the `.k-spreadsheet-row-header` element.
-
-[Grid accessibility specification](grid_aria.md)
-
 ### Add new sheet button
 
 | Selector | Attribute | Usage |
@@ -112,4 +98,7 @@ The Sheets bar of the Spreadsheet must implement the TabStrip specification.
 The Menu button is each TabStrip tab must implement the DropDownButton specification.
 
 [DropDownButton accessibility specification](dropdownbutton_aria.md)
+
+
+Disregard the AXE nested interactive rule for the Tab Menu buttons (MenuButton elements inside TabStripItems with role="tab"). The Spreadsheet sheets bar renders interactive button elements within tab items, which triggers the nested-interactive rule. This is a known exception specific to the Spreadsheet component until a future solution is found.
 

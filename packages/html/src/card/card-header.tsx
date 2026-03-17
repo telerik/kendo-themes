@@ -40,6 +40,7 @@ export const CardHeader = (
                         className="k-card-details"
                         icon="more-vertical"
                         fillMode="flat"
+                        aria-label="Card details"
                     />
                 </span>
             }

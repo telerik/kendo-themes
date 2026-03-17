@@ -24,7 +24,7 @@
         <span>Autocomplete RTL</span>
         <div>
             <span class="k-autocomplete k-input k-focus">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ac-1-listbox" aria-activedescendant="k-ac-item-2" aria-label="Search" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -33,19 +33,19 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Autocomplete suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-autocomplete-popup k-popup">
                         <div class="k-list">
                             <div class="k-list-content">
-                                <ul role="listbox" class="k-list-ul">
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                <ul aria-label="Suggestions" id="k-ac-1-listbox" role="listbox" class="k-list-ul">
+                                    <li id="k-ac-item-1" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                        <span class="k-list-item-text">Selected item</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                    <li id="k-ac-item-2" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                        <span class="k-list-item-text">Focused item</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List item</span>
                                     </li>
                                 </ul>
@@ -57,7 +57,7 @@
         </div>
         <div dir="rtl">
             <span class="k-autocomplete k-input k-focus">
-                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
+                <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ac-2-listbox" aria-activedescendant="k-ac-item-5" aria-label="Search" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Opened">
                 <span class="k-clear-value">
                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -66,19 +66,19 @@
                     </span>
                 </span>
             </span>
-            <div class="k-animation-container k-animation-container-shown">
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Autocomplete suggestions">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-autocomplete-popup k-popup">
                         <div class="k-list">
                             <div class="k-list-content">
-                                <ul role="listbox" class="k-list-ul">
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                <ul aria-label="Suggestions" id="k-ac-2-listbox" role="listbox" class="k-list-ul">
+                                    <li id="k-ac-item-4" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                        <span class="k-list-item-text">Selected item</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                    <li id="k-ac-item-5" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                        <span class="k-list-item-text">Focused item</span>
                                     </li>
-                                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                    <li id="k-ac-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List item</span>
                                     </li>
                                 </ul>

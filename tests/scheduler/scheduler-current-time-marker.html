@@ -11,8 +11,8 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-1">
-        <div class="k-scheduler">
-            <div class="k-scheduler-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
+        <div class="k-scheduler" role="application">
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
                 <div role="group" class="k-toolbar-button-group k-scheduler-navigation k-button-group">
                     <button class="k-group-start k-button">
                         <span class="k-button-text">Today</span>
@@ -59,7 +59,7 @@
                     </button>
                 </div>
             </div>
-            <table class="k-scheduler-layout k-scheduler-weekview">
+            <table class="k-scheduler-layout k-scheduler-weekview" role="none">
                 <tbody>
                     <tr class="k-scheduler-head">
                         <td>
@@ -67,7 +67,7 @@
                                 <table class="k-scheduler-table">
                                     <tbody>
                                         <tr style="height: 37px;">
-                                            <th class="k-scheduler-cell"></th>
+                                            <th role="presentation" class="k-scheduler-cell"></th>
                                         </tr>
                                         <tr style="height: 72px;">
                                             <th class="k-scheduler-cell k-scheduler-times-all-day">all day</th>
@@ -112,7 +112,7 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <div class="k-event">
+                                        <div class="k-event" role="button" aria-label="Event">
                                             <span class="k-event-actions">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -157,103 +157,103 @@
                                             <th rowspan="1" class="k-scheduler-cell">7:00 AM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">8:00 AM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">9:00 AM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">10:00 AM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">11:00 AM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">12:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">1:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">2:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">3:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">4:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">5:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">6:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">7:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">8:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">9:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">10:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                         <tr>
                                             <th rowspan="1" class="k-scheduler-cell">11:00 PM</th>
                                         </tr>
                                         <tr>
-                                            <th rowspan="1" class="k-scheduler-cell k-slot-cell"></th>
+                                            <th rowspan="1" role="presentation" class="k-scheduler-cell k-slot-cell"></th>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -509,7 +509,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="k-scheduler-footer k-toolbar" role="toolbar" aria-label="Toolbar">
+            <div class="k-scheduler-footer k-toolbar" aria-label="Toolbar" role="toolbar">
                 <button class="k-toolbar-button k-scheduler-fullday k-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -520,8 +520,8 @@
                 </button>
             </div>
         </div>
-        <div class="k-scheduler">
-            <div class="k-scheduler-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
+        <div class="k-scheduler" role="application">
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
                 <div role="group" class="k-toolbar-button-group k-scheduler-navigation k-button-group">
                     <button class="k-group-start k-button">
                         <span class="k-button-text">Today</span>
@@ -568,7 +568,7 @@
                     </button>
                 </div>
             </div>
-            <table class="k-scheduler-layout k-scheduler-timelineview">
+            <table class="k-scheduler-layout k-scheduler-timelineview" role="none">
                 <tbody>
                     <tr class="k-scheduler-head">
                         <td>
@@ -576,10 +576,10 @@
                                 <table class="k-scheduler-table">
                                     <tbody>
                                         <tr style="height: 31px;">
-                                            <th class="k-scheduler-cell"></th>
+                                            <th role="presentation" class="k-scheduler-cell"></th>
                                         </tr>
                                         <tr style="height: 31px;">
-                                            <th class="k-scheduler-cell"></th>
+                                            <th role="presentation" class="k-scheduler-cell"></th>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -20,7 +20,7 @@ export const SchedulerDay = ({ style, ...props }: any) => (
                     <SchedulerHead as="tr">
                         <td>
                             <SchedulerTimes>
-                                <SchedulerTable>
+                                <SchedulerTable role="none">
                                     <tbody>
                                         <tr style={{ height: "37px" }}>
                                             <SchedulerCell as="th" />
@@ -56,7 +56,7 @@ export const SchedulerDay = ({ style, ...props }: any) => (
                     <SchedulerBody as="tr">
                         <td>
                             <SchedulerTimes style={{ height: "195px" }}>
-                                <SchedulerTable style={{ height: "400px" }}>
+                                <SchedulerTable role="none" style={{ height: "400px" }}>
                                     <tbody>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -151,7 +151,7 @@ export const SchedulerDay = ({ style, ...props }: any) => (
                             </SchedulerTimes>
                         </td>
                         <td>
-                            <SchedulerContent style={{ height: "195px" }}>
+                            <SchedulerContent style={{ height: "195px" }} tabIndex={0}>
                                 <SchedulerTable>
                                     <tbody>
                                         <tr className="k-middle-row">

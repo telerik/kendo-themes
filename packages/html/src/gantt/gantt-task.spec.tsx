@@ -10,6 +10,7 @@ const options = {};
 
 export type KendoGanttTaskProps = {
     type?: "single" | "milestone" | "summary";
+    ariaLevel?: number;
 };
 
 const defaultOptions = {
@@ -22,6 +23,7 @@ export const GanttTask: KendoComponent<KendoGanttTaskProps & React.HTMLAttribute
 ) => {
     const {
         type = defaultOptions.type,
+        ariaLevel,
         ...other
     } = props;
 
@@ -37,7 +39,9 @@ export const GanttTask: KendoComponent<KendoGanttTaskProps & React.HTMLAttribute
                     [`k-task-milestone`]: type === "milestone",
                     [`k-task-summary`]: type === "summary"
                 }
-            )}>
+            )}
+            role="treeitem"
+            {...(ariaLevel !== undefined && { 'aria-level': ariaLevel })}>
         </div>
     );
 };

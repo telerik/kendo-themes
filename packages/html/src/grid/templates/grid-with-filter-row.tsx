@@ -12,7 +12,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
             <>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable>
+                        <GridHeaderTable role="none">
                             <colgroup>
                                 <col />
                                 <col style={{ width: "225px" }} />
@@ -20,69 +20,69 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Product Id"></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Quantity"></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Unit Price"></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Discontinued"></GridHeaderCell>
+                            <TableThead role="rowgroup">
+                                <TableRow role="row">
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Product Id" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Quantity" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Unit Price" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Discontinued" role="columnheader"></GridHeaderCell>
                                 </TableRow>
-                                <TableRow className="k-filter-row">
-                                    <TableTd>
+                                <TableRow className="k-filter-row" role="row">
+                                    <TableTd role="gridcell" aria-label="Product Id filter">
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
-                                                <NumericTextbox />
+                                                <NumericTextbox aria-label="Product Id filter" />
                                                 <div className="k-filtercell-operator">
-                                                    <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
+                                                    <DropdownList className="k-dropdown-operator" arrowIconName="filter" aria-label="Product Id filter operator" />
                                                     {' '}
-                                                    <Button disabled icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear" aria-label="Clear Product Id filter"></Button>
                                                 </div>
                                             </div>
                                         </div>
                                     </TableTd>
-                                    <TableTd>
+                                    <TableTd role="gridcell" aria-label="Name filter">
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
-                                                <Textbox />
+                                                <Textbox aria-label="Name filter" />
                                                 <div className="k-filtercell-operator">
-                                                    <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
+                                                    <DropdownList className="k-dropdown-operator" arrowIconName="filter" aria-label="Name filter operator" />
                                                     {' '}
-                                                    <Button disabled icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear" aria-label="Clear Name filter"></Button>
                                                 </div>
                                             </div>
                                         </div>
                                     </TableTd>
-                                    <TableTd>
+                                    <TableTd role="gridcell" aria-label="Quantity filter">
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
-                                                <Textbox />
+                                                <Textbox aria-label="Quantity filter" />
                                                 <div className="k-filtercell-operator">
-                                                    <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
+                                                    <DropdownList className="k-dropdown-operator" arrowIconName="filter" aria-label="Quantity filter operator" />
                                                     {' '}
-                                                    <Button disabled icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear" aria-label="Clear Quantity filter"></Button>
                                                 </div>
                                             </div>
                                         </div>
                                     </TableTd>
-                                    <TableTd>
+                                    <TableTd role="gridcell" aria-label="Unit Price filter">
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
-                                                <NumericTextbox />
+                                                <NumericTextbox aria-label="Unit Price filter" />
                                                 <div className="k-filtercell-operator">
-                                                    <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
+                                                    <DropdownList className="k-dropdown-operator" arrowIconName="filter" aria-label="Unit Price filter operator" />
                                                     {' '}
-                                                    <Button disabled icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear" aria-label="Clear Unit Price filter"></Button>
                                                 </div>
                                             </div>
                                         </div>
                                     </TableTd>
-                                    <TableTd>
+                                    <TableTd role="gridcell" aria-label="Discontinued filter">
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
-                                                <DropdownList />
+                                                <DropdownList aria-label="Discontinued filter" />
                                                 <div className="k-filtercell-operator">
-                                                    <Button disabled icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear" aria-label="Clear Discontinued filter"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,7 +94,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                 </GridHeader>
                 <GridContainer>
                     <GridContent className={contentClassName}>
-                        <GridTable>
+                        <GridTable role="none">
                             <colgroup>
                                 <col />
                                 <col style={{ width: "225px" }} />
@@ -102,41 +102,41 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-master-row">
-                                    <TableTd>1</TableTd>
-                                    <TableTd>Chai</TableTd>
-                                    <TableTd>10 boxes x 20 bags</TableTd>
-                                    <TableTd>18</TableTd>
-                                    <TableTd>false</TableTd>
+                            <TableTbody role="rowgroup">
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd role="gridcell">1</TableTd>
+                                    <TableTd role="gridcell">Chai</TableTd>
+                                    <TableTd role="gridcell">10 boxes x 20 bags</TableTd>
+                                    <TableTd role="gridcell">18</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd>2</TableTd>
-                                    <TableTd>Chang</TableTd>
-                                    <TableTd>24 - 12 oz bottles</TableTd>
-                                    <TableTd>19</TableTd>
-                                    <TableTd>false</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd role="gridcell">2</TableTd>
+                                    <TableTd role="gridcell">Chang</TableTd>
+                                    <TableTd role="gridcell">24 - 12 oz bottles</TableTd>
+                                    <TableTd role="gridcell">19</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
-                                    <TableTd>3</TableTd>
-                                    <TableTd>Aniseed Syrup</TableTd>
-                                    <TableTd>12 - 550 ml bottles</TableTd>
-                                    <TableTd>10</TableTd>
-                                    <TableTd>false</TableTd>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd role="gridcell">3</TableTd>
+                                    <TableTd role="gridcell">Aniseed Syrup</TableTd>
+                                    <TableTd role="gridcell">12 - 550 ml bottles</TableTd>
+                                    <TableTd role="gridcell">10</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd>4</TableTd>
-                                    <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
-                                    <TableTd>48 - 6 oz jars</TableTd>
-                                    <TableTd>22</TableTd>
-                                    <TableTd>false</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd role="gridcell">4</TableTd>
+                                    <TableTd role="gridcell">Chef Anton&apos;s Cajun Seasoning</TableTd>
+                                    <TableTd role="gridcell">48 - 6 oz jars</TableTd>
+                                    <TableTd role="gridcell">22</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
-                                    <TableTd>5</TableTd>
-                                    <TableTd>Grandma&apos;s Boysenberry Spread</TableTd>
-                                    <TableTd>12 - 8 oz jars</TableTd>
-                                    <TableTd>25</TableTd>
-                                    <TableTd>false</TableTd>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd role="gridcell">5</TableTd>
+                                    <TableTd role="gridcell">Grandma&apos;s Boysenberry Spread</TableTd>
+                                    <TableTd role="gridcell">12 - 8 oz jars</TableTd>
+                                    <TableTd role="gridcell">25</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>

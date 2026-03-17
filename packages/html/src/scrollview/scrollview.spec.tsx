@@ -48,10 +48,11 @@ export const ScrollView: KendoComponent<KendoScrollViewProps> = (
 
     const iconPrev = rtl ? 'chevron-right' : 'chevron-left';
     const iconNext = rtl ? 'chevron-left' : 'chevron-right';
+    const wrapId = 'scrollview-wrap';
 
     for ( let i = 0; i < views; i++ ) {
         scrollviewViews.push(
-            <div className="k-scrollview-view" key={i}></div>
+            <div className="k-scrollview-view" key={i} role="listitem" aria-roledescription="slide"></div>
         );
     }
 
@@ -65,22 +66,26 @@ export const ScrollView: KendoComponent<KendoScrollViewProps> = (
                     [`${SCROLLVIEW_CLASSNAME}-${mode}`]: mode !== "normal",
                     ['k-rtl']: rtl
                 }
-            )}>
+            )}
+            role="application"
+            aria-roledescription="carousel"
+            tabIndex={0}
+        >
             <div className={classNames(
                 'k-scrollview-wrap',
                 {
                     ['k-scrollview-animate']: animate
                 }
-            )} style={{ "--kendo-scrollview-views": views, "--kendo-scrollview-current": currentView } as React.CSSProperties}>
+            )} id={wrapId} role="list" style={{ "--kendo-scrollview-views": views, "--kendo-scrollview-current": currentView } as React.CSSProperties}>
                 {scrollviewViews}
             </div>
             <div className="k-scrollview-elements">
                 { arrows &&
                     <>
-                        <span className="k-scrollview-prev">
+                        <span className="k-scrollview-prev" role="button" aria-label="Previous" aria-controls={wrapId}>
                             <Icon icon={iconPrev} size="xxxlarge"></Icon>
                         </span>
-                        <span className="k-scrollview-next">
+                        <span className="k-scrollview-next" role="button" aria-label="Next" aria-controls={wrapId}>
                             <Icon icon={iconNext} size="xxxlarge"></Icon>
                         </span>
                     </>
@@ -127,7 +132,7 @@ export const ScrollView: KendoComponent<KendoScrollViewProps> = (
                     </div>
                 }
             </div>
-            <div className="k-sr-only"></div>
+            <div className="k-sr-only" aria-live="polite"></div>
         </div>
     );
 };
@@ -138,5 +143,21 @@ ScrollView.className = SCROLLVIEW_CLASSNAME;
 ScrollView.defaultOptions = defaultOptions;
 ScrollView.moduleName = SCROLLVIEW_MODULE_NAME;
 ScrollView.folderName = SCROLLVIEW_FOLDER_NAME;
+
+ScrollView.ariaSpec = {
+    selector: '.k-scrollview',
+    rules: [
+        { selector: '.k-scrollview', attribute: 'role=application', usage: 'Specifies the role of the Carousel element.' },
+        { selector: '.k-scrollview', attribute: 'aria-roledescription=carousel', usage: 'Clarifies the role of the Carousel element.' },
+        { selector: '.k-scrollview', attribute: 'tabindex=0', usage: 'Carousel element must be focusable.' },
+        { selector: '.k-scrollview-wrap', attribute: 'role=list', usage: 'Clarifies the scrollview wrap as a list of items (images).' },
+        { selector: '.k-scrollview-wrap>*', attribute: 'role=listitem', usage: 'Specifies the role of each Carousel item.' },
+        { selector: '.k-scrollview-wrap>*', attribute: 'aria-roledescription=slide', usage: 'Clarifies the role of the Carousel item.' },
+        { selector: '.k-scrollview-prev,.k-scrollview-next', attribute: 'role=button', usage: 'Specifies the role of the Previous/Next button.' },
+        { selector: '.k-scrollview-prev,.k-scrollview-next', attribute: 'aria-label', usage: 'Specifies label for the Previous/Next button.' },
+        { selector: '.k-scrollview-prev,.k-scrollview-next', attribute: 'aria-controls', usage: 'Points to the id of the items container element.' },
+        { selector: '.k-scrollview>.k-sr-only', attribute: 'aria-live=polite', usage: 'Identifies a hidden element as a live region in the polite state.' },
+    ]
+};
 
 export default ScrollView;

@@ -15,9 +15,9 @@ export const PromptInPopup = (props) => (
                 <Toolbar fillMode="flat">
                     <IconTextButton fillMode="flat" themeColor="primary" icon="sparkles" rounded="full" selected>Ask AI</IconTextButton>
                     <IconTextButton fillMode="flat" themeColor="primary" icon="comment" rounded="full">Output</IconTextButton>
-                    <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full"></IconButton>
+                    <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full" aria-label="More actions"></IconButton>
                     <span className="k-spacer"></span>
-                    <IconButton fillMode="flat" icon="x" rounded="full"></IconButton>
+                    <IconButton fillMode="flat" icon="x" rounded="full" aria-label="Close"></IconButton>
                 </Toolbar>
             </PromptHeader>
             <PromptContent>
@@ -27,6 +27,7 @@ export const PromptInPopup = (props) => (
                         rows={1}
                         suffixSeparator={false}
                         placeholder="Ask or generate content with AI"
+                        aria-label="Ask or generate content with AI"
                         suffix={
                             <>
                                 <SpeechToTextButton fillMode="flat" />

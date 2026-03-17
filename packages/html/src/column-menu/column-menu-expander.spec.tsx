@@ -1,4 +1,5 @@
 import { classNames } from '../misc';
+import { nextId } from '../misc';
 import { Icon } from '../icon';
 import { ColumnMenuItem, ColumnMenuItemContent } from '../column-menu';
 
@@ -18,6 +19,7 @@ export type KendoColumnMenuExpanderProps = {
     expanderIcon?: string;
     itemContent?: React.JSX.Element;
     expanded?: boolean;
+    contentId?: string;
 };
 
 const defaultOptions = {};
@@ -34,8 +36,11 @@ export const ColumnMenuExpander: KendoComponent<KendoColumnMenuExpanderProps & R
         expanded,
         itemContent,
         expanderIcon,
+        contentId: contentIdProp,
         ...other
     } = props;
+
+    const contentId = contentIdProp || nextId('columnmenu-content');
 
     const icon = !expanded && !expanderIcon
         ? <Icon icon="chevron-down" />
@@ -50,13 +55,16 @@ export const ColumnMenuExpander: KendoComponent<KendoColumnMenuExpanderProps & R
                 props.className,
                 COLUMNMENUEXPANDER_CLASSNAME
             )}>
-            <ColumnMenuItem text={itemText} startIcon={itemStartIcon} endIcon={itemEndIcon} sortIndex={itemSortIndex}>
+            <ColumnMenuItem text={itemText} startIcon={itemStartIcon} endIcon={itemEndIcon} sortIndex={itemSortIndex}
+                aria-expanded={expanded ? 'true' : 'false'}
+                aria-controls={contentId}
+            >
                 <span className="k-spacer"></span>
                 <span className="k-expander-indicator">
                     {icon}
                 </span>
             </ColumnMenuItem>
-            { expanded && <ColumnMenuItemContent>{itemContent}</ColumnMenuItemContent> }
+            { expanded && <ColumnMenuItemContent id={contentId}>{itemContent}</ColumnMenuItemContent> }
             { props.children }
         </div>
     );

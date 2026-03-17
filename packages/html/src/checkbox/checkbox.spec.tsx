@@ -22,6 +22,8 @@ const options = {
 
 export type CheckboxProps = CheckboxOptions & {
     id?: string;
+    /** @aria role override for the wrapper span (e.g., role="none" in Treeview context) */
+    wrapperRole?: string;
 };
 
 export type CheckboxState = { [K in (typeof states)[number]]?: boolean };
@@ -71,11 +73,12 @@ export const Checkbox: KendoComponent<CheckboxProps & CheckboxState & React.HTML
         required,
         size,
         rounded,
+        wrapperRole,
         ...other
     } = props;
 
     return (
-        <span className="k-checkbox-wrap">
+        <span className="k-checkbox-wrap" role={wrapperRole}>
             <input
                 {...other}
                 id={id}

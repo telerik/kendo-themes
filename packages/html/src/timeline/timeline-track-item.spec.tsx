@@ -11,6 +11,10 @@ const states = [
 export type KendoTimelineTrackItemOptions = {
     children?: React.JSX.Element | React.JSX.Element[];
     content?: string;
+    /** @aria aria-selected="true" when tab is selected/focused */
+    ariaSelected?: boolean;
+    /** @aria aria-describedby points to the tabpanel */
+    ariaDescribedBy?: string;
 };
 
 export type KendoTimelineTrackItemState = { [K in (typeof states)[number]]?: boolean };
@@ -23,8 +27,12 @@ export const TimelineTrackItem: KendoComponent<KendoTimelineTrackItemOptions & K
     const {
         content,
         focus,
+        ariaSelected,
+        ariaDescribedBy,
         ...other
     } = props;
+
+    const isFlagWrap = other.className?.includes('k-timeline-flag-wrap');
 
     return (
 
@@ -36,7 +44,12 @@ export const TimelineTrackItem: KendoComponent<KendoTimelineTrackItemOptions & K
                 stateClassNames(TIMELINETRACKITEM_CLASSNAME, {
                     focus
                 }),
-            )}>
+            )}
+            role={isFlagWrap ? 'none' : 'tab'}
+            aria-hidden={isFlagWrap ? 'true' : undefined}
+            aria-selected={!isFlagWrap && ariaSelected ? 'true' : undefined}
+            aria-describedby={!isFlagWrap ? ariaDescribedBy : undefined}
+        >
             {content}
             {props.children}
         </li>

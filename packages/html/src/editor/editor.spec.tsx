@@ -59,6 +59,7 @@ export const Editor: KendoComponent<KendoEditorState & KendoEditorProps & React.
                 {toolbarItems}
             </EditorToolbar>
             <EditorContent
+                readonly={readonly}
                 className={classNames(
                     stateClassNames(EDITOR_CLASSNAME, {
                         focus,
@@ -76,5 +77,17 @@ Editor.className = EDITOR_CLASSNAME;
 Editor.defaultOptions = defaultOptions;
 Editor.moduleName = EDITOR_MODULE_NAME;
 Editor.folderName = EDITOR_FOLDER_NAME;
+
+/**
+ * @see Toolbar ariaSpec for editor toolbar accessibility
+ */
+Editor.ariaSpec = {
+    selector: '.k-editor',
+    rules: [
+        { selector: '.k-editor-content[contenteditable]', attribute: 'role=textbox', usage: 'Specifies the role of the component as text input.' },
+        { selector: '.k-editor-content[contenteditable]', attribute: 'aria-label', usage: 'The component focusable element needs an accessible name.' },
+        { selector: '.k-editor.k-readonly .k-editor-content[contenteditable="false"]', attribute: 'aria-readonly=true', usage: 'Rendered only when the Editor is readonly.' },
+    ]
+};
 
 export default Editor;

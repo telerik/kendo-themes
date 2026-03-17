@@ -35,12 +35,15 @@ export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React
     } = props;
 
     const textOrChildren = text ? text : props.children;
+    const isEmpty = !text && !props.children;
+    const emptyThRole = (Component === 'th' && isEmpty && !other.role) ? 'presentation' : undefined;
 
     return (
         <Component
             {...other}
             colSpan={colspan}
             rowSpan={rowspan}
+            {...(emptyThRole && { role: emptyThRole })}
             className={classNames(
                 className,
                 props.className,

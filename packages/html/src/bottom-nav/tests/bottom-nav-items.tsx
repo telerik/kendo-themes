@@ -51,7 +51,7 @@ export default () =>(
                         <Icon className="k-bottom-nav-item-icon" icon="envelope" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Normal</span>
                     </a>
-                    <a className="k-bottom-nav-item k-focus" href="#">
+                    <a className="k-bottom-nav-item k-focus">
                         <Icon className="k-bottom-nav-item-icon" icon="envelope" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Focused</span>
                     </a>

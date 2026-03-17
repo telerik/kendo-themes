@@ -86,7 +86,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
                             )}
                         </span>
                         {menu && (
-                            <a href="#" className={classNames(
+                            <a className={classNames(
                                 'k-grid-header-menu',
                                 {
                                     [`k-active`]: active,
