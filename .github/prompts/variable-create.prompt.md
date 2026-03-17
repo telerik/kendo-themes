@@ -22,8 +22,8 @@ Your goal is to create new SCSS variables by adding them to all respective `_var
 - **Place strategically**: Position variables according to placement guidelines
 - **Assign appropriate values**: Follow value assignment rules for each theme
 - **Include default flag**: Add `!default` to all new variable definitions
-- **Handle core theme**: Use `null` values for all variables in the `core` folder
-- **Document thoroughly**: Follow documentation guidelines from ${variable-docs.prompt.md}
+- **Handle core theme**: Use `null` values for all variables in the `core` folder, **without any SassDoc comments**
+- **Document thoroughly**: Follow documentation guidelines from ${variable-docs.prompt.md} for theme files only (not core)
 - **Export properly**: Add variables to @forward maps unless instructed otherwise
 - **Theme-specific handling**: Only add theme-specific variables to their respective themes
 - **Direct editing only**: Do not provide examples and details. Do not argument about the changes you make. Do not provide summary. Directly edit the files.
@@ -143,7 +143,7 @@ packages/
 2. **Universal values**: If one value is given, apply to all themes except core
 3. **Default fallback**: If no value is provided, use `null`
 4. **Default flag**: Always include `!default` unless explicitly instructed otherwise
-5. **Core theme exception**: Always use `null` for core theme variables
+5. **Core theme exception**: Always use `null` for core theme variables, **without any SassDoc comments** (core variables files contain only bare `$variable: null !default;` lines)
 
 ### Fluent Theme Special Handling
 
@@ -209,7 +209,7 @@ All new variables must be added to the `@forward` map at the end of each file (e
 
 ### Post-Creation Validation
 - [ ] Variable added to all required theme files
-- [ ] Core theme has `null` value
+- [ ] Core theme has `null` value with no SassDoc comments
 - [ ] Fluent theme has CSS variable wrapper
 - [ ] Documentation follows format guidelines
 - [ ] Export maps updated correctly
@@ -224,7 +224,7 @@ All new variables must be added to the `@forward` map at the end of each file (e
 1. Create `$kendo-tooltip-arrow-size`
 2. Add to all themes: `bootstrap`, `classic`, `default`, `material` (value: `10px`)
 3. Add to `fluent` theme: `var(--kendo-tooltip-arrow-size, 10px)`
-4. Add to `core` theme: `null`
+4. Add to `core` theme: `null` (no SassDoc comments)
 5. Document with `@group tooltip`
 6. Export in all @forward maps
 

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.4...v13.1.0) (2026-03-17)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+# [13.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.3...v13.1.0-dev.4) (2026-03-17)
+
+
+### Features
+
+* add variables for vertical popup spacings ([cbfa407](https://github.com/telerik/kendo-themes/commit/cbfa407f5989936e7d3f1b8606b5a8d5080f0be3))
+* **html:** add gantt aria ([cc12364](https://github.com/telerik/kendo-themes/commit/cc12364dc644e8ddf2d31acb73f4056b98c7dd8f))
+* **html:** add grid pinned rows and sticky groups templates ([d8d607a](https://github.com/telerik/kendo-themes/commit/d8d607a7427e9eb752db40816802a6cb1561c759))
+
+
+
+
+
 # [13.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.2...v13.1.0-dev.3) (2026-03-16)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
