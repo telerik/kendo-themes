@@ -1,8 +1,14 @@
-// Core Index
-@forward "@progress/kendo-theme-core/scss/index.scss";
+// Color System
+@use "./color-system/_swatch.scss" as *;
 
-// Variables
 @forward "../_variables.scss";
+
+// Core Index
+@forward "@progress/kendo-theme-core/scss/index.scss" with (
+    // Color System
+    $default-colors: $kendo-colors,
+    $kendo-colors: $kendo-colors !default,
+);
 
 // Global disabled styles
 :root {

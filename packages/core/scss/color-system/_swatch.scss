@@ -1,571 +1,174 @@
 @use "sass:map";
 
-// ============================================================================
-// OKLCH Adaptive Color Token System (POC)
-// ============================================================================
-
-// All derived tokens are computed from user-provided seed colors via CSS
-// relative color syntax:  oklch(from <seed> <L'> <C'> <H'>).
-
-// Seeds are arbitrary -- the user or an LLM can set them to ANY oklch value.
-// Every other token adapts automatically using the rules below.
-
-// --------------------------------------------------------------------------
-//  ADAPTIVE SCHEMA (Figma Default Theme 3.5)
-// --------------------------------------------------------------------------
-
-//  Token            | Formula                     | Purpose
-//  -----------------+-----------------------------+------------------------
-//  hover            | l ± 0.09 (sign selector)    | Slightly darker/lighter
-//  active           | l ± 0.18 (sign selector)    | More intensity change
-//  subtle           | l*0.05 + 0.95               | Near-white tinted wash
-//  subtle-hover     | l*0.08 + 0.91               | Slightly darker wash
-//  subtle-active    | l*0.12 + 0.87               | Darkest wash
-//  emphasis         | l*0.21 + 0.79               | Mid-light tinted bg
-//  on-{X}           | sign selector (0.6)         | Auto white/dark text
-//  {X}-on-subtle    | l*0.35                      | Dark text on light wash
-//  {X}-on-surface   | clamp(0.20, l, 0.60)        | Readable on neutral bg
-
-// --------------------------------------------------------------------------
-//  KEY TECHNIQUE -- CSS-only if/else via sign selector
-// --------------------------------------------------------------------------
-
-//  The expression:
-//      (0.35 - l) * 99999
-//  produces a very large POSITIVE number when l < 0.35 (dark seed)
-//  and a very large NEGATIVE number when l > 0.35 (light seed).
-
-//  Wrapping it in clamp(-d, ..., +d) collapses it to exactly +/-d,
-//  giving us a directional lightness shift without @media or JS.
-
-//  hover  = calc(l + clamp(-d, (0.35 - l) * 99999, +d))
-//         => dark seed  => l + d   (lighten)
-//         => light seed => l - d   (darken)
-//         => threshold  => l + 0   (no change -- graceful boundary)
-
-//  THRESHOLD NOTE: set to 0.35 so that all Figma Default Theme seeds
-//  (primary L=0.37 through base L=0.97) fall on the "darken" side,
-//  matching Figma's light-theme intent.  Seeds below L=0.35 (e.g. a
-//  dark-theme base) will automatically lighten instead.
-
-//  FOREGROUND NOTE: on-{X} text tokens use a SEPARATE threshold of
-//  0.6 (perceptual midpoint) to determine white vs dark text.  This
-//  ensures readable contrast regardless of the hover/active threshold.
-
-// --------------------------------------------------------------------------
-//  SUBTLE / EMPHASIS -- linear blend (not sign selector)
-// --------------------------------------------------------------------------
-//  Subtle and emphasis use linear blending toward white:
-
-//    L' = l * k + offset
-
-//  This maps ANY seed L to a narrow high-L band, always producing a
-//  usable light wash.  No sign selector needed -- works for all seeds.
-
-//    subtle:        l*0.05 + 0.95  →  [0.95 .. 1.00]
-//    subtle-hover:  l*0.08 + 0.91  →  [0.91 .. 0.99]
-//    subtle-active: l*0.12 + 0.87  →  [0.87 .. 0.99]
-//    emphasis:      l*0.21 + 0.79  →  [0.79 .. 1.00]
-
-//  Chroma is scaled down from the seed to create a muted tint.
-
-//  For base (neutral chrome), emphasis uses the adaptive delta approach
-//  (same direction as hover, larger step) because base emphasis represents
-//  a stronger neutral, not a pastel tint.
-
-//  Seed values sourced from Figma Default Theme 3.5.
-
-// ============================================================================
-
 $default-colors: (
-    // --- Misc (derived) ------------------------
-    app-surface: oklch(100% 0 0deg),
-    on-app-surface: #{"oklch(from var(--kendo-color-app-surface) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)"},
-    subtle: oklch(28.36% 0.0243 261.13deg),
-    surface: oklch(96.92% 0.0034 247.86deg),
-    surface-alt: #{"oklch(from var(--kendo-color-surface) calc(l + 0.02) c h)"},
-    border: oklch(0% 0 0deg / 0.08),
-    border-alt: oklch(0% 0 0deg / 0.16),
-
-    // =============================================================
-    //  BASE -- neutral chrome (adaptive)
-    // =============================================================
-    //  Base is the component chrome area (toolbars, headers, rows).
-    //  Uses smaller deltas than chromatic colors because near-white
-    //  seed (L=0.97) needs subtle differentiation.
-    //  Figma: hover Δ=0.018, active Δ=0.067
-    //
-    //  L=0.97 (light theme): hover → 0.95 (darker)
-    //  L=0.20 (dark theme):  hover → 0.22 (lighter)
-    // -------------------------------------------------------------
-    base-subtle: #{"oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.02, (0.35 - l) * 99999, 0.02)), 0.99) c h)"},
-    base-subtle-hover: #{"oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.04, (0.35 - l) * 99999, 0.04)), 0.98) c h)"},
-    base-subtle-active: #{"oklch(from var(--kendo-color-base) clamp(0.03, calc(l + clamp(-0.07, (0.35 - l) * 99999, 0.07)), 0.97) c h)"},
-    base: oklch(96.92% 0.0034 247.86deg),
-    base-hover: #{"oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.02, (0.35 - l) * 99999, 0.02)), 0.99) c h)"},
-    base-active: #{"oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.07, (0.35 - l) * 99999, 0.07)), 0.98) c h)"},
-    base-emphasis: #{"oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.17, (0.35 - l) * 99999, 0.17)), 0.95) c h)"},
-    base-on-subtle: #{"oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)"},
-    on-base: #{"oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)"},
-    base-on-surface: #{"oklch(from var(--kendo-color-base) clamp(0.15, (0.6 - l) * 99999, 0.95) 0 h)"},
-
-    // =============================================================
-    //  PRIMARY -- chromatic adaptive
-    // =============================================================
-    //  hover/active:   sign selector (threshold 0.35), deltas from Figma
-    //  subtle:         linear blend toward white  →  L = l*0.05 + 0.95
-    //  emphasis:       linear blend toward lighter →  L = l*0.21 + 0.79
-    //  on-{X}:         auto white/dark text (threshold 0.6)
-    //  on-subtle:      seed darkened (l*0.35) → readable on light subtle bg
-    //  on-surface:     seed L clamped [0.20..0.60]
-    // -------------------------------------------------------------
-    primary-subtle: #{"oklch(from var(--kendo-color-primary) calc(l * 0.05 + 0.95) calc(c * 0.12) h)"},
-    primary-subtle-hover: #{"oklch(from var(--kendo-color-primary) calc(l * 0.08 + 0.91) calc(c * 0.18) h)"},
-    primary-subtle-active: #{"oklch(from var(--kendo-color-primary) calc(l * 0.12 + 0.87) calc(c * 0.25) h)"},
-    primary: oklch(37.17% 0.0392 257.29deg),
-    primary-hover: #{"oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h)"},
-    primary-active: #{"oklch(from var(--kendo-color-primary) max(0.20, calc(l + clamp(-0.18, (0.35 - l) * 99999, 0.18))) c h)"},
-    primary-emphasis: #{"oklch(from var(--kendo-color-primary) calc(l * 0.21 + 0.79) calc(c * 0.55) h)"},
-    primary-on-subtle: #{"oklch(from var(--kendo-color-primary) calc(l * 0.35) c h)"},
-    on-primary: #{"oklch(from var(--kendo-color-primary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h)"},
-    primary-on-surface: #{"oklch(from var(--kendo-color-primary) clamp(0.20, l, 0.60) c h)"},
-
-    // =============================================================
-    //  SECONDARY -- chromatic adaptive
-    // =============================================================
-    secondary-subtle: #{"oklch(from var(--kendo-color-secondary) calc(l * 0.05 + 0.95) calc(c * 0.12) h)"},
-    secondary-subtle-hover: #{"oklch(from var(--kendo-color-secondary) calc(l * 0.08 + 0.91) calc(c * 0.18) h)"},
-    secondary-subtle-active: #{"oklch(from var(--kendo-color-secondary) calc(l * 0.12 + 0.87) calc(c * 0.25) h)"},
-    secondary: oklch(54.53% 0.2124 275.85deg),
-    secondary-hover: #{"oklch(from var(--kendo-color-secondary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h)"},
-    secondary-active: #{"oklch(from var(--kendo-color-secondary) max(0.20, calc(l + clamp(-0.18, (0.35 - l) * 99999, 0.18))) c h)"},
-    secondary-emphasis: #{"oklch(from var(--kendo-color-secondary) calc(l * 0.21 + 0.79) calc(c * 0.55) h)"},
-    secondary-on-subtle: #{"oklch(from var(--kendo-color-secondary) calc(l * 0.35) c h)"},
-    on-secondary: #{"oklch(from var(--kendo-color-secondary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h)"},
-    secondary-on-surface: #{"oklch(from var(--kendo-color-secondary) clamp(0.20, l, 0.60) c h)"},
-
-    // =============================================================
-    //  TERTIARY -- chromatic adaptive
-    // =============================================================
-    tertiary-subtle: #{"oklch(from var(--kendo-color-tertiary) calc(l * 0.05 + 0.95) calc(c * 0.12) h)"},
-    tertiary-subtle-hover: #{"oklch(from var(--kendo-color-tertiary) calc(l * 0.08 + 0.91) calc(c * 0.18) h)"},
-    tertiary-subtle-active: #{"oklch(from var(--kendo-color-tertiary) calc(l * 0.12 + 0.87) calc(c * 0.25) h)"},
-    tertiary: oklch(72.46% 0.1727 310.67deg),
-    tertiary-hover: #{"oklch(from var(--kendo-color-tertiary) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h)"},
-    tertiary-active: #{"oklch(from var(--kendo-color-tertiary) max(0.20, calc(l + clamp(-0.18, (0.35 - l) * 99999, 0.18))) c h)"},
-    tertiary-emphasis: #{"oklch(from var(--kendo-color-tertiary) calc(l * 0.21 + 0.79) calc(c * 0.55) h)"},
-    tertiary-on-subtle: #{"oklch(from var(--kendo-color-tertiary) calc(l * 0.35) c h)"},
-    on-tertiary: #{"oklch(from var(--kendo-color-tertiary) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h)"},
-    tertiary-on-surface: #{"oklch(from var(--kendo-color-tertiary) clamp(0.20, l, 0.60) c h)"},
-
-    // =============================================================
-    //  INFO -- chromatic adaptive
-    // =============================================================
-    info-subtle: #{"oklch(from var(--kendo-color-info) calc(l * 0.05 + 0.95) calc(c * 0.12) h)"},
-    info-subtle-hover: #{"oklch(from var(--kendo-color-info) calc(l * 0.08 + 0.91) calc(c * 0.18) h)"},
-    info-subtle-active: #{"oklch(from var(--kendo-color-info) calc(l * 0.12 + 0.87) calc(c * 0.25) h)"},
-    info: oklch(51.78% 0.2301 261.43deg),
-    info-hover: #{"oklch(from var(--kendo-color-info) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h)"},
-    info-active: #{"oklch(from var(--kendo-color-info) max(0.20, calc(l + clamp(-0.18, (0.35 - l) * 99999, 0.18))) c h)"},
-    info-emphasis: #{"oklch(from var(--kendo-color-info) calc(l * 0.21 + 0.79) calc(c * 0.55) h)"},
-    info-on-subtle: #{"oklch(from var(--kendo-color-info) calc(l * 0.35) c h)"},
-    on-info: #{"oklch(from var(--kendo-color-info) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h)"},
-    info-on-surface: #{"oklch(from var(--kendo-color-info) clamp(0.20, l, 0.60) c h)"},
-
-    // =============================================================
-    //  SUCCESS -- chromatic adaptive
-    // =============================================================
-    success-subtle: #{"oklch(from var(--kendo-color-success) calc(l * 0.05 + 0.95) calc(c * 0.12) h)"},
-    success-subtle-hover: #{"oklch(from var(--kendo-color-success) calc(l * 0.08 + 0.91) calc(c * 0.18) h)"},
-    success-subtle-active: #{"oklch(from var(--kendo-color-success) calc(l * 0.12 + 0.87) calc(c * 0.25) h)"},
-    success: oklch(67.45% 0.2171 139.99deg),
-    success-hover: #{"oklch(from var(--kendo-color-success) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h)"},
-    success-active: #{"oklch(from var(--kendo-color-success) max(0.20, calc(l + clamp(-0.18, (0.35 - l) * 99999, 0.18))) c h)"},
-    success-emphasis: #{"oklch(from var(--kendo-color-success) calc(l * 0.21 + 0.79) calc(c * 0.55) h)"},
-    success-on-subtle: #{"oklch(from var(--kendo-color-success) calc(l * 0.35) c h)"},
-    on-success: #{"oklch(from var(--kendo-color-success) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h)"},
-    success-on-surface: #{"oklch(from var(--kendo-color-success) clamp(0.20, l, 0.60) c h)"},
-
-    // =============================================================
-    //  WARNING -- chromatic adaptive
-    // =============================================================
-    warning-subtle: #{"oklch(from var(--kendo-color-warning) calc(l * 0.05 + 0.95) calc(c * 0.12) h)"},
-    warning-subtle-hover: #{"oklch(from var(--kendo-color-warning) calc(l * 0.08 + 0.91) calc(c * 0.18) h)"},
-    warning-subtle-active: #{"oklch(from var(--kendo-color-warning) calc(l * 0.12 + 0.87) calc(c * 0.25) h)"},
-    warning: oklch(84.22% 0.1727 84.58deg),
-    warning-hover: #{"oklch(from var(--kendo-color-warning) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h)"},
-    warning-active: #{"oklch(from var(--kendo-color-warning) max(0.20, calc(l + clamp(-0.18, (0.35 - l) * 99999, 0.18))) c h)"},
-    warning-emphasis: #{"oklch(from var(--kendo-color-warning) calc(l * 0.21 + 0.79) calc(c * 0.55) h)"},
-    warning-on-subtle: #{"oklch(from var(--kendo-color-warning) calc(l * 0.35) c h)"},
-    on-warning: #{"oklch(from var(--kendo-color-warning) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h)"},
-    warning-on-surface: #{"oklch(from var(--kendo-color-warning) clamp(0.20, l, 0.60) c h)"},
-
-    // =============================================================
-    //  ERROR -- chromatic adaptive
-    // =============================================================
-    error-subtle: #{"oklch(from var(--kendo-color-error) calc(l * 0.05 + 0.95) calc(c * 0.12) h)"},
-    error-subtle-hover: #{"oklch(from var(--kendo-color-error) calc(l * 0.08 + 0.91) calc(c * 0.18) h)"},
-    error-subtle-active: #{"oklch(from var(--kendo-color-error) calc(l * 0.12 + 0.87) calc(c * 0.25) h)"},
-    error: oklch(61.07% 0.2435 30.20deg),
-    error-hover: #{"oklch(from var(--kendo-color-error) max(0.15, calc(l + clamp(-0.09, (0.35 - l) * 99999, 0.09))) c h)"},
-    error-active: #{"oklch(from var(--kendo-color-error) max(0.20, calc(l + clamp(-0.18, (0.35 - l) * 99999, 0.18))) c h)"},
-    error-emphasis: #{"oklch(from var(--kendo-color-error) calc(l * 0.21 + 0.79) calc(c * 0.55) h)"},
-    error-on-subtle: #{"oklch(from var(--kendo-color-error) calc(l * 0.35) c h)"},
-    on-error: #{"oklch(from var(--kendo-color-error) clamp(0.10, (0.6 - l) * 99999, 0.98) 0.01 h)"},
-    error-on-surface: #{"oklch(from var(--kendo-color-error) clamp(0.20, l, 0.60) c h)"},
-
-    // =============================================================
-    //  LIGHT -- structural, fixed neutrals
-    // =============================================================
-    light-subtle: oklch(98% 0 0deg),
-    light-subtle-hover: oklch(97% 0 0deg),
-    light-subtle-active: oklch(93% 0 0deg),
-    light: oklch(93% 0 0deg),
-    light-hover: oklch(90% 0 0deg),
-    light-active: oklch(87% 0 0deg),
-    light-emphasis: oklch(87% 0 0deg),
-    light-on-subtle: oklch(14% 0 0deg),
-    on-light: oklch(0% 0 0deg),
-    light-on-surface: oklch(90% 0 0deg),
-
-    // =============================================================
-    //  DARK -- structural, fixed neutrals
-    // =============================================================
-    dark-subtle: oklch(80% 0 0deg),
-    dark-subtle-hover: oklch(73% 0 0deg),
-    dark-subtle-active: oklch(66% 0 0deg),
-    dark: oklch(32% 0 0deg),
-    dark-hover: oklch(24% 0 0deg),
-    dark-active: oklch(19% 0 0deg),
-    dark-emphasis: oklch(50% 0 0deg),
-    dark-on-subtle: oklch(19% 0 0deg),
-    on-dark: oklch(100% 0 0deg),
-    dark-on-surface: oklch(14% 0 0deg),
-
-    // =============================================================
-    //  INVERSE -- structural
-    // =============================================================
-    inverse-subtle: oklch(50% 0 0deg),
-    inverse-subtle-hover: oklch(41% 0 0deg),
-    inverse-subtle-active: oklch(32% 0 0deg),
-    inverse: oklch(32% 0 0deg),
-    inverse-hover: oklch(24% 0 0deg),
-    inverse-active: oklch(19% 0 0deg),
-    inverse-emphasis: oklch(66% 0 0deg),
-    inverse-on-subtle: oklch(100% 0 0deg),
-    on-inverse: oklch(100% 0 0deg),
-    inverse-on-surface: oklch(14% 0 0deg),
-
-    // =============================================================
-    //  SERIES -- chart/data-viz colors
-    // =============================================================
-    //  Single seed color -- all 6 series are derived by rotating
-    //  the hue in 60° increments (360° / 6) around the oklch wheel.
-    //  Change this one value to re-palette all chart colors at once.
-    //
-    //  bold/bolder: darken proportionally (l * factor)
-    //  subtle/subtler: lighten proportionally (toward white)
-    // -------------------------------------------------------------
-    series: oklch(65% 0.20 27deg),
-
-    // --- Series A (seed hue + 0°) --------------------------------
-    series-a: var(--kendo-color-series),
-    series-a-bold: #{"oklch(from var(--kendo-color-series-a) calc(l * 0.75) c h)"},
-    series-a-bolder: #{"oklch(from var(--kendo-color-series-a) calc(l * 0.50) c h)"},
-    series-a-subtle: #{"oklch(from var(--kendo-color-series-a) calc(l * 0.50 + 0.50) c h)"},
-    series-a-subtler: #{"oklch(from var(--kendo-color-series-a) calc(l * 0.75 + 0.25) c h)"},
-
-    // --- Series B (seed hue + 60°) --------------------------------
-    series-b: #{"oklch(from var(--kendo-color-series) l c calc(h + 60))"},
-    series-b-bold: #{"oklch(from var(--kendo-color-series-b) calc(l * 0.75) c h)"},
-    series-b-bolder: #{"oklch(from var(--kendo-color-series-b) calc(l * 0.50) c h)"},
-    series-b-subtle: #{"oklch(from var(--kendo-color-series-b) calc(l * 0.50 + 0.50) c h)"},
-    series-b-subtler: #{"oklch(from var(--kendo-color-series-b) calc(l * 0.75 + 0.25) c h)"},
-
-    // --- Series C (seed hue + 120°) --------------------------------
-    series-c: #{"oklch(from var(--kendo-color-series) l c calc(h + 120))"},
-    series-c-bold: #{"oklch(from var(--kendo-color-series-c) calc(l * 0.75) c h)"},
-    series-c-bolder: #{"oklch(from var(--kendo-color-series-c) calc(l * 0.50) c h)"},
-    series-c-subtle: #{"oklch(from var(--kendo-color-series-c) calc(l * 0.50 + 0.50) c h)"},
-    series-c-subtler: #{"oklch(from var(--kendo-color-series-c) calc(l * 0.75 + 0.25) c h)"},
-
-    // --- Series D (seed hue + 180°) --------------------------------
-    series-d: #{"oklch(from var(--kendo-color-series) l c calc(h + 180))"},
-    series-d-bold: #{"oklch(from var(--kendo-color-series-d) calc(l * 0.75) c h)"},
-    series-d-bolder: #{"oklch(from var(--kendo-color-series-d) calc(l * 0.50) c h)"},
-    series-d-subtle: #{"oklch(from var(--kendo-color-series-d) calc(l * 0.50 + 0.50) c h)"},
-    series-d-subtler: #{"oklch(from var(--kendo-color-series-d) calc(l * 0.75 + 0.25) c h)"},
-
-    // --- Series E (seed hue + 240°) --------------------------------
-    series-e: #{"oklch(from var(--kendo-color-series) l c calc(h + 240))"},
-    series-e-bold: #{"oklch(from var(--kendo-color-series-e) calc(l * 0.75) c h)"},
-    series-e-bolder: #{"oklch(from var(--kendo-color-series-e) calc(l * 0.50) c h)"},
-    series-e-subtle: #{"oklch(from var(--kendo-color-series-e) calc(l * 0.50 + 0.50) c h)"},
-    series-e-subtler: #{"oklch(from var(--kendo-color-series-e) calc(l * 0.75 + 0.25) c h)"},
-
-    // --- Series F (seed hue + 300°) --------------------------------
-    series-f: #{"oklch(from var(--kendo-color-series) l c calc(h + 300))"},
-    series-f-bold: #{"oklch(from var(--kendo-color-series-f) calc(l * 0.75) c h)"},
-    series-f-bolder: #{"oklch(from var(--kendo-color-series-f) calc(l * 0.50) c h)"},
-    series-f-subtle: #{"oklch(from var(--kendo-color-series-f) calc(l * 0.50 + 0.50) c h)"},
-    series-f-subtler: #{"oklch(from var(--kendo-color-series-f) calc(l * 0.75 + 0.25) c h)"},
+    // Misc
+    app-surface: null,
+    on-app-surface: null,
+    subtle: null,
+    surface: null,
+    surface-alt: null,
+    border: null,
+    border-alt: null,
+    // Base
+    base-subtle: null,
+    base-subtle-hover: null,
+    base-subtle-active: null,
+    base: null,
+    base-hover: null,
+    base-active: null,
+    base-emphasis: null,
+    base-on-subtle: null,
+    on-base: null,
+    base-on-surface: null,
+    // Primary
+    primary-subtle: null,
+    primary-subtle-hover: null,
+    primary-subtle-active: null,
+    primary: null,
+    primary-hover: null,
+    primary-active: null,
+    primary-emphasis: null,
+    primary-on-subtle: null,
+    on-primary: null,
+    primary-on-surface: null,
+    // Secondary
+    secondary-subtle: null,
+    secondary-subtle-hover: null,
+    secondary-subtle-active: null,
+    secondary: null,
+    secondary-hover: null,
+    secondary-active: null,
+    secondary-emphasis: null,
+    secondary-on-subtle: null,
+    on-secondary: null,
+    secondary-on-surface: null,
+    // Tertiary
+    tertiary-subtle: null,
+    tertiary-subtle-hover: null,
+    tertiary-subtle-active: null,
+    tertiary: null,
+    tertiary-hover: null,
+    tertiary-active: null,
+    tertiary-emphasis: null,
+    tertiary-on-subtle: null,
+    on-tertiary: null,
+    tertiary-on-surface: null,
+    // Info
+    info-subtle: null,
+    info-subtle-hover: null,
+    info-subtle-active: null,
+    info: null,
+    info-hover: null,
+    info-active: null,
+    info-emphasis: null,
+    info-on-subtle: null,
+    on-info: null,
+    info-on-surface: null,
+    // Success
+    success-subtle: null,
+    success-subtle-hover: null,
+    success-subtle-active: null,
+    success: null,
+    success-hover: null,
+    success-active: null,
+    success-emphasis: null,
+    success-on-subtle: null,
+    on-success: null,
+    success-on-surface: null,
+    // Warning
+    warning-subtle: null,
+    warning-subtle-hover: null,
+    warning-subtle-active: null,
+    warning: null,
+    warning-hover: null,
+    warning-active: null,
+    warning-emphasis: null,
+    warning-on-subtle: null,
+    on-warning: null,
+    warning-on-surface: null,
+    // Error
+    error-subtle: null,
+    error-subtle-hover: null,
+    error-subtle-active: null,
+    error: null,
+    error-hover: null,
+    error-active: null,
+    error-emphasis: null,
+    error-on-subtle: null,
+    on-error: null,
+    error-on-surface: null,
+    // Light
+    light-subtle: null,
+    light-subtle-hover: null,
+    light-subtle-active: null,
+    light: null,
+    light-hover: null,
+    light-active: null,
+    light-emphasis: null,
+    light-on-subtle: null,
+    on-light: null,
+    light-on-surface: null,
+    // Dark
+    dark-subtle: null,
+    dark-subtle-hover: null,
+    dark-subtle-active: null,
+    dark: null,
+    dark-hover: null,
+    dark-active: null,
+    dark-emphasis: null,
+    dark-on-subtle: null,
+    on-dark: null,
+    dark-on-surface: null,
+    // Inverse
+    inverse-subtle: null,
+    inverse-subtle-hover: null,
+    inverse-subtle-active: null,
+    inverse: null,
+    inverse-hover: null,
+    inverse-active: null,
+    inverse-emphasis: null,
+    inverse-on-subtle: null,
+    on-inverse: null,
+    inverse-on-surface: null,
+    // Series
+    series: null,
+    // Series A
+    series-a: null,
+    series-a-bold: null,
+    series-a-bolder: null,
+    series-a-subtle: null,
+    series-a-subtler: null,
+    // Series B
+    series-b: null,
+    series-b-bold: null,
+    series-b-bolder: null,
+    series-b-subtle: null,
+    series-b-subtler: null,
+    // Series C
+    series-c: null,
+    series-c-bold: null,
+    series-c-bolder: null,
+    series-c-subtle: null,
+    series-c-subtler: null,
+    // Series D
+    series-d: null,
+    series-d-bold: null,
+    series-d-bolder: null,
+    series-d-subtle: null,
+    series-d-subtler: null,
+    // Series E
+    series-e: null,
+    series-e-bold: null,
+    series-e-bolder: null,
+    series-e-subtle: null,
+    series-e-subtler: null,
+    // Series F
+    series-f: null,
+    series-f-bold: null,
+    series-f-bolder: null,
+    series-f-subtle: null,
+    series-f-subtler: null,
 ) !default;
-
-/// The global default Colors map.
-/// @group color-system
-///
-/// @subgroup {misc}
-/// [app-surface, on-app-surface, subtle,
-/// surface, surface-alt, border, border-alt]
-/// The Misc variable group.
-/// @prop {Color} app-surface - The background color of the application.
-/// @prop {Color} on-app-surface - The text color of the application.
-/// @prop {Color} subtle - The subtle text color.
-/// @prop {Color} surface - The background color of the components' chrome area.
-/// @prop {Color} surface-alt - The alternative background color of the components' chrome area.
-/// @prop {Color} border - Тhe border color of the application.
-/// @prop {Color} border-alt - Тhe alternative border color of the application.
-///
-/// @subgroup {base}
-/// [base-subtle, base-subtle-hover, base-subtle-active,
-/// base, base-hover, base-active, base-emphasis,
-/// base-on-subtle, on-base, base-on-surface]
-/// The Base variable group.
-/// @prop {Color} base-subtle - The base subtle background color variable.
-/// @prop {Color} base-subtle-hover - The base subtle background color variable for the hover state.
-/// @prop {Color} base-subtle-active - The base subtle background color variable for the active state.
-/// @prop {Color} base - The base background color variable.
-/// @prop {Color} base-hover - The base background color variable for the hover state.
-/// @prop {Color} base-active - The base background color variable for the active state.
-/// @prop {Color} base-emphasis - The emphasized base color variable.
-/// @prop {Color} base-on-subtle - The text color variable for content on base subtle.
-/// @prop {Color} on-base - The text color variable for content on base.
-/// @prop {Color} base-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {primary}
-/// [primary-subtle, primary-subtle-hover, primary-subtle-active,
-/// primary, primary-hover, primary-active, primary-emphasis,
-/// primary-on-subtle, on-primary, primary-on-surface]
-/// The Primary variable group.
-/// @prop {Color} primary-subtle - The primary subtle background color variable.
-/// @prop {Color} primary-subtle-hover - The primary subtle background color variable for the hover state.
-/// @prop {Color} primary-subtle-active - The primary subtle background color variable for the active state.
-/// @prop {Color} primary - The primary background color variable.
-/// @prop {Color} primary-hover - The primary background color variable for the hover state.
-/// @prop {Color} primary-active - The primary background color variable for the active state.
-/// @prop {Color} primary-emphasis - The emphasized primary color variable.
-/// @prop {Color} primary-on-subtle - The text color variable for content on primary subtle.
-/// @prop {Color} on-primary - The text color variable for content on primary.
-/// @prop {Color} primary-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {secondary}
-/// [secondary-subtle, secondary-subtle-hover, secondary-subtle-active,
-/// secondary, secondary-hover, secondary-active, secondary-emphasis,
-/// secondary-on-subtle, on-secondary, secondary-on-surface]
-/// The Secondary variable group.
-/// @prop {Color} secondary-subtle - The secondary subtle background color variable.
-/// @prop {Color} secondary-subtle-hover - The secondary subtle background color variable for the hover state.
-/// @prop {Color} secondary-subtle-active - The secondary subtle background color variable for the active state.
-/// @prop {Color} secondary - The secondary background color variable.
-/// @prop {Color} secondary-hover - The secondary background color variable for the hover state.
-/// @prop {Color} secondary-active - The secondary background color variable for the active state.
-/// @prop {Color} secondary-emphasis - The emphasized secondary color variable.
-/// @prop {Color} secondary-on-subtle - The text color variable for content on secondary subtle.
-/// @prop {Color} on-secondary - The text color variable for content on secondary.
-/// @prop {Color} secondary-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {tertiary}
-/// [tertiary-subtle, tertiary-subtle-hover, tertiary-subtle-active,
-/// tertiary, tertiary-hover, tertiary-active, tertiary-emphasis,
-/// tertiary-on-subtle, on-tertiary, tertiary-on-surface]
-/// The Tertiary variable group.
-/// @prop {Color} tertiary-subtle - The tertiary subtle background color variable.
-/// @prop {Color} tertiary-subtle-hover - The tertiary subtle background color variable for the hover state.
-/// @prop {Color} tertiary-subtle-active - The tertiary subtle background color variable for the active state.
-/// @prop {Color} tertiary - The tertiary background color variable.
-/// @prop {Color} tertiary-hover - The tertiary background color variable for the hover state.
-/// @prop {Color} tertiary-active - The tertiary background color variable for the active state.
-/// @prop {Color} tertiary-emphasis - The emphasized tertiary color variable.
-/// @prop {Color} tertiary-on-subtle - The text color variable for content on tertiary subtle.
-/// @prop {Color} on-tertiary - The text color variable for content on tertiary.
-/// @prop {Color} tertiary-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {info}
-/// [info-subtle, info-subtle-hover, info-subtle-active,
-/// info, info-hover, info-active, info-emphasis,
-/// info-on-subtle, on-info, info-on-surface]
-/// The Info variable group.
-/// @prop {Color} info-subtle - The info subtle background color variable.
-/// @prop {Color} info-subtle-hover - The info subtle background color variable for the hover state.
-/// @prop {Color} info-subtle-active - The info subtle background color variable for the active state.
-/// @prop {Color} info - The info background color variable.
-/// @prop {Color} info-hover - The info background color variable for the hover state.
-/// @prop {Color} info-active - The info background color variable for the active state.
-/// @prop {Color} info-emphasis - The emphasized info color variable.
-/// @prop {Color} info-on-subtle - The text color variable for content on info subtle.
-/// @prop {Color} on-info - The text color variable for content on info.
-/// @prop {Color} info-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {success}
-/// [success-subtle, success-subtle-hover, success-subtle-active,
-/// success, success-hover, success-active, success-emphasis,
-/// success-on-subtle, on-success, success-on-surface]
-/// The Success variable group.
-/// @prop {Color} success-subtle - The success subtle background color variable.
-/// @prop {Color} success-subtle-hover - The success subtle background color variable for the hover state.
-/// @prop {Color} success-subtle-active - The success subtle background color variable for the active state.
-/// @prop {Color} success - The success background color variable.
-/// @prop {Color} success-hover - The success background color variable for the hover state.
-/// @prop {Color} success-active - The success background color variable for the active state.
-/// @prop {Color} success-emphasis - The emphasized success color variable.
-/// @prop {Color} success-on-subtle - The text color variable for content on success subtle.
-/// @prop {Color} on-success - The text color variable for content on success.
-/// @prop {Color} success-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {warning}
-/// [warning-subtle, warning-subtle-hover, warning-subtle-active,
-/// warning, warning-hover, warning-active, warning-emphasis,
-/// warning-on-subtle, on-warning, warning-on-surface]
-/// The Warning variable group.
-/// @prop {Color} warning-subtle - The warning subtle background color variable.
-/// @prop {Color} warning-subtle-hover - The warning subtle background color variable for the hover state.
-/// @prop {Color} warning-subtle-active - The warning subtle background color variable for the active state.
-/// @prop {Color} warning - The warning background color variable.
-/// @prop {Color} warning-hover - The warning background color variable for the hover state.
-/// @prop {Color} warning-active - The warning background color variable for the active state.
-/// @prop {Color} warning-emphasis - The emphasized warning color variable.
-/// @prop {Color} warning-on-subtle - The text color variable for content on warning subtle.
-/// @prop {Color} on-warning - The text color variable for content on warning.
-/// @prop {Color} warning-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {error}
-/// [error-subtle, error-subtle-hover, error-subtle-active,
-/// error, error-hover, error-active, error-emphasis,
-/// error-on-subtle, on-error, error-on-surface]
-/// The Error variable group.
-/// @prop {Color} error-subtle - The error subtle background color variable.
-/// @prop {Color} error-subtle-hover - The error subtle background color variable for the hover state.
-/// @prop {Color} error-subtle-active - The error subtle background color variable for the active state.
-/// @prop {Color} error - The error background color variable.
-/// @prop {Color} error-hover - The error background color variable for the hover state.
-/// @prop {Color} error-active - The error background color variable for the active state.
-/// @prop {Color} error-emphasis - The emphasized error color variable.
-/// @prop {Color} error-on-subtle - The text color variable for content on error subtle.
-/// @prop {Color} on-error - The text color variable for content on error.
-/// @prop {Color} error-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {light}
-/// [light-subtle, light-subtle-hover, light-subtle-active,
-/// light, light-hover, light-active, light-emphasis,
-/// light-on-subtle, on-light, light-on-surface]
-/// The Light variable group.
-/// @prop {Color} light-subtle - The light subtle background color variable.
-/// @prop {Color} light-subtle-hover - The light subtle background color variable for the hover state.
-/// @prop {Color} light-subtle-active - The light subtle background color variable for the active state.
-/// @prop {Color} light - The light background color variable.
-/// @prop {Color} light-hover - The light background color variable for the hover state.
-/// @prop {Color} light-active - The light background color variable for the active state.
-/// @prop {Color} light-emphasis - The emphasized light color variable.
-/// @prop {Color} light-on-subtle - The text color variable for content on light subtle.
-/// @prop {Color} on-light - The text color variable for content on light.
-/// @prop {Color} light-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {dark}
-/// [dark-subtle, dark-subtle-hover, dark-subtle-active,
-/// dark, dark-hover, dark-active, dark-emphasis,
-/// dark-on-subtle, on-dark, dark-on-surface]
-/// The Dark variable group.
-/// @prop {Color} dark-subtle - The dark subtle background color variable.
-/// @prop {Color} dark-subtle-hover - The dark subtle background color variable for the hover state.
-/// @prop {Color} dark-subtle-active - The dark subtle background color variable for the active state.
-/// @prop {Color} dark - The dark background color variable.
-/// @prop {Color} dark-hover - The dark background color variable for the hover state.
-/// @prop {Color} dark-active - The dark background color variable for the active state.
-/// @prop {Color} dark-emphasis - The emphasized dark color variable.
-/// @prop {Color} dark-on-subtle - The text color variable for content on dark subtle.
-/// @prop {Color} on-dark - The text color variable for content on dark.
-/// @prop {Color} dark-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {inverse}
-/// [inverse-subtle, inverse-subtle-hover, inverse-subtle-active,
-/// inverse, inverse-hover, inverse-active, inverse-emphasis,
-/// inverse-on-subtle, on-inverse, inverse-on-surface]
-/// The Inverse variable group.
-/// @prop {Color} inverse-subtle - The inverse subtle background color variable.
-/// @prop {Color} inverse-subtle-hover - The inverse subtle background color variable for the hover state.
-/// @prop {Color} inverse-subtle-active - The inverse subtle background color variable for the active state.
-/// @prop {Color} inverse - The inverse background color variable.
-/// @prop {Color} inverse-hover - The inverse background color variable for the hover state.
-/// @prop {Color} inverse-active - The inverse background color variable for the active state.
-/// @prop {Color} inverse-emphasis - The emphasized inverse color variable.
-/// @prop {Color} inverse-on-subtle - The text color variable for content on inverse subtle.
-/// @prop {Color} on-inverse - The text color variable for content on inverse.
-/// @prop {Color} inverse-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {series}
-/// [series]
-/// The Series seed variable group.
-/// @prop {Color} series - The series seed color variable. All series are derived by rotating the hue.
-///
-/// @subgroup {series-a}
-/// [series-a, series-a-bold, series-a-bolder,
-/// series-a-subtle, series-a-subtler]
-/// The Series A variable group.
-/// @prop {Color} series-a - The series A color variable.
-/// @prop {Color} series-a-bold - The bold series A color variable.
-/// @prop {Color} series-a-bolder - The bolder series A color variable.
-/// @prop {Color} series-a-subtle - The subtle series A color variable.
-/// @prop {Color} series-a-subtler - The subtler series A color variable.
-///
-/// @subgroup {series-b}
-/// [series-b, series-b-bold, series-b-bolder,
-/// series-b-subtle, series-b-subtler]
-/// The Series B variable group.
-/// @prop {Color} series-b - The series B color variable.
-/// @prop {Color} series-b-bold - The bold series B color variable.
-/// @prop {Color} series-b-bolder - The bolder series B color variable.
-/// @prop {Color} series-b-subtle - The subtle series B color variable.
-/// @prop {Color} series-b-subtler - The subtler series B color variable.
-///
-/// @subgroup {series-c}
-/// [series-c, series-c-bold, series-c-bolder,
-/// series-c-subtle, series-c-subtler]
-/// The Series C variable group.
-/// @prop {Color} series-c - The series C color variable.
-/// @prop {Color} series-c-bold - The bold series C color variable.
-/// @prop {Color} series-c-bolder - The bolder series C color variable.
-/// @prop {Color} series-c-subtle - The subtle series C color variable.
-/// @prop {Color} series-c-subtler - The subtler series C color variable.
-///
-/// @subgroup {series-d}
-/// [series-d, series-d-bold, series-d-bolder,
-/// series-d-subtle, series-d-subtler]
-/// The Series D variable group.
-/// @prop {Color} series-d - The series D color variable.
-/// @prop {Color} series-d-bold - The bold series D color variable.
-/// @prop {Color} series-d-bolder - The bolder series D color variable.
-/// @prop {Color} series-d-subtle - The subtle series D color variable.
-/// @prop {Color} series-d-subtler - The subtler series D color variable.
-///
-/// @subgroup {series-e}
-/// [series-e, series-e-bold, series-e-bolder,
-/// series-e-subtle, series-e-subtler]
-/// The Series E variable group.
-/// @prop {Color} series-e - The series E color variable.
-/// @prop {Color} series-e-bold - The bold series E color variable.
-/// @prop {Color} series-e-bolder - The bolder series E color variable.
-/// @prop {Color} series-e-subtle - The subtle series E color variable.
-/// @prop {Color} series-e-subtler - The subtler series E color variable.
-///
-/// @subgroup {series-f}
-/// [series-f, series-f-bold, series-f-bolder,
-/// series-f-subtle, series-f-subtler]
-/// The Series F variable group.
-/// @prop {Color} series-f - The series F color variable.
-/// @prop {Color} series-f-bold - The bold series F color variable.
-/// @prop {Color} series-f-bolder - The bolder series F color variable.
-/// @prop {Color} series-f-subtle - The subtle series F color variable.
-/// @prop {Color} series-f-subtler - The subtler series F color variable.
 
 $kendo-colors: $default-colors !default;
 $kendo-colors: map.merge($default-colors, $kendo-colors);
