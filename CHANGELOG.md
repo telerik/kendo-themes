@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.3...v13.1.0-dev.4) (2026-03-17)
+
+
+### Features
+
+* add variables for vertical popup spacings ([cbfa407](https://github.com/telerik/kendo-themes/commit/cbfa407f5989936e7d3f1b8606b5a8d5080f0be3))
+* **html:** add ARIA specs for dropdowns, panels and lists ([bceaf58](https://github.com/telerik/kendo-themes/commit/bceaf5880c40a3a63f28a3aaa54bd34c8ebec886))
+* **html:** add aria to column and filter menu, column chooser, filter ([f142627](https://github.com/telerik/kendo-themes/commit/f142627eee8301c918983175cd3e6eb38180a680))
+* **html:** add aria to editors, scrollview, specialized buttons and viewers ([25f73ac](https://github.com/telerik/kendo-themes/commit/25f73acdfbecedbdc70a3ad7ef811908023394c1))
+* **html:** add aria to filemanager and chart-wizard ([821b832](https://github.com/telerik/kendo-themes/commit/821b8329ddc73da44ed9884641b607b3992bea63))
+* **html:** add aria to orgchart, pager, taskboard ([e68eaf8](https://github.com/telerik/kendo-themes/commit/e68eaf834bdaf2bdf90558714a21dc1c4cf1d436))
+* **html:** add aria to smartbox, filebox, chat ([a84c411](https://github.com/telerik/kendo-themes/commit/a84c411157755745619f5793d293683e811c9f3b))
+* **html:** add aria to spreadsheet ([13dcf1f](https://github.com/telerik/kendo-themes/commit/13dcf1f8b09da1a71412ddab784024f55e6e3fda))
+* **html:** add gantt aria ([cc12364](https://github.com/telerik/kendo-themes/commit/cc12364dc644e8ddf2d31acb73f4056b98c7dd8f))
+* **html:** add grid aria ([0fc8987](https://github.com/telerik/kendo-themes/commit/0fc89879bc8786fa62a9dba8d12299bc11b47440))
+* **html:** add grid pinned rows and sticky groups templates ([d8d607a](https://github.com/telerik/kendo-themes/commit/d8d607a7427e9eb752db40816802a6cb1561c759))
+* **html:** add property grid aria ([321055c](https://github.com/telerik/kendo-themes/commit/321055cc9994ab9cd8205f2a35c5bf81998a7258))
+* **html:** add scheduler, remove href from anchors ([af662a8](https://github.com/telerik/kendo-themes/commit/af662a8e25777cec7cdeeb09c91a301a27eb2cb2))
+* **html:** add treelist aria and templates ([edf5454](https://github.com/telerik/kendo-themes/commit/edf5454c9fa270c47a23c37b04f25f5ebe892d0c))
+
+
+
+
+
 # [13.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.2...v13.1.0-dev.3) (2026-03-16)
 
 
