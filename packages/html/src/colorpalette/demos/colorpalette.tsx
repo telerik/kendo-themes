@@ -1,4 +1,4 @@
-﻿import { ColorPalette, KendoColorPaletteProps } from '../colorpalette.spec';
+import { ColorPalette, KendoColorPaletteProps } from '../colorpalette.spec';
 import { ColorPaletteNormal } from '../templates/colorpalette-normal';
 
 const options = ColorPalette.options;
@@ -46,6 +46,7 @@ ColorpaletteDemo.states = states;
 ColorpaletteDemo.variants = variants;
 ColorpaletteDemo.defaultOptions = defaults;
 ColorpaletteDemo.modifiers = modifiers;
+ColorpaletteDemo.className = ColorPalette.className;
 
 export default ColorpaletteDemo;
 

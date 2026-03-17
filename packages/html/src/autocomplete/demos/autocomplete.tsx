@@ -1,4 +1,4 @@
-﻿import { KendoAutocompleteProps } from '../autocomplete.spec';
+import { Autocomplete, KendoAutocompleteProps } from '../autocomplete.spec';
 import { AutocompleteNormal } from '../templates/autocomplete-normal';
 import { Textbox } from '../../textbox';
 import { Icon } from '../../icon';
@@ -71,6 +71,7 @@ AutocompleteDemo.states = states;
 AutocompleteDemo.variants = variants;
 AutocompleteDemo.defaultOptions = defaults;
 AutocompleteDemo.modifiers = modifiers;
+AutocompleteDemo.className = Autocomplete.className;
 
 export default AutocompleteDemo;
 

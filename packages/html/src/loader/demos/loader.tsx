@@ -1,4 +1,4 @@
-﻿import { Loader, KendoLoaderProps } from '../loader.spec';
+import { Loader, KendoLoaderProps } from '../loader.spec';
 
 const options = Loader.options;
 const states = Loader.states;
@@ -47,6 +47,7 @@ LoaderDemo.states = states;
 LoaderDemo.variants = variants;
 LoaderDemo.defaultOptions = defaults;
 LoaderDemo.modifiers = modifiers;
+LoaderDemo.className = Loader.className;
 
 export default LoaderDemo;
 

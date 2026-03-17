@@ -1,4 +1,4 @@
-﻿import { TileLayout, KendoTileLayoutProps } from '../tilelayout.spec';
+import { TileLayout, KendoTileLayoutProps } from '../tilelayout.spec';
 import { TileLayoutItem } from '../tilelayout-item.spec';
 import { TileLayoutNormal } from '../templates/tilelayout-normal';
 
@@ -69,6 +69,7 @@ TilelayoutDemo.states = states;
 TilelayoutDemo.variants = variants;
 TilelayoutDemo.defaultOptions = defaults;
 TilelayoutDemo.modifiers = modifiers;
+TilelayoutDemo.className = TileLayout.className;
 
 export default TilelayoutDemo;
 

@@ -1,4 +1,4 @@
-﻿import { ActionSheet, KendoActionSheetProps } from '../action-sheet.spec';
+import { ActionSheet, KendoActionSheetProps } from '../action-sheet.spec';
 import { ActionSheetHeader } from '../actionsheet-header';
 import { ActionSheetFooter } from '../actionsheet-footer';
 import { ActionSheetItems } from '../actionsheet-items';
@@ -158,5 +158,6 @@ ActionSheetDemo.states = states;
 ActionSheetDemo.variants = variants;
 ActionSheetDemo.defaultOptions = defaults;
 ActionSheetDemo.modifiers = modifiers;
+ActionSheetDemo.className = ActionSheet.className;
 
 export default ActionSheetDemo;

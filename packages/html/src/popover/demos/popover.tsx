@@ -1,4 +1,4 @@
-﻿import { Popover, KendoPopoverProps } from '../popover.spec';
+import { Popover, KendoPopoverProps } from '../popover.spec';
 import { PopoverNormal } from '../templates/popover-normal';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
@@ -133,6 +133,7 @@ PopoverDemo.states = states;
 PopoverDemo.variants = variants;
 PopoverDemo.defaultOptions = defaults;
 PopoverDemo.modifiers = modifiers;
+PopoverDemo.className = Popover.className;
 
 export default PopoverDemo;
 

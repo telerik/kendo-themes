@@ -1,8 +1,9 @@
-﻿import { SpreadsheetNormal } from '../templates/spreadsheet-normal';
+import { SpreadsheetNormal } from '../templates/spreadsheet-normal';
 import { SpreadsheetHeader } from '../spreadsheet-header';
 import { SpreadsheetActionBar } from '../spreadsheet-action-bar';
 import { SpreadsheetSheetsBar } from '../spreadsheet-sheets-bar';
 import { SpreadsheetView } from '../spreadsheet-view';
+import { Spreadsheet } from '../spreadsheet.spec';
 
 const options = {};
 const states = [];
@@ -34,6 +35,7 @@ SpreadsheetDemo.states = states;
 SpreadsheetDemo.variants = variants;
 SpreadsheetDemo.defaultOptions = defaults;
 SpreadsheetDemo.modifiers = modifiers;
+SpreadsheetDemo.className = Spreadsheet.className;
 
 export default SpreadsheetDemo;
 

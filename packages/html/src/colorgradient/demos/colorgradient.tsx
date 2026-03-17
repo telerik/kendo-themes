@@ -1,4 +1,4 @@
-﻿import { ColorGradient, KendoColorGradientProps } from '../color-gradient.spec';
+import { ColorGradient, KendoColorGradientProps } from '../color-gradient.spec';
 import { ColorGradientNormal } from '../templates/colorgradient-normal';
 
 const options = ColorGradient.options;
@@ -50,6 +50,7 @@ ColorgradientDemo.states = states;
 ColorgradientDemo.variants = variants;
 ColorgradientDemo.defaultOptions = defaults;
 ColorgradientDemo.modifiers = modifiers;
+ColorgradientDemo.className = ColorGradient.className;
 
 export default ColorgradientDemo;
 

@@ -1,4 +1,4 @@
-﻿import { CheckboxGroup, KendoCheckboxGroupProps } from '../checkbox-group.spec';
+import { CheckboxGroup, KendoCheckboxGroupProps } from '../checkbox-group.spec';
 import { CheckboxItem } from '../checkbox-item.spec';
 import { nextId } from '../../misc';
 import { CheckboxWithLabelAfter } from '../templates/checkbox-with-label-after';
@@ -64,5 +64,6 @@ CheckboxListDemo.states = states;
 CheckboxListDemo.variants = variants;
 CheckboxListDemo.defaultOptions = defaults;
 CheckboxListDemo.modifiers = modifiers;
+CheckboxListDemo.className = CheckboxGroup.className;
 
 export default CheckboxListDemo;

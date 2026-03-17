@@ -1,4 +1,4 @@
-﻿import { Stepper, KendoStepperProps } from '../stepper.spec';
+import { Stepper, KendoStepperProps } from '../stepper.spec';
 import { Step } from '../step';
 import { StepList } from '../step-list';
 import { ProgressBarNormal } from '../../progressbar';
@@ -87,6 +87,7 @@ StepperDemo.states = states;
 StepperDemo.variants = variants;
 StepperDemo.defaultOptions = defaults;
 StepperDemo.modifiers = modifiers;
+StepperDemo.className = Stepper.className;
 
 export default StepperDemo;
 

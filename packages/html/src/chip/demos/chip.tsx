@@ -76,5 +76,6 @@ ChipDemo.states = states;
 ChipDemo.variants = variants;
 ChipDemo.defaultOptions = defaults;
 ChipDemo.modifiers = modifiers;
+ChipDemo.className = Chip.className;
 
 export default ChipDemo;

@@ -1,4 +1,4 @@
-﻿import { Prompt } from '../prompt.spec';
+import { Prompt } from '../prompt.spec';
 import { PromptContent } from '../prompt-content';
 import { PromptFooter } from '../prompt-footer';
 import { PromptHeader } from '../prompt-header';
@@ -318,6 +318,7 @@ PromptDemo.states = states;
 PromptDemo.variants = variants;
 PromptDemo.defaultOptions = defaults;
 PromptDemo.modifiers = modifiers;
+PromptDemo.className = Prompt.className;
 
 export default PromptDemo;
 

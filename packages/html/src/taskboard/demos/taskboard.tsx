@@ -1,4 +1,4 @@
-﻿import { TaskBoard, KendoTaskBoardProps } from '../taskboard.spec';
+import { TaskBoard, KendoTaskBoardProps } from '../taskboard.spec';
 import { TaskBoardCard } from '../taskboard-card';
 import { TaskBoardColumn } from '../taskboard-column';
 import { TaskBoardNormal } from '../templates/taskboard-normal';
@@ -85,6 +85,7 @@ TaskboardDemo.states = states;
 TaskboardDemo.variants = variants;
 TaskboardDemo.defaultOptions = defaults;
 TaskboardDemo.modifiers = modifiers;
+TaskboardDemo.className = TaskBoard.className;
 
 export default TaskboardDemo;
 

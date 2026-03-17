@@ -1,8 +1,14 @@
-﻿import { Badge, KendoBadgeProps } from '../badge.spec';
+import { Badge, KendoBadgeProps } from '../badge.spec';
 import { Icon } from '../../icon';
 import { AvatarIcon } from '../../avatar';
 
-const options = Badge.options;
+const options = {
+  ...Badge.options,
+  cutoutBorder: {
+    type: 'boolean',
+  },
+};
+
 const states = Badge.states;
 const defaults = {
   ...Badge.defaultOptions,
@@ -21,29 +27,12 @@ const variants = [
   },
 ];
 
-const modifiers = [
-  {
-    name: 'cutoutBorder',
-    title: 'Cutout Border',
-  },
-];
-
 export const BadgeDemo = (
-  props: KendoBadgeProps & { variant?: (typeof variants)[number]['name'] } & {
-    modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
-  }
+  props: KendoBadgeProps & { variant?: (typeof variants)[number]['name'] }
 ) => {
-  const { variant, modifiers: mods, ...other } = { ...defaults, ...props };
+  const { variant, ...other } = { ...defaults, ...props };
 
   let additionalProps: any = {};
-
-  Object.keys(mods || {}).forEach((modifier) => {
-    switch (modifier) {
-      case 'cutoutBorder': {
-        additionalProps.cutoutBorder = mods?.[modifier] ? true : false;
-      }
-    }
-  });
 
   switch (variant) {
     case 'text':
@@ -77,7 +66,8 @@ BadgeDemo.options = options;
 BadgeDemo.states = states;
 BadgeDemo.variants = variants;
 BadgeDemo.defaultOptions = defaults;
-BadgeDemo.modifiers = modifiers;
+BadgeDemo.modifiers = [];
+BadgeDemo.className = Badge.className;
 
 export default BadgeDemo;
 

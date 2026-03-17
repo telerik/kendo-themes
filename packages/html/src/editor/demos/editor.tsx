@@ -1,4 +1,4 @@
-﻿import { Editor, KendoEditorProps } from '../editor.spec';
+import { Editor, KendoEditorProps } from '../editor.spec';
 import { EditorNormal } from '../templates/editor-normal';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
@@ -107,6 +107,7 @@ EditorDemo.states = states;
 EditorDemo.variants = variants;
 EditorDemo.defaultOptions = defaults;
 EditorDemo.modifiers = modifiers;
+EditorDemo.className = Editor.className;
 
 export default EditorDemo;
 

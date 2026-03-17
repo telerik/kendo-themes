@@ -1,5 +1,6 @@
-﻿import { ContextMenuNormal } from '../templates/context-menu-normal';
+import { ContextMenuNormal } from '../templates/context-menu-normal';
 import { Menu, KendoMenuProps, MenuListItem, MenuSeparator } from '../../menu';
+import { ContextMenu } from '../context-menu.spec';
 
 const options = Menu.options;
 const states = Menu.states;
@@ -49,6 +50,7 @@ ContextMenuDemo.states = states;
 ContextMenuDemo.variants = variants;
 ContextMenuDemo.defaultOptions = defaults;
 ContextMenuDemo.modifiers = modifiers;
+ContextMenuDemo.className = ContextMenu.className;
 
 export default ContextMenuDemo;
 

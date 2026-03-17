@@ -1,4 +1,4 @@
-﻿import Checkbox, { CheckboxProps } from '../checkbox.spec';
+import Checkbox, { CheckboxProps } from '../checkbox.spec';
 import { nextId } from '../../misc';
 import { CheckboxWithLabelAfter } from '../templates/checkbox-with-label-after';
 
@@ -18,6 +18,7 @@ CheckboxDemo.states = states;
 CheckboxDemo.variants = variants;
 CheckboxDemo.defaultOptions = defaults;
 CheckboxDemo.modifiers = modifiers;
+CheckboxDemo.className = Checkbox.className;
 
 export default CheckboxDemo;
 

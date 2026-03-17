@@ -1,4 +1,4 @@
-﻿import { DropdownTree, KendoDropdownTreeProps } from '../dropdowntree.spec';
+import { DropdownTree, KendoDropdownTreeProps } from '../dropdowntree.spec';
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 
 const states = DropdownTree.states;
@@ -66,6 +66,7 @@ DropdowntreeDemo.states = states;
 DropdowntreeDemo.variants = variants;
 DropdowntreeDemo.defaultOptions = defaults;
 DropdowntreeDemo.modifiers = modifiers;
+DropdowntreeDemo.className = DropdownTree.className;
 
 export default DropdowntreeDemo;
 

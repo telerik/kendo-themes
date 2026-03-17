@@ -1,4 +1,4 @@
-﻿import { MultiSelectTree, KendoMultiSelectTreeProps } from '../multiselecttree.spec';
+import { MultiSelectTree, KendoMultiSelectTreeProps } from '../multiselecttree.spec';
 import { MultiSelectTreeNormal } from '../templates/multiselecttree-normal';
 import { Chip } from '../../chip';
 import { Checkbox } from '../../checkbox';
@@ -77,6 +77,7 @@ MultiselecttreeDemo.states = states;
 MultiselecttreeDemo.variants = variants;
 MultiselecttreeDemo.defaultOptions = defaults;
 MultiselecttreeDemo.modifiers = modifiers;
+MultiselecttreeDemo.className = MultiSelectTree.className;
 
 export default MultiselecttreeDemo;
 

@@ -1,4 +1,4 @@
-﻿import { Dropzone, KendoDropzoneProps } from '../dropzone.spec';
+import { Dropzone, KendoDropzoneProps } from '../dropzone.spec';
 import { DropzoneNormal } from '../templates/dropzone-normal';
 
 const options = Dropzone.options;
@@ -45,6 +45,7 @@ DropzoneDemo.states = states;
 DropzoneDemo.variants = variants;
 DropzoneDemo.defaultOptions = defaults;
 DropzoneDemo.modifiers = modifiers;
+DropzoneDemo.className = Dropzone.className;
 
 export default DropzoneDemo;
 

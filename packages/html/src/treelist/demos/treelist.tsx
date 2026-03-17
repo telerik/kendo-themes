@@ -1,4 +1,4 @@
-﻿import { TreeList } from '../treelist.spec';
+import { TreeList } from '../treelist.spec';
 import { TreeListNormal } from '../templates/treelist-normal';
 import { TreeListWithFilterMenu } from '../templates/treelist-with-filter-menu';
 import { TreeListWithColumnMenu } from '../templates/treelist-with-column-menu';
@@ -178,7 +178,7 @@ export const TreelistDemo = (
                                         <TableTd>Sweeney</TableTd>
                                         <TableTd>CEO</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-treelist-group k-alt" alt>
+                                    <TableRow className="k-treelist-group" alt>
                                         <TableTd>
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
                                             <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
@@ -197,7 +197,7 @@ export const TreelistDemo = (
                                         <TableTd>Weber</TableTd>
                                         <TableTd>VP, Engineering</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-treelist-group k-alt" alt>
+                                    <TableRow className="k-treelist-group" alt>
                                         <TableTd>
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
@@ -258,6 +258,7 @@ TreelistDemo.states = states;
 TreelistDemo.variants = variants;
 TreelistDemo.defaultOptions = defaults;
 TreelistDemo.modifiers = modifiers;
+TreelistDemo.className = TreeList.className;
 
 export default TreelistDemo;
 

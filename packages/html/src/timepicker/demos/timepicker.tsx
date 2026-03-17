@@ -1,4 +1,4 @@
-﻿import { TimePicker, KendoTimePickerProps } from '../timepicker.spec';
+import { TimePicker, KendoTimePickerProps } from '../timepicker.spec';
 import { TimePickerNormal } from '../templates/timepicker-normal';
 
 const options = TimePicker.options;
@@ -44,6 +44,7 @@ TimepickerDemo.states = states;
 TimepickerDemo.variants = variants;
 TimepickerDemo.defaultOptions = defaults;
 TimepickerDemo.modifiers = modifiers;
+TimepickerDemo.className = TimePicker.className;
 
 export default TimepickerDemo;
 

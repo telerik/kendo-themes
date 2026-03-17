@@ -1,4 +1,4 @@
-﻿import { SpeechToTextButton } from '../speech-to-text-button.spec';
+import { SpeechToTextButton } from '../speech-to-text-button.spec';
 import { Button, KendoButtonProps } from '../../button';
 
 const states = Button.states;
@@ -50,5 +50,6 @@ SpeechToTextButtonDemo.states = states;
 SpeechToTextButtonDemo.variants = variants;
 SpeechToTextButtonDemo.defaultOptions = defaults;
 SpeechToTextButtonDemo.modifiers = modifiers;
+SpeechToTextButtonDemo.className = SpeechToTextButton.className;
 
 export default SpeechToTextButtonDemo;

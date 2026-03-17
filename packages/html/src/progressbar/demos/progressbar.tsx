@@ -1,4 +1,4 @@
-﻿import { ProgressBar, KendoProgressBarProps } from '../progressbar.spec';
+import { ProgressBar, KendoProgressBarProps } from '../progressbar.spec';
 import { ProgressBarNormal } from '../templates/progressbar-normal';
 
 const options = ProgressBar.options;
@@ -87,6 +87,7 @@ ProgressbarDemo.states = states;
 ProgressbarDemo.variants = variants;
 ProgressbarDemo.defaultOptions = defaults;
 ProgressbarDemo.modifiers = modifiers;
+ProgressbarDemo.className = ProgressBar.className;
 
 export default ProgressbarDemo;
 
