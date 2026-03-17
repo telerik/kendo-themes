@@ -1,4 +1,4 @@
-﻿import { MultiViewCalendar, KendoMultiViewCalendarProps } from '../multiviewcalendar.spec';
+import { MultiViewCalendar, KendoMultiViewCalendarProps } from '../multiviewcalendar.spec';
 import { MultiViewCalendarNormal } from '../templates/multiviewcalendar-normal';
 import { MultiViewCalendarCentury } from '../templates/multiviewcalendar-century';
 import { MultiViewCalendarDecade } from '../templates/multiviewcalendar-decade';
@@ -93,6 +93,7 @@ MultiviewcalendarDemo.states = states;
 MultiviewcalendarDemo.variants = variants;
 MultiviewcalendarDemo.defaultOptions = defaults;
 MultiviewcalendarDemo.modifiers = modifiers;
+MultiviewcalendarDemo.className = MultiViewCalendar.className;
 
 export default MultiviewcalendarDemo;
 

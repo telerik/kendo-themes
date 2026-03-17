@@ -1,4 +1,4 @@
-﻿import { Textbox, KendoTextboxProps } from '../textbox.spec';
+import { Textbox, KendoTextboxProps } from '../textbox.spec';
 import { TextboxNormal } from '../templates/textbox-normal';
 import { Icon } from '../../icon';
 import { TextButton } from '../../button';
@@ -58,6 +58,7 @@ TextboxDemo.states = states;
 TextboxDemo.variants = variants;
 TextboxDemo.defaultOptions = defaults;
 TextboxDemo.modifiers = modifiers;
+TextboxDemo.className = Textbox.className;
 
 export default TextboxDemo;
 

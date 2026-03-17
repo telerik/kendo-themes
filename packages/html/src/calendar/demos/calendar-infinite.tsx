@@ -1,13 +1,13 @@
-import { Calendar, KendoCalendarProps } from '../calendar.spec';
-import { CalendarNormal } from '../templates/calendar-normal';
-import { CalendarCentury } from '../templates/calendar-century';
-import { CalendarDecade } from '../templates/calendar-decade';
-import { CalendarYear } from '../templates/calendar-year';
+import { CalendarInfinite, KendoCalendarInfiniteProps } from '../calendar-infinite.spec';
+import { CalendarInfiniteNormal } from '../templates/calendar-infinite-normal';
+import { CalendarInfiniteCentury } from '../templates/calendar-infinite-century';
+import { CalendarInfiniteDecade } from '../templates/calendar-infinite-decade';
+import { CalendarInfiniteYear } from '../templates/calendar-infinite-year';
 
-const options = Calendar.options;
-const states = Calendar.states;
+const options = CalendarInfinite.options;
+const states = CalendarInfinite.states;
 const defaults = {
-  ...Calendar.defaultOptions,
+  ...CalendarInfinite.defaultOptions,
   variant: 'month',
 };
 
@@ -41,8 +41,8 @@ const modifiers = [
     }
 ];
 
-export const CalendarDemo = (
-    props: KendoCalendarProps & { variant?: (typeof variants)[number]['name'] } & {
+export const CalendarInfiniteDemo = (
+    props: KendoCalendarInfiniteProps & { variant?: (typeof variants)[number]['name'] } & {
         modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
     }
 ) => {
@@ -74,31 +74,30 @@ export const CalendarDemo = (
     switch (variant) {
         case 'century':
             return (
-                <CalendarCentury size={other.size} showOtherCentury={showOtherCentury} showCalendarFooter={showCalendarFooter} />
+                <CalendarInfiniteCentury size={other.size} showOtherCentury={showOtherCentury} showCalendarFooter={showCalendarFooter} />
             );
         case 'decade':
             return (
-                <CalendarDecade size={other.size} showOtherDecade={showOtherDecade} showCalendarFooter={showCalendarFooter} />
+                <CalendarInfiniteDecade size={other.size} showOtherDecade={showOtherDecade} showCalendarFooter={showCalendarFooter} />
             );
         case 'year':
             return (
-                <CalendarYear calendarTitleText="2021" size={other.size} showCalendarFooter={showCalendarFooter} />
+                <CalendarInfiniteYear size={other.size} showCalendarFooter={showCalendarFooter} />
             );
         case 'month':
         default:
             return (
-                <CalendarNormal size={other.size} showOtherMonth={showOtherMonth} showCalendarFooter={showCalendarFooter} />
+                <CalendarInfiniteNormal size={other.size} showOtherMonth={showOtherMonth} showCalendarFooter={showCalendarFooter} />
             );
     }
 }
 
+CalendarInfiniteDemo.options = options;
+CalendarInfiniteDemo.states = states;
+CalendarInfiniteDemo.variants = variants;
+CalendarInfiniteDemo.defaultOptions = defaults;
+CalendarInfiniteDemo.modifiers = modifiers;
+CalendarInfiniteDemo.className = CalendarInfinite.className;
 
-CalendarDemo.options = options;
-CalendarDemo.states = states;
-CalendarDemo.variants = variants;
-CalendarDemo.defaultOptions = defaults;
-CalendarDemo.modifiers = modifiers;
-CalendarDemo.className = Calendar.className;
-
-export default CalendarDemo;
+export default CalendarInfiniteDemo;
 

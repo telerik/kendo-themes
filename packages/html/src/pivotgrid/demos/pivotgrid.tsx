@@ -1,4 +1,4 @@
-﻿import { PivotGrid, KendoPivotGridProps } from '../pivotgrid.spec';
+import { PivotGrid, KendoPivotGridProps } from '../pivotgrid.spec';
 import { PivotGridConfiguratorButton } from '../pivotgrid-configurator-button';
 import { PivotGridConfigurator } from '../pivotgrid-configurator';
 import { PivotGridCell } from '../pivotgrid-cell';
@@ -44,7 +44,7 @@ const modifiers = [
 ];
 
 export const PivotgridDemo = (
-    props: KendoPivotGridProps & { variant: (typeof variants)[number]['name'] } & {
+    props: KendoPivotGridProps & { variant?: (typeof variants)[number]['name'] } & {
         modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
     }
 ) => {
@@ -228,6 +228,7 @@ PivotgridDemo.states = states;
 PivotgridDemo.variants = variants;
 PivotgridDemo.defaultOptions = defaults;
 PivotgridDemo.modifiers = modifiers;
+PivotgridDemo.className = PivotGrid.className;
 
 export default PivotgridDemo;
 

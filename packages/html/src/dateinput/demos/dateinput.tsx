@@ -1,4 +1,4 @@
-﻿import { DateInput, KendoDateInputProps } from '../dateinput.spec';
+import { DateInput, KendoDateInputProps } from '../dateinput.spec';
 import { DateInputNormal } from '../templates/dateinput-normal';
 
 const options = DateInput.options;
@@ -40,6 +40,7 @@ DateinputDemo.states = states;
 DateinputDemo.variants = variants;
 DateinputDemo.defaultOptions = defaults;
 DateinputDemo.modifiers = modifiers;
+DateinputDemo.className = DateInput.className;
 
 export default DateinputDemo;
 

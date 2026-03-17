@@ -1,4 +1,4 @@
-﻿import { Treeview, KendoTreeviewProps } from '../treeview.spec';
+import { Treeview, KendoTreeviewProps } from '../treeview.spec';
 import { TreeviewGroup } from '../treeview-group';
 import { TreeviewItem } from '../treeview-item.spec';
 
@@ -53,6 +53,7 @@ TreeviewDemo.states = states;
 TreeviewDemo.variants = variants;
 TreeviewDemo.defaultOptions = defaults;
 TreeviewDemo.modifiers = modifiers;
+TreeviewDemo.className = Treeview.className;
 
 export default TreeviewDemo;
 

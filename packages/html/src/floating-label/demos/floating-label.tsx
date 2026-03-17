@@ -1,4 +1,4 @@
-﻿import { FloatingLabel, KendoFloatingLabelProps } from '../floating-label.spec';
+import { FloatingLabel, KendoFloatingLabelProps } from '../floating-label.spec';
 import { TextboxNormal } from '../../textbox';
 
 const options = FloatingLabel.options;
@@ -21,6 +21,7 @@ FloatingLabelDemo.states = states;
 FloatingLabelDemo.variants = variants;
 FloatingLabelDemo.defaultOptions = defaults;
 FloatingLabelDemo.modifiers = modifiers;
+FloatingLabelDemo.className = FloatingLabel.className;
 
 export default FloatingLabelDemo;
 

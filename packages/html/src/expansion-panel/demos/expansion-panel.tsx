@@ -1,4 +1,4 @@
-﻿import { ExpansionPanel, KendoExpansionPanelProps } from '../expansion-panel.spec';
+import { ExpansionPanel, KendoExpansionPanelProps } from '../expansion-panel.spec';
 import { ExpansionPanelNormal } from '../templates/expansion-panel-normal';
 import { ExpansionPanelExpanded } from '../templates/expansion-panel-expanded';
 
@@ -52,6 +52,7 @@ ExpansionPanelDemo.states = states;
 ExpansionPanelDemo.variants = variants;
 ExpansionPanelDemo.defaultOptions = defaults;
 ExpansionPanelDemo.modifiers = modifiers;
+ExpansionPanelDemo.className = ExpansionPanel.className;
 
 export default ExpansionPanelDemo;
 

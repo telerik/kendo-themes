@@ -1,4 +1,4 @@
-﻿import { Avatar, KendoAvatarProps } from '../avatar.spec';
+import { Avatar, KendoAvatarProps } from '../avatar.spec';
 import { AvatarImage } from '../templates/avatar-image';
 import { AvatarIcon } from '../templates/avatar-icon';
 import { AvatarText } from '../templates/avatar-text';
@@ -56,6 +56,7 @@ AvatarDemo.states = states;
 AvatarDemo.variants = variants;
 AvatarDemo.defaultOptions = defaults;
 AvatarDemo.modifiers = modifiers;
+AvatarDemo.className = Avatar.className;
 
 export default AvatarDemo;
 

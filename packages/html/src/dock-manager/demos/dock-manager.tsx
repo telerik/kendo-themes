@@ -1,4 +1,4 @@
-﻿import { DockManager, KendoDockManagerProps } from '../dock-manager.spec';
+import { DockManager, KendoDockManagerProps } from '../dock-manager.spec';
 import { DockManagerNormal } from '../templates/dock-manager-normal';
 import { DockManagerUnpinnedPane } from '../templates/dock-manager-unpinned-pane';
 
@@ -45,6 +45,7 @@ DockManagerDemo.states = states;
 DockManagerDemo.variants = variants;
 DockManagerDemo.defaultOptions = defaults;
 DockManagerDemo.modifiers = modifiers;
+DockManagerDemo.className = DockManager.className;
 
 export default DockManagerDemo;
 

@@ -1,4 +1,4 @@
-﻿import { RadioGroup, KendoRadioGroupProps } from '../radio-group.spec';
+import { RadioGroup, KendoRadioGroupProps } from '../radio-group.spec';
 import { RadioItem } from '../radio-item.spec';
 import { nextId } from '../../misc';
 import { RadioButtonWithLabelAfter } from '../templates/radio-with-label-after';
@@ -64,6 +64,7 @@ RadioGroupDemo.states = states;
 RadioGroupDemo.variants = variants;
 RadioGroupDemo.defaultOptions = defaults;
 RadioGroupDemo.modifiers = modifiers;
+RadioGroupDemo.className = RadioGroup.className;
 
 export default RadioGroupDemo;
 

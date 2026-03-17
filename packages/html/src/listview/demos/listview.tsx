@@ -1,14 +1,13 @@
-﻿import { ListView, KendoListViewProps } from '../listview.spec';
+import { ListView, KendoListViewProps } from '../listview.spec';
 import { ListViewItem } from '../listview-item.spec';
 import { ListViewNormal } from '../templates/listview-normal';
 
 const options = ListView.options;
 const states = ListView.states;
 const defaults = {
-  ...ListView.defaultOptions,
-  variant: 'flex',
+    ...ListView.defaultOptions,
+    variant: 'flex',
 };
-
 
 const variants = [
     {
@@ -18,14 +17,14 @@ const variants = [
     {
         name: 'grid',
         title: 'Grid',
-    }
-];
-
-const modifiers = [
+    },
     {
         name: 'loading',
         title: 'Loading',
     },
+];
+
+const modifiers = [
     {
         name: 'pageable',
         title: 'Pager',
@@ -40,12 +39,10 @@ export const ListviewDemo = (props: KendoListViewProps &
     const { variant, modifiers: mods, ...other } = { ...defaults, ...props };
 
     let additionalProps: any = {};
+    additionalProps.loading = variant === 'loading';
 
     Object.keys(mods || {}).forEach((modifier) => {
         switch (modifier) {
-            case 'loading':
-                additionalProps.loading = mods?.[modifier] ? true : false;
-                break;
             case 'pageable':
                 additionalProps.pageable = mods?.[modifier] ? true : false;
                 break;
@@ -100,6 +97,7 @@ ListviewDemo.states = states;
 ListviewDemo.variants = variants;
 ListviewDemo.defaultOptions = defaults;
 ListviewDemo.modifiers = modifiers;
+ListviewDemo.className = ListView.className;
 
 export default ListviewDemo;
 

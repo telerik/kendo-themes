@@ -1,5 +1,6 @@
 ﻿import { Layout, KendoLayoutProps } from '../layout';
 import { StackLayoutNormal } from '../templates/stack-layout-normal';
+import { StackLayout } from '../stack-layout.spec';
 
 const options = Layout.options;
 const states = Layout.states;
@@ -96,6 +97,7 @@ LayoutDemo.states = states;
 LayoutDemo.variants = variants;
 LayoutDemo.defaultOptions = defaults;
 LayoutDemo.modifiers = modifiers;
+LayoutDemo.className = StackLayout.className;
 
 export default LayoutDemo;
 

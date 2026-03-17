@@ -1,4 +1,4 @@
-﻿import { ButtonGroup, KendoButtonGroupProps } from '../button-group.spec';
+import { ButtonGroup, KendoButtonGroupProps } from '../button-group.spec';
 import { Button } from '../../button';
 
 const options = {
@@ -67,6 +67,7 @@ ButtonGroupDemo.states = states;
 ButtonGroupDemo.variants = variants;
 ButtonGroupDemo.defaultOptions = defaults;
 ButtonGroupDemo.modifiers = modifiers;
+ButtonGroupDemo.className = ButtonGroup.className;
 
 export default ButtonGroupDemo;
 

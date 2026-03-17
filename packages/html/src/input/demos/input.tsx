@@ -99,5 +99,6 @@ InputDemo.states = states;
 InputDemo.variants = variants;
 InputDemo.defaultOptions = defaults;
 InputDemo.modifiers = modifiers;
+InputDemo.className = Input.className;
 
 export default InputDemo;

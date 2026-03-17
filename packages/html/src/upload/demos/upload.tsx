@@ -1,4 +1,4 @@
-﻿import { Upload, KendoUploadProps } from '../upload.spec';
+import { Upload, KendoUploadProps } from '../upload.spec';
 import { UploadFile } from '../upload-file';
 import { UploadChunk } from '../templates/upload-chunk';
 import { UploadNormal } from '../templates/upload-normal';
@@ -84,6 +84,7 @@ UploadDemo.states = states;
 UploadDemo.variants = variants;
 UploadDemo.defaultOptions = defaults;
 UploadDemo.modifiers = modifiers;
+UploadDemo.className = Upload.className;
 
 export default UploadDemo;
 

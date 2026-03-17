@@ -1,4 +1,4 @@
-﻿import { Toolbar, KendoToolbarProps } from '../toolbar.spec';
+import { Toolbar, KendoToolbarProps } from '../toolbar.spec';
 import { ToolbarSection } from '../templates/toolbar-section';
 import { ToolbarNormal } from '../templates/toolbar-normal';
 import { ToolbarScrollable } from '../templates/toolbar-scrollable';
@@ -70,6 +70,7 @@ ToolbarDemo.states = states;
 ToolbarDemo.variants = variants;
 ToolbarDemo.defaultOptions = defaults;
 ToolbarDemo.modifiers = modifiers;
+ToolbarDemo.className = Toolbar.className;
 
 export default ToolbarDemo;
 

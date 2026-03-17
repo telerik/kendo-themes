@@ -1,4 +1,4 @@
-﻿import { Orgchart, KendoOrgchartProps } from '../orgchart.spec';
+import { Orgchart, KendoOrgchartProps } from '../orgchart.spec';
 import { OrgchartNode } from '../orgchart-node';
 import { OrgchartGroup } from '../orgchart-group';
 import { OrgchartNodeGroup } from '../orgchart-node-group';
@@ -76,6 +76,7 @@ OrgchartDemo.states = states;
 OrgchartDemo.variants = variants;
 OrgchartDemo.defaultOptions = defaults;
 OrgchartDemo.modifiers = modifiers;
+OrgchartDemo.className = Orgchart.className;
 
 export default OrgchartDemo;
 

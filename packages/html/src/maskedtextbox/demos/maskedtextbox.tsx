@@ -1,4 +1,4 @@
-﻿import { MaskedTextbox, KendoMaskedTextboxProps } from '../maskedtextbox.spec';
+import { MaskedTextbox, KendoMaskedTextboxProps } from '../maskedtextbox.spec';
 import { MaskedTextboxNormal } from '../templates/maskedtextbox-normal';
 import { Icon } from '../../icon';
 import { DropdownList } from '../../dropdownlist';
@@ -58,6 +58,7 @@ MaskedtextboxDemo.states = states;
 MaskedtextboxDemo.variants = variants;
 MaskedtextboxDemo.defaultOptions = defaults;
 MaskedtextboxDemo.modifiers = modifiers;
+MaskedtextboxDemo.className = MaskedTextbox.className;
 
 export default MaskedtextboxDemo;
 

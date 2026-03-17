@@ -1,4 +1,4 @@
-﻿import { Chat, KendoChatProps } from '../chat.spec';
+import { Chat, KendoChatProps } from '../chat.spec';
 import { FileBox, FileBoxWrapper } from '../../file-box';
 import { ChatMessage } from '../chat-message';
 import { ChatMessageGroup } from '../chat-message-group';
@@ -160,6 +160,7 @@ ChatDemo.states = states;
 ChatDemo.variants = variants;
 ChatDemo.defaultOptions = defaults;
 ChatDemo.modifiers = modifiers;
+ChatDemo.className = Chat.className;
 
 export default ChatDemo;
 

@@ -1,4 +1,4 @@
-﻿import { Grid, KendoGridProps } from '../grid.spec';
+import { Grid, KendoGridProps } from '../grid.spec';
 import { GridToolbar } from '../grid-toolbar.spec';
 import { GridContainer } from '../grid-container.spec';
 import { GridContent } from '../grid-content.spec';
@@ -152,7 +152,7 @@ export const GridDemo = (
                 <TableTd>39</TableTd>
                 <TableTd>18</TableTd>
               </TableRow>
-              <TableRow className="k-alt" alt>
+              <TableRow alt>
                 <TableTd>2</TableTd>
                 <TableTd>Chang</TableTd>
                 <TableTd>17</TableTd>
@@ -164,7 +164,7 @@ export const GridDemo = (
                 <TableTd>13</TableTd>
                 <TableTd>10</TableTd>
               </TableRow>
-              <TableRow className="k-alt" alt>
+              <TableRow alt>
                 <TableTd>4</TableTd>
                 <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
                 <TableTd>53</TableTd>
@@ -259,7 +259,7 @@ export const GridDemo = (
                       <TableTd>39</TableTd>
                       <TableTd>18</TableTd>
                     </TableRow>
-                    <TableRow className="k-alt" alt>
+                    <TableRow alt>
                       <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
                       <TableTd>2</TableTd>
                       <TableTd>Chang</TableTd>
@@ -273,7 +273,7 @@ export const GridDemo = (
                       <TableTd>13</TableTd>
                       <TableTd>10</TableTd>
                     </TableRow>
-                    <TableRow className="k-alt" alt>
+                    <TableRow alt>
                       <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
                       <TableTd>4</TableTd>
                       <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
@@ -314,5 +314,6 @@ GridDemo.states = states;
 GridDemo.variants = variants;
 GridDemo.defaultOptions = defaults;
 GridDemo.modifiers = modifiers;
+GridDemo.className = Grid.className;
 
 export default GridDemo;
