@@ -9,7 +9,37 @@ concurrency:
 
 jobs:
 
+  detect:
+    name: Detect affected components
+    runs-on: ubuntu-latest
+
+    outputs:
+      has_affected: ${{ steps.check.outputs.has_affected }}
+
+    steps:
+      - name: Checkout branch (commits only)
+        uses: actions/checkout@v6
+        with:
+          filter: blob:none
+          sparse-checkout: .
+          sparse-checkout-cone-mode: true
+          fetch-depth: 0
+
+      - name: Check for affected HTML components
+        id: check
+        run: |
+          AFFECTED=$(git diff --name-only origin/develop...HEAD -- 'packages/html/src/' | head -1)
+          if [ -n "$AFFECTED" ]; then
+            echo "has_affected=true" >> $GITHUB_OUTPUT
+            echo "Affected components detected"
+          else
+            echo "has_affected=false" >> $GITHUB_OUTPUT
+            echo "No affected components — skipping a11y tests"
+          fi
+
   run:
+    needs: [ detect ]
+    if: needs.detect.outputs.has_affected == 'true'
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +47,8 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v6
         with:
-          fetch-depth: 0  # Needed for affected detection
+          filter: blob:none
+          fetch-depth: 0
 
       - name: Install virtual display on Linux
         run: sudo apt-get install xvfb
