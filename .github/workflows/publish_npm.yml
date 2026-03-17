@@ -100,3 +100,9 @@ jobs:
         run: |
           git push origin master --tags --quiet > /dev/null 2>&1
           git push origin master:develop --quiet > /dev/null 2>&1
+
+      - name: Trigger swatches publish
+        if: env.RELEASE_TYPE == 'stable'
+        run: gh workflow run publish_swatches.yml -f ref=master
+        env:
+          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}

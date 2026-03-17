@@ -11,16 +11,9 @@ on:
         required: true
         default: "master"
 
-  workflow_run:
-    workflows:
-      - "Publish to npm"
-    types:
-      - completed
-
 jobs:
   publish:
     runs-on: "ubuntu-latest"
-    if: ${{ github.event.inputs.ref || github.event.workflow_run.conclusion == 'success' }}
 
     permissions:
       id-token: write # Required by Akeyless
@@ -28,6 +21,15 @@ jobs:
       packages: read
 
     steps:
+      - name: Checkout branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.inputs.ref }}
+
+      - name: Read version
+        run: |
+          echo "VERSION=$(jq -r '.version' lerna.json)" >> $GITHUB_ENV
+
       - name: Import Secrets
         id: import-secrets
         uses: LanceMcCarthy/akeyless-action@v5
@@ -35,23 +37,6 @@ jobs:
           access-id: ${{ secrets.GH_AKEYLESS_ACCESS_ID }}
           static-secrets: '{ "/WebComponents/prod/tokens/GH_TOKEN": "GH_TOKEN" }'
           export-secrets-to-environment: false
-
-      - name: Checkout branch
-        uses: actions/checkout@v6
-        with:
-          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.event.inputs.ref }}
-
-      - name: Read version
-        run: |
-          echo "VERSION=$(jq -r '.version' lerna.json)" >> $GITHUB_ENV
-
-      - name: Check if dev release
-        if: github.event_name == 'workflow_run'
-        run: |
-          if [[ "$VERSION" == *"-dev"* ]]; then
-            echo "Dev release detected ($VERSION), skipping swatch publish"
-            exit 0
-          fi
 
       - name: Setup node
         id: setup-node
