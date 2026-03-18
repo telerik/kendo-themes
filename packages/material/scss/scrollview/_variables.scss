@@ -43,7 +43,7 @@ $kendo-scrollview-pagebutton-primary-bg: k-color(primary) !default;
 $kendo-scrollview-pagebutton-primary-border: k-color(primary) !default;
 /// The box shadow of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-shadow: 0 0 0 2px color-mix(in srgb, k-color(dark) 13%, transparent) !default;
+$kendo-scrollview-pagebutton-shadow: 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
 
 /// The offset of the ScrollView pager.
 /// @group scrollview
@@ -80,7 +80,6 @@ $kendo-scrollview-light-bg: rgba( white, .4 ) !default;
 /// The background color of the ScrollView pager in dark mode.
 /// @group scrollview
 $kendo-scrollview-dark-bg: rgba( black, .4 ) !default;
-
 /// The duration of the ScrollView transition.
 /// @group scrollview
 $kendo-scrollview-transition-duration: .3s !default;

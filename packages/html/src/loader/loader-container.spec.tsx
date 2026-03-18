@@ -19,8 +19,6 @@ const options = {
         ThemeColor.warning,
         ThemeColor.error,
         ThemeColor.info,
-        ThemeColor.light,
-        ThemeColor.dark,
         ThemeColor.inverse
     ],
 };
@@ -33,14 +31,14 @@ export type KendoLoaderContainerOptions = {
 export type KendoLoaderContainerProps = KendoLoaderContainerOptions & {
     loaderType?: 'pulsing' | 'infinite-spinner' | 'converging-spinner';
     position?: 'top' | 'end' | 'start';
-    overlay?: 'dark' | 'light';
+    overlay?: 'inverse';
     panel?: boolean;
 };
 
 const defaultOptions = {
     loaderType: 'pulsing',
     position: 'top',
-    overlay: 'dark',
+    overlay: 'inverse',
     panel: false
 } as const;
 

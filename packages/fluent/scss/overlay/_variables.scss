@@ -3,11 +3,11 @@
 /// @role default
 $kendo-overlay-default-theme-color: "inverse" !default;
 
-/// Background color of the dark overlay.
+/// The background color of the Overlay.
 /// @group overlay
 $kendo-overlay-bg: null !default;
 
-/// Opacity of the overlay.
+/// The opacity of the Overlay.
 /// @group overlay
 $kendo-overlay-opacity: var( --kendo-overlay-opacity, .4 ) !default;
 
