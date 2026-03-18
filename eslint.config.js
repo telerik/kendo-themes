@@ -105,7 +105,8 @@ module.exports = [
             ...tseslint.configs.recommended.rules,
             "@typescript-eslint/no-explicit-any": "off",
             "no-unused-vars": "off",
-            "no-undef": "off"
+            "no-undef": "off",
+            "preserve-caught-error": "off"
         }
     }
 ]

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import type { Reporter, TestCase, TestModule } from 'vitest/node';
 
 // ANSI color codes
