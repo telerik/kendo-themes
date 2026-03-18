@@ -50,11 +50,7 @@
                     }
 
                     .k-bottom-nav-item.k-selected {
-                        @if $name == "secondary" or $name == "light" {
-                            @include fill( $color: k-color(#{$name}));
-                        } @else {
-                            @include fill( $color: k-color(#{$name}) );
-                        }
+                        @include fill( $color: k-color(#{$name}) );
                     }
                 }
             }

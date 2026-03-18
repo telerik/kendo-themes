@@ -99,28 +99,6 @@ $_default-colors: (
     error-on-subtle: map.get( $kendo-palette-red, 13 ),
     on-error: map.get( $kendo-palette-gray, "white" ),
     error-on-surface: map.get( $kendo-palette-red, 8 ),
-    // Light
-    light-subtle: map.get( $kendo-palette-greige, 1 ),
-    light-subtle-hover: map.get( $kendo-palette-greige, 2 ),
-    light-subtle-active: map.get( $kendo-palette-gray, 2 ),
-    light: map.get( $kendo-palette-gray, 1 ),
-    light-hover: map.get( $kendo-palette-greige, 4 ),
-    light-active: map.get( $kendo-palette-greige, 5 ),
-    light-emphasis: rgba( map.get( $kendo-palette-gray, 14 ), .10),
-    light-on-subtle: map.get( $kendo-palette-gray, 11 ),
-    on-light: map.get( $kendo-palette-gray, "black" ),
-    light-on-surface: map.get( $kendo-palette-gray, 1 ),
-    // Dark
-    dark-subtle: map.get( $kendo-palette-gray, 4 ),
-    dark-subtle-hover: map.get( $kendo-palette-gray, 5 ),
-    dark-subtle-active: map.get( $kendo-palette-gray, 6 ),
-    dark: map.get( $kendo-palette-gray, 14 ),
-    dark-hover: map.get( $kendo-palette-greige, 12 ),
-    dark-active: map.get( $kendo-palette-greige, 11 ),
-    dark-emphasis: rgba( map.get( $kendo-palette-gray, 14 ), .40),
-    dark-on-subtle: map.get( $kendo-palette-gray, 11 ),
-    on-dark: map.get( $kendo-palette-gray, "white" ),
-    dark-on-surface: map.get( $kendo-palette-gray, 14 ),
     // Inverse
     inverse-subtle: map.get( $kendo-palette-gray, 11 ),
     inverse-subtle-hover: map.get( $kendo-palette-gray, 10 ),
@@ -312,38 +290,6 @@ $_default-colors: (
 /// @prop {Color} error-on-subtle - The text color variable for content on error subtle.
 /// @prop {Color} on-error - The text color variable for content on error.
 /// @prop {Color} error-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {light}
-/// [light-subtle, light-subtle-hover, light-subtle-active,
-/// light, light-hover, light-active, light-emphasis,
-/// light-on-subtle, on-light, light-on-surface]
-/// The Light variable group.
-/// @prop {Color} light-subtle - The light subtle background color variable.
-/// @prop {Color} light-subtle-hover - The light subtle background color variable for the hover state.
-/// @prop {Color} light-subtle-active - The light subtle background color variable for the active state.
-/// @prop {Color} light - The light background color variable.
-/// @prop {Color} light-hover - The light background color variable for the hover state.
-/// @prop {Color} light-active - The light background color variable for the active state.
-/// @prop {Color} light-emphasis - The emphasized light color variable.
-/// @prop {Color} light-on-subtle - The text color variable for content on light subtle.
-/// @prop {Color} on-light - The text color variable for content on light.
-/// @prop {Color} light-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {dark}
-/// [dark-subtle, dark-subtle-hover, dark-subtle-active,
-/// dark, dark-hover, dark-active, dark-emphasis,
-/// dark-on-subtle, on-dark, dark-on-surface]
-/// The Dark variable group.
-/// @prop {Color} dark-subtle - The dark subtle background color variable.
-/// @prop {Color} dark-subtle-hover - The dark subtle background color variable for the hover state.
-/// @prop {Color} dark-subtle-active - The dark subtle background color variable for the active state.
-/// @prop {Color} dark - The dark background color variable.
-/// @prop {Color} dark-hover - The dark background color variable for the hover state.
-/// @prop {Color} dark-active - The dark background color variable for the active state.
-/// @prop {Color} dark-emphasis - The emphasized dark color variable.
-/// @prop {Color} dark-on-subtle - The text color variable for content on dark subtle.
-/// @prop {Color} on-dark - The text color variable for content on dark.
-/// @prop {Color} dark-on-surface - The text color variable for content on surface.
 ///
 /// @subgroup {inverse}
 /// [inverse-subtle, inverse-subtle-hover, inverse-subtle-active,

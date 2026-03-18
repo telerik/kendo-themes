@@ -25,12 +25,8 @@ const variants = [
     title: 'Normal',
   },
   {
-    name: 'light',
-    title: 'Light',
-  },
-  {
-    name: 'dark',
-    title: 'Dark',
+    name: 'inverse',
+    title: 'Inverse',
   },
 ];
 
@@ -57,8 +53,7 @@ export const ScrollviewDemo = (
   });
 
   switch (variant) {
-    case 'light':
-    case 'dark':
+    case 'inverse':
       return (
         <ScrollViewNormal
           className="k-bg-primary-subtle"

@@ -47,9 +47,8 @@
 
         #{k-when-default($kendo-fab-default-fill-mode, "solid")}
         &.k-fab-solid {
-            #{k-when-default($kendo-fab-default-theme-color, ("warning", "light"))}
-            &.k-fab-warning,
-            &.k-fab-light {
+            #{k-when-default($kendo-fab-default-theme-color, "warning")}
+            &.k-fab-warning {
                 &:focus::after,
                 &.k-focus::after {
                     outline-color: k-color(app-surface);

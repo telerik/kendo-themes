@@ -238,7 +238,7 @@ $_default-palette-terracotta-heat: (
 );
 
 // stylelint-disable scss/no-global-function-names
-/// The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
+/// The Gray Palette provides colors to the Base, Secondary, and Inverse variable groups.
 /// @group palette
 $kendo-palette-neutral-gray: $_default-palette-neutral-gray !default;
 $kendo-palette-neutral-gray: map.merge($_default-palette-neutral-gray, $kendo-palette-neutral-gray);

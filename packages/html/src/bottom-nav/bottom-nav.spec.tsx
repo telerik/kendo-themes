@@ -19,8 +19,6 @@ const options = {
         ThemeColor.success,
         ThemeColor.warning,
         ThemeColor.error,
-        ThemeColor.dark,
-        ThemeColor.light,
         ThemeColor.inverse
     ]
 };

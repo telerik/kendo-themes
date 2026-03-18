@@ -75,12 +75,9 @@ $kendo-scrollview-navigation-default-opacity: .7 !default;
 /// @group scrollview
 $kendo-scrollview-navigation-hover-opacity: 1 !default;
 
-/// The background color of the ScrollView pager in light mode.
+/// The background color of the ScrollView pager in inverse mode.
 /// @group scrollview
-$kendo-scrollview-light-bg: rgba( white, .4 ) !default;
-/// The background color of the ScrollView pager in dark mode.
-/// @group scrollview
-$kendo-scrollview-dark-bg: rgba( black, .4 ) !default;
+$kendo-scrollview-inverse-bg: color-mix(in srgb, k-color(inverse) 40%, transparent) !default;
 
 /// The duration of the ScrollView transition.
 /// @group scrollview
@@ -113,8 +110,7 @@ $kendo-scrollview-transition-timing-function: ease-in-out !default;
     $kendo-scrollview-navigation-bg: $kendo-scrollview-navigation-bg,
     $kendo-scrollview-navigation-default-opacity: $kendo-scrollview-navigation-default-opacity,
     $kendo-scrollview-navigation-hover-opacity: $kendo-scrollview-navigation-hover-opacity,
-    $kendo-scrollview-light-bg: $kendo-scrollview-light-bg,
-    $kendo-scrollview-dark-bg: $kendo-scrollview-dark-bg,
+    $kendo-scrollview-inverse-bg: $kendo-scrollview-inverse-bg,
     $kendo-scrollview-transition-duration: $kendo-scrollview-transition-duration,
     $kendo-scrollview-transition-timing-function: $kendo-scrollview-transition-timing-function
 );

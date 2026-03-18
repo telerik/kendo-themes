@@ -60,7 +60,7 @@
                     background-color: k-color(app-surface);
                     border-color: color-mix(in srgb, k-color(border) 16%, transparent);
 
-                    @if ($name == "warning" or $name == "dark" or $name == "inverse") {
+                    @if ($name == "warning" or $name == "inverse") {
                         border-color: k-color(#{$name});
                     }
 

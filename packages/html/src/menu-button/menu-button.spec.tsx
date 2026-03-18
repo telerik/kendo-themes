@@ -27,8 +27,6 @@ const options = {
         ThemeColor.warning,
         ThemeColor.error,
         ThemeColor.info,
-        ThemeColor.light,
-        ThemeColor.dark,
         ThemeColor.inverse
     ]
 };

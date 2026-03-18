@@ -156,7 +156,7 @@ $_default-palette-greige: (
     15: #141415,
 );
 // stylelint-disable scss/no-global-function-names
-/// The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
+/// The Gray Palette provides colors to the Base, Secondary and Inverse variable groups.
 /// @group palette
 $kendo-palette-gray: $_default-palette-gray !default;
 $kendo-palette-gray: map.merge($_default-palette-gray, $kendo-palette-gray);
@@ -188,7 +188,7 @@ $kendo-palette-indigo: map.merge($_default-palette-indigo, $kendo-palette-indigo
 /// @group palette
 $kendo-palette-teal: $_default-palette-teal !default;
 $kendo-palette-teal: map.merge($_default-palette-teal, $kendo-palette-teal);
-/// The Greige Palette provides colors to the Light and Dark variable groups.
+/// The Greige Palette provides colors to the Secondary variable groups.
 /// @group palette
 $kendo-palette-greige: $_default-palette-greige !default;
 $kendo-palette-greige: map.merge($_default-palette-greige, $kendo-palette-greige);

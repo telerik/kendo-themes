@@ -208,42 +208,6 @@
 /// @group outline-color
 /// @contextType css
 
-/// Sets the border color to the light subtle color.
-/// @example outline-color: var(--kendo-color-light-subtle, #f8f9fa);
-/// @name .k-outline-light-subtle
-/// @group outline-color
-/// @contextType css
-
-/// Sets the border color to the light color.
-/// @example outline-color: var(--kendo-color-light, #f8f9fa);
-/// @name .k-outline-light
-/// @group outline-color
-/// @contextType css
-
-/// Sets the border color to the light emphasis color.
-/// @example outline-color: var(--kendo-color-light-emphasis, #dee2e6);
-/// @name .k-outline-light-emphasis
-/// @group outline-color
-/// @contextType css
-
-/// Sets the border color to the dark subtle color.
-/// @example outline-color: var(--kendo-color-dark-subtle, #6c757d);
-/// @name .k-outline-dark-subtle
-/// @group outline-color
-/// @contextType css
-
-/// Sets the border color to the dark color.
-/// @example outline-color: var(--kendo-color-dark, #343a40);
-/// @name .k-outline-dark
-/// @group outline-color
-/// @contextType css
-
-/// Sets the border color to the dark emphasis color.
-/// @example outline-color: var(--kendo-color-dark-emphasis, #212529);
-/// @name .k-outline-dark-emphasis
-/// @group outline-color
-/// @contextType css
-
 @use "sass:map";
 @use "../_globals.scss" as *;
 

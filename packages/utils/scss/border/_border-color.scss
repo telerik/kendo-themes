@@ -208,42 +208,6 @@
 /// @group border-color
 /// @contextType css
 
-/// Sets the border color to the light subtle color.
-/// @example border-color: var(--kendo-color-light-subtle, #f8f9fa);
-/// @name .k-border-light-subtle
-/// @group border-color
-/// @contextType css
-
-/// Sets the border color to the light color.
-/// @example border-color: var(--kendo-color-light, #f8f9fa);
-/// @name .k-border-light
-/// @group border-color
-/// @contextType css
-
-/// Sets the border color to the light emphasis color.
-/// @example border-color: var(--kendo-color-light-emphasis, #dee2e6);
-/// @name .k-border-light-emphasis
-/// @group border-color
-/// @contextType css
-
-/// Sets the border color to the dark subtle color.
-/// @example border-color: var(--kendo-color-dark-subtle, #6c757d);
-/// @name .k-border-dark-subtle
-/// @group border-color
-/// @contextType css
-
-/// Sets the border color to the dark color.
-/// @example border-color: var(--kendo-color-dark, #343a40);
-/// @name .k-border-dark
-/// @group border-color
-/// @contextType css
-
-/// Sets the border color to the dark emphasis color.
-/// @example border-color: var(--kendo-color-dark-emphasis, #212529);
-/// @name .k-border-dark-emphasis
-/// @group border-color
-/// @contextType css
-
 @use "sass:map";
 @use "../_globals.scss" as *;
 

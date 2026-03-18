@@ -256,7 +256,7 @@ $_default-palette-green: (
 
 
 // stylelint-disable scss/no-global-function-names
-/// The Neutral Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
+/// The Neutral Palette provides colors to the Base, Secondary, and Inverse variable groups.
 /// @group palette
 $kendo-palette-neutral: $_default-palette-neutral !default;
 $kendo-palette-neutral: map.merge($_default-palette-neutral, $kendo-palette-neutral);

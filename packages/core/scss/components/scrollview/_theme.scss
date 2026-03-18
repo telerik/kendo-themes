@@ -10,24 +10,16 @@
             $kendo-scrollview-border
         );
 
-        &.k-scrollview-dark {
+        &.k-scrollview-inverse {
             kendo-scrollview-pager,
             .k-scrollview-nav-wrap {
-                background-color: $kendo-scrollview-dark-bg;
+                background-color: $kendo-scrollview-inverse-bg;
             }
             .k-scrollview-next,
             .k-scrollview-prev {
-                color: $kendo-scrollview-dark-bg;
+                color: $kendo-scrollview-inverse-bg;
 
             }
-        }
-
-        &.k-scrollview-light {
-            kendo-scrollview-pager,
-            .k-scrollview-nav-wrap {
-                background-color: $kendo-scrollview-light-bg;
-            }
-
         }
     }
 

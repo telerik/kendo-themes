@@ -238,7 +238,7 @@ $_default-palette-orchid-purple: (
 
 
 // stylelint-disable scss/no-global-function-names
-/// The Ash Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
+/// The Ash Gray Palette provides colors to the Base, Secondary and Inverse variable groups.
 /// @group palette
 $kendo-palette-ash-gray: $_default-palette-ash-gray !default;
 $kendo-palette-ash-gray: map.merge($_default-palette-ash-gray, $kendo-palette-ash-gray);

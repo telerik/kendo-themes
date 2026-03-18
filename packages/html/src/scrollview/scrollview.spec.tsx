@@ -10,7 +10,7 @@ const states = [];
 const options = {};
 
 export type KendoScrollViewProps = {
-    mode?: "light" | "normal" | "dark";
+    mode?: "normal" | "inverse";
     views?: number;
     currentView?: number;
     animate?: boolean;
@@ -93,15 +93,7 @@ export const ScrollView: KendoComponent<KendoScrollViewProps> = (
                 { pager &&
                     <div className="k-scrollview-nav-wrap">
                         <div className="k-scrollview-nav">
-                            { mode === "light" &&
-                                <>
-                                    <span className="k-link"></span>
-                                    <span className="k-link k-primary"></span>
-                                    <span className="k-link k-primary k-focus"></span>
-                                    <span className="k-link k-focus"></span>
-                                    <span className="k-link"></span>
-                                </>
-                            }
+
                             {
                                 mode === 'normal' &&
                                <>
@@ -117,7 +109,7 @@ export const ScrollView: KendoComponent<KendoScrollViewProps> = (
                                </>
                             }
                             {
-                                mode === "dark" &&
+                                mode === "inverse" &&
                                 <>
                                     <span className="k-link" style={{ transform: "scale(0.5)" }}></span>
                                     <span className="k-link" style={{ transform: "scale(0.65)" }}></span>

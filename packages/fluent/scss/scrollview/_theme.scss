@@ -6,17 +6,10 @@
     @include kendo-scrollview--theme-base();
 
     .k-scrollview {
-        &.k-scrollview-dark {
+        &.k-scrollview-inverse {
             kendo-scrollview-pager,
             .k-scrollview-nav-wrap {
-                background-color: $kendo-scrollview-pager-dark-bg;
-            }
-        }
-
-        &.k-scrollview-light {
-            kendo-scrollview-pager,
-            .k-scrollview-nav-wrap {
-                background-color: $kendo-scrollview-pager-light-bg;
+                background-color: $kendo-scrollview-pager-inverse-bg;
             }
         }
     }

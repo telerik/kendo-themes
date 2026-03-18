@@ -220,7 +220,7 @@ $_default-palette-flamingo-pink: (
 
 
 // stylelint-disable scss/no-global-function-names
-/// The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
+/// The Gray Palette provides colors to the Base, Secondary, and Inverse variable groups.
 /// @group palette
 $kendo-palette-gray: $_default-palette-gray !default;
 $kendo-palette-gray: map.merge($_default-palette-gray, $kendo-palette-gray);

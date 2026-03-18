@@ -81,12 +81,9 @@ $kendo-scrollview-navigation-focus-shadow: var( --kendo-scrollview-navigation-fo
 /// @group scrollview
 $kendo-scrollview-navigation-arrow-hover-shadow: var( --kendo-scrollview-navigation-arrow-hover-shadow, var( --kendo-box-shadow-depth-4, none ) ) !default;
 
-/// The background color of the ScrollView pager in light mode.
+/// The background color of the ScrollView pager in inverse mode.
 /// @group scrollview
-$kendo-scrollview-pager-light-bg: var( --kendo-scrollview-pager-light-bg, rgba( $kendo-color-white, .4 ) ) !default;
-/// The background color of the ScrollView pager in dark mode.
-/// @group scrollview
-$kendo-scrollview-pager-dark-bg: var( --kendo-scrollview-pager-dark-bg, rgba( $kendo-color-black, .4 ) ) !default;
+$kendo-scrollview-pager-inverse-bg: var( --kendo-scrollview-pager-inverse-bg, color-mix(in srgb, k-color(inverse) 40%, transparent) ) !default;
 
 /// The duration of the ScrollView transition.
 /// @group scrollview

@@ -38,8 +38,6 @@ export const ThemeColor = {
   success: "success",
   warning: "warning",
   error: "error",
-  dark: "dark",
-  light: "light",
   inverse: "inverse",
 } as const;
 

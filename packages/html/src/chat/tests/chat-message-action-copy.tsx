@@ -65,7 +65,7 @@ export default () =>(
             </Popup>
 
             <AnimationContainer className="copy-notification">
-                <Notification text="Message copied to clipboard." icon="copy" themeColor="dark"/>
+                <Notification text="Message copied to clipboard." icon="copy" themeColor="inverse"/>
             </AnimationContainer>
         </div>
     </>
