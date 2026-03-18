@@ -441,56 +441,6 @@
                     "type": "color",
                     "value": "oklch(55.72% 0.2158 26.34deg)"
                 },
-                "light-subtle": {
-                    "name": "Light Subtle",
-                    "type": "color",
-                    "value": "oklch(91.58% 0.0001 0deg)"
-                },
-                "light-subtle-hover": {
-                    "name": "Light Subtle Hover",
-                    "type": "color",
-                    "value": "oklch(85.45% 0.0001 0deg)"
-                },
-                "light-subtle-active": {
-                    "name": "Light Subtle Active",
-                    "type": "color",
-                    "value": "oklch(78.89% 0.0001 0deg)"
-                },
-                "light": {
-                    "name": "Light",
-                    "type": "color",
-                    "value": "oklch(56.24% 0.0001 0deg)"
-                },
-                "light-hover": {
-                    "name": "Light Hover",
-                    "type": "color",
-                    "value": "oklch(54.52% 0.0001 0deg)"
-                },
-                "light-active": {
-                    "name": "Light Active",
-                    "type": "color",
-                    "value": "oklch(51.38% 0.0001 0deg)"
-                },
-                "light-emphasis": {
-                    "name": "Light Emphasis",
-                    "type": "color",
-                    "value": "oklch(67.97% 0.0001 0deg)"
-                },
-                "light-on-subtle": {
-                    "name": "Light On Subtle",
-                    "type": "color",
-                    "value": "oklch(28.09% 0.0000 0deg)"
-                },
-                "on-light": {
-                    "name": "On Light",
-                    "type": "color",
-                    "value": "oklch(100.00% 0.0001 0deg)"
-                },
-                "light-on-surface": {
-                    "name": "Light On Surface",
-                    "type": "color",
-                    "value": "oklch(46.04% 0.0001 0deg)"
-                },
                 "series-a": {
                     "name": "Series A",
                     "type": "color",

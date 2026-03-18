@@ -10,7 +10,7 @@ const functions = ["k-color", "k-elevation", "k-border-radius", "k-spacing", "k-
 const defaultOptionValues = {
   sizes: ["sm", "md", "lg"],
   fillModes: ["outline", "flat", "link", "clear"],
-  themeColors: ["base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse"],
+  themeColors: ["base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse"],
   roundness: ["sm", "md", "lg", "full"]
 };
 

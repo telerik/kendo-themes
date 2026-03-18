@@ -5,22 +5,6 @@
 @mixin kendo-scrollview--theme() {
     @include kendo-scrollview--theme-base();
 
-    .k-scrollview {
-        &.k-scrollview-dark {
-            kendo-scrollview-pager,
-            .k-scrollview-nav-wrap {
-                background-color: $kendo-scrollview-pager-dark-bg;
-            }
-        }
-
-        &.k-scrollview-light {
-            kendo-scrollview-pager,
-            .k-scrollview-nav-wrap {
-                background-color: $kendo-scrollview-pager-light-bg;
-            }
-        }
-    }
-
     .k-scrollview-next,
     .k-scrollview-prev {
         text-shadow: $kendo-scrollview-navigation-arrow-shadow;

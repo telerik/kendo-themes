@@ -202,42 +202,6 @@
 /// @group background-color
 /// @contextType css
 
-/// Sets the background color to the light subtle color.
-/// @example background-color: var(--kendo-color-light-subtle, #f8f9fa);
-/// @name .k-bg-light-subtle
-/// @group background-color
-/// @contextType css
-
-/// Sets the background color to the light color.
-/// @example background-color: var(--kendo-color-light, #f8f9fa);
-/// @name .k-bg-light
-/// @group background-color
-/// @contextType css
-
-/// Sets the background color to the light emphasis color.
-/// @example background-color: var(--kendo-color-light-emphasis, #dee2e6);
-/// @name .k-bg-light-emphasis
-/// @group background-color
-/// @contextType css
-
-/// Sets the background color to the dark subtle color.
-/// @example background-color: var(--kendo-color-dark-subtle, #6c757d);
-/// @name .k-bg-dark-subtle
-/// @group background-color
-/// @contextType css
-
-/// Sets the background color to the dark color.
-/// @example background-color: var(--kendo-color-dark, #343a40);
-/// @name .k-bg-dark
-/// @group background-color
-/// @contextType css
-
-/// Sets the background color to the dark emphasis color.
-/// @example background-color: var(--kendo-color-dark-emphasis, #212529);
-/// @name .k-bg-dark-emphasis
-/// @group background-color
-/// @contextType css
-
 @use "sass:map";
 @use "../_globals.scss" as *;
 

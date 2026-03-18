@@ -9,8 +9,6 @@ const states = [];
 const options = {
     themeColor: [
         ThemeColor.undefined,
-        ThemeColor.light,
-        ThemeColor.dark,
         ThemeColor.inverse
     ],
 };

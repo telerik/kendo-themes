@@ -108,30 +108,6 @@ $default-colors: (
     on-error: #{"oklch(from var(--kendo-color-error) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)"},
     error-on-surface: #{"oklch(from var(--kendo-color-error) calc(l * 0.872) calc(c * 0.866) h)"},
 
-    // Light
-    light-subtle: oklch(98.51% 0 0deg),
-    light-subtle-hover: oklch(97.02% 0 0deg),
-    light-subtle-active: oklch(94.01% 0 0deg),
-    light: oklch(94.01% 0 0deg),
-    light-hover: oklch(90.67% 0 0deg),
-    light-active: oklch(87.61% 0 0deg),
-    light-emphasis: oklch(87.61% 0 0deg),
-    light-on-subtle: oklch(19.13% 0 0deg),
-    on-light: oklch(0% 0 0deg),
-    light-on-surface: oklch(90.67% 0 0deg),
-
-    // Dark
-    dark-subtle: oklch(81.41% 0 0deg),
-    dark-subtle-hover: oklch(74.76% 0 0deg),
-    dark-subtle-active: oklch(68.3% 0 0deg),
-    dark: oklch(36% 0 0deg),
-    dark-hover: oklch(28.09% 0 0deg),
-    dark-active: oklch(23.93% 0 0deg),
-    dark-emphasis: oklch(51.03% 0 0deg),
-    dark-on-subtle: oklch(23.93% 0 0deg),
-    on-dark: oklch(100% 0 0deg),
-    dark-on-surface: oklch(19.13% 0 0deg),
-
     // Inverse
     inverse-subtle: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.15) c h)"},
     inverse-subtle-hover: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.079) c h)"},
@@ -332,38 +308,6 @@ $default-colors: (
 /// @prop {Color} error-on-subtle - The text color variable for content on error subtle.
 /// @prop {Color} on-error - The text color variable for content on error.
 /// @prop {Color} error-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {light}
-/// [light-subtle, light-subtle-hover, light-subtle-active,
-/// light, light-hover, light-active, light-emphasis,
-/// light-on-subtle, on-light, light-on-surface]
-/// The Light variable group.
-/// @prop {Color} light-subtle - The light subtle background color variable.
-/// @prop {Color} light-subtle-hover - The light subtle background color variable for the hover state.
-/// @prop {Color} light-subtle-active - The light subtle background color variable for the active state.
-/// @prop {Color} light - The light background color variable.
-/// @prop {Color} light-hover - The light background color variable for the hover state.
-/// @prop {Color} light-active - The light background color variable for the active state.
-/// @prop {Color} light-emphasis - The emphasized light color variable.
-/// @prop {Color} light-on-subtle - The text color variable for content on light subtle.
-/// @prop {Color} on-light - The text color variable for content on light.
-/// @prop {Color} light-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {dark}
-/// [dark-subtle, dark-subtle-hover, dark-subtle-active,
-/// dark, dark-hover, dark-active, dark-emphasis,
-/// dark-on-subtle, on-dark, dark-on-surface]
-/// The Dark variable group.
-/// @prop {Color} dark-subtle - The dark subtle background color variable.
-/// @prop {Color} dark-subtle-hover - The dark subtle background color variable for the hover state.
-/// @prop {Color} dark-subtle-active - The dark subtle background color variable for the active state.
-/// @prop {Color} dark - The dark background color variable.
-/// @prop {Color} dark-hover - The dark background color variable for the hover state.
-/// @prop {Color} dark-active - The dark background color variable for the active state.
-/// @prop {Color} dark-emphasis - The emphasized dark color variable.
-/// @prop {Color} dark-on-subtle - The text color variable for content on dark subtle.
-/// @prop {Color} on-dark - The text color variable for content on dark.
-/// @prop {Color} dark-on-surface - The text color variable for content on surface.
 ///
 /// @subgroup {inverse}
 /// [inverse-subtle, inverse-subtle-hover, inverse-subtle-active,

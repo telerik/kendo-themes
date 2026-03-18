@@ -13,9 +13,7 @@ const states = [];
 const options = {
     themeColor: [
         ThemeColor.undefined,
-        ThemeColor.primary,
-        ThemeColor.light,
-        ThemeColor.dark
+        ThemeColor.primary
     ],
 };
 

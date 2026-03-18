@@ -4,19 +4,19 @@ export function BackdropBlurApplyingUtils() {
     return (
         <>
             <div className="k-d-flex k-flex-col k-align-items-center k-gap-5 k-mr-10">
-                <span className="k-font-size-md k-text-dark">k-backdrop-blur-sm</span>
+                <span className="k-font-size-md k-text-on-app-surface">k-backdrop-blur-sm</span>
                 <div className="k-p-8" style={{ background: `url(${backgroundBase64})` }}>
                     <div className="k-backdrop-blur-sm k-w-24 k-h-24 k-p-5"></div>
                 </div>
             </div>
             <div className="k-d-flex k-flex-col k-align-items-center k-gap-5 k-mr-10">
-                <span className="k-font-size-md k-text-dark">k-backdrop-blur</span>
+                <span className="k-font-size-md k-text-on-app-surface">k-backdrop-blur</span>
                 <div className="k-p-8" style={{ background: `url(${backgroundBase64})` }}>
                     <div className="k-backdrop-blur k-w-24 k-h-24 k-p-5"></div>
                 </div>
             </div>
             <div className="k-d-flex k-flex-col k-align-items-center k-gap-5">
-                <span className="k-font-size-md k-text-dark">k-backdrop-blur-lg</span>
+                <span className="k-font-size-md k-text-on-app-surface">k-backdrop-blur-lg</span>
                 <div className="k-p-8" style={{ background: `url(${backgroundBase64})` }}>
                     <div className="k-backdrop-blur-lg k-w-24 k-h-24 k-p-5"></div>
                 </div>
