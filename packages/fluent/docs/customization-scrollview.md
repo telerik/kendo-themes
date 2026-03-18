@@ -278,23 +278,13 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-pager-light-bg</td>
+    <td>$kendo-scrollview-pager-inverse-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scrollview-pager-light-bg, rgba( $kendo-color-white, .4 ) )</code></td>
-    <td><code>var(--kendo-scrollview-pager-light-bg, rgba(255, 255, 255, 0.4))</code></td>
+    <td><code>var( --kendo-scrollview-pager-inverse-bg, color-mix(in srgb, k-color(inverse) 40%, transparent) )</code></td>
+    <td><code>var(--kendo-scrollview-pager-inverse-bg, color-mix(in srgb, var(--kendo-color-inverse, #242424) 40%, transparent))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in light mode.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pager-dark-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pager-dark-bg, rgba( $kendo-color-black, .4 ) )</code></td>
-    <td><code>var(--kendo-scrollview-pager-dark-bg, rgba(0, 0, 0, 0.4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in dark mode.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in inverse mode.</div></div>
     </td>
 </tr>
 <tr>

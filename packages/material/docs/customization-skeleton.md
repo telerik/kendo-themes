@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-wave-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(dark) 4%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-dark, #322F35) 4%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(inverse) 4%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-inverse, #322F35) 4%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton wave animation.</div></div>

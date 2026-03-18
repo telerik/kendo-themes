@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the dark overlay.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Overlay.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,14 +54,14 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-overlay-opacity, 0.4)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of the overlay.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Overlay.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-overlay-theme-colors</td>
-    <td>List</td>
-    <td><code>("dark", "light", "inverse")</code></td>
-    <td><code>("dark", "light", "inverse")</code></td>
+    <td>String</td>
+    <td><code>("inverse")</code></td>
+    <td><code>"inverse"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Overlay.</div></div>

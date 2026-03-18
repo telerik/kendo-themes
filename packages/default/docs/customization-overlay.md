@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-overlay-theme-colors</td>
-    <td>List</td>
-    <td><code>("dark", "light", "inverse")</code></td>
-    <td><code>("dark", "light", "inverse")</code></td>
+    <td>String</td>
+    <td><code>("inverse")</code></td>
+    <td><code>"inverse"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Overlay.</div></div>

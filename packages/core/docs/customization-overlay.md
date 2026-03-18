@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-overlay-theme-colors</td>
     <td></td>
-    <td><code>("dark", "light", "inverse")</code></td>
+    <td><code>("inverse")</code></td>
     <td></td>
 </tr>
 <tr>

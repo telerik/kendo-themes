@@ -45,7 +45,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-theme-colors</td>
     <td></td>
-    <td><code>("primary", "light", "dark")</code></td>
+    <td><code>("primary")</code></td>
     <td></td>
 </tr>
 <tr>

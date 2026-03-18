@@ -2308,7 +2308,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-appbar-theme-colors</td>
     <td></td>
-    <td><code>("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2352,7 +2352,7 @@ The following table lists the available variables for customizing the Theme Core
 <tr>
     <td>$kendo-avatar-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2414,7 +2414,7 @@ The following table lists the available variables for customizing the Theme Core
 <tr>
     <td>$kendo-badge-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2564,7 +2564,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-bottom-navigation-theme-colors</td>
     <td></td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2649,7 +2649,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-button-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2760,7 +2760,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-card-theme-colors</td>
     <td></td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3264,7 +3264,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-dialog-theme-colors</td>
     <td></td>
-    <td><code>("primary", "light", "dark")</code></td>
+    <td><code>("primary")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3324,7 +3324,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-fab-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3634,7 +3634,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-loader-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3722,7 +3722,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-message-box-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3883,7 +3883,7 @@ The following table lists the available variables for customizing the Theme Core
 <tbody><tr>
     <td>$kendo-overlay-theme-colors</td>
     <td></td>
-    <td><code>("dark", "light", "inverse")</code></td>
+    <td><code>("inverse")</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3966,7 +3966,7 @@ The following table lists the available variables for customizing the Theme Core
     <td><ul><li>1: #fafafa</li><li>2: #f5f5f5</li><li>3: #ebebeb</li><li>4: #e0e0e0</li><li>5: #d6d6d6</li><li>6: #c2c2c2</li><li>7: #adadad</li><li>8: #999999</li><li>9: #808080</li><li>10: #666666</li><li>11: #525252</li><li>12: #3d3d3d</li><li>13: #292929</li><li>14: #1f1f1f</li><li>15: #141414</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, and Inverse variable groups.</div></div>
     </td>
 </tr>
 <tr>
@@ -5080,7 +5080,7 @@ The following table lists the available variables for customizing the Theme Core
 <tr>
     <td>$kendo-window-theme-colors</td>
     <td></td>
-    <td><code>("primary", "light", "dark")</code></td>
+    <td><code>("primary")</code></td>
     <td></td>
 </tr>
 <tr>

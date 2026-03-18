@@ -1094,8 +1094,8 @@ The following table lists the available variables for customizing the Classic th
 <tbody><tr>
     <td>$kendo-appbar-default-theme-color</td>
     <td>String</td>
-    <td><code>"light"</code></td>
-    <td><code>"light"</code></td>
+    <td><code>"base"</code></td>
+    <td><code>"base"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the AppBar.</div></div>
@@ -1202,46 +1202,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-appbar-light-bg</td>
-    <td>String</td>
-    <td><code>k-color(light)</code></td>
-    <td><code>var(--kendo-color-light, #ebebeb)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AppBar based on light theme color.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-light-text</td>
-    <td>String</td>
-    <td><code>k-color(on-light)</code></td>
-    <td><code>var(--kendo-color-on-light, #000000)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar based on light theme color.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-dark-bg</td>
-    <td>String</td>
-    <td><code>k-color(dark)</code></td>
-    <td><code>var(--kendo-color-dark, #404040)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AppBar based on dark theme color.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-dark-text</td>
-    <td>String</td>
-    <td><code>k-color(on-dark)</code></td>
-    <td><code>var(--kendo-color-on-dark, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar based on dark theme colorr.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-appbar-box-shadow</td>
     <td>String</td>
     <td><code>k-elevation(4)</code></td>
@@ -1264,8 +1224,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-appbar-theme-colors</td>
     <td>List</td>
-    <td><code>("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the AppBar.</div></div>
@@ -1428,8 +1388,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-avatar-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Avatar.</div></div>
@@ -1720,8 +1680,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-badge-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Badge.</div></div>
@@ -2080,8 +2040,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-bottom-navigation-theme-colors</td>
     <td>List</td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the BottomNavigation.</div></div>
@@ -3725,8 +3685,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-button-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Button.</div></div>
@@ -5496,8 +5456,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-card-theme-colors</td>
     <td>List</td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Card.</div></div>
@@ -8456,7 +8416,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><ul><li>app-surface: #ffffff</li><li>on-app-surface: #272727</li><li>subtle: #666666</li><li>surface: #f0f0f0</li><li>surface-alt: #ffffff</li><li>border: #cacaca</li><li>border-alt: #b6b6b6</li><li>base-subtle: #f0f0f0</li><li>base-subtle-hover: #ebebeb</li><li>base-subtle-active: #dddddd</li><li>base: #ebebeb</li><li>base-hover: #dddddd</li><li>base-active: #d6d6d6</li><li>base-emphasis: #cacaca</li><li>base-on-subtle: #272727</li><li>on-base: #272727</li><li>base-on-surface: #272727</li><li>primary-subtle: #fff2eb</li><li>primary-subtle-hover: #ffe5d6</li><li>primary-subtle-active: #ffd8c2</li><li>primary: #f35800</li><li>primary-hover: #e05100</li><li>primary-active: #cc4a00</li><li>primary-emphasis: #ff8b47</li><li>primary-on-subtle: #3d1600</li><li>on-primary: #ffffff</li><li>primary-on-surface: #f35800</li><li>secondary-subtle: #cacaca</li><li>secondary-subtle-hover: #b6b6b6</li><li>secondary-subtle-active: #a3a3a3</li><li>secondary: #b6b6b6</li><li>secondary-hover: #a3a3a3</li><li>secondary-active: #8f8f8f</li><li>secondary-emphasis: #7a7a7a</li><li>secondary-on-subtle: #272727</li><li>on-secondary: #000000</li><li>secondary-on-surface: #8f8f8f</li><li>tertiary-subtle: #9cdffe</li><li>tertiary-subtle-hover: #72d1fe</li><li>tertiary-subtle-active: #49c4fd</li><li>tertiary: #03a9f4</li><li>tertiary-hover: #039be0</li><li>tertiary-active: #038ecd</li><li>tertiary-emphasis: #2cbbfd</li><li>tertiary-on-subtle: #01364e</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #0273a6</li><li>info-subtle: #cce5f3</li><li>info-subtle-hover: #a6d1ea</li><li>info-subtle-active: #6ab2dc</li><li>info: #007bc3</li><li>info-hover: #0071b3</li><li>info-active: #0067a4</li><li>info-emphasis: #409cd2</li><li>info-on-subtle: #002b44</li><li>on-info: #ffffff</li><li>info-on-surface: #005485</li><li>success-subtle: #bbdfc1</li><li>success-subtle-hover: #9ed1a6</li><li>success-subtle-active: #82c48c</li><li>success: #3ea44e</li><li>success-hover: #399748</li><li>success-active: #348a42</li><li>success-emphasis: #6ebb7a</li><li>success-on-subtle: #16391b</li><li>on-success: #ffffff</li><li>success-on-surface: #2a7035</li><li>warning-subtle: #ffdead</li><li>warning-subtle-hover: #ffd699</li><li>warning-subtle-active: #ffc670</li><li>warning: #ffa41f</li><li>warning-hover: #ff9800</li><li>warning-active: #eb8c00</li><li>warning-emphasis: #ffb240</li><li>warning-on-subtle: #593500</li><li>on-warning: #000000</li><li>warning-on-surface: #ffa41f</li><li>error-subtle: #f4c3b8</li><li>error-subtle-hover: #f2b4a6</li><li>error-subtle-active: #ec8e79</li><li>error: #d92800</li><li>error-hover: #c82500</li><li>error-active: #b62200</li><li>error-emphasis: #e35e40</li><li>error-on-subtle: #4c0e00</li><li>on-error: #ffffff</li><li>error-on-surface: #941b00</li><li>light-subtle: #f0f0f0</li><li>light-subtle-hover: #ebebeb</li><li>light-subtle-active: #dddddd</li><li>light: #ebebeb</li><li>light-hover: #dddddd</li><li>light-active: #d6d6d6</li><li>light-emphasis: #cacaca</li><li>light-on-subtle: #272727</li><li>on-light: #000000</li><li>light-on-surface: #ebebeb</li><li>dark-subtle: #cacaca</li><li>dark-subtle-hover: #b6b6b6</li><li>dark-subtle-active: #a3a3a3</li><li>dark: #404040</li><li>dark-hover: #333333</li><li>dark-active: #272727</li><li>dark-emphasis: #7a7a7a</li><li>dark-on-subtle: #000000</li><li>on-dark: #ffffff</li><li>dark-on-surface: #333333</li><li>inverse-subtle: #cacaca</li><li>inverse-subtle-hover: #b6b6b6</li><li>inverse-subtle-active: #a3a3a3</li><li>inverse: #404040</li><li>inverse-hover: #333333</li><li>inverse-active: #272727</li><li>inverse-emphasis: #7a7a7a</li><li>inverse-on-subtle: #000000</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #333333</li><li>series-a: #ff6358</li><li>series-a-bold: #bf4a42</li><li>series-a-bolder: #80322c</li><li>series-a-subtle: #ffb1ac</li><li>series-a-subtler: #ff8a82</li><li>series-b: #ffd246</li><li>series-b-bold: #bf9d35</li><li>series-b-bolder: #806923</li><li>series-b-subtle: #ffe9a2</li><li>series-b-subtler: #ffdd74</li><li>series-c: #78d237</li><li>series-c-bold: #5a9d29</li><li>series-c-bolder: #3c691c</li><li>series-c-subtle: #bbe99b</li><li>series-c-subtler: #9add69</li><li>series-d: #28b4c8</li><li>series-d-bold: #1e8796</li><li>series-d-bolder: #145a64</li><li>series-d-subtle: #93d9e3</li><li>series-d-subtler: #5ec7d6</li><li>series-e: #2d73f5</li><li>series-e-bold: #2256b8</li><li>series-e-bolder: #173a7b</li><li>series-e-subtle: #96b9fa</li><li>series-e-subtler: #6296f7</li><li>series-f: #9d40b0</li><li>series-f-bold: #80358e</li><li>series-f-bolder: #55235f</li><li>series-f-subtle: #d5a2df</li><li>series-f-subtler: #bf74ce</li></ul></td>
+    <td><ul><li>app-surface: #ffffff</li><li>on-app-surface: #272727</li><li>subtle: #666666</li><li>surface: #f0f0f0</li><li>surface-alt: #ffffff</li><li>border: #cacaca</li><li>border-alt: #b6b6b6</li><li>base-subtle: #f0f0f0</li><li>base-subtle-hover: #ebebeb</li><li>base-subtle-active: #dddddd</li><li>base: #ebebeb</li><li>base-hover: #dddddd</li><li>base-active: #d6d6d6</li><li>base-emphasis: #cacaca</li><li>base-on-subtle: #272727</li><li>on-base: #272727</li><li>base-on-surface: #272727</li><li>primary-subtle: #fff2eb</li><li>primary-subtle-hover: #ffe5d6</li><li>primary-subtle-active: #ffd8c2</li><li>primary: #f35800</li><li>primary-hover: #e05100</li><li>primary-active: #cc4a00</li><li>primary-emphasis: #ff8b47</li><li>primary-on-subtle: #3d1600</li><li>on-primary: #ffffff</li><li>primary-on-surface: #f35800</li><li>secondary-subtle: #cacaca</li><li>secondary-subtle-hover: #b6b6b6</li><li>secondary-subtle-active: #a3a3a3</li><li>secondary: #b6b6b6</li><li>secondary-hover: #a3a3a3</li><li>secondary-active: #8f8f8f</li><li>secondary-emphasis: #7a7a7a</li><li>secondary-on-subtle: #272727</li><li>on-secondary: #000000</li><li>secondary-on-surface: #8f8f8f</li><li>tertiary-subtle: #9cdffe</li><li>tertiary-subtle-hover: #72d1fe</li><li>tertiary-subtle-active: #49c4fd</li><li>tertiary: #03a9f4</li><li>tertiary-hover: #039be0</li><li>tertiary-active: #038ecd</li><li>tertiary-emphasis: #2cbbfd</li><li>tertiary-on-subtle: #01364e</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #0273a6</li><li>info-subtle: #cce5f3</li><li>info-subtle-hover: #a6d1ea</li><li>info-subtle-active: #6ab2dc</li><li>info: #007bc3</li><li>info-hover: #0071b3</li><li>info-active: #0067a4</li><li>info-emphasis: #409cd2</li><li>info-on-subtle: #002b44</li><li>on-info: #ffffff</li><li>info-on-surface: #005485</li><li>success-subtle: #bbdfc1</li><li>success-subtle-hover: #9ed1a6</li><li>success-subtle-active: #82c48c</li><li>success: #3ea44e</li><li>success-hover: #399748</li><li>success-active: #348a42</li><li>success-emphasis: #6ebb7a</li><li>success-on-subtle: #16391b</li><li>on-success: #ffffff</li><li>success-on-surface: #2a7035</li><li>warning-subtle: #ffdead</li><li>warning-subtle-hover: #ffd699</li><li>warning-subtle-active: #ffc670</li><li>warning: #ffa41f</li><li>warning-hover: #ff9800</li><li>warning-active: #eb8c00</li><li>warning-emphasis: #ffb240</li><li>warning-on-subtle: #593500</li><li>on-warning: #000000</li><li>warning-on-surface: #ffa41f</li><li>error-subtle: #f4c3b8</li><li>error-subtle-hover: #f2b4a6</li><li>error-subtle-active: #ec8e79</li><li>error: #d92800</li><li>error-hover: #c82500</li><li>error-active: #b62200</li><li>error-emphasis: #e35e40</li><li>error-on-subtle: #4c0e00</li><li>on-error: #ffffff</li><li>error-on-surface: #941b00</li><li>inverse-subtle: #cacaca</li><li>inverse-subtle-hover: #b6b6b6</li><li>inverse-subtle-active: #a3a3a3</li><li>inverse: #404040</li><li>inverse-hover: #333333</li><li>inverse-active: #272727</li><li>inverse-emphasis: #7a7a7a</li><li>inverse-on-subtle: #000000</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #333333</li><li>series-a: #ff6358</li><li>series-a-bold: #bf4a42</li><li>series-a-bolder: #80322c</li><li>series-a-subtle: #ffb1ac</li><li>series-a-subtler: #ff8a82</li><li>series-b: #ffd246</li><li>series-b-bold: #bf9d35</li><li>series-b-bolder: #806923</li><li>series-b-subtle: #ffe9a2</li><li>series-b-subtler: #ffdd74</li><li>series-c: #78d237</li><li>series-c-bold: #5a9d29</li><li>series-c-bolder: #3c691c</li><li>series-c-subtle: #bbe99b</li><li>series-c-subtler: #9add69</li><li>series-d: #28b4c8</li><li>series-d-bold: #1e8796</li><li>series-d-bolder: #145a64</li><li>series-d-subtle: #93d9e3</li><li>series-d-subtler: #5ec7d6</li><li>series-e: #2d73f5</li><li>series-e-bold: #2256b8</li><li>series-e-bolder: #173a7b</li><li>series-e-subtle: #96b9fa</li><li>series-e-subtler: #6296f7</li><li>series-f: #9d40b0</li><li>series-f-bold: #80358e</li><li>series-f-bolder: #55235f</li><li>series-f-subtle: #d5a2df</li><li>series-f-subtler: #bf74ce</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -8516,16 +8476,6 @@ The following table lists the available variables for customizing the Classic th
     <td>error</td>
     <td colspan="2"> error-subtle, error-subtle-hover, error-subtle-active, error, error-hover, error-active, error-emphasis, error-on-subtle, on-error, error-on-surface</td>
     <td>The Error variable group.</td>
-</tr>
-<tr>
-    <td>light</td>
-    <td colspan="2"> light-subtle, light-subtle-hover, light-subtle-active, light, light-hover, light-active, light-emphasis, light-on-subtle, on-light, light-on-surface</td>
-    <td>The Light variable group.</td>
-</tr>
-<tr>
-    <td>dark</td>
-    <td colspan="2"> dark-subtle, dark-subtle-hover, dark-subtle-active, dark, dark-hover, dark-active, dark-emphasis, dark-on-subtle, on-dark, dark-on-surface</td>
-    <td>The Dark variable group.</td>
 </tr>
 <tr>
     <td>inverse</td>
@@ -9005,106 +8955,6 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>Color</td>
     <td>error-on-surface</td>
-    <td colspan="2">The text color variable for content on surface.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-subtle</td>
-    <td colspan="2">The light subtle background color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-subtle-hover</td>
-    <td colspan="2">The light subtle background color variable for the hover state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-subtle-active</td>
-    <td colspan="2">The light subtle background color variable for the active state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light</td>
-    <td colspan="2">The light background color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-hover</td>
-    <td colspan="2">The light background color variable for the hover state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-active</td>
-    <td colspan="2">The light background color variable for the active state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-emphasis</td>
-    <td colspan="2">The emphasized light color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-on-subtle</td>
-    <td colspan="2">The text color variable for content on light subtle.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>on-light</td>
-    <td colspan="2">The text color variable for content on light.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-on-surface</td>
-    <td colspan="2">The text color variable for content on surface.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-subtle</td>
-    <td colspan="2">The dark subtle background color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-subtle-hover</td>
-    <td colspan="2">The dark subtle background color variable for the hover state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-subtle-active</td>
-    <td colspan="2">The dark subtle background color variable for the active state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark</td>
-    <td colspan="2">The dark background color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-hover</td>
-    <td colspan="2">The dark background color variable for the hover state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-active</td>
-    <td colspan="2">The dark background color variable for the active state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-emphasis</td>
-    <td colspan="2">The emphasized dark color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-on-subtle</td>
-    <td colspan="2">The text color variable for content on dark subtle.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>on-dark</td>
-    <td colspan="2">The text color variable for content on dark.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-on-surface</td>
     <td colspan="2">The text color variable for content on surface.</td>
 </tr>
 <tr>
@@ -11404,9 +11254,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-dialog-theme-colors</td>
-    <td>List</td>
-    <td><code>("primary", "light", "dark")</code></td>
-    <td><code>("primary", "light", "dark")</code></td>
+    <td>String</td>
+    <td><code>("primary")</code></td>
+    <td><code>"primary"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Dialog.</div></div>
@@ -14545,8 +14395,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-fab-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the FloatingActionButton.</div></div>
@@ -20665,8 +20515,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-loader-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Loader.</div></div>
@@ -22063,8 +21913,8 @@ The following table lists the available variables for customizing the Classic th
 <tbody><tr>
     <td>$kendo-message-box-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the MessageBox.</div></div>
@@ -22518,8 +22368,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-notification-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Notification.</div></div>
@@ -22529,7 +22379,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-notification-theme</td>
     <td>Map</td>
     <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-inverse, #404040)","border":"var(--kendo-color-inverse, #404040)"</li><li>light: "color":"var(--kendo-color-on-light, #000000)","background-color":"var(--kendo-color-light, #ebebeb)","border":"var(--kendo-color-light, #ebebeb)"</li><li>dark: "color":"var(--kendo-color-on-dark, #ffffff)","background-color":"var(--kendo-color-dark, #404040)","border":"var(--kendo-color-dark, #404040)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #d92800)","border":"var(--kendo-color-error, #d92800)"</li><li>warning: "color":"var(--kendo-color-on-warning, #000000)","background-color":"var(--kendo-color-warning, #ffa41f)","border":"var(--kendo-color-warning, #ffa41f)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #3ea44e)","border":"var(--kendo-color-success, #3ea44e)"</li><li>info: "color":"var(--kendo-color-on-info, #ffffff)","background-color":"var(--kendo-color-info, #007bc3)","border":"var(--kendo-color-info, #007bc3)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #03a9f4)","border":"var(--kendo-color-tertiary, #03a9f4)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #000000)","background-color":"var(--kendo-color-secondary, #b6b6b6)","border":"var(--kendo-color-secondary, #b6b6b6)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #f35800)","border":"var(--kendo-color-primary, #f35800)"</li><li>base: "color":"var(--kendo-color-on-base, #272727)","background-color":"var(--kendo-color-base, #ebebeb)","border":"var(--kendo-color-base, #ebebeb)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-inverse, #404040)","border":"var(--kendo-color-inverse, #404040)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #d92800)","border":"var(--kendo-color-error, #d92800)"</li><li>warning: "color":"var(--kendo-color-on-warning, #000000)","background-color":"var(--kendo-color-warning, #ffa41f)","border":"var(--kendo-color-warning, #ffa41f)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #3ea44e)","border":"var(--kendo-color-success, #3ea44e)"</li><li>info: "color":"var(--kendo-color-on-info, #ffffff)","background-color":"var(--kendo-color-info, #007bc3)","border":"var(--kendo-color-info, #007bc3)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #03a9f4)","border":"var(--kendo-color-tertiary, #03a9f4)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #000000)","background-color":"var(--kendo-color-secondary, #b6b6b6)","border":"var(--kendo-color-secondary, #b6b6b6)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #f35800)","border":"var(--kendo-color-primary, #f35800)"</li><li>base: "color":"var(--kendo-color-on-base, #272727)","background-color":"var(--kendo-color-base, #ebebeb)","border":"var(--kendo-color-base, #ebebeb)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>
@@ -23173,9 +23023,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-overlay-theme-colors</td>
-    <td>List</td>
-    <td><code>("dark", "light", "inverse")</code></td>
-    <td><code>("dark", "light", "inverse")</code></td>
+    <td>String</td>
+    <td><code>("inverse")</code></td>
+    <td><code>"inverse"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Overlay.</div></div>
@@ -23937,7 +23787,7 @@ The following table lists the available variables for customizing the Classic th
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Ash Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Ash Gray Palette provides colors to the Base, Secondary and Inverse variable groups.</div></div>
     </td>
 </tr>
 <tr>
@@ -24067,7 +23917,7 @@ The following table lists the available variables for customizing the Classic th
     <td><ul><li>1: #fafafa</li><li>2: #f5f5f5</li><li>3: #ebebeb</li><li>4: #e0e0e0</li><li>5: #d6d6d6</li><li>6: #c2c2c2</li><li>7: #adadad</li><li>8: #999999</li><li>9: #808080</li><li>10: #666666</li><li>11: #525252</li><li>12: #3d3d3d</li><li>13: #292929</li><li>14: #1f1f1f</li><li>15: #141414</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, and Inverse variable groups.</div></div>
     </td>
 </tr>
 <tr>
@@ -29007,23 +28857,13 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-light-bg</td>
-    <td>Color</td>
-    <td><code>rgba( white, .4 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.4)"></span><code>rgba(255, 255, 255, 0.4)</code></td>
+    <td>$kendo-scrollview-inverse-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(inverse) 40%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-inverse, #404040) 40%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in light mode.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-dark-bg</td>
-    <td>Color</td>
-    <td><code>rgba( black, .4 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.4)"></span><code>rgba(0, 0, 0, 0.4)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in dark mode.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in inverse mode.</div></div>
     </td>
 </tr>
 <tr>
@@ -36891,8 +36731,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-tooltip-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Tooltip.</div></div>
@@ -36902,7 +36742,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-tooltip-theme</td>
     <td>Map</td>
     <td><code>tooltip-theme( $kendo-tooltip-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-inverse, #404040)","border":"var(--kendo-color-inverse, #404040)"</li><li>light: "color":"var(--kendo-color-on-light, #000000)","background-color":"var(--kendo-color-light, #ebebeb)","border":"var(--kendo-color-light, #ebebeb)"</li><li>dark: "color":"var(--kendo-color-on-dark, #ffffff)","background-color":"var(--kendo-color-dark, #404040)","border":"var(--kendo-color-dark, #404040)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #d92800)","border":"var(--kendo-color-error, #d92800)"</li><li>warning: "color":"var(--kendo-color-on-warning, #000000)","background-color":"var(--kendo-color-warning, #ffa41f)","border":"var(--kendo-color-warning, #ffa41f)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #3ea44e)","border":"var(--kendo-color-success, #3ea44e)"</li><li>info: "color":"var(--kendo-color-on-info, #ffffff)","background-color":"var(--kendo-color-info, #007bc3)","border":"var(--kendo-color-info, #007bc3)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #03a9f4)","border":"var(--kendo-color-tertiary, #03a9f4)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #000000)","background-color":"var(--kendo-color-secondary, #b6b6b6)","border":"var(--kendo-color-secondary, #b6b6b6)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #f35800)","border":"var(--kendo-color-primary, #f35800)"</li><li>base: "color":"var(--kendo-color-on-base, #272727)","background-color":"var(--kendo-color-base, #ebebeb)","border":"var(--kendo-color-base, #ebebeb)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-inverse, #404040)","border":"var(--kendo-color-inverse, #404040)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #d92800)","border":"var(--kendo-color-error, #d92800)"</li><li>warning: "color":"var(--kendo-color-on-warning, #000000)","background-color":"var(--kendo-color-warning, #ffa41f)","border":"var(--kendo-color-warning, #ffa41f)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #3ea44e)","border":"var(--kendo-color-success, #3ea44e)"</li><li>info: "color":"var(--kendo-color-on-info, #ffffff)","background-color":"var(--kendo-color-info, #007bc3)","border":"var(--kendo-color-info, #007bc3)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #03a9f4)","border":"var(--kendo-color-tertiary, #03a9f4)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #000000)","background-color":"var(--kendo-color-secondary, #b6b6b6)","border":"var(--kendo-color-secondary, #b6b6b6)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #f35800)","border":"var(--kendo-color-primary, #f35800)"</li><li>base: "color":"var(--kendo-color-on-base, #272727)","background-color":"var(--kendo-color-base, #ebebeb)","border":"var(--kendo-color-base, #ebebeb)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Tooltip.</div></div>
@@ -39478,9 +39318,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-window-theme-colors</td>
-    <td>List</td>
-    <td><code>("primary", "light", "dark")</code></td>
-    <td><code>("primary", "light", "dark")</code></td>
+    <td>String</td>
+    <td><code>("primary")</code></td>
+    <td><code>"primary"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Window.</div></div>
