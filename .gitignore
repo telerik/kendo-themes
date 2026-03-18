@@ -22,5 +22,7 @@ debug.log
 .nx/cache
 .nx/workspace-data
 
-# Generated a11y test reports (not tracked; screenshots in tests/_output/ ARE tracked)
-tests/_output/*.json
+# Generated a11y and contrast test reports (tracked for VPAT generation)
+# tests/_output/*.json — these are now tracked:
+!tests/_output/a11y-unified-report.json
+!tests/_output/contrast-report.json

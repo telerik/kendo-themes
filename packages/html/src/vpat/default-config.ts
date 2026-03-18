@@ -1,0 +1,103 @@
+import type { VpatConfig } from './types';
+
+/**
+ * Default VPAT configuration for Kendo UI themes.
+ * This is the baseline config — consumers can override any section via VpatOverrides.
+ */
+export const DEFAULT_VPAT_CONFIG: VpatConfig = {
+    product: {
+        name: 'Kendo UI',
+        version: 'auto',
+        description: 'Kendo UI is a library of 110+ fully native components for building high-quality modern web UI.',
+        contactInfo: 'support@telerik.com',
+        reportDate: 'auto',
+        evaluationMethods: 'Testing was performed using dequelabs/axe-core (static HTML analysis), custom ARIA attribute validation (JSDOM), contrast ratio analysis, and NVDA screen reader verification. Automated tests run against the Default Ocean Blue A11y theme swatch.'
+    },
+
+    generalStatements: {
+        colorContrast: 'Color contrast compliance (WCAG 1.4.3, 1.4.6, 1.4.11) is achievable with the Default Ocean Blue A11y theme swatch or any custom theme swatch that provides the minimum required color contrast ratios. The contrast test suite validates all components against WCAG AA and AAA contrast requirements.',
+        targetSize: 'Components support configurable size options (small, medium, large). The default \'medium\' size meets WCAG 2.5.8 (Target Size) requirements for most components. Some compact interactive elements (e.g., small icon buttons, chip remove icons) may fall below the 24\u00d724px minimum at the \'small\' size option.',
+        keyboardNavigation: 'All interactive components provide full keyboard navigation. Complex components (Grid, TreeList, Scheduler, Spreadsheet) implement custom internal keyboard navigation that ensures all content is accessible via keyboard, even when scrollable regions are not directly in the tab sequence \u2014 maintaining a single tab-stop pattern for usability.',
+        ariaCompliance: 'All components implement required WAI-ARIA attributes without extra configuration. Some components provide optional parameters for additional ARIA attributes (e.g., aria-label, aria-describedby).'
+    },
+
+    specialConsiderations: [
+        'Components that represent or directly extend a native HTML element (e.g., Button, CheckBox, TextBox) do not require additional accessibility functionality to provide their respective level of compliance.',
+        'Components built using other fully accessible components and/or native HTML elements (e.g., Card, AppBar, Pager) achieve compliance through their building blocks.',
+        'Components that do not provide end-user interaction and serve only as visual representation (e.g., Icons, ProgressBars, Badges) are neither focusable nor navigable. Adding descriptive labels or WAI-ARIA attributes to such components is the developer\'s responsibility.',
+        'Assistive technologies treat components like the various Gauges as images. To make them accessible, add a descriptive label or alternative data representation.',
+        'Component templates introduce custom markup that may not be accessible. Test any modifications to ensure accessibility compliance.',
+        'The compliance levels are based on the default component configuration. Enabled features may affect compliance.'
+    ],
+
+    knownExceptions: [
+        {
+            wcagCriteria: '2.5.8',
+            criteriaName: 'Target Size (Minimum)',
+            wcagLevel: 'AA',
+            wcagUrl: 'https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html',
+            axeRuleId: 'target-size',
+            conformanceLevel: 'Partially Supports',
+            affectedComponents: ['SmartBox', 'Chip', 'MultiSelect', 'ColorPicker', 'DatePicker', 'TimePicker'],
+            explanation: 'Some compact interactive elements (icon buttons, chip remove icons, spinner arrows) may fall below the 24×24px minimum target size. Setting the "size" option to "large" for components that support it resolves most cases.'
+        },
+        {
+            wcagCriteria: '1.3.1',
+            criteriaName: 'Info and Relationships',
+            wcagLevel: 'A',
+            wcagUrl: 'https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html',
+            axeRuleId: 'aria-required-children',
+            conformanceLevel: 'Partially Supports',
+            affectedComponents: ['Grid', 'TreeList', 'Gantt'],
+            explanation: 'Complex data components use custom rendering patterns that may not include all required ARIA child roles in every configuration. The components provide correct semantic information through alternative ARIA patterns.'
+        },
+        {
+            wcagCriteria: '4.1.2',
+            criteriaName: 'Name, Role, Value',
+            wcagLevel: 'A',
+            wcagUrl: 'https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html',
+            axeRuleId: 'nested-interactive',
+            conformanceLevel: 'Partially Supports',
+            affectedComponents: ['Grid', 'TreeList', 'Scheduler'],
+            explanation: 'Some complex components contain nested interactive elements (e.g., buttons within clickable rows) which is necessary for their functional requirements. Keyboard navigation handles these elements correctly despite the nesting.'
+        },
+        {
+            wcagCriteria: '2.1.1',
+            criteriaName: 'Keyboard',
+            wcagLevel: 'A',
+            wcagUrl: 'https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html',
+            axeRuleId: 'scrollable-region-focusable',
+            conformanceLevel: 'Partially Supports',
+            affectedComponents: ['Grid', 'TreeList', 'Gantt', 'Spreadsheet'],
+            explanation: 'Scrollable content regions in data-intensive components are not directly focusable tab-stops. These components implement custom internal keyboard navigation that ensures all content is scrollable and accessible via keyboard, maintaining a single tab-stop pattern for improved usability.'
+        },
+        {
+            wcagCriteria: '1.1.1',
+            criteriaName: 'Non-text Content',
+            wcagLevel: 'A',
+            wcagUrl: 'https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html',
+            axeRuleId: null,
+            conformanceLevel: 'Partially Supports',
+            affectedComponents: ['Map', 'Gauge'],
+            explanation: 'Map and Gauge components render as canvas/SVG elements without keyboard support. Alternative data representations (e.g., data tables, labels) should be provided by the developer.'
+        }
+    ],
+
+    contrastExclusions: {
+        note: 'The following components have known contrast limitations that are documented but accepted. Use the Default Ocean Blue A11y swatch for optimal contrast compliance.',
+        excludedPages: [
+            { component: 'BottomNavigation', reason: 'Solid and flat fill modes do not meet text contrast ratio for all item states' },
+            { component: 'Chip', reason: 'Colored solid chips may not meet minimum contrast requirements for text in all color variations' },
+            { component: 'ButtonGroup', reason: 'Test page contains customizations that affect contrast' },
+            { component: 'TreeMap', reason: 'Segment colors are data-driven and may not ensure contrast' },
+            { component: 'Loader', reason: 'Warning theme color and no-panel overlay may not meet text contrast requirements' }
+        ],
+        excludedFocusIndicators: [
+            'TimeList wrapper', 'Chip outline', 'ColorPalette tile',
+            'BottomNavigation item', 'Button outline', 'Button warning',
+            'FloatingActionButton warning', 'Stepper last step', 'QuickReply'
+        ]
+    },
+
+    additionalProductNotes: {}
+};

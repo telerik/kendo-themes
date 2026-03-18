@@ -74,9 +74,24 @@ jobs:
 
       - name: Test contrast (${{ matrix.chunk }} of ${{ matrix.max-chunks }})
         run: xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test:contrast
+        continue-on-error: true
+        id: contrast-tests
         env:
           MAX_CHUNKS: ${{ inputs.max-chunks }}
           CURRENT_CHUNK: ${{ matrix.chunk }}
+
+      - name: Upload contrast report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: contrast-report-chunk-${{ matrix.chunk }}
+          path: tests/_output/contrast-report.json
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Check for failures
+        if: steps.contrast-tests.outcome == 'failure'
+        run: exit 1
 
       - name: Done
         run: echo "Done!"

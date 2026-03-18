@@ -191,9 +191,32 @@ jobs:
       - name: Done
         run: echo "Done!"
 
+  check-a11y-paths:
+    name: Check A11y-relevant changes
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check.outputs.has_changes }}
+    steps:
+      - name: Check for HTML spec changes via GitHub API
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          FILES=$(gh api repos/${{ github.repository }}/compare/${{ github.event.repository.default_branch }}...${{ github.sha }} \
+            --jq '.files[].filename' 2>/dev/null || echo "")
+          MATCH=$(echo "$FILES" | grep -E '^(packages/html/src/|aria/|scripts/test-a11y)' | head -1)
+          if [ -n "$MATCH" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "A11y-relevant files changed — tests will run."
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No a11y-relevant changes — skipping tests."
+          fi
+
   a11y-specs:
     name: A11y Specs
-    needs: [ compile-themes ]
+    needs: [ compile-themes, check-a11y-paths ]
+    if: ${{ needs.check-a11y-paths.outputs.has_changes == 'true' }}
     uses: ./.github/workflows/_test-a11y-specs.yml
 
   ci-a11y-specs:

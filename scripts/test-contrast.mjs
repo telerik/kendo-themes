@@ -3,6 +3,12 @@ import { Browser, By } from '@progress/kendo-e2e';
 import AxeBuilder from '@axe-core/webdriverjs';
 import { createServer } from 'http-server';
 import { globSync } from 'glob';
+import { writeFileSync, mkdirSync, readFileSync } from 'fs';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const OUTPUT_PATH = './tests/_output';
 
 let ENV_MAX_CHUNKS = process.env.MAX_CHUNKS || 1;
 let ENV_CURRENT_CHUNK = (process.env.CURRENT_CHUNK || 1) - 1;
@@ -593,9 +599,41 @@ const getContrastViolations = async() => {
         focusContrast
     };
 
+    writeContrastReport(result);
     printViolations(result);
 
     return result;
+};
+
+const writeContrastReport = (result) => {
+    let version = 'latest';
+    try {
+        const lerna = JSON.parse(readFileSync(resolve(__dirname, '../lerna.json'), 'utf-8'));
+        version = lerna.version || version;
+    } catch { /* ignore */ }
+
+    const report = {
+        generatedAt: new Date().toISOString(),
+        version,
+        theme: THEME,
+        swatch: SWATCH,
+        summary: { ...count },
+        incompleteTypes: { ...incompleteTypes },
+        excludedPages: EXCLUDED_PAGES_TEXT,
+        excludedFocusElements: EXCLUDED_ELEMENTS_FOCUS,
+        violations: result.violations,
+        incomplete: result.incomplete,
+        aaa: result.aaa,
+        focusContrast: result.focusContrast
+    };
+
+    mkdirSync(OUTPUT_PATH, { recursive: true });
+    writeFileSync(
+        `${OUTPUT_PATH}/contrast-report.json`,
+        JSON.stringify(report, null, 2)
+    );
+    // eslint-disable-next-line no-console
+    console.log(`\n📄 Contrast report: ${OUTPUT_PATH}/contrast-report.json`);
 };
 
 const printViolations = (result) => {

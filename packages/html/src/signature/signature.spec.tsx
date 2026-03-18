@@ -76,7 +76,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                     ['k-signature-maximized']: maximized,
                 }
             )}>
-            <canvas className="k-signature-canvas"></canvas>
+            <canvas className="k-signature-canvas" role="img" aria-label="Signature" tabIndex={0}></canvas>
             <div
                 className={classNames(
                     'k-signature-actions',
@@ -92,6 +92,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                     rounded={rounded}
                     size={size}
                     fillMode="flat"
+                    aria-label="Maximize"
                 />
                 <Button
                     className={classNames(
@@ -103,6 +104,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                     rounded={rounded}
                     size={size}
                     fillMode="flat"
+                    aria-label="Minimize"
                 />
             </div>
             <div className="k-signature-line"></div>
@@ -120,6 +122,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                     rounded={props.rounded}
                     size={props.size}
                     fillMode="flat"
+                    aria-label="Clear"
                 />
             </div>
         </div>
@@ -132,5 +135,15 @@ Signature.className = SIGNATURE_CLASSNAME;
 Signature.defaultOptions = defaultOptions;
 Signature.moduleName = SIGNATURE_MODULE_NAME;
 Signature.folderName = SIGNATURE_FOLDER_NAME;
+
+Signature.ariaSpec = {
+    selector: '.k-signature',
+    rules: [
+        { selector: '.k-signature-canvas', attribute: 'role=img', usage: 'Sets canvas role to img.' },
+        { selector: '.k-signature-canvas', attribute: 'aria-label', usage: 'Announces the purpose of the Signature.' },
+        { selector: '.k-signature-action', attribute: 'nodeName=button', usage: 'Renders action as a button element.' },
+        { selector: '.k-signature-action', attribute: 'aria-label', usage: 'Announces the purpose of the action button.' },
+    ]
+};
 
 export default Signature;

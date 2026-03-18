@@ -23,7 +23,7 @@ import AxeBuilder from '@axe-core/webdriverjs';
 import { JSDOM } from 'jsdom';
 import { createServer } from 'http-server';
 import { globSync } from 'glob';
-import { createReadStream, readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { createReadStream, readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { execSync } from 'child_process';
 import { basename } from 'path';
 import { createRequire } from 'module';
@@ -668,8 +668,56 @@ async function main() {
         }
     }
 
-    writeFileSync(`${OUTPUT_PATH}/a11y-unified-report.json`, JSON.stringify({ summary, results, coverageGaps }, null, 2));
-    console.log(`\n📄 Report: ${OUTPUT_PATH}/a11y-unified-report.json`);
+    let version = 'latest';
+    try {
+        const lerna = JSON.parse(readFileSync('./lerna.json', 'utf-8'));
+        version = lerna.version || version;
+    } catch { /* ignore */ }
+
+    const reportPath = `${OUTPUT_PATH}/a11y-unified-report.json`;
+    const isPartialRun = componentFilters.length > 0 || affectedMode;
+
+    let finalResults = results;
+    let finalCoverageGaps = coverageGaps;
+
+    if (isPartialRun && existsSync(reportPath)) {
+        // Merge into existing report: replace only the tested components
+        const existing = JSON.parse(readFileSync(reportPath, 'utf-8'));
+        const testedComponents = new Set(Object.keys(byComponent));
+
+        // Keep existing results for components not in this run
+        const keptResults = (existing.results || []).filter(r => !testedComponents.has(r.component));
+        finalResults = [...keptResults, ...results];
+
+        // Merge coverage gaps the same way
+        const keptGaps = (existing.coverageGaps || []).filter(g => !testedComponents.has(g.component));
+        finalCoverageGaps = [...keptGaps, ...coverageGaps];
+
+        console.log(`\n🔀 Partial run — merged ${results.length} new result(s) into existing report (${keptResults.length} kept)`);
+    }
+
+    // Recalculate summary from the final merged results
+    const finalSummary = { templates: 0, ariaPassed: 0, ariaViolations: 0, ariaSkipped: 0, wcagPassed: 0, wcagViolations: 0, wcagAcceptable: 0 };
+    for (const r of finalResults) {
+        finalSummary.templates++;
+        finalSummary.ariaPassed += r.aria.passed;
+        finalSummary.ariaViolations += r.aria.violations.length;
+        finalSummary.ariaSkipped += r.aria.skipped;
+        finalSummary.wcagPassed += r.wcag.passes;
+        const wcagActual = r.wcag.violations.filter(v => !ACCEPTABLE_WCAG_VIOLATIONS.includes(v.id));
+        const wcagAcceptableCount = r.wcag.violations.filter(v => ACCEPTABLE_WCAG_VIOLATIONS.includes(v.id));
+        finalSummary.wcagViolations += wcagActual.length;
+        finalSummary.wcagAcceptable += wcagAcceptableCount.length;
+    }
+
+    writeFileSync(reportPath, JSON.stringify({
+        generatedAt: new Date().toISOString(),
+        version,
+        summary: finalSummary,
+        results: finalResults,
+        coverageGaps: finalCoverageGaps
+    }, null, 2));
+    console.log(`\n📄 Report: ${reportPath}`);
 
     process.exit(summary.ariaViolations + summary.wcagViolations > 0 ? 1 : 0);
 }
