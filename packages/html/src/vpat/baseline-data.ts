@@ -1,3 +1,4 @@
+// @ts-nocheck — auto-generated from JSON, may have extra fields
 /**
  * Baseline a11y and contrast test report data.
  *
