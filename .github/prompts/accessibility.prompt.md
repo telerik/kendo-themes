@@ -11,7 +11,6 @@ Given a component name or `.spec.tsx` file, apply WAI-ARIA attributes to make it
 
 ### 1. Gather context
 
-- Read `aria/[component]_aria.md` if it exists (reference documentation)
 - Read `packages/html/src/[component]/[component].spec.tsx` and `templates/*.tsx`
 - Look at similarly completed components (those with an `ariaSpec.rules` array) for reference patterns
 - Read the component's sub-component specs (e.g. `tabstrip-item.tsx`, `step.tsx`) to understand rendered HTML structure
@@ -20,7 +19,7 @@ Given a component name or `.spec.tsx` file, apply WAI-ARIA attributes to make it
 
 The `ariaSpec` static object on the spec component is the **single source of truth** for ARIA testing. It must include a `rules` array — each entry maps a CSS selector to an expected attribute.
 
-If `aria/[component]_aria.md` exists, migrate its rule table into `ariaSpec.rules`. **Every single row** from the markdown table must appear in `ariaSpec.rules` — no exceptions, no cherry-picking. If a rule seems wrong, fix the selector or attribute but still include it. If no markdown spec exists, create rules based on:
+Create rules based on:
 - WAI-ARIA 1.2 Authoring Practices and WCAG 2.2
 - The component's rendered HTML structure and interactive behavior
 - Specs from similar components (e.g. `combobox` ↔ `autocomplete`)
@@ -214,7 +213,7 @@ These are out of scope — note but don't try to fix:
 - `nested-interactive` — in some composite components (e.g. MenuButton inside TabStripItem), interactive controls are nested within interactive containers; these are documented as known exceptions in the component's ariaSpec and markdown spec
 - jQuery legacy specs — excluded from compliance testing
 
-When an acceptable violation is encountered, it will appear in test output with `ℹ️` prefix. Document the exception in both the ariaSpec (as a comment) and the component's `aria/[component]_aria.md`.
+When an acceptable violation is encountered, it will appear in test output with `ℹ️` prefix. Document the exception in the ariaSpec as a comment.
 
 ### Must-fix violations
 

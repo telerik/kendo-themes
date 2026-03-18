@@ -57,7 +57,7 @@ Gantt.folderName = GANTT_FOLDER_NAME;
  * - TreeList pane follows TreeList ariaSpec
  * - Timeline pane has role=tree with treeitem tasks
  *
- * @see aria/gantt_aria.md
+ * @see ariaSpec below
  * @see TreeList ariaSpec for the left pane
  * @see Splitter ariaSpec for the pane separator
  * @see Toolbar ariaSpec for gantt toolbars

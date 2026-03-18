@@ -204,7 +204,7 @@ jobs:
         run: |
           FILES=$(gh api repos/${{ github.repository }}/compare/${{ github.event.repository.default_branch }}...${{ github.sha }} \
             --jq '.files[].filename' 2>/dev/null || echo "")
-          MATCH=$(echo "$FILES" | grep -E '^(packages/html/src/|aria/|scripts/test-a11y)' | head -1)
+          MATCH=$(echo "$FILES" | grep -E '^(packages/html/src/|scripts/test-a11y)' | head -1)
           if [ -n "$MATCH" ]; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
             echo "A11y-relevant files changed — tests will run."

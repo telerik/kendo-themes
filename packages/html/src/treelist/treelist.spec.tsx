@@ -43,7 +43,7 @@ TreeList.folderName = TREELIST_FOLDER_NAME;
  * The element with role=treegrid must not include the ToolBar element.
  * It implements the Grid ARIA specification with treegrid-specific additions.
  *
- * @see aria/treelist_aria.md
+ * @see ariaSpec below
  */
 TreeList.ariaSpec = {
     selector: '.k-treelist',

@@ -42,7 +42,7 @@ PropertyGrid.folderName = PROPERTYGRID_FOLDER_NAME;
  *
  * It implements the TreeList ARIA specification.
  *
- * @see aria/propertygrid_aria.md
+ * @see ariaSpec below
  */
 PropertyGrid.ariaSpec = {
     selector: '.k-property-grid',

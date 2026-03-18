@@ -66,8 +66,7 @@ packages/
 ├── classic/           # Classic theme
 ├── fluent/            # Fluent theme
 ├── utils/             # Utility CSS classes (standalone)
-└── html/              # React component specs & tests
-aria/                  # ARIA accessibility specifications (per-component)
+└── html/              # React component specs & tests (ARIA specs live here as ariaSpec on .spec.tsx)
 scripts/               # Build utilities and automation
 tests/                 # Visual test outputs
 build/                 # CI/CD scripts
@@ -176,7 +175,7 @@ npm run clean                   # Full cleanup (includes node_modules)
 
 ### Accessibility Automation
 
-ARIA specifications are defined as `ariaSpec.rules` on TSX spec components (single source of truth). Reference docs live in `aria/[component]_aria.md`.
+ARIA specifications are defined as `ariaSpec.rules` on TSX spec components (single source of truth).
 
 Use the `/accessibility` prompt for the full workflow and rules. Key commands:
 
