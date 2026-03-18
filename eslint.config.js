@@ -86,5 +86,26 @@ module.exports = [
             "no-unused-vars": "off",
             "no-undef": 'off'
         }
+    },
+    {
+        name: "unit-tests",
+        files: [
+            "units/**/*.ts"
+        ],
+        plugins: {
+            "@typescript-eslint": tseslint.plugin
+        },
+        languageOptions: {
+            parser: tseslint.parser,
+            globals: {
+                ...globals.node
+            }
+        },
+        rules: {
+            ...tseslint.configs.recommended.rules,
+            "@typescript-eslint/no-explicit-any": "off",
+            "no-unused-vars": "off",
+            "no-undef": "off"
+        }
     }
 ]
