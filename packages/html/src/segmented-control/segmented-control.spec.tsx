@@ -7,7 +7,7 @@ export const SEGMENTED_CONTROL_CLASSNAME = `k-segmented-control`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
 };
 
 export type KendoSegmentedControlOptions = {
