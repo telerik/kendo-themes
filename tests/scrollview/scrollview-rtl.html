@@ -18,57 +18,14 @@
         .k-scrollview {
             background: gray !important;
         }
-        .k-scrollview-dark {
-            background: white !important;
-        }
-        .k-scrollview-light {
-            background: black !important;
+        .k-scrollview-inverse {
+            background: var(--kendo-color-inverse-on-subtle) !important;
         }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <span>RTL - Light mode</span>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
         <span>RTL - Normal</span>
-        <span>RTL - Dark mode</span>
-        <div class="k-scrollview k-scrollview-light k-rtl" role="application" aria-roledescription="carousel" tabindex="0">
-            <div class="k-scrollview-wrap k-scrollview-animate" id="scrollview-wrap" role="list" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-            </div>
-            <div class="k-scrollview-elements">
-                <span class="k-scrollview-prev" role="button" aria-label="Previous" aria-controls="scrollview-wrap">
-                    <span class="k-icon k-svg-icon k-icon-xxxl k-svg-i-chevron-right" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                        </svg>
-                    </span>
-                </span>
-                <span class="k-scrollview-next" role="button" aria-label="Next" aria-controls="scrollview-wrap">
-                    <span class="k-icon k-svg-icon k-icon-xxxl k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
-                </span>
-                <div class="k-scrollview-nav-wrap">
-                    <div class="k-scrollview-nav">
-                        <span class="k-link"></span>
-                        <span class="k-link k-primary"></span>
-                        <span class="k-link k-primary k-focus"></span>
-                        <span class="k-link k-focus"></span>
-                        <span class="k-link"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="k-sr-only" aria-live="polite"></div>
-        </div>
+        <span>RTL - Inverse</span>
         <div class="k-scrollview k-rtl" role="application" aria-roledescription="carousel" tabindex="0">
             <div class="k-scrollview-wrap k-scrollview-animate" id="scrollview-wrap" role="list" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
                 <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
@@ -112,7 +69,7 @@
             </div>
             <div class="k-sr-only" aria-live="polite"></div>
         </div>
-        <div class="k-scrollview k-scrollview-dark k-rtl" role="application" aria-roledescription="carousel" tabindex="0">
+        <div class="k-scrollview k-scrollview-inverse k-rtl" role="application" aria-roledescription="carousel" tabindex="0">
             <div class="k-scrollview-wrap k-scrollview-animate" id="scrollview-wrap" role="list" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
                 <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
                 <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
@@ -155,37 +112,6 @@
         </div>
         <span>RTL Pager disabled</span>
         <span></span>
-        <span></span>
-        <div class="k-scrollview k-scrollview-light k-rtl" role="application" aria-roledescription="carousel" tabindex="0">
-            <div class="k-scrollview-wrap k-scrollview-animate" id="scrollview-wrap" role="list" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-                <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
-            </div>
-            <div class="k-scrollview-elements">
-                <span class="k-scrollview-prev" role="button" aria-label="Previous" aria-controls="scrollview-wrap">
-                    <span class="k-icon k-svg-icon k-icon-xxxl k-svg-i-chevron-right" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                        </svg>
-                    </span>
-                </span>
-                <span class="k-scrollview-next" role="button" aria-label="Next" aria-controls="scrollview-wrap">
-                    <span class="k-icon k-svg-icon k-icon-xxxl k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </div>
-            <div class="k-sr-only" aria-live="polite"></div>
-        </div>
         <div class="k-scrollview k-rtl" role="application" aria-roledescription="carousel" tabindex="0">
             <div class="k-scrollview-wrap k-scrollview-animate" id="scrollview-wrap" role="list" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
                 <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
@@ -216,7 +142,7 @@
             </div>
             <div class="k-sr-only" aria-live="polite"></div>
         </div>
-        <div class="k-scrollview k-scrollview-dark k-rtl" role="application" aria-roledescription="carousel" tabindex="0">
+        <div class="k-scrollview k-scrollview-inverse k-rtl" role="application" aria-roledescription="carousel" tabindex="0">
             <div class="k-scrollview-wrap k-scrollview-animate" id="scrollview-wrap" role="list" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
                 <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
                 <div class="k-scrollview-view" role="listitem" aria-roledescription="slide"></div>
