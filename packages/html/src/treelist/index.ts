@@ -8,4 +8,6 @@ export * from './templates/treelist-with-toolbar';
 export * from './templates/treelist-row-reordering';
 export * from './templates/treelist-aggregates';
 export * from './templates/treelist-with-locked-columns';
+export * from './templates/treelist-row-selection';
+export * from './templates/treelist-cell-selection';
 export * from './demos/treelist';
