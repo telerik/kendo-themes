@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pdf-viewer-selection-line-height</td>
     <td>Number</td>
     <td><code>$kendo-line-height-sm</code></td>
-    <td><code>1.25</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PDFViewer selection.</div></div>

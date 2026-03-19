@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tooltip-title-font-size</td>
     <td>Calculation</td>
     <td><code>calc( var( --kendo-font-size-sm, #{$kendo-font-size-sm} ) * 1.25 )</code></td>
-    <td><code>calc(var(--kendo-font-size-sm, 0.75rem) * 1.25)</code></td>
+    <td><code>calc(var(--kendo-font-size-sm, 0.875rem) * 1.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Tooltip title.</div></div>

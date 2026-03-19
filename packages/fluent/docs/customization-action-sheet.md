@@ -611,7 +611,7 @@ The following table lists the available variables for customization.
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-adaptive-actionsheet-font-size, #{$kendo-font-size-lg} )</code></td>
-    <td><code>var(--kendo-adaptive-actionsheet-font-size, 1rem)</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-font-size, 1.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>

@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-card-title-font-size</td>
     <td>Number</td>
     <td><code>$kendo-font-size-lg</code></td>
-    <td><code>1rem</code></td>
+    <td><code>1.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Card title.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-card-title-line-height</td>
     <td>Number</td>
     <td><code>$kendo-line-height-lg</code></td>
-    <td><code>1.5</code></td>
+    <td><code>1.55</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Card title.</div></div>

@@ -641,7 +641,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-tooltip-day-font-size</td>
     <td>Calculation</td>
     <td><code>calc( var( --kendo-font-size-sm, #{$kendo-font-size-sm} ) * 2 )</code></td>
-    <td><code>calc(var(--kendo-font-size-sm, 0.75rem) * 2)</code></td>
+    <td><code>calc(var(--kendo-font-size-sm, 0.875rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the day inside the Scheduler Tooltip.</div></div>

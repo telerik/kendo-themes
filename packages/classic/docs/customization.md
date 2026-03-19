@@ -4155,7 +4155,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-calendar-week-number-font-size</td>
     <td>Number</td>
     <td><code>$kendo-font-size-sm</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the week number cells in the Calendar.</div></div>
@@ -12226,7 +12226,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-drawer-item-line-height</td>
     <td>Number</td>
     <td><code>$kendo-line-height-lg</code></td>
-    <td><code>1.5</code></td>
+    <td><code>1.55</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Drawer item.</div></div>
@@ -23495,7 +23495,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-pdf-viewer-selection-line-height</td>
     <td>Number</td>
     <td><code>$kendo-line-height-sm</code></td>
-    <td><code>1.25</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PDFViewer selection.</div></div>
@@ -27910,7 +27910,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-rating-label-line-height</td>
     <td>Number</td>
     <td><code>$kendo-line-height-lg</code></td>
-    <td><code>1.5</code></td>
+    <td><code>1.55</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating label.</div></div>
@@ -37557,7 +37557,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-font-size-sm</td>
     <td>Number</td>
     <td><code>0.75rem</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small font size across all components.</div></div>
@@ -37577,7 +37577,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-font-size-lg</td>
     <td>Number</td>
     <td><code>1rem</code></td>
-    <td><code>1rem</code></td>
+    <td><code>1.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large font size across all components.</div></div>
@@ -37617,7 +37617,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-line-height-sm</td>
     <td>Number</td>
     <td><code>1.25</code></td>
-    <td><code>1.25</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small line height across all components.</div></div>
@@ -37637,7 +37637,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-line-height-lg</td>
     <td>Number</td>
     <td><code>1.5</code></td>
-    <td><code>1.5</code></td>
+    <td><code>1.55</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large line height across all components.</div></div>

@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-cell-height</td>
     <td>Calculation</td>
     <td><code>$kendo-line-height-em</code></td>
-    <td><code>calc(1.4285714286 * 1em)</code></td>
+    <td><code>calc(1.5 * 1em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Scheduler cell.</div></div>

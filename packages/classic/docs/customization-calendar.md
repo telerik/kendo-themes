@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-week-number-font-size</td>
     <td>Number</td>
     <td><code>$kendo-font-size-sm</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the week number cells in the Calendar.</div></div>

@@ -28590,7 +28590,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-tooltip-day-font-size</td>
     <td>Calculation</td>
     <td><code>calc( var( --kendo-font-size-sm, #{$kendo-font-size-sm} ) * 2 )</code></td>
-    <td><code>calc(var(--kendo-font-size-sm, 0.75rem) * 2)</code></td>
+    <td><code>calc(var(--kendo-font-size-sm, 0.875rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the day inside the Scheduler Tooltip.</div></div>
@@ -36812,7 +36812,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-tooltip-title-font-size</td>
     <td>Calculation</td>
     <td><code>calc( var( --kendo-font-size-sm, #{$kendo-font-size-sm} ) * 1.25 )</code></td>
-    <td><code>calc(var(--kendo-font-size-sm, 0.75rem) * 1.25)</code></td>
+    <td><code>calc(var(--kendo-font-size-sm, 0.875rem) * 1.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Tooltip title.</div></div>
@@ -37537,7 +37537,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-font-size-sm</td>
     <td>Number</td>
     <td><code>( $kendo-font-size * .875 )</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small font size across all components.</div></div>
@@ -37557,7 +37557,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-font-size-lg</td>
     <td>Number</td>
     <td><code>( $kendo-font-size * 1.25 )</code></td>
-    <td><code>1rem</code></td>
+    <td><code>1.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large font size across all components.</div></div>
@@ -37597,7 +37597,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-line-height-sm</td>
     <td>Number</td>
     <td><code>1.2</code></td>
-    <td><code>1.25</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small line height across all components.</div></div>
@@ -37617,7 +37617,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-line-height-lg</td>
     <td>Number</td>
     <td><code>2</code></td>
-    <td><code>1.5</code></td>
+    <td><code>1.55</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large line height across all components.</div></div>

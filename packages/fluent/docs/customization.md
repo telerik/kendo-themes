@@ -875,7 +875,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-adaptive-actionsheet-font-size, #{$kendo-font-size-lg} )</code></td>
-    <td><code>var(--kendo-adaptive-actionsheet-font-size, 1rem)</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-font-size, 1.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>
@@ -38388,7 +38388,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-font-size-sm</td>
     <td>Number</td>
     <td><code>0.75rem</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small font size across all components.</div></div>
@@ -38408,7 +38408,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-font-size-lg</td>
     <td>Number</td>
     <td><code>1rem</code></td>
-    <td><code>1rem</code></td>
+    <td><code>1.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large font size across all components.</div></div>
@@ -38448,7 +38448,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-line-height-sm</td>
     <td>Number</td>
     <td><code>1.25</code></td>
-    <td><code>1.25</code></td>
+    <td><code>1.4285714285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small line height across all components.</div></div>
@@ -38468,7 +38468,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-line-height-lg</td>
     <td>Number</td>
     <td><code>1.33</code></td>
-    <td><code>1.5</code></td>
+    <td><code>1.55</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large line height across all components.</div></div>

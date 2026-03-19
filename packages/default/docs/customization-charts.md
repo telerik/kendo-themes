@@ -671,7 +671,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chart-tooltip-font-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-font-size} * .929)</code></td>
-    <td><code>calc(0.875rem * 0.929)</code></td>
+    <td><code>calc(1rem * 0.929)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chart.</div></div>
