@@ -5,7 +5,7 @@
 
 /// The base font size across all components.
 /// @group typography
-$kendo-font-size: 0.875rem !default;
+$kendo-font-size: 1rem !default;
 /// The extra extra small font size across all components.
 /// @group typography
 $kendo-font-size-xxs: 0.5rem !default;
@@ -14,32 +14,32 @@ $kendo-font-size-xxs: 0.5rem !default;
 $kendo-font-size-xs: 0.625rem !default;
 /// The small font size across all components.
 /// @group typography
-$kendo-font-size-sm: 0.75rem !default;
+$kendo-font-size-sm: 0.875rem !default;
 /// The medium font size across all components.
 /// @group typography
 $kendo-font-size-md: $kendo-font-size !default;
 /// The large font size across all components.
 /// @group typography
-$kendo-font-size-lg: 1rem !default;
+$kendo-font-size-lg: 1.125rem !default;
 /// The extra large font size across all components.
 /// @group typography
 $kendo-font-size-xl: 1.25rem !default;
 
 /// The base line height across all components.
 /// @group typography
-$kendo-line-height: math.div( 20, 14 ) !default;
+$kendo-line-height: 1.5 !default;
 /// The extra small line height across all components.
 /// @group typography
 $kendo-line-height-xs: 1 !default;
 /// The small line height across all components.
 /// @group typography
-$kendo-line-height-sm: 1.25 !default;
+$kendo-line-height-sm: math.div( 20, 14 ) !default;
 /// The medium line height across all components.
 /// @group typography
 $kendo-line-height-md: $kendo-line-height !default;
 /// The large line height across all components.
 /// @group typography
-$kendo-line-height-lg: 1.5 !default;
+$kendo-line-height-lg: 1.55 !default;
 /// The base line height in ems across all components.
 /// @group typography
 $kendo-line-height-em: calc( #{$kendo-line-height-md} * 1em ) !default;
