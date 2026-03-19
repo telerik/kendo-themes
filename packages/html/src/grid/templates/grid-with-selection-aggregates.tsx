@@ -35,7 +35,7 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
                                 <col />
                             </colgroup>
                             <TableTbody role="rowgroup">
-                                <TableRow className="k-master-row k-selected" role="row" aria-selected="true">
+                                <TableRow className="k-master-row" role="row">
                                     <TableTd selected role="gridcell" aria-selected="true">Chai</TableTd>
                                     <TableTd selected role="gridcell" aria-selected="true">39</TableTd>
                                     <TableTd role="gridcell">false</TableTd>
