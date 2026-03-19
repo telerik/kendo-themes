@@ -1,4 +1,4 @@
-﻿const options = {};
+const options = {};
 const states = [];
 const variants = [];
 const defaults = {};

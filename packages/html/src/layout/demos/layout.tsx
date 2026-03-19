@@ -1,4 +1,4 @@
-﻿import { Layout, KendoLayoutProps } from '../layout';
+import { Layout, KendoLayoutProps } from '../layout';
 import { StackLayoutNormal } from '../templates/stack-layout-normal';
 import { StackLayout } from '../stack-layout.spec';
 

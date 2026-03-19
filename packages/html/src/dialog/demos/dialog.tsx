@@ -1,4 +1,4 @@
-﻿import { Dialog, KendoDialogProps } from '../dialog.spec';
+import { Dialog, KendoDialogProps } from '../dialog.spec';
 import { DialogNormal } from '../templates/dialog-normal';
 import { Button } from '../../button';
 
