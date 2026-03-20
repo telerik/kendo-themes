@@ -18,6 +18,7 @@
     ],
     "exclude": [
         "node_modules",
-        "dist"
+        "dist",
+        "src/a11y-docs/examples"
     ]
 }
