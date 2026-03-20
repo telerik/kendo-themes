@@ -154,6 +154,9 @@ export * from './table/index';
 // CSS Utilis
 export * from './utils/index';
 
+// A11y documentation generator
+export * from './a11y-docs/index';
+
 // Ripple
 export * from './ripple/index';
 
