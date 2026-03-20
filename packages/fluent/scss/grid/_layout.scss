@@ -95,7 +95,8 @@
 
     // Grid header / footer
     .k-grid-header-wrap,
-    .k-grid-footer-wrap {
+    .k-grid-footer-wrap,
+    .k-grid-pinned-wrap {
         margin-inline-end: calc( #{$kendo-grid-border-width} * -1 );
         border-inline-start-width: 0;
         border-inline-end-width: $kendo-grid-cell-border-width-y;

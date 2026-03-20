@@ -726,6 +726,7 @@
 
     // Pinned rows container
     .k-grid-pinned-container {
+        padding-inline-end: var(--kendo-scrollbar-width, #{$kendo-scrollbar-width});
         box-shadow: $kendo-grid-pinned-container-shadow;
         z-index: k-z-index("base", 4);
         position: relative;
@@ -742,10 +743,18 @@
     }
 
     .k-grid-pinned-wrap {
+        margin-inline-end: calc( -1 * #{$kendo-grid-cell-vertical-border-width} );
         width: 100%;
+        border-width: 0;
+        border-inline-end-width: $kendo-grid-cell-vertical-border-width;
+        border-style: solid;
         position: relative;
         overflow: auto;
-        scrollbar-gutter: stable;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         .k-table {
             table-layout: fixed;
@@ -972,8 +981,8 @@
             border-width: 0;
         }
 
-        .k-grid-pinned-wrap{
-            scrollbar-gutter: auto;
+        .k-grid-pinned-container {
+            padding: 0;
         }
 
         .k-grid-header,

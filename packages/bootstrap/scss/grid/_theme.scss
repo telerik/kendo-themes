@@ -208,6 +208,8 @@
         background-color: $kendo-grid-header-bg;
     }
     .k-grid-pinned-wrap {
+        border-color: $kendo-grid-header-border;
+
         > .k-table {
             background-color: $kendo-grid-bg;
             box-shadow: $kendo-grid-cell-vertical-border-width 0 0 0 $kendo-grid-border;
