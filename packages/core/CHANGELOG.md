@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.0...v13.1.1-dev.0) (2026-03-20)
+
+
+### Bug Fixes
+
+* **segmented-control:** make icon-only component height consistent with text-based component ([9d9ff6e](https://github.com/telerik/kendo-themes/commit/9d9ff6e42e4cb6468ad5d0775d2e3e26bd22b7d6))
+
+
+
+
+
 # [13.1.0](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.4...v13.1.0) (2026-03-17)
 
 **Note:** Version bump only for package @progress/kendo-theme-core
