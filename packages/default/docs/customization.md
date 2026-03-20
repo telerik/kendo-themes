@@ -8122,8 +8122,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-sm-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Chip.</div></div>
@@ -8132,8 +8132,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-md-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Chip.</div></div>
@@ -8142,8 +8142,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-lg-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Chip.</div></div>
@@ -8172,8 +8172,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Chip.</div></div>
@@ -8192,8 +8192,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Chip.</div></div>
@@ -8482,7 +8482,7 @@ The following table lists the available variables for customizing the Default th
         line-height: $kendo-chip-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Chip.</div></div>
@@ -16209,7 +16209,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-grid-group-drop-hint-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size})</code></td>
-    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)</code></td>
+    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 1px * 2) + 6px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid group.</div></div>
@@ -16349,7 +16349,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-grid-sm-group-dropclue-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size})</code></td>
-    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 1px * 2) + 6px)</code></td>
+    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid group.</div></div>
@@ -16499,7 +16499,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-grid-md-group-dropclue-height</td>
     <td>Calculation</td>
     <td><code>$kendo-grid-group-drop-hint-height</code></td>
-    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)</code></td>
+    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 1px * 2) + 6px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid group.</div></div>
@@ -17474,7 +17474,7 @@ The following table lists the available variables for customizing the Default th
         selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
 )</code></td>
-    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","grouping-header-padding-x":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-y":"var(--kendo-spacing-1, 0.25rem)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-1, 0.25rem)","filter-cell-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","filter-cell-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","edit-cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","edit-cell-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","button-padding-y":"var(--kendo-spacing-1, 0.25rem)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-0\\.5, 0.125rem) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-1, 0.25rem)","selection-aggregates-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "header-padding-x":"var(--kendo-spacing-3, 0.75rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-x":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-y":"var(--kendo-spacing-2, 0.5rem)","cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","cell-padding-y":"var(--kendo-spacing-2, 0.5rem)","filter-cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-cell-padding-y":"var(--kendo-spacing-2, 0.5rem)","edit-cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","edit-cell-padding-y":"calc(var(--kendo-spacing-1\\.5, 0.375rem) / 2)","button-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2, 0.5rem)","selection-aggregates-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
+    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","grouping-header-padding-x":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-y":"var(--kendo-spacing-1, 0.25rem)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-1, 0.25rem)","filter-cell-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","filter-cell-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","edit-cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","edit-cell-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","button-padding-y":"var(--kendo-spacing-1, 0.25rem)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-1, 0.25rem)","selection-aggregates-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "header-padding-x":"var(--kendo-spacing-3, 0.75rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-x":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-y":"var(--kendo-spacing-2, 0.5rem)","cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","cell-padding-y":"var(--kendo-spacing-2, 0.5rem)","filter-cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-cell-padding-y":"var(--kendo-spacing-2, 0.5rem)","edit-cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","edit-cell-padding-y":"calc(var(--kendo-spacing-1\\.5, 0.375rem) / 2)","button-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2, 0.5rem)","selection-aggregates-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Grid.</div></div>

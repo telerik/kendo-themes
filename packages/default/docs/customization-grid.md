@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-grid-group-drop-hint-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size})</code></td>
-    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)</code></td>
+    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 1px * 2) + 6px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid group.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-grid-sm-group-dropclue-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size})</code></td>
-    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 1px * 2) + 6px)</code></td>
+    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid group.</div></div>
@@ -511,7 +511,7 @@ The following table lists the available variables for customization.
     <td>$kendo-grid-md-group-dropclue-height</td>
     <td>Calculation</td>
     <td><code>$kendo-grid-group-drop-hint-height</code></td>
-    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)</code></td>
+    <td><code>calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 1px * 2) + 6px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid group.</div></div>
@@ -1486,7 +1486,7 @@ The following table lists the available variables for customization.
         selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
 )</code></td>
-    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","grouping-header-padding-x":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-y":"var(--kendo-spacing-1, 0.25rem)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-1, 0.25rem)","filter-cell-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","filter-cell-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","edit-cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","edit-cell-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","button-padding-y":"var(--kendo-spacing-1, 0.25rem)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-0\\.5, 0.125rem) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-1, 0.25rem)","selection-aggregates-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "header-padding-x":"var(--kendo-spacing-3, 0.75rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-x":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-y":"var(--kendo-spacing-2, 0.5rem)","cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","cell-padding-y":"var(--kendo-spacing-2, 0.5rem)","filter-cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-cell-padding-y":"var(--kendo-spacing-2, 0.5rem)","edit-cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","edit-cell-padding-y":"calc(var(--kendo-spacing-1\\.5, 0.375rem) / 2)","button-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2, 0.5rem)","selection-aggregates-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
+    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","grouping-header-padding-x":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-y":"var(--kendo-spacing-1, 0.25rem)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-1, 0.25rem)","filter-cell-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","filter-cell-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","edit-cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","edit-cell-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","button-padding-y":"var(--kendo-spacing-1, 0.25rem)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-1, 0.25rem)","selection-aggregates-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "header-padding-x":"var(--kendo-spacing-3, 0.75rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-x":"var(--kendo-spacing-2, 0.5rem)","grouping-header-padding-y":"var(--kendo-spacing-2, 0.5rem)","cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","cell-padding-y":"var(--kendo-spacing-2, 0.5rem)","filter-cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","filter-cell-padding-y":"var(--kendo-spacing-2, 0.5rem)","edit-cell-padding-x":"var(--kendo-spacing-3, 0.75rem)","edit-cell-padding-y":"calc(var(--kendo-spacing-1\\.5, 0.375rem) / 2)","button-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2, 0.5rem)","selection-aggregates-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Grid.</div></div>
