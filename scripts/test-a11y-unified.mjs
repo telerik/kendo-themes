@@ -659,6 +659,7 @@ async function main() {
     console.log(`ARIA: ${summary.ariaPassed} passed, ${summary.ariaViolations} violations`);
     const wcagExtra = summary.wcagAcceptable > 0 ? ` (${summary.wcagAcceptable} acceptable)` : '';
     console.log(`WCAG: ${summary.wcagPassed} passed, ${summary.wcagViolations} violations${wcagExtra}`);
+    console.log('='.repeat(60));
 
     if (coverageGaps.length > 0) {
         console.log('\n⚠️  Coverage Gaps (rules never tested by any template):');
@@ -719,7 +720,18 @@ async function main() {
     }, null, 2));
     console.log(`\n📄 Report: ${reportPath}`);
 
-    process.exit(summary.ariaViolations + summary.wcagViolations > 0 ? 1 : 0);
+    // Print merged summary for partial runs
+    if (isPartialRun && finalSummary.templates !== summary.templates) {
+        console.log('\n' + '='.repeat(60));
+        console.log('📊 Merged Summary\n');
+        console.log(`Templates: ${finalSummary.templates}`);
+        console.log(`ARIA: ${finalSummary.ariaPassed} passed, ${finalSummary.ariaViolations} violations`);
+        const mergedWcagExtra = finalSummary.wcagAcceptable > 0 ? ` (${finalSummary.wcagAcceptable} acceptable)` : '';
+        console.log(`WCAG: ${finalSummary.wcagPassed} passed, ${finalSummary.wcagViolations} violations${mergedWcagExtra}`);
+        console.log('='.repeat(60));
+    }
+
+    process.exit(finalSummary.ariaViolations + finalSummary.wcagViolations > 0 ? 1 : 0);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

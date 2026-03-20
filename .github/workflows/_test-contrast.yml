@@ -72,7 +72,7 @@ jobs:
       - name: Unpack artifacts
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
-      - name: Test contrast (${{ matrix.chunk }} of ${{ matrix.max-chunks }})
+      - name: Test contrast (${{ matrix.chunk }} of ${{ inputs.max-chunks }})
         run: xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test:contrast
         continue-on-error: true
         id: contrast-tests
