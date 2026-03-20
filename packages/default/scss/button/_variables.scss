@@ -29,22 +29,26 @@ $kendo-button-border-width: 1px !default;
 /// @group button
 $kendo-button-border-radius: null !default;
 
+/// The spacing between icon and text inside the Button.
+/// @group button
+$kendo-button-gap: k-spacing(1.5) !default;
+
 /// The horizontal padding of the small Button.
 /// @group button
 $kendo-button-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-x: k-spacing(2) !default;
+$kendo-button-md-padding-x: k-spacing(2.5) !default;
 /// The horizontal padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-x: k-spacing(2) !default;
+$kendo-button-lg-padding-x: k-spacing(3) !default;
 
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: k-spacing(0.5) !default;
+$kendo-button-sm-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-y: k-spacing(1) !default;
+$kendo-button-md-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the large Button.
 /// @group button
 $kendo-button-lg-padding-y: k-spacing(2) !default;
@@ -61,7 +65,7 @@ $kendo-button-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 $kendo-button-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the small Button.
 /// @group button
-$kendo-button-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-button-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font size of the medium Button.
 /// @group button
 $kendo-button-md-font-size: $kendo-button-font-size !default;
@@ -74,7 +78,7 @@ $kendo-button-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-button-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height used along with the $kendo-font-size the of the small Button.
 /// @group button
-$kendo-button-sm-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-button-sm-line-height: var( --kendo-line-height-sm, normal ) !default;
 /// The line height used along with the $kendo-font-size the of the medium Button.
 /// @group button
 $kendo-button-md-line-height: $kendo-button-line-height !default;
@@ -252,6 +256,7 @@ $kendo-button-transition: color k-transition(rapid), background-color k-transiti
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-border-radius: $kendo-button-border-radius,
+    $kendo-button-gap: $kendo-button-gap,
     $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
     $kendo-button-md-padding-x: $kendo-button-md-padding-x,
     $kendo-button-lg-padding-x: $kendo-button-lg-padding-x,
