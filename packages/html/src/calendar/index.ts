@@ -26,3 +26,4 @@ export * from './templates/calendar-infinite-week-number';
 export * from './templates/calendar-selected';
 export * from './templates/calendar-infinite-selected';
 export * from './demos/calendar';
+export * from './demos/calendar-infinite';

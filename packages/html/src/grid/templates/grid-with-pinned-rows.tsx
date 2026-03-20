@@ -52,9 +52,9 @@ export const GridWithPinnedRows = ({ contentClassName, ...other }: any) => {
                                         TableTbody does not spread HTML attributes. */}
                                     <tbody className="k-table-tbody" role="rowgroup" aria-label="Top pinned rows">
                                         <TableRow className="k-master-row" role="row" aria-rowindex={1} selected aria-selected="true">
-                                            <TableTd role="gridcell" aria-colindex={1} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="true">Shelden Greyes</TableTd>
-                                            <TableTd role="gridcell" aria-colindex={2} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">Operator</TableTd>
-                                            <TableTd role="gridcell" aria-colindex={3} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">UK</TableTd>
+                                            <TableTd role="gridcell" aria-colindex={1} aria-selected="true" aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="true">Shelden Greyes</TableTd>
+                                            <TableTd role="gridcell" aria-colindex={2} aria-selected="true" aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">Operator</TableTd>
+                                            <TableTd role="gridcell" aria-colindex={3} aria-selected="true" aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">UK</TableTd>
                                         </TableRow>
                                     </tbody>
                                 </GridTable>

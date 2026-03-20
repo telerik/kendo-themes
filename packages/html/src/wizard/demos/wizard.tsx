@@ -1,4 +1,4 @@
-﻿import { Wizard, KendoWizardProps } from '../wizard.spec';
+import { Wizard, KendoWizardProps } from '../wizard.spec';
 import { WizardStep } from '../wizard-step';
 import { WizardSteps } from '../wizard-steps';
 import { WizardNormal } from '../templates/wizard-normal';
@@ -96,6 +96,7 @@ WizardDemo.states = states;
 WizardDemo.variants = variants;
 WizardDemo.defaultOptions = defaults;
 WizardDemo.modifiers = modifiers;
+WizardDemo.className = Wizard.className;
 
 export default WizardDemo;
 

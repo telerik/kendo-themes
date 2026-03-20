@@ -1,15 +1,18 @@
-﻿import { Appbar, KendoAppbarProps } from '../appbar.spec';
+import { Appbar, KendoAppbarProps } from '../appbar.spec';
 import { AppbarSection } from '../appbar-section';
-import { AppbarNormal } from '../templates/appbar-normal';
 import { AvatarImage } from '../../avatar';
 import { IconButton, TextButton } from '../../button';
 import { TextboxNormal } from '../../textbox';
 
-const options = { ...Appbar.options };
+const options = {
+  ...Appbar.options,
+  positionMode: ['static', 'sticky', 'fixed'],
+};
+
 const states = Appbar.states;
 
 // Make 'primary' the default color option
-const defaults = { ...Appbar.defaultOptions, themeColor: 'primary', variant: 'top' };
+const defaults = { ...Appbar.defaultOptions, themeColor: 'primary', variant: 'top', positionMode: 'sticky' };
 options.themeColor = ['primary', ...options.themeColor.filter((color: string) => color !== 'primary')];
 
 const variants = [
@@ -23,32 +26,12 @@ const variants = [
   },
 ];
 
-const modifiers = [
-  {
-    name: 'sticky',
-    title: 'Sticky',
-    type: 'boolean',
-  },
-];
-
 export const AppbarDemo = (
-  props: KendoAppbarProps & { variant?: (typeof variants)[number]['name'] } & {
-    modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
-  }) => {
-  const { variant, modifiers: mods, ...other } = { ...defaults, ...props };
-
-  let additionalProps: any = { positionMode: "sticky" };
-
-  Object.keys(mods || {}).forEach((modifier) => {
-    switch (modifier) {
-      case 'sticky': {
-        additionalProps.positionMode = mods?.[modifier] ? "sticky" : "static";
-      }
-    }
-  });
+  props: KendoAppbarProps & { variant?: (typeof variants)[number]['name'] }) => {
+  const { variant, ...other } = { ...defaults, ...props };
 
   const appBar = (
-    <AppbarNormal position={variant} {...other} {...additionalProps}>
+    <Appbar position={variant} {...other}>
       <AppbarSection>
         <IconButton fillMode="flat" icon="menu"></IconButton>
       </AppbarSection>
@@ -73,7 +56,7 @@ export const AppbarDemo = (
           <img src="https://demos.telerik.com/kendo-ui/content/web/Customers/RICSU.jpg" />
         </AvatarImage>
       </AppbarSection>
-    </AppbarNormal>
+    </Appbar>
   );
 
   const content = (
@@ -130,6 +113,7 @@ AppbarDemo.options = options;
 AppbarDemo.states = states;
 AppbarDemo.variants = variants;
 AppbarDemo.defaultOptions = defaults;
-AppbarDemo.modifiers = modifiers;
+AppbarDemo.modifiers = [];
+AppbarDemo.className = Appbar.className;
 
 export default AppbarDemo;

@@ -55,5 +55,6 @@ LabelDemo.states = states;
 LabelDemo.variants = variants;
 LabelDemo.defaultOptions = defaults;
 LabelDemo.modifiers = modifiers;
+LabelDemo.className = Label.className;
 
 export default LabelDemo;

@@ -1,4 +1,4 @@
-﻿import { Form, KendoFormProps } from '../form.spec';
+import { Form, KendoFormProps } from '../form.spec';
 import { Fieldset } from '../fieldset';
 import { FormField } from '../form-field';
 import { Button } from '../../button';
@@ -94,6 +94,7 @@ FormDemo.states = states;
 FormDemo.variants = variants;
 FormDemo.defaultOptions = defaults;
 FormDemo.modifiers = modifiers;
+FormDemo.className = Form.className;
 
 export default FormDemo;
 

@@ -1,4 +1,4 @@
-﻿import { PDFViewer, KendoPDFViewerProps } from '../pdf-viewer.spec';
+import { PDFViewer, KendoPDFViewerProps } from '../pdf-viewer.spec';
 import { PDFViewerPage } from '../pdf-viewer-page';
 import { PDFViewerNormal } from '../templates/pdf-viewer-normal';
 import { Button } from '../../button';
@@ -9,33 +9,38 @@ import { Toolbar } from '../../toolbar';
 
 const options = PDFViewer.options;
 const states = PDFViewer.states;
-const defaults = PDFViewer.defaultOptions;
+const defaults = {
+    ...PDFViewer.defaultOptions,
+    variant: 'default',
+};
 
 
-const modifiers = [
+const variants = [
+    {
+        name: 'default',
+        title: 'Default',
+    },
     {
         name: 'blank',
         title: 'Blank',
     },
 ];
-const variants = [];
+
+const modifiers = [];
 
 export const PdfViewerDemo = (
-    props: KendoPDFViewerProps & {
-        modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
-    }
+    props: KendoPDFViewerProps &
+    { variant?: (typeof variants)[number]['name'] }
 ) => {
-    const { modifiers: mods, ...other } = props;
+    const { variant, ...other } = props;
 
     let additionalProps: any = {};
 
-    Object.keys(mods || {}).forEach((modifier) => {
-        switch (modifier) {
-            case 'blank':
-                additionalProps.blank = mods?.[modifier] ? true : false;
-                break;
-        }
-    });
+    switch (variant) {
+        case 'blank':
+            additionalProps.blank = true;
+            break;
+    }
 
     return (
         <PDFViewerNormal style={{ width: "auto", height: "375px" }} {...other} {...additionalProps}
@@ -73,6 +78,7 @@ PdfViewerDemo.states = states;
 PdfViewerDemo.variants = variants;
 PdfViewerDemo.defaultOptions = defaults;
 PdfViewerDemo.modifiers = modifiers;
+PdfViewerDemo.className = PDFViewer.className;
 
 export default PdfViewerDemo;
 

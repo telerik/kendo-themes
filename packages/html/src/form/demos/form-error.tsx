@@ -35,5 +35,6 @@ FormErrorDemo.states = states;
 FormErrorDemo.variants = variants;
 FormErrorDemo.defaultOptions = defaults;
 FormErrorDemo.modifiers = modifiers;
+FormErrorDemo.className = FormError.className;
 
 export default FormErrorDemo;

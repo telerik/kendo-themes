@@ -1,4 +1,4 @@
-﻿import { Card, KendoCardProps } from '../card.spec';
+import { Card, KendoCardProps } from '../card.spec';
 import { CardBody } from '../card-body';
 import { CardFooter } from '../card-footer';
 import { CardHeader } from '../card-header';
@@ -8,7 +8,7 @@ import { CardHorizontal } from '../templates/card-horizontal';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 
-const options = Card.options.themeColor;
+const options = Card.options;
 const states = Card.states;
 const defaults = {
   ...Card.defaultOptions,
@@ -131,6 +131,7 @@ CardDemo.states = states;
 CardDemo.variants = variants;
 CardDemo.defaultOptions = defaults;
 CardDemo.modifiers = modifiers;
+CardDemo.className = Card.className;
 
 export default CardDemo;
 

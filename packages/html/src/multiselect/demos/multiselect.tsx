@@ -1,4 +1,4 @@
-﻿import { MultiSelect, KendoMultiSelectProps } from '../multiselect.spec';
+import { MultiSelect, KendoMultiSelectProps } from '../multiselect.spec';
 import { MultiSelectNormal } from '../templates/multiselect-normal';
 import { Icon } from '../../icon';
 import { TextButton } from '../../button';
@@ -88,6 +88,7 @@ MultiselectDemo.states = states;
 MultiselectDemo.variants = variants;
 MultiselectDemo.defaultOptions = defaults;
 MultiselectDemo.modifiers = modifiers;
+MultiselectDemo.className = MultiSelect.className;
 
 export default MultiselectDemo;
 

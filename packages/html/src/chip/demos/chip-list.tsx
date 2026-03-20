@@ -1,4 +1,4 @@
-﻿import { ChipList, KendoChipListProps } from '../chip-list.spec';
+import { ChipList, KendoChipListProps } from '../chip-list.spec';
 import { ChipNormal } from '../templates/chip-normal';
 import { ChipAction } from '../chip-action';
 import Chip, { KendoChipProps } from '../chip.spec';
@@ -58,6 +58,7 @@ ChipListDemo.states = states;
 ChipListDemo.variants = variants;
 ChipListDemo.defaultOptions = defaults;
 ChipListDemo.modifiers = modifiers;
+ChipListDemo.className = ChipList.className;
 
 export default ChipListDemo;
 

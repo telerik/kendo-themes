@@ -1,4 +1,4 @@
-﻿import { Textarea, KendoTextareaProps } from '../textarea.spec';
+import { Textarea, KendoTextareaProps } from '../textarea.spec';
 import { Icon } from '../../icon';
 
 const options = Textarea.options;
@@ -72,6 +72,7 @@ TextareaDemo.states = states;
 TextareaDemo.variants = variants;
 TextareaDemo.defaultOptions = defaults;
 TextareaDemo.modifiers = modifiers;
+TextareaDemo.className = Textarea.className;
 
 export default TextareaDemo;
 

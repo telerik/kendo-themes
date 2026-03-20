@@ -1,4 +1,4 @@
-﻿import { Menu, KendoMenuProps } from '../menu.spec';
+import { Menu, KendoMenuProps } from '../menu.spec';
 import { MenuList } from '../menu-list.spec';
 import { MenuListItem } from '../menu-list-item.spec';
 import { MenuSeparator } from '../menu-separator.spec';
@@ -85,6 +85,7 @@ MenuDemo.states = states;
 MenuDemo.variants = variants;
 MenuDemo.defaultOptions = defaults;
 MenuDemo.modifiers = modifiers;
+MenuDemo.className = Menu.className;
 
 export default MenuDemo;
 

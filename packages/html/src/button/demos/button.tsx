@@ -1,4 +1,4 @@
-﻿import { Button, KendoButtonProps } from '../button.spec';
+import { Button, KendoButtonProps } from '../button.spec';
 import { IconButton } from '../templates/icon-button';
 import { IconTextButton } from '../templates/icon-text-button';
 import { TextButton } from '../templates/text-button';
@@ -49,5 +49,6 @@ ButtonDemo.states = states;
 ButtonDemo.variants = variants;
 ButtonDemo.defaultOptions = defaults;
 ButtonDemo.modifiers = modifiers;
+ButtonDemo.className = Button.className;
 
 export default ButtonDemo;

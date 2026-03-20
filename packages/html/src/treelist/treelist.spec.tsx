@@ -76,6 +76,10 @@ TreeList.ariaSpec = {
         { selector: '.k-grid-content>table>tbody>tr>td', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed.' },
         { selector: '.k-grid-content>table>tbody>tr>td', attribute: 'aria-colindex (when present)', usage: 'Col number.' },
 
+        // ── Selection ──
+        { selector: 'tr.k-selected', attribute: 'aria-selected=true', usage: 'Set on the currently selected row(s) in row selection mode. All cells within the selected row also carry aria-selected=true (without k-selected class).' },
+        { selector: 'td.k-selected', attribute: 'aria-selected=true', usage: 'Set on the currently selected cell(s) in cell selection mode. The k-selected class on cells is only applied in cell selection mode, but aria-selected=true is present on cells regardless of selection mode.' },
+
         // ── TreeList-Specific ──
         { selector: '.k-grid-content>table>tbody>tr', attribute: 'aria-expanded (when present)', usage: 'Set on the currently expanded row(s).' },
         { selector: '.k-grid-content>table>tbody>tr td', attribute: 'aria-expanded (when present)', usage: 'The cell containing the expand/collapse toggle also carries aria-expanded matching the row value, as it is the navigable focusable element.' },

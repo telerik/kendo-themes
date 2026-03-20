@@ -1,4 +1,4 @@
-﻿import { Drawer, KendoDrawerProps } from '../drawer.spec';
+import { Drawer, KendoDrawerProps } from '../drawer.spec';
 import { DrawerContent } from '../drawer-content.spec';
 import { DrawerItem } from '../drawer-item.spec';
 import { DrawerItemSeparator } from '../drawer-item-separator';
@@ -150,6 +150,7 @@ DrawerDemo.states = states;
 DrawerDemo.variants = variants;
 DrawerDemo.defaultOptions = defaults;
 DrawerDemo.modifiers = modifiers;
+DrawerDemo.className = Drawer.className;
 
 export default DrawerDemo;
 

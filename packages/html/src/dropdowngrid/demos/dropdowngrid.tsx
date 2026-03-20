@@ -1,4 +1,4 @@
-﻿import { DropdownGrid, KendoDropdownGridProps } from '../dropdowngrid.spec';
+import { DropdownGrid, KendoDropdownGridProps } from '../dropdowngrid.spec';
 import { DropdownGridNormal } from '../templates/dropdowngrid-normal';
 import { Icon } from '../../icon';
 import { IconButton } from '../../button';
@@ -122,6 +122,7 @@ DropdowngridDemo.states = states;
 DropdowngridDemo.variants = variants;
 DropdowngridDemo.defaultOptions = defaults;
 DropdowngridDemo.modifiers = modifiers;
+DropdowngridDemo.className = DropdownGrid.className;
 
 export default DropdowngridDemo;
 

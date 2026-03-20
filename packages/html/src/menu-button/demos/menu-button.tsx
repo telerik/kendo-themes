@@ -1,4 +1,4 @@
-﻿import { MenuButton } from '../menu-button.spec';
+import { MenuButton } from '../menu-button.spec';
 import { Button, KendoButtonProps } from '../../button/button.spec';
 import { MenuList } from '../../menu/menu-list.spec';
 import { MenuListItem } from '../../menu/menu-list-item.spec';
@@ -109,6 +109,7 @@ MenuButtonDemo.states = states;
 MenuButtonDemo.variants = variants;
 MenuButtonDemo.defaultOptions = defaults;
 MenuButtonDemo.modifiers = modifiers;
+MenuButtonDemo.className = MenuButton.className;
 
 export default MenuButtonDemo;
 

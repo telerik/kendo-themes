@@ -1,4 +1,4 @@
-﻿import { Combobox, KendoComboboxProps } from '../combobox.spec';
+import { Combobox, KendoComboboxProps } from '../combobox.spec';
 import { ComboboxNormal } from '../templates/combobox-normal';
 import { Icon } from '../../icon';
 import { IconButton } from '../../button';
@@ -72,6 +72,7 @@ ComboboxDemo.states = states;
 ComboboxDemo.variants = variants;
 ComboboxDemo.defaultOptions = defaults;
 ComboboxDemo.modifiers = modifiers;
+ComboboxDemo.className = Combobox.className;
 
 export default ComboboxDemo;
 

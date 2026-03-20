@@ -1,4 +1,4 @@
-﻿import RadioButton, { RadioButtonProps } from '../radio.spec';
+import RadioButton, { RadioButtonProps } from '../radio.spec';
 import { nextId } from '../../misc';
 import { RadioButtonWithLabelAfter } from '../templates/radio-with-label-after';
 
@@ -18,6 +18,7 @@ RadioButtonDemo.states = states;
 RadioButtonDemo.variants = variants;
 RadioButtonDemo.defaultOptions = defaults;
 RadioButtonDemo.modifiers = modifiers;
+RadioButtonDemo.className = RadioButton.className;
 
 export default RadioButtonDemo;
 

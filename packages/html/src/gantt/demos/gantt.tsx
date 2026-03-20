@@ -1,4 +1,5 @@
-﻿import { GanttNormal } from '../templates/gantt-normal';
+import { GanttNormal } from '../templates/gantt-normal';
+import { Gantt } from '../gantt.spec';
 
 const options = {};
 const states = [];
@@ -18,6 +19,7 @@ GanttDemo.states = states;
 GanttDemo.variants = variants;
 GanttDemo.defaultOptions = defaults;
 GanttDemo.modifiers = modifiers;
+GanttDemo.className = Gantt.className;
 
 export default GanttDemo;
 

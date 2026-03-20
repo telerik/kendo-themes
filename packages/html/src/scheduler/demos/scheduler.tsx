@@ -1,4 +1,4 @@
-﻿import { Scheduler, KendoSchedulerProps } from '../scheduler.spec';
+import { Scheduler, KendoSchedulerProps } from '../scheduler.spec';
 import { SchedulerToolbar } from '../scheduler-toolbar.spec';
 import { SchedulerFlexAgenda } from '../templates/scheduler-flex-agenda';
 import { SchedulerFlexDay } from '../templates/scheduler-flex-day';
@@ -103,6 +103,7 @@ SchedulerDemo.states = states;
 SchedulerDemo.variants = variants;
 SchedulerDemo.defaultOptions = defaults;
 SchedulerDemo.modifiers = modifiers;
+SchedulerDemo.className = Scheduler.className;
 
 export default SchedulerDemo;
 

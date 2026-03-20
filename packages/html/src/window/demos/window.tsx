@@ -1,7 +1,7 @@
-﻿import { Window, KendoWindowProps } from '../window.spec';
+import { Window, KendoWindowProps } from '../window.spec';
 import { Button } from '../../button';
 
-const options = Window.options.themeColor;
+const options = Window.options;
 const states = Window.states;
 const defaults = {
   ...Window.defaultOptions,
@@ -50,6 +50,7 @@ WindowDemo.states = states;
 WindowDemo.variants = variants;
 WindowDemo.defaultOptions = defaults;
 WindowDemo.modifiers = modifiers;
+WindowDemo.className = Window.className;
 
 export default WindowDemo;
 

@@ -1,4 +1,4 @@
-﻿import { Timeline, KendoTimelineProps } from '../timeline.spec';
+import { Timeline, KendoTimelineProps } from '../timeline.spec';
 import { TimelineCircle } from '../timeline-circle.spec';
 import { TimelineDateWrap } from '../timeline-date-wrap.spec';
 import { TimelineFlag } from '../timeline-flag.spec';
@@ -93,6 +93,7 @@ TimelineDemo.states = states;
 TimelineDemo.variants = variants;
 TimelineDemo.defaultOptions = defaults;
 TimelineDemo.modifiers = modifiers;
+TimelineDemo.className = Timeline.className;
 
 export default TimelineDemo;
 

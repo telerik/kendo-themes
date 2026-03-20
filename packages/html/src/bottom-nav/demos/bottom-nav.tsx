@@ -1,4 +1,4 @@
-﻿import { BottomNav, KendoBottomNavProps } from '../bottom-nav.spec';
+import { BottomNav, KendoBottomNavProps } from '../bottom-nav.spec';
 import { BottomNavItem } from '../bottom-nav-item';
 import { BottomNavNormal } from '../templates/bottom-nav-normal';
 
@@ -56,6 +56,7 @@ BottomNavDemo.states = states;
 BottomNavDemo.variants = variants;
 BottomNavDemo.defaultOptions = defaults;
 BottomNavDemo.modifiers = modifiers;
+BottomNavDemo.className = BottomNav.className;
 
 export default BottomNavDemo;
 

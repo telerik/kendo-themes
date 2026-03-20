@@ -1,4 +1,4 @@
-﻿import { Splitter, KendoSplitterProps } from '../splitter.spec';
+import { Splitter, KendoSplitterProps } from '../splitter.spec';
 import { SplitterPane } from '../splitter-pane';
 
 const options = Splitter.options;
@@ -97,6 +97,7 @@ SplitterDemo.states = states;
 SplitterDemo.variants = variants;
 SplitterDemo.defaultOptions = defaults;
 SplitterDemo.modifiers = modifiers;
+SplitterDemo.className = Splitter.className;
 
 export default SplitterDemo;
 

@@ -1,4 +1,4 @@
-﻿import { Rating, RatingProps } from '../rating.spec';
+import { Rating, RatingProps } from '../rating.spec';
 import { RatingNormal } from '../templates/rating-normal';
 import { RatingWithLabel } from '../templates/rating-with-label';
 
@@ -43,6 +43,7 @@ RatingDemo.states = states;
 RatingDemo.variants = variants;
 RatingDemo.defaultOptions = defaults;
 RatingDemo.modifiers = modifiers;
+RatingDemo.className = Rating.className;
 
 export default RatingDemo;
 

@@ -1,4 +1,4 @@
-﻿import { DropdownList, KendoDropdownListProps } from '../dropdownlist.spec';
+import { DropdownList, KendoDropdownListProps } from '../dropdownlist.spec';
 import { List, ListContent, ListItem } from '../../list';
 import { Searchbox } from '../../searchbox/searchbox.spec';
 
@@ -61,6 +61,7 @@ DropdownlistDemo.states = states;
 DropdownlistDemo.variants = variants;
 DropdownlistDemo.defaultOptions = defaults;
 DropdownlistDemo.modifiers = modifiers;
+DropdownlistDemo.className = DropdownList.className;
 
 export default DropdownlistDemo;
 

@@ -1,4 +1,4 @@
-﻿import { ColorEditor } from "../../coloreditor";
+import { ColorEditor } from "../../coloreditor";
 import ColorPicker, { KendoColorPickerProps } from "../colorpicker.spec";
 import { ColorPickerNormal } from "../templates/colorpicker-normal";
 
@@ -81,5 +81,6 @@ ColorpickerDemo.states = states;
 ColorpickerDemo.variants = variants;
 ColorpickerDemo.defaultOptions = defaults;
 ColorpickerDemo.modifiers = modifiers;
+ColorpickerDemo.className = ColorPicker.className;
 
 export default ColorpickerDemo;

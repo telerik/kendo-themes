@@ -2,12 +2,14 @@
 @use "./variables.scss" as *;
 @use "../../functions/index.scss" as *;
 @use "../../motion/index.scss" as *;
+@use "../icons/_variables.scss" as *;
 
 @mixin kendo-segmented-control--layout-base() {
 
     .k-segmented-control {
         position: relative;
         display: inline-flex;
+        vertical-align: middle;
         align-items: center;
         flex-flow: row nowrap;
         padding-inline: $kendo-segmented-control-padding-x;
@@ -36,6 +38,16 @@
                     padding-inline: $_button-padding-inline;
                     padding-block: $_button-padding-block;
                     gap: $_button-gap;
+                }
+
+                .k-segmented-control-button-icon {
+                    min-height: calc( #{$_font-size} * #{$_line-height} );
+
+                    &.k-svg-icon > svg {
+                        width: $kendo-icon-size-md;
+                        height: $kendo-icon-size-md;
+                    }
+
                 }
             }
         }
@@ -68,6 +80,12 @@
         cursor: pointer;
         font-size: inherit;
         line-height: inherit;
+        -webkit-appearance: none;
+
+        &:focus {
+            outline: none;
+        }
+
     }
 
     .k-segmented-control-button-text {

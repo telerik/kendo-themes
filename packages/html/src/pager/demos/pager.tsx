@@ -1,4 +1,4 @@
-﻿import { Pager, KendoPagerProps } from '../pager.spec';
+import { Pager, KendoPagerProps } from '../pager.spec';
 
 const options = Pager.options;
 const states = Pager.states;
@@ -39,6 +39,7 @@ PagerDemo.states = states;
 PagerDemo.variants = variants;
 PagerDemo.defaultOptions = defaults;
 PagerDemo.modifiers = modifiers;
+PagerDemo.className = Pager.className;
 
 export default PagerDemo;
 

@@ -1,4 +1,4 @@
-﻿import { PanelBar } from '../panelbar.spec';
+import { PanelBar } from '../panelbar.spec';
 import { PanelBarContent } from '../panelbar-content';
 import { PanelBarGroup } from '../panelbar-group';
 import { PanelBarItem } from '../panelbar-item';
@@ -119,6 +119,7 @@ PanelbarDemo.states = states;
 PanelbarDemo.variants = variants;
 PanelbarDemo.defaultOptions = defaults;
 PanelbarDemo.modifiers = modifiers;
+PanelbarDemo.className = PanelBar.className;
 
 export default PanelbarDemo;
 

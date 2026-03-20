@@ -1,4 +1,4 @@
-﻿import { DateTimePicker, KendoDateTimePickerProps } from '../datetimepicker.spec';
+import { DateTimePicker, KendoDateTimePickerProps } from '../datetimepicker.spec';
 import { DateTimePickerNormal } from '../templates/datetimepicker-normal';
 
 const options = DateTimePicker.options;
@@ -68,6 +68,7 @@ DatetimepickerDemo.states = states;
 DatetimepickerDemo.variants = variants;
 DatetimepickerDemo.defaultOptions = defaults;
 DatetimepickerDemo.modifiers = modifiers;
+DatetimepickerDemo.className = DateTimePicker.className;
 
 export default DatetimepickerDemo;
 
