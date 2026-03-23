@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pdf-viewer-search-panel-padding-x</td>
     <td>String</td>
     <td><code>$kendo-toolbar-md-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PDFViewer search panel.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pdf-viewer-search-panel-padding-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-toolbar-md-padding-x} * 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5, 0.625rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PDFViewer search panel.</div></div>
