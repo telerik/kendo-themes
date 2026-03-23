@@ -139,7 +139,7 @@ function getReportDate(config: VpatConfig): string {
     if (config.product.reportDate && config.product.reportDate !== 'auto') {
         return config.product.reportDate;
     }
-    return new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    return new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 }
 
 function getVersion(config: VpatConfig): string {

@@ -106,6 +106,7 @@ module.exports = [
             "@typescript-eslint/no-explicit-any": "off",
             "no-unused-vars": "off",
             "no-undef": "off",
+            "no-console": "off",
             "preserve-caught-error": "off"
         }
     }
