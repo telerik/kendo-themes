@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.1-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.1...v13.1.1-dev.2) (2026-03-23)
+
+
+### Bug Fixes
+
+* **grid:** align pinned container with scrollbar area ([8f02379](https://github.com/telerik/kendo-themes/commit/8f0237973bf197e2220901762da38ec0b27df2cf))
+
+
+
+
+
 ## [13.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.0...v13.1.1-dev.1) (2026-03-23)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap
