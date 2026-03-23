@@ -50,7 +50,7 @@
             background: none;
             font: inherit;
             outline: 0;
-            box-shadow: none;
+            box-shadow: none !important; // stylelint-disable-line declaration-no-important
         }
 
         // fix for Safari
