@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.0...v13.1.1-dev.1) (2026-03-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-classic
+
+
+
+
+
 ## [13.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.0...v13.1.1-dev.0) (2026-03-20)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic
