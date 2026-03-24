@@ -16,6 +16,9 @@
     },
     "fluent": {
       "source": "styles/fluent.scss"
+    },
+    "starter": {
+      "source": "styles/starter.scss"
     }
   },
   "scripts": {

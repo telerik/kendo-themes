@@ -2,7 +2,7 @@ const esbuild = require('esbuild');
 const { sassPlugin } = require('esbuild-sass-plugin');
 const path = require('path');
 
-const themes = ['default', 'bootstrap', 'material', 'fluent', 'classic'];
+const themes = ['default', 'bootstrap', 'material', 'fluent', 'classic', 'starter'];
 
 async function build() {
   const buildPromises = themes.map(theme => esbuild.build({
