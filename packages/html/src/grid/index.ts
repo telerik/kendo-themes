@@ -32,4 +32,5 @@ export * from './templates/grid-stack';
 export * from './templates/grid-with-pinned-rows';
 export * from './templates/grid-with-pinned-rows-pin-column';
 export * from './templates/grid-with-sticky-grouping';
+export * from './templates/grid-with-locked-columns-sticky-grouping';
 export * from './demos/grid';
