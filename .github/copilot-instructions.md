@@ -186,6 +186,28 @@ npm run test:a11y:affected              # Test only git-changed components
 npm run test:contrast                   # Validate color contrast ratios
 ```
 
+## Agent Skills
+
+A suite of task-specific skills lives in `.github/skills/`. Each skill contains a `SKILL.md` with step-by-step instructions for common workflows. Skills always read `.github/skills/shared/repo-conventions.md` first.
+
+| Task | Skill |
+|------|-------|
+| Create a new component from scratch | `.github/skills/component-generator/SKILL.md` |
+| Add a new `$kendo-*` design token | `.github/skills/token-scaffolder/SKILL.md` |
+| WCAG 2.2 audit + ARIA attributes | `.github/skills/accessibility-auditor/SKILL.md` |
+| Add a variant/size/state to existing component | `.github/skills/component-variant-expander/SKILL.md` |
+| Create a theme swatch or new theme package | `.github/skills/theme-creator/SKILL.md` |
+| Audit token gaps and hardcoded values | `.github/skills/token-audit/SKILL.md` |
+| Generate HTML visual test scenarios | `.github/skills/test-generator/SKILL.md` |
+| Add SassDoc + write variables reference | `.github/skills/component-documenter/SKILL.md` |
+| Write CHANGELOG entries | `.github/skills/changelog-author/SKILL.md` |
+| Create non-component SCSS module | `.github/skills/scss-module-author/SKILL.md` |
+| Convert raw CSS to Kendo-tokenized SCSS | `.github/skills/css-to-scss-migrator/SKILL.md` |
+| Prepare a release (version bump + checklist) | `.github/skills/release-prep/SKILL.md` |
+| Review PR against contribution standards | `.github/skills/pr-review/SKILL.md` |
+
+See `.github/skills/README.md` for the full index and skill interaction map.
+
 ## Common Issues
 
 - **Unit tests failing**: Run `npm run docs` first to generate metadata
