@@ -16,6 +16,7 @@ This monorepo contains SCSS themes for all Kendo UI products, providing consiste
 | **material** | Material Design theme | `.github/instructions/themes.instructions.md` |
 | **classic** | Classic Kendo theme | `.github/instructions/themes.instructions.md` |
 | **fluent** | Microsoft Fluent theme | `.github/instructions/themes.instructions.md` |
+| **starter** | Internal starter theme (based on Default) | `.github/instructions/themes.instructions.md` |
 | **utils** | Utility-first CSS classes (standalone) | `.github/instructions/utils.instructions.md` |
 | **html** | React component specs for visual testing | `.github/instructions/html.instructions.md` |
 

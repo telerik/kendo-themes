@@ -1,5 +1,5 @@
 ---
-applyTo: "packages/{default,classic,material,fluent,bootstrap}/**"
+applyTo: "packages/{default,classic,material,fluent,bootstrap,starter}/**"
 ---
 
 # Theme Packages

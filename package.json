@@ -10,6 +10,7 @@
     "./packages/classic",
     "./packages/material",
     "./packages/fluent",
+    "./packages/starter",
     "./packages/utils"
   ],
   "devDependencies": {
