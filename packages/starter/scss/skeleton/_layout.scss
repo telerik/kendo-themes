@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/skeleton/_layout.scss" as *;
+
+
+@mixin kendo-skeleton--layout() {
+    @include kendo-skeleton--layout-base();
+}

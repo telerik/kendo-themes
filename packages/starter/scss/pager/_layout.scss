@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/pager/_layout.scss" as *;
+
+
+@mixin kendo-pager--layout() {
+    @include kendo-pager--layout-base();
+}

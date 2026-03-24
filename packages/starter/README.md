@@ -1,0 +1,1 @@
+# Kendo UI Starter Theme

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/progressbar/_layout.scss" as *;
+
+
+@mixin kendo-progressbar--layout() {
+    @include kendo-progressbar--layout-base();
+}

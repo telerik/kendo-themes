@@ -1,0 +1,153 @@
+@use "../core/_index.scss" as *;
+
+
+// Slider
+/// The default size of the Slider.
+/// @group slider
+$kendo-slider-size: 200px !default;
+/// The default size of the Slider's track wrap.
+/// @group slider
+$kendo-slider-alt-size: 30px !default;
+
+/// The font family of the Slider.
+/// @group slider
+$kendo-slider-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Slider.
+/// @group slider
+$kendo-slider-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Slider.
+/// @group slider
+$kendo-slider-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The offset of the Slider Buttons.
+/// @group slider
+$kendo-slider-button-offset: 10px !default;
+/// The size of the Slider Buttons.
+/// @group slider
+$kendo-slider-button-size: ($kendo-slider-alt-size - 2) !default;
+
+/// The thickness of the Slider track.
+/// @group slider
+$kendo-slider-track-thickness: 4px !default;
+/// The size of the Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-size: 14px !default;
+/// The border width of the Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-border-width: 1px !default;
+/// The transition scale of the active Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-active-scale: 1 !default;
+
+/// The background color of the Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-bg: k-color(primary) !default;
+/// The text color of the Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-text: k-color(on-primary) !default;
+/// The border color of the Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-border: k-color(primary) !default;
+/// The gradient of the Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-gradient: null !default;
+
+/// The background color of the hovered Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-hover-bg: k-color(primary-hover) !default;
+/// The text color of the hovered Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-hover-text: null !default;
+/// The border color of the hovered Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-hover-border: k-color(primary) !default;
+/// The gradient of the hovered Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-hover-gradient: null !default;
+/// The shadow of the hovered Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-hover-shadow: null !default;
+
+/// The background color of the active Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-pressed-bg: k-color(primary-active) !default;
+/// The text color of the active Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-pressed-text: null !default;
+/// The border color of the active Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-pressed-border: k-color(primary-active) !default;
+/// The gradient of the active Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-pressed-gradient: null !default;
+
+/// The shadow of the focused Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(primary) 30%, transparent) !default;
+
+/// The transition speed of the Slider.
+/// @group slider
+$kendo-slider-transition-speed: k-duration(brisk) !default;
+/// The transition function of the Slider.
+/// @group slider
+$kendo-slider-transition-function: k-easing(standard) !default;
+/// The transition speed of the Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-transition-speed: k-duration(quick) !default;
+/// The transition function of the Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-transition-function: k-easing(decelerate) !default;
+
+/// The background color of the Slider track.
+/// @group slider
+$kendo-slider-track-bg: k-color(base-emphasis) !default;
+/// The background color of the Slider's track selection.
+/// @group slider
+$kendo-slider-selection-bg: k-color(primary) !default;
+/// @group slider
+/// The opacity of the disabled Slider.
+$kendo-slider-disabled-opacity: null !default;
+
+/// The background image of the horizontal Slider tick.
+/// @group slider
+$kendo-slider-tick-horizontal-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+/// The background image of the vertical Slider tick.
+/// @group slider
+$kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+
+@forward "@progress/kendo-theme-core/scss/components/slider/_variables.scss" with (
+    $kendo-slider-size: $kendo-slider-size,
+    $kendo-slider-alt-size: $kendo-slider-alt-size,
+    $kendo-slider-font-family: $kendo-slider-font-family,
+    $kendo-slider-font-size: $kendo-slider-font-size,
+    $kendo-slider-line-height: $kendo-slider-line-height,
+    $kendo-slider-button-offset: $kendo-slider-button-offset,
+    $kendo-slider-button-size: $kendo-slider-button-size,
+    $kendo-slider-track-thickness: $kendo-slider-track-thickness,
+    $kendo-slider-draghandle-size: $kendo-slider-draghandle-size,
+    $kendo-slider-draghandle-border-width: $kendo-slider-draghandle-border-width,
+    $kendo-slider-draghandle-active-scale: $kendo-slider-draghandle-active-scale,
+    $kendo-slider-draghandle-bg: $kendo-slider-draghandle-bg,
+    $kendo-slider-draghandle-text: $kendo-slider-draghandle-text,
+    $kendo-slider-draghandle-border: $kendo-slider-draghandle-border,
+    $kendo-slider-draghandle-gradient: $kendo-slider-draghandle-gradient,
+    $kendo-slider-draghandle-hover-bg: $kendo-slider-draghandle-hover-bg,
+    $kendo-slider-draghandle-hover-text: $kendo-slider-draghandle-hover-text,
+    $kendo-slider-draghandle-hover-border: $kendo-slider-draghandle-hover-border,
+    $kendo-slider-draghandle-hover-gradient: $kendo-slider-draghandle-hover-gradient,
+    $kendo-slider-draghandle-hover-shadow: $kendo-slider-draghandle-hover-shadow,
+    $kendo-slider-draghandle-pressed-bg: $kendo-slider-draghandle-pressed-bg,
+    $kendo-slider-draghandle-pressed-text: $kendo-slider-draghandle-pressed-text,
+    $kendo-slider-draghandle-pressed-border: $kendo-slider-draghandle-pressed-border,
+    $kendo-slider-draghandle-pressed-gradient: $kendo-slider-draghandle-pressed-gradient,
+    $kendo-slider-draghandle-focus-shadow: $kendo-slider-draghandle-focus-shadow,
+    $kendo-slider-transition-speed: $kendo-slider-transition-speed,
+    $kendo-slider-transition-function: $kendo-slider-transition-function,
+    $kendo-slider-draghandle-transition-speed: $kendo-slider-draghandle-transition-speed,
+    $kendo-slider-draghandle-transition-function: $kendo-slider-draghandle-transition-function,
+    $kendo-slider-track-bg: $kendo-slider-track-bg,
+    $kendo-slider-selection-bg: $kendo-slider-selection-bg,
+    $kendo-slider-disabled-opacity: $kendo-slider-disabled-opacity,
+    $kendo-slider-tick-horizontal-image: $kendo-slider-tick-horizontal-image,
+    $kendo-slider-tick-vertical-image: $kendo-slider-tick-vertical-image
+);

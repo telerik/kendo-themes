@@ -1,0 +1,219 @@
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../card/_variables.scss" as *;
+
+// Timeline
+
+/// The horizontal spacing of the Timeline.
+/// @group timeline
+$kendo-timeline-spacing-x: k-spacing(10) !default;
+/// The vertical spacing of the Timeline.
+/// @group timeline
+$kendo-timeline-spacing-y: k-spacing(10) !default;
+/// The padding between the Timeline's track items.
+/// @group timeline
+$kendo-timeline-items-padding: k-spacing(4) !default;
+
+/// The font family of the Timeline.
+/// @group timeline
+$kendo-timeline-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Timeline.
+/// @group timeline
+$kendo-timeline-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Timeline.
+/// @group timeline
+$kendo-timeline-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The horizontal spacing of the mobile Timeline.
+/// @group timeline
+$kendo-timeline-mobile-spacing-x: k-spacing(4) !default;
+/// The vertical spacing of the mobile Timeline.
+/// @group timeline
+$kendo-timeline-mobile-spacing-y: k-spacing(4) !default;
+
+/// The width of the Timeline track arrow.
+/// @group timeline
+$kendo-timeline-track-arrow-width: k-spacing(7.5) !default;
+/// The height of the Timeline track arrow.
+/// @group timeline
+$kendo-timeline-track-arrow-height: k-spacing(7.5) !default;
+
+/// The background color of the disabled Timeline track arrow.
+/// @group timeline
+$kendo-timeline-track-arrow-disabled-bg: color-mix(in srgb, k-color(base-subtle) 60%, transparent) !default;
+/// The text color of the disabled Timeline track arrow.
+/// @group timeline
+$kendo-timeline-track-arrow-disabled-text: color-mix(in srgb, k-color(on-base) 60%, transparent) !default;
+/// The border color of the disabled Timeline track arrow.
+/// @group timeline
+$kendo-timeline-track-arrow-disabled-border: k-color(border) !default;
+
+/// The size of the Timeline track.
+/// @group timeline
+$kendo-timeline-track-size: k-spacing(1.5) !default;
+/// The bottom padding of the Timeline's track wrapper.
+/// @group timeline
+$kendo-timeline-track-wrap-padding-bottom: calc( #{$kendo-timeline-track-size} / 2) !default;
+/// The border width of the Timeline track.
+/// @group timeline
+$kendo-timeline-track-border-width: 1px !default;
+/// The bottom margin of the Timeline track.
+/// @group timeline
+$kendo-timeline-track-margin-bottom: k-spacing(4) !default;
+/// The bottom offset of the Timeline track.
+/// @group timeline
+$kendo-timeline-track-bottom-calc: calc( calc( #{$kendo-timeline-track-arrow-height} / 2) + #{$kendo-timeline-track-wrap-padding-bottom}) !default;
+/// The left offset of the Timeline track.
+/// @group timeline
+$kendo-timeline-track-start-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 * #{$kendo-timeline-track-border-width}) !default;
+/// The right offset of the Timeline track.
+/// @group timeline
+$kendo-timeline-track-end-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 * #{$kendo-timeline-track-border-width}) !default;
+/// The background color of the Timeline track.
+/// @group timeline
+$kendo-timeline-track-bg: $kendo-button-bg !default;
+/// The border color of the Timeline track.
+/// @group timeline
+$kendo-timeline-track-border-color: $kendo-button-border !default;
+
+/// The shadow of the Timeline's focused track items.
+/// @group timeline
+$kendo-timeline-track-item-focus-shadow: k-elevation(2) !default;
+
+/// The offset of the Timeline track event.
+/// @group timeline
+$kendo-timeline-track-event-offset: 36px !default;
+
+/// The horizontal padding of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-padding-x: $kendo-button-md-padding-x !default;
+/// The vertical padding of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-padding-y: $kendo-button-md-padding-y !default;
+/// The line height of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-line-height: $kendo-button-line-height !default;
+/// The minimum width of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-min-width: 80px !default;
+/// The maximum width of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-max-width: calc(#{$kendo-timeline-flag-min-width} + 2 * #{$kendo-timeline-spacing-x}) !default;
+/// The maximum width of the mobile Timeline flag.
+/// @group timeline
+$kendo-timeline-mobile-flag-max-width: calc(#{$kendo-timeline-flag-min-width} + 2 * #{$kendo-timeline-mobile-spacing-x}) !default;
+/// The minimum width of the horizontal Timeline flag.
+/// @group timeline
+$kendo-timeline-horizontal-flag-min-width: 60px !default;
+/// The background color of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-bg: k-color(primary) !default;
+/// The text color of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-text: k-color(on-primary) !default;
+
+/// The width of the Timeline's flag callout.
+/// @group timeline
+$kendo-timeline-flag-callout-width: 10px !default;
+/// The height of the Timeline's flag callout.
+/// @group timeline
+$kendo-timeline-flag-callout-height: 10px !default;
+
+/// The bottom offset of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-offset-bottom: 4px !default;
+/// The bottom margin of the Timeline flag.
+/// @group timeline
+$kendo-timeline-flag-margin-bottom-calc: calc(#{$kendo-timeline-track-size} + 2 * #{$kendo-timeline-track-border-width} + #{$kendo-timeline-flag-offset-bottom} + #{$kendo-timeline-flag-callout-height}) !default;
+
+/// The width of the Timeline date.
+/// @group timeline
+$kendo-timeline-date-width: 50px !default;
+/// The bottom margin of the Timeline date.
+/// @group timeline
+$kendo-timeline-date-margin-bottom: k-spacing(2) !default;
+
+/// The padding of the vertical Timeline.
+/// @group timeline
+$kendo-timeline-vertical-padding-calc: calc(#{$kendo-timeline-spacing-x} + (#{$kendo-timeline-flag-min-width} - #{$kendo-timeline-track-size}) / 2) !default;
+/// The padding of the vertical Timeline date.
+/// @group timeline
+$kendo-timeline-vertical-padding-with-dates-calc: calc(#{$kendo-timeline-vertical-padding-calc} + #{$kendo-timeline-date-width}) !default;
+/// The padding of the vertical mobile Timeline.
+/// @group timeline
+$kendo-timeline-mobile-vertical-padding-calc: calc(#{$kendo-timeline-mobile-spacing-x} + (#{$kendo-timeline-flag-min-width} - #{$kendo-timeline-track-size}) / 2) !default;
+/// The padding of the vertical mobile Timeline date.
+/// @group timeline
+$kendo-timeline-mobile-vertical-padding-with-dates-calc: calc(#{$kendo-timeline-mobile-vertical-padding-calc} + #{$kendo-timeline-date-width}) !default;
+
+/// The width of the Timeline circle.
+/// @group timeline
+$kendo-timeline-circle-width: k-spacing(4) !default;
+/// The height of the Timeline circle.
+/// @group timeline
+$kendo-timeline-circle-height: $kendo-timeline-circle-width !default;
+/// The background color of the Timeline circle.
+/// @group timeline
+$kendo-timeline-circle-bg: k-color(primary) !default;
+
+/// The width of the Timeline event.
+/// @group timeline
+$kendo-timeline-event-width: 400px !default;
+/// The height of the Timeline event.
+/// @group timeline
+$kendo-timeline-event-height: 600px !default;
+/// The minimum height of the Timeline event.
+/// @group timeline
+$kendo-timeline-event-min-height-calc: calc(2 * (#{$kendo-timeline-track-event-offset} - #{$kendo-card-border-width})) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/timeline/_variables.scss" with (
+    $kendo-timeline-spacing-x: $kendo-timeline-spacing-x,
+    $kendo-timeline-spacing-y: $kendo-timeline-spacing-y,
+    $kendo-timeline-items-padding: $kendo-timeline-items-padding,
+    $kendo-timeline-font-family: $kendo-timeline-font-family,
+    $kendo-timeline-font-size: $kendo-timeline-font-size,
+    $kendo-timeline-line-height: $kendo-timeline-line-height,
+    $kendo-timeline-mobile-spacing-x: $kendo-timeline-mobile-spacing-x,
+    $kendo-timeline-mobile-spacing-y: $kendo-timeline-mobile-spacing-y,
+    $kendo-timeline-track-arrow-width: $kendo-timeline-track-arrow-width,
+    $kendo-timeline-track-arrow-height: $kendo-timeline-track-arrow-height,
+    $kendo-timeline-track-arrow-disabled-bg: $kendo-timeline-track-arrow-disabled-bg,
+    $kendo-timeline-track-arrow-disabled-text: $kendo-timeline-track-arrow-disabled-text,
+    $kendo-timeline-track-arrow-disabled-border: $kendo-timeline-track-arrow-disabled-border,
+    $kendo-timeline-track-size: $kendo-timeline-track-size,
+    $kendo-timeline-track-wrap-padding-bottom: $kendo-timeline-track-wrap-padding-bottom,
+    $kendo-timeline-track-border-width: $kendo-timeline-track-border-width,
+    $kendo-timeline-track-margin-bottom: $kendo-timeline-track-margin-bottom,
+    $kendo-timeline-track-bottom-calc: $kendo-timeline-track-bottom-calc,
+    $kendo-timeline-track-start-calc: $kendo-timeline-track-start-calc,
+    $kendo-timeline-track-end-calc: $kendo-timeline-track-end-calc,
+    $kendo-timeline-track-bg: $kendo-timeline-track-bg,
+    $kendo-timeline-track-border-color: $kendo-timeline-track-border-color,
+    $kendo-timeline-track-item-focus-shadow: $kendo-timeline-track-item-focus-shadow,
+    $kendo-timeline-track-event-offset: $kendo-timeline-track-event-offset,
+    $kendo-timeline-flag-padding-x: $kendo-timeline-flag-padding-x,
+    $kendo-timeline-flag-padding-y: $kendo-timeline-flag-padding-y,
+    $kendo-timeline-flag-line-height: $kendo-timeline-flag-line-height,
+    $kendo-timeline-flag-min-width: $kendo-timeline-flag-min-width,
+    $kendo-timeline-flag-max-width: $kendo-timeline-flag-max-width,
+    $kendo-timeline-mobile-flag-max-width: $kendo-timeline-mobile-flag-max-width,
+    $kendo-timeline-horizontal-flag-min-width: $kendo-timeline-horizontal-flag-min-width,
+    $kendo-timeline-flag-bg: $kendo-timeline-flag-bg,
+    $kendo-timeline-flag-text: $kendo-timeline-flag-text,
+    $kendo-timeline-flag-callout-width: $kendo-timeline-flag-callout-width,
+    $kendo-timeline-flag-callout-height: $kendo-timeline-flag-callout-height,
+    $kendo-timeline-flag-offset-bottom: $kendo-timeline-flag-offset-bottom,
+    $kendo-timeline-flag-margin-bottom-calc: $kendo-timeline-flag-margin-bottom-calc,
+    $kendo-timeline-date-width: $kendo-timeline-date-width,
+    $kendo-timeline-date-margin-bottom: $kendo-timeline-date-margin-bottom,
+    $kendo-timeline-vertical-padding-calc: $kendo-timeline-vertical-padding-calc,
+    $kendo-timeline-vertical-padding-with-dates-calc: $kendo-timeline-vertical-padding-with-dates-calc,
+    $kendo-timeline-mobile-vertical-padding-calc: $kendo-timeline-mobile-vertical-padding-calc,
+    $kendo-timeline-mobile-vertical-padding-with-dates-calc: $kendo-timeline-mobile-vertical-padding-with-dates-calc,
+    $kendo-timeline-circle-width: $kendo-timeline-circle-width,
+    $kendo-timeline-circle-height: $kendo-timeline-circle-height,
+    $kendo-timeline-circle-bg: $kendo-timeline-circle-bg,
+    $kendo-timeline-event-width: $kendo-timeline-event-width,
+    $kendo-timeline-event-height: $kendo-timeline-event-height,
+    $kendo-timeline-event-min-height-calc: $kendo-timeline-event-min-height-calc
+);

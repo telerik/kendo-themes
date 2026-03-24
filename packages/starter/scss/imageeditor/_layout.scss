@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/imageeditor/_layout.scss" as *;
+
+
+@mixin kendo-image-editor--layout() {
+    @include kendo-image-editor--layout-base();
+}

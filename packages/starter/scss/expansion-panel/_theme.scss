@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/expansion-panel/_theme.scss" as *;
+
+
+@mixin kendo-expander--theme() {
+    @include kendo-expander--theme-base();
+}

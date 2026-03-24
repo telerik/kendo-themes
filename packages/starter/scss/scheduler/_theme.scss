@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/scheduler/_theme.scss" as *;
+
+
+@mixin kendo-scheduler--theme() {
+    @include kendo-scheduler--theme-base();
+}

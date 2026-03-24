@@ -1,0 +1,57 @@
+@use "../core/_index.scss" as *;
+
+// ListBox
+
+/// The spacing between the ListBox elements.
+/// @group listbox
+$kendo-listbox-spacing: k-spacing(2) !default;
+/// The spacing between the ListBox buttons.
+/// @group listbox
+$kendo-listbox-button-spacing: k-spacing(2) !default;
+/// The width of the ListBox.
+/// @group listbox
+$kendo-listbox-width: 10em !default;
+/// The height of the ListBox.
+/// @group listbox
+$kendo-listbox-default-height: 200px !default;
+/// The width of the border around the ListBox.
+/// @group listbox
+$kendo-listbox-border-width: 1px !default;
+/// The font family of the ListBox.
+/// @group listbox
+$kendo-listbox-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the ListBox.
+/// @group listbox
+$kendo-listbox-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the ListBox.
+/// @group listbox
+$kendo-listbox-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The text color of the ListBox.
+/// @group listbox
+$kendo-listbox-text: k-color(on-app-surface) !default;
+/// The background color of the ListBox.
+/// @group listbox
+$kendo-listbox-bg: k-color(surface-alt) !default;
+/// The border color of the ListBox.
+/// @group listbox
+$kendo-listbox-border: k-color(border) !default;
+
+/// The width of the ListBox drop hint.
+/// @group listbox
+$kendo-listbox-drop-hint-width: 1px !default;
+
+@forward "@progress/kendo-theme-core/scss/components/listbox/_variables.scss" with (
+    $kendo-listbox-spacing: $kendo-listbox-spacing,
+    $kendo-listbox-button-spacing: $kendo-listbox-button-spacing,
+    $kendo-listbox-width: $kendo-listbox-width,
+    $kendo-listbox-default-height: $kendo-listbox-default-height,
+    $kendo-listbox-border-width: $kendo-listbox-border-width,
+    $kendo-listbox-font-family: $kendo-listbox-font-family,
+    $kendo-listbox-font-size: $kendo-listbox-font-size,
+    $kendo-listbox-line-height: $kendo-listbox-line-height,
+    $kendo-listbox-text: $kendo-listbox-text,
+    $kendo-listbox-bg: $kendo-listbox-bg,
+    $kendo-listbox-border: $kendo-listbox-border,
+    $kendo-listbox-drop-hint-width: $kendo-listbox-drop-hint-width
+);

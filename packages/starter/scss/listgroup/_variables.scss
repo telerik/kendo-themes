@@ -1,0 +1,49 @@
+@use "../core/_index.scss" as *;
+
+// Listgroup
+/// The width of the border around the ListGroup.
+/// @group listgroup
+$kendo-listgroup-border-width: 1px !default;
+/// The border radius of the ListGroup.
+/// @group listgroup
+$kendo-listgroup-border-radius: k-border-radius(md) !default;
+
+/// The font size of the ListGroup.
+/// @group listgroup
+$kendo-listgroup-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the ListGroup.
+/// @group listgroup
+$kendo-listgroup-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The background color of the ListGroup.
+/// @group listgroup
+$kendo-listgroup-bg: k-color(surface-alt) !default;
+/// The text color of the ListGroup.
+/// @group listgroup
+$kendo-listgroup-text: k-color(on-app-surface) !default;
+/// The border color of the ListGroup.
+/// @group listgroup
+$kendo-listgroup-border: k-color(border) !default;
+
+/// The horizontal padding of the ListGroup item.
+/// @group listgroup
+$kendo-listgroup-item-padding-x: k-spacing(2) !default;
+/// The vertical padding of the ListGroup item.
+/// @group listgroup
+$kendo-listgroup-item-padding-y: k-spacing(2) !default;
+/// The width of the border around the ListGroup item.
+/// @group listgroup
+$kendo-listgroup-item-border-width: 1px !default;
+
+@forward "@progress/kendo-theme-core/scss/components/listgroup/_variables.scss" with (
+    $kendo-listgroup-border-width: $kendo-listgroup-border-width,
+    $kendo-listgroup-border-radius: $kendo-listgroup-border-radius,
+    $kendo-listgroup-font-size: $kendo-listgroup-font-size,
+    $kendo-listgroup-line-height: $kendo-listgroup-line-height,
+    $kendo-listgroup-bg: $kendo-listgroup-bg,
+    $kendo-listgroup-text: $kendo-listgroup-text,
+    $kendo-listgroup-border: $kendo-listgroup-border,
+    $kendo-listgroup-item-padding-x: $kendo-listgroup-item-padding-x,
+    $kendo-listgroup-item-padding-y: $kendo-listgroup-item-padding-y,
+    $kendo-listgroup-item-border-width: $kendo-listgroup-item-border-width
+);

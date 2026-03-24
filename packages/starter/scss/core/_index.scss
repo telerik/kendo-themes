@@ -1,0 +1,14 @@
+// Core Index
+@forward "@progress/kendo-theme-core/scss/index.scss";
+
+// Variables
+@forward "../_variables.scss";
+
+// Global disabled styles
+:root {
+    --kendo-disabled-text: unset;
+    --kendo-disabled-bg: unset;
+    --kendo-disabled-border: unset;
+    --kendo-disabled-opacity: .6;
+    --kendo-disabled-filter: grayscale(.1);
+}

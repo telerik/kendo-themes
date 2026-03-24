@@ -1,0 +1,289 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+
+// ColorGradient
+
+/// The default size of the ColorGradient.
+/// @group color-gradient
+/// @role default
+$kendo-color-gradient-default-size: "md" !default;
+
+/// The spacer of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-spacer: k-spacing(3) !default;
+
+/// The width of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-width: null !default;
+/// The width of the border around the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-border-width: 1px !default;
+/// The border radius of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-border-radius: k-border-radius(md) !default;
+/// The spacing between the sections of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-gap: null !default;
+/// The font family of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-line-height: var( --kendo-line-height, normal ) !default;
+/// The text color of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-text: k-color(on-app-surface) !default;
+/// The background color of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-bg: k-color(surface-alt) !default;
+/// The border color of the ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-border: k-color(border) !default;
+
+/// The vertical padding of the small ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-sm-padding-y: $kendo-color-gradient-spacer !default;
+/// The horizontal padding of the small ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-sm-padding-x: k-spacing(3) !default;
+/// The vertical padding of the medium ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-md-padding-y: $kendo-color-gradient-spacer !default;
+/// The horizontal padding of the medium ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-md-padding-x: k-spacing(3) !default;
+/// The vertical padding of the large ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-lg-padding-y: k-spacing(4.5) !default;
+/// The horizontal padding of the large ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-lg-padding-x: k-spacing(4.5) !default;
+
+/// The width of the small ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-sm-width: 252px !default;
+/// The width of the medium ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-md-width: 272px !default;
+/// The width of the large ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-lg-width: 362px !default;
+
+/// The spacing between the sections of the small ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-sm-gap: $kendo-color-gradient-spacer !default;
+/// The spacing between the sections of the medium ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-md-gap: $kendo-color-gradient-spacer !default;
+/// The spacing between the sections of the large ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-lg-gap: k-spacing(4.5) !default;
+
+/// The border color of the focused ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-focus-border: null !default;
+/// The box shadow of the focused ColorGradient.
+/// @group color-gradient
+$kendo-color-gradient-focus-shadow: k-elevation(3) !default;
+
+/// The border radius of the ColorGradient canvas.
+/// @group color-gradient
+$kendo-color-gradient-canvas-border-radius: k-border-radius(md) !default;
+/// The spacing between the items of the ColorGradient canvas.
+/// @group color-gradient
+$kendo-color-gradient-canvas-gap: $kendo-color-gradient-spacer !default;
+/// The height the ColorGradient canvas hsv rectangle.
+/// @group color-gradient
+$kendo-color-gradient-canvas-rectangle-height: 202px !default;
+/// The height the small ColorGradient canvas hsv rectangle.
+/// @group color-gradient
+$kendo-color-gradient-sm-canvas-rectangle-height: 182px !default;
+/// The height the medium ColorGradient canvas hsv rectangle.
+/// @group color-gradient
+$kendo-color-gradient-md-canvas-rectangle-height: $kendo-color-gradient-canvas-rectangle-height !default;
+/// The height the large ColorGradient canvas hsv rectangle.
+/// @group color-gradient
+$kendo-color-gradient-lg-canvas-rectangle-height: 268px !default;
+
+/// The spacing between the items of the small ColorGradient canvas.
+/// @group color-gradient
+$kendo-color-gradient-sm-canvas-gap: $kendo-color-gradient-canvas-gap !default;
+/// The spacing between the items of the medium ColorGradient canvas.
+/// @group color-gradient
+$kendo-color-gradient-md-canvas-gap: $kendo-color-gradient-canvas-gap !default;
+/// The spacing between the items of the large ColorGradient canvas.
+/// @group color-gradient
+$kendo-color-gradient-lg-canvas-gap: k-spacing(4.5) !default;
+
+/// The width of the ColorGradient slider.
+/// @group color-gradient
+$kendo-color-gradient-slider-track-size: 10px !default;
+/// The border radius of the ColorGradient slider.
+/// @group color-gradient
+$kendo-color-gradient-slider-border-radius: 10px !default;
+/// The width of the border around the ColorGradient slider drag handle.
+/// @group color-gradient
+$kendo-color-gradient-slider-draghandle-border-width: 3px !default;
+
+/// The height of the ColorGradient vertical slider.
+/// @group color-gradient
+$kendo-color-gradient-slider-vertical-size: $kendo-color-gradient-canvas-rectangle-height !default;
+/// The width of the ColorGradient horizontal slider.
+/// @group color-gradient
+$kendo-color-gradient-slider-horizontal-size: 100% !default;
+/// The background image of the ColorGradient alpha slider.
+/// @group color-gradient
+$kendo-color-gradient-slider-alpha-bgr: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgBxYyxDQAwDMJIL+YT+DjtzFRliUfLcklqBCRT4eCTxbD6kdL2/LgYXqpvCbs3kBv/AAAAAElFTkSuQmCC" !default;
+
+/// The height of the small ColorGradient vertical slider.
+/// @group color-gradient
+$kendo-color-gradient-sm-slider-vertical-size: $kendo-color-gradient-sm-canvas-rectangle-height !default;
+/// The height of the medium ColorGradient vertical slider.
+/// @group color-gradient
+$kendo-color-gradient-md-slider-vertical-size: $kendo-color-gradient-md-canvas-rectangle-height !default;
+/// The height of the large ColorGradient vertical slider.
+/// @group color-gradient
+$kendo-color-gradient-lg-slider-vertical-size: $kendo-color-gradient-lg-canvas-rectangle-height !default;
+
+/// The width of the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-width: 14px !default;
+/// The height of the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-height: 14px !default;
+/// The width of the border around the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-border-width: 1px !default;
+/// The width of the outline around the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-outline-width: 1px !default;
+/// The border radius of the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-border-radius: 50% !default;
+/// The text color of the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-text: null !default;
+/// The background color of the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-bg: transparent !default;
+/// The color of the border around the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-border: color-mix(in srgb, k-color(light) 80%, transparent) !default;
+/// The focus color of the outline around the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-focus-shadow: k-color(dark) !default;
+/// The hover color of the outline around the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-hover-shadow: k-color(dark) !default;
+/// The box shadow of the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-draghandle-shadow: k-elevation(2) !default;
+
+/// The vertical margin of the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-canvas-draghandle-margin-y: - math.div( $kendo-color-gradient-draghandle-height, 2 ) !default;
+/// The horizontal margin of the ColorGradient canvas drag handle.
+/// @group color-gradient
+$kendo-color-gradient-canvas-draghandle-margin-x: - math.div( $kendo-color-gradient-draghandle-width, 2 ) !default;
+
+/// The width of the ColorGradient input.
+/// @group color-gradient
+$kendo-color-gradient-input-width: 46px !default;
+/// The spacing between the ColorGradient inputs.
+/// @group color-gradient
+$kendo-color-gradient-input-gap: k-spacing(2) !default;
+/// The spacing between the ColorGradient inputs and their labels.
+/// @group color-gradient
+$kendo-color-gradient-input-label-gap: calc( #{$kendo-color-gradient-spacer} / 3 ) !default;
+/// The text color of the ColorGradient input labels.
+/// @group color-gradient
+$kendo-color-gradient-input-label-text: k-color(subtle) !default;
+
+/// The width of the small ColorGradient input.
+/// @group color-gradient
+$kendo-color-gradient-sm-input-width: 42px !default;
+/// The width of the medium ColorGradient input.
+/// @group color-gradient
+$kendo-color-gradient-md-input-width: $kendo-color-gradient-input-width !default;
+/// The width of the large ColorGradient input.
+/// @group color-gradient
+$kendo-color-gradient-lg-input-width: 62px !default;
+
+/// The font weight of the ColorGradient contrast ratio text.
+/// @group color-gradient
+$kendo-color-gradient-contrast-ratio-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+/// The spacing between the items in the ColorGradient contrast tool.
+/// @group color-gradient
+$kendo-color-gradient-contrast-spacer: calc( #{$kendo-color-gradient-spacer} / 1.5 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/colorgradient/_variables.scss" with (
+    $kendo-color-gradient-default-size: $kendo-color-gradient-default-size,
+    $kendo-color-gradient-spacer: $kendo-color-gradient-spacer,
+    $kendo-color-gradient-width: $kendo-color-gradient-width,
+    $kendo-color-gradient-border-width: $kendo-color-gradient-border-width,
+    $kendo-color-gradient-border-radius: $kendo-color-gradient-border-radius,
+    $kendo-color-gradient-gap: $kendo-color-gradient-gap,
+    $kendo-color-gradient-font-family: $kendo-color-gradient-font-family,
+    $kendo-color-gradient-font-size: $kendo-color-gradient-font-size,
+    $kendo-color-gradient-line-height: $kendo-color-gradient-line-height,
+    $kendo-color-gradient-text: $kendo-color-gradient-text,
+    $kendo-color-gradient-bg: $kendo-color-gradient-bg,
+    $kendo-color-gradient-border: $kendo-color-gradient-border,
+    $kendo-color-gradient-sm-width: $kendo-color-gradient-sm-width,
+    $kendo-color-gradient-md-width: $kendo-color-gradient-md-width,
+    $kendo-color-gradient-lg-width: $kendo-color-gradient-lg-width,
+    $kendo-color-gradient-sm-gap: $kendo-color-gradient-sm-gap,
+    $kendo-color-gradient-md-gap: $kendo-color-gradient-md-gap,
+    $kendo-color-gradient-lg-gap: $kendo-color-gradient-lg-gap,
+    $kendo-color-gradient-focus-border: $kendo-color-gradient-focus-border,
+    $kendo-color-gradient-focus-shadow: $kendo-color-gradient-focus-shadow,
+    $kendo-color-gradient-canvas-border-radius: $kendo-color-gradient-canvas-border-radius,
+    $kendo-color-gradient-canvas-gap: $kendo-color-gradient-canvas-gap,
+    $kendo-color-gradient-canvas-rectangle-height: $kendo-color-gradient-canvas-rectangle-height,
+    $kendo-color-gradient-sm-canvas-rectangle-height: $kendo-color-gradient-sm-canvas-rectangle-height,
+    $kendo-color-gradient-md-canvas-rectangle-height: $kendo-color-gradient-md-canvas-rectangle-height,
+    $kendo-color-gradient-lg-canvas-rectangle-height: $kendo-color-gradient-lg-canvas-rectangle-height,
+    $kendo-color-gradient-sm-canvas-gap: $kendo-color-gradient-sm-canvas-gap,
+    $kendo-color-gradient-md-canvas-gap: $kendo-color-gradient-md-canvas-gap,
+    $kendo-color-gradient-lg-canvas-gap: $kendo-color-gradient-lg-canvas-gap,
+    $kendo-color-gradient-sm-padding-x: $kendo-color-gradient-sm-padding-x,
+    $kendo-color-gradient-sm-padding-y: $kendo-color-gradient-sm-padding-y,
+    $kendo-color-gradient-md-padding-x: $kendo-color-gradient-md-padding-x,
+    $kendo-color-gradient-md-padding-y: $kendo-color-gradient-md-padding-y,
+    $kendo-color-gradient-lg-padding-x: $kendo-color-gradient-lg-padding-x,
+    $kendo-color-gradient-lg-padding-y: $kendo-color-gradient-lg-padding-y,
+    $kendo-color-gradient-slider-track-size: $kendo-color-gradient-slider-track-size,
+    $kendo-color-gradient-slider-border-radius: $kendo-color-gradient-slider-border-radius,
+    $kendo-color-gradient-slider-draghandle-border-width: $kendo-color-gradient-slider-draghandle-border-width,
+    $kendo-color-gradient-slider-vertical-size: $kendo-color-gradient-slider-vertical-size,
+    $kendo-color-gradient-slider-horizontal-size: $kendo-color-gradient-slider-horizontal-size,
+    $kendo-color-gradient-slider-alpha-bgr: $kendo-color-gradient-slider-alpha-bgr,
+    $kendo-color-gradient-sm-slider-vertical-size: $kendo-color-gradient-sm-slider-vertical-size,
+    $kendo-color-gradient-md-slider-vertical-size: $kendo-color-gradient-md-slider-vertical-size,
+    $kendo-color-gradient-lg-slider-vertical-size: $kendo-color-gradient-lg-slider-vertical-size,
+    $kendo-color-gradient-draghandle-width: $kendo-color-gradient-draghandle-width,
+    $kendo-color-gradient-draghandle-height: $kendo-color-gradient-draghandle-height,
+    $kendo-color-gradient-draghandle-border-width: $kendo-color-gradient-draghandle-border-width,
+    $kendo-color-gradient-draghandle-outline-width: $kendo-color-gradient-draghandle-outline-width,
+    $kendo-color-gradient-draghandle-border-radius: $kendo-color-gradient-draghandle-border-radius,
+    $kendo-color-gradient-draghandle-text: $kendo-color-gradient-draghandle-text,
+    $kendo-color-gradient-draghandle-bg: $kendo-color-gradient-draghandle-bg,
+    $kendo-color-gradient-draghandle-border: $kendo-color-gradient-draghandle-border,
+    $kendo-color-gradient-draghandle-focus-shadow: $kendo-color-gradient-draghandle-focus-shadow,
+    $kendo-color-gradient-draghandle-hover-shadow: $kendo-color-gradient-draghandle-hover-shadow,
+    $kendo-color-gradient-draghandle-shadow: $kendo-color-gradient-draghandle-shadow,
+    $kendo-color-gradient-canvas-draghandle-margin-y: $kendo-color-gradient-canvas-draghandle-margin-y,
+    $kendo-color-gradient-canvas-draghandle-margin-x: $kendo-color-gradient-canvas-draghandle-margin-x,
+    $kendo-color-gradient-input-width: $kendo-color-gradient-input-width,
+    $kendo-color-gradient-input-gap: $kendo-color-gradient-input-gap,
+    $kendo-color-gradient-input-label-gap: $kendo-color-gradient-input-label-gap,
+    $kendo-color-gradient-input-label-text: $kendo-color-gradient-input-label-text,
+    $kendo-color-gradient-sm-input-width: $kendo-color-gradient-sm-input-width,
+    $kendo-color-gradient-md-input-width: $kendo-color-gradient-md-input-width,
+    $kendo-color-gradient-lg-input-width: $kendo-color-gradient-lg-input-width,
+    $kendo-color-gradient-contrast-ratio-font-weight: $kendo-color-gradient-contrast-ratio-font-weight,
+    $kendo-color-gradient-contrast-spacer: $kendo-color-gradient-contrast-spacer,
+);

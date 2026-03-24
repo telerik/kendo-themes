@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/colorgradient/_theme.scss" as *;
+
+
+@mixin kendo-color-gradient--theme() {
+    @include kendo-color-gradient--theme-base();
+}

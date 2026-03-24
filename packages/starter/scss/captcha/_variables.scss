@@ -1,0 +1,66 @@
+@use "../core/_index.scss" as *;
+
+// Captcha
+
+/// The spacer of the Captcha.
+/// @group captcha
+$kendo-captcha-spacer: k-spacing(2) !default;
+
+/// The width of the Captcha.
+/// @group captcha
+$kendo-captcha-width: 280px !default;
+/// The font family of the Captcha.
+/// @group captcha
+$kendo-captcha-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Captcha.
+/// @group captcha
+$kendo-captcha-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Captcha.
+/// @group captcha
+$kendo-captcha-line-height: var( --kendo-line-height, normal ) !default;
+/// The gap of the Captcha.
+/// @group captcha
+$kendo-captcha-gap: $kendo-captcha-spacer !default;
+/// The background color of the Captcha.
+/// @group captcha
+$kendo-captcha-bg: k-color(surface-alt) !default;
+/// The text color of the Captcha.
+/// @group captcha
+$kendo-captcha-text: k-color(surface-alt) !default;
+/// The border color of the Captcha.
+/// @group captcha
+$kendo-captcha-border: k-color(surface-alt) !default;
+
+/// The gap of the Captcha image wrapper.
+/// @group captcha
+$kendo-captcha-image-wrap-gap: $kendo-captcha-spacer !default;
+/// The gap of the Captcha image controls.
+/// @group captcha
+$kendo-captcha-image-controls-gap: $kendo-captcha-spacer !default;
+
+/// The top margin of the Captcha validation message.
+/// @group captcha
+$kendo-captcha-validation-message-margin-top: calc( #{$kendo-captcha-spacer} / 2 ) !default;
+/// The font size of the Captcha validation message.
+/// @group captcha
+$kendo-captcha-validation-message-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The font style of the Captcha validation message.
+/// @group captcha
+$kendo-captcha-validation-message-font-style: italic !default;
+
+@forward "@progress/kendo-theme-core/scss/components/captcha/_variables.scss" with (
+    $kendo-captcha-spacer: $kendo-captcha-spacer,
+    $kendo-captcha-width: $kendo-captcha-width,
+    $kendo-captcha-font-family: $kendo-captcha-font-family,
+    $kendo-captcha-font-size: $kendo-captcha-font-size,
+    $kendo-captcha-line-height: $kendo-captcha-line-height,
+    $kendo-captcha-gap: $kendo-captcha-gap,
+    $kendo-captcha-bg: $kendo-captcha-bg,
+    $kendo-captcha-text: $kendo-captcha-text,
+    $kendo-captcha-border: $kendo-captcha-border,
+    $kendo-captcha-image-wrap-gap: $kendo-captcha-image-wrap-gap,
+    $kendo-captcha-image-controls-gap: $kendo-captcha-image-controls-gap,
+    $kendo-captcha-validation-message-margin-top: $kendo-captcha-validation-message-margin-top,
+    $kendo-captcha-validation-message-font-size: $kendo-captcha-validation-message-font-size,
+    $kendo-captcha-validation-message-font-style: $kendo-captcha-validation-message-font-style
+);

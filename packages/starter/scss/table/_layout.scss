@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/table/_layout.scss" as *;
+
+
+@mixin kendo-table--layout() {
+    @include kendo-table--layout-base();
+}

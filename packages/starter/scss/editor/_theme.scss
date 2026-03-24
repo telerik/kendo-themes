@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/editor/_theme.scss" as *;
+
+
+@mixin kendo-editor--theme() {
+    @include kendo-editor--theme-base();
+}

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/panelbar/_theme.scss" as *;
+
+
+@mixin kendo-panelbar--theme() {
+    @include kendo-panelbar--theme-base();
+}

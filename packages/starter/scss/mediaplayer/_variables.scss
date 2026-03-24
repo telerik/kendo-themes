@@ -1,0 +1,54 @@
+@use "../core/_index.scss" as *;
+
+
+// Media player
+
+/// The border width of the MediaPlayer.
+/// @group mediaplayer
+$kendo-media-player-border-width: 1px !default;
+/// The font family of the MediaPlayer.
+/// @group mediaplayer
+$kendo-media-player-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the MediaPlayer.
+/// @group mediaplayer
+$kendo-media-player-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the MediaPlayer.
+/// @group mediaplayer
+$kendo-media-player-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The background color of the MediaPlayer.
+/// @group mediaplayer
+$kendo-media-player-bg: k-color(surface-alt) !default;
+/// The text color of the MediaPlayer.
+/// @group mediaplayer
+$kendo-media-player-text: k-color(on-app-surface) !default;
+/// The border color of the MediaPlayer.
+/// @group mediaplayer
+$kendo-media-player-border: k-color(border) !default;
+
+/// The horizontal padding of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
+/// The vertical padding of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
+/// The text color of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
+/// The gradient of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-gradient: color-mix(in srgb, k-color(on-app-surface) 70%, transparent), color-mix(in srgb, k-color(on-app-surface) 0%, transparent) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/mediaplayer/_variables.scss" with (
+    $kendo-media-player-border-width: $kendo-media-player-border-width,
+    $kendo-media-player-font-family: $kendo-media-player-font-family,
+    $kendo-media-player-font-size: $kendo-media-player-font-size,
+    $kendo-media-player-line-height: $kendo-media-player-line-height,
+    $kendo-media-player-bg: $kendo-media-player-bg,
+    $kendo-media-player-text: $kendo-media-player-text,
+    $kendo-media-player-border: $kendo-media-player-border,
+    $kendo-media-player-titlebar-padding-x: $kendo-media-player-titlebar-padding-x,
+    $kendo-media-player-titlebar-padding-y: $kendo-media-player-titlebar-padding-y,
+    $kendo-media-player-titlebar-text: $kendo-media-player-titlebar-text,
+    $kendo-media-player-titlebar-gradient: $kendo-media-player-titlebar-gradient
+);

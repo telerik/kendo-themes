@@ -1,0 +1,340 @@
+@use "../core/_index.scss" as *;
+@use "../table/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../grid/_variables.scss" as *;
+
+
+// Pivot grid
+/// The spacer of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-spacer: k-spacing(4) !default;
+/// The horizontal padding of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-padding-x: null !default;
+/// The vertical of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-padding-y: null !default;
+/// The font family of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-line-height: var( --kendo-line-height, normal ) !default;
+/// The border width of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-border-width: 1px !default;
+/// The icon spacing of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-icon-spacing: k-spacing(1) !default;
+
+/// The default width of the PivotGrid row header.
+/// @group pivotgrid
+$kendo-pivotgrid-row-header-width: 300px !default;
+/// The default height of the PivotGrid column header.
+/// @group pivotgrid
+$kendo-pivotgrid-column-header-height: 75px !default;
+
+/// The horizontal padding of the PivotGrid cell.
+/// @group pivotgrid
+$kendo-pivotgrid-cell-padding-x: $kendo-table-md-cell-padding-x !default;
+/// The vertical padding of the PivotGrid cell.
+/// @group pivotgrid
+$kendo-pivotgrid-cell-padding-y: $kendo-table-md-cell-padding-y !default;
+/// The border width of the PivotGrid cell.
+/// @group pivotgrid
+$kendo-pivotgrid-cell-border-width: 1px !default;
+
+/// The background color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-bg: k-color(surface-alt) !default;
+/// The text color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-text: k-color(on-app-surface) !default;
+/// The border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-border: k-color(border) !default;
+
+/// The alt border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-alt-border: k-color(border-alt) !default;
+
+/// The background color of the PivotGrid header.
+/// @group pivotgrid
+$kendo-pivotgrid-headers-bg: k-color(surface)!default;
+/// The text color of the PivotGrid header.
+/// @group pivotgrid
+$kendo-pivotgrid-headers-text: k-color(on-app-surface) !default;
+/// The border color of the PivotGrid header.
+/// @group pivotgrid
+$kendo-pivotgrid-headers-border: k-color(border) !default;
+
+/// The background color of the PivotGrid total cells.
+/// @group pivotgrid
+$kendo-pivotgrid-total-bg: k-color(base-subtle) !default;
+/// The text color of the PivotGrid total cells.
+/// @group pivotgrid
+$kendo-pivotgrid-total-text: k-color(on-app-surface) !default;
+/// The border color of the PivotGrid total cells.
+/// @group pivotgrid
+$kendo-pivotgrid-total-border: k-color(border) !default;
+
+/// The hover background color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-hover-bg: k-color(base-hover) !default;
+/// The hover text color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-hover-text: null !default;
+/// The hover border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-hover-border: null !default;
+
+/// The selected background color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-selected-bg: color-mix(in srgb, k-color(primary) 25%, transparent) !default;
+/// The selected text color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-selected-text: null !default;
+/// The selected border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-selected-border: null !default;
+
+/// The focus shadow of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-focus-shadow: $kendo-list-item-focus-shadow !default;
+
+
+// PivotGrid Configurator
+/// The horizontal padding of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-padding-x: null !default;
+/// The vertical padding of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-padding-y: null !default;
+/// The border width of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-border-width: 1px !default;
+
+/// The horizontal padding of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-padding-x: $kendo-pivotgrid-spacer !default;
+/// The vertical padding of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-padding-y: calc( #{$kendo-pivotgrid-spacer} * .75 ) !default;
+/// The font size of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-font-size: 18px !default;
+/// The font weight of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-font-weight: 500 !default;
+
+/// The horizontal padding of the PivotGrid configurator content.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-content-padding-x: $kendo-pivotgrid-spacer !default;
+/// The vertical padding of the PivotGrid configurator content.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-content-padding-y: k-spacing(0.5) !default;
+
+/// The horizontal margin of the PivotGrid configurator fields.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-fields-margin-x: k-spacing(0) !default;
+/// The vertical margin of the PivotGrid configurator fields.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-fields-margin-y: calc( #{$kendo-pivotgrid-spacer} / 2 ) !default;
+
+/// The default width of the PivotGrid vertical configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-vertical-width: 320px !default;
+/// The default height of the PivotGrid horizontal configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-horizontal-height: 420px !default;
+
+/// The background color of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-bg: k-color(surface-alt) !default;
+/// The text color of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-text: k-color(on-app-surface) !default;
+/// The border color of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-border: k-color(border) !default;
+
+/// The background color of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-bg: null !default;
+/// The text color of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-text: k-color(on-app-surface) !default;
+/// The border color of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-border: null !default;
+
+/// The shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-shadow: k-elevation(3) !default;
+/// The end shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-end-shadow: $kendo-pivotgrid-configurator-shadow !default; // -3px 0px 6px rgba(0, 0, 0, .16)
+/// The start shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-start-shadow: $kendo-pivotgrid-configurator-shadow !default; // 3px 0px 6px rgba(0, 0, 0, .16)
+/// The top shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-top-shadow: $kendo-pivotgrid-configurator-shadow  !default; // 0px -3px 6px rgba(0, 0, 0, .16)
+/// The bottom shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-bottom-shadow: $kendo-pivotgrid-configurator-shadow !default; // 0px 3px 6px rgba(0, 0, 0, .16)
+
+/// The horizontal padding of the PivotGrid configurator button.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-button-padding-x: k-spacing(1) !default;
+/// The vertical padding of the PivotGrid configurator button.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-button-padding-y: k-spacing(1) !default;
+/// The border width of the PivotGrid configurator button.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-button-border-width: 1px !default;
+/// The size of the PivotGrid configurator button.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-button-size: calc( calc( #{$kendo-pivotgrid-line-height} * 1em ) + calc( #{$kendo-pivotgrid-configurator-button-padding-y} * 2 ) + calc( #{$kendo-pivotgrid-configurator-button-border-width} * 2 ) ) !default;
+
+
+// Calculated fields
+/// The horizontal padding of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-padding-x: $kendo-pivotgrid-spacer !default;
+/// The vertical padding of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-padding-y: $kendo-pivotgrid-spacer !default;
+/// The border width of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-border-width: 1px !default;
+/// The border radius of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-border-radius: k-border-radius(md) !default;
+/// The spacing of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-gap: $kendo-pivotgrid-spacer !default;
+
+/// The background color of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-bg: k-color(surface-alt) !default;
+/// The text color of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-text: k-color(on-app-surface) !default;
+/// The border color of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-border: k-color(border) !default;
+
+/// The background color of the PivotGrid calculated field header.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-header-bg: null !default;
+/// The text color of the PivotGrid calculated field header.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-header-text: k-color(on-app-surface) !default;
+/// The border color of the PivotGrid calculated field header.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-header-border: null !default;
+
+
+/// The horizontal padding of the PivotGrid treeview.
+/// @group pivotgrid
+$kendo-pivotgrid-treeview-padding-x: calc( #{$kendo-pivotgrid-spacer} / 2 ) !default;
+/// The vertical padding of the PivotGrid treeview.
+/// @group pivotgrid
+$kendo-pivotgrid-treeview-padding-y: k-spacing(0) !default;
+
+// Legacy variables
+/// The background color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-alt-bg: $kendo-grid-header-bg !default;
+/// The text color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-alt-text: $kendo-grid-header-text !default;
+/// The border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
+
+/// The background color of the PivotGrid row.
+/// @group pivotgrid
+$kendo-pivotgrid-row-headers-bg: k-color(base) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/pivotgrid/_variables.scss" with (
+    $kendo-pivotgrid-spacer: $kendo-pivotgrid-spacer,
+    $kendo-pivotgrid-padding-x: $kendo-pivotgrid-padding-x,
+    $kendo-pivotgrid-padding-y: $kendo-pivotgrid-padding-y,
+    $kendo-pivotgrid-font-family: $kendo-pivotgrid-font-family,
+    $kendo-pivotgrid-font-size: $kendo-pivotgrid-font-size,
+    $kendo-pivotgrid-line-height: $kendo-pivotgrid-line-height,
+    $kendo-pivotgrid-border-width: $kendo-pivotgrid-border-width,
+    $kendo-pivotgrid-icon-spacing: $kendo-pivotgrid-icon-spacing,
+    $kendo-pivotgrid-row-header-width: $kendo-pivotgrid-row-header-width,
+    $kendo-pivotgrid-column-header-height: $kendo-pivotgrid-column-header-height,
+    $kendo-pivotgrid-cell-padding-x: $kendo-pivotgrid-cell-padding-x,
+    $kendo-pivotgrid-cell-padding-y: $kendo-pivotgrid-cell-padding-y,
+    $kendo-pivotgrid-cell-border-width: $kendo-pivotgrid-cell-border-width,
+    $kendo-pivotgrid-bg: $kendo-pivotgrid-bg,
+    $kendo-pivotgrid-text: $kendo-pivotgrid-text,
+    $kendo-pivotgrid-border: $kendo-pivotgrid-border,
+    $kendo-pivotgrid-alt-border: $kendo-pivotgrid-alt-border,
+    $kendo-pivotgrid-headers-bg: $kendo-pivotgrid-headers-bg,
+    $kendo-pivotgrid-headers-text: $kendo-pivotgrid-headers-text,
+    $kendo-pivotgrid-headers-border: $kendo-pivotgrid-headers-border,
+    $kendo-pivotgrid-total-bg: $kendo-pivotgrid-total-bg,
+    $kendo-pivotgrid-total-text: $kendo-pivotgrid-total-text,
+    $kendo-pivotgrid-total-border: $kendo-pivotgrid-total-border,
+    $kendo-pivotgrid-hover-bg: $kendo-pivotgrid-hover-bg,
+    $kendo-pivotgrid-hover-text: $kendo-pivotgrid-hover-text,
+    $kendo-pivotgrid-hover-border: $kendo-pivotgrid-hover-border,
+    $kendo-pivotgrid-selected-bg: $kendo-pivotgrid-selected-bg,
+    $kendo-pivotgrid-selected-text: $kendo-pivotgrid-selected-text,
+    $kendo-pivotgrid-selected-border: $kendo-pivotgrid-selected-border,
+    $kendo-pivotgrid-focus-shadow: $kendo-pivotgrid-focus-shadow,
+    $kendo-pivotgrid-configurator-padding-x: $kendo-pivotgrid-configurator-padding-x,
+    $kendo-pivotgrid-configurator-padding-y: $kendo-pivotgrid-configurator-padding-y,
+    $kendo-pivotgrid-configurator-border-width: $kendo-pivotgrid-configurator-border-width,
+    $kendo-pivotgrid-configurator-header-padding-x: $kendo-pivotgrid-configurator-header-padding-x,
+    $kendo-pivotgrid-configurator-header-padding-y: $kendo-pivotgrid-configurator-header-padding-y,
+    $kendo-pivotgrid-configurator-header-font-size: $kendo-pivotgrid-configurator-header-font-size,
+    $kendo-pivotgrid-configurator-header-font-weight: $kendo-pivotgrid-configurator-header-font-weight,
+    $kendo-pivotgrid-configurator-content-padding-x: $kendo-pivotgrid-configurator-content-padding-x,
+    $kendo-pivotgrid-configurator-content-padding-y: $kendo-pivotgrid-configurator-content-padding-y,
+    $kendo-pivotgrid-configurator-fields-margin-x: $kendo-pivotgrid-configurator-fields-margin-x,
+    $kendo-pivotgrid-configurator-fields-margin-y: $kendo-pivotgrid-configurator-fields-margin-y,
+    $kendo-pivotgrid-configurator-vertical-width: $kendo-pivotgrid-configurator-vertical-width,
+    $kendo-pivotgrid-configurator-horizontal-height: $kendo-pivotgrid-configurator-horizontal-height,
+    $kendo-pivotgrid-configurator-bg: $kendo-pivotgrid-configurator-bg,
+    $kendo-pivotgrid-configurator-text: $kendo-pivotgrid-configurator-text,
+    $kendo-pivotgrid-configurator-border: $kendo-pivotgrid-configurator-border,
+    $kendo-pivotgrid-configurator-header-bg: $kendo-pivotgrid-configurator-header-bg,
+    $kendo-pivotgrid-configurator-header-text: $kendo-pivotgrid-configurator-header-text,
+    $kendo-pivotgrid-configurator-header-border: $kendo-pivotgrid-configurator-header-border,
+    $kendo-pivotgrid-configurator-shadow: $kendo-pivotgrid-configurator-shadow,
+    $kendo-pivotgrid-configurator-end-shadow: $kendo-pivotgrid-configurator-end-shadow,
+    $kendo-pivotgrid-configurator-start-shadow: $kendo-pivotgrid-configurator-start-shadow,
+    $kendo-pivotgrid-configurator-top-shadow: $kendo-pivotgrid-configurator-top-shadow,
+    $kendo-pivotgrid-configurator-bottom-shadow: $kendo-pivotgrid-configurator-bottom-shadow,
+    $kendo-pivotgrid-configurator-button-padding-x: $kendo-pivotgrid-configurator-button-padding-x,
+    $kendo-pivotgrid-configurator-button-padding-y: $kendo-pivotgrid-configurator-button-padding-y,
+    $kendo-pivotgrid-configurator-button-border-width: $kendo-pivotgrid-configurator-button-border-width,
+    $kendo-pivotgrid-configurator-button-size: $kendo-pivotgrid-configurator-button-size,
+    $kendo-pivotgrid-calculated-field-padding-x: $kendo-pivotgrid-calculated-field-padding-x,
+    $kendo-pivotgrid-calculated-field-padding-y: $kendo-pivotgrid-calculated-field-padding-y,
+    $kendo-pivotgrid-calculated-field-border-width: $kendo-pivotgrid-calculated-field-border-width,
+    $kendo-pivotgrid-calculated-field-border-radius: $kendo-pivotgrid-calculated-field-border-radius,
+    $kendo-pivotgrid-calculated-field-gap: $kendo-pivotgrid-calculated-field-gap,
+    $kendo-pivotgrid-calculated-field-bg: $kendo-pivotgrid-calculated-field-bg,
+    $kendo-pivotgrid-calculated-field-text: $kendo-pivotgrid-calculated-field-text,
+    $kendo-pivotgrid-calculated-field-border: $kendo-pivotgrid-calculated-field-border,
+    $kendo-pivotgrid-calculated-field-header-bg: $kendo-pivotgrid-calculated-field-header-bg,
+    $kendo-pivotgrid-calculated-field-header-text: $kendo-pivotgrid-calculated-field-header-text,
+    $kendo-pivotgrid-calculated-field-header-border: $kendo-pivotgrid-calculated-field-header-border,
+    $kendo-pivotgrid-treeview-padding-x: $kendo-pivotgrid-treeview-padding-x,
+    $kendo-pivotgrid-treeview-padding-y: $kendo-pivotgrid-treeview-padding-y,
+    $kendo-pivotgrid-alt-bg: $kendo-pivotgrid-alt-bg,
+    $kendo-pivotgrid-alt-text: $kendo-pivotgrid-alt-text,
+    $kendo-pivotgrid-chrome-border: $kendo-pivotgrid-chrome-border,
+    $kendo-pivotgrid-row-headers-bg: $kendo-pivotgrid-row-headers-bg,
+);

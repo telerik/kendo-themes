@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/combobox/_theme.scss" as *;
+
+
+@mixin kendo-combobox--theme() {
+    @include kendo-combobox--theme-base();
+}

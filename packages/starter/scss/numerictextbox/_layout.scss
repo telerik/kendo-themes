@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/numerictextbox/_layout.scss" as *;
+
+
+@mixin kendo-numeric-textbox--layout() {
+    @include kendo-numeric-textbox--layout-base();
+}

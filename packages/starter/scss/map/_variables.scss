@@ -1,0 +1,80 @@
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
+// Map
+/// The border width of the Map.
+/// @group map
+$kendo-map-border-width: 0px !default;
+
+/// The font size of the Map.
+/// @group map
+$kendo-map-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Map.
+/// @group map
+$kendo-map-line-height: var( --kendo-line-height, normal ) !default;
+/// The font family of the Map.
+/// @group map
+$kendo-map-font-family: var( --kendo-font-family, inherit ) !default;
+
+/// The background color of the Map.
+/// @group map
+$kendo-map-bg: k-color(surface-alt) !default;
+/// The text color of the Map.
+/// @group map
+$kendo-map-text: k-color(on-app-surface) !default;
+/// The border color of the Map.
+/// @group map
+$kendo-map-border: k-color(border) !default;
+
+/// The margin of the Map navigator.
+/// @group map
+$kendo-map-navigator-margin: k-spacing(4) !default;
+/// The padding of the Map navigator.
+/// @group map
+$kendo-map-navigator-padding: k-spacing(0.5) !default;
+/// The width of the Map navigator.
+/// @group map
+$kendo-map-navigator-width: calc( calc( #{$kendo-icon-size} * 3 ) + calc( #{$kendo-map-navigator-padding} * 2 ) ) !default;
+/// The border width of the Map navigator.
+/// @group map
+$kendo-map-navigator-border-width: 1px !default;
+
+/// The horizontal padding of the Map attribution.
+/// @group map
+$kendo-map-attribution-padding-x: k-spacing(1) !default;
+/// The vertical padding of the Map attribution.
+/// @group map
+$kendo-map-attribution-padding-y: k-spacing(0.5) !default;
+/// The font size of the Map attribution.
+/// @group map
+$kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75) !default;
+/// The background color of the Map attribution.
+/// @group map
+$kendo-map-attribution-bg: color-mix(in srgb, k-color(app-surface) 80%, transparent) !default;
+
+/// The fill color of the Map marker.
+/// @group map
+$kendo-map-marker-fill: k-color(primary) !default;
+
+$kendo-map-marker-images: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAABQCAYAAAAKlxWDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA35JREFUeNrsWF1IVEEUPu7amhKUmqUUkhEYYn9PamgbROKTEERB1HNP0pMvJUVhZQhCEEQPQiAIkiQIQShEZmg99SdLgiRJpbGmGIu/aZ2zzJXrvWf2zty7PgTzwQd3Z86Z796z58wMJ+PruXxQwCHkGeRpZDbyqBh/j1xA9iN7kJ+8FsrwECSRu8hSUMMosgnZLTMIScaLkUPIpxpiIGyfCN9iVcEo8h2yCvyjSqwR9RIkgz5kHgRHnlhrg2im7blEhCPCeW89fBJyKuohsv8IRPaV46uGYfnLhyTn3/bC4seXnFtErFmBHHcmzSCy2umRWVgC+ZfvQ1bZ8ZSfsxQbgl+PrsCfqXFu+jWyxh7Ss5xY1sFKKLzd5ymWtEWbpC36MKgWGuuCzdyXFTR2QGhbrvKfRrbkQ74Mmi3BKJf6FEYdMbso+UpKJkpJU+dKkPIaNoyrM5Mw23Edlj6/WQ957qVbEM4rcoWX1lgcGXQuURfi6o2y0YmVH2Mw2XgC5od6ksJEeqaxlW+joLIGaZFgGVcCTsx13YG1xKxrnMZoTmUN0iLB7c7R8M49LktJnSWxwMxxa5AWu5f+XV6EzQIJznHJwSWSDNlM+Fanv3OmcyQY43YNVyzOX2XLhMZoTvEviJHgsHOU9kYntuwthaLWV5BTWQ/hHbuSpGcaozmVNUiL9lIqfNfr7L7Rq7SlyfbVnzfZsjhFXzggTuoNoI14bf63thj5kK/kNvDCytIm5yzt+vF7F9jak4qhbbz1ouzEaLJv3t3iCNkYGtzCpq7Vrm9lKcNo2TIJJ/Kk23keHhB3kQLPAxhJUDiACXEkJcMYd2uzrhiRNNX5MrJW5Al7pxkQBjNpEJtxislubWRwjKtPDQyLNQZU76UTIu4NPsQahO+EzkXYwgNu60uBmPAB3Zu3HS0agp62KoJdsvAwf0NXOgQptdsU7NqEbWBBQrso4FQl0K56AKsggXzokVyJdAqmWjThlZl+BeOSsD32CLdvQSsxVu1XF2Sr7iVKB5T6nbbfnYol41vQWdwtus6ZPgRp+3pme950QV9fpito+jSmT2P6NKZP479PE9Lp06jC6tMwUO/T6CJwn0YXgfs0uvj/+jS6CNyn0UXgPo0uZH0aEnzueruRwUBfSb5Mr5TQb/o0pk9j+jSmT2P6NKZPY/o0pk9j+jQ+8E+AAQDpbNHEyW7DTAAAAABJRU5ErkJggg==" !default;
+
+@forward "@progress/kendo-theme-core/scss/components/map/_variables.scss" with (
+    $kendo-map-border-width: $kendo-map-border-width,
+    $kendo-map-font-size: $kendo-map-font-size,
+    $kendo-map-line-height: $kendo-map-line-height,
+    $kendo-map-font-family: $kendo-map-font-family,
+    $kendo-map-bg: $kendo-map-bg,
+    $kendo-map-text: $kendo-map-text,
+    $kendo-map-border: $kendo-map-border,
+    $kendo-map-navigator-margin: $kendo-map-navigator-margin,
+    $kendo-map-navigator-padding: $kendo-map-navigator-padding,
+    $kendo-map-navigator-width: $kendo-map-navigator-width,
+    $kendo-map-navigator-border-width: $kendo-map-navigator-border-width,
+    $kendo-map-attribution-padding-x: $kendo-map-attribution-padding-x,
+    $kendo-map-attribution-padding-y: $kendo-map-attribution-padding-y,
+    $kendo-map-attribution-font-size: $kendo-map-attribution-font-size,
+    $kendo-map-attribution-bg: $kendo-map-attribution-bg,
+    $kendo-map-marker-fill: $kendo-map-marker-fill,
+    $kendo-map-marker-images: $kendo-map-marker-images
+);

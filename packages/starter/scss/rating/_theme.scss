@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/rating/_theme.scss" as *;
+
+
+@mixin kendo-rating--theme() {
+    @include kendo-rating--theme-base();
+}

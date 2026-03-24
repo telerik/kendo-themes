@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/imageeditor/_theme.scss" as *;
+
+
+@mixin kendo-image-editor--theme() {
+    @include kendo-image-editor--theme-base();
+}

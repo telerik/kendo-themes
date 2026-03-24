@@ -1,0 +1,83 @@
+@use "../core/_index.scss" as *;
+
+// ListView
+
+/// The horizontal padding of the ListView.
+/// @group listview
+$kendo-listview-padding-x: k-spacing(1) !default;
+/// The vertical padding of the ListView.
+/// @group listview
+$kendo-listview-padding-y: k-spacing(1) !default;
+/// The width of the border around bordered ListView.
+/// @group listview
+$kendo-listview-border-width: 1px !default;
+/// The font family of the ListView.
+/// @group listview
+$kendo-listview-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the ListView.
+/// @group listview
+$kendo-listview-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the ListView.
+/// @group listview
+$kendo-listview-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The text color of the ListView.
+/// @group listview
+$kendo-listview-text: k-color(on-app-surface) !default;
+/// The background color of the ListView.
+/// @group listview
+$kendo-listview-bg: k-color(surface-alt) !default;
+/// The border color of the ListView.
+/// @group listview
+$kendo-listview-border: k-color(border) !default;
+
+/// The horizontal padding of the ListView items.
+/// @group listview
+$kendo-listview-item-padding-x: k-spacing(1) !default;
+/// The vertical padding of the ListView items.
+/// @group listview
+$kendo-listview-item-padding-y: k-spacing(1) !default;
+
+/// The text color of the selected ListView items.
+/// @group listview
+$kendo-listview-item-selected-text: null !default;
+/// The background color of the selected ListView items.
+/// @group listview
+$kendo-listview-item-selected-bg: color-mix(in srgb, k-color(primary) 25%, transparent) !default;
+/// The border color of the selected ListView items.
+/// @group listview
+$kendo-listview-item-selected-border: null !default;
+
+/// The text color of the focused ListView items.
+/// @group listview
+$kendo-listview-item-focus-text: null !default;
+/// The background color of the focused ListView items.
+/// @group listview
+$kendo-listview-item-focus-bg: null !default;
+/// The border color of the focused ListView items.
+/// @group listview
+$kendo-listview-item-focus-border: null !default;
+/// The box shadow of the focused ListView items.
+/// @group listview
+$kendo-listview-item-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/listview/_variables.scss" with (
+    $kendo-listview-padding-x: $kendo-listview-padding-x,
+    $kendo-listview-padding-y: $kendo-listview-padding-y,
+    $kendo-listview-border-width: $kendo-listview-border-width,
+    $kendo-listview-font-family: $kendo-listview-font-family,
+    $kendo-listview-font-size: $kendo-listview-font-size,
+    $kendo-listview-line-height: $kendo-listview-line-height,
+    $kendo-listview-text: $kendo-listview-text,
+    $kendo-listview-bg: $kendo-listview-bg,
+    $kendo-listview-border: $kendo-listview-border,
+    $kendo-listview-item-padding-x: $kendo-listview-item-padding-x,
+    $kendo-listview-item-padding-y: $kendo-listview-item-padding-y,
+    $kendo-listview-item-selected-text: $kendo-listview-item-selected-text,
+    $kendo-listview-item-selected-bg: $kendo-listview-item-selected-bg,
+    $kendo-listview-item-selected-border: $kendo-listview-item-selected-border,
+    $kendo-listview-item-focus-text: $kendo-listview-item-focus-text,
+    $kendo-listview-item-focus-bg: $kendo-listview-item-focus-bg,
+    $kendo-listview-item-focus-border: $kendo-listview-item-focus-border,
+    $kendo-listview-item-focus-shadow: $kendo-listview-item-focus-shadow
+);

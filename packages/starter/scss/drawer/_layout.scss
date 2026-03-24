@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/drawer/_layout.scss" as *;
+
+
+@mixin kendo-drawer--layout() {
+    @include kendo-drawer--layout-base();
+}

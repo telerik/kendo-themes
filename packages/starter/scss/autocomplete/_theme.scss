@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/autocomplete/_theme.scss" as *;
+
+
+@mixin kendo-autocomplete--theme() {
+    @include kendo-autocomplete--theme-base();
+}

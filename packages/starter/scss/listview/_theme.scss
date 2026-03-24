@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/listview/_theme.scss" as *;
+
+
+@mixin kendo-listview--theme() {
+    @include kendo-listview--theme-base();
+}

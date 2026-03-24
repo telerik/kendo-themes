@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/chip/_theme.scss" as *;
+
+
+@mixin kendo-chip--theme() {
+    @include kendo-chip--theme-base();
+}

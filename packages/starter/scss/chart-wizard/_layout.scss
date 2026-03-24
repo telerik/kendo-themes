@@ -1,0 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/chart-wizard/_layout.scss" as *;
+
+@mixin kendo-chart-wizard--layout() {
+    @include kendo-chart-wizard--layout-base();
+}

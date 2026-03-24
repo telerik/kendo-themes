@@ -1,0 +1,303 @@
+@use "sass:color";
+@use "../core/_index.scss" as *;
+
+
+// Stepper
+
+/// The horizontal margin the Stepper.
+/// @group stepper
+$kendo-stepper-margin-x: null !default;
+/// The vertical margin the Stepper.
+/// @group stepper
+$kendo-stepper-margin-y: null !default;
+/// The horizontal padding the Stepper.
+/// @group stepper
+$kendo-stepper-padding-x: null !default;
+/// The vertical padding the Stepper.
+/// @group stepper
+$kendo-stepper-padding-y: null !default;
+/// The horizontal margin the Stepper label.
+/// @group stepper
+$kendo-stepper-label-margin-x: k-spacing(3) !default;
+/// The horizontal padding the Stepper label.
+/// @group stepper
+$kendo-stepper-label-padding-x: k-spacing(3) !default;
+/// The vertical padding the Stepper label.
+/// @group stepper
+$kendo-stepper-label-padding-y: calc( #{k-spacing(2.5)} / 2 ) !default;
+/// The border radius of the Stepper label.
+/// @group stepper
+$kendo-stepper-label-border-radius: k-border-radius(xxxl) !default;
+/// The width of the border around the Stepper.
+/// @group stepper
+$kendo-stepper-border-width: 0px !default;
+
+/// The horizontal padding of the Stepper content.
+/// @group stepper
+$kendo-stepper-inline-content-padding-x: k-spacing(5) !default;
+/// The vertical padding of the Stepper content.
+/// @group stepper
+$kendo-stepper-inline-content-padding-y: k-spacing(2.5) !default;
+
+/// The font size of the Stepper.
+/// @group stepper
+$kendo-stepper-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Stepper.
+/// @group stepper
+$kendo-stepper-line-height: var( --kendo-line-height, normal ) !default;
+/// The font family of the Stepper.
+/// @group stepper
+$kendo-stepper-font-family: var( --kendo-font-family, inherit ) !default;
+
+/// The background color of the Stepper.
+/// @group stepper
+$kendo-stepper-bg: null !default;
+/// The text color of the Stepper.
+/// @group stepper
+$kendo-stepper-text: k-color(on-app-surface) !default;
+/// The border color of the Stepper.
+/// @group stepper
+$kendo-stepper-border: null !default;
+
+/// The width of the Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-width: 28px !default;
+/// The height of the Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-height: $kendo-stepper-indicator-width !default;
+/// The border width of the Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-border-width: 1px !default;
+/// The border radius of the Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-border-radius: 50% !default;
+
+/// The border width of the focused Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-focus-border-width: 1px !default;
+/// The size of the focused Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-focus-size: 2px !default;
+/// The offset of the Stepper's focused indicator.
+/// @group stepper
+$kendo-stepper-indicator-focus-offset: 3px !default;
+/// The calculated offset of the Stepper's focused indicator.
+/// @group stepper
+$kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) !default;
+
+/// The background color of the Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-bg: k-color(surface-alt) !default;
+/// The text color of the Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-text: k-color(on-app-surface) !default;
+/// The border color of the Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-border: k-color(border) !default;
+
+/// The background color of the hovered Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-hover-bg: k-color(base-hover) !default;
+/// The text color of the hovered Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-hover-text: null !default;
+/// The border color of the hovered Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-hover-border: null !default;
+
+/// The background color of the disabled Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-disabled-bg: null !default;
+/// The text color of the disabled Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-disabled-text: color-mix(in srgb, k-color(on-app-surface) 60%, transparent) !default;
+/// The border color of the disabled Stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-disabled-border: null !default;
+
+/// The background color of the Stepper's done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-bg: k-color(primary) !default;
+/// The text color of the Stepper's done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-text: k-color(on-primary) !default;
+/// The border color of the Stepper's done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
+
+/// The background color of the Stepper's hovered done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-hover-bg: k-color(primary-hover) !default;
+/// The text color of the Stepper's hovered done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-hover-text: null !default;
+/// The border color of the Stepper's hovered done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-hover-border: null !default;
+
+/// The background color of the Stepper's disabled done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-disabled-bg: color-mix(in srgb, k-color(primary) 60%, transparent) !default;
+/// The text color of the Stepper's disabled done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-disabled-text: k-color(on-primary) !default;
+/// The border color of the Stepper's disabled done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-disabled-border: $kendo-stepper-indicator-done-disabled-bg !default;
+
+/// The background color of the Stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-bg: $kendo-stepper-indicator-done-bg !default;
+/// The text color of the Stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-text: $kendo-stepper-indicator-done-text !default;
+/// The border color of the Stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-border: $kendo-stepper-indicator-done-border !default;
+
+/// The background color of the Stepper's hovered current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-hover-bg: $kendo-stepper-indicator-done-hover-bg !default;
+/// The text color of the Stepper's hovered current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-hover-text: $kendo-stepper-indicator-done-hover-text !default;
+/// The border color of the Stepper's hovered current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-hover-border: $kendo-stepper-indicator-done-hover-border !default;
+
+/// The background color of the Stepper's disabled current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-disabled-bg: $kendo-stepper-indicator-done-disabled-bg !default;
+/// The text color of the Stepper's disabled current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-disabled-text: $kendo-stepper-indicator-done-disabled-text !default;
+/// The border color of the Stepper's disabled current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-done-disabled-border !default;
+
+/// The text color of the Stepper label.
+/// @group stepper
+$kendo-stepper-label-text: null !default;
+/// The success text color of the Stepper label.
+/// @group stepper
+$kendo-stepper-label-success-text: k-color(success-on-surface)!default;
+/// The error text color of the Stepper label.
+/// @group stepper
+$kendo-stepper-label-error-text: k-color(error-on-surface) !default;
+/// The text color of the hovered Stepper label.
+/// @group stepper
+$kendo-stepper-label-hover-text: k-color(on-base) !default;
+/// The text color of the disabled Stepper label.
+/// @group stepper
+$kendo-stepper-label-disabled-text: color-mix(in srgb, k-color(on-app-surface) 60%, transparent) !default;
+
+/// The text color of the optional Stepper label.
+/// @group stepper
+$kendo-stepper-optional-label-text: k-color(subtle) !default;
+/// The opacity of the optional Stepper label.
+/// @group stepper
+$kendo-stepper-optional-label-opacity: null !default;
+/// The font size of the optional Stepper label.
+/// @group stepper
+$kendo-stepper-optional-label-font-size: null !default;
+/// The font style of the optional Stepper label.
+/// @group stepper
+$kendo-stepper-optional-label-font-style: italic !default;
+
+/// The size of the Stepper ProgressBar.
+/// @group stepper
+$kendo-stepper-progressbar-size: 2px !default;
+/// The background color of the Stepper ProgressBar.
+/// @group stepper
+$kendo-stepper-progressbar-bg: null !default;
+/// The text color of the Stepper ProgressBar.
+/// @group stepper
+$kendo-stepper-progressbar-text: null !default;
+/// The background color of the selected Stepper ProgressBar.
+/// @group stepper
+$kendo-stepper-progressbar-fill-bg: null !default;
+/// The text color of the selected Stepper ProgressBar.
+/// @group stepper
+$kendo-stepper-progressbar-fill-text: null !default;
+
+/// The property name of the Stepper transition.
+/// @group stepper
+$kendo-stepper-content-transition-property: height !default;
+/// The duration of the Stepper transition.
+/// @group stepper
+$kendo-stepper-content-transition-duration: k-duration(speedy) !default;
+/// The timing function of the Stepper transition.
+/// @group stepper
+$kendo-stepper-content-transition-timing-function: k-easing(standard) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/stepper/_variables.scss" with (
+    $kendo-stepper-margin-x: $kendo-stepper-margin-x,
+    $kendo-stepper-margin-y: $kendo-stepper-margin-y,
+    $kendo-stepper-padding-x: $kendo-stepper-padding-x,
+    $kendo-stepper-padding-y: $kendo-stepper-padding-y,
+    $kendo-stepper-label-margin-x: $kendo-stepper-label-margin-x,
+    $kendo-stepper-label-padding-x: $kendo-stepper-label-padding-x,
+    $kendo-stepper-label-padding-y: $kendo-stepper-label-padding-y,
+    $kendo-stepper-label-border-radius: $kendo-stepper-label-border-radius,
+    $kendo-stepper-border-width: $kendo-stepper-border-width,
+    $kendo-stepper-inline-content-padding-x: $kendo-stepper-inline-content-padding-x,
+    $kendo-stepper-inline-content-padding-y: $kendo-stepper-inline-content-padding-y,
+    $kendo-stepper-font-size: $kendo-stepper-font-size,
+    $kendo-stepper-line-height: $kendo-stepper-line-height,
+    $kendo-stepper-font-family: $kendo-stepper-font-family,
+    $kendo-stepper-bg: $kendo-stepper-bg,
+    $kendo-stepper-text: $kendo-stepper-text,
+    $kendo-stepper-border: $kendo-stepper-border,
+    $kendo-stepper-indicator-width: $kendo-stepper-indicator-width,
+    $kendo-stepper-indicator-height: $kendo-stepper-indicator-height,
+    $kendo-stepper-indicator-border-width: $kendo-stepper-indicator-border-width,
+    $kendo-stepper-indicator-border-radius: $kendo-stepper-indicator-border-radius,
+    $kendo-stepper-indicator-focus-border-width: $kendo-stepper-indicator-focus-border-width,
+    $kendo-stepper-indicator-focus-size: $kendo-stepper-indicator-focus-size,
+    $kendo-stepper-indicator-focus-offset: $kendo-stepper-indicator-focus-offset,
+    $kendo-stepper-indicator-focus-calc-offset: $kendo-stepper-indicator-focus-calc-offset,
+    $kendo-stepper-indicator-bg: $kendo-stepper-indicator-bg,
+    $kendo-stepper-indicator-text: $kendo-stepper-indicator-text,
+    $kendo-stepper-indicator-border: $kendo-stepper-indicator-border,
+    $kendo-stepper-indicator-hover-bg: $kendo-stepper-indicator-hover-bg,
+    $kendo-stepper-indicator-hover-text: $kendo-stepper-indicator-hover-text,
+    $kendo-stepper-indicator-hover-border: $kendo-stepper-indicator-hover-border,
+    $kendo-stepper-indicator-disabled-bg: $kendo-stepper-indicator-disabled-bg,
+    $kendo-stepper-indicator-disabled-text: $kendo-stepper-indicator-disabled-text,
+    $kendo-stepper-indicator-disabled-border: $kendo-stepper-indicator-disabled-border,
+    $kendo-stepper-indicator-done-bg: $kendo-stepper-indicator-done-bg,
+    $kendo-stepper-indicator-done-text: $kendo-stepper-indicator-done-text,
+    $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-border,
+    $kendo-stepper-indicator-done-hover-bg: $kendo-stepper-indicator-done-hover-bg,
+    $kendo-stepper-indicator-done-hover-text: $kendo-stepper-indicator-done-hover-text,
+    $kendo-stepper-indicator-done-hover-border: $kendo-stepper-indicator-done-hover-border,
+    $kendo-stepper-indicator-done-disabled-bg: $kendo-stepper-indicator-done-disabled-bg,
+    $kendo-stepper-indicator-done-disabled-text: $kendo-stepper-indicator-done-disabled-text,
+    $kendo-stepper-indicator-done-disabled-border: $kendo-stepper-indicator-done-disabled-border,
+    $kendo-stepper-indicator-current-bg: $kendo-stepper-indicator-current-bg,
+    $kendo-stepper-indicator-current-text: $kendo-stepper-indicator-current-text,
+    $kendo-stepper-indicator-current-border: $kendo-stepper-indicator-current-border,
+    $kendo-stepper-indicator-current-hover-bg: $kendo-stepper-indicator-current-hover-bg,
+    $kendo-stepper-indicator-current-hover-text: $kendo-stepper-indicator-current-hover-text,
+    $kendo-stepper-indicator-current-hover-border: $kendo-stepper-indicator-current-hover-border,
+    $kendo-stepper-indicator-current-disabled-bg: $kendo-stepper-indicator-current-disabled-bg,
+    $kendo-stepper-indicator-current-disabled-text: $kendo-stepper-indicator-current-disabled-text,
+    $kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-current-disabled-border,
+    $kendo-stepper-label-text: $kendo-stepper-label-text,
+    $kendo-stepper-label-success-text: $kendo-stepper-label-success-text,
+    $kendo-stepper-label-error-text: $kendo-stepper-label-error-text,
+    $kendo-stepper-label-hover-text: $kendo-stepper-label-hover-text,
+    $kendo-stepper-label-disabled-text: $kendo-stepper-label-disabled-text,
+    $kendo-stepper-optional-label-text: $kendo-stepper-optional-label-text,
+    $kendo-stepper-optional-label-opacity: $kendo-stepper-optional-label-opacity,
+    $kendo-stepper-optional-label-font-size: $kendo-stepper-optional-label-font-size,
+    $kendo-stepper-optional-label-font-style: $kendo-stepper-optional-label-font-style,
+    $kendo-stepper-progressbar-size: $kendo-stepper-progressbar-size,
+    $kendo-stepper-progressbar-bg: $kendo-stepper-progressbar-bg,
+    $kendo-stepper-progressbar-text: $kendo-stepper-progressbar-text,
+    $kendo-stepper-progressbar-fill-bg: $kendo-stepper-progressbar-fill-bg,
+    $kendo-stepper-progressbar-fill-text: $kendo-stepper-progressbar-fill-text,
+    $kendo-stepper-content-transition-property: $kendo-stepper-content-transition-property,
+    $kendo-stepper-content-transition-duration: $kendo-stepper-content-transition-duration,
+    $kendo-stepper-content-transition-timing-function: $kendo-stepper-content-transition-timing-function
+);

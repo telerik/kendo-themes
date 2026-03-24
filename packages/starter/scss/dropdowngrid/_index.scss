@@ -1,0 +1,26 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../floating-label/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+@use "../table/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-dropdown-grid--styles() {
+    @include import-once( "dropdown-grid" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-popup--styles();
+        @include kendo-table--styles();
+        @include kendo-dropdown-grid--layout();
+        @include kendo-dropdown-grid--theme();
+    }
+}

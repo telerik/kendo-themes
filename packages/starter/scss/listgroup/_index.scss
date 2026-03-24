@@ -1,0 +1,18 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-listgroup--styles() {
+    @include import-once( "listgroup" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-listgroup--layout();
+        @include kendo-listgroup--theme();
+    }
+}

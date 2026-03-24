@@ -1,0 +1,44 @@
+@use "../core/_index.scss" as *;
+
+// Actions
+
+/// The top margin of the ActionButtons.
+/// @group action-buttons
+$kendo-actions-margin-top: k-spacing(4) !default;
+/// The horizontal padding of the ActionButtons.
+/// @group action-buttons
+$kendo-actions-padding-x: k-spacing(2) !default;
+/// The vertical padding of the ActionButtons.
+/// @group action-buttons
+$kendo-actions-padding-y: k-spacing(2) !default;
+/// The width of the border around the ActionButtons.
+/// @group action-buttons
+$kendo-actions-border-width: 0px !default;
+/// The spacing between the ActionButtons buttons.
+/// @group action-buttons
+$kendo-actions-button-spacing: k-spacing(2) !default;
+
+/// The background color of the ActionButtons.
+/// @group action-buttons
+$kendo-actions-bg: null !default;
+/// The text color of the ActionButtons.
+/// @group action-buttons
+$kendo-actions-text: null !default;
+/// The border color of the ActionButtons.
+/// @group action-buttons
+$kendo-actions-border: null !default;
+/// The background gradient of the ActionButtons.
+/// @group action-buttons
+$kendo-actions-gradient: null !default;
+
+@forward "@progress/kendo-theme-core/scss/components/action-buttons/_variables.scss" with (
+    $kendo-actions-margin-top: $kendo-actions-margin-top,
+    $kendo-actions-padding-x: $kendo-actions-padding-x,
+    $kendo-actions-padding-y: $kendo-actions-padding-y,
+    $kendo-actions-border-width: $kendo-actions-border-width,
+    $kendo-actions-button-spacing: $kendo-actions-button-spacing,
+    $kendo-actions-bg: $kendo-actions-bg,
+    $kendo-actions-text: $kendo-actions-text,
+    $kendo-actions-border: $kendo-actions-border,
+    $kendo-actions-gradient: $kendo-actions-gradient
+);

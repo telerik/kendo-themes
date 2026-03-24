@@ -1,0 +1,419 @@
+@use "../core/_index.scss" as *;
+// Typography
+
+
+// Headings
+
+/// The font size of the highest level heading.
+/// @group typography-component
+$kendo-h1-font-size: calc( var( --kendo-font-size, .875rem ) * 4 ) !default;
+/// The font size of the second highest level heading.
+/// @group typography-component
+$kendo-h2-font-size: calc( var( --kendo-font-size, .875rem ) * 3 ) !default;
+/// The font size of the third highest level heading.
+/// @group typography-component
+$kendo-h3-font-size: calc( var( --kendo-font-size, .875rem ) * 2.5 ) !default;
+/// The font size of the fourth highest level heading.
+/// @group typography-component
+$kendo-h4-font-size: calc( var( --kendo-font-size, .875rem ) * 2 ) !default;
+/// The font size of the fifth highest level heading.
+/// @group typography-component
+$kendo-h5-font-size: calc( var( --kendo-font-size, .875rem ) * 1.5 ) !default;
+/// The font size of the sixth highest level heading.
+/// @group typography-component
+$kendo-h6-font-size: var( --kendo-font-size, inherit ) !default;
+
+/// The font family of the highest level heading.
+/// @group typography-component
+$kendo-h1-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font family of the second highest level heading.
+/// @group typography-component
+$kendo-h2-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font family of the third highest level heading.
+/// @group typography-component
+$kendo-h3-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font family of the fourth highest level heading.
+/// @group typography-component
+$kendo-h4-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font family of the fifth highest level heading.
+/// @group typography-component
+$kendo-h5-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font family of the sixth highest level heading.
+/// @group typography-component
+$kendo-h6-font-family: var( --kendo-font-family, inherit ) !default;
+
+/// The line height of the highest level heading.
+/// @group typography-component
+$kendo-h1-line-height: 74px !default;
+/// The line height of the second highest level heading.
+/// @group typography-component
+$kendo-h2-line-height: 56px !default;
+/// The line height of the third highest level heading.
+/// @group typography-component
+$kendo-h3-line-height: 42px !default;
+/// The line height of the fourth highest level heading.
+/// @group typography-component
+$kendo-h4-line-height: 40px !default;
+/// The line height of the fifth highest level heading.
+/// @group typography-component
+$kendo-h5-line-height: 28px !default;
+/// The line height of the sixth highest level heading.
+/// @group typography-component
+$kendo-h6-line-height: 20px !default;
+
+/// The font weight of the highest level heading.
+/// @group typography-component
+$kendo-h1-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+/// The font weight of the second highest level heading.
+/// @group typography-component
+$kendo-h2-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+/// The font weight of the third highest level heading.
+/// @group typography-component
+$kendo-h3-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+/// The font weight of the fourth highest level heading.
+/// @group typography-component
+$kendo-h4-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+/// The font weight of the fifth highest level heading.
+/// @group typography-component
+$kendo-h5-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+/// The font weight of the sixth highest level heading.
+/// @group typography-component
+$kendo-h6-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+
+/// The letter spacing of the highest level heading.
+/// @group typography-component
+$kendo-h1-letter-spacing: null !default;
+/// The letter spacing of the second highest level heading.
+/// @group typography-component
+$kendo-h2-letter-spacing: null !default;
+/// The letter spacing of the third highest level heading.
+/// @group typography-component
+$kendo-h3-letter-spacing: null !default;
+/// The letter spacing of the fourth highest level heading.
+/// @group typography-component
+$kendo-h4-letter-spacing: null !default;
+/// The letter spacing of the fifth highest level heading.
+/// @group typography-component
+$kendo-h5-letter-spacing: null !default;
+/// The letter spacing of the sixth highest level heading.
+/// @group typography-component
+$kendo-h6-letter-spacing: null !default;
+
+/// The margin of the highest level heading.
+/// @group typography-component
+$kendo-h1-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+/// The margin of the second highest level heading.
+/// @group typography-component
+$kendo-h2-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+/// The margin of the third highest level heading.
+/// @group typography-component
+$kendo-h3-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+/// The margin of the fourth highest level heading.
+/// @group typography-component
+$kendo-h4-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+/// The margin of the fifth highest level heading.
+/// @group typography-component
+$kendo-h5-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+/// The margin of the sixth highest level heading.
+/// @group typography-component
+$kendo-h6-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+
+/// The headings Map.
+/// @group typography-component
+$kendo-headings: (
+    h1: (
+        font-size: $kendo-h1-font-size,
+        font-family: $kendo-h1-font-family,
+        line-height: $kendo-h1-line-height,
+        font-weight: $kendo-h1-font-weight,
+        letter-spacing: $kendo-h1-letter-spacing,
+        margin: $kendo-h1-margin
+    ),
+    h2: (
+        font-size: $kendo-h2-font-size,
+        font-family: $kendo-h2-font-family,
+        line-height: $kendo-h2-line-height,
+        font-weight: $kendo-h2-font-weight,
+        letter-spacing: $kendo-h2-letter-spacing,
+        margin: $kendo-h2-margin
+    ),
+    h3: (
+        font-size: $kendo-h3-font-size,
+        font-family: $kendo-h3-font-family,
+        line-height: $kendo-h3-line-height,
+        font-weight: $kendo-h3-font-weight,
+        letter-spacing: $kendo-h3-letter-spacing,
+        margin: $kendo-h3-margin
+    ),
+    h4: (
+        font-size: $kendo-h4-font-size,
+        font-family: $kendo-h4-font-family,
+        line-height: $kendo-h4-line-height,
+        font-weight: $kendo-h4-font-weight,
+        letter-spacing: $kendo-h4-letter-spacing,
+        margin: $kendo-h4-margin
+    ),
+    h5: (
+        font-size: $kendo-h5-font-size,
+        font-family: $kendo-h5-font-family,
+        line-height: $kendo-h5-line-height,
+        font-weight: $kendo-h5-font-weight,
+        letter-spacing: $kendo-h5-letter-spacing,
+        margin: $kendo-h5-margin
+    ),
+    h6: (
+        font-size: $kendo-h6-font-size,
+        font-family: $kendo-h6-font-family,
+        line-height: $kendo-h6-line-height,
+        font-weight: $kendo-h6-font-weight,
+        letter-spacing: $kendo-h6-letter-spacing,
+        margin: $kendo-h6-margin
+    )
+) !default;
+
+
+// Paragraph
+
+/// The margin of the paragraph.
+/// @group typography-component
+$kendo-paragraph-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+/// The font size of the paragraph.
+/// @group typography-component
+$kendo-paragraph-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font family of the paragraph.
+/// @group typography-component
+$kendo-paragraph-font-family: var( --kendo-font-family, inherit ) !default;
+/// The line height of the paragraph.
+/// @group typography-component
+$kendo-paragraph-line-height: 20px !default;
+/// The font weight of the paragraph.
+/// @group typography-component
+$kendo-paragraph-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+/// The letter spacing of the paragraph.
+/// @group typography-component
+$kendo-paragraph-letter-spacing: null !default;
+
+
+// Code
+
+/// The font size of the code tag.
+/// @group typography-component
+$kendo-code-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font family of the code tag.
+/// @group typography-component
+$kendo-code-font-family: var( --kendo-font-family-monospace, normal ) !default;
+/// The line height of the code tag.
+/// @group typography-component
+$kendo-code-line-height: 20px !default;
+/// The font weight of the code tag.
+/// @group typography-component
+$kendo-code-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+/// The letter spacing of the code tag.
+/// @group typography-component
+$kendo-code-letter-spacing: null !default;
+
+/// The horizontal padding of the code tag.
+/// @group typography-component
+$kendo-code-padding-x: k-spacing(1) !default;
+/// The vertical padding of the code tag.
+/// @group typography-component
+$kendo-code-padding-y: k-spacing(0) !default;
+/// The horizontal padding of the preformatted text.
+/// @group typography-component
+$kendo-pre-padding-x: k-spacing(6) !default;
+/// The vertical padding of the preformatted text.
+/// @group typography-component
+$kendo-pre-padding-y: k-spacing(4) !default;
+/// The width of the border of the code tag.
+/// @group typography-component
+$kendo-code-border-width: 1px !default;
+
+/// The background color of the code tag.
+/// @group typography-component
+$kendo-code-bg: k-color(surface) !default;
+/// The color of the code tag.
+/// @group typography-component
+$kendo-code-text: k-color(on-app-surface) !default;
+/// The border color of the code tag.
+/// @group typography-component
+$kendo-code-border: k-color(border) !default;
+
+// Display
+
+/// The font size of the largest display text.
+/// @group typography-component
+$kendo-display1-font-size: calc( var( --kendo-font-size, .875rem ) * 8) !default;
+/// The font size of the second largest display text.
+/// @group typography-component
+$kendo-display2-font-size: calc( var( --kendo-font-size, .875rem ) * 7) !default;
+/// The font size of the third largest display text.
+/// @group typography-component
+$kendo-display3-font-size: calc( var( --kendo-font-size, .875rem ) * 6) !default;
+/// The font size of the fourth largest display text.
+/// @group typography-component
+$kendo-display4-font-size: calc( var( --kendo-font-size, .875rem ) * 5) !default;
+
+/// The font family of the largest display text.
+/// @group typography-component
+$kendo-display1-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font family of the second largest display text.
+/// @group typography-component
+$kendo-display2-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font family of the third largest display text.
+/// @group typography-component
+$kendo-display3-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font family of the fourth largest display text.
+/// @group typography-component
+$kendo-display4-font-family: var( --kendo-font-family, inherit ) !default;
+
+/// The line height of the largest display text.
+/// @group typography-component
+$kendo-display1-line-height: 1.2 !default;
+/// The line height of the second largest display text.
+/// @group typography-component
+$kendo-display2-line-height: 1.2 !default;
+/// The line height of the third largest display text.
+/// @group typography-component
+$kendo-display3-line-height: 1.2 !default;
+/// The line height of the fourth largest display text.
+/// @group typography-component
+$kendo-display4-line-height: 1.2 !default;
+
+/// The font weight of the largest display text.
+/// @group typography-component
+$kendo-display1-font-weight: var( --kendo-font-weight-light, normal ) !default;
+/// The font weight of the second largest display text.
+/// @group typography-component
+$kendo-display2-font-weight: var( --kendo-font-weight-light, normal ) !default;
+/// The font weight of the third largest display text.
+/// @group typography-component
+$kendo-display3-font-weight: var( --kendo-font-weight-light, normal ) !default;
+/// The font weight of the fourth largest display text.
+/// @group typography-component
+$kendo-display4-font-weight: var( --kendo-font-weight-light, normal ) !default;
+
+/// The letter spacing of the largest display text.
+/// @group typography-component
+$kendo-display1-letter-spacing: null !default;
+/// The letter spacing of the second largest display text.
+/// @group typography-component
+$kendo-display2-letter-spacing: null !default;
+/// The letter spacing of the third largest display text.
+/// @group typography-component
+$kendo-display3-letter-spacing: null !default;
+/// The letter spacing of the fourth largest display text.
+/// @group typography-component
+$kendo-display4-letter-spacing: null !default;
+
+/// The displays Map.
+/// @group typography-component
+$kendo-display: (
+    1: (
+        font-size: $kendo-display1-font-size,
+        font-family: $kendo-display1-font-family,
+        line-height: $kendo-display1-line-height,
+        font-weight: $kendo-display1-font-weight,
+        letter-spacing: $kendo-display1-letter-spacing
+    ),
+    2: (
+        font-size: $kendo-display2-font-size,
+        font-family: $kendo-display2-font-family,
+        line-height: $kendo-display2-line-height,
+        font-weight: $kendo-display2-font-weight,
+        letter-spacing: $kendo-display2-letter-spacing
+    ),
+    3: (
+        font-size: $kendo-display3-font-size,
+        font-family: $kendo-display3-font-family,
+        line-height: $kendo-display3-line-height,
+        font-weight: $kendo-display3-font-weight,
+        letter-spacing: $kendo-display3-letter-spacing
+    ),
+    4: (
+        font-size: $kendo-display4-font-size,
+        font-family: $kendo-display4-font-family,
+        line-height: $kendo-display4-line-height,
+        font-weight: $kendo-display4-font-weight,
+        letter-spacing: $kendo-display4-letter-spacing
+    )
+) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/typography/_variables.scss" with (
+    $kendo-h1-font-size: $kendo-h1-font-size,
+    $kendo-h2-font-size: $kendo-h2-font-size,
+    $kendo-h3-font-size: $kendo-h3-font-size,
+    $kendo-h4-font-size: $kendo-h4-font-size,
+    $kendo-h5-font-size: $kendo-h5-font-size,
+    $kendo-h6-font-size: $kendo-h6-font-size,
+    $kendo-h1-font-family: $kendo-h1-font-family,
+    $kendo-h2-font-family: $kendo-h2-font-family,
+    $kendo-h3-font-family: $kendo-h3-font-family,
+    $kendo-h4-font-family: $kendo-h4-font-family,
+    $kendo-h5-font-family: $kendo-h5-font-family,
+    $kendo-h6-font-family: $kendo-h6-font-family,
+    $kendo-h1-line-height: $kendo-h1-line-height,
+    $kendo-h2-line-height: $kendo-h2-line-height,
+    $kendo-h3-line-height: $kendo-h3-line-height,
+    $kendo-h4-line-height: $kendo-h4-line-height,
+    $kendo-h5-line-height: $kendo-h5-line-height,
+    $kendo-h6-line-height: $kendo-h6-line-height,
+    $kendo-h1-font-weight: $kendo-h1-font-weight,
+    $kendo-h2-font-weight: $kendo-h2-font-weight,
+    $kendo-h3-font-weight: $kendo-h3-font-weight,
+    $kendo-h4-font-weight: $kendo-h4-font-weight,
+    $kendo-h5-font-weight: $kendo-h5-font-weight,
+    $kendo-h6-font-weight: $kendo-h6-font-weight,
+    $kendo-h1-letter-spacing: $kendo-h1-letter-spacing,
+    $kendo-h2-letter-spacing: $kendo-h2-letter-spacing,
+    $kendo-h3-letter-spacing: $kendo-h3-letter-spacing,
+    $kendo-h4-letter-spacing: $kendo-h4-letter-spacing,
+    $kendo-h5-letter-spacing: $kendo-h5-letter-spacing,
+    $kendo-h6-letter-spacing: $kendo-h6-letter-spacing,
+    $kendo-h1-margin: $kendo-h1-margin,
+    $kendo-h2-margin: $kendo-h2-margin,
+    $kendo-h3-margin: $kendo-h3-margin,
+    $kendo-h4-margin: $kendo-h4-margin,
+    $kendo-h5-margin: $kendo-h5-margin,
+    $kendo-h6-margin: $kendo-h6-margin,
+    $kendo-headings: $kendo-headings,
+    $kendo-paragraph-margin: $kendo-paragraph-margin,
+    $kendo-paragraph-font-size: $kendo-paragraph-font-size,
+    $kendo-paragraph-font-family: $kendo-paragraph-font-family,
+    $kendo-paragraph-line-height: $kendo-paragraph-line-height,
+    $kendo-paragraph-font-weight: $kendo-paragraph-font-weight,
+    $kendo-paragraph-letter-spacing: $kendo-paragraph-letter-spacing,
+    $kendo-code-font-size: $kendo-code-font-size,
+    $kendo-code-font-family: $kendo-code-font-family,
+    $kendo-code-line-height: $kendo-code-line-height,
+    $kendo-code-font-weight: $kendo-code-font-weight,
+    $kendo-code-letter-spacing: $kendo-code-letter-spacing,
+    $kendo-code-padding-x: $kendo-code-padding-x,
+    $kendo-code-padding-y: $kendo-code-padding-y,
+    $kendo-pre-padding-x: $kendo-pre-padding-x,
+    $kendo-pre-padding-y: $kendo-pre-padding-y,
+    $kendo-code-border-width: $kendo-code-border-width,
+    $kendo-code-bg: $kendo-code-bg,
+    $kendo-code-text: $kendo-code-text,
+    $kendo-code-border: $kendo-code-border,
+    $kendo-display1-font-size: $kendo-display1-font-size,
+    $kendo-display2-font-size: $kendo-display2-font-size,
+    $kendo-display3-font-size: $kendo-display3-font-size,
+    $kendo-display4-font-size: $kendo-display4-font-size,
+    $kendo-display1-font-family: $kendo-display1-font-family,
+    $kendo-display2-font-family: $kendo-display2-font-family,
+    $kendo-display3-font-family: $kendo-display3-font-family,
+    $kendo-display4-font-family: $kendo-display4-font-family,
+    $kendo-display1-line-height: $kendo-display1-line-height,
+    $kendo-display2-line-height: $kendo-display2-line-height,
+    $kendo-display3-line-height: $kendo-display3-line-height,
+    $kendo-display4-line-height: $kendo-display4-line-height,
+    $kendo-display1-font-weight: $kendo-display1-font-weight,
+    $kendo-display2-font-weight: $kendo-display2-font-weight,
+    $kendo-display3-font-weight: $kendo-display3-font-weight,
+    $kendo-display4-font-weight: $kendo-display4-font-weight,
+    $kendo-display1-letter-spacing: $kendo-display1-letter-spacing,
+    $kendo-display2-letter-spacing: $kendo-display2-letter-spacing,
+    $kendo-display3-letter-spacing: $kendo-display3-letter-spacing,
+    $kendo-display4-letter-spacing: $kendo-display4-letter-spacing,
+    $kendo-display: $kendo-display
+);

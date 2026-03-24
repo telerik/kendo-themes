@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/typography/_layout.scss" as *;
+
+
+@mixin kendo-typography--layout() {
+    @include kendo-typography--layout-base();
+}

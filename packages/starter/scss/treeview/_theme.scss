@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/treeview/_theme.scss" as *;
+
+
+@mixin kendo-treeview--theme() {
+    @include kendo-treeview--theme-base();
+}

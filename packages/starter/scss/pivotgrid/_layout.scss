@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/pivotgrid/_layout.scss" as *;
+
+
+@mixin kendo-pivotgrid--layout() {
+    @include kendo-pivotgrid--layout-base();
+}

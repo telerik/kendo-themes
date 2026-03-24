@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/spreadsheet/_layout.scss" as *;
+
+
+@mixin kendo-spreadsheet--layout() {
+    @include kendo-spreadsheet--layout-base();
+}

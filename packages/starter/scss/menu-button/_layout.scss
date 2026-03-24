@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/menu-button/_layout.scss" as *;
+
+
+@mixin kendo-menu-button--layout() {
+    @include kendo-menu-button--layout-base();
+}

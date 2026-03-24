@@ -1,0 +1,49 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+
+// Color Preview
+/// The border radius of the ColorPreview.
+/// @group color-preview
+$kendo-color-preview-border-radius: k-border-radius(md)!default;
+/// The width of the border around the ColorPreview.
+/// @group color-preview
+$kendo-color-preview-border-width: 1px !default;
+/// The background color of the ColorPreview.
+/// @group color-preview
+$kendo-color-preview-bg: null !default;
+/// The text color of the ColorPreview.
+/// @group color-preview
+$kendo-color-preview-text: null !default;
+/// The border color of the ColorPreview.
+/// @group color-preview
+$kendo-color-preview-border: k-color(border) !default;
+/// The border color of the hovered ColorPreview.
+/// @group color-preview
+$kendo-color-preview-hover-border: k-color(border) !default;
+
+/// The background color of the ColorPreview when no color is selected.
+/// @group color-preview
+$kendo-color-preview-no-color-bg: k-color(surface-alt) !default;
+/// The text color of the ColorPreview when no color is selected.
+/// @group color-preview
+$kendo-color-preview-no-color-text: k-color(error) !default;
+/// The border color of the ColorPreview when no color is selected.
+/// @group color-preview
+$kendo-color-preview-no-color-border: null !default;
+
+$kendo-color-preview-no-color-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' version='1.1'><line x1='0' x2='20' y1='0' y2='20' stroke='#{$kendo-color-preview-no-color-text}' stroke-width='1'/></svg>") ) !default;
+$kendo-color-preview-transparent-color-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgBxYyxDQAwDMJIL+YT+DjtzFRliUfLcklqBCRT4eCTxbD6kdL2/LgYXqpvCbs3kBv/AAAAAElFTkSuQmCC") !default;
+
+@forward "@progress/kendo-theme-core/scss/components/color-preview/_variables.scss" with (
+    $kendo-color-preview-border-radius: $kendo-color-preview-border-radius,
+    $kendo-color-preview-border-width: $kendo-color-preview-border-width,
+    $kendo-color-preview-bg: $kendo-color-preview-bg,
+    $kendo-color-preview-text: $kendo-color-preview-text,
+    $kendo-color-preview-border: $kendo-color-preview-border,
+    $kendo-color-preview-hover-border: $kendo-color-preview-hover-border,
+    $kendo-color-preview-no-color-bg: $kendo-color-preview-no-color-bg,
+    $kendo-color-preview-no-color-text: $kendo-color-preview-no-color-text,
+    $kendo-color-preview-no-color-border: $kendo-color-preview-no-color-border,
+    $kendo-color-preview-no-color-image: $kendo-color-preview-no-color-image,
+    $kendo-color-preview-transparent-color-image: $kendo-color-preview-transparent-color-image
+);

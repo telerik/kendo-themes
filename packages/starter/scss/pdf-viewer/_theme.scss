@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/pdf-viewer/_theme.scss" as *;
+
+
+@mixin kendo-pdf-viewer--theme() {
+    @include kendo-pdf-viewer--theme-base();
+}

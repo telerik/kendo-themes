@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/popup/_layout.scss" as *;
+
+
+@mixin kendo-popup--layout() {
+    @include kendo-popup--layout-base();
+}

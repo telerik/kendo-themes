@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/prompt/_theme.scss" as *;
+
+
+@mixin kendo-prompt--theme() {
+    @include kendo-prompt--theme-base();
+}

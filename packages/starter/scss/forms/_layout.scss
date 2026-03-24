@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/forms/_layout.scss" as *;
+
+
+@mixin kendo-form--layout() {
+    @include kendo-form--layout-base();
+}

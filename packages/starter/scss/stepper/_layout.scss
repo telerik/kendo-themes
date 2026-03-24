@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/stepper/_layout.scss" as *;
+
+
+@mixin kendo-stepper--layout() {
+    @include kendo-stepper--layout-base();
+}

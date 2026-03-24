@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/avatar/_theme.scss" as *;
+
+
+@mixin kendo-avatar--theme() {
+    @include kendo-avatar--theme-base();
+}

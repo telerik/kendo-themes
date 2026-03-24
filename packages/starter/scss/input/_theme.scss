@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/input/_theme.scss" as *;
+
+
+@mixin kendo-input--theme() {
+    @include kendo-input--theme-base();
+}
