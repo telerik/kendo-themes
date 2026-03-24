@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/suggestion/_theme.scss" as *;
+
+
+@mixin kendo-suggestion--theme() {
+    @include kendo-suggestion--theme-base();
+}

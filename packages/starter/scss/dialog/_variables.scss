@@ -1,0 +1,49 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../action-buttons/_variables.scss" as *;
+
+// Dialog
+
+/// The default theme color of the Dialog.
+/// @group dialog
+/// @role default
+$kendo-dialog-default-theme-color: null !default;
+
+/// The background color of the Dialog titlebar.
+/// @group dialog
+$kendo-dialog-titlebar-bg: k-color(surface)!default;
+/// The text color of the Dialog titlebar.
+/// @group dialog
+$kendo-dialog-titlebar-text: k-color(on-app-surface) !default;
+/// The border color of the Dialog titlebar.
+/// @group dialog
+$kendo-dialog-titlebar-border: inherit !default;
+
+/// The horizontal padding of the Dialog action buttons.
+/// @group dialog
+$kendo-dialog-buttongroup-padding-x: $kendo-actions-padding-x !default;
+/// The vertical padding of the Dialog action buttons.
+/// @group dialog
+$kendo-dialog-buttongroup-padding-y: $kendo-actions-padding-y !default;
+/// The width of the top border of the Dialog action buttons.
+/// @group dialog
+$kendo-dialog-buttongroup-border-width: 1px !default;
+/// The spacing between the Dialog action buttons.
+/// @group dialog
+$kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
+
+/// The background color of the Dialog.
+/// @group dialog
+$kendo-dialog-bg: k-color(surface-alt) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (
+    $kendo-dialog-default-theme-color: $kendo-dialog-default-theme-color,
+    $kendo-dialog-titlebar-bg: $kendo-dialog-titlebar-bg,
+    $kendo-dialog-titlebar-text: $kendo-dialog-titlebar-text,
+    $kendo-dialog-titlebar-border: $kendo-dialog-titlebar-border,
+    $kendo-dialog-buttongroup-padding-x: $kendo-dialog-buttongroup-padding-x,
+    $kendo-dialog-buttongroup-padding-y: $kendo-dialog-buttongroup-padding-y,
+    $kendo-dialog-buttongroup-border-width: $kendo-dialog-buttongroup-border-width,
+    $kendo-dialog-button-spacing: $kendo-dialog-button-spacing,
+    $kendo-dialog-bg: $kendo-dialog-bg
+);

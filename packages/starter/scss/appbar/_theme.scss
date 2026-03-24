@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/appbar/_theme.scss" as *;
+
+
+@mixin kendo-appbar--theme() {
+    @include kendo-appbar--theme-base();
+}

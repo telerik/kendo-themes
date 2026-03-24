@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/color-preview/_layout.scss" as *;
+
+
+@mixin kendo-color-preview--layout() {
+    @include kendo-color-preview--layout-base();
+}

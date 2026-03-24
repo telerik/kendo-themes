@@ -1,0 +1,148 @@
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+
+// Upload
+
+/// The width of the border around the Upload.
+/// @group upload
+$kendo-upload-border-width: 1px !default;
+/// The font family of the Upload.
+/// @group upload
+$kendo-upload-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Upload.
+/// @group upload
+$kendo-upload-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Upload.
+/// @group upload
+$kendo-upload-line-height: var( --kendo-line-height, normal ) !default;
+/// The maximum height of the list with uploaded items.
+/// @group upload
+$kendo-upload-max-height: 300px !default;
+
+/// The text color of the Upload.
+/// @group upload
+$kendo-upload-text: k-color(on-app-surface) !default;
+/// The background color of the Upload.
+/// @group upload
+$kendo-upload-bg: k-color(surface-alt) !default;
+/// The border color of the Upload.
+/// @group upload
+$kendo-upload-border: k-color(border) !default;
+
+/// The horizontal padding of the Upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-padding-y: k-spacing(2) !default;
+/// The text color of the Upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-text: k-color(on-app-surface) !default;
+/// The background color of the Upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-bg: k-color(surface)!default;
+/// The border color of the Upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-border: $kendo-upload-border !default;
+/// The background color of the hovered Upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+
+/// The text color of the Upload status message.
+/// @group upload
+$kendo-upload-status-text: k-color(subtle) !default;
+/// The opacity of the Upload status message.
+/// @group upload
+$kendo-upload-status-text-opacity: null !default;
+
+/// The horizontal padding of an uploaded item.
+/// @group upload
+$kendo-upload-item-padding-x: k-spacing(2) !default;
+/// The vertical padding of an uploaded item.
+/// @group upload
+$kendo-upload-item-padding-y: k-spacing(2) !default;
+
+/// The vertical spacing between uploaded batch items.
+/// @group upload
+$kendo-upload-multiple-items-spacing: k-spacing(3) !default;
+
+/// The font size of the Upload validation message.
+/// @group upload
+$kendo-upload-validation-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line height of the Upload validation message.
+/// @group upload
+$kendo-upload-validation-line-height: var( --kendo-line-height-xs, normal ) !default;
+/// The horizontal spacing of the Upload status icon.
+/// @group upload
+$kendo-upload-icon-spacing: $kendo-icon-spacing !default;
+/// The color of the uploaded items icon.
+/// @group upload
+$kendo-upload-icon-color: k-color(subtle) !default;
+
+/// The thickness of the Upload progress bar.
+/// @group upload
+$kendo-upload-progress-thickness: 2px !default;
+/// The background color of the Upload progress bar.
+/// @group upload
+$kendo-upload-progress-bg: k-color(info) !default;
+
+/// The success text color of the Upload.
+/// @group upload
+$kendo-upload-success-text: k-color(success-on-surface) !default;
+/// The success background color of the Upload progress bar.
+/// @group upload
+$kendo-upload-success-bg: k-color(success) !default;
+
+/// The error text color of the Upload.
+/// @group upload
+$kendo-upload-error-text: k-color(error-on-surface) !default;
+/// The error background color of the Upload progress bar.
+/// @group upload
+$kendo-upload-error-bg: k-color(error) !default;
+
+/// The shadow of the focused Upload button, actions and uploaded items.
+/// @group upload
+$kendo-upload-focus-shadow: 0 0 0 2px k-color(border-alt) !default;
+
+/// The margin of the Upload list.
+/// @group upload
+$kendo-upload-files-list-margin: calc( -1 * #{k-spacing(1)} ) !default;
+
+/// The margin of the Upload.
+/// @group upload
+$kendo-upload-file-info-margin: k-spacing(2) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/upload/_variables.scss" with (
+    $kendo-upload-border-width: $kendo-upload-border-width,
+    $kendo-upload-font-family: $kendo-upload-font-family,
+    $kendo-upload-font-size: $kendo-upload-font-size,
+    $kendo-upload-line-height: $kendo-upload-line-height,
+    $kendo-upload-max-height: $kendo-upload-max-height,
+    $kendo-upload-text: $kendo-upload-text,
+    $kendo-upload-bg: $kendo-upload-bg,
+    $kendo-upload-border: $kendo-upload-border,
+    $kendo-upload-dropzone-padding-x: $kendo-upload-dropzone-padding-x,
+    $kendo-upload-dropzone-padding-y: $kendo-upload-dropzone-padding-y,
+    $kendo-upload-dropzone-text: $kendo-upload-dropzone-text,
+    $kendo-upload-dropzone-bg: $kendo-upload-dropzone-bg,
+    $kendo-upload-dropzone-border: $kendo-upload-dropzone-border,
+    $kendo-upload-dropzone-hover-bg: $kendo-upload-dropzone-hover-bg,
+    $kendo-upload-status-text: $kendo-upload-status-text,
+    $kendo-upload-status-text-opacity: $kendo-upload-status-text-opacity,
+    $kendo-upload-item-padding-x: $kendo-upload-item-padding-x,
+    $kendo-upload-item-padding-y: $kendo-upload-item-padding-y,
+    $kendo-upload-multiple-items-spacing: $kendo-upload-multiple-items-spacing,
+    $kendo-upload-validation-font-size: $kendo-upload-validation-font-size,
+    $kendo-upload-validation-line-height: $kendo-upload-validation-line-height,
+    $kendo-upload-icon-spacing: $kendo-upload-icon-spacing,
+    $kendo-upload-icon-color: $kendo-upload-icon-color,
+    $kendo-upload-progress-thickness: $kendo-upload-progress-thickness,
+    $kendo-upload-progress-bg: $kendo-upload-progress-bg,
+    $kendo-upload-success-text: $kendo-upload-success-text,
+    $kendo-upload-success-bg: $kendo-upload-success-bg,
+    $kendo-upload-error-text: $kendo-upload-error-text,
+    $kendo-upload-error-bg: $kendo-upload-error-bg,
+    $kendo-upload-focus-shadow: $kendo-upload-focus-shadow,
+    $kendo-upload-files-list-margin: $kendo-upload-files-list-margin,
+    $kendo-upload-file-info-margin: $kendo-upload-file-info-margin
+);

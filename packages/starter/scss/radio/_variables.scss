@@ -1,0 +1,219 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../checkbox/_variables.scss" as *;
+
+
+// Radio button
+
+/// The border radius of the RadioButton.
+/// @group radio
+$kendo-radio-radius: 50% !default;
+/// The border width of the RadioButton.
+/// @group radio
+$kendo-radio-border-width: 1px !default;
+
+/// The size of a small RadioButton.
+/// @group radio
+$kendo-radio-sm-size: k-spacing(3) !default;
+/// The size of a medium RadioButton.
+/// @group radio
+$kendo-radio-md-size: k-spacing(4) !default;
+/// The size of a large RadioButton.
+/// @group radio
+$kendo-radio-lg-size: k-spacing(5) !default;
+
+/// The glyph size of a small RadioButton.
+/// @group radio
+$kendo-radio-sm-glyph-size: k-spacing(2.5) !default;
+/// The glyph size of a medium RadioButton.
+/// @group radio
+$kendo-radio-md-glyph-size: k-spacing(3.5) !default;
+/// The glyph size of a large RadioButton.
+/// @group radio
+$kendo-radio-lg-glyph-size: k-spacing(4.5) !default;
+
+/// The ripple size of a small RadioButton.
+/// @group radio
+$kendo-radio-sm-ripple-size: 300% !default;
+/// The ripple size of a medium RadioButton.
+/// @group radio
+$kendo-radio-md-ripple-size: 300% !default;
+/// The ripple size of a large RadioButton.
+/// @group radio
+$kendo-radio-lg-ripple-size: 300% !default;
+
+
+/// The background color of the RadioButton.
+/// @group radio
+$kendo-radio-bg: $kendo-checkbox-bg !default;
+/// The color of the RadioButton.
+/// @group radio
+$kendo-radio-text: $kendo-checkbox-text !default;
+/// The border color of the RadioButton.
+/// @group radio
+$kendo-radio-border: $kendo-checkbox-border !default;
+
+/// The background color of the hovered RadioButton.
+/// @group radio
+$kendo-radio-hover-bg: $kendo-checkbox-hover-bg !default;
+/// The color of the hovered RadioButton.
+/// @group radio
+$kendo-radio-hover-text: $kendo-checkbox-hover-text !default;
+/// The border color of the hovered RadioButton.
+/// @group radio
+$kendo-radio-hover-border: $kendo-checkbox-hover-border !default;
+
+/// The background color of the checked RadioButton.
+/// @group radio
+$kendo-radio-checked-bg: $kendo-checkbox-checked-bg !default;
+/// The color of the checked RadioButton.
+/// @group radio
+$kendo-radio-checked-text: $kendo-checkbox-checked-text !default;
+/// The border color of the checked RadioButton.
+/// @group radio
+$kendo-radio-checked-border: $kendo-checkbox-checked-border !default;
+
+/// The border color of the focused RadioButton.
+/// @group radio
+$kendo-radio-focus-border: $kendo-checkbox-focus-border !default;
+/// The box shadow of the focused RadioButton.
+/// @group radio
+$kendo-radio-focus-shadow: $kendo-checkbox-focus-shadow !default;
+
+/// The border color of the focused and checked RadioButton.
+/// @group radio
+$kendo-radio-focus-checked-border: $kendo-checkbox-focus-checked-border !default;
+/// The box shadow of the focused and checked RadioButton.
+/// @group radio
+$kendo-radio-focus-checked-shadow: $kendo-checkbox-focus-checked-shadow !default;
+
+/// The background color of the disabled RadioButton.
+/// @group radio
+$kendo-radio-disabled-bg: $kendo-checkbox-disabled-bg !default;
+/// The color of the disabled RadioButton.
+/// @group radio
+$kendo-radio-disabled-text: $kendo-checkbox-disabled-text !default;
+/// The border color of the disabled RadioButton.
+/// @group radio
+$kendo-radio-disabled-border: $kendo-checkbox-disabled-border !default;
+
+/// The background color of the disabled and checked RadioButton.
+/// @group radio
+$kendo-radio-disabled-checked-bg: $kendo-checkbox-disabled-checked-bg !default;
+/// The color of the disabled and checked RadioButton.
+/// @group radio
+$kendo-radio-disabled-checked-text: $kendo-checkbox-disabled-checked-text !default;
+/// The border color of disabled and checked RadioButton.
+/// @group radio
+$kendo-radio-disabled-checked-border: $kendo-checkbox-disabled-checked-border !default;
+
+/// The color of the invalid RadioButton.
+/// @group radio
+$kendo-radio-invalid-text: $kendo-checkbox-invalid-text !default;
+/// The border color of the invalid RadioButton.
+/// @group radio
+$kendo-radio-invalid-border: $kendo-checkbox-invalid-border !default;
+
+
+// Radio indicator
+
+/// The type of the RadioButton indicator.
+/// @group radio
+$kendo-radio-indicator-type: image !default;
+
+/// The font family of the RadioButton indicator glyph.
+/// @group radio
+$kendo-radio-glyph-font-family: "WebComponentsIcons", monospace !default;
+/// The glyph of the RadioButton indicator.
+/// @group radio
+$kendo-radio-checked-glyph: "\e308" !default;
+
+/// The image of the checked RadioButton indicator.
+/// @group radio
+$kendo-radio-checked-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#ffffff'/></svg>") ) !default;
+/// The image of the disabled and checked RadioButton indicator.
+/// @group radio
+$kendo-radio-disabled-checked-image: null !default;
+
+
+// Radio label
+
+/// The horizontal margin of the RadioButton inside of a label.
+/// @group radio
+$kendo-radio-label-margin-x: k-spacing(1) !default;
+
+
+// Radio list
+
+/// The horizontal list item margin of the RadioButton.
+/// @group radio
+$kendo-radio-list-spacing: k-spacing(4) !default;
+/// The horizontal list item padding of the RadioButton.
+/// @group radio
+$kendo-radio-list-item-padding-x: k-spacing(0) !default;
+/// The vertical list item padding of the RadioButton.
+/// @group radio
+$kendo-radio-list-item-padding-y: $kendo-list-md-item-padding-y !default;
+
+
+// Radio ripple
+
+/// The background color of the RadioButton ripple.
+/// @group radio
+$kendo-radio-ripple-bg: $kendo-radio-checked-bg !default;
+/// The opacity of the RadioButton ripple.
+/// @group radio
+$kendo-radio-ripple-opacity: .25 !default;
+
+/// The default size of the RadioButton.
+/// @group radio
+/// @role default
+$kendo-radio-default-size: "md" !default;
+
+@forward "@progress/kendo-theme-core/scss/components/radio/_variables.scss" with (
+    $kendo-radio-radius: $kendo-radio-radius,
+    $kendo-radio-border-width: $kendo-radio-border-width,
+    $kendo-radio-sm-size: $kendo-radio-sm-size,
+    $kendo-radio-md-size: $kendo-radio-md-size,
+    $kendo-radio-lg-size: $kendo-radio-lg-size,
+    $kendo-radio-sm-glyph-size: $kendo-radio-sm-glyph-size,
+    $kendo-radio-md-glyph-size: $kendo-radio-md-glyph-size,
+    $kendo-radio-lg-glyph-size: $kendo-radio-lg-glyph-size,
+    $kendo-radio-sm-ripple-size: $kendo-radio-sm-ripple-size,
+    $kendo-radio-md-ripple-size: $kendo-radio-md-ripple-size,
+    $kendo-radio-lg-ripple-size: $kendo-radio-lg-ripple-size,
+    $kendo-radio-bg: $kendo-radio-bg,
+    $kendo-radio-text: $kendo-radio-text,
+    $kendo-radio-border: $kendo-radio-border,
+    $kendo-radio-hover-bg: $kendo-radio-hover-bg,
+    $kendo-radio-hover-text: $kendo-radio-hover-text,
+    $kendo-radio-hover-border: $kendo-radio-hover-border,
+    $kendo-radio-checked-bg: $kendo-radio-checked-bg,
+    $kendo-radio-checked-text: $kendo-radio-checked-text,
+    $kendo-radio-checked-border: $kendo-radio-checked-border,
+    $kendo-radio-focus-border: $kendo-radio-focus-border,
+    $kendo-radio-focus-shadow: $kendo-radio-focus-shadow,
+    $kendo-radio-focus-checked-border: $kendo-radio-focus-checked-border,
+    $kendo-radio-focus-checked-shadow: $kendo-radio-focus-checked-shadow,
+    $kendo-radio-disabled-bg: $kendo-radio-disabled-bg,
+    $kendo-radio-disabled-text: $kendo-radio-disabled-text,
+    $kendo-radio-disabled-border: $kendo-radio-disabled-border,
+    $kendo-radio-disabled-checked-bg: $kendo-radio-disabled-checked-bg,
+    $kendo-radio-disabled-checked-text: $kendo-radio-disabled-checked-text,
+    $kendo-radio-disabled-checked-border: $kendo-radio-disabled-checked-border,
+    $kendo-radio-invalid-text: $kendo-radio-invalid-text,
+    $kendo-radio-invalid-border: $kendo-radio-invalid-border,
+    $kendo-radio-indicator-type: $kendo-radio-indicator-type,
+    $kendo-radio-glyph-font-family: $kendo-radio-glyph-font-family,
+    $kendo-radio-checked-glyph: $kendo-radio-checked-glyph,
+    $kendo-radio-checked-image: $kendo-radio-checked-image,
+    $kendo-radio-disabled-checked-image: $kendo-radio-disabled-checked-image,
+    $kendo-radio-label-margin-x: $kendo-radio-label-margin-x,
+    $kendo-radio-list-spacing: $kendo-radio-list-spacing,
+    $kendo-radio-list-item-padding-x: $kendo-radio-list-item-padding-x,
+    $kendo-radio-list-item-padding-y: $kendo-radio-list-item-padding-y,
+    $kendo-radio-ripple-bg: $kendo-radio-ripple-bg,
+    $kendo-radio-ripple-opacity: $kendo-radio-ripple-opacity,
+    $kendo-radio-default-size: $kendo-radio-default-size
+);

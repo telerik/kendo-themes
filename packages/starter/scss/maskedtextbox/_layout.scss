@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/maskedtextbox/_layout.scss" as *;
+
+
+@mixin kendo-masked-textbox--layout() {
+    @include kendo-masked-textbox--layout-base();
+}

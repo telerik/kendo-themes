@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/checkbox/_layout.scss" as *;
+
+
+@mixin kendo-checkbox--layout() {
+    @include kendo-checkbox--layout-base();
+}

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/searchbox/_layout.scss" as *;
+
+
+@mixin kendo-searchbox--layout() {
+    @include kendo-searchbox--layout-base();
+}

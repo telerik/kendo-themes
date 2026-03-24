@@ -1,0 +1,49 @@
+@use "../core/_index.scss" as *;
+
+// Wizard
+
+/// The horizontal padding of the Wizard.
+/// @group wizard
+$kendo-wizard-padding-x: calc( #{k-spacing(2)} * 2.5 ) !default;
+/// The vertical padding of the Wizard.
+/// @group wizard
+$kendo-wizard-padding-y: $kendo-wizard-padding-x !default;
+/// The horizontal padding of the Wizard content.
+/// @group wizard
+$kendo-wizard-content-padding-x: calc( #{k-spacing(2)} * 4 ) !default;
+/// The vertical padding of the Wizard content.
+/// @group wizard
+$kendo-wizard-content-padding-y: calc( #{k-spacing(1)} * 8 ) !default;
+/// The horizontal margin of the Wizard's Button container.
+/// @group wizard
+$kendo-wizard-buttons-margin-x: k-spacing(2.5) !default;
+
+/// The border width of the Wizard.
+/// @group wizard
+$kendo-wizard-border-width: 0px !default;
+/// The font size of the Wizard.
+/// @group wizard
+$kendo-wizard-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Wizard.
+/// @group wizard
+$kendo-wizard-line-height: var( --kendo-line-height, normal ) !default;
+/// The font family of the Wizard.
+/// @group wizard
+$kendo-wizard-font-family: var( --kendo-font-family, inherit ) !default;
+
+/// The outline of the focused Wizard step.
+/// @group wizard
+$kendo-wizard-step-focus-border: k-color(subtle) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/wizard/_variables.scss" with (
+    $kendo-wizard-padding-x: $kendo-wizard-padding-x,
+    $kendo-wizard-padding-y: $kendo-wizard-padding-y,
+    $kendo-wizard-content-padding-x: $kendo-wizard-content-padding-x,
+    $kendo-wizard-content-padding-y: $kendo-wizard-content-padding-y,
+    $kendo-wizard-buttons-margin-x: $kendo-wizard-buttons-margin-x,
+    $kendo-wizard-border-width: $kendo-wizard-border-width,
+    $kendo-wizard-font-size: $kendo-wizard-font-size,
+    $kendo-wizard-line-height: $kendo-wizard-line-height,
+    $kendo-wizard-font-family: $kendo-wizard-font-family,
+    $kendo-wizard-step-focus-border: $kendo-wizard-step-focus-border
+);

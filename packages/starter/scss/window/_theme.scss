@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/window/_theme.scss" as *;
+
+
+@mixin kendo-window--theme() {
+    @include kendo-window--theme-base();
+}

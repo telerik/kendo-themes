@@ -1,0 +1,32 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../checkbox/_index.scss" as *;
+@use "../colorpicker/_index.scss" as *;
+@use "../combobox/_index.scss" as *;
+@use "../dropdownlist/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
+@use "../upload/_index.scss" as *;
+@use "../window/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-editor--styles() {
+    @include import-once( "editor" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-checkbox--styles();
+        @include kendo-color-picker--styles();
+        @include kendo-combobox--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-upload--styles();
+        @include kendo-window--styles();
+        @include kendo-editor--layout();
+        @include kendo-editor--theme();
+    }
+}

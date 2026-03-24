@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/card/_layout.scss" as *;
+
+
+@mixin kendo-card--layout() {
+    @include kendo-card--layout-base();
+}

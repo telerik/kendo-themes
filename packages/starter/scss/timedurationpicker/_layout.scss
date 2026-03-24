@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/timedurationpicker/_layout.scss" as *;
+
+
+@mixin kendo-time-duration-picker--layout() {
+    @include kendo-time-duration-picker--layout-base();
+}

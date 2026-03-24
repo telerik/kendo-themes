@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/timeline/_theme.scss" as *;
+
+
+@mixin kendo-timeline--theme() {
+    @include kendo-timeline--theme-base();
+}

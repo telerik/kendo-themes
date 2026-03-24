@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/gantt/_theme.scss" as *;
+
+
+@mixin kendo-gantt--theme() {
+    @include kendo-gantt--theme-base();
+}

@@ -1,0 +1,92 @@
+@use "../core/_index.scss" as *;
+
+
+// AIPrompt
+
+/// The text color of the AIPrompt.
+/// @group prompt
+$kendo-prompt-text: k-color(on-app-surface) !default;
+/// The background color of the AIPrompt.
+/// @group prompt
+$kendo-prompt-bg: k-color(surface-alt) !default;
+/// The border color of the AIPrompt.
+/// @group prompt
+$kendo-prompt-border: k-color(border) !default;
+
+/// The text color of the AIPrompt header.
+/// @group prompt
+$kendo-prompt-header-text: k-color(on-app-surface) !default;
+/// The background color of the AIPrompt header.
+/// @group prompt
+$kendo-prompt-header-bg: k-color(surface-alt) !default;
+/// The border color of the AIPrompt header.
+/// @group prompt
+$kendo-prompt-header-border: k-color(border) !default;
+
+/// The vertical padding of the AIPrompt content.
+/// @group prompt
+$kendo-prompt-content-padding-y: k-spacing(4) !default;
+/// The horizontal padding of the AIPrompt content.
+/// @group prompt
+$kendo-prompt-content-padding-x: k-spacing(4) !default;
+/// The spacing between the items of the AIPrompt content.
+/// @group prompt
+$kendo-prompt-content-spacing: k-spacing(4) !default;
+/// The text color of the AIPrompt content.
+/// @group prompt
+$kendo-prompt-content-text: k-color(on-app-surface) !default;
+/// The background color of the AIPrompt content.
+/// @group prompt
+$kendo-prompt-content-bg: k-color(surface)!default;
+/// The text border of the AIPrompt content.
+/// @group prompt
+$kendo-prompt-content-border: k-color(border) !default;
+
+/// The spacing between the items of the AIPrompt content expander.
+/// @group prompt
+$kendo-prompt-expander-spacing: k-spacing(2) !default;
+
+/// The vertical padding of the AIPrompt suggestion container.
+/// @group prompt
+$kendo-prompt-suggestion-padding-y: k-spacing(2) !default;
+/// The horizontal padding of the AIPrompt suggestion container.
+/// @group prompt
+$kendo-prompt-suggestion-padding-x: k-spacing(2) !default;
+/// The border radius of the AIPrompt suggestion container.
+/// @group prompt
+$kendo-prompt-suggestion-border-radius: k-border-radius(md) !default;
+/// The text color of the AIPrompt suggestion container.
+/// @group prompt
+$kendo-prompt-suggestion-text: k-color(on-app-surface) !default;
+/// The background color of the AIPrompt suggestion container.
+/// @group prompt
+$kendo-prompt-suggestion-bg: k-color(app-surface) !default;
+/// The border color of the AIPrompt suggestion container.
+/// @group prompt
+$kendo-prompt-suggestion-border: k-color(border) !default;
+/// The elevation of the AIPrompt suggestion container.
+/// @group prompt
+$kendo-prompt-suggestion-shadow: k-elevation(1) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/prompt/_variables.scss" with (
+    $kendo-prompt-text: $kendo-prompt-text,
+    $kendo-prompt-bg: $kendo-prompt-bg,
+    $kendo-prompt-border: $kendo-prompt-border,
+    $kendo-prompt-header-text: $kendo-prompt-header-text,
+    $kendo-prompt-header-bg: $kendo-prompt-header-bg,
+    $kendo-prompt-header-border: $kendo-prompt-header-border,
+    $kendo-prompt-content-padding-y: $kendo-prompt-content-padding-y,
+    $kendo-prompt-content-padding-x: $kendo-prompt-content-padding-x,
+    $kendo-prompt-content-spacing: $kendo-prompt-content-spacing,
+    $kendo-prompt-content-text: $kendo-prompt-content-text,
+    $kendo-prompt-content-bg: $kendo-prompt-content-bg,
+    $kendo-prompt-content-border: $kendo-prompt-content-border,
+    $kendo-prompt-expander-spacing: $kendo-prompt-expander-spacing,
+    $kendo-prompt-suggestion-padding-y: $kendo-prompt-suggestion-padding-y,
+    $kendo-prompt-suggestion-padding-x: $kendo-prompt-suggestion-padding-x,
+    $kendo-prompt-suggestion-border-radius: $kendo-prompt-suggestion-border-radius,
+    $kendo-prompt-suggestion-text: $kendo-prompt-suggestion-text,
+    $kendo-prompt-suggestion-bg: $kendo-prompt-suggestion-bg,
+    $kendo-prompt-suggestion-border: $kendo-prompt-suggestion-border,
+    $kendo-prompt-suggestion-shadow: $kendo-prompt-suggestion-shadow
+);

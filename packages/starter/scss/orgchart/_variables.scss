@@ -1,0 +1,185 @@
+@use "sass:list";
+@use "../core/_index.scss" as *;
+@use "../card/_variables.scss" as *;
+
+// Orgchart
+
+/// The spacing index of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-spacer: k-spacing(6) !default;
+/// The vertical padding of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-padding-y: $kendo-orgchart-spacer !default;
+/// The horizontal padding of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-padding-x: $kendo-orgchart-padding-y !default;
+/// The font family of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-line-height: var( --kendo-line-height, normal ) !default;
+/// The background color of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-bg: k-color(surface-alt) !default;
+/// The text color of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-text: k-color(on-app-surface) !default;
+/// The border color of the OrgChart.
+/// @group orgchart
+$kendo-orgchart-border: k-color(border) !default;
+
+/// The spacing of the OrgChart node.
+/// @group orgchart
+$kendo-orgchart-node-gap: $kendo-orgchart-spacer !default;
+/// The spacing of the OrgChart group.
+/// @group orgchart
+$kendo-orgchart-group-gap: $kendo-orgchart-spacer !default;
+
+/// The vertical padding of the OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-padding-y: $kendo-orgchart-spacer !default;
+/// The horizontal padding of the OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-y !default;
+/// The border width of the OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-border-width: 1px !default;
+/// The border radius of the OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-border-radius: k-border-radius(md) !default;
+/// The background color of the OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-bg: k-color(surface) !default;
+/// The text color of the OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-text: k-color(on-app-surface) !default;
+/// The border color of the OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-border: k-color(border) !default;
+
+/// The border color of the focused OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
+/// The shadow of the focused OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-focus-shadow: k-elevation(1) !default;
+
+/// The font size of the OrgChart node group title.
+/// @group orgchart
+$kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+/// The bottom margin of the OrgChart node group title.
+/// @group orgchart
+$kendo-orgchart-node-group-title-margin-bottom: calc( #{$kendo-orgchart-spacer} / 3 ) !default;
+/// The line height of the OrgChart node group title.
+/// @group orgchart
+$kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-sm, normal ) !default;
+
+/// The font size of the OrgChart node group subtitle.
+/// @group orgchart
+$kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit ) !default;
+/// The bottom margin of the OrgChart node group subtitle.
+/// @group orgchart
+$kendo-orgchart-node-group-subtitle-margin-bottom: $kendo-orgchart-spacer !default;
+/// The line height of the OrgChart node group subtitle.
+/// @group orgchart
+$kendo-orgchart-node-group-subtitle-text: k-color(subtle) !default;
+
+/// The width of the OrgChart Card.
+/// @group orgchart
+$kendo-orgchart-card-width: 300px !default;
+/// The border width of the OrgChart Card.
+/// @group orgchart
+$kendo-orgchart-card-border-width: $kendo-card-border-width !default;
+/// The shadow of the OrgChart Card.
+/// @group orgchart
+$kendo-orgchart-card-shadow: $kendo-card-shadow !default;
+/// The shadow of the focused OrgChart Card.
+/// @group orgchart
+$kendo-orgchart-card-focus-shadow: k-elevation(1) !default;
+
+/// The bottom margin of the OrgChart Card title.
+/// @group orgchart
+$kendo-orgchart-card-title-margin-bottom: k-spacing(0) !default;
+/// The font size of the OrgChart Card title.
+/// @group orgchart
+$kendo-orgchart-card-title-font-size: null !default;
+
+/// The bottom margin of the OrgChart Card subtitle.
+/// @group orgchart
+$kendo-orgchart-card-subtitle-margin-bottom: k-spacing(0) !default;
+/// The font size of the OrgChart Card subtitle.
+/// @group orgchart
+$kendo-orgchart-card-subtitle-font-size: null !default;
+
+/// The border width of the OrgChart Card body.
+/// @group orgchart
+$kendo-orgchart-card-body-border-width: 2px 0 0 !default;
+/// The border color of the OrgChart Card body.
+/// @group orgchart
+$kendo-orgchart-card-body-border-color: transparent !default;
+
+/// The right margin of the OrgChart Card body title wrap.
+/// @group orgchart
+$kendo-orgchart-card-body-vbox-margin-right: list.slash( $kendo-orgchart-spacer, 2 ) !default;
+/// The min height of the OrgChart Card body title wrap.
+/// @group orgchart
+$kendo-orgchart-card-body-vbox-min-height: k-spacing(11) !default;
+
+/// The size of the OrgChart connecting line.
+/// @group orgchart
+$kendo-orgchart-line-size: 1px !default;
+/// The fill color of the OrgChart connecting line.
+/// @group orgchart
+$kendo-orgchart-line-fill: k-color(border) !default;
+
+/// The height of the OrgChart connecting line.
+/// @group orgchart
+$kendo-orgchart-line-v-height: k-spacing(6) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/orgchart/_variables.scss" with (
+    $kendo-orgchart-spacer: $kendo-orgchart-spacer,
+    $kendo-orgchart-padding-y: $kendo-orgchart-padding-y,
+    $kendo-orgchart-padding-x: $kendo-orgchart-padding-x,
+    $kendo-orgchart-font-family: $kendo-orgchart-font-family,
+    $kendo-orgchart-font-size: $kendo-orgchart-font-size,
+    $kendo-orgchart-line-height: $kendo-orgchart-line-height,
+    $kendo-orgchart-bg: $kendo-orgchart-bg,
+    $kendo-orgchart-text: $kendo-orgchart-text,
+    $kendo-orgchart-border: $kendo-orgchart-border,
+    $kendo-orgchart-node-gap: $kendo-orgchart-node-gap,
+    $kendo-orgchart-group-gap: $kendo-orgchart-group-gap,
+    $kendo-orgchart-node-group-padding-y: $kendo-orgchart-node-group-padding-y,
+    $kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-x,
+    $kendo-orgchart-node-group-border-width: $kendo-orgchart-node-group-border-width,
+    $kendo-orgchart-node-group-border-radius: $kendo-orgchart-node-group-border-radius,
+    $kendo-orgchart-node-group-bg: $kendo-orgchart-node-group-bg,
+    $kendo-orgchart-node-group-text: $kendo-orgchart-node-group-text,
+    $kendo-orgchart-node-group-border: $kendo-orgchart-node-group-border,
+    $kendo-orgchart-node-group-focus-border: $kendo-orgchart-node-group-focus-border,
+    $kendo-orgchart-node-group-focus-shadow: $kendo-orgchart-node-group-focus-shadow,
+    $kendo-orgchart-node-group-title-font-size: $kendo-orgchart-node-group-title-font-size,
+    $kendo-orgchart-node-group-title-margin-bottom: $kendo-orgchart-node-group-title-margin-bottom,
+    $kendo-orgchart-node-group-title-line-height: $kendo-orgchart-node-group-title-line-height,
+    $kendo-orgchart-node-group-subtitle-font-size: $kendo-orgchart-node-group-subtitle-font-size,
+    $kendo-orgchart-node-group-subtitle-margin-bottom: $kendo-orgchart-node-group-subtitle-margin-bottom,
+    $kendo-orgchart-node-group-subtitle-text: $kendo-orgchart-node-group-subtitle-text,
+    $kendo-orgchart-card-width: $kendo-orgchart-card-width,
+    $kendo-orgchart-card-border-width: $kendo-orgchart-card-border-width,
+    $kendo-orgchart-card-shadow: $kendo-orgchart-card-shadow,
+    $kendo-orgchart-card-focus-shadow: $kendo-orgchart-card-focus-shadow,
+    $kendo-orgchart-card-title-margin-bottom: $kendo-orgchart-card-title-margin-bottom,
+    $kendo-orgchart-card-title-font-size: $kendo-orgchart-card-title-font-size,
+    $kendo-orgchart-card-subtitle-margin-bottom: $kendo-orgchart-card-subtitle-margin-bottom,
+    $kendo-orgchart-card-subtitle-font-size: $kendo-orgchart-card-subtitle-font-size,
+    $kendo-orgchart-card-body-border-width: $kendo-orgchart-card-body-border-width,
+    $kendo-orgchart-card-body-border-color: $kendo-orgchart-card-body-border-color,
+    $kendo-orgchart-card-body-vbox-margin-right: $kendo-orgchart-card-body-vbox-margin-right,
+    $kendo-orgchart-card-body-vbox-min-height: $kendo-orgchart-card-body-vbox-min-height,
+    $kendo-orgchart-line-size: $kendo-orgchart-line-size,
+    $kendo-orgchart-line-fill: $kendo-orgchart-line-fill,
+    $kendo-orgchart-line-v-height: $kendo-orgchart-line-v-height
+);

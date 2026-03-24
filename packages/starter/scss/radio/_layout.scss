@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/radio/_layout.scss" as *;
+
+
+@mixin kendo-radio--layout() {
+    @include kendo-radio--layout-base();
+}

@@ -1,0 +1,118 @@
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
+
+// ScrollView
+
+/// The width of the border around the ScrollView.
+/// @group scrollview
+$kendo-scrollview-border-width: 1px !default;
+/// The font family of the ScrollView.
+/// @group scrollview
+$kendo-scrollview-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the ScrollView.
+/// @group scrollview
+$kendo-scrollview-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the ScrollView.
+/// @group scrollview
+$kendo-scrollview-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The text color of the ScrollView.
+/// @group scrollview
+$kendo-scrollview-text: k-color(on-app-surface) !default;
+/// The background color of the ScrollView.
+/// @group scrollview
+$kendo-scrollview-bg: k-color(surface-alt) !default;
+/// The border color of the ScrollView.
+/// @group scrollview
+$kendo-scrollview-border: k-color(border) !default;
+
+/// The size of the ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-size: 10px !default;
+/// The background color of the ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-bg: $kendo-button-bg !default;
+/// The border color of the ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-border: $kendo-button-border !default;
+/// The primary background color of the ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-bg: k-color(primary) !default;
+/// The primary border color of the ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-border: k-color(primary) !default;
+/// The box shadow of the ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-shadow: 0 0 0 2px k-color(border-alt) !default;
+
+/// The offset of the ScrollView pager.
+/// @group scrollview
+$kendo-scrollview-pager-offset: 0 !default;
+/// The spacing between the ScrollView pager items.
+/// @group scrollview
+$kendo-scrollview-pager-item-spacing: k-spacing(5) !default;
+/// The border width of the ScrollView pager items.
+/// @group scrollview
+$kendo-scrollview-pager-item-border-width: 0px !default;
+/// The height of the ScrollView pager.
+/// @group scrollview
+$kendo-scrollview-pager-height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + calc( #{$kendo-scrollview-pager-item-spacing} * 2 ) ) !default;
+
+/// The text color of the highlight over the tapped ScrollView navigation arrows.
+/// @group scrollview
+$kendo-scrollview-arrow-tap-highlight-color: $kendo-color-rgba-transparent !default;
+/// The color of the ScrollView navigation arrows.
+/// @group scrollview
+$kendo-scrollview-navigation-color: white !default;
+/// The background color of the ScrollView navigation.
+/// @group scrollview
+$kendo-scrollview-navigation-bg: transparent !default;
+/// The opacity of the ScrollView navigation.
+/// @group scrollview
+$kendo-scrollview-navigation-default-opacity: .7 !default;
+/// The hover opacity of the ScrollView navigation.
+/// @group scrollview
+$kendo-scrollview-navigation-hover-opacity: 1 !default;
+
+/// The background color of the ScrollView pager in light mode.
+/// @group scrollview
+$kendo-scrollview-light-bg: rgba(255, 255, 255, .4) !default;
+/// The background color of the ScrollView pager in dark mode.
+/// @group scrollview
+$kendo-scrollview-dark-bg: rgba(0, 0, 0, .4) !default;
+
+/// The duration of the ScrollView transition.
+/// @group scrollview
+$kendo-scrollview-transition-duration: .3s !default;
+/// The timing function of the ScrollView transition.
+/// @group scrollview
+$kendo-scrollview-transition-timing-function: ease-in-out !default;
+
+@forward "@progress/kendo-theme-core/scss/components/scrollview/_variables.scss" with (
+    $kendo-scrollview-border-width: $kendo-scrollview-border-width,
+    $kendo-scrollview-font-family: $kendo-scrollview-font-family,
+    $kendo-scrollview-font-size: $kendo-scrollview-font-size,
+    $kendo-scrollview-line-height: $kendo-scrollview-line-height,
+    $kendo-scrollview-text: $kendo-scrollview-text,
+    $kendo-scrollview-bg: $kendo-scrollview-bg,
+    $kendo-scrollview-border: $kendo-scrollview-border,
+    $kendo-scrollview-pagebutton-size: $kendo-scrollview-pagebutton-size,
+    $kendo-scrollview-pagebutton-bg: $kendo-scrollview-pagebutton-bg,
+    $kendo-scrollview-pagebutton-border: $kendo-scrollview-pagebutton-border,
+    $kendo-scrollview-pagebutton-primary-bg: $kendo-scrollview-pagebutton-primary-bg,
+    $kendo-scrollview-pagebutton-primary-border: $kendo-scrollview-pagebutton-primary-border,
+    $kendo-scrollview-pagebutton-shadow: $kendo-scrollview-pagebutton-shadow,
+    $kendo-scrollview-pager-offset: $kendo-scrollview-pager-offset,
+    $kendo-scrollview-pager-item-spacing: $kendo-scrollview-pager-item-spacing,
+    $kendo-scrollview-pager-item-border-width: $kendo-scrollview-pager-item-border-width,
+    $kendo-scrollview-pager-height: $kendo-scrollview-pager-height,
+    $kendo-scrollview-arrow-tap-highlight-color: $kendo-scrollview-arrow-tap-highlight-color,
+    $kendo-scrollview-navigation-color: $kendo-scrollview-navigation-color,
+    $kendo-scrollview-navigation-bg: $kendo-scrollview-navigation-bg,
+    $kendo-scrollview-navigation-default-opacity: $kendo-scrollview-navigation-default-opacity,
+    $kendo-scrollview-navigation-hover-opacity: $kendo-scrollview-navigation-hover-opacity,
+    $kendo-scrollview-light-bg: $kendo-scrollview-light-bg,
+    $kendo-scrollview-dark-bg: $kendo-scrollview-dark-bg,
+    $kendo-scrollview-transition-duration: $kendo-scrollview-transition-duration,
+    $kendo-scrollview-transition-timing-function: $kendo-scrollview-transition-timing-function
+);

@@ -1,0 +1,70 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+
+// Smart box
+
+/// The default size of the SmartBox.
+/// @group smart-box
+/// @role default
+$kendo-smart-box-default-size: "md" !default;
+/// The default roundness of the SmartBox.
+/// @group smart-box
+/// @role default
+$kendo-smart-box-default-roundness: "full" !default;
+
+/// The spacing between elements in the suffix of the Smart box.
+/// @group smart-box
+$kendo-smart-box-suffix-spacing: k-spacing(1) !default;
+
+/// The horizontal padding of the small Smart box.
+/// @group smart-box
+$kendo-smart-box-sm-padding-x: 0 !default;
+/// The horizontal padding of the medium Smart box.
+/// @group smart-box
+$kendo-smart-box-md-padding-x: k-spacing(.5) !default;
+/// The horizontal padding of the large Smart box.
+/// @group smart-box
+$kendo-smart-box-lg-padding-x: k-spacing(2) !default;
+
+/// The horizontal margin of the prefix icon in the small Smart box.
+/// @group smart-box
+$kendo-smart-box-sm-prefix-margin-x: k-spacing(1) !default;
+/// The horizontal margin of the prefix icon in the medium Smart box.
+/// @group smart-box
+$kendo-smart-box-md-prefix-margin-x: k-spacing(1) !default;
+/// The horizontal margin of the prefix icon in the large Smart box.
+/// @group smart-box
+$kendo-smart-box-lg-prefix-margin-x: 0 !default;
+
+/// The inline padding of the popup of the Smart box.
+/// @group smart-box
+$kendo-smart-box-popup-padding-inline: k-spacing(2) !default;
+/// The block padding of the popup of the Smart box.
+/// @group smart-box
+$kendo-smart-box-popup-padding-block: k-spacing(2) !default;
+/// The border radius of the popup of the Smart box.
+/// @group smart-box
+$kendo-smart-box-popup-border-radius: k-border-radius(xxl) !default;
+/// The spacing of the popup of the Smart box.
+/// @group smart-box
+$kendo-smart-box-popup-spacing: k-spacing(2) !default;
+/// The margin of the segmented control in the popup of the Smart box.
+/// @group smart-box
+$kendo-smart-box-popup-segmented-control-margin: k-spacing(2) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/smart-box/_variables.scss" with (
+    $kendo-smart-box-default-size: $kendo-smart-box-default-size,
+    $kendo-smart-box-default-roundness: $kendo-smart-box-default-roundness,
+    $kendo-smart-box-suffix-spacing: $kendo-smart-box-suffix-spacing,
+    $kendo-smart-box-sm-padding-x: $kendo-smart-box-sm-padding-x,
+    $kendo-smart-box-md-padding-x: $kendo-smart-box-md-padding-x,
+    $kendo-smart-box-lg-padding-x: $kendo-smart-box-lg-padding-x,
+    $kendo-smart-box-sm-prefix-margin-x: $kendo-smart-box-sm-prefix-margin-x,
+    $kendo-smart-box-md-prefix-margin-x: $kendo-smart-box-md-prefix-margin-x,
+    $kendo-smart-box-lg-prefix-margin-x: $kendo-smart-box-lg-prefix-margin-x,
+    $kendo-smart-box-popup-padding-inline: $kendo-smart-box-popup-padding-inline,
+    $kendo-smart-box-popup-padding-block: $kendo-smart-box-popup-padding-block,
+    $kendo-smart-box-popup-border-radius: $kendo-smart-box-popup-border-radius,
+    $kendo-smart-box-popup-spacing: $kendo-smart-box-popup-spacing,
+    $kendo-smart-box-popup-segmented-control-margin: $kendo-smart-box-popup-segmented-control-margin,
+);

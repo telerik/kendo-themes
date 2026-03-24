@@ -1,0 +1,20 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../progressbar/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-stepper--styles() {
+    @include import-once( "stepper" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-progressbar--styles();
+        @include kendo-stepper--layout();
+        @include kendo-stepper--theme();
+    }
+}

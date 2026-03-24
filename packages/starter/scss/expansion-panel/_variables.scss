@@ -1,0 +1,105 @@
+@use "../core/_index.scss" as *;
+@use "../list/_variables.scss" as *;
+
+// ExpansionPanel
+
+/// The vertical spacing of the ExpansionPanel.
+/// @group expander
+$kendo-expander-spacing-y: k-spacing(2) !default;
+/// The width of the border around the ExpansionPanel.
+/// @group expander
+$kendo-expander-border-width: 1px !default;
+/// The font family of the ExpansionPanel.
+/// @group expander
+$kendo-expander-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the ExpansionPanel.
+/// @group expander
+$kendo-expander-font-size: var( --kendo-font-size, inherit ) !default;
+/// The hine height of the ExpansionPanel.
+/// @group expander
+$kendo-expander-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The text color of the ExpansionPanel.
+/// @group expander
+$kendo-expander-text: k-color(on-app-surface) !default;
+/// The background color of the ExpansionPanel.
+/// @group expander
+$kendo-expander-bg: k-color(surface-alt) !default;
+/// The border color of the ExpansionPanel.
+/// @group expander
+$kendo-expander-border: k-color(border) !default;
+
+/// The box shadow of the focused ExpansionPanel.
+/// @group expander
+$kendo-expander-focus-shadow: $kendo-list-item-focus-shadow !default;
+
+/// The horizontal padding of the ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-padding-x: k-spacing(4) !default;
+/// The vertical padding of the ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-padding-y: k-spacing(3) !default;
+
+/// The text color of the ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-text: $kendo-expander-text !default;
+/// The background color of the ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-bg: transparent !default;
+/// The border color of the ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-border: null !default;
+
+/// The background color of the hovered ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-hover-bg: color-mix(in srgb, k-color(on-app-surface) 4%, transparent ) !default;
+/// The background color of the focused ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-focus-bg: null !default;
+/// The box shadow of the focused ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-focus-shadow: $kendo-list-item-focus-shadow !default;
+
+/// The text color of the ExpansionPanel title.
+/// @group expander
+$kendo-expander-title-text: k-color(primary-on-surface) !default;
+
+/// The text color of the ExpansionPanel sub-title.
+/// @group expander
+$kendo-expander-header-sub-title-text: k-color(subtle) !default;
+
+/// The horizontal margin of the ExpansionPanel indicator.
+/// @group expander
+$kendo-expander-indicator-margin-x: k-spacing(3) !default;
+
+/// The horizontal padding of the ExpansionPanel content.
+/// @group expander
+$kendo-expander-content-padding-x: k-spacing(4) !default;
+/// The vertical padding of the ExpansionPanel content.
+/// @group expander
+$kendo-expander-content-padding-y: k-spacing(4) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/expansion-panel/_variables.scss" with (
+    $kendo-expander-spacing-y: $kendo-expander-spacing-y,
+    $kendo-expander-border-width: $kendo-expander-border-width,
+    $kendo-expander-font-family: $kendo-expander-font-family,
+    $kendo-expander-font-size: $kendo-expander-font-size,
+    $kendo-expander-line-height: $kendo-expander-line-height,
+    $kendo-expander-text: $kendo-expander-text,
+    $kendo-expander-bg: $kendo-expander-bg,
+    $kendo-expander-border: $kendo-expander-border,
+    $kendo-expander-focus-shadow: $kendo-expander-focus-shadow,
+    $kendo-expander-header-padding-x: $kendo-expander-header-padding-x,
+    $kendo-expander-header-padding-y: $kendo-expander-header-padding-y,
+    $kendo-expander-header-text: $kendo-expander-header-text,
+    $kendo-expander-header-bg: $kendo-expander-header-bg,
+    $kendo-expander-header-border: $kendo-expander-header-border,
+    $kendo-expander-header-hover-bg: $kendo-expander-header-hover-bg,
+    $kendo-expander-header-focus-bg: $kendo-expander-header-focus-bg,
+    $kendo-expander-header-focus-shadow: $kendo-expander-header-focus-shadow,
+    $kendo-expander-title-text: $kendo-expander-title-text,
+    $kendo-expander-header-sub-title-text: $kendo-expander-header-sub-title-text,
+    $kendo-expander-indicator-margin-x: $kendo-expander-indicator-margin-x,
+    $kendo-expander-content-padding-x: $kendo-expander-content-padding-x,
+    $kendo-expander-content-padding-y: $kendo-expander-content-padding-y
+);

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/tilelayout/_layout.scss" as *;
+
+
+@mixin kendo-tile-layout--layout() {
+    @include kendo-tile-layout--layout-base();
+}

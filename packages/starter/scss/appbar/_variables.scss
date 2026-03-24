@@ -1,0 +1,83 @@
+@use "../core/_index.scss" as *;
+@use "../core/z-index/index.scss" as *;
+
+
+// AppBar
+
+/// The default theme color of the AppBar.
+/// @group appbar
+/// @role default
+$kendo-appbar-default-theme-color: "light" !default;
+
+/// The horizontal margin of the AppBar.
+/// @group appbar
+$kendo-appbar-margin-x: null !default;
+/// The vertical margin of the AppBar.
+/// @group appbar
+$kendo-appbar-margin-y: null !default;
+/// The horizontal padding of the AppBar.
+/// @group appbar
+$kendo-appbar-padding-x: k-spacing(2) !default;
+/// The vertical padding of the AppBar.
+/// @group appbar
+$kendo-appbar-padding-y: k-spacing(2) !default;
+/// The width of the border around the AppBar.
+/// @group appbar
+$kendo-appbar-border-width: 0px !default;
+/// The z-index of the AppBar.
+/// @group appbar
+$kendo-appbar-zindex: k-z-index("banner") !default;
+/// The font family of the AppBar.
+/// @group appbar
+$kendo-appbar-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the AppBar.
+/// @group appbar
+$kendo-appbar-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the AppBar.
+/// @group appbar
+$kendo-appbar-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The spacing between the AppBar sections.
+/// @group appbar
+$kendo-appbar-gap: k-spacing(2) !default;
+
+/// The background color of the AppBar based on light theme color.
+/// @group appbar
+$kendo-appbar-light-bg: k-color(light) !default;
+/// The text color of the AppBar based on light theme color.
+/// @group appbar
+$kendo-appbar-light-text: k-color(on-light) !default;
+
+/// The background color of the AppBar based on dark theme color.
+/// @group appbar
+$kendo-appbar-dark-bg: k-color(dark) !default;
+/// The text color of the AppBar based on dark theme color.
+/// @group appbar
+$kendo-appbar-dark-text: k-color(on-dark) !default;
+
+/// The box shadow of the AppBar.
+/// @group appbar
+$kendo-appbar-box-shadow: k-elevation(4) !default;
+/// The box shadow of the AppBar with bottom position.
+/// @group appbar
+$kendo-appbar-bottom-box-shadow: $kendo-appbar-box-shadow !default;
+
+@forward "@progress/kendo-theme-core/scss/components/appbar/_variables.scss" with (
+    $kendo-appbar-margin-x: $kendo-appbar-margin-x,
+    $kendo-appbar-margin-y: $kendo-appbar-margin-y,
+    $kendo-appbar-padding-x: $kendo-appbar-padding-x,
+    $kendo-appbar-padding-y: $kendo-appbar-padding-y,
+    $kendo-appbar-border-width: $kendo-appbar-border-width,
+    $kendo-appbar-zindex: $kendo-appbar-zindex,
+    $kendo-appbar-font-family: $kendo-appbar-font-family,
+    $kendo-appbar-font-size: $kendo-appbar-font-size,
+    $kendo-appbar-line-height: $kendo-appbar-line-height,
+    $kendo-appbar-gap: $kendo-appbar-gap,
+    $kendo-appbar-light-bg: $kendo-appbar-light-bg,
+    $kendo-appbar-light-text: $kendo-appbar-light-text,
+    $kendo-appbar-dark-bg: $kendo-appbar-dark-bg,
+    $kendo-appbar-dark-text: $kendo-appbar-dark-text,
+    $kendo-appbar-box-shadow: $kendo-appbar-box-shadow,
+    $kendo-appbar-bottom-box-shadow: $kendo-appbar-bottom-box-shadow,
+    $kendo-appbar-default-theme-color: $kendo-appbar-default-theme-color
+);

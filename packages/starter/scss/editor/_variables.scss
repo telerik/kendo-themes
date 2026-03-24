@@ -1,0 +1,115 @@
+@use "sass:color";
+@use "../core/_index.scss" as *;
+@use "../input/_variables.scss" as *;
+
+// Editor
+
+/// The width of the border around the Еditor.
+/// @group editor
+$kendo-editor-border-width: 1px !default;
+/// The font family of the Еditor.
+/// @group editor
+$kendo-editor-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Еditor.
+/// @group editor
+$kendo-editor-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Еditor.
+/// @group editor
+$kendo-editor-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The text color of the Еditor placeholder.
+/// @group editor
+$kendo-editor-placeholder-text: $kendo-input-placeholder-text !default;
+/// The opacity of the Editor placeholder.
+/// @group editor
+$kendo-editor-placeholder-opacity: $kendo-input-placeholder-opacity !default;
+
+/// The selected text color of the Editor.
+/// @group editor
+$kendo-editor-selected-text: k-color(on-primary) !default;
+/// The selected background color of the Editor.
+/// @group editor
+$kendo-editor-selected-bg: k-color(primary) !default;
+
+/// The highlighted background color of the Editor.
+/// @group editor
+$kendo-editor-highlighted-bg: color-mix(in srgb, k-color(primary) 25%, transparent) !default;
+
+/// The horizontal margin of the Editor's export tool icon.
+/// @group editor
+$kendo-editor-export-tool-icon-margin-x: .25em !default;
+
+/// The size of the Editor's resize handle.
+/// @group editor
+$kendo-editor-resize-handle-size: 8px !default;
+/// The border width of the Editor's resize handle.
+/// @group editor
+$kendo-editor-resize-handle-border-width: 1px !default;
+/// The border color of the Editor's resize handle.
+/// @group editor
+$kendo-editor-resize-handle-border: #000000 !default;
+/// The background color of the Editor's resize handle.
+/// @group editor
+$kendo-editor-resize-handle-bg: #ffffff !default;
+
+///  The outline width of the Editor's selected node.
+/// @group editor
+$kendo-editor-selectednode-outline-width: 2px !default;
+/// The outline color of the Editor's selected node.
+/// @group editor
+$kendo-editor-selectednode-outline-color: #88ccff !default;
+
+/// The horizontal padding of the inline Editor.
+/// @group editor
+$kendo-editor-inline-padding-x: k-spacing(1) !default;
+/// The vertical padding of the inline Editor.
+/// @group editor
+$kendo-editor-inline-padding-y: k-spacing(0.5) !default;
+
+/// The horizontal padding of the Editor file browser tiles.
+/// @group editor
+$kendo-editor-filebrowser-tiles-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Editor file browser tiles.
+/// @group editor
+$kendo-editor-filebrowser-tiles-padding-y: k-spacing(1) !default;
+
+/// The padding of the Editor content.
+/// @group editor
+$kendo-editor-content-padding: k-spacing(2) !default;
+
+/// The text color of the Editor cell.
+/// @group editor
+$kendo-editor-ct-cell-text: k-color(on-primary) !default;
+/// The background color of the Editor cell.
+/// @group editor
+$kendo-editor-ct-cell-bg: k-color(primary) !default;
+/// The border color of the Editor cell.
+/// @group editor
+$kendo-editor-ct-cell-border: k-color(border) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/editor/_variables.scss" with (
+    $kendo-editor-border-width: $kendo-editor-border-width,
+    $kendo-editor-font-family: $kendo-editor-font-family,
+    $kendo-editor-font-size: $kendo-editor-font-size,
+    $kendo-editor-line-height: $kendo-editor-line-height,
+    $kendo-editor-placeholder-text: $kendo-editor-placeholder-text,
+    $kendo-editor-placeholder-opacity: $kendo-editor-placeholder-opacity,
+    $kendo-editor-selected-text: $kendo-editor-selected-text,
+    $kendo-editor-selected-bg: $kendo-editor-selected-bg,
+    $kendo-editor-highlighted-bg: $kendo-editor-highlighted-bg,
+    $kendo-editor-export-tool-icon-margin-x: $kendo-editor-export-tool-icon-margin-x,
+    $kendo-editor-resize-handle-size: $kendo-editor-resize-handle-size,
+    $kendo-editor-resize-handle-border-width: $kendo-editor-resize-handle-border-width,
+    $kendo-editor-resize-handle-border: $kendo-editor-resize-handle-border,
+    $kendo-editor-resize-handle-bg: $kendo-editor-resize-handle-bg,
+    $kendo-editor-selectednode-outline-width: $kendo-editor-selectednode-outline-width,
+    $kendo-editor-selectednode-outline-color: $kendo-editor-selectednode-outline-color,
+    $kendo-editor-inline-padding-x: $kendo-editor-inline-padding-x,
+    $kendo-editor-inline-padding-y: $kendo-editor-inline-padding-y,
+    $kendo-editor-filebrowser-tiles-padding-x: $kendo-editor-filebrowser-tiles-padding-x,
+    $kendo-editor-filebrowser-tiles-padding-y: $kendo-editor-filebrowser-tiles-padding-y,
+    $kendo-editor-content-padding: $kendo-editor-content-padding,
+    $kendo-editor-ct-cell-text: $kendo-editor-ct-cell-text,
+    $kendo-editor-ct-cell-bg: $kendo-editor-ct-cell-bg,
+    $kendo-editor-ct-cell-border: $kendo-editor-ct-cell-border
+);

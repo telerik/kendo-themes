@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/taskboard/_theme.scss" as *;
+
+
+@mixin kendo-task-board--theme() {
+    @include kendo-task-board--theme-base();
+}

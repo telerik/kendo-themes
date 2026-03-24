@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/mediaplayer/_layout.scss" as *;
+
+
+@mixin kendo-media-player--layout() {
+    @include kendo-media-player--layout-base();
+}

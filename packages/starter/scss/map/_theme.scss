@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/map/_theme.scss" as *;
+
+
+@mixin kendo-map--theme() {
+    @include kendo-map--theme-base();
+}

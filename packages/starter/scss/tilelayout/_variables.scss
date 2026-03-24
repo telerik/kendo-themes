@@ -1,0 +1,55 @@
+@use "../core/_index.scss" as *;
+@use "../card/_variables.scss" as *;
+
+// TileLayout
+
+/// The width of the border around the TileLayout.
+/// @group tile-layout
+$kendo-tile-layout-border-width: 0px !default;
+/// The background color of the TileLayout.
+/// @group tile-layout
+$kendo-tile-layout-bg: k-color(surface) !default;
+
+/// The horizontal padding of the TileLayout.
+/// @group tile-layout
+$kendo-tile-layout-padding-x: k-spacing(4) !default;
+
+/// The vertical padding of the TileLayout
+/// @group tile-layout
+$kendo-tile-layout-padding-y: $kendo-tile-layout-padding-x !default;
+
+/// The width of the border around the TileLayout card.
+/// @group tile-layout
+$kendo-tile-layout-card-border-width: $kendo-card-border-width !default;
+/// The focus box shadow of the TileLayout card.
+/// @group tile-layout
+$kendo-tile-layout-card-focus-shadow: $kendo-card-focus-shadow !default;
+
+/// The width of the border around the TileLayout hint.
+/// @group tile-layout
+$kendo-tile-layout-hint-border-width: 1px !default;
+/// The radius of the border around the TileLayout hint.
+/// @group tile-layout
+$kendo-tile-layout-hint-border-radius: k-border-radius(lg) !default;
+/// The color of the border around the TileLayout hint.
+/// @group tile-layout
+$kendo-tile-layout-hint-border: k-color(border) !default;
+/// The background color of the TileLayout hint.
+/// @group tile-layout
+$kendo-tile-layout-hint-bg: rgba(255, 255, 255, .2) !default;
+
+
+
+
+@forward "@progress/kendo-theme-core/scss/components/tilelayout/_variables.scss" with (
+    $kendo-tile-layout-border-width: $kendo-tile-layout-border-width,
+    $kendo-tile-layout-bg: $kendo-tile-layout-bg,
+    $kendo-tile-layout-padding-x: $kendo-tile-layout-padding-x,
+    $kendo-tile-layout-padding-y: $kendo-tile-layout-padding-y,
+    $kendo-tile-layout-card-border-width: $kendo-tile-layout-card-border-width,
+    $kendo-tile-layout-card-focus-shadow: $kendo-tile-layout-card-focus-shadow,
+    $kendo-tile-layout-hint-border-width: $kendo-tile-layout-hint-border-width,
+    $kendo-tile-layout-hint-border-radius: $kendo-tile-layout-hint-border-radius,
+    $kendo-tile-layout-hint-border: $kendo-tile-layout-hint-border,
+    $kendo-tile-layout-hint-bg: $kendo-tile-layout-hint-bg
+);

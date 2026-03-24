@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/wizard/_theme.scss" as *;
+
+
+@mixin kendo-wizard--theme() {
+    @include kendo-wizard--theme-base();
+}

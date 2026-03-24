@@ -1,0 +1,74 @@
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "../core/_index.scss" as *;
+
+// Rating
+
+/// The font family of the Rating.
+/// @group rating
+$kendo-rating-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Rating.
+/// @group rating
+$kendo-rating-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Rating.
+/// @group rating
+$kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The horizontal margin of the Rating container.
+/// @group rating
+$kendo-rating-container-margin-x: k-spacing(1) !default;
+
+/// The horizontal padding of the Rating item.
+/// @group rating
+$kendo-rating-item-padding-x: k-spacing(1) !default;
+/// The vertical padding of the Rating item.
+/// @group rating
+$kendo-rating-item-padding-y: k-spacing(1) !default;
+
+/// The horizontal margin of the Rating label.
+/// @group rating
+$kendo-rating-label-margin-x: k-spacing(2) !default;
+/// The vertical margin of the Rating label.
+/// @group rating
+$kendo-rating-label-margin-y: k-spacing(1) !default;
+/// The line height of the Rating label.
+/// @group rating
+$kendo-rating-label-line-height: var( --kendo-line-height-lg, normal ) !default;
+
+/// The text color of the Rating icon.
+/// @group rating
+$kendo-rating-icon-text: k-color(on-app-surface) !default;
+/// The text color of the selected Rating icon.
+/// @group rating
+$kendo-rating-icon-selected-text: k-color(primary) !default;
+/// The text color of the hovered Rating icon.
+/// @group rating
+$kendo-rating-icon-hover-text: k-color(primary) !default;
+/// The text color of the focused Rating icon.
+/// @group rating
+$kendo-rating-icon-focus-text: k-color(primary) !default;
+
+/// The shadow of the focused Rating icon.
+/// @group rating
+$kendo-rating-icon-focus-shadow: k-elevation(1) !default;
+/// The shadow of the focused and selected Rating icon.
+/// @group rating
+$kendo-rating-icon-focus-selected-shadow: k-elevation(1) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/rating/_variables.scss" with (
+    $kendo-rating-font-family: $kendo-rating-font-family,
+    $kendo-rating-font-size: $kendo-rating-font-size,
+    $kendo-rating-line-height: $kendo-rating-line-height,
+    $kendo-rating-container-margin-x: $kendo-rating-container-margin-x,
+    $kendo-rating-item-padding-x: $kendo-rating-item-padding-x,
+    $kendo-rating-item-padding-y: $kendo-rating-item-padding-y,
+    $kendo-rating-label-margin-x: $kendo-rating-label-margin-x,
+    $kendo-rating-label-margin-y: $kendo-rating-label-margin-y,
+    $kendo-rating-label-line-height: $kendo-rating-label-line-height,
+    $kendo-rating-icon-text: $kendo-rating-icon-text,
+    $kendo-rating-icon-selected-text: $kendo-rating-icon-selected-text,
+    $kendo-rating-icon-hover-text: $kendo-rating-icon-hover-text,
+    $kendo-rating-icon-focus-text: $kendo-rating-icon-focus-text,
+    $kendo-rating-icon-focus-shadow: $kendo-rating-icon-focus-shadow,
+    $kendo-rating-icon-focus-selected-shadow: $kendo-rating-icon-focus-selected-shadow
+);

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/tabstrip/_layout.scss" as *;
+
+
+@mixin kendo-tabstrip--layout() {
+    @include kendo-tabstrip--layout-base();
+}

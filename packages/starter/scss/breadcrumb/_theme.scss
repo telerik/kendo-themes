@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/breadcrumb/_theme.scss" as *;
+
+
+@mixin kendo-breadcrumb--theme() {
+    @include kendo-breadcrumb--theme-base();
+}

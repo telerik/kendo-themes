@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/window/_layout.scss" as *;
+
+
+@mixin kendo-window--layout() {
+    @include kendo-window--layout-base();
+}

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/dataviz/_layout.scss" as *;
+
+
+@mixin kendo-dataviz--layout() {
+    @include kendo-dataviz--layout-base();
+}

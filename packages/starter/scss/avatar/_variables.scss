@@ -1,0 +1,62 @@
+@use "../core/_index.scss" as *;
+// Avatar
+
+/// The default theme color of the Avatar.
+/// @group avatar
+/// @role default
+$kendo-avatar-default-theme-color: "primary" !default;
+/// The default fill mode of the Avatar.
+/// @group avatar
+/// @role default
+$kendo-avatar-default-fill-mode: "solid" !default;
+/// The default roundness of the Avatar.
+/// @group avatar
+/// @role default
+$kendo-avatar-default-roundness: "full" !default;
+/// The default size of the Avatar.
+/// @group avatar
+/// @role default
+$kendo-avatar-default-size: "md" !default;
+
+/// The border width of the Avatar.
+/// @group avatar
+$kendo-avatar-border-width: 1px !default;
+
+/// The border radius of the Avatar.
+/// @group avatar
+$kendo-avatar-border-radius: null !default;
+
+/// The font family of the Avatar.
+/// @group avatar
+$kendo-avatar-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Avatar.
+/// @group avatar
+$kendo-avatar-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Avatar.
+/// @group avatar
+$kendo-avatar-line-height: var( --kendo-line-height-xs, normal ) !default;
+
+/// The small size of the Avatar.
+/// @group avatar
+$kendo-avatar-sm-size: k-spacing(4) !default;
+/// The medium size of the Avatar.
+/// @group avatar
+$kendo-avatar-md-size: k-spacing(8) !default;
+/// The large size of the Avatar.
+/// @group avatar
+$kendo-avatar-lg-size: k-spacing(16) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/avatar/_variables.scss" with (
+    $kendo-avatar-default-theme-color: $kendo-avatar-default-theme-color,
+    $kendo-avatar-default-fill-mode: $kendo-avatar-default-fill-mode,
+    $kendo-avatar-default-roundness: $kendo-avatar-default-roundness,
+    $kendo-avatar-default-size: $kendo-avatar-default-size,
+    $kendo-avatar-border-width: $kendo-avatar-border-width,
+    $kendo-avatar-border-radius: $kendo-avatar-border-radius,
+    $kendo-avatar-font-family: $kendo-avatar-font-family,
+    $kendo-avatar-font-size: $kendo-avatar-font-size,
+    $kendo-avatar-line-height: $kendo-avatar-line-height,
+    $kendo-avatar-sm-size: $kendo-avatar-sm-size,
+    $kendo-avatar-md-size: $kendo-avatar-md-size,
+    $kendo-avatar-lg-size: $kendo-avatar-lg-size
+);

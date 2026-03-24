@@ -1,0 +1,16 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-dropzone--styles() {
+    @include import-once( "dropzone" ) {
+        @include core-styles();
+        @include kendo-dropzone--layout();
+        @include kendo-dropzone--theme();
+    }
+}

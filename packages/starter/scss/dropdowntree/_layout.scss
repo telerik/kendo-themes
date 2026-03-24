@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/dropdowntree/_layout.scss" as *;
+
+
+@mixin kendo-dropdown-tree--layout() {
+    @include kendo-dropdown-tree--layout-base();
+}

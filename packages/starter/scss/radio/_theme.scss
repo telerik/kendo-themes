@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/radio/_theme.scss" as *;
+
+
+@mixin kendo-radio--theme() {
+    @include kendo-radio--theme-base();
+}

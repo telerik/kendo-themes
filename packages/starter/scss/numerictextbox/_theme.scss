@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/numerictextbox/_theme.scss" as *;
+
+
+@mixin kendo-numeric-textbox--theme() {
+    @include kendo-numeric-textbox--theme-base();
+}
