@@ -1,10 +1,9 @@
 {
   "name": "@progress/kendo-theme-starter",
-  "description": "SASS resources for the starter Kendo UI theme",
-  "version": "13.1.1",
+  "description": "Starter theme for Kendo UI",
+  "version": "13.2.0-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
-  "private": true,
   "keywords": [
     "Kendo UI",
     "Theme"
@@ -16,14 +15,17 @@
     "scss/",
     "lib/"
   ],
-  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/starter",
+  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/bootstrap",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/telerik/kendo-themes.git",
     "directory": "packages/starter"
   },
   "bugs": {
-    "url": "https://github.com/telerik/kendo-themes/issues/new?labels=bug,T:Starter&template=bug_report.md"
+    "url": "https://github.com/telerik/kendo-themes/issues/new?labels=bug,T:Bootstrap&template=bug_report.md"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "kendo": {
     "themebuilder": {
@@ -35,7 +37,7 @@
   },
   "scripts": {
     "sass": "npm run sass:compile:all && npm run css:prefix",
-    "sass:dist": "gulp sass:dist --theme packages/starter && npm run sass:compile:dist && npm run css:prefix",
+    "sass:dist": "gulp sass:dist --theme packages/bootstrap && npm run sass:compile:dist && npm run css:prefix",
     "sass:compile:all": "npx sass --no-source-map --load-path=../../node_modules ./scss/all.scss ./dist/all.css",
     "sass:compile:dist": "npx sass --style=compressed --no-source-map --load-path=../../node_modules ./dist:dist",
     "sass:watch": "npx sass --no-source-map --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
@@ -43,12 +45,16 @@
     "docs": "node ../../scripts/sassdoc.js",
     "docs:check": "npm run docs && git diff --name-only --exit-code -- docs",
     "predocs": "npm run resolve-variables",
-    "resolve-variables": "node ../../scripts/resolve-variables.js"
+    "resolve-variables": "node ../../scripts/resolve-variables.js",
+    "nuget-pack": "jq '.version' package.json | xargs nuget pack package.nuspec -Version",
+    "nuget-push": "nuget push *.nupkg -ApiKey $NUGET_API_KEY -Source $NUGET_FEED -SkipDuplicate",
+    "prepublishOnly": "node ../../scripts/themes-prepublish.js",
+    "postpublish": "echo 'no postpublish for bootstrap theme'"
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^4.8.0",
-    "@progress/kendo-theme-core": "13.1.1",
-    "@progress/kendo-theme-utils": "13.1.1"
+    "@progress/kendo-theme-core": "13.2.0-dev.0",
+    "@progress/kendo-theme-utils": "13.2.0-dev.0"
   },
   "directories": {
     "doc": "docs",
