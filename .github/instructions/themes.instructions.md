@@ -4,7 +4,7 @@ applyTo: "packages/{default,classic,material,fluent,bootstrap,starter}/**"
 
 # Theme Packages
 
-Instructions for all theme packages: `default`, `classic`, `material`, `fluent`, and `bootstrap`.
+Instructions for all theme packages: `default`, `classic`, `material`, `fluent`, `bootstrap`, and `starter`.
 
 ## Package Purpose
 
