@@ -1,0 +1,30 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../dialog/_index.scss" as *;
+@use "../treeview/_index.scss" as *;
+@use "../grid/_index.scss" as *;
+@use "../list/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-pivotgrid--styles() {
+    @include import-once( "pivotgrid" ) {
+        @include core-styles();
+        @include kendo-dialog--styles();
+        @include kendo-treeview--styles();
+        @include kendo-grid--styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
+        @include kendo-pivotgrid--layout();
+        @include kendo-pivotgrid--theme();
+        @include kendo-utils--layout--display();
+        @include kendo-utils--layout--position();
+        @include kendo-utils--flex-grid--flex-direction();
+    }
+}

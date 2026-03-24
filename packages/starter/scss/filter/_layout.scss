@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/filter/_layout.scss" as *;
+
+
+@mixin kendo-filter--layout() {
+    @include kendo-filter--layout-base();
+}

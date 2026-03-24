@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/dateinput/_theme.scss" as *;
+
+
+@mixin kendo-date-input--theme() {
+    @include kendo-date-input--theme-base();
+}

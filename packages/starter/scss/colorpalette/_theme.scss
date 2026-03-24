@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/colorpalette/_theme.scss" as *;
+
+
+@mixin kendo-color-palette--theme() {
+    @include kendo-color-palette--theme-base();
+}

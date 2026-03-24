@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/popup/_theme.scss" as *;
+
+
+@mixin kendo-popup--theme() {
+    @include kendo-popup--theme-base();
+}

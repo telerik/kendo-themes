@@ -1,0 +1,22 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../list/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-expander--styles() {
+    @include import-once( "expander" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
+        @include kendo-expander--layout();
+        @include kendo-expander--theme();
+        @include kendo-utils--layout--display();
+    }
+}

@@ -1,0 +1,26 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../badge/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-fab--styles() {
+    @include import-once( "fab" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
+        @include kendo-badge--styles();
+        @include kendo-fab--layout();
+        @include kendo-fab--theme();
+        @include kendo-utils--layout--position();
+        @include kendo-utils--typography--text-align();
+        @include kendo-utils--layout--overflow();
+    }
+}

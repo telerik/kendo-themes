@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/grid/_theme.scss" as *;
+
+
+@mixin kendo-grid--theme() {
+    @include kendo-grid--theme-base();
+}

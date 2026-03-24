@@ -1,0 +1,18 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../button/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "_layout.scss" as *;
+@use "_theme.scss" as *;
+
+// Expose
+@mixin kendo-speech-to-text-button--styles() {
+    @include import-once( "speech-to-text-button" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-speech-to-text-button--layout();
+        @include kendo-speech-to-text-button--theme();
+    }
+}

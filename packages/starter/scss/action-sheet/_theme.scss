@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/action-sheet/_theme.scss" as *;
+
+
+@mixin kendo-action-sheet--theme() {
+    @include kendo-action-sheet--theme-base();
+}

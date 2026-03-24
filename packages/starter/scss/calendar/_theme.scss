@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/calendar/_theme.scss" as *;
+
+
+@mixin kendo-calendar--theme() {
+    @include kendo-calendar--theme-base();
+}

@@ -1,0 +1,43 @@
+@use "../core/_index.scss" as *;
+
+// Filter expression builder
+
+/// The horizontal padding of the Filter.
+/// @group filter
+$kendo-filter-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Filter.
+/// @group filter
+$kendo-filter-padding-y: k-spacing(1) !default;
+
+/// The bottom margin of the Filter.
+/// @group filter
+$kendo-filter-bottom-margin: k-spacing(7.5) !default;
+/// The width of the line that connects the Filter items.
+/// @group filter
+$kendo-filter-line-size: 1px !default;
+
+/// The width of the dropdown elements in the Filter items.
+/// @group filter
+$kendo-filter-operator-dropdown-width: 15em !default;
+
+/// The text color of the Filter preview field.
+/// @group filter
+$kendo-filter-preview-field-text: k-color(primary) !default;
+/// The text color of the Filter preview operator.
+/// @group filter
+$kendo-filter-preview-operator-text: k-color(on-app-surface) !default;
+
+/// The box shadow of the focused Filter toolbar.
+/// @group filter
+$kendo-filter-toolbar-focus-shadow: 0 0 0 2px k-color(border-alt) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (
+    $kendo-filter-padding-x: $kendo-filter-padding-x,
+    $kendo-filter-padding-y: $kendo-filter-padding-y,
+    $kendo-filter-bottom-margin: $kendo-filter-bottom-margin,
+    $kendo-filter-line-size: $kendo-filter-line-size,
+    $kendo-filter-operator-dropdown-width: $kendo-filter-operator-dropdown-width,
+    $kendo-filter-preview-field-text: $kendo-filter-preview-field-text,
+    $kendo-filter-preview-operator-text: $kendo-filter-preview-operator-text,
+    $kendo-filter-toolbar-focus-shadow: $kendo-filter-toolbar-focus-shadow
+);

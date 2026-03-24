@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/validator/_layout.scss" as *;
+
+
+@mixin kendo-validator--layout() {
+    @include kendo-validator--layout-base();
+}

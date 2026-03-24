@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/fab/_layout.scss" as *;
+
+
+@mixin kendo-fab--layout() {
+    @include kendo-fab--layout-base();
+}

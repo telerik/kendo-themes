@@ -1,0 +1,22 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../splitter/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
+@use "../tabstrip/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-dock-manager--styles() {
+    @include import-once("dock-manager") {
+        @include core-styles();
+        @include kendo-splitter--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-tabstrip--styles();
+        @include kendo-dock-manager--layout();
+        @include kendo-dock-manager--theme();
+    }
+}

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/split-button/_theme.scss" as *;
+
+
+@mixin kendo-split-button--theme() {
+    @include kendo-split-button--theme-base();
+}

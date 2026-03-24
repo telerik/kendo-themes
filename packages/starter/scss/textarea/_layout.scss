@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/textarea/_layout.scss" as *;
+
+
+@mixin kendo-textarea--layout() {
+    @include kendo-textarea--layout-base();
+}

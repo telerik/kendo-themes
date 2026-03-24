@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/draggable/_theme.scss" as *;
+
+
+@mixin kendo-draggable--theme() {
+    @include kendo-draggable--theme-base();
+}

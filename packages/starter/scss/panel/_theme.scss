@@ -1,0 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/panel/_theme.scss" as *;
+
+@mixin kendo-panel--theme() {
+    @include kendo-panel--theme--base();
+}

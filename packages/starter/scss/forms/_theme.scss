@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/forms/_theme.scss" as *;
+
+
+@mixin kendo-form--theme() {
+    @include kendo-form--theme-base();
+}

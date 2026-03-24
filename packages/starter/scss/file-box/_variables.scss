@@ -1,0 +1,73 @@
+@use "../core/_index.scss" as *;
+
+// File Box
+
+/// The horizontal padding of the File Box.
+/// @group file-box
+$kendo-file-box-padding-x: k-spacing(1) !default;
+/// The vertical padding of the File Box.
+/// @group file-box
+$kendo-file-box-padding-y: k-spacing(1) !default;
+/// The spacing between the elements of the File Box.
+/// @group file-box
+$kendo-file-box-gap: k-spacing(1) !default;
+/// The minimum width of the File Box.
+/// @group file-box
+$kendo-file-box-min-width: 96px !default;
+/// The maximum width of the File Box.
+/// @group file-box
+$kendo-file-box-max-width: 160px !default;
+/// The border width of the File Box.
+/// @group file-box
+$kendo-file-box-border-width: 1px !default;
+/// The border style of the File Box.
+/// @group file-box
+$kendo-file-box-border-style: solid !default;
+/// The border-radius of the File Box.
+/// @group file-box
+$kendo-file-box-border-radius: k-border-radius(md) !default;
+/// The font size of the File Box file name.
+/// @group file-box
+$kendo-file-box-name-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line height of the File Box file name.
+/// @group file-box
+$kendo-file-box-name-line-height: var( --kendo-line-height-lg, normal ) !default;
+/// The font size of the File Box file size.
+/// @group file-box
+$kendo-file-box-size-font-size: var( --kendo-font-size-xs, inherit ) !default;
+/// The line height of the File Box file size.
+/// @group file-box
+$kendo-file-box-size-line-height: var( --kendo-line-height-xs, normal ) !default;
+
+/// The background color of the File Box.
+/// @group file-box
+$kendo-file-box-bg: color-mix(in srgb, k-color(base-on-subtle) 8%, transparent) !default;
+/// The text color of the File Box.
+/// @group file-box
+$kendo-file-box-text: k-color(base-on-subtle) !default;
+/// The border color of the File Box.
+/// @group file-box
+$kendo-file-box-border: $kendo-file-box-bg !default;
+
+/// The gradient used for the File Box wrapper scrolling indicator.
+/// @group file-box
+$kendo-file-box-wrapper-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, k-color(app-surface) 100% !default;
+
+@forward "@progress/kendo-theme-core/scss/components/file-box/_variables.scss" with (
+    $kendo-file-box-padding-x: $kendo-file-box-padding-x,
+    $kendo-file-box-padding-y: $kendo-file-box-padding-y,
+    $kendo-file-box-gap: $kendo-file-box-gap,
+    $kendo-file-box-min-width: $kendo-file-box-min-width,
+    $kendo-file-box-max-width: $kendo-file-box-max-width,
+    $kendo-file-box-border-width: $kendo-file-box-border-width,
+    $kendo-file-box-border-style: $kendo-file-box-border-style,
+    $kendo-file-box-border-radius: $kendo-file-box-border-radius,
+    $kendo-file-box-name-font-size: $kendo-file-box-name-font-size,
+    $kendo-file-box-name-line-height: $kendo-file-box-name-line-height,
+    $kendo-file-box-size-font-size: $kendo-file-box-size-font-size,
+    $kendo-file-box-size-line-height: $kendo-file-box-size-line-height,
+    $kendo-file-box-bg: $kendo-file-box-bg,
+    $kendo-file-box-text: $kendo-file-box-text,
+    $kendo-file-box-border: $kendo-file-box-border,
+    $kendo-file-box-wrapper-scroll-gradient: $kendo-file-box-wrapper-scroll-gradient
+);

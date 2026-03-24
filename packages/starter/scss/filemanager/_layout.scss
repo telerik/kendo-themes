@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/filemanager/_layout.scss" as *;
+
+
+@mixin kendo-file-manager--layout() {
+    @include kendo-file-manager--layout-base();
+}

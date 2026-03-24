@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/switch/_theme.scss" as *;
+
+
+@mixin kendo-switch--theme() {
+    @include kendo-switch--theme-base();
+}

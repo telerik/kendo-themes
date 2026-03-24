@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/datetimepicker/_layout.scss" as *;
+
+
+@mixin kendo-date-time-picker--layout() {
+    @include kendo-date-time-picker--layout-base();
+}

@@ -1,0 +1,93 @@
+@use "../core/_index.scss" as *;
+
+
+// ProgressBar
+
+/// The height of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-height: 22px !default;
+/// The horizontal width of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-horizontal-width: 100% !default;
+/// The animation timing of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-animation-timing: 1s linear infinite !default;
+/// The width of the border around the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-border-width: 0px !default;
+/// The font family of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line height of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-line-height: var( --kendo-line-height-xs, normal ) !default;
+
+/// The background color of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-bg: k-color(base-subtle) !default;
+/// The text color of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-text: k-color(on-app-surface) !default;
+/// The border color of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-border: k-color(border) !default;
+/// The background gradient of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-gradient: null !default;
+
+/// The progress background color of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-value-bg: k-color(primary) !default;
+/// The progress text color of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-value-text: k-color(on-primary) !default;
+/// The progress border color of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-value-border: k-color(primary-active) !default;
+/// The progress background gradient of the ProgressBar.
+/// @group progressbar
+$kendo-progressbar-value-gradient: null !default;
+
+/// The background color of the indeterminate ProgressBar.
+/// @group progressbar
+$kendo-progressbar-indeterminate-bg: $kendo-progressbar-bg !default;
+/// The text color of the indeterminate ProgressBar.
+/// @group progressbar
+$kendo-progressbar-indeterminate-text: $kendo-progressbar-text !default;
+/// The border color of the indeterminate ProgressBar.
+/// @group progressbar
+$kendo-progressbar-indeterminate-border: $kendo-progressbar-border !default;
+
+// Circular Progressbar
+/// The arc stroke color of the circular ProgressBar.
+/// @group progressbar
+$kendo-circular-progressbar-arc-stroke: k-color(primary) !default;
+/// The scale stroke background color of the circular ProgressBar.
+/// @group progressbar
+$kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;
+
+@forward "@progress/kendo-theme-core/scss/components/progressbar/_variables.scss" with (
+    $kendo-progressbar-height: $kendo-progressbar-height,
+    $kendo-progressbar-horizontal-width: $kendo-progressbar-horizontal-width,
+    $kendo-progressbar-animation-timing: $kendo-progressbar-animation-timing,
+    $kendo-progressbar-border-width: $kendo-progressbar-border-width,
+    $kendo-progressbar-font-family: $kendo-progressbar-font-family,
+    $kendo-progressbar-font-size: $kendo-progressbar-font-size,
+    $kendo-progressbar-line-height: $kendo-progressbar-line-height,
+    $kendo-progressbar-bg: $kendo-progressbar-bg,
+    $kendo-progressbar-text: $kendo-progressbar-text,
+    $kendo-progressbar-border: $kendo-progressbar-border,
+    $kendo-progressbar-gradient: $kendo-progressbar-gradient,
+    $kendo-progressbar-value-bg: $kendo-progressbar-value-bg,
+    $kendo-progressbar-value-text: $kendo-progressbar-value-text,
+    $kendo-progressbar-value-border: $kendo-progressbar-value-border,
+    $kendo-progressbar-value-gradient: $kendo-progressbar-value-gradient,
+    $kendo-progressbar-indeterminate-bg: $kendo-progressbar-indeterminate-bg,
+    $kendo-progressbar-indeterminate-text: $kendo-progressbar-indeterminate-text,
+    $kendo-progressbar-indeterminate-border: $kendo-progressbar-indeterminate-border,
+    $kendo-circular-progressbar-arc-stroke: $kendo-circular-progressbar-arc-stroke,
+    $kendo-circular-progressbar-scale-stroke: $kendo-circular-progressbar-scale-stroke
+);

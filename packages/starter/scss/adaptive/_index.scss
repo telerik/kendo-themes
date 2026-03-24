@@ -1,0 +1,26 @@
+// Dependencies (TODO: extract variables)
+@use "../core/_index.scss" as *;
+@use "../listgroup/_index.scss" as *;
+@use "../checkbox/_index.scss" as *;
+@use "../radio/_index.scss" as *;
+@use "../switch/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-adaptive--styles() {
+    @include import-once( "adaptive" ) {
+        @include core-styles();
+        @include kendo-listgroup--styles();
+        @include kendo-checkbox--styles();
+        @include kendo-radio--styles();
+        @include kendo-switch--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-adaptive--layout();
+        @include kendo-adaptive--theme();
+    }
+}

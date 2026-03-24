@@ -1,0 +1,16 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-skeleton--styles() {
+    @include import-once( "skeleton" ) {
+        @include core-styles();
+        @include kendo-skeleton--layout();
+        @include kendo-skeleton--theme();
+    }
+}

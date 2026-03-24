@@ -1,0 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/otp/_layout.scss" as *;
+
+@mixin kendo-otp--layout() {
+    @include kendo-otp--layout-base();
+}

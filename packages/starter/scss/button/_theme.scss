@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/button/_theme.scss" as *;
+
+
+@mixin kendo-button--theme() {
+    @include kendo-button--theme-base();
+}

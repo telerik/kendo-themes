@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/bottom-navigation/_theme.scss" as *;
+
+
+@mixin kendo-bottom-navigation--theme() {
+    @include kendo-bottom-navigation--theme-base();
+}

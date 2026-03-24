@@ -1,0 +1,55 @@
+@use "../core/_index.scss" as *;
+
+
+// Chart wizard
+
+/// The color of the area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-color: k-color(primary) !default;
+/// The background color of the area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-bg: k-color(primary-subtle) !default;
+/// The border radius of the area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-border-radius: k-border-radius(md) !default;
+/// The padding of the area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-padding: k-spacing(4) !default;
+/// The box shadow of the focused area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-focus-shadow: inset 0 0 0 1px k-color(primary-emphasis) !default;
+/// The box shadow of the selected area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-selected-shadow: inset 0 0 0 1px $kendo-chart-wizard-icon-area-color !default;
+
+/// The color of the selected chart type items in the Property panel.
+/// @group chart-wizard
+$kendo-chart-wizard-chart-type-selected-color: k-color(primary) !default;
+
+/// The padding of the preview pane.
+/// @group chart-wizard
+$kendo-chart-wizard-preview-pane-padding: k-spacing(4) !default;
+/// The padding of the property pane.
+/// @group chart-wizard
+$kendo-chart-wizard-property-pane-padding: k-spacing(4) !default;
+
+/// The gap between the chart type items in the Property panel.
+/// @group chart-wizard
+$kendo-chart-wizard-chart-type-spacing: k-spacing(4) !default;
+/// The gap between the icon area and its text.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-text-gap: k-spacing(3) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/chart-wizard/_variables.scss" with (
+    $kendo-chart-wizard-icon-area-color: $kendo-chart-wizard-icon-area-color,
+    $kendo-chart-wizard-icon-area-bg: $kendo-chart-wizard-icon-area-bg,
+    $kendo-chart-wizard-icon-area-border-radius: $kendo-chart-wizard-icon-area-border-radius,
+    $kendo-chart-wizard-icon-area-padding: $kendo-chart-wizard-icon-area-padding,
+    $kendo-chart-wizard-icon-area-focus-shadow: $kendo-chart-wizard-icon-area-focus-shadow,
+    $kendo-chart-wizard-icon-area-selected-shadow: $kendo-chart-wizard-icon-area-selected-shadow,
+    $kendo-chart-wizard-chart-type-selected-color: $kendo-chart-wizard-chart-type-selected-color,
+    $kendo-chart-wizard-preview-pane-padding: $kendo-chart-wizard-preview-pane-padding,
+    $kendo-chart-wizard-property-pane-padding: $kendo-chart-wizard-property-pane-padding,
+    $kendo-chart-wizard-chart-type-spacing: $kendo-chart-wizard-chart-type-spacing,
+    $kendo-chart-wizard-icon-text-gap: $kendo-chart-wizard-icon-text-gap
+);

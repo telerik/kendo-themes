@@ -1,0 +1,22 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../overlay/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
+@use "../list/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-drawer--styles() {
+    @include import-once( "drawer" ) {
+        @include core-styles();
+        @include kendo-overlay--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-list--styles();
+        @include kendo-drawer--layout();
+        @include kendo-drawer--theme();
+    }
+}

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/table/_theme.scss" as *;
+
+
+@mixin kendo-table--theme() {
+    @include kendo-table--theme-base();
+}

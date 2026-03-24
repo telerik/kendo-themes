@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/pdf-viewer/_layout.scss" as *;
+
+
+@mixin kendo-pdf-viewer--layout() {
+    @include kendo-pdf-viewer--layout-base();
+}

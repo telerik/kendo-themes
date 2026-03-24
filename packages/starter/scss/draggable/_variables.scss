@@ -1,0 +1,93 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+
+// Drag hint
+/// The horizontal padding of the drag hint.
+/// @group draggable
+$kendo-drag-hint-padding-x: k-spacing(2) !default;
+/// The vertical padding of the drag hint.
+/// @group draggable
+$kendo-drag-hint-padding-y: k-spacing(1) !default;
+/// The width of the border around the drag hint.
+/// @group draggable
+$kendo-drag-hint-border-width: 1px !default;
+/// The border radius of the drag hint.
+/// @group draggable
+$kendo-drag-hint-border-radius: k-border-radius(md) !default;
+/// The font size of the drag hint.
+/// @group draggable
+$kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font family of the drag hint.
+/// @group draggable
+$kendo-drag-hint-font-family: var( --kendo-font-family, inherit ) !default;
+/// The line height of the drag hint.
+/// @group draggable
+$kendo-drag-hint-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The background color of the drag hint.
+/// @group draggable
+$kendo-drag-hint-bg: k-color(surface) !default;
+/// The text color of the drag hint.
+/// @group draggable
+$kendo-drag-hint-text: k-color(on-app-surface) !default;
+/// The border color of the drag hint.
+/// @group draggable
+$kendo-drag-hint-border: k-color(border) !default;
+/// The background gradient of the drag hint.
+/// @group draggable
+$kendo-drag-hint-gradient: null !default;
+/// The shadow of the drag hint.
+/// @group draggable
+$kendo-drag-hint-shadow: null !default;
+
+/// The opacity of the drag hint.
+/// @group draggable
+$kendo-drag-hint-opacity: null !default;
+
+
+// Drop hint
+/// The size of the drop hint arrow.
+/// @group draggable
+$kendo-drop-hint-arrow-size: 8px !default;
+/// The spacing of the drop hint arrow.
+/// @group draggable
+$kendo-drop-hint-arrow-spacing: math.div( $kendo-drop-hint-arrow-size, 2 ) !default;
+/// The width of the horizontal drop hint line.
+/// @group draggable
+$kendo-drop-hint-line-h-width: 20px !default;
+/// The height of the horizontal drop hint line.
+/// @group draggable
+$kendo-drop-hint-line-h-height: 1px !default;
+/// The width of the vertical drop hint line.
+/// @group draggable
+$kendo-drop-hint-line-v-width: $kendo-drop-hint-line-h-height !default;
+/// The height of the vertical drop hint line.
+/// @group draggable
+$kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
+
+/// The background color of the drop hint.
+/// @group draggable
+$kendo-drop-hint-bg: k-color(primary) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/draggable/_variables.scss" with (
+    $kendo-drag-hint-padding-x: $kendo-drag-hint-padding-x,
+    $kendo-drag-hint-padding-y: $kendo-drag-hint-padding-y,
+    $kendo-drag-hint-border-width: $kendo-drag-hint-border-width,
+    $kendo-drag-hint-border-radius: $kendo-drag-hint-border-radius,
+    $kendo-drag-hint-font-size: $kendo-drag-hint-font-size,
+    $kendo-drag-hint-font-family: $kendo-drag-hint-font-family,
+    $kendo-drag-hint-line-height: $kendo-drag-hint-line-height,
+    $kendo-drag-hint-bg: $kendo-drag-hint-bg,
+    $kendo-drag-hint-text: $kendo-drag-hint-text,
+    $kendo-drag-hint-border: $kendo-drag-hint-border,
+    $kendo-drag-hint-gradient: $kendo-drag-hint-gradient,
+    $kendo-drag-hint-shadow: $kendo-drag-hint-shadow,
+    $kendo-drag-hint-opacity: $kendo-drag-hint-opacity,
+    $kendo-drop-hint-arrow-size: $kendo-drop-hint-arrow-size,
+    $kendo-drop-hint-arrow-spacing: $kendo-drop-hint-arrow-spacing,
+    $kendo-drop-hint-line-h-width: $kendo-drop-hint-line-h-width,
+    $kendo-drop-hint-line-h-height: $kendo-drop-hint-line-h-height,
+    $kendo-drop-hint-line-v-width: $kendo-drop-hint-line-v-width,
+    $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-v-height,
+    $kendo-drop-hint-bg: $kendo-drop-hint-bg
+);

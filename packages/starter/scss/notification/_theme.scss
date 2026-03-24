@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/notification/_theme.scss" as *;
+
+
+@mixin kendo-notification--theme() {
+    @include kendo-notification--theme-base();
+}

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/chat/_theme.scss" as *;
+
+
+@mixin kendo-chat--theme() {
+    @include kendo-chat--theme-base();
+}

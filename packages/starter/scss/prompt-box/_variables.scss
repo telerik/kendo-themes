@@ -1,0 +1,34 @@
+@use "../core/_index.scss" as *;
+
+// Prompt box
+
+/// The border radius of the PromptBox.
+/// @group prompt-box
+$kendo-prompt-box-border-radius: k-border-radius(xxl) !default;
+
+/// The box shadow of the PromptBox.
+/// @group prompt-box
+$kendo-prompt-box-box-shadow: k-elevation(1) !default;
+
+/// The padding of the PromptBox header.
+/// @group prompt-box
+$kendo-prompt-box-header-padding: k-spacing(2) !default;
+/// The inner padding of the PromptBox input.
+/// @group prompt-box
+$kendo-prompt-box-input-inner-padding: k-spacing(3) !default;
+/// The padding of the PromptBox affix.
+/// @group prompt-box
+$kendo-prompt-box-affix-padding: k-spacing(2) !default;
+
+/// The spacing between the PromptBox affixes.
+/// @group prompt-box
+$kendo-prompt-box-affix-spacing: k-spacing(1) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/prompt-box/_variables.scss" with (
+    $kendo-prompt-box-border-radius: $kendo-prompt-box-border-radius,
+    $kendo-prompt-box-box-shadow: $kendo-prompt-box-box-shadow,
+    $kendo-prompt-box-header-padding: $kendo-prompt-box-header-padding,
+    $kendo-prompt-box-input-inner-padding: $kendo-prompt-box-input-inner-padding,
+    $kendo-prompt-box-affix-padding: $kendo-prompt-box-affix-padding,
+    $kendo-prompt-box-affix-spacing: $kendo-prompt-box-affix-spacing
+);

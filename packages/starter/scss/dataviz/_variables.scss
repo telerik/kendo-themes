@@ -1,0 +1,488 @@
+@use "sass:color";
+@use "../core/_index.scss" as *;
+
+
+// Chart
+
+/// The first base series color and its light and dark shades.
+/// @group charts
+$kendo-series-a: k-color(series-a) !default;
+/// The series-a dark color of the Charts.
+/// @group charts
+$kendo-series-a-dark: k-color(series-a-bold) !default;
+/// The series-a darker color of the Charts.
+/// @group charts
+$kendo-series-a-darker: k-color(series-a-bolder) !default;
+/// The series-a light color of the Charts.
+/// @group charts
+$kendo-series-a-light: k-color(series-a-subtle) !default;
+/// The series-a lighter color of the Charts.
+/// @group charts
+$kendo-series-a-lighter: k-color(series-a-subtler) !default;
+
+/// The second base series color and its light and dark shades.
+/// @group charts
+$kendo-series-b: k-color(series-b) !default;
+/// The series-b dark color of the Charts.
+/// @group charts
+$kendo-series-b-dark: k-color(series-b-bold) !default;
+/// The series-b darker color of the Charts.
+/// @group charts
+$kendo-series-b-darker: k-color(series-b-bolder) !default;
+/// The series-b light color of the Charts.
+/// @group charts
+$kendo-series-b-light: k-color(series-b-subtle) !default;
+/// The series-b lighter color of the Charts.
+/// @group charts
+$kendo-series-b-lighter: k-color(series-b-subtler) !default;
+
+/// The third base series color and its light and dark shades.
+/// @group charts
+$kendo-series-c: k-color(series-c) !default;
+/// The series-c dark color of the Charts.
+/// @group charts
+$kendo-series-c-dark: k-color(series-c-bold) !default;
+/// The series-c darker color of the Charts.
+/// @group charts
+$kendo-series-c-darker: k-color(series-c-bolder) !default;
+/// The series-c light color of the Charts.
+/// @group charts
+$kendo-series-c-light: k-color(series-c-subtle) !default;
+/// The series-c lighter color of the Charts.
+/// @group charts
+$kendo-series-c-lighter: k-color(series-c-subtler) !default;
+
+/// The fourth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-d: k-color(series-d) !default;
+/// The series-d dark color of the Charts.
+/// @group charts
+$kendo-series-d-dark: k-color(series-d-bold) !default;
+/// The series-d darker color of the Charts.
+/// @group charts
+$kendo-series-d-darker: k-color(series-d-bolder) !default;
+/// The series-d light color of the Charts.
+/// @group charts
+$kendo-series-d-light: k-color(series-d-subtle) !default;
+/// The series-d lighter color of the Charts.
+/// @group charts
+$kendo-series-d-lighter: k-color(series-d-subtler) !default;
+
+/// The fifth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-e: k-color(series-e) !default;
+/// The series-e dark color of the Charts.
+/// @group charts
+$kendo-series-e-dark: k-color(series-e-bold) !default;
+/// The series-e darker color of the Charts.
+/// @group charts
+$kendo-series-e-darker: k-color(series-e-bolder) !default;
+/// The series-e light color of the Charts.
+/// @group charts
+$kendo-series-e-light: k-color(series-e-subtle) !default;
+/// The series-e lighter color of the Charts.
+/// @group charts
+$kendo-series-e-lighter: k-color(series-e-subtler) !default;
+
+/// The sixth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-f: k-color(series-f) !default;
+/// The series-f dark color of the Charts.
+/// @group charts
+$kendo-series-f-dark: k-color(series-f-bold) !default;
+/// The series-f darker color of the Charts.
+/// @group charts
+$kendo-series-f-darker: k-color(series-f-bolder) !default;
+/// The series-f light color of the Charts.
+/// @group charts
+$kendo-series-f-light: k-color(series-f-subtle) !default;
+/// The series-f lighter color of the Charts.
+/// @group charts
+$kendo-series-f-lighter: k-color(series-f-subtler) !default;
+
+/// The series colors in order:
+/// base, light, dark, lighter, darker
+/// @group charts
+$kendo-series-1: $kendo-series-a !default;
+/// The series-2 color of the Charts.
+/// @group charts
+$kendo-series-2: $kendo-series-b !default;
+/// The series-3 color of the Charts.
+/// @group charts
+$kendo-series-3: $kendo-series-c !default;
+/// The series-4 color of the Charts.
+/// @group charts
+$kendo-series-4: $kendo-series-d !default;
+/// The series-5 color of the Charts.
+/// @group charts
+$kendo-series-5: $kendo-series-e !default;
+/// The series-6 color of the Charts.
+/// @group charts
+$kendo-series-6: $kendo-series-f !default;
+/// The series-7 color of the Charts.
+/// @group charts
+$kendo-series-7: $kendo-series-a-light !default;
+/// The series-8 color of the Charts.
+/// @group charts
+$kendo-series-8: $kendo-series-b-light !default;
+/// The series-9 color of the Charts.
+/// @group charts
+$kendo-series-9: $kendo-series-c-light !default;
+/// The series-10 color of the Charts.
+/// @group charts
+$kendo-series-10: $kendo-series-d-light !default;
+/// The series-11 color of the Charts.
+/// @group charts
+$kendo-series-11: $kendo-series-e-light !default;
+/// The series-12 color of the Charts.
+/// @group charts
+$kendo-series-12: $kendo-series-f-light !default;
+/// The series-13 color of the Charts.
+/// @group charts
+$kendo-series-13: $kendo-series-a-dark !default;
+/// The series-14 color of the Charts.
+/// @group charts
+$kendo-series-14: $kendo-series-b-dark !default;
+/// The series-15 color of the Charts.
+/// @group charts
+$kendo-series-15: $kendo-series-c-dark !default;
+/// The series-16 color of the Charts.
+/// @group charts
+$kendo-series-16: $kendo-series-d-dark !default;
+/// The series-17 color of the Charts.
+/// @group charts
+$kendo-series-17: $kendo-series-e-dark !default;
+/// The series-18 color of the Charts.
+/// @group charts
+$kendo-series-18: $kendo-series-f-dark !default;
+/// The series-19 color of the Charts.
+/// @group charts
+$kendo-series-19: $kendo-series-a-lighter !default;
+/// The series-20 color of the Charts.
+/// @group charts
+$kendo-series-20: $kendo-series-b-lighter !default;
+/// The series-21 color of the Charts.
+/// @group charts
+$kendo-series-21: $kendo-series-c-lighter !default;
+/// The series-22 color of the Charts.
+/// @group charts
+$kendo-series-22: $kendo-series-d-lighter !default;
+/// The series-23 color of the Charts.
+/// @group charts
+$kendo-series-23: $kendo-series-e-lighter !default;
+/// The series-24 color of the Charts.
+/// @group charts
+$kendo-series-24: $kendo-series-f-lighter !default;
+/// The series-25 color of the Charts.
+/// @group charts
+$kendo-series-25: $kendo-series-a-darker !default;
+/// The series-26 color of the Charts.
+/// @group charts
+$kendo-series-26: $kendo-series-b-darker !default;
+/// The series-27 color of the Charts.
+/// @group charts
+$kendo-series-27: $kendo-series-c-darker !default;
+/// The series-28 color of the Charts.
+/// @group charts
+$kendo-series-28: $kendo-series-d-darker !default;
+/// The series-29 color of the Charts.
+/// @group charts
+$kendo-series-29: $kendo-series-e-darker !default;
+/// The series-30 color of the Charts.
+/// @group charts
+$kendo-series-30: $kendo-series-f-darker !default;
+
+/// The border width of the Chart.
+/// @group charts
+$kendo-chart-border-width: 0px !default;
+/// The font family of the Chart.
+/// @group charts
+$kendo-chart-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Chart.
+/// @group charts
+$kendo-chart-font-size: var( --kendo-font-size, inherit ) !default;
+/// The height of the Chart.
+/// @group charts
+$kendo-chart-line-height: var( --kendo-line-height, normal ) !default;
+/// The font size of the Chart.
+/// @group charts
+$kendo-chart-tooltip-font-size: calc( #{$kendo-font-size} * .929) !default;
+/// The label font size of the Chart.
+/// @group charts
+$kendo-chart-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The title font size of the Chart.
+/// @group charts
+$kendo-chart-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+/// The title font size of the Chart.
+/// @group charts
+$kendo-chart-pane-title-font-size: $kendo-chart-label-font-size !default;
+/// The title font weight of the Chart.
+/// @group charts
+$kendo-chart-pane-title-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+
+/// The color of the Chart grid lines (major).
+/// @group charts
+$kendo-chart-major-lines: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+
+/// The color of the Chart grid lines (minor).
+/// @group charts
+$kendo-chart-minor-lines: color-mix(in srgb, k-color(on-app-surface) 4%, transparent) !default;
+
+/// The inactive color of the Chart.
+/// @group charts
+$kendo-chart-inactive: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+/// The opacity of the Chart.
+/// @group charts
+$kendo-chart-area-opacity: .6 !default;
+/// The opacity of the Chart.
+/// @group charts
+$kendo-chart-area-inactive-opacity: .1 !default;
+/// The opacity of the Chart.
+/// @group charts
+$kendo-chart-line-inactive-opacity: .3 !default;
+
+/// The horizontal padding of the Chart.
+/// @group charts
+$kendo-chart-tooltip-padding-x: k-spacing(1) !default;
+/// The vertical padding of the Chart.
+/// @group charts
+$kendo-chart-tooltip-padding-y: k-spacing(0.5) !default;
+
+/// The transition of the Chart.
+/// @group charts
+$kendo-chart-tooltip-transition: left k-transition(fade-in), top k-transition(fade-in) !default;
+
+/// The text color of the chart tooltip.
+/// @group charts
+$kendo-chart-tooltip-color: k-color(app-surface) !default;
+/// The inverse text color of the chart tooltip.
+/// @group charts
+$kendo-chart-tooltip-color-inverse: k-color(on-app-surface) !default;
+
+/// The background color of the Chart.
+/// @group charts
+$kendo-chart-bg: k-color(surface-alt) !default;
+/// The text color of the Chart.
+/// @group charts
+$kendo-chart-text: k-color(on-app-surface) !default;
+/// The border color of the Chart.
+/// @group charts
+$kendo-chart-border: k-color(border) !default;
+
+/// The background color of the Chart.
+/// @group charts
+$kendo-chart-crosshair-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+/// The text color of the Chart.
+/// @group charts
+$kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-text !default;
+/// The background color of the Chart.
+/// @group charts
+$kendo-chart-crosshair-shared-tooltip-background: k-color(base) !default;
+/// The border color of the Chart.
+/// @group charts
+$kendo-chart-crosshair-shared-tooltip-border: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+
+/// The background color of the Chart.
+/// @group charts
+$kendo-chart-notes-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+/// The border color of the Chart.
+/// @group charts
+$kendo-chart-notes-border: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+/// The notes lines of the Chart.
+/// @group charts
+$kendo-chart-notes-lines: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+
+/// The background color of the Chart error bars.
+/// @group charts
+$kendo-chart-error-bars-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+
+/// The size of the Chart handle.
+/// @group charts
+$kendo-chart-selection-handle-size: 22px !default;
+/// The text color of the Chart.
+/// @group charts
+$kendo-chart-selection-border-color: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+/// The shadow of the Chart.
+/// @group charts
+$kendo-chart-selection-shadow: inset 0 1px 7px color-mix(in srgb, k-color(on-app-surface) 15%, transparent) !default;
+
+/// The height of the Dataviz title.
+/// @group charts
+$kendo-chart-computed-title-height: 0px !default;
+
+// TreeMap
+/// The font family of the TreeMap.
+/// @group charts
+$kendo-treemap-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the TreeMap.
+/// @group charts
+$kendo-treemap-font-size: var( --kendo-font-size, inherit ) !default;
+/// The height of the TreeMap.
+/// @group charts
+$kendo-treemap-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The horizontal padding of the TreeMap.
+/// @group charts
+$kendo-treemap-padding-x: k-spacing(1) !default;
+/// The vertical padding of the TreeMap.
+/// @group charts
+$kendo-treemap-padding-y: k-spacing(0.5) !default;
+
+/// The text color of the TreeMap.
+/// @group charts
+$kendo-treemap-text: k-color(on-app-surface) !default;
+/// The background color of the TreeMap.
+/// @group charts
+$kendo-treemap-bg: k-color(surface-alt) !default;
+/// The border color of the TreeMap.
+/// @group charts
+$kendo-treemap-border: k-color(border) !default;
+
+/// The text color of the Dataviz title.
+/// @group charts
+$kendo-treemap-title-text: k-color(on-app-surface) !default;
+/// The background color of the Dataviz title.
+/// @group charts
+$kendo-treemap-title-bg: k-color(surface) !default;
+/// The border color of the Dataviz title.
+/// @group charts
+$kendo-treemap-title-border: k-color(border) !default;
+
+// Chart Overlay
+/// The background color of the Dataviz overlay.
+/// @group charts
+$kendo-chart-overlay-bg: k-color(surface) !default;
+
+// No Data
+/// The font size of the Chart.
+/// @group charts
+$kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
+/// The font weight of the Chart.
+/// @group charts
+$kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
+/// The vertical padding of the Chart.
+/// @group charts
+$kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
+
+// Gauge
+/// The background color of the Gauge.
+/// @group charts
+$kendo-gauge-pointer-bg: k-color(primary) !default;
+/// The background color of the Gauge track.
+/// @group charts
+$kendo-gauge-track-bg: k-color(base-emphasis) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/dataviz/_variables.scss" with (
+    $kendo-series-a: $kendo-series-a,
+    $kendo-series-a-dark: $kendo-series-a-dark,
+    $kendo-series-a-darker: $kendo-series-a-darker,
+    $kendo-series-a-light: $kendo-series-a-light,
+    $kendo-series-a-lighter: $kendo-series-a-lighter,
+    $kendo-series-b: $kendo-series-b,
+    $kendo-series-b-dark: $kendo-series-b-dark,
+    $kendo-series-b-darker: $kendo-series-b-darker,
+    $kendo-series-b-light: $kendo-series-b-light,
+    $kendo-series-b-lighter: $kendo-series-b-lighter,
+    $kendo-series-c: $kendo-series-c,
+    $kendo-series-c-dark: $kendo-series-c-dark,
+    $kendo-series-c-darker: $kendo-series-c-darker,
+    $kendo-series-c-light: $kendo-series-c-light,
+    $kendo-series-c-lighter: $kendo-series-c-lighter,
+    $kendo-series-d: $kendo-series-d,
+    $kendo-series-d-dark: $kendo-series-d-dark,
+    $kendo-series-d-darker: $kendo-series-d-darker,
+    $kendo-series-d-light: $kendo-series-d-light,
+    $kendo-series-d-lighter: $kendo-series-d-lighter,
+    $kendo-series-e: $kendo-series-e,
+    $kendo-series-e-dark: $kendo-series-e-dark,
+    $kendo-series-e-darker: $kendo-series-e-darker,
+    $kendo-series-e-light: $kendo-series-e-light,
+    $kendo-series-e-lighter: $kendo-series-e-lighter,
+    $kendo-series-f: $kendo-series-f,
+    $kendo-series-f-dark: $kendo-series-f-dark,
+    $kendo-series-f-darker: $kendo-series-f-darker,
+    $kendo-series-f-light: $kendo-series-f-light,
+    $kendo-series-f-lighter: $kendo-series-f-lighter,
+    $kendo-series-1: $kendo-series-1,
+    $kendo-series-2: $kendo-series-2,
+    $kendo-series-3: $kendo-series-3,
+    $kendo-series-4: $kendo-series-4,
+    $kendo-series-5: $kendo-series-5,
+    $kendo-series-6: $kendo-series-6,
+    $kendo-series-7: $kendo-series-7,
+    $kendo-series-8: $kendo-series-8,
+    $kendo-series-9: $kendo-series-9,
+    $kendo-series-10: $kendo-series-10,
+    $kendo-series-11: $kendo-series-11,
+    $kendo-series-12: $kendo-series-12,
+    $kendo-series-13: $kendo-series-13,
+    $kendo-series-14: $kendo-series-14,
+    $kendo-series-15: $kendo-series-15,
+    $kendo-series-16: $kendo-series-16,
+    $kendo-series-17: $kendo-series-17,
+    $kendo-series-18: $kendo-series-18,
+    $kendo-series-19: $kendo-series-19,
+    $kendo-series-20: $kendo-series-20,
+    $kendo-series-21: $kendo-series-21,
+    $kendo-series-22: $kendo-series-22,
+    $kendo-series-23: $kendo-series-23,
+    $kendo-series-24: $kendo-series-24,
+    $kendo-series-25: $kendo-series-25,
+    $kendo-series-26: $kendo-series-26,
+    $kendo-series-27: $kendo-series-27,
+    $kendo-series-28: $kendo-series-28,
+    $kendo-series-29: $kendo-series-29,
+    $kendo-series-30: $kendo-series-30,
+    $kendo-chart-border-width: $kendo-chart-border-width,
+    $kendo-chart-font-family: $kendo-chart-font-family,
+    $kendo-chart-font-size: $kendo-chart-font-size,
+    $kendo-chart-line-height: $kendo-chart-line-height,
+    $kendo-chart-tooltip-font-size: $kendo-chart-tooltip-font-size,
+    $kendo-chart-label-font-size: $kendo-chart-label-font-size,
+    $kendo-chart-title-font-size: $kendo-chart-title-font-size,
+    $kendo-chart-pane-title-font-size: $kendo-chart-pane-title-font-size,
+    $kendo-chart-pane-title-font-weight: $kendo-chart-pane-title-font-weight,
+    $kendo-chart-major-lines: $kendo-chart-major-lines,
+    $kendo-chart-minor-lines: $kendo-chart-minor-lines,
+    $kendo-chart-inactive: $kendo-chart-inactive,
+    $kendo-chart-area-opacity: $kendo-chart-area-opacity,
+    $kendo-chart-area-inactive-opacity: $kendo-chart-area-inactive-opacity,
+    $kendo-chart-line-inactive-opacity: $kendo-chart-line-inactive-opacity,
+    $kendo-chart-tooltip-padding-x: $kendo-chart-tooltip-padding-x,
+    $kendo-chart-tooltip-padding-y: $kendo-chart-tooltip-padding-y,
+    $kendo-chart-tooltip-transition: $kendo-chart-tooltip-transition,
+    $kendo-chart-tooltip-color: $kendo-chart-tooltip-color,
+    $kendo-chart-tooltip-color-inverse: $kendo-chart-tooltip-color-inverse,
+    $kendo-chart-bg: $kendo-chart-bg,
+    $kendo-chart-text: $kendo-chart-text,
+    $kendo-chart-border: $kendo-chart-border,
+    $kendo-chart-crosshair-background: $kendo-chart-crosshair-background,
+    $kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-crosshair-shared-tooltip-color,
+    $kendo-chart-crosshair-shared-tooltip-background: $kendo-chart-crosshair-shared-tooltip-background,
+    $kendo-chart-crosshair-shared-tooltip-border: $kendo-chart-crosshair-shared-tooltip-border,
+    $kendo-chart-notes-background: $kendo-chart-notes-background,
+    $kendo-chart-notes-border: $kendo-chart-notes-border,
+    $kendo-chart-notes-lines: $kendo-chart-notes-lines,
+    $kendo-chart-error-bars-background: $kendo-chart-error-bars-background,
+    $kendo-chart-selection-handle-size: $kendo-chart-selection-handle-size,
+    $kendo-chart-selection-border-color: $kendo-chart-selection-border-color,
+    $kendo-chart-selection-shadow: $kendo-chart-selection-shadow,
+    $kendo-chart-computed-title-height: $kendo-chart-computed-title-height,
+    $kendo-treemap-font-family: $kendo-treemap-font-family,
+    $kendo-treemap-font-size: $kendo-treemap-font-size,
+    $kendo-treemap-line-height: $kendo-treemap-line-height,
+    $kendo-treemap-padding-x: $kendo-treemap-padding-x,
+    $kendo-treemap-padding-y: $kendo-treemap-padding-y,
+    $kendo-chart-overlay-bg: $kendo-chart-overlay-bg,
+    $kendo-chart-no-data-font-size: $kendo-chart-no-data-font-size,
+    $kendo-chart-no-data-font-weight: $kendo-chart-no-data-font-weight,
+    $kendo-chart-no-data-padding-y: $kendo-chart-no-data-padding-y,
+    $kendo-treemap-text: $kendo-treemap-text,
+    $kendo-treemap-bg: $kendo-treemap-bg,
+    $kendo-treemap-border: $kendo-treemap-border,
+    $kendo-treemap-title-text: $kendo-treemap-title-text,
+    $kendo-treemap-title-bg: $kendo-treemap-title-bg,
+    $kendo-treemap-title-border: $kendo-treemap-title-border,
+    $kendo-gauge-pointer-bg: $kendo-gauge-pointer-bg,
+    $kendo-gauge-track-bg: $kendo-gauge-track-bg
+);

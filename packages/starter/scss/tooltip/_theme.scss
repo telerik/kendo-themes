@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/tooltip/_theme.scss" as *;
+
+
+@mixin kendo-tooltip--theme() {
+    @include kendo-tooltip--theme-base();
+}

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/editor/_layout.scss" as *;
+
+
+@mixin kendo-editor--layout() {
+    @include kendo-editor--layout-base();
+}

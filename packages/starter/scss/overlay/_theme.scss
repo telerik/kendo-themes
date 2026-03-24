@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/overlay/_theme.scss" as *;
+
+
+@mixin kendo-overlay--theme() {
+    @include kendo-overlay--theme-base();
+}

@@ -1,0 +1,34 @@
+@use "../core/_index.scss" as *;
+// Skeleton
+
+/// The transform scale of the Skeleton text.
+/// @group skeleton
+$kendo-skeleton-text-transform: scale( 1, .6 ) !default;
+/// The border radius of the Skeleton text.
+/// @group skeleton
+$kendo-skeleton-text-border-radius: k-border-radius(md) !default;
+
+/// The border radius of the rectangular Skeleton.
+/// @group skeleton
+$kendo-skeleton-rect-border-radius: 0 !default;
+
+/// The border radius of the circular Skeleton.
+/// @group skeleton
+$kendo-skeleton-circle-border-radius: 9999px !default;
+
+/// The background color of the Skeleton item.
+/// @group skeleton
+$kendo-skeleton-item-bg: color-mix(in srgb, k-color(on-app-surface) 20%, transparent) !default;
+
+/// The background color of the Skeleton.
+/// @group skeleton
+$kendo-skeleton-wave-bg: rgba( black, .04 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/skeleton/_variables.scss" with (
+    $kendo-skeleton-text-transform: $kendo-skeleton-text-transform,
+    $kendo-skeleton-text-border-radius: $kendo-skeleton-text-border-radius,
+    $kendo-skeleton-rect-border-radius: $kendo-skeleton-rect-border-radius,
+    $kendo-skeleton-circle-border-radius: $kendo-skeleton-circle-border-radius,
+    $kendo-skeleton-item-bg: $kendo-skeleton-item-bg,
+    $kendo-skeleton-wave-bg: $kendo-skeleton-wave-bg
+);

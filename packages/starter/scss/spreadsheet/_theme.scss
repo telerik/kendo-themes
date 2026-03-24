@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/spreadsheet/_theme.scss" as *;
+
+
+@mixin kendo-spreadsheet--theme() {
+    @include kendo-spreadsheet--theme-base();
+}
