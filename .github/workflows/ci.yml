@@ -202,9 +202,23 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          FILES=$(gh api repos/${{ github.repository }}/compare/${{ github.event.repository.default_branch }}...${{ github.sha }} \
-            --jq '.files[].filename' 2>/dev/null || echo "")
-          MATCH=$(echo "$FILES" | grep -E '^(packages/html/src/|scripts/test-a11y)' | head -1)
+          # Fetch compare data; if API fails, default to running tests (fail open)
+          RESPONSE=$(gh api repos/${{ github.repository }}/compare/${{ github.event.repository.default_branch }}...${{ github.sha }} 2>/dev/null) || {
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "::warning::GitHub Compare API call failed — defaulting to run a11y tests."
+            exit 0
+          }
+
+          # Check if the file list might be truncated (API returns max 300 files)
+          FILE_COUNT=$(echo "$RESPONSE" | jq '.files | length')
+          if [ "$FILE_COUNT" -ge 300 ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "::warning::Compare API returned 300+ files (possible truncation) — defaulting to run a11y tests."
+            exit 0
+          fi
+
+          # Check for a11y-relevant file changes
+          MATCH=$(echo "$RESPONSE" | jq -r '.files[].filename' | grep -E '^(packages/html/src/|scripts/test-a11y)' | head -1)
           if [ -n "$MATCH" ]; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
             echo "A11y-relevant files changed — tests will run."
