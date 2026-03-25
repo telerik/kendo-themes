@@ -29,6 +29,10 @@ $kendo-button-border-width: 1px !default;
 /// @group button
 $kendo-button-border-radius: null !default;
 
+/// The spacing between icon and text inside the Button.
+/// @group button
+$kendo-button-gap: k-spacing(2) !default;
+
 /// The horizontal padding of the xsmall Button.
 /// @group button
 $kendo-button-xs-padding-x: k-spacing(3) !default;
@@ -269,6 +273,7 @@ $kendo-button-transition: color k-transition(rapid), background-color k-transiti
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-border-radius: $kendo-button-border-radius,
+    $kendo-button-gap: $kendo-button-gap,
     $kendo-button-xs-padding-x: $kendo-button-xs-padding-x,
     $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
     $kendo-button-md-padding-x: $kendo-button-md-padding-x,

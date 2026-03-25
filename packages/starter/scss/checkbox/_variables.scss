@@ -11,20 +11,20 @@ $kendo-checkbox-border-width: 1px !default;
 
 /// The size of a small CheckBox.
 /// @group checkbox
-$kendo-checkbox-sm-size: k-spacing(3) !default;
+$kendo-checkbox-sm-size: k-spacing(4) !default;
 /// The size of a medium CheckBox.
 /// @group checkbox
-$kendo-checkbox-md-size: k-spacing(4) !default;
+$kendo-checkbox-md-size: k-spacing(4.5) !default;
 /// The size of a large CheckBox.
 /// @group checkbox
 $kendo-checkbox-lg-size: k-spacing(5) !default;
 
 /// The glyph size of a small CheckBox.
 /// @group checkbox
-$kendo-checkbox-sm-glyph-size: k-spacing(2.5) !default;
+$kendo-checkbox-sm-glyph-size: k-spacing(3.5) !default;
 /// The glyph size of a medium CheckBox.
 /// @group checkbox
-$kendo-checkbox-md-glyph-size: k-spacing(3.5) !default;
+$kendo-checkbox-md-glyph-size: k-spacing(4) !default;
 /// The glyph size of a large CheckBox.
 /// @group checkbox
 $kendo-checkbox-lg-glyph-size: k-spacing(4.5) !default;
@@ -128,7 +128,7 @@ $kendo-checkbox-default-size: "md" !default;
 /// The default border radius of the Checkbox.
 /// @group checkbox
 /// @role default
-$kendo-checkbox-default-roundness: "md" !default;
+$kendo-checkbox-default-roundness: "sm" !default;
 
 
 // CheckBox indicator

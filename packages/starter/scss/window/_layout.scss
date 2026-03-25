@@ -3,4 +3,8 @@
 
 @mixin kendo-window--layout() {
     @include kendo-window--layout-base();
+
+    .k-window-title {
+        font-weight: var( --kendo-font-weight-medium, normal );
+    }
 }

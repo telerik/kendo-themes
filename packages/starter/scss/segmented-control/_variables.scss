@@ -28,7 +28,7 @@ $kendo-segmented-control-text: k-color(on-base) !default;
 
 /// The font size of the small Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-segmented-control-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font size of the medium Segmented Control.
 /// @group segmented-control
 $kendo-segmented-control-md-font-size: var( --kendo-font-size, inherit ) !default;
@@ -42,7 +42,7 @@ $kendo-segmented-control-font-family: var( --kendo-font-family, inherit ) !defau
 
 /// The line height of the small Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-sm-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-segmented-control-sm-line-height: var( --kendo-line-height-sm, normal ) !default;
 /// The line height of the medium Segmented Control.
 /// @group segmented-control
 $kendo-segmented-control-md-line-height: var( --kendo-line-height, normal ) !default;
@@ -75,13 +75,13 @@ $kendo-segmented-control-lg-button-padding-x: k-spacing(3) !default;
 
 /// The vertical padding of the small Segmented Control button.
 /// @group segmented-control
-$kendo-segmented-control-sm-button-padding-y: k-spacing(1px) !default;
+$kendo-segmented-control-sm-button-padding-y: calc( #{k-spacing(.5)} + 1px ) !default;
 /// The vertical padding of the medium Segmented Control button.
 /// @group segmented-control
-$kendo-segmented-control-md-button-padding-y: calc( #{k-spacing(.5)} + 1px ) !default;
+$kendo-segmented-control-md-button-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
 /// The vertical padding of the large Segmented Control button.
 /// @group segmented-control
-$kendo-segmented-control-lg-button-padding-y: calc( #{k-spacing(1.5)} + 1px ) !default;
+$kendo-segmented-control-lg-button-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
 
 
 /// The width of the border around the Segmented Control button.

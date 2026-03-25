@@ -1,6 +1,19 @@
 @use "@progress/kendo-theme-core/scss/components/fab/_layout.scss" as *;
-
+@use "./_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
 
 @mixin kendo-fab--layout() {
     @include kendo-fab--layout-base();
+
+    .k-fab {
+        .k-fab-icon {
+            min-width: calc( #{$kendo-fab-font-size} * #{$kendo-fab-line-height} );
+            min-height: calc( #{$kendo-fab-font-size} * #{$kendo-fab-line-height} );
+
+            > svg {
+                width: $kendo-icon-size-md;
+                height: $kendo-icon-size-md;
+            }
+        }
+    }
 }
