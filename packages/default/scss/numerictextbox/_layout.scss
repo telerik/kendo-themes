@@ -3,4 +3,16 @@
 
 @mixin kendo-numeric-textbox--layout() {
     @include kendo-numeric-textbox--layout-base();
+
+    .k-numerictextbox {
+        .k-input-spinner {
+            .k-spinner-increase {
+                padding-block-end: 0;
+            }
+
+            .k-spinner-decrease {
+                padding-block-start: 0;
+            }
+        }
+    }
 }
