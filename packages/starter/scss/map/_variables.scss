@@ -25,7 +25,10 @@ $kendo-map-bg: k-color(surface-alt) !default;
 $kendo-map-text: k-color(on-app-surface) !default;
 /// The border color of the Map.
 /// @group map
-$kendo-map-border: k-color(border) !default;
+$kendo-map-border: null !default;
+/// The box-shadow of the Map navigator.
+/// @group map
+$kendo-map-navigator-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16) !default;
 
 /// The margin of the Map navigator.
 /// @group map
@@ -38,7 +41,7 @@ $kendo-map-navigator-padding: k-spacing(0.5) !default;
 $kendo-map-navigator-width: calc( calc( #{$kendo-icon-size} * 3 ) + calc( #{$kendo-map-navigator-padding} * 2 ) ) !default;
 /// The border width of the Map navigator.
 /// @group map
-$kendo-map-navigator-border-width: 1px !default;
+$kendo-map-navigator-border-width: 0 !default;
 
 /// The horizontal padding of the Map attribution.
 /// @group map
