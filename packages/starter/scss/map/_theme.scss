@@ -1,6 +1,13 @@
 @use "@progress/kendo-theme-core/scss/components/map/_theme.scss" as *;
+@use "./variables.scss" as *;
 
 
 @mixin kendo-map--theme() {
     @include kendo-map--theme-base();
+
+    .k-map {
+        .k-navigator {
+            box-shadow: $kendo-map-navigator-shadow;
+        }
+    }
 }

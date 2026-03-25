@@ -41,6 +41,16 @@ $kendo-listbox-border: k-color(border) !default;
 /// @group listbox
 $kendo-listbox-drop-hint-width: 1px !default;
 
+/// The horizontal padding of the ListBox scroller element.
+/// @group listbox
+$kendo-listbox-scroller-padding-x: k-spacing(2) !default;
+/// The vertical padding of the ListBox scroller element.
+/// @group listbox
+$kendo-listbox-scroller-padding-y: k-spacing(2) !default;
+/// The border radius of the ListBox element.
+/// @group listbox
+$kendo-listbox-border-radius: k-border-radius(xl) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/listbox/_variables.scss" with (
     $kendo-listbox-spacing: $kendo-listbox-spacing,
     $kendo-listbox-button-spacing: $kendo-listbox-button-spacing,

@@ -1,6 +1,23 @@
 @use "@progress/kendo-theme-core/scss/components/input/_theme.scss" as *;
+@use "../core/_index.scss" as *;
 
 
 @mixin kendo-input--theme() {
     @include kendo-input--theme-base();
+
+    .k-input {
+        .k-input-button,
+        .k-spinner-increase,
+        .k-spinner-decrease {
+            background-color: k-color(surface-alt);
+        }
+
+        .k-input-button,
+        .k-input-spinner {
+            &::before {
+                background-color: k-color(border);
+                opacity: 1;
+            }
+        }
+    }
 }

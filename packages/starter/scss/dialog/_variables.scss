@@ -21,16 +21,16 @@ $kendo-dialog-titlebar-border: inherit !default;
 
 /// The horizontal padding of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-padding-x: $kendo-actions-padding-x !default;
+$kendo-dialog-buttongroup-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-padding-y: $kendo-actions-padding-y !default;
+$kendo-dialog-buttongroup-padding-y: k-spacing(4) !default;
 /// The width of the top border of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-border-width: 1px !default;
+$kendo-dialog-buttongroup-border-width: 0 !default;
 /// The spacing between the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
+$kendo-dialog-button-spacing: k-spacing(3) !default;
 
 /// The background color of the Dialog.
 /// @group dialog

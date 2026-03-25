@@ -22,11 +22,11 @@ $kendo-switch-font-family: null !default;
 
 /// The border width of the Switch track.
 /// @group switch
-$kendo-switch-track-border-width: 1px !default;
+$kendo-switch-track-border-width: 0 !default;
 
 /// The border width of the Switch thumb.
 /// @group switch
-$kendo-switch-thumb-border-width: 1px !default;
+$kendo-switch-thumb-border-width: 0 !default;
 
 /// The text transform of the Switch label.
 /// @group switch
@@ -38,7 +38,7 @@ $kendo-switch-label-display: inline !default;
 
 /// The font size of the small Switch.
 /// @group switch
-$kendo-switch-sm-font-size: 10px !default;
+$kendo-switch-sm-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The track width of the small Switch.
 /// @group switch
 $kendo-switch-sm-track-width: 52px !default;
@@ -47,20 +47,20 @@ $kendo-switch-sm-track-width: 52px !default;
 $kendo-switch-sm-track-height: 26px !default;
 /// The thumb width of the small Switch.
 /// @group switch
-$kendo-switch-sm-thumb-width: 26px !default;
+$kendo-switch-sm-thumb-width: 22px !default;
 /// The thumb height of the small Switch.
 /// @group switch
-$kendo-switch-sm-thumb-height: 26px !default;
+$kendo-switch-sm-thumb-height: 22px !default;
 /// The thumb offset of the small Switch.
 /// @group switch
-$kendo-switch-sm-thumb-offset: 0px !default;
+$kendo-switch-sm-thumb-offset: 2px !default;
 /// The label offset of the small Switch.
 /// @group switch
-$kendo-switch-sm-label-offset: 4px !default;
+$kendo-switch-sm-label-offset: 6px !default;
 
 /// The font size of the medium Switch.
 /// @group switch
-$kendo-switch-md-font-size: 10px !default;
+$kendo-switch-md-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The track width of the medium Switch.
 /// @group switch
 $kendo-switch-md-track-width: 60px !default;
@@ -69,42 +69,42 @@ $kendo-switch-md-track-width: 60px !default;
 $kendo-switch-md-track-height: 30px !default;
 /// The thumb width of the medium Switch.
 /// @group switch
-$kendo-switch-md-thumb-width: 30px !default;
+$kendo-switch-md-thumb-width: 26px !default;
 /// The thumb height of the medium Switch.
 /// @group switch
-$kendo-switch-md-thumb-height: 30px !default;
+$kendo-switch-md-thumb-height: 26px !default;
 /// The thumb offset of the medium Switch.
 /// @group switch
-$kendo-switch-md-thumb-offset: 0px !default;
+$kendo-switch-md-thumb-offset: 2px !default;
 /// The label offset of the medium Switch.
 /// @group switch
-$kendo-switch-md-label-offset: 6px !default;
+$kendo-switch-md-label-offset: 8px !default;
 
 /// The font size of the large Switch.
 /// @group switch
-$kendo-switch-lg-font-size: 10px !default;
+$kendo-switch-lg-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The track width of the large Switch.
 /// @group switch
-$kendo-switch-lg-track-width: 68px !default;
+$kendo-switch-lg-track-width: 72px !default;
 /// The track height of the large Switch.
 /// @group switch
-$kendo-switch-lg-track-height: 34px !default;
+$kendo-switch-lg-track-height: 36px !default;
 /// The thumb width of the large Switch.
 /// @group switch
-$kendo-switch-lg-thumb-width: 34px !default;
+$kendo-switch-lg-thumb-width: 32px !default;
 /// The thumb height of the large Switch.
 /// @group switch
-$kendo-switch-lg-thumb-height: 34px !default;
+$kendo-switch-lg-thumb-height: 32px !default;
 /// The thumb offset of the large Switch.
 /// @group switch
-$kendo-switch-lg-thumb-offset: 0px !default;
+$kendo-switch-lg-thumb-offset: 2px !default;
 /// The label offset of the large Switch.
 /// @group switch
 $kendo-switch-lg-label-offset: 8px !default;
 
 /// The background of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-bg: k-color(surface-alt) !default;
+$kendo-switch-off-track-bg: k-color(base-subtle) !default;
 /// The text color of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-text: k-color(on-app-surface) !default;
@@ -165,10 +165,13 @@ $kendo-switch-off-thumb-bg: k-color(surface) !default;
 $kendo-switch-off-thumb-text: k-color(on-app-surface) !default;
 /// The border color of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-border: k-color(border) !default;
+$kendo-switch-off-thumb-border: null !default;
 /// The background gradient of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-gradient: null !default;
+/// The box-shadow of the thumb when the Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-shadow: 0 0 2px rgba(0, 0, 0, 0.16) !default;
 
 /// The background of the thumb when the hovered Switch is not checked.
 /// @group switch
@@ -260,10 +263,13 @@ $kendo-switch-on-thumb-bg: k-color(surface) !default;
 $kendo-switch-on-thumb-text: k-color(on-app-surface) !default;
 /// The border color of the thumb when the Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-border: k-color(border) !default;
+$kendo-switch-on-thumb-border: null !default;
 /// The background gradient of the thumb when the Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-gradient: null !default;
+/// The box-shadow of the thumb when the Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-shadow: 0 0 2px rgba(0, 0, 0, 0.16) !default;
 
 /// The background of the thumb when the hovered Switch is checked.
 /// @group switch

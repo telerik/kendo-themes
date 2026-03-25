@@ -11,13 +11,13 @@ $kendo-pager-default-size: "md" !default;
 
 /// The horizontal padding of the small Pager.
 /// @group pager
-$kendo-pager-sm-padding-x: k-spacing(1) !default;
+$kendo-pager-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Pager.
 /// @group pager
-$kendo-pager-md-padding-x: k-spacing(2) !default;
+$kendo-pager-md-padding-x: k-spacing(2.5) !default;
 /// The horizontal padding of the large Pager.
 /// @group pager
-$kendo-pager-lg-padding-x: k-spacing(2.5) !default;
+$kendo-pager-lg-padding-x: k-spacing(3) !default;
 /// The vertical padding of the small Pager.
 /// @group pager
 $kendo-pager-sm-padding-y: $kendo-pager-sm-padding-x !default;
@@ -40,26 +40,26 @@ $kendo-pager-lg-item-min-width: $kendo-button-lg-calc-size !default;
 
 /// The margin between the item groups in the small Pager.
 /// @group pager
-$kendo-pager-sm-item-group-spacing: k-spacing(3) !default;
+$kendo-pager-sm-item-group-spacing: k-spacing(2) !default;
 /// The margin between the item groups in the medium Pager.
 /// @group pager
-$kendo-pager-md-item-group-spacing: k-spacing(3.5) !default;
+$kendo-pager-md-item-group-spacing: k-spacing(2) !default;
 /// The margin between the item groups in the large Pager.
 /// @group pager
-$kendo-pager-lg-item-group-spacing: k-spacing(4) !default;
+$kendo-pager-lg-item-group-spacing: k-spacing(2) !default;
 
 /// The border width of the Pager.
 /// @group pager
 $kendo-pager-border-width: 1px !default;
 /// The font family of the Pager.
 /// @group pager
-$kendo-pager-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-pager-font-family: var( --kendo-font-family ) !default;
 /// The font size of the Pager.
 /// @group pager
-$kendo-pager-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-pager-font-size: var( --kendo-font-size ) !default;
 /// The line height of the Pager.
 /// @group pager
-$kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-pager-line-height: var( --kendo-line-height ) !default;
 /// The background color of the Pager.
 /// @group pager
 $kendo-pager-bg: k-color(surface) !default;
