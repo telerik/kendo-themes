@@ -1,8 +1,8 @@
 /**
- * Accessibility documentation generator types.
+ * Types for the accessibility documentation JSON generator.
  *
- * These types formalize the ariaSpec shape used across all html package
- * components and define the generator's public API surface.
+ * Produces JSON in the format consumed by the Kendo UI Design System docs,
+ * as a replacement for @progress/wct-a11y-spec.
  */
 
 // ---------------------------------------------------------------------------
@@ -51,146 +51,72 @@ export interface ComponentMeta {
 export interface CrossReference {
     /** Target component id (lowercase). */
     targetId: string;
-    /** Label extracted from the `@see` comment (e.g. `'for grid toolbar accessibility'`). */
+    /** Label extracted from the `@see` comment (e.g. `'grid toolbar accessibility'`). */
     label: string;
 }
+
+// ---------------------------------------------------------------------------
+// JSON output elements (Design System docs format)
+// ---------------------------------------------------------------------------
+
+/** A single element in the a11y JSON document array. */
+export type A11yJsonElement =
+    | { h2: string }
+    | { h3: string }
+    | { h4: string }
+    | { h5: string }
+    | { p: string }
+    | { table: A11yTable }
+    | { ul: A11yListItem[] }
+    | { link: A11yLink };
+
+/** Table structure with headers and rows. */
+export interface A11yTable {
+    headers: string[];
+    rows: (Record<string, string> | string[])[];
+}
+
+/** A link with title and source URL or template variable. */
+export interface A11yLink {
+    title: string;
+    source: string;
+}
+
+/** An item in a `ul` element: plain string or link object. */
+export type A11yListItem = string | { link: A11yLink };
 
 // ---------------------------------------------------------------------------
 // Generator options
 // ---------------------------------------------------------------------------
 
-/** Frontmatter key-value pairs written as YAML at the top of the generated page. */
-export type FrontmatterData = Record<string, string | number | boolean>;
-
 /**
  * Configuration options for the a11y documentation generator.
- *
- * All options are optional — sensible defaults are provided.
- * Product repos can pass a preset (e.g. `ANGULAR_PRESET`) spread with
- * any additional overrides.
+ * Targets the Design System docs JSON format.
  */
 export interface A11yGeneratorOptions {
-    // -- Product identity --------------------------------------------------
-
-    /** Product name used in descriptions (e.g. `'Telerik UI for Angular'`). */
-    productName?: string;
-
-    // -- Component naming --------------------------------------------------
-
     /**
      * Map of component id → display name overrides.
      * Example: `{ 'dropdownlist': 'DropDownList' }`
      */
     componentNameMap?: Record<string, string>;
 
-    // -- Frontmatter -------------------------------------------------------
-
-    /**
-     * Custom frontmatter generator.
-     * Receives component metadata and must return key-value pairs.
-     * When omitted a default frontmatter is produced.
-     */
-    frontmatter?: (component: ComponentMeta) => FrontmatterData;
-
-    // -- Links & slugs -----------------------------------------------------
-
-    /**
-     * Format for cross-reference links to other component spec pages.
-     *
-     * - `'slug'`     — `[Label](slug:wai_aria_support_{id})` (Angular)
-     * - `'jekyll'`   — `[Label]({% slug accessibility_{id} %})` (React)
-     * - `'markdown'` — `[Label](./{id}.md)` (Design System / standalone)
-     * - function     — `(targetId, label) => string` for fully custom links
-     */
-    linkFormat?: 'slug' | 'jekyll' | 'markdown' | ((targetId: string, label: string) => string);
-
-    /**
-     * Pattern for generating the page slug.
-     * Receives component id and returns the slug string.
-     * Default: `(id) => \`wai_aria_support_\${id}\``
-     */
-    slugPattern?: (componentId: string) => string;
-
-    // -- Section toggles ---------------------------------------------------
-
-    /** Include the Section 508 compliance paragraph. Default: `true`. */
-    includeSection508?: boolean;
-    /** Include the testing methodology paragraph. Default: `true`. */
-    includeTestingSection?: boolean;
-    /** Include the keyboard navigation reference link. Default: `true`. */
-    includeKeyboardNavRef?: boolean;
-
-    // -- Custom content hooks ----------------------------------------------
-
-    /** Content prepended before the ARIA rules, per component. */
-    prependContent?: (component: ComponentMeta) => string | null;
-    /** Content appended after all standard sections, per component. */
-    appendContent?: (component: ComponentMeta) => string | null;
-
-    // -- Filtering ---------------------------------------------------------
-
     /** Only generate pages for these component ids (whitelist). */
     includeComponents?: string[];
+
     /** Skip these component ids (blacklist). */
     excludeComponents?: string[];
 
-    // -- Output path -------------------------------------------------------
-
     /**
      * Resolve the output file path for a component.
-     *
-     * Receives the component metadata and returns the absolute or relative
-     * path (including filename) where the .md file should be written.
-     * This is the primary mechanism for mapping components to the consuming
-     * repo's docs folder structure.
-     *
-     * Example (Angular):
-     * ```ts
-     * outputPath: (c) => `docs/${categoryOf(c.id)}/${c.id}/accessibility/aria-support_${c.id}.md`
-     * ```
-     *
-     * Example (React):
-     * ```ts
-     * outputPath: (c) => `apps/docs/${c.id}/accessibility/wai-aria-support.md`
-     * ```
-     *
-     * When omitted the generator returns pages in memory only; the consumer
-     * is responsible for writing them to disk.
+     * Receives component metadata and returns the path where the JSON
+     * file should be written.
      */
     outputPath?: (component: ComponentMeta) => string;
-
-    // -- Output format -----------------------------------------------------
-
-    /**
-     * Output format.
-     * - `'markdown'` — rendered Markdown string (default)
-     * - `'json'`     — structured data object
-     * - `'both'`     — both markdown and json
-     */
-    outputFormat?: 'markdown' | 'json' | 'both';
 }
 
 // ---------------------------------------------------------------------------
 // Generator output
 // ---------------------------------------------------------------------------
-
-/** Structured data representation of a generated a11y page. */
-export interface A11yDocData {
-    componentId: string;
-    displayName: string;
-    description?: string;
-    ariaSpec: AriaSpec;
-    seeAlso: CrossReference[];
-    sections: A11ySection[];
-}
-
-/** A logical section within the page (e.g. "Grid Toolbar", "Grid Header"). */
-export interface A11ySection {
-    /** Section heading (e.g. `'Grid Toolbar'`). */
-    title: string;
-    /** Rules belonging to this section. */
-    rules: AriaRule[];
-}
 
 /** The output produced by the generator for a single component. */
 export interface A11yDocPage {
@@ -198,13 +124,8 @@ export interface A11yDocPage {
     componentId: string;
     /** Display name. */
     displayName: string;
-    /** Rendered Markdown string (when outputFormat includes markdown). */
-    markdown?: string;
-    /** Structured data (when outputFormat includes json). */
-    data?: A11yDocData;
-    /**
-     * Resolved output file path (when `outputPath` is provided in options).
-     * Consumers use this to write the file to disk in their repo.
-     */
+    /** The JSON document array in Design System format. */
+    json: A11yJsonElement[];
+    /** Resolved output file path (when `outputPath` option is provided). */
     outputPath?: string;
 }

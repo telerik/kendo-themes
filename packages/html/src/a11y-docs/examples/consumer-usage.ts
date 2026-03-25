@@ -1,29 +1,21 @@
 /**
- * Example: How to generate a11y docs in a consuming product repo.
+ * Example: How to generate a11y docs JSON for the Design System.
  *
  * This file is NOT shipped with the package — it demonstrates the
- * pattern each product repo should follow.
+ * pattern the consuming repo should follow.
  *
- * Usage (from the product repo root):
+ * Usage (from the consuming repo root):
  *   npx tsx scripts/generate-a11y-docs.ts
- *   # or bundle with esbuild and run with node
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 import * as htmlExports from '@progress/kendo-themes-html';
-import {
-    buildRegistry,
-    generateA11yDocs,
-    ANGULAR_PRESET,
-    type A11yGeneratorOptions,
-    type ComponentMeta,
-} from '@progress/kendo-themes-html';
+import { buildRegistry, generateA11yDocs } from '@progress/kendo-themes-html';
 
 // ---------------------------------------------------------------------------
 // 1. Source reader — reads .spec.tsx from the installed package for JSDoc
-//    extraction. Alternatively, skip the sourceReader if you don't need
-//    descriptions and @see cross-references.
+//    extraction (needed for descriptions and @see cross-references).
 // ---------------------------------------------------------------------------
 function createSourceReader() {
     const pkgSrcDir = path.resolve('node_modules/@progress/kendo-themes-html/src');
@@ -52,35 +44,20 @@ const registry = buildRegistry(
 console.log(`Found ${registry.size} components with ariaSpec`);
 
 // ---------------------------------------------------------------------------
-// 3. Configure the generator with product-specific options
-//
-//    The key option is `outputPath` — it maps each component to the correct
-//    file location in YOUR repo's docs structure.
+// 3. Generate JSON files
 // ---------------------------------------------------------------------------
-const options: A11yGeneratorOptions = {
-    ...ANGULAR_PRESET,
+const outDir = path.join('dist', 'design-system');
 
-    // Override output path to match your repo's layout
-    outputPath: (component: ComponentMeta) => {
-        // Example: Angular docs live under docs/{component}/accessibility/aria-support_{component}.md
-        // Adjust the function to match your actual folder structure.
-        return path.join('docs', component.id, 'accessibility', `aria-support_${component.id}.md`);
-    },
-};
+const pages = generateA11yDocs(registry, {
+    outputPath: (c) => path.join(outDir, `${c.displayName}.json`),
+});
 
-// ---------------------------------------------------------------------------
-// 4. Generate and write files
-// ---------------------------------------------------------------------------
-const pages = generateA11yDocs(registry, options);
+fs.mkdirSync(outDir, { recursive: true });
 
-let count = 0;
 for (const page of pages) {
-    if (page.markdown && page.outputPath) {
-        const dir = path.dirname(page.outputPath);
-        fs.mkdirSync(dir, { recursive: true });
-        fs.writeFileSync(page.outputPath, page.markdown, 'utf-8');
-        count++;
+    if (page.outputPath) {
+        fs.writeFileSync(page.outputPath, JSON.stringify(page.json, null, 4), 'utf-8');
     }
 }
 
-console.log(`Generated ${count} a11y documentation pages.`);
+console.log(`Generated ${pages.length} a11y JSON files in ${outDir}/`);
