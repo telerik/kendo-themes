@@ -36,30 +36,30 @@ $kendo-fab-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal padding of the small FAB.
 /// @group floating-action-button
-$kendo-fab-sm-padding-x: calc( #{k-spacing(4)} / 2 ) !default;
+$kendo-fab-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium FAB.
 /// @group floating-action-button
 $kendo-fab-md-padding-x: k-spacing(4) !default;
 /// The horizontal padding of the large FAB.
 /// @group floating-action-button
-$kendo-fab-lg-padding-x: calc( #{k-spacing(4)} * 1.5 ) !default;
+$kendo-fab-lg-padding-x: k-spacing(6) !default;
 
 /// The vertical padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-y: k-spacing(4) !default;
 /// The vertical padding of the small FAB.
 /// @group floating-action-button
-$kendo-fab-sm-padding-y: calc( #{k-spacing(4)} / 2 ) !default;
+$kendo-fab-sm-padding-y: k-spacing(2) !default;
 /// The vertical padding of the medium FAB.
 /// @group floating-action-button
 $kendo-fab-md-padding-y: k-spacing(4) !default;
 /// The vertical padding of the large FAB.
 /// @group floating-action-button
-$kendo-fab-lg-padding-y: calc( #{k-spacing(4)} * 1.5 ) !default;
+$kendo-fab-lg-padding-y: k-spacing(6) !default;
 
 /// The horizontal padding of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-padding-x: k-spacing(0.5) !default;
+$kendo-fab-icon-padding-x: k-spacing(0) !default;
 /// The vertical padding of the FAB icon.
 /// @group floating-action-button
 $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;

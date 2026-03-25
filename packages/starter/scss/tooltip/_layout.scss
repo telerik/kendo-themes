@@ -3,4 +3,8 @@
 
 @mixin kendo-tooltip--layout() {
     @include kendo-tooltip--layout-base();
+
+    .k-tooltip-button .k-icon {
+        vertical-align: text-bottom;
+    }
 }

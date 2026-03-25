@@ -71,10 +71,10 @@ $kendo-pdf-viewer-page-shadow: k-elevation(3) !default;
 
 /// The horizontal padding of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-padding-x: $kendo-toolbar-md-padding-x !default;
+$kendo-pdf-viewer-search-panel-padding-x: k-spacing(2) !default;
 /// The vertical padding of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-padding-y: calc( #{$kendo-toolbar-md-padding-x} * 2 ) !default;
+$kendo-pdf-viewer-search-panel-padding-y: k-spacing(4) !default;
 /// The spacing of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-spacing: $kendo-toolbar-md-spacing !default;

@@ -1,6 +1,10 @@
 @use "@progress/kendo-theme-core/scss/components/filter/_theme.scss" as *;
-
+@use "./variables.scss" as *;
 
 @mixin kendo-filter--theme() {
     @include kendo-filter--theme-base();
+
+    .k-filter-toolbar .k-toolbar {
+        border-radius: $kendo-filter-border-radius;
+    }
 }
