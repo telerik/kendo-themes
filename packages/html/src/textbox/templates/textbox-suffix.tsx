@@ -6,6 +6,7 @@ export const TextboxSuffix = (props) => (
         suffix={
             <>
                 <TextButton fillMode="clear">Send</TextButton>
+                <TextButton fillMode="clear">Send</TextButton>
             </>
         }
         {...props}
