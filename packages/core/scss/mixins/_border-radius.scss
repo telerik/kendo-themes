@@ -66,3 +66,11 @@
         border-end-start-radius: $radius;
     }
 }
+
+@mixin concentric-radius($radius, $padding, $selector) {
+  border-radius: $radius;
+
+  #{$selector} {
+    border-radius: max(0px, $radius - $padding);
+  }
+}
