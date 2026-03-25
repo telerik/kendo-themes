@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-otp-sm-input-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-sm-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + (2px))</code></td>
+    <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + (2px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small OTP separator.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-otp-md-input-width</td>
     <td>Calculation</td>
     <td><code>$kendo-input-md-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + (2px))</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + (2px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium OTP separator.</div></div>
