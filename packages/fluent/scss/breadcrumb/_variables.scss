@@ -167,7 +167,7 @@ $kendo-breadcrumb-root-link-text: var( --kendo-breadcrumb-root-link-text, $kendo
 $kendo-breadcrumb-root-link-border: var( --kendo-breadcrumb-root-link-border, $kendo-breadcrumb-link-border ) !default;
 /// The background color of the hovered breadcrumb root link
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-hover-bg: var( --kendo-breadcrumb-root-link-hover-bg, $kendo-breadcrumb-link-hover-bg )!default;
+$kendo-breadcrumb-root-link-hover-bg: var( --kendo-breadcrumb-root-link-hover-bg, $kendo-breadcrumb-link-hover-bg ) !default;
 /// The text color of the hovered breadcrumb root link
 /// @group breadcrumb
 $kendo-breadcrumb-root-link-hover-text: var( --kendo-breadcrumb-root-link-hover-text, $kendo-breadcrumb-link-hover-text ) !default;

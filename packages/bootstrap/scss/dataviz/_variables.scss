@@ -6,10 +6,10 @@
 
 /// The first base series color and its light and dark shades.
 /// @group charts
-$kendo-series-a: k-color(series-a)!default;
+$kendo-series-a: k-color(series-a) !default;
 /// The series-a dark color of the Charts.
 /// @group charts
-$kendo-series-a-dark: k-color(series-a-bold)!default;
+$kendo-series-a-dark: k-color(series-a-bold) !default;
 /// The series-a darker color of the Charts.
 /// @group charts
 $kendo-series-a-darker: k-color(series-a-bolder) !default;
@@ -203,7 +203,7 @@ $kendo-chart-font-family: var(--kendo-font-family) !default;
 $kendo-chart-font-size: var(--kendo-font-size) !default;
 /// The height of the Chart.
 /// @group charts
-$kendo-chart-line-height: var(--kendo-line-height)!default;
+$kendo-chart-line-height: var(--kendo-line-height) !default;
 /// The font size of the Chart.
 /// @group charts
 $kendo-chart-tooltip-font-size: calc( #{$kendo-font-size} * .929) !default;

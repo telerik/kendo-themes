@@ -7,7 +7,7 @@
 $kendo-drawer-bg: var( --kendo-drawer-bg, k-color(secondary-subtle) ) !default;
 /// The text color of the Drawer.
 /// @group drawer
-$kendo-drawer-text: var( --kendo-drawer-text, k-color(on-app-surface) )!default;
+$kendo-drawer-text: var( --kendo-drawer-text, k-color(on-app-surface) ) !default;
 /// The border color of the Drawer.
 /// @group drawer
 $kendo-drawer-border: var( --kendo-drawer-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
