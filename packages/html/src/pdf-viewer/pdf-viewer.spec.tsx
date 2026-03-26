@@ -164,6 +164,7 @@ PDFViewer.folderName = PDF_VIEWER_FOLDER_NAME;
  */
 PDFViewer.ariaSpec = {
     selector: '.k-pdf-viewer',
+    seeAlso: ['toolbar'],
     rules: [
         { selector: '.k-pdf-viewer .k-canvas', attribute: 'tabindex=0', usage: 'Defines the focusable page container element.' },
         { selector: '.k-pdf-viewer .k-canvas', attribute: 'aria-label', usage: 'Describes the purpose of the focusable container.' },

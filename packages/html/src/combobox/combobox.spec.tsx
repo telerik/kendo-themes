@@ -248,6 +248,7 @@ Combobox.folderName = COMBOBOX_FOLDER_NAME;
  */
 Combobox.ariaSpec = {
     selector: '.k-combobox',
+    seeAlso: ['popup', 'list', 'action-sheet'],
     rules: [
         { selector: '.k-combobox > .k-input-inner', attribute: 'role=combobox', usage: 'Identifies the input as a combobox.' },
         { selector: '.k-combobox > .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the combobox has a listbox popup.' },

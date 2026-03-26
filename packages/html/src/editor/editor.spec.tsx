@@ -83,6 +83,7 @@ Editor.folderName = EDITOR_FOLDER_NAME;
  */
 Editor.ariaSpec = {
     selector: '.k-editor',
+    seeAlso: ['toolbar'],
     rules: [
         { selector: '.k-editor-content[contenteditable]', attribute: 'role=textbox', usage: 'Specifies the role of the component as text input.' },
         { selector: '.k-editor-content[contenteditable]', attribute: 'aria-label', usage: 'The component focusable element needs an accessible name.' },

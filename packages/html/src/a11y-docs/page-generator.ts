@@ -11,18 +11,19 @@ import { buildA11yJson } from './json-renderer';
  */
 export function generateA11yDoc(
     component: ComponentMeta,
+    registry: Map<string, ComponentMeta>,
     options: A11yGeneratorOptions = {},
 ): A11yDocPage {
-    const displayName = resolveDisplayName(component.id, options.componentNameMap);
+    const displayName = resolveDisplayName(component.id, registry, options.componentNameMap);
 
     const page: A11yDocPage = {
         componentId: component.id,
         displayName,
-        json: buildA11yJson(component, options.componentNameMap),
+        json: buildA11yJson(component, registry, options.componentNameMap),
     };
 
     if (options.outputPath) {
-        page.outputPath = options.outputPath(component);
+        page.outputPath = options.outputPath({ ...component, displayName });
     }
 
     return page;
@@ -30,15 +31,14 @@ export function generateA11yDoc(
 
 /**
  * Generate a11y documentation pages for multiple components.
- * Applies include/exclude filtering from options.
  */
 export function generateA11yDocs(
-    components: Map<string, ComponentMeta>,
+    registry: Map<string, ComponentMeta>,
     options: A11yGeneratorOptions = {},
 ): A11yDocPage[] {
     const pages: A11yDocPage[] = [];
 
-    for (const [id, component] of components) {
+    for (const [id, component] of registry) {
         if (options.includeComponents && !options.includeComponents.includes(id)) {
             continue;
         }
@@ -46,7 +46,7 @@ export function generateA11yDocs(
             continue;
         }
 
-        pages.push(generateA11yDoc(component, options));
+        pages.push(generateA11yDoc(component, registry, options));
     }
 
     return pages;

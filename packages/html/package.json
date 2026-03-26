@@ -46,7 +46,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "prepublishOnly": "npm run build && npm run typegen"
+    "prepublishOnly": "npm run build && npm run typegen",
+    "docs:a11y": "node ./scripts/generate-a11y-docs.js"
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^4.8.0"

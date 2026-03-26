@@ -223,6 +223,7 @@ Autocomplete.folderName = AUTOCOMPLETE_FOLDER_NAME;
  * @see ActionSheet ariaSpec for adaptive mode
  */
 Autocomplete.ariaSpec = {
+    seeAlso: ['list', 'action-sheet'],
     rules: [
         { selector: '.k-autocomplete .k-input-inner', attribute: 'role=combobox', usage: 'Announces the autocomplete input.' },
         { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the component has a listbox popup.' },

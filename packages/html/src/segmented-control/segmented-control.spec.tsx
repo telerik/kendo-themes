@@ -66,6 +66,7 @@ SegmentedControl.folderName = SEGMENTED_CONTROL_FOLDER_NAME;
  */
 SegmentedControl.ariaSpec = {
     selector: '.k-segmented-control',
+    seeAlso: ['button'],
     rules: [
         { selector: '.k-segmented-control', attribute: 'role=group', usage: 'Sets the proper role for the group of buttons.' },
         { selector: '.k-segmented-control-button', attribute: 'role=button or nodeName=button', usage: 'Each button must have the appropriate button role.' },

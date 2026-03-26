@@ -282,6 +282,7 @@ DropdownGrid.folderName = DROPDOWNGRID_FOLDER_NAME;
  * @see ActionSheet ariaSpec for adaptive mode
  */
 DropdownGrid.ariaSpec = {
+    seeAlso: ['action-sheet'],
     rules: [
         { selector: '.k-combobox .k-input-inner', attribute: 'role=combobox', usage: 'Identifies the input as a combobox.' },
         { selector: '.k-combobox .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the combobox has a listbox popup.' },

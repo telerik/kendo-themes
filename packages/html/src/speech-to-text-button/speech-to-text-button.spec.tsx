@@ -58,6 +58,7 @@ SpeechToTextButton.folderName = SPEECH_TO_TEXT_BUTTON_FOLDER_NAME;
  */
 SpeechToTextButton.ariaSpec = {
     selector: '.k-speech-to-text-button',
+    seeAlso: ['button'],
     rules: [
         { selector: '.k-button.k-speech-to-text-button', attribute: 'role=button or nodeName=button', usage: 'If the used element is not <button>, explicitly set its role to button.' },
         { selector: '.k-button.k-speech-to-text-button', attribute: 'aria-pressed', usage: 'Announces the toggle behaviour of the button.' },

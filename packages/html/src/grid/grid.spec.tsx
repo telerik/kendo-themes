@@ -111,6 +111,8 @@ Grid.folderName = GRID_FOLDER_NAME;
  */
 Grid.ariaSpec = {
     selector: '.k-grid',
+    description: 'The Grid is a composite component that consists of 4 logically separated structural elements:\n- Toolbar (`role=toolbar`)\n- Group header (`role=toolbar`)\n- Data Grid (`role=grid`)\n- Pager (`role=application`)\n\nThe element with `role=grid` must not include the ToolBar and the Pager elements.\nWhen multiple tables compose the grid (separate header/content tables), inner tables\nget `role=none` and their children receive explicit roles (`rowgroup`, `row`, `columnheader`, `gridcell`).',
+    seeAlso: ['toolbar', 'pager'],
     rules: [
         // ── Grid Toolbar ──
         { selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons and inputs.' },

@@ -65,6 +65,7 @@ MediaPlayer.folderName = MEDIAPLAYER_FOLDER_NAME;
  */
 MediaPlayer.ariaSpec = {
     selector: '.k-mediaplayer',
+    seeAlso: ['toolbar', 'slider'],
     rules: [
         { selector: '.k-play-button', attribute: 'aria-label', usage: 'Specifies label for the play/pause button.' },
         { selector: '.k-play-button', attribute: 'aria-pressed', usage: 'Specifies whether play is active or not.' },

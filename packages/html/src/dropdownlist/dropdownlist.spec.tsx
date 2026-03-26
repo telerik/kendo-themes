@@ -222,6 +222,7 @@ DropdownList.folderName = DROPDOWNLIST_FOLDER_NAME;
  * @see ActionSheet ariaSpec for adaptive mode
  */
 DropdownList.ariaSpec = {
+    seeAlso: ['list', 'action-sheet'],
     rules: [
         { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'role=combobox', usage: 'Announces the dropdown element.' },
         { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-haspopup=listbox', usage: 'Indicates the presence of a listbox popup.' },

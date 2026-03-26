@@ -242,6 +242,7 @@ MultiSelect.folderName = MULTISELECT_FOLDER_NAME;
  * @see ActionSheet ariaSpec for adaptive mode
  */
 MultiSelect.ariaSpec = {
+    seeAlso: ['list', 'action-sheet'],
     rules: [
         // Combobox input
         { selector: '.k-multiselect .k-input-inner', attribute: 'role=combobox', usage: 'Announces the multiselect input.' },
