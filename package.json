@@ -84,7 +84,7 @@
     "node": "^24 || ^25"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs}": "eslint",
+    "*.{js,jsx,ts,tsx,mjs}": "eslint --no-warn-ignored",
     "*.{css,scss}": "stylelint"
   }
 }
