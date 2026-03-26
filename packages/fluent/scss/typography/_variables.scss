@@ -245,13 +245,13 @@ $kendo-code-border: var( --kendo-code-border, color-mix(in srgb, k-color(border)
 $kendo-display1-font-size: calc( var(--kendo-font-size) * 9 ) !default;
 /// The font size of the second largest display text.
 /// @group typography-component
-$kendo-display2-font-size: calc( var(--kendo-font-size) * 6 )  !default;
+$kendo-display2-font-size: calc( var(--kendo-font-size) * 6 ) !default;
 /// The font size of the third largest display text.
 /// @group typography-component
 $kendo-display3-font-size: 112px !default;
 /// The font size of the fourth largest display text.
 /// @group typography-component
-$kendo-display4-font-size: calc( var(--kendo-font-size) * 3 )  !default;
+$kendo-display4-font-size: calc( var(--kendo-font-size) * 3 ) !default;
 
 /// The font family of the largest display text.
 /// @group typography-component

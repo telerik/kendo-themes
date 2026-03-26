@@ -185,7 +185,7 @@ $kendo-calendar-cell-border: null !default;
 
 /// The background color of the hovered cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: color-mix( in srgb, currentColor 8%, transparent )  !default;
+$kendo-calendar-cell-hover-bg: color-mix( in srgb, currentColor 8%, transparent ) !default;
 /// The text color of the hovered cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-hover-text: k-color(on-app-surface) !default;
