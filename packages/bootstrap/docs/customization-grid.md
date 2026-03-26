@@ -840,7 +840,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-selection-aggregates-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-bold)!default</code></td>
+    <td><code>var(--kendo-font-weight-bold)</code></td>
     <td><code>var(--kendo-font-weight-bold)</code></td>
 </tr>
 <tr>
@@ -1250,7 +1250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(0)!default</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>

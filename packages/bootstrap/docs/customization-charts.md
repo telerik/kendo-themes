@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-series-a</td>
     <td>String</td>
-    <td><code>k-color(series-a)!default</code></td>
+    <td><code>k-color(series-a)</code></td>
     <td><code>var(--kendo-color-series-a)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-a-dark</td>
     <td>String</td>
-    <td><code>k-color(series-a-bold)!default</code></td>
+    <td><code>k-color(series-a-bold)</code></td>
     <td><code>var(--kendo-color-series-a-bold)</code></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)!default</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>

@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-xs)!default</code></td>
+    <td><code>var(--kendo-font-size-xs)</code></td>
     <td><code>var(--kendo-font-size-xs)</code></td>
 </tr>
 <tr>

@@ -5666,7 +5666,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-series-a</td>
     <td>String</td>
-    <td><code>k-color(series-a)!default</code></td>
+    <td><code>k-color(series-a)</code></td>
     <td><code>var(--kendo-color-series-a)</code></td>
 </tr>
 <tr>
@@ -5676,7 +5676,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-series-a-dark</td>
     <td>String</td>
-    <td><code>k-color(series-a-bold)!default</code></td>
+    <td><code>k-color(series-a-bold)</code></td>
     <td><code>var(--kendo-color-series-a-bold)</code></td>
 </tr>
 <tr>
@@ -6296,7 +6296,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chart-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)!default</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -11865,7 +11865,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-drag-hint-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)!default</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -16748,7 +16748,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-grid-selection-aggregates-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-bold)!default</code></td>
+    <td><code>var(--kendo-font-weight-bold)</code></td>
     <td><code>var(--kendo-font-weight-bold)</code></td>
 </tr>
 <tr>
@@ -17158,7 +17158,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(0)!default</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -18053,7 +18053,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)!default</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
@@ -20795,7 +20795,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-map-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)!default</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -38425,7 +38425,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-code-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)!default</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>

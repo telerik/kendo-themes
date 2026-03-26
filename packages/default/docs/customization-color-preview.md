@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-color-preview-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)!default</code></td>
+    <td><code>k-border-radius(md)</code></td>
     <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>

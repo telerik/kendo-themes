@@ -2260,7 +2260,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)!default</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -4104,7 +4104,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-header-cell-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)!default</code></td>
+    <td><code>var(--kendo-font-size-lg)</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>
@@ -18186,7 +18186,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-hover-border</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)!default</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -18771,7 +18771,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)!default</code></td>
+    <td><code>var(--kendo-font-size-lg)</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>
@@ -28185,7 +28185,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-event-line-height</td>
     <td>Calculation</td>
-    <td><code>calc( $kendo-scheduler-event-min-height - k-spacing(1) )!default</code></td>
+    <td><code>calc( $kendo-scheduler-event-min-height - k-spacing(1) )</code></td>
     <td><code>calc(25px - var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>

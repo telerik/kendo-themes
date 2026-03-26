@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-label-success-text</td>
     <td>String</td>
-    <td><code>k-color(success-on-surface)!default</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
     <td><code>var(--kendo-color-success-on-surface)</code></td>
 </tr>
 <tr>

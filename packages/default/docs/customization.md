@@ -1658,7 +1658,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-badge-md-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-xs)!default</code></td>
+    <td><code>var(--kendo-font-size-xs)</code></td>
     <td><code>var(--kendo-font-size-xs)</code></td>
 </tr>
 <tr>
@@ -3984,7 +3984,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -10906,7 +10906,7 @@ The following table lists the available variables for customizing the Default th
 <tbody><tr>
     <td>$kendo-color-preview-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)!default</code></td>
+    <td><code>k-border-radius(md)</code></td>
     <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
@@ -11395,7 +11395,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-dialog-titlebar-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -11575,7 +11575,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-dock-manager-pane-header-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -15958,7 +15958,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td>String</td>
-    <td><code>k-color(error-emphasis)!default</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
     <td><code>var(--kendo-color-error-emphasis)</code></td>
 </tr>
 <tr>
@@ -22468,7 +22468,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-notification-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)!default</code></td>
+    <td><code>k-border-radius(md)</code></td>
     <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
@@ -23854,7 +23854,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-pager-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -25763,7 +25763,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-pivotgrid-headers-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -27083,7 +27083,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-prompt-content-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -30651,7 +30651,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -31961,7 +31961,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-stepper-label-success-text</td>
     <td>String</td>
-    <td><code>k-color(success-on-surface)!default</code></td>
+    <td><code>k-color(success-on-surface)</code></td>
     <td><code>var(--kendo-color-success-on-surface)</code></td>
 </tr>
 <tr>
@@ -33355,7 +33355,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-table-header-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -38884,7 +38884,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -39374,7 +39374,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-window-titlebar-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>

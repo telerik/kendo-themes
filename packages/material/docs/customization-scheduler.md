@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-line-height</td>
     <td>Calculation</td>
-    <td><code>calc( $kendo-scheduler-event-min-height - k-spacing(1) )!default</code></td>
+    <td><code>calc( $kendo-scheduler-event-min-height - k-spacing(1) )</code></td>
     <td><code>calc(25px - var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>

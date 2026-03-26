@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)!default</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>

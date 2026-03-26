@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)!default</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>

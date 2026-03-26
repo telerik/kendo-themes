@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-cell-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)!default</code></td>
+    <td><code>var(--kendo-font-size-lg)</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>

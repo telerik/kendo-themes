@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-text</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-text, k-color(on-app-surface) )!default</code></td>
+    <td><code>var( --kendo-drawer-text, k-color(on-app-surface) )</code></td>
     <td><code>var(--kendo-drawer-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
