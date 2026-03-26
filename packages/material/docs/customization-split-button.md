@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-split-button-sm-arrow-padding-x</td>
     <td>Calculation</td>
     <td><code>calc( k-spacing(4.5) / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4\.5, 1.125rem) / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-4\.5) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small arrow Button.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-split-button-md-arrow-padding-x</td>
     <td>Calculation</td>
     <td><code>calc( k-spacing(5.5) / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-5\.5, 1.375rem) / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-5\.5) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium arrow Button.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-split-button-lg-arrow-padding-x</td>
     <td>Calculation</td>
     <td><code>calc( k-spacing(6.5) / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-6\.5, 1.625rem) / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-6\.5) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large arrow Button.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-split-button-sm-arrow-padding-y</td>
     <td>Calculation</td>
     <td><code>$kendo-button-sm-padding-y</code></td>
-    <td><code>calc(var(--kendo-spacing-3\.5, 0.875rem) / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-3\.5) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small arrow Button.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-split-button-md-arrow-padding-y</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-padding-y</code></td>
-    <td><code>calc(var(--kendo-spacing-4\.5, 1.125rem) / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-4\.5) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium arrow Button.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-split-button-lg-arrow-padding-y</td>
     <td>Calculation</td>
     <td><code>$kendo-button-lg-padding-y</code></td>
-    <td><code>calc(var(--kendo-spacing-5\.5, 1.375rem) / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-5\.5) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large arrow Button.</div></div>

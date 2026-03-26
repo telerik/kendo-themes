@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-searchbox-icon-color</td>
     <td>String</td>
     <td><code>var( --kendo-searchbox-icon-color, k-color(primary) )</code></td>
-    <td><code>var(--kendo-searchbox-icon-color, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var(--kendo-searchbox-icon-color, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the searchbox icon.</div></div>

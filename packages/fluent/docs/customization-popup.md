@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-popup-padding-x, #{k-spacing(0)} )</code></td>
-    <td><code>var(--kendo-popup-padding-x, var(--kendo-spacing-0, 0px))</code></td>
+    <td><code>var(--kendo-popup-padding-x, var(--kendo-spacing-0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the popup.</div></div>
@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-popup-padding-y, #{k-spacing(0)} )</code></td>
-    <td><code>var(--kendo-popup-padding-y, var(--kendo-spacing-0, 0px))</code></td>
+    <td><code>var(--kendo-popup-padding-y, var(--kendo-spacing-0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the popup.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-popup-border-radius, #{k-border-radius(md)} )</code></td>
-    <td><code>var(--kendo-popup-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+    <td><code>var(--kendo-popup-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the popup.</div></div>
@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popup-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-popup-font-size, var( --kendo-font-size, inherit) )</code></td>
-    <td><code>var(--kendo-popup-font-size, var(--kendo-font-size, inherit))</code></td>
+    <td><code>var( --kendo-popup-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>var(--kendo-popup-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the popup.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popup-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-popup-line-height, var( --kendo-line-height, normal) )</code></td>
-    <td><code>var(--kendo-popup-line-height, var(--kendo-line-height, normal))</code></td>
+    <td><code>var( --kendo-popup-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-popup-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the popup.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-content-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-popup-content-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-popup-content-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-popup-content-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the content inside the popup.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-content-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-popup-content-padding-y, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-popup-content-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-popup-content-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the content inside the popup.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-bg</td>
     <td>String</td>
     <td><code>var( --kendo-popup-bg, #{k-color(surface-alt)} )</code></td>
-    <td><code>var(--kendo-popup-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-popup-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the popup.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-text</td>
     <td>String</td>
     <td><code>var( --kendo-popup-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-popup-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-popup-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the popup.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popup-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-popup-shadow, k-elevation(5) )</code></td>
-    <td><code>var(--kendo-popup-shadow, var(--kendo-elevation-5, 0 8px 16px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12)))</code></td>
+    <td><code>var(--kendo-popup-shadow, var(--kendo-elevation-5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow around the popup.</div></div>

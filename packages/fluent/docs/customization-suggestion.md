@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-suggestion-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-suggestion-padding-y, #{k-spacing(1.5)} )</code></td>
-    <td><code>var(--kendo-suggestion-padding-y, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
+    <td><code>var(--kendo-suggestion-padding-y, var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Suggestion wrapper.</div></div>
@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-suggestion-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-suggestion-padding-x, #{k-spacing(3)} )</code></td>
-    <td><code>var(--kendo-suggestion-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-suggestion-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Suggestion wrapper.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-suggestion-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-suggestion-spacing, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-suggestion-spacing, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-suggestion-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Suggestion wrapper.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-suggestion-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Suggestion.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-suggestion-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-suggestion-line-height, var( --kendo-line-height-lg, normal ) )</code></td>
-    <td><code>var(--kendo-suggestion-line-height, var(--kendo-line-height-lg, normal))</code></td>
+    <td><code>var( --kendo-suggestion-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-suggestion-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Suggestion.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-suggestion-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-suggestion-border-radius, #{k-border-radius(full)} )</code></td>
-    <td><code>var(--kendo-suggestion-border-radius, var(--kendo-border-radius-full, 9999px))</code></td>
+    <td><code>var(--kendo-suggestion-border-radius, var(--kendo-border-radius-full))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Suggestion.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-suggestion-focus-shadow-color</td>
     <td>String</td>
     <td><code>var( --kendo-suggestion-focus-shadow-color, #{k-color(on-base)} )</code></td>
-    <td><code>var(--kendo-suggestion-focus-shadow-color, var(--kendo-color-on-base, #242424))</code></td>
+    <td><code>var(--kendo-suggestion-focus-shadow-color, var(--kendo-color-on-base))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow color of the focused Suggestion.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-suggestion-scroll-gradient</td>
     <td>String</td>
     <td><code>var( --kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0.00) 0%, #{k-color(app-surface)} 100% )</code></td>
-    <td><code>var(--kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface, #fafafa) 100%)</code></td>
+    <td><code>var(--kendo-suggestion-scroll-gradient, rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface) 100%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient used for scroll indicators in the Suggestion group.</div></div>
