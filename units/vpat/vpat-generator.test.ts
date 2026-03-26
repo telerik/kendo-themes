@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { generateVpatReport } from '../../packages/html/src/vpat/vpat-generator';
-import { WCAG_CRITERIA, AAA_DEFAULTS } from '../../packages/html/src/vpat/wcag-criteria';
+import { WCAG_CRITERIA } from '../../packages/html/src/vpat/wcag-criteria';
 import type { VpatA11yReport, VpatContrastReport, VpatOverrides } from '../../packages/html/src/vpat/types';
 
 // ============================================================================
@@ -70,11 +70,9 @@ describe('generateVpatReport', () => {
     describe('default output (no overrides, no reports)', () => {
         const report = generateVpatReport();
 
-        it('returns markdown and html strings', () => {
+        it('returns markdown string', () => {
             expect(typeof report.markdown).toBe('string');
-            expect(typeof report.html).toBe('string');
             expect(report.markdown.length).toBeGreaterThan(0);
-            expect(report.html.length).toBeGreaterThan(0);
         });
 
         it('uses VPAT 2.5Rev WCAG Edition format', () => {
@@ -152,32 +150,14 @@ describe('generateVpatReport', () => {
         });
     });
 
-    describe('AAA defaults', () => {
+    describe('AAA criteria', () => {
         const report = generateVpatReport();
 
-        it('marks keyboard (no exception) as Partially Supports with Signature remark', () => {
-            expect(report.markdown).toContain('2.1.3 Keyboard (No Exception)');
-            expect(report.markdown).toMatch(/2\.1\.3.*Partially Supports.*Signature/);
-        });
-
-        it('marks media-related criteria as Not Applicable', () => {
-            for (const num of ['1.2.6', '1.2.7', '1.2.8', '1.2.9']) {
-                expect(AAA_DEFAULTS[num].conformance).toBe('Not Applicable');
-                expect(report.markdown).toMatch(new RegExp(`${num.replace('.', '\\.')}.*Not Applicable`));
-            }
-        });
-
-        it('marks language/reading criteria as Not Applicable', () => {
-            for (const num of ['3.1.3', '3.1.4', '3.1.5', '3.1.6']) {
-                expect(AAA_DEFAULTS[num].conformance).toBe('Not Applicable');
-            }
-        });
-
-        it('marks unevaluated criteria as Not Evaluated', () => {
-            // Criteria without AAA_DEFAULTS entries should be "Not Evaluated"
-            const report = generateVpatReport();
-            // 2.2.3 No Timing — not in AAA_DEFAULTS, should be Not Evaluated
+        it('marks all AAA criteria as Not Evaluated by default', () => {
+            // Without configured exceptions, all AAA criteria should be "Not Evaluated"
             expect(report.markdown).toMatch(/2\.2\.3.*Not Evaluated/);
+            expect(report.markdown).toMatch(/1\.2\.6.*Not Evaluated/);
+            expect(report.markdown).toMatch(/2\.1\.3.*Not Evaluated/);
         });
     });
 
@@ -298,27 +278,11 @@ describe('generateVpatReport', () => {
         });
     });
 
-    describe('HTML output', () => {
+    describe('no HTML output', () => {
         const report = generateVpatReport();
 
-        it('generates valid HTML structure', () => {
-            expect(report.html).toContain('<!DOCTYPE html>');
-            expect(report.html).toContain('<html lang="en">');
-            expect(report.html).toContain('</html>');
-        });
-
-        it('includes product name in HTML title', () => {
-            expect(report.html).toContain('<title>Accessibility Conformance Report - Kendo UI</title>');
-        });
-
-        it('converts markdown tables to HTML tables', () => {
-            expect(report.html).toContain('<table');
-            expect(report.html).toContain('<th');
-            expect(report.html).toContain('Conformance Level');
-        });
-
-        it('converts markdown links to HTML links', () => {
-            expect(report.html).toContain('<a href="https://www.w3.org/WAI/WCAG22/');
+        it('does not include html in the report', () => {
+            expect(report).not.toHaveProperty('html');
         });
     });
 

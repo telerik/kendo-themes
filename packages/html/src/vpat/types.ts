@@ -139,7 +139,6 @@ export interface VpatA11yReport {
 
 export interface VpatReport {
     markdown: string;
-    html: string;
     data: {
         config: VpatConfig;
         a11yAnalysis: VpatTestAnalysis | null;

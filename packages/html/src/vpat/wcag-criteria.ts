@@ -110,33 +110,6 @@ export const WCAG_CRITERIA: Record<string, WcagCriterion> = {
     '3.3.9': { name: 'Accessible Authentication (Enhanced)', level: 'AAA', url: 'https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced.html', versionNote: '2.2 only' }
 };
 
-/**
- * Default AAA conformance levels for a UI component library.
- *
- * - 'Supports': keyboard alternatives exist for all interactions, or the
- *   criterion is inherently satisfied by the component architecture.
- * - 'Not Applicable': the criterion is not relevant to a UI component library
- *   (e.g. sign language for prerecorded media, reading level of prose).
- * - 'Not Evaluated': the criterion has not been formally assessed.
- */
-export const AAA_DEFAULTS: Record<string, { conformance: string; remarks: string }> = {
-    // Supports — keyboard alternatives provided for all supported interactions
-    '2.1.3': { conformance: 'Partially Supports', remarks: 'Keyboard navigation alternatives are provided for all supported interactions except the Signature component, which requires a pointer device for drawing.' },
-    '1.4.9': { conformance: 'Supports', remarks: 'Components do not use images of text.' },
-    '2.5.6': { conformance: 'Supports', remarks: 'Components do not restrict input to a specific modality; concurrent input mechanisms are supported.' },
-
-    // Not Applicable — irrelevant to a UI component library
-    '1.2.6': { conformance: 'Not Applicable', remarks: 'Components do not include prerecorded media content requiring sign language.' },
-    '1.2.7': { conformance: 'Not Applicable', remarks: 'Components do not include prerecorded media content requiring extended audio description.' },
-    '1.2.8': { conformance: 'Not Applicable', remarks: 'Components do not include prerecorded media content requiring a media alternative.' },
-    '1.2.9': { conformance: 'Not Applicable', remarks: 'Components do not include live audio-only content.' },
-    '1.4.7': { conformance: 'Not Applicable', remarks: 'Components do not produce audio content.' },
-    '3.1.3': { conformance: 'Not Applicable', remarks: 'A UI component library does not present prose with unusual words.' },
-    '3.1.4': { conformance: 'Not Applicable', remarks: 'A UI component library does not use abbreviations requiring expanded forms.' },
-    '3.1.5': { conformance: 'Not Applicable', remarks: 'A UI component library does not present prose content with a measurable reading level.' },
-    '3.1.6': { conformance: 'Not Applicable', remarks: 'A UI component library does not present text requiring pronunciation guidance.' },
-};
-
 /** Map axe-core rule IDs to WCAG criteria numbers */
 export const AXE_TO_WCAG: Record<string, string> = {
     'target-size': '2.5.8',

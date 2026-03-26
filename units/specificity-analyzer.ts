@@ -100,7 +100,7 @@ function parseSelector(selector: string): ParsedSelector {
             case "tag":
               result.elements.push((node as Tag).value);
               break;
-            case "pseudo": {
+            case "pseudo":
               const pseudo = node as Pseudo;
               if (pseudo.value.startsWith("::")) {
                 result.pseudoElements.push(pseudo.value);
@@ -108,7 +108,6 @@ function parseSelector(selector: string): ParsedSelector {
                 result.pseudoClasses.push(pseudo.value);
               }
               break;
-            }
             case "attribute":
               result.attributes.push((node as Attribute).attribute);
               break;
@@ -233,9 +232,8 @@ function resolveSourceLocation(sourceMap: any, cssLine: number, cssColumn: numbe
     }
 
     return `CSS line ${cssLine}`;
-  } catch (error: unknown) {
-    const msg = error instanceof Error ? error.message : String(error);
-    throw new Error(`Error resolving source location for CSS line ${cssLine}: ${msg}`);
+  } catch (error) {
+    throw new Error(`Error resolving source location for CSS line ${cssLine}: ${error.message}`);
   }
 }
 
@@ -824,6 +822,7 @@ function calculateSpecificityThreshold(selector: string, component: any | null =
   // Apply baseClass requirement if specified
   if (baseClass && breakdown.baseClassCount === 0) {
     // If base class is required but not found, reset everything to 0
+    classes = 0;
     breakdown.variants = [];
     breakdown.options = [];
     breakdown.states = [];
@@ -986,12 +985,11 @@ function generateSpecificityTests(
     it(`"${selector}" ([${specificity}])`, () => {
       try {
         expect(`[${String(specificity)}]`).toEqual(`[${String(expectedSpecificity.threshold)}]`);
-      } catch (error: unknown) {
+      } catch (error) {
         const result = calculateSpecificityThreshold(selector, Component, thresholdOptions);
         const breakdownInfo = formatSpecificityBreakdown(result.breakdown);
-        const msg = error instanceof Error ? error.message : String(error);
 
-        throw new Error(`${msg}\n` + `Source: ${sourceLocation}\n` + `${breakdownInfo}`);
+        throw new Error(`${error.message}\n` + `Source: ${sourceLocation}\n` + `${breakdownInfo}`);
       }
     });
   });
@@ -1028,7 +1026,7 @@ function testSpecificity(options: TestSpecificityOptions = {}, components: SpecC
   };
 
   switch (scope) {
-    case "theme": {
+    case "theme":
       const themeResult = sass.compileString(
         `
           @use '${basePath}/packages/${theme}/scss/index.scss' as *;
@@ -1053,7 +1051,6 @@ function testSpecificity(options: TestSpecificityOptions = {}, components: SpecC
         });
       });
       break;
-    }
     case "component":
     default:
       // Individual component compilation (current behavior)

@@ -1,9 +1,9 @@
 /**
  * VPAT / Accessibility Conformance Report (ACR) Generator
  *
- * Generates a VPAT report in Markdown and HTML formats based on:
- *   1. Default Kendo UI VPAT config (embedded baseline)
- *   2. Bundled a11y and contrast test reports (baseline data)
+ * Generates a VPAT report in Markdown format based on:
+ *   1. Default Kendo UI VPAT config
+ *   2. Optional a11y and contrast test report data
  *   3. Optional consumer overrides (product info, extra exceptions, notes)
  *
  * Designed to be consumed by component libraries:
@@ -16,48 +16,37 @@ import type {
     VpatReport,
     VpatTestAnalysis,
     VpatA11yReport,
-    VpatContrastReport,
-    VpatKnownException
+    VpatContrastReport
 } from './types';
-import { WCAG_CRITERIA, AXE_TO_WCAG, AAA_DEFAULTS } from './wcag-criteria';
+import { WCAG_CRITERIA, AXE_TO_WCAG } from './wcag-criteria';
 import { DEFAULT_VPAT_CONFIG } from './default-config';
-
-// Baseline reports are embedded at build time by packages/html/scripts/build.js
-// which generates baseline-data.ts with the JSON content from tests/_output/.
-// In development (before build), baseline-data.ts exports nulls.
-import { baselineA11yReport, baselineContrastReport } from './baseline-data';
 
 // ============================================================================
 // CONFIG MERGING
 // ============================================================================
 
-/**
- * Merge known exceptions: overrides with the same wcagCriteria+axeRuleId key
- * replace the base entry; new ones are appended.
- */
-function mergeKnownExceptions(
-    base?: VpatKnownException[],
-    overrides?: VpatKnownException[]
-): VpatKnownException[] | undefined {
-    if (!overrides?.length) { return base; }
-    if (!base?.length) { return overrides; }
-
-    const exceptionKey = (e: VpatKnownException) => `${e.wcagCriteria}|${e.axeRuleId ?? ''}`;
-    const overrideKeys = new Set(overrides.map(exceptionKey));
-    const kept = base.filter(e => !overrideKeys.has(exceptionKey(e)));
-    return [...kept, ...overrides];
-}
-
 function mergeConfig(base: VpatConfig, overrides?: VpatOverrides): VpatConfig {
     if (!overrides) { return { ...base }; }
 
-    const merged: VpatConfig = {
+    // Known exceptions: override entries with matching wcagCriteria replace base entries; new ones append
+    let knownExceptions = base.knownExceptions;
+    if (overrides.knownExceptions?.length) {
+        if (!base.knownExceptions?.length) {
+            knownExceptions = overrides.knownExceptions;
+        } else {
+            const overrideKeys = new Set(overrides.knownExceptions.map(e => e.wcagCriteria));
+            const kept = base.knownExceptions.filter(e => !overrideKeys.has(e.wcagCriteria));
+            knownExceptions = [...kept, ...overrides.knownExceptions];
+        }
+    }
+
+    return {
         product: { ...base.product, ...overrides.product },
         generalStatements: { ...base.generalStatements, ...overrides.generalStatements },
         specialConsiderations: overrides.specialConsiderations
             ? [...(base.specialConsiderations || []), ...overrides.specialConsiderations]
             : base.specialConsiderations,
-        knownExceptions: mergeKnownExceptions(base.knownExceptions, overrides.knownExceptions),
+        knownExceptions,
         contrastExclusions: overrides.contrastExclusions
             ? {
                 ...base.contrastExclusions,
@@ -77,8 +66,6 @@ function mergeConfig(base: VpatConfig, overrides?: VpatOverrides): VpatConfig {
             ...overrides.additionalProductNotes
         }
     };
-
-    return merged;
 }
 
 // ============================================================================
@@ -345,15 +332,13 @@ function generateMarkdown(config: VpatConfig, analysis: VpatTestAnalysis | null,
         const versionSuffix = crit.versionNote ? ` ${crit.versionNote}` : '';
         const criteriaLink = `[${num} ${crit.name}](${crit.url}) (Level ${crit.level}${versionSuffix})`;
 
-        // Check for consumer-configured exceptions first, then fall back to library defaults
-        const configuredConformance = getConformanceForCriteria(num, exceptionsIndex);
-        const configuredRemarks = getRemarksForCriteria(num, exceptionsIndex);
+        // Check for consumer-configured exceptions; otherwise mark as Not Evaluated
         const hasConfigured = exceptionsIndex[num]?.length > 0;
 
         if (hasConfigured) {
+            const configuredConformance = getConformanceForCriteria(num, exceptionsIndex);
+            const configuredRemarks = getRemarksForCriteria(num, exceptionsIndex);
             ln(`| ${criteriaLink} | ${configuredConformance} | ${configuredRemarks} |`);
-        } else if (AAA_DEFAULTS[num]) {
-            ln(`| ${criteriaLink} | ${AAA_DEFAULTS[num].conformance} | ${AAA_DEFAULTS[num].remarks} |`);
         } else {
             ln(`| ${criteriaLink} | Not Evaluated | |`);
         }
@@ -460,91 +445,21 @@ function generateMarkdown(config: VpatConfig, analysis: VpatTestAnalysis | null,
 }
 
 // ============================================================================
-// HTML GENERATION
-// ============================================================================
-
-function markdownToHtml(md: string, productName: string): string {
-    let html = md
-        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.+?)\*/g, '<em>$1</em>')
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
-        .replace(/^---$/gm, '<hr>')
-        .replace(/^(\d+)\. (.+)$/gm, '<li>$2</li>');
-
-    // Tables
-    const tableRegex = /(\|.+\|\n\|[-|: ]+\|\n(?:\|.+\|\n?)+)/g;
-    html = html.replace(tableRegex, (table) => {
-        const rows = table.trim().split('\n');
-        const headerCells = rows[0].split('|').filter(c => c.trim());
-        const dataRows = rows.slice(2);
-
-        let tableHtml = '<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%">\n<thead><tr>';
-        for (const cell of headerCells) {
-            tableHtml += `<th style="background:#e0e0e0;text-align:left">${cell.trim()}</th>`;
-        }
-        tableHtml += '</tr></thead>\n<tbody>';
-
-        for (const row of dataRows) {
-            const cells = row.split('|').filter(c => c.trim());
-            tableHtml += '<tr>';
-            for (const cell of cells) {
-                tableHtml += `<td>${cell.trim()}</td>`;
-            }
-            tableHtml += '</tr>';
-        }
-        tableHtml += '</tbody></table>\n';
-        return tableHtml;
-    });
-
-    // Paragraphs — wrap non-empty lines that aren't block-level elements
-    const blockTags = /^<(h[1-6]|table|thead|tbody|tr|th|td|hr|li|ul|ol|div|p)\b/i;
-    html = html.split('\n').map(line => {
-        if (!line.trim()) { return ''; }
-        if (blockTags.test(line)) { return line; }
-        if (line.match(/^<\//)) { return line; }
-        return `<p>${line}</p>`;
-    }).join('\n');
-
-    return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Accessibility Conformance Report - ${productName}</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 960px; margin: 2em auto; padding: 0 1em; line-height: 1.6; color: #333; }
-  h1 { border-bottom: 2px solid #333; padding-bottom: 0.3em; }
-  h2 { border-bottom: 1px solid #ccc; padding-bottom: 0.2em; margin-top: 2em; }
-  table { margin: 1em 0; }
-  th { background: #e0e0e0; }
-  td, th { padding: 8px 12px; border: 1px solid #ccc; text-align: left; vertical-align: top; }
-  a { color: #0066cc; }
-  hr { margin: 2em 0; }
-</style>
-</head>
-<body>
-${html}
-</body>
-</html>`;
-}
-
-// ============================================================================
 // PUBLIC API
 // ============================================================================
 
 /**
  * Generate a VPAT / Accessibility Conformance Report.
  *
- * Uses the bundled baseline config and test reports from kendo-themes,
- * with optional overrides for product-specific customizations.
+ * Uses the default Kendo UI VPAT config with optional overrides for
+ * product-specific customizations.
  *
  * @param overrides - Optional product-specific overrides. Product info fields
- *   replace the defaults; knownExceptions and specialConsiderations are appended;
+ *   replace the defaults; knownExceptions with matching wcagCriteria replace
+ *   the base entry, new ones are appended; specialConsiderations are appended;
  *   additionalProductNotes are merged.
  * @param options - Optional report inputs: custom a11y or contrast reports.
- * @returns VpatReport with markdown, html, and structured data.
+ * @returns VpatReport with markdown and structured data.
  *
  * @example
  * ```ts
@@ -568,16 +483,14 @@ export function generateVpatReport(
 ): VpatReport {
     const config = mergeConfig(DEFAULT_VPAT_CONFIG, overrides);
 
-    const a11yReport = options?.a11yReport || baselineA11yReport;
-    const contrastReport = options?.contrastReport || baselineContrastReport;
+    const a11yReport = options?.a11yReport || null;
+    const contrastReport = options?.contrastReport || null;
 
     const analysis = analyzeA11yReport(a11yReport);
     const markdown = generateMarkdown(config, analysis, contrastReport);
-    const html = markdownToHtml(markdown, config.product.name || 'Kendo UI');
 
     return {
         markdown,
-        html,
         data: {
             config,
             a11yAnalysis: analysis,
