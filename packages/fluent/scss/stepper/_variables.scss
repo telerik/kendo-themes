@@ -68,7 +68,7 @@ $kendo-stepper-indicator-focus-size: var( --kendo-stepper-indicator-focus-size, 
 $kendo-stepper-indicator-focus-offset: 3px !default;
 /// The calculated offset of the Stepper's focused indicator.
 /// @group stepper
-$kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} )  !default;
+$kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) !default;
 
 /// The background color of the Stepper indicator.
 /// @group stepper

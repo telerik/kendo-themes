@@ -142,7 +142,7 @@ $kendo-chip-focus-outline: var( --kendo-chip-focus-outline, initial) !default;
 $kendo-chip-selected-text: var( --kendo-chip-selected-text, k-color(on-primary) ) !default;
 /// The base background color of the selected solid Chip.
 /// @group chip
-$kendo-chip-selected-bg: var( --kendo-chip-selected-bg, k-color(primary) )  !default;
+$kendo-chip-selected-bg: var( --kendo-chip-selected-bg, k-color(primary) ) !default;
 /// The base border color of the selected solid Chip.
 /// @group chip
 $kendo-chip-selected-border: var( --kendo-chip-selected-border, k-color(primary) ) !default;
@@ -151,7 +151,7 @@ $kendo-chip-selected-border: var( --kendo-chip-selected-border, k-color(primary)
 $kendo-chip-disabled-text: var( --kendo-chip-disabled-text, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
 /// The base background color of the disabled solid Chip.
 /// @group chip
-$kendo-chip-disabled-bg: var( --kendo-chip-disabled-bg, color-mix(in srgb, k-color(on-app-surface) 7%, transparent) )  !default;
+$kendo-chip-disabled-bg: var( --kendo-chip-disabled-bg, color-mix(in srgb, k-color(on-app-surface) 7%, transparent) ) !default;
 /// The base border color of the disabled solid Chip.
 /// @group chip
 $kendo-chip-disabled-border: var( --kendo-chip-disabled-border, transparent ) !default;
