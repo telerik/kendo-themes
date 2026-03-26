@@ -3,13 +3,13 @@
 
 /// The font family of the Rating.
 /// @group rating
-$kendo-rating-font-family: var( --kendo-rating-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-rating-font-family: var( --kendo-rating-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Rating.
 /// @group rating
-$kendo-rating-font-size: var( --kendo-rating-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-rating-font-size: var( --kendo-rating-font-size, var(--kendo-font-size-sm) ) !default;
 /// The line height of the Rating.
 /// @group rating
-$kendo-rating-line-height: var( --kendo-rating-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-rating-line-height: var( --kendo-rating-line-height, var(--kendo-line-height) ) !default;
 
 /// The content spacing of the Rating.
 /// @group rating

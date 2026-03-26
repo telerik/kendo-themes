@@ -10,13 +10,13 @@
 $kendo-spreadsheet-border-width: 1px !default;
 /// The font family of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-spreadsheet-font-family: var(--kendo-font-family) !default;
 /// The font size of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-spreadsheet-font-size: var(--kendo-font-size) !default;
 /// The line height of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-spreadsheet-line-height: var(--kendo-line-height) !default;
 
 /// The background color of the Spreadsheet.
 /// @group spreadsheet
@@ -264,7 +264,7 @@ $kendo-spreadsheet-drawing-outline-width: 2px !default;
 
 /// The background color of the Spreadsheet drawing anchor.
 /// @group spreadsheet
-$kendo-spreadsheet-drawing-anchor-bg: color-mix(in srgb, k-color(secondary) 25%, transparent)  !default;
+$kendo-spreadsheet-drawing-anchor-bg: color-mix(in srgb, k-color(secondary) 25%, transparent) !default;
 
 /// The vertical spacing of the Spreadsheet DropZone.
 /// @group spreadsheet

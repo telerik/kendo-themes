@@ -21,7 +21,7 @@
 
         .k-file-size,
         .k-file-validation-message {
-            line-height: var( --kendo-line-height-xs, normal );
+            line-height: var(--kendo-line-height-xs);
         }
 
         .k-multiple-files-wrapper,

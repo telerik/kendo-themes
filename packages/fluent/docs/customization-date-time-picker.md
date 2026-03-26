@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-datetime-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-calendar-header-min-width} + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ) )</code></td>
-    <td><code>calc(calc(var(--kendo-calendar-cell-size, 32px) * 8) + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3, 0.75rem)) * 2)</code></td>
+    <td><code>calc(calc(var(--kendo-calendar-cell-size, 32px) * 8) + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateTimePicker.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-datetime-sm-width</td>
     <td>Calculation</td>
     <td><code>calc( calc( #{$kendo-calendar-sm-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
-    <td><code>calc(var(--kendo-calendar-sm-cell-size, 24px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3, 0.75rem)) * 2)</code></td>
+    <td><code>calc(var(--kendo-calendar-sm-cell-size, 24px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small DateTimePicker.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-datetime-md-width</td>
     <td>Calculation</td>
     <td><code>$kendo-datetime-width</code></td>
-    <td><code>calc(calc(var(--kendo-calendar-cell-size, 32px) * 8) + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3, 0.75rem)) * 2)</code></td>
+    <td><code>calc(calc(var(--kendo-calendar-cell-size, 32px) * 8) + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium DateTimePicker.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-datetime-lg-width</td>
     <td>Calculation</td>
     <td><code>calc( calc( #{$kendo-calendar-lg-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
-    <td><code>calc(var(--kendo-calendar-lg-cell-size, 36px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3, 0.75rem)) * 2)</code></td>
+    <td><code>calc(var(--kendo-calendar-lg-cell-size, 36px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large DateTimePicker.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
         width: $kendo-datetime-lg-width
     )
 )</code></td>
-    <td><ul><li>sm: "width":"calc(var(--kendo-calendar-sm-cell-size, 24px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3, 0.75rem)) * 2)"</li><li>md: "width":"calc(calc(var(--kendo-calendar-cell-size, 32px) * 8) + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3, 0.75rem)) * 2)"</li><li>lg: "width":"calc(var(--kendo-calendar-lg-cell-size, 36px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3, 0.75rem)) * 2)"</li></ul></td>
+    <td><ul><li>sm: "width":"calc(var(--kendo-calendar-sm-cell-size, 24px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)"</li><li>md: "width":"calc(calc(var(--kendo-calendar-cell-size, 32px) * 8) + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)"</li><li>lg: "width":"calc(var(--kendo-calendar-lg-cell-size, 36px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the DateTimePicker.</div></div>

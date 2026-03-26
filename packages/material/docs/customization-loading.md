@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-loading-bg</td>
     <td>String</td>
     <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #FEFBFF)</code></td>
+    <td><code>var(--kendo-color-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Loading indicator.</div></div>

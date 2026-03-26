@@ -63,13 +63,13 @@ $kendo-toolbar-border-width: 1px !default;
 
 /// The font family of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-toolbar-font-family: var(--kendo-font-family) !default;
 /// The font size of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-toolbar-font-size: var(--kendo-font-size) !default;
 /// The line height of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-toolbar-line-height: var(--kendo-line-height) !default;
 
 /// The background color of the Toolbar.
 /// @group toolbar

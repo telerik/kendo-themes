@@ -29,13 +29,13 @@ $kendo-image-editor-padding-x: var( --kendo-image-editor-padding-x, #{k-spacing(
 $kendo-image-editor-border-width: var( --kendo-image-editor-border-width, 1px ) !default;
 /// Font size of the imageeditor.
 /// @group image-editor
-$kendo-image-editor-font-size: var( --kendo-image-editor-font-size, var(--kendo-font-size, inherit) ) !default;
+$kendo-image-editor-font-size: var( --kendo-image-editor-font-size, var(--kendo-font-size) ) !default;
 /// Line height of the imageeditor.
 /// @group image-editor
-$kendo-image-editor-line-height: var( --kendo-image-editor-line-height, var(--kendo-line-height, inherit) ) !default;
+$kendo-image-editor-line-height: var( --kendo-image-editor-line-height, var(--kendo-line-height) ) !default;
 /// Font family of the imageeditor.
 /// @group image-editor
-$kendo-image-editor-font-family: var( --kendo-image-editor-font-family, var(--kendo-font-family, inherit) ) !default;
+$kendo-image-editor-font-family: var( --kendo-image-editor-font-family, var(--kendo-font-family) ) !default;
 
 /// Imageeditor content background color.
 /// @group image-editor

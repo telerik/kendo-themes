@@ -29,13 +29,13 @@ $kendo-tabstrip-wrapper-border: var( --kendo-tabstrip-wrapper-border, initial ) 
 
 /// The font family of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-font-family: var( --kendo-tabstrip-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-tabstrip-font-family: var( --kendo-tabstrip-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-font-size: var( --kendo-tabstrip-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-tabstrip-font-size: var( --kendo-tabstrip-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-line-height: var( --kendo-tabstrip-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-tabstrip-line-height: var( --kendo-tabstrip-line-height, var(--kendo-line-height) ) !default;
 /// The border width around the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-border-width: var( --kendo-tabstrip-border-width, 0px ) !default;
@@ -143,7 +143,7 @@ $kendo-tabstrip-item-selected-text: var( --kendo-tabstrip-item-selected-text, in
 $kendo-tabstrip-item-selected-border: var( --kendo-tabstrip-item-selected-border, inherit ) !default;
 /// The font weight of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-font-weight: var( --kendo-tabstrip-item-selected-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
+$kendo-tabstrip-item-selected-font-weight: var( --kendo-tabstrip-item-selected-font-weight, var(--kendo-font-weight-semibold) ) !default;
 
 /// The shadow of the focused TabStrip items.
 /// @group tabstrip

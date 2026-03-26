@@ -13,13 +13,13 @@ $kendo-orgchart-padding-y: var( --kendo-orgchart-padding-y, #{$kendo-orgchart-sp
 $kendo-orgchart-padding-x: var( --kendo-orgchart-padding-x, #{$kendo-orgchart-padding-y} ) !default;
 /// The font family of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-font-family: var( --kendo-orgchart-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-orgchart-font-family: var( --kendo-orgchart-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-font-size: var( --kendo-orgchart-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-orgchart-font-size: var( --kendo-orgchart-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-line-height: var( --kendo-orgchart-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-orgchart-line-height: var( --kendo-orgchart-line-height, var(--kendo-line-height) ) !default;
 /// The background color of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-bg: var( --kendo-orgchart-bg, #{k-color(surface-alt)} ) !default;
@@ -70,17 +70,17 @@ $kendo-orgchart-node-group-focus-shadow: var( --kendo-orgchart-node-group-focus-
 $kendo-orgchart-node-group-title-margin-y: var( --kendo-orgchart-node-group-title-margin-y, #{k-spacing(0)} ) !default;
 /// The font size of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-font-size: var( --kendo-orgchart-node-group-title-font-size, var( --kendo-font-size-xl, inherit ) ) !default;
+$kendo-orgchart-node-group-title-font-size: var( --kendo-orgchart-node-group-title-font-size, var(--kendo-font-size-xl) ) !default;
 /// The line height of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-line-height: var( --kendo-orgchart-node-group-title-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-orgchart-node-group-title-line-height: var( --kendo-orgchart-node-group-title-line-height, var(--kendo-line-height) ) !default;
 
 /// The vertical margin of the OrgChart node group subtitle.
 /// @group orgchart
 $kendo-orgchart-node-group-subtitle-margin-y: var( --kendo-orgchart-node-group-subtitle-margin-y, calc( #{$kendo-orgchart-spacer} - #{k-spacing(1)} ) ) !default;
 /// The font size of the OrgChart node group subtitle.
 /// @group orgchart
-$kendo-orgchart-node-group-subtitle-font-size: var( --kendo-orgchart-node-group-subtitle-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-orgchart-node-group-subtitle-font-size: var( --kendo-orgchart-node-group-subtitle-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the OrgChart node group subtitle.
 /// @group orgchart
 $kendo-orgchart-node-group-subtitle-text: var( --kendo-orgchart-node-group-subtitle-text, #{k-color(subtle)} ) !default;
@@ -106,17 +106,17 @@ $kendo-orgchart-card-title-margin-y: var( --kendo-orgchart-card-title-margin-y, 
 $kendo-orgchart-card-title-font-size: var( --kendo-orgchart-card-title-font-size, #{$kendo-card-title-font-size} ) !default;
 /// The line height of the OrgChart Card title.
 /// @group orgchart
-$kendo-orgchart-card-title-line-height: var( --kendo-orgchart-card-title-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-orgchart-card-title-line-height: var( --kendo-orgchart-card-title-line-height, var(--kendo-line-height) ) !default;
 
 /// The vertical margin of the OrgChart Card subtitle.
 /// @group orgchart
 $kendo-orgchart-card-subtitle-margin-y: var( --kendo-orgchart-card-subtitle-margin-y, #{k-spacing(0)} ) !default;
 /// The font size of the OrgChart Card subtitle.
 /// @group orgchart
-$kendo-orgchart-card-subtitle-font-size: var( --kendo-orgchart-card-subtitle-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-orgchart-card-subtitle-font-size: var( --kendo-orgchart-card-subtitle-font-size, var(--kendo-font-size-sm) ) !default;
 /// The line height of the OrgChart Card subtitle.
 /// @group orgchart
-$kendo-orgchart-card-subtitle-line-height: var( --kendo-orgchart-card-subtitle-line-height, var( --kendo-line-height, inherit ) ) !default;
+$kendo-orgchart-card-subtitle-line-height: var( --kendo-orgchart-card-subtitle-line-height, var(--kendo-line-height) ) !default;
 
 /// The vertical padding of the OrgChart Card body.
 /// @group orgchart

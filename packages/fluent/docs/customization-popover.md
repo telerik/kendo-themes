@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-popover-border-radius, #{$kendo-window-border-radius} )</code></td>
-    <td><code>var(--kendo-popover-border-radius, var(--kendo-window-border-radius, var(--kendo-border-radius-md, 0.25rem)))</code></td>
+    <td><code>var(--kendo-popover-border-radius, var(--kendo-window-border-radius, var(--kendo-border-radius-md)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the Popover.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-popover-font-family, #{$kendo-window-font-family} )</code></td>
-    <td><code>var(--kendo-popover-font-family, var(--kendo-window-font-family, var(--kendo-font-family, inherit)))</code></td>
+    <td><code>var(--kendo-popover-font-family, var(--kendo-window-font-family, var(--kendo-font-family)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Popover.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-popover-font-size, #{$kendo-window-font-size} )</code></td>
-    <td><code>var(--kendo-popover-font-size, var(--kendo-window-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>var(--kendo-popover-font-size, var(--kendo-window-font-size, var(--kendo-font-size)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Popover.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-line-height</td>
     <td>String</td>
     <td><code>var( --kendo-popover-line-height, #{$kendo-window-line-height} )</code></td>
-    <td><code>var(--kendo-popover-line-height, var(--kendo-window-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>var(--kendo-popover-line-height, var(--kendo-window-line-height, var(--kendo-line-height)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Popover.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-text</td>
     <td>String</td>
     <td><code>var( --kendo-popover-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-popover-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-popover-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Popover.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-bg</td>
     <td>String</td>
     <td><code>var( --kendo-popover-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-popover-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-popover-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-header-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-popover-header-padding-x, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-popover-header-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var(--kendo-popover-header-padding-x, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover header.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-header-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-popover-header-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-popover-header-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var(--kendo-popover-header-padding-y, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover header.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-popover-header-text, #{$kendo-dialog-titlebar-text} )</code></td>
-    <td><code>var(--kendo-popover-header-text, var(--kendo-dialog-titlebar-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
+    <td><code>var(--kendo-popover-header-text, var(--kendo-dialog-titlebar-text, var(--kendo-color-on-app-surface)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Popover header.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-popover-header-bg, #{$kendo-dialog-titlebar-bg} )</code></td>
-    <td><code>var(--kendo-popover-header-bg, var(--kendo-dialog-titlebar-bg, var(--kendo-color-surface-alt, #ffffff)))</code></td>
+    <td><code>var(--kendo-popover-header-bg, var(--kendo-dialog-titlebar-bg, var(--kendo-color-surface-alt)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover header.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-body-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-popover-body-padding-x, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-popover-body-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var(--kendo-popover-body-padding-x, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover body.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-body-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-popover-body-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-popover-body-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var(--kendo-popover-body-padding-y, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover body.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-actions-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-popover-actions-padding-x, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-popover-actions-padding-x, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var(--kendo-popover-actions-padding-x, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover actions.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-actions-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-popover-actions-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-popover-actions-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var(--kendo-popover-actions-padding-y, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover actions.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-callout-width</td>
     <td>String</td>
     <td><code>var( --kendo-popover-callout-width, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-popover-callout-width, var(--kendo-spacing-6, 1.5rem))</code></td>
+    <td><code>var(--kendo-popover-callout-width, var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Popover callout.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-callout-height</td>
     <td>String</td>
     <td><code>var( --kendo-popover-callout-height, #{$kendo-popover-callout-width} )</code></td>
-    <td><code>var(--kendo-popover-callout-height, var(--kendo-popover-callout-width, var(--kendo-spacing-6, 1.5rem)))</code></td>
+    <td><code>var(--kendo-popover-callout-height, var(--kendo-popover-callout-width, var(--kendo-spacing-6)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Popover callout.</div></div>

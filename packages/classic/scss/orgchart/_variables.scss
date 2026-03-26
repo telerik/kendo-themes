@@ -15,13 +15,13 @@ $kendo-orgchart-padding-y: $kendo-orgchart-spacer !default;
 $kendo-orgchart-padding-x: $kendo-orgchart-padding-y !default;
 /// The font family of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-orgchart-font-family: var(--kendo-font-family) !default;
 /// The font size of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-orgchart-font-size: var(--kendo-font-size) !default;
 /// The line height of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-orgchart-line-height: var(--kendo-line-height) !default;
 /// The background color of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-bg: k-color(surface-alt) !default;
@@ -70,13 +70,13 @@ $kendo-orgchart-node-group-focus-shadow: $kendo-card-focus-shadow !default;
 
 /// The font size of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
+$kendo-orgchart-node-group-title-font-size: var(--kendo-font-size-xl) !default;
 /// The bottom margin of the OrgChart node group title.
 /// @group orgchart
 $kendo-orgchart-node-group-title-margin-bottom: calc( #{$kendo-orgchart-spacer} / 4 ) !default;
 /// The line height of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-orgchart-node-group-title-line-height: var(--kendo-line-height-sm) !default;
 
 /// The bottom margin of the OrgChart node group subtitle.
 /// @group orgchart
@@ -84,7 +84,7 @@ $kendo-orgchart-node-group-subtitle-margin-bottom: $kendo-orgchart-spacer !defau
 
 /// The font size of the OrgChart node group subtitle.
 /// @group orgchart
-$kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-orgchart-node-group-subtitle-font-size: var(--kendo-font-size) !default;
 
 /// The line height of the OrgChart node group subtitle.
 /// @group orgchart

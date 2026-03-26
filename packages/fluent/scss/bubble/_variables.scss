@@ -20,7 +20,7 @@ $kendo-bubble-border-width: 1px !default;
 $kendo-bubble-border-style: solid !default;
 /// The line height of the Bubble.
 /// @group bubble
-$kendo-bubble-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-bubble-line-height: var(--kendo-line-height) !default;
 
 /// The text color of the Bubble.
 /// @group bubble

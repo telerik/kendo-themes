@@ -13,11 +13,11 @@ $kendo-form-spacer: var(--kendo-form-spacer, #{k-spacing(4)}) !default;
 
 /// The font size of the Form.
 /// @group form
-$kendo-form-font-size: var(--kendo-form-font-size, var( --kendo-font-size, inherit )) !default;
+$kendo-form-font-size: var(--kendo-form-font-size, var(--kendo-font-size)) !default;
 
 /// The line height of the Form.
 /// @group form
-$kendo-form-line-height: var(--kendo-form-line-height, var( --kendo-line-height, normal )) !default;
+$kendo-form-line-height: var(--kendo-form-line-height, var(--kendo-line-height)) !default;
 
 /// The margin of the Form fieldset.
 /// @group form
@@ -53,7 +53,7 @@ $kendo-form-legend-width: var(--kendo-form-legend-width, 100%) !default;
 
 /// The font size of the Form legend.
 /// @group form
-$kendo-form-legend-font-size: var(--kendo-form-legend-font-size, var( --kendo-font-size, inherit )) !default;
+$kendo-form-legend-font-size: var(--kendo-form-legend-font-size, var(--kendo-font-size)) !default;
 
 /// The text capitalization of the Form legend.
 /// @group form
@@ -65,7 +65,7 @@ $kendo-form-label-margin-bottom: var(--kendo-form-label-margin-bottom, #{k-spaci
 
 /// The font size of the Form hint.
 /// @group form
-$kendo-form-hint-font-size: var(--kendo-form-hint-font-size, var( --kendo-font-size-sm, inherit )) !default;
+$kendo-form-hint-font-size: var(--kendo-form-hint-font-size, var(--kendo-font-size-sm)) !default;
 
 /// The font style of the Form hint.
 /// @group form
@@ -130,7 +130,7 @@ $kendo-forms-invalid-color: var(--kendo-forms-invalid-color, #{k-color(error-on-
 $kendo-label-optional-margin-x: var(--kendo-label-optional-margin-x, #{k-spacing(1.5)}) !default;
 /// The font size of the optional label in the Form.
 /// @group form
-$kendo-label-optional-font-size: var(--kendo-label-optional-font-size, var( --kendo-font-size-sm, inherit )) !default;
+$kendo-label-optional-font-size: var(--kendo-label-optional-font-size, var(--kendo-font-size-sm)) !default;
 /// The font style of the optional label in the Form.
 /// @group form
 $kendo-label-optional-font-style: var(--kendo-label-optional-font-style, normal) !default;

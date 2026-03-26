@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-media-player-font-family, var( --kendo-font-family, inherit ) )</code></td>
-    <td><code>var(--kendo-media-player-font-family, var(--kendo-font-family, inherit))</code></td>
+    <td><code>var( --kendo-media-player-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>var(--kendo-media-player-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the MediaPlayer.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-media-player-font-size, var( --kendo-font-size, inherit ) )</code></td>
-    <td><code>var(--kendo-media-player-font-size, var(--kendo-font-size, inherit))</code></td>
+    <td><code>var( --kendo-media-player-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>var(--kendo-media-player-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-media-player-line-height, var( --kendo-line-height, normal ) )</code></td>
-    <td><code>var(--kendo-media-player-line-height, var(--kendo-line-height, normal))</code></td>
+    <td><code>var( --kendo-media-player-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-media-player-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-bg</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-media-player-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-media-player-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-text</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-media-player-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-media-player-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-border</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-media-player-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
+    <td><code>var(--kendo-media-player-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-overlay-bg</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-overlay-bg, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-media-player-overlay-bg, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-media-player-overlay-bg, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer overlay.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-quality-border</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-quality-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-media-player-quality-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
+    <td><code>var(--kendo-media-player-quality-border, var(--kendo-color-border))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer button.</div></div>
@@ -120,8 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-title-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-media-player-title-font-size, var( --kendo-font-size-xl, inherit ) )</code></td>
-    <td><code>var(--kendo-media-player-title-font-size, var(--kendo-font-size-xl, inherit))</code></td>
+    <td><code>var( --kendo-media-player-title-font-size, var(--kendo-font-size-xl) )</code></td>
+    <td><code>var(--kendo-media-player-title-font-size, var(--kendo-font-size-xl))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer title.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-titlebar-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-titlebar-padding-x, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-media-player-titlebar-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the MediaPlayer title.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-titlebar-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-titlebar-padding-y, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-media-player-titlebar-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the MediaPlayer title.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-titlebar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-titlebar-bg, color-mix(in srgb, k-color(on-app-surface) 40%, transparent) )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 40%, transparent))</code></td>
+    <td><code>var(--kendo-media-player-titlebar-bg, color-mix(in srgb, var(--kendo-color-on-app-surface) 40%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer title.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-media-player-titlebar-text</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-titlebar-text, $kendo-media-player-bg )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-text, var(--kendo-media-player-bg, var(--kendo-color-surface-alt, #ffffff)))</code></td>
+    <td><code>var(--kendo-media-player-titlebar-text, var(--kendo-media-player-bg, var(--kendo-color-surface-alt)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer title.</div></div>

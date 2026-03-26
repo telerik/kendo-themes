@@ -35,13 +35,13 @@ $kendo-pager-border-width: var( --kendo-pager-border-width, 1px ) !default;
 
 /// The font family of the Pager.
 /// @group pager
-$kendo-pager-font-family: var( --kendo-pager-font-family, var( --kendo-font-family, normal ) ) !default;
+$kendo-pager-font-family: var( --kendo-pager-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Pager.
 /// @group pager
-$kendo-pager-font-size: var( --kendo-pager-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-pager-font-size: var( --kendo-pager-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the Pager.
 /// @group pager
-$kendo-pager-line-height: var( --kendo-pager-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-pager-line-height: var( --kendo-pager-line-height, var(--kendo-line-height) ) !default;
 
 /// The background color of the Pager.
 /// @group pager

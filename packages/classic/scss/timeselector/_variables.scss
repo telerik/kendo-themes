@@ -14,7 +14,7 @@ $kendo-time-selector-default-size: "md" !default;
 $kendo-time-selector-border-width: 1px !default;
 /// The font family of the TimeSelector.
 /// @group time-selector
-$kendo-time-selector-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-time-selector-font-family: var(--kendo-font-family) !default;
 /// The font size of the TimeSelector.
 /// @group time-selector
 $kendo-time-selector-font-size: null !default;
@@ -60,10 +60,10 @@ $kendo-time-list-height: 240px !default;
 
 /// The font size of the TimeSelector list title.
 /// @group time-selector
-$kendo-time-list-title-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-time-list-title-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the TimeSelector list title.
 /// @group time-selector
-$kendo-time-list-title-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-time-list-title-line-height: var(--kendo-line-height-lg) !default;
 /// The height of the TimeSelector list title.
 /// @group time-selector
 $kendo-time-list-title-height: calc( #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} ) !default;

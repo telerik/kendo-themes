@@ -17,7 +17,7 @@ $kendo-switch-default-thumb-roundness: "full" !default;
 
 /// The font family of the Switch.
 /// @group switch
-$kendo-switch-font-family: var( --kendo-switch-font-family, var( --kendo-font-family, normal ) ) !default;
+$kendo-switch-font-family: var( --kendo-switch-font-family, var(--kendo-font-family) ) !default;
 
 /// The border width of the Switch track.
 /// @group switch

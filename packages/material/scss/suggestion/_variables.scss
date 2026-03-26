@@ -19,11 +19,11 @@ $kendo-suggestion-border-style: solid !default;
 
 /// The font size of the Suggestion.
 /// @group suggestion
-$kendo-suggestion-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-suggestion-font-size: var(--kendo-font-size) !default;
 
 /// The line height of the Suggestion.
 /// @group suggestion
-$kendo-suggestion-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-suggestion-line-height: var(--kendo-line-height-sm) !default;
 /// The border radius of the Suggestion.
 /// @group suggestion
 $kendo-suggestion-border-radius: k-border-radius(full) !default;

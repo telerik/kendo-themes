@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-loading-bg</td>
     <td>String</td>
     <td><code>var( --kendo-loading-bg, #{k-color(surface-alt)} )</code></td>
-    <td><code>var(--kendo-loading-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-loading-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Loading indicator.</div></div>
