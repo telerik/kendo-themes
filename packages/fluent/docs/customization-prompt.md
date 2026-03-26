@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-text</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-prompt-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-prompt-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt.</div></div>
@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-bg</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-prompt-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-prompt-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-border</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
-    <td><code>var(--kendo-prompt-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
+    <td><code>var(--kendo-prompt-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-header-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-prompt-header-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-prompt-header-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt header.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-header-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-prompt-header-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-prompt-header-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt header.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-header-border</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-header-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
-    <td><code>var(--kendo-prompt-header-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
+    <td><code>var(--kendo-prompt-header-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt header.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-content-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-content-padding-y, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-prompt-content-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-prompt-content-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AIPrompt content.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-content-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-content-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-prompt-content-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-prompt-content-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AIPrompt content.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-content-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-content-spacing, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-prompt-content-spacing, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-prompt-content-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the AIPrompt content.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-content-text</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-content-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-prompt-content-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-prompt-content-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt content.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-content-bg</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-content-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-prompt-content-bg, var(--kendo-color-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-prompt-content-bg, var(--kendo-color-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt content.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-content-border</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-content-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
-    <td><code>var(--kendo-prompt-content-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
+    <td><code>var(--kendo-prompt-content-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text border of the AIPrompt content.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-expander-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-expander-spacing, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-prompt-expander-spacing, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-prompt-expander-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the AIPrompt content expander.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-suggestion-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-suggestion-padding-y, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-prompt-suggestion-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-prompt-suggestion-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AIPrompt suggestion container.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-suggestion-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-suggestion-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-prompt-suggestion-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-prompt-suggestion-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AIPrompt suggestion container.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-suggestion-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-suggestion-border-radius, k-border-radius(md) )</code></td>
-    <td><code>var(--kendo-prompt-suggestion-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+    <td><code>var(--kendo-prompt-suggestion-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AIPrompt suggestion container.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-suggestion-text</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-suggestion-text, k-color(base-on-subtle) )</code></td>
-    <td><code>var(--kendo-prompt-suggestion-text, var(--kendo-color-base-on-subtle, #242424))</code></td>
+    <td><code>var(--kendo-prompt-suggestion-text, var(--kendo-color-base-on-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt suggestion container.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-suggestion-bg</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-suggestion-bg, k-color(base-subtle) )</code></td>
-    <td><code>var(--kendo-prompt-suggestion-bg, var(--kendo-color-base-subtle, #f5f5f5))</code></td>
+    <td><code>var(--kendo-prompt-suggestion-bg, var(--kendo-color-base-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt suggestion container.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-suggestion-border</td>
     <td>String</td>
     <td><code>var( --kendo-prompt-suggestion-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
-    <td><code>var(--kendo-prompt-suggestion-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
+    <td><code>var(--kendo-prompt-suggestion-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt suggestion container.</div></div>

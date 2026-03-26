@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-rating-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-rating-font-family, var( --kendo-font-family, inherit ) )</code></td>
-    <td><code>var(--kendo-rating-font-family, var(--kendo-font-family, inherit))</code></td>
+    <td><code>var( --kendo-rating-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>var(--kendo-rating-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Rating.</div></div>
@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-rating-font-size, var( --kendo-font-size-sm, inherit ) )</code></td>
-    <td><code>var(--kendo-rating-font-size, var(--kendo-font-size-sm, inherit))</code></td>
+    <td><code>var( --kendo-rating-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-rating-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Rating.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-rating-line-height, var( --kendo-line-height, normal ) )</code></td>
-    <td><code>var(--kendo-rating-line-height, var(--kendo-line-height, normal))</code></td>
+    <td><code>var( --kendo-rating-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-rating-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-rating-spacing, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-rating-spacing, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-rating-spacing, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The content spacing of the Rating.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-item-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-rating-item-padding-x, #{k-spacing(0.5)} )</code></td>
-    <td><code>var(--kendo-rating-item-padding-x, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var(--kendo-rating-item-padding-x, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Rating item.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-item-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-rating-item-padding-y, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-rating-item-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-rating-item-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Rating item.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-item-text</td>
     <td>String</td>
     <td><code>var( --kendo-rating-item-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-rating-item-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-rating-item-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Rating item.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-item-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-rating-item-hover-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-rating-item-hover-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-rating-item-hover-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Rating item.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-item-selected-text</td>
     <td>String</td>
     <td><code>var( --kendo-rating-item-selected-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-rating-item-selected-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-rating-item-selected-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Rating item.</div></div>

@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-sm-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-signature-sm-padding-x, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal paddings of the signature component.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-md-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-signature-md-padding-x, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-signature-md-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-signature-md-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Signature.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-lg-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-signature-lg-padding-x, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Signature.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-sm-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-signature-sm-padding-y, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-signature-sm-padding-y, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var(--kendo-signature-sm-padding-y, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical paddings of the signature component.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-md-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-signature-md-padding-y, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-signature-md-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-signature-md-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Signature.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-lg-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-signature-lg-padding-y, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-signature-lg-padding-y, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
+    <td><code>var(--kendo-signature-lg-padding-y, var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Signature.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-line-color</td>
     <td>String</td>
     <td><code>var( --kendo-signature-line-color, k-color(info-emphasis) )</code></td>
-    <td><code>var(--kendo-signature-line-color, var(--kendo-color-info-emphasis, #bfddf5))</code></td>
+    <td><code>var(--kendo-signature-line-color, var(--kendo-color-info-emphasis))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the row line of the signature component.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-line-disabled-color</td>
     <td>String</td>
     <td><code>var( --kendo-signature-line-disabled-color, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) )</code></td>
-    <td><code>var(--kendo-signature-line-disabled-color, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 30%, transparent))</code></td>
+    <td><code>var(--kendo-signature-line-disabled-color, color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the row line of the disabled signature component.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-sm-line-size</td>
     <td>String</td>
     <td><code>var( --kendo-signature-sm-line-size, calc( 100% - 2 * #{$kendo-signature-sm-padding-x} ) )</code></td>
-    <td><code>var(--kendo-signature-sm-line-size, calc(100% - 2 * var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1, 0.25rem))))</code></td>
+    <td><code>var(--kendo-signature-sm-line-size, calc(100% - 2 * var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the row line of the signature component.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-md-line-size</td>
     <td>String</td>
     <td><code>var( --kendo-signature-md-line-size, calc( 100% - 2 * #{$kendo-signature-md-padding-x} ) )</code></td>
-    <td><code>var(--kendo-signature-md-line-size, calc(100% - 2 * var(--kendo-signature-md-padding-x, var(--kendo-spacing-1, 0.25rem))))</code></td>
+    <td><code>var(--kendo-signature-md-line-size, calc(100% - 2 * var(--kendo-signature-md-padding-x, var(--kendo-spacing-1))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The md line size of the Signature.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-lg-line-size</td>
     <td>String</td>
     <td><code>var( --kendo-signature-lg-line-size, calc( 100% - 2 * #{$kendo-signature-lg-padding-x} ) )</code></td>
-    <td><code>var(--kendo-signature-lg-line-size, calc(100% - 2 * var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1, 0.25rem))))</code></td>
+    <td><code>var(--kendo-signature-lg-line-size, calc(100% - 2 * var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lg line size of the Signature.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-actions-gap</td>
     <td>String</td>
     <td><code>var( --kendo-signature-actions-gap, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-signature-actions-gap, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-signature-actions-gap, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between individual action items of the signature component</div></div>
@@ -257,7 +257,7 @@ The following table lists the available variables for customization.
         line-size: $kendo-signature-lg-line-size
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-sm-padding-y, var(--kendo-spacing-0\\.5, 0.125rem))","line-size":"var(--kendo-signature-sm-line-size, calc(100% - 2 * var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li><li>md: "padding-x":"var(--kendo-signature-md-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-md-padding-y, var(--kendo-spacing-1, 0.25rem))","line-size":"var(--kendo-signature-md-line-size, calc(100% - 2 * var(--kendo-signature-md-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li><li>lg: "padding-x":"var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1, 0.25rem))","padding-y":"var(--kendo-signature-lg-padding-y, var(--kendo-spacing-1\\.5, 0.375rem))","line-size":"var(--kendo-signature-lg-line-size, calc(100% - 2 * var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1, 0.25rem))))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1))","padding-y":"var(--kendo-signature-sm-padding-y, var(--kendo-spacing-0\\.5))","line-size":"var(--kendo-signature-sm-line-size, calc(100% - 2 * var(--kendo-signature-sm-padding-x, var(--kendo-spacing-1))))"</li><li>md: "padding-x":"var(--kendo-signature-md-padding-x, var(--kendo-spacing-1))","padding-y":"var(--kendo-signature-md-padding-y, var(--kendo-spacing-1))","line-size":"var(--kendo-signature-md-line-size, calc(100% - 2 * var(--kendo-signature-md-padding-x, var(--kendo-spacing-1))))"</li><li>lg: "padding-x":"var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1))","padding-y":"var(--kendo-signature-lg-padding-y, var(--kendo-spacing-1\\.5))","line-size":"var(--kendo-signature-lg-line-size, calc(100% - 2 * var(--kendo-signature-lg-padding-x, var(--kendo-spacing-1))))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Signature.</div></div>

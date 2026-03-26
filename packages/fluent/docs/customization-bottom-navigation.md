@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-padding-x, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-bottom-nav-padding-x, var(--kendo-spacing-1\.5, 0.375rem))</code></td>
+    <td><code>var(--kendo-bottom-nav-padding-x, var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the BottomNavigation.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-padding-y, $kendo-bottom-nav-padding-x )</code></td>
-    <td><code>var(--kendo-bottom-nav-padding-y, var(--kendo-bottom-nav-padding-x, var(--kendo-spacing-1\.5, 0.375rem)))</code></td>
+    <td><code>var(--kendo-bottom-nav-padding-y, var(--kendo-bottom-nav-padding-x, var(--kendo-spacing-1\.5)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the BottomNavigation.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-gap</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-gap, $kendo-bottom-nav-padding-x )</code></td>
-    <td><code>var(--kendo-bottom-nav-gap, var(--kendo-bottom-nav-padding-x, var(--kendo-spacing-1\.5, 0.375rem)))</code></td>
+    <td><code>var(--kendo-bottom-nav-gap, var(--kendo-bottom-nav-padding-x, var(--kendo-spacing-1\.5)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the BottomNavigation items.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit)</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the BottomNavigation.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, 1rem )</code></td>
-    <td><code>var(--kendo-font-size, 1rem)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the BottomNavigation.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-xs, normal )</code></td>
-    <td><code>var(--kendo-line-height-xs, normal)</code></td>
+    <td><code>var(--kendo-line-height-xs)</code></td>
+    <td><code>var(--kendo-line-height-xs)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the BottomNavigation.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-item-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-item-padding-x, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-bottom-nav-item-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the BottomNavigation item.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-item-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-item-padding-y, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-padding-y, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var(--kendo-bottom-nav-item-padding-y, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the BottomNavigation item.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-item-min-height, calc( var( --kendo-icon-size, 1.5rem ) * 2 + (#{$kendo-bottom-nav-item-padding-y} * 2) ) )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-min-height, calc(var(--kendo-icon-size, 1.5rem) * 2 + var(--kendo-bottom-nav-item-padding-y, var(--kendo-spacing-0\.5, 0.125rem)) * 2))</code></td>
+    <td><code>var(--kendo-bottom-nav-item-min-height, calc(var(--kendo-icon-size, 1.5rem) * 2 + var(--kendo-bottom-nav-item-padding-y, var(--kendo-spacing-0\.5)) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-item-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-item-border-radius, k-border-radius(md) )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+    <td><code>var(--kendo-bottom-nav-item-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the BottomNavigation item.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-item-gap</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-item-gap, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-gap, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-bottom-nav-item-gap, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the BottomNavigation item.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-flat-text</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-bottom-nav-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-bottom-nav-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat BottomNavigation.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-flat-bg</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-bottom-nav-bg, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var(--kendo-bottom-nav-bg, var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat BottomNavigation.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-flat-border</td>
     <td>String</td>
     <td><code>var( --kendo-bottom-nav-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-bottom-nav-border, var(--kendo-color-border, rgba(36, 36, 36, 0.72)))</code></td>
+    <td><code>var(--kendo-bottom-nav-border, var(--kendo-color-border))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat BottomNavigation.</div></div>

@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-font-family, var( --kendo-font-family, inherit ) )</code></td>
-    <td><code>var(--kendo-time-selector-font-family, var(--kendo-font-family, inherit))</code></td>
+    <td><code>var( --kendo-time-selector-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>var(--kendo-time-selector-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the time-selector.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-bg</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-time-selector-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-time-selector-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the time-selector.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-text</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-time-selector-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-time-selector-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the time-selector.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-border</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-time-selector-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
+    <td><code>var(--kendo-time-selector-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the time-selector.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-header-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-header-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-time-selector-header-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-time-selector-header-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the time-selector header.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-header-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-header-padding-y, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-time-selector-header-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-time-selector-header-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding color of the time-selector header.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-header-title-text</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-header-title-text, k-color(primary-on-surface) )</code></td>
-    <td><code>var(--kendo-time-selector-header-title-text, var(--kendo-color-primary-on-surface, #0f6cbd))</code></td>
+    <td><code>var(--kendo-time-selector-header-title-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the title in the time-selector header.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-title-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-time-list-title-spacing, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-time-list-title-spacing, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-time-list-title-spacing, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing beneath the time selector titles.</div></div>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-list-title-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-time-list-title-font-size, var( --kendo-font-size-xs, inherit ) )</code></td>
-    <td><code>var(--kendo-time-list-title-font-size, var(--kendo-font-size-xs, inherit))</code></td>
+    <td><code>var( --kendo-time-list-title-font-size, var(--kendo-font-size-xs) )</code></td>
+    <td><code>var(--kendo-time-list-title-font-size, var(--kendo-font-size-xs))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the time-selector titles.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-title-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-time-list-title-spacing} + #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} )</code></td>
-    <td><code>calc(var(--kendo-time-list-title-spacing, var(--kendo-spacing-1, 0.25rem)) + var(--kendo-time-list-title-font-size, var(--kendo-font-size-xs, inherit)) * var(--kendo-time-list-title-line-height, 1))</code></td>
+    <td><code>calc(var(--kendo-time-list-title-spacing, var(--kendo-spacing-1)) + var(--kendo-time-list-title-font-size, var(--kendo-font-size-xs)) * var(--kendo-time-list-title-line-height, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the time-selector titles.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-title-text</td>
     <td>String</td>
     <td><code>var( --kendo-time-list-title-text, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-time-list-title-text, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-time-list-title-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the time-selector titles.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-title-focus-text</td>
     <td>String</td>
     <td><code>var( --kendo-time-list-title-focus-text, $kendo-time-selector-text )</code></td>
-    <td><code>var(--kendo-time-list-title-focus-text, var(--kendo-time-selector-text, var(--kendo-color-on-app-surface, #242424)))</code></td>
+    <td><code>var(--kendo-time-list-title-focus-text, var(--kendo-time-selector-text, var(--kendo-color-on-app-surface)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the focused time-selector titles.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-item-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-time-list-item-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-time-list-item-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-time-list-item-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the time-selector list items.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-item-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-time-list-item-padding-y, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-time-list-item-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-time-list-item-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the time-selector list items.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-focus-bg</td>
     <td>String</td>
     <td><code>var( --kendo-time-list-focus-bg, color-mix(in srgb, k-color(on-app-surface) 5%, transparent ) )</code></td>
-    <td><code>var(--kendo-time-list-focus-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 5%, transparent))</code></td>
+    <td><code>var(--kendo-time-list-focus-bg, color-mix(in srgb, var(--kendo-color-on-app-surface) 5%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the focused time-selector column.</div></div>
@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-font-size, var( --kendo-font-size, inherit ) )</code></td>
-    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-font-size, inherit))</code></td>
+    <td><code>var( --kendo-time-selector-sm-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the time-selector.</div></div>
@@ -300,8 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-md-font-size, var(--kendo-font-size, inherit) )</code></td>
-    <td><code>var(--kendo-time-selector-md-font-size, var(--kendo-font-size, inherit))</code></td>
+    <td><code>var( --kendo-time-selector-md-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>var(--kendo-time-selector-md-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the TimeSelector.</div></div>
@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-lg-font-size, var(--kendo-font-size, inherit) )</code></td>
-    <td><code>var(--kendo-time-selector-lg-font-size, var(--kendo-font-size, inherit))</code></td>
+    <td><code>var( --kendo-time-selector-lg-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>var(--kendo-time-selector-lg-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the TimeSelector.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-line-height, var(--kendo-line-height, normal) )</code></td>
-    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-line-height, normal))</code></td>
+    <td><code>var( --kendo-time-selector-sm-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
@@ -330,8 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-md-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-md-line-height, var(--kendo-line-height, normal) )</code></td>
-    <td><code>var(--kendo-time-selector-md-line-height, var(--kendo-line-height, normal))</code></td>
+    <td><code>var( --kendo-time-selector-md-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-time-selector-md-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the TimeSelector.</div></div>
@@ -340,8 +340,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-lg-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-lg-line-height, var(--kendo-line-height, normal) )</code></td>
-    <td><code>var(--kendo-time-selector-lg-line-height, var(--kendo-line-height, normal))</code></td>
+    <td><code>var( --kendo-time-selector-lg-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-time-selector-lg-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the TimeSelector.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-sm-list-item-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-sm-list-item-padding-x, #{k-spacing(3)} )</code></td>
-    <td><code>var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Horizontal padding of the time-selector items.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-md-list-item-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-md-list-item-padding-x, #{k-spacing(3)} )</code></td>
-    <td><code>var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TimeSelector item.</div></div>
@@ -371,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-lg-list-item-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-lg-list-item-padding-x, #{k-spacing(3)} )</code></td>
-    <td><code>var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TimeSelector item.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-sm-list-item-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-sm-list-item-padding-y, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Vertical padding of the time-selector items.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-md-list-item-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-md-list-item-padding-y, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TimeSelector item.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-selector-lg-list-item-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-time-selector-lg-list-item-padding-y, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TimeSelector item.</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-highlight-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-time-selector-md-font-size} * #{$kendo-time-selector-md-line-height} + #{$kendo-time-list-item-padding-y} * 2 )</code></td>
-    <td><code>calc(var(--kendo-time-selector-md-font-size, var(--kendo-font-size, inherit)) * var(--kendo-time-selector-md-line-height, var(--kendo-line-height, normal)) + var(--kendo-time-list-item-padding-y, var(--kendo-spacing-1, 0.25rem)) * 2)</code></td>
+    <td><code>calc(var(--kendo-time-selector-md-font-size, var(--kendo-font-size)) * var(--kendo-time-selector-md-line-height, var(--kendo-line-height)) + var(--kendo-time-list-item-padding-y, var(--kendo-spacing-1)) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the selected item in the time-selector.</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-highlight-bg</td>
     <td>String</td>
     <td><code>var( --kendo-time-list-highlight-bg, color-mix(in srgb, k-color(on-app-surface) 12%, transparent ) )</code></td>
-    <td><code>var(--kendo-time-list-highlight-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 12%, transparent))</code></td>
+    <td><code>var(--kendo-time-list-highlight-bg, color-mix(in srgb, var(--kendo-color-on-app-surface) 12%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selected item in the time-selector.</div></div>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
         list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-3, 0.75rem))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1, 0.25rem))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-3, 0.75rem))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-1, 0.25rem))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-font-size, inherit))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-line-height, normal))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-3, 0.75rem))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2, 0.5rem))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-1))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TimeSelector.</div></div>

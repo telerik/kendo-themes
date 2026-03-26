@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-titlebar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-dialog-titlebar-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-dialog-titlebar-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-dialog-titlebar-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog titlebar.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-titlebar-text</td>
     <td>String</td>
     <td><code>var( --kendo-dialog-titlebar-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-dialog-titlebar-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-dialog-titlebar-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Dialog titlebar.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-buttongroup-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-dialog-buttongroup-padding-x, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-dialog-buttongroup-padding-x, var(--kendo-spacing-6, 1.5rem))</code></td>
+    <td><code>var(--kendo-dialog-buttongroup-padding-x, var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Dialog action buttons.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-buttongroup-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-dialog-buttongroup-padding-y, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-dialog-buttongroup-padding-y, var(--kendo-spacing-6, 1.5rem))</code></td>
+    <td><code>var(--kendo-dialog-buttongroup-padding-y, var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Dialog action buttons.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-button-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-dialog-button-spacing, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-dialog-button-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-dialog-button-spacing, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Dialog action buttons.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-bg</td>
     <td>String</td>
     <td><code>var( --kendo-dialog-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-dialog-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-dialog-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>

@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Signature.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-md-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)!default</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Signature.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-lg-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Signature.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-sm-padding-y</td>
     <td>String</td>
     <td><code>$kendo-signature-sm-padding-x</code></td>
-    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Signature.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-md-padding-y</td>
     <td>String</td>
     <td><code>$kendo-signature-md-padding-x</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Signature.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-lg-padding-y</td>
     <td>String</td>
     <td><code>$kendo-signature-lg-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Signature.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-line-color</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(info) 24%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-info, #007bc3) 24%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-info) 24%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Signature line.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-sm-line-size</td>
     <td>Calculation</td>
     <td><code>calc( 100% - 2 * #{$kendo-signature-sm-padding-x} )</code></td>
-    <td><code>calc(100% - 2 * var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>calc(100% - 2 * var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the small Signature line.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-md-line-size</td>
     <td>Calculation</td>
     <td><code>calc( 100% - 2 * #{$kendo-signature-md-padding-x} )</code></td>
-    <td><code>calc(100% - 2 * var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>calc(100% - 2 * var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the medium Signature line.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-lg-line-size</td>
     <td>Calculation</td>
     <td><code>calc( 100% - 2 * #{$kendo-signature-lg-padding-x} )</code></td>
-    <td><code>calc(100% - 2 * var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>calc(100% - 2 * var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the large Signature line.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-signature-actions-gap</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the Signature actions.</div></div>
@@ -247,7 +247,7 @@ The following table lists the available variables for customization.
         line-size: $kendo-signature-lg-line-size
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","line-size":"calc(100% - 2 * var(--kendo-spacing-0\\.5, 0.125rem))"</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","line-size":"calc(100% - 2 * var(--kendo-spacing-1, 0.25rem))"</li><li>lg: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","line-size":"calc(100% - 2 * var(--kendo-spacing-2, 0.5rem))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5)","padding-y":"var(--kendo-spacing-0\\.5)","line-size":"calc(100% - 2 * var(--kendo-spacing-0\\.5))"</li><li>md: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1)","line-size":"calc(100% - 2 * var(--kendo-spacing-1))"</li><li>lg: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","line-size":"calc(100% - 2 * var(--kendo-spacing-2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Signature.</div></div>
