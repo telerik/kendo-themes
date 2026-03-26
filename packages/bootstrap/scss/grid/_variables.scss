@@ -282,7 +282,7 @@ $kendo-grid-selection-aggregates-spacing: k-spacing(2) !default;
 $kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
 /// The font weight of the Grid selection aggregates container.
 /// @group grid
-$kendo-grid-selection-aggregates-font-weight: var(--kendo-font-weight-bold)!default;
+$kendo-grid-selection-aggregates-font-weight: var(--kendo-font-weight-bold) !default;
 
 /// The background color of the Grid row.
 /// @group grid
@@ -427,7 +427,7 @@ $kendo-grid-column-menu-group-header-border: $kendo-popup-border !default;
 
 /// The horizontal padding of the Grid content.
 /// @group grid
-$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: k-spacing(0)!default;
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: k-spacing(0) !default;
 /// The vertical padding of the Grid content.
 /// @group grid
 $kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: k-spacing(2) !default;
