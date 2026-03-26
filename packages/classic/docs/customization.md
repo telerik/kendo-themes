@@ -24323,7 +24323,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-panelbar-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)!default</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -29481,7 +29481,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-signature-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)!default</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -33794,7 +33794,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-tabstrip-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)!default</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -34413,7 +34413,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-taskboard-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)!default</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>

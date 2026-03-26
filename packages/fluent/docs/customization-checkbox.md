@@ -662,7 +662,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-list-item-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-checkbox-list-item-padding-y, k-spacing(2) )!default</code></td>
+    <td><code>var( --kendo-checkbox-list-item-padding-y, k-spacing(2) )</code></td>
     <td><code>var(--kendo-checkbox-list-item-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>

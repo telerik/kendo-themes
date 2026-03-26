@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-semibold)!default</code></td>
+    <td><code>var(--kendo-font-weight-semibold)</code></td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-semibold)!default</code></td>
+    <td><code>var(--kendo-font-weight-semibold)</code></td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-semibold)!default</code></td>
+    <td><code>var(--kendo-font-weight-semibold)</code></td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
 </tr>
 <tr>

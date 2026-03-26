@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)!default</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>

@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-root-link-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-breadcrumb-root-link-hover-bg, $kendo-breadcrumb-link-hover-bg )!default</code></td>
+    <td><code>var( --kendo-breadcrumb-root-link-hover-bg, $kendo-breadcrumb-link-hover-bg )</code></td>
     <td><code>var(--kendo-breadcrumb-root-link-hover-bg, var(--kendo-breadcrumb-link-hover-bg, color-mix(in srgb, var(--kendo-color-on-app-surface) 5%, transparent)))</code></td>
 </tr>
 <tr>

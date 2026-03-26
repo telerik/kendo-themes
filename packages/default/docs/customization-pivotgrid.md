@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pivotgrid-headers-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)!default</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>

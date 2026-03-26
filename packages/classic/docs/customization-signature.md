@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-signature-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)!default</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>

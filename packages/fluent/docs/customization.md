@@ -2710,7 +2710,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-root-link-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-breadcrumb-root-link-hover-bg, $kendo-breadcrumb-link-hover-bg )!default</code></td>
+    <td><code>var( --kendo-breadcrumb-root-link-hover-bg, $kendo-breadcrumb-link-hover-bg )</code></td>
     <td><code>var(--kendo-breadcrumb-root-link-hover-bg, var(--kendo-breadcrumb-link-hover-bg, color-mix(in srgb, var(--kendo-color-on-app-surface) 5%, transparent)))</code></td>
 </tr>
 <tr>
@@ -8181,7 +8181,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-list-item-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-checkbox-list-item-padding-y, k-spacing(2) )!default</code></td>
+    <td><code>var( --kendo-checkbox-list-item-padding-y, k-spacing(2) )</code></td>
     <td><code>var(--kendo-checkbox-list-item-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -12414,7 +12414,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-text</td>
     <td>String</td>
-    <td><code>var( --kendo-drawer-text, k-color(on-app-surface) )!default</code></td>
+    <td><code>var( --kendo-drawer-text, k-color(on-app-surface) )</code></td>
     <td><code>var(--kendo-drawer-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
@@ -38987,7 +38987,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-h4-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-semibold)!default</code></td>
+    <td><code>var(--kendo-font-weight-semibold)</code></td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
 </tr>
 <tr>
@@ -38997,7 +38997,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-h5-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-semibold)!default</code></td>
+    <td><code>var(--kendo-font-weight-semibold)</code></td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
 </tr>
 <tr>
@@ -39007,7 +39007,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-h6-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-semibold)!default</code></td>
+    <td><code>var(--kendo-font-weight-semibold)</code></td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
 </tr>
 <tr>
