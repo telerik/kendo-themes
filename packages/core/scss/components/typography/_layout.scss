@@ -22,11 +22,11 @@
     .k-body,
     .k-typography {
         @include typography(
-            var( --kendo-font-size, inherit ),
-            var( --kendo-font-family, inherit ),
-            var( --kendo-line-height, normal ),
-            var( --kendo-font-weight-normal, normal ),
-            var( --kendo-letter-spacing, normal )
+            var(--kendo-font-size),
+            var(--kendo-font-family),
+            var(--kendo-line-height),
+            var(--kendo-font-weight-normal),
+            var(--kendo-letter-spacing)
         );
         margin: 0;
 

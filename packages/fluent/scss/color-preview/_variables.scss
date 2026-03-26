@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/functions/index.scss" as *;
 
@@ -23,9 +24,11 @@ $kendo-color-preview-hover-border: var(--kendo-color-preview-hover-border, color
 /// Background color of the color preview when no color is selected.
 /// @group color-preview
 $kendo-color-preview-no-color-bg: var(--kendo-color-preview-no-color-bg, k-color(app-surface)) !default;
+
+// Do not use css variable for the $kendo-color-preview-no-color-text, as it is used in the SVG data URI for the no-color image, which does not support CSS variables.
 /// Text color of the color preview when no color is selected.
 /// @group color-preview
-$kendo-color-preview-no-color-text: var(--kendo-color-preview-no-color-text, k-color(error-on-surface)) !default;
+$kendo-color-preview-no-color-text: map.get($kendo-colors, error)  !default;
 /// Border color of the color preview when no color is selected.
 /// @group color-preview
 $kendo-color-preview-no-color-border: var(--kendo-color-preview-no-color-border, currentColor) !default;

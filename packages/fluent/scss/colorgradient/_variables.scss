@@ -25,13 +25,13 @@ $kendo-color-gradient-border-radius: var(--kendo-color-gradient-border-radius, k
 $kendo-color-gradient-gap: null !default;
 /// The font family of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-font-family: var(--kendo-color-gradient-font-family, var( --kendo-font-family, inherit )) !default;
+$kendo-color-gradient-font-family: var(--kendo-color-gradient-font-family, var(--kendo-font-family)) !default;
 /// The font size of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-font-size: var(--kendo-color-gradient-font-size, var( --kendo-font-size, inherit )) !default;
+$kendo-color-gradient-font-size: var(--kendo-color-gradient-font-size, var(--kendo-font-size)) !default;
 /// The line height of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-line-height: var(--kendo-color-gradient-line-height, var( --kendo-line-height, normal )) !default;
+$kendo-color-gradient-line-height: var(--kendo-color-gradient-line-height, var(--kendo-line-height)) !default;
 
 /// The text color of the ColorGradient.
 /// @group color-gradient
@@ -201,7 +201,7 @@ $kendo-color-gradient-input-width: var(--kendo-color-gradient-input-width, 48px)
 $kendo-color-gradient-input-gap: var(--kendo-color-gradient-input-gap, calc( #{$kendo-color-gradient-spacer} / 4 )) !default;
 /// The font size of the ColorGradient input labels.
 /// @group color-gradient
-$kendo-color-gradient-input-label-font-size: var(--kendo-color-gradient-input-label-font-size, var( --kendo-font-size-sm, inherit )) !default;
+$kendo-color-gradient-input-label-font-size: var(--kendo-color-gradient-input-label-font-size, var(--kendo-font-size-sm)) !default;
 /// The spacing between the ColorGradient inputs and their labels.
 /// @group color-gradient
 $kendo-color-gradient-input-label-gap: var(--kendo-color-gradient-input-label-gap, calc( #{$kendo-color-gradient-spacer} / 4 )) !default;
@@ -221,7 +221,7 @@ $kendo-color-gradient-lg-input-width: var(--kendo-color-gradient-lg-input-width,
 
 /// The font weight of the ColorGradient contrast ratio text.
 /// @group color-gradient
-$kendo-color-gradient-contrast-ratio-font-weight: var(--kendo-color-gradient-contrast-ratio-font-weight, var( --kendo-font-weight-bold, normal )) !default;
+$kendo-color-gradient-contrast-ratio-font-weight: var(--kendo-color-gradient-contrast-ratio-font-weight, var(--kendo-font-weight-bold)) !default;
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group color-gradient
 $kendo-color-gradient-contrast-spacer: calc( #{$kendo-color-gradient-spacer} / 1.5 ) !default;

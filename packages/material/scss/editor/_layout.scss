@@ -7,10 +7,10 @@
 
     // Insert table
     .k-ct-popup {
-        line-height: var( --kendo-line-height, normal);
+        line-height: var(--kendo-line-height);
 
         .k-status {
-            line-height: var( --kendo-line-height, normal);
+            line-height: var(--kendo-line-height);
         }
     }
 }

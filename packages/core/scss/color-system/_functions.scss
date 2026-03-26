@@ -307,12 +307,6 @@
 ///
 /// @group color-system
 @function k-color($key) {
-    $_color: map.get($kendo-colors, $key);
-
-    @if ($_color) {
-        @return var(--kendo-color-#{$key}, $_color);
-    } @else {
-        @error "Color Variable \`#{$key}\` does not exists in the color collection.";
-    }
+    @return var(--kendo-color-#{$key});
 }
 

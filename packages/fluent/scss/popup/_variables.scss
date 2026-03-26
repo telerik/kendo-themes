@@ -16,10 +16,10 @@ $kendo-popup-border-radius: var( --kendo-popup-border-radius, #{k-border-radius(
 
 /// Font size of the popup.
 /// @group popup
-$kendo-popup-font-size: var( --kendo-popup-font-size, var( --kendo-font-size, inherit) ) !default;
+$kendo-popup-font-size: var( --kendo-popup-font-size, var(--kendo-font-size) ) !default;
 /// Line height of the popup.
 /// @group popup
-$kendo-popup-line-height: var( --kendo-popup-line-height, var( --kendo-line-height, normal) ) !default;
+$kendo-popup-line-height: var( --kendo-popup-line-height, var(--kendo-line-height) ) !default;
 
 /// Horizontal padding of the content inside the popup.
 /// @group popup

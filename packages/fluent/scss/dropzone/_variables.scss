@@ -16,13 +16,13 @@ $kendo-dropzone-min-height: var( --kendo-dropzone-min-height, 220px ) !default;
 
 /// The font family of the DropZone.
 /// @group dropzone
-$kendo-dropzone-font-family: var( --kendo-dropzone-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-dropzone-font-family: var( --kendo-dropzone-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the DropZone.
 /// @group dropzone
-$kendo-dropzone-font-size: var( --kendo-dropzone-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-dropzone-font-size: var( --kendo-dropzone-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the DropZone.
 /// @group dropzone
-$kendo-dropzone-line-height: var( --kendo-dropzone-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-dropzone-line-height: var( --kendo-dropzone-line-height, var(--kendo-line-height) ) !default;
 
 /// The background color of the DropZone.
 /// @group dropzone
@@ -46,10 +46,10 @@ $kendo-dropzone-icon-hover-text: var( --kendo-dropzone-icon-hover-text, #{k-colo
 
 /// The font size of the DropZone hint.
 /// @group dropzone
-$kendo-dropzone-hint-font-size: var( --kendo-dropzone-hint-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-dropzone-hint-font-size: var( --kendo-dropzone-hint-font-size, var(--kendo-font-size) ) !default;
 /// The font weight of the DropZone hint.
 /// @group dropzone
-$kendo-dropzone-hint-font-weight: var( --kendo-dropzone-hint-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
+$kendo-dropzone-hint-font-weight: var( --kendo-dropzone-hint-font-weight, var(--kendo-font-weight-semibold) ) !default;
 /// The spacing below the DropZone hint.
 /// @group dropzone
 $kendo-dropzone-hint-spacing: var( --kendo-dropzone-hint-spacing, #{k-spacing(2)} ) !default;
@@ -59,7 +59,7 @@ $kendo-dropzone-hint-text: var( --kendo-dropzone-hint-text, #{$kendo-dropzone-te
 
 /// The font size of the DropZone note.
 /// @group dropzone
-$kendo-dropzone-note-font-size: var( --kendo-dropzone-note-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-dropzone-note-font-size: var( --kendo-dropzone-note-font-size, var(--kendo-font-size-sm) ) !default;
 /// The font weight of the DropZone note.
 /// @group dropzone
 $kendo-dropzone-note-font-weight: var( --kendo-dropzone-note-font-weight, inherit ) !default;

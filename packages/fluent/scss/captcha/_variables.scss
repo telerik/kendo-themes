@@ -11,13 +11,13 @@ $kendo-captcha-spacer: var( --kendo-captcha-spacer, k-spacing(2) ) !default;
 $kendo-captcha-width: var( --kendo-captcha-width, 280px ) !default;
 /// The font family of the Captcha.
 /// @group captcha
-$kendo-captcha-font-family: var( --kendo-captcha-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-captcha-font-family: var( --kendo-captcha-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Captcha.
 /// @group captcha
-$kendo-captcha-font-size: var( --kendo-captcha-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-captcha-font-size: var( --kendo-captcha-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the Captcha.
 /// @group captcha
-$kendo-captcha-line-height: var( --kendo-captcha-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-captcha-line-height: var( --kendo-captcha-line-height, var(--kendo-line-height) ) !default;
 /// The spacing of the Captcha.
 /// @group captcha
 $kendo-captcha-spacing: $kendo-captcha-spacer !default;
@@ -43,7 +43,7 @@ $kendo-captcha-image-controls-spacing: calc( #{$kendo-captcha-spacer} / 2 ) !def
 $kendo-captcha-validation-offset-y: calc( #{$kendo-captcha-spacer} / 2 ) !default;
 /// The font size of the Captcha validation message.
 /// @group captcha
-$kendo-captcha-validation-font-size: var( --kendo-captcha-validation-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-captcha-validation-font-size: var( --kendo-captcha-validation-font-size, var(--kendo-font-size-sm) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/captcha/_variables.scss" with (
     $kendo-captcha-spacer: $kendo-captcha-spacer,

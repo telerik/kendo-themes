@@ -16,17 +16,17 @@ $kendo-tooltip-padding-y: var( --kendo-tooltip-padding-y, #{k-spacing(1.5)} ) !d
 $kendo-tooltip-border-width: var( --kendo-tooltip-border-width, 0px ) !default;
 /// The font family of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-font-family: var( --kendo-tooltip-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-tooltip-font-family: var( --kendo-tooltip-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-font-size: var( --kendo-tooltip-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-tooltip-font-size: var( --kendo-tooltip-font-size, var(--kendo-font-size-sm) ) !default;
 /// The line height of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-line-height: var( --kendo-tooltip-line-height, var( --kendo-line-height-lg, normal ) ) !default;
+$kendo-tooltip-line-height: var( --kendo-tooltip-line-height, var(--kendo-line-height-lg) ) !default;
 
 /// The font size of the Tooltip title.
 /// @group tooltip
-$kendo-tooltip-title-font-size: var( --kendo-tooltip-title-font-size, calc( var( --kendo-font-size-sm, .75rem ) * 1.25 ) ) !default;
+$kendo-tooltip-title-font-size: var( --kendo-tooltip-title-font-size, calc( var(--kendo-font-size-sm) * 1.25 ) ) !default;
 /// The line height of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-line-height: var( --kendo-tooltip-title-line-height, var( --kendo-line-heigh-lg, normal ) ) !default;

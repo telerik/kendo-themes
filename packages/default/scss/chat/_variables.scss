@@ -20,13 +20,13 @@ $kendo-chat-height: 320px !default;
 $kendo-chat-border-width: 1px !default;
 /// The font family of the Chat.
 /// @group chat
-$kendo-chat-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-chat-font-family: var(--kendo-font-family) !default;
 /// The font size of the Chat.
 /// @group chat
-$kendo-chat-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chat-font-size: var(--kendo-font-size) !default;
 /// The line height of the Chat.
 /// @group chat
-$kendo-chat-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-chat-line-height: var(--kendo-line-height) !default;
 
 /// The vertical spacing between the items of the Chat.
 /// @group chat
@@ -68,10 +68,10 @@ $kendo-chat-message-status-gap: k-spacing(1) !default;
 
 /// The font size of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chat-timestamp-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-chat-timestamp-line-height: var(--kendo-line-height-lg) !default;
 /// The text transform of the Chat timestamp.
 /// @group chat
 $kendo-chat-timestamp-transform: none !default;
@@ -90,17 +90,17 @@ $kendo-chat-timestamp-separator-spacing: k-spacing(1) !default;
 
 /// The font size of the Chat message meta text.
 /// @group chat
-$kendo-chat-message-meta-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chat-message-meta-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the Chat message meta text.
 /// @group chat
-$kendo-chat-message-meta-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-chat-message-meta-line-height: var(--kendo-line-height-xs) !default;
 
 /// The font size of the Chat author text.
 /// @group chat
-$kendo-chat-author-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chat-author-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the Chat author text.
 /// @group chat
-$kendo-chat-author-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-chat-author-line-height: var(--kendo-line-height-xs) !default;
 
 /// The text color of the Chat status.
 /// @group chat

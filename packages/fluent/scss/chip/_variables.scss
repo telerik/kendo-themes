@@ -29,7 +29,7 @@ $kendo-chip-spacing: var( --kendo-chip-spacing, k-spacing(1) ) !default;
 
 /// The font family of the Chip.
 /// @group chip
-$kendo-chip-font-family: var( --kendo-chip-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-chip-font-family: var( --kendo-chip-font-family, var(--kendo-font-family) ) !default;
 
 /// The width of the Chip' avatar.
 /// @group chip
@@ -73,27 +73,27 @@ $kendo-chip-lg-padding-y: calc( #{k-spacing(2.5)} / 2 ) !default;
 
 /// The font weight of the Chip.
 /// @group chip
-$kendo-chip-font-weight: var(--kendo-chip-font-weight, var( --kendo-font-weight-normal, normal ) ) !default;
+$kendo-chip-font-weight: var(--kendo-chip-font-weight, var(--kendo-font-weight-normal) ) !default;
 
 /// The font size of the small Chip.
 /// @group chip
-$kendo-chip-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chip-sm-font-size: var(--kendo-font-size-sm) !default;
 /// The font size of the medium Chip.
 /// @group chip
-$kendo-chip-md-font-size: var( --kendo-chip-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-chip-md-font-size: var( --kendo-chip-font-size, var(--kendo-font-size-sm) ) !default;
 /// The font size of the large Chip.
 /// @group chip
-$kendo-chip-lg-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-lg-font-size: var(--kendo-font-size) !default;
 
 /// The small Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-sm-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-chip-sm-line-height: var(--kendo-line-height-lg) !default;
 /// The medium Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-md-line-height: var( --kendo-chip-line-height, var( --kendo-line-height-lg, normal ) ) !default;
+$kendo-chip-md-line-height: var( --kendo-chip-line-height, var(--kendo-line-height-lg) ) !default;
 /// The large Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-lg-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-chip-lg-line-height: var(--kendo-line-height) !default;
 
 $kendo-chip-calc-size: calc( #{$kendo-chip-md-line-height} * 1em + #{$kendo-chip-md-padding-y} * 2 + #{$kendo-chip-border-width} * 2 ) !default;
 $kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height} * 1em + #{$kendo-chip-sm-padding-y} * 2 + #{$kendo-chip-border-width} * 2 ) !default;

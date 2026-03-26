@@ -17,13 +17,13 @@ $kendo-progressbar-animation-timing: unset !default;
 $kendo-progressbar-border-width: 0px !default;
 /// The font family of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-progressbar-font-family: var(--kendo-font-family) !default;
 /// The font size of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-progressbar-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-progressbar-line-height: var(--kendo-line-height-xs) !default;
 
 /// The background color of the ProgressBar.
 /// @group progressbar

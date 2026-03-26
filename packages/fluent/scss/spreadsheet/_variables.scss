@@ -10,13 +10,13 @@
 $kendo-spreadsheet-border-width: var( --kendo-spreadsheet-border-width, 1px ) !default;
 /// The font family of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-font-family: var( --kendo-spreadsheet-font-family, var( --kendo-font-family, initial ) ) !default;
+$kendo-spreadsheet-font-family: var( --kendo-spreadsheet-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-font-size: var( --kendo-spreadsheet-font-size, var( --kendo-font-size, initial ) ) !default;
+$kendo-spreadsheet-font-size: var( --kendo-spreadsheet-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the Spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-line-height: var( --kendo-spreadsheet-line-height, var( --kendo-line-height, initial ) ) !default;
+$kendo-spreadsheet-line-height: var( --kendo-spreadsheet-line-height, var(--kendo-line-height) ) !default;
 /// The background color of the Spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-bg: var( --kendo-spreadsheet-bg, k-color(app-surface) ) !default;

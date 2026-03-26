@@ -24,10 +24,10 @@
     .k-grid-header {
 
         .k-table-th {
-            font-weight: var( --kendo-font-weight-semibold, 600 );
+            font-weight: var(--kendo-font-weight-semibold);
 
             .k-grid-filter {
-                font-weight: var( --kendo-font-weight-normal, 400 );
+                font-weight: var(--kendo-font-weight-normal);
             }
         }
 

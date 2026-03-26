@@ -8,7 +8,7 @@
     @include kendo-chat--layout-base();
 
     .k-chat .k-chat-file-name {
-        font-weight: var( --kendo-font-weight-semibold, inherit);;
+        font-weight: var(--kendo-font-weight-semibold);;
     }
 
     // Message group

@@ -6,13 +6,13 @@
 $kendo-splitter-border-width: var( --kendo-splitter-border-width, 1px ) !default;
 /// The font size of the Splitter.
 /// @group splitter
-$kendo-splitter-font-size: var( --kendo-splitter-font-size, var( --kendo-font-size, initial ) ) !default;
+$kendo-splitter-font-size: var( --kendo-splitter-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the Splitter.
 /// @group splitter
-$kendo-splitter-line-height: var( --kendo-splitter-line-height, var( --kendo-line-height, initial ) ) !default;
+$kendo-splitter-line-height: var( --kendo-splitter-line-height, var(--kendo-line-height) ) !default;
 /// The font family of the Splitter.
 /// @group splitter
-$kendo-splitter-font-family: var( --kendo-splitter-font-family, var( --kendo-font-family, initial ) ) !default;
+$kendo-splitter-font-family: var( --kendo-splitter-font-family, var(--kendo-font-family) ) !default;
 
 /// The background color of the Splitter.
 /// @group splitter

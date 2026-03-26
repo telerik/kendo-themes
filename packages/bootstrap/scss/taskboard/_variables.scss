@@ -15,13 +15,13 @@ $kendo-taskboard-padding-y: null !default;
 $kendo-taskboard-padding-x: null !default;
 /// The font family of the TaskBoard.
 /// @group taskboard
-$kendo-taskboard-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-taskboard-font-family: var(--kendo-font-family) !default;
 /// The font size of the TaskBoard.
 /// @group taskboard
-$kendo-taskboard-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-taskboard-font-size: var(--kendo-font-size) !default;
 /// The line height of the TaskBoard.
 /// @group taskboard
-$kendo-taskboard-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-taskboard-line-height: var(--kendo-line-height) !default;
 /// The background color of the TaskBoard.
 /// @group taskboard
 $kendo-taskboard-bg: null !default;

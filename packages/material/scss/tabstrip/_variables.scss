@@ -22,13 +22,13 @@ $kendo-tabstrip-wrapper-border-width: 0px !default;
 
 /// The font family of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-tabstrip-font-family: var(--kendo-font-family) !default;
 /// The font size of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-tabstrip-font-size: var(--kendo-font-size) !default;
 /// The line height of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-line-height: var( --kendo-line-height, inherit ) !default;
+$kendo-tabstrip-line-height: var(--kendo-line-height) !default;
 /// The border width around the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-border-width: 1px !default;

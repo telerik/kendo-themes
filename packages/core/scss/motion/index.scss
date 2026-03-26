@@ -176,12 +176,12 @@ $kendo-transitions: map.merge($default-transitions, $kendo-transitions);
 
 @function k-easing($key) {
     $easing: map.get($kendo-easings, $key);
-    @return var(--kendo-easing-#{$key}, $easing);
+    @return var(--kendo-easing-#{$key});
 }
 
 @function k-duration($key) {
     $_duration: map.get($kendo-durations, $key);
-    @return var(--kendo-duration-#{$key}, $_duration);
+    @return var(--kendo-duration-#{$key});
 }
 
 @function k-transition($key) {

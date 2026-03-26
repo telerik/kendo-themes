@@ -11,7 +11,7 @@
         border-width: $kendo-chip-border-width;
         border-style: solid;
         outline: 0;
-        font-family: var( --kendo-font-family, inherit );
+        font-family: var(--kendo-font-family);
         font-weight: $kendo-chip-font-weight;
         display: inline-flex;
         flex-flow: row nowrap;

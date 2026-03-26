@@ -6,13 +6,13 @@
 $kendo-upload-border-width: var( --kendo-upload-border-width, 1px ) !default;
 /// The font family of the Upload.
 /// @group upload
-$kendo-upload-font-family: var( --kendo-upload-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-upload-font-family: var( --kendo-upload-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Upload.
 /// @group upload
-$kendo-upload-font-size: var( --kendo-upload-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-upload-font-size: var( --kendo-upload-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the Upload.
 /// @group upload
-$kendo-upload-line-height: var( --kendo-upload-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-upload-line-height: var( --kendo-upload-line-height, var(--kendo-line-height) ) !default;
 /// The maximum height of the list with uploaded items.
 /// @group upload
 $kendo-upload-max-height: var( --kendo-upload-max-height, 300px ) !default;
@@ -66,7 +66,7 @@ $kendo-upload-multiple-items-spacing: var( --kendo-upload-multiple-items-spacing
 
 /// The font size of the Upload validation message.
 /// @group upload
-$kendo-upload-validation-font-size: var( --kendo-upload-validation-font-size, var( --kendo-font-size-xs, inherit ) ) !default;
+$kendo-upload-validation-font-size: var( --kendo-upload-validation-font-size, var(--kendo-font-size-xs) ) !default;
 /// The horizontal spacing of the Upload status icon.
 /// @group upload
 $kendo-upload-icon-spacing: var( --kendo-upload-icon-spacing, var( --kendo-icon-spacing, .5rem ) ) !default;

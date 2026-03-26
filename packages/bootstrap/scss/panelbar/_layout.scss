@@ -5,6 +5,6 @@
     @include kendo-panelbar--layout-base();
 
     .k-panelbar > .k-panelbar-header > .k-link {
-        line-height: var(--kendo-line-height-sm, normal);
+        line-height: var(--kendo-line-height-sm);
     }
 }

@@ -6,13 +6,13 @@
 $kendo-stepper-border-width: var( --kendo-stepper-border-width, 0px ) !default;
 /// The font size of the Stepper.
 /// @group stepper
-$kendo-stepper-font-size: var( --kendo-stepper-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-stepper-font-size: var( --kendo-stepper-font-size, var(--kendo-font-size) ) !default;
 /// The font family of the Stepper.
 /// @group stepper
-$kendo-stepper-font-family: var( --kendo-stepper-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-stepper-font-family: var( --kendo-stepper-font-family, var(--kendo-font-family) ) !default;
 /// The line height of the Stepper.
 /// @group stepper
-$kendo-stepper-line-height: var( --kendo-stepper-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-stepper-line-height: var( --kendo-stepper-line-height, var(--kendo-line-height) ) !default;
 
 /// The background color of the Stepper.
 /// @group stepper
@@ -177,7 +177,7 @@ $kendo-stepper-label-hover-text: var( --kendo-stepper-label-hover-text, $kendo-s
 $kendo-stepper-label-disabled-text: var( --kendo-stepper-label-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) ) !default;
 /// The font weight of the disabled Stepper label.
 /// @group stepper
-$kendo-stepper-current-label-font-weight: var( --kendo-stepper-current-label-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
+$kendo-stepper-current-label-font-weight: var( --kendo-stepper-current-label-font-weight, var(--kendo-font-weight-semibold) ) !default;
 
 /// The text color of the optional Stepper label.
 /// @group stepper

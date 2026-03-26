@@ -26,16 +26,16 @@ $kendo-bottom-nav-gap: k-spacing(2) !default;
 $kendo-bottom-nav-border-width: 0 !default;
 /// The font family of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-bottom-nav-font-family: var(--kendo-font-family) !default;
 /// The font size of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-bottom-nav-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-bottom-nav-line-height: var(--kendo-line-height-sm) !default;
 /// The letter spacing of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-bottom-nav-letter-spacing: var(--kendo-letter-spacing) !default;
 
 /// The horizontal padding of the BottomNavigation item.
 /// @group bottom-navigation

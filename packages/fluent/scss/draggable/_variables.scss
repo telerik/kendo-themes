@@ -18,13 +18,13 @@ $kendo-drag-clue-padding-x: var( --kendo-drag-clue-padding-x, k-spacing(3) ) !de
 $kendo-drag-clue-padding-y: var( --kendo-drag-clue-padding-y, k-spacing(1.5) ) !default;
 /// Font family of the drag clue.
 /// @group draggable
-$kendo-drag-clue-font-family: var( --kendo-drag-clue-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-drag-clue-font-family: var( --kendo-drag-clue-font-family, var(--kendo-font-family) ) !default;
 /// Font size of the drag clue.
 /// @group draggable
-$kendo-drag-clue-font-size: var( --kendo-drag-clue-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-drag-clue-font-size: var( --kendo-drag-clue-font-size, var(--kendo-font-size) ) !default;
 /// Line height of the drag clue.
 /// @group draggable
-$kendo-drag-clue-line-height: var( --kendo-drag-clue-line-height, var( --kendo-line-height, inherit ) ) !default;
+$kendo-drag-clue-line-height: var( --kendo-drag-clue-line-height, var(--kendo-line-height) ) !default;
 /// Spacing of the drag clue.
 /// @group draggable
 $kendo-drag-clue-spacing: var( --kendo-drag-clue-spacing, .4ex ) !default;
