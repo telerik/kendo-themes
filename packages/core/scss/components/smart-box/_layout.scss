@@ -79,7 +79,7 @@
         padding-inline: k-spacing(2);
         padding-block: k-spacing(4);
         gap: $kendo-smart-box-popup-spacing;
-        font-size: var(--kendo-font-size-sm, inherit);
+        font-size: var(--kendo-font-size-sm);
         min-height: auto;
     }
 

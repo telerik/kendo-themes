@@ -16,13 +16,13 @@ $kendo-drawer-border: var( --kendo-drawer-border, color-mix(in srgb, k-color(bor
 $kendo-drawer-border-width: var( --kendo-drawer-border-width, 0 ) !default;
 /// The font family of the Drawer.
 /// @group drawer
-$kendo-drawer-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-drawer-font-family: var(--kendo-font-family) !default;
 /// The font size of the Drawer.
 /// @group drawer
-$kendo-drawer-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-drawer-font-size: var(--kendo-font-size) !default;
 /// The line height of the Drawer.
 /// @group drawer
-$kendo-drawer-line-height: var( --kendo-line-height, inherit ) !default;
+$kendo-drawer-line-height: var(--kendo-line-height) !default;
 
 /// The horizontal padding of the Drawer content.
 /// @group drawer
@@ -71,10 +71,10 @@ $kendo-drawer-item-spacing: var( --kendo-drawer-item-spacing, $kendo-drawer-item
 $kendo-drawer-item-font-size: var( --kendo-drawer-item-font-size, $kendo-drawer-font-size ) !default;
 /// The line height of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-line-height: var( --kendo-drawer-item-line-height, var( --kendo-line-height-lg, normal ) ) !default;
+$kendo-drawer-item-line-height: var( --kendo-drawer-item-line-height, var(--kendo-line-height-lg) ) !default;
 /// The font weight of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-font-weight: var( --kendo-drawer-item-font-weight, var( --kendo-font-weight, normal ) ) !default;
+$kendo-drawer-item-font-weight: var( --kendo-drawer-item-font-weight, var(--kendo-font-weight) ) !default;
 
 /// The horizontal padding of the Drawer item in each level.
 /// @group drawer
@@ -148,7 +148,7 @@ $kendo-drawer-item-focus-icon-text: var( --kendo-drawer-item-focus-icon-text, $k
 
 /// The font weight of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-font-weight: var( --kendo-drawer-item-selected-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
+$kendo-drawer-item-selected-font-weight: var( --kendo-drawer-item-selected-font-weight, var(--kendo-font-weight-semibold) ) !default;
 /// The background color of the selected Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-bg: var( --kendo-drawer-item-selected-bg, $kendo-drawer-item-bg ) !default;

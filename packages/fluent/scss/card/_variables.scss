@@ -24,13 +24,13 @@ $kendo-card-border-radius: var( --kendo-card-border-radius, k-border-radius(md) 
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
 /// The font family of the Card.
 /// @group card
-$kendo-card-font-family: var( --kendo-card-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-card-font-family: var( --kendo-card-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Card.
 /// @group card
-$kendo-card-font-size: var( --kendo-card-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-card-font-size: var( --kendo-card-font-size, var(--kendo-font-size-sm) ) !default;
 /// The line height of the Card.
 /// @group card
-$kendo-card-line-height: var( --kendo-card-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-card-line-height: var( --kendo-card-line-height, var(--kendo-line-height) ) !default;
 
 /// The spacing between the Cards in the Card deck.
 /// @group card
@@ -64,13 +64,13 @@ $kendo-card-focus-shadow: var( --kendo-elevation-3, none ) !default;
 
 /// The font size of the Card header.
 /// @group card
-$kendo-card-header-font-size: var( --kendo-card-header-font-size, var( --kendo-font-size-md, inherit ) ) !default;
+$kendo-card-header-font-size: var( --kendo-card-header-font-size, var(--kendo-font-size-md) ) !default;
 /// Тhe font family of the Card header.
 /// @group card
-$kendo-card-header-font-family: var( --kendo-card-header-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-card-header-font-family: var( --kendo-card-header-font-family, var(--kendo-font-family) ) !default;
 /// The line height of the Card header.
 /// @group card
-$kendo-card-header-line-height: var( --kendo-card-header-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-card-header-line-height: var( --kendo-card-header-line-height, var(--kendo-line-height) ) !default;
 /// The horizontal padding of the Card header.
 /// @group card
 $kendo-card-header-padding-x: var( --kendo-card-header-padding-x, k-spacing(3) ) !default;
@@ -118,28 +118,28 @@ $kendo-card-footer-border: var( --kendo-card-footer-border, inherit ) !default; 
 
 /// The font size of the Card title.
 /// @group card
-$kendo-card-title-font-size: var( --kendo-card-title-font-size, var( --kendo-font-size-md, inherit ) ) !default;
+$kendo-card-title-font-size: var( --kendo-card-title-font-size, var(--kendo-font-size-md) ) !default;
 /// The font family of the Card title.
 /// @group card
-$kendo-card-title-font-family: var( --kendo-card-title-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-card-title-font-family: var( --kendo-card-title-font-family, var(--kendo-font-family) ) !default;
 /// The font weight of the Card title.
 /// @group card
-$kendo-card-title-font-weight: var( --kendo-card-title-font-weight, var( --kendo-font-weight-semibold, 600 ) ) !default;
+$kendo-card-title-font-weight: var( --kendo-card-title-font-weight, var(--kendo-font-weight-semibold) ) !default;
 /// The line height of the Card title.
 /// @group card
-$kendo-card-title-line-height: var( --kendo-card-title-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-card-title-line-height: var( --kendo-card-title-line-height, var(--kendo-line-height) ) !default;
 /// The bottom margin of the Card title.
 /// @group card
 $kendo-card-title-margin-bottom: var( --kendo-card-title-margin-bottom, k-spacing(3) ) !default;
 /// The font size of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-size: var( --kendo-card-subtitle-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-card-subtitle-font-size: var( --kendo-card-subtitle-font-size, var(--kendo-font-size-sm) ) !default;
 /// The font family of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-family: var( --kendo-card-subtitle-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-card-subtitle-font-family: var( --kendo-card-subtitle-font-family, var(--kendo-font-family) ) !default;
 /// The line height of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-line-height: var( --kendo-card-subtitle-line-height, var( --kendo-line-height-lg, normal ) ) !default;
+$kendo-card-subtitle-line-height: var( --kendo-card-subtitle-line-height, var(--kendo-line-height-lg) ) !default;
 /// The bottom margin of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-margin-bottom: var( --kendo-card-subtitle-margin-bottom, k-spacing(3) ) !default;

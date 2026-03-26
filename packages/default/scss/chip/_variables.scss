@@ -51,33 +51,33 @@ $kendo-chip-lg-padding-y: k-spacing(1.5) !default;
 
 /// The font weight of the Chip.
 /// @group chip
-$kendo-chip-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+$kendo-chip-font-weight: var(--kendo-font-weight-normal) !default;
 
 /// The font size of the Chip.
 /// @group chip
 $kendo-chip-font-size: null !default;
 /// The font size of the small Chip.
 /// @group chip
-$kendo-chip-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-sm-font-size: var(--kendo-font-size) !default;
 /// The font size of the medium Chip.
 /// @group chip
-$kendo-chip-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-md-font-size: var(--kendo-font-size) !default;
 /// The font size of the large Chip.
 /// @group chip
-$kendo-chip-lg-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-lg-font-size: var(--kendo-font-size) !default;
 
 /// The Chip's line height that is related to the $kendo-font-size.
 /// @group chip
 $kendo-chip-line-height: null !default;
 /// The small Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-sm-line-height: var( --kendo-line-height-xs, normal )  !default;
+$kendo-chip-sm-line-height: var(--kendo-line-height-xs)  !default;
 /// The medium Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-md-line-height: var( --kendo-line-height-xs, normal )  !default;
+$kendo-chip-md-line-height: var(--kendo-line-height-xs)  !default;
 /// The large Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-lg-line-height: var( --kendo-line-height-xs, normal )  !default;
+$kendo-chip-lg-line-height: var(--kendo-line-height-xs)  !default;
 
 $kendo-chip-calc-size: calc( #{$kendo-chip-md-line-height} * 1em + calc( #{$kendo-chip-md-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;
 $kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height} * 1em + calc( #{$kendo-chip-sm-padding-y} * 2 ) + #{$kendo-chip-border-width} * 2 ) !default;

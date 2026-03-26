@@ -17,13 +17,13 @@ $kendo-timeline-items-padding: var( --kendo-timeline-items-padding, k-spacing(4)
 
 /// The font family of the Timeline.
 /// @group timeline
-$kendo-timeline-font-family: var( --kendo-timeline-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-timeline-font-family: var( --kendo-timeline-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Timeline.
 /// @group timeline
-$kendo-timeline-font-size: var( --kendo-timeline-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-timeline-font-size: var( --kendo-timeline-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the Timeline.
 /// @group timeline
-$kendo-timeline-line-height: var( --kendo-timeline-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-timeline-line-height: var( --kendo-timeline-line-height, var(--kendo-line-height) ) !default;
 
 /// The horizontal spacing of the mobile Timeline.
 /// @group timeline
@@ -92,7 +92,7 @@ $kendo-timeline-flag-padding-y: var( --kendo-timeline-flag-padding-y, k-spacing(
 $kendo-timeline-flag-border-radius: var( --kendo-timeline-flag-border-radius, k-border-radius(md) ) !default;
 /// The line height of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-line-height: var( --kendo-timeline-flag-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-timeline-flag-line-height: var( --kendo-timeline-flag-line-height, var(--kendo-line-height) ) !default;
 /// The box shadow of the Timeline flag.
 /// @group timeline
 $kendo-timeline-flag-box-shadow: var( --kendo-timeline-flag-box-shadow, var( --kendo-box-shadow-depth-2, none ) ) !default;

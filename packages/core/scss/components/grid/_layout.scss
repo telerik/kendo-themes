@@ -1443,7 +1443,7 @@
     }
 
     .k-filter-selected-items {
-        font-weight: var( --kendo-font-weight-bold, normal );
+        font-weight: var(--kendo-font-weight-bold);
         line-height: normal;
         white-space: nowrap;
     }
@@ -1491,7 +1491,7 @@
         box-sizing: border-box;
 
         .k-menu:not(.k-context-menu) {
-            font-weight: var( --kendo-font-weight, 400 );
+            font-weight: var(--kendo-font-weight);
         }
 
         .k-expander {
@@ -1612,7 +1612,7 @@
         border-block-end-style: solid;
         font-size: $kendo-grid-column-menu-group-header-font-size;
         line-height: $kendo-grid-column-menu-group-header-line-height;
-        font-weight: var( --kendo-font-weight-bold, normal );
+        font-weight: var(--kendo-font-weight-bold);
         text-transform: $kendo-grid-column-menu-group-header-text-transform;
         flex: 1 1 auto;
     }

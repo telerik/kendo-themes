@@ -53,7 +53,7 @@ $kendo-elevation: map.merge($default-elevation, $kendo-elevation);
 }
 
 @function k-elevation($level) {
-    @return var(--kendo-elevation-#{$level}, map.get($kendo-elevation, $level));
+    @return var(--kendo-elevation-#{$level});
 }
 
 

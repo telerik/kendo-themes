@@ -25,13 +25,13 @@ $kendo-fab-default-size: "md" !default;
 $kendo-fab-border-width: var( --kendo-fab-border-width, 1px ) !default;
 /// The font family of the FAB.
 /// @group floating-action-button
-$kendo-fab-font-family: var( --kendo-fab-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-fab-font-family: var( --kendo-fab-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the FAB.
 /// @group floating-action-button
-$kendo-fab-font-size: var( --kendo-fab-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-fab-font-size: var( --kendo-fab-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the FAB.
 /// @group floating-action-button
-$kendo-fab-line-height: var( --kendo-fab-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-fab-line-height: var( --kendo-fab-line-height, var(--kendo-line-height) ) !default;
 
 /// The horizontal padding of the small FAB.
 /// @group floating-action-button
@@ -97,10 +97,10 @@ $kendo-fab-item-text-border-style: var( --kendo-fab-item-text-border-style, soli
 $kendo-fab-item-text-border-radius: var( --kendo-fab-item-text-border-radius, #{k-border-radius(md)} ) !default;
 /// The font size of the FAB item text.
 /// @group floating-action-button
-$kendo-fab-item-text-font-size: var( --kendo-fab-item-text-font-size, var( --kendo-font-size-xs, inherit ) ) !default;
+$kendo-fab-item-text-font-size: var( --kendo-fab-item-text-font-size, var(--kendo-font-size-xs) ) !default;
 /// The line height of the FAB item text.
 /// @group floating-action-button
-$kendo-fab-item-text-line-height: var( --kendo-fab-item-text-line-height, var( --kendo-line-height-xs, inherit ) ) !default;
+$kendo-fab-item-text-line-height: var( --kendo-fab-item-text-line-height, var(--kendo-line-height-xs) ) !default;
 
 /// The outline color of the focused FAB item.
 /// @group floating-action-button

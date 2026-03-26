@@ -21,13 +21,13 @@ $kendo-grid-default-size: "md" !default;
 $kendo-grid-border-width: 1px !default;
 /// The font family of the Grid.
 /// @group grid
-$kendo-grid-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-grid-font-family: var(--kendo-font-family) !default;
 /// The font size of the Grid.
 /// @group grid
-$kendo-grid-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-grid-font-size: var(--kendo-font-size) !default;
 /// The height of the Grid.
 /// @group grid
-$kendo-grid-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-grid-line-height: var(--kendo-line-height) !default;
 
 /// The horizontal padding of the Grid.
 /// @group grid
@@ -277,7 +277,7 @@ $kendo-grid-selection-aggregates-spacing: k-spacing(2) !default;
 $kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
 /// The font weight of the Grid selection aggregates container.
 /// @group grid
-$kendo-grid-selection-aggregates-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-grid-selection-aggregates-font-weight: var(--kendo-font-weight-bold) !default;
 
 /// The background color of the Grid row.
 /// @group grid
@@ -297,7 +297,7 @@ $kendo-grid-sorted-bg: color-mix(in srgb, k-color(on-app-surface) 3%, transparen
 $kendo-grid-sorting-indicator-text: k-color(primary) !default;
 /// The font size of the Grid.
 /// @group grid
-$kendo-grid-sorting-index-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-grid-sorting-index-font-size: var(--kendo-font-size-sm) !default;
 /// The spacing of the Grid.
 /// @group grid
 $kendo-grid-sorting-index-spacing-y: calc( #{$kendo-icon-spacing} / 2 ) !default;
@@ -397,10 +397,10 @@ $kendo-grid-column-menu-group-header-padding-y: $kendo-menu-popup-md-item-paddin
 
 /// The font size of the Grid header.
 /// @group grid
-$kendo-grid-column-menu-group-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-grid-column-menu-group-header-font-size: var(--kendo-font-size-sm) !default;
 /// The height of the Grid header.
 /// @group grid
-$kendo-grid-column-menu-group-header-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-grid-column-menu-group-header-line-height: var(--kendo-line-height) !default;
 /// The text color of the Grid header.
 /// @group grid
 $kendo-grid-column-menu-group-header-text-transform: uppercase !default;
@@ -474,10 +474,10 @@ $kendo-grid-stack-hierarchy-col-width: k-spacing(2) !default;
 
 /// The font size of the Grid stack layout column header.
 /// @group grid
-$kendo-grid-stack-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-grid-stack-header-font-size: var(--kendo-font-size-sm) !default;
 /// The font weight of the Grid stack layout column header.
 /// @group grid
-$kendo-grid-stack-header-font-weight: var( --kendo-font-weight-bold, bold ) !default;
+$kendo-grid-stack-header-font-weight: var(--kendo-font-weight-bold) !default;
 /// The height of the Grid stack layout expandable row shadow.
 /// @group grid
 $kendo-grid-stack-expandable-shadow-height: k-spacing(2.5) !default;
@@ -494,7 +494,7 @@ $kendo-grid-stack-expandable-shadow: k-elevation(2) !default;
 
 /// The font weight of the pinned source row in the Grid.
 /// @group grid
-$kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-bold, 700 ) !default;
+$kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-bold) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
     $kendo-grid-default-size: $kendo-grid-default-size,

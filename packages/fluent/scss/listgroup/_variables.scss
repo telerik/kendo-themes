@@ -11,10 +11,10 @@ $kendo-listgroup-border-radius: var( --kendo-listgroup-border-radius, #{k-border
 
 /// Font size of the listgroup.
 /// @group listgroup
-$kendo-listgroup-font-size: var( --kendo-listgroup-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-listgroup-font-size: var( --kendo-listgroup-font-size, var(--kendo-font-size) ) !default;
 /// Line height of the listgroup.
 /// @group listgroup
-$kendo-listgroup-line-height: var( --kendo-listgroup-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-listgroup-line-height: var( --kendo-listgroup-line-height, var(--kendo-line-height) ) !default;
 
 /// Background color of the listgroup component.
 /// @group listgroup

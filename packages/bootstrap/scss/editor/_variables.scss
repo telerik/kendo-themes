@@ -10,13 +10,13 @@
 $kendo-editor-border-width: 1px !default;
 /// The font family of the Еditor.
 /// @group editor
-$kendo-editor-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-editor-font-family: var(--kendo-font-family) !default;
 /// The font size of the Еditor.
 /// @group editor
-$kendo-editor-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-editor-font-size: var(--kendo-font-size)  !default;
 /// The line height of the Еditor.
 /// @group editor
-$kendo-editor-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-editor-line-height: var(--kendo-line-height) !default;
 
 /// The text color of the Еditor placeholder.
 /// @group editor

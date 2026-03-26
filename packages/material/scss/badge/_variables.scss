@@ -45,29 +45,29 @@ $kendo-badge-lg-padding-y: k-spacing(1.5) !default;
 
 /// The font sizes of the Badge.
 /// @group badge
-$kendo-badge-font-size: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-badge-font-size: var(--kendo-font-size-xs) !default;
 /// The font size of the small Badge.
 /// @group badge
-$kendo-badge-sm-font-size: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-badge-sm-font-size: var(--kendo-font-size-xs) !default;
 /// The font size of the medium Badge.
 /// @group badge
-$kendo-badge-md-font-size: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-badge-md-font-size: var(--kendo-font-size-xs) !default;
 /// The font size of the large Badge.
 /// @group badge
-$kendo-badge-lg-font-size: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-badge-lg-font-size: var(--kendo-font-size-xs) !default;
 
 /// The line heights used along with the $kendo-font-size variable.
 /// @group badge
-$kendo-badge-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-badge-line-height: var(--kendo-line-height-xs) !default;
 /// The line height used along with the $kendo-font-size variable of the small Badge.
 /// @group badge
-$kendo-badge-sm-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-badge-sm-line-height: var(--kendo-line-height-xs) !default;
 /// The line height used along with the $kendo-font-size variable of the medium Badge.
 /// @group badge
-$kendo-badge-md-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-badge-md-line-height: var(--kendo-line-height-xs) !default;
 /// The line height used along with the $kendo-font-size variable of the large Badge.
 /// @group badge
-$kendo-badge-lg-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-badge-lg-line-height: var(--kendo-line-height-xs) !default;
 
 /// The calculated minimum width of the circular Badge.
 /// @group badge

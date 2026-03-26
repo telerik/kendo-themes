@@ -17,13 +17,13 @@ $kendo-menu-border-width: 0px !default;
 
 /// The font family of the Menu.
 /// @group menu
-$kendo-menu-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-menu-font-family: var(--kendo-font-family) !default;
 /// The font size of the Menu.
 /// @group menu
-$kendo-menu-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-menu-font-size: var(--kendo-font-size) !default;
 /// The line height of the Menu used along with $kendo-font-size.
 /// @group menu
-$kendo-menu-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-menu-line-height: var(--kendo-line-height) !default;
 
 /// The background color of the Menu.
 /// @group menu
@@ -55,7 +55,7 @@ $kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
 
 /// The font weight of the selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-menu-item-selected-font-weight: var(--kendo-font-weight-bold) !default;
 
 /// The background color of the Menu item.
 /// @group menu
@@ -175,23 +175,23 @@ $kendo-menu-popup-border-width: $kendo-popup-border-width !default;
 
 /// The font size of the small Menu popup.
 /// @group menu
-$kendo-menu-popup-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-menu-popup-sm-font-size: var(--kendo-font-size) !default;
 /// The font size of the medium Menu popup.
 /// @group menu
-$kendo-menu-popup-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-menu-popup-md-font-size: var(--kendo-font-size) !default;
 /// The font size of the large Menu popup.
 /// @group menu
-$kendo-menu-popup-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-menu-popup-lg-font-size: var(--kendo-font-size-lg) !default;
 
 /// The line height of the small Menu popup.
 /// @group menu
-$kendo-menu-popup-sm-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-menu-popup-sm-line-height: var(--kendo-line-height) !default;
 /// The line height of the medium Menu popup.
 /// @group menu
-$kendo-menu-popup-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-menu-popup-md-line-height: var(--kendo-line-height) !default;
 /// The line height of the large Menu popup.
 /// @group menu
-$kendo-menu-popup-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-menu-popup-lg-line-height: var(--kendo-line-height-lg) !default;
 
 /// The background color of the Menu popup.
 /// @group menu

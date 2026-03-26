@@ -25,13 +25,13 @@ $kendo-notification-border-width: var( --kendo-notification-border-width, 1px ) 
 $kendo-notification-border-radius: var( --kendo-notification-border-radius, #{k-border-radius(md)} ) !default;
 /// The font family of the Notification.
 /// @group notification
-$kendo-notification-font-family: var( --kendo-notification-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-notification-font-family: var( --kendo-notification-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Notification.
 /// @group notification
-$kendo-notification-font-size: var( --kendo-notification-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-notification-font-size: var( --kendo-notification-font-size, var(--kendo-font-size-sm) ) !default;
 /// The height of the Notification.
 /// @group notification
-$kendo-notification-line-height: var( --kendo-notification-line-height, var( --kendo-line-height-lg, normal ) ) !default;
+$kendo-notification-line-height: var( --kendo-notification-line-height, var(--kendo-line-height-lg) ) !default;
 /// The horizontal padding of the Notification actions.
 /// @group notification
 $kendo-notification-actions-padding-x: var( --kendo-notification-actions-padding-x, null ) !default;

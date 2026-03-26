@@ -28,33 +28,33 @@ $kendo-column-menu-item-lg-padding-y: k-spacing(1.5) !default;
 
 /// The font size of the ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-column-menu-font-size: var(--kendo-font-size) !default;
 /// The font size of the small ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-column-menu-sm-font-size: var(--kendo-font-size) !default;
 /// The font size of the medium ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-column-menu-md-font-size: var(--kendo-font-size) !default;
 /// The font size of the large ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-column-menu-lg-font-size: var(--kendo-font-size-lg) !default;
 
 /// The line height of the ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-column-menu-line-height: var(--kendo-line-height) !default;
 /// The line height of the small ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-sm-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-column-menu-sm-line-height: var(--kendo-line-height) !default;
 /// The line height of the medium ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-column-menu-md-line-height: var(--kendo-line-height) !default;
 /// The line height of the large ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-column-menu-lg-line-height: var(--kendo-line-height-lg) !default;
 
 /// The font family of the ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-column-menu-font-family: var(--kendo-font-family) !default;
 
 // Group Menu
 /// The background color of the hovered GroupMenu item action.

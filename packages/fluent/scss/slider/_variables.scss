@@ -14,13 +14,13 @@ $kendo-slider-spacing: var( --kendo-slider-spacing, #{k-spacing(2)} ) !default;
 
 /// The font family of the Slider.
 /// @group slider
-$kendo-slider-font-family: var( --kendo-slider-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-slider-font-family: var( --kendo-slider-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Slider.
 /// @group slider
-$kendo-slider-font-size: var( --kendo-slider-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-slider-font-size: var( --kendo-slider-font-size, var(--kendo-font-size-sm) ) !default;
 /// The line height of the Slider.
 /// @group slider
-$kendo-slider-line-height: var( --kendo-slider-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-slider-line-height: var( --kendo-slider-line-height, var(--kendo-line-height) ) !default;
 /// The text color of the Slider.
 /// @group slider
 $kendo-slider-text: var( --kendo-slider-text, inherit ) !default;
