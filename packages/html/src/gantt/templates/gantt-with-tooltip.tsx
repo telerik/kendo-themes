@@ -64,7 +64,7 @@ export const GanttWithTooltip = ({ flexBasis = "30%", gridContentHeight = "180px
                                             <TableRow>
                                                 <TableTd>7</TableTd>
                                                 <TableTd>
-                                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                                    <Icon className="k-treelist-toggle" icon="chevron-down" />
                                                     Software validation
                                                 </TableTd>
                                             </TableRow>

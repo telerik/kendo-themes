@@ -85,7 +85,7 @@ export default () => (
                   <TableRow className="k-table-group-row k-grouping-row">
                     <TableTd colspan={7}>
                       <p className="k-reset">
-                        <Icon icon="caret-alt-right" />
+                        <Icon icon="chevron-right" />
                         Rating 3/5
                       </p>
                     </TableTd>

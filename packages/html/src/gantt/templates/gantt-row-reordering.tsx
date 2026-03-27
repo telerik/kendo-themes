@@ -72,7 +72,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                 <TableTd className="k-drag-cell" aria-label="Reorder row"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>7</TableTd>
                                                 <TableTd>
-                                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                                    <Icon className="k-treelist-toggle" icon="chevron-down" />
                                                     Software validation, research and implementation
                                                 </TableTd>
                                             </TableRow>
@@ -90,7 +90,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                 <TableTd>11</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="none" />
-                                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                                    <Icon className="k-treelist-toggle" icon="chevron-down" />
                                                     Research
                                                 </TableTd>
                                             </TableRow>

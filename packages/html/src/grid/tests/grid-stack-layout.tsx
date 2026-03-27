@@ -172,7 +172,7 @@ export default () =>(
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={3}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 ID: 1
                                             </p>
                                         </TableTd>
@@ -181,7 +181,7 @@ export default () =>(
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={2} >
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                  {/* grouping header template */}
                                                 Country: Germany
                                             </p>
@@ -236,7 +236,7 @@ export default () =>(
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={2}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-right" />
+                                                <Icon icon="chevron-right" />
                                                 Country: Mexico
                                             </p>
                                         </TableTd>

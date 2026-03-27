@@ -54,7 +54,7 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                                 <TableRow className="k-table-group-row k-grouping-row" role="row">
                                     <TableTd colspan={6} role="gridcell" aria-expanded="false">
                                         <p className="k-reset">
-                                            <Icon icon="caret-alt-right" />
+                                            <Icon icon="chevron-right" />
                                             ID: 1
                                         </p>
                                     </TableTd>
@@ -62,7 +62,7 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                                 <TableRow className="k-table-group-row k-grouping-row" role="row">
                                     <TableTd colspan={6} role="gridcell" aria-expanded="true">
                                         <p className="k-reset">
-                                            <Icon icon="caret-alt-down" />
+                                            <Icon icon="chevron-down" />
                                             ID: 2
                                         </p>
                                     </TableTd>
@@ -71,7 +71,7 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                                     <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                     <TableTd colspan={5} role="gridcell" aria-expanded="true">
                                         <p className="k-reset">
-                                            <Icon icon="caret-alt-down" />
+                                            <Icon icon="chevron-down" />
                                             Name: Chang
                                         </p>
                                     </TableTd>

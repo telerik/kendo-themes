@@ -167,7 +167,7 @@ export default () =>(
                                         <TableRow className="k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                             <TableTd colspan={3}>
                                                 <p className="k-reset">
-                                                    <Icon icon="caret-alt-down" />
+                                                    <Icon icon="chevron-down" />
 
                                                     Discontinued: false
                                                 </p>
@@ -212,7 +212,7 @@ export default () =>(
                                         <TableRow className="k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                             <TableTd colspan={3}>
                                                 <p className="k-reset">
-                                                    <Icon icon="caret-alt-down" />
+                                                    <Icon icon="chevron-down" />
                                                     Discontinued: true
                                                 </p>
                                             </TableTd>

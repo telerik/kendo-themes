@@ -86,8 +86,8 @@ Scheduler.ariaSpec = {
         { selector: '.k-scheduler-toolbar', attribute: 'aria-label or title', usage: 'Follows Toolbar spec: each toolbar must have a label specifying its purpose.' },
 
         // Toolbar tools: navigation icon-only buttons
-        { selector: '.k-scheduler-navigation .k-button:has([class*="i-caret-alt-left"])', attribute: 'aria-label', usage: 'Required as the previous navigation button contains only an icon (no text).' },
-        { selector: '.k-scheduler-navigation .k-button:has([class*="i-caret-alt-right"])', attribute: 'aria-label', usage: 'Required as the next navigation button contains only an icon (no text).' },
+        { selector: '.k-scheduler-navigation .k-button:has([class*="i-chevron-left"])', attribute: 'aria-label', usage: 'Required as the previous navigation button contains only an icon (no text).' },
+        { selector: '.k-scheduler-navigation .k-button:has([class*="i-chevron-right"])', attribute: 'aria-label', usage: 'Required as the next navigation button contains only an icon (no text).' },
 
         // Toolbar tools: current date/period display
         { selector: '.k-nav-current', attribute: 'aria-live=polite', usage: 'The new date of the Scheduler view will be announced upon navigation to a new time span or view type.' },

@@ -173,7 +173,7 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow className="k-master-row k-expanded">
                                         <TableTd className="k-hierarchy-cell">
-                                            <Icon icon="caret-alt-down" />
+                                            <Icon icon="chevron-down" />
                                         </TableTd>
                                         <TableTd>1</TableTd>
                                         <TableTd>Text</TableTd>
@@ -192,7 +192,7 @@ export default () =>(
                                     </TableRow>
                                     <TableRow alt className="k-master-row">
                                         <TableTd className="k-hierarchy-cell">
-                                            <Icon icon="caret-alt-right" />
+                                            <Icon icon="chevron-right" />
                                         </TableTd>
                                         <TableTd>2</TableTd>
                                         <TableTd>Text</TableTd>
@@ -326,7 +326,7 @@ export default () =>(
                                     <TableRow className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={5}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-right" />
+                                                <Icon icon="chevron-right" />
                                             Price: 19
                                             </p>
                                         </TableTd>
@@ -334,7 +334,7 @@ export default () =>(
                                     <TableRow className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={5}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                             Price: 30
                                             </p>
                                         </TableTd>

@@ -23,9 +23,9 @@ export default () =>(
             <section>
                 <div className="k-calendar">
                     <div className="k-header k-hstack">
-                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="chevron-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">March 2018</Button>
-                        <Button fillMode="flat" className="k-calendar-nav-next" icon="caret-alt-right"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-next" icon="chevron-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-monthview">
                         <table className="k-calendar-table k-month">
@@ -191,9 +191,9 @@ export default () =>(
             <section>
                 <div className="k-calendar k-week-number">
                     <div className="k-header k-hstack">
-                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="chevron-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">March 2018</Button>
-                        <Button fillMode="flat" className="k-calendar-nav-next" icon="caret-alt-right"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-next" icon="chevron-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-monthview">
                         <table className="k-calendar-table k-month">
@@ -366,9 +366,9 @@ export default () =>(
             <section>
                 <div className="k-calendar k-week-number k-calendar-range">
                     <div className="k-header k-hstack">
-                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="chevron-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">March 2018</Button>
-                        <Button fillMode="flat" className="k-calendar-nav-next" icon="caret-alt-right"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-next" icon="chevron-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-monthview">
                         <table className="k-calendar-table k-month">
@@ -545,9 +545,9 @@ export default () =>(
             <section>
                 <div className="k-calendar">
                     <div className="k-header k-hstack">
-                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="chevron-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2018</Button>
-                        <Button fillMode="flat" className="k-calendar-nav-next" icon="caret-alt-right"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-next" icon="chevron-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-yearview">
                         <table className="k-calendar-table k-meta-view k-year">
@@ -606,9 +606,9 @@ export default () =>(
             <section>
                 <div className="k-calendar">
                     <div className="k-header k-hstack">
-                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="chevron-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2010 - 2019</Button>
-                        <Button fillMode="flat" className="k-calendar-nav-next" icon="caret-alt-right"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-next" icon="chevron-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-decadeview">
                         <table className="k-calendar-table k-meta-view k-decade">
@@ -663,9 +663,9 @@ export default () =>(
             <section>
                 <div className="k-calendar">
                     <div className="k-header k-hstack">
-                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="caret-alt-left"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-prev" icon="chevron-left"></Button>
                         <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2000 - 2099</Button>
-                        <Button fillMode="flat" className="k-calendar-nav-next" icon="caret-alt-right"></Button>
+                        <Button fillMode="flat" className="k-calendar-nav-next" icon="chevron-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-centuryview">
                         <table className="k-calendar-table k-meta-view k-century">

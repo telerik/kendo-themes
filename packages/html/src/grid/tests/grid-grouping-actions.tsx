@@ -31,10 +31,10 @@ export default () => (
                     <ColumnMenuItemWrapper>
                         <ColumnMenuItem>
                             <div className="k-column-list-item">
-                                <Icon icon="caret-alt-left"/>Move previous
+                                <Icon icon="chevron-left"/>Move previous
                             </div>
                             <div className="k-column-list-item k-disabled">
-                                <Icon icon="caret-alt-right"/>Move next
+                                <Icon icon="chevron-right"/>Move next
                             </div>
                         </ColumnMenuItem>
                     </ColumnMenuItemWrapper>

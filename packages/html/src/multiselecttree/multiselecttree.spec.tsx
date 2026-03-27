@@ -166,7 +166,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                 {showArrowButton && (
                     <Button
                         className="k-input-button"
-                        icon="caret-alt-down"
+                        icon="chevron-down"
                         size={size}
                         fillMode={fillMode}
                         aria-label="Toggle dropdown"

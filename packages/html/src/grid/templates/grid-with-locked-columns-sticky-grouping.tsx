@@ -120,7 +120,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                     <TableRow className="k-table-group-row k-grouping-row" role="row" aria-rowindex={6} style={{ height: "37px" }}>
                                         <TableTd colspan={3} role="gridcell" aria-expanded="true" tabIndex={-1}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 Country: Germany
                                             </p>
                                         </TableTd>
@@ -168,7 +168,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                 <TableRow className="k-table-group-row k-grouping-row" role="row" style={{ height: "37px" }}>
                                     <TableTd colspan={3} role="gridcell">
                                         <p className="k-reset">
-                                            <Icon icon="caret-alt-down" />
+                                            <Icon icon="chevron-down" />
                                             Country: France
                                         </p>
                                     </TableTd>
@@ -196,7 +196,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                 <TableRow className="k-table-group-row k-grouping-row" role="row" style={{ height: "37px" }}>
                                     <TableTd colspan={3} role="gridcell">
                                         <p className="k-reset">
-                                            <Icon icon="caret-alt-down" />
+                                            <Icon icon="chevron-down" />
                                             Country: Germany
                                         </p>
                                     </TableTd>
@@ -224,7 +224,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                 <TableRow className="k-table-group-row k-grouping-row" role="row" style={{ height: "37px" }}>
                                     <TableTd colspan={3} role="gridcell">
                                         <p className="k-reset">
-                                            <Icon icon="caret-alt-down" />
+                                            <Icon icon="chevron-down" />
                                             Country: Brazil
                                         </p>
                                     </TableTd>

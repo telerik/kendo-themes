@@ -94,7 +94,7 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow className="k-master-row k-expanded">
                                         <TableTd className="k-hierarchy-cell">
-                                            <Icon icon="caret-alt-down" />
+                                            <Icon icon="chevron-down" />
                                         </TableTd>
                                         <TableTd>1</TableTd>
                                         <TableTd>Text</TableTd>
@@ -113,7 +113,7 @@ export default () =>(
                                     </TableRow>
                                     <TableRow className="k-master-row" alt>
                                         <TableTd className="k-hierarchy-cell">
-                                            <Icon icon="caret-alt-left" />
+                                            <Icon icon="chevron-left" />
                                         </TableTd>
                                         <TableTd>2</TableTd>
                                         <TableTd>Text</TableTd>

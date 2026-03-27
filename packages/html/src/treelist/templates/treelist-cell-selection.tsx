@@ -43,7 +43,7 @@ export const TreeListCellSelection = ({ ...other }: any) => {
                         <TableTbody role="rowgroup">
                             <TableRow role="row" aria-rowindex={2} aria-expanded="true">
                                 <TableTd role="gridcell" aria-colindex={1} aria-expanded="true" selected aria-selected="true">
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                     Daryl
                                 </TableTd>
                                 <TableTd role="gridcell" aria-colindex={2} selected aria-selected="true">Sweeney</TableTd>
@@ -52,7 +52,7 @@ export const TreeListCellSelection = ({ ...other }: any) => {
                             <TableRow role="row" alt aria-rowindex={3} aria-expanded="true">
                                 <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                     Guy
                                 </TableTd>
                                 <TableTd role="gridcell" aria-colindex={2}>Wooten</TableTd>
@@ -62,7 +62,7 @@ export const TreeListCellSelection = ({ ...other }: any) => {
                                 <TableTd role="gridcell" aria-colindex={1}>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                     Buffy
                                 </TableTd>
                                 <TableTd role="gridcell" aria-colindex={2}>Weber</TableTd>

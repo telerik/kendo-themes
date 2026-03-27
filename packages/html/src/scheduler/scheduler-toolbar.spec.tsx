@@ -33,8 +33,8 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
                 [
                     <ButtonGroup key="nav" className="k-scheduler-navigation">
                         <Button className="k-group-start">Today</Button>
-                        <Button icon="caret-alt-left" aria-label="Navigate to previous period"></Button>
-                        <Button className="k-group-end" icon="caret-alt-right" aria-label="Navigate to next period"></Button>
+                        <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
+                        <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
                     </ButtonGroup>,
                     <Button key="current" icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                         Monday, June 13, 2022

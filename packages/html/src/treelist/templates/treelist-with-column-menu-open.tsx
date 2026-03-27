@@ -53,7 +53,7 @@ export const TreeListWithColumnMenuOpen = ({ ...other }: any) => {
                                 <TableTbody role="rowgroup">
                                     <TableRow role="row" aria-rowindex={2} aria-expanded="true">
                                         <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
-                                            <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                            <Icon className="k-treelist-toggle" icon="chevron-down" />
                                             Daryl Sweeney
                                         </TableTd>
                                         <TableTd role="gridcell" aria-colindex={2}>CEO</TableTd>
@@ -62,7 +62,7 @@ export const TreeListWithColumnMenuOpen = ({ ...other }: any) => {
                                     <TableRow role="row" alt aria-rowindex={3} aria-expanded="false">
                                         <TableTd role="gridcell" aria-colindex={1} aria-expanded="false">
                                             <Icon className="k-treelist-toggle" icon="none" />
-                                            <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                            <Icon className="k-treelist-toggle" icon="chevron-right" />
                                             Guy Wooten
                                         </TableTd>
                                         <TableTd role="gridcell" aria-colindex={2}>Chief Technical Officer</TableTd>

@@ -51,7 +51,7 @@ export type KendoMenuButtonState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     showArrow: true,
-    arrowIconName: "caret-alt-down"
+    arrowIconName: "chevron-down"
 };
 
 export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonState & React.HTMLAttributes<HTMLButtonElement>> = (

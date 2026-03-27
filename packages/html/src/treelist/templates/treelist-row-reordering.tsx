@@ -47,7 +47,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                         <Icon icon="reorder"/>
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2} aria-expanded="true">
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down"/>
+                                        <Icon className="k-treelist-toggle" icon="chevron-down"/>
                                         Daryl
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={3}>Sweeney</TableTd>
@@ -59,7 +59,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         Guy
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={3}>Wooten</TableTd>
@@ -72,7 +72,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                     <TableTd role="gridcell" aria-colindex={2} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         Buffy
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={3}>Weber</TableTd>
@@ -86,7 +86,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         Hyacinth
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={3}>Hood</TableTd>

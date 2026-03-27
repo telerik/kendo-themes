@@ -25,7 +25,7 @@ export default () =>(
                         <TableTbody>
                             <TableRow className="k-master-row">
                                 <TableTd className="k-text-nowrap" colspan={1}>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-down" />
                                     Daryl Sweeney
                                 </TableTd>
                                 <TableTd colspan={1}>CEO</TableTd>
@@ -33,7 +33,7 @@ export default () =>(
                             </TableRow>
                             <TableRow className="k-master-row">
                                 <TableTd className=" k-text-nowrap" colspan={1}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-right" />
                                     Guy Wooten
                                 </TableTd>
                                 <TableTd colspan={1}>Chief Technical Officer</TableTd>
@@ -41,7 +41,7 @@ export default () =>(
                             </TableRow>
                             <TableRow className="k-master-row">
                                 <TableTd className="k-text-nowrap" colspan={1}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-right" />
                                     Priscilla Frank
                                 </TableTd>
                                 <TableTd colspan={1}>Chief Product Officer</TableTd>
@@ -49,7 +49,7 @@ export default () =>(
                             </TableRow>
                             <TableRow className="k-master-row">
                                 <TableTd className="k-text-nowrap" colspan={1}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-down" />
                                     Anika Vega
                                 </TableTd>
                                 <TableTd colspan={1}>Chief Process Officer</TableTd>
@@ -57,7 +57,7 @@ export default () =>(
                             </TableRow>
                             <TableRow className="k-master-row">
                                 <TableTd className="k-text-nowrap" colspan={1}><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-right" />
                                     Vernon Ballard
                                 </TableTd>
                                 <TableTd colspan={1}>Director Facilities</TableTd>
@@ -70,7 +70,7 @@ export default () =>(
                             </TableRow>
                             <TableRow className="k-master-row">
                                 <TableTd className="k-text-nowrap" colspan={1}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-right" />
                                     Nevada Hart
                                 </TableTd>
                                 <TableTd colspan={1}>Chief Financial Officer</TableTd>
@@ -78,7 +78,7 @@ export default () =>(
                             </TableRow>
                             <TableRow className="k-master-row">
                                 <TableTd className="k-text-nowrap" colspan={1}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-right" />
                                     Hunter Fry
                                 </TableTd>
                                 <TableTd colspan={1}>General Counsel</TableTd>

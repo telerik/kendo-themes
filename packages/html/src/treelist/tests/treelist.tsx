@@ -36,7 +36,7 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow>
                                         <TableTd>
-                                            <Icon className="k-treelist-toggle" icon="caret-alt-right"></Icon>
+                                            <Icon className="k-treelist-toggle" icon="chevron-right"></Icon>
                                             Daryl
                                         </TableTd>
                                         <TableTd>Sweeney</TableTd>
@@ -66,7 +66,7 @@ export default () =>(
                             <TableTbody>
                                 <TableRow>
                                     <TableTd>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="chevron-right"></Icon>
                                         Daryl
                                     </TableTd>
                                     <TableTd>Sweeney</TableTd>
@@ -91,7 +91,7 @@ export default () =>(
                             <TableTbody>
                                 <TableRow>
                                     <TableTd>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="chevron-right"></Icon>
                                         Daryl
                                     </TableTd>
                                     <TableTd>Sweeney</TableTd>
@@ -136,7 +136,7 @@ export default () =>(
                             <TableTbody>
                                 <TableRow>
                                     <TableTd>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="chevron-right"></Icon>
                                         Daryl
                                     </TableTd>
                                     <TableTd>Sweeney</TableTd>

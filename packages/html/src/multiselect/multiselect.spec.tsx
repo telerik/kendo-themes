@@ -185,7 +185,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                 {showArrowButton && (
                     <Button
                         className="k-input-button"
-                        icon="caret-alt-down"
+                        icon="chevron-down"
                         size={size}
                         fillMode={fillMode}
                         aria-label="Toggle dropdown"

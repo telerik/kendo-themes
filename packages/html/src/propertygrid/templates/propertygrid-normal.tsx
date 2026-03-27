@@ -73,7 +73,7 @@ export const PropertyGridNormal = ({ content, ...other }: any) => {
                                 </TableRow>
                                 <TableRow role="row" alt aria-rowindex={6} aria-expanded="true">
                                     <TableTd role="gridcell" aria-colindex={1}>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                         font
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Roboto 400</TableTd>

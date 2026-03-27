@@ -21,8 +21,8 @@ export const TimelineTrackWrap: KendoComponent<React.HTMLAttributes<HTMLDivEleme
                 props.className,
                 TIMELINETRACKWRAP_CLASSNAME
             )}>
-            <Button className="k-timeline-arrow k-timeline-arrow-left" rounded="full" icon="caret-alt-left" disabled aria-hidden="true" tabIndex={-1} />
-            <Button className="k-timeline-arrow k-timeline-arrow-right" rounded="full" icon="caret-alt-right" aria-hidden="true" tabIndex={-1} />
+            <Button className="k-timeline-arrow k-timeline-arrow-left" rounded="full" icon="chevron-left" disabled aria-hidden="true" tabIndex={-1} />
+            <Button className="k-timeline-arrow k-timeline-arrow-right" rounded="full" icon="chevron-right" aria-hidden="true" tabIndex={-1} />
             <TimelineTrack>
                 {props.children}
             </TimelineTrack>

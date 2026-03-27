@@ -208,7 +208,7 @@ export default () => (
                                         <TableRow className="k-table-group-row k-grouping-row">
                                             <TableTd colspan={6}>
                                                 <p className="k-reset">
-                                                    <Icon icon="caret-alt-down" />
+                                                    <Icon icon="chevron-down" />
                                                     <span>Placeholder: X &nbsp;</span>
                                                     <span>placeholder</span>
                                                 </p>

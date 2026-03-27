@@ -38,7 +38,7 @@ export const GridHierarchy = ({ containerClassName, ...other }: any) => (
                             <TableTbody role="rowgroup">
                                 <TableRow className="k-master-row" role="row">
                                     <TableTd className="k-hierarchy-cell" role="gridcell" aria-expanded="false">
-                                        <Icon icon="caret-alt-right" />
+                                        <Icon icon="chevron-right" />
                                     </TableTd>
                                     <TableTd role="gridcell">1</TableTd>
                                     <TableTd role="gridcell">Beverages</TableTd>
@@ -46,7 +46,7 @@ export const GridHierarchy = ({ containerClassName, ...other }: any) => (
                                 </TableRow>
                                 <TableRow className="k-master-row k-expanded" role="row" alt>
                                     <TableTd className="k-hierarchy-cell" role="gridcell" aria-expanded="true">
-                                        <Icon icon="caret-alt-down" />
+                                        <Icon icon="chevron-down" />
                                     </TableTd>
                                     <TableTd role="gridcell">2</TableTd>
                                     <TableTd role="gridcell">Condiments</TableTd>

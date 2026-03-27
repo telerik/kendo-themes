@@ -217,7 +217,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             }),
                             'k-icon-button',
                         )} aria-hidden="true">
-                            <Icon className='k-button-icon' icon= "caret-alt-left" />
+                            <Icon className='k-button-icon' icon= "chevron-left" />
                         </span>
                         <span className={classNames(
                             'k-toolbar-next',
@@ -228,7 +228,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             }),
                             'k-icon-button',
                         )} aria-hidden="true">
-                            <Icon className='k-button-icon' icon= "caret-alt-right" />
+                            <Icon className='k-button-icon' icon= "chevron-right" />
                         </span>
                     </ButtonGroup>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
@@ -250,7 +250,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             }),
                             'k-icon-button',
                         )} aria-hidden="true">
-                            <Icon className='k-button-icon' icon= "caret-alt-left" />
+                            <Icon className='k-button-icon' icon= "chevron-left" />
                         </span>
                         <span className={classNames(
                             'k-toolbar-next',
@@ -261,7 +261,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                             }),
                             'k-icon-button',
                         )} aria-hidden="true">
-                            <Icon className='k-button-icon' icon= "caret-alt-right" />
+                            <Icon className='k-button-icon' icon= "chevron-right" />
                         </span>
                     </ButtonGroup>
                 </>
@@ -278,7 +278,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
-                        <Icon className='k-button-icon' icon= "caret-alt-left" />
+                        <Icon className='k-button-icon' icon= "chevron-left" />
                     </span>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
                     <div className="k-toolbar-items k-toolbar-items-scroll">{toolbarChildren}</div>
@@ -292,7 +292,7 @@ export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & Rea
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
-                        <Icon className='k-button-icon' icon= "caret-alt-right" />
+                        <Icon className='k-button-icon' icon= "chevron-right" />
                     </span>
                 </>
             }

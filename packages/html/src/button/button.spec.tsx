@@ -65,7 +65,7 @@ export type KendoButtonState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     showArrow: false,
-    arrowIconName: "caret-alt-down"
+    arrowIconName: "chevron-down"
 };
 
 /**
