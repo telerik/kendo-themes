@@ -1,45 +1,43 @@
 @use "sass:map";
-@use "sass:meta";
 @use "sass:math";
-@use "sass:string";
 
 /// The base font size across all components.
 /// @group typography
-$kendo-font-size: 0.875rem !default;
+$kendo-font-size: 1rem !default;
 /// The extra extra small font size across all components.
 /// @group typography
 $kendo-font-size-xxs: 0.5rem !default;
 /// The extra small font size across all components.
 /// @group typography
-$kendo-font-size-xs: 0.625rem !default;
+$kendo-font-size-xs: 0.75rem !default;
 /// The small font size across all components.
 /// @group typography
-$kendo-font-size-sm: 0.75rem !default;
+$kendo-font-size-sm: 0.875rem !default;
 /// The medium font size across all components.
 /// @group typography
 $kendo-font-size-md: $kendo-font-size !default;
 /// The large font size across all components.
 /// @group typography
-$kendo-font-size-lg: 1rem !default;
+$kendo-font-size-lg: 1.125rem !default;
 /// The extra large font size across all components.
 /// @group typography
 $kendo-font-size-xl: 1.25rem !default;
 
 /// The base line height across all components.
 /// @group typography
-$kendo-line-height: math.div( 20, 14 ) !default;
+$kendo-line-height: 1.5 !default;
 /// The extra small line height across all components.
 /// @group typography
 $kendo-line-height-xs: 1 !default;
 /// The small line height across all components.
 /// @group typography
-$kendo-line-height-sm: 1.25 !default;
+$kendo-line-height-sm: math.div( 20, 14 ) !default;
 /// The medium line height across all components.
 /// @group typography
 $kendo-line-height-md: $kendo-line-height !default;
 /// The large line height across all components.
 /// @group typography
-$kendo-line-height-lg: 1.5 !default;
+$kendo-line-height-lg: 1.55 !default;
 /// The base line height in ems across all components.
 /// @group typography
 $kendo-line-height-em: calc( #{$kendo-line-height-md} * 1em ) !default;
@@ -111,13 +109,12 @@ $kendo-font-family-serif: "Times New Roman", Georgia, Garamond, Palatino, Basker
 $kendo-font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 /// The monospace font family across all components.
 /// @group typography
-$kendo-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
-
+$kendo-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 /// The base font family across all components.
 /// @group typography
-$kendo-font-family: inherit !default;
+$kendo-font-family: $kendo-font-family-sans-serif !default;
 
-$default-font-sizes: (
+$_default-font-sizes: (
     xxs: $kendo-font-size-xxs,
     xs: $kendo-font-size-xs,
     sm: $kendo-font-size-sm,
@@ -126,14 +123,14 @@ $default-font-sizes: (
     xl: $kendo-font-size-xl
 ) !default;
 
-$default-line-heights: (
+$_default-line-heights: (
     xs: $kendo-line-height-xs,
     sm: $kendo-line-height-sm,
     md: $kendo-line-height-md,
-    lg: $kendo-line-height-lg,
+    lg: $kendo-line-height-lg
 ) !default;
 
-$default-font-weights: (
+$_default-font-weights: (
     thin: $kendo-font-weight-thin,
     extra-light: $kendo-font-weight-extra-light,
     light: $kendo-font-weight-light,
@@ -145,7 +142,7 @@ $default-font-weights: (
     "black": $kendo-font-weight-black
 ) !default;
 
-$default-letter-spacings: (
+$_default-letter-spacings: (
     tightest: $kendo-letter-spacing-tightest,
     tighter: $kendo-letter-spacing-tighter,
     tight: $kendo-letter-spacing-tight,
@@ -155,7 +152,7 @@ $default-letter-spacings: (
     widest: $kendo-letter-spacing-widest
 ) !default;
 
-$default-font-families: (
+$_default-font-families: (
     sans: $kendo-font-family-sans,
     serif: $kendo-font-family-serif,
     sans-serif: $kendo-font-family-sans-serif,
@@ -164,25 +161,25 @@ $default-font-families: (
 
 /// The font sizes map
 /// @group typography
-$kendo-font-sizes: $default-font-sizes !default;
-$kendo-font-sizes: map.merge( $default-font-sizes, $kendo-font-sizes );
+$kendo-font-sizes: $_default-font-sizes !default;
+$kendo-font-sizes: map.merge( $_default-font-sizes, $kendo-font-sizes );
 
 /// The line heights map
 /// @group typography
-$kendo-line-heights: $default-line-heights !default;
-$kendo-line-heights: map.merge( $default-line-heights, $kendo-line-heights );
+$kendo-line-heights: $_default-line-heights !default;
+$kendo-line-heights: map.merge( $_default-line-heights, $kendo-line-heights );
 
 /// The font weights map
 /// @group typography
-$kendo-font-weights: $default-font-weights !default;
-$kendo-font-weights: map.merge( $default-font-weights, $kendo-font-weights );
+$kendo-font-weights: $_default-font-weights !default;
+$kendo-font-weights: map.merge( $_default-font-weights, $kendo-font-weights );
 
 /// The letter spacings map
 /// @group typography
-$kendo-letter-spacings: $default-letter-spacings !default;
-$kendo-letter-spacings: map.merge( $default-letter-spacings, $kendo-letter-spacings );
+$kendo-letter-spacings: $_default-letter-spacings !default;
+$kendo-letter-spacings: map.merge( $_default-letter-spacings, $kendo-letter-spacings );
 
 /// The font families map
 /// @group typography
-$kendo-font-families: $default-font-families !default;
-$kendo-font-families: map.merge( $default-font-families, $kendo-font-families );
+$kendo-font-families: $_default-font-families !default;
+$kendo-font-families: map.merge( $_default-font-families, $kendo-font-families );
