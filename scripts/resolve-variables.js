@@ -13,6 +13,19 @@ const nodeModules = path.resolve( themeDir, '../../node_modules' );
 const metaDir = path.resolve( themeDir, 'dist/meta/' );
 
 // #region helpers
+/**
+ * Round floating-point artifacts in serialized Sass values.
+ * Matches numbers like 248.23000000000002 or 50.14999999999999
+ * and rounds them to a reasonable number of decimal places.
+ * @param {string} str
+ * @returns {string}
+ */
+function roundSassString(str) {
+    return str.replace(/\b(\d+\.\d*?)([09])\2{4,}\d*/g, (match) =>
+        parseFloat(parseFloat(match).toPrecision(12)).toString()
+    );
+}
+
 function _capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -31,7 +44,7 @@ function prettifySassValue(sassValue) {
     }
 
     if (sassValue instanceof dartSass.SassString) {
-        return sassValue.assertString().text;
+        return roundSassString(sassValue.assertString().text);
     }
 
     if (sassValue instanceof dartSass.SassNumber) {
@@ -46,7 +59,7 @@ function prettifySassValue(sassValue) {
         return null;
     }
 
-    return sassValue.toString();
+    return roundSassString(sassValue.toString());
 }
 
 /**
@@ -69,7 +82,7 @@ function prettifySassMap(sassMap) {
  * @returns {string}
  */
 function prettifySassList(sassList) {
-    return sassList.toString();
+    return roundSassString(sassList.toString());
 }
 
 /**
@@ -77,7 +90,7 @@ function prettifySassList(sassList) {
  */
 function prettifySassNumber(sassNumber) {
     if (sassNumber.hasUnits) {
-        return sassNumber.toString();
+        return roundSassString(sassNumber.toString());
     }
 
     return sassNumber.value;
@@ -101,7 +114,7 @@ if (fs.existsSync( srcFile )) {
             'k-resolve-var($key, $type, $value)': ([ rawKey, rawType, rawValue ]) => {
                 const _key = rawKey.toString();
                 const _type = rawType.toString();
-                const _val = rawValue.toString();
+                const _val = roundSassString(rawValue.toString());
                 const prettyValue = prettifySassValue(rawValue);
 
                 content[_key] = {
