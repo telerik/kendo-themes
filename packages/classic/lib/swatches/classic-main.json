@@ -5,11 +5,11 @@
     "base": "@progress/kendo-theme-classic",
     "version": "5.1.2-dev.7",
     "previewColors": [
-        "#ffffff",
-        "#f0f0f0",
-        "#f35800",
-        "#cc4a00",
-        "#272727"
+        "oklch(100.00% 0.0001 0deg)",
+        "oklch(95.51% 0.0001 0deg)",
+        "oklch(66.00% 0.2038 40.79deg)",
+        "oklch(58.04% 0.1775 41.30deg)",
+        "oklch(27.27% 0.0000 0deg)"
     ],
     "components": [],
     "groups": []

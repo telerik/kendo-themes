@@ -6,11 +6,11 @@
     "version": "5.1.2-dev.7",
     "api": "modern",
     "previewColors": [
-        "#ffffff",
-        "#f5f5f5",
-        "#ff6358",
-        "#d6534a",
-        "#424242"
+        "oklch(100.00% 0.0001 0deg)",
+        "oklch(97.01% 0.0001 0deg)",
+        "oklch(69.85% 0.1922 27.18deg)",
+        "oklch(61.37% 0.1669 27.00deg)",
+        "oklch(37.91% 0.0000 0deg)"
     ],
     "components": [],
     "groups": []
