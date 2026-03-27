@@ -13,8 +13,8 @@ export const MenuPopup = (props) => (
     } children={
         <>
             <MenuItem first text="Item 1" focus></MenuItem>
-            <MenuItem showArrow arrowIconName="caret-alt-down" text="Item 2" expanded aria-controls="submenu-popup-1"></MenuItem>
-            <MenuItem showArrow arrowIconName="caret-alt-down" text="Item 3"></MenuItem>
+            <MenuItem showArrow arrowIconName="chevron-down" text="Item 2" expanded aria-controls="submenu-popup-1"></MenuItem>
+            <MenuItem showArrow arrowIconName="chevron-down" text="Item 3"></MenuItem>
             <MenuItem text="Item 4" disabled></MenuItem>
             <MenuItem last text="Item 5"></MenuItem>
         </>

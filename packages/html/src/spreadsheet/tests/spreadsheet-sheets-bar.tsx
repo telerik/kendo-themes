@@ -43,22 +43,22 @@ export default () =>(
                     <SpreadsheetSheetsBar tabStripItems={
                         <>
                             <TabStripItem first value="Sheet 1" actions={
-                                <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                                <MenuButton showArrow={false} icon="chevron-down" fillMode="flat" />
                             }></TabStripItem>
                             <TabStripItem value="Sheet 2" actions={
-                                <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                                <MenuButton showArrow={false} icon="chevron-down" fillMode="flat" />
                             }></TabStripItem>
                             <TabStripItem active value="Sheet 3" actions={
-                                <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                                <MenuButton showArrow={false} icon="chevron-down" fillMode="flat" />
                             }></TabStripItem>
                             <TabStripItem focus value="Sheet 4" actions={
-                                <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                                <MenuButton showArrow={false} icon="chevron-down" fillMode="flat" />
                             }></TabStripItem>
                             <TabStripItem value="Sheet 5" actions={
-                                <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                                <MenuButton showArrow={false} icon="chevron-down" fillMode="flat" />
                             }></TabStripItem>
                             <TabStripItem last disabled value="Sheet 6" actions={
-                                <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                                <MenuButton showArrow={false} icon="chevron-down" fillMode="flat" />
                             }></TabStripItem>
                         </>
                     } />

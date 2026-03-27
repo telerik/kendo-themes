@@ -57,7 +57,7 @@ export type KendoColorPickerProps = KendoColorPickerOptions & {
 export type KendoColorPickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    arrowIconName: 'caret-alt-down'
+    arrowIconName: 'chevron-down'
 };
 
 export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPickerState & React.HTMLAttributes<HTMLSpanElement>> = (

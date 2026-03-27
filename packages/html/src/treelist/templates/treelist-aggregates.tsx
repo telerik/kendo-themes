@@ -41,7 +41,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                             <TableTbody role="rowgroup">
                                 <TableRow role="row" aria-rowindex={2} aria-expanded="true">
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         Daryl Sweeney
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>CEO</TableTd>
@@ -50,7 +50,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableRow role="row" alt aria-rowindex={3} aria-expanded="false">
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="false">
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-right" />
                                         Guy Wooten
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Chief Technical Officer</TableTd>
@@ -59,7 +59,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableRow role="row" aria-rowindex={4} aria-expanded="false">
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="false">
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-right" />
                                         Priscilla Frank
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Chief Product Officer</TableTd>
@@ -68,7 +68,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableRow role="row" alt aria-rowindex={5} aria-expanded="true">
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         Anika Vega
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Chief Process Officer</TableTd>
@@ -78,7 +78,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="false">
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-right" />
                                         Vernon Ballard
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Director Facilities</TableTd>
@@ -97,7 +97,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableRow role="row" alt aria-rowindex={8} aria-expanded="false">
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="false">
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-right" />
                                         Nevada Hart
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Chief Financial Officer</TableTd>
@@ -106,7 +106,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableRow role="row" aria-rowindex={9} aria-expanded="false">
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="false">
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-right" />
                                         Hunter Fry
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>General Counsel</TableTd>

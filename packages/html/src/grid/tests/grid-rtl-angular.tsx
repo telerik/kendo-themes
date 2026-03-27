@@ -99,7 +99,7 @@ export default () =>(
                                     </colgroup>
                                     <TableTbody>
                                         <TableRow className="k-master-row k-expanded">
-                                            <TableTd className="k-hierarchy-cell"><Icon icon="caret-alt-down" /></TableTd>
+                                            <TableTd className="k-hierarchy-cell"><Icon icon="chevron-down" /></TableTd>
                                             <TableTd>1</TableTd>
                                             <TableTd>Text</TableTd>
                                             <TableTd>Text</TableTd>
@@ -117,7 +117,7 @@ export default () =>(
                                         </TableRow>
                                         <TableRow alt className="k-master-row">
                                             <TableTd className="k-hierarchy-cell">
-                                                <Icon icon="caret-alt-left" />
+                                                <Icon icon="chevron-left" />
                                             </TableTd>
                                             <TableTd>2</TableTd>
                                             <TableTd>Text</TableTd>

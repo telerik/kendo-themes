@@ -83,7 +83,7 @@ TreeList.ariaSpec = {
         // ── TreeList-Specific ──
         { selector: '.k-grid-content>table>tbody>tr', attribute: 'aria-expanded (when present)', usage: 'Set on the currently expanded row(s).' },
         { selector: '.k-grid-content>table>tbody>tr td', attribute: 'aria-expanded (when present)', usage: 'The cell containing the expand/collapse toggle also carries aria-expanded matching the row value, as it is the navigable focusable element.' },
-        { selector: '.k-treelist-toggle[class*="i-caret-alt-down"],.k-treelist-toggle[class*="i-caret-alt-right"]', attribute: 'aria-hidden=true', usage: 'Removes the expand/collapse icon from the accessibility tree.' },
+        { selector: '.k-treelist-toggle[class*="i-chevron-down"],.k-treelist-toggle[class*="i-chevron-right"]', attribute: 'aria-hidden=true', usage: 'Removes the expand/collapse icon from the accessibility tree.' },
 
         // ── Filter Menu (open) ──
         { selector: '.k-grid-filter-popup', attribute: 'role=dialog', usage: 'The filter menu popup has dialog role.' },

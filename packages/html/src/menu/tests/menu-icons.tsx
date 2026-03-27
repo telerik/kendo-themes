@@ -35,7 +35,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down"></MenuItem>
                     <MenuItem last selected text="Selected" icon="folder"></MenuItem>
                 </MenuNormal>
             </section>
@@ -56,7 +56,7 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down"></MenuItem>
                     <MenuItem last selected text="Selected" icon="folder"></MenuItem>
                 </MenuNormal>
             </section>

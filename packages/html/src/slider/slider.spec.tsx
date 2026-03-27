@@ -125,11 +125,11 @@ export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.
     let iconDecrease;
 
     if ( orientation === 'horizontal' ) {
-        iconIncrease = dir === 'rtl' ? 'caret-alt-left' : 'caret-alt-right';
-        iconDecrease = dir === 'rtl' ? 'caret-alt-right' : 'caret-alt-left';
+        iconIncrease = dir === 'rtl' ? 'chevron-left' : 'chevron-right';
+        iconDecrease = dir === 'rtl' ? 'chevron-right' : 'chevron-left';
     } else if ( orientation === 'vertical' ) {
-        iconIncrease = 'caret-alt-up';
-        iconDecrease = 'caret-alt-down';
+        iconIncrease = 'chevron-up';
+        iconDecrease = 'chevron-down';
     }
 
     return (

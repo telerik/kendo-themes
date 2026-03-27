@@ -13,8 +13,8 @@ export const SchedulerFlexMonth = ({ style, ...props } :any) => (
             <SchedulerToolbar>
                 <ButtonGroup className="k-scheduler-navigation">
                     <Button className="k-group-start">Today</Button>
-                    <Button icon="caret-alt-left" aria-label="Navigate to previous period"></Button>
-                    <Button className="k-group-end" icon="caret-alt-right" aria-label="Navigate to next period"></Button>
+                    <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
+                    <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                     June 23 2024

@@ -41,7 +41,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                             <TableTbody role="rowgroup">
                                 <TableRow role="row" aria-rowindex={2} aria-expanded="true">
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                         Daryl
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Sweeney</TableTd>
@@ -50,7 +50,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                 <TableRow role="row" alt aria-rowindex={3} aria-expanded="true">
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                         Guy
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Wooten</TableTd>
@@ -60,7 +60,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                     <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                         Buffy
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Weber</TableTd>
@@ -71,7 +71,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
                                         <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                         Hyacinth
                                     </TableTd>
                                     <TableTd role="gridcell" aria-colindex={2}>Hood</TableTd>

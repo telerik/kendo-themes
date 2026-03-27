@@ -117,7 +117,7 @@ export default () =>(
                             <TableTbody>
                                 <TableRow className="k-master-row" style={{ height: "40px" }}>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         7
                                     </TableTd>
                                     <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
@@ -152,7 +152,7 @@ export default () =>(
                                 <TableRow className="k-master-row" style={{ height: "40px" }}>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         11
                                     </TableTd>
                                     <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
@@ -249,7 +249,7 @@ export default () =>(
                                 <TableRow className="k-master-row" style={{ height: "40px" }}>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         12
                                     </TableTd>
                                     <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Design</TableTd>
@@ -314,7 +314,7 @@ export default () =>(
                                 <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                         13
                                     </TableTd>
                                     <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Implementation</TableTd>
@@ -453,7 +453,7 @@ export default () =>(
                                 <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-right" />
                                         14
                                     </TableTd>
                                     <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Testing</TableTd>
@@ -470,7 +470,7 @@ export default () =>(
                                 <TableRow className="k-master-row" style={{ height: "40px" }}>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-right" />
                                         30
                                     </TableTd>
                                     <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Documentation</TableTd>
@@ -487,7 +487,7 @@ export default () =>(
                                 <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        <Icon className="k-treelist-toggle" icon="chevron-right" />
                                         31
                                     </TableTd>
                                     <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Demos</TableTd>

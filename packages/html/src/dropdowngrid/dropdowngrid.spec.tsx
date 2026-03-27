@@ -179,7 +179,7 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                 }
                 <Button
                     className="k-input-button"
-                    icon="caret-alt-down"
+                    icon="chevron-down"
                     size={size}
                     fillMode={fillMode}
                     aria-label="Open popup"

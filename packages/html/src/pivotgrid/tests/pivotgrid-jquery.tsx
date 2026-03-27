@@ -42,7 +42,7 @@ export default () =>(
                                             </colgroup>
                                             <tbody className="k-table-tbody">
                                                 <tr className="k-table-row">
-                                                    <td className="k-table-td k-first"><Icon icon="caret-alt-right" /><span>All Geographies</span></td>
+                                                    <td className="k-table-td k-first"><Icon icon="chevron-right" /><span>All Geographies</span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -87,7 +87,7 @@ export default () =>(
                                                             <th className="k-table-th k-header" colSpan={4}>
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-down" />
+                                                                        <Icon icon="chevron-down" />
                                                                         <span className="k-column-title">All Periods</span>
                                                                     </span>
                                                                 </span>
@@ -104,7 +104,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">CY 2005</span>
                                                                     </span>
                                                                 </span>
@@ -112,7 +112,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">CY 2006</span>
                                                                     </span>
                                                                 </span>
@@ -120,7 +120,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">CY 2007</span>
                                                                     </span>
                                                                 </span>
@@ -128,7 +128,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">CY 2008</span>
                                                                     </span>
                                                                 </span>
@@ -138,7 +138,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">All Products</span>
                                                                     </span>
                                                                 </span>
@@ -146,7 +146,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">All Products</span>
                                                                     </span>
                                                                 </span>
@@ -154,7 +154,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">All Products</span>
                                                                     </span>
                                                                 </span>
@@ -162,7 +162,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">All Products</span>
                                                                     </span>
                                                                 </span>
@@ -170,7 +170,7 @@ export default () =>(
                                                             <th className="k-table-th k-header">
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
-                                                                        <Icon icon="caret-alt-right" />
+                                                                        <Icon icon="chevron-right" />
                                                                         <span className="k-column-title">All Products</span>
                                                                     </span>
                                                                 </span>

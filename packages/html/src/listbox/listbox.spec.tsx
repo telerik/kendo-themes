@@ -91,12 +91,12 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
                     {actions.map(action => {
 
                         const actionsIconMap = {
-                            "left": dir !== "rtl" ? "caret-alt-left" : "caret-alt-right",
-                            "right": dir !== 'rtl' ? "caret-alt-right" : "caret-alt-left",
-                            "to": dir !== 'rtl' ? "caret-double-alt-right" : "caret-double-alt-left",
-                            "from": dir !== 'rtl' ? "caret-double-alt-left" : "caret-double-alt-right",
-                            "up": "caret-alt-up",
-                            "down": "caret-alt-down",
+                            "left": dir !== "rtl" ? "chevron-left" : "chevron-right",
+                            "right": dir !== 'rtl' ? "chevron-right" : "chevron-left",
+                            "to": dir !== 'rtl' ? "chevron-double-right" : "chevron-double-left",
+                            "from": dir !== 'rtl' ? "chevron-double-left" : "chevron-double-right",
+                            "up": "chevron-up",
+                            "down": "chevron-down",
                             "x": "x"
                         };
 

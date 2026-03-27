@@ -24,10 +24,10 @@ export const Navigator = (
                 NAVIGATOR_CLASSNAME
             )}
         >
-            <Button className="k-navigator-n" icon="caret-alt-up" fillMode="flat" rounded="full" size={null} aria-label="Pan north"></Button>
-            <Button className="k-navigator-e" icon="caret-alt-right" fillMode="flat" rounded="full" size={null} aria-label="Pan east"></Button>
-            <Button className="k-navigator-s" icon="caret-alt-down" fillMode="flat" rounded="full" size={null} aria-label="Pan south"></Button>
-            <Button className="k-navigator-w" icon="caret-alt-left" fillMode="flat" rounded="full" size={null} aria-label="Pan west"></Button>
+            <Button className="k-navigator-n" icon="chevron-up" fillMode="flat" rounded="full" size={null} aria-label="Pan north"></Button>
+            <Button className="k-navigator-e" icon="chevron-right" fillMode="flat" rounded="full" size={null} aria-label="Pan east"></Button>
+            <Button className="k-navigator-s" icon="chevron-down" fillMode="flat" rounded="full" size={null} aria-label="Pan south"></Button>
+            <Button className="k-navigator-w" icon="chevron-left" fillMode="flat" rounded="full" size={null} aria-label="Pan west"></Button>
         </div>
     );
 };

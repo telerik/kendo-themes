@@ -64,7 +64,7 @@ export const SplitterSplitbar = (
             {collapsePrev &&
                 <>
                     <div className="k-collapse-prev">
-                        <Icon icon={`caret-alt-${orientation === "horizontal" ? 'left' : 'up'}`} size="xsmall"></Icon>
+                        <Icon icon={`chevron-${orientation === "horizontal" ? 'left' : 'up'}`} size="xsmall"></Icon>
                     </div>
                 </>
             }
@@ -72,7 +72,7 @@ export const SplitterSplitbar = (
             {collapseNext &&
                 <>
                     <div className="k-collapse-next">
-                        <Icon icon={`caret-alt-${orientation === "horizontal" ? "right" : "down"}`} size="xsmall"></Icon>
+                        <Icon icon={`chevron-${orientation === "horizontal" ? "right" : "down"}`} size="xsmall"></Icon>
                     </div>
                 </>
             }

@@ -67,7 +67,7 @@ PropertyGrid.ariaSpec = {
 
         // ── TreeList-Specific ──
         { selector: '.k-grid-content>table>tbody>tr:not(.k-hidden)', attribute: 'aria-expanded (when expandable)', usage: 'Set on the currently expanded row(s).' },
-        { selector: '.k-treelist-toggle[class*="i-caret-alt-down"],.k-treelist-toggle[class*="i-caret-alt-right"]', attribute: 'aria-hidden=true', usage: 'Removes the expand/collapse icon from the accessibility tree.' },
+        { selector: '.k-treelist-toggle[class*="i-chevron-down"],.k-treelist-toggle[class*="i-chevron-right"]', attribute: 'aria-hidden=true', usage: 'Removes the expand/collapse icon from the accessibility tree.' },
     ]
 };
 

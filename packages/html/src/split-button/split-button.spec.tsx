@@ -55,7 +55,7 @@ export type KendoSplitButtonProps = KendoSplitButtonOptions & {
 export type KendoSplitButtonState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    arrowIconName: "caret-alt-down"
+    arrowIconName: "chevron-down"
 };
 
 export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButtonState & React.HTMLAttributes<HTMLDivElement>> = (

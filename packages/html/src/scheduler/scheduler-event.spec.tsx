@@ -79,10 +79,10 @@ export const SchedulerEvent: KendoComponent<KendoSchedulerEventProps & React.HTM
             {multiDay &&
             <>
                 <span className="k-event-top-actions">
-                    <Icon icon="caret-alt-up" />
+                    <Icon icon="chevron-up" />
                 </span>
                 <span className="k-event-bottom-actions">
-                    <Icon icon="caret-alt-down" />
+                    <Icon icon="chevron-down" />
                 </span>
             </>
             }

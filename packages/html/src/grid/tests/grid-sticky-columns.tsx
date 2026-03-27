@@ -55,7 +55,7 @@ export default () =>(
                                         <TableRow className="k-table-group-row k-grouping-row">
                                             <TableTd colspan={6}>
                                                 <p className="k-reset">
-                                                    <Icon icon="caret-alt-down" />
+                                                    <Icon icon="chevron-down" />
                                                     <span>Currently active projects: 2 &nbsp;</span>
                                                 </p>
                                             </TableTd>
@@ -93,7 +93,7 @@ export default () =>(
                                         <TableRow className="k-table-group-row k-grouping-row">
                                             <TableTd colspan={6}>
                                                 <p className="k-reset">
-                                                    <Icon icon="caret-alt-down" />
+                                                    <Icon icon="chevron-down" />
                                                     <span>Currently active projects: 5 &nbsp;</span>
                                                     <span>These people work on too many projects</span>
                                                 </p>

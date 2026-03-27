@@ -83,7 +83,7 @@ export default () =>(
                         <TableTbody>
                             <TableRow className="k-master-row">
                                 <TableTd>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-down" />
                                     1
                                 </TableTd>
                                 <TableTd>Furniture</TableTd>
@@ -126,7 +126,7 @@ export default () =>(
                             </TableRow>
                             <TableRow className="k-master-row">
                                 <TableTd>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-down" />
                                     2
                                 </TableTd>
                                 <TableTd>Decor</TableTd>
@@ -148,7 +148,7 @@ export default () =>(
                             <TableRow className="k-master-row">
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                    <Icon className="k-treelist-toggle" icon="chevron-down" />
                                     2.2
                                 </TableTd>
                                 <TableTd>Curtains &amp; Blinds</TableTd>

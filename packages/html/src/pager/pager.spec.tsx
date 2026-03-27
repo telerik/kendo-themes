@@ -147,7 +147,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         ariaDisabled={currentPage === 1}
                         fillMode="flat"
                         size={size}
-                        icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left"}
+                        icon={dir === "rtl" ? "chevron-right" : "chevron-left"}
                         title="Go to the previous page"
                         aria-label="Go to the previous page"
                     >
@@ -180,7 +180,7 @@ export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTM
                         ariaDisabled={currentPage === maxPages}
                         fillMode="flat"
                         size={size}
-                        icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
+                        icon={dir === "rtl" ? "chevron-left" : "chevron-right" }
                         title="Go to the next page"
                         aria-label="Go to the next page"
                     >

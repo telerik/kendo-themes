@@ -107,7 +107,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
-                        <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["prev"]}`} />
+                        <Icon className='k-button-icon' icon={`chevron-${caretMap[position]["prev"]}`} />
                     </span>
                 }
                 {scrollable && scrollButtons === 'start' &&
@@ -120,7 +120,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
-                        <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
+                        <Icon className='k-button-icon' icon={`chevron-${caretMap[position]["next"]}`} />
                     </span>
                 }
                 <TabStripItems className={classNames({[`k-tabstrip-items-scroll`]: scrollable && scrollButtons === 'hidden'})}
@@ -139,7 +139,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
-                        <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["prev"]}`} />
+                        <Icon className='k-button-icon' icon={`chevron-${caretMap[position]["prev"]}`} />
                     </span>
                 }
                 {scrollable &&
@@ -153,7 +153,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
-                        <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
+                        <Icon className='k-button-icon' icon={`chevron-${caretMap[position]["next"]}`} />
                     </span>
                 }
                 {overflow &&

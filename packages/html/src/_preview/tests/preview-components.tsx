@@ -961,8 +961,8 @@ export default () => (
                   children={
                     <>
                       <MenuItem first text="Item 1"></MenuItem>
-                      <MenuItem showArrow arrowIconName="caret-alt-down" text="Item 2" active></MenuItem>
-                      <MenuItem showArrow arrowIconName="caret-alt-down" text="Item 3"></MenuItem>
+                      <MenuItem showArrow arrowIconName="chevron-down" text="Item 2" active></MenuItem>
+                      <MenuItem showArrow arrowIconName="chevron-down" text="Item 3"></MenuItem>
                     </>
                   }
                   popup={

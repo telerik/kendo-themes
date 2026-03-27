@@ -65,7 +65,7 @@ export const TreeListWithLockedColumns = ({ className, headerWrapClassName, cont
                         <TableTbody role="rowgroup">
                             <TableRow className="k-master-row" role="row" aria-rowindex={2} aria-expanded="true" aria-owns={`${nlCell_r0_c0} ${nlCell_r0_c1}`}>
                                 <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                     Daryl Sweeney
                                 </TableTd>
                                 <TableTd role="gridcell" aria-colindex={2}>CEO</TableTd>
@@ -73,7 +73,7 @@ export const TreeListWithLockedColumns = ({ className, headerWrapClassName, cont
                             <TableRow className="k-master-row" alt role="row" aria-rowindex={3} aria-expanded="true" aria-owns={`${nlCell_r1_c0} ${nlCell_r1_c1}`}>
                                 <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                     Guy Wooten
                                 </TableTd>
                                 <TableTd role="gridcell" aria-colindex={2}>CTO</TableTd>
@@ -82,7 +82,7 @@ export const TreeListWithLockedColumns = ({ className, headerWrapClassName, cont
                                 <TableTd role="gridcell" aria-colindex={1} aria-expanded="true">
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                     Buffy Weber
                                 </TableTd>
                                 <TableTd role="gridcell" aria-colindex={2}>VP, Engineering</TableTd>
@@ -92,7 +92,7 @@ export const TreeListWithLockedColumns = ({ className, headerWrapClassName, cont
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                    <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                     Hyacinth Hood
                                 </TableTd>
                                 <TableTd role="gridcell" aria-colindex={2}>Team Lead</TableTd>

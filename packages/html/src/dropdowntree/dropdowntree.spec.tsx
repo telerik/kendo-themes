@@ -71,7 +71,7 @@ export type KendoDropdownTreeState = { [K in (typeof states)[number]]?: boolean 
 
 const defaultOptions = {
     showValue: true,
-    arrowIconName: 'caret-alt-down'
+    arrowIconName: 'chevron-down'
 };
 
 export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdownTreeState & React.HTMLAttributes<HTMLSpanElement>> = (

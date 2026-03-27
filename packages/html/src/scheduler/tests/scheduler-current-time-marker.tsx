@@ -14,8 +14,8 @@ export default () => (
                     <SchedulerToolbar>
                         <ButtonGroup className="k-scheduler-navigation">
                             <Button className="k-group-start">Today</Button>
-                            <Button icon="caret-alt-left"></Button>
-                            <Button className="k-group-end" icon="caret-alt-right"></Button>
+                            <Button icon="chevron-left"></Button>
+                            <Button className="k-group-end" icon="chevron-right"></Button>
                         </ButtonGroup>
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         Monday, June 10, 2013 - Friday, June 14, 2013
@@ -83,12 +83,12 @@ export default () => (
                                             <SchedulerEvent
                                                 resizable="horizontal"
                                                 eventPrefix={
-                                                    <Icon icon="caret-alt-left"></Icon>
+                                                    <Icon icon="chevron-left"></Icon>
                                                 }
                                                 eventSuffix={
                                                     <>
                                                         <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
-                                                        <Icon icon="caret-alt-right"></Icon>
+                                                        <Icon icon="chevron-right"></Icon>
                                                     </>
                                                 }>
                                                 <div>
@@ -470,8 +470,8 @@ export default () => (
                         <SchedulerToolbar>
                             <ButtonGroup className="k-scheduler-navigation">
                                 <Button className="k-group-start">Today</Button>
-                                <Button icon="caret-alt-left"></Button>
-                                <Button className="k-group-end" icon="caret-alt-right"></Button>
+                                <Button icon="chevron-left"></Button>
+                                <Button className="k-group-end" icon="chevron-right"></Button>
                             </ButtonGroup>
                             <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         Monday, February 18, 2019

@@ -26,7 +26,7 @@ export default () =>(
                                     <TableTbody>
                                         <TableRow>
                                             <TableTd style={{ whiteSpace: "nowrap" }}>
-                                                <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                                <Icon className="k-treelist-toggle" icon="chevron-down" />
                                                 Daryl Sweeney
                                             </TableTd>
                                             <TableTd>CEO</TableTd>
@@ -65,7 +65,7 @@ export default () =>(
                                             <TableTbody>
                                                 <TableRow>
                                                     <TableTd>
-                                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                                        <Icon className="k-treelist-toggle" icon="chevron-down" />
                                                         Daryl Sweeney
                                                     </TableTd>
                                                     <TableTd>CEO</TableTd>

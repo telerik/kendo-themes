@@ -50,9 +50,9 @@ export default () =>(
                     </>
                     }>
                     <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
-                    <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"></MenuItem>
-                    <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Hover" hover showArrow arrowIconName="chevron-down"></MenuItem>
+                    <MenuItem text="Active" active showArrow arrowIconName="chevron-down"></MenuItem>
+                    <MenuItem text="Selected" selected showArrow arrowIconName="chevron-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
                     <MenuItem last text="Disabled" disabled></MenuItem>
                 </MenuNormal>
@@ -81,9 +81,9 @@ export default () =>(
                         </>
                     }>
                     <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
-                    <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"></MenuItem>
-                    <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuItem text="Hover" hover showArrow arrowIconName="chevron-down"></MenuItem>
+                    <MenuItem text="Active" active showArrow arrowIconName="chevron-down"></MenuItem>
+                    <MenuItem text="Selected" selected showArrow arrowIconName="chevron-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
                     <MenuItem last text="Disabled" disabled></MenuItem>
                 </MenuNormal>

@@ -67,8 +67,8 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
 
     if ( !expandArrowName ) {
         expandArrowName = dir === 'rtl'
-            ? 'caret-alt-left'
-            : 'caret-alt-right';
+            ? 'chevron-left'
+            : 'chevron-right';
     }
 
     return (

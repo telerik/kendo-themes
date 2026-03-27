@@ -71,7 +71,7 @@ export default () => (
                 <TableRow className="k-table-group-row k-grouping-row">
                   <TableTd colspan={9}>
                     <p className="k-reset">
-                      <Icon icon="caret-alt-right" />
+                      <Icon icon="chevron-right" />
                       Rating 3/5
                     </p>
                   </TableTd>
@@ -95,7 +95,7 @@ export default () => (
                 <TableRow className="k-table-group-row k-grouping-row">
                   <TableTd colspan={9}>
                     <p className="k-reset">
-                      <Icon icon="caret-alt-down" />
+                      <Icon icon="chevron-down" />
                       Rating 5/5
                     </p>
                   </TableTd>
@@ -169,7 +169,7 @@ export default () => (
                 <TableRow className="k-table-group-row k-grouping-row">
                   <TableTd colspan={9}>
                     <p className="k-reset">
-                      <Icon icon="caret-alt-down" />
+                      <Icon icon="chevron-down" />
                       Rating 5/5
                     </p>
                   </TableTd>
@@ -243,7 +243,7 @@ export default () => (
                 <TableRow className="k-table-group-row k-grouping-row">
                   <TableTd colspan={9}>
                     <p className="k-reset">
-                      <Icon icon="caret-alt-down" />
+                      <Icon icon="chevron-down" />
                       Rating 2/5
                     </p>
                   </TableTd>

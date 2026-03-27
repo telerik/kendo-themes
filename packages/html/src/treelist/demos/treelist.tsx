@@ -172,7 +172,7 @@ export const TreelistDemo = (
                                 <TableTbody>
                                     <TableRow className="k-treelist-group">
                                         <TableTd>
-                                            <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                            <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                             Daryl
                                         </TableTd>
                                         <TableTd>Sweeney</TableTd>
@@ -181,7 +181,7 @@ export const TreelistDemo = (
                                     <TableRow className="k-treelist-group" alt>
                                         <TableTd>
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                            <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                            <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                             Guy
                                         </TableTd>
                                         <TableTd>Wooten</TableTd>
@@ -191,7 +191,7 @@ export const TreelistDemo = (
                                         <TableTd>
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                            <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                            <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                             Buffy
                                         </TableTd>
                                         <TableTd>Weber</TableTd>
@@ -202,7 +202,7 @@ export const TreelistDemo = (
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
                                             <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                            <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
+                                            <Icon className="k-treelist-toggle" icon="chevron-down"></Icon>
                                             Hyacinth
                                         </TableTd>
                                         <TableTd>Hood</TableTd>

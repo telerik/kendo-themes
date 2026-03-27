@@ -130,7 +130,7 @@ export default () =>(
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={6}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 ID: 1
                                             </p>
                                         </TableTd>
@@ -152,7 +152,7 @@ export default () =>(
                                     <TableRow role="row" className="k-table-group-row k-grouping-row" >
                                         <TableTd colspan={6}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 ID: 2
                                             </p>
                                         </TableTd>
@@ -232,7 +232,7 @@ export default () =>(
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={7}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 ID: 1
                                             </p>
                                         </TableTd>
@@ -241,7 +241,7 @@ export default () =>(
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={6}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 Name: Product1
                                             </p>
                                         </TableTd>
@@ -264,7 +264,7 @@ export default () =>(
                                     <TableRow role="row" className="k-table-group-row k-grouping-row" >
                                         <TableTd colspan={7}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 ID: 2
                                             </p>
                                         </TableTd>
@@ -273,7 +273,7 @@ export default () =>(
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={6}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 Name: Product2
                                             </p>
                                         </TableTd>
@@ -353,7 +353,7 @@ export default () =>(
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={7}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 ID: 1
                                             </p>
                                         </TableTd>
@@ -362,7 +362,7 @@ export default () =>(
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={6}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 Name: Product1
                                             </p>
                                         </TableTd>
@@ -391,7 +391,7 @@ export default () =>(
                                     <TableRow role="row" className="k-table-group-row k-grouping-row" >
                                         <TableTd colspan={7}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 ID: 2
                                             </p>
                                         </TableTd>
@@ -400,7 +400,7 @@ export default () =>(
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={6}>
                                             <p className="k-reset">
-                                                <Icon icon="caret-alt-down" />
+                                                <Icon icon="chevron-down" />
                                                 Name: Product2
                                             </p>
                                         </TableTd>

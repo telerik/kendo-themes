@@ -21,8 +21,8 @@ export default () =>(
                         <SchedulerToolbar>
                             <ButtonGroup className="k-scheduler-navigation">
                                 <Button className="k-group-start">Today</Button>
-                                <Button icon="caret-alt-left"></Button>
-                                <Button className="k-group-end" icon="caret-alt-right"></Button>
+                                <Button icon="chevron-left"></Button>
+                                <Button className="k-group-end" icon="chevron-right"></Button>
                             </ButtonGroup>
                             <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                                 Wednesday, June 24, 2020 - Thursday, June 25, 2020

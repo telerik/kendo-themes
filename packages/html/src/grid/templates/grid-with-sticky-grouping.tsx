@@ -55,7 +55,7 @@ export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
                                 <TableRow className="k-table-group-row k-grouping-row" role="row" aria-rowindex={2}>
                                     <TableTd colspan={4} role="gridcell" aria-expanded={false} tabIndex={-1} aria-colindex={1}>
                                         <p className="k-reset">
-                                            <Icon icon="caret-alt-right" />
+                                            <Icon icon="chevron-right" />
                                             Rating 3/5
                                         </p>
                                     </TableTd>
@@ -74,7 +74,7 @@ export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
                                 <TableRow className="k-table-group-row k-grouping-row" role="row" aria-rowindex={2}>
                                     <TableTd colspan={4} role="gridcell" aria-expanded="true">
                                         <p className="k-reset">
-                                            <Icon icon="caret-alt-down" />
+                                            <Icon icon="chevron-down" />
                                             Rating 5/5
                                         </p>
                                     </TableTd>
