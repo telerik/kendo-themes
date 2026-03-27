@@ -5,11 +5,11 @@
     "base": "@progress/kendo-theme-classic",
     "version": "5.1.2-dev.7",
     "previewColors": [
-        "#1f2a35",
-        "#303742",
-        "#f4af03",
-        "#ffb700",
-        "#ffffff"
+        "oklch(27.98% 0.0255 248.78deg)",
+        "oklch(33.48% 0.0217 259.40deg)",
+        "oklch(79.83% 0.1649 79.97deg)",
+        "oklch(82.53% 0.1708 80.02deg)",
+        "oklch(100.00% 0.0001 0deg)"
     ],
     "components": [],
     "groups": [
@@ -19,587 +19,587 @@
                 "app-surface": {
                     "name": "App Surface",
                     "type": "color",
-                    "value": "#1f2a35"
+                    "value": "oklch(27.98% 0.0255 248.78deg)"
                 },
                 "on-app-surface": {
                     "name": "On App Surface",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "subtle": {
                     "name": "Subtle",
                     "type": "color",
-                    "value": "#e0e0e0"
+                    "value": "oklch(90.67% 0.0001 0deg)"
                 },
                 "surface": {
                     "name": "Surface",
                     "type": "color",
-                    "value": "#414550"
+                    "value": "oklch(39.09% 0.0194 269.63deg)"
                 },
                 "surface-alt": {
                     "name": "Surface Alt",
                     "type": "color",
-                    "value": "#303742"
+                    "value": "oklch(33.48% 0.0217 259.40deg)"
                 },
                 "border": {
                     "name": "Border",
                     "type": "color",
-                    "value": "#394958"
+                    "value": "oklch(39.78% 0.0327 247.01deg)"
                 },
                 "border-alt": {
                     "name": "Border Alt",
                     "type": "color",
-                    "value": "#8c9095"
+                    "value": "oklch(65.16% 0.0089 253.95deg)"
                 },
                 "base-subtle": {
                     "name": "Base Subtle",
                     "type": "color",
-                    "value": "#1a2229"
+                    "value": "oklch(24.73% 0.0177 245.04deg)"
                 },
                 "base-subtle-hover": {
                     "name": "Base Subtle Hover",
                     "type": "color",
-                    "value": "#1e272f"
+                    "value": "oklch(26.77% 0.0197 245.49deg)"
                 },
                 "base-subtle-active": {
                     "name": "Base Subtle Active",
                     "type": "color",
-                    "value": "#2e373f"
+                    "value": "oklch(33.17% 0.0187 245.27deg)"
                 },
                 "base": {
                     "name": "Base",
                     "type": "color",
-                    "value": "#212a33"
+                    "value": "oklch(28.04% 0.0209 248.61deg)"
                 },
                 "base-hover": {
                     "name": "Base Hover",
                     "type": "color",
-                    "value": "#454c54"
+                    "value": "oklch(41.32% 0.0162 251.78deg)"
                 },
                 "base-active": {
                     "name": "Base Active",
                     "type": "color",
-                    "value": "#686e74"
+                    "value": "oklch(53.51% 0.0120 248.13deg)"
                 },
                 "base-emphasis": {
                     "name": "Base Emphasis",
                     "type": "color",
-                    "value": "#404850"
+                    "value": "oklch(39.75% 0.0172 248.30deg)"
                 },
                 "base-on-subtle": {
                     "name": "Base On Subtle",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "on-base": {
                     "name": "On Base",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "base-on-surface": {
                     "name": "Base On Surface",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "primary-subtle": {
                     "name": "Primary Subtle",
                     "type": "color",
-                    "value": "#312301"
+                    "value": "oklch(26.58% 0.0532 85.57deg)"
                 },
                 "primary-subtle-hover": {
                     "name": "Primary Subtle Hover",
                     "type": "color",
-                    "value": "#553d01"
+                    "value": "oklch(37.68% 0.0768 83.25deg)"
                 },
                 "primary-subtle-active": {
                     "name": "Primary Subtle Active",
                     "type": "color",
-                    "value": "#7a5802"
+                    "value": "oklch(48.35% 0.0988 82.22deg)"
                 },
                 "primary": {
                     "name": "Primary",
                     "type": "color",
-                    "value": "#f4af03"
+                    "value": "oklch(79.83% 0.1649 79.97deg)"
                 },
                 "primary-hover": {
                     "name": "Primary Hover",
                     "type": "color",
-                    "value": "#f6bc2b"
+                    "value": "oklch(82.62% 0.1593 84.39deg)"
                 },
                 "primary-active": {
                     "name": "Primary Active",
                     "type": "color",
-                    "value": "#f8c954"
+                    "value": "oklch(85.61% 0.1423 86.86deg)"
                 },
                 "primary-emphasis": {
                     "name": "Primary Emphasis",
                     "type": "color",
-                    "value": "#b78302"
+                    "value": "oklch(64.48% 0.1329 80.43deg)"
                 },
                 "primary-on-subtle": {
                     "name": "Primary On Subtle",
                     "type": "color",
-                    "value": "#fbe3a7"
+                    "value": "oklch(92.14% 0.0808 88.75deg)"
                 },
                 "on-primary": {
                     "name": "On Primary",
                     "type": "color",
-                    "value": "white"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "primary-on-surface": {
                     "name": "Primary On Surface",
                     "type": "color",
-                    "value": "#f7c342"
+                    "value": "oklch(84.20% 0.1510 85.86deg)"
                 },
                 "secondary-subtle": {
                     "name": "Secondary Subtle",
                     "type": "color",
-                    "value": "#07080a"
+                    "value": "oklch(13.40% 0.0052 262.32deg)"
                 },
                 "secondary-subtle-hover": {
                     "name": "Secondary Subtle Hover",
                     "type": "color",
-                    "value": "#0c0f12"
+                    "value": "oklch(16.65% 0.0080 248.34deg)"
                 },
                 "secondary-subtle-active": {
                     "name": "Secondary Subtle Active",
                     "type": "color",
-                    "value": "#11151a"
+                    "value": "oklch(19.38% 0.0119 254.14deg)"
                 },
                 "secondary": {
                     "name": "Secondary",
                     "type": "color",
-                    "value": "#212a33"
+                    "value": "oklch(28.04% 0.0209 248.61deg)"
                 },
                 "secondary-hover": {
                     "name": "Secondary Hover",
                     "type": "color",
-                    "value": "#454c54"
+                    "value": "oklch(41.32% 0.0162 251.78deg)"
                 },
                 "secondary-active": {
                     "name": "Secondary Active",
                     "type": "color",
-                    "value": "#686e74"
+                    "value": "oklch(53.51% 0.0120 248.13deg)"
                 },
                 "secondary-emphasis": {
                     "name": "Secondary Emphasis",
                     "type": "color",
-                    "value": "#192026"
+                    "value": "oklch(23.93% 0.0155 244.39deg)"
                 },
                 "secondary-on-subtle": {
                     "name": "Secondary On Subtle",
                     "type": "color",
-                    "value": "#b1b4b8"
+                    "value": "oklch(76.87% 0.0067 255.56deg)"
                 },
                 "on-secondary": {
                     "name": "On Secondary",
                     "type": "color",
-                    "value": "white"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "secondary-on-surface": {
                     "name": "Secondary On Surface",
                     "type": "color",
-                    "value": "#595f66"
+                    "value": "oklch(48.27% 0.0136 252.24deg)"
                 },
                 "info-subtle": {
                     "name": "Info Subtle",
                     "type": "color",
-                    "value": "#02181f"
+                    "value": "oklch(19.45% 0.0324 220.91deg)"
                 },
                 "info-subtle-hover": {
                     "name": "Info Subtle Hover",
                     "type": "color",
-                    "value": "#042a36"
+                    "value": "oklch(26.58% 0.0464 223.96deg)"
                 },
                 "info-subtle-active": {
                     "name": "Info Subtle Active",
                     "type": "color",
-                    "value": "#063c4e"
+                    "value": "oklch(33.29% 0.0606 226.65deg)"
                 },
                 "info": {
                     "name": "Info",
                     "type": "color",
-                    "value": "#0c779b"
+                    "value": "oklch(53.27% 0.1018 228.65deg)"
                 },
                 "info-hover": {
                     "name": "Info Hover",
                     "type": "color",
-                    "value": "#338dab"
+                    "value": "oklch(60.31% 0.0947 224.05deg)"
                 },
                 "info-active": {
                     "name": "Info Active",
                     "type": "color",
-                    "value": "#5aa3bb"
+                    "value": "oklch(67.72% 0.0811 221.57deg)"
                 },
                 "info-emphasis": {
                     "name": "Info Emphasis",
                     "type": "color",
-                    "value": "#095974"
+                    "value": "oklch(43.40% 0.0816 228.09deg)"
                 },
                 "info-on-subtle": {
                     "name": "Info On Subtle",
                     "type": "color",
-                    "value": "#aacfdc"
+                    "value": "oklch(83.19% 0.0433 221.27deg)"
                 },
                 "on-info": {
                     "name": "On Info",
                     "type": "color",
-                    "value": "white"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "info-on-surface": {
                     "name": "Info On Surface",
                     "type": "color",
-                    "value": "#4999b4"
+                    "value": "oklch(64.36% 0.0876 222.92deg)"
                 },
                 "success-subtle": {
                     "name": "Success Subtle",
                     "type": "color",
-                    "value": "#091b0c"
+                    "value": "oklch(20.14% 0.0382 147.81deg)"
                 },
                 "success-subtle-hover": {
                     "name": "Success Subtle Hover",
                     "type": "color",
-                    "value": "#0f3015"
+                    "value": "oklch(27.66% 0.0621 147.36deg)"
                 },
                 "success-subtle-active": {
                     "name": "Success Subtle Active",
                     "type": "color",
-                    "value": "#16451e"
+                    "value": "oklch(34.76% 0.0830 146.75deg)"
                 },
                 "success": {
                     "name": "Success",
                     "type": "color",
-                    "value": "#2b893c"
+                    "value": "oklch(55.73% 0.1432 146.48deg)"
                 },
                 "success-hover": {
                     "name": "Success Hover",
                     "type": "color",
-                    "value": "#4d9c5b"
+                    "value": "oklch(62.58% 0.1243 147.85deg)"
                 },
                 "success-active": {
                     "name": "Success Active",
                     "type": "color",
-                    "value": "#6faf7a"
+                    "value": "oklch(69.65% 0.1016 148.76deg)"
                 },
                 "success-emphasis": {
                     "name": "Success Emphasis",
                     "type": "color",
-                    "value": "#20672d"
+                    "value": "oklch(45.53% 0.1144 146.68deg)"
                 },
                 "success-on-subtle": {
                     "name": "Success On Subtle",
                     "type": "color",
-                    "value": "#b5d6bb"
+                    "value": "oklch(84.46% 0.0511 150.56deg)"
                 },
                 "on-success": {
                     "name": "On Success",
                     "type": "color",
-                    "value": "white"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "success-on-surface": {
                     "name": "Success On Surface",
                     "type": "color",
-                    "value": "#60a76d"
+                    "value": "oklch(66.62% 0.1118 148.65deg)"
                 },
                 "warning-subtle": {
                     "name": "Warning Subtle",
                     "type": "color",
-                    "value": "#2f1f01"
+                    "value": "oklch(25.29% 0.0510 79.93deg)"
                 },
                 "warning-subtle-hover": {
                     "name": "Warning Subtle Hover",
                     "type": "color",
-                    "value": "#523702"
+                    "value": "oklch(35.92% 0.0736 77.51deg)"
                 },
                 "warning-subtle-active": {
                     "name": "Warning Subtle Active",
                     "type": "color",
-                    "value": "#754f04"
+                    "value": "oklch(45.81% 0.0943 76.28deg)"
                 },
                 "warning": {
                     "name": "Warning",
                     "type": "color",
-                    "value": "#ea9d07"
+                    "value": "oklch(75.37% 0.1587 73.79deg)"
                 },
                 "warning-hover": {
                     "name": "Warning Hover",
                     "type": "color",
-                    "value": "#edad2f"
+                    "value": "oklch(78.83% 0.1505 79.15deg)"
                 },
                 "warning-active": {
                     "name": "Warning Active",
                     "type": "color",
-                    "value": "#f1bc56"
+                    "value": "oklch(82.42% 0.1329 81.36deg)"
                 },
                 "warning-emphasis": {
                     "name": "Warning Emphasis",
                     "type": "color",
-                    "value": "#b07605"
+                    "value": "oklch(61.10% 0.1280 74.44deg)"
                 },
                 "warning-on-subtle": {
                     "name": "Warning On Subtle",
                     "type": "color",
-                    "value": "#f8dda8"
+                    "value": "oklch(90.73% 0.0744 83.98deg)"
                 },
                 "on-warning": {
                     "name": "On Warning",
                     "type": "color",
-                    "value": "white"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "warning-on-surface": {
                     "name": "Warning On Surface",
                     "type": "color",
-                    "value": "#efb645"
+                    "value": "oklch(80.90% 0.1417 81.08deg)"
                 },
                 "error-subtle": {
                     "name": "Error Subtle",
                     "type": "color",
-                    "value": "#26100b"
+                    "value": "oklch(20.47% 0.0385 33.83deg)"
                 },
                 "error-subtle-hover": {
                     "name": "Error Subtle Hover",
                     "type": "color",
-                    "value": "#431c14"
+                    "value": "oklch(28.16% 0.0625 32.99deg)"
                 },
                 "error-subtle-active": {
                     "name": "Error Subtle Active",
                     "type": "color",
-                    "value": "#5f291c"
+                    "value": "oklch(35.38% 0.0823 34.75deg)"
                 },
                 "error": {
                     "name": "Error",
                     "type": "color",
-                    "value": "#be5138"
+                    "value": "oklch(57.13% 0.1462 34.32deg)"
                 },
                 "error-hover": {
                     "name": "Error Hover",
                     "type": "color",
-                    "value": "#c86d58"
+                    "value": "oklch(63.36% 0.1201 34.02deg)"
                 },
                 "error-active": {
                     "name": "Error Active",
                     "type": "color",
-                    "value": "#d38978"
+                    "value": "oklch(70.17% 0.0948 33.55deg)"
                 },
                 "error-emphasis": {
                     "name": "Error Emphasis",
                     "type": "color",
-                    "value": "#8f3d2a"
+                    "value": "oklch(46.65% 0.1160 34.40deg)"
                 },
                 "error-on-subtle": {
                     "name": "Error On Subtle",
                     "type": "color",
-                    "value": "#e8c2b9"
+                    "value": "oklch(84.45% 0.0453 33.45deg)"
                 },
                 "on-error": {
                     "name": "On Error",
                     "type": "color",
-                    "value": "white"
+                    "value": "oklch(100.00% 0.0001 0deg)"
                 },
                 "error-on-surface": {
                     "name": "Error On Surface",
                     "type": "color",
-                    "value": "#ce7d6a"
+                    "value": "oklch(67.17% 0.1053 33.98deg)"
                 },
                 "inverse-subtle": {
                     "name": "Light Subtle",
                     "type": "color",
-                    "value": "#f0f0f0"
+                    "value": "oklch(95.51% 0.0001 0deg)"
                 },
                 "inverse-subtle-hover": {
                     "name": "Light Subtle Hover",
                     "type": "color",
-                    "value": "#ebebeb"
+                    "value": "oklch(94.01% 0.0001 0deg)"
                 },
                 "inverse-subtle-active": {
                     "name": "Light Subtle Active",
                     "type": "color",
-                    "value": "#dddddd"
+                    "value": "oklch(89.75% 0.0001 0deg)"
                 },
                 "inverse": {
                     "name": "Light",
                     "type": "color",
-                    "value": "#ebebeb"
+                    "value": "oklch(94.01% 0.0001 0deg)"
                 },
                 "inverse-hover": {
                     "name": "Light Hover",
                     "type": "color",
-                    "value": "#dddddd"
+                    "value": "oklch(89.75% 0.0001 0deg)"
                 },
                 "inverse-active": {
                     "name": "Light Active",
                     "type": "color",
-                    "value": "#d6d6d6"
+                    "value": "oklch(87.61% 0.0001 0deg)"
                 },
                 "inverse-emphasis": {
                     "name": "Light Emphasis",
                     "type": "color",
-                    "value": "#cacaca"
+                    "value": "oklch(83.90% 0.0001 0deg)"
                 },
                 "inverse-on-subtle": {
                     "name": "Light On Subtle",
                     "type": "color",
-                    "value": "#272727"
+                    "value": "oklch(27.27% 0.0000 0deg)"
                 },
                 "on-inverse": {
                     "name": "On Light",
                     "type": "color",
-                    "value": "black"
+                    "value": "oklch(0.00% 0.0000 0deg)"
                 },
                 "inverse-on-surface": {
                     "name": "Light On Surface",
                     "type": "color",
-                    "value": "#ebebeb"
+                    "value": "oklch(94.01% 0.0001 0deg)"
                 },
                 "series-a": {
                     "name": "Series A",
                     "type": "color",
-                    "value": "#007bc3"
+                    "value": "oklch(56.38% 0.1428 245.30deg)"
                 },
                 "series-a-bold": {
                     "name": "Series A Bold",
                     "type": "color",
-                    "value": "#005c92"
+                    "value": "oklch(45.81% 0.1142 244.53deg)"
                 },
                 "series-a-bolder": {
                     "name": "Series A Bolder",
                     "type": "color",
-                    "value": "#003e62"
+                    "value": "oklch(34.92% 0.0840 242.70deg)"
                 },
                 "series-a-subtle": {
                     "name": "Series A Subtle",
                     "type": "color",
-                    "value": "#409cd2"
+                    "value": "oklch(66.12% 0.1178 238.17deg)"
                 },
                 "series-a-subtler": {
                     "name": "Series A Subtler",
                     "type": "color",
-                    "value": "#80bde1"
+                    "value": "oklch(77.00% 0.0814 235.23deg)"
                 },
                 "series-b": {
                     "name": "Series B",
                     "type": "color",
-                    "value": "#3ea44e"
+                    "value": "oklch(63.90% 0.1556 146.37deg)"
                 },
                 "series-b-bold": {
                     "name": "Series B Bold",
                     "type": "color",
-                    "value": "#2f7b3b"
+                    "value": "oklch(51.95% 0.1229 146.56deg)"
                 },
                 "series-b-bolder": {
                     "name": "Series B Bolder",
                     "type": "color",
-                    "value": "#1f5227"
+                    "value": "oklch(39.21% 0.0893 146.74deg)"
                 },
                 "series-b-subtle": {
                     "name": "Series B Subtle",
                     "type": "color",
-                    "value": "#6ebb7a"
+                    "value": "oklch(72.53% 0.1210 147.94deg)"
                 },
                 "series-b-subtler": {
                     "name": "Series B Subtler",
                     "type": "color",
-                    "value": "#9fd2a7"
+                    "value": "oklch(81.65% 0.0801 149.15deg)"
                 },
                 "series-c": {
                     "name": "Series C",
                     "type": "color",
-                    "value": "#ffae00"
+                    "value": "oklch(80.88% 0.1703 75.36deg)"
                 },
                 "series-c-bold": {
                     "name": "Series C Bold",
                     "type": "color",
-                    "value": "#bf8300"
+                    "value": "oklch(65.41% 0.1370 76.54deg)"
                 },
                 "series-c-bolder": {
                     "name": "Series C Bolder",
                     "type": "color",
-                    "value": "#805700"
+                    "value": "oklch(48.88% 0.1022 77.09deg)"
                 },
                 "series-c-subtle": {
                     "name": "Series C Subtle",
                     "type": "color",
-                    "value": "#ffc240"
+                    "value": "oklch(84.82% 0.1546 82.13deg)"
                 },
                 "series-c-subtler": {
                     "name": "Series C Subtler",
                     "type": "color",
-                    "value": "#ffd780"
+                    "value": "oklch(89.52% 0.1149 85.44deg)"
                 },
                 "series-d": {
                     "name": "Series D",
                     "type": "color",
-                    "value": "#ef4c00"
+                    "value": "oklch(64.02% 0.2094 38.02deg)"
                 },
                 "series-d-bold": {
                     "name": "Series D Bold",
                     "type": "color",
-                    "value": "#b33900"
+                    "value": "oklch(51.82% 0.1667 38.79deg)"
                 },
                 "series-d-bolder": {
                     "name": "Series D Bolder",
                     "type": "color",
-                    "value": "#782600"
+                    "value": "oklch(39.05% 0.1221 40.16deg)"
                 },
                 "series-d-subtle": {
                     "name": "Series D Subtle",
                     "type": "color",
-                    "value": "#f37940"
+                    "value": "oklch(70.79% 0.1657 43.86deg)"
                 },
                 "series-d-subtler": {
                     "name": "Series D Subtler",
                     "type": "color",
-                    "value": "#f7a680"
+                    "value": "oklch(79.59% 0.1091 45.83deg)"
                 },
                 "series-e": {
                     "name": "Series E",
                     "type": "color",
-                    "value": "#a419b7"
+                    "value": "oklch(52.48% 0.2346 322.23deg)"
                 },
                 "series-e-bold": {
                     "name": "Series E Bold",
                     "type": "color",
-                    "value": "#7b1389"
+                    "value": "oklch(42.68% 0.1877 322.39deg)"
                 },
                 "series-e-bolder": {
                     "name": "Series E Bolder",
                     "type": "color",
-                    "value": "#520d5c"
+                    "value": "oklch(32.39% 0.1380 322.11deg)"
                 },
                 "series-e-subtle": {
                     "name": "Series E Subtle",
                     "type": "color",
-                    "value": "#bb53c9"
+                    "value": "oklch(61.89% 0.1966 322.75deg)"
                 },
                 "series-e-subtler": {
                     "name": "Series E Subtler",
                     "type": "color",
-                    "value": "#d28cdb"
+                    "value": "oklch(73.74% 0.1340 322.72deg)"
                 },
                 "series-f": {
                     "name": "Series F",
                     "type": "color",
-                    "value": "#430b62"
+                    "value": "oklch(30.34% 0.1399 309.00deg)"
                 },
                 "series-f-bold": {
                     "name": "Series F Bold",
                     "type": "color",
-                    "value": "#32084a"
+                    "value": "oklch(25.27% 0.1133 309.01deg)"
                 },
                 "series-f-bolder": {
                     "name": "Series F Bolder",
                     "type": "color",
-                    "value": "#220631"
+                    "value": "oklch(20.11% 0.0829 310.95deg)"
                 },
                 "series-f-subtle": {
                     "name": "Series F Subtle",
                     "type": "color",
-                    "value": "#724889"
+                    "value": "oklch(47.69% 0.1110 312.60deg)"
                 },
                 "series-f-subtler": {
                     "name": "Series F Subtler",
                     "type": "color",
-                    "value": "#a185b1"
+                    "value": "oklch(65.79% 0.0714 313.01deg)"
                 }
             }
         },
@@ -614,17 +614,17 @@
                 "kendo-focus-shadow": {
                     "name": "Focus shadow",
                     "type": "shadow",
-                    "value": "0 0 0 2px rgba( 255, 255, 255, .75 )"
+                    "value": "0 0 0 2px oklch(100.00% 0.0001 0deg / 0.75)"
                 },
                 "kendo-list-item-focus-shadow": {
                     "name": "List item focus shadow",
                     "type": "shadow",
-                    "value": "inset 0 0 0 2px rgba( 255, 255, 255, .75 )"
+                    "value": "inset 0 0 0 2px oklch(100.00% 0.0001 0deg / 0.75)"
                 },
                 "kendo-treeview-item-focus-shadow": {
                     "name": "Treeview item focus shadow",
                     "type": "shadow",
-                    "value": "inset 0 0 0 2px rgba( 255, 255, 255, .75 )"
+                    "value": "inset 0 0 0 2px oklch(100.00% 0.0001 0deg / 0.75)"
                 }
             }
         }
