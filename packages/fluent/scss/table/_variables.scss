@@ -38,7 +38,7 @@ $kendo-table-lg-cell-padding-y: var( --kendo-table-lg-cell-padding-y, #{k-spacin
 
 /// Font weight of the table header cells.
 /// @group table
-$kendo-table-header-font-weight: var( --kendo-table-header-font-weight, var( --kendo-font-weight-normal, normal ) ) !default;
+$kendo-table-header-font-weight: var( --kendo-table-header-font-weight, var(--kendo-font-weight-normal) ) !default;
 
 /// Background color of tables.
 /// @group table
@@ -148,7 +148,7 @@ $kendo-table-selected-border: var( --kendo-table-selected-border, #{$kendo-table
 $kendo-table-highlighted-bg: var( --kendo-table-highlighted-bg, #{color-mix(in srgb, k-color(warning) 8%, transparent)} ) !default;
 /// The font weight of highlighted rows in table.
 /// @group table
-$kendo-table-highlighted-font-weight: var( --kendo-table-highlighted-font-weight, var( --kendo-font-weight-semibold, bold ) ) !default;
+$kendo-table-highlighted-font-weight: var( --kendo-table-highlighted-font-weight, var(--kendo-font-weight-semibold) ) !default;
 
 /// Background color of selected highlighted rows in table.
 /// @group table

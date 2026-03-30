@@ -11,13 +11,13 @@
 $kendo-gantt-border-width: 1px !default;
 /// The font family of the Gantt.
 /// @group gantt
-$kendo-gantt-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-gantt-font-family: var(--kendo-font-family) !default;
 /// The font size of the Gantt.
 /// @group gantt
-$kendo-gantt-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-gantt-font-size: var(--kendo-font-size) !default;
 /// The line height of the Gantt.
 /// @group gantt
-$kendo-gantt-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-gantt-line-height: var(--kendo-line-height) !default;
 
 /// The background color of the Gantt.
 /// @group gantt

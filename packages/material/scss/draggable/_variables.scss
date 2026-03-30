@@ -17,13 +17,13 @@ $kendo-drag-hint-border-width: 0px !default;
 $kendo-drag-hint-border-radius: 9999px !default;
 /// The font size of the drag hint.
 /// @group draggable
-$kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-drag-hint-font-size: var(--kendo-font-size) !default;
 /// The font family of the drag hint.
 /// @group draggable
-$kendo-drag-hint-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-drag-hint-font-family: var(--kendo-font-family) !default;
 /// The line height of the drag hint.
 /// @group draggable
-$kendo-drag-hint-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-drag-hint-line-height: var(--kendo-line-height) !default;
 
 /// The background color of the drag hint.
 /// @group draggable

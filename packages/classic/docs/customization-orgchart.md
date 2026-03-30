@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-spacer</td>
     <td>String</td>
     <td><code>k-spacing(6)</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing index of the OrgChart.</div></div>
@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-padding-y</td>
     <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-padding-x</td>
     <td>String</td>
     <td><code>$kendo-orgchart-padding-y</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the OrgChart.</div></div>
@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, #cacaca)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-gap</td>
     <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-group-gap</td>
     <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart group.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-padding-y</td>
     <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart node group.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-padding-x</td>
     <td>String</td>
     <td><code>$kendo-orgchart-node-group-padding-y</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart node group.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-border-radius</td>
     <td>String</td>
     <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the OrgChart node group.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #f0f0f0)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart node group.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart node group.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, #cacaca)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart node group.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-focus-shadow</td>
     <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-title-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-xl, inherit )</code></td>
-    <td><code>var(--kendo-font-size-xl, inherit)</code></td>
+    <td><code>var(--kendo-font-size-xl)</code></td>
+    <td><code>var(--kendo-font-size-xl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group title.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-title-margin-bottom</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-orgchart-spacer} / 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-6, 1.5rem) / 4)</code></td>
+    <td><code>calc(var(--kendo-spacing-6) / 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart node group title.</div></div>
@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-title-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-sm, normal )</code></td>
-    <td><code>var(--kendo-line-height-sm, normal)</code></td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group title.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-subtitle-margin-bottom</td>
     <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart node group subtitle.</div></div>
@@ -270,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-subtitle-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group subtitle.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-subtitle-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #666666)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-shadow</td>
     <td>String</td>
     <td><code>$kendo-card-shadow</code></td>
-    <td><code>var(--kendo-elevation-1, 0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-elevation-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the OrgChart Card.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-focus-shadow</td>
     <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart Card.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-title-margin-bottom</td>
     <td>String</td>
     <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0, 0px)</code></td>
+    <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart Card title.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-subtitle-margin-bottom</td>
     <td>String</td>
     <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0, 0px)</code></td>
+    <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart Card subtitle.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-body-vbox-margin-right</td>
     <td>List</td>
     <td><code>list.slash( $kendo-orgchart-spacer, 2 )</code></td>
-    <td><code>(var(--kendo-spacing-6, 1.5rem) / 2)</code></td>
+    <td><code>(var(--kendo-spacing-6) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The right margin of the OrgChart Card body title wrap.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-body-vbox-min-height</td>
     <td>String</td>
     <td><code>k-spacing(11)</code></td>
-    <td><code>var(--kendo-spacing-11, 2.75rem)</code></td>
+    <td><code>var(--kendo-spacing-11)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min height of the OrgChart Card body title wrap.</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-line-fill</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, #cacaca)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fill color of the OrgChart connecting line.</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-line-v-height</td>
     <td>String</td>
     <td><code>k-spacing(6)</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the OrgChart connecting line.</div></div>

@@ -53,27 +53,27 @@ $kendo-input-lg-padding-y: k-spacing(2) !default;
 
 /// The font size of the small Input components.
 /// @group input
-$kendo-input-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-input-sm-font-size: var(--kendo-font-size) !default;
 /// The font size of the medium Input components.
 /// @group input
-$kendo-input-md-font-size: var( --kendo-input-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-input-md-font-size: var( --kendo-input-font-size, var(--kendo-font-size) ) !default;
 /// The font size of the large Input components.
 /// @group input
-$kendo-input-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-input-lg-font-size: var(--kendo-font-size-lg) !default;
 
 /// The line height of the small Input components.
 /// @group input
-$kendo-input-sm-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-input-sm-line-height: var(--kendo-line-height) !default;
 /// The line height of the medium Input components.
 /// @group input
-$kendo-input-md-line-height: var( --kendo-input-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-input-md-line-height: var( --kendo-input-line-height, var(--kendo-line-height) ) !default;
 /// The line height of the large Input components.
 /// @group input
-$kendo-input-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-input-lg-line-height: var(--kendo-line-height-lg) !default;
 
 /// The font family of the Input input.
 /// @group input
-$kendo-input-font-family: var( --kendo-input-font-family, var( --kendo-font-family, inherit) ) !default;
+$kendo-input-font-family: var( --kendo-input-font-family, var(--kendo-font-family) ) !default;
 
 /// The width of the small Input button.
 /// @group input
@@ -366,7 +366,7 @@ $kendo-picker-outline-disabled-bg: none !default;
 
 /// The border color of the disabled outline Picker components.
 /// @group picker
-$kendo-picker-outline-disabled-border: $kendo-picker-outline-disabled-text!default;
+$kendo-picker-outline-disabled-border: $kendo-picker-outline-disabled-text !default;
 
 /// The text color of the flat Picker components.
 /// @group picker

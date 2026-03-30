@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-spacer</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The space between the FileManager items.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the FileManager.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the FileManager.</div></div>
@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FileManager.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-bg</td>
     <td>String</td>
     <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #FEFBFF)</code></td>
+    <td><code>var(--kendo-color-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-toolbar-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Toolbar.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-navigation-padding-x</td>
     <td>String</td>
     <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager Navigation.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-navigation-padding-y</td>
     <td>String</td>
     <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager Navigation.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-breadcrumb-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager Breadcrumb.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-breadcrumb-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager Breadcrumb.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-breadcrumb-bg</td>
     <td>String</td>
     <td><code>$kendo-file-manager-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-surface, #F7F3FA)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Breadcrumb.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-listview-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager ListView item.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-listview-item-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager ListView item.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-listview-item-icon-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager ListView item icon.</div></div>
@@ -451,7 +451,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-preview-padding-x</td>
     <td>String</td>
     <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager preview.</div></div>
@@ -461,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-preview-padding-y</td>
     <td>String</td>
     <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager preview.</div></div>
@@ -491,7 +491,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-preview-spacing</td>
     <td>String</td>
     <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FileManager preview.</div></div>
@@ -501,7 +501,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-preview-column-gap</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the columns in the FileManager preview.</div></div>
@@ -551,7 +551,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-preview-icon-text</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager preview icon.</div></div>

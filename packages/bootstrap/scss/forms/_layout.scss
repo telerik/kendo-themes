@@ -11,9 +11,9 @@
     .k-form,
     .k-form-inline {
         legend {
-            font-size: calc( var( --kendo-font-size, .875rem ) * 1.5 );
+            font-size: calc( var(--kendo-font-size) * 1.5 );
             font-weight: normal;
-            line-height: var( --kendo-line-height, normal );
+            line-height: var(--kendo-line-height);
             text-transform: none;
         }
 

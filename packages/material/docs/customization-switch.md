@@ -365,7 +365,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-off-track-bg</td>
     <td>String</td>
     <td><code>k-color(base)</code></td>
-    <td><code>var(--kendo-color-base, #EAE5EC)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is not checked.</div></div>
@@ -385,7 +385,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-off-track-border</td>
     <td>String</td>
     <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #6E687C)</code></td>
+    <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is not checked</div></div>
@@ -495,7 +495,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-off-track-disabled-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(base) 38%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base, #EAE5EC) 38%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base) 38%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled Switch is not checked.</div></div>
@@ -505,7 +505,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-off-track-disabled-text</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 38%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 38%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 38%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled Switch is not checked.</div></div>
@@ -515,7 +515,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-off-track-disabled-border</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(base-emphasis) 38%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis, #6E687C) 38%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis) 38%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the disabled Switch is not checked.</div></div>
@@ -535,7 +535,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-off-thumb-bg</td>
     <td>String</td>
     <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #6E687C)</code></td>
+    <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is not checked.</div></div>
@@ -615,7 +615,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-off-thumb-disabled-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(base-emphasis) 38%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis, #6E687C) 38%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis) 38%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the disabled Switch is not checked.</div></div>
@@ -655,7 +655,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is checked.</div></div>
@@ -675,7 +675,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-on-track-border</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #65558F)</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is checked.</div></div>
@@ -785,7 +785,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-on-track-disabled-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled Switch is checked.</div></div>
@@ -825,7 +825,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-on-thumb-bg</td>
     <td>String</td>
     <td><code>k-color(primary-subtle)</code></td>
-    <td><code>var(--kendo-color-primary-subtle, #E9DDFF)</code></td>
+    <td><code>var(--kendo-color-primary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is checked.</div></div>
@@ -905,7 +905,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-on-thumb-disabled-bg</td>
     <td>String</td>
     <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #FEFBFF)</code></td>
+    <td><code>var(--kendo-color-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the disabled Switch is checked.</div></div>

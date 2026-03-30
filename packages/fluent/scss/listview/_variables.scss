@@ -21,13 +21,13 @@ $kendo-listview-item-padding-y: var( --kendo-listview-item-padding-y, k-spacing(
 
 /// The font family of the ListView.
 /// @group listview
-$kendo-listview-font-family: var( --kendo-listview-font-family, var( --kendo-font-family, initial ) ) !default;
+$kendo-listview-font-family: var( --kendo-listview-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the ListView.
 /// @group listview
-$kendo-listview-font-size: var( --kendo-listview-font-size, var( --kendo-font-size, initial ) ) !default;
+$kendo-listview-font-size: var( --kendo-listview-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the ListView.
 /// @group listview
-$kendo-listview-line-height: var( --kendo-listview-line-height, var( --kendo-line-height, initial ) ) !default;
+$kendo-listview-line-height: var( --kendo-listview-line-height, var(--kendo-line-height) ) !default;
 
 /// The text color of the ListView.
 /// @group listview

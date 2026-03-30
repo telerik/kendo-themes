@@ -8,10 +8,10 @@ $kendo-color-palette-default-size: "md" !default;
 
 /// The font family of the ColorPalette.
 /// @group color-palette
-$kendo-color-palette-font-family: var( --kendo-color-palette-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-color-palette-font-family: var( --kendo-color-palette-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the ColorPalette.
 /// @group color-palette
-$kendo-color-palette-font-size: var( --kendo-color-palette-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-color-palette-font-size: var( --kendo-color-palette-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the ColorPalette.
 /// @group color-palette
 $kendo-color-palette-line-height: var( --kendo-color-palette-line-height, 0 ) !default;

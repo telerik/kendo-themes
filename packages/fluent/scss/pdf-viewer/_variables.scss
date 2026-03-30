@@ -8,13 +8,13 @@
 $kendo-pdf-viewer-border-width: var( --kendo-pdf-viewer-border-width, 1px ) !default;
 /// The font family of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-font-family: var( --kendo-pdf-viewer-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-pdf-viewer-font-family: var( --kendo-pdf-viewer-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-font-size: var( --kendo-pdf-viewer-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-pdf-viewer-font-size: var( --kendo-pdf-viewer-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-line-height: var( --kendo-pdf-viewer-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-pdf-viewer-line-height: var( --kendo-pdf-viewer-line-height, var(--kendo-line-height) ) !default;
 /// The background color of the PDFViewer.
 /// @group pdf-viewer
 $kendo-pdf-viewer-bg: var( --kendo-pdf-viewer-bg, #{k-color(surface-alt)} ) !default;
@@ -87,7 +87,7 @@ $kendo-pdf-viewer-search-panel-margin-y: var( --kendo-pdf-viewer-search-panel-ma
 
 /// The line height of the PDFViewer selection.
 /// @group pdf-viewer
-$kendo-pdf-viewer-selection-line-height: var( --kendo-pdf-viewer-selection-line-height, var( --kendo-line-height-sm, normal ) ) !default;
+$kendo-pdf-viewer-selection-line-height: var( --kendo-pdf-viewer-selection-line-height, var(--kendo-line-height-sm) ) !default;
 
 /// The background color of the PDFViewer highlight.
 /// @group pdf-viewer

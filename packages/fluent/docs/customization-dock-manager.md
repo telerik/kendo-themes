@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-border</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
-    <td><code>var(--kendo-dock-manager-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
+    <td><code>var(--kendo-dock-manager-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the DockManager component.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-pane-header-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-pane-header-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-header-padding-y, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var(--kendo-dock-manager-pane-header-padding-y, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the pane header in the DockManager component.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-pane-header-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-pane-header-padding-x, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-header-padding-x, var(--kendo-spacing-6, 1.5rem))</code></td>
+    <td><code>var(--kendo-dock-manager-pane-header-padding-x, var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the pane header in the DockManager component.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-pane-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-pane-header-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-header-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-dock-manager-pane-header-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the pane header in the DockManager component.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-pane-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-pane-header-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-header-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-dock-manager-pane-header-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the pane header in the DockManager component.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-pane-title-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-manager-pane-title-font-family, var( --kendo-font-family, inherit ) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-title-font-family, var(--kendo-font-family, inherit))</code></td>
+    <td><code>var( --kendo-dock-manager-pane-title-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>var(--kendo-dock-manager-pane-title-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the pane title in the DockManager component.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-pane-title-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-manager-pane-title-font-size, var( --kendo-font-size-lg, inherit ) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-title-font-size, var(--kendo-font-size-lg, inherit))</code></td>
+    <td><code>var( --kendo-dock-manager-pane-title-font-size, var(--kendo-font-size-lg) )</code></td>
+    <td><code>var(--kendo-dock-manager-pane-title-font-size, var(--kendo-font-size-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the pane title in the DockManager component.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-pane-title-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-manager-pane-title-line-height, var( --kendo-line-height, normal ) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-title-line-height, var(--kendo-line-height, normal))</code></td>
+    <td><code>var( --kendo-dock-manager-pane-title-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-dock-manager-pane-title-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the pane title in the DockManager component.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-pane-title-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-manager-pane-title-font-weight, var( --kendo-font-weight, normal ) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-title-font-weight, var(--kendo-font-weight, normal))</code></td>
+    <td><code>var( --kendo-dock-manager-pane-title-font-weight, var(--kendo-font-weight) )</code></td>
+    <td><code>var(--kendo-dock-manager-pane-title-font-weight, var(--kendo-font-weight))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the pane title in the DockManager component.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-pane-content-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-pane-content-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-content-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-dock-manager-pane-content-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the pane content in the DockManager component.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-pane-content-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-pane-content-padding-y, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-content-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-dock-manager-pane-content-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the pane content in the DockManager component.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-tabbed-pane-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-tabbed-pane-padding-y, k-spacing(7) )</code></td>
-    <td><code>var(--kendo-dock-manager-tabbed-pane-padding-y, var(--kendo-spacing-7, 1.75rem))</code></td>
+    <td><code>var(--kendo-dock-manager-tabbed-pane-padding-y, var(--kendo-spacing-7))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tabbed pane in the DockManager component.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-tabbed-pane-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-tabbed-pane-padding-x, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-dock-manager-tabbed-pane-padding-x, var(--kendo-spacing-6, 1.5rem))</code></td>
+    <td><code>var(--kendo-dock-manager-tabbed-pane-padding-x, var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tabbed pane in the DockManager component.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-unpinned-container-bg</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-unpinned-container-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-dock-manager-unpinned-container-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-dock-manager-unpinned-container-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background-color of the unpinned pane container in the DockManager component.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-unpinned-container-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-unpinned-container-shadow, k-elevation(6) )</code></td>
-    <td><code>var(--kendo-dock-manager-unpinned-container-shadow, var(--kendo-elevation-6, 0 14px 28.8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.2)))</code></td>
+    <td><code>var(--kendo-dock-manager-unpinned-container-shadow, var(--kendo-elevation-6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the unpinned pane container in the DockManager component.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-padding</td>
     <td>String</td>
     <td><code>var( --kendo-dock-indicator-padding, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-dock-indicator-padding, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-dock-indicator-padding, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the dock indicator in the DockManager component.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-bg</td>
     <td>String</td>
     <td><code>var( --kendo-dock-indicator-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-dock-indicator-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-dock-indicator-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the dock indicator in the DockManager component.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-text</td>
     <td>String</td>
     <td><code>var( --kendo-dock-indicator-text, k-color(primary) )</code></td>
-    <td><code>var(--kendo-dock-indicator-text, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var(--kendo-dock-indicator-text, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the dock indicator in the DockManager component.</div></div>
@@ -301,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-outline</td>
     <td>String</td>
     <td><code>var( --kendo-dock-indicator-outline, $kendo-dock-indicator-text )</code></td>
-    <td><code>var(--kendo-dock-indicator-outline, var(--kendo-dock-indicator-text, var(--kendo-color-primary, #0f6cbd)))</code></td>
+    <td><code>var(--kendo-dock-indicator-outline, var(--kendo-dock-indicator-text, var(--kendo-color-primary)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the dock indicator in the DockManager component.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-dock-indicator-shadow, k-elevation(4) )</code></td>
-    <td><code>var(--kendo-dock-indicator-shadow, var(--kendo-elevation-4, 0 4px 8px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12)))</code></td>
+    <td><code>var(--kendo-dock-indicator-shadow, var(--kendo-elevation-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the dock indicator in the DockManager component.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>String</td>
     <td><code>var( --kendo-dock-indicator-hover-bg, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-dock-indicator-hover-bg, var(--kendo-color-primary-hover, #115ea3))</code></td>
+    <td><code>var(--kendo-dock-indicator-hover-bg, var(--kendo-color-primary-hover))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> The background color of the hovered dock indicator in the DockManager component.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-dock-indicator-hover-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-dock-indicator-hover-text, var(--kendo-color-app-surface, #fafafa))</code></td>
+    <td><code>var(--kendo-dock-indicator-hover-text, var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered dock indicator in the DockManager component.</div></div>
@@ -371,7 +371,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-dock-preview-bg, color-mix(in srgb, k-color(primary) 20%, transparent) )</code></td>
-    <td><code>var(--kendo-dock-manager-dock-preview-bg, color-mix(in srgb, var(--kendo-color-primary, #0f6cbd) 20%, transparent))</code></td>
+    <td><code>var(--kendo-dock-manager-dock-preview-bg, color-mix(in srgb, var(--kendo-color-primary) 20%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the dropping area in the DockManager component.</div></div>
@@ -381,7 +381,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-dock-preview-border</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-dock-preview-border, k-color(primary) )</code></td>
-    <td><code>var(--kendo-dock-manager-dock-preview-border, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var(--kendo-dock-manager-dock-preview-border, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the dropping area in the DockManager component.</div></div>

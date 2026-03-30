@@ -12,13 +12,13 @@ $kendo-wizard-padding-x: var( --kendo-wizard-padding-x, k-spacing(6) ) !default;
 $kendo-wizard-padding-y: var( --kendo-wizard-padding-y, k-spacing(6) ) !default;
 /// The font size of the Wizard.
 /// @group wizard
-$kendo-wizard-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-wizard-font-size: var(--kendo-font-size) !default;
 /// The line height of the Wizard.
 /// @group wizard
-$kendo-wizard-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-wizard-line-height: var(--kendo-line-height) !default;
 /// The font family of the Wizard.
 /// @group wizard
-$kendo-wizard-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-wizard-font-family: var(--kendo-font-family) !default;
 
 
 /// The horizontal padding of the Wizard steps.

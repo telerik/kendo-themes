@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-font-family, var(--kendo-font-family, inherit) )</code></td>
-    <td><code>var(--kendo-calendar-font-family, var(--kendo-font-family, inherit))</code></td>
+    <td><code>var( --kendo-calendar-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>var(--kendo-calendar-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Calendar.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-padding</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-padding, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-calendar-cell-padding, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var(--kendo-calendar-cell-padding, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the calendar cell.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-calendar-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-calendar-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-calendar-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-calendar-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Calendar.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-border</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-calendar-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))</code></td>
+    <td><code>var(--kendo-calendar-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Calendar.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-header-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-padding-x, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-header-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-header-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the calendar header.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-header-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-padding-y, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-header-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-header-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the calendar header.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-calendar-header-bg, var(--kendo-color-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-calendar-header-bg, var(--kendo-color-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar header.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-border, #{$kendo-calendar-border} )</code></td>
-    <td><code>var(--kendo-calendar-header-border, var(--kendo-calendar-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent)))</code></td>
+    <td><code>var(--kendo-calendar-header-border, var(--kendo-calendar-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the calendar header.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-nav-gap</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-nav-gap, k-spacing(0) )</code></td>
-    <td><code>var(--kendo-calendar-nav-gap, var(--kendo-spacing-0, 0px))</code></td>
+    <td><code>var(--kendo-calendar-nav-gap, var(--kendo-spacing-0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the navigation buttons of the Calendar.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-footer-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-footer-padding-x, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-footer-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-footer-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the calendar footer.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-footer-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-footer-padding-y, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-footer-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-footer-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the calendar footer.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the calendar cell.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-padding-y</td>
     <td>String</td>
     <td><code>$kendo-calendar-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the calendar cell.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-header-cell-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-cell-padding-x, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-calendar-header-cell-padding-x, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var(--kendo-calendar-header-cell-padding-x, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the calendar header cell.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-header-cell-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-header-cell-padding-y, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-calendar-header-cell-padding-y, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var(--kendo-calendar-header-cell-padding-y, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Th vertical padding of the calendar header cell.</div></div>
@@ -300,8 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-cell-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-header-cell-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) )</code></td>
-    <td><code>var(--kendo-calendar-header-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm, inherit)))</code></td>
+    <td><code>var( --kendo-calendar-header-cell-font-size, var( --kendo-calendar-font-size-sm, var(--kendo-font-size-sm) ) )</code></td>
+    <td><code>var(--kendo-calendar-header-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the calendar header cell.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-caption-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-caption-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-calendar-caption-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-calendar-caption-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the calendar captions.</div></div>
@@ -341,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-caption-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-caption-padding-y, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-caption-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-caption-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the calendar captions.</div></div>
@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-caption-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-caption-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) )</code></td>
-    <td><code>var(--kendo-calendar-caption-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm, inherit)))</code></td>
+    <td><code>var( --kendo-calendar-caption-font-size, var( --kendo-calendar-font-size-sm, var(--kendo-font-size-sm) ) )</code></td>
+    <td><code>var(--kendo-calendar-caption-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the calendar captions.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-caption-color</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-caption-color, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-calendar-caption-color, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-calendar-caption-color, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar captions.</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-view-padding-block-end</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-view-padding-block-end, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-view-padding-block-end, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-view-padding-block-end, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of Calendar views.</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-view-gap</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-view-gap, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-calendar-view-gap, var(--kendo-spacing-4, 1rem))</code></td>
+    <td><code>var(--kendo-calendar-view-gap, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the views in the multiview Calendar.</div></div>
@@ -461,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-today-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-today-text, k-color(on-primary) )</code></td>
-    <td><code>var(--kendo-calendar-today-text, var(--kendo-color-on-primary, #ffffff))</code></td>
+    <td><code>var(--kendo-calendar-today-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar today cell.</div></div>
@@ -471,7 +471,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-today-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-today-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-calendar-today-bg, var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var(--kendo-calendar-today-bg, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar today cell.</div></div>
@@ -481,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-today-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-today-hover-text, k-color(on-primary) )</code></td>
-    <td><code>var(--kendo-calendar-today-hover-text, var(--kendo-color-on-primary, #ffffff))</code></td>
+    <td><code>var(--kendo-calendar-today-hover-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar today cell when hovered.</div></div>
@@ -491,7 +491,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-today-hover-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-today-hover-bg, $kendo-calendar-today-bg )</code></td>
-    <td><code>var(--kendo-calendar-today-hover-bg, var(--kendo-calendar-today-bg, var(--kendo-color-primary, #0f6cbd)))</code></td>
+    <td><code>var(--kendo-calendar-today-hover-bg, var(--kendo-calendar-today-bg, var(--kendo-color-primary)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar today cell when hovered.</div></div>
@@ -510,8 +510,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-today-font-weight, var( --kendo-calendar-font-weight-normal, var( --kendo-font-weight-normal, normal ) ) )</code></td>
-    <td><code>var(--kendo-calendar-today-font-weight, var(--kendo-calendar-font-weight-normal, var(--kendo-font-weight-normal, normal)))</code></td>
+    <td><code>var( --kendo-calendar-today-font-weight, var( --kendo-calendar-font-weight-normal, var(--kendo-font-weight-normal) ) )</code></td>
+    <td><code>var(--kendo-calendar-today-font-weight, var(--kendo-calendar-font-weight-normal, var(--kendo-font-weight-normal)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the current day in the Calendar.</div></div>
@@ -541,7 +541,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-week-number-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-week-number-text, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-calendar-week-number-text, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-calendar-week-number-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar week number cell.</div></div>
@@ -561,7 +561,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-other-month-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-other-month-text, k-color(subtle))</code></td>
-    <td><code>var(--kendo-calendar-other-month-text, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-calendar-other-month-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the other months calendar cells.</div></div>
@@ -571,7 +571,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-hover-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-hover-bg, color-mix(in srgb, k-color(primary-subtle) 75%, k-color(on-primary)) )</code></td>
-    <td><code>var(--kendo-calendar-cell-hover-bg, color-mix(in srgb, var(--kendo-color-primary-subtle, #ebf3fc) 75%, var(--kendo-color-on-primary, #ffffff)))</code></td>
+    <td><code>var(--kendo-calendar-cell-hover-bg, color-mix(in srgb, var(--kendo-color-primary-subtle) 75%, var(--kendo-color-on-primary)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the calendar cells when hovered.</div></div>
@@ -581,7 +581,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-hover-text, k-color(on-base) )</code></td>
-    <td><code>var(--kendo-calendar-cell-hover-text, var(--kendo-color-on-base, #242424))</code></td>
+    <td><code>var(--kendo-calendar-cell-hover-text, var(--kendo-color-on-base))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the calendar cells when hovered.</div></div>
@@ -591,7 +591,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-selected-bg, k-color(primary-subtle-hover) )</code></td>
-    <td><code>var(--kendo-calendar-cell-selected-bg, var(--kendo-color-primary-subtle-hover, #cfe4fa))</code></td>
+    <td><code>var(--kendo-calendar-cell-selected-bg, var(--kendo-color-primary-subtle-hover))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected calendar cell.</div></div>
@@ -601,7 +601,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-selected-text, k-color(on-base) )</code></td>
-    <td><code>var(--kendo-calendar-cell-selected-text, var(--kendo-color-on-base, #242424))</code></td>
+    <td><code>var(--kendo-calendar-cell-selected-text, var(--kendo-color-on-base))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected calendar cell.</div></div>
@@ -611,7 +611,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-border</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-selected-border, k-color(primary-on-surface) )</code></td>
-    <td><code>var(--kendo-calendar-cell-selected-border, var(--kendo-color-primary-on-surface, #0f6cbd))</code></td>
+    <td><code>var(--kendo-calendar-cell-selected-border, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected calendar cell.</div></div>
@@ -631,7 +631,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-hover-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-selected-hover-bg, k-color(primary-subtle-hover) )</code></td>
-    <td><code>var(--kendo-calendar-cell-selected-hover-bg, var(--kendo-color-primary-subtle-hover, #cfe4fa))</code></td>
+    <td><code>var(--kendo-calendar-cell-selected-hover-bg, var(--kendo-color-primary-subtle-hover))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected calendar cell when hovered.</div></div>
@@ -641,7 +641,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-selected-hover-text, k-color(on-base) )</code></td>
-    <td><code>var(--kendo-calendar-cell-selected-hover-text, var(--kendo-color-on-base, #242424))</code></td>
+    <td><code>var(--kendo-calendar-cell-selected-hover-text, var(--kendo-color-on-base))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected calendar cell when hovered.</div></div>
@@ -651,7 +651,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-focus-shadow, inset 0 0 0 2px k-color(primary) )</code></td>
-    <td><code>var(--kendo-calendar-cell-focus-shadow, inset 0 0 0 2px var(--kendo-color-primary, #0f6cbd))</code></td>
+    <td><code>var(--kendo-calendar-cell-focus-shadow, inset 0 0 0 2px var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell when focused.</div></div>
@@ -661,7 +661,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-cell-selected-focus-shadow, #{$kendo-calendar-cell-focus-shadow} )</code></td>
-    <td><code>var(--kendo-calendar-cell-selected-focus-shadow, var(--kendo-calendar-cell-focus-shadow, inset 0 0 0 2px var(--kendo-color-primary, #0f6cbd)))</code></td>
+    <td><code>var(--kendo-calendar-cell-selected-focus-shadow, var(--kendo-calendar-cell-focus-shadow, inset 0 0 0 2px var(--kendo-color-primary)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell when selected and focused.</div></div>
@@ -691,7 +691,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-navigation-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-calendar-navigation-bg, var(--kendo-color-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-calendar-navigation-bg, var(--kendo-color-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the navigation in the infinite Calendar.</div></div>
@@ -701,7 +701,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-navigation-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-navigation-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-calendar-navigation-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-calendar-navigation-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the navigation in the infinite Calendar.</div></div>
@@ -711,7 +711,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-navigation-border</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-navigation-border, #{$kendo-calendar-header-border} )</code></td>
-    <td><code>var(--kendo-calendar-navigation-border, var(--kendo-calendar-header-border, var(--kendo-calendar-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 16%, transparent))))</code></td>
+    <td><code>var(--kendo-calendar-navigation-border, var(--kendo-calendar-header-border, var(--kendo-calendar-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the navigation in the infinite Calendar.</div></div>
@@ -721,7 +721,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-navigation-hover-text</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-navigation-hover-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-calendar-navigation-hover-text, var(--kendo-color-primary-hover, #115ea3))</code></td>
+    <td><code>var(--kendo-calendar-navigation-hover-text, var(--kendo-color-primary-hover))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered items in the calendar navigation.</div></div>
@@ -741,7 +741,7 @@ The following table lists the available variables for customization.
     <td>$kendo-infinite-calendar-header-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-infinite-calendar-header-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-infinite-calendar-header-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-infinite-calendar-header-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the navigation in the infinite Calendar.</div></div>
@@ -751,7 +751,7 @@ The following table lists the available variables for customization.
     <td>$kendo-infinite-calendar-header-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-infinite-calendar-header-padding-y, k-spacing(3) k-spacing(1) )</code></td>
-    <td><code>var(--kendo-infinite-calendar-header-padding-y, var(--kendo-spacing-3, 0.75rem) var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-infinite-calendar-header-padding-y, var(--kendo-spacing-3) var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the navigation in the infinite Calendar.</div></div>
@@ -761,7 +761,7 @@ The following table lists the available variables for customization.
     <td>$kendo-infinite-calendar-view-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-infinite-calendar-view-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the infinite Calendar.</div></div>
@@ -771,7 +771,7 @@ The following table lists the available variables for customization.
     <td>$kendo-infinite-calendar-view-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-infinite-calendar-view-padding-y, k-spacing(0) )</code></td>
-    <td><code>var(--kendo-infinite-calendar-view-padding-y, var(--kendo-spacing-0, 0px))</code></td>
+    <td><code>var(--kendo-infinite-calendar-view-padding-y, var(--kendo-spacing-0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the infinite Calendar.</div></div>
@@ -791,7 +791,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-range-bg</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-range-bg, k-color(primary-subtle-hover) )</code></td>
-    <td><code>var(--kendo-calendar-range-bg, var(--kendo-color-primary-subtle-hover, #cfe4fa))</code></td>
+    <td><code>var(--kendo-calendar-range-bg, var(--kendo-color-primary-subtle-hover))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the range selection in the Calendar.</div></div>
@@ -811,7 +811,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-range-cell-border-radius</td>
     <td>String</td>
     <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the range cells in the Calendar.</div></div>
@@ -820,8 +820,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-sm-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) )</code></td>
-    <td><code>var(--kendo-calendar-sm-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm, inherit)))</code></td>
+    <td><code>var( --kendo-calendar-sm-font-size, var( --kendo-calendar-font-size-sm, var(--kendo-font-size-sm) ) )</code></td>
+    <td><code>var(--kendo-calendar-sm-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Calendar.</div></div>
@@ -830,8 +830,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-sm-line-height, var( --kendo-calendar-line-height-sm, var( --kendo-line-height-sm, normal ) ) )</code></td>
-    <td><code>var(--kendo-calendar-sm-line-height, var(--kendo-calendar-line-height-sm, var(--kendo-line-height-sm, normal)))</code></td>
+    <td><code>var( --kendo-calendar-sm-line-height, var( --kendo-calendar-line-height-sm, var(--kendo-line-height-sm) ) )</code></td>
+    <td><code>var(--kendo-calendar-sm-line-height, var(--kendo-calendar-line-height-sm, var(--kendo-line-height-sm)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Calendar.</div></div>
@@ -851,7 +851,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-sm-cell-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-sm-cell-padding-x, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-calendar-sm-cell-padding-x, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var(--kendo-calendar-sm-cell-padding-x, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the small Calendar.</div></div>
@@ -861,7 +861,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-sm-cell-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-sm-cell-padding-y, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-calendar-sm-cell-padding-y, var(--kendo-spacing-0\.5, 0.125rem))</code></td>
+    <td><code>var(--kendo-calendar-sm-cell-padding-y, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the small Calendar.</div></div>
@@ -870,8 +870,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-sm-cell-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-sm-cell-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) )</code></td>
-    <td><code>var(--kendo-calendar-sm-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm, inherit)))</code></td>
+    <td><code>var( --kendo-calendar-sm-cell-font-size, var( --kendo-calendar-font-size-sm, var(--kendo-font-size-sm) ) )</code></td>
+    <td><code>var(--kendo-calendar-sm-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the small Calendar.</div></div>
@@ -880,8 +880,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-md-font-size, var( --kendo-calendar-font-size, var( --kendo-font-size, inherit ) ) )</code></td>
-    <td><code>var(--kendo-calendar-md-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>var( --kendo-calendar-md-font-size, var( --kendo-calendar-font-size, var(--kendo-font-size) ) )</code></td>
+    <td><code>var(--kendo-calendar-md-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Calendar.</div></div>
@@ -890,8 +890,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-md-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-md-line-height, var( --kendo-calendar-line-height, var( --kendo-line-height, normal ) ) )</code></td>
-    <td><code>var(--kendo-calendar-md-line-height, var(--kendo-calendar-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>var( --kendo-calendar-md-line-height, var( --kendo-calendar-line-height, var(--kendo-line-height) ) )</code></td>
+    <td><code>var(--kendo-calendar-md-line-height, var(--kendo-calendar-line-height, var(--kendo-line-height)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Calendar.</div></div>
@@ -911,7 +911,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-md-cell-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-md-cell-padding-x, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-md-cell-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-md-cell-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the medium Calendar.</div></div>
@@ -921,7 +921,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-md-cell-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-md-cell-padding-y, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-md-cell-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-md-cell-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the medium Calendar.</div></div>
@@ -930,8 +930,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-md-cell-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-md-cell-font-size, var( --kendo-calendar-font-size-sm, var( --kendo-font-size-sm, inherit ) ) )</code></td>
-    <td><code>var(--kendo-calendar-md-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm, inherit)))</code></td>
+    <td><code>var( --kendo-calendar-md-cell-font-size, var( --kendo-calendar-font-size-sm, var(--kendo-font-size-sm) ) )</code></td>
+    <td><code>var(--kendo-calendar-md-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the medium Calendar.</div></div>
@@ -940,8 +940,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-lg-font-size, var( --kendo-calendar-font-size, var( --kendo-font-size, inherit ) ) )</code></td>
-    <td><code>var(--kendo-calendar-lg-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>var( --kendo-calendar-lg-font-size, var( --kendo-calendar-font-size, var(--kendo-font-size) ) )</code></td>
+    <td><code>var(--kendo-calendar-lg-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Calendar.</div></div>
@@ -950,8 +950,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-lg-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-lg-line-height, var( --kendo-calendar-line-height, var( --kendo-line-height, normal ) ) )</code></td>
-    <td><code>var(--kendo-calendar-lg-line-height, var(--kendo-calendar-line-height, var(--kendo-line-height, normal)))</code></td>
+    <td><code>var( --kendo-calendar-lg-line-height, var( --kendo-calendar-line-height, var(--kendo-line-height) ) )</code></td>
+    <td><code>var(--kendo-calendar-lg-line-height, var(--kendo-calendar-line-height, var(--kendo-line-height)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Calendar.</div></div>
@@ -971,7 +971,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-lg-cell-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-lg-cell-padding-x, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-lg-cell-padding-x, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-lg-cell-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the large Calendar.</div></div>
@@ -981,7 +981,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-lg-cell-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-lg-cell-padding-y, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-calendar-lg-cell-padding-y, var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><code>var(--kendo-calendar-lg-cell-padding-y, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the large Calendar.</div></div>
@@ -990,8 +990,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-lg-cell-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-calendar-lg-cell-font-size, var( --kendo-calendar-font-size, var( --kendo-font-size, inherit ) ) )</code></td>
-    <td><code>var(--kendo-calendar-lg-cell-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size, inherit)))</code></td>
+    <td><code>var( --kendo-calendar-lg-cell-font-size, var( --kendo-calendar-font-size, var(--kendo-font-size) ) )</code></td>
+    <td><code>var(--kendo-calendar-lg-cell-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the large Calendar.</div></div>
@@ -1026,7 +1026,7 @@ The following table lists the available variables for customization.
         cell-font-size: $kendo-calendar-lg-cell-font-size
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-calendar-sm-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm, inherit)))","line-height":"var(--kendo-calendar-sm-line-height, var(--kendo-calendar-line-height-sm, var(--kendo-line-height-sm, normal)))","cell-size":"var(--kendo-calendar-sm-cell-size, 24px)","cell-padding-x":"var(--kendo-calendar-sm-cell-padding-y, var(--kendo-spacing-0\\.5, 0.125rem))","cell-padding-y":"var(--kendo-calendar-sm-cell-padding-x, var(--kendo-spacing-0\\.5, 0.125rem))","cell-font-size":"var(--kendo-calendar-sm-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm, inherit)))"</li><li>md: "font-size":"var(--kendo-calendar-md-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-calendar-md-line-height, var(--kendo-calendar-line-height, var(--kendo-line-height, normal)))","cell-size":"var(--kendo-calendar-md-cell-size, var(--kendo-calendar-cell-size, 32px))","cell-padding-x":"var(--kendo-calendar-md-cell-padding-y, var(--kendo-spacing-1, 0.25rem))","cell-padding-y":"var(--kendo-calendar-md-cell-padding-x, var(--kendo-spacing-1, 0.25rem))","cell-font-size":"var(--kendo-calendar-md-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm, inherit)))"</li><li>lg: "font-size":"var(--kendo-calendar-lg-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size, inherit)))","line-height":"var(--kendo-calendar-lg-line-height, var(--kendo-calendar-line-height, var(--kendo-line-height, normal)))","cell-size":"var(--kendo-calendar-lg-cell-size, 36px)","cell-padding-x":"var(--kendo-calendar-lg-cell-padding-y, var(--kendo-spacing-1, 0.25rem))","cell-padding-y":"var(--kendo-calendar-lg-cell-padding-x, var(--kendo-spacing-1, 0.25rem))","cell-font-size":"var(--kendo-calendar-lg-cell-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size, inherit)))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-calendar-sm-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm)))","line-height":"var(--kendo-calendar-sm-line-height, var(--kendo-calendar-line-height-sm, var(--kendo-line-height-sm)))","cell-size":"var(--kendo-calendar-sm-cell-size, 24px)","cell-padding-x":"var(--kendo-calendar-sm-cell-padding-y, var(--kendo-spacing-0\\.5))","cell-padding-y":"var(--kendo-calendar-sm-cell-padding-x, var(--kendo-spacing-0\\.5))","cell-font-size":"var(--kendo-calendar-sm-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm)))"</li><li>md: "font-size":"var(--kendo-calendar-md-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size)))","line-height":"var(--kendo-calendar-md-line-height, var(--kendo-calendar-line-height, var(--kendo-line-height)))","cell-size":"var(--kendo-calendar-md-cell-size, var(--kendo-calendar-cell-size, 32px))","cell-padding-x":"var(--kendo-calendar-md-cell-padding-y, var(--kendo-spacing-1))","cell-padding-y":"var(--kendo-calendar-md-cell-padding-x, var(--kendo-spacing-1))","cell-font-size":"var(--kendo-calendar-md-cell-font-size, var(--kendo-calendar-font-size-sm, var(--kendo-font-size-sm)))"</li><li>lg: "font-size":"var(--kendo-calendar-lg-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size)))","line-height":"var(--kendo-calendar-lg-line-height, var(--kendo-calendar-line-height, var(--kendo-line-height)))","cell-size":"var(--kendo-calendar-lg-cell-size, 36px)","cell-padding-x":"var(--kendo-calendar-lg-cell-padding-y, var(--kendo-spacing-1))","cell-padding-y":"var(--kendo-calendar-lg-cell-padding-x, var(--kendo-spacing-1))","cell-font-size":"var(--kendo-calendar-lg-cell-font-size, var(--kendo-calendar-font-size, var(--kendo-font-size)))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes Map of the Calendar.</div></div>

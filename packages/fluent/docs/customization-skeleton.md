@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-skeleton-text-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-skeleton-text-border-radius, k-border-radius(md) )</code></td>
-    <td><code>var(--kendo-skeleton-text-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+    <td><code>var(--kendo-skeleton-text-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Skeleton text.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-skeleton-rect-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-skeleton-rect-border-radius, k-border-radius(md) )</code></td>
-    <td><code>var(--kendo-skeleton-rect-border-radius, var(--kendo-border-radius-md, 0.25rem))</code></td>
+    <td><code>var(--kendo-skeleton-rect-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the rectangular Skeleton.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-skeleton-item-bg</td>
     <td>String</td>
     <td><code>var( --kendo-skeleton-item-bg, color-mix(in srgb, k-color(on-app-surface) 9%, transparent) )</code></td>
-    <td><code>var(--kendo-skeleton-item-bg, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 9%, transparent))</code></td>
+    <td><code>var(--kendo-skeleton-item-bg, color-mix(in srgb, var(--kendo-color-on-app-surface) 9%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton item.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-skeleton-wave-bg</td>
     <td>String</td>
     <td><code>var( --kendo-skeleton-wave-bg, k-color(base) )</code></td>
-    <td><code>var(--kendo-skeleton-wave-bg, var(--kendo-color-base, #ffffff))</code></td>
+    <td><code>var(--kendo-skeleton-wave-bg, var(--kendo-color-base))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton wave animation.</div></div>

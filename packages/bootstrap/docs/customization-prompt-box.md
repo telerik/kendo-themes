@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-box-border-radius</td>
     <td>String</td>
     <td><code>k-border-radius(xl)</code></td>
-    <td><code>var(--kendo-border-radius-xl, 1rem)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PromptBox.</div></div>
@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-box-box-shadow</td>
     <td>String</td>
     <td><code>k-elevation(1)</code></td>
-    <td><code>var(--kendo-elevation-1, 0px 1px 2px rgba(0, 0, 0, 0.038))</code></td>
+    <td><code>var(--kendo-elevation-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the PromptBox.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-box-header-padding</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PromptBox header.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-box-input-inner-padding</td>
     <td>String</td>
     <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+    <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inner padding of the PromptBox input.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-box-affix-padding</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PromptBox affix.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-prompt-box-affix-spacing</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the PromptBox affixes.</div></div>

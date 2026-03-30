@@ -8,7 +8,7 @@
     // Treeview leaf
     .k-treeview-leaf {
         &.k-selected {
-            font-weight: var( --kendo-font-weight-semibold, 600 );
+            font-weight: var(--kendo-font-weight-semibold);
         }
     }
 

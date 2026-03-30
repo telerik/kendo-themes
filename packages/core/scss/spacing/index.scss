@@ -52,9 +52,8 @@ $kendo-spacing: map.merge($default-spacing, $kendo-spacing);
 
 
 @function k-spacing($step) {
-    $spacing: map.get($kendo-spacing, $step);
     $_step: k-escape-class-name( $step );
-    @return var(--kendo-spacing-#{$_step}, #{$spacing});
+    @return var(--kendo-spacing-#{$_step});
 }
 
 // Generate a CSS variable for each value in the Spacing map

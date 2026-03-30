@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-margin-y</td>
     <td>String</td>
     <td><code>var( --kendo-expander-margin-y, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-expander-margin-y, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-expander-margin-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the ExpansionPanel.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-expander-font-family, var(--kendo-font-family, inherit) )</code></td>
-    <td><code>var(--kendo-expander-font-family, var(--kendo-font-family, inherit))</code></td>
+    <td><code>var( --kendo-expander-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>var(--kendo-expander-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the ExpansionPanel.</div></div>
@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-expander-font-size, var(--kendo-font-size, inherit) )</code></td>
-    <td><code>var(--kendo-expander-font-size, var(--kendo-font-size, inherit))</code></td>
+    <td><code>var( --kendo-expander-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>var(--kendo-expander-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ExpansionPanel.</div></div>
@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-expander-line-height, var(--kendo-line-height, normal) )</code></td>
-    <td><code>var(--kendo-expander-line-height, var(--kendo-line-height, normal))</code></td>
+    <td><code>var( --kendo-expander-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-expander-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hine height of the ExpansionPanel.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-text</td>
     <td>String</td>
     <td><code>var( --kendo-expander-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-expander-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-expander-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-bg</td>
     <td>String</td>
     <td><code>var( --kendo-expander-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-expander-bg, var(--kendo-color-surface, #ffffff))</code></td>
+    <td><code>var(--kendo-expander-bg, var(--kendo-color-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ExpansionPanel.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-border</td>
     <td>String</td>
     <td><code>var( --kendo-expander-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
-    <td><code>var(--kendo-expander-border, color-mix(in srgb, var(--kendo-color-border, rgba(36, 36, 36, 0.72)) 26%, transparent))</code></td>
+    <td><code>var(--kendo-expander-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ExpansionPanel.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-expanded-bg</td>
     <td>String</td>
     <td><code>var( --kendo-expander-expanded-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-expander-expanded-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-expander-expanded-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the expanded ExpansionPanel.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-disabled-text</td>
     <td>String</td>
     <td><code>var( --kendo-expander-disabled-text, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) )</code></td>
-    <td><code>var(--kendo-expander-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface, #242424) 30%, transparent))</code></td>
+    <td><code>var(--kendo-expander-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled ExpansionPanel.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-header-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-expander-header-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-expander-header-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-expander-header-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ExpansionPanel header.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-header-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-expander-header-padding-y, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-expander-header-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-expander-header-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ExpansionPanel header.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-header-text</td>
     <td>String</td>
     <td><code>var( --kendo-expander-header-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-expander-header-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-expander-header-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel header.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-header-hover-bg</td>
     <td>String</td>
     <td><code>var( --kendo-expander-header-hover-bg, k-color(base-hover) )</code></td>
-    <td><code>var(--kendo-expander-header-hover-bg, var(--kendo-color-base-hover, #f5f5f5))</code></td>
+    <td><code>var(--kendo-expander-header-hover-bg, var(--kendo-color-base-hover))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered ExpansionPanel header.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-title-text</td>
     <td>String</td>
     <td><code>var( --kendo-expander-title-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-expander-title-text, var(--kendo-color-on-app-surface, #242424))</code></td>
+    <td><code>var(--kendo-expander-title-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel title.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-header-sub-title-text</td>
     <td>String</td>
     <td><code>var( --kendo-expander-header-sub-title-text, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-expander-header-sub-title-text, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-expander-header-sub-title-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel sub-title.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-indicator-margin-x</td>
     <td>String</td>
     <td><code>var( --kendo-expander-indicator-margin-x, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-expander-indicator-margin-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>var(--kendo-expander-indicator-margin-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the ExpansionPanel indicator.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-indicator-text</td>
     <td>String</td>
     <td><code>var( --kendo-expander-indicator-text, k-color(subtle) )</code></td>
-    <td><code>var(--kendo-expander-indicator-text, var(--kendo-color-subtle, #707070))</code></td>
+    <td><code>var(--kendo-expander-indicator-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel indicator.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-content-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-expander-content-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-expander-content-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-expander-content-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ExpansionPanel content.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-expander-content-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-expander-content-padding-y, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-expander-content-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-expander-content-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ExpansionPanel content.</div></div>

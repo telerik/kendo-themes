@@ -6,13 +6,13 @@
 $kendo-media-player-border-width: var( --kendo-media-player-border-width, 1px ) !default;
 /// The font family of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-font-family: var( --kendo-media-player-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-media-player-font-family: var( --kendo-media-player-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-font-size: var( --kendo-media-player-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-media-player-font-size: var( --kendo-media-player-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-line-height: var( --kendo-media-player-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-media-player-line-height: var( --kendo-media-player-line-height, var(--kendo-line-height) ) !default;
 
 /// The background color of the MediaPlayer.
 /// @group mediaplayer
@@ -34,7 +34,7 @@ $kendo-media-player-quality-border: var( --kendo-media-player-quality-border, k-
 
 /// The font size of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-title-font-size: var( --kendo-media-player-title-font-size, var( --kendo-font-size-xl, inherit ) ) !default;
+$kendo-media-player-title-font-size: var( --kendo-media-player-title-font-size, var(--kendo-font-size-xl) ) !default;
 /// The horizontal padding of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-padding-x: var( --kendo-media-player-titlebar-padding-x, k-spacing(2) ) !default;

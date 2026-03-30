@@ -15,7 +15,7 @@ $kendo-time-selector-default-size: "md" !default;
 $kendo-time-selector-border-width: 1px !default;
 /// The font family of the TimeSelector.
 /// @group time-selector
-$kendo-time-selector-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-time-selector-font-family: var(--kendo-font-family) !default;
 /// The font size of the TimeSelector.
 /// @group time-selector
 $kendo-time-selector-font-size: null !default;
@@ -65,10 +65,10 @@ $kendo-time-list-height: 240px !default;
 
 /// The font size of the TimeSelector list title.
 /// @group time-selector
-$kendo-time-list-title-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-time-list-title-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the TimeSelector list title.
 /// @group time-selector
-$kendo-time-list-title-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-time-list-title-line-height: var(--kendo-line-height-sm) !default;
 /// The height of the TimeSelector list title.
 /// @group time-selector
 $kendo-time-list-title-height: calc( #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} ) !default;
@@ -92,10 +92,10 @@ $kendo-time-list-focus-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transp
 
 /// The font size of the medium TimeSelector.
 /// @group time-selector
-$kendo-time-selector-md-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-time-selector-md-font-size: var(--kendo-font-size-lg) !default;
 /// The line height of the medium TimeSelector.
 /// @group time-selector
-$kendo-time-selector-md-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-time-selector-md-line-height: var(--kendo-line-height-lg) !default;
 /// The horizontal padding of the medium TimeSelector list item.
 /// @group time-selector
 $kendo-time-selector-md-list-item-padding-x: k-spacing(3) !default;
@@ -106,7 +106,7 @@ $kendo-time-selector-md-list-item-padding-y: k-spacing(3) !default;
 // Time selector sizes
 /// The font size of the small TimeSelector.
 /// @group time-selector
-$kendo-time-selector-sm-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-time-selector-sm-font-size: var(--kendo-font-size-lg) !default;
 /// The line height of the small TimeSelector.
 /// @group time-selector
 $kendo-time-selector-sm-line-height: $kendo-time-selector-md-line-height !default;
@@ -119,10 +119,10 @@ $kendo-time-selector-sm-list-item-padding-y: k-spacing(2) !default;
 
 /// The font size of the large TimeSelector.
 /// @group time-selector
-$kendo-time-selector-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-time-selector-lg-font-size: var(--kendo-font-size-lg) !default;
 /// The line height of the large TimeSelector.
 /// @group time-selector
-$kendo-time-selector-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-time-selector-lg-line-height: var(--kendo-line-height-lg) !default;
 /// The horizontal padding of the large TimeSelector list item.
 /// @group time-selector
 $kendo-time-selector-lg-list-item-padding-x: k-spacing(4) !default;

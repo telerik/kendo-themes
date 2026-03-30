@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Pager.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-md-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Pager.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-lg-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2.5)</code></td>
-    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Pager.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-sm-padding-y</td>
     <td>String</td>
     <td><code>$kendo-pager-sm-padding-x</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Pager.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-md-padding-y</td>
     <td>String</td>
     <td><code>$kendo-pager-md-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Pager.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-lg-padding-y</td>
     <td>String</td>
     <td><code>$kendo-pager-lg-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Pager.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-sm-calc-size</code></td>
-    <td><code>calc(1.4285714286 * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)</code></td>
+    <td><code>calc(1.4285714286 * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the small Pager.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-md-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 1px * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-1\.5) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the medium Pagers.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-lg-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-lg-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 1px * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-2) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the large Pagers.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-sm-item-group-spacing</td>
     <td>String</td>
     <td><code>k-spacing(3.5)</code></td>
-    <td><code>var(--kendo-spacing-3\.5, 0.875rem)</code></td>
+    <td><code>var(--kendo-spacing-3\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the small Pager.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-md-item-group-spacing</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the medium Pager.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-lg-item-group-spacing</td>
     <td>String</td>
     <td><code>k-spacing(4.5)</code></td>
-    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
+    <td><code>var(--kendo-spacing-4\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the large Pager.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td><code>var(--kendo-font-family, inherit)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Pager.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Pager.</div></div>
@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Pager.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pager.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Pager.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px color-mix(in srgb, k-color(inverse) 8%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse, #212529) 8%, transparent))</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-inverse) 8%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-item-border-radius</td>
     <td>String</td>
     <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager items.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-item-bg</td>
     <td>String</td>
     <td><code>k-color(app-surface)</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager items.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-item-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Pager items.</div></div>
@@ -301,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-item-selected-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Pager items.</div></div>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
         item-min-width: $kendo-pager-lg-item-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-spacing":"var(--kendo-spacing-3\\.5, 0.875rem)","item-min-width":"calc(1.4285714286 * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","item-group-spacing":"var(--kendo-spacing-4, 1rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-group-spacing":"var(--kendo-spacing-4\\.5, 1.125rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 1px * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1)","item-group-spacing":"var(--kendo-spacing-3\\.5)","item-min-width":"calc(1.4285714286 * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)"</li><li>md: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","item-group-spacing":"var(--kendo-spacing-4)","item-min-width":"calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5)","padding-y":"var(--kendo-spacing-2\\.5)","item-group-spacing":"var(--kendo-spacing-4\\.5)","item-min-width":"calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-2) * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>

@@ -10,8 +10,8 @@
         @extend .k-card-title !optional;
         padding-block-end: 0;
         margin-block-end: 0;
-        font-size: var(--kendo-font-size-lg, inherit);
-        line-height: var(--kendo-line-height-sm, normal);
+        font-size: var(--kendo-font-size-lg);
+        line-height: var(--kendo-line-height-sm);
     }
 
     // Actions

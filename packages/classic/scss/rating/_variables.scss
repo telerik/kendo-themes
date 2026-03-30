@@ -6,13 +6,13 @@
 
 /// The font family of the Rating.
 /// @group rating
-$kendo-rating-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-rating-font-family: var(--kendo-font-family) !default;
 /// The font size of the Rating.
 /// @group rating
-$kendo-rating-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-rating-font-size: var(--kendo-font-size) !default;
 /// The line height of the Rating.
 /// @group rating
-$kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-rating-line-height: var(--kendo-line-height) !default;
 
 /// The horizontal margin of the Rating container.
 /// @group rating
