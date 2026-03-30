@@ -173,7 +173,7 @@ Run the validation steps from [../_shared/component-context.md](../_shared/compo
 
 See shared gotchas in [../_shared/component-context.md](../_shared/component-context.md). Additionally:
 
-- **New components:** check `packages/{theme}/scss/all.scss` for correct alphabetical import location. When target themes is not `all`, always create core and HTML files regardless.
+- **New components:** register the component in `packages/{theme}/scss/index.scss`, preserving existing dependency/import order (do not alphabetize). `packages/{theme}/scss/all.scss` is just a wrapper. When target themes is not `all`, always create core and HTML files regardless.
 - **Updates — audit first:** never assume the current state. Read the files first; components vary in complexity.
 - **Don't touch themes the user didn't ask for** — if they said "update default and fluent", leave the rest alone.
 - **Preserve existing variable order** — add new variables near related ones.

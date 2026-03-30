@@ -7,8 +7,6 @@ Detailed boilerplate templates for each file in the component scaffold. The agen
 ### `packages/core/scss/components/{component}/_variables.scss`
 
 ```scss
-@use "../../color-system/_swatch.scss" as *;
-
 // {ComponentName}
 
 $kendo-{component}-default-theme-color: null !default;

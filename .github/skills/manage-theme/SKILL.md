@@ -162,7 +162,7 @@ Customize the theme's visual identity. Use the appropriate sub-skill for each ch
 ```bash
 cd packages/{theme}
 npm run sass 2>&1
-npm run lint:styles 2>&1
+npx stylelint "scss/**/*.scss" 2>&1
 ```
 
 ## Procedure — Update Theme
