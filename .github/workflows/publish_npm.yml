@@ -6,11 +6,20 @@ on:
       release-type:
         description: "Release type"
         required: true
-        default: "stable"
+        default: "dev"
         type: choice
         options:
-          - stable
           - dev
+          - stable
+      version:
+        description: "Stable version tag (example: v14.1.1)"
+        required: false
+        type: string
+      dry-run:
+        description: "Dry run (no actual publish)"
+        required: false
+        default: false
+        type: boolean
   workflow_run:
     workflows:
       - "CI Weekly"
@@ -21,6 +30,7 @@ on:
 
 env:
   RELEASE_TYPE: ${{ github.event_name == 'workflow_run' && 'dev' || inputs.release-type }}
+  DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry-run) && '--dry-run' || '' }}
 
 jobs:
   publish:
@@ -29,7 +39,7 @@ jobs:
 
     permissions:
       id-token: write # Required by npm OIDC trusted publishing
-      contents: write # Allows lerna to create tags
+      contents: write # Allows nx release to create tags and GitHub releases
       packages: read
 
     steps:
@@ -76,21 +86,64 @@ jobs:
           npm run sass:dist
           npm run docs
 
-      - name: Lerna publish (stable)
+      - name: Validate stable version
         if: env.RELEASE_TYPE == 'stable'
         run: |
-          npx lerna publish --conventional-commits --conventional-graduate --create-release github --force-publish --exact
-        env:
-          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          RELEASE_VERSION_INPUT="${{ inputs.version }}"
 
-      - name: Lerna publish (dev)
+          if [[ -z "$RELEASE_VERSION_INPUT" ]]; then
+            echo "Missing version input. Stable releases require an explicit version tag (example: v14.1.1)."
+            exit 1
+          fi
+
+          if [[ ! "$RELEASE_VERSION_INPUT" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Invalid stable version '$RELEASE_VERSION_INPUT'. Use a v-prefixed tag, for example: v14.1.1"
+            exit 1
+          fi
+
+          RELEASE_VERSION="${RELEASE_VERSION_INPUT#v}"
+
+          echo "RELEASE_VERSION=$RELEASE_VERSION" >> "$GITHUB_ENV"
+
+      - name: Nx release (stable)
+        if: env.RELEASE_TYPE == 'stable'
+        run: |
+          npx nx release version "$RELEASE_VERSION" ${{ env.DRY_RUN }}
+          npx nx release changelog "$RELEASE_VERSION" ${{ env.DRY_RUN }}
+          npx nx release publish ${{ env.DRY_RUN }}
+        env:
+          GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Nx release (dev)
         if: env.RELEASE_TYPE == 'dev'
         run: |
-          npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
+          if [[ -n "${{ env.DRY_RUN }}" ]]; then
+            VERSION_OUTPUT=$(mktemp)
+            npx nx release version --preid dev --specifier prerelease --dry-run > "$VERSION_OUTPUT" 2>&1
+            cat "$VERSION_OUTPUT"
+
+            NEXT_DEV_VERSION=$(grep -E '^\+   "version": "[^"]+"' "$VERSION_OUTPUT" | head -n 1 | sed -E 's/^.*"version": "([^"]+)".*$/\1/')
+            if [[ -n "$NEXT_DEV_VERSION" ]]; then
+              echo "Computed next dev version: $NEXT_DEV_VERSION"
+            else
+              echo "Computed next dev version: not detected from Nx dry-run output."
+            fi
+
+            rm -f "$VERSION_OUTPUT"
+            echo "Skipping dev changelog and publish in dry-run mode to avoid stale version resolution and interactive prompts."
+          else
+            npx nx release version --preid dev --specifier prerelease
+            DEV_VERSION=$(jq -r '.version' packages/core/package.json)
+            npx nx release changelog "$DEV_VERSION"
+            npx nx release publish --tag dev
+          fi
         env:
-          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Mark checks as successful
+        if: env.DRY_RUN == ''
         run: |
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
@@ -98,7 +151,11 @@ jobs:
           GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Push to GitHub
-        if: env.RELEASE_TYPE == 'stable'
+        if: env.DRY_RUN == ''
         run: |
-          git push origin master --tags --quiet > /dev/null 2>&1
-          git push origin master:develop --quiet > /dev/null 2>&1
+          if [[ "${{ env.RELEASE_TYPE }}" == 'stable' ]]; then
+            git push origin master --tags --quiet > /dev/null 2>&1
+            git push origin master:develop --quiet > /dev/null 2>&1
+          else
+            git push origin develop --tags --quiet > /dev/null 2>&1
+          fi
