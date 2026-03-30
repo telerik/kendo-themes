@@ -46,6 +46,50 @@
       "options": {
         "script": "docs:check"
       }
+    },
+    "nx-release-publish": {
+      "options": {
+        "access": "public"
+      }
     }
-  }
+  },
+  "release": {
+    "projects": [
+      "packages/*"
+    ],
+    "projectsRelationship": "fixed",
+    "version": {
+      "conventionalCommits": true,
+      "fallbackCurrentVersionResolver": "disk",
+      "generatorOptions": {
+        "updateDependents": "auto"
+      },
+      "git": {
+        "commit": true,
+        "tag": true,
+        "commitMessage": "chore(release): {version}",
+        "stageChanges": true
+      }
+    },
+    "changelog": {
+      "projectChangelogs": false,
+      "automaticFromRef": true,
+      "workspaceChangelog": {
+        "file": "CHANGELOG.md",
+        "createRelease": "github",
+        "renderOptions": {
+          "authors": false,
+          "commitReferences": true
+        }
+      },
+      "git": {
+        "commit": true,
+        "tag": false,
+        "commitMessage": "chore(release): changelog for {version}",
+        "stageChanges": true
+      }
+    },
+    "releaseTagPattern": "v{version}"
+  },
+  "analytics": true
 }

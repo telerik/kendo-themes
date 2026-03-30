@@ -28,8 +28,7 @@ _For specific version numbers, refer to package.json files in the root and indiv
 
 - **SCSS/Sass** - Theme compilation with dart-sass
 - **Node.js** - Required runtime
-- **Lerna** - Release management
-- **Nx** - Monorepo management and task running
+- **Nx** - Monorepo management, task running, and release management
 - **PostCSS + Autoprefixer** - CSS post-processing for browser compatibility
 
 ### Development & Build Tools

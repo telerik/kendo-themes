@@ -6,11 +6,18 @@ on:
       release-type:
         description: "Release type"
         required: true
-        default: "stable"
+        default: "dev"
         type: choice
         options:
-          - stable
           - dev
+          - stable
+      dry-run:
+        description: "Dry run (no actual publish)"
+        required: false
+        default: false
+        type: boolean
+  release:
+    types: [published]
   workflow_run:
     workflows:
       - "CI Weekly"
@@ -20,7 +27,8 @@ on:
       - completed
 
 env:
-  RELEASE_TYPE: ${{ github.event_name == 'workflow_run' && 'dev' || inputs.release-type }}
+  RELEASE_TYPE: ${{ github.event_name == 'release' && 'stable' || (github.event_name == 'workflow_run' && 'dev' || inputs.release-type) }}
+  DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry-run) && '--dry-run' || '' }}
 
 jobs:
   publish:
@@ -29,7 +37,7 @@ jobs:
 
     permissions:
       id-token: write # Required by npm OIDC trusted publishing
-      contents: write # Allows lerna to create tags
+      contents: write # Allows nx release to create tags and GitHub releases
       packages: read
 
     steps:
@@ -74,21 +82,33 @@ jobs:
           npm run sass:dist
           npm run docs
 
-      - name: Lerna publish (stable)
+      - name: Derive stable version from release tag
+        if: env.RELEASE_TYPE == 'stable' && github.event_name == 'release'
+        run: echo "RELEASE_VERSION=${{ github.event.release.tag_name }}" | sed 's/=v/=/' >> "$GITHUB_ENV"
+
+      - name: Nx release (stable)
         if: env.RELEASE_TYPE == 'stable'
         run: |
-          npx lerna publish --conventional-commits --conventional-graduate --create-release github --force-publish --exact
+          npx nx release version ${RELEASE_VERSION:-''} ${{ env.DRY_RUN }}
+          npx nx release changelog ${RELEASE_VERSION:-''} ${{ env.DRY_RUN }}
+          npx nx release publish ${{ env.DRY_RUN }}
         env:
-          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Lerna publish (dev)
+      - name: Nx release (dev)
         if: env.RELEASE_TYPE == 'dev'
         run: |
-          npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
+          npx nx release version --preid dev --specifier prerelease ${{ env.DRY_RUN }}
+          DEV_VERSION=$(jq -r '.version' packages/core/package.json)
+          npx nx release changelog $DEV_VERSION ${{ env.DRY_RUN }}
+          npx nx release publish --tag dev ${{ env.DRY_RUN }}
         env:
-          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Mark checks as successful
+        if: env.DRY_RUN == ''
         run: |
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
@@ -96,7 +116,7 @@ jobs:
           GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Push to GitHub
-        if: env.RELEASE_TYPE == 'stable'
+        if: env.RELEASE_TYPE == 'stable' && env.DRY_RUN == ''
         run: |
           git push origin master --tags --quiet > /dev/null 2>&1
           git push origin master:develop --quiet > /dev/null 2>&1
