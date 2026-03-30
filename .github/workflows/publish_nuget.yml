@@ -58,11 +58,11 @@ jobs:
 
       - name: Pack nuget
         run: |
-          npx lerna run nuget-pack
+          npx nx run-many -t nuget-pack
 
       - name: Push nuget
         run: |
           nuget sources add -username ${{ env.NUGET_USER }} -password %NUGET_API_KEY% -StorePasswordInClearText -Name github -Source ${{ env.NUGET_FEED }}
-          npx lerna run nuget-push
+          npx nx run-many -t nuget-push
         env:
           NUGET_API_KEY: ${{ steps.import-secrets.outputs.GH_TOKEN_PUBLISH }}
