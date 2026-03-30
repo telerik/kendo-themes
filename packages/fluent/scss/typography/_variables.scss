@@ -37,7 +37,7 @@ $kendo-h3-font-family: var(--kendo-font-family) !default;
 /// @group typography-component
 $kendo-h4-font-family: var(--kendo-font-family) !default;
 /// The font family of the fifth highest level heading.
-///
+/// @group typography-component
 $kendo-h5-font-family: var(--kendo-font-family) !default;
 /// The font family of the sixth highest level heading.
 /// @group typography-component
@@ -59,14 +59,15 @@ $kendo-h4-line-height: 40px !default;
 /// @group typography-component
 $kendo-h5-line-height: 36px !default;
 /// The line height of the sixth highest level heading.
+/// @group typography-component
 $kendo-h6-line-height: 32px !default;
 
 /// The font weight of the highest level heading.
 /// @group typography-component
-$kendo-h2-font-weight: var(--kendo-font-weight-semibold) !default;
+$kendo-h1-font-weight: var(--kendo-font-weight-semibold) !default;
 /// The font weight of the second highest level heading.
 /// @group typography-component
-$kendo-h1-font-weight: var(--kendo-font-weight-semibold) !default;
+$kendo-h2-font-weight: var(--kendo-font-weight-semibold) !default;
 /// The font weight of the third highest level heading.
 /// @group typography-component
 $kendo-h3-font-weight: var(--kendo-font-weight-semibold) !default;
