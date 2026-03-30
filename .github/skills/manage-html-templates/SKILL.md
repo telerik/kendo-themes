@@ -37,7 +37,7 @@ List `packages/html/src/{component}/templates/` to see what already exists. Avoi
 ### Step 3: Plan the template
 
 A template is a thin wrapper around the spec component that pre-sets certain props to represent a common usage pattern. Templates should:
-- Import the component from its spec file (`../{ component}.spec`)
+- Import the component from its spec file (`../{component}.spec`)
 - Accept `props: any` and spread them onto the component
 - Pre-set the distinguishing props for this variant
 - Export a named PascalCase constant
@@ -95,7 +95,7 @@ export const {ComponentName}{Variant} = (props: any) => (
 ```
 
 **Rules:**
-- Import the component from `../{ component}.spec` (relative path to spec file)
+- Import the component from `../{component}.spec` (relative path to spec file)
 - Use default import or named import matching how the spec exports it
 - Export a **named** PascalCase constant: `{ComponentName}{Variant}`
 - Accept `(props: any)` and spread `{...props}` so callers can override any prop

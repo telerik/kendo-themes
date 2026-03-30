@@ -142,8 +142,7 @@ export default () => (
 - Wrap in `<div id="test-area">` — the screenshot tool captures this element
 - Use `className="k-d-grid"` or flexbox for layout (avoid inline styles where Kendo utility classes exist)
 - Group related variants in `<section>` elements
-- Import the component from its spec file (relative path `../../{component}`)
-- Do NOT import from `index.ts` — import directly from the spec
+- Import the component from its component folder (`../../{component}`) or directly from the spec (`../../{component}/{component}.spec`); both patterns are used in the codebase
 - Default export only (no named exports)
 - Use dynamic mapping over `Component.options.*` and `Component.states` arrays instead of hard-coding values — this auto-updates when new variants are added
 

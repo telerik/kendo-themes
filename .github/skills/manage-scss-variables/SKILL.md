@@ -100,6 +100,7 @@ When **changing** an existing variable's value:
 - Update the SassDoc comment if the description no longer fits
 - Verify the `@forward` map still includes this variable
 - Check for derived/calc variables that depend on this one
+- Regenerate docs: `npm run docs`
 
 When **removing** a variable:
 - Confirm breaking change with user, or deprecate instead:

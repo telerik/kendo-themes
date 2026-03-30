@@ -126,7 +126,7 @@ If the component has **dependencies** on other components, add them after core:
 
 Edit `packages/{theme}/scss/index.scss` for each targeted theme:
 
-1. **Add `@forward`** — placed alphabetically in the `@forward` section:
+1. **Add `@forward`** — in the existing `@forward` section, preserving the dependency-based order used in the file (do not reorder alphabetically):
    ```scss
    @forward "./{component}/_index.scss";
    ```
@@ -152,4 +152,4 @@ npm run sass 2>&1
 - **Component names in `@include import-once("...")` must be unique** across the entire theme.
 - **`@forward` must come before any `@use` of the same module** — SCSS module system requirement.
 - **Order matters in `index.scss`** — dependencies must be `@include`d before the components that use them.
-- Check `packages/{theme}/scss/all.scss` to verify the import location — components are imported alphabetically.
+- Check `packages/{theme}/scss/index.scss` to verify the registration location — components should be added in dependency order within the appropriate category group.

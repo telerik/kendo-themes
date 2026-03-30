@@ -45,15 +45,26 @@ fi
 
 REPO_ROOT="$(cd "$(dirname "$0")/../../../.." && pwd)"
 
-TARGET="${1:-all}"
+TARGET="all"
 CATEGORY="all"
 
-# Parse arguments
-shift 2>/dev/null || true
+# Parse arguments: first non-option is TARGET, --category takes a value
 while [[ $# -gt 0 ]]; do
     case "$1" in
-        --category) CATEGORY="${2:-all}"; shift 2 ;;
-        *) shift ;;
+        --category)
+            if [[ -z "${2:-}" || "${2:-}" == -* ]]; then
+                echo "ERROR: --category requires a value (e.g., 'color', 'spacing', 'all')." >&2
+                exit 1
+            fi
+            CATEGORY="$2"
+            shift 2
+            ;;
+        *)
+            if [[ "$TARGET" == "all" ]]; then
+                TARGET="$1"
+            fi
+            shift
+            ;;
     esac
 done
 

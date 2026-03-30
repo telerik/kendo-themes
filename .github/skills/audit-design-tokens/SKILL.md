@@ -133,7 +133,6 @@ Offer to apply the fixes.
 - **Core `_variables.scss` files use `null !default`** — they define the token skeleton, not values. Scan theme overrides (default, classic, material, fluent, bootstrap) for actual hardcoded values.
 - **Theme `_variables.scss` paths differ**: `packages/{theme}/scss/{component}/` (no `components/` subdirectory), unlike core which uses `packages/core/scss/components/{component}/`.
 - **Fluent theme wraps everything in `var()`** — so `var(--kendo-spacing-2, 0.5rem)` is correct even though it contains a rem literal.
-- **Material theme uses `$mat-*` internal variables** in some places — these are imported from Material Design and are acceptable.
 - **The spacing scale is non-linear**: 1→0.25rem(4px), 2→0.5rem(8px), 3→0.75rem(12px), 4→1rem(16px). Use `packages/core/scss/spacing/index.scss` as the canonical reference.
 - **`color-mix()` syntax**: `color-mix(in srgb, k-color(key) N%, transparent)` is the modern approach — do NOT flag these as violations.
 - **Some components intentionally use hardcoded values** for pixel-perfect rendering (e.g., `1px` borders, `2px` focus ring offsets). These are design decisions, not violations.

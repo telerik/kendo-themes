@@ -161,12 +161,6 @@ Fix violations and re-run until clean. Also run type checking:
 npm run typecheck --prefix packages/html
 ```
 
-### Step 6: Update ARIA reference doc (if needed)
-
-If `aria/{component}_aria.md` exists and is outdated (selectors don't match, rules are missing), update it to match the implemented `ariaSpec.rules`. The spec TSX is the source of truth; the markdown is reference documentation.
-
-If no ARIA markdown exists and the component is complex enough to warrant one, create `aria/{component}_aria.md` following the format of existing docs (see `aria/button_aria.md` or `aria/checkbox_aria.md`).
-
 ## WCAG 2.2 Quick Reference
 
 Key criteria to verify: 1.1.1 (non-text content `alt`/`aria-hidden`), 1.3.1 (semantic structure), 2.1.1 (keyboard operable), 2.4.3 (logical focus order), 2.4.6 (descriptive labels), 3.3.1 (error identification in text), 4.1.2 (name/role/value on all UI components). Target Level AA compliance.

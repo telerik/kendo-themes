@@ -9,8 +9,7 @@ When adding a new `$kendo-{component}-*` variable:
 ### Core (`packages/core/scss/components/{component}/_variables.scss`)
 
 - [ ] Add declaration with `null !default`
-- [ ] Add SassDoc `///` comment above the declaration
-- [ ] Add `@group {component}` annotation
+- [ ] SassDoc `///` comments are generally **not** needed in core — exceptions: `$kendo-{component}-theme-colors` and `$kendo-{component}-sizes` maps
 - [ ] Place near related variables (e.g., all padding vars together, all color vars together)
 
 ### Each targeted theme (`packages/{theme}/scss/{component}/_variables.scss`)
@@ -37,6 +36,7 @@ When changing an existing variable's value:
 - [ ] Verify the `@forward` map still includes this variable
 - [ ] Check for derived/calc variables that depend on this one
 - [ ] **Fluent only:** Update both the SCSS value and the CSS custom property fallback
+- [ ] Regenerate docs: `npm run docs`
 
 ## Variable Removal Checklist
 
@@ -49,6 +49,7 @@ When removing a variable:
 - [ ] Remove references from `_layout.scss` and `_theme.scss`
 - [ ] Remove from HTML spec if referenced in comments
 - [ ] Update any unit tests that reference the variable
+- [ ] Regenerate docs: `npm run docs`
 
 ### Deprecation (alternative to removal)
 
@@ -93,7 +94,7 @@ When adding a new option or option value (e.g., new size `xlarge`):
 ### Core
 
 - [ ] Add size-specific variables: `$kendo-{component}-xl-padding-x: null !default;`, etc.
-- [ ] Add to the size/option map in `_layout.scss` or `_theme.scss`
+- [ ] Add to the size/option map in `_layout.scss`
 
 ### Themes
 
