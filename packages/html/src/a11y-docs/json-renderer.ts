@@ -155,7 +155,7 @@ export function parseDescription(description: string): A11yJsonElement[] {
     const flushList = () => {
         if (listItems.length > 0) {
             elements.push({ ul: listItems.map(item =>
-                item.replace(/\(([^)]*=[^)]+)\)/g, '(`$1`)') + ';'
+                item.replace(/\(([^`)]*=[^`)]+)\)/g, '(`$1`)') + ';'
             )});
             listItems.length = 0;
         }

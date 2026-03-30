@@ -151,7 +151,7 @@ export * from './scheduler/index';
 // Tables
 export * from './table/index';
 
-// CSS Utilis
+// CSS Utils
 export * from './utils/index';
 
 // A11y documentation generator

@@ -27,9 +27,13 @@ export function buildRegistry(
 
         const moduleName = (comp.moduleName as string) || null;
         const folderName = (comp.folderName as string) || null;
-        const id = (moduleName || folderName || exportName).toLowerCase();
+        let id = (moduleName || folderName || exportName).toLowerCase();
 
-        if (registry.has(id)) continue;
+        if (registry.has(id)) {
+            // Collision — fall back to export-name-derived id so both get docs
+            id = exportName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+            if (registry.has(id)) continue;
+        }
 
         registry.set(id, {
             id,
