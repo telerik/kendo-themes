@@ -121,26 +121,6 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for focus window.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-h5-font-family</td>
-    <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
-    <td><code>var(--kendo-font-family)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the fifth highest level heading.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-h6-line-height</td>
-    <td>Number</td>
-    <td><code>32px</code></td>
-    <td><code>32px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -38375,6 +38355,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-font-size-xxs</td>
+    <td>Number</td>
+    <td><code>0.5rem</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra extra small font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-font-size-xs</td>
     <td>Number</td>
     <td><code>0.625rem</code></td>
@@ -38485,6 +38475,36 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-font-weight</td>
+    <td>Number</td>
+    <td><code>400</code></td>
+    <td><code>400</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-thin</td>
+    <td>Number</td>
+    <td><code>100</code></td>
+    <td><code>100</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thin font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-extra-light</td>
+    <td>Number</td>
+    <td><code>200</code></td>
+    <td><code>200</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra light font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-font-weight-light</td>
     <td>Number</td>
     <td><code>300</code></td>
@@ -38497,11 +38517,11 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-font-weight-normal</td>
     <td>Number</td>
-    <td><code>400</code></td>
+    <td><code>$kendo-font-weight</code></td>
     <td><code>400</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font weight across all components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The normal font weight across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -38535,86 +38555,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-letter-spacing</td>
-    <td>String</td>
-    <td><code>normal</code></td>
-    <td><code>normal</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base letter spacing across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-family</td>
-    <td>List</td>
-    <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
-    <td><code>("Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-sizes</td>
-    <td>Map</td>
-    <td><code>$_default-font-sizes</code></td>
-    <td><ul><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-line-heights</td>
-    <td>Map</td>
-    <td><code>$_default-line-heights</code></td>
-    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.33</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-size-xxs</td>
-    <td>Number</td>
-    <td><code>0.5rem</code></td>
-    <td><code>0.5rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra extra small font size across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight</td>
-    <td>Number</td>
-    <td><code>400</code></td>
-    <td><code>400</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font weight across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight-thin</td>
-    <td>Number</td>
-    <td><code>100</code></td>
-    <td><code>100</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thin font weight across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight-extra-light</td>
-    <td>Number</td>
-    <td><code>200</code></td>
-    <td><code>200</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra light font weight across all components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-font-weight-extra-bold</td>
     <td>Number</td>
     <td><code>800</code></td>
@@ -38632,6 +38572,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The most pronounced font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing</td>
+    <td>String</td>
+    <td><code>normal</code></td>
+    <td><code>normal</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base letter spacing across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -38745,9 +38695,39 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-font-family</td>
+    <td>List</td>
+    <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td><code>("Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-sizes</td>
+    <td>Map</td>
+    <td><code>$_default-font-sizes</code></td>
+    <td><ul><li>xxs: 0.5rem</li><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-heights</td>
+    <td>Map</td>
+    <td><code>$_default-line-heights</code></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.33</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>$default-font-weights</code></td>
+    <td><code>$_default-font-weights</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li><li>extra-bold: 800</li><li>black: 900</li></ul></td>
 </tr>
 <tr>
@@ -38757,7 +38737,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>$default-letter-spacings</code></td>
+    <td><code>$_default-letter-spacings</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
@@ -38767,7 +38747,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-font-families</td>
     <td>Map</td>
-    <td><code>$default-font-families</code></td>
+    <td><code>$_default-font-families</code></td>
     <td><ul><li>sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans)</li><li>serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville)</li><li>sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</li><li>monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>
@@ -38895,6 +38875,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-h5-font-family</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the fifth highest level heading.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-h6-font-family</td>
     <td>String</td>
     <td><code>var(--kendo-font-family)</code></td>
@@ -38955,7 +38945,17 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-h2-font-weight</td>
+    <td>$kendo-h6-line-height</td>
+    <td>Number</td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-h1-font-weight</td>
     <td>String</td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
@@ -38965,7 +38965,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-h1-font-weight</td>
+    <td>$kendo-h2-font-weight</td>
     <td>String</td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
     <td><code>var(--kendo-font-weight-semibold)</code></td>
