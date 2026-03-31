@@ -81,7 +81,7 @@ export const TabStripItem = (
             </span>
             {(actions || closable) && <span className="k-item-actions">
                 {actions}
-                {closable && <Button as="span" className="k-remove-tab" icon="x" fillMode="flat" title="Close" aria-hidden="true" />}
+                {closable && <Button as="span" className="k-remove-tab" icon="x" fillMode="flat" size="xsmall" title="Close" aria-hidden="true" />}
             </span>}
             {children}
         </li>

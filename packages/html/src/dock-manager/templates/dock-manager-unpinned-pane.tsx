@@ -11,8 +11,8 @@ export const DockManagerUnpinnedPane = (props) => (
         unpinnedPane={
             <PaneScrollable title="Tools" actions={
                 <>
-                    <Button fillMode="flat" icon="unpin" aria-label="Unpin pane"></Button>
-                    <Button fillMode="flat" icon="more-vertical" aria-label="More actions"></Button>
+                    <Button fillMode="flat" size="xsmall" icon="unpin" aria-label="Unpin pane"></Button>
+                    <Button fillMode="flat" size="xsmall" icon="more-vertical" aria-label="More actions"></Button>
                 </>
             }>
             Some tools.

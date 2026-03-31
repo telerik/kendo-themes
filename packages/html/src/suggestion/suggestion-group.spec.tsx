@@ -56,9 +56,9 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
     if (layout =='scrollButtons') {
         return (
             <div className="k-suggestion-scrollwrap">
-                <Button fillMode={"flat"} icon="chevron-left" size="small" aria-label="Scroll left"></Button>
+                <Button fillMode={"flat"} icon="chevron-left" size="xsmall" aria-label="Scroll left"></Button>
                 {suggestionContent}
-                <Button fillMode={"flat"} icon="chevron-right" size="small" aria-label="Scroll right"></Button>
+                <Button fillMode={"flat"} icon="chevron-right" size="xsmall" aria-label="Scroll right"></Button>
             </div>
         );
     }

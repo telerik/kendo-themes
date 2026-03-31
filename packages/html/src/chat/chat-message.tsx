@@ -86,7 +86,7 @@ export const ChatMessage = (
                     'k-message-failed':  failed
                 }
             )}>
-            { failed && <IconButton className="k-resend-button" icon="arrow-rotate-cw-outline" size="small" fillMode="clear" aria-label="Resend" />}
+            { failed && <IconButton className="k-resend-button" icon="arrow-rotate-cw-outline" size="xsmall" fillMode="clear" aria-label="Resend" />}
             <ChatBubble
                 typing={typing}
                 selected={selected}
