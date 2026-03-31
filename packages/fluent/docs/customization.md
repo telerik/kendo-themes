@@ -18615,8 +18615,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-content-border-width</td>
     <td>Number</td>
-    <td><code>0</code></td>
-    <td><code>0</code></td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor content border width.</div></div>
@@ -18675,8 +18675,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-action-pane-width, if( #{$kendo-image-editor-content-border-width} == 0, 270px, calc( 270px + #{$kendo-image-editor-content-border-width}) ) )</code></td>
-    <td><code>var(--kendo-image-editor-action-pane-width, calc(270px + 0))</code></td>
+    <td><code>var( --kendo-image-editor-action-pane-width, calc( 270px + #{$kendo-image-editor-content-border-width}) )</code></td>
+    <td><code>var(--kendo-image-editor-action-pane-width, calc(270px + 0px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor action pane width.</div></div>
