@@ -45,7 +45,7 @@ export const ChatMessageReference = (
             {closeable &&
                 <>
                     <span className="k-spacer"></span>
-                    <Button icon="x-mark-sm-outline" fillMode="flat" aria-label="Close"></Button>
+                    <Button icon="x-mark-sm-outline" fillMode="flat" size="xsmall" aria-label="Close"></Button>
                 </>}
         </div>
     );

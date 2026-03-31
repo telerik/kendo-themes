@@ -46,9 +46,10 @@ export default () => (
                                 active
                                 actions={
                                 <>
-                                    <Button fillMode="flat" icon="pin"></Button>
+                                    <Button fillMode="flat" size="xsmall" icon="pin"></Button>
                                     <MenuButton
                                         fillMode="flat"
+                                        size="xsmall"
                                         icon="more-vertical"
                                         showArrow={false}
                                     ></MenuButton>
@@ -60,9 +61,10 @@ export default () => (
                                 value="Pane Title 2"
                                 actions={
                                 <>
-                                    <Button fillMode="flat" icon="pin"></Button>
+                                    <Button fillMode="flat" size="xsmall" icon="pin"></Button>
                                     <MenuButton
                                         fillMode="flat"
+                                        size="xsmall"
                                         icon="more-vertical"
                                         showArrow={false}
                                     ></MenuButton>
@@ -89,8 +91,8 @@ export default () => (
                         <SplitterPane key="pane-1">
                             <PaneScrollable title="Pane Title 1" actions={
                                 <>
-                                    <Button fillMode="flat" icon="pin"></Button>
-                                    <MenuButton fillMode="flat" icon="more-vertical" showArrow={false}></MenuButton>
+                                    <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                    <MenuButton fillMode="flat" size="xsmall" icon="more-vertical" showArrow={false}></MenuButton>
                                 </>
                             }>
                                 <p>
@@ -101,8 +103,8 @@ export default () => (
                         <SplitterPane key="pane-2">
                             <PaneScrollable title="Pane Title 2" actions={
                                 <>
-                                    <Button fillMode="flat" icon="pin"></Button>
-                                    <MenuButton fillMode="flat" icon="more-vertical" showArrow={false}></MenuButton>
+                                    <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                    <MenuButton fillMode="flat" size="xsmall" icon="more-vertical" showArrow={false}></MenuButton>
                                 </>
                             }>
                                 <p>

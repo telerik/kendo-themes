@@ -3,7 +3,7 @@ import { MenuButton, IconMenuButton, IconTextMenuButton } from '../../menu-butto
 const style = `
     #test-area {
         max-width: 1240px;
-        grid-template-columns: 80px 1fr 1fr 1fr 1fr;
+        grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr;
     }
     .wrapper {
         display: flex;
@@ -17,6 +17,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
             <span><small>rounded / size</small></span>
             <span>undefined</span>
+            <span>x-small</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>

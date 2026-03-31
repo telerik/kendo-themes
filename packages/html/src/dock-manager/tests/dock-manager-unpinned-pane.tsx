@@ -27,14 +27,14 @@ export default () => (
                                         <>
                                             <TabStripItem first value="File 1" active actions={
                                                 <>
-                                                    <Button fillMode="flat" icon="pin"></Button>
-                                                    <Button fillMode="flat" icon="more-vertical"></Button>
+                                                    <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                                    <Button fillMode="flat" size="xsmall" icon="more-vertical"></Button>
                                                 </>
                                             }></TabStripItem>
                                             <TabStripItem last value="File 2" actions={
                                                 <>
-                                                    <Button fillMode="flat" icon="pin"></Button>
-                                                    <Button fillMode="flat" icon="more-vertical"></Button>
+                                                    <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                                    <Button fillMode="flat" size="xsmall" icon="more-vertical"></Button>
                                                 </>
                                             }></TabStripItem>
                                         </>
@@ -53,14 +53,14 @@ export default () => (
                                                 <>
                                                     <TabStripItem first value="File 5" active actions={
                                                         <>
-                                                            <Button fillMode="flat" icon="pin"></Button>
-                                                            <Button fillMode="flat" icon="more-vertical"></Button>
+                                                            <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                                            <Button fillMode="flat" size="xsmall" icon="more-vertical"></Button>
                                                         </>
                                                     }></TabStripItem>
                                                     <TabStripItem last value="File 6" actions={
                                                         <>
-                                                            <Button fillMode="flat" icon="pin"></Button>
-                                                            <Button fillMode="flat" icon="more-vertical"></Button>
+                                                            <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                                            <Button fillMode="flat" size="xsmall" icon="more-vertical"></Button>
                                                         </>
                                                     }></TabStripItem>
                                                 </>
