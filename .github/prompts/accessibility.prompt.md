@@ -7,6 +7,8 @@ description: "Apply ARIA accessibility attributes to an HTML package component"
 
 Given a component name or `.spec.tsx` file, apply WAI-ARIA attributes to make it WCAG 2.2 Level AA compliant.
 
+> **See also:** The [manage-html-a11y skill](../skills/manage-html-a11y/SKILL.md) contains the same workflow with additional reference material. This prompt and the skill share the same patterns and rules.
+
 ## Steps
 
 ### 1. Gather context

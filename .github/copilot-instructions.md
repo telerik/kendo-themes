@@ -145,7 +145,7 @@ npm run clean                   # Full cleanup (includes node_modules)
 
 ### Accessibility
 
-- Use the `/accessibility` prompt for applying ARIA to components
+- Use the `manage-html-a11y` skill or `/accessibility` prompt for applying ARIA to components
 - Refer to `.github/prompts/accessibility.prompt.md` for patterns and rules
 
 ### SCSS Standards
