@@ -70,7 +70,7 @@ function mergeConfig(base: VpatConfig, overrides?: VpatOverrides): VpatConfig {
 // TEST REPORT ANALYSIS
 // ============================================================================
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+ 
 function analyzeA11yReport(report: any): VpatTestAnalysis | null {
     if (!report) { return null; }
 
@@ -167,7 +167,7 @@ function getRemarksForCriteria(criteriaNum: string, exceptionsIndex: Record<stri
 // MARKDOWN GENERATION
 // ============================================================================
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+ 
 function generateMarkdown(config: VpatConfig, analysis: VpatTestAnalysis | null, contrastReport: any): string {
     const version = getVersion(config);
     const reportDate = getReportDate(config);
