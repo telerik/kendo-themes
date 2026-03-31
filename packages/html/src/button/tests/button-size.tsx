@@ -7,7 +7,7 @@ import { IconButton } from '../templates/icon-button';
 const styles = `
 #test-area {
     max-width: 1240px;
-    grid-template-columns: 80px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr;
 }
 small,
 section {
@@ -22,6 +22,7 @@ export default () => (
 
             <span><small>rounded / size</small></span>
             <span>undefined</span>
+            <span>x-small</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>
