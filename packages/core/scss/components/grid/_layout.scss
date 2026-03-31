@@ -17,6 +17,7 @@
 @use "../tabstrip/_variables.scss" as *;
 @use "../popup/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../../border-radii/index.scss" as *;
 
 @mixin kendo-grid--layout-base() {
 
@@ -1082,11 +1083,7 @@
                     .k-grid-filter,
                     .k-header-column-menu,
                     .k-grid-header-menu {
-                        padding: $_button-padding-y;
-                        width: $_button-calc-size;
-                        height: $_button-calc-size;
-                        line-height: $_button-line-height;
-                        inset-block-end: calc( #{$_header-padding-y} + #{list.slash( $kendo-line-height-em, 2)} - #{list.slash( $kendo-button-inner-calc-size, 2 )} );
+                        inset-block-end: calc( #{$_header-padding-y} + #{list.slash( $kendo-line-height-em, 2)} - #{list.slash( $kendo-button-xs-calc-size, 2 )} );
                     }
                 }
 
@@ -1167,6 +1164,22 @@
                     background: none;
                     cursor: row-resize;
                     z-index: k-z-index("base", 2);
+                }
+            }
+
+            .k-grid-filter,
+            .k-header-column-menu,
+            .k-grid-header-menu {
+                padding: $kendo-button-xs-padding-y $kendo-button-xs-padding-x;
+                width: $kendo-button-xs-calc-size;
+                height: $kendo-button-xs-calc-size;
+                line-height: $kendo-button-xs-line-height;
+                border-radius: k-border-radius(md);
+
+                > .k-svg-icon > svg,
+                > .k-icon-wrapper-host svg {
+                    width: $kendo-icon-size-md;
+                    height: $kendo-icon-size-md;
                 }
             }
         }

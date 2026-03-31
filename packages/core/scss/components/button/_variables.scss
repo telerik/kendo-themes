@@ -9,10 +9,12 @@ $kendo-button-border-width: null !default;
 
 $kendo-button-border-radius: null !default;
 
+$kendo-button-xs-padding-x: null !default;
 $kendo-button-sm-padding-x: null !default;
 $kendo-button-md-padding-x: null !default;
 $kendo-button-lg-padding-x: null !default;
 
+$kendo-button-xs-padding-y: null !default;
 $kendo-button-sm-padding-y: null !default;
 $kendo-button-md-padding-y: null !default;
 $kendo-button-lg-padding-y: null !default;
@@ -21,20 +23,24 @@ $kendo-button-font-family: null !default;
 $kendo-button-font-weight: null !default;
 
 $kendo-button-font-size: null !default;
+$kendo-button-xs-font-size: null !default;
 $kendo-button-sm-font-size: null !default;
 $kendo-button-md-font-size: null !default;
 $kendo-button-lg-font-size: null !default;
 
 $kendo-button-line-height: null !default;
+$kendo-button-xs-line-height: null !default;
 $kendo-button-sm-line-height: null !default;
 $kendo-button-md-line-height: null !default;
 $kendo-button-lg-line-height: null !default;
 
+$kendo-button-xs-calc-size: null !default;
 $kendo-button-sm-calc-size: null !default;
 $kendo-button-md-calc-size: null !default;
 $kendo-button-lg-calc-size: null !default;
 
 $kendo-button-inner-calc-size: null !default;
+$kendo-button-xs-inner-calc-size: null !default;
 $kendo-button-sm-inner-calc-size: null !default;
 $kendo-button-md-inner-calc-size: null !default;
 $kendo-button-lg-inner-calc-size: null !default;
@@ -112,6 +118,12 @@ $kendo-button-theme-colors: ("base", "primary", "secondary", "tertiary", "info",
 /// The sizes map of the Button.
 /// @group button
 $kendo-button-sizes: (
+    xs: (
+        padding-x: $kendo-button-xs-padding-x,
+        padding-y: $kendo-button-xs-padding-y,
+        font-size: $kendo-button-xs-font-size,
+        line-height: $kendo-button-xs-line-height
+    ),
     sm: (
         padding-x: $kendo-button-sm-padding-x,
         padding-y: $kendo-button-sm-padding-y,
