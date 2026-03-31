@@ -1,14 +1,15 @@
 import { describe, it, expect } from 'vitest';
 
-import { buildRegistry, resolveDisplayName } from '../src/a11y-docs/component-registry';
 import {
+    buildRegistry,
+    resolveDisplayName,
     buildAriaTable,
     groupRulesIntoSections,
-    parseDescription,
     buildA11yJson,
-} from '../src/a11y-docs/json-renderer';
-import { generateA11yDoc, generateA11yDocs } from '../src/a11y-docs/page-generator';
-import type { AriaSpec, ComponentMeta } from '../src/a11y-docs/types';
+    generateA11yDoc,
+    generateA11yDocs,
+} from '../scripts/a11y-docs/generator';
+import type { AriaSpec, ComponentMeta } from '../scripts/a11y-docs/types';
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -74,9 +75,7 @@ describe('buildRegistry', () => {
 
         const registry = buildRegistry({ Button, ButtonGroup });
 
-        // Primary component keeps the shared id
         expect(registry.has('button')).toBe(true);
-        // Colliding component falls back to its export-name-derived id
         expect(registry.has('button-group')).toBe(true);
         expect(registry.size).toBe(2);
     });
@@ -88,7 +87,7 @@ describe('buildRegistry', () => {
 
     it('skips components without ariaSpec.rules', () => {
         const Card = () => null;
-        (Card as any).ariaSpec = { selector: '.k-card' }; // no rules
+        (Card as any).ariaSpec = { selector: '.k-card' };
         const registry = buildRegistry({ Card });
         expect(registry.size).toBe(0);
     });
@@ -105,10 +104,6 @@ describe('resolveDisplayName', () => {
 
     it('returns the registry displayName by default', () => {
         expect(resolveDisplayName('button', registry)).toBe('Button');
-    });
-
-    it('prefers the nameMap override over registry', () => {
-        expect(resolveDisplayName('button', registry, { button: 'MyButton' })).toBe('MyButton');
     });
 
     it('converts unknown kebab-case id to PascalCase', () => {
@@ -171,84 +166,45 @@ describe('buildAriaTable', () => {
 // ---------------------------------------------------------------------------
 
 describe('groupRulesIntoSections', () => {
-    it('returns a single section when all rules share root selector', () => {
+    it('returns a single section when no rules have section field', () => {
         const rules = [
             { selector: '.k-grid', attribute: 'role=grid', usage: 'Grid role.' },
             { selector: '.k-grid', attribute: 'aria-label', usage: 'Grid label.' },
         ];
-        const sections = groupRulesIntoSections(rules, '.k-grid', 'Grid');
+        const sections = groupRulesIntoSections(rules, 'Grid');
         expect(sections).toHaveLength(1);
         expect(sections[0].title).toBe('Grid');
     });
 
-    it('splits rules into multiple sections for composite components', () => {
+    it('splits rules into multiple sections via explicit section field', () => {
         const rules = [
             { selector: '.k-grid', attribute: 'role=grid', usage: 'Grid role.' },
-            { selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'Toolbar role.' },
+            { section: 'toolbar', selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'Toolbar role.' },
         ];
-        const sections = groupRulesIntoSections(rules, '.k-grid', 'Grid');
-        expect(sections.length).toBeGreaterThan(1);
-        const titles = sections.map(s => s.title);
-        expect(titles.some(t => t.includes('Toolbar'))).toBe(true);
+        const sections = groupRulesIntoSections(rules, 'Grid');
+        expect(sections).toHaveLength(2);
+        expect(sections[0].title).toBe('Grid');
+        expect(sections[1].title).toBe('Grid Toolbar');
     });
 
     it('returns empty array for empty rules', () => {
-        expect(groupRulesIntoSections([], '.k-grid', 'Grid')).toEqual([]);
+        expect(groupRulesIntoSections([], 'Grid')).toEqual([]);
     });
 
     it('uses componentDisplayName as section title when only one section found', () => {
         const rules = [
             { selector: '.k-button', attribute: 'role=button', usage: 'Button role.' },
         ];
-        const sections = groupRulesIntoSections(rules, '.k-button', 'Button');
+        const sections = groupRulesIntoSections(rules, 'Button');
         expect(sections[0].title).toBe('Button');
     });
-});
 
-// ---------------------------------------------------------------------------
-// parseDescription
-// ---------------------------------------------------------------------------
-
-describe('parseDescription', () => {
-    it('renders plain text as a paragraph', () => {
-        const elements = parseDescription('The Grid is a composite component.');
-        expect(elements).toHaveLength(1);
-        expect(elements[0]).toHaveProperty('p', 'The Grid is a composite component.');
-    });
-
-    it('renders bullet list items as a ul', () => {
-        const elements = parseDescription('- First item\n- Second item');
-        expect(elements).toHaveLength(1);
-        expect(elements[0]).toHaveProperty('ul');
-        const { ul } = elements[0] as { ul: string[] };
-        expect(ul).toHaveLength(2);
-        expect(ul[0]).toBe('First item;');
-        expect(ul[1]).toBe('Second item;');
-    });
-
-    it('appends backtick-wrapped attribute for key=value in list items', () => {
-        const elements = parseDescription('- Container uses (role=grid)');
-        const { ul } = elements[0] as { ul: string[] };
-        expect(ul[0]).toContain('(`role=grid`)');
-    });
-
-    it('does NOT double-wrap already-backtick-wrapped key=value', () => {
-        const elements = parseDescription('- Container uses (`role=grid`)');
-        const { ul } = elements[0] as { ul: string[] };
-        // Should remain unchanged — no extra backtick wrapping
-        expect(ul[0]).toContain('(`role=grid`)');
-        expect(ul[0]).not.toContain('(``role=grid``)');
-    });
-
-    it('handles mixed paragraphs and lists', () => {
-        const elements = parseDescription('Intro text.\n\n- Item one\n\nTrailing text.');
-        const types = elements.map(e => Object.keys(e)[0]);
-        expect(types).toContain('p');
-        expect(types).toContain('ul');
-    });
-
-    it('returns empty array for empty string', () => {
-        expect(parseDescription('')).toHaveLength(0);
+    it('returns section key for seeAlso matching', () => {
+        const rules = [
+            { section: 'toolbar', selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'Toolbar role.' },
+        ];
+        const sections = groupRulesIntoSections(rules, 'Grid');
+        expect(sections[0].key).toBe('toolbar');
     });
 });
 
@@ -291,12 +247,43 @@ describe('buildA11yJson', () => {
         expect(srTable).toBeDefined();
     });
 
-    it('includes description paragraphs when ariaSpec.description is set', () => {
-        const specWithDesc = makeSpec({ description: 'A complex component.' });
+    it('includes pre-built description elements when ariaSpec.description is set', () => {
+        const specWithDesc = makeSpec({
+            description: [
+                { p: 'A complex component.' },
+                { ul: ['Item one;', 'Item two;'] },
+            ],
+        });
         const comp: ComponentMeta = { id: 'button', displayName: 'Button', ariaSpec: specWithDesc };
         const json = buildA11yJson(comp, registry);
         const paragraphs = json.filter(e => 'p' in e).map(e => (e as { p: string }).p);
         expect(paragraphs.some(p => p.includes('A complex component.'))).toBe(true);
+        const lists = json.filter(e => 'ul' in e) as Array<{ ul: string[] }>;
+        expect(lists.some(l => l.ul.includes('Item one;'))).toBe(true);
+    });
+
+    it('uses seeAlso with exact section matching', () => {
+        const toolbarSpec = makeSpec({ selector: '.k-toolbar' });
+        const gridRegistry = makeRegistry([
+            ['button', { id: 'button', displayName: 'Button', ariaSpec: spec }],
+            ['toolbar', { id: 'toolbar', displayName: 'Toolbar', ariaSpec: toolbarSpec }],
+        ]);
+
+        const gridSpec: AriaSpec = {
+            selector: '.k-grid',
+            seeAlso: ['toolbar'],
+            rules: [
+                { selector: '.k-grid', attribute: 'role=grid', usage: 'Grid role.' },
+                { section: 'toolbar', selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'Toolbar in grid.' },
+            ],
+        };
+        const gridComponent: ComponentMeta = { id: 'grid', displayName: 'Grid', ariaSpec: gridSpec };
+
+        const json = buildA11yJson(gridComponent, gridRegistry);
+        const links = json.filter(e => 'link' in e) as Array<{ link: { title: string; source: string } }>;
+        const toolbarLink = links.find(l => l.link.source.includes('toolbar'));
+        expect(toolbarLink).toBeDefined();
+        expect(toolbarLink?.link.title).toBe('Toolbar accessibility specification');
     });
 
     it('emits a standalone cross-link for unmatched seeAlso targets', () => {
@@ -320,12 +307,6 @@ describe('buildA11yJson', () => {
         const pagerLink = links.find(l => l.link.source.includes('pager'));
         expect(pagerLink).toBeDefined();
         expect(pagerLink?.link.title).toBe('Pager accessibility specification');
-    });
-
-    it('uses componentNameMap override for display name', () => {
-        const json = buildA11yJson(component, registry, { button: 'CustomButton' });
-        const introP = json[1] as { p: string };
-        expect(introP.p).toContain('CustomButton');
     });
 });
 
@@ -361,14 +342,6 @@ describe('generateA11yDoc', () => {
             outputPath: (c) => `/out/${c.displayName}.json`,
         });
         expect(page.outputPath).toBe('/out/Button.json');
-    });
-
-    it('outputPath uses componentNameMap override', () => {
-        const page = generateA11yDoc(component, registry, {
-            componentNameMap: { button: 'MyButton' },
-            outputPath: (c) => `/out/${c.displayName}.json`,
-        });
-        expect(page.outputPath).toBe('/out/MyButton.json');
     });
 });
 

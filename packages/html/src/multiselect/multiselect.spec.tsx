@@ -253,15 +253,15 @@ MultiSelect.ariaSpec = {
         { selector: '.k-multiselect .k-input-inner', attribute: 'aria-describedby', usage: 'Points to the taglist element that contains the selected items.' },
         { selector: '.k-multiselect.k-disabled .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the multiselect is disabled.' },
         // TagList (ChipList)
-        { selector: '.k-multiselect .k-chip-list', attribute: 'role=listbox', usage: 'The taglist has listbox role for selected items.' },
-        { selector: '.k-multiselect .k-chip-list', attribute: 'aria-label or aria-labelledby', usage: 'The taglist needs an accessible name.' },
-        { selector: '.k-multiselect .k-chip-list', attribute: 'aria-orientation=horizontal', usage: 'Specifies horizontal orientation of the taglist.' },
-        { selector: '.k-multiselect .k-chip-list .k-chip', attribute: 'role=option', usage: 'Each tag chip is an option within the taglist listbox.' },
-        { selector: '.k-multiselect .k-chip-list .k-chip', attribute: 'aria-selected=true', usage: 'Tags represent selected items and must have aria-selected=true.' },
+        { section: 'taglist', selector: '.k-multiselect .k-chip-list', attribute: 'role=listbox', usage: 'The taglist has listbox role for selected items.' },
+        { section: 'taglist', selector: '.k-multiselect .k-chip-list', attribute: 'aria-label or aria-labelledby', usage: 'The taglist needs an accessible name.' },
+        { section: 'taglist', selector: '.k-multiselect .k-chip-list', attribute: 'aria-orientation=horizontal', usage: 'Specifies horizontal orientation of the taglist.' },
+        { section: 'taglist', selector: '.k-multiselect .k-chip-list .k-chip', attribute: 'role=option', usage: 'Each tag chip is an option within the taglist listbox.' },
+        { section: 'taglist', selector: '.k-multiselect .k-chip-list .k-chip', attribute: 'aria-selected=true', usage: 'Tags represent selected items and must have aria-selected=true.' },
         // Popup listbox
-        { selector: '.k-multiselect-popup .k-list-content, .k-multiselect-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
-        { selector: '.k-multiselect-popup .k-list-ul[role="listbox"], .k-multiselect-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-multiselect-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
+        { section: 'popup', selector: '.k-multiselect-popup .k-list-content, .k-multiselect-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
+        { section: 'popup', selector: '.k-multiselect-popup .k-list-ul[role="listbox"], .k-multiselect-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
+        { section: 'popup', selector: '.k-multiselect-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
     ]
 };
 

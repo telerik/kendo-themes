@@ -263,11 +263,11 @@ Combobox.ariaSpec = {
         { selector: '.k-combobox .k-input-button', attribute: 'role=button or nodeName=button', usage: 'The dropdown toggle button.' },
         { selector: '.k-combobox .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
         { selector: '.k-combobox .k-input-button', attribute: 'tabindex=-1', usage: 'Dropdown button is not in the tab order.' },
-        { selector: '.k-combobox-popup .k-list-content, .k-combobox-popup .k-list-ul', attribute: 'role=listbox', usage: 'The popup list container has the listbox role.' },
-        { selector: '.k-combobox-popup .k-list-ul[role="listbox"], .k-combobox-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-combobox-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
-        { selector: '.k-combobox-popup .k-list-item', attribute: 'aria-selected (when selectable)', usage: 'Indicates the selected state.' },
-        { selector: '.k-combobox-popup .k-no-data', attribute: 'aria-live=polite', usage: 'Announces no-data state to screen readers.' },
+        { section: 'popup', selector: '.k-combobox-popup .k-list-content, .k-combobox-popup .k-list-ul', attribute: 'role=listbox', usage: 'The popup list container has the listbox role.' },
+        { section: 'popup', selector: '.k-combobox-popup .k-list-ul[role="listbox"], .k-combobox-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
+        { section: 'popup', selector: '.k-combobox-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
+        { section: 'popup', selector: '.k-combobox-popup .k-list-item', attribute: 'aria-selected (when selectable)', usage: 'Indicates the selected state.' },
+        { section: 'popup', selector: '.k-combobox-popup .k-no-data', attribute: 'aria-live=polite', usage: 'Announces no-data state to screen readers.' },
     ]
 };
 

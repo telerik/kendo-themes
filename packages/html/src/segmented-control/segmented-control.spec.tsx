@@ -69,10 +69,10 @@ SegmentedControl.ariaSpec = {
     seeAlso: ['button'],
     rules: [
         { selector: '.k-segmented-control', attribute: 'role=group', usage: 'Sets the proper role for the group of buttons.' },
-        { selector: '.k-segmented-control-button', attribute: 'role=button or nodeName=button', usage: 'Each button must have the appropriate button role.' },
-        { selector: '.k-segmented-control-button.k-selected', attribute: 'aria-pressed=true', usage: 'Only the selected button within the group will have this attribute set to true.' },
-        { selector: '.k-segmented-control-button.k-disabled', attribute: 'aria-disabled=true', usage: 'Indicates that the button is disabled and cannot be interacted with.' },
-        { selector: '.k-segmented-control-thumb', attribute: 'aria-hidden=true', usage: 'The thumb is purely decorative and should be hidden from screen readers.' },
+        { section: 'button', selector: '.k-segmented-control-button', attribute: 'role=button or nodeName=button', usage: 'Each button must have the appropriate button role.' },
+        { section: 'button', selector: '.k-segmented-control-button.k-selected', attribute: 'aria-pressed=true', usage: 'Only the selected button within the group will have this attribute set to true.' },
+        { section: 'button', selector: '.k-segmented-control-button.k-disabled', attribute: 'aria-disabled=true', usage: 'Indicates that the button is disabled and cannot be interacted with.' },
+        { section: 'thumb', selector: '.k-segmented-control-thumb', attribute: 'aria-hidden=true', usage: 'The thumb is purely decorative and should be hidden from screen readers.' },
     ]
 };
 

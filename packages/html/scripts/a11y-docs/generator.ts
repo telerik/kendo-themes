@@ -1,16 +1,74 @@
 /**
- * JSON renderer for a11y documentation pages.
- *
- * Produces the JSON array format consumed by the Design System docs.
- * Section grouping is derived algorithmically from CSS selector prefixes
- * — no hardcoded pattern maps.
+ * A11y documentation generator — scans component exports, builds JSON tables,
+ * and produces documentation pages consumed by the Design System docs.
  */
 
-import type { AriaRule, A11yJsonElement, ComponentMeta } from './types';
-import { resolveDisplayName } from './component-registry';
+import type {
+    AriaRule,
+    AriaSpec,
+    A11yJsonElement,
+    A11yDocPage,
+    A11yGeneratorOptions,
+    ComponentMeta,
+} from './types';
 
 // ---------------------------------------------------------------------------
-// Formatting
+// Registry
+// ---------------------------------------------------------------------------
+
+/**
+ * Scan the html package exports and build the component registry.
+ *
+ * @param exports - The namespace object (e.g. `import * as html from './index'`).
+ */
+export function buildRegistry(
+    exports: Record<string, unknown>,
+): Map<string, ComponentMeta> {
+    const registry = new Map<string, ComponentMeta>();
+
+    for (const [exportName, value] of Object.entries(exports)) {
+        if (typeof value !== 'function' && typeof value !== 'object') continue;
+        const comp = value as Record<string, unknown>;
+        const ariaSpec = comp.ariaSpec as AriaSpec | undefined;
+        if (!ariaSpec?.rules) continue;
+
+        const moduleName = (comp.moduleName as string) || null;
+        const folderName = (comp.folderName as string) || null;
+        let id = (moduleName || folderName || exportName).toLowerCase();
+
+        if (registry.has(id)) {
+            id = exportName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+            if (registry.has(id)) continue;
+        }
+
+        registry.set(id, {
+            id,
+            displayName: exportName,
+            ariaSpec,
+        });
+    }
+
+    return registry;
+}
+
+/**
+ * Resolve display name for a component id.
+ * Registry lookup, then kebab-to-PascalCase fallback.
+ */
+export function resolveDisplayName(
+    id: string,
+    registry: Map<string, ComponentMeta>,
+): string {
+    const meta = registry.get(id);
+    if (meta) return meta.displayName;
+    return id
+        .split('-')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join('');
+}
+
+// ---------------------------------------------------------------------------
+// Formatting helpers
 // ---------------------------------------------------------------------------
 
 function formatAttribute(value: string): string {
@@ -51,36 +109,13 @@ export function buildAriaTable(rules: AriaRule[]): A11yJsonElement {
 }
 
 // ---------------------------------------------------------------------------
-// Section grouping (algorithmic — no hardcoded patterns)
+// Section grouping (explicit via rule.section)
 // ---------------------------------------------------------------------------
 
 export interface RuleSection {
+    key: string;
     title: string;
     rules: AriaRule[];
-}
-
-/**
- * Derive a section key from a CSS selector by stripping the component's
- * root class prefix and extracting the first meaningful segment.
- */
-function inferSectionKey(selector: string, rootSelector: string | undefined): string {
-    if (!rootSelector) return '';
-    const rootCls = rootSelector.replace(/^\./, '');
-
-    // Remove :not() blocks, then extract all .k-* classes
-    const clean = selector.replace(/:not\([^)]*\)/g, '');
-    const classes = [...clean.matchAll(/\.(k-[\w-]+)/g)].map(m => m[1]);
-
-    for (const cls of classes) {
-        if (cls === rootCls) continue;
-
-        if (cls.startsWith(rootCls + '-')) {
-            return cls.substring(rootCls.length + 1);
-        }
-        return cls.startsWith('k-') ? cls.substring(2) : cls;
-    }
-
-    return '';
 }
 
 function kebabToTitle(str: string): string {
@@ -88,11 +123,11 @@ function kebabToTitle(str: string): string {
 }
 
 /**
- * Group rules into named sections based on CSS selector prefixes.
+ * Group rules into named sections based on the explicit `section` field.
+ * Rules without a section fall into the default (empty-key) group.
  */
 export function groupRulesIntoSections(
     rules: AriaRule[],
-    rootSelector: string | undefined,
     componentDisplayName: string,
 ): RuleSection[] {
     if (rules.length === 0) return [];
@@ -101,7 +136,7 @@ export function groupRulesIntoSections(
     const sectionOrder: string[] = [];
 
     for (const rule of rules) {
-        const key = inferSectionKey(rule.selector, rootSelector);
+        const key = rule.section ?? '';
         if (!sectionMap.has(key)) {
             sectionMap.set(key, []);
             sectionOrder.push(key);
@@ -110,10 +145,11 @@ export function groupRulesIntoSections(
     }
 
     if (sectionOrder.length <= 1) {
-        return [{ title: componentDisplayName, rules }];
+        return [{ key: sectionOrder[0] ?? '', title: componentDisplayName, rules }];
     }
 
     return sectionOrder.map(key => ({
+        key,
         title: key ? `${componentDisplayName} ${kebabToTitle(key)}` : componentDisplayName,
         rules: sectionMap.get(key)!,
     }));
@@ -137,50 +173,7 @@ function buildScreenReadersTable(): A11yJsonElement {
 }
 
 // ---------------------------------------------------------------------------
-// Description parser
-// ---------------------------------------------------------------------------
-
-export function parseDescription(description: string): A11yJsonElement[] {
-    const elements: A11yJsonElement[] = [];
-    const lines = description.split('\n');
-    const listItems: string[] = [];
-    const textLines: string[] = [];
-
-    const flushText = () => {
-        if (textLines.length > 0) {
-            elements.push({ p: textLines.join(' ').trim() });
-            textLines.length = 0;
-        }
-    };
-    const flushList = () => {
-        if (listItems.length > 0) {
-            elements.push({ ul: listItems.map(item =>
-                item.replace(/\(([^`)]*=[^`)]+)\)/g, '(`$1`)') + ';'
-            )});
-            listItems.length = 0;
-        }
-    };
-
-    for (const line of lines) {
-        if (/^\s*-\s+/.test(line)) {
-            flushText();
-            listItems.push(line.replace(/^\s*-\s+/, '').trim());
-        } else if (line.trim()) {
-            flushList();
-            textLines.push(line.trim());
-        } else {
-            flushText();
-            flushList();
-        }
-    }
-    flushText();
-    flushList();
-
-    return elements;
-}
-
-// ---------------------------------------------------------------------------
-// Full page builder
+// Full page JSON builder
 // ---------------------------------------------------------------------------
 
 /**
@@ -189,9 +182,8 @@ export function parseDescription(description: string): A11yJsonElement[] {
 export function buildA11yJson(
     component: ComponentMeta,
     registry: Map<string, ComponentMeta>,
-    nameMap?: Record<string, string>,
 ): A11yJsonElement[] {
-    const displayName = resolveDisplayName(component.id, registry, nameMap);
+    const displayName = resolveDisplayName(component.id, registry);
     const elements: A11yJsonElement[] = [];
 
     // --- Intro ---
@@ -210,7 +202,7 @@ export function buildA11yJson(
     });
 
     if (component.ariaSpec.description) {
-        elements.push(...parseDescription(component.ariaSpec.description));
+        elements.push(...component.ariaSpec.description);
     }
 
     // Build seeAlso lookup set
@@ -219,7 +211,6 @@ export function buildA11yJson(
     // Group rules into sections
     const sections = groupRulesIntoSections(
         component.ariaSpec.rules,
-        component.ariaSpec.selector,
         displayName,
     );
 
@@ -231,18 +222,17 @@ export function buildA11yJson(
         for (const section of sections) {
             elements.push({ h4: section.title });
 
-            // Check if a seeAlso target matches this section
-            const matchedRef = findMatchingSeeAlso(section.title, seeAlsoSet, registry, nameMap);
-            if (matchedRef) {
-                matchedSeeAlso.add(matchedRef);
-                const refName = resolveDisplayName(matchedRef, registry, nameMap);
+            // Exact match: section key === seeAlso entry
+            if (seeAlsoSet.has(section.key)) {
+                matchedSeeAlso.add(section.key);
+                const refName = resolveDisplayName(section.key, registry);
                 elements.push({
                     p: `${section.title} follows the specification of the ${refName} component.`
                 });
                 elements.push({
                     link: {
                         title: `${refName} accessibility specification`,
-                        source: crossLinkVar(matchedRef),
+                        source: crossLinkVar(section.key),
                     }
                 });
             }
@@ -254,7 +244,7 @@ export function buildA11yJson(
     // Standalone cross-links for unmatched seeAlso
     for (const targetId of seeAlsoSet) {
         if (!matchedSeeAlso.has(targetId)) {
-            const refName = resolveDisplayName(targetId, registry, nameMap);
+            const refName = resolveDisplayName(targetId, registry);
             elements.push({ h4: refName });
             elements.push({
                 p: `For the ${displayName} ${refName} WAI-ARIA spec, please review the ${refName} component.`
@@ -284,22 +274,52 @@ export function buildA11yJson(
     return elements;
 }
 
+// ---------------------------------------------------------------------------
+// Page generators
+// ---------------------------------------------------------------------------
+
 /**
- * Match a seeAlso target to a section title.
- * Returns the matching target id or null.
+ * Generate an a11y documentation page for a single component.
  */
-function findMatchingSeeAlso(
-    sectionTitle: string,
-    seeAlsoSet: Set<string>,
+export function generateA11yDoc(
+    component: ComponentMeta,
     registry: Map<string, ComponentMeta>,
-    nameMap?: Record<string, string>,
-): string | null {
-    const titleLower = sectionTitle.toLowerCase();
-    for (const targetId of seeAlsoSet) {
-        const targetName = resolveDisplayName(targetId, registry, nameMap).toLowerCase();
-        if (titleLower.includes(targetName) || titleLower.includes(targetId)) {
-            return targetId;
-        }
+    options: A11yGeneratorOptions = {},
+): A11yDocPage {
+    const displayName = resolveDisplayName(component.id, registry);
+
+    const page: A11yDocPage = {
+        componentId: component.id,
+        displayName,
+        json: buildA11yJson(component, registry),
+    };
+
+    if (options.outputPath) {
+        page.outputPath = options.outputPath({ ...component, displayName });
     }
-    return null;
+
+    return page;
+}
+
+/**
+ * Generate a11y documentation pages for multiple components.
+ */
+export function generateA11yDocs(
+    registry: Map<string, ComponentMeta>,
+    options: A11yGeneratorOptions = {},
+): A11yDocPage[] {
+    const pages: A11yDocPage[] = [];
+
+    for (const [id, component] of registry) {
+        if (options.includeComponents && !options.includeComponents.includes(id)) {
+            continue;
+        }
+        if (options.excludeComponents && options.excludeComponents.includes(id)) {
+            continue;
+        }
+
+        pages.push(generateA11yDoc(component, registry, options));
+    }
+
+    return pages;
 }
