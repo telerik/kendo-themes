@@ -18,7 +18,7 @@ $kendo-calendar-border-width: 1px !default;
 $kendo-calendar-font-family: var(--kendo-font-family) !default;
 /// The font size of the Calendar.
 /// @group calendar
-$kendo-calendar-font-size: null  !default;
+$kendo-calendar-font-size: null !default;
 /// The line height of the Calendar.
 /// @group calendar
 $kendo-calendar-line-height: null !default;
@@ -294,7 +294,7 @@ $kendo-calendar-range-cell-border-radius: k-border-radius(full) !default;
 
 /// The font size of the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-font-size: var(--kendo-font-size)  !default;
+$kendo-calendar-sm-font-size: var(--kendo-font-size) !default;
 /// The line height of the small Calendar.
 /// @group calendar
 $kendo-calendar-sm-line-height: var(--kendo-line-height) !default;
@@ -310,7 +310,7 @@ $kendo-calendar-sm-cell-padding-y: k-spacing(2) !default;
 
 /// The font size of the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-font-size: var(--kendo-font-size-lg)  !default;
+$kendo-calendar-md-font-size: var(--kendo-font-size-lg) !default;
 /// The line height of the medium Calendar.
 /// @group calendar
 $kendo-calendar-md-line-height: var(--kendo-line-height-lg) !default;

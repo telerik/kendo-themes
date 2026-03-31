@@ -26341,7 +26341,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-disabled-border</td>
     <td>String</td>
-    <td><code>$kendo-picker-outline-disabled-text!default</code></td>
+    <td><code>$kendo-picker-outline-disabled-text</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent)</code></td>
 </tr>
 <tr>

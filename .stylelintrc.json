@@ -1,9 +1,12 @@
 {
     "extends": "stylelint-config-standard-scss",
     "plugins": [
-        "stylelint-scss"
+        "stylelint-scss",
+        "@stylistic/stylelint-plugin"
     ],
     "rules": {
+        "@stylistic/declaration-bang-space-before": "always",
+
         "color-function-alias-notation": null,
         "alpha-value-notation": "number",
         "selector-not-notation": null,

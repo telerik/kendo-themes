@@ -95,7 +95,7 @@ $kendo-drawer-icon-padding-y: var( --kendo-drawer-icon-padding-y, k-spacing(1) )
 
 /// The initial width of the mini Drawer.
 /// @group drawer
-$kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + 2 * #{$kendo-drawer-items-padding-x} + var( --kendo-icon-size, 1rem ) )  !default;
+$kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + 2 * #{$kendo-drawer-items-padding-x} + var( --kendo-icon-size, 1rem ) ) !default;
 
 /// The border width of the Drawer item ripple.
 /// @group drawer

@@ -69,7 +69,7 @@ $kendo-panelbar-header-gradient: null !default;
 
 /// The background color of the hovered PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-hover-bg: color-mix(in srgb, $kendo-panelbar-header-text 8%, transparent)  !default;
+$kendo-panelbar-header-hover-bg: color-mix(in srgb, $kendo-panelbar-header-text 8%, transparent) !default;
 /// The text color of the hovered PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-hover-text: null !default;
