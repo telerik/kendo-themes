@@ -117,26 +117,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for focus window.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-h5-font-family</td>
-    <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
-    <td><code>var(--kendo-font-family)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the fifth highest level heading.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-h6-line-height</td>
-    <td>Number</td>
-    <td><code>32px</code></td>
-    <td><code>32px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

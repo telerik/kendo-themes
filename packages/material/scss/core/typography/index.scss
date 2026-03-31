@@ -5,6 +5,9 @@
 $kendo-font-size: 0.875rem !default;
 /// The extra extra small font size across all components.
 /// @group typography
+$kendo-font-size-xxs: 0.5rem !default;
+/// The extra extra small font size across all components.
+/// @group typography
 $kendo-font-size-xs: 0.625rem !default;
 /// The small font size across all components.
 /// @group typography
@@ -38,6 +41,37 @@ $kendo-line-height-lg: 1.5 !default;
 /// @group typography
 $kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
 
+/// The base font weight across all components.
+/// @group typography
+$kendo-font-weight: 400 !default;
+/// The thin font weight across all components.
+/// @group typography
+$kendo-font-weight-thin: 100 !default;
+/// The extra light font weight across all components.
+/// @group typography
+$kendo-font-weight-extra-light: 200 !default;
+/// The light font weight across all components.
+/// @group typography
+$kendo-font-weight-light: 300 !default;
+/// The normal font weight across all components.
+/// @group typography
+$kendo-font-weight-normal: $kendo-font-weight !default;
+/// The medium font weight across all components.
+/// @group typography
+$kendo-font-weight-medium: 500 !default;
+/// The semibold font weight across all components.
+/// @group typography
+$kendo-font-weight-semibold: 600 !default;
+/// The bold font weight across all components.
+/// @group typography
+$kendo-font-weight-bold: 700 !default;
+/// The extra bold font weight across all components.
+/// @group typography
+$kendo-font-weight-extra-bold: 800 !default;
+/// The most pronounced font weight across all components.
+/// @group typography
+$kendo-font-weight-black: 900 !default;
+
 /// The base letter spacing across all components.
 /// @group typography
 $kendo-letter-spacing: null !default;
@@ -63,6 +97,12 @@ $kendo-letter-spacing-wider: .25px !default;
 /// @group typography
 $kendo-letter-spacing-widest: .5px !default;
 
+/// The sans font family across all components.
+/// @group typography
+$kendo-font-family-sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans !default;
+/// The serif font family across all components.
+/// @group typography
+$kendo-font-family-serif: "Times New Roman", Georgia, Garamond, Palatino, Baskerville !default;
 /// The sans-serif font family across all components.
 /// @group typography
 $kendo-font-family-sans-serif: Roboto, "Helvetica Neue", sans-serif !default;
@@ -74,6 +114,7 @@ $kendo-font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courie
 $kendo-font-family: $kendo-font-family-sans-serif !default;
 
 $_default-font-sizes: (
+    xxs: $kendo-font-size-xxs,
     xs: $kendo-font-size-xs,
     sm: $kendo-font-size-sm,
     md: $kendo-font-size-md,
@@ -88,6 +129,18 @@ $_default-line-heights: (
     lg: $kendo-line-height-lg,
 ) !default;
 
+$_default-font-weights: (
+    thin: $kendo-font-weight-thin,
+    extra-light: $kendo-font-weight-extra-light,
+    light: $kendo-font-weight-light,
+    normal: $kendo-font-weight-normal,
+    medium: $kendo-font-weight-medium,
+    semibold: $kendo-font-weight-semibold,
+    bold: $kendo-font-weight-bold,
+    extra-bold: $kendo-font-weight-extra-bold,
+    "black": $kendo-font-weight-black
+) !default;
+
 $_default-letter-spacings: (
     tightest: $kendo-letter-spacing-tightest,
     tighter: $kendo-letter-spacing-tighter,
@@ -99,6 +152,8 @@ $_default-letter-spacings: (
 ) !default;
 
 $_default-font-families: (
+    sans: $kendo-font-family-sans,
+    serif: $kendo-font-family-serif,
     sans-serif: $kendo-font-family-sans-serif,
     monospace: $kendo-font-family-monospace
 ) !default;
@@ -117,6 +172,11 @@ $kendo-line-heights: map.merge( $_default-line-heights, $kendo-line-heights );
 /// @group typography
 $kendo-letter-spacings: $_default-letter-spacings !default;
 $kendo-letter-spacings: map.merge( $_default-letter-spacings, $kendo-letter-spacings );
+
+/// The font weights map
+/// @group typography
+$kendo-font-weights: $_default-font-weights !default;
+$kendo-font-weights: map.merge( $_default-font-weights, $kendo-font-weights );
 
 /// The font families map
 /// @group typography
