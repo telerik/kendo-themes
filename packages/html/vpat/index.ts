@@ -8,9 +8,5 @@ export type {
     VpatOverrides,
     VpatReport,
     VpatConfig,
-    VpatProductInfo,
-    VpatKnownException,
-    VpatContrastReport,
-    VpatA11yReport,
-    VpatTestAnalysis
+    VpatKnownException
 } from './types';

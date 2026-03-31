@@ -15,8 +15,6 @@ import type {
     VpatOverrides,
     VpatReport,
     VpatTestAnalysis,
-    VpatA11yReport,
-    VpatContrastReport
 } from './types';
 import { WCAG_CRITERIA, AXE_TO_WCAG } from './wcag-criteria';
 import { DEFAULT_VPAT_CONFIG } from './default-config';
@@ -72,7 +70,8 @@ function mergeConfig(base: VpatConfig, overrides?: VpatOverrides): VpatConfig {
 // TEST REPORT ANALYSIS
 // ============================================================================
 
-function analyzeA11yReport(report: VpatA11yReport | null): VpatTestAnalysis | null {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function analyzeA11yReport(report: any): VpatTestAnalysis | null {
     if (!report) { return null; }
 
     const analysis: VpatTestAnalysis = {
@@ -168,7 +167,8 @@ function getRemarksForCriteria(criteriaNum: string, exceptionsIndex: Record<stri
 // MARKDOWN GENERATION
 // ============================================================================
 
-function generateMarkdown(config: VpatConfig, analysis: VpatTestAnalysis | null, contrastReport: VpatContrastReport | null): string {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function generateMarkdown(config: VpatConfig, analysis: VpatTestAnalysis | null, contrastReport: any): string {
     const version = getVersion(config);
     const reportDate = getReportDate(config);
     const exceptionsIndex = buildExceptionsIndex(config);
@@ -477,8 +477,8 @@ function generateMarkdown(config: VpatConfig, analysis: VpatTestAnalysis | null,
 export function generateVpatReport(
     overrides?: VpatOverrides,
     options?: {
-        a11yReport?: VpatA11yReport;
-        contrastReport?: VpatContrastReport;
+        a11yReport?: unknown;
+        contrastReport?: unknown;
     }
 ): VpatReport {
     const config = mergeConfig(DEFAULT_VPAT_CONFIG, overrides);

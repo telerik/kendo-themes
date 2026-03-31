@@ -14,7 +14,8 @@
     },
     "include": [
         "src/**/*.ts",
-        "src/**/*.tsx"
+        "src/**/*.tsx",
+        "vpat/**/*.ts"
     ],
     "exclude": [
         "node_modules",

@@ -161,7 +161,7 @@ export * from './ripple/index';
 export * from './pdf/index';
 
 // VPAT / Accessibility Conformance Report generator
-export * from './vpat/index';
+export * from '../vpat/index';
 
 // Configuration Context
 export * from './configuration/configuration-context';

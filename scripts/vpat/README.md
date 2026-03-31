@@ -8,7 +8,7 @@ The generator is exported from the `@progress/kendo-themes-html` package.
 
 ```ts
 import { generateVpatReport } from '@progress/kendo-themes-html';
-import { writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 
 // Generate with defaults (config only, no test data)
 const report = generateVpatReport();
@@ -44,8 +44,8 @@ const report = generateVpatReport(
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `overrides` | `VpatOverrides` | Product info, known exceptions, additional notes. Product fields replace defaults; `knownExceptions` with matching `wcagCriteria` replace base entries, new ones are appended; `additionalProductNotes` are merged. |
-| `options.a11yReport` | `VpatA11yReport` | A11y test report JSON. |
-| `options.contrastReport` | `VpatContrastReport` | Contrast test report JSON. |
+| `options.a11yReport` | `object` | A11y test report JSON (output of `test-a11y-unified.mjs`). |
+| `options.contrastReport` | `object` | Contrast test report JSON (output of `test-contrast.mjs`). |
 
 **Returns** `VpatReport`:
 
@@ -53,8 +53,8 @@ const report = generateVpatReport(
 |-------|------|-------------|
 | `markdown` | `string` | Full VPAT report in Markdown format. |
 | `data.config` | `VpatConfig` | Merged configuration used for generation. |
-| `data.a11yAnalysis` | `VpatTestAnalysis \| null` | Analyzed test results. |
-| `data.contrastReport` | `VpatContrastReport \| null` | Contrast report data. |
+| `data.a11yAnalysis` | `object \| null` | Analyzed test results (templates, ARIA/WCAG pass/fail counts, component results, discovered violations). |
+| `data.contrastReport` | `unknown` | Contrast report data (passthrough). |
 
 ## CLI Usage
 

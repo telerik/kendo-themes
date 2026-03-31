@@ -191,25 +191,9 @@ jobs:
       - name: Done
         run: echo "Done!"
 
-  check-a11y-paths:
-    name: Check A11y-relevant changes
-    runs-on: ubuntu-latest
-    outputs:
-      has_changes: ${{ steps.filter.outputs.a11y }}
-    steps:
-      - uses: actions/checkout@v6
-      - uses: dorny/paths-filter@v3
-        id: filter
-        with:
-          filters: |
-            a11y:
-              - 'packages/html/src/**'
-              - 'scripts/test-a11y**'
-
   a11y-specs:
     name: A11y Specs
-    needs: [ compile-themes, check-a11y-paths ]
-    if: ${{ needs.check-a11y-paths.outputs.has_changes == 'true' }}
+    needs: [ compile-themes ]
     uses: ./.github/workflows/_test-a11y-specs.yml
 
   ci-a11y-specs:

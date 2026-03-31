@@ -22,7 +22,8 @@
     "dist/**/*.d.ts",
     "dist/**/*.js.map",
     "src/**/**.ts",
-    "src/**/**.tsx"
+    "src/**/**.tsx",
+    "vpat/**/**.ts"
   ],
   "main": "index.js",
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/html",

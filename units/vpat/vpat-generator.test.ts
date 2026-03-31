@@ -1,13 +1,13 @@
 import { describe, it, expect } from 'vitest';
-import { generateVpatReport } from '../../packages/html/src/vpat/vpat-generator';
-import { WCAG_CRITERIA } from '../../packages/html/src/vpat/wcag-criteria';
-import type { VpatA11yReport, VpatContrastReport, VpatOverrides } from '../../packages/html/src/vpat/types';
+import { generateVpatReport } from '../../packages/html/vpat/vpat-generator';
+import { WCAG_CRITERIA } from '../../packages/html/vpat/wcag-criteria';
+import type { VpatOverrides } from '../../packages/html/vpat/types';
 
 // ============================================================================
 // Fixtures
 // ============================================================================
 
-const fakeA11yReport: VpatA11yReport = {
+const fakeA11yReport = {
     generatedAt: '2026-03-17T00:00:00.000Z',
     version: '13.0.0-test',
     summary: {
@@ -47,7 +47,7 @@ const fakeA11yReport: VpatA11yReport = {
     ]
 };
 
-const fakeContrastReport: VpatContrastReport = {
+const fakeContrastReport = {
     generatedAt: '2026-03-17T00:00:00.000Z',
     version: '13.0.0-test',
     theme: 'default',
