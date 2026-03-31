@@ -206,7 +206,6 @@
             }
 
             .k-event-collapse {
-                margin-block: calc( #{$kendo-icon-spacing} * -1 );
                 margin-inline: 0;
                 transform: rotate(90deg);
                 transition: transform k-transition(subtle);
