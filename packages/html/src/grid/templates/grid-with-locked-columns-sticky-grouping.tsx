@@ -15,7 +15,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
     const nlSt_r1_c1 = nextId('grid-lc-cell');
     const nlSt_r1_c2 = nextId('grid-lc-cell');
 
-    // Generate IDs for non-locked content cells (data rows only; group/footer rows are presentational)
+    // Generate IDs for non-locked content cells (data rows only; group header rows are presentational)
     const nlCell_r1_c0 = nextId('grid-lc-cell');
     const nlCell_r1_c1 = nextId('grid-lc-cell');
     const nlCell_r1_c2 = nextId('grid-lc-cell');
@@ -41,7 +41,21 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
     const nlCell_r12_c1 = nextId('grid-lc-cell');
     const nlCell_r12_c2 = nextId('grid-lc-cell');
 
-    // No IDs needed for non-locked sticky bottom cells (group footer is presentational)
+    // Generate IDs for non-locked footer cells (footer rows are regular grid rows, not presentational)
+    const nlFoot_r4_c0 = nextId('grid-lc-cell');
+    const nlFoot_r4_c1 = nextId('grid-lc-cell');
+    const nlFoot_r4_c2 = nextId('grid-lc-cell');
+    const nlFoot_r9_c0 = nextId('grid-lc-cell');
+    const nlFoot_r9_c1 = nextId('grid-lc-cell');
+    const nlFoot_r9_c2 = nextId('grid-lc-cell');
+    const nlFoot_r13_c0 = nextId('grid-lc-cell');
+    const nlFoot_r13_c1 = nextId('grid-lc-cell');
+    const nlFoot_r13_c2 = nextId('grid-lc-cell');
+
+    // Generate IDs for non-locked sticky bottom footer cells
+    const nlStFoot_c0 = nextId('grid-lc-cell');
+    const nlStFoot_c1 = nextId('grid-lc-cell');
+    const nlStFoot_c2 = nextId('grid-lc-cell');
 
     return (
     <Grid className={classNames("k-grid-lockedcolumns", className)} _renderAriaRoot
@@ -174,7 +188,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                     <TableTd role="gridcell">10265</TableTd>
                                     <TableTd role="gridcell">Blondel père et fils</TableTd>
                                 </TableRow>
-                                <TableRow className="k-group-footer" role="row" style={{ height: "37px" }}>
+                                <TableRow className="k-group-footer" role="row" aria-owns={`${nlFoot_r4_c0} ${nlFoot_r4_c1} ${nlFoot_r4_c2}`} style={{ height: "37px" }}>
                                     <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                     <TableTd role="gridcell"></TableTd>
                                     <TableTd role="gridcell">Total items: 3</TableTd>
@@ -202,7 +216,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                     <TableTd role="gridcell">10260</TableTd>
                                     <TableTd role="gridcell">Ottilies Käseladen</TableTd>
                                 </TableRow>
-                                <TableRow className="k-group-footer" role="row" style={{ height: "37px" }}>
+                                <TableRow className="k-group-footer" role="row" aria-owns={`${nlFoot_r9_c0} ${nlFoot_r9_c1} ${nlFoot_r9_c2}`} style={{ height: "37px" }}>
                                     <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                     <TableTd role="gridcell"></TableTd>
                                     <TableTd role="gridcell">Total items: 3</TableTd>
@@ -225,7 +239,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                     <TableTd role="gridcell">10254</TableTd>
                                     <TableTd role="gridcell">Hanari Carnes</TableTd>
                                 </TableRow>
-                                <TableRow className="k-group-footer" role="row" style={{ height: "37px" }}>
+                                <TableRow className="k-group-footer" role="row" aria-owns={`${nlFoot_r13_c0} ${nlFoot_r13_c1} ${nlFoot_r13_c2}`} style={{ height: "37px" }}>
                                     <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                     <TableTd role="gridcell"></TableTd>
                                     <TableTd role="gridcell">Total items: 2</TableTd>
@@ -264,7 +278,9 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                     <TableTd id={nlCell_r3_c2} role="gridcell">24, place Kléber</TableTd>
                                 </TableRow>
                                 <TableRow className="k-group-footer" role="none" style={{ height: "37px" }}>
-                                    <TableTd colspan={3} role="none"></TableTd>
+                                    <TableTd id={nlFoot_r4_c0} role="gridcell"></TableTd>
+                                    <TableTd id={nlFoot_r4_c1} role="gridcell"></TableTd>
+                                    <TableTd id={nlFoot_r4_c2} role="gridcell"></TableTd>
                                 </TableRow>
                                 <TableRow className="k-table-group-row k-grouping-row" role="none" style={{ height: "37px" }}>
                                     <TableTd colspan={3} role="none">
@@ -287,7 +303,9 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                     <TableTd id={nlCell_r8_c2} role="gridcell">Mehrheimerstr. 369</TableTd>
                                 </TableRow>
                                 <TableRow className="k-group-footer" role="none" style={{ height: "37px" }}>
-                                    <TableTd colspan={3} role="none"></TableTd>
+                                    <TableTd id={nlFoot_r9_c0} role="gridcell"></TableTd>
+                                    <TableTd id={nlFoot_r9_c1} role="gridcell"></TableTd>
+                                    <TableTd id={nlFoot_r9_c2} role="gridcell"></TableTd>
                                 </TableRow>
                                 <TableRow className="k-table-group-row k-grouping-row" role="none" style={{ height: "37px" }}>
                                     <TableTd colspan={3} role="none">
@@ -305,7 +323,9 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                     <TableTd id={nlCell_r12_c2} role="gridcell">Rua do Paço, 67</TableTd>
                                 </TableRow>
                                 <TableRow className="k-group-footer" role="none" style={{ height: "37px" }}>
-                                    <TableTd colspan={3} role="none"></TableTd>
+                                    <TableTd id={nlFoot_r13_c0} role="gridcell"></TableTd>
+                                    <TableTd id={nlFoot_r13_c1} role="gridcell"></TableTd>
+                                    <TableTd id={nlFoot_r13_c2} role="gridcell"></TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>
@@ -321,7 +341,7 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                     <col style={{ width: "250px" }} />
                                 </colgroup>
                                 <TableTbody role="rowgroup">
-                                    <TableRow className="k-group-footer" role="row" aria-rowindex={5}>
+                                    <TableRow className="k-group-footer" role="row" aria-rowindex={5} aria-owns={`${nlStFoot_c0} ${nlStFoot_c1} ${nlStFoot_c2}`}>
                                         <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                         <TableTd role="gridcell" tabIndex={-1}></TableTd>
                                         <TableTd role="gridcell" tabIndex={-1}>Total items: 3</TableTd>
@@ -338,7 +358,9 @@ export const GridWithLockedColumnsStickyGrouping = ({ className, contentClassNam
                                 </colgroup>
                                 <TableTbody role="rowgroup">
                                     <TableRow className="k-group-footer" role="row" aria-rowindex={5} style={{ height: "37px" }}>
-                                        <TableTd colspan={3} role="gridcell" tabIndex={-1}></TableTd>
+                                        <TableTd id={nlStFoot_c0} role="gridcell" tabIndex={-1}></TableTd>
+                                        <TableTd id={nlStFoot_c1} role="gridcell" tabIndex={-1}></TableTd>
+                                        <TableTd id={nlStFoot_c2} role="gridcell" tabIndex={-1}></TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
