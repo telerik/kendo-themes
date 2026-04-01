@@ -375,7 +375,7 @@ $kendo-chart-no-data-font-weight: var( --kendo-chart-no-data-font-weight, var(--
 $kendo-chart-no-data-text: var( --kendo-chart-no-data-text, k-color(on-app-surface) ) !default;
 /// The vertical padding of the Chart no data message.
 /// @group charts
-$kendo-chart-no-data-padding-y: var( --kendo-chart-no-data-padding-y, k-spacing( 25 ) ) !default;
+$kendo-chart-no-data-padding-y: var( --kendo-chart-no-data-padding-y, 7rem ) !default;
 
 // Gauge
 /// Color of the Gauge Pointer.
