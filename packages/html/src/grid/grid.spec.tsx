@@ -159,11 +159,11 @@ Grid.ariaSpec = {
 
         // ── Locked Columns ──
         { selector: '.k-grid-header-locked table tr', attribute: 'aria-owns', usage: 'Locked header rows own cells from the corresponding non-locked header table rows.' },
-        { selector: '.k-grid-content-locked table tr:not(.k-grouping-row):not(.k-group-footer)', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows. Group rows are excluded because the non-locked group rows are presentational.' },
+        { selector: '.k-grid-content-locked table tr:not(.k-grouping-row)', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows. Group header rows are excluded because the non-locked group header rows are presentational.' },
         { selector: '.k-grid-lockedcolumns .k-grid-header .k-grid-header-wrap table tr', attribute: 'role=none', usage: 'Non-locked header rows have their semantic role removed when locked columns exist.' },
         { selector: '.k-grid-lockedcolumns .k-grid-content table tr', attribute: 'role=none', usage: 'Non-locked content rows have their semantic role removed when locked columns exist.' },
         { selector: '.k-grid-lockedcolumns .k-grid-header .k-grid-header-wrap th', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
-        { selector: '.k-grid-lockedcolumns .k-grid-content td:not(.k-grouping-row td):not(.k-group-footer td)', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns. Cells inside group/footer rows are excluded as those rows are presentational.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-content td:not(.k-grouping-row td)', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns. Cells inside group header rows are excluded as those rows are presentational.' },
 
         // ── Filter Menu (open) ──
         { selector: '.k-grid-filter-popup', attribute: 'role=dialog', usage: 'The filter menu popup has dialog role.' },
