@@ -159,11 +159,11 @@ Grid.ariaSpec = {
 
         // ── Locked Columns ──
         { selector: '.k-grid-header-locked table tr', attribute: 'aria-owns', usage: 'Locked header rows own cells from the corresponding non-locked header table rows.' },
-        { selector: '.k-grid-content-locked table tr', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows.' },
-        { selector: '.k-grid-lockedcolumns .k-grid-header-wrap table tr', attribute: 'role=none', usage: 'Non-locked header rows have their semantic role removed when locked columns exist.' },
+        { selector: '.k-grid-content-locked table tr:not(.k-grouping-row)', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows. Group header rows are excluded because the non-locked group header rows are presentational.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-header .k-grid-header-wrap table tr', attribute: 'role=none', usage: 'Non-locked header rows have their semantic role removed when locked columns exist.' },
         { selector: '.k-grid-lockedcolumns .k-grid-content table tr', attribute: 'role=none', usage: 'Non-locked content rows have their semantic role removed when locked columns exist.' },
-        { selector: '.k-grid-lockedcolumns .k-grid-header-wrap th', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
-        { selector: '.k-grid-lockedcolumns .k-grid-content td', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-header .k-grid-header-wrap th', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
+        { selector: '.k-grid-lockedcolumns .k-grid-content td:not(.k-grouping-row td)', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns. Cells inside group header rows are excluded as those rows are presentational.' },
 
         // ── Filter Menu (open) ──
         { selector: '.k-grid-filter-popup', attribute: 'role=dialog', usage: 'The filter menu popup has dialog role.' },
@@ -207,9 +207,9 @@ Grid.ariaSpec = {
         { selector: '.k-grid-sticky-container tbody', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
         { selector: '.k-grid-sticky-container tr', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
         { selector: '.k-grid-sticky-container tr', attribute: 'aria-rowindex', usage: 'Matches the aria-rowindex of the real group header/footer row it mirrors.' },
-        { selector: '.k-grid-sticky-container td', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { selector: '.k-grid-sticky-container td:not(.k-group-cell)', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed. Group offset cells are excluded as they retain role=presentation.' },
         { selector: '.k-grid-sticky-container .k-grouping-row>td', attribute: 'aria-expanded', usage: 'Mirrors the expanded/collapsed state of the real group header row.' },
-        { selector: '.k-grid-sticky-container td', attribute: 'tabindex', usage: 'Receives tabindex 0 when focused, -1 otherwise, for keyboard navigation.' },
+        { selector: '.k-grid-sticky-container td:not(.k-group-cell)', attribute: 'tabindex', usage: 'Receives tabindex 0 when focused, -1 otherwise, for keyboard navigation. Group offset cells are excluded as they are presentational.' },
         { selector: '.k-grid-sticky-container td', attribute: 'aria-colindex (when present)', usage: 'Col number. Typically 1 for the group header cell spanning all columns.' },
 
         // ── Pinned Rows ──
