@@ -1788,9 +1788,19 @@ The following table lists the available variables for customizing the Material t
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-border-radius-base</td>
+    <td>Number</td>
+    <td><code>.25rem</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-border-radius-none</td>
     <td>Number</td>
-    <td><code>map.get($kendo-spacing, 0)</code></td>
+    <td><code>0px</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -1799,9 +1809,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-border-radius-xs</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 1px)</code></td>
-    <td><code>1px</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * .25)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 0.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
@@ -1809,9 +1819,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-border-radius-sm</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 0.5)</code></td>
-    <td><code>0.125rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * .5)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 0.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
@@ -1819,9 +1829,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-border-radius-md</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 1)</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>var(--kendo-border-radius-base)</code></td>
+    <td><code>var(--kendo-border-radius-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
@@ -1829,9 +1839,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-border-radius-lg</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 2)</code></td>
-    <td><code>0.375rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 2)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 1.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
@@ -1839,9 +1849,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-border-radius-xl</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 3)</code></td>
-    <td><code>0.5rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 3)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
@@ -1849,9 +1859,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-border-radius-xxl</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 4)</code></td>
-    <td><code>0.75rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 4)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
@@ -1859,9 +1869,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-border-radius-xxxl</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 5)</code></td>
-    <td><code>1rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 5)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
@@ -1869,9 +1879,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-border-radius-full</td>
-    <td>Number</td>
-    <td><code>9999px</code></td>
-    <td><code>9999px</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 9999)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 9999)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
@@ -1881,7 +1891,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-border-radii</td>
     <td>Map</td>
     <td><code>$_default-border-radii</code></td>
-    <td><ul><li>none: 0px</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.5rem</li><li>xl: 0.75rem</li><li>xxl: 1rem</li><li>xxxl: 1.25rem</li><li>full: 9999px</li></ul></td>
+    <td><ul><li>none: 0px</li><li>xs: calc(var(--kendo-border-radius-base) * 0.25)</li><li>sm: calc(var(--kendo-border-radius-base) * 0.5)</li><li>md: var(--kendo-border-radius-base)</li><li>lg: calc(var(--kendo-border-radius-base) * 2)</li><li>xl: calc(var(--kendo-border-radius-base) * 3)</li><li>xxl: calc(var(--kendo-border-radius-base) * 4)</li><li>xxxl: calc(var(--kendo-border-radius-base) * 5)</li><li>full: calc(var(--kendo-border-radius-base) * 9999)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
