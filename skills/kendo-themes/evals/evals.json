@@ -1,0 +1,47 @@
+{
+  "skill_name": "kendo-themes",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to change our app's primary brand color to #0058e9 across all Kendo components. We're using the default theme with precompiled CSS. What's the simplest way to do this without switching to Sass?",
+      "expected_output": "Should recommend CSS custom property overrides (--kendo-color-primary and related tokens like hover/active/on-primary). Should NOT suggest Sass compilation as the first approach since the user explicitly wants to stay with precompiled CSS.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm setting up kendo-theme-material in an Angular project and want to keep my CSS bundle small. I only need Grid, Button, and DropDownList components. How do I import just those with Sass?",
+      "expected_output": "Should show @use with scss/index.scss (not all.scss), then selectively call @include for kendo-grid--styles(), kendo-button--styles(), and kendo-dropdownlist--styles() mixins. Should mention the @use module syntax, not @import.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm building a compact toolbar with several Kendo form components side by side — they're rendering at different heights and it looks uneven. Is there a way to make all input-like components the same height globally through the theme, rather than overriding each one individually?",
+      "expected_output": "Should reference the sizing system — component size variants (sm/md/lg) or the underlying spacing/font-size tokens that control input heights. Should explain that Kendo uses a consistent sizing approach across input-like components. Should suggest either the size prop approach or Sass variable overrides for padding/font-size.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I can customize the overall look of my Kendo theme, but how do I target a specific variant of a component — for example, only the outline buttons or only the large-size inputs? I need variant-level overrides, not global ones.",
+      "expected_output": "Should explain the component selector system: base class + variant class composition (e.g., .k-button.k-button-outline, .k-input.k-input-lg). Should show how to compose selectors to target specific variant+state combos.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We use Tailwind for layout across our app and now we're adding Kendo UI components with the default theme. I want our custom Tailwind components to use the same design tokens as Kendo so everything looks consistent. Is there a recommended way to map Tailwind's theme tokens to Kendo's? We're on Tailwind v4.",
+      "expected_output": "Should recommend mapping Tailwind @theme variables to Kendo CSS custom properties (--kendo-color-*, --kendo-spacing-*, etc.). Should show a concrete @theme block example. Should note that Kendo themes and Tailwind work side-by-side with no conflicts.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Our product supports multiple brand themes that users can switch between at runtime, each with its own primary and secondary colors. Right now we maintain a separate Sass file per brand. Is there a way to automate generating scoped Kendo theme variants from a single config map instead of duplicating the Sass setup for each brand?",
+      "expected_output": "Should explain how to use @use with scss/index.scss, loop over themes with @each, merge colors into $kendo-colors, and scope each output under the brand's CSS selector. Should acknowledge this is an advanced Sass use case and explain the general approach even if the exact automation pattern requires custom build logic.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Some Kendo components render colors through JavaScript into inline styles or SVG attributes rather than CSS classes. How do theme tokens reach those components, and how can I override those colors through the theme?",
+      "expected_output": "Should explain how JS-rendered components (like Charts) read theme tokens via CSS custom properties or SCSS variables that get exported, and then apply them as inline SVG attributes or styles. Should identify the relevant token override mechanism (CSS custom properties or Sass variable overrides).",
+      "files": []
+    }
+  ]
+}
