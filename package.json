@@ -67,6 +67,7 @@
     "sass": "nx run-many -t sass",
     "sass:dist": "nx run-many -t sass:dist",
     "docs": "nx run-many -t docs",
+    "docs:components": "npm run build --prefix packages/html && node ./scripts/generate-component-reference.mjs",
     "docs:check": "nx run-many -t docs:check",
     "test:html": "npm run test --prefix packages/html",
     "test:render-test-pages": "node ./scripts/render-test-pages.mjs",
