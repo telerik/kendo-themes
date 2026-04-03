@@ -47,5 +47,6 @@
         "script": "docs:check"
       }
     }
-  }
+  },
+  "analytics": false
 }
