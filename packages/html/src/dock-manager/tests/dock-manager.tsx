@@ -20,9 +20,9 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             <section>
                 <DockManagerNormal toolbarItems={[
-                    <Button fillMode="flat" size="small">File 3</Button>,
+                    <Button fillMode="flat" size="xsmall">File 3</Button>,
                     <ToolbarSeparator className="k-separator-horizontal"></ToolbarSeparator>,
-                    <Button fillMode="flat" size="small">File 4</Button>
+                    <Button fillMode="flat" size="xsmall">File 4</Button>
                 ]}>
                     <DockManagerSplitter orientation="vertical" panes={[
                         <SplitterPane flexBasis="70%" key="pane-1">
@@ -36,14 +36,14 @@ export default () => (
                                             <>
                                                 <TabStripItem first value="File 1" active actions={
                                                     <>
-                                                        <Button fillMode="flat" icon="pin"></Button>
-                                                        <Button fillMode="flat" icon="more-vertical"></Button>
+                                                        <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                                        <Button fillMode="flat" size="xsmall" icon="more-vertical"></Button>
                                                     </>
                                                 }></TabStripItem>
                                                 <TabStripItem last value="File 2" actions={
                                                     <>
-                                                        <Button fillMode="flat" icon="pin"></Button>
-                                                        <Button fillMode="flat" icon="more-vertical"></Button>
+                                                        <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                                        <Button fillMode="flat" size="xsmall" icon="more-vertical"></Button>
                                                     </>
                                                 }></TabStripItem>
                                             </>
@@ -62,14 +62,14 @@ export default () => (
                                                     <>
                                                         <TabStripItem first value="File 5" active actions={
                                                             <>
-                                                                <Button fillMode="flat" icon="pin"></Button>
-                                                                <Button fillMode="flat" icon="more-vertical"></Button>
+                                                                <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                                                <Button fillMode="flat" size="xsmall" icon="more-vertical"></Button>
                                                             </>
                                                         }></TabStripItem>
                                                         <TabStripItem last value="File 6" actions={
                                                             <>
-                                                                <Button fillMode="flat" icon="pin"></Button>
-                                                                <Button fillMode="flat" icon="more-vertical"></Button>
+                                                                <Button fillMode="flat" size="xsmall" icon="pin"></Button>
+                                                                <Button fillMode="flat" size="xsmall" icon="more-vertical"></Button>
                                                             </>
                                                         }></TabStripItem>
                                                     </>

@@ -4,7 +4,7 @@ import { IconButtonGroup } from '..';
 
 const styles = `
     #test-area {
-        grid-template-columns: 120px repeat(4, 1fr);
+        grid-template-columns: 120px repeat(5, 1fr);
     }
 `;
 
@@ -14,6 +14,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             <span><small>rounded / size</small></span>
             <span>undefined</span>
+            <span>x-small</span>
             <span>small</span>
             <span>medium</span>
             <span>large</span>

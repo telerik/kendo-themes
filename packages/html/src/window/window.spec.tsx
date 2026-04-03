@@ -74,6 +74,7 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
                                         key={actionName}
                                         icon={actionName}
                                         fillMode="flat"
+                                        size="xsmall"
                                         showArrow={false}
                                         className="k-window-titlebar-action"
                                         aria-label="More actions"
@@ -82,6 +83,7 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
                                         key={actionName}
                                         icon={actionName}
                                         fillMode="flat"
+                                        size="xsmall"
                                         className="k-window-titlebar-action"
                                         aria-label={actionName}
                                     ></Button>
