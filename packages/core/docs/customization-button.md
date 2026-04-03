@@ -41,6 +41,12 @@ The following table lists the available variables for customization.
     <td>$kendo-button-sizes</td>
     <td></td>
     <td><code>(
+    xs: (
+        padding-x: $kendo-button-xs-padding-x,
+        padding-y: $kendo-button-xs-padding-y,
+        font-size: $kendo-button-xs-font-size,
+        line-height: $kendo-button-xs-line-height
+    ),
     sm: (
         padding-x: $kendo-button-sm-padding-x,
         padding-y: $kendo-button-sm-padding-y,
