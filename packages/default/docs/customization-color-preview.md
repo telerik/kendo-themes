@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-preview-no-color-text</td>
     <td>Color</td>
     <td><code>map.get($kendo-colors, error)</code></td>
-    <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
+    <td><span class="color-preview" style="background-color: oklch(61.07% 0.2435 30.2deg)"></span><code>oklch(61.07% 0.2435 30.2deg)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorPreview when no color is selected.</div></div>
