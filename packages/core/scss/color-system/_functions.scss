@@ -1,91 +1,11 @@
 @use "sass:color";
 @use "sass:map";
 @use "sass:list";
-@use "sass:string";
-@use "sass:meta";
 @use "../functions/_string.scss" as *;
 @use "../functions/_map.scss" as *;
 @use "../functions/_color.scss" as *;
 @use "./_swatch.scss" as *;
 @use "../_variables.scss" as *;
-
-@function k-generate-theme-variant( $variant, $matrix, $src-palette-name ) {
-    $result: ();
-
-    @each $ui-state, $indices in $matrix {
-        $prefix: if( $ui-state == DEFAULT, "", "#{$ui-state}-" );
-        $indices-count: list.length( $indices );
-
-        $bg-prop: list.nth( $indices, 1 );
-        $text-prop: list.nth( $indices, 2 );
-        $border-prop: list.nth( $indices, 3 );
-        $gradient-prop: if( $indices-count > 3, list.nth( $indices, 4 ), null );
-        $shadow-prop: if( $indices-count > 4, list.nth( $indices, 5 ), null );
-        $outline-prop: if( $indices-count > 5, list.nth( $indices, 6 ), null );
-
-        // Take value from the palette only if it is a number
-        $bg: if( meta.type-of( $bg-prop ) == number, k-get-theme-color( $src-palette-name, $bg-prop ), $bg-prop );
-        $text: if( meta.type-of( $text-prop ) == number, k-get-theme-color( $src-palette-name, $text-prop ), $text-prop );
-        $border: if( meta.type-of( $border-prop ) == number, k-get-theme-color( $src-palette-name, $border-prop ), $border-prop );
-        $gradient: $gradient-prop;
-        $shadow: $shadow-prop;
-        $outline: $outline-prop;
-
-        $result: map.merge($result, (
-            #{$prefix}bg: $bg,
-            #{$prefix}text: $text,
-            #{$prefix}border: $border,
-            #{$prefix}gradient: $gradient,
-            #{$prefix}shadow: $shadow,
-            #{$prefix}outline: $outline
-        ));
-    }
-
-    $result: (
-        #{$variant}: $result
-    );
-
-    @return $result;
-
-};
-
-
-@function k-process-variant-matrices( $theme-matrix, $palette-matrix: () ) {
-    $result: ();
-
-    // @debug $theme-matrix;
-    // @debug $palette-matrix;
-
-    @each $variant, $definition in $theme-matrix {
-        $tc-index: string.index( $variant, "THEME_COLOR" );
-        $src-palette-name: map.get( $definition, PALETTE );
-        $matrix: map.remove( $definition, PALETTE );
-
-        @if ($tc-index == null ) { // stylelint-disable-line
-            $tmp-result: k-generate-theme-variant( $variant, $matrix, $src-palette-name );
-            $result: map.merge( $result, $tmp-result);
-        } @else {
-            @each $color, $palette in $palette-matrix {
-                $variant-name: k-string-replace( $variant, THEME_COLOR, $color);
-                $palette-name: string.unquote($src-palette-name + "");
-
-                @if ($palette-name == THEME_COLOR) {
-                    $palette-name: k-string-replace( $palette-name, THEME_COLOR, $color );
-                    $palette-name: map.get( $palette-matrix, $palette-name );
-                }
-
-                $tmp-result: k-generate-theme-variant( $variant-name, $matrix, $palette-name );
-                $result: map.merge( $result, $tmp-result );
-            }
-        }
-    }
-
-    @return $result;
-}
-
-@function k-get-theme-color-var( $name, $fallback: "inherit", $prefix: "kendo-" ) {
-    @return var( --#{$prefix}#{$name}, #{$fallback} );
-}
 
 @function k-get-swatch-color( $name, $color ) {
     $map: (
@@ -162,18 +82,6 @@
     );
 
     @return $result;
-}
-
-@function k-hex-to-rgb( $color ) {
-    @if($color) {
-        $r: k-color-red($color);
-        $g: k-color-green($color);
-        $b: k-color-blue($color);
-
-        @return $r, $g, $b;
-    } @else {
-        @return null;
-    }
 }
 
 /// Generates all color variations of a given main color
