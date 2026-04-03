@@ -222,7 +222,7 @@ k-generate-color-variations($name, $color, $theme) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.scss#L187-L301
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.scss#L94-L208
 @function k-generate-color-variations($name, $color, $theme) {
     $result: ();
 
@@ -364,7 +364,7 @@ k-color($key) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.scss#L309-L311
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.scss#L216-L218
 @function k-color($key) {
     @return var(--kendo-color-#{$key});
 }
@@ -2994,7 +2994,7 @@ The following table lists the available variables for customizing the Theme Core
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$default-colors</code></td>
-    <td><ul><li>app-surface: #ffffff</li><li>on-app-surface: #3d3d3d</li><li>subtle: #666666</li><li>surface: #fafafa</li><li>surface-alt: #ffffff</li><li>border: rgba(0, 0, 0, 0.08)</li><li>border-alt: rgba(0, 0, 0, 0.16)</li><li>base-subtle: #ebebeb</li><li>base-subtle-hover: #e0e0e0</li><li>base-subtle-active: #d6d6d6</li><li>base: #f5f5f5</li><li>base-hover: #ebebeb</li><li>base-active: #d6d6d6</li><li>base-emphasis: #c2c2c2</li><li>base-on-subtle: #3d3d3d</li><li>on-base: #3d3d3d</li><li>base-on-surface: #3d3d3d</li><li>primary-subtle: #ffeceb</li><li>primary-subtle-hover: #ffdedb</li><li>primary-subtle-active: #ffc8c4</li><li>primary: #ff6358</li><li>primary-hover: #ea5a51</li><li>primary-active: #d45349</li><li>primary-emphasis: #ff9d97</li><li>primary-on-subtle: #5c201c</li><li>on-primary: #ffffff</li><li>primary-on-surface: #ff6358</li><li>secondary-subtle: #fafafa</li><li>secondary-subtle-hover: #f5f5f5</li><li>secondary-subtle-active: #ebebeb</li><li>secondary: #666666</li><li>secondary-hover: #525252</li><li>secondary-active: #3d3d3d</li><li>secondary-emphasis: #e0e0e0</li><li>secondary-on-subtle: #141414</li><li>on-secondary: #ffffff</li><li>secondary-on-surface: #292929</li><li>tertiary-subtle: #d8f1fd</li><li>tertiary-subtle-hover: #c5eafc</li><li>tertiary-subtle-active: #a3dffb</li><li>tertiary: #03a9f4</li><li>tertiary-hover: #039ae0</li><li>tertiary-active: #028ccb</li><li>tertiary-emphasis: #61c9f9</li><li>tertiary-on-subtle: #023f5c</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #028ccb</li><li>info-subtle: #d2e2fb</li><li>info-subtle-hover: #bdd4f8</li><li>info-subtle-active: #80acf4</li><li>info: #0058e9</li><li>info-hover: #0052d6</li><li>info-active: #004ac2</li><li>info-emphasis: #6098f2</li><li>info-on-subtle: #002259</li><li>on-info: #ffffff</li><li>info-on-surface: #004ac2</li><li>success-subtle: #dcf0d3</li><li>success-subtle-hover: #cbe9bf</li><li>success-subtle-active: #b7e1a5</li><li>success: #37b400</li><li>success-hover: #32a500</li><li>success-active: #2d9600</li><li>success-emphasis: #81d15f</li><li>success-on-subtle: #1c5a00</li><li>on-success: #ffffff</li><li>success-on-surface: #2d9600</li><li>warning-subtle: #fff4d3</li><li>warning-subtle-hover: #ffeebd</li><li>warning-subtle-active: #ffe79e</li><li>warning: #ffc000</li><li>warning-hover: #eaaf00</li><li>warning-active: #d49f00</li><li>warning-emphasis: #ffd760</li><li>warning-on-subtle: #5e4700</li><li>on-warning: #3d3d3d</li><li>warning-on-surface: #ffc000</li><li>error-subtle: #fcddda</li><li>error-subtle-hover: #fbc8c3</li><li>error-subtle-active: #f98b80</li><li>error: #f31700</li><li>error-hover: #df1600</li><li>error-active: #ca1400</li><li>error-emphasis: #f76f60</li><li>error-on-subtle: #7a0c00</li><li>on-error: #ffffff</li><li>error-on-surface: #ca1400</li><li>light-subtle: #fafafa</li><li>light-subtle-hover: #f5f5f5</li><li>light-subtle-active: #ebebeb</li><li>light: #ebebeb</li><li>light-hover: #e0e0e0</li><li>light-active: #d6d6d6</li><li>light-emphasis: #d6d6d6</li><li>light-on-subtle: #141414</li><li>on-light: #000000</li><li>light-on-surface: #e0e0e0</li><li>dark-subtle: #c2c2c2</li><li>dark-subtle-hover: #adadad</li><li>dark-subtle-active: #999999</li><li>dark: #3d3d3d</li><li>dark-hover: #292929</li><li>dark-active: #1f1f1f</li><li>dark-emphasis: #666666</li><li>dark-on-subtle: #1f1f1f</li><li>on-dark: #ffffff</li><li>dark-on-surface: #141414</li><li>inverse-subtle: #666666</li><li>inverse-subtle-hover: #525252</li><li>inverse-subtle-active: #3d3d3d</li><li>inverse: #3d3d3d</li><li>inverse-hover: #292929</li><li>inverse-active: #1f1f1f</li><li>inverse-emphasis: #999999</li><li>inverse-on-subtle: #ffffff</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #141414</li><li>series-a: #ff6358</li><li>series-a-bold: #bf4a42</li><li>series-a-bolder: #80322c</li><li>series-a-subtle: #ffb1ac</li><li>series-a-subtler: #ff8a82</li><li>series-b: #ffe162</li><li>series-b-bold: #bfa94a</li><li>series-b-bolder: #807131</li><li>series-b-subtle: #fff0b1</li><li>series-b-subtler: #ffe989</li><li>series-c: #4cd180</li><li>series-c-bold: #399d60</li><li>series-c-bolder: #266940</li><li>series-c-subtle: #a6e8c0</li><li>series-c-subtler: #79dda0</li><li>series-d: #4b5ffa</li><li>series-d-bold: #3847bc</li><li>series-d-bolder: #26307d</li><li>series-d-subtle: #a5affd</li><li>series-d-subtler: #7887fb</li><li>series-e: #ac58ff</li><li>series-e-bold: #8142bf</li><li>series-e-bolder: #562c80</li><li>series-e-subtle: #d6acff</li><li>series-e-subtler: #c182ff</li><li>series-f: #ff5892</li><li>series-f-bold: #bf426e</li><li>series-f-bolder: #802c49</li><li>series-f-subtle: #ffacc9</li><li>series-f-subtler: #ff82ae</li></ul></td>
+    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.36, (0.6 - l) * 99999, 0.95) 0 h)</li><li>subtle: oklch(51.03% 0 0deg)</li><li>surface: oklch(98.51% 0 0deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) calc(l + 0.02) c h)</li><li>border: oklch(0% 0 0deg / 0.08)</li><li>border-alt: oklch(0% 0 0deg / 0.16)</li><li>base-subtle: oklch(from var(--kendo-color-base) calc(l + clamp(-0.03, (0.6 - l) * 99999, 0.03)) c h)</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) calc(l + clamp(-0.064, (0.6 - l) * 99999, 0.064)) c h)</li><li>base-subtle-active: oklch(from var(--kendo-color-base) calc(l + clamp(-0.094, (0.6 - l) * 99999, 0.094)) c h)</li><li>base: oklch(97.02% 0 0deg)</li><li>base-hover: oklch(from var(--kendo-color-base) calc(l + clamp(-0.03, (0.6 - l) * 99999, 0.03)) c h)</li><li>base-active: oklch(from var(--kendo-color-base) calc(l + clamp(-0.094, (0.6 - l) * 99999, 0.094)) c h)</li><li>base-emphasis: oklch(from var(--kendo-color-base) calc(l + clamp(-0.156, (0.6 - l) * 99999, 0.156)) c h)</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.36, (0.6 - l) * 99999, 0.95) 0 h)</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.36, (0.6 - l) * 99999, 0.95) 0 h)</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.36, (0.6 - l) * 99999, 0.95) 0 h)</li><li>primary-subtle: oklch(from var(--kendo-color-primary) 0.958 calc(c * 0.11) h)</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) 0.927 calc(c * 0.19) h)</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) 0.88 calc(c * 0.33) h)</li><li>primary: oklch(69.85% 0.1923 27.19deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) calc(l - 0.044) calc(c - 0.012) h)</li><li>primary-active: oklch(from var(--kendo-color-primary) calc(l - 0.088) calc(c - 0.027) h)</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l * 0.665 + 0.33) calc(c * 0.61) h)</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l * 0.48) calc(c * 0.47) h)</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) l c h)</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l * 0.03 + 0.97) calc(c * 0.12) h)</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) calc(l * 0.06 + 0.94) calc(c * 0.18) h)</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l * 0.12 + 0.88) calc(c * 0.25) h)</li><li>secondary: oklch(51.03% 0 0deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) calc(l - 0.072) c h)</li><li>secondary-active: oklch(from var(--kendo-color-secondary) calc(l - 0.15) c h)</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l * 0.19 + 0.81) calc(c * 0.55) h)</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) calc(l * 0.375) c h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) calc(l * 0.55) c h)</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) 0.944 calc(c * 0.20) h)</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) 0.916 calc(c * 0.29) h)</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) 0.872 calc(c * 0.46) h)</li><li>tertiary: oklch(69.91% 0.157 238.99deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) calc(l + clamp(-0.046, (0.6 - l) * 99999, 0.046)) c h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) calc(l + clamp(-0.09, (0.6 - l) * 99999, 0.09)) c h)</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l * 0.665 + 0.33) calc(c * 0.75) h)</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l * 0.50) calc(c * 0.48) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) calc(l * 0.87) c h)</li><li>info-subtle: oklch(from var(--kendo-color-info) 0.9086 calc(c * 0.17) h)</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) 0.8646 calc(c * 0.24) h)</li><li>info-subtle-active: oklch(from var(--kendo-color-info) 0.7417 calc(c * 0.50) h)</li><li>info: oklch(51.78% 0.2301 261.43deg)</li><li>info-hover: oklch(from var(--kendo-color-info) calc(l - 0.0286) calc(c - 0.0164) h)</li><li>info-active: oklch(from var(--kendo-color-info) calc(l - 0.0624) calc(c - 0.032) h)</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l * 0.68 + 0.33) calc(c * 0.64) h)</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l * 0.52) calc(c * 0.46) h)</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) calc(l * 0.88) calc(c * 0.86) h)</li><li>success-subtle: oklch(from var(--kendo-color-success) 0.9326 calc(c * 0.20) h)</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) 0.9012 calc(c * 0.30) h)</li><li>success-subtle-active: oklch(from var(--kendo-color-success) 0.8647 calc(c * 0.42) h)</li><li>success: oklch(67.45% 0.2171 139.99deg)</li><li>success-hover: oklch(from var(--kendo-color-success) calc(l - 0.042) calc(c - 0.0137) h)</li><li>success-active: oklch(from var(--kendo-color-success) calc(l - 0.0847) calc(c - 0.0275) h)</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l * 0.675 + 0.33) calc(c * 0.78) h)</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l * 0.61) calc(c * 0.60) h)</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) calc(l * 0.875) calc(c * 0.875) h)</li><li>warning-subtle: oklch(from var(--kendo-color-warning) 0.9674 calc(c * 0.26) h)</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) 0.9508 calc(c * 0.38) h)</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) 0.9312 calc(c * 0.55) h)</li><li>warning: oklch(84.22% 0.1727 84.58deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) calc(l - 0.055) calc(c - 0.011) h)</li><li>warning-active: oklch(from var(--kendo-color-warning) calc(l - 0.11) calc(c - 0.0225) h)</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l * 0.665 + 0.33) calc(c * 0.83) h)</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l * 0.49) calc(c * 0.49) h)</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0.36, (0.6 - l) * 99999, 1) 0 h)</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) l c h)</li><li>error-subtle: oklch(from var(--kendo-color-error) 0.9223 calc(c * 0.14) h)</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) 0.8762 calc(c * 0.24) h)</li><li>error-subtle-active: oklch(from var(--kendo-color-error) 0.7533 calc(c * 0.56) h)</li><li>error: oklch(61.07% 0.2435 30.2deg)</li><li>error-hover: oklch(from var(--kendo-color-error) calc(l - 0.0377) calc(c - 0.0159) h)</li><li>error-active: oklch(from var(--kendo-color-error) calc(l - 0.0782) calc(c - 0.0326) h)</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l * 0.61 + 0.33) calc(c * 0.70) h)</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l * 0.61) calc(c * 0.59) h)</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) calc(l * 0.872) calc(c * 0.866) h)</li><li>light-subtle: oklch(98.51% 0 0deg)</li><li>light-subtle-hover: oklch(97.02% 0 0deg)</li><li>light-subtle-active: oklch(94.01% 0 0deg)</li><li>light: oklch(94.01% 0 0deg)</li><li>light-hover: oklch(90.67% 0 0deg)</li><li>light-active: oklch(87.61% 0 0deg)</li><li>light-emphasis: oklch(87.61% 0 0deg)</li><li>light-on-subtle: oklch(19.13% 0 0deg)</li><li>on-light: oklch(0% 0 0deg)</li><li>light-on-surface: oklch(90.67% 0 0deg)</li><li>dark-subtle: oklch(81.41% 0 0deg)</li><li>dark-subtle-hover: oklch(74.76% 0 0deg)</li><li>dark-subtle-active: oklch(68.3% 0 0deg)</li><li>dark: oklch(36% 0 0deg)</li><li>dark-hover: oklch(28.09% 0 0deg)</li><li>dark-active: oklch(23.93% 0 0deg)</li><li>dark-emphasis: oklch(51.03% 0 0deg)</li><li>dark-on-subtle: oklch(23.93% 0 0deg)</li><li>on-dark: oklch(100% 0 0deg)</li><li>dark-on-surface: oklch(19.13% 0 0deg)</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.15) c h)</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.079) c h)</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) l c h)</li><li>inverse: oklch(36% 0 0deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.079) c h)</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.121) c h)</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.323) c h)</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l * 0.53) c h)</li><li>series: oklch(69.85% 0.1923 27.19deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l * 0.81) calc(c * 0.79) h)</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l * 0.61) calc(c * 0.57) h)</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l * 0.55 + 0.45) calc(c * 0.50) h)</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l * 0.79 + 0.21) calc(c * 0.77) h)</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.2128) calc(c - 0.0444) calc(h + 68.82))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l * 0.81) calc(c * 0.79) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l * 0.61) calc(c * 0.57) h)</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l * 0.55 + 0.45) calc(c * 0.50) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l * 0.79 + 0.21) calc(c * 0.77) h)</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.0697) calc(c - 0.0281) calc(h + 125.93))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l * 0.81) calc(c * 0.79) h)</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l * 0.61) calc(c * 0.57) h)</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l * 0.55 + 0.45) calc(c * 0.50) h)</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l * 0.79 + 0.21) calc(c * 0.77) h)</li><li>series-d: oklch(from var(--kendo-color-series) calc(l - 0.1323) calc(c + 0.0372) calc(h + 244.06))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l * 0.81) calc(c * 0.79) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l * 0.61) calc(c * 0.57) h)</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l * 0.55 + 0.45) calc(c * 0.50) h)</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l * 0.79 + 0.21) calc(c * 0.77) h)</li><li>series-e: oklch(from var(--kendo-color-series) calc(l - 0.0581) calc(c + 0.0456) calc(h + 276.18))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l * 0.81) calc(c * 0.79) h)</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l * 0.61) calc(c * 0.57) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l * 0.55 + 0.45) calc(c * 0.50) h)</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l * 0.79 + 0.21) calc(c * 0.77) h)</li><li>series-f: oklch(from var(--kendo-color-series) l calc(c + 0.0143) calc(h - 24.38))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l * 0.81) calc(c * 0.79) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l * 0.61) calc(c * 0.57) h)</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l * 0.55 + 0.45) calc(c * 0.50) h)</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l * 0.79 + 0.21) calc(c * 0.77) h)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -3069,6 +3069,11 @@ The following table lists the available variables for customizing the Theme Core
     <td>inverse</td>
     <td colspan="2"> inverse-subtle, inverse-subtle-hover, inverse-subtle-active, inverse, inverse-hover, inverse-active, inverse-emphasis, inverse-on-subtle, on-inverse, inverse-on-surface</td>
     <td>The Inverse variable group.</td>
+</tr>
+<tr>
+    <td>series</td>
+    <td colspan="2"> series</td>
+    <td>The Series base variable group.</td>
 </tr>
 <tr>
     <td>series-a</td>
@@ -3694,6 +3699,11 @@ The following table lists the available variables for customizing the Theme Core
     <td>Color</td>
     <td>inverse-on-surface</td>
     <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series</td>
+    <td colspan="2">The base series color variable.</td>
 </tr>
 <tr>
     <td>Color</td>
@@ -4796,146 +4806,6 @@ The following table lists the available variables for customizing the Theme Core
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
-### Palette
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-palette-gray</td>
-    <td>Map</td>
-    <td><code>$_default-palette-gray</code></td>
-    <td><ul><li>1: #fafafa</li><li>2: #f5f5f5</li><li>3: #ebebeb</li><li>4: #e0e0e0</li><li>5: #d6d6d6</li><li>6: #c2c2c2</li><li>7: #adadad</li><li>8: #999999</li><li>9: #808080</li><li>10: #666666</li><li>11: #525252</li><li>12: #3d3d3d</li><li>13: #292929</li><li>14: #1f1f1f</li><li>15: #141414</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-coral</td>
-    <td>Map</td>
-    <td><code>$_default-palette-coral</code></td>
-    <td><ul><li>1: #fff6f5</li><li>2: #ffeceb</li><li>3: #ffdedb</li><li>4: #ffc8c4</li><li>5: #ffb1ac</li><li>6: #ff9d97</li><li>7: #ff8a82</li><li>8: #ff766d</li><li>9: #ff6358</li><li>10: #ea5a51</li><li>11: #d45349</li><li>12: #bf4a42</li><li>13: #a33f38</li><li>14: #80322c</li><li>15: #5c201c</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Coral Palette provides colors to the Primary and Series A variable groups.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-sky-blue</td>
-    <td>Map</td>
-    <td><code>$_default-palette-sky-blue</code></td>
-    <td><ul><li>1: #ebf8fe</li><li>2: #d8f1fd</li><li>3: #c5eafc</li><li>4: #a3dffb</li><li>5: #81d4fA</li><li>6: #61c9f9</li><li>7: #42bff7</li><li>8: #22b3f5</li><li>9: #03a9f4</li><li>10: #039ae0</li><li>11: #028ccb</li><li>12: #027fb7</li><li>13: #026999</li><li>14: #02557a</li><li>15: #023f5c</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Sky Blue Palette provides colors to the Tertiary variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-green</td>
-    <td>Map</td>
-    <td><code>$_default-palette-green</code></td>
-    <td><ul><li>1: #edf8e9</li><li>2: #dcf0d3</li><li>3: #cbe9bf</li><li>4: #b7e1a5</li><li>5: #9bda80</li><li>6: #81d15f</li><li>7: #69c740</li><li>8: #4ebe1f</li><li>9: #37b400</li><li>10: #32a500</li><li>11: #2d9600</li><li>12: #298700</li><li>13: #227100</li><li>14: #1c5a00</li><li>15: #1c5a00</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Green Palette provides colors to the Success variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-blue</td>
-    <td>Map</td>
-    <td><code>$_default-palette-blue</code></td>
-    <td><ul><li>1: #e9f0fd</li><li>2: #d2e2fb</li><li>3: #bdd4f8</li><li>4: #9ec0f6</li><li>5: #80acf4</li><li>6: #6098f2</li><li>7: #4082ef</li><li>8: #206eec</li><li>9: #0058e9</li><li>10: #0052d6</li><li>11: #004ac2</li><li>12: #0042af</li><li>13: #003892</li><li>14: #002c75</li><li>15: #002259</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Blue Palette provides colors to the Info variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-yellow</td>
-    <td>Map</td>
-    <td><code>$_default-palette-yellow</code></td>
-    <td><ul><li>1: #fffae9</li><li>2: #fff4d3</li><li>3: #ffeebd</li><li>4: #ffe79e</li><li>5: #ffe080</li><li>6: #ffd760</li><li>7: #ffd040</li><li>8: #ffc720</li><li>9: #ffc000</li><li>10: #eaaf00</li><li>11: #d49f00</li><li>12: #bf9000</li><li>13: #a07800</li><li>14: #806000</li><li>15: #5e4700</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Yellow Palette provides colors to the Warning variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-red</td>
-    <td>Map</td>
-    <td><code>$_default-palette-red</code></td>
-    <td><ul><li>1: #feeeed</li><li>2: #fcddda</li><li>3: #fbc8c3</li><li>4: #faaaa2</li><li>5: #f98b80</li><li>6: #f76f60</li><li>7: #f65140</li><li>8: #f43520</li><li>9: #f31700</li><li>10: #df1600</li><li>11: #ca1400</li><li>12: #b61100</li><li>13: #980f00</li><li>14: #7a0c00</li><li>15: #7a0c00</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Red Palette provides colors to the Error variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-lemon-yellow</td>
-    <td>Map</td>
-    <td><code>$_default-palette-lemon-yellow</code></td>
-    <td><ul><li>1: #fffcf1</li><li>2: #fffae2</li><li>3: #fff7d4</li><li>4: #fff4c2</li><li>5: #fff0b1</li><li>6: #ffed9d</li><li>7: #ffe989</li><li>8: #ffe676</li><li>9: #ffe162</li><li>10: #ead05a</li><li>11: #d4bc52</li><li>12: #bfa94a</li><li>13: #a3913f</li><li>14: #807131</li><li>15: #5c5223</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lemon Yellow Palette provides colors to the Series B variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-spring-green</td>
-    <td>Map</td>
-    <td><code>$_default-palette-spring-green</code></td>
-    <td><ul><li>1: #effaf3</li><li>2: #e0f6e8</li><li>3: #d1f1dd</li><li>4: #c0edd1</li><li>5: #a6e8c0</li><li>6: #8fe2af</li><li>7: #79dda0</li><li>8: #62d78f</li><li>9: #4cd180</li><li>10: #46c074</li><li>11: #3fae6a</li><li>12: #399d60</li><li>13: #2f834f</li><li>14: #266940</li><li>15: #1c4f30</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Spring Green Palette provides colors to the Series C variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-royal-blue</td>
-    <td>Map</td>
-    <td><code>$_default-palette-royal-blue</code></td>
-    <td><ul><li>1: #f0f2ff</li><li>2: #e1e4fe</li><li>3: #d2d7fe</li><li>4: #bbc3fd</li><li>5: #a5affd</li><li>6: #8e9bfc</li><li>7: #7887fb</li><li>8: #6173fb</li><li>9: #4b5ffa</li><li>10: #4558e5</li><li>11: #3f50d1</li><li>12: #3847bc</li><li>13: #2f3c9d</li><li>14: #26307d</li><li>15: #1c245e</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Royal Blue Palette provides colors to the Series D variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-lavender-purple</td>
-    <td>Map</td>
-    <td><code>$_default-palette-lavender-purple</code></td>
-    <td><ul><li>1: #f7f0ff</li><li>2: #f0e0ff</li><li>3: #e8d1ff</li><li>4: #dfbfff</li><li>5: #d6acff</li><li>6: #cc97ff</li><li>7: #c182ff</li><li>8: #b76dff</li><li>9: #ac58ff</li><li>10: #9e51ea</li><li>11: #8f49d4</li><li>12: #8142bf</li><li>13: #6b37a0</li><li>14: #562c80</li><li>15: #3f205e</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lavender Purple Palette provides colors to the Series E variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-flamingo-pink</td>
-    <td>Map</td>
-    <td><code>$_default-palette-flamingo-pink</code></td>
-    <td><ul><li>1: #fff0f5</li><li>2: #ffe1eb</li><li>3: #ffd1e1</li><li>4: #ffbfd6</li><li>5: #ffacc9</li><li>6: #ff97bb</li><li>7: #ff82ae</li><li>8: #ff6da0</li><li>9: #ff5892</li><li>10: #ea5186</li><li>11: #d4497a</li><li>12: #bf426e</li><li>13: #a0375c</li><li>14: #802c49</li><li>15: #5e2036</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Flamingo Pink Palette provides colors to the Series F variable group.</div></div>
     </td>
 </tr>
 </tbody>
