@@ -177,6 +177,7 @@
         display: flex;
         flex-direction: column;
         gap: $kendo-list-item-spacing;
+        text-align: start;
     }
 
     .k-list-ul + .k-list-ul {
@@ -217,8 +218,9 @@
     .k-list-header-text,
     .k-list-optionlabel {
         &::before {
-            content: "\200b";
-            width: 0px;
+            content: "";
+            width: 0;
+            height: 1lh;
             overflow: hidden;
         }
     }

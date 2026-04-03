@@ -221,6 +221,57 @@ const getRGBFromRGBA = (foregroundColor, backgroundColor) => {
 };
 
 const decomposeColor = ( color ) => {
+    if (color.includes("oklch")) {
+        // Parse oklch(L C H) or oklch(L C H / A)
+        const inner = color.match(/oklch\(([^)]+)\)/)[1];
+        const parts = inner.split('/');
+        const a = parts[1] !== undefined ? Number(parts[1].trim()) : 1;
+        const components = parts[0].trim().split(/\s+/);
+
+        let L = parseFloat(components[0]);
+        let C = parseFloat(components[1]);
+        let H = parseFloat(components[2]) || 0;
+
+        // Normalize: if L is given as percentage (e.g. "37.17%"), convert to 0-1
+        if (components[0].includes('%')) {
+            L = L / 100;
+        }
+        // If H has "deg" suffix, strip it (already parsed by parseFloat)
+
+        // Convert oklch → oklab
+        const hRad = H * Math.PI / 180;
+        const labA = C * Math.cos(hRad);
+        const labB = C * Math.sin(hRad);
+
+        // Convert oklab → linear sRGB
+        const l_ = L + 0.3963377774 * labA + 0.2158037573 * labB;
+        const m_ = L - 0.1055613458 * labA - 0.0638541728 * labB;
+        const s_ = L - 0.0894841775 * labA - 1.2914855480 * labB;
+
+        const l3 = l_ * l_ * l_;
+        const m3 = m_ * m_ * m_;
+        const s3 = s_ * s_ * s_;
+
+        let rLin = +4.0767416621 * l3 - 3.3077115913 * m3 + 0.2309699292 * s3;
+        let gLin = -1.2684380046 * l3 + 2.6097574011 * m3 - 0.3413193965 * s3;
+        let bLin = -0.0041960863 * l3 - 0.7034186147 * m3 + 1.7076147010 * s3;
+
+        // Linear sRGB → sRGB (gamma)
+        const gammaEncode = (v) => {
+            if (v <= 0.0031308) {
+                return Math.round(Math.max(0, v * 12.92) * 255);
+            }
+            return Math.round(Math.min(1, 1.055 * Math.pow(v, 1 / 2.4) - 0.055) * 255);
+        };
+
+        return {
+            r: Math.max(0, Math.min(255, gammaEncode(rLin))),
+            g: Math.max(0, Math.min(255, gammaEncode(gLin))),
+            b: Math.max(0, Math.min(255, gammaEncode(bLin))),
+            a: a
+        };
+    }
+
     if (color.includes("srgb")) {
         const alphaComponent = color.match(/\(([^()]*)\)/)[1].split('/')[1];
         const colorComponents = color.match(/\(([^()]*)\)/)[1].split('/')[0].replace('srgb', '').trim().split(' ');
@@ -233,7 +284,30 @@ const decomposeColor = ( color ) => {
         return { r: r, g: g, b: b, a: a };
     }
 
-    const colorComponents = color.split(')')[0].split('(')[1].split(', ');
+    // Handle color keywords and hex values
+    if (color === 'transparent' || color === 'rgba(0, 0, 0, 0)') {
+        return { r: 0, g: 0, b: 0, a: 0 };
+    }
+
+    // Hex color
+    if (color.startsWith('#')) {
+        const hex = color.replace('#', '');
+        const r = parseInt(hex.substring(0, 2), 16);
+        const g = parseInt(hex.substring(2, 4), 16);
+        const b = parseInt(hex.substring(4, 6), 16);
+        const a = hex.length === 8 ? parseInt(hex.substring(6, 8), 16) / 255 : 1;
+        return { r, g, b, a };
+    }
+
+    // rgb() / rgba() fallback
+    const match = color.match(/rgba?\(([^)]+)\)/);
+    if (!match) {
+        // eslint-disable-next-line no-console
+        console.warn(`decomposeColor: unrecognized color format "${color}", treating as transparent`);
+        return { r: 0, g: 0, b: 0, a: 0 };
+    }
+
+    const colorComponents = match[1].split(', ');
     const r = Number(colorComponents[0]);
     const g = Number(colorComponents[1]);
     const b = Number(colorComponents[2]);
@@ -282,7 +356,8 @@ const selfAndBackground = async(el, parent) => {
     // If background is semi-transparent, blend it with the parent background
     // to get the actual solid background color
     if ((background.indexOf('rgba') > -1 && background !== 'rgba(255, 255, 255, 1)') ||
-        (background.includes('color(srgb') && background.includes('/'))) {
+        (background.includes('color(srgb') && background.includes('/')) ||
+        (background.includes('oklch') && background.includes('/'))) {
         let parentParent = await (par || parent).findElement(By.xpath('..'));
         let parentBackground = await parentParent.getCssValue('backgroundColor');
 
@@ -298,7 +373,8 @@ const selfAndBackground = async(el, parent) => {
     // If element background is semi-transparent, blend it with the background
     // to get the actual solid element background color
     if ((self.indexOf('rgba') > -1 && self !== 'rgba(255, 255, 255, 1)') ||
-        (self.includes('color(srgb') && self.includes('/'))) {
+        (self.includes('color(srgb') && self.includes('/')) ||
+        (self.includes('oklch') && self.includes('/'))) {
         decomposed = getRGBFromRGBA(decomposeColor(self), decomposeColor(background));
         self = 'rgb(' + decomposed.r + ', ' + decomposed.g + ', ' + decomposed.b + ')';
     }

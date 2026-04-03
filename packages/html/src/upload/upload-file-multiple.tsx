@@ -35,6 +35,8 @@ export const UploadFileMultiple = (
                     [`k-file-${status}`]: status,
                 },
             )}
+            role="listitem"
+            tabIndex={0}
         >
             <div className="k-file-multiple">
                 <ProgressBar className={classNames(
@@ -54,17 +56,17 @@ export const UploadFileMultiple = (
                         },
                     )}
                     >{fileSummary}</span>}
-                    {validationMsg && <span className="k-file-validation-message">{validationMsg}</span>}
+                    {validationMsg && <span className="k-file-validation-message" aria-live="polite">{validationMsg}</span>}
                 </div>
                 <div className="k-upload-actions">
                     { status === 'progress'
                         ?
                         <>
                             <span className="k-upload-pct">{progress}%</span>
-                            <Button icon="pause-sm" fillMode="flat" className="k-upload-action"></Button>
-                            <Button icon="cancel" fillMode="flat" className="k-upload-action"></Button>
+                            <Button icon="pause-sm" fillMode="flat" size="xsmall" className="k-upload-action" aria-label="Pause upload" tabIndex={-1}></Button>
+                            <Button icon="cancel" fillMode="flat" size="xsmall" className="k-upload-action" aria-label="Cancel upload" tabIndex={-1}></Button>
                         </>
-                        : <Button icon="x" fillMode="flat" className="k-upload-action"></Button>
+                        : <Button icon="x" fillMode="flat" size="xsmall" className="k-upload-action" aria-label="Remove file" tabIndex={-1}></Button>
                     }
                 </div>
             </div>

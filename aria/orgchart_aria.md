@@ -12,6 +12,7 @@ The `OrgChart` component represents a tree structure and allows editing of its i
 |  | `aria-orientation=horizontal` | Specifies the orientation of the OrgChart tree. |
 | `.k-orgchart-group:not(.k-orgchart-level-1)` | `role=group` | The element that wraps child nodes. |
 | `.k-orgchart-node-group` | `role=group` | The element that groups nodes visually with a title and expand/collapse button. |
+| `.k-orgchart-node-container` | `role=presentation` | The node container must not break the tree-treeitem relationship. |
 | `.k-orgchart-node` | `role=treeitem` | The node wrapper representing the treeitem in the hierarchical structure. |
 |  | `aria-level` | Announces the level of the tree node item. The value of level is number-based(>=1). |
 |  | `aria-keyshortcuts=Enter` | Announces the that the edit menu of the OrgChart can be activated via the Enter key. |

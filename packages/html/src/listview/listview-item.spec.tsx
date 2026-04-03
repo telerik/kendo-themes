@@ -13,15 +13,31 @@ const options = {};
 
 const defaultOptions = {};
 
+export type KendoListViewItemProps = {
+    /** @aria role - "listitem" for non-selectable, "option" for selectable ListView */
+    itemRole?: 'listitem' | 'option';
+    /** @aria aria-setsize - Total number of items in the ListView */
+    ariaSetSize?: number;
+    /** @aria aria-posinset - Position of this item (1-based) */
+    ariaPosInSet?: number;
+    /** @aria tabindex=0 for first/focused item */
+    tabIndex?: number;
+};
+
 export type KendoListViewItemState = { [K in (typeof states)[number]]?: boolean };
 
-export const ListViewItem: KendoComponent<KendoListViewItemState & React.HTMLAttributes<HTMLDivElement>> = (
-    props: KendoListViewItemState &
+export const ListViewItem: KendoComponent<KendoListViewItemProps & KendoListViewItemState & React.HTMLAttributes<HTMLDivElement>> = (
+    props: KendoListViewItemProps &
+        KendoListViewItemState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
         focus,
         selected,
+        itemRole,
+        ariaSetSize,
+        ariaPosInSet,
+        tabIndex,
         ...other
     } = props;
 
@@ -35,7 +51,13 @@ export const ListViewItem: KendoComponent<KendoListViewItemState & React.HTMLAtt
                     focus,
                     selected,
                 })
-            )}>
+            )}
+            role={itemRole}
+            aria-setsize={ariaSetSize}
+            aria-posinset={ariaPosInSet}
+            tabIndex={tabIndex}
+            aria-selected={itemRole === 'option' && selected ? 'true' : undefined}
+        >
             {props.children}
         </div>
     );

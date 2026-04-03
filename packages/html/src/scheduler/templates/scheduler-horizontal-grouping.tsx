@@ -19,7 +19,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                     <SchedulerHead as="tr">
                         <td>
                             <SchedulerTimes>
-                                <SchedulerTable>
+                                <SchedulerTable role="none">
                                     <tbody>
                                         <tr style={{ height: "37px" }}>
                                             <SchedulerCell as="th" />
@@ -64,7 +64,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                     <SchedulerBody as="tr">
                         <td>
                             <SchedulerTimes style={{ height: "395px" }}>
-                                <SchedulerTable style={{ height: "900px" }}>
+                                <SchedulerTable role="none" style={{ height: "900px" }}>
                                     <tbody>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -151,7 +151,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                             </SchedulerTimes>
                         </td>
                         <td>
-                            <SchedulerContent style={{ height: "395px" }}>
+                            <SchedulerContent style={{ height: "395px" }} tabIndex={0}>
                                 <SchedulerTable>
                                     <tbody>
                                         <tr className="k-middle-row">

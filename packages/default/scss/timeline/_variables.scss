@@ -16,13 +16,13 @@ $kendo-timeline-items-padding: k-spacing(4) !default;
 
 /// The font family of the Timeline.
 /// @group timeline
-$kendo-timeline-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-timeline-font-family: var(--kendo-font-family) !default;
 /// The font size of the Timeline.
 /// @group timeline
-$kendo-timeline-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-timeline-font-size: var(--kendo-font-size) !default;
 /// The line height of the Timeline.
 /// @group timeline
-$kendo-timeline-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-timeline-line-height: var(--kendo-line-height) !default;
 
 /// The horizontal spacing of the mobile Timeline.
 /// @group timeline

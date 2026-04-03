@@ -38,7 +38,10 @@ export const ColumnList: KendoComponent<KendoColumnListProps & React.HTMLAttribu
                     optionClassNames(COLUMNLIST_CLASSNAME, {
                         size,
                     })
-                )}>
+                )}
+                role="listbox"
+                aria-multiselectable="true"
+            >
                 {props.children}
             </div>
         </div>

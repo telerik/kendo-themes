@@ -10,18 +10,18 @@ import { ToolbarSeparator, ToolbarItem } from "../../toolbar";
 export const ImageEditorCrop = (props: any) => (
     <ImageEditor
         toolbarItems={[
-            <Button key="toolbar-button-1" icon="upload"></Button>,
-            <Button key="toolbar-button-2" icon="download"></Button>,
+            <Button key="toolbar-button-1" icon="upload" aria-label="Upload"></Button>,
+            <Button key="toolbar-button-2" icon="download" aria-label="Download"></Button>,
             <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
-            <Button key="toolbar-button-3" disabled icon="undo"></Button>,
-            <Button key="toolbar-button-4" disabled icon="redo"></Button>,
+            <Button key="toolbar-button-3" disabled icon="undo" aria-label="Undo"></Button>,
+            <Button key="toolbar-button-4" disabled icon="redo" aria-label="Redo"></Button>,
             <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
-            <Button key="toolbar-button-5" icon="crop"></Button>,
-            <Button key="toolbar-button-6" icon="image-resize"></Button>,
-            <Button key="toolbar-button-7" icon="zoom-in"></Button>,
-            <Button key="toolbar-button-8" icon="zoom-out"></Button>,
+            <Button key="toolbar-button-5" icon="crop" aria-label="Crop"></Button>,
+            <Button key="toolbar-button-6" icon="image-resize" aria-label="Resize"></Button>,
+            <Button key="toolbar-button-7" icon="zoom-in" aria-label="Zoom in"></Button>,
+            <Button key="toolbar-button-8" icon="zoom-out" aria-label="Zoom out"></Button>,
             <ToolbarItem key="toolbar-item-1">
-                <DropdownList value="Zoom options" />
+                <DropdownList value="Zoom options" aria-label="Zoom options" />
             </ToolbarItem>
         ]}
         actionPane={
@@ -35,7 +35,7 @@ export const ImageEditorCrop = (props: any) => (
                     <FormField
                         colSpan="2"
                         label="Aspect Ratio:"
-                        editor={ <DropdownList value="Original ratio" /> }
+                        editor={ <DropdownList value="Original ratio" aria-label="Aspect ratio" /> }
                     />
                     <FormField
                         colSpan="2"
@@ -50,16 +50,18 @@ export const ImageEditorCrop = (props: any) => (
                     <FormField
                         colSpan="1"
                         label="Width:"
-                        editor={ <NumericTextbox showClearButton={false} value="61" /> }
+                        editorId="crop-width"
+                        editor={ <NumericTextbox id="crop-width" showClearButton={false} value="61" /> }
                     />
                     <FormField
                         colSpan="1"
                         label="Height:"
-                        editor={ <NumericTextbox showClearButton={false} value="68" /> }
+                        editorId="crop-height"
+                        editor={ <NumericTextbox id="crop-height" showClearButton={false} value="68" /> }
                     />
                    <FormField
                         colSpan="2"
-                        editor={ <CheckboxWithLabelAfter>Lock aspect ratio</CheckboxWithLabelAfter> }
+                        editor={ <CheckboxWithLabelAfter id="crop-lock">Lock aspect ratio</CheckboxWithLabelAfter> }
                     />
                 </Fieldset>
             </FormNormal>
@@ -67,7 +69,7 @@ export const ImageEditorCrop = (props: any) => (
 
         children={
             <>
-                <canvas width="61" height="68"></canvas>
+                <canvas width="61" height="68" role="img" aria-label="Image being edited"></canvas>
                 <div className="k-imageeditor-crop-overlay">
                     <div className="k-imageeditor-crop" style={{ width: "61px", height: "68px" }}>
                         <span className="k-resize-handle k-resize-nw"></span>

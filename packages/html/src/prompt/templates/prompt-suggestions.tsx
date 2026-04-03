@@ -13,7 +13,7 @@ export const PromptSuggestions = (props) => (
             <Toolbar fillMode="flat">
                 <IconTextButton fillMode="flat" themeColor="primary" icon="sparkles" rounded="full" selected>Ask AI</IconTextButton>
                 <IconTextButton fillMode="flat" themeColor="primary" icon="comment" rounded="full">Output</IconTextButton>
-                <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full"></IconButton>
+                <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full" aria-label="More actions"></IconButton>
             </Toolbar>
         </PromptHeader>
         <PromptContent>
@@ -23,6 +23,7 @@ export const PromptSuggestions = (props) => (
                     rows={1}
                     suffixSeparator={false}
                     placeholder="Ask or generate content with AI"
+                    aria-label="Ask or generate content with AI"
                     suffix={
                         <>
                             <SpeechToTextButton fillMode="flat" />

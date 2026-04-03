@@ -18,14 +18,14 @@
         <section>
             <div class="k-column-menu">
                 <div class="k-columnmenu-item-wrapper">
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                             </svg>
                         </span>Item 1
                     </div>
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="k-columnmenu-item-wrapper">
                     <div class="k-expander">
-                        <div class="k-columnmenu-item">
+                        <div aria-expanded="true" aria-controls="k-columnmenu-content-1" class="k-columnmenu-item" role="button" tabindex="0">
                             <span class="k-icon k-svg-icon k-svg-i-columns" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 32h96v448H64zm128 448h96V32h-96zM320 32v448h96V32z"></path>
@@ -49,33 +49,33 @@
                                 </span>
                             </span>
                         </div>
-                        <div class="k-columnmenu-item-content k-columns-item">
+                        <div id="k-columnmenu-content-1" class="k-columnmenu-item-content k-columns-item">
                             <div class="k-column-list-wrapper">
-                                <div class="k-column-list">
-                                    <label class="k-column-list-item">
+                                <div class="k-column-list" role="listbox" aria-multiselectable="true">
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 1</span>
-                                    </label>
-                                    <label class="k-column-list-item k-focus">
+                                    </span>
+                                    <span class="k-column-list-item k-focus" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 2" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 2</span>
-                                    </label>
-                                    <label class="k-column-list-item">
+                                    </span>
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 3" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 3</span>
-                                    </label>
-                                    <label class="k-column-list-item">
+                                    </span>
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 4" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 4</span>
-                                    </label>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="k-columnmenu-item-wrapper">
                     <div class="k-expander">
-                        <div class="k-columnmenu-item">
+                        <div aria-expanded="false" aria-controls="k-columnmenu-content-2" class="k-columnmenu-item" role="button" tabindex="0">
                             <span class="k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="k-columnmenu-item-wrapper">
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-group" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M32 256h192v192H32zm0-32h192V32H32zm224 224h192V256H256zm0-416v192h192V32z"></path>
@@ -113,14 +113,14 @@
         <section>
             <div class="k-column-menu k-column-menu-sm">
                 <div class="k-columnmenu-item-wrapper">
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                             </svg>
                         </span>Item 1
                     </div>
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="k-columnmenu-item-wrapper">
                     <div class="k-expander">
-                        <div class="k-columnmenu-item">
+                        <div aria-expanded="true" aria-controls="k-columnmenu-content-3" class="k-columnmenu-item" role="button" tabindex="0">
                             <span class="k-icon k-svg-icon k-svg-i-columns" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 32h96v448H64zm128 448h96V32h-96zM320 32v448h96V32z"></path>
@@ -144,33 +144,33 @@
                                 </span>
                             </span>
                         </div>
-                        <div class="k-columnmenu-item-content k-columns-item">
+                        <div id="k-columnmenu-content-3" class="k-columnmenu-item-content k-columns-item">
                             <div class="k-column-list-wrapper">
-                                <div class="k-column-list k-column-list-sm">
-                                    <label class="k-column-list-item">
+                                <div class="k-column-list k-column-list-sm" role="listbox" aria-multiselectable="true">
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 1</span>
-                                    </label>
-                                    <label class="k-column-list-item k-focus">
+                                    </span>
+                                    <span class="k-column-list-item k-focus" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 2" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 2</span>
-                                    </label>
-                                    <label class="k-column-list-item">
+                                    </span>
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 3" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 3</span>
-                                    </label>
-                                    <label class="k-column-list-item">
+                                    </span>
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 4" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 4</span>
-                                    </label>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="k-columnmenu-item-wrapper">
                     <div class="k-expander">
-                        <div class="k-columnmenu-item">
+                        <div aria-expanded="false" aria-controls="k-columnmenu-content-4" class="k-columnmenu-item" role="button" tabindex="0">
                             <span class="k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 <div class="k-columnmenu-item-wrapper">
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-group" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M32 256h192v192H32zm0-32h192V32H32zm224 224h192V256H256zm0-416v192h192V32z"></path>
@@ -208,14 +208,14 @@
         <section>
             <div class="k-column-menu k-column-menu-md">
                 <div class="k-columnmenu-item-wrapper">
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                             </svg>
                         </span>Item 1
                     </div>
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
@@ -225,7 +225,7 @@
                 </div>
                 <div class="k-columnmenu-item-wrapper">
                     <div class="k-expander">
-                        <div class="k-columnmenu-item">
+                        <div aria-expanded="true" aria-controls="k-columnmenu-content-5" class="k-columnmenu-item" role="button" tabindex="0">
                             <span class="k-icon k-svg-icon k-svg-i-columns" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 32h96v448H64zm128 448h96V32h-96zM320 32v448h96V32z"></path>
@@ -239,33 +239,33 @@
                                 </span>
                             </span>
                         </div>
-                        <div class="k-columnmenu-item-content k-columns-item">
+                        <div id="k-columnmenu-content-5" class="k-columnmenu-item-content k-columns-item">
                             <div class="k-column-list-wrapper">
-                                <div class="k-column-list k-column-list-md">
-                                    <label class="k-column-list-item">
+                                <div class="k-column-list k-column-list-md" role="listbox" aria-multiselectable="true">
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 1</span>
-                                    </label>
-                                    <label class="k-column-list-item k-focus">
+                                    </span>
+                                    <span class="k-column-list-item k-focus" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 2" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 2</span>
-                                    </label>
-                                    <label class="k-column-list-item">
+                                    </span>
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 3" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 3</span>
-                                    </label>
-                                    <label class="k-column-list-item">
+                                    </span>
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 4" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 4</span>
-                                    </label>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -273,7 +273,7 @@
                 </div>
                 <div class="k-columnmenu-item-wrapper">
                     <div class="k-expander">
-                        <div class="k-columnmenu-item">
+                        <div aria-expanded="false" aria-controls="k-columnmenu-content-6" class="k-columnmenu-item" role="button" tabindex="0">
                             <span class="k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -290,7 +290,7 @@
                     </div>
                 </div>
                 <div class="k-columnmenu-item-wrapper">
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-group" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M32 256h192v192H32zm0-32h192V32H32zm224 224h192V256H256zm0-416v192h192V32z"></path>
@@ -303,14 +303,14 @@
         <section>
             <div class="k-column-menu k-column-menu-lg">
                 <div class="k-columnmenu-item-wrapper">
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                             </svg>
                         </span>Item 1
                     </div>
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-sort-desc-small" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
@@ -320,7 +320,7 @@
                 </div>
                 <div class="k-columnmenu-item-wrapper">
                     <div class="k-expander">
-                        <div class="k-columnmenu-item">
+                        <div aria-expanded="true" aria-controls="k-columnmenu-content-7" class="k-columnmenu-item" role="button" tabindex="0">
                             <span class="k-icon k-svg-icon k-svg-i-columns" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 32h96v448H64zm128 448h96V32h-96zM320 32v448h96V32z"></path>
@@ -334,33 +334,33 @@
                                 </span>
                             </span>
                         </div>
-                        <div class="k-columnmenu-item-content k-columns-item">
+                        <div id="k-columnmenu-content-7" class="k-columnmenu-item-content k-columns-item">
                             <div class="k-column-list-wrapper">
-                                <div class="k-column-list k-column-list-lg">
-                                    <label class="k-column-list-item">
+                                <div class="k-column-list k-column-list-lg" role="listbox" aria-multiselectable="true">
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 1" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 1</span>
-                                    </label>
-                                    <label class="k-column-list-item k-focus">
+                                    </span>
+                                    <span class="k-column-list-item k-focus" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 2" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 2</span>
-                                    </label>
-                                    <label class="k-column-list-item">
+                                    </span>
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 3" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 3</span>
-                                    </label>
-                                    <label class="k-column-list-item">
+                                    </span>
+                                    <span class="k-column-list-item" role="option" aria-checked="false">
                                         <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox" type="checkbox">
+                                            <input aria-label="Column 4" class="k-checkbox" type="checkbox">
                                         </span>
                                         <span class="k-checkbox-label">Column 4</span>
-                                    </label>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -368,7 +368,7 @@
                 </div>
                 <div class="k-columnmenu-item-wrapper">
                     <div class="k-expander">
-                        <div class="k-columnmenu-item">
+                        <div aria-expanded="false" aria-controls="k-columnmenu-content-8" class="k-columnmenu-item" role="button" tabindex="0">
                             <span class="k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -385,7 +385,7 @@
                     </div>
                 </div>
                 <div class="k-columnmenu-item-wrapper">
-                    <div class="k-columnmenu-item">
+                    <div class="k-columnmenu-item" role="button" tabindex="0">
                         <span class="k-icon k-svg-icon k-svg-i-group" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M32 256h192v192H32zm0-32h192V32H32zm224 224h192V256H256zm0-416v192h192V32z"></path>

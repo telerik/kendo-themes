@@ -18,13 +18,13 @@ $kendo-listbox-height: var( --kendo-listbox-height, 200px ) !default;
 $kendo-listbox-border-width: var( --kendo-listbox-border-width, 1px ) !default;
 /// The font family of the ListBox.
 /// @group listbox
-$kendo-listbox-font-family: var( --kendo-listbox-font-family, var( --kendo-font-family, normal ) ) !default;
+$kendo-listbox-font-family: var( --kendo-listbox-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the ListBox.
 /// @group listbox
-$kendo-listbox-font-size: var( --kendo-listbox-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-listbox-font-size: var( --kendo-listbox-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the ListBox.
 /// @group listbox
-$kendo-listbox-line-height: var( --kendo-listbox-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-listbox-line-height: var( --kendo-listbox-line-height, var(--kendo-line-height) ) !default;
 
 /// The text color of the ListBox.
 /// @group listbox

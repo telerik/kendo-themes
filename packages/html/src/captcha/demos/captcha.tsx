@@ -1,4 +1,4 @@
-﻿import { Captcha, KendoCaptchaProps } from '../captcha.spec';
+import { Captcha, KendoCaptchaProps } from '../captcha.spec';
 import { CaptchaNormal } from '../templates/captcha-normal';
 
 const options = Captcha.options;
@@ -23,6 +23,7 @@ CaptchaDemo.states = states;
 CaptchaDemo.variants = variants;
 CaptchaDemo.defaultOptions = defaults;
 CaptchaDemo.modifiers = modifiers;
+CaptchaDemo.className = Captcha.className;
 
 export default CaptchaDemo;
 

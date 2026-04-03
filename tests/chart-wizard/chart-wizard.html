@@ -32,14 +32,14 @@
                 <div class="k-window-titlebar">
                     <span class="k-window-title" id="k-window-title-1">Chart Preview</span>
                     <div class="k-window-titlebar-actions">
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="window">
+                        <button class="k-window-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="window">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-window" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M96 96v320h320V96zm288 288H128V192h256z"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
+                        <button class="k-window-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -185,7 +185,7 @@
                             </div>
                         </div>
                         <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
-                            <div class="k-resize-handle"></div>
+                            <div class="k-resize-handle" aria-hidden="true"></div>
                             <div class="k-collapse-next">
                                 <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -217,7 +217,7 @@
                                 </div>
                                 <div class="k-tabstrip-content k-active" role="tabpanel">
                                     <div class="k-expander k-expanded">
-                                        <div class="k-expander-header">
+                                        <div class="k-expander-header" role="button" aria-controls="k-expander-content-1" aria-expanded="true" tabindex="0">
                                             <div class="k-expander-title">Bar chart</div>
                                             <span class="k-spacer"></span>
                                             <div class="k-expander-sub-title"></div>
@@ -229,7 +229,7 @@
                                                 </span>
                                             </span>
                                         </div>
-                                        <div class="k-expander-content-wrapper">
+                                        <div class="k-expander-content-wrapper" id="k-expander-content-1">
                                             <div class="k-expander-content">
                                                 <div class="k-chart-types-wrapper">
                                                     <div class="k-icon-text-wrapper">
@@ -264,7 +264,7 @@
                                         </div>
                                     </div>
                                     <div class="k-expander k-expanded">
-                                        <div class="k-expander-header">
+                                        <div class="k-expander-header" role="button" aria-controls="k-expander-content-2" aria-expanded="true" tabindex="0">
                                             <div class="k-expander-title">Pie chart</div>
                                             <span class="k-spacer"></span>
                                             <div class="k-expander-sub-title"></div>
@@ -276,7 +276,7 @@
                                                 </span>
                                             </span>
                                         </div>
-                                        <div class="k-expander-content-wrapper">
+                                        <div class="k-expander-content-wrapper" id="k-expander-content-2">
                                             <div class="k-expander-content">
                                                 <div class="k-chart-types-wrapper">
                                                     <div class="k-icon-text-wrapper">
@@ -293,7 +293,7 @@
                                         </div>
                                     </div>
                                     <div class="k-expander k-expanded">
-                                        <div class="k-expander-header">
+                                        <div class="k-expander-header" role="button" aria-controls="k-expander-content-3" aria-expanded="true" tabindex="0">
                                             <div class="k-expander-title">Column chart</div>
                                             <span class="k-spacer"></span>
                                             <div class="k-expander-sub-title"></div>
@@ -305,7 +305,7 @@
                                                 </span>
                                             </span>
                                         </div>
-                                        <div class="k-expander-content-wrapper">
+                                        <div class="k-expander-content-wrapper" id="k-expander-content-3">
                                             <div class="k-expander-content">
                                                 <div class="k-chart-types-wrapper">
                                                     <div class="k-icon-text-wrapper">
@@ -340,7 +340,7 @@
                                         </div>
                                     </div>
                                     <div class="k-expander k-expanded">
-                                        <div class="k-expander-header">
+                                        <div class="k-expander-header" role="button" aria-controls="k-expander-content-4" aria-expanded="true" tabindex="0">
                                             <div class="k-expander-title">Line chart</div>
                                             <span class="k-spacer"></span>
                                             <div class="k-expander-sub-title"></div>
@@ -352,7 +352,7 @@
                                                 </span>
                                             </span>
                                         </div>
-                                        <div class="k-expander-content-wrapper">
+                                        <div class="k-expander-content-wrapper" id="k-expander-content-4">
                                             <div class="k-expander-content">
                                                 <div class="k-chart-types-wrapper">
                                                     <div class="k-icon-text-wrapper">
@@ -387,7 +387,7 @@
                                         </div>
                                     </div>
                                     <div class="k-expander k-expanded">
-                                        <div class="k-expander-header">
+                                        <div class="k-expander-header" role="button" aria-controls="k-expander-content-5" aria-expanded="true" tabindex="0">
                                             <div class="k-expander-title">Scatter chart</div>
                                             <span class="k-spacer"></span>
                                             <div class="k-expander-sub-title"></div>
@@ -399,7 +399,7 @@
                                                 </span>
                                             </span>
                                         </div>
-                                        <div class="k-expander-content-wrapper">
+                                        <div class="k-expander-content-wrapper" id="k-expander-content-5">
                                             <div class="k-expander-content">
                                                 <div class="k-chart-types-wrapper">
                                                     <div class="k-icon-text-wrapper">

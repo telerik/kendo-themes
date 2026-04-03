@@ -1,4 +1,4 @@
-﻿import { ListBox, KendoListBoxProps } from '../listbox.spec';
+import { ListBox, KendoListBoxProps } from '../listbox.spec';
 import { ListItem } from '../../list';
 import { ListBoxNormal } from '../templates/listbox-normal';
 
@@ -72,6 +72,7 @@ ListboxDemo.states = states;
 ListboxDemo.variants = variants;
 ListboxDemo.defaultOptions = defaults;
 ListboxDemo.modifiers = modifiers;
+ListboxDemo.className = ListBox.className;
 
 export default ListboxDemo;
 

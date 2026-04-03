@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-actions-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-actions-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-actions-padding-x, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-actions-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the action buttons container.</div></div>
@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-actions-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-actions-padding-y, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-actions-padding-y, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-actions-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the action buttons container.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-actions-button-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-actions-button-spacing, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-actions-button-spacing, var(--kendo-spacing-3, 0.75rem))</code></td>
+    <td><code>var(--kendo-actions-button-spacing, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the action buttons.</div></div>

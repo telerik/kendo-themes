@@ -32,16 +32,16 @@
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>Sheets Bar</span>
         <section>
-            <div class="k-spreadsheet" style="height: auto;">
+            <div class="k-spreadsheet" role="application" style="height: auto;">
                 <div class="k-spreadsheet-sheets-bar">
-                    <button class="k-spreadsheet-sheet-add k-button k-button-flat k-icon-button">
+                    <button class="k-spreadsheet-sheet-add k-button k-button-flat k-icon-button" aria-label="Add new sheet" aria-controls="k-spreadsheet-sheets-1">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                             </svg>
                         </span>
                     </button>
-                    <button class="k-spreadsheet-sheets-menu k-button k-button-flat k-icon-button">
+                    <button class="k-spreadsheet-sheets-menu k-button k-button-flat k-icon-button" aria-label="Sheets menu" aria-controls="k-spreadsheet-sheets-1">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-menu" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M480 32v96H32V32zM32 192v96h448v-96zm448 160H32v96h448z"></path>
@@ -50,7 +50,7 @@
                     </button>
                     <div class="k-tabstrip k-spreadsheet-sheets k-tabstrip-bottom k-tabstrip-scrollable">
                         <div class="k-tabstrip-items-wrapper k-hstack">
-                            <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                            <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" id="k-spreadsheet-sheets-1" role="tablist">
                                 <li class="k-tabstrip-item k-first" role="tab">
                                     <span class="k-link">
                                         <span class="k-link-text">Sheet 1</span>
@@ -233,7 +233,7 @@
                 <div class="k-window-titlebar">
                     <span class="k-window-title" id="k-window-title-1">Rename Sheet</span>
                     <div class="k-window-titlebar-actions">
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
+                        <button class="k-window-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -270,7 +270,7 @@
                 <div class="k-window-titlebar">
                     <span class="k-window-title" id="k-window-title-2">Delete Sheet</span>
                     <div class="k-window-titlebar-actions">
-                        <button class="k-window-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
+                        <button class="k-window-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>

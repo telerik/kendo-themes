@@ -16,6 +16,18 @@ export type KendoOrgchartNodeProps = {
     buttonIcon?: "plus" | "minus";
     avatar?: string;
     avatarType?: string;
+    /** @aria alt text for avatar image */
+    avatarAlt?: string;
+    /** @aria aria-level for treeitem */
+    ariaLevel?: number;
+    /** @aria aria-expanded for nodes with subitems */
+    ariaExpanded?: boolean;
+    /** @aria aria-owns target group id */
+    ariaOwns?: string;
+    /** @aria Whether node has focus (k-focus class + aria-selected=true) */
+    focus?: boolean;
+    /** @aria Whether to show the card menu button */
+    menuButton?: boolean;
 };
 
 const defaultOptions = {
@@ -38,6 +50,12 @@ export const OrgchartNode = (
         buttonIcon = defaultOptions.buttonIcon,
         avatar,
         avatarType,
+        avatarAlt,
+        ariaLevel,
+        ariaExpanded,
+        ariaOwns,
+        focus,
+        menuButton,
         ...other
     } = props;
 
@@ -49,7 +67,17 @@ export const OrgchartNode = (
                 ORGCHARTNODE_CLASSNAME,
                 'k-vstack',
                 'k-align-items-center',
-            )}>
+                {
+                    'k-focus': focus,
+                }
+            )}
+            role="treeitem"
+            aria-level={ariaLevel}
+            aria-keyshortcuts="Enter"
+            aria-expanded={ariaExpanded !== undefined ? (ariaExpanded ? 'true' : 'false') : undefined}
+            aria-owns={ariaOwns}
+            aria-selected={focus ? 'true' : 'false'}
+        >
 
             {lineTop && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             <Card className="k-orgchart-card">
@@ -57,7 +85,7 @@ export const OrgchartNode = (
 
                     <Avatar type={avatarType} themeColor="secondary">
                         { avatarType === 'image'
-                            ? <img src={avatar} />
+                            ? <img src={avatar} alt={avatarAlt || ''} />
                             : avatar
                         }
                     </Avatar>
@@ -69,12 +97,16 @@ export const OrgchartNode = (
                     </div>
                     <span className="k-spacer"></span>
 
+                    {menuButton && (
+                        <span className="k-orgchart-card-menu" role="button" aria-label="Edit menu" tabIndex={-1}></span>
+                    )}
+
                 </CardBody>
 
             </Card>
             {lineBottom && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             {button && (
-                <Button className="k-orgchart-button" icon={buttonIcon}></Button>
+                <Button className="k-orgchart-button" icon={buttonIcon} role="presentation" aria-hidden="true" tabIndex={-1}></Button>
             )}
         </div>
     );

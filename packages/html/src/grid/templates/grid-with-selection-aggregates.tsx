@@ -7,19 +7,19 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
             <>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable>
+                        <GridHeaderTable role="none">
                             <colgroup>
                                 <col />
                                 <col />
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell columnTitle="Product Name"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Units In Stock"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Discontinued"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Units in Order"></GridHeaderCell>
+                            <TableThead role="rowgroup">
+                                <TableRow role="row">
+                                    <GridHeaderCell columnTitle="Product Name" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Units In Stock" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Discontinued" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Units in Order" role="columnheader"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -27,43 +27,43 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
                 </GridHeader>
                 <GridContainer>
                     <GridContent className={contentClassName}>
-                        <GridTable>
+                        <GridTable role="none">
                             <colgroup>
                                 <col />
                                 <col />
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-master-row">
-                                    <TableTd selected={aggregated ? true : false}>Chai</TableTd>
-                                    <TableTd selected={aggregated ? true : false}>39</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>0</TableTd>
+                            <TableTbody role="rowgroup">
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd selected role="gridcell" aria-selected="true">Chai</TableTd>
+                                    <TableTd selected role="gridcell" aria-selected="true">39</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
+                                    <TableTd role="gridcell">0</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd selected={aggregated ? true : false}>Chang</TableTd>
-                                    <TableTd selected={aggregated ? true : false}>17</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>40</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd selected={aggregated ? true : false} role="gridcell" aria-selected={aggregated ? "true" : undefined}>Chang</TableTd>
+                                    <TableTd selected={aggregated ? true : false} role="gridcell" aria-selected={aggregated ? "true" : undefined}>17</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
+                                    <TableTd role="gridcell">40</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
-                                    <TableTd selected={aggregated ? true : false}>Aniseed Syrup</TableTd>
-                                    <TableTd selected={aggregated ? true : false}>13</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>70</TableTd>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd selected={aggregated ? true : false} role="gridcell">Aniseed Syrup</TableTd>
+                                    <TableTd selected={aggregated ? true : false} role="gridcell">13</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
+                                    <TableTd role="gridcell">70</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row" alt>
-                                    <TableTd selected={aggregated ? true : false}>Chef Anton&apos;s Cajun Seasoning</TableTd>
-                                    <TableTd selected={aggregated ? true : false}>53</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>0</TableTd>
+                                <TableRow className="k-master-row" role="row" alt>
+                                    <TableTd selected={aggregated ? true : false} role="gridcell">Chef Anton&apos;s Cajun Seasoning</TableTd>
+                                    <TableTd selected={aggregated ? true : false} role="gridcell">53</TableTd>
+                                    <TableTd role="gridcell">false</TableTd>
+                                    <TableTd role="gridcell">0</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
-                                    <TableTd>Chef Anton&apos;s Gumbo Mix</TableTd>
-                                    <TableTd>0</TableTd>
-                                    <TableTd>true</TableTd>
-                                    <TableTd>0</TableTd>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd role="gridcell">Chef Anton&apos;s Gumbo Mix</TableTd>
+                                    <TableTd role="gridcell">0</TableTd>
+                                    <TableTd role="gridcell">true</TableTd>
+                                    <TableTd role="gridcell">0</TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>
@@ -73,7 +73,7 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
         )}
         gridSelectionAggregates={
             (
-                <div className="k-selection-aggregates k-grid-selection-aggregates">
+                <div className="k-selection-aggregates k-grid-selection-aggregates" aria-live="polite">
                 { aggregated ?
                     <>
                         <div className="k-selection-aggregates-item">

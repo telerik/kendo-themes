@@ -12,10 +12,10 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
         <div class="k-grid" style="height: 400px; width: 500px;">
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table" style="width: 1100px;">
+                        <table role="none" class="k-grid-header-table k-table" style="width: 1100px;">
                             <colgroup>
                                 <col style="width: 250px;">
                                 <col style="width: 150px;">
@@ -24,36 +24,36 @@
                                 <col style="width: 250px;">
                             </colgroup>
                             <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th colspan="1" rowspan="1" class="k-grid-header-sticky k-header k-table-th" style="left: 0px; right: 250px; border-right-width: 1px;">
+                                <tr role="row" class="k-table-row">
+                                    <th colspan="1" rowspan="1" class="k-grid-header-sticky k-header k-table-th" role="columnheader" style="left: 0px; border-right-width: 1px;">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Product Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                    <th colspan="1" rowspan="1" role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Units In Stock</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                    <th colspan="1" rowspan="1" role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Price</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" rowspan="1" class="k-grid-header-sticky k-header k-table-th" style="left: 250px; right: 0px; border-right-width: 1px;">
+                                    <th colspan="1" rowspan="1" class="k-grid-header-sticky k-header k-table-th" role="columnheader" style="left: 250px; border-right-width: 1px;">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Units on Order</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                    <th colspan="1" rowspan="1" role="columnheader" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Reorder Level</span>
@@ -68,7 +68,7 @@
                 <div class="k-grid-container">
                     <div class="k-grid-content">
                         <div style="position: relative;">
-                            <table class="k-grid-table k-table" style="width: 1100px;">
+                            <table role="none" class="k-grid-table k-table" style="width: 1100px;">
                                 <colgroup>
                                     <col width="250px">
                                     <col width="150px">
@@ -77,75 +77,75 @@
                                     <col width="250px">
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr class="k-master-row k-table-row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Chai</td>
-                                        <td colspan="1" class="k-table-td">39</td>
-                                        <td colspan="1" class="k-table-td">$18.00</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
-                                        <td colspan="1" class="k-table-td">10</td>
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Chai</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">39</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$18.00</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">10</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row k-table-alt-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Chang</td>
-                                        <td colspan="1" class="k-table-td">17</td>
-                                        <td colspan="1" class="k-table-td">$19.00</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">40</td>
-                                        <td colspan="1" class="k-table-td">25</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Chang</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">17</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$19.00</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">40</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">25</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Aniseed Syrup</td>
-                                        <td colspan="1" class="k-table-td">13</td>
-                                        <td colspan="1" class="k-table-td">$10.00</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">70</td>
-                                        <td colspan="1" class="k-table-td">25</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Aniseed Syrup</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">13</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$10.00</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">70</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">25</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row k-table-alt-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Chef Anton's Cajun Seasoning</td>
-                                        <td colspan="1" class="k-table-td">53</td>
-                                        <td colspan="1" class="k-table-td">$22.00</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
-                                        <td colspan="1" class="k-table-td">0</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Chef Anton's Cajun Seasoning</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">53</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$22.00</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">0</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Chef Anton's Gumbo Mix</td>
-                                        <td colspan="1" class="k-table-td">0</td>
-                                        <td colspan="1" class="k-table-td">$21.35</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
-                                        <td colspan="1" class="k-table-td">0</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Chef Anton's Gumbo Mix</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$21.35</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">0</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row k-table-alt-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Grandma's Boysenberry Spread</td>
-                                        <td colspan="1" class="k-table-td">120</td>
-                                        <td colspan="1" class="k-table-td">$25.00</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
-                                        <td colspan="1" class="k-table-td">25</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Grandma's Boysenberry Spread</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">120</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$25.00</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">25</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Uncle Bob's Organic Dried Pears</td>
-                                        <td colspan="1" class="k-table-td">15</td>
-                                        <td colspan="1" class="k-table-td">$30.00</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
-                                        <td colspan="1" class="k-table-td">10</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Uncle Bob's Organic Dried Pears</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">15</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$30.00</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">10</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row k-table-alt-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Northwoods Cranberry Sauce</td>
-                                        <td colspan="1" class="k-table-td">6</td>
-                                        <td colspan="1" class="k-table-td">$40.00</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
-                                        <td colspan="1" class="k-table-td">0</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Northwoods Cranberry Sauce</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">6</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$40.00</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">0</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Mishi Kobe Niku</td>
-                                        <td colspan="1" class="k-table-td">29</td>
-                                        <td colspan="1" class="k-table-td">97</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
-                                        <td colspan="1" class="k-table-td">0</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Mishi Kobe Niku</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">29</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">97</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">0</td>
                                     </tr>
                                     <tr class="k-master-row k-table-row k-table-alt-row" role="row">
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Ikura</td>
-                                        <td colspan="1" class="k-table-td">31</td>
-                                        <td colspan="1" class="k-table-td">$31.00</td>
-                                        <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
-                                        <td colspan="1" class="k-table-td">0</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 0px; border-right-width: 1px;">Ikura</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">31</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">$31.00</td>
+                                        <td colspan="1" class="k-grid-content-sticky k-table-td" role="gridcell" style="left: 250px; border-right-width: 1px;">0</td>
+                                        <td colspan="1" role="gridcell" class="k-table-td">0</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -155,7 +155,7 @@
             </div>
         </div>
         <div class="k-telerik-blazor k-grid">
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid">
                 <div class="k-grouping-header">
                     <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
                         <div class="k-chip" role="button" aria-pressed="false">

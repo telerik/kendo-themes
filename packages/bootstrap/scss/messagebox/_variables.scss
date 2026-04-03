@@ -22,10 +22,10 @@ $kendo-message-box-border-width: 0 0 0 4px !default;
 
 /// The font size of the MessageBox.
 /// @group messagebox
-$kendo-message-box-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-message-box-font-size: var(--kendo-font-size) !default;
 /// The line height of the MessageBox.
 /// @group messagebox
-$kendo-message-box-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-message-box-line-height: var(--kendo-line-height) !default;
 
 /// The background color level of the MessageBox.
 /// @group messagebox

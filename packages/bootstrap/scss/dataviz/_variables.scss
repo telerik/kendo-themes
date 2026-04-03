@@ -6,10 +6,10 @@
 
 /// The first base series color and its light and dark shades.
 /// @group charts
-$kendo-series-a: k-color(series-a)!default;
+$kendo-series-a: k-color(series-a) !default;
 /// The series-a dark color of the Charts.
 /// @group charts
-$kendo-series-a-dark: k-color(series-a-bold)!default;
+$kendo-series-a-dark: k-color(series-a-bold) !default;
 /// The series-a darker color of the Charts.
 /// @group charts
 $kendo-series-a-darker: k-color(series-a-bolder) !default;
@@ -197,28 +197,28 @@ $kendo-series-30: $kendo-series-f-darker !default;
 $kendo-chart-border-width: 0px !default;
 /// The font family of the Chart.
 /// @group charts
-$kendo-chart-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-chart-font-family: var(--kendo-font-family) !default;
 /// The font size of the Chart.
 /// @group charts
-$kendo-chart-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chart-font-size: var(--kendo-font-size) !default;
 /// The height of the Chart.
 /// @group charts
-$kendo-chart-line-height: var( --kendo-line-height, normal )!default;
+$kendo-chart-line-height: var(--kendo-line-height) !default;
 /// The font size of the Chart.
 /// @group charts
 $kendo-chart-tooltip-font-size: calc( #{$kendo-font-size} * .929) !default;
 /// The label font size of the Chart.
 /// @group charts
-$kendo-chart-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chart-label-font-size: var(--kendo-font-size-sm) !default;
 /// The title font size of the Chart.
 /// @group charts
-$kendo-chart-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-chart-title-font-size: var(--kendo-font-size-lg) !default;
 /// The title font size of the Chart.
 /// @group charts
 $kendo-chart-pane-title-font-size: $kendo-chart-label-font-size !default;
 /// The title font weight of the Chart.
 /// @group charts
-$kendo-chart-pane-title-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+$kendo-chart-pane-title-font-weight: var(--kendo-font-weight-normal) !default;
 
 /// The color of the Chart grid lines (major).
 /// @group charts
@@ -313,13 +313,13 @@ $kendo-chart-computed-title-height: 0px !default;
 // TreeMap
 /// The font family of the TreeMap.
 /// @group charts
-$kendo-treemap-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-treemap-font-family: var(--kendo-font-family) !default;
 /// The font size of the TreeMap.
 /// @group charts
-$kendo-treemap-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-treemap-font-size: var(--kendo-font-size) !default;
 /// The height of the TreeMap.
 /// @group charts
-$kendo-treemap-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-treemap-line-height: var(--kendo-line-height) !default;
 
 /// The horizontal padding of the TreeMap.
 /// @group charts
@@ -356,13 +356,13 @@ $kendo-chart-overlay-bg: k-color(surface) !default;
 // No Data
 /// The font size of the Chart.
 /// @group charts
-$kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-chart-no-data-font-size: var(--kendo-font-size-lg) !default;
 /// The font weight of the Chart.
 /// @group charts
-$kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
+$kendo-chart-no-data-font-weight: var(--kendo-font-weight) !default;
 /// The vertical padding of the Chart.
 /// @group charts
-$kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
+$kendo-chart-no-data-padding-y: 7rem !default;
 
 // Gauge
 /// The background color of the Gauge.

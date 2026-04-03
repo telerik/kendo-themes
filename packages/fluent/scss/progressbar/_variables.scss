@@ -18,13 +18,13 @@ $kendo-progressbar-border-width: var( --kendo-progressbar-border-width, 0px ) !d
 $kendo-progressbar-border-radius: var( --kendo-progressbar-border-radius, var( --kendo-border-radius-sm, initial ) ) !default;
 /// The font family of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-font-family: var( --kendo-progressbar-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-progressbar-font-family: var( --kendo-progressbar-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-font-size: var( --kendo-progressbar-font-size, var( --kendo-font-size-sm, inherit ) ) !default;
+$kendo-progressbar-font-size: var( --kendo-progressbar-font-size, var(--kendo-font-size-sm) ) !default;
 /// The line height of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-line-height: var( --kendo-progressbar-line-height, var( --kendo-line-height-lg, inherit ) ) !default;
+$kendo-progressbar-line-height: var( --kendo-progressbar-line-height, var(--kendo-line-height-lg) ) !default;
 /// The horizontal padding of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-padding-x: var( --kendo-progressbar-padding-x, #{k-spacing(0)} ) !default;

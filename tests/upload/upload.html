@@ -17,15 +17,15 @@
             <div class="k-upload k-upload-async">
                 <div class="k-upload-dropzone k-dropzone">
                     <div class="k-upload-button-wrap">
-                        <button class="k-upload-button k-button">
+                        <button class="k-upload-button k-button" aria-controls="upload-files-list">
                             <span class="k-button-text">Select files...</span>
                         </button>
-                        <input id="upload-input" class="k-hidden">
+                        <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                     </div>
                     <span class="k-dropzone-hint">Drop files here to upload</span>
                 </div>
-                <ul class="k-upload-files">
-                    <li class="k-file">
+                <ul class="k-upload-files" role="list" id="upload-files-list">
+                    <li class="k-file" role="listitem" tabindex="0">
                         <div class="k-file-single">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 0;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -45,7 +45,7 @@
                                 <span class="k-file-size">51.23 KB</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="k-file">
+                    <li class="k-file" role="listitem" tabindex="0">
                         <div class="k-file-single">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 0;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -75,7 +75,7 @@
                                 <span class="k-file-size">106.43 KB</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -100,15 +100,15 @@
             <div class="k-upload k-upload-async">
                 <div class="k-upload-dropzone k-dropzone">
                     <div class="k-upload-button-wrap">
-                        <button class="k-upload-button k-button">
+                        <button class="k-upload-button k-button" aria-controls="upload-files-list">
                             <span class="k-button-text">Select files...</span>
                         </button>
-                        <input id="upload-input" class="k-hidden">
+                        <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                     </div>
                     <span class="k-dropzone-hint">Drop files here to upload</span>
                 </div>
-                <ul class="k-upload-files">
-                    <li class="k-file">
+                <ul class="k-upload-files" role="list" id="upload-files-list">
+                    <li class="k-file" role="listitem" tabindex="0">
                         <div class="k-file-multiple">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 0;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -135,7 +135,7 @@
                                 <span class="k-file-summary k-hidden">Total: 2 files, 157.66 KB</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -160,10 +160,10 @@
             <div class="k-upload k-upload-async">
                 <div class="k-upload-dropzone k-dropzone">
                     <div class="k-upload-button-wrap">
-                        <button class="k-upload-button k-button">
+                        <button class="k-upload-button k-button" aria-controls="upload-files-list">
                             <span class="k-button-text">Select files...</span>
                         </button>
-                        <input id="upload-input" class="k-hidden">
+                        <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                     </div>
                     <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
                     <span class="k-upload-status">
@@ -174,8 +174,8 @@
                         </span>Uploading...
                     </span>
                 </div>
-                <ul class="k-upload-files">
-                    <li class="k-file k-file-progress">
+                <ul class="k-upload-files" role="list" id="upload-files-list">
+                    <li class="k-file k-file-progress" role="listitem" tabindex="0">
                         <div class="k-file-single">
                             <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -196,14 +196,14 @@
                             </div>
                             <div class="k-upload-actions">
                                 <span class="k-upload-pct">50%</span>
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Pause upload" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-pause-sm" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M288 96h96v320h-96zM96 416h96V96H96z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Cancel upload" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2"></path>
@@ -213,7 +213,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="k-file k-file-progress">
+                    <li class="k-file k-file-progress" role="listitem" tabindex="0">
                         <div class="k-file-single">
                             <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 70;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -234,14 +234,14 @@
                             </div>
                             <div class="k-upload-actions">
                                 <span class="k-upload-pct">70%</span>
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Pause upload" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-pause-sm" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M288 96h96v320h-96zM96 416h96V96H96z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Cancel upload" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2"></path>
@@ -258,10 +258,10 @@
             <div class="k-upload k-upload-async">
                 <div class="k-upload-dropzone k-dropzone">
                     <div class="k-upload-button-wrap">
-                        <button class="k-upload-button k-button">
+                        <button class="k-upload-button k-button" aria-controls="upload-files-list">
                             <span class="k-button-text">Select files...</span>
                         </button>
-                        <input id="upload-input" class="k-hidden">
+                        <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                     </div>
                     <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
                     <span class="k-upload-status">
@@ -272,8 +272,8 @@
                         </span>Uploading...
                     </span>
                 </div>
-                <ul class="k-upload-files">
-                    <li class="k-file k-file-progress">
+                <ul class="k-upload-files" role="list" id="upload-files-list">
+                    <li class="k-file k-file-progress" role="listitem" tabindex="0">
                         <div class="k-file-multiple">
                             <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 70;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -301,14 +301,14 @@
                             </div>
                             <div class="k-upload-actions">
                                 <span class="k-upload-pct">70%</span>
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Pause upload" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-pause-sm" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M288 96h96v320h-96zM96 416h96V96H96z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Cancel upload" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2"></path>
@@ -325,10 +325,10 @@
             <div class="k-upload k-upload-async">
                 <div class="k-upload-dropzone k-dropzone">
                     <div class="k-upload-button-wrap">
-                        <button class="k-upload-button k-button">
+                        <button class="k-upload-button k-button" aria-controls="upload-files-list">
                             <span class="k-button-text">Select files...</span>
                         </button>
-                        <input id="upload-input" class="k-hidden">
+                        <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                     </div>
                     <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
                     <span class="k-upload-status">
@@ -339,8 +339,8 @@
                         </span>Done
                     </span>
                 </div>
-                <ul class="k-upload-files">
-                    <li class="k-file k-file-success">
+                <ul class="k-upload-files" role="list" id="upload-files-list">
+                    <li class="k-file k-file-success" role="listitem" tabindex="0">
                         <div class="k-file-single">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 0;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -357,10 +357,10 @@
                             </span>
                             <div class="k-file-info">
                                 <span class="k-file-name">Image1_With_Very_Very_Very_Very_Very_Long_Name.png</span>
-                                <span class="k-file-validation-message">File(s) uploaded successfully.</span>
+                                <span class="k-file-validation-message" aria-live="polite">File(s) uploaded successfully.</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -370,7 +370,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="k-file k-file-success">
+                    <li class="k-file k-file-success" role="listitem" tabindex="0">
                         <div class="k-file-single">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 0;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -387,10 +387,10 @@
                             </span>
                             <div class="k-file-info">
                                 <span class="k-file-name">Image2.png</span>
-                                <span class="k-file-validation-message">File(s) uploaded successfully.</span>
+                                <span class="k-file-validation-message" aria-live="polite">File(s) uploaded successfully.</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -407,10 +407,10 @@
             <div class="k-upload k-upload-async">
                 <div class="k-upload-dropzone k-dropzone">
                     <div class="k-upload-button-wrap">
-                        <button class="k-upload-button k-button">
+                        <button class="k-upload-button k-button" aria-controls="upload-files-list">
                             <span class="k-button-text">Select files...</span>
                         </button>
-                        <input id="upload-input" class="k-hidden">
+                        <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                     </div>
                     <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
                     <span class="k-upload-status">
@@ -421,8 +421,8 @@
                         </span>Done
                     </span>
                 </div>
-                <ul class="k-upload-files">
-                    <li class="k-file k-file-success">
+                <ul class="k-upload-files" role="list" id="upload-files-list">
+                    <li class="k-file k-file-success" role="listitem" tabindex="0">
                         <div class="k-file-multiple">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 0;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -447,10 +447,10 @@
                                     <span class="k-file-size">24.34 KB</span>
                                 </div>
                                 <span class="k-file-summary k-hidden">Total: 4 files, 39.46 KB</span>
-                                <span class="k-file-validation-message">2 File(s) uploaded successfully</span>
+                                <span class="k-file-validation-message" aria-live="polite">2 File(s) uploaded successfully</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -467,10 +467,10 @@
             <div class="k-upload k-upload-async">
                 <div class="k-upload-dropzone k-dropzone">
                     <div class="k-upload-button-wrap">
-                        <button class="k-upload-button k-button">
+                        <button class="k-upload-button k-button" aria-controls="upload-files-list">
                             <span class="k-button-text">Select files...</span>
                         </button>
-                        <input id="upload-input" class="k-hidden">
+                        <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                     </div>
                     <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
                     <span class="k-upload-status">
@@ -481,8 +481,8 @@
                         </span>Done
                     </span>
                 </div>
-                <ul class="k-upload-files">
-                    <li class="k-file k-file-error">
+                <ul class="k-upload-files" role="list" id="upload-files-list">
+                    <li class="k-file k-file-error" role="listitem" tabindex="0">
                         <div class="k-file-single">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 0;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -499,10 +499,10 @@
                             </span>
                             <div class="k-file-info">
                                 <span class="k-file-name">Movie1_With_Very_Very_Very_Very_Very_Long_Name1.mkv</span>
-                                <span class="k-file-validation-message">File type not allowed.</span>
+                                <span class="k-file-validation-message" aria-live="polite">File type not allowed.</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -512,7 +512,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="k-file k-file-error">
+                    <li class="k-file k-file-error" role="listitem" tabindex="0">
                         <div class="k-file-single">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 0;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -529,10 +529,10 @@
                             </span>
                             <div class="k-file-info">
                                 <span class="k-file-name">Video2.mkv</span>
-                                <span class="k-file-validation-message">File type not allowed.</span>
+                                <span class="k-file-validation-message" aria-live="polite">File type not allowed.</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -549,10 +549,10 @@
             <div class="k-upload k-upload-async">
                 <div class="k-upload-dropzone k-dropzone">
                     <div class="k-upload-button-wrap">
-                        <button class="k-upload-button k-button">
+                        <button class="k-upload-button k-button" aria-controls="upload-files-list">
                             <span class="k-button-text">Select files...</span>
                         </button>
-                        <input id="upload-input" class="k-hidden">
+                        <input id="upload-input" class="k-hidden" tabindex="-1" aria-hidden="true">
                     </div>
                     <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
                     <span class="k-upload-status">
@@ -563,8 +563,8 @@
                         </span>Done
                     </span>
                 </div>
-                <ul class="k-upload-files">
-                    <li class="k-file k-file-error">
+                <ul class="k-upload-files" role="list" id="upload-files-list">
+                    <li class="k-file k-file-error" role="listitem" tabindex="0">
                         <div class="k-file-multiple">
                             <div class="k-hidden k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 70;">
                                 <span class="k-progress-status-wrap k-progress-start"></span>
@@ -589,10 +589,10 @@
                                     <span class="k-file-size">12.36 KB</span>
                                 </div>
                                 <span class="k-file-summary k-hidden">Total: 4 files, 170.22 KB</span>
-                                <span class="k-file-validation-message">Invalid file(s). Please check file upload requirements.</span>
+                                <span class="k-file-validation-message" aria-live="polite">Invalid file(s). Please check file upload requirements.</span>
                             </div>
                             <div class="k-upload-actions">
-                                <button class="k-upload-action k-button k-button-flat k-icon-button">
+                                <button class="k-upload-action k-button k-button-xs k-button-flat k-icon-button" aria-label="Remove file" tabindex="-1">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>

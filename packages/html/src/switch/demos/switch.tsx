@@ -1,4 +1,4 @@
-﻿import { Switch, KendoSwitchProps } from '../switch.spec';
+import { Switch, KendoSwitchProps } from '../switch.spec';
 
 const options = Switch.options;
 const states = Switch.states;
@@ -40,6 +40,7 @@ SwitchDemo.states = states;
 SwitchDemo.variants = variants;
 SwitchDemo.defaultOptions = defaults;
 SwitchDemo.modifiers = modifiers;
+SwitchDemo.className = Switch.className;
 
 export default SwitchDemo;
 

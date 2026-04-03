@@ -11,7 +11,7 @@ const options = {};
 export type KendoListGroupItemProps = {
     text?: string;
     children?: React.JSX.Element;
-    href?: string;
+    href?: boolean;
     pseudo?: boolean;
 };
 
@@ -43,7 +43,7 @@ export const ListGroupItem: KendoComponent<KendoListGroupItemProps & KendoListGr
                 LISTGROUPITEM_CLASSNAME
             )}>
             { !href && !pseudo && text }
-            { href && <a href="#" className="k-link">{text}</a>}
+            { href && <a className="k-link">{text}</a>}
             { pseudo && <span className="k-link">{text}</span>}
             {children}
         </li>

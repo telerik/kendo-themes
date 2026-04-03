@@ -3,4 +3,5 @@ export * from "./templates/dropdowntree-normal";
 export * from "./templates/dropdowntree-popup";
 export * from "./templates/dropdowntree-filtering";
 export * from "./templates/dropdowntree-adaptive";
+export * from "./templates/dropdowntree-disabled";
 export * from './demos/dropdowntree';

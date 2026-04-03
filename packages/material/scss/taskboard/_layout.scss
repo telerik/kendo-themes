@@ -5,6 +5,6 @@
     @include kendo-task-board--layout-base();
 
     .k-taskboard-card .k-card-title {
-        font-size: var( --kendo-font-size-lg, inherit );
+        font-size: var(--kendo-font-size-lg);
     }
 }

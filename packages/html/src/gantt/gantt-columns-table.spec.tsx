@@ -15,6 +15,7 @@ export const GanttColumnsTable: KendoComponent<KendoTableOptions & React.HTMLAtt
             props.className,
             GANTTCOLUMNSTABLE_CLASSNAME,
         )}
+        role="presentation"
     >
         {props.children}
     </Table>

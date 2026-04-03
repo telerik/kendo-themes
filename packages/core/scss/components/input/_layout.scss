@@ -50,7 +50,7 @@
             background: none;
             font: inherit;
             outline: 0;
-            box-shadow: none;
+            box-shadow: none !important; // stylelint-disable-line declaration-no-important
         }
 
         // fix for Safari
@@ -295,17 +295,17 @@
         flex: 1;
         overflow: hidden;
         text-overflow: ellipsis;
-    }
-    .k-input-value-text::before {
-        content: "\200b";
-        width: 0px;
-        overflow: hidden;
-        flex: none;
-        display: inline-block;
-        vertical-align: top;
-    }
 
-
+        &::before {
+            content: "";
+            width: 0;
+            height: 1lh;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
     // Input multiple values
     .k-input-values {
         min-width: 0px;

@@ -1,8 +1,8 @@
-﻿import { Dialog, KendoDialogProps } from '../dialog.spec';
+import { Dialog, KendoDialogProps } from '../dialog.spec';
 import { DialogNormal } from '../templates/dialog-normal';
 import { Button } from '../../button';
 
-const options = Dialog.options.themeColor;
+const options = Dialog.options;
 const variants = [];
 const states = Dialog.states;
 const defaults = Dialog.defaultOptions;
@@ -27,6 +27,7 @@ DialogDemo.states = states;
 DialogDemo.variants = variants;
 DialogDemo.defaultOptions = defaults;
 DialogDemo.modifiers = modifiers;
+DialogDemo.className = Dialog.className;
 
 export default DialogDemo;
 

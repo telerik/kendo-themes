@@ -1,4 +1,4 @@
-﻿import { FileManager, KendoFileManagerProps } from '../filemanager.spec';
+import { FileManager, KendoFileManagerProps } from '../filemanager.spec';
 import { FileManagerNormal } from '../templates/filemanager-normal';
 import { FileManagerGrid } from '../templates/filemanager-grid';
 import { FileManagerGridPreview } from '../templates/filemanager-grid-preview';
@@ -73,6 +73,7 @@ FilemanagerDemo.states = states;
 FilemanagerDemo.variants = variants;
 FilemanagerDemo.defaultOptions = defaults;
 FilemanagerDemo.modifiers = modifiers;
+FilemanagerDemo.className = FileManager.className;
 
 export default FilemanagerDemo;
 

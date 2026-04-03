@@ -7,7 +7,7 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
             <>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable style={{ width: "1100px" }}>
+                        <GridHeaderTable role="none" style={{ width: "1100px" }}>
                             <colgroup>
                                 <col style={{ width: "250px" }} />
                                 <col style={{ width: "150px" }} />
@@ -15,13 +15,13 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                 <col style={{ width: "250px" }} />
                                 <col style={{ width: "250px" }} />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell className="k-grid-header-sticky" rowspan={1} colspan={1} columnTitle="Product Name" style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Units In Stock"></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Price"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-header-sticky" rowspan={1} colspan={1} columnTitle="Units on Order" style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Reorder Level"></GridHeaderCell>
+                            <TableThead role="rowgroup">
+                                <TableRow role="row">
+                                    <GridHeaderCell className="k-grid-header-sticky" rowspan={1} colspan={1} columnTitle="Product Name" role="columnheader" style={{ left: '0px', borderRightWidth: "1px" }}></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Units In Stock" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Price" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell className="k-grid-header-sticky" rowspan={1} colspan={1} columnTitle="Units on Order" role="columnheader" style={{ left: "250px", borderRightWidth: "1px" }}></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Reorder Level" role="columnheader"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -30,7 +30,7 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                 <GridContainer>
                     <GridContent className={contentClassName}>
                         <div style={{ position: "relative" }}>
-                            <GridTable style={{ width: "1100px" }}>
+                            <GridTable role="none" style={{ width: "1100px" }}>
                                 <colgroup>
                                     <col width="250px" />
                                     <col width="150px" />
@@ -38,76 +38,76 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                     <col width="250px" />
                                     <col width="250px" />
                                 </colgroup>
-                                <TableTbody>
-                                    <TableRow className="k-master-row">
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chai</TableTd>
-                                        <TableTd colspan={1}>39</TableTd>
-                                        <TableTd colspan={1}>$18.00</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
-                                        <TableTd colspan={1}>10</TableTd>
+                                <TableTbody role="rowgroup">
+                                    <TableRow className="k-master-row" role="row">
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Chai</TableTd>
+                                        <TableTd colspan={1} role="gridcell">39</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$18.00</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">10</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row" alt>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chang</TableTd>
-                                        <TableTd colspan={1}>17</TableTd>
-                                        <TableTd colspan={1}>$19.00</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>40</TableTd>
-                                        <TableTd colspan={1}>25</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Chang</TableTd>
+                                        <TableTd colspan={1} role="gridcell">17</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$19.00</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>40</TableTd>
+                                        <TableTd colspan={1} role="gridcell">25</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row">
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Aniseed Syrup</TableTd>
-                                        <TableTd colspan={1}>13</TableTd>
-                                        <TableTd colspan={1}>$10.00</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>70</TableTd>
-                                        <TableTd colspan={1}>25</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Aniseed Syrup</TableTd>
+                                        <TableTd colspan={1} role="gridcell">13</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$10.00</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>70</TableTd>
+                                        <TableTd colspan={1} role="gridcell">25</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row" alt>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chef Anton&apos;s Cajun Seasoning</TableTd>
-                                        <TableTd colspan={1}>53</TableTd>
-                                        <TableTd colspan={1}>$22.00</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
-                                        <TableTd colspan={1}>0</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-master-row" role="row" >
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chef Anton&apos;s Gumbo Mix</TableTd>
-                                        <TableTd colspan={1}>0</TableTd>
-                                        <TableTd colspan={1}>$21.35</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
-                                        <TableTd colspan={1}>0</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-master-row" role="row" alt >
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Grandma&apos;s Boysenberry Spread</TableTd>
-                                        <TableTd colspan={1}>120</TableTd>
-                                        <TableTd colspan={1}>$25.00</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
-                                        <TableTd colspan={1}>25</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Chef Anton&apos;s Cajun Seasoning</TableTd>
+                                        <TableTd colspan={1} role="gridcell">53</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$22.00</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">0</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row">
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Uncle Bob&apos;s Organic Dried Pears</TableTd>
-                                        <TableTd colspan={1}>15</TableTd>
-                                        <TableTd colspan={1}>$30.00</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
-                                        <TableTd colspan={1}>10</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Chef Anton&apos;s Gumbo Mix</TableTd>
+                                        <TableTd colspan={1} role="gridcell">0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$21.35</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">0</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row" alt>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Northwoods Cranberry Sauce</TableTd>
-                                        <TableTd colspan={1}>6</TableTd>
-                                        <TableTd colspan={1}>$40.00</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
-                                        <TableTd colspan={1}>0</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Grandma&apos;s Boysenberry Spread</TableTd>
+                                        <TableTd colspan={1} role="gridcell">120</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$25.00</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">25</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row">
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Mishi Kobe Niku</TableTd>
-                                        <TableTd colspan={1}>29</TableTd>
-                                        <TableTd colspan={1}>97</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
-                                        <TableTd colspan={1}>0</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Uncle Bob&apos;s Organic Dried Pears</TableTd>
+                                        <TableTd colspan={1} role="gridcell">15</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$30.00</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">10</TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row" alt>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Ikura</TableTd>
-                                        <TableTd colspan={1}>31</TableTd>
-                                        <TableTd colspan={1}>$31.00</TableTd>
-                                        <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
-                                        <TableTd colspan={1}>0</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Northwoods Cranberry Sauce</TableTd>
+                                        <TableTd colspan={1} role="gridcell">6</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$40.00</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">0</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row" role="row">
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Mishi Kobe Niku</TableTd>
+                                        <TableTd colspan={1} role="gridcell">29</TableTd>
+                                        <TableTd colspan={1} role="gridcell">97</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">0</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row" role="row" alt>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: '0px', borderRightWidth: "1px" }}>Ikura</TableTd>
+                                        <TableTd colspan={1} role="gridcell">31</TableTd>
+                                        <TableTd colspan={1} role="gridcell">$31.00</TableTd>
+                                        <TableTd className="k-grid-content-sticky" colspan={1} role="gridcell" style={{ left: "250px", borderRightWidth: "1px" }}>0</TableTd>
+                                        <TableTd colspan={1} role="gridcell">0</TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>

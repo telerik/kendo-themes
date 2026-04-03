@@ -56,6 +56,10 @@
         padding-inline: $kendo-popup-content-padding-x;
     }
 
+    .k-animation-container .k-popup {
+        margin-block: $kendo-popup-spacing-y;
+    }
+
     // Transparent popup
     .k-popup.k-popup-transparent {
         border-width: 0;
@@ -69,7 +73,6 @@
     }
 
     // Child components
-    .k-popup > .k-widget,
     .k-popup > .k-coloreditor {
         border-width: 0;
     }

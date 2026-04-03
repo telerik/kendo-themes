@@ -7,6 +7,8 @@ description: "Apply ARIA accessibility attributes to an HTML package component"
 
 Given a component name or `.spec.tsx` file, apply WAI-ARIA attributes to make it WCAG 2.2 Level AA compliant.
 
+> **See also:** The [manage-html-a11y skill](../skills/manage-html-a11y/SKILL.md) contains the same workflow with additional reference material. This prompt and the skill share the same patterns and rules.
+
 ## Steps
 
 ### 1. Gather context
@@ -26,6 +28,8 @@ If `aria/[component]_aria.md` exists, migrate its rule table into `ariaSpec.rule
 - Specs from similar components (e.g. `combobox` ↔ `autocomplete`)
 
 Flag and fix issues before applying (wrong selectors, contradictory roles like `role="alert"` + `aria-live="polite"`, missing states).
+
+**Rule changes require explicit user permission:** Never add, remove, or modify ariaSpec rules without asking the user first. Present proposed rule changes and wait for approval before applying them.
 
 **Selector validation — always verify against actual rendered HTML:**
 
@@ -175,13 +179,17 @@ export type KendoComponentProps = {
 
 ### 4. Ensure full coverage — no gaps allowed
 
-After adding rules, ensure **every rule** is tested by at least one template:
+After adding rules, ensure **every single rule** is tested by at least one template. **Coverage gaps are NOT acceptable** — every ariaSpec rule MUST be matched by at least one rendered element across all templates. Gaps mean the test infrastructure cannot verify that the rule is correctly applied, which defeats the purpose of the ariaSpec.
 
 1. Run `npm run build --prefix packages/html && npm run test:a11y [component]`
 2. Check the output for **coverage gaps** — rules where the selector never matched any element in any template
-3. For each gap, create a new template that renders the component in the required state (disabled, selected, expanded, focused, etc.)
-4. Export the new template from the component's `index.ts`
+3. For each gap, either:
+   - Modify an existing template to render the missing state/element, OR
+   - Create a new template that renders the component in the required state
+4. Export any new template from the component's `index.ts`
 5. Re-run until: **0 ARIA violations, 0 WCAG violations, 0 coverage gaps**
+
+**This step is mandatory.** Do NOT consider the task complete if coverage gaps remain.
 
 Common states that need dedicated templates:
 - **Disabled** — for `aria-disabled` rules
@@ -205,7 +213,10 @@ Fix violations and re-run until clean. Also run `npm run typecheck --prefix pack
 These are out of scope — note but don't try to fix:
 - `label` — form labels provided by consuming apps
 - `target-size` (2.5.8) — controlled by product implementations
+- `nested-interactive` — in some composite components (e.g. MenuButton inside TabStripItem), interactive controls are nested within interactive containers; these are documented as known exceptions in the component's ariaSpec and markdown spec
 - jQuery legacy specs — excluded from compliance testing
+
+When an acceptable violation is encountered, it will appear in test output with `ℹ️` prefix. Document the exception in both the ariaSpec (as a comment) and the component's `aria/[component]_aria.md`.
 
 ### Must-fix violations
 

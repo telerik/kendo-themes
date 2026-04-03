@@ -416,7 +416,7 @@
             position: relative;
             vertical-align: middle;
         }
-        td::after { content: "\200b"; }
+        td::after { content: ""; }
     }
 
     .k-task-wrap {
@@ -656,7 +656,7 @@
         white-space: nowrap;
 
         strong {
-            font-size: var( --kendo-font-size-lg, inherit );
+            font-size: var(--kendo-font-size-lg);
             font-weight: normal;
             display: block;
         }
@@ -795,7 +795,7 @@
     }
     .k-gantt-tooltip-validation-value {
         // TODO: extract to variable
-        font-weight: var( --kendo-font-weight-bold, normal );
+        font-weight: var(--kendo-font-weight-bold);
     }
     .k-gantt-tooltip-validation-label,
     .k-gantt-tooltip-validation-value {

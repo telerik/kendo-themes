@@ -56,6 +56,8 @@ export const SegmentedControlButton: KendoComponent<KendoSegmentedControlButtonP
                     selected,
                 }),
             )}
+            aria-pressed={selected ? 'true' : 'false'}
+            aria-disabled={disabled ? 'true' : undefined}
         >
             {icon && (
                 <Icon

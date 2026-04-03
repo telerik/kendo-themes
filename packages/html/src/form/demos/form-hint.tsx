@@ -35,5 +35,6 @@ FormHintDemo.states = states;
 FormHintDemo.variants = variants;
 FormHintDemo.defaultOptions = defaults;
 FormHintDemo.modifiers = modifiers;
+FormHintDemo.className = FormHint.className;
 
 export default FormHintDemo;

@@ -23,22 +23,22 @@
     </style>
     <div id="test-area" class="k-d-grid">
         <div class="k-grid-lockedcolumns k-grid-display-block k-reordable k-grid">
-            <div class="k-grid-aria-root">
-                <div class="k-grid-header">
-                    <div class="k-grid-header-locked" style="width: 400px;">
-                        <table class="k-grid-header-table k-table">
+            <div class="k-grid-aria-root" role="grid">
+                <div role="none" class="k-grid-header">
+                    <div class="k-grid-header-locked" role="none" style="width: 400px;">
+                        <table role="none" class="k-grid-header-table k-table">
                             <colgroup>
                                 <col style="width: 150px;">
                                 <col style="width: 300px;">
                             </colgroup>
                             <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th class="k-header k-filterable k-table-th">
+                                <tr role="row" aria-owns="k-grid-lc-hdr-1 k-grid-lc-hdr-2 k-grid-lc-hdr-3" class="k-table-row">
+                                    <th role="columnheader" class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Order ID</span>
                                             </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                            <a class="k-grid-header-menu k-grid-column-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -47,12 +47,12 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th class="k-header k-filterable k-table-th">
+                                    <th role="columnheader" class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Ship Name</span>
                                             </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                            <a class="k-grid-header-menu k-grid-column-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -65,21 +65,21 @@
                             </thead>
                         </table>
                     </div>
-                    <div class="k-grid-header-wrap k-auto-scrollable" style="width: 581px;">
-                        <table class="k-grid-header-table k-table">
+                    <div class="k-grid-header-wrap k-auto-scrollable" role="none" style="width: 581px;">
+                        <table role="none" class="k-grid-header-table k-table">
                             <colgroup>
                                 <col style="width: 300px;">
                                 <col style="width: 300px;">
                                 <col style="width: 400px;">
                             </colgroup>
                             <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th class="k-header k-filterable k-table-th">
+                                <tr role="none" class="k-table-row">
+                                    <th id="k-grid-lc-hdr-1" role="columnheader" class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Ship Country</span>
                                             </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                            <a class="k-grid-header-menu k-grid-column-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -88,12 +88,12 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th class="k-header k-filterable k-table-th">
+                                    <th id="k-grid-lc-hdr-2" role="columnheader" class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Ship City</span>
                                             </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                            <a class="k-grid-header-menu k-grid-column-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -102,12 +102,12 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th class="k-header k-filterable k-table-th">
+                                    <th id="k-grid-lc-hdr-3" role="columnheader" class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Ship Address</span>
                                             </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                            <a class="k-grid-header-menu k-grid-column-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -124,96 +124,96 @@
                         </div>
                     </div>
                 </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-content-locked" style="width: 400px; height: 303px;">
-                        <table class="k-grid-table k-table">
+                <div role="none" class="k-grid-container">
+                    <div class="k-grid-content-locked" role="none" style="width: 400px; height: 303px;">
+                        <table role="none" class="k-grid-table k-table">
                             <colgroup>
                                 <col style="width: 150px;">
                                 <col style="width: 300px;">
                             </colgroup>
                             <tbody class="k-table-tbody">
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">10248</td>
-                                    <td class="k-table-td">Vins et alcools Chevalier</td>
+                                <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-1 k-grid-lc-cell-2 k-grid-lc-cell-3">
+                                    <td role="gridcell" class="k-table-td">10248</td>
+                                    <td role="gridcell" class="k-table-td">Vins et alcools Chevalier</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-td">10249</td>
-                                    <td class="k-table-td">Toms Spezialitäten</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-4 k-grid-lc-cell-5 k-grid-lc-cell-6">
+                                    <td role="gridcell" class="k-table-td">10249</td>
+                                    <td role="gridcell" class="k-table-td">Toms Spezialitäten</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">10250</td>
-                                    <td class="k-table-td">Hanari Carnes</td>
+                                <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-7 k-grid-lc-cell-8 k-grid-lc-cell-9">
+                                    <td role="gridcell" class="k-table-td">10250</td>
+                                    <td role="gridcell" class="k-table-td">Hanari Carnes</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-td">10251</td>
-                                    <td class="k-table-td">Victuailles en stock</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-10 k-grid-lc-cell-11 k-grid-lc-cell-12">
+                                    <td role="gridcell" class="k-table-td">10251</td>
+                                    <td role="gridcell" class="k-table-td">Victuailles en stock</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">10252</td>
-                                    <td class="k-table-td">Suprêmes délices</td>
+                                <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-13 k-grid-lc-cell-14 k-grid-lc-cell-15">
+                                    <td role="gridcell" class="k-table-td">10252</td>
+                                    <td role="gridcell" class="k-table-td">Suprêmes délices</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-td">10253</td>
-                                    <td class="k-table-td">Toms Spezialitäten</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-16 k-grid-lc-cell-17 k-grid-lc-cell-18">
+                                    <td role="gridcell" class="k-table-td">10253</td>
+                                    <td role="gridcell" class="k-table-td">Toms Spezialitäten</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">10254</td>
-                                    <td class="k-table-td">Hanari Carnes</td>
+                                <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-19 k-grid-lc-cell-20 k-grid-lc-cell-21">
+                                    <td role="gridcell" class="k-table-td">10254</td>
+                                    <td role="gridcell" class="k-table-td">Hanari Carnes</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-td">10255</td>
-                                    <td class="k-table-td">Victuailles en stock</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-22 k-grid-lc-cell-23 k-grid-lc-cell-24">
+                                    <td role="gridcell" class="k-table-td">10255</td>
+                                    <td role="gridcell" class="k-table-td">Victuailles en stock</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="k-auto-scrollable k-grid-content" style="width: 605px; height: 320px;">
-                        <table class="k-grid-table k-table">
+                    <div class="k-auto-scrollable k-grid-content" role="none" style="width: 605px; height: 320px;">
+                        <table role="none" class="k-grid-table k-table">
                             <colgroup>
                                 <col style="width: 300px;">
                                 <col style="width: 300px;">
                                 <col style="width: 400px;">
                             </colgroup>
                             <tbody class="k-table-tbody">
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">France</td>
-                                    <td class="k-table-td">Reims</td>
-                                    <td class="k-table-td">59 rue de l'Abbaye</td>
+                                <tr class="k-master-row k-table-row" role="none">
+                                    <td id="k-grid-lc-cell-1" role="gridcell" class="k-table-td">France</td>
+                                    <td id="k-grid-lc-cell-2" role="gridcell" class="k-table-td">Reims</td>
+                                    <td id="k-grid-lc-cell-3" role="gridcell" class="k-table-td">59 rue de l'Abbaye</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-td">Germany</td>
-                                    <td class="k-table-td">Münster</td>
-                                    <td class="k-table-td">Luisenstr. 48</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="none">
+                                    <td id="k-grid-lc-cell-4" role="gridcell" class="k-table-td">Germany</td>
+                                    <td id="k-grid-lc-cell-5" role="gridcell" class="k-table-td">Münster</td>
+                                    <td id="k-grid-lc-cell-6" role="gridcell" class="k-table-td">Luisenstr. 48</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">Brazil</td>
-                                    <td class="k-table-td">Rio de Janeiro</td>
-                                    <td class="k-table-td">Rua do Paço, 67</td>
+                                <tr class="k-master-row k-table-row" role="none">
+                                    <td id="k-grid-lc-cell-7" role="gridcell" class="k-table-td">Brazil</td>
+                                    <td id="k-grid-lc-cell-8" role="gridcell" class="k-table-td">Rio de Janeiro</td>
+                                    <td id="k-grid-lc-cell-9" role="gridcell" class="k-table-td">Rua do Paço, 67</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-td">France</td>
-                                    <td class="k-table-td">Lyon</td>
-                                    <td class="k-table-td">2, rue du Commerce</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="none">
+                                    <td id="k-grid-lc-cell-10" role="gridcell" class="k-table-td">France</td>
+                                    <td id="k-grid-lc-cell-11" role="gridcell" class="k-table-td">Lyon</td>
+                                    <td id="k-grid-lc-cell-12" role="gridcell" class="k-table-td">2, rue du Commerce</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">Belgium</td>
-                                    <td class="k-table-td">Charleroi</td>
-                                    <td class="k-table-td">Boulevard Tirou, 255</td>
+                                <tr class="k-master-row k-table-row" role="none">
+                                    <td id="k-grid-lc-cell-13" role="gridcell" class="k-table-td">Belgium</td>
+                                    <td id="k-grid-lc-cell-14" role="gridcell" class="k-table-td">Charleroi</td>
+                                    <td id="k-grid-lc-cell-15" role="gridcell" class="k-table-td">Boulevard Tirou, 255</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-td">Germany</td>
-                                    <td class="k-table-td">Münster</td>
-                                    <td class="k-table-td">Luisenstr. 48</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="none">
+                                    <td id="k-grid-lc-cell-16" role="gridcell" class="k-table-td">Germany</td>
+                                    <td id="k-grid-lc-cell-17" role="gridcell" class="k-table-td">Münster</td>
+                                    <td id="k-grid-lc-cell-18" role="gridcell" class="k-table-td">Luisenstr. 48</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">Brazil</td>
-                                    <td class="k-table-td">Rio de Janeiro</td>
-                                    <td class="k-table-td">Rua do Paço, 67</td>
+                                <tr class="k-master-row k-table-row" role="none">
+                                    <td id="k-grid-lc-cell-19" role="gridcell" class="k-table-td">Brazil</td>
+                                    <td id="k-grid-lc-cell-20" role="gridcell" class="k-table-td">Rio de Janeiro</td>
+                                    <td id="k-grid-lc-cell-21" role="gridcell" class="k-table-td">Rua do Paço, 67</td>
                                 </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-td">France</td>
-                                    <td class="k-table-td">Lyon</td>
-                                    <td class="k-table-td">2, rue du Commerce</td>
+                                <tr class="k-master-row k-table-row k-table-alt-row" role="none">
+                                    <td id="k-grid-lc-cell-22" role="gridcell" class="k-table-td">France</td>
+                                    <td id="k-grid-lc-cell-23" role="gridcell" class="k-table-td">Lyon</td>
+                                    <td id="k-grid-lc-cell-24" role="gridcell" class="k-table-td">2, rue du Commerce</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -353,7 +353,7 @@
         <div>
             <span>Angular Grid with locked columns, Grouping and Multiline headers</span>
             <div class="k-grid-lockedcolumns grid-styling-overrides k-grid" style="height: 430px;">
-                <div class="k-grid-aria-root">
+                <div class="k-grid-aria-root" role="grid">
                     <div class="k-grid-header">
                         <div class="k-grid-header-locked" style="width: 582px;">
                             <table class="k-grid-header-table k-table">

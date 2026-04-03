@@ -1,4 +1,4 @@
-﻿import { DateRangePicker, KendoDateRangePickerProps } from '../daterangepicker.spec';
+import { DateRangePicker, KendoDateRangePickerProps } from '../daterangepicker.spec';
 import { DateRangePickerNormal } from '../templates/daterangepicker-normal';
 
 const options = DateRangePicker.options;
@@ -44,6 +44,7 @@ DaterangepickerDemo.states = states;
 DaterangepickerDemo.variants = variants;
 DaterangepickerDemo.defaultOptions = defaults;
 DaterangepickerDemo.modifiers = modifiers;
+DaterangepickerDemo.className = DateRangePicker.className;
 
 export default DaterangepickerDemo;
 

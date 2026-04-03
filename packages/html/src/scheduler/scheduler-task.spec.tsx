@@ -45,7 +45,7 @@ export const SchedulerTask: KendoComponent<KendoSchedulerTaskProps & React.HTMLA
             {recurring && <Icon icon="arrow-rotate-cw" />}
             <span className="k-scheduler-task-text">{text}</span>
             {closable &&
-                <a href="#" className="k-link k-event-delete">
+                <a className="k-link k-event-delete" aria-label="Delete event">
                     <Icon icon="x" />
                 </a>
             }

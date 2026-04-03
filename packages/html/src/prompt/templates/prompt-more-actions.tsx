@@ -11,7 +11,7 @@ export const PromptMoreActions = (props) => (
             <Toolbar fillMode="flat">
                 <IconTextButton fillMode="flat" themeColor="primary" icon="sparkles" rounded="full">Ask AI</IconTextButton>
                 <IconTextButton fillMode="flat" themeColor="primary" icon="comment" rounded="full">Output</IconTextButton>
-                <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full" selected></IconButton>
+                <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full" selected aria-label="More actions"></IconButton>
             </Toolbar>
         </PromptHeader>
         <PromptContent>

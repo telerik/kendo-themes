@@ -1,4 +1,4 @@
-﻿import { KendoMapProps } from '../map.spec';
+import { Map, KendoMapProps } from '../map.spec';
 import { MapNormal } from '../templates/map-normal';
 
 const options = {};
@@ -19,6 +19,7 @@ MapDemo.states = states;
 MapDemo.variants = variants;
 MapDemo.defaultOptions = defaults;
 MapDemo.modifiers = modifiers;
+MapDemo.className = Map.className;
 
 export default MapDemo;
 

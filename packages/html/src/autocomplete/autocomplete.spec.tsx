@@ -54,6 +54,21 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveCustomValue?: boolean;
+    /**
+     * Unique identifier for the autocomplete. Used to generate related IDs.
+     * @aria Controls aria-controls references
+     */
+    id?: string;
+    /**
+     * Autocomplete behavior: 'list', 'both', or 'inline'.
+     * @aria aria-autocomplete - Indicates autocomplete type
+     */
+    autocomplete?: 'list' | 'both' | 'inline' | 'none';
+    /**
+     * ID of the currently focused/active item in the listbox.
+     * @aria aria-activedescendant - Points to focused item when popup is open
+     */
+    activeDescendant?: string;
 };
 
 export type KendoAutocompleteState = { [K in (typeof states)[number]]?: boolean };
@@ -91,8 +106,14 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
         adaptiveTitle,
         adaptiveSubtitle,
         adaptiveCustomValue,
+        id,
+        autocomplete,
+        activeDescendant,
+        'aria-label': ariaLabel,
         ...other
     } = props;
+
+    const listboxId = id ? `${id}-listbox` : undefined;
 
 
     return (
@@ -118,7 +139,21 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                         {separators && <InputSeparator />}
                     </>
                 }
-                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputInnerInput
+                    placeholder={placeholder}
+                    value={value}
+                    role="combobox"
+                    aria-haspopup="listbox"
+                    aria-expanded={opened ? 'true' : 'false'}
+                    aria-controls={opened ? listboxId : undefined}
+                    aria-activedescendant={opened && activeDescendant ? activeDescendant : undefined}
+                    aria-autocomplete={autocomplete}
+                    aria-invalid={invalid ? 'true' : undefined}
+                    aria-busy={loading ? 'true' : undefined}
+                    aria-label={ariaLabel}
+                    disabled={disabled}
+                    readOnly={readonly}
+                />
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
@@ -140,7 +175,11 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                 }
             </Input>
             {opened && popup &&
-                <Popup className="k-list-container k-autocomplete-popup">
+                <Popup
+                    className="k-list-container k-autocomplete-popup"
+                    containerRole="region"
+                    containerAriaLabel="Autocomplete suggestions"
+                >
                     {popup}
                 </Popup>
             }
@@ -148,7 +187,7 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}
                             input={true}
                             inputValue={value}
                             inputPlaceholder={placeholder}
@@ -159,7 +198,7 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                 >
                     <div className="k-list-container">
                         <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-                            <ListContent>
+                            <ListContent aria-label="Options">
                                 <ListItem text="List item" />
                                 <ListItem text="List item" />
                                 <ListItem text="List item" />
@@ -178,5 +217,22 @@ Autocomplete.className = AUTOCOMPLETE_CLASSNAME;
 Autocomplete.defaultOptions = defaultOptions;
 Autocomplete.moduleName = AUTOCOMPLETE_MODULE_NAME;
 Autocomplete.folderName = AUTOCOMPLETE_FOLDER_NAME;
+
+/**
+ * @see List ariaSpec for popup listbox content
+ * @see ActionSheet ariaSpec for adaptive mode
+ */
+Autocomplete.ariaSpec = {
+    rules: [
+        { selector: '.k-autocomplete .k-input-inner', attribute: 'role=combobox', usage: 'Announces the autocomplete input.' },
+        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the component has a listbox popup.' },
+        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-expanded', usage: 'Announces the popup visibility.' },
+        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the autocomplete.' },
+        { selector: '.k-autocomplete.k-disabled .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the autocomplete is disabled.' },
+        { selector: '.k-autocomplete-popup .k-list-content, .k-autocomplete-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
+        { selector: '.k-autocomplete-popup .k-list-ul[role="listbox"], .k-autocomplete-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
+        { selector: '.k-autocomplete-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
+    ]
+};
 
 export default Autocomplete;

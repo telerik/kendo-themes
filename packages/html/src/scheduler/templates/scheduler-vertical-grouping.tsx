@@ -19,7 +19,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                     <SchedulerHead as="tr">
                         <td>
                             <SchedulerTimes>
-                                <SchedulerTable>
+                                <SchedulerTable role="none">
                                     <tbody>
                                         <tr style={{ height: "37px" }}>
                                             <SchedulerCell as="th" />
@@ -43,7 +43,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                     <SchedulerBody as="tr">
                         <td>
                             <SchedulerTimes style={{ height: "469px" }}>
-                                <SchedulerTable style={{ height: "1200px" }}>
+                                <SchedulerTable role="none" style={{ height: "1200px" }}>
                                     <tbody>
                                         <tr style={{ height: "36px" }}>
                                             <SchedulerCell as="th" cellType={["slot", "group"]} rowspan={36}>Meeting Room 101</SchedulerCell>
@@ -187,7 +187,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                             </SchedulerTimes>
                         </td>
                         <td>
-                            <SchedulerContent style={{ height: "469px" }}>
+                            <SchedulerContent style={{ height: "469px" }} tabIndex={0}>
                                 <SchedulerTable>
                                     <tbody>
                                         <tr className="k-scheduler-header-all-day" style={{ height: "36px" }}>

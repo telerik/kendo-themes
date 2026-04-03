@@ -42,7 +42,9 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
                     [`${SUGGESTIONGROUP_CLASSNAME}-scrollable-end`]: scrollingPosition === 'end' || scrollingPosition === 'both'
                 },
                 props.className
-            )}>
+            )}
+            role="group"
+        >
             {(layout === 'scrollable' || layout === 'scrollButtons') ? (
                 <div className="k-suggestions-scroll">
                     {props.children}
@@ -54,9 +56,9 @@ export const SuggestionGroup: KendoComponent<KendoSuggestionGroupProps & React.H
     if (layout =='scrollButtons') {
         return (
             <div className="k-suggestion-scrollwrap">
-                <Button fillMode={"flat"} icon="chevron-left" size="small"></Button>
+                <Button fillMode={"flat"} icon="chevron-left" size="xsmall" aria-label="Scroll left"></Button>
                 {suggestionContent}
-                <Button fillMode={"flat"} icon="chevron-right" size="small"></Button>
+                <Button fillMode={"flat"} icon="chevron-right" size="xsmall" aria-label="Scroll right"></Button>
             </div>
         );
     }

@@ -1,4 +1,4 @@
-﻿import { JSX } from 'react';
+import { JSX } from 'react';
 import { FloatingActionButton, KendoFloatingActionButtonProps } from '../fab.spec';
 import { FloatingActionButtonItem } from '../fab-item';
 import { FloatingActionButtonItems } from '../fab-items';
@@ -70,6 +70,7 @@ FabDemo.states = states;
 FabDemo.variants = variants;
 FabDemo.defaultOptions = defaults;
 FabDemo.modifiers = modifiers;
+FabDemo.className = FloatingActionButton.className;
 
 export default FabDemo;
 

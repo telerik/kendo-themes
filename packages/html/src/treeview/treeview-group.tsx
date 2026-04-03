@@ -7,6 +7,8 @@ export type KendoTreeviewGroupProps = {
     children?: React.ReactNode;
     dir?: 'ltr' | 'rtl';
     level?: number;
+    /** @aria role - "tree" for root, "group" for nested */
+    role?: string;
 };
 
 export const TreeviewGroup = (
@@ -17,6 +19,7 @@ export const TreeviewGroup = (
         children,
         dir,
         level = 1,
+        role = 'group',
         ...other
     } = props;
 
@@ -24,6 +27,7 @@ export const TreeviewGroup = (
         <ul
             {...other}
             className={classNames(props.className, className)}
+            role={role}
         >
             {React.Children.map(children, (child, index) =>
                 React.isValidElement(child)

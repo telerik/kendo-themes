@@ -17,13 +17,13 @@ $kendo-pivotgrid-padding-x: var( --kendo-pivotgrid-padding-x, #{k-spacing(0)} ) 
 $kendo-pivotgrid-padding-y: var( --kendo-pivotgrid-padding-y, #{k-spacing(0)} ) !default;
 /// The font family of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-font-family: var( --kendo-pivotgrid-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-pivotgrid-font-family: var( --kendo-pivotgrid-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-font-size: var( --kendo-pivotgrid-font-size, var( --kendo-font-size, inherit ) ) !default;
+$kendo-pivotgrid-font-size: var( --kendo-pivotgrid-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-line-height: var( --kendo-pivotgrid-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-pivotgrid-line-height: var( --kendo-pivotgrid-line-height, var(--kendo-line-height) ) !default;
 /// The border width of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-border-width: var( --kendo-pivotgrid-border-width, 1px ) !default;
@@ -123,10 +123,10 @@ $kendo-pivotgrid-configurator-header-padding-x: var( --kendo-pivotgrid-configura
 $kendo-pivotgrid-configurator-header-padding-y: var( --kendo-pivotgrid-configurator-header-padding-y, #{$kendo-pivotgrid-configurator-header-padding-x} ) !default;
 /// The font size of the PivotGrid configurator header.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-header-font-size: var( --kendo-pivotgrid-configurator-header-font-size, calc( var( --kendo-font-size-xl, 2rem ) * .9 ) ) !default;
+$kendo-pivotgrid-configurator-header-font-size: var( --kendo-pivotgrid-configurator-header-font-size, calc( var(--kendo-font-size-xl) * .9 ) ) !default;
 /// The font weight of the PivotGrid configurator header.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-header-font-weight: var( --kendo-pivotgrid-configurator-header-font-weight, var( --kendo-font-weight-bold, bold ) ) !default;
+$kendo-pivotgrid-configurator-header-font-weight: var( --kendo-pivotgrid-configurator-header-font-weight, var(--kendo-font-weight-bold) ) !default;
 
 /// The horizontal padding of the PivotGrid configurator content.
 /// @group pivotgrid

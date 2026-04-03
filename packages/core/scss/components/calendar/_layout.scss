@@ -356,9 +356,9 @@
                 display: block;
                 position: absolute;
                 inset-block-end: 0;
-                content: "\200b";
+                content: "";
                 height: 0;
-                line-height: 0;
+                line-height: 1lh;
                 z-index: k-z-index("base", 1);
                 width: 150%;
                 inset-inline-start: -25%;
@@ -395,7 +395,7 @@
         &::after {
             display: block;
             position: absolute;
-            content: "\200b";
+            content: "";
             height: 0;
             line-height: 0;
             z-index: k-z-index("base", 1);

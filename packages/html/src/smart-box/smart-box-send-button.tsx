@@ -32,6 +32,8 @@ export const SmartBoxSendButton = (
             size="small"
             icon={processing ? "stop-sm" : "arrow-up-outline"}
             active={processing}
+            aria-pressed={processing ? 'true' : undefined}
+            aria-label={processing ? "Stop processing" : "Send"}
             className={classNames(
                 props.className,
                 SMART_BOX_SEND_BUTTON_CLASSNAME,

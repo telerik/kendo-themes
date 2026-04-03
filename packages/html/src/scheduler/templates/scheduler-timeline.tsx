@@ -12,10 +12,10 @@ export const SchedulerTimeline = ({ style, ...props }: any) => (
             <SchedulerToolbar>
                 <ButtonGroup className="k-scheduler-navigation">
                     <Button className="k-group-start">Today</Button>
-                    <Button icon="caret-alt-left"></Button>
-                    <Button className="k-group-end" icon="caret-alt-right"></Button>
+                    <Button icon="caret-alt-left" aria-label="Navigate to previous period"></Button>
+                    <Button className="k-group-end" icon="caret-alt-right" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
-                <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                     Monday, June 13, 2024
                 </Button>
                 <span className="k-spacer"></span>
@@ -38,7 +38,7 @@ export const SchedulerTimeline = ({ style, ...props }: any) => (
                 <SchedulerHead as="tr">
                     <td>
                         <SchedulerTimes>
-                            <SchedulerTable>
+                            <SchedulerTable role="none">
                                 <tbody>
                                     <tr style={{ height: "37px" }}>
                                         <SchedulerCell as="th" />
@@ -78,7 +78,7 @@ export const SchedulerTimeline = ({ style, ...props }: any) => (
                 <SchedulerBody as="tr">
                     <td>
                         <SchedulerTimes>
-                            <SchedulerTable>
+                            <SchedulerTable role="none">
                                 <tbody>
                                     <tr>
                                         <SchedulerCell as="th" rowspan={1}>All Events</SchedulerCell>
@@ -88,7 +88,7 @@ export const SchedulerTimeline = ({ style, ...props }: any) => (
                         </SchedulerTimes>
                     </td>
                     <td>
-                        <SchedulerContent style={{ height: "100px" }}>
+                        <SchedulerContent style={{ height: "100px" }} tabIndex={0}>
                             <SchedulerTable>
                                 <tbody>
                                     <tr>

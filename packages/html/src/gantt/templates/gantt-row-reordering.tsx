@@ -11,12 +11,12 @@ import { Icon } from "../../icon";
 export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180px", tablesWidth = "675px", tablesHeight = "828px", currentTimeLeftOffset = "243px", ganttDependencies, menu, ...other }: any) => (
     <Gantt
         headerToolbar={(
-            <GanttHeaderToolbar>
-                <Button className="k-gantt-toggle" icon="layout-1-by-4"></Button>
+            <GanttHeaderToolbar aria-label="Toolbar">
+                <Button className="k-gantt-toggle" icon="layout-1-by-4" aria-label="Toggle TreeList"></Button>
                 <Button className="k-gantt-create" icon="plus">Add Task</Button>
                 <span className="k-spacer"></span>
                 <div className="k-gantt-views-wrapper">
-                    <select className="k-picker k-dropdown-list k-dropdown k-views-dropdown">
+                    <select className="k-picker k-dropdown-list k-dropdown k-views-dropdown" aria-label="Select view">
                         <option value="day">Day</option>
                         <option value="week">Week</option>
                         <option value="month">Month</option>
@@ -30,7 +30,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
             </GanttHeaderToolbar>
         )}
         footerToolbar={(
-            <GanttFooterToolbar>
+            <GanttFooterToolbar aria-label="Toolbar">
                 <Button className="k-gantt-create" icon="plus">Add Task</Button>
             </GanttFooterToolbar>
         )}
@@ -51,7 +51,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                         </colgroup>
                                         <TableThead>
                                             <TableRow>
-                                                <GridHeaderCell></GridHeaderCell>
+                                                <GridHeaderCell accessibleLabel="Drag column"></GridHeaderCell>
                                                 <GridHeaderCell menu={menu} rowspan={1} columnTitle="ID"></GridHeaderCell>
                                                 <GridHeaderCell menu={menu} rowspan={1} columnTitle="Title"></GridHeaderCell>
                                             </TableRow>
@@ -69,7 +69,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                         </colgroup>
                                         <TableTbody>
                                             <TableRow>
-                                                <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
+                                                <TableTd className="k-drag-cell" aria-label="Reorder row"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>7</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="caret-alt-down" />
@@ -77,7 +77,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                 </TableTd>
                                             </TableRow>
                                             <TableRow alt>
-                                                <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
+                                                <TableTd className="k-drag-cell" aria-label="Reorder row"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>18</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="none" />
@@ -86,7 +86,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                 </TableTd>
                                             </TableRow>
                                             <TableRow>
-                                                <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
+                                                <TableTd className="k-drag-cell" aria-label="Reorder row"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>11</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="none" />
@@ -95,7 +95,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                 </TableTd>
                                             </TableRow>
                                             <TableRow alt>
-                                                <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
+                                                <TableTd className="k-drag-cell" aria-label="Reorder row"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>19</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="none" />
@@ -105,7 +105,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                 </TableTd>
                                             </TableRow>
                                             <TableRow>
-                                                <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
+                                                <TableTd className="k-drag-cell" aria-label="Reorder row"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>20</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="none" />
@@ -145,7 +145,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                     </GridHeaderTable>
                                 </div>
                             </GridHeader>
-                            <GridContent style={{ height: gridContentHeight }}>
+                            <GridContent style={{ height: gridContentHeight }} role="tree">
                                 <GanttTables>
                                     <GanttRowsTable className="k-grid-table" style={{ width: tablesWidth }}>
                                         <colgroup>
@@ -179,7 +179,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                             <TableRow>
                                                 <TableTd>
                                                     <GanttTaskWrap type="summary" style={{ left: "113px" }}>
-                                                        <GanttTask type="summary" style={{ width: "4000px" }}>
+                                                        <GanttTask type="summary" ariaLevel={1} aria-label="Software validation, research and implementation" style={{ width: "4000px" }}>
                                                             <div className="k-task-summary-progress" style={{ width: "1720px" }}>
                                                                 <div className="k-task-summary-complete" style={{ width: "4000px" }}></div>
                                                             </div>
@@ -192,7 +192,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                             <TableRow>
                                                 <TableTd>
                                                     <GanttTaskWrap type="milestone" style={{ left: "113px" }}>
-                                                        <GanttTask type="milestone"></GanttTask>
+                                                        <GanttTask type="milestone" ariaLevel={2} aria-label="Project Kickoff"></GanttTask>
                                                         <GanttTaskDot />
                                                         <GanttTaskDot position="end" style={{ right: "0px" }} />
                                                     </GanttTaskWrap>
@@ -201,7 +201,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                             <TableRow>
                                                 <TableTd>
                                                     <GanttTaskWrap type="summary" style={{ left: "113px" }}>
-                                                        <GanttTask type="summary" style={{ width: "500px" }}>
+                                                        <GanttTask type="summary" ariaLevel={2} aria-label="Research" style={{ width: "500px" }}>
                                                             <div className="k-task-summary-progress" style={{ width: "215px" }}>
                                                                 <div className="k-task-summary-complete" style={{ width: "500px" }}></div>
                                                             </div>
@@ -214,26 +214,26 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                             <TableRow>
                                                 <TableTd>
                                                     <GanttTaskWrap style={{ left: "113px" }}>
-                                                        <GanttTask style={{ width: "200px" }}>
-                                                            <div className="k-task-complete" style={{ width: '50px' }}></div>
+                                                        <GanttTask ariaLevel={3} aria-label="Validation with Customers" style={{ width: "200px" }}>
+                                                            <div className="k-task-complete" aria-hidden="true" style={{ width: '50px' }}></div>
                                                             <GanttTaskContent content="Validation with Customers"></GanttTaskContent>
                                                         </GanttTask>
                                                         <GanttTaskDot />
                                                         <GanttTaskDot position="end" style={{ right: "0px" }} />
-                                                        <div className="k-task-draghandle" style={{ left: '50px' }}></div>
+                                                        <div className="k-task-draghandle" aria-hidden="true" style={{ left: '50px' }}></div>
                                                     </GanttTaskWrap>
                                                 </TableTd>
                                             </TableRow>
                                             <TableRow>
                                                 <TableTd>
                                                     <GanttTaskWrap style={{ left: "113px" }}>
-                                                        <GanttTask style={{ width: "200px" }}>
-                                                            <div className="k-task-complete" style={{ width: "164px" }}></div>
+                                                        <GanttTask ariaLevel={3} aria-label="Market Research" style={{ width: "200px" }}>
+                                                            <div className="k-task-complete" aria-hidden="true" style={{ width: "164px" }}></div>
                                                             <GanttTaskContent content="Market Research"></GanttTaskContent>
                                                         </GanttTask>
                                                         <GanttTaskDot />
                                                         <GanttTaskDot position="end" style={{ right: "0px" }} />
-                                                        <div className="k-task-draghandle" style={{ left: "164px" }}></div>
+                                                        <div className="k-task-draghandle" aria-hidden="true" style={{ left: "164px" }}></div>
                                                     </GanttTaskWrap>
                                                 </TableTd>
                                             </TableRow>
@@ -241,7 +241,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                     </GanttTasksTable>
                                 </GanttTables>
                                 {ganttDependencies ||
-                                    <div className="k-gantt-dependencies" style={{ width: tablesWidth }}>
+                                    <div className="k-gantt-dependencies" aria-hidden="true" style={{ width: tablesWidth }}>
                                         <GanttLine style={{ left: "124.5px", top: "53px", width: "10px" }}></GanttLine>
                                         <GanttLine orientation="vertical" style={{ left: "132.5px", top: "53px", height: "18px" }}></GanttLine>
                                         <GanttLine style={{ left: "103px", top: "71px", width: "31.5px" }}></GanttLine>
@@ -258,7 +258,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                         <GanttLine orientation="vertical" style={{ left: "303px", top: "143px", height: "18px" }}></GanttLine>
                                     </div>
                                 }
-                                <div className="k-current-time" style={{ left: currentTimeLeftOffset, top: "0px", width: "1px", height: tablesHeight }}></div>
+                                <div className="k-current-time" aria-hidden="true" style={{ left: currentTimeLeftOffset, top: "0px", width: "1px", height: tablesHeight }}></div>
                             </GridContent>
                         </Grid>
                     </SplitterPane>

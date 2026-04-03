@@ -3,6 +3,82 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [13.1.1](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.2...v13.1.1) (2026-03-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [13.1.1-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.1...v13.1.1-dev.2) (2026-03-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [13.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.0...v13.1.1-dev.1) (2026-03-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [13.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.0...v13.1.1-dev.0) (2026-03-20)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [13.1.0](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.4...v13.1.0) (2026-03-17)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [13.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.3...v13.1.0-dev.4) (2026-03-17)
+
+
+### Features
+
+* **html:** add gantt aria ([cc12364](https://github.com/telerik/kendo-themes/commit/cc12364dc644e8ddf2d31acb73f4056b98c7dd8f))
+* **html:** add grid pinned rows and sticky groups templates ([d8d607a](https://github.com/telerik/kendo-themes/commit/d8d607a7427e9eb752db40816802a6cb1561c759))
+
+
+
+
+
+# [13.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.2...v13.1.0-dev.3) (2026-03-16)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [13.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.1...v13.1.0-dev.2) (2026-03-09)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
 # [13.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.0...v13.1.0-dev.1) (2026-03-02)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils

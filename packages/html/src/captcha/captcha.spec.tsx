@@ -60,17 +60,18 @@ export const Captcha: KendoComponent<KendoCaptchaProps & KendoCaptchaState & Rea
                     <img
                         className={classNames({ 'k-hidden': loading })}
                         src={imgPath}
+                        alt="Captcha image"
                     />
                     {loading && (
                         <SkeletonRectangle style={{ width: '100%', height: '100%' }} />
                     )}
                 </div>
                 <div className="k-captcha-image-controls k-vstack">
-                    <Button icon="volume-up" disabled={loading === true}></Button>
-                    <Button icon="arrow-rotate-cw" disabled={loading === true}></Button>
+                    <Button icon="volume-up" disabled={loading === true} aria-label="Play audio"></Button>
+                    <Button icon="arrow-rotate-cw" disabled={loading === true} aria-label="Refresh captcha"></Button>
                 </div>
                 <div className="k-captcha-volume-control k-vstack k-pos-absolute k-hidden">
-                    <div className="k-widget k-slider k-slider-vertical"></div>
+                    <div className="k-slider k-slider-vertical"></div>
                 </div>
             </div>
             <div className="k-captcha-input k-vstack">
@@ -79,6 +80,7 @@ export const Captcha: KendoComponent<KendoCaptchaProps & KendoCaptchaState & Rea
                     valid={valid}
                     invalid={invalid}
                     disabled={loading === true}
+                    aria-label="Captcha code"
                 />
                 {valid && !loading && (
                     <span className="k-captcha-validation-message !k-text-success">

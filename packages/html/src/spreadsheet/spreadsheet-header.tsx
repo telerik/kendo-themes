@@ -22,51 +22,51 @@ export type KendoSpreadsheetHeaderProps = {
 };
 
 const defaultToolbarItems = ([
-    <Button icon="arrow-rotate-ccw" fillMode="flat"></Button>,
-    <Button icon="arrow-rotate-cw" fillMode="flat"></Button>,
-    <ToolbarSeparator></ToolbarSeparator>,
-    <Button icon="cut" fillMode="flat"></Button>,
-    <Button icon="copy" fillMode="flat"></Button>,
-    <Button icon="clipboard" fillMode="flat"></Button>,
-    <ToolbarSeparator></ToolbarSeparator>,
-    <DropdownList value="Font Name" fillMode="flat" />,
-    <DropdownList value="Font Size" fillMode="flat" />,
-    <ToolbarSeparator></ToolbarSeparator>,
-    <ButtonGroup fillMode="flat">
-        <Button className="k-group-start" icon="font-grow" fillMode="flat"></Button>
-        <Button className="k-group-end" icon="font-shrink" fillMode="flat"></Button>
+    <Button key="undo" icon="arrow-rotate-ccw" fillMode="flat" aria-label="Undo"></Button>,
+    <Button key="redo" icon="arrow-rotate-cw" fillMode="flat" aria-label="Redo"></Button>,
+    <ToolbarSeparator key="sep1"></ToolbarSeparator>,
+    <Button key="cut" icon="cut" fillMode="flat" aria-label="Cut"></Button>,
+    <Button key="copy" icon="copy" fillMode="flat" aria-label="Copy"></Button>,
+    <Button key="paste" icon="clipboard" fillMode="flat" aria-label="Paste"></Button>,
+    <ToolbarSeparator key="sep2"></ToolbarSeparator>,
+    <DropdownList key="fontname" value="Font Name" fillMode="flat" aria-label="Font name" />,
+    <DropdownList key="fontsize" value="Font Size" fillMode="flat" aria-label="Font size" />,
+    <ToolbarSeparator key="sep3"></ToolbarSeparator>,
+    <ButtonGroup key="fontgrow" fillMode="flat">
+        <Button className="k-group-start" icon="font-grow" fillMode="flat" aria-label="Increase font size"></Button>
+        <Button className="k-group-end" icon="font-shrink" fillMode="flat" aria-label="Decrease font size"></Button>
     </ButtonGroup>,
-    <ToolbarSeparator></ToolbarSeparator>,
-    <ButtonGroup fillMode="flat">
-        <Button className="k-group-start" icon="bold" fillMode="flat"></Button>
-        <Button icon="italic" fillMode="flat"></Button>
-        <Button icon="underline" fillMode="flat"></Button>
-        <Button className="k-group-end" icon="strikethrough" fillMode="flat"></Button>
+    <ToolbarSeparator key="sep4"></ToolbarSeparator>,
+    <ButtonGroup key="fontstyle" fillMode="flat">
+        <Button className="k-group-start" icon="bold" fillMode="flat" aria-label="Bold"></Button>
+        <Button icon="italic" fillMode="flat" aria-label="Italic"></Button>
+        <Button icon="underline" fillMode="flat" aria-label="Underline"></Button>
+        <Button className="k-group-end" icon="strikethrough" fillMode="flat" aria-label="Strikethrough"></Button>
     </ButtonGroup>,
-    <ToolbarItem>
-        <ColorPicker value="red" valueIconName="foreground-color" fillMode="flat" />
+    <ToolbarItem key="textcolor">
+        <ColorPicker value="red" valueIconName="foreground-color" fillMode="flat" aria-label="Text color" />
     </ToolbarItem>,
-    <ToolbarSeparator></ToolbarSeparator>,
-    <ToolbarItem>
-        <ColorPicker value="fuchsia" valueIconName="droplet" fillMode="flat" />
+    <ToolbarSeparator key="sep5"></ToolbarSeparator>,
+    <ToolbarItem key="bgcolor">
+        <ColorPicker value="fuchsia" valueIconName="droplet" fillMode="flat" aria-label="Background color" />
     </ToolbarItem>,
-    <ToolbarSeparator></ToolbarSeparator>,
-    <MenuButton fillMode="flat" icon="borders-all" showArrow></MenuButton>,
-    <ToolbarSeparator></ToolbarSeparator>,
-    <MenuButton fillMode="flat" icon="align-left" showArrow></MenuButton>,
-    <MenuButton fillMode="flat" icon="align-middle" showArrow></MenuButton>,
-    <ToolbarSeparator></ToolbarSeparator>,
-    <Button fillMode="flat" icon="text-wrap"></Button>
+    <ToolbarSeparator key="sep6"></ToolbarSeparator>,
+    <MenuButton key="borders" fillMode="flat" icon="borders-all" showArrow aria-label="Borders"></MenuButton>,
+    <ToolbarSeparator key="sep7"></ToolbarSeparator>,
+    <MenuButton key="halign" fillMode="flat" icon="align-left" showArrow aria-label="Horizontal alignment"></MenuButton>,
+    <MenuButton key="valign" fillMode="flat" icon="align-middle" showArrow aria-label="Vertical alignment"></MenuButton>,
+    <ToolbarSeparator key="sep8"></ToolbarSeparator>,
+    <Button key="wrap" fillMode="flat" icon="text-wrap" aria-label="Wrap text"></Button>
 ]);
 
 const defaultMenuItems = ([
-    <MenuItem first text="File" />,
-    <MenuItem text="Home" active />,
-    <MenuItem text="Insert" />,
-    <MenuItem text="Format" />,
-    <MenuItem text="Formulas" />,
-    <MenuItem text="Data" />,
-    <MenuItem last text="View" />,
+    <MenuItem key="file" first text="File" />,
+    <MenuItem key="home" text="Home" active />,
+    <MenuItem key="insert" text="Insert" />,
+    <MenuItem key="format" text="Format" />,
+    <MenuItem key="formulas" text="Formulas" />,
+    <MenuItem key="data" text="Data" />,
+    <MenuItem key="view" last text="View" />,
 ]);
 
 const defaultOptions = {

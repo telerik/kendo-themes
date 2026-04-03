@@ -11,9 +11,9 @@
     .k-form,
     .k-form-inline {
         legend {
-            font-size: calc( var( --kendo-font-size, .875rem ) * 1.5 );
+            font-size: calc( var(--kendo-font-size) * 1.5 );
             font-weight: normal;
-            line-height: var( --kendo-line-height, normal );
+            line-height: var(--kendo-line-height);
             text-transform: none;
         }
 
@@ -39,7 +39,7 @@
         }
 
         .k-form-field {
-            > span:not(.k-widget) {
+            > span {
                 padding: calc( #{k-spacing(4)} - #{$kendo-input-border-width} ) 0;
                 padding-inline-end: k-spacing(4);
             }

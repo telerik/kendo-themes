@@ -21,9 +21,9 @@ export const FilterPreview = (
     const expressionPreview: React.JSX.Element | React.JSX.Element[] = [];
 
     if (fields) {
-        fields.map(({ name, value }) => {
+        fields.map(({ name, value }, index) => {
             expressionPreview.push(
-                <span className={`k-filter-preview-${name}`}>{`${value} `}</span>
+                <span key={index} className={`k-filter-preview-${name}`}>{`${value} `}</span>
             );
         });
     }

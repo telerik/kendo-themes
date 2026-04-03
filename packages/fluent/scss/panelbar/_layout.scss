@@ -16,7 +16,7 @@
                 font-weight: normal;
 
                 &.k-selected {
-                    font-weight: var(--kendo-font-weight-semibold, 600 );
+                    font-weight: var(--kendo-font-weight-semibold);
                 }
 
                 &:focus,
@@ -43,7 +43,7 @@
                 padding-block: $kendo-panelbar-item-padding-y;
 
                 &.k-selected {
-                    font-weight: var(--kendo-font-weight-semibold, 600 );
+                    font-weight: var(--kendo-font-weight-semibold);
                 }
 
                 &:focus,

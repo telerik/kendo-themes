@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { classNames } from '../misc';
 import { data, axis } from './data';
 
@@ -38,6 +39,11 @@ export const SpreadsheetData = (
 
     const spreadsheetData = activeCellIndex ? addActiveCell(data, activeCellIndex) : data;
 
+    // Add keys to avoid React "unique key" warnings
+    const keyedItems = [ ...axis, ...spreadsheetData ].map((el, i) =>
+        el.key ? el : React.cloneElement(el, { key: i })
+    );
+
     return (
         <div
             {...other}
@@ -45,7 +51,7 @@ export const SpreadsheetData = (
                 SPREADSHEETDATA_CLASSNAME,
                 props.className
             )}>
-            {[ ...axis, ...spreadsheetData ]}
+            {keyedItems}
         </div>
     );
 };

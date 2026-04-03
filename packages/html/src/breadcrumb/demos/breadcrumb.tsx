@@ -1,4 +1,4 @@
-﻿import { Breadcrumb, KendoBreadcrumbProps } from '../breadcrumb.spec';
+import { Breadcrumb, KendoBreadcrumbProps } from '../breadcrumb.spec';
 import { BreadcrumbContainer } from '../breadcrumb-container';
 import { BreadcrumbItem } from '../breadcrumb-item';
 import { BreadcrumbItemText } from '../breadcrumb-item-text';
@@ -137,6 +137,7 @@ BreadcrumbDemo.states = states;
 BreadcrumbDemo.variants = variants;
 BreadcrumbDemo.defaultOptions = defaults;
 BreadcrumbDemo.modifiers = modifiers;
+BreadcrumbDemo.className = Breadcrumb.className;
 
 export default BreadcrumbDemo;
 

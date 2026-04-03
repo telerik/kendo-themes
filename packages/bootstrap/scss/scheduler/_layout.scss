@@ -19,7 +19,7 @@
             & { // stylelint-disable-line
                 padding-block: k-spacing(1);
                 padding-inline: k-spacing(2);
-                font-size: var( --kendo-font-size-sm, inherit );
+                font-size: var(--kendo-font-size-sm);
             }
         }
 

@@ -1,10 +1,11 @@
 import MultiSelectTree from "../multiselecttree.spec";
+import { nextId } from "../../misc";
 import { Chip, ChipAction } from '../../chip';
 
-export const MultiSelectTreeValue = ({ size, rounded, children, ...other }: any) => (
+export const MultiSelectTreeValue = ({ size, rounded, children = "Tag", ...other }: any) => (
     <>
-        <MultiSelectTree size={size} rounded={rounded} tags={(
-            <Chip text={children} actions={ <ChipAction type="remove"/>} size={size} rounded={rounded} />
+        <MultiSelectTree id={nextId('mst')} aria-label="Select options" size={size} rounded={rounded} tags={(
+            <Chip text={children} actions={ <ChipAction type="remove"/>} size={size} rounded={rounded} role="option" aria-selected="true" />
         )}
         {...other}
         />

@@ -28,18 +28,18 @@ const defaultToolbar =
             <Button>New Folder</Button>
             <Button>Upload</Button>
             <ButtonGroup>
-                <Button className="k-group-start" icon="sort-asc-small"></Button>
-                <Button className="k-group-end" icon="sort-desc-small"></Button>
+                <Button className="k-group-start" icon="sort-asc-small" aria-label="Sort ascending"></Button>
+                <Button className="k-group-end" icon="sort-desc-small" aria-label="Sort descending"></Button>
             </ButtonGroup>
             <SplitButton text="Sort By" />
             <ButtonGroup>
-                <Button className="k-group-start" icon="grid-layout"></Button>
-                <Button className="k-group-end" icon="grid"></Button>
+                <Button className="k-group-start" icon="grid-layout" aria-label="List view"></Button>
+                <Button className="k-group-end" icon="grid" aria-label="Grid view"></Button>
             </ButtonGroup>
             <div className="k-spacer"></div>
             <div className="k-filemanager-details-toggle">
                 <label>View Details</label>
-                <Switch />
+                <Switch aria-label="View Details" />
             </div>
             <Searchbox className="k-filemanager-search-tool" placeholder="Search..." />
         </FileManagerToolbar>
@@ -87,5 +87,26 @@ FileManager.className = FILEMANAGER_CLASSNAME;
 FileManager.defaultOptions = defaultOptions;
 FileManager.moduleName = FILEMANAGER_MODULE_NAME;
 FileManager.folderName = FILEMANAGER_FOLDER_NAME;
+
+/**
+ * Accessibility specification for FileManager.
+ *
+ * The FileManager is a composite component containing:
+ * - Toolbar (top)
+ * - Splitter (separates panes)
+ * - TreeView (left pane navigation)
+ * - Breadcrumb (center pane navigation)
+ * - ListView or Grid (center pane content)
+ * - Preview pane (right pane, optional)
+ *
+ * Each sub-component implements its own ARIA spec.
+ * The only custom rule is that the preview pane must be focusable.
+ */
+FileManager.ariaSpec = {
+    selector: '.k-filemanager',
+    rules: [
+        { selector: '.k-filemanager-preview', attribute: 'tabindex=0', usage: 'The element must be focusable, so that its content would be communicated to the users.' },
+    ]
+};
 
 export default FileManager;

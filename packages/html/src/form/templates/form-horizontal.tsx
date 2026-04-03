@@ -25,7 +25,7 @@ export const FormHorizontal = (props: any) => {
                         label="Label"
                         orientation="horizontal"
                         hint="Hint text"
-                        editor={<DropdownList value="Dropdown List" size={size} />}
+                        editor={<DropdownList value="Dropdown List" size={size} aria-label="Label" />}
                     />
                     <FormField
                         label="City"
@@ -33,7 +33,7 @@ export const FormHorizontal = (props: any) => {
                         editor={
                             <ul className="k-radio-list k-list-horizontal">
                                 <li className="k-radio-list-item">
-                                    <RadioButton checked={true} size={size} />
+                                    <RadioButton defaultChecked size={size} />
                                     <label className="k-radio-label">Label</label>
                                 </li>
                                 <li className="k-radio-list-item">

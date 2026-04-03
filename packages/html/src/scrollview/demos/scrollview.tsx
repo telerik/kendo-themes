@@ -1,4 +1,4 @@
-﻿import { ScrollView, KendoScrollViewProps } from '../scrollview.spec';
+import { ScrollView, KendoScrollViewProps } from '../scrollview.spec';
 import { ScrollViewNormal } from '../templates/scrollview-normal';
 
 const options = ScrollView.options;
@@ -87,6 +87,7 @@ ScrollviewDemo.states = states;
 ScrollviewDemo.variants = variants;
 ScrollviewDemo.defaultOptions = defaults;
 ScrollviewDemo.modifiers = modifiers;
+ScrollviewDemo.className = ScrollView.className;
 
 export default ScrollviewDemo;
 

@@ -22,6 +22,8 @@ export type KendoTabStripProps = KendoTabStripOptions & {
     position?: "top" | "bottom" | "left" | "right";
     tabAlignment?: "start" | "center" | "end" | "justify" | "stretched";
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
+    /** @aria Optional id applied to the TabStripItems (ul) element for aria-controls references. */
+    tabStripItemsId?: string;
     scrollable?: boolean;
     scrollButtons?: "around" | "start" | "end" | "hidden";
     scrollingPosition?: "start" | "end" | "both";
@@ -44,6 +46,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
         scrollable,
         children,
         tabStripItems,
+        tabStripItemsId,
         position = defaultOptions.position,
         tabAlignment = defaultOptions.tabAlignment,
         scrollButtons = defaultOptions.scrollButtons,
@@ -124,7 +127,8 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                 }
                 <TabStripItems className={classNames({[`k-tabstrip-items-scroll`]: scrollable && scrollButtons === 'hidden'})}
                 tabAlignment={tabAlignmentMap[tabAlignment]}
-                orientation={orientationMap[position] as 'horizontal' | 'vertical'}>
+                orientation={orientationMap[position] as 'horizontal' | 'vertical'}
+                {...(tabStripItemsId && { id: tabStripItemsId })}>
                     {tabStripItems}
                 </TabStripItems>
                 {scrollable && scrollButtons === 'end' &&
@@ -197,9 +201,9 @@ TabStrip.ariaSpec = {
         { selector: '.k-tabstrip-item', attribute: 'role=tab', usage: 'The tab li element.' },
         { selector: '.k-tabstrip .k-tabstrip-item.k-active', attribute: 'aria-selected=true', usage: 'Announces the selected state of the tab.' },
         { selector: '.k-tabstrip-content', attribute: 'role=tabpanel', usage: 'The content div of the tab.' },
-        { selector: '.k-tabstrip .k-tabstrip-item.k-active[aria-controls]', attribute: 'aria-controls', usage: 'Announces the relation between the panel and active tab. Only present when tab controls a specific panel.' },
+        { selector: '.k-tabstrip .k-tabstrip-item.k-active', attribute: 'aria-controls (when present)', usage: 'Announces the relation between the panel and active tab. Only present when tab controls a specific panel.' },
         { selector: '.k-tabstrip-content', attribute: 'aria-hidden=true (when not active)', usage: 'Only if the component implements a feature to control whether the content should be persisted.' },
-        { selector: '.k-tabstrip-content[aria-labelledby]', attribute: 'aria-labelledby', usage: 'Refers to the tab element that controls the panel. Only present when panel has an associated tab.' },
+        { selector: '.k-tabstrip-content', attribute: 'aria-labelledby (when present)', usage: 'Refers to the tab element that controls the panel. Only present when panel has an associated tab.' },
         { selector: '.k-tabstrip-scrollable .k-button', attribute: 'aria-hidden=true', usage: 'Scroll buttons are hidden from assistive technologies.' },
     ]
 };

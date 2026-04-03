@@ -53,10 +53,10 @@ export const ChatMessageGroup = (
                     [`${CHATMESSAGEGROUP_CLASSNAME}-full-width`]: fullWidth
                 }
             )}>
-            { avatar && !status && <Avatar type="image"><img src={avatar} /></Avatar> }
+            { avatar && !status && <Avatar type="image"><img src={avatar} alt={author || ''} /></Avatar> }
             { status && avatar &&
                 <div className="k-chat-user-status-wrapper">
-                    <Avatar type="image"><img src={avatar} /></Avatar>
+                    <Avatar type="image"><img src={avatar} alt={author || ''} /></Avatar>
                     <div className="k-chat-user-status"></div>
                 </div>
             }

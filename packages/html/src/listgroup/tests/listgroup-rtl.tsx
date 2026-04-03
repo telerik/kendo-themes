@@ -11,7 +11,7 @@ export default () =>(
                 <ul className="k-listgroup">
                     <li className="k-listgroup-item">Item</li>
                     <li className="k-listgroup-item">
-                        <a href="#" className="k-link">Link</a>
+                        <a className="k-link">Link</a>
                     </li>
                     <li className="k-listgroup-item">
                         <span className="k-link">Pseudo link</span>
@@ -22,7 +22,7 @@ export default () =>(
             <section dir="rtl">
                 <ul className="k-listgroup">
                     <li className="k-listgroup-item">
-                        <a href="#" className="k-link">
+                        <a className="k-link">
                             Link
                             <span className="k-select"><Icon icon="chevron-left" /></span>
                         </a>

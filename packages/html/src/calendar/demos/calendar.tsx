@@ -1,4 +1,4 @@
-﻿import { Calendar, KendoCalendarProps } from '../calendar.spec';
+import { Calendar, KendoCalendarProps } from '../calendar.spec';
 import { CalendarNormal } from '../templates/calendar-normal';
 import { CalendarCentury } from '../templates/calendar-century';
 import { CalendarDecade } from '../templates/calendar-decade';
@@ -98,6 +98,7 @@ CalendarDemo.states = states;
 CalendarDemo.variants = variants;
 CalendarDemo.defaultOptions = defaults;
 CalendarDemo.modifiers = modifiers;
+CalendarDemo.className = Calendar.className;
 
 export default CalendarDemo;
 

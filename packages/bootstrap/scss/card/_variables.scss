@@ -27,13 +27,13 @@ $kendo-card-border-radius: k-border-radius(md) !default;
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
 /// The font family of the Card.
 /// @group card
-$kendo-card-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-card-font-family: var(--kendo-font-family) !default;
 /// The font size of the Card.
 /// @group card
-$kendo-card-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-card-font-size: var(--kendo-font-size) !default;
 /// The line height of the Card.
 /// @group card
-$kendo-card-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-card-line-height: var(--kendo-line-height) !default;
 
 /// The spacing between the Cards in the Card deck.
 /// @group card
@@ -118,7 +118,7 @@ $kendo-card-footer-border: $kendo-card-header-border !default;
 $kendo-card-title-margin-bottom: k-spacing(3) !default;
 /// The font size of the Card title.
 /// @group card
-$kendo-card-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-card-title-font-size: var(--kendo-font-size-lg) !default;
 /// The font family of the Card title.
 /// @group card
 $kendo-card-title-font-family: null !default;

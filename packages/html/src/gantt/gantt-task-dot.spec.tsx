@@ -36,7 +36,8 @@ export const GanttTaskDot: KendoComponent<KendoGanttTaskDotProps & React.HTMLAtt
                     [`k-task-start`]: position === "start",
                     [`k-task-end`]: position === "end"
                 }
-            )}>
+            )}
+            aria-hidden="true">
         </div>
     );
 };

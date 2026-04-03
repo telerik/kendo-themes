@@ -151,7 +151,7 @@ export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.
             <div className="k-slider-track-wrap">
                 {
                     showTicks &&
-                        <ul className="k-reset k-slider-items">
+                        <ul className="k-reset k-slider-items" aria-hidden="true">
                             {props.children}
                         </ul>
                 }
@@ -233,6 +233,9 @@ Slider.ariaSpec = {
         { selector: '.k-slider.k-readonly .k-draghandle', attribute: 'aria-readonly=true (when readonly)', usage: 'Rendered only when the Slider is readonly. Readonly sliders remain focusable but their value cannot be changed.' },
         { selector: '.k-slider .k-button', attribute: 'tabindex=-1', usage: 'Excludes the buttons from the natural tab order. Keyboard users use arrow keys on the drag handle.' },
         { selector: '.k-slider .k-button', attribute: 'title', usage: 'Provides a tooltip describing the button action (e.g., "Decrease" or "Increase").' },
+        { selector: '.k-slider .k-slider-items', attribute: 'aria-hidden=true', usage: 'Hides the tick list from assistive technologies. Tick values are redundant with the drag handle value attributes.' },
+        { selector: '.k-slider .k-tick', attribute: 'role=presentation', usage: 'Removes semantic meaning from individual tick elements. Ticks are visual-only markers.' },
+        { selector: '.k-slider .k-tick', attribute: 'title', usage: 'Represents the value associated with the respective tick.' },
     ]
 };
 

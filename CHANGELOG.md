@@ -3,6 +3,113 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [13.1.1](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.2...v13.1.1) (2026-03-23)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [13.1.1-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.1...v13.1.1-dev.2) (2026-03-23)
+
+
+### Bug Fixes
+
+* **grid:** align pinned container with scrollbar area ([8f02379](https://github.com/telerik/kendo-themes/commit/8f0237973bf197e2220901762da38ec0b27df2cf))
+* **input:** nested input should not have box-shadow ([8ad1e40](https://github.com/telerik/kendo-themes/commit/8ad1e40b3b73e3927350c8ccc1ba30d7b660c456))
+
+
+
+
+
+## [13.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.0...v13.1.1-dev.1) (2026-03-23)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+## [13.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.0...v13.1.1-dev.0) (2026-03-20)
+
+
+### Bug Fixes
+
+* **html:** fix demos ([ee7ba53](https://github.com/telerik/kendo-themes/commit/ee7ba53d5e95dc53f9eda78ffe897a203c643e0d))
+* **html:** update grid k-selected and aria-selected combos ([3bcdc96](https://github.com/telerik/kendo-themes/commit/3bcdc96c6679cb9db28c4abd6e92ddd50f9b8051))
+* **segmented-control:** make icon-only component height consistent with text-based component ([9d9ff6e](https://github.com/telerik/kendo-themes/commit/9d9ff6e42e4cb6468ad5d0775d2e3e26bd22b7d6))
+
+
+
+
+
+# [13.1.0](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.4...v13.1.0) (2026-03-17)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [13.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.3...v13.1.0-dev.4) (2026-03-17)
+
+
+### Features
+
+* add variables for vertical popup spacings ([cbfa407](https://github.com/telerik/kendo-themes/commit/cbfa407f5989936e7d3f1b8606b5a8d5080f0be3))
+* **html:** add ARIA specs for dropdowns, panels and lists ([bceaf58](https://github.com/telerik/kendo-themes/commit/bceaf5880c40a3a63f28a3aaa54bd34c8ebec886))
+* **html:** add aria to column and filter menu, column chooser, filter ([f142627](https://github.com/telerik/kendo-themes/commit/f142627eee8301c918983175cd3e6eb38180a680))
+* **html:** add aria to editors, scrollview, specialized buttons and viewers ([25f73ac](https://github.com/telerik/kendo-themes/commit/25f73acdfbecedbdc70a3ad7ef811908023394c1))
+* **html:** add aria to filemanager and chart-wizard ([821b832](https://github.com/telerik/kendo-themes/commit/821b8329ddc73da44ed9884641b607b3992bea63))
+* **html:** add aria to orgchart, pager, taskboard ([e68eaf8](https://github.com/telerik/kendo-themes/commit/e68eaf834bdaf2bdf90558714a21dc1c4cf1d436))
+* **html:** add aria to smartbox, filebox, chat ([a84c411](https://github.com/telerik/kendo-themes/commit/a84c411157755745619f5793d293683e811c9f3b))
+* **html:** add aria to spreadsheet ([13dcf1f](https://github.com/telerik/kendo-themes/commit/13dcf1f8b09da1a71412ddab784024f55e6e3fda))
+* **html:** add gantt aria ([cc12364](https://github.com/telerik/kendo-themes/commit/cc12364dc644e8ddf2d31acb73f4056b98c7dd8f))
+* **html:** add grid aria ([0fc8987](https://github.com/telerik/kendo-themes/commit/0fc89879bc8786fa62a9dba8d12299bc11b47440))
+* **html:** add grid pinned rows and sticky groups templates ([d8d607a](https://github.com/telerik/kendo-themes/commit/d8d607a7427e9eb752db40816802a6cb1561c759))
+* **html:** add property grid aria ([321055c](https://github.com/telerik/kendo-themes/commit/321055cc9994ab9cd8205f2a35c5bf81998a7258))
+* **html:** add scheduler, remove href from anchors ([af662a8](https://github.com/telerik/kendo-themes/commit/af662a8e25777cec7cdeeb09c91a301a27eb2cb2))
+* **html:** add treelist aria and templates ([edf5454](https://github.com/telerik/kendo-themes/commit/edf5454c9fa270c47a23c37b04f25f5ebe892d0c))
+
+
+
+
+
+# [13.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.2...v13.1.0-dev.3) (2026-03-16)
+
+
+### Bug Fixes
+
+* **html:** remove calendar-md class from jquery classic calendar ([98b1a42](https://github.com/telerik/kendo-themes/commit/98b1a426ca10a4dda291d97ec9bd211e2221ff39))
+* **html:** remove obsolete k-widget class from specs ([5a4b807](https://github.com/telerik/kendo-themes/commit/5a4b80794d8cf1dbfa40d758d415cdb444895b13))
+* **list:** incorrect alignment in rtl mode ([d3db5f4](https://github.com/telerik/kendo-themes/commit/d3db5f41523e8dc52950312f81577020c455fc39))
+* remove obsolete k-widget class from styles ([84e46a1](https://github.com/telerik/kendo-themes/commit/84e46a153e896a8551c32000b83d0616f9a16127))
+
+
+
+
+
+# [13.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.1...v13.1.0-dev.2) (2026-03-09)
+
+
+### Bug Fixes
+
+* **grid:** fix virtualization issues with sticky and pinned containers ([465abb3](https://github.com/telerik/kendo-themes/commit/465abb38a064a3478702850a81e481021d23a9ef))
+* remove zwsp unicode usage across themes ([ba8c783](https://github.com/telerik/kendo-themes/commit/ba8c78395c08e026bad13f077304a13eff994fba))
+
+
+
+
+
 # [13.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.0...v13.1.0-dev.1) (2026-03-02)
 
 **Note:** Version bump only for package kendo-themes.repo

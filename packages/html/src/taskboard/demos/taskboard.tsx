@@ -1,4 +1,4 @@
-﻿import { TaskBoard, KendoTaskBoardProps } from '../taskboard.spec';
+import { TaskBoard, KendoTaskBoardProps } from '../taskboard.spec';
 import { TaskBoardCard } from '../taskboard-card';
 import { TaskBoardColumn } from '../taskboard-column';
 import { TaskBoardNormal } from '../templates/taskboard-normal';
@@ -38,7 +38,7 @@ export const TaskboardDemo = (props: KendoTaskBoardProps & { variant?: (typeof v
             <TaskBoardColumn style={{ width: "260px" }}>
                 <TaskBoardCard>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Template Title</a>
+                        <a className="k-card-title k-link">Template Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>
@@ -47,7 +47,7 @@ export const TaskboardDemo = (props: KendoTaskBoardProps & { variant?: (typeof v
                 </TaskBoardCard>
                 <TaskBoardCard>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Template Title</a>
+                        <a className="k-card-title k-link">Template Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>
@@ -58,7 +58,7 @@ export const TaskboardDemo = (props: KendoTaskBoardProps & { variant?: (typeof v
             <TaskBoardColumn style={{ width: "260px" }}>
                 <TaskBoardCard>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Template Title</a>
+                        <a className="k-card-title k-link">Template Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>
@@ -67,7 +67,7 @@ export const TaskboardDemo = (props: KendoTaskBoardProps & { variant?: (typeof v
                 </TaskBoardCard>
                 <TaskBoardCard>
                     <CardHeader className="k-hbox" details>
-                        <a className="k-card-title k-link" href="#">Template Title</a>
+                        <a className="k-card-title k-link">Template Title</a>
                         <span className="k-spacer"></span>
                     </CardHeader>
                     <CardBody>
@@ -85,6 +85,7 @@ TaskboardDemo.states = states;
 TaskboardDemo.variants = variants;
 TaskboardDemo.defaultOptions = defaults;
 TaskboardDemo.modifiers = modifiers;
+TaskboardDemo.className = TaskBoard.className;
 
 export default TaskboardDemo;
 

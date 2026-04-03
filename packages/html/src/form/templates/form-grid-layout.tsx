@@ -15,7 +15,7 @@ export const FormGridLayout = (props: any) => {
                         <FormField label="Label" editor={<Textbox />} />
                     </Fieldset>
                     <Fieldset legend="Form Legend" layout="grid" cols={2} gutters={{cols: "16px", rows: "12px"}} colSpan={2}>
-                        <FormField label="Label" colSpan={2} editor={<DropdownList />} />
+                        <FormField label="Label" colSpan={2} editor={<DropdownList aria-label="Label" />} />
                     </Fieldset>
                 </>
             }

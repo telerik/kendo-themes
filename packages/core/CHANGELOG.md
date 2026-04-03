@@ -3,6 +3,98 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+## [13.1.1](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.2...v13.1.1) (2026-03-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+## [13.1.1-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.1...v13.1.1-dev.2) (2026-03-23)
+
+
+### Bug Fixes
+
+* **grid:** align pinned container with scrollbar area ([8f02379](https://github.com/telerik/kendo-themes/commit/8f0237973bf197e2220901762da38ec0b27df2cf))
+* **input:** nested input should not have box-shadow ([8ad1e40](https://github.com/telerik/kendo-themes/commit/8ad1e40b3b73e3927350c8ccc1ba30d7b660c456))
+
+
+
+
+
+## [13.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.1-dev.0...v13.1.1-dev.1) (2026-03-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+## [13.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.0...v13.1.1-dev.0) (2026-03-20)
+
+
+### Bug Fixes
+
+* **segmented-control:** make icon-only component height consistent with text-based component ([9d9ff6e](https://github.com/telerik/kendo-themes/commit/9d9ff6e42e4cb6468ad5d0775d2e3e26bd22b7d6))
+
+
+
+
+
+# [13.1.0](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.4...v13.1.0) (2026-03-17)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
+# [13.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.3...v13.1.0-dev.4) (2026-03-17)
+
+
+### Features
+
+* add variables for vertical popup spacings ([cbfa407](https://github.com/telerik/kendo-themes/commit/cbfa407f5989936e7d3f1b8606b5a8d5080f0be3))
+* **html:** add gantt aria ([cc12364](https://github.com/telerik/kendo-themes/commit/cc12364dc644e8ddf2d31acb73f4056b98c7dd8f))
+* **html:** add grid pinned rows and sticky groups templates ([d8d607a](https://github.com/telerik/kendo-themes/commit/d8d607a7427e9eb752db40816802a6cb1561c759))
+
+
+
+
+
+# [13.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.2...v13.1.0-dev.3) (2026-03-16)
+
+
+### Bug Fixes
+
+* **list:** incorrect alignment in rtl mode ([d3db5f4](https://github.com/telerik/kendo-themes/commit/d3db5f41523e8dc52950312f81577020c455fc39))
+* remove obsolete k-widget class from styles ([84e46a1](https://github.com/telerik/kendo-themes/commit/84e46a153e896a8551c32000b83d0616f9a16127))
+
+
+
+
+
+# [13.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.1...v13.1.0-dev.2) (2026-03-09)
+
+
+### Bug Fixes
+
+* **grid:** fix virtualization issues with sticky and pinned containers ([465abb3](https://github.com/telerik/kendo-themes/commit/465abb38a064a3478702850a81e481021d23a9ef))
+* remove zwsp unicode usage across themes ([ba8c783](https://github.com/telerik/kendo-themes/commit/ba8c78395c08e026bad13f077304a13eff994fba))
+
+
+
+
+
 # [13.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.1.0-dev.0...v13.1.0-dev.1) (2026-03-02)
 
 **Note:** Version bump only for package @progress/kendo-theme-core

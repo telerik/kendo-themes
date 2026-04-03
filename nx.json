@@ -32,14 +32,21 @@
       ]
     },
     "docs": {
-      "cache": true
+      "cache": true,
+      "dependsOn": [
+        "^docs"
+      ]
     },
     "docs:check": {
       "cache": false,
+      "dependsOn": [
+        "^docs"
+      ],
       "executor": "nx:run-script",
       "options": {
         "script": "docs:check"
       }
     }
-  }
+  },
+  "analytics": false
 }

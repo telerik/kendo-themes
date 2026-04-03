@@ -1,4 +1,4 @@
-﻿import { Filter, KendoFilterProps } from '../filter.spec';
+import { Filter, KendoFilterProps } from '../filter.spec';
 import { FilterNormal } from '../templates/filter-normal';
 import { FilterToolbar } from '../filter-toolbar';
 import { FilterLines } from '../filter-lines';
@@ -134,6 +134,7 @@ FilterDemo.states = states;
 FilterDemo.variants = variants;
 FilterDemo.defaultOptions = defaults;
 FilterDemo.modifiers = modifiers;
+FilterDemo.className = Filter.className;
 
 export default FilterDemo;
 

@@ -147,7 +147,7 @@ $kendo-table-selected-border: null !default;
 $kendo-table-highlighted-bg: color-mix(in srgb, k-color(warning) 20%, transparent) !default;
 /// The font weight of highlighted rows in table.
 /// @group table
-$kendo-table-highlighted-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+$kendo-table-highlighted-font-weight: var(--kendo-font-weight-semibold) !default;
 
 /// Background color of selected highlighted rows in table.
 /// @group table

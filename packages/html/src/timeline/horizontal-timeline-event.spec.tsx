@@ -15,6 +15,10 @@ export type KendoHorizontalTimelineEventProps = {
     content?: string | React.JSX.Element;
     title?: string;
     subtitle?: string;
+    /** @aria aria-label for the tabpanel */
+    ariaLabel?: string;
+    /** @aria tabIndex for active tabpanel */
+    panelTabIndex?: number;
 };
 
 const defaultOptions = {
@@ -31,6 +35,8 @@ export const HorizontalTimelineEvent: KendoComponent<KendoHorizontalTimelineEven
         content = defaultOptions.content,
         title = defaultOptions.title,
         subtitle = defaultOptions.subtitle,
+        ariaLabel,
+        panelTabIndex,
         ...other
     } = props;
 
@@ -42,7 +48,13 @@ export const HorizontalTimelineEvent: KendoComponent<KendoHorizontalTimelineEven
                 TIMELINEHORIZONTALEVENT_CLASSNAME
             )}>
             {content && <div className={classNames('k-timeline-card')}>
-                <TimelineCard orientation="vertical" callout="top">
+                <TimelineCard
+                    orientation="vertical"
+                    callout="top"
+                    ariaRole="tabpanel"
+                    ariaLabel={ariaLabel}
+                    cardTabIndex={panelTabIndex}
+                >
                     <div className="k-card-inner">
                         <CardHeader>
                             <TimelineCardTitle>{title}</TimelineCardTitle>

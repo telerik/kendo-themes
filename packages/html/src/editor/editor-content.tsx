@@ -8,12 +8,21 @@ const states = [
 
 export type KendoEditorContentState = { [K in (typeof states)[number]]?: boolean };
 
+export type KendoEditorContentProps = {
+    /** @aria aria-readonly=true when the editor is readonly */
+    readonly?: boolean;
+    'aria-label'?: string;
+};
+
 export const EditorContent = (
-    props: KendoEditorContentState &
+    props: KendoEditorContentProps &
+        KendoEditorContentState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
         focus,
+        readonly,
+        'aria-label': ariaLabel,
         ...other
     } = props;
 
@@ -26,7 +35,13 @@ export const EditorContent = (
                 stateClassNames(EDITORCONTENT_CLASSNAME, {
                     focus,
                 }),
-            )}>
+            )}
+            contentEditable={readonly ? 'false' : 'true'}
+            suppressContentEditableWarning
+            role="textbox"
+            aria-label={ariaLabel || 'Editor content'}
+            aria-readonly={readonly ? 'true' : undefined}
+        >
             {props.children}
         </div>
     );

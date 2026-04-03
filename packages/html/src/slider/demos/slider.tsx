@@ -1,4 +1,4 @@
-﻿import { Slider, KendoSliderProps } from '../slider.spec';
+import { Slider, KendoSliderProps } from '../slider.spec';
 import { SliderTick } from '../slider-tick';
 import { SliderNormal } from '../templates/slider-normal';
 import { SliderVertical } from '../templates/slider-vertical';
@@ -97,6 +97,7 @@ SliderDemo.states = states;
 SliderDemo.variants = variants;
 SliderDemo.defaultOptions = defaults;
 SliderDemo.modifiers = modifiers;
+SliderDemo.className = Slider.className;
 
 export default SliderDemo;
 

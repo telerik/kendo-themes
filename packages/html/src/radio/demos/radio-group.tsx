@@ -1,5 +1,6 @@
-﻿import { RadioGroup, KendoRadioGroupProps } from '../radio-group.spec';
+import { RadioGroup, KendoRadioGroupProps } from '../radio-group.spec';
 import { RadioItem } from '../radio-item.spec';
+import { nextId } from '../../misc';
 import { RadioButtonWithLabelAfter } from '../templates/radio-with-label-after';
 
 const options = RadioGroup.options;
@@ -29,13 +30,13 @@ export const RadioGroupDemo = (props: KendoRadioGroupProps & { variant?: (typeof
             return (
                 <RadioGroup layout="horizontal" {...other}>
                     <RadioItem>
-                        <RadioButtonWithLabelAfter id="first" name="value" defaultChecked={true}>Label</RadioButtonWithLabelAfter>
+                        <RadioButtonWithLabelAfter id={nextId('rb')} name="value" defaultChecked={true}>Label</RadioButtonWithLabelAfter>
                     </RadioItem>
                     <RadioItem>
-                        <RadioButtonWithLabelAfter id="second" name="value">Label</RadioButtonWithLabelAfter>
+                        <RadioButtonWithLabelAfter id={nextId('rb')} name="value">Label</RadioButtonWithLabelAfter>
                     </RadioItem>
                     <RadioItem>
-                        <RadioButtonWithLabelAfter id="third" name="value">Label</RadioButtonWithLabelAfter>
+                        <RadioButtonWithLabelAfter id={nextId('rb')} name="value">Label</RadioButtonWithLabelAfter>
                     </RadioItem>
                 </RadioGroup>
             );
@@ -44,13 +45,13 @@ export const RadioGroupDemo = (props: KendoRadioGroupProps & { variant?: (typeof
             return (
                 <RadioGroup {...other}>
                     <RadioItem>
-                        <RadioButtonWithLabelAfter id="first" name="value" defaultChecked={true}>Label</RadioButtonWithLabelAfter>
+                        <RadioButtonWithLabelAfter id={nextId('rb')} name="value" defaultChecked={true}>Label</RadioButtonWithLabelAfter>
                     </RadioItem>
                     <RadioItem>
-                        <RadioButtonWithLabelAfter id="second" name="value">Label</RadioButtonWithLabelAfter>
+                        <RadioButtonWithLabelAfter id={nextId('rb')} name="value">Label</RadioButtonWithLabelAfter>
                     </RadioItem>
                     <RadioItem>
-                        <RadioButtonWithLabelAfter id="third" name="value">Label</RadioButtonWithLabelAfter>
+                        <RadioButtonWithLabelAfter id={nextId('rb')} name="value">Label</RadioButtonWithLabelAfter>
                     </RadioItem>
                 </RadioGroup>
             );
@@ -63,6 +64,7 @@ RadioGroupDemo.states = states;
 RadioGroupDemo.variants = variants;
 RadioGroupDemo.defaultOptions = defaults;
 RadioGroupDemo.modifiers = modifiers;
+RadioGroupDemo.className = RadioGroup.className;
 
 export default RadioGroupDemo;
 

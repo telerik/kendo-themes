@@ -28,10 +28,20 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-spacing-base</td>
+    <td>Number</td>
+    <td><code>0.25rem</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base spacing step used to generate the Spacing map.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-spacing</td>
     <td>Map</td>
     <td><code>$default-spacing</code></td>
-    <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
+    <td><ul><li>0: 0px</li><li>1: calc(1 * var(--kendo-spacing-base))</li><li>2: calc(2 * var(--kendo-spacing-base))</li><li>3: calc(3 * var(--kendo-spacing-base))</li><li>4: calc(4 * var(--kendo-spacing-base))</li><li>5: calc(5 * var(--kendo-spacing-base))</li><li>6: calc(6 * var(--kendo-spacing-base))</li><li>7: calc(7 * var(--kendo-spacing-base))</li><li>8: calc(8 * var(--kendo-spacing-base))</li><li>9: calc(9 * var(--kendo-spacing-base))</li><li>10: calc(10 * var(--kendo-spacing-base))</li><li>11: calc(11 * var(--kendo-spacing-base))</li><li>12: calc(12 * var(--kendo-spacing-base))</li><li>13: calc(13 * var(--kendo-spacing-base))</li><li>14: calc(14 * var(--kendo-spacing-base))</li><li>15: calc(15 * var(--kendo-spacing-base))</li><li>16: calc(16 * var(--kendo-spacing-base))</li><li>17: calc(17 * var(--kendo-spacing-base))</li><li>18: calc(18 * var(--kendo-spacing-base))</li><li>19: calc(19 * var(--kendo-spacing-base))</li><li>20: calc(20 * var(--kendo-spacing-base))</li><li>21: calc(21 * var(--kendo-spacing-base))</li><li>22: calc(22 * var(--kendo-spacing-base))</li><li>23: calc(23 * var(--kendo-spacing-base))</li><li>24: calc(24 * var(--kendo-spacing-base))</li><li>1px: 1px</li><li>0.5: calc(0.5 * var(--kendo-spacing-base))</li><li>1.5: calc(1.5 * var(--kendo-spacing-base))</li><li>2.5: calc(2.5 * var(--kendo-spacing-base))</li><li>3.5: calc(3.5 * var(--kendo-spacing-base))</li><li>4.5: calc(4.5 * var(--kendo-spacing-base))</li><li>5.5: calc(5.5 * var(--kendo-spacing-base))</li><li>6.5: calc(6.5 * var(--kendo-spacing-base))</li><li>7.5: calc(7.5 * var(--kendo-spacing-base))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Spacing map.</div></div>

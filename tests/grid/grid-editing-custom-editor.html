@@ -12,7 +12,7 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
         <div class="k-grid-no-scrollbar k-grid">
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid" id="k-grid-1">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">
@@ -77,7 +77,7 @@
                                         <td class="k-table-td">LTR</td>
                                         <td class="k-table-td">
                                             <span class="k-autocomplete k-input">
-                                                <input class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" type="text" value="">
+                                                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" type="text" value="">
                                             </span>
                                         </td>
                                         <td class="k-table-td">
@@ -93,9 +93,9 @@
                                             </span>
                                         </td>
                                         <td class="k-table-td">
-                                            <span class="k-dropdownlist k-picker">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
                                                 <span class="k-input-inner">DropdownList...</span>
-                                                <button class="k-input-button k-button k-icon-button" aria-label="DropdownList...">
+                                                <button class="k-input-button k-button k-icon-button" aria-label="DropdownList..." tabindex="-1">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 352 128 160h256z"></path>
@@ -108,7 +108,7 @@
                                             <span class="k-multiselect k-input">
                                                 <div class="k-input-values">
                                                     <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                                                    <input class="k-input-inner" placeholder="Multiselect..." autocomplete="off" type="text" value="">
+                                                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" class="k-input-inner" placeholder="Multiselect..." autocomplete="off" type="text" value="">
                                                 </div>
                                             </span>
                                         </td>
@@ -117,7 +117,7 @@
                                         <td class="k-table-td">RTL</td>
                                         <td class="k-table-td">
                                             <span class="k-rtl k-autocomplete k-input">
-                                                <input class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" type="text" value="">
+                                                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" type="text" value="">
                                             </span>
                                         </td>
                                         <td class="k-table-td">
@@ -133,9 +133,9 @@
                                             </span>
                                         </td>
                                         <td class="k-table-td">
-                                            <span class="k-rtl k-dropdownlist k-picker">
+                                            <span class="k-rtl k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
                                                 <span class="k-input-inner">DropdownList...</span>
-                                                <button class="k-input-button k-button k-icon-button" aria-label="DropdownList...">
+                                                <button class="k-input-button k-button k-icon-button" aria-label="DropdownList..." tabindex="-1">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 352 128 160h256z"></path>
@@ -148,7 +148,7 @@
                                             <span class="k-rtl k-multiselect k-input">
                                                 <div class="k-input-values">
                                                     <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                                                    <input class="k-input-inner" placeholder="Multiselect..." autocomplete="off" type="text" value="">
+                                                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list" class="k-input-inner" placeholder="Multiselect..." autocomplete="off" type="text" value="">
                                                 </div>
                                             </span>
                                         </td>
@@ -161,7 +161,7 @@
             </div>
         </div>
         <div class="k-grid-no-scrollbar k-grid">
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid" id="k-grid-2">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">
@@ -318,7 +318,7 @@
             </div>
         </div>
         <div class="k-grid-no-scrollbar k-grid">
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" role="grid" id="k-grid-3">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table">

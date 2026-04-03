@@ -76,7 +76,7 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
                     {actions && <>
                         <div className="k-window-titlebar-actions k-dialog-titlebar-actions">
                             {actions.map(actionName =>
-                                <Button key={actionName} icon={actionName} fillMode="flat" className="k-window-titlebar-action k-dialog-titlebar-action" aria-label={actionName}></Button>
+                                <Button key={actionName} icon={actionName} fillMode="flat" size="xsmall" className="k-window-titlebar-action k-dialog-titlebar-action" aria-label={actionName}></Button>
                             )}
                         </div>
                     </>}

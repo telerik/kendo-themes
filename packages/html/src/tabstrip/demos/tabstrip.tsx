@@ -1,4 +1,4 @@
-﻿import { TabStrip, KendoTabStripProps } from '../tabstrip.spec';
+import { TabStrip, KendoTabStripProps } from '../tabstrip.spec';
 import { TabStripNormal } from '../templates/tabstrip-normal';
 import { TabStripLeft } from '../templates/tabstrip-left';
 import { TabStripRight } from '../templates/tabstrip-right';
@@ -70,6 +70,7 @@ TabstripDemo.states = states;
 TabstripDemo.variants = variants;
 TabstripDemo.defaultOptions = defaults;
 TabstripDemo.modifiers = modifiers;
+TabstripDemo.className = TabStrip.className;
 
 export default TabstripDemo;
 

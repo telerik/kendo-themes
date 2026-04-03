@@ -110,13 +110,13 @@
         }
 
         .k-alert-error {
-            font-size: var( --kendo-font-size-sm, inherit );
+            font-size: var(--kendo-font-size-sm);
             margin-block-start: $kendo-form-alert-error-margin;
         }
 
         .k-field-info {
             display: inline-block;
-            font-size: var( --kendo-font-size-xs, inherit );
+            font-size: var(--kendo-font-size-xs);
             line-height: 1;
             margin-block: 0;
             margin-inline: $kendo-form-field-info-margin;
@@ -247,7 +247,7 @@
         }
 
         legend {
-            font-size: var( --kendo-font-size-sm, inherit );
+            font-size: var(--kendo-font-size-sm);
             text-align: start;
             font-weight: 600;
             line-height: 1;
@@ -263,10 +263,10 @@
             text-align: start;
             margin-block-end: $kendo-fieldset-legend-margin;
 
-            > span:not(.k-widget) {
+            > span {
                 width: $kendo-inline-form-element-width;
                 text-align: end;
-                line-height: var( --kendo-line-height, normal );
+                line-height: var(--kendo-line-height);
                 padding-block: $kendo-inline-form-field-padding-y;
                 padding-inline: $kendo-inline-form-field-padding-x;
                 align-self: center;
@@ -281,13 +281,13 @@
             }
 
             .k-alert-error {
-                font-size: var( --kendo-font-size-sm, inherit );
+                font-size: var(--kendo-font-size-sm);
                 margin-block-start: $kendo-form-alert-error-margin;
             }
 
             .k-field-info {
                 display: block;
-                font-size: var( --kendo-font-size-xs, inherit );
+                font-size: var(--kendo-font-size-xs);
                 line-height: 1;
                 margin: 0;
             }
@@ -343,11 +343,6 @@
 
     .k-edit-field {
 
-        > .k-widget {
-            width: 100%;
-            box-sizing: border-box;
-        }
-
         input[type="radio"]:not(.k-radio),
         input[type="checkbox"]:not(.k-checkbox) {
             margin-inline-end: .4ex;
@@ -360,10 +355,6 @@
 
         > .k-reset > li + li {
             margin-block-start: k-spacing(2);
-        }
-
-        .k-reset .k-widget {
-            margin: 0 .4ex 0 1ex;
         }
     }
 

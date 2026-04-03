@@ -1,4 +1,4 @@
-﻿import { NumericTextbox, KendoNumericTextboxProps } from '../numerictextbox.spec';
+import { NumericTextbox, KendoNumericTextboxProps } from '../numerictextbox.spec';
 import { NumericTextboxNormal } from '../templates/numerictextbox-normal';
 import { DropdownList } from '../../dropdownlist';
 import { InputSuffixText } from '../../input';
@@ -65,6 +65,7 @@ NumerictextboxDemo.states = states;
 NumerictextboxDemo.variants = variants;
 NumerictextboxDemo.defaultOptions = defaults;
 NumerictextboxDemo.modifiers = modifiers;
+NumerictextboxDemo.className = NumericTextbox.className;
 
 export default NumerictextboxDemo;
 

@@ -1,4 +1,5 @@
-import { Navigator, ZoomControl } from '.';
+import { Navigator } from './navigator';
+import { ZoomControl } from './zoom-control';
 import { Icon } from '../icon';
 import { classNames } from '../misc';
 

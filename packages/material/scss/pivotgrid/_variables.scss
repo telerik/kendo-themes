@@ -20,13 +20,13 @@ $kendo-pivotgrid-padding-x: null !default;
 $kendo-pivotgrid-padding-y: null !default;
 /// The font family of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-pivotgrid-font-family: var(--kendo-font-family) !default;
 /// The font size of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-pivotgrid-font-size: var(--kendo-font-size) !default;
 /// The line height of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-pivotgrid-line-height: var(--kendo-line-height) !default;
 /// The border width of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-border-width: 1px !default;

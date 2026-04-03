@@ -1,4 +1,4 @@
-﻿import { PropertyGrid } from '../propertygrid.spec';
+import { PropertyGrid } from '../propertygrid.spec';
 import { PropertyGridNormal } from '../templates/propertygrid-normal';
 import { KendoGridProps } from '../../grid';
 import { Button } from '../../button';
@@ -56,6 +56,7 @@ PropertygridDemo.states = states;
 PropertygridDemo.variants = variants;
 PropertygridDemo.defaultOptions = defaults;
 PropertygridDemo.modifiers = modifiers;
+PropertygridDemo.className = PropertyGrid.className;
 
 export default PropertygridDemo;
 

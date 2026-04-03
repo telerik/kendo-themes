@@ -30,7 +30,7 @@ export const ChatBubble = (
             )}
         >
             {typing ?
-                <div className="k-typing-indicator">
+                <div className="k-typing-indicator" tabIndex={-1}>
                     <span></span><span></span><span></span>
                 </div>
                 : content

@@ -8,11 +8,11 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
-            <div className="k-pane-wrapper k-widget">
+            <div className="k-pane-wrapper">
                 <div className="k-pane">
-                    <div className="k-view k-widget">
+                    <div className="k-view">
                         <div className="k-stretched-view k-content">
-                            <div id="scheduler" className="k-widget k-scheduler k-scheduler-mobile">
+                            <div id="scheduler" className="k-scheduler k-scheduler-mobile">
                                 <Toolbar className="k-scheduler-toolbar">
                                     <ButtonGroup className="k-scheduler-tools">
                                         <Button className="k-pdf k-group-start" icon="file-pdf"></Button>

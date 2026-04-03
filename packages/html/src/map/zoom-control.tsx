@@ -26,8 +26,8 @@ export const ZoomControl = (
                 ZOOMCONTROL_CLASSNAME
             )}
         >
-            <Button icon="plus" className="k-zoom-in"></Button>
-            <Button icon="minus" className="k-zoom-out"></Button>
+            <Button icon="plus" className="k-zoom-in" aria-label="Zoom in"></Button>
+            <Button icon="minus" className="k-zoom-out" aria-label="Zoom out"></Button>
         </ButtonGroup>
     );
 };

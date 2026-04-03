@@ -24,8 +24,8 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-4">
         <section class="k-rtl">
-            <ul class="k-panelbar">
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+            <ul class="k-panelbar" role="tree">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -39,8 +39,9 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                     <span class="k-link k-hover">
                         <span class="k-panelbar-item-icon k-image"></span>
                         <span class="k-panelbar-item-text">Root hover</span>
@@ -50,8 +51,9 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                     <span class="k-link k-focus">
                         <span class="k-panelbar-item-icon k-sprite"></span>
                         <span class="k-panelbar-item-text">Root focus</span>
@@ -61,8 +63,9 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                     <span class="k-link k-hover k-focus">
                         <span class="k-panelbar-item-icon k-sprite"></span>
                         <span class="k-panelbar-item-text">Root hover&amp;focus</span>
@@ -72,8 +75,9 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false" aria-disabled="true">
                     <span class="k-link k-disabled">
                         <span class="k-panelbar-item-text">Root disabled</span>
                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -82,8 +86,9 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                     <span class="k-link k-selected">
                         <span class="k-panelbar-item-text">Root selected</span>
                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -92,8 +97,9 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                     <span class="k-link k-hover k-selected">
                         <span class="k-panelbar-item-text">Root selected hover</span>
                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -102,8 +108,9 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                     <span class="k-link k-focus k-selected">
                         <span class="k-panelbar-item-text">Root selected focus</span>
                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -112,8 +119,9 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                     <span class="k-link k-hover k-focus k-selected">
                         <span class="k-panelbar-item-text">Root selected hover&amp;focus</span>
                         <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -122,17 +130,18 @@
                             </svg>
                         </span>
                     </span>
+                    <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                 </li>
             </ul>
         </section>
         <section class="k-rtl">
-            <ul class="k-panelbar">
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+            <ul class="k-panelbar" role="tree">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">First</span>
                     </span>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0 k-expanded">
+                <li class="k-panelbar-item k-panelbar-header k-level-0 k-expanded" role="treeitem" aria-expanded="true" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">Middle expanded</span>
                         <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
@@ -141,8 +150,8 @@
                             </svg>
                         </span>
                     </span>
-                    <ul class="k-panelbar-group">
-                        <li class="k-panelbar-item k-level-1">
+                    <ul class="k-panelbar-group" role="group">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link">
                                 <span class="k-panelbar-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -152,42 +161,42 @@
                                 <span class="k-panelbar-item-text">Child</span>
                             </span>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link k-hover">
                                 <span class="k-panelbar-item-text">Child hover</span>
                             </span>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link k-focus">
                                 <span class="k-panelbar-item-text">Child focus</span>
                             </span>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link k-hover k-focus">
                                 <span class="k-panelbar-item-text">Child focus&amp;hover</span>
                             </span>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link k-selected">
                                 <span class="k-panelbar-item-text">Child selected</span>
                             </span>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link k-hover k-selected">
                                 <span class="k-panelbar-item-text">Child selected hover</span>
                             </span>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link k-focus k-selected">
                                 <span class="k-panelbar-item-text">Child selected focus</span>
                             </span>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link k-hover k-focus k-selected">
                                 <span class="k-panelbar-item-text">Child selected focus&amp;hover</span>
                             </span>
                         </li>
-                        <li class="k-panelbar-item k-level-1 k-expanded">
+                        <li class="k-panelbar-item k-level-1 k-expanded" role="treeitem" aria-expanded="true" aria-selected="false">
                             <span class="k-link">
                                 <span class="k-panelbar-item-text">Child expanded</span>
                                 <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
@@ -196,25 +205,25 @@
                                     </svg>
                                 </span>
                             </span>
-                            <ul class="k-panelbar-group">
-                                <li class="k-panelbar-item k-level-2">
+                            <ul class="k-panelbar-group" role="group">
+                                <li class="k-panelbar-item k-level-2" role="treeitem" aria-selected="false">
                                     <span class="k-link">
                                         <span class="k-panelbar-item-text">Child</span>
                                     </span>
                                 </li>
-                                <li class="k-panelbar-item k-level-2">
+                                <li class="k-panelbar-item k-level-2" role="treeitem" aria-selected="false">
                                     <span class="k-link">
                                         <span class="k-panelbar-item-text">Child</span>
                                     </span>
                                 </li>
-                                <li class="k-panelbar-item k-level-2">
+                                <li class="k-panelbar-item k-level-2" role="treeitem" aria-selected="false">
                                     <span class="k-link">
                                         <span class="k-panelbar-item-text">Child</span>
                                     </span>
                                 </li>
                             </ul>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-expanded="false" aria-selected="false" aria-disabled="true">
                             <span class="k-link k-disabled">
                                 <span class="k-panelbar-item-text">Child disabled</span>
                                 <span class="k-panelbar-toggle k-panelbar-expand k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
@@ -223,15 +232,16 @@
                                     </svg>
                                 </span>
                             </span>
+                            <div aria-hidden="true" class="k-panelbar-content" style="display: none;">content</div>
                         </li>
-                        <li class="k-panelbar-item k-level-1">
+                        <li class="k-panelbar-item k-level-1" role="treeitem" aria-selected="false">
                             <span class="k-link">
                                 <span class="k-panelbar-item-text">Child last</span>
                             </span>
                         </li>
                     </ul>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">Last</span>
                     </span>
@@ -239,8 +249,8 @@
             </ul>
         </section>
         <section class="k-rtl">
-            <ul class="k-panelbar">
-                <li class="k-panelbar-item k-panelbar-header k-level-0 k-expanded">
+            <ul class="k-panelbar" role="tree">
+                <li class="k-panelbar-item k-panelbar-header k-level-0 k-expanded" role="treeitem" aria-expanded="true" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">First expanded</span>
                         <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
@@ -254,12 +264,12 @@
                         <p>Multi line paragraph in template. Some more content to break onto multiple lines</p>
                     </div>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">Middle</span>
                     </span>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">Last</span>
                     </span>
@@ -267,18 +277,18 @@
             </ul>
         </section>
         <section class="k-rtl">
-            <ul class="k-panelbar">
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+            <ul class="k-panelbar" role="tree">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">First</span>
                     </span>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0">
+                <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">Middle</span>
                     </span>
                 </li>
-                <li class="k-panelbar-item k-panelbar-header k-level-0 k-expanded">
+                <li class="k-panelbar-item k-panelbar-header k-level-0 k-expanded" role="treeitem" aria-expanded="true" aria-selected="false">
                     <span class="k-link">
                         <span class="k-panelbar-item-text">Last expanded</span>
                         <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">

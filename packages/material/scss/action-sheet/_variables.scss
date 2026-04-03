@@ -31,13 +31,13 @@ $kendo-actionsheet-border-radius: 0px !default;
 
 /// The font size of the ActionSheet.
 /// @group action-sheet
-$kendo-actionsheet-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-actionsheet-font-size: var(--kendo-font-size) !default;
 /// The font family of the ActionSheet.
 /// @group action-sheet
-$kendo-actionsheet-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-actionsheet-font-family: var(--kendo-font-family) !default;
 /// The line height of the ActionSheet.
 /// @group action-sheet
-$kendo-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
+$kendo-actionsheet-line-height: var(--kendo-line-height) !default;
 
 /// The background color of the ActionSheet.
 /// @group action-sheet
@@ -65,13 +65,13 @@ $kendo-actionsheet-titlebar-padding-y: k-spacing(2) !default;
 $kendo-actionsheet-titlebar-border-width: 1px !default;
 /// The font size of the ActionSheet titlebar.
 /// @group action-sheet
-$kendo-actionsheet-titlebar-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-actionsheet-titlebar-font-size: var(--kendo-font-size) !default;
 /// The font family of the ActionSheet titlebar.
 /// @group action-sheet
-$kendo-actionsheet-titlebar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-actionsheet-titlebar-font-family: var(--kendo-font-family) !default;
 /// The line height of the ActionSheet titlebar.
 /// @group action-sheet
-$kendo-actionsheet-titlebar-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-actionsheet-titlebar-line-height: var(--kendo-line-height) !default;
 /// The gap of the ActionSheet titlebar.
 /// @group action-sheet
 $kendo-actionsheet-titlebar-gap: k-spacing(4) !default;
@@ -94,10 +94,10 @@ $kendo-actionsheet-titlebar-shadow: null !default;
 
 /// The font size of the ActionSheet subtitle.
 /// @group action-sheet
-$kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-actionsheet-subtitle-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the ActionSheet subtitle.
 /// @group action-sheet
-$kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-actionsheet-subtitle-line-height: var(--kendo-line-height-sm) !default;
 /// The text color of the ActionSheet subtitle.
 /// @group action-sheet
 $kendo-actionsheet-subtitle-text: k-color(subtle) !default;
@@ -148,10 +148,10 @@ $kendo-actionsheet-item-title-text-transform: null !default;
 
 /// The font size of the ActionSheet item description.
 /// @group action-sheet
-$kendo-actionsheet-item-description-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-actionsheet-item-description-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the ActionSheet item description.
 /// @group action-sheet
-$kendo-actionsheet-item-description-line-height: var( --kendo-line-height-sm, inherit ) !default;
+$kendo-actionsheet-item-description-line-height: var(--kendo-line-height-sm) !default;
 /// The text color of the ActionSheet item description.
 /// @group action-sheet
 $kendo-actionsheet-item-description-text: k-color(subtle) !default;
@@ -208,10 +208,10 @@ $kendo-actionsheet-item-disabled-shadow: null !default;
 // Adaptive Actionsheet
 /// The font size of the adaptive ActionSheet.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-adaptive-actionsheet-font-size: var(--kendo-font-size-lg) !default;
 /// The line height of the adaptive ActionSheet.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-adaptive-actionsheet-line-height: var(--kendo-line-height-lg) !default;
 /// The vertical padding of the adaptive ActionSheet titlebar.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-titlebar-padding-y: k-spacing(3) !default;

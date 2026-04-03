@@ -9,27 +9,22 @@ export type GridStickyContainerProps = React.HTMLAttributes<HTMLDivElement> & {
     position?: 'top' | 'bottom';
 };
 
-const defaultProps = {
-    position: 'top'
-};
-
 export const GridStickyContainer: KendoComponent<GridStickyContainerProps> = (
     props: GridStickyContainerProps
 ) => {
     const {
-        position = defaultProps.position,
-        ...others
+        position,
+        ...other
     } = props;
 
     return (
         <div
-            {...others}
+            {...other}
             className={classNames(
                 props.className,
                 GRID_STICKY_CONTAINER_CLASSNAME,
                 {
-                    'k-grid-sticky-top-container': position === 'top',
-                    'k-grid-sticky-bottom-container': position === 'bottom',
+                    'k-pos-bottom': position === 'bottom',
                 }
             )}
         >
@@ -39,6 +34,5 @@ export const GridStickyContainer: KendoComponent<GridStickyContainerProps> = (
 };
 
 GridStickyContainer.className = GRID_STICKY_CONTAINER_CLASSNAME;
-GridStickyContainer.defaultProps = defaultProps;
 GridStickyContainer.moduleName = GRID_MODULE_NAME;
 GridStickyContainer.folderName = GRID_FOLDER_NAME;

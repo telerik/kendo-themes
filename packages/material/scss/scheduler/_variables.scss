@@ -12,13 +12,13 @@
 $kendo-scheduler-border-width: 1px !default;
 /// The font family of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-scheduler-font-family: var(--kendo-font-family) !default;
 /// The font size of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-scheduler-font-size: var(--kendo-font-size) !default;
 /// The line height of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-scheduler-line-height: var(--kendo-line-height) !default;
 
 /// The background color of the Scheduler.
 /// @group scheduler
@@ -64,7 +64,7 @@ $kendo-scheduler-event-min-height: 25px !default;
 $kendo-scheduler-event-border-radius: k-border-radius(md) !default;
 /// The line height of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-line-height: calc( $kendo-scheduler-event-min-height - k-spacing(1) )!default;
+$kendo-scheduler-event-line-height: calc( $kendo-scheduler-event-min-height - k-spacing(1) ) !default;
 
 /// The background color of the Scheduler event.
 /// @group scheduler
@@ -126,7 +126,7 @@ $kendo-scheduler-cell-padding-x: k-spacing(3) !default;
 $kendo-scheduler-cell-padding-y: k-spacing(3) !default;
 /// The height of the Scheduler cell.
 /// @group scheduler
-$kendo-scheduler-cell-height: calc( var( --kendo-line-height, normal) * 1rem) !default;
+$kendo-scheduler-cell-height: calc( var(--kendo-line-height) * 1rem) !default;
 /// The width of the Scheduler date column.
 /// @group scheduler
 $kendo-scheduler-datecolumn-width: 12rem !default;
@@ -206,10 +206,10 @@ $kendo-scheduler-tooltip-shadow: k-elevation(2) !default;
 $kendo-scheduler-tooltip-title-margin-y: k-spacing(2) !default;
 /// The font size of the month inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-month-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-scheduler-tooltip-month-font-size: var(--kendo-font-size-sm) !default;
 /// The font size of the day inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-day-font-size: calc( var( --kendo-font-size-sm, .75rem ) * 2 ) !default;
+$kendo-scheduler-tooltip-day-font-size: calc( var(--kendo-font-size-sm) * 2 ) !default;
 
 /// The max height of the events inside the Scheduler Tooltip.
 /// @group scheduler

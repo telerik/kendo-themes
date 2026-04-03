@@ -29,27 +29,27 @@ $kendo-segmented-control-text: k-color(on-base) !default;
 
 /// The font size of the small Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-segmented-control-sm-font-size: var(--kendo-font-size-sm) !default;
 /// The font size of the medium Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-segmented-control-md-font-size: var(--kendo-font-size) !default;
 /// The font size of the large Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-segmented-control-lg-font-size: var(--kendo-font-size-lg) !default;
 
 /// The font family of the Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-segmented-control-font-family: var(--kendo-font-family) !default;
 
 /// The line height of the small Segmented Control.
 /// @group segmented-control
 $kendo-segmented-control-sm-line-height: math.div( 20, 14 ) !default;
 /// The line height of the medium Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-segmented-control-md-line-height: var(--kendo-line-height) !default;
 /// The line height of the large Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-lg-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-segmented-control-lg-line-height: var(--kendo-line-height) !default;
 
 /// The border radius of the Segmented Control thumb.
 /// @group segmented-control

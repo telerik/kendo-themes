@@ -31,3 +31,13 @@ The increase/decrease buttons are auxiliary controls that duplicate keyboard fun
 |  | `title` | Provides a tooltip describing the button action (e.g., "Decrease" or "Increase"). Required for mouse/touch user discoverability. |
 
 > **Note:** These buttons remain semantic `<button>` elements with their implicit role. They are interactive (clickable) but not in the keyboard navigation sequence. Do NOT use `aria-hidden="true"` on these buttons - they are programmatically focusable via `tabindex="-1"`.
+
+### Slider Ticks
+
+The tick marks along the slider track are purely decorative visual indicators. They provide no information that is not already conveyed by the drag handle's `aria-valuenow`, `aria-valuemin`, and `aria-valuemax` attributes. The entire tick container is hidden from assistive technologies.
+
+| Selector | Attribute | Usage |
+| -------- | --------- | ----- |
+| `.k-slider .k-slider-items` | `aria-hidden=true` | Hides the tick list from assistive technologies. Tick values are redundant with the drag handle's value attributes. |
+| `.k-slider .k-tick` | `role=presentation` | Removes semantic meaning from individual tick elements. Ticks are visual-only markers. |
+|  | `title` | Represents the value associated with the respective tick. Not exposed to assistive technologies due to `aria-hidden` on the parent container. |

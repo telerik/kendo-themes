@@ -13,7 +13,7 @@ $kendo-calendar-border-width: 1px !default;
 
 /// The font family of the Calendar.
 /// @group calendar
-$kendo-calendar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-calendar-font-family: var(--kendo-font-family) !default;
 /// The font size of the Calendar.
 /// @group calendar
 $kendo-calendar-font-size: null !default;
@@ -51,7 +51,7 @@ $kendo-calendar-header-border-width: 1px !default;
 
 /// The background color of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-bg: k-color(surface)!default;
+$kendo-calendar-header-bg: k-color(surface) !default;
 /// The border color of the header in the Calendar.
 /// @group calendar
 $kendo-calendar-header-border: k-color(border) !default;
@@ -99,7 +99,7 @@ $kendo-calendar-header-cell-width: $kendo-calendar-cell-size !default;
 $kendo-calendar-header-cell-height: $kendo-calendar-cell-size !default;
 /// The font size of the header cells in the Calendar.
 /// @group calendar
-$kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-header-cell-font-size: var(--kendo-font-size-sm) !default;
 /// The line height of the header cells in the Calendar.
 /// @group calendar
 $kendo-calendar-header-cell-line-height: 2 !default;
@@ -128,7 +128,7 @@ $kendo-calendar-caption-font-size: null !default;
 $kendo-calendar-caption-line-height: null !default;
 /// The font weight of the caption in the Calendar.
 /// @group calendar
-$kendo-calendar-caption-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-calendar-caption-font-weight: var(--kendo-font-weight-bold) !default;
 
 /// The font size of the week number cells in the Calendar.
 /// @group calendar
@@ -160,7 +160,7 @@ $kendo-calendar-today-style: color !default;
 $kendo-calendar-today-color: k-color(primary) !default;
 /// The font weight of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+$kendo-calendar-today-font-weight: var(--kendo-font-weight-bold) !default;
 /// The box shadow of the current day in the Calendar.
 /// @group calendar
 $kendo-calendar-today-box-shadow: null !default;
@@ -185,7 +185,7 @@ $kendo-calendar-cell-border: null !default;
 
 /// The background color of the hovered cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: color-mix( in srgb, currentColor 8%, transparent )  !default;
+$kendo-calendar-cell-hover-bg: color-mix( in srgb, currentColor 8%, transparent ) !default;
 /// The text color of the hovered cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-hover-text: k-color(on-app-surface) !default;
@@ -287,10 +287,10 @@ $kendo-calendar-range-cell-border-radius: k-border-radius(lg) !default;
 
 /// The font size of the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-sm-font-size: var(--kendo-font-size) !default;
 /// The line height of the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-calendar-sm-line-height: var(--kendo-line-height) !default;
 /// The size of the cells in the small Calendar.
 /// @group calendar
 $kendo-calendar-sm-cell-size: 28px !default;
@@ -303,10 +303,10 @@ $kendo-calendar-sm-cell-padding-y: k-spacing(0.5) !default;
 
 /// The font size of the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-md-font-size: var(--kendo-font-size) !default;
 /// The line height of the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-calendar-md-line-height: var(--kendo-line-height) !default;
 /// The size of the cells in the medium Calendar.
 /// @group calendar
 $kendo-calendar-md-cell-size: 32px !default;
@@ -319,10 +319,10 @@ $kendo-calendar-md-cell-padding-y: k-spacing(1) !default;
 
 /// The font size of the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-calendar-lg-font-size: var(--kendo-font-size-lg) !default;
 /// The line height of the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-calendar-lg-line-height: var(--kendo-line-height-lg) !default;
 /// The size of the cells in the large Calendar.
 /// @group calendar
 $kendo-calendar-lg-cell-size: 40px !default;

@@ -7,7 +7,7 @@ export default () =>(
     <>
         <div id="test-area">
 
-            <div className="hidden-on-narrow k-widget k-pivot" style={{ height: "580px" }}>
+            <div className="hidden-on-narrow k-pivot" style={{ height: "580px" }}>
                 <table className="k-pivot-layout">
                     <tbody>
                         <tr>

@@ -1,4 +1,4 @@
-﻿import { ColorEditor, ColorEditorGroup, ColorEditorPaletteGroup, KendoColorEditorProps } from '..';
+import { ColorEditor, ColorEditorGroup, ColorEditorPaletteGroup, KendoColorEditorProps } from '..';
 
 const options = ColorEditor.options;
 const states = ColorEditor.states;
@@ -42,6 +42,7 @@ ColoreditorDemo.states = states;
 ColoreditorDemo.variants = variants;
 ColoreditorDemo.defaultOptions = defaults;
 ColoreditorDemo.modifiers = modifiers;
+ColoreditorDemo.className = ColorEditor.className;
 
 export default ColoreditorDemo;
 

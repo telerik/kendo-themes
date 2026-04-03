@@ -47,7 +47,10 @@ export const ColumnMenuItem: KendoComponent<KendoColumnMenuItemProps & KendoColu
                     focus,
                     selected,
                 })
-            )}>
+            )}
+            role="button"
+            tabIndex={0}
+        >
             {startIcon && <Icon icon={startIcon} />}
             {text}
             {endIcon &&

@@ -22,7 +22,7 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>TaskBoard</span>
-        <div class="k-rtl k-taskboard">
+        <div class="k-rtl k-taskboard" role="application">
             <div class="k-taskboard-header">
                 <div class="k-taskboard-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
                     <button class="k-toolbar-button  k-button">
@@ -48,24 +48,24 @@
                 <div class="k-taskboard-columns-container">
                     <div class="k-taskboard-column">
                         <div class="k-taskboard-column-header">
-                            <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
+                            <div class="k-taskboard-column-header-text k-text-ellipsis" id="k-taskboard-column-header-1">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Edit column" title="Edit column">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Add card" title="Add card">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Delete column" title="Delete column">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -74,14 +74,14 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="k-taskboard-column-cards-container">
-                            <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                        <div class="k-taskboard-column-cards-container" role="list" tabindex="0" aria-labelledby="k-taskboard-column-header-1">
+                            <div class="k-taskboard-column-cards" role="presentation">
+                                <div class="k-taskboard-card k-card" role="listitem" tabindex="0">
                                     <div class="k-hbox k-card-header">
-                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <a class="k-card-title k-link">Card Title</a>
                                         <span class="k-spacer"></span>
                                         <span class="k-card-header-actions">
-                                            <button class="k-card-details k-button k-button-flat k-icon-button">
+                                            <button class="k-taskboard-card-menu-button k-button k-button-flat k-icon-button" aria-label="Card menu" title="Card menu">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -94,12 +94,12 @@
                                         <p>Card Body</p>
                                     </div>
                                 </div>
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-taskboard-card k-card" role="listitem" tabindex="0">
                                     <div class="k-hbox k-card-header">
-                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <a class="k-card-title k-link">Card Title</a>
                                         <span class="k-spacer"></span>
                                         <span class="k-card-header-actions">
-                                            <button class="k-card-details k-button k-button-flat k-icon-button">
+                                            <button class="k-taskboard-card-menu-button k-button k-button-flat k-icon-button" aria-label="Card menu" title="Card menu">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -112,12 +112,12 @@
                                         <p>Card Body</p>
                                     </div>
                                 </div>
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-taskboard-card k-card" role="listitem" tabindex="0">
                                     <div class="k-hbox k-card-header">
-                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <a class="k-card-title k-link">Card Title</a>
                                         <span class="k-spacer"></span>
                                         <span class="k-card-header-actions">
-                                            <button class="k-card-details k-button k-button-flat k-icon-button">
+                                            <button class="k-taskboard-card-menu-button k-button k-button-flat k-icon-button" aria-label="Card menu" title="Card menu">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -135,24 +135,24 @@
                     </div>
                     <div class="k-taskboard-column">
                         <div class="k-taskboard-column-header">
-                            <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
+                            <div class="k-taskboard-column-header-text k-text-ellipsis" id="k-taskboard-column-header-2">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Edit column" title="Edit column">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Add card" title="Add card">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Delete column" title="Delete column">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -161,14 +161,14 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="k-taskboard-column-cards-container">
-                            <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                        <div class="k-taskboard-column-cards-container" role="list" tabindex="0" aria-labelledby="k-taskboard-column-header-2">
+                            <div class="k-taskboard-column-cards" role="presentation">
+                                <div class="k-taskboard-card k-card" role="listitem" tabindex="0">
                                     <div class="k-hbox k-card-header">
-                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <a class="k-card-title k-link">Card Title</a>
                                         <span class="k-spacer"></span>
                                         <span class="k-card-header-actions">
-                                            <button class="k-card-details k-button k-button-flat k-icon-button">
+                                            <button class="k-taskboard-card-menu-button k-button k-button-flat k-icon-button" aria-label="Card menu" title="Card menu">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -181,12 +181,12 @@
                                         <p>Card Body</p>
                                     </div>
                                 </div>
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-taskboard-card k-card" role="listitem" tabindex="0">
                                     <div class="k-hbox k-card-header">
-                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <a class="k-card-title k-link">Card Title</a>
                                         <span class="k-spacer"></span>
                                         <span class="k-card-header-actions">
-                                            <button class="k-card-details k-button k-button-flat k-icon-button">
+                                            <button class="k-taskboard-card-menu-button k-button k-button-flat k-icon-button" aria-label="Card menu" title="Card menu">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
@@ -204,24 +204,24 @@
                     </div>
                     <div class="k-taskboard-column">
                         <div class="k-taskboard-column-header">
-                            <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
+                            <div class="k-taskboard-column-header-text k-text-ellipsis" id="k-taskboard-column-header-3">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Edit column" title="Edit column">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Add card" title="Add card">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                         </svg>
                                     </span>
                                 </button>
-                                <button class="k-button k-button-flat k-icon-button">
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Delete column" title="Delete column">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
@@ -230,14 +230,14 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="k-taskboard-column-cards-container">
-                            <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                        <div class="k-taskboard-column-cards-container" role="list" tabindex="0" aria-labelledby="k-taskboard-column-header-3">
+                            <div class="k-taskboard-column-cards" role="presentation">
+                                <div class="k-taskboard-card k-card" role="listitem" tabindex="0">
                                     <div class="k-hbox k-card-header">
-                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <a class="k-card-title k-link">Card Title</a>
                                         <span class="k-spacer"></span>
                                         <span class="k-card-header-actions">
-                                            <button class="k-card-details k-button k-button-flat k-icon-button">
+                                            <button class="k-taskboard-card-menu-button k-button k-button-flat k-icon-button" aria-label="Card menu" title="Card menu">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>

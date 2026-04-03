@@ -34,6 +34,8 @@ export const SliderTick = (
     return (
         <li
             {...other}
+            role="presentation"
+            title={text || 'Tick'}
             className={classNames(
                 props.className,
                 SLIDER_TICK_CLASSNAME,

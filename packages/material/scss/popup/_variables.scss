@@ -9,10 +9,10 @@ $kendo-popup-border-radius: k-border-radius(md) !default;
 
 /// Font size of the popup.
 /// @group popup
-$kendo-popup-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-popup-font-size: var(--kendo-font-size) !default;
 /// Line height of the popup.
 /// @group popup
-$kendo-popup-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-popup-line-height: var(--kendo-line-height) !default;
 
 /// Horizontal padding of the popup content.
 /// @group popup
@@ -34,6 +34,10 @@ $kendo-popup-border: k-color(border) !default;
 /// @group popup
 $kendo-popup-shadow: k-elevation(2) !default;
 
+/// Vertical spacing between the popup and the element it is anchored to.
+/// @group popup
+$kendo-popup-spacing-y: 0 !default;
+
 @forward "@progress/kendo-theme-core/scss/components/popup/_variables.scss" with (
     $kendo-popup-border-width: $kendo-popup-border-width,
     $kendo-popup-border-radius: $kendo-popup-border-radius,
@@ -44,5 +48,6 @@ $kendo-popup-shadow: k-elevation(2) !default;
     $kendo-popup-bg: $kendo-popup-bg,
     $kendo-popup-text: $kendo-popup-text,
     $kendo-popup-border: $kendo-popup-border,
-    $kendo-popup-shadow: $kendo-popup-shadow
+    $kendo-popup-shadow: $kendo-popup-shadow,
+    $kendo-popup-spacing-y: $kendo-popup-spacing-y
 );

@@ -42,13 +42,13 @@ $kendo-adaptive-menu-title-text: var( --kendo-adaptive-menu-title-text, #{k-colo
 $kendo-adaptive-border-width: var( --kendo-adaptive-border-width, 1px ) !default;
 /// The font family of the Adaptive component.
 /// @group adaptive
-$kendo-adaptive-font-family: var( --kendo-adaptive-font-family, var( --kendo-font-family, inherit ) ) !default;
+$kendo-adaptive-font-family: var( --kendo-adaptive-font-family, var(--kendo-font-family) ) !default;
 /// The font size of the Adaptive component.
 /// @group adaptive
-$kendo-adaptive-font-size: var( --kendo-adaptive-font-size, var( --kendo-font-size, 1rem ) ) !default;
+$kendo-adaptive-font-size: var( --kendo-adaptive-font-size, var(--kendo-font-size) ) !default;
 /// The line height of the Adaptive component.
 /// @group adaptive
-$kendo-adaptive-line-height: var( --kendo-adaptive-line-height, var( --kendo-line-height, normal ) ) !default;
+$kendo-adaptive-line-height: var( --kendo-adaptive-line-height, var(--kendo-line-height) ) !default;
 
 
 // Adaptive Grid
