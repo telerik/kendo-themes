@@ -19,6 +19,7 @@
     "@csstools/selector-specificity": "^6.0.0",
     "@eslint/js": "^10.0.1",
     "@jridgewell/source-map": "^0.3.10",
+    "@nx/js": "^22.6.3",
     "@progress/kendo-e2e": "4.14.2",
     "@stylistic/stylelint-plugin": "^5.0.1",
     "@types/node": "^25.0.3",
@@ -31,7 +32,6 @@
     "http-server": "^14.1.1",
     "husky": "^9.0.10",
     "jsdom": "^28.1.0",
-    "lerna": "^9.0.0",
     "lint-staged": "^16.0.0",
     "nunjucks": "^3.2.3",
     "nx": "^22.0.1",
@@ -78,7 +78,12 @@
     "test:units:watch": "npm run test:watch --prefix units",
     "clean": "nx reset && find . -name \"node_modules\" -type d -prune | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune -maxdepth 2 | xargs rm -rf",
-    "clean:tests": "node ./scripts/cleanup-test-results.js"
+    "clean:tests": "node ./scripts/cleanup-test-results.js",
+    "release": "npx nx release",
+    "release:dry": "npx nx release --dry-run",
+    "release:version": "npx nx release version",
+    "release:changelog": "npx nx release changelog",
+    "release:publish": "npx nx release publish"
   },
   "engines": {
     "node": "^24 || ^25"
