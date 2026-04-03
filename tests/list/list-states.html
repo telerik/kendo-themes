@@ -1,173 +1,175 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        .k-virtual-list>.k-item,
-        .k-virtual-list .k-list-item {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-virtual-list > .k-item,
+            .k-virtual-list .k-list-item {
             position: relative;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-4">
-        <span>Static list</span>
-        <span>Virtual list</span>
-        <span>Static list (rtl)</span>
-        <span>Virtual list (rtl)</span>
-        <section>
-            <div class="k-list">
-                <div class="k-list-content">
-                    <ul aria-label="Options" id="list-normal-listbox" role="listbox" class="k-list-ul">
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-list-item-text">List item</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
-                            <span class="k-list-item-text">Hover</span>
-                        </li>
-                        <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                            <span class="k-list-item-text">Focus</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                            <span class="k-list-item-text">Selected</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
-                            <span class="k-list-item-text">Hover selected</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
-                            <span class="k-list-item-text">Disabled</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-checkbox-wrap">
-                                <input class="k-checkbox" type="checkbox">
-                            </span>
-                            <span class="k-list-item-text">Checkbox</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-list k-virtual-list">
-                <div class="k-list-content">
-                    <ul aria-label="Options" id="list-virt-listbox" role="listbox" class="k-list-ul">
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-list-item-text">List item</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
-                            <span class="k-list-item-text">Hover</span>
-                        </li>
-                        <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                            <span class="k-list-item-text">Focus</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                            <span class="k-list-item-text">Selected</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
-                            <span class="k-list-item-text">Hover selected</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
-                            <span class="k-list-item-text">Disabled</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-checkbox-wrap">
-                                <input class="k-checkbox" type="checkbox">
-                            </span>
-                            <span class="k-list-item-text">Checkbox</span>
-                        </li>
-                    </ul>
-                    <div class="k-height-container">
-                        <div></div>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-4">
+            <span>Static list</span>
+            <span>Virtual list</span>
+            <span>Static list (rtl)</span>
+            <span>Virtual list (rtl)</span>
+            <section>
+                <div class="k-list">
+                    <div class="k-list-content">
+                        <ul aria-label="Options" id="list-normal-listbox" role="listbox" class="k-list-ul">
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-list-item-text">List item</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
+                                <span class="k-list-item-text">Hover</span>
+                            </li>
+                            <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                <span class="k-list-item-text">Focus</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                <span class="k-list-item-text">Selected</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
+                                <span class="k-list-item-text">Hover selected</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
+                                <span class="k-list-item-text">Disabled</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-checkbox-wrap">
+                                    <input class="k-checkbox" type="checkbox">
+                                </span>
+                                <span class="k-list-item-text">Checkbox</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section dir="rtl">
-            <div class="k-list">
-                <div class="k-list-content">
-                    <ul aria-label="Options" id="list-normal-listbox" role="listbox" class="k-list-ul">
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-list-item-text">List item</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
-                            <span class="k-list-item-text">Hover</span>
-                        </li>
-                        <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                            <span class="k-list-item-text">Focus</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                            <span class="k-list-item-text">Selected</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
-                            <span class="k-list-item-text">Hover selected</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
-                            <span class="k-list-item-text">Disabled</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-checkbox-wrap">
-                                <input class="k-checkbox" type="checkbox">
-                            </span>
-                            <span class="k-list-item-text">Checkbox</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section dir="rtl">
-            <div class="k-list k-virtual-list">
-                <div class="k-list-content">
-                    <ul aria-label="Options" id="list-virt-listbox" role="listbox" class="k-list-ul">
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-list-item-text">List item</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
-                            <span class="k-list-item-text">Hover</span>
-                        </li>
-                        <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                            <span class="k-list-item-text">Focus</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                            <span class="k-list-item-text">Selected</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
-                            <span class="k-list-item-text">Hover selected</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
-                            <span class="k-list-item-text">Disabled</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
-                        </li>
-                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                            <span class="k-checkbox-wrap">
-                                <input class="k-checkbox" type="checkbox">
-                            </span>
-                            <span class="k-list-item-text">Checkbox</span>
-                        </li>
-                    </ul>
-                    <div class="k-height-container">
-                        <div></div>
+            </section>
+            <section>
+                <div class="k-list k-virtual-list">
+                    <div class="k-list-content">
+                        <ul aria-label="Options" id="list-virt-listbox" role="listbox" class="k-list-ul">
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-list-item-text">List item</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
+                                <span class="k-list-item-text">Hover</span>
+                            </li>
+                            <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                <span class="k-list-item-text">Focus</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                <span class="k-list-item-text">Selected</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
+                                <span class="k-list-item-text">Hover selected</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
+                                <span class="k-list-item-text">Disabled</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-checkbox-wrap">
+                                    <input class="k-checkbox" type="checkbox">
+                                </span>
+                                <span class="k-list-item-text">Checkbox</span>
+                            </li>
+                        </ul>
+                        <div class="k-height-container">
+                            <div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+            <section dir="rtl">
+                <div class="k-list">
+                    <div class="k-list-content">
+                        <ul aria-label="Options" id="list-normal-listbox" role="listbox" class="k-list-ul">
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-list-item-text">List item</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
+                                <span class="k-list-item-text">Hover</span>
+                            </li>
+                            <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                <span class="k-list-item-text">Focus</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                <span class="k-list-item-text">Selected</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
+                                <span class="k-list-item-text">Hover selected</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
+                                <span class="k-list-item-text">Disabled</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-checkbox-wrap">
+                                    <input class="k-checkbox" type="checkbox">
+                                </span>
+                                <span class="k-list-item-text">Checkbox</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section dir="rtl">
+                <div class="k-list k-virtual-list">
+                    <div class="k-list-content">
+                        <ul aria-label="Options" id="list-virt-listbox" role="listbox" class="k-list-ul">
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-list-item-text">List item</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
+                                <span class="k-list-item-text">Hover</span>
+                            </li>
+                            <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                <span class="k-list-item-text">Focus</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                <span class="k-list-item-text">Selected</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
+                                <span class="k-list-item-text">Hover selected</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
+                                <span class="k-list-item-text">Disabled</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                            </li>
+                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                <span class="k-checkbox-wrap">
+                                    <input class="k-checkbox" type="checkbox">
+                                </span>
+                                <span class="k-list-item-text">Checkbox</span>
+                            </li>
+                        </ul>
+                        <div class="k-height-container">
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

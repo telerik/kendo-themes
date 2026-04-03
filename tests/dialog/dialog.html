@@ -1,158 +1,173 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        .k-dialog {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-dialog {
             width: 270px
-        }
-        section {
+            }
+            section {
             height: 250px;
-            transform: translate(0, 0);
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <section>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-1" aria-describedby="k-dialog-content-1" aria-modal="true">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-1">
-                        <span class="k-window-title k-dialog-title">Title g y p t d l</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
+            transform: translate( 0, 0 );
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-3">
+            <section>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay">
+                    </div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-1" aria-describedby="k-dialog-content-1" aria-modal="true">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-1">
+                            <span class="k-window-title k-dialog-title">Title
+                        g y p
+                        t d l</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-1">Dialog content</div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <button class="k-button">
+                                <span class="k-button-text">Action</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Primary</span>
                             </button>
                         </div>
                     </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-1">Dialog content</div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <button class="k-button">
-                            <span class="k-button-text">Action</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Primary</span>
-                        </button>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-2" aria-describedby="k-dialog-content-2" aria-modal="true">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-2">
-                        <span class="k-window-title k-dialog-title">Cursive g y p t d l</span>
+            </section>
+            <section>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay">
                     </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-2">Dialog without titlebar actions</div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <button class="k-button">
-                            <span class="k-button-text">Action</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Primary</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-3" aria-describedby="k-dialog-content-3" aria-modal="true">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-3">
-                        <span class="k-window-title k-dialog-title"></span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-2" aria-describedby="k-dialog-content-2" aria-modal="true">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-2">
+                            <span class="k-window-title k-dialog-title">Cursive
+                        g y p
+                        t d l</span>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-2">Dialog without titlebar actions</div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <button class="k-button">
+                                <span class="k-button-text">Action</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Primary</span>
                             </button>
                         </div>
                     </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-3">Dialog with empty title and actions</div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <button class="k-button">
-                            <span class="k-button-text">Action</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Primary</span>
-                        </button>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-4" aria-describedby="k-dialog-content-4" aria-modal="true">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-4">
-                        <span class="k-window-title k-dialog-title"></span>
+            </section>
+            <section>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay">
                     </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-4">Dialog with empty title and no actions</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-describedby="k-dialog-content-5" aria-modal="true">
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-5">Dialog without title</div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <button class="k-button">
-                            <span class="k-button-text">Action</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Primary</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-5" aria-describedby="k-dialog-content-6" aria-modal="true" style="height: 220px;">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-5">
-                        <span class="k-window-title k-dialog-title">Scrolling</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-3" aria-describedby="k-dialog-content-3" aria-modal="true">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-3">
+                            <span class="k-window-title k-dialog-title">
+                            </span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-3">Dialog with empty title and actions</div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <button class="k-button">
+                                <span class="k-button-text">Action</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Primary</span>
                             </button>
                         </div>
                     </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-6">
-                        <p>Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling.</p>
+                </div>
+            </section>
+            <section>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay">
                     </div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <button class="k-button">
-                            <span class="k-button-text">Action</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Primary</span>
-                        </button>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-4" aria-describedby="k-dialog-content-4" aria-modal="true">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-4">
+                            <span class="k-window-title k-dialog-title">
+                            </span>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-4">Dialog with empty title and no actions</div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+            <section>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay">
+                    </div>
+                    <div class="k-dialog k-window" role="dialog" aria-describedby="k-dialog-content-5" aria-modal="true">
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-5">Dialog without title</div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <button class="k-button">
+                                <span class="k-button-text">Action</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Primary</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay">
+                    </div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-5" aria-describedby="k-dialog-content-6" aria-modal="true" style="height: 220px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-5">
+                            <span class="k-window-title k-dialog-title">Scrolling</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-6">
+                            <p>Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling.</p>
+                        </div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <button class="k-button">
+                                <span class="k-button-text">Action</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Primary</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

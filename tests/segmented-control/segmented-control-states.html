@@ -1,47 +1,48 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area>section {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area>section {
             padding: 20px;
             display: grid;
             grid-template-columns: 1fr;
             gap: 10px;
             justify-items: start;
-        }
-        .k-segmented-control-thumb {
+            }
+            .k-segmented-control-thumb {
             width: 180px;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <div class="k-segmented-control" role="group">
-            <div class="k-segmented-control-thumb" aria-hidden="true"></div>
-            <button class="k-segmented-control-button k-selected" aria-pressed="true">
-                <span class="k-segmented-control-button-text">selected</span>
-            </button>
-            <button class="k-segmented-control-button k-hover" aria-pressed="false">
-                <span class="k-segmented-control-button-text">hover</span>
-            </button>
-            <button class="k-segmented-control-button k-focus" aria-pressed="false">
-                <span class="k-segmented-control-button-text">focus</span>
-            </button>
-            <button class="k-segmented-control-button k-disabled" aria-pressed="false" aria-disabled="true">
-                <span class="k-segmented-control-button-text">disabled</span>
-            </button>
-            <button class="k-segmented-control-button" aria-pressed="false">
-                <span class="k-segmented-control-button-text">normal</span>
-            </button>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <div class="k-segmented-control" role="group">
+                <div class="k-segmented-control-thumb" aria-hidden="true">
+                </div>
+                <button class="k-segmented-control-button k-selected" aria-pressed="true">
+                    <span class="k-segmented-control-button-text">selected</span>
+                </button>
+                <button class="k-segmented-control-button k-hover" aria-pressed="false">
+                    <span class="k-segmented-control-button-text">hover</span>
+                </button>
+                <button class="k-segmented-control-button k-focus" aria-pressed="false">
+                    <span class="k-segmented-control-button-text">focus</span>
+                </button>
+                <button class="k-segmented-control-button k-disabled" aria-pressed="false" aria-disabled="true">
+                    <span class="k-segmented-control-button-text">disabled</span>
+                </button>
+                <button class="k-segmented-control-button" aria-pressed="false">
+                    <span class="k-segmented-control-button-text">normal</span>
+                </button>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

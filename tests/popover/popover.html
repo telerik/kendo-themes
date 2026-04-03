@@ -1,124 +1,129 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        .k-animation-container {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-animation-container {
             position: relative;
             overflow: visible;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-4">
-        <section>
-            <span>Callout top</span>
-            <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container">
-                    <div class="k-popover k-popup" role="dialog" id="k-popover-1" aria-labelledby="k-popover-1-header" aria-describedby="k-popover-1-body">
-                        <div class="k-popover-callout k-callout-n"></div>
-                        <div class="k-popover-inner">
-                            <div class="k-popover-header" id="k-popover-1-header">Title</div>
-                            <div class="k-popover-body" id="k-popover-1-body">Body content</div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-popover-actions">
-                                <button class="k-button k-button-flat">
-                                    <span class="k-button-text">Action</span>
-                                </button>
-                                <button class="k-button k-button-flat k-button-primary">
-                                    <span class="k-button-text">Primary</span>
-                                </button>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-4">
+            <section>
+                <span>Callout top</span>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popover k-popup" role="dialog" id="k-popover-1" aria-labelledby="k-popover-1-header" aria-describedby="k-popover-1-body">
+                            <div class="k-popover-callout k-callout-n">
+                            </div>
+                            <div class="k-popover-inner">
+                                <div class="k-popover-header" id="k-popover-1-header">Title</div>
+                                <div class="k-popover-body" id="k-popover-1-body">Body content</div>
+                                <div class="k-actions k-actions-stretched k-actions-horizontal k-popover-actions">
+                                    <button class="k-button k-button-flat">
+                                        <span class="k-button-text">Action</span>
+                                    </button>
+                                    <button class="k-button k-button-flat k-button-primary">
+                                        <span class="k-button-text">Primary</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <span>Callout right</span>
-            <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container">
-                    <div class="k-popover k-popup" role="dialog" id="k-popover-2" aria-labelledby="k-popover-2-header" aria-describedby="k-popover-2-body">
-                        <div class="k-popover-callout k-callout-e"></div>
-                        <div class="k-popover-inner">
-                            <div class="k-popover-header" id="k-popover-2-header">Title</div>
-                            <div class="k-popover-body" id="k-popover-2-body">Body content</div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-popover-actions">
-                                <button class="k-button k-button-flat">
-                                    <span class="k-button-text">Action</span>
-                                </button>
-                                <button class="k-button k-button-flat k-button-primary">
-                                    <span class="k-button-text">Primary</span>
-                                </button>
+            </section>
+            <section>
+                <span>Callout right</span>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popover k-popup" role="dialog" id="k-popover-2" aria-labelledby="k-popover-2-header" aria-describedby="k-popover-2-body">
+                            <div class="k-popover-callout k-callout-e">
+                            </div>
+                            <div class="k-popover-inner">
+                                <div class="k-popover-header" id="k-popover-2-header">Title</div>
+                                <div class="k-popover-body" id="k-popover-2-body">Body content</div>
+                                <div class="k-actions k-actions-stretched k-actions-horizontal k-popover-actions">
+                                    <button class="k-button k-button-flat">
+                                        <span class="k-button-text">Action</span>
+                                    </button>
+                                    <button class="k-button k-button-flat k-button-primary">
+                                        <span class="k-button-text">Primary</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <span>Callout bottom</span>
-            <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container">
-                    <div class="k-popover k-popup" role="dialog" id="k-popover-3" aria-labelledby="k-popover-3-header" aria-describedby="k-popover-3-body">
-                        <div class="k-popover-callout k-callout-s"></div>
-                        <div class="k-popover-inner">
-                            <div class="k-popover-header" id="k-popover-3-header">Title</div>
-                            <div class="k-popover-body" id="k-popover-3-body">Body content</div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-popover-actions">
-                                <button class="k-button k-button-flat">
-                                    <span class="k-button-text">Action</span>
-                                </button>
-                                <button class="k-button k-button-flat k-button-primary">
-                                    <span class="k-button-text">Primary</span>
-                                </button>
+            </section>
+            <section>
+                <span>Callout bottom</span>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popover k-popup" role="dialog" id="k-popover-3" aria-labelledby="k-popover-3-header" aria-describedby="k-popover-3-body">
+                            <div class="k-popover-callout k-callout-s">
+                            </div>
+                            <div class="k-popover-inner">
+                                <div class="k-popover-header" id="k-popover-3-header">Title</div>
+                                <div class="k-popover-body" id="k-popover-3-body">Body content</div>
+                                <div class="k-actions k-actions-stretched k-actions-horizontal k-popover-actions">
+                                    <button class="k-button k-button-flat">
+                                        <span class="k-button-text">Action</span>
+                                    </button>
+                                    <button class="k-button k-button-flat k-button-primary">
+                                        <span class="k-button-text">Primary</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <span>Callout left</span>
-            <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container">
-                    <div class="k-popover k-popup" role="dialog" id="k-popover-4" aria-labelledby="k-popover-4-header" aria-describedby="k-popover-4-body">
-                        <div class="k-popover-callout k-callout-w"></div>
-                        <div class="k-popover-inner">
-                            <div class="k-popover-header" id="k-popover-4-header">Title</div>
-                            <div class="k-popover-body" id="k-popover-4-body">Body content</div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-popover-actions">
-                                <button class="k-button k-button-flat">
-                                    <span class="k-button-text">Action</span>
-                                </button>
-                                <button class="k-button k-button-flat k-button-primary">
-                                    <span class="k-button-text">Primary</span>
-                                </button>
+            </section>
+            <section>
+                <span>Callout left</span>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popover k-popup" role="dialog" id="k-popover-4" aria-labelledby="k-popover-4-header" aria-describedby="k-popover-4-body">
+                            <div class="k-popover-callout k-callout-w">
+                            </div>
+                            <div class="k-popover-inner">
+                                <div class="k-popover-header" id="k-popover-4-header">Title</div>
+                                <div class="k-popover-body" id="k-popover-4-body">Body content</div>
+                                <div class="k-actions k-actions-stretched k-actions-horizontal k-popover-actions">
+                                    <button class="k-button k-button-flat">
+                                        <span class="k-button-text">Action</span>
+                                    </button>
+                                    <button class="k-button k-button-flat k-button-primary">
+                                        <span class="k-button-text">Primary</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <span>Empty body fixed height</span>
-            <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container">
-                    <div class="k-popover k-popup" role="dialog" id="k-popover-5" aria-labelledby="k-popover-5-header" style="height: 150px;">
-                        <div class="k-popover-callout k-callout-w"></div>
-                        <div class="k-popover-inner">
-                            <div class="k-popover-header" id="k-popover-5-header">Title</div>
+            </section>
+            <section>
+                <span>Empty body fixed height</span>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popover k-popup" role="dialog" id="k-popover-5" aria-labelledby="k-popover-5-header" style="height: 150px;">
+                            <div class="k-popover-callout k-callout-w">
+                            </div>
+                            <div class="k-popover-inner">
+                                <div class="k-popover-header" id="k-popover-5-header">Title</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+        </div>
+    </body>
 </html>

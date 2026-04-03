@@ -1,204 +1,240 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        .example {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .example {
             width: 100%;
             min-height: 200px;
             position: relative;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <span class="example">
-            <span>undefined</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
-                        </div>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-3">
+            <span class="example">
+                <span>undefined</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
-                </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>base</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-base" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>primary</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-primary" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>base</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-base" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>secondary</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-secondary" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>primary</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-primary" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>tertiary</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-tertiary" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>secondary</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-secondary" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>success</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-success" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>tertiary</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-tertiary" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>warning</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-warning" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>success</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-success" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>error</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-error" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>warning</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-warning" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>info</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-info" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>error</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-error" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>light</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-light" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>info</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-info" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>dark</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-dark" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>light</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-light" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-        <span class="example">
-            <span>inverse</span>
-            <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
-                <div class="k-loader-container-overlay k-overlay-dark"></div>
-                <div class="k-loader-container-inner k-loader-container-panel">
-                    <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-inverse" role="status" aria-label="Loading">
-                        <div class="k-loader-canvas">
-                            <span class="k-loader-segment"></span>
-                            <span class="k-loader-segment"></span>
+            </span>
+            <span class="example">
+                <span>dark</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-dark" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
                         </div>
+                        <div class="k-loader-container-label">Loading...</div>
                     </div>
-                    <div class="k-loader-container-label">Loading...</div>
                 </div>
-            </div>
-        </span>
-    </div>
-</body>
+            </span>
+            <span class="example">
+                <span>inverse</span>
+                <div class="k-loader-container k-loader-container-lg k-loader-top" role="status" aria-live="polite" aria-label="Loading">
+                    <div class="k-loader-container-overlay k-overlay-dark">
+                    </div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div class="k-loader k-loader-pulsing-2 k-loader-lg k-loader-inverse" role="status" aria-label="Loading">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment">
+                                </span>
+                                <span class="k-loader-segment">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-loader-container-label">Loading...</div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </body>
 </html>

@@ -1,418 +1,448 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid">
-        <div class="k-grid" style="height: 600px;">
-            <div class="k-grouping-header">
-                <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
-                    <div class="k-chip" role="button" aria-pressed="false">
-                        <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                            </svg>
-                        </span>
-                        <span class="k-chip-content">
-                            <span class="k-chip-label">Rating</span>
-                        </span>
-                        <span class="k-chip-actions">
-                            <span class="k-chip-action k-chip-remove-action">
-                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                                    </svg>
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid">
+            <div class="k-grid" style="height: 600px;">
+                <div class="k-grouping-header">
+                    <div class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                        <div class="k-chip" role="button" aria-pressed="false">
+                            <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 192v224h-32V192h-96L240 64l112 128z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Rating</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z">
+                                            </path>
+                                        </svg>
+                                    </span>
                                 </span>
                             </span>
-                        </span>
+                        </div>
+                    </div>
+                    <div class="k-grouping-drop-container">
                     </div>
                 </div>
-                <div class="k-grouping-drop-container"></div>
-            </div>
-            <div class="k-grid-aria-root" role="grid">
-                <div class="k-grid-header k-grid-draggable-header">
-                    <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table">
-                            <colgroup>
-                                <col class="k-group-col">
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th">
-                                        <span class="k-sr-only">Group</span>
-                                    </th>
-                                    <th colspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Contact Name</span>
+                <div class="k-grid-aria-root" role="grid">
+                    <div class="k-grid-header k-grid-draggable-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th">
+                                            <span class="k-sr-only">Group</span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Contact Name</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Job Title</span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Job Title</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Country</span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Country</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Rating</span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Rating</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Engagement</span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Engagement</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Budget</span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Budget</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Phone</span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Phone</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Address</span>
+                                        </th>
+                                        <th colspan="1" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Address</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-sticky-container">
-                        <table class="k-grid-group-sticky-header-table k-grid-table k-table">
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-group-row k-grouping-row k-table-row">
-                                    <td colspan="9" class="k-table-td">
-                                        <p class="k-reset">
-                                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M352 256 160 384V128z"></path>
-                                                </svg>
-                                            </span>Rating 3/5
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="k-grid-content">
-                        <table class="k-grid-table k-table">
-                            <colgroup>
-                                <col class="k-group-col">
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-group-row k-grouping-row k-table-row">
-                                    <td colspan="9" class="k-table-td">
-                                        <p class="k-reset">
-                                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M256 352 128 160h256z"></path>
-                                                </svg>
-                                            </span>Rating 5/5
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Shelden Greyes</td>
-                                    <td colspan="1" class="k-table-td">Operator</td>
-                                    <td colspan="1" class="k-table-td">UK</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">40%</td>
-                                    <td colspan="1" class="k-table-td">$40.00</td>
-                                    <td colspan="1" class="k-table-td">(343) 6656271</td>
-                                    <td colspan="1" class="k-table-td">2 Waxwing Point</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Shelden Greyes</td>
-                                    <td colspan="1" class="k-table-td">Operator</td>
-                                    <td colspan="1" class="k-table-td">UK</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">40%</td>
-                                    <td colspan="1" class="k-table-td">$40.00</td>
-                                    <td colspan="1" class="k-table-td">(343) 6656271</td>
-                                    <td colspan="1" class="k-table-td">2 Waxwing Point</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Nerissa Dapple</td>
-                                    <td colspan="1" class="k-table-td">Web Designer</td>
-                                    <td colspan="1" class="k-table-td">Norway</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">88%</td>
-                                    <td colspan="1" class="k-table-td">$100.00</td>
-                                    <td colspan="1" class="k-table-td">(683) 7896543</td>
-                                    <td colspan="1" class="k-table-td">12 Silver Maple Lane</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Dahlia Channing</td>
-                                    <td colspan="1" class="k-table-td">Customer Support Representative</td>
-                                    <td colspan="1" class="k-table-td">South Africa</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">90%</td>
-                                    <td colspan="1" class="k-table-td">$95.00</td>
-                                    <td colspan="1" class="k-table-td">(758) 3039625</td>
-                                    <td colspan="1" class="k-table-td">64 Sunset Terrace</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Tobias Edger</td>
-                                    <td colspan="1" class="k-table-td">Software Developer</td>
-                                    <td colspan="1" class="k-table-td">Japan</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">78%</td>
-                                    <td colspan="1" class="k-table-td">$75.00</td>
-                                    <td colspan="1" class="k-table-td">(672) 4819203</td>
-                                    <td colspan="1" class="k-table-td">42 Maplewood Drive</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Orin Thistledown</td>
-                                    <td colspan="1" class="k-table-td">System Analyst</td>
-                                    <td colspan="1" class="k-table-td">Turkey</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">91%</td>
-                                    <td colspan="1" class="k-table-td">$84.00</td>
-                                    <td colspan="1" class="k-table-td">(309) 7821948</td>
-                                    <td colspan="1" class="k-table-td">72 Kingswood Place</td>
-                                </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row">
-                                    <td colspan="9" class="k-table-td">
-                                        <p class="k-reset">
-                                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M256 352 128 160h256z"></path>
-                                                </svg>
-                                            </span>Rating 5/5
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Shelden Greyes</td>
-                                    <td colspan="1" class="k-table-td">Operator</td>
-                                    <td colspan="1" class="k-table-td">UK</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">40%</td>
-                                    <td colspan="1" class="k-table-td">$40.00</td>
-                                    <td colspan="1" class="k-table-td">(343) 6656271</td>
-                                    <td colspan="1" class="k-table-td">2 Waxwing Point</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Shelden Greyes</td>
-                                    <td colspan="1" class="k-table-td">Operator</td>
-                                    <td colspan="1" class="k-table-td">UK</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">40%</td>
-                                    <td colspan="1" class="k-table-td">$40.00</td>
-                                    <td colspan="1" class="k-table-td">(343) 6656271</td>
-                                    <td colspan="1" class="k-table-td">2 Waxwing Point</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Nerissa Dapple</td>
-                                    <td colspan="1" class="k-table-td">Web Designer</td>
-                                    <td colspan="1" class="k-table-td">Norway</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">88%</td>
-                                    <td colspan="1" class="k-table-td">$100.00</td>
-                                    <td colspan="1" class="k-table-td">(683) 7896543</td>
-                                    <td colspan="1" class="k-table-td">12 Silver Maple Lane</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Dahlia Channing</td>
-                                    <td colspan="1" class="k-table-td">Customer Support Representative</td>
-                                    <td colspan="1" class="k-table-td">South Africa</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">90%</td>
-                                    <td colspan="1" class="k-table-td">$95.00</td>
-                                    <td colspan="1" class="k-table-td">(758) 3039625</td>
-                                    <td colspan="1" class="k-table-td">64 Sunset Terrace</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Tobias Edger</td>
-                                    <td colspan="1" class="k-table-td">Software Developer</td>
-                                    <td colspan="1" class="k-table-td">Japan</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">78%</td>
-                                    <td colspan="1" class="k-table-td">$75.00</td>
-                                    <td colspan="1" class="k-table-td">(672) 4819203</td>
-                                    <td colspan="1" class="k-table-td">42 Maplewood Drive</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Orin Thistledown</td>
-                                    <td colspan="1" class="k-table-td">System Analyst</td>
-                                    <td colspan="1" class="k-table-td">Turkey</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">91%</td>
-                                    <td colspan="1" class="k-table-td">$84.00</td>
-                                    <td colspan="1" class="k-table-td">(309) 7821948</td>
-                                    <td colspan="1" class="k-table-td">72 Kingswood Place</td>
-                                </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row">
-                                    <td colspan="9" class="k-table-td">
-                                        <p class="k-reset">
-                                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M256 352 128 160h256z"></path>
-                                                </svg>
-                                            </span>Rating 2/5
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Shelden Greyes</td>
-                                    <td colspan="1" class="k-table-td">Operator</td>
-                                    <td colspan="1" class="k-table-td">UK</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">40%</td>
-                                    <td colspan="1" class="k-table-td">$40.00</td>
-                                    <td colspan="1" class="k-table-td">(343) 6656271</td>
-                                    <td colspan="1" class="k-table-td">2 Waxwing Point</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Shelden Greyes</td>
-                                    <td colspan="1" class="k-table-td">Operator</td>
-                                    <td colspan="1" class="k-table-td">UK</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">40%</td>
-                                    <td colspan="1" class="k-table-td">$40.00</td>
-                                    <td colspan="1" class="k-table-td">(343) 6656271</td>
-                                    <td colspan="1" class="k-table-td">2 Waxwing Point</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Nerissa Dapple</td>
-                                    <td colspan="1" class="k-table-td">Web Designer</td>
-                                    <td colspan="1" class="k-table-td">Norway</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">88%</td>
-                                    <td colspan="1" class="k-table-td">$100.00</td>
-                                    <td colspan="1" class="k-table-td">(683) 7896543</td>
-                                    <td colspan="1" class="k-table-td">12 Silver Maple Lane</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Dahlia Channing</td>
-                                    <td colspan="1" class="k-table-td">Customer Support Representative</td>
-                                    <td colspan="1" class="k-table-td">South Africa</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">90%</td>
-                                    <td colspan="1" class="k-table-td">$95.00</td>
-                                    <td colspan="1" class="k-table-td">(758) 3039625</td>
-                                    <td colspan="1" class="k-table-td">64 Sunset Terrace</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Tobias Edger</td>
-                                    <td colspan="1" class="k-table-td">Software Developer</td>
-                                    <td colspan="1" class="k-table-td">Japan</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">78%</td>
-                                    <td colspan="1" class="k-table-td">$75.00</td>
-                                    <td colspan="1" class="k-table-td">(672) 4819203</td>
-                                    <td colspan="1" class="k-table-td">42 Maplewood Drive</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row">
-                                    <td class="k-table-group-td k-group-cell k-table-td"></td>
-                                    <td colspan="1" class="k-table-td">Orin Thistledown</td>
-                                    <td colspan="1" class="k-table-td">System Analyst</td>
-                                    <td colspan="1" class="k-table-td">Turkey</td>
-                                    <td colspan="1" class="k-table-td">5/5</td>
-                                    <td colspan="1" class="k-table-td">91%</td>
-                                    <td colspan="1" class="k-table-td">$84.00</td>
-                                    <td colspan="1" class="k-table-td">(309) 7821948</td>
-                                    <td colspan="1" class="k-table-td">72 Kingswood Place</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="k-grid-sticky-container k-pos-bottom">
-                        <table class="k-grid-group-sticky-footer-table k-grid-table k-table">
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-group-footer k-table-row">
-                                    <td colspan="9" class="k-table-td">Total items: 0</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="k-grid-container">
+                        <div class="k-grid-sticky-container">
+                            <table class="k-grid-group-sticky-header-table k-grid-table k-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="9" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M352 256 160 384V128z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                Rating 3/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-grid-content">
+                            <table class="k-grid-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="9" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                Rating 5/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Shelden Greyes</td>
+                                        <td colspan="1" class="k-table-td">Operator</td>
+                                        <td colspan="1" class="k-table-td">UK</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">40%</td>
+                                        <td colspan="1" class="k-table-td">$40.00</td>
+                                        <td colspan="1" class="k-table-td">(343) 6656271</td>
+                                        <td colspan="1" class="k-table-td">2 Waxwing Point</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Shelden Greyes</td>
+                                        <td colspan="1" class="k-table-td">Operator</td>
+                                        <td colspan="1" class="k-table-td">UK</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">40%</td>
+                                        <td colspan="1" class="k-table-td">$40.00</td>
+                                        <td colspan="1" class="k-table-td">(343) 6656271</td>
+                                        <td colspan="1" class="k-table-td">2 Waxwing Point</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Nerissa Dapple</td>
+                                        <td colspan="1" class="k-table-td">Web Designer</td>
+                                        <td colspan="1" class="k-table-td">Norway</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">88%</td>
+                                        <td colspan="1" class="k-table-td">$100.00</td>
+                                        <td colspan="1" class="k-table-td">(683) 7896543</td>
+                                        <td colspan="1" class="k-table-td">12 Silver Maple Lane</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Dahlia Channing</td>
+                                        <td colspan="1" class="k-table-td">Customer Support Representative</td>
+                                        <td colspan="1" class="k-table-td">South Africa</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">90%</td>
+                                        <td colspan="1" class="k-table-td">$95.00</td>
+                                        <td colspan="1" class="k-table-td">(758) 3039625</td>
+                                        <td colspan="1" class="k-table-td">64 Sunset Terrace</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Tobias Edger</td>
+                                        <td colspan="1" class="k-table-td">Software Developer</td>
+                                        <td colspan="1" class="k-table-td">Japan</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">78%</td>
+                                        <td colspan="1" class="k-table-td">$75.00</td>
+                                        <td colspan="1" class="k-table-td">(672) 4819203</td>
+                                        <td colspan="1" class="k-table-td">42 Maplewood Drive</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Orin Thistledown</td>
+                                        <td colspan="1" class="k-table-td">System Analyst</td>
+                                        <td colspan="1" class="k-table-td">Turkey</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">91%</td>
+                                        <td colspan="1" class="k-table-td">$84.00</td>
+                                        <td colspan="1" class="k-table-td">(309) 7821948</td>
+                                        <td colspan="1" class="k-table-td">72 Kingswood Place</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="9" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                Rating 5/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Shelden Greyes</td>
+                                        <td colspan="1" class="k-table-td">Operator</td>
+                                        <td colspan="1" class="k-table-td">UK</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">40%</td>
+                                        <td colspan="1" class="k-table-td">$40.00</td>
+                                        <td colspan="1" class="k-table-td">(343) 6656271</td>
+                                        <td colspan="1" class="k-table-td">2 Waxwing Point</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Shelden Greyes</td>
+                                        <td colspan="1" class="k-table-td">Operator</td>
+                                        <td colspan="1" class="k-table-td">UK</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">40%</td>
+                                        <td colspan="1" class="k-table-td">$40.00</td>
+                                        <td colspan="1" class="k-table-td">(343) 6656271</td>
+                                        <td colspan="1" class="k-table-td">2 Waxwing Point</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Nerissa Dapple</td>
+                                        <td colspan="1" class="k-table-td">Web Designer</td>
+                                        <td colspan="1" class="k-table-td">Norway</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">88%</td>
+                                        <td colspan="1" class="k-table-td">$100.00</td>
+                                        <td colspan="1" class="k-table-td">(683) 7896543</td>
+                                        <td colspan="1" class="k-table-td">12 Silver Maple Lane</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Dahlia Channing</td>
+                                        <td colspan="1" class="k-table-td">Customer Support Representative</td>
+                                        <td colspan="1" class="k-table-td">South Africa</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">90%</td>
+                                        <td colspan="1" class="k-table-td">$95.00</td>
+                                        <td colspan="1" class="k-table-td">(758) 3039625</td>
+                                        <td colspan="1" class="k-table-td">64 Sunset Terrace</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Tobias Edger</td>
+                                        <td colspan="1" class="k-table-td">Software Developer</td>
+                                        <td colspan="1" class="k-table-td">Japan</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">78%</td>
+                                        <td colspan="1" class="k-table-td">$75.00</td>
+                                        <td colspan="1" class="k-table-td">(672) 4819203</td>
+                                        <td colspan="1" class="k-table-td">42 Maplewood Drive</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Orin Thistledown</td>
+                                        <td colspan="1" class="k-table-td">System Analyst</td>
+                                        <td colspan="1" class="k-table-td">Turkey</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">91%</td>
+                                        <td colspan="1" class="k-table-td">$84.00</td>
+                                        <td colspan="1" class="k-table-td">(309) 7821948</td>
+                                        <td colspan="1" class="k-table-td">72 Kingswood Place</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="9" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                Rating 2/5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Shelden Greyes</td>
+                                        <td colspan="1" class="k-table-td">Operator</td>
+                                        <td colspan="1" class="k-table-td">UK</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">40%</td>
+                                        <td colspan="1" class="k-table-td">$40.00</td>
+                                        <td colspan="1" class="k-table-td">(343) 6656271</td>
+                                        <td colspan="1" class="k-table-td">2 Waxwing Point</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Shelden Greyes</td>
+                                        <td colspan="1" class="k-table-td">Operator</td>
+                                        <td colspan="1" class="k-table-td">UK</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">40%</td>
+                                        <td colspan="1" class="k-table-td">$40.00</td>
+                                        <td colspan="1" class="k-table-td">(343) 6656271</td>
+                                        <td colspan="1" class="k-table-td">2 Waxwing Point</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Nerissa Dapple</td>
+                                        <td colspan="1" class="k-table-td">Web Designer</td>
+                                        <td colspan="1" class="k-table-td">Norway</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">88%</td>
+                                        <td colspan="1" class="k-table-td">$100.00</td>
+                                        <td colspan="1" class="k-table-td">(683) 7896543</td>
+                                        <td colspan="1" class="k-table-td">12 Silver Maple Lane</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Dahlia Channing</td>
+                                        <td colspan="1" class="k-table-td">Customer Support Representative</td>
+                                        <td colspan="1" class="k-table-td">South Africa</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">90%</td>
+                                        <td colspan="1" class="k-table-td">$95.00</td>
+                                        <td colspan="1" class="k-table-td">(758) 3039625</td>
+                                        <td colspan="1" class="k-table-td">64 Sunset Terrace</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Tobias Edger</td>
+                                        <td colspan="1" class="k-table-td">Software Developer</td>
+                                        <td colspan="1" class="k-table-td">Japan</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">78%</td>
+                                        <td colspan="1" class="k-table-td">$75.00</td>
+                                        <td colspan="1" class="k-table-td">(672) 4819203</td>
+                                        <td colspan="1" class="k-table-td">42 Maplewood Drive</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td">
+                                        </td>
+                                        <td colspan="1" class="k-table-td">Orin Thistledown</td>
+                                        <td colspan="1" class="k-table-td">System Analyst</td>
+                                        <td colspan="1" class="k-table-td">Turkey</td>
+                                        <td colspan="1" class="k-table-td">5/5</td>
+                                        <td colspan="1" class="k-table-td">91%</td>
+                                        <td colspan="1" class="k-table-td">$84.00</td>
+                                        <td colspan="1" class="k-table-td">(309) 7821948</td>
+                                        <td colspan="1" class="k-table-td">72 Kingswood Place</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-grid-sticky-container k-pos-bottom">
+                            <table class="k-grid-group-sticky-footer-table k-grid-table k-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-group-footer k-table-row">
+                                        <td colspan="9" class="k-table-td">Total items: 0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,374 +1,420 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid">
-        <div class="k-grid-lockedcolumns k-grid" style="height: 544px;">
-            <div role="toolbar" aria-label="Grouping" class="k-grouping-header">
-                <div role="none" class="k-chip-list">
-                    <div role="button" class="k-chip" aria-pressed="false">
-                        <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                            </svg>
-                        </span>
-                        <span class="k-chip-content">
-                            <span class="k-chip-label">Country</span>
-                        </span>
-                        <span class="k-chip-actions">
-                            <span class="k-chip-action k-chip-remove-action">
-                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                                    </svg>
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid">
+            <div class="k-grid-lockedcolumns k-grid" style="height: 544px;">
+                <div role="toolbar" aria-label="Grouping" class="k-grouping-header">
+                    <div role="none" class="k-chip-list">
+                        <div role="button" class="k-chip" aria-pressed="false">
+                            <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 192v224h-32V192h-96L240 64l112 128z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Country</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z">
+                                            </path>
+                                        </svg>
+                                    </span>
                                 </span>
                             </span>
-                        </span>
+                        </div>
+                    </div>
+                    <div class="k-grouping-drop-container">
                     </div>
                 </div>
-                <div class="k-grouping-drop-container"></div>
-            </div>
-            <div class="k-grid-aria-root" role="grid">
-                <div role="none" class="k-grid-header">
-                    <div class="k-grid-header-locked" role="none" style="width: 400px;">
-                        <table role="none" class="k-grid-header-table k-table">
-                            <colgroup>
-                                <col class="k-group-col">
-                                <col style="width: 150px;">
-                                <col style="width: 250px;">
-                            </colgroup>
-                            <thead class="k-table-thead">
-                                <tr role="row" aria-owns="k-grid-lc-hdr-1 k-grid-lc-hdr-2 k-grid-lc-hdr-3" class="k-table-row">
-                                    <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th" role="presentation"></th>
-                                    <th colspan="1" rowspan="1" role="columnheader" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Order ID</span>
+                <div class="k-grid-aria-root" role="grid">
+                    <div role="none" class="k-grid-header">
+                        <div class="k-grid-header-locked" role="none" style="width: 400px;">
+                            <table role="none" class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col style="width: 150px;">
+                                    <col style="width: 250px;">
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr role="row" aria-owns="k-grid-lc-hdr-1 k-grid-lc-hdr-2 k-grid-lc-hdr-3" class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-group-cell k-header k-table-th" role="presentation">
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="columnheader" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Order ID</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" rowspan="1" role="columnheader" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Ship Name</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="columnheader" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Ship Name</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-grid-header-wrap k-auto-scrollable" role="none" style="width: 581px;">
+                            <table role="none" class="k-grid-header-table k-table">
+                                <colgroup>
+                                    <col style="width: 300px;">
+                                    <col style="width: 300px;">
+                                    <col style="width: 400px;">
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr role="none" class="k-table-row">
+                                        <th colspan="1" rowspan="1" id="k-grid-lc-hdr-1" role="columnheader" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Ship Country</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" id="k-grid-lc-hdr-2" role="columnheader" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Ship City</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" id="k-grid-lc-hdr-3" role="columnheader" class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Ship Address</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
-                    <div class="k-grid-header-wrap k-auto-scrollable" role="none" style="width: 581px;">
-                        <table role="none" class="k-grid-header-table k-table">
-                            <colgroup>
-                                <col style="width: 300px;">
-                                <col style="width: 300px;">
-                                <col style="width: 400px;">
-                            </colgroup>
-                            <thead class="k-table-thead">
-                                <tr role="none" class="k-table-row">
-                                    <th colspan="1" rowspan="1" id="k-grid-lc-hdr-1" role="columnheader" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Ship Country</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" rowspan="1" id="k-grid-lc-hdr-2" role="columnheader" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Ship City</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" rowspan="1" id="k-grid-lc-hdr-3" role="columnheader" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Ship Address</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                </div>
-                <div role="none" class="k-grid-container">
-                    <div role="none" class="k-grid-sticky-container">
-                        <div class="k-grid-content-locked" role="none" style="width: 400px;">
-                            <table class="k-grid-group-sticky-header-table k-grid-table k-table" role="none">
+                    <div role="none" class="k-grid-container">
+                        <div role="none" class="k-grid-sticky-container">
+                            <div class="k-grid-content-locked" role="none" style="width: 400px;">
+                                <table class="k-grid-group-sticky-header-table k-grid-table k-table" role="none">
+                                    <colgroup>
+                                        <col class="k-group-col">
+                                        <col style="width: 150px;">
+                                        <col style="width: 250px;">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-table-group-row k-grouping-row k-table-row" role="row" aria-rowindex="6" style="height: 37px;">
+                                            <td colspan="3" role="gridcell" aria-expanded="true" tabindex="-1" class="k-table-td">
+                                                <p class="k-reset">
+                                                    <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M256 352 128 160h256z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                    Country: Germany
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-rowindex="7" aria-owns="k-grid-lc-cell-1 k-grid-lc-cell-2 k-grid-lc-cell-3" style="height: 36px;">
+                                            <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                            </td>
+                                            <td role="gridcell" tabindex="-1" class="k-table-td">10249</td>
+                                            <td role="gridcell" tabindex="-1" class="k-table-td">Toms Spezialitäten</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-grid-header-wrap" role="none">
+                                <table class="k-grid-group-sticky-header-table k-grid-table k-table" role="none">
+                                    <colgroup>
+                                        <col style="width: 300px;">
+                                        <col style="width: 300px;">
+                                        <col style="width: 400px;">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-table-group-row k-grouping-row k-table-row" role="row" aria-rowindex="6" style="height: 37px;">
+                                            <td colspan="3" role="gridcell" tabindex="-1" class="k-table-td">
+                                                <p class="k-reset">
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-rowindex="7" style="height: 36px;">
+                                            <td id="k-grid-lc-cell-1" role="gridcell" tabindex="-1" class="k-table-td">Germany</td>
+                                            <td id="k-grid-lc-cell-2" role="gridcell" tabindex="-1" class="k-table-td">Münster</td>
+                                            <td id="k-grid-lc-cell-3" role="gridcell" tabindex="-1" class="k-table-td">Luisenstr. 48</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-grid-content-locked" role="none" style="width: 400px; height: 464px;">
+                            <table role="none" class="k-grid-table k-table">
                                 <colgroup>
                                     <col class="k-group-col">
                                     <col style="width: 150px;">
                                     <col style="width: 250px;">
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr class="k-table-group-row k-grouping-row k-table-row" role="row" aria-rowindex="6" style="height: 37px;">
-                                        <td colspan="3" role="gridcell" aria-expanded="true" tabindex="-1" class="k-table-td">
+                                    <tr class="k-table-group-row k-grouping-row k-table-row" role="row" style="height: 37px;">
+                                        <td colspan="3" role="gridcell" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M256 352 128 160h256z"></path>
+                                                        <path d="M256 352 128 160h256z">
+                                                        </path>
                                                     </svg>
-                                                </span>Country: Germany
+                                                </span>
+                                                Country: France
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-rowindex="7" aria-owns="k-grid-lc-cell-1 k-grid-lc-cell-2 k-grid-lc-cell-3" style="height: 36px;">
-                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                        <td role="gridcell" tabindex="-1" class="k-table-td">10249</td>
-                                        <td role="gridcell" tabindex="-1" class="k-table-td">Toms Spezialitäten</td>
+                                    <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-4 k-grid-lc-cell-5 k-grid-lc-cell-6" style="height: 36px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">10248</td>
+                                        <td role="gridcell" class="k-table-td">Vins et alcools Chevalier</td>
                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="k-grid-header-wrap" role="none">
-                            <table class="k-grid-group-sticky-header-table k-grid-table k-table" role="none">
-                                <colgroup>
-                                    <col style="width: 300px;">
-                                    <col style="width: 300px;">
-                                    <col style="width: 400px;">
-                                </colgroup>
-                                <tbody class="k-table-tbody">
-                                    <tr class="k-table-group-row k-grouping-row k-table-row" role="row" aria-rowindex="6" style="height: 37px;">
-                                        <td colspan="3" role="gridcell" tabindex="-1" class="k-table-td">
-                                            <p class="k-reset"></p>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-7 k-grid-lc-cell-8 k-grid-lc-cell-9" style="height: 36px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">10251</td>
+                                        <td role="gridcell" class="k-table-td">Victuailles en stock</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-10 k-grid-lc-cell-11 k-grid-lc-cell-12" style="height: 36px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">10265</td>
+                                        <td role="gridcell" class="k-table-td">Blondel père et fils</td>
+                                    </tr>
+                                    <tr class="k-group-footer k-table-row" role="row" aria-owns="k-grid-lc-cell-28 k-grid-lc-cell-29 k-grid-lc-cell-30" style="height: 37px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">Total items: 3</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row" role="row" style="height: 37px;">
+                                        <td colspan="3" role="gridcell" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                Country: Germany
+                                            </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-rowindex="7" style="height: 36px;">
-                                        <td id="k-grid-lc-cell-1" role="gridcell" tabindex="-1" class="k-table-td">Germany</td>
-                                        <td id="k-grid-lc-cell-2" role="gridcell" tabindex="-1" class="k-table-td">Münster</td>
-                                        <td id="k-grid-lc-cell-3" role="gridcell" tabindex="-1" class="k-table-td">Luisenstr. 48</td>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-13 k-grid-lc-cell-14 k-grid-lc-cell-15" style="height: 36px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">10249</td>
+                                        <td role="gridcell" class="k-table-td">Toms Spezialitäten</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-16 k-grid-lc-cell-17 k-grid-lc-cell-18" style="height: 36px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">10253</td>
+                                        <td role="gridcell" class="k-table-td">Toms Spezialitäten</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-19 k-grid-lc-cell-20 k-grid-lc-cell-21" style="height: 36px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">10260</td>
+                                        <td role="gridcell" class="k-table-td">Ottilies Käseladen</td>
+                                    </tr>
+                                    <tr class="k-group-footer k-table-row" role="row" aria-owns="k-grid-lc-cell-31 k-grid-lc-cell-32 k-grid-lc-cell-33" style="height: 37px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">Total items: 3</td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row" role="row" style="height: 37px;">
+                                        <td colspan="3" role="gridcell" class="k-table-td">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 352 128 160h256z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                Country: Brazil
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-22 k-grid-lc-cell-23 k-grid-lc-cell-24" style="height: 36px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">10250</td>
+                                        <td role="gridcell" class="k-table-td">Hanari Carnes</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-25 k-grid-lc-cell-26 k-grid-lc-cell-27" style="height: 36px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">10254</td>
+                                        <td role="gridcell" class="k-table-td">Hanari Carnes</td>
+                                    </tr>
+                                    <tr class="k-group-footer k-table-row" role="row" aria-owns="k-grid-lc-cell-34 k-grid-lc-cell-35 k-grid-lc-cell-36" style="height: 37px;">
+                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td role="gridcell" class="k-table-td">Total items: 2</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div class="k-grid-content-locked" role="none" style="width: 400px; height: 464px;">
-                        <table role="none" class="k-grid-table k-table">
-                            <colgroup>
-                                <col class="k-group-col">
-                                <col style="width: 150px;">
-                                <col style="width: 250px;">
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row" style="height: 37px;">
-                                    <td colspan="3" role="gridcell" class="k-table-td">
-                                        <p class="k-reset">
-                                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M256 352 128 160h256z"></path>
-                                                </svg>
-                                            </span>Country: France
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-4 k-grid-lc-cell-5 k-grid-lc-cell-6" style="height: 36px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td">10248</td>
-                                    <td role="gridcell" class="k-table-td">Vins et alcools Chevalier</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-7 k-grid-lc-cell-8 k-grid-lc-cell-9" style="height: 36px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td">10251</td>
-                                    <td role="gridcell" class="k-table-td">Victuailles en stock</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-10 k-grid-lc-cell-11 k-grid-lc-cell-12" style="height: 36px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td">10265</td>
-                                    <td role="gridcell" class="k-table-td">Blondel père et fils</td>
-                                </tr>
-                                <tr class="k-group-footer k-table-row" role="row" aria-owns="k-grid-lc-cell-28 k-grid-lc-cell-29 k-grid-lc-cell-30" style="height: 37px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td"></td>
-                                    <td role="gridcell" class="k-table-td">Total items: 3</td>
-                                </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row" style="height: 37px;">
-                                    <td colspan="3" role="gridcell" class="k-table-td">
-                                        <p class="k-reset">
-                                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M256 352 128 160h256z"></path>
-                                                </svg>
-                                            </span>Country: Germany
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-13 k-grid-lc-cell-14 k-grid-lc-cell-15" style="height: 36px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td">10249</td>
-                                    <td role="gridcell" class="k-table-td">Toms Spezialitäten</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-16 k-grid-lc-cell-17 k-grid-lc-cell-18" style="height: 36px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td">10253</td>
-                                    <td role="gridcell" class="k-table-td">Toms Spezialitäten</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-19 k-grid-lc-cell-20 k-grid-lc-cell-21" style="height: 36px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td">10260</td>
-                                    <td role="gridcell" class="k-table-td">Ottilies Käseladen</td>
-                                </tr>
-                                <tr class="k-group-footer k-table-row" role="row" aria-owns="k-grid-lc-cell-31 k-grid-lc-cell-32 k-grid-lc-cell-33" style="height: 37px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td"></td>
-                                    <td role="gridcell" class="k-table-td">Total items: 3</td>
-                                </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row" style="height: 37px;">
-                                    <td colspan="3" role="gridcell" class="k-table-td">
-                                        <p class="k-reset">
-                                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M256 352 128 160h256z"></path>
-                                                </svg>
-                                            </span>Country: Brazil
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row" role="row" aria-owns="k-grid-lc-cell-22 k-grid-lc-cell-23 k-grid-lc-cell-24" style="height: 36px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td">10250</td>
-                                    <td role="gridcell" class="k-table-td">Hanari Carnes</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row" role="row" aria-owns="k-grid-lc-cell-25 k-grid-lc-cell-26 k-grid-lc-cell-27" style="height: 36px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td">10254</td>
-                                    <td role="gridcell" class="k-table-td">Hanari Carnes</td>
-                                </tr>
-                                <tr class="k-group-footer k-table-row" role="row" aria-owns="k-grid-lc-cell-34 k-grid-lc-cell-35 k-grid-lc-cell-36" style="height: 37px;">
-                                    <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                    <td role="gridcell" class="k-table-td"></td>
-                                    <td role="gridcell" class="k-table-td">Total items: 2</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="k-auto-scrollable k-grid-content" role="none" style="width: 605px; height: 465px;">
-                        <table role="none" class="k-grid-table k-table">
-                            <colgroup>
-                                <col style="width: 300px;">
-                                <col style="width: 300px;">
-                                <col style="width: 400px;">
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="none" style="height: 37px;">
-                                    <td colspan="3" role="none" class="k-table-td">
-                                        <p class="k-reset"></p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row" role="none" style="height: 36px;">
-                                    <td id="k-grid-lc-cell-4" role="gridcell" class="k-table-td">France</td>
-                                    <td id="k-grid-lc-cell-5" role="gridcell" class="k-table-td">Reims</td>
-                                    <td id="k-grid-lc-cell-6" role="gridcell" class="k-table-td">59 rue de l'Abbaye</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row" role="none" style="height: 36px;">
-                                    <td id="k-grid-lc-cell-7" role="gridcell" class="k-table-td">France</td>
-                                    <td id="k-grid-lc-cell-8" role="gridcell" class="k-table-td">Lyon</td>
-                                    <td id="k-grid-lc-cell-9" role="gridcell" class="k-table-td">2, rue du Commerce</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row" role="none" style="height: 36px;">
-                                    <td id="k-grid-lc-cell-10" role="gridcell" class="k-table-td">France</td>
-                                    <td id="k-grid-lc-cell-11" role="gridcell" class="k-table-td">Strasbourg</td>
-                                    <td id="k-grid-lc-cell-12" role="gridcell" class="k-table-td">24, place Kléber</td>
-                                </tr>
-                                <tr class="k-group-footer k-table-row" role="none" style="height: 37px;">
-                                    <td id="k-grid-lc-cell-28" role="gridcell" class="k-table-td"></td>
-                                    <td id="k-grid-lc-cell-29" role="gridcell" class="k-table-td"></td>
-                                    <td id="k-grid-lc-cell-30" role="gridcell" class="k-table-td"></td>
-                                </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="none" style="height: 37px;">
-                                    <td colspan="3" role="none" class="k-table-td">
-                                        <p class="k-reset"></p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row" role="none" style="height: 36px;">
-                                    <td id="k-grid-lc-cell-13" role="gridcell" class="k-table-td">Germany</td>
-                                    <td id="k-grid-lc-cell-14" role="gridcell" class="k-table-td">Münster</td>
-                                    <td id="k-grid-lc-cell-15" role="gridcell" class="k-table-td">Luisenstr. 48</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row" role="none" style="height: 36px;">
-                                    <td id="k-grid-lc-cell-16" role="gridcell" class="k-table-td">Germany</td>
-                                    <td id="k-grid-lc-cell-17" role="gridcell" class="k-table-td">Münster</td>
-                                    <td id="k-grid-lc-cell-18" role="gridcell" class="k-table-td">Luisenstr. 48</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row" role="none" style="height: 36px;">
-                                    <td id="k-grid-lc-cell-19" role="gridcell" class="k-table-td">Germany</td>
-                                    <td id="k-grid-lc-cell-20" role="gridcell" class="k-table-td">Köln</td>
-                                    <td id="k-grid-lc-cell-21" role="gridcell" class="k-table-td">Mehrheimerstr. 369</td>
-                                </tr>
-                                <tr class="k-group-footer k-table-row" role="none" style="height: 37px;">
-                                    <td id="k-grid-lc-cell-31" role="gridcell" class="k-table-td"></td>
-                                    <td id="k-grid-lc-cell-32" role="gridcell" class="k-table-td"></td>
-                                    <td id="k-grid-lc-cell-33" role="gridcell" class="k-table-td"></td>
-                                </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="none" style="height: 37px;">
-                                    <td colspan="3" role="none" class="k-table-td">
-                                        <p class="k-reset"></p>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row" role="none" style="height: 36px;">
-                                    <td id="k-grid-lc-cell-22" role="gridcell" class="k-table-td">Brazil</td>
-                                    <td id="k-grid-lc-cell-23" role="gridcell" class="k-table-td">Rio de Janeiro</td>
-                                    <td id="k-grid-lc-cell-24" role="gridcell" class="k-table-td">Rua do Paço, 67</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row k-table-alt-row" role="none" style="height: 36px;">
-                                    <td id="k-grid-lc-cell-25" role="gridcell" class="k-table-td">Brazil</td>
-                                    <td id="k-grid-lc-cell-26" role="gridcell" class="k-table-td">Rio de Janeiro</td>
-                                    <td id="k-grid-lc-cell-27" role="gridcell" class="k-table-td">Rua do Paço, 67</td>
-                                </tr>
-                                <tr class="k-group-footer k-table-row" role="none" style="height: 37px;">
-                                    <td id="k-grid-lc-cell-34" role="gridcell" class="k-table-td"></td>
-                                    <td id="k-grid-lc-cell-35" role="gridcell" class="k-table-td"></td>
-                                    <td id="k-grid-lc-cell-36" role="gridcell" class="k-table-td"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div role="none" class="k-grid-sticky-container k-pos-bottom">
-                        <div class="k-grid-content-locked" role="none" style="width: 400px;">
-                            <table class="k-grid-group-sticky-footer-table k-grid-table k-table" role="none">
-                                <colgroup>
-                                    <col class="k-group-col">
-                                    <col style="width: 150px;">
-                                    <col style="width: 250px;">
-                                </colgroup>
-                                <tbody class="k-table-tbody">
-                                    <tr class="k-group-footer k-table-row" role="row" aria-rowindex="5" aria-owns="k-grid-lc-cell-37 k-grid-lc-cell-38 k-grid-lc-cell-39">
-                                        <td class="k-table-group-td k-group-cell k-table-td" role="presentation"></td>
-                                        <td role="gridcell" tabindex="-1" class="k-table-td"></td>
-                                        <td role="gridcell" tabindex="-1" class="k-table-td">Total items: 3</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="k-grid-footer-wrap" role="none">
-                            <table class="k-grid-group-sticky-footer-table k-grid-table k-table" role="none">
+                        <div class="k-auto-scrollable k-grid-content" role="none" style="width: 605px; height: 465px;">
+                            <table role="none" class="k-grid-table k-table">
                                 <colgroup>
                                     <col style="width: 300px;">
                                     <col style="width: 300px;">
                                     <col style="width: 400px;">
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr class="k-group-footer k-table-row" role="row" aria-rowindex="5" style="height: 37px;">
-                                        <td id="k-grid-lc-cell-37" role="gridcell" tabindex="-1" class="k-table-td"></td>
-                                        <td id="k-grid-lc-cell-38" role="gridcell" tabindex="-1" class="k-table-td"></td>
-                                        <td id="k-grid-lc-cell-39" role="gridcell" tabindex="-1" class="k-table-td"></td>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row" role="none" style="height: 37px;">
+                                        <td colspan="3" role="none" class="k-table-td">
+                                            <p class="k-reset">
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row" role="none" style="height: 36px;">
+                                        <td id="k-grid-lc-cell-4" role="gridcell" class="k-table-td">France</td>
+                                        <td id="k-grid-lc-cell-5" role="gridcell" class="k-table-td">Reims</td>
+                                        <td id="k-grid-lc-cell-6" role="gridcell" class="k-table-td">59 rue de l'Abbaye</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="none" style="height: 36px;">
+                                        <td id="k-grid-lc-cell-7" role="gridcell" class="k-table-td">France</td>
+                                        <td id="k-grid-lc-cell-8" role="gridcell" class="k-table-td">Lyon</td>
+                                        <td id="k-grid-lc-cell-9" role="gridcell" class="k-table-td">2, rue du Commerce</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row" role="none" style="height: 36px;">
+                                        <td id="k-grid-lc-cell-10" role="gridcell" class="k-table-td">France</td>
+                                        <td id="k-grid-lc-cell-11" role="gridcell" class="k-table-td">Strasbourg</td>
+                                        <td id="k-grid-lc-cell-12" role="gridcell" class="k-table-td">24, place Kléber</td>
+                                    </tr>
+                                    <tr class="k-group-footer k-table-row" role="none" style="height: 37px;">
+                                        <td id="k-grid-lc-cell-28" role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td id="k-grid-lc-cell-29" role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td id="k-grid-lc-cell-30" role="gridcell" class="k-table-td">
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row" role="none" style="height: 37px;">
+                                        <td colspan="3" role="none" class="k-table-td">
+                                            <p class="k-reset">
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="none" style="height: 36px;">
+                                        <td id="k-grid-lc-cell-13" role="gridcell" class="k-table-td">Germany</td>
+                                        <td id="k-grid-lc-cell-14" role="gridcell" class="k-table-td">Münster</td>
+                                        <td id="k-grid-lc-cell-15" role="gridcell" class="k-table-td">Luisenstr. 48</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row" role="none" style="height: 36px;">
+                                        <td id="k-grid-lc-cell-16" role="gridcell" class="k-table-td">Germany</td>
+                                        <td id="k-grid-lc-cell-17" role="gridcell" class="k-table-td">Münster</td>
+                                        <td id="k-grid-lc-cell-18" role="gridcell" class="k-table-td">Luisenstr. 48</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="none" style="height: 36px;">
+                                        <td id="k-grid-lc-cell-19" role="gridcell" class="k-table-td">Germany</td>
+                                        <td id="k-grid-lc-cell-20" role="gridcell" class="k-table-td">Köln</td>
+                                        <td id="k-grid-lc-cell-21" role="gridcell" class="k-table-td">Mehrheimerstr. 369</td>
+                                    </tr>
+                                    <tr class="k-group-footer k-table-row" role="none" style="height: 37px;">
+                                        <td id="k-grid-lc-cell-31" role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td id="k-grid-lc-cell-32" role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td id="k-grid-lc-cell-33" role="gridcell" class="k-table-td">
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-group-row k-grouping-row k-table-row" role="none" style="height: 37px;">
+                                        <td colspan="3" role="none" class="k-table-td">
+                                            <p class="k-reset">
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row" role="none" style="height: 36px;">
+                                        <td id="k-grid-lc-cell-22" role="gridcell" class="k-table-td">Brazil</td>
+                                        <td id="k-grid-lc-cell-23" role="gridcell" class="k-table-td">Rio de Janeiro</td>
+                                        <td id="k-grid-lc-cell-24" role="gridcell" class="k-table-td">Rua do Paço, 67</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="none" style="height: 36px;">
+                                        <td id="k-grid-lc-cell-25" role="gridcell" class="k-table-td">Brazil</td>
+                                        <td id="k-grid-lc-cell-26" role="gridcell" class="k-table-td">Rio de Janeiro</td>
+                                        <td id="k-grid-lc-cell-27" role="gridcell" class="k-table-td">Rua do Paço, 67</td>
+                                    </tr>
+                                    <tr class="k-group-footer k-table-row" role="none" style="height: 37px;">
+                                        <td id="k-grid-lc-cell-34" role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td id="k-grid-lc-cell-35" role="gridcell" class="k-table-td">
+                                        </td>
+                                        <td id="k-grid-lc-cell-36" role="gridcell" class="k-table-td">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                        <div role="none" class="k-grid-sticky-container k-pos-bottom">
+                            <div class="k-grid-content-locked" role="none" style="width: 400px;">
+                                <table class="k-grid-group-sticky-footer-table k-grid-table k-table" role="none">
+                                    <colgroup>
+                                        <col class="k-group-col">
+                                        <col style="width: 150px;">
+                                        <col style="width: 250px;">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-group-footer k-table-row" role="row" aria-rowindex="5" aria-owns="k-grid-lc-cell-37 k-grid-lc-cell-38 k-grid-lc-cell-39">
+                                            <td class="k-table-group-td k-group-cell k-table-td" role="presentation">
+                                            </td>
+                                            <td role="gridcell" tabindex="-1" class="k-table-td">
+                                            </td>
+                                            <td role="gridcell" tabindex="-1" class="k-table-td">Total items: 3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-grid-footer-wrap" role="none">
+                                <table class="k-grid-group-sticky-footer-table k-grid-table k-table" role="none">
+                                    <colgroup>
+                                        <col style="width: 300px;">
+                                        <col style="width: 300px;">
+                                        <col style="width: 400px;">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-group-footer k-table-row" role="row" aria-rowindex="5" style="height: 37px;">
+                                            <td id="k-grid-lc-cell-37" role="gridcell" tabindex="-1" class="k-table-td">
+                                            </td>
+                                            <td id="k-grid-lc-cell-38" role="gridcell" tabindex="-1" class="k-table-td">
+                                            </td>
+                                            <td id="k-grid-lc-cell-39" role="gridcell" tabindex="-1" class="k-table-td">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,469 +1,482 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             max-width: 1240px;
-        }
-        .k-animation-container {
+            }
+            .k-animation-container {
             width: min-content;
             max-width: 100%;
             position: relative;
             overflow: visible;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <span>HH:mm:ss:SSS tt</span>
-        <span>HH:mm:ss tt</span>
-        <span>HH</span>
-        <section>
-            <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container">
-                    <div class="k-popup">
-                        <div class="k-timeselector" role="group" aria-label="Time selector">
-                            <div class="k-time-header">
-                                <span class="k-title">13:14:07:189 PM</span>
-                                <button class="k-time-now k-button k-button-flat">
-                                    <span class="k-button-text">Now</span>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-3">
+            <span>HH:mm:ss:SSS tt</span>
+            <span>HH:mm:ss tt</span>
+            <span>HH</span>
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popup">
+                            <div class="k-timeselector" role="group" aria-label="Time selector">
+                                <div class="k-time-header">
+                                    <span class="k-title">13:14:07:189 PM</span>
+                                    <button class="k-time-now k-button k-button-flat">
+                                        <span class="k-button-text">Now</span>
+                                    </button>
+                                </div>
+                                <div class="k-time-list-container">
+                                    <span class="k-time-highlight">
+                                    </span>
+                                    <div class="k-time-list-wrapper k-focus">
+                                        <span class="k-title">Hour</span>
+                                        <div class="k-time-list" role="listbox" aria-label="Hour">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>00</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>01</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>02</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>03</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>04</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>05</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>06</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>07</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>08</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>09</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-time-separator">:</div>
+                                    <div class="k-time-list-wrapper">
+                                        <span class="k-title">Minute</span>
+                                        <div class="k-time-list" role="listbox" aria-label="Minute">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>00</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>01</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>02</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>03</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>04</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>05</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>06</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>07</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>08</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>09</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-time-separator">:</div>
+                                    <div class="k-time-list-wrapper">
+                                        <span class="k-title">Second</span>
+                                        <div class="k-time-list" role="listbox" aria-label="Second">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>00</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>01</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>02</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>03</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>04</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>05</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>06</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>07</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>08</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>09</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-time-separator">:</div>
+                                    <div class="k-time-list-wrapper">
+                                        <span class="k-title">Millisecond</span>
+                                        <div class="k-time-list" role="listbox" aria-label="Millisecond">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>000</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>001</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>002</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>003</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>004</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>005</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>006</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>007</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>008</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>009</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-time-list-wrapper">
+                                        <span class="k-title">AM/PM</span>
+                                        <div class="k-time-list" role="listbox" aria-label="AM/PM">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>AM</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>PM</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal k-time-footer">
+                                <button class="k-time-cancel k-button">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-time-accept k-button k-button-primary">
+                                    <span class="k-button-text">Set</span>
                                 </button>
                             </div>
-                            <div class="k-time-list-container">
-                                <span class="k-time-highlight"></span>
-                                <div class="k-time-list-wrapper k-focus">
-                                    <span class="k-title">Hour</span>
-                                    <div class="k-time-list" role="listbox" aria-label="Hour">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>00</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>01</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>02</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>03</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>04</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>05</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>06</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>07</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>08</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>09</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="k-time-separator">:</div>
-                                <div class="k-time-list-wrapper">
-                                    <span class="k-title">Minute</span>
-                                    <div class="k-time-list" role="listbox" aria-label="Minute">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>00</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>01</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>02</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>03</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>04</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>05</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>06</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>07</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>08</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>09</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="k-time-separator">:</div>
-                                <div class="k-time-list-wrapper">
-                                    <span class="k-title">Second</span>
-                                    <div class="k-time-list" role="listbox" aria-label="Second">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>00</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>01</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>02</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>03</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>04</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>05</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>06</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>07</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>08</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>09</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="k-time-separator">:</div>
-                                <div class="k-time-list-wrapper">
-                                    <span class="k-title">Millisecond</span>
-                                    <div class="k-time-list" role="listbox" aria-label="Millisecond">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>000</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>001</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>002</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>003</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>004</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>005</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>006</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>007</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>008</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>009</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="k-time-list-wrapper">
-                                    <span class="k-title">AM/PM</span>
-                                    <div class="k-time-list" role="listbox" aria-label="AM/PM">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>AM</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>PM</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="k-actions k-actions-stretched k-actions-horizontal k-time-footer">
-                            <button class="k-time-cancel k-button">
-                                <span class="k-button-text">Cancel</span>
-                            </button>
-                            <button class="k-time-accept k-button k-button-primary">
-                                <span class="k-button-text">Set</span>
-                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container">
-                    <div class="k-popup">
-                        <div class="k-timeselector" role="group" aria-label="Time selector">
-                            <div class="k-time-header">
-                                <span class="k-title">10:00:00 AM</span>
-                                <button class="k-time-now k-button k-button-flat">
-                                    <span class="k-button-text">Now</span>
+            </section>
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popup">
+                            <div class="k-timeselector" role="group" aria-label="Time selector">
+                                <div class="k-time-header">
+                                    <span class="k-title">10:00:00 AM</span>
+                                    <button class="k-time-now k-button k-button-flat">
+                                        <span class="k-button-text">Now</span>
+                                    </button>
+                                </div>
+                                <div class="k-time-list-container">
+                                    <span class="k-time-highlight">
+                                    </span>
+                                    <div class="k-time-list-wrapper">
+                                        <span class="k-title">Hour</span>
+                                        <div class="k-time-list" role="listbox" aria-label="Hour">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>00</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>01</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>02</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>03</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>04</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>05</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>06</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>07</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>08</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>09</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-time-separator">:</div>
+                                    <div class="k-time-list-wrapper k-focus">
+                                        <span class="k-title">Minute</span>
+                                        <div class="k-time-list" role="listbox" aria-label="Minute">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>00</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>01</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>02</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>03</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>04</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>05</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>06</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>07</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>08</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>09</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-time-separator">:</div>
+                                    <div class="k-time-list-wrapper">
+                                        <span class="k-title">Second</span>
+                                        <div class="k-time-list" role="listbox" aria-label="Second">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>00</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>01</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>02</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>03</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>04</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>05</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>06</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>07</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>08</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>09</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-time-list-wrapper">
+                                        <span class="k-title">AM/PM</span>
+                                        <div class="k-time-list" role="listbox" aria-label="AM/PM">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>AM</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>PM</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal k-time-footer">
+                                <button class="k-time-cancel k-button">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-time-accept k-button k-button-primary">
+                                    <span class="k-button-text">Set</span>
                                 </button>
                             </div>
-                            <div class="k-time-list-container">
-                                <span class="k-time-highlight"></span>
-                                <div class="k-time-list-wrapper">
-                                    <span class="k-title">Hour</span>
-                                    <div class="k-time-list" role="listbox" aria-label="Hour">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>00</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>01</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>02</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>03</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>04</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>05</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>06</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>07</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>08</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>09</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="k-time-separator">:</div>
-                                <div class="k-time-list-wrapper k-focus">
-                                    <span class="k-title">Minute</span>
-                                    <div class="k-time-list" role="listbox" aria-label="Minute">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>00</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>01</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>02</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>03</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>04</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>05</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>06</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>07</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>08</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>09</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="k-time-separator">:</div>
-                                <div class="k-time-list-wrapper">
-                                    <span class="k-title">Second</span>
-                                    <div class="k-time-list" role="listbox" aria-label="Second">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>00</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>01</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>02</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>03</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>04</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>05</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>06</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>07</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>08</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>09</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="k-time-list-wrapper">
-                                    <span class="k-title">AM/PM</span>
-                                    <div class="k-time-list" role="listbox" aria-label="AM/PM">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>AM</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>PM</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="k-actions k-actions-stretched k-actions-horizontal k-time-footer">
-                            <button class="k-time-cancel k-button">
-                                <span class="k-button-text">Cancel</span>
-                            </button>
-                            <button class="k-time-accept k-button k-button-primary">
-                                <span class="k-button-text">Set</span>
-                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-animation-container k-animation-container-shown">
-                <div class="k-child-animation-container">
-                    <div class="k-popup">
-                        <div class="k-timeselector" role="group" aria-label="Time selector">
-                            <div class="k-time-header">
-                                <span class="k-title">10</span>
-                                <button class="k-time-now k-button k-button-flat">
-                                    <span class="k-button-text">Now</span>
-                                </button>
-                            </div>
-                            <div class="k-time-list-container">
-                                <span class="k-time-highlight"></span>
-                                <div class="k-time-list-wrapper">
-                                    <span class="k-title">Hour</span>
-                                    <div class="k-time-list" role="listbox" aria-label="Hour">
-                                        <div class="k-content k-scrollable k-time-container">
-                                            <ul class="k-reset" role="none" style="transform: translateY(97px);">
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>00</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>01</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>02</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>03</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>04</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>05</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>06</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>07</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>08</span>
-                                                </li>
-                                                <li class="k-item" role="option" aria-selected="false">
-                                                    <span>09</span>
-                                                </li>
-                                            </ul>
-                                            <div class="k-scrollable-placeholder"></div>
+            </section>
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popup">
+                            <div class="k-timeselector" role="group" aria-label="Time selector">
+                                <div class="k-time-header">
+                                    <span class="k-title">10</span>
+                                    <button class="k-time-now k-button k-button-flat">
+                                        <span class="k-button-text">Now</span>
+                                    </button>
+                                </div>
+                                <div class="k-time-list-container">
+                                    <span class="k-time-highlight">
+                                    </span>
+                                    <div class="k-time-list-wrapper">
+                                        <span class="k-title">Hour</span>
+                                        <div class="k-time-list" role="listbox" aria-label="Hour">
+                                            <div class="k-content k-scrollable k-time-container">
+                                                <ul class="k-reset" role="none" style="transform: translateY(97px);">
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>00</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>01</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>02</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>03</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>04</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>05</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>06</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>07</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>08</span>
+                                                    </li>
+                                                    <li class="k-item" role="option" aria-selected="false">
+                                                        <span>09</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="k-scrollable-placeholder">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="k-actions k-actions-stretched k-actions-horizontal k-time-footer">
-                            <button class="k-time-cancel k-button">
-                                <span class="k-button-text">Cancel</span>
-                            </button>
-                            <button class="k-time-accept k-button k-button-primary">
-                                <span class="k-button-text">Set</span>
-                            </button>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal k-time-footer">
+                                <button class="k-time-cancel k-button">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-time-accept k-button k-button-primary">
+                                    <span class="k-button-text">Set</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+        </div>
+    </body>
 </html>

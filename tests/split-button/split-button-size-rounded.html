@@ -1,880 +1,976 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             max-width: 1240px;
             grid-template-columns: 60px repeat(4, 1fr);
-        }
-        .wrapper {
+            }
+            .wrapper {
             display: flex;
             gap: 8px;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span>
-            <small>rounded / size</small>
-        </span>
-        <span>undefined</span>
-        <span>small</span>
-        <span>medium</span>
-        <span>large</span>
-        <span>undefined</span>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group">
-                <button class="k-button">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span>
+                <small>rounded / size</small>
+            </span>
+            <span>undefined</span>
+            <span>small</span>
+            <span>medium</span>
+            <span>large</span>
+            <span>undefined</span>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group">
+                    <button class="k-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group">
+                    <button class="k-button k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
             </div>
-            <div class="k-split-button k-button-group">
-                <button class="k-button k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group">
+                    <button class="k-button k-button-sm">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group">
+                    <button class="k-button k-button-sm k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group">
+                    <button class="k-button k-button-md">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group">
+                    <button class="k-button k-button-md k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group">
+                    <button class="k-button k-button-lg">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group">
+                    <button class="k-button k-button-lg k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <span>none</span>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-none">
+                    <button class="k-button k-rounded-none">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-none">
+                    <button class="k-button k-rounded-none k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-none">
+                    <button class="k-button k-button-sm k-rounded-none">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-none">
+                    <button class="k-button k-button-sm k-rounded-none k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-none">
+                    <button class="k-button k-button-md k-rounded-none">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-none">
+                    <button class="k-button k-button-md k-rounded-none k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-none">
+                    <button class="k-button k-button-lg k-rounded-none">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-none">
+                    <button class="k-button k-button-lg k-rounded-none k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <span>small</span>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-sm">
+                    <button class="k-button k-rounded-sm">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-sm">
+                    <button class="k-button k-rounded-sm k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-sm">
+                    <button class="k-button k-button-sm k-rounded-sm">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-sm">
+                    <button class="k-button k-button-sm k-rounded-sm k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-sm">
+                    <button class="k-button k-button-md k-rounded-sm">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-sm">
+                    <button class="k-button k-button-md k-rounded-sm k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-sm">
+                    <button class="k-button k-button-lg k-rounded-sm">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-sm">
+                    <button class="k-button k-button-lg k-rounded-sm k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <span>medium</span>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-rounded-md">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-rounded-md k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-sm k-rounded-md">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-sm k-rounded-md k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-rounded-md">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-rounded-md k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-lg k-rounded-md">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-lg k-rounded-md k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <span>large</span>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-lg">
+                    <button class="k-button k-rounded-lg">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-lg">
+                    <button class="k-button k-rounded-lg k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-lg">
+                    <button class="k-button k-button-sm k-rounded-lg">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-lg">
+                    <button class="k-button k-button-sm k-rounded-lg k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-lg">
+                    <button class="k-button k-button-md k-rounded-lg">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-lg">
+                    <button class="k-button k-button-md k-rounded-lg k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-lg">
+                    <button class="k-button k-button-lg k-rounded-lg">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-lg">
+                    <button class="k-button k-button-lg k-rounded-lg k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <span>full</span>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-full">
+                    <button class="k-button k-rounded-full">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-full">
+                    <button class="k-button k-rounded-full k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-full">
+                    <button class="k-button k-button-sm k-rounded-full">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-full">
+                    <button class="k-button k-button-sm k-rounded-full k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-sm k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-full">
+                    <button class="k-button k-button-md k-rounded-full">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-full">
+                    <button class="k-button k-button-md k-rounded-full k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="k-split-button k-button-group k-rounded-full">
+                    <button class="k-button k-button-lg k-rounded-full">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">text</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-full">
+                    <button class="k-button k-button-lg k-rounded-full k-icon-button" aria-label="Action">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-lg k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group">
-                <button class="k-button k-button-sm">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group">
-                <button class="k-button k-button-sm k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group">
-                <button class="k-button k-button-md">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group">
-                <button class="k-button k-button-md k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group">
-                <button class="k-button k-button-lg">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group">
-                <button class="k-button k-button-lg k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <span>none</span>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-none">
-                <button class="k-button k-rounded-none">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-none">
-                <button class="k-button k-rounded-none k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-none">
-                <button class="k-button k-button-sm k-rounded-none">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-none">
-                <button class="k-button k-button-sm k-rounded-none k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-none">
-                <button class="k-button k-button-md k-rounded-none">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-none">
-                <button class="k-button k-button-md k-rounded-none k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-none">
-                <button class="k-button k-button-lg k-rounded-none">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-none">
-                <button class="k-button k-button-lg k-rounded-none k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-none k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <span>small</span>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-sm">
-                <button class="k-button k-rounded-sm">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-sm">
-                <button class="k-button k-rounded-sm k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-sm">
-                <button class="k-button k-button-sm k-rounded-sm">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-sm">
-                <button class="k-button k-button-sm k-rounded-sm k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-sm">
-                <button class="k-button k-button-md k-rounded-sm">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-sm">
-                <button class="k-button k-button-md k-rounded-sm k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-sm">
-                <button class="k-button k-button-lg k-rounded-sm">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-sm">
-                <button class="k-button k-button-lg k-rounded-sm k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-sm k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <span>medium</span>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-md">
-                <button class="k-button k-rounded-md">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-md">
-                <button class="k-button k-rounded-md k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-md">
-                <button class="k-button k-button-sm k-rounded-md">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-md">
-                <button class="k-button k-button-sm k-rounded-md k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-md">
-                <button class="k-button k-button-md k-rounded-md">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-md">
-                <button class="k-button k-button-md k-rounded-md k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-md">
-                <button class="k-button k-button-lg k-rounded-md">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-md">
-                <button class="k-button k-button-lg k-rounded-md k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-md k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <span>large</span>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-lg">
-                <button class="k-button k-rounded-lg">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-lg">
-                <button class="k-button k-rounded-lg k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-lg">
-                <button class="k-button k-button-sm k-rounded-lg">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-lg">
-                <button class="k-button k-button-sm k-rounded-lg k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-lg">
-                <button class="k-button k-button-md k-rounded-lg">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-lg">
-                <button class="k-button k-button-md k-rounded-lg k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-lg">
-                <button class="k-button k-button-lg k-rounded-lg">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-lg">
-                <button class="k-button k-button-lg k-rounded-lg k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-lg k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <span>full</span>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-full">
-                <button class="k-button k-rounded-full">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-full">
-                <button class="k-button k-rounded-full k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-full">
-                <button class="k-button k-button-sm k-rounded-full">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-full">
-                <button class="k-button k-button-sm k-rounded-full k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-sm k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-full">
-                <button class="k-button k-button-md k-rounded-full">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-full">
-                <button class="k-button k-button-md k-rounded-full k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-md k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="k-split-button k-button-group k-rounded-full">
-                <button class="k-button k-button-lg k-rounded-full">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">text</span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-split-button k-button-group k-rounded-full">
-                <button class="k-button k-button-lg k-rounded-full k-icon-button" aria-label="Action">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-split-button-arrow k-button k-button-lg k-rounded-full k-icon-button" aria-label="Toggle dropdown" aria-expanded="false" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

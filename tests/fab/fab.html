@@ -1,326 +1,351 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js">
+        </script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: 200px repeat(3, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span></span>
-        <span>Text</span>
-        <span>Text + Icon</span>
-        <span>Icon</span>
-        <span>undefined</span>
-        <span>
-            <button type="button" class="k-fab">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>base</span>
-        <span>
-            <button type="button" class="k-fab k-fab-base">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-base">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-base" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>primary</span>
-        <span>
-            <button type="button" class="k-fab k-fab-primary">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-primary">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-primary" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>secondary</span>
-        <span>
-            <button type="button" class="k-fab k-fab-secondary">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-secondary">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-secondary" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>tertiary</span>
-        <span>
-            <button type="button" class="k-fab k-fab-tertiary">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-tertiary">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-tertiary" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>success</span>
-        <span>
-            <button type="button" class="k-fab k-fab-success">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-success">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-success" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>warning</span>
-        <span>
-            <button type="button" class="k-fab k-fab-warning">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-warning">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-warning" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>error</span>
-        <span>
-            <button type="button" class="k-fab k-fab-error">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-error">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-error" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>info</span>
-        <span>
-            <button type="button" class="k-fab k-fab-info">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-info">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-info" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>light</span>
-        <span>
-            <button type="button" class="k-fab k-fab-light">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-light">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-light" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>dark</span>
-        <span>
-            <button type="button" class="k-fab k-fab-dark">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-dark">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-dark" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-        <span>inverse</span>
-        <span>
-            <button type="button" class="k-fab k-fab-inverse">
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-inverse">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-fab-text">Create</span>
-            </button>
-        </span>
-        <span>
-            <button type="button" class="k-fab k-fab-inverse" aria-label="Action">
-                <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-        </span>
-    </div>
-</body>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span>
+            </span>
+            <span>Text</span>
+            <span>Text + Icon</span>
+            <span>Icon</span>
+            <span>undefined</span>
+            <span>
+                <button type="button" class="k-fab">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>base</span>
+            <span>
+                <button type="button" class="k-fab k-fab-base">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-base">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-base" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>primary</span>
+            <span>
+                <button type="button" class="k-fab k-fab-primary">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-primary">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-primary" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>secondary</span>
+            <span>
+                <button type="button" class="k-fab k-fab-secondary">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-secondary">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-secondary" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>tertiary</span>
+            <span>
+                <button type="button" class="k-fab k-fab-tertiary">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-tertiary">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-tertiary" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>success</span>
+            <span>
+                <button type="button" class="k-fab k-fab-success">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-success">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-success" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>warning</span>
+            <span>
+                <button type="button" class="k-fab k-fab-warning">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-warning">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-warning" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>error</span>
+            <span>
+                <button type="button" class="k-fab k-fab-error">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-error">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-error" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>info</span>
+            <span>
+                <button type="button" class="k-fab k-fab-info">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-info">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-info" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>light</span>
+            <span>
+                <button type="button" class="k-fab k-fab-light">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-light">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-light" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>dark</span>
+            <span>
+                <button type="button" class="k-fab k-fab-dark">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-dark">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-dark" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <span>inverse</span>
+            <span>
+                <button type="button" class="k-fab k-fab-inverse">
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-inverse">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="k-fab-text">Create</span>
+                </button>
+            </span>
+            <span>
+                <button type="button" class="k-fab k-fab-inverse" aria-label="Action">
+                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+        </div>
+    </body>
 </html>
