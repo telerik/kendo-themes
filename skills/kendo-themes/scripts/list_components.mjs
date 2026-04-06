@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const componentsPath = path.join(__dirname, 'components.json');
+const componentsPath = path.join(__dirname, '..', 'components.json');
 
 const data = JSON.parse(readFileSync(componentsPath, 'utf8'));
 const names = Object.keys(data.components || {}).sort((left, right) => left.localeCompare(right));

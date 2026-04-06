@@ -144,7 +144,7 @@ Variants can represent: **theme color** (primary, secondary, etc.), **fill mode*
 
 > **Best practice:** Always use design system tokens (`var(--kendo-color-*)`, `var(--kendo-spacing-*)`) in your overrides rather than hardcoded values. This ensures consistency across themes and swatches.
 
-For the full agent-facing guide, see [components.md](references/components.md). Use [components.json](components.json) for the compact tuple-based theme metadata (`_component`, `_option`, `components`, `theme_options`), or query it via `skills/kendo-themes/list_components.mjs` and `skills/kendo-themes/get_components.mjs`.
+For the full agent-facing guide, see [components.md](references/components.md). Use [components.json](components.json) for the compact tuple-based theme metadata (`_component`, `_option`, `components`, `theme_options`), or query it via `node ./scripts/list_components.mjs` and `node ./scripts/get_components.mjs`.
 
 ## Design System Sub-Systems
 
