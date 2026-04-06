@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.2-dev.0...v13.2.0-dev.0) (2026-04-06)
+
+
+### Features
+
+* derive spacing from a single step ([9a5b9ff](https://github.com/telerik/kendo-themes/commit/9a5b9ff7dd0bda4f719304b3a90b49867f07c6dd))
+
+
+
+
+
 ## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils
