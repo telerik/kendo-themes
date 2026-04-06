@@ -9,10 +9,6 @@ const styles = `
         gap: 10px;
         justify-items: start;
     }
-
-    .k-segmented-control-thumb {
-        width: 180px;
-    }
 `;
 
 export default () => (
@@ -20,7 +16,7 @@ export default () => (
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
 
-            <SegmentedControl>
+            <SegmentedControl thumbStyles={{ width: "20%" }}>
                 {SegmentedControlButton.states.map((state) => (
                     <SegmentedControlButton key={state} {...{ [state]: true }}>{state}</SegmentedControlButton>
                 ))}

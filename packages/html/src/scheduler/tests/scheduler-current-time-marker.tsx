@@ -1,5 +1,6 @@
 import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
+import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { Toolbar } from "../../toolbar";
 import { SchedulerBody, SchedulerCell, SchedulerContent, SchedulerEvent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimeline, SchedulerTimes, SchedulerToolbar, SchedulerWeek } from "..";
 import { Icon } from "../../icon";
@@ -20,13 +21,13 @@ export default () => (
                         Monday, June 10, 2013 - Friday, June 14, 2013
                         </Button>
                         <span className="k-spacer"></span>
-                        <ButtonGroup className="k-scheduler-views">
-                            <Button className="k-group-start">Day</Button>
-                            <Button selected>Week</Button>
-                            <Button>Month</Button>
-                            <Button>Timeline</Button>
-                            <Button className="k-group-end">Agenda</Button>
-                        </ButtonGroup>
+                        <SegmentedControl thumbStyles={{ width: "18%", left: "16%" }} className="k-scheduler-views">
+                            <SegmentedControlButton>Day</SegmentedControlButton>
+                            <SegmentedControlButton selected>Week</SegmentedControlButton>
+                            <SegmentedControlButton>Month</SegmentedControlButton>
+                            <SegmentedControlButton>Timeline</SegmentedControlButton>
+                            <SegmentedControlButton>Agenda</SegmentedControlButton>
+                        </SegmentedControl>
                     </SchedulerToolbar>
                 }
                 footer={
@@ -476,13 +477,13 @@ export default () => (
                         Monday, February 18, 2019
                             </Button>
                             <span className="k-spacer"></span>
-                            <ButtonGroup className="k-scheduler-views">
-                                <Button className="k-group-start">Day</Button>
-                                <Button>Week</Button>
-                                <Button>Month</Button>
-                                <Button selected>Timeline</Button>
-                                <Button className="k-group-end">Agenda</Button>
-                            </ButtonGroup>
+                            <SegmentedControl thumbStyles={{ width: "23%", left: "54%" }} className="k-scheduler-views">
+                                <SegmentedControlButton>Day</SegmentedControlButton>
+                                <SegmentedControlButton>Week</SegmentedControlButton>
+                                <SegmentedControlButton>Month</SegmentedControlButton>
+                                <SegmentedControlButton selected>Timeline</SegmentedControlButton>
+                                <SegmentedControlButton>Agenda</SegmentedControlButton>
+                            </SegmentedControl>
                         </SchedulerToolbar>
                     </>
                 }

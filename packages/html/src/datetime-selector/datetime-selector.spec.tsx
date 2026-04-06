@@ -1,7 +1,7 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
-import { ButtonGroup } from '../button-group';
 import { CalendarNormal } from '../calendar';
+import { SegmentedControl, SegmentedControlButton } from '../segmented-control';
 import { TimeSelector, TimeSelectorHeader } from '../time-selector';
 import { classNames, optionClassNames, Size } from '../misc';
 
@@ -59,11 +59,11 @@ export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React
             )}
             role="group"
             aria-label="Date and time selector">
-            <div className="k-datetime-buttongroup" role="tablist">
-                <ButtonGroup stretched role="presentation">
-                    <Button className="k-group-start" size={size} selected={tab === 'date'} role="tab" aria-selected={tab === 'date' ? 'true' : 'false'}>Date</Button>
-                    <Button className="k-group-end" size={size} selected={tab === 'time'} role="tab" aria-selected={tab === 'time' ? 'true' : 'false'}>Time</Button>
-                </ButtonGroup>
+            <div className="k-datetime-buttongroup">
+                <SegmentedControl stretched thumbStyles={tab === 'date' ? { width: "50%" } : { width: "50%", left: "50%" }} size={size}>
+                    <SegmentedControlButton selected={tab === 'date'}>Date</SegmentedControlButton>
+                    <SegmentedControlButton selected={tab === 'time'}>Time</SegmentedControlButton>
+                </SegmentedControl>
             </div>
             <div className="k-datetime-selector">
                 {tab === 'time'
@@ -119,9 +119,8 @@ DateTimeSelector.ariaSpec = {
     rules: [
         { selector: '.k-datetime-wrap', attribute: 'role=group', usage: 'Groups the date/time selector components.' },
         { selector: '.k-datetime-wrap', attribute: 'aria-label', usage: 'Describes the date/time selector purpose.' },
-        { selector: '.k-datetime-buttongroup', attribute: 'role=tablist', usage: 'The buttongroup acts as a tablist for Date/Time tabs.' },
-        { selector: '.k-datetime-buttongroup .k-button', attribute: 'role=tab', usage: 'Each tab button has role=tab.' },
-        { selector: '.k-datetime-buttongroup .k-button', attribute: 'aria-selected', usage: 'Indicates which tab is currently active.' },
+        { selector: '.k-datetime-buttongroup', attribute: 'role=group', usage: 'The segmented control acts as a group for Date/Time selection.' },
+        { selector: '.k-datetime-buttongroup .k-segmented-control-button', attribute: 'aria-pressed', usage: 'Indicates which option is currently active.' },
     ]
 };
 
