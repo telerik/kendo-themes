@@ -1,6 +1,7 @@
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
 import { Button } from '../../button';
 import { CalendarNormal } from '../../calendar';
+import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
 import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
 
 
@@ -44,10 +45,10 @@ export default () => (
                 >
                     <div className="k-datetime-wrap k-date-tab">
                         <div className="k-datetime-buttongroup">
-                            <div className="k-button-group k-button-group-stretched">
-                                <Button className="k-group-start" size="large" selected>Date</Button>
-                                <Button className="k-group-end" size="large">Time</Button>
-                            </div>
+                            <SegmentedControl thumbStyles={{ width: "50%" }} stretched size="large">
+                                <SegmentedControlButton selected>Date</SegmentedControlButton>
+                                <SegmentedControlButton>Time</SegmentedControlButton>
+                            </SegmentedControl>
                         </div>
                         <div className="k-datetime-selector">
                             <div className="k-datetime-calendar-wrap">
@@ -79,10 +80,10 @@ export default () => (
                 >
                     <div className="k-datetime-wrap k-time-tab">
                         <div className="k-datetime-buttongroup">
-                            <div className="k-button-group k-button-group-stretched">
-                                <Button className="k-group-start" size="large">Date</Button>
-                                <Button className="k-group-end" size="large" selected>Time</Button>
-                            </div>
+                            <SegmentedControl thumbStyles={{ width: "50%", left: "50%" }} stretched size="large">
+                                <SegmentedControlButton>Date</SegmentedControlButton>
+                                <SegmentedControlButton selected>Time</SegmentedControlButton>
+                            </SegmentedControl>
                         </div>
                         <div className="k-datetime-selector">
                             <div className="k-datetime-calendar-wrap">

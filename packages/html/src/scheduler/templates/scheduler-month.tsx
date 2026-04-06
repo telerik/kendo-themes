@@ -1,5 +1,6 @@
 import { ButtonGroup } from '../../button-group';
 import { Button } from '../../button';
+import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerToolbar, SchedulerEvent } from '../index';
 
 
@@ -19,13 +20,13 @@ export const SchedulerMonth = ({ style, ...props }: any) => (
                         Jun, 2024
                 </Button>
                 <span className="k-spacer"></span>
-                <ButtonGroup className="k-scheduler-views">
-                    <Button className="k-group-start">Day</Button>
-                    <Button>Week</Button>
-                    <Button selected>Month</Button>
-                    <Button>Timeline</Button>
-                    <Button className="k-group-end">Agenda</Button>
-                </ButtonGroup>
+                <SegmentedControl thumbStyles={{ width: "19%", left: "34%" }} className="k-scheduler-views">
+                    <SegmentedControlButton>Day</SegmentedControlButton>
+                    <SegmentedControlButton>Week</SegmentedControlButton>
+                    <SegmentedControlButton selected>Month</SegmentedControlButton>
+                    <SegmentedControlButton>Timeline</SegmentedControlButton>
+                    <SegmentedControlButton>Agenda</SegmentedControlButton>
+                </SegmentedControl>
             </SchedulerToolbar>
         }
         children={

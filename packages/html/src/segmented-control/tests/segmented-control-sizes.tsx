@@ -12,18 +12,6 @@ const styles = `
         align-items: center;
         justify-items: start;
     }
-
-    .k-segmented-control-thumb {
-        width: 100px;
-    }
-
-    .segmented-control-icons .k-segmented-control-thumb {
-        width: 45px;
-    }
-
-    .segmented-control-text .k-segmented-control-thumb {
-        width: 70px;
-    }
 `;
 
 export default () => (
@@ -38,9 +26,9 @@ export default () => (
             {SegmentedControl.options.size.map((size) => (
                 <>
                     <span>{`${size}`}</span>
-                    <SegmentedControlNormal size={size} />
-                    <SegmentedControlIcons size={size} className="segmented-control-icons" />
-                    <SegmentedControlText size={size} className="segmented-control-text" />
+                    <SegmentedControlNormal size={size} thumbStyles={{ width: "50%" }}/>
+                    <SegmentedControlIcons size={size} thumbStyles={{ width: "33%" }}/>
+                    <SegmentedControlText size={size} thumbStyles={{ width: "50%" }}/>
                 </>
             ))}
         </div>

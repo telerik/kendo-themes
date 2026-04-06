@@ -17,6 +17,7 @@ export type KendoSegmentedControlOptions = {
 export type KendoSegmentedControlProps = KendoSegmentedControlOptions & {
     stretched?: boolean;
     children?: React.ReactNode;
+    thumbStyles?: React.CSSProperties;
 };
 
 export type KendoSegmentedControlState = { [K in (typeof states)[number]]?: boolean };
@@ -31,6 +32,7 @@ export const SegmentedControl: KendoComponent<KendoSegmentedControlProps & Kendo
         size,
         stretched,
         children,
+        thumbStyles,
         ...other
     } = props;
 
@@ -49,7 +51,7 @@ export const SegmentedControl: KendoComponent<KendoSegmentedControlProps & Kendo
             )}
             role="group"
         >
-            <div className="k-segmented-control-thumb" aria-hidden="true"></div>
+            <div className="k-segmented-control-thumb" aria-hidden="true" style={thumbStyles}/>
             { children }
         </div>
     );

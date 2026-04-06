@@ -95,10 +95,9 @@ Scheduler.ariaSpec = {
         // Toolbar tools: views dropdown (select element on small screens)
         { selector: '.k-views-dropdown', attribute: 'aria-label', usage: 'The <select> element visible on the toolbar on small screens must have its aria-label set.' },
 
-        // View selector ButtonGroup — follows ButtonGroup spec (buttongroup_aria.md)
-        // The view selector ButtonGroup follows the ButtonGroup accessibility specification.
-        { selector: '.k-scheduler-views', attribute: 'role=group', usage: 'Follows ButtonGroup spec: sets the proper role for the group of view buttons.' },
-        { selector: '.k-scheduler-views .k-button', attribute: 'aria-pressed (when selected)', usage: 'Follows ButtonGroup spec: specifies the current state of the view ButtonGroup. Only the selected button within the group will have this attribute set to true.' },
+        // View selector SegmentedControl — follows SegmentedControl accessibility specification.
+        { selector: '.k-scheduler-views', attribute: 'role=group', usage: 'Follows SegmentedControl spec: sets the proper role for the group of view buttons.' },
+        { selector: '.k-scheduler-views .k-segmented-control-button', attribute: 'aria-pressed (when selected)', usage: 'Follows SegmentedControl spec: specifies the current state of the view SegmentedControl. Only the selected button within the group will have this attribute set to true.' },
 
         // Agenda view — grid roles
         { selector: '.k-scheduler-agendaview', attribute: 'role=grid', usage: 'The main table of the Agenda view must indicate it is a Data Grid.' },
