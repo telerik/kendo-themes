@@ -4,11 +4,11 @@ This reference explains the **component customization framework** for Kendo them
 
 Use [`../components.json`](../components.json) as the structured metadata source.
 
-For targeted lookup, prefer the helper scripts in the skill folder:
+For targeted lookup, run these helper scripts from the skill folder (for example, `cd skills/kendo-themes` first):
 
-- `node skills/kendo-themes/list_components.mjs`
-- `node skills/kendo-themes/get_components.mjs Button`
-- `node skills/kendo-themes/get_components.mjs Button Appbar Avatar`
+- `node scripts/list_components.mjs`
+- `node scripts/get_components.mjs Button`
+- `node scripts/get_components.mjs Button Appbar Avatar`
 
 The JSON is intentionally compact:
 
@@ -35,7 +35,7 @@ Example shape:
         ["fillMode", ["clear", "flat", "link", "outline", "solid"]],
         ["rounded", ["full", "large", "medium", "none", "small"]],
         ["size", ["large", "medium", "small"]],
-        ["themeColor", ["base", "dark", "error", "info", "inverse", "light", "primary", "secondary", "success", "tertiary", "warning"]]
+        ["themeColor", ["base", "error", "info", "inverse", "primary", "secondary", "success", "tertiary", "warning"]]
       ]
     ]
   },
@@ -43,7 +43,7 @@ Example shape:
     "fillMode": ["clear", "flat", "link", "outline", "solid"],
     "rounded": ["full", "large", "medium", "none", "small"],
     "size": ["large", "medium", "small", "xlarge", "xsmall", "xxlarge", "xxxlarge"],
-    "themeColor": ["base", "dark", "error", "info", "inherit", "inverse", "light", "primary", "secondary", "success", "tertiary", "warning"]
+    "themeColor": ["base", "error", "info", "inherit", "inverse", "primary", "secondary", "success", "tertiary", "warning"]
   }
 }
 ```
@@ -194,8 +194,8 @@ Combine the base selector with any supported options and states:
 
 ## Recommended Agent Workflow
 
-1. Use `list_components.mjs` when you need the available component names.
-2. Use `get_components.mjs` when you need only one or a few components.
+1. Use `scripts/list_components.mjs` when you need the available component names.
+2. Use `scripts/get_components.mjs` when you need only one or a few components.
 3. Read the tuple using `_component`.
 4. Use tuple index `0` for `className`.
 5. If tuple index `1` exists, read it as supported `states`; otherwise states are empty.

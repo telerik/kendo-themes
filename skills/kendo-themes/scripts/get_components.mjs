@@ -5,12 +5,12 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const componentsPath = path.join(__dirname, 'components.json');
+const componentsPath = path.join(__dirname, '..', 'components.json');
 
 const queryNames = process.argv.slice(2);
 
 if (queryNames.length === 0) {
-    process.stderr.write('Usage: node skills/kendo-themes/get_components.mjs <ComponentName> [ComponentName...]\n');
+    process.stderr.write('Usage: node scripts/get_components.mjs <ComponentName> [ComponentName...]\n');
     process.exit(1);
 }
 

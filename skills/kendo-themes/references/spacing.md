@@ -2,6 +2,37 @@
 
 The spacing system provides a consistent scale for margins, padding, gaps, and sizing across all components.
 
+## Base Variable
+
+All spacing values are computed from a single base unit. Setting `--kendo-spacing-base` (or `$kendo-spacing-base` in Sass) scales the entire spacing map proportionally:
+
+```css
+:root {
+  --kendo-spacing-base: 0.3rem; /* slightly larger than the 0.25rem default */
+}
+```
+
+Equivalent Sass override:
+
+```scss
+@use "@progress/kendo-theme-default/scss/all.scss" as * with (
+  $kendo-spacing-base: 0.3rem
+);
+```
+
+The default base is `0.25rem`. Each spacing step is a CSS `calc()` multiplier of the base, for example:
+
+```scss
+$kendo-spacing-base: 0.25rem !default;
+
+$default-spacing: (
+    0.5: calc(0.5 * var(--kendo-spacing-base)),
+    1: calc(1 * var(--kendo-spacing-base)),
+    1.5: calc(1.5 * var(--kendo-spacing-base)),
+    ...
+);
+```
+
 ## Customization
 
 ### CSS Custom Properties
@@ -62,12 +93,6 @@ The spacing system provides a consistent scale for margins, padding, gaps, and s
 | `22` | `5.5rem` | `--kendo-spacing-22` |
 | `23` | `5.75rem` | `--kendo-spacing-23` |
 | `24` | `6rem` | `--kendo-spacing-24` |
-| `25` | `7rem` | `--kendo-spacing-25` |
-| `26` | `8rem` | `--kendo-spacing-26` |
-| `27` | `9rem` | `--kendo-spacing-27` |
-| `28` | `10rem` | `--kendo-spacing-28` |
-| `29` | `11rem` | `--kendo-spacing-29` |
-| `30` | `12rem` | `--kendo-spacing-30` |
 
 Components reference spacing via the `k-spacing()` Sass function, which outputs `var(--kendo-spacing-{step})`.
 
