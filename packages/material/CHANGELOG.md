@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.2-dev.0...v13.2.0-dev.0) (2026-04-06)
+
+
+### Features
+
+* **button:** add styles for xsmall size ([c19ee9a](https://github.com/telerik/kendo-themes/commit/c19ee9a6544e7594fdaea1a7ae6cba3280e7f16f))
+* derive border radii from a single step ([0e629d0](https://github.com/telerik/kendo-themes/commit/0e629d0d51f2b436906df084acd13ebc4754c312))
+* derive spacing from a single step ([9a5b9ff](https://github.com/telerik/kendo-themes/commit/9a5b9ff7dd0bda4f719304b3a90b49867f07c6dd))
+* **material:** convert hex to oklch and remove obsolete palettes ([fca68f0](https://github.com/telerik/kendo-themes/commit/fca68f06fba28ee4507fdcce564d85efd7afe19d))
+
+
+
+
+
 ## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
