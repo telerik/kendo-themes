@@ -3143,6 +3143,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-xs-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(3)</code></td>
