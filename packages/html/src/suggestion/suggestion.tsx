@@ -13,7 +13,8 @@ const options = {
         ThemeColor.undefined,
         ThemeColor.base,
         ThemeColor.primary,
-        ThemeColor.secondary
+        ThemeColor.secondary,
+        ThemeColor.tertiary
     ],
 };
 

@@ -41,11 +41,10 @@ const options = {
         ThemeColor.primary,
         ThemeColor.secondary,
         ThemeColor.tertiary,
+        ThemeColor.info,
         ThemeColor.success,
         ThemeColor.warning,
-        ThemeColor.error,
-        ThemeColor.info,
-        ThemeColor.inverse
+        ThemeColor.error
     ],
 };
 
