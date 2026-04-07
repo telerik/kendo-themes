@@ -97,7 +97,7 @@ jobs:
   set-commit-status:
     name: Set commit status
     runs-on: ubuntu-latest
-    needs: [ detect-changes, ci-lint-scripts, ci-lint-styles, ci-docs, ci-test-units, ci-test-integrations, ci-a11y, ci-test-html-spec ]
+    needs: [ detect-changes, ci-lint-scripts, ci-lint-styles, ci-audit-css, ci-docs, ci-test-units, ci-test-integrations, ci-a11y, ci-test-html-spec ]
     timeout-minutes: 30
     if: ${{ always() && needs.detect-changes.outputs.snapshot_sha }}
 
@@ -114,6 +114,7 @@ jobs:
               ['${{ needs.ci-test-integrations.result }}', 'Status check > Integration'],
               ['${{ needs.ci-lint-scripts.result }}', 'Status check > Lint scripts'],
               ['${{ needs.ci-lint-styles.result }}', 'Status check > Lint styles'],
+              ['${{ needs.ci-audit-css.result }}', 'Status check > CSS Audit'],
               ['${{ needs.ci-a11y.result }}', 'Status check > A11y'],
               ['${{ needs.ci-docs.result }}', 'Status check > Docs'],
               ['${{ needs.ci-test-html-spec.result }}', 'Status check > HTML spec'],
@@ -172,6 +173,19 @@ jobs:
     name: Status check > Lint styles
     runs-on: ubuntu-latest
     needs: [ lint-styles ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+  audit-css:
+    name: Audit CSS
+    needs: [ compile-themes ]
+    uses: ./.github/workflows/_audit-css.yml
+
+  ci-audit-css:
+    name: Status check > CSS Audit
+    runs-on: ubuntu-latest
+    needs: [ audit-css ]
     steps:
       - name: Done
         run: echo "Done!"
