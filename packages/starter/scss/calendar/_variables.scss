@@ -51,7 +51,7 @@ $kendo-calendar-header-border-width: 1px !default;
 
 /// The background color of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-bg: k-color(surface)!default;
+$kendo-calendar-header-bg: k-color(surface) !default;
 /// The border color of the header in the Calendar.
 /// @group calendar
 $kendo-calendar-header-border: k-color(border) !default;
@@ -185,7 +185,7 @@ $kendo-calendar-cell-border: null !default;
 
 /// The background color of the hovered cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: color-mix( in srgb, currentColor 8%, transparent )  !default;
+$kendo-calendar-cell-hover-bg: color-mix( in srgb, currentColor 8%, transparent ) !default;
 /// The text color of the hovered cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-hover-text: k-color(on-app-surface) !default;
