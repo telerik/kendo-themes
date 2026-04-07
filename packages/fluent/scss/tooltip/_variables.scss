@@ -57,7 +57,7 @@ $kendo-tooltip-button-text: var( --kendo-tooltip-button-text, #{k-color(subtle)}
 
 /// The theme colors map for the Tooltip.
 /// @group tooltip
-$kendo-tooltip-theme-colors: ("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse") !default;
+$kendo-tooltip-theme-colors: ("base", "info", "success", "warning", "error", "inverse") !default;
 
 /// The generated theme colors map for the Tooltip.
 /// @group tooltip

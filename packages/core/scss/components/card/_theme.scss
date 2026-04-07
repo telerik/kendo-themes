@@ -34,21 +34,6 @@
             @include box-shadow( $kendo-card-focus-shadow );
         }
 
-
-        // Card theme colors
-        @each $name in $kendo-card-theme-colors {
-            #{k-when-default($kendo-card-default-theme-color, $name)}
-            &.k-card-#{$name} {
-                background-color: k-color(#{$name}-subtle);
-                color: k-color(#{$name}-on-subtle);
-                border-color: k-color(#{$name}-emphasis);
-
-                .k-card-subtitle {
-                    color: inherit;
-                }
-            }
-        }
-
     }
 
 

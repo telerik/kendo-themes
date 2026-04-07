@@ -1,6 +1,6 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
-import { classNames, optionClassNames, ThemeColor, nextId } from '../misc';
+import { classNames, nextId } from '../misc';
 import { WindowContent } from '../window/window-content.spec';
 
 import { KendoComponent } from '../_types/component';
@@ -10,21 +10,14 @@ export const DIALOG_CLASSNAME = `k-dialog`;
 
 const states = [];
 
-const options = {
-    themeColor: [
-        ThemeColor.undefined,
-        ThemeColor.primary
-    ],
-};
+const options = {};
 
 const defaultOptions = {
     actionButtonsAlign: "stretched",
     modal: true
 } as const;
 
-export type KendoDialogOptions = {
-  themeColor?: (typeof options.themeColor)[number] | null;
-};
+export type KendoDialogOptions = {};
 
 export type KendoDialogProps = KendoDialogOptions & {
     title?: string;
@@ -41,7 +34,6 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
     const {
         title,
         actions,
-        themeColor,
         actionButtons,
         actionButtonsAlign = defaultOptions.actionButtonsAlign,
         modal = defaultOptions.modal,
@@ -61,7 +53,6 @@ export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTML
                     props.className,
                     DIALOG_CLASSNAME,
                     "k-window",
-                    optionClassNames(DIALOG_CLASSNAME, { themeColor })
                 )}
                 role="dialog"
                 aria-labelledby={titlebarId}

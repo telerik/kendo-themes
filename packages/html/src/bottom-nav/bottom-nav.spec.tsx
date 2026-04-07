@@ -12,13 +12,10 @@ const options = {
     fillMode: [ FillMode.undefined, FillMode.solid, FillMode.flat ],
     themeColor: [
         ThemeColor.undefined,
+        ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,
         ThemeColor.tertiary,
-        ThemeColor.info,
-        ThemeColor.success,
-        ThemeColor.warning,
-        ThemeColor.error,
         ThemeColor.inverse
     ]
 };

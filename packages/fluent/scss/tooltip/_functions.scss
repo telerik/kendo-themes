@@ -5,7 +5,7 @@
 
 @function tooltip-theme( $colors ) {
     $_theme: ();
-    $_solid-colors: ("primary", "inverse");
+    $_solid-colors: ("inverse");
 
     @each $name in $colors {
         @if list.index($_solid-colors, $name) {

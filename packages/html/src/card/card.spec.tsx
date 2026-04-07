@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States, ThemeColor } from '../misc';
+import { classNames, stateClassNames, States } from '../misc';
 import { CardCallout } from './card-callout';
 
 import { KendoComponent } from '../_types/component';
@@ -12,22 +12,11 @@ const states = [
     States.disabled
 ];
 
-const options = {
-    themeColor: [
-        ThemeColor.undefined,
-        ThemeColor.primary,
-        ThemeColor.success,
-        ThemeColor.warning,
-        ThemeColor.error,
-        ThemeColor.info,
-    ],
-};
+const options = {};
 
 const defaultOptions = {};
 
-export type KendoCardOptions = {
-  themeColor?: (typeof options.themeColor)[number] | null;
-};
+export type KendoCardOptions = {};
 
 export type KendoCardProps = KendoCardOptions & {
     orientation?: null | 'vertical' | 'horizontal';
@@ -43,7 +32,6 @@ export const Card: KendoComponent<KendoCardProps & KendoCardState & React.HTMLAt
 ) => {
     const {
         orientation,
-        themeColor,
         callout,
         hover,
         focus,
@@ -58,9 +46,6 @@ export const Card: KendoComponent<KendoCardProps & KendoCardState & React.HTMLAt
             className={classNames(
                 props.className,
                 CARD_CLASSNAME,
-                optionClassNames(CARD_CLASSNAME, {
-                    themeColor,
-                }),
                 stateClassNames(CARD_CLASSNAME, {
                     hover,
                     focus,

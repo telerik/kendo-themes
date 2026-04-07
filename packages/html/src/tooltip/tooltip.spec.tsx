@@ -10,14 +10,12 @@ const states = [];
 const options = {
     themeColor: [
         ThemeColor.undefined,
-        ThemeColor.primary,
-        ThemeColor.secondary,
-        ThemeColor.tertiary,
+        ThemeColor.base,
+        ThemeColor.inverse,
+        ThemeColor.info,
         ThemeColor.success,
         ThemeColor.warning,
-        ThemeColor.error,
-        ThemeColor.info,
-        ThemeColor.inverse
+        ThemeColor.error
     ],
 };
 
