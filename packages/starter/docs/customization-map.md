@@ -89,12 +89,22 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-map-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-shadow</td>
+    <td>List</td>
+    <td><code>0 1px 1px 0 rgba(0, 0, 0, 0.16)</code></td>
+    <td><code>(0 1px 1px 0 rgba(0, 0, 0, 0.16))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box-shadow of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -130,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map navigator.</div></div>
