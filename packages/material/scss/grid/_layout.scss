@@ -20,6 +20,13 @@
         }
     }
 
+    .k-grid-pinned-container {
+        .k-table-row:last-child td,
+        .k-table-row:last-child .k-table-td {
+            border-block-end-width: 0;
+        }
+    }
+
     // Grid header
     .k-grid-header {
 

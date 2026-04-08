@@ -728,6 +728,9 @@
     // Pinned rows container
     .k-grid-pinned-container {
         padding-inline-end: var(--kendo-scrollbar-width, #{$kendo-scrollbar-width});
+        border-width: 0;
+        border-block-end-width: 1px;
+        border-style: solid;
         box-shadow: $kendo-grid-pinned-container-shadow;
         z-index: k-z-index("base", 4);
         position: relative;
@@ -737,8 +740,12 @@
         display: flex;
         flex-direction: row;
         align-items: stretch;
+        font-weight: $kendo-grid-pinned-source-font-weight;
 
         &.k-pos-bottom {
+            border-block-end-width: 0;
+            border-block-start-width: 1px;
+            box-shadow: $kendo-grid-pinned-container-bottom-shadow;
             clip-path: inset(-50px 0 0 0);
         }
     }
@@ -779,6 +786,7 @@
         &.k-pos-bottom {
             border-block-end-width: 0;
             border-block-start-width: 1px;
+            box-shadow: $kendo-grid-sticky-container-bottom-shadow;
             inset-block-start: auto;
             inset-block-end: 0;
             clip-path: inset(-50px 0 0 0);
