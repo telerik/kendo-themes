@@ -1,97 +1,96 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             max-width: 660px;
-        }
-        .k-animation-container {
+            }
+            .k-animation-container {
             position: relative;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
-        <span>DropdownList Popup Opened</span>
-        <span>DropdownList Popup Opened RTL</span>
-        <div>
-            <span id="k-ddl-1" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ddl-1-listbox" aria-activedescendant="k-ddl-1-item-2" aria-describedby="k-ddl-1-value" aria-label="Select option" tabindex="0">
-                <span id="k-ddl-1-value" class="k-input-inner">
-                    <span class="k-input-value-text">Opened</span>
-                </span>
-                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-2">
+            <span>DropdownList Popup Opened</span>
+            <span>DropdownList Popup Opened RTL</span>
+            <div>
+                <span id="k-ddl-1" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ddl-1-listbox" aria-activedescendant="k-ddl-1-item-2" aria-describedby="k-ddl-1-value" aria-label="Select option" tabindex="0">
+                    <span id="k-ddl-1-value" class="k-input-inner">
+                        <span class="k-input-value-text">Opened</span>
                     </span>
-                </button>
-            </span>
-            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Dropdown suggestions">
-                <div class="k-child-animation-container">
-                    <div class="k-list-container k-dropdownlist-popup k-popup">
-                        <div class="k-list">
-                            <div class="k-list-content">
-                                <ul aria-label="Options" id="k-ddl-listbox-1" role="listbox" class="k-list-ul">
-                                    <li id="k-ddl-1-item-1" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">Selected item</span>
-                                    </li>
-                                    <li id="k-ddl-1-item-2" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">Focused item</span>
-                                    </li>
-                                    <li id="k-ddl-1-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
-                                    </li>
-                                </ul>
+                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+                <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Dropdown suggestions">
+                    <div class="k-child-animation-container">
+                        <div class="k-list-container k-dropdownlist-popup k-popup">
+                            <div class="k-list">
+                                <div class="k-list-content">
+                                    <ul aria-label="Options" id="k-ddl-listbox-1" role="listbox" class="k-list-ul">
+                                        <li id="k-ddl-1-item-1" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                            <span class="k-list-item-text">Selected item</span>
+                                        </li>
+                                        <li id="k-ddl-1-item-2" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                            <span class="k-list-item-text">Focused item</span>
+                                        </li>
+                                        <li id="k-ddl-1-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                            <span class="k-list-item-text">List item</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <span id="k-ddl-2" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ddl-2-listbox" aria-activedescendant="k-ddl-1-item-5" aria-describedby="k-ddl-2-value" aria-label="Select option" tabindex="0">
+                    <span id="k-ddl-2-value" class="k-input-inner">
+                        <span class="k-input-value-text">Opened</span>
+                    </span>
+                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+                <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Dropdown suggestions">
+                    <div class="k-child-animation-container">
+                        <div class="k-list-container k-dropdownlist-popup k-popup">
+                            <div class="k-list">
+                                <div class="k-list-content">
+                                    <ul aria-label="Options" id="k-ddl-listbox-2" role="listbox" class="k-list-ul">
+                                        <li id="k-ddl-1-item-4" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                            <span class="k-list-item-text">Selected item</span>
+                                        </li>
+                                        <li id="k-ddl-1-item-5" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                            <span class="k-list-item-text">Focused item</span>
+                                        </li>
+                                        <li id="k-ddl-1-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                            <span class="k-list-item-text">List item</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div dir="rtl">
-            <span id="k-ddl-2" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ddl-2-listbox" aria-activedescendant="k-ddl-1-item-5" aria-describedby="k-ddl-2-value" aria-label="Select option" tabindex="0">
-                <span id="k-ddl-2-value" class="k-input-inner">
-                    <span class="k-input-value-text">Opened</span>
-                </span>
-                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Dropdown suggestions">
-                <div class="k-child-animation-container">
-                    <div class="k-list-container k-dropdownlist-popup k-popup">
-                        <div class="k-list">
-                            <div class="k-list-content">
-                                <ul aria-label="Options" id="k-ddl-listbox-2" role="listbox" class="k-list-ul">
-                                    <li id="k-ddl-1-item-4" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">Selected item</span>
-                                    </li>
-                                    <li id="k-ddl-1-item-5" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">Focused item</span>
-                                    </li>
-                                    <li id="k-ddl-1-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,155 +1,202 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: 120px repeat(4, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span>
-            <small>rounded / size</small>
-        </span>
-        <span>undefined</span>
-        <span>small</span>
-        <span>medium</span>
-        <span>large</span>
-        <span>undefined</span>
-        <div>
-            <span class="k-textarea !k-flex-col k-input">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span>
+                <small>rounded / size</small>
             </span>
+            <span>undefined</span>
+            <span>small</span>
+            <span>medium</span>
+            <span>large</span>
+            <span>undefined</span>
+            <div>
+                <span class="k-textarea !k-flex-col k-input">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-sm">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-lg">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <span>none</span>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-rounded-none">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-none">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-none">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-none">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <span>small</span>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-rounded-sm">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-sm">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-sm">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-sm">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <span>medium</span>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-md">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <span>large</span>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-rounded-lg">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-lg">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-lg">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-lg">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <span>full</span>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-rounded-full">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-full">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-full">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
+            <div>
+                <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-full">
+                    <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">
+                        Textarea
+                    </textarea>
+                </span>
+            </div>
         </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-sm">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-md">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-lg">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <span>none</span>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-rounded-none">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-none">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-none">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-none">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <span>small</span>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-rounded-sm">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-sm">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-sm">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-sm">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <span>medium</span>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-rounded-md">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-md">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-md">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-md">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <span>large</span>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-rounded-lg">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-lg">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-lg">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-lg">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <span>full</span>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-rounded-full">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-sm k-rounded-full">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-md k-rounded-full">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-        <div>
-            <span class="k-textarea !k-flex-col k-input k-input-lg k-rounded-full">
-                <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="">Textarea</textarea>
-            </span>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,391 +1,390 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: 80px repeat(5, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span></span>
-        <span>Baseline</span>
-        <span>Rectangle</span>
-        <span>Rounded</span>
-        <span>Pill</span>
-        <span>Circle</span>
-        <div class="k-col-span-full k-text-center">undefined</div>
-        <span>Small</span>
-        <span>
-            <span class="k-badge k-badge-sm">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span></span>
+            <span>Baseline</span>
+            <span>Rectangle</span>
+            <span>Rounded</span>
+            <span>Pill</span>
+            <span>Circle</span>
+            <div class="k-col-span-full k-text-center">undefined</div>
+            <span>Small</span>
+            <span>
+                <span class="k-badge k-badge-sm">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-sm k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-rounded-sm">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-rounded-sm">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>Normal</span>
-        <span>
-            <span class="k-badge k-badge-tertiary">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-tertiary k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>Normal</span>
+            <span>
+                <span class="k-badge k-badge-tertiary">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tertiary k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-tertiary k-rounded-md">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-tertiary k-rounded-md">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-tertiary k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-tertiary k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-tertiary k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-tertiary k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>Large</span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-error">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-error k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>Large</span>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-error">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-error k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-error k-rounded-lg">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-error k-rounded-lg">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-error k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-error k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-error k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-error k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <div class="k-col-span-full k-text-center">solid</div>
-        <span>Small</span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-solid">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-solid k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <div class="k-col-span-full k-text-center">solid</div>
+            <span>Small</span>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-solid">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-solid k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-solid k-rounded-sm">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-solid k-rounded-sm">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-solid k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-solid k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-solid k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-solid k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>Normal</span>
-        <span>
-            <span class="k-badge k-badge-solid k-badge-tertiary">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-solid k-badge-tertiary k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>Normal</span>
+            <span>
+                <span class="k-badge k-badge-solid k-badge-tertiary">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-solid k-badge-tertiary k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-solid k-badge-tertiary k-rounded-md">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-solid k-badge-tertiary k-rounded-md">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-solid k-badge-tertiary k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-solid k-badge-tertiary k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-solid k-badge-tertiary k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-solid k-badge-tertiary k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>Large</span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-solid k-badge-error">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-solid k-badge-error k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>Large</span>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-solid k-badge-error">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-solid k-badge-error k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-solid k-badge-error k-rounded-lg">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-solid k-badge-error k-rounded-lg">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-solid k-badge-error k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-solid k-badge-error k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-solid k-badge-error k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-solid k-badge-error k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <div class="k-col-span-full k-text-center">outline</div>
-        <span>Small</span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-outline">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-outline k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <div class="k-col-span-full k-text-center">outline</div>
+            <span>Small</span>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-outline">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-outline k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-outline k-rounded-sm">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-outline k-rounded-sm">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-outline k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-outline k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-sm k-badge-outline k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-sm k-badge-outline k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>Normal</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>Normal</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-md">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-md">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m32 256v96h-64v-96h-96v-64h96v-96h64v96h96v64z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>Large</span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-outline k-badge-error">99</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-outline k-badge-error k-rounded-none">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>Large</span>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-outline k-badge-error">99</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-outline k-badge-error k-rounded-none">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-outline k-badge-error k-rounded-lg">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-outline k-badge-error k-rounded-lg">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-outline k-badge-error k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-outline k-badge-error k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-lg k-badge-outline k-badge-error k-rounded-full">
-                <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                    </svg>
+            <span>
+                <span class="k-badge k-badge-lg k-badge-outline k-badge-error k-rounded-full">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-x-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                        </svg>
+                    </span>
                 </span>
             </span>
-        </span>
-    </div>
-</body>
+        </div>
+    </body>
 </html>

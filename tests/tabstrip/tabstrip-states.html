@@ -1,48 +1,179 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
-        <section>
-            <div class="k-tabstrip k-tabstrip-top">
-                <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
-                        <li class="k-tabstrip-item k-active" role="tab" aria-selected="true">
-                            <span class="k-link">
-                                <span class="k-link-text">active</span>
-                            </span>
-                        </li>
-                        <li class="k-tabstrip-item k-hover" role="tab">
-                            <span class="k-link">
-                                <span class="k-link-text">hover</span>
-                            </span>
-                        </li>
-                        <li class="k-tabstrip-item k-disabled" role="tab" aria-disabled="true">
-                            <span class="k-link">
-                                <span class="k-link-text">disabled</span>
-                            </span>
-                        </li>
-                        <li class="k-tabstrip-item k-focus" role="tab">
-                            <span class="k-link">
-                                <span class="k-link-text">focus</span>
-                            </span>
-                        </li>
-                    </ul>
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid k-grid-cols-2">
+            <section>
+                <div class="k-tabstrip k-tabstrip-top">
+                    <div class="k-tabstrip-items-wrapper k-hstack">
+                        <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                            <li class="k-tabstrip-item k-active" role="tab" aria-selected="true">
+                                <span class="k-link">
+                                    <span class="k-link-text">active</span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item k-hover" role="tab">
+                                <span class="k-link">
+                                    <span class="k-link-text">hover</span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item k-disabled" role="tab" aria-disabled="true">
+                                <span class="k-link">
+                                    <span class="k-link-text">disabled</span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item k-focus" role="tab">
+                                <span class="k-link">
+                                    <span class="k-link-text">focus</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="k-tabstrip-content k-active" role="tabpanel">
+                        <div>item states</div>
+                    </div>
                 </div>
-                <div class="k-tabstrip-content k-active" role="tabpanel">
-                    <div>item states</div>
+            </section>
+            <section>
+                <div class="k-tabstrip k-tabstrip-top">
+                    <div class="k-tabstrip-items-wrapper k-hstack">
+                        <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                            <li class="k-tabstrip-item k-first" role="tab">
+                                <span class="k-link">
+                                    <span class="k-link-text">First</span>
+                                </span>
+                                <span class="k-item-actions">
+                                    <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item k-active" role="tab" aria-selected="true">
+                                <span class="k-link">
+                                    <span class="k-link-text">Second</span>
+                                </span>
+                                <span class="k-item-actions">
+                                    <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item" role="tab">
+                                <span class="k-link">
+                                    <span class="k-link-text">Third</span>
+                                </span>
+                                <span class="k-item-actions">
+                                    <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="k-tabstrip-content k-active" role="tabpanel">
+                        <div>Closable items</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
+            </section>
+            <section>
+                <div class="k-tabstrip k-tabstrip-top">
+                    <div class="k-tabstrip-items-wrapper k-hstack">
+                        <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                            <li class="k-tabstrip-item k-hover k-active k-first" role="tab" aria-selected="true">
+                                <span class="k-link">
+                                    <span class="k-link-text">hover active</span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item" role="tab">
+                                <span class="k-link">
+                                    <span class="k-link-text">normal</span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item k-focus k-active k-last" role="tab" aria-selected="true">
+                                <span class="k-link">
+                                    <span class="k-link-text">focus active</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="k-tabstrip-content k-active" role="tabpanel">
+                        <div>active item states</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div dir="rtl" class="k-tabstrip k-tabstrip-top">
+                    <div class="k-tabstrip-items-wrapper k-hstack">
+                        <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
+                            <li class="k-tabstrip-item k-first" role="tab">
+                                <span class="k-link">
+                                    <span class="k-link-text">First</span>
+                                </span>
+                                <span class="k-item-actions">
+                                    <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item k-active" role="tab" aria-selected="true">
+                                <span class="k-link">
+                                    <span class="k-link-text">Second</span>
+                                </span>
+                                <span class="k-item-actions">
+                                    <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="k-tabstrip-item" role="tab">
+                                <span class="k-link">
+                                    <span class="k-link-text">Third</span>
+                                </span>
+                                <span class="k-item-actions">
+                                    <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="k-tabstrip-content k-active" role="tabpanel">
+                        <div>Closable items</div>
+                    </div>
+                </div>
+            </section>
             <div class="k-tabstrip k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
                     <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
@@ -50,164 +181,33 @@
                             <span class="k-link">
                                 <span class="k-link-text">First</span>
                             </span>
-                            <span class="k-item-actions">
-                                <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </span>
                         </li>
                         <li class="k-tabstrip-item k-active" role="tab" aria-selected="true">
                             <span class="k-link">
                                 <span class="k-link-text">Second</span>
-                            </span>
-                            <span class="k-item-actions">
-                                <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
                             </span>
                         </li>
                         <li class="k-tabstrip-item" role="tab">
                             <span class="k-link">
                                 <span class="k-link-text">Third</span>
                             </span>
-                            <span class="k-item-actions">
-                                <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="k-tabstrip-content k-active" role="tabpanel">
-                    <div>Closable items</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-tabstrip k-tabstrip-top">
-                <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
-                        <li class="k-tabstrip-item k-hover k-active k-first" role="tab" aria-selected="true">
-                            <span class="k-link">
-                                <span class="k-link-text">hover active</span>
-                            </span>
                         </li>
                         <li class="k-tabstrip-item" role="tab">
                             <span class="k-link">
-                                <span class="k-link-text">normal</span>
+                                <span class="k-link-text">Fourth</span>
                             </span>
                         </li>
-                        <li class="k-tabstrip-item k-focus k-active k-last" role="tab" aria-selected="true">
+                        <li class="k-tabstrip-item k-last" role="tab">
                             <span class="k-link">
-                                <span class="k-link-text">focus active</span>
+                                <span class="k-link-text">Fifth</span>
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="k-tabstrip-content k-active" role="tabpanel">
-                    <div>active item states</div>
+                <div class="k-tabstrip-content k-focus k-active" role="tabpanel">
+                    <div>focus content</div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div dir="rtl" class="k-tabstrip k-tabstrip-top">
-                <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
-                        <li class="k-tabstrip-item k-first" role="tab">
-                            <span class="k-link">
-                                <span class="k-link-text">First</span>
-                            </span>
-                            <span class="k-item-actions">
-                                <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </span>
-                        </li>
-                        <li class="k-tabstrip-item k-active" role="tab" aria-selected="true">
-                            <span class="k-link">
-                                <span class="k-link-text">Second</span>
-                            </span>
-                            <span class="k-item-actions">
-                                <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </span>
-                        </li>
-                        <li class="k-tabstrip-item" role="tab">
-                            <span class="k-link">
-                                <span class="k-link-text">Third</span>
-                            </span>
-                            <span class="k-item-actions">
-                                <span class="k-remove-tab k-button k-button-xs k-button-flat k-icon-button" title="Close" aria-hidden="true">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="k-tabstrip-content k-active" role="tabpanel">
-                    <div>Closable items</div>
-                </div>
-            </div>
-        </section>
-        <div class="k-tabstrip k-tabstrip-top">
-            <div class="k-tabstrip-items-wrapper k-hstack">
-                <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
-                    <li class="k-tabstrip-item k-first" role="tab">
-                        <span class="k-link">
-                            <span class="k-link-text">First</span>
-                        </span>
-                    </li>
-                    <li class="k-tabstrip-item k-active" role="tab" aria-selected="true">
-                        <span class="k-link">
-                            <span class="k-link-text">Second</span>
-                        </span>
-                    </li>
-                    <li class="k-tabstrip-item" role="tab">
-                        <span class="k-link">
-                            <span class="k-link-text">Third</span>
-                        </span>
-                    </li>
-                    <li class="k-tabstrip-item" role="tab">
-                        <span class="k-link">
-                            <span class="k-link-text">Fourth</span>
-                        </span>
-                    </li>
-                    <li class="k-tabstrip-item k-last" role="tab">
-                        <span class="k-link">
-                            <span class="k-link-text">Fifth</span>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="k-tabstrip-content k-focus k-active" role="tabpanel">
-                <div>focus content</div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

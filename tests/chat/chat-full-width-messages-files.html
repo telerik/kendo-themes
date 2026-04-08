@@ -1,226 +1,225 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        .k-chat {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-chat {
             min-height: 200px;
-        }
-        .chat-ai .k-chat {
+            }
+            .chat-ai .k-chat {
             min-height: 700px;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span>Message with full width - files - Sender</span>
-        <section>
-            <div class="k-chat">
-                <div class="k-message-list" role="log" aria-label="Message list" aria-live="polite">
-                    <div class="k-message-list-content">
-                        <div class="k-message-group k-message-group-sender k-no-avatar k-message-group-full-width">
-                            <div class="k-message-group-content">
-                                <div class="k-message">
-                                    <div class="k-chat-bubble k-bubble" tabindex="0">
-                                        <div class="k-bubble-content">
-                                            <span class="k-chat-bubble-text">How can I help you?</span>
-                                            <ul role="list" aria-label="Attached files" class="k-file-box-wrapper k-files-vertical">
-                                                <li role="listitem" tabindex="0" aria-label="FileName.pdf 2MB" class="k-file-box">
-                                                    <span aria-hidden="true" class="k-icon k-svg-icon k-icon-xl k-svg-i-file-pdf">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M240.9 160c-7.6 0-13.8 4-15.4 9.9-4.9 18.6.2 46.3 9.4 82.3l-2.4 5.9c-6.6 16.4-14.8 33-22.1 47.6l-1 1.9c-7.7 15.3-14.6 28.4-21 39.4l-6.5 3.5c-.5.3-11.6 6.3-14.3 7.9-22.2 13.6-36.9 28.9-39.4 41.2-.8 3.9-.2 8.9 3.7 11.2l6.3 3.2c2.7 1.4 5.6 2.1 8.6 2.1 15.8 0 34.2-20.2 59.5-65.3 29.2-9.7 62.5-17.8 91.6-22.3 22.2 12.8 49.5 21.7 66.8 21.7q4.65 0 7.8-.9c3.3-.9 6.1-2.8 7.8-5.4 3.4-5.2 4-12.2 3.1-19.5-.3-2.1-2-4.8-3.8-6.6-5.1-5.2-16.5-7.9-33.7-8.1-11.7-.1-25.8.9-40.6 3-6.6-3.9-13.5-8.2-18.8-13.3-14.4-13.8-26.5-32.9-34-53.9.5-2 .9-3.7 1.3-5.4 0 0 8.1-47.1 6-63.1-.3-2.2-.5-2.8-1.1-4.5l-.7-1.9c-2.2-5.2-6.5-10.7-13.3-10.4zm2.7 8.4c5.1 0 8 13.1 8.2 25.4.3 12.3-2.6 20.9-6 27.3-2.9-9.4-4.3-24.3-4.3-34-.1-.1-.3-18.7 2.1-18.7m.4 104.1c8.6 16 19.3 29.5 31.9 40.4 1.6 1.3 3.2 2.7 5 4.1-25.6 5.2-47.7 11.5-67.1 19.1 3.6-6.5 7.2-13.3 11-20.6 9.1-17.7 14.9-31.6 19.2-43m102.2 51.6c9.3 0 12 0 21.1 2.3 9.1 2.4 9.2 7.2 7.6 8.2s-6 1.6-8.9 1.6c-9.2 0-20.7-4.3-36.8-11.4 6.3-.4 11.9-.7 17-.7m-165.4 35.8c-17.7 28.8-29.5 40.3-37.3 43.8 2.9-8.1 14.3-24 31.2-38.1 1.1-.9 3.7-3.4 6.1-5.7M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <div class="k-file-info">
-                                                        <span class="k-file-name">FileName.pdf</span>
-                                                        <span class="k-file-size">2MB</span>
-                                                    </div>
-                                                    <button class="k-menu-button k-button k-button-xs k-button-flat k-icon-button" aria-label="File actions" aria-expanded="false">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span>Message with full width - files - Sender</span>
+            <section>
+                <div class="k-chat">
+                    <div class="k-message-list" role="log" aria-label="Message list" aria-live="polite">
+                        <div class="k-message-list-content">
+                            <div class="k-message-group k-message-group-sender k-no-avatar k-message-group-full-width">
+                                <div class="k-message-group-content">
+                                    <div class="k-message">
+                                        <div class="k-chat-bubble k-bubble" tabindex="0">
+                                            <div class="k-bubble-content">
+                                                <span class="k-chat-bubble-text">How can I help you?</span>
+                                                <ul role="list" aria-label="Attached files" class="k-file-box-wrapper k-files-vertical">
+                                                    <li role="listitem" tabindex="0" aria-label="FileName.pdf 2MB" class="k-file-box">
+                                                        <span aria-hidden="true" class="k-icon k-svg-icon k-icon-xl k-svg-i-file-pdf">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                                <path d="M240.9 160c-7.6 0-13.8 4-15.4 9.9-4.9 18.6.2 46.3 9.4 82.3l-2.4 5.9c-6.6 16.4-14.8 33-22.1 47.6l-1 1.9c-7.7 15.3-14.6 28.4-21 39.4l-6.5 3.5c-.5.3-11.6 6.3-14.3 7.9-22.2 13.6-36.9 28.9-39.4 41.2-.8 3.9-.2 8.9 3.7 11.2l6.3 3.2c2.7 1.4 5.6 2.1 8.6 2.1 15.8 0 34.2-20.2 59.5-65.3 29.2-9.7 62.5-17.8 91.6-22.3 22.2 12.8 49.5 21.7 66.8 21.7q4.65 0 7.8-.9c3.3-.9 6.1-2.8 7.8-5.4 3.4-5.2 4-12.2 3.1-19.5-.3-2.1-2-4.8-3.8-6.6-5.1-5.2-16.5-7.9-33.7-8.1-11.7-.1-25.8.9-40.6 3-6.6-3.9-13.5-8.2-18.8-13.3-14.4-13.8-26.5-32.9-34-53.9.5-2 .9-3.7 1.3-5.4 0 0 8.1-47.1 6-63.1-.3-2.2-.5-2.8-1.1-4.5l-.7-1.9c-2.2-5.2-6.5-10.7-13.3-10.4zm2.7 8.4c5.1 0 8 13.1 8.2 25.4.3 12.3-2.6 20.9-6 27.3-2.9-9.4-4.3-24.3-4.3-34-.1-.1-.3-18.7 2.1-18.7m.4 104.1c8.6 16 19.3 29.5 31.9 40.4 1.6 1.3 3.2 2.7 5 4.1-25.6 5.2-47.7 11.5-67.1 19.1 3.6-6.5 7.2-13.3 11-20.6 9.1-17.7 14.9-31.6 19.2-43m102.2 51.6c9.3 0 12 0 21.1 2.3 9.1 2.4 9.2 7.2 7.6 8.2s-6 1.6-8.9 1.6c-9.2 0-20.7-4.3-36.8-11.4 6.3-.4 11.9-.7 17-.7m-165.4 35.8c-17.7 28.8-29.5 40.3-37.3 43.8 2.9-8.1 14.3-24 31.2-38.1 1.1-.9 3.7-3.4 6.1-5.7M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
                                                             </svg>
                                                         </span>
-                                                    </button>
-                                                </li>
-                                                <li role="listitem" tabindex="0" aria-label="Another file with even longer name 5MB" class="k-file-box">
-                                                    <span aria-hidden="true" class="k-icon k-svg-icon k-icon-xl k-svg-i-file-csv">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M178.6 224c-10 0-18.9 2.1-26.7 6.2-7.7 4.2-13.7 10.1-17.9 17.7q-6.3 11.4-6.3 26.1c0 9.1 1.9 17.1 5.7 24.1s9.2 12.3 16.4 16.1 15.7 5.7 25.6 5.7c10 0 18.9-1.4 26.6-4.1v-24.9c-6.9 3.5-13.8 5.2-20.5 5.2-7.3 0-13.2-2.1-17.6-6.4s-6.6-10.1-6.6-17.6 2.2-13.4 6.6-17.7 10.4-6.5 18-6.5c3.7 0 7.3.4 10.9 1.3s6.7 2.1 9.2 3.6V227c-7.6-2-15.3-2.9-23.4-3m73.8.1c-11.5 0-20.6 2.7-27.5 8.1-6.8 5.4-10.2 12.5-10.2 21.5 0 12.8 7.5 22.1 22.4 27.8 4.6 1.7 7.8 3.1 9.5 4.1s3 2 3.8 3.2 1.2 2.5 1.2 4c0 2.1-.8 3.7-2.5 4.8s-4.1 1.7-7.1 1.7c-4.1 0-8.4-.9-13.2-2.6-4.7-1.8-9-4-12.9-6.9V315c8.1 3.3 17 4.9 26.7 4.9 8.4 0 15.5-1.1 21.5-3.4 6-2.2 10.6-5.7 13.9-10.2 3.3-4.6 5-9.9 5-16.1 0-6.3-2-11.8-6-16.4s-10.8-8.9-20.4-12.8c-4.9-2-8.1-3.7-9.6-5s-2.3-2.9-2.3-4.8c0-2 1-3.6 2.8-4.8q2.85-1.8 7.5-1.8c7.6 0 15.2 2.1 23 6.4v-23.6c-4-1.1-7.1-1.8-9.3-2.2s-4.7-.7-7.4-1c-2.7-.1-5.8-.1-8.9-.1m39.8-.1 30 96h31.4l30.4-96h-29.1l-13.8 58.9c-1.1 4.4-1.8 8.1-2 11.1h-.6c-.1-2.4-.8-5.9-1.9-10.7L322.4 224zM352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <div class="k-file-info">
-                                                        <span class="k-file-name">Another file with even longer name</span>
-                                                        <span class="k-file-size">5MB</span>
-                                                    </div>
-                                                    <button class="k-menu-button k-button k-button-xs k-button-flat k-icon-button" aria-label="File actions" aria-expanded="false">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
+                                                        <div class="k-file-info">
+                                                            <span class="k-file-name">FileName.pdf</span>
+                                                            <span class="k-file-size">2MB</span>
+                                                        </div>
+                                                        <button class="k-menu-button k-button k-button-xs k-button-flat k-icon-button" aria-label="File actions" aria-expanded="false">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                    <li role="listitem" tabindex="0" aria-label="Another file with even longer name 5MB" class="k-file-box">
+                                                        <span aria-hidden="true" class="k-icon k-svg-icon k-icon-xl k-svg-i-file-csv">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                                <path d="M178.6 224c-10 0-18.9 2.1-26.7 6.2-7.7 4.2-13.7 10.1-17.9 17.7q-6.3 11.4-6.3 26.1c0 9.1 1.9 17.1 5.7 24.1s9.2 12.3 16.4 16.1 15.7 5.7 25.6 5.7c10 0 18.9-1.4 26.6-4.1v-24.9c-6.9 3.5-13.8 5.2-20.5 5.2-7.3 0-13.2-2.1-17.6-6.4s-6.6-10.1-6.6-17.6 2.2-13.4 6.6-17.7 10.4-6.5 18-6.5c3.7 0 7.3.4 10.9 1.3s6.7 2.1 9.2 3.6V227c-7.6-2-15.3-2.9-23.4-3m73.8.1c-11.5 0-20.6 2.7-27.5 8.1-6.8 5.4-10.2 12.5-10.2 21.5 0 12.8 7.5 22.1 22.4 27.8 4.6 1.7 7.8 3.1 9.5 4.1s3 2 3.8 3.2 1.2 2.5 1.2 4c0 2.1-.8 3.7-2.5 4.8s-4.1 1.7-7.1 1.7c-4.1 0-8.4-.9-13.2-2.6-4.7-1.8-9-4-12.9-6.9V315c8.1 3.3 17 4.9 26.7 4.9 8.4 0 15.5-1.1 21.5-3.4 6-2.2 10.6-5.7 13.9-10.2 3.3-4.6 5-9.9 5-16.1 0-6.3-2-11.8-6-16.4s-10.8-8.9-20.4-12.8c-4.9-2-8.1-3.7-9.6-5s-2.3-2.9-2.3-4.8c0-2 1-3.6 2.8-4.8q2.85-1.8 7.5-1.8c7.6 0 15.2 2.1 23 6.4v-23.6c-4-1.1-7.1-1.8-9.3-2.2s-4.7-.7-7.4-1c-2.7-.1-5.8-.1-8.9-.1m39.8-.1 30 96h31.4l30.4-96h-29.1l-13.8 58.9c-1.1 4.4-1.8 8.1-2 11.1h-.6c-.1-2.4-.8-5.9-1.9-10.7L322.4 224zM352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
                                                             </svg>
                                                         </span>
-                                                    </button>
-                                                </li>
-                                            </ul>
+                                                        <div class="k-file-info">
+                                                            <span class="k-file-name">Another file with even longer name</span>
+                                                            <span class="k-file-size">5MB</span>
+                                                        </div>
+                                                        <button class="k-menu-button k-button k-button-xs k-button-flat k-icon-button" aria-label="File actions" aria-expanded="false">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="k-message-info">
-                                        <span class="k-message-status">Seen</span>
-                                        <time class="k-message-time">Thu Feb 08 2018</time>
+                                        <div class="k-message-info">
+                                            <span class="k-message-status">Seen</span>
+                                            <time class="k-message-time">Thu Feb 08 2018</time>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="k-message-box-wrapper">
-                    <div class="k-input k-prompt-box k-prompt-box-multiline">
-                        <div class="k-prompt-box-content">
-                            <textarea class="k-prompt-box-textarea k-input-inner" aria-label="Prompt input" aria-multiline="true" placeholder="Type a message" rows="3"></textarea>
-                            <div class="k-prompt-box-affix">
-                                <button class="k-button k-button-sm k-button-clear k-rounded-full k-icon-button" aria-label="Attach file">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-paperclip-outline-alt-right" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M200.609 75.154c56.594-57.539 148.462-57.539 205.055 0 56.448 57.392 56.448 150.334 0 207.726L241.647 449.637c-39.818 40.484-104.489 40.484-144.307 0-39.674-40.337-39.674-105.627 0-145.963l164.016-166.758c23.044-23.428 60.517-23.429 83.561 0 22.899 23.281 22.898 60.92 0 84.201L180.9 387.875c-6.196 6.3-16.326 6.384-22.626.188s-6.384-16.327-.187-22.627l164.015-166.757c10.651-10.829 10.651-28.495 0-39.323-10.505-10.681-27.427-10.682-37.932 0L120.154 326.113c-27.425 27.884-27.425 73.201 0 101.085 27.281 27.736 71.399 27.736 98.679 0L382.85 260.441c44.2-44.94 44.2-117.908 0-162.847-44.056-44.792-115.371-44.791-159.426 0L59.407 264.35c-6.196 6.3-16.327 6.384-22.627.187-6.3-6.196-6.383-16.326-.187-22.626z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="k-spacer"></div>
-                                <button class="k-speech-to-text-button k-button k-button-sm k-button-flat k-rounded-full k-icon-button" aria-label="Start listening">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-microphone-outline" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M309.09 480H202.9c-10.17 0-18.42-7.16-18.42-16s8.25-16 18.42-16h34.68v-45.63c-69.58-4.63-104.35-35.33-121.47-61.4-19.89-30.3-20.12-60.58-20.12-61.85 0-8.84 8.25-16 18.42-16s18.38 7.13 18.42 15.94c0 .54.51 24.23 15.96 47.08 20.11 29.75 56.18 44.84 107.21 44.84s87.1-15.08 107.21-44.84c15.54-22.99 15.95-46.84 15.96-47.08 0-8.84 8.25-15.97 18.42-15.97s18.42 7.2 18.42 16.03c0 1.27-.23 31.55-20.12 61.85-17.12 26.08-51.89 56.77-121.47 61.4V448h34.68c10.17 0 18.42 7.16 18.42 16s-8.25 16-18.42 16zM256 341.33c-35.88 0-63.73-14.09-78.42-39.67-10.48-18.25-10.79-36-10.79-37.96V109.63c0-1.96.3-19.7 10.79-37.96C192.27 46.09 220.12 32 256 32s63.73 14.09 78.42 39.67c10.48 18.25 10.79 36 10.79 37.96V263.7c0 1.96-.3 19.7-10.79 37.96-14.69 25.58-42.54 39.67-78.42 39.67M256 64c-21.71 0-36.43 6.92-44.99 21.16-7.13 11.85-7.38 24.44-7.38 24.57v153.98s.25 12.62 7.38 24.47c8.56 14.24 23.28 21.16 44.99 21.16s36.43-6.92 44.99-21.16c7.13-11.85 7.38-24.44 7.38-24.57V109.63s-.25-12.62-7.38-24.47C292.43 70.92 277.71 64 256 64"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <button class="k-button k-button-sm k-rounded-full k-disabled k-icon-button" aria-label="Send prompt" aria-live="polite" disabled="">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-up-outline" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M240 432V121.555L139.868 232.311c-5.926 6.554-16.044 7.064-22.599 1.138s-7.063-16.044-1.137-22.598l128-141.581.288-.31a16 16 0 0 1 23.448.31l128 141.581c5.926 6.554 5.417 16.672-1.138 22.598s-16.672 5.416-22.598-1.138L272 121.555V432c0 8.837-7.164 16-16 16s-16-7.163-16-16"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <span>Message with full width - files - Receiver</span>
-        <section>
-            <div class="k-chat">
-                <div class="k-message-list" role="log" aria-label="Message list" aria-live="polite">
-                    <div class="k-message-list-content">
-                        <div class="k-message-group k-message-group-sender k-no-avatar">
-                            <div class="k-message-group-content">
-                                <div class="k-message">
-                                    <div class="k-chat-bubble k-bubble" tabindex="0">
-                                        <div class="k-bubble-content">
-                                            <span class="k-chat-bubble-text">How can I help you?</span>
-                                        </div>
-                                    </div>
-                                    <div class="k-message-info">
-                                        <span class="k-message-status">Seen</span>
-                                        <time class="k-message-time">Thu Feb 08 2018</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="k-message-group k-message-group-receiver k-no-avatar k-message-group-full-width">
-                            <div class="k-message-group-content">
-                                <div class="k-message">
-                                    <div class="k-chat-bubble k-bubble" tabindex="0">
-                                        <div class="k-bubble-content">
-                                            <span class="k-chat-bubble-text">How can I help you?</span>
-                                            <ul role="list" aria-label="Attached files" class="k-file-box-wrapper k-files-vertical">
-                                                <li role="listitem" tabindex="0" aria-label="FileName.pdf 2MB" class="k-file-box">
-                                                    <span aria-hidden="true" class="k-icon k-svg-icon k-icon-xl k-svg-i-file-pdf">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M240.9 160c-7.6 0-13.8 4-15.4 9.9-4.9 18.6.2 46.3 9.4 82.3l-2.4 5.9c-6.6 16.4-14.8 33-22.1 47.6l-1 1.9c-7.7 15.3-14.6 28.4-21 39.4l-6.5 3.5c-.5.3-11.6 6.3-14.3 7.9-22.2 13.6-36.9 28.9-39.4 41.2-.8 3.9-.2 8.9 3.7 11.2l6.3 3.2c2.7 1.4 5.6 2.1 8.6 2.1 15.8 0 34.2-20.2 59.5-65.3 29.2-9.7 62.5-17.8 91.6-22.3 22.2 12.8 49.5 21.7 66.8 21.7q4.65 0 7.8-.9c3.3-.9 6.1-2.8 7.8-5.4 3.4-5.2 4-12.2 3.1-19.5-.3-2.1-2-4.8-3.8-6.6-5.1-5.2-16.5-7.9-33.7-8.1-11.7-.1-25.8.9-40.6 3-6.6-3.9-13.5-8.2-18.8-13.3-14.4-13.8-26.5-32.9-34-53.9.5-2 .9-3.7 1.3-5.4 0 0 8.1-47.1 6-63.1-.3-2.2-.5-2.8-1.1-4.5l-.7-1.9c-2.2-5.2-6.5-10.7-13.3-10.4zm2.7 8.4c5.1 0 8 13.1 8.2 25.4.3 12.3-2.6 20.9-6 27.3-2.9-9.4-4.3-24.3-4.3-34-.1-.1-.3-18.7 2.1-18.7m.4 104.1c8.6 16 19.3 29.5 31.9 40.4 1.6 1.3 3.2 2.7 5 4.1-25.6 5.2-47.7 11.5-67.1 19.1 3.6-6.5 7.2-13.3 11-20.6 9.1-17.7 14.9-31.6 19.2-43m102.2 51.6c9.3 0 12 0 21.1 2.3 9.1 2.4 9.2 7.2 7.6 8.2s-6 1.6-8.9 1.6c-9.2 0-20.7-4.3-36.8-11.4 6.3-.4 11.9-.7 17-.7m-165.4 35.8c-17.7 28.8-29.5 40.3-37.3 43.8 2.9-8.1 14.3-24 31.2-38.1 1.1-.9 3.7-3.4 6.1-5.7M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <div class="k-file-info">
-                                                        <span class="k-file-name">FileName.pdf</span>
-                                                        <span class="k-file-size">2MB</span>
-                                                    </div>
-                                                    <button class="k-menu-button k-button k-button-xs k-button-flat k-icon-button" aria-label="File actions" aria-expanded="false">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </button>
-                                                </li>
-                                                <li role="listitem" tabindex="0" aria-label="Another file with even longer name 5MB" class="k-file-box">
-                                                    <span aria-hidden="true" class="k-icon k-svg-icon k-icon-xl k-svg-i-file-csv">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M178.6 224c-10 0-18.9 2.1-26.7 6.2-7.7 4.2-13.7 10.1-17.9 17.7q-6.3 11.4-6.3 26.1c0 9.1 1.9 17.1 5.7 24.1s9.2 12.3 16.4 16.1 15.7 5.7 25.6 5.7c10 0 18.9-1.4 26.6-4.1v-24.9c-6.9 3.5-13.8 5.2-20.5 5.2-7.3 0-13.2-2.1-17.6-6.4s-6.6-10.1-6.6-17.6 2.2-13.4 6.6-17.7 10.4-6.5 18-6.5c3.7 0 7.3.4 10.9 1.3s6.7 2.1 9.2 3.6V227c-7.6-2-15.3-2.9-23.4-3m73.8.1c-11.5 0-20.6 2.7-27.5 8.1-6.8 5.4-10.2 12.5-10.2 21.5 0 12.8 7.5 22.1 22.4 27.8 4.6 1.7 7.8 3.1 9.5 4.1s3 2 3.8 3.2 1.2 2.5 1.2 4c0 2.1-.8 3.7-2.5 4.8s-4.1 1.7-7.1 1.7c-4.1 0-8.4-.9-13.2-2.6-4.7-1.8-9-4-12.9-6.9V315c8.1 3.3 17 4.9 26.7 4.9 8.4 0 15.5-1.1 21.5-3.4 6-2.2 10.6-5.7 13.9-10.2 3.3-4.6 5-9.9 5-16.1 0-6.3-2-11.8-6-16.4s-10.8-8.9-20.4-12.8c-4.9-2-8.1-3.7-9.6-5s-2.3-2.9-2.3-4.8c0-2 1-3.6 2.8-4.8q2.85-1.8 7.5-1.8c7.6 0 15.2 2.1 23 6.4v-23.6c-4-1.1-7.1-1.8-9.3-2.2s-4.7-.7-7.4-1c-2.7-.1-5.8-.1-8.9-.1m39.8-.1 30 96h31.4l30.4-96h-29.1l-13.8 58.9c-1.1 4.4-1.8 8.1-2 11.1h-.6c-.1-2.4-.8-5.9-1.9-10.7L322.4 224zM352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <div class="k-file-info">
-                                                        <span class="k-file-name">Another file with even longer name</span>
-                                                        <span class="k-file-size">5MB</span>
-                                                    </div>
-                                                    <button class="k-menu-button k-button k-button-xs k-button-flat k-icon-button" aria-label="File actions" aria-expanded="false">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="k-message-info">
-                                        <span class="k-message-status">Seen</span>
-                                        <time class="k-message-time">Thu Feb 08 2018</time>
-                                    </div>
+                    <div class="k-message-box-wrapper">
+                        <div class="k-input k-prompt-box k-prompt-box-multiline">
+                            <div class="k-prompt-box-content">
+                                <textarea class="k-prompt-box-textarea k-input-inner" aria-label="Prompt input" aria-multiline="true" placeholder="Type a message" rows="3"></textarea>
+                                <div class="k-prompt-box-affix">
+                                    <button class="k-button k-button-sm k-button-clear k-rounded-full k-icon-button" aria-label="Attach file">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-paperclip-outline-alt-right" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M200.609 75.154c56.594-57.539 148.462-57.539 205.055 0 56.448 57.392 56.448 150.334 0 207.726L241.647 449.637c-39.818 40.484-104.489 40.484-144.307 0-39.674-40.337-39.674-105.627 0-145.963l164.016-166.758c23.044-23.428 60.517-23.429 83.561 0 22.899 23.281 22.898 60.92 0 84.201L180.9 387.875c-6.196 6.3-16.326 6.384-22.626.188s-6.384-16.327-.187-22.627l164.015-166.757c10.651-10.829 10.651-28.495 0-39.323-10.505-10.681-27.427-10.682-37.932 0L120.154 326.113c-27.425 27.884-27.425 73.201 0 101.085 27.281 27.736 71.399 27.736 98.679 0L382.85 260.441c44.2-44.94 44.2-117.908 0-162.847-44.056-44.792-115.371-44.791-159.426 0L59.407 264.35c-6.196 6.3-16.327 6.384-22.627.187-6.3-6.196-6.383-16.326-.187-22.626z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="k-spacer"></div>
+                                    <button class="k-speech-to-text-button k-button k-button-sm k-button-flat k-rounded-full k-icon-button" aria-label="Start listening">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-microphone-outline" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M309.09 480H202.9c-10.17 0-18.42-7.16-18.42-16s8.25-16 18.42-16h34.68v-45.63c-69.58-4.63-104.35-35.33-121.47-61.4-19.89-30.3-20.12-60.58-20.12-61.85 0-8.84 8.25-16 18.42-16s18.38 7.13 18.42 15.94c0 .54.51 24.23 15.96 47.08 20.11 29.75 56.18 44.84 107.21 44.84s87.1-15.08 107.21-44.84c15.54-22.99 15.95-46.84 15.96-47.08 0-8.84 8.25-15.97 18.42-15.97s18.42 7.2 18.42 16.03c0 1.27-.23 31.55-20.12 61.85-17.12 26.08-51.89 56.77-121.47 61.4V448h34.68c10.17 0 18.42 7.16 18.42 16s-8.25 16-18.42 16zM256 341.33c-35.88 0-63.73-14.09-78.42-39.67-10.48-18.25-10.79-36-10.79-37.96V109.63c0-1.96.3-19.7 10.79-37.96C192.27 46.09 220.12 32 256 32s63.73 14.09 78.42 39.67c10.48 18.25 10.79 36 10.79 37.96V263.7c0 1.96-.3 19.7-10.79 37.96-14.69 25.58-42.54 39.67-78.42 39.67M256 64c-21.71 0-36.43 6.92-44.99 21.16-7.13 11.85-7.38 24.44-7.38 24.57v153.98s.25 12.62 7.38 24.47c8.56 14.24 23.28 21.16 44.99 21.16s36.43-6.92 44.99-21.16c7.13-11.85 7.38-24.44 7.38-24.57V109.63s-.25-12.62-7.38-24.47C292.43 70.92 277.71 64 256 64"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="k-button k-button-sm k-rounded-full k-disabled k-icon-button" aria-label="Send prompt" aria-live="polite" disabled="">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-up-outline" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M240 432V121.555L139.868 232.311c-5.926 6.554-16.044 7.064-22.599 1.138s-7.063-16.044-1.137-22.598l128-141.581.288-.31a16 16 0 0 1 23.448.31l128 141.581c5.926 6.554 5.417 16.672-1.138 22.598s-16.672 5.416-22.598-1.138L272 121.555V432c0 8.837-7.164 16-16 16s-16-7.163-16-16"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="k-message-box-wrapper">
-                    <div class="k-input k-prompt-box k-prompt-box-multiline">
-                        <div class="k-prompt-box-content">
-                            <textarea class="k-prompt-box-textarea k-input-inner" aria-label="Prompt input" aria-multiline="true" placeholder="Type a message" rows="3"></textarea>
-                            <div class="k-prompt-box-affix">
-                                <button class="k-button k-button-sm k-button-clear k-rounded-full k-icon-button" aria-label="Attach file">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-paperclip-outline-alt-right" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M200.609 75.154c56.594-57.539 148.462-57.539 205.055 0 56.448 57.392 56.448 150.334 0 207.726L241.647 449.637c-39.818 40.484-104.489 40.484-144.307 0-39.674-40.337-39.674-105.627 0-145.963l164.016-166.758c23.044-23.428 60.517-23.429 83.561 0 22.899 23.281 22.898 60.92 0 84.201L180.9 387.875c-6.196 6.3-16.326 6.384-22.626.188s-6.384-16.327-.187-22.627l164.015-166.757c10.651-10.829 10.651-28.495 0-39.323-10.505-10.681-27.427-10.682-37.932 0L120.154 326.113c-27.425 27.884-27.425 73.201 0 101.085 27.281 27.736 71.399 27.736 98.679 0L382.85 260.441c44.2-44.94 44.2-117.908 0-162.847-44.056-44.792-115.371-44.791-159.426 0L59.407 264.35c-6.196 6.3-16.327 6.384-22.627.187-6.3-6.196-6.383-16.326-.187-22.626z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="k-spacer"></div>
-                                <button class="k-speech-to-text-button k-button k-button-sm k-button-flat k-rounded-full k-icon-button" aria-label="Start listening">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-microphone-outline" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M309.09 480H202.9c-10.17 0-18.42-7.16-18.42-16s8.25-16 18.42-16h34.68v-45.63c-69.58-4.63-104.35-35.33-121.47-61.4-19.89-30.3-20.12-60.58-20.12-61.85 0-8.84 8.25-16 18.42-16s18.38 7.13 18.42 15.94c0 .54.51 24.23 15.96 47.08 20.11 29.75 56.18 44.84 107.21 44.84s87.1-15.08 107.21-44.84c15.54-22.99 15.95-46.84 15.96-47.08 0-8.84 8.25-15.97 18.42-15.97s18.42 7.2 18.42 16.03c0 1.27-.23 31.55-20.12 61.85-17.12 26.08-51.89 56.77-121.47 61.4V448h34.68c10.17 0 18.42 7.16 18.42 16s-8.25 16-18.42 16zM256 341.33c-35.88 0-63.73-14.09-78.42-39.67-10.48-18.25-10.79-36-10.79-37.96V109.63c0-1.96.3-19.7 10.79-37.96C192.27 46.09 220.12 32 256 32s63.73 14.09 78.42 39.67c10.48 18.25 10.79 36 10.79 37.96V263.7c0 1.96-.3 19.7-10.79 37.96-14.69 25.58-42.54 39.67-78.42 39.67M256 64c-21.71 0-36.43 6.92-44.99 21.16-7.13 11.85-7.38 24.44-7.38 24.57v153.98s.25 12.62 7.38 24.47c8.56 14.24 23.28 21.16 44.99 21.16s36.43-6.92 44.99-21.16c7.13-11.85 7.38-24.44 7.38-24.57V109.63s-.25-12.62-7.38-24.47C292.43 70.92 277.71 64 256 64"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <button class="k-button k-button-sm k-rounded-full k-disabled k-icon-button" aria-label="Send prompt" aria-live="polite" disabled="">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-up-outline" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M240 432V121.555L139.868 232.311c-5.926 6.554-16.044 7.064-22.599 1.138s-7.063-16.044-1.137-22.598l128-141.581.288-.31a16 16 0 0 1 23.448.31l128 141.581c5.926 6.554 5.417 16.672-1.138 22.598s-16.672 5.416-22.598-1.138L272 121.555V432c0 8.837-7.164 16-16 16s-16-7.163-16-16"></path>
-                                        </svg>
-                                    </span>
-                                </button>
+            </section>
+            <span>Message with full width - files - Receiver</span>
+            <section>
+                <div class="k-chat">
+                    <div class="k-message-list" role="log" aria-label="Message list" aria-live="polite">
+                        <div class="k-message-list-content">
+                            <div class="k-message-group k-message-group-sender k-no-avatar">
+                                <div class="k-message-group-content">
+                                    <div class="k-message">
+                                        <div class="k-chat-bubble k-bubble" tabindex="0">
+                                            <div class="k-bubble-content">
+                                                <span class="k-chat-bubble-text">How can I help you?</span>
+                                            </div>
+                                        </div>
+                                        <div class="k-message-info">
+                                            <span class="k-message-status">Seen</span>
+                                            <time class="k-message-time">Thu Feb 08 2018</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-message-group k-message-group-receiver k-no-avatar k-message-group-full-width">
+                                <div class="k-message-group-content">
+                                    <div class="k-message">
+                                        <div class="k-chat-bubble k-bubble" tabindex="0">
+                                            <div class="k-bubble-content">
+                                                <span class="k-chat-bubble-text">How can I help you?</span>
+                                                <ul role="list" aria-label="Attached files" class="k-file-box-wrapper k-files-vertical">
+                                                    <li role="listitem" tabindex="0" aria-label="FileName.pdf 2MB" class="k-file-box">
+                                                        <span aria-hidden="true" class="k-icon k-svg-icon k-icon-xl k-svg-i-file-pdf">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M240.9 160c-7.6 0-13.8 4-15.4 9.9-4.9 18.6.2 46.3 9.4 82.3l-2.4 5.9c-6.6 16.4-14.8 33-22.1 47.6l-1 1.9c-7.7 15.3-14.6 28.4-21 39.4l-6.5 3.5c-.5.3-11.6 6.3-14.3 7.9-22.2 13.6-36.9 28.9-39.4 41.2-.8 3.9-.2 8.9 3.7 11.2l6.3 3.2c2.7 1.4 5.6 2.1 8.6 2.1 15.8 0 34.2-20.2 59.5-65.3 29.2-9.7 62.5-17.8 91.6-22.3 22.2 12.8 49.5 21.7 66.8 21.7q4.65 0 7.8-.9c3.3-.9 6.1-2.8 7.8-5.4 3.4-5.2 4-12.2 3.1-19.5-.3-2.1-2-4.8-3.8-6.6-5.1-5.2-16.5-7.9-33.7-8.1-11.7-.1-25.8.9-40.6 3-6.6-3.9-13.5-8.2-18.8-13.3-14.4-13.8-26.5-32.9-34-53.9.5-2 .9-3.7 1.3-5.4 0 0 8.1-47.1 6-63.1-.3-2.2-.5-2.8-1.1-4.5l-.7-1.9c-2.2-5.2-6.5-10.7-13.3-10.4zm2.7 8.4c5.1 0 8 13.1 8.2 25.4.3 12.3-2.6 20.9-6 27.3-2.9-9.4-4.3-24.3-4.3-34-.1-.1-.3-18.7 2.1-18.7m.4 104.1c8.6 16 19.3 29.5 31.9 40.4 1.6 1.3 3.2 2.7 5 4.1-25.6 5.2-47.7 11.5-67.1 19.1 3.6-6.5 7.2-13.3 11-20.6 9.1-17.7 14.9-31.6 19.2-43m102.2 51.6c9.3 0 12 0 21.1 2.3 9.1 2.4 9.2 7.2 7.6 8.2s-6 1.6-8.9 1.6c-9.2 0-20.7-4.3-36.8-11.4 6.3-.4 11.9-.7 17-.7m-165.4 35.8c-17.7 28.8-29.5 40.3-37.3 43.8 2.9-8.1 14.3-24 31.2-38.1 1.1-.9 3.7-3.4 6.1-5.7M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <div class="k-file-info">
+                                                            <span class="k-file-name">FileName.pdf</span>
+                                                            <span class="k-file-size">2MB</span>
+                                                        </div>
+                                                        <button class="k-menu-button k-button k-button-xs k-button-flat k-icon-button" aria-label="File actions" aria-expanded="false">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                    <li role="listitem" tabindex="0" aria-label="Another file with even longer name 5MB" class="k-file-box">
+                                                        <span aria-hidden="true" class="k-icon k-svg-icon k-icon-xl k-svg-i-file-csv">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M178.6 224c-10 0-18.9 2.1-26.7 6.2-7.7 4.2-13.7 10.1-17.9 17.7q-6.3 11.4-6.3 26.1c0 9.1 1.9 17.1 5.7 24.1s9.2 12.3 16.4 16.1 15.7 5.7 25.6 5.7c10 0 18.9-1.4 26.6-4.1v-24.9c-6.9 3.5-13.8 5.2-20.5 5.2-7.3 0-13.2-2.1-17.6-6.4s-6.6-10.1-6.6-17.6 2.2-13.4 6.6-17.7 10.4-6.5 18-6.5c3.7 0 7.3.4 10.9 1.3s6.7 2.1 9.2 3.6V227c-7.6-2-15.3-2.9-23.4-3m73.8.1c-11.5 0-20.6 2.7-27.5 8.1-6.8 5.4-10.2 12.5-10.2 21.5 0 12.8 7.5 22.1 22.4 27.8 4.6 1.7 7.8 3.1 9.5 4.1s3 2 3.8 3.2 1.2 2.5 1.2 4c0 2.1-.8 3.7-2.5 4.8s-4.1 1.7-7.1 1.7c-4.1 0-8.4-.9-13.2-2.6-4.7-1.8-9-4-12.9-6.9V315c8.1 3.3 17 4.9 26.7 4.9 8.4 0 15.5-1.1 21.5-3.4 6-2.2 10.6-5.7 13.9-10.2 3.3-4.6 5-9.9 5-16.1 0-6.3-2-11.8-6-16.4s-10.8-8.9-20.4-12.8c-4.9-2-8.1-3.7-9.6-5s-2.3-2.9-2.3-4.8c0-2 1-3.6 2.8-4.8q2.85-1.8 7.5-1.8c7.6 0 15.2 2.1 23 6.4v-23.6c-4-1.1-7.1-1.8-9.3-2.2s-4.7-.7-7.4-1c-2.7-.1-5.8-.1-8.9-.1m39.8-.1 30 96h31.4l30.4-96h-29.1l-13.8 58.9c-1.1 4.4-1.8 8.1-2 11.1h-.6c-.1-2.4-.8-5.9-1.9-10.7L322.4 224zM352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <div class="k-file-info">
+                                                            <span class="k-file-name">Another file with even longer name</span>
+                                                            <span class="k-file-size">5MB</span>
+                                                        </div>
+                                                        <button class="k-menu-button k-button k-button-xs k-button-flat k-icon-button" aria-label="File actions" aria-expanded="false">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-more-vertical" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="k-message-info">
+                                            <span class="k-message-status">Seen</span>
+                                            <time class="k-message-time">Thu Feb 08 2018</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-message-box-wrapper">
+                        <div class="k-input k-prompt-box k-prompt-box-multiline">
+                            <div class="k-prompt-box-content">
+                                <textarea class="k-prompt-box-textarea k-input-inner" aria-label="Prompt input" aria-multiline="true" placeholder="Type a message" rows="3"></textarea>
+                                <div class="k-prompt-box-affix">
+                                    <button class="k-button k-button-sm k-button-clear k-rounded-full k-icon-button" aria-label="Attach file">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-paperclip-outline-alt-right" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M200.609 75.154c56.594-57.539 148.462-57.539 205.055 0 56.448 57.392 56.448 150.334 0 207.726L241.647 449.637c-39.818 40.484-104.489 40.484-144.307 0-39.674-40.337-39.674-105.627 0-145.963l164.016-166.758c23.044-23.428 60.517-23.429 83.561 0 22.899 23.281 22.898 60.92 0 84.201L180.9 387.875c-6.196 6.3-16.326 6.384-22.626.188s-6.384-16.327-.187-22.627l164.015-166.757c10.651-10.829 10.651-28.495 0-39.323-10.505-10.681-27.427-10.682-37.932 0L120.154 326.113c-27.425 27.884-27.425 73.201 0 101.085 27.281 27.736 71.399 27.736 98.679 0L382.85 260.441c44.2-44.94 44.2-117.908 0-162.847-44.056-44.792-115.371-44.791-159.426 0L59.407 264.35c-6.196 6.3-16.327 6.384-22.627.187-6.3-6.196-6.383-16.326-.187-22.626z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="k-spacer"></div>
+                                    <button class="k-speech-to-text-button k-button k-button-sm k-button-flat k-rounded-full k-icon-button" aria-label="Start listening">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-microphone-outline" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M309.09 480H202.9c-10.17 0-18.42-7.16-18.42-16s8.25-16 18.42-16h34.68v-45.63c-69.58-4.63-104.35-35.33-121.47-61.4-19.89-30.3-20.12-60.58-20.12-61.85 0-8.84 8.25-16 18.42-16s18.38 7.13 18.42 15.94c0 .54.51 24.23 15.96 47.08 20.11 29.75 56.18 44.84 107.21 44.84s87.1-15.08 107.21-44.84c15.54-22.99 15.95-46.84 15.96-47.08 0-8.84 8.25-15.97 18.42-15.97s18.42 7.2 18.42 16.03c0 1.27-.23 31.55-20.12 61.85-17.12 26.08-51.89 56.77-121.47 61.4V448h34.68c10.17 0 18.42 7.16 18.42 16s-8.25 16-18.42 16zM256 341.33c-35.88 0-63.73-14.09-78.42-39.67-10.48-18.25-10.79-36-10.79-37.96V109.63c0-1.96.3-19.7 10.79-37.96C192.27 46.09 220.12 32 256 32s63.73 14.09 78.42 39.67c10.48 18.25 10.79 36 10.79 37.96V263.7c0 1.96-.3 19.7-10.79 37.96-14.69 25.58-42.54 39.67-78.42 39.67M256 64c-21.71 0-36.43 6.92-44.99 21.16-7.13 11.85-7.38 24.44-7.38 24.57v153.98s.25 12.62 7.38 24.47c8.56 14.24 23.28 21.16 44.99 21.16s36.43-6.92 44.99-21.16c7.13-11.85 7.38-24.44 7.38-24.57V109.63s-.25-12.62-7.38-24.47C292.43 70.92 277.71 64 256 64"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="k-button k-button-sm k-rounded-full k-disabled k-icon-button" aria-label="Send prompt" aria-live="polite" disabled="">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-up-outline" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M240 432V121.555L139.868 232.311c-5.926 6.554-16.044 7.064-22.599 1.138s-7.063-16.044-1.137-22.598l128-141.581.288-.31a16 16 0 0 1 23.448.31l128 141.581c5.926 6.554 5.417 16.672-1.138 22.598s-16.672 5.416-22.598-1.138L272 121.555V432c0 8.837-7.164 16-16 16s-16-7.163-16-16"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+        </div>
+    </body>
 </html>

@@ -1,108 +1,107 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        .k-tooltip {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-tooltip {
             position: relative;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
-        <span>LTR</span>
-        <span class="k-rtl">RTL</span>
-        <section>
-            <div class="k-gantt-tooltip-validation k-gantt-tooltip-valid k-tooltip" role="tooltip" id="k-tooltip-1">
-                <div class="k-tooltip-content">
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">From:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 1</span>
-                    </div>
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">To:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 2</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="k-rtl">
-            <div class="k-gantt-tooltip-validation k-gantt-tooltip-valid k-tooltip" role="tooltip" id="k-tooltip-2">
-                <div class="k-tooltip-content">
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">From:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 1</span>
-                    </div>
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">To:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 2</span>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-2">
+            <span>LTR</span>
+            <span class="k-rtl">RTL</span>
+            <section>
+                <div class="k-gantt-tooltip-validation k-gantt-tooltip-valid k-tooltip" role="tooltip" id="k-tooltip-1">
+                    <div class="k-tooltip-content">
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">From:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 1</span>
+                        </div>
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">To:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 2</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-gantt-tooltip-validation k-gantt-tooltip-invalid k-tooltip" role="tooltip" id="k-tooltip-3">
-                <div class="k-tooltip-content">
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">From:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 3</span>
-                    </div>
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">To:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 4</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="k-rtl">
-            <div class="k-gantt-tooltip-validation k-gantt-tooltip-invalid k-tooltip" role="tooltip" id="k-tooltip-4">
-                <div class="k-tooltip-content">
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">From:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 3</span>
-                    </div>
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">To:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 4</span>
+            </section>
+            <section class="k-rtl">
+                <div class="k-gantt-tooltip-validation k-gantt-tooltip-valid k-tooltip" role="tooltip" id="k-tooltip-2">
+                    <div class="k-tooltip-content">
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">From:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 1</span>
+                        </div>
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">To:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 2</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-gantt-tooltip-validation k-tooltip" role="tooltip" id="k-tooltip-5">
-                <div class="k-tooltip-content">
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">From:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 3</span>
-                    </div>
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">To:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 4</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="k-rtl">
-            <div class="k-gantt-tooltip-validation k-tooltip" role="tooltip" id="k-tooltip-6">
-                <div class="k-tooltip-content">
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">From:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 3</span>
-                    </div>
-                    <div class="k-gantt-tooltip-validation-row">
-                        <span class="k-gantt-tooltip-validation-label">To:</span>
-                        <span class="k-gantt-tooltip-validation-value">Task 4</span>
+            </section>
+            <section>
+                <div class="k-gantt-tooltip-validation k-gantt-tooltip-invalid k-tooltip" role="tooltip" id="k-tooltip-3">
+                    <div class="k-tooltip-content">
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">From:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 3</span>
+                        </div>
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">To:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 4</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+            <section class="k-rtl">
+                <div class="k-gantt-tooltip-validation k-gantt-tooltip-invalid k-tooltip" role="tooltip" id="k-tooltip-4">
+                    <div class="k-tooltip-content">
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">From:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 3</span>
+                        </div>
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">To:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 4</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="k-gantt-tooltip-validation k-tooltip" role="tooltip" id="k-tooltip-5">
+                    <div class="k-tooltip-content">
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">From:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 3</span>
+                        </div>
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">To:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 4</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="k-rtl">
+                <div class="k-gantt-tooltip-validation k-tooltip" role="tooltip" id="k-tooltip-6">
+                    <div class="k-tooltip-content">
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">From:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 3</span>
+                        </div>
+                        <div class="k-gantt-tooltip-validation-row">
+                            <span class="k-gantt-tooltip-validation-label">To:</span>
+                            <span class="k-gantt-tooltip-validation-value">Task 4</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

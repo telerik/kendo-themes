@@ -1,279 +1,286 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <div id="test-area">
-        <div class="k-gantt" role="application" aria-roledescription="Gantt Chart">
-            <div aria-label="Toolbar" class="k-gantt-header k-gantt-toolbar k-toolbar" role="toolbar">
-                <button class="k-toolbar-button k-gantt-toggle k-button k-icon-button" aria-label="Toggle TreeList">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-layout-1-by-4" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M32 0h192v480H32zm224 0v96h192V0zm0 224h192v-96H256zm0 128h192v-96H256zm0 128h192v-96H256z"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-toolbar-button k-gantt-create k-button">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                        </svg>
-                    </span>
-                    <span class="k-button-text">Add Task</span>
-                </button>
-                <span class="k-spacer"></span>
-                <div class="k-gantt-views-wrapper">
-                    <select class="k-picker k-dropdown-list k-dropdown k-views-dropdown" aria-label="Select view">
-                        <option value="day">Day</option>
-                        <option value="week">Week</option>
-                        <option value="month">Month</option>
-                    </select>
-                    <div role="group" class="k-gantt-views k-button-group">
-                        <button class="k-view-day k-group-start k-button">
-                            <span class="k-button-text">Day</span>
-                        </button>
-                        <button class="k-view-week k-button k-selected">
-                            <span class="k-button-text">Week</span>
-                        </button>
-                        <button class="k-view-month k-group-end k-button">
-                            <span class="k-button-text">Month</span>
-                        </button>
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area">
+            <div class="k-gantt" role="application" aria-roledescription="Gantt Chart">
+                <div aria-label="Toolbar" class="k-gantt-header k-gantt-toolbar k-toolbar" role="toolbar">
+                    <button class="k-toolbar-button k-gantt-toggle k-button k-icon-button" aria-label="Toggle TreeList">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-layout-1-by-4" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M32 0h192v480H32zm224 0v96h192V0zm0 224h192v-96H256zm0 128h192v-96H256zm0 128h192v-96H256z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-toolbar-button k-gantt-create k-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">Add Task</span>
+                    </button>
+                    <span class="k-spacer"></span>
+                    <div class="k-gantt-views-wrapper">
+                        <select class="k-picker k-dropdown-list k-dropdown k-views-dropdown" aria-label="Select view">
+                            <option value="day">Day</option>
+                            <option value="week">Week</option>
+                            <option value="month">Month</option>
+                        </select>
+                        <div role="group" class="k-gantt-views k-button-group">
+                            <button class="k-view-day k-group-start k-button">
+                                <span class="k-button-text">Day</span>
+                            </button>
+                            <button class="k-view-week k-button k-selected">
+                                <span class="k-button-text">Week</span>
+                            </button>
+                            <button class="k-view-month k-group-end k-button">
+                                <span class="k-button-text">Month</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="k-gantt-content">
-                <div class="k-gantt-splitter k-splitter k-splitter-horizontal k-splitter-flex">
-                    <div class="k-gantt-treelist k-pane k-pane-static" role="group" style="flex-basis: 30%;">
-                        <div class="k-treelist k-grid">
-                            <div class="k-grid-aria-root" role="treegrid">
-                                <div class="k-grid-header">
-                                    <div class="k-grid-header-wrap">
-                                        <table class="k-grid-header-table k-table" style="min-width: 250px;">
-                                            <colgroup>
-                                                <col style="width: 50px;">
-                                                <col>
-                                            </colgroup>
-                                            <thead class="k-table-thead">
-                                                <tr class="k-table-row">
-                                                    <th rowspan="1" class="k-header k-table-th">
-                                                        <span class="k-cell-inner">
-                                                            <span class="k-link">
-                                                                <span class="k-column-title">ID</span>
+                <div class="k-gantt-content">
+                    <div class="k-gantt-splitter k-splitter k-splitter-horizontal k-splitter-flex">
+                        <div class="k-gantt-treelist k-pane k-pane-static" role="group" style="flex-basis: 30%;">
+                            <div class="k-treelist k-grid">
+                                <div class="k-grid-aria-root" role="treegrid">
+                                    <div class="k-grid-header">
+                                        <div class="k-grid-header-wrap">
+                                            <table class="k-grid-header-table k-table" style="min-width: 250px;">
+                                                <colgroup>
+                                                    <col style="width: 50px;">
+                                                    <col>
+                                                </colgroup>
+                                                <thead class="k-table-thead">
+                                                    <tr class="k-table-row">
+                                                        <th rowspan="1" class="k-header k-table-th">
+                                                            <span class="k-cell-inner">
+                                                                <span class="k-link">
+                                                                    <span class="k-column-title">ID</span>
+                                                                </span>
                                                             </span>
-                                                        </span>
-                                                    </th>
-                                                    <th rowspan="1" class="k-header k-table-th">
-                                                        <span class="k-cell-inner">
-                                                            <span class="k-link">
-                                                                <span class="k-column-title">Title</span>
+                                                        </th>
+                                                        <th rowspan="1" class="k-header k-table-th">
+                                                            <span class="k-cell-inner">
+                                                                <span class="k-link">
+                                                                    <span class="k-column-title">Title</span>
+                                                                </span>
                                                             </span>
-                                                        </span>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                        </table>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="k-grid-container">
+                                        <div class="k-grid-content" style="height: 180px;">
+                                            <table class="k-grid-table k-table" style="min-width: 250px;">
+                                                <colgroup>
+                                                    <col style="width: 50px;">
+                                                    <col>
+                                                </colgroup>
+                                                <tbody class="k-table-tbody">
+                                                    <tr class="k-table-row">
+                                                        <td class="k-table-td">7</td>
+                                                        <td class="k-table-td">
+                                                            <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 352 128 160h256z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            Software validation
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="k-table-row k-table-alt-row">
+                                                        <td class="k-table-td">11</td>
+                                                        <td class="k-table-td">
+                                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                                            Validation with Customers
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="k-table-row">
+                                                        <td class="k-table-td">12</td>
+                                                        <td class="k-table-td">
+                                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                                            <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
+                                                            Market Research
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="k-grid-container">
-                                    <div class="k-grid-content" style="height: 180px;">
-                                        <table class="k-grid-table k-table" style="min-width: 250px;">
+                            </div>
+                        </div>
+                        <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
+                            <div class="k-resize-handle" aria-hidden="true"></div>
+                        </div>
+                        <div class="k-gantt-timeline-pane k-pane" role="group">
+                            <div class="k-gantt-timeline k-grid">
+                                <div class="k-grid-header">
+                                    <div class="k-grid-header-wrap">
+                                        <table class="k-grid-header-table k-table" style="width: 675px;">
                                             <colgroup>
-                                                <col style="width: 50px;">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
                                                 <col>
                                             </colgroup>
                                             <tbody class="k-table-tbody">
                                                 <tr class="k-table-row">
-                                                    <td class="k-table-td">7</td>
-                                                    <td class="k-table-td">
-                                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="M256 352 128 160h256z"></path>
-                                                            </svg>
-                                                        </span>Software validation
-                                                    </td>
-                                                </tr>
-                                                <tr class="k-table-row k-table-alt-row">
-                                                    <td class="k-table-td">11</td>
-                                                    <td class="k-table-td">
-                                                        <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
-                                                        <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>Validation with Customers
-                                                    </td>
+                                                    <td colspan="7" class="k-header k-table-td">Sun 6/01 - Sat 6/07</td>
                                                 </tr>
                                                 <tr class="k-table-row">
-                                                    <td class="k-table-td">12</td>
-                                                    <td class="k-table-td">
-                                                        <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>
-                                                        <span class="k-treelist-toggle k-icon k-svg-icon k-none" aria-hidden="true"></span>Market Research
-                                                    </td>
+                                                    <td colspan="1" class="k-header k-nonwork-hour k-table-td">Sun 6/01</td>
+                                                    <td colspan="1" class="k-header k-table-td">Mon 6/02</td>
+                                                    <td colspan="1" class="k-header k-table-td">Tue 6/03</td>
+                                                    <td colspan="1" class="k-header k-table-td">Wed 6/04</td>
+                                                    <td colspan="1" class="k-header k-table-td">Thu 6/05</td>
+                                                    <td colspan="1" class="k-header k-table-td">Fri 6/06</td>
+                                                    <td colspan="1" class="k-header k-nonwork-hour k-table-td">Sat 6/07</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" role="separator" aria-label="Pane separator" aria-orientation="vertical" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
-                        <div class="k-resize-handle" aria-hidden="true"></div>
-                    </div>
-                    <div class="k-gantt-timeline-pane k-pane" role="group">
-                        <div class="k-gantt-timeline k-grid">
-                            <div class="k-grid-header">
-                                <div class="k-grid-header-wrap">
-                                    <table class="k-grid-header-table k-table" style="width: 675px;">
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <tbody class="k-table-tbody">
-                                            <tr class="k-table-row">
-                                                <td colspan="7" class="k-header k-table-td">Sun 6/01 - Sat 6/07</td>
-                                            </tr>
-                                            <tr class="k-table-row">
-                                                <td colspan="1" class="k-header k-nonwork-hour k-table-td">Sun 6/01</td>
-                                                <td colspan="1" class="k-header k-table-td">Mon 6/02</td>
-                                                <td colspan="1" class="k-header k-table-td">Tue 6/03</td>
-                                                <td colspan="1" class="k-header k-table-td">Wed 6/04</td>
-                                                <td colspan="1" class="k-header k-table-td">Thu 6/05</td>
-                                                <td colspan="1" class="k-header k-table-td">Fri 6/06</td>
-                                                <td colspan="1" class="k-header k-nonwork-hour k-table-td">Sat 6/07</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div role="tree" class="k-grid-content" style="height: 180px;">
-                                <div class="k-gantt-tables">
-                                    <table class="k-grid-table k-gantt-rows k-table" role="presentation" style="width: 675px;">
-                                        <colgroup>
-                                            <col>
-                                        </colgroup>
-                                        <tbody class="k-table-tbody">
-                                            <tr class="k-table-row">
-                                                <td class="k-table-td"></td>
-                                            </tr>
-                                            <tr class="k-table-row k-table-alt-row">
-                                                <td class="k-table-td"></td>
-                                            </tr>
-                                            <tr class="k-table-row">
-                                                <td class="k-table-td"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <table class="k-gantt-columns k-table" role="presentation" style="width: 675px; height: 828px;">
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <tbody class="k-table-tbody">
-                                            <tr class="k-table-row">
-                                                <td class="k-nonwork-hour k-table-td"></td>
-                                                <td class="k-table-td"></td>
-                                                <td class="k-table-td"></td>
-                                                <td class="k-table-td"></td>
-                                                <td class="k-table-td"></td>
-                                                <td class="k-table-td"></td>
-                                                <td class="k-nonwork-hour k-table-td"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <table class="k-gantt-tasks k-table" role="presentation" style="width: 675px;">
-                                        <colgroup>
-                                            <col>
-                                        </colgroup>
-                                        <tbody class="k-table-tbody">
-                                            <tr class="k-table-row">
-                                                <td class="k-table-td">
-                                                    <div class="k-task-wrap k-summary-wrap" style="left: 113px;">
-                                                        <div aria-label="Software validation" class="k-task k-task-summary" role="treeitem" aria-level="1" style="width: 500px;">
-                                                            <div class="k-task-summary-progress" style="width: 215px;">
-                                                                <div class="k-task-summary-complete" style="width: 500px;"></div>
+                                <div role="tree" class="k-grid-content" style="height: 180px;">
+                                    <div class="k-gantt-tables">
+                                        <table class="k-grid-table k-gantt-rows k-table" role="presentation" style="width: 675px;">
+                                            <colgroup>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="k-table-tbody">
+                                                <tr class="k-table-row">
+                                                    <td class="k-table-td"></td>
+                                                </tr>
+                                                <tr class="k-table-row k-table-alt-row">
+                                                    <td class="k-table-td"></td>
+                                                </tr>
+                                                <tr class="k-table-row">
+                                                    <td class="k-table-td"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="k-gantt-columns k-table" role="presentation" style="width: 675px; height: 828px;">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="k-table-tbody">
+                                                <tr class="k-table-row">
+                                                    <td class="k-nonwork-hour k-table-td"></td>
+                                                    <td class="k-table-td"></td>
+                                                    <td class="k-table-td"></td>
+                                                    <td class="k-table-td"></td>
+                                                    <td class="k-table-td"></td>
+                                                    <td class="k-table-td"></td>
+                                                    <td class="k-nonwork-hour k-table-td"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="k-gantt-tasks k-table" role="presentation" style="width: 675px;">
+                                            <colgroup>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="k-table-tbody">
+                                                <tr class="k-table-row">
+                                                    <td class="k-table-td">
+                                                        <div class="k-task-wrap k-summary-wrap" style="left: 113px;">
+                                                            <div aria-label="Software validation" class="k-task k-task-summary" role="treeitem" aria-level="1" style="width: 500px;">
+                                                                <div class="k-task-summary-progress" style="width: 215px;">
+                                                                    <div class="k-task-summary-complete" style="width: 500px;"></div>
+                                                                </div>
                                                             </div>
+                                                            <div class="k-task-dot k-task-start" aria-hidden="true"></div>
+                                                            <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
                                                         </div>
-                                                        <div class="k-task-dot k-task-start" aria-hidden="true"></div>
-                                                        <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="k-table-row">
-                                                <td class="k-table-td">
-                                                    <div class="k-task-wrap" style="left: 113px;">
-                                                        <div aria-label="Validation with Customers" aria-describedby="gantt-task-tooltip" class="k-task k-task-single" role="treeitem" aria-level="2" style="width: 200px;">
-                                                            <div class="k-task-complete" aria-hidden="true" style="width: 50px;"></div>
-                                                            <div class="k-task-content">
-                                                                <div class="k-task-template">Validation with Customers</div>
-                                                                <span class="k-task-actions" aria-hidden="true">
-                                                                    <a class="k-link k-task-delete">
-                                                                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                                            </svg>
-                                                                        </span>
-                                                                    </a>
-                                                                </span>
-                                                                <span class="k-resize-handle k-resize-w" aria-hidden="true"></span>
-                                                                <span class="k-resize-handle k-resize-e" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="k-table-row">
+                                                    <td class="k-table-td">
+                                                        <div class="k-task-wrap" style="left: 113px;">
+                                                            <div aria-label="Validation with Customers" aria-describedby="gantt-task-tooltip" class="k-task k-task-single" role="treeitem" aria-level="2" style="width: 200px;">
+                                                                <div class="k-task-complete" aria-hidden="true" style="width: 50px;"></div>
+                                                                <div class="k-task-content">
+                                                                    <div class="k-task-template">Validation with Customers</div>
+                                                                    <span class="k-task-actions" aria-hidden="true">
+                                                                        <a class="k-link k-task-delete">
+                                                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </a>
+                                                                    </span>
+                                                                    <span class="k-resize-handle k-resize-w" aria-hidden="true"></span>
+                                                                    <span class="k-resize-handle k-resize-e" aria-hidden="true"></span>
+                                                                </div>
                                                             </div>
+                                                            <div class="k-task-dot k-task-start" aria-hidden="true"></div>
+                                                            <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
+                                                            <div class="k-task-draghandle" aria-hidden="true" style="left: 50px;"></div>
                                                         </div>
-                                                        <div class="k-task-dot k-task-start" aria-hidden="true"></div>
-                                                        <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
-                                                        <div class="k-task-draghandle" aria-hidden="true" style="left: 50px;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="k-table-row">
-                                                <td class="k-table-td">
-                                                    <div class="k-task-wrap" style="left: 113px;">
-                                                        <div aria-label="Market Research" class="k-task k-task-single" role="treeitem" aria-level="2" style="width: 200px;">
-                                                            <div class="k-task-complete" aria-hidden="true" style="width: 164px;"></div>
-                                                            <div class="k-task-content">
-                                                                <div class="k-task-template">Market Research</div>
-                                                                <span class="k-task-actions" aria-hidden="true">
-                                                                    <a class="k-link k-task-delete">
-                                                                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                                            </svg>
-                                                                        </span>
-                                                                    </a>
-                                                                </span>
-                                                                <span class="k-resize-handle k-resize-w" aria-hidden="true"></span>
-                                                                <span class="k-resize-handle k-resize-e" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="k-table-row">
+                                                    <td class="k-table-td">
+                                                        <div class="k-task-wrap" style="left: 113px;">
+                                                            <div aria-label="Market Research" class="k-task k-task-single" role="treeitem" aria-level="2" style="width: 200px;">
+                                                                <div class="k-task-complete" aria-hidden="true" style="width: 164px;"></div>
+                                                                <div class="k-task-content">
+                                                                    <div class="k-task-template">Market Research</div>
+                                                                    <span class="k-task-actions" aria-hidden="true">
+                                                                        <a class="k-link k-task-delete">
+                                                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </a>
+                                                                    </span>
+                                                                    <span class="k-resize-handle k-resize-w" aria-hidden="true"></span>
+                                                                    <span class="k-resize-handle k-resize-e" aria-hidden="true"></span>
+                                                                </div>
                                                             </div>
+                                                            <div class="k-task-dot k-task-start" aria-hidden="true"></div>
+                                                            <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
+                                                            <div class="k-task-draghandle" aria-hidden="true" style="left: 164px;"></div>
                                                         </div>
-                                                        <div class="k-task-dot k-task-start" aria-hidden="true"></div>
-                                                        <div class="k-task-dot k-task-end" aria-hidden="true" style="right: 0px;"></div>
-                                                        <div class="k-task-draghandle" aria-hidden="true" style="left: 164px;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="k-tooltip" role="tooltip" id="gantt-task-tooltip" style="position: absolute; top: 20px; left: 150px;">
-                                    <div class="k-tooltip-content">
-                                        <div class="k-tooltip-title">Validation with Customers</div>25%
-                                        <br>Start: 03:00 AM Mon, Jun 2
-                                        <br>End: 03:00 AM Wed, Jun 4
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="k-callout k-callout-s"></div>
+                                    <div class="k-tooltip" role="tooltip" id="gantt-task-tooltip" style="position: absolute; top: 20px; left: 150px;">
+                                        <div class="k-tooltip-content">
+                                            <div class="k-tooltip-title">Validation with Customers</div>
+                                            25%
+                                            <br>
+                                            Start: 03:00 AM Mon, Jun 2
+                                            <br>
+                                            End: 03:00 AM Wed, Jun 4
+                                        </div>
+                                        <div class="k-callout k-callout-s"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -281,6 +288,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
