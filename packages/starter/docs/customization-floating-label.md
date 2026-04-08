@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-floating-label-offset-x</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )</code></td>
-    <td><code>calc(var(--kendo-spacing-2) + 1px)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Floating Label.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )</code></td>
-    <td><code>calc(calc(var(--kendo-line-height, normal) * var(--kendo-font-size, inherit)) + 1px + var(--kendo-spacing-1))</code></td>
+    <td><code>calc(calc(var(--kendo-line-height, normal) * var(--kendo-font-size, inherit)) + 1px + var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>

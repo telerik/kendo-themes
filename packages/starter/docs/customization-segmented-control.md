@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Segmented Control.</div></div>
@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Segmented Control.</div></div>
@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-segmented-control-sm-button-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1px)</code></td>
-    <td><code>var(--kendo-spacing-1px)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(.5)} + 1px )</code></td>
+    <td><code>calc(var(--kendo-spacing-0\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Segmented Control button.</div></div>
@@ -240,8 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-md-button-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{k-spacing(.5)} + 1px )</code></td>
-    <td><code>calc(var(--kendo-spacing-0\.5) + 1px)</code></td>
+    <td><code>calc( #{k-spacing(1)} + 1px )</code></td>
+    <td><code>calc(var(--kendo-spacing-1) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Segmented Control button.</div></div>
@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-lg-button-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{k-spacing(1.5)} + 1px )</code></td>
-    <td><code>calc(var(--kendo-spacing-1\.5) + 1px)</code></td>
+    <td><code>calc( #{k-spacing(1)} + 1px )</code></td>
+    <td><code>calc(var(--kendo-spacing-1) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Segmented Control button.</div></div>
@@ -353,7 +353,7 @@ The following table lists the available variables for customization.
         button-gap: $kendo-segmented-control-lg-button-gap
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-3)","button-padding-y":"var(--kendo-spacing-1px)","button-gap":"var(--kendo-spacing-1\\.5)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-3)","button-padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-gap":"var(--kendo-spacing-1\\.5)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","button-padding-x":"var(--kendo-spacing-3)","button-padding-y":"calc(var(--kendo-spacing-1\\.5) + 1px)","button-gap":"var(--kendo-spacing-2)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","button-padding-x":"var(--kendo-spacing-3)","button-padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-gap":"var(--kendo-spacing-1\\.5)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-3)","button-padding-y":"calc(var(--kendo-spacing-1) + 1px)","button-gap":"var(--kendo-spacing-1\\.5)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","button-padding-x":"var(--kendo-spacing-3)","button-padding-y":"calc(var(--kendo-spacing-1) + 1px)","button-gap":"var(--kendo-spacing-2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Segmented Control.</div></div>

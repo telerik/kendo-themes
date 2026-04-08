@@ -501,7 +501,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scheduler-yearview-indicator-calc-offset-top</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2))</code></td>
-    <td><code>calc(32px - 0.25em * 2)</code></td>
+    <td><code>calc(36px - 0.25em * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the days with events indicator of the year view in the Scheduler.</div></div>
