@@ -76,6 +76,19 @@
         }
     }
 
+    .k-grid-pinned-container {
+        .k-table-row:last-child td,
+        .k-table-row:last-child .k-table-td,
+        .k-master-row:last-child td,
+        .k-master-row:last-child .k-table-td {
+            border-block-end-width: 0;
+        }
+
+        .k-grid-pinned-wrap .k-table-row:not(:only-child) .k-table-td:nth-child(n+2) {
+            border-inline-start-width: 0;
+        }
+    }
+
     .k-grouping-dropclue {
         width: calc( #{$kendo-grid-group-drop-hint-size} * 2 );
         height: $kendo-grid-group-drop-hint-height;
