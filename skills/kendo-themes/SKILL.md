@@ -192,22 +192,12 @@ When building your own UI alongside Kendo components and you want visual consist
 
 Kendo components and Tailwind work side-by-side with **no conflicts**. The common pattern is Tailwind for layout and app-level styles, Kendo theme for component styles.
 
-To maintain visual consistency between your Tailwind-styled layout and Kendo components, **align Tailwind `@theme` variables with Kendo tokens**:
+Two approaches depending on which system owns the design tokens:
 
-```css
-/* Map Tailwind theme tokens to Kendo equivalents */
-@theme {
-  --color-background: var(--kendo-color-surface);
-  --color-primary: var(--kendo-color-primary);
-  --color-on-primary: var(--kendo-color-on-primary);
-  --color-border: var(--kendo-color-border);
-  --spacing-unit: var(--kendo-spacing-4);
-  --radius-default: var(--kendo-border-radius-md);
-  --font-sans: var(--kendo-font-family);
-}
-```
+- **Tailwind-first**: You already have a Tailwind `@theme` — override Kendo CSS properties to follow it: `--kendo-<token>: var(--<tw-token>);`
+- **Kendo-first**: You start from a Kendo swatch — point Tailwind at Kendo tokens: `--<tw-token>: var(--kendo-<token>);`
 
-See [tailwind-integration.md](references/tailwind-integration.md) for the full mapping guide.
+See [tailwind-integration.md](references/tailwind-integration.md) for the full semantic mapping guide and best practices.
 
 ## Further Reading
 
