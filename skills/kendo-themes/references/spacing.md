@@ -1,6 +1,6 @@
 # Spacing
 
-The spacing system provides a consistent scale for margins, padding, gaps, and sizing across all components.
+The spacing system provides a consistent scale for margins, padding, gaps, and sizing used by all Kendo and Telerik components.
 
 ## Base Variable
 

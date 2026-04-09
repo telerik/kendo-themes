@@ -1,8 +1,8 @@
 # Colors
 
-The color system is the most commonly customized sub-system. It defines semantic color tokens used across all components.
+Colors are the most commonly customized aspect of component styling. The color system defines semantic tokens used by every Kendo and Telerik component.
 
-For most customization work, start with **semantic color tokens** and **CSS custom properties**. The color system uses **OKLCH relative color syntax**, which means setting a single base color automatically computes all derived variants (hover, active, emphasis, on-color, etc.) at runtime — no Sass function calls or explicit per-variant overrides needed.
+For most work, start with **semantic color tokens** and **CSS custom properties**. The color system uses **OKLCH relative color syntax**, which means setting a single base color automatically computes all derived variants (hover, active, emphasis, on-color, etc.) at runtime — so changing one value rebrands every component that uses it.
 
 ## Color Layers
 

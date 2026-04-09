@@ -1,10 +1,10 @@
-# Components
+# Styling Individual Components
 
-This reference explains the **component customization framework** for Kendo themes.
+When global design tokens aren't enough, you can target specific components using their CSS selector structure. This reference explains the selector framework and how to compose overrides.
 
-Use [`../components.json`](../components.json) as the structured metadata source.
+Use [`../components.json`](../components.json) as the structured metadata source for available components, their CSS class names, states, and options.
 
-For targeted lookup, run these helper scripts from the skill folder (for example, `cd skills/kendo-themes` first):
+For targeted lookup, run these helper scripts from the skill folder (e.g. `cd skills/kendo-themes` first):
 
 - `node scripts/list_components.mjs`
 - `node scripts/get_components.mjs Button`
@@ -17,9 +17,9 @@ The JSON is intentionally compact:
 - `components` stores per-component tuples with optional trailing items omitted
 - `theme_options` stores the shared option vocabularies
 
-It does **not** try to encode every possible selector. Agents should combine the metadata with the rules below.
+It does **not** try to encode every possible selector. Agents should combine the metadata with the selector rules below to compose the correct CSS for any component override.
 
-## Source of Truth
+## Component Metadata Format
 
 Example shape:
 
@@ -78,7 +78,7 @@ This keeps the JSON valid while skipping trailing empty arrays.
 
 ## Selector Framework
 
-The JSON gives the metadata. These rules explain how to turn it into selectors.
+The metadata gives you the component's class name, states, and options. These rules explain how to turn that into CSS selectors for styling.
 
 ### Base selector
 
@@ -192,19 +192,17 @@ Combine the base selector with any supported options and states:
 }
 ```
 
-## Recommended Agent Workflow
+## Recommended Workflow
 
-1. Use `scripts/list_components.mjs` when you need the available component names.
-2. Use `scripts/get_components.mjs` when you need only one or a few components.
-3. Read the tuple using `_component`.
-4. Use tuple index `0` for `className`.
-5. If tuple index `1` exists, read it as supported `states`; otherwise states are empty.
-6. If tuple index `2` exists, read it as supported option tuples; otherwise options are empty.
-7. Read each option tuple using `_option` to get the option name and its allowed values.
-8. Use `theme_options` as the shared global vocabulary when needed.
-9. Compose selectors using the rules in this article.
+When you need to style a specific component:
 
-If helper scripts are unavailable in a given environment, fall back to reading `components.json` directly.
+1. Use `scripts/list_components.mjs` to find the component name.
+2. Use `scripts/get_components.mjs ComponentName` to get its class name, states, and options.
+3. Read the tuple using `_component` (index 0 = `className`, 1 = `states`, 2 = `options`).
+4. Compose selectors using the rules above.
+5. Use design tokens (`--kendo-color-*`, `--kendo-spacing-*`) in your override values.
+
+If helper scripts are unavailable, fall back to reading `components.json` directly. Use `theme_options` as the shared vocabulary for option values.
 
 ## Important Guardrails
 
@@ -213,9 +211,9 @@ If helper scripts are unavailable in a given environment, fall back to reading `
 - Do not rely on repo-local source paths; this skill is meant to travel with consumer repos.
 - Prefer design tokens such as `--kendo-color-*` and `--kendo-spacing-*` inside overrides instead of hardcoded values.
 
-## Examples
+## Styling Examples
 
-### Primary solid button hover
+### Style a primary solid button on hover
 
 ```css
 .k-button.k-button-solid.k-button-primary.k-hover {
@@ -223,7 +221,7 @@ If helper scripts are unavailable in a given environment, fall back to reading `
 }
 ```
 
-### Medium outlined badge
+### Style a medium outlined badge
 
 ```css
 .k-badge.k-badge-outline.k-badge-md {
@@ -231,7 +229,7 @@ If helper scripts are unavailable in a given environment, fall back to reading `
 }
 ```
 
-### Fully rounded avatar
+### Style a fully rounded avatar
 
 ```css
 .k-avatar.k-rounded-full {

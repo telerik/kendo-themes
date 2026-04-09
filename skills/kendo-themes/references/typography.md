@@ -1,6 +1,6 @@
 # Typography
 
-The typography system defines font families, sizes, weights, line heights, and letter spacing.
+The typography system controls the font families, sizes, weights, line heights, and letter spacing applied to Kendo and Telerik components.
 
 ## Customization
 

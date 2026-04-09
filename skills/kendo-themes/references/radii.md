@@ -1,6 +1,6 @@
 # Border Radii
 
-The border radius system provides a consistent rounding scale used by all components.
+The border radius system provides a consistent rounding scale applied to Kendo and Telerik components.
 
 ## Base Variable
 

@@ -1,6 +1,6 @@
 # Elevation
 
-The elevation system provides shadow tokens for visual depth and layering.
+The elevation system provides shadow tokens that give Kendo and Telerik components visual depth and layering.
 
 ## Customization
 

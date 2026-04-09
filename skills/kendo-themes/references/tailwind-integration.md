@@ -1,6 +1,6 @@
 # Tailwind CSS Integration
 
-Kendo themes and Tailwind CSS work side-by-side with no conflicts. Use Tailwind for layout and app-level styles, Kendo themes for component styling. The key challenge is **visual consistency** — aligning design tokens between the two systems.
+Kendo and Telerik components and Tailwind CSS work side-by-side with no conflicts. Use Tailwind for layout and app-level styles, Kendo theme for component styling. The key challenge is **visual consistency** — aligning design tokens so your custom UI and your components share the same colors, spacing, and typography.
 
 ## Setup
 

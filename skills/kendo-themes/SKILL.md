@@ -1,23 +1,24 @@
 ---
 name: kendo-themes
-description: Guide for working with Kendo UI themes — the styling layer of the Kendo Design System. Use when agents need to install, import, customize, or extend Kendo themes. Covers CSS and Sass imports, design token customization (colors, spacing, radii, elevation, motion, typography), component selector customization, Tailwind CSS integration, and swatch configuration.
+description: Guide for styling Kendo and Telerik components. Use when agents need to customize component appearance — from global design tokens (colors, spacing, typography, radii, elevation, motion) to individual component overrides via CSS selectors. Covers theme installation, CSS and Sass customization, Tailwind CSS integration, and swatch configuration.
 ---
 
-# Kendo Themes
+# Styling Kendo and Telerik Components
 
-A compact guide for AI agents working with Kendo UI themes — the styling layer of the Kendo Design System.
+A compact guide for AI agents styling Kendo and Telerik components. Kendo themes control the visual appearance of every component — from buttons and grids to charts and editors.
 
 ## Overview
 
-Kendo Themes implement the **Kendo Design System** as consumable CSS/SCSS packages. Users interact with the design system indirectly through themes.
+Kendo and Telerik components (Angular, React, Vue, jQuery, Blazor) get their look from **Kendo theme packages**. A theme applies design tokens — colors, spacing, typography, radii, elevation, and motion — to every component automatically. You customize the appearance either globally (change tokens, affect all components) or per-component (target specific selectors).
 
 ```
-Kendo Design System (foundation)
-  └── Kendo Themes (implementation)
-       └── Your Application (consumption)
+Your Application
+  └── Kendo / Telerik Components (Angular, React, Vue, jQuery, Blazor)
+       └── Theme Package (styling layer)
+            └── Design System Tokens (colors, spacing, typography…)
 ```
 
-**5 themes available:**
+**5 themes available** — pick the one that matches your design language:
 
 | Theme     | Package                           | Design Language     |
 | --------- | --------------------------------- | ------------------- |
@@ -27,46 +28,42 @@ Kendo Design System (foundation)
 | Fluent    | `@progress/kendo-theme-fluent`    | Microsoft Fluent    |
 | Classic   | `@progress/kendo-theme-classic`   | Traditional Kendo   |
 
-All themes share the same design system foundation — colors, spacing, radii, elevation, motion, typography, and iconography. Each theme applies its own visual interpretation.
+All themes share the same design token foundation — colors, spacing, radii, elevation, motion, typography, and iconography — so switching themes doesn't require changing your customizations.
 
 ## Installation
+
+The theme package is typically installed alongside your Kendo or Telerik framework package. If it isn't already part of your setup:
 
 ```bash
 npm install --save @progress/kendo-theme-default
 ```
 
-Replace `default` with `bootstrap`, `material`, `fluent`, or `classic` as needed.
+Replace `default` with `bootstrap`, `material`, `fluent`, or `classic` to match your preferred design language.
 
-## Importing a Theme
+## Importing the Theme
 
-There are two paths: **CSS** (precompiled, simple, runtime-customizable via CSS custom properties) or **Sass** (deeper compile-time customization, requires build step).
+For components to pick up their styles, import the theme once in your application entry point. There are two paths: **CSS** (precompiled, runtime-customizable via CSS custom properties) or **Sass** (compile-time customization, requires a build step).
 
 ### CSS Import (Recommended Starting Point)
 
-In most app setups, import the precompiled CSS from your application entry point:
+Import the precompiled CSS — all components are styled immediately:
 
 ```ts
 import "@progress/kendo-theme-default/dist/all.css";
 ```
 
-If you want to work from theme source instead, import the SCSS entry in your app styles:
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as *;
-```
-
-The `dist/all.css` file includes styles for **all** components. Compiled CSS is still customizable at runtime through CSS custom properties such as `--kendo-color-*`, `--kendo-spacing-*`, and component-scoped variables. Sass is the path when you want compile-time control over the generated theme source.
+The compiled CSS is still customizable at runtime through CSS custom properties such as `--kendo-color-*`, `--kendo-spacing-*`, and component-scoped variables — no Sass build required.
 
 ### Sass Import
 
-Use the modern Sass module system (`@use`). **Do not use `@import`** — it is deprecated.
+Use Sass when you need compile-time control over the generated styles. Use the modern module system (`@use`). **Do not use `@import`** — it is deprecated.
 
 ```scss
 // Import the entire theme
 @use "@progress/kendo-theme-default/scss/all.scss" as *;
 ```
 
-To include only specific components (smaller bundle):
+To include styles for only the components you use (smaller bundle):
 
 ```scss
 @use "@progress/kendo-theme-default/scss/index.scss" as *;
@@ -83,15 +80,15 @@ Each component exposes a `kendo-{component}--styles()` mixin.
 
 ## Customization
 
-Two levels of customization, from broadest to most specific.
+Two levels of customization let you control how components look — from broad design-wide changes to surgical per-component overrides.
 
-### 1. Design Token Customization (Variables)
+### 1. Global: Design Tokens
 
-Override design system tokens to change the look of **all** components at once. Works at the system level — colors, spacing, radii, elevation, motion, typography.
+Override design tokens to change the look of **all components at once**. This is the primary customization layer — colors, spacing, radii, elevation, motion, and typography.
 
-For colors, start with **semantic tokens** (`primary`, `surface`, `error`, etc.), **CSS custom properties**, and **prebuilt swatches**. Palette ramps are an advanced Sass source layer behind those tokens, not the primary customization API.
+For colors, start with **semantic tokens** (`primary`, `surface`, `error`, etc.), **CSS custom properties**, and **prebuilt swatches**. Palette ramps are an advanced Sass layer behind those tokens, not the primary customization API.
 
-**CSS Custom Properties** (runtime, no build step):
+**CSS Custom Properties** (runtime, no build step — works with precompiled CSS):
 
 ```css
 :root {
@@ -115,9 +112,9 @@ For colors, start with **semantic tokens** (`primary`, `surface`, `error`, etc.)
 );
 ```
 
-### 2. Component Customization (Selectors)
+### 2. Per-Component: CSS Selector Overrides
 
-Target specific components using CSS selectors composed from four primitives:
+When global tokens aren't enough, target specific components using CSS selectors. Every Kendo and Telerik component has a predictable class structure:
 
 | Primitive         | Pattern                 | Example                               |
 | ----------------- | ----------------------- | ------------------------------------- |
@@ -129,12 +126,12 @@ Target specific components using CSS selectors composed from four primitives:
 Compose them:
 
 ```css
-/* Override primary button hover background */
+/* Style the primary button's hover state */
 .k-button.k-button-solid.k-button-primary.k-hover {
   background-color: var(--kendo-color-primary-active);
 }
 
-/* Target icons inside grid toolbar buttons */
+/* Style icons inside grid toolbar buttons */
 .k-grid .k-toolbar .k-button .k-button-icon {
   color: var(--kendo-color-primary);
 }
@@ -142,15 +139,15 @@ Compose them:
 
 Variants can represent: **theme color** (primary, secondary, etc.), **fill mode** (solid, outline, flat), **size** (sm, md, lg), **roundedness** (sm, md, lg, full), or **direction** (horizontal, vertical).
 
-> **Best practice:** Always use design system tokens (`var(--kendo-color-*)`, `var(--kendo-spacing-*)`) in your overrides rather than hardcoded values. This ensures consistency across themes and swatches.
+> **Best practice:** Always use design tokens (`var(--kendo-color-*)`, `var(--kendo-spacing-*)`) in your overrides rather than hardcoded values. This keeps your customizations consistent when switching themes or swatches.
 
-For the full agent-facing guide, see [components.md](references/components.md). Use [components.json](components.json) for the compact tuple-based theme metadata (`_component`, `_option`, `components`, `theme_options`), or query it via `node ./scripts/list_components.mjs` and `node ./scripts/get_components.mjs`.
+For the full per-component styling guide, see [components.md](references/components.md). Use [components.json](components.json) for compact component metadata (`_component`, `_option`, `components`, `theme_options`), or query it via `node ./scripts/list_components.mjs` and `node ./scripts/get_components.mjs`.
 
-## Design System Sub-Systems
+## Design Tokens Reference
 
-Each sub-system is customizable through CSS custom properties or Sass maps. Colors are the most common starting point.
+Each token group below is customizable through CSS custom properties or Sass maps. Colors are the most common starting point — changing `--kendo-color-primary` instantly rebrands every component that uses it.
 
-| Sub-system       | CSS Variable Pattern                               | Sass Map                             | Reference                                   |
+| Token Group      | CSS Variable Pattern                               | Sass Map                             | Reference                                   |
 | ---------------- | -------------------------------------------------- | ------------------------------------ | ------------------------------------------- |
 | **Colors**       | `--kendo-color-{name}`                             | `$kendo-colors`                      | [colors.md](references/colors.md)           |
 | **Spacing**      | `--kendo-spacing-{step}`                           | `$kendo-spacing`                     | [spacing.md](references/spacing.md)         |
@@ -161,7 +158,7 @@ Each sub-system is customizable through CSS custom properties or Sass maps. Colo
 | **Iconography**  | `--kendo-icon-size`                                | Individual variables                 | [iconography.md](references/iconography.md) |
 | **Layout**       | Breakpoint tokens                                  | `$kendo-breakpoints`                 | [layout.md](references/layout.md)           |
 
-**Quick example — changing the primary color:**
+**Quick example — rebranding your components with a new primary color:**
 
 ```css
 /* CSS */
@@ -183,16 +180,16 @@ Each sub-system is customizable through CSS custom properties or Sass maps. Colo
 );
 ```
 
-`k-generate-color-variations()` generates all color variants (subtle, hover, active, emphasis, contrast, etc.) from a single base color — the easiest way to rebrand. For precise control over individual states, override `$kendo-colors` manually instead (see [colors.md](references/colors.md)).
+`k-generate-color-variations()` generates all color variants (subtle, hover, active, emphasis, contrast, etc.) from a single base color — the easiest way to rebrand all your components. For precise control over individual states, override `$kendo-colors` manually instead (see [colors.md](references/colors.md)).
 
 ## Extensibility
 
-### Adopting an External Design System
+### Matching Kendo Components to Your Design System
 
 When your application has its own design system and Kendo components need to match:
 
-1. **Override Kendo tokens** to align with your DS values (colors, spacing, typography)
-2. If token-level changes are not enough, **target component selectors** and apply your DS tokens directly:
+1. **Override Kendo tokens** to align with your design system values (colors, spacing, typography)
+2. If token-level changes are not enough, **target component selectors** and apply your tokens directly:
 
 ```css
 .k-button.k-button-solid.k-button-primary {
@@ -202,12 +199,12 @@ When your application has its own design system and Kendo components need to mat
 }
 ```
 
-### Extending the Kendo Design System
+### Building Custom UI That Matches Your Components
 
-When adopting Kendo's design system for your own custom components and layouts:
+When building your own UI alongside Kendo components and you want visual consistency:
 
-- **Always reuse Kendo tokens** — never hardcode colors, spacing, or other values
-- Reference tokens via CSS custom properties for runtime flexibility
+- **Reuse Kendo design tokens** — never hardcode colors, spacing, or other values
+- Reference tokens via CSS custom properties so everything stays in sync
 
 ```css
 .my-custom-card {
@@ -222,9 +219,9 @@ When adopting Kendo's design system for your own custom components and layouts:
 
 ## Tailwind CSS Integration
 
-Kendo themes and Tailwind work side-by-side with **no conflicts**. The common pattern is Tailwind for layout/app styles, Kendo theme for component styles.
+Kendo components and Tailwind work side-by-side with **no conflicts**. The common pattern is Tailwind for layout and app-level styles, Kendo theme for component styles.
 
-To maintain visual consistency, **align Tailwind `@theme` variables with Kendo tokens**:
+To maintain visual consistency between your Tailwind-styled layout and Kendo components, **align Tailwind `@theme` variables with Kendo tokens**:
 
 ```css
 /* Map Tailwind theme tokens to Kendo equivalents */
