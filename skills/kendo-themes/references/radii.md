@@ -4,23 +4,7 @@ The border radius system provides a consistent rounding scale applied to Kendo a
 
 ## Base Variable
 
-All border radius sizes scale from a single base value. Setting `--kendo-border-radius-base` (or `$kendo-border-radius-base` in Sass) automatically adjusts every size token proportionally, since each is defined as a CSS `calc()` multiplier relative to it:
-
-```css
-:root {
-  --kendo-border-radius-base: 0.5rem; /* double the default — scales all sizes */
-}
-```
-
-Equivalent Sass override:
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-border-radius-base: 0.5rem
-);
-```
-
-The default is `0.25rem`. Each size token is a fixed multiple:
+All sizes scale from `--kendo-border-radius-base` (Sass: `$kendo-border-radius-base`). Default: `0.25rem`. Each size token is a fixed multiplier of the base. Changing the base rescales every radius token proportionally.
 
 | Token | Multiplier | Default (`base = 0.25rem`) |
 |---|---|---|
@@ -35,23 +19,7 @@ The default is `0.25rem`. Each size token is a fixed multiple:
 
 ## Customization
 
-### CSS Custom Properties
-
-```css
-:root {
-  --kendo-border-radius-md: 6px;
-  --kendo-border-radius-lg: 8px;
-}
-```
-
-### Sass Variable Override
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-border-radius-md: 6px,
-  $kendo-border-radius-lg: 8px
-);
-```
+Override border radius tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization).
 
 ## Available Tokens
 

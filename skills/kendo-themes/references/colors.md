@@ -13,70 +13,27 @@ Colors are organized in layers:
 
 ## Customization
 
-Recommended order:
+Override color tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization). Recommended order:
 
-1. Use **CSS custom properties** for runtime theming and scoped overrides.
-2. Use **swatches** when an existing color variant already matches your needs.
-3. Use **Sass `$kendo-colors` overrides** when you want compile-time control over semantic tokens.
+1. **CSS custom properties** for runtime theming and scoped overrides.
+2. **Swatches** when an existing color variant already matches your needs.
+3. **Sass `$kendo-colors` overrides** for compile-time control over semantic tokens.
 
-### CSS Custom Properties
+### OKLCH Relative Colors
 
-Override at `:root` for global changes, or scope to specific selectors:
-
-```css
-:root {
-  --kendo-color-primary: #0058e9;
-  --kendo-color-primary-hover: #004dcc;
-  --kendo-color-primary-active: #0042b0;
-  --kendo-color-on-primary: #ffffff;
-}
-
-/* Scoped dark mode */
-.dark-mode {
-  --kendo-color-app-surface: #1e1e1e;
-  --kendo-color-on-app-surface: #ffffff;
-  --kendo-color-surface: #2d2d2d;
-}
-```
-
-### OKLCH Relative Colors: Set the Base, Get the Rest (Easiest)
-
-The themes use **CSS relative color syntax** in the OKLCH color space. You only need to set the base semantic color — all derived variants (hover, active, emphasis, on-color, subtle, etc.) are computed from it automatically at runtime.
+The themes use **CSS relative color syntax** in the OKLCH color space. Set just the base semantic color token — all derived variants (hover, active, emphasis, on-color, subtle, etc.) auto-compute from it at runtime:
 
 ```css
-:root {
-  --kendo-color-primary: oklch(69.85% 0.1923 27.19deg);
-}
+--kendo-color-<role>-hover: oklch(from var(--kendo-color-<role>) calc(l - 0.044) calc(c - 0.012) h);
+--kendo-color-<role>-active: oklch(from var(--kendo-color-<role>) calc(l - 0.088) calc(c - 0.027) h);
+--kendo-color-<role>-emphasis: oklch(from var(--kendo-color-<role>) calc(l * 0.665 + 0.33) calc(c * 0.61) h);
 ```
 
-No Sass function call or explicit per-variant override is needed. The derived variants are defined in the theme as relative calculations, for example:
+Updating a base color propagates the change to all its derived states without any additional overrides.
 
-```css
---kendo-color-primary-hover: oklch(from var(--kendo-color-primary) calc(l - 0.044) calc(c - 0.012) h);
---kendo-color-primary-active: oklch(from var(--kendo-color-primary) calc(l - 0.088) calc(c - 0.027) h);
---kendo-color-primary-emphasis: oklch(from var(--kendo-color-primary) calc(l * 0.665 + 0.33) calc(c * 0.61) h);
-```
+### Sass Overrides
 
-This means updating `--kendo-color-primary` in CSS propagates the change to all its derived states without any additional overrides.
-
-### Sass: Manual Map Override (Full Control)
-
-When you need exact control over individual states — e.g. a brand spec dictates the precise hover color — override `$kendo-colors` directly:
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-colors: (
-    primary: #0058e9,
-    primary-hover: #004dcc,
-    primary-active: #0042b0,
-    on-primary: #ffffff
-  )
-);
-```
-
-You only need to specify the tokens you want to change — the theme merges your overrides with defaults via `map.merge($default-colors, $kendo-colors)`, so unspecified tokens keep their default values.
-
-You can also combine both approaches: auto-expand most colors, then manually override specific states that need precise values.
+The `$kendo-colors` map merges with defaults (`map.merge`) — specify only the tokens you want to change. Use `k-generate-color-variations(<role>, <color>, "default")` to auto-expand one base color into all 10 semantic variants at compile time. For precise control over individual states, override `$kendo-colors` directly.
 
 ## Available Color Tokens
 

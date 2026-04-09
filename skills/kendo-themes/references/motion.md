@@ -4,28 +4,7 @@ The motion system defines animation timing, easing functions, and transition pre
 
 ## Customization
 
-### CSS Custom Properties
-
-```css
-:root {
-  --kendo-duration-rapid: 250ms;
-  --kendo-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
-}
-```
-
-### Sass Map Override
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-durations: (
-    rapid: 250ms,
-    swift: 300ms
-  ),
-  $kendo-easings: (
-    standard: cubic-bezier(0.4, 0, 0.2, 1)
-  )
-);
-```
+Override motion tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization).
 
 ## Available Tokens
 
@@ -74,13 +53,6 @@ Composite tokens combining duration + easing:
 
 CSS: `--kendo-transition-{name}`
 
-## Usage Example
-
-```css
-.my-element {
-  transition: opacity var(--kendo-duration-rapid) var(--kendo-easing-standard);
-}
-```
 
 ## Further Reading
 
