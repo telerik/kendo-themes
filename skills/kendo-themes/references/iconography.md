@@ -36,29 +36,18 @@ All sizes are calculated from the base `--kendo-icon-size` (default: `16px`).
 
 ### Customizing Icon Size
 
-```css
-:root {
-  --kendo-icon-size: 18px;  /* Changes base, all sizes recalculate */
-}
-```
-
-```scss
-$kendo-icon-size: 18px;
-```
+Override `--kendo-icon-size` (Sass: `$kendo-icon-size`) to change the base — all size classes recalculate proportionally. See the [main skill](../SKILL.md#customization) for the override syntax.
 
 ## Coloring
 
-Icons inherit text color via `fill: currentColor`. Color them with:
+Icons inherit text color via `fill: currentColor`. Override with color tokens (`var(--kendo-color-<name>)`) or utility classes:
 
-```css
-/* Using Kendo color utilities */
-.k-icon { color: var(--kendo-color-primary); }
-
-/* Or text color classes */
-<span class="k-icon k-svg-icon k-text-primary">...</span>
-```
-
-Available color classes: `.k-text-primary`, `.k-text-secondary`, `.k-text-tertiary`, `.k-text-subtle`
+| Class | Color |
+|---|---|
+| `.k-text-primary` | Primary |
+| `.k-text-secondary` | Secondary |
+| `.k-text-tertiary` | Tertiary |
+| `.k-text-subtle` | Subtle/muted |
 
 ## Transforms
 

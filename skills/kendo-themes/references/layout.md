@@ -25,20 +25,7 @@ The layout sub-system provides responsive breakpoint tokens and media-query mixi
 
 ## Customization (Sass Only)
 
-Breakpoints are defined as a Sass map — not available as CSS custom properties:
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px
-  )
-);
-```
+Override `$kendo-breakpoints` using the Sass pattern from the [main skill](../SKILL.md#customization). Breakpoints are Sass-only — not available as CSS custom properties.
 
 ## Media-Query Mixins
 

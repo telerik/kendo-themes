@@ -92,25 +92,22 @@ For colors, start with **semantic tokens** (`primary`, `surface`, `error`, etc.)
 
 ```css
 :root {
-  --kendo-color-primary: #your-brand-color;
-  --kendo-color-on-primary: #ffffff;
-  --kendo-spacing-4: 1.2rem;
-  --kendo-font-size: 15px;
-  --kendo-border-radius-md: 6px;
+  --kendo-<token>: <value>;
 }
 ```
 
 **Sass** (compile-time, via `@use ... with ()`):
 
 ```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-colors: (
-    primary: #your-brand-color,
-    on-primary: #ffffff,
+@use "@progress/kendo-theme-<theme>/scss/all.scss" as * with (
+  $kendo-<map>: (
+    <key>: <value>
   ),
-  $kendo-font-size: 15px
+  $kendo-<variable>: <value>
 );
 ```
+
+Token names, defaults, and CSS variable patterns are in the reference table below.
 
 ### 2. Per-Component: CSS Selector Overrides
 
@@ -126,14 +123,12 @@ When global tokens aren't enough, target specific components using CSS selectors
 Compose them:
 
 ```css
-/* Style the primary button's hover state */
-.k-button.k-button-solid.k-button-primary.k-hover {
-  background-color: var(--kendo-color-primary-active);
+.k-{component}.k-{component}-{fillMode}.k-{component}-{themeColor}.k-{state} {
+  <property>: var(--kendo-<token>);
 }
 
-/* Style icons inside grid toolbar buttons */
-.k-grid .k-toolbar .k-button .k-button-icon {
-  color: var(--kendo-color-primary);
+.k-{parent} .k-{descendant} .k-{component} .k-{component}-{part} {
+  <property>: var(--kendo-<token>);
 }
 ```
 
@@ -157,30 +152,6 @@ Each token group below is customizable through CSS custom properties or Sass map
 | **Typography**   | `--kendo-font-size`, `--kendo-font-family`, etc.   | Individual variables                 | [typography.md](references/typography.md)   |
 | **Iconography**  | `--kendo-icon-size`                                | Individual variables                 | [iconography.md](references/iconography.md) |
 | **Layout**       | Breakpoint tokens                                  | `$kendo-breakpoints`                 | [layout.md](references/layout.md)           |
-
-**Quick example — rebranding your components with a new primary color:**
-
-```css
-/* CSS */
-:root {
-  --kendo-color-primary: #0058e9;
-  --kendo-color-primary-hover: #004dcc;
-  --kendo-color-primary-active: #0042b0;
-  --kendo-color-on-primary: #ffffff;
-}
-```
-
-```scss
-// Sass
-@use "sass:map";
-@use "@progress/kendo-theme-default/scss/color-system/_functions.scss" as fn;
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  // Auto-expand: one base color → all 10 semantic variants
-  $kendo-colors: fn.k-generate-color-variations("primary", #0058e9, "default")
-);
-```
-
-`k-generate-color-variations()` generates all color variants (subtle, hover, active, emphasis, contrast, etc.) from a single base color — the easiest way to rebrand all your components. For precise control over individual states, override `$kendo-colors` manually instead (see [colors.md](references/colors.md)).
 
 ## Extensibility
 

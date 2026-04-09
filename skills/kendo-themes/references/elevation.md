@@ -4,25 +4,7 @@ The elevation system provides shadow tokens that give Kendo and Telerik componen
 
 ## Customization
 
-### CSS Custom Properties
-
-```css
-:root {
-  --kendo-elevation-2: 0 4px 8px rgba(0, 0, 0, 0.08);
-  --kendo-elevation-4: 0 8px 16px rgba(0, 0, 0, 0.12);
-}
-```
-
-### Sass Map Override
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-elevation: (
-    2: (0 4px 8px rgba(0, 0, 0, 0.08)),
-    4: (0 8px 16px rgba(0, 0, 0, 0.12))
-  )
-);
-```
+Override elevation tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization).
 
 ## Available Tokens
 
@@ -40,17 +22,6 @@ The elevation system provides shadow tokens that give Kendo and Telerik componen
 
 Higher levels produce deeper, more diffused shadows. Use level 1–3 for most components, 4–6 for overlays/popups, 7–9 for modals.
 
-## Usage Example
-
-```css
-.my-card {
-  box-shadow: var(--kendo-elevation-2);
-}
-
-.my-modal {
-  box-shadow: var(--kendo-elevation-6);
-}
-```
 
 ## Further Reading
 

@@ -4,56 +4,11 @@ The spacing system provides a consistent scale for margins, padding, gaps, and s
 
 ## Base Variable
 
-All spacing values are computed from a single base unit. Setting `--kendo-spacing-base` (or `$kendo-spacing-base` in Sass) scales the entire spacing map proportionally:
-
-```css
-:root {
-  --kendo-spacing-base: 0.3rem; /* slightly larger than the 0.25rem default */
-}
-```
-
-Equivalent Sass override:
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-spacing-base: 0.3rem
-);
-```
-
-The default base is `0.25rem`. Each spacing step is a CSS `calc()` multiplier of the base, for example:
-
-```scss
-$kendo-spacing-base: 0.25rem !default;
-
-$default-spacing: (
-    0.5: calc(0.5 * var(--kendo-spacing-base)),
-    1: calc(1 * var(--kendo-spacing-base)),
-    1.5: calc(1.5 * var(--kendo-spacing-base)),
-    ...
-);
-```
+All spacing values scale from a single base: `--kendo-spacing-base` (Sass: `$kendo-spacing-base`). Default: `0.25rem`. Each step is a `calc()` multiplier of the base (e.g. step 4 = `calc(4 × base)` = `1rem`). Changing the base rescales every spacing token proportionally.
 
 ## Customization
 
-### CSS Custom Properties
-
-```css
-:root {
-  --kendo-spacing-4: 1.2rem;  /* Override the default 1rem */
-  --kendo-spacing-8: 2.5rem;
-}
-```
-
-### Sass Map Override
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-spacing: (
-    4: 1.2rem,
-    8: 2.5rem
-  )
-);
-```
+Override spacing tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization).
 
 ## Available Tokens
 

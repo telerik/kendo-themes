@@ -4,26 +4,7 @@ The typography system controls the font families, sizes, weights, line heights, 
 
 ## Customization
 
-### CSS Custom Properties
-
-```css
-:root {
-  --kendo-font-family: 'Inter', sans-serif;
-  --kendo-font-size: 15px;
-  --kendo-line-height: 1.5;
-  --kendo-font-weight: 400;
-}
-```
-
-### Sass Variable Override
-
-```scss
-@use "@progress/kendo-theme-default/scss/all.scss" as * with (
-  $kendo-font-family: ('Inter', sans-serif),
-  $kendo-font-size: 15px,
-  $kendo-line-height: 1.5
-);
-```
+Override typography tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization). Typography uses individual variables (not a map) — override each `$kendo-<variable>` separately in Sass.
 
 ## Available Tokens
 
