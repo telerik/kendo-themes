@@ -2,104 +2,67 @@
 
 Kendo and Telerik components and Tailwind CSS work side-by-side with no conflicts. Use Tailwind for layout and app-level styles, Kendo theme for component styling. The key challenge is **visual consistency** — aligning design tokens so your custom UI and your components share the same colors, spacing, and typography.
 
+There are two approaches depending on which system owns the design tokens:
+
+| Approach | When to use | Source of truth |
+|----------|-------------|-----------------|
+| **Tailwind-first** | You already have a Tailwind theme and want components to match it | Tailwind `@theme` variables |
+| **Kendo-first** | You start from a Kendo swatch and want your layout to match it | Kendo CSS custom properties |
+
 ## Setup
 
-Import both independently:
+Import both independently — the Kendo theme CSS and your Tailwind stylesheet:
 
 ```ts
-import "@progress/kendo-theme-default/dist/default-main.css";
+import "@progress/kendo-theme-<theme>/dist/all.css";
 import "./tailwind.css";
 ```
 
-Order doesn't matter — there are no class name conflicts (Kendo uses `k-` prefix).
+## Tailwind-First (Tailwind Dictates Kendo)
 
-## Token Alignment
+If your Tailwind `@theme` already defines your design tokens, override Kendo CSS custom properties to follow them:
 
-Map your Tailwind `@theme` variables to Kendo's CSS custom properties so both systems use the same visual language:
+```css
+:root {
+  --kendo-<token>: var(--<tailwind-token>);
+}
+```
+
+Use the Semantic Mapping Guide below (read right-to-left: find the Kendo token you want to override, point it at your Tailwind equivalent).
+
+## Kendo-First (Kendo Dictates Tailwind)
+
+If you start from a Kendo swatch and want your Tailwind layout to match, map your `@theme` variables to Kendo CSS custom properties:
 
 ```css
 @theme {
-  /* Surface & backgrounds */
-  --color-background: var(--kendo-color-app-surface);
-  --color-surface: var(--kendo-color-surface);
-  --color-surface-alt: var(--kendo-color-surface-alt);
-
-  /* Brand colors */
-  --color-primary: var(--kendo-color-primary);
-  --color-primary-hover: var(--kendo-color-primary-hover);
-  --color-primary-active: var(--kendo-color-primary-active);
-  --color-on-primary: var(--kendo-color-on-primary);
-
-  /* Semantic colors */
-  --color-success: var(--kendo-color-success);
-  --color-warning: var(--kendo-color-warning);
-  --color-error: var(--kendo-color-error);
-  --color-info: var(--kendo-color-info);
-
-  /* Borders */
-  --color-border: var(--kendo-color-border);
-  --color-border-alt: var(--kendo-color-border-alt);
-
-  /* Text */
-  --color-on-surface: var(--kendo-color-on-app-surface);
-  --color-subtle: var(--kendo-color-subtle);
-
-  /* Spacing */
-  --spacing: var(--kendo-spacing-4);
-
-  /* Border radius */
-  --radius-sm: var(--kendo-border-radius-sm);
-  --radius-default: var(--kendo-border-radius-md);
-  --radius-lg: var(--kendo-border-radius-lg);
-  --radius-full: var(--kendo-border-radius-full);
-
-  /* Typography */
-  --font-sans: var(--kendo-font-family);
-  --font-mono: var(--kendo-font-family-monospace);
-
-  /* Shadows */
-  --shadow-sm: var(--kendo-elevation-1);
-  --shadow-default: var(--kendo-elevation-2);
-  --shadow-lg: var(--kendo-elevation-4);
+  --<tailwind-token>: var(--kendo-<token>);
 }
 ```
+
+Use the Semantic Mapping Guide below (read left-to-right: find your Tailwind token, point it at the Kendo equivalent).
 
 ## Semantic Mapping Guide
 
-When your Tailwind config uses custom names, map them semantically:
+The table works for both directions — read left-to-right for Kendo-first, right-to-left for Tailwind-first:
 
-| Your Tailwind Token | Kendo Equivalent | Notes |
-|---|---|---|
-| `background` | `--kendo-color-app-surface` | App-level background |
-| `foreground` | `--kendo-color-on-app-surface` | Primary text color |
-| `muted` | `--kendo-color-subtle` | De-emphasized content |
-| `card` | `--kendo-color-surface` | Card/component background |
-| `border` | `--kendo-color-border` | Default border color |
-| `primary` | `--kendo-color-primary` | Brand/action color |
-| `destructive` | `--kendo-color-error` | Destructive actions |
-| `accent` | `--kendo-color-tertiary` | Accent/highlight |
-| `ring` | `--kendo-color-primary` | Focus ring color |
+| Tailwind Token  | Kendo Equivalent               | Role                      |
+| --------------- | ------------------------------ | ------------------------- |
+| `background`    | `--kendo-color-app-surface`    | App-level background      |
+| `foreground`    | `--kendo-color-on-app-surface` | Primary text color        |
+| `muted`         | `--kendo-color-subtle`         | De-emphasized content     |
+| `card`          | `--kendo-color-surface`        | Card/component background |
+| `border`        | `--kendo-color-border`         | Default border color      |
+| `primary`       | `--kendo-color-primary`        | Brand/action color        |
+| `destructive`   | `--kendo-color-error`          | Destructive actions       |
+| `accent`        | `--kendo-color-tertiary`       | Accent/highlight          |
+| `ring`          | `--kendo-color-primary`        | Focus ring color          |
 
 ## Best Practices
 
-- **Single source of truth**: Override Kendo's CSS custom properties in `:root`, then reference them in both Kendo components and Tailwind `@theme`
-- **Don't duplicate values**: Point Tailwind tokens at Kendo variables (or vice versa), never hardcode the same hex in both
-- **Dark mode**: Override Kendo CSS variables in your dark mode scope — both Tailwind and Kendo components adapt automatically
-
-```css
-/* Single source: Kendo variables as the foundation */
-:root {
-  --kendo-color-primary: #0058e9;
-  --kendo-color-app-surface: #ffffff;
-}
-
-.dark {
-  --kendo-color-primary: #4d9fff;
-  --kendo-color-app-surface: #1a1a1a;
-}
-```
-
-Tailwind `@theme` references these, so dark mode "just works" for both systems.
+- **Single source of truth**: Pick one system to own the values, have the other reference them — never hardcode the same value in both
+- **Don't duplicate values**: Point tokens in one direction (Tailwind → Kendo or Kendo → Tailwind), not both
+- **Dark mode**: Override the source-of-truth variables in your dark mode scope (e.g. `.dark { ... }`) — the dependent system adapts automatically because it references the same custom properties
 
 ## Further Reading
 
