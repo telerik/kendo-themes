@@ -1,6 +1,6 @@
 # Motion
 
-The motion system defines animation timing, easing functions, and transition presets for consistent UI motion.
+The motion system defines animation timing, easing functions, and transition presets for consistent component animations.
 
 ## Customization
 

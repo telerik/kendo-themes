@@ -1,6 +1,6 @@
 # Layout
 
-The layout sub-system provides responsive breakpoint tokens and media-query mixins. For general layout utilities (flex, grid), use Tailwind or your preferred CSS framework — Kendo themes focus on component styling.
+The layout sub-system provides responsive breakpoint tokens and media-query mixins. For general layout utilities (flex, grid), use Tailwind or your preferred CSS framework — Kendo themes focus on component styling, not page layout.
 
 ## Breakpoints
 

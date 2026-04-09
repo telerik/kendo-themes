@@ -1,10 +1,10 @@
 # Iconography
 
-The Kendo icon system provides CSS styling for SVG icons. Icon rendering is framework-specific, but **theme-level styling is framework-agnostic**.
+The Kendo icon system provides CSS styling for SVG icons used inside Kendo and Telerik components. Icon rendering is framework-specific, but **styling is framework-agnostic**.
 
 ## Key Concept
 
-The theme defines **how icons look** (size, color, spacing). Frameworks (React, Angular, Vue, jQuery) define **which icon to render**. This reference covers only the theme layer.
+The theme defines **how icons look** (size, color, spacing). Frameworks (React, Angular, Vue, jQuery) define **which icon to render**. This reference covers the styling layer only.
 
 ## Icon CSS Classes
 
