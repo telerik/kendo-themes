@@ -10,7 +10,6 @@
     // Grid
     .k-grid {
 
-        .k-table .k-group-footer td,
         .k-table .k-group-footer .k-table-td {
             border-block-start-width: 0;
         }
@@ -21,7 +20,6 @@
     }
 
     .k-grid-pinned-container {
-        .k-table-row:last-child td,
         .k-table-row:last-child .k-table-td {
             border-block-end-width: 0;
         }
@@ -57,7 +55,6 @@
     }
 
     .k-grid-footer {
-        td,
         .k-table-td {
             border-block-end-width: 0;
         }
