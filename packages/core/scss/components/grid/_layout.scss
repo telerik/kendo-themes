@@ -346,6 +346,10 @@
             }
         }
 
+        .k-table-td:has(.k-pin-cell) {
+            text-overflow: clip;
+        }
+
         .k-hierarchy-cell + .k-grid-content-sticky {
             border-inline-start-width: $kendo-grid-cell-vertical-border-width;
         }
