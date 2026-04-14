@@ -117,11 +117,11 @@ export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButto
                     rounded={rounded}
                     fillMode={fillMode}
                     disabled={disabled}
+                    ariaDisabled={disabled || undefined}
                     aria-label="Toggle dropdown"
                     aria-expanded={opened ? 'true' : 'false'}
                     aria-controls={opened ? popupId : undefined}
                     tabIndex={-1}
-                    {...(disabled && { 'aria-disabled': 'true' })}
                 >
                 </Button>
             </div>
