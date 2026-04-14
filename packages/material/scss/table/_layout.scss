@@ -6,30 +6,8 @@
     @include kendo-table--layout-base();
 
     .k-table {
-
-        th,
-        .k-table-th{
+        .k-table-th {
             font-weight: var(--kendo-font-weight-semibold);
-        }
-
-        td:focus,
-        td.k-focus,
-        th:focus,
-        th.k-focus {
-            position: relative;
-            &::after {
-                content: "";
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                inset-block-start: 0;
-                inset-inline-start: 0;
-                pointer-events: none;
-            }
-        }
-        td.k-grid-content-sticky,
-        td.k-grid-header-sticky {
-            position: sticky;
         }
     }
 }
