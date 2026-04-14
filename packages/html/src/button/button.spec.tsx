@@ -145,8 +145,8 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
                     ['k-icon-button']: !text && !hasChildren && hasIcon,
                 }
             )}
-            {...other}
             aria-pressed={togglable ? (selected ? 'true' : 'false') : undefined}
+            {...other}
             aria-disabled={ariaDisabled ? 'true' : undefined}
             disabled={disabled || undefined}
         >
