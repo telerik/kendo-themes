@@ -29,7 +29,7 @@ export const PanelBarGroup = (
                 PANELBARGROUP_CLASSNAME
             )}
             role="group"
-            aria-hidden={ariaHidden ? 'true' : undefined}
+            {...(ariaHidden !== undefined && { 'aria-hidden': ariaHidden ? 'true' : undefined })}
         >
             {props.children}
         </ul>

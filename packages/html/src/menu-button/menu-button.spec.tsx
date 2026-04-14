@@ -94,12 +94,12 @@ export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonSt
             active={active}
             selected={selected}
             disabled={disabled}
+            ariaDisabled={disabled || undefined}
             icon={icon}
             showArrow={showArrow}
             arrowIconName={arrowIconName}
             aria-expanded={expanded ? 'true' : 'false'}
             {...(!text && icon && !props['aria-label'] && { 'aria-label': 'Menu' })}
-            {...(disabled && { 'aria-disabled': 'true' })}
         />
     );
 };
