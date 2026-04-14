@@ -3,4 +3,8 @@
 
 @mixin kendo-grid--layout() {
     @include kendo-grid--layout-base();
+
+    .k-grouping-dropclue::after {
+        display: none;
+    }
 }

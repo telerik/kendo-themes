@@ -11,39 +11,12 @@
     .k-grid {
 
         .k-table-th,
-        td,
         .k-table-td {
             border-inline-start-color: transparent;
         }
 
-        .k-grid-header-locked,
-        .k-grid-content-locked,
-        .k-grid-header-locked .k-table-th,
-        .k-grid-content-locked td,
-        .k-grid-content-locked .k-table-td {
-            border-block-start-color: $kendo-grid-header-border;
+        .k-master-row .k-grid-content-sticky {
             border-block-end-color: $kendo-grid-header-border;
-
-            .k-group-footer {
-                &:hover td,
-                &.k-hover td,
-                &:hover .k-table-td,
-                &.k-hover .k-table-td {
-                    color: inherit;
-                    @include fill( $bg: $kendo-grid-sticky-footer-hover-bg );
-                }
-            }
-        }
-
-        .k-master-row {
-            .k-grid-content-sticky {
-                border-color: $kendo-grid-sticky-border;
-                border-block-end-color: $kendo-grid-header-border;
-            }
-            .k-grid-row-sticky {
-                border-block-start-color: $kendo-grid-sticky-border;
-                border-block-end-color: $kendo-grid-sticky-border;
-            }
         }
     }
 
@@ -57,26 +30,8 @@
             }
         }
 
-        .k-grid-header-locked .k-table-thead .k-table-row .k-table-th {
-            border-inline-color: $kendo-grid-sticky-header-border;
-        }
-
     }
 
-    .k-group-footer {
-        td,
-        .k-table-td,
-        .k-grid-footer-sticky {
-            background: $kendo-grid-sticky-footer-bg;
-        }
-
-        &:hover td,
-        &.k-hover td,
-        &:hover .k-table-td,
-        &.k-hover .k-table-td {
-            @include fill( $bg: $kendo-grid-sticky-footer-hover-bg );
-        }
-    }
 
     .k-reorder-cue {
         border-color: k-color(primary);
@@ -110,14 +65,6 @@
         color: k-color(primary);
     }
 
-    .k-columnmenu-item {
-        &.k-selected {
-            @include fill(
-                $kendo-list-item-selected-text,
-                $kendo-list-item-selected-bg
-            );
-        }
-    }
     .k-column-list-item:focus,
     .k-column-list-item.k-focus,
     .k-columnmenu-item:focus,
@@ -133,10 +80,6 @@
                 background: $kendo-list-item-hover-bg;
             }
         }
-    }
-
-    .k-grid-sticky-container {
-        background-color: $kendo-grid-bg;
     }
 
 }

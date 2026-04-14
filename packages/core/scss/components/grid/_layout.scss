@@ -90,7 +90,6 @@
         }
 
         .k-table-th,
-        td,
         .k-table-td {
             border-width: 0;
             border-inline-start-width: $kendo-grid-cell-vertical-border-width;
@@ -125,7 +124,6 @@
             white-space: nowrap;
         }
 
-        td,
         .k-table-td {
             border-block-end-width: $kendo-grid-cell-horizontal-border-width;
             white-space: unset;
@@ -287,12 +285,10 @@
             }
         }
 
-        .k-grouping-row td,
         .k-grouping-row .k-table-td {
             overflow: visible;
         }
 
-        .k-grouping-row + .k-table-row td,
         .k-grouping-row + .k-table-row .k-table-td {
             border-block-start-width: $kendo-grid-grouping-row-border-top;
         }
@@ -309,13 +305,11 @@
             text-decoration: none;
         }
 
-        .k-table .k-group-footer td,
         .k-table .k-group-footer .k-table-td {
             border-style: solid;
             border-width: $kendo-grid-group-footer-border-y 0;
         }
 
-        .k-group-footer .k-group-cell + td,
         .k-group-footer .k-group-cell + .k-table-td {
             border-inline-start-width: $kendo-grid-cell-vertical-border-width;
         }
@@ -355,8 +349,7 @@
         .k-hierarchy-cell + .k-grid-content-sticky {
             border-inline-start-width: $kendo-grid-cell-vertical-border-width;
         }
-        .k-detail-cell {}
-        .k-master-row {}
+
 
         .k-detail-row {
             .k-detail-cell {
@@ -414,8 +407,6 @@
         }
 
         // Highlighted state
-        td.k-highlighted,
-        .k-table-row.k-highlighted > td,
         .k-table-td.k-highlighted,
         .k-table-row.k-highlighted > .k-table-td {
             font-weight: $kendo-grid-highlighted-font-weight;
@@ -560,15 +551,11 @@
     .k-grid-footer {
         border-block-start-width: 1px;
 
-        td,
         .k-table-td {
             height: $kendo-line-height-em;
         }
     }
 
-    .k-grid-footer td,
-    .k-group-footer td,
-    .k-grouping-row td,
     .k-grid-footer .k-table-td,
     .k-group-footer .k-table-td,
     .k-grouping-row .k-table-td {
@@ -594,7 +581,6 @@
     .k-filter-row {
         line-height: $kendo-form-line-height;
 
-        td,
         .k-table-td,
         .k-table-th {
             border-width: 0;
@@ -603,7 +589,6 @@
             white-space: nowrap;
         }
 
-        td:first-child,
         .k-table-td:first-child {
             border-inline-start-width: 0;
         }
@@ -640,7 +625,6 @@
         border-color: inherit;
         outline: 0;
 
-        .k-table-row:last-child > td,
         .k-table-row:last-child > .k-table-td {
             border-block-end-width: 0;
         }
@@ -666,13 +650,11 @@
     // Edit row
     .k-grid .k-edit-cell,
     .k-grid .k-command-cell,
-    .k-grid .k-grid-edit-row td,
     .k-grid .k-grid-edit-row .k-table-td {
         text-overflow: clip;
     }
 
     .k-grid .k-edit-cell,
-    .k-grid .k-grid-edit-row td,
     .k-grid .k-grid-edit-row .k-table-td {
 
         > input:not([type="checkbox"]):not([type="radio"]),
@@ -837,11 +819,10 @@
         visibility: hidden;
     }
 
-    .k-width-container  div {
+    .k-width-container div {
         height: 1px;
     }
 
-    .k-grid-add-row td,
     .k-grid-add-row .k-table-td {
         border-block-end-style: solid;
         border-block-end-width: 1px;
@@ -927,7 +908,6 @@
             position: static;
         }
 
-        .k-grid-row-sticky td,
         .k-grid-row-sticky .k-table-td {
             border-block-end-width: $kendo-grid-border-width;
             border-block-start-width: $kendo-grid-border-width;
@@ -938,8 +918,6 @@
             z-index: k-z-index("base", 2);
         }
 
-        .k-grid-row-sticky td.k-grid-content-sticky,
-        .k-grid-row-sticky.k-table-alt-row td.k-grid-content-sticky,
         .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
         .k-grid-row-sticky.k-table-alt-row .k-table-td.k-grid-content-sticky {
             z-index: k-z-index("base", 3);
@@ -966,7 +944,6 @@
     .k-grid .k-table .k-grid-footer-sticky {
         border-inline-end-width: $kendo-grid-cell-vertical-border-width;
 
-        &:not([style*="display: none"]) + td,
         &:not([style*="display: none"]) + .k-table-td,
         &:not([style*="display: none"]) + .k-table-th {
             border-inline-start-width: 0;
@@ -1064,7 +1041,6 @@
                     padding-inline: $_header-padding-x;
                 }
 
-                td,
                 .k-table-td {
                     padding-block: $_cell-padding-y;
                     padding-inline: $_cell-padding-x;
@@ -1130,7 +1106,6 @@
                     // Edit row
                     .k-edit-cell,
                     .k-command-cell,
-                    .k-grid-edit-row td,
                     .k-grid-edit-row .k-table-td {
                         padding-block: $_edit-cell-padding-y;
                         padding-inline: $_edit-cell-padding-x;
@@ -1140,7 +1115,6 @@
 
                 // Filter row
                 .k-filter-row {
-                    td,
                     .k-table-td,
                     .k-table-th {
                         padding-block: $_filter-cell-padding-y;
@@ -1475,7 +1449,6 @@
         table-layout: auto !important; // stylelint-disable-line declaration-no-important
 
         .k-table-th,
-        td,
         .k-table-td {
             white-space: nowrap !important; // stylelint-disable-line declaration-no-important
         }
