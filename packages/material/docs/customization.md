@@ -17005,16 +17005,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-sticky-footer-hover-bg</td>
-    <td>String</td>
-    <td><code>$kendo-grid-sticky-footer-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered sticky footer in the Grid.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-sticky-container-shadow</td>
     <td>List</td>
     <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.08)</code></td>
