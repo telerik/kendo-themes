@@ -60,7 +60,7 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
                                         <TableRow className="k-master-row" role="row" aria-rowindex={1}>
                                             {/* Pin column cell — announces context menu; icon is decorative */}
                                             <TableTd role="gridcell" aria-colindex={1} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="true">
-                                                <span className="k-pin-cell"><Icon icon="unpin-outline" /></span>
+                                                <span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /></span>
                                             </TableTd>
                                             <TableTd role="gridcell" aria-colindex={2}>Shelden Greyes</TableTd>
                                             <TableTd role="gridcell" aria-colindex={3}>Operator</TableTd>
@@ -92,7 +92,7 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
                                         </TableRow>
                                         <TableRow className="k-master-row k-pinned-source" role="row" alt aria-rowindex={3}>
                                             <TableTd role="gridcell" aria-colindex={1} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">
-                                                <span className="k-pin-cell"><Icon icon="unpin-outline" /></span>
+                                                <span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /></span>
                                             </TableTd>
                                             <TableTd role="gridcell" aria-colindex={2}>Shelden Greyes</TableTd>
                                             <TableTd role="gridcell" aria-colindex={3}>Operator</TableTd>

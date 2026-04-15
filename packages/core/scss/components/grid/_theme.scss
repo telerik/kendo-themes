@@ -87,7 +87,7 @@
                 background-color: $kendo-grid-grouping-row-bg;
             }
 
-            .k-icon {
+            .k-icon:not(.k-action-icon) {
                 color: $kendo-grid-header-text;
             }
 
