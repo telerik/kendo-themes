@@ -184,7 +184,7 @@ export const {ComponentName}: KendoComponent<Kendo{ComponentName}Props & Kendo{C
 export default {ComponentName};
 ```
 
-**ARIA spec** — if `aria/{component}_aria.md` exists, add an `ariaSpec` property based on that document. Otherwise omit or add a minimal spec:
+**ARIA spec** — add an `ariaSpec` property. The `ariaSpec` object on the spec component is the single source of truth for ARIA testing:
 
 ```tsx
 {ComponentName}.ariaSpec = {

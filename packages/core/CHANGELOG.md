@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.0...v13.2.0-dev.1) (2026-04-13)
+
+
+### Bug Fixes
+
+* **grid:** update pinned and sticky container styles ([1e69164](https://github.com/telerik/kendo-themes/commit/1e691645a60bc272d91030f2be71ee32ef6a1e0f))
+
+
+
+
+
 # [13.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.2-dev.0...v13.2.0-dev.0) (2026-04-06)
 
 
