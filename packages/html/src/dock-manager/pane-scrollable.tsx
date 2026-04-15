@@ -14,8 +14,8 @@ export type KendoPaneScrollableProps = {
 
 const defaultPaneActions = (
     <>
-        <Button fillMode="flat" icon="pin" aria-label="Pin pane"></Button>
-        <Button fillMode="flat" icon="more-vertical" aria-label="More actions"></Button>
+        <Button fillMode="flat" size="xsmall" icon="pin" aria-label="Pin pane"></Button>
+        <Button fillMode="flat" size="xsmall" icon="more-vertical" aria-label="More actions"></Button>
     </>
 );
 

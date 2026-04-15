@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.1...v13.2.0-dev.2) (2026-04-15)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [13.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.0...v13.2.0-dev.1) (2026-04-13)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [13.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.2-dev.0...v13.2.0-dev.0) (2026-04-06)
+
+
+### Features
+
+* **html:** add xsmall size to the Button component ([a2a433d](https://github.com/telerik/kendo-themes/commit/a2a433d634d7632fd7c59c0fda1e39168ce6d46e))
+
+
+
+
+
 ## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

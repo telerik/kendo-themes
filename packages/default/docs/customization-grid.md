@@ -1019,22 +1019,42 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-sticky-container-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td>List</td>
+    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 2px 4px 0 rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container in the Grid.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-sticky-container-bottom-shadow</td>
+    <td>List</td>
+    <td><code>0 -2px 4px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 -2px 4px 0 rgba(0, 0, 0, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container positioned at the bottom in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-pinned-container-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td>List</td>
+    <td><code>0 4px 8px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 4px 8px 0 rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-pinned-container-bottom-shadow</td>
+    <td>List</td>
+    <td><code>0 -4px 8px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 -4px 8px 0 rgba(0, 0, 0, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container positioned at the bottom in the Grid.</div></div>
     </td>
 </tr>
 <tr>

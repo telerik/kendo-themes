@@ -29,11 +29,11 @@ export default () =>(
                     </ChatMessageGroup>
                     <ChatMessageGroup type="sender">
                         <ChatMessage toolbar toolbarItems={[
-                            <Button icon="copy" fillMode="flat"></Button>,
-                            <Button icon="arrows-rotate-outline" fillMode="flat"></Button>,
-                            <Button icon="download-light" fillMode="flat"></Button>,
+                            <Button icon="copy" fillMode="flat" size="xsmall"></Button>,
+                            <Button icon="arrows-rotate-outline" fillMode="flat" size="xsmall"></Button>,
+                            <Button icon="download-light" fillMode="flat" size="xsmall"></Button>,
                             <ToolbarSeparator></ToolbarSeparator>,
-                            <Button icon="thumb-up-outline" fillMode="flat"></Button>,
+                            <Button icon="thumb-up-outline" fillMode="flat" size="xsmall"></Button>,
                         ]} selected text="(Selected) Message with toolbar" />
                     </ChatMessageGroup>
                 </ChatMessageToolbar>

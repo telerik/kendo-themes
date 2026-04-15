@@ -56,6 +56,34 @@ $kendo-elevation: map.merge($default-elevation, $kendo-elevation);
     @return var(--kendo-elevation-#{$level});
 }
 
+// Each elevation-bg level increases oklch lightness by level * this value.
+$kendo-elevation-bg-lightness-step: 0.015 !default;
+
+// Each elevation-bg level increases oklch chroma by level * this value.
+$kendo-elevation-bg-chroma-step: 0.001 !default;
+
+// The background color for a given elevation level is calculated by increasing the lightness and chroma of the base background color
+// by a step multiplied by the elevation level, but only if the base background color is light (for light themes) or dark (for dark themes).
+// This is achieved by multiplying the steps by a clamp function that returns 1 when the background color is in the appropriate range and 0 otherwise.
+// clamp(0, (0.5 - l) * 99999, 1) → 1 when bg is dark, 0 when light
+@function k-elevation-bg($level, $color) {
+    $_result: "oklch(from #{$color} calc(l + #{$level} * #{$kendo-elevation-bg-lightness-step} * clamp(0, (0.5 - l) * 99999, 1)) calc(c + #{$level} * #{$kendo-elevation-bg-chroma-step} * clamp(0, (0.5 - l) * 99999, 1)) h)";
+    @return #{$_result};
+}
+
+// Each elevation-border level increases border opacity by level * this value (in %).
+$kendo-elevation-border-opacity-step: 10 !default;
+
+// The border color for a given elevation level is calculated by increasing the alpha of the base border color
+// by a step multiplied by the elevation level, but only if the base border color is light (for dark themes) or dark (for light themes).
+// This is achieved by multiplying the step by a clamp function that returns 1 when the border color is in the appropriate range and 0 otherwise.
+// clamp(0, (l - 0.5) * 99999, 1) → 1 when border is light (dark theme), 0 when dark (light theme)
+// alpha is a <number> (0..1), so we divide the step by 100 instead of multiplying by 1%
+@function k-elevation-border($level, $color) {
+    $_result: "oklch(from #{$color} l c h / calc(alpha + #{$level} * #{$kendo-elevation-border-opacity-step} / 100 * clamp(0, (l - 0.5) * 99999, 1)))";
+    @return #{$_result};
+}
+
 
 @mixin kendo-elevation--styles() {
     :root {

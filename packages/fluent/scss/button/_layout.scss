@@ -28,6 +28,11 @@
             }
         }
 
+        #{k-when-default($kendo-button-default-size, "xs")}
+        &.k-button-xs {
+            font-weight: $kendo-font-weight-normal;
+        }
+
         #{k-when-default($kendo-button-default-size, "sm")}
         &.k-button-sm {
             font-weight: $kendo-font-weight-normal;

@@ -31,11 +31,10 @@ If no component name is given, ask. Everything else can be inferred from existin
 
 Read all relevant source files to understand the component's structure:
 
-1. **ARIA reference doc** — `aria/{component}_aria.md` (may not exist for all components)
-2. **Component spec** — `packages/html/src/{component}/{component}.spec.tsx`
-3. **Templates** — `packages/html/src/{component}/templates/*.tsx`
-4. **Sub-component specs** — any related `.spec.tsx` files in the same directory (e.g., `tabstrip-item.spec.tsx`)
-5. **Reference component** — find a similar component that already has `ariaSpec.rules` and use it as a pattern reference (good examples: `button`, `checkbox`, `combobox`, `tabstrip`)
+1. **Component spec** — `packages/html/src/{component}/{component}.spec.tsx`
+2. **Templates** — `packages/html/src/{component}/templates/*.tsx`
+3. **Sub-component specs** — any related `.spec.tsx` files in the same directory (e.g., `tabstrip-item.spec.tsx`)
+4. **Reference component** — find a similar component that already has `ariaSpec.rules` and use it as a pattern reference (good examples: `button`, `checkbox`, `combobox`, `tabstrip`)
 
 Note the component's:
 - Rendered HTML structure (element types, class names, nesting)
@@ -47,9 +46,7 @@ Note the component's:
 
 The `ariaSpec` static object on the spec component is the **single source of truth** for ARIA testing. Create or update it.
 
-**If `aria/{component}_aria.md` exists:** migrate every row from its rule table into `ariaSpec.rules`. No cherry-picking — every single row must be included. If a rule seems wrong, fix the selector or attribute but still include it.
-
-**If no ARIA markdown exists:** create rules based on:
+Create rules based on:
 - WAI-ARIA 1.2 Authoring Practices and WCAG 2.2
 - The component's rendered HTML and interactive behavior
 - Specs from similar components

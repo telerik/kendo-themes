@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-preview-no-color-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>map.get($kendo-colors, error-on-surface)</code></td>
-    <td><span class="color-preview" style="background-color: #9C2521"></span><code>#9C2521</code></td>
+    <td><code>oklch(from var(--kendo-color-error) calc(l - 0.052) calc(c - 0.0164) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorPreview when no color is selected.</div></div>

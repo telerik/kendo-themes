@@ -5,11 +5,11 @@
     "base": "@progress/kendo-theme-material",
     "version": "5.1.2-dev.7",
     "previewColors": [
-        "#3f51b5",
-        "#2196f3",
-        "#43a047",
-        "#ffc107",
-        "#ff5722"
+        "oklch(47.82% 0.1590 271.40deg)",
+        "oklch(65.82% 0.1691 248.83deg)",
+        "oklch(62.91% 0.1543 144.23deg)",
+        "oklch(84.42% 0.1721 84.94deg)",
+        "oklch(67.92% 0.2127 36.52deg)"
     ],
     "components": [],
     "groups": [
@@ -19,152 +19,152 @@
                 "series-a": {
                     "name": "Series A",
                     "type": "color",
-                    "value": "#3f51b5"
+                    "value": "oklch(47.82% 0.1590 271.40deg)"
                 },
                 "series-a-bold": {
                     "name": "Series A Bold",
                     "type": "color",
-                    "value": "#2f3d88"
+                    "value": "oklch(39.28% 0.1258 271.47deg)"
                 },
                 "series-a-bolder": {
                     "name": "Series A Bolder",
                     "type": "color",
-                    "value": "#20295b"
+                    "value": "oklch(30.33% 0.0898 272.29deg)"
                 },
                 "series-a-subtle": {
                     "name": "Series A Subtle",
                     "type": "color",
-                    "value": "#6f7dc8"
+                    "value": "oklch(61.10% 0.1150 274.48deg)"
                 },
                 "series-a-subtler": {
                     "name": "Series A Subtler",
                     "type": "color",
-                    "value": "#9fa8da"
+                    "value": "oklch(74.23% 0.0731 276.53deg)"
                 },
                 "series-b": {
                     "name": "Series B",
                     "type": "color",
-                    "value": "#2196f3"
+                    "value": "oklch(65.82% 0.1691 248.83deg)"
                 },
                 "series-b-bold": {
                     "name": "Series B Bold",
                     "type": "color",
-                    "value": "#1971b6"
+                    "value": "oklch(53.50% 0.1335 248.16deg)"
                 },
                 "series-b-bolder": {
                     "name": "Series B Bolder",
                     "type": "color",
-                    "value": "#114b7a"
+                    "value": "oklch(40.25% 0.0977 248.23deg)"
                 },
                 "series-b-subtle": {
                     "name": "Series B Subtle",
                     "type": "color",
-                    "value": "#59b0f6"
+                    "value": "oklch(73.28% 0.1323 245.33deg)"
                 },
                 "series-b-subtler": {
                     "name": "Series B Subtler",
                     "type": "color",
-                    "value": "#90cbf9"
+                    "value": "oklch(81.85% 0.0892 242.62deg)"
                 },
                 "series-c": {
                     "name": "Series C",
                     "type": "color",
-                    "value": "#43a047"
+                    "value": "oklch(62.91% 0.1543 144.23deg)"
                 },
                 "series-c-bold": {
                     "name": "Series C Bold",
                     "type": "color",
-                    "value": "#327835"
+                    "value": "oklch(51.14% 0.1229 144.29deg)"
                 },
                 "series-c-bolder": {
                     "name": "Series C Bolder",
                     "type": "color",
-                    "value": "#225024"
+                    "value": "oklch(38.70% 0.0877 144.48deg)"
                 },
                 "series-c-subtle": {
                     "name": "Series C Subtle",
                     "type": "color",
-                    "value": "#72b875"
+                    "value": "oklch(71.90% 0.1191 145.20deg)"
                 },
                 "series-c-subtler": {
                     "name": "Series C Subtler",
                     "type": "color",
-                    "value": "#a1d0a3"
+                    "value": "oklch(81.23% 0.0796 145.94deg)"
                 },
                 "series-d": {
                     "name": "Series D",
                     "type": "color",
-                    "value": "#ffc107"
+                    "value": "oklch(84.42% 0.1721 84.94deg)"
                 },
                 "series-d-bold": {
                     "name": "Series D Bold",
                     "type": "color",
-                    "value": "#bf9105"
+                    "value": "oklch(68.18% 0.1386 85.71deg)"
                 },
                 "series-d-bolder": {
                     "name": "Series D Bolder",
                     "type": "color",
-                    "value": "#806104"
+                    "value": "oklch(51.02% 0.1030 86.36deg)"
                 },
                 "series-d-subtle": {
                     "name": "Series D Subtle",
                     "type": "color",
-                    "value": "#ffd145"
+                    "value": "oklch(87.74% 0.1578 89.97deg)"
                 },
                 "series-d-subtler": {
                     "name": "Series D Subtler",
                     "type": "color",
-                    "value": "#ffe083"
+                    "value": "oklch(91.32% 0.1178 91.52deg)"
                 },
                 "series-e": {
                     "name": "Series E",
                     "type": "color",
-                    "value": "#ff5722"
+                    "value": "oklch(67.92% 0.2127 36.52deg)"
                 },
                 "series-e-bold": {
                     "name": "Series E Bold",
                     "type": "color",
-                    "value": "#bf411a"
+                    "value": "oklch(54.91% 0.1689 36.57deg)"
                 },
                 "series-e-bolder": {
                     "name": "Series E Bolder",
                     "type": "color",
-                    "value": "#802c11"
+                    "value": "oklch(41.39% 0.1221 37.27deg)"
                 },
                 "series-e-subtle": {
                     "name": "Series E Subtle",
                     "type": "color",
-                    "value": "#ff8159"
+                    "value": "oklch(73.92% 0.1632 38.21deg)"
                 },
                 "series-e-subtler": {
                     "name": "Series E Subtler",
                     "type": "color",
-                    "value": "#ffab91"
+                    "value": "oklch(81.69% 0.1060 37.91deg)"
                 },
                 "series-f": {
                     "name": "Series F",
                     "type": "color",
-                    "value": "#e91e63"
+                    "value": "oklch(60.62% 0.2297 9.61deg)"
                 },
                 "series-f-bold": {
                     "name": "Series F Bold",
                     "type": "color",
-                    "value": "#af174a"
+                    "value": "oklch(49.13% 0.1838 9.24deg)"
                 },
                 "series-f-bolder": {
                     "name": "Series F Bolder",
                     "type": "color",
-                    "value": "#750f32"
+                    "value": "oklch(36.93% 0.1352 7.78deg)"
                 },
                 "series-f-subtle": {
                     "name": "Series F Subtle",
                     "type": "color",
-                    "value": "#ef568a"
+                    "value": "oklch(67.00% 0.1921 2.87deg)"
                 },
                 "series-f-subtler": {
                     "name": "Series F Subtler",
                     "type": "color",
-                    "value": "#f48fb1"
+                    "value": "oklch(76.57% 0.1276 358.92deg)"
                 }
             }
         }

@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.1...v13.2.0-dev.2) (2026-04-15)
+
+
+### Bug Fixes
+
+* **pdf-viewer:** add CSS custom properties for text layer scaling (pdfjs v5) ([65d3b60](https://github.com/telerik/kendo-themes/commit/65d3b60b846fa5261d4e703d479e4b2ac8b3e4db))
+
+
+
+
+
+# [13.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.0...v13.2.0-dev.1) (2026-04-13)
+
+
+### Bug Fixes
+
+* **grid:** update pinned and sticky container styles ([1e69164](https://github.com/telerik/kendo-themes/commit/1e691645a60bc272d91030f2be71ee32ef6a1e0f))
+
+
+
+
+
+# [13.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.2-dev.0...v13.2.0-dev.0) (2026-04-06)
+
+
+### Features
+
+* **button:** add styles for xsmall size ([c19ee9a](https://github.com/telerik/kendo-themes/commit/c19ee9a6544e7594fdaea1a7ae6cba3280e7f16f))
+* **default:** convert hex to oklch and remove obsolete palettes ([c908a70](https://github.com/telerik/kendo-themes/commit/c908a7010d8698733ede5c5a3956c5cca6042531))
+* derive border radii from a single step ([0e629d0](https://github.com/telerik/kendo-themes/commit/0e629d0d51f2b436906df084acd13ebc4754c312))
+* derive spacing from a single step ([9a5b9ff](https://github.com/telerik/kendo-themes/commit/9a5b9ff7dd0bda4f719304b3a90b49867f07c6dd))
+
+
+
+
+
 ## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
 
 **Note:** Version bump only for package @progress/kendo-theme-core

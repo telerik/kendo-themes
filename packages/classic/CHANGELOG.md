@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.1...v13.2.0-dev.2) (2026-04-15)
+
+**Note:** Version bump only for package @progress/kendo-theme-classic
+
+
+
+
+
+# [13.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.0...v13.2.0-dev.1) (2026-04-13)
+
+
+### Bug Fixes
+
+* **grid:** update pinned and sticky container styles ([1e69164](https://github.com/telerik/kendo-themes/commit/1e691645a60bc272d91030f2be71ee32ef6a1e0f))
+
+
+
+
+
+# [13.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.2-dev.0...v13.2.0-dev.0) (2026-04-06)
+
+
+### Features
+
+* **button:** add styles for xsmall size ([c19ee9a](https://github.com/telerik/kendo-themes/commit/c19ee9a6544e7594fdaea1a7ae6cba3280e7f16f))
+* **classic:** convert hex to oklch and remove obsolete palettes ([de94e87](https://github.com/telerik/kendo-themes/commit/de94e872fe27cd1ecf3f1b94a3aea4b23c5d9284))
+* derive border radii from a single step ([0e629d0](https://github.com/telerik/kendo-themes/commit/0e629d0d51f2b436906df084acd13ebc4754c312))
+* derive spacing from a single step ([9a5b9ff](https://github.com/telerik/kendo-themes/commit/9a5b9ff7dd0bda4f719304b3a90b49867f07c6dd))
+
+
+
+
+
 ## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic

@@ -14,7 +14,7 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    size: [ Size.undefined, Size.xsmall, Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
     themeColor: [

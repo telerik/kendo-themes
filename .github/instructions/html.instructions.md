@@ -152,7 +152,7 @@ All components must be WCAG 2.2 Level AA compliant. ARIA attributes are applied 
 For applying ARIA to a component, use the `/accessibility` prompt — it contains the full workflow, rules, and patterns.
 
 Quick reference:
-- ARIA specs per component: `aria/[component]_aria.md`
+- ARIA specs are defined as `ariaSpec.rules` on each component's `.spec.tsx` (single source of truth)
 - Edit only `.spec.tsx` and `templates/*.tsx` (avoid `tests/` unless needed for coverage)
 - Validate: `npm run test:a11y [component]`
 - Completed components with `ariaSpec` serve as reference for new work

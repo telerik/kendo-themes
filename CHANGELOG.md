@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.1...v13.2.0-dev.2) (2026-04-15)
+
+
+### Bug Fixes
+
+* **pdf-viewer:** add CSS custom properties for text layer scaling (pdfjs v5) ([65d3b60](https://github.com/telerik/kendo-themes/commit/65d3b60b846fa5261d4e703d479e4b2ac8b3e4db))
+
+
+
+
+
+# [13.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.0...v13.2.0-dev.1) (2026-04-13)
+
+
+### Bug Fixes
+
+* **grid:** update pinned and sticky container styles ([1e69164](https://github.com/telerik/kendo-themes/commit/1e691645a60bc272d91030f2be71ee32ef6a1e0f))
+
+
+
+
+
+# [13.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.2-dev.0...v13.2.0-dev.0) (2026-04-06)
+
+
+### Bug Fixes
+
+* **fluent:** update border-width units for a correct calc expression ([f82f9da](https://github.com/telerik/kendo-themes/commit/f82f9da6db57f76844262d24325e9aee4dd4c6e2))
+
+
+### Features
+
+* **bootstrap:** convert hex to oklch and remove obsolete palettes ([46afd8a](https://github.com/telerik/kendo-themes/commit/46afd8a0aa6b92b91c7713031d92effa5d82d3e3))
+* **button:** add styles for xsmall size ([c19ee9a](https://github.com/telerik/kendo-themes/commit/c19ee9a6544e7594fdaea1a7ae6cba3280e7f16f))
+* **classic:** convert hex to oklch and remove obsolete palettes ([de94e87](https://github.com/telerik/kendo-themes/commit/de94e872fe27cd1ecf3f1b94a3aea4b23c5d9284))
+* **default:** convert hex to oklch and remove obsolete palettes ([c908a70](https://github.com/telerik/kendo-themes/commit/c908a7010d8698733ede5c5a3956c5cca6042531))
+* derive border radii from a single step ([0e629d0](https://github.com/telerik/kendo-themes/commit/0e629d0d51f2b436906df084acd13ebc4754c312))
+* derive spacing from a single step ([9a5b9ff](https://github.com/telerik/kendo-themes/commit/9a5b9ff7dd0bda4f719304b3a90b49867f07c6dd))
+* **fluent:** convert hex to oklch and remove obsolete palettes ([58e360f](https://github.com/telerik/kendo-themes/commit/58e360f9d5595f346d0113c212f87769f4717019))
+* **html:** add xsmall size to the Button component ([a2a433d](https://github.com/telerik/kendo-themes/commit/a2a433d634d7632fd7c59c0fda1e39168ce6d46e))
+* **material:** convert hex to oklch and remove obsolete palettes ([fca68f0](https://github.com/telerik/kendo-themes/commit/fca68f06fba28ee4507fdcce564d85efd7afe19d))
+
+
+
+
+
 ## [13.1.2-dev.0](https://github.com/telerik/kendo-themes/compare/v13.1.1...v13.1.2-dev.0) (2026-03-30)
 
 **Note:** Version bump only for package kendo-themes.repo

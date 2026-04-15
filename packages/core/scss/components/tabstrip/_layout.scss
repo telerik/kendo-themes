@@ -50,11 +50,17 @@
 
             #{k-when-default($kendo-tabstrip-default-size, $size)}
             &.k-tabstrip-#{$size} {
-                .k-tabstrip-items .k-link {
-                    font-size: $_font-size;
-                    line-height: $_line-height;
-                    padding-block: $_item-padding-y;
-                    padding-inline: $_item-padding-x;
+                .k-tabstrip-items {
+                    .k-link {
+                        font-size: $_font-size;
+                        line-height: $_line-height;
+                        padding-block: $_item-padding-y;
+                        padding-inline: $_item-padding-x;
+                    }
+
+                    .k-item-actions {
+                        margin-inline-end: calc( #{$_item-padding-x} / 2 );
+                    }
                 }
 
                 :is(&.k-tabstrip-left, &.k-tabstrip-right):is(.k-tabstrip-scrollable-overlay) :is(.k-tabstrip-items-wrapper){
@@ -126,6 +132,7 @@
             padding: 0;
             display: flex;
             flex-direction: row;
+            align-self: center;
         }
 
         .k-link {

@@ -1748,9 +1748,19 @@ The following table lists the available variables for customizing the Classic th
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-border-radius-base</td>
+    <td>Number</td>
+    <td><code>.25rem</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-border-radius-none</td>
     <td>Number</td>
-    <td><code>map.get($kendo-spacing, 0)</code></td>
+    <td><code>0px</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -1759,9 +1769,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-border-radius-xs</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 1px)</code></td>
-    <td><code>1px</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * .25)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 0.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
@@ -1769,9 +1779,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-border-radius-sm</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 0.5)</code></td>
-    <td><code>0.125rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * .5)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 0.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
@@ -1779,9 +1789,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-border-radius-md</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 1)</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>var(--kendo-border-radius-base)</code></td>
+    <td><code>var(--kendo-border-radius-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
@@ -1789,9 +1799,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-border-radius-lg</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 1.5)</code></td>
-    <td><code>0.375rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 1.5)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 1.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
@@ -1799,9 +1809,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-border-radius-xl</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 2)</code></td>
-    <td><code>0.5rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 2)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
@@ -1809,9 +1819,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-border-radius-xxl</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 3)</code></td>
-    <td><code>0.75rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 3)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
@@ -1819,9 +1829,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-border-radius-xxxl</td>
-    <td>Number</td>
-    <td><code>map.get($kendo-spacing, 4)</code></td>
-    <td><code>1rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 4)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
@@ -1829,9 +1839,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-border-radius-full</td>
-    <td>Number</td>
-    <td><code>9999px</code></td>
-    <td><code>9999px</code></td>
+    <td>Calculation</td>
+    <td><code>calc(var(--kendo-border-radius-base) * 9999)</code></td>
+    <td><code>calc(var(--kendo-border-radius-base) * 9999)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
@@ -1841,7 +1851,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-border-radii</td>
     <td>Map</td>
     <td><code>map.merge($_default-border-radii, $kendo-border-radii)</code></td>
-    <td><ul><li>none: 0px</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.375rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li></ul></td>
+    <td><ul><li>none: 0px</li><li>xs: calc(var(--kendo-border-radius-base) * 0.25)</li><li>sm: calc(var(--kendo-border-radius-base) * 0.5)</li><li>md: var(--kendo-border-radius-base)</li><li>lg: calc(var(--kendo-border-radius-base) * 1.5)</li><li>xl: calc(var(--kendo-border-radius-base) * 2)</li><li>xxl: calc(var(--kendo-border-radius-base) * 3)</li><li>xxxl: calc(var(--kendo-border-radius-base) * 4)</li><li>full: calc(var(--kendo-border-radius-base) * 9999)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
@@ -3093,6 +3103,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-xs-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the xsmall Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-sm-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -3120,6 +3140,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-xs-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1px)</code></td>
+    <td><code>var(--kendo-spacing-1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the xsmall Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3183,6 +3213,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-xs-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the xsmall Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-sm-font-size</td>
     <td>String</td>
     <td><code>var(--kendo-font-size)</code></td>
@@ -3220,6 +3260,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-xs-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the xsmall Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3736,6 +3786,12 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-button-sizes</td>
     <td>Map</td>
     <td><code>(
+    xs: (
+        padding-x: $kendo-button-xs-padding-x,
+        padding-y: $kendo-button-xs-padding-y,
+        font-size: $kendo-button-xs-font-size,
+        line-height: $kendo-button-xs-line-height
+    ),
     sm: (
         padding-x: $kendo-button-sm-padding-x,
         padding-y: $kendo-button-sm-padding-y,
@@ -3755,7 +3811,7 @@ The following table lists the available variables for customizing the Classic th
         line-height: $kendo-button-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>md: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>lg: "padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)"</li></ul></td>
+    <td><ul><li>xs: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-1px)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>md: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>lg: "padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Button.</div></div>
@@ -6745,9 +6801,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-chart-no-data-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing( 25 )</code></td>
-    <td><code>var(--kendo-spacing-25)</code></td>
+    <td>Number</td>
+    <td><code>7rem</code></td>
+    <td><code>7rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chart.</div></div>
@@ -8456,7 +8512,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><ul><li>app-surface: #ffffff</li><li>on-app-surface: #272727</li><li>subtle: #666666</li><li>surface: #f0f0f0</li><li>surface-alt: #ffffff</li><li>border: #cacaca</li><li>border-alt: #b6b6b6</li><li>base-subtle: #f0f0f0</li><li>base-subtle-hover: #ebebeb</li><li>base-subtle-active: #dddddd</li><li>base: #ebebeb</li><li>base-hover: #dddddd</li><li>base-active: #d6d6d6</li><li>base-emphasis: #cacaca</li><li>base-on-subtle: #272727</li><li>on-base: #272727</li><li>base-on-surface: #272727</li><li>primary-subtle: #fff2eb</li><li>primary-subtle-hover: #ffe5d6</li><li>primary-subtle-active: #ffd8c2</li><li>primary: #f35800</li><li>primary-hover: #e05100</li><li>primary-active: #cc4a00</li><li>primary-emphasis: #ff8b47</li><li>primary-on-subtle: #3d1600</li><li>on-primary: #ffffff</li><li>primary-on-surface: #f35800</li><li>secondary-subtle: #cacaca</li><li>secondary-subtle-hover: #b6b6b6</li><li>secondary-subtle-active: #a3a3a3</li><li>secondary: #b6b6b6</li><li>secondary-hover: #a3a3a3</li><li>secondary-active: #8f8f8f</li><li>secondary-emphasis: #7a7a7a</li><li>secondary-on-subtle: #272727</li><li>on-secondary: #000000</li><li>secondary-on-surface: #8f8f8f</li><li>tertiary-subtle: #9cdffe</li><li>tertiary-subtle-hover: #72d1fe</li><li>tertiary-subtle-active: #49c4fd</li><li>tertiary: #03a9f4</li><li>tertiary-hover: #039be0</li><li>tertiary-active: #038ecd</li><li>tertiary-emphasis: #2cbbfd</li><li>tertiary-on-subtle: #01364e</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #0273a6</li><li>info-subtle: #cce5f3</li><li>info-subtle-hover: #a6d1ea</li><li>info-subtle-active: #6ab2dc</li><li>info: #007bc3</li><li>info-hover: #0071b3</li><li>info-active: #0067a4</li><li>info-emphasis: #409cd2</li><li>info-on-subtle: #002b44</li><li>on-info: #ffffff</li><li>info-on-surface: #005485</li><li>success-subtle: #bbdfc1</li><li>success-subtle-hover: #9ed1a6</li><li>success-subtle-active: #82c48c</li><li>success: #3ea44e</li><li>success-hover: #399748</li><li>success-active: #348a42</li><li>success-emphasis: #6ebb7a</li><li>success-on-subtle: #16391b</li><li>on-success: #ffffff</li><li>success-on-surface: #2a7035</li><li>warning-subtle: #ffdead</li><li>warning-subtle-hover: #ffd699</li><li>warning-subtle-active: #ffc670</li><li>warning: #ffa41f</li><li>warning-hover: #ff9800</li><li>warning-active: #eb8c00</li><li>warning-emphasis: #ffb240</li><li>warning-on-subtle: #593500</li><li>on-warning: #000000</li><li>warning-on-surface: #ffa41f</li><li>error-subtle: #f4c3b8</li><li>error-subtle-hover: #f2b4a6</li><li>error-subtle-active: #ec8e79</li><li>error: #d92800</li><li>error-hover: #c82500</li><li>error-active: #b62200</li><li>error-emphasis: #e35e40</li><li>error-on-subtle: #4c0e00</li><li>on-error: #ffffff</li><li>error-on-surface: #941b00</li><li>light-subtle: #f0f0f0</li><li>light-subtle-hover: #ebebeb</li><li>light-subtle-active: #dddddd</li><li>light: #ebebeb</li><li>light-hover: #dddddd</li><li>light-active: #d6d6d6</li><li>light-emphasis: #cacaca</li><li>light-on-subtle: #272727</li><li>on-light: #000000</li><li>light-on-surface: #ebebeb</li><li>dark-subtle: #cacaca</li><li>dark-subtle-hover: #b6b6b6</li><li>dark-subtle-active: #a3a3a3</li><li>dark: #404040</li><li>dark-hover: #333333</li><li>dark-active: #272727</li><li>dark-emphasis: #7a7a7a</li><li>dark-on-subtle: #000000</li><li>on-dark: #ffffff</li><li>dark-on-surface: #333333</li><li>inverse-subtle: #cacaca</li><li>inverse-subtle-hover: #b6b6b6</li><li>inverse-subtle-active: #a3a3a3</li><li>inverse: #404040</li><li>inverse-hover: #333333</li><li>inverse-active: #272727</li><li>inverse-emphasis: #7a7a7a</li><li>inverse-on-subtle: #000000</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #333333</li><li>series-a: #ff6358</li><li>series-a-bold: #bf4a42</li><li>series-a-bolder: #80322c</li><li>series-a-subtle: #ffb1ac</li><li>series-a-subtler: #ff8a82</li><li>series-b: #ffd246</li><li>series-b-bold: #bf9d35</li><li>series-b-bolder: #806923</li><li>series-b-subtle: #ffe9a2</li><li>series-b-subtler: #ffdd74</li><li>series-c: #78d237</li><li>series-c-bold: #5a9d29</li><li>series-c-bolder: #3c691c</li><li>series-c-subtle: #bbe99b</li><li>series-c-subtler: #9add69</li><li>series-d: #28b4c8</li><li>series-d-bold: #1e8796</li><li>series-d-bolder: #145a64</li><li>series-d-subtle: #93d9e3</li><li>series-d-subtler: #5ec7d6</li><li>series-e: #2d73f5</li><li>series-e-bold: #2256b8</li><li>series-e-bolder: #173a7b</li><li>series-e-subtle: #96b9fa</li><li>series-e-subtler: #6296f7</li><li>series-f: #9d40b0</li><li>series-f-bold: #80358e</li><li>series-f-bolder: #55235f</li><li>series-f-subtle: #d5a2df</li><li>series-f-subtler: #bf74ce</li></ul></td>
+    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>subtle: oklch(51.03% 0 0deg)</li><li>surface: oklch(95.51% 0 0deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) calc(l + 0.045) c h)</li><li>border: oklch(83.9% 0 0deg)</li><li>border-alt: oklch(77.63% 0 0deg)</li><li>base-subtle: oklch(from var(--kendo-color-base) calc(l + 0.015) c h)</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) l c h)</li><li>base-subtle-active: oklch(from var(--kendo-color-base) calc(l - 0.0425) c h)</li><li>base: oklch(94.01% 0 0deg)</li><li>base-hover: oklch(from var(--kendo-color-base) calc(l - 0.0425) c h)</li><li>base-active: oklch(from var(--kendo-color-base) calc(l - 0.064) c h)</li><li>base-emphasis: oklch(from var(--kendo-color-base) calc(l - 0.1011) c h)</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>primary-subtle: oklch(from var(--kendo-color-primary) 0.9694 calc(c * 0.083) h)</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) 0.9391 calc(c * 0.172) h)</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) 0.9095 calc(c * 0.259) h)</li><li>primary: oklch(66% 0.2039 40.8deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) calc(l - 0.0387) calc(c - 0.0126) h)</li><li>primary-active: oklch(from var(--kendo-color-primary) calc(l - 0.0796) calc(c - 0.0263) h)</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.0924) calc(c - 0.0415) h)</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l * 0.389) calc(c * 0.343) h)</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) l c h)</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.0627) c h)</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) l c h)</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l - 0.0608) c h)</li><li>secondary: oklch(77.63% 0 0deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) calc(l - 0.0608) c h)</li><li>secondary-active: oklch(from var(--kendo-color-secondary) calc(l - 0.1262) c h)</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l - 0.1968) c h)</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) calc(l - 0.1262) c h)</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) 0.8696 calc(c * 0.508) h)</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) 0.8193 calc(c * 0.702) h)</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) 0.7758 calc(c * 0.854) h)</li><li>tertiary: oklch(69.91% 0.157 239deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) calc(l - 0.0432) calc(c - 0.0100) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) calc(l - 0.0843) calc(c - 0.0199) h)</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l + 0.0500) calc(c - 0.0091) h)</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l * 0.450) calc(c * 0.421) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) calc(l * 0.755) calc(c * 0.742) h)</li><li>info-subtle: oklch(from var(--kendo-color-info) 0.9078 calc(c * 0.229) h)</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) 0.8384 calc(c * 0.401) h)</li><li>info-subtle-active: oklch(from var(--kendo-color-info) 0.7325 calc(c * 0.663) h)</li><li>info: oklch(56.38% 0.1427 245.3deg)</li><li>info-hover: oklch(from var(--kendo-color-info) calc(l - 0.0336) calc(c - 0.0093) h)</li><li>info-active: oklch(from var(--kendo-color-info) calc(l - 0.0672) calc(c - 0.0175) h)</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.0974) calc(c - 0.0250) h)</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l * 0.490) calc(c * 0.448) h)</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) calc(l * 0.762) calc(c * 0.743) h)</li><li>success-subtle: oklch(from var(--kendo-color-success) 0.8695 calc(c * 0.359) h)</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) 0.8134 calc(c * 0.516) h)</li><li>success-subtle-active: oklch(from var(--kendo-color-success) 0.7611 calc(c * 0.671) h)</li><li>success: oklch(63.9% 0.1556 146.3deg)</li><li>success-hover: oklch(from var(--kendo-color-success) calc(l - 0.0373) calc(c - 0.0101) h)</li><li>success-active: oklch(from var(--kendo-color-success) calc(l - 0.0752) calc(c - 0.0203) h)</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.0862) calc(c - 0.0345) h)</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l * 0.485) calc(c * 0.427) h)</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) calc(l * 0.760) calc(c * 0.740) h)</li><li>warning-subtle: oklch(from var(--kendo-color-warning) 0.9164 calc(c * 0.439) h)</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) 0.8973 calc(c * 0.542) h)</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) 0.8605 calc(c * 0.736) h)</li><li>warning: oklch(79.16% 0.1662 68.62deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) calc(l - 0.0214) calc(c + 0.0079) h)</li><li>warning-active: oklch(from var(--kendo-color-warning) calc(l - 0.0669) calc(c - 0.0026) h)</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0268) calc(c - 0.0139) h)</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l * 0.461) calc(c * 0.479) h)</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) l c h)</li><li>error-subtle: oklch(from var(--kendo-color-error) 0.8575 calc(c * 0.273) h)</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) 0.8235 calc(c * 0.352) h)</li><li>error-subtle-active: oklch(from var(--kendo-color-error) 0.7405 calc(c * 0.556) h)</li><li>error: oklch(57.1% 0.2143 32.35deg)</li><li>error-hover: oklch(from var(--kendo-color-error) calc(l - 0.0332) calc(c - 0.0133) h)</li><li>error-active: oklch(from var(--kendo-color-error) calc(l - 0.0688) calc(c - 0.0277) h)</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.0755) calc(c - 0.0420) h)</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l * 0.482) calc(c * 0.445) h)</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) calc(l * 0.757) calc(c * 0.744) h)</li><li>light-subtle: oklch(from var(--kendo-color-light) calc(l + 0.015) c h)</li><li>light-subtle-hover: oklch(from var(--kendo-color-light) l c h)</li><li>light-subtle-active: oklch(from var(--kendo-color-light) calc(l - 0.0425) c h)</li><li>light: oklch(94.01% 0 0deg)</li><li>light-hover: oklch(from var(--kendo-color-light) calc(l - 0.0425) c h)</li><li>light-active: oklch(from var(--kendo-color-light) calc(l - 0.064) c h)</li><li>light-emphasis: oklch(from var(--kendo-color-light) calc(l - 0.1011) c h)</li><li>light-on-subtle: oklch(27.27% 0 0deg)</li><li>on-light: oklch(0% 0 0deg)</li><li>light-on-surface: oklch(from var(--kendo-color-light) l c h)</li><li>dark-subtle: oklch(from var(--kendo-color-dark) calc(l + 0.4675) c h)</li><li>dark-subtle-hover: oklch(from var(--kendo-color-dark) calc(l + 0.4048) c h)</li><li>dark-subtle-active: oklch(from var(--kendo-color-dark) calc(l + 0.344) c h)</li><li>dark: oklch(37.15% 0 0deg)</li><li>dark-hover: oklch(from var(--kendo-color-dark) calc(l - 0.0504) c h)</li><li>dark-active: oklch(from var(--kendo-color-dark) calc(l - 0.0988) c h)</li><li>dark-emphasis: oklch(from var(--kendo-color-dark) calc(l + 0.208) c h)</li><li>dark-on-subtle: oklch(0% 0 0deg)</li><li>on-dark: oklch(100% 0 0deg)</li><li>dark-on-surface: oklch(from var(--kendo-color-dark) calc(l - 0.0504) c h)</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.4675) c h)</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.4048) c h)</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.344) c h)</li><li>inverse: oklch(37.15% 0 0deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0504) c h)</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.0988) c h)</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.208) c h)</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) clamp(0, (l - 0.7) * 99999, 1) 0 h)</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l - 0.0504) c h)</li><li>series: oklch(69.85% 0.1923 27.19deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l * 0.809) calc(c * 0.792) h)</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l * 0.610) calc(c * 0.570) h)</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l * 1.193) calc(c * 0.479) h)</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l * 1.088) calc(c * 0.745) h)</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.1809) calc(c - 0.0345) calc(h + 63.21))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l * 0.806) calc(c * 0.794) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l * 0.602) calc(c * 0.582) h)</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l * 1.064) calc(c * 0.585) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l * 1.030) calc(c * 0.823) h)</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.0798) calc(c + 0.0117) calc(h + 108.01))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l * 0.807) calc(c * 0.795) h)</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l * 0.606) calc(c * 0.577) h)</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l * 1.135) calc(c * 0.556) h)</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l * 1.063) calc(c * 0.802) h)</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.0099) calc(c - 0.0778) calc(h + 182.51))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l * 0.810) calc(c * 0.801) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l * 0.608) calc(c * 0.588) h)</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l * 1.189) calc(c * 0.622) h)</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l * 1.092) calc(c * 0.863) h)</li><li>series-e: oklch(from var(--kendo-color-series) calc(l - 0.1109) calc(c + 0.0152) calc(h + 234.21))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l * 0.813) calc(c * 0.795) h)</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l * 0.619) calc(c * 0.569) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l * 1.335) calc(c * 0.486) h)</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l * 1.160) calc(c * 0.743) h)</li><li>series-f: oklch(from var(--kendo-color-series) calc(l - 0.1561) calc(c - 0.0064) calc(h + 293.31))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l * 0.865) calc(c * 0.835) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l * 0.654) calc(c * 0.607) h)</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l * 1.437) calc(c * 0.545) h)</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l * 1.240) calc(c * 0.812) h)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -8531,6 +8587,11 @@ The following table lists the available variables for customizing the Classic th
     <td>inverse</td>
     <td colspan="2"> inverse-subtle, inverse-subtle-hover, inverse-subtle-active, inverse, inverse-hover, inverse-active, inverse-emphasis, inverse-on-subtle, on-inverse, inverse-on-surface</td>
     <td>The Inverse variable group.</td>
+</tr>
+<tr>
+    <td>series</td>
+    <td colspan="2"> series</td>
+    <td>The Series base variable group.</td>
 </tr>
 <tr>
     <td>series-a</td>
@@ -9156,6 +9217,11 @@ The following table lists the available variables for customizing the Classic th
     <td>Color</td>
     <td>inverse-on-surface</td>
     <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series</td>
+    <td colspan="2">The base series color variable.</td>
 </tr>
 <tr>
     <td>Color</td>
@@ -10907,7 +10973,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-color-preview-no-color-text</td>
     <td>Color</td>
     <td><code>map.get($kendo-colors, error)</code></td>
-    <td><span class="color-preview" style="background-color: #d92800"></span><code>#d92800</code></td>
+    <td><span class="color-preview" style="background-color: oklch(57.1% 0.2143 32.35deg)"></span><code>oklch(57.1% 0.2143 32.35deg)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorPreview when no color is selected.</div></div>
@@ -16937,22 +17003,42 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-grid-sticky-container-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
+    <td>List</td>
+    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 2px 4px 0 rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container in the Grid.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-sticky-container-bottom-shadow</td>
+    <td>List</td>
+    <td><code>0 -2px 4px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 -2px 4px 0 rgba(0, 0, 0, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container positioned at the bottom in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-pinned-container-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td>List</td>
+    <td><code>0 4px 8px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 4px 8px 0 rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-pinned-container-bottom-shadow</td>
+    <td>List</td>
+    <td><code>0 -4px 8px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 -4px 8px 0 rgba(0, 0, 0, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container positioned at the bottom in the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -23913,266 +23999,6 @@ The following table lists the available variables for customizing the Classic th
 </tbody>
 </table>
 
-### Palette
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-palette-ash-gray</td>
-    <td></td>
-    <td><code>$_default-palette-ash-gray</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Ash Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-tangerine-orange</td>
-    <td></td>
-    <td><code>$_default-palette-tangerine-orange</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Tangerine Orange Palette provides colors to the Primary variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-dodger-blue</td>
-    <td></td>
-    <td><code>$_default-palette-dodger-blue</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Dodger Blue Palette provides colors to the Tertiary variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-grass-green</td>
-    <td></td>
-    <td><code>$_default-palette-grass-green</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Grass Green Palette provides colors to the Success variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-lake-blue</td>
-    <td></td>
-    <td><code>$_default-palette-lake-blue</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lake Blue Palette provides colors to the Info variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-honey-yellow</td>
-    <td></td>
-    <td><code>$_default-palette-honey-yellow</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Honey Yellow Palette provides colors to the Warning variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-brick-red</td>
-    <td></td>
-    <td><code>$_default-palette-brick-red</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Brick Red Palette provides colors to the Error variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-coral</td>
-    <td>Map</td>
-    <td><code>$_default-palette-coral</code></td>
-    <td><ul><li>1: #fff6f5</li><li>2: #ffeceb</li><li>3: #ffdedb</li><li>4: #ffc8c4</li><li>5: #ffb1ac</li><li>6: #ff9d97</li><li>7: #ff8a82</li><li>8: #ff766d</li><li>9: #ff6358</li><li>10: #ea5a51</li><li>11: #d45349</li><li>12: #bf4a42</li><li>13: #a33f38</li><li>14: #80322c</li><li>15: #5c201c</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Coral Palette provides colors to the Series A variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-pineapple-yellow</td>
-    <td></td>
-    <td><code>$_default-palette-pineapple-yellow</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Pineapple Yellow provides colors to the Series B variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-apple-green</td>
-    <td></td>
-    <td><code>$_default-palette-apple-green</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Apple Green provides colors to the Series C variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-pacific-blue</td>
-    <td></td>
-    <td><code>$_default-palette-pacific-blue</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Pacific Blue provides colors to the Series D variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-bright-blue</td>
-    <td></td>
-    <td><code>$_default-palette-bright-blue</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Bright Blue provides colors to the Series E variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-orchid-purple</td>
-    <td></td>
-    <td><code>$_default-palette-orchid-purple</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Orchid Purple provides colors to the Series F variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-gray</td>
-    <td>Map</td>
-    <td><code>$_default-palette-gray</code></td>
-    <td><ul><li>1: #fafafa</li><li>2: #f5f5f5</li><li>3: #ebebeb</li><li>4: #e0e0e0</li><li>5: #d6d6d6</li><li>6: #c2c2c2</li><li>7: #adadad</li><li>8: #999999</li><li>9: #808080</li><li>10: #666666</li><li>11: #525252</li><li>12: #3d3d3d</li><li>13: #292929</li><li>14: #1f1f1f</li><li>15: #141414</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-sky-blue</td>
-    <td>Map</td>
-    <td><code>$_default-palette-sky-blue</code></td>
-    <td><ul><li>1: #ebf8fe</li><li>2: #d8f1fd</li><li>3: #c5eafc</li><li>4: #a3dffb</li><li>5: #81d4fA</li><li>6: #61c9f9</li><li>7: #42bff7</li><li>8: #22b3f5</li><li>9: #03a9f4</li><li>10: #039ae0</li><li>11: #028ccb</li><li>12: #027fb7</li><li>13: #026999</li><li>14: #02557a</li><li>15: #023f5c</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Sky Blue Palette provides colors to the Tertiary variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-green</td>
-    <td>Map</td>
-    <td><code>$_default-palette-green</code></td>
-    <td><ul><li>1: #edf8e9</li><li>2: #dcf0d3</li><li>3: #cbe9bf</li><li>4: #b7e1a5</li><li>5: #9bda80</li><li>6: #81d15f</li><li>7: #69c740</li><li>8: #4ebe1f</li><li>9: #37b400</li><li>10: #32a500</li><li>11: #2d9600</li><li>12: #298700</li><li>13: #227100</li><li>14: #1c5a00</li><li>15: #1c5a00</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Green Palette provides colors to the Success variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-blue</td>
-    <td>Map</td>
-    <td><code>$_default-palette-blue</code></td>
-    <td><ul><li>1: #e9f0fd</li><li>2: #d2e2fb</li><li>3: #bdd4f8</li><li>4: #9ec0f6</li><li>5: #80acf4</li><li>6: #6098f2</li><li>7: #4082ef</li><li>8: #206eec</li><li>9: #0058e9</li><li>10: #0052d6</li><li>11: #004ac2</li><li>12: #0042af</li><li>13: #003892</li><li>14: #002c75</li><li>15: #002259</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Blue Palette provides colors to the Info variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-yellow</td>
-    <td>Map</td>
-    <td><code>$_default-palette-yellow</code></td>
-    <td><ul><li>1: #fffae9</li><li>2: #fff4d3</li><li>3: #ffeebd</li><li>4: #ffe79e</li><li>5: #ffe080</li><li>6: #ffd760</li><li>7: #ffd040</li><li>8: #ffc720</li><li>9: #ffc000</li><li>10: #eaaf00</li><li>11: #d49f00</li><li>12: #bf9000</li><li>13: #a07800</li><li>14: #806000</li><li>15: #5e4700</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Yellow Palette provides colors to the Warning variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-red</td>
-    <td>Map</td>
-    <td><code>$_default-palette-red</code></td>
-    <td><ul><li>1: #feeeed</li><li>2: #fcddda</li><li>3: #fbc8c3</li><li>4: #faaaa2</li><li>5: #f98b80</li><li>6: #f76f60</li><li>7: #f65140</li><li>8: #f43520</li><li>9: #f31700</li><li>10: #df1600</li><li>11: #ca1400</li><li>12: #b61100</li><li>13: #980f00</li><li>14: #7a0c00</li><li>15: #7a0c00</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Red Palette provides colors to the Error variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-lemon-yellow</td>
-    <td>Map</td>
-    <td><code>$_default-palette-lemon-yellow</code></td>
-    <td><ul><li>1: #fffcf1</li><li>2: #fffae2</li><li>3: #fff7d4</li><li>4: #fff4c2</li><li>5: #fff0b1</li><li>6: #ffed9d</li><li>7: #ffe989</li><li>8: #ffe676</li><li>9: #ffe162</li><li>10: #ead05a</li><li>11: #d4bc52</li><li>12: #bfa94a</li><li>13: #a3913f</li><li>14: #807131</li><li>15: #5c5223</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lemon Yellow Palette provides colors to the Series B variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-spring-green</td>
-    <td>Map</td>
-    <td><code>$_default-palette-spring-green</code></td>
-    <td><ul><li>1: #effaf3</li><li>2: #e0f6e8</li><li>3: #d1f1dd</li><li>4: #c0edd1</li><li>5: #a6e8c0</li><li>6: #8fe2af</li><li>7: #79dda0</li><li>8: #62d78f</li><li>9: #4cd180</li><li>10: #46c074</li><li>11: #3fae6a</li><li>12: #399d60</li><li>13: #2f834f</li><li>14: #266940</li><li>15: #1c4f30</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Spring Green Palette provides colors to the Series C variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-royal-blue</td>
-    <td>Map</td>
-    <td><code>$_default-palette-royal-blue</code></td>
-    <td><ul><li>1: #f0f2ff</li><li>2: #e1e4fe</li><li>3: #d2d7fe</li><li>4: #bbc3fd</li><li>5: #a5affd</li><li>6: #8e9bfc</li><li>7: #7887fb</li><li>8: #6173fb</li><li>9: #4b5ffa</li><li>10: #4558e5</li><li>11: #3f50d1</li><li>12: #3847bc</li><li>13: #2f3c9d</li><li>14: #26307d</li><li>15: #1c245e</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Royal Blue Palette provides colors to the Series D variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-lavender-purple</td>
-    <td>Map</td>
-    <td><code>$_default-palette-lavender-purple</code></td>
-    <td><ul><li>1: #f7f0ff</li><li>2: #f0e0ff</li><li>3: #e8d1ff</li><li>4: #dfbfff</li><li>5: #d6acff</li><li>6: #cc97ff</li><li>7: #c182ff</li><li>8: #b76dff</li><li>9: #ac58ff</li><li>10: #9e51ea</li><li>11: #8f49d4</li><li>12: #8142bf</li><li>13: #6b37a0</li><li>14: #562c80</li><li>15: #3f205e</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lavender Purple Palette provides colors to the Series E variable group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-palette-flamingo-pink</td>
-    <td>Map</td>
-    <td><code>$_default-palette-flamingo-pink</code></td>
-    <td><ul><li>1: #fff0f5</li><li>2: #ffe1eb</li><li>3: #ffd1e1</li><li>4: #ffbfd6</li><li>5: #ffacc9</li><li>6: #ff97bb</li><li>7: #ff82ae</li><li>8: #ff6da0</li><li>9: #ff5892</li><li>10: #ea5186</li><li>11: #d4497a</li><li>12: #bf426e</li><li>13: #a0375c</li><li>14: #802c49</li><li>15: #5e2036</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Flamingo Pink Palette provides colors to the Series F variable group.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
 ### Panel
 
 <table class="theme-variables">
@@ -30289,10 +30115,20 @@ The following table lists the available variables for customizing the Classic th
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-spacing-base</td>
+    <td>Number</td>
+    <td><code>0.25rem</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base spacing step used to generate the Spacing map.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-spacing</td>
     <td>Map</td>
     <td><code>$_default-spacing</code></td>
-    <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
+    <td><ul><li>0: 0px</li><li>1: calc(1 * var(--kendo-spacing-base))</li><li>2: calc(2 * var(--kendo-spacing-base))</li><li>3: calc(3 * var(--kendo-spacing-base))</li><li>4: calc(4 * var(--kendo-spacing-base))</li><li>5: calc(5 * var(--kendo-spacing-base))</li><li>6: calc(6 * var(--kendo-spacing-base))</li><li>7: calc(7 * var(--kendo-spacing-base))</li><li>8: calc(8 * var(--kendo-spacing-base))</li><li>9: calc(9 * var(--kendo-spacing-base))</li><li>10: calc(10 * var(--kendo-spacing-base))</li><li>11: calc(11 * var(--kendo-spacing-base))</li><li>12: calc(12 * var(--kendo-spacing-base))</li><li>13: calc(13 * var(--kendo-spacing-base))</li><li>14: calc(14 * var(--kendo-spacing-base))</li><li>15: calc(15 * var(--kendo-spacing-base))</li><li>16: calc(16 * var(--kendo-spacing-base))</li><li>17: calc(17 * var(--kendo-spacing-base))</li><li>18: calc(18 * var(--kendo-spacing-base))</li><li>19: calc(19 * var(--kendo-spacing-base))</li><li>20: calc(20 * var(--kendo-spacing-base))</li><li>21: calc(21 * var(--kendo-spacing-base))</li><li>22: calc(22 * var(--kendo-spacing-base))</li><li>23: calc(23 * var(--kendo-spacing-base))</li><li>24: calc(24 * var(--kendo-spacing-base))</li><li>1px: 1px</li><li>0.5: calc(0.5 * var(--kendo-spacing-base))</li><li>1.5: calc(1.5 * var(--kendo-spacing-base))</li><li>2.5: calc(2.5 * var(--kendo-spacing-base))</li><li>3.5: calc(3.5 * var(--kendo-spacing-base))</li><li>4.5: calc(4.5 * var(--kendo-spacing-base))</li><li>5.5: calc(5.5 * var(--kendo-spacing-base))</li><li>6.5: calc(6.5 * var(--kendo-spacing-base))</li><li>7.5: calc(7.5 * var(--kendo-spacing-base))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Spacing map.</div></div>

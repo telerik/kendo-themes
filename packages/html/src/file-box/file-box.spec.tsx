@@ -66,8 +66,8 @@ export const FileBox = (
                 {status && <span className="k-file-status">{status}</span>}
             </div>
             {showButton && (removeButton ?
-                <Button as="span" icon="x-mark-sm-outline" fillMode="flat" aria-hidden="true" /> :
-                <MenuButton icon="more-vertical" fillMode="flat" showArrow={false} aria-label="File actions"></MenuButton>
+                <Button as="span" icon="x-mark-sm-outline" fillMode="flat" size="xsmall" aria-hidden="true" /> :
+                <MenuButton icon="more-vertical" fillMode="flat" size="xsmall" showArrow={false} aria-label="File actions"></MenuButton>
             )}
         </li>
     );

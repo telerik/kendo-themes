@@ -1,4 +1,1 @@
 npm run sass && npm run docs:check
-
-# Run a11y tests on affected components (prompt to skip)
-node scripts/test-a11y-unified.mjs --affected --prompt --build
