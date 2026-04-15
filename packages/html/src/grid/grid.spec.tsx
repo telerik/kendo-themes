@@ -112,16 +112,11 @@ Grid.folderName = GRID_FOLDER_NAME;
 Grid.ariaSpec = {
     selector: '.k-grid',
     description: [
-        { p: 'The Grid is a composite component that consists of 4 logically separated structural elements:' },
-        { ul: [
-            'Toolbar (`role=toolbar`);',
-            'Group header (`role=toolbar`);',
-            'Data Grid (`role=grid`);',
-            'Pager (`role=application`);',
-        ] },
-        { p: 'The element with `role=grid` must not include the ToolBar and the Pager elements. When multiple tables compose the grid (separate header/content tables), inner tables get `role=none` and their children receive explicit roles (`rowgroup`, `row`, `columnheader`, `gridcell`).' },
+        'The Grid is a composite component that consists of 4 logically separated structural elements: Toolbar (`role=toolbar`), Group header (`role=toolbar`), Data Grid (`role=grid`), and Pager (`role=application`).',
+        'The element with `role=grid` must not include the ToolBar and the Pager elements. When multiple tables compose the grid (separate header/content tables), inner tables get `role=none` and their children receive explicit roles (`rowgroup`, `row`, `columnheader`, `gridcell`).',
     ],
-    seeAlso: ['toolbar', 'pager'],
+    sectionLinks: { toolbar: 'toolbar' },
+    seeAlso: ['pager'],
     rules: [
         // ── Grid Toolbar ──
         { section: 'toolbar', selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons and inputs.' },
@@ -170,11 +165,11 @@ Grid.ariaSpec = {
 
         // ── Locked Columns ──
         { section: 'locked-columns', selector: '.k-grid-header-locked table tr', attribute: 'aria-owns', usage: 'Locked header rows own cells from the corresponding non-locked header table rows.' },
-        { section: 'locked-columns', selector: '.k-grid-content-locked table tr', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows.' },
-        { section: 'locked-columns', selector: '.k-grid-lockedcolumns .k-grid-header-wrap table tr', attribute: 'role=none', usage: 'Non-locked header rows have their semantic role removed when locked columns exist.' },
+        { section: 'locked-columns', selector: '.k-grid-content-locked table tr:not(.k-grouping-row)', attribute: 'aria-owns', usage: 'Locked content rows own cells from the corresponding non-locked content table rows. Group header rows are excluded because the non-locked group header rows are presentational.' },
+        { section: 'locked-columns', selector: '.k-grid-lockedcolumns .k-grid-header .k-grid-header-wrap table tr', attribute: 'role=none', usage: 'Non-locked header rows have their semantic role removed when locked columns exist.' },
         { section: 'locked-columns', selector: '.k-grid-lockedcolumns .k-grid-content table tr', attribute: 'role=none', usage: 'Non-locked content rows have their semantic role removed when locked columns exist.' },
-        { section: 'locked-columns', selector: '.k-grid-lockedcolumns .k-grid-header-wrap th', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
-        { section: 'locked-columns', selector: '.k-grid-lockedcolumns .k-grid-content td', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns.' },
+        { section: 'locked-columns', selector: '.k-grid-lockedcolumns .k-grid-header .k-grid-header-wrap th', attribute: 'role=columnheader', usage: 'Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.' },
+        { section: 'locked-columns', selector: '.k-grid-lockedcolumns .k-grid-content td:not(.k-grouping-row td)', attribute: 'role=gridcell', usage: 'Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns. Cells inside group header rows are excluded as those rows are presentational.' },
 
         // ── Filter Menu (open) ──
         { section: 'filter-menu', selector: '.k-grid-filter-popup', attribute: 'role=dialog', usage: 'The filter menu popup has dialog role.' },
@@ -218,9 +213,9 @@ Grid.ariaSpec = {
         { section: 'sticky-group', selector: '.k-grid-sticky-container tbody', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
         { section: 'sticky-group', selector: '.k-grid-sticky-container tr', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
         { section: 'sticky-group', selector: '.k-grid-sticky-container tr', attribute: 'aria-rowindex', usage: 'Matches the aria-rowindex of the real group header/footer row it mirrors.' },
-        { section: 'sticky-group', selector: '.k-grid-sticky-container td', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed.' },
+        { section: 'sticky-group', selector: '.k-grid-sticky-container td:not(.k-group-cell)', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed. Group offset cells are excluded as they retain role=presentation.' },
         { section: 'sticky-group', selector: '.k-grid-sticky-container .k-grouping-row>td', attribute: 'aria-expanded', usage: 'Mirrors the expanded/collapsed state of the real group header row.' },
-        { section: 'sticky-group', selector: '.k-grid-sticky-container td', attribute: 'tabindex', usage: 'Receives tabindex 0 when focused, -1 otherwise, for keyboard navigation.' },
+        { section: 'sticky-group', selector: '.k-grid-sticky-container td:not(.k-group-cell)', attribute: 'tabindex', usage: 'Receives tabindex 0 when focused, -1 otherwise, for keyboard navigation. Group offset cells are excluded as they are presentational.' },
         { section: 'sticky-group', selector: '.k-grid-sticky-container td', attribute: 'aria-colindex (when present)', usage: 'Col number. Typically 1 for the group header cell spanning all columns.' },
 
         // ── Pinned Rows ──

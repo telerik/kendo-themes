@@ -202,11 +202,22 @@ export function buildA11yJson(
     });
 
     if (component.ariaSpec.description) {
-        elements.push(...component.ariaSpec.description);
+        for (const paragraph of component.ariaSpec.description) {
+            elements.push({ p: paragraph });
+        }
     }
 
-    // Build seeAlso lookup set
-    const seeAlsoSet = new Set(component.ariaSpec.seeAlso || []);
+    // Validate cross-link targets exist in registry
+    for (const targetId of (component.ariaSpec.seeAlso || [])) {
+        if (!registry.has(targetId)) {
+            console.warn(`[a11y-docs] ${component.id}: seeAlso target '${targetId}' not found in registry.`);
+        }
+    }
+    for (const targetId of Object.values(component.ariaSpec.sectionLinks || {})) {
+        if (!registry.has(targetId)) {
+            console.warn(`[a11y-docs] ${component.id}: sectionLinks target '${targetId}' not found in registry.`);
+        }
+    }
 
     // Group rules into sections
     const sections = groupRulesIntoSections(
@@ -214,25 +225,23 @@ export function buildA11yJson(
         displayName,
     );
 
-    const matchedSeeAlso = new Set<string>();
-
     if (sections.length === 1) {
         elements.push(buildAriaTable(sections[0].rules));
     } else {
         for (const section of sections) {
             elements.push({ h4: section.title });
 
-            // Exact match: section key === seeAlso entry
-            if (seeAlsoSet.has(section.key)) {
-                matchedSeeAlso.add(section.key);
-                const refName = resolveDisplayName(section.key, registry);
+            // Section-level cross-link via explicit sectionLinks map (decoupled from seeAlso)
+            const sectionLinkId = component.ariaSpec.sectionLinks?.[section.key];
+            if (sectionLinkId) {
+                const refName = resolveDisplayName(sectionLinkId, registry);
                 elements.push({
                     p: `${section.title} follows the specification of the ${refName} component.`
                 });
                 elements.push({
                     link: {
                         title: `${refName} accessibility specification`,
-                        source: crossLinkVar(section.key),
+                        source: crossLinkVar(sectionLinkId),
                     }
                 });
             }
@@ -241,21 +250,19 @@ export function buildA11yJson(
         }
     }
 
-    // Standalone cross-links for unmatched seeAlso
-    for (const targetId of seeAlsoSet) {
-        if (!matchedSeeAlso.has(targetId)) {
-            const refName = resolveDisplayName(targetId, registry);
-            elements.push({ h4: refName });
-            elements.push({
-                p: `For the ${displayName} ${refName} WAI-ARIA spec, please review the ${refName} component.`
-            });
-            elements.push({
-                link: {
-                    title: `${refName} accessibility specification`,
-                    source: crossLinkVar(targetId),
-                }
-            });
-        }
+    // Standalone cross-links (always at bottom, independent of section grouping)
+    for (const targetId of (component.ariaSpec.seeAlso || [])) {
+        const refName = resolveDisplayName(targetId, registry);
+        elements.push({ h4: refName });
+        elements.push({
+            p: `For the ${displayName} ${refName} WAI-ARIA spec, please review the ${refName} component.`
+        });
+        elements.push({
+            link: {
+                title: `${refName} accessibility specification`,
+                source: crossLinkVar(targetId),
+            }
+        });
     }
 
     // --- Testing ---

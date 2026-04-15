@@ -73,6 +73,7 @@ ChipList.folderName = CHIP_FOLDER_NAME;
  */
 ChipList.ariaSpec = {
     selector: '.k-chip-list',
+    sectionLinks: { chip: 'chip' },
     seeAlso: ['chip'],
     rules: [
         { selector: '.k-chip-list', attribute: 'role=listbox', usage: 'Announces the list role of the chip list.' },

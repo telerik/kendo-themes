@@ -23,11 +23,17 @@ export interface AriaSpec {
     selector?: string;
     /** Ordered list of ARIA attribute rules. */
     rules: AriaRule[];
-    /** Pre-built description elements for the WAI-ARIA section. */
-    description?: A11yJsonElement[];
+    /** Plain-text paragraphs for the WAI-ARIA section introduction. Each string renders as a paragraph. */
+    description?: string[];
     /**
-     * Cross-references to other standalone component specs.
-     * Uses the target component's registry id (kebab-case), e.g. `'toolbar'`, `'pager'`.
+     * Maps section keys to component ids for inline section-level cross-links.
+     * Decoupled from `seeAlso` — changes here do not affect standalone cross-links.
+     * Example: `{ toolbar: 'toolbar' }` emits a cross-link inside the toolbar section.
+     */
+    sectionLinks?: Record<string, string>;
+    /**
+     * Component ids for standalone cross-links emitted after all sections.
+     * Always rendered at the bottom, independent of section grouping.
      */
     seeAlso?: string[];
 }

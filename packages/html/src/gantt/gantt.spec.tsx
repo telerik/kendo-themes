@@ -64,7 +64,8 @@ Gantt.folderName = GANTT_FOLDER_NAME;
  */
 Gantt.ariaSpec = {
     selector: '.k-gantt',
-    seeAlso: ['treelist', 'splitter', 'toolbar'],
+    sectionLinks: { toolbar: 'toolbar' },
+    seeAlso: ['treelist', 'splitter'],
     rules: [
         // ── Gantt Root ──
         { selector: '.k-gantt', attribute: 'role=application', usage: 'The Gantt uses role=application to indicate a complex interactive widget.' },

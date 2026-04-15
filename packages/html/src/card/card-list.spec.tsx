@@ -42,6 +42,7 @@ CardList.folderName = CARD_FOLDER_NAME;
  */
 CardList.ariaSpec = {
     selector: '.k-card-list',
+    sectionLinks: { card: 'card' },
     seeAlso: ['card'],
     rules: [
         { selector: '.k-card-list', attribute: 'role=list', usage: 'The card list container announces its list role.' },

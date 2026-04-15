@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 
 import {
     buildRegistry,
@@ -199,7 +199,7 @@ describe('groupRulesIntoSections', () => {
         expect(sections[0].title).toBe('Button');
     });
 
-    it('returns section key for seeAlso matching', () => {
+    it('exposes section key for sectionLinks lookup', () => {
         const rules = [
             { section: 'toolbar', selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'Toolbar role.' },
         ];
@@ -247,22 +247,18 @@ describe('buildA11yJson', () => {
         expect(srTable).toBeDefined();
     });
 
-    it('includes pre-built description elements when ariaSpec.description is set', () => {
+    it('renders description strings as paragraphs', () => {
         const specWithDesc = makeSpec({
-            description: [
-                { p: 'A complex component.' },
-                { ul: ['Item one;', 'Item two;'] },
-            ],
+            description: ['A complex component.', 'A second paragraph.'],
         });
         const comp: ComponentMeta = { id: 'button', displayName: 'Button', ariaSpec: specWithDesc };
         const json = buildA11yJson(comp, registry);
         const paragraphs = json.filter(e => 'p' in e).map(e => (e as { p: string }).p);
         expect(paragraphs.some(p => p.includes('A complex component.'))).toBe(true);
-        const lists = json.filter(e => 'ul' in e) as Array<{ ul: string[] }>;
-        expect(lists.some(l => l.ul.includes('Item one;'))).toBe(true);
+        expect(paragraphs.some(p => p.includes('A second paragraph.'))).toBe(true);
     });
 
-    it('uses seeAlso with exact section matching', () => {
+    it('emits inline section cross-link via sectionLinks map', () => {
         const toolbarSpec = makeSpec({ selector: '.k-toolbar' });
         const gridRegistry = makeRegistry([
             ['button', { id: 'button', displayName: 'Button', ariaSpec: spec }],
@@ -271,7 +267,7 @@ describe('buildA11yJson', () => {
 
         const gridSpec: AriaSpec = {
             selector: '.k-grid',
-            seeAlso: ['toolbar'],
+            sectionLinks: { toolbar: 'toolbar' },
             rules: [
                 { selector: '.k-grid', attribute: 'role=grid', usage: 'Grid role.' },
                 { section: 'toolbar', selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'Toolbar in grid.' },
@@ -284,6 +280,35 @@ describe('buildA11yJson', () => {
         const toolbarLink = links.find(l => l.link.source.includes('toolbar'));
         expect(toolbarLink).toBeDefined();
         expect(toolbarLink?.link.title).toBe('Toolbar accessibility specification');
+    });
+
+    it('warns when seeAlso target is not in the registry', () => {
+        const warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});
+        const unknownSpec: AriaSpec = {
+            selector: '.k-widget',
+            seeAlso: ['nonexistent-component'],
+            rules: [{ selector: '.k-widget', attribute: 'role=widget', usage: 'Widget role.' }],
+        };
+        const comp: ComponentMeta = { id: 'widget', displayName: 'Widget', ariaSpec: unknownSpec };
+        buildA11yJson(comp, registry);
+        expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining('nonexistent-component'));
+        warnSpy.mockRestore();
+    });
+
+    it('warns when sectionLinks target is not in the registry', () => {
+        const warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});
+        const widgetSpec: AriaSpec = {
+            selector: '.k-widget',
+            sectionLinks: { foo: 'nonexistent-component' },
+            rules: [
+                { selector: '.k-widget', attribute: 'role=widget', usage: 'Widget role.' },
+                { section: 'foo', selector: '.k-widget-foo', attribute: 'role=region', usage: 'Foo.' },
+            ],
+        };
+        const comp: ComponentMeta = { id: 'widget', displayName: 'Widget', ariaSpec: widgetSpec };
+        buildA11yJson(comp, registry);
+        expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining('nonexistent-component'));
+        warnSpy.mockRestore();
     });
 
     it('emits a standalone cross-link for unmatched seeAlso targets', () => {
