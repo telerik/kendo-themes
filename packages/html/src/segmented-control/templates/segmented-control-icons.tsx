@@ -4,9 +4,9 @@ import SegmentedControl from "../segmented-control.spec";
 export const SegmentedControlIcons = (props) => (
     <SegmentedControl {...props} children={
         <>
-            <SegmentedControlButton icon="search" selected></SegmentedControlButton>
-            <SegmentedControlButton icon="sparkles"></SegmentedControlButton>
-            <SegmentedControlButton icon="home"></SegmentedControlButton>
+            <SegmentedControlButton icon="search" selected aria-label="Search"></SegmentedControlButton>
+            <SegmentedControlButton icon="sparkles" aria-label="AI"></SegmentedControlButton>
+            <SegmentedControlButton icon="home" aria-label="Home"></SegmentedControlButton>
         </>
     } />
 );
