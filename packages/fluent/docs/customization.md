@@ -18538,6 +18538,16 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-action-icon-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-action-icon-color, #{k-color( primary-on-surface )} )</code></td>
+    <td><code>var(--kendo-action-icon-color, var(--kendo-color-primary-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of action icons.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
