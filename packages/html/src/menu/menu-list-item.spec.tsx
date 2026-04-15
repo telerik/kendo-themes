@@ -74,6 +74,7 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
     return (
 
         <li
+            role="menuitem"
             {...other}
             className={classNames(
                 props.className,
@@ -88,7 +89,6 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
                     ["k-last"]: last,
                 }
             )}
-            role="menuitem"
             {...(showArrow && { 'aria-haspopup': 'menu' as const })}
             {...(showArrow && { 'aria-expanded': expanded ? 'true' : 'false' })}
             {...(disabled && { 'aria-disabled': 'true' })}
