@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.1...v13.2.0-dev.2) (2026-04-15)
+
+
+### Bug Fixes
+
+* **pdf-viewer:** add CSS custom properties for text layer scaling (pdfjs v5) ([65d3b60](https://github.com/telerik/kendo-themes/commit/65d3b60b846fa5261d4e703d479e4b2ac8b3e4db))
+
+
+
+
+
 # [13.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.0...v13.2.0-dev.1) (2026-04-13)
 
 
