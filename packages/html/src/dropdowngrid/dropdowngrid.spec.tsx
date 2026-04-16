@@ -282,6 +282,7 @@ DropdownGrid.folderName = DROPDOWNGRID_FOLDER_NAME;
  * @see ActionSheet ariaSpec for adaptive mode
  */
 DropdownGrid.ariaSpec = {
+    seeAlso: ['action-sheet'],
     rules: [
         { selector: '.k-combobox .k-input-inner', attribute: 'role=combobox', usage: 'Identifies the input as a combobox.' },
         { selector: '.k-combobox .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the combobox has a listbox popup.' },
@@ -289,9 +290,9 @@ DropdownGrid.ariaSpec = {
         { selector: '.k-combobox .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the combobox.' },
         { selector: '.k-combobox .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
         { selector: '.k-combobox .k-input-button', attribute: 'tabindex=-1', usage: 'Dropdown button is not in the tab order.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list', attribute: 'role=listbox', usage: 'Table list has listbox role.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Table listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list .k-table-row', attribute: 'role=option', usage: 'Each table row is an option.' },
+        { section: 'popup', selector: '.k-dropdowngrid-popup .k-table-list', attribute: 'role=listbox', usage: 'Table list has listbox role.' },
+        { section: 'popup', selector: '.k-dropdowngrid-popup .k-table-list[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Table listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
+        { section: 'popup', selector: '.k-dropdowngrid-popup .k-table-list .k-table-row', attribute: 'role=option', usage: 'Each table row is an option.' },
     ]
 };
 

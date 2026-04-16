@@ -68,6 +68,7 @@ ImageEditor.folderName = IMAGEEDITOR_FOLDER_NAME;
  */
 ImageEditor.ariaSpec = {
     selector: '.k-imageeditor',
+    seeAlso: ['toolbar', 'form'],
     rules: [
         // Canvas rules apply only when an image is loaded (the canvas element is not rendered without an image)
         { selector: '.k-imageeditor-canvas>canvas', attribute: 'role=img', usage: 'Indicates the canvas role as an image. Applicable when an image is loaded.' },

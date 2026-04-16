@@ -21,6 +21,7 @@
     "dist/**/*.mjs",
     "dist/**/*.d.ts",
     "dist/**/*.js.map",
+    "dist/_meta/a11y/*.json",
     "src/**/**.ts",
     "src/**/**.tsx"
   ],
@@ -46,7 +47,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "prepublishOnly": "npm run build && npm run typegen"
+    "prepublishOnly": "npm run build && npm run typegen && npm run docs:a11y",
+    "docs:a11y": "node ./scripts/generate-a11y-docs.js"
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^4.8.0"

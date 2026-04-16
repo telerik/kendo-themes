@@ -222,6 +222,7 @@ DropdownList.folderName = DROPDOWNLIST_FOLDER_NAME;
  * @see ActionSheet ariaSpec for adaptive mode
  */
 DropdownList.ariaSpec = {
+    seeAlso: ['list', 'action-sheet'],
     rules: [
         { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'role=combobox', usage: 'Announces the dropdown element.' },
         { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-haspopup=listbox', usage: 'Indicates the presence of a listbox popup.' },
@@ -231,9 +232,9 @@ DropdownList.ariaSpec = {
         { selector: '.k-dropdownlist.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered when the dropdown is disabled.' },
         { selector: '.k-dropdownlist .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
         { selector: '.k-dropdownlist .k-input-button', attribute: 'tabindex=-1', usage: 'The button must not be focusable.' },
-        { selector: '.k-dropdownlist-popup .k-list-content, .k-dropdownlist-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
-        { selector: '.k-dropdownlist-popup .k-list-ul[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-dropdownlist-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
+        { section: 'popup', selector: '.k-dropdownlist-popup .k-list-content, .k-dropdownlist-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
+        { section: 'popup', selector: '.k-dropdownlist-popup .k-list-ul[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
+        { section: 'popup', selector: '.k-dropdownlist-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
     ]
 };
 

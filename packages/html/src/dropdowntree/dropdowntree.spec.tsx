@@ -235,6 +235,7 @@ DropdownTree.folderName = DROPDOWNTREE_FOLDER_NAME;
  * @see ActionSheet ariaSpec for adaptive mode
  */
 DropdownTree.ariaSpec = {
+    seeAlso: ['treeview', 'action-sheet'],
     rules: [
         { selector: '.k-dropdowntree', attribute: 'role=combobox', usage: 'Announces the dropdown tree element.' },
         { selector: '.k-dropdowntree', attribute: 'aria-haspopup=tree', usage: 'Indicates the presence of a tree popup.' },

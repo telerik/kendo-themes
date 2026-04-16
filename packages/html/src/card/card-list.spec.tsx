@@ -42,12 +42,14 @@ CardList.folderName = CARD_FOLDER_NAME;
  */
 CardList.ariaSpec = {
     selector: '.k-card-list',
+    sectionLinks: { card: 'card' },
+    seeAlso: ['card'],
     rules: [
         { selector: '.k-card-list', attribute: 'role=list', usage: 'The card list container announces its list role.' },
-        { selector: '.k-card-list .k-card', attribute: 'role=listitem', usage: 'Each card in the list has the listitem role.' },
-        { selector: '.k-card-list .k-card', attribute: 'tabindex=0', usage: 'The card is focusable when navigatable.' },
-        { selector: '.k-card-list .k-card', attribute: 'aria-describedby=.k-card-title id', usage: 'Associate the card to its title element.' },
-        { selector: '.k-card-list .k-card', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces the Enter key for navigation inside the card.' },
+        { section: 'card', selector: '.k-card-list .k-card', attribute: 'role=listitem', usage: 'Each card in the list has the listitem role.' },
+        { section: 'card', selector: '.k-card-list .k-card', attribute: 'tabindex=0', usage: 'The card is focusable when navigatable.' },
+        { section: 'card', selector: '.k-card-list .k-card', attribute: 'aria-describedby=.k-card-title id', usage: 'Associate the card to its title element.' },
+        { section: 'card', selector: '.k-card-list .k-card', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces the Enter key for navigation inside the card.' },
     ]
 };
 

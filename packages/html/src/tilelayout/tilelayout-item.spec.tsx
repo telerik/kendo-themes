@@ -54,8 +54,6 @@ export const TileLayoutItem: KendoComponent<KendoTileLayoutItemProps & React.HTM
         aria-labelledby={titleId}
         tabIndex={0}
         aria-keyshortcuts="Enter"
-        aria-dropeffect="execute"
-        aria-grabbed="false"
         >
             {header &&
                 React.isValidElement(header)

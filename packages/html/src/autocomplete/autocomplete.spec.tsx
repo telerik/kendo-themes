@@ -223,15 +223,16 @@ Autocomplete.folderName = AUTOCOMPLETE_FOLDER_NAME;
  * @see ActionSheet ariaSpec for adaptive mode
  */
 Autocomplete.ariaSpec = {
+    seeAlso: ['list', 'action-sheet'],
     rules: [
         { selector: '.k-autocomplete .k-input-inner', attribute: 'role=combobox', usage: 'Announces the autocomplete input.' },
         { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the component has a listbox popup.' },
         { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-expanded', usage: 'Announces the popup visibility.' },
         { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the autocomplete.' },
         { selector: '.k-autocomplete.k-disabled .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the autocomplete is disabled.' },
-        { selector: '.k-autocomplete-popup .k-list-content, .k-autocomplete-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
-        { selector: '.k-autocomplete-popup .k-list-ul[role="listbox"], .k-autocomplete-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-autocomplete-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
+        { section: 'popup', selector: '.k-autocomplete-popup .k-list-content, .k-autocomplete-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
+        { section: 'popup', selector: '.k-autocomplete-popup .k-list-ul[role="listbox"], .k-autocomplete-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
+        { section: 'popup', selector: '.k-autocomplete-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
     ]
 };
 

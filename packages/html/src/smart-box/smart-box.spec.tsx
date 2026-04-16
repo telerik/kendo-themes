@@ -142,6 +142,7 @@ SmartBox.folderName = SMART_BOX_FOLDER_NAME;
  */
 SmartBox.ariaSpec = {
     selector: '.k-smart-box',
+    seeAlso: ['list', 'speech-to-text-button', 'button'],
     rules: [
         { selector: '.k-smart-box .k-input-inner', attribute: 'role=combobox', usage: 'Announces the combobox role for the SmartBox input.' },
         { selector: '.k-smart-box .k-input-inner', attribute: 'aria-label or aria-labelledby', usage: 'Provides an accessible label for the SmartBox (e.g., "AI-powered search").' },
