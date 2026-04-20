@@ -21,7 +21,7 @@ $kendo-grid-default-size: "md" !default;
 $kendo-grid-border-width: 1px !default;
 /// The border radius of the Grid.
 /// @group grid
-$kendo-grid-border-radius: k-border-radius(xl) !default;
+$kendo-grid-border-radius: k-border-radius(xxl) !default;
 /// The font family of the Grid.
 /// @group grid
 $kendo-grid-font-family: var( --kendo-font-family, inherit ) !default;
@@ -294,7 +294,7 @@ $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 $kendo-grid-sorted-icon-spacing: calc( #{k-spacing(2)} - 1px ) !default;
 /// The background color of the Grid.
 /// @group grid
-$kendo-grid-sorted-bg: color-mix(in srgb, k-color(on-app-surface) 3%, transparent) !default;
+$kendo-grid-sorted-bg: color-mix(in srgb, k-color(secondary) 4%, transparent) !default;
 /// The text color of the Grid.
 /// @group grid
 $kendo-grid-sorting-indicator-text: k-color(secondary) !default;
@@ -311,7 +311,17 @@ $kendo-grid-sorting-index-spacing-x: calc( #{$kendo-grid-sorting-index-spacing-y
 
 /// The shadow of the Grid.
 /// @group grid
-$kendo-grid-focus-shadow: inset 0 0 0 2px k-color(subtle), inset 0 0 0 1px white !default;
+$kendo-grid-focus-shadow: null !default;
+
+/// The outline color of the focused Grid cell.
+/// @group grid
+$kendo-grid-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused Grid cell.
+/// @group grid
+$kendo-grid-focus-outline-width: 1px !default;
+/// The outline offset of the focused Grid cell.
+/// @group grid
+$kendo-grid-focus-outline-offset: 1px !default;
 
 /// The spacing of the Grid button.
 /// @group grid
@@ -326,7 +336,7 @@ $kendo-grid-sticky-bg: k-color(surface-alt) !default;
 $kendo-grid-sticky-hover-bg: k-color(base-hover) !default;
 /// The alternate background color of the sticky content in the Grid.
 /// @group grid
-$kendo-grid-sticky-alt-bg: k-color(base) !default;
+$kendo-grid-sticky-alt-bg: $kendo-grid-alt-bg !default;
 
 /// The border color of the sticky content in the Grid.
 /// @group grid
@@ -365,10 +375,10 @@ $kendo-grid-column-menu-max-width: 320px !default;
 
 /// The horizontal padding of the Grid popup.
 /// @group grid
-$kendo-grid-column-menu-popup-padding-x: null !default;
+$kendo-grid-column-menu-popup-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Grid popup.
 /// @group grid
-$kendo-grid-column-menu-popup-padding-y: null !default;
+$kendo-grid-column-menu-popup-padding-y: k-spacing(2) !default;
 
 /// The horizontal padding of the Grid item.
 /// @group grid
@@ -442,7 +452,7 @@ $kendo-grid-hierarchy-col-width: ($kendo-icon-size * 2) !default;
 
 /// The grouping border top of the Grid row.
 /// @group grid
-$kendo-grid-grouping-row-border-top: 1px !default;
+$kendo-grid-grouping-row-border-top: 0px !default;
 /// The vertical border of the Grid footer.
 /// @group grid
 $kendo-grid-group-footer-border-y: 1px !default;

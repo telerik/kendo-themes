@@ -104,7 +104,7 @@ $kendo-switch-lg-label-offset: 8px !default;
 
 /// The background of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-bg: k-color(base-subtle) !default;
+$kendo-switch-off-track-bg: k-color(base) !default;
 /// The text color of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-text: k-color(on-app-surface) !default;
@@ -117,7 +117,7 @@ $kendo-switch-off-track-gradient: null !default;
 
 /// The background of the track when the hovered Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-hover-bg: k-color(base-subtle-hover) !default;
+$kendo-switch-off-track-hover-bg: k-color(base-hover) !default;
 /// The text color of the track when the hovered Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-hover-text: null !default;
@@ -159,7 +159,7 @@ $kendo-switch-off-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-bg: k-color(surface) !default;
+$kendo-switch-off-thumb-bg: k-color(surface-alt) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-text: k-color(on-app-surface) !default;
@@ -257,7 +257,7 @@ $kendo-switch-on-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-bg: k-color(surface) !default;
+$kendo-switch-on-thumb-bg: k-color(surface-alt) !default;
 /// The text color of the thumb when the Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-text: k-color(on-app-surface) !default;

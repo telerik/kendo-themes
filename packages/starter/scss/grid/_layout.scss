@@ -1,7 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/grid/_layout.scss" as *;
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "@progress/kendo-theme-core/scss/components/grid/_layout.scss" as *;
-
 
 @mixin kendo-grid--layout() {
     @include kendo-grid--layout-base();
@@ -13,9 +12,23 @@
         border-inline-end-width: 1px;
     }
 
-    .k-grid .k-table .k-grid-header-sticky,
-    .k-grid .k-table .k-grid-content-sticky,
-    .k-grid .k-table .k-grid-footer-sticky {
-        border-inline-end-width: 1px;
+    .k-grid {
+        .k-table .k-grid-header-sticky,
+        .k-table .k-grid-content-sticky,
+        .k-table .k-grid-footer-sticky {
+            border-inline-end-width: 1px;
+        }
+    }
+
+    // Column menu fix for action buttons focus state
+    .k-filter-menu-container {
+        .k-actions {
+            padding: k-spacing(1);
+            margin: calc( #{k-spacing(1)} * -1 );
+        }
+    }
+
+    .k-grid .k-master-row .k-grid-content-sticky {
+        
     }
 }

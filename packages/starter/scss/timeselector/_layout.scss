@@ -3,4 +3,8 @@
 
 @mixin kendo-time-selector--layout() {
     @include kendo-time-selector--layout-base();
+
+    .k-time-list-wrapper .k-title {
+        font-weight: var(--kendo-font-weight-medium);
+    }
 }

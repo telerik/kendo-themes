@@ -8,6 +8,9 @@
 /// The border width of the Gantt.
 /// @group gantt
 $kendo-gantt-border-width: 1px !default;
+/// The border radius of the Gantt.
+/// @group gantt
+$kendo-gantt-border-radius: null !default;
 /// The font family of the Gantt.
 /// @group gantt
 $kendo-gantt-font-family: var(--kendo-font-family) !default;
@@ -247,6 +250,7 @@ $kendo-gantt-task-tooltip-padding-y: k-spacing(1) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/gantt/_variables.scss" with (
     $kendo-gantt-border-width: $kendo-gantt-border-width,
+    $kendo-gantt-border-radius: $kendo-gantt-border-radius,
     $kendo-gantt-font-family: $kendo-gantt-font-family,
     $kendo-gantt-font-size: $kendo-gantt-font-size,
     $kendo-gantt-line-height: $kendo-gantt-line-height,

@@ -26,4 +26,9 @@
             padding-block: calc( #{$kendo-calendar-header-padding-x} / 2 ) $kendo-calendar-header-padding-x;
         }
     }
+
+    // Calendar in popup
+    .k-popup > .k-calendar {
+        border-radius: inherit;
+    }
 }

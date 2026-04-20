@@ -76,4 +76,18 @@
             }
         }
     }
+
+    .k-input,
+    .k-picker {
+        > .k-input,
+        > .k-picker {
+            outline: 0;
+
+            &:focus,
+            &.k-focus,
+            &:focus-within {
+                outline: 0;
+            }
+        }
+    }
 }

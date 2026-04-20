@@ -21,7 +21,7 @@ $kendo-segmented-control-border-radius: k-border-radius(full) !default;
 
 /// The background color of the Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-bg: color-mix(in srgb, k-color(base), currentColor 6%) !default;
+$kendo-segmented-control-bg: k-color(base) !default;
 /// The text color of the Segmented Control.
 /// @group segmented-control
 $kendo-segmented-control-text: k-color(on-base) !default;
@@ -103,7 +103,7 @@ $kendo-segmented-control-lg-button-gap: k-spacing(2) !default;
 
 /// The background color of the hovered button inside Segmented Control.
 /// @group segmented-control
-$kendo-segmented-control-button-hover-bg: color-mix(in srgb, currentColor 16%, k-color(base-hover)) !default;
+$kendo-segmented-control-button-hover-bg: color-mix(in srgb, k-color(base-hover), k-color(base-active) 70%) !default;
 /// The indication of the focused button inside Segmented Control.
 /// @group segmented-control
 $kendo-segmented-control-button-focus-indicator: inset 0 0 0 2px color-mix(in srgb, currentColor 35%, transparent) !default;

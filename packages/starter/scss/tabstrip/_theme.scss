@@ -16,6 +16,7 @@
                 box-shadow: none;
                 @include focus-indicator(
                     $indicator: k-color(subtle),
+                    $inset: true,
                     $type: "outline",
                     $outline-width: $kendo-tabstrip-item-focus-outline-width,
                     $outline-offset: $kendo-tabstrip-item-focus-outline-offset

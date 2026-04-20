@@ -1,6 +1,15 @@
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/upload/_layout.scss" as *;
 
 
 @mixin kendo-upload--layout() {
     @include kendo-upload--layout-base();
+
+    .k-upload {
+        // Drop zone
+        .k-dropzone,
+        .k-upload-dropzone {
+            padding-inline-end: k-spacing(4);
+        }
+    }
 }
