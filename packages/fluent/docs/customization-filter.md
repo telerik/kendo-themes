@@ -48,6 +48,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-filter-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Filter.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-filter-bottom-margin</td>
     <td>String</td>
     <td><code>var( --kendo-filter-bottom-margin, #{k-spacing(7.5)} )</code></td>

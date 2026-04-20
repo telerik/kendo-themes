@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-color-gradient-spacer</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorGradient.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorGradient.</div></div>
@@ -220,8 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-md-width</td>
     <td>Number</td>
-    <td><code>272px</code></td>
-    <td><code>272px</code></td>
+    <td><code>282px</code></td>
+    <td><code>282px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorGradient.</div></div>
@@ -280,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-focus-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-canvas-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient canvas.</div></div>
@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>202px</code></td>
-    <td><code>202px</code></td>
+    <td><code>180px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the ColorGradient canvas hsv rectangle.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-sm-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>182px</code></td>
-    <td><code>182px</code></td>
+    <td><code>160px</code></td>
+    <td><code>160px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the small ColorGradient canvas hsv rectangle.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-md-canvas-rectangle-height</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
-    <td><code>202px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the medium ColorGradient canvas hsv rectangle.</div></div>
@@ -340,8 +340,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-lg-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>268px</code></td>
-    <td><code>268px</code></td>
+    <td><code>240px</code></td>
+    <td><code>240px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the large ColorGradient canvas hsv rectangle.</div></div>
@@ -400,8 +400,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-slider-draghandle-border-width</td>
     <td>Number</td>
-    <td><code>3px</code></td>
-    <td><code>3px</code></td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ColorGradient slider drag handle.</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-slider-vertical-size</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
-    <td><code>202px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ColorGradient vertical slider.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-sm-slider-vertical-size</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-sm-canvas-rectangle-height</code></td>
-    <td><code>182px</code></td>
+    <td><code>160px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorGradient vertical slider.</div></div>
@@ -451,7 +451,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-md-slider-vertical-size</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-md-canvas-rectangle-height</code></td>
-    <td><code>202px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorGradient vertical slider.</div></div>
@@ -461,7 +461,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-lg-slider-vertical-size</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-lg-canvas-rectangle-height</code></td>
-    <td><code>268px</code></td>
+    <td><code>240px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorGradient vertical slider.</div></div>
@@ -540,8 +540,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(light) 80%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-light) 80%, transparent)</code></td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
@@ -549,19 +549,49 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-color(dark)</code></td>
-    <td><code>var(--kendo-color-dark)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-draghandle-focus-outline-color</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-inverse) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-inverse) 80%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ColorGradient drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td>String</td>
-    <td><code>k-color(dark)</code></td>
-    <td><code>var(--kendo-color-dark)</code></td>
+    <td><code>$kendo-color-gradient-draghandle-focus-outline-color</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-inverse) 80%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
@@ -570,11 +600,41 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-inner-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ColorGradient drag handle inner outline.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-slider-draghandle-inner-outline-width</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ColorGradient slider drag handle inner outline.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-inner-outline-color</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-inverse) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-inverse) 60%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the ColorGradient drag handle inner outline.</div></div>
     </td>
 </tr>
 <tr>
@@ -619,9 +679,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-input-label-gap</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-color-gradient-spacer} / 3 )</code></td>
-    <td><code>calc(var(--kendo-spacing-3) / 3)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorGradient inputs and their labels.</div></div>
@@ -688,6 +748,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -722,7 +812,7 @@ The following table lists the available variables for customization.
         padding-y: $kendo-color-gradient-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "width":"252px","vertical-slider-height":"182px","rectangle-height":"182px","input-width":"42px","gap":"var(--kendo-spacing-3)","canvas-gap":"var(--kendo-spacing-3)","padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-3)"</li><li>md: "width":"272px","vertical-slider-height":"202px","rectangle-height":"202px","input-width":"46px","gap":"var(--kendo-spacing-3)","canvas-gap":"var(--kendo-spacing-3)","padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-3)"</li><li>lg: "width":"362px","vertical-slider-height":"268px","rectangle-height":"268px","input-width":"62px","gap":"var(--kendo-spacing-4\\.5)","canvas-gap":"var(--kendo-spacing-4\\.5)","padding-x":"var(--kendo-spacing-4\\.5)","padding-y":"var(--kendo-spacing-4\\.5)"</li></ul></td>
+    <td><ul><li>sm: "width":"252px","vertical-slider-height":"160px","rectangle-height":"160px","input-width":"42px","gap":"var(--kendo-spacing-3)","canvas-gap":"var(--kendo-spacing-3)","padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-3)"</li><li>md: "width":"282px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"46px","gap":"var(--kendo-spacing-3)","canvas-gap":"var(--kendo-spacing-3)","padding-x":"var(--kendo-spacing-4)","padding-y":"var(--kendo-spacing-4)"</li><li>lg: "width":"362px","vertical-slider-height":"240px","rectangle-height":"240px","input-width":"62px","gap":"var(--kendo-spacing-4\\.5)","canvas-gap":"var(--kendo-spacing-4\\.5)","padding-x":"var(--kendo-spacing-4\\.5)","padding-y":"var(--kendo-spacing-4\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorGradient.</div></div>

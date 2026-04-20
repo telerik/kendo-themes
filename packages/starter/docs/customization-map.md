@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-map-navigator-width</td>
-    <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-icon-size} * 3 ) + calc( #{$kendo-map-navigator-padding} * 2 ) )</code></td>
-    <td><code>calc(16px * 3 + var(--kendo-spacing-0\.5) * 2)</code></td>
+    <td>Number</td>
+    <td><code>50px</code></td>
+    <td><code>50px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>

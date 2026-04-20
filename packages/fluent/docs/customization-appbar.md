@@ -88,6 +88,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-appbar-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-appbar-zindex</td>
     <td>String</td>
     <td><code>var( --kendo-appbar-zindex, k-z-index("banner") )</code></td>

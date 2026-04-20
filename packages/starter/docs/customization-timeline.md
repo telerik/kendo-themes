@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
-    <td><code>$kendo-button-bg</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-border-color</td>
     <td>String</td>
-    <td><code>$kendo-button-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-md-padding-x</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-md-padding-y</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -289,9 +289,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-flag-line-height</td>
-    <td>String</td>
-    <td><code>$kendo-button-line-height</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Timeline flag.</div></div>
@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-callout-width</td>
     <td>Number</td>
-    <td><code>10px</code></td>
-    <td><code>10px</code></td>
+    <td><code>14px</code></td>
+    <td><code>14px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline's flag callout.</div></div>
@@ -370,8 +370,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-callout-height</td>
     <td>Number</td>
-    <td><code>10px</code></td>
-    <td><code>10px</code></td>
+    <td><code>7px</code></td>
+    <td><code>7px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline's flag callout.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-flag-margin-bottom-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-track-size} + 2 * #{$kendo-timeline-track-border-width} + #{$kendo-timeline-flag-offset-bottom} + #{$kendo-timeline-flag-callout-height})</code></td>
-    <td><code>calc(var(--kendo-spacing-1\.5) + 2 * 1px + 4px + 10px)</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5) + 2 * 1px + 4px + 7px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline flag.</div></div>
@@ -505,6 +505,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-timeline-card-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline card.</div></div>
     </td>
 </tr>
 <tr>

@@ -558,13 +558,13 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-stepper-current-label-font-weight</td>
+    <td>$kendo-stepper-label-current-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-stepper-current-label-font-weight, var(--kendo-font-weight-semibold) )</code></td>
-    <td><code>var(--kendo-stepper-current-label-font-weight, var(--kendo-font-weight-semibold))</code></td>
+    <td><code>var( --kendo-stepper-label-current-font-weight, var(--kendo-font-weight-semibold) )</code></td>
+    <td><code>var(--kendo-stepper-label-current-font-weight, var(--kendo-font-weight-semibold))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the disabled Stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the current Stepper label.</div></div>
     </td>
 </tr>
 <tr>

@@ -5131,20 +5131,20 @@ The following table lists the available variables for customizing the Theme Core
     <td></td>
     <td><code>(
     sm: (
-        font-size: var(--kendo-font-size),
-        line-height: var(--kendo-line-height),
+        font-size: $kendo-table-sm-font-size,
+        line-height: $kendo-table-sm-line-height,
         cell-padding-x: $kendo-table-sm-cell-padding-x,
         cell-padding-y: $kendo-table-sm-cell-padding-y
     ),
     md: (
-        font-size: var(--kendo-font-size),
-        line-height: var(--kendo-line-height),
+        font-size: $kendo-table-md-font-size,
+        line-height: $kendo-table-md-line-height,
         cell-padding-x: $kendo-table-md-cell-padding-x,
         cell-padding-y: $kendo-table-md-cell-padding-y
     ),
     lg: (
-        font-size: var(--kendo-font-size),
-        line-height: var(--kendo-line-height),
+        font-size: $kendo-table-lg-font-size,
+        line-height: $kendo-table-lg-line-height,
         cell-padding-x: $kendo-table-lg-cell-padding-x,
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )

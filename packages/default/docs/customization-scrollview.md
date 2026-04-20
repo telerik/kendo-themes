@@ -158,6 +158,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-scrollview-pagebutton-primary-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-scrollview-pager-offset</td>
     <td>Number</td>
     <td><code>0</code></td>

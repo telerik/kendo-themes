@@ -118,6 +118,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-media-player-titlebar-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-xl, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xl, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-medium, normal )</code></td>
+    <td><code>var(--kendo-font-weight-medium, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-line-height</td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-line-height-xs, normal ) * 1.25 )</code></td>
+    <td><code>calc(var(--kendo-line-height-xs, normal) * 1.25)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-media-player-titlebar-text</td>
     <td>String</td>
     <td><code>$kendo-media-player-bg</code></td>
@@ -130,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-titlebar-gradient</td>
     <td>List</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 70%, transparent), color-mix(in srgb, k-color(on-app-surface) 0%, transparent)</code></td>
-    <td><code>(color-mix(in srgb, var(--kendo-color-on-app-surface) 70%, transparent), color-mix(in srgb, var(--kendo-color-on-app-surface) 0%, transparent))</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 60%, transparent), color-mix(in srgb, k-color(subtle) 0%, transparent)</code></td>
+    <td><code>(color-mix(in srgb, var(--kendo-color-subtle) 60%, transparent), color-mix(in srgb, var(--kendo-color-subtle) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the MediaPlayer title.</div></div>

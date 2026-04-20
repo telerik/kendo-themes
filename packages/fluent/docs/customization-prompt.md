@@ -227,6 +227,36 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The elevation of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-prompt-footer-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-footer-text, null )</code></td>
+    <td><code>var(--kendo-prompt-footer-text, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-footer-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-footer-bg, null )</code></td>
+    <td><code>var(--kendo-prompt-footer-bg, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-footer-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-prompt-footer-border, null )</code></td>
+    <td><code>var(--kendo-prompt-footer-border, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

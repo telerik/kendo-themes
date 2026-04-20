@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-scrollview-pagebutton-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-button-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView page button.</div></div>
@@ -155,6 +155,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-primary-shadow</td>
+    <td>List</td>
+    <td><code>0 0 0 2px rgba(0, 0, 0, .13)</code></td>
+    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected ScrollView page button.</div></div>
     </td>
 </tr>
 <tr>
