@@ -74,6 +74,16 @@
         &.k-primary {
             background: $kendo-scrollview-pagebutton-primary-bg;
             border: $kendo-scrollview-pagebutton-primary-border;
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-scrollview-pagebutton-primary-shadow );
+            }
+
+            &:hover,
+            &.k-hover {
+                box-shadow: $kendo-scrollview-pagebutton-primary-shadow;
+            }
         }
 
         &:focus,

@@ -55,7 +55,7 @@ $kendo-segmented-control-lg-line-height: var( --kendo-line-height-lg, normal ) !
 $kendo-segmented-control-thumb-border-radius: $kendo-segmented-control-border-radius !default;
 /// The box shadow of the Segmented Control thumb.
 /// @group segmented-control
-$kendo-segmented-control-thumb-shadow: none !default;
+$kendo-segmented-control-thumb-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.16) !default;
 /// The background of the Segmented Control thumb.
 /// @group segmented-control
 $kendo-segmented-control-thumb-bg: k-color(app-surface) !default;

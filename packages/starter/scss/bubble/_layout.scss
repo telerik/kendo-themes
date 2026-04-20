@@ -1,6 +1,11 @@
 @use "@progress/kendo-theme-core/scss/components/bubble/_layout.scss" as *;
+@use "../core/index.scss" as *;
 
 
 @mixin kendo-bubble--layout() {
     @include kendo-bubble--layout-base();
+
+    .k-bubble {
+        transition: border-color k-transition(rapid), background-color k-transition(rapid), outline k-transition(rapid);
+    }
 }

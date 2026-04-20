@@ -32,12 +32,21 @@ $kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
 /// The vertical padding of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
+/// The font size of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-font-size: var( --kendo-font-size-xl, inherit ) !default;
+/// The font weight of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-font-weight: var( --kendo-font-weight-medium, normal ) !default;
+/// The line height of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-line-height: calc( var( --kendo-line-height-xs, normal ) * 1.25 ) !default;
 /// The text color of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
 /// The gradient of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-titlebar-gradient: color-mix(in srgb, k-color(on-app-surface) 70%, transparent), color-mix(in srgb, k-color(on-app-surface) 0%, transparent) !default;
+$kendo-media-player-titlebar-gradient: color-mix(in srgb, k-color(subtle) 60%, transparent), color-mix(in srgb, k-color(subtle) 0%, transparent) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/mediaplayer/_variables.scss" with (
     $kendo-media-player-border-width: $kendo-media-player-border-width,
@@ -49,6 +58,9 @@ $kendo-media-player-titlebar-gradient: color-mix(in srgb, k-color(on-app-surface
     $kendo-media-player-border: $kendo-media-player-border,
     $kendo-media-player-titlebar-padding-x: $kendo-media-player-titlebar-padding-x,
     $kendo-media-player-titlebar-padding-y: $kendo-media-player-titlebar-padding-y,
+    $kendo-media-player-titlebar-font-size: $kendo-media-player-titlebar-font-size,
+    $kendo-media-player-titlebar-font-weight: $kendo-media-player-titlebar-font-weight,
+    $kendo-media-player-titlebar-line-height: $kendo-media-player-titlebar-line-height,
     $kendo-media-player-titlebar-text: $kendo-media-player-titlebar-text,
     $kendo-media-player-titlebar-gradient: $kendo-media-player-titlebar-gradient
 );

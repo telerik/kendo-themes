@@ -19,24 +19,37 @@ $kendo-suggestion-border-style: solid !default;
 
 /// The font size of the Suggestion.
 /// @group suggestion
-$kendo-suggestion-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-suggestion-font-size: var( --kendo-font-size-sm, inherit ) !default;
 
 /// The line height of the Suggestion.
 /// @group suggestion
-$kendo-suggestion-line-height: var( --kendo-line-height-lg, normal ) !default;
+$kendo-suggestion-line-height: var( --kendo-line-height-sm, normal ) !default;
+/// The font weight of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-font-weight: var( --kendo-font-weight-medium, normal ) !default;
 /// The border radius of the Suggestion.
 /// @group suggestion
 $kendo-suggestion-border-radius: k-border-radius(full) !default;
 
 /// The shadow blur of the focused Suggestion.
 /// @group suggestion
-$kendo-suggestion-focus-shadow-blur: 0 !default;
+$kendo-suggestion-focus-shadow-blur: null !default;
 /// The shadow spread of the focused Suggestion.
 /// @group suggestion
-$kendo-suggestion-focus-shadow-spread: 2px !default;
+$kendo-suggestion-focus-shadow-spread: null !default;
 /// The shadow color of the focused Suggestion.
 /// @group suggestion
-$kendo-suggestion-focus-shadow-color: color-mix(in srgb, currentColor 16%, transparent) !default;
+$kendo-suggestion-focus-shadow-color: null !default;
+
+/// The outline color of the focused Suggestion.
+/// @group suggestion
+$kendo-suggestion-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused Suggestion.
+/// @group suggestion
+$kendo-suggestion-focus-outline-width: 1px !default;
+/// The outline offset of the focused Suggestion.
+/// @group suggestion
+$kendo-suggestion-focus-outline-offset: 1px !default;
 
 /// The default theme color of the Suggestion.
 /// @group suggestion
@@ -55,6 +68,7 @@ $kendo-suggestion-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, k-color(app-sur
     $kendo-suggestion-border-style: $kendo-suggestion-border-style,
     $kendo-suggestion-font-size: $kendo-suggestion-font-size,
     $kendo-suggestion-line-height: $kendo-suggestion-line-height,
+    $kendo-suggestion-font-weight: $kendo-suggestion-font-weight,
     $kendo-suggestion-border-radius: $kendo-suggestion-border-radius,
     $kendo-suggestion-focus-shadow-blur: $kendo-suggestion-focus-shadow-blur,
     $kendo-suggestion-focus-shadow-spread: $kendo-suggestion-focus-shadow-spread,

@@ -190,6 +190,9 @@ $kendo-stepper-label-hover-text: k-color(on-base) !default;
 /// The text color of the disabled Stepper label.
 /// @group stepper
 $kendo-stepper-label-disabled-text: color-mix(in srgb, k-color(on-app-surface) 60%, transparent) !default;
+/// The font weight of the current Stepper label.
+/// @group stepper
+$kendo-stepper-label-current-font-weight: var(--kendo-font-weight-semibold) !default;
 
 /// The text color of the optional Stepper label.
 /// @group stepper
@@ -288,6 +291,7 @@ $kendo-stepper-content-transition-timing-function: k-easing(standard) !default;
     $kendo-stepper-label-error-text: $kendo-stepper-label-error-text,
     $kendo-stepper-label-hover-text: $kendo-stepper-label-hover-text,
     $kendo-stepper-label-disabled-text: $kendo-stepper-label-disabled-text,
+    $kendo-stepper-label-current-font-weight: $kendo-stepper-label-current-font-weight,
     $kendo-stepper-optional-label-text: $kendo-stepper-optional-label-text,
     $kendo-stepper-optional-label-opacity: $kendo-stepper-optional-label-opacity,
     $kendo-stepper-optional-label-font-size: $kendo-stepper-optional-label-font-size,

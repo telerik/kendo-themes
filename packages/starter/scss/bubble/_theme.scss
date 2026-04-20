@@ -1,6 +1,21 @@
 @use "@progress/kendo-theme-core/scss/components/bubble/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-bubble--theme() {
     @include kendo-bubble--theme-base();
+
+    .k-bubble {
+        &:focus,
+        &:focus-visible,
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-bubble-focus-outline-color,
+                $outline-width: $kendo-bubble-focus-outline-width,
+                $outline-offset: $kendo-bubble-focus-outline-offset
+            );
+        }
+    }
 }

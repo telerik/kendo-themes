@@ -37,4 +37,12 @@
         @include box-shadow( $kendo-prompt-suggestion-shadow );
     }
 
+    .k-prompt-footer {
+        @include fill(
+            $kendo-prompt-footer-text,
+            $kendo-prompt-footer-bg,
+            $kendo-prompt-footer-border
+        );
+    }
+
 }

@@ -29,7 +29,7 @@ $kendo-spreadsheet-border: k-color(border) !default;
 
 /// The background color of the Spreadsheet header.
 /// @group spreadsheet
-$kendo-spreadsheet-header-bg: k-color(surface) !default;
+$kendo-spreadsheet-header-bg: k-color(surface-alt) !default;
 /// The text color of the Spreadsheet header.
 /// @group spreadsheet
 $kendo-spreadsheet-header-text: k-color(on-app-surface) !default;
@@ -58,23 +58,23 @@ $kendo-spreadsheet-table-header-gradient: $kendo-spreadsheet-header-gradient !de
 $kendo-spreadsheet-action-bar-border-width: 1px !default;
 /// The horizontal padding of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-padding-y: k-spacing(1) !default;
+$kendo-spreadsheet-action-bar-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-padding-x: k-spacing(2) !default;
+$kendo-spreadsheet-action-bar-padding-x: k-spacing(2.5) !default;
 /// The font size of the Spreadsheet action bar.
 /// @group spreadsheet
 $kendo-spreadsheet-action-bar-font-size: $kendo-spreadsheet-font-size !default;
 /// The font family of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-font-family: Arial, Verdana, sans-serif !default;
+$kendo-spreadsheet-action-bar-font-family: var( --kendo-font-family, inherit ) !default;
 /// The spacings of the Spreadsheet action bar.
 /// @group spreadsheet
 $kendo-spreadsheet-action-bar-spacing: k-spacing(2) !default;
 
 /// The gap of the Spreadsheet formula bar.
 /// @group spreadsheet
-$kendo-spreadsheet-formula-bar-gap: k-spacing(2) !default;
+$kendo-spreadsheet-formula-bar-gap: k-spacing(1) !default;
 
 /// The horizontal padding of the Spreadsheet formula input.
 /// @group spreadsheet
@@ -92,7 +92,7 @@ $kendo-spreadsheet-formula-bar-icon-padding: k-spacing(1) !default;
 
 /// The font family of the Spreadsheet view.
 /// @group spreadsheet
-$kendo-spreadsheet-view-font-family: Arial, Verdana, sans-serif !default;
+$kendo-spreadsheet-view-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Spreadsheet view.
 /// @group spreadsheet
 $kendo-spreadsheet-view-font-size: $kendo-spreadsheet-font-size !default;
@@ -129,7 +129,7 @@ $kendo-spreadsheet-partial-selection-bg: color-mix(in srgb, k-color(primary) 25%
 $kendo-spreadsheet-active-cell-bg: $kendo-spreadsheet-bg !default;
 /// The shadow of the Spreadsheet active cell.
 /// @group spreadsheet
-$kendo-spreadsheet-active-cell-shadow: inset 0 0 0 1px k-color(primary) !default;
+$kendo-spreadsheet-active-cell-shadow: inset 0 0 0 2px k-color(primary) !default;
 
 /// The background color of the Spreadsheet auto fill.
 /// @group spreadsheet
@@ -149,20 +149,20 @@ $kendo-spreadsheet-auto-fill-punch-bg: rgba( $kendo-spreadsheet-bg, .5 ) !defaul
 
 /// The vertical padding of the Spreadsheet cell.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-padding-y: k-spacing(1) !default;
+$kendo-spreadsheet-cell-padding-y: k-spacing(0.5) !default;
 /// The horizontal padding of the Spreadsheet cell.
 /// @group spreadsheet
 $kendo-spreadsheet-cell-padding-x: $kendo-spreadsheet-cell-padding-y !default;
 
 /// The line height of the Spreadsheet cell editor.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-editor-line-height: 20px !default;
+$kendo-spreadsheet-cell-editor-line-height: var( --kendo-line-height, normal ) !default;
 /// The horizontal padding of the Spreadsheet cell editor.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-editor-padding-x: k-spacing(1) !default;
+$kendo-spreadsheet-cell-editor-padding-x: k-spacing(0.5) !default;
 /// The vertical padding of the Spreadsheet cell editor.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-editor-padding-y: k-spacing(0) !default;
+$kendo-spreadsheet-cell-editor-padding-y: k-spacing(0.5) !default;
 /// The background color of the Spreadsheet cell editor.
 /// @group spreadsheet
 $kendo-spreadsheet-cell-editor-bg: $kendo-spreadsheet-bg !default;
@@ -187,10 +187,10 @@ $kendo-spreadsheet-cell-dirty-border: k-color(error) !default;
 
 /// The horizontal padding of the Spreadsheet sheets bar.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-bar-padding-x: k-spacing(2) !default;
+$kendo-spreadsheet-sheets-bar-padding-x: k-spacing(1) !default;
 /// The vertical padding of the Spreadsheet sheets bar.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-bar-padding-y: k-spacing(2) !default;
+$kendo-spreadsheet-sheets-bar-padding-y: k-spacing(1) !default;
 /// The border width of the Spreadsheet sheets bar.
 /// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-border-width: 1px !default;

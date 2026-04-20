@@ -9,6 +9,9 @@ $kendo-expander-spacing-y: k-spacing(3) !default;
 /// The width of the border around the ExpansionPanel.
 /// @group expander
 $kendo-expander-border-width: 1px !default;
+/// The border radius of the ExpansionPanel.
+/// @group expander
+$kendo-expander-border-radius: null !default;
 /// The font family of the ExpansionPanel.
 /// @group expander
 $kendo-expander-font-family: var(--kendo-font-family) !default;
@@ -60,6 +63,12 @@ $kendo-expander-header-focus-bg: null !default;
 /// @group expander
 $kendo-expander-header-focus-shadow: $kendo-list-item-focus-shadow !default;
 
+/// The font weight of the ExpansionPanel title.
+/// @group expander
+$kendo-expander-title-font-weight: 500 !default;
+/// The text transform of the ExpansionPanel title.
+/// @group expander
+$kendo-expander-title-text-transform: uppercase !default;
 /// The text color of the ExpansionPanel title.
 /// @group expander
 $kendo-expander-title-text: k-color(primary) !default;
@@ -83,6 +92,7 @@ $kendo-expander-content-padding-y: k-spacing(6) !default;
 @forward "@progress/kendo-theme-core/scss/components/expansion-panel/_variables.scss" with (
     $kendo-expander-spacing-y: $kendo-expander-spacing-y,
     $kendo-expander-border-width: $kendo-expander-border-width,
+    $kendo-expander-border-radius: $kendo-expander-border-radius,
     $kendo-expander-font-family: $kendo-expander-font-family,
     $kendo-expander-font-size: $kendo-expander-font-size,
     $kendo-expander-line-height: $kendo-expander-line-height,
@@ -98,6 +108,8 @@ $kendo-expander-content-padding-y: k-spacing(6) !default;
     $kendo-expander-header-hover-bg: $kendo-expander-header-hover-bg,
     $kendo-expander-header-focus-bg: $kendo-expander-header-focus-bg,
     $kendo-expander-header-focus-shadow: $kendo-expander-header-focus-shadow,
+    $kendo-expander-title-font-weight: $kendo-expander-title-font-weight,
+    $kendo-expander-title-text-transform: $kendo-expander-title-text-transform,
     $kendo-expander-title-text: $kendo-expander-title-text,
     $kendo-expander-header-sub-title-text: $kendo-expander-header-sub-title-text,
     $kendo-expander-indicator-margin-x: $kendo-expander-indicator-margin-x,

@@ -206,7 +206,7 @@ $kendo-chart-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-chart-line-height: var( --kendo-line-height, normal ) !default;
 /// The font size of the Chart.
 /// @group charts
-$kendo-chart-tooltip-font-size: calc( #{$kendo-font-size} * .929) !default;
+$kendo-chart-tooltip-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The label font size of the Chart.
 /// @group charts
 $kendo-chart-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
@@ -243,10 +243,10 @@ $kendo-chart-line-inactive-opacity: .3 !default;
 
 /// The horizontal padding of the Chart.
 /// @group charts
-$kendo-chart-tooltip-padding-x: k-spacing(1) !default;
+$kendo-chart-tooltip-padding-x: k-spacing(2.5) !default;
 /// The vertical padding of the Chart.
 /// @group charts
-$kendo-chart-tooltip-padding-y: k-spacing(0.5) !default;
+$kendo-chart-tooltip-padding-y: k-spacing(1.5) !default;
 
 /// The transition of the Chart.
 /// @group charts
@@ -277,10 +277,10 @@ $kendo-chart-crosshair-background: color-mix(in srgb, k-color(on-app-surface) 50
 $kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-text !default;
 /// The background color of the Chart.
 /// @group charts
-$kendo-chart-crosshair-shared-tooltip-background: k-color(base) !default;
+$kendo-chart-crosshair-shared-tooltip-background: k-color(surface) !default;
 /// The border color of the Chart.
 /// @group charts
-$kendo-chart-crosshair-shared-tooltip-border: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+$kendo-chart-crosshair-shared-tooltip-border: k-color(border) !default;
 
 /// The background color of the Chart.
 /// @group charts

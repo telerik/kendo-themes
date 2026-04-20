@@ -1,5 +1,4 @@
 @use "../core/_index.scss" as *;
-@use "../button/_variables.scss" as *;
 @use "../card/_variables.scss" as *;
 
 // Timeline
@@ -71,10 +70,10 @@ $kendo-timeline-track-start-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 
 $kendo-timeline-track-end-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 * #{$kendo-timeline-track-border-width}) !default;
 /// The background color of the Timeline track.
 /// @group timeline
-$kendo-timeline-track-bg: $kendo-button-bg !default;
+$kendo-timeline-track-bg: k-color(base) !default;
 /// The border color of the Timeline track.
 /// @group timeline
-$kendo-timeline-track-border-color: $kendo-button-border !default;
+$kendo-timeline-track-border-color: k-color(border) !default;
 
 /// The shadow of the Timeline's focused track items.
 /// @group timeline
@@ -86,13 +85,13 @@ $kendo-timeline-track-event-offset: 36px !default;
 
 /// The horizontal padding of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-padding-x: $kendo-button-md-padding-x !default;
+$kendo-timeline-flag-padding-x: k-spacing(2.5) !default;
 /// The vertical padding of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-padding-y: $kendo-button-md-padding-y !default;
+$kendo-timeline-flag-padding-y: k-spacing(1.5) !default;
 /// The line height of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-line-height: $kendo-button-line-height !default;
+$kendo-timeline-flag-line-height: 1 !default;
 /// The minimum width of the Timeline flag.
 /// @group timeline
 $kendo-timeline-flag-min-width: 80px !default;
@@ -114,10 +113,10 @@ $kendo-timeline-flag-text: k-color(on-primary) !default;
 
 /// The width of the Timeline's flag callout.
 /// @group timeline
-$kendo-timeline-flag-callout-width: 10px !default;
+$kendo-timeline-flag-callout-width: 14px !default;
 /// The height of the Timeline's flag callout.
 /// @group timeline
-$kendo-timeline-flag-callout-height: 10px !default;
+$kendo-timeline-flag-callout-height: 7px !default;
 
 /// The bottom offset of the Timeline flag.
 /// @group timeline
@@ -162,6 +161,10 @@ $kendo-timeline-event-width: 400px !default;
 /// The height of the Timeline event.
 /// @group timeline
 $kendo-timeline-event-height: 600px !default;
+/// The shadow of the Timeline card.
+/// @group timeline
+$kendo-timeline-card-shadow: none !default;
+
 /// The minimum height of the Timeline event.
 /// @group timeline
 $kendo-timeline-event-min-height-calc: calc(2 * (#{$kendo-timeline-track-event-offset} - #{$kendo-card-border-width})) !default;
@@ -215,5 +218,6 @@ $kendo-timeline-event-min-height-calc: calc(2 * (#{$kendo-timeline-track-event-o
     $kendo-timeline-circle-bg: $kendo-timeline-circle-bg,
     $kendo-timeline-event-width: $kendo-timeline-event-width,
     $kendo-timeline-event-height: $kendo-timeline-event-height,
+    $kendo-timeline-card-shadow: $kendo-timeline-card-shadow,
     $kendo-timeline-event-min-height-calc: $kendo-timeline-event-min-height-calc
 );

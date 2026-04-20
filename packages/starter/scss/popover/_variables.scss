@@ -28,23 +28,23 @@ $kendo-popover-line-height: $kendo-card-line-height !default;
 $kendo-popover-text: k-color(on-app-surface) !default;
 /// The background color of the Popover.
 /// @group popover
-$kendo-popover-bg: k-color(surface-alt) !default;
+$kendo-popover-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
 /// The border color of the Popover.
 /// @group popover
-$kendo-popover-border: k-color(border) !default;
+$kendo-popover-border: k-elevation-border(2, k-color(border)) !default;
 /// The box shadow of the Popover.
 /// @group popover
 $kendo-popover-shadow: $kendo-popup-shadow !default;
 
 /// The horizontal padding of the Popover header.
 /// @group popover
-$kendo-popover-header-padding-x: $kendo-card-header-padding-x !default;
+$kendo-popover-header-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Popover header.
 /// @group popover
-$kendo-popover-header-padding-y: $kendo-card-header-padding-y !default;
+$kendo-popover-header-padding-y: k-spacing(4) k-spacing(2) !default;
 /// The border width of the Popover header.
 /// @group popover
-$kendo-popover-header-border-width: $kendo-card-header-border-width !default;
+$kendo-popover-header-border-width: 0 !default;
 /// The border style of the Popover header.
 /// @group popover
 $kendo-popover-header-border-style: $kendo-popover-border-style !default;
@@ -63,11 +63,17 @@ $kendo-popover-header-border: $kendo-card-header-border !default;
 $kendo-popover-body-padding-x: $kendo-card-body-padding-x !default;
 /// The vertical padding of the Popover body.
 /// @group popover
-$kendo-popover-body-padding-y: $kendo-card-body-padding-y !default;
+$kendo-popover-body-padding-y: k-spacing(2) !default;
 
 /// The border width of the Popover actions.
 /// @group popover
-$kendo-popover-actions-border-width: $kendo-popover-border-width !default;
+$kendo-popover-actions-border-width: 0 !default;
+/// The horizontal padding of the Popover actions.
+/// @group popover
+$kendo-popover-actions-padding-x: k-spacing(4) !default;
+/// The vertical padding of the Popover actions.
+/// @group popover
+$kendo-popover-actions-padding-y: k-spacing(2) k-spacing(4) !default;
 
 /// The width of the Popover callout.
 /// @group popover

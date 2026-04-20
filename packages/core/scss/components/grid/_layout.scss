@@ -25,6 +25,7 @@
     .k-grid {
         border-width: $kendo-grid-border-width;
         border-style: solid;
+        border-radius: $kendo-grid-border-radius;
         box-sizing: border-box;
         outline: 0;
         font-family: $kendo-grid-font-family;
@@ -33,6 +34,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
@@ -83,6 +85,7 @@
         .k-table-tfoot {
             text-align: start;
             border-color: inherit;
+            color: inherit;
         }
 
         .k-table-row {

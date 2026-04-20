@@ -8,7 +8,7 @@
 $kendo-treeview-default-size: "md" !default;
 /// The gap of the TreeView.
 /// @group treeview
-$kendo-treeview-gap: k-spacing(0.5) !default;
+$kendo-treeview-gap: k-spacing(0) !default;
 /// The border radius of the TreeView.
 /// @group treeview
 $kendo-treeview-border-radius: k-border-radius(sm) !default;
@@ -49,7 +49,7 @@ $kendo-treeview-indent: 24px !default;
 $kendo-treeview-sm-item-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium TreeView items.
 /// @group treeview
-$kendo-treeview-md-item-padding-x: k-spacing(2.5) !default;
+$kendo-treeview-md-item-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the large TreeView items.
 /// @group treeview
 $kendo-treeview-lg-item-padding-x: k-spacing(2) !default;
@@ -61,7 +61,7 @@ $kendo-treeview-sm-item-padding-y: k-spacing(1) !default;
 $kendo-treeview-md-item-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the large TreeView items.
 /// @group treeview
-$kendo-treeview-lg-item-padding-y: k-spacing(1.5) !default;
+$kendo-treeview-lg-item-padding-y: k-spacing(2) !default;
 /// The border width of the TreeView items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0px !default;
@@ -101,10 +101,10 @@ $kendo-treeview-border: null !default;
 
 /// The background color of hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-hover-bg: color-mix(in srgb, k-color(on-app-surface) 6%, transparent) !default;
+$kendo-treeview-item-hover-bg: k-color(primary-subtle-hover) !default;
 /// The text color of hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-hover-text: k-color(on-app-surface) !default;
+$kendo-treeview-item-hover-text: k-color(primary-on-subtle) !default;
 /// The border color of hovered TreeView items.
 /// @group treeview
 $kendo-treeview-item-hover-border: null !default;
@@ -114,10 +114,10 @@ $kendo-treeview-item-hover-gradient: null !default;
 
 /// The background color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-bg: color-mix(in srgb, k-color(on-app-surface) 12%, transparent ) !default;
+$kendo-treeview-item-selected-bg: k-color(primary-subtle-active) !default;
 /// The text color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-text: k-color(on-app-surface) !default;
+$kendo-treeview-item-selected-text: k-color(primary-on-subtle) !default;
 /// The border color of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-border: null !default;
@@ -127,11 +127,17 @@ $kendo-treeview-item-selected-gradient: null !default;
 
 /// The background color of selected and hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-hover-bg: color-mix(in srgb, k-color(on-app-surface) 18%, transparent ) !default;
+$kendo-treeview-item-selected-hover-bg: color-mix(in srgb, k-color(primary-subtle-active), k-color(primary-emphasis) 50%) !default;
 
 /// The box shadow of focused TreeView items.
 /// @group treeview
-$kendo-treeview-item-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
+$kendo-treeview-item-focus-shadow: null !default;
+/// The outline color of the focused TreeView items.
+/// @group treeview
+$kendo-treeview-item-focus-outline-color: k-color(subtle) !default;
+/// The outline offset of the focused TreeView items.
+/// @group treeview
+$kendo-treeview-item-focus-outline-offset: 1px !default;
 
 /// The background color of the Load More button in the TreeView
 /// @group treeview

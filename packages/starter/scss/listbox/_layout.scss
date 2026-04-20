@@ -7,8 +7,6 @@
 
     .k-listbox {
         .k-list-scroller {
-            padding-inline: $kendo-listbox-scroller-padding-x;
-            padding-block: $kendo-listbox-scroller-padding-y;
             @include concentric-radius($kendo-listbox-border-radius, $kendo-listbox-scroller-padding-y, "> .k-list");
         }
     }

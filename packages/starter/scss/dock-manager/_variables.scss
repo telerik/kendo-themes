@@ -12,7 +12,7 @@ $kendo-dock-manager-border: k-color(border) !default;
 
 /// The vertical padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-y: k-spacing(2) !default;
+$kendo-dock-manager-pane-header-padding-y: k-spacing(4) !default;
 /// The horizontal padding of the pane header in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-pane-header-padding-x: k-spacing(4) !default;
@@ -24,7 +24,7 @@ $kendo-dock-manager-pane-header-border-width: $kendo-dock-manager-border-width !
 $kendo-dock-manager-pane-header-border-style: solid !default;
 /// The background color of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-bg: k-color(surface) !default;
+$kendo-dock-manager-pane-header-bg: k-color(surface-alt) !default;
 
 /// The vertical padding of the pane title in the DockManager component.
 /// @group dock-manager
@@ -43,7 +43,7 @@ $kendo-dock-manager-pane-title-font-size: var( --kendo-font-size-lg, inherit ) !
 $kendo-dock-manager-pane-title-line-height: var( --kendo-line-height-sm, normal ) !default;
 /// The font weight of the pane title in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-title-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+$kendo-dock-manager-pane-title-font-weight: var( --kendo-font-weight-medium, normal ) !default;
 
 /// The horizontal padding of the pane content in the DockManager component.
 /// @group dock-manager
@@ -74,7 +74,7 @@ $kendo-dock-manager-unpinned-container-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.0
 $kendo-dock-indicator-padding: k-spacing(1.5) !default;
 /// The background color of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-bg: k-color(surface) !default;
+$kendo-dock-indicator-bg: k-elevation-bg(2, k-color(surface)) !default;
 /// The text color of the dock indicator in the DockManager component.
 /// @group dock-manager
 $kendo-dock-indicator-text: k-color(primary) !default;
@@ -89,11 +89,11 @@ $kendo-dock-indicator-outline-style: solid !default;
 $kendo-dock-indicator-outline: $kendo-dock-indicator-text !default;
 /// The box shadow of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-shadow: k-elevation(3) !default;
+$kendo-dock-indicator-shadow: k-elevation(5) !default;
 
 ///  The background color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-hover-bg: k-color(primary) !default;
+$kendo-dock-indicator-hover-bg: k-color(primary-hover) !default;
 /// The text color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
 $kendo-dock-indicator-hover-text: k-color(on-primary) !default;

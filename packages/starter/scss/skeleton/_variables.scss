@@ -18,7 +18,7 @@ $kendo-skeleton-circle-border-radius: 9999px !default;
 
 /// The background color of the Skeleton item.
 /// @group skeleton
-$kendo-skeleton-item-bg: color-mix(in srgb, k-color(on-app-surface) 20%, transparent) !default;
+$kendo-skeleton-item-bg: color-mix(in srgb, k-color(subtle) 20%, transparent) !default;
 
 /// The background color of the Skeleton.
 /// @group skeleton

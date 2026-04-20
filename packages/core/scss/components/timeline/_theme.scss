@@ -16,6 +16,10 @@
         }
 
         .k-timeline-card {
+            .k-card {
+                box-shadow: $kendo-timeline-card-shadow;
+            }
+
             .k-card-header {
                 background-color: $kendo-card-bg;
                 color: $kendo-card-text;

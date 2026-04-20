@@ -34,7 +34,7 @@ $kendo-dialog-button-spacing: k-spacing(3) !default;
 
 /// The background color of the Dialog.
 /// @group dialog
-$kendo-dialog-bg: k-color(surface-alt) !default;
+$kendo-dialog-bg: k-elevation-bg(3, k-color(surface-alt)) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (
     $kendo-dialog-default-theme-color: $kendo-dialog-default-theme-color,

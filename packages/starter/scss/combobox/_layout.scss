@@ -20,6 +20,11 @@
                 background-color: currentColor;
                 opacity: 1;
             }
+
+            &:focus,
+            &.k-focus {
+                outline: none;
+            }
         }
 
         // Sizing

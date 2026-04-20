@@ -54,7 +54,7 @@ $kendo-chat-message-list-padding-y: $kendo-chat-padding-y !default;
 $kendo-chat-message-list-spacing: $kendo-chat-item-spacing-y !default;
 /// The spacing of the Chat message box wrapper.
 /// @group chat
-$kendo-chat-message-box-wrapper-spacing: k-spacing(4) !default;
+$kendo-chat-message-box-wrapper-spacing: k-spacing(3) !default;
 
 /// The minimum size of the Chat message status.
 /// @group chat
@@ -136,10 +136,10 @@ $kendo-chat-typing-indicator-text: k-color(base-on-subtle) !default;
 
 /// The background color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-bg: k-color(primary) !default;
+$kendo-chat-alt-bubble-bg: k-color(secondary-subtle) !default;
 /// The text color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-text: k-color(on-primary) !default;
+$kendo-chat-alt-bubble-text: k-color(secondary-on-subtle) !default;
 /// The border color of the Chat alt bubble.
 /// @group chat
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
@@ -148,13 +148,13 @@ $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
 $kendo-chat-alt-bubble-shadow: none !default;
 /// The background color of the hovered alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-hover-bg: k-color(primary-hover) !default;
+$kendo-chat-alt-bubble-hover-bg: k-color(secondary-subtle-hover) !default;
 /// The border color of the hovered alt Bubble.
 /// @group bubble
 $kendo-chat-alt-bubble-hover-border: $kendo-chat-alt-bubble-hover-bg !default;
 /// The background color of the active Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-active-bg: k-color(primary-active) !default;
+$kendo-chat-alt-bubble-active-bg: k-color(secondary-subtle-active) !default;
 /// The border color of the active alt Bubble.
 /// @group bubble
 $kendo-chat-alt-bubble-active-border: $kendo-chat-alt-bubble-active-bg !default;
@@ -166,7 +166,17 @@ $kendo-chat-alt-bubble-focus-bg: $kendo-chat-alt-bubble-bg !default;
 $kendo-chat-alt-bubble-focus-border: $kendo-chat-alt-bubble-focus-bg !default;
 /// The box shadow of the focused alt Bubble.
 /// @group bubble
-$kendo-chat-alt-bubble-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(primary) 16%, transparent) !default;
+$kendo-chat-alt-bubble-focus-shadow: null !default;
+
+/// The outline color of the focused alt Bubble.
+/// @group chat
+$kendo-chat-alt-bubble-focus-outline-color: k-color(secondary-on-surface) !default;
+/// The outline width of the focused alt Bubble.
+/// @group chat
+$kendo-chat-alt-bubble-focus-outline-width: 1px !default;
+/// The outline offset of the focused alt Bubble.
+/// @group chat
+$kendo-chat-alt-bubble-focus-outline-offset: 1px !default;
 
 /// The text color of the bubble of the failed Chat message.
 /// @group chat
@@ -191,13 +201,13 @@ $kendo-chat-failed-bubble-selected-bg: k-color(error-subtle-active) !default;
 
 /// The background color of the Chat sender file.
 /// @group chat
-$kendo-chat-sender-file-bg: color-mix(in srgb, k-color(on-primary) 14%, transparent) !default;
+$kendo-chat-sender-file-bg: k-color(surface) !default;
 /// The text color of the Chat sender file.
 /// @group chat
-$kendo-chat-sender-file-text: k-color(on-primary) !default;
+$kendo-chat-sender-file-text: k-color(on-app-surface) !default;
 /// The border color of the Chat sender file.
 /// @group chat
-$kendo-chat-sender-file-border: $kendo-chat-sender-file-bg !default;
+$kendo-chat-sender-file-border: k-color(border) !default;
 
 /// The border width of the Chat pinned message;
 /// @group chat

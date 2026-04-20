@@ -62,6 +62,7 @@
         border-style: $kendo-suggestion-border-style;
         font-size: $kendo-suggestion-font-size;
         line-height: $kendo-suggestion-line-height;
+        font-weight: $kendo-suggestion-font-weight;
         flex: 0 0 auto;
         transition: background-color k-transition(rapid), box-shadow k-transition(rapid);
         cursor: pointer;

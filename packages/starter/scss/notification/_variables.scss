@@ -17,10 +17,10 @@ $kendo-notification-group-gap: k-spacing(2) !default;
 
 /// The horizontal padding of the Notification.
 /// @group notification
-$kendo-notification-padding-x: k-spacing(2) !default;
+$kendo-notification-padding-x: k-spacing(2.5) !default;
 /// The vertical padding of the Notification.
 /// @group notification
-$kendo-notification-padding-y: k-spacing(1) !default;
+$kendo-notification-padding-y: k-spacing(2.5) !default;
 /// The width of the border around the Notification.
 /// @group notification
 $kendo-notification-border-width: 1px !default;
@@ -54,7 +54,7 @@ $kendo-notification-text: k-color(on-app-surface) !default;
 $kendo-notification-border: k-color(border) !default;
 /// The box shadow of the Notification.
 /// @group notification
-$kendo-notification-shadow: $kendo-popup-shadow !default;
+$kendo-notification-shadow: k-elevation(2) !default;
 
 /// The horizontal spacing of the Notification icon.
 /// @group notification

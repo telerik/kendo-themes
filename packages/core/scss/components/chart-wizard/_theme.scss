@@ -7,7 +7,9 @@
                 color: $kendo-chart-wizard-chart-type-selected-color;
 
                 .k-icon-background-area {
+                    background-color: $kendo-chart-wizard-icon-area-selected-bg;
                     box-shadow: $kendo-chart-wizard-icon-area-selected-shadow;
+                    border-color: $kendo-chart-wizard-icon-area-selected-border-color;
                 }
             }
 
@@ -27,6 +29,7 @@
         .k-icon-background-area {
             color: $kendo-chart-wizard-icon-area-color;
             background-color: $kendo-chart-wizard-icon-area-bg;
+            border-color: $kendo-chart-wizard-icon-area-border-color;
         }
     }
 }

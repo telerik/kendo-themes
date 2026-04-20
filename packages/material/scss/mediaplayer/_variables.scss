@@ -31,6 +31,15 @@ $kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
 /// The vertical padding of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
+/// The font size of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-font-size: null !default;
+/// The font weight of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-font-weight: null !default;
+/// The line height of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-line-height: null !default;
 /// The text color of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
@@ -48,6 +57,9 @@ $kendo-media-player-titlebar-gradient: ( color-mix(in srgb, k-color(on-app-surfa
     $kendo-media-player-border: $kendo-media-player-border,
     $kendo-media-player-titlebar-padding-x: $kendo-media-player-titlebar-padding-x,
     $kendo-media-player-titlebar-padding-y: $kendo-media-player-titlebar-padding-y,
+    $kendo-media-player-titlebar-font-size: $kendo-media-player-titlebar-font-size,
+    $kendo-media-player-titlebar-font-weight: $kendo-media-player-titlebar-font-weight,
+    $kendo-media-player-titlebar-line-height: $kendo-media-player-titlebar-line-height,
     $kendo-media-player-titlebar-text: $kendo-media-player-titlebar-text,
     $kendo-media-player-titlebar-gradient: $kendo-media-player-titlebar-gradient
 );

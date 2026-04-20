@@ -33,7 +33,7 @@ $kendo-image-editor-content-border-width: 1px !default;
 
 /// The vertical padding of the ImageEditor action pane.
 /// @group image-editor
-$kendo-image-editor-action-pane-padding-y: k-spacing(8) !default;
+$kendo-image-editor-action-pane-padding-y: k-spacing(4) !default;
 /// The horizontal padding of the ImageEditor action pane.
 /// @group image-editor
 $kendo-image-editor-action-pane-padding-x: k-spacing(4) !default;
@@ -83,7 +83,7 @@ $kendo-image-editor-content-border: null !default;
 
 /// The background color of the ImageEditor action pane.
 /// @group image-editor
-$kendo-image-editor-action-pane-bg: k-color(surface) !default;
+$kendo-image-editor-action-pane-bg: k-color(surface-alt) !default;
 /// The text color of the ImageEditor action pane.
 /// @group image-editor
 $kendo-image-editor-action-pane-text: null !default;

@@ -137,6 +137,9 @@ $kendo-taskboard-pane-padding-x: null !default;
 /// The border width of the TaskBoard pane.
 /// @group taskboard
 $kendo-taskboard-pane-border-width: 1px !default;
+/// The border radius of the TaskBoard pane.
+/// @group taskboard
+$kendo-taskboard-pane-border-radius: null !default;
 /// The background color of the TaskBoard pane.
 /// @group taskboard
 $kendo-taskboard-pane-bg: k-color(surface-alt) !default;
@@ -287,6 +290,7 @@ $kendo-taskboard-drag-placeholder-border: k-color(border) !default;
     $kendo-taskboard-pane-padding-y: $kendo-taskboard-pane-padding-y,
     $kendo-taskboard-pane-padding-x: $kendo-taskboard-pane-padding-x,
     $kendo-taskboard-pane-border-width: $kendo-taskboard-pane-border-width,
+    $kendo-taskboard-pane-border-radius: $kendo-taskboard-pane-border-radius,
     $kendo-taskboard-pane-bg: $kendo-taskboard-pane-bg,
     $kendo-taskboard-pane-text: $kendo-taskboard-pane-text,
     $kendo-taskboard-pane-border: $kendo-taskboard-pane-border,

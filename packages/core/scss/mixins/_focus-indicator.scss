@@ -2,8 +2,11 @@
 @use "../_variables.scss" as *;
 @use "./_box-shadow.scss" as *;
 
-@mixin focus-indicator( $indicator, $inset: false, $themeable: false, $type: "box-shadow" ) {
-    @if $kendo-enable-focus-contrast and list.nth($indicator, 1) {
+@mixin focus-indicator( $indicator, $inset: false, $themeable: false, $type: "box-shadow", $outline-width: 1px, $outline-offset: 0px ) {
+    @if $type == "outline" {
+        outline: var(--kendo-focus-outline-width, $outline-width) solid $indicator;
+        outline-offset: if( $inset, calc(-1 * var(--kendo-focus-outline-offset, $outline-offset)), var(--kendo-focus-outline-offset, $outline-offset));
+    } @else if $kendo-enable-focus-contrast and list.nth($indicator, 1) {
         @include box-shadow( if( $inset, inset, null ) 0 0 0 2px if( $themeable, currentColor, rgb( 0, 0, 0 ) ) );
     } @else {
         @include box-shadow( $indicator... );

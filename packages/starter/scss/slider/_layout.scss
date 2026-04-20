@@ -1,6 +1,21 @@
 @use "@progress/kendo-theme-core/scss/components/slider/_layout.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-slider--layout() {
     @include kendo-slider--layout-base();
+
+    .k-slider-transitions {
+        &.k-slider-horizontal {
+            .k-draghandle {
+                transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function, border-color $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function, outline $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+            }
+        }
+
+        &.k-slider-vertical {
+            .k-draghandle {
+                transition: bottom  $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function, border-color $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function, outline $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+            }
+        }
+    }
 }

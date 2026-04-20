@@ -41,26 +41,26 @@ $kendo-slider-draghandle-active-scale: 1 !default;
 
 /// The background color of the Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-bg: k-color(primary) !default;
+$kendo-slider-draghandle-bg: k-color(secondary) !default;
 /// The text color of the Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-text: k-color(on-primary) !default;
+$kendo-slider-draghandle-text: k-color(on-secondary) !default;
 /// The border color of the Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-border: k-color(primary) !default;
+$kendo-slider-draghandle-border: k-color(secondary) !default;
 /// The gradient of the Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-gradient: null !default;
 
 /// The background color of the hovered Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-hover-bg: k-color(primary-hover) !default;
+$kendo-slider-draghandle-hover-bg: k-color(secondary-hover) !default;
 /// The text color of the hovered Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-hover-text: null !default;
 /// The border color of the hovered Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-hover-border: k-color(primary) !default;
+$kendo-slider-draghandle-hover-border: k-color(secondary) !default;
 /// The gradient of the hovered Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-hover-gradient: null !default;
@@ -70,20 +70,30 @@ $kendo-slider-draghandle-hover-shadow: null !default;
 
 /// The background color of the active Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-pressed-bg: k-color(primary-active) !default;
+$kendo-slider-draghandle-pressed-bg: k-color(secondary-active) !default;
 /// The text color of the active Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-pressed-text: null !default;
 /// The border color of the active Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-pressed-border: k-color(primary-active) !default;
+$kendo-slider-draghandle-pressed-border: k-color(secondary-active) !default;
 /// The gradient of the active Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-pressed-gradient: null !default;
 
 /// The shadow of the focused Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(primary) 30%, transparent) !default;
+$kendo-slider-draghandle-focus-shadow: none !default;
+
+/// The outline color of the focused Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-focus-outline-width: 1px !default;
+/// The outline offset of the focused Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-focus-outline-offset: 1px !default;
 
 /// The transition speed of the Slider.
 /// @group slider
@@ -100,10 +110,10 @@ $kendo-slider-draghandle-transition-function: k-easing(decelerate) !default;
 
 /// The background color of the Slider track.
 /// @group slider
-$kendo-slider-track-bg: k-color(base-emphasis) !default;
+$kendo-slider-track-bg: k-color(base-subtle) !default;
 /// The background color of the Slider's track selection.
 /// @group slider
-$kendo-slider-selection-bg: k-color(primary) !default;
+$kendo-slider-selection-bg: k-color(secondary) !default;
 /// @group slider
 /// The opacity of the disabled Slider.
 $kendo-slider-disabled-opacity: null !default;

@@ -1,6 +1,60 @@
 @use "@progress/kendo-theme-core/scss/components/calendar/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "./_variables.scss" as *;
+@use "../core/z-index/index.scss" as *;
 
 
 @mixin kendo-calendar--theme() {
     @include kendo-calendar--theme-base();
+
+    .k-calendar {
+        .k-calendar-td {
+            &:focus,
+            &.k-focus {
+                .k-calendar-cell-inner,
+                .k-link {
+                    box-shadow: none;
+                    @include focus-indicator(
+                        $indicator: k-color(secondary-on-surface),
+                        $type: "outline",
+                        $outline-width: $kendo-calendar-cell-focus-outline-width,
+                        $outline-offset: $kendo-calendar-cell-focus-outline-offset
+                    );
+                    z-index: k-z-index("base", 1);
+                }
+            }
+        }
+
+        .k-range-start {
+            background: $kendo-calendar-range-start-bg;
+        }
+
+        .k-range-end {
+            background: $kendo-calendar-range-end-bg;
+        }
+
+        .k-range-mid {
+            .k-link {
+                color: $kendo-calendar-cell-hover-text;
+            }
+        }
+    }
+
+    .k-calendar-nav {
+        color: k-color(secondary-on-surface);
+    }
+
+    .k-rtl .k-calendar,
+    [dir="rtl"] .k-calendar,
+    .k-calendar.k-rtl,
+    .k-calendar[dir="rtl"] {
+        .k-range-start {
+            background: $kendo-calendar-range-end-bg;
+        }
+
+        .k-range-end {
+            background: $kendo-calendar-range-start-bg;
+        }
+    }
 }

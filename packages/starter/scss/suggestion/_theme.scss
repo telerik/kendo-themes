@@ -1,6 +1,52 @@
 @use "@progress/kendo-theme-core/scss/components/suggestion/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-suggestion--theme() {
     @include kendo-suggestion--theme-base();
+
+    .k-suggestion {
+
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-suggestion-focus-outline-color,
+                $outline-width: $kendo-suggestion-focus-outline-width,
+                $outline-offset: $kendo-suggestion-focus-outline-offset
+            );
+        }
+
+        @each $name, $props in $kendo-suggestion-theme-colors {
+
+            #{k-when-default($kendo-suggestion-default-theme-color, $name)}
+            &.k-suggestion-#{$name} {
+                @include fill(
+                    k-color(#{$name}-on-surface),
+                    transparent,
+                    k-color(#{$name}-emphasis)
+                );
+
+                &:hover,
+                &.k-hover {
+                    @include fill(
+                        k-color(#{$name}-on-surface),
+                        k-color(#{$name}-subtle-hover),
+                        k-color(#{$name}-emphasis)
+                    );
+                }
+
+                &:active,
+                &.k-active {
+                    @include fill(
+                        k-color(#{$name}-on-surface),
+                        k-color(#{$name}-subtle-active),
+                        k-color(#{$name}-emphasis)
+                    );
+                }
+            }
+        }
+    }
 }

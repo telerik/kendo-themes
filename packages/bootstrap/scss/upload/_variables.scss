@@ -7,6 +7,9 @@
 /// The width of the border around the Upload.
 /// @group upload
 $kendo-upload-border-width: 1px !default;
+/// The border radius of the Upload.
+/// @group upload
+$kendo-upload-border-radius: null !default;
 /// The font family of the Upload.
 /// @group upload
 $kendo-upload-font-family: var(--kendo-font-family) !default;
@@ -115,6 +118,7 @@ $kendo-upload-file-info-margin: k-spacing(4) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/upload/_variables.scss" with (
     $kendo-upload-border-width: $kendo-upload-border-width,
+    $kendo-upload-border-radius: $kendo-upload-border-radius,
     $kendo-upload-font-family: $kendo-upload-font-family,
     $kendo-upload-font-size: $kendo-upload-font-size,
     $kendo-upload-line-height: $kendo-upload-line-height,

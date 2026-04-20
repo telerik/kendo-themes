@@ -1,6 +1,11 @@
 @use "@progress/kendo-theme-core/scss/components/colorpalette/_layout.scss" as *;
+@use "../core/index.scss" as *;
 
 
 @mixin kendo-color-palette--layout() {
     @include kendo-color-palette--layout-base();
+
+    .k-colorpalette-tile {
+        transition: outline k-transition(rapid);
+    }
 }

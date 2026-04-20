@@ -61,6 +61,9 @@ $kendo-listview-item-focus-border: var( --kendo-listview-item-focus-border, init
 /// The box shadow of the focused ListView items.
 /// @group listview
 $kendo-listview-item-focus-shadow: var( --kendo-listview-item-focus-shadow, var( --kendo-list-item-focus-shadow, $kendo-list-item-focus-shadow ) ) !default;
+/// The border radius of the ListView items.
+/// @group listview
+$kendo-listview-item-border-radius: null !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/listview/_variables.scss" with (
@@ -81,5 +84,6 @@ $kendo-listview-item-focus-shadow: var( --kendo-listview-item-focus-shadow, var(
     $kendo-listview-item-focus-text: $kendo-listview-item-focus-text,
     $kendo-listview-item-focus-bg: $kendo-listview-item-focus-bg,
     $kendo-listview-item-focus-border: $kendo-listview-item-focus-border,
-    $kendo-listview-item-focus-shadow: $kendo-listview-item-focus-shadow
+    $kendo-listview-item-focus-shadow: $kendo-listview-item-focus-shadow,
+    $kendo-listview-item-border-radius: $kendo-listview-item-border-radius
 );

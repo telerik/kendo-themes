@@ -33,11 +33,12 @@ $kendo-filter-preview-operator-text: k-color(on-app-surface) !default;
 
 /// The box shadow of the focused Filter toolbar.
 /// @group filter
-$kendo-filter-toolbar-focus-shadow: 0 0 0 2px k-color(border-alt) !default;
+$kendo-filter-toolbar-focus-shadow: 0 0 0 1px white, 0 0 0 2px k-color(subtle) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (
     $kendo-filter-padding-x: $kendo-filter-padding-x,
     $kendo-filter-padding-y: $kendo-filter-padding-y,
+    $kendo-filter-border-radius: $kendo-filter-border-radius,
     $kendo-filter-bottom-margin: $kendo-filter-bottom-margin,
     $kendo-filter-line-size: $kendo-filter-line-size,
     $kendo-filter-operator-dropdown-width: $kendo-filter-operator-dropdown-width,

@@ -38,6 +38,9 @@
     .k-mediaplayer-titlebar {
         padding-block: $kendo-media-player-titlebar-padding-y;
         padding-inline: $kendo-media-player-titlebar-padding-x;
+        font-size: $kendo-media-player-titlebar-font-size;
+        font-weight: $kendo-media-player-titlebar-font-weight;
+        line-height: $kendo-media-player-titlebar-line-height;
         position: absolute;
         z-index: k-z-index("base", 2);
         inset-block-start: 0;

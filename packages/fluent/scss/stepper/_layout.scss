@@ -5,10 +5,6 @@
 @mixin kendo-stepper--layout() {
     @include kendo-stepper--layout-base();
 
-    .k-step-current .k-step-label {
-        font-weight: $kendo-stepper-current-label-font-weight;
-    }
-
     .k-stepper .k-step-disabled,
     .k-stepper .k-step.k-disabled {
         .k-step-label {

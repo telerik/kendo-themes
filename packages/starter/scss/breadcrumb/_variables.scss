@@ -74,10 +74,10 @@ $kendo-breadcrumb-focus-shadow: 0 0 2px 1px k-color(border) !default;
 $kendo-breadcrumb-sm-link-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-md-link-padding-x: k-spacing(2) !default;
+$kendo-breadcrumb-md-link-padding-x: k-spacing(2.5) !default;
 /// The horizontal padding of the large Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-link-padding-x: k-spacing(2) !default;
+$kendo-breadcrumb-lg-link-padding-x: k-spacing(3) !default;
 
 /// The vertical padding of the small Breadcrumb link.
 /// @group breadcrumb
@@ -98,7 +98,7 @@ $kendo-breadcrumb-link-border-radius: k-border-radius(md) !default;
 $kendo-breadcrumb-sm-icon-link-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the medium Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-md-icon-link-padding-y: k-spacing(2) !default;
+$kendo-breadcrumb-md-icon-link-padding-y: k-spacing(2.5) !default;
 /// The vertical padding of the large Breadcrumb link icon.
 /// @group breadcrumb
 $kendo-breadcrumb-lg-icon-link-padding-y: k-spacing(3) !default;
@@ -118,7 +118,7 @@ $kendo-breadcrumb-lg-icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding
 $kendo-breadcrumb-link-initial-text: inherit !default;
 /// The spacing of the Breadcrumb link icon.
 /// @group breadcrumb
-$kendo-breadcrumb-link-icon-spacing: $kendo-icon-spacing !default;
+$kendo-breadcrumb-link-icon-spacing: k-spacing(1.5) !default;
 
 /// The background color of the Breadcrumb link.
 /// @group breadcrumb
@@ -151,7 +151,13 @@ $kendo-breadcrumb-link-focus-text: k-color(primary) !default;
 $kendo-breadcrumb-link-focus-border: null !default;
 /// The box shadow of the focused Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
+$kendo-breadcrumb-link-focus-shadow: null !default;
+/// The outline color of the focused Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-outline-color: k-color(subtle) !default;
+/// The outline offset of the focused Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-outline-offset: 1px !default;
 
 /// The background color of the Breadcrumb root link.
 /// @group breadcrumb

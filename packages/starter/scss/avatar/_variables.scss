@@ -31,20 +31,20 @@ $kendo-avatar-border-radius: null !default;
 $kendo-avatar-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Avatar.
 /// @group avatar
-$kendo-avatar-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-avatar-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The line height of the Avatar.
 /// @group avatar
 $kendo-avatar-line-height: var( --kendo-line-height-xs, normal ) !default;
 
 /// The small size of the Avatar.
 /// @group avatar
-$kendo-avatar-sm-size: k-spacing(4) !default;
+$kendo-avatar-sm-size: k-spacing(6) !default;
 /// The medium size of the Avatar.
 /// @group avatar
 $kendo-avatar-md-size: k-spacing(8) !default;
 /// The large size of the Avatar.
 /// @group avatar
-$kendo-avatar-lg-size: k-spacing(16) !default;
+$kendo-avatar-lg-size: k-spacing(12) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/avatar/_variables.scss" with (
     $kendo-avatar-default-theme-color: $kendo-avatar-default-theme-color,

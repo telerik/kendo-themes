@@ -1,6 +1,20 @@
+@use "../core/_index.scss" as *;
+@use "../rating/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/rating/_theme.scss" as *;
 
 
 @mixin kendo-rating--theme() {
     @include kendo-rating--theme-base();
+
+    .k-rating {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-rating-focus-outline-color,
+                $outline-width: $kendo-rating-focus-outline-width,
+                $outline-offset: $kendo-rating-focus-outline-offset
+            );
+        }
+    }
 }
