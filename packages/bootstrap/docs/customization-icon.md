@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-accent-icon-color</td>
     <td>String</td>
-    <td><code>k-color(tertiary)</code></td>
-    <td><code>var(--kendo-color-tertiary)</code></td>
+    <td><code>k-color(tertiary-on-surface)</code></td>
+    <td><code>var(--kendo-color-tertiary-on-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>

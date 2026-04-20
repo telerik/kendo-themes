@@ -550,8 +550,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-text</td>
     <td>String</td>
-    <td><code>var( --kendo-switch-on-track-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-switch-on-track-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-switch-on-track-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-switch-on-track-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the Switch is checked.</div></div>
@@ -580,8 +580,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-switch-on-track-hover-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-switch-on-track-hover-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-switch-on-track-hover-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-switch-on-track-hover-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered Switch is checked.</div></div>
@@ -610,8 +610,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-focus-text</td>
     <td>String</td>
-    <td><code>var( --kendo-switch-on-track-focus-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-switch-on-track-focus-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-switch-on-track-focus-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-switch-on-track-focus-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused Switch is checked.</div></div>
@@ -640,8 +640,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-switch-on-track-disabled-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-switch-on-track-disabled-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-switch-on-track-disabled-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-switch-on-track-disabled-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled Switch is checked.</div></div>

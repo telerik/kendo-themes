@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-menu-clear-text</td>
     <td>String</td>
-    <td><code>var( --kendo-adaptive-menu-clear-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-adaptive-menu-clear-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-adaptive-menu-clear-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-adaptive-menu-clear-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Adaptive menu clear button.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-grid-sort-text</td>
     <td>String</td>
-    <td><code>var( --kendo-adaptive-grid-sort-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-adaptive-grid-sort-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-adaptive-grid-sort-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-adaptive-grid-sort-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Adaptive Grid sort indicator.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-scheduler-current-text</td>
     <td>String</td>
-    <td><code>var( --kendo-adaptive-scheduler-current-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-adaptive-scheduler-current-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-adaptive-scheduler-current-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-adaptive-scheduler-current-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the current date in the Adaptive Scheduler.</div></div>
