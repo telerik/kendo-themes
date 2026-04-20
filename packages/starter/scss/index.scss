@@ -308,7 +308,7 @@
 @mixin kendo-theme--styles() {
     // Core
     @include core-styles();
-    @include kendo-transparency--styles();
+    @include kendo-translucency--styles();
 
 
     // Typography
