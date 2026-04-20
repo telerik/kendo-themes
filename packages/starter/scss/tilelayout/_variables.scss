@@ -21,6 +21,9 @@ $kendo-tile-layout-padding-y: $kendo-tile-layout-padding-x !default;
 /// The width of the border around the TileLayout card.
 /// @group tile-layout
 $kendo-tile-layout-card-border-width: $kendo-card-border-width !default;
+/// The shadow of the TileLayout card.
+/// @group tile-layout
+$kendo-tile-layout-card-shadow: k-elevation(2) !default;
 /// The focus box shadow of the TileLayout card.
 /// @group tile-layout
 $kendo-tile-layout-card-focus-shadow: $kendo-card-focus-shadow !default;
@@ -30,7 +33,7 @@ $kendo-tile-layout-card-focus-shadow: $kendo-card-focus-shadow !default;
 $kendo-tile-layout-hint-border-width: 1px !default;
 /// The radius of the border around the TileLayout hint.
 /// @group tile-layout
-$kendo-tile-layout-hint-border-radius: k-border-radius(lg) !default;
+$kendo-tile-layout-hint-border-radius: k-border-radius(xxl) !default;
 /// The color of the border around the TileLayout hint.
 /// @group tile-layout
 $kendo-tile-layout-hint-border: k-color(border) !default;

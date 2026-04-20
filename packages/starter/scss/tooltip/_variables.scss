@@ -23,7 +23,7 @@ $kendo-tooltip-border-radius: k-border-radius(md) !default;
 $kendo-tooltip-font-family: var( --kendo-font-family ) !default;
 /// The font size of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-font-size: var( --kendo-font-size ) !default;
+$kendo-tooltip-font-size: var( --kendo-font-size-md ) !default;
 /// The line height of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-line-height: calc( var( --kendo-line-height-xs ) * 1.25 ) !default;
@@ -41,7 +41,7 @@ $kendo-tooltip-callout-size: 6px !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-bg: k-color(inverse) !default;
+$kendo-tooltip-bg: k-elevation-bg(2, k-color(inverse)) !default;
 /// The default text color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-text: k-color(on-inverse) !default;

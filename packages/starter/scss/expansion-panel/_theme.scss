@@ -1,6 +1,19 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/expansion-panel/_theme.scss" as *;
 
 
 @mixin kendo-expander--theme() {
     @include kendo-expander--theme-base();
+
+    .k-expander {
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-expander-focus-outline-color,
+                $outline-width: $kendo-expander-focus-outline-width,
+                $outline-offset: $kendo-expander-focus-outline-offset
+            );
+        }
+    }
 }

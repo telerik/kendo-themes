@@ -1,6 +1,20 @@
 @use "@progress/kendo-theme-core/scss/components/chat/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-chat--theme() {
     @include kendo-chat--theme-base();
+
+    .k-chat .k-alt .k-chat-bubble {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-chat-alt-bubble-focus-outline-color,
+                $outline-width: $kendo-chat-alt-bubble-focus-outline-width,
+                $outline-offset: $kendo-chat-alt-bubble-focus-outline-offset
+            );
+        }
+    }
 }

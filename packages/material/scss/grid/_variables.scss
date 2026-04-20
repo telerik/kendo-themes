@@ -19,6 +19,9 @@ $kendo-grid-default-size: "md" !default;
 /// The width of the border around the Grid.
 /// @group grid
 $kendo-grid-border-width: 1px !default;
+/// The border radius of the Grid.
+/// @group grid
+$kendo-grid-border-radius: null !default;
 /// The font family of the Grid.
 /// @group grid
 $kendo-grid-font-family: var(--kendo-font-family) !default;
@@ -506,6 +509,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
 @forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
     $kendo-grid-default-size: $kendo-grid-default-size,
     $kendo-grid-border-width: $kendo-grid-border-width,
+    $kendo-grid-border-radius: $kendo-grid-border-radius,
     $kendo-grid-font-family: $kendo-grid-font-family,
     $kendo-grid-font-size: $kendo-grid-font-size,
     $kendo-grid-line-height: $kendo-grid-line-height,

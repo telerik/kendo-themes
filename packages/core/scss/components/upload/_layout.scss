@@ -9,8 +9,10 @@
     .k-upload {
         border-width: $kendo-upload-border-width;
         border-style: solid;
+        border-radius: $kendo-upload-border-radius;
         box-sizing: border-box;
         outline: 0;
+        overflow: clip;
         font-family: $kendo-upload-font-family;
         font-size: $kendo-upload-font-size;
         line-height: $kendo-upload-line-height;

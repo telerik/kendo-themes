@@ -19,6 +19,9 @@ $kendo-grid-default-size: "md" !default;
 /// The width of the border around the Grid.
 /// @group grid
 $kendo-grid-border-width: 1px !default;
+/// The border radius of the Grid.
+/// @group grid
+$kendo-grid-border-radius: k-border-radius(xl) !default;
 /// The font family of the Grid.
 /// @group grid
 $kendo-grid-font-family: var( --kendo-font-family, inherit ) !default;
@@ -59,17 +62,17 @@ $kendo-grid-cell-padding-y: $kendo-grid-padding-y !default;
 
 /// The horizontal padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-filter-cell-padding-x: $kendo-grid-padding-y !default;
+$kendo-grid-filter-cell-padding-x: $kendo-grid-padding-x !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
+$kendo-grid-filter-cell-padding-y: k-spacing(1) !default;
 
 /// The horizontal padding of the Grid edit cell.
 /// @group grid
 $kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-y: calc( #{k-spacing(1.5)} / 2 ) !default;
+$kendo-grid-edit-cell-padding-y: k-spacing(1) !default;
 
 /// The drop hint size of the Grid group.
 /// @group grid
@@ -82,14 +85,14 @@ $kendo-grid-group-drop-hint-line-size: math.div( $kendo-grid-group-drop-hint-siz
 $kendo-grid-group-drop-hint-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 /// The drop hint top of the Grid group.
 /// @group grid
-$kendo-grid-group-drop-hint-top: 3px !default;
+$kendo-grid-group-drop-hint-top: k-spacing(2) !default;
 
 /// The horizontal padding of the Grid.
 /// @group grid
-$kendo-grid-sm-padding-x: k-spacing(2) !default;
+$kendo-grid-sm-padding-x: k-spacing(2.5) !default;
 /// The vertical padding of the Grid.
 /// @group grid
-$kendo-grid-sm-padding-y: k-spacing(1) !default;
+$kendo-grid-sm-padding-y: k-spacing(2.5) !default;
 /// The horizontal padding of the Grid header.
 /// @group grid
 $kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
@@ -110,16 +113,16 @@ $kendo-grid-sm-cell-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
 /// The horizontal padding of the Grid cell.
 /// @group grid
-$kendo-grid-sm-filter-cell-padding-x: k-spacing(1.5) !default;
+$kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
 /// The vertical padding of the Grid cell.
 /// @group grid
-$kendo-grid-sm-filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-x !default;
+$kendo-grid-sm-filter-cell-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
 /// The horizontal padding of the Grid cell.
 /// @group grid
 $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
 /// The vertical padding of the Grid cell.
 /// @group grid
-$kendo-grid-sm-edit-cell-padding-y: k-spacing(0.5) !default;
+$kendo-grid-sm-edit-cell-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
 /// The height of the Grid group.
 /// @group grid
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
@@ -213,7 +216,7 @@ $kendo-grid-border: $kendo-table-border !default;
 $kendo-grid-header-bg: $kendo-table-header-bg !default;
 /// The text color of Grid header.
 /// @group grid
-$kendo-grid-header-text: $kendo-table-header-text !default;
+$kendo-grid-header-text: k-color(subtle) !default;
 /// The border color of Grid header.
 /// @group grid
 $kendo-grid-header-border: $kendo-table-header-border !default;
@@ -241,21 +244,21 @@ $kendo-grid-hover-text: $kendo-table-hover-text !default;
 
 /// The background color of selected Grid rows.
 /// @group grid
-$kendo-grid-selected-bg: $kendo-table-selected-bg !default;
+$kendo-grid-selected-bg: color-mix(in srgb, k-color(secondary) 12%, transparent) !default;
 /// The text color of selected Grid rows.
 /// @group grid
 $kendo-grid-selected-text: $kendo-table-selected-text !default;
 
 /// The background color of highlighted Grid rows.
 /// @group grid
-$kendo-grid-highlighted-bg: $kendo-table-highlighted-bg !default;
+$kendo-grid-highlighted-bg: color-mix(in srgb, k-color(warning) 12%, transparent) !default;
 /// The font weight of highlighted Grid rows.
 /// @group grid
-$kendo-grid-highlighted-font-weight: $kendo-table-highlighted-font-weight !default;
+$kendo-grid-highlighted-font-weight: var( --kendo-font-weight-semibold, 600 ) !default;
 
 /// The background color of selected highlighted Grid rows.
 /// @group grid
-$kendo-grid-selected-highlighted-bg: $kendo-table-selected-highlighted-bg !default;
+$kendo-grid-selected-highlighted-bg: color-mix(in srgb, color-mix(in srgb, k-color(secondary), k-color(warning)) 12%, transparent) !default;
 
 /// The background color of the Grid selection aggregates container.
 /// @group grid
@@ -294,7 +297,7 @@ $kendo-grid-sorted-icon-spacing: calc( #{k-spacing(2)} - 1px ) !default;
 $kendo-grid-sorted-bg: color-mix(in srgb, k-color(on-app-surface) 3%, transparent) !default;
 /// The text color of the Grid.
 /// @group grid
-$kendo-grid-sorting-indicator-text: k-color(primary) !default;
+$kendo-grid-sorting-indicator-text: k-color(secondary) !default;
 /// The font size of the Grid.
 /// @group grid
 $kendo-grid-sorting-index-font-size: var( --kendo-font-size-sm, inherit ) !default;
@@ -308,7 +311,7 @@ $kendo-grid-sorting-index-spacing-x: calc( #{$kendo-grid-sorting-index-spacing-y
 
 /// The shadow of the Grid.
 /// @group grid
-$kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
+$kendo-grid-focus-shadow: inset 0 0 0 2px k-color(subtle), inset 0 0 0 1px white !default;
 
 /// The spacing of the Grid button.
 /// @group grid
@@ -499,6 +502,7 @@ $kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-bold, 700 ) !def
 @forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
     $kendo-grid-default-size: $kendo-grid-default-size,
     $kendo-grid-border-width: $kendo-grid-border-width,
+    $kendo-grid-border-radius: $kendo-grid-border-radius,
     $kendo-grid-font-family: $kendo-grid-font-family,
     $kendo-grid-font-size: $kendo-grid-font-size,
     $kendo-grid-line-height: $kendo-grid-line-height,

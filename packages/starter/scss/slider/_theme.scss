@@ -1,6 +1,33 @@
+@use "../core/_index.scss" as *;
+@use "../slider/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/slider/_theme.scss" as *;
 
 
 @mixin kendo-slider--theme() {
     @include kendo-slider--theme-base();
+
+    .k-slider {
+        .k-draghandle {
+            &:focus,
+            &.k-focus {
+                @include focus-indicator(
+                    $type: "outline",
+                    $indicator: $kendo-slider-draghandle-focus-outline-color,
+                    $outline-width: $kendo-slider-draghandle-focus-outline-width,
+                    $outline-offset: $kendo-slider-draghandle-focus-outline-offset
+                );
+            }
+        }
+
+        &.k-focus {
+            .k-draghandle {
+                @include focus-indicator(
+                    $type: "outline",
+                    $indicator: $kendo-slider-draghandle-focus-outline-color,
+                    $outline-width: $kendo-slider-draghandle-focus-outline-width,
+                    $outline-offset: $kendo-slider-draghandle-focus-outline-offset
+                );
+            }
+        }
+    }
 }

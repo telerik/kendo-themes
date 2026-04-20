@@ -9,7 +9,7 @@ $kendo-bubble-border-radius: k-border-radius(xxl) !default;
 $kendo-bubble-border-radius-sm: k-border-radius(sm) !default;
 /// The vertical padding of the Bubble.
 /// @group bubble
-$kendo-bubble-padding-y: k-spacing(2.5) !default;
+$kendo-bubble-padding-y: k-spacing(3) !default;
 /// The horizontal padding of the Bubble.
 /// @group bubble
 $kendo-bubble-padding-x: k-spacing(3) !default;
@@ -25,10 +25,10 @@ $kendo-bubble-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The text color of the Bubble.
 /// @group bubble
-$kendo-bubble-text: k-color(on-app-surface) !default;
+$kendo-bubble-text: k-color(base-on-subtle) !default;
 /// The background color of the Bubble.
 /// @group bubble
-$kendo-bubble-bg: k-color(base-subtle) !default;
+$kendo-bubble-bg: k-color(base) !default;
 /// The border color of the Bubble.
 /// @group bubble
 $kendo-bubble-border: $kendo-bubble-bg !default;
@@ -38,25 +38,35 @@ $kendo-bubble-shadow: none !default;
 
 /// The background color of the hover Bubble.
 /// @group bubble
-$kendo-bubble-hover-bg: k-color(base-subtle-hover) !default;
+$kendo-bubble-hover-bg: k-color(base-hover) !default;
 /// The border color of the active Bubble.
 /// @group bubble
 $kendo-bubble-hover-border: $kendo-bubble-hover-bg !default;
 /// The background color of the active Bubble.
 /// @group bubble
-$kendo-bubble-active-bg: k-color(base-subtle-active) !default;
+$kendo-bubble-active-bg: k-color(base-active) !default;
 /// The border color of the active Bubble.
 /// @group bubble
 $kendo-bubble-active-border: $kendo-bubble-active-bg !default;
 /// The background color of the focused Bubble.
 /// @group bubble
-$kendo-bubble-focus-bg: k-color(base-subtle) !default;
+$kendo-bubble-focus-bg: k-color(base) !default;
 /// The border color of the focused Bubble.
 /// @group bubble
 $kendo-bubble-focus-border: $kendo-bubble-focus-bg !default;
 /// The box shadow of the focused Bubble.
 /// @group bubble
-$kendo-bubble-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+$kendo-bubble-focus-shadow: null !default;
+
+/// The outline color of the focused Bubble.
+/// @group bubble
+$kendo-bubble-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused Bubble.
+/// @group bubble
+$kendo-bubble-focus-outline-width: 1px !default;
+/// The outline offset of the focused Bubble.
+/// @group bubble
+$kendo-bubble-focus-outline-offset: 1px !default;
 
 /// The spacing between content and icon in expandable Bubble.
 /// @group bubble

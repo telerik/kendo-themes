@@ -40,6 +40,7 @@
         margin-left: $kendo-label-optional-margin-x;
         font-size: $kendo-label-optional-font-size;
         font-style: $kendo-label-optional-font-style;
+        font-weight: $kendo-label-optional-font-weight;
         align-self: center;
     }
 
@@ -62,6 +63,9 @@
             margin-block-end: $kendo-form-label-margin-bottom;
             display: flex;
             flex-flow: row nowrap;
+            font-size: $kendo-label-font-size;
+            font-weight: $kendo-label-font-weight;
+            line-height: $kendo-label-line-height;
         }
 
         .k-label + .k-radio {
@@ -81,6 +85,7 @@
             border-style: $kendo-form-legend-border-style;
             width: $kendo-form-legend-width;
             font-size: $kendo-form-legend-font-size;
+            font-weight: $kendo-form-legend-font-weight;
             text-transform: $kendo-form-legend-text-transform;
         }
 

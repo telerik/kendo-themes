@@ -317,7 +317,13 @@ $kendo-list-item-focus-bg: null !default;
 $kendo-list-item-focus-text: null !default;
 /// The box shadow of the focused List items.
 /// @group list
-$kendo-list-item-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
+$kendo-list-item-focus-shadow: null !default;
+/// The outline color of the focused List items.
+/// @group list
+$kendo-list-item-focus-outline-color: k-color(subtle) !default;
+/// The outline offset of the focused List items.
+/// @group list
+$kendo-list-item-focus-outline-offset: 1px !default;
 
 /// The background color of the selected List items.
 /// @group list

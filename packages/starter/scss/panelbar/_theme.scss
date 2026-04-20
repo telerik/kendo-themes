@@ -1,6 +1,37 @@
 @use "@progress/kendo-theme-core/scss/components/panelbar/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-panelbar--theme() {
     @include kendo-panelbar--theme-base();
+
+    .k-panelbar {
+
+        // Root header focus
+        > .k-panelbar-header {
+            > .k-link:focus,
+            > .k-link.k-focus {
+                @include focus-indicator(
+                    $type: "outline",
+                    $indicator: $kendo-panelbar-header-focus-outline-color,
+                    $outline-width: $kendo-panelbar-header-focus-outline-width,
+                    $outline-offset: $kendo-panelbar-header-focus-outline-offset
+                );
+            }
+        }
+
+        // Child item focus
+        .k-panelbar-group > .k-panelbar-item {
+            > .k-link:focus,
+            > .k-link.k-focus {
+                @include focus-indicator(
+                    $type: "outline",
+                    $indicator: $kendo-panelbar-item-focus-outline-color,
+                    $outline-width: $kendo-panelbar-item-focus-outline-width,
+                    $outline-offset: $kendo-panelbar-item-focus-outline-offset
+                );
+            }
+        }
+    }
 }

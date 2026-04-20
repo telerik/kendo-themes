@@ -62,10 +62,10 @@ $kendo-checkbox-hover-border: null !default;
 
 /// The background color of the checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-checked-bg: k-color(primary) !default;
+$kendo-checkbox-checked-bg: k-color(secondary) !default;
 /// The text color of the checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-checked-text: k-color(on-primary) !default;
+$kendo-checkbox-checked-text: k-color(on-secondary) !default;
 /// The border color of the checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
@@ -85,13 +85,33 @@ $kendo-checkbox-indeterminate-border: $kendo-checkbox-border !default;
 $kendo-checkbox-focus-border: null !default;
 /// The box shadow of the focused CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-shadow: 0 0 0 2px k-color(border) !default;
+$kendo-checkbox-focus-shadow: none !default;
 /// The border color of the focused and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-focus-checked-border: null !default;
 /// The box shadow of the focused and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-checked-shadow: 0 0 0 2px color-mix(in srgb, k-color(primary) 30%, transparent) !default;
+$kendo-checkbox-focus-checked-shadow: none !default;
+
+/// The outline color of the focused CheckBox.
+/// @group checkbox
+$kendo-checkbox-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused CheckBox.
+/// @group checkbox
+$kendo-checkbox-focus-outline-width: 1px !default;
+/// The outline offset of the focused CheckBox.
+/// @group checkbox
+$kendo-checkbox-focus-outline-offset: 1px !default;
+
+/// The outline color of the focused and checked CheckBox.
+/// @group checkbox
+$kendo-checkbox-focus-checked-outline-color: k-color(secondary-on-surface) !default;
+/// The outline width of the focused and checked CheckBox.
+/// @group checkbox
+$kendo-checkbox-focus-checked-outline-width: 1px !default;
+/// The outline offset of the focused and checked CheckBox.
+/// @group checkbox
+$kendo-checkbox-focus-checked-outline-offset: 1px !default;
 
 /// The background color of the disabled CheckBox.
 /// @group checkbox

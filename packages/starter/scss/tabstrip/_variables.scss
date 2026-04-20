@@ -75,7 +75,7 @@ $kendo-tabstrip-border: k-color(border) !default;
 $kendo-tabstrip-item-border-width: 1px !default;
 /// The border radius of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-border-radius: k-border-radius(md) !default;
+$kendo-tabstrip-item-border-radius: k-border-radius(xl) !default;
 /// The gap between the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-gap: k-spacing(0) !default;
@@ -90,7 +90,7 @@ $kendo-tabstrip-sm-item-padding-y: k-spacing(1) !default;
 $kendo-tabstrip-md-item-padding-x: k-spacing(3) !default;
 /// The vertical padding of the medium TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-md-item-padding-y: k-spacing(1.5) !default;
+$kendo-tabstrip-md-item-padding-y: k-spacing(2) !default;
 /// The horizontal padding of the large TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-lg-item-padding-x: k-spacing(3) !default;
@@ -200,6 +200,14 @@ $kendo-tabstrip-content-focus-border: k-color(on-app-surface) !default;
 /// The left and right scroll overlay of the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
+
+/// The outline width of the focused TabStrip item.
+/// @group tabstrip
+$kendo-tabstrip-item-focus-outline-width: 1px !default;
+/// The outline offset of the focused TabStrip item.
+/// @group tabstrip
+$kendo-tabstrip-item-focus-outline-offset: 1px !default;
+
 
 @forward "@progress/kendo-theme-core/scss/components/tabstrip/_variables.scss" with (
     $kendo-tabstrip-default-size: $kendo-tabstrip-default-size,

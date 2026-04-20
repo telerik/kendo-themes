@@ -40,13 +40,13 @@ $kendo-actionsheet-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the ActionSheet.
 /// @group action-sheet
-$kendo-actionsheet-bg: k-color(surface-alt) !default;
+$kendo-actionsheet-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
 /// The text color of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-text: k-color(on-app-surface) !default;
 /// The border color of the ActionSheet.
 /// @group action-sheet
-$kendo-actionsheet-border: k-color(border) !default;
+$kendo-actionsheet-border: k-elevation-border(2, k-color(border)) !default;
 /// The shadow of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-shadow: k-elevation(7) !default;
@@ -58,22 +58,25 @@ $kendo-actionsheet-shadow: k-elevation(7) !default;
 $kendo-actionsheet-titlebar-padding-x: k-spacing(4) !default;
 /// The vertical padding of the ActionSheet titlebar.
 /// @group action-sheet
-$kendo-actionsheet-titlebar-padding-y: k-spacing(2) !default;
+$kendo-actionsheet-titlebar-padding-y: k-spacing(4) !default;
 /// The width of the border around the ActionSheet titlebar.
 /// @group action-sheet
 $kendo-actionsheet-titlebar-border-width: 1px !default;
 /// The font size of the ActionSheet titlebar.
 /// @group action-sheet
-$kendo-actionsheet-titlebar-font-size: null !default;
+$kendo-actionsheet-titlebar-font-size: var(--kendo-h6-font-size) !default;
 /// The font family of the ActionSheet titlebar.
 /// @group action-sheet
 $kendo-actionsheet-titlebar-font-family: null !default;
+/// The font weight of the ActionSheet titlebar.
+/// @group action-sheet
+$kendo-actionsheet-titlebar-font-weight: var(--kendo-font-weight-medium) !default;
 /// The line height of the ActionSheet titlebar.
 /// @group action-sheet
-$kendo-actionsheet-titlebar-line-height: null !default;
+$kendo-actionsheet-titlebar-line-height: 1.2 !default;
 /// The gap of the ActionSheet titlebar.
 /// @group action-sheet
-$kendo-actionsheet-titlebar-gap: k-spacing(4) !default;
+$kendo-actionsheet-titlebar-gap: k-spacing(3) !default;
 
 /// The background color of the ActionSheet titlebar.
 /// @group action-sheet
@@ -136,7 +139,10 @@ $kendo-actionsheet-item-padding-y: k-spacing(2) !default;
 $kendo-actionsheet-item-border-width: 1px !default;
 /// The spacing between the ActionSheet items.
 /// @group action-sheet
-$kendo-actionsheet-item-spacing: k-spacing(3) !default;
+$kendo-actionsheet-item-spacing: k-spacing(2) !default;
+/// The border radius of the ActionSheet item.
+/// @group action-sheet
+$kendo-actionsheet-item-border-radius: k-border-radius(sm) !default;
 
 /// The font weight of the ActionSheet item title.
 /// @group action-sheet
@@ -147,7 +153,7 @@ $kendo-actionsheet-item-title-text-transform: null !default;
 
 /// The font size of the ActionSheet item description.
 /// @group action-sheet
-$kendo-actionsheet-item-description-font-size: .875em !default;
+$kendo-actionsheet-item-description-font-size: var(--kendo-font-size-sm) !default;
 /// The text color of the ActionSheet item description.
 /// @group action-sheet
 $kendo-actionsheet-item-description-text: k-color(subtle) !default;
@@ -156,10 +162,10 @@ $kendo-actionsheet-item-description-text: k-color(subtle) !default;
 $kendo-actionsheet-item-description-line-height: null !default;
 /// The background color of the hovered ActionSheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-bg: k-color(base-hover) !default;
+$kendo-actionsheet-item-hover-bg: k-color(primary-subtle-hover) !default;
 /// The text color of the hovered ActionSheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-text: null !default;
+$kendo-actionsheet-item-hover-text: k-color(primary-on-subtle) !default;
 /// The border color of the hovered ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-hover-border: null !default;
@@ -210,7 +216,7 @@ $kendo-actionsheet-item-hover-background: null !default;
 $kendo-actionsheet-item-focus-background: null !default;
 /// The opacity of the disabled ActionSheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-disabled-opacity: null !default;
+$kendo-actionsheet-item-disabled-opacity: 0.6 !default;
 
 // Adaptive Actionsheet
 /// The font size of the adaptive ActionSheet.
@@ -264,6 +270,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-titlebar-border-width: $kendo-actionsheet-titlebar-border-width,
     $kendo-actionsheet-titlebar-font-size: $kendo-actionsheet-titlebar-font-size,
     $kendo-actionsheet-titlebar-font-family: $kendo-actionsheet-titlebar-font-family,
+    $kendo-actionsheet-titlebar-font-weight: $kendo-actionsheet-titlebar-font-weight,
     $kendo-actionsheet-titlebar-line-height: $kendo-actionsheet-titlebar-line-height,
     $kendo-actionsheet-titlebar-gap: $kendo-actionsheet-titlebar-gap,
     $kendo-actionsheet-titlebar-bg: $kendo-actionsheet-titlebar-bg,
@@ -285,6 +292,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-item-padding-y: $kendo-actionsheet-item-padding-y,
     $kendo-actionsheet-item-border-width: $kendo-actionsheet-item-border-width,
     $kendo-actionsheet-item-spacing: $kendo-actionsheet-item-spacing,
+    $kendo-actionsheet-item-border-radius: $kendo-actionsheet-item-border-radius,
     $kendo-actionsheet-item-title-font-weight: $kendo-actionsheet-item-title-font-weight,
     $kendo-actionsheet-item-title-text-transform: $kendo-actionsheet-item-title-text-transform,
     $kendo-actionsheet-item-description-font-size: $kendo-actionsheet-item-description-font-size,

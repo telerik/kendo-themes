@@ -1,6 +1,11 @@
 @use "@progress/kendo-theme-core/scss/components/filter/_layout.scss" as *;
+@use "../core/index.scss" as *;
 
 
 @mixin kendo-filter--layout() {
     @include kendo-filter--layout-base();
+
+    .k-filter-menu-container .k-toolbar {
+        transition: outline k-transition(snappy);
+    }
 }

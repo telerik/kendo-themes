@@ -7,6 +7,7 @@
     .k-expander {
         border-width: $kendo-expander-border-width;
         border-style: solid;
+        border-radius: $kendo-expander-border-radius;
         box-sizing: border-box;
         overflow: hidden;
         outline: 0;
@@ -42,8 +43,8 @@
 
     // Title
     .k-expander-title {
-        text-transform: uppercase;
-        font-weight: 500;
+        text-transform: $kendo-expander-title-text-transform;
+        font-weight: $kendo-expander-title-font-weight;
     }
 
     // Expand / collapse icon

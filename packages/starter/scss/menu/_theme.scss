@@ -1,6 +1,16 @@
 @use "@progress/kendo-theme-core/scss/components/menu/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-menu--theme() {
     @include kendo-menu--theme-base();
+
+    .k-menu:not(.k-context-menu) > .k-item:focus,
+    .k-menu:not(.k-context-menu) > .k-item.k-focus,
+    .k-menu-group .k-item:focus > .k-link,
+    .k-menu-group .k-item.k-focus > .k-link {
+        @include focus-indicator( $kendo-menu-focus-outline-color, $type: "outline", $outline-offset: $kendo-menu-focus-outline-offset );
+    }
+
 }

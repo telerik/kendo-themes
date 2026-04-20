@@ -1,6 +1,11 @@
 @use "@progress/kendo-theme-core/scss/components/spreadsheet/_layout.scss" as *;
+@use "../core/index.scss" as *;
 
 
 @mixin kendo-spreadsheet--layout() {
     @include kendo-spreadsheet--layout-base();
+
+    .k-spreadsheet-active-cell {
+        transition: outline k-transition(snappy);
+    }
 }

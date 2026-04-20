@@ -3,4 +3,8 @@
 
 @mixin kendo-treelist--layout() {
     @include kendo-treelist--layout-base();
+
+    .k-property-grid {
+        border-radius: 0;
+    }
 }

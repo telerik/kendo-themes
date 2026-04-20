@@ -16,7 +16,7 @@ $kendo-window-default-theme-color: null !default;
 
 /// The width of the border around the Window.
 /// @group window
-$kendo-window-border-width: 0px !default;
+$kendo-window-border-width: 1px !default;
 /// The border radius of the Window.
 /// @group window
 $kendo-window-border-radius: k-border-radius(xxl) !default;
@@ -52,7 +52,7 @@ $kendo-window-title-line-height: calc( var( --kendo-line-height-xs, 1 ) * 1.2 ) 
 
 /// The spacing between the buttons in the Window titlebar.
 /// @group window
-$kendo-window-actions-gap: null !default;
+$kendo-window-actions-gap: k-spacing(1) !default;
 /// The opacity of the buttons in the Window titlebar.
 /// @group window
 $kendo-window-action-opacity: null !default;
@@ -79,23 +79,23 @@ $kendo-window-buttongroup-border-width: 0 !default;
 
 /// The background color of the Window.
 /// @group window
-$kendo-window-bg: k-color(surface-alt) !default;
+$kendo-window-bg: k-elevation-bg(3, k-color(surface-alt)) !default;
 /// The text color of the Window.
 /// @group window
 $kendo-window-text: k-color(on-app-surface) !default;
 /// The border color of the Window.
 /// @group window
-$kendo-window-border: k-color(border) !default;
+$kendo-window-border: k-elevation-border(3, k-color(border)) !default;
 /// The box shadow of the Window.
 /// @group window
-$kendo-window-shadow: k-elevation(8) !default;
+$kendo-window-shadow: k-elevation(3) !default;
 /// The box shadow of the focused Window.
 /// @group window
-$kendo-window-focus-shadow: k-elevation(9) !default;
+$kendo-window-focus-shadow: k-elevation(5) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: k-color(surface) !default;
+$kendo-window-titlebar-bg: k-elevation-bg(3, k-color(surface-alt)) !default;
 /// The text color of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-text: k-color(on-app-surface) !default;

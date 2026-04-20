@@ -44,6 +44,9 @@ $kendo-scrollview-pagebutton-primary-border: k-color(primary) !default;
 /// The box shadow of the ScrollView page button.
 /// @group scrollview
 $kendo-scrollview-pagebutton-shadow: 0 0 0 2px k-color(border-alt) !default;
+/// The box shadow of the selected ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 /// The offset of the ScrollView pager.
 /// @group scrollview
@@ -102,6 +105,7 @@ $kendo-scrollview-transition-timing-function: ease-in-out !default;
     $kendo-scrollview-pagebutton-primary-bg: $kendo-scrollview-pagebutton-primary-bg,
     $kendo-scrollview-pagebutton-primary-border: $kendo-scrollview-pagebutton-primary-border,
     $kendo-scrollview-pagebutton-shadow: $kendo-scrollview-pagebutton-shadow,
+    $kendo-scrollview-pagebutton-primary-shadow: $kendo-scrollview-pagebutton-primary-shadow,
     $kendo-scrollview-pager-offset: $kendo-scrollview-pager-offset,
     $kendo-scrollview-pager-item-spacing: $kendo-scrollview-pager-item-spacing,
     $kendo-scrollview-pager-item-border-width: $kendo-scrollview-pager-item-border-width,

@@ -1,6 +1,11 @@
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/chat/_layout.scss" as *;
 
 
 @mixin kendo-chat--layout() {
     @include kendo-chat--layout-base();
+
+    .k-message-list-content {
+        padding-block-end: k-spacing(2);
+    }
 }

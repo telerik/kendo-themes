@@ -50,7 +50,7 @@ $kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-y !defa
 $kendo-orgchart-node-group-border-width: 1px !default;
 /// The border radius of the OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-border-radius: k-border-radius(md) !default;
+$kendo-orgchart-node-group-border-radius: k-border-radius(xxl) !default;
 /// The background color of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-bg: k-color(surface) !default;
@@ -70,10 +70,10 @@ $kendo-orgchart-node-group-focus-shadow: k-elevation(1) !default;
 
 /// The font size of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
 /// The bottom margin of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-margin-bottom: calc( #{$kendo-orgchart-spacer} / 3 ) !default;
+$kendo-orgchart-node-group-title-margin-bottom: k-spacing(1.5) !default;
 /// The line height of the OrgChart node group title.
 /// @group orgchart
 $kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-sm, normal ) !default;
@@ -96,7 +96,7 @@ $kendo-orgchart-card-width: 300px !default;
 $kendo-orgchart-card-border-width: $kendo-card-border-width !default;
 /// The shadow of the OrgChart Card.
 /// @group orgchart
-$kendo-orgchart-card-shadow: $kendo-card-shadow !default;
+$kendo-orgchart-card-shadow: k-elevation(2) !default;
 /// The shadow of the focused OrgChart Card.
 /// @group orgchart
 $kendo-orgchart-card-focus-shadow: k-elevation(1) !default;
@@ -106,7 +106,7 @@ $kendo-orgchart-card-focus-shadow: k-elevation(1) !default;
 $kendo-orgchart-card-title-margin-bottom: k-spacing(0) !default;
 /// The font size of the OrgChart Card title.
 /// @group orgchart
-$kendo-orgchart-card-title-font-size: null !default;
+$kendo-orgchart-card-title-font-size: var( --kendo-h6-font-size ) !default;
 
 /// The bottom margin of the OrgChart Card subtitle.
 /// @group orgchart

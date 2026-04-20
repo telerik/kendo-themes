@@ -1,6 +1,21 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/grid/_layout.scss" as *;
 
 
 @mixin kendo-grid--layout() {
     @include kendo-grid--layout-base();
+
+    // Add vertical border to locked and sticky columns
+    .k-grid-content-locked,
+    .k-grid-footer-locked,
+    .k-grid-header-locked {
+        border-inline-end-width: 1px;
+    }
+
+    .k-grid .k-table .k-grid-header-sticky,
+    .k-grid .k-table .k-grid-content-sticky,
+    .k-grid .k-table .k-grid-footer-sticky {
+        border-inline-end-width: 1px;
+    }
 }

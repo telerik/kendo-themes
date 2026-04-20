@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "../core/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
 @use "../core/functions/index.scss" as *;
 @use "../input/_variables.scss" as *;
@@ -9,6 +10,8 @@
     @include kendo-input--layout-base();
 
     .k-input {
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid), opacity k-transition(rapid);
+
         .k-input-button,
         .k-input-spinner {
             // border-inline-start-width: 0;

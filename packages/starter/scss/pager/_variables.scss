@@ -62,7 +62,7 @@ $kendo-pager-font-size: var( --kendo-font-size ) !default;
 $kendo-pager-line-height: var( --kendo-line-height ) !default;
 /// The background color of the Pager.
 /// @group pager
-$kendo-pager-bg: k-color(surface) !default;
+$kendo-pager-bg: k-color(surface-alt) !default;
 /// The text color of the Pager.
 /// @group pager
 $kendo-pager-text: k-color(on-app-surface) !default;
@@ -83,6 +83,10 @@ $kendo-pager-item-border-width: 0px !default;
 /// The spacing around the Pager items.
 /// @group pager
 $kendo-pager-item-spacing: null !default;
+
+/// The border radius of the Pager numbers.
+/// @group pager
+$kendo-pager-number-border-radius: k-border-radius( md ) !default;
 
 /// The width of the Inputs in the Pager.
 /// @group pager

@@ -88,6 +88,26 @@ $kendo-radio-focus-checked-border: $kendo-checkbox-focus-checked-border !default
 /// @group radio
 $kendo-radio-focus-checked-shadow: $kendo-checkbox-focus-checked-shadow !default;
 
+/// The outline color of the focused RadioButton.
+/// @group radio
+$kendo-radio-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused RadioButton.
+/// @group radio
+$kendo-radio-focus-outline-width: 1px !default;
+/// The outline offset of the focused RadioButton.
+/// @group radio
+$kendo-radio-focus-outline-offset: 1px !default;
+
+/// The outline color of the focused and checked RadioButton.
+/// @group radio
+$kendo-radio-focus-checked-outline-color: k-color(secondary-on-surface) !default;
+/// The outline width of the focused and checked RadioButton.
+/// @group radio
+$kendo-radio-focus-checked-outline-width: 1px !default;
+/// The outline offset of the focused and checked RadioButton.
+/// @group radio
+$kendo-radio-focus-checked-outline-offset: 1px !default;
+
 /// The background color of the disabled RadioButton.
 /// @group radio
 $kendo-radio-disabled-bg: $kendo-checkbox-disabled-bg !default;
@@ -113,7 +133,7 @@ $kendo-radio-disabled-checked-border: $kendo-checkbox-disabled-checked-border !d
 $kendo-radio-invalid-text: $kendo-checkbox-invalid-text !default;
 /// The border color of the invalid RadioButton.
 /// @group radio
-$kendo-radio-invalid-border: $kendo-checkbox-invalid-border !default;
+$kendo-radio-invalid-border: k-color(error) !default;
 
 
 // Radio indicator

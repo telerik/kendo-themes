@@ -33,13 +33,13 @@ $kendo-taskboard-border: null !default;
 
 /// The vertical padding of the TaskBoard Toolbar.
 /// @group taskboard
-$kendo-taskboard-toolbar-padding-y: $kendo-taskboard-spacer !default;
+$kendo-taskboard-toolbar-padding-y: calc( #{$kendo-taskboard-spacer} * .625 ) !default;
 /// The horizontal padding of the TaskBoard Toolbar.
 /// @group taskboard
 $kendo-taskboard-toolbar-padding-x: $kendo-taskboard-toolbar-padding-y !default;
 /// The background color of the TaskBoard Toolbar.
 /// @group taskboard
-$kendo-taskboard-toolbar-bg: null !default;
+$kendo-taskboard-toolbar-bg: k-color(surface-alt) !default;
 /// The text color of the TaskBoard Toolbar.
 /// @group taskboard
 $kendo-taskboard-toolbar-text: null !default;
@@ -75,7 +75,7 @@ $kendo-taskboard-column-width: 320px !default;
 $kendo-taskboard-column-border-width: 1px !default;
 /// The border radius of the TaskBoard column.
 /// @group taskboard
-$kendo-taskboard-column-border-radius: k-border-radius(md) !default;
+$kendo-taskboard-column-border-radius: k-border-radius(xxl) !default;
 /// The background color of the TaskBoard column.
 /// @group taskboard
 $kendo-taskboard-column-bg: k-color(surface) !default;
@@ -98,16 +98,16 @@ $kendo-taskboard-column-focus-border: k-color(border-alt) !default;
 
 /// The vertical padding of the TaskBoard column header.
 /// @group taskboard
-$kendo-taskboard-column-header-padding-y: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
+$kendo-taskboard-column-header-padding-y: $kendo-taskboard-spacer !default;
 /// The horizontal padding of the TaskBoard column header.
 /// @group taskboard
 $kendo-taskboard-column-header-padding-x: $kendo-taskboard-column-header-padding-y !default;
 /// The spacing of the TaskBoard column header.
 /// @group taskboard
-$kendo-taskboard-column-header-gap: calc( #{$kendo-taskboard-spacer} / 4 ) !default;
+$kendo-taskboard-column-header-gap: calc( #{$kendo-taskboard-spacer} * .625 ) !default;
 /// The spacing of the TaskBoard column header actions.
 /// @group taskboard
-$kendo-taskboard-column-header-actions-gap: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
+$kendo-taskboard-column-header-actions-gap: k-spacing(2) !default;
 /// The font weight of the TaskBoard column header.
 /// @group taskboard
 $kendo-taskboard-column-header-font-weight: 500 !default;
@@ -137,6 +137,9 @@ $kendo-taskboard-pane-padding-x: null !default;
 /// The border width of the TaskBoard pane.
 /// @group taskboard
 $kendo-taskboard-pane-border-width: 1px !default;
+/// The border radius of the TaskBoard pane.
+/// @group taskboard
+$kendo-taskboard-pane-border-radius: k-border-radius(xxl) !default;
 /// The background color of the TaskBoard pane.
 /// @group taskboard
 $kendo-taskboard-pane-bg: k-color(surface-alt) !default;
@@ -149,7 +152,7 @@ $kendo-taskboard-pane-border: k-color(border) !default;
 
 /// The vertical padding of the TaskBoard pane header.
 /// @group taskboard
-$kendo-taskboard-pane-header-padding-y: calc( #{$kendo-taskboard-spacer} * .75 ) !default;
+$kendo-taskboard-pane-header-padding-y: $kendo-taskboard-spacer !default;
 /// The horizontal padding of the TaskBoard pane header.
 /// @group taskboard
 $kendo-taskboard-pane-header-padding-x: $kendo-taskboard-spacer !default;
@@ -185,13 +188,13 @@ $kendo-taskboard-card-padding-x: $kendo-taskboard-card-padding-y !default;
 $kendo-taskboard-card-border-width: $kendo-card-border-width !default;
 /// The border radius of the TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-border-radius: k-border-radius(md) !default;
+$kendo-taskboard-card-border-radius: k-border-radius(xxl) !default;
 /// The shadow of the TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-shadow: $kendo-card-shadow !default;
+$kendo-taskboard-card-shadow: none !default;
 /// The background color of the TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-bg: $kendo-card-bg !default;
+$kendo-taskboard-card-bg: k-color(surface-alt) !default;
 /// The text color of the TaskBoard Card.
 /// @group taskboard
 $kendo-taskboard-card-text: $kendo-card-text !default;
@@ -216,7 +219,7 @@ $kendo-taskboard-card-focus-shadow: none !default;
 
 /// The border of the selected TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-selected-border: k-color(primary-emphasis) !default;
+$kendo-taskboard-card-selected-border: k-color(primary) !default;
 /// The shadow of the selected TaskBoard Card.
 /// @group taskboard
 $kendo-taskboard-card-selected-shadow: none !default;
@@ -230,6 +233,16 @@ $kendo-taskboard-card-header-hover-text: k-color(primary-hover) !default;
 /// The text color of the focused TaskBoard Card header text.
 /// @group taskboard
 $kendo-taskboard-card-header-focus-text: k-color(primary-hover) !default;
+
+/// The outline color of the focused TaskBoard Card.
+/// @group taskboard
+$kendo-taskboard-card-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused TaskBoard Card.
+/// @group taskboard
+$kendo-taskboard-card-focus-outline-width: 1px !default;
+/// The outline offset of the focused TaskBoard Card.
+/// @group taskboard
+$kendo-taskboard-card-focus-outline-offset: 1px !default;
 
 /// The border width of the TaskBoard Card placeholder.
 /// @group taskboard
@@ -287,6 +300,7 @@ $kendo-taskboard-drag-placeholder-border: k-color(border) !default;
     $kendo-taskboard-pane-padding-y: $kendo-taskboard-pane-padding-y,
     $kendo-taskboard-pane-padding-x: $kendo-taskboard-pane-padding-x,
     $kendo-taskboard-pane-border-width: $kendo-taskboard-pane-border-width,
+    $kendo-taskboard-pane-border-radius: $kendo-taskboard-pane-border-radius,
     $kendo-taskboard-pane-bg: $kendo-taskboard-pane-bg,
     $kendo-taskboard-pane-text: $kendo-taskboard-pane-text,
     $kendo-taskboard-pane-border: $kendo-taskboard-pane-border,

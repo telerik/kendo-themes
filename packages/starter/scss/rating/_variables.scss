@@ -40,20 +40,30 @@ $kendo-rating-label-line-height: var( --kendo-line-height-lg, normal ) !default;
 $kendo-rating-icon-text: k-color(on-app-surface) !default;
 /// The text color of the selected Rating icon.
 /// @group rating
-$kendo-rating-icon-selected-text: k-color(primary) !default;
+$kendo-rating-icon-selected-text: k-color(secondary) !default;
 /// The text color of the hovered Rating icon.
 /// @group rating
-$kendo-rating-icon-hover-text: k-color(primary) !default;
+$kendo-rating-icon-hover-text: k-color(secondary) !default;
 /// The text color of the focused Rating icon.
 /// @group rating
-$kendo-rating-icon-focus-text: k-color(primary) !default;
+$kendo-rating-icon-focus-text: k-color(secondary) !default;
 
 /// The shadow of the focused Rating icon.
 /// @group rating
-$kendo-rating-icon-focus-shadow: k-elevation(1) !default;
+$kendo-rating-icon-focus-shadow: none !default;
 /// The shadow of the focused and selected Rating icon.
 /// @group rating
-$kendo-rating-icon-focus-selected-shadow: k-elevation(1) !default;
+$kendo-rating-icon-focus-selected-shadow: none !default;
+
+/// The outline color of the focused Rating.
+/// @group rating
+$kendo-rating-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused Rating.
+/// @group rating
+$kendo-rating-focus-outline-width: 1px !default;
+/// The outline offset of the focused Rating.
+/// @group rating
+$kendo-rating-focus-outline-offset: 1px !default;
 
 @forward "@progress/kendo-theme-core/scss/components/rating/_variables.scss" with (
     $kendo-rating-font-family: $kendo-rating-font-family,

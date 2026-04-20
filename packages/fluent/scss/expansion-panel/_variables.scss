@@ -7,6 +7,9 @@ $kendo-expander-margin-y: var( --kendo-expander-margin-y, k-spacing(2) ) !defaul
 /// The width of the border around the ExpansionPanel.
 /// @group expander
 $kendo-expander-border-width: var( --kendo-expander-border-width, 1px ) !default;
+/// The border radius of the ExpansionPanel.
+/// @group expander
+$kendo-expander-border-radius: null !default;
 /// The font family of the ExpansionPanel.
 /// @group expander
 $kendo-expander-font-family: var( --kendo-expander-font-family, var(--kendo-font-family) ) !default;
@@ -70,6 +73,12 @@ $kendo-expander-header-bg: var( --kendo-expander-header-bg, inherit ) !default;
 /// @group expander
 $kendo-expander-header-hover-bg: var( --kendo-expander-header-hover-bg, k-color(base-hover) ) !default;
 
+/// The font weight of the ExpansionPanel title.
+/// @group expander
+$kendo-expander-title-font-weight: null !default;
+/// The text transform of the ExpansionPanel title.
+/// @group expander
+$kendo-expander-title-text-transform: null !default;
 /// The text color of the ExpansionPanel title.
 /// @group expander
 $kendo-expander-title-text: var( --kendo-expander-title-text, k-color(on-app-surface) ) !default;
@@ -94,6 +103,7 @@ $kendo-expander-content-padding-y: var( --kendo-expander-content-padding-y, k-sp
 
 @forward "@progress/kendo-theme-core/scss/components/expansion-panel/_variables.scss" with (
     $kendo-expander-border-width: $kendo-expander-border-width,
+    $kendo-expander-border-radius: $kendo-expander-border-radius,
     $kendo-expander-font-family: $kendo-expander-font-family,
     $kendo-expander-font-size: $kendo-expander-font-size,
     $kendo-expander-line-height: $kendo-expander-line-height,
@@ -106,6 +116,8 @@ $kendo-expander-content-padding-y: var( --kendo-expander-content-padding-y, k-sp
     $kendo-expander-header-text: $kendo-expander-header-text,
     $kendo-expander-header-bg: $kendo-expander-header-bg,
     $kendo-expander-header-hover-bg: $kendo-expander-header-hover-bg,
+    $kendo-expander-title-font-weight: $kendo-expander-title-font-weight,
+    $kendo-expander-title-text-transform: $kendo-expander-title-text-transform,
     $kendo-expander-title-text: $kendo-expander-title-text,
     $kendo-expander-header-sub-title-text: $kendo-expander-header-sub-title-text,
     $kendo-expander-indicator-margin-x: $kendo-expander-indicator-margin-x,

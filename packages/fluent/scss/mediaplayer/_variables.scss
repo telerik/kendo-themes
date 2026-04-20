@@ -41,6 +41,15 @@ $kendo-media-player-titlebar-padding-x: var( --kendo-media-player-titlebar-paddi
 /// The vertical padding of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-padding-y: var( --kendo-media-player-titlebar-padding-y, k-spacing(2) ) !default;
+/// The font size of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-font-size: var( --kendo-media-player-titlebar-font-size, null ) !default;
+/// The font weight of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-font-weight: var( --kendo-media-player-titlebar-font-weight, null ) !default;
+/// The line height of the MediaPlayer title.
+/// @group mediaplayer
+$kendo-media-player-titlebar-line-height: var( --kendo-media-player-titlebar-line-height, null ) !default;
 /// The background color of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-bg: var( --kendo-media-player-titlebar-bg, color-mix(in srgb, k-color(on-app-surface) 40%, transparent) ) !default;
@@ -58,5 +67,8 @@ $kendo-media-player-titlebar-text: var( --kendo-media-player-titlebar-text, $ken
     $kendo-media-player-border: $kendo-media-player-border,
     $kendo-media-player-titlebar-padding-x: $kendo-media-player-titlebar-padding-x,
     $kendo-media-player-titlebar-padding-y: $kendo-media-player-titlebar-padding-y,
+    $kendo-media-player-titlebar-font-size: $kendo-media-player-titlebar-font-size,
+    $kendo-media-player-titlebar-font-weight: $kendo-media-player-titlebar-font-weight,
+    $kendo-media-player-titlebar-line-height: $kendo-media-player-titlebar-line-height,
     $kendo-media-player-titlebar-text: $kendo-media-player-titlebar-text
 );

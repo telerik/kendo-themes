@@ -47,6 +47,27 @@ $kendo-table-lg-cell-padding-x: k-spacing(2) !default;
 /// @group table
 $kendo-table-lg-cell-padding-y: k-spacing(2.5) !default;
 
+/// The font size of the Table for small size.
+/// @group table
+$kendo-table-sm-font-size: var(--kendo-font-size) !default;
+/// The line height of the Table for small size.
+/// @group table
+$kendo-table-sm-line-height: var(--kendo-line-height) !default;
+
+/// The font size of the Table for medium size.
+/// @group table
+$kendo-table-md-font-size: var(--kendo-font-size) !default;
+/// The line height of the Table for medium size.
+/// @group table
+$kendo-table-md-line-height: var(--kendo-line-height) !default;
+
+/// The font size of the Table for large size.
+/// @group table
+$kendo-table-lg-font-size: var(--kendo-font-size) !default;
+/// The line height of the Table for large size.
+/// @group table
+$kendo-table-lg-line-height: var(--kendo-line-height) !default;
+
 /// Background color of tables.
 /// @group table
 $kendo-table-bg: k-color(surface-alt) !default;
@@ -169,6 +190,12 @@ $kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;
     $kendo-table-md-cell-padding-y: $kendo-table-md-cell-padding-y,
     $kendo-table-lg-cell-padding-x: $kendo-table-lg-cell-padding-x,
     $kendo-table-lg-cell-padding-y: $kendo-table-lg-cell-padding-y,
+    $kendo-table-sm-font-size: $kendo-table-sm-font-size,
+    $kendo-table-sm-line-height: $kendo-table-sm-line-height,
+    $kendo-table-md-font-size: $kendo-table-md-font-size,
+    $kendo-table-md-line-height: $kendo-table-md-line-height,
+    $kendo-table-lg-font-size: $kendo-table-lg-font-size,
+    $kendo-table-lg-line-height: $kendo-table-lg-line-height,
     $kendo-table-bg: $kendo-table-bg,
     $kendo-table-text: $kendo-table-text,
     $kendo-table-border: $kendo-table-border,

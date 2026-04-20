@@ -1,6 +1,12 @@
 @use "@progress/kendo-theme-core/scss/components/tilelayout/_layout.scss" as *;
+@use "../core/mixins/index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-tile-layout--layout() {
     @include kendo-tile-layout--layout-base();
+
+    .k-tilelayout .k-card {
+        @include box-shadow( $kendo-tile-layout-card-shadow );
+    }
 }

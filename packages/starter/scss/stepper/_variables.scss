@@ -70,7 +70,7 @@ $kendo-stepper-indicator-height: $kendo-stepper-indicator-width !default;
 $kendo-stepper-indicator-border-width: 1px !default;
 /// The border radius of the Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-border-radius: 50% !default;
+$kendo-stepper-indicator-border-radius: k-border-radius(full) !default;
 
 /// The border width of the focused Stepper indicator.
 /// @group stepper
@@ -117,30 +117,30 @@ $kendo-stepper-indicator-disabled-border: null !default;
 
 /// The background color of the Stepper's done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-bg: k-color(primary) !default;
+$kendo-stepper-indicator-done-bg: k-color(secondary) !default;
 /// The text color of the Stepper's done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-text: k-color(on-primary) !default;
+$kendo-stepper-indicator-done-text: k-color(on-secondary) !default;
 /// The border color of the Stepper's done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
 
 /// The background color of the Stepper's hovered done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-hover-bg: k-color(primary-hover) !default;
+$kendo-stepper-indicator-done-hover-bg: k-color(secondary-hover) !default;
 /// The text color of the Stepper's hovered done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-hover-text: null !default;
 /// The border color of the Stepper's hovered done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-hover-border: null !default;
+$kendo-stepper-indicator-done-hover-border: k-color(secondary-hover) !default;
 
 /// The background color of the Stepper's disabled done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-disabled-bg: color-mix(in srgb, k-color(primary) 60%, transparent) !default;
+$kendo-stepper-indicator-done-disabled-bg: color-mix(in srgb, k-color(secondary) 60%, transparent) !default;
 /// The text color of the Stepper's disabled done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-disabled-text: k-color(on-primary) !default;
+$kendo-stepper-indicator-done-disabled-text: k-color(on-secondary) !default;
 /// The border color of the Stepper's disabled done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-disabled-border: $kendo-stepper-indicator-done-disabled-bg !default;
@@ -178,6 +178,9 @@ $kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-done-
 /// The text color of the Stepper label.
 /// @group stepper
 $kendo-stepper-label-text: null !default;
+/// The font weight of the current Stepper label.
+/// @group stepper
+$kendo-stepper-label-current-font-weight: var(--kendo-font-weight-semibold) !default;
 /// The success text color of the Stepper label.
 /// @group stepper
 $kendo-stepper-label-success-text: k-color(success-on-surface) !default;
@@ -209,13 +212,13 @@ $kendo-stepper-optional-label-font-style: italic !default;
 $kendo-stepper-progressbar-size: 2px !default;
 /// The background color of the Stepper ProgressBar.
 /// @group stepper
-$kendo-stepper-progressbar-bg: null !default;
+$kendo-stepper-progressbar-bg: k-color( base-subtle ) !default;
 /// The text color of the Stepper ProgressBar.
 /// @group stepper
 $kendo-stepper-progressbar-text: null !default;
 /// The background color of the selected Stepper ProgressBar.
 /// @group stepper
-$kendo-stepper-progressbar-fill-bg: null !default;
+$kendo-stepper-progressbar-fill-bg: k-color( secondary ) !default;
 /// The text color of the selected Stepper ProgressBar.
 /// @group stepper
 $kendo-stepper-progressbar-fill-text: null !default;
@@ -284,6 +287,7 @@ $kendo-stepper-content-transition-timing-function: k-easing(standard) !default;
     $kendo-stepper-indicator-current-disabled-text: $kendo-stepper-indicator-current-disabled-text,
     $kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-current-disabled-border,
     $kendo-stepper-label-text: $kendo-stepper-label-text,
+    $kendo-stepper-label-current-font-weight: $kendo-stepper-label-current-font-weight,
     $kendo-stepper-label-success-text: $kendo-stepper-label-success-text,
     $kendo-stepper-label-error-text: $kendo-stepper-label-error-text,
     $kendo-stepper-label-hover-text: $kendo-stepper-label-hover-text,

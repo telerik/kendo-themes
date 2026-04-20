@@ -1,6 +1,27 @@
 @use "@progress/kendo-theme-core/scss/components/panelbar/_layout.scss" as *;
+@use "../core/index.scss" as *;
+@use "./variables.scss" as *;
 
 
 @mixin kendo-panelbar--layout() {
     @include kendo-panelbar--layout-base();
+
+    .k-panelbar {
+        display: flex;
+        flex-direction: column;
+        gap: $kendo-panelbar-item-gap;
+        padding: $kendo-panelbar-padding;
+        border-radius: $kendo-panelbar-border-radius;
+
+        > .k-panelbar-header > .k-link {
+            border-radius: $kendo-panelbar-item-border-radius;
+            font-weight: $kendo-panelbar-header-font-weight;
+            transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
+        }
+
+        .k-panelbar-group > .k-panelbar-item > .k-link {
+            border-radius: $kendo-panelbar-item-border-radius;
+            transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
+        }
+    }
 }

@@ -22,6 +22,9 @@ $kendo-appbar-padding-y: var( --kendo-appbar-padding-y, k-spacing(3.5) ) !defaul
 /// The width of the border around the AppBar.
 /// @group appbar
 $kendo-appbar-border-width: var( --kendo-appbar-border-width, 0px ) !default;
+/// The border radius of the AppBar.
+/// @group appbar
+$kendo-appbar-border-radius: null !default;
 /// The z-index of the AppBar.
 /// @group appbar
 $kendo-appbar-zindex: var( --kendo-appbar-zindex, k-z-index("banner") ) !default;
@@ -55,6 +58,7 @@ $kendo-appbar-border: var( --kendo-appbar-border, color-mix(in srgb, k-color(bor
     $kendo-appbar-padding-x: $kendo-appbar-padding-x,
     $kendo-appbar-padding-y: $kendo-appbar-padding-y,
     $kendo-appbar-border-width: $kendo-appbar-border-width,
+    $kendo-appbar-border-radius: $kendo-appbar-border-radius,
     $kendo-appbar-zindex: $kendo-appbar-zindex,
     $kendo-appbar-font-family: $kendo-appbar-font-family,
     $kendo-appbar-font-size: $kendo-appbar-font-size,
