@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popover-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(2, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popover-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-elevation-border(2, k-color(border))</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-shadow</td>
     <td>String</td>
     <td><code>$kendo-popup-shadow</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Popover.</div></div>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popover-header-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-card-header-padding-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-popover-header-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-card-header-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>List</td>
+    <td><code>k-spacing(4) k-spacing(2)</code></td>
+    <td><code>(var(--kendo-spacing-4) var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover header.</div></div>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popover-header-border-width</td>
     <td>Number</td>
-    <td><code>$kendo-card-header-border-width</code></td>
+    <td><code>0</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popover-body-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-card-body-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover body.</div></div>
@@ -220,11 +220,31 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-popover-actions-border-width</td>
     <td>Number</td>
-    <td><code>$kendo-popover-border-width</code></td>
-    <td><code>1px</code></td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Popover actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popover-actions-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popover-actions-padding-y</td>
+    <td>List</td>
+    <td><code>k-spacing(2) k-spacing(4)</code></td>
+    <td><code>(var(--kendo-spacing-2) var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -271,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-callout-border</td>
     <td>String</td>
     <td><code>$kendo-popover-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover callout.</div></div>

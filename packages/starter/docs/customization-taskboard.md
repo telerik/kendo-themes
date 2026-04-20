@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-toolbar-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-taskboard-spacer</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-taskboard-spacer} * .625 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4) * 0.625)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard Toolbar.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-toolbar-padding-x</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-taskboard-toolbar-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>calc(var(--kendo-spacing-4) * 0.625)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard Toolbar.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-toolbar-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Toolbar.</div></div>
@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard column.</div></div>
@@ -319,9 +319,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-column-header-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) / 2)</code></td>
+    <td>String</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column header.</div></div>
@@ -329,9 +329,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-column-header-padding-x</td>
-    <td>Calculation</td>
+    <td>String</td>
     <td><code>$kendo-taskboard-column-header-padding-y</code></td>
-    <td><code>calc(var(--kendo-spacing-4) / 2)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard column header.</div></div>
@@ -340,8 +340,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-header-gap</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} / 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) / 4)</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} * .625 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4) * 0.625)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column header.</div></div>
@@ -349,9 +349,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-column-header-actions-gap</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column header actions.</div></div>
@@ -448,6 +448,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-taskboard-pane-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-taskboard-pane-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
@@ -479,9 +489,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-pane-header-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} * .75 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) * 0.75)</code></td>
+    <td>String</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane header.</div></div>
@@ -590,8 +600,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-card-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card.</div></div>
@@ -599,9 +609,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-card-shadow</td>
-    <td>Null</td>
-    <td><code>$kendo-card-shadow</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the TaskBoard Card.</div></div>
@@ -610,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-card-bg</td>
     <td>String</td>
-    <td><code>$kendo-card-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -631,7 +641,7 @@ The following table lists the available variables for customization.
     <td>$kendo-taskboard-card-border</td>
     <td>String</td>
     <td><code>$kendo-card-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 1 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Card.</div></div>
@@ -680,8 +690,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-card-selected-border</td>
     <td>String</td>
-    <td><code>k-color(primary-emphasis)</code></td>
-    <td><code>var(--kendo-color-primary-emphasis)</code></td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the selected TaskBoard Card.</div></div>
@@ -728,6 +738,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-taskboard-card-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-taskboard-drag-placeholder-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -741,7 +781,7 @@ The following table lists the available variables for customization.
     <td>$kendo-taskboard-drag-placeholder-border-radius</td>
     <td>String</td>
     <td><code>$kendo-taskboard-card-border-radius</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card placeholder.</div></div>

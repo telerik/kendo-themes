@@ -324,8 +324,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-actionsheet-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(2, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ActionSheet.</div></div>
@@ -344,8 +344,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-actionsheet-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-elevation-border(2, k-color(border))</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ActionSheet.</div></div>
@@ -374,8 +374,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-actionsheet-titlebar-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ActionSheet titlebar.</div></div>
@@ -393,9 +393,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-actionsheet-titlebar-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var(--kendo-h6-font-size)</code></td>
+    <td><code>var(--kendo-h6-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ActionSheet titlebar.</div></div>
@@ -412,10 +412,20 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-actionsheet-titlebar-font-weight</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the ActionSheet titlebar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-actionsheet-titlebar-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>Number</td>
+    <td><code>1.2</code></td>
+    <td><code>1.2</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ActionSheet titlebar.</div></div>
@@ -424,8 +434,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-actionsheet-titlebar-gap</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the ActionSheet titlebar.</div></div>
@@ -614,11 +624,21 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-actionsheet-item-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ActionSheet items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-item-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ActionSheet item.</div></div>
     </td>
 </tr>
 <tr>
@@ -643,9 +663,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-actionsheet-item-description-font-size</td>
-    <td>Number</td>
-    <td><code>.875em</code></td>
-    <td><code>0.875em</code></td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ActionSheet item description.</div></div>
@@ -674,8 +694,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-actionsheet-item-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover)</code></td>
+    <td><code>k-color(primary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered ActionSheet item.</div></div>
@@ -683,9 +703,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-actionsheet-item-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered ActionSheet item.</div></div>
@@ -843,9 +863,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-actionsheet-item-disabled-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>Number</td>
+    <td><code>0.6</code></td>
+    <td><code>0.6</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the disabled ActionSheet item.</div></div>
@@ -1194,8 +1214,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-appbar-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AppBar.</div></div>
@@ -1204,8 +1224,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-appbar-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AppBar.</div></div>
@@ -1219,6 +1239,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AppBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -1314,8 +1344,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-appbar-box-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>k-elevation(1)</code></td>
+    <td><code>var(--kendo-elevation-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar.</div></div>
@@ -1325,7 +1355,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-appbar-bottom-box-shadow</td>
     <td>String</td>
     <td><code>$kendo-appbar-box-shadow</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>var(--kendo-elevation-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>
@@ -1434,8 +1464,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-avatar-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Avatar.</div></div>
@@ -1454,8 +1484,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-avatar-sm-size</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small size of the Avatar.</div></div>
@@ -1474,8 +1504,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-avatar-lg-size</td>
     <td>String</td>
-    <td><code>k-spacing(16)</code></td>
-    <td><code>var(--kendo-spacing-16)</code></td>
+    <td><code>k-spacing(12)</code></td>
+    <td><code>var(--kendo-spacing-12)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large size of the Avatar.</div></div>
@@ -1489,7 +1519,7 @@ The following table lists the available variables for customizing the Starter th
     md: $kendo-avatar-md-size,
     lg: $kendo-avatar-lg-size
 )</code></td>
-    <td><ul><li>sm: var(--kendo-spacing-4)</li><li>md: var(--kendo-spacing-8)</li><li>lg: var(--kendo-spacing-16)</li></ul></td>
+    <td><ul><li>sm: var(--kendo-spacing-6)</li><li>md: var(--kendo-spacing-8)</li><li>lg: var(--kendo-spacing-12)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Avatar.</div></div>
@@ -1970,8 +2000,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-bottom-nav-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the BottomNavigation.</div></div>
@@ -1981,7 +2011,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-bottom-nav-padding-y</td>
     <td>String</td>
     <td><code>$kendo-bottom-nav-padding-x</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the BottomNavigation.</div></div>
@@ -1990,8 +2020,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-bottom-nav-gap</td>
     <td>String</td>
-    <td><code>$kendo-bottom-nav-padding-x</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the BottomNavigation items.</div></div>
@@ -2029,9 +2059,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-bottom-nav-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-line-height-xs, normal )</code></td>
-    <td><code>var(--kendo-line-height-xs, normal)</code></td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the BottomNavigation.</div></div>
@@ -2039,9 +2069,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-bottom-nav-letter-spacing</td>
-    <td>Number</td>
-    <td><code>.2px</code></td>
-    <td><code>0.2px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-letter-spacing-normal, normal )</code></td>
+    <td><code>var(--kendo-letter-spacing-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the BottomNavigation.</div></div>
@@ -2089,9 +2119,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-bottom-nav-item-min-height</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size * 2.5} + calc( #{k-spacing(2)} * 2 ) - calc( #{$kendo-bottom-nav-padding-x} * 2 ) )</code></td>
-    <td><code>calc(40px + var(--kendo-spacing-2) * 2 - var(--kendo-spacing-1) * 2)</code></td>
+    <td>Number</td>
+    <td><code>48px</code></td>
+    <td><code>48px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>
@@ -2155,6 +2185,26 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat BottomNavigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused BottomNavigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused BottomNavigation item.</div></div>
     </td>
 </tr>
 <tr>
@@ -2390,8 +2440,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-breadcrumb-md-link-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Breadcrumb link.</div></div>
@@ -2400,8 +2450,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-breadcrumb-lg-link-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Breadcrumb link.</div></div>
@@ -2460,8 +2510,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-breadcrumb-md-icon-link-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Breadcrumb link icon.</div></div>
@@ -2491,7 +2541,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-breadcrumb-md-icon-link-padding-x</td>
     <td>String</td>
     <td><code>$kendo-breadcrumb-md-icon-link-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Breadcrumb link icon.</div></div>
@@ -2520,8 +2570,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-breadcrumb-link-icon-spacing</td>
     <td>String</td>
-    <td><code>$kendo-icon-spacing</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Breadcrumb link icon.</div></div>
@@ -2619,12 +2669,32 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-link-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Breadcrumb link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-link-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Breadcrumb link.</div></div>
     </td>
 </tr>
 <tr>
@@ -2719,9 +2789,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-breadcrumb-root-link-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-breadcrumb-link-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb root link.</div></div>
@@ -2786,7 +2856,7 @@ The following table lists the available variables for customizing the Starter th
         line-height: $kendo-breadcrumb-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "link-padding-x":"var(--kendo-spacing-2)","link-padding-y":"var(--kendo-spacing-1)","icon-link-padding-x":"var(--kendo-spacing-1\\.5)","icon-link-padding-y":"var(--kendo-spacing-1\\.5)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>md: "link-padding-x":"var(--kendo-spacing-2)","link-padding-y":"var(--kendo-spacing-1\\.5)","icon-link-padding-x":"var(--kendo-spacing-2)","icon-link-padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "link-padding-x":"var(--kendo-spacing-2)","link-padding-y":"var(--kendo-spacing-2)","icon-link-padding-x":"var(--kendo-spacing-3)","icon-link-padding-y":"var(--kendo-spacing-3)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li></ul></td>
+    <td><ul><li>sm: "link-padding-x":"var(--kendo-spacing-2)","link-padding-y":"var(--kendo-spacing-1)","icon-link-padding-x":"var(--kendo-spacing-1\\.5)","icon-link-padding-y":"var(--kendo-spacing-1\\.5)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>md: "link-padding-x":"var(--kendo-spacing-2\\.5)","link-padding-y":"var(--kendo-spacing-1\\.5)","icon-link-padding-x":"var(--kendo-spacing-2\\.5)","icon-link-padding-y":"var(--kendo-spacing-2\\.5)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "link-padding-x":"var(--kendo-spacing-3)","link-padding-y":"var(--kendo-spacing-2)","icon-link-padding-x":"var(--kendo-spacing-3)","icon-link-padding-y":"var(--kendo-spacing-3)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Breadcrumb.</div></div>
@@ -2835,8 +2905,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-bubble-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Bubble.</div></div>
@@ -2885,8 +2955,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-bubble-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(base-on-subtle)</code></td>
+    <td><code>var(--kendo-color-base-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Bubble.</div></div>
@@ -2895,8 +2965,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-bubble-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>k-color(base)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Bubble.</div></div>
@@ -2906,7 +2976,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-bubble-border</td>
     <td>String</td>
     <td><code>$kendo-bubble-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Bubble.</div></div>
@@ -2925,8 +2995,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-bubble-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hover Bubble.</div></div>
@@ -2936,7 +3006,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-bubble-hover-border</td>
     <td>String</td>
     <td><code>$kendo-bubble-hover-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Bubble.</div></div>
@@ -2945,8 +3015,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-bubble-active-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle-active)</code></td>
-    <td><code>var(--kendo-color-base-subtle-active)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Bubble.</div></div>
@@ -2956,7 +3026,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-bubble-active-border</td>
     <td>String</td>
     <td><code>$kendo-bubble-active-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle-active)</code></td>
+    <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Bubble.</div></div>
@@ -2965,8 +3035,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-bubble-focus-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>k-color(base)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Bubble.</div></div>
@@ -2976,7 +3046,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-bubble-focus-border</td>
     <td>String</td>
     <td><code>$kendo-bubble-focus-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Bubble.</div></div>
@@ -2984,12 +3054,42 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-bubble-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bubble-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bubble-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bubble-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -3025,8 +3125,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-alt-bubble-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(secondary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered alt Bubble.</div></div>
@@ -3036,7 +3136,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-chat-alt-bubble-hover-border</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-hover-bg</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered alt Bubble.</div></div>
@@ -3045,8 +3145,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-alt-bubble-active-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active)</code></td>
+    <td><code>k-color(secondary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Bubble.</div></div>
@@ -3056,7 +3156,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-chat-alt-bubble-active-border</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-active-bg</code></td>
-    <td><code>var(--kendo-color-primary-active)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active alt Bubble.</div></div>
@@ -3066,7 +3166,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-chat-alt-bubble-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused alt Bubble.</div></div>
@@ -3076,7 +3176,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-chat-alt-bubble-focus-border</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-focus-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused alt Bubble.</div></div>
@@ -3084,9 +3184,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-chat-alt-bubble-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(primary) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary) 16%, transparent))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused alt Bubble.</div></div>
@@ -3404,9 +3504,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-button-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the Button.</div></div>
@@ -3454,9 +3554,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-button-hover-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the hovered Button.</div></div>
@@ -3504,9 +3604,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-button-active-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the active Button.</div></div>
@@ -3535,8 +3635,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-button-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected Button.</div></div>
@@ -3545,8 +3645,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-button-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Button.</div></div>
@@ -3554,9 +3654,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-button-selected-border</td>
-    <td>String</td>
-    <td><code>$kendo-button-selected-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Button.</div></div>
@@ -3584,12 +3684,32 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-button-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3700,6 +3820,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-outline-button-border</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(base-emphasis) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3969,9 +4099,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-calendar-border-radius</td>
-    <td>Number</td>
-    <td><code>0</code></td>
-    <td><code>0</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the Calendar.</div></div>
@@ -4050,8 +4180,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the header in the Calendar.</div></div>
@@ -4440,8 +4570,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-cell-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix( in srgb, currentColor 8%, transparent )</code></td>
-    <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(secondary-subtle-hover) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary-subtle-hover) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered cells in the Calendar.</div></div>
@@ -4450,8 +4580,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-cell-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(secondary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered cells in the Calendar.</div></div>
@@ -4459,9 +4589,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-calendar-cell-hover-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered cells in the Calendar.</div></div>
@@ -4480,8 +4610,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-cell-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected cells in the Calendar.</div></div>
@@ -4490,8 +4620,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-cell-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected cells in the Calendar.</div></div>
@@ -4499,9 +4629,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-calendar-cell-selected-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected cells in the Calendar.</div></div>
@@ -4520,8 +4650,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-cell-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered cells in the Calendar.</div></div>
@@ -4530,8 +4660,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-cell-selected-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered cells in the Calendar.</div></div>
@@ -4559,9 +4689,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-calendar-cell-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 8%, transparent)</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 8%, transparent))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused cells in the Calendar.</div></div>
@@ -4569,12 +4699,32 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-calendar-cell-selected-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-calendar-cell-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 8%, transparent))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected and focused cells in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -4600,7 +4750,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
-    <td><code>$kendo-calendar-header-bg</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -4630,8 +4780,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-navigation-hover-text</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered items in the Calendar navigation.</div></div>
@@ -4650,11 +4800,31 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-calendar-range-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(secondary-subtle-active) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary-subtle-active) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar range selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-range-start-bg</td>
+    <td>String</td>
+    <td><code>linear-gradient(to right, k-color(surface) 0%, $kendo-calendar-range-bg 100%)</code></td>
+    <td><code>linear-gradient(to right, var(--kendo-color-surface) 0%, color-mix(in srgb, var(--kendo-color-secondary-subtle-active) 60%, transparent) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar range start selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-range-end-bg</td>
+    <td>String</td>
+    <td><code>linear-gradient(to left, k-color(surface) 0%, $kendo-calendar-range-bg 100%)</code></td>
+    <td><code>linear-gradient(to left, var(--kendo-color-surface) 0%, color-mix(in srgb, var(--kendo-color-secondary-subtle-active) 60%, transparent) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar range end selection.</div></div>
     </td>
 </tr>
 <tr>
@@ -5182,8 +5352,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-card-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(1, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Card.</div></div>
@@ -5202,8 +5372,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-card-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-elevation-border(1, k-color(border))</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 1 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Card.</div></div>
@@ -5211,9 +5381,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-card-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-elevation(1)</code></td>
+    <td><code>var(--kendo-elevation-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Card.</div></div>
@@ -5251,9 +5421,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-card-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Card.</div></div>
@@ -5682,8 +5852,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chart-wizard-icon-area-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the area around the chart type icon.</div></div>
@@ -5700,10 +5870,30 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-chart-wizard-icon-area-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-border-color</td>
+    <td>String</td>
+    <td><code>k-color(primary-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused area around the chart type icon.</div></div>
@@ -5711,12 +5901,32 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-chart-wizard-icon-area-selected-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-chart-wizard-icon-area-color</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-selected-border-color</td>
+    <td>String</td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-selected-bg</td>
+    <td>String</td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected area around the chart type icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -5767,6 +5977,36 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the icon area and its text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused icon area in the ChartWizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused icon area in the ChartWizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused icon area in the ChartWizard.</div></div>
     </td>
 </tr>
 </tbody>
@@ -6431,9 +6671,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-chart-tooltip-font-size</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-font-size} * .929)</code></td>
-    <td><code>calc(1rem * 0.929)</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chart.</div></div>
@@ -6542,8 +6782,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chart-tooltip-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chart.</div></div>
@@ -6552,8 +6792,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chart-tooltip-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chart.</div></div>
@@ -6642,8 +6882,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-background</td>
     <td>String</td>
-    <td><code>k-color(base)</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chart.</div></div>
@@ -6652,8 +6892,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chart.</div></div>
@@ -7082,8 +7322,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-message-box-wrapper-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat message box wrapper.</div></div>
@@ -7253,7 +7493,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-chat-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat Toolbar.</div></div>
@@ -7322,8 +7562,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-alt-bubble-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat alt bubble.</div></div>
@@ -7332,8 +7572,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-alt-bubble-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(secondary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat alt bubble.</div></div>
@@ -7343,7 +7583,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-chat-alt-bubble-border</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat alt bubble.</div></div>
@@ -7357,6 +7597,36 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Chat alt bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(secondary-on-surface)</code></td>
+    <td><code>var(--kendo-color-secondary-on-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused alt Bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused alt Bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused alt Bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -7422,8 +7692,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-sender-file-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-primary) 14%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-primary) 14%, transparent)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat sender file.</div></div>
@@ -7432,8 +7702,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-sender-file-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat sender file.</div></div>
@@ -7442,8 +7712,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-sender-file-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-sender-file-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-primary) 14%, transparent)</code></td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat sender file.</div></div>
@@ -7722,8 +7992,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-checkbox-checked-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the checked CheckBox.</div></div>
@@ -7732,8 +8002,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the checked CheckBox.</div></div>
@@ -7743,7 +8013,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-checkbox-checked-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the checked CheckBox.</div></div>
@@ -7763,7 +8033,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-checkbox-indeterminate-text</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the indeterminate CheckBox.</div></div>
@@ -7791,9 +8061,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-checkbox-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px k-color(border)</code></td>
-    <td><code>(0 0 0 2px var(--kendo-color-border))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused CheckBox.</div></div>
@@ -7811,12 +8081,72 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-checkbox-focus-checked-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(primary) 30%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary) 30%, transparent))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-checked-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(secondary-on-surface)</code></td>
+    <td><code>var(--kendo-color-secondary-on-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused and checked CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-checked-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused and checked CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-checked-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused and checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -8023,7 +8353,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-checkbox-ripple-bg</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the CheckBox' ripple.</div></div>
@@ -8238,8 +8568,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var(--kendo-font-size-md, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Chip.</div></div>
@@ -8298,8 +8628,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-base-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>k-color(base)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Chip.</div></div>
@@ -8309,7 +8639,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-chip-solid-bg</td>
     <td>String</td>
     <td><code>$kendo-chip-base-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the solid Chip.</div></div>
@@ -8318,8 +8648,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-solid-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the solid Chip.</div></div>
@@ -8327,9 +8657,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-chip-solid-border</td>
-    <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the solid Chip.</div></div>
@@ -8337,9 +8667,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-chip-solid-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface) 16%, transparent))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
@@ -8368,8 +8698,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-solid-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered solid Chip.</div></div>
@@ -8378,7 +8708,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-solid-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-button-active-bg</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
@@ -8407,9 +8737,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-chip-outline-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface) 16%, transparent))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>
@@ -8418,8 +8748,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-outline-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-chip-outline-text</code></td>
-    <td><code>var(--kendo-color-base-on-surface)</code></td>
+    <td><code>color-mix(in srgb, k-color(base-hover) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-hover) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered outline Chip.</div></div>
@@ -8428,8 +8758,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
     <td>String</td>
-    <td><code>k-color(base)</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>k-color(base-on-surface)</code></td>
+    <td><code>var(--kendo-color-base-on-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the hovered outline Chip.</div></div>
@@ -8438,8 +8768,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-outline-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-chip-outline-hover-bg</code></td>
-    <td><code>var(--kendo-color-base-on-surface)</code></td>
+    <td><code>color-mix(in srgb, k-color(base-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected outline Chip.</div></div>
@@ -8448,8 +8778,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chip-outline-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-chip-outline-hover-text</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>k-color(base-on-surface)</code></td>
+    <td><code>var(--kendo-color-base-on-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected outline Chip.</div></div>
@@ -8483,6 +8813,26 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the disabled Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the focus outline of the Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the focus outline of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -8538,7 +8888,7 @@ The following table lists the available variables for customizing the Starter th
         line-height: $kendo-chip-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1\\.5)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1\\.5)","font-size":"var(--kendo-font-size-md, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-xs, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Chip.</div></div>
@@ -8592,7 +8942,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 261.13))</li><li>subtle: oklch(55.44% 0.0407 257.42deg)</li><li>surface: oklch(98.46% 0.0017 247.84deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) 1 0 h)</li><li>border: oklch(79.5% 0.0197 255.55deg / 0.35)</li><li>border-alt: oklch(79.5% 0.0197 255.55deg / 0.5)</li><li>base-subtle: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.98) calc(c + 0.0058) calc(h + 10.48))</li><li>base-subtle-active: oklch(from var(--kendo-color-base) clamp(0.03, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.97) calc(c + 0.0076) calc(h + 8.84))</li><li>base: oklch(96.92% 0.0034 247.86deg)</li><li>base-hover: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))</li><li>base-active: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.98) calc(c + 0.0076) calc(h + 8.84))</li><li>base-emphasis: oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.0984, (0.35 - l) * 99999, 0.0984)), 0.95) calc(c + 0.0094) calc(h + 7.65))</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>primary-subtle: oklch(from var(--kendo-color-primary) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39))</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) calc(l + 0.5784) calc(c - 0.0295) calc(h - 4.47))</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) calc(l + 0.5571) calc(c - 0.0265) calc(h - 1.78))</li><li>primary: oklch(37.17% 0.0392 257.29deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.0922, (0.35 - l) * 99999, 0.0922))) calc(c - 0.0023) calc(h + 2.74))</li><li>primary-active: oklch(from var(--kendo-color-primary) max(0.20, calc(l + clamp(-0.1640, (0.35 - l) * 99999, 0.1640))) calc(c + 0.0007) calc(h + 8.47))</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.4973) calc(c - 0.0193) calc(h - 4.39))</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l - 0.2429) calc(c + 0.0014) calc(h + 7.41))</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) clamp(0.20, calc(l - 0.0922), 0.60) calc(c - 0.0023) calc(h + 2.74))</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.4297) calc(c - 0.2004) calc(h + 5.24))</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) calc(l + 0.4027) calc(c - 0.1869) calc(h + 7.65))</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l + 0.3749) calc(c - 0.1730) calc(h + 6.61))</li><li>secondary: oklch(54.53% 0.2124 275.85deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) max(0.15, calc(l + clamp(-0.0569, (0.35 - l) * 99999, 0.0569))) calc(c - 0.0174) calc(h - 0.42))</li><li>secondary-active: oklch(from var(--kendo-color-secondary) max(0.20, calc(l + clamp(-0.1233, (0.35 - l) * 99999, 0.1233))) calc(c - 0.0417) calc(h - 0.77))</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l + 0.4027) calc(c - 0.1869) calc(h + 7.65))</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) calc(l - 0.2705) calc(c - 0.1041) h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l - 0.1233), 0.60) calc(c - 0.0417) calc(h - 0.77))</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) calc(l + 0.1308) calc(c - 0.0793) calc(h + 3.78))</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) calc(l + 0.1097) calc(c - 0.0665) calc(h + 0.96))</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) calc(l + 0.0830) calc(c - 0.0486) calc(h + 0.87))</li><li>tertiary: oklch(83.18% 0.1046 310.19deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) max(0.15, calc(l + clamp(-0.0551, (0.35 - l) * 99999, 0.0551))) calc(c + 0.0342) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) max(0.20, calc(l + clamp(-0.1072, (0.35 - l) * 99999, 0.1072))) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l - 0.1072) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l - 0.4562) calc(c + 0.0303) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0.2783, (0.65 - l) * 99999, 0.95) 0.0970 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) clamp(0.20, calc(l - 0.4562), 0.60) calc(c + 0.0303) h)</li><li>info-subtle: oklch(from var(--kendo-color-info) calc(l + 0.3908) calc(c - 0.1918) calc(h - 2.15))</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) calc(l + 0.3468) calc(c - 0.1741) calc(h - 2.13))</li><li>info-subtle-active: oklch(from var(--kendo-color-info) calc(l + 0.2846) calc(c - 0.1447) calc(h - 1.92))</li><li>info: oklch(51.78% 0.2301 261.43deg)</li><li>info-hover: oklch(from var(--kendo-color-info) max(0.15, calc(l + clamp(-0.0286, (0.35 - l) * 99999, 0.0286))) calc(c - 0.0164) h)</li><li>info-active: oklch(from var(--kendo-color-info) max(0.20, calc(l + clamp(-0.0739, (0.35 - l) * 99999, 0.0739))) calc(c - 0.0250) calc(h + 0.55))</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.1639) calc(c - 0.0839) calc(h - 1.95))</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l - 0.1438) calc(c - 0.0725) calc(h - 0.85))</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) clamp(0.20, calc(l - 0.0739), 0.60) calc(c - 0.0250) calc(h + 0.55))</li><li>success-subtle: oklch(from var(--kendo-color-success) calc(l + 0.3001) calc(c - 0.1595) calc(h - 4.11))</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) calc(l + 0.2687) calc(c - 0.1389) calc(h - 3.20))</li><li>success-subtle-active: oklch(from var(--kendo-color-success) calc(l + 0.2322) calc(c - 0.1115) calc(h - 3.50))</li><li>success: oklch(63.25% 0.2034 139.96deg)</li><li>success-hover: oklch(from var(--kendo-color-success) max(0.15, calc(l + clamp(-0.0427, (0.35 - l) * 99999, 0.0427))) calc(c - 0.0139) h)</li><li>success-active: oklch(from var(--kendo-color-success) max(0.20, calc(l + clamp(-0.0858, (0.35 - l) * 99999, 0.0858))) calc(c - 0.0284) h)</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.1516) calc(c - 0.0345) calc(h - 2.68))</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l - 0.2213) calc(c - 0.0736) calc(h - 0.88))</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) clamp(0.20, calc(l - 0.1511), 0.60) calc(c - 0.0498) calc(h - 0.37))</li><li>warning-subtle: oklch(from var(--kendo-color-warning) calc(l + 0.1252) calc(c - 0.1282) calc(h + 7.16))</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) calc(l + 0.1086) calc(c - 0.1071) calc(h + 6.61))</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) calc(l + 0.0890) calc(c - 0.0776) calc(h + 7.40))</li><li>warning: oklch(84.22% 0.1727 84.58deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) max(0.15, calc(l + clamp(-0.0548, (0.35 - l) * 99999, 0.0548))) calc(c - 0.0111) calc(h - 0.50))</li><li>warning-active: oklch(from var(--kendo-color-warning) max(0.20, calc(l + clamp(0, (0.35 - l) * 99999, 0))) c h)</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0492) calc(c - 0.0299) calc(h + 6.02))</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l - 0.5586) calc(c - 0.1484) calc(h + 176.56))</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 176.56))</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) clamp(0.20, calc(l - 0.5586), 0.60) calc(c - 0.1484) calc(h + 176.56))</li><li>error-subtle: oklch(from var(--kendo-color-error) calc(l + 0.3493) calc(c - 0.1929) calc(h - 5.95))</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) calc(l + 0.3032) calc(c - 0.1688) calc(h - 5.50))</li><li>error-subtle-active: oklch(from var(--kendo-color-error) calc(l + 0.2403) calc(c - 0.1319) calc(h - 4.65))</li><li>error: oklch(57.3% 0.2276 30.33deg)</li><li>error-hover: oklch(from var(--kendo-color-error) max(0.15, calc(l + clamp(-0.0405, (0.35 - l) * 99999, 0.0405))) calc(c - 0.0167) h)</li><li>error-active: oklch(from var(--kendo-color-error) max(0.20, calc(l + clamp(-0.0803, (0.35 - l) * 99999, 0.0803))) calc(c - 0.0325) h)</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.1304) calc(c - 0.0577) calc(h - 1.85))</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l - 0.1404) calc(c - 0.0579) calc(h + 0.44))</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.0405), 0.60) calc(c - 0.0167) h)</li><li>light-subtle: oklch(from var(--kendo-color-light) calc(l + 0.0336) calc(c - 0.0046) calc(h - 7.64))</li><li>light-subtle-hover: oklch(from var(--kendo-color-light) calc(l + 0.0182) calc(c - 0.0028) calc(h - 7.62))</li><li>light-subtle-active: oklch(from var(--kendo-color-light) l c h)</li><li>light: oklch(95.1% 0.0063 255.48deg)</li><li>light-hover: oklch(from var(--kendo-color-light) calc(l - 0.0213) calc(c + 0.0029) calc(h + 2.86))</li><li>light-active: oklch(from var(--kendo-color-light) calc(l - 0.0491) calc(c + 0.0047) calc(h + 1.22))</li><li>light-emphasis: oklch(from var(--kendo-color-light) calc(l - 0.0491) calc(c + 0.0047) calc(h + 1.22))</li><li>light-on-subtle: oklch(from var(--kendo-color-light) calc(l - 0.8198) calc(c + 0.0102) calc(h + 20.72))</li><li>on-light: oklch(from var(--kendo-color-light) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>light-on-surface: oklch(from var(--kendo-color-light) calc(l - 0.0213) calc(c + 0.0029) calc(h + 2.86))</li><li>dark-subtle: oklch(from var(--kendo-color-dark) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))</li><li>dark-subtle-hover: oklch(from var(--kendo-color-dark) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))</li><li>dark-subtle-active: oklch(from var(--kendo-color-dark) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>dark: oklch(28.36% 0.0243 261.13deg)</li><li>dark-hover: oklch(from var(--kendo-color-dark) calc(l - 0.0689) calc(c - 0.0017) calc(h + 7.83))</li><li>dark-active: oklch(from var(--kendo-color-dark) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>dark-emphasis: oklch(from var(--kendo-color-dark) calc(l + 0.1653) calc(c + 0.0061) calc(h - 5.45))</li><li>dark-on-subtle: oklch(from var(--kendo-color-dark) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>on-dark: oklch(from var(--kendo-color-dark) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>dark-on-surface: oklch(from var(--kendo-color-dark) calc(l - 0.1524) calc(c - 0.0078) calc(h + 15.06))</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse: oklch(28.36% 0.0243 261.13deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0689) calc(c - 0.0017) calc(h + 7.83))</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>series: oklch(54.53% 0.2124 275.85deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l - 0.1233) calc(c - 0.0417) calc(h - 0.77))</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l - 0.1945) calc(c - 0.0713) calc(h - 0.52))</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l + 0.1176) calc(c - 0.0308) calc(h + 2.64))</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.0868) calc(c + 0.0134) calc(h + 34.73))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l - 0.1664) calc(c - 0.0541) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l - 0.2565) calc(c - 0.0909) calc(h - 0.37))</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l + 0.0925) calc(c - 0.0531) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l + 0.1997) calc(c - 0.1212) calc(h - 0.39))</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.1534) calc(c - 0.0058) calc(h + 86.96))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l - 0.1333) calc(c - 0.0427) calc(h - 0.57))</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l - 0.2736) calc(c - 0.0877) calc(h - 0.57))</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l + 0.0604) calc(c - 0.0487) calc(h - 3.57))</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l + 0.1339) calc(c - 0.1035) calc(h - 5.82))</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.2229) calc(c - 0.0482) calc(h - 122.72))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l - 0.1462) calc(c - 0.0334) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l - 0.3015) calc(c - 0.0691) calc(h + 0.38))</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l + 0.0522) calc(c - 0.0354) calc(h + 2.32))</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l + 0.1078) calc(c - 0.0775) calc(h + 4.33))</li><li>series-e: oklch(from var(--kendo-color-series) calc(l + 0.3660) calc(c - 0.0645) calc(h - 179.84))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l - 0.1759) calc(c - 0.0305) calc(h + 0.31))</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l - 0.3623) calc(c - 0.0621) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l + 0.0206) calc(c - 0.0289) calc(h + 0.79))</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l + 0.0411) calc(c - 0.0664) calc(h + 0.31))</li><li>series-f: oklch(from var(--kendo-color-series) calc(l + 0.1532) calc(c - 0.0202) calc(h + 111.34))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l - 0.1947) calc(c - 0.0581) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l - 0.3643) calc(c - 0.1031) calc(h - 0.41))</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l + 0.0613) calc(c - 0.0491) calc(h - 2.12))</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l + 0.1348) calc(c - 0.1001) calc(h - 3.88))</li></ul></td>
+    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 261.13))</li><li>subtle: oklch(55.44% 0.0407 257.42deg)</li><li>surface: oklch(98.46% 0.0017 247.84deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) 1 0 h)</li><li>border: oklch(79.5% 0.0197 255.55deg / 0.35)</li><li>border-alt: oklch(79.5% 0.0197 255.55deg / 0.5)</li><li>base-subtle: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.98) calc(c + 0.0058) calc(h + 10.48))</li><li>base-subtle-active: oklch(from var(--kendo-color-base) clamp(0.03, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.97) calc(c + 0.0076) calc(h + 8.84))</li><li>base: oklch(96.92% 0.0034 247.86deg)</li><li>base-hover: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))</li><li>base-active: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.98) calc(c + 0.0076) calc(h + 8.84))</li><li>base-emphasis: oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.0984, (0.35 - l) * 99999, 0.0984)), 0.95) calc(c + 0.0094) calc(h + 7.65))</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>primary-subtle: oklch(from var(--kendo-color-primary) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39))</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) calc(l + 0.5784) calc(c - 0.0295) calc(h - 4.47))</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) calc(l + 0.5571) calc(c - 0.0265) calc(h - 1.78))</li><li>primary: oklch(37.17% 0.0392 257.29deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.0922, (0.35 - l) * 99999, 0.0922))) calc(c - 0.0023) calc(h + 2.74))</li><li>primary-active: oklch(from var(--kendo-color-primary) max(0.20, calc(l + clamp(-0.1640, (0.35 - l) * 99999, 0.1640))) calc(c + 0.0007) calc(h + 8.47))</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.4973) calc(c - 0.0193) calc(h - 4.39))</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l - 0.2429) calc(c + 0.0014) calc(h + 7.41))</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) clamp(0.20, calc(l - 0.0922), 0.60) calc(c - 0.0023) calc(h + 2.74))</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.4027) calc(c - 0.1869) calc(h + 7.65))</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) calc(l + 0.3749) calc(c - 0.1730) calc(h + 6.61))</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l + 0.3424) calc(c - 0.1561) calc(h + 7.13))</li><li>secondary: oklch(54.53% 0.2124 275.85deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) max(0.15, calc(l + clamp(-0.0569, (0.35 - l) * 99999, 0.0569))) calc(c - 0.0174) calc(h - 0.42))</li><li>secondary-active: oklch(from var(--kendo-color-secondary) max(0.20, calc(l + clamp(-0.1233, (0.35 - l) * 99999, 0.1233))) calc(c - 0.0417) calc(h - 0.77))</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) calc(l - 0.2705) calc(c - 0.1041) h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l - 0.1233), 0.60) calc(c - 0.0417) calc(h - 0.77))</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) calc(l + 0.1308) calc(c - 0.0793) calc(h + 3.78))</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) calc(l + 0.1097) calc(c - 0.0665) calc(h + 0.96))</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) calc(l + 0.0830) calc(c - 0.0486) calc(h + 0.87))</li><li>tertiary: oklch(83.18% 0.1046 310.19deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) max(0.15, calc(l + clamp(-0.0551, (0.35 - l) * 99999, 0.0551))) calc(c + 0.0342) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) max(0.20, calc(l + clamp(-0.1072, (0.35 - l) * 99999, 0.1072))) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l - 0.1072) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l - 0.4562) calc(c + 0.0303) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0.2783, (0.65 - l) * 99999, 0.95) 0.0970 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) clamp(0.20, calc(l - 0.4562), 0.60) calc(c + 0.0303) h)</li><li>info-subtle: oklch(from var(--kendo-color-info) calc(l + 0.3276) calc(c - 0.0923) calc(h - 12.89))</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) calc(l + 0.2710) calc(c - 0.0723) calc(h - 12.07))</li><li>info-subtle-active: oklch(from var(--kendo-color-info) calc(l + 0.2166) calc(c - 0.0535) calc(h - 9.52))</li><li>info: oklch(56.43% 0.131 241.46deg)</li><li>info-hover: oklch(from var(--kendo-color-info) max(0.15, calc(l + clamp(-0.0362, (0.35 - l) * 99999, 0.0362))) calc(c - 0.0083) calc(h - 0.10))</li><li>info-active: oklch(from var(--kendo-color-info) max(0.20, calc(l + clamp(-0.0735, (0.35 - l) * 99999, 0.0735))) calc(c - 0.0181) calc(h - 0.68))</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.1218) calc(c - 0.0235) calc(h - 8.04))</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l - 0.1490) calc(c - 0.0360) calc(h - 0.92))</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) clamp(0.20, calc(l - 0.0735), 0.60) calc(c - 0.0181) calc(h - 0.68))</li><li>success-subtle: oklch(from var(--kendo-color-success) calc(l + 0.3820) calc(c - 0.0756) calc(h + 10.01))</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) calc(l + 0.3257) calc(c - 0.0510) calc(h + 9.38))</li><li>success-subtle-active: oklch(from var(--kendo-color-success) calc(l + 0.2724) calc(c - 0.0300) calc(h + 7.48))</li><li>success: oklch(51.46% 0.1066 163.53deg)</li><li>success-hover: oklch(from var(--kendo-color-success) max(0.15, calc(l + clamp(-0.0369, (0.35 - l) * 99999, 0.0369))) calc(c - 0.0071) h)</li><li>success-active: oklch(from var(--kendo-color-success) max(0.20, calc(l + clamp(-0.0744, (0.35 - l) * 99999, 0.0744))) calc(c - 0.0145) calc(h - 0.12))</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.1725) calc(c - 0.0033) calc(h + 5.16))</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l - 0.1550) calc(c - 0.0314) calc(h + 0.29))</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) clamp(0.20, calc(l - 0.1126), 0.60) calc(c - 0.0222) calc(h - 0.26))</li><li>warning-subtle: oklch(from var(--kendo-color-warning) calc(l + 0.0793) calc(c - 0.1084) calc(h + 1.96))</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) calc(l + 0.0637) calc(c - 0.0833) calc(h + 1.54))</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) calc(l + 0.0517) calc(c - 0.0593) calc(h + 1.36))</li><li>warning: oklch(88.34% 0.1817 99deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) max(0.15, calc(l + clamp(-0.0334, (0.35 - l) * 99999, 0.0334))) calc(c - 0.0069) calc(h - 0.16))</li><li>warning-active: oklch(from var(--kendo-color-warning) max(0.20, calc(l + clamp(-0.0672, (0.35 - l) * 99999, 0.0672))) calc(c - 0.0138) calc(h - 0.33))</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0283) calc(c - 0.0228) calc(h + 1.42))</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l - 0.5998) calc(c - 0.1574) calc(h + 162.13))</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 162.13))</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) clamp(0.20, calc(l - 0.5998), 0.60) calc(c - 0.1574) calc(h + 162.13))</li><li>error-subtle: oklch(from var(--kendo-color-error) calc(l + 0.3868) calc(c - 0.1565) calc(h - 14.72))</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) calc(l + 0.3203) calc(c - 0.1250) calc(h - 13.80))</li><li>error-subtle-active: oklch(from var(--kendo-color-error) calc(l + 0.2580) calc(c - 0.0932) calc(h - 12.78))</li><li>error: oklch(51.01% 0.1951 14.31deg)</li><li>error-hover: oklch(from var(--kendo-color-error) max(0.15, calc(l + clamp(-0.0415, (0.35 - l) * 99999, 0.0415))) calc(c - 0.0154) calc(h + 0.39))</li><li>error-active: oklch(from var(--kendo-color-error) max(0.20, calc(l + clamp(-0.0851, (0.35 - l) * 99999, 0.0851))) calc(c - 0.0324) calc(h - 0.19))</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.1479) calc(c - 0.0349) calc(h - 9.11))</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l - 0.1281) calc(c - 0.0490) calc(h - 0.16))</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.0415), 0.60) calc(c - 0.0154) calc(h + 0.39))</li><li>light-subtle: oklch(from var(--kendo-color-light) calc(l + 0.0336) calc(c - 0.0046) calc(h - 7.64))</li><li>light-subtle-hover: oklch(from var(--kendo-color-light) calc(l + 0.0182) calc(c - 0.0028) calc(h - 7.62))</li><li>light-subtle-active: oklch(from var(--kendo-color-light) l c h)</li><li>light: oklch(95.1% 0.0063 255.48deg)</li><li>light-hover: oklch(from var(--kendo-color-light) calc(l - 0.0213) calc(c + 0.0029) calc(h + 2.86))</li><li>light-active: oklch(from var(--kendo-color-light) calc(l - 0.0491) calc(c + 0.0047) calc(h + 1.22))</li><li>light-emphasis: oklch(from var(--kendo-color-light) calc(l - 0.0491) calc(c + 0.0047) calc(h + 1.22))</li><li>light-on-subtle: oklch(from var(--kendo-color-light) calc(l - 0.8198) calc(c + 0.0102) calc(h + 20.72))</li><li>on-light: oklch(from var(--kendo-color-light) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>light-on-surface: oklch(from var(--kendo-color-light) calc(l - 0.0213) calc(c + 0.0029) calc(h + 2.86))</li><li>dark-subtle: oklch(from var(--kendo-color-dark) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))</li><li>dark-subtle-hover: oklch(from var(--kendo-color-dark) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))</li><li>dark-subtle-active: oklch(from var(--kendo-color-dark) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>dark: oklch(28.36% 0.0243 261.13deg)</li><li>dark-hover: oklch(from var(--kendo-color-dark) calc(l - 0.0689) calc(c - 0.0017) calc(h + 7.83))</li><li>dark-active: oklch(from var(--kendo-color-dark) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>dark-emphasis: oklch(from var(--kendo-color-dark) calc(l + 0.1653) calc(c + 0.0061) calc(h - 5.45))</li><li>dark-on-subtle: oklch(from var(--kendo-color-dark) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>on-dark: oklch(from var(--kendo-color-dark) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>dark-on-surface: oklch(from var(--kendo-color-dark) calc(l - 0.1524) calc(c - 0.0078) calc(h + 15.06))</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse: oklch(28.36% 0.0243 261.13deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0689) calc(c - 0.0017) calc(h + 7.83))</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>series: oklch(54.53% 0.2124 275.85deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l - 0.1233) calc(c - 0.0417) calc(h - 0.77))</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l - 0.1945) calc(c - 0.0713) calc(h - 0.52))</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l + 0.1176) calc(c - 0.0308) calc(h + 2.64))</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.0868) calc(c + 0.0134) calc(h + 34.73))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l - 0.1664) calc(c - 0.0541) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l - 0.2565) calc(c - 0.0909) calc(h - 0.37))</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l + 0.0925) calc(c - 0.0531) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l + 0.1997) calc(c - 0.1212) calc(h - 0.39))</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.1534) calc(c - 0.0058) calc(h + 86.96))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l - 0.1333) calc(c - 0.0427) calc(h - 0.57))</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l - 0.2736) calc(c - 0.0877) calc(h - 0.57))</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l + 0.0604) calc(c - 0.0487) calc(h - 3.57))</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l + 0.1339) calc(c - 0.1035) calc(h - 5.82))</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.2229) calc(c - 0.0482) calc(h - 122.72))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l - 0.1462) calc(c - 0.0334) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l - 0.3015) calc(c - 0.0691) calc(h + 0.38))</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l + 0.0522) calc(c - 0.0354) calc(h + 2.32))</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l + 0.1078) calc(c - 0.0775) calc(h + 4.33))</li><li>series-e: oklch(from var(--kendo-color-series) calc(l + 0.3660) calc(c - 0.0645) calc(h - 179.84))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l - 0.1759) calc(c - 0.0305) calc(h + 0.31))</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l - 0.3623) calc(c - 0.0621) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l + 0.0206) calc(c - 0.0289) calc(h + 0.79))</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l + 0.0411) calc(c - 0.0664) calc(h + 0.31))</li><li>series-f: oklch(from var(--kendo-color-series) calc(l + 0.1532) calc(c - 0.0202) calc(h + 111.34))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l - 0.1947) calc(c - 0.0581) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l - 0.3643) calc(c - 0.1031) calc(h - 0.41))</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l + 0.0613) calc(c - 0.0491) calc(h - 2.12))</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l + 0.1348) calc(c - 0.1001) calc(h - 3.88))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -10108,8 +10458,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient.</div></div>
@@ -10208,8 +10558,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-color-gradient-spacer</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorGradient.</div></div>
@@ -10218,8 +10568,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorGradient.</div></div>
@@ -10258,8 +10608,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-md-width</td>
     <td>Number</td>
-    <td><code>272px</code></td>
-    <td><code>272px</code></td>
+    <td><code>282px</code></td>
+    <td><code>282px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorGradient.</div></div>
@@ -10318,8 +10668,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-focus-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -10328,8 +10678,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-canvas-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient canvas.</div></div>
@@ -10348,8 +10698,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>202px</code></td>
-    <td><code>202px</code></td>
+    <td><code>180px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the ColorGradient canvas hsv rectangle.</div></div>
@@ -10358,8 +10708,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-sm-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>182px</code></td>
-    <td><code>182px</code></td>
+    <td><code>160px</code></td>
+    <td><code>160px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the small ColorGradient canvas hsv rectangle.</div></div>
@@ -10369,7 +10719,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-color-gradient-md-canvas-rectangle-height</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
-    <td><code>202px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the medium ColorGradient canvas hsv rectangle.</div></div>
@@ -10378,8 +10728,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-lg-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>268px</code></td>
-    <td><code>268px</code></td>
+    <td><code>240px</code></td>
+    <td><code>240px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the large ColorGradient canvas hsv rectangle.</div></div>
@@ -10438,8 +10788,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-slider-draghandle-border-width</td>
     <td>Number</td>
-    <td><code>3px</code></td>
-    <td><code>3px</code></td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ColorGradient slider drag handle.</div></div>
@@ -10449,7 +10799,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-color-gradient-slider-vertical-size</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
-    <td><code>202px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ColorGradient vertical slider.</div></div>
@@ -10479,7 +10829,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-color-gradient-sm-slider-vertical-size</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-sm-canvas-rectangle-height</code></td>
-    <td><code>182px</code></td>
+    <td><code>160px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorGradient vertical slider.</div></div>
@@ -10489,7 +10839,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-color-gradient-md-slider-vertical-size</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-md-canvas-rectangle-height</code></td>
-    <td><code>202px</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorGradient vertical slider.</div></div>
@@ -10499,7 +10849,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-color-gradient-lg-slider-vertical-size</td>
     <td>Number</td>
     <td><code>$kendo-color-gradient-lg-canvas-rectangle-height</code></td>
-    <td><code>268px</code></td>
+    <td><code>240px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorGradient vertical slider.</div></div>
@@ -10578,8 +10928,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(light) 80%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-light) 80%, transparent)</code></td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
@@ -10587,19 +10937,49 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-color(dark)</code></td>
-    <td><code>var(--kendo-color-dark)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-draghandle-focus-outline-color</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-inverse) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-inverse) 80%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ColorGradient drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td>String</td>
-    <td><code>k-color(dark)</code></td>
-    <td><code>var(--kendo-color-dark)</code></td>
+    <td><code>$kendo-color-gradient-draghandle-focus-outline-color</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-inverse) 80%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
@@ -10608,11 +10988,41 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-inner-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ColorGradient drag handle inner outline.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-slider-draghandle-inner-outline-width</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ColorGradient slider drag handle inner outline.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-inner-outline-color</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-inverse) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-inverse) 60%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the ColorGradient drag handle inner outline.</div></div>
     </td>
 </tr>
 <tr>
@@ -10657,9 +11067,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-color-gradient-input-label-gap</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-color-gradient-spacer} / 3 )</code></td>
-    <td><code>calc(var(--kendo-spacing-3) / 3)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorGradient inputs and their labels.</div></div>
@@ -10726,6 +11136,36 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -10760,7 +11200,7 @@ The following table lists the available variables for customizing the Starter th
         padding-y: $kendo-color-gradient-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "width":"252px","vertical-slider-height":"182px","rectangle-height":"182px","input-width":"42px","gap":"var(--kendo-spacing-3)","canvas-gap":"var(--kendo-spacing-3)","padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-3)"</li><li>md: "width":"272px","vertical-slider-height":"202px","rectangle-height":"202px","input-width":"46px","gap":"var(--kendo-spacing-3)","canvas-gap":"var(--kendo-spacing-3)","padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-3)"</li><li>lg: "width":"362px","vertical-slider-height":"268px","rectangle-height":"268px","input-width":"62px","gap":"var(--kendo-spacing-4\\.5)","canvas-gap":"var(--kendo-spacing-4\\.5)","padding-x":"var(--kendo-spacing-4\\.5)","padding-y":"var(--kendo-spacing-4\\.5)"</li></ul></td>
+    <td><ul><li>sm: "width":"252px","vertical-slider-height":"160px","rectangle-height":"160px","input-width":"42px","gap":"var(--kendo-spacing-3)","canvas-gap":"var(--kendo-spacing-3)","padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-3)"</li><li>md: "width":"282px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"46px","gap":"var(--kendo-spacing-3)","canvas-gap":"var(--kendo-spacing-3)","padding-x":"var(--kendo-spacing-4)","padding-y":"var(--kendo-spacing-4)"</li><li>lg: "width":"362px","vertical-slider-height":"240px","rectangle-height":"240px","input-width":"62px","gap":"var(--kendo-spacing-4\\.5)","canvas-gap":"var(--kendo-spacing-4\\.5)","padding-x":"var(--kendo-spacing-4\\.5)","padding-y":"var(--kendo-spacing-4\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorGradient.</div></div>
@@ -10909,8 +11349,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 50%, transparent)</code></td>
-    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light) 50%, transparent))</code></td>
+    <td><code>0 0 3px 1px k-color(inverse), inset 0 0 0 1px color-mix(in srgb, k-color(on-inverse) 60%, transparent)</code></td>
+    <td><code>(0 0 3px 1px var(--kendo-color-inverse), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-on-inverse) 60%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -10919,8 +11359,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 80%, transparent)</code></td>
-    <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light) 80%, transparent))</code></td>
+    <td><code>0 0 3px 1px k-color(inverse), inset 0 0 0 1px color-mix(in srgb, k-color(on-inverse) 80%, transparent)</code></td>
+    <td><code>(0 0 3px 1px var(--kendo-color-inverse), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-on-inverse) 80%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette hovered tile.</div></div>
@@ -10929,8 +11369,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-color-palette-tile-selected-shadow</td>
     <td>List</td>
-    <td><code>0 1px 3px 1px color-mix(in srgb, k-color(dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, k-color(light) 100%, transparent)</code></td>
-    <td><code>(0 1px 3px 1px color-mix(in srgb, var(--kendo-color-dark) 30%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-light) 100%, transparent))</code></td>
+    <td><code>0 1px 3px 1px k-color(inverse), inset 0 0 0 1px k-color(on-inverse)</code></td>
+    <td><code>(0 1px 3px 1px var(--kendo-color-inverse), inset 0 0 0 1px var(--kendo-color-on-inverse))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette selected tile.</div></div>
@@ -11541,8 +11981,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-dialog-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(3, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 3 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 3 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>
@@ -11611,8 +12051,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-dock-manager-pane-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the pane header in the DockManager component.</div></div>
@@ -11651,8 +12091,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-dock-manager-pane-header-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the pane header in the DockManager component.</div></div>
@@ -11711,8 +12151,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-dock-manager-pane-title-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
-    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
+    <td><code>var( --kendo-font-weight-medium, normal )</code></td>
+    <td><code>var(--kendo-font-weight-medium, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the pane title in the DockManager component.</div></div>
@@ -11801,8 +12241,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-dock-indicator-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-elevation-bg(2, k-color(surface))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the dock indicator in the DockManager component.</div></div>
@@ -11851,8 +12291,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-dock-indicator-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the dock indicator in the DockManager component.</div></div>
@@ -11861,8 +12301,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> The background color of the hovered dock indicator in the DockManager component.</div></div>
@@ -12171,8 +12611,8 @@ The following table lists the available variables for customizing the Starter th
 <tbody><tr>
     <td>$kendo-drawer-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(1, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer.</div></div>
@@ -12191,8 +12631,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-elevation-border(1, k-color(border))</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 1 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Drawer.</div></div>
@@ -12310,9 +12750,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-drawer-items-padding-x</td>
-    <td>Number</td>
-    <td><code>0</code></td>
-    <td><code>0</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer items.</div></div>
@@ -12320,9 +12760,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-drawer-items-padding-y</td>
-    <td>Number</td>
-    <td><code>0</code></td>
-    <td><code>0</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer items.</div></div>
@@ -12351,8 +12791,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-item-spacing</td>
     <td>String</td>
-    <td><code>$kendo-drawer-item-padding-x</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the Drawer item.</div></div>
@@ -12361,8 +12801,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-item-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
-    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Drawer item.</div></div>
@@ -12371,8 +12811,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-item-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-lg, normal )</code></td>
-    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Drawer item.</div></div>
@@ -12410,9 +12850,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-drawer-item-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer item.</div></div>
@@ -12441,8 +12881,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-mini-initial-width</td>
     <td>Calculation</td>
-    <td><code>calc(2 * #{$kendo-drawer-item-padding-x} + #{$kendo-icon-size})</code></td>
-    <td><code>calc(2 * var(--kendo-spacing-4) + 16px)</code></td>
+    <td><code>calc(2 * #{$kendo-drawer-item-padding-x} + #{$kendo-icon-size} + 2 * #{$kendo-drawer-items-padding-x})</code></td>
+    <td><code>calc(2 * var(--kendo-spacing-4) + 16px + 2 * var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial width of the mini Drawer.</div></div>
@@ -12451,8 +12891,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover)</code></td>
+    <td><code>k-color(primary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Drawer item.</div></div>
@@ -12461,8 +12901,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Drawer item.</div></div>
@@ -12472,7 +12912,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-drawer-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-drawer-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Drawer item.</div></div>
@@ -12480,19 +12920,29 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-drawer-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Drawer item.</div></div>
@@ -12501,8 +12951,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Drawer item.</div></div>
@@ -12511,8 +12961,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered Drawer item.</div></div>
@@ -12521,8 +12971,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-drawer-selected-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered Drawer item.</div></div>
@@ -13031,8 +13481,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-editor-content-padding</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Editor content.</div></div>
@@ -13139,6 +13589,16 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-expander-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ExpansionPanel.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-expander-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
@@ -13200,12 +13660,42 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-expander-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ExpansionPanel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ExpansionPanel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ExpansionPanel.</div></div>
     </td>
 </tr>
 <tr>
@@ -13280,12 +13770,32 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-expander-header-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-title-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the ExpansionPanel title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-title-text-transform</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the ExpansionPanel title.</div></div>
     </td>
 </tr>
 <tr>
@@ -13330,9 +13840,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-expander-content-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>List</td>
+    <td><code>k-spacing(2) k-spacing(4)</code></td>
+    <td><code>(var(--kendo-spacing-2) var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ExpansionPanel content.</div></div>
@@ -13361,8 +13871,8 @@ The following table lists the available variables for customizing the Starter th
 <tbody><tr>
     <td>$kendo-file-box-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the File Box.</div></div>
@@ -13371,8 +13881,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-box-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the File Box.</div></div>
@@ -13401,8 +13911,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-box-max-width</td>
     <td>Number</td>
-    <td><code>160px</code></td>
-    <td><code>160px</code></td>
+    <td><code>174px</code></td>
+    <td><code>174px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the File Box.</div></div>
@@ -13450,9 +13960,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-file-box-name-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-line-height-lg, normal )</code></td>
-    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the File Box file name.</div></div>
@@ -13470,9 +13980,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-file-box-size-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-line-height-xs, normal )</code></td>
-    <td><code>var(--kendo-line-height-xs, normal)</code></td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the File Box file size.</div></div>
@@ -13481,8 +13991,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-box-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(base-on-subtle) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle) 8%, transparent)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the File Box.</div></div>
@@ -13491,8 +14001,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-box-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
-    <td><code>var(--kendo-color-base-on-subtle)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the File Box.</div></div>
@@ -13501,8 +14011,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-box-border</td>
     <td>String</td>
-    <td><code>$kendo-file-box-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle) 8%, transparent)</code></td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the File Box.</div></div>
@@ -13671,8 +14181,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-manager-navigation-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager Navigation.</div></div>
@@ -13681,8 +14191,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-manager-navigation-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager Navigation.</div></div>
@@ -13741,8 +14251,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-manager-breadcrumb-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager Breadcrumb.</div></div>
@@ -13751,8 +14261,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-manager-breadcrumb-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager Breadcrumb.</div></div>
@@ -13771,7 +14281,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-manager-breadcrumb-bg</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-bg</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -13826,6 +14336,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager ListView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the FileManager ListView.</div></div>
     </td>
 </tr>
 <tr>
@@ -13961,8 +14481,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-manager-preview-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager preview.</div></div>
@@ -13971,8 +14491,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-file-manager-preview-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-file-manager-spacer</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager preview.</div></div>
@@ -14181,8 +14701,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-filter-toolbar-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>0 0 0 1px white, 0 0 0 2px k-color(subtle)</code></td>
+    <td><code>(0 0 0 1px white, 0 0 0 2px var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Filter toolbar.</div></div>
@@ -14211,8 +14731,8 @@ The following table lists the available variables for customizing the Starter th
 <tbody><tr>
     <td>$kendo-fab-default-theme-color</td>
     <td>String</td>
-    <td><code>"primary"</code></td>
-    <td><code>"primary"</code></td>
+    <td><code>"secondary"</code></td>
+    <td><code>"secondary"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the FAB.</div></div>
@@ -14440,9 +14960,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-fab-item-text-border-radius</td>
-    <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB item text.</div></div>
@@ -14511,8 +15031,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-fab-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(5)</code></td>
-    <td><code>var(--kendo-elevation-5)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
@@ -14571,8 +15091,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-fab-item-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(2, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
@@ -14581,8 +15101,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-fab-item-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item.</div></div>
@@ -14601,8 +15121,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-fab-item-icon-bg</td>
     <td>String</td>
-    <td><code>$kendo-button-bg</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>k-elevation-bg(2, $kendo-button-bg)</code></td>
+    <td><code>oklch(from var(--kendo-color-base) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item icon.</div></div>
@@ -14610,9 +15130,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-button-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item icon.</div></div>
@@ -14621,8 +15141,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-fab-item-shadow</td>
     <td>String</td>
-    <td><code>$kendo-fab-shadow</code></td>
-    <td><code>var(--kendo-elevation-5)</code></td>
+    <td><code>k-elevation(1)</code></td>
+    <td><code>var(--kendo-elevation-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB item.</div></div>
@@ -14671,8 +15191,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-fab-item-outline-color</td>
     <td>Color</td>
-    <td><code>rgba(0, 0, 0, .08)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the FAB item.</div></div>
@@ -14974,8 +15494,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-form-legend-margin</td>
     <td>List</td>
-    <td><code>0 0 1em</code></td>
-    <td><code>(0 0 1em)</code></td>
+    <td><code>0 0 k-spacing(3.5)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-3\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form legend.</div></div>
@@ -14983,9 +15503,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-form-legend-padding</td>
-    <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0)</code></td>
+    <td>List</td>
+    <td><code>0 0 k-spacing(1)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Form legend.</div></div>
@@ -14994,8 +15514,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-form-legend-border-width</td>
     <td>List</td>
-    <td><code>0 0 2px</code></td>
-    <td><code>(0 0 2px)</code></td>
+    <td><code>0 0 1px</code></td>
+    <td><code>(0 0 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Form legend.</div></div>
@@ -15034,18 +15554,28 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-form-legend-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-h6-font-size, inherit )</code></td>
+    <td><code>var(--kendo-h6-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form legend.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-form-legend-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-medium, normal )</code></td>
+    <td><code>var(--kendo-font-weight-medium, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-form-legend-text-transform</td>
     <td>String</td>
-    <td><code>uppercase</code></td>
-    <td><code>uppercase</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text capitalization of the Form legend.</div></div>
@@ -15054,11 +15584,41 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-form-label-margin-bottom</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Form label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-medium, normal )</code></td>
+    <td><code>var(--kendo-font-weight-medium, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Form label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form label.</div></div>
     </td>
 </tr>
 <tr>
@@ -15249,6 +15809,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional label in the Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the optional label in the Form.</div></div>
     </td>
 </tr>
 <tr>
@@ -15504,8 +16074,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-line-selected-fill</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background fill of the selected Gantt connecting lines.</div></div>
@@ -15594,8 +16164,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-milestone-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt milestone.</div></div>
@@ -15614,8 +16184,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>k-color(inverse-subtle)</code></td>
-    <td><code>var(--kendo-color-inverse-subtle)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary.</div></div>
@@ -15624,8 +16194,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-summary-progress-bg</td>
     <td>String</td>
-    <td><code>k-color(inverse)</code></td>
-    <td><code>var(--kendo-color-inverse)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary progress.</div></div>
@@ -15634,8 +16204,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>k-color(secondary-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt summary.</div></div>
@@ -15644,8 +16214,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-summary-progress-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt summary progress.</div></div>
@@ -15684,8 +16254,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>k-color(inverse-subtle)</code></td>
-    <td><code>var(--kendo-color-inverse-subtle)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task.</div></div>
@@ -15694,8 +16264,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-task-text</td>
     <td>String</td>
-    <td><code>k-color(on-inverse)</code></td>
-    <td><code>var(--kendo-color-on-inverse)</code></td>
+    <td><code>k-color(base)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt task.</div></div>
@@ -15714,8 +16284,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td>String</td>
-    <td><code>$kendo-gantt-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task progress.</div></div>
@@ -15724,8 +16294,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected the Gantt task.</div></div>
@@ -15734,8 +16304,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-task-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Gantt task.</div></div>
@@ -15754,8 +16324,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-gantt-task-progress-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary-active)</code></td>
+    <td><code>var(--kendo-color-secondary-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt task progress.</div></div>
@@ -16112,6 +16682,16 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Grid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
@@ -16145,7 +16725,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-padding-x</td>
     <td>String</td>
     <td><code>$kendo-table-md-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -16153,9 +16733,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-table-md-cell-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -16165,7 +16745,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-header-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -16173,9 +16753,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-header-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -16183,9 +16763,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-grouping-header-padding-x</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid grouping header.</div></div>
@@ -16193,9 +16773,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-grouping-header-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-grouping-header-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid grouping header.</div></div>
@@ -16205,7 +16785,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16213,9 +16793,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-cell-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -16224,8 +16804,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-filter-cell-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>$kendo-grid-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid filter cell.</div></div>
@@ -16234,8 +16814,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-filter-cell-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-grid-filter-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
@@ -16245,7 +16825,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-edit-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid edit cell.</div></div>
@@ -16253,9 +16833,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-edit-cell-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(1.5)} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-1\.5) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
@@ -16293,9 +16873,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-group-drop-hint-top</td>
-    <td>Number</td>
-    <td><code>3px</code></td>
-    <td><code>3px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The drop hint top of the Grid group.</div></div>
@@ -16304,8 +16884,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -16314,8 +16894,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-sm-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -16325,7 +16905,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-header-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -16335,7 +16915,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-header-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -16345,7 +16925,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-grouping-header-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -16355,7 +16935,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-grouping-header-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -16365,7 +16945,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16375,7 +16955,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-cell-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -16384,8 +16964,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-sm-filter-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5)</code></td>
+    <td><code>$kendo-grid-sm-cell-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16393,9 +16973,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-sm-filter-cell-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-grid-sm-filter-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-1\.5)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(1)} + 1px )</code></td>
+    <td><code>calc(var(--kendo-spacing-1) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -16405,7 +16985,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-edit-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16413,9 +16993,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-sm-edit-cell-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(1)} + 1px )</code></td>
+    <td><code>calc(var(--kendo-spacing-1) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -16435,7 +17015,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-selection-aggregates-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -16445,7 +17025,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-selection-aggregates-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -16455,7 +17035,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-md-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -16463,9 +17043,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-md-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -16475,7 +17055,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-md-header-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-header-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -16483,9 +17063,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-md-header-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-header-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -16493,9 +17073,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-md-grouping-header-padding-x</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-grouping-header-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -16503,9 +17083,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-md-grouping-header-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-grouping-header-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -16515,7 +17095,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-md-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16523,9 +17103,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-md-cell-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-cell-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -16535,7 +17115,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-md-filter-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-filter-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16545,7 +17125,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-md-filter-cell-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-filter-cell-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -16555,7 +17135,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-md-edit-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-edit-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16563,9 +17143,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-md-edit-cell-padding-y</td>
-    <td>Calculation</td>
+    <td>String</td>
     <td><code>$kendo-grid-edit-cell-padding-y</code></td>
-    <td><code>calc(var(--kendo-spacing-1\.5) / 2)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -16583,9 +17163,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-md-selection-aggregates-padding-x</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -16593,9 +17173,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-md-selection-aggregates-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -16645,7 +17225,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-cell-horizontal-border-width</td>
     <td>Number</td>
     <td><code>$kendo-table-cell-horizontal-border-width</code></td>
-    <td><code>0px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Grid cell.</div></div>
@@ -16655,7 +17235,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-cell-vertical-border-width</td>
     <td>Number</td>
     <td><code>$kendo-table-cell-vertical-border-width</code></td>
-    <td><code>1px</code></td>
+    <td><code>0px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Grid cell.</div></div>
@@ -16704,8 +17284,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-header-text</td>
     <td>String</td>
-    <td><code>$kendo-table-header-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid header.</div></div>
@@ -16735,7 +17315,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-footer-text</td>
     <td>String</td>
     <td><code>$kendo-grid-header-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid footer.</div></div>
@@ -16753,9 +17333,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-grid-alt-bg</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-table-alt-row-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 5%, transparent)</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid alternating rows.</div></div>
@@ -16784,8 +17364,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-table-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(secondary) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected Grid rows.</div></div>
@@ -16804,8 +17384,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-highlighted-bg</td>
     <td>String</td>
-    <td><code>$kendo-table-highlighted-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-warning) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(warning) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-warning) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of highlighted Grid rows.</div></div>
@@ -16814,8 +17394,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-highlighted-font-weight</td>
     <td>String</td>
-    <td><code>$kendo-table-highlighted-font-weight</code></td>
-    <td><code>var(--kendo-font-weight-bold, bold)</code></td>
+    <td><code>var( --kendo-font-weight-semibold, 600 )</code></td>
+    <td><code>var(--kendo-font-weight-semibold, 600)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of highlighted Grid rows.</div></div>
@@ -16824,8 +17404,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-selected-highlighted-bg</td>
     <td>String</td>
-    <td><code>$kendo-table-selected-highlighted-bg</code></td>
-    <td><code>color-mix(in srgb, color-mix(in srgb, var(--kendo-color-primary), var(--kendo-color-warning)) 42%, transparent)</code></td>
+    <td><code>color-mix(in srgb, color-mix(in srgb, k-color(secondary), k-color(warning)) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, color-mix(in srgb, var(--kendo-color-secondary), var(--kendo-color-warning)) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected highlighted Grid rows.</div></div>
@@ -16944,8 +17524,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-sorting-indicator-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid.</div></div>
@@ -16984,8 +17564,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-focus-shadow</td>
     <td>List</td>
-    <td><code>$kendo-table-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>inset 0 0 0 2px k-color(subtle), inset 0 0 0 1px white</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-subtle), inset 0 0 0 1px white)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Grid.</div></div>
@@ -17055,7 +17635,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sticky-header-text</td>
     <td>String</td>
     <td><code>$kendo-grid-header-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the sticky header in the Grid.</div></div>
@@ -17155,7 +17735,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-column-menu-item-padding-y</td>
     <td>String</td>
     <td><code>$kendo-menu-popup-md-item-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid item.</div></div>
@@ -17215,7 +17795,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-column-menu-group-header-padding-y</td>
     <td>String</td>
     <td><code>$kendo-menu-popup-md-item-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -17285,7 +17865,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-column-menu-group-header-border</td>
     <td>String</td>
     <td><code>$kendo-popup-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid header.</div></div>
@@ -17550,7 +18130,7 @@ The following table lists the available variables for customizing the Starter th
         selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
 )</code></td>
-    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-1)","grouping-header-padding-x":"var(--kendo-spacing-2)","grouping-header-padding-y":"var(--kendo-spacing-1)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-1)","filter-cell-padding-x":"var(--kendo-spacing-1\\.5)","filter-cell-padding-y":"var(--kendo-spacing-1\\.5)","edit-cell-padding-x":"var(--kendo-spacing-2)","edit-cell-padding-y":"var(--kendo-spacing-0\\.5)","button-padding-y":"var(--kendo-spacing-1)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-1)","selection-aggregates-padding-y":"var(--kendo-spacing-1)"</li><li>md: "header-padding-x":"var(--kendo-spacing-3)","header-padding-y":"var(--kendo-spacing-2)","grouping-header-padding-x":"var(--kendo-spacing-2)","grouping-header-padding-y":"var(--kendo-spacing-2)","cell-padding-x":"var(--kendo-spacing-3)","cell-padding-y":"var(--kendo-spacing-2)","filter-cell-padding-x":"var(--kendo-spacing-2)","filter-cell-padding-y":"var(--kendo-spacing-2)","edit-cell-padding-x":"var(--kendo-spacing-3)","edit-cell-padding-y":"calc(var(--kendo-spacing-1\\.5) / 2)","button-padding-y":"var(--kendo-spacing-1\\.5)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2)","selection-aggregates-padding-y":"var(--kendo-spacing-2)"</li></ul></td>
+    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"var(--kendo-spacing-2\\.5)","grouping-header-padding-x":"var(--kendo-spacing-2\\.5)","grouping-header-padding-y":"var(--kendo-spacing-2\\.5)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"var(--kendo-spacing-2\\.5)","filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","edit-cell-padding-x":"var(--kendo-spacing-2\\.5)","edit-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","button-padding-y":"var(--kendo-spacing-1)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2\\.5)","selection-aggregates-padding-y":"var(--kendo-spacing-2\\.5)"</li><li>md: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"var(--kendo-spacing-1)","edit-cell-padding-x":"var(--kendo-spacing-2\\.5)","edit-cell-padding-y":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1\\.5)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","selection-aggregates-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Grid.</div></div>
@@ -17809,8 +18389,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-image-editor-action-pane-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(8)</code></td>
-    <td><code>var(--kendo-spacing-8)</code></td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ImageEditor action pane.</div></div>
@@ -17959,8 +18539,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-image-editor-action-pane-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ImageEditor action pane.</div></div>
@@ -18368,12 +18948,42 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-input-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -18449,8 +19059,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(base-emphasis) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Input components.</div></div>
@@ -18479,8 +19089,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-input-outline-hover-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 80%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(base-emphasis) 90%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis) 90%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered Input components.</div></div>
@@ -18518,9 +19128,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-input-outline-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
@@ -18618,9 +19228,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-input-flat-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
@@ -18794,6 +19404,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-invalid-focus-outline</td>
+    <td>String</td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused invalid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -19773,12 +20393,32 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused List items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20411,8 +21051,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(secondary) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected ListView items.</div></div>
@@ -20460,12 +21100,52 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-listview-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ListView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listview-item-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ListView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listview-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ListView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listview-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ListView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listview-item-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ListView items.</div></div>
     </td>
 </tr>
 </tbody>
@@ -20501,8 +21181,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-loader-default-theme-color</td>
     <td>String</td>
-    <td><code>"primary"</code></td>
-    <td><code>"primary"</code></td>
+    <td><code>"secondary"</code></td>
+    <td><code>"secondary"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Loader.</div></div>
@@ -20521,8 +21201,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-loader-sm-segment-size</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the small Loader segment.</div></div>
@@ -20551,8 +21231,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-loader-sm-padding</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-loader-sm-segment-size} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-1) / 2)</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} / 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2) / 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the small Loader.</div></div>
@@ -20582,7 +21262,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-loader-sm-spinner-3-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-1) * 4)</code></td>
+    <td><code>calc(var(--kendo-spacing-2) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small spinner-3 Loader.</div></div>
@@ -20612,7 +21292,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-loader-sm-spinner-3-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-loader-sm-spinner-3-width} * #{$equilateral-height} )</code></td>
-    <td><code>calc(calc(var(--kendo-spacing-1) * 4) * 0.8660254038)</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-2) * 4) * 0.8660254038)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small spinner-3 Loader.</div></div>
@@ -20642,7 +21322,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-loader-sm-spinner-4-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-1) * 4)</code></td>
+    <td><code>calc(var(--kendo-spacing-2) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small spinner-4 Loader.</div></div>
@@ -20672,7 +21352,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-loader-sm-spinner-4-height</td>
     <td>Calculation</td>
     <td><code>$kendo-loader-sm-spinner-4-width</code></td>
-    <td><code>calc(var(--kendo-spacing-1) * 4)</code></td>
+    <td><code>calc(var(--kendo-spacing-2) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small spinner-4 Loader.</div></div>
@@ -20731,8 +21411,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-loader-container-panel-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the container panel.</div></div>
@@ -20811,8 +21491,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-loader-sm-container-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Loader container.</div></div>
@@ -20831,8 +21511,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-loader-lg-container-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
-    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Loader container.</div></div>
@@ -21030,9 +21710,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-map-navigator-width</td>
-    <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-icon-size} * 3 ) + calc( #{$kendo-map-navigator-padding} * 2 ) )</code></td>
-    <td><code>calc(16px * 3 + var(--kendo-spacing-0\.5) * 2)</code></td>
+    <td>Number</td>
+    <td><code>50px</code></td>
+    <td><code>50px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>
@@ -21259,6 +21939,36 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-media-player-titlebar-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-xl, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xl, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-medium, normal )</code></td>
+    <td><code>var(--kendo-font-weight-medium, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-line-height</td>
+    <td>Calculation</td>
+    <td><code>calc( var( --kendo-line-height-xs, normal ) * 1.25 )</code></td>
+    <td><code>calc(var(--kendo-line-height-xs, normal) * 1.25)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-media-player-titlebar-text</td>
     <td>String</td>
     <td><code>$kendo-media-player-bg</code></td>
@@ -21271,8 +21981,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-media-player-titlebar-gradient</td>
     <td>List</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 70%, transparent), color-mix(in srgb, k-color(on-app-surface) 0%, transparent)</code></td>
-    <td><code>(color-mix(in srgb, var(--kendo-color-on-app-surface) 70%, transparent), color-mix(in srgb, var(--kendo-color-on-app-surface) 0%, transparent))</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 60%, transparent), color-mix(in srgb, k-color(subtle) 0%, transparent)</code></td>
+    <td><code>(color-mix(in srgb, var(--kendo-color-subtle) 60%, transparent), color-mix(in srgb, var(--kendo-color-subtle) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the MediaPlayer title.</div></div>
@@ -21391,8 +22101,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu item.</div></div>
@@ -21401,8 +22111,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu item.</div></div>
@@ -21431,8 +22141,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-item-selected-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
-    <td><code>var(--kendo-font-weight-bold, normal)</code></td>
+    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the selected Menu item.</div></div>
@@ -21531,8 +22241,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-item-active-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
-    <td><code>var(--kendo-color-primary-on-surface)</code></td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active Menu item.</div></div>
@@ -21560,12 +22270,32 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-menu-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of focused Menu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of focused Menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -21581,8 +22311,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
-    <td><code>var(--kendo-color-primary-on-surface)</code></td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected Menu item.</div></div>
@@ -21740,9 +22470,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-menu-popup-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu popup.</div></div>
@@ -21750,9 +22480,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-menu-popup-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu popup.</div></div>
@@ -21832,7 +22562,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-menu-popup-bg</td>
     <td>String</td>
     <td><code>$kendo-popup-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Menu popup.</div></div>
@@ -21852,7 +22582,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-menu-popup-border</td>
     <td>String</td>
     <td><code>$kendo-popup-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Menu popup.</div></div>
@@ -21901,8 +22631,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Menu popup item.</div></div>
@@ -21911,8 +22641,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-popup-md-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Menu popup item.</div></div>
@@ -21921,8 +22651,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-popup-lg-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Menu popup item.</div></div>
@@ -22021,8 +22751,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-popup-item-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Menu items in popup.</div></div>
@@ -22071,8 +22801,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-popup-item-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
+    <td><code>k-color(primary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered Menu item in popup.</div></div>
@@ -22081,8 +22811,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-popup-item-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-list-item-hover-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered Menu item in popup.</div></div>
@@ -22111,8 +22841,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-popup-item-active-bg</td>
     <td>String</td>
-    <td><code>$kendo-list-item-selected-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 12%, transparent)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active Menu item in popup.</div></div>
@@ -22121,8 +22851,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-menu-popup-item-active-text</td>
     <td>String</td>
-    <td><code>$kendo-list-item-selected-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active Menu item in popup.</div></div>
@@ -22150,9 +22880,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-menu-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item in popup.</div></div>
@@ -22190,7 +22920,7 @@ The following table lists the available variables for customizing the Starter th
         item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-y":"var(--kendo-spacing-0\\.5)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-y":"var(--kendo-spacing-1)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-y":"var(--kendo-spacing-1\\.5)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-y":"var(--kendo-spacing-1)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-y":"var(--kendo-spacing-1\\.5)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-y":"var(--kendo-spacing-2)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Menu group.</div></div>
@@ -22309,8 +23039,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-message-box-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the MessageBox.</div></div>
@@ -22324,6 +23054,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the MessageBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -22564,8 +23304,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-notification-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Notification.</div></div>
@@ -22574,8 +23314,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-notification-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Notification.</div></div>
@@ -22684,8 +23424,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-notification-shadow</td>
     <td>String</td>
-    <td><code>$kendo-popup-shadow</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Notification.</div></div>
@@ -22994,8 +23734,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-orgchart-node-group-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the OrgChart node group.</div></div>
@@ -23054,8 +23794,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-orgchart-node-group-title-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
-    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
+    <td><code>var( --kendo-font-size-xl, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xl, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group title.</div></div>
@@ -23063,9 +23803,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-title-margin-bottom</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-orgchart-spacer} / 3 )</code></td>
-    <td><code>calc(var(--kendo-spacing-6) / 3)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart node group title.</div></div>
@@ -23133,9 +23873,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-orgchart-card-shadow</td>
-    <td>Null</td>
-    <td><code>$kendo-card-shadow</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the OrgChart Card.</div></div>
@@ -23163,9 +23903,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-orgchart-card-title-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-h6-font-size )</code></td>
+    <td><code>var(--kendo-h6-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart Card title.</div></div>
@@ -23570,8 +24310,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-pdf-viewer-page-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td><code>k-elevation(1)</code></td>
+    <td><code>var(--kendo-elevation-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer page.</div></div>
@@ -23660,8 +24400,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-pdf-viewer-search-panel-shadow</td>
     <td>String</td>
-    <td><code>$kendo-window-shadow</code></td>
-    <td><code>var(--kendo-elevation-8)</code></td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer search panel.</div></div>
@@ -23980,8 +24720,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-pager-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
@@ -24045,6 +24785,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing around the Pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-number-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius( md )</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager numbers.</div></div>
     </td>
 </tr>
 <tr>
@@ -24287,6 +25037,26 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-panelbar-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PanelBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PanelBar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-panelbar-item-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -24307,6 +25077,36 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-panelbar-item-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-item-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-header-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the PanelBar header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-panelbar-header-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -24319,8 +25119,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PanelBar header.</div></div>
@@ -24399,8 +25199,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-header-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PanelBar header.</div></div>
@@ -24429,8 +25229,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-header-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix( in srgb, k-color(on-app-surface) 8%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
+    <td><code>k-color(primary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar header.</div></div>
@@ -24438,9 +25238,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-panelbar-header-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-hover)</code></td>
+    <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered PanelBar header.</div></div>
@@ -24508,19 +25308,49 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-panelbar-header-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-panelbar-header-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused PanelBar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-header-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused PanelBar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-header-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused PanelBar header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-panelbar-header-hover-focus-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused and hovered PanelBar header.</div></div>
@@ -24528,9 +25358,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-panelbar-header-hover-focus-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused and hovered PanelBar header.</div></div>
@@ -24559,8 +25389,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar header.</div></div>
@@ -24569,8 +25399,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-header-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected PanelBar header.</div></div>
@@ -24599,8 +25429,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar header.</div></div>
@@ -24608,9 +25438,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-panelbar-header-selected-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered PanelBar header.</div></div>
@@ -24719,8 +25549,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-item-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix( in srgb, k-color(on-app-surface) 8%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
+    <td><code>k-color(primary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar items.</div></div>
@@ -24728,9 +25558,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-panelbar-item-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered PanelBar items.</div></div>
@@ -24798,19 +25628,49 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-panelbar-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-panelbar-item-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-panelbar-item-hover-focus-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused and hovered PanelBar items.</div></div>
@@ -24818,9 +25678,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-panelbar-item-hover-focus-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused and hovered PanelBar items.</div></div>
@@ -24849,8 +25709,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar items.</div></div>
@@ -24859,8 +25719,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected PanelBar items.</div></div>
@@ -24889,8 +25749,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar items.</div></div>
@@ -24898,9 +25758,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-panelbar-item-selected-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered PanelBar items.</div></div>
@@ -25099,8 +25959,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-bg</td>
     <td>String</td>
-    <td><code>$kendo-button-bg</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>$kendo-input-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Picker components.</div></div>
@@ -25109,8 +25969,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-text</td>
     <td>String</td>
-    <td><code>$kendo-button-text</code></td>
-    <td><code>var(--kendo-color-on-base)</code></td>
+    <td><code>$kendo-input-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Picker components.</div></div>
@@ -25119,7 +25979,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-border</td>
     <td>String</td>
-    <td><code>$kendo-button-border</code></td>
+    <td><code>$kendo-input-border</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -25129,7 +25989,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-gradient</td>
     <td>Null</td>
-    <td><code>$kendo-button-gradient</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25138,9 +25998,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-picker-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-button-shadow</code></td>
-    <td><code>(0 1px 1px 0 rgba(0, 0, 0, 0.16))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Picker components.</div></div>
@@ -25148,9 +26008,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-picker-hover-bg</td>
-    <td>String</td>
-    <td><code>$kendo-button-hover-bg</code></td>
-    <td><code>var(--kendo-color-base-hover)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Picker components.</div></div>
@@ -25158,9 +26018,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-picker-hover-text</td>
-    <td>String</td>
-    <td><code>$kendo-button-hover-text</code></td>
-    <td><code>var(--kendo-color-on-base)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Picker components.</div></div>
@@ -25169,8 +26029,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-button-hover-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>$kendo-input-hover-border</code></td>
+    <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Picker components.</div></div>
@@ -25179,7 +26039,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-hover-gradient</td>
     <td>Null</td>
-    <td><code>$kendo-button-hover-gradient</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25189,7 +26049,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-hover-shadow</td>
     <td>Null</td>
-    <td><code>$kendo-button-hover-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25238,12 +26098,52 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-picker-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Picker components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-picker-focus-outline-color</td>
+    <td>String</td>
+    <td><code>$kendo-input-focus-outline-color</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Picker components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-picker-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>$kendo-input-focus-outline-width</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Picker components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-picker-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>$kendo-input-focus-outline-offset</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Picker components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-picker-invalid-focus-outline</td>
+    <td>String</td>
+    <td><code>$kendo-input-invalid-focus-outline</code></td>
+    <td><code>var(--kendo-color-error-on-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused invalid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -25319,8 +26219,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-outline-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
+    <td><code>$kendo-input-outline-border</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Picker components.</div></div>
@@ -25328,9 +26228,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-picker-outline-hover-bg</td>
-    <td>String</td>
-    <td><code>$kendo-picker-outline-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline hovered Picker components.</div></div>
@@ -25339,8 +26239,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-outline-hover-text</td>
     <td>String</td>
-    <td><code>k-color(base)</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>$kendo-picker-outline-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline hovered Picker components.</div></div>
@@ -25349,8 +26249,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-outline-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-picker-outline-hover-bg</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>$kendo-input-outline-hover-border</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis) 90%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered Picker components.</div></div>
@@ -25388,9 +26288,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-picker-outline-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Picker components.</div></div>
@@ -25449,7 +26349,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-flat-border</td>
     <td>String</td>
-    <td><code>$kendo-button-border</code></td>
+    <td><code>$kendo-input-flat-border</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -25458,9 +26358,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-picker-flat-hover-bg</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat hovered Picker components.</div></div>
@@ -25479,7 +26379,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-picker-flat-hover-border</td>
     <td>String</td>
-    <td><code>k-color(border-alt)</code></td>
+    <td><code>$kendo-input-flat-hover-border</code></td>
     <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
@@ -25518,9 +26418,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-picker-flat-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Picker components.</div></div>
@@ -25680,7 +26580,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-pivotgrid-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-table-md-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid cell.</div></div>
@@ -25688,9 +26588,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-pivotgrid-cell-padding-y</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-table-md-cell-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid cell.</div></div>
@@ -25868,9 +26768,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-pivotgrid-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
@@ -26300,7 +27200,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-pivotgrid-alt-text</td>
     <td>String</td>
     <td><code>$kendo-grid-header-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid.</div></div>
@@ -26419,8 +27319,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popover-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(2, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover.</div></div>
@@ -26429,8 +27329,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popover-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-elevation-border(2, k-color(border))</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover.</div></div>
@@ -26440,7 +27340,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-popover-shadow</td>
     <td>String</td>
     <td><code>$kendo-popup-shadow</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Popover.</div></div>
@@ -26449,7 +27349,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popover-header-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-card-header-padding-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -26458,9 +27358,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-popover-header-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-card-header-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>List</td>
+    <td><code>k-spacing(4) k-spacing(2)</code></td>
+    <td><code>(var(--kendo-spacing-4) var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover header.</div></div>
@@ -26469,7 +27369,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popover-header-border-width</td>
     <td>Number</td>
-    <td><code>$kendo-card-header-border-width</code></td>
+    <td><code>0</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
@@ -26529,8 +27429,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popover-body-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-card-body-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover body.</div></div>
@@ -26539,11 +27439,31 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popover-actions-border-width</td>
     <td>Number</td>
-    <td><code>$kendo-popover-border-width</code></td>
-    <td><code>1px</code></td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Popover actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popover-actions-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popover-actions-padding-y</td>
+    <td>List</td>
+    <td><code>k-spacing(2) k-spacing(4)</code></td>
+    <td><code>(var(--kendo-spacing-2) var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -26590,7 +27510,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-popover-callout-border</td>
     <td>String</td>
     <td><code>$kendo-popover-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover callout.</div></div>
@@ -26679,8 +27599,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popup-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(2, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the popup.</div></div>
@@ -26699,8 +27619,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popup-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-elevation-border(2, k-color(border))</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the popup.</div></div>
@@ -26709,8 +27629,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-popup-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the popup.</div></div>
@@ -26799,8 +27719,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-progressbar-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ProgressBar.</div></div>
@@ -26859,8 +27779,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-progressbar-value-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress background color of the ProgressBar.</div></div>
@@ -26869,8 +27789,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-progressbar-value-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress text color of the ProgressBar.</div></div>
@@ -26879,8 +27799,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-progressbar-value-border</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active)</code></td>
+    <td><code>k-color(secondary-active)</code></td>
+    <td><code>var(--kendo-color-secondary-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress border color of the ProgressBar.</div></div>
@@ -26927,10 +27847,20 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-progressbar-chunk-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the chunk ProgressBar chunks.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-circular-progressbar-arc-stroke</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The arc stroke color of the circular ProgressBar.</div></div>
@@ -26979,8 +27909,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-prompt-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(2, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt.</div></div>
@@ -26989,8 +27919,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-prompt-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-elevation-border(2, k-color(border))</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt.</div></div>
@@ -27049,8 +27979,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-prompt-content-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the AIPrompt content.</div></div>
@@ -27166,6 +28096,36 @@ The following table lists the available variables for customizing the Starter th
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The elevation of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-prompt-footer-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-footer-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-footer-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -27209,8 +28169,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-prompt-box-header-padding</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PromptBox header.</div></div>
@@ -27229,8 +28189,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-prompt-box-affix-padding</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PromptBox affix.</div></div>
@@ -27440,7 +28400,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-radio-checked-bg</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the checked RadioButton.</div></div>
@@ -27450,7 +28410,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-radio-checked-text</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-text</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked RadioButton.</div></div>
@@ -27460,7 +28420,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-radio-checked-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-border</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the checked RadioButton.</div></div>
@@ -27478,9 +28438,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-radio-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-focus-shadow</code></td>
-    <td><code>(0 0 0 2px var(--kendo-color-border))</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused RadioButton.</div></div>
@@ -27498,12 +28458,72 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-radio-focus-checked-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-focus-checked-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary) 30%, transparent))</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-focus-checked-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(secondary-on-surface)</code></td>
+    <td><code>var(--kendo-color-secondary-on-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused and checked RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-focus-checked-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused and checked RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-focus-checked-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -27579,8 +28599,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-radio-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-checkbox-invalid-border</code></td>
-    <td><code>var(--kendo-color-error-on-surface)</code></td>
+    <td><code>k-color(error)</code></td>
+    <td><code>var(--kendo-color-error)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid RadioButton.</div></div>
@@ -27680,7 +28700,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-radio-ripple-bg</td>
     <td>String</td>
     <td><code>$kendo-radio-checked-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple.</div></div>
@@ -27855,8 +28875,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-rating-icon-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Rating icon.</div></div>
@@ -27865,8 +28885,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-rating-icon-hover-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Rating icon.</div></div>
@@ -27875,8 +28895,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-rating-icon-focus-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Rating icon.</div></div>
@@ -27885,8 +28905,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-rating-icon-focus-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(1)</code></td>
-    <td><code>var(--kendo-elevation-1)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
@@ -27895,11 +28915,41 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-rating-icon-focus-selected-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(1)</code></td>
-    <td><code>var(--kendo-elevation-1)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Rating.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Rating.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Rating.</div></div>
     </td>
 </tr>
 </tbody>
@@ -27996,7 +29046,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-scheduler-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler ToolBar.</div></div>
@@ -28036,7 +29086,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-scheduler-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler footer.</div></div>
@@ -28085,8 +29135,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-scheduler-event-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Scheduler event.</div></div>
@@ -28105,8 +29155,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-scheduler-event-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary-emphasis)</code></td>
+    <td><code>var(--kendo-color-secondary-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler event.</div></div>
@@ -28115,8 +29165,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-scheduler-event-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(secondary-on-surface)</code></td>
+    <td><code>var(--kendo-color-secondary-on-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler event.</div></div>
@@ -28124,9 +29174,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-scheduler-event-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(secondary-emphasis)</code></td>
+    <td><code>var(--kendo-color-secondary-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler event.</div></div>
@@ -28144,9 +29194,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-scheduler-event-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>List</td>
+    <td><code>inset 3px 0 0 0 k-color(secondary)</code></td>
+    <td><code>(inset 3px 0 0 0 var(--kendo-color-secondary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler event.</div></div>
@@ -28205,8 +29255,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-scheduler-event-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active)</code></td>
+    <td><code>k-color(secondary-emphasis)</code></td>
+    <td><code>var(--kendo-color-secondary-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Scheduler event.</div></div>
@@ -28215,8 +29265,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-scheduler-event-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(secondary-on-surface)</code></td>
+    <td><code>var(--kendo-color-secondary-on-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Scheduler event.</div></div>
@@ -28245,8 +29295,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-scheduler-event-selected-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>inset 3px 0 0 0 k-color(secondary), 0 0 0 1px white, 0 0 0 2px k-color(secondary-on-surface)</code></td>
+    <td><code>(inset 3px 0 0 0 var(--kendo-color-secondary), 0 0 0 1px white, 0 0 0 2px var(--kendo-color-secondary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Scheduler event.</div></div>
@@ -28265,8 +29315,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-scheduler-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Scheduler cell.</div></div>
@@ -28275,8 +29325,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-scheduler-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Scheduler cell.</div></div>
@@ -28804,9 +29854,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-scrollview-pagebutton-border</td>
-    <td>String</td>
+    <td>Color</td>
     <td><code>$kendo-button-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView page button.</div></div>
@@ -28840,6 +29890,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-primary-shadow</td>
+    <td>List</td>
+    <td><code>0 0 0 2px rgba(0, 0, 0, .13)</code></td>
+    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected ScrollView page button.</div></div>
     </td>
 </tr>
 <tr>
@@ -29134,9 +30194,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-segmented-control-thumb-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td>List</td>
+    <td><code>0 0 2px 0 rgba(0, 0, 0, 0.16)</code></td>
+    <td><code>(0 0 2px 0 rgba(0, 0, 0, 0.16))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Segmented Control thumb.</div></div>
@@ -29633,8 +30693,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 20%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 20%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 20%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 20%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton item.</div></div>
@@ -29783,8 +30843,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-draghandle-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider drag handle.</div></div>
@@ -29793,8 +30853,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-draghandle-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Slider drag handle.</div></div>
@@ -29803,8 +30863,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-draghandle-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Slider drag handle.</div></div>
@@ -29823,8 +30883,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-draghandle-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Slider drag handle.</div></div>
@@ -29843,8 +30903,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-draghandle-hover-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider drag handle.</div></div>
@@ -29873,8 +30933,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-draghandle-pressed-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active)</code></td>
+    <td><code>k-color(secondary-active)</code></td>
+    <td><code>var(--kendo-color-secondary-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Slider drag handle.</div></div>
@@ -29893,8 +30953,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-draghandle-pressed-border</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active)</code></td>
+    <td><code>k-color(secondary-active)</code></td>
+    <td><code>var(--kendo-color-secondary-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Slider drag handle.</div></div>
@@ -29912,12 +30972,42 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(primary) 30%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary) 30%, transparent))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Slider drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -29963,8 +31053,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
-    <td><code>var(--kendo-color-base-emphasis)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider track.</div></div>
@@ -29973,8 +31063,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-slider-selection-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider's track selection.</div></div>
@@ -30256,9 +31346,9 @@ The following table lists the available variables for customizing the Starter th
 </thead>
 <tbody><tr>
     <td>$kendo-split-button-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the SplitButton.</div></div>
@@ -30647,8 +31737,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet header.</div></div>
@@ -30688,7 +31778,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-spreadsheet-table-header-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-header-bg</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet table headers.</div></div>
@@ -30737,8 +31827,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-action-bar-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet action bar.</div></div>
@@ -30747,8 +31837,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-action-bar-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet action bar.</div></div>
@@ -30766,9 +31856,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-spreadsheet-action-bar-font-family</td>
-    <td>List</td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>(Arial, Verdana, sans-serif)</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet action bar.</div></div>
@@ -30787,8 +31877,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-formula-bar-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Spreadsheet formula bar.</div></div>
@@ -30836,9 +31926,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-spreadsheet-view-font-family</td>
-    <td>List</td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>(Arial, Verdana, sans-serif)</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet view.</div></div>
@@ -30947,8 +32037,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-active-cell-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px k-color(primary)</code></td>
-    <td><code>(inset 0 0 0 1px var(--kendo-color-primary))</code></td>
+    <td><code>inset 0 0 0 2px k-color(primary)</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet active cell.</div></div>
@@ -31007,8 +32097,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet cell.</div></div>
@@ -31018,7 +32108,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-spreadsheet-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-cell-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet cell.</div></div>
@@ -31026,9 +32116,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-spreadsheet-cell-editor-line-height</td>
-    <td>Number</td>
-    <td><code>20px</code></td>
-    <td><code>20px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Spreadsheet cell editor.</div></div>
@@ -31037,8 +32127,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-cell-editor-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet cell editor.</div></div>
@@ -31047,8 +32137,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-cell-editor-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet cell editor.</div></div>
@@ -31117,8 +32207,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-sheets-bar-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet sheets bar.</div></div>
@@ -31127,8 +32217,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-spreadsheet-sheets-bar-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet sheets bar.</div></div>
@@ -31626,9 +32716,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-stepper-indicator-border-radius</td>
-    <td>Number</td>
-    <td><code>50%</code></td>
-    <td><code>50%</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(full)</code></td>
+    <td><code>var(--kendo-border-radius-full)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Stepper indicator.</div></div>
@@ -31767,8 +32857,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-stepper-indicator-done-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's done indicator.</div></div>
@@ -31777,8 +32867,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-stepper-indicator-done-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's done indicator.</div></div>
@@ -31788,7 +32878,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-done-border</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's done indicator.</div></div>
@@ -31797,8 +32887,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-stepper-indicator-done-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's hovered done indicator.</div></div>
@@ -31816,9 +32906,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-stepper-indicator-done-hover-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(secondary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's hovered done indicator.</div></div>
@@ -31827,8 +32917,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary) 60%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(secondary) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's disabled done indicator.</div></div>
@@ -31837,8 +32927,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled done indicator.</div></div>
@@ -31848,7 +32938,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-done-disabled-border</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled done indicator.</div></div>
@@ -31858,7 +32948,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-current-bg</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper current indicator.</div></div>
@@ -31868,7 +32958,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-current-text</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-text</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper current indicator.</div></div>
@@ -31878,7 +32968,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-current-border</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-border</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper current indicator.</div></div>
@@ -31888,7 +32978,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-current-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-hover-bg</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's hovered current indicator.</div></div>
@@ -31906,9 +32996,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-stepper-indicator-current-hover-border</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-stepper-indicator-done-hover-border</code></td>
-    <td><code>null</code></td>
+    <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's hovered current indicator.</div></div>
@@ -31918,7 +33008,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-current-disabled-bg</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's disabled current indicator.</div></div>
@@ -31928,7 +33018,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-current-disabled-text</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-text</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled current indicator.</div></div>
@@ -31938,7 +33028,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-stepper-indicator-current-disabled-border</td>
     <td>String</td>
     <td><code>$kendo-stepper-indicator-done-disabled-border</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled current indicator.</div></div>
@@ -31952,6 +33042,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-current-font-weight</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-weight-semibold)</code></td>
+    <td><code>var(--kendo-font-weight-semibold)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the current Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -32046,9 +33146,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-stepper-progressbar-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color( base-subtle )</code></td>
+    <td><code>var(--kendo-color-base-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper ProgressBar.</div></div>
@@ -32066,9 +33166,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-stepper-progressbar-fill-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color( secondary )</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Stepper ProgressBar.</div></div>
@@ -32187,8 +33287,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-suggestion-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Suggestion.</div></div>
@@ -32197,11 +33297,21 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-suggestion-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-lg, normal )</code></td>
-    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Suggestion.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-suggestion-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-medium, normal )</code></td>
+    <td><code>var(--kendo-font-weight-medium, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Suggestion.</div></div>
     </td>
 </tr>
 <tr>
@@ -32216,9 +33326,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-suggestion-focus-shadow-blur</td>
-    <td>Number</td>
-    <td><code>0</code></td>
-    <td><code>0</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the focused Suggestion.</div></div>
@@ -32226,9 +33336,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-suggestion-focus-shadow-spread</td>
-    <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the focused Suggestion.</div></div>
@@ -32236,12 +33346,42 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-suggestion-focus-shadow-color</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, currentColor 16%, transparent)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow color of the focused Suggestion.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-suggestion-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Suggestion.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-suggestion-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Suggestion.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-suggestion-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Suggestion.</div></div>
     </td>
 </tr>
 <tr>
@@ -32626,9 +33766,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-switch-off-track-hover-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(base-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-base-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered Switch is not checked.</div></div>
@@ -32706,9 +33846,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-switch-off-track-focus-ring</td>
-    <td>List</td>
-    <td><code>2px solid color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>(2px solid color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is not checked.</div></div>
@@ -32887,8 +34027,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is checked.</div></div>
@@ -32897,8 +34037,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-switch-on-track-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(on-secondary)</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the Switch is checked.</div></div>
@@ -32908,7 +34048,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-switch-on-track-border</td>
     <td>String</td>
     <td><code>$kendo-switch-on-track-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is checked.</div></div>
@@ -32926,9 +34066,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-switch-on-track-hover-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(secondary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered Switch is checked.</div></div>
@@ -33006,9 +34146,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-switch-on-track-focus-ring</td>
-    <td>List</td>
-    <td><code>2px solid color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>(2px solid color-mix(in srgb, var(--kendo-color-primary) 25%, transparent))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is checked.</div></div>
@@ -33185,6 +34325,36 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-switch-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Switch track.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Switch track.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Switch track.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-switch-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -33241,8 +34411,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-table-cell-vertical-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of vertical border of table cells.</div></div>
@@ -33251,8 +34421,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-table-cell-horizontal-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of horizontal border of table cells.</div></div>
@@ -33301,8 +34471,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-table-md-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Table cell.</div></div>
@@ -33310,9 +34480,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-table-md-cell-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(2.5)} + 1px )</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Table cell.</div></div>
@@ -33336,6 +34506,66 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Table cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-sm-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for small size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-sm-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for small size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-md-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for medium size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-md-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for medium size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-lg-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for large size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-lg-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for large size.</div></div>
     </td>
 </tr>
 <tr>
@@ -33470,9 +34700,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-table-alt-row-bg</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 5%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 5%, transparent)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in table.</div></div>
@@ -33560,9 +34790,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-table-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
@@ -33643,25 +34873,25 @@ The following table lists the available variables for customizing the Starter th
     <td>Map</td>
     <td><code>(
     sm: (
-        font-size: var(--kendo-font-size),
-        line-height: var(--kendo-line-height),
+        font-size: $kendo-table-sm-font-size,
+        line-height: $kendo-table-sm-line-height,
         cell-padding-x: $kendo-table-sm-cell-padding-x,
         cell-padding-y: $kendo-table-sm-cell-padding-y
     ),
     md: (
-        font-size: var(--kendo-font-size),
-        line-height: var(--kendo-line-height),
+        font-size: $kendo-table-md-font-size,
+        line-height: $kendo-table-md-line-height,
         cell-padding-x: $kendo-table-md-cell-padding-x,
         cell-padding-y: $kendo-table-md-cell-padding-y
     ),
     lg: (
-        font-size: var(--kendo-font-size),
-        line-height: var(--kendo-line-height),
+        font-size: $kendo-table-lg-font-size,
+        line-height: $kendo-table-lg-line-height,
         cell-padding-x: $kendo-table-lg-cell-padding-x,
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-3)","cell-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-sm)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li><li>lg: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Table.</div></div>
@@ -33900,8 +35130,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-tabstrip-item-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TabStrip items.</div></div>
@@ -33950,8 +35180,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-tabstrip-md-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium TabStrip items.</div></div>
@@ -34109,9 +35339,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TabStrip items.</div></div>
@@ -34288,6 +35518,26 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-tabstrip-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused TabStrip item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tabstrip-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused TabStrip item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tabstrip-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -34310,7 +35560,7 @@ The following table lists the available variables for customizing the Starter th
         item-padding-y: $kendo-tabstrip-lg-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-1\\.5)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TabStrip.</div></div>
@@ -34428,9 +35678,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-taskboard-toolbar-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-taskboard-spacer</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-taskboard-spacer} * .625 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4) * 0.625)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard Toolbar.</div></div>
@@ -34438,9 +35688,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-taskboard-toolbar-padding-x</td>
-    <td>String</td>
+    <td>Calculation</td>
     <td><code>$kendo-taskboard-toolbar-padding-y</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>calc(var(--kendo-spacing-4) * 0.625)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard Toolbar.</div></div>
@@ -34448,9 +35698,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-taskboard-toolbar-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Toolbar.</div></div>
@@ -34559,8 +35809,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-taskboard-column-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard column.</div></div>
@@ -34628,9 +35878,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-taskboard-column-header-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) / 2)</code></td>
+    <td>String</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column header.</div></div>
@@ -34638,9 +35888,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-taskboard-column-header-padding-x</td>
-    <td>Calculation</td>
+    <td>String</td>
     <td><code>$kendo-taskboard-column-header-padding-y</code></td>
-    <td><code>calc(var(--kendo-spacing-4) / 2)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard column header.</div></div>
@@ -34649,8 +35899,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-taskboard-column-header-gap</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} / 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) / 4)</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} * .625 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4) * 0.625)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column header.</div></div>
@@ -34658,9 +35908,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-taskboard-column-header-actions-gap</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column header actions.</div></div>
@@ -34757,6 +36007,16 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-taskboard-pane-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-taskboard-pane-bg</td>
     <td>String</td>
     <td><code>k-color(surface-alt)</code></td>
@@ -34788,9 +36048,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-taskboard-pane-header-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} * .75 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) * 0.75)</code></td>
+    <td>String</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane header.</div></div>
@@ -34899,8 +36159,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-taskboard-card-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card.</div></div>
@@ -34908,9 +36168,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-taskboard-card-shadow</td>
-    <td>Null</td>
-    <td><code>$kendo-card-shadow</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the TaskBoard Card.</div></div>
@@ -34919,7 +36179,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-taskboard-card-bg</td>
     <td>String</td>
-    <td><code>$kendo-card-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -34940,7 +36200,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-taskboard-card-border</td>
     <td>String</td>
     <td><code>$kendo-card-border</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 1 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Card.</div></div>
@@ -34989,8 +36249,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-taskboard-card-selected-border</td>
     <td>String</td>
-    <td><code>k-color(primary-emphasis)</code></td>
-    <td><code>var(--kendo-color-primary-emphasis)</code></td>
+    <td><code>k-color(primary)</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the selected TaskBoard Card.</div></div>
@@ -35037,6 +36297,36 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-taskboard-card-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-taskboard-drag-placeholder-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -35050,7 +36340,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-taskboard-drag-placeholder-border-radius</td>
     <td>String</td>
     <td><code>$kendo-taskboard-card-border-radius</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card placeholder.</div></div>
@@ -35147,10 +36437,20 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-tile-layout-card-shadow</td>
+    <td>String</td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the TileLayout card.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tile-layout-card-focus-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>var(--kendo-elevation-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the TileLayout card.</div></div>
@@ -35169,8 +36469,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-tile-layout-hint-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(lg)</code></td>
-    <td><code>var(--kendo-border-radius-lg)</code></td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the TileLayout hint.</div></div>
@@ -35938,7 +37238,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
-    <td><code>$kendo-button-bg</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
@@ -35948,7 +37248,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-timeline-track-border-color</td>
     <td>String</td>
-    <td><code>$kendo-button-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -35978,7 +37278,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-timeline-flag-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-md-padding-x</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -35988,7 +37288,7 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-timeline-flag-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-md-padding-y</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -35997,9 +37297,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-timeline-flag-line-height</td>
-    <td>String</td>
-    <td><code>$kendo-button-line-height</code></td>
-    <td><code>var(--kendo-line-height, normal)</code></td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Timeline flag.</div></div>
@@ -36068,8 +37368,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-timeline-flag-callout-width</td>
     <td>Number</td>
-    <td><code>10px</code></td>
-    <td><code>10px</code></td>
+    <td><code>14px</code></td>
+    <td><code>14px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline's flag callout.</div></div>
@@ -36078,8 +37378,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-timeline-flag-callout-height</td>
     <td>Number</td>
-    <td><code>10px</code></td>
-    <td><code>10px</code></td>
+    <td><code>7px</code></td>
+    <td><code>7px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline's flag callout.</div></div>
@@ -36099,7 +37399,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-timeline-flag-margin-bottom-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-track-size} + 2 * #{$kendo-timeline-track-border-width} + #{$kendo-timeline-flag-offset-bottom} + #{$kendo-timeline-flag-callout-height})</code></td>
-    <td><code>calc(var(--kendo-spacing-1\.5) + 2 * 1px + 4px + 10px)</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5) + 2 * 1px + 4px + 7px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline flag.</div></div>
@@ -36213,6 +37513,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-timeline-card-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline card.</div></div>
     </td>
 </tr>
 <tr>
@@ -36438,8 +37748,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
@@ -36489,7 +37799,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>List</td>
     <td><code>$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
-    <td><code>(var(--kendo-color-surface), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
+    <td><code>(var(--kendo-color-surface-alt), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the Toolbar.</div></div>
@@ -36508,8 +37818,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-toolbar-outline-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(base-emphasis) 80%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the outline Toolbar.</div></div>
@@ -36617,9 +37927,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-toolbar-item-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>
@@ -36649,7 +37959,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-toolbar-overflow-button-padding-y</td>
     <td>String</td>
     <td><code>$kendo-menu-popup-md-item-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Toolbar overflow button.</div></div>
@@ -36767,8 +38077,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-tooltip-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size )</code></td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var( --kendo-font-size-md )</code></td>
+    <td><code>var(--kendo-font-size-md)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Tooltip.</div></div>
@@ -36817,8 +38127,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-tooltip-bg</td>
     <td>String</td>
-    <td><code>k-color(inverse)</code></td>
-    <td><code>var(--kendo-color-inverse)</code></td>
+    <td><code>k-elevation-bg(2, k-color(inverse))</code></td>
+    <td><code>oklch(from var(--kendo-color-inverse) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default background of the Tooltip.</div></div>
@@ -36838,7 +38148,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-tooltip-border</td>
     <td>String</td>
     <td><code>$kendo-tooltip-bg</code></td>
-    <td><code>var(--kendo-color-inverse)</code></td>
+    <td><code>oklch(from var(--kendo-color-inverse) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border color of the Tooltip.</div></div>
@@ -36947,8 +38257,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-treeview-gap</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5)</code></td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the TreeView.</div></div>
@@ -37077,8 +38387,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-treeview-md-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium TreeView items.</div></div>
@@ -37117,8 +38427,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-treeview-lg-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large TreeView items.</div></div>
@@ -37237,8 +38547,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 6%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 6%, transparent)</code></td>
+    <td><code>k-color(primary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered TreeView items.</div></div>
@@ -37247,8 +38557,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-treeview-item-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered TreeView items.</div></div>
@@ -37277,8 +38587,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 12%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 12%, transparent)</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>
@@ -37287,8 +38597,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-treeview-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected TreeView items.</div></div>
@@ -37317,8 +38627,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-treeview-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 18%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 18%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active), k-color(primary-emphasis) 50%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active), var(--kendo-color-primary-emphasis) 50%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected and hovered TreeView items.</div></div>
@@ -37326,12 +38636,32 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of focused TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -37426,9 +38756,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-treeview-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
@@ -37463,7 +38793,7 @@ The following table lists the available variables for customizing the Starter th
         checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-sm)","item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1)","checkbox-padding-x":"var(--kendo-spacing-0)","checkbox-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","item-padding-x":"var(--kendo-spacing-2\\.5)","item-padding-y":"var(--kendo-spacing-1\\.5)","checkbox-padding-x":"var(--kendo-spacing-0)","checkbox-padding-y":"var(--kendo-spacing-1)"</li><li>lg: "font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1\\.5)","checkbox-padding-x":"var(--kendo-spacing-0)","checkbox-padding-y":null</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-sm)","item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1)","checkbox-padding-x":"var(--kendo-spacing-0)","checkbox-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1\\.5)","checkbox-padding-x":"var(--kendo-spacing-0)","checkbox-padding-y":"var(--kendo-spacing-1)"</li><li>lg: "font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-2)","checkbox-padding-x":"var(--kendo-spacing-0)","checkbox-padding-y":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TreeView.</div></div>
@@ -38798,6 +40128,16 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-upload-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Upload.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-upload-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
@@ -38870,8 +40210,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-upload-dropzone-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Upload dropzone.</div></div>
@@ -38880,8 +40220,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-upload-dropzone-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Upload dropzone.</div></div>
@@ -38950,8 +40290,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-upload-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of an uploaded item.</div></div>
@@ -38960,8 +40300,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-upload-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of an uploaded item.</div></div>
@@ -39150,8 +40490,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-window-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Window.</div></div>
@@ -39259,9 +40599,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-window-actions-gap</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the buttons in the Window titlebar.</div></div>
@@ -39340,8 +40680,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-window-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
-    <td><code>var(--kendo-color-surface-alt)</code></td>
+    <td><code>k-elevation-bg(3, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 3 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 3 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window.</div></div>
@@ -39360,8 +40700,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-window-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
+    <td><code>k-elevation-border(3, k-color(border))</code></td>
+    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 3 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Window.</div></div>
@@ -39370,8 +40710,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-window-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(8)</code></td>
-    <td><code>var(--kendo-elevation-8)</code></td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Window.</div></div>
@@ -39380,8 +40720,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-window-focus-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(9)</code></td>
-    <td><code>var(--kendo-elevation-9)</code></td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>
@@ -39390,8 +40730,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-window-titlebar-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-elevation-bg(3, k-color(surface-alt))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) calc(l + 3 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 3 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window titlebar.</div></div>
@@ -39474,9 +40814,9 @@ The following table lists the available variables for customizing the Starter th
 </thead>
 <tbody><tr>
     <td>$kendo-wizard-padding-x</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(2)} * 2.5 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2) * 2.5)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard.</div></div>
@@ -39484,9 +40824,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-wizard-padding-y</td>
-    <td>Calculation</td>
-    <td><code>$kendo-wizard-padding-x</code></td>
-    <td><code>calc(var(--kendo-spacing-2) * 2.5)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard.</div></div>
@@ -39494,9 +40834,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-wizard-content-padding-x</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(2)} * 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2) * 4)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard content.</div></div>
@@ -39504,9 +40844,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-wizard-content-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(1)} * 8 )</code></td>
-    <td><code>calc(var(--kendo-spacing-1) * 8)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard content.</div></div>

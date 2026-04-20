@@ -48,6 +48,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-expander-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ExpansionPanel.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-expander-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
@@ -109,12 +119,42 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ExpansionPanel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ExpansionPanel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ExpansionPanel.</div></div>
     </td>
 </tr>
 <tr>
@@ -189,12 +229,32 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-header-focus-shadow</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-title-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the ExpansionPanel title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-expander-title-text-transform</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the ExpansionPanel title.</div></div>
     </td>
 </tr>
 <tr>
@@ -239,9 +299,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-content-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>List</td>
+    <td><code>k-spacing(2) k-spacing(4)</code></td>
+    <td><code>(var(--kendo-spacing-2) var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ExpansionPanel content.</div></div>

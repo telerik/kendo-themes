@@ -148,6 +148,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-media-player-titlebar-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-media-player-titlebar-font-size, null )</code></td>
+    <td><code>var(--kendo-media-player-titlebar-font-size, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-media-player-titlebar-font-weight, null )</code></td>
+    <td><code>var(--kendo-media-player-titlebar-font-weight, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-media-player-titlebar-line-height, null )</code></td>
+    <td><code>var(--kendo-media-player-titlebar-line-height, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-media-player-titlebar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-titlebar-bg, color-mix(in srgb, k-color(on-app-surface) 40%, transparent) )</code></td>

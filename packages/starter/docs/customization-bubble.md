@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Bubble.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(base-on-subtle)</code></td>
+    <td><code>var(--kendo-color-base-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Bubble.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>k-color(base)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Bubble.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bubble-border</td>
     <td>String</td>
     <td><code>$kendo-bubble-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Bubble.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hover Bubble.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bubble-hover-border</td>
     <td>String</td>
     <td><code>$kendo-bubble-hover-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Bubble.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-active-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle-active)</code></td>
-    <td><code>var(--kendo-color-base-subtle-active)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Bubble.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bubble-active-border</td>
     <td>String</td>
     <td><code>$kendo-bubble-active-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle-active)</code></td>
+    <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Bubble.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-focus-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>k-color(base)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Bubble.</div></div>
@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bubble-focus-border</td>
     <td>String</td>
     <td><code>$kendo-bubble-focus-bg</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Bubble.</div></div>
@@ -199,12 +199,42 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-bubble-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bubble-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bubble-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bubble-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -240,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>k-color(secondary-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered alt Bubble.</div></div>
@@ -251,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-alt-bubble-hover-border</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-hover-bg</code></td>
-    <td><code>var(--kendo-color-primary-hover)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered alt Bubble.</div></div>
@@ -260,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-active-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
-    <td><code>var(--kendo-color-primary-active)</code></td>
+    <td><code>k-color(secondary-subtle-active)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Bubble.</div></div>
@@ -271,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-alt-bubble-active-border</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-active-bg</code></td>
-    <td><code>var(--kendo-color-primary-active)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active alt Bubble.</div></div>
@@ -281,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-alt-bubble-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused alt Bubble.</div></div>
@@ -291,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chat-alt-bubble-focus-border</td>
     <td>String</td>
     <td><code>$kendo-chat-alt-bubble-focus-bg</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused alt Bubble.</div></div>
@@ -299,9 +329,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chat-alt-bubble-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(primary) 16%, transparent)</code></td>
-    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary) 16%, transparent))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused alt Bubble.</div></div>
