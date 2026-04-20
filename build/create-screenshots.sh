@@ -20,7 +20,7 @@ cp packages/$THEME/dist/all.css $THEME_DIR/assets/all.css
 
 # replace references
 find "$THEME_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
-    -e "s#/packages/default/dist/#../assets/#" \
+    -e "s#/packages/starter/dist/#../assets/#" \
     -e "s#/packages/html/assets/#../assets/#"
 
 npx snapshot \
