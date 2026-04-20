@@ -1024,8 +1024,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-menu-clear-text</td>
     <td>String</td>
-    <td><code>var( --kendo-adaptive-menu-clear-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-adaptive-menu-clear-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-adaptive-menu-clear-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-adaptive-menu-clear-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Adaptive menu clear button.</div></div>
@@ -1094,8 +1094,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-grid-sort-text</td>
     <td>String</td>
-    <td><code>var( --kendo-adaptive-grid-sort-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-adaptive-grid-sort-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-adaptive-grid-sort-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-adaptive-grid-sort-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Adaptive Grid sort indicator.</div></div>
@@ -1104,8 +1104,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-scheduler-current-text</td>
     <td>String</td>
-    <td><code>var( --kendo-adaptive-scheduler-current-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-adaptive-scheduler-current-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-adaptive-scheduler-current-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-adaptive-scheduler-current-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the current date in the Adaptive Scheduler.</div></div>
@@ -7345,8 +7345,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-text</td>
     <td>String</td>
-    <td><code>var( --kendo-chat-alt-bubble-text, #{k-color(surface-alt)} )</code></td>
-    <td><code>var(--kendo-chat-alt-bubble-text, var(--kendo-color-surface-alt))</code></td>
+    <td><code>var( --kendo-chat-alt-bubble-text, #{k-color(on-primary)} )</code></td>
+    <td><code>var(--kendo-chat-alt-bubble-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat alt bubble.</div></div>
@@ -7787,8 +7787,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>String</td>
-    <td><code>var( --kendo-checkbox-checked-text, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-checkbox-checked-text, var(--kendo-color-surface-alt))</code></td>
+    <td><code>var( --kendo-checkbox-checked-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-checkbox-checked-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the checked CheckBox.</div></div>
@@ -7987,8 +7987,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-checked-text</td>
     <td>String</td>
-    <td><code>var( --kendo-checkbox-hover-checked-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-checkbox-hover-checked-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-checkbox-hover-checked-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-checkbox-hover-checked-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and checked CheckBox.</div></div>
@@ -11471,8 +11471,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-group-menu-item-add-action-text</td>
     <td>String</td>
-    <td><code>var( --kendo-group-menu-item-add-action-text, k-color(primary) )</code></td>
-    <td><code>var(--kendo-group-menu-item-add-action-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-group-menu-item-add-action-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-group-menu-item-add-action-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColumnMenu item.</div></div>
@@ -12130,8 +12130,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-indicator-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-indicator-hover-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-dock-indicator-hover-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-dock-indicator-hover-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-dock-indicator-hover-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered dock indicator in the DockManager component.</div></div>
@@ -13380,8 +13380,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-editor-selected-text, #{k-color(app-surface)} )</code></td>
-    <td><code>var(--kendo-editor-selected-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-editor-selected-text, #{k-color(on-primary)} )</code></td>
+    <td><code>var(--kendo-editor-selected-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the Editor.</div></div>
@@ -14670,8 +14670,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-preview-field-text</td>
     <td>String</td>
-    <td><code>var( --kendo-filter-preview-field-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-filter-preview-field-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-filter-preview-field-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-filter-preview-field-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview field.</div></div>
@@ -16256,8 +16256,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-selected-text</td>
     <td>String</td>
-    <td><code>var(--kendo-gantt-task-selected-text, #{k-color(app-surface)})</code></td>
-    <td><code>var(--kendo-gantt-task-selected-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var(--kendo-gantt-task-selected-text, #{k-color(on-primary)})</code></td>
+    <td><code>var(--kendo-gantt-task-selected-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Gantt task.</div></div>
@@ -23277,8 +23277,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-message-box-link-text</td>
     <td>String</td>
-    <td><code>var( --kendo-message-box-link-text, k-color(primary) )</code></td>
-    <td><code>var(--kendo-message-box-link-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-message-box-link-text, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-message-box-link-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the message box links.</div></div>
@@ -23287,8 +23287,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-message-box-link-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-message-box-link-hover-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-message-box-link-hover-text, var(--kendo-color-primary-hover))</code></td>
+    <td><code>var( --kendo-message-box-link-hover-text, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-message-box-link-hover-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the message box links.</div></div>
@@ -28296,8 +28296,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-checked-text</td>
     <td>String</td>
-    <td><code>var( --kendo-radio-checked-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-radio-checked-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-radio-checked-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-radio-checked-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked RadioButton.</div></div>
@@ -28326,8 +28326,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-hover-checked-text</td>
     <td>String</td>
-    <td><code>var( --kendo-radio-hover-checked-text, #{k-color(primary-hover)} )</code></td>
-    <td><code>var(--kendo-radio-hover-checked-text, var(--kendo-color-primary-hover))</code></td>
+    <td><code>var( --kendo-radio-hover-checked-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-radio-hover-checked-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked and hovered RadioButton.</div></div>
@@ -29886,8 +29886,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-searchbox-icon-color</td>
     <td>String</td>
-    <td><code>var( --kendo-searchbox-icon-color, k-color(primary) )</code></td>
-    <td><code>var(--kendo-searchbox-icon-color, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-searchbox-icon-color, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-searchbox-icon-color, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the searchbox icon.</div></div>
@@ -32288,8 +32288,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-spreadsheet-insert-image-dialog-overlay-hover-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>var(--kendo-spreadsheet-insert-image-dialog-overlay-hover-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Spreadsheet image Dialog preview.</div></div>
@@ -33758,8 +33758,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-text</td>
     <td>String</td>
-    <td><code>var( --kendo-switch-on-track-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-switch-on-track-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-switch-on-track-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-switch-on-track-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the Switch is checked.</div></div>
@@ -33788,8 +33788,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-switch-on-track-hover-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-switch-on-track-hover-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-switch-on-track-hover-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-switch-on-track-hover-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered Switch is checked.</div></div>
@@ -33818,8 +33818,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-focus-text</td>
     <td>String</td>
-    <td><code>var( --kendo-switch-on-track-focus-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-switch-on-track-focus-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-switch-on-track-focus-text, k-color(on-primary) )</code></td>
+    <td><code>var(--kendo-switch-on-track-focus-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused Switch is checked.</div></div>
@@ -33848,8 +33848,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-switch-on-track-disabled-text, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-switch-on-track-disabled-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-switch-on-track-disabled-text, k-color(on-app-surface) )</code></td>
+    <td><code>var(--kendo-switch-on-track-disabled-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled Switch is checked.</div></div>
@@ -38088,8 +38088,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-loadmore-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-treeview-loadmore-hover-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-treeview-loadmore-hover-text, var(--kendo-color-primary-hover))</code></td>
+    <td><code>var( --kendo-treeview-loadmore-hover-text, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-treeview-loadmore-hover-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Load More button in the TreeView.</div></div>
@@ -38118,8 +38118,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-loadmore-focus-text</td>
     <td>String</td>
-    <td><code>var( --kendo-treeview-loadmore-focus-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-treeview-loadmore-focus-text, var(--kendo-color-primary-hover))</code></td>
+    <td><code>var( --kendo-treeview-loadmore-focus-text, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-treeview-loadmore-focus-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Load More button in the TreeView.</div></div>

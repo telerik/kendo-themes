@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-link-text</td>
     <td>String</td>
-    <td><code>var( --kendo-message-box-link-text, k-color(primary) )</code></td>
-    <td><code>var(--kendo-message-box-link-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-message-box-link-text, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-message-box-link-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the message box links.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-link-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-message-box-link-hover-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-message-box-link-hover-text, var(--kendo-color-primary-hover))</code></td>
+    <td><code>var( --kendo-message-box-link-hover-text, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-message-box-link-hover-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the message box links.</div></div>

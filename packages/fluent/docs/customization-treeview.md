@@ -510,8 +510,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-loadmore-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-treeview-loadmore-hover-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-treeview-loadmore-hover-text, var(--kendo-color-primary-hover))</code></td>
+    <td><code>var( --kendo-treeview-loadmore-hover-text, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-treeview-loadmore-hover-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Load More button in the TreeView.</div></div>
@@ -540,8 +540,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-loadmore-focus-text</td>
     <td>String</td>
-    <td><code>var( --kendo-treeview-loadmore-focus-text, k-color(primary-hover) )</code></td>
-    <td><code>var(--kendo-treeview-loadmore-focus-text, var(--kendo-color-primary-hover))</code></td>
+    <td><code>var( --kendo-treeview-loadmore-focus-text, k-color(primary-on-surface) )</code></td>
+    <td><code>var(--kendo-treeview-loadmore-focus-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Load More button in the TreeView.</div></div>
