@@ -450,8 +450,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(dark) 30%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-dark) 30%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(inverse) 30%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-inverse) 30%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient.</div></div>
