@@ -3,4 +3,9 @@
 
 @mixin kendo-editor--layout() {
     @include kendo-editor--layout-base();
+
+    .k-editor-content {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+    }
 }

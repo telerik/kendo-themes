@@ -8,6 +8,9 @@
 /// The width of the border around the Scheduler.
 /// @group scheduler
 $kendo-scheduler-border-width: 1px !default;
+/// The border radius of the Scheduler.
+/// @group scheduler
+$kendo-scheduler-border-radius: null !default;
 /// The font family of the Scheduler.
 /// @group scheduler
 $kendo-scheduler-font-family: var(--kendo-font-family) !default;
@@ -264,6 +267,7 @@ $kendo-scheduler-header-bg: k-color(surface) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/scheduler/_variables.scss" with (
     $kendo-scheduler-border-width: $kendo-scheduler-border-width,
+    $kendo-scheduler-border-radius: $kendo-scheduler-border-radius,
     $kendo-scheduler-font-family: $kendo-scheduler-font-family,
     $kendo-scheduler-font-size: $kendo-scheduler-font-size,
     $kendo-scheduler-line-height: $kendo-scheduler-line-height,

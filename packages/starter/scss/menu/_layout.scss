@@ -7,6 +7,7 @@
     @include kendo-menu--layout-base();
 
     .k-menu-item {
+        border-radius: k-border-radius(sm);
         transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
     }
 

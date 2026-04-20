@@ -10,6 +10,9 @@ $kendo-file-manager-spacer: k-spacing(4) !default;
 /// The border width of the FileManager.
 /// @group file-manager
 $kendo-file-manager-border-width: 1px !default;
+/// The border radius of the FileManager.
+/// @group file-manager
+$kendo-file-manager-border-radius: null !default;
 /// The font family of the FileManager.
 /// @group file-manager
 $kendo-file-manager-font-family: var(--kendo-font-family) !default;
@@ -179,6 +182,7 @@ $kendo-file-manager-preview-icon-border: null !default;
 @forward "@progress/kendo-theme-core/scss/components/filemanager/_variables.scss" with (
     $kendo-file-manager-spacer: $kendo-file-manager-spacer,
     $kendo-file-manager-border-width: $kendo-file-manager-border-width,
+    $kendo-file-manager-border-radius: $kendo-file-manager-border-radius,
     $kendo-file-manager-font-family: $kendo-file-manager-font-family,
     $kendo-file-manager-font-size: $kendo-file-manager-font-size,
     $kendo-file-manager-line-height: $kendo-file-manager-line-height,

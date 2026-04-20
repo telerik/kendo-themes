@@ -3,4 +3,15 @@
 
 @mixin kendo-scheduler--layout() {
     @include kendo-scheduler--layout-base();
+
+    .k-scheduler-header .k-scheduler-cell {
+        font-size: var(--kendo-font-size-sm);
+        font-weight: var(--kendo-font-weight-medium);
+    }
+
+    .k-scheduler-times .k-scheduler-cell {
+        font-size: var(--kendo-font-size-sm);
+        line-height: var(--kendo-line-height-xs);
+        font-weight: var(--kendo-font-weight-normal);
+    }
 }

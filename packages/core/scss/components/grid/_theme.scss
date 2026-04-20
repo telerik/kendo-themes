@@ -93,7 +93,7 @@
             }
 
             .k-grid-content-sticky {
-                border-color: $kendo-grid-sticky-border;
+                border-inline-color: $kendo-grid-sticky-border;
                 border-block-start-color: $kendo-grid-header-border;
             }
 
@@ -119,7 +119,7 @@
         .k-master-row {
             .k-grid-content-sticky {
                 background-color: $kendo-grid-sticky-bg;
-                border-color: $kendo-grid-sticky-border;
+                border-inline-color: $kendo-grid-sticky-border;
                 border-block-start-color: $kendo-grid-header-border;
             }
 

@@ -18,6 +18,9 @@ $kendo-chat-height: 320px !default;
 /// The border width of the Chat.
 /// @group chat
 $kendo-chat-border-width: 1px !default;
+/// The border radius of the Chat.
+/// @group chat
+$kendo-chat-border-radius: k-border-radius(xxl) !default;
 /// The font family of the Chat.
 /// @group chat
 $kendo-chat-font-family: var( --kendo-font-family, inherit ) !default;
@@ -245,6 +248,7 @@ $kendo-chat-message-reference-marker-alt-bg: k-color(primary-emphasis) !default;
     $kendo-chat-width: $kendo-chat-width,
     $kendo-chat-height: $kendo-chat-height,
     $kendo-chat-border-width: $kendo-chat-border-width,
+    $kendo-chat-border-radius: $kendo-chat-border-radius,
     $kendo-chat-font-family: $kendo-chat-font-family,
     $kendo-chat-font-size: $kendo-chat-font-size,
     $kendo-chat-line-height: $kendo-chat-line-height,

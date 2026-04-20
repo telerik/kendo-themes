@@ -87,7 +87,7 @@ $kendo-time-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
 /// The background color of the focused TimeSelector list.
 /// @group time-selector
-$kendo-time-list-focus-bg: rgba(0, 0, 0, .04) !default;
+$kendo-time-list-focus-bg: k-color(secondary-subtle) !default;
 
 
 // Time selector sizes

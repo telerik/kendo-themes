@@ -304,10 +304,10 @@ $kendo-list-item-border-radius: k-border-radius(sm) !default;
 
 /// The background color of the hovered List items.
 /// @group list
-$kendo-list-item-hover-bg: color-mix(in srgb, k-color(on-app-surface) 6%, transparent ) !default;
+$kendo-list-item-hover-bg: k-color(primary-subtle-hover) !default;
 /// The text color of the hovered List items.
 /// @group list
-$kendo-list-item-hover-text: k-color(on-app-surface) !default;
+$kendo-list-item-hover-text: k-color(primary-on-subtle) !default;
 
 /// The background color of the focused List items.
 /// @group list
@@ -327,17 +327,17 @@ $kendo-list-item-focus-outline-offset: 1px !default;
 
 /// The background color of the selected List items.
 /// @group list
-$kendo-list-item-selected-bg: color-mix(in srgb, k-color(on-app-surface) 12%, transparent ) !default;
+$kendo-list-item-selected-bg: k-color(primary-subtle-active) !default;
 /// The text color of the selected List items.
 /// @group list
-$kendo-list-item-selected-text: k-color(on-app-surface) !default;
+$kendo-list-item-selected-text: k-color(primary-on-subtle) !default;
 
 /// The background color of the selected hovered List items.
 /// @group list
-$kendo-list-item-selected-hover-bg: color-mix(in srgb, k-color(on-app-surface) 18%, transparent ) !default;
+$kendo-list-item-selected-hover-bg: null !default;
 /// The text color of the selected hovered List items.
 /// @group list
-$kendo-list-item-selected-hover-text: k-color(on-app-surface) !default;
+$kendo-list-item-selected-hover-text: null !default;
 
 /// The background color of the List group items.
 /// @group list
