@@ -41,7 +41,7 @@ $kendo-editor-selectednode-outline-width: var( --kendo-editor-selectednode-outli
 
 /// The selected text color of the Editor.
 /// @group editor
-$kendo-editor-selected-text: var( --kendo-editor-selected-text, #{k-color(app-surface)} ) !default;
+$kendo-editor-selected-text: var( --kendo-editor-selected-text, #{k-color(on-primary)} ) !default;
 /// The selected background color of the Editor.
 /// @group editor
 $kendo-editor-selected-bg: var( --kendo-editor-selected-bg, #{k-color(primary)} ) !default;

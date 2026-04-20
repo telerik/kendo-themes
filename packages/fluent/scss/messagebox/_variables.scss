@@ -42,10 +42,10 @@ $kendo-message-box-link-font-style: var( --kendo-message-box-link-font-style, no
 $kendo-message-box-link-decoration: var( --kendo-message-box-link-decoration, underline ) !default;
 /// Text color of the message box links.
 /// @group messagebox
-$kendo-message-box-link-text: var( --kendo-message-box-link-text, k-color(primary) ) !default;
+$kendo-message-box-link-text: var( --kendo-message-box-link-text, k-color(primary-on-surface) ) !default;
 /// Hover text color of the message box links.
 /// @group messagebox
-$kendo-message-box-link-hover-text: var( --kendo-message-box-link-hover-text, k-color(primary-hover) ) !default;
+$kendo-message-box-link-hover-text: var( --kendo-message-box-link-hover-text, k-color(primary-on-surface) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/messagebox/_variables.scss" with (
     $kendo-message-box-default-theme-color: $kendo-message-box-default-theme-color,

@@ -157,7 +157,7 @@ $kendo-calendar-weekend-text: null !default;
 $kendo-calendar-today-style: color !default;
 /// The color of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-color: k-color(primary) !default;
+$kendo-calendar-today-color: k-color(primary-on-surface) !default;
 /// The font weight of the current day in the Calendar.
 /// @group calendar
 $kendo-calendar-today-font-weight: var(--kendo-font-weight-bold) !default;
@@ -249,7 +249,7 @@ $kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
 
 /// The text color of the hovered items in the Calendar navigation.
 /// @group calendar
-$kendo-calendar-navigation-hover-text: k-color(primary-hover) !default;
+$kendo-calendar-navigation-hover-text: k-color(primary-on-surface) !default;
 /// The text color of the marker in the Calendar navigation.
 /// @group calendar
 $kendo-calendar-navigation-marker-text: currentColor !default;
