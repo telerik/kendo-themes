@@ -34,20 +34,21 @@
         // Fillmode: flat
         #{k-when-default($kendo-bottom-nav-default-fill-mode, "flat")}
         &.k-bottom-nav-flat {
+            @include fill(
+                $kendo-bottom-nav-flat-text,
+                $kendo-bottom-nav-flat-bg,
+                $kendo-bottom-nav-flat-border
+            );
+
+            .k-bottom-nav-item.k-focus,
+            .k-bottom-nav-item:focus {
+                @include fill( $bg: color-mix(in srgb, k-color(on-app-surface) 5%, transparent));
+            }
+
             // Theme colors
             @each $name in $kendo-bottom-navigation-theme-colors {
                 #{k-when-default($kendo-bottom-nav-default-theme-color, $name)}
                 &.k-bottom-nav-#{$name} {
-                    @include fill(
-                        $kendo-bottom-nav-flat-text,
-                        $kendo-bottom-nav-flat-bg,
-                        $kendo-bottom-nav-flat-border
-                    );
-
-                    .k-bottom-nav-item.k-focus,
-                    .k-bottom-nav-item:focus {
-                        @include fill( $bg: color-mix(in srgb, k-color(on-app-surface) 5%, transparent));
-                    }
 
                     .k-bottom-nav-item.k-selected {
                         @include fill( $color: k-color(#{$name}-on-surface));

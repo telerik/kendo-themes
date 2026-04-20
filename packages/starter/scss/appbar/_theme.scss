@@ -1,6 +1,11 @@
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/appbar/_theme.scss" as *;
 
 
 @mixin kendo-appbar--theme() {
     @include kendo-appbar--theme-base();
+
+    .k-appbar.k-appbar-base {
+        background-color: k-elevation-bg(1, k-color(base));
+    }
 }

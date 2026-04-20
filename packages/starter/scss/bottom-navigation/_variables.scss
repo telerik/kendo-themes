@@ -68,10 +68,10 @@ $kendo-bottom-nav-shadow: k-elevation(4) !default;
 $kendo-bottom-nav-flat-text: k-color(on-app-surface) !default;
 /// The background color of the flat BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-flat-bg: k-color(surface-alt) !default;
+$kendo-bottom-nav-flat-bg: k-elevation-bg(1, k-color(surface-alt)) !default;
 /// The border color of the flat BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-flat-border: k-color(border) !default;
+$kendo-bottom-nav-flat-border: k-elevation-border(1, k-color(border)) !default;
 
 /// The outline width of the focused BottomNavigation item.
 /// @group bottom-navigation

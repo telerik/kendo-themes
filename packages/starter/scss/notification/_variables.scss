@@ -45,13 +45,13 @@ $kendo-notification-actions-padding-y: $kendo-notification-actions-padding-x !de
 
 /// The background color of the Notification.
 /// @group notification
-$kendo-notification-bg: k-color(surface-alt) !default;
+$kendo-notification-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
 /// The text color of the Notification.
 /// @group notification
 $kendo-notification-text: k-color(on-app-surface) !default;
 /// The border color of the Notification.
 /// @group notification
-$kendo-notification-border: k-color(border) !default;
+$kendo-notification-border: k-elevation-border(2, k-color(border)) !default;
 /// The box shadow of the Notification.
 /// @group notification
 $kendo-notification-shadow: k-elevation(2) !default;

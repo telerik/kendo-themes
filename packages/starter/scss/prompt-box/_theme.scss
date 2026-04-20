@@ -7,6 +7,6 @@
     @include kendo-prompt-box--theme-base();
 
     .k-prompt-box {
-        background-color: k-elevation-bg(2, $kendo-input-bg);
+        background-color: k-elevation-bg(1, $kendo-input-bg);
     }
 }
