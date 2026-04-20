@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-fab-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
     <td></td>
 </tr>
 <tr>

@@ -1094,8 +1094,8 @@ The following table lists the available variables for customizing the Classic th
 <tbody><tr>
     <td>$kendo-appbar-default-theme-color</td>
     <td>String</td>
-    <td><code>"light"</code></td>
-    <td><code>"light"</code></td>
+    <td><code>"base"</code></td>
+    <td><code>"base"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the AppBar.</div></div>
@@ -1202,46 +1202,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-appbar-light-bg</td>
-    <td>String</td>
-    <td><code>k-color(light)</code></td>
-    <td><code>var(--kendo-color-light)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AppBar based on light theme color.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-light-text</td>
-    <td>String</td>
-    <td><code>k-color(on-light)</code></td>
-    <td><code>var(--kendo-color-on-light)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar based on light theme color.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-dark-bg</td>
-    <td>String</td>
-    <td><code>k-color(dark)</code></td>
-    <td><code>var(--kendo-color-dark)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AppBar based on dark theme color.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-dark-text</td>
-    <td>String</td>
-    <td><code>k-color(on-dark)</code></td>
-    <td><code>var(--kendo-color-on-dark)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar based on dark theme colorr.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-appbar-box-shadow</td>
     <td>String</td>
     <td><code>k-elevation(4)</code></td>
@@ -1264,8 +1224,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-appbar-theme-colors</td>
     <td>List</td>
-    <td><code>("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the AppBar.</div></div>
@@ -1428,8 +1388,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-avatar-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Avatar.</div></div>
@@ -1720,8 +1680,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-badge-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Badge.</div></div>
@@ -2090,8 +2050,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-bottom-navigation-theme-colors</td>
     <td>List</td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the BottomNavigation.</div></div>
@@ -3775,8 +3735,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-button-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Button.</div></div>
@@ -5000,16 +4960,6 @@ The following table lists the available variables for customizing the Classic th
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-card-default-theme-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Card.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -5547,16 +5497,6 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Card callout.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-card-theme-colors</td>
-    <td>List</td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Card.</div></div>
     </td>
 </tr>
 </tbody>
@@ -8512,7 +8452,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>subtle: oklch(51.03% 0 0deg)</li><li>surface: oklch(95.51% 0 0deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) calc(l + 0.045) c h)</li><li>border: oklch(83.9% 0 0deg)</li><li>border-alt: oklch(77.63% 0 0deg)</li><li>base-subtle: oklch(from var(--kendo-color-base) calc(l + 0.015) c h)</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) l c h)</li><li>base-subtle-active: oklch(from var(--kendo-color-base) calc(l - 0.0425) c h)</li><li>base: oklch(94.01% 0 0deg)</li><li>base-hover: oklch(from var(--kendo-color-base) calc(l - 0.0425) c h)</li><li>base-active: oklch(from var(--kendo-color-base) calc(l - 0.064) c h)</li><li>base-emphasis: oklch(from var(--kendo-color-base) calc(l - 0.1011) c h)</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>primary-subtle: oklch(from var(--kendo-color-primary) 0.9694 calc(c * 0.083) h)</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) 0.9391 calc(c * 0.172) h)</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) 0.9095 calc(c * 0.259) h)</li><li>primary: oklch(66% 0.2039 40.8deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) calc(l - 0.0387) calc(c - 0.0126) h)</li><li>primary-active: oklch(from var(--kendo-color-primary) calc(l - 0.0796) calc(c - 0.0263) h)</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.0924) calc(c - 0.0415) h)</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l * 0.389) calc(c * 0.343) h)</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) l c h)</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.0627) c h)</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) l c h)</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l - 0.0608) c h)</li><li>secondary: oklch(77.63% 0 0deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) calc(l - 0.0608) c h)</li><li>secondary-active: oklch(from var(--kendo-color-secondary) calc(l - 0.1262) c h)</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l - 0.1968) c h)</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) calc(l - 0.1262) c h)</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) 0.8696 calc(c * 0.508) h)</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) 0.8193 calc(c * 0.702) h)</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) 0.7758 calc(c * 0.854) h)</li><li>tertiary: oklch(69.91% 0.157 239deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) calc(l - 0.0432) calc(c - 0.0100) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) calc(l - 0.0843) calc(c - 0.0199) h)</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l + 0.0500) calc(c - 0.0091) h)</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l * 0.450) calc(c * 0.421) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) calc(l * 0.755) calc(c * 0.742) h)</li><li>info-subtle: oklch(from var(--kendo-color-info) 0.9078 calc(c * 0.229) h)</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) 0.8384 calc(c * 0.401) h)</li><li>info-subtle-active: oklch(from var(--kendo-color-info) 0.7325 calc(c * 0.663) h)</li><li>info: oklch(56.38% 0.1427 245.3deg)</li><li>info-hover: oklch(from var(--kendo-color-info) calc(l - 0.0336) calc(c - 0.0093) h)</li><li>info-active: oklch(from var(--kendo-color-info) calc(l - 0.0672) calc(c - 0.0175) h)</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.0974) calc(c - 0.0250) h)</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l * 0.490) calc(c * 0.448) h)</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) calc(l * 0.762) calc(c * 0.743) h)</li><li>success-subtle: oklch(from var(--kendo-color-success) 0.8695 calc(c * 0.359) h)</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) 0.8134 calc(c * 0.516) h)</li><li>success-subtle-active: oklch(from var(--kendo-color-success) 0.7611 calc(c * 0.671) h)</li><li>success: oklch(63.9% 0.1556 146.3deg)</li><li>success-hover: oklch(from var(--kendo-color-success) calc(l - 0.0373) calc(c - 0.0101) h)</li><li>success-active: oklch(from var(--kendo-color-success) calc(l - 0.0752) calc(c - 0.0203) h)</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.0862) calc(c - 0.0345) h)</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l * 0.485) calc(c * 0.427) h)</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) calc(l * 0.760) calc(c * 0.740) h)</li><li>warning-subtle: oklch(from var(--kendo-color-warning) 0.9164 calc(c * 0.439) h)</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) 0.8973 calc(c * 0.542) h)</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) 0.8605 calc(c * 0.736) h)</li><li>warning: oklch(79.16% 0.1662 68.62deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) calc(l - 0.0214) calc(c + 0.0079) h)</li><li>warning-active: oklch(from var(--kendo-color-warning) calc(l - 0.0669) calc(c - 0.0026) h)</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0268) calc(c - 0.0139) h)</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l * 0.461) calc(c * 0.479) h)</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) l c h)</li><li>error-subtle: oklch(from var(--kendo-color-error) 0.8575 calc(c * 0.273) h)</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) 0.8235 calc(c * 0.352) h)</li><li>error-subtle-active: oklch(from var(--kendo-color-error) 0.7405 calc(c * 0.556) h)</li><li>error: oklch(57.1% 0.2143 32.35deg)</li><li>error-hover: oklch(from var(--kendo-color-error) calc(l - 0.0332) calc(c - 0.0133) h)</li><li>error-active: oklch(from var(--kendo-color-error) calc(l - 0.0688) calc(c - 0.0277) h)</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.0755) calc(c - 0.0420) h)</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l * 0.482) calc(c * 0.445) h)</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) calc(l * 0.757) calc(c * 0.744) h)</li><li>light-subtle: oklch(from var(--kendo-color-light) calc(l + 0.015) c h)</li><li>light-subtle-hover: oklch(from var(--kendo-color-light) l c h)</li><li>light-subtle-active: oklch(from var(--kendo-color-light) calc(l - 0.0425) c h)</li><li>light: oklch(94.01% 0 0deg)</li><li>light-hover: oklch(from var(--kendo-color-light) calc(l - 0.0425) c h)</li><li>light-active: oklch(from var(--kendo-color-light) calc(l - 0.064) c h)</li><li>light-emphasis: oklch(from var(--kendo-color-light) calc(l - 0.1011) c h)</li><li>light-on-subtle: oklch(27.27% 0 0deg)</li><li>on-light: oklch(0% 0 0deg)</li><li>light-on-surface: oklch(from var(--kendo-color-light) l c h)</li><li>dark-subtle: oklch(from var(--kendo-color-dark) calc(l + 0.4675) c h)</li><li>dark-subtle-hover: oklch(from var(--kendo-color-dark) calc(l + 0.4048) c h)</li><li>dark-subtle-active: oklch(from var(--kendo-color-dark) calc(l + 0.344) c h)</li><li>dark: oklch(37.15% 0 0deg)</li><li>dark-hover: oklch(from var(--kendo-color-dark) calc(l - 0.0504) c h)</li><li>dark-active: oklch(from var(--kendo-color-dark) calc(l - 0.0988) c h)</li><li>dark-emphasis: oklch(from var(--kendo-color-dark) calc(l + 0.208) c h)</li><li>dark-on-subtle: oklch(0% 0 0deg)</li><li>on-dark: oklch(100% 0 0deg)</li><li>dark-on-surface: oklch(from var(--kendo-color-dark) calc(l - 0.0504) c h)</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.4675) c h)</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.4048) c h)</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.344) c h)</li><li>inverse: oklch(37.15% 0 0deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0504) c h)</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.0988) c h)</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.208) c h)</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) clamp(0, (l - 0.7) * 99999, 1) 0 h)</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l - 0.0504) c h)</li><li>series: oklch(69.85% 0.1923 27.19deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l * 0.809) calc(c * 0.792) h)</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l * 0.610) calc(c * 0.570) h)</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l * 1.193) calc(c * 0.479) h)</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l * 1.088) calc(c * 0.745) h)</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.1809) calc(c - 0.0345) calc(h + 63.21))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l * 0.806) calc(c * 0.794) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l * 0.602) calc(c * 0.582) h)</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l * 1.064) calc(c * 0.585) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l * 1.030) calc(c * 0.823) h)</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.0798) calc(c + 0.0117) calc(h + 108.01))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l * 0.807) calc(c * 0.795) h)</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l * 0.606) calc(c * 0.577) h)</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l * 1.135) calc(c * 0.556) h)</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l * 1.063) calc(c * 0.802) h)</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.0099) calc(c - 0.0778) calc(h + 182.51))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l * 0.810) calc(c * 0.801) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l * 0.608) calc(c * 0.588) h)</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l * 1.189) calc(c * 0.622) h)</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l * 1.092) calc(c * 0.863) h)</li><li>series-e: oklch(from var(--kendo-color-series) calc(l - 0.1109) calc(c + 0.0152) calc(h + 234.21))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l * 0.813) calc(c * 0.795) h)</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l * 0.619) calc(c * 0.569) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l * 1.335) calc(c * 0.486) h)</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l * 1.160) calc(c * 0.743) h)</li><li>series-f: oklch(from var(--kendo-color-series) calc(l - 0.1561) calc(c - 0.0064) calc(h + 293.31))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l * 0.865) calc(c * 0.835) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l * 0.654) calc(c * 0.607) h)</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l * 1.437) calc(c * 0.545) h)</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l * 1.240) calc(c * 0.812) h)</li></ul></td>
+    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>subtle: oklch(51.03% 0 0deg)</li><li>surface: oklch(95.51% 0 0deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) calc(l + 0.045) c h)</li><li>border: oklch(83.9% 0 0deg)</li><li>border-alt: oklch(77.63% 0 0deg)</li><li>base-subtle: oklch(from var(--kendo-color-base) calc(l + 0.015) c h)</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) l c h)</li><li>base-subtle-active: oklch(from var(--kendo-color-base) calc(l - 0.0425) c h)</li><li>base: oklch(94.01% 0 0deg)</li><li>base-hover: oklch(from var(--kendo-color-base) calc(l - 0.0425) c h)</li><li>base-active: oklch(from var(--kendo-color-base) calc(l - 0.064) c h)</li><li>base-emphasis: oklch(from var(--kendo-color-base) calc(l - 0.1011) c h)</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>primary-subtle: oklch(from var(--kendo-color-primary) 0.9694 calc(c * 0.083) h)</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) 0.9391 calc(c * 0.172) h)</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) 0.9095 calc(c * 0.259) h)</li><li>primary: oklch(66% 0.2039 40.8deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) calc(l - 0.0387) calc(c - 0.0126) h)</li><li>primary-active: oklch(from var(--kendo-color-primary) calc(l - 0.0796) calc(c - 0.0263) h)</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.0924) calc(c - 0.0415) h)</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l * 0.389) calc(c * 0.343) h)</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) l c h)</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.0627) c h)</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) l c h)</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l - 0.0608) c h)</li><li>secondary: oklch(77.63% 0 0deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) calc(l - 0.0608) c h)</li><li>secondary-active: oklch(from var(--kendo-color-secondary) calc(l - 0.1262) c h)</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l - 0.1968) c h)</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) calc(l - 0.1262) c h)</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) 0.8696 calc(c * 0.508) h)</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) 0.8193 calc(c * 0.702) h)</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) 0.7758 calc(c * 0.854) h)</li><li>tertiary: oklch(69.91% 0.157 239deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) calc(l - 0.0432) calc(c - 0.0100) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) calc(l - 0.0843) calc(c - 0.0199) h)</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l + 0.0500) calc(c - 0.0091) h)</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l * 0.450) calc(c * 0.421) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) calc(l * 0.755) calc(c * 0.742) h)</li><li>info-subtle: oklch(from var(--kendo-color-info) 0.9078 calc(c * 0.229) h)</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) 0.8384 calc(c * 0.401) h)</li><li>info-subtle-active: oklch(from var(--kendo-color-info) 0.7325 calc(c * 0.663) h)</li><li>info: oklch(56.38% 0.1427 245.3deg)</li><li>info-hover: oklch(from var(--kendo-color-info) calc(l - 0.0336) calc(c - 0.0093) h)</li><li>info-active: oklch(from var(--kendo-color-info) calc(l - 0.0672) calc(c - 0.0175) h)</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.0974) calc(c - 0.0250) h)</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l * 0.490) calc(c * 0.448) h)</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) calc(l * 0.762) calc(c * 0.743) h)</li><li>success-subtle: oklch(from var(--kendo-color-success) 0.8695 calc(c * 0.359) h)</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) 0.8134 calc(c * 0.516) h)</li><li>success-subtle-active: oklch(from var(--kendo-color-success) 0.7611 calc(c * 0.671) h)</li><li>success: oklch(63.9% 0.1556 146.3deg)</li><li>success-hover: oklch(from var(--kendo-color-success) calc(l - 0.0373) calc(c - 0.0101) h)</li><li>success-active: oklch(from var(--kendo-color-success) calc(l - 0.0752) calc(c - 0.0203) h)</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.0862) calc(c - 0.0345) h)</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l * 0.485) calc(c * 0.427) h)</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) calc(l * 0.760) calc(c * 0.740) h)</li><li>warning-subtle: oklch(from var(--kendo-color-warning) 0.9164 calc(c * 0.439) h)</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) 0.8973 calc(c * 0.542) h)</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) 0.8605 calc(c * 0.736) h)</li><li>warning: oklch(79.16% 0.1662 68.62deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) calc(l - 0.0214) calc(c + 0.0079) h)</li><li>warning-active: oklch(from var(--kendo-color-warning) calc(l - 0.0669) calc(c - 0.0026) h)</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0268) calc(c - 0.0139) h)</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l * 0.461) calc(c * 0.479) h)</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) l c h)</li><li>error-subtle: oklch(from var(--kendo-color-error) 0.8575 calc(c * 0.273) h)</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) 0.8235 calc(c * 0.352) h)</li><li>error-subtle-active: oklch(from var(--kendo-color-error) 0.7405 calc(c * 0.556) h)</li><li>error: oklch(57.1% 0.2143 32.35deg)</li><li>error-hover: oklch(from var(--kendo-color-error) calc(l - 0.0332) calc(c - 0.0133) h)</li><li>error-active: oklch(from var(--kendo-color-error) calc(l - 0.0688) calc(c - 0.0277) h)</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.0755) calc(c - 0.0420) h)</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l * 0.482) calc(c * 0.445) h)</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) calc(l * 0.757) calc(c * 0.744) h)</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.4675) c h)</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.4048) c h)</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.344) c h)</li><li>inverse: oklch(37.15% 0 0deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0504) c h)</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.0988) c h)</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.208) c h)</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) clamp(0, (l - 0.7) * 99999, 1) 0 h)</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0, (0.7 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l - 0.0504) c h)</li><li>series: oklch(69.85% 0.1923 27.19deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l * 0.809) calc(c * 0.792) h)</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l * 0.610) calc(c * 0.570) h)</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l * 1.193) calc(c * 0.479) h)</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l * 1.088) calc(c * 0.745) h)</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.1809) calc(c - 0.0345) calc(h + 63.21))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l * 0.806) calc(c * 0.794) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l * 0.602) calc(c * 0.582) h)</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l * 1.064) calc(c * 0.585) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l * 1.030) calc(c * 0.823) h)</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.0798) calc(c + 0.0117) calc(h + 108.01))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l * 0.807) calc(c * 0.795) h)</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l * 0.606) calc(c * 0.577) h)</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l * 1.135) calc(c * 0.556) h)</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l * 1.063) calc(c * 0.802) h)</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.0099) calc(c - 0.0778) calc(h + 182.51))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l * 0.810) calc(c * 0.801) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l * 0.608) calc(c * 0.588) h)</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l * 1.189) calc(c * 0.622) h)</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l * 1.092) calc(c * 0.863) h)</li><li>series-e: oklch(from var(--kendo-color-series) calc(l - 0.1109) calc(c + 0.0152) calc(h + 234.21))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l * 0.813) calc(c * 0.795) h)</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l * 0.619) calc(c * 0.569) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l * 1.335) calc(c * 0.486) h)</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l * 1.160) calc(c * 0.743) h)</li><li>series-f: oklch(from var(--kendo-color-series) calc(l - 0.1561) calc(c - 0.0064) calc(h + 293.31))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l * 0.865) calc(c * 0.835) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l * 0.654) calc(c * 0.607) h)</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l * 1.437) calc(c * 0.545) h)</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l * 1.240) calc(c * 0.812) h)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -8572,16 +8512,6 @@ The following table lists the available variables for customizing the Classic th
     <td>error</td>
     <td colspan="2"> error-subtle, error-subtle-hover, error-subtle-active, error, error-hover, error-active, error-emphasis, error-on-subtle, on-error, error-on-surface</td>
     <td>The Error variable group.</td>
-</tr>
-<tr>
-    <td>light</td>
-    <td colspan="2"> light-subtle, light-subtle-hover, light-subtle-active, light, light-hover, light-active, light-emphasis, light-on-subtle, on-light, light-on-surface</td>
-    <td>The Light variable group.</td>
-</tr>
-<tr>
-    <td>dark</td>
-    <td colspan="2"> dark-subtle, dark-subtle-hover, dark-subtle-active, dark, dark-hover, dark-active, dark-emphasis, dark-on-subtle, on-dark, dark-on-surface</td>
-    <td>The Dark variable group.</td>
 </tr>
 <tr>
     <td>inverse</td>
@@ -9066,106 +8996,6 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>Color</td>
     <td>error-on-surface</td>
-    <td colspan="2">The text color variable for content on surface.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-subtle</td>
-    <td colspan="2">The light subtle background color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-subtle-hover</td>
-    <td colspan="2">The light subtle background color variable for the hover state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-subtle-active</td>
-    <td colspan="2">The light subtle background color variable for the active state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light</td>
-    <td colspan="2">The light background color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-hover</td>
-    <td colspan="2">The light background color variable for the hover state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-active</td>
-    <td colspan="2">The light background color variable for the active state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-emphasis</td>
-    <td colspan="2">The emphasized light color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-on-subtle</td>
-    <td colspan="2">The text color variable for content on light subtle.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>on-light</td>
-    <td colspan="2">The text color variable for content on light.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>light-on-surface</td>
-    <td colspan="2">The text color variable for content on surface.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-subtle</td>
-    <td colspan="2">The dark subtle background color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-subtle-hover</td>
-    <td colspan="2">The dark subtle background color variable for the hover state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-subtle-active</td>
-    <td colspan="2">The dark subtle background color variable for the active state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark</td>
-    <td colspan="2">The dark background color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-hover</td>
-    <td colspan="2">The dark background color variable for the hover state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-active</td>
-    <td colspan="2">The dark background color variable for the active state.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-emphasis</td>
-    <td colspan="2">The emphasized dark color variable.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-on-subtle</td>
-    <td colspan="2">The text color variable for content on dark subtle.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>on-dark</td>
-    <td colspan="2">The text color variable for content on dark.</td>
-</tr>
-<tr>
-    <td>Color</td>
-    <td>dark-on-surface</td>
     <td colspan="2">The text color variable for content on surface.</td>
 </tr>
 <tr>
@@ -11379,16 +11209,6 @@ The following table lists the available variables for customizing the Classic th
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-dialog-default-theme-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Dialog.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-dialog-titlebar-bg</td>
     <td>String</td>
     <td><code>k-color(surface)</code></td>
@@ -11466,16 +11286,6 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-dialog-theme-colors</td>
-    <td>List</td>
-    <td><code>("primary", "light", "dark")</code></td>
-    <td><code>("primary", "light", "dark")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Dialog.</div></div>
     </td>
 </tr>
 </tbody>
@@ -14611,8 +14421,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-fab-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the FloatingActionButton.</div></div>
@@ -20761,8 +20571,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-loader-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Loader.</div></div>
@@ -22159,8 +21969,8 @@ The following table lists the available variables for customizing the Classic th
 <tbody><tr>
     <td>$kendo-message-box-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the MessageBox.</div></div>
@@ -22614,8 +22424,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-notification-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Notification.</div></div>
@@ -22625,7 +22435,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-notification-theme</td>
     <td>Map</td>
     <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse)","background-color":"var(--kendo-color-inverse)","border":"var(--kendo-color-inverse)"</li><li>light: "color":"var(--kendo-color-on-light)","background-color":"var(--kendo-color-light)","border":"var(--kendo-color-light)"</li><li>dark: "color":"var(--kendo-color-on-dark)","background-color":"var(--kendo-color-dark)","border":"var(--kendo-color-dark)"</li><li>error: "color":"var(--kendo-color-on-error)","background-color":"var(--kendo-color-error)","border":"var(--kendo-color-error)"</li><li>warning: "color":"var(--kendo-color-on-warning)","background-color":"var(--kendo-color-warning)","border":"var(--kendo-color-warning)"</li><li>success: "color":"var(--kendo-color-on-success)","background-color":"var(--kendo-color-success)","border":"var(--kendo-color-success)"</li><li>info: "color":"var(--kendo-color-on-info)","background-color":"var(--kendo-color-info)","border":"var(--kendo-color-info)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary)","background-color":"var(--kendo-color-tertiary)","border":"var(--kendo-color-tertiary)"</li><li>secondary: "color":"var(--kendo-color-on-secondary)","background-color":"var(--kendo-color-secondary)","border":"var(--kendo-color-secondary)"</li><li>primary: "color":"var(--kendo-color-on-primary)","background-color":"var(--kendo-color-primary)","border":"var(--kendo-color-primary)"</li><li>base: "color":"var(--kendo-color-on-base)","background-color":"var(--kendo-color-base)","border":"var(--kendo-color-base)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse)","background-color":"var(--kendo-color-inverse)","border":"var(--kendo-color-inverse)"</li><li>error: "color":"var(--kendo-color-on-error)","background-color":"var(--kendo-color-error)","border":"var(--kendo-color-error)"</li><li>warning: "color":"var(--kendo-color-on-warning)","background-color":"var(--kendo-color-warning)","border":"var(--kendo-color-warning)"</li><li>success: "color":"var(--kendo-color-on-success)","background-color":"var(--kendo-color-success)","border":"var(--kendo-color-success)"</li><li>info: "color":"var(--kendo-color-on-info)","background-color":"var(--kendo-color-info)","border":"var(--kendo-color-info)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary)","background-color":"var(--kendo-color-tertiary)","border":"var(--kendo-color-tertiary)"</li><li>secondary: "color":"var(--kendo-color-on-secondary)","background-color":"var(--kendo-color-secondary)","border":"var(--kendo-color-secondary)"</li><li>primary: "color":"var(--kendo-color-on-primary)","background-color":"var(--kendo-color-primary)","border":"var(--kendo-color-primary)"</li><li>base: "color":"var(--kendo-color-on-base)","background-color":"var(--kendo-color-base)","border":"var(--kendo-color-base)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>
@@ -23238,20 +23048,10 @@ The following table lists the available variables for customizing the Classic th
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-overlay-default-theme-color</td>
-    <td>String</td>
-    <td><code>"inverse"</code></td>
-    <td><code>"inverse"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Overlay.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-overlay-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(inverse)</code></td>
+    <td><code>var(--kendo-color-inverse)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Overlay.</div></div>
@@ -23265,16 +23065,6 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Overlay.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-overlay-theme-colors</td>
-    <td>List</td>
-    <td><code>("dark", "light", "inverse")</code></td>
-    <td><code>("dark", "light", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Overlay.</div></div>
     </td>
 </tr>
 </tbody>
@@ -32177,8 +31967,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-suggestion-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary")</code></td>
-    <td><code>("base", "primary", "secondary")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Suggestion.</div></div>
@@ -36737,8 +36527,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-tooltip-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Tooltip.</div></div>
@@ -36748,7 +36538,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-tooltip-theme</td>
     <td>Map</td>
     <td><code>tooltip-theme( $kendo-tooltip-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse)","background-color":"var(--kendo-color-inverse)","border":"var(--kendo-color-inverse)"</li><li>light: "color":"var(--kendo-color-on-light)","background-color":"var(--kendo-color-light)","border":"var(--kendo-color-light)"</li><li>dark: "color":"var(--kendo-color-on-dark)","background-color":"var(--kendo-color-dark)","border":"var(--kendo-color-dark)"</li><li>error: "color":"var(--kendo-color-on-error)","background-color":"var(--kendo-color-error)","border":"var(--kendo-color-error)"</li><li>warning: "color":"var(--kendo-color-on-warning)","background-color":"var(--kendo-color-warning)","border":"var(--kendo-color-warning)"</li><li>success: "color":"var(--kendo-color-on-success)","background-color":"var(--kendo-color-success)","border":"var(--kendo-color-success)"</li><li>info: "color":"var(--kendo-color-on-info)","background-color":"var(--kendo-color-info)","border":"var(--kendo-color-info)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary)","background-color":"var(--kendo-color-tertiary)","border":"var(--kendo-color-tertiary)"</li><li>secondary: "color":"var(--kendo-color-on-secondary)","background-color":"var(--kendo-color-secondary)","border":"var(--kendo-color-secondary)"</li><li>primary: "color":"var(--kendo-color-on-primary)","background-color":"var(--kendo-color-primary)","border":"var(--kendo-color-primary)"</li><li>base: "color":"var(--kendo-color-on-base)","background-color":"var(--kendo-color-base)","border":"var(--kendo-color-base)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse)","background-color":"var(--kendo-color-inverse)","border":"var(--kendo-color-inverse)"</li><li>error: "color":"var(--kendo-color-on-error)","background-color":"var(--kendo-color-error)","border":"var(--kendo-color-error)"</li><li>warning: "color":"var(--kendo-color-on-warning)","background-color":"var(--kendo-color-warning)","border":"var(--kendo-color-warning)"</li><li>success: "color":"var(--kendo-color-on-success)","background-color":"var(--kendo-color-success)","border":"var(--kendo-color-success)"</li><li>info: "color":"var(--kendo-color-on-info)","background-color":"var(--kendo-color-info)","border":"var(--kendo-color-info)"</li><li>base: "color":"var(--kendo-color-on-base)","background-color":"var(--kendo-color-base)","border":"var(--kendo-color-base)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Tooltip.</div></div>
@@ -39018,16 +38808,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-window-default-theme-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Window.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-window-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -39320,16 +39100,6 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-theme-colors</td>
-    <td>List</td>
-    <td><code>("primary", "light", "dark")</code></td>
-    <td><code>("primary", "light", "dark")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Window.</div></div>
     </td>
 </tr>
 </tbody>

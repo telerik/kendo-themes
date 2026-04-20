@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Tooltip.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tooltip-theme</td>
     <td>Map</td>
     <td><code>tooltip-theme( $kendo-tooltip-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse)","background-color":"var(--kendo-color-inverse)","border":"var(--kendo-color-inverse)"</li><li>light: "color":"var(--kendo-color-on-light)","background-color":"var(--kendo-color-light)","border":"var(--kendo-color-light)"</li><li>dark: "color":"var(--kendo-color-on-dark)","background-color":"var(--kendo-color-dark)","border":"var(--kendo-color-dark)"</li><li>error: "color":"var(--kendo-color-error-on-subtle)","background-color":"var(--kendo-color-error-subtle)","border":"var(--kendo-color-error-subtle)"</li><li>warning: "color":"var(--kendo-color-warning-on-subtle)","background-color":"var(--kendo-color-warning-subtle)","border":"var(--kendo-color-warning-subtle)"</li><li>success: "color":"var(--kendo-color-success-on-subtle)","background-color":"var(--kendo-color-success-subtle)","border":"var(--kendo-color-success-subtle)"</li><li>info: "color":"var(--kendo-color-info-on-subtle)","background-color":"var(--kendo-color-info-subtle)","border":"var(--kendo-color-info-subtle)"</li><li>tertiary: "color":"var(--kendo-color-tertiary-on-subtle)","background-color":"var(--kendo-color-tertiary-subtle)","border":"var(--kendo-color-tertiary-subtle)"</li><li>secondary: "color":"var(--kendo-color-secondary-on-subtle)","background-color":"var(--kendo-color-secondary-subtle)","border":"var(--kendo-color-secondary-subtle)"</li><li>primary: "color":"var(--kendo-color-on-primary)","background-color":"var(--kendo-color-primary)","border":"var(--kendo-color-primary)"</li><li>base: "color":"var(--kendo-color-base-on-subtle)","background-color":"var(--kendo-color-base-subtle)","border":"var(--kendo-color-base-subtle)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse)","background-color":"var(--kendo-color-inverse)","border":"var(--kendo-color-inverse)"</li><li>error: "color":"var(--kendo-color-error-on-subtle)","background-color":"var(--kendo-color-error-subtle)","border":"var(--kendo-color-error-subtle)"</li><li>warning: "color":"var(--kendo-color-warning-on-subtle)","background-color":"var(--kendo-color-warning-subtle)","border":"var(--kendo-color-warning-subtle)"</li><li>success: "color":"var(--kendo-color-success-on-subtle)","background-color":"var(--kendo-color-success-subtle)","border":"var(--kendo-color-success-subtle)"</li><li>info: "color":"var(--kendo-color-info-on-subtle)","background-color":"var(--kendo-color-info-subtle)","border":"var(--kendo-color-info-subtle)"</li><li>base: "color":"var(--kendo-color-base-on-subtle)","background-color":"var(--kendo-color-base-subtle)","border":"var(--kendo-color-base-subtle)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Tooltip.</div></div>

@@ -38,16 +38,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-window-default-theme-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Window.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-window-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -340,16 +330,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-theme-colors</td>
-    <td>List</td>
-    <td><code>("primary", "light", "dark")</code></td>
-    <td><code>("primary", "light", "dark")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Window.</div></div>
     </td>
 </tr>
 </tbody>

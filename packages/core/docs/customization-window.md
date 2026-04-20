@@ -42,16 +42,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Window.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-window-theme-colors</td>
-    <td></td>
-    <td><code>("primary", "light", "dark")</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Window.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

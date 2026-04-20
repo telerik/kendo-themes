@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error")</code></td>
     <td></td>
 </tr>
 <tr>
