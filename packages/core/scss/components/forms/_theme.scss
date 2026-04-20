@@ -23,14 +23,14 @@
         }
 
         .k-alert-error {
-            @include fill( $color: k-color(error) );
+            @include fill( $color: k-color(error-on-surface) );
         }
     }
 
     .k-form-error,
     .k-text-error,
     .k-form-field-error .k-label {
-        @include fill( $color: k-color(error) );
+        @include fill( $color: k-color(error-on-surface) );
     }
 
     .k-form-separator {

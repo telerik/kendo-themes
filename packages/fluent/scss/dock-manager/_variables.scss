@@ -100,7 +100,7 @@ $kendo-dock-indicator-shadow: var( --kendo-dock-indicator-shadow, k-elevation(4)
 $kendo-dock-indicator-hover-bg: var( --kendo-dock-indicator-hover-bg, k-color(primary-hover) ) !default;
 /// The text color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-hover-text: var( --kendo-dock-indicator-hover-text, k-color(app-surface) ) !default;
+$kendo-dock-indicator-hover-text: var( --kendo-dock-indicator-hover-text, k-color(on-primary) ) !default;
 
 /// The width of the border around the dropping area in the DockManager component.
 /// @group dock-manager
