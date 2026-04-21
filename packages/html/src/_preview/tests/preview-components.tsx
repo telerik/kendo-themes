@@ -8,6 +8,7 @@ import { Calendar } from "../../calendar/calendar.spec";
 import { CalendarTable } from "../../calendar/calendar-table";
 import { CalendarCell } from "../../calendar/calendar-cell";
 import { CalendarTableRow } from "../../calendar/calendar-table-row.spec";
+import { CalendarInfiniteNormal } from "../../calendar/templates/calendar-infinite-normal";
 import { CardNormal } from "../../card/templates/card-normal";
 import { Chip } from "../../chip/chip.spec";
 import { ChipAction } from "../../chip/chip-action";
@@ -22,6 +23,8 @@ import { MultiSelectNormal } from "../../multiselect/templates/multiselect-norma
 import { PanelBarContent } from "../../panelbar/panelbar-content";
 import { PanelBarItem } from "../../panelbar/panelbar-item";
 import { PanelBarNormal } from "../../panelbar/templates/panelbar-normal";
+import { ColorEditorNormal } from "../../coloreditor/templates/coloreditor-normal";
+import { ColorEditorPaletteGroup } from "../../coloreditor/templates/coloreditor-palette-group";
 import { ChunkProgressBarNormal } from "../../progressbar/templates/chunk-progressbar-normal";
 import { ProgressBarNormal } from "../../progressbar/templates/progressbar-normal";
 import { SliderNormal } from "../../slider/templates/slider-normal";
@@ -54,6 +57,9 @@ import { RadioButtonWithLabelAfter } from "../../radio/templates/radio-with-labe
 import { InputPrefixText } from "../../input/input-prefix-text";
 import { InputSuffixText } from "../../input/input-suffix-text";
 import { TimeSelectorAll } from "../../time-selector/templates/time-selector-all";
+import { TimePickerNormal } from "../../timepicker/templates/timepicker-normal";
+import { FilterMenuNormal } from "../../column-menu/templates/filter-menu-normal";
+import { ColumnMenu, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, ColumnList, ColumnListItem } from "../../column-menu";
 import { ChartWizardNormal } from "../../chart-wizard/templates/chart-wizard-normal";
 import { ListViewItem } from "../../listview/listview-item.spec";
 import { ListViewNormal } from "../../listview/templates/listview-normal";
@@ -86,11 +92,29 @@ import { AvatarImage } from "../../avatar/templates/avatar-image";
 import { AvatarText } from "../../avatar/templates/avatar-text";
 import { Icon } from "../../icon/icon.spec";
 import { BadgeNormal } from "../../badge/templates/badge-normal";
+import { PromptBoxLineModeMulti } from "../../prompt-box/templates/prompt-box-multi";
+import { ChatNormal } from "../../chat/templates/chat-normal";
+import { Suggestion, SuggestionGroup } from "../../suggestion";
+import { ComboboxNormal } from "../../combobox/templates/combobox-normal";
+import { DropzoneNormal } from "../../dropzone/templates/dropzone-normal";
+import { LoaderNormal } from "../../loader/templates/loader-normal";
+import { SmartBoxNormal } from "../../smart-box/templates/smart-box-normal";
+import { MaskedTextboxNormal } from "../../maskedtextbox/templates/maskedtextbox-normal";
+import { TextMenuButton } from "../../menu-button/templates/text-menu-button";
+import { NumericTextboxNormal } from "../../numerictextbox/templates/numerictextbox-normal";
+import { OneTimePasswordNormal } from "../../otp/templates/otp-normal";
+import { SearchboxNormal } from "../../searchbox/templates/searchbox-normal";
+import { SegmentedControlNormal } from "../../segmented-control/templates/segmented-control-normal";
+import { TextSplitButton } from "../../split-button/templates/text-split-button";
+import { TextareaNormal } from "../../textarea/templates/textarea-normal";
+import { UploadNormal } from "../../upload/templates/upload-normal";
+import { ChartDemo } from "../../chart";
 
 const style = `
 
     #test-area {
         max-width: unset;
+        padding: 0;
     }
 
     .k-drawer {
@@ -127,6 +151,14 @@ const style = `
         align-items: flex-start;
     }
 
+    .k-chart {
+        height: 400px;
+    }
+
+    .k-gauge {
+        display: inline-block;
+    }
+
     .k-chart-wizard {
         height: 550px;
     }
@@ -138,6 +170,10 @@ const style = `
 
     .k-spreadsheet {
         width: 100%;
+    }
+
+    .k-chat {
+        height: 500px;
     }
 `;
 
@@ -159,7 +195,160 @@ export default () => (
                     }
                 >
                 <DrawerContent>
-                    <div className="k-d-grid k-grid-rows k-gap-10">
+                    <div className="k-d-grid k-grid-rows k-gap-10 k-p-10">
+                        {/* --- Inputs --- */}
+                        <div className="k-d-grid k-grid-cols-4 k-gap-10">
+                            <div>
+                                <TextboxNormal value="Prefix & Suffix"
+                                    prefix={
+                                        <>
+                                            <InputPrefixText>https://</InputPrefixText>
+                                        </>
+                                    }
+                                    suffix={
+                                        <>
+                                            <InputSuffixText>.com</InputSuffixText>
+                                        </>
+                                    }
+                                />
+                            </div>
+                            <div>
+                                <NumericTextboxNormal />
+                            </div>
+                            <div>
+                                <ComboboxNormal placeholder="Combobox..." />
+                            </div>
+                            <div>
+                                <SearchboxNormal />
+                            </div>
+                        </div>
+
+                        <div className="k-d-grid k-grid-cols-4 k-gap-10">
+                            <div className="k-d-grid k-grid-rows k-gap-5">
+                                <div>
+                                    <DatePickerNormal placeholder="placeholder..." />
+                                </div>
+                                <div>
+                                    <OneTimePasswordNormal />
+                                </div>
+                                <div>
+                                    <ColorPicker />
+                                </div>
+                            </div>
+                            <div className="k-d-grid k-grid-rows k-gap-5">
+                                <div>
+                                    <MultiSelectNormal
+                                        tags={(
+                                            <>
+                                                <Chip text="Chip 1" actions={ <ChipAction type="remove"/> } />
+                                                <Chip text="Chip 2" actions={ <ChipAction type="remove"/> } />
+                                            </>
+                                        )}
+                                    />
+                                </div>
+                                <div>
+                                    <MaskedTextboxNormal placeholder="MaskedTextbox..." />
+                                </div>
+                                <div>
+                                    <TextareaNormal placeholder="Textarea..." />
+                                </div>
+                            </div>
+                            <div className="k-d-grid k-grid-rows k-gap-5">
+                                <div>
+                                    <SmartBoxNormal />
+                                </div>
+                                <div>
+                                    <PromptBoxLineModeMulti />
+                                </div>
+                            </div>
+                            <div className="k-d-grid k-grid-rows k-gap-10">
+                                <div className="k-d-grid k-grid-cols-2 k-gap-10">
+                                    <div className="k-d-grid k-grid-rows k-px-2">
+                                        <div><CheckboxWithLabelAfter>Checkbox</CheckboxWithLabelAfter></div>
+                                        <div><CheckboxWithLabelAfter checked id="cb-label-after-checked">Checked</CheckboxWithLabelAfter></div>
+                                    </div>
+                                    <div className="k-d-grid k-grid-rows k-px-2">
+                                        <div><RadioButtonWithLabelAfter>Radio</RadioButtonWithLabelAfter></div>
+                                        <div><RadioButtonWithLabelAfter checked id="radio-checked">Checked</RadioButtonWithLabelAfter></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <RatingNormal value={3.5} />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Buttons */}
+                        <div className="k-d-grid k-grid-cols-4 k-gap-10">
+                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div><TextButton>Solid</TextButton></div>
+                                <div><TextButton fillMode="outline">Outline</TextButton></div>
+                                <div><TextButton fillMode="flat">Flat</TextButton></div>
+                            </div>
+                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div><TextButton themeColor="primary">Primary</TextButton></div>
+                                <div><TextButton themeColor="primary" fillMode="outline">Primary</TextButton></div>
+                                <div><TextButton themeColor="primary" fillMode="flat">Primary</TextButton></div>
+                            </div>
+                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div><TextButton themeColor="secondary">Secondary</TextButton></div>
+                                <div><TextButton themeColor="secondary" fillMode="outline">Secondary</TextButton></div>
+                                <div><TextButton themeColor="secondary" fillMode="flat">Secondary</TextButton></div>
+                            </div>
+                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div><TextButton themeColor="tertiary">Tertiary</TextButton></div>
+                                <div><TextButton themeColor="tertiary" fillMode="outline">Tertiary</TextButton></div>
+                                <div><TextButton themeColor="tertiary" fillMode="flat">Tertiary</TextButton></div>
+                            </div>
+                            <div className="k-d-grid k-grid-cols-2 k-gap-10">
+                                <div>
+                                    <TextSplitButton>Split Button</TextSplitButton>
+                                </div>
+                                <div>
+                                    <TextMenuButton>Menu Button</TextMenuButton>
+                                </div>
+                            </div>
+                            <div>
+                                <SegmentedControlNormal thumbStyles={{ width: "50%" }} />
+                            </div>
+                            <div>
+                                <ButtonGroup>
+                                    <Button className="k-group-start">Button 1</Button>
+                                    <Button>Button 2</Button>
+                                    <Button className="k-group-end">Button 3</Button>
+                                </ButtonGroup>
+                            </div>
+                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div><TextFloatingActionButton themeColor="primary" /></div>
+                                <div><IconFloatingActionButton themeColor="primary" /></div>
+                                <div><IconTextFloatingActionButton themeColor="primary" /></div>
+                            </div>
+                            <div className="k-d-grid k-grid-cols-3 k-gap-2">
+                                <div><SwitchNormal /></div>
+                                <div><SwitchChecked /></div>
+                                <div><SwitchNormal disabled /></div>
+                            </div>
+                            <div className="k-d-grid k-grid-cols-4 k-gap-2">
+                                <AvatarIcon fillMode="outline" themeColor="primary" border>
+                                    <Icon icon="x" />
+                                </AvatarIcon>
+                                <AvatarIcon themeColor="primary">
+                                    <Icon icon="x" />
+                                </AvatarIcon>
+                                <AvatarText themeColor="primary">JO</AvatarText>
+                                <AvatarImage>
+                                    <img src="/packages/html/assets/avatar.jpg" />
+                                </AvatarImage>
+                            </div>
+                            <div className="k-d-grid k-grid-cols-3 k-gap-2">
+                                <div><BadgeNormal themeColor="primary">Rectangle</BadgeNormal></div>
+                                <div><BadgeNormal themeColor="primary" rounded="medium">Rounded</BadgeNormal></div>
+                                <div><BadgeNormal themeColor="primary" rounded="full">Pill</BadgeNormal></div>
+                            </div>
+                            <div>
+                                <LoaderNormal />
+                            </div>
+                        </div>
                         <div>
                             <ToolbarResizable>
                                 <Button icon="bold"></Button>
@@ -182,146 +371,70 @@ export default () => (
                                 <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat"></Button>
                             </ToolbarResizable>
                         </div>
+                        <div className="k-d-grid k-grid-cols-2 k-gap-10">
+                            <div className="k-d-grid k-grid-rows k-gap-10">
+                                <div>
+                                    <TabStripClosable>
+                                        <TabStripContent active>
+                                            <div className="k-tabstrip-wrapper">
+                                                <TabStripLeft
+                                                    tabStripItems={
+                                                        <>
+                                                            <TabStripItem first active value="Inner First" />
+                                                            <TabStripItem last value="Inner Second" />
+                                                        </>
+                                                    }>
+                                                    <TabStripContent style={{ display: "block", marginLeft: "128px", minHeight: "68px" }}>
+                                                        Left orientation inside Top orientation
+                                                    </TabStripContent>
+                                                </TabStripLeft>
+                                            </div>
+                                        </TabStripContent>
+                                    </TabStripClosable>
+                                </div>
+                            </div>
+
+                            <div className="k-d-grid k-grid-rows k-gap-10">
+                                <div>
+                                    <BreadcrumbCollapsingNone />
+                                </div>
+                                <div>
+                                    <BottomNavNormal themeColor="primary" border>
+                                        <BottomNavItem icon="envelope" text="Normal" />
+                                        <BottomNavItem icon="envelope" text="Focused" focus />
+                                        <BottomNavItem icon="envelope" text="Selected" selected />
+                                        <BottomNavItem icon="envelope" text="Disabled" disabled />
+                                    </BottomNavNormal>
+                                </div>
+                            </div>
+                        </div>
                         <div className="k-d-grid k-grid-cols-3 k-gap-10">
                             <div className="k-d-grid k-grid-rows k-gap-10">
-                                <div><TabStripClosable>
-                                    <TabStripContent active>
-                                        <div className="k-tabstrip-wrapper">
-                                            <TabStripLeft
-                                                tabStripItems={
-                                                    <>
-                                                        <TabStripItem first active value="Inner First" />
-                                                        <TabStripItem last value="Inner Second" />
-                                                    </>
-                                                }>
-                                                <TabStripContent style={{ display: "block", marginLeft: "128px", minHeight: "68px" }}>
-                                                    Left orientation inside Top orientation
-                                                </TabStripContent>
-                                            </TabStripLeft>
-                                        </div>
-                                    </TabStripContent>
-                                </TabStripClosable></div>
+                                <div><ProgressBarNormal value="50" labelPosition="center" /></div>
+                                <div><ChunkProgressBarNormal progress={2} /></div>
+                            </div>
+                            <div className="k-d-grid k-grid-rows k-gap-10">
+                                <div>
+                                    <SliderNormal />
+                                </div>
+                                <div>
+                                    <StepperNormal>
+                                        <StepList style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
+                                            <Step first done valid text="1" label="Account Info with too long label" style={{ maxWidth: "33.333%" }}/>
+                                            <Step current focus invalid text="2" label="Personal Info" style={{ maxWidth: "33.333%" }}/>
+                                            <Step last optional text="3" label="Payment Details" style={{ maxWidth: "33.333%" }}/>
+                                        </StepList>
+                                        <ProgressBarNormal label={false} value="50" />
+                                    </StepperNormal>
+                                </div>
                             </div>
 
                             <div className="k-d-grid k-grid-rows k-gap-10">
-
-                                <div><BottomNavNormal themeColor="primary" border>
-                                    <BottomNavItem icon="envelope" text="Normal" />
-                                    <BottomNavItem icon="envelope" text="Focused" focus />
-                                    <BottomNavItem icon="envelope" text="Selected" selected />
-                                    <BottomNavItem icon="envelope" text="Disabled" disabled />
-                                </BottomNavNormal></div>
-
-                                <div><StepperNormal>
-                                    <StepList style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                                        <Step first done valid text="1" label="Account Info with too long label" style={{ maxWidth: "33.333%" }}/>
-                                        <Step current focus invalid text="2" label="Personal Info" style={{ maxWidth: "33.333%" }}/>
-                                        <Step last optional text="3" label="Payment Details" style={{ maxWidth: "33.333%" }}/>
-                                    </StepList>
-                                    <ProgressBarNormal label={false} value="50" />
-                                </StepperNormal></div>
-                            </div>
-
-                            <div className="k-d-grid k-grid-rows k-gap-10">
-                                <div><BreadcrumbCollapsingNone /></div>
                                 <div>
                                     <AnimationContainer>
                                         <IconNotificationClosable themeColor="primary" text="Closable notification with icon" />
                                     </AnimationContainer>
                                 </div>
-                            </div>
-
-                        </div>
-
-                        <div className="k-d-grid k-grid-cols-4 k-gap-10 grid-with-calendar">
-                            <div className="k-d-grid k-grid-rows k-gap-10">
-                                <div className="k-d-grid k-grid-cols-3 k-gap-10">
-                                    <div><TextButton>Solid</TextButton></div>
-                                    <div><TextButton fillMode="outline">Outline</TextButton></div>
-                                    <div><TextButton fillMode="flat">Flat</TextButton></div>
-                                    <div><TextButton themeColor="primary">Primary</TextButton></div>
-                                    <div><TextButton themeColor="primary" fillMode="outline">Primary</TextButton></div>
-                                    <div><TextButton themeColor="primary" fillMode="flat">Primary</TextButton></div>
-                                </div>
-                                <div>
-                                    <ButtonGroup>
-                                        <Button className="k-group-start">Button 1</Button>
-                                        <Button>Button 2</Button>
-                                        <Button className="k-group-end">Button 3</Button>
-                                    </ButtonGroup>
-                                </div>
-                                <div className="k-d-grid k-grid-cols-3 k-gap-10">
-                                    <div><TextFloatingActionButton themeColor="primary" /></div>
-                                    <div><IconFloatingActionButton themeColor="primary" /></div>
-                                    <div><IconTextFloatingActionButton themeColor="primary" /></div>
-                                </div>
-
-                            </div>
-                            <div className="k-d-grid k-grid-rows k-gap-10">
-                                <div>
-                                    <TextboxNormal value="Prefix & Suffix"
-                                        prefix={
-                                            <>
-                                                <InputPrefixText>https://</InputPrefixText>
-                                            </>
-                                        }
-                                        suffix={
-                                            <>
-                                                <InputSuffixText>.com</InputSuffixText>
-                                            </>
-                                        }
-                                    />
-                                </div>
-                                <div><DatePickerNormal placeholder="placeholder..." /></div>
-                                <div><MultiSelectNormal
-                                        tags={(
-                                            <>
-                                                <Chip text="Chip 1" actions={ <ChipAction type="remove"/> } />
-                                                <Chip text="Chip 2" actions={ <ChipAction type="remove"/> } />
-                                            </>
-                                        )}
-                                    />
-                                </div>
-                                <div className="k-d-grid k-grid-cols-2 k-gap-10">
-                                    <div className="k-px-2">
-                                        <CheckboxWithLabelAfter>Checkbox</CheckboxWithLabelAfter>
-                                    </div>
-                                    <div>
-                                       <RadioButtonWithLabelAfter>Radio</RadioButtonWithLabelAfter>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="k-d-grid k-grid-rows k-gap-10">
-                                <div><ProgressBarNormal value="50" labelPosition="center" /></div>
-                                <div><ChunkProgressBarNormal progress={2} /></div>
-                                <div><SliderNormal /></div>
-                                <div className="k-d-grid k-grid-cols-3 k-gap-2">
-                                    <div><SwitchNormal /></div>
-                                    <div><SwitchChecked /></div>
-                                    <div><SwitchNormal disabled /></div>
-                                </div>
-
-                            </div>
-
-                            <div className="k-d-grid k-grid-rows k-gap-10">
-                                <div className="k-d-grid k-grid-cols-4 k-gap-2">
-                                    <AvatarIcon fillMode="outline" themeColor="primary" border>
-                                        <Icon icon="x" />
-                                    </AvatarIcon>
-                                    <AvatarIcon themeColor="primary">
-                                        <Icon icon="x" />
-                                    </AvatarIcon>
-                                    <AvatarText themeColor="primary">JO</AvatarText>
-                                    <AvatarImage>
-                                        <img src="/packages/html/assets/avatar.jpg" />
-                                    </AvatarImage>
-                                </div>
-                                <div className="k-d-grid k-grid-cols-3 k-gap-2">
-                                    <div><BadgeNormal themeColor="primary">Rectangle</BadgeNormal></div>
-                                    <div><BadgeNormal themeColor="primary" rounded="medium">Rounded</BadgeNormal></div>
-                                    <div><BadgeNormal themeColor="primary" rounded="full">Pill</BadgeNormal></div>
-                                </div>
-                                <div><RatingNormal value={3.5} /></div>
                                 <div>
                                     <AnimationContainer>
                                         <TooltipClosable callout="top" />
@@ -329,6 +442,45 @@ export default () => (
                                 </div>
                             </div>
 
+                        </div>
+
+                        <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                            <div>
+                                <ChatNormal suggestedActions={
+                                    <SuggestionGroup layout="scrollable">
+                                        <Suggestion text="Suggestion 1" />
+                                        <Suggestion text="Suggestion 2" />
+                                        <Suggestion text="Suggestion 3" />
+                                        <Suggestion text="Suggestion 4" />
+                                        <Suggestion text="Suggestion 5" />
+                                    </SuggestionGroup>
+                                } />
+                            </div>
+
+                            <div>
+                                <Popup className="k-prompt-popup">
+                                    <PromptSuggestions />
+                                </Popup>
+                            </div>
+                            <div className="k-d-grid k-grid-rows k-gap-10">
+                                <div>
+                                    <WindowNormal title="Window"
+                                        actionButtons={
+                                            <>
+                                                <Button>Cancel</Button>
+                                                <Button themeColor="primary">OK</Button>
+                                            </>
+                                        }
+                                        actionButtonsAlign="end"
+                                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</WindowNormal>
+                                </div>
+                                <div>
+                                    <CardNormal />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="k-d-grid k-grid-cols-3 k-gap-10 grid-with-calendar">
                             <div>
                                 <Calendar className="k-calendar-range" calendarView="month" showWeek>
                                     <CalendarTable showWeek showTableHead>
@@ -397,20 +549,94 @@ export default () => (
                             </div>
 
                             <div>
-                                <TimeSelectorAll />
-                            </div>
-
-                            <div className="k-d-grid k-grid-rows k-gap-10">
-                                <CardNormal />
-                                <WindowNormal>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</WindowNormal>
+                                <CalendarInfiniteNormal />
                             </div>
 
                             <div>
-                                 <Popup className="k-prompt-popup">
-                                    <PromptSuggestions />
+                                <TimePickerNormal />
+                                <TimeSelectorAll className="k-pos-static" />
+                            </div>
+                        </div>
+
+                        <div className="k-d-grid k-grid-cols-4 k-gap-10">
+                            <div className="k-col-span-3">
+                                <GridWithFilterRow></GridWithFilterRow>
+                            </div>
+                            <div>
+                                <Popup>
+                                    <ColumnMenu>
+                                        <ColumnMenuItemWrapper>
+                                            <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                                            <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
+                                        </ColumnMenuItemWrapper>
+                                        <ColumnMenuItemWrapper>
+                                            <ColumnMenuExpander itemText="Columns" itemStartIcon="columns" expanded
+                                                itemContent={
+                                                    <ColumnList aria-label="Columns">
+                                                        <ColumnListItem label="Column 1" checked focus />
+                                                        <ColumnListItem label="Column 2" checked />
+                                                        <ColumnListItem label="Column 3" />
+                                                    </ColumnList>
+                                                }
+                                            />
+                                        </ColumnMenuItemWrapper>
+                                        <ColumnMenuItemWrapper>
+                                            <ColumnMenuExpander itemText="Filter" itemStartIcon="filter" expanded
+                                                itemContent={
+                                                    <FilterMenuNormal />
+                                                }
+                                            />
+                                        </ColumnMenuItemWrapper>
+                                        <ColumnMenuItemWrapper>
+                                            <ColumnMenuExpander itemText="Set column position" itemStartIcon="set-column-position"/>
+                                        </ColumnMenuItemWrapper>
+                                    </ColumnMenu>
                                 </Popup>
                             </div>
+                        </div>
 
+                        <div className="k-d-grid k-grid-cols-4 k-gap-10">
+                            <div>
+                                <ColorEditorNormal />
+                            </div>
+                            <div>
+                                <ColorEditorPaletteGroup />
+                            </div>
+                            <div>
+                                <Menu
+                                    children={
+                                        <>
+                                            <MenuItem first text="Item 1"></MenuItem>
+                                            <MenuItem showArrow arrowIconName="caret-alt-down" text="Item 2" active></MenuItem>
+                                            <MenuItem showArrow arrowIconName="caret-alt-down" text="Item 3"></MenuItem>
+                                        </>
+                                    }
+                                popup={
+                                    <>
+                                        <Popup className="k-menu-popup">
+                                            <MenuList>
+                                                <MenuListItem first text="Disabled" disabled></MenuListItem>
+                                                <MenuListItem text="Normal"></MenuListItem>
+                                                <MenuListItem text="Hover" hover showArrow></MenuListItem>
+                                                <MenuSeparator></MenuSeparator>
+                                                <MenuListItem text="Active" active showArrow></MenuListItem>
+                                                <MenuListItem text="Focus" focus></MenuListItem>
+                                                <MenuListItem last text="Focus & Active" active focus></MenuListItem>
+                                            </MenuList>
+                                        </Popup>
+                                    </>
+                                } />
+                            </div>
+                            <div>
+                                <ListViewNormal
+                                    header
+                                    footer>
+                                    <ListViewItem><div>Listview Item</div></ListViewItem>
+                                    <ListViewItem focus><div>Focus Item</div></ListViewItem>
+                                    <ListViewItem selected><div>Selected Item</div></ListViewItem>
+                                    <ListViewItem focus selected><div>Focus Selected Item</div></ListViewItem>
+                                </ListViewNormal>
+                            </div>
                             <div>
                                 <PanelBarNormal>
                                     <PanelBarItem header icon="gear" text="Root">
@@ -451,21 +677,6 @@ export default () => (
                             </div>
 
                             <div>
-                                <ListViewNormal
-                                    header
-                                    footer>
-                                    <ListViewItem><div>Listview Item</div></ListViewItem>
-                                    <ListViewItem focus><div>Focus Item</div></ListViewItem>
-                                    <ListViewItem selected><div>Selected Item</div></ListViewItem>
-                                    <ListViewItem focus selected><div>Focus Selected Item</div></ListViewItem>
-                                </ListViewNormal>
-                            </div>
-
-                            <div>
-                                <ListBoxNormal />
-                            </div>
-
-                            <div>
                                 <TreeviewNormal>
                                     <TreeviewItem text="Normal" />
                                     <TreeviewItem text="Hover" hover />
@@ -481,41 +692,31 @@ export default () => (
                                 </TreeviewNormal>
                             </div>
 
-
                             <div>
-                                <Menu
-                                    children={
-                                        <>
-                                            <MenuItem first text="Item 1"></MenuItem>
-                                            <MenuItem showArrow arrowIconName="caret-alt-down" text="Item 2" active></MenuItem>
-                                            <MenuItem showArrow arrowIconName="caret-alt-down" text="Item 3"></MenuItem>
-                                        </>
-                                    }
-                                popup={
-                                    <>
-                                        <Popup className="k-menu-popup">
-                                            <MenuList>
-                                                <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                                <MenuListItem text="Normal"></MenuListItem>
-                                                <MenuListItem text="Hover" hover showArrow></MenuListItem>
-                                                <MenuSeparator></MenuSeparator>
-                                                <MenuListItem text="Active" active showArrow></MenuListItem>
-                                                <MenuListItem text="Focus" focus></MenuListItem>
-                                                <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                            </MenuList>
-                                        </Popup>
-                                    </>
-                                } />
+                                <ListBoxNormal />
                             </div>
 
-                            <div className="k-col-span-2">
-                                <ChartWizardNormal />
-                            </div>
 
                         </div>
 
-                        <div>
-                            <GridWithFilterRow></GridWithFilterRow>
+                        <div className="k-d-grid k-grid-cols-2 k-gap-10">
+                            <div className="k-d-grid k-grid-rows k-gap-10">
+                                <div>
+                                    <UploadNormal />
+                                </div>
+                                <div>
+                                    <DropzoneNormal />
+                                </div>
+                                <div>
+                                    <EditorNormal>
+                                        <p className="ProseMirror">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia obcaecati dignissimos beatae ipsam voluptatem pariatur consectetur culpa asperiores veniam?</p>
+                                    </EditorNormal>
+                                </div>
+                            </div>
+                            <div>
+                                <ChartWizardNormal />
+                            </div>
+
                         </div>
 
                         <div>
@@ -557,11 +758,6 @@ export default () => (
                             </div>
 
                             <div className="k-d-grid k-grid-rows k-gap-10">
-                                <div>
-                                    <EditorNormal>
-                                        <p className="ProseMirror">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia obcaecati dignissimos beatae ipsam voluptatem pariatur consectetur culpa asperiores veniam?</p>
-                                    </EditorNormal>
-                                </div>
                                 <div>
                                     <SchedulerWeek />
                                 </div>
@@ -809,6 +1005,44 @@ export default () => (
                                             </PivotGridTbody>
                                         </PivotGridTable>
                                     </PivotGrid>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="k-d-grid k-grid-cols-2 k-gap-10">
+                            <div>
+                                <ChartDemo />
+                            </div>
+                            <div className="k-d-grid k-grid-cols-2 k-gap-10">
+                                <div>
+                                    <div className="k-gauge k-arcgauge">
+                                        <div className="k-arcgauge-label" style={{top: "125.125px", left: "85px"}}>20</div>
+                                        <div style={{width: "200px", height: "200px"}}>
+                                            <svg style={{width: "100%", height: "100%", overflow: "hidden", left: "-0.5px", top: "0px"}}>
+                                                <g>
+                                                    <path d="M0 0 L 200 0 200 200 0 200Z" stroke="none" fill="none"></path>
+                                                    <path d="M26.986 92.077 C 38.096 76.785 54.134 65.133 72.111 59.292 90.088 53.451 109.912 53.451 127.889 59.292 145.866 65.133 161.904 76.785 173.014 92.077 184.124 107.369 190.25 126.223 190.25 145.125" stroke="var(--kendo-chart-gauge-track)" strokeWidth="9.5" strokeLinecap="round" fill="none"></path>
+                                                    <path d="M9.75 145.125 C 9.75 126.223 15.876 107.369 26.986 92.077" stroke="var(--kendo-chart-gauge-pointer)" strokeWidth="9.5" strokeLinecap="round" fill="none"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="k-gauge k-circulargauge">
+                                        <div className="k-circulargauge-label" style={{top: "90px", left: "85px"}}>20</div>
+                                        <div style={{width: "200px", height: "200px"}}>
+                                            <svg style={{width: "100%", height: "100%", overflow: "hidden"}}>
+                                                <g>
+                                                    <path d="M0 0 L 200 0 200 200 0 200Z" stroke="none" fill="none"></path>
+                                                    <g>
+                                                        <path d="M185.833 72.111 C 192.508 92.656 191.478 115.607 182.987 135.471 174.497 155.334 158.621 171.94 139.158 181.312 119.695 190.685 96.814 192.745 75.99 186.998 55.166 181.251 36.58 167.747 24.68 149.718 12.779 131.69 7.667 109.292 10.567 87.885 13.467 66.479 24.353 46.248 40.621 32.035 56.889 17.822 78.398 9.75 100 9.75" stroke="var(--kendo-chart-gauge-track)" strokeWidth="9.5" strokeLinecap="round" fill="none"></path>
+                                                        <path d="M100 9.75 C 118.902 9.75 137.756 15.876 153.048 26.986 168.34 38.096 179.992 54.134 185.833 72.111" stroke="var(--kendo-chart-gauge-pointer)" strokeWidth="9.5" strokeLinecap="round" fill="none"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
