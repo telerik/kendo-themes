@@ -80,6 +80,7 @@ jobs:
           npx lerna publish --conventional-commits --conventional-graduate --create-release github --force-publish --exact
         env:
           GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Lerna publish (dev)
         if: env.RELEASE_TYPE == 'dev'
@@ -87,6 +88,7 @@ jobs:
           npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
         env:
           GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Mark checks as successful
         run: |
@@ -94,6 +96,7 @@ jobs:
           ./build/mark-checks.sh $commit
         env:
           GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Push to GitHub
         if: env.RELEASE_TYPE == 'stable'
