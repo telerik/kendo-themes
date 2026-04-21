@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-indicator-outline</td>
     <td>String</td>
-    <td><code>$kendo-dock-indicator-text</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-elevation-border(2, $kendo-dock-indicator-text)</code></td>
+    <td><code>oklch(from var(--kendo-color-primary) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the dock indicator in the DockManager component.</div></div>
