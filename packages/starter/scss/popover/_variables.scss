@@ -31,7 +31,7 @@ $kendo-popover-text: k-color(on-app-surface) !default;
 $kendo-popover-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
 /// The border color of the Popover.
 /// @group popover
-$kendo-popover-border: k-elevation-border(2, k-color(border)) !default;
+$kendo-popover-border: k-color(border) !default;
 /// The box shadow of the Popover.
 /// @group popover
 $kendo-popover-shadow: $kendo-popup-shadow !default;

@@ -46,7 +46,7 @@ $kendo-actionsheet-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
 $kendo-actionsheet-text: k-color(on-app-surface) !default;
 /// The border color of the ActionSheet.
 /// @group action-sheet
-$kendo-actionsheet-border: k-elevation-border(2, k-color(border)) !default;
+$kendo-actionsheet-border: k-color(border) !default;
 /// The shadow of the ActionSheet.
 /// @group action-sheet
 $kendo-actionsheet-shadow: k-elevation(2) !default;

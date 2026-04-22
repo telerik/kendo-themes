@@ -85,7 +85,7 @@ $kendo-window-bg: k-elevation-bg(3, k-color(surface-alt)) !default;
 $kendo-window-text: k-color(on-app-surface) !default;
 /// The border color of the Window.
 /// @group window
-$kendo-window-border: k-elevation-border(3, k-color(border)) !default;
+$kendo-window-border: k-color(border) !default;
 /// The box shadow of the Window.
 /// @group window
 $kendo-window-shadow: k-elevation(3) !default;

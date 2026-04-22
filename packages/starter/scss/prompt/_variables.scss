@@ -11,7 +11,7 @@ $kendo-prompt-text: k-color(on-app-surface) !default;
 $kendo-prompt-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
 /// The border color of the AIPrompt.
 /// @group prompt
-$kendo-prompt-border: k-elevation-border(2, k-color(border)) !default;
+$kendo-prompt-border: k-color(border) !default;
 
 /// The text color of the AIPrompt header.
 /// @group prompt

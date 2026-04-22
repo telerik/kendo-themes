@@ -131,7 +131,7 @@ $kendo-fab-item-text: k-color(on-app-surface) !default;
 $kendo-fab-item-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
 /// The base border color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-border: k-elevation-border(2, k-color(border)) !default;
+$kendo-fab-item-border: k-color(border) !default;
 
 /// The base text color of the FAB item icon.
 /// @group floating-action-button

@@ -86,7 +86,7 @@ $kendo-dock-indicator-outline-width: 1px !default;
 $kendo-dock-indicator-outline-style: solid !default;
 /// The outline color of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-outline: k-elevation-border(2, $kendo-dock-indicator-text) !default;
+$kendo-dock-indicator-outline: $kendo-dock-indicator-text !default;
 /// The box shadow of the dock indicator in the DockManager component.
 /// @group dock-manager
 $kendo-dock-indicator-shadow: k-elevation(5) !default;

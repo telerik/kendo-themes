@@ -12,7 +12,7 @@ $kendo-drawer-bg: k-elevation-bg(1, k-color(surface-alt)) !default;
 $kendo-drawer-text: k-color(on-app-surface) !default;
 /// The border color of the Drawer.
 /// @group drawer
-$kendo-drawer-border: k-elevation-border(1, k-color(border)) !default;
+$kendo-drawer-border: k-color(border) !default;
 /// The border width of the Drawer.
 /// @group drawer
 $kendo-drawer-border-width: 1px !default;

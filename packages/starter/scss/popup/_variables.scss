@@ -29,7 +29,7 @@ $kendo-popup-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
 $kendo-popup-text: k-color(on-app-surface) !default;
 /// Border color of the popup.
 /// @group popup
-$kendo-popup-border: k-elevation-border(2, k-color(border)) !default;
+$kendo-popup-border: k-color(border) !default;
 /// Box shadow of the popup.
 /// @group popup
 $kendo-popup-shadow: k-elevation(2) !default;

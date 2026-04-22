@@ -45,7 +45,7 @@ $kendo-card-bg: k-elevation-bg(1, k-color(surface-alt)) !default;
 $kendo-card-text: k-color(on-app-surface) !default;
 /// The border color of the Card.
 /// @group card
-$kendo-card-border: k-elevation-border(1, k-color(border)) !default;
+$kendo-card-border: k-color(border) !default;
 /// The shadow of the Card.
 /// @group card
 $kendo-card-shadow: k-elevation(1) !default;

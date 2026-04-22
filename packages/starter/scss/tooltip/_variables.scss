@@ -47,7 +47,7 @@ $kendo-tooltip-bg: k-elevation-bg(2, k-color(inverse)) !default;
 $kendo-tooltip-text: k-color(on-inverse) !default;
 /// The default border color of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-border: k-elevation-border(2, k-color(border)) !default;
+$kendo-tooltip-border: k-color(border) !default;
 
 /// The box-shadow of the Tooltip.
 /// @group tooltip
