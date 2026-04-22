@@ -14891,8 +14891,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-fab-shadow</td>
     <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
@@ -14930,9 +14930,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-fab-outline-width</td>
-    <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5)</code></td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB.</div></div>
@@ -15040,9 +15040,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-fab-item-outline-width</td>
-    <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5)</code></td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB item.</div></div>
@@ -16754,8 +16754,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -16764,8 +16764,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-grid-sm-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -16775,7 +16775,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-header-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -16785,7 +16785,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-header-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -16795,7 +16795,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-grouping-header-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -16805,7 +16805,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-grouping-header-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -16815,7 +16815,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16825,7 +16825,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-cell-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -16835,7 +16835,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-filter-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16855,7 +16855,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-edit-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -16885,7 +16885,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-selection-aggregates-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -16895,7 +16895,7 @@ The following table lists the available variables for customizing the Starter th
     <td>$kendo-grid-sm-selection-aggregates-padding-y</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -17359,6 +17359,36 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-text</td>
+    <td>String</td>
+    <td><code>$kendo-grid-header-text</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-border</td>
+    <td>String</td>
+    <td><code>$kendo-grid-header-border</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -18030,7 +18060,7 @@ The following table lists the available variables for customizing the Starter th
         selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
 )</code></td>
-    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"var(--kendo-spacing-2\\.5)","grouping-header-padding-x":"var(--kendo-spacing-2\\.5)","grouping-header-padding-y":"var(--kendo-spacing-2\\.5)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"var(--kendo-spacing-2\\.5)","filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","edit-cell-padding-x":"var(--kendo-spacing-2\\.5)","edit-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","button-padding-y":"var(--kendo-spacing-1)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2\\.5)","selection-aggregates-padding-y":"var(--kendo-spacing-2\\.5)"</li><li>md: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"var(--kendo-spacing-1)","edit-cell-padding-x":"var(--kendo-spacing-2\\.5)","edit-cell-padding-y":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1\\.5)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","selection-aggregates-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li></ul></td>
+    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-2)","grouping-header-padding-x":"var(--kendo-spacing-2)","grouping-header-padding-y":"var(--kendo-spacing-2)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2)","filter-cell-padding-x":"var(--kendo-spacing-2)","filter-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","edit-cell-padding-x":"var(--kendo-spacing-2)","edit-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","button-padding-y":"var(--kendo-spacing-1)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2)","selection-aggregates-padding-y":"var(--kendo-spacing-2)"</li><li>md: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"var(--kendo-spacing-1)","edit-cell-padding-x":"var(--kendo-spacing-2\\.5)","edit-cell-padding-y":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1\\.5)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","selection-aggregates-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Grid.</div></div>
@@ -26549,8 +26579,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-pivotgrid-headers-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid header.</div></div>
@@ -34371,8 +34401,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-table-sm-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Table cell.</div></div>
@@ -34801,7 +34831,7 @@ The following table lists the available variables for customizing the Starter th
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-sm)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li><li>lg: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-sm)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li><li>lg: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Table.</div></div>

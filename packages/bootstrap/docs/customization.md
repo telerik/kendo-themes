@@ -16862,6 +16862,36 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-grouping-header-bg</td>
+    <td>String</td>
+    <td><code>$kendo-grid-header-bg</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-text</td>
+    <td>String</td>
+    <td><code>$kendo-grid-header-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-border</td>
+    <td>String</td>
+    <td><code>$kendo-grid-header-border</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-grouping-row-text</td>
     <td>String</td>
     <td><code>$kendo-grid-text</code></td>
