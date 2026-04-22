@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(base), currentColor 6%)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-base), currentColor 6%)</code></td>
+    <td><code>k-color(base)</code></td>
+    <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Segmented Control.</div></div>
@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-segmented-control-button-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 16%, k-color(base-hover))</code></td>
-    <td><code>color-mix(in srgb, currentColor 16%, var(--kendo-color-base-hover))</code></td>
+    <td><code>color-mix(in srgb, k-color(base-hover), k-color(base-active) 70%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-hover), var(--kendo-color-base-active) 70%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered button inside Segmented Control.</div></div>

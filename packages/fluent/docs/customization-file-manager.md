@@ -48,6 +48,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-file-manager-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-file-manager-border-radius, null )</code></td>
+    <td><code>var(--kendo-file-manager-border-radius, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FileManager.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-file-manager-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-file-manager-font-family, var(--kendo-font-family) )</code></td>
