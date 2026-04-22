@@ -400,8 +400,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-border</td>
     <td>String</td>
-    <td><code>k-elevation-border(2, k-color(border))</code></td>
-    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item.</div></div>
@@ -510,8 +510,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the FloatingActionButton.</div></div>

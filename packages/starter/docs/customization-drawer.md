@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-border</td>
     <td>String</td>
-    <td><code>k-elevation-border(1, k-color(border))</code></td>
-    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 1 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Drawer.</div></div>

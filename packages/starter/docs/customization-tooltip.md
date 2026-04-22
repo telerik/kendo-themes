@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-border</td>
     <td>String</td>
-    <td><code>k-elevation-border(2, k-color(border))</code></td>
-    <td><code>oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1)))</code></td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border color of the Tooltip.</div></div>
@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-theme-colors</td>
     <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse")</code></td>
+    <td><code>("base", "info", "success", "warning", "error", "inverse")</code></td>
+    <td><code>("base", "info", "success", "warning", "error", "inverse")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Tooltip.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tooltip-theme</td>
     <td>Map</td>
     <td><code>tooltip-theme( $kendo-tooltip-theme-colors )</code></td>
-    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse)","background-color":"var(--kendo-color-inverse)","border":"var(--kendo-color-inverse)"</li><li>light: "color":"var(--kendo-color-on-light)","background-color":"var(--kendo-color-light)","border":"var(--kendo-color-light)"</li><li>dark: "color":"var(--kendo-color-on-dark)","background-color":"var(--kendo-color-dark)","border":"var(--kendo-color-dark)"</li><li>error: "color":"var(--kendo-color-on-error)","background-color":"var(--kendo-color-error)","border":"var(--kendo-color-error)"</li><li>warning: "color":"var(--kendo-color-on-warning)","background-color":"var(--kendo-color-warning)","border":"var(--kendo-color-warning)"</li><li>success: "color":"var(--kendo-color-on-success)","background-color":"var(--kendo-color-success)","border":"var(--kendo-color-success)"</li><li>info: "color":"var(--kendo-color-on-info)","background-color":"var(--kendo-color-info)","border":"var(--kendo-color-info)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary)","background-color":"var(--kendo-color-tertiary)","border":"var(--kendo-color-tertiary)"</li><li>secondary: "color":"var(--kendo-color-on-secondary)","background-color":"var(--kendo-color-secondary)","border":"var(--kendo-color-secondary)"</li><li>primary: "color":"var(--kendo-color-on-primary)","background-color":"var(--kendo-color-primary)","border":"var(--kendo-color-primary)"</li><li>base: "color":"var(--kendo-color-on-base)","background-color":"var(--kendo-color-base)","border":"var(--kendo-color-base)"</li></ul></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse)","background-color":"var(--kendo-color-inverse)","border":"var(--kendo-color-inverse)"</li><li>error: "color":"var(--kendo-color-on-error)","background-color":"var(--kendo-color-error)","border":"var(--kendo-color-error)"</li><li>warning: "color":"var(--kendo-color-on-warning)","background-color":"var(--kendo-color-warning)","border":"var(--kendo-color-warning)"</li><li>success: "color":"var(--kendo-color-on-success)","background-color":"var(--kendo-color-success)","border":"var(--kendo-color-success)"</li><li>info: "color":"var(--kendo-color-on-info)","background-color":"var(--kendo-color-info)","border":"var(--kendo-color-info)"</li><li>base: "color":"var(--kendo-color-on-base)","background-color":"var(--kendo-color-base)","border":"var(--kendo-color-base)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Tooltip.</div></div>
