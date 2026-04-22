@@ -58,6 +58,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-file-box-info-gap</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-info-gap, null )</code></td>
+    <td><code>var(--kendo-file-box-info-gap, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the elements of the File Box info section.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-file-box-min-width</td>
     <td>String</td>
     <td><code>var(--kendo-file-box-min-width, var(--kendo-file-box-min-width, 96px) )</code></td>
@@ -175,6 +185,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-size-text</td>
+    <td>String</td>
+    <td><code>var(--kendo-file-box-size-text, null )</code></td>
+    <td><code>var(--kendo-file-box-size-text, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the File Box file size.</div></div>
     </td>
 </tr>
 <tr>

@@ -13269,6 +13269,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-file-box-info-gap</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the elements of the File Box info section.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-file-box-min-width</td>
     <td>Number</td>
     <td><code>96px</code></td>
@@ -13386,6 +13396,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-size-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the File Box file size.</div></div>
     </td>
 </tr>
 <tr>

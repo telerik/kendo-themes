@@ -7702,8 +7702,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-message-reference-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat message reference.</div></div>
@@ -7712,8 +7712,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-message-reference-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat message reference.</div></div>
@@ -7752,8 +7752,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-chat-message-reference-marker-alt-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-emphasis)</code></td>
-    <td><code>var(--kendo-color-primary-emphasis)</code></td>
+    <td><code>k-color(secondary-emphasis)</code></td>
+    <td><code>var(--kendo-color-secondary-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the message reference alt marker.</div></div>
@@ -13749,6 +13749,16 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-file-box-info-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the elements of the File Box info section.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-file-box-min-width</td>
     <td>Number</td>
     <td><code>96px</code></td>
@@ -13866,6 +13876,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the File Box.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-box-size-text</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the File Box file size.</div></div>
     </td>
 </tr>
 <tr>
@@ -28078,9 +28098,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-prompt-box-box-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(1)</code></td>
-    <td><code>var(--kendo-elevation-1)</code></td>
+    <td>List</td>
+    <td><code>0 1px 2px 0 rgba(0, 0, 0, 0.05)</code></td>
+    <td><code>(0 1px 2px 0 rgba(0, 0, 0, 0.05))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the PromptBox.</div></div>
