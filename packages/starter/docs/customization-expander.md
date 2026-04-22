@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 4%, transparent )</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 4%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent )</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered ExpansionPanel header.</div></div>

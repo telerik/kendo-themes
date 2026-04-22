@@ -78,6 +78,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chat-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-chat-border-radius, null )</code></td>
+    <td><code>var(--kendo-chat-border-radius, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chat-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-chat-font-family, var(--kendo-font-family) )</code></td>
