@@ -10,6 +10,10 @@
         background-color: $kendo-file-box-bg;
         color: $kendo-file-box-text;
         border-color: $kendo-file-box-border;
+
+        .k-file-size {
+            color: $kendo-file-box-size-text;
+        }
     }
 
     .k-file-box-wrapper-scrollable-start::after {

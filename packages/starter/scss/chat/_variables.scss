@@ -224,10 +224,10 @@ $kendo-chat-message-pinned-border-color: k-color(border) !default;
 
 /// The horizontal padding of the Chat message reference.
 /// @group chat
-$kendo-chat-message-reference-padding-x: k-spacing(2) !default;
+$kendo-chat-message-reference-padding-x: k-spacing(1.5) !default;
 /// The vertical padding of the Chat message reference.
 /// @group chat
-$kendo-chat-message-reference-padding-y: k-spacing(2) !default;
+$kendo-chat-message-reference-padding-y: k-spacing(1.5) !default;
 
 /// The background color of the Chat message reference.
 /// @group chat
@@ -240,7 +240,7 @@ $kendo-chat-message-reference-text: k-color(on-app-surface) !default;
 $kendo-chat-message-reference-marker-bg: k-color(base-emphasis) !default;
 /// The background color of the message reference alt marker.
 /// @group chat
-$kendo-chat-message-reference-marker-alt-bg: k-color(primary-emphasis) !default;
+$kendo-chat-message-reference-marker-alt-bg: k-color(secondary-emphasis) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/chat/_variables.scss" with (
     $kendo-chat-padding-x: $kendo-chat-padding-x,

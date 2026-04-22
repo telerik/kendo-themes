@@ -22,4 +22,11 @@
     .k-message-time {
         color: $kendo-chat-status-text;
     }
+
+    .k-message,
+    .k-message-box-wrapper {
+        .k-message-reference {
+            border-color: var(--kendo-color-border);
+        }
+    }
 }

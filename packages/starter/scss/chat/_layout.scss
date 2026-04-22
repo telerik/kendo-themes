@@ -1,5 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/chat/_layout.scss" as *;
+@use "./variables.scss" as *;
 
 
 @mixin kendo-chat--layout() {
@@ -12,5 +13,37 @@
 
     .k-message-list-content {
         padding-block-end: k-spacing(2);
+    }
+
+    .k-message-list {
+        > .k-message-pinned {
+            padding-block: calc( #{$kendo-chat-message-reference-padding-y} + #{k-spacing(2)} );
+            padding-inline: calc( #{$kendo-chat-message-reference-padding-x} + #{k-spacing(2)} );
+        }
+    }
+
+    .k-chat-bubble,
+    .k-message-box {
+        .k-message-reference {
+            padding-inline: $kendo-chat-message-reference-padding-x;
+            padding-block: $kendo-chat-message-reference-padding-y;
+        }
+    }
+
+    .k-message,
+    .k-message-box-wrapper {
+        .k-message-reference {
+            border-radius: var(--kendo-border-radius-md);
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .k-message-reference-content {
+            padding-block: 0;
+
+            &::before {
+                height: 100%;
+            }
+        }
     }
 }

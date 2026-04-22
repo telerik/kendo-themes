@@ -3,4 +3,8 @@
 
 @mixin kendo-file-box--layout() {
     @include kendo-file-box--layout-base();
+
+    .k-file-box-wrapper {
+        padding: 0;
+    }
 }
