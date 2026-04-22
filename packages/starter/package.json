@@ -53,8 +53,8 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^4.8.0",
-    "@progress/kendo-theme-core": "13.2.0-dev.2",
-    "@progress/kendo-theme-utils": "13.2.0-dev.2"
+    "@progress/kendo-theme-core": "13.2.0-dev.3",
+    "@progress/kendo-theme-utils": "13.2.0-dev.3"
   },
   "directories": {
     "doc": "docs",
