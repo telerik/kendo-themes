@@ -19,7 +19,6 @@
                     &.k-fab-#{$name} {
                         &:focus,
                         &.k-focus {
-                            box-shadow: none;
                             @include focus-indicator(
                                 $indicator: k-color(subtle),
                                 $type: "outline",
@@ -33,7 +32,6 @@
                     &.k-fab-#{$name} {
                         &:focus,
                         &.k-focus {
-                            box-shadow: none;
                             @include focus-indicator(
                                 $indicator: k-color(#{$name}-on-surface),
                                 $type: "outline",
@@ -57,8 +55,6 @@
     // FAB item focus
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
-        box-shadow: none;
-        outline: none;
         @include focus-indicator(
             $indicator: k-color(subtle),
             $type: "outline",

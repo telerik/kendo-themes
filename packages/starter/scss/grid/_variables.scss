@@ -89,10 +89,10 @@ $kendo-grid-group-drop-hint-top: k-spacing(2) !default;
 
 /// The horizontal padding of the Grid.
 /// @group grid
-$kendo-grid-sm-padding-x: k-spacing(2.5) !default;
+$kendo-grid-sm-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Grid.
 /// @group grid
-$kendo-grid-sm-padding-y: k-spacing(2.5) !default;
+$kendo-grid-sm-padding-y: k-spacing(2) !default;
 /// The horizontal padding of the Grid header.
 /// @group grid
 $kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
@@ -285,6 +285,16 @@ $kendo-grid-selection-aggregates-font-weight: var( --kendo-font-weight-bold, nor
 /// The background color of the Grid row.
 /// @group grid
 $kendo-grid-grouping-row-bg: k-color(surface) !default;
+
+/// The background color of the Grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-bg: k-color(surface-alt) !default;
+/// The text color of the Grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-text: $kendo-grid-header-text !default;
+/// The border color of the Grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-border: $kendo-grid-header-border !default;
 /// The text color of the Grid row.
 /// @group grid
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
@@ -522,6 +532,9 @@ $kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-bold, 700 ) !def
     $kendo-grid-header-padding-y: $kendo-grid-header-padding-y,
     $kendo-grid-grouping-header-padding-x: $kendo-grid-grouping-header-padding-x,
     $kendo-grid-grouping-header-padding-y: $kendo-grid-grouping-header-padding-y,
+    $kendo-grid-grouping-header-bg: $kendo-grid-grouping-header-bg,
+    $kendo-grid-grouping-header-text: $kendo-grid-grouping-header-text,
+    $kendo-grid-grouping-header-border: $kendo-grid-grouping-header-border,
     $kendo-grid-cell-padding-x: $kendo-grid-cell-padding-x,
     $kendo-grid-cell-padding-y: $kendo-grid-cell-padding-y,
     $kendo-grid-filter-cell-padding-x: $kendo-grid-filter-cell-padding-x,
