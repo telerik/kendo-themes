@@ -9,6 +9,17 @@
     @include kendo-calendar--theme-base();
 
     .k-calendar {
+        background: unset;
+
+        .k-calendar-navigation {
+            backdrop-filter: k-translucency-blur(1);
+            background-color: $kendo-calendar-header-bg;
+        }
+
+        .k-calendar-view {
+            background-color: $kendo-calendar-bg;
+        }
+
         .k-calendar-td {
             &:focus,
             &.k-focus {
@@ -39,6 +50,18 @@
                 color: $kendo-calendar-cell-hover-text;
             }
         }
+    }
+
+    .k-calendar .k-header,
+    .k-calendar-header {
+        backdrop-filter: k-translucency-blur(1);
+        background-color: $kendo-calendar-header-bg;
+    }
+
+    .k-calendar .k-footer,
+    .k-calendar-footer {
+        backdrop-filter: k-translucency-blur(1);
+        background-color: $kendo-calendar-header-bg;
     }
 
     .k-calendar-nav {

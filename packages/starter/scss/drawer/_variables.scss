@@ -6,7 +6,7 @@
 
 /// The background color of the Drawer.
 /// @group drawer
-$kendo-drawer-bg: k-elevation-bg(1, k-color(surface-alt)) !default;
+$kendo-drawer-bg: k-translucency-bg(k-elevation-bg(1, k-color(surface-alt))) !default;
 /// The text color of the Drawer.
 /// @group drawer
 $kendo-drawer-text: k-color(on-app-surface) !default;

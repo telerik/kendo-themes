@@ -1,6 +1,15 @@
+@use "../timeselector/variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/datetimepicker/_theme.scss" as *;
-
 
 @mixin kendo-date-time-picker--theme() {
     @include kendo-date-time-picker--theme-base();
+
+    .k-datetime-container,
+    .k-datetimepicker-popup {
+        .k-datetime-selector,
+        .k-timeselector,
+        .k-datetime-footer {
+            background-color: $kendo-time-selector-bg;
+        }
+    }
 }

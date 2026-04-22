@@ -3,8 +3,4 @@
 
 @mixin kendo-date-range-picker--layout() {
     @include kendo-date-range-picker--layout-base();
-
-    .k-daterangepicker-popup {
-        padding: $kendo-popup-content-padding-y $kendo-popup-content-padding-x;
-    }
 }

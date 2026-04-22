@@ -1,6 +1,15 @@
+@use "./variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/filemanager/_theme.scss" as *;
 
 
 @mixin kendo-file-manager--theme() {
     @include kendo-file-manager--theme-base();
+
+    .k-filemanager {
+        background-color: unset;
+    }
+
+    .k-filemanager-content-container {
+        background-color: $kendo-file-manager-bg;
+    }
 }

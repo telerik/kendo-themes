@@ -23,6 +23,8 @@
 
     .k-calendar:not(.k-calendar-infinite) {
         .k-calendar-view {
+            margin: 0;
+            width: auto;
             padding-block: calc( #{$kendo-calendar-header-padding-x} / 2 ) $kendo-calendar-header-padding-x;
         }
     }

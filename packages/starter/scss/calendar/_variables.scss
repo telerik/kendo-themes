@@ -51,7 +51,7 @@ $kendo-calendar-header-border-width: 1px !default;
 
 /// The background color of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-bg: k-color(surface-alt) !default;
+$kendo-calendar-header-bg: k-translucency-bg(k-color(surface-alt)) !default;
 /// The border color of the header in the Calendar.
 /// @group calendar
 $kendo-calendar-header-border: k-color(border) !default;

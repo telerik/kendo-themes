@@ -28,7 +28,7 @@ $kendo-popover-line-height: $kendo-card-line-height !default;
 $kendo-popover-text: k-color(on-app-surface) !default;
 /// The background color of the Popover.
 /// @group popover
-$kendo-popover-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
+$kendo-popover-bg: k-translucency-bg(k-elevation-bg(2, k-color(surface-alt))) !default;
 /// The border color of the Popover.
 /// @group popover
 $kendo-popover-border: k-color(border) !default;

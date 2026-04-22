@@ -7,6 +7,7 @@
     @include kendo-panelbar--theme-base();
 
     .k-panelbar {
+        backdrop-filter: k-translucency-blur(1);
 
         // Root header focus
         > .k-panelbar-header {

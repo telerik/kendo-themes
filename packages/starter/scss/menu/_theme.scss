@@ -6,6 +6,10 @@
 @mixin kendo-menu--theme() {
     @include kendo-menu--theme-base();
 
+    .k-menu-group {
+        background-color: unset;
+    }
+
     .k-menu:not(.k-context-menu) > .k-item:focus,
     .k-menu:not(.k-context-menu) > .k-item.k-focus,
     .k-menu-group .k-item:focus > .k-link,

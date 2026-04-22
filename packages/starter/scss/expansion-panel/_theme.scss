@@ -6,6 +6,11 @@
 @mixin kendo-expander--theme() {
     @include kendo-expander--theme-base();
 
+    .k-expander:not(.k-expanded) {
+        background-color: k-translucency-bg(k-color(surface-alt));
+        backdrop-filter: k-translucency-blur(2);
+    }
+
     .k-expander {
         &.k-focus {
             @include focus-indicator(

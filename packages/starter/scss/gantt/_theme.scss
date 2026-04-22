@@ -1,6 +1,15 @@
+@use "_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/gantt/_theme.scss" as *;
 
 
 @mixin kendo-gantt--theme() {
     @include kendo-gantt--theme-base();
+
+    .k-gantt {
+        background-color: unset;
+
+        .k-gantt-content {
+            background-color: $kendo-gantt-bg;
+        }
+    }
 }

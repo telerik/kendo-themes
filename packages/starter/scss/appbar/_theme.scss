@@ -1,11 +1,22 @@
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/appbar/_theme.scss" as *;
-
 
 @mixin kendo-appbar--theme() {
     @include kendo-appbar--theme-base();
 
-    .k-appbar.k-appbar-base {
-        background-color: k-elevation-bg(1, k-color(base));
+    .k-appbar {
+        @each $name in $kendo-appbar-theme-colors {
+            #{k-when-default($kendo-appbar-default-theme-color, $name)} &.k-appbar-#{$name} {
+                @if $name == "inherit" {
+                    color: inherit;
+                    background-color: inherit;
+                } @else {
+                    color: k-color(on-#{$name});
+                    background-color: k-translucency-bg(k-elevation-bg(1, k-color(#{$name})));
+                }
+            }
+        }
     }
 }

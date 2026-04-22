@@ -72,7 +72,7 @@ $kendo-toolbar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-bg: k-color(surface-alt) !default;
+$kendo-toolbar-bg: k-translucency-bg(k-color(surface-alt)) !default;
 /// The text color of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-text: k-color(on-app-surface) !default;

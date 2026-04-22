@@ -35,7 +35,7 @@ $kendo-card-deck-gap: k-spacing(4) !default;
 
 /// The background color of the Card.
 /// @group card
-$kendo-card-bg: k-elevation-bg(1, k-color(surface-alt)) !default;
+$kendo-card-bg: k-translucency-bg(k-elevation-bg(1, k-color(surface-alt))) !default;
 /// The text color of the Card.
 /// @group card
 $kendo-card-text: k-color(on-app-surface) !default;

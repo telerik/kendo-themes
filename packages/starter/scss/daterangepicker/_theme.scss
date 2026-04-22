@@ -3,4 +3,9 @@
 
 @mixin kendo-date-range-picker--theme() {
     @include kendo-date-range-picker--theme-base();
+
+    .k-daterangepicker-popup .k-calendar-header {
+        background-color: unset;
+        backdrop-filter: none;
+    }
 }

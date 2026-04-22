@@ -1,6 +1,14 @@
+@use "../popup/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/datetimepicker/_layout.scss" as *;
 
 
 @mixin kendo-date-time-picker--layout() {
     @include kendo-date-time-picker--layout-base();
+
+    .k-datetime-footer.k-actions {
+        margin-top: 0;
+
+        border-bottom-left-radius: $kendo-popup-border-radius;
+        border-bottom-right-radius: $kendo-popup-border-radius;
+    }
 }

@@ -1,6 +1,26 @@
+@use "../core/_index.scss" as *;
+@use "variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/spreadsheet/_theme.scss" as *;
 
 
 @mixin kendo-spreadsheet--theme() {
     @include kendo-spreadsheet--theme-base();
+
+    .k-spreadsheet-header {
+        backdrop-filter: k-translucency-blur(1);
+    }
+
+    .k-spreadsheet {
+        background-color: unset;
+    }
+
+    .k-spreadsheet-action-bar,
+    .k-spreadsheet-view,
+    .k-spreadsheet-sheets-bar {
+        background-color: $kendo-spreadsheet-bg;
+    }
+
+    .k-spreadsheet-toolbar {
+        background-color: $kendo-spreadsheet-bg !important; // stylelint-disable-line declaration-no-important
+    }
 }

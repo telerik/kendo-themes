@@ -11,4 +11,29 @@
         padding-inline: $kendo-popover-actions-padding-x;
         padding-block: $kendo-popover-actions-padding-y;
     }
+
+    .k-popover-body {
+        margin-block: k-spacing(2);
+        margin-inline: k-spacing(4);
+    }
+
+    .k-popover-callout {
+        backdrop-filter: blur(calc(6px + calc(2 * 2px)));
+
+        &.k-callout-n {
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+
+        &.k-callout-e {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+
+        &.k-callout-s {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+
+        &.k-callout-w {
+            clip-path: polygon(0 0, 0 100%, 100% 100%);
+        }
+    }
 }

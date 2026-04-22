@@ -6,6 +6,10 @@
 @mixin kendo-drawer--theme() {
     @include kendo-drawer--theme-base();
 
+    .k-drawer {
+        backdrop-filter: k-translucency-blur(1);
+    }
+
     .k-drawer-item {
         &:focus,
         &.k-focus {

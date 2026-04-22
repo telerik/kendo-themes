@@ -90,7 +90,7 @@ $kendo-window-focus-shadow: k-elevation(5) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: k-elevation-bg(3, k-color(surface-alt)) !default;
+$kendo-window-titlebar-bg: k-translucency-bg(k-elevation-bg(3, k-color(surface-alt))) !default;
 /// The text color of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-text: k-color(on-app-surface) !default;

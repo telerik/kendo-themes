@@ -1,6 +1,15 @@
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/editor/_theme.scss" as *;
 
 
 @mixin kendo-editor--theme() {
     @include kendo-editor--theme-base();
+
+    .k-editor {
+        background-color: unset;
+    }
+
+    .k-editor-content {
+        background-color: k-color(surface-alt);
+    }
 }

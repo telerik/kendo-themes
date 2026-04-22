@@ -23,7 +23,7 @@ $kendo-popup-content-padding-y: k-spacing(2) !default;
 
 /// Background color of the popup.
 /// @group popup
-$kendo-popup-bg: k-elevation-bg(2, k-color(surface-alt)) !default;
+$kendo-popup-bg: k-translucency-bg(k-elevation-bg(2, k-color(surface-alt))) !default;
 /// Text color of the popup.
 /// @group popup
 $kendo-popup-text: k-color(on-app-surface) !default;

@@ -29,7 +29,7 @@ $kendo-spreadsheet-border: k-color(border) !default;
 
 /// The background color of the Spreadsheet header.
 /// @group spreadsheet
-$kendo-spreadsheet-header-bg: k-color(surface-alt) !default;
+$kendo-spreadsheet-header-bg: k-translucency-bg(k-color(surface-alt)) !default;
 /// The text color of the Spreadsheet header.
 /// @group spreadsheet
 $kendo-spreadsheet-header-text: k-color(on-app-surface) !default;

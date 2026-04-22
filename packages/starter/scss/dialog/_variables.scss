@@ -6,7 +6,7 @@
 
 /// The background color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-bg: k-color(surface-alt) !default;
+$kendo-dialog-titlebar-bg: k-translucency-bg(k-color(surface-alt)) !default;
 /// The text color of the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-text: k-color(on-app-surface) !default;
@@ -29,7 +29,7 @@ $kendo-dialog-button-spacing: k-spacing(3) !default;
 
 /// The background color of the Dialog.
 /// @group dialog
-$kendo-dialog-bg: k-elevation-bg(3, k-color(surface-alt)) !default;
+$kendo-dialog-bg: null !default;
 
 @forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (
     $kendo-dialog-titlebar-bg: $kendo-dialog-titlebar-bg,

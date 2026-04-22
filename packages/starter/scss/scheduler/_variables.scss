@@ -33,7 +33,7 @@ $kendo-scheduler-border: k-color(border) !default;
 
 /// The background color of the Scheduler ToolBar.
 /// @group scheduler
-$kendo-scheduler-toolbar-bg: $kendo-toolbar-bg !default;
+$kendo-scheduler-toolbar-bg: k-translucency-bg($kendo-toolbar-bg) !default;
 /// The text color of the Scheduler ToolBar.
 /// @group scheduler
 $kendo-scheduler-toolbar-text: $kendo-toolbar-text !default;
@@ -46,7 +46,7 @@ $kendo-scheduler-toolbar-gradient: $kendo-toolbar-gradient !default;
 
 /// The background color of the Scheduler footer.
 /// @group scheduler
-$kendo-scheduler-footer-bg: $kendo-toolbar-bg !default;
+$kendo-scheduler-footer-bg: k-translucency-bg($kendo-toolbar-bg) !default;
 /// The text color of the Scheduler footer.
 /// @group scheduler
 $kendo-scheduler-footer-text: $kendo-toolbar-text !default;
@@ -267,7 +267,7 @@ $kendo-scheduler-marquee-label-inset-y: k-spacing(0.5) !default;
 
 /// The background color of the Scheduler header.
 /// @group scheduler
-$kendo-scheduler-header-bg: k-color(surface) !default;
+$kendo-scheduler-header-bg: k-translucency-bg(k-color(surface)) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/scheduler/_variables.scss" with (
     $kendo-scheduler-border-width: $kendo-scheduler-border-width,

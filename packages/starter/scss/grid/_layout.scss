@@ -31,4 +31,9 @@
     .k-grid .k-master-row .k-grid-content-sticky {
         
     }
+
+    .k-column-menu .k-expander {
+        backdrop-filter: none;
+        border-radius: 0;
+    }
 }
