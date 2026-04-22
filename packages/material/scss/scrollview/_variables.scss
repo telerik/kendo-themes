@@ -44,6 +44,9 @@ $kendo-scrollview-pagebutton-primary-border: k-color(primary) !default;
 /// The box shadow of the ScrollView page button.
 /// @group scrollview
 $kendo-scrollview-pagebutton-shadow: 0 0 0 2px color-mix(in srgb, k-color(inverse) 13%, transparent) !default;
+/// The box shadow of the selected ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-shadow: null !default;
 
 /// The offset of the ScrollView pager.
 /// @group scrollview

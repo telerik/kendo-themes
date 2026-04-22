@@ -3,10 +3,6 @@
 
 // Card
 
-/// The default theme color of the Card.
-/// @group card
-/// @role default
-$kendo-card-default-theme-color: null !default;
 
 /// The horizontal padding of the Card.
 /// @group card
@@ -187,7 +183,6 @@ $kendo-card-callout-width: 20px !default;
 $kendo-card-callout-height: 20px !default;
 
 @forward "@progress/kendo-theme-core/scss/components/card/_variables.scss" with (
-    $kendo-card-default-theme-color: $kendo-card-default-theme-color,
     $kendo-card-padding-x: $kendo-card-padding-x,
     $kendo-card-padding-y: $kendo-card-padding-y,
     $kendo-card-border-width: $kendo-card-border-width,
