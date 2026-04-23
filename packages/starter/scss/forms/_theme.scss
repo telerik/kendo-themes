@@ -3,4 +3,8 @@
 
 @mixin kendo-form--theme() {
     @include kendo-form--theme-base();
+
+    .k-form-hint {
+        color: var(--kendo-color-subtle);
+    }
 }
