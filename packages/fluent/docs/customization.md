@@ -12978,6 +12978,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-dropzone-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dropzone-min-height</td>
     <td>String</td>
     <td><code>var( --kendo-dropzone-min-height, 220px )</code></td>
@@ -26545,6 +26555,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-pivotgrid-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-pivotgrid-icon-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-icon-spacing, #{k-spacing(1)} )</code></td>
@@ -31773,6 +31793,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Spreadsheet.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Spreadsheet.</div></div>
     </td>
 </tr>
 <tr>

@@ -12939,6 +12939,16 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-dropzone-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dropzone-min-height</td>
     <td>Number</td>
     <td><code>220px</code></td>
@@ -12981,8 +12991,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the DropZone.</div></div>
@@ -26487,6 +26497,16 @@ The following table lists the available variables for customizing the Starter th
     </td>
 </tr>
 <tr>
+    <td>$kendo-pivotgrid-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-pivotgrid-icon-spacing</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -27578,9 +27598,9 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td>$kendo-popup-spacing-y</td>
-    <td>Number</td>
-    <td><code>0</code></td>
-    <td><code>0</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical spacing between the popup and the element it is anchored to.</div></div>
@@ -31662,6 +31682,16 @@ The following table lists the available variables for customizing the Starter th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Spreadsheet.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Spreadsheet.</div></div>
     </td>
 </tr>
 <tr>

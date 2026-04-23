@@ -98,6 +98,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-pivotgrid-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-pivotgrid-icon-spacing</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
