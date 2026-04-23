@@ -36,7 +36,7 @@ $kendo-popup-shadow: k-elevation(2) !default;
 
 /// Vertical spacing between the popup and the element it is anchored to.
 /// @group popup
-$kendo-popup-spacing-y: 0 !default;
+$kendo-popup-spacing-y: k-spacing(0.5) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/popup/_variables.scss" with (
     $kendo-popup-border-width: $kendo-popup-border-width,

@@ -789,12 +789,16 @@
 
     // Pager
     .k-grid-pager {
+        font-size: inherit;
         border-width: 1px 0 0;
         border-color: inherit;
-        font-size: inherit;
+        @include border-bottom-radius(inherit);
     }
+
     .k-grid-pager-top {
         border-width: 0 0 1px;
+        @include border-top-radius(inherit);
+        @include border-bottom-radius(0);
     }
 
     .k-grid-virtual .k-grid-content {

@@ -1,5 +1,7 @@
 @use "@progress/kendo-theme-core/scss/components/grid/_layout.scss" as *;
+@use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-grid--layout() {
@@ -18,6 +20,21 @@
         .k-table .k-grid-footer-sticky {
             border-inline-end-width: 1px;
         }
+
+        @each $size, $size-props in $kendo-grid-sizes {
+            $_header-padding-x: map.get( $size-props, header-padding-x );
+
+            #{k-when-default($kendo-grid-default-size, $size)}
+            &.k-grid-#{$size}{
+                .k-cell-inner {
+                    .k-grid-filter,
+                    .k-header-column-menu,
+                    .k-grid-header-menu {
+                        margin-inline-end: $_header-padding-x;
+                    }
+                }
+            }
+        }
     }
 
     // Column menu fix for action buttons focus state
@@ -28,7 +45,4 @@
         }
     }
 
-    .k-grid .k-master-row .k-grid-content-sticky {
-        
-    }
 }

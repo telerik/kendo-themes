@@ -26,6 +26,9 @@ $kendo-pivotgrid-line-height: var( --kendo-line-height, normal ) !default;
 /// The border width of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-border-width: 1px !default;
+/// The border radius of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-border-radius: k-border-radius(xxl) !default;
 /// The icon spacing of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-icon-spacing: k-spacing(1) !default;
@@ -269,6 +272,7 @@ $kendo-pivotgrid-row-headers-bg: k-color(base) !default;
     $kendo-pivotgrid-font-size: $kendo-pivotgrid-font-size,
     $kendo-pivotgrid-line-height: $kendo-pivotgrid-line-height,
     $kendo-pivotgrid-border-width: $kendo-pivotgrid-border-width,
+    $kendo-pivotgrid-border-radius: $kendo-pivotgrid-border-radius,
     $kendo-pivotgrid-icon-spacing: $kendo-pivotgrid-icon-spacing,
     $kendo-pivotgrid-row-header-width: $kendo-pivotgrid-row-header-width,
     $kendo-pivotgrid-column-header-height: $kendo-pivotgrid-column-header-height,
