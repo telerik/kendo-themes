@@ -13,6 +13,10 @@
         padding: $kendo-panelbar-padding;
         border-radius: $kendo-panelbar-border-radius;
 
+        .k-panelbar-item {
+            padding-block-start: k-spacing(0.5);
+        }
+
         > .k-panelbar-header > .k-link {
             border-radius: $kendo-panelbar-item-border-radius;
             font-weight: $kendo-panelbar-header-font-weight;
