@@ -35520,8 +35520,8 @@ The following table lists the available variables for customizing the Starter th
 <tr>
     <td>$kendo-tabstrip-item-focus-outline-offset</td>
     <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td><code>3px</code></td>
+    <td><code>3px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused TabStrip item.</div></div>
