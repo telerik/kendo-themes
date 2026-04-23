@@ -58,6 +58,14 @@
         .k-spreadsheet {
             width: 100%;
         }
+        .preview-label {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #888;
+            margin-bottom: 4px;
+        }
         .k-chat {
             height: 500px;
         }
@@ -119,6 +127,7 @@
                 <div class="k-d-grid k-grid-rows k-gap-10 k-p-10">
                     <div class="k-d-grid k-grid-cols-4 k-gap-10">
                         <div>
+                            <div class="preview-label">Textbox</div>
                             <span class="k-textbox k-input">
                                 <span class="k-input-prefix k-input-prefix-horizontal">
                                     <span class="k-input-prefix-text">https://</span>
@@ -139,6 +148,7 @@
                             </span>
                         </div>
                         <div>
+                            <div class="preview-label">NumericTextbox</div>
                             <span class="k-numerictextbox k-input">
                                 <input role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                 <span class="k-spin-button k-input-spinner">
@@ -160,6 +170,7 @@
                             </span>
                         </div>
                         <div>
+                            <div class="preview-label">Combobox</div>
                             <span class="k-combobox k-input">
                                 <input role="combobox" aria-haspopup="listbox" aria-expanded="false" class="k-input-inner" placeholder="Combobox..." autocomplete="off" type="text" value="">
                                 <button class="k-input-button k-button k-icon-button" aria-label="Open popup" tabindex="-1">
@@ -172,6 +183,7 @@
                             </span>
                         </div>
                         <div>
+                            <div class="preview-label">Searchbox</div>
                             <span class="k-searchbox k-input">
                                 <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -185,6 +197,7 @@
                     <div class="k-d-grid k-grid-cols-4 k-gap-10">
                         <div class="k-d-grid k-grid-rows k-gap-5">
                             <div>
+                                <div class="preview-label">DatePicker</div>
                                 <span class="k-datepicker k-input">
                                     <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="placeholder..." autocomplete="off" type="text" value="">
                                     <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
@@ -197,6 +210,7 @@
                                 </span>
                             </div>
                             <div>
+                                <div class="preview-label">OTP</div>
                                 <div aria-label="One-time password" role="group" class="k-otp">
                                     <input aria-hidden="true" type="hidden">
                                     <span class="k-otp-input k-textbox k-input">
@@ -220,6 +234,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">ColorPicker</div>
                                 <span role="combobox" aria-haspopup="dialog" aria-expanded="false" aria-label="Color picker" tabindex="0" class="k-colorpicker k-icon-picker k-picker">
                                     <span class="k-input-inner">
                                         <span class="k-value-icon k-color-preview k-no-color">
@@ -238,6 +253,7 @@
                         </div>
                         <div class="k-d-grid k-grid-rows k-gap-5">
                             <div>
+                                <div class="preview-label">MultiSelect</div>
                                 <span class="k-multiselect k-input">
                                     <div class="k-input-values">
                                         <div id="k-ms-1-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
@@ -282,11 +298,13 @@
                                 </span>
                             </div>
                             <div>
+                                <div class="preview-label">MaskedTextbox</div>
                                 <span class="k-maskedtextbox k-input">
                                     <input class="k-input-inner" placeholder="MaskedTextbox..." autocomplete="off" type="text" value="">
                                 </span>
                             </div>
                             <div>
+                                <div class="preview-label">Textarea</div>
                                 <span class="k-textarea !k-flex-col k-input">
                                     <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder="Textarea..."></textarea>
                                 </span>
@@ -294,6 +312,7 @@
                         </div>
                         <div class="k-d-grid k-grid-rows k-gap-5">
                             <div>
+                                <div class="preview-label">SmartBox</div>
                                 <span class="k-smart-box k-input">
                                     <span class="k-input-prefix k-input-prefix-horizontal">
                                         <span class="k-accent-icon k-icon k-svg-icon k-svg-i-sparkles" aria-hidden="true">
@@ -322,6 +341,7 @@
                                 </span>
                             </div>
                             <div>
+                                <div class="preview-label">PromptBox</div>
                                 <div class="k-input k-prompt-box k-prompt-box-multiline">
                                     <div class="k-prompt-box-content">
                                         <textarea class="k-prompt-box-textarea k-input-inner" aria-label="Prompt input" aria-multiline="true" placeholder="" rows="3"></textarea>
@@ -348,6 +368,7 @@
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div class="k-d-grid k-grid-cols-2 k-gap-10">
                                 <div class="k-d-grid k-grid-rows k-px-2">
+                                    <div class="preview-label">Checkbox</div>
                                     <div>
                                         <span class="k-checkbox-wrap">
                                             <input id="cb-label-after" class="k-checkbox" type="checkbox">
@@ -362,6 +383,7 @@
                                     </div>
                                 </div>
                                 <div class="k-d-grid k-grid-rows k-px-2">
+                                    <div class="preview-label">RadioButton</div>
                                     <div>
                                         <span class="k-radio-wrap">
                                             <input class="k-radio" type="radio">
@@ -377,6 +399,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">Rating</div>
                                 <span aria-label="Rating" class="k-rating" role="slider" tabindex="0" aria-valuenow="3.5" aria-valuemin="0" aria-valuemax="5">
                                     <span class="k-rating-container">
                                         <span class="k-rating-item k-selected">
@@ -430,76 +453,89 @@
                         </div>
                     </div>
                     <div class="k-d-grid k-grid-cols-4 k-gap-10">
-                        <div class="k-d-grid k-grid-cols-3 k-gap-10">
-                            <div>
-                                <button class="k-button">
-                                    <span class="k-button-text">Solid</span>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="k-button k-button-outline">
-                                    <span class="k-button-text">Outline</span>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="k-button k-button-flat">
-                                    <span class="k-button-text">Flat</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="k-d-grid k-grid-cols-3 k-gap-10">
-                            <div>
-                                <button class="k-button k-button-primary">
-                                    <span class="k-button-text">Primary</span>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="k-button k-button-outline k-button-primary">
-                                    <span class="k-button-text">Primary</span>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="k-button k-button-flat k-button-primary">
-                                    <span class="k-button-text">Primary</span>
-                                </button>
+                        <div class="k-d-grid k-grid-rows">
+                            <div class="preview-label">Button Base</div>
+                            <div class="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div>
+                                    <button class="k-button">
+                                        <span class="k-button-text">Solid</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="k-button k-button-outline">
+                                        <span class="k-button-text">Outline</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="k-button k-button-flat">
+                                        <span class="k-button-text">Flat</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="k-d-grid k-grid-cols-3 k-gap-10">
-                            <div>
-                                <button class="k-button k-button-secondary">
-                                    <span class="k-button-text">Secondary</span>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="k-button k-button-outline k-button-secondary">
-                                    <span class="k-button-text">Secondary</span>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="k-button k-button-flat k-button-secondary">
-                                    <span class="k-button-text">Secondary</span>
-                                </button>
+                        <div class="k-d-grid k-grid-rows">
+                            <div class="preview-label">Button Primary</div>
+                            <div class="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div>
+                                    <button class="k-button k-button-primary">
+                                        <span class="k-button-text">Primary</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="k-button k-button-outline k-button-primary">
+                                        <span class="k-button-text">Primary</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="k-button k-button-flat k-button-primary">
+                                        <span class="k-button-text">Primary</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="k-d-grid k-grid-cols-3 k-gap-10">
-                            <div>
-                                <button class="k-button k-button-tertiary">
-                                    <span class="k-button-text">Tertiary</span>
-                                </button>
+                        <div class="k-d-grid k-grid-rows">
+                            <div class="preview-label">Button Secondary</div>
+                            <div class="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div>
+                                    <button class="k-button k-button-secondary">
+                                        <span class="k-button-text">Secondary</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="k-button k-button-outline k-button-secondary">
+                                        <span class="k-button-text">Secondary</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="k-button k-button-flat k-button-secondary">
+                                        <span class="k-button-text">Secondary</span>
+                                    </button>
+                                </div>
                             </div>
-                            <div>
-                                <button class="k-button k-button-outline k-button-tertiary">
-                                    <span class="k-button-text">Tertiary</span>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="k-button k-button-flat k-button-tertiary">
-                                    <span class="k-button-text">Tertiary</span>
-                                </button>
+                        </div>
+                        <div class="k-d-grid k-grid-rows">
+                            <div class="preview-label">Button Tertiary</div>
+                            <div class="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div>
+                                    <button class="k-button k-button-tertiary">
+                                        <span class="k-button-text">Tertiary</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="k-button k-button-outline k-button-tertiary">
+                                        <span class="k-button-text">Tertiary</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="k-button k-button-flat k-button-tertiary">
+                                        <span class="k-button-text">Tertiary</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="k-d-grid k-grid-cols-2 k-gap-10">
                             <div>
+                                <div class="preview-label">SplitButton</div>
                                 <div class="k-split-button k-button-group">
                                     <button class="k-button">
                                         <span class="k-button-text">Split Button</span>
@@ -514,6 +550,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">MenuButton</div>
                                 <button class="k-menu-button k-button" aria-expanded="false">
                                     <span class="k-button-text">Menu Button</span>
                                     <span class="k-menu-button-arrow k-button-arrow">
@@ -527,6 +564,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">SegmentedControl</div>
                             <div class="k-segmented-control" role="group">
                                 <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 50%;"></div>
                                 <button class="k-segmented-control-button k-selected" aria-pressed="true">
@@ -548,6 +586,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">ButtonGroup</div>
                             <div role="group" class="k-button-group">
                                 <button class="k-group-start k-button">
                                     <span class="k-button-text">Button 1</span>
@@ -560,33 +599,37 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="k-d-grid k-grid-cols-3 k-gap-10">
-                            <div>
-                                <button type="button" class="k-fab k-fab-primary">
-                                    <span class="k-fab-text">Create</span>
-                                </button>
-                            </div>
-                            <div>
-                                <button type="button" class="k-fab k-fab-primary" aria-label="Action">
-                                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                            <div>
-                                <button type="button" class="k-fab k-fab-primary">
-                                    <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                                        </svg>
-                                    </span>
-                                    <span class="k-fab-text">Create</span>
-                                </button>
+                        <div class="k-d-grid k-grid-rows">
+                            <div class="preview-label">FloatingActionButton</div>
+                            <div class="k-d-grid k-grid-cols-3 k-gap-10">
+                                <div>
+                                    <button type="button" class="k-fab k-fab-primary">
+                                        <span class="k-fab-text">Create</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button type="button" class="k-fab k-fab-primary" aria-label="Action">
+                                        <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button type="button" class="k-fab k-fab-primary">
+                                        <span class="k-fab-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-fab-text">Create</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="k-d-grid k-grid-cols-3 k-gap-2">
+                            <div class="preview-label" style="grid-column: 1 / -1;">Switch</div>
                             <div>
                                 <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
                                     <span class="k-switch-track">
@@ -622,6 +665,7 @@
                             </div>
                         </div>
                         <div class="k-d-grid k-grid-cols-4 k-gap-2">
+                            <div class="preview-label" style="grid-column: 1 / -1;">Avatar</div>
                             <div class="k-avatar k-avatar-outline k-avatar-primary k-avatar-bordered">
                                 <span class="k-avatar-icon">
                                     <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
@@ -650,6 +694,7 @@
                             </div>
                         </div>
                         <div class="k-d-grid k-grid-cols-3 k-gap-2">
+                            <div class="preview-label" style="grid-column: 1 / -1;">Badge</div>
                             <div>
                                 <span class="k-badge k-badge-primary">Rectangle</span>
                             </div>
@@ -661,6 +706,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">Loader</div>
                             <div class="k-loader k-loader-pulsing-2" role="status" aria-label="Loading">
                                 <div class="k-loader-canvas">
                                     <span class="k-loader-segment"></span>
@@ -670,6 +716,7 @@
                         </div>
                     </div>
                     <div>
+                        <div class="preview-label">Toolbar</div>
                         <div class="k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
                             <button class="k-toolbar-button  k-button k-icon-button">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-bold" aria-hidden="true">
@@ -746,6 +793,7 @@
                     <div class="k-d-grid k-grid-cols-2 k-gap-10">
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
+                                <div class="preview-label">TabStrip</div>
                                 <div class="k-tabstrip k-tabstrip-top">
                                     <div class="k-tabstrip-items-wrapper k-hstack">
                                         <ul class="k-tabstrip-items k-reset k-tabstrip-items-start" role="tablist">
@@ -819,6 +867,7 @@
                         </div>
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
+                                <div class="preview-label">Breadcrumb</div>
                                 <nav class="k-breadcrumb" aria-label="Breadcrumb">
                                     <ol class="k-breadcrumb-container k-flex-none">
                                         <li class="k-breadcrumb-item k-breadcrumb-root-item">
@@ -865,6 +914,7 @@
                                 </nav>
                             </div>
                             <div>
+                                <div class="preview-label">BottomNav</div>
                                 <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-item-flow-horizontal k-bottom-nav-border" aria-label="Bottom navigation">
                                     <span class="k-bottom-nav-item" role="link">
                                         <span class="k-bottom-nav-item-icon k-icon k-svg-icon k-icon-xl k-svg-i-envelope" aria-hidden="true">
@@ -905,6 +955,7 @@
                     <div class="k-d-grid k-grid-cols-3 k-gap-10">
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
+                                <div class="preview-label">ProgressBar</div>
                                 <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                                     <span class="k-progress-status-wrap k-progress-center">
                                         <span class="k-progress-status">50%</span>
@@ -917,6 +968,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">Chunk ProgressBar</div>
                                 <div class="k-progressbar k-chunk-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5">
                                     <ul class="k-progressbar-chunks k-reset">
                                         <li class="k-progressbar-chunk k-first k-selected"></li>
@@ -930,6 +982,7 @@
                         </div>
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
+                                <div class="preview-label">Slider</div>
                                 <div aria-label="Slider" class="k-slider k-slider-horizontal">
                                     <button class="k-button-decrease k-button k-rounded-full k-icon-button" tabindex="-1" title="Decrease">
                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
@@ -973,6 +1026,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">Stepper</div>
                                 <nav class="k-stepper" aria-label="Stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                                     <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
                                         <li class="k-step k-step-done k-step-first k-step-success" style="max-width: 33.333%;">
@@ -1028,6 +1082,7 @@
                         </div>
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
+                                <div class="preview-label">Notification</div>
                                 <div class="k-animation-container k-animation-container-shown">
                                     <div class="k-child-animation-container">
                                         <div class="k-notification k-notification-primary k-notification-closable" role="status" aria-live="polite" aria-describedby="k-notification-content-1">
@@ -1051,6 +1106,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">Tooltip</div>
                                 <div class="k-animation-container k-animation-container-shown">
                                     <div class="k-child-animation-container">
                                         <div class="k-tooltip k-tooltip-closable" role="tooltip" id="k-tooltip-1">
@@ -1071,6 +1127,7 @@
                     </div>
                     <div class="k-d-grid k-grid-cols-3 k-gap-10">
                         <div>
+                            <div class="preview-label">Chat</div>
                             <div class="k-chat">
                                 <div class="k-message-list" role="log" aria-label="Message list" aria-live="polite">
                                     <div class="k-message-list-content">
@@ -1204,6 +1261,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">Prompt</div>
                             <div class="k-animation-container k-animation-container-shown">
                                 <div class="k-child-animation-container">
                                     <div class="k-prompt-popup k-popup">
@@ -1285,8 +1343,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="k-d-grid k-grid-rows k-gap-10">
+                        <div class="k-d-grid k-grid-rows k-gap-5">
                             <div>
+                                <div class="preview-label">Window</div>
                                 <div class="k-window" role="dialog" aria-labelledby="k-window-title-1">
                                     <div class="k-window-titlebar">
                                         <span class="k-window-title" id="k-window-title-1">Window</span>
@@ -1326,6 +1385,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">Card</div>
                                 <div class="k-card k-card-vertical">
                                     <div class="k-card-header">Card Header</div>
                                     <div class="k-card-body">
@@ -1345,6 +1405,7 @@
                     </div>
                     <div class="k-d-grid k-grid-cols-3 k-gap-10 grid-with-calendar">
                         <div>
+                            <div class="preview-label">Calendar</div>
                             <div class="k-calendar-range k-calendar k-week-number">
                                 <div class="k-calendar-header">
                                     <button class="k-calendar-title k-button k-button-flat k-button-primary" id="k-calendar-title-1" tabindex="-1" aria-label="Navigate to parent view: October 2021">
@@ -1516,6 +1577,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">Calendar Infinite</div>
                             <div class="k-calendar k-calendar-infinite">
                                 <div class="k-calendar-navigation">
                                     <span class="k-calendar-navigation-highlight"></span>
@@ -1775,6 +1837,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">TimePicker / TimeSelector</div>
                             <span class="k-timepicker k-input">
                                 <input role="combobox" aria-haspopup="dialog" aria-expanded="false" aria-label="Select time" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                 <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select time">
@@ -1993,6 +2056,7 @@
                     </div>
                     <div class="k-d-grid k-grid-cols-4 k-gap-10">
                         <div class="k-col-span-3">
+                            <div class="preview-label">Grid</div>
                             <div class="k-grid">
                                 <div class="k-grid-aria-root" role="grid">
                                     <div class="k-grid-header">
@@ -2340,6 +2404,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">ColumnMenu</div>
                             <div class="k-animation-container k-animation-container-shown">
                                 <div class="k-child-animation-container">
                                     <div class="k-popup">
@@ -2512,6 +2577,7 @@
                     </div>
                     <div class="k-d-grid k-grid-cols-4 k-gap-10">
                         <div>
+                            <div class="preview-label">ColorEditor</div>
                             <div role="textbox" aria-label="Color editor" tabindex="0" class="k-flatcolorpicker k-coloreditor">
                                 <div class="k-coloreditor-header k-hstack">
                                     <div class="k-coloreditor-header-actions k-hstack"></div>
@@ -2609,6 +2675,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">ColorEditor Palette</div>
                             <div role="textbox" aria-label="Color editor" tabindex="0" class="k-flatcolorpicker k-coloreditor">
                                 <div class="k-coloreditor-header k-hstack">
                                     <div class="k-coloreditor-header-actions k-hstack">
@@ -2739,6 +2806,41 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">DropdownList</div>
+                            <span id="k-ddl-1" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ddl-1-listbox" aria-activedescendant="k-ddl-1-item-2" aria-describedby="k-ddl-1-value" aria-label="Select option" tabindex="0">
+                                <span id="k-ddl-1-value" class="k-input-inner"></span>
+                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Dropdown suggestions">
+                                <div class="k-child-animation-container">
+                                    <div class="k-list-container k-dropdownlist-popup k-popup">
+                                        <div class="k-list">
+                                            <div class="k-list-content">
+                                                <ul aria-label="Options" id="k-ddl-listbox-1" role="listbox" class="k-list-ul">
+                                                    <li id="k-ddl-1-item-1" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                                        <span class="k-list-item-text">Selected item</span>
+                                                    </li>
+                                                    <li id="k-ddl-1-item-2" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                                        <span class="k-list-item-text">Focused item</span>
+                                                    </li>
+                                                    <li id="k-ddl-1-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                        <span class="k-list-item-text">List item</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="preview-label">Menu</div>
                             <ul class="k-reset k-menu k-menu-horizontal k-header" role="menubar">
                                 <li class="k-menu-item k-item k-first" role="menuitem">
                                     <span class="k-link k-menu-link">
@@ -2825,6 +2927,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">ListView</div>
                             <div class="k-listview">
                                 <div class="k-listview-header">Header</div>
                                 <div class="k-listview-content" role="list">
@@ -2845,6 +2948,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">PanelBar</div>
                             <ul class="k-panelbar" role="tree">
                                 <li class="k-panelbar-item k-panelbar-header k-level-0" role="treeitem" aria-expanded="false" aria-selected="false">
                                     <span class="k-link">
@@ -2956,6 +3060,7 @@
                             </ul>
                         </div>
                         <div>
+                            <div class="preview-label">ExpansionPanel</div>
                             <div class="k-expander">
                                 <div class="k-expander-header" role="button" aria-controls="k-expander-1-content" aria-expanded="false" tabindex="0">
                                     <div class="k-expander-title">Collapsed panel</div>
@@ -3053,6 +3158,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">Treeview</div>
                             <div class="k-treeview">
                                 <ul class="k-treeview-lines k-treeview-group" role="tree">
                                     <li class="k-treeview-item" role="treeitem" style="--kendo-treeview-level: 1;">
@@ -3136,6 +3242,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">ListBox</div>
                             <div class="k-listbox k-listbox-actions-left">
                                 <div class="k-listbox-actions" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-1-list">
                                     <button class="k-button k-icon-button" aria-label="Move up">
@@ -3220,6 +3327,7 @@
                     <div class="k-d-grid k-grid-cols-2 k-gap-10">
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
+                                <div class="preview-label">Upload</div>
                                 <div class="k-upload k-upload-async k-upload-empty">
                                     <div class="k-upload-dropzone k-dropzone">
                                         <div class="k-upload-button-wrap">
@@ -3234,6 +3342,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">Dropzone</div>
                                 <div class="k-external-dropzone">
                                     <div class="k-dropzone-inner">
                                         <span class="k-dropzone-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-upload" aria-hidden="true">
@@ -3246,6 +3355,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">Editor</div>
                                 <div class="k-editor">
                                     <div class="k-editor-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
                                         <div role="group" class="k-toolbar-button-group  k-button-group">
@@ -3364,6 +3474,7 @@
                             </div>
                         </div>
                         <div>
+                            <div class="preview-label">ChartWizard</div>
                             <div class="k-chart-wizard k-window" role="dialog" aria-labelledby="k-window-title-2">
                                 <div class="k-window-titlebar">
                                     <span class="k-window-title" id="k-window-title-2">Chart Preview</span>
@@ -3760,6 +3871,7 @@
                         </div>
                     </div>
                     <div>
+                        <div class="preview-label">FileManager</div>
                         <div class="k-filemanager">
                             <div class="k-filemanager-header">
                                 <div class="k-filemanager-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
@@ -3903,6 +4015,7 @@
                     </div>
                     <div class="k-d-grid k-grid-cols-2 k-gap-10">
                         <div>
+                            <div class="preview-label">Spreadsheet</div>
                             <div class="k-spreadsheet" role="application">
                                 <div class="k-spreadsheet-header">
                                     <ul class="k-spreadsheet-menu k-reset k-menu k-menu-horizontal k-header" role="menubar">
@@ -4536,6 +4649,7 @@
                         </div>
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
+                                <div class="preview-label">Scheduler</div>
                                 <div class="k-scheduler" role="application">
                                     <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
                                         <div role="group" class="k-toolbar-button-group k-scheduler-navigation k-button-group">
@@ -4901,6 +5015,7 @@
                     </div>
                     <div class="k-d-grid k-grid-cols-2 k-gap-10">
                         <div>
+                            <div class="preview-label">Timeline</div>
                             <div class="k-timeline k-timeline-vertical k-timeline-alternating">
                                 <ul>
                                     <li class="k-timeline-flag-wrap">
@@ -5002,6 +5117,7 @@
                         </div>
                         <div class="k-d-grid k-grid-rows k-gap-10">
                             <div>
+                                <div class="preview-label">Filter</div>
                                 <div class="k-filter">
                                     <ul class="k-filter-container" role="tree" aria-label="Filter">
                                         <li class="k-filter-group-main" role="treeitem">
@@ -5208,6 +5324,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">PivotGrid</div>
                                 <div class="k-d-flex k-flex-row k-pos-relative">
                                     <div class="k-pivotgrid" role="grid" style="height: 550px; grid-template-columns: 150px auto; grid-template-rows: 242px auto;">
                                         <div class="k-pivotgrid-empty-cell" role="none">
@@ -5789,6 +5906,7 @@
                     </div>
                     <div class="k-d-grid k-grid-cols-2 k-gap-10">
                         <div>
+                            <div class="preview-label">Chart</div>
                             <div class="k-chart" style="position: relative; width: 660px; height: 400px;">
                                 <div class="k-chart-surface" tabindex="0" role="graphics-document document" aria-roledescription="Units sold" style="position: relative; touch-action: none;">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: -0.999998px; top: -0.999998px;">
@@ -5920,6 +6038,7 @@
                         </div>
                         <div class="k-d-grid k-grid-cols-2 k-gap-10">
                             <div>
+                                <div class="preview-label">Arc Gauge</div>
                                 <div class="k-gauge k-arcgauge">
                                     <div class="k-arcgauge-label" style="top: 125.125px; left: 85px;">20</div>
                                     <div style="width: 200px; height: 200px;">
@@ -5934,6 +6053,7 @@
                                 </div>
                             </div>
                             <div>
+                                <div class="preview-label">Circular Gauge</div>
                                 <div class="k-gauge k-circulargauge">
                                     <div class="k-circulargauge-label" style="top: 90px; left: 85px;">20</div>
                                     <div style="width: 200px; height: 200px;">
