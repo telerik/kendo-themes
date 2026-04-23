@@ -414,6 +414,9 @@
             inset-inline-start: $kendo-chat-message-reference-padding-x;
             height: calc( 100% - #{$kendo-chat-message-reference-padding-y} );
             width: 2px;
+            margin-block: auto;
+            top: 0;
+            bottom: 0;
         }
     }
 

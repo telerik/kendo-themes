@@ -15,18 +15,24 @@
         padding-block-end: k-spacing(2);
     }
 
-    .k-message-list {
-        > .k-message-pinned {
-            padding-block: calc( #{$kendo-chat-message-reference-padding-y} + #{k-spacing(2)} );
-            padding-inline: calc( #{$kendo-chat-message-reference-padding-x} + #{k-spacing(2)} );
+    .k-chat-bubble,
+    .k-message-box-wrapper {
+        .k-message-reference {
+            padding-block: 0;
         }
     }
 
-    .k-chat-bubble,
-    .k-message-box {
-        .k-message-reference {
-            padding-inline: $kendo-chat-message-reference-padding-x;
-            padding-block: $kendo-chat-message-reference-padding-y;
+    .k-message-reference-content {
+        padding-block: calc( #{$kendo-chat-message-reference-padding-y} - 1px );
+    }
+
+    .k-message-reference-content {
+        &:has(>.k-file-box) {
+            padding-block: 0;
+        }
+
+        &::before {
+              height: calc( var(--kendo-font-size-sm) * var(--kendo-line-height-sm));
         }
     }
 
@@ -36,14 +42,6 @@
             border-radius: var(--kendo-border-radius-md);
             border-width: 1px;
             border-style: solid;
-        }
-
-        .k-message-reference-content {
-            padding-block: 0;
-
-            &::before {
-                height: 100%;
-            }
         }
     }
 
