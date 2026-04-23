@@ -18,6 +18,7 @@
 
         .k-table {
             background-color: inherit;
+            color: inherit;
         }
 
         .k-table-th,
@@ -92,7 +93,7 @@
             }
 
             .k-grid-content-sticky {
-                border-color: $kendo-grid-sticky-border;
+                border-inline-color: $kendo-grid-sticky-border;
                 border-block-start-color: $kendo-grid-header-border;
             }
 
@@ -118,7 +119,7 @@
         .k-master-row {
             .k-grid-content-sticky {
                 background-color: $kendo-grid-sticky-bg;
-                border-color: $kendo-grid-sticky-border;
+                border-inline-color: $kendo-grid-sticky-border;
                 border-block-start-color: $kendo-grid-header-border;
             }
 
@@ -280,12 +281,20 @@
         @include fill($bg: $kendo-grid-bg );
     }
 
-    // Grouping
-    .k-grouping-header,
     .k-grid-add-row {
         color: $kendo-grid-header-text;
         background-color: $kendo-grid-header-bg;
         border-color: $kendo-grid-header-border;
+    }
+
+    // Grouping
+    .k-grouping-header,
+    .k-grid-grouping-header {
+        @include fill(
+            $kendo-grid-grouping-header-text,
+            $kendo-grid-grouping-header-bg,
+            $kendo-grid-grouping-header-border
+        );
     }
 
     .k-group-footer .k-table-td,

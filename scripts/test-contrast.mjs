@@ -51,7 +51,9 @@ const EXCLUDED_PAGES_TEXT = [
     // Editor iframe test page is not actionable
     `${TESTS_PATH}/editor/editor-iFrameContent.html`,
     // Scheduler adaptive month event template text is not visible
-    `${TESTS_PATH}/scheduler/scheduler-adaptive-month.html`
+    `${TESTS_PATH}/scheduler/scheduler-adaptive-month.html`,
+    // Preview components page does not cover contrast requirements
+    `${TESTS_PATH}/_preview/preview-components.html`
 ];
 
 let count = {

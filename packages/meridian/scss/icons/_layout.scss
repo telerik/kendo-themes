@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/icons/_layout.scss" as *;
+
+
+@mixin kendo-icon--layout() {
+    @include kendo-icon--layout-base();
+}

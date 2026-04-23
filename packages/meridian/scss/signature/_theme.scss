@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/signature/_theme.scss" as *;
+
+
+@mixin kendo-signature--theme() {
+    @include kendo-signature--theme-base();
+}

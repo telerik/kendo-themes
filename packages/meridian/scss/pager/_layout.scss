@@ -1,0 +1,16 @@
+@use "./_variables.scss" as *;
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/pager/_layout.scss" as *;
+
+
+@mixin kendo-pager--layout() {
+    @include kendo-pager--layout-base();
+
+    .k-pager {
+        .k-pager-numbers-wrap {
+            .k-button {
+                @include border-radius( $kendo-pager-number-border-radius );
+            }
+        }
+    }
+}

@@ -54,6 +54,9 @@
             min-width: 0;
             min-height: 0;
             height: inherit;
+            padding-inline: $kendo-listbox-scroller-padding-x;
+            padding-block: $kendo-listbox-scroller-padding-y;
+            border-radius: $kendo-listbox-border-radius;
             border-width: $kendo-listbox-border-width;
             border-style: solid;
             box-sizing: border-box;

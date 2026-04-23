@@ -4,6 +4,9 @@
 /// The width of the border around the ScrollView.
 /// @group scrollview
 $kendo-scrollview-border-width: var( --kendo-scrollview-border-width, 0px ) !default;
+/// The border radius of the ScrollView.
+/// @group scrollview
+$kendo-scrollview-border-radius: var( --kendo-scrollview-border-radius, null ) !default;
 /// The font family of the ScrollView.
 /// @group scrollview
 $kendo-scrollview-font-family: var( --kendo-scrollview-font-family, var(--kendo-font-family) ) !default;
@@ -51,6 +54,9 @@ $kendo-scrollview-pagebutton-primary-hover-shadow: var( --kendo-scrollview-pageb
 /// The primary focus box shadow of the ScrollView page button.
 /// @group scrollview
 $kendo-scrollview-pagebutton-primary-focus-shadow: var( --kendo-scrollview-pagebutton-primary-focus-shadow, 0 0 0 2px k-color(base-emphasis) ) !default;
+/// The box shadow of the selected ScrollView page button.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-shadow: null !default;
 
 /// The offset of the ScrollView pager.
 /// @group scrollview
@@ -97,6 +103,7 @@ $kendo-scrollview-transition-timing-function: var( --kendo-scrollview-transition
 
 @forward "@progress/kendo-theme-core/scss/components/scrollview/_variables.scss" with (
     $kendo-scrollview-border-width: $kendo-scrollview-border-width,
+    $kendo-scrollview-border-radius: $kendo-scrollview-border-radius,
     $kendo-scrollview-font-family: $kendo-scrollview-font-family,
     $kendo-scrollview-font-size: $kendo-scrollview-font-size,
     $kendo-scrollview-line-height: $kendo-scrollview-line-height,
@@ -108,6 +115,7 @@ $kendo-scrollview-transition-timing-function: var( --kendo-scrollview-transition
     $kendo-scrollview-pagebutton-border: $kendo-scrollview-pagebutton-border,
     $kendo-scrollview-pagebutton-primary-bg: $kendo-scrollview-pagebutton-primary-bg,
     $kendo-scrollview-pagebutton-primary-border: $kendo-scrollview-pagebutton-primary-border,
+    $kendo-scrollview-pagebutton-primary-shadow: $kendo-scrollview-pagebutton-primary-shadow,
     $kendo-scrollview-pager-offset: $kendo-scrollview-pager-offset,
     $kendo-scrollview-pager-item-spacing: $kendo-scrollview-pager-item-spacing,
     $kendo-scrollview-pager-item-border-width: $kendo-scrollview-pager-item-border-width,

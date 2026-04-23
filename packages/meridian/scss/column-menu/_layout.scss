@@ -1,0 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/column-menu/_layout.scss" as *;
+
+@mixin kendo-column-menu--layout() {
+    @include kendo-column-menu--layout-base();
+}

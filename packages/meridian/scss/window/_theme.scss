@@ -1,0 +1,20 @@
+@use "../core/_index.scss" as *;
+@use "variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/window/_theme.scss" as *;
+
+
+@mixin kendo-window--theme() {
+    @include kendo-window--theme-base();
+
+    .k-window {
+        background-color: unset;
+    }
+    .k-window-titlebar {
+        backdrop-filter: k-translucency-blur(4);
+    }
+
+    .k-window-actions,
+    .k-window-content {
+        background-color: $kendo-window-bg;
+    }
+}

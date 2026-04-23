@@ -1,0 +1,27 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/expansion-panel/_layout.scss" as *;
+@use "../core/z-index/index.scss" as *;
+
+@mixin kendo-expander--layout() {
+    @include kendo-expander--layout-base();
+
+    // Multiple expanders: merge adjacent collapsed panels into one visual block
+    .k-expander:not(.k-expanded):has(+ .k-expander:not(.k-expanded)) {
+        border-end-start-radius: 0;
+        border-end-end-radius: 0;
+    }
+
+    .k-expander:not(.k-expanded) + .k-expander:not(.k-expanded) {
+        border-start-start-radius: 0;
+        border-start-end-radius: 0;
+    }
+
+    .k-expander:not(.k-expanded) {
+        &.k-focus,
+        &:focus {
+            position: relative;
+            z-index: k-z-index("base", 1);
+        }
+    }
+}

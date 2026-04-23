@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/badge/_layout.scss" as *;
+
+
+@mixin kendo-badge--layout() {
+    @include kendo-badge--layout-base();
+}

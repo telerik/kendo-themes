@@ -1,0 +1,16 @@
+@use "@progress/kendo-theme-core/scss/components/editor/_layout.scss" as *;
+@use "../core/_index.scss" as *;
+
+@mixin kendo-editor--layout() {
+    @include kendo-editor--layout-base();
+
+    .k-editor-toolbar {
+        @include border-top-radius(inherit);
+        @include border-bottom-radius(0);
+    }
+
+    .k-editor-content {
+        @include border-bottom-radius(inherit);
+    }
+
+}

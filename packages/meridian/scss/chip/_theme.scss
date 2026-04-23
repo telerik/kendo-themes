@@ -1,0 +1,110 @@
+@use "@progress/kendo-theme-core/scss/components/chip/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "./_variables.scss" as *;
+
+
+@mixin kendo-chip--theme() {
+    @include kendo-chip--theme-base();
+
+    .k-chip {
+
+        #{k-when-default($kendo-chip-default-fill-mode, "solid")}
+        &.k-chip-solid {
+
+            @each $name in $kendo-chip-theme-colors {
+                #{k-when-default($kendo-chip-default-theme-color, $name)}
+                &.k-chip-#{$name} {
+                    @include fill(
+                        k-color(#{$name}-on-subtle),
+                        k-color(#{$name}-subtle),
+                        k-color(#{$name}),
+                    );
+
+                    &:hover,
+                    &.k-hover {
+                        @include fill( $bg: k-color(#{$name}-subtle-hover) );
+                    }
+
+                    &.k-active,
+                    &.k-selected {
+                        @include fill( $bg: k-color(#{$name}-subtle-active) );
+                    }
+
+                    @if $name == "base" {
+                        #{k-when-default($kendo-chip-default-theme-color, $name)}
+                        &.k-chip-#{$name} {
+                            border-color: k-color(#{$name}-emphasis);
+                        }
+                    }
+                }
+            }
+        }
+
+        #{k-when-default($kendo-chip-default-fill-mode, ("solid", "outline"))}
+        &.k-chip-solid,
+        &.k-chip-outline {
+            #{k-when-default($kendo-chip-default-theme-color, "base")}
+            &.k-chip-base {
+                &:focus,
+                &.k-focus {
+                    @include focus-indicator(
+                        $indicator: k-color(subtle),
+                        $type: "outline",
+                        $outline-width: $kendo-chip-focus-outline-width,
+                        $outline-offset: $kendo-chip-focus-outline-offset
+                    );
+                }
+            }
+
+            @each $name in $kendo-chip-theme-colors {
+                @if $name != "base" {
+                    #{k-when-default($kendo-chip-default-theme-color, $name)}
+                    &.k-chip-#{$name} {
+                        &:focus,
+                        &.k-focus {
+                            @include focus-indicator(
+                                $indicator: k-color(#{$name}-on-surface),
+                                $type: "outline",
+                                $outline-width: $kendo-chip-focus-outline-width,
+                                $outline-offset: $kendo-chip-focus-outline-offset
+                            );
+                        }
+                    }
+                }
+            }
+        }
+
+        #{k-when-default($kendo-chip-default-fill-mode, "outline")}
+        &.k-chip-outline {
+            @each $name in $kendo-chip-theme-colors {
+                @if $name != "base" {
+                    #{k-when-default($kendo-chip-default-theme-color, $name)}
+                    &.k-chip-#{$name} {
+                        border-color: k-color(#{$name});
+
+                        // Hover state
+                        &:hover,
+                        &.k-hover {
+                            @include fill(
+                                k-color(#{$name}-on-surface),
+                                color-mix(in srgb, k-color(#{$name}-subtle-hover) 50%, transparent),
+                                k-color(#{$name})
+                            );
+                        }
+
+                        // Selected state
+                        &.k-active,
+                        &.k-selected {
+                            @include fill(
+                                k-color(#{$name}-on-surface),
+                                color-mix(in srgb, k-color(#{$name}-subtle-active) 50%, transparent),
+                                k-color(#{$name})
+                            );
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

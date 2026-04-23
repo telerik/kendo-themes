@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/virtual-scroller/_theme.scss" as *;
+
+
+@mixin kendo-virtual-scroller--theme() {
+    @include kendo-virtual-scroller--theme-base();
+}

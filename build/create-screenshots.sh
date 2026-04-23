@@ -7,7 +7,7 @@ TEMP_DIR=".tmp/visual/"
 THEME_DIR="$TEMP_DIR/$THEME"
 
 if [ -z "$THEME" ]; then
-    echo "Usage: create-screenshots <default|bootstrap|material|classic>"
+    echo "Usage: create-screenshots <default|bootstrap|material|classic|fluent|meridian>"
     exit
 else
     echo "Creating screenshots for theme '$THEME'"
@@ -20,7 +20,7 @@ cp packages/$THEME/dist/all.css $THEME_DIR/assets/all.css
 
 # replace references
 find "$THEME_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
-    -e "s#/packages/default/dist/#../assets/#" \
+    -e "s#/packages/meridian/dist/#../assets/#" \
     -e "s#/packages/html/assets/#../assets/#"
 
 npx snapshot \

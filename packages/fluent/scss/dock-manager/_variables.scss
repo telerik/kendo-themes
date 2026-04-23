@@ -10,6 +10,9 @@ $kendo-dock-manager-border-style: var( --kendo-dock-manager-border-style, solid 
 /// The color of the border around the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-border: var( --kendo-dock-manager-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
+/// The border radius of the DockManager.
+/// @group dock-manager
+$kendo-dock-manager-border-radius: var( --kendo-dock-manager-border-radius, null ) !default;
 
 /// The vertical padding of the pane header in the DockManager component.
 /// @group dock-manager
@@ -122,6 +125,7 @@ $kendo-dock-manager-dock-preview-border: var( --kendo-dock-manager-dock-preview-
     $kendo-dock-manager-border-width: $kendo-dock-manager-border-width,
     $kendo-dock-manager-border-style: $kendo-dock-manager-border-style,
     $kendo-dock-manager-border: $kendo-dock-manager-border,
+    $kendo-dock-manager-border-radius: $kendo-dock-manager-border-radius,
     $kendo-dock-manager-pane-header-padding-y: $kendo-dock-manager-pane-header-padding-y,
     $kendo-dock-manager-pane-header-padding-x: $kendo-dock-manager-pane-header-padding-x,
     $kendo-dock-manager-pane-header-border-width: $kendo-dock-manager-pane-header-border-width,

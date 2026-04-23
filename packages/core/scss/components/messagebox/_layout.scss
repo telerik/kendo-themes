@@ -9,7 +9,9 @@
         padding-inline: $kendo-message-box-padding-x;
         border-width: $kendo-message-box-border-width;
         border-style: solid;
+        border-radius: $kendo-message-box-border-radius;
         box-sizing: border-box;
+        overflow: clip;
         font-size: $kendo-message-box-font-size;
         line-height: $kendo-message-box-line-height;
 

@@ -1,10 +1,10 @@
 ---
-applyTo: "packages/{default,classic,material,fluent,bootstrap}/**"
+applyTo: "packages/{default,classic,material,fluent,bootstrap,meridian}/**"
 ---
 
 # Theme Packages
 
-Instructions for all theme packages: `default`, `classic`, `material`, `fluent`, and `bootstrap`.
+Instructions for all theme packages: `default`, `classic`, `material`, `fluent`, `bootstrap`, and `meridian`.
 
 ## Package Purpose
 

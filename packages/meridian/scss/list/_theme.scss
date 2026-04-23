@@ -1,0 +1,16 @@
+@use "@progress/kendo-theme-core/scss/components/list/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-list--theme() {
+    @include kendo-list--theme-base();
+
+    .k-list-item,
+    .k-list-custom-value {
+        // Focus
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-list-item-focus-outline-color, $inset: true, $type: "outline", $outline-offset: $kendo-list-item-focus-outline-offset );
+        }
+    }
+}

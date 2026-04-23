@@ -6,6 +6,9 @@
 /// The border width of the PDFViewer.
 /// @group pdf-viewer
 $kendo-pdf-viewer-border-width: var( --kendo-pdf-viewer-border-width, 1px ) !default;
+/// The border radius of the PDFViewer.
+/// @group pdf-viewer
+$kendo-pdf-viewer-border-radius: var( --kendo-pdf-viewer-border-radius, null ) !default;
 /// The font family of the PDFViewer.
 /// @group pdf-viewer
 $kendo-pdf-viewer-font-family: var( --kendo-pdf-viewer-font-family, var(--kendo-font-family) ) !default;
@@ -125,6 +128,7 @@ $kendo-pdf-viewer-free-text-annotation-text: var( --kendo-pdf-viewer-free-text-a
 
 @forward "@progress/kendo-theme-core/scss/components/pdf-viewer/_variables.scss" with (
     $kendo-pdf-viewer-border-width: $kendo-pdf-viewer-border-width,
+    $kendo-pdf-viewer-border-radius: $kendo-pdf-viewer-border-radius,
     $kendo-pdf-viewer-font-family: $kendo-pdf-viewer-font-family,
     $kendo-pdf-viewer-font-size: $kendo-pdf-viewer-font-size,
     $kendo-pdf-viewer-line-height: $kendo-pdf-viewer-line-height,

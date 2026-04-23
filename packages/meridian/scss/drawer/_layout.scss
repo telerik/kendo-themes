@@ -1,0 +1,21 @@
+@use "@progress/kendo-theme-core/scss/components/drawer/_layout.scss" as *;
+@use "../core/index.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
+
+@mixin kendo-drawer--layout() {
+    @include kendo-drawer--layout-base();
+
+    .k-drawer-items {
+        gap: k-spacing(0.5);
+    }
+
+    .k-drawer-item {
+        transition: background-color k-transition(snappy), color k-transition(snappy), outline k-transition(snappy);
+
+        > .k-drawer-link {
+            gap: $kendo-drawer-item-spacing;
+        }
+    }
+}

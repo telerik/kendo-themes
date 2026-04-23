@@ -1,0 +1,52 @@
+@use "@progress/kendo-theme-core/scss/components/grid/_layout.scss" as *;
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-grid--layout() {
+    @include kendo-grid--layout-base();
+
+    // Add vertical border to locked and sticky columns
+    .k-grid-content-locked,
+    .k-grid-footer-locked,
+    .k-grid-header-locked {
+        border-inline-end-width: 1px;
+    }
+
+    .k-grid {
+        .k-table .k-grid-header-sticky,
+        .k-table .k-grid-content-sticky,
+        .k-table .k-grid-footer-sticky {
+            border-inline-end-width: 1px;
+        }
+
+        @each $size, $size-props in $kendo-grid-sizes {
+            $_header-padding-x: map.get( $size-props, header-padding-x );
+
+            #{k-when-default($kendo-grid-default-size, $size)}
+            &.k-grid-#{$size}{
+                .k-cell-inner {
+                    .k-grid-filter,
+                    .k-header-column-menu,
+                    .k-grid-header-menu {
+                        margin-inline-end: $_header-padding-x;
+                    }
+                }
+            }
+        }
+    }
+
+    // Column menu fix for action buttons focus state
+    .k-filter-menu-container {
+        .k-actions {
+            padding: k-spacing(1);
+            margin: calc( #{k-spacing(1)} * -1 );
+        }
+    }
+
+    .k-column-menu .k-expander {
+        backdrop-filter: none;
+        border-radius: 0;
+    }
+}

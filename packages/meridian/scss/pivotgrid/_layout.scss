@@ -1,0 +1,11 @@
+@use "@progress/kendo-theme-core/scss/components/pivotgrid/_layout.scss" as *;
+@use "../core/_index.scss" as *;
+
+@mixin kendo-pivotgrid--layout() {
+    @include kendo-pivotgrid--layout-base();
+
+    .k-pivotgrid-configurator-content .k-fields-list-wrapper,
+    .k-pivotgrid-configurator-panel.kendo-jquery .k-column-fields {
+        border-radius: k-border-radius(md);
+    }
+}

@@ -13,6 +13,7 @@
     // Layout
     .k-scheduler {
         border-width: $kendo-scheduler-border-width;
+        border-radius: $kendo-scheduler-border-radius;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
@@ -22,6 +23,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 

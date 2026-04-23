@@ -26,6 +26,10 @@ $kendo-column-menu-item-lg-padding-x: var( --kendo-column-menu-item-lg-padding-x
 /// @group column-menu
 $kendo-column-menu-item-lg-padding-y: var( --kendo-column-menu-item-lg-padding-y, k-spacing(2) ) !default;
 
+/// The vertical padding of the ColumnMenu item wrapper.
+/// @group column-menu
+$kendo-column-menu-item-wrapper-padding-y: null !default;
+
 /// The font size of the small ColumnMenu.
 /// @group column-menu
 $kendo-column-menu-sm-font-size: var( --kendo-column-menu-sm-font-size, var(--kendo-font-size) ) !default;
@@ -64,6 +68,10 @@ $kendo-group-menu-item-add-action-text: var( --kendo-group-menu-item-add-action-
 /// @group column-menu
 $kendo-group-menu-item-border: var( --kendo-group-menu-item-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
+/// The border radius of the ColumnMenu list item.
+/// @group column-menu
+$kendo-column-list-item-border-radius: null !default;
+
 @forward "@progress/kendo-theme-core/scss/components/column-menu/_variables.scss" with (
     $kendo-column-menu-default-size: $kendo-column-menu-default-size,
     $kendo-column-menu-item-sm-padding-x: $kendo-column-menu-item-sm-padding-x,
@@ -72,6 +80,7 @@ $kendo-group-menu-item-border: var( --kendo-group-menu-item-border, color-mix(in
     $kendo-column-menu-item-md-padding-y: $kendo-column-menu-item-md-padding-y,
     $kendo-column-menu-item-lg-padding-x: $kendo-column-menu-item-lg-padding-x,
     $kendo-column-menu-item-lg-padding-y: $kendo-column-menu-item-lg-padding-y,
+    $kendo-column-menu-item-wrapper-padding-y: $kendo-column-menu-item-wrapper-padding-y,
     $kendo-column-menu-sm-font-size: $kendo-column-menu-sm-font-size,
     $kendo-column-menu-md-font-size: $kendo-column-menu-md-font-size,
     $kendo-column-menu-lg-font-size: $kendo-column-menu-lg-font-size,
@@ -82,5 +91,6 @@ $kendo-group-menu-item-border: var( --kendo-group-menu-item-border, color-mix(in
     $kendo-group-menu-item-action-hover-bg: $kendo-group-menu-item-action-hover-bg,
     $kendo-group-menu-item-action-selected-bg: $kendo-group-menu-item-action-selected-bg,
     $kendo-group-menu-item-add-action-text: $kendo-group-menu-item-add-action-text,
-    $kendo-group-menu-item-border: $kendo-group-menu-item-border
+    $kendo-group-menu-item-border: $kendo-group-menu-item-border,
+    $kendo-column-list-item-border-radius: $kendo-column-list-item-border-radius
 );

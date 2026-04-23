@@ -1,0 +1,8 @@
+{
+    "src": "scss",
+    "dest": "docs",
+    "meta": {
+        "name": "meridian",
+        "friendlyName": "Meridian"
+    }
+}

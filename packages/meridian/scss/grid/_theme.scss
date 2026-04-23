@@ -1,0 +1,63 @@
+@use "../core/_index.scss" as *;
+@use "_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/grid/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-grid--theme() {
+    @include kendo-grid--theme-base();
+
+    .k-grid {
+
+        background-color: unset;
+
+        .k-grid-table,
+        .k-grid-container {
+            background-color: $kendo-grid-bg;
+        }
+
+        // Focus state
+        .k-table-row:is(:focus, .k-focus),
+        .k-master-row:is(:focus, .k-focus),
+        .k-grouping-row:is(:focus, .k-focus),
+        .k-grid-pager:is(:focus, .k-focus) {
+            @include focus-indicator(
+                $kendo-grid-focus-outline-color,
+                $inset: true,
+                $type: "outline",
+                $outline-width: $kendo-grid-focus-outline-width,
+                $outline-offset: $kendo-grid-focus-outline-offset
+            );
+        }
+
+        .k-table-row,
+        .k-master-row,
+        .k-grouping-row {
+            > :is(:focus, .k-focus) {
+                @include focus-indicator(
+                    $kendo-grid-focus-outline-color,
+                    $inset: true,
+                    $type: "outline",
+                    $outline-width: $kendo-grid-focus-outline-width,
+                    $outline-offset: $kendo-grid-focus-outline-offset
+                );
+            }
+        }
+
+        // Fix for cut focus outline in grid header
+        .k-grid-header {
+            .k-table-row,
+            .k-grouping-row {
+                > :is(:focus, .k-focus) {
+                    @include focus-indicator(
+                        $kendo-grid-focus-outline-color,
+                        $inset: true,
+                        $type: "outline",
+                        $outline-width: $kendo-grid-focus-outline-width,
+                        $outline-offset: 2px
+                    );
+                }
+            }
+        }
+    }
+}

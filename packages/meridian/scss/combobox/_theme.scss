@@ -1,0 +1,16 @@
+@use "@progress/kendo-theme-core/scss/components/combobox/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../input/variables.scss" as *;
+
+@mixin kendo-combobox--theme() {
+    @include kendo-combobox--theme-base();
+
+    .k-combobox {
+        .k-input-button {
+            &::before {
+                background-color: k-color(border);
+                opacity: 1;
+            }
+        }
+    }
+}

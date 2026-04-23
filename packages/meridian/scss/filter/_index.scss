@@ -1,0 +1,30 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../checkbox/_index.scss" as *;
+@use "../datetimepicker/_index.scss" as *;
+@use "../dropdownlist/_index.scss" as *;
+@use "../numerictextbox/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-filter--styles() {
+    @include import-once( "filter" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-input--styles();
+        @include kendo-checkbox--styles();
+        @include kendo-date-time-picker--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-numeric-textbox--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-filter--layout();
+        @include kendo-filter--theme();
+    }
+}

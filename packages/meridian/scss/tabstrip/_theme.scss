@@ -1,0 +1,27 @@
+@use "@progress/kendo-theme-core/scss/components/tabstrip/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "./_variables.scss" as *;
+
+
+@mixin kendo-tabstrip--theme() {
+    @include kendo-tabstrip--theme-base();
+
+     // Items
+    .k-tabstrip-items-wrapper {
+        .k-tabstrip-item,
+        .k-item {
+            &:focus,
+            &.k-focus {
+                box-shadow: none;
+                @include focus-indicator(
+                    $indicator: k-color(subtle),
+                    $inset: true,
+                    $type: "outline",
+                    $outline-width: $kendo-tabstrip-item-focus-outline-width,
+                    $outline-offset: $kendo-tabstrip-item-focus-outline-offset
+                );
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@use "@progress/kendo-theme-core/scss/components/window/_layout.scss" as *;
+@use "_variables.scss" as *;
+
+
+@mixin kendo-window--layout() {
+    @include kendo-window--layout-base();
+
+    .k-window-title {
+        font-weight: var( --kendo-font-weight-medium, normal );
+    }
+
+    .k-window-titlebar:last-child {
+        border-end-start-radius: $kendo-window-border-radius;
+        border-end-end-radius: $kendo-window-border-radius;
+    }
+
+    .k-window-content:first-child {
+        border-start-start-radius: $kendo-window-border-radius;
+        border-start-end-radius: $kendo-window-border-radius;
+    }
+    .k-window-content:last-child {
+        border-end-start-radius: $kendo-window-border-radius;
+        border-end-end-radius: $kendo-window-border-radius;
+    }
+}

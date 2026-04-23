@@ -17,6 +17,9 @@ $kendo-image-editor-padding-x: null !default;
 /// The width of the border around the ImageEditor.
 /// @group image-editor
 $kendo-image-editor-border-width: 1px !default;
+/// The border radius of the ImageEditor.
+/// @group image-editor
+$kendo-image-editor-border-radius: null !default;
 /// The font size of the ImageEditor.
 /// @group image-editor
 $kendo-image-editor-font-size: var(--kendo-font-size) !default;
@@ -112,6 +115,7 @@ $kendo-image-editor-crop-overlay-bg: rgba( black, .3 ) !default;
     $kendo-image-editor-padding-y: $kendo-image-editor-padding-y,
     $kendo-image-editor-padding-x: $kendo-image-editor-padding-x,
     $kendo-image-editor-border-width: $kendo-image-editor-border-width,
+    $kendo-image-editor-border-radius: $kendo-image-editor-border-radius,
     $kendo-image-editor-font-size: $kendo-image-editor-font-size,
     $kendo-image-editor-line-height: $kendo-image-editor-line-height,
     $kendo-image-editor-font-family: $kendo-image-editor-font-family,

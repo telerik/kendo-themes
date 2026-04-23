@@ -7,6 +7,10 @@
     .k-filter {
         color: k-color(on-app-surface);
 
+        .k-filter-toolbar .k-toolbar {
+            border-radius: $kendo-filter-border-radius;
+        }
+
         .k-filter-preview-field {
             color: $kendo-filter-preview-field-text;
         }

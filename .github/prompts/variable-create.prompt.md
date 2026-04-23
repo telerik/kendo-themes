@@ -222,7 +222,7 @@ All new variables must be added to the `@forward` map at the end of each file (e
 
 **Actions**:
 1. Create `$kendo-tooltip-arrow-size`
-2. Add to all themes: `bootstrap`, `classic`, `default`, `material` (value: `10px`)
+2. Add to all themes: `bootstrap`, `classic`, `default`, `material`, `meridian` (value: `10px`)
 3. Add to `fluent` theme: `var(--kendo-tooltip-arrow-size, 10px)`
 4. Add to `core` theme: `null` (no SassDoc comments)
 5. Document with `@group tooltip`

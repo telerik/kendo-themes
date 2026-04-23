@@ -1,0 +1,30 @@
+@use "@progress/kendo-theme-core/scss/components/checkbox/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../checkbox/_variables.scss" as *;
+
+
+@mixin kendo-checkbox--theme() {
+    @include kendo-checkbox--theme-base();
+
+    .k-checkbox {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-checkbox-focus-outline-color,
+                $outline-width: $kendo-checkbox-focus-outline-width,
+                $outline-offset: $kendo-checkbox-focus-outline-offset
+            );
+        }
+
+        &:checked:focus,
+        &.k-checked.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-checkbox-focus-checked-outline-color,
+                $outline-width: $kendo-checkbox-focus-checked-outline-width,
+                $outline-offset: $kendo-checkbox-focus-checked-outline-offset
+            );
+        }
+    }
+}

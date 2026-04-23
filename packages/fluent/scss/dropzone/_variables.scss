@@ -10,6 +10,9 @@ $kendo-dropzone-padding-y: var( --kendo-dropzone-padding-y, #{k-spacing(2)} ) !d
 /// The border width of the DropZone.
 /// @group dropzone
 $kendo-dropzone-border-width: var( --kendo-dropzone-border-width, 1px ) !default;
+/// The border radius of the DropZone.
+/// @group dropzone
+$kendo-dropzone-border-radius: null !default;
 /// The minimum height of the DropZone.
 /// @group dropzone
 $kendo-dropzone-min-height: var( --kendo-dropzone-min-height, 220px ) !default;
@@ -74,6 +77,7 @@ $kendo-dropzone-note-text: var( --kendo-dropzone-note-text, #{k-color(subtle)} )
     $kendo-dropzone-padding-x: $kendo-dropzone-padding-x,
     $kendo-dropzone-padding-y: $kendo-dropzone-padding-y,
     $kendo-dropzone-border-width: $kendo-dropzone-border-width,
+    $kendo-dropzone-border-radius: $kendo-dropzone-border-radius,
     $kendo-dropzone-min-height: $kendo-dropzone-min-height,
     $kendo-dropzone-font-family: $kendo-dropzone-font-family,
     $kendo-dropzone-font-size: $kendo-dropzone-font-size,

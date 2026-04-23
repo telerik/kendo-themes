@@ -1,0 +1,15 @@
+@use "@progress/kendo-theme-core/scss/components/imageeditor/_layout.scss" as *;
+
+
+@mixin kendo-image-editor--layout() {
+    @include kendo-image-editor--layout-base();
+
+    .k-imageeditor-header {
+        border-radius: inherit;
+        border-end-start-radius: 0;
+        border-end-end-radius: 0;
+    }
+    .k-imageeditor-toolbar {
+        border-radius: inherit;
+    }
+}

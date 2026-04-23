@@ -1,0 +1,11 @@
+@use "@progress/kendo-theme-core/scss/components/radio/_layout.scss" as *;
+@use "../core/index.scss" as *;
+
+
+@mixin kendo-radio--layout() {
+    @include kendo-radio--layout-base();
+
+    .k-radio {
+        transition: background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid), opacity k-transition(rapid);
+    }
+}

@@ -8,6 +8,9 @@
 /// The width of the border around the Еditor.
 /// @group editor
 $kendo-editor-border-width: 1px !default;
+/// The border radius of the Editor.
+/// @group editor
+$kendo-editor-border-radius: null !default;
 /// The font family of the Еditor.
 /// @group editor
 $kendo-editor-font-family: var(--kendo-font-family) !default;
@@ -90,6 +93,7 @@ $kendo-editor-content-padding: k-spacing(4) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/editor/_variables.scss" with (
     $kendo-editor-border-width: $kendo-editor-border-width,
+    $kendo-editor-border-radius: $kendo-editor-border-radius,
     $kendo-editor-font-family: $kendo-editor-font-family,
     $kendo-editor-font-size: $kendo-editor-font-size,
     $kendo-editor-line-height: $kendo-editor-line-height,

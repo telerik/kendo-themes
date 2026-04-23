@@ -1,0 +1,11 @@
+@use "@progress/kendo-theme-core/scss/components/scrollview/_layout.scss" as *;
+@use "../core/index.scss" as *;
+
+
+@mixin kendo-scrollview--layout() {
+    @include kendo-scrollview--layout-base();
+
+    .k-scrollview-nav > .k-link {
+        transition: background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
+    }
+}

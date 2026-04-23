@@ -1,0 +1,37 @@
+@use "@progress/kendo-theme-core/scss/components/colorgradient/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../colorgradient/_variables.scss" as *;
+
+
+@mixin kendo-color-gradient--theme() {
+    @include kendo-color-gradient--theme-base();
+
+    .k-colorgradient:focus,
+    .k-colorgradient.k-focus {
+        @include focus-indicator(
+            $type: "outline",
+            $indicator: $kendo-color-gradient-focus-outline-color,
+            $outline-width: $kendo-color-gradient-focus-outline-width,
+            $outline-offset: $kendo-color-gradient-focus-outline-offset
+        );
+    }
+
+    .k-colorgradient .k-draghandle {
+        &:hover,
+        &.k-hover,
+        &:focus,
+        &.k-focus {
+            border-color: $kendo-color-gradient-draghandle-border;
+        }
+
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-color-gradient-draghandle-focus-outline-color,
+                $outline-width: $kendo-color-gradient-draghandle-focus-outline-width,
+                $outline-offset: $kendo-color-gradient-draghandle-focus-outline-offset
+            );
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@use "@progress/kendo-theme-core/scss/components/prompt/_layout.scss" as *;
+
+
+@mixin kendo-prompt--layout() {
+    @include kendo-prompt--layout-base();
+
+    .k-prompt-header .k-toolbar {
+        border-radius: 0;
+    }
+}

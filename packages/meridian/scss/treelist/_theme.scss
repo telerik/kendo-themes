@@ -1,0 +1,11 @@
+@use "../grid/_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/treelist/_theme.scss" as *;
+
+
+@mixin kendo-treelist--theme() {
+    @include kendo-treelist--theme-base();
+
+    .k-treelist-scrollable > .k-table {
+        background-color: $kendo-grid-bg;
+    }
+}

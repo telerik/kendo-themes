@@ -1,0 +1,16 @@
+{
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.14.0/lib/schemas/kendo-swatch.json",
+    "name": "Meridian Main",
+    "product": "kendo",
+    "base": "@progress/kendo-theme-meridian",
+    "version": "13.1.1-dev.1",
+    "previewColors": [
+        "#ffffff",
+        "#f5f5f5",
+        "#ff6358",
+        "#d6534a",
+        "#424242"
+    ],
+    "components": [],
+    "groups": []
+}

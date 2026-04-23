@@ -15,7 +15,12 @@
             display: flex;
             padding: $kendo-chart-wizard-icon-area-padding;
             border-radius: $kendo-chart-wizard-icon-area-border-radius;
-            transition: box-shadow k-transition(rapid);
+            transition: box-shadow k-transition(rapid), border-color k-transition(rapid);
+
+            @if $kendo-chart-wizard-icon-area-border-width {
+                border-width: $kendo-chart-wizard-icon-area-border-width;
+                border-style: solid;
+            }
         }
     }
 

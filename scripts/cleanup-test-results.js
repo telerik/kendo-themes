@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { globSync } = require('glob');
 
-const reThemes = /default|classic|bootstrap|material|fluent/;
+const reThemes = /default|classic|bootstrap|material|fluent|meridian/;
 
 const tests = globSync('tests/**/*.html').map(test => path.join( path.dirname(test), path.basename(test, '.html')));
 const results = globSync('tests/_output/**/*.png');

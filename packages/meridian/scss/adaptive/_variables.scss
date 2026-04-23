@@ -1,0 +1,90 @@
+@use "../core/_index.scss" as *;
+
+
+// Adaptive
+/// The background color of the Adaptive component.
+/// @group adaptive
+$kendo-adaptive-bg: k-color(surface-alt) !default;
+/// The text color of the Adaptive component.
+/// @group adaptive
+$kendo-adaptive-text: k-color(on-app-surface) !default;
+/// The border color of the Adaptive component.
+/// @group adaptive
+$kendo-adaptive-border: k-color(border) !default;
+
+/// The background color of the Adaptive content.
+/// @group adaptive
+$kendo-adaptive-content-bg: k-color(surface) !default;
+/// The text color of the Adaptive content.
+/// @group adaptive
+$kendo-adaptive-content-text: k-color(on-app-surface) !default;
+
+/// The background color of the Adaptive menu.
+/// @group adaptive
+$kendo-adaptive-menu-bg: k-color(primary) !default;
+/// The text color of the Adaptive menu.
+/// @group adaptive
+$kendo-adaptive-menu-text: k-color(on-primary) !default;
+
+/// The text color of the Adaptive menu clear button.
+/// @group adaptive
+$kendo-adaptive-menu-clear-text: k-color(primary) !default;
+
+/// The border color of the Adaptive menu item.
+/// @group adaptive
+$kendo-adaptive-menu-item-border: k-color(border) !default;
+/// The text color of the Adaptive menu title.
+/// @group adaptive
+$kendo-adaptive-menu-title-text: k-color(on-app-surface) !default;
+
+/// The width of the border around the Adaptive component.
+/// @group adaptive
+$kendo-adaptive-border-width: 1px !default;
+/// The font family of the Adaptive component.
+/// @group adaptive
+$kendo-adaptive-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Adaptive component.
+/// @group adaptive
+$kendo-adaptive-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Adaptive component.
+/// @group adaptive
+$kendo-adaptive-line-height: var( --kendo-line-height, normal ) !default;
+
+
+// Adaptive Grid
+/// The text color of the Adaptive Grid sort indicator.
+/// @group adaptive
+$kendo-adaptive-grid-sort-text: k-color(primary) !default;
+
+
+// Adaptive Scheduler
+/// The text color of the current date in the Adaptive Scheduler.
+/// @group adaptive
+$kendo-adaptive-scheduler-current-text: k-color(primary) !default;
+/// The base text color of the Adaptive Scheduler.
+/// @group adaptive
+$kendo-adaptive-scheduler-base-text: inherit !default;
+/// The subtle text color of the Adaptive Scheduler.
+/// @group adaptive
+$kendo-adaptive-scheduler-subtle-text: k-color(on-app-surface) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/adaptive/_variables.scss" with (
+    $kendo-adaptive-bg: $kendo-adaptive-bg,
+    $kendo-adaptive-text: $kendo-adaptive-text,
+    $kendo-adaptive-border: $kendo-adaptive-border,
+    $kendo-adaptive-content-bg: $kendo-adaptive-content-bg,
+    $kendo-adaptive-content-text: $kendo-adaptive-content-text,
+    $kendo-adaptive-menu-bg: $kendo-adaptive-menu-bg,
+    $kendo-adaptive-menu-text: $kendo-adaptive-menu-text,
+    $kendo-adaptive-menu-clear-text: $kendo-adaptive-menu-clear-text,
+    $kendo-adaptive-menu-item-border: $kendo-adaptive-menu-item-border,
+    $kendo-adaptive-menu-title-text: $kendo-adaptive-menu-title-text,
+    $kendo-adaptive-border-width: $kendo-adaptive-border-width,
+    $kendo-adaptive-font-family: $kendo-adaptive-font-family,
+    $kendo-adaptive-font-size: $kendo-adaptive-font-size,
+    $kendo-adaptive-line-height: $kendo-adaptive-line-height,
+    $kendo-adaptive-grid-sort-text: $kendo-adaptive-grid-sort-text,
+    $kendo-adaptive-scheduler-current-text: $kendo-adaptive-scheduler-current-text,
+    $kendo-adaptive-scheduler-base-text: $kendo-adaptive-scheduler-base-text,
+    $kendo-adaptive-scheduler-subtle-text: $kendo-adaptive-scheduler-subtle-text
+);

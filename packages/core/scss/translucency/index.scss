@@ -1,0 +1,20 @@
+$kendo-translucency-base: 0% !default;
+
+@function k-translucency-bg($color) {
+    $_result: "oklch(from #{$color} l c h / calc(100% - calc(var(--kendo-translucency-base))))";
+    @return #{$_result};
+}
+
+$kendo-translucency-blur-base: 6px !default;
+$kendo-translucency-blur-step: 2px !default;
+
+@function k-translucency-blur($level: 1) {
+    $_result: "blur(calc(#{$kendo-translucency-blur-base} + calc(#{$level} * #{$kendo-translucency-blur-step})))";
+    @return #{$_result};
+}
+
+@mixin kendo-translucency--styles() {
+    :root {
+        --kendo-translucency-base: #{$kendo-translucency-base};
+    }
+}

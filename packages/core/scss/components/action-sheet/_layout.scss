@@ -104,6 +104,7 @@
         border-block-end-style: solid;
         font-size: $kendo-actionsheet-titlebar-font-size;
         font-family: $kendo-actionsheet-titlebar-font-family;
+        font-weight: $kendo-actionsheet-titlebar-font-weight;
         line-height: $kendo-actionsheet-titlebar-line-height;
         flex: none;
         display: flex;
@@ -157,6 +158,7 @@
     // Actionsheet item
     .k-actionsheet-item {
         padding: 0;
+        border-radius: $kendo-actionsheet-item-border-radius;
         box-sizing: border-box;
         display: flex;
         flex-flow: row nowrap;

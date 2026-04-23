@@ -1,0 +1,15 @@
+@use "@progress/kendo-theme-core/scss/components/filemanager/_layout.scss" as *;
+@use "./variables.scss" as *;
+
+
+@mixin kendo-file-manager--layout() {
+    @include kendo-file-manager--layout-base();
+
+    .k-filemanager-listview {
+        padding: $kendo-file-manager-listview-padding;
+    }
+
+    .k-filemanager-toolbar {
+        border-radius: 0;
+    }
+}

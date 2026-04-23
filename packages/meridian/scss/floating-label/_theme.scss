@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/floating-label/_theme.scss" as *;
+
+
+@mixin kendo-floating-label--theme() {
+    @include kendo-floating-label--theme-base();
+}

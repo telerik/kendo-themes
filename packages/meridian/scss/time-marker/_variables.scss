@@ -1,0 +1,13 @@
+@use "../core/_index.scss" as *;
+
+/// The border width of the current time indicator.
+/// @group time-marker
+$kendo-current-time-width: 1px !default;
+/// The color of the current time indicator.
+/// @group time-marker
+$kendo-current-time-color: k-color(error-on-surface) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/time-marker/_variables.scss" with (
+    $kendo-current-time-width: $kendo-current-time-width,
+    $kendo-current-time-color: $kendo-current-time-color
+);

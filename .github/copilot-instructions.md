@@ -11,11 +11,12 @@ This monorepo contains SCSS themes for all Kendo UI products, providing consiste
 | Package | Purpose | Path-Specific Instructions |
 |---------|---------|---------------------------|
 | **core** | Design system foundation with null variables and component skeletons | `.github/instructions/core.instructions.md` |
-| **default** | Default Kendo theme implementation | `.github/instructions/themes.instructions.md` |
+| **default** | Default Kendo theme (maintenance mode) | `.github/instructions/themes.instructions.md` |
 | **bootstrap** | Bootstrap-styled theme | `.github/instructions/themes.instructions.md` |
 | **material** | Material Design theme | `.github/instructions/themes.instructions.md` |
 | **classic** | Classic Kendo theme | `.github/instructions/themes.instructions.md` |
 | **fluent** | Microsoft Fluent theme | `.github/instructions/themes.instructions.md` |
+| **meridian** | Meridian theme — the recommended default for Kendo and Telerik products | `.github/instructions/themes.instructions.md` |
 | **utils** | Utility-first CSS classes (standalone) | `.github/instructions/utils.instructions.md` |
 | **html** | React component specs for visual testing | `.github/instructions/html.instructions.md` |
 

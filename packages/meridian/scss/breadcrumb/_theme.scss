@@ -1,0 +1,15 @@
+@use "@progress/kendo-theme-core/scss/components/breadcrumb/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
+
+@mixin kendo-breadcrumb--theme() {
+    @include kendo-breadcrumb--theme-base();
+
+    .k-breadcrumb-root-link:focus,
+    .k-breadcrumb-root-link.k-focus,
+    .k-breadcrumb-link:focus,
+    .k-breadcrumb-link.k-focus {
+        @include focus-indicator( $kendo-breadcrumb-link-outline-color, $inset: true, $type: "outline", $outline-offset: $kendo-breadcrumb-link-outline-offset );
+    }
+}

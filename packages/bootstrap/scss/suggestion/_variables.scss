@@ -24,6 +24,9 @@ $kendo-suggestion-font-size: var(--kendo-font-size) !default;
 /// The line height of the Suggestion.
 /// @group suggestion
 $kendo-suggestion-line-height: var(--kendo-line-height) !default;
+/// The font weight of the Suggestion.
+/// @group suggestion
+$kendo-suggestion-font-weight: null !default;
 /// The border radius of the Suggestion.
 /// @group suggestion
 $kendo-suggestion-border-radius: k-border-radius(full) !default;
@@ -55,6 +58,7 @@ $kendo-suggestion-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, k-color(app-sur
     $kendo-suggestion-border-style: $kendo-suggestion-border-style,
     $kendo-suggestion-font-size: $kendo-suggestion-font-size,
     $kendo-suggestion-line-height: $kendo-suggestion-line-height,
+    $kendo-suggestion-font-weight: $kendo-suggestion-font-weight,
     $kendo-suggestion-border-radius: $kendo-suggestion-border-radius,
     $kendo-suggestion-focus-shadow-blur: $kendo-suggestion-focus-shadow-blur,
     $kendo-suggestion-focus-shadow-spread: $kendo-suggestion-focus-shadow-spread,

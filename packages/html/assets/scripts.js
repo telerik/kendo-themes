@@ -1,6 +1,6 @@
 "use strict";
 
-const DEFAULT_THEME = "default";
+const DEFAULT_THEME = "meridian";
 const DEFAULT_SWATCH = "all";
 
 let params = (new URL(document.location)).searchParams;
@@ -29,7 +29,7 @@ if (swatch !== 'all' && swatch.indexOf(theme) !== 0) {
 }
 
 // Change theme
-kendoThemeLink.href = kendoThemeLink.getAttribute('href').replace(/default/i, theme).replace(/all.css/, `${swatch}.css`);
+kendoThemeLink.href = kendoThemeLink.getAttribute('href').replace(/meridian/i, theme).replace(/all.css/, `${swatch}.css`);
 
 // Stop animations
 if (animations === true) {

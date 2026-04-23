@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/taskboard/_layout.scss" as *;
+
+
+@mixin kendo-task-board--layout() {
+    @include kendo-task-board--layout-base();
+}

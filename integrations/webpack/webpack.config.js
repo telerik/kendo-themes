@@ -9,7 +9,8 @@ module.exports = {
         classic: './styles/classic-theme.scss',
         default: './styles/default-theme.scss',
         fluent: './styles/fluent-theme.scss',
-        material: './styles/material-theme.scss'
+        material: './styles/material-theme.scss',
+        meridian: './styles/meridian-theme.scss'
     },
 
     output: {

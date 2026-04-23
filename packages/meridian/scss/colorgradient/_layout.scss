@@ -1,0 +1,36 @@
+@use "@progress/kendo-theme-core/scss/components/colorgradient/_layout.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../colorgradient/_variables.scss" as *;
+
+
+@mixin kendo-color-gradient--layout() {
+    @include kendo-color-gradient--layout-base();
+
+    .k-colorgradient .k-draghandle {
+       &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: $kendo-color-gradient-draghandle-border-radius;
+            outline: $kendo-color-gradient-draghandle-inner-outline-width solid $kendo-color-gradient-draghandle-inner-outline-color;
+            outline-offset: -$kendo-color-gradient-draghandle-inner-outline-width;
+       }
+    }
+
+    .k-colorgradient-slider .k-draghandle {
+        &::before,
+        &::before {
+            outline-width: $kendo-color-gradient-slider-draghandle-inner-outline-width;
+            outline-offset: -$kendo-color-gradient-slider-draghandle-inner-outline-width;
+        }
+    }
+
+    .k-colorgradient-slider .k-draghandle:hover,
+    .k-colorgradient-slider .k-draghandle.k-hover {
+        outline-offset: 0;
+    }
+}
+

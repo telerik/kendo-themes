@@ -1,0 +1,11 @@
+@use "@progress/kendo-theme-core/scss/components/checkbox/_layout.scss" as *;
+@use "../core/index.scss" as *;
+
+
+@mixin kendo-checkbox--layout() {
+    @include kendo-checkbox--layout-base();
+
+    .k-checkbox {
+        transition: background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid), opacity k-transition(rapid);
+    }
+}

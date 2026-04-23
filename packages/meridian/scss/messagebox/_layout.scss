@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/messagebox/_layout.scss" as *;
+
+
+@mixin kendo-messagebox--layout() {
+    @include kendo-messagebox--layout-base();
+}

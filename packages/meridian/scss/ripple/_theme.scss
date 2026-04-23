@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/ripple/_theme.scss" as *;
+
+
+@mixin kendo-ripple--theme() {
+    @include kendo-ripple--theme-base();
+}

@@ -1,0 +1,46 @@
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/chat/_layout.scss" as *;
+@use "./variables.scss" as *;
+
+
+@mixin kendo-chat--layout() {
+    @include kendo-chat--layout-base();
+
+    .k-message-list-content {
+        padding-block-end: k-spacing(2);
+    }
+
+    .k-chat-bubble,
+    .k-message-box-wrapper {
+        .k-message-reference {
+            padding-block: 0;
+        }
+    }
+
+    .k-message-reference-content {
+        padding-block: calc( #{$kendo-chat-message-reference-padding-y} - 1px );
+    }
+
+    .k-message-reference-content {
+        &:has(>.k-file-box) {
+            padding-block: 0;
+        }
+
+        &::before {
+              height: calc( var(--kendo-font-size-sm) * var(--kendo-line-height-sm));
+        }
+    }
+
+    .k-message,
+    .k-message-box-wrapper {
+        .k-message-reference {
+            border-radius: var(--kendo-border-radius-md);
+            border-width: 1px;
+            border-style: solid;
+        }
+    }
+
+    .k-chat-download-button-wrapper {
+        padding: k-spacing(0.5);
+    }
+}

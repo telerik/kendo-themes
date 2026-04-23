@@ -1,0 +1,34 @@
+@use "sass:map";
+
+$default-elevation: (
+    1: (
+        0 0 4px 1px rgba(56, 66, 80, .05),
+        0 4px 6px -2px rgba(56, 66, 80, .06)
+    ),
+    2: (
+        0 -1px 2px 0 rgba(56, 66, 80, .03),
+        0 4px 6px -2px rgba(56, 66, 80, .02),
+        0 12px 16px -4px rgba(56, 66, 80, .08)
+    ),
+    3: (
+        0 -1px 2px 0 rgba(56, 66, 80, .03),
+        0 8px 10px -4px rgba(56, 66, 80, .04),
+        0 16px 20px -4px rgba(56, 66, 80, .08)
+    ),
+    4: (
+        0 -1px 2px 0 rgba(56, 66, 80, .03),
+        0 12px 14px -4px rgba(56, 66, 80, .04),
+        0 18px 24px -5px rgba(56, 66, 80, .08)
+    ),
+    5: (
+        0 -1px 2px 0 rgba(56, 66, 80, .03),
+        0 16px 18px -6px rgba(56, 66, 80, .06),
+        0 20px 28px -6px rgba(56, 66, 80, .08)
+    )
+) !default;
+
+/// The global default Elevation map.
+/// @group elevation
+$kendo-elevation: $default-elevation !default;
+
+$kendo-elevation: map.merge($default-elevation, $kendo-elevation);
