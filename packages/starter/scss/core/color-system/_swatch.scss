@@ -15,7 +15,7 @@ $_default-colors: (
     base-subtle-hover: #{"oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.98) calc(c + 0.0058) calc(h + 10.48))"},
     base-subtle-active: #{"oklch(from var(--kendo-color-base) clamp(0.03, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.97) calc(c + 0.0076) calc(h + 8.84))"},
     base: oklch(96.92% 0.0034 247.86deg),
-    base-hover: #{"oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))"},
+    base-hover: #{"oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.99) calc(c + 0.0058) calc(h + 10.48))"},
     base-active: #{"oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.98) calc(c + 0.0076) calc(h + 8.84))"},
     base-emphasis: #{"oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.0984, (0.35 - l) * 99999, 0.0984)), 0.95) calc(c + 0.0094) calc(h + 7.65))"},
     base-on-subtle: #{"oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))"},

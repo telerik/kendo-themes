@@ -38,6 +38,10 @@
         &.k-invalid:focus-within {
             outline-color: $kendo-input-invalid-focus-outline;
         }
+
+        .k-clear-value {
+            color: k-color(subtle);
+        }
     }
 
     // Picker

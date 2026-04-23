@@ -16,7 +16,7 @@
                 #{k-when-default($kendo-chip-default-theme-color, $name)}
                 &.k-chip-#{$name} {
                     @include fill(
-                        k-color(on-subtle-#{$name}),
+                        k-color(#{$name}-on-subtle),
                         k-color(#{$name}-subtle),
                         k-color(#{$name}),
                     );
@@ -29,6 +29,13 @@
                     &.k-active,
                     &.k-selected {
                         @include fill( $bg: k-color(#{$name}-subtle-active) );
+                    }
+
+                    @if $name == "base" {
+                        #{k-when-default($kendo-chip-default-theme-color, $name)}
+                        &.k-chip-#{$name} {
+                            border-color: k-color(#{$name}-emphasis);
+                        }
                     }
                 }
             }
