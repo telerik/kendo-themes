@@ -1,0 +1,16 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-overlay--styles() {
+    @include import-once( "overlay" ) {
+        @include core-styles();
+        @include kendo-overlay--layout();
+        @include kendo-overlay--theme();
+    }
+}

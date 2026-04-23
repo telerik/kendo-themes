@@ -54,6 +54,9 @@ $kendo-form-legend-width: var(--kendo-form-legend-width, 100%) !default;
 /// The font size of the Form legend.
 /// @group form
 $kendo-form-legend-font-size: var(--kendo-form-legend-font-size, var(--kendo-font-size)) !default;
+/// The font weight of the Form legend.
+/// @group form
+$kendo-form-legend-font-weight: null !default;
 
 /// The text capitalization of the Form legend.
 /// @group form
@@ -62,6 +65,16 @@ $kendo-form-legend-text-transform: var(--kendo-form-legend-text-transform, upper
 /// The bottom margin of the Form label.
 /// @group form
 $kendo-form-label-margin-bottom: var(--kendo-form-label-margin-bottom, #{k-spacing(2)}) !default;
+
+/// The font size of the Form label.
+/// @group form
+$kendo-label-font-size: var(--kendo-label-font-size, inherit) !default;
+/// The font weight of the Form label.
+/// @group form
+$kendo-label-font-weight: var(--kendo-label-font-weight, inherit) !default;
+/// The line height of the Form label.
+/// @group form
+$kendo-label-line-height: var(--kendo-label-line-height, inherit) !default;
 
 /// The font size of the Form hint.
 /// @group form
@@ -134,6 +147,9 @@ $kendo-label-optional-font-size: var(--kendo-label-optional-font-size, var(--ken
 /// The font style of the optional label in the Form.
 /// @group form
 $kendo-label-optional-font-style: var(--kendo-label-optional-font-style, normal) !default;
+/// The font weight of the optional label in the Form.
+/// @group form
+$kendo-label-optional-font-weight: var(--kendo-label-optional-font-weight, inherit) !default;
 
 /// The margin of the Form fieldset.
 /// @group form
@@ -157,8 +173,12 @@ $kendo-fieldset-legend-text: var(--kendo-fieldset-legend-text, #{k-color(subtle)
     $kendo-form-legend-border-color: $kendo-form-legend-border-color,
     $kendo-form-legend-width: $kendo-form-legend-width,
     $kendo-form-legend-font-size: $kendo-form-legend-font-size,
+    $kendo-form-legend-font-weight: $kendo-form-legend-font-weight,
     $kendo-form-legend-text-transform: $kendo-form-legend-text-transform,
     $kendo-form-label-margin-bottom: $kendo-form-label-margin-bottom,
+    $kendo-label-font-size: $kendo-label-font-size,
+    $kendo-label-font-weight: $kendo-label-font-weight,
+    $kendo-label-line-height: $kendo-label-line-height,
     $kendo-form-hint-font-size: $kendo-form-hint-font-size,
     $kendo-form-hint-font-style: $kendo-form-hint-font-style,
     $kendo-form-hint-margin-top: $kendo-form-hint-margin-top,
@@ -176,6 +196,7 @@ $kendo-fieldset-legend-text: var(--kendo-fieldset-legend-text, #{k-color(subtle)
     $kendo-label-optional-margin-x: $kendo-label-optional-margin-x,
     $kendo-label-optional-font-size: $kendo-label-optional-font-size,
     $kendo-label-optional-font-style: $kendo-label-optional-font-style,
+    $kendo-label-optional-font-weight: $kendo-label-optional-font-weight,
     $kendo-fieldset-margin: $kendo-fieldset-margin,
     $kendo-fieldset-legend-text: $kendo-fieldset-legend-text
 );

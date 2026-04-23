@@ -7,6 +7,9 @@
 /// The width of the border around the Spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-border-width: 1px !default;
+/// The border radius of the Spreadsheet.
+/// @group spreadsheet
+$kendo-spreadsheet-border-radius: null !default;
 /// The font family of the Spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-font-family: var(--kendo-font-family) !default;
@@ -284,6 +287,7 @@ $kendo-spreadsheet-filter-menu-icon-margin: 0 k-spacing(1) 0 calc(-1 * ( #{$kend
 
 @forward "@progress/kendo-theme-core/scss/components/spreadsheet/_variables.scss" with (
     $kendo-spreadsheet-border-width: $kendo-spreadsheet-border-width,
+    $kendo-spreadsheet-border-radius: $kendo-spreadsheet-border-radius,
     $kendo-spreadsheet-font-family: $kendo-spreadsheet-font-family,
     $kendo-spreadsheet-font-size: $kendo-spreadsheet-font-size,
     $kendo-spreadsheet-line-height: $kendo-spreadsheet-line-height,

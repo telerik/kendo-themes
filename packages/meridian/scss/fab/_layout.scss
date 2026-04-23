@@ -1,0 +1,22 @@
+@use "@progress/kendo-theme-core/scss/components/fab/_layout.scss" as *;
+@use "../core/index.scss" as *;
+@use "./_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
+@mixin kendo-fab--layout() {
+    @include kendo-fab--layout-base();
+
+    .k-fab {
+        transition: background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid), opacity k-transition(rapid);
+
+        .k-fab-icon {
+            min-width: calc( #{$kendo-fab-font-size} * #{$kendo-fab-line-height} );
+            min-height: calc( #{$kendo-fab-font-size} * #{$kendo-fab-line-height} );
+
+            > svg {
+                width: $kendo-icon-size-md;
+                height: $kendo-icon-size-md;
+            }
+        }
+    }
+}

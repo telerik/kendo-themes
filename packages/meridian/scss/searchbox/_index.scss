@@ -1,0 +1,22 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../input/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-searchbox--styles() {
+    @include import-once( "searchbox" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
+        @include kendo-input--styles();
+        @include kendo-searchbox--layout();
+        @include kendo-searchbox--theme();
+    }
+}

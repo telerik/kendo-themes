@@ -1,0 +1,81 @@
+@use "@progress/kendo-theme-core/scss/components/input/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../input/_variables.scss" as *;
+
+
+@mixin kendo-input--theme() {
+    @include kendo-input--theme-base();
+
+    // Input
+    .k-input {
+        .k-input-button,
+        .k-spinner-increase,
+        .k-spinner-decrease {
+            background-color: k-color(surface-alt);
+        }
+
+        .k-input-button,
+        .k-input-spinner {
+            &::before {
+                background-color: k-color(border);
+                opacity: 1;
+            }
+        }
+
+        &.k-focus,
+        &:focus,
+        &:focus-within {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-input-focus-outline-color,
+                $outline-width: $kendo-input-focus-outline-width,
+                $outline-offset: $kendo-input-focus-outline-offset
+            );
+        }
+
+        &.k-invalid.k-focus,
+        &.k-invalid:focus,
+        &.k-invalid:focus-within {
+            outline-color: $kendo-input-invalid-focus-outline;
+        }
+
+        .k-clear-value {
+            color: k-color(subtle);
+        }
+    }
+
+    // Picker
+    .k-picker {
+        &.k-focus,
+        &:focus,
+        &:focus-within {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-picker-focus-outline-color,
+                $outline-width: $kendo-picker-focus-outline-width,
+                $outline-offset: $kendo-picker-focus-outline-offset
+            );
+        }
+
+        &.k-invalid.k-focus,
+        &.k-invalid:focus,
+        &.k-invalid:focus-within {
+            outline-color: $kendo-picker-invalid-focus-outline;
+        }
+    }
+
+    .k-input,
+    .k-picker {
+        .k-input-button {
+            &:hover,
+            &.k-hover {
+                background: none !important; // stylelint-disable-line declaration-no-important
+            }
+
+            &:focus,
+            &.k-focus {
+                outline: none;
+            }
+        }
+    }
+}

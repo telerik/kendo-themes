@@ -7,6 +7,7 @@
     // File Manager
     .k-filemanager {
         border-width: $kendo-file-manager-border-width;
+        border-radius: $kendo-file-manager-border-radius;
         border-style: solid;
         box-sizing: border-box;
         font-family: $kendo-file-manager-font-family;
@@ -14,6 +15,7 @@
         line-height: $kendo-file-manager-line-height;
         display: flex;
         flex-flow: column nowrap;
+        overflow: hidden;
     }
 
 
@@ -129,6 +131,7 @@
 
     // Filemanager grid
     .k-filemanager-grid {
+        border-radius: 0;
         border-width: 0;
         flex: 1 1 0%;
 

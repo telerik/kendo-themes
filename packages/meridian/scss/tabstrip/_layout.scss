@@ -1,0 +1,43 @@
+@use "sass:map";
+@use "../core/index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/tabstrip/_layout.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "./_variables.scss" as *;
+@use "../core/z-index/index.scss" as *;
+
+
+@mixin kendo-tabstrip--layout() {
+    @include kendo-tabstrip--layout-base();
+
+    .k-tabstrip {
+        .k-tabstrip-item,
+        .k-item {
+            transition: color k-transition(emphasis), border-color k-transition(emphasis), outline k-transition(emphasis), background-color k-transition(emphasis), font-weight k-transition(emphasis);
+        }
+
+        // TabStrip sizes
+        @each $size, $size-props in $kendo-tabstrip-sizes {
+            $_item-padding-x: map.get( $size-props, item-padding-x );
+
+            #{k-when-default($kendo-tabstrip-default-size, $size)}
+            &.k-tabstrip-#{$size} {
+                .k-tabstrip-items {
+                    .k-item-actions {
+                        margin-inline-end: calc( #{$_item-padding-x} / 1.5 );
+                    }
+                }
+            }
+        }
+    }
+
+    .k-tabstrip-items-wrapper {
+        .k-tabstrip-item,
+        .k-item {
+            &:focus,
+            &.k-focus {
+                z-index: k-z-index("base", 1);
+            }
+        }
+    }
+
+}

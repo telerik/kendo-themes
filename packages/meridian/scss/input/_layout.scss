@@ -1,0 +1,93 @@
+@use "sass:map";
+@use "../core/index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "../input/_variables.scss" as *;
+@use "../core/z-index/index.scss" as *;
+
+
+@mixin kendo-input--layout() {
+    @include kendo-input--layout-base();
+
+    .k-input {
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid), opacity k-transition(rapid);
+
+        .k-input-button,
+        .k-input-spinner {
+            // border-inline-start-width: 0;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                inset-inline-start: 0;
+                width: 1px;
+                z-index: k-z-index("base", 1);
+            }
+        }
+
+        .k-input-spinner {
+            .k-spinner-increase {
+                padding-block-end: 0;
+            }
+
+            .k-spinner-decrease {
+                padding-block-start: 0;
+            }
+        }
+
+        // Sizing
+        @each $size, $size-props in $kendo-input-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+            $_padding-y: map.get( $size-props, padding-y );
+
+            #{k-when-default($kendo-input-default-size, $size)}
+            &.k-input-#{$size} {
+                .k-input-icon,
+                .k-input-validation-icon,
+                .k-input-loading-icon,
+                .k-input-prefix > .k-icon,
+                .k-input-prefix > .k-icon-wrapper-host .k-icon,
+                .k-input-prefix > .k-input-prefix-text,
+                .k-input-suffix > .k-icon,
+                .k-input-suffix > .k-icon-wrapper-host .k-icon,
+                .k-input-suffix > .k-input-suffix-text {
+                    padding-block: calc( (#{$_padding-x} + #{$_padding-y}) / 2) ;
+                    padding-inline: calc( (#{$_padding-x} + #{$_padding-y}) / 2) ;
+                }
+
+                .k-clear-value {
+                    padding-block: calc( (#{$_padding-x} + #{$_padding-y}) / 2) ;
+                    padding-inline: 0 $_padding-x;
+                }
+
+                .k-input-inner + .k-input-validation-icon {
+                    padding-inline-start: 0;
+                }
+
+                .k-input-button,
+                .k-input-spinner {
+                    &::before {
+                        top: calc( #{$_padding-x} / 2 );
+                        bottom: calc( #{$_padding-x} / 2 );
+                    }
+                }
+            }
+        }
+    }
+
+    .k-input,
+    .k-picker {
+        > .k-input,
+        > .k-picker {
+            outline: 0;
+
+            &:focus,
+            &.k-focus,
+            &:focus-within {
+                outline: 0;
+            }
+        }
+    }
+}

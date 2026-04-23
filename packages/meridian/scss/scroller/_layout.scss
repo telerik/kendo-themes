@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/scroller/_layout.scss" as *;
+
+
+@mixin kendo-scroller--layout() {
+    @include kendo-scroller--layout-base();
+}

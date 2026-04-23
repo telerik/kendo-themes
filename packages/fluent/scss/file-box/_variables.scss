@@ -11,6 +11,9 @@ $kendo-file-box-padding-y: var(--kendo-file-box-padding-y, k-spacing(1) ) !defau
 /// The spacing between the elements of the File Box.
 /// @group file-box
 $kendo-file-box-gap: var(--kendo-file-box-gap, k-spacing(1) ) !default;
+/// The spacing between the elements of the File Box info section.
+/// @group file-box
+$kendo-file-box-info-gap: var(--kendo-file-box-info-gap, null ) !default;
 /// The minimum width of the File Box.
 /// @group file-box
 $kendo-file-box-min-width: var(--kendo-file-box-min-width, var(--kendo-file-box-min-width, 96px) ) !default;
@@ -49,6 +52,10 @@ $kendo-file-box-text: var(--kendo-file-box-text, k-color(base-on-subtle) ) !defa
 /// @group file-box
 $kendo-file-box-border: var(--kendo-file-box-border, $kendo-file-box-bg ) !default;
 
+/// The text color of the File Box file size.
+/// @group file-box
+$kendo-file-box-size-text: var(--kendo-file-box-size-text, null ) !default;
+
 /// The gradient used for the File Box wrapper scrolling indicator.
 /// @group file-box
 $kendo-file-box-wrapper-scroll-gradient: var(--kendo-file-box-wrapper-scroll-gradient, rgba(255, 255, 255, 0.00) 0%, #{k-color(app-surface)} 100% ) !default;
@@ -57,6 +64,7 @@ $kendo-file-box-wrapper-scroll-gradient: var(--kendo-file-box-wrapper-scroll-gra
     $kendo-file-box-padding-x: $kendo-file-box-padding-x,
     $kendo-file-box-padding-y: $kendo-file-box-padding-y,
     $kendo-file-box-gap: $kendo-file-box-gap,
+    $kendo-file-box-info-gap: $kendo-file-box-info-gap,
     $kendo-file-box-min-width: $kendo-file-box-min-width,
     $kendo-file-box-max-width: $kendo-file-box-max-width,
     $kendo-file-box-border-width: $kendo-file-box-border-width,
@@ -69,5 +77,6 @@ $kendo-file-box-wrapper-scroll-gradient: var(--kendo-file-box-wrapper-scroll-gra
     $kendo-file-box-bg: $kendo-file-box-bg,
     $kendo-file-box-text: $kendo-file-box-text,
     $kendo-file-box-border: $kendo-file-box-border,
+    $kendo-file-box-size-text: $kendo-file-box-size-text,
     $kendo-file-box-wrapper-scroll-gradient: $kendo-file-box-wrapper-scroll-gradient
 );

@@ -1,0 +1,16 @@
+@use "@progress/kendo-theme-core/scss/components/gantt/_layout.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-gantt--layout() {
+    @include kendo-gantt--layout-base();
+
+     .k-gantt{
+        .k-splitbar {
+            border-inline: 1px solid $kendo-gantt-border;
+        }
+        .k-gantt-header,
+        .k-gantt-footer {
+            border-radius: 0;
+        }
+    }
+}

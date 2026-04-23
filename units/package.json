@@ -8,6 +8,7 @@
     "test:material": "vitest run material",
     "test:classic": "vitest run classic",
     "test:fluent": "vitest run fluent",
+    "test:meridian": "vitest run meridian",
     "test": "vitest run",
     "test:watch": "vitest"
   }

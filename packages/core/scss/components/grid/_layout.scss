@@ -25,6 +25,7 @@
     .k-grid {
         border-width: $kendo-grid-border-width;
         border-style: solid;
+        border-radius: $kendo-grid-border-radius;
         box-sizing: border-box;
         outline: 0;
         font-family: $kendo-grid-font-family;
@@ -33,6 +34,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
@@ -83,6 +85,7 @@
         .k-table-tfoot {
             text-align: start;
             border-color: inherit;
+            color: inherit;
         }
 
         .k-table-row {
@@ -430,8 +433,10 @@
     // Toolbar
     .k-grid-toolbar {
         border-width: 0 0 $kendo-grid-toolbar-border-width;
+        border-radius: 0;;
         flex-shrink: 0;
     }
+
     .k-grid-toolbar-bottom {
         border-width: $kendo-grid-toolbar-border-width 0 0;
     }
@@ -786,12 +791,16 @@
 
     // Pager
     .k-grid-pager {
+        font-size: inherit;
         border-width: 1px 0 0;
         border-color: inherit;
-        font-size: inherit;
+        @include border-bottom-radius(inherit);
     }
+
     .k-grid-pager-top {
         border-width: 0 0 1px;
+        @include border-top-radius(inherit);
+        @include border-bottom-radius(0);
     }
 
     .k-grid-virtual .k-grid-content {
@@ -1494,6 +1503,7 @@
 
         .k-expander {
             border: 0;
+            border-radius: 0;
             background: inherit;
 
             .k-columnmenu-item {

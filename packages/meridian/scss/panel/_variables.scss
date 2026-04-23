@@ -1,0 +1,48 @@
+@use "../core/_index.scss" as *;
+
+/// The border radius of the Panel.
+/// @group panel
+$kendo-panel-border-radius: k-border-radius(md) !default;
+/// The width of the border around the Panel.
+/// @group panel
+$kendo-panel-border-width: 1px !default;
+/// The style of the border around the Panel.
+/// @group panel
+$kendo-panel-border-style: solid !default;
+
+/// The inline padding of the Panel header.
+/// @group panel
+$kendo-panel-header-padding-inline: k-spacing(2) !default;
+/// The block padding of the Panel header.
+/// @group panel
+$kendo-panel-header-padding-block: k-spacing(1) !default;
+
+/// The inline padding of the Panel content.
+/// @group panel
+$kendo-panel-content-padding-inline: k-spacing(2) !default;
+/// The block padding of the Panel content.
+/// @group panel
+$kendo-panel-content-padding-block: k-spacing(1) !default;
+
+/// The text color of the Panel.
+/// @group panel
+$kendo-panel-text: k-color(on-app-surface) !default;
+/// The background color of the Panel.
+/// @group panel
+$kendo-panel-bg: k-color(surface-alt) !default;
+/// The color of the border around the Panel.
+/// @group panel
+$kendo-panel-border: k-color(border) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/panel/_variables.scss" with (
+    $kendo-panel-border-radius: $kendo-panel-border-radius,
+    $kendo-panel-border-width: $kendo-panel-border-width,
+    $kendo-panel-border-style: $kendo-panel-border-style,
+    $kendo-panel-header-padding-inline: $kendo-panel-header-padding-inline,
+    $kendo-panel-header-padding-block: $kendo-panel-header-padding-block,
+    $kendo-panel-content-padding-inline: $kendo-panel-content-padding-inline,
+    $kendo-panel-content-padding-block: $kendo-panel-content-padding-block,
+    $kendo-panel-text: $kendo-panel-text,
+    $kendo-panel-bg: $kendo-panel-bg,
+    $kendo-panel-border: $kendo-panel-border
+);

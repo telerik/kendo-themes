@@ -194,6 +194,9 @@ $kendo-series-30: $kendo-series-f-darker !default;
 /// The border width of the Chart.
 /// @group charts
 $kendo-chart-border-width: 0px !default;
+/// The border radius of the Chart.
+/// @group charts
+$kendo-chart-border-radius: null !default;
 /// The font family of the Chart.
 /// @group charts
 $kendo-chart-font-family: var(--kendo-font-family) !default;
@@ -326,6 +329,9 @@ $kendo-treemap-padding-x: k-spacing(2) !default;
 /// The vertical padding of the TreeMap.
 /// @group charts
 $kendo-treemap-padding-y: k-spacing(0.5) !default;
+/// The border radius of the TreeMap.
+/// @group charts
+$kendo-treemap-border-radius: null !default;
 
 /// The text color of the TreeMap.
 /// @group charts
@@ -433,6 +439,7 @@ $kendo-gauge-track-bg: k-color(primary-subtle) !default;
     $kendo-series-29: $kendo-series-29,
     $kendo-series-30: $kendo-series-30,
     $kendo-chart-border-width: $kendo-chart-border-width,
+    $kendo-chart-border-radius: $kendo-chart-border-radius,
     $kendo-chart-font-family: $kendo-chart-font-family,
     $kendo-chart-font-size: $kendo-chart-font-size,
     $kendo-chart-line-height: $kendo-chart-line-height,
@@ -476,6 +483,7 @@ $kendo-gauge-track-bg: k-color(primary-subtle) !default;
     $kendo-chart-tooltip-padding-y: $kendo-chart-tooltip-padding-y,
     $kendo-treemap-padding-x: $kendo-treemap-padding-x,
     $kendo-treemap-padding-y: $kendo-treemap-padding-y,
+    $kendo-treemap-border-radius: $kendo-treemap-border-radius,
     $kendo-treemap-text: $kendo-treemap-text,
     $kendo-treemap-bg: $kendo-treemap-bg,
     $kendo-treemap-border: $kendo-treemap-border,

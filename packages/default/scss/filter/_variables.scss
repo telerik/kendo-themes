@@ -9,6 +9,10 @@ $kendo-filter-padding-x: k-spacing(2) !default;
 /// @group filter
 $kendo-filter-padding-y: k-spacing(1) !default;
 
+/// The border radius of the Filter.
+/// @group filter
+$kendo-filter-border-radius: null !default;
+
 /// The bottom margin of the Filter.
 /// @group filter
 $kendo-filter-bottom-margin: k-spacing(7.5) !default;
@@ -34,6 +38,7 @@ $kendo-filter-toolbar-focus-shadow: 0 0 0 2px k-color(border-alt) !default;
 @forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (
     $kendo-filter-padding-x: $kendo-filter-padding-x,
     $kendo-filter-padding-y: $kendo-filter-padding-y,
+    $kendo-filter-border-radius: $kendo-filter-border-radius,
     $kendo-filter-bottom-margin: $kendo-filter-bottom-margin,
     $kendo-filter-line-size: $kendo-filter-line-size,
     $kendo-filter-operator-dropdown-width: $kendo-filter-operator-dropdown-width,

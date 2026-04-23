@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/timeline/_layout.scss" as *;
+
+
+@mixin kendo-timeline--layout() {
+    @include kendo-timeline--layout-base();
+}

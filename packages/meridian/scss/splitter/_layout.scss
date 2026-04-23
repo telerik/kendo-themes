@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/splitter/_layout.scss" as *;
+
+
+@mixin kendo-splitter--layout() {
+    @include kendo-splitter--layout-base();
+}

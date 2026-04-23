@@ -1,0 +1,36 @@
+@use "@progress/kendo-theme-core/scss/components/calendar/_layout.scss" as *;
+@use "../core/index.scss" as *;
+@use "./variables.scss" as *;
+
+
+@mixin kendo-calendar--layout() {
+    @include kendo-calendar--layout-base();
+
+    .k-calendar {
+        .k-range-start,
+        .k-range-end {
+            border-radius: 0;
+
+            .k-link {
+                border-radius: $kendo-calendar-range-cell-border-radius;
+            }
+        }
+
+        .k-calendar-cell-inner {
+            transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
+        }
+    }
+
+    .k-calendar:not(.k-calendar-infinite) {
+        .k-calendar-view {
+            margin: 0;
+            width: auto;
+            padding-block: calc( #{$kendo-calendar-header-padding-x} / 2 ) $kendo-calendar-header-padding-x;
+        }
+    }
+
+    // Calendar in popup
+    .k-popup > .k-calendar {
+        border-radius: inherit;
+    }
+}

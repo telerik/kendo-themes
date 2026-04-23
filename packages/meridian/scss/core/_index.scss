@@ -1,0 +1,76 @@
+// Color System
+@use "./color-system/_swatch.scss" as *;
+
+// Elevation
+@use "./elevation/index.scss" as *;
+
+// Typography
+@use "./typography/index.scss" as *;
+
+// Spacing
+@use "./spacing/index.scss" as *;
+
+// Radii
+@use "./border-radii/index.scss" as *;
+
+// Motion
+@use "./motion/index.scss" as *;
+
+// Variables
+@forward "../_variables.scss";
+
+// Variables
+@forward "@progress/kendo-theme-core/scss/index.scss" with (
+    // Color System
+    $default-colors: $kendo-colors,
+    $kendo-colors: $kendo-colors !default,
+    // Elevation
+    $default-elevation: $kendo-elevation,
+    $kendo-elevation: $kendo-elevation !default,
+    // Typography
+    $default-font-sizes: $kendo-font-sizes,
+    $kendo-font-sizes: $kendo-font-sizes !default,
+    $kendo-font-size: $kendo-font-size !default,
+
+    $default-line-heights: $kendo-line-heights,
+    $kendo-line-heights: $kendo-line-heights !default,
+    $kendo-line-height: $kendo-line-height !default,
+
+    $default-font-families: $kendo-font-families,
+    $kendo-font-families: $kendo-font-families !default,
+    $kendo-font-family: $kendo-font-family !default,
+
+    $default-font-weights: $kendo-font-weights,
+    $kendo-font-weights: $kendo-font-weights !default,
+    $kendo-font-weight: $kendo-font-weight !default,
+
+    $default-letter-spacings: $kendo-letter-spacings,
+    $kendo-letter-spacings: $kendo-letter-spacings !default,
+    $kendo-letter-spacing: $kendo-letter-spacing !default,
+
+    // Border Radii
+    $kendo-border-radius-base: $kendo-border-radius-base !default,
+    $default-border-radii: $kendo-border-radii,
+    $kendo-border-radii: $kendo-border-radii !default,
+    // Spacing
+    $default-spacing: $kendo-spacing,
+    $kendo-spacing: $kendo-spacing !default,
+    // Motion
+    $default-easings: $kendo-easings,
+    $kendo-easings: $kendo-easings !default,
+
+    $default-durations: $kendo-durations,
+    $kendo-durations: $kendo-durations !default,
+
+    $default-transitions: $kendo-transitions,
+    $kendo-transitions: $kendo-transitions !default,
+);
+
+// Global disabled styles
+:root {
+    --kendo-disabled-text: unset;
+    --kendo-disabled-bg: unset;
+    --kendo-disabled-border: unset;
+    --kendo-disabled-opacity: .6;
+    --kendo-disabled-filter: grayscale(.1);
+}

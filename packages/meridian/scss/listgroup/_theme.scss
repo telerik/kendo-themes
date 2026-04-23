@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/listgroup/_theme.scss" as *;
+
+
+@mixin kendo-listgroup--theme() {
+    @include kendo-listgroup--theme-base();
+}

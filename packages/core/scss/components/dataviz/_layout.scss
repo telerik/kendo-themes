@@ -46,6 +46,8 @@
 
     .k-chart-surface {
         height: 100%;
+        border-radius: $kendo-chart-border-radius;
+        overflow: hidden;
     }
 
     .k-chart .k-popup {
@@ -296,6 +298,7 @@
         box-sizing: border-box;
         border-width: 1px;
         border-style: solid;
+        border-radius: $kendo-treemap-border-radius;
         outline: 0;
         font-family: $kendo-treemap-font-family;
         font-size: $kendo-treemap-font-size;

@@ -1,0 +1,13 @@
+@use "@progress/kendo-theme-core/scss/components/listbox/_layout.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-listbox--layout() {
+    @include kendo-listbox--layout-base();
+
+    .k-listbox {
+        .k-list-scroller {
+            @include concentric-radius($kendo-listbox-border-radius, $kendo-listbox-scroller-padding-y, "> .k-list");
+        }
+    }
+}

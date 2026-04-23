@@ -1,0 +1,17 @@
+@use "@progress/kendo-theme-core/scss/components/action-sheet/_layout.scss" as *;
+@use "../core/index.scss" as *;
+@use "../list/_variables.scss" as *;
+
+
+@mixin kendo-action-sheet--layout() {
+    @include kendo-action-sheet--layout-base();
+
+    .k-actionsheet-item {
+        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
+    }
+
+    .k-actionsheet .k-list-ul {
+        padding-inline: $kendo-list-container-padding-inline;
+        padding-block: $kendo-list-container-padding-block;
+    }
+}

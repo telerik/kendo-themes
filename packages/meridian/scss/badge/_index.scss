@@ -1,0 +1,18 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-badge--styles() {
+    @include import-once( "badge" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-badge--layout();
+        @include kendo-badge--theme();
+    }
+}

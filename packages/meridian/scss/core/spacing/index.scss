@@ -1,0 +1,48 @@
+@use "sass:map";
+
+/// The base spacing step used to generate the Spacing map.
+/// @group spacing
+$kendo-spacing-base: 0.25rem !default;
+
+$_default-spacing: (
+    0: 0px,
+    1px: 1px,
+    0.5: calc(0.5 * var(--kendo-spacing-base)),
+    1: calc(1 * var(--kendo-spacing-base)),
+    1.5: calc(1.5 * var(--kendo-spacing-base)),
+    2: calc(2 * var(--kendo-spacing-base)),
+    2.5: calc(2.5 * var(--kendo-spacing-base)),
+    3: calc(3 * var(--kendo-spacing-base)),
+    3.5: calc(3.5 * var(--kendo-spacing-base)),
+    4: calc(4 * var(--kendo-spacing-base)),
+    4.5: calc(4.5 * var(--kendo-spacing-base)),
+    5: calc(5 * var(--kendo-spacing-base)),
+    5.5: calc(5.5 * var(--kendo-spacing-base)),
+    6: calc(6 * var(--kendo-spacing-base)),
+    6.5: calc(6.5 * var(--kendo-spacing-base)),
+    7: calc(7 * var(--kendo-spacing-base)),
+    7.5: calc(7.5 * var(--kendo-spacing-base)),
+    8: calc(8 * var(--kendo-spacing-base)),
+    9: calc(9 * var(--kendo-spacing-base)),
+    10: calc(10 * var(--kendo-spacing-base)),
+    11: calc(11 * var(--kendo-spacing-base)),
+    12: calc(12 * var(--kendo-spacing-base)),
+    13: calc(13 * var(--kendo-spacing-base)),
+    14: calc(14 * var(--kendo-spacing-base)),
+    15: calc(15 * var(--kendo-spacing-base)),
+    16: calc(16 * var(--kendo-spacing-base)),
+    17: calc(17 * var(--kendo-spacing-base)),
+    18: calc(18 * var(--kendo-spacing-base)),
+    19: calc(19 * var(--kendo-spacing-base)),
+    20: calc(20 * var(--kendo-spacing-base)),
+    21: calc(21 * var(--kendo-spacing-base)),
+    22: calc(22 * var(--kendo-spacing-base)),
+    23: calc(23 * var(--kendo-spacing-base)),
+    24: calc(24 * var(--kendo-spacing-base)),
+) !default;
+
+/// The global default Spacing map.
+/// @group spacing
+$kendo-spacing: $_default-spacing !default;
+
+$kendo-spacing: map.merge($_default-spacing, $kendo-spacing);

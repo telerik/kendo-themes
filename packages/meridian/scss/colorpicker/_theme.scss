@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/colorpicker/_theme.scss" as *;
+
+
+@mixin kendo-color-picker--theme() {
+    @include kendo-color-picker--theme-base();
+}

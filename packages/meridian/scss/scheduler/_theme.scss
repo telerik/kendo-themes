@@ -1,0 +1,21 @@
+@use "../core/_index.scss" as *;
+@use "variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/scheduler/_theme.scss" as *;
+@use "./variables.scss" as *;
+
+
+@mixin kendo-scheduler--theme() {
+    @include kendo-scheduler--theme-base();
+
+    .k-scheduler-times {
+        color: $kendo-scheduler-timecolumn-text;
+    }
+
+    .k-scheduler {
+        background-color: unset;
+    }
+
+    .k-scheduler-layout {
+        background-color: $kendo-scheduler-bg;
+    }
+}

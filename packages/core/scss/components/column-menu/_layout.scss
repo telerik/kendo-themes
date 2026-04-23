@@ -65,6 +65,15 @@
         border-block-start: 1px solid;
     }
 
+    .k-columnmenu-item-wrapper {
+        padding-block: $kendo-column-menu-item-wrapper-padding-y;
+    }
+
+    .k-columnmenu-item,
+    .k-column-list-item {
+        border-radius: $kendo-column-list-item-border-radius;
+    }
+
     .k-group-menu-item {
         display: flex;
         user-select: none;

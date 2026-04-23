@@ -17,7 +17,8 @@ export default defineConfig({
                 bootstrap: resolve(import.meta.dirname, 'assets/bootstrap/index.html'),
                 material: resolve(import.meta.dirname, 'assets/material/index.html'),
                 fluent: resolve(import.meta.dirname, 'assets/fluent/index.html'),
-                classic: resolve(import.meta.dirname, 'assets/classic/index.html')
+                classic: resolve(import.meta.dirname, 'assets/classic/index.html'),
+                meridian: resolve(import.meta.dirname, 'assets/meridian/index.html')
             }
         },
         outDir: 'dist/'

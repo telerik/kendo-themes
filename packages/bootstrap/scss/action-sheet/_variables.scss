@@ -73,6 +73,9 @@ $kendo-actionsheet-titlebar-line-height: null !default;
 /// The gap of the ActionSheet titlebar.
 /// @group action-sheet
 $kendo-actionsheet-titlebar-gap: k-spacing(4) !default;
+/// The font weight of the ActionSheet titlebar.
+/// @group action-sheet
+$kendo-actionsheet-titlebar-font-weight: null !default;
 
 /// The background color of the ActionSheet titlebar.
 /// @group action-sheet
@@ -136,6 +139,9 @@ $kendo-actionsheet-item-border-width: 1px !default;
 /// The spacing between the ActionSheet items.
 /// @group action-sheet
 $kendo-actionsheet-item-spacing: k-spacing(3) !default;
+/// The border radius of the ActionSheet item.
+/// @group action-sheet
+$kendo-actionsheet-item-border-radius: null !default;
 
 /// The font weight of the ActionSheet item title.
 /// @group action-sheet
@@ -255,6 +261,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-titlebar-font-size: $kendo-actionsheet-titlebar-font-size,
     $kendo-actionsheet-titlebar-font-family: $kendo-actionsheet-titlebar-font-family,
     $kendo-actionsheet-titlebar-line-height: $kendo-actionsheet-titlebar-line-height,
+    $kendo-actionsheet-titlebar-font-weight: $kendo-actionsheet-titlebar-font-weight,
     $kendo-actionsheet-titlebar-gap: $kendo-actionsheet-titlebar-gap,
     $kendo-actionsheet-titlebar-bg: $kendo-actionsheet-titlebar-bg,
     $kendo-actionsheet-titlebar-text: $kendo-actionsheet-titlebar-text,
@@ -275,6 +282,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-item-padding-y: $kendo-actionsheet-item-padding-y,
     $kendo-actionsheet-item-border-width: $kendo-actionsheet-item-border-width,
     $kendo-actionsheet-item-spacing: $kendo-actionsheet-item-spacing,
+    $kendo-actionsheet-item-border-radius: $kendo-actionsheet-item-border-radius,
     $kendo-actionsheet-item-title-font-weight: $kendo-actionsheet-item-title-font-weight,
     $kendo-actionsheet-item-title-text-transform: $kendo-actionsheet-item-title-text-transform,
     $kendo-actionsheet-item-description-font-size: $kendo-actionsheet-item-description-font-size,

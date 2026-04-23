@@ -54,6 +54,7 @@ jobs:
             packages/classic/dist/all.css \
             packages/fluent/dist/all.css \
             packages/material/dist/all.css \
+            packages/meridian/dist/all.css \
             packages/utils/dist/all.css
 
       - name: Upload themes

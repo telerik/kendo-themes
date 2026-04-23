@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/stacklayout/_theme.scss" as *;
+
+
+@mixin kendo-stack-layout--theme() {
+    @include kendo-stack-layout--theme-base();
+}

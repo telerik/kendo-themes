@@ -1,0 +1,20 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/listview/_theme.scss" as *;
+
+
+@mixin kendo-listview--theme() {
+    @include kendo-listview--theme-base();
+
+    .k-listview-content {
+        > .k-focus {
+            @include focus-indicator(
+                $inset: true,
+                $type: "outline",
+                $indicator: $kendo-listview-item-focus-outline-color,
+                $outline-width: $kendo-listview-item-focus-outline-width,
+                $outline-offset: $kendo-listview-item-focus-outline-offset
+            );
+        }
+    }
+}

@@ -3,6 +3,7 @@
 @forward "./mixins/index.scss";
 @forward "./spacing/index.scss";
 @forward "./elevation/index.scss";
+@forward "./translucency/index.scss";
 @forward "./typography/index.scss";
 @forward "./border-radii/index.scss";
 @forward "./motion/index.scss";
@@ -12,6 +13,7 @@
 @use "./color-system/index.scss" as *;
 @use "./mixins/index.scss" as *;
 @use "./elevation/index.scss" as *;
+@use "./translucency/index.scss" as *;
 @use "./typography/index.scss" as *;
 @use "./spacing/index.scss" as *;
 @use "./motion/index.scss" as *;

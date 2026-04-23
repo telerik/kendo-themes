@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/virtual-scroller/_layout.scss" as *;
+
+
+@mixin kendo-virtual-scroller--layout() {
+    @include kendo-virtual-scroller--layout-base();
+}

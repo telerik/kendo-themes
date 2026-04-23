@@ -1,0 +1,14 @@
+@use "@progress/kendo-theme-core/scss/components/button/_layout.scss" as *;
+@use "../core/z-index/index.scss" as *;
+
+@mixin kendo-button--layout() {
+    @include kendo-button--layout-base();
+
+    // Button group
+    .k-button-group {
+        > .k-button:focus,
+        > .k-button.k-focus {
+            z-index: k-z-index("base", 3);
+        }
+    }
+}

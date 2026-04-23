@@ -1,0 +1,34 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../adaptive/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../datetimepicker/_index.scss" as *;
+@use "../dropdownlist/_index.scss" as *;
+@use "../dialog/_index.scss" as *;
+@use "../tooltip/_index.scss" as *;
+@use "../time-marker/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-scheduler--styles() {
+    @include import-once( "scheduler" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-adaptive--styles();
+        @include kendo-button--styles();
+        @include kendo-date-time-picker--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-dialog--styles();
+        @include kendo-tooltip--styles();
+        @include kendo-time-marker--styles();
+        @include kendo-scheduler--layout();
+        @include kendo-scheduler--theme();
+        @include kendo-utils--typography--text-overflow();
+    }
+}

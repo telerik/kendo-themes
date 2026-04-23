@@ -1,0 +1,45 @@
+@use "sass:map";
+@use "@progress/kendo-theme-core/scss/components/combobox/_layout.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "../input/_variables.scss" as *;
+
+@mixin kendo-combobox--layout() {
+    @include kendo-combobox--layout-base();
+
+    .k-combobox {
+        .k-input-button {
+            border-inline-start-width: 0;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                inset-inline-start: 0;
+                width: 1px;
+                background-color: currentColor;
+                opacity: 1;
+            }
+
+            &:focus,
+            &.k-focus {
+                outline: none;
+            }
+        }
+
+        // Sizing
+        @each $size, $size-props in $kendo-input-sizes {
+            $_padding-x: map.get( $size-props, padding-x );
+
+            #{k-when-default($kendo-input-default-size, $size)}
+            &.k-input-#{$size} {
+                .k-input-button {
+                    &::before {
+                        top: calc( #{$_padding-x} / 2 );
+                        bottom: calc( #{$_padding-x} / 2 );
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,22 @@
 # Kendo UI Default Theme
 
+> **🛠️ Maintenance mode**
+>
+> **@progress/kendo-theme-default** is in maintenance mode.
+>
+> The theme remains fully supported and will continue to receive:
+>
+> * Bug fixes and regression patches
+> * Styles for newly released Kendo UI components
+> * Compatibility updates (dependency, tooling, and browser support)
+>
+> The following are out of scope for this package:
+>
+> * Large-scale visual redesigns or design-language overhauls
+> * Introduction of new design concepts, structural changes, or modernized aesthetics
+>
+> All forward-looking design work is happening in **@progress/kendo-theme-meridian**, the new recommended starting point for Kendo and Telerik products. Existing applications can continue on kendo-theme-default and migrate to Meridian on their own schedule.
+
 The Kendo UI Default Theme is a SCSS-based theme for the Kendo UI components.
 
 * [Quick start](#quick-start)

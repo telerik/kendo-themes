@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/appbar/_layout.scss" as *;
+
+
+@mixin kendo-appbar--layout() {
+    @include kendo-appbar--layout-base();
+}

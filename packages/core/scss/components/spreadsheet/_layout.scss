@@ -18,6 +18,7 @@
         height: 600px;
         border-width: $kendo-spreadsheet-border-width;
         border-style: solid;
+        border-radius: $kendo-spreadsheet-border-radius;
         box-sizing: border-box;
         outline: 0;
         font-family: $kendo-spreadsheet-font-family;
@@ -40,6 +41,11 @@
             inset-block-start: 100%;
             transform: translateY( -100% );
         }
+    }
+
+    // Header
+    .k-spreadsheet-header {
+        @include border-top-radius(inherit);
     }
 
     // Toolbar
@@ -168,6 +174,7 @@
         border-width: $kendo-spreadsheet-sheets-bar-border-width 0 0;
         border-style: solid;
         border-color: inherit;
+        @include border-bottom-radius(inherit);
         display: flex;
         flex-direction: row;
         align-items: center;

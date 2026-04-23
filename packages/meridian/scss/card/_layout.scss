@@ -1,0 +1,73 @@
+@use "@progress/kendo-theme-core/scss/components/card/_layout.scss" as *;
+@use "./variables.scss" as *;
+
+
+@mixin kendo-card--layout() {
+    @include kendo-card--layout-base();
+
+    .k-card-vertical {
+        .k-card-header {
+            &:has(~ .k-card-body) {
+                padding-block-end: calc( #{$kendo-card-header-padding-y} / 2);
+            }
+
+            ~ .k-card-body {
+                padding-block-start: calc( #{$kendo-card-body-padding-y} / 2);
+            }
+        }
+
+        .k-card-body {
+            &:has(~ .k-card-actions, ~ .k-card-footer) {
+                padding-block-end: calc( #{$kendo-card-header-padding-y} / 2);
+            }
+
+            ~ .k-card-actions,
+            ~ .k-card-footer {
+                padding-block-start: calc( #{$kendo-card-actions-padding-y} / 2);
+            }
+        }
+    }
+
+    .k-card-horizontal {
+        .k-card-header {
+            &:has(~ .k-card-body) {
+                padding-inline-end: calc( #{$kendo-card-header-padding-x} / 2);
+            }
+
+            ~ .k-card-body {
+                padding-inline-end: calc( #{$kendo-card-body-padding-x} / 2);
+            }
+        }
+
+        .k-card-body {
+            &:has(~ .k-card-actions, ~ .k-card-footer) {
+                padding-inline-end: calc( #{$kendo-card-header-padding-x} / 2);
+            }
+
+            ~ .k-card-actions,
+            ~ .k-card-footer {
+                padding-inline-start: calc( #{$kendo-card-actions-padding-x} / 2);
+            }
+        }
+    }
+
+    .k-card-callout {
+        backdrop-filter: blur(calc(6px + calc(2 * 2px)));
+
+        &.k-callout-n {
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+
+        &.k-callout-e {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+
+        &.k-callout-s {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+
+        &.k-callout-w {
+            clip-path: polygon(0 0, 0 100%, 100% 100%);
+        }
+    }
+}

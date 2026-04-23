@@ -1,0 +1,11 @@
+@use "@progress/kendo-theme-core/scss/components/daterangepicker/_theme.scss" as *;
+
+
+@mixin kendo-date-range-picker--theme() {
+    @include kendo-date-range-picker--theme-base();
+
+    .k-daterangepicker-popup .k-calendar-header {
+        background-color: unset;
+        backdrop-filter: none;
+    }
+}

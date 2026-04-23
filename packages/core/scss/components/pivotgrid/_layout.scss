@@ -12,6 +12,7 @@
         padding-inline: $kendo-pivotgrid-padding-x;
         border-width: $kendo-pivotgrid-border-width;
         border-style: solid;
+        border-radius: $kendo-pivotgrid-border-radius;
         box-sizing: content-box;
         font-size: $kendo-pivotgrid-font-size;
         font-family: $kendo-pivotgrid-font-family;
@@ -22,6 +23,7 @@
         grid-template-columns: $kendo-pivotgrid-row-header-width auto;
         grid-template-rows: $kendo-pivotgrid-column-header-height auto;
         position: relative;
+        overflow: hidden;
 
         table {
             margin: 0;
@@ -170,6 +172,7 @@
     // Pivotgrid configurator
     .k-pivotgrid-configurator {
         display: flex;
+        border-radius: $kendo-pivotgrid-border-radius;
     }
 
     .k-pivotgrid-configurator-panel {
@@ -182,6 +185,7 @@
         flex-direction: column;
         overflow: hidden;
         z-index: k-z-index("base", 2);
+        border-radius: inherit;
     }
 
     // Configurator Button
@@ -190,6 +194,7 @@
         padding-inline: $kendo-pivotgrid-configurator-button-padding-x;
         border-width: $kendo-pivotgrid-configurator-button-border-width;
         border-style: solid;
+        border-radius: $kendo-pivotgrid-border-radius;
         box-sizing: border-box;
         cursor: pointer;
         user-select: none;
@@ -228,6 +233,7 @@
         padding-inline: $kendo-pivotgrid-configurator-content-padding-x;
         flex: 1 1 auto;
         overflow: auto;
+        border-radius: inherit;
 
         .k-form {
             .k-label {
@@ -470,9 +476,11 @@
     // Legacy pivotgrid
     // TODO: remove
     .k-pivot {
+        border-radius: $kendo-pivotgrid-border-radius;
         border-width: $kendo-pivotgrid-border-width;
         border-style: solid;
         position: relative;
+        overflow: hidden;
 
         .k-grid td {
             white-space: nowrap;

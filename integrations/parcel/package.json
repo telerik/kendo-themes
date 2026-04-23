@@ -16,6 +16,9 @@
     },
     "fluent": {
       "source": "styles/fluent.scss"
+    },
+    "meridian": {
+      "source": "styles/meridian.scss"
     }
   },
   "scripts": {
