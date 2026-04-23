@@ -19,6 +19,7 @@ import { DrawerContent } from "../../drawer/drawer-content.spec";
 import { DrawerItem } from "../../drawer/drawer-item.spec";
 import { DrawerItemSeparator } from "../../drawer/drawer-item-separator";
 import { GridWithFilterRow } from "../../grid/templates/grid-with-filter-row";
+import { DropdownListPopup } from "../../dropdownlist/templates/dropdownlist-popup";
 import { MultiSelectNormal } from "../../multiselect/templates/multiselect-normal";
 import { PanelBarContent } from "../../panelbar/panelbar-content";
 import { PanelBarItem } from "../../panelbar/panelbar-item";
@@ -172,6 +173,15 @@ const style = `
         width: 100%;
     }
 
+    .preview-label {
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #888;
+        margin-bottom: 4px;
+    }
+
     .k-chat {
         height: 500px;
     }
@@ -199,6 +209,7 @@ export default () => (
                         {/* --- Inputs --- */}
                         <div className="k-d-grid k-grid-cols-4 k-gap-10">
                             <div>
+                                <div className="preview-label">Textbox</div>
                                 <TextboxNormal value="Prefix & Suffix"
                                     prefix={
                                         <>
@@ -213,12 +224,15 @@ export default () => (
                                 />
                             </div>
                             <div>
+                                <div className="preview-label">NumericTextbox</div>
                                 <NumericTextboxNormal />
                             </div>
                             <div>
+                                <div className="preview-label">Combobox</div>
                                 <ComboboxNormal placeholder="Combobox..." />
                             </div>
                             <div>
+                                <div className="preview-label">Searchbox</div>
                                 <SearchboxNormal />
                             </div>
                         </div>
@@ -226,17 +240,21 @@ export default () => (
                         <div className="k-d-grid k-grid-cols-4 k-gap-10">
                             <div className="k-d-grid k-grid-rows k-gap-5">
                                 <div>
+                                    <div className="preview-label">DatePicker</div>
                                     <DatePickerNormal placeholder="placeholder..." />
                                 </div>
                                 <div>
+                                    <div className="preview-label">OTP</div>
                                     <OneTimePasswordNormal />
                                 </div>
                                 <div>
+                                    <div className="preview-label">ColorPicker</div>
                                     <ColorPicker />
                                 </div>
                             </div>
                             <div className="k-d-grid k-grid-rows k-gap-5">
                                 <div>
+                                    <div className="preview-label">MultiSelect</div>
                                     <MultiSelectNormal
                                         tags={(
                                             <>
@@ -247,32 +265,39 @@ export default () => (
                                     />
                                 </div>
                                 <div>
+                                    <div className="preview-label">MaskedTextbox</div>
                                     <MaskedTextboxNormal placeholder="MaskedTextbox..." />
                                 </div>
                                 <div>
+                                    <div className="preview-label">Textarea</div>
                                     <TextareaNormal placeholder="Textarea..." />
                                 </div>
                             </div>
                             <div className="k-d-grid k-grid-rows k-gap-5">
                                 <div>
+                                    <div className="preview-label">SmartBox</div>
                                     <SmartBoxNormal />
                                 </div>
                                 <div>
+                                    <div className="preview-label">PromptBox</div>
                                     <PromptBoxLineModeMulti />
                                 </div>
                             </div>
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div className="k-d-grid k-grid-cols-2 k-gap-10">
                                     <div className="k-d-grid k-grid-rows k-px-2">
+                                        <div className="preview-label">Checkbox</div>
                                         <div><CheckboxWithLabelAfter>Checkbox</CheckboxWithLabelAfter></div>
                                         <div><CheckboxWithLabelAfter checked id="cb-label-after-checked">Checked</CheckboxWithLabelAfter></div>
                                     </div>
                                     <div className="k-d-grid k-grid-rows k-px-2">
+                                        <div className="preview-label">RadioButton</div>
                                         <div><RadioButtonWithLabelAfter>Radio</RadioButtonWithLabelAfter></div>
                                         <div><RadioButtonWithLabelAfter checked id="radio-checked">Checked</RadioButtonWithLabelAfter></div>
                                     </div>
                                 </div>
                                 <div>
+                                    <div className="preview-label">Rating</div>
                                     <RatingNormal value={3.5} />
                                 </div>
                             </div>
@@ -280,55 +305,76 @@ export default () => (
 
                         {/* Buttons */}
                         <div className="k-d-grid k-grid-cols-4 k-gap-10">
-                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
-                                <div><TextButton>Solid</TextButton></div>
-                                <div><TextButton fillMode="outline">Outline</TextButton></div>
-                                <div><TextButton fillMode="flat">Flat</TextButton></div>
+                            <div className="k-d-grid k-grid-rows">
+                                <div className="preview-label">Button Base</div>
+                                <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                    <div><TextButton>Solid</TextButton></div>
+                                    <div><TextButton fillMode="outline">Outline</TextButton></div>
+                                    <div><TextButton fillMode="flat">Flat</TextButton></div>
+                                </div>
                             </div>
-                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
-                                <div><TextButton themeColor="primary">Primary</TextButton></div>
-                                <div><TextButton themeColor="primary" fillMode="outline">Primary</TextButton></div>
-                                <div><TextButton themeColor="primary" fillMode="flat">Primary</TextButton></div>
+                            <div className="k-d-grid k-grid-rows">
+                                <div className="preview-label">Button Primary</div>
+                                <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                    <div><TextButton themeColor="primary">Primary</TextButton></div>
+                                    <div><TextButton themeColor="primary" fillMode="outline">Primary</TextButton></div>
+                                    <div><TextButton themeColor="primary" fillMode="flat">Primary</TextButton></div>
+                                </div>
                             </div>
-                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
-                                <div><TextButton themeColor="secondary">Secondary</TextButton></div>
-                                <div><TextButton themeColor="secondary" fillMode="outline">Secondary</TextButton></div>
-                                <div><TextButton themeColor="secondary" fillMode="flat">Secondary</TextButton></div>
+                            <div className="k-d-grid k-grid-rows">
+                                <div className="preview-label">Button Secondary</div>
+                                <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                    <div><TextButton themeColor="secondary">Secondary</TextButton></div>
+                                    <div><TextButton themeColor="secondary" fillMode="outline">Secondary</TextButton></div>
+                                    <div><TextButton themeColor="secondary" fillMode="flat">Secondary</TextButton></div>
+                                </div>
                             </div>
-                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
-                                <div><TextButton themeColor="tertiary">Tertiary</TextButton></div>
-                                <div><TextButton themeColor="tertiary" fillMode="outline">Tertiary</TextButton></div>
-                                <div><TextButton themeColor="tertiary" fillMode="flat">Tertiary</TextButton></div>
+                            <div className="k-d-grid k-grid-rows">
+                                <div className="preview-label">Button Tertiary</div>
+                                <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                    <div><TextButton themeColor="tertiary">Tertiary</TextButton></div>
+                                    <div><TextButton themeColor="tertiary" fillMode="outline">Tertiary</TextButton></div>
+                                    <div><TextButton themeColor="tertiary" fillMode="flat">Tertiary</TextButton></div>
+                                </div>
                             </div>
                             <div className="k-d-grid k-grid-cols-2 k-gap-10">
                                 <div>
+                                    <div className="preview-label">SplitButton</div>
                                     <TextSplitButton>Split Button</TextSplitButton>
                                 </div>
                                 <div>
+                                    <div className="preview-label">MenuButton</div>
                                     <TextMenuButton>Menu Button</TextMenuButton>
                                 </div>
                             </div>
                             <div>
+                                <div className="preview-label">SegmentedControl</div>
                                 <SegmentedControlNormal thumbStyles={{ width: "50%" }} />
                             </div>
                             <div>
+                                <div className="preview-label">ButtonGroup</div>
                                 <ButtonGroup>
                                     <Button className="k-group-start">Button 1</Button>
                                     <Button>Button 2</Button>
                                     <Button className="k-group-end">Button 3</Button>
                                 </ButtonGroup>
                             </div>
-                            <div className="k-d-grid k-grid-cols-3 k-gap-10">
-                                <div><TextFloatingActionButton themeColor="primary" /></div>
-                                <div><IconFloatingActionButton themeColor="primary" /></div>
-                                <div><IconTextFloatingActionButton themeColor="primary" /></div>
+                            <div className="k-d-grid k-grid-rows">
+                                <div className="preview-label">FloatingActionButton</div>
+                                <div className="k-d-grid k-grid-cols-3 k-gap-10">
+                                    <div><TextFloatingActionButton themeColor="primary" /></div>
+                                    <div><IconFloatingActionButton themeColor="primary" /></div>
+                                    <div><IconTextFloatingActionButton themeColor="primary" /></div>
+                                </div>
                             </div>
                             <div className="k-d-grid k-grid-cols-3 k-gap-2">
+                                <div className="preview-label" style={{ gridColumn: "1 / -1" }}>Switch</div>
                                 <div><SwitchNormal /></div>
                                 <div><SwitchChecked /></div>
                                 <div><SwitchNormal disabled /></div>
                             </div>
                             <div className="k-d-grid k-grid-cols-4 k-gap-2">
+                                <div className="preview-label" style={{ gridColumn: "1 / -1" }}>Avatar</div>
                                 <AvatarIcon fillMode="outline" themeColor="primary" border>
                                     <Icon icon="x" />
                                 </AvatarIcon>
@@ -341,15 +387,18 @@ export default () => (
                                 </AvatarImage>
                             </div>
                             <div className="k-d-grid k-grid-cols-3 k-gap-2">
+                                <div className="preview-label" style={{ gridColumn: "1 / -1" }}>Badge</div>
                                 <div><BadgeNormal themeColor="primary">Rectangle</BadgeNormal></div>
                                 <div><BadgeNormal themeColor="primary" rounded="medium">Rounded</BadgeNormal></div>
                                 <div><BadgeNormal themeColor="primary" rounded="full">Pill</BadgeNormal></div>
                             </div>
                             <div>
+                                <div className="preview-label">Loader</div>
                                 <LoaderNormal />
                             </div>
                         </div>
                         <div>
+                            <div className="preview-label">Toolbar</div>
                             <ToolbarResizable>
                                 <Button icon="bold"></Button>
                                 <Button>Button</Button>
@@ -374,6 +423,7 @@ export default () => (
                         <div className="k-d-grid k-grid-cols-2 k-gap-10">
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div>
+                                    <div className="preview-label">TabStrip</div>
                                     <TabStripClosable>
                                         <TabStripContent active>
                                             <div className="k-tabstrip-wrapper">
@@ -396,9 +446,11 @@ export default () => (
 
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div>
+                                    <div className="preview-label">Breadcrumb</div>
                                     <BreadcrumbCollapsingNone />
                                 </div>
                                 <div>
+                                    <div className="preview-label">BottomNav</div>
                                     <BottomNavNormal themeColor="primary" border>
                                         <BottomNavItem icon="envelope" text="Normal" />
                                         <BottomNavItem icon="envelope" text="Focused" focus />
@@ -410,14 +462,16 @@ export default () => (
                         </div>
                         <div className="k-d-grid k-grid-cols-3 k-gap-10">
                             <div className="k-d-grid k-grid-rows k-gap-10">
-                                <div><ProgressBarNormal value="50" labelPosition="center" /></div>
-                                <div><ChunkProgressBarNormal progress={2} /></div>
+                                <div><div className="preview-label">ProgressBar</div><ProgressBarNormal value="50" labelPosition="center" /></div>
+                                <div><div className="preview-label">Chunk ProgressBar</div><ChunkProgressBarNormal progress={2} /></div>
                             </div>
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div>
+                                    <div className="preview-label">Slider</div>
                                     <SliderNormal />
                                 </div>
                                 <div>
+                                    <div className="preview-label">Stepper</div>
                                     <StepperNormal>
                                         <StepList style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
                                             <Step first done valid text="1" label="Account Info with too long label" style={{ maxWidth: "33.333%" }}/>
@@ -431,11 +485,13 @@ export default () => (
 
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div>
+                                    <div className="preview-label">Notification</div>
                                     <AnimationContainer>
                                         <IconNotificationClosable themeColor="primary" text="Closable notification with icon" />
                                     </AnimationContainer>
                                 </div>
                                 <div>
+                                    <div className="preview-label">Tooltip</div>
                                     <AnimationContainer>
                                         <TooltipClosable callout="top" />
                                     </AnimationContainer>
@@ -446,6 +502,7 @@ export default () => (
 
                         <div className="k-d-grid k-grid-cols-3 k-gap-10">
                             <div>
+                                <div className="preview-label">Chat</div>
                                 <ChatNormal suggestedActions={
                                     <SuggestionGroup layout="scrollable">
                                         <Suggestion text="Suggestion 1" />
@@ -458,12 +515,14 @@ export default () => (
                             </div>
 
                             <div>
+                                <div className="preview-label">Prompt</div>
                                 <Popup className="k-prompt-popup">
                                     <PromptSuggestions />
                                 </Popup>
                             </div>
-                            <div className="k-d-grid k-grid-rows k-gap-10">
+                            <div className="k-d-grid k-grid-rows k-gap-5">
                                 <div>
+                                    <div className="preview-label">Window</div>
                                     <WindowNormal title="Window"
                                         actionButtons={
                                             <>
@@ -475,6 +534,7 @@ export default () => (
                                     >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</WindowNormal>
                                 </div>
                                 <div>
+                                    <div className="preview-label">Card</div>
                                     <CardNormal />
                                 </div>
                             </div>
@@ -482,6 +542,7 @@ export default () => (
 
                         <div className="k-d-grid k-grid-cols-3 k-gap-10 grid-with-calendar">
                             <div>
+                                <div className="preview-label">Calendar</div>
                                 <Calendar className="k-calendar-range" calendarView="month" showWeek>
                                     <CalendarTable showWeek showTableHead>
                                         <CalendarTableRow>
@@ -549,10 +610,12 @@ export default () => (
                             </div>
 
                             <div>
+                                <div className="preview-label">Calendar Infinite</div>
                                 <CalendarInfiniteNormal />
                             </div>
 
                             <div>
+                                <div className="preview-label">TimePicker / TimeSelector</div>
                                 <TimePickerNormal />
                                 <TimeSelectorAll className="k-pos-static" />
                             </div>
@@ -560,9 +623,11 @@ export default () => (
 
                         <div className="k-d-grid k-grid-cols-4 k-gap-10">
                             <div className="k-col-span-3">
+                                <div className="preview-label">Grid</div>
                                 <GridWithFilterRow></GridWithFilterRow>
                             </div>
                             <div>
+                                <div className="preview-label">ColumnMenu</div>
                                 <Popup>
                                     <ColumnMenu>
                                         <ColumnMenuItemWrapper>
@@ -597,12 +662,19 @@ export default () => (
 
                         <div className="k-d-grid k-grid-cols-4 k-gap-10">
                             <div>
+                                <div className="preview-label">ColorEditor</div>
                                 <ColorEditorNormal />
                             </div>
                             <div>
+                                <div className="preview-label">ColorEditor Palette</div>
                                 <ColorEditorPaletteGroup />
                             </div>
                             <div>
+                                <div className="preview-label">DropdownList</div>
+                                <DropdownListPopup />
+                            </div>
+                            <div>
+                                <div className="preview-label">Menu</div>
                                 <Menu
                                     children={
                                         <>
@@ -628,6 +700,7 @@ export default () => (
                                 } />
                             </div>
                             <div>
+                                <div className="preview-label">ListView</div>
                                 <ListViewNormal
                                     header
                                     footer>
@@ -638,6 +711,7 @@ export default () => (
                                 </ListViewNormal>
                             </div>
                             <div>
+                                <div className="preview-label">PanelBar</div>
                                 <PanelBarNormal>
                                     <PanelBarItem header icon="gear" text="Root">
                                         <PanelBarContent>content</PanelBarContent>
@@ -669,6 +743,7 @@ export default () => (
                                 </PanelBarNormal>
                             </div>
                             <div>
+                                <div className="preview-label">ExpansionPanel</div>
                                 <ExpansionPanelNormal title="Collapsed panel" subtitle="Normal" />
                                 <ExpansionPanelNormal title="Collapsed panel" hover subtitle="Hover" />
                                 <ExpansionPanelNormal title="Collapsed panel" focus subtitle="Focus" />
@@ -677,6 +752,7 @@ export default () => (
                             </div>
 
                             <div>
+                                <div className="preview-label">Treeview</div>
                                 <TreeviewNormal>
                                     <TreeviewItem text="Normal" />
                                     <TreeviewItem text="Hover" hover />
@@ -693,6 +769,7 @@ export default () => (
                             </div>
 
                             <div>
+                                <div className="preview-label">ListBox</div>
                                 <ListBoxNormal />
                             </div>
 
@@ -702,29 +779,35 @@ export default () => (
                         <div className="k-d-grid k-grid-cols-2 k-gap-10">
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div>
+                                    <div className="preview-label">Upload</div>
                                     <UploadNormal />
                                 </div>
                                 <div>
+                                    <div className="preview-label">Dropzone</div>
                                     <DropzoneNormal />
                                 </div>
                                 <div>
+                                    <div className="preview-label">Editor</div>
                                     <EditorNormal>
                                         <p className="ProseMirror">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia obcaecati dignissimos beatae ipsam voluptatem pariatur consectetur culpa asperiores veniam?</p>
                                     </EditorNormal>
                                 </div>
                             </div>
                             <div>
+                                <div className="preview-label">ChartWizard</div>
                                 <ChartWizardNormal />
                             </div>
 
                         </div>
 
                         <div>
+                             <div className="preview-label">FileManager</div>
                              <FileManagerNormal />
                         </div>
 
                         <div className="k-d-grid k-grid-cols-2 k-gap-10">
                             <div>
+                                <div className="preview-label">Spreadsheet</div>
                                 <SpreadsheetNormal>
                                     <SpreadsheetHeader
                                         menuItems={[
@@ -759,6 +842,7 @@ export default () => (
 
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div>
+                                    <div className="preview-label">Scheduler</div>
                                     <SchedulerWeek />
                                 </div>
                             </div>
@@ -766,13 +850,16 @@ export default () => (
 
                         <div className="k-d-grid k-grid-cols-2 k-gap-10">
                             <div>
+                                <div className="preview-label">Timeline</div>
                                 <TimelineNormalAlternating />
                             </div>
                             <div className="k-d-grid k-grid-rows k-gap-10">
                                 <div>
+                                    <div className="preview-label">Filter</div>
                                     <FilterNormal />
                                 </div>
                                 <div>
+                                    <div className="preview-label">PivotGrid</div>
                                     <PivotGrid
                                         style={{ height: "550px", gridTemplateColumns: "150px auto", gridTemplateRows: "242px auto" }}
                                         columnHeaders={
@@ -1011,10 +1098,12 @@ export default () => (
 
                         <div className="k-d-grid k-grid-cols-2 k-gap-10">
                             <div>
+                                <div className="preview-label">Chart</div>
                                 <ChartDemo />
                             </div>
                             <div className="k-d-grid k-grid-cols-2 k-gap-10">
                                 <div>
+                                    <div className="preview-label">Arc Gauge</div>
                                     <div className="k-gauge k-arcgauge">
                                         <div className="k-arcgauge-label" style={{top: "125.125px", left: "85px"}}>20</div>
                                         <div style={{width: "200px", height: "200px"}}>
@@ -1029,6 +1118,7 @@ export default () => (
                                     </div>
                                 </div>
                                 <div>
+                                    <div className="preview-label">Circular Gauge</div>
                                     <div className="k-gauge k-circulargauge">
                                         <div className="k-circulargauge-label" style={{top: "90px", left: "85px"}}>20</div>
                                         <div style={{width: "200px", height: "200px"}}>
