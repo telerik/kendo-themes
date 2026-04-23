@@ -206,7 +206,7 @@ $kendo-tabstrip-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color
 $kendo-tabstrip-item-focus-outline-width: 1px !default;
 /// The outline offset of the focused TabStrip item.
 /// @group tabstrip
-$kendo-tabstrip-item-focus-outline-offset: 1px !default;
+$kendo-tabstrip-item-focus-outline-offset: 3px !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/tabstrip/_variables.scss" with (
