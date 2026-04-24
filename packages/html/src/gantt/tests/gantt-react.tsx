@@ -1,5 +1,4 @@
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
+import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
 import { Icon } from '../../icon';
 import { Gantt, GanttHeaderToolbar, GanttContent, GanttColumnsTable, GanttTaskDot, GanttTask } from '../../gantt';
 import { TreeList } from '../../treelist';
@@ -22,11 +21,11 @@ export default () =>(
                     <span className="k-spacer"></span>
                     <span className="k-gantt-views">
                         <div className="k-gantt-views-wrapper">
-                            <ButtonGroup className="k-gantt-views">
-                                <Button className="k-group-start">Day</Button>
-                                <Button selected>Week</Button>
-                                <Button className="k-group-end">Month</Button>
-                            </ButtonGroup>
+                            <SegmentedControl thumbStyles={{ width: "33%", left: "30%" }} className="k-gantt-views">
+                                <SegmentedControlButton>Day</SegmentedControlButton>
+                                <SegmentedControlButton selected>Week</SegmentedControlButton>
+                                <SegmentedControlButton>Month</SegmentedControlButton>
+                            </SegmentedControl>
                             <select className="k-picker k-dropdown-list k-dropdown k-views-dropdown">
                                 <option value="day">Day</option>
                                 <option value="week">Week</option>
