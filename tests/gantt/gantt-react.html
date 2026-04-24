@@ -22,15 +22,16 @@
                 <span class="k-spacer"></span>
                 <span class="k-gantt-views">
                     <div class="k-gantt-views-wrapper">
-                        <div role="group" class="k-gantt-views k-button-group">
-                            <button class="k-group-start k-button">
-                                <span class="k-button-text">Day</span>
+                        <div class="k-gantt-views k-segmented-control" role="group">
+                            <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 33%; left: 30%;"></div>
+                            <button class="k-segmented-control-button" aria-pressed="false">
+                                <span class="k-segmented-control-button-text">Day</span>
                             </button>
-                            <button class="k-button k-selected">
-                                <span class="k-button-text">Week</span>
+                            <button class="k-segmented-control-button k-selected" aria-pressed="true">
+                                <span class="k-segmented-control-button-text">Week</span>
                             </button>
-                            <button class="k-group-end k-button">
-                                <span class="k-button-text">Month</span>
+                            <button class="k-segmented-control-button" aria-pressed="false">
+                                <span class="k-segmented-control-button-text">Month</span>
                             </button>
                         </div>
                         <select class="k-picker k-dropdown-list k-dropdown k-views-dropdown">
