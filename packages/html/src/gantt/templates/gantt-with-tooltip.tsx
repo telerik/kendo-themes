@@ -2,7 +2,7 @@ import { Gantt, GanttColumnsTable, GanttContent, GanttHeaderToolbar, GanttRowsTa
 import { GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, Grid } from "../../grid";
 import { TableThead, TableRow, TableTbody, TableTd } from "../../table";
 import { Splitter, SplitterPane } from "../../splitter";
-import { ButtonGroup } from "../../button-group";
+import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { TreeList } from "../../treelist";
 import { Button } from "../../button";
 import { Icon } from "../../icon";
@@ -22,11 +22,11 @@ export const GanttWithTooltip = ({ flexBasis = "30%", gridContentHeight = "180px
                         <option value="week">Week</option>
                         <option value="month">Month</option>
                     </select>
-                    <ButtonGroup className="k-gantt-views">
-                        <Button className="k-view-day k-group-start">Day</Button>
-                        <Button className="k-view-week" selected>Week</Button>
-                        <Button className="k-view-month k-group-end">Month</Button>
-                    </ButtonGroup>
+                    <SegmentedControl thumbStyles={{ width: "33%", left: "30%" }} className="k-gantt-views">
+                        <SegmentedControlButton>Day</SegmentedControlButton>
+                        <SegmentedControlButton selected>Week</SegmentedControlButton>
+                        <SegmentedControlButton>Month</SegmentedControlButton>
+                    </SegmentedControl>
                 </div>
             </GanttHeaderToolbar>
         )}
