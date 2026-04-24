@@ -68,6 +68,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chart-wizard-icon-area-border-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-border-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
@@ -85,6 +105,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-selected-border-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-wizard-icon-area-selected-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected area around the chart type icon.</div></div>
     </td>
 </tr>
 <tr>

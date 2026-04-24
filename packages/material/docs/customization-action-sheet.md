@@ -248,6 +248,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-actionsheet-titlebar-font-weight</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the ActionSheet titlebar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-actionsheet-titlebar-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -435,6 +445,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ActionSheet items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-item-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ActionSheet item.</div></div>
     </td>
 </tr>
 <tr>

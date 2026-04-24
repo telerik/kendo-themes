@@ -248,6 +248,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-actionsheet-header-font-weight</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the action sheet header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-actionsheet-header-bg</td>
     <td>String</td>
     <td><code>var( --kendo-actionsheet-header-bg, inherit )</code></td>
@@ -415,6 +425,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the icon and the text in the action sheet item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-item-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the action sheet item.</div></div>
     </td>
 </tr>
 <tr>

@@ -38,6 +38,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-media-player-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-media-player-font-family</td>
     <td>String</td>
     <td><code>var(--kendo-font-family)</code></td>
@@ -115,6 +125,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-font-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-font-weight</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-line-height</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer title.</div></div>
     </td>
 </tr>
 <tr>

@@ -638,6 +638,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chart-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chart.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chart-font-family</td>
     <td>String</td>
     <td><code>var(--kendo-font-family)</code></td>
@@ -1025,6 +1035,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TreeMap.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treemap-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TreeMap.</div></div>
     </td>
 </tr>
 <tr>

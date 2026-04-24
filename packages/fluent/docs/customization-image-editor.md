@@ -108,6 +108,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-image-editor-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-border-radius, null )</code></td>
+    <td><code>var(--kendo-image-editor-border-radius, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ImageEditor.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-image-editor-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-font-size, var(--kendo-font-size) )</code></td>

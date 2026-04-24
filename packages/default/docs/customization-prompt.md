@@ -227,6 +227,36 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The elevation of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-prompt-footer-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-footer-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-footer-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt footer.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
