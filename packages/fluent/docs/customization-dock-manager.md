@@ -58,6 +58,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-dock-manager-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-dock-manager-border-radius, null )</code></td>
+    <td><code>var(--kendo-dock-manager-border-radius, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the DockManager.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dock-manager-pane-header-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-dock-manager-pane-header-padding-y, k-spacing(4) )</code></td>

@@ -517,6 +517,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the Timeline event.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-timeline-card-shadow</td>
+    <td>Null</td>
+    <td><code>$kendo-card-shadow</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline card.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

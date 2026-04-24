@@ -98,6 +98,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-column-menu-item-wrapper-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColumnMenu item wrapper.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-column-menu-sm-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-column-menu-sm-font-size, var(--kendo-font-size) )</code></td>
@@ -205,6 +215,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColumnMenu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-list-item-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColumnMenu list item.</div></div>
     </td>
 </tr>
 <tr>

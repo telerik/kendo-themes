@@ -1,0 +1,148 @@
+---
+title: Customizing Popup
+description: "Refer to the list of the Kendo UI Meridian theme variables available for customization."
+slug: variables_kendothememeridian_popup
+position: 9
+---
+
+# Customizing Popup
+
+## Variables
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-popup-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-content-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the popup content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-content-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the popup content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-bg</td>
+    <td>String</td>
+    <td><code>k-translucency-bg(k-elevation-bg(2, k-color(surface-alt)))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-text</td>
+    <td>String</td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-border</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-shadow</td>
+    <td>String</td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-spacing-y</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical spacing between the popup and the element it is anchored to.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+
