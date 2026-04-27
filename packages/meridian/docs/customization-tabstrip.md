@@ -628,6 +628,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-tabstrip-scroll-button-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing around the TabStrip scroll buttons (prev/next).</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tabstrip-item-focus-outline-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
