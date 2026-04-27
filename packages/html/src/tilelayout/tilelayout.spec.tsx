@@ -64,7 +64,7 @@ TileLayout.folderName = TILELAYOUT_FOLDER_NAME;
  * @accessibility
  * - Container has role=list
  * - Items have role=listitem with tabindex=0
- * - Items have aria-keyshortcuts and aria-grabbed for drag-and-drop
+ * - Items have aria-keyshortcuts for drag-and-drop
  * - Item header title has id linked via aria-labelledby
  *
  * @wcag 4.1.2 Name, Role, Value - list pattern for tile items
@@ -77,8 +77,6 @@ TileLayout.ariaSpec = {
         { selector: '.k-tilelayout-item', attribute: 'aria-labelledby', usage: 'Associates the focusable item wrapper with the respective header text element.' },
         { selector: '.k-tilelayout-item', attribute: 'tabindex=0', usage: 'Makes the item wrapper element focusable.' },
         { selector: '.k-tilelayout-item', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces Enter as an available key shortcut when the item is focused.' },
-        { selector: '.k-tilelayout-item', attribute: 'aria-dropeffect=execute', usage: 'Announces that an action will be executed when the item is dropped.' },
-        { selector: '.k-tilelayout-item', attribute: 'aria-grabbed=true/false', usage: 'Indicates the grabbed state in a drag-and-drop operation.' },
         { selector: '.k-tilelayout-item-header .k-card-title', attribute: 'id', usage: 'Unique identifier to link the header text element to the focusable wrapper.' },
     ]
 };
