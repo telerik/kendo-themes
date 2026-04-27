@@ -194,6 +194,9 @@ $kendo-spreadsheet-sheets-bar-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Spreadsheet sheets bar.
 /// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-padding-y: k-spacing(2) !default;
+/// The gap between items in the Spreadsheet sheets bar.
+/// @group spreadsheet
+$kendo-spreadsheet-sheets-bar-gap: k-spacing(2) !default;
 /// The border width of the Spreadsheet sheets bar.
 /// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-border-width: 1px !default;
@@ -343,6 +346,7 @@ $kendo-spreadsheet-filter-menu-icon-margin: 0 k-spacing(1) 0 calc(-1 * ( #{$kend
     $kendo-spreadsheet-cell-dirty-border: $kendo-spreadsheet-cell-dirty-border,
     $kendo-spreadsheet-sheets-bar-padding-x: $kendo-spreadsheet-sheets-bar-padding-x,
     $kendo-spreadsheet-sheets-bar-padding-y: $kendo-spreadsheet-sheets-bar-padding-y,
+    $kendo-spreadsheet-sheets-bar-gap: $kendo-spreadsheet-sheets-bar-gap,
     $kendo-spreadsheet-sheets-bar-border-width: $kendo-spreadsheet-sheets-bar-border-width,
     $kendo-spreadsheet-insert-image-dialog-border-style: $kendo-spreadsheet-insert-image-dialog-border-style,
     $kendo-spreadsheet-insert-image-dialog-border-width: $kendo-spreadsheet-insert-image-dialog-border-width,

@@ -171,6 +171,7 @@
     .k-spreadsheet-sheets-bar {
         padding-block-end: $kendo-spreadsheet-sheets-bar-padding-y;
         padding-inline: $kendo-spreadsheet-sheets-bar-padding-x;
+        gap: $kendo-spreadsheet-sheets-bar-gap;
         border-width: $kendo-spreadsheet-sheets-bar-border-width 0 0;
         border-style: solid;
         border-color: inherit;
