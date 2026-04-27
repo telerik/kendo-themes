@@ -31365,6 +31365,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-spreadsheet-sheets-bar-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between items in the Spreadsheet sheets bar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-spreadsheet-sheets-bar-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -34575,6 +34585,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the TabStrip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tabstrip-scroll-button-spacing</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing around the TabStrip scroll buttons (prev/next).</div></div>
     </td>
 </tr>
 <tr>

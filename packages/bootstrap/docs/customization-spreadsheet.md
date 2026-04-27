@@ -598,6 +598,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-spreadsheet-sheets-bar-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between items in the Spreadsheet sheets bar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-spreadsheet-sheets-bar-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
