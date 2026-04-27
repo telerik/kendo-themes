@@ -119,7 +119,7 @@ $kendo-gantt-task-progress-hover-bg: var(--kendo-gantt-task-progress-hover-bg, #
 $kendo-gantt-task-selected-bg: var(--kendo-gantt-task-selected-bg, #{k-color(primary-subtle-active)}) !default;
 /// The text color of the selected Gantt task.
 /// @group gantt
-$kendo-gantt-task-selected-text: var(--kendo-gantt-task-selected-text, #{k-color(app-surface)}) !default;
+$kendo-gantt-task-selected-text: var(--kendo-gantt-task-selected-text, #{k-color(on-primary)}) !default;
 /// The border color of the selected Gantt task.
 /// @group gantt
 $kendo-gantt-task-selected-border: var(--kendo-gantt-task-selected-border, transparent) !default;

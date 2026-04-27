@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-scrollbar-color</td>
     <td>String</td>
-    <td><code>k-color(dark-emphasis)</code></td>
-    <td><code>var(--kendo-color-dark-emphasis)</code></td>
+    <td><code>k-color(inverse-emphasis)</code></td>
+    <td><code>var(--kendo-color-inverse-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Drawer scrollbar track.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td>String</td>
     <td><code>$kendo-drawer-scrollbar-color</code></td>
-    <td><code>var(--kendo-color-dark-emphasis)</code></td>
+    <td><code>var(--kendo-color-inverse-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar track.</div></div>

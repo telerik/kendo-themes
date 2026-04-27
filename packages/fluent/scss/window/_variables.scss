@@ -6,11 +6,6 @@
 /// @role default
 $kendo-window-default-size: "auto" !default;
 
-/// The default theme color of the Window.
-/// @group window
-/// @role default
-$kendo-window-default-theme-color: null !default;
-
 /// The width of the border around the Window.
 /// @group window
 $kendo-window-border-width: var(--kendo-window-border-width, 0) !default;
@@ -107,7 +102,6 @@ $kendo-window-titlebar-text: var( --kendo-window-titlebar-text, k-color(on-app-s
 $kendo-window-titlebar-border: var( --kendo-window-titlebar-border, k-color(primary) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (
-    $kendo-window-default-theme-color: $kendo-window-default-theme-color,
     $kendo-window-border-width: $kendo-window-border-width,
     $kendo-window-border-radius: $kendo-window-border-radius,
     $kendo-window-font-family: $kendo-window-font-family,

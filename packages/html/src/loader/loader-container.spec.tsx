@@ -1,4 +1,5 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
+import Overlay from '../overlay/overlay.spec';
 import Loader from './loader.spec';
 
 import { KendoComponent } from '../_types/component';
@@ -14,14 +15,7 @@ const options = {
         ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,
-        ThemeColor.tertiary,
-        ThemeColor.success,
-        ThemeColor.warning,
-        ThemeColor.error,
-        ThemeColor.info,
-        ThemeColor.light,
-        ThemeColor.dark,
-        ThemeColor.inverse
+        ThemeColor.tertiary
     ],
 };
 
@@ -33,14 +27,12 @@ export type KendoLoaderContainerOptions = {
 export type KendoLoaderContainerProps = KendoLoaderContainerOptions & {
     loaderType?: 'pulsing' | 'infinite-spinner' | 'converging-spinner';
     position?: 'top' | 'end' | 'start';
-    overlay?: 'dark' | 'light';
     panel?: boolean;
 };
 
 const defaultOptions = {
     loaderType: 'pulsing',
     position: 'top',
-    overlay: 'dark',
     panel: false
 } as const;
 
@@ -68,7 +60,6 @@ export const LoaderContainer: KendoComponent<KendoLoaderContainerProps & React.H
         themeColor,
         loaderType = defaultOptions.loaderType,
         position = defaultOptions.position,
-        overlay = defaultOptions.overlay,
         panel = defaultOptions.panel,
         ...other
     } = props;
@@ -90,7 +81,7 @@ export const LoaderContainer: KendoComponent<KendoLoaderContainerProps & React.H
             aria-live="polite"
             aria-label={other['aria-label'] || 'Loading'}
         >
-            <div className={`k-loader-container-overlay k-overlay-${overlay}`}></div>
+            <Overlay className='k-loader-container-overlay' />
             <div className={classNames(
                 'k-loader-container-inner',
                 {

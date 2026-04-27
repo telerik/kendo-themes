@@ -291,7 +291,7 @@
                     @if $name == "base" {
                         color: k-color(on-app-surface);
                     } @else {
-                        color: k-color(#{$name});
+                        color: k-color(#{$name}-on-surface);
                     }
 
                     // Hover
@@ -303,7 +303,7 @@
                         @if $name == "base" {
                             color: k-color(on-app-surface);
                         } @else {
-                            color: k-color(#{$name}-hover);
+                            color: k-color(#{$name}-on-surface);
                         }
                     }
 
@@ -328,7 +328,7 @@
                         @if $name == "base" {
                             color: k-color(on-app-surface);
                         } @else {
-                            color: k-color(#{$name}-active);
+                            color: k-color(#{$name}-on-surface);
                         }
                     }
 
@@ -340,7 +340,7 @@
                         @if $name == "base" {
                             color: k-color(on-app-surface);
                         } @else {
-                            color: k-color(#{$name}-active);
+                            color: k-color(#{$name}-on-surface);
                         }
                     }
 

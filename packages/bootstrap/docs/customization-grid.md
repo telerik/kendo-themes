@@ -698,16 +698,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-alt-text</td>
-    <td>Null</td>
-    <td><code>$kendo-table-alt-row-text</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid alternating rows.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-table-hover-bg</code></td>
@@ -850,8 +840,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-grouping-row-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid row.</div></div>
@@ -1025,16 +1015,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the sticky footer in the Grid.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sticky-footer-hover-bg</td>
-    <td>String</td>
-    <td><code>$kendo-grid-sticky-footer-bg</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered sticky footer in the Grid.</div></div>
     </td>
 </tr>
 <tr>

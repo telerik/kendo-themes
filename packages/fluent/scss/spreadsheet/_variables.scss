@@ -242,7 +242,7 @@ $kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow: var( --kendo-spre
 $kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius: var( --kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius, var( --kendo-border-radius-md, initial ) ) !default;
 /// The text color of the hovered Spreadsheet image Dialog preview.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-overlay-hover-text: var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, k-color(app-surface) ) !default;
+$kendo-spreadsheet-insert-image-dialog-overlay-hover-text: var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, #{k-color(on-app-surface)} ) !default;
 
 /// The width of the Spreadsheet drawing handle.
 /// @group spreadsheet

@@ -7,15 +7,4 @@
 
     @include kendo-table--theme-base();
 
-    .k-table .k-table-tbody {
-        td:focus,
-        td.k-focus,
-        th:focus,
-        th.k-focus {
-            &::after {
-                background-color: $kendo-table-hover-bg;
-            }
-        }
-    }
-
 }

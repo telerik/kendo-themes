@@ -162,7 +162,7 @@ $kendo-treeview-loadmore-border: var( --kendo-treeview-loadmore-border, inherit 
 $kendo-treeview-loadmore-hover-bg: var( --kendo-treeview-loadmore-hover-bg, transparent ) !default;
 /// The text color of the hovered Load More button in the TreeView.
 /// @group treeview
-$kendo-treeview-loadmore-hover-text: var( --kendo-treeview-loadmore-hover-text, k-color(primary-hover) ) !default;
+$kendo-treeview-loadmore-hover-text: var( --kendo-treeview-loadmore-hover-text, k-color(primary-on-surface) ) !default;
 /// The border color of the hovered Load More button in the TreeView.
 /// @group treeview
 $kendo-treeview-loadmore-hover-border: var( --kendo-treeview-loadmore-hover-border, inherit ) !default;
@@ -172,7 +172,7 @@ $kendo-treeview-loadmore-hover-border: var( --kendo-treeview-loadmore-hover-bord
 $kendo-treeview-loadmore-focus-bg: var( --kendo-treeview-loadmore-focus-bg, transparent ) !default;
 /// The text color of the focused Load More button in the TreeView.
 /// @group treeview
-$kendo-treeview-loadmore-focus-text: var( --kendo-treeview-loadmore-focus-text, k-color(primary-hover) ) !default;
+$kendo-treeview-loadmore-focus-text: var( --kendo-treeview-loadmore-focus-text, k-color(primary-on-surface) ) !default;
 /// The border color of the focused Load More button in the TreeView.
 /// @group treeview
 $kendo-treeview-loadmore-focus-border: var( --kendo-treeview-loadmore-focus-border, inherit ) !default;

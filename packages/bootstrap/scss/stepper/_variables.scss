@@ -183,7 +183,7 @@ $kendo-stepper-label-text: null !default;
 $kendo-stepper-label-success-text: k-color(success) !default;
 /// The error text color of the Stepper label.
 /// @group stepper
-$kendo-stepper-label-error-text: k-color(error) !default;
+$kendo-stepper-label-error-text: k-color(error-on-surface) !default;
 /// The text color of the hovered Stepper label.
 /// @group stepper
 $kendo-stepper-label-hover-text: unset !default;

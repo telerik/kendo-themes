@@ -1,10 +1,10 @@
 import { ImageEditor } from "..";
 import { Button } from "../../button";
-import { ButtonGroup } from "../../button-group";
 import { CheckboxWithLabelAfter } from "../../checkbox";
 import { DropdownList } from "../../dropdownlist";
 import { FormNormal, Fieldset, FormField } from "../../form";
 import { NumericTextbox } from "../../numerictextbox";
+import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { ToolbarSeparator, ToolbarItem } from "../../toolbar";
 
 export const ImageEditorCrop = (props: any) => (
@@ -41,10 +41,10 @@ export const ImageEditorCrop = (props: any) => (
                         colSpan="2"
                         label="Orientation:"
                         editor={
-                            <ButtonGroup>
-                                <Button className="k-group-start" selected>Portrait</Button>
-                                <Button className="k-group-end">Landscape</Button>
-                            </ButtonGroup>
+                            <SegmentedControl thumbStyles={{ width: "50%" }} stretched>
+                                <SegmentedControlButton selected>Portrait</SegmentedControlButton>
+                                <SegmentedControlButton>Landscape</SegmentedControlButton>
+                            </SegmentedControl>
                         }
                     />
                     <FormField

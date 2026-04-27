@@ -17,12 +17,7 @@ export default () => (
     <style>{styles}</style>
     <div id="test-area" className="k-d-grid">
 
-      {Overlay.options.themeColor.map((themeColor) => (
-        <>
-          <span>{`${themeColor}`}</span>
-          <Overlay themeColor={themeColor} />
-        </>
-      ))}
+      <Overlay />
     </div>
   </>
 );

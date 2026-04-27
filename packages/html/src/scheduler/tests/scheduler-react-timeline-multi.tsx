@@ -1,6 +1,7 @@
 
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
+import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
 import { SchedulerBody, SchedulerCell, SchedulerEvent, SchedulerFlexTimeline, SchedulerGroup, SchedulerHead, SchedulerRow, SchedulerStickyCell, SchedulerToolbar } from '../';
 
 
@@ -27,13 +28,13 @@ export default () =>(
                                 Wednesday, June 24, 2020 - Thursday, June 25, 2020
                             </Button>
                             <span className="k-spacer"></span>
-                            <ButtonGroup className="k-scheduler-views">
-                                <Button className="k-group-start">Day</Button>
-                                <Button>Week</Button>
-                                <Button>Month</Button>
-                                <Button selected>Timeline</Button>
-                                <Button className="k-group-end">Agenda</Button>
-                            </ButtonGroup>
+                            <SegmentedControl thumbStyles={{ width: "23%", left: "54%" }} className="k-scheduler-views">
+                                <SegmentedControlButton>Day</SegmentedControlButton>
+                                <SegmentedControlButton>Week</SegmentedControlButton>
+                                <SegmentedControlButton>Month</SegmentedControlButton>
+                                <SegmentedControlButton selected>Timeline</SegmentedControlButton>
+                                <SegmentedControlButton>Agenda</SegmentedControlButton>
+                            </SegmentedControl>
                         </SchedulerToolbar>
                     </>
                 }

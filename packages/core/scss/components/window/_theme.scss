@@ -14,18 +14,6 @@
             $kendo-window-border
         );
         @include box-shadow( $kendo-window-shadow );
-
-        // Window theme colors
-        @each $name in $kendo-window-theme-colors {
-
-            #{k-when-default($kendo-window-default-theme-color, $name)}
-            &.k-window-#{$name} {
-                .k-window-titlebar {
-                    color: k-color(on-#{$name});
-                    background-color: k-color(#{$name});
-                }
-            }
-        }
     }
 
     .k-window:focus,

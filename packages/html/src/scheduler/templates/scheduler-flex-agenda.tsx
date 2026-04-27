@@ -1,5 +1,6 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
+import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
 import { Scheduler, SchedulerHead, SchedulerBody, SchedulerRow, SchedulerToolbar, SchedulerCell, SchedulerGroup, SchedulerTask } from '../index';
 
 export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
@@ -18,13 +19,13 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
                     6/24/2024 - 6/25/2024
                 </Button>
                 <span className="k-spacer"></span>
-                <ButtonGroup className="k-scheduler-views">
-                    <Button className="k-group-start">Day</Button>
-                    <Button>Week</Button>
-                    <Button>Month</Button>
-                    <Button>Timeline</Button>
-                    <Button className="k-group-end" selected>Agenda</Button>
-                </ButtonGroup>
+                <SegmentedControl thumbStyles={{ width: "22%", right: "2px" }}  className="k-scheduler-views">
+                    <SegmentedControlButton>Day</SegmentedControlButton>
+                    <SegmentedControlButton>Week</SegmentedControlButton>
+                    <SegmentedControlButton>Month</SegmentedControlButton>
+                    <SegmentedControlButton>Timeline</SegmentedControlButton>
+                    <SegmentedControlButton selected>Agenda</SegmentedControlButton>
+                </SegmentedControl>
             </SchedulerToolbar>
         }
         children={

@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-light-bg</td>
     <td>Color</td>
-    <td><code>rgba(255, 255, 255, .4)</code></td>
+    <td><code>rgba( white, .4 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.4)"></span><code>rgba(255, 255, 255, 0.4)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-dark-bg</td>
     <td>Color</td>
-    <td><code>rgba(0, 0, 0, .4)</code></td>
+    <td><code>rgba( black, .4 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.4)"></span><code>rgba(0, 0, 0, 0.4)</code></td>
 </tr>
 <tr>

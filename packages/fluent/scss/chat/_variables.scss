@@ -136,7 +136,7 @@ $kendo-chat-border: var( --kendo-chat-border, #{color-mix(in srgb, k-color(borde
 $kendo-chat-alt-bubble-bg: var( --kendo-chat-alt-bubble-bg, #{k-color(primary)} ) !default;
 /// The text color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-text: var( --kendo-chat-alt-bubble-text, #{k-color(surface-alt)} ) !default;
+$kendo-chat-alt-bubble-text: var( --kendo-chat-alt-bubble-text, #{k-color(on-primary)} ) !default;
 /// The border color of the Chat alt bubble.
 /// @group chat
 $kendo-chat-alt-bubble-border: var( --kendo-chat-alt-bubble-border, $kendo-chat-alt-bubble-bg ) !default;

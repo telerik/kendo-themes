@@ -62,7 +62,7 @@ $kendo-radio-hover-border: var( --kendo-radio-hover-border, #{$kendo-radio-borde
 $kendo-radio-checked-bg: var( --kendo-radio-checked-bg, #{$kendo-radio-bg} ) !default;
 /// The color of the checked RadioButton.
 /// @group radio
-$kendo-radio-checked-text: var( --kendo-radio-checked-text, #{k-color(primary)} ) !default;
+$kendo-radio-checked-text: var( --kendo-radio-checked-text, #{k-color(primary-on-surface)} ) !default;
 /// The border color of the checked RadioButton.
 /// @group radio
 $kendo-radio-checked-border: var( --kendo-radio-checked-border, #{k-color(primary)} ) !default;
@@ -72,7 +72,7 @@ $kendo-radio-checked-border: var( --kendo-radio-checked-border, #{k-color(primar
 $kendo-radio-hover-checked-bg: var( --kendo-radio-hover-checked-bg, #{$kendo-radio-bg} ) !default;
 /// The color of the checked and hovered RadioButton.
 /// @group radio
-$kendo-radio-hover-checked-text: var( --kendo-radio-hover-checked-text, #{k-color(primary-hover)} ) !default;
+$kendo-radio-hover-checked-text: var( --kendo-radio-hover-checked-text, #{k-color(primary-on-surface)} ) !default;
 /// The border color of the checked and hovered RadioButton.
 /// @group radio
 $kendo-radio-hover-checked-border: var( --kendo-radio-hover-checked-border, #{k-color(primary-hover)} ) !default;

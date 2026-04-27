@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-suggestion-theme-colors</td>
     <td></td>
-    <td><code>("base", "primary", "secondary")</code></td>
+    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
     <td></td>
 </tr>
 <tr>

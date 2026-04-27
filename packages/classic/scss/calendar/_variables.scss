@@ -249,7 +249,7 @@ $kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
 
 /// The text color of the hovered items in the Calendar navigation.
 /// @group calendar
-$kendo-calendar-navigation-hover-text: k-color(primary-hover) !default;
+$kendo-calendar-navigation-hover-text: k-color(primary-on-surface) !default;
 /// The text color of the marker in the Calendar navigation.
 /// @group calendar
 $kendo-calendar-navigation-marker-text: currentColor !default;

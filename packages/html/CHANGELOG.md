@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.2...v13.2.0-dev.3) (2026-04-20)
+
+
+### Bug Fixes
+
+* **grid:** unpin icons have wrong color ([a94db3e](https://github.com/telerik/kendo-themes/commit/a94db3e238387347bf0f88c3e801395d2d8d58d6))
+
+
+### Features
+
+* **html:** use segmented control component in other components ([1f1062f](https://github.com/telerik/kendo-themes/commit/1f1062f20d60500074e49388c576cafd5bb4770b))
+
+
+
+
+
 # [13.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.1...v13.2.0-dev.2) (2026-04-15)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

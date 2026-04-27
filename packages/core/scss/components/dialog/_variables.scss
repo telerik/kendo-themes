@@ -1,7 +1,5 @@
 // Dialog
 
-$kendo-dialog-default-theme-color: null !default;
-
 $kendo-dialog-titlebar-bg: null !default;
 $kendo-dialog-titlebar-text: null !default;
 $kendo-dialog-titlebar-border: null !default;
@@ -12,7 +10,3 @@ $kendo-dialog-buttongroup-border-width: null !default;
 $kendo-dialog-button-spacing: null !default;
 
 $kendo-dialog-bg: null !default;
-
-/// The theme colors map of the Dialog.
-/// @group dialog
-$kendo-dialog-theme-colors: ("primary", "light", "dark") !default;

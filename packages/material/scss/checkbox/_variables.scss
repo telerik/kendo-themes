@@ -139,7 +139,7 @@ $kendo-checkbox-disabled-checked-border: $kendo-checkbox-disabled-checked-bg !de
 
 /// The text color of an invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-text: k-color(error) !default;
+$kendo-checkbox-invalid-text: k-color(error-on-surface) !default;
 /// The border color of an invalid CheckBox.
 /// @group checkbox
 $kendo-checkbox-invalid-border: k-color(error) !default;

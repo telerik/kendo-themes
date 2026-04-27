@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-group-menu-item-add-action-text</td>
     <td>String</td>
-    <td><code>var( --kendo-group-menu-item-add-action-text, k-color(primary) )</code></td>
-    <td><code>var(--kendo-group-menu-item-add-action-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-group-menu-item-add-action-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-group-menu-item-add-action-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColumnMenu item.</div></div>

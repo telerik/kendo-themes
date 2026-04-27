@@ -1,6 +1,7 @@
 import { Button } from '../button';
 import { ButtonGroup } from '../button-group';
 import { classNames } from '../misc';
+import { SegmentedControl, SegmentedControlButton } from '../segmented-control';
 import { Toolbar, KendoToolbarProps } from '../toolbar';
 
 import { KendoComponent } from '../_types/component';
@@ -39,13 +40,13 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
                         Monday, June 13, 2022
                     </Button>,
                     <span key="spacer" className="k-spacer"></span>,
-                    <ButtonGroup key="views" className="k-scheduler-views">
-                        <Button className="k-group-start" selected>Day</Button>
-                        <Button>Week</Button>
-                        <Button>Month</Button>
-                        <Button>Timeline</Button>
-                        <Button className="k-group-end">Agenda</Button>
-                    </ButtonGroup>
+                    <SegmentedControl key="views" thumbStyles={{ width: "15%", left: "2px" }} className="k-scheduler-views">
+                        <SegmentedControlButton selected>Day</SegmentedControlButton>
+                        <SegmentedControlButton>Week</SegmentedControlButton>
+                        <SegmentedControlButton>Month</SegmentedControlButton>
+                        <SegmentedControlButton>Timeline</SegmentedControlButton>
+                        <SegmentedControlButton>Agenda</SegmentedControlButton>
+                    </SegmentedControl>
                 ]
             }
         </Toolbar>

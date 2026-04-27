@@ -327,7 +327,7 @@ export default () => (
                 </colgroup>
                 <TableTbody>
                   <TableRow className="k-master-row">
-                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /></span></TableTd>
                     <TableTd>Shelden Greyes</TableTd>
                     <TableTd>Operator</TableTd>
                     <TableTd>UK</TableTd>
@@ -353,7 +353,7 @@ export default () => (
                     <TableTd>USA</TableTd>
                   </TableRow>
                   <TableRow className="k-master-row k-pinned-source" alt>
-                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /></span></TableTd>
                     <TableTd>Shelden Greyes</TableTd>
                     <TableTd>Operator</TableTd>
                     <TableTd>UK</TableTd>
@@ -410,7 +410,7 @@ export default () => (
                     <TableTd>USA</TableTd>
                   </TableRow>
                   <TableRow className="k-master-row k-pinned-source" alt>
-                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /></span></TableTd>
                     <TableTd>Shelden Greyes</TableTd>
                     <TableTd>Operator</TableTd>
                     <TableTd>UK</TableTd>
@@ -437,7 +437,7 @@ export default () => (
                 </colgroup>
                 <TableTbody>
                   <TableRow className="k-master-row">
-                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /></span></TableTd>
                     <TableTd>Shelden Greyes</TableTd>
                     <TableTd>Operator</TableTd>
                     <TableTd>UK</TableTd>
@@ -544,7 +544,7 @@ export default () => (
                 </colgroup>
                 <TableTbody>
                   <TableRow className="k-master-row">
-                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /><Icon icon="pin-outline-bottom" /></span></TableTd>
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /><Icon icon="pin-outline-bottom" /></span></TableTd>
                     <TableTd>Shelden Greyes</TableTd>
                     <TableTd>Operator</TableTd>
                     <TableTd>UK</TableTd>
@@ -570,7 +570,7 @@ export default () => (
                     <TableTd>USA</TableTd>
                   </TableRow>
                   <TableRow className="k-master-row k-pinned-source" alt>
-                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" /><Icon icon="pin-outline-bottom" /></span></TableTd>
+                    <TableTd><span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /><Icon icon="pin-outline-bottom" /></span></TableTd>
                     <TableTd>Shelden Greyes</TableTd>
                     <TableTd>Operator</TableTd>
                     <TableTd>UK</TableTd>
@@ -627,7 +627,7 @@ export default () => (
                     <TableTd>USA</TableTd>
                   </TableRow>
                   <TableRow className="k-master-row k-pinned-source" alt>
-                    <TableTd><span className="k-pin-cell"><Icon icon="pin-outline-top" /><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd><span className="k-pin-cell"><Icon icon="pin-outline-top" /><Icon icon="unpin-outline" className="k-action-icon" /></span></TableTd>
                     <TableTd>Shelden Greyes</TableTd>
                     <TableTd>Operator</TableTd>
                     <TableTd>UK</TableTd>
@@ -654,7 +654,7 @@ export default () => (
                 </colgroup>
                 <TableTbody>
                   <TableRow className="k-master-row">
-                    <TableTd><span className="k-pin-cell"><Icon icon="pin-outline-top" /><Icon icon="unpin-outline" /></span></TableTd>
+                    <TableTd><span className="k-pin-cell"><Icon icon="pin-outline-top" /><Icon icon="unpin-outline" className="k-action-icon" /></span></TableTd>
                     <TableTd>Shelden Greyes</TableTd>
                     <TableTd>Operator</TableTd>
                     <TableTd>UK</TableTd>

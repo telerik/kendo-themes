@@ -72,7 +72,7 @@ export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivE
                     {props.children}
                 </div>
                 {scrollToBottom && <div className="k-chat-scroll-to-bottom-container">
-                        <IconFloatingActionButton themeColor="light" icon="arrow-down-outline" size="small" />
+                        <IconFloatingActionButton themeColor="base" icon="arrow-down-outline" size="small" />
                     </div>}
             </div>
             {scrollbar && <div className="k-separator"></div>}

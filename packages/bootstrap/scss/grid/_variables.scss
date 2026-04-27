@@ -233,9 +233,6 @@ $kendo-grid-footer-border: $kendo-table-footer-border !default;
 /// The background color of the Grid alternating rows.
 /// @group grid
 $kendo-grid-alt-bg: $kendo-table-alt-row-bg !default;
-/// The text color of the Grid alternating rows.
-/// @group grid
-$kendo-grid-alt-text: $kendo-table-alt-row-text !default;
 
 /// The background color of hovered Grid rows.
 /// @group grid
@@ -286,7 +283,7 @@ $kendo-grid-selection-aggregates-font-weight: var(--kendo-font-weight-bold) !def
 
 /// The background color of the Grid row.
 /// @group grid
-$kendo-grid-grouping-row-bg: k-color(base-subtle) !default;
+$kendo-grid-grouping-row-bg: k-color(surface) !default;
 /// The text color of the Grid row.
 /// @group grid
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
@@ -347,9 +344,6 @@ $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 /// The background color of the sticky footer in the Grid.
 /// @group grid
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
-/// The background color of the hovered sticky footer in the Grid.
-/// @group grid
-$kendo-grid-sticky-footer-hover-bg: $kendo-grid-sticky-footer-bg !default;
 
 /// The box shadow of the sticky container in the Grid.
 /// @group grid

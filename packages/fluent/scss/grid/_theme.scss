@@ -19,22 +19,16 @@
         );
     }
 
-    .k-group-footer td,
-    .k-grouping-row td,
     .k-group-footer .k-table-td,
     .k-grouping-row .k-table-td,
     .k-table-tbody .k-group-cell {
-        @include fill(
-            $border: $kendo-grid-grouping-row-border
-        );
+        border-color: $kendo-grid-grouping-row-border;
     }
 
     .k-grouping-dropclue {
         &::before,
         &::after {
-            @include fill(
-                $bg: $kendo-grid-group-drop-hint-bg
-            );
+            background-color: $kendo-grid-group-drop-hint-bg;
         }
     }
 
@@ -46,14 +40,10 @@
         // Hover state
         .k-table-tbody > .k-table-row:not(.k-detail-row):hover,
         .k-table-tbody > .k-table-row:not(.k-detail-row).k-hover {
-            @include fill(
-                $border: $kendo-grid-hover-border
-            );
+            border-color: $kendo-grid-hover-border;
         }
 
         // Selected state
-        td.k-selected,
-        .k-table-row.k-selected > td,
         .k-table-td.k-selected,
         .k-table-row.k-selected > .k-table-td {
             border-block-color: $kendo-grid-selected-border;
@@ -62,12 +52,7 @@
         // Locked columns
         .k-grid-header-locked,
         .k-grid-content-locked,
-        .k-grid-footer-locked,
-        .k-grid-header-locked .k-table-th,
-        .k-grid-content-locked td,
-        .k-grid-content-locked .k-table-td,
-        .k-grid-footer-locked td,
-        .k-grid-footer-locked .k-table-td {
+        .k-grid-footer-locked {
             border-inline-color: $kendo-grid-sticky-header-border;
             border-block-color: $kendo-grid-border;
         }
@@ -80,7 +65,6 @@
             }
         }
 
-
         .k-table-row.k-selected > .k-table-td.k-grid-content-sticky {
             border-inline-color: $kendo-grid-sticky-border;
         }
@@ -88,11 +72,6 @@
 
     // Grid header
     .k-grid-header {
-        @include fill(
-            $kendo-grid-header-text,
-            $kendo-grid-header-bg,
-            $kendo-grid-header-border
-        );
 
         .k-sort-icon {
             @include fill( $color: $kendo-grid-sort-indicator-text );

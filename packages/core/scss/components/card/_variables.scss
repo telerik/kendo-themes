@@ -1,7 +1,5 @@
 // Card
 
-$kendo-card-default-theme-color: null !default;
-
 $kendo-card-padding-x: null !default;
 $kendo-card-padding-y: null !default;
 $kendo-card-border-width: null !default;
@@ -71,7 +69,3 @@ $kendo-card-deck-scroll-button-offset: null !default;
 
 $kendo-card-callout-width: null !default;
 $kendo-card-callout-height: null !default;
-
-/// The theme colors map of the Card.
-/// @group card
-$kendo-card-theme-colors: ("primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;

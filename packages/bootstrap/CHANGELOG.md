@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.2...v13.2.0-dev.3) (2026-04-20)
+
+
+### Bug Fixes
+
+* correct color tokens usage ([72e4ecb](https://github.com/telerik/kendo-themes/commit/72e4ecb91b7fd6343bc012ebf71683e0479425a3))
+* **grid:** streamline grid styles ([69e20fe](https://github.com/telerik/kendo-themes/commit/69e20fe92e74ae3c2d02ff3e8f7f01401fe5d450))
+* **grid:** unpin icons have wrong color ([a94db3e](https://github.com/telerik/kendo-themes/commit/a94db3e238387347bf0f88c3e801395d2d8d58d6))
+
+
+
+
+
 # [13.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.1...v13.2.0-dev.2) (2026-04-15)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap

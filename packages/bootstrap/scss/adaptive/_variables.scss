@@ -27,7 +27,7 @@ $kendo-adaptive-menu-text: k-color(on-primary) !default;
 
 /// The text color of the Adaptive menu clear button.
 /// @group adaptive
-$kendo-adaptive-menu-clear-text: k-color(primary) !default;
+$kendo-adaptive-menu-clear-text: k-color(primary-on-surface) !default;
 
 /// The border color of the Adaptive menu item.
 /// @group adaptive
@@ -52,12 +52,12 @@ $kendo-adaptive-line-height: var(--kendo-line-height) !default;
 // Adaptive Grid
 /// The text color of the Adaptive Grid sort indicator.
 /// @group adaptive
-$kendo-adaptive-grid-sort-text: k-color(primary) !default;
+$kendo-adaptive-grid-sort-text: k-color(primary-on-surface) !default;
 
 // Adaptive Scheduler
 /// The text color of the current date in the Adaptive Scheduler.
 /// @group adaptive
-$kendo-adaptive-scheduler-current-text: k-color(primary) !default;
+$kendo-adaptive-scheduler-current-text: k-color(primary-on-surface) !default;
 /// The base text color of the Adaptive Scheduler.
 /// @group adaptive
 $kendo-adaptive-scheduler-base-text: inherit !default;

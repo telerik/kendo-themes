@@ -169,22 +169,6 @@
                     }
                 }
             }
-
-            @if($theme-color == "light") {
-                #{k-when-default($kendo-button-default-fill-mode, ("outline", "flat", "clear", "link"))}
-                &.k-button-outline,
-                &.k-button-flat,
-                &.k-button-clear,
-                &.k-button-link {
-                    #{k-when-default($kendo-button-default-theme-color, $theme-color)}
-                    &.k-button-#{$theme-color} {
-                        &:focus,
-                        &.k-focus {
-                            outline-color: k-color(light-on-surface);
-                        }
-                    }
-                }
-            }
         }
     }
 

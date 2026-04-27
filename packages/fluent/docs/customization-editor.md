@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-selected-text</td>
     <td>String</td>
-    <td><code>var( --kendo-editor-selected-text, #{k-color(app-surface)} )</code></td>
-    <td><code>var(--kendo-editor-selected-text, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-editor-selected-text, #{k-color(on-primary)} )</code></td>
+    <td><code>var(--kendo-editor-selected-text, var(--kendo-color-on-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the Editor.</div></div>

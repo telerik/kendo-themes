@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-filter-preview-field-text</td>
     <td>String</td>
-    <td><code>var( --kendo-filter-preview-field-text, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-filter-preview-field-text, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-filter-preview-field-text, #{k-color(primary-on-surface)} )</code></td>
+    <td><code>var(--kendo-filter-preview-field-text, var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview field.</div></div>

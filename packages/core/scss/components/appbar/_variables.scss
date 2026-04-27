@@ -15,15 +15,9 @@ $kendo-appbar-line-height: null !default;
 
 $kendo-appbar-gap: null !default;
 
-$kendo-appbar-light-bg: null !default;
-$kendo-appbar-light-text: null !default;
-
-$kendo-appbar-dark-bg: null !default;
-$kendo-appbar-dark-text: null !default;
-
 $kendo-appbar-box-shadow: null !default;
 $kendo-appbar-bottom-box-shadow: null !default;
 
 /// The theme colors map of the AppBar.
 /// @group appbar
-$kendo-appbar-theme-colors: ("inherit", "base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "dark", "light", "inverse") !default;
+$kendo-appbar-theme-colors: ("base", "primary", "secondary", "tertiary", "inverse") !default;
