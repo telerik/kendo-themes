@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.3...v13.2.0-dev.4) (2026-04-27)
+
+
+### Features
+
+* remove light and dark theme colors from styles, swatches, specs and utils ([f73dd3a](https://github.com/telerik/kendo-themes/commit/f73dd3ad3151092d07c9a2fa2ba1ee2d8caccb78))
+* revise themeColors across components ([ba854ac](https://github.com/telerik/kendo-themes/commit/ba854acb73fda0eb09aaf98748f9ee416d3a76df))
+
+
+
+
+
 # [13.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.2...v13.2.0-dev.3) (2026-04-20)
 
 

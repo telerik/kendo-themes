@@ -48,10 +48,6 @@
 
                     @if $name == "primary" or $name == "secondary" {
                         background: k-color(surface);
-                    } @else if $name == "light" {
-                        background: k-color(dark-subtle);
-                    } @else if $name == "dark"  {
-                        background: k-color(light-subtle);
                     } @else {
                         background: k-color(#{$name}-subtle);
                     }

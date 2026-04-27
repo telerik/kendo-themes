@@ -1,7 +1,7 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
 import { MenuButton } from '../menu-button';
-import { classNames, optionClassNames, ThemeColor, nextId } from '../misc';
+import { classNames, nextId } from '../misc';
 import { WindowContent } from './window-content.spec';
 
 import { KendoComponent } from '../_types/component';
@@ -10,20 +10,11 @@ export const WINDOW_CLASSNAME = `k-window`;
 
 const states = [];
 
-const options = {
-    themeColor: [
-        ThemeColor.undefined,
-        ThemeColor.primary,
-        ThemeColor.light,
-        ThemeColor.dark
-    ],
-};
+const options = {};
 
 const defaultOptions = {};
 
-export type KendoWindowOptions = {
-  themeColor?: (typeof options.themeColor)[number] | null;
-};
+export type KendoWindowOptions = {};
 
 export type KendoWindowProps = KendoWindowOptions & {
     title?: string;
@@ -41,7 +32,6 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
         title,
         actions,
         minimized,
-        themeColor,
         actionButtons,
         actionButtonsAlign,
         ...other
@@ -55,7 +45,6 @@ export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTML
             className={classNames(
                 props.className,
                 WINDOW_CLASSNAME,
-                optionClassNames(WINDOW_CLASSNAME, { themeColor }),
                 {
                     [`${WINDOW_CLASSNAME}-minimized`]: minimized,
                 }

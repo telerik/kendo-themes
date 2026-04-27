@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, ThemeColor } from '../misc';
+import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { OVERLAY_FOLDER_NAME, OVERLAY_MODULE_NAME } from './constants';
@@ -6,18 +6,9 @@ export const OVERLAY_CLASSNAME = `k-overlay`;
 
 const states = [];
 
-const options = {
-    themeColor: [
-        ThemeColor.undefined,
-        ThemeColor.light,
-        ThemeColor.dark,
-        ThemeColor.inverse
-    ],
-};
+const options = {};
 
-export type KendoOverlayOptions = {
-  themeColor?: (typeof options.themeColor)[number] | null;
-};
+export type KendoOverlayOptions = {};
 
 export type KendoOverlayProps = KendoOverlayOptions;
 
@@ -28,7 +19,6 @@ export const Overlay: KendoComponent<KendoOverlayProps & React.HTMLAttributes<HT
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        themeColor,
         ...other
     } = props;
 
@@ -38,9 +28,6 @@ export const Overlay: KendoComponent<KendoOverlayProps & React.HTMLAttributes<HT
             className={classNames(
                 props.className,
                 OVERLAY_CLASSNAME,
-                optionClassNames(OVERLAY_CLASSNAME, {
-                    themeColor,
-                })
             )}>
             {props.children}
         </div>

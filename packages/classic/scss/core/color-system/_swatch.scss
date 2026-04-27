@@ -107,30 +107,6 @@ $_default-colors: (
     on-error: #{"oklch(from var(--kendo-color-error) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
     error-on-surface: #{"oklch(from var(--kendo-color-error) calc(l * 0.757) calc(c * 0.744) h)"},
 
-    // Light (ash-gray, achromatic)
-    light-subtle: #{"oklch(from var(--kendo-color-light) calc(l + 0.015) c h)"},
-    light-subtle-hover: #{"oklch(from var(--kendo-color-light) l c h)"},
-    light-subtle-active: #{"oklch(from var(--kendo-color-light) calc(l - 0.0425) c h)"},
-    light: oklch(94.01% 0 0deg),
-    light-hover: #{"oklch(from var(--kendo-color-light) calc(l - 0.0425) c h)"},
-    light-active: #{"oklch(from var(--kendo-color-light) calc(l - 0.064) c h)"},
-    light-emphasis: #{"oklch(from var(--kendo-color-light) calc(l - 0.1011) c h)"},
-    light-on-subtle: oklch(27.27% 0 0deg),
-    on-light: oklch(0% 0 0deg),
-    light-on-surface: #{"oklch(from var(--kendo-color-light) l c h)"},
-
-    // Dark (ash-gray, achromatic)
-    dark-subtle: #{"oklch(from var(--kendo-color-dark) calc(l + 0.4675) c h)"},
-    dark-subtle-hover: #{"oklch(from var(--kendo-color-dark) calc(l + 0.4048) c h)"},
-    dark-subtle-active: #{"oklch(from var(--kendo-color-dark) calc(l + 0.344) c h)"},
-    dark: oklch(37.15% 0 0deg),
-    dark-hover: #{"oklch(from var(--kendo-color-dark) calc(l - 0.0504) c h)"},
-    dark-active: #{"oklch(from var(--kendo-color-dark) calc(l - 0.0988) c h)"},
-    dark-emphasis: #{"oklch(from var(--kendo-color-dark) calc(l + 0.208) c h)"},
-    dark-on-subtle: oklch(0% 0 0deg),
-    on-dark: oklch(100% 0 0deg),
-    dark-on-surface: #{"oklch(from var(--kendo-color-dark) calc(l - 0.0504) c h)"},
-
     // Inverse (ash-gray, achromatic)
     inverse-subtle: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.4675) c h)"},
     inverse-subtle-hover: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.4048) c h)"},
@@ -326,38 +302,6 @@ $_default-colors: (
 /// @prop {Color} error-on-subtle - The text color variable for content on error subtle.
 /// @prop {Color} on-error - The text color variable for content on error.
 /// @prop {Color} error-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {light}
-/// [light-subtle, light-subtle-hover, light-subtle-active,
-/// light, light-hover, light-active, light-emphasis,
-/// light-on-subtle, on-light, light-on-surface]
-/// The Light variable group.
-/// @prop {Color} light-subtle - The light subtle background color variable.
-/// @prop {Color} light-subtle-hover - The light subtle background color variable for the hover state.
-/// @prop {Color} light-subtle-active - The light subtle background color variable for the active state.
-/// @prop {Color} light - The light background color variable.
-/// @prop {Color} light-hover - The light background color variable for the hover state.
-/// @prop {Color} light-active - The light background color variable for the active state.
-/// @prop {Color} light-emphasis - The emphasized light color variable.
-/// @prop {Color} light-on-subtle - The text color variable for content on light subtle.
-/// @prop {Color} on-light - The text color variable for content on light.
-/// @prop {Color} light-on-surface - The text color variable for content on surface.
-///
-/// @subgroup {dark}
-/// [dark-subtle, dark-subtle-hover, dark-subtle-active,
-/// dark, dark-hover, dark-active, dark-emphasis,
-/// dark-on-subtle, on-dark, dark-on-surface]
-/// The Dark variable group.
-/// @prop {Color} dark-subtle - The dark subtle background color variable.
-/// @prop {Color} dark-subtle-hover - The dark subtle background color variable for the hover state.
-/// @prop {Color} dark-subtle-active - The dark subtle background color variable for the active state.
-/// @prop {Color} dark - The dark background color variable.
-/// @prop {Color} dark-hover - The dark background color variable for the hover state.
-/// @prop {Color} dark-active - The dark background color variable for the active state.
-/// @prop {Color} dark-emphasis - The emphasized dark color variable.
-/// @prop {Color} dark-on-subtle - The text color variable for content on dark subtle.
-/// @prop {Color} on-dark - The text color variable for content on dark.
-/// @prop {Color} dark-on-surface - The text color variable for content on surface.
 ///
 /// @subgroup {inverse}
 /// [inverse-subtle, inverse-subtle-hover, inverse-subtle-active,

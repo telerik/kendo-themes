@@ -391,9 +391,9 @@ This is equivalent to `background-clip: content-box;`.
 
 
 
-### `.k-bg-dark-emphasis`
+### `.k-bg-error-emphasis`
 
-Sets the background color to the dark emphasis color.
+Sets the background color to the error emphasis color.
 
 
 
@@ -629,48 +629,6 @@ Sets the background color to the error color.
 
 
 
-### `.k-bg-error-emphasis`
-
-Sets the background color to the error emphasis color.
-
-
-
-
-### `.k-bg-light-subtle`
-
-Sets the background color to the light subtle color.
-
-
-
-
-### `.k-bg-light`
-
-Sets the background color to the light color.
-
-
-
-
-### `.k-bg-light-emphasis`
-
-Sets the background color to the light emphasis color.
-
-
-
-
-### `.k-bg-dark-subtle`
-
-Sets the background color to the dark subtle color.
-
-
-
-
-### `.k-bg-dark`
-
-Sets the background color to the dark color.
-
-
-
-
 ### `.k-bg-bottom-right`
 
 This is equivalent to `background-position: bottom right;`.
@@ -769,9 +727,9 @@ This is equivalent to `border-collapse: collapse;`.
 
 
 
-### `.k-border-dark-emphasis`
+### `.k-border-error-emphasis`
 
-Sets the border color to the dark emphasis color.
+Sets the border color to the error emphasis color.
 
 
 
@@ -1010,48 +968,6 @@ Sets the border color to the error subtle color.
 ### `.k-border-error`
 
 Sets the border color to the error color.
-
-
-
-
-### `.k-border-error-emphasis`
-
-Sets the border color to the error emphasis color.
-
-
-
-
-### `.k-border-light-subtle`
-
-Sets the border color to the light subtle color.
-
-
-
-
-### `.k-border-light`
-
-Sets the border color to the light color.
-
-
-
-
-### `.k-border-light-emphasis`
-
-Sets the border color to the light emphasis color.
-
-
-
-
-### `.k-border-dark-subtle`
-
-Sets the border color to the dark subtle color.
-
-
-
-
-### `.k-border-dark`
-
-Sets the border color to the dark color.
 
 
 
@@ -6908,9 +6824,9 @@ This is equivalent to `order: 9999;`.
 
 
 
-### `.k-outline-dark-emphasis`
+### `.k-outline-error-emphasis`
 
-Sets the border color to the dark emphasis color.
+Sets the border color to the error emphasis color.
 
 
 
@@ -7149,48 +7065,6 @@ Sets the border color to the error subtle color.
 ### `.k-outline-error`
 
 Sets the border color to the error color.
-
-
-
-
-### `.k-outline-error-emphasis`
-
-Sets the border color to the error emphasis color.
-
-
-
-
-### `.k-outline-light-subtle`
-
-Sets the border color to the light subtle color.
-
-
-
-
-### `.k-outline-light`
-
-Sets the border color to the light color.
-
-
-
-
-### `.k-outline-light-emphasis`
-
-Sets the border color to the light emphasis color.
-
-
-
-
-### `.k-outline-dark-subtle`
-
-Sets the border color to the dark subtle color.
-
-
-
-
-### `.k-outline-dark`
-
-Sets the border color to the dark color.
 
 
 
@@ -9243,48 +9117,6 @@ Sets the text color to the error color.
 ### `.k-text-error-emphasis`
 
 Sets the text color to the error emphasis color.
-
-
-
-
-### `.k-text-light-subtle`
-
-Sets the text color to the light subtle color.
-
-
-
-
-### `.k-text-light`
-
-Sets the text color to the light color.
-
-
-
-
-### `.k-text-light-emphasis`
-
-Sets the text color to the light emphasis color.
-
-
-
-
-### `.k-text-dark-subtle`
-
-Sets the text color to the dark subtle color.
-
-
-
-
-### `.k-text-dark`
-
-Sets the text color to the dark color.
-
-
-
-
-### `.k-text-dark-emphasis`
-
-Sets the text color to the dark emphasis color.
 
 
 

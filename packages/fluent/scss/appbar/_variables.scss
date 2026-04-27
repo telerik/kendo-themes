@@ -5,7 +5,7 @@
 /// The default theme color of the AppBar.
 /// @group appbar
 /// @role default
-$kendo-appbar-default-theme-color: "light" !default;
+$kendo-appbar-default-theme-color: "base" !default;
 
 /// The horizontal margin of the AppBar.
 /// @group appbar
@@ -49,20 +49,6 @@ $kendo-appbar-bg: var( --kendo-appbar-bg, k-color(surface) ) !default;
 /// @group appbar
 $kendo-appbar-border: var( --kendo-appbar-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 
-/// The background color of the AppBar based on light theme color.
-/// @group appbar
-$kendo-appbar-light-bg: k-color(light) !default;
-/// The text color of the AppBar based on light theme color.
-/// @group appbar
-$kendo-appbar-light-text: k-color(on-light) !default;
-
-/// The background color of the AppBar based on dark theme color.
-/// @group appbar
-$kendo-appbar-dark-bg: k-color(dark) !default;
-/// The text color of the AppBar based on dark theme color.
-/// @group appbar
-$kendo-appbar-dark-text: k-color(on-dark) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/appbar/_variables.scss" with (
     $kendo-appbar-margin-x: $kendo-appbar-margin-x,
     $kendo-appbar-margin-y: $kendo-appbar-margin-y,
@@ -74,9 +60,5 @@ $kendo-appbar-dark-text: k-color(on-dark) !default;
     $kendo-appbar-font-size: $kendo-appbar-font-size,
     $kendo-appbar-line-height: $kendo-appbar-line-height,
     $kendo-appbar-gap: $kendo-appbar-spacing,
-    $kendo-appbar-light-bg: $kendo-appbar-light-bg,
-    $kendo-appbar-dark-bg: $kendo-appbar-dark-bg,
-    $kendo-appbar-light-text: $kendo-appbar-light-text,
-    $kendo-appbar-dark-text: $kendo-appbar-dark-text,
     $kendo-appbar-default-theme-color: $kendo-appbar-default-theme-color
 );
