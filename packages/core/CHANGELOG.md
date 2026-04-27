@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0-dev.4](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.3...v13.2.0-dev.4) (2026-04-27)
+
+
+### Bug Fixes
+
+* **chat:** suggestions border is cutting out on the first and last elements ([627056a](https://github.com/telerik/kendo-themes/commit/627056a736a42b7fd79db7c75450ba956640256e))
+* **listbox:** prevent long item text from overflowing action buttons ([765dabb](https://github.com/telerik/kendo-themes/commit/765dabb0223b19c9ef780906d12f2e14ae2b26bf))
+* **loader:** update loader-container to use overlay ([cfad0d4](https://github.com/telerik/kendo-themes/commit/cfad0d4460d75429900ed5c0a739ab3c79d1a8cd))
+
+
+### Features
+
+* remove light and dark theme colors from styles, swatches, specs and utils ([f73dd3a](https://github.com/telerik/kendo-themes/commit/f73dd3ad3151092d07c9a2fa2ba1ee2d8caccb78))
+* revise themeColors across components ([ba854ac](https://github.com/telerik/kendo-themes/commit/ba854acb73fda0eb09aaf98748f9ee416d3a76df))
+
+
+
+
+
 # [13.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v13.2.0-dev.2...v13.2.0-dev.3) (2026-04-20)
 
 
