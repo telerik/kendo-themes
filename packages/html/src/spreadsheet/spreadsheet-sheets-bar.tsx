@@ -16,23 +16,23 @@ export type KendoSpreadsheetSheetsBarProps = {
 
 const defaultTabStripItems = (
     <>
-        <TabStripItem key="sheet1" first value="Sheet 1" actions={
-            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
+        <TabStripItem key="sheet1" first active value="Sheet 1" actions={
+            <MenuButton showArrow={false} size="xsmall" icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
         }></TabStripItem>
         <TabStripItem key="sheet2" value="Sheet 2" actions={
-            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
+            <MenuButton showArrow={false} size="xsmall" icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
         }></TabStripItem>
         <TabStripItem key="sheet3" value="Sheet 3" actions={
-            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
+            <MenuButton showArrow={false} size="xsmall" icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
         }></TabStripItem>
         <TabStripItem key="sheet4" value="Sheet 4" actions={
-            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
+            <MenuButton showArrow={false} size="xsmall" icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
         }></TabStripItem>
         <TabStripItem key="sheet5" value="Sheet 5" actions={
-            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
+            <MenuButton showArrow={false} size="xsmall" icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
         }></TabStripItem>
         <TabStripItem key="sheet6" last value="Sheet 6" actions={
-            <MenuButton showArrow={false} icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
+            <MenuButton showArrow={false} size="xsmall" icon="caret-alt-down" fillMode="flat" aria-label="Sheet options" />
         }></TabStripItem>
     </>
 );
@@ -59,8 +59,8 @@ export const SpreadsheetSheetsBar = (
                 SPREADSHEETSHEETSBAR_CLASSNAME,
                 props.className
             )}>
-            <Button className="k-spreadsheet-sheet-add" fillMode="flat" icon="plus" aria-label="Add new sheet" aria-controls={tabStripItemsId} />
-            <Button className="k-spreadsheet-sheets-menu" fillMode="flat" icon="menu" aria-label="Sheets menu" aria-controls={tabStripItemsId} />
+            <Button className="k-spreadsheet-sheet-add" fillMode="flat" size="xsmall" icon="plus" aria-label="Add new sheet" aria-controls={tabStripItemsId} />
+            <Button className="k-spreadsheet-sheets-menu" fillMode="flat" size="xsmall" icon="menu" aria-label="Sheets menu" aria-controls={tabStripItemsId} />
             <TabStrip
                 className="k-spreadsheet-sheets"
                 tabStripItems={tabStripItems}
