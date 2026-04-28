@@ -240,8 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pivotgrid-total-bg</td>
     <td>String</td>
-    <td><code>k-color(base-subtle)</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
+    <td><code>k-color(secondary-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid total cells.</div></div>
@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pivotgrid-total-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid total cells.</div></div>
@@ -270,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pivotgrid-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(base) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the PivotGrid.</div></div>
