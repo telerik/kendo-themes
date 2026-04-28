@@ -172,7 +172,6 @@
     // Pivotgrid configurator
     .k-pivotgrid-configurator {
         display: flex;
-        border-radius: $kendo-pivotgrid-border-radius;
     }
 
     .k-pivotgrid-configurator-panel {
@@ -194,7 +193,6 @@
         padding-inline: $kendo-pivotgrid-configurator-button-padding-x;
         border-width: $kendo-pivotgrid-configurator-button-border-width;
         border-style: solid;
-        border-radius: $kendo-pivotgrid-border-radius;
         box-sizing: border-box;
         cursor: pointer;
         user-select: none;

@@ -304,7 +304,7 @@ $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 $kendo-grid-sorted-icon-spacing: calc( #{k-spacing(2)} - 1px ) !default;
 /// The background color of the Grid.
 /// @group grid
-$kendo-grid-sorted-bg: color-mix(in srgb, k-color(secondary) 4%, transparent) !default;
+$kendo-grid-sorted-bg: color-mix(in srgb, k-color(secondary) 6%, transparent) !default;
 /// The text color of the Grid.
 /// @group grid
 $kendo-grid-sorting-indicator-text: k-color(secondary) !default;
@@ -343,14 +343,14 @@ $kendo-grid-command-cell-button-spacing: k-spacing(2) !default;
 $kendo-grid-sticky-bg: k-color(surface-alt) !default;
 /// The background color of the hovered sticky content in the Grid.
 /// @group grid
-$kendo-grid-sticky-hover-bg: k-color(base-hover) !default;
+$kendo-grid-sticky-hover-bg: color-mix(in srgb, k-color(base) 60%, k-color(surface-alt)) !default;
 /// The alternate background color of the sticky content in the Grid.
 /// @group grid
 $kendo-grid-sticky-alt-bg: $kendo-grid-alt-bg !default;
 
 /// The border color of the sticky content in the Grid.
 /// @group grid
-$kendo-grid-sticky-border: color-mix(in srgb, k-color(on-app-surface) 30%, transparent) !default;
+$kendo-grid-sticky-border: k-color(border-alt) !default;
 
 /// The background color of the sticky header in the Grid.
 /// @group grid

@@ -35,6 +35,13 @@
                 }
             }
         }
+
+        .k-detail-row,
+        .k-master-row {
+            .k-group-cell + :not(.k-group-cell) {
+                border-inline-start: 1px solid k-color(border);
+            }
+        }
     }
 
     // Column menu fix for action buttons focus state
@@ -48,5 +55,11 @@
     .k-column-menu .k-expander {
         backdrop-filter: none;
         border-radius: 0;
+    }
+
+    .k-grid-footer .k-table-td,
+    .k-group-footer .k-table-td,
+    .k-grouping-row .k-table-td {
+        font-weight: var(--kendo-font-weight-medium, 500);
     }
 }

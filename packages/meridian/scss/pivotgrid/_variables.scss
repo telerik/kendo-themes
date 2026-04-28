@@ -76,17 +76,17 @@ $kendo-pivotgrid-headers-border: k-color(border) !default;
 
 /// The background color of the PivotGrid total cells.
 /// @group pivotgrid
-$kendo-pivotgrid-total-bg: k-color(base-subtle) !default;
+$kendo-pivotgrid-total-bg: k-color(secondary-subtle) !default;
 /// The text color of the PivotGrid total cells.
 /// @group pivotgrid
-$kendo-pivotgrid-total-text: k-color(on-app-surface) !default;
+$kendo-pivotgrid-total-text: k-color(subtle) !default;
 /// The border color of the PivotGrid total cells.
 /// @group pivotgrid
 $kendo-pivotgrid-total-border: k-color(border) !default;
 
 /// The hover background color of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-hover-bg: k-color(base-hover) !default;
+$kendo-pivotgrid-hover-bg: color-mix(in srgb, k-color(base) 60%, transparent) !default;
 /// The hover text color of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-hover-text: null !default;
