@@ -8,4 +8,17 @@
     .k-pivotgrid-configurator-panel.kendo-jquery .k-column-fields {
         border-radius: k-border-radius(md);
     }
+
+    // Table Layout
+    .k-pivotgrid-table .k-pivotgrid-header-root {
+        font-weight: var(--kendo-font-weight-medium, 500);
+    }
+
+    .k-pivotgrid-total {
+        font-weight: var(--kendo-font-weight-normal, 400);
+    }
+
+    .k-pivotgrid-column-headers {
+        border-inline-end: 1px solid k-color(border);
+    }
 }
