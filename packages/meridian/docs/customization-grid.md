@@ -910,8 +910,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sorted-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(secondary) 4%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 4%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(secondary) 6%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 6%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid.</div></div>
@@ -1020,8 +1020,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sticky-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(base) 60%, k-color(surface-alt))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base) 60%, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered sticky content in the Grid.</div></div>
@@ -1040,8 +1040,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sticky-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 30%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent)</code></td>
+    <td><code>k-color(border-alt)</code></td>
+    <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the sticky content in the Grid.</div></div>
@@ -1071,7 +1071,7 @@ The following table lists the available variables for customization.
     <td>$kendo-grid-sticky-header-border</td>
     <td>String</td>
     <td><code>$kendo-grid-sticky-border</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent)</code></td>
+    <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the sticky header in the Grid.</div></div>
