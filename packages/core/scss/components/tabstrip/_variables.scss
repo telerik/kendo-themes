@@ -77,6 +77,10 @@ $kendo-tabstrip-content-focus-border: null !default;
 
 $kendo-tabstrip-scroll-overlay: null !default;
 
+/// The spacing around the TabStrip scroll buttons (prev/next).
+/// @group tabstrip
+$kendo-tabstrip-scroll-button-spacing: null !default;
+
 /// The sizes map of the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-sizes: (
