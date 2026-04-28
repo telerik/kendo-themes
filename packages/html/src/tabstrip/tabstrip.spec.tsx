@@ -1,6 +1,6 @@
 import { Icon } from '../icon';
 import { MenuButton } from '../menu-button';
-import { classNames, FillMode, optionClassNames, Roundness, Size } from '../misc';
+import { classNames, FillMode, optionClassNames, Size } from '../misc';
 import TabStripItems from './tabstrip-items';
 import TabStripItemsWrapper from './tabstrip-items-wrapper';
 
@@ -103,8 +103,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         'k-button',
                         optionClassNames('k-button', {
                             size,
-                            fillMode: FillMode.flat,
-                            rounded: Roundness.none
+                            fillMode: FillMode.flat
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
@@ -117,8 +116,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         'k-button',
                         optionClassNames('k-button', {
                             size,
-                            fillMode: FillMode.flat,
-                            rounded: Roundness.none
+                            fillMode: FillMode.flat
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
@@ -137,8 +135,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         'k-button',
                         optionClassNames('k-button', {
                             size,
-                            fillMode: FillMode.flat,
-                            rounded: Roundness.none
+                            fillMode: FillMode.flat
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
@@ -152,8 +149,7 @@ export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<
                         'k-button',
                         optionClassNames('k-button', {
                             size,
-                            fillMode: FillMode.flat,
-                            rounded: Roundness.none
+                            fillMode: FillMode.flat
                         }),
                         'k-icon-button',
                     )} aria-hidden="true">
