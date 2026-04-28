@@ -201,6 +201,10 @@ $kendo-tabstrip-content-focus-border: k-color(on-app-surface) !default;
 /// @group tabstrip
 $kendo-tabstrip-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
 
+/// The spacing around the TabStrip scroll buttons (prev/next).
+/// @group tabstrip
+$kendo-tabstrip-scroll-button-spacing: k-spacing(1) !default;
+
 /// The outline width of the focused TabStrip item.
 /// @group tabstrip
 $kendo-tabstrip-item-focus-outline-width: 1px !default;
@@ -269,5 +273,6 @@ $kendo-tabstrip-item-focus-outline-offset: 3px !default;
     $kendo-tabstrip-content-text: $kendo-tabstrip-content-text,
     $kendo-tabstrip-content-border: $kendo-tabstrip-content-border,
     $kendo-tabstrip-content-focus-border: $kendo-tabstrip-content-focus-border,
-    $kendo-tabstrip-scroll-overlay: $kendo-tabstrip-scroll-overlay
+    $kendo-tabstrip-scroll-overlay: $kendo-tabstrip-scroll-overlay,
+    $kendo-tabstrip-scroll-button-spacing: $kendo-tabstrip-scroll-button-spacing
 );

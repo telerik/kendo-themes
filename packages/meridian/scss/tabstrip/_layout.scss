@@ -40,4 +40,14 @@
         }
     }
 
+    .k-tabstrip-scrollable {
+        &.k-tabstrip-top .k-tabstrip-items-wrapper {
+            align-items: end;
+        }
+
+        &.k-tabstrip-bottom .k-tabstrip-items-wrapper {
+            align-items: start;
+        }
+    }
+
 }

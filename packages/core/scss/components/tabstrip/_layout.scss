@@ -228,6 +228,11 @@
                     }
                 }
             }
+
+            > .k-tabstrip-prev,
+            > .k-tabstrip-next {
+                margin: $kendo-tabstrip-scroll-button-spacing;
+            }
         }
 
         &.k-tabstrip-top,
