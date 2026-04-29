@@ -39,22 +39,22 @@ jobs:
         run: |
           npm run sass
 
-      - name: Build swatch for a11y tests
+      - name: Build Meridian swatches
         run: |
-          npx gulp sass:dist --theme packages/default
-          npx sass --load-path=node_modules/ packages/default/dist/default-ocean-blue-a11y.scss packages/default/dist/default-ocean-blue-a11y.css
+          npm --workspace=@progress/kendo-theme-meridian run sass:dist
 
       - name: Pack themes
         run: |
           tar -cf themes.tar \
             packages/core/dist/all.css \
             packages/default/dist/all.css \
-            packages/default/dist/default-ocean-blue-a11y.css \
             packages/bootstrap/dist/all.css \
             packages/classic/dist/all.css \
             packages/fluent/dist/all.css \
             packages/material/dist/all.css \
             packages/meridian/dist/all.css \
+            packages/meridian/dist/meridian-main.css \
+            packages/meridian/dist/meridian-main-dark.css \
             packages/utils/dist/all.css
 
       - name: Upload themes
