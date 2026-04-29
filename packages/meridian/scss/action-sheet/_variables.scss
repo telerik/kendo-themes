@@ -156,13 +156,13 @@ $kendo-actionsheet-item-title-text-transform: null !default;
 $kendo-actionsheet-item-description-font-size: var(--kendo-font-size-sm) !default;
 /// The text color of the ActionSheet item description.
 /// @group action-sheet
-$kendo-actionsheet-item-description-text: k-color(subtle) !default;
+$kendo-actionsheet-item-description-text: color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface)) !default;
 /// The line height of the ActionSheet item description.
 /// @group action-sheet
 $kendo-actionsheet-item-description-line-height: null !default;
 /// The background color of the hovered ActionSheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-bg: k-color(primary-subtle-hover) !default;
+$kendo-actionsheet-item-hover-bg: color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent) !default;
 /// The text color of the hovered ActionSheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-hover-text: k-color(primary-on-subtle) !default;
@@ -190,7 +190,13 @@ $kendo-actionsheet-item-focus-border: null !default;
 $kendo-actionsheet-item-focus-gradient: null !default;
 /// The shadow of the focused ActionSheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-shadow: $kendo-focus-shadow !default;
+$kendo-actionsheet-item-focus-shadow: null !default;
+/// The outline color of the focused ActionSheet item.
+/// @group action-sheet
+$kendo-actionsheet-item-focus-outline-color: k-color(subtle) !default;
+/// The outline offset of the focused ActionSheet item.
+/// @group action-sheet
+$kendo-actionsheet-item-focus-outline-offset: 1px !default;
 
 /// The background color of the disabled ActionSheet item.
 /// @group action-sheet

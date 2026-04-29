@@ -1,6 +1,20 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/orgchart/_theme.scss" as *;
 
 
 @mixin kendo-orgchart--theme() {
     @include kendo-orgchart--theme-base();
+
+    .k-orgchart-node-group-container {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-orgchart-node-group-focus-outline-color,
+                $outline-width: $kendo-orgchart-node-group-focus-outline-width,
+                $outline-offset: $kendo-orgchart-node-group-focus-outline-offset
+            );
+        }
+    }
 }

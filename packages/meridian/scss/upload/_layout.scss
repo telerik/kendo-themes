@@ -11,5 +11,9 @@
         .k-upload-dropzone {
             padding-inline-end: k-spacing(4);
         }
+
+        &:has(.k-upload-dropzone.k-hover) {
+            border: 1px dashed k-color(border-alt);
+        }
     }
 }

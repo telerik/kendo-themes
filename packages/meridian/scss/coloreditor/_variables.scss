@@ -140,7 +140,7 @@ $kendo-color-editor-lg-views-padding-x: k-spacing(4.5) !default;
 
 /// The outline color of the focused ColorGradient.
 /// @group color-editor
-$kendo-color-editor-color-gradient-focus-outline-color: rgba(0, 0, 0, .3) !default;
+$kendo-color-editor-color-gradient-focus-outline-color: k-color(subtle) !default;
 /// The outline width of the focused ColorGradient.
 /// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline: 2px !default;

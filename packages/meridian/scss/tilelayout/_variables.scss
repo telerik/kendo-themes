@@ -26,7 +26,7 @@ $kendo-tile-layout-card-border-width: $kendo-card-border-width !default;
 $kendo-tile-layout-card-shadow: k-elevation(2) !default;
 /// The focus box shadow of the TileLayout card.
 /// @group tile-layout
-$kendo-tile-layout-card-focus-shadow: $kendo-card-focus-shadow !default;
+$kendo-tile-layout-card-focus-shadow: null !default;
 
 /// The width of the border around the TileLayout hint.
 /// @group tile-layout

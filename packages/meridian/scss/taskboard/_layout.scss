@@ -1,6 +1,10 @@
 @use "@progress/kendo-theme-core/scss/components/taskboard/_layout.scss" as *;
-
+@use "../core/_index.scss" as *;
 
 @mixin kendo-task-board--layout() {
     @include kendo-task-board--layout-base();
+
+    .k-taskboard-columns-container {
+        padding: k-spacing(1);
+    }
 }

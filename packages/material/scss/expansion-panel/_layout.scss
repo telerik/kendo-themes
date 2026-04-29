@@ -1,11 +1,12 @@
 @use "@progress/kendo-theme-core/scss/components/expansion-panel/_layout.scss" as *;
-
+@use "../core/_index.scss" as *;
 
 @mixin kendo-expander--layout() {
     @include kendo-expander--layout-base();
 
     .k-expander-title {
         text-transform: none;
+        font-weight: var( --kendo-font-weight-medium, 500 );
     }
 
 }

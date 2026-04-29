@@ -77,7 +77,16 @@ $kendo-timeline-track-border-color: k-color(border) !default;
 
 /// The shadow of the Timeline's focused track items.
 /// @group timeline
-$kendo-timeline-track-item-focus-shadow: k-elevation(2) !default;
+$kendo-timeline-track-item-focus-shadow: null !default;
+/// The outline color of the focused Timeline track item.
+/// @group timeline
+$kendo-timeline-track-item-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused Timeline track item.
+/// @group timeline
+$kendo-timeline-track-item-focus-outline-width: 1px !default;
+/// The outline offset of the focused Timeline track item.
+/// @group timeline
+$kendo-timeline-track-item-focus-outline-offset: 1px !default;
 
 /// The offset of the Timeline track event.
 /// @group timeline
@@ -113,10 +122,10 @@ $kendo-timeline-flag-text: k-color(on-primary) !default;
 
 /// The width of the Timeline's flag callout.
 /// @group timeline
-$kendo-timeline-flag-callout-width: 14px !default;
+$kendo-timeline-flag-callout-width: 10px !default;
 /// The height of the Timeline's flag callout.
 /// @group timeline
-$kendo-timeline-flag-callout-height: 7px !default;
+$kendo-timeline-flag-callout-height: 10px !default;
 
 /// The bottom offset of the Timeline flag.
 /// @group timeline

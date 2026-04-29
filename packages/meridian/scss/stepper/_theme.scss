@@ -1,6 +1,29 @@
 @use "@progress/kendo-theme-core/scss/components/stepper/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-stepper--theme() {
     @include kendo-stepper--theme-base();
+
+    .k-stepper {
+        .k-step.k-focus,
+        .k-step .k-step-link:focus {
+            .k-step-label:only-child {
+                box-shadow: none;
+                @include focus-indicator( k-color(subtle), $inset: true, $type: "outline", $outline-width: 1px, $outline-offset: 1px );
+            }
+
+            .k-step-indicator::after {
+                border-color: k-color(subtle);
+            }
+        }
+
+        .k-step-current.k-focus,
+        .k-step-current .k-step-link:focus {
+            .k-step-indicator::after {
+                border-color: $kendo-stepper-indicator-current-border;
+            }
+        }
+    }
 }

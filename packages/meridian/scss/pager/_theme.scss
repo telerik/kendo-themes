@@ -1,5 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/pager/_theme.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-pager--theme() {
@@ -7,5 +8,10 @@
 
     .k-pager {
         backdrop-filter: k-translucency-blur(1);
+
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-pager-focus-outline-color, $inset: true, $type: "outline", $outline-offset: $kendo-pager-focus-outline-offset );
+        }
     }
 }

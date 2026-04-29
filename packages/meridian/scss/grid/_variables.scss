@@ -216,7 +216,7 @@ $kendo-grid-border: $kendo-table-border !default;
 $kendo-grid-header-bg: $kendo-table-header-bg !default;
 /// The text color of Grid header.
 /// @group grid
-$kendo-grid-header-text: k-color(subtle) !default;
+$kendo-grid-header-text: color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface)) !default;
 /// The border color of Grid header.
 /// @group grid
 $kendo-grid-header-border: $kendo-table-header-border !default;
@@ -507,10 +507,10 @@ $kendo-grid-stack-expandable-shadow-height: k-spacing(2.5) !default;
 
 /// The color of the Grid stack layout column header.
 /// @group grid
-$kendo-grid-stack-header-color: k-color(subtle) !default;
+$kendo-grid-stack-header-color: color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface)) !default;
 /// The outline color of the Grid stack layout focused cell.
 /// @group grid
-$kendo-grid-stack-focus-outline: color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
+$kendo-grid-stack-focus-outline: k-color(subtle) !default;
 /// The Grid stack layout expandable row shadow.
 /// @group grid
 $kendo-grid-stack-expandable-shadow: k-elevation(2) !default;

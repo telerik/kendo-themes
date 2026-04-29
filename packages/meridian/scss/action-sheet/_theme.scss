@@ -1,6 +1,15 @@
 @use "@progress/kendo-theme-core/scss/components/action-sheet/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-action-sheet--theme() {
     @include kendo-action-sheet--theme-base();
+
+    .k-actionsheet-item {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-actionsheet-item-focus-outline-color, $inset: true, $type: "outline", $outline-offset: $kendo-actionsheet-item-focus-outline-offset );
+        }
+    }
 }

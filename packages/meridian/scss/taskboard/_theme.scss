@@ -6,6 +6,18 @@
 @mixin kendo-task-board--theme() {
     @include kendo-task-board--theme-base();
 
+    .k-taskboard-column {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $type: "outline",
+                $indicator: $kendo-taskboard-column-focus-outline-color,
+                $outline-width: $kendo-taskboard-column-focus-outline-width,
+                $outline-offset: $kendo-taskboard-column-focus-outline-offset
+            );
+        }
+    }
+
     .k-taskboard-card {
         &:focus,
         &.k-focus {

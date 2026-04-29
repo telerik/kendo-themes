@@ -62,9 +62,9 @@ $_default-colors: (
     info-hover: #{"oklch(from var(--kendo-color-info) max(0.15, calc(l + clamp(-0.0362, (0.35 - l) * 99999, 0.0362))) calc(c - 0.0083) calc(h - 0.10))"},
     info-active: #{"oklch(from var(--kendo-color-info) max(0.20, calc(l + clamp(-0.0735, (0.35 - l) * 99999, 0.0735))) calc(c - 0.0181) calc(h - 0.68))"},
     info-emphasis: #{"oklch(from var(--kendo-color-info) calc(l + 0.1218) calc(c - 0.0235) calc(h - 8.04))"},
-    info-on-subtle: #{"oklch(from var(--kendo-color-info) calc(l - 0.1490) calc(c - 0.0360) calc(h - 0.92))"},
+    info-on-subtle: #{"oklch(from var(--kendo-color-info) calc(l - 0.20) calc(c - 0.0360) calc(h - 0.92))"},
     on-info: #{"oklch(from var(--kendo-color-info) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)"},
-    info-on-surface: #{"oklch(from var(--kendo-color-info) clamp(0.20, calc(l - 0.0735), 0.60) calc(c - 0.0181) calc(h - 0.68))"},
+    info-on-surface: #{"oklch(from var(--kendo-color-info) clamp(0.20, calc(l - 0.18), 0.55) calc(c - 0.0181) calc(h - 0.68))"},
     // Success
     success-subtle: #{"oklch(from var(--kendo-color-success) calc(l + 0.3820) calc(c - 0.0756) calc(h + 10.01))"},
     success-subtle-hover: #{"oklch(from var(--kendo-color-success) calc(l + 0.3257) calc(c - 0.0510) calc(h + 9.38))"},
@@ -95,9 +95,9 @@ $_default-colors: (
     error-hover: #{"oklch(from var(--kendo-color-error) max(0.15, calc(l + clamp(-0.0415, (0.35 - l) * 99999, 0.0415))) calc(c - 0.0154) calc(h + 0.39))"},
     error-active: #{"oklch(from var(--kendo-color-error) max(0.20, calc(l + clamp(-0.0851, (0.35 - l) * 99999, 0.0851))) calc(c - 0.0324) calc(h - 0.19))"},
     error-emphasis: #{"oklch(from var(--kendo-color-error) calc(l + 0.1479) calc(c - 0.0349) calc(h - 9.11))"},
-    error-on-subtle: #{"oklch(from var(--kendo-color-error) calc(l - 0.1281) calc(c - 0.0490) calc(h - 0.16))"},
+    error-on-subtle: #{"oklch(from var(--kendo-color-error) calc(l - 0.18) calc(c - 0.0490) calc(h - 0.16))"},
     on-error: #{"oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)"},
-    error-on-surface: #{"oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.0415), 0.60) calc(c - 0.0154) calc(h + 0.39))"},
+    error-on-surface: #{"oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.16), 0.55) calc(c - 0.0154) calc(h + 0.39))"},
     // Inverse
     inverse-subtle: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))"},
     inverse-subtle-hover: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))"},

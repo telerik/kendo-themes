@@ -59,7 +59,7 @@ $kendo-taskboard-content-padding-y: $kendo-taskboard-spacer !default;
 $kendo-taskboard-column-container-spacing-y: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
 /// The vertical padding of the TaskBoard column container.
 /// @group taskboard
-$kendo-taskboard-column-container-padding-y: k-spacing(0) !default;
+$kendo-taskboard-column-container-padding-y: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
 /// The horizontal padding of the TaskBoard column container.
 /// @group taskboard
 $kendo-taskboard-column-container-padding-x: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
@@ -94,7 +94,16 @@ $kendo-taskboard-column-focus-bg: null !default;
 $kendo-taskboard-column-focus-text: null !default;
 /// The border color of the focused TaskBoard column.
 /// @group taskboard
-$kendo-taskboard-column-focus-border: k-color(border-alt) !default;
+$kendo-taskboard-column-focus-border: null !default;
+/// The outline color of the focused TaskBoard column.
+/// @group taskboard
+$kendo-taskboard-column-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused TaskBoard column.
+/// @group taskboard
+$kendo-taskboard-column-focus-outline-width: 1px !default;
+/// The outline offset of the focused TaskBoard column.
+/// @group taskboard
+$kendo-taskboard-column-focus-outline-offset: 1px !default;
 
 /// The vertical padding of the TaskBoard column header.
 /// @group taskboard
@@ -212,7 +221,7 @@ $kendo-taskboard-card-hover-border: k-color(border-alt) !default;
 
 /// The border color of the focused TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-focus-border: k-color(border-alt) !default;
+$kendo-taskboard-card-focus-border: null !default;
 /// The shadow of the focused TaskBoard Card.
 /// @group taskboard
 $kendo-taskboard-card-focus-shadow: none !default;

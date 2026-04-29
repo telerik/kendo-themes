@@ -1,4 +1,5 @@
 @use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/timeline/_theme.scss" as *;
 
 
@@ -7,5 +8,14 @@
 
     .k-timeline-card .k-card {
         background-color: k-color(surface-alt);
+    }
+
+    .k-timeline-track-item.k-focus .k-timeline-circle {
+        @include focus-indicator(
+            $type: "outline",
+            $indicator: $kendo-timeline-track-item-focus-outline-color,
+            $outline-width: $kendo-timeline-track-item-focus-outline-width,
+            $outline-offset: $kendo-timeline-track-item-focus-outline-offset
+        );
     }
 }
