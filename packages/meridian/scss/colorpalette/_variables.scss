@@ -44,7 +44,7 @@ $kendo-color-palette-lg-tile-height: $kendo-color-palette-lg-tile-width !default
 
 /// The shadow of the ColorPalette focused tile.
 /// @group color-palette
-$kendo-color-palette-tile-focus-shadow: 0 0 3px 1px k-color(inverse), inset 0 0 0 1px color-mix(in srgb, k-color(on-inverse) 60%, transparent) !default;
+$kendo-color-palette-tile-focus-shadow: inset 0 0 0 2px k-color(on-inverse), inset 0 0 0 4px k-color(subtle) !default;
 /// The shadow of the ColorPalette hovered tile.
 /// @group color-palette
 $kendo-color-palette-tile-hover-shadow: 0 0 3px 1px k-color(inverse), inset 0 0 0 1px color-mix(in srgb, k-color(on-inverse) 80%, transparent) !default;

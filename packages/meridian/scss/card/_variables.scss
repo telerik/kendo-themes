@@ -54,7 +54,16 @@ $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: k-color(border-alt) !default;
+$kendo-card-focus-border: null !default;
+/// The outline color of the focused Card.
+/// @group card
+$kendo-card-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused Card.
+/// @group card
+$kendo-card-focus-outline-width: 1px !default;
+/// The outline offset of the focused Card.
+/// @group card
+$kendo-card-focus-outline-offset: 1px !default;
 
 // TODO: double-check: the default theme is not supposed to elevate the Card on focus
 

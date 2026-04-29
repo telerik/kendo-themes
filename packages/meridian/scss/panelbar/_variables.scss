@@ -84,7 +84,7 @@ $kendo-panelbar-header-gradient: null !default;
 
 /// The background color of the hovered PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-hover-bg: k-color(primary-subtle-hover) !default;
+$kendo-panelbar-header-hover-bg: color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent) !default;
 /// The text color of the hovered PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-hover-text: k-color(primary-hover) !default;
@@ -123,7 +123,7 @@ $kendo-panelbar-header-focus-outline-offset: 1px !default;
 
 /// The background color of the focused and hovered PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-hover-focus-bg: k-color(primary-subtle-hover) !default;
+$kendo-panelbar-header-hover-focus-bg: color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent) !default;
 /// The text color of the focused and hovered PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-hover-focus-text: k-color(primary-on-subtle) !default;
@@ -136,7 +136,7 @@ $kendo-panelbar-header-hover-focus-gradient: null !default;
 
 /// The background color of the selected PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-selected-bg: k-color(primary-subtle-active) !default;
+$kendo-panelbar-header-selected-bg: color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent) !default;
 /// The text color of the selected PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-selected-text: k-color(primary-on-subtle) !default;
@@ -149,7 +149,7 @@ $kendo-panelbar-header-selected-gradient: null !default;
 
 /// The background color of the selected and hovered PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-selected-hover-bg: k-color(primary-subtle-active) !default;
+$kendo-panelbar-header-selected-hover-bg: color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent) !default;
 /// The text color of the selected and hovered PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-selected-hover-text: k-color(primary-on-subtle) !default;
@@ -188,7 +188,7 @@ $kendo-panelbar-header-selected-hover-focus-gradient: null !default;
 
 /// The background color of the hovered PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-hover-bg: k-color(primary-subtle-hover) !default;
+$kendo-panelbar-item-hover-bg: color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent) !default;
 /// The text color of the hovered PanelBar items.
 /// @group panelbar
 $kendo-panelbar-item-hover-text: k-color(primary-on-subtle) !default;
@@ -227,7 +227,7 @@ $kendo-panelbar-item-focus-outline-offset: 1px !default;
 
 /// The background color of the focused and hovered PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-hover-focus-bg: k-color(primary-subtle-hover) !default;
+$kendo-panelbar-item-hover-focus-bg: color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent) !default;
 /// The text color of the focused and hovered PanelBar items.
 /// @group panelbar
 $kendo-panelbar-item-hover-focus-text: k-color(primary-on-subtle) !default;
@@ -240,7 +240,7 @@ $kendo-panelbar-item-hover-focus-gradient: null !default;
 
 /// The background color of the selected PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-selected-bg: k-color(primary-subtle-active) !default;
+$kendo-panelbar-item-selected-bg: color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent) !default;
 /// The text color of the selected PanelBar items.
 /// @group panelbar
 $kendo-panelbar-item-selected-text: k-color(primary-on-subtle) !default;
@@ -253,7 +253,7 @@ $kendo-panelbar-item-selected-gradient: null !default;
 
 /// The background color of the selected and hovered PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-selected-hover-bg: k-color(primary-subtle-active) !default;
+$kendo-panelbar-item-selected-hover-bg: color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent) !default;
 /// The text color of the selected and hovered PanelBar items.
 /// @group panelbar
 $kendo-panelbar-item-selected-hover-text: k-color(primary-on-subtle) !default;

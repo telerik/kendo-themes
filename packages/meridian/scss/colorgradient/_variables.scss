@@ -177,7 +177,7 @@ $kendo-color-gradient-draghandle-border: k-color(inverse) !default;
 $kendo-color-gradient-draghandle-focus-shadow: transparent !default;
 /// The outline color of the focused ColorGradient drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-focus-outline-color: color-mix(in srgb, k-color(on-inverse) 80%, transparent) !default;
+$kendo-color-gradient-draghandle-focus-outline-color: k-color(on-inverse) !default;
 /// The outline width of the focused ColorGradient drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-focus-outline-width: 2px !default;

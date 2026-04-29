@@ -1,6 +1,32 @@
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/scrollview/_theme.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-scrollview--theme() {
     @include kendo-scrollview--theme-base();
+
+    .k-scrollview-next,
+    .k-scrollview-prev {
+        &:focus,
+        &.k-focus {
+            .k-icon::before {
+                @include focus-indicator( $kendo-scrollview-pagebutton-focus-outline-color, $inset: false, $type: "outline", $outline-offset: $kendo-scrollview-pagebutton-focus-outline-offset );
+            }
+        }
+    }
+
+    .k-scrollview-nav > .k-link {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-scrollview-pagebutton-focus-outline-color, $inset: false, $type: "outline", $outline-offset: $kendo-scrollview-pagebutton-focus-outline-offset );
+        }
+
+        &.k-primary {
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-scrollview-pagebutton-focus-outline-color, $inset: false, $type: "outline", $outline-offset: $kendo-scrollview-pagebutton-focus-outline-offset );
+            }
+        }
+    }
 }

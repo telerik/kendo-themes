@@ -63,10 +63,19 @@ $kendo-orgchart-node-group-border: k-color(border) !default;
 
 /// The border color of the focused OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
+$kendo-orgchart-node-group-focus-border: null !default;
 /// The shadow of the focused OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-focus-shadow: k-elevation(1) !default;
+$kendo-orgchart-node-group-focus-shadow: null !default;
+/// The outline color of the focused OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-focus-outline-color: k-color(subtle) !default;
+/// The outline width of the focused OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-focus-outline-width: 1px !default;
+/// The outline offset of the focused OrgChart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-focus-outline-offset: 1px !default;
 
 /// The font size of the OrgChart node group title.
 /// @group orgchart
@@ -99,7 +108,7 @@ $kendo-orgchart-card-border-width: $kendo-card-border-width !default;
 $kendo-orgchart-card-shadow: k-elevation(2) !default;
 /// The shadow of the focused OrgChart Card.
 /// @group orgchart
-$kendo-orgchart-card-focus-shadow: k-elevation(1) !default;
+$kendo-orgchart-card-focus-shadow: null !default;
 
 /// The bottom margin of the OrgChart Card title.
 /// @group orgchart
