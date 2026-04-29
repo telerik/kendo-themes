@@ -249,12 +249,42 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-track-item-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline's focused track items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-timeline-track-item-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Timeline track item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-timeline-track-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Timeline track item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-timeline-track-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Timeline track item.</div></div>
     </td>
 </tr>
 <tr>
@@ -360,8 +390,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-callout-width</td>
     <td>Number</td>
-    <td><code>14px</code></td>
-    <td><code>14px</code></td>
+    <td><code>10px</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline's flag callout.</div></div>
@@ -370,8 +400,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-callout-height</td>
     <td>Number</td>
-    <td><code>7px</code></td>
-    <td><code>7px</code></td>
+    <td><code>10px</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline's flag callout.</div></div>
@@ -391,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-flag-margin-bottom-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-track-size} + 2 * #{$kendo-timeline-track-border-width} + #{$kendo-timeline-flag-offset-bottom} + #{$kendo-timeline-flag-callout-height})</code></td>
-    <td><code>calc(var(--kendo-spacing-1\.5) + 2 * 1px + 4px + 7px)</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5) + 2 * 1px + 4px + 10px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline flag.</div></div>

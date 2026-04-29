@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-focus-border</td>
-    <td>String</td>
-    <td><code>$kendo-card-focus-border</code></td>
-    <td><code>var(--kendo-color-border-alt)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
@@ -219,12 +219,42 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(1)</code></td>
-    <td><code>var(--kendo-elevation-1)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -319,9 +349,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-card-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(1)</code></td>
-    <td><code>var(--kendo-elevation-1)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart Card.</div></div>

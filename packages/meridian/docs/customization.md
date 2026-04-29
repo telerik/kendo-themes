@@ -14,36 +14,6 @@ position: 9
 
 The following table lists the available variables for customizing the Meridian theme.
 
-### Common
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px rgba(0, 0, 0, .13)</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused items.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
 ### Accessibility
 
 <table class="theme-variables">
@@ -674,8 +644,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-actionsheet-item-description-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ActionSheet item description.</div></div>
@@ -694,8 +664,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-actionsheet-item-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered ActionSheet item.</div></div>
@@ -783,12 +753,32 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-actionsheet-item-focus-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-focus-shadow</code></td>
-    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused ActionSheet item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-item-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ActionSheet item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ActionSheet item.</div></div>
     </td>
 </tr>
 <tr>
@@ -5371,12 +5361,42 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-card-focus-border</td>
-    <td>String</td>
-    <td><code>k-color(border-alt)</code></td>
-    <td><code>var(--kendo-color-border-alt)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -8922,7 +8942,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 261.13))</li><li>subtle: oklch(55.44% 0.0407 257.42deg)</li><li>surface: oklch(98.46% 0.0017 247.84deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) 1 0 h)</li><li>border: oklch(79.5% 0.0197 255.55deg / 0.35)</li><li>border-alt: oklch(79.5% 0.0197 255.55deg / 0.5)</li><li>base-subtle: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.98) calc(c + 0.0058) calc(h + 10.48))</li><li>base-subtle-active: oklch(from var(--kendo-color-base) clamp(0.03, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.97) calc(c + 0.0076) calc(h + 8.84))</li><li>base: oklch(96.92% 0.0034 247.86deg)</li><li>base-hover: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.99) calc(c + 0.0058) calc(h + 10.48))</li><li>base-active: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.98) calc(c + 0.0076) calc(h + 8.84))</li><li>base-emphasis: oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.0984, (0.35 - l) * 99999, 0.0984)), 0.95) calc(c + 0.0094) calc(h + 7.65))</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>primary-subtle: oklch(from var(--kendo-color-primary) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39))</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) calc(l + 0.5784) calc(c - 0.0295) calc(h - 4.47))</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) calc(l + 0.5571) calc(c - 0.0265) calc(h - 1.78))</li><li>primary: oklch(37.17% 0.0392 257.29deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.0922, (0.35 - l) * 99999, 0.0922))) calc(c - 0.0023) calc(h + 2.74))</li><li>primary-active: oklch(from var(--kendo-color-primary) max(0.20, calc(l + clamp(-0.1640, (0.35 - l) * 99999, 0.1640))) calc(c + 0.0007) calc(h + 8.47))</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.4973) calc(c - 0.0193) calc(h - 4.39))</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l - 0.2429) calc(c + 0.0014) calc(h + 7.41))</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) clamp(0.20, calc(l - 0.0922), 0.60) calc(c - 0.0023) calc(h + 2.74))</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.4027) calc(c - 0.1869) calc(h + 7.65))</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) calc(l + 0.3749) calc(c - 0.1730) calc(h + 6.61))</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l + 0.3424) calc(c - 0.1561) calc(h + 7.13))</li><li>secondary: oklch(54.53% 0.2124 275.85deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) max(0.15, calc(l + clamp(-0.0569, (0.35 - l) * 99999, 0.0569))) calc(c - 0.0174) calc(h - 0.42))</li><li>secondary-active: oklch(from var(--kendo-color-secondary) max(0.20, calc(l + clamp(-0.1233, (0.35 - l) * 99999, 0.1233))) calc(c - 0.0417) calc(h - 0.77))</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) calc(l - 0.2705) calc(c - 0.1041) h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l - 0.1233), 0.60) calc(c - 0.0417) calc(h - 0.77))</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) calc(l + 0.1308) calc(c - 0.0793) calc(h + 3.78))</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) calc(l + 0.1097) calc(c - 0.0665) calc(h + 0.96))</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) calc(l + 0.0830) calc(c - 0.0486) calc(h + 0.87))</li><li>tertiary: oklch(83.18% 0.1046 310.19deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) max(0.15, calc(l + clamp(-0.0551, (0.35 - l) * 99999, 0.0551))) calc(c + 0.0342) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) max(0.20, calc(l + clamp(-0.1072, (0.35 - l) * 99999, 0.1072))) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l - 0.1072) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l - 0.4562) calc(c + 0.0303) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0.2783, (0.65 - l) * 99999, 0.95) 0.0970 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) clamp(0.20, calc(l - 0.4562), 0.60) calc(c + 0.0303) h)</li><li>info-subtle: oklch(from var(--kendo-color-info) calc(l + 0.3276) calc(c - 0.0923) calc(h - 12.89))</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) calc(l + 0.2710) calc(c - 0.0723) calc(h - 12.07))</li><li>info-subtle-active: oklch(from var(--kendo-color-info) calc(l + 0.2166) calc(c - 0.0535) calc(h - 9.52))</li><li>info: oklch(56.43% 0.131 241.46deg)</li><li>info-hover: oklch(from var(--kendo-color-info) max(0.15, calc(l + clamp(-0.0362, (0.35 - l) * 99999, 0.0362))) calc(c - 0.0083) calc(h - 0.10))</li><li>info-active: oklch(from var(--kendo-color-info) max(0.20, calc(l + clamp(-0.0735, (0.35 - l) * 99999, 0.0735))) calc(c - 0.0181) calc(h - 0.68))</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.1218) calc(c - 0.0235) calc(h - 8.04))</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l - 0.1490) calc(c - 0.0360) calc(h - 0.92))</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) clamp(0.20, calc(l - 0.0735), 0.60) calc(c - 0.0181) calc(h - 0.68))</li><li>success-subtle: oklch(from var(--kendo-color-success) calc(l + 0.3820) calc(c - 0.0756) calc(h + 10.01))</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) calc(l + 0.3257) calc(c - 0.0510) calc(h + 9.38))</li><li>success-subtle-active: oklch(from var(--kendo-color-success) calc(l + 0.2724) calc(c - 0.0300) calc(h + 7.48))</li><li>success: oklch(51.46% 0.1066 163.53deg)</li><li>success-hover: oklch(from var(--kendo-color-success) max(0.15, calc(l + clamp(-0.0369, (0.35 - l) * 99999, 0.0369))) calc(c - 0.0071) h)</li><li>success-active: oklch(from var(--kendo-color-success) max(0.20, calc(l + clamp(-0.0744, (0.35 - l) * 99999, 0.0744))) calc(c - 0.0145) calc(h - 0.12))</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.1725) calc(c - 0.0033) calc(h + 5.16))</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l - 0.1550) calc(c - 0.0314) calc(h + 0.29))</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) clamp(0.20, calc(l - 0.1126), 0.60) calc(c - 0.0222) calc(h - 0.26))</li><li>warning-subtle: oklch(from var(--kendo-color-warning) calc(l + 0.0793) calc(c - 0.1084) calc(h + 1.96))</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) calc(l + 0.0637) calc(c - 0.0833) calc(h + 1.54))</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) calc(l + 0.0517) calc(c - 0.0593) calc(h + 1.36))</li><li>warning: oklch(88.34% 0.1817 99deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) max(0.15, calc(l + clamp(-0.0334, (0.35 - l) * 99999, 0.0334))) calc(c - 0.0069) calc(h - 0.16))</li><li>warning-active: oklch(from var(--kendo-color-warning) max(0.20, calc(l + clamp(-0.0672, (0.35 - l) * 99999, 0.0672))) calc(c - 0.0138) calc(h - 0.33))</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0283) calc(c - 0.0228) calc(h + 1.42))</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l - 0.5998) calc(c - 0.1574) calc(h + 162.13))</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 162.13))</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) clamp(0.20, calc(l - 0.5998), 0.60) calc(c - 0.1574) calc(h + 162.13))</li><li>error-subtle: oklch(from var(--kendo-color-error) calc(l + 0.3868) calc(c - 0.1565) calc(h - 14.72))</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) calc(l + 0.3203) calc(c - 0.1250) calc(h - 13.80))</li><li>error-subtle-active: oklch(from var(--kendo-color-error) calc(l + 0.2580) calc(c - 0.0932) calc(h - 12.78))</li><li>error: oklch(51.01% 0.1951 14.31deg)</li><li>error-hover: oklch(from var(--kendo-color-error) max(0.15, calc(l + clamp(-0.0415, (0.35 - l) * 99999, 0.0415))) calc(c - 0.0154) calc(h + 0.39))</li><li>error-active: oklch(from var(--kendo-color-error) max(0.20, calc(l + clamp(-0.0851, (0.35 - l) * 99999, 0.0851))) calc(c - 0.0324) calc(h - 0.19))</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.1479) calc(c - 0.0349) calc(h - 9.11))</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l - 0.1281) calc(c - 0.0490) calc(h - 0.16))</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.0415), 0.60) calc(c - 0.0154) calc(h + 0.39))</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse: oklch(28.36% 0.0243 261.13deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0689) calc(c - 0.0017) calc(h + 7.83))</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>series: oklch(54.53% 0.2124 275.85deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l - 0.1233) calc(c - 0.0417) calc(h - 0.77))</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l - 0.1945) calc(c - 0.0713) calc(h - 0.52))</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l + 0.1176) calc(c - 0.0308) calc(h + 2.64))</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.0868) calc(c + 0.0134) calc(h + 34.73))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l - 0.1664) calc(c - 0.0541) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l - 0.2565) calc(c - 0.0909) calc(h - 0.37))</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l + 0.0925) calc(c - 0.0531) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l + 0.1997) calc(c - 0.1212) calc(h - 0.39))</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.1534) calc(c - 0.0058) calc(h + 86.96))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l - 0.1333) calc(c - 0.0427) calc(h - 0.57))</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l - 0.2736) calc(c - 0.0877) calc(h - 0.57))</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l + 0.0604) calc(c - 0.0487) calc(h - 3.57))</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l + 0.1339) calc(c - 0.1035) calc(h - 5.82))</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.2229) calc(c - 0.0482) calc(h - 122.72))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l - 0.1462) calc(c - 0.0334) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l - 0.3015) calc(c - 0.0691) calc(h + 0.38))</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l + 0.0522) calc(c - 0.0354) calc(h + 2.32))</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l + 0.1078) calc(c - 0.0775) calc(h + 4.33))</li><li>series-e: oklch(from var(--kendo-color-series) calc(l + 0.3660) calc(c - 0.0645) calc(h - 179.84))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l - 0.1759) calc(c - 0.0305) calc(h + 0.31))</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l - 0.3623) calc(c - 0.0621) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l + 0.0206) calc(c - 0.0289) calc(h + 0.79))</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l + 0.0411) calc(c - 0.0664) calc(h + 0.31))</li><li>series-f: oklch(from var(--kendo-color-series) calc(l + 0.1532) calc(c - 0.0202) calc(h + 111.34))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l - 0.1947) calc(c - 0.0581) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l - 0.3643) calc(c - 0.1031) calc(h - 0.41))</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l + 0.0613) calc(c - 0.0491) calc(h - 2.12))</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l + 0.1348) calc(c - 0.1001) calc(h - 3.88))</li></ul></td>
+    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 261.13))</li><li>subtle: oklch(55.44% 0.0407 257.42deg)</li><li>surface: oklch(98.46% 0.0017 247.84deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) 1 0 h)</li><li>border: oklch(79.5% 0.0197 255.55deg / 0.35)</li><li>border-alt: oklch(79.5% 0.0197 255.55deg / 0.5)</li><li>base-subtle: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.98) calc(c + 0.0058) calc(h + 10.48))</li><li>base-subtle-active: oklch(from var(--kendo-color-base) clamp(0.03, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.97) calc(c + 0.0076) calc(h + 8.84))</li><li>base: oklch(96.92% 0.0034 247.86deg)</li><li>base-hover: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.99) calc(c + 0.0058) calc(h + 10.48))</li><li>base-active: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.98) calc(c + 0.0076) calc(h + 8.84))</li><li>base-emphasis: oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.0984, (0.35 - l) * 99999, 0.0984)), 0.95) calc(c + 0.0094) calc(h + 7.65))</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>primary-subtle: oklch(from var(--kendo-color-primary) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39))</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) calc(l + 0.5784) calc(c - 0.0295) calc(h - 4.47))</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) calc(l + 0.5571) calc(c - 0.0265) calc(h - 1.78))</li><li>primary: oklch(37.17% 0.0392 257.29deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.0922, (0.35 - l) * 99999, 0.0922))) calc(c - 0.0023) calc(h + 2.74))</li><li>primary-active: oklch(from var(--kendo-color-primary) max(0.20, calc(l + clamp(-0.1640, (0.35 - l) * 99999, 0.1640))) calc(c + 0.0007) calc(h + 8.47))</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.4973) calc(c - 0.0193) calc(h - 4.39))</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l - 0.2429) calc(c + 0.0014) calc(h + 7.41))</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) clamp(0.20, calc(l - 0.0922), 0.60) calc(c - 0.0023) calc(h + 2.74))</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.4027) calc(c - 0.1869) calc(h + 7.65))</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) calc(l + 0.3749) calc(c - 0.1730) calc(h + 6.61))</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l + 0.3424) calc(c - 0.1561) calc(h + 7.13))</li><li>secondary: oklch(54.53% 0.2124 275.85deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) max(0.15, calc(l + clamp(-0.0569, (0.35 - l) * 99999, 0.0569))) calc(c - 0.0174) calc(h - 0.42))</li><li>secondary-active: oklch(from var(--kendo-color-secondary) max(0.20, calc(l + clamp(-0.1233, (0.35 - l) * 99999, 0.1233))) calc(c - 0.0417) calc(h - 0.77))</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) calc(l - 0.2705) calc(c - 0.1041) h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l - 0.1233), 0.60) calc(c - 0.0417) calc(h - 0.77))</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) calc(l + 0.1308) calc(c - 0.0793) calc(h + 3.78))</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) calc(l + 0.1097) calc(c - 0.0665) calc(h + 0.96))</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) calc(l + 0.0830) calc(c - 0.0486) calc(h + 0.87))</li><li>tertiary: oklch(83.18% 0.1046 310.19deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) max(0.15, calc(l + clamp(-0.0551, (0.35 - l) * 99999, 0.0551))) calc(c + 0.0342) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) max(0.20, calc(l + clamp(-0.1072, (0.35 - l) * 99999, 0.1072))) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l - 0.1072) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l - 0.4562) calc(c + 0.0303) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0.2783, (0.65 - l) * 99999, 0.95) 0.0970 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) clamp(0.20, calc(l - 0.4562), 0.60) calc(c + 0.0303) h)</li><li>info-subtle: oklch(from var(--kendo-color-info) calc(l + 0.3276) calc(c - 0.0923) calc(h - 12.89))</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) calc(l + 0.2710) calc(c - 0.0723) calc(h - 12.07))</li><li>info-subtle-active: oklch(from var(--kendo-color-info) calc(l + 0.2166) calc(c - 0.0535) calc(h - 9.52))</li><li>info: oklch(56.43% 0.131 241.46deg)</li><li>info-hover: oklch(from var(--kendo-color-info) max(0.15, calc(l + clamp(-0.0362, (0.35 - l) * 99999, 0.0362))) calc(c - 0.0083) calc(h - 0.10))</li><li>info-active: oklch(from var(--kendo-color-info) max(0.20, calc(l + clamp(-0.0735, (0.35 - l) * 99999, 0.0735))) calc(c - 0.0181) calc(h - 0.68))</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.1218) calc(c - 0.0235) calc(h - 8.04))</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l - 0.20) calc(c - 0.0360) calc(h - 0.92))</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) clamp(0.20, calc(l - 0.18), 0.55) calc(c - 0.0181) calc(h - 0.68))</li><li>success-subtle: oklch(from var(--kendo-color-success) calc(l + 0.3820) calc(c - 0.0756) calc(h + 10.01))</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) calc(l + 0.3257) calc(c - 0.0510) calc(h + 9.38))</li><li>success-subtle-active: oklch(from var(--kendo-color-success) calc(l + 0.2724) calc(c - 0.0300) calc(h + 7.48))</li><li>success: oklch(51.46% 0.1066 163.53deg)</li><li>success-hover: oklch(from var(--kendo-color-success) max(0.15, calc(l + clamp(-0.0369, (0.35 - l) * 99999, 0.0369))) calc(c - 0.0071) h)</li><li>success-active: oklch(from var(--kendo-color-success) max(0.20, calc(l + clamp(-0.0744, (0.35 - l) * 99999, 0.0744))) calc(c - 0.0145) calc(h - 0.12))</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.1725) calc(c - 0.0033) calc(h + 5.16))</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l - 0.1550) calc(c - 0.0314) calc(h + 0.29))</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) clamp(0.20, calc(l - 0.1126), 0.60) calc(c - 0.0222) calc(h - 0.26))</li><li>warning-subtle: oklch(from var(--kendo-color-warning) calc(l + 0.0793) calc(c - 0.1084) calc(h + 1.96))</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) calc(l + 0.0637) calc(c - 0.0833) calc(h + 1.54))</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) calc(l + 0.0517) calc(c - 0.0593) calc(h + 1.36))</li><li>warning: oklch(88.34% 0.1817 99deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) max(0.15, calc(l + clamp(-0.0334, (0.35 - l) * 99999, 0.0334))) calc(c - 0.0069) calc(h - 0.16))</li><li>warning-active: oklch(from var(--kendo-color-warning) max(0.20, calc(l + clamp(-0.0672, (0.35 - l) * 99999, 0.0672))) calc(c - 0.0138) calc(h - 0.33))</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0283) calc(c - 0.0228) calc(h + 1.42))</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l - 0.5998) calc(c - 0.1574) calc(h + 162.13))</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 162.13))</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) clamp(0.20, calc(l - 0.5998), 0.60) calc(c - 0.1574) calc(h + 162.13))</li><li>error-subtle: oklch(from var(--kendo-color-error) calc(l + 0.3868) calc(c - 0.1565) calc(h - 14.72))</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) calc(l + 0.3203) calc(c - 0.1250) calc(h - 13.80))</li><li>error-subtle-active: oklch(from var(--kendo-color-error) calc(l + 0.2580) calc(c - 0.0932) calc(h - 12.78))</li><li>error: oklch(51.01% 0.1951 14.31deg)</li><li>error-hover: oklch(from var(--kendo-color-error) max(0.15, calc(l + clamp(-0.0415, (0.35 - l) * 99999, 0.0415))) calc(c - 0.0154) calc(h + 0.39))</li><li>error-active: oklch(from var(--kendo-color-error) max(0.20, calc(l + clamp(-0.0851, (0.35 - l) * 99999, 0.0851))) calc(c - 0.0324) calc(h - 0.19))</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.1479) calc(c - 0.0349) calc(h - 9.11))</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l - 0.18) calc(c - 0.0490) calc(h - 0.16))</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.16), 0.55) calc(c - 0.0154) calc(h + 0.39))</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse: oklch(28.36% 0.0243 261.13deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0689) calc(c - 0.0017) calc(h + 7.83))</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>series: oklch(54.53% 0.2124 275.85deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l - 0.1233) calc(c - 0.0417) calc(h - 0.77))</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l - 0.1945) calc(c - 0.0713) calc(h - 0.52))</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l + 0.1176) calc(c - 0.0308) calc(h + 2.64))</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.0868) calc(c + 0.0134) calc(h + 34.73))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l - 0.1664) calc(c - 0.0541) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l - 0.2565) calc(c - 0.0909) calc(h - 0.37))</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l + 0.0925) calc(c - 0.0531) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l + 0.1997) calc(c - 0.1212) calc(h - 0.39))</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.1534) calc(c - 0.0058) calc(h + 86.96))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l - 0.1333) calc(c - 0.0427) calc(h - 0.57))</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l - 0.2736) calc(c - 0.0877) calc(h - 0.57))</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l + 0.0604) calc(c - 0.0487) calc(h - 3.57))</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l + 0.1339) calc(c - 0.1035) calc(h - 5.82))</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.2229) calc(c - 0.0482) calc(h - 122.72))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l - 0.1462) calc(c - 0.0334) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l - 0.3015) calc(c - 0.0691) calc(h + 0.38))</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l + 0.0522) calc(c - 0.0354) calc(h + 2.32))</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l + 0.1078) calc(c - 0.0775) calc(h + 4.33))</li><li>series-e: oklch(from var(--kendo-color-series) calc(l + 0.3660) calc(c - 0.0645) calc(h - 179.84))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l - 0.1759) calc(c - 0.0305) calc(h + 0.31))</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l - 0.3623) calc(c - 0.0621) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l + 0.0206) calc(c - 0.0289) calc(h + 0.79))</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l + 0.0411) calc(c - 0.0664) calc(h + 0.31))</li><li>series-f: oklch(from var(--kendo-color-series) calc(l + 0.1532) calc(c - 0.0202) calc(h + 111.34))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l - 0.1947) calc(c - 0.0581) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l - 0.3643) calc(c - 0.1031) calc(h - 0.41))</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l + 0.0613) calc(c - 0.0491) calc(h - 2.12))</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l + 0.1348) calc(c - 0.1001) calc(h - 3.88))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -10195,9 +10215,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
-    <td>Color</td>
-    <td><code>rgba(0, 0, 0, .3)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.3)"></span><code>rgba(0, 0, 0, 0.3)</code></td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient.</div></div>
@@ -10818,8 +10838,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-outline-color</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-inverse) 80%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-inverse) 80%, transparent)</code></td>
+    <td><code>k-color(on-inverse)</code></td>
+    <td><code>var(--kendo-color-on-inverse)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ColorGradient drag handle.</div></div>
@@ -10849,7 +10869,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td>String</td>
     <td><code>$kendo-color-gradient-draghandle-focus-outline-color</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-inverse) 80%, transparent)</code></td>
+    <td><code>var(--kendo-color-on-inverse)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
@@ -11219,8 +11239,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px k-color(inverse), inset 0 0 0 1px color-mix(in srgb, k-color(on-inverse) 60%, transparent)</code></td>
-    <td><code>(0 0 3px 1px var(--kendo-color-inverse), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-on-inverse) 60%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px k-color(on-inverse), inset 0 0 0 4px k-color(subtle)</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-on-inverse), inset 0 0 0 4px var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -12771,8 +12791,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-drawer-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Drawer item.</div></div>
@@ -12821,8 +12841,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-drawer-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Drawer item.</div></div>
@@ -12841,8 +12861,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-drawer-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered Drawer item.</div></div>
@@ -13651,7 +13671,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-expander-header-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent )</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -13711,8 +13731,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-expander-header-sub-title-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel sub-title.</div></div>
@@ -15973,9 +15993,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-gantt-nonwork-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt non-working days.</div></div>
@@ -16204,8 +16224,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-gantt-task-text</td>
     <td>String</td>
-    <td><code>k-color(base)</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>k-color(on-primary)</code></td>
+    <td><code>var(--kendo-color-on-primary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt task.</div></div>
@@ -17224,8 +17244,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-grid-header-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid header.</div></div>
@@ -17255,7 +17275,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-grid-footer-text</td>
     <td>String</td>
     <td><code>$kendo-grid-header-text</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid footer.</div></div>
@@ -17445,7 +17465,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-grid-grouping-header-text</td>
     <td>String</td>
     <td><code>$kendo-grid-header-text</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid grouping header.</div></div>
@@ -17635,7 +17655,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-grid-sticky-header-text</td>
     <td>String</td>
     <td><code>$kendo-grid-header-text</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the sticky header in the Grid.</div></div>
@@ -18054,8 +18074,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-grid-stack-header-color</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Grid stack layout column header.</div></div>
@@ -18064,8 +18084,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-grid-stack-focus-outline</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 12%, transparent)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the Grid stack layout focused cell.</div></div>
@@ -20364,8 +20384,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-list-item-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered List items.</div></div>
@@ -20434,8 +20454,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-list-item-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected List items.</div></div>
@@ -20514,8 +20534,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-list-option-label-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the 'Option Label' text.</div></div>
@@ -22821,8 +22841,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-menu-popup-item-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered Menu item in popup.</div></div>
@@ -22861,8 +22881,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-menu-popup-item-active-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active Menu item in popup.</div></div>
@@ -23793,9 +23813,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-focus-border</td>
-    <td>String</td>
-    <td><code>$kendo-card-focus-border</code></td>
-    <td><code>var(--kendo-color-border-alt)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
@@ -23803,12 +23823,42 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(1)</code></td>
-    <td><code>var(--kendo-elevation-1)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -23903,9 +23953,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-orgchart-card-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(1)</code></td>
-    <td><code>var(--kendo-elevation-1)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart Card.</div></div>
@@ -24769,12 +24819,32 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-pager-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -25239,8 +25309,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar header.</div></div>
@@ -25359,8 +25429,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-hover-focus-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused and hovered PanelBar header.</div></div>
@@ -25399,8 +25469,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar header.</div></div>
@@ -25439,8 +25509,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar header.</div></div>
@@ -25559,8 +25629,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar items.</div></div>
@@ -25679,8 +25749,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-hover-focus-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused and hovered PanelBar items.</div></div>
@@ -25719,8 +25789,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar items.</div></div>
@@ -25759,8 +25829,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar items.</div></div>
@@ -26679,8 +26749,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-pivotgrid-headers-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid header.</div></div>
@@ -26709,8 +26779,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-pivotgrid-total-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid total cells.</div></div>
@@ -26759,8 +26829,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-pivotgrid-selected-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary) 25%, transparent)</code></td>
+    <td><code>color-mix(in srgb, k-color(secondary) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-secondary) 12%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the PivotGrid.</div></div>
@@ -26768,9 +26838,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-pivotgrid-selected-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the PivotGrid.</div></div>
@@ -27220,7 +27290,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-pivotgrid-alt-text</td>
     <td>String</td>
     <td><code>$kendo-grid-header-text</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid.</div></div>
@@ -29934,9 +30004,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-scrollview-pagebutton-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
@@ -29944,12 +30014,32 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, .13)</code></td>
-    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ScrollView page button.</div></div>
     </td>
 </tr>
 <tr>
@@ -34681,8 +34771,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-table-header-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table headers.</div></div>
@@ -34722,7 +34812,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-table-footer-text</td>
     <td>String</td>
     <td><code>$kendo-table-header-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table footers.</div></div>
@@ -34752,7 +34842,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-table-group-row-text</td>
     <td>String</td>
     <td><code>$kendo-table-header-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of group rows in table.</div></div>
@@ -35838,9 +35928,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-taskboard-column-container-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column container.</div></div>
@@ -35948,12 +36038,42 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-taskboard-column-focus-border</td>
-    <td>String</td>
-    <td><code>k-color(border-alt)</code></td>
-    <td><code>var(--kendo-color-border-alt)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -36308,9 +36428,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-taskboard-card-focus-border</td>
-    <td>String</td>
-    <td><code>k-color(border-alt)</code></td>
-    <td><code>var(--kendo-color-border-alt)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TaskBoard Card.</div></div>
@@ -36528,9 +36648,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-tile-layout-card-focus-shadow</td>
-    <td>String</td>
-    <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the TileLayout card.</div></div>
@@ -37337,12 +37457,42 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-timeline-track-item-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline's focused track items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-timeline-track-item-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Timeline track item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-timeline-track-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Timeline track item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-timeline-track-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Timeline track item.</div></div>
     </td>
 </tr>
 <tr>
@@ -37448,8 +37598,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-timeline-flag-callout-width</td>
     <td>Number</td>
-    <td><code>14px</code></td>
-    <td><code>14px</code></td>
+    <td><code>10px</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline's flag callout.</div></div>
@@ -37458,8 +37608,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-timeline-flag-callout-height</td>
     <td>Number</td>
-    <td><code>7px</code></td>
-    <td><code>7px</code></td>
+    <td><code>10px</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline's flag callout.</div></div>
@@ -37479,7 +37629,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-timeline-flag-margin-bottom-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-track-size} + 2 * #{$kendo-timeline-track-border-width} + #{$kendo-timeline-flag-offset-bottom} + #{$kendo-timeline-flag-callout-height})</code></td>
-    <td><code>calc(var(--kendo-spacing-1\.5) + 2 * 1px + 4px + 7px)</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5) + 2 * 1px + 4px + 10px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline flag.</div></div>
@@ -38637,8 +38787,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered TreeView items.</div></div>
@@ -38677,8 +38827,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>
@@ -40330,8 +40480,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
-    <td><code>var(--kendo-color-surface)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload dropzone.</div></div>
@@ -40349,9 +40499,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-upload-dropzone-hover-bg</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Upload dropzone.</div></div>

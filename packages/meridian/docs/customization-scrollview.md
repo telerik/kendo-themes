@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-scrollview-pagebutton-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px k-color(border-alt)</code></td>
-    <td><code>(0 0 0 2px var(--kendo-color-border-alt))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
@@ -169,12 +169,32 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-shadow</td>
-    <td>List</td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, .13)</code></td>
-    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ScrollView page button.</div></div>
     </td>
 </tr>
 <tr>

@@ -330,8 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered TreeView items.</div></div>
@@ -370,8 +370,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>

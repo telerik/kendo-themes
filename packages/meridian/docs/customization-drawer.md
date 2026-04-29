@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-hover)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-hover)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Drawer item.</div></div>
@@ -360,8 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Drawer item.</div></div>
@@ -380,8 +380,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle-active)</code></td>
-    <td><code>var(--kendo-color-primary-subtle-active)</code></td>
+    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered Drawer item.</div></div>
