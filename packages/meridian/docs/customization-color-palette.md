@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 3px 1px k-color(inverse), inset 0 0 0 1px color-mix(in srgb, k-color(on-inverse) 60%, transparent)</code></td>
-    <td><code>(0 0 3px 1px var(--kendo-color-inverse), inset 0 0 0 1px color-mix(in srgb, var(--kendo-color-on-inverse) 60%, transparent))</code></td>
+    <td><code>inset 0 0 0 2px k-color(on-inverse), inset 0 0 0 4px k-color(subtle)</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-on-inverse), inset 0 0 0 4px var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
