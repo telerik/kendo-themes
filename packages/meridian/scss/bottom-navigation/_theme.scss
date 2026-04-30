@@ -47,8 +47,17 @@
                     );
 
                     .k-bottom-nav-item.k-selected {
-                        @include fill( $bg: color-mix(in srgb, k-color(#{$name}-subtle-active) 70%, transparent), $color: k-color(#{$name}-on-subtle));
-
+                        @if $name == "inverse" {
+                            @include fill(
+                                $bg: k-color(inverse-active),
+                                $color: k-color(on-inverse)
+                            );
+                        } @else {
+                            @include fill(
+                                $bg: k-color(#{$name}-subtle-active),
+                                $color: k-color(#{$name}-on-subtle)
+                            );
+                        }
                     }
                 }
             }
@@ -61,7 +70,17 @@
                 #{k-when-default($kendo-bottom-nav-default-theme-color, $name)}
                 &.k-bottom-nav-#{$name} {
                     .k-bottom-nav-item.k-selected {
-                        @include fill( $bg: k-color(#{$name}-subtle-active), $color: k-color(#{$name}-on-subtle));
+                        @if $name == "inverse" {
+                            @include fill(
+                                $bg: k-color(inverse-active),
+                                $color: k-color(on-inverse)
+                            );
+                        } @else {
+                            @include fill(
+                                $bg: k-color(#{$name}-subtle-active),
+                                $color: k-color(#{$name}-on-subtle)
+                            );
+                        }
                     }
                 }
             }
