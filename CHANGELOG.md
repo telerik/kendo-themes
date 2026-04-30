@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v14.0.0-dev.1...v14.0.0-dev.2) (2026-04-30)
+
+
+### Bug Fixes
+
+* **html:** add default border-radius to scroll buttons ([97c7aed](https://github.com/telerik/kendo-themes/commit/97c7aed95f5b33620f1459f6ad9bc6434dc3aa14))
+
+
+### Features
+
+* **html:** replace caret icons across components with chevrons ([3642fc9](https://github.com/telerik/kendo-themes/commit/3642fc9c2700e014e188c412c39f1a3a0daba25c))
+
+
+
+
+
 # [14.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v14.0.0-dev.0...v14.0.0-dev.1) (2026-04-28)
 
 
