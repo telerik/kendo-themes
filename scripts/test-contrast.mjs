@@ -32,14 +32,22 @@ const EXCLUSIONS = {
         './tests/scheduler/scheduler-react-timeline-multi.html': 'inline `background: darkred|green` on events',
         './tests/scheduler/scheduler-tooltip.html': 'inline `background-color: rgb(17,134,64)` on tooltip event',
         './tests/button-group/button-group.html': 'inline `background: gray` / `color: magenta` demo styles',
-        './tests/loader/loader-container-overlay.html': 'themed label over .k-overlay at 0.5 opacity (alpha-blended mid-gray)'
+        './tests/loader/loader-container-overlay.html': 'themed label over .k-overlay at 0.5 opacity (alpha-blended mid-gray)',
+        './tests/captcha/captcha-rtl.html': 'k-text-error color on surface; error color contrast is by design',
+        './tests/captcha/captcha.html': 'k-text-error color on surface; error color contrast is by design',
+        './tests/colorgradient/colorgradient-rtl.html': 'k-text-error color on surface; error color contrast is by design',
+        './tests/colorgradient/colorgradient-contrast.html': 'k-text-error color on surface; error color contrast is by design',
+        './tests/map/map.html': 'attribution link color; not theme-controlled',
+        './tests/map/map-rtl.html': 'attribution link color; not theme-controlled',
+        './tests/chart/chart-tooltip.html': 'inline series colors on tooltip; not theme-controlled',
     },
     // Pages skipped from focus-indicator checks — non-theme surfaces.
     focusPages: {
         './tests/button-group/button-group.html': 'demo on `background: gray` (rgb(120,120,120)); cannot reach 3:1',
         './tests/scrollview/scrollview.html': 'translucent .k-scrollview-nav-wrap overlay; cannot satisfy 3:1 on both surfaces',
         './tests/scrollview/scrollview-rtl.html': 'translucent .k-scrollview-nav-wrap overlay; cannot satisfy 3:1 on both surfaces',
-        './tests/colorgradient/colorgradient-draghandle.html': 'inline linear-gradient hue/alpha tracks; backgroundColor is transparent'
+        './tests/colorgradient/colorgradient-draghandle.html': 'inline linear-gradient hue/alpha tracks; backgroundColor is transparent',
+        './tests/colorpalette/colorpalette-states.html': 'inline palette colors; not theme-controlled'
     },
     // Class names whose elements should be skipped during focus-ring checks.
     focusElementClasses: {
@@ -56,7 +64,10 @@ const EXCLUSIONS = {
         'barcode': 'image of black lines on transparent bg',
         'circular-progressbar': 'svg-on-text overlap',
         'treemap': 'data-driven tile colors that the theme cannot control',
-        'preview-components': 'aggregator page; component-specific pages cover the same elements'
+        'preview-components': 'aggregator page; component-specific pages cover the same elements',
+        'scheduler-events': 'inline background colors on events; not theme-controlled',
+        'scheduler-adaptive-month': 'inline background colors on events; not theme-controlled',
+        'grid-assistant-window': 'k-text-error element; not theme-controlled'
     },
     // Axe text-contrast violations are dropped if any ancestor matches one of
     // these selectors (disabled, demo overrides, warning-color buttons …).
