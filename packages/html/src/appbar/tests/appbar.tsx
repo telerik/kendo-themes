@@ -4,9 +4,6 @@ import { Textbox } from '../../textbox';
 
 
 const styles = `
-    #test-area {
-        background-color: #f3f5f7;
-    }
     .title {
         font-size: 19px;
         margin: 0;

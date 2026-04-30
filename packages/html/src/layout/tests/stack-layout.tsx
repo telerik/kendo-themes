@@ -16,7 +16,6 @@ const styles = `
         box-sizing: border-box;
         padding: 4px;
         border: 1px solid #cccccc;
-        background: #fafafa;
     }
 `;
 

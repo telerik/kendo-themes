@@ -185,7 +185,7 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell"></TableTd>
                                         <TableTd className="k-detail-cell" colspan={5}>
                                             {/* hierarchy child content */}
-                                            <div style={{ background: "#ccc", padding: "10px" }}>
+                                            <div style={{ background: "var(--kendo-color-surface)", padding: "10px" }}>
                                             Nested content
                                             </div>
                                         </TableTd>

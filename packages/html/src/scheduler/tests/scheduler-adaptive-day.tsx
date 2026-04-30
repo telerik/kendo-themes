@@ -157,7 +157,7 @@ export default () =>(
                                                             <tr><td className=" k-nonwork-hour">&nbsp;</td></tr>
                                                         </tbody>
                                                     </table>
-                                                    <div style={{ backgroundColor: "rgb(248, 163, 152)", borderColor: "rgb(248, 163, 152)", top: "135px", height: "42px", width: "490.1px", left: "2px" }}
+                                                    <div style={{ top: "135px", height: "42px", width: "490.1px", left: "2px" }}
                                                         className="k-event k-event-inverse">
                                                         <span className="k-event-actions"></span>
                                                         <div title="(8:30 AM - 9:00 AM): Test">

@@ -11,7 +11,7 @@ const styles = `
     }
 
     .k-message-list-content-empty {
-        background-color: lightGray;
+        background-color: var(--kendo-color-base);
     }
 `;
 
