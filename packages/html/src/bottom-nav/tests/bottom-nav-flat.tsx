@@ -7,7 +7,7 @@ const styles = `
         gap: 10px;
     }
     #test-area .colors-flat {
-        background-color: rgb(234, 234, 234);
+        background-color: var(--kendo-color-base);
     }
 `;
 

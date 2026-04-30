@@ -3,7 +3,7 @@ import { BottomNavNormal, BottomNavItem } from '../../bottom-nav';
 
 const styles = `
 #test-area {
-    background-color: #f3f5f7;
+    background-color: var(--kendo-color-base);
 }
 `;
 

@@ -7,7 +7,7 @@ const styles = `
         width: 80px;
         min-height: 30px;
         box-sizing: border-box;
-        background-color: #f2f2f2;
+        background-color: var(--kendo-color-base);
         display: flex;
         flex-direction: row;
         align-items: center;
