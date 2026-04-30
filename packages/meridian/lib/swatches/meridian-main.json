@@ -5,11 +5,11 @@
     "base": "@progress/kendo-theme-meridian",
     "version": "13.1.1-dev.1",
     "previewColors": [
-        "#ffffff",
-        "#f5f5f5",
-        "#ff6358",
-        "#d6534a",
-        "#424242"
+        "oklch(100% 0 0deg)",
+        "oklch(98.46% 0.0017 247.84deg)",
+        "oklch(54.53% 0.2124 275.85deg)",
+        "oklch(48.83% 0.1950 275.43deg)",
+        "oklch(37.17% 0.0392 257.29deg)"
     ],
     "components": [],
     "groups": []
