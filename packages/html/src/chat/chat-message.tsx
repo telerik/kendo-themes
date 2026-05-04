@@ -17,8 +17,8 @@ const options = {};
 
 const defaultToolbarItems = [
     <Button icon="copy" fillMode="flat" aria-label="Copy"></Button>,
-    <Button icon="arrow-rotate-cw-outline" fillMode="flat" aria-label="Retry"></Button>,
-    <Button icon="download-light" fillMode="flat" aria-label="Download"></Button>,
+    <Button icon="arrow-rotate-cw" fillMode="flat" aria-label="Retry"></Button>,
+    <Button icon="download" fillMode="flat" aria-label="Download"></Button>,
 ];
 
 const defaultOptions = {
@@ -86,7 +86,7 @@ export const ChatMessage = (
                     'k-message-failed':  failed
                 }
             )}>
-            { failed && <IconButton className="k-resend-button" icon="arrow-rotate-cw-outline" size="xsmall" fillMode="clear" aria-label="Resend" />}
+            { failed && <IconButton className="k-resend-button" icon="arrow-rotate-cw" size="xsmall" fillMode="clear" aria-label="Resend" />}
             <ChatBubble
                 typing={typing}
                 selected={selected}

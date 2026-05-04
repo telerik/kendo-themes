@@ -27,7 +27,7 @@ export type KendoChatProps = {
 }
 
 const defaultTools = <>
-    <IconButton key="paperclip" icon="paperclip-outline-alt-right" fillMode="clear" rounded="full" size="small" aria-label="Attach file" />
+    <IconButton key="paperclip" icon="paperclip" fillMode="clear" rounded="full" size="small" aria-label="Attach file" />
     <div className="k-spacer"></div>
 </>;
 
@@ -72,7 +72,7 @@ export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivE
                     {props.children}
                 </div>
                 {scrollToBottom && <div className="k-chat-scroll-to-bottom-container">
-                        <IconFloatingActionButton themeColor="base" icon="arrow-down-outline" size="small" />
+                        <IconFloatingActionButton themeColor="base" icon="arrow-down" size="small" />
                     </div>}
             </div>
             {scrollbar && <div className="k-separator"></div>}

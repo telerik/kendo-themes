@@ -159,7 +159,7 @@ export default () => (
           header={<ActionSheetHeader actionsEnd={<Button icon="check" size="large" fillMode="flat" />} title="Row Content Menu" />}
           footer={
             <ActionSheetFooter>
-              <Button icon="cancel-outline" size="large">
+              <Button icon="cancel" size="large">
                 Cancel
               </Button>
               <Button icon="check" size="large" themeColor="primary" disabled>

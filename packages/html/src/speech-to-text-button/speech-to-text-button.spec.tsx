@@ -31,7 +31,7 @@ export const SpeechToTextButton: KendoComponent<KendoSpeechToTextButtonProps & K
     return (
         <Button
             {...other}
-            icon={listening ? "stop-sm" : icon}
+            icon={listening ? "stop" : icon}
             className={classNames(
                 props.className,
                 SPEECH_TO_TEXT_BUTTON_CLASSNAME,

@@ -198,8 +198,8 @@ export default () => (
                                             <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
                                             <IconTextButton fillMode="flat" icon="arrow-rotate-cw">Retry</IconTextButton>
                                             <span className="k-spacer"></span>
-                                            <IconButton fillMode="flat" icon="thumb-up-outline"></IconButton>
-                                            <IconButton fillMode="flat" icon="thumb-down-outline"></IconButton>
+                                            <IconButton fillMode="flat" icon="thumb-up"></IconButton>
+                                            <IconButton fillMode="flat" icon="thumb-down"></IconButton>
                                         </ActionButtons>
                                     </Card>
                                 </div>
@@ -231,8 +231,8 @@ export default () => (
                                             <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
                                             <IconTextButton fillMode="flat" icon="arrow-rotate-cw">Retry</IconTextButton>
                                             <span className="k-spacer"></span>
-                                            <IconButton fillMode="flat" icon="thumb-up-outline"></IconButton>
-                                            <IconButton fillMode="flat" icon="thumb-down-outline"></IconButton>
+                                            <IconButton fillMode="flat" icon="thumb-up"></IconButton>
+                                            <IconButton fillMode="flat" icon="thumb-down"></IconButton>
                                         </ActionButtons>
                                     </Card>
                                 </div>

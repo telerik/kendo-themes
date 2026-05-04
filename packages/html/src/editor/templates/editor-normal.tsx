@@ -17,7 +17,7 @@ export const EditorNormal = (props) => (
             </ButtonGroup>,
             <ButtonGroup key="script">
                 <Button className="k-group-start" icon="subscript" aria-label="Subscript"></Button>
-                <Button className="k-group-end" icon="supscript" aria-label="Superscript"></Button>
+                <Button className="k-group-end" icon="superscript" aria-label="Superscript"></Button>
             </ButtonGroup>,
             <ButtonGroup key="indent">
                 <Button className="k-group-start" icon="indent" aria-label="Indent"></Button>

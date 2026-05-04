@@ -52,7 +52,7 @@ export default () =>(
                                         <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
                                         <IconTextButton fillMode="flat" themeColor="primary" icon="insert-bottom">Insert</IconTextButton>
                                         <IconTextButton fillMode="flat" themeColor="primary" icon="check">Replace</IconTextButton>
-                                        <IconTextButton fillMode="flat" icon="cancel-outline">Discard</IconTextButton>
+                                        <IconTextButton fillMode="flat" icon="cancel">Discard</IconTextButton>
                                     </ActionButtons>
                                 </Card>
                                 <Textarea rows={3} value="Here is a link to my portfolio. I'm a Full-stack developer with 10 years of experience. Would love your input for improvement." resize="none" flow="horizontal" suffixSeparator={false}
@@ -83,7 +83,7 @@ export default () =>(
                                         <IconTextButton fillMode="flat" themeColor="primary" icon="copy">Copy</IconTextButton>
                                         <IconTextButton fillMode="flat" themeColor="primary" icon="insert-bottom">Insert</IconTextButton>
                                         <IconTextButton fillMode="flat" themeColor="primary" icon="check">Replace</IconTextButton>
-                                        <IconTextButton fillMode="flat" icon="cancel-outline">Discard</IconTextButton>
+                                        <IconTextButton fillMode="flat" icon="cancel">Discard</IconTextButton>
                                     </ActionButtons>
                                 </Card>
                                 <Textarea rows={3} value="Here is a link to my portfolio. I'm a Full-stack developer with 10 years of experience. Would love your input for improvement." resize="none" flow="horizontal" suffixSeparator={false}
