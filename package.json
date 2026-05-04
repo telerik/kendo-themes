@@ -21,6 +21,7 @@
     "@eslint/js": "^10.0.1",
     "@jridgewell/source-map": "^0.3.10",
     "@progress/kendo-e2e": "4.14.2",
+    "@progress/kendo-svg-icons": "file:.local-deps/progress-kendo-svg-icons-4.9.0-dev.2.tgz",
     "@stylistic/stylelint-plugin": "^5.0.1",
     "@types/node": "^25.0.3",
     "autoprefixer": "^10.4.20",
