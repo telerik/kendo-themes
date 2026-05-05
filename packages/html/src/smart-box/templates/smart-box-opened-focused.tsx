@@ -25,7 +25,7 @@ export const SmartBoxOpenedFocused = (props) => {
             }
             suffix={
                 <>
-                    <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" aria-label="Start voice input" />
+                    <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" aria-label="Start voice input" />
                     <SmartBoxSendButton />
                 </>
             }

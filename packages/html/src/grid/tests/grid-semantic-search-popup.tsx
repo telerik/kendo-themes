@@ -37,7 +37,7 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
                             <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                         </>
                     }
@@ -76,7 +76,7 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
                             <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                         </>
                     }
@@ -115,7 +115,7 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
                             <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                         </>
                     }
@@ -162,7 +162,7 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
                             <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                         </>
                     }

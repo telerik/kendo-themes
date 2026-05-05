@@ -10,7 +10,7 @@ export type KendoSpeechToTextButtonOptions = KendoButtonOptions;
 export type KendoSpeechToTextButtonState = KendoButtonState;
 
 const defaultOptions = {
-    icon: "microphone-outline",
+    icon: "microphone",
 };
 
 export type KendoSpeechToTextButtonProps = KendoButtonProps & KendoSpeechToTextButtonOptions &  {

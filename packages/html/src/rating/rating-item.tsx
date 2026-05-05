@@ -44,7 +44,7 @@ export const RatingItem = (
             itemContent =
                 <>
                     <span className="k-rating-precision-complement">
-                        <Icon icon="star-outline" size="xlarge"></Icon>
+                        <Icon icon="star" size="xlarge"></Icon>
                     </span>
                     <span className="k-rating-precision-part" style={{ clipPath: `inset(${dir === "rtl" ? "0px 0px 0px 50%" : "0px 50% 0px 0px"})` }}>
                         <Icon icon="star" size="xlarge"></Icon>
@@ -54,7 +54,7 @@ export const RatingItem = (
             ;
             break;
         case "outline":
-            itemContent = <Icon icon="star-outline" size="xlarge"></Icon>;
+            itemContent = <Icon icon="star" size="xlarge"></Icon>;
             break;
         case "solid":
             itemContent = <Icon icon="star" size="xlarge"></Icon>;

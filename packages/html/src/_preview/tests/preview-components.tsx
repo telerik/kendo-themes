@@ -298,8 +298,8 @@ export default () => (
             <DrawerItem icon="bell" text="Notification" />
             <DrawerItem icon="star" text="Favourites" />
             <DrawerItem icon="calendar" text="Calendar" />
-            <DrawerItem text="Selected" selected icon="star-outline" />
-            <DrawerItem text="Hover" hover icon="star-outline" />
+            <DrawerItem text="Selected" selected icon="star" />
+            <DrawerItem text="Hover" hover icon="star" />
           </>
         }
       >
