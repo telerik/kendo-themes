@@ -4,9 +4,4 @@
 
 @mixin kendo-breadcrumb--layout() {
     @include kendo-breadcrumb--layout-base();
-
-    .k-breadcrumb-link,
-    .k-breadcrumb-root-link {
-        transition: color k-transition(rapid), background-color k-transition(rapid), outline k-transition(rapid);
-    }
 }

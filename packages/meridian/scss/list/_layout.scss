@@ -4,9 +4,4 @@
 
 @mixin kendo-list--layout() {
     @include kendo-list--layout-base();
-
-    .k-list-item,
-    .k-list-custom-value {
-        transition: color k-transition(snappy), background-color k-transition(snappy), outline-color k-transition(snappy), outline k-transition(snappy);
-    }
 }

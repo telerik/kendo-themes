@@ -15,10 +15,6 @@
                 border-radius: $kendo-calendar-range-cell-border-radius;
             }
         }
-
-        .k-calendar-cell-inner {
-            transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
-        }
     }
 
     .k-calendar:not(.k-calendar-infinite) {

@@ -34,7 +34,8 @@
 
     // Content
     .k-taskboard-content {
-        padding: 0 $kendo-taskboard-toolbar-padding-x $kendo-taskboard-content-padding-y;
+        padding-block: $kendo-taskboard-content-padding-y;
+        padding-inline: $kendo-taskboard-content-padding-x;
         display: flex;
         position: relative;
         flex: 1 1 auto;

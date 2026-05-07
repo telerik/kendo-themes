@@ -162,18 +162,30 @@
                         // Hover state
                         &:hover,
                         &.k-hover {
-                            background-color: color-mix(in srgb, k-color(#{$name}-subtle-hover) 70%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            @if $name == "warning" {
+                                background-color: color-mix(in srgb, k-color(#{$name}-subtle-hover) 25%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            } @else {
+                                background-color: color-mix(in srgb, k-color(#{$name}-subtle-hover) 50%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            }
                         }
 
                         // Active state
                         &:active,
                         &.k-active {
-                            background-color: color-mix(in srgb, k-color(#{$name}-subtle-active) 70%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            @if $name == "warning" {
+                                background-color: color-mix(in srgb, k-color(#{$name}-subtle-active) 35%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            } @else {
+                                background-color: color-mix(in srgb, k-color(#{$name}-subtle-active) 70%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            }
                         }
 
                         // Selected state
                         &.k-selected {
-                            background-color: color-mix(in srgb, k-color(#{$name}-subtle-active) 70%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            @if $name == "warning" {
+                                background-color: color-mix(in srgb, k-color(#{$name}-subtle-active) 35%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            } @else {
+                                background-color: color-mix(in srgb, k-color(#{$name}-subtle-active) 70%, transparent) !important; // stylelint-disable-line declaration-no-important
+                            }
                         }
                     }
                 }

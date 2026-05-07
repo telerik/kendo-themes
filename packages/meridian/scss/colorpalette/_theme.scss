@@ -1,6 +1,20 @@
 @use "@progress/kendo-theme-core/scss/components/colorpalette/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-color-palette--theme() {
     @include kendo-color-palette--theme-base();
+
+    .k-colorpalette-tile {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $indicator: $kendo-color-palette-tile-focus-outline-color,
+                $type: "outline",
+                $outline-width: $kendo-color-palette-tile-focus-outline-width,
+                $outline-offset: $kendo-color-palette-tile-focus-outline-offset
+            );
+        }
+    }
 }

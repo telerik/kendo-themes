@@ -1,5 +1,27 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "../input/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/colorpicker/_layout.scss" as *;
 
 @mixin kendo-color-picker--layout() {
     @include kendo-color-picker--layout-base();
+
+    .k-colorpicker {
+        // Roundness
+        @each $roundness in $kendo-picker-roundness {
+            #{k-when-default($kendo-picker-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+
+                @each $size, $size-props in $kendo-input-sizes {
+                    $_padding-y: map.get( $size-props, padding-y );
+
+                    #{k-when-default($kendo-picker-default-size, $size)}
+                    &.k-picker-#{$size} {
+                        @include concentric-radius(k-border-radius($roundness), $_padding-y, ".k-color-preview");
+                    }
+                }
+            }
+        }
+    }
 }

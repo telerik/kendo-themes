@@ -4,8 +4,4 @@
 
 @mixin kendo-filter--layout() {
     @include kendo-filter--layout-base();
-
-    .k-filter-menu-container .k-toolbar {
-        transition: outline k-transition(snappy);
-    }
 }

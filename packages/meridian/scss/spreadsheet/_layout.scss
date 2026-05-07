@@ -5,10 +5,6 @@
 @mixin kendo-spreadsheet--layout() {
     @include kendo-spreadsheet--layout-base();
 
-    .k-spreadsheet-active-cell {
-        transition: outline k-transition(snappy);
-    }
-
     .k-spreadsheet-toolbar {
         border-radius: 0;
     }

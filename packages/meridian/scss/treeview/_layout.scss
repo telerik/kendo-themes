@@ -5,10 +5,6 @@
 @mixin kendo-treeview--layout() {
     @include kendo-treeview--layout-base();
 
-    .k-treeview-leaf {
-        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
-    }
-
     .k-treeview-item-content {
         margin-bottom: k-spacing(.5);
     }

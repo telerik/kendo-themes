@@ -7,7 +7,6 @@
 
     .k-menu-item {
         border-radius: k-border-radius(sm);
-        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
     }
 
     .k-menu-group {
@@ -19,7 +18,6 @@
     .k-menu.k-context-menu {
         .k-item > .k-link {
             border-radius: k-border-radius(sm);
-            transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
         }
     }
 

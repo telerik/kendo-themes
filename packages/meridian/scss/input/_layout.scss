@@ -10,7 +10,6 @@
     @include kendo-input--layout-base();
 
     .k-input {
-        transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid), opacity k-transition(rapid);
 
         .k-input-button,
         .k-input-spinner {
@@ -53,12 +52,12 @@
                 .k-input-suffix > .k-icon,
                 .k-input-suffix > .k-icon-wrapper-host .k-icon,
                 .k-input-suffix > .k-input-suffix-text {
-                    padding-block: calc( (#{$_padding-x} + #{$_padding-y}) / 2) ;
+                    padding-block: $_padding-y;
                     padding-inline: calc( (#{$_padding-x} + #{$_padding-y}) / 2) ;
                 }
 
                 .k-clear-value {
-                    padding-block: calc( (#{$_padding-x} + #{$_padding-y}) / 2) ;
+                    padding-block: $_padding-y;
                     padding-inline: 0 $_padding-x;
                 }
 

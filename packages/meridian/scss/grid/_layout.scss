@@ -62,4 +62,22 @@
     .k-grouping-row .k-table-td {
         font-weight: var(--kendo-font-weight-medium, 500);
     }
+
+    // Row-span cells use an inset shadow for all borders,
+    // so zero out the td's own borders to avoid doubling.
+    .k-grid .k-table-td-row-span {
+        border-width: 0;
+    }
+
+    // Pinned and sticky containers have their own borders,
+    // so zero out the adjacent row td borders to avoid doubling.
+    .k-grid-pinned-wrap,
+    .k-grid-sticky-container {
+        .k-table-row:first-child > .k-table-td {
+            border-block-start-width: 0;
+        }
+        .k-table-row:last-child > .k-table-td {
+            border-block-end-width: 0;
+        }
+    }
 }

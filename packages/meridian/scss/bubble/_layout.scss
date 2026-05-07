@@ -4,8 +4,4 @@
 
 @mixin kendo-bubble--layout() {
     @include kendo-bubble--layout-base();
-
-    .k-bubble {
-        transition: border-color k-transition(rapid), background-color k-transition(rapid), outline k-transition(rapid);
-    }
 }

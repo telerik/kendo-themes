@@ -7,7 +7,6 @@
     @include kendo-fab--layout-base();
 
     .k-fab {
-        transition: background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid), opacity k-transition(rapid);
 
         .k-fab-icon {
             min-width: calc( #{$kendo-fab-font-size} * #{$kendo-fab-line-height} );

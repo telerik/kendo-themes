@@ -3,10 +3,4 @@
 
 @mixin kendo-chart-wizard--layout() {
     @include kendo-chart-wizard--layout-base();
-
-    .k-chart-wizard {
-        .k-icon-background-area {
-            transition: outline k-transition(rapid), border-color k-transition(rapid);
-        }
-    }
 }

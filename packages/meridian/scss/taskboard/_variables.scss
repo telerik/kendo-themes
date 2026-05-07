@@ -33,7 +33,7 @@ $kendo-taskboard-border: null !default;
 
 /// The vertical padding of the TaskBoard Toolbar.
 /// @group taskboard
-$kendo-taskboard-toolbar-padding-y: calc( #{$kendo-taskboard-spacer} * .625 ) !default;
+$kendo-taskboard-toolbar-padding-y: k-spacing(3.5) !default;
 /// The horizontal padding of the TaskBoard Toolbar.
 /// @group taskboard
 $kendo-taskboard-toolbar-padding-x: $kendo-taskboard-toolbar-padding-y !default;
@@ -52,7 +52,10 @@ $kendo-taskboard-toolbar-gradient: null !default;
 
 /// The vertical padding of the TaskBoard content.
 /// @group taskboard
-$kendo-taskboard-content-padding-y: $kendo-taskboard-spacer !default;
+$kendo-taskboard-content-padding-y: 0 $kendo-taskboard-spacer !default;
+/// The horizontal padding of the TaskBoard content.
+/// @group taskboard
+$kendo-taskboard-content-padding-x: 0 !default;
 
 /// The vertical spacing of the TaskBoard column container.
 /// @group taskboard
@@ -283,6 +286,7 @@ $kendo-taskboard-drag-placeholder-border: k-color(border) !default;
     $kendo-taskboard-toolbar-border: $kendo-taskboard-toolbar-border,
     $kendo-taskboard-toolbar-gradient: $kendo-taskboard-toolbar-gradient,
     $kendo-taskboard-content-padding-y: $kendo-taskboard-content-padding-y,
+    $kendo-taskboard-content-padding-x: $kendo-taskboard-content-padding-x,
     $kendo-taskboard-column-container-spacing-y: $kendo-taskboard-column-container-spacing-y,
     $kendo-taskboard-column-container-padding-y: $kendo-taskboard-column-container-padding-y,
     $kendo-taskboard-column-container-padding-x: $kendo-taskboard-column-container-padding-x,
