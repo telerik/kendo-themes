@@ -11238,12 +11238,42 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px k-color(on-inverse), inset 0 0 0 4px k-color(subtle)</code></td>
-    <td><code>(inset 0 0 0 2px var(--kendo-color-on-inverse), inset 0 0 0 4px var(--kendo-color-subtle))</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the ColorPalette focused tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the ColorPalette focused tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the ColorPalette focused tile.</div></div>
     </td>
 </tr>
 <tr>
@@ -22201,8 +22231,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-menu-item-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Menu item.</div></div>
@@ -26628,9 +26658,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-pivotgrid-border-radius</td>
-    <td>String</td>
-    <td><code>k-border-radius(xxl)</code></td>
-    <td><code>var(--kendo-border-radius-xxl)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PivotGrid.</div></div>
@@ -35848,9 +35878,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-taskboard-toolbar-padding-y</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-taskboard-spacer} * .625 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4) * 0.625)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3.5)</code></td>
+    <td><code>var(--kendo-spacing-3\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard Toolbar.</div></div>
@@ -35858,9 +35888,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-taskboard-toolbar-padding-x</td>
-    <td>Calculation</td>
+    <td>String</td>
     <td><code>$kendo-taskboard-toolbar-padding-y</code></td>
-    <td><code>calc(var(--kendo-spacing-4) * 0.625)</code></td>
+    <td><code>var(--kendo-spacing-3\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard Toolbar.</div></div>
@@ -35908,12 +35938,22 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-taskboard-content-padding-y</td>
-    <td>String</td>
-    <td><code>$kendo-taskboard-spacer</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>List</td>
+    <td><code>0 $kendo-taskboard-spacer</code></td>
+    <td><code>(0 var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-content-padding-x</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard content.</div></div>
     </td>
 </tr>
 <tr>
