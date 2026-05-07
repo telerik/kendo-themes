@@ -432,7 +432,8 @@
     // Toolbar
     .k-grid-toolbar {
         border-width: 0 0 $kendo-grid-toolbar-border-width;
-        border-radius: 0;;
+        @include border-top-radius($kendo-grid-border-radius);
+        @include border-bottom-radius(0);
         flex-shrink: 0;
     }
 
