@@ -1,16 +1,24 @@
 @use "@progress/kendo-theme-core/scss/components/gantt/_layout.scss" as *;
+@use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-gantt--layout() {
     @include kendo-gantt--layout-base();
 
      .k-gantt{
+
         .k-splitbar {
             border-inline: 1px solid $kendo-gantt-border;
         }
-        .k-gantt-header,
+
+        .k-gantt-header {
+            @include border-top-radius($kendo-gantt-border-radius);
+            @include border-bottom-radius(0);
+        }
+
         .k-gantt-footer {
-            border-radius: 0;
+            @include border-top-radius(0);
+            @include border-bottom-radius($kendo-gantt-border-radius);
         }
     }
 }

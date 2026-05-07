@@ -1,6 +1,7 @@
 @use "../../color-system/_constants.scss" as *;
 @use "../../spacing/index.scss" as *;
 @use "../../border-radii/index.scss" as *;
+@use "../../mixins/index.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
 @use "./variables.scss" as *;
@@ -43,7 +44,8 @@
         z-index: k-z-index("banner");
         border-inline-width: 0;
         border-block-start-width: 0;
-        border-radius: 0;
+        @include border-top-radius($kendo-chat-border-radius);
+        @include border-bottom-radius(0);
     }
 
     // Message list
@@ -429,6 +431,8 @@
         border-block-end-width: $kendo-chat-message-pinned-border-width;
         border-block-end-style: $kendo-chat-message-pinned-border-style;
         cursor: pointer;
+        @include border-top-radius($kendo-chat-border-radius);
+        @include border-bottom-radius(0);
     }
 
     .k-message-removed {
