@@ -1,5 +1,6 @@
 @use "@progress/kendo-theme-core/scss/components/scheduler/_layout.scss" as *;
-
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
 
 @mixin kendo-scheduler--layout() {
     @include kendo-scheduler--layout-base();
@@ -15,8 +16,13 @@
         font-weight: var(--kendo-font-weight-normal);
     }
 
-    .k-scheduler-toolbar,
+    .k-scheduler-toolbar {
+        @include border-top-radius($kendo-scheduler-border-radius);
+        @include border-bottom-radius(0);
+    }
+
     .k-scheduler-footer {
-        border-radius: 0;
+        @include border-top-radius(0);
+        @include border-bottom-radius($kendo-scheduler-border-radius);
     }
 }

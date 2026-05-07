@@ -1,12 +1,14 @@
 @use "@progress/kendo-theme-core/scss/components/pdf-viewer/_layout.scss" as *;
-
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-pdf-viewer--layout() {
     @include kendo-pdf-viewer--layout-base();
 
     .k-pdf-viewer {
         .k-toolbar {
-            border-radius: 0;
+            @include border-top-radius($kendo-pdf-viewer-border-radius);
+            @include border-bottom-radius(0);
         }
     }
 }
