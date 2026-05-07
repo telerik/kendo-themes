@@ -37,8 +37,8 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
+                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                         </>
                     }
                     popup={
@@ -76,8 +76,8 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
+                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                         </>
                     }
                     popup={
@@ -115,8 +115,8 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
+                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                         </>
                     }
                     popup={
@@ -130,7 +130,7 @@ export default () =>(
                             <List>
                                 <ListContent grouping>
                                     <ListUl>
-                                        <ListGroupItem groupIconName="lightbulb-outline">Suggested prompts</ListGroupItem>
+                                        <ListGroupItem groupIconName="lightbulb">Suggested prompts</ListGroupItem>
                                         <ListItem>Filter by account type</ListItem>
                                         <ListItem>Show only failed transactions</ListItem>
                                         <ListItem>Hide Currency column</ListItem>
@@ -162,8 +162,8 @@ export default () =>(
                     }
                     suffix={
                         <>
-                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
+                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
+                            <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                         </>
                     }
                     popup={
@@ -175,7 +175,7 @@ export default () =>(
                             </>
                         } />
                         <NoData className="k-smart-box-no-data">
-                            <Icon icon="file-clock-outline" size={"xxxlarge"} />
+                            <Icon icon="file-clock" size={"xxxlarge"} />
                             <span>No previous searches</span>
                         </NoData>
                     </>} />

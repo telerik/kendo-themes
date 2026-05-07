@@ -56,7 +56,7 @@ const defaultToolbarItems = ([
     <MenuButton key="halign" fillMode="flat" icon="align-left" showArrow aria-label="Horizontal alignment"></MenuButton>,
     <MenuButton key="valign" fillMode="flat" icon="align-middle" showArrow aria-label="Vertical alignment"></MenuButton>,
     <ToolbarSeparator key="sep8"></ToolbarSeparator>,
-    <Button key="wrap" fillMode="flat" icon="text-wrap" aria-label="Wrap text"></Button>
+    <Button key="wrap" fillMode="flat" icon="text-wrap-arrow" aria-label="Wrap text"></Button>
 ]);
 
 const defaultMenuItems = ([

@@ -34,7 +34,7 @@ export default () =>(
                                     <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
                                 </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" size="small" />
                                 </div>
                             </>
                         } />
@@ -46,7 +46,7 @@ export default () =>(
                                     <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
                                 </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" size="small" />
                                 </div>
                             </>
                         } />
@@ -68,7 +68,7 @@ export default () =>(
                                     <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
                                 </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" size="small" />
                                 </div>
                             </>
                         } />
@@ -80,7 +80,7 @@ export default () =>(
                                     <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
                                 </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" size="small" />
                                 </div>
                             </>
                         } />
@@ -105,7 +105,7 @@ export default () =>(
                                     <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
                                 </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" size="small" />
                                 </div>
                             </>
                         } />
@@ -117,7 +117,7 @@ export default () =>(
                                     <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
                                 </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" size="small" />
                                 </div>
                             </>
                         } />
@@ -138,7 +138,7 @@ export default () =>(
                                     <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
                                 </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" size="small" />
                                 </div>
                             </>
                         } />
@@ -150,7 +150,7 @@ export default () =>(
                                     <FileBox icon="file-csv" name="Another file with even longer name" size="5MB" />
                                 </FileBoxWrapper>
                                 <div className="k-chat-download-button-wrapper">
-                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download-light" size="small" />
+                                    <IconTextButton className="k-chat-download-button" fillMode="flat" children="Download all" icon="download" size="small" />
                                 </div>
                             </>
                         } />

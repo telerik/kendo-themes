@@ -238,7 +238,7 @@ export default () =>(
                         <FormField
                             colSpan="2"
                             label="Text control"
-                            editor={ <DropdownList prefix={ <Icon icon="text-wrap" /> } placeholder="Wrap" /> }
+                            editor={ <DropdownList prefix={ <Icon icon="text-wrap-arrow" /> } placeholder="Wrap" /> }
                         />
                         <FormField
                             colSpan="2"
