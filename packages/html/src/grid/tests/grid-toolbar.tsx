@@ -165,8 +165,8 @@ export default () =>(
                             }
                             suffix={
                                         <>
-                                            <IconButton icon="microphone-outline" fillMode="clear" rounded="full" size="small" />
-                                            <IconButton icon="arrow-up-outline" rounded="full" size="small" disabled />
+                                            <IconButton icon="microphone" fillMode="clear" rounded="full" size="small" />
+                                            <IconButton icon="arrow-up" rounded="full" size="small" disabled />
                                         </>
                                     }
                             placeholder="Sort, filter or group with AI" />

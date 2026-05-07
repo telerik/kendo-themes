@@ -105,7 +105,7 @@ export const PromptBox: KendoComponent<KendoPromptBoxProps & KendoPromptBoxState
                     {endAffix}
                     <SpeechToTextButton size="small" fillMode="flat" rounded="full"/>
                     <IconButton
-                        icon={generating ? "stop-sm" : "arrow-up-outline"}
+                        icon={generating ? "stop" : "arrow-up"}
                         size="small"
                         rounded="full"
                         active={generating}

@@ -78,7 +78,7 @@ export default () =>(
                         </ButtonGroup>,
                         <ButtonGroup>
                             <Button className="k-group-start" icon="subscript"></Button>
-                            <Button className="k-group-end" icon="supscript"></Button>
+                            <Button className="k-group-end" icon="superscript"></Button>
                         </ButtonGroup>,
                         <ButtonGroup>
                             <Button className="k-group-start" icon="align-left"></Button>
@@ -153,7 +153,7 @@ export default () =>(
                         </ButtonGroup>,
                         <ButtonGroup disabled>
                             <Button icon="subscript" disabled></Button>
-                            <Button className="k-group-end" icon="supscript" disabled></Button>
+                            <Button className="k-group-end" icon="superscript" disabled></Button>
                         </ButtonGroup>,
                         <ButtonGroup disabled>
                             <Button className="k-group-start" icon="align-left" disabled></Button>

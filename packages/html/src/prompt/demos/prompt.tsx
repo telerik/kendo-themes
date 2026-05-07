@@ -201,12 +201,12 @@ export const PromptDemo = (
                       <IconButton
                         fillMode="flat"
                         themeColor="base"
-                        icon="thumb-up-outline"
+                        icon="thumb-up"
                       ></IconButton>
                       <IconButton
                         fillMode="flat"
                         themeColor="base"
-                        icon="thumb-down-outline"
+                        icon="thumb-down"
                       ></IconButton>
                     </ActionButtons>
                   </Card>
@@ -241,12 +241,12 @@ export const PromptDemo = (
                       <IconButton
                         fillMode="flat"
                         themeColor="base"
-                        icon="thumb-up-outline"
+                        icon="thumb-up"
                       ></IconButton>
                       <IconButton
                         fillMode="flat"
                         themeColor="base"
-                        icon="thumb-down-outline"
+                        icon="thumb-down"
                       ></IconButton>
                     </ActionButtons>
                   </Card>

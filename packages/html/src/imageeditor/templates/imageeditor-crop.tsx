@@ -28,7 +28,7 @@ export const ImageEditorCrop = (props: any) => (
             <FormNormal tag="div" className="k-imageeditor-pane-form" formButtons={
                 <>
                     <Button themeColor="primary" icon="check">Confirm</Button>
-                    <Button icon="cancel-outline">Cancel</Button>
+                    <Button icon="cancel">Cancel</Button>
                 </>
             }>
                 <Fieldset layout="grid" legend="Crop Image" cols={2} gutters={{cols: "8px"}}>

@@ -43,7 +43,7 @@ export const EditorDemo = (props: KendoEditorProps & { variant?: (typeof variant
                 </ButtonGroup>,
                 <ButtonGroup>
                     <Button icon="subscript"></Button>
-                    <Button icon="supscript"></Button>
+                    <Button icon="superscript"></Button>
                 </ButtonGroup>,
                 <ButtonGroup>
                     <Button icon="align-left"></Button>

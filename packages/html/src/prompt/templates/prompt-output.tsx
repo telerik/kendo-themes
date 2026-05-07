@@ -29,8 +29,8 @@ export const PromptOutput = (props) => (
                             <IconTextButton fillMode="flat" icon="arrow-rotate-cw">Retry</IconTextButton>
                             <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" aria-label="More actions"></IconButton>
                             <span className="k-spacer"></span>
-                            <IconButton fillMode="flat" icon="thumb-up-outline" aria-label="Thumbs up"></IconButton>
-                            <IconButton fillMode="flat" icon="thumb-down-outline" aria-label="Thumbs down"></IconButton>
+                            <IconButton fillMode="flat" icon="thumb-up" aria-label="Thumbs up"></IconButton>
+                            <IconButton fillMode="flat" icon="thumb-down" aria-label="Thumbs down"></IconButton>
                         </ActionButtons>
                     </Card>
 
@@ -44,8 +44,8 @@ export const PromptOutput = (props) => (
                             <IconTextButton fillMode="flat" icon="arrow-rotate-cw">Retry</IconTextButton>
                             <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" aria-label="More actions"></IconButton>
                             <span className="k-spacer"></span>
-                            <IconButton fillMode="flat" icon="thumb-up-outline" aria-label="Thumbs up"></IconButton>
-                            <IconButton fillMode="flat" icon="thumb-down-outline" aria-label="Thumbs down"></IconButton>
+                            <IconButton fillMode="flat" icon="thumb-up" aria-label="Thumbs up"></IconButton>
+                            <IconButton fillMode="flat" icon="thumb-down" aria-label="Thumbs down"></IconButton>
                         </ActionButtons>
                     </Card>
                 </div>

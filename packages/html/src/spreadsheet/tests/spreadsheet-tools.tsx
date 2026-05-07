@@ -93,7 +93,7 @@ export default () => (
                         <MenuButton fillMode="flat" icon="align-left" showArrow></MenuButton>,
                         <MenuButton fillMode="flat" icon="align-middle" showArrow></MenuButton>,
                         <ToolbarSeparator></ToolbarSeparator>,
-                        <Button fillMode="flat" icon="text-wrap"></Button>]}
+                        <Button fillMode="flat" icon="text-wrap-arrow"></Button>]}
                 />
             </Spreadsheet>
 

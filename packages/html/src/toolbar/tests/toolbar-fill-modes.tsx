@@ -48,7 +48,7 @@ export default () =>(
                           <MenuButton fillMode={fillMode} icon="align-left" showArrow></MenuButton>
                           <MenuButton fillMode={fillMode} icon="align-middle" showArrow></MenuButton>
                           <ToolbarSeparator></ToolbarSeparator>
-                          <Button fillMode={fillMode} icon="text-wrap"></Button>
+                          <Button fillMode={fillMode} icon="text-wrap-arrow"></Button>
                       </ToolbarResizable>
                     </section>
                     <span className="k-colspan-all k-col-span-full">{`${fillMode}`} with overlay</span>
@@ -88,7 +88,7 @@ export default () =>(
                           <MenuButton fillMode={fillMode} icon="align-left" showArrow></MenuButton>
                           <MenuButton fillMode={fillMode} icon="align-middle" showArrow></MenuButton>
                           <ToolbarSeparator></ToolbarSeparator>
-                          <Button fillMode={fillMode} icon="text-wrap"></Button>
+                          <Button fillMode={fillMode} icon="text-wrap-arrow"></Button>
                       </ToolbarScrollableButtonsHidden>
                     </section>
                 </>
