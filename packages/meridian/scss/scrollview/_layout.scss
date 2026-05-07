@@ -4,8 +4,4 @@
 
 @mixin kendo-scrollview--layout() {
     @include kendo-scrollview--layout-base();
-
-    .k-scrollview-nav > .k-link {
-        transition: background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
-    }
 }

@@ -12,7 +12,6 @@
     }
 
     .k-drawer-item {
-        transition: background-color k-transition(snappy), color k-transition(snappy), outline k-transition(snappy);
 
         > .k-drawer-link {
             gap: $kendo-drawer-item-spacing;

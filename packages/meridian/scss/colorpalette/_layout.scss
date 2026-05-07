@@ -4,8 +4,4 @@
 
 @mixin kendo-color-palette--layout() {
     @include kendo-color-palette--layout-base();
-
-    .k-colorpalette-tile {
-        transition: outline k-transition(rapid);
-    }
 }

@@ -28,7 +28,7 @@ $kendo-pivotgrid-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-pivotgrid-border-width: 1px !default;
 /// The border radius of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-border-radius: k-border-radius(xxl) !default;
+$kendo-pivotgrid-border-radius: null !default;
 /// The icon spacing of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-icon-spacing: k-spacing(1) !default;

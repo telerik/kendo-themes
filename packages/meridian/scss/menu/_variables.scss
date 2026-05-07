@@ -62,7 +62,7 @@ $kendo-menu-item-selected-font-weight: var( --kendo-font-weight-semibold, normal
 $kendo-menu-item-bg: null !default;
 /// The text color of the Menu item.
 /// @group menu
-$kendo-menu-item-text: k-color(subtle) !default;
+$kendo-menu-item-text: k-color(on-app-surface) !default;
 /// The border color of the Menu item.
 /// @group menu
 $kendo-menu-item-border: null !default;

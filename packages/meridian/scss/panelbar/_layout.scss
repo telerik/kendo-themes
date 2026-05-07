@@ -20,12 +20,10 @@
         > .k-panelbar-header > .k-link {
             border-radius: $kendo-panelbar-item-border-radius;
             font-weight: $kendo-panelbar-header-font-weight;
-            transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
         }
 
         .k-panelbar-group > .k-panelbar-item > .k-link {
             border-radius: $kendo-panelbar-item-border-radius;
-            transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), outline k-transition(rapid);
         }
     }
 }

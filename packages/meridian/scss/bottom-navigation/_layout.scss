@@ -4,8 +4,4 @@
 
 @mixin kendo-bottom-navigation--layout() {
     @include kendo-bottom-navigation--layout-base();
-
-    .k-bottom-nav-item {
-        transition: background-color k-transition(emphasis), color k-transition(emphasis), font-weight k-transition(emphasis), outline k-transition(emphasis);
-    }
 }

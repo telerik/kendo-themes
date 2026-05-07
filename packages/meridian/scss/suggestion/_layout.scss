@@ -4,8 +4,4 @@
 
 @mixin kendo-suggestion--layout() {
     @include kendo-suggestion--layout-base();
-
-    .k-suggestion {
-        transition: background-color k-transition(rapid), outline k-transition(rapid);
-    }
 }

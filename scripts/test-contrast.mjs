@@ -32,7 +32,6 @@ const EXCLUSIONS = {
         './tests/scheduler/scheduler-react-timeline-multi.html': 'inline `background: darkred|green` on events',
         './tests/scheduler/scheduler-tooltip.html': 'inline `background-color: rgb(17,134,64)` on tooltip event',
         './tests/button-group/button-group.html': 'inline `background: gray` / `color: magenta` demo styles',
-        './tests/loader/loader-container-overlay.html': 'themed label over .k-overlay at 0.5 opacity (alpha-blended mid-gray)',
         './tests/captcha/captcha-rtl.html': 'k-text-error color on surface; error color contrast is by design',
         './tests/captcha/captcha.html': 'k-text-error color on surface; error color contrast is by design',
         './tests/colorgradient/colorgradient-rtl.html': 'k-text-error color on surface; error color contrast is by design',
@@ -73,10 +72,6 @@ const EXCLUSIONS = {
         '.k-disabled',
         '.k-event-drag-hint',
         '.k-button-clear.k-button-warning',
-        '.k-button-link.k-button-warning',
-        '.k-button-outline.k-button-warning',
-        '.k-button-flat.k-button-warning',
-        '.k-avatar-warning'
     ]
 };
 
