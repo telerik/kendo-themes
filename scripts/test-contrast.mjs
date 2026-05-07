@@ -46,8 +46,7 @@ const EXCLUSIONS = {
         './tests/button-group/button-group.html': 'demo on `background: gray` (rgb(120,120,120)); cannot reach 3:1',
         './tests/scrollview/scrollview.html': 'translucent .k-scrollview-nav-wrap overlay; cannot satisfy 3:1 on both surfaces',
         './tests/scrollview/scrollview-rtl.html': 'translucent .k-scrollview-nav-wrap overlay; cannot satisfy 3:1 on both surfaces',
-        './tests/colorgradient/colorgradient-draghandle.html': 'inline linear-gradient hue/alpha tracks; backgroundColor is transparent',
-        './tests/colorpalette/colorpalette-states.html': 'inline palette colors; not theme-controlled'
+        './tests/colorgradient/colorgradient-draghandle.html': 'inline linear-gradient hue/alpha tracks; backgroundColor is transparent'
     },
     // Class names whose elements should be skipped during focus-ring checks.
     focusElementClasses: {
@@ -61,7 +60,6 @@ const EXCLUSIONS = {
     // Components whose pages are skipped entirely (URL substring match).
     pageSubstrings: {
         'mediaplayer': 'not WCAG compliant',
-        'barcode': 'image of black lines on transparent bg',
         'circular-progressbar': 'svg-on-text overlap',
         'treemap': 'data-driven tile colors that the theme cannot control',
         'preview-components': 'aggregator page; component-specific pages cover the same elements',
