@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "../core/functions/index.scss" as *;
 
@@ -26,7 +27,7 @@ $kendo-color-preview-hover-border: k-color(border) !default;
 $kendo-color-preview-no-color-bg: k-color(surface-alt) !default;
 /// The text color of the ColorPreview when no color is selected.
 /// @group color-preview
-$kendo-color-preview-no-color-text: k-color(error) !default;
+$kendo-color-preview-no-color-text: map.get($kendo-colors, error) !default;
 /// The border color of the ColorPreview when no color is selected.
 /// @group color-preview
 $kendo-color-preview-no-color-border: null !default;
