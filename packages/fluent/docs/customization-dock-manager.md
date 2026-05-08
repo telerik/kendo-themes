@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-unpinned-container-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-manager-unpinned-container-shadow, k-elevation(6) )</code></td>
-    <td><code>var(--kendo-dock-manager-unpinned-container-shadow, var(--kendo-elevation-6))</code></td>
+    <td><code>var( --kendo-dock-manager-unpinned-container-shadow, k-elevation(4) )</code></td>
+    <td><code>var(--kendo-dock-manager-unpinned-container-shadow, var(--kendo-elevation-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the unpinned pane container in the DockManager component.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-indicator-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-indicator-shadow, k-elevation(4) )</code></td>
-    <td><code>var(--kendo-dock-indicator-shadow, var(--kendo-elevation-4))</code></td>
+    <td><code>var( --kendo-dock-indicator-shadow, k-elevation(2) )</code></td>
+    <td><code>var(--kendo-dock-indicator-shadow, var(--kendo-elevation-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the dock indicator in the DockManager component.</div></div>

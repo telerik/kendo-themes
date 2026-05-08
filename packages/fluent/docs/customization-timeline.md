@@ -300,8 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-box-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-timeline-flag-box-shadow, var( --kendo-box-shadow-depth-2, none ) )</code></td>
-    <td><code>var(--kendo-timeline-flag-box-shadow, var(--kendo-box-shadow-depth-2, none))</code></td>
+    <td><code>var( --kendo-timeline-flag-box-shadow, k-elevation(2) )</code></td>
+    <td><code>var(--kendo-timeline-flag-box-shadow, var(--kendo-elevation-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Timeline flag.</div></div>
@@ -601,7 +601,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-card-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-card-shadow, $kendo-card-shadow )</code></td>
-    <td><code>var(--kendo-timeline-card-shadow, var(--kendo-card-shadow, var(--kendo-elevation-3, none)))</code></td>
+    <td><code>var(--kendo-timeline-card-shadow, var(--kendo-card-shadow, var(--kendo-elevation-1, none)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline card.</div></div>

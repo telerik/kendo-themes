@@ -260,8 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-navigation-arrow-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-scrollview-navigation-arrow-shadow, var( --kendo-box-shadow-depth-3, none ) )</code></td>
-    <td><code>var(--kendo-scrollview-navigation-arrow-shadow, var(--kendo-box-shadow-depth-3, none))</code></td>
+    <td><code>var( --kendo-scrollview-navigation-arrow-shadow, k-elevation(3) )</code></td>
+    <td><code>var(--kendo-scrollview-navigation-arrow-shadow, var(--kendo-elevation-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView navigation arrows.</div></div>
@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-navigation-arrow-hover-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-scrollview-navigation-arrow-hover-shadow, var( --kendo-box-shadow-depth-4, none ) )</code></td>
-    <td><code>var(--kendo-scrollview-navigation-arrow-hover-shadow, var(--kendo-box-shadow-depth-4, none))</code></td>
+    <td><code>var( --kendo-scrollview-navigation-arrow-hover-shadow, k-elevation(4) )</code></td>
+    <td><code>var(--kendo-scrollview-navigation-arrow-hover-shadow, var(--kendo-elevation-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover box shadow of the ScrollView navigation arrows.</div></div>

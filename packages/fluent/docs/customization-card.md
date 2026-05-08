@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-card-shadow, var( --kendo-elevation-3, none ) )</code></td>
-    <td><code>var(--kendo-card-shadow, var(--kendo-elevation-3, none))</code></td>
+    <td><code>var( --kendo-card-shadow, var( --kendo-elevation-1, none ) )</code></td>
+    <td><code>var(--kendo-card-shadow, var(--kendo-elevation-1, none))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Card.</div></div>
@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-focus-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-elevation-3, none )</code></td>
-    <td><code>var(--kendo-elevation-3, none)</code></td>
+    <td><code>var( --kendo-elevation-1, none )</code></td>
+    <td><code>var(--kendo-elevation-1, none)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Card.</div></div>

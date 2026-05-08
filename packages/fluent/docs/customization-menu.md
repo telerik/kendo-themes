@@ -480,8 +480,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-popup-shadow, k-elevation(5) )</code></td>
-    <td><code>var(--kendo-menu-popup-shadow, var(--kendo-elevation-5))</code></td>
+    <td><code>var( --kendo-menu-popup-shadow, k-elevation(3) )</code></td>
+    <td><code>var(--kendo-menu-popup-shadow, var(--kendo-elevation-3))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Menu popup.</div></div>

@@ -3093,9 +3093,9 @@ This is equivalent to `display: table-cell;`.
 
 
 
-### `.k-elevation-9`
+### `.k-elevation-5`
 
-Applies elevation level 9 shadow effect.
+Applies elevation level 5 shadow effect.
 
 
 
@@ -3124,34 +3124,6 @@ Applies elevation level 3 shadow effect.
 ### `.k-elevation-4`
 
 Applies elevation level 4 shadow effect.
-
-
-
-
-### `.k-elevation-5`
-
-Applies elevation level 5 shadow effect.
-
-
-
-
-### `.k-elevation-6`
-
-Applies elevation level 6 shadow effect.
-
-
-
-
-### `.k-elevation-7`
-
-Applies elevation level 7 shadow effect.
-
-
-
-
-### `.k-elevation-8`
-
-Applies elevation level 8 shadow effect.
 
 
 
