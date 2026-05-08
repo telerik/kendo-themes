@@ -15,6 +15,7 @@
     }
 
     .k-grid {
+
         .k-table .k-grid-header-sticky,
         .k-table .k-grid-content-sticky,
         .k-table .k-grid-footer-sticky {
@@ -63,6 +64,18 @@
         font-weight: var(--kendo-font-weight-medium, 500);
     }
 
+    .k-table-group-row .k-table-td {
+        border-block-end-width: 0;
+    }
+
+    .k-grouping-row + .k-table-row .k-table-td {
+        border-block-start-width: 0;
+    }
+
+    .k-grouping-row + .k-master-row .k-table-td {
+        border-block-start-width: $kendo-grid-grouping-row-border-top;
+    }
+
     // Row-span cells use an inset shadow for all borders,
     // so zero out the td's own borders to avoid doubling.
     .k-grid .k-table-td-row-span {
@@ -78,6 +91,18 @@
         }
         .k-table-row:last-child > .k-table-td {
             border-block-end-width: 0;
+        }
+    }
+
+     .k-grid-header {
+        .k-table-thead > .k-table-row:not(:only-child) > .k-table-th,
+        .k-table-thead > .k-table-row:not(:only-child) > .k-table-td {
+            border-inline-start: 1px solid k-color(border);
+        }
+
+        .k-table-thead > .k-table-row:not(:only-child):first-child > .k-table-th:first-child,
+        .k-table-thead > .k-table-row:not(:only-child):first-child > .k-table-td:first-child {
+            border-inline-start-width: 0;
         }
     }
 }
