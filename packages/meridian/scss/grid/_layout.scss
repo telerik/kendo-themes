@@ -43,6 +43,18 @@
                 border-inline-start: 1px solid k-color(border);
             }
         }
+
+        .k-table .k-table-row .k-table-group-td {
+            border-width: 0;
+        }
+
+        .k-grouping-row + .k-table-row .k-table-td {
+            border-block-start-width: 0;
+        }
+
+        .k-grouping-row + .k-master-row .k-table-td {
+            border-block-start-width: $kendo-grid-grouping-row-border-top;
+        }
     }
 
     // Column menu fix for action buttons focus state
@@ -66,14 +78,6 @@
 
     .k-table-group-row .k-table-td {
         border-block-end-width: 0;
-    }
-
-    .k-grouping-row + .k-table-row .k-table-td {
-        border-block-start-width: 0;
-    }
-
-    .k-grouping-row + .k-master-row .k-table-td {
-        border-block-start-width: $kendo-grid-grouping-row-border-top;
     }
 
     // Row-span cells use an inset shadow for all borders,
