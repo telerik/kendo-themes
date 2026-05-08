@@ -220,8 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-page-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer page.</div></div>

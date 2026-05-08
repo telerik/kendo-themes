@@ -354,8 +354,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-actionsheet-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(7)</code></td>
-    <td><code>var(--kendo-elevation-7)</code></td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ActionSheet.</div></div>
@@ -9638,9 +9638,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-color-editor-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorEditor.</div></div>
@@ -10250,9 +10250,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-color-gradient-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -10541,8 +10541,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
@@ -11724,8 +11724,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-manager-unpinned-container-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(7)</code></td>
-    <td><code>var(--kendo-elevation-7)</code></td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the unpinned pane container in the DockManager component.</div></div>
@@ -11794,8 +11794,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-indicator-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(5)</code></td>
-    <td><code>var(--kendo-elevation-5)</code></td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the dock indicator in the DockManager component.</div></div>
@@ -12004,8 +12004,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drag-hint-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the drag hint.</div></div>
@@ -13055,7 +13055,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-elevation</td>
     <td>Map</td>
     <td><code>$_default-elevation</code></td>
-    <td><ul><li>1: (0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15))</li><li>2: (0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15))</li><li>3: (0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3))</li><li>4: (0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.3))</li><li>5: (0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15))</li><li>6: (0px 6px 14px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.3))</li><li>7: (0px 7px 16px 7px rgba(0, 0, 0, 0.15), 0px 5px 5px 0px rgba(0, 0, 0, 0.3))</li><li>8: (0px 8px 18px 8px rgba(0, 0, 0, 0.15), 0px 6px 5px 0px rgba(0, 0, 0, 0.3))</li><li>9: (0px 9px 20px 9px rgba(0, 0, 0, 0.15), 0px 7px 6px 0px rgba(0, 0, 0, 0.3))</li></ul></td>
+    <td><ul><li>1: (0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12))</li><li>2: (0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12))</li><li>3: (0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12))</li><li>4: (0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12))</li><li>5: (0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
@@ -23733,8 +23733,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-page-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td><code>k-elevation(2)</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer page.</div></div>
@@ -28470,9 +28470,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-scheduler-event-selected-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Scheduler event.</div></div>
@@ -36363,9 +36363,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-timeline-track-item-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline's focused track items.</div></div>
@@ -39786,8 +39786,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-window-focus-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>

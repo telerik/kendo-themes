@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-node-group-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-node-group-focus-shadow, #{$kendo-card-focus-shadow} )</code></td>
-    <td><code>var(--kendo-orgchart-node-group-focus-shadow, var(--kendo-elevation-3, none))</code></td>
+    <td><code>var(--kendo-orgchart-node-group-focus-shadow, var(--kendo-elevation-1, none))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-card-shadow, #{$kendo-card-shadow} )</code></td>
-    <td><code>var(--kendo-orgchart-card-shadow, var(--kendo-card-shadow, var(--kendo-elevation-3, none)))</code></td>
+    <td><code>var(--kendo-orgchart-card-shadow, var(--kendo-card-shadow, var(--kendo-elevation-1, none)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the OrgChart Card.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-orgchart-card-focus-shadow, #{$kendo-card-focus-shadow} )</code></td>
-    <td><code>var(--kendo-orgchart-card-focus-shadow, var(--kendo-elevation-3, none))</code></td>
+    <td><code>var(--kendo-orgchart-card-focus-shadow, var(--kendo-elevation-1, none))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart Card.</div></div>

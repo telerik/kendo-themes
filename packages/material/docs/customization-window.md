@@ -270,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-focus-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>

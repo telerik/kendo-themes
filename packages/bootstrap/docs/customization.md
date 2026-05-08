@@ -324,8 +324,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-actionsheet-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(7)</code></td>
-    <td><code>var(--kendo-elevation-7)</code></td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ActionSheet.</div></div>
@@ -1234,8 +1234,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-appbar-box-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar.</div></div>
@@ -1244,8 +1244,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-appbar-bottom-box-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>
@@ -2040,8 +2040,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-bottom-nav-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the BottomNavigation.</div></div>
@@ -11721,8 +11721,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-dock-indicator-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(5)</code></td>
-    <td><code>var(--kendo-elevation-5)</code></td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the dock indicator in the DockManager component.</div></div>
@@ -12982,7 +12982,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-elevation</td>
     <td>Map</td>
     <td><code>$_default-elevation</code></td>
-    <td><ul><li>1: (0px 1px 2px rgba(0, 0, 0, 0.038))</li><li>2: (0px 2px 7px rgba(0, 0, 0, 0.075))</li><li>3: (0px 4px 10px rgba(0, 0, 0, 0.1))</li><li>4: (0px 6px 13px rgba(0, 0, 0, 0.125))</li><li>5: (0px 8px 16px 0px rgba(0, 0, 0, 0.15))</li><li>6: (0px 11px 24px 0px rgba(0, 0, 0, 0.159))</li><li>7: (0px 14px 36px 0px rgba(0, 0, 0, 0.168))</li><li>8: (0px 16px 48px 0px rgba(0, 0, 0, 0.176))</li><li>9: (0px 18px 60px 0px rgba(0, 0, 0, 0.185))</li></ul></td>
+    <td><ul><li>1: (0px 2px 4px 0px rgba(0, 0, 0, 0.08))</li><li>2: (0px 4px 8px 0px rgba(0, 0, 0, 0.1))</li><li>3: (0px 6px 12px 0px rgba(0, 0, 0, 0.12))</li><li>4: (0px 8px 16px 0px rgba(0, 0, 0, 0.15))</li><li>5: (0px 16px 48px 0px rgba(0, 0, 0, 0.17))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
@@ -14451,8 +14451,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-fab-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(5)</code></td>
-    <td><code>var(--kendo-elevation-5)</code></td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
@@ -14562,7 +14562,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-fab-item-shadow</td>
     <td>String</td>
     <td><code>$kendo-fab-shadow</code></td>
-    <td><code>var(--kendo-elevation-5)</code></td>
+    <td><code>var(--kendo-elevation-4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB item.</div></div>

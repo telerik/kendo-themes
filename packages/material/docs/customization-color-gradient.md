@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-focus-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -570,8 +570,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>

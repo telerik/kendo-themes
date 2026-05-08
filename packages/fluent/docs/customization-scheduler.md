@@ -660,8 +660,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-tooltip-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-tooltip-shadow, k-elevation(5) )</code></td>
-    <td><code>var(--kendo-scheduler-tooltip-shadow, var(--kendo-elevation-5))</code></td>
+    <td><code>var( --kendo-scheduler-tooltip-shadow, k-elevation(2) )</code></td>
+    <td><code>var(--kendo-scheduler-tooltip-shadow, var(--kendo-elevation-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler Tooltip.</div></div>

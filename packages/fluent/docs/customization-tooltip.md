@@ -170,8 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-tooltip-shadow, k-elevation(4) )</code></td>
-    <td><code>var(--kendo-tooltip-shadow, var(--kendo-elevation-4))</code></td>
+    <td><code>var( --kendo-tooltip-shadow, k-elevation(2) )</code></td>
+    <td><code>var(--kendo-tooltip-shadow, var(--kendo-elevation-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box-shadow of the Tooltip.</div></div>

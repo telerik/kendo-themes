@@ -1300,8 +1300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-column-menu-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-column-menu-shadow, var(--kendo-box-shadow-depth-4, none) )</code></td>
-    <td><code>var(--kendo-grid-column-menu-shadow, var(--kendo-box-shadow-depth-4, none))</code></td>
+    <td><code>var( --kendo-grid-column-menu-shadow, k-elevation(4) )</code></td>
+    <td><code>var(--kendo-grid-column-menu-shadow, var(--kendo-elevation-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the Grid column menu.</div></div>
