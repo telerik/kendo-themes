@@ -310,8 +310,6 @@
     // Core
     @include core-styles();
 
-    @include kendo-elevation--styles-legacy();
-
     // Typography
     @include kendo-typography--styles();
 

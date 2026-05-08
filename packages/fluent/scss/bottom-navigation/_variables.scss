@@ -59,7 +59,7 @@ $kendo-bottom-nav-item-gap: var( --kendo-bottom-nav-item-gap, k-spacing(1) ) !de
 
 /// The box shadow of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-bottom-nav-shadow: k-elevation(3) !default;
 
 /// The text color of the flat BottomNavigation.
 /// @group bottom-navigation

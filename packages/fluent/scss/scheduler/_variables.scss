@@ -213,7 +213,7 @@ $kendo-scheduler-tooltip-text: var( --kendo-scheduler-tooltip-text, k-color(subt
 $kendo-scheduler-tooltip-border: var( --kendo-scheduler-tooltip-border, null ) !default;
 /// The shadow of the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-shadow: var( --kendo-scheduler-tooltip-shadow, k-elevation(5) ) !default;
+$kendo-scheduler-tooltip-shadow: var( --kendo-scheduler-tooltip-shadow, k-elevation(2) ) !default;
 
 /// The vertical margin of the Scheduler Tooltip title.
 /// @group scheduler

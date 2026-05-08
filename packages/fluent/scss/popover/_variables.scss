@@ -33,7 +33,7 @@ $kendo-popover-bg: var( --kendo-popover-bg, k-color(surface-alt) ) !default;
 $kendo-popover-border: var( --kendo-popover-border, transparent ) !default;
 /// The box shadow of the Popover.
 /// @group popover
-$kendo-popover-shadow: var( --kendo-popover-shadow, var( --kendo-box-shadow-depth-4, none ) ) !default;
+$kendo-popover-shadow: var( --kendo-popover-shadow, k-elevation(3) ) !default;
 
 /// The horizontal padding of the Popover header.
 /// @group popover

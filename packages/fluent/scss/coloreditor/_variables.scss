@@ -49,7 +49,7 @@ $kendo-color-editor-bg: var(--kendo-color-editor-bg, k-color(surface-alt)) !defa
 $kendo-color-editor-border: var(--kendo-color-editor-border, color-mix(in srgb, k-color(border) 16%, transparent)) !default;
 /// The box shadow of the ColorEditor.
 /// @group color-editor
-$kendo-color-editor-shadow: k-elevation(5) !default;
+$kendo-color-editor-shadow: k-elevation(3) !default;
 
 /// The border color of the focused ColorEditor.
 /// @group color-editor

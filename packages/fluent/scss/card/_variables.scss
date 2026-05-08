@@ -42,7 +42,7 @@ $kendo-card-text: var( --kendo-card-text, k-color(on-app-surface) ) !default;
 $kendo-card-border: var( --kendo-card-border, k-color(surface-alt) ) !default;
 /// The shadow of the Card.
 /// @group card
-$kendo-card-shadow: var( --kendo-card-shadow, var( --kendo-elevation-3, none ) ) !default;
+$kendo-card-shadow: var( --kendo-card-shadow, var( --kendo-elevation-1, none ) ) !default;
 
 /// The background color of the focused Card.
 /// @group card
@@ -55,7 +55,7 @@ $kendo-card-focus-text: null !default;
 $kendo-card-focus-border: k-color(border-alt) !default;
 /// The shadow of the focused Card.
 /// @group card
-$kendo-card-focus-shadow: var( --kendo-elevation-3, none ) !default;
+$kendo-card-focus-shadow: var( --kendo-elevation-1, none ) !default;
 
 /// The font size of the Card header.
 /// @group card

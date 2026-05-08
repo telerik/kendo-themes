@@ -54,7 +54,7 @@ $kendo-color-editor-border: k-color(border) !default;
 $kendo-color-editor-focus-border: k-color(border) !default;
 /// The box shadow of the focused ColorEditor.
 /// @group color-editor
-$kendo-color-editor-focus-shadow: k-elevation(3) !default;
+$kendo-color-editor-focus-shadow: null !default;
 
 /// The spacing between the ColorEditor header actions.
 /// @group color-editor

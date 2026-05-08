@@ -83,10 +83,10 @@ $kendo-window-text: k-color(on-app-surface) !default;
 $kendo-window-border: k-color(border) !default;
 /// The box shadow of the Window.
 /// @group window
-$kendo-window-shadow: k-elevation(8) !default;
+$kendo-window-shadow: k-elevation(4) !default;
 /// The box shadow of the focused Window.
 /// @group window
-$kendo-window-focus-shadow: k-elevation(9) !default;
+$kendo-window-focus-shadow: k-elevation(5) !default;
 
 /// The background color of the Window titlebar.
 /// @group window

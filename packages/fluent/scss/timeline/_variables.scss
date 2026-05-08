@@ -95,7 +95,7 @@ $kendo-timeline-flag-border-radius: var( --kendo-timeline-flag-border-radius, k-
 $kendo-timeline-flag-line-height: var( --kendo-timeline-flag-line-height, var(--kendo-line-height) ) !default;
 /// The box shadow of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-box-shadow: var( --kendo-timeline-flag-box-shadow, var( --kendo-box-shadow-depth-2, none ) ) !default;
+$kendo-timeline-flag-box-shadow: var( --kendo-timeline-flag-box-shadow, k-elevation(2) ) !default;
 /// The minimum width of the Timeline flag.
 /// @group timeline
 $kendo-timeline-flag-min-width: var( --kendo-timeline-flag-min-width, k-spacing(20) ) !default;

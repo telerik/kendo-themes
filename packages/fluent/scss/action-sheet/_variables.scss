@@ -48,7 +48,7 @@ $kendo-actionsheet-text: var( --kendo-actionsheet-text, #{k-color(on-app-surface
 $kendo-actionsheet-border: var( --kendo-actionsheet-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 /// Box shadow of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-shadow: var( --kendo-actionsheet-shadow, var( --kendo-box-shadow-depth-7, none ) ) !default;
+$kendo-actionsheet-shadow: var( --kendo-actionsheet-shadow, k-elevation(5) ) !default;
 
 /// Horizontal padding of the action sheet header.
 /// @group action-sheet

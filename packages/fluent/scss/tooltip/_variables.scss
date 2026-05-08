@@ -49,7 +49,7 @@ $kendo-tooltip-text: var( --kendo-tooltip-text, #{k-color(on-app-surface)} ) !de
 $kendo-tooltip-border: var( --kendo-tooltip-border, transparent ) !default;
 /// The box-shadow of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-shadow: var( --kendo-tooltip-shadow, k-elevation(4) ) !default;
+$kendo-tooltip-shadow: var( --kendo-tooltip-shadow, k-elevation(2) ) !default;
 
 /// The text color of the Tooltip button.
 /// @group tooltip

@@ -5,7 +5,6 @@
 
 // Elevation
 @use "./elevation/_index.scss" as *;
-@forward "./elevation/_legacy.scss";
 
 // Typography
 @use "./typography/_index.scss" as *;

@@ -76,7 +76,7 @@ $kendo-scrollview-pager-height: var( --kendo-scrollview-pager-height, calc( #{$k
 $kendo-scrollview-navigation-color: var( --kendo-scrollview-navigation-color, k-color(app-surface) ) !default;
 /// The box shadow of the ScrollView navigation arrows.
 /// @group scrollview
-$kendo-scrollview-navigation-arrow-shadow: var( --kendo-scrollview-navigation-arrow-shadow, var( --kendo-box-shadow-depth-3, none ) ) !default;
+$kendo-scrollview-navigation-arrow-shadow: var( --kendo-scrollview-navigation-arrow-shadow, k-elevation(3) ) !default;
 /// The background color of the ScrollView navigation.
 /// @group scrollview
 $kendo-scrollview-navigation-bg: var( --kendo-scrollview-navigation-bg, transparent ) !default;
@@ -85,7 +85,7 @@ $kendo-scrollview-navigation-bg: var( --kendo-scrollview-navigation-bg, transpar
 $kendo-scrollview-navigation-focus-shadow: var( --kendo-scrollview-navigation-focus-shadow, 0 0 0 1px k-color(base-emphasis) ) !default;
 /// The hover box shadow of the ScrollView navigation arrows.
 /// @group scrollview
-$kendo-scrollview-navigation-arrow-hover-shadow: var( --kendo-scrollview-navigation-arrow-hover-shadow, var( --kendo-box-shadow-depth-4, none ) ) !default;
+$kendo-scrollview-navigation-arrow-hover-shadow: var( --kendo-scrollview-navigation-arrow-hover-shadow, k-elevation(4) ) !default;
 
 /// The background color of the ScrollView pager in light mode.
 /// @group scrollview

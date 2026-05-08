@@ -429,7 +429,7 @@ $kendo-grid-column-menu-max-width: var( --kendo-grid-column-menu-max-width, 320p
 $kendo-grid-column-menu-spacing: var( --kendo-grid-column-menu-spacing, #{k-spacing(2)} ) !default;
 /// The focus shadow of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-shadow: var( --kendo-grid-column-menu-shadow, var(--kendo-box-shadow-depth-4, none) ) !default;
+$kendo-grid-column-menu-shadow: var( --kendo-grid-column-menu-shadow, k-elevation(4) ) !default;
 /// The background color of the Grid column menu.
 /// @group grid
 $kendo-grid-column-menu-bg: var( --kendo-grid-column-menu-bg, #{k-color(surface-alt)} ) !default;
