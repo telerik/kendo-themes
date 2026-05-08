@@ -1350,8 +1350,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-grouping-row-border-top</td>
     <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The grouping border top of the Grid row.</div></div>
