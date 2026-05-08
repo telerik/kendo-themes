@@ -23,4 +23,9 @@
     .k-spreadsheet-toolbar {
         background-color: $kendo-spreadsheet-bg !important; // stylelint-disable-line declaration-no-important
     }
+
+    .k-spreadsheet-tabstrip {
+        background-color: k-translucency-bg(k-color(surface-alt));
+        border-radius: inherit;
+    }
 }
