@@ -27,7 +27,7 @@
                     &:hover {
                         border-color: k-color(#{$name}-subtle-hover);
                         background-color: k-color(#{$name}-subtle-hover);
-                        @include box-shadow(k-elevation(4));
+                        @include box-shadow(k-elevation(3));
                     }
 
                     // Focus state

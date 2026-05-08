@@ -44,7 +44,7 @@ $kendo-color-gradient-bg: var(--kendo-color-gradient-bg, k-color(surface-alt)) !
 $kendo-color-gradient-border: var(--kendo-color-gradient-border, color-mix(in srgb, k-color(border) 16%, transparent)) !default;
 /// The box shadow of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
+$kendo-color-gradient-shadow: k-elevation(2) !default;
 
 /// The vertical padding of the small ColorGradient.
 /// @group color-gradient
@@ -175,7 +175,7 @@ $kendo-color-gradient-draghandle-outline-width: var(--kendo-color-gradient-dragh
 $kendo-color-gradient-draghandle-border: var(--kendo-color-gradient-draghandle-border, k-color(app-surface)) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-shadow: k-elevation(4) !default;
+$kendo-color-gradient-draghandle-shadow: k-elevation(2) !default;
 /// The color of the outline around the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-outline: k-color(border) !default;

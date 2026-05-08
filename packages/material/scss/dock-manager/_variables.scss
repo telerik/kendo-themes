@@ -72,7 +72,7 @@ $kendo-dock-manager-unpinned-container-width: 300px !default;
 $kendo-dock-manager-unpinned-container-bg: k-color(surface) !default;
 /// The box shadow of the unpinned pane container in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-unpinned-container-shadow: k-elevation(7) !default;
+$kendo-dock-manager-unpinned-container-shadow: k-elevation(3) !default;
 
 /// The padding of the dock indicator in the DockManager component.
 /// @group dock-manager
@@ -94,7 +94,7 @@ $kendo-dock-indicator-outline-style: solid !default;
 $kendo-dock-indicator-outline: $kendo-dock-indicator-text !default;
 /// The box shadow of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-shadow: k-elevation(5) !default;
+$kendo-dock-indicator-shadow: k-elevation(2) !default;
 
 ///  The background color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
