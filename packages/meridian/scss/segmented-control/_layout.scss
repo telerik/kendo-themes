@@ -1,6 +1,13 @@
 @use "@progress/kendo-theme-core/scss/components/segmented-control/_layout.scss" as *;
-
+@use "../core/z-index/index.scss" as *;
 
 @mixin kendo-segmented-control--layout() {
     @include kendo-segmented-control--layout-base();
+
+    .k-segmented-control {
+        > .k-segmented-control-button:focus,
+        > .k-segmented-control-button.k-focus {
+            z-index: k-z-index("base", 3);
+        }
+    }
 }
