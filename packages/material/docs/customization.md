@@ -10984,9 +10984,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-color-preview-no-color-text</td>
-    <td>String</td>
-    <td><code>map.get($kendo-colors, error-on-surface)</code></td>
-    <td><code>oklch(from var(--kendo-color-error) calc(l - 0.052) calc(c - 0.0164) h)</code></td>
+    <td>Color</td>
+    <td><code>map.get($kendo-colors, error)</code></td>
+    <td><span class="color-preview" style="background-color: oklch(50.13% 0.1783 28.7deg)"></span><code>oklch(50.13% 0.1783 28.7deg)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorPreview when no color is selected.</div></div>
