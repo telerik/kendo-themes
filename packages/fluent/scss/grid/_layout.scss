@@ -23,19 +23,16 @@
             border-inline-start-width: $kendo-grid-header-border-width-x;
         }
 
-        td,
         .k-table-td {
             border-block-end-width: $kendo-grid-cell-border-width-y;
             border-inline-start-width: $kendo-grid-cell-border-width-x;
         }
 
         // Grouping, hierarchy
-        .k-grouping-row td,
         .k-grouping-row .k-table-td {
             border-block-end-width: 0;
         }
 
-        .k-grouping-row + .k-table-row td,
         .k-grouping-row + .k-table-row .k-table-td {
             border-block-start-width: $kendo-grid-grouping-row-border-width-y;
         }
@@ -46,13 +43,11 @@
             border-inline-end-width: 1px;
         }
 
-        .k-group-footer td,
         .k-group-footer .k-table-td {
             border-inline-width: $kendo-grid-group-footer-border-width-x;
             border-block-end-width: $kendo-grid-group-footer-border-width-y;
         }
 
-        .k-table .k-group-footer td,
         .k-table .k-group-footer .k-table-td {
             border-block-start-width: 0;
         }
@@ -77,9 +72,7 @@
     }
 
     .k-grid-pinned-container {
-        .k-table-row:last-child td,
         .k-table-row:last-child .k-table-td,
-        .k-master-row:last-child td,
         .k-master-row:last-child .k-table-td {
             border-block-end-width: 0;
         }
@@ -159,17 +152,13 @@
 
     .k-grid-footer {
 
-        td,
         .k-table-td {
             border-block-end-width: 0;
         }
     }
 
-    .k-grid-footer td,
     .k-grid-footer .k-table-td,
     .k-grid-header .k-table-th,
-    .k-group-footer td,
-    .k-grouping-row td,
     .k-group-footer .k-table-td,
     .k-grouping-row .k-table-td {
         font-weight: $kendo-grid-header-font-weight;
@@ -177,14 +166,12 @@
 
     // Filter row
     .k-filter-row {
-        td,
         .k-table-td,
         .k-table-th {
             padding-inline: $kendo-grid-filter-cell-padding-x;
             padding-block: $kendo-grid-filter-cell-padding-y;
         }
 
-        td:first-child,
         .k-table-td:first-child {
             border-inline-start-width: 0;
         }
@@ -196,12 +183,10 @@
         border-inline-end-width: $kendo-grid-border-width;
     }
 
-    .k-master-row.k-expanded td,
     .k-master-row.k-expanded .k-table-td {
         border-block-end-width: 0;
     }
 
-    .k-master-row:has(.k-hierarchy-cell[aria-expanded="true"]) td,
     .k-master-row:has(.k-hierarchy-cell[aria-expanded="true"]) .k-table-td {
         border-block-end-width: 0;
     }
@@ -220,7 +205,6 @@
         border-inline-start-width: 0;
         border-inline-end-width: 1px;
 
-        td,
         .k-table-td,
         .k-table-th {
             border-inline-start-width: 1px;
