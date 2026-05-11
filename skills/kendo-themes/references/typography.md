@@ -1,74 +1,118 @@
 # Typography
 
-The typography system controls the font families, sizes, weights, line heights, and letter spacing applied to Kendo and Telerik components.
+The typography system defines font families, sizes, weights, line heights, and letter spacing applied to all Kendo and Telerik components. All tokens are emitted as CSS custom properties on `:root` and shared across every theme.
 
-## Customization
+## Per-Theme Defaults
 
-Override typography tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization). Typography uses individual variables (not a map) — override each `$kendo-<variable>` separately in Sass.
+### Base Font Family (`--kendo-font-family`)
 
-## Available Tokens
+| Theme | Value |
+|---|---|
+| Meridian | `Inter, system-ui, -apple-system, "Segoe UI", Roboto, …` |
+| Bootstrap | `system-ui, -apple-system, "Segoe UI", Roboto, …` |
+| Material | `Roboto, "Helvetica Neue", sans-serif` |
+| Fluent | `"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, …` |
+| Classic / Default | `inherit` |
+
+### Base Font Size (`--kendo-font-size`)
+
+| Theme | Value |
+|---|---|
+| Meridian | `1rem` |
+| Bootstrap | `1rem` |
+| Material | `0.875rem` |
+| Fluent | `0.875rem` |
+| Classic / Default | `0.875rem` |
+
+## Tokens
 
 ### Font Families
 
-| Token | Default | CSS Variable |
-|---|---|---|
-| `font-family` | `inherit` | `--kendo-font-family` |
-| `font-family-sans` | `Arial, Verdana, ...` | `--kendo-font-family-sans` |
-| `font-family-serif` | `Times New Roman, Georgia, ...` | `--kendo-font-family-serif` |
-| `font-family-sans-serif` | `system-ui, -apple-system, Segoe UI, Roboto, ...` | `--kendo-font-family-sans-serif` |
-| `font-family-monospace` | `SFMono-Regular, Menlo, Monaco, ...` | `--kendo-font-family-monospace` |
+| CSS Variable | Core Default |
+|---|---|
+| `--kendo-font-family` | `inherit` (overridden per theme — see above) |
+| `--kendo-font-family-sans` | `Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans` |
+| `--kendo-font-family-serif` | `"Times New Roman", Georgia, Garamond, Palatino, Baskerville` |
+| `--kendo-font-family-sans-serif` | `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", …` |
+| `--kendo-font-family-monospace` | `SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", …` |
 
 ### Font Sizes
 
-| Token | Default | CSS Variable |
-|---|---|---|
-| `font-size` | `0.875rem` (base) | `--kendo-font-size` |
-| `font-size-xxs` | `0.5rem` | `--kendo-font-size-xxs` |
-| `font-size-xs` | `0.625rem` | `--kendo-font-size-xs` |
-| `font-size-sm` | `0.75rem` | `--kendo-font-size-sm` |
-| `font-size-md` | `0.875rem` | `--kendo-font-size-md` |
-| `font-size-lg` | `1rem` | `--kendo-font-size-lg` |
-| `font-size-xl` | `1.25rem` | `--kendo-font-size-xl` |
+| CSS Variable | Core Default |
+|---|---|
+| `--kendo-font-size` | `0.875rem` (overridden per theme — see above) |
+| `--kendo-font-size-xxs` | `0.5rem` |
+| `--kendo-font-size-xs` | `0.625rem` |
+| `--kendo-font-size-sm` | `0.75rem` |
+| `--kendo-font-size-md` | `0.875rem` |
+| `--kendo-font-size-lg` | `1rem` |
+| `--kendo-font-size-xl` | `1.25rem` |
 
 ### Line Heights
 
-| Token | Default | CSS Variable |
-|---|---|---|
-| `line-height` | `1.4286` (base) | `--kendo-line-height` |
-| `line-height-xs` | `1` | `--kendo-line-height-xs` |
-| `line-height-sm` | `1.25` | `--kendo-line-height-sm` |
-| `line-height-md` | `1.4286` | `--kendo-line-height-md` |
-| `line-height-lg` | `1.5` | `--kendo-line-height-lg` |
+| CSS Variable | Core Default |
+|---|---|
+| `--kendo-line-height` | `1.4286` |
+| `--kendo-line-height-xs` | `1` |
+| `--kendo-line-height-sm` | `1.25` |
+| `--kendo-line-height-md` | `1.4286` |
+| `--kendo-line-height-lg` | `1.5` |
 
 ### Font Weights
 
-| Token | Default | CSS Variable |
-|---|---|---|
-| `font-weight` | `400` (base) | `--kendo-font-weight` |
-| `font-weight-thin` | `100` | `--kendo-font-weight-thin` |
-| `font-weight-extra-light` | `200` | `--kendo-font-weight-extra-light` |
-| `font-weight-light` | `300` | `--kendo-font-weight-light` |
-| `font-weight-normal` | `400` | `--kendo-font-weight-normal` |
-| `font-weight-medium` | `500` | `--kendo-font-weight-medium` |
-| `font-weight-semibold` | `600` | `--kendo-font-weight-semibold` |
-| `font-weight-bold` | `700` | `--kendo-font-weight-bold` |
-| `font-weight-extra-bold` | `800` | `--kendo-font-weight-extra-bold` |
-| `font-weight-black` | `900` | `--kendo-font-weight-black` |
+| CSS Variable | Core Default |
+|---|---|
+| `--kendo-font-weight` | `400` |
+| `--kendo-font-weight-thin` | `100` |
+| `--kendo-font-weight-extra-light` | `200` |
+| `--kendo-font-weight-light` | `300` |
+| `--kendo-font-weight-normal` | `400` |
+| `--kendo-font-weight-medium` | `500` |
+| `--kendo-font-weight-semibold` | `600` |
+| `--kendo-font-weight-bold` | `700` |
+| `--kendo-font-weight-extra-bold` | `800` |
+| `--kendo-font-weight-black` | `900` |
 
 ### Letter Spacing
 
-| Token | Default | CSS Variable |
-|---|---|---|
-| `letter-spacing` | `null` (base) | `--kendo-letter-spacing` |
-| `letter-spacing-tightest` | `-.15px` | `--kendo-letter-spacing-tightest` |
-| `letter-spacing-tighter` | `-.10px` | `--kendo-letter-spacing-tighter` |
-| `letter-spacing-tight` | `-.5px` | `--kendo-letter-spacing-tight` |
-| `letter-spacing-normal` | `0px` | `--kendo-letter-spacing-normal` |
-| `letter-spacing-wide` | `.5px` | `--kendo-letter-spacing-wide` |
-| `letter-spacing-wider` | `.10px` | `--kendo-letter-spacing-wider` |
-| `letter-spacing-widest` | `.15px` | `--kendo-letter-spacing-widest` |
+| CSS Variable | Core Default |
+|---|---|
+| `--kendo-letter-spacing` | `null` |
+| `--kendo-letter-spacing-tightest` | `-0.15px` |
+| `--kendo-letter-spacing-tighter` | `-0.10px` |
+| `--kendo-letter-spacing-tight` | `-0.5px` |
+| `--kendo-letter-spacing-normal` | `0px` |
+| `--kendo-letter-spacing-wide` | `0.5px` |
+| `--kendo-letter-spacing-wider` | `0.10px` |
+| `--kendo-letter-spacing-widest` | `0.15px` |
 
-## Further Reading
+## Customization
 
-- [Typography](https://www.telerik.com/design-system/docs/foundation/typography)
-- [Typography Usage](https://www.telerik.com/design-system/docs/foundation/typography/usage)
+### CSS
+
+Override any token on `:root` or a scoped selector:
+
+```css
+:root {
+  --kendo-font-family: "Inter", sans-serif;
+  --kendo-font-size: 1rem;
+  --kendo-font-weight: 400;
+}
+```
+
+### Sass
+
+Override the corresponding `$kendo-` variable before compilation:
+
+```scss
+@use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
+  $kendo-font-family: "Inter", sans-serif,
+  $kendo-font-size: 1rem
+);
+```
+
+## How It Works
+
+All base tokens (`$kendo-font-size`, `$kendo-font-family`, etc.) are defined in `core/scss/typography/index.scss`. Each theme may override `font-family` and `font-size` to match its design language. The build emits all tokens as CSS custom properties on `:root`.
+
+Component-level typography (headings, displays, paragraphs, code blocks) is defined separately per theme and references the base tokens via `var(--kendo-font-size)`, `var(--kendo-font-family)`, etc.
