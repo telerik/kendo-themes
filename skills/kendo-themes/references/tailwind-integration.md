@@ -1,6 +1,6 @@
 # Tailwind CSS Integration
 
-Kendo and Telerik components and Tailwind CSS work side-by-side with no conflicts. Use Tailwind for layout and app-level styles, Kendo theme for component styling. The key challenge is **visual consistency** — aligning design tokens so your custom UI and your components share the same colors, spacing, and typography.
+Kendo and Telerik components and Tailwind CSS work side-by-side. Use Tailwind for layout and app-level styles, Kendo theme for component styling. The key challenge is **visual consistency** — aligning design tokens so your custom UI and your components share the same colors, spacing, and typography.
 
 There are two approaches depending on which system owns the design tokens:
 
@@ -11,10 +11,10 @@ There are two approaches depending on which system owns the design tokens:
 
 ## Setup
 
-Import both independently — the Kendo theme CSS and your Tailwind stylesheet:
+Import both independently — the Kendo theme CSS and your Tailwind stylesheet. Import the Kendo theme **before** Tailwind so that Tailwind utilities can override component styles when needed:
 
 ```ts
-import "@progress/kendo-theme-<theme>/dist/all.css";
+import "@progress/kendo-theme-meridian/dist/all.css";
 import "./tailwind.css";
 ```
 
@@ -44,9 +44,9 @@ Use the Semantic Mapping Guide below (read left-to-right: find your Tailwind tok
 
 ## Semantic Mapping Guide
 
-The table works for both directions — read left-to-right for Kendo-first, right-to-left for Tailwind-first:
+The table below shows common mappings between Tailwind and Kendo tokens. Read left-to-right for Kendo-first, right-to-left for Tailwind-first. Tailwind token names are examples (your `@theme` may use different names):
 
-| Tailwind Token  | Kendo Equivalent               | Role                      |
+| Tailwind Token (example) | Kendo Equivalent               | Role                      |
 | --------------- | ------------------------------ | ------------------------- |
 | `background`    | `--kendo-color-app-surface`    | App-level background      |
 | `foreground`    | `--kendo-color-on-app-surface` | Primary text color        |
