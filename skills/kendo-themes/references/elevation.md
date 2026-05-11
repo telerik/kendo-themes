@@ -1,27 +1,65 @@
 # Elevation
 
-The elevation system provides shadow tokens that give Kendo and Telerik components visual depth and layering.
-
-## Customization
-
-Override elevation tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization).
+The elevation system provides box-shadow tokens that give Kendo and Telerik components visual depth and layering. Each theme defines its own shadow values per level.
 
 ## Available Tokens
 
-| Level | CSS Variable | Default Value |
-|---|---|---|
-| 1 | `--kendo-elevation-1` | `0 2px 3px rgba(0, 0, 0, .04)` |
-| 2 | `--kendo-elevation-2` | `0 4px 6px rgba(0, 0, 0, .06), 0 4px 16px rgba(0, 0, 0, .12)` |
-| 3 | `--kendo-elevation-3` | `0 6px 8px rgba(0, 0, 0, .08), 0 4px 16px rgba(0, 0, 0, .12)` |
-| 4 | `--kendo-elevation-4` | Progressive depth |
-| 5 | `--kendo-elevation-5` | Progressive depth |
-| 6 | `--kendo-elevation-6` | Progressive depth |
-| 7 | `--kendo-elevation-7` | Progressive depth |
-| 8 | `--kendo-elevation-8` | Progressive depth |
-| 9 | `--kendo-elevation-9` | Maximum depth |
+All themes provide 5 elevation levels: `--kendo-elevation-1` through `--kendo-elevation-5`.
 
-Higher levels produce deeper, more diffused shadows. Use level 1–3 for most components, 4–6 for overlays/popups, 7–9 for modals.
+### Meridian Values (recommended theme)
 
+| Level | Value |
+|---|---|
+| 1 | `0 0 4px 1px rgba(56,66,80,.05), 0 4px 6px -2px rgba(56,66,80,.06)` |
+| 2 | `0 -1px 2px 0 rgba(56,66,80,.03), 0 4px 6px -2px rgba(56,66,80,.02), 0 12px 16px -4px rgba(56,66,80,.08)` |
+| 3 | `0 -1px 2px 0 rgba(56,66,80,.03), 0 8px 10px -4px rgba(56,66,80,.04), 0 16px 20px -4px rgba(56,66,80,.08)` |
+| 4 | `0 -1px 2px 0 rgba(56,66,80,.03), 0 12px 14px -4px rgba(56,66,80,.04), 0 18px 24px -5px rgba(56,66,80,.08)` |
+| 5 | `0 -1px 2px 0 rgba(56,66,80,.03), 0 16px 18px -6px rgba(56,66,80,.06), 0 20px 28px -6px rgba(56,66,80,.08)` |
+
+### Usage Guidelines
+
+- Level 1–2: Subtle depth for cards, inputs, and inline elements.
+- Level 3–4: Popovers, popups, and overlays.
+- Level 5: Modals and high-priority layers.
+
+### Elevation Background
+
+In dark mode, themes also apply an `elevation-bg` function that subtly increases lightness at higher elevation levels (using OKLCH color math). This is automatic and does not require consumer configuration.
+
+## Customization
+
+### CSS Override
+
+```css
+:root {
+    --kendo-elevation-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --kendo-elevation-2: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+```
+
+### Sass Override
+
+Override the `$kendo-elevation` map before importing the theme:
+
+```scss
+@use "~@progress/kendo-theme-meridian/scss/index" with (
+    $kendo-elevation: (
+        1: (0 2px 4px rgba(0, 0, 0, 0.1)),
+        2: (0 4px 8px rgba(0, 0, 0, 0.12)),
+        3: (0 8px 16px rgba(0, 0, 0, 0.14)),
+        4: (0 12px 24px rgba(0, 0, 0, 0.16)),
+        5: (0 16px 32px rgba(0, 0, 0, 0.18))
+    )
+);
+```
+
+### Using Elevation in Custom Components
+
+```css
+.my-card {
+    box-shadow: var(--kendo-elevation-2);
+}
+```
 
 ## Further Reading
 
