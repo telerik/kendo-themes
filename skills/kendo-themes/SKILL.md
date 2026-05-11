@@ -150,7 +150,7 @@ Each token group below is customizable through CSS custom properties or Sass map
 | **Elevation**    | `--kendo-elevation-{level}`                        | `$kendo-elevation`                   | [elevation.md](references/elevation.md)     |
 | **Motion**       | `--kendo-duration-{name}`, `--kendo-easing-{name}` | `$kendo-durations`, `$kendo-easings` | [motion.md](references/motion.md)           |
 | **Typography**   | `--kendo-font-size`, `--kendo-font-family`, etc.   | Individual variables                 | [typography.md](references/typography.md)   |
-| **Iconography**  | `--kendo-icon-size`                                | Individual variables                 | [iconography.md](references/iconography.md) |
+| **Iconography**  | Size classes (`.k-icon-{xs..xxxl}`)                | `$kendo-icon-size`                   | [iconography.md](references/iconography.md) |
 
 ## Extensibility
 
