@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.0.0-dev.7](https://github.com/telerik/kendo-themes/compare/v14.0.0-dev.6...v14.0.0-dev.7) (2026-05-11)
+
+
+### Features
+
+* **elevation:** reduce elevation scale from 9 to 5 levels ([8dad38f](https://github.com/telerik/kendo-themes/commit/8dad38f5596e9abf336228a1b04c35947c731e97))
+
+
+
+
+
 # [14.0.0-dev.6](https://github.com/telerik/kendo-themes/compare/v14.0.0-dev.5...v14.0.0-dev.6) (2026-05-11)
 
 **Note:** Version bump only for package kendo-themes.repo
