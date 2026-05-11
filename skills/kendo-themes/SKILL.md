@@ -151,7 +151,6 @@ Each token group below is customizable through CSS custom properties or Sass map
 | **Motion**       | `--kendo-duration-{name}`, `--kendo-easing-{name}` | `$kendo-durations`, `$kendo-easings` | [motion.md](references/motion.md)           |
 | **Typography**   | `--kendo-font-size`, `--kendo-font-family`, etc.   | Individual variables                 | [typography.md](references/typography.md)   |
 | **Iconography**  | `--kendo-icon-size`                                | Individual variables                 | [iconography.md](references/iconography.md) |
-| **Layout**       | Breakpoint tokens                                  | `$kendo-breakpoints`                 | [layout.md](references/layout.md)           |
 
 ## Extensibility
 
