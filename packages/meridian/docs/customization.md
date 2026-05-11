@@ -7111,9 +7111,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-chart-no-data-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing( 25 )</code></td>
-    <td><code>var(--kendo-spacing-25)</code></td>
+    <td>Number</td>
+    <td><code>7rem</code></td>
+    <td><code>7rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chart.</div></div>
