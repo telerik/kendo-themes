@@ -368,7 +368,7 @@ $kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
 /// The vertical padding of the Chart.
 /// @group charts
-$kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
+$kendo-chart-no-data-padding-y: 7rem !default;
 
 // Gauge
 /// The background color of the Gauge.
