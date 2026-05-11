@@ -2,42 +2,16 @@
 
 Colors are the most commonly customized aspect of component styling. The color system defines semantic tokens used by every Kendo and Telerik component.
 
-For most work, start with **semantic color tokens** and **CSS custom properties**. The color system uses **OKLCH relative color syntax**, which means setting a single base color automatically computes all derived variants (hover, active, emphasis, on-color, etc.) at runtime — so changing one value rebrands every component that uses it.
+Set a single base color (e.g., `primary`) and all derived variants — hover, active, emphasis, on-color, subtle — are automatically computed. One value rebrands every component that uses it.
 
 ## Color Layers
-
-Colors are organized in layers:
 
 1. **Semantic tokens** — Named roles such as `primary`, `error`, `surface`, and `border`
 2. **CSS custom properties** — Runtime-accessible `--kendo-color-{name}` variables generated from those semantic tokens
 
-## Customization
-
-Override color tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization). Recommended order:
-
-1. **CSS custom properties** for runtime theming and scoped overrides.
-2. **Swatches** when an existing color variant already matches your needs.
-3. **Sass `$kendo-colors` overrides** for compile-time control over semantic tokens.
-
-### OKLCH Relative Colors
-
-The themes use **CSS relative color syntax** in the OKLCH color space. Set just the base semantic color token — all derived variants (hover, active, emphasis, on-color, subtle, etc.) auto-compute from it at runtime:
-
-```css
---kendo-color-<role>-hover: oklch(from var(--kendo-color-<role>) calc(l - 0.044) calc(c - 0.012) h);
---kendo-color-<role>-active: oklch(from var(--kendo-color-<role>) calc(l - 0.088) calc(c - 0.027) h);
---kendo-color-<role>-emphasis: oklch(from var(--kendo-color-<role>) calc(l * 0.665 + 0.33) calc(c * 0.61) h);
-```
-
-Updating a base color propagates the change to all its derived states without any additional overrides.
-
-### Sass Overrides
-
-The `$kendo-colors` map merges with defaults (`map.merge`) — specify only the tokens you want to change. Use `k-generate-color-variations(<role>, <color>, "default")` to auto-expand one base color into all 10 semantic variants at compile time. For precise control over individual states, override `$kendo-colors` directly.
-
 ## Available Color Tokens
 
-### Surface & Base
+### Surface & Misc
 
 | Token | CSS Variable | Purpose |
 |---|---|---|
@@ -67,25 +41,73 @@ Each semantic color has **10 variants** following a consistent pattern:
 | `-on-surface` | Text on surface | `--kendo-color-primary-on-surface` |
 
 **Semantic color names:**
-`base`, `primary`, `secondary`, `tertiary`, `info`, `success`, `warning`, `error`, `light`, `dark`, `inverse`
+`base`, `primary`, `secondary`, `tertiary`, `info`, `success`, `warning`, `error`, `inverse`
 
-### Data Visualization (Series)
+## Customization
 
-6 chart series colors, each with 5 variants:
+Override color tokens via CSS custom properties or Sass. Recommended order:
 
-`series-a`, `series-a-bold`, `series-a-bolder`, `series-a-subtle`, `series-a-subtler`
+1. **CSS custom properties** — for runtime theming and scoped overrides (simplest).
+2. **Swatches** — when an existing color variant already matches your needs.
+3. **Sass `$kendo-colors` map** — for compile-time control over semantic tokens.
 
-Series: `a` through `f`.
+### CSS Custom Properties
 
-### Constants
+Set just the base color — all variants (hover, active, emphasis, on-color, subtle, etc.) auto-compute from it at runtime:
 
-These are Sass-only constants available in core sources. They are **not** exported as `--kendo-color-*` CSS custom properties.
+```css
+:root {
+  --kendo-color-primary: #ff6358;
+}
+```
 
-| Token | Sass Constant | Value |
-|---|---|---|
-| white | `$kendo-color-white` | `#ffffff` |
-| black | `$kendo-color-black` | `#000000` |
-| transparent | `$kendo-color-rgba-transparent` | `rgba(0, 0, 0, 0)` |
+Override multiple semantic groups at once:
+
+```css
+:root {
+  --kendo-color-primary: #5c6bc0;
+  --kendo-color-secondary: #78909c;
+  --kendo-color-error: #e53935;
+}
+```
+
+For precise control over individual states, override specific variant tokens:
+
+```css
+:root {
+  --kendo-color-primary: #5c6bc0;
+  --kendo-color-primary-hover: #3f51b5;
+  --kendo-color-on-primary: #ffffff;
+}
+```
+
+### Sass Overrides
+
+The `$kendo-colors` map merges with defaults — specify only the tokens you want to change:
+
+```scss
+@use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
+  $kendo-colors: (
+    primary: #5c6bc0,
+    secondary: #78909c,
+    error: #e53935
+  )
+);
+```
+
+For precise control over individual states, override specific variant tokens:
+
+```scss
+@use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
+  $kendo-colors: (
+    primary: #5c6bc0,
+    primary-hover: #3f51b5,
+    on-primary: #ffffff
+  )
+);
+```
+
+> **How auto-expansion works:** The theme uses CSS relative color syntax (OKLCH) internally. When you set a base color like `--kendo-color-primary`, all derived variants (hover, active, emphasis, on-color, subtle, etc.) are computed from it at runtime using `oklch(from …)` expressions — no manual mapping needed.
 
 ## Swatches
 
@@ -95,20 +117,19 @@ Swatches are pre-configured color variants shipped with each theme.
 
 **CSS** (recommended):
 
-Import the compiled swatch CSS from your application entry point:
-
 ```ts
-import "@progress/kendo-theme-default/dist/default-ocean-blue.css";
+import "@progress/kendo-theme-meridian/dist/meridian-main.css";
 ```
 
 **Sass** (for further customization):
 
 ```scss
-// In your app stylesheet, use a pre-built swatch SCSS and customize further
-@use "@progress/kendo-theme-default/dist/default-ocean-blue.scss" as *;
+@use "@progress/kendo-theme-meridian/dist/meridian-main.scss" as *;
 ```
 
 ### Available Swatches
+
+**Meridian:** `meridian-main`, `meridian-main-dark`
 
 **Default:** `default-main`, `default-main-dark`, `default-blue`, `default-blue-dark`, `default-green`, `default-green-dark`, `default-orange`, `default-purple`, `default-turquoise`, `default-ocean-blue`, `default-ocean-blue-a11y`, `default-urban`, `default-nordic`
 
@@ -119,6 +140,20 @@ import "@progress/kendo-theme-default/dist/default-ocean-blue.css";
 **Classic:** `classic-main`, `classic-main-dark`, `classic-green`, `classic-green-dark`, `classic-silver`, `classic-silver-dark`, `classic-opal`, `classic-opal-dark`, `classic-lavender`, `classic-lavender-dark`, `classic-metro`, `classic-metro-dark`, `classic-moonlight`, `classic-uniform`
 
 **Fluent:** `fluent-main`, `fluent-main-dark`, `fluent-1`, `fluent-1-dark`
+
+## Data Visualization (Series)
+
+A base `series` token controls the starting point for chart colors. Six named series (`a` through `f`) are derived from it, each with 5 variants:
+
+| Suffix | Purpose |
+|---|---|
+| `series-{x}` | Series base color |
+| `series-{x}-bold` | Darker variant |
+| `series-{x}-bolder` | Darkest variant |
+| `series-{x}-subtle` | Lighter variant |
+| `series-{x}-subtler` | Lightest variant |
+
+Where `{x}` is `a`, `b`, `c`, `d`, `e`, or `f`. All six series follow this same pattern.
 
 ## Further Reading
 
