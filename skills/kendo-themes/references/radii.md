@@ -1,39 +1,61 @@
 # Border Radii
 
-The border radius system provides a consistent rounding scale applied to Kendo and Telerik components.
-
-## Base Variable
-
-All sizes scale from `--kendo-border-radius-base` (Sass: `$kendo-border-radius-base`). Default: `0.25rem`. Each size token is a fixed multiplier of the base. Changing the base rescales every radius token proportionally.
-
-| Token | Multiplier | Default (`base = 0.25rem`) |
-|---|---|---|
-| `xs` | `base × 0.25` | `~0.063rem` |
-| `sm` | `base × 0.5` | `0.125rem` |
-| `md` | `base × 1` | `0.25rem` |
-| `lg` | `base × 1.5` | `0.375rem` |
-| `xl` | `base × 2` | `0.5rem` |
-| `xxl` | `base × 3` | `0.75rem` |
-| `xxxl` | `base × 4` | `1rem` |
-| `full` | `base × 9999` | `9999px` (pill) |
-
-## Customization
-
-Override border radius tokens using the CSS or Sass patterns from the [main skill](../SKILL.md#customization).
+The border radius system provides a consistent rounding scale for Kendo and Telerik components. All size tokens derive from a single base variable using `calc()` multipliers, so changing the base rescales the entire radius scale proportionally.
 
 ## Available Tokens
 
-| Token | Default Value | CSS Variable |
-|---|---|---|
-| `none` | `0px` | `--kendo-border-radius-none` |
-| `xs` | `calc(base × 0.25)` | `--kendo-border-radius-xs` |
-| `sm` | `calc(base × 0.5)` | `--kendo-border-radius-sm` |
-| `md` | `var(--kendo-border-radius-base)` | `--kendo-border-radius-md` |
-| `lg` | `calc(base × 1.5)` | `--kendo-border-radius-lg` |
-| `xl` | `calc(base × 2)` | `--kendo-border-radius-xl` |
-| `xxl` | `calc(base × 3)` | `--kendo-border-radius-xxl` |
-| `xxxl` | `calc(base × 4)` | `--kendo-border-radius-xxxl` |
-| `full` | `calc(base × 9999)` | `--kendo-border-radius-full` |
+| CSS Variable | Description |
+|---|---|
+| `--kendo-border-radius-base` | Foundation value; all other tokens scale from this |
+| `--kendo-border-radius-none` | Always `0px` |
+| `--kendo-border-radius-xs` | Extra small |
+| `--kendo-border-radius-sm` | Small |
+| `--kendo-border-radius-md` | Medium (equals base) |
+| `--kendo-border-radius-lg` | Large |
+| `--kendo-border-radius-xl` | Extra large |
+| `--kendo-border-radius-xxl` | 2× extra large |
+| `--kendo-border-radius-xxxl` | 3× extra large |
+| `--kendo-border-radius-full` | Pill shape (`base × 9999`) |
+
+## Per-Theme Base Values
+
+Each theme sets its own `--kendo-border-radius-base`. The multiplier ratios from base to each size token also vary per theme.
+
+| Theme | Base Value |
+|---|---|
+| Meridian | `0.375rem` |
+| Bootstrap | `0.375rem` |
+| Default | `0.25rem` |
+| Classic | `0.25rem` |
+| Fluent | `0.25rem` |
+| Material | `0.25rem` |
+
+## Customization
+
+### CSS — override the base (rescales all tokens)
+
+```css
+:root {
+  --kendo-border-radius-base: 0.5rem;
+}
+```
+
+### CSS — override individual tokens
+
+```css
+:root {
+  --kendo-border-radius-lg: 0.75rem;
+  --kendo-border-radius-full: 50%;
+}
+```
+
+### Sass — override at build time
+
+```scss
+@use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
+    $kendo-border-radius-base: 0.5rem
+);
+```
 
 ## Further Reading
 
