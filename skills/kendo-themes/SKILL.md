@@ -18,11 +18,12 @@ Your Application
             └── Design System Tokens (colors, spacing, typography…)
 ```
 
-**5 themes available** — pick the one that matches your design language:
+**6 themes available** — pick the one that matches your design language:
 
 | Theme     | Package                           | Design Language     |
 | --------- | --------------------------------- | ------------------- |
-| Default   | `@progress/kendo-theme-default`   | Clean, modern       |
+| Meridian  | `@progress/kendo-theme-meridian`  | Modern              |
+| Default   | `@progress/kendo-theme-default`   | The default theme   |
 | Bootstrap | `@progress/kendo-theme-bootstrap` | Bootstrap 5 aligned |
 | Material  | `@progress/kendo-theme-material`  | Material Design     |
 | Fluent    | `@progress/kendo-theme-fluent`    | Microsoft Fluent    |
@@ -35,10 +36,10 @@ All themes share the same design token foundation — colors, spacing, radii, el
 The theme package is typically installed alongside your Kendo or Telerik framework package. If it isn't already part of your setup:
 
 ```bash
-npm install --save @progress/kendo-theme-default
+npm install --save @progress/kendo-theme-meridian
 ```
 
-Replace `default` with `bootstrap`, `material`, `fluent`, or `classic` to match your preferred design language.
+Replace `meridian` with `default`, `bootstrap`, `material`, `fluent`, or `classic` to match your preferred design language.
 
 ## Importing the Theme
 
@@ -49,24 +50,24 @@ For components to pick up their styles, import the theme once in your applicatio
 Import the precompiled CSS — all components are styled immediately:
 
 ```ts
-import "@progress/kendo-theme-default/dist/all.css";
+import "@progress/kendo-theme-meridian/dist/all.css";
 ```
 
 The compiled CSS is still customizable at runtime through CSS custom properties such as `--kendo-color-*`, `--kendo-spacing-*`, and component-scoped variables — no Sass build required.
 
 ### Sass Import
 
-Use Sass when you need compile-time control over the generated styles. Use the modern module system (`@use`). **Do not use `@import`** — it is deprecated.
+Use Sass when you need compile-time control over the generated styles:
 
 ```scss
 // Import the entire theme
-@use "@progress/kendo-theme-default/scss/all.scss" as *;
+@use "@progress/kendo-theme-meridian/scss/all.scss" as *;
 ```
 
 To include styles for only the components you use (smaller bundle):
 
 ```scss
-@use "@progress/kendo-theme-default/scss/index.scss" as *;
+@use "@progress/kendo-theme-meridian/scss/index.scss" as *;
 
 // Include only what you need
 @include kendo-button--styles();
@@ -75,8 +76,6 @@ To include styles for only the components you use (smaller bundle):
 ```
 
 Each component exposes a `kendo-{component}--styles()` mixin.
-
-> **Common pitfall:** Using `@import` instead of `@use`. The themes use the Sass module system — `@import` will not work correctly and is deprecated in modern Dart Sass.
 
 ## Customization
 
@@ -101,7 +100,7 @@ For colors, start with **semantic tokens** (`primary`, `surface`, `error`, etc.)
 ```scss
 @use "@progress/kendo-theme-<theme>/scss/all.scss" as * with (
   $kendo-<map>: (
-    <key>: <value>
+    <key>: <value>,
   ),
   $kendo-<variable>: <value>
 );
@@ -113,12 +112,12 @@ Token names, defaults, and CSS variable patterns are in the reference table belo
 
 When global tokens aren't enough, target specific components using CSS selectors. Every Kendo and Telerik component has a predictable class structure:
 
-| Primitive         | Pattern                 | Example                               |
-| ----------------- | ----------------------- | ------------------------------------- |
-| **Base**          | `.k-{component}`        | `.k-button`                           |
+| Primitive         | Pattern                 | Example                                 |
+| ----------------- | ----------------------- | --------------------------------------- |
+| **Base**          | `.k-{component}`        | `.k-button`                             |
 | **Sub-component** | `.k-{component}-{part}` | `.k-button-icon` (inside button markup) |
-| **Variant**       | `.k-{modifier}`         | `.k-button-solid`, `.k-button-lg`     |
-| **State**         | `.k-{state}`            | `.k-hover`, `.k-focus`, `.k-disabled` |
+| **Variant**       | `.k-{modifier}`         | `.k-button-solid`, `.k-button-lg`       |
+| **State**         | `.k-{state}`            | `.k-hover`, `.k-focus`, `.k-disabled`   |
 
 Compose them:
 
