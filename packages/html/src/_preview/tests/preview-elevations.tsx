@@ -1,4 +1,4 @@
-const elevationLevels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const elevationLevels = [0, 1, 2, 3, 4, 5 ];
 
 const style = `
     #test-area {
@@ -8,7 +8,7 @@ const style = `
 
     .elevation-grid {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: 24px;
     }
 
@@ -38,7 +38,7 @@ const SurfaceCard = ({ level }: { level: number }) => (
     }}
   >
     <div className="k-font-size-xl k-font-bold">{level}</div>
-    <div>{level !== 0 ? `Elevation` : `Default Color`}</div>
+    <div>{level !== 0 ? `Elevation` : `No Elevation`}</div>
   </div>
 );
 
