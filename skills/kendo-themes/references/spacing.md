@@ -72,9 +72,7 @@ Change a single variable to rescale every spacing token:
 );
 ```
 
-## How It Works
-
-Each token is defined as `calc(<step> * var(--kendo-spacing-base))`. The two fixed tokens (`0` and `1px`) are absolute values unaffected by the base.
+Each spacing token is defined as `calc(<step> * var(--kendo-spacing-base))`. The fixed tokens (`0` and `1px`) are absolute values unaffected by the base.
 
 ## Further Reading
 

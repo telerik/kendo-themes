@@ -107,7 +107,7 @@ For precise control over individual states, override specific variant tokens:
 );
 ```
 
-> **How auto-expansion works:** The theme uses CSS relative color syntax (OKLCH) internally. When you set a base color like `--kendo-color-primary`, all derived variants (hover, active, emphasis, on-color, subtle, etc.) are computed from it at runtime using `oklch(from …)` expressions — no manual mapping needed.
+**Derived color tokens:** When a base color such as `--kendo-color-primary` is set, derived variants (hover, active, emphasis, on-color, subtle, etc.) are computed from it at runtime; no manual mapping is needed unless a specific variant needs an explicit override.
 
 ## Swatches
 

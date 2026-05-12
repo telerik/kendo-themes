@@ -16,12 +16,20 @@ if (queryNames.length === 0) {
 
 const data = JSON.parse(readFileSync(componentsPath, 'utf8'));
 const components = data.components || {};
+const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/g, '');
+const normalizedComponents = new Map(
+    Object.keys(components).map((componentName) => [normalizeName(componentName), componentName])
+);
 const results = {};
 const missing = [];
 
 for (const queryName of queryNames) {
-    if (components[queryName]) {
-        results[queryName] = components[queryName];
+    const componentName = components[queryName]
+        ? queryName
+        : normalizedComponents.get(normalizeName(queryName));
+
+    if (componentName) {
+        results[componentName] = components[componentName];
     } else {
         missing.push(queryName);
     }
