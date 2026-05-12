@@ -111,8 +111,4 @@ Override the corresponding `$kendo-` variable before compilation:
 );
 ```
 
-## How It Works
-
-All base tokens (`$kendo-font-size`, `$kendo-font-family`, etc.) are defined in `core/scss/typography/index.scss`. Each theme may override `font-family` and `font-size` to match its design language. The build emits all tokens as CSS custom properties on `:root`.
-
-Component-level typography (headings, displays, paragraphs, code blocks) is defined separately per theme and references the base tokens via `var(--kendo-font-size)`, `var(--kendo-font-family)`, etc.
+Theme builds emit typography tokens as CSS custom properties on `:root`. Component-level typography references the base tokens through variables such as `var(--kendo-font-size)` and `var(--kendo-font-family)`.

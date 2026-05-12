@@ -192,12 +192,12 @@ Combine the base selector with any supported options and states:
 }
 ```
 
-## Recommended Workflow
+## Component Lookup Workflow
 
-When you need to style a specific component:
+For specific component styling:
 
 1. Use `scripts/list_components.mjs` to find the component name.
-2. Use `scripts/get_components.mjs ComponentName` to get its class name, states, and options.
+2. Use `scripts/get_components.mjs ComponentName` to get its class name, states, and options. The lookup tolerates minor casing and separator differences in component names.
 3. Read the tuple using `_component` (index 0 = `className`, 1 = `states`, 2 = `options`).
 4. Compose selectors using the rules above.
 5. Use design tokens (`--kendo-color-*`, `--kendo-spacing-*`) in your override values.
