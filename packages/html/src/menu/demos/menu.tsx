@@ -5,7 +5,10 @@ import { MenuSeparator } from '../menu-separator.spec';
 import { MenuNormal } from '../templates/menu-normal';
 import { Popup } from '../../popup';
 
-const options = Menu.options;
+const options = {
+    ...Menu.options,
+    scrollable: { type: 'boolean' },
+};
 const states = Menu.states;
 const defaults = {
     ...Menu.defaultOptions,
@@ -25,10 +28,6 @@ const variants = [
 
 const modifiers = [
     {
-        name: 'scrollable',
-        title: 'Scrollable',
-    },
-    {
         name: 'opened',
         title: 'Opened',
     },
@@ -42,14 +41,8 @@ export const MenuDemo = (
     const { variant, modifiers: mods, ...other } = { ...defaults, ...props };
 
     let additionalProps: any = {};
-
     Object.keys(mods || {}).forEach((modifier) => {
         switch (modifier) {
-            case 'scrollable':
-                additionalProps.scrollable = mods?.[modifier] ? true : false;
-
-                break;
-
             case 'opened':
                 additionalProps.opened = mods?.[modifier] ? true : false;
                 additionalProps.popup = (
