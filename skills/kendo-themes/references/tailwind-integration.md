@@ -1,70 +1,79 @@
 # Tailwind CSS Integration
 
-Kendo and Telerik components and Tailwind CSS work side-by-side. Use Tailwind for layout and app-level styles, Kendo theme for component styling. The key challenge is **visual consistency** — aligning design tokens so your custom UI and your components share the same colors, spacing, and typography.
+Kendo components and Tailwind CSS coexist without conflicts. Tailwind handles layout and app-level styles; the Kendo theme handles component styling. The challenge is **visual consistency** — ensuring both systems draw from the same design values.
 
-There are two approaches depending on which system owns the design tokens:
-
-| Approach | When to use | Source of truth |
-|----------|-------------|-----------------|
-| **Tailwind-first** | You already have a Tailwind theme and want components to match it | Tailwind `@theme` variables |
-| **Kendo-first** | You start from a Kendo swatch and want your layout to match it | Kendo CSS custom properties |
+The solution is always the same: point `--kendo-*` CSS custom properties at the values that drive the rest of the UI. Kendo tokens are semantically named and stable across themes — they are the constant. The app's token system (Tailwind `@theme`, custom properties, Sass variables, design-system tokens, or any mix) is the variable input.
 
 ## Setup
 
-Import both independently — the Kendo theme CSS and your Tailwind stylesheet. Import the Kendo theme **before** Tailwind so that Tailwind utilities can override component styles when needed:
+Load both stylesheets independently. Import the Kendo theme **before** Tailwind so that Tailwind utilities can override component styles when needed:
 
 ```ts
 import "@progress/kendo-theme-meridian/dist/all.css";
 import "./tailwind.css";
 ```
 
-## Tailwind-First (Tailwind Dictates Kendo)
+## Integration Scenarios
 
-If your Tailwind `@theme` already defines your design tokens, override Kendo CSS custom properties to follow them:
+### 1. External Source → Both Systems Follow
+
+A central set of custom properties (from a design system, brand guidelines, or manual definitions) feeds both Tailwind and Kendo:
+
+```css
+/* design-tokens.css — single source of truth */
+:root {
+  --brand-primary: #3f51b5;
+  --brand-surface: #ffffff;
+  --brand-radius: 0.375rem;
+}
+
+/* Tailwind reads from it */
+@theme {
+  --color-primary: var(--brand-primary);
+  --color-background: var(--brand-surface);
+  --radius-md: var(--brand-radius);
+}
+
+/* Kendo reads from the same source */
+:root {
+  --kendo-color-primary: var(--brand-primary);
+  --kendo-color-app-surface: var(--brand-surface);
+  --kendo-border-radius-base: var(--brand-radius);
+}
+```
+
+### 2. Tailwind Owns the Tokens → Kendo Follows
+
+The Tailwind `@theme` already defines the design tokens. Override Kendo custom properties to reference them:
 
 ```css
 :root {
-  --kendo-<token>: var(--<tailwind-token>);
+  --kendo-color-primary: var(--color-primary);
+  --kendo-color-app-surface: var(--color-background);
+  --kendo-border-radius-base: var(--radius-md);
+  /* … map each relevant --kendo-* token to its Tailwind counterpart */
 }
 ```
 
-Use the Semantic Mapping Guide below (read right-to-left: find the Kendo token you want to override, point it at your Tailwind equivalent).
+### 3. Kendo Owns the Tokens → Tailwind Follows
 
-## Kendo-First (Kendo Dictates Tailwind)
-
-If you start from a Kendo swatch and want your Tailwind layout to match, map your `@theme` variables to Kendo CSS custom properties:
+The Kendo swatch is the source of truth. Map Tailwind `@theme` variables to Kendo custom properties:
 
 ```css
 @theme {
-  --<tailwind-token>: var(--kendo-<token>);
+  --color-primary: var(--kendo-color-primary);
+  --color-background: var(--kendo-color-app-surface);
+  --radius-md: var(--kendo-border-radius-base);
+  /* … map each Tailwind variable to the equivalent --kendo-* token */
 }
 ```
 
-Use the Semantic Mapping Guide below (read left-to-right: find your Tailwind token, point it at the Kendo equivalent).
+## Token References
 
-## Semantic Mapping Guide
+Kendo tokens are self-describing (`--kendo-color-primary`, `--kendo-color-app-surface`, `--kendo-border-radius-base`, etc.). Consult the individual reference files for full token inventories per design system area:
 
-The table below shows common mappings between Tailwind and Kendo tokens. Read left-to-right for Kendo-first, right-to-left for Tailwind-first. Tailwind token names are examples (your `@theme` may use different names):
-
-| Tailwind Token (example) | Kendo Equivalent               | Role                      |
-| --------------- | ------------------------------ | ------------------------- |
-| `background`    | `--kendo-color-app-surface`    | App-level background      |
-| `foreground`    | `--kendo-color-on-app-surface` | Primary text color        |
-| `muted`         | `--kendo-color-subtle`         | De-emphasized content     |
-| `card`          | `--kendo-color-surface`        | Card/component background |
-| `border`        | `--kendo-color-border`         | Default border color      |
-| `primary`       | `--kendo-color-primary`        | Brand/action color        |
-| `destructive`   | `--kendo-color-error`          | Destructive actions       |
-| `accent`        | `--kendo-color-tertiary`       | Accent/highlight          |
-| `ring`          | `--kendo-color-primary`        | Focus ring color          |
-
-## Best Practices
-
-- **Single source of truth**: Pick one system to own the values, have the other reference them — never hardcode the same value in both
-- **Don't duplicate values**: Point tokens in one direction (Tailwind → Kendo or Kendo → Tailwind), not both
-- **Dark mode**: Override the source-of-truth variables in your dark mode scope (e.g. `.dark { ... }`) — the dependent system adapts automatically because it references the same custom properties
-
-## Further Reading
-
-- [Customization](https://www.telerik.com/design-system/docs/themes/kendo-themes/default/customization)
-- [Design Tokens](https://www.telerik.com/design-system/docs/foundation/guides/design-tokens)
+- [Colors](./colors.md)
+- [Spacing](./spacing.md)
+- [Border Radii](./radii.md)
+- [Elevation](./elevation.md)
+- [Typography](./typography.md)
