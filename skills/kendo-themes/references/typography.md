@@ -102,7 +102,7 @@ Override any token on `:root` or a scoped selector:
 
 ### Sass
 
-Override the corresponding `$kendo-` variable before compilation:
+Configure the corresponding `$kendo-` variables in the theme `@use ... with ()` clause:
 
 ```scss
 @use "@progress/kendo-theme-meridian/scss/index.scss" as * with (

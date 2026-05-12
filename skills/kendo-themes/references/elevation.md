@@ -39,7 +39,7 @@ In dark mode, themes also apply an `elevation-bg` function that subtly increases
 
 ### Sass Override
 
-Override the `$kendo-elevation` map before importing the theme:
+Configure the `$kendo-elevation` map in the theme `@use ... with ()` clause:
 
 ```scss
 @use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
