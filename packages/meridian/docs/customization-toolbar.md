@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>List</td>
     <td><code>$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
-    <td><code>(oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base)))), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
+    <td><code>(oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%)))), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the Toolbar.</div></div>

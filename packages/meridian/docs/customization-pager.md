@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-item-spacing</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing around the Pager items.</div></div>
