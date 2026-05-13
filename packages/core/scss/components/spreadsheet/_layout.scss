@@ -311,7 +311,7 @@
         height: 100%;
         overflow: scroll;
         position: absolute;
-        z-index: k-z-index("base", 1);
+        z-index: k-z-index("base", 2);
 
         @media (hover: none), (pointer: coarse) {
             // on touch devices we want this to stay on top.
