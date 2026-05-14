@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/scrollbar/_layout.scss" as *;
+
+
+@mixin kendo-scrollbar--layout() {
+    @include kendo-scrollbar--layout-base();
+}

@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/scrollbar/_theme.scss" as *;
+
+
+@mixin kendo-scrollbar--theme() {
+    @include kendo-scrollbar--theme-base();
+}

@@ -1,0 +1,30 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-scrollbar--theme-base() {
+
+    .k-body {
+        @supports (-moz-appearance: none) {
+            scrollbar-color: $kendo-scrollbar-thumb $kendo-scrollbar-track;
+        }
+
+        &::-webkit-scrollbar-track,
+        ::-webkit-scrollbar-track {
+            background: $kendo-scrollbar-track;
+        }
+        &::-webkit-scrollbar-thumb,
+        ::-webkit-scrollbar-thumb {
+            background: $kendo-scrollbar-thumb;
+            background-clip: padding-box;
+        }
+        &::-webkit-scrollbar-thumb:hover,
+        ::-webkit-scrollbar-thumb:hover {
+            background: $kendo-scrollbar-thumb-hover;
+            background-clip: padding-box;
+        }
+        &::-webkit-scrollbar-corner,
+        ::-webkit-scrollbar-corner {
+            background: $kendo-scrollbar-track;
+        }
+    }
+
+}
