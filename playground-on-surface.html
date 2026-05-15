@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>on-surface Color Playground</title>
+<style>
+  :root {
+    /* Customize these to test */
+    --kendo-color-surface: oklch(98.46% 0.0017 247.84deg);
+    --kendo-color-base: oklch(96.92% 0.0034 247.86deg);
+    --kendo-color-primary: oklch(37.17% 0.0392 257.29deg);
+    --kendo-color-secondary: oklch(54.53% 0.2124 275.85deg);
+    --kendo-color-error: oklch(51.01% 0.1951 14.31deg);
+
+    /* === CURRENT (buggy): derives from source color === */
+    --base-on-surface-current: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28));
+    --primary-on-surface-current: oklch(from var(--kendo-color-primary) clamp(0.20, calc(l - 0.0922), 0.60) calc(c - 0.0023) calc(h + 2.74));
+    --secondary-on-surface-current: oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l - 0.1233), 0.60) calc(c - 0.0417) calc(h - 0.77));
+    --error-on-surface-current: oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.16), 0.55) calc(c - 0.0154) calc(h + 0.39));
+
+    /* === FIX A: base-on-surface derives from surface === */
+    --base-on-surface-fix-a: oklch(from var(--kendo-color-surface) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28));
+
+    /* === FIX B: colored on-surface — flip direction based on surface lightness === */
+    /* Idea: use surface as source, but hardcode source color's c/h */
+    --primary-on-surface-fix-b: oklch(from var(--kendo-color-surface) clamp(0.25, (0.65 - l) * 99999, 0.75) 0.0369 259.29deg);
+    --secondary-on-surface-fix-b: oklch(from var(--kendo-color-surface) clamp(0.25, (0.65 - l) * 99999, 0.75) 0.1707 275.08deg);
+    --error-on-surface-fix-b: oklch(from var(--kendo-color-surface) clamp(0.25, (0.65 - l) * 99999, 0.70) 0.1797 14.70deg);
+
+    /* === FIX C: colored on-surface — derive from source, but widen clamp === */
+    --primary-on-surface-fix-c: oklch(from var(--kendo-color-primary) clamp(0.20, l, 0.80) calc(c - 0.0023) calc(h + 2.74));
+    --secondary-on-surface-fix-c: oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l - 0.1233), 0.80) calc(c - 0.0417) calc(h - 0.77));
+    --error-on-surface-fix-c: oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.16), 0.80) calc(c - 0.0154) calc(h + 0.39));
+
+    /* === FIX D: contrast-color(surface) — baseline, black/white only === */
+    --base-on-surface-fix-d: contrast-color(var(--kendo-color-surface));
+
+    /* === FIX E: color-mix + contrast-color combo! === */
+    /* contrast-color picks black/white based on surface, color-mix blends it with source */
+    --base-on-surface-fix-e: color-mix(in oklch,
+      var(--kendo-color-base) 30%,
+      contrast-color(var(--kendo-color-surface)) 70%
+    );
+    --primary-on-surface-fix-e: color-mix(in oklch,
+      var(--kendo-color-primary) 60%,
+      contrast-color(var(--kendo-color-surface)) 40%
+    );
+    --secondary-on-surface-fix-e: color-mix(in oklch,
+      var(--kendo-color-secondary) 60%,
+      contrast-color(var(--kendo-color-surface)) 40%
+    );
+    --error-on-surface-fix-e: color-mix(in oklch,
+      var(--kendo-color-error) 60%,
+      contrast-color(var(--kendo-color-surface)) 40%
+    );
+
+    /* === FIX F: same idea, different ratios for exploration === */
+    --primary-on-surface-fix-f: color-mix(in oklch,
+      var(--kendo-color-primary) 45%,
+      contrast-color(var(--kendo-color-surface)) 55%
+    );
+    --secondary-on-surface-fix-f: color-mix(in oklch,
+      var(--kendo-color-secondary) 45%,
+      contrast-color(var(--kendo-color-surface)) 55%
+    );
+    --error-on-surface-fix-f: color-mix(in oklch,
+      var(--kendo-color-error) 45%,
+      contrast-color(var(--kendo-color-surface)) 55%
+    );
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, sans-serif; padding: 2rem; background: #f5f5f5; }
+  h1 { margin-bottom: 0.5rem; }
+  h2 { margin: 1.5rem 0 0.75rem; font-size: 1.1rem; }
+  .description { color: #666; margin-bottom: 1.5rem; }
+
+  .controls {
+    background: white; padding: 1rem; border-radius: 8px;
+    margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .controls label { display: block; margin-bottom: 0.5rem; font-size: 0.85rem; }
+  .controls input[type="text"] {
+    font-family: monospace; padding: 4px 8px; border: 1px solid #ccc;
+    border-radius: 4px; width: 320px;
+  }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+
+  .card {
+    border-radius: 8px; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .card h3 { font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.7; }
+  .card .sample { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .card .code { font-family: monospace; font-size: 0.7rem; opacity: 0.6; word-break: break-all; }
+
+  .surface-bg { background: var(--kendo-color-surface); }
+
+  .tag {
+    display: inline-block; font-size: 0.65rem; padding: 2px 6px;
+    border-radius: 3px; margin-bottom: 0.5rem; font-weight: 600;
+  }
+  .tag-bug { background: #fee; color: #c00; }
+  .tag-fix { background: #efe; color: #070; }
+  .tag-idea { background: #eef; color: #007; }
+</style>
+</head>
+<body>
+
+<h1>🎨 on-surface Color Playground</h1>
+<p class="description">Explore how different formulas behave when surface/base/primary are customized.</p>
+
+<div class="controls">
+  <label>--kendo-color-surface: <input type="text" id="inp-surface" value="oklch(98.46% 0.0017 247.84deg)"></label>
+  <label>--kendo-color-base: <input type="text" id="inp-base" value="oklch(96.92% 0.0034 247.86deg)"></label>
+  <label>--kendo-color-primary: <input type="text" id="inp-primary" value="oklch(37.17% 0.0392 257.29deg)"></label>
+  <label>--kendo-color-secondary: <input type="text" id="inp-secondary" value="oklch(54.53% 0.2124 275.85deg)"></label>
+  <label>--kendo-color-error: <input type="text" id="inp-error" value="oklch(51.01% 0.1951 14.31deg)"></label>
+  <br>
+  <button onclick="applyColors()">Apply</button>
+  <button onclick="presetDarkSurface()">Preset: Dark Surface</button>
+  <button onclick="presetDarkBase()">Preset: Dark Base (#5B5BD6)</button>
+  <button onclick="presetDefault()">Preset: Meridian Default</button>
+</div>
+
+<h2>base-on-surface</h2>
+<div class="grid">
+  <div class="card surface-bg">
+    <span class="tag tag-bug">CURRENT (bug)</span>
+    <h3>Derives from --base</h3>
+    <div class="sample" style="color: var(--base-on-surface-current);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-base) clamp(0.28, (0.65-l)*99999, 0.95) ...)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-fix">FIX A</span>
+    <h3>Derives from --surface</h3>
+    <div class="sample" style="color: var(--base-on-surface-fix-a);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-surface) clamp(0.28, (0.65-l)*99999, 0.95) ...)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-fix">FIX D</span>
+    <h3>contrast-color(surface) — black/white only</h3>
+    <div class="sample" style="color: var(--base-on-surface-fix-d);">The quick brown fox</div>
+    <div class="code">contrast-color(var(--kendo-color-surface))</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-fix">FIX E ✨</span>
+    <h3>color-mix(base 30%, contrast-color(surface) 70%)</h3>
+    <div class="sample" style="color: var(--base-on-surface-fix-e);">The quick brown fox</div>
+    <div class="code">color-mix(in oklch, base 30%, contrast-color(surface) 70%)</div>
+  </div>
+</div>
+
+<h2>primary-on-surface</h2>
+<div class="grid">
+  <div class="card surface-bg">
+    <span class="tag tag-bug">CURRENT</span>
+    <h3>Derives from --primary, clamp(0.20..0.60)</h3>
+    <div class="sample" style="color: var(--primary-on-surface-current);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-primary) clamp(0.20, calc(l-0.09), 0.60) c h)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX B</span>
+    <h3>Derives from --surface, hardcoded c/h</h3>
+    <div class="sample" style="color: var(--primary-on-surface-fix-b);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-surface) clamp(0.25, (0.65-l)*99999, 0.75) 0.037 259deg)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX C</span>
+    <h3>Derives from --primary, wider clamp(0.20..0.80)</h3>
+    <div class="sample" style="color: var(--primary-on-surface-fix-c);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-primary) clamp(0.20, l, 0.80) c h)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-fix">FIX E ✨</span>
+    <h3>color-mix(primary 60%, contrast-color(surface) 40%)</h3>
+    <div class="sample" style="color: var(--primary-on-surface-fix-e);">The quick brown fox</div>
+    <div class="code">color-mix(in oklch, primary 60%, contrast-color(surface) 40%)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX F</span>
+    <h3>color-mix(primary 45%, contrast-color(surface) 55%)</h3>
+    <div class="sample" style="color: var(--primary-on-surface-fix-f);">The quick brown fox</div>
+    <div class="code">color-mix(in oklch, primary 45%, contrast-color(surface) 55%)</div>
+  </div>
+</div>
+
+<h2>secondary-on-surface</h2>
+<div class="grid">
+  <div class="card surface-bg">
+    <span class="tag tag-bug">CURRENT</span>
+    <h3>Derives from --secondary, clamp(0.20..0.60)</h3>
+    <div class="sample" style="color: var(--secondary-on-surface-current);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l-0.12), 0.60) ...)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX B</span>
+    <h3>Derives from --surface, hardcoded c/h</h3>
+    <div class="sample" style="color: var(--secondary-on-surface-fix-b);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-surface) clamp(0.25, (0.65-l)*99999, 0.75) ...)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX C</span>
+    <h3>Derives from --secondary, wider clamp(0.20..0.80)</h3>
+    <div class="sample" style="color: var(--secondary-on-surface-fix-c);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l-0.12), 0.80) ...)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-fix">FIX E ✨</span>
+    <h3>color-mix(secondary 60%, contrast-color(surface) 40%)</h3>
+    <div class="sample" style="color: var(--secondary-on-surface-fix-e);">The quick brown fox</div>
+    <div class="code">color-mix(in oklch, secondary 60%, contrast-color(surface) 40%)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX F</span>
+    <h3>color-mix(secondary 45%, contrast-color(surface) 55%)</h3>
+    <div class="sample" style="color: var(--secondary-on-surface-fix-f);">The quick brown fox</div>
+    <div class="code">color-mix(in oklch, secondary 45%, contrast-color(surface) 55%)</div>
+  </div>
+</div>
+
+<h2>error-on-surface</h2>
+<div class="grid">
+  <div class="card surface-bg">
+    <span class="tag tag-bug">CURRENT</span>
+    <h3>Derives from --error, clamp(0.20..0.55)</h3>
+    <div class="sample" style="color: var(--error-on-surface-current);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-error) clamp(0.20, calc(l-0.16), 0.55) ...)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX B</span>
+    <h3>Derives from --surface, hardcoded c/h</h3>
+    <div class="sample" style="color: var(--error-on-surface-fix-b);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-surface) clamp(0.25, (0.65-l)*99999, 0.70) ...)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX C</span>
+    <h3>Derives from --error, wider clamp(0.20..0.80)</h3>
+    <div class="sample" style="color: var(--error-on-surface-fix-c);">The quick brown fox</div>
+    <div class="code">oklch(from var(--kendo-color-error) clamp(0.20, calc(l-0.16), 0.80) ...)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-fix">FIX E ✨</span>
+    <h3>color-mix(error 60%, contrast-color(surface) 40%)</h3>
+    <div class="sample" style="color: var(--error-on-surface-fix-e);">The quick brown fox</div>
+    <div class="code">color-mix(in oklch, error 60%, contrast-color(surface) 40%)</div>
+  </div>
+  <div class="card surface-bg">
+    <span class="tag tag-idea">FIX F</span>
+    <h3>color-mix(error 45%, contrast-color(surface) 55%)</h3>
+    <div class="sample" style="color: var(--error-on-surface-fix-f);">The quick brown fox</div>
+    <div class="code">color-mix(in oklch, error 45%, contrast-color(surface) 55%)</div>
+  </div>
+</div>
+
+<script>
+function applyColors() {
+  const root = document.documentElement.style;
+  root.setProperty('--kendo-color-surface', document.getElementById('inp-surface').value);
+  root.setProperty('--kendo-color-base', document.getElementById('inp-base').value);
+  root.setProperty('--kendo-color-primary', document.getElementById('inp-primary').value);
+  root.setProperty('--kendo-color-secondary', document.getElementById('inp-secondary').value);
+  root.setProperty('--kendo-color-error', document.getElementById('inp-error').value);
+}
+
+function presetDarkSurface() {
+  document.getElementById('inp-surface').value = 'oklch(25% 0.01 260deg)';
+  document.getElementById('inp-base').value = 'oklch(30% 0.01 260deg)';
+  document.getElementById('inp-primary').value = 'oklch(37.17% 0.0392 257.29deg)';
+  document.getElementById('inp-secondary').value = 'oklch(54.53% 0.2124 275.85deg)';
+  document.getElementById('inp-error').value = 'oklch(51.01% 0.1951 14.31deg)';
+  applyColors();
+}
+
+function presetDarkBase() {
+  document.getElementById('inp-surface').value = 'oklch(98.46% 0.0017 247.84deg)';
+  document.getElementById('inp-base').value = 'oklch(49% 0.16 275deg)'; /* ~#5B5BD6 */
+  document.getElementById('inp-primary').value = 'oklch(37.17% 0.0392 257.29deg)';
+  document.getElementById('inp-secondary').value = 'oklch(54.53% 0.2124 275.85deg)';
+  document.getElementById('inp-error').value = 'oklch(51.01% 0.1951 14.31deg)';
+  applyColors();
+}
+
+function presetDefault() {
+  document.getElementById('inp-surface').value = 'oklch(98.46% 0.0017 247.84deg)';
+  document.getElementById('inp-base').value = 'oklch(96.92% 0.0034 247.86deg)';
+  document.getElementById('inp-primary').value = 'oklch(37.17% 0.0392 257.29deg)';
+  document.getElementById('inp-secondary').value = 'oklch(54.53% 0.2124 275.85deg)';
+  document.getElementById('inp-error').value = 'oklch(51.01% 0.1951 14.31deg)';
+  applyColors();
+}
+</script>
+</body>
+</html>

@@ -20,7 +20,7 @@ $_default-colors: (
     base-emphasis: #{"oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.0984, (0.35 - l) * 99999, 0.0984)), 0.95) calc(c + 0.0094) calc(h + 7.65))"},
     base-on-subtle: #{"oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))"},
     on-base: #{"oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))"},
-    base-on-surface: #{"oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))"},
+    base-on-surface: #{"color-mix(in oklch, var(--kendo-color-base) 30%, contrast-color(var(--kendo-color-surface)) 70%)"},
     // Primary
     primary-subtle: #{"oklch(from var(--kendo-color-primary) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39))"},
     primary-subtle-hover: #{"oklch(from var(--kendo-color-primary) calc(l + 0.5784) calc(c - 0.0295) calc(h - 4.47))"},
@@ -31,7 +31,7 @@ $_default-colors: (
     primary-emphasis: #{"oklch(from var(--kendo-color-primary) calc(l + 0.4973) calc(c - 0.0193) calc(h - 4.39))"},
     primary-on-subtle: #{"oklch(from var(--kendo-color-primary) calc(l - 0.2429) calc(c + 0.0014) calc(h + 7.41))"},
     on-primary: #{"oklch(from var(--kendo-color-primary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)"},
-    primary-on-surface: #{"oklch(from var(--kendo-color-primary) clamp(0.20, calc(l - 0.0922), 0.60) calc(c - 0.0023) calc(h + 2.74))"},
+    primary-on-surface: #{"color-mix(in oklch, var(--kendo-color-primary) 60%, contrast-color(var(--kendo-color-surface)) 40%)"},
     // Secondary
     secondary-subtle: #{"oklch(from var(--kendo-color-secondary) calc(l + 0.4027) calc(c - 0.1869) calc(h + 7.65))"},
     secondary-subtle-hover: #{"oklch(from var(--kendo-color-secondary) calc(l + 0.3749) calc(c - 0.1730) calc(h + 6.61))"},
@@ -42,7 +42,7 @@ $_default-colors: (
     secondary-emphasis: #{"oklch(from var(--kendo-color-secondary) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))"},
     secondary-on-subtle: #{"oklch(from var(--kendo-color-secondary) calc(l - 0.2705) calc(c - 0.1041) h)"},
     on-secondary: #{"oklch(from var(--kendo-color-secondary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)"},
-    secondary-on-surface: #{"oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l - 0.1233), 0.60) calc(c - 0.0417) calc(h - 0.77))"},
+    secondary-on-surface: #{"color-mix(in oklch, var(--kendo-color-secondary) 60%, contrast-color(var(--kendo-color-surface)) 40%)"},
     // Tertiary
     tertiary-subtle: #{"oklch(from var(--kendo-color-tertiary) calc(l + 0.1308) calc(c - 0.0793) calc(h + 3.78))"},
     tertiary-subtle-hover: #{"oklch(from var(--kendo-color-tertiary) calc(l + 0.1097) calc(c - 0.0665) calc(h + 0.96))"},
@@ -53,7 +53,7 @@ $_default-colors: (
     tertiary-emphasis: #{"oklch(from var(--kendo-color-tertiary) calc(l - 0.1072) calc(c + 0.0681) calc(h + 0.48))"},
     tertiary-on-subtle: #{"oklch(from var(--kendo-color-tertiary) calc(l - 0.4562) calc(c + 0.0303) h)"},
     on-tertiary: #{"oklch(from var(--kendo-color-tertiary) clamp(0.2783, (0.65 - l) * 99999, 0.95) 0.0970 h)"},
-    tertiary-on-surface: #{"oklch(from var(--kendo-color-tertiary) clamp(0.20, calc(l - 0.4562), 0.60) calc(c + 0.0303) h)"},
+    tertiary-on-surface: #{"color-mix(in oklch, var(--kendo-color-tertiary) 60%, contrast-color(var(--kendo-color-surface)) 40%)"},
     // Info
     info-subtle: #{"oklch(from var(--kendo-color-info) calc(l + 0.3276) calc(c - 0.0923) calc(h - 12.89))"},
     info-subtle-hover: #{"oklch(from var(--kendo-color-info) calc(l + 0.2710) calc(c - 0.0723) calc(h - 12.07))"},
@@ -64,7 +64,7 @@ $_default-colors: (
     info-emphasis: #{"oklch(from var(--kendo-color-info) calc(l + 0.1218) calc(c - 0.0235) calc(h - 8.04))"},
     info-on-subtle: #{"oklch(from var(--kendo-color-info) calc(l - 0.20) calc(c - 0.0360) calc(h - 0.92))"},
     on-info: #{"oklch(from var(--kendo-color-info) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)"},
-    info-on-surface: #{"oklch(from var(--kendo-color-info) clamp(0.20, calc(l - 0.18), 0.55) calc(c - 0.0181) calc(h - 0.68))"},
+    info-on-surface: #{"color-mix(in oklch, var(--kendo-color-info) 60%, contrast-color(var(--kendo-color-surface)) 40%)"},
     // Success
     success-subtle: #{"oklch(from var(--kendo-color-success) calc(l + 0.3820) calc(c - 0.0756) calc(h + 10.01))"},
     success-subtle-hover: #{"oklch(from var(--kendo-color-success) calc(l + 0.3257) calc(c - 0.0510) calc(h + 9.38))"},
@@ -75,7 +75,7 @@ $_default-colors: (
     success-emphasis: #{"oklch(from var(--kendo-color-success) calc(l + 0.1725) calc(c - 0.0033) calc(h + 5.16))"},
     success-on-subtle: #{"oklch(from var(--kendo-color-success) calc(l - 0.1550) calc(c - 0.0314) calc(h + 0.29))"},
     on-success: #{"oklch(from var(--kendo-color-success) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)"},
-    success-on-surface: #{"oklch(from var(--kendo-color-success) clamp(0.20, calc(l - 0.1126), 0.60) calc(c - 0.0222) calc(h - 0.26))"},
+    success-on-surface: #{"color-mix(in oklch, var(--kendo-color-success) 60%, contrast-color(var(--kendo-color-surface)) 40%)"},
     // Warning
     warning-subtle: #{"oklch(from var(--kendo-color-warning) calc(l + 0.0793) calc(c - 0.1084) calc(h + 1.96))"},
     warning-subtle-hover: #{"oklch(from var(--kendo-color-warning) calc(l + 0.0637) calc(c - 0.0833) calc(h + 1.54))"},
@@ -86,7 +86,7 @@ $_default-colors: (
     warning-emphasis: #{"oklch(from var(--kendo-color-warning) calc(l + 0.0283) calc(c - 0.0228) calc(h + 1.42))"},
     warning-on-subtle: #{"oklch(from var(--kendo-color-warning) calc(l - 0.5998) calc(c - 0.1574) calc(h + 162.13))"},
     on-warning: #{"oklch(from var(--kendo-color-warning) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 162.13))"},
-    warning-on-surface: #{"oklch(from var(--kendo-color-warning) clamp(0.20, calc(l - 0.5998), 0.60) calc(c - 0.1574) calc(h + 162.13))"},
+    warning-on-surface: #{"color-mix(in oklch, var(--kendo-color-warning) 60%, contrast-color(var(--kendo-color-surface)) 40%)"},
     // Error
     error-subtle: #{"oklch(from var(--kendo-color-error) calc(l + 0.3868) calc(c - 0.1565) calc(h - 14.72))"},
     error-subtle-hover: #{"oklch(from var(--kendo-color-error) calc(l + 0.3203) calc(c - 0.1250) calc(h - 13.80))"},
@@ -97,7 +97,7 @@ $_default-colors: (
     error-emphasis: #{"oklch(from var(--kendo-color-error) calc(l + 0.1479) calc(c - 0.0349) calc(h - 9.11))"},
     error-on-subtle: #{"oklch(from var(--kendo-color-error) calc(l - 0.18) calc(c - 0.0490) calc(h - 0.16))"},
     on-error: #{"oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)"},
-    error-on-surface: #{"oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.16), 0.55) calc(c - 0.0154) calc(h + 0.39))"},
+    error-on-surface: #{"color-mix(in oklch, var(--kendo-color-error) 60%, contrast-color(var(--kendo-color-surface)) 40%)"},
     // Inverse
     inverse-subtle: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))"},
     inverse-subtle-hover: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))"},
@@ -108,7 +108,7 @@ $_default-colors: (
     inverse-emphasis: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))"},
     inverse-on-subtle: #{"oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))"},
     on-inverse: #{"oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)"},
-    inverse-on-surface: #{"oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))"},
+    inverse-on-surface: #{"color-mix(in oklch, var(--kendo-color-inverse) 60%, contrast-color(var(--kendo-color-surface)) 40%)"},
     // Series
     series: oklch(54.53% 0.2124 275.85deg),
     // Series A
