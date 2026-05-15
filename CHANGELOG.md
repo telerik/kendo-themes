@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.0.0...v14.1.0-dev.0) (2026-05-15)
+
+
+### Bug Fixes
+
+* add fallback to the kendo-translucency-base css var ([3aca60e](https://github.com/telerik/kendo-themes/commit/3aca60e6f5eeb4d6b8cf8a64ec37a273f537c2d6))
+* correct invalid css ([5c33ad5](https://github.com/telerik/kendo-themes/commit/5c33ad5d7f337b2c60b587b97784f8ae07464019))
+* **meridian:** bottom-nav item background ([cc10f37](https://github.com/telerik/kendo-themes/commit/cc10f370a05386083624997afa9ec8e01196998b))
+* **meridian:** fix window bottom border-radius in resize ([f45a7dc](https://github.com/telerik/kendo-themes/commit/f45a7dcdeb0c0cda0d93109c62271185afdbd4ed))
+* **meridian:** pager buttons gap ([8874e7d](https://github.com/telerik/kendo-themes/commit/8874e7da561ba44951825982d01294b82ec43e44))
+* **meridian:** remove blur on transparent popups ([352687d](https://github.com/telerik/kendo-themes/commit/352687dae01d11ca6d6d452c765cf257f8dd1c34))
+* **meridian:** use correct shadows for sticky and pinned grid containers ([2946c79](https://github.com/telerik/kendo-themes/commit/2946c795907c9581a09aa72c9bc76976088aeef5))
+* spreadsheet scroller ([d21e254](https://github.com/telerik/kendo-themes/commit/d21e2548593b417ee879fa9b062f4767ce20c2e4))
+
+
+### Features
+
+* **html:** add listview no-data template ([64b595a](https://github.com/telerik/kendo-themes/commit/64b595ad33216614fb8cf26bf90efc9d85606ab8))
+* **html:** add variant support for icon ([10629cd](https://github.com/telerik/kendo-themes/commit/10629cdbbc6abc7a7b01add744d21f211b39a48d))
+
+
+
+
+
 # [14.0.0](https://github.com/telerik/kendo-themes/compare/v14.0.0-dev.8...v14.0.0) (2026-05-11)
 
 **Note:** Version bump only for package kendo-themes.repo

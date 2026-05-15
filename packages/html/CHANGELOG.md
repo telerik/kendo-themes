@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.0.0...v14.1.0-dev.0) (2026-05-15)
+
+
+### Features
+
+* **html:** add listview no-data template ([64b595a](https://github.com/telerik/kendo-themes/commit/64b595ad33216614fb8cf26bf90efc9d85606ab8))
+* **html:** add variant support for icon ([10629cd](https://github.com/telerik/kendo-themes/commit/10629cdbbc6abc7a7b01add744d21f211b39a48d))
+
+
+
+
+
 # [14.0.0](https://github.com/telerik/kendo-themes/compare/v14.0.0-dev.8...v14.0.0) (2026-05-11)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
