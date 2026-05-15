@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
+import { classNames, optionClassNames, Size, ThemeColor, IconVariant } from '../misc';
 
 export const SVGICON_CLASSNAME = `k-svg-icon`;
 
@@ -17,17 +17,20 @@ const options = {
         ThemeColor.error,
         ThemeColor.info
     ],
+    variant: [ IconVariant.outline, IconVariant.solid, IconVariant.duotone ],
 };
 
 export type SvgIconOptions = {
     size?: (typeof options.size)[number];
     themeColor?: (typeof options.themeColor)[number];
+    variant?: (typeof options.variant)[number];
 };
 
 export interface SVGIcon {
     name: string;
     content: string;
     viewBox: string;
+    variants?: Record<string, string>;
 }
 
 export type SvgIconProps = SvgIconOptions & {
@@ -38,7 +41,8 @@ export type SvgIconProps = SvgIconOptions & {
 }
 
 const defaultOptions = {
-    viewBox: '0 0 24 24'
+    viewBox: '0 0 24 24',
+    variant: IconVariant.outline
 };
 
 /**
@@ -60,6 +64,7 @@ export const SvgIcon = (
         rotate,
         flip,
         viewBox = defaultOptions.viewBox,
+        variant = defaultOptions.variant,
         icon,
         ...other
     } = props;
@@ -86,6 +91,9 @@ export const SvgIcon = (
     }
 
     const name = (typeof icon === "object" && icon.name) && icon.name;
+    const resolvedContent = typeof icon === "object"
+        ? (variant && icon.variants?.[variant]) || icon.variants?.outline || icon.content
+        : undefined;
 
     return (
         <span
@@ -111,7 +119,7 @@ export const SvgIcon = (
                 focusable={false}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox={typeof icon === "object" ? icon.viewBox : viewBox}
-                dangerouslySetInnerHTML={typeof icon === "object" ? { __html: icon.content } : undefined}
+                dangerouslySetInnerHTML={resolvedContent !== undefined ? { __html: resolvedContent } : undefined}
             >
                 {icon ? undefined : props.children}
             </svg>
