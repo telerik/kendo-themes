@@ -27,6 +27,13 @@ export const FillMode = {
   link: "link",
 } as const;
 
+export const IconVariant = {
+  undefined: undefined,
+  outline: "outline",
+  solid: "solid",
+  duotone: "duotone",
+} as const;
+
 export const ThemeColor = {
   undefined: undefined,
   inherit: "inherit",
