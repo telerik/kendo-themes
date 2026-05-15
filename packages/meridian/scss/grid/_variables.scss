@@ -368,11 +368,17 @@ $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
 
 /// The box shadow of the sticky container in the Grid.
 /// @group grid
-$kendo-grid-sticky-container-shadow: k-elevation(3) !default;
+$kendo-grid-sticky-container-shadow: 0 2px 4px 0 rgba(56, 66, 80, 0.08) !default;
+/// The box shadow of the sticky container positioned at the bottom in the Grid.
+/// @group grid
+$kendo-grid-sticky-container-bottom-shadow: 0 -2px 4px 0 rgba(56, 66, 80, 0.08) !default;
 
 /// The box shadow of the pinned container in the Grid.
 /// @group grid
-$kendo-grid-pinned-container-shadow: k-elevation(4) !default;
+$kendo-grid-pinned-container-shadow: 0 4px 8px 0 rgba(56, 66, 80, 0.08) !default;
+/// The box shadow of the pinned container positioned at the bottom in the Grid.
+/// @group grid
+$kendo-grid-pinned-container-bottom-shadow: 0 -4px 8px 0 rgba(56, 66, 80, 0.08) !default;
 
 
 /// The width of the Grid column menu.
@@ -666,4 +672,6 @@ $kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-bold, 700 ) !def
     $kendo-grid-pinned-source-font-weight: $kendo-grid-pinned-source-font-weight,
     $kendo-grid-sticky-container-shadow: $kendo-grid-sticky-container-shadow,
     $kendo-grid-pinned-container-shadow: $kendo-grid-pinned-container-shadow,
+    $kendo-grid-sticky-container-bottom-shadow: $kendo-grid-sticky-container-bottom-shadow,
+    $kendo-grid-pinned-container-bottom-shadow: $kendo-grid-pinned-container-bottom-shadow
 );
