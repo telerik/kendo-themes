@@ -119,10 +119,30 @@
   /* Flat buttons — also uses on-surface */
   .btn-flat { background: transparent; border: none; }
 
-  /* Subtle buttons */
-  .btn-subtle { border: none; }
+  /* Subtle/Clear buttons — transparent bg, colored text */
+  .btn-clear { background: none; border: none; }
 
-  /* OLD on-surface colors */
+  /* OLD on-surface colors for clear */
+  .old .btn-clear-base { color: var(--base-on-surface-old); }
+  .old .btn-clear-primary { color: var(--primary-on-surface-old); }
+  .old .btn-clear-secondary { color: var(--secondary-on-surface-old); }
+  .old .btn-clear-tertiary { color: var(--tertiary-on-surface-old); }
+  .old .btn-clear-info { color: var(--info-on-surface-old); }
+  .old .btn-clear-success { color: var(--success-on-surface-old); }
+  .old .btn-clear-warning { color: var(--warning-on-surface-old); }
+  .old .btn-clear-error { color: var(--error-on-surface-old); }
+  .old .btn-clear-inverse { color: var(--inverse-on-surface-old); }
+
+  /* NEW on-surface colors for clear */
+  .new .btn-clear-base { color: var(--base-on-surface-new); }
+  .new .btn-clear-primary { color: var(--primary-on-surface-new); }
+  .new .btn-clear-secondary { color: var(--secondary-on-surface-new); }
+  .new .btn-clear-tertiary { color: var(--tertiary-on-surface-new); }
+  .new .btn-clear-info { color: var(--info-on-surface-new); }
+  .new .btn-clear-success { color: var(--success-on-surface-new); }
+  .new .btn-clear-warning { color: var(--warning-on-surface-new); }
+  .new .btn-clear-error { color: var(--error-on-surface-new); }
+  .new .btn-clear-inverse { color: var(--inverse-on-surface-new); }
   .old .btn-outline-base,
   .old .btn-flat-base { color: var(--base-on-surface-old); border-color: var(--base-on-surface-old); }
   .old .btn-outline-primary,
@@ -142,18 +162,7 @@
   .old .btn-outline-inverse,
   .old .btn-flat-inverse { color: var(--inverse-on-surface-old); border-color: var(--inverse-on-surface-old); }
 
-  /* Subtle OLD */
-  .old .btn-subtle-base { background: oklch(from var(--kendo-color-base) calc(l + 0.02) c h); color: var(--base-on-surface-old); }
-  .old .btn-subtle-primary { background: oklch(from var(--kendo-color-primary) 0.96 calc(c * 0.1) h); color: var(--primary-on-surface-old); }
-  .old .btn-subtle-secondary { background: oklch(from var(--kendo-color-secondary) 0.96 calc(c * 0.1) h); color: var(--secondary-on-surface-old); }
-  .old .btn-subtle-tertiary { background: oklch(from var(--kendo-color-tertiary) 0.96 calc(c * 0.1) h); color: var(--tertiary-on-surface-old); }
-  .old .btn-subtle-info { background: oklch(from var(--kendo-color-info) 0.96 calc(c * 0.1) h); color: var(--info-on-surface-old); }
-  .old .btn-subtle-success { background: oklch(from var(--kendo-color-success) 0.96 calc(c * 0.1) h); color: var(--success-on-surface-old); }
-  .old .btn-subtle-warning { background: oklch(from var(--kendo-color-warning) 0.96 calc(c * 0.1) h); color: var(--warning-on-surface-old); }
-  .old .btn-subtle-error { background: oklch(from var(--kendo-color-error) 0.96 calc(c * 0.1) h); color: var(--error-on-surface-old); }
-  .old .btn-subtle-inverse { background: oklch(from var(--kendo-color-inverse) 0.96 calc(c * 0.1) h); color: var(--inverse-on-surface-old); }
-
-  /* NEW on-surface colors */
+  /* NEW on-surface colors for outline/flat */
   .new .btn-outline-base,
   .new .btn-flat-base { color: var(--base-on-surface-new); border-color: var(--base-on-surface-new); }
   .new .btn-outline-primary,
@@ -172,17 +181,6 @@
   .new .btn-flat-error { color: var(--error-on-surface-new); border-color: var(--error-on-surface-new); }
   .new .btn-outline-inverse,
   .new .btn-flat-inverse { color: var(--inverse-on-surface-new); border-color: var(--inverse-on-surface-new); }
-
-  /* Subtle NEW */
-  .new .btn-subtle-base { background: oklch(from var(--kendo-color-base) calc(l + 0.02) c h); color: var(--base-on-surface-new); }
-  .new .btn-subtle-primary { background: oklch(from var(--kendo-color-primary) 0.96 calc(c * 0.1) h); color: var(--primary-on-surface-new); }
-  .new .btn-subtle-secondary { background: oklch(from var(--kendo-color-secondary) 0.96 calc(c * 0.1) h); color: var(--secondary-on-surface-new); }
-  .new .btn-subtle-tertiary { background: oklch(from var(--kendo-color-tertiary) 0.96 calc(c * 0.1) h); color: var(--tertiary-on-surface-new); }
-  .new .btn-subtle-info { background: oklch(from var(--kendo-color-info) 0.96 calc(c * 0.1) h); color: var(--info-on-surface-new); }
-  .new .btn-subtle-success { background: oklch(from var(--kendo-color-success) 0.96 calc(c * 0.1) h); color: var(--success-on-surface-new); }
-  .new .btn-subtle-warning { background: oklch(from var(--kendo-color-warning) 0.96 calc(c * 0.1) h); color: var(--warning-on-surface-new); }
-  .new .btn-subtle-error { background: oklch(from var(--kendo-color-error) 0.96 calc(c * 0.1) h); color: var(--error-on-surface-new); }
-  .new .btn-subtle-inverse { background: oklch(from var(--kendo-color-inverse) 0.96 calc(c * 0.1) h); color: var(--inverse-on-surface-new); }
 
   /* Solid buttons use on-base (text on filled bg) — not affected, shown for context */
   .btn-solid-base { color: var(--base-on-surface-old); }
@@ -290,34 +288,34 @@
 </div>
 
 <!-- SUBTLE BUTTONS -->
-<h2>Subtle Buttons</h2>
+<h2>Clear Buttons</h2>
 <div class="comparison">
   <div class="panel old">
     <h3>Current <span class="tag tag-bug">BUG</span></h3>
     <div class="btn-row">
-      <button class="btn btn-subtle btn-subtle-base">Base</button>
-      <button class="btn btn-subtle btn-subtle-primary">Primary</button>
-      <button class="btn btn-subtle btn-subtle-secondary">Secondary</button>
-      <button class="btn btn-subtle btn-subtle-tertiary">Tertiary</button>
-      <button class="btn btn-subtle btn-subtle-info">Info</button>
-      <button class="btn btn-subtle btn-subtle-success">Success</button>
-      <button class="btn btn-subtle btn-subtle-warning">Warning</button>
-      <button class="btn btn-subtle btn-subtle-error">Error</button>
-      <button class="btn btn-subtle btn-subtle-inverse">Inverse</button>
+      <button class="btn btn-clear btn-clear-base">Base</button>
+      <button class="btn btn-clear btn-clear-primary">Primary</button>
+      <button class="btn btn-clear btn-clear-secondary">Secondary</button>
+      <button class="btn btn-clear btn-clear-tertiary">Tertiary</button>
+      <button class="btn btn-clear btn-clear-info">Info</button>
+      <button class="btn btn-clear btn-clear-success">Success</button>
+      <button class="btn btn-clear btn-clear-warning">Warning</button>
+      <button class="btn btn-clear btn-clear-error">Error</button>
+      <button class="btn btn-clear btn-clear-inverse">Inverse</button>
     </div>
   </div>
   <div class="panel new">
     <h3>Proposed Fix <span class="tag tag-fix">NEW</span></h3>
     <div class="btn-row">
-      <button class="btn btn-subtle btn-subtle-base">Base</button>
-      <button class="btn btn-subtle btn-subtle-primary">Primary</button>
-      <button class="btn btn-subtle btn-subtle-secondary">Secondary</button>
-      <button class="btn btn-subtle btn-subtle-tertiary">Tertiary</button>
-      <button class="btn btn-subtle btn-subtle-info">Info</button>
-      <button class="btn btn-subtle btn-subtle-success">Success</button>
-      <button class="btn btn-subtle btn-subtle-warning">Warning</button>
-      <button class="btn btn-subtle btn-subtle-error">Error</button>
-      <button class="btn btn-subtle btn-subtle-inverse">Inverse</button>
+      <button class="btn btn-clear btn-clear-base">Base</button>
+      <button class="btn btn-clear btn-clear-primary">Primary</button>
+      <button class="btn btn-clear btn-clear-secondary">Secondary</button>
+      <button class="btn btn-clear btn-clear-tertiary">Tertiary</button>
+      <button class="btn btn-clear btn-clear-info">Info</button>
+      <button class="btn btn-clear btn-clear-success">Success</button>
+      <button class="btn btn-clear btn-clear-warning">Warning</button>
+      <button class="btn btn-clear btn-clear-error">Error</button>
+      <button class="btn btn-clear btn-clear-inverse">Inverse</button>
     </div>
   </div>
 </div>
