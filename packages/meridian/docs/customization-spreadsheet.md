@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet header.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-table-header-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-header-bg</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet table headers.</div></div>

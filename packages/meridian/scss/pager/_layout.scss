@@ -12,5 +12,8 @@
                 @include border-radius( $kendo-pager-number-border-radius );
             }
         }
+        .k-pager-numbers {
+            gap: $kendo-pager-item-spacing;
+        }
     }
 }

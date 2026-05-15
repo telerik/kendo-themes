@@ -19,7 +19,8 @@
         border-start-end-radius: $kendo-window-border-radius;
     }
     .k-window-content:last-child,
-    .k-window-content:has(+ .k-resize-handles-wrapper) {
+    .k-window-content:has(+ .k-resize-handles-wrapper),
+    .k-window-content:has(+ .k-resize-handle) {
         border-end-start-radius: $kendo-window-border-radius;
         border-end-end-radius: $kendo-window-border-radius;
     }
