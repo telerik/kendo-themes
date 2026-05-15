@@ -225,7 +225,8 @@
     .k-message-failed {
         flex-flow: row wrap;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: end;
+        column-gap: k-spacing(1);
 
         .k-bubble {
             max-width: calc(100% - #{$kendo-button-md-inner-calc-size});
