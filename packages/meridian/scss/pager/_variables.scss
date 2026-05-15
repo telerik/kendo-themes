@@ -88,7 +88,7 @@ $kendo-pager-focus-outline-offset: 1px !default;
 $kendo-pager-item-border-width: 0px !default;
 /// The spacing around the Pager items.
 /// @group pager
-$kendo-pager-item-spacing: null !default;
+$kendo-pager-item-spacing: k-spacing(0.5) !default;
 
 /// The border radius of the Pager numbers.
 /// @group pager

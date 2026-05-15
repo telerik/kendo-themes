@@ -280,8 +280,8 @@
     .k-edit-form-content {
         flex: 1 1 auto;
         overflow: auto;
-        margin-block: (-$kendo-window-inner-padding-y);
-        margin-inline: (-$kendo-window-inner-padding-x);
+        margin-block: calc( -1 * #{$kendo-window-inner-padding-y} );
+        margin-inline: calc( -1 * #{$kendo-window-inner-padding-x} );
         padding-block: $kendo-window-inner-padding-y;
         padding-inline: $kendo-window-inner-padding-x;
     }
