@@ -28,16 +28,16 @@
     --error-on-surface-old: oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.16), 0.55) calc(c - 0.0154) calc(h + 0.39));
     --inverse-on-surface-old: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11));
 
-    /* === NEW: color-mix + contrast-color === */
-    --base-on-surface-new: color-mix(in oklch, var(--kendo-color-base) 30%, contrast-color(var(--kendo-color-surface)) 70%);
-    --primary-on-surface-new: color-mix(in oklch, var(--kendo-color-primary) 60%, contrast-color(var(--kendo-color-surface)) 40%);
-    --secondary-on-surface-new: color-mix(in oklch, var(--kendo-color-secondary) 60%, contrast-color(var(--kendo-color-surface)) 40%);
-    --tertiary-on-surface-new: color-mix(in oklch, var(--kendo-color-tertiary) 60%, contrast-color(var(--kendo-color-surface)) 40%);
-    --info-on-surface-new: color-mix(in oklch, var(--kendo-color-info) 60%, contrast-color(var(--kendo-color-surface)) 40%);
-    --success-on-surface-new: color-mix(in oklch, var(--kendo-color-success) 60%, contrast-color(var(--kendo-color-surface)) 40%);
-    --warning-on-surface-new: color-mix(in oklch, var(--kendo-color-warning) 60%, contrast-color(var(--kendo-color-surface)) 40%);
-    --error-on-surface-new: color-mix(in oklch, var(--kendo-color-error) 60%, contrast-color(var(--kendo-color-surface)) 40%);
-    --inverse-on-surface-new: color-mix(in oklch, var(--kendo-color-inverse) 60%, contrast-color(var(--kendo-color-surface)) 40%);
+    /* === NEW: oklch(from) + clamp() binary flip (suggested approach) === */
+    --base-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-base) l c h) 25%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 75%);
+    --primary-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-primary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --secondary-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-secondary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --tertiary-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-tertiary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --info-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-info) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --success-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-success) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --warning-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-warning) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --error-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-error) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --inverse-on-surface-new: color-mix(in oklch, oklch(from var(--kendo-color-inverse) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
 
     /* === ALT: 50/50 ratio === */
     --base-on-surface-alt1: color-mix(in oklch, var(--kendo-color-base) 25%, contrast-color(var(--kendo-color-surface)) 75%);
@@ -72,16 +72,16 @@
     --error-on-surface-alt3: color-mix(in oklch, var(--kendo-color-error) 25%, contrast-color(var(--kendo-color-surface)) 75%);
     --inverse-on-surface-alt3: color-mix(in oklch, var(--kendo-color-inverse) 25%, contrast-color(var(--kendo-color-surface)) 75%);
 
-    /* === ALT5: 30/70 oklch + chroma×2 (AA contrast + rich saturation) === */
-    --base-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-base) 20%, contrast-color(var(--kendo-color-surface)) 80%) l calc(c * 2) h);
-    --primary-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-primary) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
-    --secondary-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-secondary) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
-    --tertiary-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-tertiary) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
-    --info-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-info) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
-    --success-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-success) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
-    --warning-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-warning) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
-    --error-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-error) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
-    --inverse-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-inverse) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
+    /* === ALT6: clamp() binary flip — reimplements contrast-color() without it! === */
+    --base-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-base) l c h) 25%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 75%);
+    --primary-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-primary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --secondary-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-secondary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --tertiary-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-tertiary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --info-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-info) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --success-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-success) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --warning-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-warning) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --error-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-error) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
+    --inverse-on-surface-alt6: color-mix(in oklch, oklch(from var(--kendo-color-inverse) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -314,33 +314,33 @@
   .alt3 .btn-flat-inverse { color: var(--inverse-on-surface-alt3); border-color: var(--inverse-on-surface-alt3); }
 
   /* ALT4 40/60 sRGB */
-  .alt4 .btn-clear-base { color: var(--base-on-surface-alt5); }
-  .alt4 .btn-clear-primary { color: var(--primary-on-surface-alt5); }
-  .alt4 .btn-clear-secondary { color: var(--secondary-on-surface-alt5); }
-  .alt4 .btn-clear-tertiary { color: var(--tertiary-on-surface-alt5); }
-  .alt4 .btn-clear-info { color: var(--info-on-surface-alt5); }
-  .alt4 .btn-clear-success { color: var(--success-on-surface-alt5); }
-  .alt4 .btn-clear-warning { color: var(--warning-on-surface-alt5); }
-  .alt4 .btn-clear-error { color: var(--error-on-surface-alt5); }
-  .alt4 .btn-clear-inverse { color: var(--inverse-on-surface-alt5); }
+  .alt4 .btn-clear-base { color: var(--base-on-surface-alt6); }
+  .alt4 .btn-clear-primary { color: var(--primary-on-surface-alt6); }
+  .alt4 .btn-clear-secondary { color: var(--secondary-on-surface-alt6); }
+  .alt4 .btn-clear-tertiary { color: var(--tertiary-on-surface-alt6); }
+  .alt4 .btn-clear-info { color: var(--info-on-surface-alt6); }
+  .alt4 .btn-clear-success { color: var(--success-on-surface-alt6); }
+  .alt4 .btn-clear-warning { color: var(--warning-on-surface-alt6); }
+  .alt4 .btn-clear-error { color: var(--error-on-surface-alt6); }
+  .alt4 .btn-clear-inverse { color: var(--inverse-on-surface-alt6); }
   .alt4 .btn-outline-base,
-  .alt4 .btn-flat-base { color: var(--base-on-surface-alt5); border-color: var(--base-on-surface-alt5); }
+  .alt4 .btn-flat-base { color: var(--base-on-surface-alt6); border-color: var(--base-on-surface-alt6); }
   .alt4 .btn-outline-primary,
-  .alt4 .btn-flat-primary { color: var(--primary-on-surface-alt5); border-color: var(--primary-on-surface-alt5); }
+  .alt4 .btn-flat-primary { color: var(--primary-on-surface-alt6); border-color: var(--primary-on-surface-alt6); }
   .alt4 .btn-outline-secondary,
-  .alt4 .btn-flat-secondary { color: var(--secondary-on-surface-alt5); border-color: var(--secondary-on-surface-alt5); }
+  .alt4 .btn-flat-secondary { color: var(--secondary-on-surface-alt6); border-color: var(--secondary-on-surface-alt6); }
   .alt4 .btn-outline-tertiary,
-  .alt4 .btn-flat-tertiary { color: var(--tertiary-on-surface-alt5); border-color: var(--tertiary-on-surface-alt5); }
+  .alt4 .btn-flat-tertiary { color: var(--tertiary-on-surface-alt6); border-color: var(--tertiary-on-surface-alt6); }
   .alt4 .btn-outline-info,
-  .alt4 .btn-flat-info { color: var(--info-on-surface-alt5); border-color: var(--info-on-surface-alt5); }
+  .alt4 .btn-flat-info { color: var(--info-on-surface-alt6); border-color: var(--info-on-surface-alt6); }
   .alt4 .btn-outline-success,
-  .alt4 .btn-flat-success { color: var(--success-on-surface-alt5); border-color: var(--success-on-surface-alt5); }
+  .alt4 .btn-flat-success { color: var(--success-on-surface-alt6); border-color: var(--success-on-surface-alt6); }
   .alt4 .btn-outline-warning,
-  .alt4 .btn-flat-warning { color: var(--warning-on-surface-alt5); border-color: var(--warning-on-surface-alt5); }
+  .alt4 .btn-flat-warning { color: var(--warning-on-surface-alt6); border-color: var(--warning-on-surface-alt6); }
   .alt4 .btn-outline-error,
-  .alt4 .btn-flat-error { color: var(--error-on-surface-alt5); border-color: var(--error-on-surface-alt5); }
+  .alt4 .btn-flat-error { color: var(--error-on-surface-alt6); border-color: var(--error-on-surface-alt6); }
   .alt4 .btn-outline-inverse,
-  .alt4 .btn-flat-inverse { color: var(--inverse-on-surface-alt5); border-color: var(--inverse-on-surface-alt5); }
+  .alt4 .btn-flat-inverse { color: var(--inverse-on-surface-alt6); border-color: var(--inverse-on-surface-alt6); }
 
   /* Solid buttons use on-base (text on filled bg) — not affected, shown for context */
   .btn-solid-base { color: var(--base-on-surface-old); }
@@ -399,7 +399,7 @@
     </div>
   </div>
   <div class="panel new">
-    <h3>Fix 60/40 <span class="tag tag-fix">NEW</span></h3>
+    <h3>Suggested 35/65 <span class="tag tag-fix">RFC</span></h3>
     <div class="btn-row">
       <button class="btn btn-outline btn-outline-base">Base</button>
       <button class="btn btn-outline btn-outline-primary">Primary</button>
@@ -455,7 +455,7 @@
     </div>
   </div>
   <div class="panel alt4">
-    <h3>Alt 30/70 + chroma×2</h3>
+    <h3>Alt6: inv-surface (no contrast-color!)</h3>
     <div class="btn-row">
       <button class="btn btn-outline btn-outline-base">Base</button>
       <button class="btn btn-outline btn-outline-primary">Primary</button>
@@ -486,7 +486,7 @@
     </div>
   </div>
   <div class="panel new">
-    <h3>Fix 60/40 <span class="tag tag-fix">NEW</span></h3>
+    <h3>Suggested 35/65 <span class="tag tag-fix">RFC</span></h3>
     <div class="btn-row">
       <button class="btn btn-flat btn-flat-base">Base</button>
       <button class="btn btn-flat btn-flat-primary">Primary</button>
@@ -542,7 +542,7 @@
     </div>
   </div>
   <div class="panel alt4">
-    <h3>Alt 30/70 + chroma×2</h3>
+    <h3>Alt6: inv-surface (no contrast-color!)</h3>
     <div class="btn-row">
       <button class="btn btn-flat btn-flat-base">Base</button>
       <button class="btn btn-flat btn-flat-primary">Primary</button>
@@ -575,7 +575,7 @@
     </div>
   </div>
   <div class="panel new">
-    <h3>Fix 60/40 <span class="tag tag-fix">NEW</span></h3>
+    <h3>Suggested 35/65 <span class="tag tag-fix">RFC</span></h3>
     <div class="btn-row">
       <button class="btn btn-clear btn-clear-base">Base</button>
       <button class="btn btn-clear btn-clear-primary">Primary</button>
@@ -631,7 +631,7 @@
     </div>
   </div>
   <div class="panel alt4">
-    <h3>Alt 30/70 + chroma×2</h3>
+    <h3>Alt6: inv-surface (no contrast-color!)</h3>
     <div class="btn-row">
       <button class="btn btn-clear btn-clear-base">Base</button>
       <button class="btn btn-clear btn-clear-primary">Primary</button>
