@@ -1,12 +1,24 @@
 // Skeleton
 
+/// The transform scale of the Skeleton text.
+/// @group skeleton
 $kendo-skeleton-text-transform: null !default;
+/// The border radius of the Skeleton text.
+/// @group skeleton
 $kendo-skeleton-text-border-radius: null !default;
 
+/// The border radius of the rectangular Skeleton.
+/// @group skeleton
 $kendo-skeleton-rect-border-radius: null !default;
 
+/// The border radius of the circular Skeleton.
+/// @group skeleton
 $kendo-skeleton-circle-border-radius: null !default;
 
+/// The background color of the Skeleton item.
+/// @group skeleton
 $kendo-skeleton-item-bg: null !default;
 
+/// The background color of the Skeleton.
+/// @group skeleton
 $kendo-skeleton-wave-bg: null !default;

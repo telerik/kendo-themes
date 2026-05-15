@@ -1,45 +1,106 @@
 // Segmented control
 
+/// The default size of the Segmented control.
+/// @group segmented-control
+/// @role default
 $kendo-segmented-control-default-size: null !default;
 
+/// The horizontal padding of the Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-padding-x: null !default;
+/// The vertical padding of the Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-padding-y: null !default;
+/// The border radius of the Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-border-radius: null !default;
 
+/// The background color of the Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-bg: null !default;
+/// The text color of the Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-text: null !default;
 
+/// The font size of the small Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-sm-font-size: null !default;
+/// The font size of the medium Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-md-font-size: null !default;
+/// The font size of the large Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-lg-font-size: null !default;
 
+/// The font family of the Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-font-family: null !default;
 
+/// The line height of the small Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-sm-line-height: null !default;
+/// The line height of the medium Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-md-line-height: null !default;
+/// The line height of the large Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-lg-line-height: null !default;
 
+/// The border radius of the Segmented Control thumb.
+/// @group segmented-control
 $kendo-segmented-control-thumb-border-radius: null !default;
+/// The box shadow of the Segmented Control thumb.
+/// @group segmented-control
 $kendo-segmented-control-thumb-shadow: null !default;
+/// The background of the Segmented Control thumb.
+/// @group segmented-control
 $kendo-segmented-control-thumb-bg: null !default;
+/// The text color of the Segmented Control thumb.
+/// @group segmented-control
 $kendo-segmented-control-thumb-text: null !default;
 
+/// The horizontal padding of the small Segmented Control button.
+/// @group segmented-control
 $kendo-segmented-control-sm-button-padding-x: null !default;
+/// The horizontal padding of the medium Segmented Control button.
+/// @group segmented-control
 $kendo-segmented-control-md-button-padding-x: null !default;
+/// The horizontal padding of the large Segmented Control button.
+/// @group segmented-control
 $kendo-segmented-control-lg-button-padding-x: null !default;
 
+/// The vertical padding of the small Segmented Control button.
+/// @group segmented-control
 $kendo-segmented-control-sm-button-padding-y: null !default;
+/// The vertical padding of the medium Segmented Control button.
+/// @group segmented-control
 $kendo-segmented-control-md-button-padding-y: null !default;
+/// The vertical padding of the large Segmented Control button.
+/// @group segmented-control
 $kendo-segmented-control-lg-button-padding-y: null !default;
 
+/// The width of the border around the Segmented Control button.
+/// @group segmented-control
 $kendo-segmented-control-button-border-width: null !default;
+/// The border radius of the Segmented Control button.
+/// @group segmented-control
 $kendo-segmented-control-button-border-radius: null !default;
 
+/// The gap of the items inside the small Segmented Control buttons.
+/// @group segmented-control
 $kendo-segmented-control-sm-button-gap: null !default;
+/// The gap of the items inside the medium Segmented Control buttons.
+/// @group segmented-control
 $kendo-segmented-control-md-button-gap: null !default;
+/// The gap of the items inside the large Segmented Control buttons.
+/// @group segmented-control
 $kendo-segmented-control-lg-button-gap: null !default;
 
+/// The background color of the hovered button inside Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-button-hover-bg: null !default;
+/// The indication of the focused button inside Segmented Control.
+/// @group segmented-control
 $kendo-segmented-control-button-focus-indicator: null !default;
 
 /// The map with the sizes of the Segmented Control.

@@ -3,69 +3,29 @@
 @use "../window/_variables.scss"as *;
 @use "../dialog/_variables.scss"as *;
 
-/// The width of the border around the Popover.
-/// @group popover
 $kendo-popover-border-width: var( --kendo-popover-border-width, 0 ) !default;
-/// The style of the border around the Popover.
-/// @group popover
 $kendo-popover-border-style: var( --kendo-popover-border-style, solid ) !default;
-/// The radius of the border around the Popover.
-/// @group popover
 $kendo-popover-border-radius: var( --kendo-popover-border-radius, #{$kendo-window-border-radius} ) !default;
-/// The font family of the Popover.
-/// @group popover
 $kendo-popover-font-family: var( --kendo-popover-font-family, #{$kendo-window-font-family} ) !default;
-/// The font size of the Popover.
-/// @group popover
 $kendo-popover-font-size: var( --kendo-popover-font-size, #{$kendo-window-font-size} ) !default;
-/// The line height of the Popover.
-/// @group popover
 $kendo-popover-line-height: var( --kendo-popover-line-height, #{$kendo-window-line-height} ) !default;
 
-/// The text color of the Popover.
-/// @group popover
 $kendo-popover-text: var( --kendo-popover-text, k-color(on-app-surface) ) !default;
-/// The background color of the Popover.
-/// @group popover
 $kendo-popover-bg: var( --kendo-popover-bg, k-color(surface-alt) ) !default;
-/// The border color of the Popover.
-/// @group popover
 $kendo-popover-border: var( --kendo-popover-border, transparent ) !default;
-/// The box shadow of the Popover.
-/// @group popover
 $kendo-popover-shadow: var( --kendo-popover-shadow, k-elevation(3) ) !default;
 
-/// The horizontal padding of the Popover header.
-/// @group popover
 $kendo-popover-header-padding-x: var( --kendo-popover-header-padding-x, k-spacing(4) ) !default;
-/// The vertical padding of the Popover header.
-/// @group popover
 $kendo-popover-header-padding-y: var( --kendo-popover-header-padding-y, k-spacing(4) ) !default;
-/// The border width of the Popover header.
-/// @group popover
 $kendo-popover-header-border-width: var( --kendo-popover-header-border-width, 0 ) !default;
-/// The border style of the Popover header.
-/// @group popover
 $kendo-popover-header-border-style: var( --kendo-popover-header-border-style, #{$kendo-popover-border-style} ) !default;
-/// The text color of the Popover header.
-/// @group popover
 $kendo-popover-header-text: var( --kendo-popover-header-text, #{$kendo-dialog-titlebar-text} ) !default;
-/// The background color of the Popover header.
-/// @group popover
 $kendo-popover-header-bg: var( --kendo-popover-header-bg, #{$kendo-dialog-titlebar-bg} ) !default;
-/// The border color of the Popover header.
-/// @group popover
 $kendo-popover-header-border: var( --kendo-popover-header-border, #{$kendo-dialog-titlebar-border} ) !default;
 
-/// The horizontal padding of the Popover body.
-/// @group popover
 $kendo-popover-body-padding-x: var( --kendo-popover-body-padding-x, k-spacing(4) ) !default;
-/// The vertical padding of the Popover body.
-/// @group popover
 $kendo-popover-body-padding-y: var( --kendo-popover-body-padding-y, k-spacing(4) ) !default;
 
-/// The border width of the Popover actions.
-/// @group popover
 $kendo-popover-actions-border-width: var( --kendo-popover-actions-border-width, 0 ) !default;
 /// The horizontal padding of the Popover actions.
 /// @group popover
@@ -74,17 +34,9 @@ $kendo-popover-actions-padding-x: var( --kendo-popover-actions-padding-x, k-spac
 /// @group popover
 $kendo-popover-actions-padding-y: var( --kendo-popover-actions-padding-y, k-spacing(4) ) !default;
 
-/// The width of the Popover callout.
-/// @group popover
 $kendo-popover-callout-width: var( --kendo-popover-callout-width, k-spacing(6) ) !default;
-/// The height of the Popover callout.
-/// @group popover
 $kendo-popover-callout-height: var( --kendo-popover-callout-height, #{$kendo-popover-callout-width} ) !default;
-/// The border width of the Popover callout.
-/// @group popover
 $kendo-popover-callout-border-width: var( --kendo-popover-callout-border-width, #{$kendo-popover-border-width} ) !default;
-/// The border style of the Popover callout.
-/// @group popover
 $kendo-popover-callout-border-style: var( --kendo-popover-callout-border-style, #{$kendo-popover-border-style} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/popover/_variables.scss" with (

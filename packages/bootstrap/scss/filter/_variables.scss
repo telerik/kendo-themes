@@ -2,37 +2,19 @@
 
 // Filter expression builder
 
-/// The horizontal padding of the Filter.
-/// @group filter
 $kendo-filter-padding-x: k-spacing(4) !default;
-/// The vertical padding of the Filter.
-/// @group filter
 $kendo-filter-padding-y: k-spacing(2) !default;
 
-/// The border radius of the Filter.
-/// @group filter
 $kendo-filter-border-radius: null !default;
 
-/// The bottom margin of the Filter.
-/// @group filter
 $kendo-filter-bottom-margin: 2.1em !default;
-/// The width of the line that connects the Filter items.
-/// @group filter
 $kendo-filter-line-size: 1px !default;
 
-/// The width of the dropdown elements in the Filter items.
-/// @group filter
 $kendo-filter-operator-dropdown-width: 15em !default;
 
-/// The text color of the Filter preview field.
-/// @group filter
 $kendo-filter-preview-field-text: k-color(primary-on-surface) !default;
-/// The text color of the Filter preview operator.
-/// @group filter
 $kendo-filter-preview-operator-text: k-color(on-app-surface) !default;
 
-/// The box shadow of the focused Filter toolbar.
-/// @group filter
 $kendo-filter-toolbar-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 

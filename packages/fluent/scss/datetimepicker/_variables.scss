@@ -2,23 +2,12 @@
 
 // DateTime
 
-/// The default size of the DateTimePicker.
-/// @group date-time-picker
-/// @role default
 $kendo-datetime-default-size: "md" !default;
 
-/// The width of the DateTimePicker.
-/// @group date-time-picker
 $kendo-datetime-width: calc( #{$kendo-calendar-header-min-width} + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ) ) !default;
 
-/// The width of the small DateTimePicker.
-/// @group date-time-picker
 $kendo-datetime-sm-width: calc( calc( #{$kendo-calendar-sm-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 )) !default;
-/// The width of the medium DateTimePicker.
-/// @group date-time-picker
 $kendo-datetime-md-width: $kendo-datetime-width !default;
-/// The width of the large DateTimePicker.
-/// @group date-time-picker
 $kendo-datetime-lg-width: calc( calc( #{$kendo-calendar-lg-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 )) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/datetimepicker/_variables.scss" with (

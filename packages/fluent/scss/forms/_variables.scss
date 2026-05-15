@@ -2,161 +2,82 @@
 @use "../core/_index.scss" as *;
 @use "../core/spacing/_index.scss" as *;
 
-/// The default size of the Form.
-/// @group form
-/// @role default
 $kendo-form-default-size: "md" !default;
 
-/// The padding of the inline Form.
-/// @group form
 $kendo-form-spacer: var(--kendo-form-spacer, #{k-spacing(4)}) !default;
 
-/// The font size of the Form.
-/// @group form
 $kendo-form-font-size: var(--kendo-form-font-size, var(--kendo-font-size)) !default;
 
-/// The line height of the Form.
-/// @group form
 $kendo-form-line-height: var(--kendo-form-line-height, var(--kendo-line-height)) !default;
 
-/// The margin of the Form fieldset.
-/// @group form
 $kendo-form-fieldset-margin: var(--kendo-form-fieldset-margin, 2em 0 0) !default;
 
-/// The padding of the Form fieldset.
-/// @group form
 $kendo-form-fieldset-padding: var(--kendo-form-fieldset-padding, #{k-spacing(0)}) !default;
 
-/// The margin of the Form legend.
-/// @group form
 $kendo-form-legend-margin: var(--kendo-form-legend-margin, 0 0 #{k-spacing(3)}) !default;
 
-/// The padding of the Form legend.
-/// @group form
 $kendo-form-legend-padding: var(--kendo-form-legend-padding, #{k-spacing(0)}) !default;
 
-/// The border width of the Form legend.
-/// @group form
 $kendo-form-legend-border-width: var(--kendo-form-legend-border-width, 0 0 #{k-spacing(0.5)}) !default;
 
-/// The border style of the Form legend.
-/// @group form
 $kendo-form-legend-border-style: var(--kendo-form-legend-border-style, solid) !default;
 
-/// The border color of the Form legend.
-/// @group form
 $kendo-form-legend-border-color: var(--kendo-form-legend-border-color, #{color-mix(in srgb, k-color(border) 16%, transparent)}) !default;
 
-/// The width of the Form legend.
-/// @group form
 $kendo-form-legend-width: var(--kendo-form-legend-width, 100%) !default;
 
-/// The font size of the Form legend.
-/// @group form
 $kendo-form-legend-font-size: var(--kendo-form-legend-font-size, var(--kendo-font-size)) !default;
-/// The font weight of the Form legend.
-/// @group form
 $kendo-form-legend-font-weight: null !default;
 
-/// The text capitalization of the Form legend.
-/// @group form
 $kendo-form-legend-text-transform: var(--kendo-form-legend-text-transform, uppercase) !default;
 
-/// The bottom margin of the Form label.
-/// @group form
 $kendo-form-label-margin-bottom: var(--kendo-form-label-margin-bottom, #{k-spacing(2)}) !default;
 
-/// The font size of the Form label.
-/// @group form
 $kendo-label-font-size: var(--kendo-label-font-size, inherit) !default;
-/// The font weight of the Form label.
-/// @group form
 $kendo-label-font-weight: var(--kendo-label-font-weight, inherit) !default;
-/// The line height of the Form label.
-/// @group form
 $kendo-label-line-height: var(--kendo-label-line-height, inherit) !default;
 
-/// The font size of the Form hint.
-/// @group form
 $kendo-form-hint-font-size: var(--kendo-form-hint-font-size, var(--kendo-font-size-sm)) !default;
 
-/// The font style of the Form hint.
-/// @group form
 $kendo-form-hint-font-style: var(--kendo-form-hint-font-style, normal) !default;
 
-/// The top margin of the Form hint.
-/// @group form
 $kendo-form-hint-margin-top: var(--kendo-form-hint-margin-top, #{k-spacing(0.5)}) !default;
 
 /// The text color of the Form hint.
 /// @group form
 $kendo-form-hint-text: var(--kendo-form-hint-text, #{k-color(subtle)}) !default;
 
-/// The row spacing of the small Form.
-/// @group form
 $kendo-form-sm-rows-spacing: var(--kendo-form-sm-rows-spacing, #{k-spacing(3)}) !default;
-/// The row spacing of the medium Form.
-/// @group form
 $kendo-form-md-rows-spacing: var(--kendo-form-md-rows-spacing, #{k-spacing(3)}) !default;
-/// The row spacing of the large Form.
-/// @group form
 $kendo-form-lg-rows-spacing: var(--kendo-form-lg-rows-spacing, #{k-spacing(3)}) !default;
 
-/// The margin of the Form separator.
-/// @group form
 $kendo-form-separator-margin: var(--kendo-form-separator-margin, #{k-spacing(3)} 0 0) !default;
 
-/// The border color of the Form separator.
-/// @group form
 $kendo-form-separator-border-color: var(--kendo-form-separator-border-color, #{$kendo-form-legend-border-color}) !default;
 
-/// The top padding of the label in the horizontal Form.
-/// @group form
 $kendo-horizontal-form-label-padding-top: var(--kendo-horizontal-form-label-padding-top, #{k-spacing(1.5)}) !default;
 
-/// The horizontal margin of the label in the horizontal Form.
-/// @group form
 $kendo-horizontal-form-label-margin-x: var(--kendo-horizontal-form-label-margin-x, #{k-spacing(2)}) !default;
 
-/// The width of the label in the horizontal Form.
-/// @group form
 $kendo-horizontal-form-label-width: var(--kendo-horizontal-form-label-width, 25%) !default;
 
-/// The horizontal alignment of the label in the horizontal Form.
-/// @group form
 $kendo-horizontal-form-label-align: var(--kendo-horizontal-form-label-align, flex-end) !default;
 
-/// The maximum width of the field wrap in the horizontal Form.
-/// @group form
 $kendo-horizontal-form-field-wrap-max-width: var(--kendo-horizontal-form-field-wrap-max-width, calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} )) !default;
 
-/// The width of the inline Form element.
-/// @group form
 $kendo-inline-form-element-width: var(--kendo-inline-form-element-width, 25%) !default;
 
 /// The invalid text color of the Form.
 /// @group form
 $kendo-forms-invalid-color: var(--kendo-forms-invalid-color, #{k-color(error-on-surface)}) !default;
 
-/// The horizontal margin of the optional label in the Form.
-/// @group form
 $kendo-label-optional-margin-x: var(--kendo-label-optional-margin-x, #{k-spacing(1.5)}) !default;
-/// The font size of the optional label in the Form.
-/// @group form
 $kendo-label-optional-font-size: var(--kendo-label-optional-font-size, var(--kendo-font-size-sm)) !default;
-/// The font style of the optional label in the Form.
-/// @group form
 $kendo-label-optional-font-style: var(--kendo-label-optional-font-style, normal) !default;
-/// The font weight of the optional label in the Form.
-/// @group form
 $kendo-label-optional-font-weight: var(--kendo-label-optional-font-weight, inherit) !default;
 
-/// The margin of the Form fieldset.
-/// @group form
 $kendo-fieldset-margin: var(--kendo-fieldset-margin, #{k-spacing(7.5)}) !default;
 
-/// The text color of the Form legend.
-/// @group form
 $kendo-fieldset-legend-text: var(--kendo-fieldset-legend-text, #{k-color(subtle)}) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/forms/_variables.scss" with (

@@ -3,30 +3,14 @@
 @use "../calendar/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 
-/// The width of the border around the Scheduler.
-/// @group scheduler
 $kendo-scheduler-border-width: var( --kendo-scheduler-border-width, 1px ) !default;
-/// The border radius of the Scheduler.
-/// @group scheduler
 $kendo-scheduler-border-radius: var( --kendo-scheduler-border-radius, null ) !default;
-/// The font family of the Scheduler.
-/// @group scheduler
 $kendo-scheduler-font-family: var( --kendo-scheduler-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the Scheduler.
-/// @group scheduler
 $kendo-scheduler-font-size: var( --kendo-scheduler-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the Scheduler.
-/// @group scheduler
 $kendo-scheduler-line-height: var( --kendo-scheduler-line-height, var(--kendo-line-height) ) !default;
 
-/// The background color of the Scheduler.
-/// @group scheduler
 $kendo-scheduler-bg: var( --kendo-scheduler-bg, k-color(app-surface) ) !default;
-/// The text color of the Scheduler.
-/// @group scheduler
 $kendo-scheduler-text: var( --kendo-scheduler-text, k-color(on-app-surface) ) !default;
-/// The border color of the Scheduler.
-/// @group scheduler
 $kendo-scheduler-border: var( --kendo-scheduler-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
 
 /// The background color of the selected row in Scheduler.
@@ -39,37 +23,17 @@ $kendo-scheduler-selected-text: var( --kendo-scheduler-selected-text, $kendo-sch
 /// @group scheduler
 $kendo-scheduler-selected-border: var( --kendo-scheduler-selected-border, $kendo-scheduler-border ) !default;
 
-/// The background color of the Scheduler ToolBar.
-/// @group scheduler
 $kendo-scheduler-toolbar-bg: var( --kendo-scheduler-toolbar-bg, k-color(app-surface) ) !default;
-/// The text color of the Scheduler ToolBar.
-/// @group scheduler
 $kendo-scheduler-toolbar-text: var( --kendo-scheduler-toolbar-text, k-color(on-app-surface) ) !default;
-/// The border color of the Scheduler ToolBar.
-/// @group scheduler
 $kendo-scheduler-toolbar-border: var( --kendo-scheduler-toolbar-border, k-color(border) ) !default;
-/// The gradient of the Scheduler ToolBar.
-/// @group scheduler
 $kendo-scheduler-toolbar-gradient: var( --kendo-scheduler-toolbar-gradient, null ) !default; // $kendo-toolbar-gradient
 
-/// The background color of the Scheduler footer.
-/// @group schedulers
 $kendo-scheduler-footer-bg: var( --kendo-scheduler-footer-bg, k-color(app-surface) ) !default;
-/// The text color of the Scheduler footer.
-/// @group scheduler
 $kendo-scheduler-footer-text: var( --kendo-scheduler-footer-text, var( --kendo-toolbar-text, $kendo-toolbar-text ) ) !default;
-/// The border color of the Scheduler footer.
-/// @group scheduler
 $kendo-scheduler-footer-border: var( --kendo-scheduler-footer-border, var( --kendo-toolbar-border, $kendo-toolbar-border ) ) !default;
-/// The gradient of the Scheduler footer.
-/// @group scheduler
 $kendo-scheduler-footer-gradient: var( --kendo-scheduler-footer-gradient, null ) !default; // $kendo-toolbar-gradient
 
-/// The border radius of the Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-border-radius: var( --kendo-scheduler-event-border-radius, k-border-radius(md) ) !default;
-/// The line height of the Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-line-height: var( --kendo-scheduler-event-line-height, $kendo-scheduler-line-height ) !default;
 /// The horizontal padding of the Scheduler event.
 /// @group scheduler
@@ -77,172 +41,70 @@ $kendo-scheduler-event-padding-x: var( --kendo-scheduler-event-padding-x, k-spac
 /// The vertical padding of the Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-padding-y: var( --kendo-scheduler-event-padding-y, k-spacing(0.5) ) !default;
-/// The minimum height of the Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-min-height: var( --kendo-scheduler-event-min-height, calc( #{$kendo-scheduler-line-height} + 2 * #{$kendo-scheduler-event-padding-y} ) ) !default;
 
-/// The background color of the Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-bg: var( --kendo-scheduler-event-bg, k-color(primary) ) !default;
-/// The text color of the Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-text: var( --kendo-scheduler-event-text, k-color(on-primary) ) !default;
-/// The border color of the Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-border: var( --kendo-scheduler-event-border, $kendo-scheduler-event-bg ) !default;
-/// The gradient of the Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-gradient: var( --kendo-scheduler-event-gradient, null ) !default;
-/// The shadow of the Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-shadow: var( --kendo-scheduler-event-shadow, null ) !default;
 
-/// The background color of the hovered Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-hover-bg: var( --kendo-scheduler-event-hover-bg, k-color(primary-hover) ) !default;
-/// The text color of the hovered Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-hover-text: var( --kendo-scheduler-event-hover-text, k-color(on-primary) ) !default;
-/// The border color of the hovered Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-hover-border: var( --kendo-scheduler-event-hover-border, color-mix(in srgb, k-color(border) 10%, transparent) ) !default;
-/// The gradient of the hovered Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-hover-gradient: var( --kendo-scheduler-event-hover-gradient, null ) !default;
-/// The shadow of the hovered Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-hover-shadow: var( --kendo-scheduler-event-hover-shadow, null ) !default;
 
-/// The background color of the selected Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-selected-bg: var( --kendo-scheduler-event-selected-bg, k-color(primary-active) ) !default;
-/// The text color of the selected Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-selected-text: var( --kendo-scheduler-event-selected-text, $kendo-scheduler-event-text ) !default;
-/// The border color of the selected Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-selected-border: var( --kendo-scheduler-event-selected-border, $kendo-scheduler-event-bg ) !default;
-/// The gradient of the selected Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-selected-gradient: var( --kendo-scheduler-event-selected-gradient, null ) !default;
-/// The shadow of the selected Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-selected-shadow: var( --kendo-scheduler-event-selected-shadow, none ) !default;
 
-/// The shadow of the ongoing Scheduler event.
-/// @group scheduler
 $kendo-scheduler-event-ongoing-shadow: var( --kendo-scheduler-event-ongoing-shadow, inset 0px 0px 0px 1px #ff0000 ) !default;
 
-/// The horizontal padding of the Scheduler cell.
-/// @group scheduler
 $kendo-scheduler-cell-padding-x: var( --kendo-scheduler-cell-padding-x, k-spacing(2) ) !default;
-/// The vertical padding of the Scheduler cell.
-/// @group scheduler
 $kendo-scheduler-cell-padding-y: var( --kendo-scheduler-cell-padding-y, k-spacing(2) ) !default;
-/// The height of the Scheduler cell.
-/// @group scheduler
 $kendo-scheduler-cell-height: var( --kendo-scheduler-cell-height, $kendo-line-height-em ) !default;
-/// The width of the Scheduler date column.
-/// @group scheduler
 $kendo-scheduler-datecolumn-width: var( --kendo-scheduler-datecolumn-width, 12em ) !default;
-/// The width of the Scheduler time column.
-/// @group scheduler
 $kendo-scheduler-timecolumn-width: var( --kendo-scheduler-timecolumn-width, 11em ) !default;
 
-/// The background color of the non-working hours in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-nonwork-bg: var( --kendo-scheduler-nonwork-bg, k-color(surface) ) !default;
-/// The text color of the non-working hours in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-nonwork-text: var( --kendo-scheduler-nonwork-text, null ) !default;
 
-/// The background color of the preceding/subsequent month cells in the Calendar.
-/// @group scheduler
 $kendo-scheduler-othermonth-bg: var( --kendo-scheduler-othermonth-bg, k-color(surface) ) !default;
-/// The text color of the preceding/subsequent month cells in the Calendar.
-/// @group scheduler
 $kendo-scheduler-othermonth-text: var( --kendo-scheduler-othermonth-text, null ) !default;
 
-/// The horizontal padding of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-padding-x: var( --kendo-scheduler-yearview-padding-x, k-spacing(3) ) !default;
-/// The vertical padding of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-padding-y: var( --kendo-scheduler-yearview-padding-y, $kendo-scheduler-yearview-padding-x ) !default;
 
-/// The spacing between the calendars of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-calendar-gap: var( --kendo-scheduler-yearview-calendar-gap, k-spacing(3) ) !default;
 
-/// The days with events indicator size of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-indicator-size: var( --kendo-scheduler-yearview-indicator-size, 3px ) !default;
-/// The top position of the days with events indicator of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-indicator-calc-offset-top: calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2) ) !default;
-/// The left position of the days with events indicator of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-indicator-calc-offset-left: calc( 50% - (#{$kendo-scheduler-yearview-indicator-size} / 2) ) !default;
-/// The border radius of the days with events indicator of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-indicator-border-radius: var( --kendo-scheduler-yearview-indicator-border-radius, 50% ) !default;
-/// The background color of the days with events indicator of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-indicator-bg: var( --kendo-scheduler-yearview-indicator-bg, k-color(primary) ) !default;
-/// The background color of the selected days with events indicator of the year view in the Scheduler.
-/// @group scheduler
 $kendo-scheduler-yearview-indicator-selected-bg: var( --kendo-scheduler-yearview-indicator-selected-bg, k-color(app-surface) ) !default;
 
-/// The horizontal padding of the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-padding-x: var( --kendo-scheduler-tooltip-padding-x, k-spacing(2) ) !default;
-/// The vertical padding of the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-padding-y: var( --kendo-scheduler-tooltip-padding-y, $kendo-scheduler-tooltip-padding-x ) !default;
-/// The width of the border of the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-border-width: var( --kendo-scheduler-tooltip-border-width, 0 ) !default;
-/// The background color of the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-bg: var( --kendo-scheduler-tooltip-bg, k-color(app-surface) ) !default;
-/// The text color of the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-text: var( --kendo-scheduler-tooltip-text, k-color(subtle) ) !default;
-/// The border color of the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-border: var( --kendo-scheduler-tooltip-border, null ) !default;
-/// The shadow of the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-shadow: var( --kendo-scheduler-tooltip-shadow, k-elevation(2) ) !default;
 
-/// The vertical margin of the Scheduler Tooltip title.
-/// @group scheduler
 $kendo-scheduler-tooltip-title-margin-y: var( --kendo-scheduler-tooltip-title-margin-y, k-spacing(3) ) !default;
-/// The font size of the month inside the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-month-font-size: var( --kendo-scheduler-tooltip-month-font-size, var(--kendo-font-size-sm) ) !default;
-/// The font size of the day inside the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-day-font-size: var( --kendo-scheduler-tooltip-day-font-size, calc( var(--kendo-font-size-sm) * 2 ) ) !default;
 
-/// The max height of the events inside the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-events-max-height: var( --kendo-scheduler-tooltip-events-max-height, 250px ) !default;
-/// The spacing between the events inside the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-events-gap: var( --kendo-scheduler-tooltip-events-gap, k-spacing(2) ) !default;
 
-/// The horizontal padding of the events inside the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-event-padding-x: var( --kendo-scheduler-tooltip-event-padding-x, $kendo-scheduler-event-padding-x ) !default;
-/// The vertical padding of the events inside the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-event-padding-y: var( --kendo-scheduler-tooltip-event-padding-y, $kendo-scheduler-event-padding-y ) !default;
-/// The border radius of the events inside the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-event-border-radius: var( --kendo-scheduler-tooltip-event-border-radius, $kendo-scheduler-event-border-radius ) !default;
-/// The spacing between the events items inside the Scheduler Tooltip.
-/// @group scheduler
 $kendo-scheduler-tooltip-event-gap: var( --kendo-scheduler-tooltip-event-gap, k-spacing(0.5) ) !default;
 
 /// The color of the Scheduler Tooltip callout.

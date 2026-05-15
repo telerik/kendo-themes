@@ -1,30 +1,66 @@
 // Adaptive
+/// The background color of the Adaptive component.
+/// @group adaptive
 $kendo-adaptive-bg: null !default;
+/// The text color of the Adaptive component.
+/// @group adaptive
 $kendo-adaptive-text: null !default;
+/// The border color of the Adaptive component.
+/// @group adaptive
 $kendo-adaptive-border: null !default;
 
+/// The background color of the Adaptive content.
+/// @group adaptive
 $kendo-adaptive-content-bg: null !default;
+/// The text color of the Adaptive content.
+/// @group adaptive
 $kendo-adaptive-content-text: null !default;
 
+/// The background color of the Adaptive menu.
+/// @group adaptive
 $kendo-adaptive-menu-bg: null !default;
+/// The text color of the Adaptive menu.
+/// @group adaptive
 $kendo-adaptive-menu-text: null !default;
 
+/// The text color of the Adaptive menu clear button.
+/// @group adaptive
 $kendo-adaptive-menu-clear-text: null !default;
 
+/// The border color of the Adaptive menu item.
+/// @group adaptive
 $kendo-adaptive-menu-item-border: null !default;
+/// The text color of the Adaptive menu title.
+/// @group adaptive
 $kendo-adaptive-menu-title-text: null !default;
 
+/// The width of the border around the Adaptive component.
+/// @group adaptive
 $kendo-adaptive-border-width: null !default;
+/// The font family of the Adaptive component.
+/// @group adaptive
 $kendo-adaptive-font-family: null !default;
+/// The font size of the Adaptive component.
+/// @group adaptive
 $kendo-adaptive-font-size: null !default;
+/// The line height of the Adaptive component.
+/// @group adaptive
 $kendo-adaptive-line-height: null !default;
 
 
 // Adaptive Grid
+/// The text color of the Adaptive Grid sort indicator.
+/// @group adaptive
 $kendo-adaptive-grid-sort-text: null !default;
 
 
 // Adaptive Scheduler
+/// The text color of the current date in the Adaptive Scheduler.
+/// @group adaptive
 $kendo-adaptive-scheduler-current-text: null !default;
+/// The base text color of the Adaptive Scheduler.
+/// @group adaptive
 $kendo-adaptive-scheduler-base-text: null !default;
+/// The subtle text color of the Adaptive Scheduler.
+/// @group adaptive
 $kendo-adaptive-scheduler-subtle-text: null !default;
