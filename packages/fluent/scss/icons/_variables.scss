@@ -1,48 +1,21 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The default size of the Icon.
-/// @group icon
-/// @role default
 $kendo-icon-default-size: "md" !default;
 
-/// The default size of the Icons.
-/// @group icon
 $kendo-icon-size: 1rem !default;
-/// The xs size of the Icon.
-/// @group icon
 $kendo-icon-size-xs: calc( var( --kendo-icon-size, 1rem ) * .75 ) !default;
-/// The sm size of the Icon.
-/// @group icon
 $kendo-icon-size-sm: calc( var( --kendo-icon-size-sm, 1rem ) * .875 ) !default;
-/// The md size of the Icon.
-/// @group icon
 $kendo-icon-size-md: 1rem !default;
-/// The lg size of the Icon.
-/// @group icon
 $kendo-icon-size-lg: calc( var( --kendo-icon-size-lg, 1rem ) * 1.25 ) !default;
-/// The xl size of the Icon.
-/// @group icon
 $kendo-icon-size-xl: calc( var( --kendo-icon-size, 1rem ) * 1.5 ) !default;
-/// The xxl size of the Icon.
-/// @group icon
 $kendo-icon-size-xxl: calc( var( --kendo-icon-size-xxl, 1rem ) * 2 ) !default;
-/// The xxxl size of the Icon.
-/// @group icon
 $kendo-icon-size-xxxl: calc( var( --kendo-icon-size-xxxl, 1rem ) * 3 ) !default;
 
-/// The spacing around the Icons.
-/// @group icon
 $kendo-icon-spacing: k-spacing(2) !default;
 
-/// The padding of the action Icons container.
-/// @group icon
 $kendo-icon-padding: k-spacing(1) !default;
-/// The color of accent icons.
-/// @group icon
 $kendo-accent-icon-color: var( --kendo-accent-icon-color, #87A7FF ) !default;
-/// The color of action icons.
-/// @group icon
 $kendo-action-icon-color: var( --kendo-action-icon-color, #{k-color( primary-on-surface )} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/icons/_variables.scss" with (

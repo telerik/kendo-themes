@@ -1,54 +1,23 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The default size of the ColorPalette.
-/// @group color-palette
-/// @role default
 $kendo-color-palette-default-size: "md" !default;
 
-/// The font family of the ColorPalette.
-/// @group color-palette
 $kendo-color-palette-font-family: var( --kendo-color-palette-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the ColorPalette.
-/// @group color-palette
 $kendo-color-palette-font-size: var( --kendo-color-palette-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the ColorPalette.
-/// @group color-palette
 $kendo-color-palette-line-height: var( --kendo-color-palette-line-height, 0 ) !default;
 
-/// The width of the ColorPalette tile.
-/// @group color-palette
 $kendo-color-palette-tile-width: k-spacing(6) !default;
-/// The height of the ColorPalette tile.
-/// @group color-palette
 $kendo-color-palette-tile-height: var( --kendo-color-palette-tile-height, #{$kendo-color-palette-tile-width} ) !default;
-/// The width of the small ColorPalette tile.
-/// @group color-palette
 $kendo-color-palette-sm-tile-width: var( --kendo-color-palette-sm-tile-width, #{k-spacing(5.5)} ) !default;
-/// The height of the small ColorPalette tile.
-/// @group color-palette
 $kendo-color-palette-sm-tile-height: var( --kendo-color-palette-sm-tile-height, #{$kendo-color-palette-sm-tile-width} ) !default;
-/// The width of the medium ColorPalette tile.
-/// @group color-palette
 $kendo-color-palette-md-tile-width: var( --kendo-color-palette-md-tile-width, #{$kendo-color-palette-tile-width} ) !default;
-/// The height of the medium ColorPalette tile.
-/// @group color-palette
 $kendo-color-palette-md-tile-height: var( --kendo-color-palette-md-tile-height, #{$kendo-color-palette-tile-height} ) !default;
-/// The width of the large ColorPalette tile.
-/// @group color-palette
 $kendo-color-palette-lg-tile-width: var( --kendo-color-palette-lg-tile-width, #{k-spacing(8)} ) !default;
-/// The height of the large ColorPalette tile.
-/// @group color-palette
 $kendo-color-palette-lg-tile-height: var( --kendo-color-palette-lg-tile-height, #{$kendo-color-palette-lg-tile-width} ) !default;
 
-/// The shadow of the ColorPalette focused tile.
-/// @group color-palette
 $kendo-color-palette-tile-focus-shadow: var( --kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px #{k-color(border-alt)}, inset 0 0 0 3px #{k-color(app-surface)} ) !default;
-/// The shadow of the ColorPalette hovered tile.
-/// @group color-palette
 $kendo-color-palette-tile-hover-shadow: var( --kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px #{k-color(primary)}, inset 0 0 0 3px #{k-color(app-surface)} ) !default;
-/// The shadow of the ColorPalette selected tile.
-/// @group color-palette
 $kendo-color-palette-tile-selected-shadow: var( --kendo-color-palette-tile-selected-shadow, inset 0 0 0 3px #{k-color(primary)}, inset 0 0 0 5px #{k-color(app-surface)} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/colorpalette/_variables.scss" with (

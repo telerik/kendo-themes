@@ -2,40 +2,17 @@
 @use "../core/z-index/index.scss" as *;
 @use "../core/_index.scss" as *;
 
-/// The default theme color of the AppBar.
-/// @group appbar
-/// @role default
 $kendo-appbar-default-theme-color: "base" !default;
 
-/// The horizontal margin of the AppBar.
-/// @group appbar
 $kendo-appbar-margin-x: var( --kendo-appbar-margin-x, k-spacing(0) ) !default;
-/// The vertical margin of the AppBar.
-/// @group appbar
 $kendo-appbar-margin-y: var( --kendo-appbar-margin-y, k-spacing(0) ) !default;
-/// The horizontal padding of the AppBar.
-/// @group appbar
 $kendo-appbar-padding-x: var( --kendo-appbar-padding-x, k-spacing(5) ) !default;
-/// The vertical padding of the AppBar.
-/// @group appbar
 $kendo-appbar-padding-y: var( --kendo-appbar-padding-y, k-spacing(3.5) ) !default;
-/// The width of the border around the AppBar.
-/// @group appbar
 $kendo-appbar-border-width: var( --kendo-appbar-border-width, 0px ) !default;
-/// The border radius of the AppBar.
-/// @group appbar
 $kendo-appbar-border-radius: null !default;
-/// The z-index of the AppBar.
-/// @group appbar
 $kendo-appbar-zindex: var( --kendo-appbar-zindex, k-z-index("banner") ) !default;
-/// The font family of the AppBar.
-/// @group appbar
 $kendo-appbar-font-family: var( --kendo-appbar-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the AppBar.
-/// @group appbar
 $kendo-appbar-font-size: var( --kendo-appbar-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the AppBar.
-/// @group appbar
 $kendo-appbar-line-height: var( --kendo-appbar-line-height, var(--kendo-line-height) ) !default;
 
 /// The spacing between the AppBar sections.

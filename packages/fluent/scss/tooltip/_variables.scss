@@ -2,65 +2,33 @@
 @use "./_functions.scss" as *;
 @use "../core/_index.scss" as *;
 
-/// The border radius of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-border-radius: var( --kendo-tooltip-border-radius, #{k-border-radius(md)} ) !default;
-/// The horizontal padding of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-padding-x: var( --kendo-tooltip-padding-x, #{k-spacing(3)} ) !default;
-/// The vertical padding of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-padding-y: var( --kendo-tooltip-padding-y, #{k-spacing(1.5)} ) !default;
-/// The width of the border around the Tooltip.
-/// @group tooltip
 $kendo-tooltip-border-width: var( --kendo-tooltip-border-width, 0px ) !default;
-/// The font family of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-font-family: var( --kendo-tooltip-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-font-size: var( --kendo-tooltip-font-size, var(--kendo-font-size-sm) ) !default;
-/// The line height of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-line-height: var( --kendo-tooltip-line-height, var(--kendo-line-height-lg) ) !default;
 
-/// The font size of the Tooltip title.
-/// @group tooltip
 $kendo-tooltip-title-font-size: var( --kendo-tooltip-title-font-size, calc( var(--kendo-font-size-sm) * 1.25 ) ) !default;
-/// The line height of the Tooltip title.
-/// @group tooltip
 $kendo-tooltip-title-line-height: var( --kendo-tooltip-title-line-height, var( --kendo-line-heigh-lg, normal ) ) !default;
 /// The margin of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-margin: var( --kendo-tooltip-title-margin, #{k-spacing(1)} ) !default;
 
-/// The size of the Tooltip callout.
-/// @group tooltip
 $kendo-tooltip-callout-size: var( --kendo-tooltip-callout-size, #{k-spacing(2)} ) !default;
 
-/// The default background of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-bg: var( --kendo-tooltip-bg, #{k-color(app-surface)} ) !default;
-/// The default text color of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-text: var( --kendo-tooltip-text, #{k-color(on-app-surface)} ) !default;
-/// The default border color of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-border: var( --kendo-tooltip-border, transparent ) !default;
-/// The box-shadow of the Tooltip.
-/// @group tooltip
 $kendo-tooltip-shadow: var( --kendo-tooltip-shadow, k-elevation(2) ) !default;
 
 /// The text color of the Tooltip button.
 /// @group tooltip
 $kendo-tooltip-button-text: var( --kendo-tooltip-button-text, #{k-color(subtle)} ) !default;
 
-/// The theme colors map for the Tooltip.
-/// @group tooltip
 $kendo-tooltip-theme-colors: ("base", "info", "success", "warning", "error", "inverse") !default;
 
-/// The generated theme colors map for the Tooltip.
-/// @group tooltip
 $kendo-tooltip-theme: tooltip-theme( $kendo-tooltip-theme-colors ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/tooltip/_variables.scss" with (

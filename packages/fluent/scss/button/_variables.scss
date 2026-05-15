@@ -3,93 +3,39 @@
 @use "../core/_index.scss" as *;
 
 
-/// The default theme color of the Button.
-/// @group button
-/// @role default
 $kendo-button-default-theme-color: "base" !default;
-/// The default fill mode of the Button.
-/// @group button
-/// @role default
 $kendo-button-default-fill-mode: "solid" !default;
-/// The default roundness of the Button.
-/// @group button
-/// @role default
 $kendo-button-default-roundness: "md" !default;
-/// The default size of the Button.
-/// @group button
-/// @role default
 $kendo-button-default-size: "md" !default;
 
-/// The width of the border around the Button.
-/// @group button
 $kendo-button-border-width: var( --kendo-button-border-width, 1px ) !default;
 
-/// The border radius of the Button.
-/// @group button
 $kendo-button-border-radius: null !default;
 
-/// The spacing between icon and text inside the Button.
-/// @group button
 $kendo-button-gap: k-spacing(2) !default;
 
-/// The horizontal padding of the xsmall Button.
-/// @group button
 $kendo-button-xs-padding-x: var( --kendo-button-xs-padding-x, k-spacing(1) ) !default;
-/// The horizontal padding of the small Button.
-/// @group button
 $kendo-button-sm-padding-x: var( --kendo-button-sm-padding-x, k-spacing(2) ) !default;
-/// The horizontal padding of the medium Button.
-/// @group button
 $kendo-button-md-padding-x: var( --kendo-button-md-padding-x, k-spacing(3) ) !default;
-/// The horizontal padding of the large Button.
-/// @group button
 $kendo-button-lg-padding-x: var( --kendo-button-lg-padding-x, k-spacing(4) ) !default;
 
-/// The vertical padding of the xsmall Button.
-/// @group button
 $kendo-button-xs-padding-y: calc(var( --kendo-button-xs-padding-y, #{k-spacing(0.5)} ) + 1px) !default;
-/// The vertical padding of the small Button.
-/// @group button
 $kendo-button-sm-padding-y: calc(var( --kendo-button-sm-padding-y, #{k-spacing(0.5)} ) + 1px) !default;
-/// The vertical padding of the medium Button.
-/// @group button
 $kendo-button-md-padding-y: calc(var( --kendo-button-md-padding-y, #{k-spacing(1)} ) + 1px) !default;
-/// The vertical padding of the large Button.
-/// @group button
 $kendo-button-lg-padding-y: calc(var( --kendo-button-lg-padding-y, #{k-spacing(2)} ) + 1px) !default;
 
-/// The font size of the xsmall Button.
-/// @group button
 $kendo-button-xs-font-size: var(--kendo-font-size-sm) !default;
-/// The font size of the small Button.
-/// @group button
 $kendo-button-sm-font-size: var(--kendo-font-size-sm) !default;
-/// The font size of the medium Button.
-/// @group button
 $kendo-button-md-font-size: var(--kendo-font-size) !default;
-/// The font size of the large Button.
-/// @group button
 $kendo-button-lg-font-size: var(--kendo-font-size-lg) !default;
 
-/// The line height used along with the $kendo-font-size variable of the xsmall Button.
-/// @group button
 $kendo-button-xs-line-height: var(--kendo-line-height-lg) !default;
-/// The line height used along with the $kendo-font-size variable of the small Button.
-/// @group button
 $kendo-button-sm-line-height: var(--kendo-line-height-lg) !default;
-/// The line height used along with the $kendo-font-size variable of the medium Button.
-/// @group button
 $kendo-button-md-line-height: var(--kendo-line-height) !default;
-/// The line height used along with the $kendo-font-size variable of the large Button.
-/// @group button
 $kendo-button-lg-line-height: var(--kendo-line-height-sm) !default;
 
-/// The font family of the Button.
-/// @group button
 $kendo-button-font-family: var(--kendo-font-family) !default;
 
-/// The font weight of the Button.
-/// @group button
 $kendo-button-font-weight: var(--kendo-font-weight-semibold) !default;
 
 $kendo-button-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
@@ -119,34 +65,16 @@ $kendo-button-flat-focus-offset: var( --kendo-button-flat-focus-offset, 1px ) !d
 /// @group button
 $kendo-button-link-focus-offset: var( --kendo-button-link-focus-offset, 0 ) !default;
 
-/// The opacity of the pulsing animation for the generating Button.
-/// @group button
 $kendo-button-pulsing-opacity: var( --kendo-button-pulsing-opacity, .6 ) !default;
 
-/// The base background of the Button.
-/// @group button
 $kendo-button-bg: var( --kendo-button-bg, k-color(base) ) !default;
-/// The base text color of the Button.
-/// @group button
 $kendo-button-text: var( --kendo-button-text, k-color(on-base) ) !default;
-/// The base border color of the Button.
-/// @group button
 $kendo-button-border: var( --kendo-button-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
-/// The base background gradient of the Button.
-/// @group button
 $kendo-button-gradient: linear-gradient( var( --kendo-button-gradient, transparent, transparent ) ) !default;
-/// The base shadow of the Button.
-/// @group button
 $kendo-button-shadow: var( --kendo-button-shadow, none ) !default;
 
-/// The base background of the hovered Button.
-/// @group button
 $kendo-button-hover-bg: var( --kendo-button-hover-bg, k-color(base-hover) ) !default;
-/// The base text color of the hovered Button.
-/// @group button
 $kendo-button-hover-text: var( --kendo-button-hover-text, k-color(on-base) ) !default;
-/// The base border color of the hovered Button.
-/// @group button
 $kendo-button-hover-border: var( --kendo-button-hover-border, color-mix( in srgb, k-color(border) 34%, transparent ) ) !default;
 
 /// The base border color of the focused Button.
@@ -156,24 +84,12 @@ $kendo-button-focus-border: var( --kendo-button-focus-border, k-color(border-alt
 /// @group button
 $kendo-button-focus-outline: var( --kendo-button-focus-outline, k-color(on-base) ) !default;
 
-/// The base background of the active Button.
-/// @group button
 $kendo-button-active-bg: var( --kendo-button-active-bg, k-color(base-active) ) !default;
-/// The base text color of the active Button.
-/// @group button
 $kendo-button-active-text: var( --kendo-button-active-text, k-color(on-base) ) !default;
-/// The base border color of the active Button.
-/// @group button
 $kendo-button-active-border: var( --kendo-button-active-border, $kendo-button-border ) !default;
 
-/// The base background of the disabled Button.
-/// @group button
 $kendo-button-disabled-bg: var( --kendo-button-disabled-bg, color-mix(in srgb, k-color(on-app-surface) 7%, transparent) ) !default;
-/// The base text color of the disabled Button.
-/// @group button
 $kendo-button-disabled-text: var( --kendo-button-disabled-text, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
-/// The base border color of the disabled Button.
-/// @group button
 $kendo-button-disabled-border: var( --kendo-button-disabled-border, color-mix(in srgb, k-color(on-app-surface) 14%, transparent) ) !default;
 
 /// The base background of the disabled outline Button.
@@ -196,8 +112,6 @@ $kendo-button-flat-disabled-text: var( --kendo-button-disabled-text, color-mix(i
 /// @group button
 $kendo-button-flat-disabled-border: var( --kendo-button-disabled-border, initial ) !default;
 
-/// The transition of the Button.
-/// @group button
 $kendo-button-transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid), opacity k-transition(rapid) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (

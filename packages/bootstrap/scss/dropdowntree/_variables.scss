@@ -1,18 +1,10 @@
 @use "../core/_index.scss" as *;
 // Dropdowntree
 
-/// The horizontal padding of the DropdownTree popup
-/// @group dropdowntree
 $kendo-dropdowntree-popup-padding-x: null !default;
-/// The vertical padding of the DropdownTree popup
-/// @group dropdowntree
 $kendo-dropdowntree-popup-padding-y: null !default;
 
-/// The horizontal padding of the DropdownTree check all
-/// @group dropdowntree
 $kendo-dropdowntree-check-all-padding-x: k-spacing(2) !default;
-/// The vertical padding of the DropdownTree check all
-/// @group dropdowntree
 $kendo-dropdowntree-check-all-padding-y: k-spacing(2) !default;
 
 

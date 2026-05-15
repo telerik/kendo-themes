@@ -4,51 +4,22 @@
 
 // AppBar
 
-/// The default theme color of the AppBar.
-/// @group appbar
-/// @role default
 $kendo-appbar-default-theme-color: "base" !default;
 
-/// The horizontal margin of the AppBar.
-/// @group appbar
 $kendo-appbar-margin-x: null !default;
-/// The vertical margin of the AppBar.
-/// @group appbar
 $kendo-appbar-margin-y: null !default;
-/// The horizontal padding of the AppBar.
-/// @group appbar
 $kendo-appbar-padding-x: k-spacing(2.5) !default;
-/// The vertical padding of the AppBar.
-/// @group appbar
 $kendo-appbar-padding-y: k-spacing(2.5) !default;
-/// The width of the border around the AppBar.
-/// @group appbar
 $kendo-appbar-border-width: 0px !default;
-/// The border radius of the AppBar.
-/// @group appbar
 $kendo-appbar-border-radius: k-border-radius(xl) !default;
-/// The z-index of the AppBar.
-/// @group appbar
 $kendo-appbar-zindex: k-z-index("banner") !default;
-/// The font family of the AppBar.
-/// @group appbar
 $kendo-appbar-font-family: var( --kendo-font-family, inherit ) !default;
-/// The font size of the AppBar.
-/// @group appbar
 $kendo-appbar-font-size: var( --kendo-font-size, inherit ) !default;
-/// The line height of the AppBar.
-/// @group appbar
 $kendo-appbar-line-height: var( --kendo-line-height, normal ) !default;
 
-/// The spacing between the AppBar sections.
-/// @group appbar
 $kendo-appbar-gap: k-spacing(2) !default;
 
-/// The box shadow of the AppBar.
-/// @group appbar
 $kendo-appbar-box-shadow: k-elevation(1) !default;
-/// The box shadow of the AppBar with bottom position.
-/// @group appbar
 $kendo-appbar-bottom-box-shadow: $kendo-appbar-box-shadow !default;
 
 @forward "@progress/kendo-theme-core/scss/components/appbar/_variables.scss" with (

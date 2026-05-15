@@ -1,21 +1,9 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The default theme color of the Badge.
-/// @group badge
-/// @role default
 $kendo-badge-default-theme-color: "primary" !default;
-/// The default fill mode of the Badge.
-/// @group badge
-/// @role default
 $kendo-badge-default-fill-mode: "solid" !default;
-/// The default size of the Badge.
-/// @group badge
-/// @role default
 $kendo-badge-default-size: "md" !default;
-/// The default roundness of the Badge.
-/// @group badge
-/// @role default
 $kendo-badge-default-roundness: "md" !default;
 
 /// The background color of the Badge.
@@ -28,62 +16,30 @@ $kendo-badge-text: var( --kendo-badge-text, k-color(on-app-surface) ) !default;
 /// @group badge
 $kendo-badge-border: var( --kendo-badge-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
 
-/// The border width of the Badge.
-/// @group badge
 $kendo-badge-border-width: var( --kendo-badge-border-width, 1px ) !default;
 
 /// The font weight of the Badge.
 /// @group badge
 $kendo-badge-font-weight: var( --kendo-badge-font-weight, var(--kendo-font-weight-semibold) ) !default;
 
-/// Horizontal padding of the small Badge.
-/// @group badge
 $kendo-badge-sm-padding-x: k-spacing(1.5) !default;
-/// Horizontal padding of the medium Badge.
-/// @group badge
 $kendo-badge-md-padding-x: var( --kendo-badge-padding-x, k-spacing(1.5) ) !default;
-/// Horizontal padding of the large Badge.
-/// @group badge
 $kendo-badge-lg-padding-x: k-spacing(1.5) !default;
 
-/// Vertical padding of the small Badge.
-/// @group badge
 $kendo-badge-sm-padding-y: k-spacing(0.5) !default;
-/// Vertical padding of the medium Badge.
-/// @group badge
 $kendo-badge-md-padding-y: var( --kendo-badge-padding-y, k-spacing(1) ) !default;
-/// Vertical padding of the large Badge.
-/// @group badge
 $kendo-badge-lg-padding-y: k-spacing(1.5) !default;
 
-/// The font size of the small Badge.
-/// @group badge
 $kendo-badge-sm-font-size: var(--kendo-font-size-xs) !default;
-/// The font size of the medium Badge.
-/// @group badge
 $kendo-badge-md-font-size: var( --kendo-badge-font-size, var(--kendo-font-size-xs) ) !default;
-/// The font size of the large Badge.
-/// @group badge
 $kendo-badge-lg-font-size: var(--kendo-font-size-sm) !default;
 
-/// The line height used along with the $kendo-font-size variable of the small Badge.
-/// @group badge
 $kendo-badge-sm-line-height: var(--kendo-line-height-xs) !default;
-/// The line height used along with the $kendo-font-size variable of the medium Badge.
-/// @group badge
 $kendo-badge-md-line-height: var( --kendo-badge-line-height, var(--kendo-line-height-xs) ) !default;
-/// The line height used along with the $kendo-font-size variable of the large Badge.
-/// @group badge
 $kendo-badge-lg-line-height: var(--kendo-line-height-lg) !default;
 
-/// The calculated minimum width of the small circular Badge.
-/// @group badge
 $kendo-badge-sm-min-width: calc( #{$kendo-badge-sm-line-height} * 1em + #{$kendo-badge-sm-padding-y} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
-/// The calculated minimum width of the medium circular Badge.
-/// @group badge
 $kendo-badge-md-min-width: calc( #{$kendo-badge-md-line-height} * 1em + #{$kendo-badge-md-padding-y} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
-/// The calculated minimum width of the large circular Badge.
-/// @group badge
 $kendo-badge-lg-min-width: calc( #{$kendo-badge-lg-line-height} * 1em + #{$kendo-badge-lg-padding-y} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
 
 

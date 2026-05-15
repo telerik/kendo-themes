@@ -2,83 +2,38 @@
 @use "../core/_index.scss" as *;
 @use "../list/_variables.scss" as *;
 
-/// The default size of the Table.
-/// @group table
-/// @role default
 $kendo-table-default-size: "md" !default;
 
-/// The width of the table border.
-/// @group table
 $kendo-table-border-width: var( --kendo-table-border-width, 1px ) !default;
 
-/// The width of vertical border of table cells.
-/// @group table
 $kendo-table-cell-vertical-border-width: var( --kendo-table-cell-vertical-border-width, 0px ) !default;
-/// The width of horizontal border of table cells.
-/// @group table
 $kendo-table-cell-horizontal-border-width: var( --kendo-table-cell-horizontal-border-width, 1px ) !default;
-/// The horizontal padding of the cells in the table for small size.
-/// @group table
 $kendo-table-sm-cell-padding-x: var( --kendo-table-sm-cell-padding-x, #{k-spacing(2)} ) !default;
-/// The vertical padding of the cells in the table for small size.
-/// @group table
 $kendo-table-sm-cell-padding-y: var( --kendo-table-sm-cell-padding-y, #{k-spacing(2)} ) !default;
-/// The horizontal padding of the cells in the table for medium size.
-/// @group table
 $kendo-table-md-cell-padding-x: var( --kendo-table-md-cell-padding-x, #{k-spacing(2)} ) !default;
-/// The vertical padding of the cells in the table for medium size.
-/// @group table
 $kendo-table-md-cell-padding-y: var( --kendo-table-md-cell-padding-y, #{k-spacing(2.5)} ) !default;
-/// The horizontal padding of the cells in the table for large size.
-/// @group table
 $kendo-table-lg-cell-padding-x: var( --kendo-table-lg-cell-padding-x, #{k-spacing(2)} ) !default;
-/// The vertical padding of the cells in the table for large size.
-/// @group table
 $kendo-table-lg-cell-padding-y: var( --kendo-table-lg-cell-padding-y, #{k-spacing(3)} ) !default;
 
-/// The font size of the Table for small size.
-/// @group table
 $kendo-table-sm-font-size: var( --kendo-table-sm-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the Table for small size.
-/// @group table
 $kendo-table-sm-line-height: var( --kendo-table-sm-line-height, var(--kendo-line-height) ) !default;
 
-/// The font size of the Table for medium size.
-/// @group table
 $kendo-table-md-font-size: var( --kendo-table-md-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the Table for medium size.
-/// @group table
 $kendo-table-md-line-height: var( --kendo-table-md-line-height, var(--kendo-line-height) ) !default;
 
-/// The font size of the Table for large size.
-/// @group table
 $kendo-table-lg-font-size: var( --kendo-table-lg-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the Table for large size.
-/// @group table
 $kendo-table-lg-line-height: var( --kendo-table-lg-line-height, var(--kendo-line-height) ) !default;
 
 /// Font weight of the table header cells.
 /// @group table
 $kendo-table-header-font-weight: var( --kendo-table-header-font-weight, var(--kendo-font-weight-normal) ) !default;
 
-/// Background color of tables.
-/// @group table
 $kendo-table-bg: var( --kendo-table-bg, #{k-color(surface-alt)} ) !default;
-/// Text color of tables.
-/// @group table
 $kendo-table-text: var( --kendo-table-text, #{k-color(on-app-surface)} ) !default;
-/// Border color of tables.
-/// @group table
 $kendo-table-border: var( --kendo-table-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
-/// Background color of table headers.
-/// @group table
 $kendo-table-header-bg: var( --kendo-table-header-bg, #{$kendo-table-bg} ) !default;
-/// Text color of table headers.
-/// @group table
 $kendo-table-header-text: var( --kendo-table-header-text, #{k-color(on-app-surface)} ) !default;
-/// Border color of table headers.
-/// @group table
 $kendo-table-header-border: var( --kendo-table-header-border, #{$kendo-table-border} ) !default;
 
 /// Text color of the sticky table header.
@@ -94,24 +49,12 @@ $kendo-table-sticky-header-border: var( --kendo-table-sticky-header-border, #{$k
 /// @group table
 $kendo-table-sticky-header-shadow: var( --kendo-table-sticky-header-shadow, #{$kendo-list-header-shadow} ) !default;
 
-/// Background color of table footers.
-/// @group table
 $kendo-table-footer-bg: var( --kendo-table-footer-bg, #{$kendo-table-header-bg} ) !default;
-/// Text color of table footers.
-/// @group table
 $kendo-table-footer-text: var( --kendo-table-footer-text, #{$kendo-table-header-text} ) !default;
-/// Border color of table footers.
-/// @group table
 $kendo-table-footer-border: var( --kendo-table-footer-border, #{$kendo-table-header-border} ) !default;
 
-/// Background color of group rows in table.
-/// @group table
 $kendo-table-group-row-bg: var( --kendo-table-group-row-bg, #{$kendo-table-header-bg} ) !default;
-/// Text color of group rows in table.
-/// @group table
 $kendo-table-group-row-text: var( --kendo-table-group-row-text, #{$kendo-table-header-text} ) !default;
-/// Border color of group rows in table.
-/// @group table
 $kendo-table-group-row-border: var( --kendo-table-group-row-border, #{$kendo-table-header-border} ) !default;
 
 /// Text color of group label in table.
@@ -121,62 +64,28 @@ $kendo-table-group-label-text: var( --kendo-table-group-label-text, #{$kendo-lis
 /// @group table
 $kendo-table-group-label-bg: var( --kendo-table-group-label-bg, #{$kendo-list-text} ) !default;
 
-/// Background color of alternating rows in table.
-/// @group table
 $kendo-table-alt-row-bg: var( --kendo-table-alt-row-bg, initial ) !default;
-/// Text color of alternating rows in table.
-/// @group table
 $kendo-table-alt-row-text: var( --kendo-table-alt-row-text, #{$kendo-table-text} ) !default;
-/// Border color of alternating rows in table.
-/// @group table
 $kendo-table-alt-row-border: var( --kendo-table-alt-row-border, #{$kendo-table-border} ) !default;
 
-/// Background color of hovered rows in table.
-/// @group table
 $kendo-table-hover-bg: var( --kendo-table-hover-bg, #{color-mix(in srgb, k-color(on-app-surface) 5%, transparent)} ) !default;
-/// Text color of hovered rows in table.
-/// @group table
 $kendo-table-hover-text: var( --kendo-table-hover-text, #{k-color(on-base)} ) !default;
-/// Border color of hovered rows in table.
-/// @group table
 $kendo-table-hover-border: var( --kendo-table-hover-border, #{$kendo-table-border} ) !default;
 
-/// Background color of focused rows in table.
-/// @group table
 $kendo-table-focus-bg: var( --kendo-table-focus-bg, inherit ) !default;
-/// Text color of focused rows in table.
-/// @group table
 $kendo-table-focus-text: var( --kendo-table-focus-text, inherit ) !default;
-/// Border color of focused rows in table.
-/// @group table
 $kendo-table-focus-border: var( --kendo-table-focus-border, inherit ) !default;
-/// Box shadow of focused rows in table.
-/// @group table
 $kendo-table-focus-shadow: var( --kendo-table-focus-shadow, #{$kendo-list-item-focus-shadow} ) !default;
 
-/// Background color of selected rows in table.
-/// @group table
 $kendo-table-selected-bg: var( --kendo-table-selected-bg, #{color-mix(in srgb, k-color(primary) 8%, transparent)} ) !default;
-/// Text color of selected rows in table.
-/// @group table
 $kendo-table-selected-text: var( --kendo-table-selected-text, #{$kendo-table-text} ) !default;
-/// Border color of selected rows in table.
-/// @group table
 $kendo-table-selected-border: var( --kendo-table-selected-border, #{$kendo-table-border} ) !default;
 
-/// Background color of highlighted rows in table.
-/// @group table
 $kendo-table-highlighted-bg: var( --kendo-table-highlighted-bg, #{color-mix(in srgb, k-color(warning) 8%, transparent)} ) !default;
-/// The font weight of highlighted rows in table.
-/// @group table
 $kendo-table-highlighted-font-weight: var( --kendo-table-highlighted-font-weight, var(--kendo-font-weight-semibold) ) !default;
 
-/// Background color of selected highlighted rows in table.
-/// @group table
 $kendo-table-selected-highlighted-bg: var( --kendo-table-selected-highlighted-bg, #{color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 23%, transparent)} ) !default;
 
-/// The box shadow of the row spanned cells.
-/// @group table
 $kendo-table-cell-row-span-shadow: var( --kendo-table-cell-row-span-shadow, inset 0 0 0 1px #{$kendo-table-border} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/table/_variables.scss" with (

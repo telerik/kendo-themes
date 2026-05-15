@@ -1,24 +1,66 @@
+/// The border radius of the Bubble.
+/// @group bubble
 $kendo-bubble-border-radius: null !default;
+/// The small border radius of the Bubble.
+/// @group bubble
 $kendo-bubble-border-radius-sm: null !default;
+/// The vertical padding of the Bubble.
+/// @group bubble
 $kendo-bubble-padding-y: null !default;
+/// The horizontal padding of the Bubble.
+/// @group bubble
 $kendo-bubble-padding-x: null !default;
+/// The border width of the Bubble.
+/// @group bubble
 $kendo-bubble-border-width: null !default;
+/// The border style of the Bubble.
+/// @group bubble
 $kendo-bubble-border-style: null !default;
+/// The line height of the Bubble.
+/// @group bubble
 $kendo-bubble-line-height: null !default;
 
+/// The text color of the Bubble.
+/// @group bubble
 $kendo-bubble-text: null !default;
+/// The background color of the Bubble.
+/// @group bubble
 $kendo-bubble-bg: null !default;
+/// The border color of the Bubble.
+/// @group bubble
 $kendo-bubble-border: null !default;
+/// The shadow of the Bubble.
+/// @group bubble
 $kendo-bubble-shadow: null !default;
 
+/// The background color of the hover Bubble.
+/// @group bubble
 $kendo-bubble-hover-bg: null !default;
+/// The border color of the active Bubble.
+/// @group bubble
 $kendo-bubble-hover-border: null !default;
+/// The background color of the active Bubble.
+/// @group bubble
 $kendo-bubble-active-bg: null !default;
+/// The border color of the active Bubble.
+/// @group bubble
 $kendo-bubble-active-border: null !default;
+/// The background color of the focused Bubble.
+/// @group bubble
 $kendo-bubble-focus-bg: null !default;
+/// The border color of the focused Bubble.
+/// @group bubble
 $kendo-bubble-focus-border: null !default;
+/// The box shadow of the focused Bubble.
+/// @group bubble
 $kendo-bubble-focus-shadow: null !default;
 
+/// The spacing between content and icon in expandable Bubble.
+/// @group bubble
 $kendo-bubble-expandable-spacing: null !default;
+/// The horizontal padding of the expandable Bubble icon.
+/// @group bubble
 $kendo-bubble-expandable-icon-padding-x: null !default;
+/// The vertical padding of the expandable Bubble icon.
+/// @group bubble
 $kendo-bubble-expandable-icon-padding-y: null !default;

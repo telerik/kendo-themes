@@ -3,127 +3,53 @@
 @use "../button/_variables.scss" as *;
 @use "../dropzone/_variables.scss" as *;
 
-/// The border width of the PDFViewer.
-/// @group pdf-viewer
 $kendo-pdf-viewer-border-width: var( --kendo-pdf-viewer-border-width, 1px ) !default;
-/// The border radius of the PDFViewer.
-/// @group pdf-viewer
 $kendo-pdf-viewer-border-radius: var( --kendo-pdf-viewer-border-radius, null ) !default;
-/// The font family of the PDFViewer.
-/// @group pdf-viewer
 $kendo-pdf-viewer-font-family: var( --kendo-pdf-viewer-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the PDFViewer.
-/// @group pdf-viewer
 $kendo-pdf-viewer-font-size: var( --kendo-pdf-viewer-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the PDFViewer.
-/// @group pdf-viewer
 $kendo-pdf-viewer-line-height: var( --kendo-pdf-viewer-line-height, var(--kendo-line-height) ) !default;
-/// The background color of the PDFViewer.
-/// @group pdf-viewer
 $kendo-pdf-viewer-bg: var( --kendo-pdf-viewer-bg, #{k-color(surface-alt)} ) !default;
-/// The text color of the PDFViewer.
-/// @group pdf-viewer
 $kendo-pdf-viewer-text: var( --kendo-pdf-viewer-text, #{k-color(on-app-surface)} ) !default;
-/// The border color of the PDFViewer.
-/// @group pdf-viewer
 $kendo-pdf-viewer-border: var( --kendo-pdf-viewer-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
-/// The background color of the PDFViewer canvas.
-/// @group pdf-viewer
 $kendo-pdf-viewer-canvas-bg: var( --kendo-pdf-viewer-canvas-bg, #{k-color(surface)} ) !default;
-/// Text color of the PDF viewer canvas.
-/// @group pdf-viewer
 $kendo-pdf-viewer-canvas-text: var( --kendo-pdf-viewer-canvas-text, #{k-color(on-app-surface)} ) !default;
-/// The border color of the PDFViewer canvas.
-/// @group pdf-viewer
 $kendo-pdf-viewer-canvas-border: var( --kendo-pdf-viewer-canvas-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
-/// The spacing of the PDFViewer page.
-/// @group pdf-viewer
 $kendo-pdf-viewer-page-spacing: var( --kendo-pdf-viewer-page-spacing, #{k-spacing(7.5)} ) !default;
-/// The background color of the PDFViewer page.
-/// @group pdf-viewer
 $kendo-pdf-viewer-page-bg: var( --kendo-pdf-viewer-page-bg, #{k-color(surface-alt)} ) !default;
-/// The text color of the PDFViewer page.
-/// @group pdf-viewer
 $kendo-pdf-viewer-page-text: var( --kendo-pdf-viewer-page-text, #{k-color(on-app-surface)} ) !default;
-/// The border color of the PDFViewer page.
-/// @group pdf-viewer
 $kendo-pdf-viewer-page-border: var( --kendo-pdf-viewer-page-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
-/// The shadow of the PDFViewer page.
-/// @group pdf-viewer
 $kendo-pdf-viewer-page-shadow: var( --kendo-pdf-viewer-page-shadow, k-elevation(1) ) !default;
 
-/// The horizontal padding of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-padding-x: k-spacing(3) !default;
-/// The vertical padding of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-padding-y: $kendo-pdf-viewer-search-panel-padding-x !default;
-/// The spacing of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-spacing: var( --kendo-pdf-viewer-search-panel-spacing, #{k-spacing(2)} ) !default;
-/// The border width of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-border-width: var( --kendo-pdf-viewer-search-panel-border-width, 1px ) !default;
-/// The border radius of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-border-radius: var( --kendo-pdf-viewer-search-panel-border-radius, #{k-border-radius(md)} ) !default;
-/// The background color of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-bg: var( --kendo-pdf-viewer-search-panel-bg, #{k-color(surface-alt)} ) !default;
-/// The text color of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-text: var( --kendo-pdf-viewer-search-panel-text, #{k-color(on-app-surface)} ) !default;
-/// The border color of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-border: var( --kendo-pdf-viewer-search-panel-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
-/// The shadow of the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-shadow: var( --kendo-pdf-viewer-search-panel-shadow, none ) !default;
-/// The spacing of the matches container in the PDFViewer search panel.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-matches-spacing: var( --kendo-pdf-viewer-search-panel-matches-spacing, var( --kendo-icon-spacing, .5rem ) ) !default;
 /// The vertical margin of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-margin-y: var( --kendo-pdf-viewer-search-panel-margin-y ,calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 )) !default;
 
-/// The line height of the PDFViewer selection.
-/// @group pdf-viewer
 $kendo-pdf-viewer-selection-line-height: var( --kendo-pdf-viewer-selection-line-height, var(--kendo-line-height-sm) ) !default;
 
-/// The background color of the PDFViewer highlight.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-highlight-bg: var( --kendo-pdf-viewer-search-highlight-bg, #{k-color(on-app-surface)} ) !default;
-/// The background color of the PDFViewer highlight mark.
-/// @group pdf-viewer
 $kendo-pdf-viewer-search-highlight-mark-bg: var( --kendo-pdf-viewer-search-highlight-mark-bg, yellow ) !default;
 
-/// The text color of the PDFViewer icon.
-/// @group pdf-viewer
 $kendo-pdf-viewer-icon-text: var( --kendo-pdf-viewer-icon-text, #{$kendo-dropzone-icon-text} ) !default;
 
-/// The vertical padding of the PDFViewer popup.
-/// @group pdf-viewer
 $kendo-pdf-viewer-popup-padding-x: var( --kendo-pdf-viewer-popup-padding-x, #{k-spacing(2)} ) !default;
-/// The horizontal padding of the PDFViewer popup.
-/// @group pdf-viewer
 $kendo-pdf-viewer-popup-padding-y: var( --kendo-pdf-viewer-popup-padding-y, #{$kendo-pdf-viewer-popup-padding-x} ) !default;
 
-/// The border color of the PDFViewer selected highlight annotation.
-/// @group pdf-viewer
 $kendo-pdf-viewer-highlight-annotation-border: var( --kendo-pdf-viewer-highlight-annotation-border, #{k-color(primary)} ) !default;
-/// The background color of the PDFViewer hover highlight annotation.
-/// @group pdf-viewer
 $kendo-pdf-viewer-highlight-annotation-hover-border: var( --kendo-pdf-viewer-highlight-annotation-hover-border, #{k-color(primary-hover)} ) !default;
-/// The border color of the PDFViewer selected free text annotation.
-/// @group pdf-viewer
 $kendo-pdf-viewer-free-text-annotation-border: var( --kendo-pdf-viewer-free-text-annotation-border, #{k-color(primary)} ) !default;
-/// The placeholder text color of the PDFViewer free text annotation.
-/// @group pdf-viewer
 $kendo-pdf-viewer-free-text-annotation-placeholder-text: var( --kendo-pdf-viewer-free-text-annotation-placeholder-text, k-color(primary-on-subtle) ) !default;
-/// The text color of the PDFViewer free text annotation.
-/// @group pdf-viewer
 $kendo-pdf-viewer-free-text-annotation-text: var( --kendo-pdf-viewer-free-text-annotation-text, k-color(primary-on-subtle) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/pdf-viewer/_variables.scss" with (

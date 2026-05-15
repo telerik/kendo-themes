@@ -1,64 +1,34 @@
 @use "../core/_index.scss" as *;
 @use "../input/_variables.scss" as *;
 
-/// The transformation scale of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-scale: var(--kendo-floating-label-scale, 1) !default;
 
-/// The font size of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-font-size: var(--kendo-floating-label-font-size, var(--kendo-font-size)) !default;
 
-/// The maximum width of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-max-width: var(--kendo-floating-label-max-width, 90%) !default;
 
-/// The line height of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-line-height: var(--kendo-floating-label-line-height, var(--kendo-line-height)) !default;
 
-/// The height of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-height: calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} ) !default;
 
-/// The horizontal offset of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-offset-x: calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} ) !default;
 
-/// The vertical offset of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-offset-y: calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} ) !default;
 
-/// The transformation scale of the focused Floating Label.
-/// @group floating-label
 $kendo-floating-label-focus-scale: var(--kendo-floating-label-focus-scale, 1) !default;
 
-/// The horizontal offset of the focused Floating Label.
-/// @group floating-label
 $kendo-floating-label-focus-offset-x: var(--kendo-floating-label-focus-offset-x, 0) !default;
 
-/// The vertical offset of the focused Floating Label.
-/// @group floating-label
 $kendo-floating-label-focus-offset-y: var(--kendo-floating-label-focus-offset-y, 0) !default;
 
-/// The transition of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-transition: var(--kendo-floating-label-transition, k-transition(scale-in)) !default;
 
-/// The background color of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-bg: var(--kendo-floating-label-bg, inherit) !default;
 
-/// The text color of the Floating Label.
-/// @group floating-label
 $kendo-floating-label-text: var(--kendo-floating-label-text, inherit) !default;
 
-/// The background color of the focused Floating Label.
-/// @group floating-label
 $kendo-floating-label-focus-bg: var(--kendo-floating-label-focus-bg, inherit) !default;
 
-/// The text color of the focused Floating Label.
-/// @group floating-label
 $kendo-floating-label-focus-text: var(--kendo-floating-label-focus-text, inherit) !default;
 
 /// The invalid text color of the Floating Label.

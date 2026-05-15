@@ -1,56 +1,28 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The spacing between the ListBox elements.
-/// @group listbox
 $kendo-listbox-spacing: var( --kendo-listbox-spacing, #{k-spacing(2)} ) !default;
-/// The spacing between the ListBox buttons.
-/// @group listbox
 $kendo-listbox-button-spacing: var( --kendo-listbox-button-spacing, #{k-spacing(2)} ) !default;
-/// WThe width of the ListBox.
-/// @group listbox
 $kendo-listbox-width: var( --kendo-listbox-width, 10em ) !default;
 /// The height of the ListBox.
 /// @group listbox
 $kendo-listbox-height: var( --kendo-listbox-height, 200px ) !default;
-/// The width of the border around the ListBox.
-/// @group listbox
 $kendo-listbox-border-width: var( --kendo-listbox-border-width, 1px ) !default;
-/// The font family of the ListBox.
-/// @group listbox
 $kendo-listbox-font-family: var( --kendo-listbox-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the ListBox.
-/// @group listbox
 $kendo-listbox-font-size: var( --kendo-listbox-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the ListBox.
-/// @group listbox
 $kendo-listbox-line-height: var( --kendo-listbox-line-height, var(--kendo-line-height) ) !default;
 
-/// The text color of the ListBox.
-/// @group listbox
 $kendo-listbox-text: var( --kendo-listbox-text, #{k-color(on-app-surface)} ) !default;
-/// The background color of the ListBox.
-/// @group listbox
 $kendo-listbox-bg: var( --kendo-listbox-bg, #{k-color(surface-alt)} ) !default;
-/// The border color of the ListBox.
-/// @group listbox
 $kendo-listbox-border: var( --kendo-listbox-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
 
-/// The width of the ListBox drop hint.
-/// @group listbox
 $kendo-listbox-drop-hint-width: var( --kendo-listbox-drop-hint-width, 1px ) !default;
 /// The border color of the ListBox drop hint.
 /// @group listbox
 $kendo-listbox-drop-hint-border-color: var( --kendo-listbox-drop-hint-border-color, #{k-color(primary)} ) !default;
 
-/// The horizontal padding of the ListBox scroller.
-/// @group listbox
 $kendo-listbox-scroller-padding-x: null !default;
-/// The vertical padding of the ListBox scroller.
-/// @group listbox
 $kendo-listbox-scroller-padding-y: null !default;
-/// The border radius of the ListBox.
-/// @group listbox
 $kendo-listbox-border-radius: null !default;
 
 @forward "@progress/kendo-theme-core/scss/components/listbox/_variables.scss" with (

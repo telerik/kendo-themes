@@ -1,84 +1,33 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The default size of the TreeView.
-/// @group treeview
-/// @role default
 $kendo-treeview-default-size: "md" !default;
-/// The gap of the TreeView.
-/// @group treeview
 $kendo-treeview-gap: var( --kendo-treeview-gap, k-spacing(0.5) ) !default;
-/// The border radius of the TreeView.
-/// @group treeview
 $kendo-treeview-border-radius: var( --kendo-treeview-border-radius, k-border-radius(md) ) !default;
 
-/// The font family of the TreeView.
-/// @group treeview
 $kendo-treeview-font-family: var( --kendo-treeview-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the small TreeView.
-/// @group treeview
 $kendo-treeview-sm-font-size: var( --kendo-treeview-sm-font-size, var(--kendo-font-size-sm) ) !default;
-/// The font size of the medium TreeView.
-/// @group treeview
 $kendo-treeview-md-font-size: var( --kendo-treeview-md-font-size, var(--kendo-font-size) ) !default;
-/// The font size of the large TreeView.
-/// @group treeview
 $kendo-treeview-lg-font-size: var( --kendo-treeview-lg-font-size, var(--kendo-font-size-lg) ) !default;
-/// The line height of the small TreeView.
-/// @group treeview
 $kendo-treeview-sm-line-height: var( --kendo-treeview-sm-line-height, var(--kendo-line-height-lg) ) !default;
-/// The line height of the medium TreeView.
-/// @group treeview
 $kendo-treeview-md-line-height: var( --kendo-treeview-md-line-height, var(--kendo-line-height) ) !default;
-/// The line height of the large TreeView.
-/// @group treeview
 $kendo-treeview-lg-line-height: var( --kendo-treeview-lg-line-height, var(--kendo-line-height-sm) ) !default;
-/// The indentation of child groups in the TreeView.
-/// @group treeview
 $kendo-treeview-indent: var( --kendo-treeview-indent, k-spacing(6) ) !default;
 
-/// The horizontal padding of the small TreeView items.
-/// @group treeview
 $kendo-treeview-sm-item-padding-x: var( --kendo-treeview-sm-item-padding-x, k-spacing(2) ) !default;
-/// The horizontal padding of the medium TreeView items.
-/// @group treeview
 $kendo-treeview-md-item-padding-x: var( --kendo-treeview-md-item-padding-x, k-spacing(2) ) !default;
-/// The horizontal padding of the large TreeView items.
-/// @group treeview
 $kendo-treeview-lg-item-padding-x: var( --kendo-treeview-lg-item-padding-x, k-spacing(3.5) ) !default;
-/// The vertical padding of the small TreeView items.
-/// @group treeview
 $kendo-treeview-sm-item-padding-y: var( --kendo-treeview-sm-item-padding-y, k-spacing(1.5) ) !default;
-/// The vertical padding of the medium TreeView items.
-/// @group treeview
 $kendo-treeview-md-item-padding-y: var( --kendo-treeview-md-item-padding-y, k-spacing(1.5) ) !default;
-/// The vertical padding of the large TreeView items.
-/// @group treeview
 $kendo-treeview-lg-item-padding-y: var( --kendo-treeview-lg-item-padding-y, k-spacing(2) ) !default;
-/// The border width of the TreeView items.
-/// @group treeview
 $kendo-treeview-item-border-width: var( --kendo-treeview-item-border-width, 0 ) !default;
-/// The border radius of the TreeView items.
-/// @group treeview
 $kendo-treeview-item-border-radius: var( --kendo-treeview-item-border-radius, k-border-radius(md) ) !default;
 
-/// The horizontal padding of the checkbox in the small TreeView.
-/// @group treeview
 $kendo-treeview-sm-checkbox-padding-x: k-spacing(1) !default;
-/// The horizontal padding of the checkbox in the medium TreeView.
-/// @group treeview
 $kendo-treeview-md-checkbox-padding-x: k-spacing(1.5) !default;
-/// The horizontal padding of the checkbox in the large TreeView.
-/// @group treeview
 $kendo-treeview-lg-checkbox-padding-x: k-spacing(2) !default;
-/// The vertical padding of the checkbox in the small TreeView.
-/// @group treeview
 $kendo-treeview-sm-checkbox-padding-y: k-spacing(1) !default;
-/// The vertical padding of the checkbox in the medium TreeView.
-/// @group treeview
 $kendo-treeview-md-checkbox-padding-y: k-spacing(1.5) !default;
-/// The vertical padding of the checkbox in the large TreeView.
-/// @group treeview
 $kendo-treeview-lg-checkbox-padding-y: k-spacing(2) !default;
 
 /// The horizontal padding of the TreeViews' filter element.
@@ -89,14 +38,8 @@ $kendo-treeview-filter-padding-x: var( --kendo-treeview-filter-padding-x, k-spac
 $kendo-treeview-filter-padding-y: var( --kendo-treeview-filter-padding-y, k-spacing(2) ) !default;
 
 
-/// The background color of the TreeView.
-/// @group treeview
 $kendo-treeview-bg: var( --kendo-treeview-bg, transparent ) !default;
-/// The text color of the TreeView.
-/// @group treeview
 $kendo-treeview-text: var( --kendo-treeview-text, k-color(on-app-surface) ) !default;
-/// The border color of the TreeView.
-/// @group treeview
 $kendo-treeview-border: var( --kendo-treeview-border, inherit ) !default;
 
 /// The background color of the TreeView items.
@@ -109,32 +52,16 @@ $kendo-treeview-item-text: var( --kendo-treeview-item-text, k-color(on-app-surfa
 /// @group treeview
 $kendo-treeview-item-border: var( --kendo-treeview-item-border, inherit ) !default;
 
-/// The background color of hovered TreeView items.
-/// @group treeview
 $kendo-treeview-item-hover-bg: var( --kendo-treeview-item-hover-bg, color-mix(in srgb, k-color(on-app-surface) 5%, transparent) ) !default;
-/// The text color of hovered TreeView items.
-/// @group treeview
 $kendo-treeview-item-hover-text: var( --kendo-treeview-item-hover-text, k-color(on-app-surface) ) !default;
-/// The border color of hovered TreeView items
-/// @group treeview
 $kendo-treeview-item-hover-border: var( --kendo-treeview-item-hover-border, inherit ) !default;
 
-/// The box shadow of focused TreeView items.
-/// @group treeview
 $kendo-treeview-item-focus-shadow: var( --kendo-treeview-item-focus-shadow, inset 0 0 0 2px k-color(on-app-surface) ) !default;
 
-/// The background color of selected TreeView items.
-/// @group treeview
 $kendo-treeview-item-selected-bg: var( --kendo-treeview-item-selected-bg, color-mix(in srgb, k-color(on-app-surface) 13%, transparent) ) !default;
-/// The text color of selected TreeView items.
-/// @group treeview
 $kendo-treeview-item-selected-text: var( --kendo-treeview-item-selected-text, k-color(on-app-surface) ) !default;
-/// The border color of selected TreeView items.
-/// @group treeview
 $kendo-treeview-item-selected-border: var( --kendo-treeview-item-selected-border, inherit ) !default;
 
-/// The background color of selected and hovered TreeView items.
-/// @group treeview
 $kendo-treeview-item-selected-hover-bg: var( --kendo-treeview-item-selected-hover-bg, k-color(base-emphasis) ) !default;
 
 /// The background color of disabled TreeView items.
@@ -147,37 +74,17 @@ $kendo-treeview-item-disabled-text: var( --kendo-treeview-item-disabled-text, co
 /// @group treeview
 $kendo-treeview-item-disabled-border: var( --kendo-treeview-item-disabled-border, inherit ) !default;
 
-/// The background color of the Load More button in the TreeView
-/// @group treeview
 $kendo-treeview-loadmore-bg: var( --kendo-treeview-loadmore-bg, transparent ) !default;
-/// The text color of the Load More button in the TreeView
-/// @group treeview
 $kendo-treeview-loadmore-text: var( --kendo-treeview-loadmore-text, k-color(primary-on-surface) ) !default;
-/// The border color of the Load More button in the TreeView
-/// @group treeview
 $kendo-treeview-loadmore-border: var( --kendo-treeview-loadmore-border, inherit ) !default;
 
-/// The background color of the hovered Load More button in the TreeView
-/// @group treeview
 $kendo-treeview-loadmore-hover-bg: var( --kendo-treeview-loadmore-hover-bg, transparent ) !default;
-/// The text color of the hovered Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-hover-text: var( --kendo-treeview-loadmore-hover-text, k-color(primary-on-surface) ) !default;
-/// The border color of the hovered Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-hover-border: var( --kendo-treeview-loadmore-hover-border, inherit ) !default;
 
-/// The background color of the focused Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-focus-bg: var( --kendo-treeview-loadmore-focus-bg, transparent ) !default;
-/// The text color of the focused Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-focus-text: var( --kendo-treeview-loadmore-focus-text, k-color(primary-on-surface) ) !default;
-/// The border color of the focused Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-focus-border: var( --kendo-treeview-loadmore-focus-border, inherit ) !default;
-/// The box shadow of the focused Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-focus-shadow: var( --kendo-treeview-loadmore-focus-shadow, $kendo-treeview-item-focus-shadow ) !default;
 
 

@@ -1,113 +1,283 @@
 // Spreadsheet
 
+/// The width of the border around the Spreadsheet.
+/// @group spreadsheet
 $kendo-spreadsheet-border-width: null !default;
+/// The border radius of the Spreadsheet.
+/// @group spreadsheet
 $kendo-spreadsheet-border-radius: null !default;
+/// The font family of the Spreadsheet.
+/// @group spreadsheet
 $kendo-spreadsheet-font-family: null !default;
+/// The font size of the Spreadsheet.
+/// @group spreadsheet
 $kendo-spreadsheet-font-size: null !default;
+/// The line height of the Spreadsheet.
+/// @group spreadsheet
 $kendo-spreadsheet-line-height: null !default;
 
+/// The background color of the Spreadsheet.
+/// @group spreadsheet
 $kendo-spreadsheet-bg: null !default;
+/// The text color of the Spreadsheet.
+/// @group spreadsheet
 $kendo-spreadsheet-text: null !default;
+/// The border color of the Spreadsheet.
+/// @group spreadsheet
 $kendo-spreadsheet-border: null !default;
 
+/// The background color of the Spreadsheet header.
+/// @group spreadsheet
 $kendo-spreadsheet-header-bg: null !default;
+/// The text color of the Spreadsheet header.
+/// @group spreadsheet
 $kendo-spreadsheet-header-text: null !default;
+/// The border color of the Spreadsheet header.
+/// @group spreadsheet
 $kendo-spreadsheet-header-border: null !default;
+/// The gradient of the Spreadsheet header.
+/// @group spreadsheet
 $kendo-spreadsheet-header-gradient: null !default;
 
+/// The background color of the Spreadsheet table headers.
+/// @group spreadsheet
 $kendo-spreadsheet-table-header-bg: null !default;
+/// The text color of the Spreadsheet table headers.
+/// @group spreadsheet
 $kendo-spreadsheet-table-header-text: null !default;
+/// The border color of the Spreadsheet table headers.
+/// @group spreadsheet
 $kendo-spreadsheet-table-header-border: null !default;
+/// The gradient of the Spreadsheet table headers.
+/// @group spreadsheet
 $kendo-spreadsheet-table-header-gradient: null !default;
 
+/// The border width of the Spreadsheet action bar.
+/// @group spreadsheet
 $kendo-spreadsheet-action-bar-border-width: null !default;
+/// The horizontal padding of the Spreadsheet action bar.
+/// @group spreadsheet
 $kendo-spreadsheet-action-bar-padding-y: null !default;
+/// The vertical padding of the Spreadsheet action bar.
+/// @group spreadsheet
 $kendo-spreadsheet-action-bar-padding-x: null !default;
+/// The font size of the Spreadsheet action bar.
+/// @group spreadsheet
 $kendo-spreadsheet-action-bar-font-size: null !default;
+/// The font family of the Spreadsheet action bar.
+/// @group spreadsheet
 $kendo-spreadsheet-action-bar-font-family: null !default;
+/// The spacings of the Spreadsheet action bar.
+/// @group spreadsheet
 $kendo-spreadsheet-action-bar-spacing: null !default;
 
+/// The gap of the Spreadsheet formula bar.
+/// @group spreadsheet
 $kendo-spreadsheet-formula-bar-gap: null !default;
 
+/// The horizontal padding of the Spreadsheet formula input.
+/// @group spreadsheet
 $kendo-spreadsheet-formula-input-padding-x: null !default;
+/// The vertical padding of the Spreadsheet formula input.
+/// @group spreadsheet
 $kendo-spreadsheet-formula-input-padding-y: null !default;
+/// The line height of the Spreadsheet formula input.
+/// @group spreadsheet
 $kendo-spreadsheet-formula-input-line-height: null !default;
 
+/// The padding of the Spreadsheet formula bar icon.
+/// @group spreadsheet
 $kendo-spreadsheet-formula-bar-icon-padding: null !default;
 
+/// The font family of the Spreadsheet view.
+/// @group spreadsheet
 $kendo-spreadsheet-view-font-family: null !default;
+/// The font size of the Spreadsheet view.
+/// @group spreadsheet
 $kendo-spreadsheet-view-font-size: null !default;
 
+/// The background color of the Spreadsheet selection.
+/// @group spreadsheet
 $kendo-spreadsheet-selection-bg: null !default;
+/// The text color of the Spreadsheet selection.
+/// @group spreadsheet
 $kendo-spreadsheet-selection-text: null !default;
+/// The border color of the Spreadsheet selection.
+/// @group spreadsheet
 $kendo-spreadsheet-selection-border: null !default;
+/// The shadow of the Spreadsheet selection.
+/// @group spreadsheet
 $kendo-spreadsheet-selection-shadow: null !default;
 
+/// The background color of the Spreadsheet single selection.
+/// @group spreadsheet
 $kendo-spreadsheet-single-selection-bg: null !default;
+/// The text color of the Spreadsheet single selection.
+/// @group spreadsheet
 $kendo-spreadsheet-single-selection-text: null !default;
+/// The border color of the Spreadsheet single selection.
+/// @group spreadsheet
 $kendo-spreadsheet-single-selection-border: null !default;
 
+/// The background color of the Spreadsheet partial selection.
+/// @group spreadsheet
 $kendo-spreadsheet-partial-selection-bg: null !default;
 
+/// The background color of the Spreadsheet active cell.
+/// @group spreadsheet
 $kendo-spreadsheet-active-cell-bg: null !default;
+/// The shadow of the Spreadsheet active cell.
+/// @group spreadsheet
 $kendo-spreadsheet-active-cell-shadow: null !default;
 
+/// The background color of the Spreadsheet auto fill.
+/// @group spreadsheet
 $kendo-spreadsheet-auto-fill-bg: null !default;
+/// The text color of the Spreadsheet auto fill.
+/// @group spreadsheet
 $kendo-spreadsheet-auto-fill-text: null !default;
+/// The border color of the Spreadsheet auto fill.
+/// @group spreadsheet
 $kendo-spreadsheet-auto-fill-border: null !default;
+/// The shadow of the Spreadsheet auto fill.
+/// @group spreadsheet
 $kendo-spreadsheet-auto-fill-shadow: null !default;
+/// The background color of the Spreadsheet auto fill punch.
+/// @group spreadsheet
 $kendo-spreadsheet-auto-fill-punch-bg: null !default;
 
+/// The vertical padding of the Spreadsheet cell.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-padding-y: null !default;
+/// The horizontal padding of the Spreadsheet cell.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-padding-x: null !default;
 
+/// The line height of the Spreadsheet cell editor.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-editor-line-height: null !default;
+/// The horizontal padding of the Spreadsheet cell editor.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-editor-padding-x: null !default;
+/// The vertical padding of the Spreadsheet cell editor.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-editor-padding-y: null !default;
+/// The background color of the Spreadsheet cell editor.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-editor-bg: null !default;
+/// The text color of the Spreadsheet cell editor.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-editor-text: null !default;
+/// The border color of the Spreadsheet cell editor.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-editor-border: null !default;
 
+/// The background color of the Spreadsheet resize handle.
+/// @group spreadsheet
 $kendo-spreadsheet-resize-handle-bg: null !default;
 
+/// The border color of the Spreadsheet cell comment indicator.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-comment-border: null !default;
 
+/// The border color of the Spreadsheet cell dirty indicator.
+/// @group spreadsheet
 $kendo-spreadsheet-cell-dirty-border: null !default;
 
+/// The horizontal padding of the Spreadsheet sheets bar.
+/// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-padding-x: null !default;
+/// The vertical padding of the Spreadsheet sheets bar.
+/// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-padding-y: null !default;
+/// The gap between items in the Spreadsheet sheets bar.
+/// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-gap: null !default;
+/// The border width of the Spreadsheet sheets bar.
+/// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-border-width: null !default;
 
+/// The border style of the Spreadsheet image Dialog.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-border-style: null !default;
+/// The border width of the Spreadsheet image Dialog.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-border-width: null !default;
+/// The bottom margin of the Spreadsheet image Dialog.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-text-margin-bottom: null !default;
+/// The width of the Spreadsheet image Dialog preview.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-width: null !default;
+/// The height of the Spreadsheet image Dialog preview.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-height: null !default;
+/// The image of the Spreadsheet image Dialog preview.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-img: null !default;
+/// The border of the Spreadsheet image Dialog preview.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-border: null !default;
+/// The border radius of the Spreadsheet image Dialog preview.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-border-radius: null !default;
+/// The shadow of the Spreadsheet image Dialog preview.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow: null !default;
+/// The border radius of the Spreadsheet image Dialog preview overlay.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius: null !default;
+/// The text color of the hovered Spreadsheet image Dialog preview.
+/// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-overlay-hover-text: null !default;
 
+/// The width of the Spreadsheet drawing handle.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-width: null !default;
+/// The height of the Spreadsheet drawing handle.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-height: null !default;
+/// The border style of the Spreadsheet drawing handle.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-border-style: null !default;
+/// The border width of the Spreadsheet drawing handle.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-border-width: null !default;
+/// The border color of the Spreadsheet drawing handle.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-outline-color: null !default;
+/// The outline color of the Spreadsheet drawing handle.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-border-color: null !default;
+/// The border color of the Spreadsheet drawing handle.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-bg: null !default;
+/// The border radius of the Spreadsheet drawing handle.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-border-radius: null !default;
+/// The outline style of the Spreadsheet drawing.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-outline-style: null !default;
+/// The outline width of the Spreadsheet drawing.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-outline-width: null !default;
+/// The background color of the Spreadsheet drawing anchor.
+/// @group spreadsheet
 $kendo-spreadsheet-drawing-anchor-bg: null !default;
 
+/// The vertical spacing of the Spreadsheet DropZone.
+/// @group spreadsheet
 $kendo-spreadsheet-dropzone-spacing-y: null !default;
 
+/// The padding of the Spreadsheet filter.
+/// @group spreadsheet
 $kendo-spreadsheet-filter-padding: null !default;
 
 
+/// The horizontal padding of the Spreadsheet filter menu link.
+/// @group spreadsheet
 $kendo-spreadsheet-filter-menu-link-padding-x: null !default;
 
+/// The margin of the Spreadsheet filter menu icon.
+/// @group spreadsheet
 $kendo-spreadsheet-filter-menu-icon-margin: null !default;
