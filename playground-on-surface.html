@@ -38,6 +38,50 @@
     --warning-on-surface-new: color-mix(in oklch, var(--kendo-color-warning) 60%, contrast-color(var(--kendo-color-surface)) 40%);
     --error-on-surface-new: color-mix(in oklch, var(--kendo-color-error) 60%, contrast-color(var(--kendo-color-surface)) 40%);
     --inverse-on-surface-new: color-mix(in oklch, var(--kendo-color-inverse) 60%, contrast-color(var(--kendo-color-surface)) 40%);
+
+    /* === ALT: 50/50 ratio === */
+    --base-on-surface-alt1: color-mix(in oklch, var(--kendo-color-base) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+    --primary-on-surface-alt1: color-mix(in oklch, var(--kendo-color-primary) 50%, contrast-color(var(--kendo-color-surface)) 50%);
+    --secondary-on-surface-alt1: color-mix(in oklch, var(--kendo-color-secondary) 50%, contrast-color(var(--kendo-color-surface)) 50%);
+    --tertiary-on-surface-alt1: color-mix(in oklch, var(--kendo-color-tertiary) 50%, contrast-color(var(--kendo-color-surface)) 50%);
+    --info-on-surface-alt1: color-mix(in oklch, var(--kendo-color-info) 50%, contrast-color(var(--kendo-color-surface)) 50%);
+    --success-on-surface-alt1: color-mix(in oklch, var(--kendo-color-success) 50%, contrast-color(var(--kendo-color-surface)) 50%);
+    --warning-on-surface-alt1: color-mix(in oklch, var(--kendo-color-warning) 50%, contrast-color(var(--kendo-color-surface)) 50%);
+    --error-on-surface-alt1: color-mix(in oklch, var(--kendo-color-error) 50%, contrast-color(var(--kendo-color-surface)) 50%);
+    --inverse-on-surface-alt1: color-mix(in oklch, var(--kendo-color-inverse) 50%, contrast-color(var(--kendo-color-surface)) 50%);
+
+    /* === ALT: 40/60 ratio === */
+    --base-on-surface-alt2: color-mix(in oklch, var(--kendo-color-base) 20%, contrast-color(var(--kendo-color-surface)) 80%);
+    --primary-on-surface-alt2: color-mix(in oklch, var(--kendo-color-primary) 40%, contrast-color(var(--kendo-color-surface)) 60%);
+    --secondary-on-surface-alt2: color-mix(in oklch, var(--kendo-color-secondary) 40%, contrast-color(var(--kendo-color-surface)) 60%);
+    --tertiary-on-surface-alt2: color-mix(in oklch, var(--kendo-color-tertiary) 40%, contrast-color(var(--kendo-color-surface)) 60%);
+    --info-on-surface-alt2: color-mix(in oklch, var(--kendo-color-info) 40%, contrast-color(var(--kendo-color-surface)) 60%);
+    --success-on-surface-alt2: color-mix(in oklch, var(--kendo-color-success) 40%, contrast-color(var(--kendo-color-surface)) 60%);
+    --warning-on-surface-alt2: color-mix(in oklch, var(--kendo-color-warning) 40%, contrast-color(var(--kendo-color-surface)) 60%);
+    --error-on-surface-alt2: color-mix(in oklch, var(--kendo-color-error) 40%, contrast-color(var(--kendo-color-surface)) 60%);
+    --inverse-on-surface-alt2: color-mix(in oklch, var(--kendo-color-inverse) 40%, contrast-color(var(--kendo-color-surface)) 60%);
+
+    /* === ALT3: 25/75 in oklch (very aggressive) === */
+    --base-on-surface-alt3: color-mix(in oklch, var(--kendo-color-base) 15%, contrast-color(var(--kendo-color-surface)) 85%);
+    --primary-on-surface-alt3: color-mix(in oklch, var(--kendo-color-primary) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+    --secondary-on-surface-alt3: color-mix(in oklch, var(--kendo-color-secondary) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+    --tertiary-on-surface-alt3: color-mix(in oklch, var(--kendo-color-tertiary) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+    --info-on-surface-alt3: color-mix(in oklch, var(--kendo-color-info) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+    --success-on-surface-alt3: color-mix(in oklch, var(--kendo-color-success) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+    --warning-on-surface-alt3: color-mix(in oklch, var(--kendo-color-warning) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+    --error-on-surface-alt3: color-mix(in oklch, var(--kendo-color-error) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+    --inverse-on-surface-alt3: color-mix(in oklch, var(--kendo-color-inverse) 25%, contrast-color(var(--kendo-color-surface)) 75%);
+
+    /* === ALT5: 30/70 oklch + chroma×2 (AA contrast + rich saturation) === */
+    --base-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-base) 20%, contrast-color(var(--kendo-color-surface)) 80%) l calc(c * 2) h);
+    --primary-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-primary) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
+    --secondary-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-secondary) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
+    --tertiary-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-tertiary) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
+    --info-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-info) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
+    --success-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-success) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
+    --warning-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-warning) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
+    --error-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-error) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
+    --inverse-on-surface-alt5: oklch(from color-mix(in oklch, var(--kendo-color-inverse) 30%, contrast-color(var(--kendo-color-surface)) 70%) l calc(c * 2) h);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -65,7 +109,7 @@
   .controls button.primary { background: oklch(37.17% 0.0392 257.29deg); color: white; border: none; }
 
   .comparison {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+    display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.75rem;
   }
 
   .panel {
@@ -182,6 +226,122 @@
   .new .btn-outline-inverse,
   .new .btn-flat-inverse { color: var(--inverse-on-surface-new); border-color: var(--inverse-on-surface-new); }
 
+  /* ALT1 50/50 on-surface colors */
+  .alt1 .btn-clear-base { color: var(--base-on-surface-alt1); }
+  .alt1 .btn-clear-primary { color: var(--primary-on-surface-alt1); }
+  .alt1 .btn-clear-secondary { color: var(--secondary-on-surface-alt1); }
+  .alt1 .btn-clear-tertiary { color: var(--tertiary-on-surface-alt1); }
+  .alt1 .btn-clear-info { color: var(--info-on-surface-alt1); }
+  .alt1 .btn-clear-success { color: var(--success-on-surface-alt1); }
+  .alt1 .btn-clear-warning { color: var(--warning-on-surface-alt1); }
+  .alt1 .btn-clear-error { color: var(--error-on-surface-alt1); }
+  .alt1 .btn-clear-inverse { color: var(--inverse-on-surface-alt1); }
+  .alt1 .btn-outline-base,
+  .alt1 .btn-flat-base { color: var(--base-on-surface-alt1); border-color: var(--base-on-surface-alt1); }
+  .alt1 .btn-outline-primary,
+  .alt1 .btn-flat-primary { color: var(--primary-on-surface-alt1); border-color: var(--primary-on-surface-alt1); }
+  .alt1 .btn-outline-secondary,
+  .alt1 .btn-flat-secondary { color: var(--secondary-on-surface-alt1); border-color: var(--secondary-on-surface-alt1); }
+  .alt1 .btn-outline-tertiary,
+  .alt1 .btn-flat-tertiary { color: var(--tertiary-on-surface-alt1); border-color: var(--tertiary-on-surface-alt1); }
+  .alt1 .btn-outline-info,
+  .alt1 .btn-flat-info { color: var(--info-on-surface-alt1); border-color: var(--info-on-surface-alt1); }
+  .alt1 .btn-outline-success,
+  .alt1 .btn-flat-success { color: var(--success-on-surface-alt1); border-color: var(--success-on-surface-alt1); }
+  .alt1 .btn-outline-warning,
+  .alt1 .btn-flat-warning { color: var(--warning-on-surface-alt1); border-color: var(--warning-on-surface-alt1); }
+  .alt1 .btn-outline-error,
+  .alt1 .btn-flat-error { color: var(--error-on-surface-alt1); border-color: var(--error-on-surface-alt1); }
+  .alt1 .btn-outline-inverse,
+  .alt1 .btn-flat-inverse { color: var(--inverse-on-surface-alt1); border-color: var(--inverse-on-surface-alt1); }
+
+  /* ALT2 40/60 on-surface colors */
+  .alt2 .btn-clear-base { color: var(--base-on-surface-alt2); }
+  .alt2 .btn-clear-primary { color: var(--primary-on-surface-alt2); }
+  .alt2 .btn-clear-secondary { color: var(--secondary-on-surface-alt2); }
+  .alt2 .btn-clear-tertiary { color: var(--tertiary-on-surface-alt2); }
+  .alt2 .btn-clear-info { color: var(--info-on-surface-alt2); }
+  .alt2 .btn-clear-success { color: var(--success-on-surface-alt2); }
+  .alt2 .btn-clear-warning { color: var(--warning-on-surface-alt2); }
+  .alt2 .btn-clear-error { color: var(--error-on-surface-alt2); }
+  .alt2 .btn-clear-inverse { color: var(--inverse-on-surface-alt2); }
+  .alt2 .btn-outline-base,
+  .alt2 .btn-flat-base { color: var(--base-on-surface-alt2); border-color: var(--base-on-surface-alt2); }
+  .alt2 .btn-outline-primary,
+  .alt2 .btn-flat-primary { color: var(--primary-on-surface-alt2); border-color: var(--primary-on-surface-alt2); }
+  .alt2 .btn-outline-secondary,
+  .alt2 .btn-flat-secondary { color: var(--secondary-on-surface-alt2); border-color: var(--secondary-on-surface-alt2); }
+  .alt2 .btn-outline-tertiary,
+  .alt2 .btn-flat-tertiary { color: var(--tertiary-on-surface-alt2); border-color: var(--tertiary-on-surface-alt2); }
+  .alt2 .btn-outline-info,
+  .alt2 .btn-flat-info { color: var(--info-on-surface-alt2); border-color: var(--info-on-surface-alt2); }
+  .alt2 .btn-outline-success,
+  .alt2 .btn-flat-success { color: var(--success-on-surface-alt2); border-color: var(--success-on-surface-alt2); }
+  .alt2 .btn-outline-warning,
+  .alt2 .btn-flat-warning { color: var(--warning-on-surface-alt2); border-color: var(--warning-on-surface-alt2); }
+  .alt2 .btn-outline-error,
+  .alt2 .btn-flat-error { color: var(--error-on-surface-alt2); border-color: var(--error-on-surface-alt2); }
+  .alt2 .btn-outline-inverse,
+  .alt2 .btn-flat-inverse { color: var(--inverse-on-surface-alt2); border-color: var(--inverse-on-surface-alt2); }
+
+  /* ALT3 25/75 oklch */
+  .alt3 .btn-clear-base { color: var(--base-on-surface-alt3); }
+  .alt3 .btn-clear-primary { color: var(--primary-on-surface-alt3); }
+  .alt3 .btn-clear-secondary { color: var(--secondary-on-surface-alt3); }
+  .alt3 .btn-clear-tertiary { color: var(--tertiary-on-surface-alt3); }
+  .alt3 .btn-clear-info { color: var(--info-on-surface-alt3); }
+  .alt3 .btn-clear-success { color: var(--success-on-surface-alt3); }
+  .alt3 .btn-clear-warning { color: var(--warning-on-surface-alt3); }
+  .alt3 .btn-clear-error { color: var(--error-on-surface-alt3); }
+  .alt3 .btn-clear-inverse { color: var(--inverse-on-surface-alt3); }
+  .alt3 .btn-outline-base,
+  .alt3 .btn-flat-base { color: var(--base-on-surface-alt3); border-color: var(--base-on-surface-alt3); }
+  .alt3 .btn-outline-primary,
+  .alt3 .btn-flat-primary { color: var(--primary-on-surface-alt3); border-color: var(--primary-on-surface-alt3); }
+  .alt3 .btn-outline-secondary,
+  .alt3 .btn-flat-secondary { color: var(--secondary-on-surface-alt3); border-color: var(--secondary-on-surface-alt3); }
+  .alt3 .btn-outline-tertiary,
+  .alt3 .btn-flat-tertiary { color: var(--tertiary-on-surface-alt3); border-color: var(--tertiary-on-surface-alt3); }
+  .alt3 .btn-outline-info,
+  .alt3 .btn-flat-info { color: var(--info-on-surface-alt3); border-color: var(--info-on-surface-alt3); }
+  .alt3 .btn-outline-success,
+  .alt3 .btn-flat-success { color: var(--success-on-surface-alt3); border-color: var(--success-on-surface-alt3); }
+  .alt3 .btn-outline-warning,
+  .alt3 .btn-flat-warning { color: var(--warning-on-surface-alt3); border-color: var(--warning-on-surface-alt3); }
+  .alt3 .btn-outline-error,
+  .alt3 .btn-flat-error { color: var(--error-on-surface-alt3); border-color: var(--error-on-surface-alt3); }
+  .alt3 .btn-outline-inverse,
+  .alt3 .btn-flat-inverse { color: var(--inverse-on-surface-alt3); border-color: var(--inverse-on-surface-alt3); }
+
+  /* ALT4 40/60 sRGB */
+  .alt4 .btn-clear-base { color: var(--base-on-surface-alt5); }
+  .alt4 .btn-clear-primary { color: var(--primary-on-surface-alt5); }
+  .alt4 .btn-clear-secondary { color: var(--secondary-on-surface-alt5); }
+  .alt4 .btn-clear-tertiary { color: var(--tertiary-on-surface-alt5); }
+  .alt4 .btn-clear-info { color: var(--info-on-surface-alt5); }
+  .alt4 .btn-clear-success { color: var(--success-on-surface-alt5); }
+  .alt4 .btn-clear-warning { color: var(--warning-on-surface-alt5); }
+  .alt4 .btn-clear-error { color: var(--error-on-surface-alt5); }
+  .alt4 .btn-clear-inverse { color: var(--inverse-on-surface-alt5); }
+  .alt4 .btn-outline-base,
+  .alt4 .btn-flat-base { color: var(--base-on-surface-alt5); border-color: var(--base-on-surface-alt5); }
+  .alt4 .btn-outline-primary,
+  .alt4 .btn-flat-primary { color: var(--primary-on-surface-alt5); border-color: var(--primary-on-surface-alt5); }
+  .alt4 .btn-outline-secondary,
+  .alt4 .btn-flat-secondary { color: var(--secondary-on-surface-alt5); border-color: var(--secondary-on-surface-alt5); }
+  .alt4 .btn-outline-tertiary,
+  .alt4 .btn-flat-tertiary { color: var(--tertiary-on-surface-alt5); border-color: var(--tertiary-on-surface-alt5); }
+  .alt4 .btn-outline-info,
+  .alt4 .btn-flat-info { color: var(--info-on-surface-alt5); border-color: var(--info-on-surface-alt5); }
+  .alt4 .btn-outline-success,
+  .alt4 .btn-flat-success { color: var(--success-on-surface-alt5); border-color: var(--success-on-surface-alt5); }
+  .alt4 .btn-outline-warning,
+  .alt4 .btn-flat-warning { color: var(--warning-on-surface-alt5); border-color: var(--warning-on-surface-alt5); }
+  .alt4 .btn-outline-error,
+  .alt4 .btn-flat-error { color: var(--error-on-surface-alt5); border-color: var(--error-on-surface-alt5); }
+  .alt4 .btn-outline-inverse,
+  .alt4 .btn-flat-inverse { color: var(--inverse-on-surface-alt5); border-color: var(--inverse-on-surface-alt5); }
+
   /* Solid buttons use on-base (text on filled bg) — not affected, shown for context */
   .btn-solid-base { color: var(--base-on-surface-old); }
 </style>
@@ -239,7 +399,63 @@
     </div>
   </div>
   <div class="panel new">
-    <h3>Proposed Fix <span class="tag tag-fix">NEW</span></h3>
+    <h3>Fix 60/40 <span class="tag tag-fix">NEW</span></h3>
+    <div class="btn-row">
+      <button class="btn btn-outline btn-outline-base">Base</button>
+      <button class="btn btn-outline btn-outline-primary">Primary</button>
+      <button class="btn btn-outline btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline btn-outline-tertiary">Tertiary</button>
+      <button class="btn btn-outline btn-outline-info">Info</button>
+      <button class="btn btn-outline btn-outline-success">Success</button>
+      <button class="btn btn-outline btn-outline-warning">Warning</button>
+      <button class="btn btn-outline btn-outline-error">Error</button>
+      <button class="btn btn-outline btn-outline-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt1">
+    <h3>Alt 50/50</h3>
+    <div class="btn-row">
+      <button class="btn btn-outline btn-outline-base">Base</button>
+      <button class="btn btn-outline btn-outline-primary">Primary</button>
+      <button class="btn btn-outline btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline btn-outline-tertiary">Tertiary</button>
+      <button class="btn btn-outline btn-outline-info">Info</button>
+      <button class="btn btn-outline btn-outline-success">Success</button>
+      <button class="btn btn-outline btn-outline-warning">Warning</button>
+      <button class="btn btn-outline btn-outline-error">Error</button>
+      <button class="btn btn-outline btn-outline-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt2">
+    <h3>Alt 40/60</h3>
+    <div class="btn-row">
+      <button class="btn btn-outline btn-outline-base">Base</button>
+      <button class="btn btn-outline btn-outline-primary">Primary</button>
+      <button class="btn btn-outline btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline btn-outline-tertiary">Tertiary</button>
+      <button class="btn btn-outline btn-outline-info">Info</button>
+      <button class="btn btn-outline btn-outline-success">Success</button>
+      <button class="btn btn-outline btn-outline-warning">Warning</button>
+      <button class="btn btn-outline btn-outline-error">Error</button>
+      <button class="btn btn-outline btn-outline-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt3">
+    <h3>Alt 25/75 oklch</h3>
+    <div class="btn-row">
+      <button class="btn btn-outline btn-outline-base">Base</button>
+      <button class="btn btn-outline btn-outline-primary">Primary</button>
+      <button class="btn btn-outline btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline btn-outline-tertiary">Tertiary</button>
+      <button class="btn btn-outline btn-outline-info">Info</button>
+      <button class="btn btn-outline btn-outline-success">Success</button>
+      <button class="btn btn-outline btn-outline-warning">Warning</button>
+      <button class="btn btn-outline btn-outline-error">Error</button>
+      <button class="btn btn-outline btn-outline-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt4">
+    <h3>Alt 30/70 + chroma×2</h3>
     <div class="btn-row">
       <button class="btn btn-outline btn-outline-base">Base</button>
       <button class="btn btn-outline btn-outline-primary">Primary</button>
@@ -253,8 +469,6 @@
     </div>
   </div>
 </div>
-
-<!-- FLAT BUTTONS -->
 <h2>Flat Buttons</h2>
 <div class="comparison">
   <div class="panel old">
@@ -272,7 +486,63 @@
     </div>
   </div>
   <div class="panel new">
-    <h3>Proposed Fix <span class="tag tag-fix">NEW</span></h3>
+    <h3>Fix 60/40 <span class="tag tag-fix">NEW</span></h3>
+    <div class="btn-row">
+      <button class="btn btn-flat btn-flat-base">Base</button>
+      <button class="btn btn-flat btn-flat-primary">Primary</button>
+      <button class="btn btn-flat btn-flat-secondary">Secondary</button>
+      <button class="btn btn-flat btn-flat-tertiary">Tertiary</button>
+      <button class="btn btn-flat btn-flat-info">Info</button>
+      <button class="btn btn-flat btn-flat-success">Success</button>
+      <button class="btn btn-flat btn-flat-warning">Warning</button>
+      <button class="btn btn-flat btn-flat-error">Error</button>
+      <button class="btn btn-flat btn-flat-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt1">
+    <h3>Alt 50/50</h3>
+    <div class="btn-row">
+      <button class="btn btn-flat btn-flat-base">Base</button>
+      <button class="btn btn-flat btn-flat-primary">Primary</button>
+      <button class="btn btn-flat btn-flat-secondary">Secondary</button>
+      <button class="btn btn-flat btn-flat-tertiary">Tertiary</button>
+      <button class="btn btn-flat btn-flat-info">Info</button>
+      <button class="btn btn-flat btn-flat-success">Success</button>
+      <button class="btn btn-flat btn-flat-warning">Warning</button>
+      <button class="btn btn-flat btn-flat-error">Error</button>
+      <button class="btn btn-flat btn-flat-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt2">
+    <h3>Alt 40/60</h3>
+    <div class="btn-row">
+      <button class="btn btn-flat btn-flat-base">Base</button>
+      <button class="btn btn-flat btn-flat-primary">Primary</button>
+      <button class="btn btn-flat btn-flat-secondary">Secondary</button>
+      <button class="btn btn-flat btn-flat-tertiary">Tertiary</button>
+      <button class="btn btn-flat btn-flat-info">Info</button>
+      <button class="btn btn-flat btn-flat-success">Success</button>
+      <button class="btn btn-flat btn-flat-warning">Warning</button>
+      <button class="btn btn-flat btn-flat-error">Error</button>
+      <button class="btn btn-flat btn-flat-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt3">
+    <h3>Alt 25/75 oklch</h3>
+    <div class="btn-row">
+      <button class="btn btn-flat btn-flat-base">Base</button>
+      <button class="btn btn-flat btn-flat-primary">Primary</button>
+      <button class="btn btn-flat btn-flat-secondary">Secondary</button>
+      <button class="btn btn-flat btn-flat-tertiary">Tertiary</button>
+      <button class="btn btn-flat btn-flat-info">Info</button>
+      <button class="btn btn-flat btn-flat-success">Success</button>
+      <button class="btn btn-flat btn-flat-warning">Warning</button>
+      <button class="btn btn-flat btn-flat-error">Error</button>
+      <button class="btn btn-flat btn-flat-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt4">
+    <h3>Alt 30/70 + chroma×2</h3>
     <div class="btn-row">
       <button class="btn btn-flat btn-flat-base">Base</button>
       <button class="btn btn-flat btn-flat-primary">Primary</button>
@@ -305,7 +575,63 @@
     </div>
   </div>
   <div class="panel new">
-    <h3>Proposed Fix <span class="tag tag-fix">NEW</span></h3>
+    <h3>Fix 60/40 <span class="tag tag-fix">NEW</span></h3>
+    <div class="btn-row">
+      <button class="btn btn-clear btn-clear-base">Base</button>
+      <button class="btn btn-clear btn-clear-primary">Primary</button>
+      <button class="btn btn-clear btn-clear-secondary">Secondary</button>
+      <button class="btn btn-clear btn-clear-tertiary">Tertiary</button>
+      <button class="btn btn-clear btn-clear-info">Info</button>
+      <button class="btn btn-clear btn-clear-success">Success</button>
+      <button class="btn btn-clear btn-clear-warning">Warning</button>
+      <button class="btn btn-clear btn-clear-error">Error</button>
+      <button class="btn btn-clear btn-clear-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt1">
+    <h3>Alt 50/50</h3>
+    <div class="btn-row">
+      <button class="btn btn-clear btn-clear-base">Base</button>
+      <button class="btn btn-clear btn-clear-primary">Primary</button>
+      <button class="btn btn-clear btn-clear-secondary">Secondary</button>
+      <button class="btn btn-clear btn-clear-tertiary">Tertiary</button>
+      <button class="btn btn-clear btn-clear-info">Info</button>
+      <button class="btn btn-clear btn-clear-success">Success</button>
+      <button class="btn btn-clear btn-clear-warning">Warning</button>
+      <button class="btn btn-clear btn-clear-error">Error</button>
+      <button class="btn btn-clear btn-clear-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt2">
+    <h3>Alt 40/60</h3>
+    <div class="btn-row">
+      <button class="btn btn-clear btn-clear-base">Base</button>
+      <button class="btn btn-clear btn-clear-primary">Primary</button>
+      <button class="btn btn-clear btn-clear-secondary">Secondary</button>
+      <button class="btn btn-clear btn-clear-tertiary">Tertiary</button>
+      <button class="btn btn-clear btn-clear-info">Info</button>
+      <button class="btn btn-clear btn-clear-success">Success</button>
+      <button class="btn btn-clear btn-clear-warning">Warning</button>
+      <button class="btn btn-clear btn-clear-error">Error</button>
+      <button class="btn btn-clear btn-clear-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt3">
+    <h3>Alt 25/75 oklch</h3>
+    <div class="btn-row">
+      <button class="btn btn-clear btn-clear-base">Base</button>
+      <button class="btn btn-clear btn-clear-primary">Primary</button>
+      <button class="btn btn-clear btn-clear-secondary">Secondary</button>
+      <button class="btn btn-clear btn-clear-tertiary">Tertiary</button>
+      <button class="btn btn-clear btn-clear-info">Info</button>
+      <button class="btn btn-clear btn-clear-success">Success</button>
+      <button class="btn btn-clear btn-clear-warning">Warning</button>
+      <button class="btn btn-clear btn-clear-error">Error</button>
+      <button class="btn btn-clear btn-clear-inverse">Inverse</button>
+    </div>
+  </div>
+  <div class="panel alt4">
+    <h3>Alt 30/70 + chroma×2</h3>
     <div class="btn-row">
       <button class="btn btn-clear btn-clear-base">Base</button>
       <button class="btn btn-clear btn-clear-primary">Primary</button>
