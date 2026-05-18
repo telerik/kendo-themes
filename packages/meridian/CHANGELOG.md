@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.1...v14.1.0-dev.2) (2026-05-18)
+
+
+### Bug Fixes
+
+* **meridian:** backdrop-filter causes overflow to break ([34e0da1](https://github.com/telerik/kendo-themes/commit/34e0da192baf67ef6284bb2960cbf094dc17249c))
+* **meridian:** increase gap between slider track and buttons ([cbcbf1d](https://github.com/telerik/kendo-themes/commit/cbcbf1d46f27f25f12485fce0c693e453f5c2226))
+* **meridian:** input adornments focus ([8132044](https://github.com/telerik/kendo-themes/commit/813204405305dd8d9da556b3a3209db88923853b))
+* **meridian:** menu active/selected state makes the item jump ([b8dd497](https://github.com/telerik/kendo-themes/commit/b8dd4978a82ec43c9b345472e2864de10a82a936))
+* **meridian:** nested panelbar items focus ([7f4b286](https://github.com/telerik/kendo-themes/commit/7f4b286a892523bb4e46e5a310aa6cf644a0cc5d))
+* **meridian:** window prompt container bg ([40fc488](https://github.com/telerik/kendo-themes/commit/40fc488002904b39ce2b2dcfc4b7958bbdfd448c))
+* **tabstrip:** update tabstrip item spacings ([41240ef](https://github.com/telerik/kendo-themes/commit/41240efca8ac6c3bb15467a0045a3eccd464ff17))
+
+
+
+
+
 # [14.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.0...v14.1.0-dev.1) (2026-05-18)
 
 **Note:** Version bump only for package @progress/kendo-theme-meridian
