@@ -97,6 +97,8 @@ Override any token on `:root` or a scoped selector:
   --kendo-font-family: "Inter", sans-serif;
   --kendo-font-size: 1rem;
   --kendo-font-weight: 400;
+  --kendo-line-height: 1.5;
+  --kendo-letter-spacing: 0px;
 }
 ```
 
@@ -106,8 +108,11 @@ Configure the corresponding `$kendo-` variables in the theme `@use ... with ()` 
 
 ```scss
 @use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
-  $kendo-font-family: "Inter", sans-serif,
-  $kendo-font-size: 1rem
+  $kendo-font-family: "Inter" sans-serif,
+  $kendo-font-size: 1rem,
+  $kendo-font-weight: 400,
+  $kendo-line-height: 1.5,
+  $kendo-letter-spacing: 0px
 );
 ```
 

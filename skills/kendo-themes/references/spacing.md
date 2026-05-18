@@ -72,6 +72,17 @@ Change a single variable to rescale every spacing token:
 );
 ```
 
+### Sass — Override Individual Tokens
+
+```scss
+@use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
+  $kendo-spacing: (
+    4: 1.25rem,
+    8: 2.5rem
+  )
+);
+```
+
 Each spacing token is defined as `calc(<step> * var(--kendo-spacing-base))`. The fixed tokens (`0` and `1px`) are absolute values unaffected by the base.
 
 ## Further Reading

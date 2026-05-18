@@ -57,6 +57,15 @@ Each theme sets its own `--kendo-border-radius-base`. The multiplier ratios from
 );
 ```
 
+### Sass — override individual tokens
+
+```scss
+@use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
+    $kendo-border-radius-lg: 0.75rem,
+    $kendo-border-radius-full: 50%
+);
+```
+
 ## Further Reading
 
 - [Border Radius](https://www.telerik.com/design-system/docs/foundation/border-radius)
