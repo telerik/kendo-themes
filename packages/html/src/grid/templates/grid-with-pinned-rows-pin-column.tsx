@@ -60,7 +60,7 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
                                         <TableRow className="k-master-row" role="row" aria-rowindex={1}>
                                             {/* Pin column cell — announces context menu; icon is decorative */}
                                             <TableTd role="gridcell" aria-colindex={1} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="true">
-                                                <span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /></span>
+                                                <span className="k-pin-cell"><Icon icon="unpin" className="k-action-icon" /></span>
                                             </TableTd>
                                             <TableTd role="gridcell" aria-colindex={2}>Shelden Greyes</TableTd>
                                             <TableTd role="gridcell" aria-colindex={3}>Operator</TableTd>
@@ -84,7 +84,7 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
                                         <TableRow className="k-master-row" role="row" aria-rowindex={2}>
                                             {/* Pin column cell — announces context menu; icon is decorative */}
                                             <TableTd role="gridcell" aria-colindex={1} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">
-                                                <span className="k-pin-cell"><Icon icon="pin-outline" /></span>
+                                                <span className="k-pin-cell"><Icon icon="pin" /></span>
                                             </TableTd>
                                             <TableTd role="gridcell" aria-colindex={2}>Sig Jeannel</TableTd>
                                             <TableTd role="gridcell" aria-colindex={3}>Human Resources Assistant III</TableTd>
@@ -92,7 +92,7 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
                                         </TableRow>
                                         <TableRow className="k-master-row k-pinned-source" role="row" alt aria-rowindex={3}>
                                             <TableTd role="gridcell" aria-colindex={1} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">
-                                                <span className="k-pin-cell"><Icon icon="unpin-outline" className="k-action-icon" /></span>
+                                                <span className="k-pin-cell"><Icon icon="unpin" className="k-action-icon" /></span>
                                             </TableTd>
                                             <TableTd role="gridcell" aria-colindex={2}>Shelden Greyes</TableTd>
                                             <TableTd role="gridcell" aria-colindex={3}>Operator</TableTd>
@@ -100,7 +100,7 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
                                         </TableRow>
                                         <TableRow className="k-master-row" role="row" aria-rowindex={4}>
                                             <TableTd role="gridcell" aria-colindex={1} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">
-                                                <span className="k-pin-cell"><Icon icon="pin-outline" /></span>
+                                                <span className="k-pin-cell"><Icon icon="pin" /></span>
                                             </TableTd>
                                             <TableTd role="gridcell" aria-colindex={2}>Ruthi Baldini</TableTd>
                                             <TableTd role="gridcell" aria-colindex={3}>Coordinator</TableTd>
@@ -118,8 +118,8 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
             {/* Pin/unpin context menu popup — aria-controls on pin column cells references this */}
             <Popup className="k-menu-popup">
                 <ContextMenu id={ctxMenuId}>
-                    <MenuListItem first text="Pin row to top" icon="pin-outline-top" />
-                    <MenuListItem last text="Pin row to bottom" icon="pin-outline-bottom" />
+                    <MenuListItem first text="Pin row to top" icon="pin-top" />
+                    <MenuListItem last text="Pin row to bottom" icon="pin-bottom" />
                 </ContextMenu>
             </Popup>
         </>

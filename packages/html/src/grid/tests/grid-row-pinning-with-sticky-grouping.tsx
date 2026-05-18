@@ -64,7 +64,7 @@ export default () => (
                   <TableRow className="k-table-group-row k-grouping-row">
                     <TableTd colspan={7}>
                       <p className="k-reset">
-                        <Icon icon="unpin-outline" className="k-action-icon" />
+                        <Icon icon="unpin" className="k-action-icon" />
                         Rating 1/5
                       </p>
                     </TableTd>
