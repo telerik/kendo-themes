@@ -15,7 +15,7 @@
     {
       "id": 2,
       "prompt": "I'm setting up kendo-theme-material in an Angular project and want to keep my CSS bundle small. I only need Grid, Button, and DropDownList components. How do I import just those with Sass?",
-      "expected_output": "Should show @use with scss/index.scss (not all.scss), then selectively call @include for kendo-grid--styles(), kendo-button--styles(), and kendo-dropdownlist--styles() mixins. Should mention the @use module syntax, not @import.",
+      "expected_output": "Should show @use with scss/index.scss (not all.scss), then selectively call @include for kendo-grid--styles(), kendo-button--styles(), and kendo-dropdown-list--styles() mixins. Should mention the @use module syntax, not @import.",
       "files": [],
       "expectations": [
         "Uses @use with @progress/kendo-theme-material/scss/index.scss rather than all.scss.",
