@@ -24,12 +24,27 @@ Size classes apply on `.k-svg-icon`:
 | `.k-icon-xxl` | 200% | 32px |
 | `.k-icon-xxxl` | 300% | 48px |
 
-All sizes derive from `$kendo-icon-size` (default: `16px`) at **compile time**. There is no runtime CSS custom property for icon size — customization is Sass-only.
+All sizes derive from `$kendo-icon-size` (default: `16px` or `1rem` depending on the theme).
 
-### Customizing Base Icon Size (Sass)
+### Customizing Icon Size
+
+```css
+:root {
+    --kendo-icon-size: 20px;
+}
+
+.k-svg-icon {
+    width: var(--kendo-icon-size);
+    height: var(--kendo-icon-size);
+}
+
+.k-font-icon {
+    font-size: var(--kendo-icon-size);
+}
+```
 
 ```scss
-@use "@progress/kendo-theme-meridian/scss/index.scss" as * with (
+@use "@progress/kendo-theme-default/scss/index.scss" as * with (
     $kendo-icon-size: 20px
 );
 ```
@@ -55,12 +70,12 @@ Flip and rotate classes are provided by `@progress/kendo-svg-icons` and apply th
 | `.k-flip-both` | Mirror both axes |
 | `.k-rotate-{degrees}` | Rotate (0, 45, 90, 135, 180, 225, 270, 315) |
 
-## Customizable Variables (Sass only)
+## Customizable Variables
 
 | Variable | Default | Used by |
 |---|---|---|
-| `$kendo-icon-size` | `16px` | Icon sizing scale |
-| `$kendo-icon-spacing` | `k-spacing(1)` | Gap between icons and adjacent content in components |
+| `$kendo-icon-size` | `16px` or `1rem` | Icon sizing scale |
+| `$kendo-icon-spacing` | `k-spacing(1)` or `k-spacing(2)` | Gap between icons and adjacent content in components |
 | `$kendo-icon-padding` | `k-spacing(1)` | Clickable icon hit area |
 | `$kendo-accent-icon-color` | Theme-specific | Accent-colored icons |
 
