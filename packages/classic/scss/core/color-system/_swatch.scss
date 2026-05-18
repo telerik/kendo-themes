@@ -21,7 +21,7 @@ $_default-colors: (
     base-emphasis: #{"oklch(from var(--kendo-color-base) calc(l - 0.1011) c h)"},
     base-on-subtle: #{"oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)"},
     on-base: #{"oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)"},
-    base-on-surface: #{"oklch(from var(--kendo-color-base) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)"},
+    base-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-base) l c h) 25%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 75%)"},
 
     // Primary (tangerine-orange)
     primary-subtle: #{"oklch(from var(--kendo-color-primary) 0.9694 calc(c * 0.083) h)"},
@@ -33,7 +33,7 @@ $_default-colors: (
     primary-emphasis: #{"oklch(from var(--kendo-color-primary) calc(l + 0.0924) calc(c - 0.0415) h)"},
     primary-on-subtle: #{"oklch(from var(--kendo-color-primary) calc(l * 0.389) calc(c * 0.343) h)"},
     on-primary: #{"oklch(from var(--kendo-color-primary) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
-    primary-on-surface: #{"oklch(from var(--kendo-color-primary) l c h)"},
+    primary-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-primary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)"},
 
     // Secondary (ash-gray, achromatic)
     secondary-subtle: #{"oklch(from var(--kendo-color-secondary) calc(l + 0.0627) c h)"},
@@ -45,7 +45,7 @@ $_default-colors: (
     secondary-emphasis: #{"oklch(from var(--kendo-color-secondary) calc(l - 0.1968) c h)"},
     secondary-on-subtle: #{"oklch(from var(--kendo-color-secondary) clamp(0.27, (0.6 - l) * 99999, 0.95) 0 h)"},
     on-secondary: #{"oklch(from var(--kendo-color-secondary) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
-    secondary-on-surface: #{"oklch(from var(--kendo-color-secondary) calc(l - 0.1262) c h)"},
+    secondary-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-secondary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)"},
 
     // Tertiary (dodger-blue)
     tertiary-subtle: #{"oklch(from var(--kendo-color-tertiary) 0.8696 calc(c * 0.508) h)"},
@@ -57,7 +57,7 @@ $_default-colors: (
     tertiary-emphasis: #{"oklch(from var(--kendo-color-tertiary) calc(l + 0.0500) calc(c - 0.0091) h)"},
     tertiary-on-subtle: #{"oklch(from var(--kendo-color-tertiary) calc(l * 0.450) calc(c * 0.421) h)"},
     on-tertiary: #{"oklch(from var(--kendo-color-tertiary) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
-    tertiary-on-surface: #{"oklch(from var(--kendo-color-tertiary) calc(l * 0.755) calc(c * 0.742) h)"},
+    tertiary-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-tertiary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)"},
 
     // Info (lake-blue)
     info-subtle: #{"oklch(from var(--kendo-color-info) 0.9078 calc(c * 0.229) h)"},
@@ -69,7 +69,7 @@ $_default-colors: (
     info-emphasis: #{"oklch(from var(--kendo-color-info) calc(l + 0.0974) calc(c - 0.0250) h)"},
     info-on-subtle: #{"oklch(from var(--kendo-color-info) calc(l * 0.490) calc(c * 0.448) h)"},
     on-info: #{"oklch(from var(--kendo-color-info) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
-    info-on-surface: #{"oklch(from var(--kendo-color-info) calc(l * 0.762) calc(c * 0.743) h)"},
+    info-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-info) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)"},
 
     // Success (grass-green)
     success-subtle: #{"oklch(from var(--kendo-color-success) 0.8695 calc(c * 0.359) h)"},
@@ -81,7 +81,7 @@ $_default-colors: (
     success-emphasis: #{"oklch(from var(--kendo-color-success) calc(l + 0.0862) calc(c - 0.0345) h)"},
     success-on-subtle: #{"oklch(from var(--kendo-color-success) calc(l * 0.485) calc(c * 0.427) h)"},
     on-success: #{"oklch(from var(--kendo-color-success) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
-    success-on-surface: #{"oklch(from var(--kendo-color-success) calc(l * 0.760) calc(c * 0.740) h)"},
+    success-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-success) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)"},
 
     // Warning (honey-yellow)
     warning-subtle: #{"oklch(from var(--kendo-color-warning) 0.9164 calc(c * 0.439) h)"},
@@ -93,7 +93,7 @@ $_default-colors: (
     warning-emphasis: #{"oklch(from var(--kendo-color-warning) calc(l + 0.0268) calc(c - 0.0139) h)"},
     warning-on-subtle: #{"oklch(from var(--kendo-color-warning) calc(l * 0.461) calc(c * 0.479) h)"},
     on-warning: #{"oklch(from var(--kendo-color-warning) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
-    warning-on-surface: #{"oklch(from var(--kendo-color-warning) l c h)"},
+    warning-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-warning) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)"},
 
     // Error (brick-red)
     error-subtle: #{"oklch(from var(--kendo-color-error) 0.8575 calc(c * 0.273) h)"},
@@ -105,7 +105,7 @@ $_default-colors: (
     error-emphasis: #{"oklch(from var(--kendo-color-error) calc(l + 0.0755) calc(c - 0.0420) h)"},
     error-on-subtle: #{"oklch(from var(--kendo-color-error) calc(l * 0.482) calc(c * 0.445) h)"},
     on-error: #{"oklch(from var(--kendo-color-error) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
-    error-on-surface: #{"oklch(from var(--kendo-color-error) calc(l * 0.757) calc(c * 0.744) h)"},
+    error-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-error) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)"},
 
     // Inverse (ash-gray, achromatic)
     inverse-subtle: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.4675) c h)"},
@@ -117,7 +117,7 @@ $_default-colors: (
     inverse-emphasis: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.208) c h)"},
     inverse-on-subtle: #{"oklch(from var(--kendo-color-inverse) clamp(0, (l - 0.7) * 99999, 1) 0 h)"},
     on-inverse: #{"oklch(from var(--kendo-color-inverse) clamp(0, (0.7 - l) * 99999, 1) 0 h)"},
-    inverse-on-surface: #{"oklch(from var(--kendo-color-inverse) calc(l - 0.0504) c h)"},
+    inverse-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-inverse) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)"},
 
     // Series
     series: oklch(69.85% 0.1923 27.19deg),
