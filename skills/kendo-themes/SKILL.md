@@ -130,7 +130,7 @@ Compose them:
 }
 ```
 
-Variants can represent: **theme color** (primary, secondary, etc.), **fill mode** (solid, outline, flat), **size** (sm, md, lg), **roundedness** (sm, md, lg, full), or **direction** (horizontal, vertical).
+Variants can represent: **theme color** (primary, secondary, etc.), **fill mode** (solid, outline, flat), **size** (component-specific, e.g. sm, md, lg), **roundedness** (sm, md, lg, full), or **direction** (horizontal, vertical). Available sizes vary per component — consult [components.json](components.json) for exact values.
 
 > **Selector rule:** Use design tokens (`var(--kendo-color-*)`, `var(--kendo-spacing-*)`) in overrides rather than hardcoded values. This keeps customizations consistent when switching themes or swatches.
 
@@ -189,8 +189,9 @@ When building custom UI alongside Kendo components:
 
 Kendo components and Tailwind work side-by-side with **no conflicts**. The common pattern is Tailwind for layout and app-level styles, Kendo theme for component styles.
 
-Two approaches depending on which system owns the design tokens:
+Three approaches depending on which system owns the design tokens:
 
+- **External source**: A shared set of custom properties (from a design system or brand guidelines) feeds both Tailwind and Kendo.
 - **Tailwind-first**: You already have a Tailwind `@theme` — override Kendo CSS properties to follow it: `--kendo-<token>: var(--<tw-token>);`
 - **Kendo-first**: You start from a Kendo swatch — point Tailwind at Kendo tokens: `--<tw-token>: var(--kendo-<token>);`
 

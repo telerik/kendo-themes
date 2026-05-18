@@ -22,10 +22,6 @@ All themes provide 5 elevation levels: `--kendo-elevation-1` through `--kendo-el
 - Level 3–4: Popovers, popups, and overlays.
 - Level 5: Modals and high-priority layers.
 
-### Elevation Background
-
-In dark mode, themes also apply an `elevation-bg` function that subtly increases lightness at higher elevation levels (using OKLCH color math). This is automatic and does not require consumer configuration.
-
 ## Customization
 
 ### CSS Override
