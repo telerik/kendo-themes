@@ -11,6 +11,8 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-4">
+        <span class="k-colspan-all k-col-span-full">List sizes with an empty list item <i>(empty item is represented with a dashed outline)</i>
+        </span>
         <span>undefined</span>
         <span>small</span>
         <span>medium</span>
@@ -18,14 +20,17 @@
         <div class="k-list">
             <div class="k-list-content">
                 <ul aria-label="Options" id="list-normal-listbox" role="listbox" class="k-list-ul">
-                    <li id="k-list-item-1" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
                     </li>
-                    <li id="k-list-item-2" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
                     </li>
-                    <li id="k-list-item-3" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
+                    </li>
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item" style="outline-style: dashed; outline-width: 1px; outline-offset: -1px; outline-color: var(--kendo-color-border-alt);">
+                        <span class="k-list-item-text"></span>
                     </li>
                 </ul>
             </div>
@@ -33,14 +38,17 @@
         <div class="k-list k-list-sm">
             <div class="k-list-content">
                 <ul aria-label="Options" id="list-normal-listbox" role="listbox" class="k-list-ul">
-                    <li id="k-list-item-4" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
                     </li>
-                    <li id="k-list-item-5" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
                     </li>
-                    <li id="k-list-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
+                    </li>
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item" style="outline-style: dashed; outline-width: 1px; outline-offset: -1px; outline-color: var(--kendo-color-border-alt);">
+                        <span class="k-list-item-text"></span>
                     </li>
                 </ul>
             </div>
@@ -48,14 +56,17 @@
         <div class="k-list k-list-md">
             <div class="k-list-content">
                 <ul aria-label="Options" id="list-normal-listbox" role="listbox" class="k-list-ul">
-                    <li id="k-list-item-7" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
                     </li>
-                    <li id="k-list-item-8" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
                     </li>
-                    <li id="k-list-item-9" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
+                    </li>
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item" style="outline-style: dashed; outline-width: 1px; outline-offset: -1px; outline-color: var(--kendo-color-border-alt);">
+                        <span class="k-list-item-text"></span>
                     </li>
                 </ul>
             </div>
@@ -63,19 +74,22 @@
         <div class="k-list k-list-lg">
             <div class="k-list-content">
                 <ul aria-label="Options" id="list-normal-listbox" role="listbox" class="k-list-ul">
-                    <li id="k-list-item-10" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
                     </li>
-                    <li id="k-list-item-11" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
                     </li>
-                    <li id="k-list-item-12" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                         <span class="k-list-item-text">List item</span>
+                    </li>
+                    <li role="option" tabindex="-1" aria-selected="false" class="k-list-item" style="outline-style: dashed; outline-width: 1px; outline-offset: -1px; outline-color: var(--kendo-color-border-alt);">
+                        <span class="k-list-item-text"></span>
                     </li>
                 </ul>
             </div>
         </div>
-        <span class="k-colspan-all k-col-span-full">universal grouping and sticky header</span>
+        <span class="k-colspan-all k-col-span-full">Universal grouping and sticky header</span>
         <div class="k-list">
             <div class="k-list-group-sticky-header">
                 <div class="k-list-header-text">Group 1</div>
