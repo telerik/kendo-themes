@@ -9,23 +9,6 @@
 @mixin kendo-tabstrip--layout() {
     @include kendo-tabstrip--layout-base();
 
-    .k-tabstrip {
-
-        // TabStrip sizes
-        @each $size, $size-props in $kendo-tabstrip-sizes {
-            $_item-padding-x: map.get( $size-props, item-padding-x );
-
-            #{k-when-default($kendo-tabstrip-default-size, $size)}
-            &.k-tabstrip-#{$size} {
-                .k-tabstrip-items {
-                    .k-item-actions {
-                        margin-inline-end: calc( #{$_item-padding-x} / 1.5 );
-                    }
-                }
-            }
-        }
-    }
-
     .k-tabstrip-items-wrapper {
         .k-tabstrip-item,
         .k-item {

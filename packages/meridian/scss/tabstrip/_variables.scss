@@ -79,21 +79,24 @@ $kendo-tabstrip-item-border-radius: k-border-radius(xl) !default;
 /// The gap between the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-gap: k-spacing(0) !default;
+/// The horizontal spacing of the TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-item-spacing-x: k-spacing(1) !default;
 /// The horizontal padding of the small TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-sm-item-padding-x: k-spacing(3) !default;
+$kendo-tabstrip-sm-item-padding-x: k-spacing(2) !default;
 /// The vertical padding of the small TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-sm-item-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the medium TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-md-item-padding-x: k-spacing(3) !default;
+$kendo-tabstrip-md-item-padding-x: k-spacing(2) !default;
 /// The vertical padding of the medium TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-md-item-padding-y: k-spacing(2) !default;
 /// The horizontal padding of the large TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-lg-item-padding-x: k-spacing(3) !default;
+$kendo-tabstrip-lg-item-padding-x: k-spacing(2) !default;
 /// The vertical padding of the large TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-lg-item-padding-y: k-spacing(2.5) !default;
@@ -237,6 +240,7 @@ $kendo-tabstrip-item-focus-outline-offset: 3px !default;
     $kendo-tabstrip-item-border-width: $kendo-tabstrip-item-border-width,
     $kendo-tabstrip-item-border-radius: $kendo-tabstrip-item-border-radius,
     $kendo-tabstrip-item-gap: $kendo-tabstrip-item-gap,
+    $kendo-tabstrip-item-spacing-x: $kendo-tabstrip-item-spacing-x,
     $kendo-tabstrip-sm-item-padding-x: $kendo-tabstrip-sm-item-padding-x,
     $kendo-tabstrip-sm-item-padding-y: $kendo-tabstrip-sm-item-padding-y,
     $kendo-tabstrip-md-item-padding-x: $kendo-tabstrip-md-item-padding-x,
