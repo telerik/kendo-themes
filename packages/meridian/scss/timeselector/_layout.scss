@@ -1,4 +1,5 @@
 @use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 @use "../popup/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/timeselector/_layout.scss" as *;
 
@@ -12,6 +13,11 @@
     
     .k-time-list-container {
         padding-top: k-spacing(2);
+    }
+
+    .k-time-highlight,
+    .k-time-list-highlight {
+        inset-block-start: calc( 50% + (#{$kendo-time-list-title-height} + #{k-spacing(2)}) / 2 );
     }
 
     .k-time-footer.k-actions {
