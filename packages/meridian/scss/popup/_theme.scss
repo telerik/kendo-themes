@@ -5,7 +5,21 @@
 @mixin kendo-popup--theme() {
     @include kendo-popup--theme-base();
 
+    // Standalone popup — always blur
     .k-popup {
         backdrop-filter: k-translucency-blur(3);
+    }
+
+    // Inside animation container — no blur until shown
+    .k-animation-container {
+        .k-popup {
+            backdrop-filter: none;
+            transition: backdrop-filter k-transition(rapid);
+        }
+    }
+    .k-animation-container-shown {
+        .k-popup {
+            backdrop-filter: k-translucency-blur(3);
+        }
     }
 }
