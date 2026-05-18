@@ -233,8 +233,8 @@
 
                 &.k-toolbar-scrollable-overlay .k-toolbar-items-scroll:only-child,
                 .k-toolbar-items-scroll:not(:only-child) {
-                    padding-inline-end: 0;
-                    margin-inline-end: 0;
+                    padding-inline-end: $_padding-x;
+                    margin-inline-end: calc( #{$_padding-x} * -1 );
                 }
 
             }
