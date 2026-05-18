@@ -143,17 +143,53 @@ import "@progress/kendo-theme-meridian/dist/meridian-main.css";
 
 ## Data Visualization (Series)
 
-A base `series` token controls the starting point for chart colors. Six named series (`a` through `f`) are derived from it, each with 5 variants:
+Chart/data-viz colors use a three-layer cascade — override at the level of control you need:
 
-| Suffix | Purpose |
+### 1. Single Series Token (simplest)
+
+Set one value and all six series (`a`–`f`) plus their variants auto-compute via relative oklch:
+
+```css
+:root {
+  --kendo-color-series: oklch(69.85% 0.19 27deg);
+}
+```
+
+### 2. Per-Series Base
+
+Override individual series while keeping the others derived from `--kendo-color-series`:
+
+```css
+:root {
+  --kendo-color-series-a: oklch(65% 0.20 30deg);
+  --kendo-color-series-d: oklch(55% 0.18 250deg);
+}
+```
+
+Each per-series base auto-generates its bold, bolder, subtle, and subtler variants.
+
+### 3. Individual Variant Tokens (full control)
+
+Override specific variants for precise theming:
+
+```css
+:root {
+  --kendo-color-series-a-bold: oklch(55% 0.16 30deg);
+  --kendo-color-series-b-subtle: oklch(90% 0.08 95deg);
+}
+```
+
+### Variant Pattern
+
+Each series (`a` through `f`) follows this pattern:
+
+| Token | Purpose |
 |---|---|
 | `series-{x}` | Series base color |
 | `series-{x}-bold` | Darker variant |
 | `series-{x}-bolder` | Darkest variant |
 | `series-{x}-subtle` | Lighter variant |
 | `series-{x}-subtler` | Lightest variant |
-
-Where `{x}` is `a`, `b`, `c`, `d`, `e`, or `f`. All six series follow this same pattern.
 
 ## Further Reading
 
