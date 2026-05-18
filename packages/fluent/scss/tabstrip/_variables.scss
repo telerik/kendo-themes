@@ -79,21 +79,25 @@ $kendo-tabstrip-item-border-radius: var( --kendo-tabstrip-item-border-radius, #{
 /// @group tabstrip
 $kendo-tabstrip-item-gap: var( --kendo-tabstrip-item-gap, #{k-spacing(2)} ) !default;
 
+/// The horizontal spacing of the TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-item-spacing-x: var( --kendo-tabstrip-item-spacing-x, #{k-spacing(1)} ) !default;
+
 /// The horizontal padding of the small TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-sm-item-padding-x: var( --kendo-tabstrip-sm-item-padding-x, #{k-spacing(2)} ) !default;
+$kendo-tabstrip-sm-item-padding-x: var( --kendo-tabstrip-sm-item-padding-x, #{k-spacing(1)} ) !default;
 /// The vertical padding of the small TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-sm-item-padding-y: var( --kendo-tabstrip-sm-item-padding-y, #{k-spacing(2.5)} ) !default;
 /// The horizontal padding of the medium TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-md-item-padding-x: var( --kendo-tabstrip-md-item-padding-x, #{k-spacing(2.5)} ) !default;
+$kendo-tabstrip-md-item-padding-x: var( --kendo-tabstrip-md-item-padding-x, #{k-spacing(1.5)} ) !default;
 /// The vertical padding of the medium TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-md-item-padding-y: var( --kendo-tabstrip-md-item-padding-y, #{k-spacing(3)} ) !default;
 /// The horizontal padding of the large TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-lg-item-padding-x: var( --kendo-tabstrip-lg-item-padding-x, #{k-spacing(2)} ) !default;
+$kendo-tabstrip-lg-item-padding-x: var( --kendo-tabstrip-lg-item-padding-x, #{k-spacing(1)} ) !default;
 /// The vertical padding of the large TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-lg-item-padding-y: var( --kendo-tabstrip-lg-item-padding-y, #{k-spacing(3.5)} ) !default;
@@ -215,6 +219,7 @@ $kendo-tabstrip-scroll-button-spacing: var( --kendo-tabstrip-scroll-button-spaci
     $kendo-tabstrip-item-border-width: $kendo-tabstrip-item-border-width,
     $kendo-tabstrip-item-border-radius: $kendo-tabstrip-item-border-radius,
     $kendo-tabstrip-item-gap: $kendo-tabstrip-item-gap,
+    $kendo-tabstrip-item-spacing-x: $kendo-tabstrip-item-spacing-x,
     $kendo-tabstrip-sm-item-padding-x: $kendo-tabstrip-sm-item-padding-x,
     $kendo-tabstrip-sm-item-padding-y: $kendo-tabstrip-sm-item-padding-y,
     $kendo-tabstrip-md-item-padding-x: $kendo-tabstrip-md-item-padding-x,

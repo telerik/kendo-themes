@@ -57,10 +57,6 @@
                         padding-block: $_item-padding-y;
                         padding-inline: $_item-padding-x;
                     }
-
-                    .k-item-actions {
-                        margin-inline-end: calc( #{$_item-padding-x} / 2 );
-                    }
                 }
 
                 :is(&.k-tabstrip-left, &.k-tabstrip-right):is(.k-tabstrip-scrollable-overlay) :is(.k-tabstrip-items-wrapper){
@@ -108,7 +104,8 @@
         .k-tabstrip-item,
         .k-item {
             margin: 0;
-            padding: 0;
+            padding-block: 0;
+            padding-inline: $kendo-tabstrip-item-spacing-x;
             border: $kendo-tabstrip-item-border-width solid transparent;
             position: relative;
             flex-shrink: 0;
