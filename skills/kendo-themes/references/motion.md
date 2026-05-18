@@ -30,7 +30,7 @@ Override motion tokens using the CSS or Sass patterns from the [main skill](../S
 | `languid` | `900ms` | `--kendo-duration-languid` |
 | `sluggish` | `1000ms` | `--kendo-duration-sluggish` |
 
-Durations respect `--kendo-duration-global` multiplier, which can be set to `0` for `prefers-reduced-motion`.
+Durations respect `--kendo-duration-global` — when set, all duration tokens resolve to its value. The built-in `prefers-reduced-motion` media query sets it to `0.01ms`.
 
 ### Easings
 
