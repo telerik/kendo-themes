@@ -80,4 +80,8 @@
             background: $kendo-calendar-range-start-bg;
         }
     }
+
+    .k-calendar-infinite .k-calendar-header {
+        backdrop-filter: none;
+    }
 }
