@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.0...v14.1.0-dev.1) (2026-05-18)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
 # [14.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.0.0...v14.1.0-dev.0) (2026-05-15)
 
 
