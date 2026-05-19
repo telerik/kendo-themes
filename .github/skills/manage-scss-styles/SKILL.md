@@ -2,6 +2,8 @@
 name: manage-scss-styles
 description: Create or update SCSS layout mixins, theme mixins, module entry points (_index.scss), and registration in theme entry points for a Kendo UI component. Covers the full component SCSS lifecycle — structural styles, visual styles, wiring, and registration. Use this skill when the user wants to change a component's CSS structure, add visual states, create the style skeleton for a new component, wire up dependencies, or register a component in a theme.
 argument-hint: "[component] e.g. chip, button, tooltip"
+metadata:
+  internal: true
 ---
 
 # SCSS Styles

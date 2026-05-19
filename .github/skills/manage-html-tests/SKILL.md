@@ -2,6 +2,8 @@
 name: manage-html-tests
 description: Create or update visual test scenarios for a Kendo UI component in the HTML package. Creates TSX test files that exercise component states, variants, and edge cases for screenshot-based visual regression testing. Use this skill when the user wants to add test coverage, create visual tests, or ensure a component has proper test scenarios.
 argument-hint: "[component] e.g. button, chip, grid"
+metadata:
+  internal: true
 ---
 
 # Add Visual Test

@@ -2,6 +2,8 @@
 name: manage-scss-variables
 description: Create or update SCSS variables for a Kendo UI component — null declarations in core and concrete overrides in targeted theme packages. Handles SassDoc comments, @forward maps, and theme-specific conventions (Fluent CSS custom properties). Use this skill when the user wants to add, change, or remove a component variable.
 argument-hint: "[component] [variable-name] e.g. chip gap, button padding-x"
+metadata:
+  internal: true
 ---
 
 # SCSS Variables
