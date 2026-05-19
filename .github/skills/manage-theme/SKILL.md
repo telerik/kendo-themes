@@ -2,6 +2,8 @@
 name: manage-theme
 description: Create a new Kendo UI theme package from scratch or update an existing theme's design tokens, swatches, and component overrides. Handles package scaffolding, core re-exports, swatch configuration, design token changes (spacing, colors, elevation, typography, border-radii), and component-level variable/style overrides. Use this skill when the user wants to create a new theme, change a theme's design tokens, add or edit swatches, or apply broad styling changes across components in a theme.
 argument-hint: "[theme-name] e.g. new-brand, default, fluent"
+metadata:
+  internal: true
 ---
 
 # Theme

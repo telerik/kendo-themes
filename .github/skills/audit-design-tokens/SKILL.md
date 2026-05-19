@@ -3,6 +3,8 @@ name: audit-design-tokens
 description: Audit and report on design token usage (color, spacing, typography, elevation, border-radius) across SCSS packages. Scans for hardcoded values (hex colors, raw px/rem, font stacks, literal box-shadows) that should use design token functions like k-spacing(), k-color(), k-elevation(), k-border-radius(), or $kendo-* variables. Use this skill when the user wants to find hardcoded colors, audit spacing tokens, check typography consistency, or enforce token usage.
 argument-hint: "[component-or-package] [--category color|spacing|typography|elevation|border-radius]"
 compatibility: Requires bash, grep, awk, sed (macOS or Linux)
+metadata:
+  internal: true
 ---
 
 # Design Token Audit
