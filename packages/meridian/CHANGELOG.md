@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.2...v14.1.0-dev.3) (2026-05-19)
+
+
+### Bug Fixes
+
+* **meridian:** animations on blured popups ([7749596](https://github.com/telerik/kendo-themes/commit/774959666602aa7a8f237eec80a5ffd5f57e8558))
+* **meridian:** timeselector highlight alignment ([6f5f119](https://github.com/telerik/kendo-themes/commit/6f5f1195a21fe6c9a0b1bb28b440dc0787c6d6c0))
+
+
+
+
+
 # [14.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.1...v14.1.0-dev.2) (2026-05-18)
 
 

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.2...v14.1.0-dev.3) (2026-05-19)
+
+
+### Bug Fixes
+
+* **list:** item without text has wrong height ([6064a97](https://github.com/telerik/kendo-themes/commit/6064a970228c718c4518efc39def2131bb3120a6))
+* **meridian:** animations on blured popups ([7749596](https://github.com/telerik/kendo-themes/commit/774959666602aa7a8f237eec80a5ffd5f57e8558))
+* **meridian:** timeselector highlight alignment ([6f5f119](https://github.com/telerik/kendo-themes/commit/6f5f1195a21fe6c9a0b1bb28b440dc0787c6d6c0))
+* **skill:** correct dropdown-list mixin name in evals ([41742ac](https://github.com/telerik/kendo-themes/commit/41742ac006b7abb089f1223f1ed07bbd79ffa0e3))
+* **skills:** rewrite iconography — remove false CSS variable claim ([a20e0ee](https://github.com/telerik/kendo-themes/commit/a20e0ee32c48c4b1f43707035b57e6d9f492ea58))
+
+
+### Features
+
+* **skill:** add kendo-themes skill ([cf37535](https://github.com/telerik/kendo-themes/commit/cf3753567f1e019afd4c28e1121929a7a5ee6750))
+
+
+
+
+
 # [14.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.1...v14.1.0-dev.2) (2026-05-18)
 
 
