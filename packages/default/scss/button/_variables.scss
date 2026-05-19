@@ -111,7 +111,7 @@ $kendo-button-lg-inner-calc-size: calc( ( #{$kendo-button-lg-line-height} * 1em 
 
 /// The base background of the Button.
 /// @group button
-$kendo-button-bg: k-color(base) !default;
+$kendo-button-bg: red !default;
 /// The base text color of the Button.
 /// @group button
 $kendo-button-text: k-color(on-base) !default;

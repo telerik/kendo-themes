@@ -3,7 +3,7 @@ import { classNames, optionClassNames, stateClassNames, variantClassNames, State
 
 import { KendoComponent, KendoBaseProps } from '../_types/component';
 import { BUTTON_FOLDER_NAME, BUTTON_MODULE_NAME } from './constants';
-export const BUTTON_CLASSNAME = `k-button`;
+export const BUTTON_CLASSNAME = `k-button k-button-extra`;
 
 const BUTTON_VARIANTS = ["icon-button"] as const;
 
