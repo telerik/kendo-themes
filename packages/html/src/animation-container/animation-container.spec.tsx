@@ -10,6 +10,7 @@ const options = {};
 
 export type KendoAnimationContainerProps = {
     positionMode?: "absolute" | "fixed";
+    shown?: boolean;
     offset?: {
         top: number | string;
         left: number | string;
@@ -18,7 +19,8 @@ export type KendoAnimationContainerProps = {
 };
 
 const defaultOptions = {
-    positionMode: "absolute"
+    positionMode: "absolute",
+    shown: true
 };
 
 export const AnimationContainer: KendoComponent<KendoAnimationContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
@@ -28,6 +30,7 @@ export const AnimationContainer: KendoComponent<KendoAnimationContainerProps & R
 ) => {
     const {
         positionMode = defaultOptions.positionMode,
+        shown = defaultOptions.shown,
         animationStyle,
         offset,
         ...other
@@ -41,8 +44,8 @@ export const AnimationContainer: KendoComponent<KendoAnimationContainerProps & R
             className={classNames(
                 props.className,
                 ANIMATION_CONTAINER_CLASSNAME,
-                "k-animation-container-shown",
                 {
+                    ["k-animation-container-shown"]: shown,
                     ["k-animation-container-fixed"]: positionMode === "fixed"
                 }
             )}

@@ -2,6 +2,8 @@
 name: manage-html-templates
 description: Create or update reusable HTML templates for a Kendo UI component in the HTML package. Templates are preset configurations of a component spec, used by visual tests and documentation. Use this skill when the user wants to add a template variant, create a preset configuration, or add a reusable component shorthand.
 argument-hint: "[component] [variant] e.g. chip icon, button icon-text"
+metadata:
+  internal: true
 ---
 
 # Add HTML Template

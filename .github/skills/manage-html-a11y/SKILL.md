@@ -3,6 +3,8 @@ name: manage-html-a11y
 description: Create or update ARIA accessibility attributes and tests for a Kendo UI component. Reads the ARIA reference doc, builds ariaSpec rules on the HTML spec, applies attributes to TSX templates, and validates with the a11y test runner until all violations and coverage gaps are resolved. Use this skill when the user wants to add accessibility support, fix ARIA violations, update ariaSpec rules, or ensure a component is WCAG 2.2 Level AA compliant.
 argument-hint: "[component] e.g. button, checkbox, grid"
 compatibility: Requires Node.js with npm, and a built HTML package
+metadata:
+  internal: true
 ---
 
 # Add Accessibility
