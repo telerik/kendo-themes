@@ -15,6 +15,10 @@
 
         .k-panelbar-item {
             padding-block-start: k-spacing(0.5);
+
+            .k-animation-container {
+                overflow: visible;
+            }
         }
 
         > .k-panelbar-header > .k-link {

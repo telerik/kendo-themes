@@ -70,11 +70,11 @@ const defaultAnnotationsToolbar =
         <ToolbarSeparator />
         <Button fillMode="flat" icon="sticky-note" aria-label="Sticky note" />
         <ToolbarSeparator />
-        <Button fillMode="flat" icon="ruler-outline" aria-label="Ruler" />
+        <Button fillMode="flat" icon="ruler" aria-label="Ruler" />
         <ToolbarSeparator />
         <Button fillMode="flat" icon="comment" aria-label="Comment" />
         <ToolbarSeparator />
-        <Button fillMode="flat" icon="eraser-outline" aria-label="Eraser" />
+        <Button fillMode="flat" icon="eraser" aria-label="Eraser" />
         <span className="k-spacer"></span>
         <Button fillMode="flat" icon="x" aria-label="Close" />
     </Toolbar>

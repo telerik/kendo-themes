@@ -55,7 +55,7 @@ $kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
 
 /// The font weight of the selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+$kendo-menu-item-selected-font-weight: normal !default;
 
 /// The background color of the Menu item.
 /// @group menu
@@ -88,7 +88,7 @@ $kendo-menu-item-hover-gradient: null !default;
 $kendo-menu-item-active-bg: null !default;
 /// The text color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-text: k-color(primary) !default;
+$kendo-menu-item-active-text: k-color(secondary-on-surface) !default;
 /// The border color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-border: null !default;
@@ -113,7 +113,7 @@ $kendo-menu-focus-outline-offset: 1px !default;
 $kendo-menu-item-selected-bg: null !default;
 /// The text color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-text: k-color(primary) !default;
+$kendo-menu-item-selected-text: k-color(secondary-on-surface) !default;
 /// The border color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-border: null !default;

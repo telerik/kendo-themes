@@ -25,6 +25,11 @@
         }
     }
 
+    .k-calendar-infinite .k-calendar-navigation {
+        border-start-start-radius: $kendo-calendar-border-radius;
+        border-end-start-radius: $kendo-calendar-border-radius;
+    }
+
     // Calendar in popup
     .k-popup > .k-calendar {
         border-radius: inherit;

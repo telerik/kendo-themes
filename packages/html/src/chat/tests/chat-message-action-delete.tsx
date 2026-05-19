@@ -72,7 +72,7 @@ export default () =>(
                 <ContextMenu>
                     <MenuListItem first text="Reply" icon="undo"></MenuListItem>
                     <MenuListItem text="Copy" icon="copy"></MenuListItem>
-                    <MenuListItem text="Pin" icon="pin-outline"></MenuListItem>
+                    <MenuListItem text="Pin" icon="pin"></MenuListItem>
                     <MenuListItem last text="Delete" icon="trash" selected></MenuListItem>
                 </ContextMenu>
             </Popup>

@@ -88,5 +88,10 @@
                 outline: 0;
             }
         }
+
+        .k-input-prefix,
+        .k-input-suffix {
+            --kendo-focus-outline-offset: -1px;
+        }
     }
 }

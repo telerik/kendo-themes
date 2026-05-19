@@ -30,7 +30,7 @@ export default () =>(
                     <ChatMessageGroup type="sender">
                         <ChatMessage toolbar toolbarItems={[
                             <Button icon="copy" fillMode="flat" size="xsmall"></Button>,
-                            <Button icon="arrows-rotate-outline" fillMode="flat" size="xsmall"></Button>,
+                            <Button icon="arrows-rotate" fillMode="flat" size="xsmall"></Button>,
                             <Button icon="download" fillMode="flat" size="xsmall"></Button>,
                             <ToolbarSeparator></ToolbarSeparator>,
                             <Button icon="thumb-up" fillMode="flat" size="xsmall"></Button>,

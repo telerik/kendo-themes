@@ -172,7 +172,7 @@ export default () => (
             <ColumnMenuItemWrapper>
               <ColumnMenuItem text="Hide row" startIcon="eye-slash" />
               <ColumnMenuItem text="Set row sticky" startIcon="stick" />
-              <ColumnMenuExpander itemText="Pin row" itemStartIcon="pin-outline" expanderIcon="chevron-right" />
+              <ColumnMenuExpander itemText="Pin row" itemStartIcon="pin" expanderIcon="chevron-right" />
               <ColumnMenuExpander itemText="Copy" itemStartIcon="copy" expanderIcon="chevron-right" />
               <ColumnMenuItem text="Select all rows" startIcon="grid-layout" />
               <ColumnMenuExpander itemText="Export" itemStartIcon="export" expanderIcon="chevron-right" />
@@ -258,8 +258,8 @@ export default () => (
         >
           <ColumnMenuNormal size="large">
             <ColumnMenuItemWrapper>
-              <ColumnMenuItem text="Pin row to top" startIcon="pin-outline-top" selected />
-              <ColumnMenuItem text="Pin row to bottom" startIcon="pin-outline-bottom" />
+              <ColumnMenuItem text="Pin row to top" startIcon="pin-top" selected />
+              <ColumnMenuItem text="Pin row to bottom" startIcon="pin-bottom" />
             </ColumnMenuItemWrapper>
           </ColumnMenuNormal>
         </ActionSheetNormal>
