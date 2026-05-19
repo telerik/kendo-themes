@@ -21,14 +21,6 @@ jobs:
     name: Test HTML spec
     uses: ./.github/workflows/_test-html-spec.yml
 
-  ci-test-html-spec:
-    name: Status check > HTML spec
-    runs-on: ubuntu-latest
-    needs: [ test-html-spec ]
-    steps:
-      - name: Done
-        run: echo "Done!"
-
   render-test-pages:
     name: Render test pages
     uses: ./.github/workflows/_render-test-pages.yml
@@ -39,7 +31,7 @@ jobs:
   create-screenshots:
     name: Create screenshots
     uses: ./.github/workflows/_create-screenshots.yml
-    needs: [ compile-themes, render-test-pages ]
+    needs: [ compile-themes ]
 
 
   detect-changes:
@@ -97,7 +89,7 @@ jobs:
   set-commit-status:
     name: Set commit status
     runs-on: ubuntu-latest
-    needs: [ detect-changes, ci-lint-scripts, ci-lint-styles, ci-docs, ci-test-units, ci-test-integrations, ci-a11y, ci-test-html-spec ]
+    needs: [ detect-changes, lint-scripts, lint-styles, docs, test-units, test-integrations, a11y, test-html-spec ]
     timeout-minutes: 30
     if: ${{ always() && needs.detect-changes.outputs.snapshot_sha }}
 
@@ -110,13 +102,13 @@ jobs:
         with:
           script: |
             const results = [
-              ['${{ needs.ci-test-units.result }}', 'Status check > Unit'],
-              ['${{ needs.ci-test-integrations.result }}', 'Status check > Integration'],
-              ['${{ needs.ci-lint-scripts.result }}', 'Status check > Lint scripts'],
-              ['${{ needs.ci-lint-styles.result }}', 'Status check > Lint styles'],
-              ['${{ needs.ci-a11y.result }}', 'Status check > A11y'],
-              ['${{ needs.ci-docs.result }}', 'Status check > Docs'],
-              ['${{ needs.ci-test-html-spec.result }}', 'Status check > HTML spec'],
+              ['${{ needs.test-units.result }}', 'Status check > Unit'],
+              ['${{ needs.test-integrations.result }}', 'Status check > Integration'],
+              ['${{ needs.lint-scripts.result }}', 'Status check > Lint scripts'],
+              ['${{ needs.lint-styles.result }}', 'Status check > Lint styles'],
+              ['${{ needs.a11y.result }}', 'Status check > A11y'],
+              ['${{ needs.docs.result }}', 'Status check > Docs'],
+              ['${{ needs.test-html-spec.result }}', 'Status check > HTML spec'],
               // Visual status will correspond to this detect-changes job succeeding (since snapshots updated successfully)
               ['success', 'Status check > Visual']
             ];
@@ -142,39 +134,15 @@ jobs:
               })
             ));
 
-  ci-visual:
-    name: Status check > Visual
-    runs-on: ubuntu-latest
-    needs: [ detect-changes ]
-    steps:
-      - name: Done
-        run: echo "Done!"
-
 
   lint-scripts:
     name: Lint scripts
     uses: ./.github/workflows/_lint-scripts.yml
 
-  ci-lint-scripts:
-    name: Status check > Lint scripts
-    runs-on: ubuntu-latest
-    needs: [ lint-scripts ]
-    steps:
-      - name: Done
-        run: echo "Done!"
-
 
   lint-styles:
     name: Lint styles
     uses: ./.github/workflows/_lint-styles.yml
-
-  ci-lint-styles:
-    name: Status check > Lint styles
-    runs-on: ubuntu-latest
-    needs: [ lint-styles ]
-    steps:
-      - name: Done
-        run: echo "Done!"
 
   a11y:
     name: A11y
@@ -182,14 +150,6 @@ jobs:
     uses: ./.github/workflows/_test-contrast.yml
     with:
       max-chunks: 4
-
-  ci-a11y:
-    name: Status check > A11y
-    runs-on: ubuntu-latest
-    needs: [ a11y ]
-    steps:
-      - name: Done
-        run: echo "Done!"
 
   a11y-specs:
     name: A11y Specs
@@ -213,36 +173,52 @@ jobs:
     needs: [ compile-themes ]
     uses: ./.github/workflows/_docs-check.yml
 
-  ci-docs:
-    name: Status check > Docs
-    runs-on: ubuntu-latest
-    needs: [ docs ]
-    steps:
-      - name: Done
-        run: echo "Done!"
-
 
   test-units:
     name: Test units
     uses: ./.github/workflows/_test-units.yml
-
-  ci-test-units:
-    name: Status check > Unit
-    runs-on: ubuntu-latest
-    needs: [ test-units ]
-    steps:
-      - name: Done
-        run: echo "Done!"
 
 
   test-integrations:
     name: Test integrations
     uses: ./.github/workflows/_test-integrations.yml
 
-  ci-test-integrations:
-    name: Status check > Integration
+
+  ci-gate:
+    name: CI Gate
     runs-on: ubuntu-latest
-    needs: [ test-integrations ]
+    if: ${{ always() }}
+    needs: [ detect-changes, lint-scripts, lint-styles, docs, test-units, test-integrations, a11y, test-html-spec ]
     steps:
-      - name: Done
-        run: echo "Done!"
+      - name: Evaluate results
+        run: |
+          echo "Results:"
+          echo "  lint-scripts: ${{ needs.lint-scripts.result }}"
+          echo "  lint-styles: ${{ needs.lint-styles.result }}"
+          echo "  test-html-spec: ${{ needs.test-html-spec.result }}"
+          echo "  test-units: ${{ needs.test-units.result }}"
+          echo "  test-integrations: ${{ needs.test-integrations.result }}"
+          echo "  docs: ${{ needs.docs.result }}"
+          echo "  a11y: ${{ needs.a11y.result }}"
+          echo "  detect-changes: ${{ needs.detect-changes.result }}"
+
+          FAILED=0
+          for result in \
+            "${{ needs.lint-scripts.result }}" \
+            "${{ needs.lint-styles.result }}" \
+            "${{ needs.test-html-spec.result }}" \
+            "${{ needs.test-units.result }}" \
+            "${{ needs.test-integrations.result }}" \
+            "${{ needs.docs.result }}" \
+            "${{ needs.a11y.result }}" \
+            "${{ needs.detect-changes.result }}"; do
+            if [[ "$result" != "success" && "$result" != "skipped" ]]; then
+              FAILED=1
+            fi
+          done
+
+          if [[ "$FAILED" == "1" ]]; then
+            echo "::error::One or more CI checks failed"
+            exit 1
+          fi
+          echo "All checks passed!"

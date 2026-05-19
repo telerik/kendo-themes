@@ -76,11 +76,21 @@ jobs:
 
     steps:
 
-      - name: Setup Firefox
+      - name: Cache Firefox
+        id: cache-firefox
+        uses: actions/cache@v5
+        with:
+          path: ~/firefox
+          key: firefox-linux64
+
+      - name: Install Firefox
+        if: steps.cache-firefox.outputs.cache-hit != 'true'
         run: |
-          sudo wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
-          sudo tar xJf /tmp/firefox.tar.bz2 -C /opt
-          sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
+          wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
+          tar xf /tmp/firefox.tar.bz2 -C ~/
+
+      - name: Add Firefox to PATH
+        run: echo "$HOME/firefox" >> $GITHUB_PATH
 
       - name: Print Firefox version
         run: firefox --version

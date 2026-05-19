@@ -9,8 +9,64 @@ concurrency:
 
 jobs:
 
+  prepare-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v6
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v5
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Build SCSS and docs for all themes
+        run: |
+          npm run sass
+          npm run docs
+
+      - name: Pack docs artifacts
+        run: |
+          tar -cf unit-test-docs.tar \
+            packages/core/dist \
+            packages/core/docs \
+            packages/default/dist \
+            packages/default/docs \
+            packages/bootstrap/dist \
+            packages/bootstrap/docs \
+            packages/material/dist \
+            packages/material/docs \
+            packages/classic/dist \
+            packages/classic/docs \
+            packages/fluent/dist \
+            packages/fluent/docs \
+            packages/meridian/dist \
+            packages/meridian/docs
+
+      - name: Upload docs artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: unit-test-docs
+          path: unit-test-docs.tar
+
   run:
     runs-on: ubuntu-latest
+    needs: [ prepare-docs ]
 
     strategy:
         matrix:
@@ -39,12 +95,13 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
-      - name: Build test assets
-        run: |
-          npm run sass --prefix packages/core
-          npm run docs --prefix packages/core
-          npm run sass --prefix packages/${{matrix.theme}}
-          npm run docs --prefix packages/${{matrix.theme}}
+      - name: Download docs artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: unit-test-docs
+
+      - name: Unpack docs artifacts
+        run: tar -xf unit-test-docs.tar
 
       - name: Run Jest tests
         run: |
