@@ -84,7 +84,7 @@ export default () => (
             <Popup className="k-menu-popup receiver">
                 <ContextMenu>
                     <MenuListItem first text="Download" icon="download"></MenuListItem>
-                    <MenuListItem text="Pin" icon="pin-outline" selected></MenuListItem>
+                    <MenuListItem text="Pin" icon="pin" selected></MenuListItem>
                 </ContextMenu>
             </Popup>
 
@@ -140,7 +140,7 @@ export default () => (
             <Popup className="k-menu-popup sender">
                 <ContextMenu>
                     <MenuListItem first text="Download" icon="download"></MenuListItem>
-                    <MenuListItem text="Pin" icon="pin-outline" selected></MenuListItem>
+                    <MenuListItem text="Pin" icon="pin" selected></MenuListItem>
                     <MenuListItem last text="Delete" icon="trash"></MenuListItem>
                 </ContextMenu>
             </Popup>

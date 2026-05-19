@@ -10,6 +10,10 @@
     .k-bottom-nav {
         backdrop-filter: k-translucency-blur(2);
 
+        .k-bottom-nav-item {
+            background-color: transparent;
+        }
+
         .k-bottom-nav-item.k-focus,
         .k-bottom-nav-item:focus {
             @include focus-indicator(

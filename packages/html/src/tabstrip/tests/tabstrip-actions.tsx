@@ -10,13 +10,13 @@ export default () => (
                 <TabStripNormal
                   tabStripItems={
                     <>
-                      <TabStripItem first value="One Action" actions={<Button fillMode="flat" icon="pin"></Button>}/>
+                      <TabStripItem first value="One Action" actions={<Button fillMode="flat" icon="pin" size="xsmall"></Button>}/>
                       <TabStripItem active value="Two Actions" actions={
                         <>
-                          <Button fillMode="flat" icon="pin"></Button>
-                          <Button fillMode="flat" icon="more-vertical"></Button>
+                          <Button fillMode="flat" icon="pin" size="xsmall"></Button>
+                          <Button fillMode="flat" icon="more-vertical" size="xsmall"></Button>
                         </>}/>
-                        <TabStripItem last value="Action and Close" closable actions={<Button fillMode="flat" icon="pin"></Button>}/>
+                        <TabStripItem last value="Action and Close" closable actions={<Button fillMode="flat" icon="pin" size="xsmall"></Button>}/>
                     </>
                 }
                 >

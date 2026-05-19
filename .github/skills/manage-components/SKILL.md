@@ -2,6 +2,8 @@
 name: manage-components
 description: Create or update a Kendo UI component across kendo-themes packages. For new components, scaffolds core skeleton with null variables, theme overrides for targeted themes, HTML spec, templates, visual tests, and unit tests. For existing components, audits the current state, produces a change plan, and applies SCSS variable changes, layout/theme updates, HTML spec modifications, and test additions. Use this skill when the user wants to add a new component, update a component's design, change styling values, add new states or options, or align a component with design assets.
 argument-hint: "[component-name] e.g. chip, button, info-bar"
+metadata:
+  internal: true
 ---
 
 # Component

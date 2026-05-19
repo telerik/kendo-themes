@@ -2,6 +2,8 @@
 name: manage-html-specs
 description: Create or update an HTML component specification (.spec.tsx) in the HTML package. Defines the component's TypeScript types, options, states, render function, constants, and index exports. Use this skill when the user wants to create a new HTML spec, add states/options to a component, or modify a component's HTML structure.
 argument-hint: "[component] e.g. button, chip, grid"
+metadata:
+  internal: true
 ---
 
 # Add HTML Component Spec

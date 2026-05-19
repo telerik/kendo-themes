@@ -2131,7 +2131,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-bottom-nav-flat-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-elevation-bg(1, k-color(surface-alt)))</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat BottomNavigation.</div></div>
@@ -4141,7 +4141,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the header in the Calendar.</div></div>
@@ -5303,7 +5303,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-card-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-elevation-bg(1, k-color(surface-alt)))</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Card.</div></div>
@@ -7493,7 +7493,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-chat-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat Toolbar.</div></div>
@@ -11842,7 +11842,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-dialog-titlebar-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog titlebar.</div></div>
@@ -12542,7 +12542,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-drawer-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-elevation-bg(1, k-color(surface-alt)))</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer.</div></div>
@@ -12842,7 +12842,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-drawer-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-drawer-bg</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Drawer item.</div></div>
@@ -17713,22 +17713,42 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-grid-sticky-container-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
+    <td>List</td>
+    <td><code>0 2px 4px 0 rgba(56, 66, 80, 0.08)</code></td>
+    <td><code>(0 2px 4px 0 rgba(56, 66, 80, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container in the Grid.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-sticky-container-bottom-shadow</td>
+    <td>List</td>
+    <td><code>0 -2px 4px 0 rgba(56, 66, 80, 0.08)</code></td>
+    <td><code>(0 -2px 4px 0 rgba(56, 66, 80, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container positioned at the bottom in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-pinned-container-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(4)</code></td>
-    <td><code>var(--kendo-elevation-4)</code></td>
+    <td>List</td>
+    <td><code>0 4px 8px 0 rgba(56, 66, 80, 0.08)</code></td>
+    <td><code>(0 4px 8px 0 rgba(56, 66, 80, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container in the Grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-pinned-container-bottom-shadow</td>
+    <td>List</td>
+    <td><code>0 -4px 8px 0 rgba(56, 66, 80, 0.08)</code></td>
+    <td><code>(0 -4px 8px 0 rgba(56, 66, 80, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container positioned at the bottom in the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -20792,7 +20812,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-listbox-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ListBox.</div></div>
@@ -22211,8 +22231,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-menu-item-selected-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
-    <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
+    <td><code>normal</code></td>
+    <td><code>normal</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the selected Menu item.</div></div>
@@ -22311,8 +22331,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-menu-item-active-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary-on-surface)</code></td>
+    <td><code>var(--kendo-color-secondary-on-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active Menu item.</div></div>
@@ -22381,8 +22401,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-menu-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary-on-surface)</code></td>
+    <td><code>var(--kendo-color-secondary-on-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected Menu item.</div></div>
@@ -22632,7 +22652,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-menu-popup-bg</td>
     <td>String</td>
     <td><code>$kendo-popup-bg</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Menu popup.</div></div>
@@ -24811,7 +24831,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-pager-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
@@ -24889,9 +24909,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-pager-item-spacing</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing around the Pager items.</div></div>
@@ -25270,7 +25290,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-panelbar-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar.</div></div>
@@ -25300,7 +25320,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-panelbar-header-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-bg</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar header.</div></div>
@@ -27440,7 +27460,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-popover-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-elevation-bg(2, k-color(surface-alt)))</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover.</div></div>
@@ -27720,7 +27740,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-popup-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-elevation-bg(2, k-color(surface-alt)))</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the popup.</div></div>
@@ -29176,7 +29196,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-scheduler-toolbar-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg($kendo-toolbar-bg)</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base)))) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%)))) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler ToolBar.</div></div>
@@ -29216,7 +29236,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-scheduler-footer-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg($kendo-toolbar-bg)</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base)))) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%)))) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler footer.</div></div>
@@ -29876,7 +29896,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-scheduler-header-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler header.</div></div>
@@ -31918,7 +31938,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet header.</div></div>
@@ -31958,7 +31978,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-spreadsheet-table-header-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-header-bg</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet table headers.</div></div>
@@ -35338,10 +35358,20 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-tabstrip-item-spacing-x</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the TabStrip items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tabstrip-sm-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small TabStrip items.</div></div>
@@ -35360,8 +35390,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-tabstrip-md-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium TabStrip items.</div></div>
@@ -35380,8 +35410,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-tabstrip-lg-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large TabStrip items.</div></div>
@@ -35760,7 +35790,7 @@ The following table lists the available variables for customizing the Meridian t
         item-padding-y: $kendo-tabstrip-lg-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-x":"var(--kendo-spacing-3)","item-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TabStrip.</div></div>
@@ -38029,7 +38059,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
-    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
@@ -38079,7 +38109,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>List</td>
     <td><code>$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
-    <td><code>(oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base)))), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
+    <td><code>(oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%)))), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left and right scroll overlay of the Toolbar.</div></div>
@@ -38408,7 +38438,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-tooltip-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-elevation-bg(2, k-color(inverse)))</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-inverse) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-inverse) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default background of the Tooltip.</div></div>
@@ -41001,7 +41031,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-window-titlebar-bg</td>
     <td>String</td>
     <td><code>k-translucency-bg(k-elevation-bg(3, k-color(surface-alt)))</code></td>
-    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 3 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 3 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
+    <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 3 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 3 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window titlebar.</div></div>

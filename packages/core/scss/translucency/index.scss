@@ -1,7 +1,7 @@
 $kendo-translucency-base: 0% !default;
 
 @function k-translucency-bg($color) {
-    $_result: "oklch(from #{$color} l c h / calc(100% - calc(var(--kendo-translucency-base))))";
+    $_result: "oklch(from #{$color} l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))";
     @return #{$_result};
 }
 

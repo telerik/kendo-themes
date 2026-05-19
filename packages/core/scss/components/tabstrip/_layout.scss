@@ -57,10 +57,6 @@
                         padding-block: $_item-padding-y;
                         padding-inline: $_item-padding-x;
                     }
-
-                    .k-item-actions {
-                        margin-inline-end: calc( #{$_item-padding-x} / 2 );
-                    }
                 }
 
                 :is(&.k-tabstrip-left, &.k-tabstrip-right):is(.k-tabstrip-scrollable-overlay) :is(.k-tabstrip-items-wrapper){
@@ -108,7 +104,8 @@
         .k-tabstrip-item,
         .k-item {
             margin: 0;
-            padding: 0;
+            padding-block: 0;
+            padding-inline: $kendo-tabstrip-item-spacing-x;
             border: $kendo-tabstrip-item-border-width solid transparent;
             position: relative;
             flex-shrink: 0;
@@ -501,7 +498,9 @@
             .k-tabstrip-item,
             .k-item {
                 @include border-top-radius( $kendo-tabstrip-item-border-radius );
-                border-block-end-width: 0;
+                margin-block-end: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                border-block-end-width: $kendo-tabstrip-border-width;
+                border-block-end-color: transparent;
 
                 .k-link {
                     justify-content: center;
@@ -511,8 +510,6 @@
             .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
-                margin-block-end: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
-                border-block-end-width: $kendo-tabstrip-border-width;
                 border-block-end-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
@@ -531,7 +528,9 @@
             .k-tabstrip-item,
             .k-item {
                 @include border-bottom-radius( $kendo-tabstrip-item-border-radius );
-                border-block-start-width: 0;
+                margin-block-start: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                border-block-start-width: $kendo-tabstrip-border-width;
+                border-block-start-color: transparent;
 
                 .k-link {
                     justify-content: center;
@@ -541,8 +540,6 @@
             .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
-                margin-block-start: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
-                border-block-start-width: $kendo-tabstrip-border-width;
                 border-block-start-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
@@ -563,14 +560,14 @@
             .k-tabstrip-item,
             .k-item {
                 border-radius: $kendo-tabstrip-item-border-radius 0 0 $kendo-tabstrip-item-border-radius;
-                border-right-width: 0;
+                margin-right: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                border-right-width: $kendo-tabstrip-border-width;
+                border-right-color: transparent;
             }
             .k-tabstrip-item:active,
             .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
-                margin-right: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
-                border-right-width: $kendo-tabstrip-border-width;
                 border-right-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
@@ -592,15 +589,15 @@
             .k-tabstrip-item,
             .k-item {
                 border-radius: 0 $kendo-tabstrip-item-border-radius $kendo-tabstrip-item-border-radius 0;
-                border-left-width: 0;
+                margin-left: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
+                border-left-width: $kendo-tabstrip-border-width;
+                border-left-color: transparent;
             }
 
             .k-tabstrip-item:active,
             .k-tabstrip-item.k-active,
             .k-item:active,
             .k-item.k-active {
-                margin-left: if( $kendo-tabstrip-border-width, calc( -1 * $kendo-tabstrip-border-width ), null );
-                border-left-width: $kendo-tabstrip-border-width;
                 border-left-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }

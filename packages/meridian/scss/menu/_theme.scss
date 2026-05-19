@@ -20,9 +20,4 @@
     .k-menu-group .k-item.k-focus > .k-link {
         @include focus-indicator( $kendo-menu-focus-outline-color, $type: "outline", $outline-offset: $kendo-menu-focus-outline-offset );
     }
-
-    .k-menu:not(.k-context-menu) > .k-item:active,
-    .k-menu:not(.k-context-menu) > .k-item.k-active {
-        font-weight: $kendo-menu-item-selected-font-weight;
-    }
 }

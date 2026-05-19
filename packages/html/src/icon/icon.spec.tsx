@@ -1,4 +1,4 @@
-import { classNames, Size, ThemeColor } from '../misc';
+import { classNames, Size, ThemeColor, IconVariant } from '../misc';
 import FontIcon from './font-icon';
 import SvgIcon from './svg-icon';
 import * as SVGIcons from '@progress/kendo-svg-icons';
@@ -34,6 +34,7 @@ const options = {
         ThemeColor.error,
         ThemeColor.info
     ],
+    variant: [ IconVariant.outline, IconVariant.solid, IconVariant.duotone ],
 };
 
 export type IconState = { [K in (typeof states)[number]]?: boolean };
@@ -41,6 +42,7 @@ export type IconState = { [K in (typeof states)[number]]?: boolean };
 export type IconOptions = {
     size?: (typeof options.size)[number];
     themeColor?: (typeof options.themeColor)[number];
+    variant?: (typeof options.variant)[number];
 };
 
 export type IconProps = IconOptions & {
@@ -53,7 +55,8 @@ export type IconProps = IconOptions & {
 
 const defaultOptions = {
     viewBox: '0 0 24 24',
-    type: 'svg'
+    type: 'svg',
+    variant: IconVariant.outline
 };
 
 export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanElement>> = (
@@ -69,6 +72,7 @@ export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanEleme
         rotate,
         flip,
         viewBox = defaultOptions.viewBox,
+        variant = defaultOptions.variant,
         ...other
     } = props;
 
@@ -81,7 +85,7 @@ export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanEleme
 
         if (icon === 'none') {
             return (
-                <SvgIcon {...other} className={classNames(props.className, ICON_CLASSNAME)} icon={icon} size={size} />
+                <SvgIcon {...other} className={classNames(props.className, ICON_CLASSNAME)} icon={icon} size={size} variant={variant} />
             );
         }
 
@@ -92,7 +96,7 @@ export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanEleme
         }
 
         return (
-            <SvgIcon {...other} className={classNames(props.className, ICON_CLASSNAME)} icon={SVGIcons[iconSVG]} size={size} themeColor={themeColor} rotate={rotate} flip={flip} viewBox={viewBox} />
+            <SvgIcon {...other} className={classNames(props.className, ICON_CLASSNAME)} icon={SVGIcons[iconSVG]} size={size} themeColor={themeColor} rotate={rotate} flip={flip} viewBox={viewBox} variant={variant} />
         );
     }
 
