@@ -20,14 +20,14 @@ Consumer Application
 
 **6 themes available** — choose the package that matches the target design language:
 
-| Theme     | Package                           | Design Language     |
-| --------- | --------------------------------- | ------------------- |
-| Meridian  | `@progress/kendo-theme-meridian`  | Modern              |
-| Default   | `@progress/kendo-theme-default`   | The default theme   |
-| Bootstrap | `@progress/kendo-theme-bootstrap` | Bootstrap 5 aligned |
-| Material  | `@progress/kendo-theme-material`  | Material Design     |
-| Fluent    | `@progress/kendo-theme-fluent`    | Microsoft Fluent    |
-| Classic   | `@progress/kendo-theme-classic`   | Traditional Kendo   |
+| Theme     | Package                           |
+| --------- | --------------------------------- |
+| Meridian  | `@progress/kendo-theme-meridian`  |
+| Bootstrap | `@progress/kendo-theme-bootstrap` |
+| Material  | `@progress/kendo-theme-material`  |
+| Fluent    | `@progress/kendo-theme-fluent`    |
+| Default   | `@progress/kendo-theme-default`   |
+| Classic   | `@progress/kendo-theme-classic`   |
 
 All themes share the same design token foundation — colors, spacing, radii, elevation, motion, typography, and iconography — so token-based customizations are portable across themes.
 
@@ -84,7 +84,7 @@ Two levels of customization control component appearance — broad design-wide c
 
 Override design tokens to change the look of **all components at once**. This is the primary customization layer — colors, spacing, radii, elevation, motion, and typography.
 
-For colors, start with **semantic tokens** (`primary`, `surface`, `error`, etc.), **CSS custom properties**, and **prebuilt swatches**. Palette ramps are an advanced Sass layer behind those tokens, not the primary customization API.
+For colors, start with **semantic tokens** (`primary`, `surface`, `error`, etc.), **CSS custom properties**, and **prebuilt swatches**.
 
 **CSS Custom Properties** (runtime, no build step — works with precompiled CSS):
 

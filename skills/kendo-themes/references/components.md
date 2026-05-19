@@ -91,7 +91,7 @@ Use the tuple's first item (`className`) as the root selector:
 
 ### State selector
 
-States are shared `k-*` classes.
+States are shared `k-*` classes. Themes also apply native pseudo-classes (`:hover`, `:focus`), so both selectors work.
 
 If the tuple contains `hover` in its state array, combine the base class and state like this:
 
