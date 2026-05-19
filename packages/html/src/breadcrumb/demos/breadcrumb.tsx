@@ -57,7 +57,7 @@ export const BreadcrumbDemo = (
             </BreadcrumbItem>
             <BreadcrumbItem last>
               <BreadcrumbLink icon onClick={(e) => e.preventDefault()}>
-                <Icon icon="wallet-outline" />
+                <Icon icon="wallet" />
               </BreadcrumbLink>
             </BreadcrumbItem>
           </BreadcrumbContainer>
@@ -90,7 +90,7 @@ export const BreadcrumbDemo = (
             </BreadcrumbItem>
             <BreadcrumbItem last>
               <BreadcrumbLink icontext onClick={(e) => e.preventDefault()}>
-                <Icon icon="wallet-outline" />
+                <Icon icon="wallet" />
                 <BreadcrumbItemText text="Payment"></BreadcrumbItemText>
               </BreadcrumbLink>
             </BreadcrumbItem>

@@ -37,8 +37,8 @@
         }
 
         // Hover state
-        .k-table-row:is(:hover, .k-hover),
-        .k-master-row:is(:hover, .k-hover) {
+        :where(.k-grid-container) .k-table-row:is(:hover, .k-hover),
+        :where(.k-grid-container) .k-master-row:is(:hover, .k-hover) {
             color: $kendo-grid-hover-text;
             background-color: $kendo-grid-hover-bg;
         }

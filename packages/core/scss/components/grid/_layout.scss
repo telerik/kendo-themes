@@ -1590,7 +1590,7 @@
         cursor: pointer;
 
         > .k-icon,
-        > .k-icon-wrapper-host,
+        > .k-icon-wrapper-host .k-icon,
         > .k-expander-indicator {
             margin-inline-end: $kendo-icon-spacing;
         }

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.1...v14.1.0-dev.2) (2026-05-18)
+
+
+### Bug Fixes
+
+* **html:** change icons to v5 namings ([2f3c0e8](https://github.com/telerik/kendo-themes/commit/2f3c0e8b62c3cf9d78c904b924a323cde6ac0556))
+* **html:** update buttons to xs in tabstrip ([6e208a5](https://github.com/telerik/kendo-themes/commit/6e208a57056daa9e2822699c5b82f51bbc88d07c))
+
+
+
+
+
+# [14.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.0...v14.1.0-dev.1) (2026-05-18)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
 # [14.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.0.0...v14.1.0-dev.0) (2026-05-15)
 
 

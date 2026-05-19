@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.1...v14.1.0-dev.2) (2026-05-18)
+
+
+### Bug Fixes
+
+* **tabstrip:** update tabstrip item spacings ([41240ef](https://github.com/telerik/kendo-themes/commit/41240efca8ac6c3bb15467a0045a3eccd464ff17))
+
+
+
+
+
+# [14.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.0...v14.1.0-dev.1) (2026-05-18)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
 # [14.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.0.0...v14.1.0-dev.0) (2026-05-15)
 
 **Note:** Version bump only for package @progress/kendo-theme-material

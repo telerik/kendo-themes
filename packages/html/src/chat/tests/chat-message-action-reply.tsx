@@ -73,7 +73,7 @@ export default () =>(
                 <ContextMenu>
                     <MenuListItem first text="Reply" icon="undo" selected></MenuListItem>
                     <MenuListItem text="Copy" icon="copy"></MenuListItem>
-                    <MenuListItem last text="Pin" icon="pin-outline"></MenuListItem>
+                    <MenuListItem last text="Pin" icon="pin"></MenuListItem>
                 </ContextMenu>
             </Popup>
 
@@ -123,7 +123,7 @@ export default () =>(
                 <ContextMenu>
                     <MenuListItem first text="Reply" icon="undo" selected></MenuListItem>
                     <MenuListItem text="Copy" icon="copy"></MenuListItem>
-                    <MenuListItem text="Pin" icon="pin-outline"></MenuListItem>
+                    <MenuListItem text="Pin" icon="pin"></MenuListItem>
                     <MenuListItem last text="Delete" icon="trash"></MenuListItem>
                 </ContextMenu>
             </Popup>

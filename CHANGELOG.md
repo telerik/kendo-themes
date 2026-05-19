@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.1...v14.1.0-dev.2) (2026-05-18)
+
+
+### Bug Fixes
+
+* **chat:** retry button gap ([b2e04d9](https://github.com/telerik/kendo-themes/commit/b2e04d99f6df2f374a0e4af38208d3ec9f71a0a7))
+* **grid:** columnmenu item icon gap ([721e03a](https://github.com/telerik/kendo-themes/commit/721e03a0138614c7a8b1f3ae82d3b0690f098381))
+* **grid:** remove hover state from grid header rows ([844af23](https://github.com/telerik/kendo-themes/commit/844af23afd2aaeee606e691211ba1fb401d4acee))
+* **html:** change icons to v5 namings ([2f3c0e8](https://github.com/telerik/kendo-themes/commit/2f3c0e8b62c3cf9d78c904b924a323cde6ac0556))
+* **html:** update buttons to xs in tabstrip ([6e208a5](https://github.com/telerik/kendo-themes/commit/6e208a57056daa9e2822699c5b82f51bbc88d07c))
+* **meridian:** backdrop-filter causes overflow to break ([34e0da1](https://github.com/telerik/kendo-themes/commit/34e0da192baf67ef6284bb2960cbf094dc17249c))
+* **meridian:** increase gap between slider track and buttons ([cbcbf1d](https://github.com/telerik/kendo-themes/commit/cbcbf1d46f27f25f12485fce0c693e453f5c2226))
+* **meridian:** input adornments focus ([8132044](https://github.com/telerik/kendo-themes/commit/813204405305dd8d9da556b3a3209db88923853b))
+* **meridian:** menu active/selected state makes the item jump ([b8dd497](https://github.com/telerik/kendo-themes/commit/b8dd4978a82ec43c9b345472e2864de10a82a936))
+* **meridian:** nested panelbar items focus ([7f4b286](https://github.com/telerik/kendo-themes/commit/7f4b286a892523bb4e46e5a310aa6cf644a0cc5d))
+* **meridian:** window prompt container bg ([40fc488](https://github.com/telerik/kendo-themes/commit/40fc488002904b39ce2b2dcfc4b7958bbdfd448c))
+* **tabstrip:** active item border ([8b54de1](https://github.com/telerik/kendo-themes/commit/8b54de146c48f881056856a1a8e4f27a147397d3))
+* **tabstrip:** update tabstrip item spacings ([41240ef](https://github.com/telerik/kendo-themes/commit/41240efca8ac6c3bb15467a0045a3eccd464ff17))
+* **toolbar:** scroll container cuts off focus outline ([a7ac024](https://github.com/telerik/kendo-themes/commit/a7ac0247dad046b27e9a67fd2e4503aecc657919))
+
+
+
+
+
+# [14.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.0...v14.1.0-dev.1) (2026-05-18)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
 # [14.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.0.0...v14.1.0-dev.0) (2026-05-15)
 
 

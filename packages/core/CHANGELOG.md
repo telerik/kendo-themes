@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.1...v14.1.0-dev.2) (2026-05-18)
+
+
+### Bug Fixes
+
+* **chat:** retry button gap ([b2e04d9](https://github.com/telerik/kendo-themes/commit/b2e04d99f6df2f374a0e4af38208d3ec9f71a0a7))
+* **grid:** columnmenu item icon gap ([721e03a](https://github.com/telerik/kendo-themes/commit/721e03a0138614c7a8b1f3ae82d3b0690f098381))
+* **grid:** remove hover state from grid header rows ([844af23](https://github.com/telerik/kendo-themes/commit/844af23afd2aaeee606e691211ba1fb401d4acee))
+* **tabstrip:** active item border ([8b54de1](https://github.com/telerik/kendo-themes/commit/8b54de146c48f881056856a1a8e4f27a147397d3))
+* **tabstrip:** update tabstrip item spacings ([41240ef](https://github.com/telerik/kendo-themes/commit/41240efca8ac6c3bb15467a0045a3eccd464ff17))
+* **toolbar:** scroll container cuts off focus outline ([a7ac024](https://github.com/telerik/kendo-themes/commit/a7ac0247dad046b27e9a67fd2e4503aecc657919))
+
+
+
+
+
+# [14.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.0...v14.1.0-dev.1) (2026-05-18)
+
+**Note:** Version bump only for package @progress/kendo-theme-core
+
+
+
+
+
 # [14.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.0.0...v14.1.0-dev.0) (2026-05-15)
 
 

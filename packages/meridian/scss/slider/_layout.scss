@@ -4,4 +4,8 @@
 
 @mixin kendo-slider--layout() {
     @include kendo-slider--layout-base();
+
+    .k-slider {
+        gap: $kendo-slider-draghandle-size;
+    }
 }
