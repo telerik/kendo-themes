@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
         "target": "esnext",
-        "moduleResolution": "node",
+        "module": "esnext",
+        "moduleResolution": "bundler",
         "jsx": "react-jsx",
         "isolatedModules": true,
         "esModuleInterop": true,

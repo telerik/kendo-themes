@@ -1,339 +1,338 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: 120px repeat(6, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span></span>
-        <span>Normal</span>
-        <span>Hover</span>
-        <span>Focus</span>
-        <span>Active</span>
-        <span>Selected</span>
-        <span>Disabled</span>
-        <span>undefined</span>
-        <span>
-            <button class="k-button">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>base</span>
-        <span>
-            <button class="k-button k-button-base">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-base k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-base k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-base k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-base k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-base k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>primary</span>
-        <span>
-            <button class="k-button k-button-primary">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-primary k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-primary k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-primary k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-primary k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-primary k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>secondary</span>
-        <span>
-            <button class="k-button k-button-secondary">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-secondary k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-secondary k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-secondary k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-secondary k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-secondary k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>tertiary</span>
-        <span>
-            <button class="k-button k-button-tertiary">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-tertiary k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-tertiary k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-tertiary k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-tertiary k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-tertiary k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>success</span>
-        <span>
-            <button class="k-button k-button-success">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-success k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-success k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-success k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-success k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-success k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>warning</span>
-        <span>
-            <button class="k-button k-button-warning">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-warning k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-warning k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-warning k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-warning k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-warning k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>error</span>
-        <span>
-            <button class="k-button k-button-error">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-error k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-error k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-error k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-error k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-error k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>info</span>
-        <span>
-            <button class="k-button k-button-info">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-info k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-info k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-info k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-info k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-info k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-        <span>inverse</span>
-        <span>
-            <button class="k-button k-button-inverse">
-                <span class="k-button-text">normal</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-inverse k-hover">
-                <span class="k-button-text">hover</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-inverse k-focus">
-                <span class="k-button-text">focus</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-inverse k-active">
-                <span class="k-button-text">active</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-inverse k-selected">
-                <span class="k-button-text">selected</span>
-            </button>
-        </span>
-        <span>
-            <button class="k-button k-button-inverse k-disabled" disabled="">
-                <span class="k-button-text">disabled</span>
-            </button>
-        </span>
-    </div>
-</body>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span></span>
+            <span>Normal</span>
+            <span>Hover</span>
+            <span>Focus</span>
+            <span>Active</span>
+            <span>Selected</span>
+            <span>Disabled</span>
+            <span>undefined</span>
+            <span>
+                <button class="k-button">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>base</span>
+            <span>
+                <button class="k-button k-button-base">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-base k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-base k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-base k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-base k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-base k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>primary</span>
+            <span>
+                <button class="k-button k-button-primary">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-primary k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-primary k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-primary k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-primary k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-primary k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>secondary</span>
+            <span>
+                <button class="k-button k-button-secondary">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-secondary k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-secondary k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-secondary k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-secondary k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-secondary k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>tertiary</span>
+            <span>
+                <button class="k-button k-button-tertiary">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-tertiary k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-tertiary k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-tertiary k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-tertiary k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-tertiary k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>success</span>
+            <span>
+                <button class="k-button k-button-success">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-success k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-success k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-success k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-success k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-success k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>warning</span>
+            <span>
+                <button class="k-button k-button-warning">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-warning k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-warning k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-warning k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-warning k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-warning k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>error</span>
+            <span>
+                <button class="k-button k-button-error">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-error k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-error k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-error k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-error k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-error k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>info</span>
+            <span>
+                <button class="k-button k-button-info">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-info k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-info k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-info k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-info k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-info k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+            <span>inverse</span>
+            <span>
+                <button class="k-button k-button-inverse">
+                    <span class="k-button-text">normal</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-inverse k-hover">
+                    <span class="k-button-text">hover</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-inverse k-focus">
+                    <span class="k-button-text">focus</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-inverse k-active">
+                    <span class="k-button-text">active</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-inverse k-selected">
+                    <span class="k-button-text">selected</span>
+                </button>
+            </span>
+            <span>
+                <button class="k-button k-button-inverse k-disabled" disabled="">
+                    <span class="k-button-text">disabled</span>
+                </button>
+            </span>
+        </div>
+    </body>
 </html>

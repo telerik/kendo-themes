@@ -1,198 +1,197 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: auto 1fr 1fr;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span></span>
-        <span>LTR</span>
-        <span>RTL</span>
-        <span>Partial start</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 5;">
-            <span class="k-progress-status-wrap k-progress-start">
-                <span class="k-progress-status">5%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span></span>
+            <span>LTR</span>
+            <span>RTL</span>
+            <span>Partial start</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 5;">
                 <span class="k-progress-status-wrap k-progress-start">
                     <span class="k-progress-status">5%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-start">
+                        <span class="k-progress-status">5%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 5;">
-            <span class="k-progress-status-wrap k-progress-start">
-                <span class="k-progress-status">5%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 5;">
                 <span class="k-progress-status-wrap k-progress-start">
                     <span class="k-progress-status">5%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-start">
+                        <span class="k-progress-status">5%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <span>Partial center</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
-            <span class="k-progress-status-wrap k-progress-center">
-                <span class="k-progress-status">50%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <span>Partial center</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                 <span class="k-progress-status-wrap k-progress-center">
                     <span class="k-progress-status">50%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-center">
+                        <span class="k-progress-status">50%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
-            <span class="k-progress-status-wrap k-progress-center">
-                <span class="k-progress-status">50%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                 <span class="k-progress-status-wrap k-progress-center">
                     <span class="k-progress-status">50%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-center">
+                        <span class="k-progress-status">50%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <span>Partial end</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 95;">
-            <span class="k-progress-status-wrap k-progress-end">
-                <span class="k-progress-status">95%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <span>Partial end</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 95;">
                 <span class="k-progress-status-wrap k-progress-end">
                     <span class="k-progress-status">95%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">95%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 95;">
-            <span class="k-progress-status-wrap k-progress-end">
-                <span class="k-progress-status">95%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 95;">
                 <span class="k-progress-status-wrap k-progress-end">
                     <span class="k-progress-status">95%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">95%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <span>100% start</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
-            <span class="k-progress-status-wrap k-progress-start">
-                <span class="k-progress-status">100%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <span>100% start</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
                 <span class="k-progress-status-wrap k-progress-start">
                     <span class="k-progress-status">100%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-start">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
-            <span class="k-progress-status-wrap k-progress-start">
-                <span class="k-progress-status">100%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
                 <span class="k-progress-status-wrap k-progress-start">
                     <span class="k-progress-status">100%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-start">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <span>100% center</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
-            <span class="k-progress-status-wrap k-progress-center">
-                <span class="k-progress-status">100%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <span>100% center</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
                 <span class="k-progress-status-wrap k-progress-center">
                     <span class="k-progress-status">100%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-center">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
-            <span class="k-progress-status-wrap k-progress-center">
-                <span class="k-progress-status">100%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
                 <span class="k-progress-status-wrap k-progress-center">
                     <span class="k-progress-status">100%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-center">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <span>100% end</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
-            <span class="k-progress-status-wrap k-progress-end">
-                <span class="k-progress-status">100%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <span>100% end</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
                 <span class="k-progress-status-wrap k-progress-end">
                     <span class="k-progress-status">100%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
-            <span class="k-progress-status-wrap k-progress-end">
-                <span class="k-progress-status">100%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 100;">
                 <span class="k-progress-status-wrap k-progress-end">
                     <span class="k-progress-status">100%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <span>No Label</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
-            <span class="k-progress-status-wrap k-progress-start"></span>
-            <div class="k-progressbar-value k-selected">
+            <span>No Label</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                 <span class="k-progress-status-wrap k-progress-start"></span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-start"></span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
-            <span class="k-progress-status-wrap k-progress-start"></span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50;">
                 <span class="k-progress-status-wrap k-progress-start"></span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-start"></span>
+                </div>
             </div>
-        </div>
-        <span>Thin style</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50; height: 2px;">
-            <span class="k-progress-status-wrap k-progress-start"></span>
-            <div class="k-progressbar-value k-selected">
+            <span>Thin style</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50; height: 2px;">
                 <span class="k-progress-status-wrap k-progress-start"></span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-start"></span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50; height: 2px;">
-            <span class="k-progress-status-wrap k-progress-start"></span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50; height: 2px;">
                 <span class="k-progress-status-wrap k-progress-start"></span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-start"></span>
+                </div>
             </div>
-        </div>
-        <span>Thick style</span>
-        <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50; height: 50px;">
-            <span class="k-progress-status-wrap k-progress-end">
-                <span class="k-progress-status">50%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <span>Thick style</span>
+            <div class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50; height: 50px;">
                 <span class="k-progress-status-wrap k-progress-end">
                     <span class="k-progress-status">50%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">50%</span>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50; height: 50px;">
-            <span class="k-progress-status-wrap k-progress-end">
-                <span class="k-progress-status">50%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
+            <div dir="rtl" class="k-progressbar k-progressbar-horizontal" role="progressbar" aria-label="progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--kendo-progressbar-value: 50; height: 50px;">
                 <span class="k-progress-status-wrap k-progress-end">
                     <span class="k-progress-status">50%</span>
                 </span>
+                <div class="k-progressbar-value k-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">50%</span>
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
