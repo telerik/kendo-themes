@@ -1,86 +1,85 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        /* rest position and visibility */
-        .k-animation-container,
-        .k-popup,
-        .k-tooltip {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            /* rest position and visibility */
+            .k-animation-container,
+            .k-popup,
+            .k-tooltip {
             position: relative;
             overflow: visible;
-        }
-        /* reset display and align */
-        .k-animation-container {
+            }
+            /* reset display and align */
+            .k-animation-container {
             display: inline-flex;
             vertical-align: top;
-        }
-        .k-callout-w {
+            }
+            .k-callout-w {
             top: 45px;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
-        <span>Events List</span>
-        <span>No Data</span>
-        <section>
-            <div class="k-animation-container k-animation-container-shown" style="width: 220px;">
-                <div class="k-child-animation-container">
-                    <div class="k-scheduler-tooltip k-tooltip" role="tooltip" id="k-tooltip-1" style="width: 220px;">
-                        <div class="k-tooltip-content">
-                            <div class="k-tooltip-title k-text-center">
-                                <div class="k-month">Jan</div>
-                                <div class="k-link k-day !k-text-primary">02</div>
-                            </div>
-                            <div class="k-tooltip-events-container">
-                                <div class="k-tooltip-events">
-                                    <div class="k-tooltip-event k-event">
-                                        <div class="k-event-title k-text-ellipsis">Dance Practice</div>
-                                        <span class="k-spacer"></span>
-                                        <span class="k-event-time">6:30 PM</span>
-                                    </div>
-                                    <div class="k-tooltip-event k-event" style="background-color: rgb(17, 134, 64); border-color: rgb(17, 134, 64);">
-                                        <div class="k-event-title k-text-ellipsis">Helpdesk weekly meeting</div>
-                                        <span class="k-spacer"></span>
-                                        <span class="k-event-time">12:30 PM</span>
-                                    </div>
-                                    <div class="k-tooltip-event k-event">
-                                        <div class="k-event-title k-text-ellipsis">Regular Appointment</div>
-                                        <span class="k-spacer"></span>
-                                        <span class="k-event-time">13:30 PM</span>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-2">
+            <span>Events List</span>
+            <span>No Data</span>
+            <section>
+                <div class="k-animation-container k-animation-container-shown" style="width: 220px;">
+                    <div class="k-child-animation-container">
+                        <div class="k-scheduler-tooltip k-tooltip" role="tooltip" id="k-tooltip-1" style="width: 220px;">
+                            <div class="k-tooltip-content">
+                                <div class="k-tooltip-title k-text-center">
+                                    <div class="k-month">Jan</div>
+                                    <div class="k-link k-day !k-text-primary">02</div>
+                                </div>
+                                <div class="k-tooltip-events-container">
+                                    <div class="k-tooltip-events">
+                                        <div class="k-tooltip-event k-event">
+                                            <div class="k-event-title k-text-ellipsis">Dance Practice</div>
+                                            <span class="k-spacer"></span>
+                                            <span class="k-event-time">6:30 PM</span>
+                                        </div>
+                                        <div class="k-tooltip-event k-event" style="background-color: rgb(17, 134, 64); border-color: rgb(17, 134, 64);">
+                                            <div class="k-event-title k-text-ellipsis">Helpdesk weekly meeting</div>
+                                            <span class="k-spacer"></span>
+                                            <span class="k-event-time">12:30 PM</span>
+                                        </div>
+                                        <div class="k-tooltip-event k-event">
+                                            <div class="k-event-title k-text-ellipsis">Regular Appointment</div>
+                                            <span class="k-spacer"></span>
+                                            <span class="k-event-time">13:30 PM</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="k-callout k-callout-w"></div>
                         </div>
-                        <div class="k-callout k-callout-w"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-animation-container k-animation-container-shown" style="width: 220px;">
-                <div class="k-child-animation-container">
-                    <div class="k-scheduler-tooltip k-tooltip" role="tooltip" id="k-tooltip-2" style="width: 220px;">
-                        <div class="k-tooltip-content">
-                            <div class="k-tooltip-title k-text-center">
-                                <div class="k-month">Jan</div>
-                                <div class="k-link k-day !k-text-primary">29</div>
+            </section>
+            <section>
+                <div class="k-animation-container k-animation-container-shown" style="width: 220px;">
+                    <div class="k-child-animation-container">
+                        <div class="k-scheduler-tooltip k-tooltip" role="tooltip" id="k-tooltip-2" style="width: 220px;">
+                            <div class="k-tooltip-content">
+                                <div class="k-tooltip-title k-text-center">
+                                    <div class="k-month">Jan</div>
+                                    <div class="k-link k-day !k-text-primary">29</div>
+                                </div>
+                                <span class="k-no-data k-text-center">No events on this date.</span>
                             </div>
-                            <span class="k-no-data k-text-center">No events on this date.</span>
+                            <div class="k-callout k-callout-w"></div>
                         </div>
-                        <div class="k-callout k-callout-w"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+        </div>
+    </body>
 </html>
