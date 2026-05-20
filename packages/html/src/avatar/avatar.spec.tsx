@@ -2,6 +2,7 @@ import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeC
 
 import { KendoComponent } from '../_types/component';
 import { AVATAR_FOLDER_NAME, AVATAR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const AVATAR_CLASSNAME = `k-avatar`;
 
 enum avatarType {
@@ -106,11 +107,6 @@ Avatar.defaultOptions = defaultOptions;
 Avatar.moduleName = AVATAR_MODULE_NAME;
 Avatar.folderName = AVATAR_FOLDER_NAME;
 
-Avatar.ariaSpec = {
-    selector: '.k-avatar',
-    rules: [
-        { selector: '.k-avatar img', attribute: 'alt', usage: 'Images inside Avatar must have alt text for screen readers.' },
-    ]
-};
+Avatar.ariaSpec = a11ySpec.ariaSpec;
 
 export default Avatar;

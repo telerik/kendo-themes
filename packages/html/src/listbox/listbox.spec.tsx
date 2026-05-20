@@ -4,6 +4,7 @@ import { classNames, stateClassNames, States, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { LISTBOX_FOLDER_NAME, LISTBOX_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const LISTBOX_CLASSNAME = `k-listbox`;
 
 const states = [
@@ -127,28 +128,6 @@ ListBox.defaultOptions = defaultOptions;
 ListBox.moduleName = LISTBOX_MODULE_NAME;
 ListBox.folderName = LISTBOX_FOLDER_NAME;
 
-/**
- * @ariaSpec
- * ListBox implements the WAI-ARIA listbox pattern.
- *
- * - List: role="listbox" with aria-label and optional aria-multiselectable
- * - Items: role="option" with aria-selected and tabindex
- * - Toolbar: role="toolbar" with aria-label and aria-controls
- * - Toolbar buttons have aria-label for accessible names
- */
-ListBox.ariaSpec = {
-    selector: '.k-listbox',
-    rules: [
-        { selector: '.k-listbox .k-list-ul', attribute: 'role=listbox', usage: 'Specifies the role of the ListBox list element.' },
-        { selector: '.k-listbox .k-list-ul', attribute: 'aria-label or aria-labelledby', usage: 'Adds a label to the list element of the ListBox.' },
-        { selector: '.k-listbox .k-list-item', attribute: 'role=option', usage: 'Specifies the role of the ListBox item element.' },
-        { selector: '.k-listbox .k-list-item', attribute: 'aria-selected=true/false', usage: 'Set to true if the item is selected.' },
-        { selector: '.k-listbox .k-list-item', attribute: 'tabindex', usage: 'The focused listbox item should have tabindex 0, all others -1.' },
-        { selector: '.k-listbox-actions', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons.' },
-        { selector: '.k-listbox-actions', attribute: 'aria-label', usage: 'Clarifies the purpose of the toolbar.' },
-        { selector: '.k-listbox-actions', attribute: 'aria-controls (when present)', usage: 'Points to the id of the listbox element being controlled.' },
-        { selector: '.k-listbox-actions .k-button', attribute: 'aria-label or title', usage: 'All buttons in the toolbar must have labels.' },
-    ]
-};
+ListBox.ariaSpec = a11ySpec.ariaSpec;
 
 export default ListBox;

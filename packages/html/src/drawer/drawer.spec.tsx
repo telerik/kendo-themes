@@ -5,6 +5,7 @@ import { DrawerContainer } from './drawer-container.spec';
 import { KendoComponent } from '../_types/component';
 import { DRAWER_FOLDER_NAME, DRAWER_MODULE_NAME } from './constants';
 import { Overlay } from '../overlay';
+import a11ySpec from './behavior/accessibility.json';
 export const DRAWER_CLASSNAME = `k-drawer`;
 
 const states = [];
@@ -82,25 +83,6 @@ Drawer.defaultOptions = defaultOptions;
 Drawer.moduleName = DRAWER_MODULE_NAME;
 Drawer.folderName = DRAWER_FOLDER_NAME;
 
-/**
- * Accessibility specification for Drawer.
- *
- * @accessibility
- * - Drawer list has role=menubar with aria-orientation=vertical
- * - Drawer items have role=menuitem
- * - Drawer separators have role=separator
- * - Mini mode items need aria-label for accessible name
- *
- * @wcag 4.1.2 Name, Role, Value - menubar pattern for navigation
- */
-Drawer.ariaSpec = {
-    selector: '.k-drawer',
-    rules: [
-        { selector: '.k-drawer ul', attribute: 'role=menubar', usage: 'Indicates that the list of drawer items is a menubar.' },
-        { selector: '.k-drawer ul', attribute: 'aria-orientation=vertical', usage: 'Indicates that the orientation of the drawer is vertical.' },
-        { selector: '.k-drawer-item:not(.k-drawer-separator)', attribute: 'role=menuitem', usage: 'Indicates that the item of a drawer serves as a menuitem.' },
-        { selector: '.k-drawer-item.k-drawer-separator', attribute: 'role=separator', usage: 'Indicates that the item of a drawer serves as a separator.' },
-    ]
-};
+Drawer.ariaSpec = a11ySpec.ariaSpec;
 
 export default Drawer;

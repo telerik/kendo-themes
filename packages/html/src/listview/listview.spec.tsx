@@ -3,6 +3,7 @@ import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { LISTVIEW_FOLDER_NAME, LISTVIEW_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const LISTVIEW_CLASSNAME = `k-listview`;
 
 const states = [
@@ -115,26 +116,6 @@ ListView.defaultOptions = defaultOptions;
 ListView.moduleName = LISTVIEW_MODULE_NAME;
 ListView.folderName = LISTVIEW_FOLDER_NAME;
 
-/**
- * @ariaSpec
- * ListView implements a list or listbox pattern.
- *
- * - Non-selectable: content role="list", items role="listitem"
- * - Selectable: content role="listbox", items role="option"
- * - Items have aria-setsize and aria-posinset
- * - First item has tabindex=0
- */
-ListView.ariaSpec = {
-    selector: '.k-listview',
-    rules: [
-        { selector: '.k-listview:not(.k-selectable) .k-listview-content', attribute: 'role=list', usage: 'Specifies the role of non selectable ListView content element.' },
-        { selector: '.k-listview.k-selectable .k-listview-content', attribute: 'role=listbox', usage: 'Specifies the role of selectable ListView content element.' },
-        { selector: '.k-listview:not(.k-selectable) .k-listview-item', attribute: 'role=listitem', usage: 'Specifies the role of each item in a non selectable ListView.' },
-        { selector: '.k-listview.k-selectable .k-listview-item', attribute: 'role=option', usage: 'Specifies the role of each item in a selectable ListView.' },
-        { selector: '.k-listview-item', attribute: 'aria-setsize', usage: 'Specifies the total number of items present in the ListView.' },
-        { selector: '.k-listview-item', attribute: 'aria-posinset', usage: 'Specifies the position of the current item in the entire list.' },
-        { selector: '.k-listview-item:nth-child(1)', attribute: 'tabindex=0', usage: 'The first item in the ListView must be focusable by default.' },
-    ]
-};
+ListView.ariaSpec = a11ySpec.ariaSpec;
 
 export default ListView;

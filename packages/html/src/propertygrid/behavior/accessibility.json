@@ -1,0 +1,136 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "role=toolbar",
+            "usage": "The toolbar is a collection of command buttons and inputs."
+        },
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "aria-label",
+            "usage": "Clarifies the purpose of the toolbar."
+        },
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "aria-controls=.k-grid-aria-root id",
+            "usage": "Points to the id of the element with role=treegrid."
+        },
+        {
+            "selector": ".k-property-grid .k-grid-aria-root",
+            "attribute": "role=treegrid",
+            "usage": "Sets the proper role for the PropertyGrid component."
+        },
+        {
+            "selector": ".k-grid-aria-root",
+            "attribute": "aria-colcount",
+            "usage": "The total number of columns."
+        },
+        {
+            "selector": ".k-grid-aria-root",
+            "attribute": "aria-rowcount",
+            "usage": "The total number of rows in the table."
+        },
+        {
+            "selector": ".k-grid-content>table",
+            "attribute": "role=none",
+            "usage": "Negates the default semantic role of the <table> element."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody",
+            "attribute": "role=rowgroup",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)",
+            "attribute": "role=row",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)",
+            "attribute": "aria-rowindex",
+            "usage": "Row number."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)>td",
+            "attribute": "role=gridcell",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)>td",
+            "attribute": "aria-colindex",
+            "usage": "Col number."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)",
+            "attribute": "aria-expanded (when expandable)",
+            "usage": "Set on the currently expanded row(s)."
+        },
+        {
+            "selector": ".k-treelist-toggle[class*=\"i-chevron-down\"],.k-treelist-toggle[class*=\"i-chevron-right\"]",
+            "attribute": "aria-hidden=true",
+            "usage": "Removes the expand/collapse icon from the accessibility tree."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Right Arrow",
+            "behavior": "Moves focus one cell to the right (if any)."
+        },
+        {
+            "shortcut": "Left Arrow",
+            "behavior": "Moves focus one cell to the left (if any)."
+        },
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Moves focus one cell down (if any)."
+        },
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Moves focus one cell up (if any)."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "When the grid is in InCell EditMode, then EditMode is activated. If the cell contains focusable elements, focus moves to the first focusable element inside."
+        },
+        {
+            "shortcut": "Home",
+            "behavior": "Moves focus to the first cell in the row that contains focus."
+        },
+        {
+            "shortcut": "End",
+            "behavior": "Moves focus to the last cell in the row that contains focus."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Home",
+            "behavior": "Moves focus to the first (top-left) data cell in the PropertyGrid."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + End",
+            "behavior": "Moves focus to the last cell in the last row of the PropertyGrid."
+        },
+        {
+            "shortcut": "Alt/Option(Mac) + Left Arrow",
+            "behavior": "Collapses the currently focused item."
+        },
+        {
+            "shortcut": "Alt/Option(Mac) + Right Arrow",
+            "behavior": "Expands the currently focused item."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Moves to the next editor in the row (closing current editor). If focus is already on the last editable cell on the row, focus is moved to the first editable cell on the next row, and it's editor is opened."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Moves to the previous editor in the row (closing current editor). If focus is already on the first editable cell on the row, focus is moved to the last editable cell on the previous row, and it's editor is opened."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Commits changes for the edited item, and moves focus back to the edited cell."
+        },
+        {
+            "shortcut": "Escape",
+            "behavior": "Cancels the edit. The focus goes to the current cell."
+        }
+    ]
+}

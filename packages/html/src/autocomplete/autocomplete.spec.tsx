@@ -16,6 +16,7 @@ import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
 import { AUTOCOMPLETE_FOLDER_NAME, AUTOCOMPLETE_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const AUTOCOMPLETE_CLASSNAME = `k-autocomplete`;
 
 const states = [
@@ -218,21 +219,6 @@ Autocomplete.defaultOptions = defaultOptions;
 Autocomplete.moduleName = AUTOCOMPLETE_MODULE_NAME;
 Autocomplete.folderName = AUTOCOMPLETE_FOLDER_NAME;
 
-/**
- * @see List ariaSpec for popup listbox content
- * @see ActionSheet ariaSpec for adaptive mode
- */
-Autocomplete.ariaSpec = {
-    rules: [
-        { selector: '.k-autocomplete .k-input-inner', attribute: 'role=combobox', usage: 'Announces the autocomplete input.' },
-        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the component has a listbox popup.' },
-        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-expanded', usage: 'Announces the popup visibility.' },
-        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the autocomplete.' },
-        { selector: '.k-autocomplete.k-disabled .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the autocomplete is disabled.' },
-        { selector: '.k-autocomplete-popup .k-list-content, .k-autocomplete-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
-        { selector: '.k-autocomplete-popup .k-list-ul[role="listbox"], .k-autocomplete-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-autocomplete-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
-    ]
-};
+Autocomplete.ariaSpec = a11ySpec.ariaSpec;
 
 export default Autocomplete;

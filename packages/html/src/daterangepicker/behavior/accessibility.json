@@ -1,0 +1,23 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-daterangepicker .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "Each date input needs an accessible name."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Esc",
+            "behavior": "Closes the popup"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) + Down",
+            "behavior": "Opens the popup"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) + Up",
+            "behavior": "Closes the popup"
+        }
+    ]
+}

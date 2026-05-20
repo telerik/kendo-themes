@@ -16,6 +16,7 @@ import { List, ListContent, ListCustomValue, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
 import { COMBOBOX_FOLDER_NAME, COMBOBOX_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const COMBOBOX_CLASSNAME = `k-combobox`;
 
 const states = [
@@ -228,46 +229,6 @@ Combobox.defaultOptions = defaultOptions;
 Combobox.moduleName = COMBOBOX_MODULE_NAME;
 Combobox.folderName = COMBOBOX_FOLDER_NAME;
 
-/**
- * Accessibility specification for Combobox.
- *
- * @accessibility
- * - Input has role="combobox" with aria-haspopup="listbox"
- * - aria-expanded indicates popup visibility
- * - aria-controls points to listbox when open
- * - aria-activedescendant tracks focused option via keyboard
- * - aria-autocomplete indicates filtering/suggest behavior
- * - Dropdown button has aria-label and tabindex=-1
- * - Adaptive mode uses ActionSheet with aria-labelledby="${id}-adaptive-title"
- * - Requires accessible name via label element (provided by consuming application)
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern with listbox popup
- * @see Popup.ariaSpec for popup container
- * @see List.ariaSpec for listbox content
- * @see ActionSheet.ariaSpec for adaptive mode dialog
- */
-Combobox.ariaSpec = {
-    selector: '.k-combobox',
-    rules: [
-        { selector: '.k-combobox > .k-input-inner', attribute: 'role=combobox', usage: 'Identifies the input as a combobox.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the combobox has a listbox popup.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-expanded', usage: 'Indicates whether the popup is open.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-controls=${id}-listbox (when open)', usage: 'Points to the listbox element when popup is open.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-activedescendant (when open)', usage: 'Points to the focused item in the listbox.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-autocomplete=list|both|inline (when has autocomplete)', usage: 'Indicates the autocomplete behavior.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the combobox is in an invalid state.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-busy=true (when loading)', usage: 'Rendered when the combobox is loading data.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'Accessible name provided by consuming app.' },
-        { selector: '.k-combobox.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the combobox is disabled.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'role=button or nodeName=button', usage: 'The dropdown toggle button.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'tabindex=-1', usage: 'Dropdown button is not in the tab order.' },
-        { selector: '.k-combobox-popup .k-list-content, .k-combobox-popup .k-list-ul', attribute: 'role=listbox', usage: 'The popup list container has the listbox role.' },
-        { selector: '.k-combobox-popup .k-list-ul[role="listbox"], .k-combobox-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-combobox-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
-        { selector: '.k-combobox-popup .k-list-item', attribute: 'aria-selected (when selectable)', usage: 'Indicates the selected state.' },
-        { selector: '.k-combobox-popup .k-no-data', attribute: 'aria-live=polite', usage: 'Announces no-data state to screen readers.' },
-    ]
-};
+Combobox.ariaSpec = a11ySpec.ariaSpec;
 
 export default Combobox;

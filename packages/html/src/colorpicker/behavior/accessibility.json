@@ -1,0 +1,83 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "role=combobox",
+            "usage": "The focusable element should have role combobox (input with popup)."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "The component needs an accessible name including the currently selected value."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "aria-haspopup=dialog",
+            "usage": "Indicates the component has a Dialog Popup."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "aria-expanded=true/false",
+            "usage": "Announces the visibility state of the popup."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "aria-controls (when open)",
+            "usage": "Points to the popup element."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-colorpicker.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Rendered only when the picker is disabled."
+        },
+        {
+            "selector": ".k-colorpicker.k-disabled .k-button",
+            "attribute": "disabled or aria-disabled=true",
+            "usage": "Rendered only when the picker is disabled."
+        },
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "tabindex=-1",
+            "usage": "The inner ColorGradient must be removed from the page tab sequence."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Alt/Opt(Mac) Down",
+            "behavior": "Opens pop up"
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Opens pop up"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) Up or Esc",
+            "behavior": "Closes popup"
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Closes Popup and moves focus back to k-colorpicker element."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates to the next focusable element in the Popup. If current focus is on the last element, moves focus to the first focusable item in the Popup."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Navigates to the previous focusable element in the Popup. If current focus is on the first element, moves focus to the last focusable item in the Popup."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "For button items, executes the currently focused button action."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "If any of the colorgradient elements are currently focused, bring focus back to the k-colorpicker element."
+        }
+    ]
+}

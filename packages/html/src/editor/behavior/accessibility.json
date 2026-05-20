@@ -1,0 +1,49 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-editor-content[contenteditable]",
+            "attribute": "role=textbox",
+            "usage": "Specifies the role of the component as text input."
+        },
+        {
+            "selector": ".k-editor-content[contenteditable]",
+            "attribute": "aria-label",
+            "usage": "The component focusable element needs an accessible name."
+        },
+        {
+            "selector": ".k-editor.k-readonly .k-editor-content[contenteditable=\"false\"]",
+            "attribute": "aria-readonly=true",
+            "usage": "Rendered only when the Editor is readonly."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Ctrl/Cmd(Mac)+B",
+            "behavior": "Executes bold command."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac)+I",
+            "behavior": "Executes italic command."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac)+U",
+            "behavior": "Executes underline command."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac)+Z",
+            "behavior": "Executes undo command."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac)+Y",
+            "behavior": "Executes redo command."
+        },
+        {
+            "shortcut": "Shift+Enter",
+            "behavior": "Adds ` ` to content."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Adds `` to content."
+        }
+    ]
+}

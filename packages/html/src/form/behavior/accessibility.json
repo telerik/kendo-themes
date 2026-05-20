@@ -1,0 +1,20 @@
+{
+    "kbSpec": [
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Moves focus to the previous focusable element."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Moves focus to the next focusable element."
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "Triggers the default action of the focused element for the Space key."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Triggers the default action of the focused element for the Enter key."
+        }
+    ]
+}

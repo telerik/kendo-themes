@@ -1,0 +1,30 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-tooltip",
+            "attribute": "role=tooltip",
+            "usage": "Specifies the tooltip role of the tooltip container."
+        },
+        {
+            "selector": ".k-tooltip",
+            "attribute": "id",
+            "usage": "The element needs an id to be associated with the aria-describedby attribute of the trigger element."
+        },
+        {
+            "selector": ".k-tooltip .k-tooltip-button",
+            "attribute": "role=button",
+            "usage": "The close button needs an explicit button role."
+        },
+        {
+            "selector": ".k-tooltip .k-tooltip-button",
+            "attribute": "aria-label",
+            "usage": "The close button needs an accessible name."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Escape",
+            "behavior": "Dismisses the Tooltip."
+        }
+    ]
+}

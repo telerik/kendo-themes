@@ -5,6 +5,7 @@ import { PROMPT_BOX_FOLDER_NAME, PROMPT_BOX_MODULE_NAME } from './constants';
 import { IconButton } from '../button';
 import { SpeechToTextButton } from '../speech-to-text-button';
 import { KendoComponent } from '../_types/component';
+import a11ySpec from './behavior/accessibility.json';
 
 export const PROMPT_BOX_CLASSNAME = `k-prompt-box`;
 
@@ -128,25 +129,6 @@ PromptBox.defaultOptions = defaultOptions;
 PromptBox.moduleName = PROMPT_BOX_MODULE_NAME;
 PromptBox.folderName = PROMPT_BOX_FOLDER_NAME;
 
-PromptBox.ariaSpec = {
-    selector: '.k-prompt-box',
-    rules: [
-        // Single-line input
-        { selector: '.k-prompt-box-singleline .k-prompt-box-input', attribute: 'nodeName=input', usage: 'Ensures the input field has the proper textbox role.' },
-        { selector: '.k-prompt-box-singleline .k-prompt-box-input', attribute: 'aria-label', usage: 'Provides an accessible label for the single-line input.' },
-        // Multi-line textarea
-        { selector: '.k-prompt-box-multiline .k-prompt-box-textarea', attribute: 'nodeName=textarea', usage: 'Ensures the textarea has the proper textbox role.' },
-        { selector: '.k-prompt-box-multiline .k-prompt-box-textarea', attribute: 'aria-label', usage: 'Provides an accessible label for the textarea.' },
-        { selector: '.k-prompt-box-multiline .k-prompt-box-textarea', attribute: 'aria-multiline=true', usage: 'Indicates the textarea supports multiple lines of text.' },
-        // Auto mode textarea (no singleline/multiline class)
-        { selector: '.k-prompt-box:not(.k-prompt-box-singleline):not(.k-prompt-box-multiline) .k-prompt-box-textarea', attribute: 'nodeName=textarea', usage: 'Ensures the auto-mode textarea has the proper textbox role.' },
-        { selector: '.k-prompt-box:not(.k-prompt-box-singleline):not(.k-prompt-box-multiline) .k-prompt-box-textarea', attribute: 'aria-label', usage: 'Provides an accessible label for the auto-mode textarea.' },
-        { selector: '.k-prompt-box:not(.k-prompt-box-singleline):not(.k-prompt-box-multiline) .k-prompt-box-textarea', attribute: 'aria-multiline=true', usage: 'Indicates the auto-mode textarea supports multiple lines of text.' },
-        // Send/stop button
-        { selector: '.k-prompt-box-affix .k-button:not(.k-speech-to-text-button)', attribute: 'aria-label', usage: 'The send/stop button is labelled to indicate its current action.' },
-        { selector: '.k-prompt-box-affix .k-button:not(.k-speech-to-text-button)', attribute: 'aria-live=polite', usage: 'Announces the change in status of the send/stop button.' },
-        // File attachments follow the FileBox ariaSpec (see file-box.spec.tsx)
-    ]
-};
+PromptBox.ariaSpec = a11ySpec.ariaSpec;
 
 export default PromptBox;

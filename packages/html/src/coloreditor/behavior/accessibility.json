@@ -1,0 +1,34 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-flatcolorpicker",
+            "attribute": "role=textbox",
+            "usage": "The focusable wrapper should be considered a textbox with a submittable value."
+        },
+        {
+            "selector": ".k-flatcolorpicker",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "The component needs an accessible name including the currently selected value."
+        },
+        {
+            "selector": ".k-flatcolorpicker",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-flatcolorpicker.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Rendered only when the FlatColorPicker is disabled."
+        },
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "role=none",
+            "usage": "The inner ColorGradient must have its role removed."
+        },
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "tabindex=-1",
+            "usage": "The inner ColorGradient must be removed from the page tab sequence."
+        }
+    ]
+}

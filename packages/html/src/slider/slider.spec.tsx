@@ -3,6 +3,7 @@ import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
 import { SLIDER_FOLDER_NAME, SLIDER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 const SLIDER_CLASSNAME = 'k-slider';
 
 const states = [
@@ -214,29 +215,6 @@ Slider.defaultOptions = defaultOptions;
 Slider.moduleName = SLIDER_MODULE_NAME;
 Slider.folderName = SLIDER_FOLDER_NAME;
 
-/**
- * Accessibility specification for Slider.
- */
-Slider.ariaSpec = {
-    selector: '.k-slider',
-    rules: [
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'role=slider', usage: 'Sets the proper role for Slider.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-label or aria-labelledby or title', usage: 'The Slider needs an accessible name to be assigned to it.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered only when the Slider is in a form and announces the invalid state.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-valuenow', usage: 'Specifies the currently selected value in the Slider.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-valuemin', usage: 'Specifies the minimum available value in the Slider.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-valuemax', usage: 'Specifies the maximum available value in the Slider.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-valuetext (when has text alternative)', usage: 'Specifies a human-readable text alternative to the numeric value. Provided by consuming applications.' },
-        { selector: '.k-slider:not(.k-disabled) .k-draghandle:not(.k-hsv-draghandle)', attribute: 'tabindex=0', usage: 'The element must be focusable. Disabled sliders are removed from tab order.' },
-        { selector: '.k-slider-vertical .k-draghandle', attribute: 'aria-orientation=vertical (when vertical)', usage: 'Present only when slider is vertical.' },
-        { selector: '.k-slider.k-disabled .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-disabled=true', usage: 'Rendered only when the Slider is disabled.' },
-        { selector: '.k-slider.k-readonly .k-draghandle', attribute: 'aria-readonly=true (when readonly)', usage: 'Rendered only when the Slider is readonly. Readonly sliders remain focusable but their value cannot be changed.' },
-        { selector: '.k-slider .k-button', attribute: 'tabindex=-1', usage: 'Excludes the buttons from the natural tab order. Keyboard users use arrow keys on the drag handle.' },
-        { selector: '.k-slider .k-button', attribute: 'title', usage: 'Provides a tooltip describing the button action (e.g., "Decrease" or "Increase").' },
-        { selector: '.k-slider .k-slider-items', attribute: 'aria-hidden=true', usage: 'Hides the tick list from assistive technologies. Tick values are redundant with the drag handle value attributes.' },
-        { selector: '.k-slider .k-tick', attribute: 'role=presentation', usage: 'Removes semantic meaning from individual tick elements. Ticks are visual-only markers.' },
-        { selector: '.k-slider .k-tick', attribute: 'title', usage: 'Represents the value associated with the respective tick.' },
-    ]
-};
+Slider.ariaSpec = a11ySpec.ariaSpec;
 
 export default Slider;

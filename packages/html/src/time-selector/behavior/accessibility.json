@@ -1,0 +1,34 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-timeselector",
+            "attribute": "role=group",
+            "usage": "Groups the time selection columns."
+        },
+        {
+            "selector": ".k-timeselector",
+            "attribute": "aria-label",
+            "usage": "Describes the time selector purpose."
+        },
+        {
+            "selector": ".k-time-list",
+            "attribute": "role=listbox",
+            "usage": "Each time column list acts as a listbox."
+        },
+        {
+            "selector": ".k-time-list",
+            "attribute": "aria-label",
+            "usage": "Describes which time unit the column selects."
+        },
+        {
+            "selector": ".k-time-list-wrapper .k-reset",
+            "attribute": "role=none",
+            "usage": "Removes semantic meaning from the ul element."
+        },
+        {
+            "selector": ".k-time-list-wrapper .k-item",
+            "attribute": "role=option",
+            "usage": "Each item in the time list is an option."
+        }
+    ]
+}

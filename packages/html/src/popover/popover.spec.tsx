@@ -3,6 +3,7 @@ import { Popup } from '../popup';
 
 import { KendoComponent } from '../_types/component';
 import { POPOVER_FOLDER_NAME, POPOVER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const POPOVER_CLASSNAME = `k-popover`;
 
 const states = [];
@@ -68,17 +69,6 @@ Popover.defaultOptions = defaultOptions;
 Popover.moduleName = POPOVER_MODULE_NAME;
 Popover.folderName = POPOVER_FOLDER_NAME;
 
-Popover.ariaSpec = {
-    selector: '.k-popover',
-    implicitRole: 'dialog',
-    rules: [
-        { selector: '.k-popover', attribute: 'role=dialog', usage: 'Announces the dialog role when the popover contains focusable elements. Use role=tooltip when it does not.' },
-        { selector: '.k-popover', attribute: 'id', usage: 'The element needs an id to be associated with the aria-describedby attribute of the trigger element.' },
-        { selector: '.k-popover', attribute: 'aria-labelledby', usage: 'Links the popover container with the popover header element when there is focusable content.' },
-        { selector: '.k-popover', attribute: 'aria-describedby', usage: 'Links the popover container with the popover body element when there is focusable content.' },
-        { selector: '.k-popover-header', attribute: 'id', usage: 'Links the popover header with the popover container via aria-labelledby.' },
-        { selector: '.k-popover-body', attribute: 'id', usage: 'Links the popover body with the popover container via aria-describedby.' },
-    ]
-};
+Popover.ariaSpec = a11ySpec.ariaSpec;
 
 export default Popover;

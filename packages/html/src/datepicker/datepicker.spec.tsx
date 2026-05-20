@@ -15,6 +15,7 @@ import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action
 
 import { KendoComponent } from '../_types/component';
 import { DATEPICKER_FOLDER_NAME, DATEPICKER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const DATEPICKER_CLASSNAME = `k-datepicker`;
 
 const states = [
@@ -172,32 +173,6 @@ DatePicker.defaultOptions = defaultOptions;
 DatePicker.moduleName = DATEPICKER_MODULE_NAME;
 DatePicker.folderName = DATEPICKER_FOLDER_NAME;
 
-/**
- * Accessibility specification for DatePicker.
- *
- * @accessibility
- * - Input has role=combobox with aria-haspopup=grid
- * - aria-expanded indicates popup visibility
- * - Icon button has tabindex=-1 and aria-label
- * - Calendar popup follows Calendar ARIA spec
- * - Adaptive mode follows ActionSheet ARIA spec
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern for date selection
- */
-DatePicker.ariaSpec = {
-    selector: '.k-datepicker',
-    rules: [
-        { selector: '.k-datepicker .k-input-inner', attribute: 'role=combobox', usage: 'The input element follows the combobox specification.' },
-        { selector: '.k-datepicker .k-input-inner', attribute: 'aria-haspopup=grid', usage: 'Indicates the component has a Calendar Popup that implements role=grid.' },
-        { selector: '.k-datepicker .k-input-inner', attribute: 'aria-expanded=true/false', usage: 'Announces whether the Popup is visible or not.' },
-        { selector: '.k-datepicker .k-input-inner', attribute: 'aria-controls (when open)', usage: 'Points to the popup element.' },
-        { selector: '.k-datepicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'The input needs an accessible name.' },
-        { selector: '.k-invalid .k-input-inner', attribute: 'aria-invalid=true', usage: 'Rendered only when the picker is in form and announces invalid state.' },
-        { selector: '.k-disabled .k-input-inner', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-datepicker .k-input-button', attribute: 'tabindex=-1', usage: 'Button element must not be focusable.' },
-        { selector: '.k-datepicker .k-input-button', attribute: 'aria-label', usage: 'The button needs an accessible name.' },
-        { selector: '.k-datepicker.k-disabled .k-button', attribute: 'disabled or aria-disabled', usage: 'Rendered only when the picker is disabled.' },
-    ]
-};
+DatePicker.ariaSpec = a11ySpec.ariaSpec;
 
 export default DatePicker;

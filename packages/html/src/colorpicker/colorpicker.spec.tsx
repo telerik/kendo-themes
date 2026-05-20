@@ -15,6 +15,7 @@ import { ColorEditor } from "../coloreditor";
 
 import { KendoComponent } from '../_types/component';
 import { COLORPICKER_FOLDER_NAME, COLORPICKER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const COLORPICKER_CLASSNAME = `k-colorpicker`;
 
 const states = [
@@ -183,32 +184,6 @@ ColorPicker.defaultOptions = defaultOptions;
 ColorPicker.moduleName = COLORPICKER_MODULE_NAME;
 ColorPicker.folderName = COLORPICKER_FOLDER_NAME;
 
-/**
- * Accessibility specification for ColorPicker.
- *
- * @accessibility
- * - Wrapper has role=combobox with aria-haspopup=dialog
- * - aria-expanded indicates popup visibility
- * - tabindex=0 makes element focusable
- * - Disabled state uses aria-disabled=true
- * - Inner ColorGradient in popup has tabindex=-1
- * - Adaptive mode follows ActionSheet ARIA spec
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern for color selection
- */
-ColorPicker.ariaSpec = {
-    selector: '.k-colorpicker',
-    rules: [
-        { selector: '.k-colorpicker', attribute: 'role=combobox', usage: 'The focusable element should have role combobox (input with popup).' },
-        { selector: '.k-colorpicker', attribute: 'aria-label or aria-labelledby', usage: 'The component needs an accessible name including the currently selected value.' },
-        { selector: '.k-colorpicker', attribute: 'aria-haspopup=dialog', usage: 'Indicates the component has a Dialog Popup.' },
-        { selector: '.k-colorpicker', attribute: 'aria-expanded=true/false', usage: 'Announces the visibility state of the popup.' },
-        { selector: '.k-colorpicker', attribute: 'aria-controls (when open)', usage: 'Points to the popup element.' },
-        { selector: '.k-colorpicker', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-colorpicker.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-colorpicker.k-disabled .k-button', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-colorgradient', attribute: 'tabindex=-1', usage: 'The inner ColorGradient must be removed from the page tab sequence.' },
-    ]
-};
+ColorPicker.ariaSpec = a11ySpec.ariaSpec;
 
 export default ColorPicker;

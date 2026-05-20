@@ -2,6 +2,7 @@ import { classNames, stateClassNames, States, } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { PROGRESSBAR_FOLDER_NAME, PROGRESSBAR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const PROGRESSBAR_CLASSNAME = `k-progressbar`;
 
 const states = [
@@ -113,16 +114,6 @@ ProgressBar.defaultOptions = defaultOptions;
 ProgressBar.moduleName = PROGRESSBAR_MODULE_NAME;
 ProgressBar.folderName = PROGRESSBAR_FOLDER_NAME;
 
-ProgressBar.ariaSpec = {
-    selector: '.k-progressbar',
-    implicitRole: 'progressbar',
-    rules: [
-        { selector: '.k-progressbar', attribute: 'role=progressbar', usage: 'Sets the proper role for ProgressBar.' },
-        { selector: '.k-progressbar', attribute: 'aria-label or aria-labelledby', usage: 'The ProgressBar needs an accessible name to be assigned to it.' },
-        { selector: '.k-progressbar:not(.k-progressbar-indeterminate)', attribute: 'aria-valuenow', usage: 'Required if the value is not indeterminate. Decimal value between aria-valuemin and aria-valuemax.' },
-        { selector: '.k-progressbar', attribute: 'aria-valuemin', usage: 'Minimum value. Defaults to 0.' },
-        { selector: '.k-progressbar', attribute: 'aria-valuemax', usage: 'Maximum value. Defaults to 100.' },
-    ]
-};
+ProgressBar.ariaSpec = a11ySpec.ariaSpec;
 
 export default ProgressBar;

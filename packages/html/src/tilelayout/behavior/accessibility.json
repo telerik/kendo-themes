@@ -1,0 +1,86 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-tilelayout",
+            "attribute": "role=list",
+            "usage": "Sets list role to the TileLayout wrapper."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role=listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex=0",
+            "usage": "Makes the item wrapper element focusable."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts=Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-dropeffect=execute",
+            "usage": "Announces that an action will be executed when the item is dropped."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-grabbed=true/false",
+            "usage": "Indicates the grabbed state in a drag-and-drop operation."
+        },
+        {
+            "selector": ".k-tilelayout-item-header .k-card-title",
+            "attribute": "id",
+            "usage": "Unique identifier to link the header text element to the focusable wrapper."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Tab",
+            "behavior": "Move focus to the next tile. If focus is on the last tile, focus the next focusable element on the page."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Move focus to the previous tile. If focus is on the first tile, focus the previous focusable element before the TileLayout."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Focuses the first focusable element within the tile. Focus is trapped and wrapped within the tile content and follows its natural Tab sequence."
+        },
+        {
+            "shortcut": "Escape",
+            "behavior": "Moves focus back to the TileLayout item wrapper when it is on a focusable element within the tile content."
+        },
+        {
+            "shortcut": "Shift + Right Arrow",
+            "behavior": "Reorders the focused tile with the next one (if such exists)."
+        },
+        {
+            "shortcut": "Shift + Left Arrow",
+            "behavior": "Reorders the focused tile with the previous one (if such exists)."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Right Arrow",
+            "behavior": "Increments the focused tile width with one column (to a maximum of the preset columns count)."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Left Arrow",
+            "behavior": "Decrements the focused tile width with one column (to a minimum of 1)."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Down Arrow",
+            "behavior": "Increments the focused item height with one row (to a maximum of the preset rows count if such option exists)."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Up Arrow",
+            "behavior": "Decrements the focused item height with one row (to a minimum of 1)."
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+        },
+        {
+            "selector": ".k-window:not(.k-dialog)",
+            "attribute": "aria-labelledby",
+            "usage": "Associate the title of the dialog."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Alt/Opt(Mac) + DownArrow",
+            "behavior": "Minimizes or restores the state, if the focused element is the window"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) + UpArrow",
+            "behavior": "Maximizes or restores the state, if the focused element is the window"
+        },
+        {
+            "shortcut": "Arrow Keys",
+            "behavior": "Move the window to the respective direction (UP"
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + UpArrow",
+            "behavior": "Decreases the height of the window triggering the resizing capabilities. Applicable only when the component is resizable."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + DownArrow",
+            "behavior": "Increases the height of the window triggering the resizing capabilities. Applicable only when the component is resizable."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + LeftArrow",
+            "behavior": "Decreases the width of the window triggering the resizing capabilities. Applicable only when the component is resizable."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + RightArrow",
+            "behavior": "Increases the width of the window triggering the resizing capabilities. Applicable only when the component is resizable."
+        },
+        {
+            "shortcut": "Escape",
+            "behavior": "Closes the window. When the window is modal, the focus should be returned to the element that triggered the open."
+        }
+    ]
+}

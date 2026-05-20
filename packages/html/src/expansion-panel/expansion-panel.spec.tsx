@@ -4,6 +4,7 @@ import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
 import { EXPANSION_PANEL_FOLDER_NAME, EXPANSION_PANEL_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 const EXPANSION_PANEL_CLASSNAME = 'k-expander';
 
 const states = [
@@ -101,25 +102,6 @@ ExpansionPanel.defaultOptions = defaultOptions;
 ExpansionPanel.moduleName = EXPANSION_PANEL_MODULE_NAME;
 ExpansionPanel.folderName = EXPANSION_PANEL_FOLDER_NAME;
 
-/**
- * @ariaSpec
- * ExpansionPanel implements the WAI-ARIA disclosure pattern.
- *
- * - Header: role="button" with aria-controls pointing to content wrapper
- * - aria-expanded indicates open/closed state
- * - tabindex=0 on header for keyboard focus
- * - aria-disabled when panel is disabled
- */
-ExpansionPanel.ariaSpec = {
-    selector: '.k-expander',
-    rules: [
-        { selector: '.k-expander-header', attribute: 'role=button', usage: 'Sets the proper role for the ExpansionPanel header.' },
-        { selector: '.k-expander-header', attribute: 'aria-controls', usage: 'Points to the controlled content wrapper element.' },
-        { selector: '.k-expander-header', attribute: 'aria-expanded=true/false', usage: 'Indicates the expanded state of the ExpansionPanel.' },
-        { selector: '.k-expander-header', attribute: 'tabindex=0', usage: 'The element should be focusable.' },
-        { selector: '.k-disabled .k-expander-header', attribute: 'aria-disabled=true', usage: 'Rendered only when the ExpansionPanel is disabled.' },
-        { selector: '.k-expander-content-wrapper', attribute: 'id', usage: 'Content wrapper has an id referenced by aria-controls.' },
-    ]
-};
+ExpansionPanel.ariaSpec = a11ySpec.ariaSpec;
 
 export default ExpansionPanel;

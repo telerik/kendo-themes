@@ -2,6 +2,7 @@ import { classNames, optionClassNames, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { APPBAR_FOLDER_NAME, APPBAR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const APPBAR_CLASSNAME = `k-appbar`;
 
 const states = [];
@@ -64,15 +65,6 @@ Appbar.className = APPBAR_CLASSNAME;
 Appbar.defaultOptions = defaultOptions;
 Appbar.moduleName = APPBAR_MODULE_NAME;
 Appbar.folderName = APPBAR_FOLDER_NAME;
-
-/**
- * @ariaSpec
- * AppBar is a container for elements and does not implement specific WAI-ARIA attributes.
- * Child elements should implement their own accessibility patterns.
- */
-Appbar.ariaSpec = {
-    selector: '.k-appbar',
-    rules: []
-};
+Appbar.ariaSpec = a11ySpec.ariaSpec;
 
 export default Appbar;

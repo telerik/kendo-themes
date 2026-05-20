@@ -8,6 +8,7 @@ import { Searchbox } from '../searchbox';
 
 import { KendoComponent } from '../_types/component';
 import { FILEMANAGER_FOLDER_NAME, FILEMANAGER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 const FILEMANAGER_CLASSNAME = 'k-filemanager';
 
 const states = [
@@ -88,25 +89,6 @@ FileManager.defaultOptions = defaultOptions;
 FileManager.moduleName = FILEMANAGER_MODULE_NAME;
 FileManager.folderName = FILEMANAGER_FOLDER_NAME;
 
-/**
- * Accessibility specification for FileManager.
- *
- * The FileManager is a composite component containing:
- * - Toolbar (top)
- * - Splitter (separates panes)
- * - TreeView (left pane navigation)
- * - Breadcrumb (center pane navigation)
- * - ListView or Grid (center pane content)
- * - Preview pane (right pane, optional)
- *
- * Each sub-component implements its own ARIA spec.
- * The only custom rule is that the preview pane must be focusable.
- */
-FileManager.ariaSpec = {
-    selector: '.k-filemanager',
-    rules: [
-        { selector: '.k-filemanager-preview', attribute: 'tabindex=0', usage: 'The element must be focusable, so that its content would be communicated to the users.' },
-    ]
-};
+FileManager.ariaSpec = a11ySpec.ariaSpec;
 
 export default FileManager;

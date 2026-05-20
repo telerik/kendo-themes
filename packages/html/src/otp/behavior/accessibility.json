@@ -1,0 +1,74 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-otp",
+            "attribute": "role=group",
+            "usage": "Sets the proper role for the OTP."
+        },
+        {
+            "selector": ".k-otp > input",
+            "attribute": "type=hidden",
+            "usage": "The hidden input holding the OTP inputs value."
+        },
+        {
+            "selector": ".k-otp > input",
+            "attribute": "aria-hidden=true",
+            "usage": "Hides the hidden input from assistive technologies."
+        },
+        {
+            "selector": ".k-otp .k-otp-input > .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input needs an accessible name to be assigned to it."
+        },
+        {
+            "selector": ".k-otp .k-otp-input > .k-input-inner",
+            "attribute": "autocomplete=off",
+            "usage": "Sets the default autocomplete for the input."
+        },
+        {
+            "selector": ".k-otp .k-otp-input > .k-input-inner",
+            "attribute": "aria-describedby (when has hint or error)",
+            "usage": "Points to the hint or error message for the OTP inputs."
+        },
+        {
+            "selector": ".k-otp.k-invalid .k-otp-input > .k-input-inner, .k-otp.ng-invalid .k-otp-input > .k-input-inner",
+            "attribute": "aria-invalid=true",
+            "usage": "Rendered only when the OTP is in a form and announces the invalid state."
+        },
+        {
+            "selector": ".k-otp.k-disabled .k-otp-input > .k-input-inner",
+            "attribute": "disabled=disabled or aria-disabled=true",
+            "usage": "Rendered only when the OTP is disabled."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Typing in the input",
+            "behavior": "Sets the value in the input and moves the focus to the next focusable input in the OTP. (if any)"
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Focuses the next input in the OTP. If the focus is on the last input, focuses the next focusable element on the page."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Focuses the previous input in the OTP. If the focus is on the first input, focuses the previous focusable element before the OTP."
+        },
+        {
+            "shortcut": "Right Arrow",
+            "behavior": "Moves the focus to the next focusable input in the OTP. (if any)"
+        },
+        {
+            "shortcut": "Left Arrow",
+            "behavior": "Moves the focus to the previous focusable input in the OTP. (if any)"
+        },
+        {
+            "shortcut": "Backspace",
+            "behavior": "Deletes the value of the focused input and moves the focus on the previous input. (if any)."
+        },
+        {
+            "shortcut": "Delete",
+            "behavior": "Deletes the value of the focused input."
+        }
+    ]
+}

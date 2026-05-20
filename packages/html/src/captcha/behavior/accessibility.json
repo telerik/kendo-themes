@@ -1,0 +1,28 @@
+{
+    "kbSpec": [
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates to the next Captcha element."
+        },
+        {
+            "shortcut": "Shift+Tab",
+            "behavior": "Navigates to the previous Captcha Element."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Presses the focused Captcha button."
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "Presses the focused Captcha button."
+        },
+        {
+            "shortcut": "Arrow Up",
+            "behavior": "Increases the Audio control volume."
+        },
+        {
+            "shortcut": "Arrow Down",
+            "behavior": "Decreases the Audio control volume."
+        }
+    ]
+}

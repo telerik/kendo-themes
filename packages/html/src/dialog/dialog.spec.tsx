@@ -6,6 +6,7 @@ import { WindowContent } from '../window/window-content.spec';
 import { KendoComponent } from '../_types/component';
 import { DIALOG_FOLDER_NAME, DIALOG_MODULE_NAME } from './constants';
 import { Overlay } from '../overlay';
+import a11ySpec from './behavior/accessibility.json';
 export const DIALOG_CLASSNAME = `k-dialog`;
 
 const states = [];
@@ -91,24 +92,6 @@ Dialog.defaultOptions = defaultOptions;
 Dialog.moduleName = DIALOG_MODULE_NAME;
 Dialog.folderName = DIALOG_FOLDER_NAME;
 
-/**
- * Accessibility specification for Dialog.
- *
- * @accessibility
- * - Dialog has role=dialog with aria-labelledby and aria-describedby
- * - Modal dialogs have aria-modal=true
- * - Action buttons have aria-label
- *
- * @wcag 4.1.2 Name, Role, Value - dialog pattern
- */
-Dialog.ariaSpec = {
-    selector: '.k-dialog',
-    rules: [
-        { selector: '.k-dialog', attribute: 'role=dialog or role=alertdialog', usage: 'Announces the dialog or alertdialog role of the component.' },
-        { selector: '.k-dialog', attribute: 'aria-labelledby', usage: 'Associate the title of the dialog.' },
-        { selector: '.k-dialog', attribute: 'aria-describedby', usage: 'Associate the dialog content to the wrap element.' },
-        { selector: '.k-overlay + .k-dialog', attribute: 'aria-modal=true', usage: 'Announces that the dialog is modal. Attribute is added only when the dialog is modal.' },
-    ]
-};
+Dialog.ariaSpec = a11ySpec.ariaSpec;
 
 export default Dialog;

@@ -1,0 +1,9 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-avatar img",
+            "attribute": "alt",
+            "usage": "Images inside Avatar must have alt text for screen readers."
+        }
+    ]
+}

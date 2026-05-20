@@ -2,6 +2,7 @@ import { classNames, optionClassNames, stateClassNames, States, Size } from '../
 
 import { KendoComponent } from '../_types/component';
 import { RADIO_FOLDER_NAME, RADIO_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const RADIOBUTTON_CLASSNAME = `k-radio`;
 
 const states = [
@@ -98,19 +99,6 @@ RadioButton.defaultOptions = defaultOptions;
 RadioButton.moduleName = RADIO_MODULE_NAME;
 RadioButton.folderName = RADIO_FOLDER_NAME;
 
-/**
- * Accessibility specification for RadioButton.
- */
-RadioButton.ariaSpec = {
-    selector: '.k-radio',
-    rules: [
-        { selector: '.k-radio', attribute: 'type=radio', usage: 'Announces the radio type of the input.' },
-        { selector: '.k-radio', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name to which it will be assigned.' },
-        { selector: '.k-radio', attribute: 'checked (when checked)', usage: 'Boolean attribute that announces the checked state of the radio button.' },
-        { selector: '.k-radio', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message for the radio.' },
-        { selector: '.k-radio', attribute: 'disabled=disabled or aria-disabled=true (when disabled)', usage: 'Rendered only when the radio input is disabled.' },
-        { selector: '.k-invalid, .ng-invalid', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered only when the radio button is in a form and announces the invalid state.' },
-    ]
-};
+RadioButton.ariaSpec = a11ySpec.ariaSpec;
 
 export default RadioButton;

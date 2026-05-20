@@ -1,0 +1,84 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-columnmenu-item",
+            "attribute": "role=button",
+            "usage": "Sets column menu item role to button."
+        },
+        {
+            "selector": ".k-columnmenu-item",
+            "attribute": "tabindex=0",
+            "usage": "Sets column menu item tabindex."
+        },
+        {
+            "selector": ".k-expander .k-columnmenu-item",
+            "attribute": "aria-expanded=true/false",
+            "usage": "Sets the expanded state of an expandable item."
+        },
+        {
+            "selector": ".k-expander .k-columnmenu-item",
+            "attribute": "aria-controls",
+            "usage": "Points to id attribute of the content whose visibility the expandable item controls."
+        },
+        {
+            "selector": ".k-expander .k-columnmenu-item-content",
+            "attribute": "id",
+            "usage": "Unique and deterministic id linked to the aria-controls attribute of the corresponding expandable item."
+        },
+        {
+            "selector": ".k-column-list",
+            "attribute": "role=listbox",
+            "usage": "Sets the listbox role of the list of columns wrapper."
+        },
+        {
+            "selector": ".k-column-list",
+            "attribute": "aria-multiselectable=true",
+            "usage": "Specifies that the list is multiselectable."
+        },
+        {
+            "selector": ".k-column-list",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the column list."
+        },
+        {
+            "selector": ".k-column-list .k-column-list-item",
+            "attribute": "role=option",
+            "usage": "Sets the option role of the list item."
+        },
+        {
+            "selector": ".k-column-list .k-column-list-item",
+            "attribute": "aria-checked=true/false",
+            "usage": "Sets the checked state of list item."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates to the next focusable element in the Popup. If current focus is on the last element, moves focus to the first focusable item in the Popup."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Navigates to the previous focusable element in the Popup. If current focus is on the first element, moves focus to the last focusable item in the Popup."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "For column menu items, executes the currently focused item action. If item is expandable, expands or collapses the item."
+        },
+        {
+            "shortcut": "Escape",
+            "behavior": "When focus is inside a focusable element in the item content, returns focus to the parent menu item. When focus is on a menu item, closes the ColumnMenu Popup and returns focus to the element from which the menu was opened."
+        },
+        {
+            "shortcut": "Down Arrow & Up Arrow",
+            "behavior": "Moves the focus to the next/previous item when focus is in the ColumnChooser list of options."
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "Toggles the checked state of the focused ColumnChooser option."
+        },
+        {
+            "shortcut": "Escape",
+            "behavior": "When focus is inside a sub-view, returns to the main view and focuses the item that opened the sub-view. When focus is on the main view, closes the ActionSheet and returns focus to the element from which the menu was opened."
+        }
+    ]
+}

@@ -2,6 +2,7 @@ import { classNames, optionClassNames, stateClassNames, States, FillMode } from 
 
 import { KendoComponent } from '../_types/component';
 import { BUTTON_GROUP_FOLDER_NAME, BUTTON_GROUP_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const BUTTONGROUP_CLASSNAME = `k-button-group`;
 
 const states = [
@@ -67,21 +68,6 @@ ButtonGroup.defaultOptions = defaultOptions;
 ButtonGroup.moduleName = BUTTON_GROUP_MODULE_NAME;
 ButtonGroup.folderName = BUTTON_GROUP_FOLDER_NAME;
 
-/**
- * @ariaSpec
- * ButtonGroup implements the WAI-ARIA group pattern.
- *
- * - Container: role="group"
- * - When disabled: aria-disabled="true"
- * - Child buttons: aria-pressed for toggle state
- */
-ButtonGroup.ariaSpec = {
-    selector: '.k-button-group',
-    rules: [
-        { selector: '.k-button-group:not(.k-split-button)', attribute: 'role=group', usage: 'Sets the proper role for the group of buttons.' },
-        { selector: '.k-button-group.k-disabled', attribute: 'aria-disabled=true', usage: 'The attribute is rendered only when the entire button group is disabled.' },
-        { selector: '.k-button-group:not(.k-split-button):not(.k-scheduler-navigation):not(.k-zoom-control) .k-button', attribute: 'aria-pressed (when selected)', usage: 'Specifies the current state of the ButtonGroup. Only the selected button within the group will have this attribute set to true.' },
-    ]
-};
+ButtonGroup.ariaSpec = a11ySpec.ariaSpec;
 
 export default ButtonGroup;

@@ -3,6 +3,7 @@ import { ImageEditorToolbar } from './imageeditor-toolbar';
 
 import { KendoComponent } from '../_types/component';
 import { IMAGEEDITOR_FOLDER_NAME, IMAGEEDITOR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const IMAGEEDITOR_CLASSNAME = `k-imageeditor`;
 
 const states = [];
@@ -62,17 +63,6 @@ ImageEditor.defaultOptions = defaultOptions;
 ImageEditor.moduleName = IMAGEEDITOR_MODULE_NAME;
 ImageEditor.folderName = IMAGEEDITOR_FOLDER_NAME;
 
-/**
- * @see Toolbar ariaSpec for the image editor toolbar
- * @see Form ariaSpec for the crop/resize action pane
- */
-ImageEditor.ariaSpec = {
-    selector: '.k-imageeditor',
-    rules: [
-        // Canvas rules apply only when an image is loaded (the canvas element is not rendered without an image)
-        { selector: '.k-imageeditor-canvas>canvas', attribute: 'role=img', usage: 'Indicates the canvas role as an image. Applicable when an image is loaded.' },
-        { selector: '.k-imageeditor-canvas>canvas', attribute: 'aria-label or aria-labelledby', usage: 'Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded.' },
-    ]
-};
+ImageEditor.ariaSpec = a11ySpec.ariaSpec;
 
 export default ImageEditor;

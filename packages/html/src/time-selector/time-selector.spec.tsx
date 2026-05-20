@@ -3,6 +3,7 @@ import { TimeSelectorColumn } from '.';
 
 import { KendoComponent } from '../_types/component';
 import { TIME_SELECTOR_FOLDER_NAME, TIME_SELECTOR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export type timeType = 'dd' | 'HH' | 'mm' | 'ss' | 'SSS' | 'tt';
 
 const TIMESELECTOR_CLASSNAME = `k-timeselector`;
@@ -90,26 +91,6 @@ TimeSelector.defaultOptions = defaultOptions;
 TimeSelector.moduleName = TIME_SELECTOR_MODULE_NAME;
 TimeSelector.folderName = TIME_SELECTOR_FOLDER_NAME;
 
-/**
- * Accessibility specification for TimeSelector.
- *
- * @accessibility
- * - The wrapper has role=group with an aria-label
- * - Each time column list has role=listbox with aria-label describing the column
- * - Each item in the list has role=option
- *
- * @wcag 4.1.2 Name, Role, Value - listbox pattern for time selection
- */
-TimeSelector.ariaSpec = {
-    selector: '.k-timeselector',
-    rules: [
-        { selector: '.k-timeselector', attribute: 'role=group', usage: 'Groups the time selection columns.' },
-        { selector: '.k-timeselector', attribute: 'aria-label', usage: 'Describes the time selector purpose.' },
-        { selector: '.k-time-list', attribute: 'role=listbox', usage: 'Each time column list acts as a listbox.' },
-        { selector: '.k-time-list', attribute: 'aria-label', usage: 'Describes which time unit the column selects.' },
-        { selector: '.k-time-list-wrapper .k-reset', attribute: 'role=none', usage: 'Removes semantic meaning from the ul element.' },
-        { selector: '.k-time-list-wrapper .k-item', attribute: 'role=option', usage: 'Each item in the time list is an option.' },
-    ]
-};
+TimeSelector.ariaSpec = a11ySpec.ariaSpec;
 
 export default TimeSelector;

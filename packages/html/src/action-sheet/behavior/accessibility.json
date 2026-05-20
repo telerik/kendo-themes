@@ -1,0 +1,47 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-actionsheet",
+            "attribute": "role=dialog",
+            "usage": "Announces the dialog role of the component."
+        },
+        {
+            "selector": ".k-actionsheet",
+            "attribute": "aria-labelledby (when has title)",
+            "usage": "Associates the title of the action sheet."
+        },
+        {
+            "selector": ".k-actionsheet",
+            "attribute": "aria-hidden=true/false (when hidden)",
+            "usage": "Announces the hidden state of the ActionSheet container."
+        },
+        {
+            "selector": ".k-actionsheet",
+            "attribute": "aria-modal=true (when modal)",
+            "usage": "Announces that the action sheet is modal."
+        },
+        {
+            "selector": ".k-actionsheet .k-actionsheet-title",
+            "attribute": "id",
+            "usage": "Used to associate the title with the action sheet wrapper element."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Escape",
+            "behavior": "Dismisses the ActionSheet."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Moves focus to the next focusable item."
+        },
+        {
+            "shortcut": "Shift+Tab",
+            "behavior": "Moves focus to the previous focusable item."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Triggers the action associated with the currently focused item."
+        }
+    ]
+}

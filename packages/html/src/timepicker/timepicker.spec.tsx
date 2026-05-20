@@ -16,6 +16,7 @@ import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProp
 
 import { KendoComponent } from '../_types/component';
 import { TIMEPICKER_FOLDER_NAME, TIMEPICKER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const TIMEPICKER_CLASSNAME = `k-timepicker`;
 
 const states = [
@@ -189,36 +190,6 @@ TimePicker.defaultOptions = defaultOptions;
 TimePicker.moduleName = TIMEPICKER_MODULE_NAME;
 TimePicker.folderName = TIMEPICKER_FOLDER_NAME;
 
-/**
- * Accessibility specification for TimePicker.
- *
- * @accessibility
- * - Input has role=combobox with aria-haspopup=dialog
- * - aria-expanded indicates popup visibility
- * - Icon button has tabindex=-1 and aria-label
- * - Time lists in popup follow listbox pattern
- * - Adaptive mode follows ActionSheet ARIA spec
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern for time selection
- */
-TimePicker.ariaSpec = {
-    selector: '.k-timepicker',
-    rules: [
-        { selector: '.k-timepicker .k-input-inner', attribute: 'role=combobox', usage: 'The input element follows the combobox specification.' },
-        { selector: '.k-timepicker .k-input-inner', attribute: 'aria-haspopup=dialog', usage: 'Indicates the component has a Dialog Popup.' },
-        { selector: '.k-timepicker .k-input-inner', attribute: 'aria-expanded=true/false', usage: 'Announces whether the Popup is visible or not.' },
-        { selector: '.k-timepicker .k-input-inner', attribute: 'aria-controls (when open)', usage: 'Points to the popup element.' },
-        { selector: '.k-timepicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'The input needs an accessible name.' },
-        { selector: '.k-invalid .k-input-inner', attribute: 'aria-invalid=true', usage: 'Rendered only when the picker is in form and announces invalid state.' },
-        { selector: '.k-disabled .k-input-inner', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-timepicker .k-input-button', attribute: 'tabindex=-1', usage: 'Button element must not be focusable.' },
-        { selector: '.k-timepicker .k-input-button', attribute: 'aria-label', usage: 'The button needs an accessible name.' },
-        { selector: '.k-timepicker.k-disabled .k-button', attribute: 'disabled or aria-disabled', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-time-list', attribute: 'role=listbox', usage: 'The timelist elements must have listbox role.' },
-        { selector: '.k-time-list', attribute: 'aria-label or aria-labelledby', usage: 'The listbox needs an accessible name.' },
-        { selector: '.k-time-list-wrapper .k-reset', attribute: 'role=none', usage: 'The ul element semantic meaning must be removed.' },
-        { selector: '.k-time-list-wrapper .k-item', attribute: 'role=option', usage: 'The available options must be marked as such.' },
-    ]
-};
+TimePicker.ariaSpec = a11ySpec.ariaSpec;
 
 export default TimePicker;

@@ -14,6 +14,7 @@ import { List, ListContent, ListItem } from '../list';
 
 import { KendoComponent } from '../_types/component';
 import { DROPDOWNLIST_FOLDER_NAME, DROPDOWNLIST_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const DROPDOWNLIST_CLASSNAME = `k-dropdownlist`;
 
 const states = [
@@ -217,24 +218,6 @@ DropdownList.defaultOptions = defaultOptions;
 DropdownList.moduleName = DROPDOWNLIST_MODULE_NAME;
 DropdownList.folderName = DROPDOWNLIST_FOLDER_NAME;
 
-/**
- * @see List ariaSpec for popup listbox content
- * @see ActionSheet ariaSpec for adaptive mode
- */
-DropdownList.ariaSpec = {
-    rules: [
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'role=combobox', usage: 'Announces the dropdown element.' },
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-haspopup=listbox', usage: 'Indicates the presence of a listbox popup.' },
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-expanded', usage: 'Announces the visibility state of the popup.' },
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-label', usage: 'Accessible name for the dropdown.' },
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-dropdownlist.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered when the dropdown is disabled.' },
-        { selector: '.k-dropdownlist .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
-        { selector: '.k-dropdownlist .k-input-button', attribute: 'tabindex=-1', usage: 'The button must not be focusable.' },
-        { selector: '.k-dropdownlist-popup .k-list-content, .k-dropdownlist-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
-        { selector: '.k-dropdownlist-popup .k-list-ul[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-dropdownlist-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
-    ]
-};
+DropdownList.ariaSpec = a11ySpec.ariaSpec;
 
 export default DropdownList;

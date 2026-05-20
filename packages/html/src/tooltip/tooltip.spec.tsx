@@ -3,6 +3,7 @@ import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
 import { TOOLTIP_FOLDER_NAME, TOOLTIP_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const TOOLTIP_CLASSNAME = `k-tooltip`;
 
 const states = [];
@@ -94,15 +95,6 @@ Tooltip.defaultOptions = defaultOptions;
 Tooltip.moduleName = TOOLTIP_MODULE_NAME;
 Tooltip.folderName = TOOLTIP_FOLDER_NAME;
 
-Tooltip.ariaSpec = {
-    selector: '.k-tooltip',
-    implicitRole: 'tooltip',
-    rules: [
-        { selector: '.k-tooltip', attribute: 'role=tooltip', usage: 'Specifies the tooltip role of the tooltip container.' },
-        { selector: '.k-tooltip', attribute: 'id', usage: 'The element needs an id to be associated with the aria-describedby attribute of the trigger element.' },
-        { selector: '.k-tooltip .k-tooltip-button', attribute: 'role=button', usage: 'The close button needs an explicit button role.' },
-        { selector: '.k-tooltip .k-tooltip-button', attribute: 'aria-label', usage: 'The close button needs an accessible name.' },
-    ]
-};
+Tooltip.ariaSpec = a11ySpec.ariaSpec;
 
 export default Tooltip;

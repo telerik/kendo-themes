@@ -1,0 +1,29 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-progressbar",
+            "attribute": "role=progressbar",
+            "usage": "Sets the proper role for ProgressBar."
+        },
+        {
+            "selector": ".k-progressbar",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "The ProgressBar needs an accessible name to be assigned to it."
+        },
+        {
+            "selector": ".k-progressbar:not(.k-progressbar-indeterminate)",
+            "attribute": "aria-valuenow",
+            "usage": "Required if the value is not indeterminate. Decimal value between aria-valuemin and aria-valuemax."
+        },
+        {
+            "selector": ".k-progressbar",
+            "attribute": "aria-valuemin",
+            "usage": "Minimum value. Defaults to 0."
+        },
+        {
+            "selector": ".k-progressbar",
+            "attribute": "aria-valuemax",
+            "usage": "Maximum value. Defaults to 100."
+        }
+    ]
+}

@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size, Roundness, FillMode, ThemeColor } f
 
 import { KendoComponent } from '../_types/component';
 import { BADGE_FOLDER_NAME, BADGE_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 
 /**
  * Badge component specification.
@@ -110,18 +111,6 @@ Badge.className = BADGE_CLASSNAME;
 Badge.defaultOptions = defaultOptions;
 Badge.moduleName = BADGE_MODULE_NAME;
 Badge.folderName = BADGE_FOLDER_NAME;
-
-/**
- * Accessibility specification for Badge.
- *
- * No dedicated aria MD exists for Badge. The badge renders as a `<span>`
- * with text content that is accessible by default. When used as a status
- * indicator, the parent element should provide context via aria-label
- * or aria-describedby.
- */
-Badge.ariaSpec = {
-    selector: '.k-badge',
-    rules: []
-};
+Badge.ariaSpec = a11ySpec.ariaSpec;
 
 export default Badge;

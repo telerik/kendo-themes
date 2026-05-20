@@ -1,0 +1,113 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-pager",
+            "attribute": "role=application",
+            "usage": "Indicates that the pager has its own keyboard navigation implemented."
+        },
+        {
+            "selector": ".k-pager",
+            "attribute": "aria-roledescription=pager",
+            "usage": "Clarifies the role of the Pager."
+        },
+        {
+            "selector": ".k-pager",
+            "attribute": "aria-keyshortcuts=Enter ArrowRight ArrowLeft",
+            "usage": "Announces the available keyboard shortcuts."
+        },
+        {
+            "selector": ".k-pager",
+            "attribute": "aria-label",
+            "usage": "Announces the currently selected page and the number of available pages."
+        },
+        {
+            "selector": ".k-pager-nav",
+            "attribute": "role=button or nodeName=button",
+            "usage": "Specifies the role of the navigation element."
+        },
+        {
+            "selector": ".k-pager-nav.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Present when the navigation button is non-interactive."
+        },
+        {
+            "selector": ".k-pager-nav",
+            "attribute": "title",
+            "usage": "Specifies the purpose of each navigation button."
+        },
+        {
+            "selector": ".k-pager-numbers .k-button",
+            "attribute": "aria-label or title",
+            "usage": "Specifies the purpose of each page link, e.g., Page 6."
+        },
+        {
+            "selector": ".k-pager-numbers .k-button.k-selected",
+            "attribute": "aria-current=page",
+            "usage": "Present on the currently selected page element."
+        },
+        {
+            "selector": ".k-pager-sizes .k-dropdownlist",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "The DropDownList requires a label to specify its purpose."
+        },
+        {
+            "selector": ".k-pager-input .k-input-inner",
+            "attribute": "aria-label",
+            "usage": "The input requires a label to specify its purpose."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Home",
+            "behavior": "Loads the first page of data if the current page is not the first one."
+        },
+        {
+            "shortcut": "End",
+            "behavior": "Loads the last page of data if the current page is not the last one."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Activates the inner Pager navigation."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates to the next focusable element on the page."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Navigates to the previous focusable element on the page."
+        },
+        {
+            "shortcut": "Left Arrow",
+            "behavior": "Loads the previous page of data, if any."
+        },
+        {
+            "shortcut": "Right Arrow",
+            "behavior": "Loads the next page of data, if any."
+        },
+        {
+            "shortcut": "Page Up",
+            "behavior": "Loads the previous page of data, if any."
+        },
+        {
+            "shortcut": "Page Down",
+            "behavior": "Loads the next page of data, if any."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Moves the focus back to the wrapper element. Deactivates the inner Pager navigation."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates to the next focusable element in the Pager. If the current focus is on the last element, moves the focus to the first focusable item in the component."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Navigates to the previous focusable element in the Pager. If the current focus is on the first element, moves the focus to the last focusable item in the component."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "For button items, and Pager input executes the currently focused action (page change)."
+        }
+    ]
+}

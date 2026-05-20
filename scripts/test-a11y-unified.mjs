@@ -94,15 +94,15 @@ function buildSpecRegistry() {
 
                 if (typeof exp === 'function' && exp.ariaSpec) {
                     if (!registry[dir]) {
-                        registry[dir] = { specName: name, ariaSpec: { ...exp.ariaSpec } };
-                    } else if (exp.ariaSpec?.rules?.length) {
+                        registry[dir] = { specName: name, ariaSpec: normalizeRules(exp.ariaSpec) };
+                    } else if (normalizeRules(exp.ariaSpec).length) {
                         // Merge rules from multiple specs in the same folder (e.g. Chip + ChipList)
                         if (!registry[dir].ariaSpec) {
-                            registry[dir].ariaSpec = { ...exp.ariaSpec };
+                            registry[dir].ariaSpec = normalizeRules(exp.ariaSpec);
                         } else {
-                            registry[dir].ariaSpec.rules = [
-                                ...(registry[dir].ariaSpec.rules || []),
-                                ...exp.ariaSpec.rules
+                            registry[dir].ariaSpec = [
+                                ...normalizeRules(registry[dir].ariaSpec),
+                                ...normalizeRules(exp.ariaSpec)
                             ];
                         }
                     }
@@ -147,20 +147,21 @@ function discoverTemplates(folderName) {
 // ============================================================================
 
 /**
- * Extract testable rules from an ariaSpec object.
+ * Extract testable rules from an ariaSpec.
  *
- * Preferred format — a `rules` array directly on ariaSpec:
- *   ariaSpec.rules = [
- *     { selector: '.k-button', attribute: 'role=button', usage: 'Required' },
- *     ...
- *   ]
- *
- * Legacy format — reconstructed from selector/implicitRole/requiredAttributes:
- *   ariaSpec = { selector, implicitRole, requiredAttributes, childSelectors }
+ * Accepted formats:
+ *   - Array of rule objects (flat):  ariaSpec = [ { selector, attribute, usage }, ... ]
+ *   - Object with rules property:    ariaSpec = { rules: [ ... ] }
  */
+function normalizeRules(ariaSpec) {
+    if (Array.isArray(ariaSpec)) { return ariaSpec; }
+    return ariaSpec?.rules || [];
+}
+
 function getAriaRules(componentName, ariaSpec) {
-    if (!ariaSpec?.rules?.length) { return null; }
-    return { componentName, rules: ariaSpec.rules, source: 'ariaSpec.rules' };
+    const rules = normalizeRules(ariaSpec);
+    if (!rules.length) { return null; }
+    return { componentName, rules, source: 'ariaSpec' };
 }
 
 // ============================================================================
@@ -357,7 +358,8 @@ function checkAttributeRule(el, attribute, document) {
 }
 
 function validateAriaRules(html, ariaSpec) {
-    if (!ariaSpec?.rules?.length) {
+    const rules = normalizeRules(ariaSpec);
+    if (!rules.length) {
         return { passed: 0, violations: [], skipped: 0, skippedRules: [], total: 0 };
     }
 
@@ -367,7 +369,7 @@ function validateAriaRules(html, ariaSpec) {
     let passed = 0;
     let skipped = 0;
 
-    for (const rule of ariaSpec.rules) {
+    for (const rule of rules) {
         try {
             const elements = document.querySelectorAll(rule.selector);
             if (elements.length === 0) {
@@ -405,7 +407,7 @@ function validateAriaRules(html, ariaSpec) {
             if (verboseMode) { console.log(`     ⚠️ Rule error: ${err.message}`); }
         }
     }
-    return { passed, violations, skipped, skippedRules, total: ariaSpec.rules.length };
+    return { passed, violations, skipped, skippedRules, total: rules.length };
 }
 
 // ============================================================================

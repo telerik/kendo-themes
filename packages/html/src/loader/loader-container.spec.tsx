@@ -4,6 +4,7 @@ import Loader from './loader.spec';
 
 import { KendoComponent } from '../_types/component';
 import { LOADER_FOLDER_NAME, LOADER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const LOADERCONTAINER_CLASSNAME = `k-loader-container`;
 
 const states = [];
@@ -104,16 +105,6 @@ LoaderContainer.defaultOptions = defaultOptions;
 LoaderContainer.moduleName = LOADER_MODULE_NAME;
 LoaderContainer.folderName = LOADER_FOLDER_NAME;
 
-/**
- * Accessibility specification for LoaderContainer.
- */
-LoaderContainer.ariaSpec = {
-    selector: '.k-loader-container',
-    rules: [
-        { selector: '.k-loader-container', attribute: 'role=status', usage: 'Live region for loading state.' },
-        { selector: '.k-loader-container', attribute: 'aria-live=polite', usage: 'Polite announcements of loading state changes.' },
-        { selector: '.k-loader-container', attribute: 'aria-label', usage: 'Accessible name for the loader container.' },
-    ]
-};
+LoaderContainer.ariaSpec = a11ySpec.ariaSpec;
 
 export default LoaderContainer;

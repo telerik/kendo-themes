@@ -1,0 +1,74 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "role=combobox",
+            "usage": "Announces the dropdown tree element."
+        },
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "aria-haspopup=tree",
+            "usage": "Indicates the presence of a tree popup."
+        },
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "aria-expanded",
+            "usage": "Announces the popup visibility state."
+        },
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the dropdown tree."
+        },
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-dropdowntree.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Rendered when the dropdown tree is disabled."
+        },
+        {
+            "selector": ".k-dropdowntree .k-input-button",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the dropdown button."
+        },
+        {
+            "selector": ".k-dropdowntree .k-input-button",
+            "attribute": "tabindex=-1",
+            "usage": "The button must not be focusable."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Selects the next available item."
+        },
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Selects the previous available item."
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) Down",
+            "behavior": "Opens the popup."
+        },
+        {
+            "shortcut": "Alt (or Opt on Mac) + Up Arrow or Esc",
+            "behavior": "`Closes the popup."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Selects and confirms the focused item."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Clears the value when the popup is not open."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Closes the actionsheet and focuses the next focusable element."
+        }
+    ]
+}

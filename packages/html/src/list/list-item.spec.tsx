@@ -4,6 +4,7 @@ import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { LIST_FOLDER_NAME, LIST_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const LISTITEM_CLASSNAME = `k-list-item`;
 
 const states = [
@@ -104,22 +105,6 @@ ListItem.defaultOptions = defaultOptions;
 ListItem.moduleName = LIST_MODULE_NAME;
 ListItem.folderName = LIST_FOLDER_NAME;
 
-/**
- * Accessibility specification for ListItem.
- * @accessibility
- * - Regular items: role="option" with aria-selected
- * - Group headers: role="presentation" with id for aria-labelledby reference
- * - Icons are decorative: aria-hidden="true"
- */
-ListItem.ariaSpec = {
-    selector: '.k-list-item',
-    rules: [
-        { selector: '.k-list-item', attribute: 'role=option', usage: 'Each list item is an option in the listbox.' },
-        { selector: '.k-list-item', attribute: 'id', usage: 'ID for aria-activedescendant reference.' },
-        { selector: '.k-list-item', attribute: 'aria-selected (when selectable)', usage: 'Indicates the selected state of the option.' },
-        { selector: '.k-list-group-item', attribute: 'role=presentation', usage: 'Group headers are presentational, not selectable options.' },
-        { selector: '.k-list-item-icon', attribute: 'aria-hidden=true', usage: 'Decorative icons are hidden from assistive technology.' },
-    ]
-};
+ListItem.ariaSpec = a11ySpec.ariaSpec;
 
 export default ListItem;

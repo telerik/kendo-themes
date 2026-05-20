@@ -1,0 +1,30 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-button",
+            "attribute": "role=button or nodeName=button",
+            "usage": "The button role is implicit from the native <button> element."
+        },
+        {
+            "selector": ".k-button",
+            "attribute": "aria-label (when icon-only)",
+            "usage": "Required for icon-only buttons that have no visible text."
+        },
+        {
+            "selector": ".k-button",
+            "attribute": "aria-pressed (when togglable)",
+            "usage": "Indicates the pressed state of a toggle button."
+        },
+        {
+            "selector": ".k-button",
+            "attribute": "disabled (when disabled)",
+            "usage": "Rendered when the button is disabled."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Enter or Space",
+            "behavior": "Triggers a click action on the Button."
+        }
+    ]
+}

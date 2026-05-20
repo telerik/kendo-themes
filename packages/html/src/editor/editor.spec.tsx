@@ -4,6 +4,7 @@ import { EditorToolbar } from './editor-toolbar';
 
 import { KendoComponent } from '../_types/component';
 import { EDITOR_FOLDER_NAME, EDITOR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const EDITOR_CLASSNAME = `k-editor`;
 
 const states = [
@@ -78,16 +79,6 @@ Editor.defaultOptions = defaultOptions;
 Editor.moduleName = EDITOR_MODULE_NAME;
 Editor.folderName = EDITOR_FOLDER_NAME;
 
-/**
- * @see Toolbar ariaSpec for editor toolbar accessibility
- */
-Editor.ariaSpec = {
-    selector: '.k-editor',
-    rules: [
-        { selector: '.k-editor-content[contenteditable]', attribute: 'role=textbox', usage: 'Specifies the role of the component as text input.' },
-        { selector: '.k-editor-content[contenteditable]', attribute: 'aria-label', usage: 'The component focusable element needs an accessible name.' },
-        { selector: '.k-editor.k-readonly .k-editor-content[contenteditable="false"]', attribute: 'aria-readonly=true', usage: 'Rendered only when the Editor is readonly.' },
-    ]
-};
+Editor.ariaSpec = a11ySpec.ariaSpec;
 
 export default Editor;

@@ -7,6 +7,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { DATETIME_SELECTOR_FOLDER_NAME, DATETIME_SELECTOR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 const DATETIMESELECTOR_CLASSNAME = `k-datetime-wrap`;
 
 const states = [];
@@ -103,25 +104,6 @@ DateTimeSelector.defaultOptions = defaultOptions;
 DateTimeSelector.moduleName = DATETIME_SELECTOR_MODULE_NAME;
 DateTimeSelector.folderName = DATETIME_SELECTOR_FOLDER_NAME;
 
-/**
- * Accessibility specification for DateTimeSelector.
- *
- * @accessibility
- * - The wrapper has role=group with aria-label
- * - Tab buttons use role=tab with aria-selected
- * - Embedded Calendar and TimeSelector follow their own ARIA specs
- * - Action buttons (Set/Cancel) are accessible via button semantics
- *
- * @wcag 4.1.2 Name, Role, Value - tabbed group for date/time switching
- */
-DateTimeSelector.ariaSpec = {
-    selector: '.k-datetime-wrap',
-    rules: [
-        { selector: '.k-datetime-wrap', attribute: 'role=group', usage: 'Groups the date/time selector components.' },
-        { selector: '.k-datetime-wrap', attribute: 'aria-label', usage: 'Describes the date/time selector purpose.' },
-        { selector: '.k-datetime-buttongroup', attribute: 'role=group', usage: 'The segmented control acts as a group for Date/Time selection.' },
-        { selector: '.k-datetime-buttongroup .k-segmented-control-button', attribute: 'aria-pressed', usage: 'Indicates which option is currently active.' },
-    ]
-};
+DateTimeSelector.ariaSpec = a11ySpec.ariaSpec;
 
 export default DateTimeSelector;

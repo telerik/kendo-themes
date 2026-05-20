@@ -10,6 +10,7 @@ import { SpinButton } from '../spinbutton';
 
 import { KendoComponent } from '../_types/component';
 import { DATEINPUT_FOLDER_NAME, DATEINPUT_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const DATEINPUT_CLASSNAME = `k-dateinput`;
 
 const states = [
@@ -124,24 +125,6 @@ DateInput.defaultOptions = defaultOptions;
 DateInput.moduleName = DATEINPUT_MODULE_NAME;
 DateInput.folderName = DATEINPUT_FOLDER_NAME;
 
-/**
- * Accessibility specification for DateInput.
- * @accessibility
- * - Uses semantic `<input>` element (role="textbox" implicit)
- * - Requires accessible name via label, aria-label, or aria-labelledby
- * - Disabled state uses native disabled attribute
- */
-DateInput.ariaSpec = {
-    selector: '.k-dateinput',
-    rules: [
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'role=textbox or nodeName=input', usage: 'The element should be an input or have role="textbox".' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name (provided by consuming app).' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'tabindex=0', usage: 'The element should be focusable.' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the DateInput is in an invalid state.' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message.' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'readonly=readonly or aria-readonly=true (when readonly)', usage: 'Rendered when the DateInput is readonly.' },
-        { selector: '.k-dateinput.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the DateInput is disabled.' },
-    ]
-};
+DateInput.ariaSpec = a11ySpec.ariaSpec;
 
 export default DateInput;

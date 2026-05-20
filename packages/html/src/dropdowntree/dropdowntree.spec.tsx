@@ -14,6 +14,7 @@ import { Treeview, TreeviewGroup, TreeviewItem } from '../treeview';
 
 import { KendoComponent } from '../_types/component';
 import { DROPDOWNTREE_FOLDER_NAME, DROPDOWNTREE_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const DROPDOWNTREE_CLASSNAME = `k-dropdowntree`;
 
 const states = [
@@ -230,21 +231,6 @@ DropdownTree.defaultOptions = defaultOptions;
 DropdownTree.moduleName = DROPDOWNTREE_MODULE_NAME;
 DropdownTree.folderName = DROPDOWNTREE_FOLDER_NAME;
 
-/**
- * @see Treeview ariaSpec for the tree in the popup
- * @see ActionSheet ariaSpec for adaptive mode
- */
-DropdownTree.ariaSpec = {
-    rules: [
-        { selector: '.k-dropdowntree', attribute: 'role=combobox', usage: 'Announces the dropdown tree element.' },
-        { selector: '.k-dropdowntree', attribute: 'aria-haspopup=tree', usage: 'Indicates the presence of a tree popup.' },
-        { selector: '.k-dropdowntree', attribute: 'aria-expanded', usage: 'Announces the popup visibility state.' },
-        { selector: '.k-dropdowntree', attribute: 'aria-label', usage: 'Accessible name for the dropdown tree.' },
-        { selector: '.k-dropdowntree', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-dropdowntree.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered when the dropdown tree is disabled.' },
-        { selector: '.k-dropdowntree .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
-        { selector: '.k-dropdowntree .k-input-button', attribute: 'tabindex=-1', usage: 'The button must not be focusable.' },
-    ]
-};
+DropdownTree.ariaSpec = a11ySpec.ariaSpec;
 
 export default DropdownTree;

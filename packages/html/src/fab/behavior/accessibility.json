@@ -1,0 +1,19 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-fab",
+            "attribute": "role=button or nodeName=button",
+            "usage": "Omitted if the <button> DOM element is used."
+        },
+        {
+            "selector": ".k-fab",
+            "attribute": "aria-label or title (when icon-only)",
+            "usage": "The attribute must be present when no text is initially visible in the button."
+        },
+        {
+            "selector": ".k-fab.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Rendered only when the button is disabled."
+        }
+    ]
+}

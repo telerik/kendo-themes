@@ -1,0 +1,73 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-listview:not(.k-selectable) .k-listview-content",
+            "attribute": "role=list",
+            "usage": "Specifies the role of non selectable ListView content element."
+        },
+        {
+            "selector": ".k-listview.k-selectable .k-listview-content",
+            "attribute": "role=listbox",
+            "usage": "Specifies the role of selectable ListView content element."
+        },
+        {
+            "selector": ".k-listview:not(.k-selectable) .k-listview-item",
+            "attribute": "role=listitem",
+            "usage": "Specifies the role of each item in a non selectable ListView."
+        },
+        {
+            "selector": ".k-listview.k-selectable .k-listview-item",
+            "attribute": "role=option",
+            "usage": "Specifies the role of each item in a selectable ListView."
+        },
+        {
+            "selector": ".k-listview-item",
+            "attribute": "aria-setsize",
+            "usage": "Specifies the total number of items present in the ListView."
+        },
+        {
+            "selector": ".k-listview-item",
+            "attribute": "aria-posinset",
+            "usage": "Specifies the position of the current item in the entire list."
+        },
+        {
+            "selector": ".k-listview-item:nth-child(1)",
+            "attribute": "tabindex=0",
+            "usage": "The first item in the ListView must be focusable by default."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Right Arrow",
+            "behavior": "Moves the focus to the next rendered item. If the focus is on the last item, the focus does not move."
+        },
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Moves the focus to the next rendered item. If the focus is on the last item, the focus does not move."
+        },
+        {
+            "shortcut": "Left Arrow",
+            "behavior": "Moves the focus to the previous rendered item. If the focus is on the first item, the focus does not move."
+        },
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Moves the focus to the previous rendered item. If the focus is on the first item, the focus does not move."
+        },
+        {
+            "shortcut": "Home",
+            "behavior": "Moves the focus to the first rendered item."
+        },
+        {
+            "shortcut": "End",
+            "behavior": "Moves the focus to the last rendered item."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "When there are focusable items within a ListView item - the focus moves to the first focusable item inside."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "If the focus is on an element inside a ListView item - returns the focus back to the ListView item."
+        }
+    ]
+}

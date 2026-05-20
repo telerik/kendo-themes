@@ -1,0 +1,127 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-listbox .k-list-ul",
+            "attribute": "role=listbox",
+            "usage": "Specifies the role of the ListBox list element."
+        },
+        {
+            "selector": ".k-listbox .k-list-ul",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "Adds a label to the list element of the ListBox."
+        },
+        {
+            "selector": ".k-listbox .k-list-item",
+            "attribute": "role=option",
+            "usage": "Specifies the role of the ListBox item element."
+        },
+        {
+            "selector": ".k-listbox .k-list-item",
+            "attribute": "aria-selected=true/false",
+            "usage": "Set to true if the item is selected."
+        },
+        {
+            "selector": ".k-listbox .k-list-item",
+            "attribute": "tabindex",
+            "usage": "The focused listbox item should have tabindex 0, all others -1."
+        },
+        {
+            "selector": ".k-listbox-actions",
+            "attribute": "role=toolbar",
+            "usage": "The toolbar is a collection of command buttons."
+        },
+        {
+            "selector": ".k-listbox-actions",
+            "attribute": "aria-label",
+            "usage": "Clarifies the purpose of the toolbar."
+        },
+        {
+            "selector": ".k-listbox-actions",
+            "attribute": "aria-controls (when present)",
+            "usage": "Points to the id of the listbox element being controlled."
+        },
+        {
+            "selector": ".k-listbox-actions .k-button",
+            "attribute": "aria-label or title",
+            "usage": "All buttons in the toolbar must have labels."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "F10",
+            "behavior": "Focuses the ListBox toolbar (the last focused or the first button in it)."
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "Selects the focused ListBox Item"
+        },
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Selects the previous item."
+        },
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Selects the next item."
+        },
+        {
+            "shortcut": "Ctrl (or Control on Mac) + Space",
+            "behavior": "Selects or deselects an item."
+        },
+        {
+            "shortcut": "Shift + Up Arrow",
+            "behavior": "Adds the previous item to the selected items."
+        },
+        {
+            "shortcut": "Shift + Down Arrow",
+            "behavior": "Adds the next item to the selected items."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Up Arrow",
+            "behavior": "Moves the focus to the previous item."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Down Arrow",
+            "behavior": "Moves the focus to the next item."
+        },
+        {
+            "shortcut": "Del",
+            "behavior": "Deletes the selected items."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Right Arrow",
+            "behavior": "Adds the selected items to the connected ListBox."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Left Arrow",
+            "behavior": "Adds the selected items from the connected ListBox to the current one."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Shift + Up Arrow",
+            "behavior": "Shifts the selected items upwards."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Shift + Down Arrow",
+            "behavior": "Shifts the selected items downwards."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Shift + Right Arrow",
+            "behavior": "Transfers all items to the connected ListBox."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Shift + Left Arrow",
+            "behavior": "Transfers all items from the connected ListBox."
+        },
+        {
+            "shortcut": "Right Arrow or Down Arrow",
+            "behavior": "Focuses the next button in the toolbar."
+        },
+        {
+            "shortcut": "Left Arrow or Up Arrow",
+            "behavior": "Focuses the previous button in the toolbar."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Executes the currenly focused button command if enabled."
+        }
+    ]
+}

@@ -3,6 +3,7 @@ import { classNames, optionClassNames, ThemeColor, nextId } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { NOTIFICATION_FOLDER_NAME, NOTIFICATION_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const NOTIFICATION_CLASSNAME = `k-notification`;
 
 const states = [];
@@ -97,32 +98,6 @@ Notification.defaultOptions = defaultOptions;
 Notification.moduleName = NOTIFICATION_MODULE_NAME;
 Notification.folderName = NOTIFICATION_FOLDER_NAME;
 
-/**
- * Accessibility specification for Notification.
- *
- * Uses role="status" (implicit aria-live="polite") instead of role="alert"
- * (implicit aria-live="assertive") because notifications are non-critical
- * status messages that should not interrupt the user's current task.
- *
- * @todo The closable notification's dismiss action is not keyboard-interactable.
- *   The close icon is currently a `<span>` with `aria-hidden="true"`, meaning it is
- *   invisible to assistive technologies and unreachable via Tab/Enter. A future
- *   improvement should render the close action as a `<button>` (or add `role="button"`
- *   with `tabindex="0"` and keydown handler) so that keyboard and screen reader users
- *   can dismiss the notification. This will require a structural change to the
- *   NotificationAction component and corresponding updates to the ariaSpec rules
- *   (e.g. adding `button-name`, `aria-label="Close"` on the dismiss button).
- *
- * @wcag 4.1.3 Status Messages - status role for notification messages
- */
-Notification.ariaSpec = {
-    selector: '.k-notification',
-    rules: [
-        { selector: '.k-notification', attribute: 'role=status', usage: 'Notification element should be marked as a status. Uses status instead of alert to avoid interrupting screen reader workflow.' },
-        { selector: '.k-notification', attribute: 'aria-live=polite', usage: 'The aria-live value must be polite so it will not obscure other essential information.' },
-        { selector: '.k-notification', attribute: 'aria-describedby=.k-notification-content id', usage: 'Used so that the content of the Notification will be announced by assistive technologies.' },
-        { selector: '.k-notification .k-svg-i-x, .k-notification .k-i-x', attribute: 'aria-hidden=true', usage: 'The close button icon should not be present in the accessibility tree.' },
-    ]
-};
+Notification.ariaSpec = a11ySpec.ariaSpec;
 
 export default Notification;

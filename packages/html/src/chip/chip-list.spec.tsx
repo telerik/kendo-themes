@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { CHIP_FOLDER_NAME, CHIP_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const CHIPLIST_CLASSNAME = `k-chip-list`;
 
 const states = [];
@@ -62,27 +63,6 @@ ChipList.defaultOptions = defaultOptions;
 ChipList.moduleName = CHIP_MODULE_NAME;
 ChipList.folderName = CHIP_FOLDER_NAME;
 
-/**
- * Accessibility specification for ChipList.
- *
- * When selection is disabled, the ChipList role should be set to `none`
- * and child Chips should retain their standalone `role=button`.
- *
- * @wcag 4.1.2 Name, Role, Value - listbox pattern with option children
- * @see Chip.ariaSpec for standalone chip rules
- */
-ChipList.ariaSpec = {
-    selector: '.k-chip-list',
-    rules: [
-        { selector: '.k-chip-list', attribute: 'role=listbox', usage: 'Announces the list role of the chip list.' },
-        { selector: '.k-chip-list', attribute: 'aria-label or aria-labelledby', usage: 'Adds label to the ChipList element. ListBox element requires an accessible name.' },
-        { selector: '.k-chip-list', attribute: 'aria-orientation=horizontal', usage: 'Specifies the horizontal orientation of the chiplist.' },
-        { selector: '.k-chip-list', attribute: 'aria-multiselectable=true (when multiple selection)', usage: 'Announces the multiple selection ability of the chiplist.' },
-        { selector: '.k-chip-list .k-chip', attribute: 'role=option', usage: 'Announces the chip is an option inner component of the chip list.' },
-        { selector: '.k-chip-list .k-chip.k-selected', attribute: 'aria-selected=true', usage: 'Announces the chip is selected.' },
-        { selector: '.k-chip-list .k-chip:not(.k-selected)', attribute: 'aria-selected=false', usage: 'Announces the chip is not selected.' },
-        { selector: '.k-chip-list .k-chip:has(.k-i-x-circle), .k-chip-list .k-chip:has(.k-svg-i-x-circle)', attribute: 'aria-keyshortcuts=Enter Delete', usage: 'Announces the Delete action along with the default Enter key.' },
-    ]
-};
+ChipList.ariaSpec = a11ySpec.ariaSpec;
 
 export default ChipList;

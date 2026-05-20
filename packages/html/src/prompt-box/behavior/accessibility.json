@@ -1,0 +1,72 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-prompt-box-singleline .k-prompt-box-input",
+            "attribute": "nodeName=input",
+            "usage": "Ensures the input field has the proper textbox role."
+        },
+        {
+            "selector": ".k-prompt-box-singleline .k-prompt-box-input",
+            "attribute": "aria-label",
+            "usage": "Provides an accessible label for the single-line input."
+        },
+        {
+            "selector": ".k-prompt-box-multiline .k-prompt-box-textarea",
+            "attribute": "nodeName=textarea",
+            "usage": "Ensures the textarea has the proper textbox role."
+        },
+        {
+            "selector": ".k-prompt-box-multiline .k-prompt-box-textarea",
+            "attribute": "aria-label",
+            "usage": "Provides an accessible label for the textarea."
+        },
+        {
+            "selector": ".k-prompt-box-multiline .k-prompt-box-textarea",
+            "attribute": "aria-multiline=true",
+            "usage": "Indicates the textarea supports multiple lines of text."
+        },
+        {
+            "selector": ".k-prompt-box:not(.k-prompt-box-singleline):not(.k-prompt-box-multiline) .k-prompt-box-textarea",
+            "attribute": "nodeName=textarea",
+            "usage": "Ensures the auto-mode textarea has the proper textbox role."
+        },
+        {
+            "selector": ".k-prompt-box:not(.k-prompt-box-singleline):not(.k-prompt-box-multiline) .k-prompt-box-textarea",
+            "attribute": "aria-label",
+            "usage": "Provides an accessible label for the auto-mode textarea."
+        },
+        {
+            "selector": ".k-prompt-box:not(.k-prompt-box-singleline):not(.k-prompt-box-multiline) .k-prompt-box-textarea",
+            "attribute": "aria-multiline=true",
+            "usage": "Indicates the auto-mode textarea supports multiple lines of text."
+        },
+        {
+            "selector": ".k-prompt-box-affix .k-button:not(.k-speech-to-text-button)",
+            "attribute": "aria-label",
+            "usage": "The send/stop button is labelled to indicate its current action."
+        },
+        {
+            "selector": ".k-prompt-box-affix .k-button:not(.k-speech-to-text-button)",
+            "attribute": "aria-live=polite",
+            "usage": "Announces the change in status of the send/stop button."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Enter / Return",
+            "behavior": "Submits the prompt."
+        },
+        {
+            "shortcut": "Shift + Enter / Return",
+            "behavior": "Inserts a new line in multi-line and auto modes"
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Moves focus to the next focusable element"
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Moves focus to the previous focusable element"
+        }
+    ]
+}

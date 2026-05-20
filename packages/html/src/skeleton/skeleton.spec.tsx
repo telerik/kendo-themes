@@ -2,6 +2,7 @@ import { classNames, variantClassNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { SKELETON_FOLDER_NAME, SKELETON_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const SKELETON_CLASSNAME = `k-skeleton`;
 
 const SKELETON_VARIANTS = ["circle", "text", "rect"] as const;
@@ -84,18 +85,6 @@ Skeleton.className = SKELETON_CLASSNAME;
 Skeleton.defaultOptions = defaultOptions;
 Skeleton.moduleName = SKELETON_MODULE_NAME;
 Skeleton.folderName = SKELETON_FOLDER_NAME;
-
-/**
- * Accessibility specification for Skeleton.
- *
- * The Skeleton itself is a purely visual placeholder indicator.
- * Accessibility must be handled by the parent/container element:
- *   - Use `aria-busy="true"` on the focusable element that is loading
- *   - Use `role="alert"` with live region to announce loading state changes
- */
-Skeleton.ariaSpec = {
-    selector: '.k-skeleton',
-    rules: []
-};
+Skeleton.ariaSpec = a11ySpec.ariaSpec;
 
 export default Skeleton;

@@ -1,0 +1,277 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-spreadsheet",
+            "attribute": "role=application",
+            "usage": "Indicates the Spreadsheets\\' role as an application."
+        },
+        {
+            "selector": ".k-spreadsheet-menu",
+            "attribute": "role=menubar",
+            "usage": "Follows Menu spec: announces the Menu menubar role."
+        },
+        {
+            "selector": ".k-spreadsheet-menu .k-menu-item",
+            "attribute": "role=menuitem",
+            "usage": "Follows Menu spec: announces the Menu item role."
+        },
+        {
+            "selector": ".k-spreadsheet-toolbar",
+            "attribute": "role=toolbar",
+            "usage": "Follows Toolbar spec: the component role."
+        },
+        {
+            "selector": ".k-spreadsheet-toolbar",
+            "attribute": "aria-label or title",
+            "usage": "Each ToolBar must have a label specifying its purpose."
+        },
+        {
+            "selector": ".k-spreadsheet-name-editor .k-combobox > .k-input-inner",
+            "attribute": "role=combobox",
+            "usage": "Follows ComboBox spec: identifies the input as a combobox."
+        },
+        {
+            "selector": ".k-spreadsheet-formula-bar .k-spreadsheet-formula-input",
+            "attribute": "role=combobox",
+            "usage": "The focusable element of the component should have role combobox (an input with popup)."
+        },
+        {
+            "selector": ".k-spreadsheet-formula-bar .k-spreadsheet-formula-input",
+            "attribute": "aria-haspopup=menu",
+            "usage": "Specifies that the formula input opens a popup."
+        },
+        {
+            "selector": ".k-spreadsheet-formula-bar .k-spreadsheet-formula-input",
+            "attribute": "aria-controls=.k-spreadsheet-formula-list id (when present)",
+            "usage": "Points to the formulas list with role menu. Signifies that the formula input element controls the popup."
+        },
+        {
+            "selector": ".k-spreadsheet-formula-bar .k-spreadsheet-formula-input",
+            "attribute": "aria-expanded=true/false",
+            "usage": "Announces the state of the popup visibility."
+        },
+        {
+            "selector": ".k-spreadsheet-formula-bar .k-spreadsheet-formula-input",
+            "attribute": "title",
+            "usage": "The Formula input must have a title specifying its purpose."
+        },
+        {
+            "selector": ".k-spreadsheet-formula-list",
+            "attribute": "id",
+            "usage": "Unique and deterministic id linked to the aria-controls attribute of the corresponding formula input."
+        },
+        {
+            "selector": ".k-spreadsheet-formula-list",
+            "attribute": "role=menu",
+            "usage": "Announces the menu role of the popup."
+        },
+        {
+            "selector": ".k-spreadsheet-formula-list .k-list-item",
+            "attribute": "role=menuitem",
+            "usage": "Announces the menuitem role of the popup items."
+        },
+        {
+            "selector": ".k-spreadsheet-sheet-add",
+            "attribute": "role=button or nodeName=button",
+            "usage": "The add new sheet element is a button."
+        },
+        {
+            "selector": ".k-spreadsheet-sheet-add",
+            "attribute": "aria-label or title",
+            "usage": "The add new sheet element must have a label as it does not have text content."
+        },
+        {
+            "selector": ".k-spreadsheet-sheet-add",
+            "attribute": "aria-controls=.k-tabstrip-items id (when present)",
+            "usage": "Points to the ul element of the TabStrip that contains all tabs."
+        },
+        {
+            "selector": ".k-spreadsheet-sheets-menu",
+            "attribute": "role=button or nodeName=button",
+            "usage": "Follows DropDownButton spec: omitted if the button DOM element is used."
+        },
+        {
+            "selector": ".k-spreadsheet-sheets-menu",
+            "attribute": "aria-label or title",
+            "usage": "Follows DropDownButton spec: required when no text is visible."
+        },
+        {
+            "selector": ".k-spreadsheet-sheets-menu",
+            "attribute": "aria-controls=.k-tabstrip-items id (when present)",
+            "usage": "Points to the ul element of the TabStrip that contains all tabs."
+        },
+        {
+            "selector": ".k-spreadsheet-sheets .k-tabstrip-items",
+            "attribute": "role=tablist",
+            "usage": "Follows TabStrip spec: indicates the tablist role for the ul element."
+        },
+        {
+            "selector": ".k-spreadsheet-sheets .k-tabstrip-item",
+            "attribute": "role=tab",
+            "usage": "Follows TabStrip spec: the tab li element."
+        },
+        {
+            "selector": ".k-spreadsheet-sheets .k-tabstrip-item .k-menu-button",
+            "attribute": "aria-label or title",
+            "usage": "Follows DropDownButton spec: required when no text is visible in the tab menu button."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Ctrl+C",
+            "behavior": "Copies the selected cells (range)."
+        },
+        {
+            "shortcut": "Ctrl+V",
+            "behavior": "Inserts copied or cut cells to a selected location within the worksheet."
+        },
+        {
+            "shortcut": "Ctrl+X",
+            "behavior": "Cuts the selected cells (range)."
+        },
+        {
+            "shortcut": "Ctrl+Y",
+            "behavior": "Repeats the last action if possible by using the Redo command."
+        },
+        {
+            "shortcut": "Ctrl+Z",
+            "behavior": "Reverses the last action if possible by using the Undo command."
+        },
+        {
+            "shortcut": "Delete",
+            "behavior": "In the Formula bar, deletes the character to the right of the insertion point from the formula text. In cell selection mode, removes the content from selected cells without affecting cell formats. In cell editing mode, deletes the character to the right of the insertion point."
+        },
+        {
+            "shortcut": "Backspace",
+            "behavior": "In the Formula bar, deletes one character to the left from the formula text. In cell selection mode, removes the content of the active cell. In cell editing mode, deletes the character to the left of the insertion point."
+        },
+        {
+            "shortcut": "Ctrl+select a cell",
+            "behavior": "Selects an adjacent or non adjacent cell."
+        },
+        {
+            "shortcut": "Ctrl+select cells",
+            "behavior": "Selects a range of adjacent or non adjacent."
+        },
+        {
+            "shortcut": "Ctrl+A",
+            "behavior": "Selects the whole worksheet."
+        },
+        {
+            "shortcut": "Ctrl+select a row or column",
+            "behavior": "Selects an adjacent or nonadjacent row or column."
+        },
+        {
+            "shortcut": "Ctrl+select rows or columns",
+            "behavior": "Selects a range of adjacent or non adjacent rows or columns."
+        },
+        {
+            "shortcut": "Shift + Arrow Key",
+            "behavior": "Selects a range of adjacent cells, rows or columns by extending the selection by one cell, row or column."
+        },
+        {
+            "shortcut": "Ctrl + Shift + Arrow Key",
+            "behavior": "Extends the selection of cells to the last cell of the current series of data. If there is another set of data afterwards, the cell selection will be extended to the first cell of the new series of data. Otherwise, the cell selection will be extended to the last cell of the worksheet in the corresponding direction."
+        },
+        {
+            "shortcut": "Down / Up Arrow",
+            "behavior": "In a menu or submenu, selects the next or previous command."
+        },
+        {
+            "shortcut": "Ctrl + Shift + End",
+            "behavior": "In cell selection mode, extends the selection of cells to the last cell on the worksheet located in bottom-right corner. In the formula bar, selects all text in the formula bar from the cursor position to the end."
+        },
+        {
+            "shortcut": "Ctrl + Shift + Home",
+            "behavior": "Extends the selection of cells to the beginning (the top-left cell) of the worksheet. In the formula bar, selects all text in the formula bar from the cursor position to the beginning of the input."
+        },
+        {
+            "shortcut": "Ctrl + Arrow Key",
+            "behavior": "Navigates to the end of the current series of data. If there is another set of data afterwards, the first cell of the new series will be selected. Otherwise, you will be navigated to the last cell of the worksheet in the corresponding direction."
+        },
+        {
+            "shortcut": "Arrow Keys",
+            "behavior": "Move one cell up, down, right of left in the worksheet."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "In cell selection mode, moves to the previous cell in a worksheet. If the currently active cell is the first cell (the top-left cell) in the Sheet, pressing Shift + Tab will move the focus outside of the Sheet to the Named ranges ComboBox. In a dialog box, moves to the previous focusable element. In range selection of cells, rows or columns, moves to the previous cell within the active range. If the focus is on the first cell (the top-left cell) in the range (the top-left), the focus will return to the last (the bottom-left) cell in the range."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "In cell selection mode, moves one cell to the right in a worksheet. If the currently active cell is the last cell (the bottom-right cell) in the Sheet, pressing Tab will move the focus outside of the Sheet cells to the next focusable element on the page. In a dialog box, moves to the next focusable element in the Dialog. In range selection of cells, rows or columns, moves to the next cell within the active range. If the focus is on the last cell (the bottom-right cell) in the range, the focus will return to the first cell."
+        },
+        {
+            "shortcut": "Page Down",
+            "behavior": "Moves one screen down in a worksheet."
+        },
+        {
+            "shortcut": "Page Up",
+            "behavior": "Moves one screen up in a worksheet."
+        },
+        {
+            "shortcut": "Home",
+            "behavior": "In cell selection mode, moves to the beginning of a row in a worksheet. In a menu or submenu, selects the first command."
+        },
+        {
+            "shortcut": "Ctrl + Home",
+            "behavior": "In cell selection mode, moves to the first cell (the top-left cell) on a worksheet. In the Formula Bar, moves the cursor to the beginning of the text."
+        },
+        {
+            "shortcut": "End",
+            "behavior": "In cell selection mode, moves to the far right cell of the active row. In a menu or submenu, selects the last command."
+        },
+        {
+            "shortcut": "Ctrl + End",
+            "behavior": "In cell selection mode, moves to the last cell on a worksheet, in the lowest used row of the used column on the bottom-right. In the Formula Bar, moves the cursor to the end of the text."
+        },
+        {
+            "shortcut": "Alt + Space",
+            "behavior": "Displays the Control menu for the Spreadsheet window."
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "In a dialog box, performs the action for the selected button, or selects or clears a check box."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "In cell editing mode or in the formula bar, completes a cell entry and selects the cell below. In a data form, it moves to the first field in the next record. In the command toolbar, executes the active action. In a dialog box, performs the action for the default command button in the dialog box."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "In cell editing mode or in the Formula bar, cancels an entry in the cell or Formula Bar. Closes an open menu or submenu, dialog box or message window."
+        },
+        {
+            "shortcut": "Alt + H",
+            "behavior": "Displays the Home tab on the ToolBar."
+        },
+        {
+            "shortcut": "Alt + N",
+            "behavior": "Displays the Insert tab on the ToolBar."
+        },
+        {
+            "shortcut": "Alt + A",
+            "behavior": "Displays the Data tab on the ToolBar."
+        },
+        {
+            "shortcut": "Ctrl (Cmd on MacOS) + Page Up",
+            "behavior": "Activates the previous sheet from the SheetBar if such exists."
+        },
+        {
+            "shortcut": "Ctrl (Cmd on MacOS) + Page Down",
+            "behavior": "Activates the next sheet from the SheetBar if such exists."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Moves the focus to the next focusable element in the Sheets Bar. If the last element is focused, pressing Tab will move the focus outside of the Spreadsheet."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Moves the focus to the previous focusable element in the Sheets Bar. If the first element is focused, pressing Tab will move the focus to the Sheet area."
+        },
+        {
+            "shortcut": "Alt (or Opt on Mac) + Down Arrow",
+            "behavior": "Opens the actions DropDownButton popup for the current active tab."
+        }
+    ]
+}

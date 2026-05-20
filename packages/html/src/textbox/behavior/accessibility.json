@@ -1,0 +1,29 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-textbox > .k-input-inner",
+            "attribute": "role=textbox or nodeName=input",
+            "usage": "Describes the role of the component."
+        },
+        {
+            "selector": ".k-textbox > .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby (when has accessible name)",
+            "usage": "The input requires an accessible name (provided by consuming app)."
+        },
+        {
+            "selector": ".k-textbox > .k-input-inner",
+            "attribute": "aria-invalid=true (when invalid)",
+            "usage": "Rendered when the TextBox is in an invalid state."
+        },
+        {
+            "selector": ".k-textbox > .k-input-inner",
+            "attribute": "aria-describedby (when has hint or error)",
+            "usage": "Points to the hint or error message for the input."
+        },
+        {
+            "selector": ".k-textbox.k-disabled > .k-input-inner",
+            "attribute": "disabled=disabled or aria-disabled=true",
+            "usage": "Rendered when the TextBox is disabled."
+        }
+    ]
+}

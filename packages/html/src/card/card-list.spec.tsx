@@ -2,6 +2,7 @@ import { classNames, stateClassNames } from "../misc";
 
 import { KendoComponent } from '../_types/component';
 import { CARD_FOLDER_NAME, CARD_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 
 export const CARD_LIST_CLASSNAME = `k-card-list`;
 
@@ -34,21 +35,6 @@ CardList.defaultOptions = defaultOptions;
 CardList.moduleName = CARD_MODULE_NAME;
 CardList.folderName = CARD_FOLDER_NAME;
 
-/**
- * Accessibility specification for CardList.
- *
- * @wcag 1.3.1 Info and Relationships - list container for cards
- * @see Card.ariaSpec for card-level rules when inside a list
- */
-CardList.ariaSpec = {
-    selector: '.k-card-list',
-    rules: [
-        { selector: '.k-card-list', attribute: 'role=list', usage: 'The card list container announces its list role.' },
-        { selector: '.k-card-list .k-card', attribute: 'role=listitem', usage: 'Each card in the list has the listitem role.' },
-        { selector: '.k-card-list .k-card', attribute: 'tabindex=0', usage: 'The card is focusable when navigatable.' },
-        { selector: '.k-card-list .k-card', attribute: 'aria-describedby=.k-card-title id', usage: 'Associate the card to its title element.' },
-        { selector: '.k-card-list .k-card', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces the Enter key for navigation inside the card.' },
-    ]
-};
+CardList.ariaSpec = a11ySpec.ariaSpec;
 
 export default CardList;

@@ -7,6 +7,7 @@ import { KendoComponent } from '../_types/component';
 import { ICON_FOLDER_NAME, ICON_MODULE_NAME } from './constants';
 import { useContext } from 'react';
 import { ConfigurationContext } from '../configuration/configuration-context';
+import a11ySpec from './behavior/accessibility.json';
 
 export const ICON_CLASSNAME = `k-icon`;
 
@@ -112,14 +113,6 @@ Icon.className = ICON_CLASSNAME;
 Icon.moduleName = ICON_MODULE_NAME;
 Icon.folderName = ICON_FOLDER_NAME;
 
-/**
- * Accessibility specification for Icon.
- */
-Icon.ariaSpec = {
-    selector: '.k-icon, .k-svg-icon',
-    rules: [
-        { selector: '.k-icon, .k-svg-icon', attribute: 'aria-hidden=true', usage: 'Hides the icon element and all its children from assistive technologies.' },
-    ]
-};
+Icon.ariaSpec = a11ySpec.ariaSpec;
 
 export default Icon;

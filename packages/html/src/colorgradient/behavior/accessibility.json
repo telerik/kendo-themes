@@ -1,0 +1,126 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "role=textbox",
+            "usage": "The focusable wrapper should be considered a textbox with a value that could be submitted."
+        },
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "The component needs an accessible name including the currently selected value."
+        },
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-colorgradient.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Rendered only when the ColorGradient is disabled."
+        },
+        {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "role=slider",
+            "usage": "The 2D draghandle must have slider role for ARIA-allowed attributes."
+        },
+        {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-orientation=undefined",
+            "usage": "The implicit orientation for the slider must be removed for the 2D handle."
+        },
+        {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-label",
+            "usage": "Must provide information about the purpose of the slider and the currently selected color."
+        },
+        {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-valuetext",
+            "usage": "Must specify the values on both X and Y axis."
+        },
+        {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-valuenow",
+            "usage": "Required by the slider role."
+        },
+        {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-valuemin",
+            "usage": "Required by the slider role."
+        },
+        {
+            "selector": ".k-hsv-draghandle",
+            "attribute": "aria-valuemax",
+            "usage": "Required by the slider role."
+        },
+        {
+            "selector": ".k-numerictextbox>.k-input-inner",
+            "attribute": "aria-label",
+            "usage": "Must provide the name of the channel (red, green, blue, or alpha)."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Enter",
+            "behavior": "Activates inner ColorGradient navigation."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates to the next focusable element on the page."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Navigates to the previous focusable element on the page."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Moves focus back to wrapper element. Deactivates inner ColorGradient navigation."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates to the next focusable element in the ColorGradient. If current focus is on the last element, moves focus to the first focusable item in the component."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Navigates to the previous focusable element in the ColorGradient. If current focus is on the first element, moves focus to the last focusable item in the component."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "For button items, ColorGradient executes the currently focused button action."
+        },
+        {
+            "shortcut": "Arrow Up",
+            "behavior": "Moves slider up by large step."
+        },
+        {
+            "shortcut": "Arrow Down",
+            "behavior": "Moves slider down by large step."
+        },
+        {
+            "shortcut": "Arrow Left",
+            "behavior": "Moves slider left by large step."
+        },
+        {
+            "shortcut": "Arrow Right",
+            "behavior": "Moves slider right by large step."
+        },
+        {
+            "shortcut": "Shift + Arrow Up",
+            "behavior": "Moves slider up by small step."
+        },
+        {
+            "shortcut": "Shift + Arrow Down",
+            "behavior": "Moves slider down by small step."
+        },
+        {
+            "shortcut": "Shift + Arrow Left",
+            "behavior": "Moves slider left by small step."
+        },
+        {
+            "shortcut": "Shift + Arrow Right",
+            "behavior": "Moves slider right by small step."
+        }
+    ]
+}
