@@ -826,7 +826,7 @@ export default () => (
             <div className="k-d-grid k-grid-cols-3 k-gap-10 grid-with-calendar">
               <div>
                 <div className="preview-label">Calendar</div>
-                <Calendar className="k-calendar-range" calendarView="month" showWeek>
+                <Calendar calendarView="month" showWeek>
                   <CalendarTable showWeek showTableHead>
                     <CalendarTableRow>
                       <CalendarCell text="39" weekCell />

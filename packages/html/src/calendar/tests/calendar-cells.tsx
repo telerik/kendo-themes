@@ -21,7 +21,7 @@ export default () => (
             <span>Calendar show other month cells</span>
 
             <section>
-                <Calendar className="k-calendar-range" calendarView="month" showWeek>
+                <Calendar calendarView="month" showWeek>
                     <CalendarTable showWeek showTableHead>
                         <CalendarTableRow>
                             <CalendarCell text="39" weekCell />
@@ -88,7 +88,7 @@ export default () => (
             </section>
 
             <section>
-                <Calendar className="k-calendar-range" calendarView="month" showWeek>
+                <Calendar calendarView="month" showWeek>
                     <CalendarTable showWeek showTableHead>
                         <CalendarTableRow>
                             <CalendarCell text="39" weekCell />
