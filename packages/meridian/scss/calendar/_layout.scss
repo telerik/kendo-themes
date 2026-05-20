@@ -1,5 +1,7 @@
+@use "sass:map";
 @use "@progress/kendo-theme-core/scss/components/calendar/_layout.scss" as *;
 @use "../core/index.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "./variables.scss" as *;
 
 
@@ -15,12 +17,20 @@
                 border-radius: $kendo-calendar-range-cell-border-radius;
             }
         }
+
+        @each $size, $size-props in $kendo-calendar-sizes {
+            $_cell-size: map.get( $size-props, cell-size );
+            $_cell-padding-x: map.get( $size-props, cell-padding-x );
+
+            #{k-when-default($kendo-calendar-default-size, $size)}
+            &.k-calendar-#{$size} {
+                --INTERNAL--kendo-calendar-view-width: calc( 8 * #{$_cell-size} + 2 * #{$_cell-padding-x} );
+            }
+        }
     }
 
     .k-calendar:not(.k-calendar-infinite) {
         .k-calendar-view {
-            margin: 0;
-            width: auto;
             padding-block: calc( #{$kendo-calendar-header-padding-x} / 2 ) $kendo-calendar-header-padding-x;
         }
     }
