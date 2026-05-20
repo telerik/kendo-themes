@@ -41,19 +41,23 @@ export const MenuDemo = (
     const { variant, modifiers: mods, ...other } = { ...defaults, ...props };
 
     let additionalProps: any = {};
+    const popupOffset = variant === 'vertical'
+        ? { left: "200px", top: "30px" }
+        : { left: "90px", top: "auto" };
+
     Object.keys(mods || {}).forEach((modifier) => {
         switch (modifier) {
             case 'opened':
                 additionalProps.opened = mods?.[modifier] ? true : false;
-                additionalProps.popup = (
-                    <Popup className="k-menu-popup">
+                additionalProps.popup = mods?.[modifier] ? (
+                    <Popup className="k-menu-popup" offset={popupOffset}>
                         <MenuList>
                             <MenuListItem text="Item 1"></MenuListItem>
                             <MenuListItem text="Item 2"></MenuListItem>
                             <MenuSeparator></MenuSeparator>
                             <MenuListItem text="Item 3"></MenuListItem>
                         </MenuList>
-                    </Popup>);
+                    </Popup>) : null;
 
                 break;
         }
