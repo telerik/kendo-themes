@@ -1,0 +1,19 @@
+@use "../core/_index.scss" as *;
+
+/// The track color of native scrollbars inside `.k-body`.
+/// @group scrollbar
+$kendo-scrollbar-track: k-color(surface) !default;
+
+/// The thumb color of native scrollbars inside `.k-body`.
+/// @group scrollbar
+$kendo-scrollbar-thumb: #{"color-mix(in srgb, var(--kendo-color-on-app-surface) 35%, transparent)"} !default;
+
+/// The thumb hover color of native scrollbars inside `.k-body`.
+/// @group scrollbar
+$kendo-scrollbar-thumb-hover: #{"color-mix(in srgb, var(--kendo-color-on-app-surface) 55%, transparent)"} !default;
+
+@forward "@progress/kendo-theme-core/scss/components/scrollbar/_variables" with (
+    $kendo-scrollbar-track: $kendo-scrollbar-track,
+    $kendo-scrollbar-thumb: $kendo-scrollbar-thumb,
+    $kendo-scrollbar-thumb-hover: $kendo-scrollbar-thumb-hover
+);

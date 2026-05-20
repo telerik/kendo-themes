@@ -1,0 +1,26 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-scrollbar--layout-base() {
+
+    .k-body {
+        @supports (-moz-appearance: none) {
+            scrollbar-width: thin;
+        }
+
+        &::-webkit-scrollbar,
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+        &::-webkit-scrollbar-track,
+        ::-webkit-scrollbar-track {
+            border-inline-start: 1px solid var( --kendo-color-border);
+        }
+        &::-webkit-scrollbar-thumb,
+        ::-webkit-scrollbar-thumb {
+            border: 2px solid transparent;
+            border-radius: 999px;
+        }
+    }
+
+}

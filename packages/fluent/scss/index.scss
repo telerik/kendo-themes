@@ -2,6 +2,7 @@
 
 @forward "./core/_index.scss";
 @forward "./typography/_index.scss";
+@forward "./scrollbar/_index.scss";
 @forward "./icons/_index.scss";
 @forward "./messagebox/_index.scss";
 @forward "./draggable/_index.scss";
@@ -132,6 +133,10 @@
 
 // Typography
 @use "./typography/index.scss" as *;
+
+
+// Native scrollbar
+@use "./scrollbar/_index.scss" as *;
 
 
 // Generic content
@@ -312,6 +317,9 @@
 
     // Typography
     @include kendo-typography--styles();
+
+    // Native scrollbar
+    @include kendo-scrollbar--styles();
 
     // Generic content
     @include kendo-icon--styles();

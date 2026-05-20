@@ -1,0 +1,15 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-scrollbar--styles() {
+    @include import-once( "scrollbar" ) {
+        @include kendo-scrollbar--layout();
+        @include kendo-scrollbar--theme();
+    }
+}
