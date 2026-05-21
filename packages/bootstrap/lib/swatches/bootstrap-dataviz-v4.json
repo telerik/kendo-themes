@@ -16,155 +16,160 @@
         {
             "name": "New theme colors",
             "colorsMap": {
+                "series": {
+                    "name": "Series",
+                    "type": "color",
+                    "value": "oklch(56.39% 0.1748 253.31deg)"
+                },
                 "series-a": {
                     "name": "Series A",
                     "type": "color",
-                    "value": "oklch(56.39% 0.1748 253.31deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series) l c h)\"}"
                 },
                 "series-a-bold": {
                     "name": "Series A Bold",
                     "type": "color",
-                    "value": "oklch(45.95% 0.1389 252.61deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-a) calc(l - 0.1044) calc(c - 0.0359) calc(h - 0.7))\"}"
                 },
                 "series-a-bolder": {
                     "name": "Series A Bolder",
                     "type": "color",
-                    "value": "oklch(34.86% 0.1007 251.07deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-a) calc(l - 0.2153) calc(c - 0.0741) calc(h - 2.24))\"}"
                 },
                 "series-a-subtle": {
                     "name": "Series A Subtle",
                     "type": "color",
-                    "value": "oklch(66.06% 0.1383 247.54deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-a) calc(l + 0.0967) calc(c - 0.0365) calc(h - 5.77))\"}"
                 },
                 "series-a-subtler": {
                     "name": "Series A Subtler",
                     "type": "color",
-                    "value": "oklch(76.85% 0.0935 245.90deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-a) calc(l + 0.2046) calc(c - 0.0813) calc(h - 7.41))\"}"
                 },
                 "series-b": {
                     "name": "Series B",
                     "type": "color",
-                    "value": "oklch(75.91% 0.1029 220.18deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series) calc(l + 0.1952) calc(c - 0.0719) calc(h - 33.13))\"}"
                 },
                 "series-b-bold": {
                     "name": "Series B Bold",
                     "type": "color",
-                    "value": "oklch(61.45% 0.0823 220.48deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-b) calc(l - 0.1446) calc(c - 0.0206) calc(h + 0.3))\"}"
                 },
                 "series-b-bolder": {
                     "name": "Series B Bolder",
                     "type": "color",
-                    "value": "oklch(46.08% 0.0589 219.99deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-b) calc(l - 0.2983) calc(c - 0.044) calc(h - 0.19))\"}"
                 },
                 "series-b-subtle": {
                     "name": "Series B Subtle",
                     "type": "color",
-                    "value": "oklch(81.59% 0.0813 218.25deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-b) calc(l + 0.0568) calc(c - 0.0216) calc(h - 1.93))\"}"
                 },
                 "series-b-subtler": {
                     "name": "Series B Subtler",
                     "type": "color",
-                    "value": "oklch(87.62% 0.0564 217.82deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-b) calc(l + 0.1171) calc(c - 0.0465) calc(h - 2.36))\"}"
                 },
                 "series-c": {
                     "name": "Series C",
                     "type": "color",
-                    "value": "oklch(70.43% 0.1561 143.72deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series) calc(l + 0.1404) calc(c - 0.0187) calc(h - 109.59))\"}"
                 },
                 "series-c-bold": {
                     "name": "Series C Bold",
                     "type": "color",
-                    "value": "oklch(57.10% 0.1238 143.77deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-c) calc(l - 0.1333) calc(c - 0.0323) calc(h + 0.05))\"}"
                 },
                 "series-c-bolder": {
                     "name": "Series C Bolder",
                     "type": "color",
-                    "value": "oklch(42.95% 0.0893 143.85deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-c) calc(l - 0.2748) calc(c - 0.0668) calc(h + 0.13))\"}"
                 },
                 "series-c-subtle": {
                     "name": "Series C Subtle",
                     "type": "color",
-                    "value": "oklch(77.55% 0.1191 144.36deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-c) calc(l + 0.0712) calc(c - 0.037) calc(h + 0.64))\"}"
                 },
                 "series-c-subtler": {
                     "name": "Series C Subtler",
                     "type": "color",
-                    "value": "oklch(84.98% 0.0792 144.90deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-c) calc(l + 0.1455) calc(c - 0.0769) calc(h + 1.18))\"}"
                 },
                 "series-d": {
                     "name": "Series D",
                     "type": "color",
-                    "value": "oklch(79.39% 0.1349 72.97deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series) calc(l + 0.23) calc(c - 0.0399) calc(h + 179.66))\"}"
                 },
                 "series-d-bold": {
                     "name": "Series D Bold",
                     "type": "color",
-                    "value": "oklch(64.26% 0.1069 73.26deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-d) calc(l - 0.1513) calc(c - 0.028) calc(h + 0.29))\"}"
                 },
                 "series-d-bolder": {
                     "name": "Series D Bolder",
                     "type": "color",
-                    "value": "oklch(48.15% 0.0776 74.23deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-d) calc(l - 0.3124) calc(c - 0.0573) calc(h + 1.26))\"}"
                 },
                 "series-d-subtle": {
                     "name": "Series D Subtle",
                     "type": "color",
-                    "value": "oklch(84.33% 0.1064 75.57deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-d) calc(l + 0.0494) calc(c - 0.0285) calc(h + 2.6))\"}"
                 },
                 "series-d-subtler": {
                     "name": "Series D Subtler",
                     "type": "color",
-                    "value": "oklch(89.35% 0.0718 75.58deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-d) calc(l + 0.0996) calc(c - 0.0631) calc(h + 2.61))\"}"
                 },
                 "series-e": {
                     "name": "Series E",
                     "type": "color",
-                    "value": "oklch(69.75% 0.1454 45.30deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series) calc(l + 0.1336) calc(c - 0.0294) calc(h + 151.99))\"}"
                 },
                 "series-e-bold": {
                     "name": "Series E Bold",
                     "type": "color",
-                    "value": "oklch(56.67% 0.1153 45.24deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-e) calc(l - 0.1308) calc(c - 0.0301) calc(h - 0.06))\"}"
                 },
                 "series-e-bolder": {
                     "name": "Series E Bolder",
                     "type": "color",
-                    "value": "oklch(42.61% 0.0822 46.24deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-e) calc(l - 0.2714) calc(c - 0.0632) calc(h + 0.94))\"}"
                 },
                 "series-e-subtle": {
                     "name": "Series E Subtle",
                     "type": "color",
-                    "value": "oklch(76.77% 0.1074 47.20deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-e) calc(l + 0.0702) calc(c - 0.038) calc(h + 1.9))\"}"
                 },
                 "series-e-subtler": {
                     "name": "Series E Subtler",
                     "type": "color",
-                    "value": "oklch(84.27% 0.0701 46.45deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-e) calc(l + 0.1452) calc(c - 0.0753) calc(h + 1.15))\"}"
                 },
                 "series-f": {
                     "name": "Series F",
                     "type": "color",
-                    "value": "oklch(61.92% 0.1693 25.03deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series) calc(l + 0.0553) calc(c - 0.0055) calc(h + 131.72))\"}"
                 },
                 "series-f-bold": {
                     "name": "Series F Bold",
                     "type": "color",
-                    "value": "oklch(50.30% 0.1347 24.86deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-f) calc(l - 0.1162) calc(c - 0.0346) calc(h - 0.17))\"}"
                 },
                 "series-f-bolder": {
                     "name": "Series F Bolder",
                     "type": "color",
-                    "value": "oklch(38.13% 0.0962 24.42deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-f) calc(l - 0.2379) calc(c - 0.0731) calc(h - 0.61))\"}"
                 },
                 "series-f-subtle": {
                     "name": "Series F Subtle",
                     "type": "color",
-                    "value": "oklch(70.36% 0.1254 22.52deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-f) calc(l + 0.0844) calc(c - 0.0439) calc(h - 2.51))\"}"
                 },
                 "series-f-subtler": {
                     "name": "Series F Subtler",
                     "type": "color",
-                    "value": "oklch(79.77% 0.0794 20.86deg)"
+                    "value": "#{\"oklch(from var(--kendo-color-series-f) calc(l + 0.1785) calc(c - 0.0899) calc(h - 4.17))\"}"
                 }
             }
         }
