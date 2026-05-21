@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.0...v14.1.1-dev.0) (2026-05-21)
+
+
+### Bug Fixes
+
+* **grid:** column menu item alignment ([bae5dc9](https://github.com/telerik/kendo-themes/commit/bae5dc95c26f6a40c45c4bd3a891307bad9a4ada))
+* **html:** grid group actions menu rendering ([4473f2b](https://github.com/telerik/kendo-themes/commit/4473f2b51b82b59f26239f8be7e345a09c08a81a))
+
+
+
+
+
 # [14.1.0](https://github.com/telerik/kendo-themes/compare/v14.1.0-dev.3...v14.1.0) (2026-05-19)
 
 **Note:** Version bump only for package kendo-themes.repo
