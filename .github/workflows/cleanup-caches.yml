@@ -1,0 +1,136 @@
+name: Cleanup runner caches
+
+on:
+  pull_request_target:
+    types:
+      - closed
+  schedule:
+    # Weekly on Sunday at 03:00 UTC
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+
+jobs:
+
+  cleanup-pr-caches:
+    name: Cleanup PR caches
+    if: github.event_name == 'pull_request_target'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+
+    steps:
+      - name: Cleanup
+        run: |
+          echo "Fetching list of cache IDs for PR #${{ github.event.pull_request.number }}"
+
+          ## Clean caches for both the merge ref and the head branch ref.
+          ## CI workflows triggered by 'pull_request' store caches under the merge ref,
+          ## while those triggered by 'push' store them under the head branch ref.
+          deleted=0
+
+          for ref in "$BRANCH_MERGE" "$BRANCH_HEAD"; do
+            echo "Cleaning caches for ref: $ref"
+            attempt=0
+            MAX_ATTEMPTS=10
+
+            while [ $attempt -lt $MAX_ATTEMPTS ]; do
+              if ! cacheIds=$(gh cache list --ref "$ref" --limit 100 --json id --jq '.[].id'); then
+                echo "::warning::gh cache list failed for ref $ref. Skipping."
+                break
+              fi
+
+              if [ -z "$cacheIds" ]; then
+                break
+              fi
+
+              deleted_in_batch=0
+              failed=0
+              for cacheId in $cacheIds
+              do
+                  echo "  Deleting cache $cacheId"
+                  if gh cache delete "$cacheId"; then
+                    deleted=$((deleted + 1))
+                    deleted_in_batch=$((deleted_in_batch + 1))
+                  else
+                    failed=$((failed + 1))
+                  fi
+              done
+
+              ## If no deletions succeeded in this batch, abort to avoid an infinite loop
+              if [ $deleted_in_batch -eq 0 ]; then
+                echo "::warning::No caches deleted in this batch ($failed failed). Aborting."
+                break
+              fi
+
+              attempt=$((attempt + 1))
+            done
+          done
+
+          echo "Done. Deleted $deleted cache entries."
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          GH_PROMPT_DISABLED: 1
+          BRANCH_MERGE: refs/pull/${{ github.event.pull_request.number }}/merge
+          BRANCH_HEAD: refs/heads/${{ github.event.pull_request.head.ref }}
+
+  cleanup-stale-caches:
+    name: Cleanup stale caches
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+
+    steps:
+      - name: Cleanup caches older than 7 days
+        run: |
+          echo "Fetching list of stale cache IDs"
+
+          # Get caches older than 7 days
+          CUTOFF=$(date -u -d "7 days ago" +%Y-%m-%dT%H:%M:%SZ)
+          echo "Deleting caches last accessed before $CUTOFF"
+
+          ## Sort by last_accessed_at ascending so oldest come first.
+          ## Delete in batches of 100 until no stale caches remain.
+          ## Abort after MAX_ATTEMPTS to prevent infinite loops on persistent failures.
+          deleted=0
+          attempt=0
+          MAX_ATTEMPTS=20
+
+          while [ $attempt -lt $MAX_ATTEMPTS ]; do
+            if ! cacheIds=$(gh cache list --limit 100 --sort last_accessed_at --order asc --json id,lastAccessedAt --jq ".[] | select(.lastAccessedAt < \"$CUTOFF\") | .id"); then
+              echo "::warning::gh cache list failed. Skipping cleanup."
+              break
+            fi
+
+            if [ -z "$cacheIds" ]; then
+              break
+            fi
+
+            deleted_in_batch=0
+            failed=0
+            for cacheId in $cacheIds
+            do
+                echo "  Deleting cache $cacheId"
+                if gh cache delete "$cacheId"; then
+                  deleted=$((deleted + 1))
+                  deleted_in_batch=$((deleted_in_batch + 1))
+                else
+                  failed=$((failed + 1))
+                fi
+            done
+
+            ## If no deletions succeeded in this batch, abort to avoid an infinite loop
+            if [ $deleted_in_batch -eq 0 ]; then
+              echo "::warning::No caches deleted in this batch ($failed failed). Aborting."
+              break
+            fi
+
+            attempt=$((attempt + 1))
+          done
+
+          echo "Deleted $deleted stale cache entries"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          GH_PROMPT_DISABLED: 1
