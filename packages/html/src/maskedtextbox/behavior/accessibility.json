@@ -1,0 +1,34 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "role=textbox or nodeName=input",
+            "usage": "Describes the role of the component."
+        },
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby (when has accessible name)",
+            "usage": "The input requires an accessible name (provided by consuming app)."
+        },
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "aria-placeholder (when has mask)",
+            "usage": "Announces the mask or placeholder for the component."
+        },
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "aria-invalid=true (when invalid)",
+            "usage": "Rendered when the MaskedTextBox is in an invalid state."
+        },
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "aria-describedby (when has hint or error)",
+            "usage": "Points to the hint or error message."
+        },
+        {
+            "selector": ".k-maskedtextbox.k-disabled > .k-input-inner",
+            "attribute": "disabled=disabled or aria-disabled=true",
+            "usage": "Rendered when the MaskedTextBox is disabled."
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-datetimepicker .k-input-inner",
+            "attribute": "role=combobox",
+            "usage": "The input element follows the combobox specification."
+        },
+        {
+            "selector": ".k-datetimepicker .k-input-inner",
+            "attribute": "aria-haspopup=dialog",
+            "usage": "Indicates the component has a Dialog Popup."
+        },
+        {
+            "selector": ".k-datetimepicker .k-input-inner",
+            "attribute": "aria-expanded=true/false",
+            "usage": "Announces whether the Popup is visible or not."
+        },
+        {
+            "selector": ".k-datetimepicker .k-input-inner",
+            "attribute": "aria-controls (when open)",
+            "usage": "Points to the popup element containing the calendar or time selector."
+        },
+        {
+            "selector": ".k-datetimepicker .k-input-inner",
+            "attribute": "aria-activedescendant (when open)",
+            "usage": "Points to the focused item in the Calendar or Time Popup."
+        },
+        {
+            "selector": ".k-datetimepicker .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input needs an accessible name."
+        },
+        {
+            "selector": ".k-invalid .k-input-inner",
+            "attribute": "aria-invalid=true",
+            "usage": "Rendered only when the picker is in form and announces invalid state."
+        },
+        {
+            "selector": ".k-disabled .k-input-inner",
+            "attribute": "disabled or aria-disabled=true",
+            "usage": "Rendered only when the picker is disabled."
+        },
+        {
+            "selector": ".k-datetimepicker .k-input-button",
+            "attribute": "tabindex=-1",
+            "usage": "Button element must not be focusable."
+        },
+        {
+            "selector": ".k-datetimepicker .k-input-button",
+            "attribute": "aria-label",
+            "usage": "The button needs an accessible name."
+        },
+        {
+            "selector": ".k-datetimepicker.k-disabled .k-button",
+            "attribute": "disabled or aria-disabled",
+            "usage": "Rendered only when the picker is disabled."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Esc",
+            "behavior": "Discards the selection and closes the popup."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Enters in time edit if calendar is the target. Otherwise, accepts the selected time and closes the popup."
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) + Down",
+            "behavior": "Opens the dropdown and moves the focus to the displayed calendar."
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) + Up",
+            "behavior": "Closes the dropdown and moves the focus to the input element."
+        }
+    ]
+}

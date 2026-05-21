@@ -11,6 +11,7 @@ import { UploadNormal } from '../upload';
 
 import { KendoComponent } from '../_types/component';
 import { PDF_VIEWER_FOLDER_NAME, PDF_VIEWER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const PDFVIEWER_CLASSNAME = `k-pdf-viewer`;
 
 const states = [
@@ -159,19 +160,6 @@ PDFViewer.defaultOptions = defaultOptions;
 PDFViewer.moduleName = PDF_VIEWER_MODULE_NAME;
 PDFViewer.folderName = PDF_VIEWER_FOLDER_NAME;
 
-/**
- * @see Toolbar ariaSpec for the PDF viewer toolbar
- */
-PDFViewer.ariaSpec = {
-    selector: '.k-pdf-viewer',
-    rules: [
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'tabindex=0', usage: 'Defines the focusable page container element.' },
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'aria-label', usage: 'Describes the purpose of the focusable container.' },
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'role=document', usage: 'Defines that content should be evaluated in reader mode by assistive technologies.' },
-        { selector: '.k-pdf-viewer .k-toolbar .k-button:has([class*="i-search"])', attribute: 'aria-haspopup=dialog', usage: 'Describes that the Search tool button opens a dialog element.' },
-        { selector: '.k-pdf-viewer .k-canvas .k-search-panel', attribute: 'role=dialog', usage: 'Describes the role of the Search panel.' },
-        { selector: '.k-pdf-viewer .k-canvas .k-search-panel', attribute: 'aria-label', usage: 'Label for the Search panel, same label as the Search tool.' },
-    ]
-};
+PDFViewer.ariaSpec = a11ySpec.ariaSpec;
 
 export default PDFViewer;

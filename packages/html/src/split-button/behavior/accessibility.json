@@ -1,0 +1,54 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "role=button or nodeName=button",
+            "usage": "Omitted if the <button> DOM element is used."
+        },
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "aria-label",
+            "usage": "The attribute must be present when no text is initially visible in the button."
+        },
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "aria-expanded=true/false",
+            "usage": "Announces the state of the popup visibility."
+        },
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "aria-controls=.k-menu-group id (when open)",
+            "usage": "Points to the popup element. Builds a relationship between the button and the popup."
+        },
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "tabindex=-1",
+            "usage": "The arrow button is removed from the tab sequence."
+        },
+        {
+            "selector": ".k-split-button-arrow.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Rendered only when the button is disabled."
+        },
+        {
+            "selector": ".k-menu-group",
+            "attribute": "role=list",
+            "usage": "Announces the list role of the popup."
+        },
+        {
+            "selector": ".k-menu-item",
+            "attribute": "role=listitem",
+            "usage": "Announces the listitem role of the popup items."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Enter",
+            "behavior": "Clicks (activates) the main button action."
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "Clicks (activates) the main button action."
+        }
+    ]
+}

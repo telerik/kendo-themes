@@ -9,6 +9,7 @@ import { PALETTEPRESETS } from '../colorpalette/colorpalette-presets';
 
 import { KendoComponent } from '../_types/component';
 import { COLOREDITOR_FOLDER_NAME, COLOREDITOR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 const COLOREDITOR_CLASSNAME = 'k-coloreditor';
 
 const states = [
@@ -113,27 +114,6 @@ ColorEditor.defaultOptions = defaultOptions;
 ColorEditor.moduleName = COLOREDITOR_MODULE_NAME;
 ColorEditor.folderName = COLOREDITOR_FOLDER_NAME;
 
-/**
- * Accessibility specification for ColorEditor (FlatColorPicker).
- *
- * @accessibility
- * - Wrapper has role=textbox with aria-label and tabindex=0
- * - Inner ColorGradient has role=none and tabindex=-1
- * - Disabled state uses aria-disabled=true
- * - Inner components (ColorPalette, ButtonGroup, etc.) follow their own specs
- *
- * @wcag 4.1.2 Name, Role, Value - textbox pattern for color value
- */
-ColorEditor.ariaSpec = {
-    selector: '.k-flatcolorpicker',
-    rules: [
-        { selector: '.k-flatcolorpicker', attribute: 'role=textbox', usage: 'The focusable wrapper should be considered a textbox with a submittable value.' },
-        { selector: '.k-flatcolorpicker', attribute: 'aria-label or aria-labelledby', usage: 'The component needs an accessible name including the currently selected value.' },
-        { selector: '.k-flatcolorpicker', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-flatcolorpicker.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the FlatColorPicker is disabled.' },
-        { selector: '.k-colorgradient', attribute: 'role=none', usage: 'The inner ColorGradient must have its role removed.' },
-        { selector: '.k-colorgradient', attribute: 'tabindex=-1', usage: 'The inner ColorGradient must be removed from the page tab sequence.' },
-    ]
-};
+ColorEditor.ariaSpec = a11ySpec.ariaSpec;
 
 export default ColorEditor;

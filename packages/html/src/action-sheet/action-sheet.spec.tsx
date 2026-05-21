@@ -7,6 +7,7 @@ import { ActionSheetView } from './actionsheet-view';
 import { KendoComponent } from '../_types/component';
 import { ACTION_SHEET_FOLDER_NAME, ACTION_SHEET_MODULE_NAME } from './constants';
 import { Overlay } from '../overlay';
+import a11ySpec from './behavior/accessibility.json';
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;
 
 const states = [];
@@ -99,26 +100,6 @@ ActionSheet.defaultOptions = defaultOptions;
 ActionSheet.moduleName = ACTION_SHEET_MODULE_NAME;
 ActionSheet.folderName = ACTION_SHEET_FOLDER_NAME;
 
-/**
- * Accessibility specification for ActionSheet.
- *
- * @accessibility
- * - Has role="dialog" with aria-modal="true" when overlay is enabled
- * - aria-labelledby references the title element
- * - Content is arbitrary; components using ActionSheet in adaptive mode
- *   are responsible for their internal content's ARIA attributes
- *
- * @wcag 4.1.2 Name, Role, Value - dialog pattern with labeled title
- */
-ActionSheet.ariaSpec = {
-    selector: '.k-actionsheet',
-    rules: [
-        { selector: '.k-actionsheet', attribute: 'role=dialog', usage: 'Announces the dialog role of the component.' },
-        { selector: '.k-actionsheet', attribute: 'aria-labelledby (when has title)', usage: 'Associates the title of the action sheet.' },
-        { selector: '.k-actionsheet', attribute: 'aria-hidden=true/false (when hidden)', usage: 'Announces the hidden state of the ActionSheet container.' },
-        { selector: '.k-actionsheet', attribute: 'aria-modal=true (when modal)', usage: 'Announces that the action sheet is modal.' },
-        { selector: '.k-actionsheet .k-actionsheet-title', attribute: 'id', usage: 'Used to associate the title with the action sheet wrapper element.' },
-    ]
-};
+ActionSheet.ariaSpec = a11ySpec.ariaSpec;
 
 export default ActionSheet;

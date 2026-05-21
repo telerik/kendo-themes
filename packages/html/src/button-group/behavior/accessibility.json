@@ -1,0 +1,33 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-button-group:not(.k-split-button)",
+            "attribute": "role=group",
+            "usage": "Sets the proper role for the group of buttons."
+        },
+        {
+            "selector": ".k-button-group.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "The attribute is rendered only when the entire button group is disabled."
+        },
+        {
+            "selector": ".k-button-group:not(.k-split-button):not(.k-scheduler-navigation):not(.k-zoom-control) .k-button",
+            "attribute": "aria-pressed (when selected)",
+            "usage": "Specifies the current state of the ButtonGroup. Only the selected button within the group will have this attribute set to true."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Tab",
+            "behavior": "Focuses the next button in the group. If the focus is on the last button, focuses the next focusable element on the page."
+        },
+        {
+            "shortcut": "Shfit + Tab",
+            "behavior": "Focuses the previous button in the group. If the focus is on the first button, focuses the previous focusable element before the ButtonGorup."
+        },
+        {
+            "shortcut": "Enter or Space",
+            "behavior": "Triggers a click action on the button."
+        }
+    ]
+}

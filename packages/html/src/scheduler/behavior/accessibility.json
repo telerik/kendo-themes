@@ -1,0 +1,181 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-scheduler",
+            "attribute": "role=application",
+            "usage": "Specifies the role of the component."
+        },
+        {
+            "selector": ".k-scheduler-toolbar",
+            "attribute": "role=toolbar",
+            "usage": "Follows Toolbar spec: sets the component role."
+        },
+        {
+            "selector": ".k-scheduler-toolbar",
+            "attribute": "aria-label or title",
+            "usage": "Follows Toolbar spec: each toolbar must have a label specifying its purpose."
+        },
+        {
+            "selector": ".k-scheduler-navigation .k-button:has([class*=\"i-chevron-left\"])",
+            "attribute": "aria-label",
+            "usage": "Required as the previous navigation button contains only an icon (no text)."
+        },
+        {
+            "selector": ".k-scheduler-navigation .k-button:has([class*=\"i-chevron-right\"])",
+            "attribute": "aria-label",
+            "usage": "Required as the next navigation button contains only an icon (no text)."
+        },
+        {
+            "selector": ".k-nav-current",
+            "attribute": "aria-live=polite",
+            "usage": "The new date of the Scheduler view will be announced upon navigation to a new time span or view type."
+        },
+        {
+            "selector": ".k-views-dropdown",
+            "attribute": "aria-label",
+            "usage": "The <select> element visible on the toolbar on small screens must have its aria-label set."
+        },
+        {
+            "selector": ".k-scheduler-views",
+            "attribute": "role=group",
+            "usage": "Follows SegmentedControl spec: sets the proper role for the group of view buttons."
+        },
+        {
+            "selector": ".k-scheduler-views .k-segmented-control-button",
+            "attribute": "aria-pressed (when selected)",
+            "usage": "Follows SegmentedControl spec: specifies the current state of the view SegmentedControl. Only the selected button within the group will have this attribute set to true."
+        },
+        {
+            "selector": ".k-scheduler-agendaview",
+            "attribute": "role=grid",
+            "usage": "The main table of the Agenda view must indicate it is a Data Grid."
+        },
+        {
+            "selector": ".k-scheduler-agendaview>tbody",
+            "attribute": "role=none/presentation",
+            "usage": "The <tbody> element must have its semantics removed."
+        },
+        {
+            "selector": ".k-scheduler-agendaview .k-scheduler-table",
+            "attribute": "role=none/presentation",
+            "usage": "Inner <table> elements within the Agenda Scheduler must have their semantic role removed."
+        },
+        {
+            "selector": ".k-scheduler-agendaview .k-scheduler-table>tbody",
+            "attribute": "role=rowgroup",
+            "usage": "Must have role explicitly set as it has been removed by the <table> role set (none/presentation)."
+        },
+        {
+            "selector": ".k-scheduler-agendaview .k-scheduler-table>tbody>tr",
+            "attribute": "role=row",
+            "usage": "Must have role explicitly set as it has been removed by the <table> role set (none/presentation)."
+        },
+        {
+            "selector": ".k-scheduler-agendaview .k-scheduler-table>tbody>tr>th",
+            "attribute": "role=columnheader",
+            "usage": "Must have role explicitly set as it has been removed by the <table> role set (none/presentation)."
+        },
+        {
+            "selector": ".k-scheduler-agendaview .k-scheduler-content tr .k-selected",
+            "attribute": "aria-selected",
+            "usage": "Used to signify the currently selected row in Agenda view."
+        },
+        {
+            "selector": ".k-scheduler-content>.k-scheduler-table>tbody>tr>.k-scheduler-groupcolumn,.k-scheduler-content>.k-scheduler-table>tbody>tr>.k-scheduler-datecolumn",
+            "attribute": "role=rowheader",
+            "usage": "Must have role explicitly set as it has been removed by the <table> role set (none/presentation)."
+        },
+        {
+            "selector": ".k-scheduler-content>.k-scheduler-table>tbody>tr>.k-scheduler-timecolumn,.k-scheduler-content>.k-scheduler-table>tbody>tr>.k-scheduler-timecolumn+td",
+            "attribute": "role=gridcell",
+            "usage": "Must have role explicitly set as it has been removed by the <table> role set (none/presentation)."
+        },
+        {
+            "selector": ".k-scheduler-dayview,.k-scheduler-weekview,.k-scheduler-monthview,.k-scheduler-timelineview",
+            "attribute": "role=none/presentation",
+            "usage": "All <table> elements within the Scheduler must have their semantic role removed."
+        },
+        {
+            "selector": ".k-scheduler-times .k-scheduler-table",
+            "attribute": "role=none/presentation",
+            "usage": "Times sidebar tables must have their semantics removed. The role propagates to child th/tr elements, resolving empty-table-header violations."
+        },
+        {
+            "selector": ".k-event",
+            "attribute": "role=button",
+            "usage": "Indicating that the event element is interactive."
+        },
+        {
+            "selector": ".k-event",
+            "attribute": "aria-label",
+            "usage": "Label containing the title, start, and end date of the appointment."
+        },
+        {
+            "selector": ".k-scheduler-layout:not(.k-scheduler-agendaview) .k-scheduler-content",
+            "attribute": "tabindex=0",
+            "usage": "Scrollable elements need to be focusable to ensure scrolling with arrow keys is available (does not apply to agenda view)."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "t",
+            "behavior": "navigates to today's time period"
+        },
+        {
+            "shortcut": "c",
+            "behavior": "opens the popup for creation of new appointment"
+        },
+        {
+            "shortcut": "b",
+            "behavior": "toggles view between business hours and full day (where available)"
+        },
+        {
+            "shortcut": "Shift+ Left Arrow",
+            "behavior": "navigates to the previous time period"
+        },
+        {
+            "shortcut": "Shift+ Right Arrow",
+            "behavior": "navigates to the next time period"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) + 1,2,3,...",
+            "behavior": "navigates to the view with the respective number"
+        },
+        {
+            "shortcut": "F10",
+            "behavior": "Focuses the ToolBar."
+        },
+        {
+            "shortcut": "Arrow Keys",
+            "behavior": "move focus through appointments and the `more events` button, then continue to the next appointment in sequence"
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "opens the Edit Popup to modify the appointment"
+        },
+        {
+            "shortcut": "Delete/Backspace",
+            "behavior": "opens the Delete confirmation popup to modify the appointment"
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "If date is focused, opens its Tooltip."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "If Tooltip is focused, navigates to Day view displaying the Tooltip date."
+        },
+        {
+            "shortcut": "Delete/Backspace",
+            "behavior": "If a Tooltip is focused, closes that and returns focus to its target date."
+        },
+        {
+            "shortcut": "Left/Right ArrowKeys",
+            "behavior": "move focus through tools"
+        },
+        {
+            "shortcut": "Down ArrowKeys",
+            "behavior": "moves focus to the selected (if present), or the first event (if any) in the view"
+        }
+    ]
+}

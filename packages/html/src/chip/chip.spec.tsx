@@ -4,6 +4,7 @@ import { classNames, optionClassNames, stateClassNames, States, Size, Roundness,
 
 import { KendoComponent } from '../_types/component';
 import { CHIP_FOLDER_NAME, CHIP_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const CHIP_CLASSNAME = `k-chip`;
 
 const states = [
@@ -125,19 +126,6 @@ Chip.defaultOptions = defaultOptions;
 Chip.moduleName = CHIP_MODULE_NAME;
 Chip.folderName = CHIP_FOLDER_NAME;
 
-/**
- * Accessibility specification for Chip (standalone, outside of ChipList).
- *
- * @wcag 4.1.2 Name, Role, Value - button pattern with toggle
- */
-Chip.ariaSpec = {
-    selector: '.k-chip',
-    rules: [
-        { selector: '*:not(.k-chip-list) > .k-chip', attribute: 'role=button', usage: 'Announces that the chip acts as a button when standalone.' },
-        { selector: '*:not(.k-chip-list) > .k-chip.k-selected', attribute: 'aria-pressed=true', usage: 'Announces that the Chip has been selected.' },
-        { selector: '*:not(.k-chip-list) > .k-chip:not(.k-selected)', attribute: 'aria-pressed=false', usage: 'Announces that the Chip has not been selected.' },
-        { selector: '.k-chip', attribute: 'aria-disabled=true (when disabled)', usage: 'Announces that the Chip is disabled.' },
-    ]
-};
+Chip.ariaSpec = a11ySpec.ariaSpec;
 
 export default Chip;

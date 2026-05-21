@@ -4,6 +4,7 @@ import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { BUBBLE_FOLDER_NAME, BUBBLE_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 
 
 export const BUBBLE_CLASSNAME = `k-bubble`;
@@ -83,14 +84,6 @@ Bubble.defaultOptions = defaultOptions;
 Bubble.moduleName = BUBBLE_MODULE_NAME;
 Bubble.folderName = BUBBLE_FOLDER_NAME;
 
-Bubble.ariaSpec = {
-    selector: '.k-bubble',
-    rules: [
-        { selector: '.k-bubble', attribute: 'tabindex=0', usage: 'The Chat bubble must be focusable.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'role=button', usage: 'The expandable indicator must have an appropriate role.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'aria-label or title', usage: 'The expandable indicator must be properly labelled.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'tabindex=0', usage: 'The expandable indicator must be part of the page tabsequence.' },
-    ]
-};
+Bubble.ariaSpec = a11ySpec.ariaSpec;
 
 export default Bubble;

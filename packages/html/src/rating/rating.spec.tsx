@@ -3,6 +3,7 @@ import RatingItem from './rating-item';
 
 import { KendoComponent } from '../_types/component';
 import { RATING_FOLDER_NAME, RATING_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const RATING_CLASSNAME = `k-rating`;
 
 const states = [
@@ -119,21 +120,6 @@ Rating.defaultOptions = defaultOptions;
 Rating.moduleName = RATING_MODULE_NAME;
 Rating.folderName = RATING_FOLDER_NAME;
 
-/**
- * Accessibility specification for Rating.
- */
-Rating.ariaSpec = {
-    selector: '.k-rating',
-    rules: [
-        { selector: '.k-rating', attribute: 'role=slider', usage: 'Announces the slider role of the Rating element.' },
-        { selector: '.k-rating', attribute: 'aria-label or aria-labelledby or title', usage: 'The Rating needs an accessible name to be assigned to it.' },
-        { selector: '.k-rating', attribute: 'aria-valuenow', usage: 'Specifies the currently selected value in the Rating.' },
-        { selector: '.k-rating', attribute: 'aria-valuemin', usage: 'Specifies the minimum available value in the Rating.' },
-        { selector: '.k-rating', attribute: 'aria-valuemax', usage: 'Specifies the maximum available value in the Rating.' },
-        { selector: '.k-rating:not(.k-disabled)', attribute: 'tabindex=0', usage: 'The element must be focusable. Disabled ratings are removed from tab order.' },
-        { selector: '.k-rating.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the Rating is disabled.' },
-        { selector: '.k-rating.k-readonly', attribute: 'aria-readonly=true (when readonly)', usage: 'Rendered only when the Rating is readonly. Readonly ratings remain focusable but their value cannot be changed.' },
-    ]
-};
+Rating.ariaSpec = a11ySpec.ariaSpec;
 
 export default Rating;

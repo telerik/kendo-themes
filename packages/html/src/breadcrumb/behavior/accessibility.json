@@ -1,0 +1,39 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-breadcrumb",
+            "attribute": "aria-label=Breadcrumb",
+            "usage": "Indicates the type of navigation provided by the nav element."
+        },
+        {
+            "selector": ".k-breadcrumb-item .k-breadcrumb-link,.k-breadcrumb-item .k-breadcrumb-root-link",
+            "attribute": "role=link or nodeName=a",
+            "usage": "The breadcrumb item should render an <a> element or have role=\"link\"."
+        },
+        {
+            "selector": ".k-breadcrumb-last-item .k-breadcrumb-link,.k-breadcrumb-last-item .k-breadcrumb-root-link",
+            "attribute": "aria-current=page",
+            "usage": "The last breadcrumb item points to the active page."
+        },
+        {
+            "selector": ".k-breadcrumb-last-item .k-breadcrumb-link",
+            "attribute": "aria-disabled=true",
+            "usage": "The last breadcrumb item is disabled."
+        },
+        {
+            "selector": ".k-breadcrumb-delimiter-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Delimiter icon should not be accessed through assistive technology."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Tab & Shift+Tab",
+            "behavior": "Focuses next and previous breadcrumb items. The focusable element is the element with either `a` tag, or `role=\\\"link\\\"`"
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Selects the Bredcrumb item, and navigates to it (if navigatable)."
+        }
+    ]
+}

@@ -3,6 +3,7 @@ import { classNames, optionClassNames, stateClassNames, variantClassNames, State
 
 import { KendoComponent, KendoBaseProps } from '../_types/component';
 import { BUTTON_FOLDER_NAME, BUTTON_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const BUTTON_CLASSNAME = `k-button`;
 
 const BUTTON_VARIANTS = ["icon-button"] as const;
@@ -178,17 +179,6 @@ Button.defaultOptions = defaultOptions;
 Button.moduleName = BUTTON_MODULE_NAME;
 Button.folderName = BUTTON_FOLDER_NAME;
 
-/**
- * Accessibility specification for Button.
- */
-Button.ariaSpec = {
-    selector: '.k-button',
-    rules: [
-        { selector: '.k-button', attribute: 'role=button or nodeName=button', usage: 'The button role is implicit from the native <button> element.' },
-        { selector: '.k-button', attribute: 'aria-label (when icon-only)', usage: 'Required for icon-only buttons that have no visible text.' },
-        { selector: '.k-button', attribute: 'aria-pressed (when togglable)', usage: 'Indicates the pressed state of a toggle button.' },
-        { selector: '.k-button', attribute: 'disabled (when disabled)', usage: 'Rendered when the button is disabled.' },
-    ]
-};
+Button.ariaSpec = a11ySpec.ariaSpec;
 
 export default Button;

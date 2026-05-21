@@ -1,0 +1,24 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-bubble",
+            "attribute": "tabindex=0",
+            "usage": "The Chat bubble must be focusable."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": "role=button",
+            "usage": "The expandable indicator must have an appropriate role."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": "aria-label or title",
+            "usage": "The expandable indicator must be properly labelled."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": "tabindex=0",
+            "usage": "The expandable indicator must be part of the page tabsequence."
+        }
+    ]
+}

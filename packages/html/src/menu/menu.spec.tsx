@@ -4,6 +4,7 @@ import MenuScrollableWrapper from './menu-scrollable-wrapper.spec';
 
 import { KendoComponent } from '../_types/component';
 import { MENU_FOLDER_NAME, MENU_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const MENU_CLASSNAME = `k-menu`;
 
 const states = [];
@@ -112,34 +113,6 @@ Menu.defaultOptions = defaultOptions;
 Menu.moduleName = MENU_MODULE_NAME;
 Menu.folderName = MENU_FOLDER_NAME;
 
-/**
- * @ariaSpec
- * Menu implements the WAI-ARIA menubar pattern.
- *
- * - Horizontal menu: role="menubar"
- * - Vertical menu: role="menubar" + aria-orientation="vertical"
- * - Menu items: role="menuitem" with aria-haspopup and aria-expanded for expandable items
- * - Expand arrows: aria-hidden="true"
- * - Scroll buttons: tabIndex={-1}, aria-label for accessible name
- * - Nested menu groups: role="menu" with id linked to parent's aria-controls
- */
-Menu.ariaSpec = {
-    selector: '.k-menu',
-    rules: [
-        { selector: '.k-menu:not(.k-context-menu)', attribute: 'role=menubar', usage: 'Announces the Menu menubar role.' },
-        { selector: '.k-menu.k-menu-vertical', attribute: 'aria-orientation=vertical', usage: 'Announces the Menu orientation when vertical.' },
-        { selector: '.k-menu-item', attribute: 'role=menuitem', usage: 'Announces the Menu item role.' },
-        { selector: '.k-menu-item', attribute: 'aria-haspopup=menu (when present)', usage: 'Indicates a popup menu is associated with the item.' },
-        { selector: '.k-menu-item', attribute: 'aria-expanded=true/false (when present)', usage: 'Indicates whether the submenu is expanded.' },
-        { selector: '.k-menu-item.k-disabled', attribute: 'aria-disabled=true', usage: 'Informs assistive technologies that a Menu item is disabled.' },
-        { selector: '.k-menu-expand-arrow', attribute: 'aria-hidden=true', usage: 'Expand arrow elements are hidden from assistive technologies.' },
-        { selector: '.k-menu-popup .k-menu-group', attribute: 'role=menu', usage: 'The role of the nested menu displayed in a popup.' },
-        { selector: '.k-menu-scroll-button', attribute: 'tabindex=-1', usage: 'Scroll buttons are removed from the tab sequence.' },
-        { selector: '.k-menu-scroll-button', attribute: 'aria-label', usage: 'Scroll buttons have an accessible label.' },
-        { selector: '.k-menu-item.k-focus', attribute: 'tabindex=0', usage: 'The focused item has tabindex 0.' },
-        { selector: '.k-menu-item', attribute: 'aria-controls=ul.k-menu-group id (when present)', usage: 'Points to the ID of the submenu. Only present when the item controls a submenu element.' },
-        { selector: '.k-menu-popup .k-menu-group', attribute: 'id', usage: 'Each nested menu has a deterministic id linked to the parent aria-controls.' },
-    ]
-};
+Menu.ariaSpec = a11ySpec.ariaSpec;
 
 export default Menu;

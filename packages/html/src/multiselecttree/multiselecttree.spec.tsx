@@ -15,6 +15,7 @@ import { TreeviewGroup, TreeviewItem, Treeview } from '../treeview';
 
 import { KendoComponent } from '../_types/component';
 import { MULTISELECTTREE_FOLDER_NAME, MULTISELECTTREE_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const MULTISELECTTREE_CLASSNAME = `k-multiselecttree`;
 
 const states = [
@@ -231,28 +232,6 @@ MultiSelectTree.defaultOptions = defaultOptions;
 MultiSelectTree.moduleName = MULTISELECTTREE_MODULE_NAME;
 MultiSelectTree.folderName = MULTISELECTTREE_FOLDER_NAME;
 
-/**
- * @see Treeview ariaSpec for the tree in the popup
- * @see ActionSheet ariaSpec for adaptive mode
- */
-MultiSelectTree.ariaSpec = {
-    rules: [
-        // Combobox input
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'role=combobox', usage: 'Announces the multiselect tree input.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-haspopup=tree', usage: 'Indicates the presence of a tree popup.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-expanded', usage: 'Announces the popup visibility.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the multiselect tree.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-autocomplete=list', usage: 'Indicates list filtering capability when filtering is enabled.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-describedby', usage: 'Points to the taglist element that contains the selected items.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-multiselecttree.k-disabled .k-input-inner', attribute: 'aria-disabled=true', usage: 'Rendered when the multiselect tree is disabled.' },
-        // TagList (ChipList)
-        { selector: '.k-multiselecttree .k-chip-list', attribute: 'role=listbox', usage: 'The taglist has listbox role for selected items.' },
-        { selector: '.k-multiselecttree .k-chip-list', attribute: 'aria-label or aria-labelledby', usage: 'The taglist needs an accessible name.' },
-        { selector: '.k-multiselecttree .k-chip-list', attribute: 'aria-orientation=horizontal', usage: 'Specifies horizontal orientation of the taglist.' },
-        { selector: '.k-multiselecttree .k-chip-list .k-chip', attribute: 'role=option', usage: 'Each tag chip is an option within the taglist listbox.' },
-        { selector: '.k-multiselecttree .k-chip-list .k-chip', attribute: 'aria-selected=true', usage: 'Tags represent selected items and must have aria-selected=true.' },
-    ]
-};
+MultiSelectTree.ariaSpec = a11ySpec.ariaSpec;
 
 export default MultiSelectTree;

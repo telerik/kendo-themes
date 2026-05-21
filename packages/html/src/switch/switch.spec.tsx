@@ -2,6 +2,7 @@ import { classNames, optionClassNames, stateClassNames, States, Size, Roundness 
 
 import { KendoComponent } from '../_types/component';
 import { SWITCH_FOLDER_NAME, SWITCH_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const SWITCH_CLASSNAME = `k-switch`;
 
 const states = [
@@ -136,22 +137,6 @@ Switch.defaultOptions = defaultOptions;
 Switch.moduleName = SWITCH_MODULE_NAME;
 Switch.folderName = SWITCH_FOLDER_NAME;
 
-/**
- * Accessibility specification for Switch.
- */
-Switch.ariaSpec = {
-    selector: '.k-switch',
-    rules: [
-        { selector: '.k-switch', attribute: 'role=switch', usage: 'Announces the switch role of the element.' },
-        { selector: '.k-switch', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name to which it will be assigned.' },
-        { selector: '.k-switch', attribute: 'aria-required=true (when required)', usage: 'Rendered only when the Switch is in a form. Required because <span role="switch"> does not support the native required attribute.' },
-        { selector: '.k-switch', attribute: 'aria-checked', usage: 'Announces the checked state of the Switch.' },
-        { selector: '.k-switch', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message for the switch.' },
-        { selector: '.k-switch', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered only when the Switch is in a form and announces the invalid state.' },
-        { selector: '.k-switch:not(.k-disabled)', attribute: 'tabindex=0', usage: 'The element must be focusable. Disabled switches are removed from tab order.' },
-        { selector: '.k-switch.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the Switch is disabled.' },
-        { selector: '.k-switch.k-readonly', attribute: 'aria-readonly=true (when readonly)', usage: 'Rendered only when the Switch is readonly. Readonly switches remain focusable but their value cannot be changed.' },
-    ]
-};
+Switch.ariaSpec = a11ySpec.ariaSpec;
 
 export default Switch;

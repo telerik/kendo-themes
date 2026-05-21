@@ -3,6 +3,7 @@ import { AnimationContainer } from '../animation-container';
 
 import { KendoComponent } from '../_types/component';
 import { POPUP_FOLDER_NAME, POPUP_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const POPUP_CLASSNAME = `k-popup`;
 
 const states = [];
@@ -76,23 +77,6 @@ Popup.defaultOptions = defaultOptions;
 Popup.moduleName = POPUP_MODULE_NAME;
 Popup.folderName = POPUP_FOLDER_NAME;
 
-/**
- * Accessibility specification for Popup.
- *
- * @accessibility
- * - Popup is a generic container that wraps content in dropdowns, pickers, tooltips
- * - The popup itself typically doesn't need ARIA roles - the content inside defines semantics
- * - When used as a dropdown container, should be referenced via aria-controls from the trigger
- * - When appended to body, container should have role="region" with aria-label
- *
- * @note Popup is a building block. ARIA attributes are applied by consuming components
- * (combobox, datepicker, etc.) based on their specific patterns.
- */
-Popup.ariaSpec = {
-    selector: '.k-popup',
-    rules: [
-        { selector: '.k-animation-container', attribute: 'role (when appended to body)', usage: 'Container gets role="region" when appended to document body. Popup is a building block — ARIA semantics come from consuming components.' },
-    ]
-};
+Popup.ariaSpec = a11ySpec.ariaSpec;
 
 export default Popup;

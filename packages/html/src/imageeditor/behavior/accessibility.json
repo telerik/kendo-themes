@@ -1,0 +1,32 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-imageeditor-canvas>canvas",
+            "attribute": "role=img",
+            "usage": "Indicates the canvas role as an image. Applicable when an image is loaded."
+        },
+        {
+            "selector": ".k-imageeditor-canvas>canvas",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Tab",
+            "behavior": "Focuses next focusable element (the ToolBar or an input/button on the Edit pane)."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Focuses previous focusable element."
+        },
+        {
+            "shortcut": "Ctrl + Z",
+            "behavior": "Undo the last modification performed on the image."
+        },
+        {
+            "shortcut": "Ctrl + Y",
+            "behavior": "Redo a modification performed on the image."
+        }
+    ]
+}

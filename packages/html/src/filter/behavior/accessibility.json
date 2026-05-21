@@ -1,0 +1,44 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-filter-container",
+            "attribute": "role=tree",
+            "usage": "Describes the hierarchical structure of the Filter component."
+        },
+        {
+            "selector": ".k-filter-container",
+            "attribute": "aria-label",
+            "usage": "Specifies a label for the Filter component."
+        },
+        {
+            "selector": ".k-filter-group-main,.k-filter-item",
+            "attribute": "role=treeitem",
+            "usage": "Each FilterGroup and FilterExpression represent a separate treeitem in the Filter component structure."
+        },
+        {
+            "selector": ".k-filter-lines",
+            "attribute": "role=group",
+            "usage": "Represents a group of items in the Filter component."
+        },
+        {
+            "selector": ".k-toolbar",
+            "attribute": "role=toolbar",
+            "usage": "The role represents a collection of tools."
+        },
+        {
+            "selector": ".k-toolbar",
+            "attribute": "aria-label",
+            "usage": "Specifies a label for the toolbar."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Focuses the previous item (FilterGroup or FilterExpression) in the `tree`."
+        },
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Focuses the next item (FilterGroup or FilterExpression) in the `tree`."
+        }
+    ]
+}

@@ -16,6 +16,7 @@ import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader,
 
 import { KendoComponent } from '../_types/component';
 import { DROPDOWNGRID_FOLDER_NAME, DROPDOWNGRID_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const DROPDOWNGRID_CLASSNAME = `k-dropdowngrid`;
 
 const states = [
@@ -278,21 +279,6 @@ DropdownGrid.defaultOptions = defaultOptions;
 DropdownGrid.moduleName = DROPDOWNGRID_MODULE_NAME;
 DropdownGrid.folderName = DROPDOWNGRID_FOLDER_NAME;
 
-/**
- * @see ActionSheet ariaSpec for adaptive mode
- */
-DropdownGrid.ariaSpec = {
-    rules: [
-        { selector: '.k-combobox .k-input-inner', attribute: 'role=combobox', usage: 'Identifies the input as a combobox.' },
-        { selector: '.k-combobox .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the combobox has a listbox popup.' },
-        { selector: '.k-combobox .k-input-inner', attribute: 'aria-expanded', usage: 'Indicates whether the popup is open.' },
-        { selector: '.k-combobox .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the combobox.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'tabindex=-1', usage: 'Dropdown button is not in the tab order.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list', attribute: 'role=listbox', usage: 'Table list has listbox role.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Table listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list .k-table-row', attribute: 'role=option', usage: 'Each table row is an option.' },
-    ]
-};
+DropdownGrid.ariaSpec = a11ySpec.ariaSpec;
 
 export default DropdownGrid;

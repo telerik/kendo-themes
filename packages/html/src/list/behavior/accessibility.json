@@ -1,0 +1,29 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-list-item",
+            "attribute": "role=option",
+            "usage": "Each list item is an option in the listbox."
+        },
+        {
+            "selector": ".k-list-item",
+            "attribute": "id",
+            "usage": "ID for aria-activedescendant reference."
+        },
+        {
+            "selector": ".k-list-item",
+            "attribute": "aria-selected (when selectable)",
+            "usage": "Indicates the selected state of the option."
+        },
+        {
+            "selector": ".k-list-group-item",
+            "attribute": "role=presentation",
+            "usage": "Group headers are presentational, not selectable options."
+        },
+        {
+            "selector": ".k-list-item-icon",
+            "attribute": "aria-hidden=true",
+            "usage": "Decorative icons are hidden from assistive technology."
+        }
+    ]
+}

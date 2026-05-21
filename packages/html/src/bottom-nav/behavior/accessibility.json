@@ -1,0 +1,33 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-bottom-nav",
+            "attribute": "role=navigation or nodeName=nav",
+            "usage": "The landmark role navigation must be assigned to the bottom navigation."
+        },
+        {
+            "selector": ".k-bottom-nav-item",
+            "attribute": "role=link or nodeName=a",
+            "usage": "Associate the link purpose of the bottom navigation items."
+        },
+        {
+            "selector": ".k-bottom-nav-item.k-selected",
+            "attribute": "aria-current=true",
+            "usage": "Indicates the selected navigation item."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Focuses previous link."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Focuses next link."
+        },
+        {
+            "shortcut": "Space / Enter",
+            "behavior": "Activates the currently focused link."
+        }
+    ]
+}

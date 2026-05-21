@@ -3,6 +3,7 @@ import { classNames, States, Size, Roundness, FillMode, ThemeColor } from '../mi
 
 import { KendoComponent } from '../_types/component';
 import { MENU_BUTTON_FOLDER_NAME, MENU_BUTTON_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const MENUBUTTON_CLASSNAME = `k-menu-button`;
 
 const states = [
@@ -111,25 +112,6 @@ MenuButton.defaultOptions = defaultOptions;
 MenuButton.moduleName = MENU_BUTTON_MODULE_NAME;
 MenuButton.folderName = MENU_BUTTON_FOLDER_NAME;
 
-/**
- * @ariaSpec
- * MenuButton follows the DropDownButton accessibility specification.
- *
- * - Button: role="button" (implicit), aria-expanded, aria-label for icon-only
- * - When disabled: aria-disabled="true"
- * - Popup list: role="list", items: role="listitem"
- */
-MenuButton.ariaSpec = {
-    selector: '.k-menu-button',
-    rules: [
-        { selector: '.k-menu-button', attribute: 'role=button or nodeName=button', usage: 'Omitted if the button DOM element is used.' },
-        { selector: '.k-menu-button', attribute: 'aria-label (when icon-only)', usage: 'Required when no text is visible in the button.' },
-        { selector: '.k-menu-button', attribute: 'aria-expanded=true/false', usage: 'Announces the state of the popup visibility.' },
-        { selector: '.k-menu-button', attribute: 'aria-controls=.k-menu-group id (when open)', usage: 'Points to the popup element. Builds a relationship between the button and the popup.' },
-        { selector: '.k-menu-button.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the button is disabled.' },
-        { selector: '.k-menu-group', attribute: 'role=list', usage: 'Announces the list role of the popup.' },
-        { selector: '.k-menu-item', attribute: 'role=listitem', usage: 'Announces the listitem role of the popup items.' },
-    ]
-};
+MenuButton.ariaSpec = a11ySpec.ariaSpec;
 
 export default MenuButton;

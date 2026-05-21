@@ -1,0 +1,28 @@
+{
+    "kbSpec": [
+        { "shortcut": "Tab", "behavior": "Moves focus to the Legend items, focusing the first legend item. If legend is not available, moves focus to the next focusable element on the page." },
+        { "shortcut": "Shift + Tab", "behavior": "Moves focus to the previous focusable element on the page." },
+        { "shortcut": "Arrow keys", "behavior": "Based on the chart type, the arrow keys move through points or series." },
+        { "shortcut": "Enter", "behavior": "Triggers the click action for the series point or legend item." },
+        { "shortcut": "Escape", "behavior": "Closes the series tooltip if it was open. A second press will move the focus to the root element of the chart." },
+        { "shortcut": "Up / Down Arrow (categorical)", "behavior": "Move through the different series. Stacked Bar/Column and Line/Area charts move focus to next/previous series item based on coordinates. Regular Bar charts move focus according to datasource order." },
+        { "shortcut": "Left / Right Arrow (categorical)", "behavior": "Move through the points in the series." },
+        { "shortcut": "Up Arrow (donut)", "behavior": "Move to the outer series." },
+        { "shortcut": "Down Arrow (donut)", "behavior": "Move to inner series." },
+        { "shortcut": "Right Arrow (donut/pie)", "behavior": "Move through the points of the series in a clockwise direction." },
+        { "shortcut": "Left Arrow (donut/pie)", "behavior": "Move through the points of the series in an anti-clockwise direction." },
+        { "shortcut": "Up / Down Arrow (scatter/polar)", "behavior": "Move through the series in datasource order." },
+        { "shortcut": "Left / Right Arrow (scatter/polar)", "behavior": "Move through items in the current series." },
+        { "shortcut": "Up / Down Arrow (funnel)", "behavior": "Move through the items in the chart." },
+        { "shortcut": "Up / Down Arrow (radar column)", "behavior": "Move in a clockwise/anti-clockwise manner through series." },
+        { "shortcut": "Up / Down Arrow (radar line/area)", "behavior": "Move to next/previous series point based on value — Up moves away from center, Down moves towards center." },
+        { "shortcut": "Right Arrow (radar)", "behavior": "Move through the points of the series in a clockwise direction." },
+        { "shortcut": "Left Arrow (radar)", "behavior": "Move through the points of the series in an anti-clockwise direction." },
+        { "shortcut": "Tab (legend)", "behavior": "Move focus to the next focusable element on the page." },
+        { "shortcut": "Shift + Tab (legend)", "behavior": "Move focus to the chart area, focusing the first point in the first series." },
+        { "shortcut": "Up / Left Arrow (legend)", "behavior": "Move focus to the previous legend item. Cycles to the last item at the beginning." },
+        { "shortcut": "Down / Right Arrow (legend)", "behavior": "Move focus to the next legend item. Cycles to the first item at the end." },
+        { "shortcut": "Enter (legend)", "behavior": "Toggles the series visibility similar to the click action." },
+        { "shortcut": "Escape (legend)", "behavior": "Moves the focus to the root element of the chart." }
+    ]
+}

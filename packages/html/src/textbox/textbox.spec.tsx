@@ -12,6 +12,7 @@ import {
     InputSeparator
 } from '../input';
 
+import a11ySpec from './behavior/accessibility.json';
 export const TEXTBOX_CLASSNAME = `k-textbox`;
 
 const states = [
@@ -142,22 +143,6 @@ Textbox.defaultOptions = defaultOptions;
 Textbox.moduleName = TEXTBOX_MODULE_NAME;
 Textbox.folderName = TEXTBOX_FOLDER_NAME;
 
-/**
- * Accessibility specification for Textbox.
- * @accessibility
- * - Uses semantic `<input>` element (role="textbox" implicit)
- * - Requires accessible name via label, aria-label, or aria-labelledby
- * - Disabled state uses native disabled attribute
- */
-Textbox.ariaSpec = {
-    selector: '.k-textbox',
-    rules: [
-        { selector: '.k-textbox > .k-input-inner', attribute: 'role=textbox or nodeName=input', usage: 'Describes the role of the component.' },
-        { selector: '.k-textbox > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name (provided by consuming app).' },
-        { selector: '.k-textbox > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the TextBox is in an invalid state.' },
-        { selector: '.k-textbox > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message for the input.' },
-        { selector: '.k-textbox.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the TextBox is disabled.' },
-    ]
-};
+Textbox.ariaSpec = a11ySpec.ariaSpec;
 
 export default Textbox;

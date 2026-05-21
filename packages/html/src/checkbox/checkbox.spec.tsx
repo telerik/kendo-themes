@@ -2,6 +2,7 @@ import { classNames, optionClassNames, stateClassNames, States, Size, Roundness 
 
 import { KendoComponent } from '../_types/component';
 import { CHECKBOX_FOLDER_NAME, CHECKBOX_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const CHECKBOX_CLASSNAME = `k-checkbox`;
 
 const states = [
@@ -105,19 +106,6 @@ Checkbox.defaultOptions = defaultOptions;
 Checkbox.moduleName = CHECKBOX_MODULE_NAME;
 Checkbox.folderName = CHECKBOX_FOLDER_NAME;
 
-/**
- * Accessibility specification for Checkbox.
- */
-Checkbox.ariaSpec = {
-    selector: '.k-checkbox',
-    rules: [
-        { selector: '.k-checkbox', attribute: 'role=checkbox or type=checkbox', usage: 'Announces the checkbox role of the element.' },
-        { selector: '.k-checkbox', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name to which it will be assigned.' },
-        { selector: '.k-checkbox', attribute: 'aria-checked=true/false/mixed or checked', usage: 'For native checkboxes the checked state is handled by the browser. aria-checked is used for custom implementations.' },
-        { selector: '.k-checkbox', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message for the checkbox.' },
-        { selector: '.k-checkbox', attribute: 'disabled or aria-disabled=true (when disabled)', usage: 'For native checkboxes use the HTML disabled attribute. aria-disabled for custom implementations.' },
-        { selector: '.k-invalid, .ng-invalid', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered only when the CheckBox is in a form and announces the invalid state.' },
-    ]
-};
+Checkbox.ariaSpec = a11ySpec.ariaSpec;
 
 export default Checkbox;

@@ -1,0 +1,38 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-drawer ul",
+            "attribute": "role=menubar",
+            "usage": "Indicates that the list of drawer items is a menubar."
+        },
+        {
+            "selector": ".k-drawer ul",
+            "attribute": "aria-orientation=vertical",
+            "usage": "Indicates that the orientation of the drawer is vertical."
+        },
+        {
+            "selector": ".k-drawer-item:not(.k-drawer-separator)",
+            "attribute": "role=menuitem",
+            "usage": "Indicates that the item of a drawer serves as a menuitem."
+        },
+        {
+            "selector": ".k-drawer-item.k-drawer-separator",
+            "attribute": "role=separator",
+            "usage": "Indicates that the item of a drawer serves as a separator."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Enter",
+            "behavior": "Execute the item action"
+        },
+        {
+            "shortcut": "Arrow Up",
+            "behavior": "Goes to the previous item. Focus is moved to the prev item and its tabindex is set to 0."
+        },
+        {
+            "shortcut": "Arrow Down",
+            "behavior": "Goes to the next item. Focus is moved to the next item and its tabindex is set to 0."
+        }
+    ]
+}

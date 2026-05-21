@@ -4,6 +4,7 @@ import { IconFloatingActionButton } from '../fab';
 import { PromptBox, KendoPromptBoxProps } from '../prompt-box';
 import { KendoComponent } from '../_types/component';
 import { CHAT_FOLDER_NAME, CHAT_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 const CHAT_CLASSNAME = 'k-chat';
 
 const states = [];
@@ -107,30 +108,6 @@ Chat.defaultOptions = defaultOptions;
 Chat.moduleName = CHAT_MODULE_NAME;
 Chat.folderName = CHAT_FOLDER_NAME;
 
-Chat.ariaSpec = {
-    selector: '.k-chat',
-    rules: [
-        // Message list
-        { selector: '.k-message-list', attribute: 'role=log', usage: 'The role of the Chat message list must imply that there is a log (list) of messages.' },
-        { selector: '.k-message-list', attribute: 'aria-label', usage: 'Announces the purpose of the Chat message list.' },
-        { selector: '.k-message-list', attribute: 'aria-live=polite', usage: 'Announces new messages in the Chat message list.' },
-        // Bubble
-        { selector: '.k-bubble', attribute: 'tabindex=0', usage: 'The Chat bubble must be focusable.' },
-        // Typing indicator
-        { selector: '.k-bubble .k-typing-indicator', attribute: 'tabindex=-1', usage: 'The Chat bubble typing indicator should not be focusable.' },
-        // Expandable indicator
-        { selector: '.k-bubble-expandable-indicator', attribute: 'role=button', usage: 'The expandable indicator must have an appropriate role.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'aria-label or title', usage: 'The expandable indicator must be properly labelled.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'tabindex=0', usage: 'The expandable indicator must be part of the page tabsequence.' },
-        // Reference close button
-        { selector: '.k-message-reference>.k-button', attribute: 'aria-label or title', usage: 'The reference close button must be properly labelled.' },
-        { selector: '.k-message-reference>.k-button', attribute: 'role=button or nodeName=button', usage: 'The reference close button must have an appropriate role.' },
-        // Prompt box suffix buttons
-        { selector: '.k-prompt-box-affix>.k-button', attribute: 'role=button or nodeName=button', usage: 'The buttons must have appropriate role.' },
-        { selector: '.k-prompt-box-affix>.k-button', attribute: 'aria-label or title', usage: 'The buttons must be properly labelled.' },
-        // Disabled send button
-        { selector: '.k-prompt-box-affix>.k-button.k-disabled', attribute: 'disabled', usage: 'Announces the send action as disabled when necessary.' },
-    ]
-};
+Chat.ariaSpec = a11ySpec.ariaSpec;
 
 export default Chat;

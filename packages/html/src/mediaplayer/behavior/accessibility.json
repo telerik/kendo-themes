@@ -1,0 +1,76 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-play-button",
+            "attribute": "aria-label",
+            "usage": "Specifies label for the play/pause button."
+        },
+        {
+            "selector": ".k-play-button",
+            "attribute": "aria-pressed",
+            "usage": "Specifies whether play is active or not."
+        },
+        {
+            "selector": ".k-volume-button",
+            "attribute": "aria-label",
+            "usage": "Specifies label for the mute button."
+        },
+        {
+            "selector": ".k-volume-button",
+            "attribute": "aria-pressed",
+            "usage": "Specifies whether mute is active or not."
+        },
+        {
+            "selector": ".k-fullscreen-button",
+            "attribute": "aria-label",
+            "usage": "Specifies label for the full screen button."
+        },
+        {
+            "selector": ".k-fullscreen-button",
+            "attribute": "aria-pressed",
+            "usage": "Specifies whether full screen is active or not."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "RightArrow",
+            "behavior": "Seek forward."
+        },
+        {
+            "shortcut": "LeftArrow",
+            "behavior": "Seek backward."
+        },
+        {
+            "shortcut": "UpArrow",
+            "behavior": "Increase the volume."
+        },
+        {
+            "shortcut": "DownArrow",
+            "behavior": "Decrease the volume."
+        },
+        {
+            "shortcut": "Control + 1",
+            "behavior": "Decrease the video quality."
+        },
+        {
+            "shortcut": "Control + 2",
+            "behavior": "Increase the video quality."
+        },
+        {
+            "shortcut": "F",
+            "behavior": "Open and close the full screen."
+        },
+        {
+            "shortcut": "M",
+            "behavior": "Mute and Unmute the sound."
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "Play and Pause the video."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Close the full screen."
+        }
+    ]
+}

@@ -6,6 +6,7 @@ import { WindowContent } from './window-content.spec';
 
 import { KendoComponent } from '../_types/component';
 import { WINDOW_FOLDER_NAME, WINDOW_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const WINDOW_CLASSNAME = `k-window`;
 
 const states = [];
@@ -104,21 +105,6 @@ Window.defaultOptions = defaultOptions;
 Window.moduleName = WINDOW_MODULE_NAME;
 Window.folderName = WINDOW_FOLDER_NAME;
 
-/**
- * Accessibility specification for Window.
- *
- * @accessibility
- * - Window has role=dialog with aria-labelledby pointing to title
- * - Action buttons have aria-label for accessible name
- *
- * @wcag 4.1.2 Name, Role, Value - dialog pattern
- */
-Window.ariaSpec = {
-    selector: '.k-window',
-    rules: [
-        { selector: '.k-window:not(.k-dialog)', attribute: 'role=dialog', usage: 'Announces the dialog role of the component.' },
-        { selector: '.k-window:not(.k-dialog)', attribute: 'aria-labelledby', usage: 'Associate the title of the dialog.' },
-    ]
-};
+Window.ariaSpec = a11ySpec.ariaSpec;
 
 export default Window;

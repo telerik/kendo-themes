@@ -1,0 +1,9 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-animation-container",
+            "attribute": "role (when appended to body)",
+            "usage": "Container gets role=\"region\" when appended to document body. Popup is a building block — ARIA semantics come from consuming components."
+        }
+    ]
+}

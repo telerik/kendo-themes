@@ -3,6 +3,7 @@ import { Icon } from '../icon';
 
 import { KendoComponent } from '../_types/component';
 import { SCROLLVIEW_FOLDER_NAME, SCROLLVIEW_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 const SCROLLVIEW_CLASSNAME = 'k-scrollview';
 
 const states = [];
@@ -144,20 +145,6 @@ ScrollView.defaultOptions = defaultOptions;
 ScrollView.moduleName = SCROLLVIEW_MODULE_NAME;
 ScrollView.folderName = SCROLLVIEW_FOLDER_NAME;
 
-ScrollView.ariaSpec = {
-    selector: '.k-scrollview',
-    rules: [
-        { selector: '.k-scrollview', attribute: 'role=application', usage: 'Specifies the role of the Carousel element.' },
-        { selector: '.k-scrollview', attribute: 'aria-roledescription=carousel', usage: 'Clarifies the role of the Carousel element.' },
-        { selector: '.k-scrollview', attribute: 'tabindex=0', usage: 'Carousel element must be focusable.' },
-        { selector: '.k-scrollview-wrap', attribute: 'role=list', usage: 'Clarifies the scrollview wrap as a list of items (images).' },
-        { selector: '.k-scrollview-wrap>*', attribute: 'role=listitem', usage: 'Specifies the role of each Carousel item.' },
-        { selector: '.k-scrollview-wrap>*', attribute: 'aria-roledescription=slide', usage: 'Clarifies the role of the Carousel item.' },
-        { selector: '.k-scrollview-prev,.k-scrollview-next', attribute: 'role=button', usage: 'Specifies the role of the Previous/Next button.' },
-        { selector: '.k-scrollview-prev,.k-scrollview-next', attribute: 'aria-label', usage: 'Specifies label for the Previous/Next button.' },
-        { selector: '.k-scrollview-prev,.k-scrollview-next', attribute: 'aria-controls', usage: 'Points to the id of the items container element.' },
-        { selector: '.k-scrollview>.k-sr-only', attribute: 'aria-live=polite', usage: 'Identifies a hidden element as a live region in the polite state.' },
-    ]
-};
+ScrollView.ariaSpec = a11ySpec.ariaSpec;
 
 export default ScrollView;

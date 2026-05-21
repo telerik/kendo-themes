@@ -1,0 +1,8 @@
+{
+    "kbSpec": [
+        {
+            "shortcut": "Esc",
+            "behavior": "Closes the dialog if open."
+        }
+    ]
+}

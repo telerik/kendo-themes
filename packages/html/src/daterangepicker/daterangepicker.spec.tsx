@@ -8,6 +8,7 @@ import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProp
 
 import { KendoComponent } from '../_types/component';
 import { DATERANGEPICKER_FOLDER_NAME, DATERANGEPICKER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const DATERANGEPICKER_CLASSNAME = `k-daterangepicker`;
 
 const states = [
@@ -146,21 +147,6 @@ DateRangePicker.defaultOptions = defaultOptions;
 DateRangePicker.moduleName = DATERANGEPICKER_MODULE_NAME;
 DateRangePicker.folderName = DATERANGEPICKER_FOLDER_NAME;
 
-/**
- * Accessibility specification for DateRangePicker.
- *
- * @accessibility
- * - Contains two DateInput elements (start and end)
- * - Calendar popup follows MultiViewCalendar ARIA spec
- * - Adaptive mode follows ActionSheet ARIA spec
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern for date range selection
- */
-DateRangePicker.ariaSpec = {
-    selector: '.k-daterangepicker',
-    rules: [
-        { selector: '.k-daterangepicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'Each date input needs an accessible name.' },
-    ]
-};
+DateRangePicker.ariaSpec = a11ySpec.ariaSpec;
 
 export default DateRangePicker;

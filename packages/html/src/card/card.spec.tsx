@@ -3,6 +3,7 @@ import { CardCallout } from './card-callout';
 
 import { KendoComponent } from '../_types/component';
 import { CARD_FOLDER_NAME, CARD_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const CARD_CLASSNAME = `k-card`;
 
 const states = [
@@ -73,22 +74,6 @@ Card.defaultOptions = defaultOptions;
 Card.moduleName = CARD_MODULE_NAME;
 Card.folderName = CARD_FOLDER_NAME;
 
-/**
- * Accessibility specification for Card.
- *
- * The Card component is a UI container with styles for organized content.
- * It does not have WAI-ARIA and keyboard navigation unless used in a Card List.
- *
- * @wcag 1.3.1 Info and Relationships - semantic container structure
- */
-Card.ariaSpec = {
-    selector: '.k-card',
-    rules: [
-        { selector: '.k-card-list .k-card', attribute: 'role=listitem', usage: 'When the card is located in a list, it should have the listitem role.' },
-        { selector: '.k-card-list .k-card', attribute: 'tabindex=0', usage: 'The card component is focusable when navigatable.' },
-        { selector: '.k-card-list .k-card', attribute: 'aria-describedby=.k-card-title id', usage: 'Associate the card to the title element.' },
-        { selector: '.k-card-list .k-card', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces the bound Enter key that enables navigation inside the card.' },
-    ]
-};
+Card.ariaSpec = a11ySpec.ariaSpec;
 
 export default Card;

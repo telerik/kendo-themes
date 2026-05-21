@@ -1,0 +1,128 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-timepicker .k-input-inner",
+            "attribute": "role=combobox",
+            "usage": "The input element follows the combobox specification."
+        },
+        {
+            "selector": ".k-timepicker .k-input-inner",
+            "attribute": "aria-haspopup=dialog",
+            "usage": "Indicates the component has a Dialog Popup."
+        },
+        {
+            "selector": ".k-timepicker .k-input-inner",
+            "attribute": "aria-expanded=true/false",
+            "usage": "Announces whether the Popup is visible or not."
+        },
+        {
+            "selector": ".k-timepicker .k-input-inner",
+            "attribute": "aria-controls (when open)",
+            "usage": "Points to the popup element."
+        },
+        {
+            "selector": ".k-timepicker .k-input-inner",
+            "attribute": "label for or aria-label or aria-labelledby",
+            "usage": "The input needs an accessible name."
+        },
+        {
+            "selector": ".k-invalid .k-input-inner",
+            "attribute": "aria-invalid=true",
+            "usage": "Rendered only when the picker is in form and announces invalid state."
+        },
+        {
+            "selector": ".k-disabled .k-input-inner",
+            "attribute": "disabled or aria-disabled=true",
+            "usage": "Rendered only when the picker is disabled."
+        },
+        {
+            "selector": ".k-timepicker .k-input-button",
+            "attribute": "tabindex=-1",
+            "usage": "Button element must not be focusable."
+        },
+        {
+            "selector": ".k-timepicker .k-input-button",
+            "attribute": "aria-label",
+            "usage": "The button needs an accessible name."
+        },
+        {
+            "selector": ".k-timepicker.k-disabled .k-button",
+            "attribute": "disabled or aria-disabled",
+            "usage": "Rendered only when the picker is disabled."
+        },
+        {
+            "selector": ".k-time-list",
+            "attribute": "role=listbox",
+            "usage": "The timelist elements must have listbox role."
+        },
+        {
+            "selector": ".k-time-list",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "The listbox needs an accessible name."
+        },
+        {
+            "selector": ".k-time-list-wrapper .k-reset",
+            "attribute": "role=none",
+            "usage": "The ul element semantic meaning must be removed."
+        },
+        {
+            "selector": ".k-time-list-wrapper .k-item",
+            "attribute": "role=option",
+            "usage": "The available options must be marked as such."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Esc",
+            "behavior": "Closes the popup"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) + Down",
+            "behavior": "Opens the popup"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) + Up",
+            "behavior": "Closes the popup"
+        },
+        {
+            "shortcut": "Up",
+            "behavior": "Increases the value of the time segment that is highlighted."
+        },
+        {
+            "shortcut": "Down",
+            "behavior": "Decreases the value of the time segment that is highlighted."
+        },
+        {
+            "shortcut": "Left",
+            "behavior": "Moves to previous time segment in the input."
+        },
+        {
+            "shortcut": "Right",
+            "behavior": "Moves to next time segment in the input."
+        },
+        {
+            "shortcut": "Backspace",
+            "behavior": "Deletes value of the time segment."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Closes the popup"
+        },
+        {
+            "shortcut": "Shift + Tab or Left",
+            "behavior": "Focuses previous carousel."
+        },
+        {
+            "shortcut": "Tab or Right",
+            "behavior": "Focuses next carousel."
+        },
+        {
+            "shortcut": "Down",
+            "behavior": "Selects next value in the carousel."
+        },
+        {
+            "shortcut": "Up",
+            "behavior": "Selects previous value in the carousel."
+        }
+    ]
+}

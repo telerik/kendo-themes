@@ -1,0 +1,153 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-taskboard",
+            "attribute": "role=application",
+            "usage": "The TaskBoard has role=application as its inner navigation requires the use of arrows."
+        },
+        {
+            "selector": ".k-taskboard-column-cards-container",
+            "attribute": "role=list",
+            "usage": "The TaskBoard Column cards container is a collection of list items."
+        },
+        {
+            "selector": ".k-taskboard-column-cards-container",
+            "attribute": "tabindex=0",
+            "usage": "The TaskBoard Column cards container must be focusable."
+        },
+        {
+            "selector": ".k-taskboard-column-cards-container",
+            "attribute": "aria-labelledby",
+            "usage": "The TaskBoard Column cards container must be labelled by its column header."
+        },
+        {
+            "selector": ".k-taskboard-column-header-actions > .k-button",
+            "attribute": "role=button or nodeName=button",
+            "usage": "The TaskBoard Column actions are buttons."
+        },
+        {
+            "selector": ".k-taskboard-column-header-actions > .k-button",
+            "attribute": "aria-label or title",
+            "usage": "Each action must have an accessible name as they are represented by icons."
+        },
+        {
+            "selector": ".k-taskboard-column-cards",
+            "attribute": "role=presentation",
+            "usage": "The cards inner container must not break the list-listitem relationship."
+        },
+        {
+            "selector": ".k-taskboard-card",
+            "attribute": "role=listitem",
+            "usage": "The TaskBoard Tasks (cards) are list items."
+        },
+        {
+            "selector": ".k-taskboard-card",
+            "attribute": "tabindex=0",
+            "usage": "The TaskBoard Card must be focusable."
+        },
+        {
+            "selector": ".k-taskboard-card-menu-button",
+            "attribute": "role=button or nodeName=button",
+            "usage": "The TaskBoard card menu element must be a button."
+        },
+        {
+            "selector": ".k-taskboard-card-menu-button",
+            "attribute": "aria-label or title",
+            "usage": "The menu button must have an accessible name as it is represented by an icon."
+        },
+        {
+            "selector": ".k-taskboard-pane-header-actions > .k-button",
+            "attribute": "role=button or nodeName=button",
+            "usage": "The TaskBoard edit form close element must be a button."
+        },
+        {
+            "selector": ".k-taskboard-pane-header-actions > .k-button",
+            "attribute": "aria-label or title",
+            "usage": "The edit form close button must have an accessible name."
+        },
+        {
+            "selector": ".k-taskboard-edit-pane .k-form",
+            "attribute": "role=form",
+            "usage": "The edit Form needs the appropriate role."
+        },
+        {
+            "selector": ".k-taskboard-edit-pane .k-form",
+            "attribute": "aria-labelledby",
+            "usage": "The TaskBoard edit form must be labeled by the header text of the pane."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates through the TaskBoard tab stops - the ToolBar, each Column, column action buttons, each Card, popup items, and pane fields/buttons."
+        },
+        {
+            "shortcut": "Left Arrow",
+            "behavior": "Focuses the previous column or a card in the previous column."
+        },
+        {
+            "shortcut": "Right Arrow",
+            "behavior": "Focuses the next column or a card in the next column."
+        },
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Focuses the previous card."
+        },
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Focuses the next card."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Selects the focused card."
+        },
+        {
+            "shortcut": "Delete",
+            "behavior": "Deletes the currently focused item. When focus is on a card, deletes the card. When focus is on a column, deletes the column. If delete confirmation is enabled, opens a confirmation dialog instead of deleting immediately."
+        },
+        {
+            "shortcut": "Ctrl + E",
+            "behavior": "Puts the focused card or column in edit mode."
+        },
+        {
+            "shortcut": "Ctrl + A",
+            "behavior": "Creates a new card or column. Creating a card is blocked when the target column has reached its WIP limit."
+        },
+        {
+            "shortcut": "Enter or Space",
+            "behavior": "Activates the focused popup action."
+        },
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Moves focus to the previous popup item."
+        },
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Moves focus to the next popup item."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Closes the popup and returns focus to the actions button."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "When focus is in the title field, saves the current changes."
+        },
+        {
+            "shortcut": "Ctrl + Enter",
+            "behavior": "When focus is in the description field, saves the current changes."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Closes the pane and returns focus to the element that opened it."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Moves focus to the next field or action in the pane."
+        },
+        {
+            "shortcut": "Shift + Tab",
+            "behavior": "Moves focus to the previous field or action in the pane."
+        }
+    ]
+}

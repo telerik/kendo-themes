@@ -1,0 +1,101 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "role=combobox",
+            "usage": "Announces the dropdown element."
+        },
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "aria-haspopup=listbox",
+            "usage": "Indicates the presence of a listbox popup."
+        },
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "aria-expanded",
+            "usage": "Announces the visibility state of the popup."
+        },
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the dropdown."
+        },
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "tabindex=0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-dropdownlist.k-disabled",
+            "attribute": "aria-disabled=true",
+            "usage": "Rendered when the dropdown is disabled."
+        },
+        {
+            "selector": ".k-dropdownlist .k-input-button",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the dropdown button."
+        },
+        {
+            "selector": ".k-dropdownlist .k-input-button",
+            "attribute": "tabindex=-1",
+            "usage": "The button must not be focusable."
+        },
+        {
+            "selector": ".k-dropdownlist-popup .k-list-content, .k-dropdownlist-popup .k-list-ul",
+            "attribute": "role=listbox",
+            "usage": "Popup list has listbox role."
+        },
+        {
+            "selector": ".k-dropdownlist-popup .k-list-ul[role=\"listbox\"]",
+            "attribute": "aria-label or aria-labelledby",
+            "usage": "Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby."
+        },
+        {
+            "selector": ".k-dropdownlist-popup .k-list-item",
+            "attribute": "role=option",
+            "usage": "Each list item is an option."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Selects the next available item."
+        },
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Selects the previous available item."
+        },
+        {
+            "shortcut": "Home",
+            "behavior": "Selects the first available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position."
+        },
+        {
+            "shortcut": "End",
+            "behavior": "Selects the last available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Opens popup"
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "Opens popup"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) Down",
+            "behavior": "Opens popup"
+        },
+        {
+            "shortcut": "Alt/Opt(Mac) Up or Esc",
+            "behavior": "`Closes popup"
+        },
+        {
+            "shortcut": "printable characters",
+            "behavior": "Typing \"M\" or any other printable character should select the next or first item in the list. Swiftly typing should capture multiple printable characters after the first one."
+        },
+        {
+            "shortcut": "Tab",
+            "behavior": "Closes the actionsheet and focuses the next focusable element."
+        }
+    ]
+}

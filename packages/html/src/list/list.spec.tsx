@@ -5,6 +5,7 @@ import { NoData } from '../nodata';
 
 import { KendoComponent } from '../_types/component';
 import { LIST_FOLDER_NAME, LIST_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const LIST_CLASSNAME = `k-list`;
 
 const states = [];
@@ -84,23 +85,6 @@ List.defaultOptions = defaultOptions;
 List.moduleName = LIST_MODULE_NAME;
 List.folderName = LIST_FOLDER_NAME;
 
-/**
- * Accessibility specification for List.
- *
- * @accessibility
- * - List is a container for listbox content used in dropdowns
- * - NoData element should have aria-live="polite" for announcements
- * - Screen reader helper announces item count
- *
- * @see ListContent.ariaSpec for listbox role details
- * @see ListItem.ariaSpec for option role details
- * @see ListUl.ariaSpec for list structure details
- */
-List.ariaSpec = {
-    selector: '.k-list',
-    rules: [
-        { selector: '.k-list .k-no-data', attribute: 'aria-live=polite', usage: 'Announces "No data found" to screen readers.' },
-    ]
-};
+List.ariaSpec = a11ySpec.ariaSpec;
 
 export default List;

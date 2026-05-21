@@ -1,0 +1,12 @@
+{
+    "kbSpec": [
+        {
+            "shortcut": "Tab",
+            "behavior": "Navigates the content in the ChartWizard - the Window, Export button, Chart, Splitter, TabStrip tabs and content, each ExpansionPanel, each Chart type button."
+        },
+        {
+            "shortcut": "Enter",
+            "behavior": "Triggers click event on the focused button."
+        }
+    ]
+}

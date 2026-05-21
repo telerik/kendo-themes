@@ -1,0 +1,25 @@
+# {{ name }} Accessibility
+
+{% if ariaSpec and ariaSpec.length -%}
+## ARIA Attributes
+
+The following table lists the ARIA attributes applied to the {{ name }} component:
+
+| Selector | Attribute | Usage |
+| --- | --- | --- |
+{% for rule in ariaSpec -%}
+| `{{ rule.selector }}` | `{{ rule.attribute }}`{% if rule.value %} = `{{ rule.value }}`{% endif %} | {{ rule.usage }}{% if rule.when %} _({{ rule.when }})_{% endif %} |
+{% endfor %}
+{% endif -%}
+
+{% if kbSpec and kbSpec.length -%}
+## Keyboard Navigation
+
+The following table lists the keyboard shortcuts supported by the {{ name }} component:
+
+| Shortcut | Behavior |
+| --- | --- |
+{% for rule in kbSpec -%}
+| `{{ rule.shortcut }}` | {{ rule.behavior }} |
+{% endfor %}
+{% endif -%}

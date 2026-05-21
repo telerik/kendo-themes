@@ -1,0 +1,24 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-notification",
+            "attribute": "role=status",
+            "usage": "Notification element should be marked as a status. Uses status instead of alert to avoid interrupting screen reader workflow."
+        },
+        {
+            "selector": ".k-notification",
+            "attribute": "aria-live=polite",
+            "usage": "The aria-live value must be polite so it will not obscure other essential information."
+        },
+        {
+            "selector": ".k-notification",
+            "attribute": "aria-describedby=.k-notification-content id",
+            "usage": "Used so that the content of the Notification will be announced by assistive technologies."
+        },
+        {
+            "selector": ".k-notification .k-svg-i-x, .k-notification .k-i-x",
+            "attribute": "aria-hidden=true",
+            "usage": "The close button icon should not be present in the accessibility tree."
+        }
+    ]
+}

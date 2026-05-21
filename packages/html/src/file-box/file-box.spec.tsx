@@ -3,6 +3,7 @@ import { Icon } from '../icon';
 import { Button } from '../button';
 import { MenuButton } from '../menu-button';
 import { FILE_BOX_FOLDER_NAME, FILE_BOX_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 
 export const FILE_BOX_CLASSNAME = 'k-file-box';
 
@@ -79,18 +80,6 @@ FileBox.className = FILE_BOX_CLASSNAME;
 FileBox.defaultOptions = defaultOptions;
 FileBox.moduleName = FILE_BOX_MODULE_NAME;
 FileBox.folderName = FILE_BOX_FOLDER_NAME;
-FileBox.ariaSpec = {
-    selector: '.k-file-box-wrapper',
-    rules: [
-        { selector: '.k-file-box-wrapper', attribute: 'role=list', usage: 'Explicitly sets the UL role to list.' },
-        { selector: '.k-file-box-wrapper', attribute: 'aria-label', usage: 'Provides an accessible name for the file list (e.g. "Attached files").' },
-        { selector: '.k-file-box-wrapper .k-files-scroll', attribute: 'role=presentation', usage: 'The scrollable container between the list and its items is presentational, ensuring the list→listitem relationship is preserved in the accessibility tree.' },
-        { selector: '.k-file-box-wrapper .k-file-box', attribute: 'role=listitem', usage: 'Explicitly sets the LI role to listitem.' },
-        { selector: '.k-file-box-wrapper .k-file-box', attribute: 'tabindex', usage: 'Makes the file box focusable. Uses roving tabindex: 0 for the focused item, -1 for the rest.' },
-        { selector: '.k-file-box-wrapper .k-file-box', attribute: 'aria-label', usage: 'Provides an accessible name describing the file. Can include the file name and size (e.g. "FileName.pdf 2MB").' },
-        { selector: '.k-file-box-wrapper .k-file-box .k-icon', attribute: 'aria-hidden=true', usage: 'The file type icon is decorative and hidden from screen readers.' },
-        { selector: '.k-file-box-wrapper .k-file-box span.k-button', attribute: 'aria-hidden=true', usage: 'The remove button is rendered as a decorative span and hidden from screen readers. File removal is handled by keyboard interaction on the listitem itself.' }
-    ]
-};
 
+FileBox.ariaSpec = a11ySpec.ariaSpec;
 export default FileBox;

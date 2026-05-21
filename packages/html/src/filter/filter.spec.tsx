@@ -3,6 +3,7 @@ import { Button } from '../button';
 
 import { KendoComponent } from '../_types/component';
 import { FILTER_FOLDER_NAME, FILTER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const FILTER_CLASSNAME = 'k-filter';
 
 const states = [];
@@ -47,16 +48,6 @@ Filter.className = FILTER_CLASSNAME;
 Filter.moduleName = FILTER_MODULE_NAME;
 Filter.folderName = FILTER_FOLDER_NAME;
 
-Filter.ariaSpec = {
-    selector: '.k-filter',
-    rules: [
-        { selector: '.k-filter-container', attribute: 'role=tree', usage: 'Describes the hierarchical structure of the Filter component.' },
-        { selector: '.k-filter-container', attribute: 'aria-label', usage: 'Specifies a label for the Filter component.' },
-        { selector: '.k-filter-group-main,.k-filter-item', attribute: 'role=treeitem', usage: 'Each FilterGroup and FilterExpression represent a separate treeitem in the Filter component structure.' },
-        { selector: '.k-filter-lines', attribute: 'role=group', usage: 'Represents a group of items in the Filter component.' },
-        { selector: '.k-toolbar', attribute: 'role=toolbar', usage: 'The role represents a collection of tools.' },
-        { selector: '.k-toolbar', attribute: 'aria-label', usage: 'Specifies a label for the toolbar.' },
-    ]
-};
+Filter.ariaSpec = a11ySpec.ariaSpec;
 
 export default Filter;

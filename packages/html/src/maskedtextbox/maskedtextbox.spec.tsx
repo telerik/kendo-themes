@@ -12,6 +12,7 @@ import {
     InputSeparator
 } from '../input';
 
+import a11ySpec from './behavior/accessibility.json';
 export const MASKEDTEXTBOX_CLASSNAME = `k-maskedtextbox`;
 
 const states = [
@@ -137,23 +138,6 @@ MaskedTextbox.defaultOptions = defaultOptions;
 MaskedTextbox.moduleName = MASKEDTEXTBOX_MODULE_NAME;
 MaskedTextbox.folderName = MASKEDTEXTBOX_FOLDER_NAME;
 
-/**
- * Accessibility specification for MaskedTextbox.
- * @accessibility
- * - Uses semantic `<input>` element (role="textbox" implicit)
- * - Requires accessible name via label, aria-label, or aria-labelledby
- * - Disabled state uses native disabled attribute
- */
-MaskedTextbox.ariaSpec = {
-    selector: '.k-maskedtextbox',
-    rules: [
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'role=textbox or nodeName=input', usage: 'Describes the role of the component.' },
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name (provided by consuming app).' },
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'aria-placeholder (when has mask)', usage: 'Announces the mask or placeholder for the component.' },
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the MaskedTextBox is in an invalid state.' },
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message.' },
-        { selector: '.k-maskedtextbox.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the MaskedTextBox is disabled.' },
-    ]
-};
+MaskedTextbox.ariaSpec = a11ySpec.ariaSpec;
 
 export default MaskedTextbox;

@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { LOADER_FOLDER_NAME, LOADER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const LOADER_CLASSNAME = `k-loader`;
 
 export const LoaderAnimationMap = {
@@ -122,15 +123,6 @@ Loader.defaultOptions = defaultOptions;
 Loader.moduleName = LOADER_MODULE_NAME;
 Loader.folderName = LOADER_FOLDER_NAME;
 
-/**
- * Accessibility specification for Loader.
- */
-Loader.ariaSpec = {
-    selector: '.k-loader',
-    rules: [
-        { selector: '.k-loader', attribute: 'role=status', usage: 'Live region that announces loading state.' },
-        { selector: '.k-loader', attribute: 'aria-label', usage: 'Accessible name for the loader.' },
-    ]
-};
+Loader.ariaSpec = a11ySpec.ariaSpec;
 
 export default Loader;

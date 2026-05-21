@@ -1,0 +1,86 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-treeview-lines",
+            "attribute": "role=tree",
+            "usage": "The root list element of the treeview."
+        },
+        {
+            "selector": ".k-treeview-group:not(.k-treeview-lines)",
+            "attribute": "role=group",
+            "usage": "The ul element that wraps child nodes."
+        },
+        {
+            "selector": ".k-treeview-item",
+            "attribute": "role=treeitem",
+            "usage": "The li element rendered for a tree node."
+        },
+        {
+            "selector": ".k-treeview-item",
+            "attribute": "aria-expanded=true/false (when present)",
+            "usage": "Announces the expanded state of the node."
+        },
+        {
+            "selector": ".k-treeview-item",
+            "attribute": "aria-checked=true/false (when present)",
+            "usage": "Announces the checked state of the node when checkboxes are enabled."
+        },
+        {
+            "selector": ".k-treeview-item",
+            "attribute": "aria-selected=true (when present)",
+            "usage": "Announces the selected state of the node when selection is enabled."
+        },
+        {
+            "selector": ".k-treeview-item .k-checkbox",
+            "attribute": "aria-label",
+            "usage": "The checkbox input must have an accessible name matching the treeview item text."
+        },
+        {
+            "selector": ".k-treeview-item .k-checkbox",
+            "attribute": "tabindex=-1",
+            "usage": "The checkbox input must not be in the tab order. Keyboard interaction is handled by the treeitem."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Enter",
+            "behavior": "Selects the focused tree view item when the selection mode is single or multiple. When the selection mode is multiple and there are other selected items, they get deselected."
+        },
+        {
+            "shortcut": "Space",
+            "behavior": "Checks the checkbox of the TreeView node."
+        },
+        {
+            "shortcut": "Up Arrow",
+            "behavior": "Goes to the previous tree node. The focus is moved to the previous node and its tabindex is set to `0`."
+        },
+        {
+            "shortcut": "Down Arrow",
+            "behavior": "Goes to the next tree node. The focus is moved to the next node and its tabindex is set to `0`."
+        },
+        {
+            "shortcut": "Left Arrow",
+            "behavior": "If the node is expanded, collapses it and the focus remains on the item. If the node is collapsed, the focus is moved to its parent."
+        },
+        {
+            "shortcut": "Right Arrow",
+            "behavior": "If the node is collapsed, expands it and the focus remains on the item. If the node is expanded, the focus is moved to the first child node."
+        },
+        {
+            "shortcut": "Home",
+            "behavior": "Moves the focus to the first node in the tree without opening or closing a node."
+        },
+        {
+            "shortcut": "End",
+            "behavior": "Moves the focus to the last node in the tree that is focusable without opening a node."
+        },
+        {
+            "shortcut": "Ctrl (or Cmd on Mac) + Enter",
+            "behavior": "Selects the focused item. When the item is already selected, it gets deselected."
+        },
+        {
+            "shortcut": "Printable Characters",
+            "behavior": "Typing `M` or any other printable character focuses the next or the first item in the list."
+        }
+    ]
+}

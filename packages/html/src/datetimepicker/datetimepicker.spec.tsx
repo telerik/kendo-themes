@@ -15,6 +15,7 @@ import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProp
 
 import { KendoComponent } from '../_types/component';
 import { DATETIMEPICKER_FOLDER_NAME, DATETIMEPICKER_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const DATETIMEPICKER_CLASSNAME = `k-datetimepicker`;
 
 const states = [
@@ -182,34 +183,6 @@ DateTimePicker.defaultOptions = defaultOptions;
 DateTimePicker.moduleName = DATETIMEPICKER_MODULE_NAME;
 DateTimePicker.folderName = DATETIMEPICKER_FOLDER_NAME;
 
-/**
- * Accessibility specification for DateTimePicker.
- *
- * @accessibility
- * - Input has role=combobox with aria-haspopup=dialog
- * - aria-expanded indicates popup visibility
- * - Icon button has tabindex=-1 and aria-label
- * - Calendar popup follows Calendar ARIA spec
- * - Date/Time view chooser follows ButtonGroup spec
- * - Adaptive mode follows ActionSheet ARIA spec
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern for date/time selection
- */
-DateTimePicker.ariaSpec = {
-    selector: '.k-datetimepicker',
-    rules: [
-        { selector: '.k-datetimepicker .k-input-inner', attribute: 'role=combobox', usage: 'The input element follows the combobox specification.' },
-        { selector: '.k-datetimepicker .k-input-inner', attribute: 'aria-haspopup=dialog', usage: 'Indicates the component has a Dialog Popup.' },
-        { selector: '.k-datetimepicker .k-input-inner', attribute: 'aria-expanded=true/false', usage: 'Announces whether the Popup is visible or not.' },
-        { selector: '.k-datetimepicker .k-input-inner', attribute: 'aria-controls (when open)', usage: 'Points to the popup element containing the calendar or time selector.' },
-        { selector: '.k-datetimepicker .k-input-inner', attribute: 'aria-activedescendant (when open)', usage: 'Points to the focused item in the Calendar or Time Popup.' },
-        { selector: '.k-datetimepicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'The input needs an accessible name.' },
-        { selector: '.k-invalid .k-input-inner', attribute: 'aria-invalid=true', usage: 'Rendered only when the picker is in form and announces invalid state.' },
-        { selector: '.k-disabled .k-input-inner', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-datetimepicker .k-input-button', attribute: 'tabindex=-1', usage: 'Button element must not be focusable.' },
-        { selector: '.k-datetimepicker .k-input-button', attribute: 'aria-label', usage: 'The button needs an accessible name.' },
-        { selector: '.k-datetimepicker.k-disabled .k-button', attribute: 'disabled or aria-disabled', usage: 'Rendered only when the picker is disabled.' },
-    ]
-};
+DateTimePicker.ariaSpec = a11ySpec.ariaSpec;
 
 export default DateTimePicker;

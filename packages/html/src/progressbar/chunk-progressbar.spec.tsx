@@ -3,6 +3,7 @@ import { PROGRESSBAR_CLASSNAME } from './progressbar.spec';
 
 import { KendoComponent } from '../_types/component';
 import { PROGRESSBAR_FOLDER_NAME, PROGRESSBAR_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const CHUNKPROGRESSBAR_CLASSNAME = `k-chunk-progressbar`;
 
 const isSelected = (progress: number, index: number) => (index <= progress - 1 ? true : false);
@@ -92,16 +93,6 @@ ChunkProgressBar.defaultOptions = defaultOptions;
 ChunkProgressBar.moduleName = PROGRESSBAR_MODULE_NAME;
 ChunkProgressBar.folderName = PROGRESSBAR_FOLDER_NAME;
 
-ChunkProgressBar.ariaSpec = {
-    selector: '.k-chunk-progressbar',
-    implicitRole: 'progressbar',
-    rules: [
-        { selector: '.k-chunk-progressbar', attribute: 'role=progressbar', usage: 'Sets the proper role for ChunkProgressBar.' },
-        { selector: '.k-chunk-progressbar', attribute: 'aria-label or aria-labelledby', usage: 'The ChunkProgressBar needs an accessible name to be assigned to it.' },
-        { selector: '.k-chunk-progressbar:not(.k-progressbar-indeterminate)', attribute: 'aria-valuenow', usage: 'Required if the value is not indeterminate. Value between aria-valuemin and aria-valuemax.' },
-        { selector: '.k-chunk-progressbar', attribute: 'aria-valuemin', usage: 'Minimum value. Defaults to 0.' },
-        { selector: '.k-chunk-progressbar', attribute: 'aria-valuemax', usage: 'Maximum value. Defaults to chunk count.' },
-    ]
-};
+ChunkProgressBar.ariaSpec = a11ySpec.ariaSpec;
 
 export default ChunkProgressBar;

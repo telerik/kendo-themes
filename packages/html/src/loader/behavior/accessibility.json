@@ -1,0 +1,19 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-loader-container",
+            "attribute": "role=status",
+            "usage": "Live region for loading state."
+        },
+        {
+            "selector": ".k-loader-container",
+            "attribute": "aria-live=polite",
+            "usage": "Polite announcements of loading state changes."
+        },
+        {
+            "selector": ".k-loader-container",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the loader container."
+        }
+    ]
+}

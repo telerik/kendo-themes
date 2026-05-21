@@ -1,0 +1,60 @@
+{
+    "ariaSpec": [
+        {
+            "selector": ".k-dock-manager",
+            "attribute": "role=application",
+            "usage": "Indicates that the DockManager has its own keyboard navigation implemented."
+        },
+        {
+            "selector": ".k-dock-manager",
+            "attribute": "aria-live=polite",
+            "usage": "Defines dynamic content changes within the DockManager container."
+        }
+    ],
+    "kbSpec": [
+        {
+            "shortcut": "Alt/Option(Mac) + Arrow Up",
+            "behavior": "Maximizes the active pane."
+        },
+        {
+            "shortcut": "Alt/Option(Mac) + Arrow Down",
+            "behavior": "Minimizes the active pane."
+        },
+        {
+            "shortcut": "Esc",
+            "behavior": "Closes the active pane."
+        },
+        {
+            "shortcut": "Alt/Option(Mac) + Arrow Left",
+            "behavior": "Unpins the active pane."
+        },
+        {
+            "shortcut": "Alt/Option(Mac) + Arrow Right",
+            "behavior": "Pins the active pane."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Arrow Right",
+            "behavior": "Focuses the next content pane."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Arrow Left",
+            "behavior": "Focuses the previous content pane."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Shift + Arrow Up",
+            "behavior": "Docks the active pane to the global top."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Shift + Arrow Down",
+            "behavior": "Docks the active pane to the global bottom."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Shift + Arrow Left",
+            "behavior": "Docks the active pane to the global left."
+        },
+        {
+            "shortcut": "Ctrl/Cmd(Mac) + Shift + Arrow Right",
+            "behavior": "Docks the active pane to the global right."
+        }
+    ]
+}
