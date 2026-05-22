@@ -28,123 +28,62 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-base-bg</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(surface), $kendo-color-light)</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td>$kendo-headings</td>
+    <td>Map</td>
+    <td><code>(
+    h1: (
+        font-size: $kendo-h1-font-size,
+        font-family: $kendo-h1-font-family,
+        line-height: $kendo-h1-line-height,
+        font-weight: $kendo-h1-font-weight,
+        letter-spacing: $kendo-h1-letter-spacing,
+        margin: $kendo-h1-margin
+    ),
+    h2: (
+        font-size: $kendo-h2-font-size,
+        font-family: $kendo-h2-font-family,
+        line-height: $kendo-h2-line-height,
+        font-weight: $kendo-h2-font-weight,
+        letter-spacing: $kendo-h2-letter-spacing,
+        margin: $kendo-h2-margin
+    ),
+    h3: (
+        font-size: $kendo-h3-font-size,
+        font-family: $kendo-h3-font-family,
+        line-height: $kendo-h3-line-height,
+        font-weight: $kendo-h3-font-weight,
+        letter-spacing: $kendo-h3-letter-spacing,
+        margin: $kendo-h3-margin
+    ),
+    h4: (
+        font-size: $kendo-h4-font-size,
+        font-family: $kendo-h4-font-family,
+        line-height: $kendo-h4-line-height,
+        font-weight: $kendo-h4-font-weight,
+        letter-spacing: $kendo-h4-letter-spacing,
+        margin: $kendo-h4-margin
+    ),
+    h5: (
+        font-size: $kendo-h5-font-size,
+        font-family: $kendo-h5-font-family,
+        line-height: $kendo-h5-line-height,
+        font-weight: $kendo-h5-font-weight,
+        letter-spacing: $kendo-h5-letter-spacing,
+        margin: $kendo-h5-margin
+    ),
+    h6: (
+        font-size: $kendo-h6-font-size,
+        font-family: $kendo-h6-font-family,
+        line-height: $kendo-h6-line-height,
+        font-weight: $kendo-h6-font-weight,
+        letter-spacing: $kendo-h6-letter-spacing,
+        margin: $kendo-h6-margin
+    )
+)</code></td>
+    <td><ul><li>h1: "font-size":"2.5rem","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2))"</li><li>h2: "font-size":"2rem","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2))"</li><li>h3: "font-size":"1.75rem","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2))"</li><li>h4: "font-size":"1.5rem","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2))"</li><li>h5: "font-size":"1.25rem","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2))"</li><li>h6: "font-size":"1rem","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2))"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-base-text</td>
-    <td>String</td>
-    <td><code>$kendo-body-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-base-border</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, $kendo-app-border, k-try-shade( $kendo-base-bg, 1 ))</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the components' chrome area.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-base-gradient</td>
-    <td>Null</td>
-    <td><code>if($kendo-enable-color-system, null, none)</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-hover-bg</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover), #e9ecef)</code></td>
-    <td><code>var(--kendo-color-base-subtle-hover, #dee2e6)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-hover-text</td>
-    <td>String</td>
-    <td><code>$kendo-base-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-hover-border</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, $kendo-base-border, k-try-shade( $kendo-hover-bg, 1 ))</code></td>
-    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-hover-gradient</td>
-    <td>Null</td>
-    <td><code>if($kendo-enable-color-system, null, none)</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hovered items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-selected-bg</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-selected-text</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(on-primary), $kendo-color-primary-contrast)</code></td>
-    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-selected-border</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), k-try-shade( $kendo-selected-bg, 1 ))</code></td>
-    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-selected-gradient</td>
-    <td>Null</td>
-    <td><code>if($kendo-enable-color-system, null, none)</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"></div></div>
     </td>
 </tr>
 </tbody>

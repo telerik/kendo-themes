@@ -38,16 +38,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-daterange-picker-input-width</td>
-    <td>Number</td>
-    <td><code>10em</code></td>
-    <td><code>10em</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateRangePicker input.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-daterange-picker-disabled-text</td>
     <td>String</td>
     <td><code>var( --kendo-daterange-picker-disabled-text, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) )</code></td>
@@ -75,6 +65,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled DateRangePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-daterange-picker-input-width</td>
+    <td>Number</td>
+    <td><code>null</code></td>
+    <td><code>10em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateRangePicker input.</div></div>
     </td>
 </tr>
 </tbody>

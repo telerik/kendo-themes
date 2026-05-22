@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-pdf-viewer-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-toolbar-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-canvas-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-app-surface)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-page-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(7.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-7\.5)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-page-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-page-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-page-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-page-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-2)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-md-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-toolbar-md-padding-x} * 2 )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-spacing-2) * 2)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-spacing</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-md-spacing</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-border-radius</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-shadow</td>
     <td>String</td>
-    <td><code>$kendo-window-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-matches-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-selection-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-sm)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-highlight-bg</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-highlight-mark-bg</td>
     <td>Color</td>
-    <td><code>yellow</code></td>
+    <td><code>null</code></td>
     <td><span class="color-preview" style="background-color: yellow"></span><code>yellow</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-icon-text</td>
     <td>String</td>
-    <td><code>$kendo-dropzone-icon-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-popup-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-popup-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-pdf-viewer-popup-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-highlight-annotation-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-highlight-annotation-hover-border</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-placeholder-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
@@ -430,7 +430,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer free text annotation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-free-text-annotation-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>

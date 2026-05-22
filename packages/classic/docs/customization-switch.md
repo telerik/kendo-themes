@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-switch-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-default-track-roundness</td>
     <td>String</td>
-    <td><code>"full"</code></td>
+    <td><code>null</code></td>
     <td><code>"full"</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-default-thumb-roundness</td>
     <td>String</td>
-    <td><code>"full"</code></td>
+    <td><code>null</code></td>
     <td><code>"full"</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-track-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-thumb-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-label-text-transform</td>
     <td>String</td>
-    <td><code>unset</code></td>
+    <td><code>null</code></td>
     <td><code>unset</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-label-display</td>
     <td>String</td>
-    <td><code>inline</code></td>
+    <td><code>null</code></td>
     <td><code>inline</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-sm-font-size</td>
     <td>Number</td>
-    <td><code>12px</code></td>
+    <td><code>null</code></td>
     <td><code>12px</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-sm-track-width</td>
     <td>Number</td>
-    <td><code>48px</code></td>
+    <td><code>null</code></td>
     <td><code>48px</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-sm-track-height</td>
     <td>Number</td>
-    <td><code>26px</code></td>
+    <td><code>null</code></td>
     <td><code>26px</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-sm-thumb-width</td>
     <td>Number</td>
-    <td><code>20px</code></td>
+    <td><code>null</code></td>
     <td><code>20px</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-sm-thumb-height</td>
     <td>Number</td>
-    <td><code>20px</code></td>
+    <td><code>null</code></td>
     <td><code>20px</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-sm-thumb-offset</td>
     <td>Number</td>
-    <td><code>3px</code></td>
+    <td><code>null</code></td>
     <td><code>3px</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-sm-label-offset</td>
     <td>Number</td>
-    <td><code>4px</code></td>
+    <td><code>null</code></td>
     <td><code>4px</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-md-font-size</td>
     <td>Number</td>
-    <td><code>12px</code></td>
+    <td><code>null</code></td>
     <td><code>12px</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-md-track-width</td>
     <td>Number</td>
-    <td><code>56px</code></td>
+    <td><code>null</code></td>
     <td><code>56px</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-md-track-height</td>
     <td>Number</td>
-    <td><code>30px</code></td>
+    <td><code>null</code></td>
     <td><code>30px</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-md-thumb-width</td>
     <td>Number</td>
-    <td><code>24px</code></td>
+    <td><code>null</code></td>
     <td><code>24px</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-md-thumb-height</td>
     <td>Number</td>
-    <td><code>24px</code></td>
+    <td><code>null</code></td>
     <td><code>24px</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-md-thumb-offset</td>
     <td>Number</td>
-    <td><code>3px</code></td>
+    <td><code>null</code></td>
     <td><code>3px</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-md-label-offset</td>
     <td>Number</td>
-    <td><code>6px</code></td>
+    <td><code>null</code></td>
     <td><code>6px</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-lg-font-size</td>
     <td>Number</td>
-    <td><code>12px</code></td>
+    <td><code>null</code></td>
     <td><code>12px</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-lg-track-width</td>
     <td>Number</td>
-    <td><code>64px</code></td>
+    <td><code>null</code></td>
     <td><code>64px</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-lg-track-height</td>
     <td>Number</td>
-    <td><code>34px</code></td>
+    <td><code>null</code></td>
     <td><code>34px</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-lg-thumb-width</td>
     <td>Number</td>
-    <td><code>28px</code></td>
+    <td><code>null</code></td>
     <td><code>28px</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-lg-thumb-height</td>
     <td>Number</td>
-    <td><code>28px</code></td>
+    <td><code>null</code></td>
     <td><code>28px</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-lg-thumb-offset</td>
     <td>Number</td>
-    <td><code>3px</code></td>
+    <td><code>null</code></td>
     <td><code>3px</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-lg-label-offset</td>
     <td>Number</td>
-    <td><code>8px</code></td>
+    <td><code>null</code></td>
     <td><code>8px</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-focus-ring</td>
     <td>List</td>
-    <td><code>0 0 3px 1px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-on-app-surface) 25%, transparent))</code></td>
 </tr>
 <tr>
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td>String</td>
-    <td><code>k-color(base)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-text</td>
     <td>String</td>
-    <td><code>unset</code></td>
+    <td><code>null</code></td>
     <td><code>unset</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-border</td>
     <td>String</td>
-    <td><code>$kendo-switch-off-track-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base-hover)</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-switch-off-thumb-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -620,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
@@ -630,7 +630,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -654,7 +654,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track wen the hovered Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -664,7 +664,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track wen the hovered Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -674,7 +674,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track wen the hovered Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -684,7 +684,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track wen the hovered Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -694,7 +694,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -704,7 +704,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -714,7 +714,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -724,17 +724,17 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-switch-on-track-focus-ring</td>
     <td>List</td>
-    <td><code>0 0 3px 1px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-on-app-surface) 25%, transparent))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -780,7 +780,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -790,7 +790,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-text</td>
     <td>String</td>
-    <td><code>unset</code></td>
+    <td><code>null</code></td>
     <td><code>unset</code></td>
 </tr>
 <tr>
@@ -800,7 +800,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -820,7 +820,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
@@ -840,7 +840,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-hover-border</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>

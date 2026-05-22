@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-upload-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-border-width, 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-border-width, 1px)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-max-height</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-max-height, 300px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-max-height, 300px)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-text</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-text, k-color(on-app-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-bg, k-color(app-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-bg, var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-border</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-upload-dropzone-padding-x, #{k-spacing(3)} ) + 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-upload-dropzone-padding-x, var(--kendo-spacing-3)) + 1px)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-upload-dropzone-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-upload-dropzone-padding-y, var(--kendo-spacing-0\.5)) + 1px)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-text</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-text, k-color(subtle) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-dropzone-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-bg, k-color(app-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-dropzone-bg, var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-border</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-dropzone-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-dropzone-hover-bg, $kendo-upload-dropzone-bg )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-dropzone-hover-bg, var(--kendo-upload-dropzone-bg, var(--kendo-color-app-surface)))</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-status-text</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-status-text, k-color(subtle) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-status-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-status-text-opacity</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-status-text-opacity, null )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-status-text-opacity, )</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-item-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-upload-item-padding-x, #{k-spacing(3)} ) + 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-upload-item-padding-x, var(--kendo-spacing-3)) + 1px)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-item-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-upload-item-padding-y, #{k-spacing(0.5)} ) + 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-upload-item-padding-y, var(--kendo-spacing-0\.5)) + 1px)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-multiple-items-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-multiple-items-spacing, k-spacing(1.5) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-multiple-items-spacing, var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-validation-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-validation-font-size, var(--kendo-font-size-xs) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-validation-font-size, var(--kendo-font-size-xs))</code></td>
 </tr>
 <tr>
@@ -238,9 +238,19 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-upload-validation-line-height</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Upload validation message.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-upload-icon-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-icon-spacing, var( --kendo-icon-spacing, .5rem ) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-icon-spacing, var(--kendo-icon-spacing, 0.5rem))</code></td>
 </tr>
 <tr>
@@ -250,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-icon-color</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-icon-color, k-color(subtle) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-icon-color, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
@@ -260,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-progress-thickness</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-progress-thickness, 2px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-progress-thickness, 2px)</code></td>
 </tr>
 <tr>
@@ -270,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-progress-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-progress-bg, k-color(primary) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-progress-bg, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
@@ -280,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-text</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-success-text, k-color(success-on-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-success-text, var(--kendo-color-success-on-surface))</code></td>
 </tr>
 <tr>
@@ -290,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-success-bg, k-color(success-on-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-success-bg, var(--kendo-color-success-on-surface))</code></td>
 </tr>
 <tr>
@@ -300,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-text</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-error-text, k-color(error-on-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-error-text, var(--kendo-color-error-on-surface))</code></td>
 </tr>
 <tr>
@@ -310,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-error-bg, k-color(error-on-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-error-bg, var(--kendo-color-error-on-surface))</code></td>
 </tr>
 <tr>
@@ -320,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-focus-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-focus-shadow, inset 0 0 0 2px rgba(0, 0, 0, .13) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-upload-focus-shadow, inset 0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
 </tr>
 <tr>
@@ -330,11 +340,21 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-files-list-margin</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * #{k-spacing(1)} )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(-1 * var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload files list.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-upload-file-info-margin</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload.</div></div>
     </td>
 </tr>
 </tbody>

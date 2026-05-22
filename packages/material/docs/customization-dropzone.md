@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-dropzone-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-min-height</td>
     <td>Number</td>
-    <td><code>220px</code></td>
+    <td><code>null</code></td>
     <td><code>220px</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-icon-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-icon-hover-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-hint-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-note-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-note-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>

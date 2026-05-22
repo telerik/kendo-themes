@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-margin</td>
     <td>List</td>
-    <td><code>0 0 k-spacing(4) 0</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 var(--kendo-spacing-4) 0)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-border-width</td>
     <td>List</td>
-    <td><code>0 0 0 4px</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 4px)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-bg-level</td>
     <td>Number</td>
-    <td><code>-10</code></td>
+    <td><code>null</code></td>
     <td><code>-10</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-text-level</td>
     <td>Number</td>
-    <td><code>6</code></td>
+    <td><code>null</code></td>
     <td><code>6</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-border-level</td>
     <td>Number</td>
-    <td><code>-9</code></td>
+    <td><code>null</code></td>
     <td><code>-9</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-link-font-style</td>
     <td>String</td>
-    <td><code>italic</code></td>
+    <td><code>null</code></td>
     <td><code>italic</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-message-box-link-text-decoration</td>
     <td>String</td>
-    <td><code>underline</code></td>
+    <td><code>null</code></td>
     <td><code>underline</code></td>
 </tr>
 <tr>

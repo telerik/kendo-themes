@@ -30,101 +30,101 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-listgroup-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-border-width, 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-border-width, 1px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the listgroup.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ListGroup.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-border-radius, #{k-border-radius(md)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the listgroup.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ListGroup.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the listgroup.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ListGroup.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the listgroup.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ListGroup.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-bg, #{k-color(surface-alt)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the listgroup component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ListGroup.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-text</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the listgroup component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ListGroup.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-border</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the listgroup component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ListGroup.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-item-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-item-padding-x, #{k-spacing(2)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-item-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the listgroup items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ListGroup item.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-item-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-item-padding-y, #{k-spacing(2)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-item-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the listgroup items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ListGroup item.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-listgroup-item-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-listgroup-item-border-width, 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-listgroup-item-border-width, 1px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the listgroup item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ListGroup item.</div></div>
     </td>
 </tr>
 </tbody>

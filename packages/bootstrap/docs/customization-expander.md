@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-expander-spacing-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-focus-shadow</td>
     <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface) 15%, transparent))</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-text</td>
     <td>String</td>
-    <td><code>$kendo-expander-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-bg</td>
     <td>Color</td>
-    <td><code>transparent</code></td>
+    <td><code>null</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-list-item-hover-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base-subtle-hover)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-focus-shadow</td>
     <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface) 15%, transparent))</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-title-font-weight</td>
     <td>Number</td>
-    <td><code>500</code></td>
+    <td><code>null</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-title-text-transform</td>
     <td>String</td>
-    <td><code>uppercase</code></td>
+    <td><code>null</code></td>
     <td><code>uppercase</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-title-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-sub-title-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-indicator-margin-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-content-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-content-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>

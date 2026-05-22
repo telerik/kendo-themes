@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-file-box-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-min-width</td>
     <td>Number</td>
-    <td><code>96px</code></td>
+    <td><code>null</code></td>
     <td><code>96px</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-max-width</td>
     <td>Number</td>
-    <td><code>160px</code></td>
+    <td><code>null</code></td>
     <td><code>160px</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-border-style</td>
     <td>String</td>
-    <td><code>solid</code></td>
+    <td><code>null</code></td>
     <td><code>solid</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-name-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-name-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-size-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-xs)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-xs)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-size-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-xs)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-xs)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(base-on-subtle) 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base-on-subtle)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-border</td>
     <td>String</td>
-    <td><code>$kendo-file-box-bg</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-base-on-subtle) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-box-wrapper-scroll-gradient</td>
     <td>List</td>
-    <td><code>rgba(255, 255, 255, 0.00) 0%, k-color(app-surface) 100%</code></td>
+    <td><code>null</code></td>
     <td><code>(rgba(255, 255, 255, 0) 0%, var(--kendo-color-app-surface) 100%)</code></td>
 </tr>
 <tr>

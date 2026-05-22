@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-icon-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size</td>
     <td>Number</td>
-    <td><code>16px</code></td>
+    <td><code>null</code></td>
     <td><code>16px</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-xs</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * .75 )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(16px * 0.75)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-sm</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * .875 )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(16px * 0.875)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-md</td>
     <td>Number</td>
-    <td><code>$kendo-icon-size</code></td>
+    <td><code>null</code></td>
     <td><code>16px</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-lg</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * 1.25 )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(16px * 1.25)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-xl</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * 1.5 )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(16px * 1.5)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-xxl</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * 2 )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(16px * 2)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-xxxl</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * 3 )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(16px * 3)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-padding</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-accent-icon-color</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #8B7CF6"></span><code>#8B7CF6</code></td>
+    <td><code>null</code></td>
     <td><span class="color-preview" style="background-color: #8B7CF6"></span><code>#8B7CF6</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-action-icon-color</td>
     <td>String</td>
-    <td><code>k-color( primary-on-surface )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>

@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-chat-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-width</td>
     <td>Number</td>
-    <td><code>280px</code></td>
+    <td><code>null</code></td>
     <td><code>280px</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-height</td>
     <td>Number</td>
-    <td><code>320px</code></td>
+    <td><code>null</code></td>
     <td><code>320px</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-item-spacing-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-max-width</td>
     <td>Calculation</td>
-    <td><code>min(75%, 460px)</code></td>
+    <td><code>null</code></td>
     <td><code>min(75%, 460px)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-sequential-messages-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(xs)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-xs)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-list-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-chat-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-list-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-chat-padding-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-list-spacing</td>
     <td>String</td>
-    <td><code>$kendo-chat-item-spacing-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-box-wrapper-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-status-min-size</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-status-max-size</td>
     <td>String</td>
-    <td><code>k-spacing(8)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-8)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-status-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-timestamp-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-xs)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-xs)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-timestamp-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-timestamp-transform</td>
     <td>String</td>
-    <td><code>none</code></td>
+    <td><code>null</code></td>
     <td><code>none</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-timestamp-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-timestamp-separator-bg</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-timestamp-separator-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-meta-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-meta-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-xs)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-xs)</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-author-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-author-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-xs)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-xs)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-status-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-bubble-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-toolbar-bg</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-toolbar-text</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-toolbar-border</td>
     <td>String</td>
-    <td><code>inherit</code></td>
+    <td><code>null</code></td>
     <td><code>inherit</code></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-app-surface)</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-primary)</code></td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-alt-bubble-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -450,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-shadow</td>
     <td>String</td>
-    <td><code>none</code></td>
+    <td><code>null</code></td>
     <td><code>none</code></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-failed-bubble-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base-on-subtle)</code></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-failed-bubble-bg</td>
     <td>String</td>
-    <td><code>k-color(error-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-error-subtle)</code></td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-failed-bubble-border</td>
     <td>String</td>
-    <td><code>k-color(error-emphasis)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-error-emphasis)</code></td>
 </tr>
 <tr>
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-failed-content-color</td>
     <td>String</td>
-    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-error-on-surface)</code></td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-failed-bubble-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(error-subtle-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-error-subtle-hover)</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-failed-bubble-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(error-subtle-active)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-error-subtle-active)</code></td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-typing-indicator-text</td>
     <td>String</td>
-    <td><code>k-color(base-on-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base-on-subtle)</code></td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-sender-file-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-primary) 14%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-primary) 14%, transparent)</code></td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-sender-file-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-primary)</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-sender-file-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-sender-file-bg</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-primary) 14%, transparent)</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-pinned-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -570,7 +570,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-pinned-border-style</td>
     <td>String</td>
-    <td><code>solid</code></td>
+    <td><code>null</code></td>
     <td><code>solid</code></td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-pinned-border-color</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -590,7 +590,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-reference-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-reference-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-reference-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(surface) 90%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-surface) 90%, transparent)</code></td>
 </tr>
 <tr>
@@ -620,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-reference-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -630,7 +630,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-reference-marker-bg</td>
     <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>
@@ -640,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-message-reference-marker-alt-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-emphasis)</code></td>
 </tr>
 <tr>

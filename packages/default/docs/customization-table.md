@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-table-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-vertical-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-horizontal-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-sm-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-sm-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-md-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-md-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-lg-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-lg-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-sm-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-md-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-md-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-lg-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-lg-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -208,9 +208,38 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-table-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-table-sm-font-size,
+        line-height: $kendo-table-sm-line-height,
+        cell-padding-x: $kendo-table-sm-cell-padding-x,
+        cell-padding-y: $kendo-table-sm-cell-padding-y
+    ),
+    md: (
+        font-size: $kendo-table-md-font-size,
+        line-height: $kendo-table-md-line-height,
+        cell-padding-x: $kendo-table-md-cell-padding-x,
+        cell-padding-y: $kendo-table-md-cell-padding-y
+    ),
+    lg: (
+        font-size: $kendo-table-lg-font-size,
+        line-height: $kendo-table-lg-line-height,
+        cell-padding-x: $kendo-table-lg-cell-padding-x,
+        cell-padding-y: $kendo-table-lg-cell-padding-y
+    )
+)</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-3)","cell-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Table.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-table-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -220,7 +249,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -230,7 +259,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -240,7 +269,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -250,7 +279,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -260,7 +289,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -280,7 +309,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-footer-bg</td>
     <td>String</td>
-    <td><code>$kendo-table-header-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -290,7 +319,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-footer-text</td>
     <td>String</td>
-    <td><code>$kendo-table-header-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -300,7 +329,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-footer-border</td>
     <td>String</td>
-    <td><code>$kendo-table-header-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -310,7 +339,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-group-row-bg</td>
     <td>String</td>
-    <td><code>$kendo-table-header-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -320,7 +349,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-group-row-text</td>
     <td>String</td>
-    <td><code>$kendo-table-header-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -330,7 +359,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-group-row-border</td>
     <td>String</td>
-    <td><code>$kendo-table-header-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -340,7 +369,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-alt-row-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 5%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 5%, transparent)</code></td>
 </tr>
 <tr>
@@ -370,7 +399,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 11%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 11%, transparent)</code></td>
 </tr>
 <tr>
@@ -430,7 +459,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-focus-shadow</td>
     <td>List</td>
-    <td><code>$kendo-list-item-focus-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
 </tr>
 <tr>
@@ -440,7 +469,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -470,7 +499,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-highlighted-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(warning) 25%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-warning) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -480,7 +509,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-highlighted-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-bold)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-bold)</code></td>
 </tr>
 <tr>
@@ -490,7 +519,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-highlighted-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 42%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, color-mix(in srgb, var(--kendo-color-primary), var(--kendo-color-warning)) 42%, transparent)</code></td>
 </tr>
 <tr>
@@ -500,40 +529,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-row-span-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-table-border</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-border))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the row spanned cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        font-size: $kendo-table-sm-font-size,
-        line-height: $kendo-table-sm-line-height,
-        cell-padding-x: $kendo-table-sm-cell-padding-x,
-        cell-padding-y: $kendo-table-sm-cell-padding-y
-    ),
-    md: (
-        font-size: $kendo-table-md-font-size,
-        line-height: $kendo-table-md-line-height,
-        cell-padding-x: $kendo-table-md-cell-padding-x,
-        cell-padding-y: $kendo-table-md-cell-padding-y
-    ),
-    lg: (
-        font-size: $kendo-table-lg-font-size,
-        line-height: $kendo-table-lg-line-height,
-        cell-padding-x: $kendo-table-lg-cell-padding-x,
-        cell-padding-y: $kendo-table-lg-cell-padding-y
-    )
-)</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-1)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-3)","cell-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Table.</div></div>
     </td>
 </tr>
 </tbody>

@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-series-a</td>
     <td>String</td>
-    <td><code>k-color(series-a)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-a-dark</td>
     <td>String</td>
-    <td><code>k-color(series-a-bold)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a-bold)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-a-darker</td>
     <td>String</td>
-    <td><code>k-color(series-a-bolder)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a-bolder)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-a-light</td>
     <td>String</td>
-    <td><code>k-color(series-a-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a-subtle)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-a-lighter</td>
     <td>String</td>
-    <td><code>k-color(series-a-subtler)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a-subtler)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b</td>
     <td>String</td>
-    <td><code>k-color(series-b)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b-dark</td>
     <td>String</td>
-    <td><code>k-color(series-b-bold)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b-bold)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b-darker</td>
     <td>String</td>
-    <td><code>k-color(series-b-bolder)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b-bolder)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b-light</td>
     <td>String</td>
-    <td><code>k-color(series-b-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b-subtle)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b-lighter</td>
     <td>String</td>
-    <td><code>k-color(series-b-subtler)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b-subtler)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c</td>
     <td>String</td>
-    <td><code>k-color(series-c)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c-dark</td>
     <td>String</td>
-    <td><code>k-color(series-c-bold)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c-bold)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c-darker</td>
     <td>String</td>
-    <td><code>k-color(series-c-bolder)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c-bolder)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c-light</td>
     <td>String</td>
-    <td><code>k-color(series-c-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c-subtle)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c-lighter</td>
     <td>String</td>
-    <td><code>k-color(series-c-subtler)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c-subtler)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d</td>
     <td>String</td>
-    <td><code>k-color(series-d)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d-dark</td>
     <td>String</td>
-    <td><code>k-color(series-d-bold)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d-bold)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d-darker</td>
     <td>String</td>
-    <td><code>k-color(series-d-bolder)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d-bolder)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d-light</td>
     <td>String</td>
-    <td><code>k-color(series-d-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d-subtle)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d-lighter</td>
     <td>String</td>
-    <td><code>k-color(series-d-subtler)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d-subtler)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e</td>
     <td>String</td>
-    <td><code>k-color(series-e)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e-dark</td>
     <td>String</td>
-    <td><code>k-color(series-e-bold)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e-bold)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e-darker</td>
     <td>String</td>
-    <td><code>k-color(series-e-bolder)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e-bolder)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e-light</td>
     <td>String</td>
-    <td><code>k-color(series-e-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e-subtle)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e-lighter</td>
     <td>String</td>
-    <td><code>k-color(series-e-subtler)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e-subtler)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f</td>
     <td>String</td>
-    <td><code>k-color(series-f)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f-dark</td>
     <td>String</td>
-    <td><code>k-color(series-f-bold)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f-bold)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f-darker</td>
     <td>String</td>
-    <td><code>k-color(series-f-bolder)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f-bolder)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f-light</td>
     <td>String</td>
-    <td><code>k-color(series-f-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f-subtle)</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f-lighter</td>
     <td>String</td>
-    <td><code>k-color(series-f-subtler)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f-subtler)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-1</td>
     <td>String</td>
-    <td><code>$kendo-series-a</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-2</td>
     <td>String</td>
-    <td><code>$kendo-series-b</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b)</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-3</td>
     <td>String</td>
-    <td><code>$kendo-series-c</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-4</td>
     <td>String</td>
-    <td><code>$kendo-series-d</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-5</td>
     <td>String</td>
-    <td><code>$kendo-series-e</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e)</code></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-6</td>
     <td>String</td>
-    <td><code>$kendo-series-f</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f)</code></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-7</td>
     <td>String</td>
-    <td><code>$kendo-series-a-light</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a-subtle)</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-8</td>
     <td>String</td>
-    <td><code>$kendo-series-b-light</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b-subtle)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-9</td>
     <td>String</td>
-    <td><code>$kendo-series-c-light</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c-subtle)</code></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-10</td>
     <td>String</td>
-    <td><code>$kendo-series-d-light</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d-subtle)</code></td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-11</td>
     <td>String</td>
-    <td><code>$kendo-series-e-light</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e-subtle)</code></td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-12</td>
     <td>String</td>
-    <td><code>$kendo-series-f-light</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f-subtle)</code></td>
 </tr>
 <tr>
@@ -450,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-13</td>
     <td>String</td>
-    <td><code>$kendo-series-a-dark</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a-bold)</code></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-14</td>
     <td>String</td>
-    <td><code>$kendo-series-b-dark</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b-bold)</code></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-15</td>
     <td>String</td>
-    <td><code>$kendo-series-c-dark</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c-bold)</code></td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-16</td>
     <td>String</td>
-    <td><code>$kendo-series-d-dark</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d-bold)</code></td>
 </tr>
 <tr>
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-17</td>
     <td>String</td>
-    <td><code>$kendo-series-e-dark</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e-bold)</code></td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-18</td>
     <td>String</td>
-    <td><code>$kendo-series-f-dark</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f-bold)</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-19</td>
     <td>String</td>
-    <td><code>$kendo-series-a-lighter</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a-subtler)</code></td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-20</td>
     <td>String</td>
-    <td><code>$kendo-series-b-lighter</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b-subtler)</code></td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-21</td>
     <td>String</td>
-    <td><code>$kendo-series-c-lighter</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c-subtler)</code></td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-22</td>
     <td>String</td>
-    <td><code>$kendo-series-d-lighter</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d-subtler)</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-23</td>
     <td>String</td>
-    <td><code>$kendo-series-e-lighter</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e-subtler)</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-24</td>
     <td>String</td>
-    <td><code>$kendo-series-f-lighter</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f-subtler)</code></td>
 </tr>
 <tr>
@@ -570,7 +570,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-25</td>
     <td>String</td>
-    <td><code>$kendo-series-a-darker</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-a-bolder)</code></td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-26</td>
     <td>String</td>
-    <td><code>$kendo-series-b-darker</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-b-bolder)</code></td>
 </tr>
 <tr>
@@ -590,7 +590,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-27</td>
     <td>String</td>
-    <td><code>$kendo-series-c-darker</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-c-bolder)</code></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-28</td>
     <td>String</td>
-    <td><code>$kendo-series-d-darker</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-d-bolder)</code></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-29</td>
     <td>String</td>
-    <td><code>$kendo-series-e-darker</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-e-bolder)</code></td>
 </tr>
 <tr>
@@ -620,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-30</td>
     <td>String</td>
-    <td><code>$kendo-series-f-darker</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-series-f-bolder)</code></td>
 </tr>
 <tr>
@@ -630,7 +630,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -640,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
@@ -650,7 +650,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -680,7 +680,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
@@ -690,7 +690,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-label-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
@@ -700,7 +700,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-title-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
@@ -710,7 +710,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-pane-title-font-size</td>
     <td>String</td>
-    <td><code>$kendo-chart-label-font-size</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
@@ -720,7 +720,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-pane-title-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal, normal)</code></td>
 </tr>
 <tr>
@@ -730,7 +730,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -740,7 +740,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 4%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 4%, transparent)</code></td>
 </tr>
 <tr>
@@ -750,7 +750,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-inactive</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -760,7 +760,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-area-opacity</td>
     <td>Number</td>
-    <td><code>.6</code></td>
+    <td><code>null</code></td>
     <td><code>0.6</code></td>
 </tr>
 <tr>
@@ -770,7 +770,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-area-inactive-opacity</td>
     <td>Number</td>
-    <td><code>.1</code></td>
+    <td><code>null</code></td>
     <td><code>0.1</code></td>
 </tr>
 <tr>
@@ -780,7 +780,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-line-inactive-opacity</td>
     <td>Number</td>
-    <td><code>.3</code></td>
+    <td><code>null</code></td>
     <td><code>0.3</code></td>
 </tr>
 <tr>
@@ -790,7 +790,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -800,7 +800,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -810,7 +810,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-transition</td>
     <td>List</td>
-    <td><code>left k-transition(fade-in), top k-transition(fade-in)</code></td>
+    <td><code>null</code></td>
     <td><code>(left var(--kendo-transition-fade-in), top var(--kendo-transition-fade-in))</code></td>
 </tr>
 <tr>
@@ -820,7 +820,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-color</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-app-surface)</code></td>
 </tr>
 <tr>
@@ -830,7 +830,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-tooltip-color-inverse</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -840,7 +840,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -850,7 +850,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -860,7 +860,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -870,7 +870,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-crosshair-background</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -880,7 +880,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-color</td>
     <td>String</td>
-    <td><code>$kendo-chart-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -890,7 +890,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-background</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -900,7 +900,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -910,7 +910,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-notes-background</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -920,7 +920,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-notes-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -930,7 +930,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-notes-lines</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -940,7 +940,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-error-bars-background</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -950,7 +950,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-selection-handle-size</td>
     <td>Number</td>
-    <td><code>22px</code></td>
+    <td><code>null</code></td>
     <td><code>22px</code></td>
 </tr>
 <tr>
@@ -960,7 +960,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-selection-border-color</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -970,7 +970,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-selection-shadow</td>
     <td>List</td>
-    <td><code>inset 0 1px 7px color-mix(in srgb, k-color(on-app-surface) 15%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 1px 7px color-mix(in srgb, var(--kendo-color-on-app-surface) 15%, transparent))</code></td>
 </tr>
 <tr>
@@ -980,7 +980,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-computed-title-height</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -990,7 +990,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
@@ -1000,7 +1000,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -1010,7 +1010,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -1020,7 +1020,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -1030,7 +1030,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -1040,7 +1040,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(xl)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-xl)</code></td>
 </tr>
 <tr>
@@ -1050,7 +1050,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -1060,7 +1060,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -1070,7 +1070,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -1080,7 +1080,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-title-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -1090,7 +1090,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-title-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -1100,7 +1100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-title-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -1110,7 +1110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-overlay-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -1120,7 +1120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-no-data-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
@@ -1130,7 +1130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-no-data-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight, normal)</code></td>
 </tr>
 <tr>
@@ -1140,7 +1140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-no-data-padding-y</td>
     <td>Number</td>
-    <td><code>7rem</code></td>
+    <td><code>null</code></td>
     <td><code>7rem</code></td>
 </tr>
 <tr>
@@ -1150,7 +1150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gauge-pointer-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -1160,7 +1160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gauge-track-bg</td>
     <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>

@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-chart-wizard-icon-area-color</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-area-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-subtle)</code></td>
 </tr>
 <tr>
@@ -50,21 +50,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-area-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(none)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-none)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the area around the chart type icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chart-wizard-icon-area-padding</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the area around the chart type icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -88,9 +78,19 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chart-wizard-icon-area-padding</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the area around the chart type icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis))</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-area-selected-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-chart-wizard-icon-area-color</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-chart-type-selected-color</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-preview-pane-padding</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-property-pane-padding</td>
     <td>Number</td>
-    <td><code>0</code></td>
+    <td><code>null</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-chart-type-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-text-gap</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>

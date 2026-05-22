@@ -28,76 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-map-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-map-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Map.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-map-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Map.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-map-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Map.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-map-bg, var(--kendo-color-surface-alt))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-map-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-border, k-color(border) )</code></td>
-    <td><code>var(--kendo-map-border, var(--kendo-color-border))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-border-width, 0px )</code></td>
-    <td><code>var(--kendo-map-border-width, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-map-height</td>
     <td>String</td>
     <td><code>var( --kendo-map-height, 600px )</code></td>
@@ -125,36 +55,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Map navigator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-navigator-padding</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-navigator-padding, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-map-navigator-padding, var(--kendo-spacing-0\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Map navigator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-navigator-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-navigator-width, calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) )</code></td>
-    <td><code>var(--kendo-map-navigator-width, calc(var(--kendo-icon-size, 1rem) * 3 + var(--kendo-map-navigator-padding, var(--kendo-spacing-0\.5)) * 2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-map-navigator-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-map-navigator-border-width, 1px )</code></td>
-    <td><code>var(--kendo-map-navigator-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -198,9 +98,119 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-map-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-border-width, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-bg, var(--kendo-color-surface-alt))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-border, var(--kendo-color-border))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-margin</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-padding</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-navigator-padding, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-navigator-width, calc(var(--kendo-icon-size, 1rem) * 3 + var(--kendo-map-navigator-padding, var(--kendo-spacing-0\.5)) * 2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-map-navigator-border-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-map-attribution-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-map-attribution-padding-x, k-spacing(1) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-map-attribution-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -210,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-attribution-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-map-attribution-padding-y, k-spacing(0.5) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-map-attribution-padding-y, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
@@ -220,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-attribution-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-map-attribution-font-size, calc( #{$kendo-map-font-size} * .75 ) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-map-attribution-font-size, calc(var(--kendo-map-font-size, var(--kendo-font-size)) * 0.75))</code></td>
 </tr>
 <tr>
@@ -230,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-attribution-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-map-attribution-bg, k-color(app-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-map-attribution-bg, var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
@@ -240,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-marker-fill</td>
     <td>String</td>
-    <td><code>var( --kendo-map-marker-fill, k-color(primary) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-map-marker-fill, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>

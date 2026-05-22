@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-card-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-lg)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-inner-border-radius</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-border-radius-lg) - 1px)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-deck-gap</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-focus-border</td>
     <td>String</td>
-    <td><code>k-color(border-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-header-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-card-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-header-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-card-padding-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-header-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-header-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-header-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-body-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-body-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-footer-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-footer-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-footer-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-footer-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-footer-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-title-margin-bottom</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-title-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-title-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-sm)</code></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-title-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-subtitle-margin-bottom</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-subtitle-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-subtitle-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-subtitle-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-subtitle-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-img-max-width</td>
     <td>Number</td>
-    <td><code>100px</code></td>
+    <td><code>null</code></td>
     <td><code>100px</code></td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-avatar-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-actions-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-actions-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-actions-border-width</td>
     <td>Number</td>
-    <td><code>0</code></td>
+    <td><code>null</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-actions-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-deck-scroll-button-radius</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-deck-scroll-button-offset</td>
     <td>Number</td>
-    <td><code>-$kendo-button-border-width</code></td>
+    <td><code>null</code></td>
     <td><code>-1px</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-callout-width</td>
     <td>Number</td>
-    <td><code>20px</code></td>
+    <td><code>null</code></td>
     <td><code>20px</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-callout-height</td>
     <td>Number</td>
-    <td><code>20px</code></td>
+    <td><code>null</code></td>
     <td><code>20px</code></td>
 </tr>
 <tr>

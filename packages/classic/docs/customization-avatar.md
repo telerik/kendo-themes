@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-avatar-default-theme-color</td>
     <td>String</td>
-    <td><code>"primary"</code></td>
+    <td><code>null</code></td>
     <td><code>"primary"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-default-fill-mode</td>
     <td>String</td>
-    <td><code>"solid"</code></td>
+    <td><code>null</code></td>
     <td><code>"solid"</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-default-roundness</td>
     <td>String</td>
-    <td><code>"full"</code></td>
+    <td><code>null</code></td>
     <td><code>"full"</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-xs)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-xs)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-sm-size</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-md-size</td>
     <td>String</td>
-    <td><code>k-spacing(8)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-8)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-lg-size</td>
     <td>String</td>
-    <td><code>k-spacing(16)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-16)</code></td>
 </tr>
 <tr>

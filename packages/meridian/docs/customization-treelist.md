@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-treelist-footer-row-bg</td>
     <td>String</td>
-    <td><code>$kendo-grid-hover-bg</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-base) 60%, transparent)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treelist-footer-row-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>

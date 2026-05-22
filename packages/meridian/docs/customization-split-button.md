@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-split-button-focus-shadow</td>
     <td>String</td>
-    <td><code>$kendo-button-focus-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>none</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-sm-arrow-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-md-arrow-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-lg-arrow-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-sm-arrow-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-sm-padding-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-md-arrow-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-md-padding-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-lg-arrow-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-button-lg-padding-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>

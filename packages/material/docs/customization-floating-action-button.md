@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-fab-default-theme-color</td>
     <td>String</td>
-    <td><code>"primary"</code></td>
+    <td><code>null</code></td>
     <td><code>"primary"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-default-fill-mode</td>
     <td>String</td>
-    <td><code>"solid"</code></td>
+    <td><code>null</code></td>
     <td><code>"solid"</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-default-roundness</td>
     <td>String</td>
-    <td><code>"full"</code></td>
+    <td><code>null</code></td>
     <td><code>"full"</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4\.5)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-lg-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(8)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-8)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-sm-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-fab-sm-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-md-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4\.5)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-lg-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-fab-lg-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-8)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-icon-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-icon-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-fab-icon-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -190,17 +190,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-icon-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing FAB icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-fab-items-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-items-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-fab-item-text-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-border-radius</td>
     <td>Number</td>
-    <td><code>2px</code></td>
+    <td><code>null</code></td>
     <td><code>2px</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-xs)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-xs)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-sm)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-icon-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{k-spacing(2)} + #{$kendo-fab-icon-padding-x} )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-spacing-2) + var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-icon-padding-y</td>
     <td>Calculation</td>
-    <td><code>$kendo-fab-item-icon-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-spacing-2) + var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
@@ -300,17 +300,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-icon-border-width</td>
     <td>Number</td>
-    <td><code>0</code></td>
+    <td><code>null</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FAB item icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FAB item icon border.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-border-radius</td>
     <td>Number</td>
-    <td><code>50%</code></td>
+    <td><code>null</code></td>
     <td><code>50%</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-disabled-shadow</td>
     <td>String</td>
-    <td><code>none</code></td>
+    <td><code>null</code></td>
     <td><code>none</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-active-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
@@ -348,9 +348,29 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-fab-outline-style</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-outline-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fab-item-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -360,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -370,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -380,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-icon-text</td>
     <td>String</td>
-    <td><code>$kendo-button-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-base)</code></td>
 </tr>
 <tr>
@@ -390,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-icon-bg</td>
     <td>String</td>
-    <td><code>$kendo-button-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
@@ -400,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-icon-border</td>
     <td>String</td>
-    <td><code>$kendo-button-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base)</code></td>
 </tr>
 <tr>
@@ -410,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-shadow</td>
     <td>String</td>
-    <td><code>$kendo-fab-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
@@ -420,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-disabled-shadow</td>
     <td>String</td>
-    <td><code>$kendo-fab-disabled-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>none</code></td>
 </tr>
 <tr>
@@ -430,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-active-shadow</td>
     <td>String</td>
-    <td><code>$kendo-fab-active-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
@@ -438,9 +458,39 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-fab-item-outline-style</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-outline-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-outline-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fab-generating-opacity</td>
     <td>Number</td>
-    <td><code>60%</code></td>
+    <td><code>null</code></td>
     <td><code>60%</code></td>
 </tr>
 <tr>

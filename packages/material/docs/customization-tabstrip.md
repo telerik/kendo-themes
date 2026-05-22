@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-tabstrip-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-wrapper-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-wrapper-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-wrapper-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-sm-font-size</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-sm-line-height</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-font-size</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-line-height</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-lg-font-size</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-font-size</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-lg-line-height</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-line-height</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-border-radius</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-gap</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-sm-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-sm-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-md-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3\.5)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-lg-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-lg-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4\.5)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-border</td>
     <td>String</td>
-    <td><code>unset</code></td>
+    <td><code>null</code></td>
     <td><code>unset</code></td>
 </tr>
 <tr>
@@ -450,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent))</code></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-dragging-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-disabled-opacity</td>
     <td>String</td>
-    <td><code>var(--kendo-disabled-opacity, unset)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-disabled-opacity, unset)</code></td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-indicator-size</td>
     <td>Number</td>
-    <td><code>3px</code></td>
+    <td><code>null</code></td>
     <td><code>3px</code></td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-indicator-color</td>
     <td>String</td>
-    <td><code>$kendo-tabstrip-item-selected-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -570,7 +570,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-bg</td>
     <td>Color</td>
-    <td><code>transparent</code></td>
+    <td><code>null</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -590,7 +590,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-text</td>
     <td>String</td>
-    <td><code>unset</code></td>
+    <td><code>null</code></td>
     <td><code>unset</code></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-border</td>
     <td>String</td>
-    <td><code>unset</code></td>
+    <td><code>null</code></td>
     <td><code>unset</code></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-focus-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -620,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-scroll-overlay</td>
     <td>List</td>
-    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(var(--kendo-color-app-surface), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
 </tr>
 <tr>

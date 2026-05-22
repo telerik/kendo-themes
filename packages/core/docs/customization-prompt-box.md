@@ -1,0 +1,98 @@
+---
+title: Customizing PromptBox
+description: "Refer to the list of the Kendo UI Theme Core theme variables available for customization."
+slug: variables_kendothemecore_prompt-box
+position: 9
+---
+
+# Customizing PromptBox
+
+## Variables
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-prompt-box-border-radius</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PromptBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-box-shadow</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the PromptBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-header-padding</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PromptBox header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-input-inner-padding</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inner padding of the PromptBox input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-affix-padding</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the PromptBox affix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-prompt-box-affix-spacing</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the PromptBox affixes.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+

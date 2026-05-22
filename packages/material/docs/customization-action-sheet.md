@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-adaptive-actionsheet-titlebar-border</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the adaptive ActionSheet titlebar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-actionsheet-padding-x</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -50,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-width</td>
     <td>Number</td>
-    <td><code>360px</code></td>
+    <td><code>null</code></td>
     <td><code>360px</code></td>
 </tr>
 <tr>
@@ -60,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-max-width</td>
     <td>Number</td>
-    <td><code>100%</code></td>
+    <td><code>null</code></td>
     <td><code>100%</code></td>
 </tr>
 <tr>
@@ -70,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-height</td>
     <td>Number</td>
-    <td><code>60vh</code></td>
+    <td><code>null</code></td>
     <td><code>60vh</code></td>
 </tr>
 <tr>
@@ -80,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-max-height</td>
     <td>Number</td>
-    <td><code>60vh</code></td>
+    <td><code>null</code></td>
     <td><code>60vh</code></td>
 </tr>
 <tr>
@@ -90,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -100,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-border-radius</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -110,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -120,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -130,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -140,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -150,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -160,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -170,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
@@ -180,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-titlebar-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -190,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-titlebar-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -200,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-titlebar-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -210,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-titlebar-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -220,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-titlebar-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -230,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-titlebar-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -240,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-titlebar-gap</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -280,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-titlebar-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -310,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-subtitle-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
@@ -320,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-subtitle-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-sm)</code></td>
 </tr>
 <tr>
@@ -330,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-subtitle-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -340,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-footer-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -370,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-footer-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -400,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-min-height</td>
     <td>Number</td>
-    <td><code>40px</code></td>
+    <td><code>null</code></td>
     <td><code>40px</code></td>
 </tr>
 <tr>
@@ -410,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -420,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3\.5)</code></td>
 </tr>
 <tr>
@@ -430,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-border-width</td>
     <td>Number</td>
-    <td><code>0</code></td>
+    <td><code>null</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
@@ -440,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -480,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-description-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
@@ -490,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-description-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-sm)</code></td>
 </tr>
 <tr>
@@ -500,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-description-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -510,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -600,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent))</code></td>
 </tr>
 <tr>
@@ -658,9 +668,39 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-actionsheet-item-hover-background</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background of the ActionSheet item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-item-focus-background</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background of the ActionSheet item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-item-disabled-opacity</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the disabled ActionSheet item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>
@@ -670,7 +710,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-actionsheet-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
@@ -680,7 +720,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-actionsheet-titlebar-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -690,7 +730,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-actionsheet-titlebar-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-adaptive-actionsheet-titlebar-padding-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -698,19 +738,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-adaptive-actionsheet-titlebar-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the adaptive ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-adaptive-actionsheet-content-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -720,7 +750,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-actionsheet-content-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -730,7 +760,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-actionsheet-footer-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -740,7 +770,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-adaptive-actionsheet-footer-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>

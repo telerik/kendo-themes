@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-column-menu-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-item-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-item-sm-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-item-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-item-md-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-item-lg-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-item-lg-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-item-wrapper-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-md-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-lg-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
@@ -198,49 +198,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-group-menu-item-action-hover-bg</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 4%, transparent)</code></td>
-    <td><code>color-mix(in srgb, currentColor 4%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered GroupMenu item action.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-group-menu-item-action-selected-bg</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 16%, transparent)</code></td>
-    <td><code>color-mix(in srgb, currentColor 16%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected GroupMenu item action.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-group-menu-item-add-action-text</td>
-    <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the GroupMenu item add action.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-group-menu-item-border</td>
-    <td>String</td>
-    <td><code>k-color(border)</code></td>
-    <td><code>var(--kendo-color-border)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the GroupMenu item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-column-list-item-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>
@@ -274,6 +234,46 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-group-menu-item-action-hover-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>color-mix(in srgb, currentColor 4%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered GroupMenu item action.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-group-menu-item-action-selected-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>color-mix(in srgb, currentColor 16%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected GroupMenu item action.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-group-menu-item-add-action-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the GroupMenu item add action.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-group-menu-item-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the GroupMenu item.</div></div>
     </td>
 </tr>
 </tbody>

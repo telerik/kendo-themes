@@ -28,116 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-appbar-default-theme-color</td>
-    <td>String</td>
-    <td><code>"base"</code></td>
-    <td><code>"base"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-margin-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-margin-x, k-spacing(0) )</code></td>
-    <td><code>var(--kendo-appbar-margin-x, var(--kendo-spacing-0))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-margin-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-margin-y, k-spacing(0) )</code></td>
-    <td><code>var(--kendo-appbar-margin-y, var(--kendo-spacing-0))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-padding-x, k-spacing(5) )</code></td>
-    <td><code>var(--kendo-appbar-padding-x, var(--kendo-spacing-5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-padding-y, k-spacing(3.5) )</code></td>
-    <td><code>var(--kendo-appbar-padding-y, var(--kendo-spacing-3\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-border-width, 0px )</code></td>
-    <td><code>var(--kendo-appbar-border-width, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-zindex</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-zindex, k-z-index("banner") )</code></td>
-    <td><code>var(--kendo-appbar-zindex, 1000)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The z-index of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-appbar-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-appbar-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-appbar-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-appbar-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-appbar-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the AppBar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-appbar-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-appbar-spacing, k-spacing(2) )</code></td>
@@ -175,6 +65,146 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-default-theme-color</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>"base"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-margin-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-margin-x, var(--kendo-spacing-0))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-margin-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-margin-y, var(--kendo-spacing-0))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-padding-x, var(--kendo-spacing-5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-padding-y, var(--kendo-spacing-3\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-border-width, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-zindex</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-zindex, 1000)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The z-index of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-gap</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-appbar-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the AppBar sections.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-box-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-bottom-box-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>
     </td>
 </tr>
 <tr>

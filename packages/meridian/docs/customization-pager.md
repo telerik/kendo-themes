@@ -28,9 +28,39 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-pager-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-number-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius( md )</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager numbers.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-pager-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -50,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -60,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-lg-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -70,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-sm-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-pager-sm-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -80,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-md-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-pager-md-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -90,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-lg-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-pager-lg-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -100,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-sm-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -110,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-md-item-min-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-md-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -120,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-lg-item-min-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-lg-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -130,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-sm-item-group-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -140,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-md-item-group-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -150,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-lg-item-group-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -160,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -170,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -180,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -190,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -200,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-bg</td>
     <td>String</td>
-    <td><code>k-translucency-bg(k-color(surface-alt))</code></td>
+    <td><code>null</code></td>
     <td><code>oklch(from var(--kendo-color-surface-alt) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
 </tr>
 <tr>
@@ -210,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -220,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -248,29 +278,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-focus-outline-color</td>
-    <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused Pager.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-focus-outline-offset</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused Pager.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-item-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -288,19 +298,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-number-border-radius</td>
-    <td>String</td>
-    <td><code>k-border-radius( md )</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager numbers.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-input-width</td>
     <td>Number</td>
-    <td><code>5em</code></td>
+    <td><code>null</code></td>
     <td><code>5em</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-dropdown-width</td>
     <td>Number</td>
-    <td><code>5em</code></td>
+    <td><code>null</code></td>
     <td><code>5em</code></td>
 </tr>
 <tr>

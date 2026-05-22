@@ -28,16 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-slider-size</td>
-    <td>Number</td>
-    <td><code>200px</code></td>
-    <td><code>200px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-slider-tick-size</td>
     <td>Number</td>
     <td><code>2px</code></td>
@@ -48,9 +38,29 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-slider-tick-marker-bg</td>
+    <td>String</td>
+    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider tick marker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-size</td>
+    <td>Number</td>
+    <td><code>null</code></td>
+    <td><code>200px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-slider-alt-size</td>
     <td>Number</td>
-    <td><code>36px</code></td>
+    <td><code>null</code></td>
     <td><code>36px</code></td>
 </tr>
 <tr>
@@ -60,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -70,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -80,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -90,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-button-offset</td>
     <td>String</td>
-    <td><code>k-spacing(5.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-5\.5)</code></td>
 </tr>
 <tr>
@@ -100,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-button-size</td>
     <td>String</td>
-    <td><code>k-spacing(9)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-9)</code></td>
 </tr>
 <tr>
@@ -110,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-track-thickness</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -120,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-size</td>
     <td>String</td>
-    <td><code>k-spacing(5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
@@ -130,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -140,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-active-scale</td>
     <td>Number</td>
-    <td><code>1</code></td>
+    <td><code>null</code></td>
     <td><code>1</code></td>
 </tr>
 <tr>
@@ -150,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -160,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-primary)</code></td>
 </tr>
 <tr>
@@ -170,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -190,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -210,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-hover-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -230,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-hover-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 k-spacing(2.5) color-mix(in srgb, k-color(primary) 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 var(--kendo-spacing-2\.5) color-mix(in srgb, var(--kendo-color-primary) 8%, transparent))</code></td>
 </tr>
 <tr>
@@ -240,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-pressed-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -260,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-pressed-border</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -280,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 k-spacing(2.5) color-mix(in srgb, k-color(primary) 20%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 var(--kendo-spacing-2\.5) color-mix(in srgb, var(--kendo-color-primary) 20%, transparent))</code></td>
 </tr>
 <tr>
@@ -290,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-speed</td>
     <td>String</td>
-    <td><code>k-duration(brisk)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-duration-brisk)</code></td>
 </tr>
 <tr>
@@ -300,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td>String</td>
-    <td><code>k-easing(standard)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-easing-standard)</code></td>
 </tr>
 <tr>
@@ -310,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-transition-speed</td>
     <td>String</td>
-    <td><code>k-duration(quick)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-duration-quick)</code></td>
 </tr>
 <tr>
@@ -320,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-transition-function</td>
     <td>String</td>
-    <td><code>k-easing(decelerate)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-easing-decelerate)</code></td>
 </tr>
 <tr>
@@ -330,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-subtle)</code></td>
 </tr>
 <tr>
@@ -340,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-selection-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -350,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-disabled-opacity</td>
     <td>Number</td>
-    <td><code>.65</code></td>
+    <td><code>null</code></td>
     <td><code>0.65</code></td>
 </tr>
 <tr>
@@ -360,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-tick-horizontal-image</td>
     <td>String</td>
-    <td><code>"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="</code></td>
+    <td><code>"data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7"</code></td>
     <td><code>"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="</code></td>
 </tr>
 <tr>
@@ -370,21 +380,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-tick-vertical-image</td>
     <td>String</td>
-    <td><code>"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="</code></td>
+    <td><code>"data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7"</code></td>
     <td><code>"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the vertical Slider tick.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-tick-marker-bg</td>
-    <td>String</td>
-    <td><code>k-color(primary-emphasis)</code></td>
-    <td><code>var(--kendo-color-primary-emphasis)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider tick marker.</div></div>
     </td>
 </tr>
 </tbody>

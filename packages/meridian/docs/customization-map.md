@@ -28,9 +28,19 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-map-navigator-shadow</td>
+    <td>List</td>
+    <td><code>0 1px 1px 0 rgba(0, 0, 0, 0.16)</code></td>
+    <td><code>(0 1px 1px 0 rgba(0, 0, 0, 0.16))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box-shadow of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-map-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -40,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -50,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -60,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
@@ -70,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -80,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -98,19 +108,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-map-navigator-shadow</td>
-    <td>List</td>
-    <td><code>0 1px 1px 0 rgba(0, 0, 0, 0.16)</code></td>
-    <td><code>(0 1px 1px 0 rgba(0, 0, 0, 0.16))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box-shadow of the Map navigator.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-map-navigator-margin</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-padding</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-width</td>
     <td>Number</td>
-    <td><code>50px</code></td>
+    <td><code>null</code></td>
     <td><code>50px</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-border-width</td>
     <td>Number</td>
-    <td><code>0</code></td>
+    <td><code>null</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-attribution-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-attribution-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-attribution-font-size</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-map-font-size} * .75)</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-font-size, inherit) * 0.75)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-attribution-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(app-surface) 80%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-app-surface) 80%, transparent)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-marker-fill</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>

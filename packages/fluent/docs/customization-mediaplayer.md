@@ -28,86 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-media-player-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-border-width, 1px )</code></td>
-    <td><code>var(--kendo-media-player-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the MediaPlayer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-border-radius</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-border-radius, null )</code></td>
-    <td><code>var(--kendo-media-player-border-radius, )</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the MediaPlayer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-media-player-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the MediaPlayer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-media-player-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-media-player-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-media-player-bg, var(--kendo-color-surface-alt))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-media-player-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-media-player-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-media-player-overlay-bg</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-overlay-bg, k-color(subtle) )</code></td>
@@ -138,56 +58,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-media-player-titlebar-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-titlebar-padding-x, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-padding-x, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the MediaPlayer title.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-titlebar-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-titlebar-padding-y, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-padding-y, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the MediaPlayer title.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-titlebar-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-titlebar-font-size, null )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-font-size, )</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer title.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-titlebar-font-weight</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-titlebar-font-weight, null )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-font-weight, )</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the MediaPlayer title.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-media-player-titlebar-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-media-player-titlebar-line-height, null )</code></td>
-    <td><code>var(--kendo-media-player-titlebar-line-height, )</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer title.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-media-player-titlebar-bg</td>
     <td>String</td>
     <td><code>var( --kendo-media-player-titlebar-bg, color-mix(in srgb, k-color(on-app-surface) 40%, transparent) )</code></td>
@@ -198,13 +68,153 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-media-player-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-border-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-border-radius</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-border-radius, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-bg, var(--kendo-color-surface-alt))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-titlebar-padding-x, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-titlebar-padding-y, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-titlebar-font-size, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-font-weight</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-titlebar-font-weight, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-media-player-titlebar-line-height, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-media-player-titlebar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-media-player-titlebar-text, $kendo-media-player-bg )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-media-player-titlebar-text, var(--kendo-media-player-bg, var(--kendo-color-surface-alt)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the MediaPlayer title.</div></div>
     </td>
 </tr>
 </tbody>

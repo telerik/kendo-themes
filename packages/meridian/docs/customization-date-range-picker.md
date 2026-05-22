@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-daterange-picker-input-width</td>
     <td>Number</td>
-    <td><code>10em</code></td>
+    <td><code>null</code></td>
     <td><code>10em</code></td>
 </tr>
 <tr>

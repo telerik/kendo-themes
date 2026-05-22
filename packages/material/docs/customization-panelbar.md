@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-panelbar-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-border-style</td>
     <td>String</td>
-    <td><code>solid</code></td>
+    <td><code>null</code></td>
     <td><code>solid</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-border-width</td>
     <td>Number</td>
-    <td><code>0</code></td>
+    <td><code>null</code></td>
     <td><code>0</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-border-style</td>
     <td>String</td>
-    <td><code>solid</code></td>
+    <td><code>null</code></td>
     <td><code>solid</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3\.5)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3\.5)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-level-count</td>
     <td>Number</td>
-    <td><code>4</code></td>
+    <td><code>null</code></td>
     <td><code>4</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-text</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-focus-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 12%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, currentColor 12%, transparent)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-hover-focus-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, currentColor 20%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, currentColor 20%, transparent)</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-secondary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-focus-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary-active)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-active)</code></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(secondary), k-color(secondary-emphasis))</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-secondary), var(--kendo-color-secondary-emphasis))</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-hover-bg</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-focus-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-focus-bg</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, currentColor 12%, transparent)</code></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-hover-focus-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-hover-focus-bg</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, currentColor 20%, transparent)</code></td>
 </tr>
 <tr>
@@ -640,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-selected-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
@@ -680,7 +680,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-selected-hover-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-hover)</code></td>
 </tr>
 <tr>
@@ -720,7 +720,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-focus-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-selected-focus-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-active)</code></td>
 </tr>
 <tr>
@@ -760,7 +760,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-selected-hover-focus-bg</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-secondary), var(--kendo-color-secondary-emphasis))</code></td>
 </tr>
 <tr>

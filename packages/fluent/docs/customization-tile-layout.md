@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-tile-layout-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-tile-layout-border-width, 0px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-tile-layout-border-width, 0px)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-tile-layout-bg, #{k-color(surface)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-tile-layout-bg, var(--kendo-color-surface))</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-tile-layout-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-tile-layout-padding-x, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-tile-layout-padding-y, #{$kendo-tile-layout-padding-x} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-tile-layout-padding-y, var(--kendo-tile-layout-padding-x, var(--kendo-spacing-4)))</code></td>
 </tr>
 <tr>
@@ -68,9 +68,29 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-tile-layout-card-border-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the TileLayout card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tile-layout-card-focus-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the TileLayout card.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tile-layout-hint-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-tile-layout-hint-border-width, 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-tile-layout-hint-border-width, 1px)</code></td>
 </tr>
 <tr>
@@ -80,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-hint-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-tile-layout-hint-border-radius, var( --kendo-border-radius-lg, initial ) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-tile-layout-hint-border-radius, var(--kendo-border-radius-lg, initial))</code></td>
 </tr>
 <tr>
@@ -90,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-hint-border</td>
     <td>String</td>
-    <td><code>var( --kendo-tile-layout-hint-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-tile-layout-hint-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
@@ -100,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-hint-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-tile-layout-hint-bg, rgba(255, 255, 255, .2) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-tile-layout-hint-bg, rgba(255, 255, 255, 0.2))</code></td>
 </tr>
 <tr>

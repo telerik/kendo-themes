@@ -28,66 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-filter-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-filter-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-filter-padding-x, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Filter.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-filter-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-filter-padding-y, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-filter-padding-y, var(--kendo-spacing-1))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Filter.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-filter-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Filter.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-filter-bottom-margin</td>
-    <td>String</td>
-    <td><code>var( --kendo-filter-bottom-margin, #{k-spacing(7.5)} )</code></td>
-    <td><code>var(--kendo-filter-bottom-margin, var(--kendo-spacing-7\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Filter.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-filter-line-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-filter-line-size, 1px )</code></td>
-    <td><code>var(--kendo-filter-line-size, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the line that connects the Filter items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-filter-operator-dropdown-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-filter-operator-dropdown-width, 15em )</code></td>
-    <td><code>var(--kendo-filter-operator-dropdown-width, 15em)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the dropdown elements in the Filter items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-filter-text</td>
     <td>String</td>
     <td><code>var( --kendo-filter-text, #{k-color(on-app-surface)} )</code></td>
@@ -95,26 +35,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-filter-preview-field-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-filter-preview-field-text, #{k-color(primary-on-surface)} )</code></td>
-    <td><code>var(--kendo-filter-preview-field-text, var(--kendo-color-primary-on-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview field.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-filter-preview-operator-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-filter-preview-operator-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-filter-preview-operator-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview operator.</div></div>
     </td>
 </tr>
 <tr>
@@ -145,6 +65,96 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Filter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-filter-padding-x, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Filter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-filter-padding-y, var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Filter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Filter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-bottom-margin</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-filter-bottom-margin, var(--kendo-spacing-7\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Filter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-line-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-filter-line-size, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the line that connects the Filter items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-operator-dropdown-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-filter-operator-dropdown-width, 15em)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the dropdown elements in the Filter items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-preview-field-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-filter-preview-field-text, var(--kendo-color-primary-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-preview-operator-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-filter-preview-operator-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Filter preview operator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-toolbar-focus-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Filter toolbar.</div></div>
     </td>
 </tr>
 </tbody>

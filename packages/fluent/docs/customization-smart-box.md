@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-smart-box-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-default-roundness</td>
     <td>String</td>
-    <td><code>"full"</code></td>
+    <td><code>null</code></td>
     <td><code>"full"</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-suffix-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-suffix-spacing, k-spacing(1) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-suffix-spacing, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-sm-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-sm-padding-x, 0 )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-sm-padding-x, 0)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-md-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-md-padding-x, k-spacing(.5) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-md-padding-x, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-lg-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-lg-padding-x, k-spacing(2) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-lg-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-sm-prefix-margin-x</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-sm-icon-margin-x, k-spacing(1) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-sm-icon-margin-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-md-prefix-margin-x</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-md-icon-margin-x, k-spacing(1) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-md-icon-margin-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-lg-prefix-margin-x</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-lg-icon-margin-x, 0 )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-lg-icon-margin-x, 0)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-popup-padding-inline</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-popup-padding-inline, k-spacing(1) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-popup-padding-inline, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-popup-padding-block</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-popup-padding-block, k-spacing(1) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-popup-padding-block, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-popup-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-popup-border-radius, #{k-border-radius(md)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-popup-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-popup-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-popup-spacing, k-spacing(2) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-popup-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-smart-box-popup-segmented-control-margin</td>
     <td>String</td>
-    <td><code>var( --kendo-smart-box-popup-segmented-control-margin, k-spacing(2) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-smart-box-popup-segmented-control-margin, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>

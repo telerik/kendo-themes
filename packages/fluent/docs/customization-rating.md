@@ -28,36 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-rating-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-rating-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-rating-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Rating.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-rating-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-rating-font-size, var(--kendo-font-size-sm) )</code></td>
-    <td><code>var(--kendo-rating-font-size, var(--kendo-font-size-sm))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Rating.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-rating-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-rating-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-rating-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-rating-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-rating-spacing, #{k-spacing(1)} )</code></td>
@@ -65,26 +35,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The content spacing of the Rating.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-rating-item-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-rating-item-padding-x, #{k-spacing(0.5)} )</code></td>
-    <td><code>var(--kendo-rating-item-padding-x, var(--kendo-spacing-0\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Rating item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-rating-item-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-rating-item-padding-y, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-rating-item-padding-y, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Rating item.</div></div>
     </td>
 </tr>
 <tr>
@@ -145,6 +95,156 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Rating item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-rating-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Rating.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-rating-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Rating.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-rating-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-container-margin-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Rating container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-item-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-rating-item-padding-x, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Rating item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-item-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-rating-item-padding-y, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Rating item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-label-margin-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Rating label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-label-margin-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Rating label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-label-line-height</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-selected-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-focus-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-focus-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-focus-selected-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>
     </td>
 </tr>
 </tbody>

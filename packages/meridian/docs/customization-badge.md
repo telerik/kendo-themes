@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-badge-default-theme-color</td>
     <td>String</td>
-    <td><code>"primary"</code></td>
+    <td><code>null</code></td>
     <td><code>"primary"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-default-fill-mode</td>
     <td>String</td>
-    <td><code>"solid"</code></td>
+    <td><code>null</code></td>
     <td><code>"solid"</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-default-roundness</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-lg-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sm-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-lg-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-line-height</td>
     <td>Number</td>
-    <td><code>1</code></td>
+    <td><code>null</code></td>
     <td><code>1</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sm-line-height</td>
     <td>Number</td>
-    <td><code>$kendo-badge-line-height</code></td>
+    <td><code>null</code></td>
     <td><code>1</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-line-height</td>
     <td>Number</td>
-    <td><code>$kendo-badge-line-height</code></td>
+    <td><code>null</code></td>
     <td><code>1</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-lg-line-height</td>
     <td>Number</td>
-    <td><code>$kendo-badge-line-height</code></td>
+    <td><code>null</code></td>
     <td><code>1</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-line-height * 1em} + calc( #{$kendo-badge-md-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 ))</code></td>
+    <td><code>null</code></td>
     <td><code>calc(1em + var(--kendo-spacing-1) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sm-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-sm-line-height * 1em} + calc( #{$kendo-badge-sm-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 ) )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(1em + var(--kendo-spacing-0\.5) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-md-line-height * 1em} + calc( #{$kendo-badge-md-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 ) )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(1em + var(--kendo-spacing-1) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-lg-min-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-badge-lg-line-height * 1em} + calc( #{$kendo-badge-lg-padding-y} * 2 ) + calc( #{$kendo-badge-border-width} * 2 ) )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(1em + var(--kendo-spacing-1\.5) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>

@@ -28,73 +28,93 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-actions-margin-top</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the ActionButtons.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-actions-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-actions-padding-x, k-spacing(3) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-actions-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the action buttons container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ActionButtons.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-actions-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-actions-padding-y, k-spacing(3) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-actions-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the action buttons container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ActionButtons.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-actions-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-actions-border-width, 0px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-actions-border-width, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the action buttons container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actions-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-actions-bg, inherit )</code></td>
-    <td><code>var(--kendo-actions-bg, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the action buttons container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actions-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-actions-text, inherit )</code></td>
-    <td><code>var(--kendo-actions-text, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the action buttons container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actions-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-actions-border, inherit )</code></td>
-    <td><code>var(--kendo-actions-border, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the action buttons container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ActionButtons.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-actions-button-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-actions-button-spacing, k-spacing(3) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-actions-button-spacing, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the action buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ActionButtons buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actions-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-actions-bg, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ActionButtons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actions-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-actions-text, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ActionButtons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actions-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-actions-border, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ActionButtons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actions-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the ActionButtons.</div></div>
     </td>
 </tr>
 </tbody>

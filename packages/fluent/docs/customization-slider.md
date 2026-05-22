@@ -28,26 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-slider-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-size, 200px )</code></td>
-    <td><code>var(--kendo-slider-size, 200px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-alt-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-alt-size, 26px )</code></td>
-    <td><code>var(--kendo-slider-alt-size, 26px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider's track wrap.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-slider-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-slider-spacing, #{k-spacing(2)} )</code></td>
@@ -55,36 +35,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Slider.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-slider-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Slider.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-font-size, var(--kendo-font-size-sm) )</code></td>
-    <td><code>var(--kendo-slider-font-size, var(--kendo-font-size-sm))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Slider.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-slider-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -118,16 +68,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-slider-track-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-track-bg, #{k-color(border)} )</code></td>
-    <td><code>var(--kendo-slider-track-bg, var(--kendo-color-border))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider track.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-slider-track-border</td>
     <td>String</td>
     <td><code>var( --kendo-slider-track-border, inherit )</code></td>
@@ -135,16 +75,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Slider track.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-selection-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-selection-bg, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-slider-selection-bg, var(--kendo-color-primary))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider's track selection.</div></div>
     </td>
 </tr>
 <tr>
@@ -388,26 +318,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-slider-transition-speed</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-transition-speed, k-duration(brisk) )</code></td>
-    <td><code>var(--kendo-slider-transition-speed, var(--kendo-duration-brisk))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-slider-transition-function</td>
-    <td>String</td>
-    <td><code>var( --kendo-slider-transition-function, k-easing(standard) )</code></td>
-    <td><code>var(--kendo-slider-transition-function, var(--kendo-easing-standard))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-slider-thumb-transition-speed</td>
     <td>String</td>
     <td><code>var( --kendo-slider-thumb-transition-speed, k-duration(quick) )</code></td>
@@ -439,6 +349,346 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-slider-tick-v-image</td>
+    <td>String</td>
+    <td><code>"data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7"</code></td>
+    <td><code>"data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the vertical Slider tick.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-size, 200px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-alt-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-alt-size, 26px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider's track wrap.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-button-offset</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Slider Buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-button-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Slider Buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-track-thickness</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-track-size, var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thickness of the Slider track.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-border-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-active-scale</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition scale of the active Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-hover-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-hover-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-hover-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the hovered Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-hover-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-pressed-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-pressed-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-pressed-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-pressed-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the active Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-focus-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-transition-speed</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-transition-speed, var(--kendo-duration-brisk))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-transition-function</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-transition-function, var(--kendo-easing-standard))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-transition-speed</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-thumb-transition-speed, var(--kendo-duration-quick))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-transition-function</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-thumb-transition-function, var(--kendo-easing-decelerate))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-track-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-track-bg, var(--kendo-color-border))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider track.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-selection-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-slider-selection-bg, var(--kendo-color-primary))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider's track selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-disabled-opacity</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-tick-horizontal-image</td>
+    <td>String</td>
+    <td><code>"data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7"</code></td>
+    <td><code>"data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the horizontal Slider tick.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-tick-vertical-image</td>
     <td>String</td>
     <td><code>"data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7"</code></td>
     <td><code>"data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7"</code></td>

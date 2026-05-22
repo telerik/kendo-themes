@@ -28,9 +28,39 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-listview-item-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ListView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listview-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ListView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listview-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ListView items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-listview-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -40,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -50,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -60,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
@@ -70,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -80,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -90,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -100,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -110,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -120,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -130,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -150,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(secondary) 12%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-secondary) 12%, transparent)</code></td>
 </tr>
 <tr>
@@ -208,39 +238,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-listview-item-focus-outline-color</td>
-    <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused ListView items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-listview-item-focus-outline-width</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused ListView items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-listview-item-focus-outline-offset</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ListView items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-listview-item-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>

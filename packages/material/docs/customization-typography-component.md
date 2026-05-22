@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-h1-font-size</td>
     <td>Number</td>
-    <td><code>57px</code></td>
+    <td><code>null</code></td>
     <td><code>57px</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-font-size</td>
     <td>Number</td>
-    <td><code>45px</code></td>
+    <td><code>null</code></td>
     <td><code>45px</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-font-size</td>
     <td>Number</td>
-    <td><code>36px</code></td>
+    <td><code>null</code></td>
     <td><code>36px</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-font-size</td>
     <td>Number</td>
-    <td><code>32px</code></td>
+    <td><code>null</code></td>
     <td><code>32px</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-font-size</td>
     <td>Number</td>
-    <td><code>28px</code></td>
+    <td><code>null</code></td>
     <td><code>28px</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-font-size</td>
     <td>Number</td>
-    <td><code>24px</code></td>
+    <td><code>null</code></td>
     <td><code>24px</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h1-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h1-line-height</td>
     <td>Number</td>
-    <td><code>64px</code></td>
+    <td><code>null</code></td>
     <td><code>64px</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-line-height</td>
     <td>Number</td>
-    <td><code>52px</code></td>
+    <td><code>null</code></td>
     <td><code>52px</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-line-height</td>
     <td>Number</td>
-    <td><code>44px</code></td>
+    <td><code>null</code></td>
     <td><code>44px</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-line-height</td>
     <td>Number</td>
-    <td><code>40px</code></td>
+    <td><code>null</code></td>
     <td><code>40px</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-line-height</td>
     <td>Number</td>
-    <td><code>36px</code></td>
+    <td><code>null</code></td>
     <td><code>36px</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-line-height</td>
     <td>Number</td>
-    <td><code>32px</code></td>
+    <td><code>null</code></td>
     <td><code>32px</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h1-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-light)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-light)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-light)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-light)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-medium)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-medium)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h1-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-tighter)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-tighter)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-normal)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-normal)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-normal)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-normal)</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-normal)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h1-margin</td>
     <td>List</td>
-    <td><code>0 0 12px</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 12px)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-margin</td>
     <td>List</td>
-    <td><code>0 0 12px</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 12px)</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-margin</td>
     <td>List</td>
-    <td><code>0 0 12px</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 12px)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-margin</td>
     <td>List</td>
-    <td><code>0 0 12px</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 12px)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-margin</td>
     <td>List</td>
-    <td><code>0 0 12px</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 12px)</code></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-margin</td>
     <td>List</td>
-    <td><code>0 0 12px</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 12px)</code></td>
 </tr>
 <tr>
@@ -390,56 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-headings</td>
     <td>Map</td>
-    <td><code>(
-    h1: (
-        font-size: $kendo-h1-font-size,
-        font-family: $kendo-h1-font-family,
-        line-height: $kendo-h1-line-height,
-        font-weight: $kendo-h1-font-weight,
-        letter-spacing: $kendo-h1-letter-spacing,
-        margin: $kendo-h1-margin
-    ),
-    h2: (
-        font-size: $kendo-h2-font-size,
-        font-family: $kendo-h2-font-family,
-        line-height: $kendo-h2-line-height,
-        font-weight: $kendo-h2-font-weight,
-        letter-spacing: $kendo-h2-letter-spacing,
-        margin: $kendo-h2-margin
-    ),
-    h3: (
-        font-size: $kendo-h3-font-size,
-        font-family: $kendo-h3-font-family,
-        line-height: $kendo-h3-line-height,
-        font-weight: $kendo-h3-font-weight,
-        letter-spacing: $kendo-h3-letter-spacing,
-        margin: $kendo-h3-margin
-    ),
-    h4: (
-        font-size: $kendo-h4-font-size,
-        font-family: $kendo-h4-font-family,
-        line-height: $kendo-h4-line-height,
-        font-weight: $kendo-h4-font-weight,
-        letter-spacing: $kendo-h4-letter-spacing,
-        margin: $kendo-h4-margin
-    ),
-    h5: (
-        font-size: $kendo-h5-font-size,
-        font-family: $kendo-h5-font-family,
-        line-height: $kendo-h5-line-height,
-        font-weight: $kendo-h5-font-weight,
-        letter-spacing: $kendo-h5-letter-spacing,
-        margin: $kendo-h5-margin
-    ),
-    h6: (
-        font-size: $kendo-h6-font-size,
-        font-family: $kendo-h6-font-family,
-        line-height: $kendo-h6-line-height,
-        font-weight: $kendo-h6-font-weight,
-        letter-spacing: $kendo-h6-letter-spacing,
-        margin: $kendo-h6-margin
-    )
-)</code></td>
+    <td><code>null</code></td>
     <td><ul><li>h1: "font-size":"57px","font-family":"var(--kendo-font-family)","line-height":"64px","font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)","margin":"(0 0 12px)"</li><li>h2: "font-size":"45px","font-family":"var(--kendo-font-family)","line-height":"52px","font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h3: "font-size":"36px","font-family":"var(--kendo-font-family)","line-height":"44px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h4: "font-size":"32px","font-family":"var(--kendo-font-family)","line-height":"40px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h5: "font-size":"28px","font-family":"var(--kendo-font-family)","line-height":"36px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h6: "font-size":"24px","font-family":"var(--kendo-font-family)","line-height":"32px","font-weight":"var(--kendo-font-weight-medium)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li></ul></td>
 </tr>
 <tr>
@@ -449,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-paragraph-margin</td>
     <td>List</td>
-    <td><code>0 0 12px</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 12px)</code></td>
 </tr>
 <tr>
@@ -459,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-paragraph-font-size</td>
     <td>Number</td>
-    <td><code>1rem</code></td>
+    <td><code>null</code></td>
     <td><code>1rem</code></td>
 </tr>
 <tr>
@@ -469,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-paragraph-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -477,9 +428,19 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-paragraph-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-line-height-lg)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the paragraph.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-paragraph-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -489,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-paragraph-letter-spacing</td>
     <td>Number</td>
-    <td><code>.0313em</code></td>
+    <td><code>null</code></td>
     <td><code>0.0313em</code></td>
 </tr>
 <tr>
@@ -499,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -509,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -519,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -529,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -539,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-wider)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-wider)</code></td>
 </tr>
 <tr>
@@ -549,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -559,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -569,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pre-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
@@ -579,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pre-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -589,17 +550,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the code tag.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border of the code tag.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-code-bg</td>
     <td>String</td>
-    <td><code>k-color(app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-app-surface)</code></td>
 </tr>
 <tr>
@@ -609,17 +570,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the code tag.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the code tag.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-code-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -629,7 +590,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display1-font-size</td>
     <td>Number</td>
-    <td><code>140px</code></td>
+    <td><code>null</code></td>
     <td><code>140px</code></td>
 </tr>
 <tr>
@@ -639,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display2-font-size</td>
     <td>Number</td>
-    <td><code>112px</code></td>
+    <td><code>null</code></td>
     <td><code>112px</code></td>
 </tr>
 <tr>
@@ -649,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-font-size</td>
     <td>Number</td>
-    <td><code>90px</code></td>
+    <td><code>null</code></td>
     <td><code>90px</code></td>
 </tr>
 <tr>
@@ -659,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display4-font-size</td>
     <td>Number</td>
-    <td><code>72px</code></td>
+    <td><code>null</code></td>
     <td><code>72px</code></td>
 </tr>
 <tr>
@@ -669,7 +630,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display1-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -679,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display2-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -689,7 +650,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -699,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display4-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -709,7 +670,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display1-line-height</td>
     <td>Number</td>
-    <td><code>1.2</code></td>
+    <td><code>null</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -719,7 +680,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display2-line-height</td>
     <td>Number</td>
-    <td><code>1.2</code></td>
+    <td><code>null</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -729,7 +690,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-line-height</td>
     <td>Number</td>
-    <td><code>1.2</code></td>
+    <td><code>null</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -739,7 +700,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display4-line-height</td>
     <td>Number</td>
-    <td><code>1.2</code></td>
+    <td><code>null</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -749,7 +710,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display1-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-light)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-light)</code></td>
 </tr>
 <tr>
@@ -759,7 +720,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display2-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-light)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-light)</code></td>
 </tr>
 <tr>
@@ -769,7 +730,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-light)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-light)</code></td>
 </tr>
 <tr>
@@ -779,7 +740,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display4-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-light)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-light)</code></td>
 </tr>
 <tr>
@@ -789,7 +750,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display1-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-tighter)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-tighter)</code></td>
 </tr>
 <tr>
@@ -799,7 +760,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display2-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-tighter)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-tighter)</code></td>
 </tr>
 <tr>
@@ -809,7 +770,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-tighter)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-tighter)</code></td>
 </tr>
 <tr>
@@ -819,7 +780,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display4-letter-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-letter-spacing-tighter)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-tighter)</code></td>
 </tr>
 <tr>
@@ -829,36 +790,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display</td>
     <td>Map</td>
-    <td><code>(
-    1: (
-        font-size: $kendo-display1-font-size,
-        font-family: $kendo-display1-font-family,
-        line-height: $kendo-display1-line-height,
-        font-weight: $kendo-display1-font-weight,
-        letter-spacing: $kendo-display1-letter-spacing
-    ),
-    2: (
-        font-size: $kendo-display2-font-size,
-        font-family: $kendo-display2-font-family,
-        line-height: $kendo-display2-line-height,
-        font-weight: $kendo-display2-font-weight,
-        letter-spacing: $kendo-display2-letter-spacing
-    ),
-    3: (
-        font-size: $kendo-display3-font-size,
-        font-family: $kendo-display3-font-family,
-        line-height: $kendo-display3-line-height,
-        font-weight: $kendo-display3-font-weight,
-        letter-spacing: $kendo-display3-letter-spacing
-    ),
-    4: (
-        font-size: $kendo-display4-font-size,
-        font-family: $kendo-display4-font-family,
-        line-height: $kendo-display4-line-height,
-        font-weight: $kendo-display4-font-weight,
-        letter-spacing: $kendo-display4-letter-spacing
-    )
-)</code></td>
+    <td><code>null</code></td>
     <td><ul><li>1: "font-size":"140px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>2: "font-size":"112px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>3: "font-size":"90px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>4: "font-size":"72px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li></ul></td>
 </tr>
 <tr>

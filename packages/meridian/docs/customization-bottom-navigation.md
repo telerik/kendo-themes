@@ -28,9 +28,29 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-bottom-nav-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused BottomNavigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused BottomNavigation item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-bottom-nav-default-theme-color</td>
     <td>String</td>
-    <td><code>"primary"</code></td>
+    <td><code>null</code></td>
     <td><code>"primary"</code></td>
 </tr>
 <tr>
@@ -40,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-default-fill-mode</td>
     <td>String</td>
-    <td><code>"flat"</code></td>
+    <td><code>null</code></td>
     <td><code>"flat"</code></td>
 </tr>
 <tr>
@@ -50,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -60,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-bottom-nav-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -70,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -80,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-border-width</td>
     <td>List</td>
-    <td><code>1px 0px 0px 0px</code></td>
+    <td><code>null</code></td>
     <td><code>(1px 0px 0px 0px)</code></td>
 </tr>
 <tr>
@@ -90,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(xl)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-xl)</code></td>
 </tr>
 <tr>
@@ -100,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
@@ -110,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -120,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-line-height</td>
     <td>Number</td>
-    <td><code>1</code></td>
+    <td><code>null</code></td>
     <td><code>1</code></td>
 </tr>
 <tr>
@@ -130,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-letter-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-letter-spacing-normal, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-letter-spacing-normal, normal)</code></td>
 </tr>
 <tr>
@@ -140,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -150,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -160,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-item-min-width</td>
     <td>Number</td>
-    <td><code>72px</code></td>
+    <td><code>null</code></td>
     <td><code>72px</code></td>
 </tr>
 <tr>
@@ -180,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>Number</td>
-    <td><code>48px</code></td>
+    <td><code>null</code></td>
     <td><code>48px</code></td>
 </tr>
 <tr>
@@ -190,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-item-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
@@ -200,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-item-gap</td>
     <td>List</td>
-    <td><code>0 k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>(0 var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -210,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-shadow</td>
     <td>String</td>
-    <td><code>k-elevation(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-elevation-4)</code></td>
 </tr>
 <tr>
@@ -220,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-flat-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -230,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-flat-bg</td>
     <td>String</td>
-    <td><code>k-translucency-bg(k-elevation-bg(1, k-color(surface-alt)))</code></td>
+    <td><code>null</code></td>
     <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
 </tr>
 <tr>
@@ -240,31 +260,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-flat-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat BottomNavigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-nav-item-focus-outline-width</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused BottomNavigation item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-nav-item-focus-outline-offset</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused BottomNavigation item.</div></div>
     </td>
 </tr>
 <tr>

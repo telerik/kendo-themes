@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-bubble-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-border-radius-sm</td>
     <td>String</td>
-    <td><code>k-border-radius(sm)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-sm)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-border-style</td>
     <td>String</td>
-    <td><code>solid</code></td>
+    <td><code>null</code></td>
     <td><code>solid</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-text</td>
     <td>String</td>
-    <td><code>k-color(secondary-on-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-border</td>
     <td>String</td>
-    <td><code>$kendo-bubble-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-shadow</td>
     <td>String</td>
-    <td><code>none</code></td>
+    <td><code>null</code></td>
     <td><code>none</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary-subtle-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-subtle-hover)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-bubble-hover-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-subtle-hover)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-active-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary-subtle-active)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-active-border</td>
     <td>String</td>
-    <td><code>$kendo-bubble-active-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-focus-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-bubble-focus-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-expandable-spacing</td>
     <td>String</td>
-    <td><code>$kendo-bubble-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-expandable-icon-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bubble-expandable-icon-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-alt-bubble-hover-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-active-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-active)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-active)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-active-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-alt-bubble-active-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-active)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-focus-bg</td>
     <td>String</td>
-    <td><code>$kendo-chat-alt-bubble-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-chat-alt-bubble-focus-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(primary) 16%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary) 16%, transparent))</code></td>
 </tr>
 <tr>

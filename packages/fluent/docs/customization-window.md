@@ -28,126 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-window-default-size</td>
-    <td>String</td>
-    <td><code>"auto"</code></td>
-    <td><code>"auto"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-border-width</td>
-    <td>String</td>
-    <td><code>var(--kendo-window-border-width, 0)</code></td>
-    <td><code>var(--kendo-window-border-width, 0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-border-radius</td>
-    <td>String</td>
-    <td><code>var(--kendo-window-border-radius, k-border-radius(md))</code></td>
-    <td><code>var(--kendo-window-border-radius, var(--kendo-border-radius-md))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-window-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-window-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-window-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-titlebar-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-titlebar-padding-x, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-window-titlebar-padding-x, var(--kendo-spacing-6))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Window titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-titlebar-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-titlebar-padding-y, k-spacing(6) k-spacing(4) )</code></td>
-    <td><code>var(--kendo-window-titlebar-padding-y, var(--kendo-spacing-6) var(--kendo-spacing-4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Window titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-titlebar-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-titlebar-border-width, 0 )</code></td>
-    <td><code>var(--kendo-window-titlebar-border-width, 0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border of the Window titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-titlebar-border-style</td>
-    <td>String</td>
-    <td><code>solid</code></td>
-    <td><code>solid</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of the border of the Window titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-title-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-title-font-size, var(--kendo-font-size-xl) )</code></td>
-    <td><code>var(--kendo-window-title-font-size, var(--kendo-font-size-xl))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the title of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-title-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-title-line-height, var(--kendo-line-height-xs) )</code></td>
-    <td><code>var(--kendo-window-title-line-height, var(--kendo-line-height-xs))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the title of the Window.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-window-title-font-weight</td>
     <td>String</td>
     <td><code>var( --kendo-window-title-font-weight, var(--kendo-font-weight-semibold) )</code></td>
@@ -155,86 +35,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the title of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-actions-gap</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-actions-gap, k-spacing(0) )</code></td>
-    <td><code>var(--kendo-window-actions-gap, var(--kendo-spacing-0))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the buttons in the Window titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-action-opacity</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-action-opacity, 1 )</code></td>
-    <td><code>var(--kendo-window-action-opacity, 1)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the buttons in the Window titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-action-hover-opacity</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-action-hover-opacity, 1 )</code></td>
-    <td><code>var(--kendo-window-action-hover-opacity, 1)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered buttons in the Window titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-inner-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-inner-padding-x, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-window-inner-padding-x, var(--kendo-spacing-6))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the content of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-inner-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-inner-padding-y, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-window-inner-padding-y, var(--kendo-spacing-3))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the content of the Window.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-buttongroup-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-buttongroup-padding-x, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-window-buttongroup-padding-x, var(--kendo-spacing-6))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Window action buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-buttongroup-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-buttongroup-padding-y, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-window-buttongroup-padding-y, var(--kendo-spacing-6))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Window action buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-window-buttongroup-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-window-buttongroup-border-width, 0 )</code></td>
-    <td><code>var(--kendo-window-buttongroup-border-width, 0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the top border of the Window action buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -248,9 +48,209 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-window-default-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>"auto"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-border-width, 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-border-radius</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-border-radius, var(--kendo-border-radius-md))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-titlebar-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-titlebar-padding-x, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Window titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-titlebar-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-titlebar-padding-y, var(--kendo-spacing-6) var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Window titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-titlebar-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-titlebar-border-width, 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border of the Window titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-titlebar-border-style</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of the border of the Window titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-title-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-title-font-size, var(--kendo-font-size-xl))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the title of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-title-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-title-line-height, var(--kendo-line-height-xs))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the title of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-actions-gap</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-actions-gap, var(--kendo-spacing-0))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the buttons in the Window titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-action-opacity</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-action-opacity, 1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the buttons in the Window titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-action-hover-opacity</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-action-hover-opacity, 1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered buttons in the Window titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-inner-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-inner-padding-x, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the content of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-inner-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-inner-padding-y, var(--kendo-spacing-3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the content of the Window.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-buttongroup-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-buttongroup-padding-x, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Window action buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-buttongroup-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-buttongroup-padding-y, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Window action buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-buttongroup-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-window-buttongroup-border-width, 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the top border of the Window action buttons.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-window-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-window-bg, k-color(surface-alt) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-window-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-text</td>
     <td>String</td>
-    <td><code>var( --kendo-window-text, k-color(on-app-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-window-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-border</td>
     <td>String</td>
-    <td><code>var( --kendo-window-border, k-color(surface-alt) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-window-border, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-window-shadow, var( --kendo-elevation-5, none ) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-window-shadow, var(--kendo-elevation-5, none))</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-focus-shadow</td>
     <td>String</td>
-    <td><code>$kendo-window-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-window-shadow, var(--kendo-elevation-5, none))</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-titlebar-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-window-titlebar-bg, k-color(surface-alt) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-window-titlebar-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-titlebar-text</td>
     <td>String</td>
-    <td><code>var( --kendo-window-titlebar-text, k-color(on-app-surface) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-window-titlebar-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
@@ -320,11 +320,21 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-titlebar-border</td>
     <td>String</td>
-    <td><code>var( --kendo-window-titlebar-border, k-color(primary) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-window-titlebar-border, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Window titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-window-titlebar-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the Window titlebar.</div></div>
     </td>
 </tr>
 <tr>

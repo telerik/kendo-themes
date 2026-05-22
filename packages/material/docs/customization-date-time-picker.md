@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-datetime-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-datetime-width</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-calendar-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>null</code></td>
     <td><code>calc(48px * 8 + var(--kendo-spacing-1) * 2)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-datetime-sm-width</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-calendar-sm-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>null</code></td>
     <td><code>calc(40px * 8 + var(--kendo-spacing-1) * 2)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-datetime-md-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-datetime-width</code></td>
+    <td><code>null</code></td>
     <td><code>calc(48px * 8 + var(--kendo-spacing-1) * 2)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-datetime-lg-width</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-calendar-lg-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>null</code></td>
     <td><code>calc(56px * 8 + var(--kendo-spacing-1) * 2)</code></td>
 </tr>
 <tr>

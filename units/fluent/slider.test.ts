@@ -16,4 +16,8 @@ const expected = [];
 
 const unexpected = [];
 
-testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
+// $kendo-slider-thumb-transition-speed and $kendo-slider-thumb-transition-function
+// feed their respective draghandle counterparts and are not used directly in CSS output.
+// When both thumb and draghandle vars are configured independently, the draghandle test
+// value overrides the thumb value so thumb test values never appear in output.
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected, "kendo-slider-thumb-transition-speed", "kendo-slider-thumb-transition-function"]);

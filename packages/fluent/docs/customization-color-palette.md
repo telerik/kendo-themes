@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-color-palette-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-line-height, 0 )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-line-height, 0)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-width</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-height</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-height, #{$kendo-color-palette-tile-width} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-tile-height, var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-sm-tile-width</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-sm-tile-width, #{k-spacing(5.5)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-sm-tile-width, var(--kendo-spacing-5\.5))</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-sm-tile-height</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-sm-tile-height, #{$kendo-color-palette-sm-tile-width} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-sm-tile-height, var(--kendo-color-palette-sm-tile-width, var(--kendo-spacing-5\.5)))</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-md-tile-width</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-md-tile-width, #{$kendo-color-palette-tile-width} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-md-tile-width, var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-md-tile-height</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-md-tile-height, #{$kendo-color-palette-tile-height} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-md-tile-height, var(--kendo-color-palette-tile-height, var(--kendo-spacing-6)))</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-lg-tile-width</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-lg-tile-width, #{k-spacing(8)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-lg-tile-width, var(--kendo-spacing-8))</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-lg-tile-height</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-lg-tile-height, #{$kendo-color-palette-lg-tile-width} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-lg-tile-height, var(--kendo-color-palette-lg-tile-width, var(--kendo-spacing-8)))</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px #{k-color(border-alt)}, inset 0 0 0 3px #{k-color(app-surface)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-tile-focus-shadow, inset 0 0 0 2px var(--kendo-color-border-alt), inset 0 0 0 3px var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px #{k-color(primary)}, inset 0 0 0 3px #{k-color(app-surface)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-tile-hover-shadow, inset 0 0 0 2px var(--kendo-color-primary), inset 0 0 0 3px var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-selected-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-color-palette-tile-selected-shadow, inset 0 0 0 3px #{k-color(primary)}, inset 0 0 0 5px #{k-color(app-surface)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-palette-tile-selected-shadow, inset 0 0 0 3px var(--kendo-color-primary), inset 0 0 0 5px var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>

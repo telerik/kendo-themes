@@ -28,9 +28,29 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-calendar-range-start-bg</td>
+    <td>String</td>
+    <td><code>linear-gradient(to right, k-color(surface) 0%, k-color(surface) 50%, k-color(secondary) 50%, k-color(secondary) 100%)</code></td>
+    <td><code>linear-gradient(to right, var(--kendo-color-surface) 0%, var(--kendo-color-surface) 50%, var(--kendo-color-secondary) 50%, var(--kendo-color-secondary) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar range start selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-range-end-bg</td>
+    <td>String</td>
+    <td><code>linear-gradient(to left, k-color(surface) 0%, k-color(surface) 50%, k-color(secondary) 50%, k-color(secondary) 100%)</code></td>
+    <td><code>linear-gradient(to left, var(--kendo-color-surface) 0%, var(--kendo-color-surface) 50%, var(--kendo-color-secondary) 50%, var(--kendo-color-secondary) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar range end selection.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -50,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -80,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(xxxl)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-xxxl)</code></td>
 </tr>
 <tr>
@@ -90,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-size</td>
     <td>Number</td>
-    <td><code>48px</code></td>
+    <td><code>null</code></td>
     <td><code>48px</code></td>
 </tr>
 <tr>
@@ -100,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -110,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -120,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -130,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -140,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -150,17 +170,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the header in the Calendar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the header in the Calendar.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-calendar-header-bg</td>
     <td>Color</td>
-    <td><code>transparent</code></td>
+    <td><code>null</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -170,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -180,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-gradient</td>
     <td>String</td>
-    <td><code>none</code></td>
+    <td><code>null</code></td>
     <td><code>none</code></td>
 </tr>
 <tr>
@@ -210,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-footer-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -220,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-footer-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -230,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -240,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-calendar-cell-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -250,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius( full )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-full)</code></td>
 </tr>
 <tr>
@@ -280,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-cell-width</td>
     <td>Number</td>
-    <td><code>$kendo-calendar-cell-size</code></td>
+    <td><code>null</code></td>
     <td><code>48px</code></td>
 </tr>
 <tr>
@@ -290,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-cell-height</td>
     <td>Number</td>
-    <td><code>$kendo-calendar-cell-size</code></td>
+    <td><code>null</code></td>
     <td><code>48px</code></td>
 </tr>
 <tr>
@@ -300,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-cell-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>
@@ -310,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-cell-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
@@ -320,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-cell-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -340,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-caption-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
@@ -350,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-caption-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3\.5)</code></td>
 </tr>
 <tr>
@@ -360,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-caption-height</td>
     <td>Number</td>
-    <td><code>$kendo-calendar-cell-size</code></td>
+    <td><code>null</code></td>
     <td><code>48px</code></td>
 </tr>
 <tr>
@@ -370,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-caption-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -380,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-caption-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -390,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-caption-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -400,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-week-number-font-size</td>
     <td>Null</td>
-    <td><code>$kendo-calendar-font-size</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -410,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-view-width</td>
     <td>Number</td>
-    <td><code>($kendo-calendar-cell-size * 8)</code></td>
+    <td><code>null</code></td>
     <td><code>384px</code></td>
 </tr>
 <tr>
@@ -420,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-view-height</td>
     <td>Number</td>
-    <td><code>($kendo-calendar-cell-size * 7)</code></td>
+    <td><code>null</code></td>
     <td><code>336px</code></td>
 </tr>
 <tr>
@@ -430,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-view-gap</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
@@ -460,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-style</td>
     <td>String</td>
-    <td><code>color</code></td>
+    <td><code>null</code></td>
     <td><code>color</code></td>
 </tr>
 <tr>
@@ -470,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-color</td>
     <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
@@ -480,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-normal)</code></td>
 </tr>
 <tr>
@@ -490,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-box-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
@@ -510,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-week-number-text</td>
     <td>String</td>
-    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>
@@ -530,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-other-month-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -550,7 +570,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -590,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -600,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-primary)</code></td>
 </tr>
 <tr>
@@ -630,7 +650,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(primary-hover)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
@@ -640,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-calendar-cell-selected-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-primary)</code></td>
 </tr>
 <tr>
@@ -690,7 +710,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-width</td>
     <td>Number</td>
-    <td><code>5em</code></td>
+    <td><code>null</code></td>
     <td><code>5em</code></td>
 </tr>
 <tr>
@@ -700,7 +720,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-item-height</td>
     <td>Number</td>
-    <td><code>$kendo-calendar-cell-size</code></td>
+    <td><code>null</code></td>
     <td><code>48px</code></td>
 </tr>
 <tr>
@@ -710,7 +730,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
-    <td><code>$kendo-calendar-bg</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -720,7 +740,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-text</td>
     <td>String</td>
-    <td><code>$kendo-calendar-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -730,7 +750,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -740,17 +760,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered items in the Calendar navigation.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered items in the Calendar navigation.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-calendar-navigation-marker-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
@@ -760,7 +780,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-range-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
@@ -768,29 +788,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-range-start-bg</td>
-    <td>String</td>
-    <td><code>linear-gradient(to right, k-color(surface) 0%, k-color(surface) 50%, k-color(secondary) 50%, k-color(secondary) 100%)</code></td>
-    <td><code>linear-gradient(to right, var(--kendo-color-surface) 0%, var(--kendo-color-surface) 50%, var(--kendo-color-secondary) 50%, var(--kendo-color-secondary) 100%)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar range start selection.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-range-end-bg</td>
-    <td>String</td>
-    <td><code>linear-gradient(to left, k-color(surface) 0%, k-color(surface) 50%, k-color(secondary) 50%, k-color(secondary) 100%)</code></td>
-    <td><code>linear-gradient(to left, var(--kendo-color-surface) 0%, var(--kendo-color-surface) 50%, var(--kendo-color-secondary) 50%, var(--kendo-color-secondary) 100%)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar range end selection.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-infinite-calendar-header-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -800,7 +800,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-infinite-calendar-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -810,7 +810,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-infinite-calendar-view-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -820,7 +820,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-infinite-calendar-view-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -830,7 +830,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-infinite-calendar-view-height</td>
     <td>Number</td>
-    <td><code>( $kendo-calendar-cell-size * 9 )</code></td>
+    <td><code>null</code></td>
     <td><code>432px</code></td>
 </tr>
 <tr>
@@ -840,7 +840,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-range-cell-border-radius</td>
     <td>String</td>
-    <td><code>k-border-radius(full)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-border-radius-full)</code></td>
 </tr>
 <tr>
@@ -850,7 +850,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -860,7 +860,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-sm-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -870,7 +870,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-sm-cell-size</td>
     <td>Number</td>
-    <td><code>40px</code></td>
+    <td><code>null</code></td>
     <td><code>40px</code></td>
 </tr>
 <tr>
@@ -880,7 +880,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-sm-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -890,7 +890,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-sm-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -900,7 +900,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-md-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>
@@ -910,7 +910,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-md-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
@@ -920,7 +920,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-md-cell-size</td>
     <td>Number</td>
-    <td><code>$kendo-calendar-cell-size</code></td>
+    <td><code>null</code></td>
     <td><code>48px</code></td>
 </tr>
 <tr>
@@ -930,7 +930,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-md-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -940,7 +940,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-md-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(3)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
@@ -950,7 +950,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-lg-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>
@@ -960,7 +960,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-lg-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
@@ -970,7 +970,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-lg-cell-size</td>
     <td>Number</td>
-    <td><code>56px</code></td>
+    <td><code>null</code></td>
     <td><code>56px</code></td>
 </tr>
 <tr>
@@ -980,7 +980,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-lg-cell-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>
@@ -990,7 +990,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-lg-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
 </tr>
 <tr>

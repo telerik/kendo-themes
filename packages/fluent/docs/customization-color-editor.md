@@ -28,9 +28,49 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-color-editor-shadow</td>
+    <td>String</td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorEditor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-header-actions-spacing</td>
+    <td>String</td>
+    <td><code>var(--kendo-color-editor-header-actions-spacing, calc( #{k-spacing(2)} / 2 ))</code></td>
+    <td><code>var(--kendo-color-editor-header-actions-spacing, calc(var(--kendo-spacing-2) / 2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorEditor header actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-views-spacing</td>
+    <td>String</td>
+    <td><code>var(--kendo-color-editor-views-spacing, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-views-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-footer-padding-y</td>
+    <td>String</td>
+    <td><code>var(--kendo-color-editor-footer-padding-y, k-spacing(2))</code></td>
+    <td><code>var(--kendo-color-editor-footer-padding-y, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorEditor footer.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-editor-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-spacer</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-spacer, k-spacing(2))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-spacer, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -60,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-min-width</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-min-width, 236px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-sm-min-width, 236px)</code></td>
 </tr>
 <tr>
@@ -70,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-min-width</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-min-width, 260px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-md-min-width, 260px)</code></td>
 </tr>
 <tr>
@@ -80,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-min-width</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-lg-min-width, 362px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-lg-min-width, 362px)</code></td>
 </tr>
 <tr>
@@ -90,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-border-width</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-border-width, 1px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-border-width, 1px)</code></td>
 </tr>
 <tr>
@@ -100,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-border-radius</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-border-radius, k-border-radius(md))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
@@ -110,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -120,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -130,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -140,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-text</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-text, k-color(on-app-surface))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
@@ -150,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-bg, k-color(surface-alt))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
@@ -160,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-border</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-border, color-mix(in srgb, k-color(border) 16%, transparent))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
@@ -168,19 +208,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorEditor.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-focus-border</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-focus-border, color-mix(in srgb, k-color(border) 10%, transparent))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-focus-border, color-mix(in srgb, var(--kendo-color-border) 10%, transparent))</code></td>
 </tr>
 <tr>
@@ -198,9 +228,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-header-actions-spacing</td>
+    <td>$kendo-color-editor-header-actions-gap</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-header-actions-spacing, calc( #{k-spacing(2)} / 2 ))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-header-actions-spacing, calc(var(--kendo-spacing-2) / 2))</code></td>
 </tr>
 <tr>
@@ -210,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-header-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-header-padding-y, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-sm-header-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -220,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-header-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-header-padding-x, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-sm-header-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -230,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-header-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-header-padding-y, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-md-header-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -240,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-header-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-header-padding-x, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-md-header-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -250,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-header-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-lg-header-padding-y, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-lg-header-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -260,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-header-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-lg-header-padding-x, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-lg-header-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -270,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-color-preview-width</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-color-preview-width, 34px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-color-preview-width, 34px)</code></td>
 </tr>
 <tr>
@@ -280,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-color-preview-height</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-color-preview-height, 14px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-color-preview-height, 14px)</code></td>
 </tr>
 <tr>
@@ -290,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-preview-gap</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-preview-gap, k-spacing(1))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-preview-gap, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -300,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-preview-gap</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-preview-gap, k-spacing(1))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-sm-preview-gap, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -310,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-preview-gap</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-preview-gap, $kendo-color-editor-preview-gap)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-md-preview-gap, var(--kendo-color-editor-preview-gap, var(--kendo-spacing-1)))</code></td>
 </tr>
 <tr>
@@ -320,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-preview-gap</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-lg-preview-gap, k-spacing(1))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-lg-preview-gap, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -330,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-color-preview-width</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-color-preview-width, 34px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-sm-color-preview-width, 34px)</code></td>
 </tr>
 <tr>
@@ -340,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-color-preview-height</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-color-preview-height, 12px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-sm-color-preview-height, 12px)</code></td>
 </tr>
 <tr>
@@ -350,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-color-preview-width</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-color-preview-width, $kendo-color-editor-color-preview-width)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-md-color-preview-width, var(--kendo-color-editor-color-preview-width, 34px))</code></td>
 </tr>
 <tr>
@@ -360,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-color-preview-height</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-color-preview-height, $kendo-color-editor-color-preview-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-md-color-preview-height, var(--kendo-color-editor-color-preview-height, 14px))</code></td>
 </tr>
 <tr>
@@ -370,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-color-preview-width</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-lg-color-preview-width, 34px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-lg-color-preview-width, 34px)</code></td>
 </tr>
 <tr>
@@ -380,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-color-preview-height</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-lg-color-preview-height, 16px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-lg-color-preview-height, 16px)</code></td>
 </tr>
 <tr>
@@ -388,9 +418,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-views-spacing</td>
+    <td>$kendo-color-editor-views-gap</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-views-spacing, k-spacing(2))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-views-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -400,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-views-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-views-padding-y, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-sm-views-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -410,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-views-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-sm-views-padding-x, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-sm-views-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -420,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-views-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-views-padding-y, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-md-views-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -430,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-views-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-md-views-padding-x, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-md-views-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -440,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-views-padding-y</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-lg-views-padding-y, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-lg-views-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -450,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-views-padding-x</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-lg-views-padding-x, k-spacing(3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-lg-views-padding-x, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -458,19 +488,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-footer-padding-y</td>
-    <td>String</td>
-    <td><code>var(--kendo-color-editor-footer-padding-y, k-spacing(2))</code></td>
-    <td><code>var(--kendo-color-editor-footer-padding-y, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorEditor footer.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-color-gradient-focus-outline-color, rgba(0, 0, 0, 0.3))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-color-gradient-focus-outline-color, rgba(0, 0, 0, 0.3))</code></td>
 </tr>
 <tr>
@@ -480,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-color-gradient-focus-outline, 2px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-color-gradient-focus-outline, 2px)</code></td>
 </tr>
 <tr>
@@ -490,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-offset</td>
     <td>String</td>
-    <td><code>var(--kendo-color-editor-color-gradient-focus-outline-offset, 2px)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-editor-color-gradient-focus-outline-offset, 2px)</code></td>
 </tr>
 <tr>

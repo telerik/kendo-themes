@@ -28,56 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-message-box-default-theme-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the MessageBox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-margin</td>
-    <td>String</td>
-    <td><code>var( --kendo-message-box-margin, 0 0 k-spacing(3) 0 )</code></td>
-    <td><code>var(--kendo-message-box-margin, 0 0 var(--kendo-spacing-3) 0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin around the message box.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-message-box-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-message-box-padding-x, var(--kendo-spacing-3))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the message box.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-message-box-padding-y, k-spacing(2.5) )</code></td>
-    <td><code>var(--kendo-message-box-padding-y, var(--kendo-spacing-2\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the message box.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-message-box-border-width, 1px )</code></td>
-    <td><code>var(--kendo-message-box-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the message box.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-message-box-border-style</td>
     <td>String</td>
     <td><code>var( --kendo-message-box-border-style, solid )</code></td>
@@ -88,16 +38,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-message-box-border-radius</td>
-    <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the message box.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-message-box-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-message-box-font-family, var(--kendo-font-family) )</code></td>
@@ -105,36 +45,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the message box.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-message-box-font-size, var(--kendo-font-size-sm) )</code></td>
-    <td><code>var(--kendo-message-box-font-size, var(--kendo-font-size-sm))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the message box.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-message-box-line-height, var(--kendo-line-height-lg) )</code></td>
-    <td><code>var(--kendo-message-box-line-height, var(--kendo-line-height-lg))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the message box.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-link-font-style</td>
-    <td>String</td>
-    <td><code>var( --kendo-message-box-link-font-style, normal )</code></td>
-    <td><code>var(--kendo-message-box-link-font-style, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font style of the message box links.</div></div>
     </td>
 </tr>
 <tr>
@@ -165,6 +75,136 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the message box links.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-default-theme-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-margin</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-message-box-margin, 0 0 var(--kendo-spacing-3) 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-message-box-padding-x, var(--kendo-spacing-3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-message-box-padding-y, var(--kendo-spacing-2\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-message-box-border-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-border-radius</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-message-box-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-message-box-line-height, var(--kendo-line-height-lg))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-bg-level</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color level of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-text-level</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color level of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-border-level</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color level of the MessageBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-link-font-style</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-message-box-link-font-style, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the MessageBox link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-message-box-link-text-decoration</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text decoration of the MessageBox link.</div></div>
     </td>
 </tr>
 </tbody>

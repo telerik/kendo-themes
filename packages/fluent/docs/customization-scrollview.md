@@ -28,136 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-scrollview-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-border-width, 0px )</code></td>
-    <td><code>var(--kendo-scrollview-border-width, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ScrollView.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-border-radius</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-border-radius, null )</code></td>
-    <td><code>var(--kendo-scrollview-border-radius, )</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ScrollView.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-scrollview-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the ScrollView.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-scrollview-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ScrollView.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-scrollview-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ScrollView.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-scrollview-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ScrollView.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-scrollview-bg, var(--kendo-color-surface-alt))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-scrollview-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pagebutton-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pagebutton-size, 10px )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-size, 10px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the ScrollView page button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pagebutton-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pagebutton-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-bg, var(--kendo-color-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView page button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pagebutton-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pagebutton-border, $kendo-scrollview-pagebutton-bg )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-border, var(--kendo-scrollview-pagebutton-bg, var(--kendo-color-app-surface)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView page button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pagebutton-primary-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pagebutton-primary-bg, k-color(primary) )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-primary-bg, var(--kendo-color-primary))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary background color of the ScrollView page button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pagebutton-primary-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pagebutton-primary-border, $kendo-scrollview-pagebutton-primary-bg )</code></td>
-    <td><code>var(--kendo-scrollview-pagebutton-primary-border, var(--kendo-scrollview-pagebutton-primary-bg, var(--kendo-color-primary)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary border color of the ScrollView page button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scrollview-pagebutton-hover-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-pagebutton-hover-shadow, 0 0 0 1px k-color(base) )</code></td>
@@ -198,66 +68,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-pagebutton-primary-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected ScrollView page button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pager-offset</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pager-offset, 0px )</code></td>
-    <td><code>var(--kendo-scrollview-pager-offset, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the ScrollView pager.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pager-item-spacing</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pager-item-spacing, k-spacing(5) )</code></td>
-    <td><code>var(--kendo-scrollview-pager-item-spacing, var(--kendo-spacing-5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ScrollView pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pager-item-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pager-item-border-width, 0px )</code></td>
-    <td><code>var(--kendo-scrollview-pager-item-border-width, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the ScrollView pager items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-pager-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-pager-height, calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width} * 2 + #{$kendo-scrollview-pager-item-spacing} * 2 ) )</code></td>
-    <td><code>var(--kendo-scrollview-pager-height, calc(var(--kendo-scrollview-pagebutton-size, 10px) + var(--kendo-scrollview-pager-item-border-width, 0px) * 2 + var(--kendo-scrollview-pager-item-spacing, var(--kendo-spacing-5)) * 2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ScrollView pager.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-navigation-color</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-navigation-color, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scrollview-navigation-color, var(--kendo-color-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the ScrollView navigation arrows.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scrollview-navigation-arrow-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-scrollview-navigation-arrow-shadow, k-elevation(3) )</code></td>
@@ -265,16 +75,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView navigation arrows.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-navigation-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-scrollview-navigation-bg, transparent )</code></td>
-    <td><code>var(--kendo-scrollview-navigation-bg, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView navigation.</div></div>
     </td>
 </tr>
 <tr>
@@ -318,9 +118,269 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-scrollview-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-border-width, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ScrollView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-border-radius</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-border-radius, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ScrollView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the ScrollView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ScrollView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ScrollView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ScrollView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-bg, var(--kendo-color-surface-alt))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-size, 10px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-bg, var(--kendo-color-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-border, var(--kendo-scrollview-pagebutton-bg, var(--kendo-color-app-surface)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-primary-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-primary-bg, var(--kendo-color-primary))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary background color of the ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-primary-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pagebutton-primary-border, var(--kendo-scrollview-pagebutton-primary-bg, var(--kendo-color-primary)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary border color of the ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pagebutton-primary-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected ScrollView page button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pager-offset</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pager-offset, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the ScrollView pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pager-item-spacing</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pager-item-spacing, var(--kendo-spacing-5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ScrollView pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pager-item-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pager-item-border-width, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the ScrollView pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-pager-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pager-height, calc(var(--kendo-scrollview-pagebutton-size, 10px) + var(--kendo-scrollview-pager-item-border-width, 0px) * 2 + var(--kendo-scrollview-pager-item-spacing, var(--kendo-spacing-5)) * 2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ScrollView pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-arrow-tap-highlight-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the highlight over the tapped ScrollView navigation arrows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-navigation-color</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-navigation-color, var(--kendo-color-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the ScrollView navigation arrows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-navigation-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-navigation-bg, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-navigation-default-opacity</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the ScrollView navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-navigation-hover-opacity</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover opacity of the ScrollView navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-light-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pager-light-bg, rgba(255, 255, 255, 0.4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in light mode.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-dark-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-scrollview-pager-dark-bg, rgba(0, 0, 0, 0.4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in dark mode.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-scrollview-transition-duration</td>
     <td>String</td>
-    <td><code>var( --kendo-scrollview-transition-duration, .3s )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-scrollview-transition-duration, 0.3s)</code></td>
 </tr>
 <tr>
@@ -330,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-transition-timing-function</td>
     <td>String</td>
-    <td><code>var( --kendo-scrollview-transition-timing-function, ease-in-out )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-scrollview-transition-timing-function, ease-in-out)</code></td>
 </tr>
 <tr>

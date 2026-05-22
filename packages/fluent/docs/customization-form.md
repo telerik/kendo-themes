@@ -28,9 +28,29 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-form-hint-text</td>
+    <td>String</td>
+    <td><code>var(--kendo-form-hint-text, #{k-color(subtle)})</code></td>
+    <td><code>var(--kendo-form-hint-text, var(--kendo-color-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-forms-invalid-color</td>
+    <td>String</td>
+    <td><code>var(--kendo-forms-invalid-color, #{k-color(error-on-surface)})</code></td>
+    <td><code>var(--kendo-forms-invalid-color, var(--kendo-color-error-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-form-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-spacer</td>
     <td>String</td>
-    <td><code>var(--kendo-form-spacer, #{k-spacing(4)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-spacer, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
@@ -50,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-form-font-size, var(--kendo-font-size))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
@@ -60,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-form-line-height, var(--kendo-line-height))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
@@ -70,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-fieldset-margin</td>
     <td>String</td>
-    <td><code>var(--kendo-form-fieldset-margin, 2em 0 0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-fieldset-margin, 2em 0 0)</code></td>
 </tr>
 <tr>
@@ -80,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-fieldset-padding</td>
     <td>String</td>
-    <td><code>var(--kendo-form-fieldset-padding, #{k-spacing(0)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-fieldset-padding, var(--kendo-spacing-0))</code></td>
 </tr>
 <tr>
@@ -90,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-margin</td>
     <td>String</td>
-    <td><code>var(--kendo-form-legend-margin, 0 0 #{k-spacing(3)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-legend-margin, 0 0 var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -100,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-padding</td>
     <td>String</td>
-    <td><code>var(--kendo-form-legend-padding, #{k-spacing(0)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-legend-padding, var(--kendo-spacing-0))</code></td>
 </tr>
 <tr>
@@ -110,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-border-width</td>
     <td>String</td>
-    <td><code>var(--kendo-form-legend-border-width, 0 0 #{k-spacing(0.5)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-legend-border-width, 0 0 var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
@@ -120,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-border-style</td>
     <td>String</td>
-    <td><code>var(--kendo-form-legend-border-style, solid)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-legend-border-style, solid)</code></td>
 </tr>
 <tr>
@@ -130,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-border-color</td>
     <td>String</td>
-    <td><code>var(--kendo-form-legend-border-color, #{color-mix(in srgb, k-color(border) 16%, transparent)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-legend-border-color, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
@@ -140,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-width</td>
     <td>String</td>
-    <td><code>var(--kendo-form-legend-width, 100%)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-legend-width, 100%)</code></td>
 </tr>
 <tr>
@@ -150,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-form-legend-font-size, var(--kendo-font-size))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-legend-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
@@ -170,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-text-transform</td>
     <td>String</td>
-    <td><code>var(--kendo-form-legend-text-transform, uppercase)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-legend-text-transform, uppercase)</code></td>
 </tr>
 <tr>
@@ -180,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-label-margin-bottom</td>
     <td>String</td>
-    <td><code>var(--kendo-form-label-margin-bottom, #{k-spacing(2)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-label-margin-bottom, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -190,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-label-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-label-font-size, inherit)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-label-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -200,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-label-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-label-font-weight, inherit)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-label-font-weight, inherit)</code></td>
 </tr>
 <tr>
@@ -210,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-label-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-label-line-height, inherit)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-label-line-height, inherit)</code></td>
 </tr>
 <tr>
@@ -220,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-hint-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-form-hint-font-size, var(--kendo-font-size-sm))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-hint-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
@@ -230,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-hint-font-style</td>
     <td>String</td>
-    <td><code>var(--kendo-form-hint-font-style, normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-hint-font-style, normal)</code></td>
 </tr>
 <tr>
@@ -240,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-hint-margin-top</td>
     <td>String</td>
-    <td><code>var(--kendo-form-hint-margin-top, #{k-spacing(0.5)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-hint-margin-top, var(--kendo-spacing-0\.5))</code></td>
 </tr>
 <tr>
@@ -248,19 +268,9 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-hint-text</td>
-    <td>String</td>
-    <td><code>var(--kendo-form-hint-text, #{k-color(subtle)})</code></td>
-    <td><code>var(--kendo-form-hint-text, var(--kendo-color-subtle))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form hint.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-form-sm-rows-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-form-sm-rows-spacing, #{k-spacing(3)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-sm-rows-spacing, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -270,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-md-rows-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-form-md-rows-spacing, #{k-spacing(3)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-md-rows-spacing, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -280,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-lg-rows-spacing</td>
     <td>String</td>
-    <td><code>var(--kendo-form-lg-rows-spacing, #{k-spacing(3)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-lg-rows-spacing, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -290,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-separator-margin</td>
     <td>String</td>
-    <td><code>var(--kendo-form-separator-margin, #{k-spacing(3)} 0 0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-separator-margin, var(--kendo-spacing-3) 0 0)</code></td>
 </tr>
 <tr>
@@ -300,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-separator-border-color</td>
     <td>String</td>
-    <td><code>var(--kendo-form-separator-border-color, #{$kendo-form-legend-border-color})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-form-separator-border-color, var(--kendo-form-legend-border-color, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
 </tr>
 <tr>
@@ -310,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-horizontal-form-label-padding-top</td>
     <td>String</td>
-    <td><code>var(--kendo-horizontal-form-label-padding-top, #{k-spacing(1.5)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-horizontal-form-label-padding-top, var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
@@ -320,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-horizontal-form-label-margin-x</td>
     <td>String</td>
-    <td><code>var(--kendo-horizontal-form-label-margin-x, #{k-spacing(2)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-horizontal-form-label-margin-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -330,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-horizontal-form-label-width</td>
     <td>String</td>
-    <td><code>var(--kendo-horizontal-form-label-width, 25%)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-horizontal-form-label-width, 25%)</code></td>
 </tr>
 <tr>
@@ -340,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-horizontal-form-label-align</td>
     <td>String</td>
-    <td><code>var(--kendo-horizontal-form-label-align, flex-end)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-horizontal-form-label-align, flex-end)</code></td>
 </tr>
 <tr>
@@ -350,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-horizontal-form-field-wrap-max-width</td>
     <td>String</td>
-    <td><code>var(--kendo-horizontal-form-field-wrap-max-width, calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} ))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-horizontal-form-field-wrap-max-width, calc(100% - var(--kendo-horizontal-form-label-width, 25%) - var(--kendo-horizontal-form-label-margin-x, var(--kendo-spacing-2))))</code></td>
 </tr>
 <tr>
@@ -360,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-inline-form-element-width</td>
     <td>String</td>
-    <td><code>var(--kendo-inline-form-element-width, 25%)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-inline-form-element-width, 25%)</code></td>
 </tr>
 <tr>
@@ -368,19 +378,29 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-forms-invalid-color</td>
-    <td>String</td>
-    <td><code>var(--kendo-forms-invalid-color, #{k-color(error-on-surface)})</code></td>
-    <td><code>var(--kendo-forms-invalid-color, var(--kendo-color-error-on-surface))</code></td>
+    <td>$kendo-inline-form-field-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the inline Form field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-inline-form-field-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the inline Form field.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-label-optional-margin-x</td>
     <td>String</td>
-    <td><code>var(--kendo-label-optional-margin-x, #{k-spacing(1.5)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-label-optional-margin-x, var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
@@ -390,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-label-optional-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
@@ -400,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-label-optional-font-style</td>
     <td>String</td>
-    <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
 </tr>
 <tr>
@@ -410,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-label-optional-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
 </tr>
 <tr>
@@ -420,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fieldset-margin</td>
     <td>String</td>
-    <td><code>var(--kendo-fieldset-margin, #{k-spacing(7.5)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-fieldset-margin, var(--kendo-spacing-7\.5))</code></td>
 </tr>
 <tr>
@@ -428,9 +448,49 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-fieldset-legend-padding</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Form fieldset legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-legend-margin</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form fieldset legend</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-alert-error-margin</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form alert error.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-field-info-margin</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form field info.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fieldset-legend-text</td>
     <td>String</td>
-    <td><code>var(--kendo-fieldset-legend-text, #{k-color(subtle)})</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-fieldset-legend-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>

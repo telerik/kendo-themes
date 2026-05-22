@@ -28,66 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-wizard-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-wizard-border-width, 0px )</code></td>
-    <td><code>var(--kendo-wizard-border-width, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Wizard.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-wizard-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-wizard-padding-x, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-wizard-padding-x, var(--kendo-spacing-6))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-wizard-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-wizard-padding-y, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-wizard-padding-y, var(--kendo-spacing-6))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-wizard-font-size</td>
-    <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
-    <td><code>var(--kendo-font-size)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Wizard.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-wizard-line-height</td>
-    <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
-    <td><code>var(--kendo-line-height)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Wizard.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-wizard-font-family</td>
-    <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
-    <td><code>var(--kendo-font-family)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Wizard.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-wizard-steps-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-wizard-steps-padding-x, k-spacing(3) )</code></td>
@@ -95,26 +35,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard steps.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-wizard-content-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-wizard-content-padding-x, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-wizard-content-padding-x, var(--kendo-spacing-3))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard content.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-wizard-content-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-wizard-content-padding-y, k-spacing(3) )</code></td>
-    <td><code>var(--kendo-wizard-content-padding-y, var(--kendo-spacing-3))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard content.</div></div>
     </td>
 </tr>
 <tr>
@@ -138,16 +58,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-wizard-buttons-margin-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-wizard-buttons-margin-x, k-spacing(7) )</code></td>
-    <td><code>var(--kendo-wizard-buttons-margin-x, var(--kendo-spacing-7))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Wizard's Button container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-wizard-buttons-margin-y</td>
     <td>String</td>
     <td><code>var( --kendo-wizard-buttons-margin-y, k-spacing(6) )</code></td>
@@ -158,9 +68,99 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-wizard-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-wizard-padding-x, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-wizard-padding-y, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-content-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-wizard-content-padding-x, var(--kendo-spacing-3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-content-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-wizard-content-padding-y, var(--kendo-spacing-3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-buttons-margin-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-wizard-buttons-margin-x, var(--kendo-spacing-7))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Wizard's Button container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-wizard-border-width, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-font-family)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-wizard-step-focus-border</td>
     <td>String</td>
-    <td><code>var( --kendo-wizard-step-focus-border, k-color(border-alt) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-wizard-step-focus-border, var(--kendo-color-border-alt))</code></td>
 </tr>
 <tr>

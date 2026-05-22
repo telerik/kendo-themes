@@ -28,46 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-progressbar-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-height, 4px )</code></td>
-    <td><code>var(--kendo-progressbar-height, 4px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-horizontal-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-horizontal-width, 100% )</code></td>
-    <td><code>var(--kendo-progressbar-horizontal-width, 100%)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal width of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-animation-timing</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-animation-timing, 1s linear infinite )</code></td>
-    <td><code>var(--kendo-progressbar-animation-timing, 1s linear infinite)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The animation timing of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-border-width, 0px )</code></td>
-    <td><code>var(--kendo-progressbar-border-width, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-progressbar-border-radius</td>
     <td>String</td>
     <td><code>var( --kendo-progressbar-border-radius, var( --kendo-border-radius-sm, initial ) )</code></td>
@@ -75,36 +35,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-progressbar-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-font-size, var(--kendo-font-size-sm) )</code></td>
-    <td><code>var(--kendo-progressbar-font-size, var(--kendo-font-size-sm))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-line-height, var(--kendo-line-height-lg) )</code></td>
-    <td><code>var(--kendo-progressbar-line-height, var(--kendo-line-height-lg))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ProgressBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -125,86 +55,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-bg, #{k-color(secondary-on-surface)} )</code></td>
-    <td><code>var(--kendo-progressbar-bg, var(--kendo-color-secondary-on-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-progressbar-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-border, #{$kendo-progressbar-bg} )</code></td>
-    <td><code>var(--kendo-progressbar-border, var(--kendo-progressbar-bg, var(--kendo-color-secondary-on-surface)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-gradient</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-gradient, null )</code></td>
-    <td><code>var(--kendo-progressbar-gradient, )</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-value-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-value-bg, #{k-color(primary)} )</code></td>
-    <td><code>var(--kendo-progressbar-value-bg, var(--kendo-color-primary))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress background color of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-value-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-value-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-progressbar-value-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress text color of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-value-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-value-border, #{$kendo-progressbar-value-bg} )</code></td>
-    <td><code>var(--kendo-progressbar-value-border, var(--kendo-progressbar-value-bg, var(--kendo-color-primary)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress border color of the ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-value-gradient</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-value-gradient, null )</code></td>
-    <td><code>var(--kendo-progressbar-value-gradient, )</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress background gradient of the ProgressBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -268,36 +118,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-progressbar-indeterminate-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-indeterminate-bg, #{k-color(base-subtle)} )</code></td>
-    <td><code>var(--kendo-progressbar-indeterminate-bg, var(--kendo-color-base-subtle))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the indeterminate ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-indeterminate-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-indeterminate-text, #{$kendo-progressbar-text} )</code></td>
-    <td><code>var(--kendo-progressbar-indeterminate-text, var(--kendo-progressbar-text, var(--kendo-color-on-app-surface)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the indeterminate ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-progressbar-indeterminate-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-progressbar-indeterminate-border, #{k-color(base-subtle)} )</code></td>
-    <td><code>var(--kendo-progressbar-indeterminate-border, var(--kendo-color-base-subtle))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the indeterminate ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-progressbar-indeterminate-gradient-horizontal</td>
     <td>String</td>
     <td><code>var( --kendo-progressbar-indeterminate-gradient-horizontal, linear-gradient(270deg, #{k-color(base-subtle)} 15%, #{k-color(primary)} 50%, #{k-color(base-subtle)} 85%) )</code></td>
@@ -348,6 +168,186 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-progressbar-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-height, 4px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-horizontal-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-horizontal-width, 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal width of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-animation-timing</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-animation-timing, 1s linear infinite)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The animation timing of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-border-width, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-line-height, var(--kendo-line-height-lg))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-bg, var(--kendo-color-secondary-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-border, var(--kendo-progressbar-bg, var(--kendo-color-secondary-on-surface)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-gradient</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-gradient, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-value-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-value-bg, var(--kendo-color-primary))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress background color of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-value-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-value-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress text color of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-value-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-value-border, var(--kendo-progressbar-value-bg, var(--kendo-color-primary)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress border color of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-value-gradient</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-value-gradient, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress background gradient of the ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-indeterminate-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-indeterminate-bg, var(--kendo-color-base-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the indeterminate ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-indeterminate-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-indeterminate-text, var(--kendo-progressbar-text, var(--kendo-color-on-app-surface)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the indeterminate ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-indeterminate-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-progressbar-indeterminate-border, var(--kendo-color-base-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the indeterminate ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-progressbar-chunk-border-radius</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-circular-progressbar-arc-stroke</td>
     <td>String</td>
-    <td><code>var( --kendo-circular-progressbar-arc-stroke, #{k-color(primary)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-circular-progressbar-arc-stroke, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-circular-progressbar-scale-stroke</td>
     <td>String</td>
-    <td><code>var( --kendo-circular-progressbar-scale-stroke, #{$kendo-progressbar-bg} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-circular-progressbar-scale-stroke, var(--kendo-progressbar-bg, var(--kendo-color-secondary-on-surface)))</code></td>
 </tr>
 <tr>

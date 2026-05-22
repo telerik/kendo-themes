@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-loading-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-loading-bg, #{k-color(surface-alt)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-loading-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loading-text</td>
     <td>String</td>
-    <td><code>var( --kendo-loading-text, currentColor )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-loading-text, currentColor)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loading-opacity</td>
     <td>String</td>
-    <td><code>var( --kendo-loading-opacity, .3 )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-loading-opacity, 0.3)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-zindex-loading</td>
     <td>String</td>
-    <td><code>var( --kendo-zindex-loading, 100 )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-zindex-loading, 100)</code></td>
 </tr>
 <tr>

@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-datetime-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-datetime-width</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-calendar-header-min-width} + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ) )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(calc(var(--kendo-calendar-cell-size, 32px) * 8) + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-datetime-sm-width</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-calendar-sm-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-calendar-sm-cell-size, 24px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-datetime-md-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-datetime-width</code></td>
+    <td><code>null</code></td>
     <td><code>calc(calc(var(--kendo-calendar-cell-size, 32px) * 8) + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-datetime-lg-width</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-calendar-lg-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-calendar-lg-cell-size, 36px) * 8 + var(--kendo-infinite-calendar-view-padding-x, var(--kendo-spacing-3)) * 2)</code></td>
 </tr>
 <tr>

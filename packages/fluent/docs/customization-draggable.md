@@ -178,73 +178,203 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-drag-hint-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-padding-x, var(--kendo-spacing-3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-padding-y, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-border-width, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-border-radius</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-border-radius, var(--kendo-border-radius-md))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-bg, var(--kendo-color-base-active))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-text, var(--kendo-color-on-base))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-border, color-mix(in srgb, var(--kendo-color-border-alt) 76%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-gradient</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-gradient, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-shadow</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-shadow, var(--kendo-elevation-2, none))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drag-hint-opacity</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-drag-clue-opacity, 0.8)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the drag hint.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drop-hint-arrow-size</td>
     <td>String</td>
-    <td><code>var( --kendo-drop-hint-arrow-size, 6px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-drop-hint-arrow-size, 6px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Arrow size of the drop hint.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the drop hint arrow.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-drop-hint-arrow-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-drop-hint-arrow-spacing, calc( $kendo-drop-hint-arrow-size / 2 ) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-drop-hint-arrow-spacing, calc(var(--kendo-drop-hint-arrow-size, 6px) / 2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Arrow spacing of the drop hint.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the drop hint arrow.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-drop-hint-line-h-width</td>
     <td>String</td>
-    <td><code>var( --kendo-drop-hint-line-h-width, 20px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-drop-hint-line-h-width, 20px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the horizontal drop hint line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the horizontal drop hint line.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-drop-hint-line-h-height</td>
     <td>String</td>
-    <td><code>var( --kendo-drop-hint-line-h-height, 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-drop-hint-line-h-height, 1px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the horizontal drop hint line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the horizontal drop hint line.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-drop-hint-line-v-width</td>
     <td>String</td>
-    <td><code>var( --kendo-drop-hint-line-v-width, $kendo-drop-hint-line-h-height )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-drop-hint-line-v-width, var(--kendo-drop-hint-line-h-height, 1px))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the vertical drop hint line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the vertical drop hint line.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-drop-hint-line-v-height</td>
     <td>String</td>
-    <td><code>var( --kendo-drop-hint-line-v-height, $kendo-drop-hint-line-h-width )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-drop-hint-line-v-height, var(--kendo-drop-hint-line-h-width, 20px))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the vertical drop hint line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the vertical drop hint line.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-drop-hint-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-drop-hint-bg, k-color(primary) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-drop-hint-bg, var(--kendo-color-primary))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background-color of the drop hint.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the drop hint.</div></div>
     </td>
 </tr>
 </tbody>

@@ -28,19 +28,9 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-toolbar-default-fill-mode</td>
-    <td>String</td>
-    <td><code>"solid"</code></td>
-    <td><code>"solid"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default fill mode of the Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -48,9 +38,19 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-toolbar-default-fill-mode</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>"solid"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default fill mode of the Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-toolbar-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-sm-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-sm-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-separator-height</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-md-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-sm-separator-height</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-sm-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-0\.5) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-separator-height</td>
     <td>Calculation</td>
-    <td><code>$kendo-toolbar-separator-height</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-separator-height</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-lg-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height-lg) * 1em + var(--kendo-spacing-2) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -188,9 +188,19 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-toolbar-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-toolbar-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -200,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -210,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -220,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
-    <td><code>k-color(surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
@@ -230,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -240,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -270,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>List</td>
-    <td><code>$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(var(--kendo-color-surface), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -280,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-text</td>
     <td>String</td>
-    <td><code>$kendo-button-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-base)</code></td>
 </tr>
 <tr>
@@ -290,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -310,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-border-width</td>
     <td>Number</td>
-    <td><code>$kendo-toolbar-border-width</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -320,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-scroll-overlay</td>
     <td>List</td>
-    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(var(--kendo-color-app-surface), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -340,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-flat-border</td>
     <td>String</td>
-    <td><code>$kendo-toolbar-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -360,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-flat-scroll-overlay</td>
     <td>List</td>
-    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(var(--kendo-color-app-surface), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -370,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-separator-border</td>
     <td>String</td>
-    <td><code>inherit</code></td>
+    <td><code>null</code></td>
     <td><code>inherit</code></td>
 </tr>
 <tr>
@@ -380,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-input-width</td>
     <td>Number</td>
-    <td><code>10em</code></td>
+    <td><code>null</code></td>
     <td><code>10em</code></td>
 </tr>
 <tr>
@@ -390,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-smart-box-min-width</td>
     <td>Number</td>
-    <td><code>350px</code></td>
+    <td><code>null</code></td>
     <td><code>350px</code></td>
 </tr>
 <tr>
@@ -400,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
-    <td><code>$kendo-button-focus-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
 </tr>
 <tr>
@@ -410,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-overflow-container-font-size</td>
     <td>String</td>
-    <td><code>$kendo-menu-popup-md-font-size</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -420,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-overflow-container-line-height</td>
     <td>String</td>
-    <td><code>$kendo-menu-popup-md-line-height</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -430,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-overflow-button-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-menu-popup-md-item-padding-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -440,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-overflow-button-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-menu-popup-md-item-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>

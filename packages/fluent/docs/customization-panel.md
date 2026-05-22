@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-panel-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-border-radius, #{k-border-radius(md)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-border-width, 1px )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-border-width, 1px)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-border-style</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-border-style, solid )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-border-style, solid)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-header-padding-inline</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-header-padding-inline, #{k-spacing(2)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-header-padding-inline, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-header-padding-block</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-header-padding-block, #{k-spacing(1)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-header-padding-block, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-content-padding-inline</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-content-padding-inline, #{k-spacing(2)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-content-padding-inline, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-content-padding-block</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-content-padding-block, #{k-spacing(1)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-content-padding-block, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-text</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-text, var(--kendo-color-on-app-surface))</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-bg, #{k-color(surface-alt)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panel-border</td>
     <td>String</td>
-    <td><code>var( --kendo-panel-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-panel-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>

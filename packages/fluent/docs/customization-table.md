@@ -28,166 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-table-default-size</td>
-    <td>String</td>
-    <td><code>"md"</code></td>
-    <td><code>"md"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Table.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-border-width, 1px )</code></td>
-    <td><code>var(--kendo-table-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the table border.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-cell-vertical-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-cell-vertical-border-width, 0px )</code></td>
-    <td><code>var(--kendo-table-cell-vertical-border-width, 0px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of vertical border of table cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-cell-horizontal-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-cell-horizontal-border-width, 1px )</code></td>
-    <td><code>var(--kendo-table-cell-horizontal-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of horizontal border of table cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-sm-cell-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-sm-cell-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-table-sm-cell-padding-x, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table for small size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-sm-cell-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-sm-cell-padding-y, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-table-sm-cell-padding-y, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the table for small size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-md-cell-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-md-cell-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table for medium size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-md-cell-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-md-cell-padding-y, #{k-spacing(2.5)} )</code></td>
-    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the table for medium size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-lg-cell-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-lg-cell-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-table-lg-cell-padding-x, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table for large size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-lg-cell-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-lg-cell-padding-y, #{k-spacing(3)} )</code></td>
-    <td><code>var(--kendo-table-lg-cell-padding-y, var(--kendo-spacing-3))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the table for large size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-sm-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-sm-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-table-sm-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for small size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-sm-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-sm-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-table-sm-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for small size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-md-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-md-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-table-md-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for medium size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-md-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-md-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-table-md-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for medium size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-lg-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-lg-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-table-lg-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for large size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-lg-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-lg-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-table-lg-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for large size.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-table-header-font-weight</td>
     <td>String</td>
     <td><code>var( --kendo-table-header-font-weight, var(--kendo-font-weight-normal) )</code></td>
@@ -195,66 +35,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the table header cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-bg, #{k-color(surface-alt)} )</code></td>
-    <td><code>var(--kendo-table-bg, var(--kendo-color-surface-alt))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tables.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-table-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tables.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} )</code></td>
-    <td><code>var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tables.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-header-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-header-bg, #{$kendo-table-bg} )</code></td>
-    <td><code>var(--kendo-table-header-bg, var(--kendo-table-bg, var(--kendo-color-surface-alt)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table headers.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-header-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-header-text, #{k-color(on-app-surface)} )</code></td>
-    <td><code>var(--kendo-table-header-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table headers.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-header-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-header-border, #{$kendo-table-border} )</code></td>
-    <td><code>var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table headers.</div></div>
     </td>
 </tr>
 <tr>
@@ -298,66 +78,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-footer-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-footer-bg, #{$kendo-table-header-bg} )</code></td>
-    <td><code>var(--kendo-table-footer-bg, var(--kendo-table-header-bg, var(--kendo-table-bg, var(--kendo-color-surface-alt))))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table footers.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-footer-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-footer-text, #{$kendo-table-header-text} )</code></td>
-    <td><code>var(--kendo-table-footer-text, var(--kendo-table-header-text, var(--kendo-color-on-app-surface)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table footers.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-footer-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-footer-border, #{$kendo-table-header-border} )</code></td>
-    <td><code>var(--kendo-table-footer-border, var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table footers.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-group-row-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-group-row-bg, #{$kendo-table-header-bg} )</code></td>
-    <td><code>var(--kendo-table-group-row-bg, var(--kendo-table-header-bg, var(--kendo-table-bg, var(--kendo-color-surface-alt))))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group rows in table.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-group-row-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-group-row-text, #{$kendo-table-header-text} )</code></td>
-    <td><code>var(--kendo-table-group-row-text, var(--kendo-table-header-text, var(--kendo-color-on-app-surface)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of group rows in table.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-table-group-row-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-group-row-border, #{$kendo-table-header-border} )</code></td>
-    <td><code>var(--kendo-table-group-row-border, var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of group rows in table.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-table-group-label-text</td>
     <td>String</td>
     <td><code>var( --kendo-table-group-label-text, #{$kendo-list-bg} )</code></td>
@@ -378,173 +98,183 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-alt-row-bg</td>
+    <td>$kendo-table-default-size</td>
     <td>String</td>
-    <td><code>var( --kendo-table-alt-row-bg, initial )</code></td>
-    <td><code>var(--kendo-table-alt-row-bg, initial)</code></td>
+    <td><code>null</code></td>
+    <td><code>"md"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Table.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-alt-row-text</td>
+    <td>$kendo-table-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-table-alt-row-text, #{$kendo-table-text} )</code></td>
-    <td><code>var(--kendo-table-alt-row-text, var(--kendo-table-text, var(--kendo-color-on-app-surface)))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-border-width, 1px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the table border.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-alt-row-border</td>
+    <td>$kendo-table-cell-vertical-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-table-alt-row-border, #{$kendo-table-border} )</code></td>
-    <td><code>var(--kendo-table-alt-row-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-cell-vertical-border-width, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of alternating rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of vertical border of table cells.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-hover-bg</td>
+    <td>$kendo-table-cell-horizontal-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-table-hover-bg, #{color-mix(in srgb, k-color(on-app-surface) 5%, transparent)} )</code></td>
-    <td><code>var(--kendo-table-hover-bg, color-mix(in srgb, var(--kendo-color-on-app-surface) 5%, transparent))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-cell-horizontal-border-width, 1px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of horizontal border of table cells.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-hover-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-hover-text, #{k-color(on-base)} )</code></td>
-    <td><code>var(--kendo-table-hover-text, var(--kendo-color-on-base))</code></td>
+    <td>$kendo-table-font-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the table if no size is specified.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-hover-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-table-hover-border, #{$kendo-table-border} )</code></td>
-    <td><code>var(--kendo-table-hover-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+    <td>$kendo-table-line-height</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the table if no size is specified.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-focus-bg</td>
+    <td>$kendo-table-sm-cell-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-table-focus-bg, inherit )</code></td>
-    <td><code>var(--kendo-table-focus-bg, inherit)</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-sm-cell-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Table cell.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-focus-text</td>
+    <td>$kendo-table-sm-cell-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-table-focus-text, inherit )</code></td>
-    <td><code>var(--kendo-table-focus-text, inherit)</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-sm-cell-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Table cell.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-focus-border</td>
+    <td>$kendo-table-md-cell-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-table-focus-border, inherit )</code></td>
-    <td><code>var(--kendo-table-focus-border, inherit)</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Table cell.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-focus-shadow</td>
+    <td>$kendo-table-md-cell-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-table-focus-shadow, #{$kendo-list-item-focus-shadow} )</code></td>
-    <td><code>var(--kendo-table-focus-shadow, var(--kendo-list-item-focus-shadow, inset 0 0 0 2px var(--kendo-color-border-alt)))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\.5))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Table cell.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-selected-bg</td>
+    <td>$kendo-table-lg-cell-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-table-selected-bg, #{color-mix(in srgb, k-color(primary) 8%, transparent)} )</code></td>
-    <td><code>var(--kendo-table-selected-bg, color-mix(in srgb, var(--kendo-color-primary) 8%, transparent))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-lg-cell-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Table cell.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-selected-text</td>
+    <td>$kendo-table-lg-cell-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-table-selected-text, #{$kendo-table-text} )</code></td>
-    <td><code>var(--kendo-table-selected-text, var(--kendo-table-text, var(--kendo-color-on-app-surface)))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-lg-cell-padding-y, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Table cell.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-selected-border</td>
+    <td>$kendo-table-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-table-selected-border, #{$kendo-table-border} )</code></td>
-    <td><code>var(--kendo-table-selected-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-sm-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for small size.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-highlighted-bg</td>
+    <td>$kendo-table-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-table-highlighted-bg, #{color-mix(in srgb, k-color(warning) 8%, transparent)} )</code></td>
-    <td><code>var(--kendo-table-highlighted-bg, color-mix(in srgb, var(--kendo-color-warning) 8%, transparent))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-sm-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of highlighted rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for small size.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-highlighted-font-weight</td>
+    <td>$kendo-table-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-table-highlighted-font-weight, var(--kendo-font-weight-semibold) )</code></td>
-    <td><code>var(--kendo-table-highlighted-font-weight, var(--kendo-font-weight-semibold))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-md-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of highlighted rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for medium size.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-selected-highlighted-bg</td>
+    <td>$kendo-table-md-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-table-selected-highlighted-bg, #{color-mix(in srgb, color-mix(in srgb, k-color(primary), k-color(warning)) 23%, transparent)} )</code></td>
-    <td><code>var(--kendo-table-selected-highlighted-bg, color-mix(in srgb, color-mix(in srgb, var(--kendo-color-primary), var(--kendo-color-warning)) 23%, transparent))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-md-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected highlighted rows in table.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for medium size.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-table-cell-row-span-shadow</td>
+    <td>$kendo-table-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-table-cell-row-span-shadow, inset 0 0 0 1px #{$kendo-table-border} )</code></td>
-    <td><code>var(--kendo-table-cell-row-span-shadow, inset 0 0 0 1px var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-lg-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the row spanned cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for large size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-lg-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-lg-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Table for large size.</div></div>
     </td>
 </tr>
 <tr>
@@ -574,6 +304,306 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-bg, var(--kendo-color-surface-alt))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tables.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tables.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tables.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-header-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-header-bg, var(--kendo-table-bg, var(--kendo-color-surface-alt)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-header-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-header-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-header-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-header-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gradient of table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-footer-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-footer-bg, var(--kendo-table-header-bg, var(--kendo-table-bg, var(--kendo-color-surface-alt))))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table footers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-footer-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-footer-text, var(--kendo-table-header-text, var(--kendo-color-on-app-surface)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table footers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-footer-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-footer-border, var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table footers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-group-row-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-group-row-bg, var(--kendo-table-header-bg, var(--kendo-table-bg, var(--kendo-color-surface-alt))))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-group-row-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-group-row-text, var(--kendo-table-header-text, var(--kendo-color-on-app-surface)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of group rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-group-row-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-group-row-border, var(--kendo-table-header-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of group rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-alt-row-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-alt-row-bg, initial)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-alt-row-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-alt-row-text, var(--kendo-table-text, var(--kendo-color-on-app-surface)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-alt-row-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-alt-row-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of alternating rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-hover-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-hover-bg, color-mix(in srgb, var(--kendo-color-on-app-surface) 5%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-hover-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-hover-text, var(--kendo-color-on-base))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-hover-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-hover-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-focus-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-focus-bg, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-focus-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-focus-text, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-focus-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-focus-border, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-focus-shadow</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-focus-shadow, var(--kendo-list-item-focus-shadow, inset 0 0 0 2px var(--kendo-color-border-alt)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-selected-bg, color-mix(in srgb, var(--kendo-color-primary) 8%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-selected-text, var(--kendo-table-text, var(--kendo-color-on-app-surface)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-selected-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-highlighted-bg, color-mix(in srgb, var(--kendo-color-warning) 8%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-highlighted-font-weight</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-highlighted-font-weight, var(--kendo-font-weight-semibold))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-highlighted-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-selected-highlighted-bg, color-mix(in srgb, color-mix(in srgb, var(--kendo-color-primary), var(--kendo-color-warning)) 23%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected highlighted rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-cell-row-span-shadow</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-table-cell-row-span-shadow, inset 0 0 0 1px var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the row spanned cells.</div></div>
     </td>
 </tr>
 </tbody>

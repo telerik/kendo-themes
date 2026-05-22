@@ -28,146 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-fab-default-theme-color</td>
-    <td>String</td>
-    <td><code>"primary"</code></td>
-    <td><code>"primary"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-default-fill-mode</td>
-    <td>String</td>
-    <td><code>"solid"</code></td>
-    <td><code>"solid"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default fill mode of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-default-roundness</td>
-    <td>String</td>
-    <td><code>"full"</code></td>
-    <td><code>"full"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-default-size</td>
-    <td>String</td>
-    <td><code>"md"</code></td>
-    <td><code>"md"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-border-width, 1px )</code></td>
-    <td><code>var(--kendo-fab-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-font-family</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-font-family, var(--kendo-font-family) )</code></td>
-    <td><code>var(--kendo-fab-font-family, var(--kendo-font-family))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-fab-font-size, var(--kendo-font-size))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-fab-line-height, var(--kendo-line-height))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-sm-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-sm-padding-x, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-fab-sm-padding-x, var(--kendo-spacing-1\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-md-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-md-padding-x, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-fab-md-padding-x, var(--kendo-spacing-4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-lg-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-lg-padding-x, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-fab-lg-padding-x, var(--kendo-spacing-6))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-sm-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-sm-padding-y, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-fab-sm-padding-y, var(--kendo-spacing-1\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-md-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-md-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-fab-md-padding-y, var(--kendo-spacing-4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-lg-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-lg-padding-y, k-spacing(6) )</code></td>
-    <td><code>var(--kendo-fab-lg-padding-y, var(--kendo-spacing-6))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large FAB.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-focus-offset</td>
     <td>String</td>
     <td><code>var( --kendo-fab-focus-offset, 2px )</code></td>
@@ -198,86 +58,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-icon-padding-x, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-fab-icon-padding-x, var(--kendo-spacing-0\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-icon-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-icon-padding-y, $kendo-fab-icon-padding-x )</code></td>
-    <td><code>var(--kendo-fab-icon-padding-y, var(--kendo-fab-icon-padding-x, var(--kendo-spacing-0\.5)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-icon-spacing</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-icon-spacing, k-spacing(0.5) )</code></td>
-    <td><code>var(--kendo-fab-icon-spacing, var(--kendo-spacing-0\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FAB icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-items-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-items-padding-x, k-spacing(0) )</code></td>
-    <td><code>var(--kendo-fab-items-padding-x, var(--kendo-spacing-0))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-items-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-items-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-fab-items-padding-y, var(--kendo-spacing-4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-text-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-text-padding-x, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-fab-item-text-padding-x, var(--kendo-spacing-1\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB item text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-text-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-text-padding-y, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-fab-item-text-padding-y, var(--kendo-spacing-1))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB item text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-text-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-text-border-width, 1px )</code></td>
-    <td><code>var(--kendo-fab-item-text-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FAB item text border.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-item-text-border-style</td>
     <td>String</td>
     <td><code>var( --kendo-fab-item-text-border-style, solid )</code></td>
@@ -285,36 +65,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the FAB item text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-text-border-radius</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-text-border-radius, #{k-border-radius(md)} )</code></td>
-    <td><code>var(--kendo-fab-item-text-border-radius, var(--kendo-border-radius-md))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB item text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-text-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-text-font-size, var(--kendo-font-size-xs) )</code></td>
-    <td><code>var(--kendo-fab-item-text-font-size, var(--kendo-font-size-xs))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the FAB item text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-text-line-height</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-text-line-height, var(--kendo-line-height-xs) )</code></td>
-    <td><code>var(--kendo-fab-item-text-line-height, var(--kendo-line-height-xs))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FAB item text.</div></div>
     </td>
 </tr>
 <tr>
@@ -328,36 +78,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-item-icon-padding-x</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-icon-padding-x, k-spacing(2) )</code></td>
-    <td><code>var(--kendo-fab-item-icon-padding-x, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-padding-y</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-icon-padding-y, $kendo-fab-item-icon-padding-x )</code></td>
-    <td><code>var(--kendo-fab-item-icon-padding-y, var(--kendo-fab-item-icon-padding-x, var(--kendo-spacing-2)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-border-width</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-icon-border-width, 1px )</code></td>
-    <td><code>var(--kendo-fab-item-icon-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-item-icon-border-style</td>
     <td>String</td>
     <td><code>var( --kendo-fab-item-icon-border-style, solid )</code></td>
@@ -365,82 +85,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-border-radius</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-icon-border-radius, 50% )</code></td>
-    <td><code>var(--kendo-fab-item-icon-border-radius, 50%)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        padding-x: $kendo-fab-sm-padding-x,
-        padding-y: $kendo-fab-sm-padding-y,
-        gap: k-spacing(1)
-    ),
-    md: (
-        padding-x: $kendo-fab-md-padding-x,
-        padding-y: $kendo-fab-md-padding-y,
-        gap: k-spacing(1.5)
-    ),
-    lg: (
-        padding-x: $kendo-fab-lg-padding-x,
-        padding-y: $kendo-fab-lg-padding-y,
-        gap: k-spacing(1.5)
-    )
-)</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-fab-sm-padding-y, var(--kendo-spacing-1\\.5))","gap":"var(--kendo-spacing-1)"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-spacing-4))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-spacing-4))","gap":"var(--kendo-spacing-1\\.5)"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, var(--kendo-spacing-6))","padding-y":"var(--kendo-fab-lg-padding-y, var(--kendo-spacing-6))","gap":"var(--kendo-spacing-1\\.5)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map for the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-text</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-text, k-color(on-base) )</code></td>
-    <td><code>var(--kendo-fab-item-text, var(--kendo-color-on-base))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the FAB item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-bg, k-color(base) )</code></td>
-    <td><code>var(--kendo-fab-item-bg, var(--kendo-color-base))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-fab-item-border, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
-    <td><code>var(--kendo-fab-item-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item.</div></div>
     </td>
 </tr>
 <tr>
@@ -564,9 +208,469 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-fab-default-theme-color</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>"primary"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-default-fill-mode</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>"solid"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default fill mode of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-default-roundness</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>"full"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-default-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>"md"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-border-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-font-family</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-sm-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-sm-padding-x, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-md-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-md-padding-x, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-lg-padding-x, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-sm-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-sm-padding-y, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-md-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-md-padding-y, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-lg-padding-y, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-icon-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-icon-padding-x, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-icon-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-icon-padding-y, var(--kendo-fab-icon-padding-x, var(--kendo-spacing-0\.5)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-icon-spacing</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-icon-spacing, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FAB icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-items-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-items-padding-x, var(--kendo-spacing-0))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-items-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-items-padding-y, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-text-padding-x, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB item text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-text-padding-y, var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB item text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-text-border-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FAB item text border.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-border-radius</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-text-border-radius, var(--kendo-border-radius-md))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB item text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-font-size</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-text-font-size, var(--kendo-font-size-xs))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the FAB item text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-line-height</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-text-line-height, var(--kendo-line-height-xs))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FAB item text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-padding-x</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-icon-padding-x, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-padding-y</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-icon-padding-y, var(--kendo-fab-item-icon-padding-x, var(--kendo-spacing-2)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-border-width</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-icon-border-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FAB item icon border.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-border-radius</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-icon-border-radius, 50%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-shadow</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-elevation-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-disabled-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-active-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the active FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-outline-style</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-outline-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-text, var(--kendo-color-on-base))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-bg, var(--kendo-color-base))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-border</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-fab-item-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-disabled-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-active-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the active FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-outline-style</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-outline-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-outline-color</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fab-generating-opacity</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-generating-opacity, 60% )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-fab-generating-opacity, 60%)</code></td>
 </tr>
 <tr>
@@ -581,6 +685,29 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the FloatingActionButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-fab-sm-padding-x,
+        padding-y: $kendo-fab-sm-padding-y
+    ),
+    md: (
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y
+    ),
+    lg: (
+        padding-x: $kendo-fab-lg-padding-x,
+        padding-y: $kendo-fab-lg-padding-y
+    )
+)</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-fab-sm-padding-y, var(--kendo-spacing-1\\.5))","gap":"var(--kendo-spacing-1)"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-spacing-4))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-spacing-4))","gap":"var(--kendo-spacing-1\\.5)"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, var(--kendo-spacing-6))","padding-y":"var(--kendo-fab-lg-padding-y, var(--kendo-spacing-6))","gap":"var(--kendo-spacing-1\\.5)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the FloatingActionButton.</div></div>
     </td>
 </tr>
 </tbody>

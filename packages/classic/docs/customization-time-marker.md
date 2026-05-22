@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-current-time-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-current-time-color</td>
     <td>String</td>
-    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-error-on-surface)</code></td>
 </tr>
 <tr>

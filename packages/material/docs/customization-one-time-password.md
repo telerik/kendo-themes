@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-otp-sm-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-otp-md-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-otp-lg-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-otp-sm-separator-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-otp-sm-gap</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-otp-md-separator-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-otp-md-gap</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-otp-lg-separator-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-otp-lg-gap</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-otp-sm-input-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-input-sm-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-spacing-1) + var(--kendo-spacing-1px)) * 2 + (2px))</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-otp-md-input-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-input-md-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-spacing-1\.5) + var(--kendo-spacing-1px)) * 2 + (2px))</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-otp-lg-input-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-input-lg-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-spacing-2) + var(--kendo-spacing-1px)) * 2 + (2px))</code></td>
 </tr>
 <tr>

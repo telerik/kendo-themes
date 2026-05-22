@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-prompt-box-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-prompt-box-border-radius, k-border-radius(xxxl) )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-prompt-box-border-radius, var(--kendo-border-radius-xxxl))</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-box-box-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-prompt-box-box-shadow, null )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-prompt-box-box-shadow, )</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-box-header-padding</td>
     <td>String</td>
-    <td><code>var( --kendo-prompt-box-header-padding, #{k-spacing(2)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-prompt-box-header-padding, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-box-input-inner-padding</td>
     <td>String</td>
-    <td><code>var( --kendo-prompt-box-input-inner-padding, #{k-spacing(3)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-prompt-box-input-inner-padding, var(--kendo-spacing-3))</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-box-affix-padding</td>
     <td>String</td>
-    <td><code>var( --kendo-prompt-box-affix-padding, #{k-spacing(2)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-prompt-box-affix-padding, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-box-affix-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-prompt-box-affix-spacing, #{k-spacing(1)} )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-prompt-box-affix-spacing, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>

@@ -30,11 +30,11 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-menu-button-arrow-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-button-md-padding-y</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button..</div></div>
     </td>
 </tr>
 </tbody>

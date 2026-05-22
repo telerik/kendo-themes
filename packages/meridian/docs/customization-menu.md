@@ -28,9 +28,29 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-menu-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of focused Menu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of focused Menu item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-group-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -40,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>null</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -50,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
@@ -60,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -70,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -80,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-bg</td>
     <td>Color</td>
-    <td><code>transparent</code></td>
+    <td><code>null</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -90,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -120,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
@@ -130,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -140,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0)</code></td>
 </tr>
 <tr>
@@ -150,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-icon-spacing</td>
     <td>String</td>
-    <td><code>$kendo-icon-spacing</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -160,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-selected-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-font-weight-semibold, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-weight-semibold, normal)</code></td>
 </tr>
 <tr>
@@ -180,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -220,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -260,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-active-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -298,26 +318,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-focus-outline-color</td>
-    <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of focused Menu item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-focus-outline-offset</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of focused Menu item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-item-selected-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-selected-text</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-scroll-button-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-scroll-button-hover-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-separator-margin-inline</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-separator-margin-block</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-separator-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-border-width</td>
     <td>Number</td>
-    <td><code>$kendo-popup-border-width</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-md-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
@@ -570,7 +570,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-bg</td>
     <td>String</td>
-    <td><code>$kendo-popup-bg</code></td>
+    <td><code>null</code></td>
     <td><code>oklch(from oklch(from var(--kendo-color-surface-alt) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h) l c h / calc(100% - calc(var(--kendo-translucency-base))))</code></td>
 </tr>
 <tr>
@@ -590,7 +590,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-text</td>
     <td>String</td>
-    <td><code>$kendo-popup-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-border</td>
     <td>String</td>
-    <td><code>$kendo-popup-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -620,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -630,7 +630,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-md-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -640,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-item-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -650,7 +650,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-md-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-item-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -680,7 +680,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 + #{$kendo-icon-size} )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-spacing-2) * 2 + 16px)</code></td>
 </tr>
 <tr>
@@ -690,7 +690,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-md-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-menu-popup-md-item-padding-x} * 2 + #{$kendo-icon-size} )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-spacing-2) * 2 + 16px)</code></td>
 </tr>
 <tr>
@@ -700,7 +700,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 + #{$kendo-icon-size} )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-spacing-2) * 2 + 16px)</code></td>
 </tr>
 <tr>
@@ -710,7 +710,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-start</td>
     <td>String</td>
-    <td><code>$kendo-menu-popup-sm-item-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -720,7 +720,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-md-item-icon-margin-start</td>
     <td>String</td>
-    <td><code>$kendo-menu-popup-md-item-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -730,7 +730,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-item-icon-margin-start</td>
     <td>String</td>
-    <td><code>$kendo-menu-popup-lg-item-padding-x</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -740,7 +740,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{list.slash( $kendo-menu-popup-sm-item-padding-x, 2 )}) )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))</code></td>
 </tr>
 <tr>
@@ -750,7 +750,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-md-item-icon-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (#{$kendo-menu-popup-md-item-padding-end} - #{list.slash( $kendo-menu-popup-md-item-padding-x, 2 )}) )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))</code></td>
 </tr>
 <tr>
@@ -760,7 +760,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-item-icon-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (#{$kendo-menu-popup-lg-item-padding-end} - #{list.slash( $kendo-menu-popup-lg-item-padding-x, 2 )}) )</code></td>
+    <td><code>null</code></td>
     <td><code>calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))</code></td>
 </tr>
 <tr>
@@ -770,11 +770,49 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-spacing</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Menu items in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-group-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-menu-popup-sm-font-size,
+        line-height: $kendo-menu-popup-sm-line-height,
+        item-padding-y: $kendo-menu-popup-sm-item-padding-y,
+        item-padding-x: $kendo-menu-popup-sm-item-padding-x,
+        item-padding-end: $kendo-menu-popup-sm-item-padding-end,
+        item-icon-margin-start: $kendo-menu-popup-sm-item-icon-margin-start,
+        item-icon-margin-end: $kendo-menu-popup-sm-item-icon-margin-end
+    ),
+    md: (
+        font-size: $kendo-menu-popup-md-font-size,
+        line-height: $kendo-menu-popup-md-line-height,
+        item-padding-y: $kendo-menu-popup-md-item-padding-y,
+        item-padding-x: $kendo-menu-popup-md-item-padding-x,
+        item-padding-end: $kendo-menu-popup-md-item-padding-end,
+        item-icon-margin-start: $kendo-menu-popup-md-item-icon-margin-start,
+        item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end
+    ),
+    lg: (
+        font-size: $kendo-menu-popup-lg-font-size,
+        line-height: $kendo-menu-popup-lg-line-height,
+        item-padding-y: $kendo-menu-popup-lg-item-padding-y,
+        item-padding-x: $kendo-menu-popup-lg-item-padding-x,
+        item-padding-end: $kendo-menu-popup-lg-item-padding-end,
+        item-icon-margin-start: $kendo-menu-popup-lg-item-icon-margin-start,
+        item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end
+    )
+)</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-y":"var(--kendo-spacing-1)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-y":"var(--kendo-spacing-1\\.5)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-y":"var(--kendo-spacing-2)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Menu group.</div></div>
     </td>
 </tr>
 <tr>
@@ -820,7 +858,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary-subtle-hover) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -830,7 +868,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-hover-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
@@ -860,7 +898,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-active-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
@@ -870,7 +908,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-active-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
@@ -900,49 +938,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-focus-shadow</td>
     <td>Null</td>
-    <td><code>$kendo-menu-item-focus-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-group-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        font-size: $kendo-menu-popup-sm-font-size,
-        line-height: $kendo-menu-popup-sm-line-height,
-        item-padding-y: $kendo-menu-popup-sm-item-padding-y,
-        item-padding-x: $kendo-menu-popup-sm-item-padding-x,
-        item-padding-end: $kendo-menu-popup-sm-item-padding-end,
-        item-icon-margin-start: $kendo-menu-popup-sm-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-sm-item-icon-margin-end
-    ),
-    md: (
-        font-size: $kendo-menu-popup-md-font-size,
-        line-height: $kendo-menu-popup-md-line-height,
-        item-padding-y: $kendo-menu-popup-md-item-padding-y,
-        item-padding-x: $kendo-menu-popup-md-item-padding-x,
-        item-padding-end: $kendo-menu-popup-md-item-padding-end,
-        item-icon-margin-start: $kendo-menu-popup-md-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end
-    ),
-    lg: (
-        font-size: $kendo-menu-popup-lg-font-size,
-        line-height: $kendo-menu-popup-lg-line-height,
-        item-padding-y: $kendo-menu-popup-lg-item-padding-y,
-        item-padding-x: $kendo-menu-popup-lg-item-padding-x,
-        item-padding-end: $kendo-menu-popup-lg-item-padding-end,
-        item-icon-margin-start: $kendo-menu-popup-lg-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end
-    )
-)</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-y":"var(--kendo-spacing-1)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-y":"var(--kendo-spacing-1\\.5)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-y":"var(--kendo-spacing-2)","item-padding-x":"var(--kendo-spacing-2)","item-padding-end":"calc(var(--kendo-spacing-2) * 2 + 16px)","item-icon-margin-start":"var(--kendo-spacing-2)","item-icon-margin-end":"calc(-1 * (calc(var(--kendo-spacing-2) * 2 + 16px) - var(--kendo-spacing-2) / 2))"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Menu group.</div></div>
     </td>
 </tr>
 </tbody>

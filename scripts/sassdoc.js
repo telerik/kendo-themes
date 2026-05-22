@@ -39,8 +39,8 @@ function _kebabToPascalCase(string) {
         verbose: true
     });
 
-    // Add variables from theme core that are not present in the current theme
-    // Skip for utils package as it's standalone and doesn't inherit from core
+    // Add variables from theme core that are not present in the current theme.
+    // Skip for utils package as it's standalone and doesn't inherit from core.
     if (meta.name !== 'core' && meta.name !== 'utils') {
         const coreRawDataFile = path.resolve( themeDir, '../core/dist/meta', 'sassdoc-raw-data.json' );
         if (fs.existsSync( coreRawDataFile ) === false) {
@@ -68,6 +68,54 @@ function _kebabToPascalCase(string) {
             }
         });
 
+        // Scan the theme's SCSS files to distinguish two categories of variables:
+        //
+        //  1. Standalone !default  — declared as `$kendo-xxx: value !default;` at the
+        //     top level of a file. These are directly configurable via @use ... with (...).
+        //
+        //  2. Pass-through only    — referenced only inside `@forward "..." with (` blocks
+        //     as `    $kendo-xxx: $kendo-yyy,` (indented, no `!default`).
+        //     These are NOT directly configurable; the theme just tunnels a value to core.
+        //
+        // Variables that are pass-through-only must NOT be included in the docs output
+        // because @use ... with ($pass-through-var: value) raises a Sass compile error.
+        // Variables that don't exist in the theme at all (truly core-only, like
+        // $kendo-colors) ARE configurable through the module chain and must be included.
+        const themeStandaloneVarNames = new Set();
+        const themePassThroughVarNames = new Set();
+        const scssDir = path.resolve( themeDir, 'scss' );
+        if ( fs.existsSync( scssDir ) ) {
+            const scanDir = (dir) => {
+                for ( const entry of fs.readdirSync( dir, { withFileTypes: true } ) ) {
+                    const fullPath = path.join( dir, entry.name );
+                    if ( entry.isDirectory() ) {
+                        scanDir( fullPath );
+                    } else if ( entry.name.endsWith( '.scss' ) ) {
+                        const content = fs.readFileSync( fullPath, 'utf8' );
+                        for ( const line of content.split( '\n' ) ) {
+                            // Standalone: starts at column 0, has `!default`
+                            const standaloneMatch = line.match( /^\$kendo-([\w-]+)\s*:.*!default/ );
+                            if ( standaloneMatch ) {
+                                themeStandaloneVarNames.add( `kendo-${standaloneMatch[1]}` );
+                                continue;
+                            }
+                            // Pass-through: indented (inside @forward with block), no `!default`
+                            const passThroughMatch = line.match( /^\s+\$kendo-([\w-]+)\s*:/ );
+                            if ( passThroughMatch && !line.includes( '!default' ) ) {
+                                themePassThroughVarNames.add( `kendo-${passThroughMatch[1]}` );
+                            }
+                        }
+                    }
+                }
+            };
+            scanDir( scssDir );
+        }
+
+        // Variables that are pass-through-only (not directly configurable in the theme).
+        const passThruOnlyVarNames = new Set(
+            [ ...themePassThroughVarNames ].filter( v => !themeStandaloneVarNames.has( v ) )
+        );
+
         coreVarNames.forEach( (coreVarName, index) => {
             if ( coreVarName === null ) {
                 return;
@@ -76,7 +124,26 @@ function _kebabToPascalCase(string) {
             if ( themeVarNames.includes( coreVarName ) === true ) {
                 return;
             }
-            let coreVar = coreRawData[index];
+
+            const coreVar = coreRawData[index];
+
+            // Skip pass-through-only variables — they are tunneled through @forward
+            // with(...) blocks but are not directly configurable as standalone !default.
+            // Configuring them via @use ... with (...) raises a Sass compile error.
+            if ( passThruOnlyVarNames.has( coreVarName ) ) {
+                return;
+            }
+
+            // Skip non-Map variables that aren't declared with !default in the theme.
+            // These are core-only "null" variables unused by the theme's CSS — including
+            // them would cause test failures when their test values never appear in output.
+            // Map variables (e.g. $kendo-colors) are always included because they are
+            // configurable through the module chain and tested by testKendoModule.
+            const isMap = resolvedVars[coreVarName]?.type === 'Map';
+            if ( !isMap && !themeStandaloneVarNames.has( coreVarName ) ) {
+                return;
+            }
+
             coreVar.file.path = `core/scss/${coreVar.file.path}`;
             rawData.push( coreVar );
         });

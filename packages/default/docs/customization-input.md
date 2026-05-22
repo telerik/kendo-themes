@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-input-default-fill-mode</td>
     <td>String</td>
-    <td><code>"solid"</code></td>
+    <td><code>null</code></td>
     <td><code>"solid"</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-default-roundness</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-default-size</td>
     <td>String</td>
-    <td><code>"md"</code></td>
+    <td><code>null</code></td>
     <td><code>"md"</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-default-width</td>
     <td>Number</td>
-    <td><code>100%</code></td>
+    <td><code>null</code></td>
     <td><code>100%</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-md-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-lg-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-sm-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-md-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-lg-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-font-family</td>
     <td>String</td>
-    <td><code>var(--kendo-font-family)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-md-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-lg-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-font-size-lg)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-sm-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-md-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-lg-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
@@ -238,9 +238,44 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-input-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-input-sm-padding-x,
+        padding-y: $kendo-input-sm-padding-y,
+        font-size: $kendo-input-sm-font-size,
+        line-height: $kendo-input-sm-line-height,
+        button-padding-x: $kendo-input-sm-padding-y,
+        button-padding-y: $kendo-input-sm-padding-y,
+    ),
+    md: (
+        padding-x: $kendo-input-md-padding-x,
+        padding-y: $kendo-input-md-padding-y,
+        font-size: $kendo-input-md-font-size,
+        line-height: $kendo-input-md-line-height,
+        button-padding-x: $kendo-input-md-padding-y,
+        button-padding-y: $kendo-input-md-padding-y,
+    ),
+    lg: (
+        padding-x: $kendo-input-lg-padding-x,
+        padding-y: $kendo-input-lg-padding-y,
+        font-size: $kendo-input-lg-font-size,
+        line-height: $kendo-input-lg-line-height,
+        button-padding-x: $kendo-input-lg-padding-y,
+        button-padding-y: $kendo-input-lg-padding-y
+    )
+)</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","button-padding-x":"var(--kendo-spacing-0\\.5)","button-padding-y":"var(--kendo-spacing-0\\.5)"</li><li>md: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","button-padding-x":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1)"</li><li>lg: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","button-padding-x":"var(--kendo-spacing-2)","button-padding-y":"var(--kendo-spacing-2)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Input.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-bg</td>
     <td>String</td>
-    <td><code>k-color(surface-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
@@ -250,7 +285,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-text</td>
     <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -260,7 +295,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-border</td>
     <td>String</td>
-    <td><code>k-color(border)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -300,7 +335,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-hover-border</td>
     <td>String</td>
-    <td><code>k-color(border-alt)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
@@ -340,7 +375,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-input-hover-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
@@ -350,7 +385,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
 </tr>
 <tr>
@@ -420,7 +455,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-text</td>
     <td>String</td>
-    <td><code>$kendo-input-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -430,7 +465,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -460,7 +495,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-hover-border</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(on-app-surface) 80%, transparent)</code></td>
+    <td><code>null</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 80%, transparent)</code></td>
 </tr>
 <tr>
@@ -500,7 +535,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-focus-shadow</td>
     <td>List</td>
-    <td><code>$kendo-input-focus-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
 </tr>
 <tr>
@@ -510,7 +545,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-flat-bg</td>
     <td>Color</td>
-    <td><code>transparent</code></td>
+    <td><code>null</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -520,7 +555,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-flat-text</td>
     <td>String</td>
-    <td><code>$kendo-input-text</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
@@ -530,7 +565,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-flat-border</td>
     <td>String</td>
-    <td><code>$kendo-input-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -560,7 +595,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-flat-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-input-hover-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
@@ -600,7 +635,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-flat-focus-shadow</td>
     <td>List</td>
-    <td><code>$kendo-input-focus-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 8%, transparent))</code></td>
 </tr>
 <tr>
@@ -610,7 +645,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-placeholder-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -620,7 +655,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-placeholder-opacity</td>
     <td>Number</td>
-    <td><code>1</code></td>
+    <td><code>null</code></td>
     <td><code>1</code></td>
 </tr>
 <tr>
@@ -640,7 +675,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-clear-value-opacity</td>
     <td>Number</td>
-    <td><code>.5</code></td>
+    <td><code>null</code></td>
     <td><code>0.5</code></td>
 </tr>
 <tr>
@@ -660,7 +695,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-clear-value-hover-opacity</td>
     <td>Number</td>
-    <td><code>1</code></td>
+    <td><code>null</code></td>
     <td><code>1</code></td>
 </tr>
 <tr>
@@ -670,7 +705,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-button-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-inner-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-1) * 2)</code></td>
 </tr>
 <tr>
@@ -680,7 +715,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-button-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
+    <td><code>null</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -690,7 +725,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-spinner-width</td>
     <td>Calculation</td>
-    <td><code>$kendo-button-inner-calc-size</code></td>
+    <td><code>null</code></td>
     <td><code>calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-1) * 2)</code></td>
 </tr>
 <tr>
@@ -710,7 +745,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-separator-text</td>
     <td>String</td>
-    <td><code>$kendo-input-border</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
@@ -720,7 +755,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-prefix-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -740,7 +775,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-suffix-text</td>
     <td>String</td>
-    <td><code>k-color(subtle)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
@@ -760,7 +795,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-invalid-border</td>
     <td>String</td>
-    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-error-on-surface)</code></td>
 </tr>
 <tr>
@@ -775,41 +810,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        padding-x: $kendo-input-sm-padding-x,
-        padding-y: $kendo-input-sm-padding-y,
-        font-size: $kendo-input-sm-font-size,
-        line-height: $kendo-input-sm-line-height,
-        button-padding-x: $kendo-input-sm-padding-y,
-        button-padding-y: $kendo-input-sm-padding-y,
-    ),
-    md: (
-        padding-x: $kendo-input-md-padding-x,
-        padding-y: $kendo-input-md-padding-y,
-        font-size: $kendo-input-md-font-size,
-        line-height: $kendo-input-md-line-height,
-        button-padding-x: $kendo-input-md-padding-y,
-        button-padding-y: $kendo-input-md-padding-y,
-    ),
-    lg: (
-        padding-x: $kendo-input-lg-padding-x,
-        padding-y: $kendo-input-lg-padding-y,
-        font-size: $kendo-input-lg-font-size,
-        line-height: $kendo-input-lg-line-height,
-        button-padding-x: $kendo-input-lg-padding-y,
-        button-padding-y: $kendo-input-lg-padding-y
-    )
-)</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","button-padding-x":"var(--kendo-spacing-0\\.5)","button-padding-y":"var(--kendo-spacing-0\\.5)"</li><li>md: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","button-padding-x":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1)"</li><li>lg: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","button-padding-x":"var(--kendo-spacing-2)","button-padding-y":"var(--kendo-spacing-2)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Input.</div></div>
     </td>
 </tr>
 </tbody>

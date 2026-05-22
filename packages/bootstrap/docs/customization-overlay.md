@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-overlay-bg</td>
     <td>String</td>
-    <td><code>k-color(inverse)</code></td>
+    <td><code>null</code></td>
     <td><code>var(--kendo-color-inverse)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-overlay-opacity</td>
     <td>Number</td>
-    <td><code>.5</code></td>
+    <td><code>null</code></td>
     <td><code>0.5</code></td>
 </tr>
 <tr>
