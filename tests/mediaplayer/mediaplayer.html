@@ -1,77 +1,78 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        .k-mediaplayer {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-mediaplayer {
             height: 360px;
-        }
-        .k-slider-horizontal {
+            }
+            .k-slider-horizontal {
             --kendo-slider-start: 0;
             --kendo-slider-end: 50;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <div class="k-mediaplayer">
-            <div class="k-mediaplayer-titlebar">Media player title</div>
-            <div class="k-mediaplayer-toolbar-wrap">
-                <div aria-label="Slider" class="k-slider k-mediaplayer-seekbar k-slider-horizontal">
-                    <div class="k-slider-track-wrap">
-                        <div class="k-slider-track">
-                            <div class="k-slider-selection"></div>
-                            <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Slider"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="k-mediaplayer-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
-                    <button class="k-toolbar-button k-play-button k-button k-button-flat k-icon-button" aria-label="Play">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-play" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M0 512V0l512 256z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="k-mediaplayer-currenttime-wrap k-toolbar-item">
-                        <span class="k-mediaplayer-currenttime">00:18</span> / <span class="k-mediaplayer-duration">00:55</span>
-                    </div>
-                    <div class="k-spacer"></div>
-                    <button class="k-toolbar-button k-volume-button k-button k-button-flat k-icon-button" aria-label="Mute">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="k-mediaplayer-volume-wrap k-toolbar-item">
-                        <div aria-label="Slider" class="k-slider k-mediaplayer-volume k-slider-horizontal">
-                            <div class="k-slider-track-wrap">
-                                <div class="k-slider-track">
-                                    <div class="k-slider-selection"></div>
-                                    <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Slider"></span>
-                                </div>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <div class="k-mediaplayer">
+                <div class="k-mediaplayer-titlebar">Media player title</div>
+                <div class="k-mediaplayer-toolbar-wrap">
+                    <div aria-label="Slider" class="k-slider k-mediaplayer-seekbar k-slider-horizontal">
+                        <div class="k-slider-track-wrap">
+                            <div class="k-slider-track">
+                                <div class="k-slider-selection"></div>
+                                <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Slider"></span>
                             </div>
                         </div>
                     </div>
-                    <button class="k-toolbar-button k-fullscreen-button k-button k-button-flat k-icon-button" aria-label="Full screen">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-fullscreen" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M0 32h160v64H64v96H0zm64 288H0v160h160v-64H64zM352 32v64h96v96h64V32zm96 384h-96v64h160V320h-64z"></path>
-                            </svg>
-                        </span>
-                    </button>
+                    <div class="k-mediaplayer-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
+                        <button class="k-toolbar-button k-play-button k-button k-button-flat k-icon-button" aria-label="Play">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-play" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M0 512V0l512 256z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-mediaplayer-currenttime-wrap k-toolbar-item">
+                            <span class="k-mediaplayer-currenttime">00:18</span>
+                            /
+                            <span class="k-mediaplayer-duration">00:55</span>
+                        </div>
+                        <div class="k-spacer"></div>
+                        <button class="k-toolbar-button k-volume-button k-button k-button-flat k-icon-button" aria-label="Mute">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-volume-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M0 352h96l128 128V32L96 160H0zm288 28V132c55.2 14.2 96 64.3 96 124s-40.8 109.8-96 124m0-380v44.8c45.2 0 88.3 20.8 121.2 58.4C444.6 143.6 464 197.8 464 256s-19.4 112.4-54.8 152.8c-33 37.7-76 58.4-121.2 58.4V512c123.7 0 224-114.6 224-256S411.7 0 288 0"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-mediaplayer-volume-wrap k-toolbar-item">
+                            <div aria-label="Slider" class="k-slider k-mediaplayer-volume k-slider-horizontal">
+                                <div class="k-slider-track-wrap">
+                                    <div class="k-slider-track">
+                                        <div class="k-slider-selection"></div>
+                                        <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Slider"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="k-toolbar-button k-fullscreen-button k-button k-button-flat k-icon-button" aria-label="Full screen">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-fullscreen" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M0 32h160v64H64v96H0zm64 288H0v160h160v-64H64zM352 32v64h96v96h64V32zm96 384h-96v64h160V320h-64z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
                 </div>
+                <div class="k-mediaplayer-overlay"></div>
             </div>
-            <div class="k-mediaplayer-overlay"></div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

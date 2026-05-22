@@ -1,561 +1,560 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: 80px repeat(4, 1fr);
-        }
-        section {
+            }
+            section {
             padding: 10px;
             border: 1px solid gray;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span></span>
-        <span>undefined</span>
-        <span>small</span>
-        <span>medium</span>
-        <span>large</span>
-        <span>vertical</span>
-        <section>
-            <form class="k-form">
-                <fieldset class="k-form-fieldset">
-                    <legend class="k-form-legend">Form Legend</legend>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-textbox k-input">
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
-                                <span class="k-input-inner">
-                                    <span class="k-input-value-text">Dropdown List</span>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span></span>
+            <span>undefined</span>
+            <span>small</span>
+            <span>medium</span>
+            <span>large</span>
+            <span>vertical</span>
+            <section>
+                <form class="k-form">
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Form Legend</legend>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input">
+                                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                 </span>
-                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </span>
-                            <div class="k-form-hint">Hint text</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">City</label>
-                        <div class="k-form-field-wrap">
-                            <ul class="k-radio-list k-list-horizontal">
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio" type="radio" checked="">
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Dropdown List</span>
                                     </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="k-form-buttons">
-                    <button class="k-form-submit k-button k-button-primary">
-                        <span class="k-button-text">Submit</span>
-                    </button>
-                    <button class="k-form-clear k-button">
-                        <span class="k-button-text">Clear</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-        <section>
-            <form class="k-form k-form-sm">
-                <fieldset class="k-form-fieldset">
-                    <legend class="k-form-legend">Form Legend</legend>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-textbox k-input k-input-sm">
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-dropdownlist k-picker k-picker-sm" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
-                                <span class="k-input-inner">
-                                    <span class="k-input-value-text">Dropdown List</span>
+                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
                                 </span>
-                                <button class="k-input-button k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </span>
-                            <div class="k-form-hint">Hint text</div>
+                                <div class="k-form-hint">Hint text</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">City</label>
-                        <div class="k-form-field-wrap">
-                            <ul class="k-radio-list k-list-horizontal">
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-sm" type="radio" checked="">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-sm" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-sm" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                            </ul>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">City</label>
+                            <div class="k-form-field-wrap">
+                                <ul class="k-radio-list k-list-horizontal">
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio" type="radio" checked="">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </fieldset>
+                    <div class="k-form-buttons">
+                        <button class="k-form-submit k-button k-button-primary">
+                            <span class="k-button-text">Submit</span>
+                        </button>
+                        <button class="k-form-clear k-button">
+                            <span class="k-button-text">Clear</span>
+                        </button>
                     </div>
-                </fieldset>
-                <div class="k-form-buttons">
-                    <button class="k-form-submit k-button k-button-sm k-button-primary">
-                        <span class="k-button-text">Submit</span>
-                    </button>
-                    <button class="k-form-clear k-button k-button-sm">
-                        <span class="k-button-text">Clear</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-        <section>
-            <form class="k-form k-form-md">
-                <fieldset class="k-form-fieldset">
-                    <legend class="k-form-legend">Form Legend</legend>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-textbox k-input k-input-md">
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-dropdownlist k-picker k-picker-md" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
-                                <span class="k-input-inner">
-                                    <span class="k-input-value-text">Dropdown List</span>
+                </form>
+            </section>
+            <section>
+                <form class="k-form k-form-sm">
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Form Legend</legend>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input k-input-sm">
+                                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                 </span>
-                                <button class="k-input-button k-button k-button-md k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </span>
-                            <div class="k-form-hint">Hint text</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">City</label>
-                        <div class="k-form-field-wrap">
-                            <ul class="k-radio-list k-list-horizontal">
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-md" type="radio" checked="">
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-dropdownlist k-picker k-picker-sm" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Dropdown List</span>
                                     </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-md" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-md" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="k-form-buttons">
-                    <button class="k-form-submit k-button k-button-md k-button-primary">
-                        <span class="k-button-text">Submit</span>
-                    </button>
-                    <button class="k-form-clear k-button k-button-md">
-                        <span class="k-button-text">Clear</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-        <section>
-            <form class="k-form k-form-lg">
-                <fieldset class="k-form-fieldset">
-                    <legend class="k-form-legend">Form Legend</legend>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-textbox k-input k-input-lg">
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-dropdownlist k-picker k-picker-lg" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
-                                <span class="k-input-inner">
-                                    <span class="k-input-value-text">Dropdown List</span>
+                                    <button class="k-input-button k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
                                 </span>
-                                <button class="k-input-button k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </span>
-                            <div class="k-form-hint">Hint text</div>
+                                <div class="k-form-hint">Hint text</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">City</label>
-                        <div class="k-form-field-wrap">
-                            <ul class="k-radio-list k-list-horizontal">
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-lg" type="radio" checked="">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-lg" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-lg" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                            </ul>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">City</label>
+                            <div class="k-form-field-wrap">
+                                <ul class="k-radio-list k-list-horizontal">
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-sm" type="radio" checked="">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-sm" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-sm" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </fieldset>
+                    <div class="k-form-buttons">
+                        <button class="k-form-submit k-button k-button-sm k-button-primary">
+                            <span class="k-button-text">Submit</span>
+                        </button>
+                        <button class="k-form-clear k-button k-button-sm">
+                            <span class="k-button-text">Clear</span>
+                        </button>
                     </div>
-                </fieldset>
-                <div class="k-form-buttons">
-                    <button class="k-form-submit k-button k-button-lg k-button-primary">
-                        <span class="k-button-text">Submit</span>
-                    </button>
-                    <button class="k-form-clear k-button k-button-lg">
-                        <span class="k-button-text">Clear</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-        <span>horizontal</span>
-        <section>
-            <form class="k-form k-form-horizontal">
-                <fieldset class="k-form-fieldset">
-                    <legend class="k-form-legend">Form Legend</legend>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-textbox k-input">
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
-                                <span class="k-input-inner">
-                                    <span class="k-input-value-text">Dropdown List</span>
+                </form>
+            </section>
+            <section>
+                <form class="k-form k-form-md">
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Form Legend</legend>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input k-input-md">
+                                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                 </span>
-                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </span>
-                            <div class="k-form-hint">Hint text</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">City</label>
-                        <div class="k-form-field-wrap">
-                            <ul class="k-radio-list k-list-horizontal">
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio" type="radio" checked="">
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-dropdownlist k-picker k-picker-md" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Dropdown List</span>
                                     </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="k-form-buttons">
-                    <button class="k-form-submit k-button k-button-primary">
-                        <span class="k-button-text">Submit</span>
-                    </button>
-                    <button class="k-form-clear k-button">
-                        <span class="k-button-text">Clear</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-        <section>
-            <form class="k-form k-form-sm k-form-horizontal">
-                <fieldset class="k-form-fieldset">
-                    <legend class="k-form-legend">Form Legend</legend>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-textbox k-input k-input-sm">
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-dropdownlist k-picker k-picker-sm" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
-                                <span class="k-input-inner">
-                                    <span class="k-input-value-text">Dropdown List</span>
+                                    <button class="k-input-button k-button k-button-md k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
                                 </span>
-                                <button class="k-input-button k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </span>
-                            <div class="k-form-hint">Hint text</div>
+                                <div class="k-form-hint">Hint text</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">City</label>
-                        <div class="k-form-field-wrap">
-                            <ul class="k-radio-list k-list-horizontal">
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-sm" type="radio" checked="">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-sm" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-sm" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                            </ul>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">City</label>
+                            <div class="k-form-field-wrap">
+                                <ul class="k-radio-list k-list-horizontal">
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-md" type="radio" checked="">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-md" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-md" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </fieldset>
+                    <div class="k-form-buttons">
+                        <button class="k-form-submit k-button k-button-md k-button-primary">
+                            <span class="k-button-text">Submit</span>
+                        </button>
+                        <button class="k-form-clear k-button k-button-md">
+                            <span class="k-button-text">Clear</span>
+                        </button>
                     </div>
-                </fieldset>
-                <div class="k-form-buttons">
-                    <button class="k-form-submit k-button k-button-sm k-button-primary">
-                        <span class="k-button-text">Submit</span>
-                    </button>
-                    <button class="k-form-clear k-button k-button-sm">
-                        <span class="k-button-text">Clear</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-        <section>
-            <form class="k-form k-form-md k-form-horizontal">
-                <fieldset class="k-form-fieldset">
-                    <legend class="k-form-legend">Form Legend</legend>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-textbox k-input k-input-md">
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-dropdownlist k-picker k-picker-md" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
-                                <span class="k-input-inner">
-                                    <span class="k-input-value-text">Dropdown List</span>
+                </form>
+            </section>
+            <section>
+                <form class="k-form k-form-lg">
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Form Legend</legend>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input k-input-lg">
+                                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                                 </span>
-                                <button class="k-input-button k-button k-button-md k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </span>
-                            <div class="k-form-hint">Hint text</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">City</label>
-                        <div class="k-form-field-wrap">
-                            <ul class="k-radio-list k-list-horizontal">
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-md" type="radio" checked="">
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-dropdownlist k-picker k-picker-lg" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Dropdown List</span>
                                     </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-md" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-md" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="k-form-buttons">
-                    <button class="k-form-submit k-button k-button-md k-button-primary">
-                        <span class="k-button-text">Submit</span>
-                    </button>
-                    <button class="k-form-clear k-button k-button-md">
-                        <span class="k-button-text">Clear</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-        <section>
-            <form class="k-form k-form-lg k-form-horizontal">
-                <fieldset class="k-form-fieldset">
-                    <legend class="k-form-legend">Form Legend</legend>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-textbox k-input k-input-lg">
-                                <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">Label</label>
-                        <div class="k-form-field-wrap">
-                            <span class="k-dropdownlist k-picker k-picker-lg" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
-                                <span class="k-input-inner">
-                                    <span class="k-input-value-text">Dropdown List</span>
+                                    <button class="k-input-button k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
                                 </span>
-                                <button class="k-input-button k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </span>
-                            <div class="k-form-hint">Hint text</div>
+                                <div class="k-form-hint">Hint text</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="k-form-field">
-                        <label class="k-form-label k-label">City</label>
-                        <div class="k-form-field-wrap">
-                            <ul class="k-radio-list k-list-horizontal">
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-lg" type="radio" checked="">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-lg" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                                <li class="k-radio-list-item">
-                                    <span class="k-radio-wrap">
-                                        <input class="k-radio k-radio-lg" type="radio">
-                                    </span>
-                                    <label class="k-radio-label">Label</label>
-                                </li>
-                            </ul>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">City</label>
+                            <div class="k-form-field-wrap">
+                                <ul class="k-radio-list k-list-horizontal">
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-lg" type="radio" checked="">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-lg" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-lg" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </fieldset>
+                    <div class="k-form-buttons">
+                        <button class="k-form-submit k-button k-button-lg k-button-primary">
+                            <span class="k-button-text">Submit</span>
+                        </button>
+                        <button class="k-form-clear k-button k-button-lg">
+                            <span class="k-button-text">Clear</span>
+                        </button>
                     </div>
-                </fieldset>
-                <div class="k-form-buttons">
-                    <button class="k-form-submit k-button k-button-lg k-button-primary">
-                        <span class="k-button-text">Submit</span>
-                    </button>
-                    <button class="k-form-clear k-button k-button-lg">
-                        <span class="k-button-text">Clear</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-    </div>
-</body>
+                </form>
+            </section>
+            <span>horizontal</span>
+            <section>
+                <form class="k-form k-form-horizontal">
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Form Legend</legend>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input">
+                                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Dropdown List</span>
+                                    </span>
+                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                                <div class="k-form-hint">Hint text</div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">City</label>
+                            <div class="k-form-field-wrap">
+                                <ul class="k-radio-list k-list-horizontal">
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio" type="radio" checked="">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="k-form-buttons">
+                        <button class="k-form-submit k-button k-button-primary">
+                            <span class="k-button-text">Submit</span>
+                        </button>
+                        <button class="k-form-clear k-button">
+                            <span class="k-button-text">Clear</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <form class="k-form k-form-sm k-form-horizontal">
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Form Legend</legend>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input k-input-sm">
+                                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-dropdownlist k-picker k-picker-sm" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Dropdown List</span>
+                                    </span>
+                                    <button class="k-input-button k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                                <div class="k-form-hint">Hint text</div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">City</label>
+                            <div class="k-form-field-wrap">
+                                <ul class="k-radio-list k-list-horizontal">
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-sm" type="radio" checked="">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-sm" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-sm" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="k-form-buttons">
+                        <button class="k-form-submit k-button k-button-sm k-button-primary">
+                            <span class="k-button-text">Submit</span>
+                        </button>
+                        <button class="k-form-clear k-button k-button-sm">
+                            <span class="k-button-text">Clear</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <form class="k-form k-form-md k-form-horizontal">
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Form Legend</legend>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input k-input-md">
+                                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-dropdownlist k-picker k-picker-md" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Dropdown List</span>
+                                    </span>
+                                    <button class="k-input-button k-button k-button-md k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                                <div class="k-form-hint">Hint text</div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">City</label>
+                            <div class="k-form-field-wrap">
+                                <ul class="k-radio-list k-list-horizontal">
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-md" type="radio" checked="">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-md" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-md" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="k-form-buttons">
+                        <button class="k-form-submit k-button k-button-md k-button-primary">
+                            <span class="k-button-text">Submit</span>
+                        </button>
+                        <button class="k-form-clear k-button k-button-md">
+                            <span class="k-button-text">Clear</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <form class="k-form k-form-lg k-form-horizontal">
+                    <fieldset class="k-form-fieldset">
+                        <legend class="k-form-legend">Form Legend</legend>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input k-input-lg">
+                                    <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">Label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-dropdownlist k-picker k-picker-lg" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Label" tabindex="0">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Dropdown List</span>
+                                    </span>
+                                    <button class="k-input-button k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                                <div class="k-form-hint">Hint text</div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-form-label k-label">City</label>
+                            <div class="k-form-field-wrap">
+                                <ul class="k-radio-list k-list-horizontal">
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-lg" type="radio" checked="">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-lg" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                    <li class="k-radio-list-item">
+                                        <span class="k-radio-wrap">
+                                            <input class="k-radio k-radio-lg" type="radio">
+                                        </span>
+                                        <label class="k-radio-label">Label</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="k-form-buttons">
+                        <button class="k-form-submit k-button k-button-lg k-button-primary">
+                            <span class="k-button-text">Submit</span>
+                        </button>
+                        <button class="k-form-clear k-button k-button-lg">
+                            <span class="k-button-text">Clear</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </body>
 </html>
