@@ -428,16 +428,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-card-title-letter-spacing</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the Card title.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-subtitle-margin-bottom</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -475,26 +465,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Card subtitle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-card-subtitle-font-weight</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Card subtitle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-card-subtitle-letter-spacing</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the Card subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -585,26 +555,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the scroll button in the Card deck.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-card-callout-width</td>
-    <td>Number</td>
-    <td><code>null</code></td>
-    <td><code>20px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Card callout.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-card-callout-height</td>
-    <td>Number</td>
-    <td><code>null</code></td>
-    <td><code>20px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Card callout.</div></div>
     </td>
 </tr>
 </tbody>

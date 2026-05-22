@@ -88,16 +88,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-bottom-nav-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the BottomNavigation.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-bottom-nav-font-family</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -245,16 +235,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat BottomNavigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-navigation-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the BottomNavigation.</div></div>
     </td>
 </tr>
 </tbody>

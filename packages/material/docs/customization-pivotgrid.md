@@ -528,16 +528,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pivotgrid-configurator-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PivotGrid configurator.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pivotgrid-configurator-end-shadow</td>
     <td>String</td>
     <td><code>null</code></td>

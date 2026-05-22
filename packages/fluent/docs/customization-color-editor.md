@@ -228,16 +228,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-header-actions-gap</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-color-editor-header-actions-spacing, calc(var(--kendo-spacing-2) / 2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorEditor header actions.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-sm-header-padding-y</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -415,16 +405,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorEditor preview.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-editor-views-gap</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-color-editor-views-spacing, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the ColorEditor views container.</div></div>
     </td>
 </tr>
 <tr>

@@ -658,36 +658,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-actionsheet-item-hover-background</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background of the ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-focus-background</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background of the ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-disabled-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the disabled ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td>String</td>
     <td><code>null</code></td>

@@ -248,16 +248,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-pagebutton-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scrollview-pagebutton-primary-shadow</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -308,16 +298,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-arrow-tap-highlight-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the highlight over the tapped ScrollView navigation arrows.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scrollview-navigation-color</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -335,46 +315,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView navigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-navigation-default-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the ScrollView navigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-navigation-hover-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover opacity of the ScrollView navigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-light-bg</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-scrollview-pager-light-bg, rgba(255, 255, 255, 0.4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in light mode.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-dark-bg</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-scrollview-pager-dark-bg, rgba(0, 0, 0, 0.4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView pager in dark mode.</div></div>
     </td>
 </tr>
 <tr>

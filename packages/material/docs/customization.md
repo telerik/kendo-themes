@@ -14,46 +14,6 @@ position: 9
 
 The following table lists the available variables for customizing the Material theme.
 
-### Accessibility
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$wcag-dark</td>
-    <td></td>
-    <td><code>black</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container">
-    </td>
-</tr>
-<tr>
-    <td>$wcag-light</td>
-    <td></td>
-    <td><code>white</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default light color for WCAG 2.0.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
 ### ActionButtons
 
 <table class="theme-variables">
@@ -822,36 +782,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-actionsheet-item-hover-background</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background of the ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-focus-background</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background of the ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-disabled-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the disabled ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -1291,16 +1221,6 @@ The following table lists the available variables for customizing the Material t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-appbar-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the AppBar.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -1453,16 +1373,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Avatar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-avatar-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Avatar.</div></div>
     </td>
 </tr>
 </tbody>
@@ -1747,16 +1657,6 @@ The following table lists the available variables for customizing the Material t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Badge.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-badge-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Badge.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -1968,16 +1868,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-bottom-nav-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the BottomNavigation.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-bottom-nav-font-family</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -2125,16 +2015,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat BottomNavigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-navigation-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the BottomNavigation.</div></div>
     </td>
 </tr>
 </tbody>
@@ -3830,16 +3710,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -7710,32 +7580,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        size: $kendo-checkbox-sm-size,
-        glyph-size: $kendo-checkbox-sm-glyph-size,
-        ripple-size: $kendo-checkbox-sm-ripple-size
-    ),
-    md: (
-        size: $kendo-checkbox-md-size,
-        glyph-size: $kendo-checkbox-md-glyph-size,
-        ripple-size: $kendo-checkbox-md-ripple-size
-    ),
-    lg: (
-        size: $kendo-checkbox-lg-size,
-        glyph-size: $kendo-checkbox-lg-glyph-size,
-        ripple-size: $kendo-checkbox-lg-ripple-size
-    )
-)</code></td>
-    <td><ul><li>sm: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-3)","ripple-size":"var(--kendo-spacing-8)","indicator-size":"var(--kendo-spacing-8)"</li><li>md: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-4)","ripple-size":"var(--kendo-spacing-10)","indicator-size":"var(--kendo-spacing-10)"</li><li>lg: "size":"var(--kendo-spacing-5)","glyph-size":"var(--kendo-spacing-5)","ripple-size":"var(--kendo-spacing-12)","indicator-size":"var(--kendo-spacing-12)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the CheckBox.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-checkbox-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -8426,16 +8270,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chip-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "error", "info", "warning", "success")</code></td>
-    <td><code>("base", "error", "info", "warning", "success")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -9392,86 +9226,6 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
     <td>series-f-subtler</td>
     <td colspan="2">The subtler series F color variable.</td>
-</tr>
-<tr>
-    <td>$kendo-color-white</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color white.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-black</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color black.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-rgba-transparent</td>
-    <td>Color</td>
-    <td><code>rgba(0, 0, 0, 0)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0)"></span><code>rgba(0, 0, 0, 0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transparent.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-transparent-to-black</td>
-    <td>Gradient</td>
-    <td><code>rgba(black, 0), black</code></td>
-    <td><code>(rgba(0, 0, 0, 0), black)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to black.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-transparent-to-white</td>
-    <td>Gradient</td>
-    <td><code>rgba(white, 0), white</code></td>
-    <td><code>(rgba(255, 255, 255, 0), white)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to white.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-black-to-transparent</td>
-    <td>Gradient</td>
-    <td><code>black, rgba(black, 0)</code></td>
-    <td><code>(black, rgba(0, 0, 0, 0))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from black to transparent.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-white-to-transparent</td>
-    <td>Gradient</td>
-    <td><code>white, rgba(white, 0)</code></td>
-    <td><code>(white, rgba(255, 255, 255, 0))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from white to transparent.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-rainbow</td>
-    <td>Gradient</td>
-    <td><span class="color-preview" style="background-color: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000"></span><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
-    <td><code>(#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that cycles through the colors of the rainbow.<br />Note: you cannot change this value.</div></div>
-    </td>
 </tr>
 </tbody>
 </table>
@@ -14559,26 +14313,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-outline-style</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-outline-width</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-item-text</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -14669,36 +14403,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-item-outline-style</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the FAB item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-outline-width</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-outline-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the FAB item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-generating-opacity</td>
     <td>Number</td>
     <td><code>null</code></td>
@@ -14706,16 +14410,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Тhe opacity of the generating FAB.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the FloatingActionButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -18417,41 +18111,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        padding-x: $kendo-input-sm-padding-x,
-        padding-y: $kendo-input-sm-padding-y,
-        font-size: $kendo-input-sm-font-size,
-        line-height: $kendo-input-sm-line-height,
-        button-padding-x: $kendo-input-sm-padding-y,
-        button-padding-y: $kendo-input-sm-padding-y,
-    ),
-    md: (
-        padding-x: $kendo-input-md-padding-x,
-        padding-y: $kendo-input-md-padding-y,
-        font-size: $kendo-input-md-font-size,
-        line-height: $kendo-input-md-line-height,
-        button-padding-x: $kendo-input-md-padding-y,
-        button-padding-y: $kendo-input-md-padding-y,
-    ),
-    lg: (
-        padding-x: $kendo-input-lg-padding-x,
-        padding-y: $kendo-input-lg-padding-y,
-        font-size: $kendo-input-lg-font-size,
-        line-height: $kendo-input-lg-line-height,
-        button-padding-x: $kendo-input-lg-padding-y,
-        button-padding-y: $kendo-input-lg-padding-y
-    )
-)</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-4)","padding-y":"calc(var(--kendo-spacing-1) + var(--kendo-spacing-1px))","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","button-padding-x":"calc(var(--kendo-spacing-3\\.5) / 2)","button-padding-y":"calc(var(--kendo-spacing-3\\.5) / 2)"</li><li>md: "padding-x":"var(--kendo-spacing-4)","padding-y":"calc(var(--kendo-spacing-1\\.5) + var(--kendo-spacing-1px))","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","button-padding-x":"calc(var(--kendo-spacing-4\\.5) / 2)","button-padding-y":"calc(var(--kendo-spacing-4\\.5) / 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4)","padding-y":"calc(var(--kendo-spacing-2) + var(--kendo-spacing-1px))","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","button-padding-x":"calc(var(--kendo-spacing-5\\.5) / 2)","button-padding-y":"calc(var(--kendo-spacing-5\\.5) / 2)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Input.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -21028,16 +20687,6 @@ The following table lists the available variables for customizing the Material t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Loader container.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-loader-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Loader.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -22444,36 +22093,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button..</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
-### MessageBox
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-message-box-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the MessageBox.</div></div>
     </td>
 </tr>
 </tbody>
@@ -26317,16 +25936,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-pivotgrid-configurator-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PivotGrid configurator.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pivotgrid-configurator-end-shadow</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -27664,32 +27273,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a large RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        size: $kendo-radio-sm-size,
-        glyph-size: $kendo-radio-sm-glyph-size,
-        ripple-size: $kendo-radio-sm-ripple-size
-    ),
-    md: (
-        size: $kendo-radio-md-size,
-        glyph-size: $kendo-radio-md-glyph-size,
-        ripple-size: $kendo-radio-md-ripple-size
-    ),
-    lg: (
-        size: $kendo-radio-lg-size,
-        glyph-size: $kendo-radio-lg-glyph-size,
-        ripple-size: $kendo-radio-lg-ripple-size
-    )
-)</code></td>
-    <td><ul><li>sm: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-2\\.5)","ripple-size":"var(--kendo-spacing-8)","indicator-size":"var(--kendo-spacing-8)"</li><li>md: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-3\\.5)","ripple-size":"var(--kendo-spacing-10)","indicator-size":"var(--kendo-spacing-10)"</li><li>lg: "size":"var(--kendo-spacing-5)","glyph-size":"var(--kendo-spacing-4\\.5)","ripple-size":"var(--kendo-spacing-12)","indicator-size":"var(--kendo-spacing-12)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -32625,16 +32208,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-suggestion-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-suggestion-default-theme-color</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -33572,20 +33145,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the disabled Switch is checked.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-switch-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: ( font-size: $kendo-switch-sm-font-size, track-width: $kendo-switch-sm-track-width, track-height: $kendo-switch-sm-track-height, thumb-width: $kendo-switch-sm-thumb-width, thumb-height: $kendo-switch-sm-thumb-height, thumb-offset: $kendo-switch-sm-thumb-offset, label-offset: $kendo-switch-sm-label-offset ),
-    md: ( font-size: $kendo-switch-md-font-size, track-width: $kendo-switch-md-track-width, track-height: $kendo-switch-md-track-height, thumb-width: $kendo-switch-md-thumb-width, thumb-height: $kendo-switch-md-thumb-height, thumb-offset: $kendo-switch-md-thumb-offset, label-offset: $kendo-switch-md-label-offset ),
-    lg: ( font-size: $kendo-switch-lg-font-size, track-width: $kendo-switch-lg-track-width, track-height: $kendo-switch-lg-track-height, thumb-width: $kendo-switch-lg-thumb-width, thumb-height: $kendo-switch-lg-thumb-height, thumb-offset: $kendo-switch-lg-thumb-offset, label-offset: $kendo-switch-lg-label-offset )
-)</code></td>
-    <td><ul><li>sm: "font-size":null,"track-width":"52px","track-height":"28px","thumb-width":"20px","thumb-height":"20px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"36px"</li><li>md: "font-size":null,"track-width":"52px","track-height":"32px","thumb-width":"24px","thumb-height":"24px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"40px"</li><li>lg: "font-size":null,"track-width":"60px","track-height":"36px","thumb-width":"28px","thumb-height":"28px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"44px"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different Switch sizes.</div></div>
     </td>
 </tr>
 </tbody>
@@ -36896,16 +36455,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-toolbar-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-font-family</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -38780,16 +38329,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-headings</td>
-    <td>Map</td>
-    <td><code>null</code></td>
-    <td><ul><li>h1: "font-size":"57px","font-family":"var(--kendo-font-family)","line-height":"64px","font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)","margin":"(0 0 12px)"</li><li>h2: "font-size":"45px","font-family":"var(--kendo-font-family)","line-height":"52px","font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h3: "font-size":"36px","font-family":"var(--kendo-font-family)","line-height":"44px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h4: "font-size":"32px","font-family":"var(--kendo-font-family)","line-height":"40px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h5: "font-size":"28px","font-family":"var(--kendo-font-family)","line-height":"36px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h6: "font-size":"24px","font-family":"var(--kendo-font-family)","line-height":"32px","font-weight":"var(--kendo-font-weight-medium)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-paragraph-margin</td>
     <td>List</td>
     <td><code>null</code></td>
@@ -39177,16 +38716,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the fourth largest display text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-display</td>
-    <td>Map</td>
-    <td><code>null</code></td>
-    <td><ul><li>1: "font-size":"140px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>2: "font-size":"112px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>3: "font-size":"90px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>4: "font-size":"72px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
     </td>
 </tr>
 </tbody>

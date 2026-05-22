@@ -147,16 +147,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-action-icon-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of action icons.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

@@ -388,16 +388,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-headings</td>
-    <td>Map</td>
-    <td><code>null</code></td>
-    <td><ul><li>h1: "font-size":"57px","font-family":"var(--kendo-font-family)","line-height":"64px","font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)","margin":"(0 0 12px)"</li><li>h2: "font-size":"45px","font-family":"var(--kendo-font-family)","line-height":"52px","font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h3: "font-size":"36px","font-family":"var(--kendo-font-family)","line-height":"44px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h4: "font-size":"32px","font-family":"var(--kendo-font-family)","line-height":"40px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h5: "font-size":"28px","font-family":"var(--kendo-font-family)","line-height":"36px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li><li>h6: "font-size":"24px","font-family":"var(--kendo-font-family)","line-height":"32px","font-weight":"var(--kendo-font-weight-medium)","letter-spacing":"var(--kendo-letter-spacing-normal)","margin":"(0 0 12px)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-paragraph-margin</td>
     <td>List</td>
     <td><code>null</code></td>
@@ -785,16 +775,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the fourth largest display text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-display</td>
-    <td>Map</td>
-    <td><code>null</code></td>
-    <td><ul><li>1: "font-size":"140px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>2: "font-size":"112px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>3: "font-size":"90px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li><li>4: "font-size":"72px","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":"var(--kendo-letter-spacing-tighter)"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
     </td>
 </tr>
 </tbody>

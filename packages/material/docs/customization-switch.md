@@ -927,20 +927,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the disabled Switch is checked.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-switch-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: ( font-size: $kendo-switch-sm-font-size, track-width: $kendo-switch-sm-track-width, track-height: $kendo-switch-sm-track-height, thumb-width: $kendo-switch-sm-thumb-width, thumb-height: $kendo-switch-sm-thumb-height, thumb-offset: $kendo-switch-sm-thumb-offset, label-offset: $kendo-switch-sm-label-offset ),
-    md: ( font-size: $kendo-switch-md-font-size, track-width: $kendo-switch-md-track-width, track-height: $kendo-switch-md-track-height, thumb-width: $kendo-switch-md-thumb-width, thumb-height: $kendo-switch-md-thumb-height, thumb-offset: $kendo-switch-md-thumb-offset, label-offset: $kendo-switch-md-label-offset ),
-    lg: ( font-size: $kendo-switch-lg-font-size, track-width: $kendo-switch-lg-track-width, track-height: $kendo-switch-lg-track-height, thumb-width: $kendo-switch-lg-thumb-width, thumb-height: $kendo-switch-lg-thumb-height, thumb-offset: $kendo-switch-lg-thumb-offset, label-offset: $kendo-switch-lg-label-offset )
-)</code></td>
-    <td><ul><li>sm: "font-size":null,"track-width":"52px","track-height":"28px","thumb-width":"20px","thumb-height":"20px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"36px"</li><li>md: "font-size":null,"track-width":"52px","track-height":"32px","thumb-width":"24px","thumb-height":"24px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"40px"</li><li>lg: "font-size":null,"track-width":"60px","track-height":"36px","thumb-width":"28px","thumb-height":"28px","thumb-offset":"4px","label-offset":"0px","thumb-indicator-size":"44px"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different Switch sizes.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

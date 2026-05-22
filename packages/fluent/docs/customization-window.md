@@ -328,16 +328,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-window-titlebar-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the Window titlebar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-window-sizes</td>
     <td>Map</td>
     <td><code>(

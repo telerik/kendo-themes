@@ -358,16 +358,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-tabstrip-item-hover-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -395,16 +385,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-tabstrip-item-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the hovered TabStrip items.</div></div>
     </td>
 </tr>
 <tr>
@@ -438,16 +418,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-selected-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-tabstrip-item-selected-font-weight</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -465,16 +435,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-tabstrip-item-dragging-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the dragged TabStrip items.</div></div>
     </td>
 </tr>
 <tr>
@@ -505,16 +465,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled TabStrip items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-tabstrip-item-disabled-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the disabled TabStrip items.</div></div>
     </td>
 </tr>
 <tr>

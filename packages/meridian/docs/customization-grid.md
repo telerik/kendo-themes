@@ -1143,16 +1143,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-sticky-container-bottom-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container positioned at the bottom in the Grid.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-pinned-container-shadow</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -1160,16 +1150,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container in the Grid.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-pinned-container-bottom-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container positioned at the bottom in the Grid.</div></div>
     </td>
 </tr>
 <tr>

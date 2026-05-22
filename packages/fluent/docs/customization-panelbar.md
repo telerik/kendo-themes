@@ -148,16 +148,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-header-padding-y</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -165,16 +155,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-item-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -258,16 +238,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-header-hover-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -298,16 +268,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the hovered PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-header-focus-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -335,16 +295,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-header-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -388,16 +338,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hover-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the focused and hovered PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -425,16 +365,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-header-selected-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -468,16 +398,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected and hovered PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-header-selected-focus-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -505,16 +425,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected and focused PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-header-selected-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected and focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -548,16 +458,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hover-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected, hovered and focused PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-item-hover-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -588,16 +488,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the hovered PanelBar items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-item-focus-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -625,16 +515,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused PanelBar items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-item-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -678,16 +558,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hover-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the focused and hovered PanelBar items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -715,16 +585,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected PanelBar items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-item-selected-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -758,16 +618,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected and hovered PanelBar items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-item-selected-focus-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -795,16 +645,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected and focused PanelBar items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-item-selected-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected and focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -838,16 +678,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hover-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the selected, hovered and focused PanelBar items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-header-expanded-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -875,16 +705,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the expanded PanelBar header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-header-expanded-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the expanded PanelBar header.</div></div>
     </td>
 </tr>
 </tbody>

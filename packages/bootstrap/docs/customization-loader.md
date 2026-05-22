@@ -377,16 +377,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Loader container.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-loader-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Loader.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

@@ -28,16 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-spacing-base</td>
-    <td>Number</td>
-    <td><code>0.25rem</code></td>
-    <td><code>0.25rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base spacing step used to generate the Spacing map.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-spacing</td>
     <td>Map</td>
     <td><code>$default-spacing</code></td>

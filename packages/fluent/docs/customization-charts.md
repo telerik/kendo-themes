@@ -828,16 +828,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chart-inactive</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-color-base-subtle)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inactive color of the Chart.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chart-area-opacity</td>
     <td>Number</td>
     <td><code>null</code></td>
@@ -865,26 +855,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Chart.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chart-tooltip-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chart.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chart-tooltip-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chart.</div></div>
     </td>
 </tr>
 <tr>
@@ -1045,16 +1015,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chart.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chart-selection-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Chart.</div></div>
     </td>
 </tr>
 <tr>

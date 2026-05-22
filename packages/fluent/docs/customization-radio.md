@@ -118,16 +118,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-radio-radius</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-radio-border-radius, 50%)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-radio-border-width</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -135,122 +125,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-sm-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a small RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-md-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a medium RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-lg-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a large RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-sm-glyph-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a small RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-md-glyph-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a medium RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-lg-glyph-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a large RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-sm-ripple-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a small RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-md-ripple-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a medium RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-lg-ripple-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a large RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-sizes</td>
-    <td>Map</td>
-    <td><code>(
-    sm: (
-        size: $kendo-radio-sm-size,
-        glyph-size: $kendo-radio-sm-glyph-size,
-        ripple-size: $kendo-radio-sm-ripple-size
-    ),
-    md: (
-        size: $kendo-radio-md-size,
-        glyph-size: $kendo-radio-md-glyph-size,
-        ripple-size: $kendo-radio-md-ripple-size
-    ),
-    lg: (
-        size: $kendo-radio-lg-size,
-        glyph-size: $kendo-radio-lg-glyph-size,
-        ripple-size: $kendo-radio-lg-ripple-size
-    )
-)</code></td>
-    <td><ul><li>sm: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-3\\.5)","indicator-size":"var(--kendo-spacing-2)","ripple-size":"300%"</li><li>md: "size":"var(--kendo-spacing-5)","glyph-size":"var(--kendo-spacing-4\\.5)","indicator-size":"var(--kendo-spacing-2\\.5)","ripple-size":"300%"</li><li>lg: "size":"var(--kendo-spacing-6)","glyph-size":"var(--kendo-spacing-5\\.5)","indicator-size":"var(--kendo-spacing-3)","ripple-size":"300%"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -361,26 +235,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-focus-checked-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused and checked RadioButton.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-focus-checked-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -511,16 +365,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the disabled and checked RadioButton indicator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-label-margin-x</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-radio-label-spacing, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the RadioButton inside of a label.</div></div>
     </td>
 </tr>
 <tr>

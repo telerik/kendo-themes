@@ -158,36 +158,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-message-box-bg-level</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color level of the MessageBox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-text-level</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color level of the MessageBox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-border-level</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color level of the MessageBox.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-message-box-link-font-style</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -195,16 +165,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the MessageBox link.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-message-box-link-text-decoration</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text decoration of the MessageBox link.</div></div>
     </td>
 </tr>
 </tbody>

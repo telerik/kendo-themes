@@ -341,16 +341,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "error", "info", "warning", "success")</code></td>
-    <td><code>("base", "error", "info", "warning", "success")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-solid-bg</td>
     <td>String</td>
     <td><code>null</code></td>

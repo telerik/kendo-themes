@@ -218,36 +218,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-sm-padding</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the small Loader.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-loader-md-padding</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the medium Loader.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-loader-lg-padding</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the large Loader.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-loader-sm-spinner-3-width</td>
     <td>Calculation</td>
     <td><code>null</code></td>
@@ -418,36 +388,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-sm-container-padding</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the small Loader container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-loader-md-container-padding</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the medium Loader container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-loader-lg-container-padding</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the large Loader container.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-loader-sm-container-gap</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -505,16 +445,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Loader container.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-loader-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Loader.</div></div>
     </td>
 </tr>
 </tbody>

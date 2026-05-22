@@ -777,16 +777,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the fourth largest display text.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-display</td>
-    <td>Map</td>
-    <td><code>null</code></td>
-    <td><ul><li>1: "font-size":"calc(1rem * 5)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>2: "font-size":"calc(1rem * 4.5)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>3: "font-size":"calc(1rem * 4)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>4: "font-size":"calc(1rem * 3.5)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":300,"letter-spacing":null</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

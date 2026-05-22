@@ -108,16 +108,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-column-menu-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ColumnMenu.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-column-menu-sm-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -145,16 +135,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large ColumnMenu.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-column-menu-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ColumnMenu.</div></div>
     </td>
 </tr>
 <tr>

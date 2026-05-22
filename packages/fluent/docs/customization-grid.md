@@ -1013,26 +1013,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-header-first-border</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-header-first-border-width, var(--kendo-grid-border-width, 1px))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-header-menu-icon-spacing</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-header-menu-spacing, var(--kendo-icon-spacing, 0.5rem))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-toolbar-border-width</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -1040,26 +1020,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Grid toolbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-cell-horizontal-border-width</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Grid cell.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-cell-vertical-border-width</td>
-    <td>Number</td>
-    <td><code>null</code></td>
-    <td><code>0px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Grid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -1323,16 +1283,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-sorted-icon-spacing</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-sort-icon-spacing, var(--kendo-icon-lg-spacing, 0.5rem))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sorted icon spacing of the Grid.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-sorted-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -1340,46 +1290,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sorting-indicator-text</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-sort-indicator-text, var(--kendo-color-on-app-surface))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sorting-index-font-size</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-sort-index-font-size, var(--kendo-font-size-sm))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Grid.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sorting-index-spacing-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-sorting-index-spacing-x</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-sort-index-spacing-x, var(--kendo-spacing-0\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -1543,26 +1453,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-column-menu-popup-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-popup-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid popup.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-column-menu-item-padding-x</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -1574,26 +1464,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-column-menu-item-padding-y</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-column-menu-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\.5)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-list-item-padding-x</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-column-menu-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\.5)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-list-item-padding-y</td>
     <td>String</td>
     <td><code>null</code></td>
     <td><code>var(--kendo-grid-column-menu-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\.5)))</code></td>
@@ -1670,16 +1540,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-group-header-border-bottom-width</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-column-menu-group-header-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -1760,26 +1620,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Grid.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-grouping-row-border-top</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-grouping-row-border-width-y, var(--kendo-grid-border-width, 1px))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The grouping border top of the Grid row.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-footer-border-y</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-grid-group-footer-border-width-y, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical border of the Grid footer.</div></div>
     </td>
 </tr>
 <tr>

@@ -278,16 +278,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the Menu.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-item-padding-x</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -358,26 +348,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-item-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Menu item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-item-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the Menu item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-item-hover-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -395,26 +365,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered Menu item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-item-hover-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered Menu item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-item-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of hovered Menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -438,36 +388,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-item-active-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active Menu item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-item-active-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active Menu item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-item-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-item-selected-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -488,26 +408,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-item-selected-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected Menu item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-item-selected-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of selected Menu item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-scroll-button-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -515,16 +415,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Menu scroll buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-scroll-button-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Menu scroll buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -538,16 +428,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-scroll-button-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the Menu scroll buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-scroll-button-hover-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -558,16 +438,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-scroll-button-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered Menu scroll buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-scroll-button-hover-border</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -575,36 +445,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered Menu scroll buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-scroll-button-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of hovered Menu scroll buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-icon-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu expand arrow icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-icon-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu expand arrow icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -738,16 +578,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Menu popup.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-popup-border</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -755,16 +585,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Menu popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the Menu popup.</div></div>
     </td>
 </tr>
 <tr>
@@ -868,16 +688,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-md-item-icon-margin-start</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-spacing-0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start margin of the medium Menu popup item expand icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-popup-lg-item-icon-margin-start</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -895,16 +705,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the small Menu popup item expand icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-md-item-icon-margin-end</td>
-    <td>Calculation</td>
-    <td><code>null</code></td>
-    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the medium Menu popup item expand icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -986,26 +786,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-item-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-popup-item-hover-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -1026,26 +806,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-hover-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-item-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of hovered Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-menu-popup-item-active-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -1063,36 +823,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-item-active-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-item-active-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active Menu item in popup.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-popup-item-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item in popup.</div></div>
     </td>
 </tr>
 </tbody>

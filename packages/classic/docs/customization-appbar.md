@@ -167,16 +167,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-appbar-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the AppBar.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

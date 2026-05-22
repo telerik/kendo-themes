@@ -28,46 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-stepper-margin-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin the Stepper.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-margin-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin the Stepper.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding the Stepper.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding the Stepper.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-stepper-label-margin-x</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -618,16 +578,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-stepper-optional-label-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the optional Stepper label.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-stepper-optional-label-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -655,46 +605,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Stepper ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-progressbar-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-progressbar-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-progressbar-fill-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Stepper ProgressBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-progressbar-fill-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Stepper ProgressBar.</div></div>
     </td>
 </tr>
 <tr>

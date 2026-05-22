@@ -14,46 +14,6 @@ position: 9
 
 The following table lists the available variables for customizing the Meridian theme.
 
-### Accessibility
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$wcag-dark</td>
-    <td></td>
-    <td><code>black</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container">
-    </td>
-</tr>
-<tr>
-    <td>$wcag-light</td>
-    <td></td>
-    <td><code>white</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default light color for WCAG 2.0.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
 ### ActionButtons
 
 <table class="theme-variables">
@@ -1311,16 +1271,6 @@ The following table lists the available variables for customizing the Meridian t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-appbar-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the AppBar.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -1473,16 +1423,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Avatar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-avatar-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Avatar.</div></div>
     </td>
 </tr>
 </tbody>
@@ -1765,16 +1705,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Badge.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-badge-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Badge.</div></div>
     </td>
 </tr>
 </tbody>
@@ -2165,16 +2095,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat BottomNavigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-navigation-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the BottomNavigation.</div></div>
     </td>
 </tr>
 </tbody>
@@ -3940,16 +3860,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -8729,16 +8639,6 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "error", "info", "warning", "success")</code></td>
-    <td><code>("base", "error", "info", "warning", "success")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-solid-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -9692,86 +9592,6 @@ The following table lists the available variables for customizing the Meridian t
     <td>Color</td>
     <td>series-f-subtler</td>
     <td colspan="2">The subtler series F color variable.</td>
-</tr>
-<tr>
-    <td>$kendo-color-white</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color white.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-black</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color black.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-rgba-transparent</td>
-    <td>Color</td>
-    <td><code>rgba(0, 0, 0, 0)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0)"></span><code>rgba(0, 0, 0, 0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transparent.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-transparent-to-black</td>
-    <td>Gradient</td>
-    <td><code>rgba(black, 0), black</code></td>
-    <td><code>(rgba(0, 0, 0, 0), black)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to black.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-transparent-to-white</td>
-    <td>Gradient</td>
-    <td><code>rgba(white, 0), white</code></td>
-    <td><code>(rgba(255, 255, 255, 0), white)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to white.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-black-to-transparent</td>
-    <td>Gradient</td>
-    <td><code>black, rgba(black, 0)</code></td>
-    <td><code>(black, rgba(0, 0, 0, 0))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from black to transparent.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-white-to-transparent</td>
-    <td>Gradient</td>
-    <td><code>white, rgba(white, 0)</code></td>
-    <td><code>(white, rgba(255, 255, 255, 0))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from white to transparent.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gradient-rainbow</td>
-    <td>Gradient</td>
-    <td><span class="color-preview" style="background-color: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000"></span><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
-    <td><code>(#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that cycles through the colors of the rainbow.<br />Note: you cannot change this value.</div></div>
-    </td>
 </tr>
 </tbody>
 </table>
@@ -15189,16 +15009,6 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the FloatingActionButton.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-fab-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -17767,16 +17577,6 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-sticky-container-bottom-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the sticky container positioned at the bottom in the Grid.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-pinned-container-shadow</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -17784,16 +17584,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container in the Grid.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-pinned-container-bottom-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the pinned container positioned at the bottom in the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -18344,16 +18134,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-action-icon-color</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of action icons.</div></div>
     </td>
 </tr>
 </tbody>
@@ -21608,16 +21388,6 @@ The following table lists the available variables for customizing the Meridian t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Loader container.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-loader-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Loader.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -23054,36 +22824,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button..</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
-### MessageBox
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-message-box-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary", "info", "success", "warning", "error", "inverse")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the MessageBox.</div></div>
     </td>
 </tr>
 </tbody>
@@ -33615,16 +33355,6 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-suggestion-theme-colors</td>
-    <td>List</td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-    <td><code>("base", "primary", "secondary", "tertiary")</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Suggestion.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-suggestion-default-theme-color</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -39930,16 +39660,6 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-headings</td>
-    <td>Map</td>
-    <td><code>null</code></td>
-    <td><ul><li>h1: "font-size":"calc(var(--kendo-font-size) * 4)","font-family":"var(--kendo-font-family)","line-height":"80px","font-weight":"var(--kendo-font-weight-semibold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h2: "font-size":"calc(var(--kendo-font-size) * 3.25)","font-family":"var(--kendo-font-family)","line-height":"62px","font-weight":"var(--kendo-font-weight-semibold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h3: "font-size":"calc(var(--kendo-font-size) * 2.5)","font-family":"var(--kendo-font-family)","line-height":"48px","font-weight":"var(--kendo-font-weight-semibold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h4: "font-size":"calc(var(--kendo-font-size) * 1.75)","font-family":"var(--kendo-font-family)","line-height":"34px","font-weight":"var(--kendo-font-weight-semibold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h5: "font-size":"calc(var(--kendo-font-size) * 1.375)","font-family":"var(--kendo-font-family)","line-height":"36px","font-weight":"var(--kendo-font-weight-semibold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h6: "font-size":"calc(var(--kendo-font-size) * 1.125)","font-family":"var(--kendo-font-family)","line-height":"22px","font-weight":"var(--kendo-font-weight-semibold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-paragraph-margin</td>
     <td>List</td>
     <td><code>null</code></td>
@@ -40327,16 +40047,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the fourth largest display text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-display</td>
-    <td>Map</td>
-    <td><code>null</code></td>
-    <td><ul><li>1: "font-size":"calc(var(--kendo-font-size) * 8)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":null</li><li>2: "font-size":"calc(var(--kendo-font-size) * 7)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":null</li><li>3: "font-size":"calc(var(--kendo-font-size) * 6)","font-family":"var(--kendo-font-family)","line-height":1.25,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":null</li><li>4: "font-size":"calc(var(--kendo-font-size) * 5)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":null</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
     </td>
 </tr>
 </tbody>

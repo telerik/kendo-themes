@@ -368,136 +368,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-actionsheet-titlebar-padding-x</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-padding-x, var(--kendo-spacing-4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-padding-y</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-padding-y, var(--kendo-spacing-2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-border-width</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-border-width, 1px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-font-size</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-font-size, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-font-family</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-font-family, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-line-height</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-line-height, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-gap</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-gap, var(--kendo-spacing-4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-font-weight</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-bg</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-bg, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-text</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-text, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-border</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-border, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-titlebar-shadow</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-actionsheet-header-shadow, none)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-actionsheet-subtitle-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -565,16 +435,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ActionSheet footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-footer-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the ActionSheet footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -728,26 +588,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-actionsheet-item-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the hovered ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-hover-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-actionsheet-item-focus-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -775,26 +615,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-focus-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the focused ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused ActionSheet item.</div></div>
     </td>
 </tr>
 <tr>
@@ -828,56 +648,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-actionsheet-item-disabled-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the disabled ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-disabled-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-hover-background</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background of the ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-focus-background</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background of the ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-actionsheet-item-disabled-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the disabled ActionSheet item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -895,26 +665,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the adaptive ActionSheet.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-adaptive-actionsheet-titlebar-padding-y</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-adaptive-actionsheet-header-padding-y, var(--kendo-spacing-4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the adaptive ActionSheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-adaptive-actionsheet-titlebar-padding-x</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-adaptive-actionsheet-header-padding-x, var(--kendo-spacing-4))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the adaptive ActionSheet titlebar.</div></div>
     </td>
 </tr>
 <tr>

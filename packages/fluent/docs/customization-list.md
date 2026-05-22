@@ -108,16 +108,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List component, if no size is set.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-list-sm-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -145,16 +135,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large List.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List component, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -258,16 +238,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List header, if no size is set.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-list-sm-header-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -295,16 +265,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large List header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-header-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -375,36 +335,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large List item group label.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-item-group-label-sm-line-height</td>
-    <td>String</td>
-    <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small List item group label.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-item-group-label-md-line-height</td>
-    <td>String</td>
-    <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium List item group label.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-item-group-label-lg-line-height</td>
-    <td>String</td>
-    <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large List item group label.</div></div>
     </td>
 </tr>
 <tr>
@@ -588,16 +518,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List items, if no size is set.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-list-sm-item-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -645,16 +565,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the List items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-item-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List items, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -758,16 +668,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List group items, if no size is set.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-list-sm-group-item-font-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -795,16 +695,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large List group item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-list-group-item-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List group items, if no size is set.</div></div>
     </td>
 </tr>
 <tr>

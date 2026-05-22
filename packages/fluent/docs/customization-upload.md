@@ -238,16 +238,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-upload-validation-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Upload validation message.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-upload-icon-spacing</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -345,16 +335,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload list.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-upload-file-info-margin</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload.</div></div>
     </td>
 </tr>
 </tbody>

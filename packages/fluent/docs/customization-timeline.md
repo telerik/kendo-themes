@@ -338,16 +338,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-timeline-track-item-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Timeline's focused track items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-timeline-track-event-offset</td>
     <td>String</td>
     <td><code>null</code></td>

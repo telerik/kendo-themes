@@ -218,16 +218,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-file-manager-toolbar-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the FileManager Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-file-manager-navigation-padding-x</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -425,36 +415,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the FileManager ListView item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-file-manager-listview-item-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager ListView item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-file-manager-listview-item-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager ListView item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-file-manager-listview-item-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager ListView item.</div></div>
     </td>
 </tr>
 <tr>

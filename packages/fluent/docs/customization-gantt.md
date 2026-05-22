@@ -178,36 +178,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-gantt-treelist-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt TreeList.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gantt-treelist-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt TreeList.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gantt-treelist-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt TreeList.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-gantt-nonwork-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -518,16 +488,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-gantt-task-actions-padding</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Gantt task actions.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-gantt-planned-margin-y</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -805,26 +765,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gantt-task-tooltip-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Gantt task Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-gantt-task-tooltip-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Gantt task Tooltip.</div></div>
     </td>
 </tr>
 </tbody>

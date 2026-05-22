@@ -78,16 +78,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-listbox-default-height</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-listbox-height, 200px)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ListBox.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-listbox-border-width</td>
     <td>String</td>
     <td><code>null</code></td>

@@ -208,16 +208,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-header-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the Spreadsheet header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-spreadsheet-table-header-bg</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -245,16 +235,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet table headers.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-table-header-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the Spreadsheet table headers.</div></div>
     </td>
 </tr>
 <tr>
@@ -355,16 +335,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Spreadsheet formula input.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-formula-bar-icon-padding</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Spreadsheet formula bar icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -925,26 +895,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Spreadsheet filter.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-menu-link-padding-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet filter menu link.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-filter-menu-icon-margin</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Spreadsheet filter menu icon.</div></div>
     </td>
 </tr>
 </tbody>

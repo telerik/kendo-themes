@@ -368,16 +368,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-gradient-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-gradient-canvas-border-radius</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -488,16 +478,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-gradient-slider-draghandle-border-width</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ColorGradient slider drag handle.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-gradient-slider-vertical-size</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -598,36 +578,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-gradient-draghandle-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient canvas drag handle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-draghandle-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorGradient canvas drag handle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-draghandle-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ColorGradient canvas drag handle.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-gradient-draghandle-border</td>
     <td>String</td>
     <td><code>null</code></td>
@@ -665,26 +615,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-canvas-draghandle-margin-y</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-color-gradient-canvas-draghandle-offset-y, calc(-1 * var(--kendo-color-gradient-draghandle-height, 20px) / 2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the ColorGradient canvas drag handle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-canvas-draghandle-margin-x</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-color-gradient-canvas-draghandle-offset-x, calc(-1 * var(--kendo-color-gradient-draghandle-width, 20px) / 2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>

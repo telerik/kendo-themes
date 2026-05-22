@@ -118,46 +118,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pdf-viewer-toolbar-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pdf-viewer-toolbar-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pdf-viewer-toolbar-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pdf-viewer-toolbar-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the PDFViewer Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pdf-viewer-canvas-bg</td>
     <td>String</td>
     <td><code>null</code></td>
