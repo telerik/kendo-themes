@@ -10,4 +10,14 @@
         padding-inline: $kendo-list-container-padding-inline;
         padding-block: $kendo-list-container-padding-block;
     }
+
+    .k-actionsheet .k-calendar {
+        .k-calendar-header {
+            min-width: unset;
+        }
+
+        .k-calendar-view {
+            width: 100%;
+        }
+    }
 }

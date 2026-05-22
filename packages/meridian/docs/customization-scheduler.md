@@ -410,8 +410,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-datecolumn-width</td>
     <td>Number</td>
-    <td><code>12em</code></td>
-    <td><code>12em</code></td>
+    <td><code>12rem</code></td>
+    <td><code>12rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Scheduler date column.</div></div>
@@ -420,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-timecolumn-width</td>
     <td>Number</td>
-    <td><code>11em</code></td>
-    <td><code>11em</code></td>
+    <td><code>11rem</code></td>
+    <td><code>11rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Scheduler time column.</div></div>

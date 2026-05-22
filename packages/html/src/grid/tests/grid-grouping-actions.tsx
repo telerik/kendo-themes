@@ -1,16 +1,11 @@
-import { Icon } from '../../icon';
-import { Popup } from '../../popup';
-import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuNormal } from '../../column-menu';
-import { GridWithGrouping } from '../../grid';
-
+import { Popup } from "../../popup";
+import { GridWithGrouping } from "../../grid";
+import { MenuList, MenuListItem } from "../..";
 
 const styles = `
-    .k-animation-container,
-    .k-popup {
-        position: relative;
-        overflow: visible;
-        top: -97px;
-        left: 70px;
+    .k-animation-container {
+        left: 200px;
+        top: 62px;
     }
 
     .k-grouping-header .k-grouping-dropclue {
@@ -19,29 +14,18 @@ const styles = `
 `;
 
 export default () => (
-    <>
-        <style>{styles}</style>
-        <div id="test-area">
-            <section>
-                <GridWithGrouping dropClue className="k-grid-no-scrollbar"></GridWithGrouping>
-            </section>
-
-            <Popup className="k-grid-columnmenu-popup">
-                <ColumnMenuNormal>
-                    <ColumnMenuItemWrapper>
-                        <ColumnMenuItem>
-                            <div className="k-column-list-item">
-                                <Icon icon="chevron-left"/>Move previous
-                            </div>
-                            <div className="k-column-list-item k-disabled">
-                                <Icon icon="chevron-right"/>Move next
-                            </div>
-                        </ColumnMenuItem>
-                    </ColumnMenuItemWrapper>
-                </ColumnMenuNormal>
-            </Popup>
-        </div>
-    </>
+  <>
+    <style>{styles}</style>
+    <div id="test-area">
+      <section>
+        <GridWithGrouping dropClue className="k-grid-no-scrollbar"></GridWithGrouping>
+      </section>
+      <Popup className="k-menu-popup">
+        <MenuList id="submenu-popup-1">
+          <MenuListItem icon="chevron-left" first text="Move previous"></MenuListItem>
+          <MenuListItem icon="chevron-right" last text="Move next"></MenuListItem>
+        </MenuList>
+      </Popup>
+    </div>
+  </>
 );
-
-

@@ -1505,11 +1505,6 @@
             border: 0;
             border-radius: 0;
             background: inherit;
-
-            .k-columnmenu-item {
-                display: flex;
-                align-items: center;
-            }
         }
 
         .k-columnmenu-indicators {
@@ -1517,12 +1512,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        // TODO: Check if k-columnmenu-item should not be flex by default
-        .k-columnmenu-item:has(> .k-columnmenu-item-actions, > .k-columnmenu-indicators) {
-            display: flex;
-            align-items: center;
         }
     }
     .k-column-menu-tabbed {
@@ -1584,6 +1573,8 @@
     }
 
     .k-columnmenu-item {
+        display: flex;
+        align-items: center;
         padding-block: $kendo-grid-column-menu-item-padding-y;
         padding-inline: $kendo-grid-column-menu-item-padding-x;
         outline: 0;
