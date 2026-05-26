@@ -1,0 +1,4 @@
+@forward "../../scss/index.scss";
+@use "../../scss/index.scss" as *;
+
+@include kendo-theme--styles();
