@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.0...v14.1.1-dev.1) (2026-05-25)
+
+
+### Bug Fixes
+
+* **html:** remove wrong classes from calendar ([faea5ac](https://github.com/telerik/kendo-themes/commit/faea5acab9ef65f6a1f86e841e5d48e76dbcb40c))
+* **meridian:** prevent calendar from jumping when changing the months ([f55d32d](https://github.com/telerik/kendo-themes/commit/f55d32d0343fc203a28767b3cdb08540c80c02eb))
+* **meridian:** scheduler agenda view misalignment ([d0d9cce](https://github.com/telerik/kendo-themes/commit/d0d9cce27380e5696c6121e9f678548ebfad6730))
+
+
+
+
+
 ## [14.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.0...v14.1.1-dev.0) (2026-05-21)
 
 
