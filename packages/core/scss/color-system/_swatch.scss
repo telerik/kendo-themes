@@ -400,5 +400,18 @@ $kendo-colors: map.merge($default-colors, $kendo-colors);
             }
         }
     }
-}
 
+    // It resolves to light by default, but if we have a dark theme
+    // by default we would want to expose that and expose "color-scheme: dark" in the root
+    // [data-theme="light"] {
+    //     color-scheme: light;
+    // }
+
+    [data-theme="dark"] {
+        color-scheme: dark;
+    }
+
+    [data-theme="system"] {
+        color-scheme: light dark;
+    }
+}
