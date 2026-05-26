@@ -10,7 +10,6 @@ $_default-colors: (
     surface-alt: #{"oklch(from var(--kendo-color-surface) calc(l + 0.045) c h)"},
     border: oklch(83.9% 0 0deg),
     border-alt: oklch(77.63% 0 0deg),
-
     // Base (ash-gray, achromatic)
     base-subtle: #{"oklch(from var(--kendo-color-base) calc(l + 0.015) c h)"},
     base-subtle-hover: #{"oklch(from var(--kendo-color-base) l c h)"},
@@ -121,7 +120,6 @@ $_default-colors: (
 
     // Series
     series: oklch(69.85% 0.1923 27.19deg),
-
     // Series A (coral)
     series-a: var(--kendo-color-series),
     series-a-bold: #{"oklch(from var(--kendo-color-series-a) calc(l * 0.809) calc(c * 0.792) h)"},
@@ -157,7 +155,7 @@ $_default-colors: (
     series-f-bold: #{"oklch(from var(--kendo-color-series-f) calc(l * 0.865) calc(c * 0.835) h)"},
     series-f-bolder: #{"oklch(from var(--kendo-color-series-f) calc(l * 0.654) calc(c * 0.607) h)"},
     series-f-subtle: #{"oklch(from var(--kendo-color-series-f) calc(l * 1.437) calc(c * 0.545) h)"},
-    series-f-subtler: #{"oklch(from var(--kendo-color-series-f) calc(l * 1.240) calc(c * 0.812) h)"},
+    series-f-subtler: #{"oklch(from var(--kendo-color-series-f) calc(l * 1.240) calc(c * 0.812) h)"}
 ) !default;
 
 /// The global default Colors map.
@@ -430,16 +428,16 @@ $_default-colors-dark: (
     on-secondary: black,
     secondary-on-surface: #efefef,
     // Tertiary
-    tertiary-subtle: map.get( $kendo-palette-dodger-blue, 13 ),
-    tertiary-subtle-hover: map.get( $kendo-palette-dodger-blue, 12 ),
-    tertiary-subtle-active: map.get( $kendo-palette-dodger-blue, 11 ),
-    tertiary: map.get( $kendo-palette-dodger-blue, 5 ),
-    tertiary-hover: map.get( $kendo-palette-dodger-blue, 4 ),
-    tertiary-active: map.get( $kendo-palette-dodger-blue, 3 ),
-    tertiary-emphasis: map.get( $kendo-palette-dodger-blue, 8 ),
-    tertiary-on-subtle: map.get( $kendo-palette-dodger-blue, 1 ),
-    on-tertiary: map.get( $kendo-palette-ash-gray, "white" ),
-    tertiary-on-surface: map.get( $kendo-palette-dodger-blue, 3 ),
+    tertiary-subtle: #023f5c,
+    tertiary-subtle-hover: #02557a,
+    tertiary-subtle-active: #026999,
+    tertiary: #03a9f4,
+    tertiary-hover: #039ae0,
+    tertiary-active: #028ccb,
+    tertiary-emphasis: #61c9f9,
+    tertiary-on-subtle: #ebf8fe,
+    on-tertiary: white,
+    tertiary-on-surface: #03a9f4,
     // Info
     info-subtle: #001927,
     info-subtle-hover: #002b44,
@@ -530,7 +528,7 @@ $_default-colors-dark: (
     series-f-bold: #32084a,
     series-f-bolder: #220631,
     series-f-subtle: #724889,
-    series-f-subtler: #a185b1,
+    series-f-subtler: #a185b1
 ) !default;
 
 $kendo-colors-dark: $_default-colors-dark !default;
