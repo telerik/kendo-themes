@@ -6,7 +6,7 @@ const options = Layout.options;
 const states = Layout.states;
 const defaults = {
     ...Layout.defaultOptions,
-  variant: 'stretch',
+    variant: 'stretch',
 };
 
 const variants = [
@@ -32,7 +32,7 @@ const modifiers: Array<{ name: string; title: string }> = [
 
 ];
 
-export const LayoutDemo = (
+export const StackLayoutDemo = (
     props: KendoLayoutProps & { variant?: (typeof variants)[number]['name'] } & {
         modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
     }
@@ -89,15 +89,14 @@ export const LayoutDemo = (
                 </StackLayoutNormal>
             );
     }
-}
+};
 
 
-LayoutDemo.options = options;
-LayoutDemo.states = states;
-LayoutDemo.variants = variants;
-LayoutDemo.defaultOptions = defaults;
-LayoutDemo.modifiers = modifiers;
-LayoutDemo.className = StackLayout.className;
+StackLayoutDemo.options = options;
+StackLayoutDemo.states = states;
+StackLayoutDemo.variants = variants;
+StackLayoutDemo.defaultOptions = defaults;
+StackLayoutDemo.modifiers = modifiers;
+StackLayoutDemo.className = StackLayout.className;
 
-export default LayoutDemo;
-
+export default StackLayoutDemo;
