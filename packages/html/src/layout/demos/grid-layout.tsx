@@ -40,7 +40,7 @@ export const GridLayoutDemo = (
     const { variant, modifiers: _mods, ...other } = { ...props };
 
     const baseStyleClasses = "k-border-solid k-border-secondary-subtle k-p-3";
-    const baseStyles = { width: "228px", height: "228px", gap: "8px", gridTemplateColumns: "1fr 1fr 1fr" };
+    const baseStyles = { width: "228px", height: "228px", gap: "8px", gridTemplateColumns: "1fr 1fr 1fr", gridTemplateRows: "1fr 1fr 1fr" };
 
     const baseGridLayoutContent =
         <>
@@ -48,7 +48,10 @@ export const GridLayoutDemo = (
             <div className="k-p-5 k-bg-primary-emphasis" />
             <div className="k-p-5 k-bg-primary" />
             <div className="k-p-5 k-bg-primary" />
+            <div className="k-p-5 k-bg-primary-subtle" />
             <div className="k-p-5 k-bg-primary-emphasis" />
+            <div className="k-p-5 k-bg-primary-emphasis" />
+            <div className="k-p-5 k-bg-primary" />
             <div className="k-p-5 k-bg-primary-subtle" />
         </>
     ;
@@ -56,19 +59,19 @@ export const GridLayoutDemo = (
     switch (variant) {
         case 'start':
             return (
-                <GridLayoutNormal {...other} style={baseStyles} className={baseStyleClasses} alignItems="start" justifyItems="start">
+                <GridLayoutNormal {...other} style={baseStyles} className={baseStyleClasses} alignItems="stretch" justifyItems="start">
                     {baseGridLayoutContent}
                 </GridLayoutNormal>
             );
         case 'middle':
             return (
-                <GridLayoutNormal {...other} style={baseStyles} className={baseStyleClasses} alignItems="center" justifyItems="center">
+                <GridLayoutNormal {...other} style={baseStyles} className={baseStyleClasses} alignItems="stretch" justifyItems="center">
                     {baseGridLayoutContent}
                 </GridLayoutNormal>
             );
         case 'end':
             return (
-                <GridLayoutNormal {...other} style={baseStyles} className={baseStyleClasses} alignItems="end" justifyItems="end">
+                <GridLayoutNormal {...other} style={baseStyles} className={baseStyleClasses} alignItems="stretch" justifyItems="end">
                     {baseGridLayoutContent}
                 </GridLayoutNormal>
             );
