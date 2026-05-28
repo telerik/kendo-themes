@@ -1,8 +1,17 @@
-@mixin kendo-textarea--layout-base() {
+@use "../../border-radii/index.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../input/_variables.scss" as *;
 
+@mixin kendo-textarea--layout-base() {
     // Textarea
     .k-textarea:has(.k-input-inner[style*="width"]) {
         width: max-content;
     }
 
+    .k-textarea {
+        #{k-when-default($kendo-input-default-roundness, full)}
+        &.k-rounded-full {
+            border-radius: k-border-radius(xxxl);
+        }
+    }
 }
