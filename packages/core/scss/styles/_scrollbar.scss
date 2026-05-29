@@ -24,4 +24,10 @@
         background-color: #858585;
     }
 
+    // native scrollbar
+    .k-body {
+        scrollbar-width: thin;
+        scrollbar-color: #{"color-mix(in srgb, var(--kendo-color-on-app-surface) 35%, transparent)"} var(--kendo-color-surface);
+    }
+
 }
