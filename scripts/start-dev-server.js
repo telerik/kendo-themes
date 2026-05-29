@@ -7,7 +7,10 @@ const path = require("path");
 
 const extension = `tsx`;
 const entryPoints = glob.sync(`./packages/html/src/**/tests/**/*.${extension}`, { dotRelative: true });
-const index = fs.readFileSync("./packages/html/shared/index.html", "utf-8");
+const indexRaw = fs.readFileSync("./packages/html/shared/index.html", "utf-8");
+
+// Inject the theme toggle script into the index.html
+const index = indexRaw.replace("</body>", '<script src="/packages/html/assets/theme-toggle.js"></script>\n</body>');
 
 const entiresMap = new Set();
 entryPoints.forEach((point) => entiresMap.add(point));
