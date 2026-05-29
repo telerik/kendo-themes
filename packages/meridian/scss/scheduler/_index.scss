@@ -2,7 +2,11 @@
 @use "../core/_index.scss" as *;
 @use "../icons/_index.scss" as *;
 @use "../utils/_index.scss" as *;
-@use "../adaptive/_index.scss" as *;
+@use "../listgroup/_index.scss" as *;
+@use "../checkbox/_index.scss" as *;
+@use "../radio/_index.scss" as *;
+@use "../switch/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../datetimepicker/_index.scss" as *;
 @use "../dropdownlist/_index.scss" as *;
@@ -20,7 +24,11 @@
     @include import-once( "scheduler" ) {
         @include core-styles();
         @include kendo-icon--styles();
-        @include kendo-adaptive--styles();
+        @include kendo-listgroup--styles();
+        @include kendo-checkbox--styles();
+        @include kendo-radio--styles();
+        @include kendo-switch--styles();
+        @include kendo-toolbar--styles();
         @include kendo-button--styles();
         @include kendo-date-time-picker--styles();
         @include kendo-dropdown-list--styles();

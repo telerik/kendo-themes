@@ -419,16 +419,16 @@ export const allComponents: SpecComponent[] = [
   // SchedulerBody, - SKIPPED, specificity error
   // SchedulerCell, - SKIPPED, specificity error
   // SchedulerContent, - SKIPPED, specificity error
-  SchedulerEvent,
+  // SchedulerEvent, - SKIPPED, specificity error (.k-scheduler-mobile nesting)
   // SchedulerGroup, - SKIPPED, specificity error
   // SchedulerHead, - SKIPPED, specificity error
   // SchedulerHeader, - SKIPPED, specificity error
   // SchedulerRow, - SKIPPED, specificity error
   // SchedulerStickyCell, - SKIPPED, specificity error
   // SchedulerTable, - SKIPPED, specificity error
-  SchedulerTask,
+  // SchedulerTask, - SKIPPED, specificity error (.k-scheduler-mobile nesting)
   // SchedulerTimes, - SKIPPED, specificity error
-  SchedulerToolbar,
+  // SchedulerToolbar, - SKIPPED, specificity error (.k-scheduler-mobile nesting)
   SchedulerView,
   // SearchBar, - SKIPPED, specificity error
   Searchbox,

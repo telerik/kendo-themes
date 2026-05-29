@@ -260,6 +260,23 @@ $kendo-scheduler-more-btn-height: var( --kendo-scheduler-more-btn-height, 13px )
 /// The color of the Scheduler marquee.
 /// @group scheduler
 $kendo-scheduler-marquee-color: var( --kendo-scheduler-marquee-color, k-color(primary) ) !default;
+// Adaptive
+$kendo-scheduler-adaptive-bg: var( --kendo-scheduler-adaptive-bg, #{k-color(surface-alt)} ) !default;
+$kendo-scheduler-adaptive-text: var( --kendo-scheduler-adaptive-text, #{k-color(on-app-surface)} ) !default;
+$kendo-scheduler-adaptive-border: var( --kendo-scheduler-adaptive-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
+
+$kendo-scheduler-adaptive-content-bg: var( --kendo-scheduler-adaptive-content-bg, #{k-color(surface-alt)} ) !default;
+
+$kendo-scheduler-adaptive-menu-clear-text: var( --kendo-scheduler-adaptive-menu-clear-text, #{k-color(primary-on-surface)} ) !default;
+
+$kendo-scheduler-adaptive-border-width: var( --kendo-scheduler-adaptive-border-width, 1px ) !default;
+$kendo-scheduler-adaptive-font-family: var( --kendo-scheduler-adaptive-font-family, var(--kendo-font-family) ) !default;
+$kendo-scheduler-adaptive-font-size: var( --kendo-scheduler-adaptive-font-size, var(--kendo-font-size) ) !default;
+$kendo-scheduler-adaptive-line-height: var( --kendo-scheduler-adaptive-line-height, var(--kendo-line-height) ) !default;
+
+$kendo-scheduler-adaptive-current-text: var( --kendo-scheduler-adaptive-current-text, #{k-color(primary-on-surface)} ) !default;
+$kendo-scheduler-adaptive-base-text: var( --kendo-scheduler-adaptive-base-text, inherit ) !default;
+$kendo-scheduler-adaptive-subtle-text: var( --kendo-scheduler-adaptive-subtle-text, #{k-color(on-app-surface)} ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/scheduler/_variables.scss" with (
     $kendo-scheduler-border-width: $kendo-scheduler-border-width,
@@ -331,5 +348,17 @@ $kendo-scheduler-marquee-color: var( --kendo-scheduler-marquee-color, k-color(pr
     $kendo-scheduler-tooltip-event-padding-y: $kendo-scheduler-tooltip-event-padding-y,
     $kendo-scheduler-tooltip-event-border-radius: $kendo-scheduler-tooltip-event-border-radius,
     $kendo-scheduler-tooltip-event-gap: $kendo-scheduler-tooltip-event-gap,
-    $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-callout-color
+    $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-callout-color,
+    $kendo-scheduler-adaptive-bg: $kendo-scheduler-adaptive-bg,
+    $kendo-scheduler-adaptive-text: $kendo-scheduler-adaptive-text,
+    $kendo-scheduler-adaptive-border: $kendo-scheduler-adaptive-border,
+    $kendo-scheduler-adaptive-content-bg: $kendo-scheduler-adaptive-content-bg,
+    $kendo-scheduler-adaptive-menu-clear-text: $kendo-scheduler-adaptive-menu-clear-text,
+    $kendo-scheduler-adaptive-border-width: $kendo-scheduler-adaptive-border-width,
+    $kendo-scheduler-adaptive-font-family: $kendo-scheduler-adaptive-font-family,
+    $kendo-scheduler-adaptive-font-size: $kendo-scheduler-adaptive-font-size,
+    $kendo-scheduler-adaptive-line-height: $kendo-scheduler-adaptive-line-height,
+    $kendo-scheduler-adaptive-current-text: $kendo-scheduler-adaptive-current-text,
+    $kendo-scheduler-adaptive-base-text: $kendo-scheduler-adaptive-base-text,
+    $kendo-scheduler-adaptive-subtle-text: $kendo-scheduler-adaptive-subtle-text
 );
