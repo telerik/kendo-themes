@@ -235,4 +235,75 @@
     // Scheduler edit form
     .k-scheduler-edit-form {}
 
+
+    // Adaptive
+    .k-pane-wrapper,
+    .k-view {
+        @include fill(
+            $kendo-scheduler-adaptive-text,
+            $kendo-scheduler-adaptive-bg,
+            $kendo-scheduler-adaptive-border
+        );
+    }
+
+    .k-pane-wrapper .k-pane {
+
+        > .k-view > .k-content {
+            background-position: 50% 50%;
+            background-color: $kendo-scheduler-adaptive-content-bg;
+        }
+    }
+
+    .k-pane-wrapper .k-pane {
+
+        .k-scheduler-mobile {
+
+            .k-nav-current {
+                color: $kendo-scheduler-adaptive-current-text;
+            }
+
+            .k-scheduler-times,
+            .k-scheduler-header,
+            .k-scheduler-groupcolumn,
+            .k-mobile-scheduler-agendadate {
+                color: $kendo-scheduler-adaptive-base-text;
+            }
+
+            .k-time-period,
+            .k-mobile-scheduler-agendaweekday {
+                color: $kendo-scheduler-adaptive-subtle-text;
+            }
+
+            .k-scheduler-times,
+            .k-scheduler-header,
+            .k-scheduler-header-wrap,
+            .k-scheduler-datecolumn,
+            .k-scheduler-groupcolumn,
+            .k-scheduler-group-cell,
+            .k-scheduler-header-all-day {
+                background-color: $kendo-scheduler-adaptive-content-bg;
+            }
+
+            .k-scheduler-toolbar .k-scheduler-tools > li {
+                display: inline-block;
+                background-color: inherit;
+            }
+        }
+
+        .k-scheduler-edit-form {
+
+            .k-item,
+            .k-link {
+                color: k-color(on-app-surface);
+            }
+
+            .k-scheduler-delete,
+            .k-scheduler-resetSeries { // stylelint-disable-line
+                color: $kendo-scheduler-adaptive-menu-clear-text;
+            }
+
+        }
+
+    }
+
 }

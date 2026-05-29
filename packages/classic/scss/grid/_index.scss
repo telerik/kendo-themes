@@ -1,7 +1,6 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
-@use "../adaptive/_index.scss" as *;
 @use "../progressbar/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../action-buttons/_index.scss" as *;
@@ -35,7 +34,6 @@
 @mixin kendo-grid--styles() {
     @include import-once( "grid" ) {
         @include core-styles();
-        @include kendo-adaptive--styles();
         @include kendo-progressbar--styles();
         @include kendo-button--styles();
         @include kendo-action-buttons--styles();

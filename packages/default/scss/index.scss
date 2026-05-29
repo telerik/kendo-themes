@@ -94,7 +94,6 @@
 @forward "./splitter/_index.scss";
 @forward "./tilelayout/_index.scss";
 @forward "./dock-manager/_index.scss";
-@forward "./adaptive/_index.scss";
 @forward "./grid/_index.scss";
 @forward "./listview/_index.scss";
 @forward "./spreadsheet/_index.scss";
@@ -283,7 +282,6 @@
 
 
 // Misc
-@use "./adaptive/_index.scss" as *;
 @use "./file-box/_index.scss" as *;
 @use "./chat/_index.scss" as *;
 @use "./mediaplayer/_index.scss" as *;
@@ -463,7 +461,6 @@
 
 
     // Misc
-    @include kendo-adaptive--styles();
     @include kendo-file-box--styles();
     @include kendo-chat--styles();
     @include kendo-media-player--styles();

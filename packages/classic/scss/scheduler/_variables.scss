@@ -201,7 +201,6 @@ $kendo-scheduler-tooltip-border: null !default;
 /// @group scheduler
 $kendo-scheduler-tooltip-shadow: k-elevation(2) !default;
 
-
 // TODO: use 3
 /// The vertical margin of the Scheduler Tooltip title.
 /// @group scheduler
@@ -237,7 +236,6 @@ $kendo-scheduler-tooltip-event-gap: k-spacing(1) !default;
 /// @group scheduler
 $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-bg !default;
 
-
 /// The padding of the Scheduler appointments.
 /// @group scheduler
 $kendo-scheduler-appointments-padding: k-spacing(2) !default;
@@ -268,6 +266,24 @@ $kendo-scheduler-marquee-label-inset-y: k-spacing(0.5) !default;
 /// @group scheduler
 $kendo-scheduler-header-bg: k-color(surface) !default;
 
+
+// Adaptive
+$kendo-scheduler-adaptive-bg: k-color(surface-alt) !default;
+$kendo-scheduler-adaptive-text: k-color(on-app-surface) !default;
+$kendo-scheduler-adaptive-border: k-color(border) !default;
+
+$kendo-scheduler-adaptive-content-bg: k-color(app-surface) !default;
+
+$kendo-scheduler-adaptive-menu-clear-text: k-color(primary-on-surface) !default;
+
+$kendo-scheduler-adaptive-border-width: 1px !default;
+$kendo-scheduler-adaptive-font-family: var(--kendo-font-family) !default;
+$kendo-scheduler-adaptive-font-size: var(--kendo-font-size) !default;
+$kendo-scheduler-adaptive-line-height: var(--kendo-line-height) !default;
+
+$kendo-scheduler-adaptive-current-text: k-color(primary-on-surface) !default;
+$kendo-scheduler-adaptive-base-text: inherit !default;
+$kendo-scheduler-adaptive-subtle-text: k-color(on-app-surface) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/scheduler/_variables.scss" with (
     $kendo-scheduler-border-width: $kendo-scheduler-border-width,
@@ -347,5 +363,17 @@ $kendo-scheduler-header-bg: k-color(surface) !default;
     $kendo-scheduler-indicators-margin: $kendo-scheduler-indicators-margin,
     $kendo-scheduler-marquee-label-inset-x: $kendo-scheduler-marquee-label-inset-x,
     $kendo-scheduler-marquee-label-inset-y: $kendo-scheduler-marquee-label-inset-y,
-    $kendo-scheduler-header-bg: $kendo-scheduler-header-bg
+    $kendo-scheduler-header-bg: $kendo-scheduler-header-bg,
+    $kendo-scheduler-adaptive-bg: $kendo-scheduler-adaptive-bg,
+    $kendo-scheduler-adaptive-text: $kendo-scheduler-adaptive-text,
+    $kendo-scheduler-adaptive-border: $kendo-scheduler-adaptive-border,
+    $kendo-scheduler-adaptive-content-bg: $kendo-scheduler-adaptive-content-bg,
+    $kendo-scheduler-adaptive-menu-clear-text: $kendo-scheduler-adaptive-menu-clear-text,
+    $kendo-scheduler-adaptive-border-width: $kendo-scheduler-adaptive-border-width,
+    $kendo-scheduler-adaptive-font-family: $kendo-scheduler-adaptive-font-family,
+    $kendo-scheduler-adaptive-font-size: $kendo-scheduler-adaptive-font-size,
+    $kendo-scheduler-adaptive-line-height: $kendo-scheduler-adaptive-line-height,
+    $kendo-scheduler-adaptive-current-text: $kendo-scheduler-adaptive-current-text,
+    $kendo-scheduler-adaptive-base-text: $kendo-scheduler-adaptive-base-text,
+    $kendo-scheduler-adaptive-subtle-text: $kendo-scheduler-adaptive-subtle-text
 );
