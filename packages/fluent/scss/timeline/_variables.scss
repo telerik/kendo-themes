@@ -133,15 +133,6 @@ $kendo-timeline-card-header-bg: var( --kendo-timeline-card-header-bg, k-color(su
 /// The text color of the Timeline's Card header.
 /// @group timeline
 $kendo-timeline-card-header-text: var( --kendo-timeline-card-header-text, k-color(on-app-surface) ) !default;
-/// The border of the Timeline's Card body scroll.
-/// @group timeline
-$kendo-timeline-card-body-scroll-border: var( --kendo-timeline-card-body-scroll-border, color-mix(in srgb, k-color(border) 16%, transparent) ) !default;
-/// The background color of the Timeline's Card body scroll.
-/// @group timeline
-$kendo-timeline-card-body-scroll-bg: var( --kendo-timeline-card-body-scroll-bg, k-color(surface-alt) ) !default;
-/// The color of the Timeline's hovered card scroll thumb.
-/// @group timeline
-$kendo-timeline-card-scroll-thumb-hover: var( --kendo-timeline-card-scroll-thumb-hover, color-mix(in srgb, k-color(border) 10%, transparent) ) !default;
 
 /// The text color of the Timeline date body.
 /// @group timeline

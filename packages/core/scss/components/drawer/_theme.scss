@@ -12,19 +12,6 @@
     }
 
     // Drawer items
-    .k-drawer-wrapper {
-        scrollbar-color: $kendo-drawer-scrollbar-color $kendo-drawer-scrollbar-bg;
-
-        &::-webkit-scrollbar-track {
-            background: $kendo-drawer-scrollbar-bg;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: $kendo-drawer-scrollbar-color;
-        }
-        &::-webkit-scrollbar-thumb:hover {
-            background: $kendo-drawer-scrollbar-hover-color;
-        }
-    }
     .k-drawer-item {
 
         &:hover,
