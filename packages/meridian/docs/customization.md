@@ -12439,26 +12439,6 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-drawer-scrollbar-color</td>
-    <td>String</td>
-    <td><code>k-color(inverse-subtle)</code></td>
-    <td><code>var(--kendo-color-inverse-subtle)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Drawer scrollbar track.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-scrollbar-bg</td>
-    <td>String</td>
-    <td><code>color-mix(in srgb, k-color(inverse-subtle), k-color(on-inverse))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-inverse-subtle), var(--kendo-color-on-inverse))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer scrollbar thumb.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-drawer-scrollbar-radius</td>
     <td>Number</td>
     <td><code>20px</code></td>
@@ -12466,16 +12446,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer scrollbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-scrollbar-hover-color</td>
-    <td>String</td>
-    <td><code>$kendo-drawer-scrollbar-color</code></td>
-    <td><code>var(--kendo-color-inverse-subtle)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar track.</div></div>
     </td>
 </tr>
 <tr>
