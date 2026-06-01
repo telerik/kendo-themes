@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
+
+
+### Bug Fixes
+
+* **html:** component accessibility fixes ([d3bd96f](https://github.com/telerik/kendo-themes/commit/d3bd96f6965815de81a6432dec5674d65af250c8))
+
+
+
+
+
 ## [14.1.1-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.1...v14.1.1-dev.2) (2026-05-27)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
