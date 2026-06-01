@@ -55,6 +55,14 @@
         .k-grouping-row + .k-master-row .k-table-td {
             border-block-start-width: $kendo-grid-grouping-row-border-top;
         }
+
+        .k-table .k-group-footer .k-table-td {
+            border-width: 0 0 $kendo-grid-group-footer-border-y;
+        }
+
+        .k-group-footer:last-child .k-table-td {
+            border-block-end-width: 0;
+        }
     }
 
     // Column menu fix for action buttons focus state
