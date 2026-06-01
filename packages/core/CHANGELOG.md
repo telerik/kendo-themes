@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
+
+
+### Bug Fixes
+
+* **textarea:** rounded full should be less rounded ([f3093d5](https://github.com/telerik/kendo-themes/commit/f3093d53e0d634910eb7d9b9d7fc11fe4b81d80a))
+* window border is being cut when larger border radius is set ([3bcf420](https://github.com/telerik/kendo-themes/commit/3bcf4201154e3f7353a68b9006b5c2a2683ff351))
+
+
+
+
+
 ## [14.1.1-dev.2](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.1...v14.1.1-dev.2) (2026-05-27)
 
 **Note:** Version bump only for package @progress/kendo-theme-core
