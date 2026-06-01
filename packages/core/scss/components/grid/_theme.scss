@@ -94,7 +94,7 @@
 
             .k-grid-content-sticky {
                 border-inline-color: $kendo-grid-sticky-border;
-                border-block-start-color: $kendo-grid-header-border;
+                border-block-end-color: $kendo-grid-sticky-border;
             }
 
             &:hover .k-grid-content-sticky,
@@ -120,7 +120,7 @@
             .k-grid-content-sticky {
                 background-color: $kendo-grid-sticky-bg;
                 border-inline-color: $kendo-grid-sticky-border;
-                border-block-start-color: $kendo-grid-header-border;
+                border-block-end-color: $kendo-grid-sticky-border;
             }
 
             &.k-table-row {
