@@ -12188,26 +12188,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-drawer-scrollbar-color</td>
-    <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-color, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-color, color-mix(in srgb, var(--kendo-color-on-app-surface) 46%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Drawer scrollbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-scrollbar-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-bg, k-color(base-subtle) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-bg, var(--kendo-color-base-subtle))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the Drawer scrollbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-drawer-scrollbar-radius</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-scrollbar-radius, 20px )</code></td>
@@ -12215,16 +12195,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer scrollbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-scrollbar-hover-color</td>
-    <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-hover-color, $kendo-drawer-scrollbar-color )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-hover-color, var(--kendo-drawer-scrollbar-color, color-mix(in srgb, var(--kendo-color-on-app-surface) 46%, transparent)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -36854,36 +36824,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline's Card header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-timeline-card-body-scroll-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-card-body-scroll-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-timeline-card-body-scroll-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the Timeline's Card body scroll.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-timeline-card-body-scroll-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-card-body-scroll-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-timeline-card-body-scroll-bg, var(--kendo-color-surface-alt))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline's Card body scroll.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-timeline-card-scroll-thumb-hover</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-card-scroll-thumb-hover, color-mix(in srgb, k-color(border) 10%, transparent) )</code></td>
-    <td><code>var(--kendo-timeline-card-scroll-thumb-hover, color-mix(in srgb, var(--kendo-color-border) 10%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Timeline's hovered card scroll thumb.</div></div>
     </td>
 </tr>
 <tr>

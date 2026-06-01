@@ -428,36 +428,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-timeline-card-body-scroll-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-card-body-scroll-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-timeline-card-body-scroll-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the Timeline's Card body scroll.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-timeline-card-body-scroll-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-card-body-scroll-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-timeline-card-body-scroll-bg, var(--kendo-color-surface-alt))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline's Card body scroll.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-timeline-card-scroll-thumb-hover</td>
-    <td>String</td>
-    <td><code>var( --kendo-timeline-card-scroll-thumb-hover, color-mix(in srgb, k-color(border) 10%, transparent) )</code></td>
-    <td><code>var(--kendo-timeline-card-scroll-thumb-hover, color-mix(in srgb, var(--kendo-color-border) 10%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Timeline's hovered card scroll thumb.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-timeline-date-body-text</td>
     <td>String</td>
     <td><code>var( --kendo-timeline-date-body-text, k-color(on-app-surface) )</code></td>
