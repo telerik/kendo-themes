@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 800px;
+        }
+        #test-area section {
+            height: 300px;
+        }
+        #test-area .k-dropdownlist {
+            width: min-content;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>Shape Selection Tool Opened</span>
+        <span>Shape Selection Tool Opened RTL</span>
+        <section>
+            <span class="k-dropdownlist k-icon-picker k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-label="Select shape" tabindex="0">
+                <span class="k-input-inner">
+                    <span class="k-input-value-icon k-icon k-svg-icon k-svg-i-shapes" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M480 32H160v131.204C86.969 178.029 32 242.594 32 320c0 88.365 71.635 160 160 160 77.406 0 141.972-54.969 156.797-128H480zM192 448c-70.692 0-128-57.308-128-128 0-59.643 40.793-109.758 96-123.967 1.173-.302 2.354-.583 3.539-.852.357-.081.717-.156 1.076-.234a125 125 0 0 1 3.764-.762 126 126 0 0 1 2.557-.448c.369-.061.736-.125 1.105-.184q3.635-.569 7.335-.932c.379-.037.759-.067 1.139-.101a132 132 0 0 1 3.913-.29q1.309-.075 2.623-.125c.392-.015.782-.033 1.174-.045 1.254-.036 2.512-.06 3.775-.06 70.692 0 128 57.308 128 128 0 1.264-.023 2.521-.06 3.775-.012.393-.03.782-.045 1.174a127 127 0 0 1-.207 3.922q-.09 1.31-.207 2.613c-.034.38-.064.761-.102 1.14a127 127 0 0 1-.933 7.339c-.057.365-.121.728-.181 1.092a128 128 0 0 1-.683 3.785q-.256 1.29-.535 2.571c-.075.346-.147.692-.226 1.037a135 135 0 0 1-.855 3.552c-14.208 55.207-64.323 96-123.966 96m256-128h-96c0-88.365-71.635-160-160-160V64h256z"></path>
+                        </svg>
+                    </span>
+                </span>
+                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Dropdown suggestions">
+                <div class="k-child-animation-container">
+                    <div class="k-list-container k-dropdownlist-popup k-popup">
+                        <div class="k-diagram-shapes-container">
+                            <button class="k-button k-button-flat k-selected k-icon-button" aria-selected="true" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section dir="rtl">
+            <span class="k-dropdownlist k-icon-picker k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-label="Select shape" tabindex="0">
+                <span class="k-input-inner">
+                    <span class="k-input-value-icon k-icon k-svg-icon k-svg-i-shapes" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M480 32H160v131.204C86.969 178.029 32 242.594 32 320c0 88.365 71.635 160 160 160 77.406 0 141.972-54.969 156.797-128H480zM192 448c-70.692 0-128-57.308-128-128 0-59.643 40.793-109.758 96-123.967 1.173-.302 2.354-.583 3.539-.852.357-.081.717-.156 1.076-.234a125 125 0 0 1 3.764-.762 126 126 0 0 1 2.557-.448c.369-.061.736-.125 1.105-.184q3.635-.569 7.335-.932c.379-.037.759-.067 1.139-.101a132 132 0 0 1 3.913-.29q1.309-.075 2.623-.125c.392-.015.782-.033 1.174-.045 1.254-.036 2.512-.06 3.775-.06 70.692 0 128 57.308 128 128 0 1.264-.023 2.521-.06 3.775-.012.393-.03.782-.045 1.174a127 127 0 0 1-.207 3.922q-.09 1.31-.207 2.613c-.034.38-.064.761-.102 1.14a127 127 0 0 1-.933 7.339c-.057.365-.121.728-.181 1.092a128 128 0 0 1-.683 3.785q-.256 1.29-.535 2.571c-.075.346-.147.692-.226 1.037a135 135 0 0 1-.855 3.552c-14.208 55.207-64.323 96-123.966 96m256-128h-96c0-88.365-71.635-160-160-160V64h256z"></path>
+                        </svg>
+                    </span>
+                </span>
+                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="Dropdown suggestions">
+                <div class="k-child-animation-container">
+                    <div class="k-list-container k-dropdownlist-popup k-popup">
+                        <div class="k-diagram-shapes-container">
+                            <button class="k-button k-button-flat k-selected k-icon-button" aria-selected="true" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Funnel">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-circle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Stadium">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-rectangle-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M448 128v256H64V128zm32-32H32v320h448z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rounded Rectangle">
+                                <span class="k-button-icon k-icon k-svg-icon k-icon-xl k-svg-i-hexagon-shape" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m349.62 96 93.33 160-93.33 160H162.38L69.05 256l93.33-160zM368 64H144L32 256l112 192h224l112-192z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
