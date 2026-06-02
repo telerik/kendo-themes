@@ -128,26 +128,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-drawer-scrollbar-color</td>
-    <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-color, color-mix(in srgb, k-color(on-app-surface) 46%, transparent) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-color, color-mix(in srgb, var(--kendo-color-on-app-surface) 46%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Drawer scrollbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-scrollbar-bg</td>
-    <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-bg, k-color(base-subtle) )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-bg, var(--kendo-color-base-subtle))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the Drawer scrollbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-drawer-scrollbar-radius</td>
     <td>String</td>
     <td><code>var( --kendo-drawer-scrollbar-radius, 20px )</code></td>
@@ -155,16 +135,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer scrollbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-scrollbar-hover-color</td>
-    <td>String</td>
-    <td><code>var( --kendo-drawer-scrollbar-hover-color, $kendo-drawer-scrollbar-color )</code></td>
-    <td><code>var(--kendo-drawer-scrollbar-hover-color, var(--kendo-drawer-scrollbar-color, color-mix(in srgb, var(--kendo-color-on-app-surface) 46%, transparent)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar.</div></div>
     </td>
 </tr>
 <tr>

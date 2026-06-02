@@ -24,25 +24,6 @@
                 background-color: $kendo-card-bg;
                 color: $kendo-card-text;
             }
-
-            .k-card-body {
-
-                // Scrollbar styles for Mozilla
-                scrollbar-color: $kendo-card-border $kendo-card-bg;
-
-                // Scrollbar styles for Chrome, Safari and Opera
-                &::-webkit-scrollbar-track {
-                    background: $kendo-card-bg;
-                }
-
-                &::-webkit-scrollbar-thumb {
-                    background: $kendo-card-border;
-                }
-
-                &::-webkit-scrollbar-thumb:hover {
-                    background: k-color(border);
-                }
-            }
         }
 
         // TODO: remove
