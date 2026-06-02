@@ -13041,8 +13041,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-expander-title-text-transform</td>
     <td>String</td>
-    <td><code>uppercase</code></td>
-    <td><code>uppercase</code></td>
+    <td><code>initial</code></td>
+    <td><code>initial</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the ExpansionPanel title.</div></div>
