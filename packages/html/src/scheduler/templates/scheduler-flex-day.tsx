@@ -138,7 +138,7 @@ export const SchedulerFlexDay = ({ style, ...props }: any) => (
                             </SchedulerCell>
                         </SchedulerRow>
                     </SchedulerGroup>
-                    <SchedulerEvent ongoing style={{ top: "0px", left: "80px", height: "72px", width: "200px" }}>
+                    <SchedulerEvent style={{ top: "0px", left: "80px", height: "72px", width: "200px" }}>
                         <div className="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
                         <div className="k-event-template">Event Title</div>
                     </SchedulerEvent>

@@ -17,7 +17,7 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
                     <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
-                    10/04/2022 - 10/10/2022
+                    6/12/2022 - 6/18/2022
                 </Button>
                 <span className="k-spacer"></span>
                 <SegmentedControl thumbStyles={{ width: "18%", left: "16%" }} className="k-scheduler-views">
@@ -57,13 +57,13 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
                                 <SchedulerTable>
                                     <tbody>
                                         <tr className="k-scheduler-date-group">
-                                            <SchedulerCell as="th" text="Sun 10/04" />
-                                            <SchedulerCell as="th" text="Mon 10/05" />
-                                            <SchedulerCell as="th" text="Tue 10/06" />
-                                            <SchedulerCell as="th" text="Wed 10/07" />
-                                            <SchedulerCell as="th" text="Thu 10/08" />
-                                            <SchedulerCell as="th" text="Fri 10/09" />
-                                            <SchedulerCell as="th" text="Sun 10/10" />
+                                            <SchedulerCell as="th" text="Sun 6/12" />
+                                            <SchedulerCell as="th" text="Mon 6/13" />
+                                            <SchedulerCell as="th" text="Tue 6/14" />
+                                            <SchedulerCell as="th" text="Wed 6/15" />
+                                            <SchedulerCell as="th" text="Thu 6/16" />
+                                            <SchedulerCell as="th" text="Fri 6/17" />
+                                            <SchedulerCell as="th" text="Sat 6/18" />
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
@@ -242,15 +242,15 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
-                                <SchedulerEvent ongoing style={{ top: "74px", left: "129px", height: "72px", width: "124px" }}>
+                                <SchedulerEvent style={{ top: "74px", left: "129px", height: "72px", width: "124px" }}>
                                     <div className="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
                                     <div className="k-event-template">Event Title</div>
                                 </SchedulerEvent>
-                                <SchedulerEvent ongoing resizable="vertical" style={{ top: "147px", left: "255px", height: "72px", width: "378px" }}>
+                                <SchedulerEvent resizable="vertical" style={{ top: "147px", left: "255px", height: "72px", width: "378px" }}>
                                     <div className="k-event-template k-event-time">9:00 AM - 10:00 AM</div>
                                     <div className="k-event-template">Event Title</div>
                                 </SchedulerEvent>
-                                <SchedulerEvent ongoing style={{ top: "74px", left: "636px", height: "72px", width: "124px" }}>
+                                <SchedulerEvent style={{ top: "74px", left: "636px", height: "72px", width: "124px" }}>
                                     <div className="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
                                     <div className="k-event-template">Event Title</div>
                                 </SchedulerEvent>
