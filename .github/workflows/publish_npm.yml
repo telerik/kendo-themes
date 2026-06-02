@@ -11,12 +11,8 @@ on:
         options:
           - dev
           - stable
-      version:
-        description: "Stable version tag (example: v14.1.1)"
-        required: false
-        type: string
       dry-run:
-        description: "Dry run (no actual publish)"
+        description: "Dry run"
         required: false
         default: false
         type: boolean
@@ -86,31 +82,15 @@ jobs:
           npm run sass:dist
           npm run docs
 
-      - name: Validate stable version
-        if: env.RELEASE_TYPE == 'stable'
-        run: |
-          RELEASE_VERSION_INPUT="${{ inputs.version }}"
-
-          if [[ -z "$RELEASE_VERSION_INPUT" ]]; then
-            echo "Missing version input. Stable releases require an explicit version tag (example: v14.1.1)."
-            exit 1
-          fi
-
-          if [[ ! "$RELEASE_VERSION_INPUT" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "Invalid stable version '$RELEASE_VERSION_INPUT'. Use a v-prefixed tag, for example: v14.1.1"
-            exit 1
-          fi
-
-          RELEASE_VERSION="${RELEASE_VERSION_INPUT#v}"
-
-          echo "RELEASE_VERSION=$RELEASE_VERSION" >> "$GITHUB_ENV"
-
       - name: Nx release (stable)
         if: env.RELEASE_TYPE == 'stable'
         run: |
-          npx nx release version "$RELEASE_VERSION" ${{ env.DRY_RUN }}
-          npx nx release changelog "$RELEASE_VERSION" ${{ env.DRY_RUN }}
-          npx nx release publish ${{ env.DRY_RUN }}
+          npm run release:version -- ${{ env.DRY_RUN }}
+          if [[ -z "${{ env.DRY_RUN }}" ]]; then
+            STABLE_VERSION=$(jq -r '.version' packages/core/package.json)
+            npm run release:changelog -- "$STABLE_VERSION"
+            npm run release:publish
+          fi
         env:
           GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -118,25 +98,11 @@ jobs:
       - name: Nx release (dev)
         if: env.RELEASE_TYPE == 'dev'
         run: |
-          if [[ -n "${{ env.DRY_RUN }}" ]]; then
-            VERSION_OUTPUT=$(mktemp)
-            npx nx release version --preid dev --specifier prerelease --dry-run > "$VERSION_OUTPUT" 2>&1
-            cat "$VERSION_OUTPUT"
-
-            NEXT_DEV_VERSION=$(grep -E '^\+   "version": "[^"]+"' "$VERSION_OUTPUT" | head -n 1 | sed -E 's/^.*"version": "([^"]+)".*$/\1/')
-            if [[ -n "$NEXT_DEV_VERSION" ]]; then
-              echo "Computed next dev version: $NEXT_DEV_VERSION"
-            else
-              echo "Computed next dev version: not detected from Nx dry-run output."
-            fi
-
-            rm -f "$VERSION_OUTPUT"
-            echo "Skipping dev changelog and publish in dry-run mode to avoid stale version resolution and interactive prompts."
-          else
-            npx nx release version --preid dev --specifier prerelease
+          npm run release:prerelease -- --preid dev ${{ env.DRY_RUN }}
+          if [[ -z "${{ env.DRY_RUN }}" ]]; then
             DEV_VERSION=$(jq -r '.version' packages/core/package.json)
-            npx nx release changelog "$DEV_VERSION"
-            npx nx release publish --tag dev
+            npm run release:changelog -- "$DEV_VERSION"
+            npm run release:publish -- --tag dev
           fi
         env:
           GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
