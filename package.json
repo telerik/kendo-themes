@@ -88,7 +88,8 @@
     "release:dry": "npx nx release version --dry-run",
     "release:version": "npx nx release version",
     "release:changelog": "npx nx release changelog",
-    "release:publish": "npx nx release publish"
+    "release:publish": "npx nx release publish",
+    "release:prerelease": "npx nx release version --specifier prerelease"
   },
   "engines": {
     "node": "^24 || ^25"

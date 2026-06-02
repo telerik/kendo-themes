@@ -58,12 +58,13 @@
       "packages/*"
     ],
     "projectsRelationship": "fixed",
+    "conventionalCommits": {
+      "useCommitScope": false
+    },
     "version": {
       "conventionalCommits": true,
       "fallbackCurrentVersionResolver": "disk",
-      "generatorOptions": {
-        "updateDependents": "auto"
-      },
+      "updateDependents": "auto",
       "git": {
         "commit": false,
         "tag": false,
