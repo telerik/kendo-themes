@@ -43,7 +43,8 @@ export type KendoButtonOptions = {
 };
 
 export type KendoButtonProps = KendoButtonOptions & {
-  icon?: string;
+  icon?: string | React.ReactNode;
+  iconSize?: typeof Size[keyof typeof Size];
   text?: string;
   iconClassName?: string;
   showArrow?: boolean;
@@ -110,13 +111,14 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
         togglable,
         ariaDisabled,
         icon,
+        iconSize,
         text,
         iconClassName,
         className,
         ...other
     } = props;
 
-    const hasIcon = (icon !== undefined);
+    const hasIcon = (icon !== undefined && icon !== null);
     const hasChildren = props.children !== undefined;
 
     return (
@@ -148,11 +150,16 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
             aria-disabled={ariaDisabled ? 'true' : undefined}
             disabled={disabled || undefined}
         >
-            {icon && (
+            {typeof icon === 'string' && icon && (
                 <Icon
                     className={classNames(iconClassName, 'k-button-icon')}
                     icon= {icon}
+                    size={iconSize}
                 />
+            )}
+
+            {icon && typeof icon !== 'string' && (
+                <>{icon}</>
             )}
 
             {text
