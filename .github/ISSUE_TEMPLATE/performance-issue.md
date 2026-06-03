@@ -35,10 +35,11 @@ A clear and concise description of the performance problem.
 ### Affected Theme(s)
 
 - [ ] All themes
-- [ ] Default theme
+- [ ] Meridian theme
 - [ ] Bootstrap theme
 - [ ] Material theme
 - [ ] Fluent theme
+- [ ] Default theme
 - [ ] Classic theme
 
 ### Component(s) Affected

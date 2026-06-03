@@ -25,10 +25,11 @@ Describe the solution you would like to see implemented
 Which theme(s) should this feature apply to?
 
 - [ ] All themes
-- [ ] Default theme only
+- [ ] Meridian theme only
+- [ ] Bootstrap theme only
 - [ ] Material theme only
 - [ ] Fluent theme only
-- [ ] Bootstrap theme only
+- [ ] Default theme only
 - [ ] Classic theme only
 - [ ] Other (please specify): ___________
 
