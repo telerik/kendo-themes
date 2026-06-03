@@ -21051,8 +21051,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-loader-sm-segment-size</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the small Loader segment.</div></div>
@@ -21081,8 +21081,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-loader-sm-padding</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-loader-sm-segment-size} / 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2) / 4)</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the small Loader.</div></div>
@@ -21112,7 +21112,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-loader-sm-spinner-3-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2) * 4)</code></td>
+    <td><code>calc(var(--kendo-spacing-1) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small spinner-3 Loader.</div></div>
@@ -21142,7 +21142,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-loader-sm-spinner-3-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-loader-sm-spinner-3-width} * #{$equilateral-height} )</code></td>
-    <td><code>calc(calc(var(--kendo-spacing-2) * 4) * 0.8660254038)</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-1) * 4) * 0.8660254038)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small spinner-3 Loader.</div></div>
@@ -21172,7 +21172,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-loader-sm-spinner-4-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2) * 4)</code></td>
+    <td><code>calc(var(--kendo-spacing-1) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small spinner-4 Loader.</div></div>
@@ -21202,7 +21202,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-loader-sm-spinner-4-height</td>
     <td>Calculation</td>
     <td><code>$kendo-loader-sm-spinner-4-width</code></td>
-    <td><code>calc(var(--kendo-spacing-2) * 4)</code></td>
+    <td><code>calc(var(--kendo-spacing-1) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small spinner-4 Loader.</div></div>

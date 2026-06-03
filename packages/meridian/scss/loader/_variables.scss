@@ -18,7 +18,7 @@ $kendo-loader-segment-border-radius: 50% !default;
 
 /// The size of the small Loader segment.
 /// @group loader
-$kendo-loader-sm-segment-size: k-spacing(2) !default;
+$kendo-loader-sm-segment-size: k-spacing(1) !default;
 /// The size of the medium Loader segment.
 /// @group loader
 $kendo-loader-md-segment-size: k-spacing(2) !default;
@@ -28,7 +28,7 @@ $kendo-loader-lg-segment-size: k-spacing(4) !default;
 
 /// The padding of the small Loader.
 /// @group loader
-$kendo-loader-sm-padding: calc( #{$kendo-loader-sm-segment-size} / 4 ) !default;
+$kendo-loader-sm-padding: calc( #{$kendo-loader-sm-segment-size} / 2 ) !default;
 /// The padding of the medium Loader.
 /// @group loader
 $kendo-loader-md-padding: calc( #{$kendo-loader-md-segment-size} / 2 ) !default;
