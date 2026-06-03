@@ -122,7 +122,7 @@
                 }
                 .k-draghandle:focus,
                 .k-draghandle:active {
-                    transform: translate(-50%, -50%) scale($kendo-slider-draghandle-active-scale);
+                    transform: if( $kendo-slider-draghandle-active-scale, translate(-50%, -50%) scale($kendo-slider-draghandle-active-scale), null );
                 }
 
                 .k-slider-selection {
@@ -151,7 +151,7 @@
                 }
                 .k-draghandle:focus,
                 .k-draghandle:active {
-                    transform: translate(-50%, 50%) scale($kendo-slider-draghandle-active-scale);
+                    transform: if( $kendo-slider-draghandle-active-scale, translate(-50%, 50%) scale($kendo-slider-draghandle-active-scale), null );
                 }
 
                 .k-slider-selection {
