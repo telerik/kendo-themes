@@ -450,7 +450,7 @@ function auditCompat(css, file) {
 
 // --- Reporting ---
 
-function printReport(results) {
+function printReport(results, missingFiles) {
     let syntaxCount = 0;
     let compatCount = 0;
     let warningCount = 0;
@@ -489,6 +489,13 @@ function printReport(results) {
         }
     }
 
+    if (missingFiles.length > 0) {
+        console.log(`\nMissing compiled CSS files: ${missingFiles.length}`);
+        for (const missing of missingFiles) {
+            console.log(`  [missing] ${missing.theme}: ${missing.file}`);
+        }
+    }
+
     console.log(`\nSummary: ${syntaxCount} syntax, ${compatCount} compat, ${warningCount} warnings`);
     console.log(`Browsers: ${targetBrowsers.join(", ")}`);
 
@@ -498,13 +505,14 @@ function printReport(results) {
 // --- Main ---
 
 const results = [];
+const missingFiles = [];
 
 for (const theme of themesToAudit) {
     const file = `packages/${theme}/dist/all.css`;
     const fullPath = join(REPO_ROOT, file);
 
     if (!existsSync(fullPath)) {
-        console.warn(`Skipping ${theme}: ${file} not found (run npm run sass).`);
+        missingFiles.push({ theme, file });
         continue;
     }
 
@@ -514,10 +522,14 @@ for (const theme of themesToAudit) {
     results.push({ theme, issues: [...syntaxIssues, ...compatIssues], warnings });
 }
 
-const { syntaxCount, compatCount } = printReport(results);
+const { syntaxCount, compatCount } = printReport(results, missingFiles);
 
 // Exit with failure only on actual issues (syntax errors or compat failures)
 // Warnings (missing data) do not fail CI.
 if (syntaxCount > 0 || compatCount > 0) {
+    process.exit(1);
+}
+
+if (missingFiles.length > 0) {
     process.exit(1);
 }

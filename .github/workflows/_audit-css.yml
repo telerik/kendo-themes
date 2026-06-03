@@ -36,6 +36,15 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
+      - name: Download compiled themes artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: themes
+
+      - name: Extract compiled themes
+        run: |
+          tar -xf themes.tar
+
       - name: Run CSS compliance audit
         run: |
           node scripts/audit-css.mjs all
