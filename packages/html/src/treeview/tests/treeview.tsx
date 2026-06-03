@@ -21,34 +21,36 @@ export default () => (
 
       <section>
         <TreeviewNormal>
-          <TreeviewItem showCheckbox text="Hover" hover />
-          <TreeviewItem showCheckbox text="Focus" focus />
-          <TreeviewItem showCheckbox text="Hover + Focus" hover focus />
-          <TreeviewItem showCheckbox checked text="Checked" />
-          <TreeviewItem showCheckbox text="Selected" selected />
-          <TreeviewItem showCheckbox checked text="Checked + Selected" selected />
-          <TreeviewItem showCheckbox checked text="^ Hover" selected hover />
-          <TreeviewItem showCheckbox checked text="^ Focus" selected focus />
-          <TreeviewItem showCheckbox checked text="^ Hover + Focus" selected hover focus />
-          <TreeviewItem showCheckbox text="Disabled" disabled />
-          <TreeviewItem showCheckbox text="Disabled + Focus" disabled focus />
-          <TreeviewItem showCheckbox leafClassName="k-treeview-load-more-button" text="Load more..." />
+          <TreeviewItem hasChildren showCheckbox text="Hover" hover />
+          <TreeviewItem hasChildren showCheckbox text="Focus" focus />
+          <TreeviewItem hasChildren showCheckbox text="Hover + Focus" hover focus />
+          <TreeviewItem hasChildren showCheckbox checked text="Checked" />
+          <TreeviewItem hasChildren showCheckbox text="Selected" selected />
+          <TreeviewItem hasChildren showCheckbox checked text="Checked + Selected" selected />
+          <TreeviewItem hasChildren showCheckbox checked text="^ Hover" selected hover />
+          <TreeviewItem hasChildren showCheckbox checked text="^ Focus" selected focus />
+          <TreeviewItem hasChildren showCheckbox checked text="^ Hover + Focus" selected hover focus />
+          <TreeviewItem hasChildren showCheckbox text="Disabled" disabled />
+          <TreeviewItem hasChildren showCheckbox text="Disabled + Focus" disabled focus />
+          <TreeviewItem text="Loading" loading />
+          <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..." />
         </TreeviewNormal>
       </section>
       <section>
         <TreeviewNormal dir="rtl">
-          <TreeviewItem showCheckbox text="Hover" hover />
-          <TreeviewItem showCheckbox text="Focus" focus />
-          <TreeviewItem showCheckbox text="Hover + Focus" hover focus />
-          <TreeviewItem showCheckbox checked text="Checked" />
-          <TreeviewItem showCheckbox text="Selected" selected />
-          <TreeviewItem showCheckbox checked text="Checked + Selected" selected />
-          <TreeviewItem showCheckbox checked text="^ Hover" selected hover />
-          <TreeviewItem showCheckbox checked text="^ Focus" selected focus />
-          <TreeviewItem showCheckbox checked text="^ Hover + Focus" selected hover focus />
-          <TreeviewItem showCheckbox text="Disabled" disabled />
-          <TreeviewItem showCheckbox text="Disabled + Focus" disabled focus />
-          <TreeviewItem showCheckbox leafClassName="k-treeview-load-more-button" text="Load more..." />
+          <TreeviewItem hasChildren showCheckbox text="Hover" hover />
+          <TreeviewItem hasChildren showCheckbox text="Focus" focus />
+          <TreeviewItem hasChildren showCheckbox text="Hover + Focus" hover focus />
+          <TreeviewItem hasChildren showCheckbox checked text="Checked" />
+          <TreeviewItem hasChildren showCheckbox text="Selected" selected />
+          <TreeviewItem hasChildren showCheckbox checked text="Checked + Selected" selected />
+          <TreeviewItem hasChildren showCheckbox checked text="^ Hover" selected hover />
+          <TreeviewItem hasChildren showCheckbox checked text="^ Focus" selected focus />
+          <TreeviewItem hasChildren showCheckbox checked text="^ Hover + Focus" selected hover focus />
+          <TreeviewItem hasChildren showCheckbox text="Disabled" disabled />
+          <TreeviewItem hasChildren showCheckbox text="Disabled + Focus" disabled focus />
+          <TreeviewItem text="Loading" loading />
+          <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..." />
         </TreeviewNormal>
       </section>
       <section>
