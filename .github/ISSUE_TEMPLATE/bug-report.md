@@ -36,10 +36,11 @@ If applicable, add screenshots or videos to help explain your problem.
 ### Affected Theme(s)
 
 - [ ] All themes
-- [ ] Default theme
+- [ ] Meridian theme
 - [ ] Bootstrap theme
 - [ ] Material theme
 - [ ] Fluent theme
+- [ ] Default theme
 - [ ] Classic theme
 
 ### Affected Component(s)

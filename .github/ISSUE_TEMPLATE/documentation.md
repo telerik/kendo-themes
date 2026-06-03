@@ -50,10 +50,11 @@ If you have suggestions for how to improve the documentation:
 Which theme(s) does this documentation concern?
 
 - [ ] All themes
-- [ ] Default theme
+- [ ] Meridian theme
 - [ ] Bootstrap theme
 - [ ] Material theme
 - [ ] Fluent theme
+- [ ] Default theme
 - [ ] Classic theme
 - [ ] General theme documentation
 
