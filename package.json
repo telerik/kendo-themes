@@ -23,6 +23,7 @@
     "@progress/kendo-e2e": "4.14.2",
     "@stylistic/stylelint-plugin": "^5.0.1",
     "@types/node": "^25.0.3",
+    "@vitejs/plugin-react": "^6.0.2",
     "autoprefixer": "^10.4.20",
     "esbuild": "^0.27.0",
     "eslint": "^10.0.2",
@@ -49,7 +50,8 @@
     "stylelint-scss": "^7.0.0",
     "typescript": "^5.0.3",
     "typescript-eslint": "^8.0.0",
-    "vitest": "^4.0.18"
+    "vite": "^8.0.0",
+    "vitest": "^4.1.7"
   },
   "peerDependencies": {
     "sass": "^1.63.6",
@@ -57,7 +59,8 @@
   },
   "scripts": {
     "prepare": "husky",
-    "start": "node ./scripts/start-dev-server.js",
+    "start": "vite --config packages/html/devkit/vite.config.ts",
+    "start:legacy": "node ./scripts/start-dev-server.js",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint \"**/*.{js,jsx,ts,tsx,mjs}\"",
     "lint:styles": "stylelint \"**/*.scss\"",
