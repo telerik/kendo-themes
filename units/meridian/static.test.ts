@@ -3,7 +3,7 @@ import * as sass from "sass";
 import * as path from "path";
 import { describe, it, expect, beforeAll } from "vitest";
 
-const functions = ["k-color", "k-elevation", "k-border-radius", "k-spacing", "k-z-index", "k-duration", "k-easing", "k-transition"];
+const functions = ["k-color", "k-elevation", "k-border-radius", "k-spacing", "k-z-index", "k-duration", "k-easing", "k-transition", "k-translucency-bg", "k-translucency-blur"];
 
 // Default option values that should never appear as CSS property values
 // Note: "solid" and "none" are excluded as they are valid CSS keywords
