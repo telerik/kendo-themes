@@ -23,15 +23,15 @@ A clear and concise description of the migration problem.
 
 #### From (Previous)
 
-- Theme: [e.g., Default theme]
+- Theme: [e.g., Meridian theme]
 - Version: [e.g., 5.12.0]
-- Package: [e.g., @progress/kendo-theme-default]
+- Package: [e.g., @progress/kendo-theme-meridian]
 
 #### To (Current)
 
-- Theme: [e.g., Default theme]
+- Theme: [e.g., Meridian theme]
 - Version: [e.g., 6.0.0]
-- Package: [e.g., @progress/kendo-theme-default]
+- Package: [e.g., @progress/kendo-theme-meridian]
 
 ## Breaking Changes Encountered
 

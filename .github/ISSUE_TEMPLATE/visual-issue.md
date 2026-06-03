@@ -33,10 +33,11 @@ Describe what it currently looks like.
 ### Affected Theme(s)
 
 - [ ] All themes
-- [ ] Default theme
+- [ ] Meridian theme
 - [ ] Bootstrap theme
 - [ ] Material theme
 - [ ] Fluent theme
+- [ ] Default theme
 - [ ] Classic theme
 
 ### Component(s) Affected

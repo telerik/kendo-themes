@@ -24,6 +24,7 @@ export type KendoTreeviewItemProps = {
     children?: React.ReactNode;
     hasChildren?: boolean;
     expanded?: boolean;
+    loading?: boolean;
     text?: string;
     showIcon?: boolean;
     icon?: string;
@@ -47,6 +48,7 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
         children,
         hasChildren,
         expanded,
+        loading,
         text,
         showIcon,
         icon,
@@ -62,7 +64,7 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
         ...other
     } = props;
 
-    const _hasChildren = hasChildren || children;
+    const _hasChildren = hasChildren || children || loading;
 
     return (
         <li
@@ -95,7 +97,10 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
                             "k-treeview-toggle",
                             stateClassNames("k-treeview-toggle", { disabled })
                         )}>
-                        <Icon icon={expanded ? 'chevron-down' : dir === 'rtl' ? 'chevron-left' : 'chevron-right'} />
+                        {loading
+                            ? <span className="k-icon k-i-loading" />
+                            : <Icon icon={expanded ? 'chevron-down' : dir === 'rtl' ? 'chevron-left' : 'chevron-right'} />
+                        }
                     </span>
                 )}
                 {showCheckbox && (
