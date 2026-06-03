@@ -1,5 +1,5 @@
+@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/listbox/_theme.scss" as *;
-@use "../core/functions/index.scss" as *;
 
 @mixin kendo-listbox--theme() {
     @include kendo-listbox--theme-base();

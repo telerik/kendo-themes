@@ -117,7 +117,7 @@
         }
         .k-slider-thumb:focus,
         .k-slider-thumb:active {
-            transform: translate(-50%, -50%) scale($kendo-slider-thumb-active-scale);
+            transform: if( $kendo-slider-thumb-active-scale, translate(-50%, -50%) scale($kendo-slider-thumb-active-scale), null );
         }
         .k-slider-thumb-start {
             inset-inline-start: calc( var( --kendo-slider-start, 0) * 1% );
