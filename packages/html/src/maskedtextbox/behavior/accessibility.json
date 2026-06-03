@@ -1,0 +1,45 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "role",
+            "value": "textbox",
+            "usage": "Describes the role of the component.",
+            "nativeElement": "input"
+        },
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input requires an accessible name (provided by consuming app)."
+        },
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "aria-placeholder",
+            "usage": "Announces the mask or placeholder for the component."
+        },
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered when the MaskedTextBox is in an invalid state."
+        },
+        {
+            "selector": ".k-maskedtextbox > .k-input-inner",
+            "attribute": "aria-describedby",
+            "usage": "Points to the hint or error message."
+        },
+        {
+            "selector": ".k-maskedtextbox.k-disabled > .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the MaskedTextBox is disabled.",
+            "nativeAttribute": "disabled"
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

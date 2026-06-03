@@ -3,6 +3,7 @@ import { classNames, optionClassNames, stateClassNames, States, Size, Roundness,
 
 import { KendoComponent } from '../_types/component';
 import { SIGNATURE_FOLDER_NAME, SIGNATURE_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const SIGNATURE_CLASSNAME = `k-signature`;
 
 const states = [
@@ -136,14 +137,8 @@ Signature.defaultOptions = defaultOptions;
 Signature.moduleName = SIGNATURE_MODULE_NAME;
 Signature.folderName = SIGNATURE_FOLDER_NAME;
 
-Signature.ariaSpec = {
-    selector: '.k-signature',
-    rules: [
-        { selector: '.k-signature-canvas', attribute: 'role=img', usage: 'Sets canvas role to img.' },
-        { selector: '.k-signature-canvas', attribute: 'aria-label', usage: 'Announces the purpose of the Signature.' },
-        { selector: '.k-signature-action', attribute: 'nodeName=button', usage: 'Renders action as a button element.' },
-        { selector: '.k-signature-action', attribute: 'aria-label', usage: 'Announces the purpose of the action button.' },
-    ]
-};
+Signature.ariaSpec = a11ySpec.ariaSpec;
+Signature.kbSpec = a11ySpec.kbSpec;
+Signature.uxSpec = a11ySpec.uxSpec;
 
 export default Signature;

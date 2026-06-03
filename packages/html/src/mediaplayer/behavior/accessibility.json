@@ -1,0 +1,78 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-play-button",
+            "attribute": "aria-label",
+            "usage": "Specifies label for the play/pause button."
+        },
+        {
+            "selector": ".k-play-button",
+            "attribute": "aria-pressed",
+            "usage": "Specifies whether play is active or not."
+        },
+        {
+            "selector": ".k-volume-button",
+            "attribute": "aria-label",
+            "usage": "Specifies label for the mute button."
+        },
+        {
+            "selector": ".k-volume-button",
+            "attribute": "aria-pressed",
+            "usage": "Specifies whether mute is active or not."
+        },
+        {
+            "selector": ".k-fullscreen-button",
+            "attribute": "aria-label",
+            "usage": "Specifies label for the full screen button."
+        },
+        {
+            "selector": ".k-fullscreen-button",
+            "attribute": "aria-pressed",
+            "usage": "Specifies whether full screen is active or not."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Seek forward.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Seek backward.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Increase the volume.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Decrease the volume.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Decrease the video quality.",
+            "trigger": "Control + 1"
+        },
+        {
+            "behavior": "Increase the video quality.",
+            "trigger": "Control + 2"
+        },
+        {
+            "behavior": "Open and close the full screen.",
+            "trigger": "F"
+        },
+        {
+            "behavior": "Mute and Unmute the sound.",
+            "trigger": "M"
+        },
+        {
+            "behavior": "Play and Pause the video.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Close the full screen.",
+            "trigger": "Escape"
+        }
+    ],
+    "uxSpec": []
+}

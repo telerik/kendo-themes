@@ -5,6 +5,7 @@ import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { CAPTCHA_FOLDER_NAME, CAPTCHA_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const CAPTCHA_CLASSNAME = `k-captcha`;
 
 const states = [
@@ -98,5 +99,9 @@ Captcha.className = CAPTCHA_CLASSNAME;
 Captcha.defaultOptions = defaultOptions;
 Captcha.moduleName = CAPTCHA_MODULE_NAME;
 Captcha.folderName = CAPTCHA_FOLDER_NAME;
+
+Captcha.ariaSpec = a11ySpec.ariaSpec;
+Captcha.kbSpec = a11ySpec.kbSpec;
+Captcha.uxSpec = a11ySpec.uxSpec;
 
 export default Captcha;

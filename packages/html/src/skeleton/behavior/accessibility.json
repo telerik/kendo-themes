@@ -1,0 +1,6 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [],
+    "uxSpec": [],
+    "kbSpec": []
+}

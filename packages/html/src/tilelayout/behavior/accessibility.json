@@ -1,0 +1,82 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-tilelayout",
+            "attribute": "role",
+            "value": "list",
+            "usage": "Sets list role to the TileLayout wrapper."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "role",
+            "value": "listitem",
+            "usage": "Sets listitem role to the TileLayout items."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the focusable item wrapper with the respective header text element."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "Makes the item wrapper element focusable."
+        },
+        {
+            "selector": ".k-tilelayout-item",
+            "attribute": "aria-keyshortcuts",
+            "value": "Enter",
+            "usage": "Announces Enter as an available key shortcut when the item is focused."
+        },
+        {
+            "selector": ".k-tilelayout-item-header .k-card-title",
+            "attribute": "id",
+            "usage": "Unique identifier to link the header text element to the focusable wrapper."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Move focus to the next tile. If focus is on the last tile, focus the next focusable element on the page.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Move focus to the previous tile. If focus is on the first tile, focus the previous focusable element before the TileLayout.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Focuses the first focusable element within the tile. Focus is trapped and wrapped within the tile content and follows its natural Tab sequence.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Moves focus back to the TileLayout item wrapper when it is on a focusable element within the tile content.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Reorders the focused tile with the next one (if such exists).",
+            "trigger": "Shift + ArrowRight"
+        },
+        {
+            "behavior": "Reorders the focused tile with the previous one (if such exists).",
+            "trigger": "Shift + ArrowLeft"
+        },
+        {
+            "behavior": "Increments the focused tile width with one column (to a maximum of the preset columns count).",
+            "trigger": "Control/Cmd(Mac) + ArrowRight"
+        },
+        {
+            "behavior": "Decrements the focused tile width with one column (to a minimum of 1).",
+            "trigger": "Control/Cmd(Mac) + ArrowLeft"
+        },
+        {
+            "behavior": "Increments the focused item height with one row (to a maximum of the preset rows count if such option exists).",
+            "trigger": "Control/Cmd(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Decrements the focused item height with one row (to a minimum of 1).",
+            "trigger": "Control/Cmd(Mac) + ArrowUp"
+        }
+    ],
+    "uxSpec": []
+}

@@ -1,0 +1,53 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-radio",
+            "attribute": "type",
+            "value": "radio",
+            "usage": "Announces the radio type of the input."
+        },
+        {
+            "selector": ".k-radio",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input requires an accessible name to which it will be assigned."
+        },
+        {
+            "selector": ".k-radio",
+            "attribute": "checked",
+            "usage": "Boolean attribute that announces the checked state of the radio button."
+        },
+        {
+            "selector": ".k-radio",
+            "attribute": "aria-describedby",
+            "usage": "Points to the hint or error message for the radio."
+        },
+        {
+            "selector": ".k-radio",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the radio input is disabled.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-invalid, .ng-invalid",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered only when the radio button is in a form and announces the invalid state."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": [
+        {
+            "trigger": "ArrowUp or ArrowLeft",
+            "behavior": "Moves focus to the previous button and selects it. If the first button is focused, moves focus to the last."
+        },
+        {
+            "trigger": "ArrowDown or ArrowRight",
+            "behavior": "Moves the focus to the next button and selects it. If the last button is focused, moves the focus to the first one."
+        }
+    ]
+}

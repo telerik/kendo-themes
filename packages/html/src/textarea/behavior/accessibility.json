@@ -1,0 +1,46 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-textarea > .k-input-inner",
+            "attribute": "role",
+            "value": "textbox",
+            "usage": "Describes the role of the component.",
+            "nativeElement": "textarea"
+        },
+        {
+            "selector": ".k-textarea > .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The textarea requires an accessible name (provided by consuming app)."
+        },
+        {
+            "selector": ".k-textarea > .k-input-inner",
+            "attribute": "aria-multiline",
+            "value": "true",
+            "usage": "Required on role=textbox to indicate multi-line behavior. Implicit on native <textarea>, so not needed there."
+        },
+        {
+            "selector": ".k-textarea > .k-input-inner",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered only when the TextArea is in a form and announces the invalid state."
+        },
+        {
+            "selector": ".k-textarea > .k-input-inner",
+            "attribute": "aria-describedby",
+            "usage": "Points to the hint or error message for the textarea."
+        },
+        {
+            "selector": ".k-textarea.k-disabled > .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the TextArea is disabled.",
+            "nativeAttribute": "disabled"
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

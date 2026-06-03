@@ -1,0 +1,74 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-dateinput > .k-input-inner",
+            "attribute": "role",
+            "value": "textbox",
+            "usage": "The element should be an input or have role=\"textbox\".",
+            "nativeElement": "input"
+        },
+        {
+            "selector": ".k-dateinput > .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input requires an accessible name (provided by consuming app)."
+        },
+        {
+            "selector": ".k-dateinput > .k-input-inner",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element should be focusable."
+        },
+        {
+            "selector": ".k-dateinput > .k-input-inner",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered when the DateInput is in an invalid state."
+        },
+        {
+            "selector": ".k-dateinput > .k-input-inner",
+            "attribute": "aria-describedby",
+            "usage": "Points to the hint or error message."
+        },
+        {
+            "selector": ".k-dateinput > .k-input-inner",
+            "attribute": "aria-readonly",
+            "value": "true",
+            "usage": "Rendered when the DateInput is readonly.",
+            "nativeAttribute": "readonly"
+        },
+        {
+            "selector": ".k-dateinput.k-disabled > .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the DateInput is disabled.",
+            "nativeAttribute": "disabled"
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Increases the value of the date segment that is highlighted.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Decreases the value of the date segment that is highlighted.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Moves to previous date segment in the input.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Moves to next date segment in the input.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Deletes value of the date segment.",
+            "trigger": "Backspace or Delete"
+        }
+    ],
+    "uxSpec": []
+}

@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-textbox > .k-input-inner",
+            "attribute": "role",
+            "value": "textbox",
+            "usage": "Describes the role of the component.",
+            "nativeElement": "input"
+        },
+        {
+            "selector": ".k-textbox > .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input requires an accessible name (provided by consuming app)."
+        },
+        {
+            "selector": ".k-textbox > .k-input-inner",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered when the TextBox is in an invalid state."
+        },
+        {
+            "selector": ".k-textbox > .k-input-inner",
+            "attribute": "aria-describedby",
+            "usage": "Points to the hint or error message for the input."
+        },
+        {
+            "selector": ".k-textbox.k-disabled > .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the TextBox is disabled.",
+            "nativeAttribute": "disabled"
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

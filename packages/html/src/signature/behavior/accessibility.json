@@ -1,0 +1,34 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "kbSpec": [
+        {
+            "behavior": "Closes the dialog if open.",
+            "trigger": "Escape"
+        }
+    ],
+    "uxSpec": [],
+    "ariaSpec": [
+        {
+            "selector": ".k-signature-canvas",
+            "attribute": "role",
+            "value": "img",
+            "usage": "Sets canvas role to img."
+        },
+        {
+            "selector": ".k-signature-canvas",
+            "attribute": "aria-label",
+            "usage": "Announces the purpose of the Signature."
+        },
+        {
+            "selector": ".k-signature-action",
+            "attribute": "nodeName",
+            "value": "button",
+            "usage": "Renders action as a button element."
+        },
+        {
+            "selector": ".k-signature-action",
+            "attribute": "aria-label",
+            "usage": "Announces the purpose of the action button."
+        }
+    ]
+}

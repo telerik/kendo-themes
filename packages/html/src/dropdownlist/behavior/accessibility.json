@@ -1,0 +1,113 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "Announces the dropdown element."
+        },
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "aria-haspopup",
+            "value": "listbox",
+            "usage": "Indicates the presence of a listbox popup."
+        },
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "aria-expanded",
+            "usage": "Announces the visibility state of the popup."
+        },
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the dropdown."
+        },
+        {
+            "selector": ".k-dropdownlist:not(.k-views-dropdown)",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-dropdownlist.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the dropdown is disabled."
+        },
+        {
+            "selector": ".k-dropdownlist .k-input-button",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the dropdown button."
+        },
+        {
+            "selector": ".k-dropdownlist .k-input-button",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "The button must not be focusable."
+        },
+        {
+            "selector": ".k-dropdownlist-popup .k-list-content, .k-dropdownlist-popup .k-list-ul",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "Popup list has listbox role."
+        },
+        {
+            "selector": ".k-dropdownlist-popup .k-list-ul[role=\"listbox\"]",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby."
+        },
+        {
+            "selector": ".k-dropdownlist-popup .k-list-item",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Each list item is an option."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Selects the next available item.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Selects the previous available item.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Selects the first available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Selects the last available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Opens popup",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Opens popup",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Opens popup",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "`Closes popup",
+            "trigger": "Alt/Opt(Mac) + ArrowUp or Escape"
+        },
+        {
+            "behavior": "Typing \"M\" or any other printable character should select the next or first item in the list. Swiftly typing should capture multiple printable characters after the first one.",
+            "trigger": "Printable Characters"
+        },
+        {
+            "behavior": "Closes the actionsheet and focuses the next focusable element.",
+            "trigger": "Tab"
+        }
+    ],
+    "uxSpec": []
+}

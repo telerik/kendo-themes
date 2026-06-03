@@ -1,0 +1,148 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-multiselect .k-input-inner",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "Announces the multiselect input."
+        },
+        {
+            "selector": ".k-multiselect .k-input-inner",
+            "attribute": "aria-haspopup",
+            "value": "listbox",
+            "usage": "Indicates the component has a listbox popup."
+        },
+        {
+            "selector": ".k-multiselect .k-input-inner",
+            "attribute": "aria-expanded",
+            "usage": "Announces the popup visibility."
+        },
+        {
+            "selector": ".k-multiselect .k-input-inner",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the multiselect."
+        },
+        {
+            "selector": ".k-multiselect .k-input-inner",
+            "attribute": "aria-autocomplete",
+            "value": "list",
+            "usage": "Indicates list filtering capability."
+        },
+        {
+            "selector": ".k-multiselect .k-input-inner",
+            "attribute": "aria-describedby",
+            "usage": "Points to the taglist element that contains the selected items."
+        },
+        {
+            "selector": ".k-multiselect.k-disabled .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the multiselect is disabled.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-multiselect .k-chip-list",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "The taglist has listbox role for selected items."
+        },
+        {
+            "selector": ".k-multiselect .k-chip-list",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The taglist needs an accessible name."
+        },
+        {
+            "selector": ".k-multiselect .k-chip-list",
+            "attribute": "aria-orientation",
+            "value": "horizontal",
+            "usage": "Specifies horizontal orientation of the taglist."
+        },
+        {
+            "selector": ".k-multiselect .k-chip-list .k-chip",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Each tag chip is an option within the taglist listbox."
+        },
+        {
+            "selector": ".k-multiselect .k-chip-list .k-chip",
+            "attribute": "aria-selected",
+            "value": "true",
+            "usage": "Tags represent selected items and must have aria-selected=true."
+        },
+        {
+            "selector": ".k-multiselect-popup .k-list-content, .k-multiselect-popup .k-list-ul",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "Popup list has listbox role."
+        },
+        {
+            "selector": ".k-multiselect-popup .k-list-ul[role=\"listbox\"], .k-multiselect-popup .k-list-content[role=\"listbox\"]",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby."
+        },
+        {
+            "selector": ".k-multiselect-popup .k-list-item",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Each list item is an option."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses the matched item.",
+            "trigger": "Typing in the input"
+        },
+        {
+            "behavior": "Opens the popup.",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Closes the popup.",
+            "trigger": "Alt/Opt(Mac) + ArrowUp or Escape"
+        },
+        {
+            "behavior": "Focuses the previous tag item in the selected list.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Focuses the next tag item in the selected list.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "When the focused item is a tag list, removes the item from the selection.",
+            "trigger": "Delete or Backspace"
+        },
+        {
+            "behavior": "Clears the value when the popup is not open.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Creates a range selection between the last selected or deselected item and the item that is immediately before the currently focused one. All items outside that range are deselected. The last selected or deselected item is stored when using the mouse to click an item, or when using `Enter` to select or deselect an item. The last selected or deselected item is reset when the value of the MultiSelect is cleared. If the there is no previously selected item, selects only the currently focused and the previous one. At the end of the operation, the focus moves to the the item that is immediately before the currently focused one.",
+            "trigger": "Shift + ArrowUp"
+        },
+        {
+            "behavior": "Creates a range selection between the last selected or deselected item and the item that is immediately after the currently focused one. All items outside that range are deselected. The last selected or deselected item is stored when using the mouse to click an item, or when using `Enter` to select or deselect an item. The last selected or deselected item is reset when the value of the MultiSelect is cleared. If the there is no previously selected item, selects only the currently focused and the next one. At the end of the operation, the focus moves to the the item that is immediately after the currently focused one.",
+            "trigger": "Shift + ArrowDown"
+        },
+        {
+            "behavior": "Creates a range selection from the currently focused item up to the beginning of the list. All items outside that range are deselected.",
+            "trigger": "Control/Cmd(Mac) + Shift + Home"
+        },
+        {
+            "behavior": "Creates a range selection from the currently focused item down to the end of the list. All items outside that range are deselected.",
+            "trigger": "Control/Cmd(Mac) + Shift + End"
+        },
+        {
+            "behavior": "Selects all items present in the list. If all items are already selected, deselects them.",
+            "trigger": "Control/Cmd(Mac) + A"
+        }
+    ],
+    "uxSpec": []
+}

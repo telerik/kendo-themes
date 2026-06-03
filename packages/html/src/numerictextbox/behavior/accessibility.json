@@ -1,0 +1,82 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-numerictextbox > .k-input-inner",
+            "attribute": "role",
+            "value": "spinbutton",
+            "usage": "Announces the spin button capabilities of the NumericTextBox."
+        },
+        {
+            "selector": ".k-numerictextbox > .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input requires an accessible name (provided by consuming app)."
+        },
+        {
+            "selector": ".k-numerictextbox > .k-input-inner",
+            "attribute": "aria-valuenow",
+            "usage": "Announces the current value of the component."
+        },
+        {
+            "selector": ".k-numerictextbox > .k-input-inner",
+            "attribute": "aria-valuemin",
+            "usage": "Announces the minimum allowed value."
+        },
+        {
+            "selector": ".k-numerictextbox > .k-input-inner",
+            "attribute": "aria-valuemax",
+            "usage": "Announces the maximum allowed value."
+        },
+        {
+            "selector": ".k-numerictextbox > .k-input-inner",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered when the NumericTextBox is in an invalid state."
+        },
+        {
+            "selector": ".k-numerictextbox > .k-input-inner",
+            "attribute": "aria-describedby",
+            "usage": "Points to the hint or error message."
+        },
+        {
+            "selector": ".k-numerictextbox.k-disabled > .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the NumericTextBox is disabled.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-numerictextbox .k-spin-button > .k-button",
+            "attribute": "role",
+            "value": "button",
+            "usage": "Describes the role of the spin buttons.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-numerictextbox .k-spin-button > .k-button",
+            "attribute": "aria-label",
+            "usage": "The button element requires discernible text."
+        },
+        {
+            "selector": ".k-numerictextbox.k-disabled .k-spin-button > .k-button",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the NumericTextBox is disabled.",
+            "nativeAttribute": "disabled"
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Increases the value of the focused NumericTextBox with the step.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Decreases the value of the focused NumericTextBox with the step.",
+            "trigger": "ArrowDown"
+        }
+    ],
+    "uxSpec": []
+}

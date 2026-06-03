@@ -1,0 +1,769 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "role",
+            "value": "toolbar",
+            "usage": "The toolbar is a collection of command buttons and inputs."
+        },
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "aria-label",
+            "usage": "Clarifies the purpose of the toolbar."
+        },
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "aria-controls",
+            "value": ".k-grid-aria-root id",
+            "usage": "Pointing to the id of the element with role=grid."
+        },
+        {
+            "selector": ".k-grouping-header",
+            "attribute": "role",
+            "value": "toolbar",
+            "usage": "The Grouping pane is a ToolBar (collection of buttons)."
+        },
+        {
+            "selector": ".k-grouping-header",
+            "attribute": "aria-label",
+            "usage": "Clarifies the purpose of the grouping pane."
+        },
+        {
+            "selector": ".k-grouping-header",
+            "attribute": "aria-controls",
+            "value": ".k-grid-aria-root id",
+            "usage": "Pointing to the id of the element with role=grid."
+        },
+        {
+            "selector": ".k-grouping-header .k-chip-list",
+            "attribute": "role",
+            "value": "none",
+            "usage": "The ChipList default listbox role is removed to keep the toolbar --> button roles hierarchy."
+        },
+        {
+            "selector": ".k-grouping-header .k-chip",
+            "attribute": "role",
+            "value": "button",
+            "usage": "If the element used is not <button>, then the role must be specified."
+        },
+        {
+            "selector": ".k-grid:not(.k-treelist) .k-grid-aria-root",
+            "attribute": "role",
+            "value": "grid",
+            "usage": "The role specifies the element is a Data Grid."
+        },
+        {
+            "selector": ".k-grid-aria-root",
+            "attribute": "aria-colcount",
+            "usage": "The total number of columns in the Grid. Needed for Virtual columns and Hidden columns scenarios."
+        },
+        {
+            "selector": ".k-grid-aria-root",
+            "attribute": "aria-rowcount",
+            "usage": "The total number of rows in the table. Needed for Paging, Virtual rows, or Master/Detail rows scenarios."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Negates the default semantic role of the <table> element."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead",
+            "attribute": "role",
+            "value": "rowgroup",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead>tr:not(.k-filter-row)",
+            "attribute": "role",
+            "value": "row",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead>tr:not(.k-filter-row)",
+            "attribute": "aria-rowindex",
+            "usage": "Row number. Needed for Paging, Virtual rows, or Master/Detail rows scenarios."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead>tr:not(.k-filter-row)>th:not(.k-hierarchy-cell):not(.k-group-cell):not(.k-drag-cell)",
+            "attribute": "role",
+            "value": "columnheader",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead>tr:not(.k-filter-row)>th",
+            "attribute": "aria-sort",
+            "usage": "Present if sorting is enabled for that column."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead>tr:not(.k-filter-row)>th",
+            "attribute": "aria-colindex",
+            "usage": "Col number. Needed for Virtual columns and Hidden columns scenarios."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead>tr:not(.k-filter-row)>th",
+            "attribute": "aria-haspopup",
+            "value": "dialog",
+            "usage": "Present if the column has a ColumnMenu or FilterMenu."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead>tr.k-filter-row>td",
+            "attribute": "role",
+            "value": "gridcell",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-header-wrap>table>thead>tr.k-filter-row>td",
+            "attribute": "aria-label",
+            "usage": "Has a label indicating that the cell is part of a filter row."
+        },
+        {
+            "selector": ".k-grid:not(.k-grid-lockedcolumns) .k-grid-content>table, .k-grid-pinned-container .k-grid-table",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Negates the default semantic role of the <table> element."
+        },
+        {
+            "selector": ".k-grid:not(.k-grid-lockedcolumns) .k-grid-content>table>tbody, .k-grid-pinned-container tbody",
+            "attribute": "role",
+            "value": "rowgroup",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid:not(.k-grid-lockedcolumns) .k-grid-content>table>tbody>tr, .k-grid-pinned-container tbody tr",
+            "attribute": "role",
+            "value": "row",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid:not(.k-grid-lockedcolumns) .k-grid-content>table>tbody>tr, .k-grid-pinned-container tbody tr",
+            "attribute": "aria-rowindex",
+            "usage": "Row number. Needed for Paging, Virtual rows, or Master/Detail rows scenarios."
+        },
+        {
+            "selector": ".k-grid:not(.k-grid-lockedcolumns) .k-grid-content>table>tbody>tr>td, .k-grid-pinned-container tbody td",
+            "attribute": "role",
+            "value": "gridcell",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid:not(.k-grid-lockedcolumns) .k-grid-content>table>tbody>tr>td, .k-grid-pinned-container tbody td",
+            "attribute": "aria-colindex",
+            "usage": "Col number. Needed for Virtual columns and Hidden columns scenarios."
+        },
+        {
+            "selector": "tr.k-selected",
+            "attribute": "aria-selected",
+            "value": "true",
+            "usage": "Set on the currently selected row(s) in row selection mode. All cells within the selected row also carry aria-selected=true (without k-selected class). Applies to both regular and pinned rows."
+        },
+        {
+            "selector": "td.k-selected",
+            "attribute": "aria-selected",
+            "value": "true",
+            "usage": "Set on the currently selected cell(s) in cell selection mode. The k-selected class on cells is only applied in cell selection mode, but aria-selected=true is present on cells regardless of selection mode."
+        },
+        {
+            "selector": ".k-master-row .k-hierarchy-cell, .k-grouping-row>td",
+            "attribute": "aria-expanded",
+            "usage": "For cells holding grouping criteria values and for Master row cells in Detail template scenario."
+        },
+        {
+            "selector": ".k-group-cell",
+            "attribute": "role",
+            "value": "presentation",
+            "usage": "Group offset cells (header and content) are non-interactive placeholders with no semantic role."
+        },
+        {
+            "selector": ".k-drag-cell",
+            "attribute": "aria-label",
+            "usage": "Must be present in a Drag Row scenario on the cell containing the drag handle."
+        },
+        {
+            "selector": ".k-grid-header-locked table tr",
+            "attribute": "aria-owns",
+            "usage": "Locked header rows own cells from the corresponding non-locked header table rows."
+        },
+        {
+            "selector": ".k-grid-content-locked table tr:not(.k-grouping-row)",
+            "attribute": "aria-owns",
+            "usage": "Locked content rows own cells from the corresponding non-locked content table rows. Group header rows are excluded because the non-locked group header rows are presentational."
+        },
+        {
+            "selector": ".k-grid-lockedcolumns .k-grid-header .k-grid-header-wrap table tr",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Non-locked header rows have their semantic role removed when locked columns exist."
+        },
+        {
+            "selector": ".k-grid-lockedcolumns .k-grid-content table tr",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Non-locked content rows have their semantic role removed when locked columns exist."
+        },
+        {
+            "selector": ".k-grid-lockedcolumns .k-grid-header .k-grid-header-wrap th",
+            "attribute": "role",
+            "value": "columnheader",
+            "usage": "Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns."
+        },
+        {
+            "selector": ".k-grid-lockedcolumns .k-grid-content td:not(.k-grouping-row td)",
+            "attribute": "role",
+            "value": "gridcell",
+            "usage": "Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns. Cells inside group header rows are excluded as those rows are presentational."
+        },
+        {
+            "selector": ".k-grid-filter-popup",
+            "attribute": "role",
+            "value": "dialog",
+            "usage": "The filter menu popup has dialog role."
+        },
+        {
+            "selector": ".k-grid-filter-popup",
+            "attribute": "id",
+            "usage": "Unique id linked to the header cell aria-controls attribute."
+        },
+        {
+            "selector": ".k-grid-filter-popup",
+            "attribute": "aria-label",
+            "usage": "Descriptive label for the filter menu, e.g. \"Column Title Filter Menu\"."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup",
+            "attribute": "role",
+            "value": "dialog",
+            "usage": "The column menu popup has dialog role."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup",
+            "attribute": "id",
+            "usage": "Unique id linked to the header cell aria-controls attribute."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup",
+            "attribute": "aria-label",
+            "usage": "Descriptive label for the column menu, e.g. \"Column Title Column Menu\"."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-columnmenu-item",
+            "attribute": "role",
+            "value": "button",
+            "usage": "Column menu items have button role."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-columnmenu-item",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "Column menu items are focusable."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-columnmenu-item",
+            "attribute": "aria-expanded",
+            "usage": "Expandable column menu items announce their expanded state."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-columnmenu-item",
+            "attribute": "aria-controls",
+            "usage": "Expandable items point to the id of the content they control."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-column-list",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "The column list is a listbox."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-column-list",
+            "attribute": "aria-multiselectable",
+            "value": "true",
+            "usage": "The column list supports multiple selections."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-column-list",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the column list."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-column-list-item",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Column list items are options."
+        },
+        {
+            "selector": ".k-grid-columnmenu-popup .k-column-list-item",
+            "attribute": "aria-checked",
+            "usage": "Column list items announce their checked state."
+        },
+        {
+            "selector": "tfoot",
+            "attribute": "role",
+            "value": "rowgroup",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": "tfoot tr",
+            "attribute": "role",
+            "value": "row",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": "tfoot tr",
+            "attribute": "aria-rowindex",
+            "usage": "Row number. Needed for Paging, Virtual rows, or Master/Detail rows scenarios."
+        },
+        {
+            "selector": "tfoot tr td",
+            "attribute": "role",
+            "value": "gridcell",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": "tfoot tr td",
+            "attribute": "aria-colindex",
+            "usage": "Col number. Needed for Virtual columns and Hidden columns scenarios."
+        },
+        {
+            "selector": ".k-grid-selection-aggregates",
+            "attribute": "aria-live",
+            "value": "polite",
+            "usage": "Ensures that changes in the calculated selection aggregates are announced by assistive technologies."
+        },
+        {
+            "selector": ".k-grid-stack-cell",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "Stacked cell elements receive tabindex 0 when focus is within their parent .k-grid-stack-row element."
+        },
+        {
+            "selector": ".k-grid-sticky-container",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Sticky group container has no semantic role."
+        },
+        {
+            "selector": ".k-grid-sticky-container .k-grid-table",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Negates the default semantic role of the sticky group <table> element."
+        },
+        {
+            "selector": ".k-grid-sticky-container tbody",
+            "attribute": "role",
+            "value": "rowgroup",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-sticky-container tr",
+            "attribute": "role",
+            "value": "row",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-sticky-container tr",
+            "attribute": "aria-rowindex",
+            "usage": "Matches the aria-rowindex of the real group header/footer row it mirrors."
+        },
+        {
+            "selector": ".k-grid-sticky-container td:not(.k-group-cell)",
+            "attribute": "role",
+            "value": "gridcell",
+            "usage": "Required as the owner <table> element has its semantic role removed. Group offset cells are excluded as they retain role=presentation."
+        },
+        {
+            "selector": ".k-grid-sticky-container .k-grouping-row>td",
+            "attribute": "aria-expanded",
+            "usage": "Mirrors the expanded/collapsed state of the real group header row."
+        },
+        {
+            "selector": ".k-grid-sticky-container td:not(.k-group-cell)",
+            "attribute": "tabindex",
+            "usage": "Receives tabindex 0 when focused, -1 otherwise, for keyboard navigation. Group offset cells are excluded as they are presentational."
+        },
+        {
+            "selector": ".k-grid-sticky-container td",
+            "attribute": "aria-colindex",
+            "usage": "Col number. Typically 1 for the group header cell spanning all columns."
+        },
+        {
+            "selector": ".k-grid-pinned-container",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Container for pinned rows has no semantic role."
+        },
+        {
+            "selector": ".k-grid-pinned-container .k-grid-pinned-wrap",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Inner wrapper for the pinned rows table has no semantic role."
+        },
+        {
+            "selector": ".k-grid-pinned-container tbody",
+            "attribute": "aria-label",
+            "usage": "Describes the purpose of the pinned rows group, e.g. \"Top pinned rows\" or \"Bottom pinned rows\"."
+        },
+        {
+            "selector": ".k-grid-pinned-container td",
+            "attribute": "aria-haspopup",
+            "value": "menu",
+            "usage": "Pinned row cells announce the context menu for row pinning operations."
+        },
+        {
+            "selector": ".k-grid-pinned-container td",
+            "attribute": "aria-controls",
+            "usage": "Points to the ID of the context menu popup for row pinning."
+        },
+        {
+            "selector": ".k-grid-pinned-container td",
+            "attribute": "aria-expanded",
+            "usage": "Indicates whether the context menu popup is open."
+        },
+        {
+            "selector": ".k-grid-content td",
+            "attribute": "aria-haspopup",
+            "value": "menu",
+            "usage": "Regular data cells announce context menu when row pinning uses contextual mode."
+        },
+        {
+            "selector": ".k-grid-content td",
+            "attribute": "aria-controls",
+            "usage": "Points to the ID of the context menu popup for row pinning."
+        },
+        {
+            "selector": ".k-grid-content td",
+            "attribute": "aria-expanded",
+            "usage": "Indicates whether the context menu popup is open."
+        },
+        {
+            "selector": ".k-pin-cell [class*=\"k-icon\"]",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Pin/unpin icon inside the dedicated column is decorative and must be hidden from assistive technologies."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Moves focus one cell to the right (if any)",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Moves focus one cell to the left (if any)",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Moves focus one cell down (if any)",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Moves focus one cell up (if any)",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Moves focus to the first cell in the row that contains focus.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Moves focus to the last cell in the row that contains focus.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Moves focus to the first (top-left) data cell in the grid.",
+            "trigger": "Control/Cmd(Mac) + Home"
+        },
+        {
+            "behavior": "Moves focus to the last cell in the last **loaded** row of the Grid.",
+            "trigger": "Control/Cmd(Mac) + End"
+        },
+        {
+            "behavior": "Loads and displays the next page of data. If virtual scrolling is used, scrolls down with the number of visible items.",
+            "trigger": "PageDown"
+        },
+        {
+            "behavior": "Loads and displays the previous page of data. If virtual scrolling is used, scrolls up with the number of visible items.",
+            "trigger": "PageUp"
+        },
+        {
+            "behavior": "(Optional) Moves focus 5 rows down (if possible) or to the last row (for faster navigation).",
+            "trigger": "Control/Cmd(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "(Optional) Moves focus 5 rows down (if possible) or to the first row (for faster navigation).",
+            "trigger": "Control/Cmd(Mac) + ArrowUp"
+        },
+        {
+            "behavior": "When the grid is in InCell EditMode - EditMode is activated. In hierarchy cell - expands /collapses the detail row. In grouping cell - expands /collapses the group. If the cell contains a focusable elements - focus moves to the first focusable element inside.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Puts the Grid in editing mode regardless of the configured type of editing.",
+            "trigger": "F2"
+        },
+        {
+            "behavior": "When the Grid is editable, triggers the default remove action for the respective Grid row.",
+            "trigger": "Delete or Backspace"
+        },
+        {
+            "behavior": "If editor is opened, cancels the edit and closes the editor. If focus is on an element inside a cell, returns the focus back to the cell.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Selects the row holding the currently focused cell.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Selects or deselects the current row, while persisting previously selected rows (only for selection mode \"multiple\").",
+            "trigger": "Control + Space or Cmd + Enter(MacOS)"
+        },
+        {
+            "behavior": "Performs range selection, selects all the rows between the last selected one (with SPACE or mouse click) and the one holding the focused cell.",
+            "trigger": "Shift + Space"
+        },
+        {
+            "behavior": "Selects the row above. When multiple selection is enabled, extends the selection to that row.",
+            "trigger": "Shift + ArrowUp"
+        },
+        {
+            "behavior": "Selects the row below. When multiple selection is enabled, extends the selection to that row.",
+            "trigger": "Shift + ArrowDown"
+        },
+        {
+            "behavior": "Selects the currently focused cell.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Selects or deselects the currently focused cell, while persisting previously selected cells (only for selection mode \"multiple\").",
+            "trigger": "Control + Space or Cmd + Enter(MacOS)"
+        },
+        {
+            "behavior": "Performs range selection, selects all the cells between the last selected one (with SPACE or mouse click) and the focused cell.",
+            "trigger": "Shift + Space"
+        },
+        {
+            "behavior": "Selects the cell above. When multiple selection is enabled, extends the selection to that cell.",
+            "trigger": "Shift + ArrowUp"
+        },
+        {
+            "behavior": "Selects the cell below. When multiple selection is enabled, extends the selection to that cell.",
+            "trigger": "Shift + ArrowDown"
+        },
+        {
+            "behavior": "Selects the cell to the left. When multiple selection is enabled, extends the selection to that cell.",
+            "trigger": "Shift + ArrowLeft"
+        },
+        {
+            "behavior": "Selects the cell to the right. When multiple selection is enabled, extends the selection to that cell.",
+            "trigger": "Shift + ArrowRight"
+        },
+        {
+            "behavior": "If sorting is enabled, Sort is applied.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Opens the Column menu / Filter menu and moves focus to that menu.",
+            "trigger": "Alt + ArrowDown"
+        },
+        {
+            "behavior": "Closes Filter or Column menu.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Group/ungroup the focused column.",
+            "trigger": "Control + Space or Cmd + Enter(MacOS)"
+        },
+        {
+            "behavior": "Reorders the column with the previous one.",
+            "trigger": "Control/Cmd(Mac) + ArrowLeft"
+        },
+        {
+            "behavior": "Reorders the column with the next one.",
+            "trigger": "Control/Cmd(Mac) + ArrowRight"
+        },
+        {
+            "behavior": "Resizes the column (decreases width in LTR, increases width RTL).",
+            "trigger": "Alt/Opt(Mac) + ArrowLeft"
+        },
+        {
+            "behavior": "Resizes the column (increases width in LTR, decreases width RTL).",
+            "trigger": "Alt/Opt(Mac) + ArrowRight"
+        },
+        {
+            "behavior": "Moves focus inside the command column, and can trap the tab sequence. First button is focused. If a button is focused, triggers the button action.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "If a button is focused, returns focus to the command cell.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Moves focus to the next button in the column.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Moves focus to the previous button in the column.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Moves the focus to the next \"stacked cell\" ('.k-grid-stack-cell' element). If the focus is on the last such item, the focus does not move further.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Moves the focus to the previous \"stacked cell\" ('.k-grid-stack-cell' element). If the focus is on the first such item, the focus does not move further.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "If incell editing is enabled, opens the editor for the item.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "If the focus is on content item wrapper, returns the focus to the Grid cell ('.k-table-td' element). If the focus is on an element inside a content item (for example cell editor), returns the focus back to the content item.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Moves to the next editor in the row.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Cancels the row edit. The focus goes to the command cell from where the row edit was triggered.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Moves to the next editor in the row (closing current editor). It skips cells with `Editable='false'` and command columns. If focus is already on the last editable cell on the row, focus is moved to the first editable cell on the next row, and it's editor is opened. If we're already on the last row of the grid, focus remains on the cell, with the editor closed.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Moves to the previous editor in the row (closing current editor). It skips cells with `Editable='false'` and command columns. If focus is already on the first editable cell on the row, focus is moved to the last editable cell on the previous row, and it's editor is opened. If we're already on the first row of the grid, focus remains on the cell, with the editor closed.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Commits changes for the edited item, and moves focus to the same cell on the row below, opening it for edit.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Cancels the edit. The focus goes to the current cell.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Moves to the next editor in the form.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Closes the editor. The focus goes to the command cell from where the popup was opened.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Triggers a submit action for the editor, including validation.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Triggers a submit action for the editor form, including validation.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "`td` elements receive focus as standard navigation in Grid.",
+            "trigger": "Arrow Keys"
+        },
+        {
+            "behavior": "Enters in the `td` and focuses the first focusable element in it. All filter row components gain `tabindex=0`. Focus remains trapped inside the filter row.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Goes through the filter row components.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Focus goes to the `td` element wrapping the currently focused filter component.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Opens the ColumnMenu Popup when focus is on the Grid header cell or on the main column menu button. Focus is trapped and wrapped within the Popup. Focus is trapped within the Popup.",
+            "trigger": "Alt + ArrowDown"
+        },
+        {
+            "behavior": "Opens the FilterMenu Popup when focus is on the Grid header cell or on the main filter menu button (depending on whether the Grid is navigable or not). Focus is trapped and wrapped within the Popup.",
+            "trigger": "Alt + ArrowDown"
+        },
+        {
+            "behavior": "Navigates to the next focusable element in the Popup. If current focus is on the last element, moves focus to the first focusable item in the Popup.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Navigates to the previous focusable element in the Popup. If current focus is on the first element, moves focus to the last focusable item in the Popup.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "For button items, executes the currently focused button action.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Closes the FilterMenu Popup and returns focus to the header cell or the main button.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Opens the Filter Tool popup when focus is on the filter button in the toolbar. Focus is moved to the first item in the popup and is trapped within the popup contents.",
+            "trigger": "Enter or Space"
+        },
+        {
+            "behavior": "Opens the Sort Tool popup when focus is on the sort button in the toolbar. Focus is moved to the first item in the popup and is trapped within the popup contents.",
+            "trigger": "Enter or Space"
+        },
+        {
+            "behavior": "Opens the Group Tool popup when focus is on the group button in the toolbar. Focus is moved to the first item in the popup and is trapped within the popup contents.",
+            "trigger": "Enter or Space"
+        },
+        {
+            "behavior": "When focus is on an item, groups the column.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Moves the focused group item one level up in the grouping hierarchy.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Moves the focused group item one level down in the grouping hierarchy.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Removes the focused column from the active groups.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Expands/Collapses the row",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Toggles the detail template.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Focuses the detailed cell.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "If on detail cell, focus the first focusable element inside the detail template (if any).",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Returns the focus to the detail cell.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Toggle checkbox. Toggling the checkbox selects/deselects a row.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Returns focus to the cell.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Reorders the row with the next one when such is present.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowDown"
+        },
+        {
+            "behavior": "Reorders the row with the previous one when such is present.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowUp"
+        }
+    ],
+    "uxSpec": []
+}

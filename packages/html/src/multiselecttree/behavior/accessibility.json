@@ -1,0 +1,117 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-multiselecttree .k-input-inner",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "Announces the multiselect tree input."
+        },
+        {
+            "selector": ".k-multiselecttree .k-input-inner",
+            "attribute": "aria-haspopup",
+            "value": "tree",
+            "usage": "Indicates the presence of a tree popup."
+        },
+        {
+            "selector": ".k-multiselecttree .k-input-inner",
+            "attribute": "aria-expanded",
+            "usage": "Announces the popup visibility."
+        },
+        {
+            "selector": ".k-multiselecttree .k-input-inner",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the multiselect tree."
+        },
+        {
+            "selector": ".k-multiselecttree .k-input-inner",
+            "attribute": "aria-autocomplete",
+            "value": "list",
+            "usage": "Indicates list filtering capability when filtering is enabled."
+        },
+        {
+            "selector": ".k-multiselecttree .k-input-inner",
+            "attribute": "aria-describedby",
+            "usage": "Points to the taglist element that contains the selected items."
+        },
+        {
+            "selector": ".k-multiselecttree .k-input-inner",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-multiselecttree.k-disabled .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the multiselect tree is disabled."
+        },
+        {
+            "selector": ".k-multiselecttree .k-chip-list",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "The taglist has listbox role for selected items."
+        },
+        {
+            "selector": ".k-multiselecttree .k-chip-list",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The taglist needs an accessible name."
+        },
+        {
+            "selector": ".k-multiselecttree .k-chip-list",
+            "attribute": "aria-orientation",
+            "value": "horizontal",
+            "usage": "Specifies horizontal orientation of the taglist."
+        },
+        {
+            "selector": ".k-multiselecttree .k-chip-list .k-chip",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Each tag chip is an option within the taglist listbox."
+        },
+        {
+            "selector": ".k-multiselecttree .k-chip-list .k-chip",
+            "attribute": "aria-selected",
+            "value": "true",
+            "usage": "Tags represent selected items and must have aria-selected=true."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Selects the next available item.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Selects the previous available item.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Opens pop up",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "`Closes popup",
+            "trigger": "Alt/Opt(Mac) + ArrowUp or Escape"
+        },
+        {
+            "behavior": "Selects the focused item.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Selects the focused item.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Typing \"M\" or any other printable character should select the next or first item in the list",
+            "trigger": "Printable Characters"
+        },
+        {
+            "behavior": "Clears the value when the popup is not open.",
+            "trigger": "Escape"
+        }
+    ],
+    "uxSpec": []
+}

@@ -1,0 +1,28 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-daterangepicker .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "Each date input needs an accessible name."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Closes the popup",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Opens the popup",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Closes the popup",
+            "trigger": "Alt/Opt(Mac) + ArrowUp"
+        }
+    ],
+    "uxSpec": []
+}

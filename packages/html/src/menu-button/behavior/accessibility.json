@@ -1,0 +1,89 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-menu-button",
+            "attribute": "role",
+            "value": "button",
+            "usage": "Omitted if the button DOM element is used.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-menu-button",
+            "attribute": "aria-label",
+            "usage": "Required when no text is visible in the button."
+        },
+        {
+            "selector": ".k-menu-button",
+            "attribute": "aria-expanded",
+            "usage": "Announces the state of the popup visibility.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-menu-button",
+            "attribute": "aria-controls",
+            "value": ".k-menu-group id",
+            "usage": "Points to the popup element. Builds a relationship between the button and the popup."
+        },
+        {
+            "selector": ".k-menu-button.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the button is disabled."
+        },
+        {
+            "selector": ".k-menu-group",
+            "attribute": "role",
+            "value": "list",
+            "usage": "Announces the list role of the popup."
+        },
+        {
+            "selector": ".k-menu-item",
+            "attribute": "role",
+            "value": "listitem",
+            "usage": "Announces the listitem role of the popup items."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": [
+        {
+            "trigger": "Alt + ArrowDown",
+            "behavior": "Opens the DropDownButton popup and moves the focus to its first `menuitem` element."
+        },
+        {
+            "trigger": "Enter or Space",
+            "behavior": "Opens the DropDownButton popup and moves the focus to its first `menuitem` element."
+        },
+        {
+            "trigger": "Alt + ArrowUp",
+            "behavior": "Closes the popup and moves the focus back to the main `button` element."
+        },
+        {
+            "trigger": "Escape",
+            "behavior": "Closes the popup and moves the focus back to the main button element."
+        },
+        {
+            "trigger": "ArrowDown",
+            "behavior": "Moves the focus to the next `menuitem` element. If the focus is on the last menu item, moves the focus to the first menu item."
+        },
+        {
+            "trigger": "ArrowUp",
+            "behavior": "Moves the focus to the previous `menuitem` element. If the focus is on the first menu item, moves the focus to the last menu item."
+        },
+        {
+            "trigger": "Home",
+            "behavior": "Moves the focus to the first `menuitem` element."
+        },
+        {
+            "trigger": "End",
+            "behavior": "Moves the focus to the last `menuitem` element."
+        },
+        {
+            "trigger": "Enter or Space",
+            "behavior": "Clicks (activates) the currently active `menuitem` element and closes the popup."
+        }
+    ]
+}

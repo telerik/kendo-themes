@@ -1,0 +1,55 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-actionsheet",
+            "attribute": "role",
+            "value": "dialog",
+            "usage": "Announces the dialog role of the component."
+        },
+        {
+            "selector": ".k-actionsheet",
+            "attribute": "aria-labelledby",
+            "usage": "Associates the title of the action sheet."
+        },
+        {
+            "selector": ".k-actionsheet",
+            "attribute": "aria-hidden",
+            "usage": "Announces the hidden state of the ActionSheet container.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-actionsheet",
+            "attribute": "aria-modal",
+            "value": "true",
+            "usage": "Announces that the action sheet is modal."
+        },
+        {
+            "selector": ".k-actionsheet .k-actionsheet-title",
+            "attribute": "id",
+            "usage": "Used to associate the title with the action sheet wrapper element."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Dismisses the ActionSheet.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Moves focus to the next focusable item.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Moves focus to the previous focusable item.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Triggers the action associated with the currently focused item.",
+            "trigger": "Enter"
+        }
+    ],
+    "uxSpec": []
+}

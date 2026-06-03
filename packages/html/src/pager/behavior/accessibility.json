@@ -1,0 +1,128 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-pager",
+            "attribute": "role",
+            "value": "application",
+            "usage": "Indicates that the pager has its own keyboard navigation implemented."
+        },
+        {
+            "selector": ".k-pager",
+            "attribute": "aria-roledescription",
+            "value": "pager",
+            "usage": "Clarifies the role of the Pager."
+        },
+        {
+            "selector": ".k-pager",
+            "attribute": "aria-keyshortcuts",
+            "value": "Enter ArrowRight ArrowLeft",
+            "usage": "Announces the available keyboard shortcuts."
+        },
+        {
+            "selector": ".k-pager",
+            "attribute": "aria-label",
+            "usage": "Announces the currently selected page and the number of available pages."
+        },
+        {
+            "selector": ".k-pager-nav",
+            "attribute": "role",
+            "value": "button",
+            "usage": "Specifies the role of the navigation element.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-pager-nav.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Present when the navigation button is non-interactive."
+        },
+        {
+            "selector": ".k-pager-nav",
+            "attribute": "title",
+            "usage": "Specifies the purpose of each navigation button."
+        },
+        {
+            "selector": ".k-pager-numbers .k-button",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "Specifies the purpose of each page link, e.g., Page 6."
+        },
+        {
+            "selector": ".k-pager-numbers .k-button.k-selected",
+            "attribute": "aria-current",
+            "value": "page",
+            "usage": "Present on the currently selected page element."
+        },
+        {
+            "selector": ".k-pager-sizes .k-dropdownlist",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The DropDownList requires a label to specify its purpose."
+        },
+        {
+            "selector": ".k-pager-input .k-input-inner",
+            "attribute": "aria-label",
+            "usage": "The input requires a label to specify its purpose."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Loads the first page of data if the current page is not the first one.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Loads the last page of data if the current page is not the last one.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Activates the inner Pager navigation.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Navigates to the next focusable element on the page.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Navigates to the previous focusable element on the page.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Loads the previous page of data, if any.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Loads the next page of data, if any.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Loads the previous page of data, if any.",
+            "trigger": "PageUp"
+        },
+        {
+            "behavior": "Loads the next page of data, if any.",
+            "trigger": "PageDown"
+        },
+        {
+            "behavior": "Moves the focus back to the wrapper element. Deactivates the inner Pager navigation.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Navigates to the next focusable element in the Pager. If the current focus is on the last element, moves the focus to the first focusable item in the component.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Navigates to the previous focusable element in the Pager. If the current focus is on the first element, moves the focus to the last focusable item in the component.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "For button items, and Pager input executes the currently focused action (page change).",
+            "trigger": "Enter"
+        }
+    ],
+    "uxSpec": []
+}

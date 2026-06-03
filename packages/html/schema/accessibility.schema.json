@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "ariaSpec": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["selector", "attribute", "usage"],
+        "properties": {
+          "selector": { "type": "string", "minLength": 1 },
+          "attribute": {
+            "oneOf": [
+              { "type": "string", "minLength": 1 },
+              { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 2 }
+            ]
+          },
+          "value": {
+            "oneOf": [
+              { "type": "string", "minLength": 1 },
+              { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 2 }
+            ]
+          },
+          "nativeAttribute": { "type": "string" },
+          "nativeElement": { "type": "string" },
+          "usage": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "kbSpec": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["trigger", "behavior"],
+        "properties": {
+          "trigger": { "type": "string", "minLength": 1 },
+          "behavior": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "uxSpec": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["behavior"],
+        "properties": {
+          "trigger": { "type": "string" },
+          "behavior": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

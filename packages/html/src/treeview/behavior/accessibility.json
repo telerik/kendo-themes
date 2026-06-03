@@ -1,0 +1,101 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-treeview-lines",
+            "attribute": "role",
+            "value": "tree",
+            "usage": "The root list element of the treeview."
+        },
+        {
+            "selector": ".k-treeview-group:not(.k-treeview-lines)",
+            "attribute": "role",
+            "value": "group",
+            "usage": "The ul element that wraps child nodes."
+        },
+        {
+            "selector": ".k-treeview-item",
+            "attribute": "role",
+            "value": "treeitem",
+            "usage": "The li element rendered for a tree node."
+        },
+        {
+            "selector": ".k-treeview-item",
+            "attribute": "aria-expanded",
+            "usage": "Announces the expanded state of the node.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-treeview-item",
+            "attribute": "aria-checked",
+            "usage": "Announces the checked state of the node when checkboxes are enabled.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-treeview-item",
+            "attribute": "aria-selected",
+            "value": "true",
+            "usage": "Announces the selected state of the node when selection is enabled."
+        },
+        {
+            "selector": ".k-treeview-item .k-checkbox",
+            "attribute": "aria-label",
+            "usage": "The checkbox input must have an accessible name matching the treeview item text."
+        },
+        {
+            "selector": ".k-treeview-item .k-checkbox",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "The checkbox input must not be in the tab order. Keyboard interaction is handled by the treeitem."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Selects the focused tree view item when the selection mode is single or multiple. When the selection mode is multiple and there are other selected items, they get deselected.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Checks the checkbox of the TreeView node.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Goes to the previous tree node. The focus is moved to the previous node and its tabindex is set to `0`.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Goes to the next tree node. The focus is moved to the next node and its tabindex is set to `0`.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "If the node is expanded, collapses it and the focus remains on the item. If the node is collapsed, the focus is moved to its parent.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "If the node is collapsed, expands it and the focus remains on the item. If the node is expanded, the focus is moved to the first child node.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Moves the focus to the first node in the tree without opening or closing a node.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Moves the focus to the last node in the tree that is focusable without opening a node.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Selects the focused item. When the item is already selected, it gets deselected.",
+            "trigger": "Control/Cmd(Mac) + Enter"
+        },
+        {
+            "behavior": "Typing `M` or any other printable character focuses the next or the first item in the list.",
+            "trigger": "Printable Characters"
+        }
+    ],
+    "uxSpec": []
+}

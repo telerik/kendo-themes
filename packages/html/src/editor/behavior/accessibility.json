@@ -1,0 +1,53 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-editor-content[contenteditable]",
+            "attribute": "role",
+            "value": "textbox",
+            "usage": "Specifies the role of the component as text input."
+        },
+        {
+            "selector": ".k-editor-content[contenteditable]",
+            "attribute": "aria-label",
+            "usage": "The component focusable element needs an accessible name."
+        },
+        {
+            "selector": ".k-editor.k-readonly .k-editor-content[contenteditable=\"false\"]",
+            "attribute": "aria-readonly",
+            "value": "true",
+            "usage": "Rendered only when the Editor is readonly."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Executes bold command.",
+            "trigger": "Control/Cmd(Mac) + B"
+        },
+        {
+            "behavior": "Executes italic command.",
+            "trigger": "Control/Cmd(Mac) + I"
+        },
+        {
+            "behavior": "Executes underline command.",
+            "trigger": "Control/Cmd(Mac) + U"
+        },
+        {
+            "behavior": "Executes undo command.",
+            "trigger": "Control/Cmd(Mac) + Z"
+        },
+        {
+            "behavior": "Executes redo command.",
+            "trigger": "Control/Cmd(Mac) + Y"
+        },
+        {
+            "behavior": "Adds ` ` to content.",
+            "trigger": "Shift + Enter"
+        },
+        {
+            "behavior": "Adds `` to content.",
+            "trigger": "Enter"
+        }
+    ],
+    "uxSpec": []
+}

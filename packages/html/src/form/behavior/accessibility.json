@@ -1,0 +1,23 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "kbSpec": [
+        {
+            "behavior": "Moves focus to the previous focusable element.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Moves focus to the next focusable element.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Triggers the default action of the focused element for the Space key.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Triggers the default action of the focused element for the Enter key.",
+            "trigger": "Enter"
+        }
+    ],
+    "uxSpec": [],
+    "ariaSpec": []
+}

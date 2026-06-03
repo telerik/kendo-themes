@@ -1,0 +1,41 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-dialog",
+            "attribute": "role",
+            "usage": "Announces the dialog or alertdialog role of the component.",
+            "value": [
+                "dialog",
+                "alertdialog"
+            ]
+        },
+        {
+            "selector": ".k-dialog",
+            "attribute": "aria-labelledby",
+            "usage": "Associate the title of the dialog."
+        },
+        {
+            "selector": ".k-dialog",
+            "attribute": "aria-describedby",
+            "usage": "Associate the dialog content to the wrap element."
+        },
+        {
+            "selector": ".k-overlay + .k-dialog",
+            "attribute": "aria-modal",
+            "value": "true",
+            "usage": "Announces that the dialog is modal. Attribute is added only when the dialog is modal."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focus is moved between the elements in the dialog and is trapped into the component.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Closes the dialog. When the dialog is modal, the focus should be returned to the element that triggered the open.",
+            "trigger": "Escape"
+        }
+    ],
+    "uxSpec": []
+}

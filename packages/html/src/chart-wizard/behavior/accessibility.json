@@ -1,0 +1,15 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "kbSpec": [
+        {
+            "behavior": "Navigates the content in the ChartWizard - the Window, Export button, Chart, Splitter, TabStrip tabs and content, each ExpansionPanel, each Chart type button.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Triggers click event on the focused button.",
+            "trigger": "Enter"
+        }
+    ],
+    "uxSpec": [],
+    "ariaSpec": []
+}

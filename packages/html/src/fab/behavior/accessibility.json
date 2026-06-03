@@ -1,0 +1,28 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-fab",
+            "attribute": "role",
+            "value": "button",
+            "usage": "Omitted if the <button> DOM element is used.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-fab",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "The attribute must be present when no text is initially visible in the button."
+        },
+        {
+            "selector": ".k-fab.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the button is disabled."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

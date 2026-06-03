@@ -1,0 +1,80 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-listview:not(.k-selectable) .k-listview-content",
+            "attribute": "role",
+            "value": "list",
+            "usage": "Specifies the role of non selectable ListView content element."
+        },
+        {
+            "selector": ".k-listview.k-selectable .k-listview-content",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "Specifies the role of selectable ListView content element."
+        },
+        {
+            "selector": ".k-listview:not(.k-selectable) .k-listview-item",
+            "attribute": "role",
+            "value": "listitem",
+            "usage": "Specifies the role of each item in a non selectable ListView."
+        },
+        {
+            "selector": ".k-listview.k-selectable .k-listview-item",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Specifies the role of each item in a selectable ListView."
+        },
+        {
+            "selector": ".k-listview-item",
+            "attribute": "aria-setsize",
+            "usage": "Specifies the total number of items present in the ListView."
+        },
+        {
+            "selector": ".k-listview-item",
+            "attribute": "aria-posinset",
+            "usage": "Specifies the position of the current item in the entire list."
+        },
+        {
+            "selector": ".k-listview-item:nth-child(1)",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The first item in the ListView must be focusable by default."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Moves the focus to the next rendered item. If the focus is on the last item, the focus does not move.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Moves the focus to the next rendered item. If the focus is on the last item, the focus does not move.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Moves the focus to the previous rendered item. If the focus is on the first item, the focus does not move.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Moves the focus to the previous rendered item. If the focus is on the first item, the focus does not move.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Moves the focus to the first rendered item.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Moves the focus to the last rendered item.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "When there are focusable items within a ListView item - the focus moves to the first focusable item inside.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "If the focus is on an element inside a ListView item - returns the focus back to the ListView item.",
+            "trigger": "Escape"
+        }
+    ],
+    "uxSpec": []
+}

@@ -1,0 +1,64 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-dock-manager",
+            "attribute": "role",
+            "value": "application",
+            "usage": "Indicates that the DockManager has its own keyboard navigation implemented."
+        },
+        {
+            "selector": ".k-dock-manager",
+            "attribute": "aria-live",
+            "value": "polite",
+            "usage": "Defines dynamic content changes within the DockManager container."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Maximizes the active pane.",
+            "trigger": "Alt/Opt(Mac) + ArrowUp"
+        },
+        {
+            "behavior": "Minimizes the active pane.",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Closes the active pane.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Unpins the active pane.",
+            "trigger": "Alt/Opt(Mac) + ArrowLeft"
+        },
+        {
+            "behavior": "Pins the active pane.",
+            "trigger": "Alt/Opt(Mac) + ArrowRight"
+        },
+        {
+            "behavior": "Focuses the next content pane.",
+            "trigger": "Control/Cmd(Mac) + ArrowRight"
+        },
+        {
+            "behavior": "Focuses the previous content pane.",
+            "trigger": "Control/Cmd(Mac) + ArrowLeft"
+        },
+        {
+            "behavior": "Docks the active pane to the global top.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowUp"
+        },
+        {
+            "behavior": "Docks the active pane to the global bottom.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowDown"
+        },
+        {
+            "behavior": "Docks the active pane to the global left.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowLeft"
+        },
+        {
+            "behavior": "Docks the active pane to the global right.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowRight"
+        }
+    ],
+    "uxSpec": []
+}

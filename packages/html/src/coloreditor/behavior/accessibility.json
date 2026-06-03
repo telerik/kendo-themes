@@ -1,0 +1,45 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-flatcolorpicker",
+            "attribute": "role",
+            "value": "textbox",
+            "usage": "The focusable wrapper should be considered a textbox with a submittable value."
+        },
+        {
+            "selector": ".k-flatcolorpicker",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The component needs an accessible name including the currently selected value."
+        },
+        {
+            "selector": ".k-flatcolorpicker",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-flatcolorpicker.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the FlatColorPicker is disabled."
+        },
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "role",
+            "value": "none",
+            "usage": "The inner ColorGradient must have its role removed."
+        },
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "The inner ColorGradient must be removed from the page tab sequence."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

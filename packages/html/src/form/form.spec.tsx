@@ -2,6 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { FORM_FOLDER_NAME, FORM_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const FORM_CLASSNAME = 'k-form';
 
 const states = [];
@@ -95,6 +96,10 @@ Form.className = FORM_CLASSNAME;
 Form.defaultOptions = defaultOptions;
 Form.moduleName = FORM_MODULE_NAME;
 Form.folderName = FORM_FOLDER_NAME;
+
+Form.ariaSpec = a11ySpec.ariaSpec;
+Form.kbSpec = a11ySpec.kbSpec;
+Form.uxSpec = a11ySpec.uxSpec;
 
 export default Form;
 

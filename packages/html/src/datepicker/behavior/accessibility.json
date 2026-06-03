@@ -1,0 +1,88 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-datepicker .k-input-inner",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "The input element follows the combobox specification."
+        },
+        {
+            "selector": ".k-datepicker .k-input-inner",
+            "attribute": "aria-haspopup",
+            "value": "grid",
+            "usage": "Indicates the component has a Calendar Popup that implements role=grid."
+        },
+        {
+            "selector": ".k-datepicker .k-input-inner",
+            "attribute": "aria-expanded",
+            "usage": "Announces whether the Popup is visible or not.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-datepicker .k-input-inner",
+            "attribute": "aria-controls",
+            "usage": "Points to the popup element."
+        },
+        {
+            "selector": ".k-datepicker .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input needs an accessible name."
+        },
+        {
+            "selector": ".k-invalid .k-input-inner",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered only when the picker is in form and announces invalid state."
+        },
+        {
+            "selector": ".k-disabled .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the picker is disabled.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-datepicker .k-input-button",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "Button element must not be focusable."
+        },
+        {
+            "selector": ".k-datepicker .k-input-button",
+            "attribute": "aria-label",
+            "usage": "The button needs an accessible name."
+        },
+        {
+            "selector": ".k-datepicker.k-disabled .k-button",
+            "attribute": "aria-disabled",
+            "usage": "Rendered only when the picker is disabled.",
+            "nativeAttribute": "disabled"
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Closes the popup",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Opens the popup",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Closes the popup",
+            "trigger": "Alt/Opt(Mac) + ArrowUp"
+        },
+        {
+            "behavior": "Closes the actionsheet and focuses the next focusable element.",
+            "trigger": "Tab"
+        }
+    ],
+    "uxSpec": []
+}

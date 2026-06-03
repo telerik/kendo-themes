@@ -1,0 +1,103 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-step-list",
+            "attribute": "role",
+            "value": "tablist",
+            "usage": "Indicates the role of the tablist container element."
+        },
+        {
+            "selector": ".k-step",
+            "attribute": "role",
+            "value": "none",
+            "usage": "The implicit semantics of the li element must be removed."
+        },
+        {
+            "selector": ".k-step-link",
+            "attribute": "role",
+            "value": "tab",
+            "usage": "Specifies the role for the step links."
+        },
+        {
+            "selector": ".k-step-link",
+            "attribute": "aria-controls",
+            "value": ".k-wizard-step id",
+            "usage": "Refers to the tabpanel element associated with the tab."
+        },
+        {
+            "selector": ".k-step.k-disabled>.k-step-link",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "A disabled (inactive) tab."
+        },
+        {
+            "selector": ".k-step-current .k-step-link",
+            "attribute": "aria-selected",
+            "value": "true",
+            "usage": "Indicates the tab control is activated."
+        },
+        {
+            "selector": ".k-step-current .k-step-link",
+            "attribute": "aria-current",
+            "value": "true",
+            "usage": "Indicates the current active step."
+        },
+        {
+            "selector": ".k-step-current .k-step-link",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "Current step is in the page tab sequence."
+        },
+        {
+            "selector": ".k-step:not(.k-step-current) .k-step-link",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "Non-current steps are removed from tab sequence."
+        },
+        {
+            "selector": ".k-wizard-step",
+            "attribute": "role",
+            "value": "tabpanel",
+            "usage": "Specifies the role of the element."
+        },
+        {
+            "selector": ".k-wizard-step",
+            "attribute": "aria-label",
+            "usage": "Specifies a label for the panel (e.g., \"Step 2 of 4\")."
+        },
+        {
+            "selector": ".k-wizard-step",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "Keeps the tabpanel in the page tab sequence."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Selects previous tab.",
+            "trigger": "ArrowLeft or ArrowUp"
+        },
+        {
+            "behavior": "Selects next tab.",
+            "trigger": "ArrowRight or ArrowDown"
+        },
+        {
+            "behavior": "Selects first tab.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Selects last tab.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Focuses next element in the page Tab sequence. That could be the currently visible `tabpanel`, an element on it, or an element outside the Wizard.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Focuses previous element in the page Tab sequence.",
+            "trigger": "Shift + Tab"
+        }
+    ],
+    "uxSpec": []
+}

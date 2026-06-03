@@ -1,0 +1,29 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-button.k-speech-to-text-button",
+            "attribute": "role",
+            "value": "button",
+            "usage": "If the used element is not <button>, explicitly set its role to button.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-button.k-speech-to-text-button",
+            "attribute": "aria-pressed",
+            "usage": "Announces the toggle behaviour of the button."
+        },
+        {
+            "selector": ".k-button.k-speech-to-text-button",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the speech-to-text button."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Triggers a click action on the Button. Toggles the active listening state of the Button.",
+            "trigger": "Enter or Space"
+        }
+    ],
+    "uxSpec": []
+}

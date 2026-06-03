@@ -1,0 +1,34 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-button",
+            "attribute": "role",
+            "value": "button",
+            "usage": "The button role is implicit from the native <button> element.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-button",
+            "attribute": "aria-label",
+            "usage": "Required for icon-only buttons that have no visible text."
+        },
+        {
+            "selector": ".k-button",
+            "attribute": "aria-pressed",
+            "usage": "Indicates the pressed state of a toggle button."
+        },
+        {
+            "selector": ".k-button",
+            "attribute": "disabled",
+            "usage": "Rendered when the button is disabled."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Triggers a click action on the Button.",
+            "trigger": "Enter or Space"
+        }
+    ],
+    "uxSpec": []
+}

@@ -1,0 +1,53 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-expander-header",
+            "attribute": "role",
+            "value": "button",
+            "usage": "Sets the proper role for the ExpansionPanel header."
+        },
+        {
+            "selector": ".k-expander-header",
+            "attribute": "aria-controls",
+            "usage": "Points to the controlled content wrapper element."
+        },
+        {
+            "selector": ".k-expander-header",
+            "attribute": "aria-expanded",
+            "usage": "Indicates the expanded state of the ExpansionPanel.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-expander-header",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element should be focusable."
+        },
+        {
+            "selector": ".k-disabled .k-expander-header",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the ExpansionPanel is disabled."
+        },
+        {
+            "selector": ".k-expander-content-wrapper",
+            "attribute": "id",
+            "usage": "Content wrapper has an id referenced by aria-controls."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Expands and collapses the focused ExpansionPanel.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Expands and collapses the focused ExpansionPanel.",
+            "trigger": "Space"
+        }
+    ],
+    "uxSpec": []
+}

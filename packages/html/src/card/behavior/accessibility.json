@@ -1,0 +1,37 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-card-list",
+            "attribute": "role",
+            "value": "list",
+            "usage": "The card list container announces its list role."
+        },
+        {
+            "selector": ".k-card-list .k-card",
+            "attribute": "role",
+            "value": "listitem",
+            "usage": "Each card in the list has the listitem role."
+        },
+        {
+            "selector": ".k-card-list .k-card",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The card is focusable when navigatable."
+        },
+        {
+            "selector": ".k-card-list .k-card",
+            "attribute": "aria-describedby",
+            "value": ".k-card-title id",
+            "usage": "Associate the card to its title element."
+        },
+        {
+            "selector": ".k-card-list .k-card",
+            "attribute": "aria-keyshortcuts",
+            "value": "Enter",
+            "usage": "Announces the Enter key for navigation inside the card."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

@@ -1,0 +1,38 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-imageeditor-canvas>canvas",
+            "attribute": "role",
+            "value": "img",
+            "usage": "Indicates the canvas role as an image. Applicable when an image is loaded."
+        },
+        {
+            "selector": ".k-imageeditor-canvas>canvas",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses next focusable element (the ToolBar or an input/button on the Edit pane).",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Focuses previous focusable element.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Undo the last modification performed on the image.",
+            "trigger": "Control + Z"
+        },
+        {
+            "behavior": "Redo a modification performed on the image.",
+            "trigger": "Control + Y"
+        }
+    ],
+    "uxSpec": []
+}

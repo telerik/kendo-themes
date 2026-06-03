@@ -1,0 +1,76 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-pane",
+            "attribute": "role",
+            "value": "group",
+            "usage": "Sets the proper role for the Splitter pane."
+        },
+        {
+            "selector": ".k-splitbar",
+            "attribute": "role",
+            "value": "separator",
+            "usage": "Sets the proper role for the Splitter split-bar element."
+        },
+        {
+            "selector": ".k-splitbar",
+            "attribute": "aria-label",
+            "usage": "An accessible name for the separator."
+        },
+        {
+            "selector": ".k-splitbar-horizontal",
+            "attribute": "aria-orientation",
+            "value": "vertical",
+            "usage": "When a splitbar separates two panes horizontally, its aria-orientation must be explicitly set to vertical."
+        },
+        {
+            "selector": ".k-splitbar",
+            "attribute": "aria-keyshortcuts",
+            "usage": "Announces available keyboard shortcuts."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Moves up the split-bar in a vertical Splitter.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Moves down a split-bar in a vertical Splitter.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Moves left a split-bar in a horizontal Splitter.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Moves right a split-bar in a horizontal Splitter.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Moves the splitbar up to collapse/expand the adjacent panes in the up direction.",
+            "trigger": "Control/Cmd(Mac) + ArrowUp"
+        },
+        {
+            "behavior": "Moves the splitbar down to collapse/expand the adjacent panes in the down direction.",
+            "trigger": "Control/Cmd(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Moves the splitbar left to collapse/expand the adjacent panes in the left direction.",
+            "trigger": "Control/Cmd(Mac) + ArrowLeft"
+        },
+        {
+            "behavior": "Moves the splitbar right to collapse/expand the adjacent panes in the right direction.",
+            "trigger": "Control/Cmd(Mac) + ArrowRight"
+        },
+        {
+            "behavior": "Toggles the collapsed state of the nearest collapsible pane.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "The key that allows focusing a splitter bar. Thus, all splitbars have `tabindex` and are included in the tab sequence.",
+            "trigger": "Tab"
+        }
+    ],
+    "uxSpec": []
+}

@@ -1,0 +1,62 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-pdf-viewer .k-canvas",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "Defines the focusable page container element."
+        },
+        {
+            "selector": ".k-pdf-viewer .k-canvas",
+            "attribute": "aria-label",
+            "usage": "Describes the purpose of the focusable container."
+        },
+        {
+            "selector": ".k-pdf-viewer .k-canvas",
+            "attribute": "role",
+            "value": "document",
+            "usage": "Defines that content should be evaluated in reader mode by assistive technologies."
+        },
+        {
+            "selector": ".k-pdf-viewer .k-toolbar .k-button:has([class*=\"i-search\"])",
+            "attribute": "aria-haspopup",
+            "value": "dialog",
+            "usage": "Describes that the Search tool button opens a dialog element."
+        },
+        {
+            "selector": ".k-pdf-viewer .k-canvas .k-search-panel",
+            "attribute": "role",
+            "value": "dialog",
+            "usage": "Describes the role of the Search panel."
+        },
+        {
+            "selector": ".k-pdf-viewer .k-canvas .k-search-panel",
+            "attribute": "aria-label",
+            "usage": "Label for the Search panel, same label as the Search tool."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Scrolls up the container.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Scrolls down the container.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Scrolls up the container.",
+            "trigger": "PageUp"
+        },
+        {
+            "behavior": "Scrolls down the container.",
+            "trigger": "PageDown"
+        },
+        {
+            "behavior": "Returns focus to the toolbar.",
+            "trigger": "Shift + Tab"
+        }
+    ],
+    "uxSpec": []
+}

@@ -1,0 +1,150 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-timedurationpicker .k-input-inner",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "The input element follows the combobox specification."
+        },
+        {
+            "selector": ".k-timedurationpicker .k-input-inner",
+            "attribute": "aria-haspopup",
+            "value": "dialog",
+            "usage": "Indicates the component has a Dialog Popup."
+        },
+        {
+            "selector": ".k-timedurationpicker .k-input-inner",
+            "attribute": "aria-expanded",
+            "usage": "Announces whether the Popup is visible or not.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-timedurationpicker .k-input-inner",
+            "attribute": "aria-controls",
+            "usage": "Points to the popup element."
+        },
+        {
+            "selector": ".k-timedurationpicker .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input needs an accessible name."
+        },
+        {
+            "selector": ".k-invalid .k-input-inner",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered only when the picker is in form and announces invalid state."
+        },
+        {
+            "selector": ".k-disabled .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the picker is disabled.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-timedurationpicker .k-input-button",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "Button element must not be focusable."
+        },
+        {
+            "selector": ".k-timedurationpicker .k-input-button",
+            "attribute": "aria-label",
+            "usage": "The button needs an accessible name."
+        },
+        {
+            "selector": ".k-timedurationpicker.k-disabled .k-button",
+            "attribute": "aria-disabled",
+            "usage": "Rendered only when the picker is disabled.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-time-list",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "The timelist elements must have listbox role."
+        },
+        {
+            "selector": ".k-time-list",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The listbox needs an accessible name."
+        },
+        {
+            "selector": ".k-time-list-wrapper .k-reset",
+            "attribute": "role",
+            "value": "none",
+            "usage": "The ul element semantic meaning must be removed."
+        },
+        {
+            "selector": ".k-time-list-wrapper .k-item",
+            "attribute": "role",
+            "value": "option",
+            "usage": "The available options must be marked as such."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Closes the popup",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Opens the popup",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Closes the popup",
+            "trigger": "Alt/Opt(Mac) + ArrowUp"
+        },
+        {
+            "behavior": "Increases the value of the time segment that is highlighted.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Decreases the value of the time segment that is highlighted.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Moves to previous time segment in the input.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Moves to next time segment in the input.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Deletes value of the time segment.",
+            "trigger": "Backspace"
+        },
+        {
+            "behavior": "Closes the popup",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Focuses previous carousel.",
+            "trigger": "Shift + Tab or ArrowLeft"
+        },
+        {
+            "behavior": "Focuses next carousel.",
+            "trigger": "Tab or ArrowRight"
+        },
+        {
+            "behavior": "Selects next value in the carousel.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Selects previous value in the carousel.",
+            "trigger": "ArrowUp"
+        }
+    ],
+    "uxSpec": []
+}

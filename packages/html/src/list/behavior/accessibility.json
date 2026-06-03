@@ -1,0 +1,35 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-list-item",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Each list item is an option in the listbox."
+        },
+        {
+            "selector": ".k-list-item",
+            "attribute": "id",
+            "usage": "ID for aria-activedescendant reference."
+        },
+        {
+            "selector": ".k-list-item",
+            "attribute": "aria-selected",
+            "usage": "Indicates the selected state of the option."
+        },
+        {
+            "selector": ".k-list-group-item",
+            "attribute": "role",
+            "value": "presentation",
+            "usage": "Group headers are presentational, not selectable options."
+        },
+        {
+            "selector": ".k-list-item-icon",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Decorative icons are hidden from assistive technology."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

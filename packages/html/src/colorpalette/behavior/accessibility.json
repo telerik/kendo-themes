@@ -1,0 +1,94 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-colorpalette",
+            "attribute": "role",
+            "value": "grid",
+            "usage": "The focusable wrapper announces its role as a grid."
+        },
+        {
+            "selector": ".k-colorpalette",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The component needs an accessible name including the currently selected value."
+        },
+        {
+            "selector": ".k-colorpalette",
+            "attribute": "aria-activedescendant",
+            "usage": "Points to the focused cell in the table."
+        },
+        {
+            "selector": ".k-colorpalette",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-colorpalette.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the ColorPalette is disabled."
+        },
+        {
+            "selector": ".k-colorpalette-table",
+            "attribute": "role",
+            "usage": "Negates the default role of the table element.",
+            "value": [
+                "none",
+                "presentation"
+            ]
+        },
+        {
+            "selector": ".k-colorpalette-table>tbody>tr",
+            "attribute": "role",
+            "value": "row",
+            "usage": "Required as the semantic role of the parent table has been removed."
+        },
+        {
+            "selector": ".k-colorpalette-tile",
+            "attribute": "role",
+            "value": "gridcell",
+            "usage": "Required as the semantic role of the parent table has been removed."
+        },
+        {
+            "selector": ".k-colorpalette-tile",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "The text representation of the color value for the current cell."
+        },
+        {
+            "selector": ".k-colorpalette-tile.k-selected",
+            "attribute": "aria-selected",
+            "value": "true",
+            "usage": "Present on the currently selected cell."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses the next cell below.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Focuses the next cell above.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Focuses the next cell on the right.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Focuses the next cell on the left.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Selects the color from the currently focused cell.",
+            "trigger": "Enter"
+        }
+    ],
+    "uxSpec": []
+}

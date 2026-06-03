@@ -1,0 +1,81 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "Announces the dropdown tree element."
+        },
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "aria-haspopup",
+            "value": "tree",
+            "usage": "Indicates the presence of a tree popup."
+        },
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "aria-expanded",
+            "usage": "Announces the popup visibility state."
+        },
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the dropdown tree."
+        },
+        {
+            "selector": ".k-dropdowntree",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-dropdowntree.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the dropdown tree is disabled."
+        },
+        {
+            "selector": ".k-dropdowntree .k-input-button",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the dropdown button."
+        },
+        {
+            "selector": ".k-dropdowntree .k-input-button",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "The button must not be focusable."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Selects the next available item.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Selects the previous available item.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Opens the popup.",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "`Closes the popup.",
+            "trigger": "Alt/Opt(Mac) + ArrowUp or Escape"
+        },
+        {
+            "behavior": "Selects and confirms the focused item.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Clears the value when the popup is not open.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Closes the actionsheet and focuses the next focusable element.",
+            "trigger": "Tab"
+        }
+    ],
+    "uxSpec": []
+}

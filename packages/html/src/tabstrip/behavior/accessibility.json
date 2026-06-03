@@ -1,0 +1,92 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-tabstrip-items",
+            "attribute": "role",
+            "value": "tablist",
+            "usage": "Indicates the tablist role for the ul element of the TabStrip."
+        },
+        {
+            "selector": ".k-tabstrip.k-tabstrip-left .k-tabstrip-items,.k-tabstrip.k-tabstrip-right .k-tabstrip-items",
+            "attribute": "aria-orientation",
+            "value": "vertical",
+            "usage": "Indicates the orientation of the tablist container element. Rendered only when vertical, as tablist defaults to horizontal."
+        },
+        {
+            "selector": ".k-tabstrip-item",
+            "attribute": "role",
+            "value": "tab",
+            "usage": "The tab li element."
+        },
+        {
+            "selector": ".k-tabstrip .k-tabstrip-item.k-active",
+            "attribute": "aria-selected",
+            "value": "true",
+            "usage": "Announces the selected state of the tab."
+        },
+        {
+            "selector": ".k-tabstrip .k-tabstrip-item.k-active",
+            "attribute": "aria-controls",
+            "usage": "Announces the relation between the panel and active tab."
+        },
+        {
+            "selector": ".k-tabstrip-content",
+            "attribute": "role",
+            "value": "tabpanel",
+            "usage": "The content div of the tab."
+        },
+        {
+            "selector": ".k-tabstrip-content",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Only if the component implements a feature to control whether the content should be persisted."
+        },
+        {
+            "selector": ".k-tabstrip-content",
+            "attribute": "aria-labelledby",
+            "usage": "Refers to the tab element that controls the panel."
+        },
+        {
+            "selector": ".k-tabstrip-scrollable .k-button",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Scroll buttons are hidden from assistive technologies."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Activates the previous/next tab (vertical orientation). Navigation wraps — when end is reached the first tab is focused, when start is reached the last tab is focused.",
+            "trigger": "ArrowUp or ArrowDown"
+        },
+        {
+            "behavior": "Activates the previous/next tab (horizontal orientation). Navigation wraps — when end is reached the first tab is focused, when start is reached the last tab is focused.",
+            "trigger": "ArrowLeft or ArrowRight"
+        },
+        {
+            "behavior": "Moves focus to the content of the active tab. Roving tabindex — only the active tab has tabindex=0, remaining tabs have tabindex=-1.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Moves focus back to the active tab from the panel.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Activates the focused tab (when automatic selection is disabled).",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Moves focus to and activates the first tab.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Moves focus to and activates the last tab.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Removes the focused tab from the tab list.",
+            "trigger": "Delete or Backspace"
+        }
+    ],
+    "uxSpec": []
+}

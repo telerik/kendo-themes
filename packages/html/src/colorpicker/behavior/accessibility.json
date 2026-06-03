@@ -1,0 +1,99 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "The focusable element should have role combobox (input with popup)."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The component needs an accessible name including the currently selected value."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "aria-haspopup",
+            "value": "dialog",
+            "usage": "Indicates the component has a Dialog Popup."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "aria-expanded",
+            "usage": "Announces the visibility state of the popup.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "aria-controls",
+            "usage": "Points to the popup element."
+        },
+        {
+            "selector": ".k-colorpicker",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element must be focusable."
+        },
+        {
+            "selector": ".k-colorpicker.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the picker is disabled."
+        },
+        {
+            "selector": ".k-colorpicker.k-disabled .k-button",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the picker is disabled.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-colorgradient",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "The inner ColorGradient must be removed from the page tab sequence."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Opens pop up",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Opens pop up",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Closes popup",
+            "trigger": "Alt/Opt(Mac) + ArrowUp or Escape"
+        },
+        {
+            "behavior": "Closes Popup and moves focus back to k-colorpicker element.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Navigates to the next focusable element in the Popup. If current focus is on the last element, moves focus to the first focusable item in the Popup.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Navigates to the previous focusable element in the Popup. If current focus is on the first element, moves focus to the last focusable item in the Popup.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "For button items, executes the currently focused button action.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "If any of the colorgradient elements are currently focused, bring focus back to the k-colorpicker element.",
+            "trigger": "Escape"
+        }
+    ],
+    "uxSpec": []
+}

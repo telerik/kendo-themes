@@ -1,0 +1,149 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-smart-box .k-input-inner",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "Announces the combobox role for the SmartBox input."
+        },
+        {
+            "selector": ".k-smart-box .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "Provides an accessible label for the SmartBox (e.g., \"AI-powered search\")."
+        },
+        {
+            "selector": ".k-smart-box .k-input-inner",
+            "attribute": "aria-expanded",
+            "usage": "Indicates whether the suggestion popup is currently visible."
+        },
+        {
+            "selector": ".k-smart-box .k-input-inner",
+            "attribute": "aria-haspopup",
+            "value": "listbox",
+            "usage": "Indicates that the SmartBox has a popup listbox with suggestions."
+        },
+        {
+            "selector": ".k-smart-box .k-input-inner",
+            "attribute": "aria-controls",
+            "usage": "References the ID of the popup listbox element when the popup is open."
+        },
+        {
+            "selector": ".k-smart-box .k-input-inner",
+            "attribute": "aria-autocomplete",
+            "usage": "Indicates the autocomplete behavior of the input field."
+        },
+        {
+            "selector": ".k-smart-box .k-input-inner",
+            "attribute": "aria-activedescendant",
+            "usage": "When the popup is open and keyboard navigation is active, references the ID of the currently focused list item."
+        },
+        {
+            "selector": ".k-smart-box .k-input-prefix .k-icon",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Decorative icons in the prefix area are hidden from screen readers."
+        },
+        {
+            "selector": ".k-smart-box .k-input-suffix .k-button",
+            "attribute": "aria-label",
+            "usage": "Suffix buttons must have accessible labels describing their function (e.g., \"Start voice input\", \"Send prompt\")."
+        },
+        {
+            "selector": ".k-smart-box .k-smart-box-send",
+            "attribute": "aria-label",
+            "usage": "The send button must be labelled to indicate its current action (e.g., \"Send\" or \"Stop processing\")."
+        },
+        {
+            "selector": ".k-smart-box .k-smart-box-send.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Indicates the button is disabled when there is no input or processing is not active.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-smart-box .k-smart-box-send.k-processing",
+            "attribute": "aria-pressed",
+            "value": "true",
+            "usage": "Indicates that processing is in progress. The button changes function to stop processing."
+        },
+        {
+            "selector": "[data-suggestions-status]",
+            "attribute": "aria-live",
+            "value": "polite",
+            "usage": "Use a visually hidden live region to announce status changes."
+        },
+        {
+            "selector": "[data-suggestions-status]",
+            "attribute": "aria-atomic",
+            "value": "true",
+            "usage": "Determines whether the entire region is announced on updates."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Opens the suggestion popup if closed, or moves focus to the next suggestion in the list.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Opens the suggestion popup if closed, or moves focus to the previous suggestion in the list.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Selects the currently highlighted suggestion (if any) and submits the input.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Closes the suggestion popup if open, or clears the input field.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "When the popup is open, moves focus to the first suggestion in the list.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "When the popup is open, moves focus to the last suggestion in the list.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Opens the suggestion popup (alternative method).",
+            "trigger": "Alt + ArrowDown"
+        },
+        {
+            "behavior": "Closes the suggestion popup (alternative method).",
+            "trigger": "Alt + ArrowUp"
+        },
+        {
+            "behavior": "Triggers a click action on the button (e.g., start voice input, send input, stop processing).",
+            "trigger": "Enter or Space"
+        },
+        {
+            "behavior": "Moves focus to the next suggestion in the list.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Moves focus to the previous suggestion in the list.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Moves focus to the first suggestion in the list.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Moves focus to the last suggestion in the list.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Selects the focused suggestion and closes the popup.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Closes the popup and returns focus to the input field.",
+            "trigger": "Escape"
+        }
+    ],
+    "uxSpec": []
+}

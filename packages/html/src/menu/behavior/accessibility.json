@@ -1,0 +1,143 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-menu:not(.k-context-menu)",
+            "attribute": "role",
+            "value": "menubar",
+            "usage": "Announces the Menu menubar role."
+        },
+        {
+            "selector": ".k-menu.k-menu-vertical",
+            "attribute": "aria-orientation",
+            "value": "vertical",
+            "usage": "Announces the Menu orientation when vertical."
+        },
+        {
+            "selector": ".k-menu-item",
+            "attribute": "role",
+            "value": "menuitem",
+            "usage": "Announces the Menu item role."
+        },
+        {
+            "selector": ".k-menu-item",
+            "attribute": "aria-haspopup",
+            "value": "menu",
+            "usage": "Indicates a popup menu is associated with the item."
+        },
+        {
+            "selector": ".k-menu-item",
+            "attribute": "aria-expanded",
+            "usage": "Indicates whether the submenu is expanded.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-menu-item.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Informs assistive technologies that a Menu item is disabled."
+        },
+        {
+            "selector": ".k-menu-expand-arrow",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Expand arrow elements are hidden from assistive technologies."
+        },
+        {
+            "selector": ".k-menu-popup .k-menu-group",
+            "attribute": "role",
+            "value": "menu",
+            "usage": "The role of the nested menu displayed in a popup."
+        },
+        {
+            "selector": ".k-menu-scroll-button",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "Scroll buttons are removed from the tab sequence."
+        },
+        {
+            "selector": ".k-menu-scroll-button",
+            "attribute": "aria-label",
+            "usage": "Scroll buttons have an accessible label."
+        },
+        {
+            "selector": ".k-menu-item.k-focus",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The focused item has tabindex 0."
+        },
+        {
+            "selector": ".k-menu-item",
+            "attribute": "aria-controls",
+            "value": "ul.k-menu-group id",
+            "usage": "Points to the ID of the submenu. Only present when the item controls a submenu element."
+        },
+        {
+            "selector": ".k-menu-popup .k-menu-group",
+            "attribute": "id",
+            "usage": "Each nested menu has a deterministic id linked to the parent aria-controls."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "(For root items) Opens the item and focuses the last child.; (For child items) Focuses the previous item.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "(For root items) Opens the item and focuses the first child.; (For child items) Focuses the next item.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "(For root items) Focuses the previous item.; (For child items) For direct children of a root item, focuses and opens the previous root item. Otherwise, closes and focuses the parent.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "(For root items) Focuses the next item.; (For child items) If the item has children, opens the item and focuses the first child. Otherwise, focuses and opens the next root item.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Focuses the first item.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Focuses the last item.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Selects the focused item. If the item has children, opens the item and focuses the first child. If the item does not have children and has a URL, navigates to the specified URL.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Selects the focused item. If the item has children, opens the item and focuses the first child. If the item does not have children and has a URL, navigates to the specified URL.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "(For child items) Closes and focuses the parent.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Focuses the next item with text starting with the character.",
+            "trigger": "Alphanumeric character"
+        },
+        {
+            "behavior": "Focuses the previous item.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Focuses the next item.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "(For root items) opens the item and focuses the last child.; (For child items) closes and focuses the parent.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "If the item has children, opens the item and focuses the first child. For child items without children, focuses and opens the next root item.",
+            "trigger": "ArrowRight"
+        }
+    ],
+    "uxSpec": []
+}

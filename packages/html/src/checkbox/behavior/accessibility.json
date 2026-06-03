@@ -1,0 +1,63 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-checkbox",
+            "attribute": "role",
+            "value": "checkbox",
+            "usage": "Announces the checkbox role of the element. For native checkboxes, type=\"checkbox\" is used instead."
+        },
+        {
+            "selector": ".k-checkbox",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input requires an accessible name to which it will be assigned."
+        },
+        {
+            "selector": ".k-checkbox",
+            "attribute": "aria-checked",
+            "usage": "For native checkboxes the checked state is handled by the browser. aria-checked is used for custom implementations.",
+            "value": [
+                "true",
+                "false",
+                "mixed"
+            ],
+            "nativeAttribute": "checked"
+        },
+        {
+            "selector": ".k-checkbox",
+            "attribute": "aria-describedby",
+            "usage": "Points to the hint or error message for the checkbox."
+        },
+        {
+            "selector": ".k-checkbox",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "For native checkboxes use the HTML disabled attribute. aria-disabled for custom implementations.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-invalid, .ng-invalid",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered only when the CheckBox is in a form and announces the invalid state."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Toggles the checked state. Regardless of the indeterminate state, the key always considers the `Value` of the CheckBox.",
+            "trigger": "Space"
+        },
+        {
+            "trigger": "Shift + Tab",
+            "behavior": "Moves focus to the previous checkbox."
+        },
+        {
+            "trigger": "ArrowDown or ArrowRight",
+            "behavior": "Moves focus to the next checkbox."
+        }
+    ],
+    "uxSpec": []
+}

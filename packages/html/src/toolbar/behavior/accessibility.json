@@ -1,0 +1,134 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-toolbar",
+            "attribute": "role",
+            "value": "toolbar",
+            "usage": "The component role."
+        },
+        {
+            "selector": ".k-toolbar",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "Must be supplied when multiple toolbars exist."
+        },
+        {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has([class*=\"i-more-vertical\"])",
+            "attribute": "aria-haspopup",
+            "value": "menu",
+            "usage": "The overflow button opens a menu popup."
+        },
+        {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has([class*=\"i-more-vertical\"])",
+            "attribute": "aria-expanded",
+            "usage": "Announces popup visibility state.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has([class*=\"i-more-vertical\"])",
+            "attribute": "aria-controls",
+            "value": ".k-toolbar-popup .k-menu-group id",
+            "usage": "Indicates the connection between the toggle button and the menu popup."
+        },
+        {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has([class*=\"i-more-vertical\"])",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "Icon-only button must have accessible text."
+        },
+        {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "role",
+            "value": "menu",
+            "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+            "selector": ".k-toolbar-popup .k-menu-group",
+            "attribute": "aria-labelledby",
+            "value": ".k-toolbar-overflow-button id",
+            "usage": "Associates the title of the menu toggle button."
+        },
+        {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has([class*=\"i-more-horizontal\"])",
+            "attribute": "aria-expanded",
+            "usage": "Announces section popup visibility state.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has([class*=\"i-more-horizontal\"])",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "Icon-only button must have accessible text."
+        },
+        {
+            "selector": ".k-toolbar .k-toolbar-overflow-button:has([class*=\"i-more-horizontal\"])",
+            "attribute": "aria-controls",
+            "value": ".k-toolbar-popup .k-toolbar-items-list id",
+            "usage": "Indicates the connection between the toggle button and the section popup."
+        },
+        {
+            "selector": ".k-toolbar-popup .k-toolbar-items-list",
+            "attribute": "role",
+            "value": "toolbar",
+            "usage": "The role of the tools wrapper in the overflow section."
+        },
+        {
+            "selector": ".k-toolbar-popup .k-toolbar-items-list",
+            "attribute": "aria-labelledby",
+            "value": ".k-toolbar-overflow-button id",
+            "usage": "Associates the title of the section toggle button."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Moves the focus to and from the ToolBar.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Moves the focus to the next focusable element in the ToolBar. Focuses the first element if the end of the ToolBar is reached.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Moves the focus to the previous focusable element in the ToolBar. Focuses the last element if the beginning of the ToolBar is reached.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Moves the focus to the first focusable element.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Moves the focus to the last focusable element.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Clicks the currently active button or changes the state of the currently active toggleable button. If the active tool is represented by an `` element, enters the inner navigation mode of the tool.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "If the active tool is represented by an `` element and its inner navigation is active, deactivates the tool navigation and returns the focus to the ToolBar.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Opens the currently active SplitButton, DropDownButton, or CommandOverflow.",
+            "trigger": "Alt + ArrowDown"
+        },
+        {
+            "behavior": "Closes the currently active SplitButton, DropDownButton, or CommandOverflow.",
+            "trigger": "Alt + ArrowUp"
+        }
+    ],
+    "uxSpec": []
+}

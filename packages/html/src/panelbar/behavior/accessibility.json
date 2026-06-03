@@ -1,0 +1,87 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-panelbar",
+            "attribute": "role",
+            "value": "tree",
+            "usage": "The root element of the PanelBar has role tree."
+        },
+        {
+            "selector": ".k-panelbar",
+            "attribute": "aria-activedescendant",
+            "usage": "Points to the currently focused item in the PanelBar."
+        },
+        {
+            "selector": ".k-panelbar-group",
+            "attribute": "role",
+            "value": "group",
+            "usage": "The ul element that wraps child nodes."
+        },
+        {
+            "selector": ".k-panelbar-item:not(.k-expanded) > .k-panelbar-group",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Hides the group element from assistive technologies when its parent is not expanded."
+        },
+        {
+            "selector": ".k-panelbar-item",
+            "attribute": "role",
+            "value": "treeitem",
+            "usage": "The li element rendered for a PanelBar item."
+        },
+        {
+            "selector": ".k-panelbar-item",
+            "attribute": "aria-expanded",
+            "usage": "Announces the expanded state of the item (if expandable).",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-panelbar-item",
+            "attribute": "aria-selected",
+            "usage": "Announces the selected state of the item.",
+            "value": [
+                "true",
+                "false"
+            ]
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses the previous PanelBar item. If no previous item is available, focuses the last item.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Focuses the next PanelBar item. If no next item is available, focuses the first item.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Collapses an expanded item. If the item is collapsed, focuses its parent.",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Expands a collapsed item. If the item is expanded, focuses its first child node.",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Moves focus to the first item in the PanelBar without expanding or collapsing an item.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Moves focus to the last item in the PanelBar that is focusable without expanding an item.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Selects the focused item and toggles the item if it is expandable. It also triggers its action (click or opening url).",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Selects the focused item and toggles the item if it is expandable. It also triggers its action (click or opening url).",
+            "trigger": "Space"
+        }
+    ],
+    "uxSpec": []
+}

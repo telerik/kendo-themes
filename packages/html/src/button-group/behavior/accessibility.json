@@ -1,0 +1,37 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-button-group:not(.k-split-button)",
+            "attribute": "role",
+            "value": "group",
+            "usage": "Sets the proper role for the group of buttons."
+        },
+        {
+            "selector": ".k-button-group.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "The attribute is rendered only when the entire button group is disabled."
+        },
+        {
+            "selector": ".k-button-group:not(.k-split-button):not(.k-scheduler-navigation):not(.k-zoom-control) .k-button",
+            "attribute": "aria-pressed",
+            "usage": "Specifies the current state of the ButtonGroup. Only the selected button within the group will have this attribute set to true."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses the next button in the group. If the focus is on the last button, focuses the next focusable element on the page.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Focuses the previous button in the group. If the focus is on the first button, focuses the previous focusable element before the ButtonGorup.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Triggers a click action on the button.",
+            "trigger": "Enter or Space"
+        }
+    ],
+    "uxSpec": []
+}

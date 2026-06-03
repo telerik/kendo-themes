@@ -1,0 +1,67 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "role",
+            "value": "button",
+            "usage": "Omitted if the <button> DOM element is used.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "aria-label",
+            "usage": "The attribute must be present when no text is initially visible in the button."
+        },
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "aria-expanded",
+            "usage": "Announces the state of the popup visibility.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "aria-controls",
+            "value": ".k-menu-group id",
+            "usage": "Points to the popup element. Builds a relationship between the button and the popup."
+        },
+        {
+            "selector": ".k-split-button-arrow",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "The arrow button is removed from the tab sequence."
+        },
+        {
+            "selector": ".k-split-button-arrow.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the button is disabled."
+        },
+        {
+            "selector": ".k-menu-group",
+            "attribute": "role",
+            "value": "list",
+            "usage": "Announces the list role of the popup."
+        },
+        {
+            "selector": ".k-menu-item",
+            "attribute": "role",
+            "value": "listitem",
+            "usage": "Announces the listitem role of the popup items."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Clicks (activates) the main button action.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Clicks (activates) the main button action.",
+            "trigger": "Space"
+        }
+    ],
+    "uxSpec": []
+}

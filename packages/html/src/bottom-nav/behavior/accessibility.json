@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-bottom-nav",
+            "attribute": "role",
+            "value": "navigation",
+            "usage": "The landmark role navigation must be assigned to the bottom navigation.",
+            "nativeElement": "nav"
+        },
+        {
+            "selector": ".k-bottom-nav-item",
+            "attribute": "role",
+            "value": "link",
+            "usage": "Associate the link purpose of the bottom navigation items.",
+            "nativeElement": "a"
+        },
+        {
+            "selector": ".k-bottom-nav-item.k-selected",
+            "attribute": "aria-current",
+            "value": "true",
+            "usage": "Indicates the selected navigation item."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses previous link.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Focuses next link.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Activates the currently focused link.",
+            "trigger": "Space or Enter"
+        }
+    ],
+    "uxSpec": []
+}

@@ -1,0 +1,146 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "role",
+            "value": "toolbar",
+            "usage": "The toolbar is a collection of command buttons and inputs."
+        },
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "aria-label",
+            "usage": "Clarifies the purpose of the toolbar."
+        },
+        {
+            "selector": ".k-grid-toolbar",
+            "attribute": "aria-controls",
+            "value": ".k-grid-aria-root id",
+            "usage": "Points to the id of the element with role=treegrid."
+        },
+        {
+            "selector": ".k-property-grid .k-grid-aria-root",
+            "attribute": "role",
+            "value": "treegrid",
+            "usage": "Sets the proper role for the PropertyGrid component."
+        },
+        {
+            "selector": ".k-grid-aria-root",
+            "attribute": "aria-colcount",
+            "usage": "The total number of columns."
+        },
+        {
+            "selector": ".k-grid-aria-root",
+            "attribute": "aria-rowcount",
+            "usage": "The total number of rows in the table."
+        },
+        {
+            "selector": ".k-grid-content>table",
+            "attribute": "role",
+            "value": "none",
+            "usage": "Negates the default semantic role of the <table> element."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody",
+            "attribute": "role",
+            "value": "rowgroup",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)",
+            "attribute": "role",
+            "value": "row",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)",
+            "attribute": "aria-rowindex",
+            "usage": "Row number."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)>td",
+            "attribute": "role",
+            "value": "gridcell",
+            "usage": "Required as the owner <table> element has its semantic role removed."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)>td",
+            "attribute": "aria-colindex",
+            "usage": "Col number."
+        },
+        {
+            "selector": ".k-grid-content>table>tbody>tr:not(.k-hidden)",
+            "attribute": "aria-expanded",
+            "usage": "Set on the currently expanded row(s)."
+        },
+        {
+            "selector": ".k-treelist-toggle[class*=\"i-chevron-down\"],.k-treelist-toggle[class*=\"i-chevron-right\"]",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Removes the expand/collapse icon from the accessibility tree."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Moves focus one cell to the right (if any).",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Moves focus one cell to the left (if any).",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Moves focus one cell down (if any).",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Moves focus one cell up (if any).",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "When the grid is in InCell EditMode, then EditMode is activated. If the cell contains focusable elements, focus moves to the first focusable element inside.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Moves focus to the first cell in the row that contains focus.",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Moves focus to the last cell in the row that contains focus.",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Moves focus to the first (top-left) data cell in the PropertyGrid.",
+            "trigger": "Control/Cmd(Mac) + Home"
+        },
+        {
+            "behavior": "Moves focus to the last cell in the last row of the PropertyGrid.",
+            "trigger": "Control/Cmd(Mac) + End"
+        },
+        {
+            "behavior": "Collapses the currently focused item.",
+            "trigger": "Alt/Opt(Mac) + ArrowLeft"
+        },
+        {
+            "behavior": "Expands the currently focused item.",
+            "trigger": "Alt/Opt(Mac) + ArrowRight"
+        },
+        {
+            "behavior": "Moves to the next editor in the row (closing current editor). If focus is already on the last editable cell on the row, focus is moved to the first editable cell on the next row, and it's editor is opened.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Moves to the previous editor in the row (closing current editor). If focus is already on the first editable cell on the row, focus is moved to the last editable cell on the previous row, and it's editor is opened.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Commits changes for the edited item, and moves focus back to the edited cell.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Cancels the edit. The focus goes to the current cell.",
+            "trigger": "Escape"
+        }
+    ],
+    "uxSpec": []
+}

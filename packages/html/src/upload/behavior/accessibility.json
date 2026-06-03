@@ -1,0 +1,96 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-upload .k-upload-button",
+            "attribute": "aria-disabled",
+            "usage": "Announces the disabled state of the upload button."
+        },
+        {
+            "selector": ".k-upload .k-upload-button",
+            "attribute": "aria-controls",
+            "usage": "Creates the relationship between the button and the list of selected files when the list is present."
+        },
+        {
+            "selector": ".k-upload input",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "Assures that the input element inside the upload is not focusable."
+        },
+        {
+            "selector": ".k-upload input",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "The input needs to be hidden from screen readers."
+        },
+        {
+            "selector": ".k-upload-files",
+            "attribute": "role",
+            "value": "list",
+            "usage": "Explicitly sets the UL role to list."
+        },
+        {
+            "selector": ".k-upload-files",
+            "attribute": "id",
+            "usage": "Unique and deterministic id linked to the button aria-controls attribute."
+        },
+        {
+            "selector": ".k-upload-files .k-file",
+            "attribute": "role",
+            "value": "listitem",
+            "usage": "Explicitly sets the LI role to listitem."
+        },
+        {
+            "selector": ".k-upload .k-file .k-file-validation-message",
+            "attribute": "aria-live",
+            "value": "polite",
+            "usage": "Announces the change in the upload status of the file."
+        },
+        {
+            "selector": ".k-upload .k-upload-actions .k-upload-action",
+            "attribute": "aria-label",
+            "usage": "Provides accessible names for the file action buttons."
+        },
+        {
+            "selector": ".k-upload .k-upload-actions .k-upload-action",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "The list file action buttons are not focusable elements."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Switches focus between the Select File Button, the list of selected files, and the action buttons (Cancel, Upload) after the file list.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Opens the Select file dialog if the Select files button is focused.",
+            "trigger": "Space or Enter"
+        },
+        {
+            "behavior": "Highlights the next file in the file list (if such exists) when a file list item is focused.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Highlights the previous file in the file list (if such exists) when a file list item is focused.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Retries the upload of the failed file when the focus is on a file list item or starts the file upload for a valid file.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Cancels the upload of the highlighted file when the focus is on a file list item",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "When Chunk upload is enabled Start or Pause the highlighted file upload",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Removes the highlighted file when the focus is on a file list item. Focus is moved to the next file (if present), previous file (if there is no next and there is previous), or is returned to the Select Files button if the last file from the list is deleted.",
+            "trigger": "Delete"
+        }
+    ],
+    "uxSpec": []
+}

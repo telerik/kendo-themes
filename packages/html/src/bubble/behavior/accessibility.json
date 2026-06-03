@@ -1,0 +1,33 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-bubble",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The Chat bubble must be focusable."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": "role",
+            "value": "button",
+            "usage": "The expandable indicator must have an appropriate role."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "The expandable indicator must be properly labelled."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The expandable indicator must be part of the page tabsequence."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

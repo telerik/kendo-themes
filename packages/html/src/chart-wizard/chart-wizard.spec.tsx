@@ -4,6 +4,7 @@ import { Window, KendoWindowProps } from '../window';
 
 import { KendoComponent } from '../_types/component';
 import { CHART_WIZARD_FOLDER_NAME, CHART_WIZARD_MODULE_NAME } from './constants';
+import a11ySpec from './behavior/accessibility.json';
 export const CHARTWIZARD_CLASSNAME = `k-chart-wizard`;
 
 const states = [];
@@ -54,9 +55,8 @@ ChartWizard.folderName = CHART_WIZARD_FOLDER_NAME;
  * Each sub-component implements its own ARIA spec.
  * No custom rules are needed at the ChartWizard level.
  */
-ChartWizard.ariaSpec = {
-    selector: '.k-chart-wizard',
-    rules: []
-};
+ChartWizard.ariaSpec = a11ySpec.ariaSpec;
+ChartWizard.kbSpec = a11ySpec.kbSpec;
+ChartWizard.uxSpec = a11ySpec.uxSpec;
 
 export default ChartWizard;

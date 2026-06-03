@@ -1,0 +1,142 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-listbox .k-list-ul",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "Specifies the role of the ListBox list element."
+        },
+        {
+            "selector": ".k-listbox .k-list-ul",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "Adds a label to the list element of the ListBox."
+        },
+        {
+            "selector": ".k-listbox .k-list-item",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Specifies the role of the ListBox item element."
+        },
+        {
+            "selector": ".k-listbox .k-list-item",
+            "attribute": "aria-selected",
+            "usage": "Set to true if the item is selected.",
+            "value": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "selector": ".k-listbox .k-list-item",
+            "attribute": "tabindex",
+            "usage": "The focused listbox item should have tabindex 0, all others -1."
+        },
+        {
+            "selector": ".k-listbox-actions",
+            "attribute": "role",
+            "value": "toolbar",
+            "usage": "The toolbar is a collection of command buttons."
+        },
+        {
+            "selector": ".k-listbox-actions",
+            "attribute": "aria-label",
+            "usage": "Clarifies the purpose of the toolbar."
+        },
+        {
+            "selector": ".k-listbox-actions",
+            "attribute": "aria-controls",
+            "usage": "Points to the id of the listbox element being controlled."
+        },
+        {
+            "selector": ".k-listbox-actions .k-button",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "All buttons in the toolbar must have labels."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses the ListBox toolbar (the last focused or the first button in it).",
+            "trigger": "F10"
+        },
+        {
+            "behavior": "Selects the focused ListBox Item",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Selects the previous item.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Selects the next item.",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Selects or deselects an item.",
+            "trigger": "Control/Cmd(Mac) + Space"
+        },
+        {
+            "behavior": "Adds the previous item to the selected items.",
+            "trigger": "Shift + ArrowUp"
+        },
+        {
+            "behavior": "Adds the next item to the selected items.",
+            "trigger": "Shift + ArrowDown"
+        },
+        {
+            "behavior": "Moves the focus to the previous item.",
+            "trigger": "Control/Cmd(Mac) + ArrowUp"
+        },
+        {
+            "behavior": "Moves the focus to the next item.",
+            "trigger": "Control/Cmd(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Deletes the selected items.",
+            "trigger": "Delete"
+        },
+        {
+            "behavior": "Adds the selected items to the connected ListBox.",
+            "trigger": "Control/Cmd(Mac) + ArrowRight"
+        },
+        {
+            "behavior": "Adds the selected items from the connected ListBox to the current one.",
+            "trigger": "Control/Cmd(Mac) + ArrowLeft"
+        },
+        {
+            "behavior": "Shifts the selected items upwards.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowUp"
+        },
+        {
+            "behavior": "Shifts the selected items downwards.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowDown"
+        },
+        {
+            "behavior": "Transfers all items to the connected ListBox.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowRight"
+        },
+        {
+            "behavior": "Transfers all items from the connected ListBox.",
+            "trigger": "Control/Cmd(Mac) + Shift + ArrowLeft"
+        },
+        {
+            "behavior": "Focuses the next button in the toolbar.",
+            "trigger": "ArrowRight or ArrowDown"
+        },
+        {
+            "behavior": "Focuses the previous button in the toolbar.",
+            "trigger": "ArrowLeft or ArrowUp"
+        },
+        {
+            "behavior": "Executes the currenly focused button command if enabled.",
+            "trigger": "Enter"
+        }
+    ],
+    "uxSpec": []
+}

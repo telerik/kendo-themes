@@ -1,0 +1,12 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-animation-container",
+            "attribute": "role",
+            "usage": "Container gets role=\"region\" when appended to document body. Popup is a building block — ARIA semantics come from consuming components."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

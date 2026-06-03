@@ -1,0 +1,13 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-filemanager-preview",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The element must be focusable, so that its content would be communicated to the users."
+        }
+    ],
+    "uxSpec": [],
+    "kbSpec": []
+}

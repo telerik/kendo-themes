@@ -1,0 +1,86 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-otp",
+            "attribute": "role",
+            "value": "group",
+            "usage": "Sets the proper role for the OTP."
+        },
+        {
+            "selector": ".k-otp > input",
+            "attribute": "type",
+            "value": "hidden",
+            "usage": "The hidden input holding the OTP inputs value."
+        },
+        {
+            "selector": ".k-otp > input",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "Hides the hidden input from assistive technologies."
+        },
+        {
+            "selector": ".k-otp .k-otp-input > .k-input-inner",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "The input needs an accessible name to be assigned to it."
+        },
+        {
+            "selector": ".k-otp .k-otp-input > .k-input-inner",
+            "attribute": "autocomplete",
+            "value": "off",
+            "usage": "Sets the default autocomplete for the input."
+        },
+        {
+            "selector": ".k-otp .k-otp-input > .k-input-inner",
+            "attribute": "aria-describedby",
+            "usage": "Points to the hint or error message for the OTP inputs."
+        },
+        {
+            "selector": ".k-otp.k-invalid .k-otp-input > .k-input-inner, .k-otp.ng-invalid .k-otp-input > .k-input-inner",
+            "attribute": "aria-invalid",
+            "value": "true",
+            "usage": "Rendered only when the OTP is in a form and announces the invalid state."
+        },
+        {
+            "selector": ".k-otp.k-disabled .k-otp-input > .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered only when the OTP is disabled.",
+            "nativeAttribute": "disabled"
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Sets the value in the input and moves the focus to the next focusable input in the OTP. (if any)",
+            "trigger": "Typing in the input"
+        },
+        {
+            "behavior": "Focuses the next input in the OTP. If the focus is on the last input, focuses the next focusable element on the page.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Focuses the previous input in the OTP. If the focus is on the first input, focuses the previous focusable element before the OTP.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Moves the focus to the next focusable input in the OTP. (if any)",
+            "trigger": "ArrowRight"
+        },
+        {
+            "behavior": "Moves the focus to the previous focusable input in the OTP. (if any)",
+            "trigger": "ArrowLeft"
+        },
+        {
+            "behavior": "Deletes the value of the focused input and moves the focus on the previous input. (if any).",
+            "trigger": "Backspace"
+        },
+        {
+            "behavior": "Deletes the value of the focused input.",
+            "trigger": "Delete"
+        }
+    ],
+    "uxSpec": []
+}

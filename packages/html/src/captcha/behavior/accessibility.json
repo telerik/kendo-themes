@@ -1,0 +1,31 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "kbSpec": [
+        {
+            "behavior": "Navigates to the next Captcha element.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Navigates to the previous Captcha Element.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Presses the focused Captcha button.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Presses the focused Captcha button.",
+            "trigger": "Space"
+        },
+        {
+            "behavior": "Increases the Audio control volume.",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Decreases the Audio control volume.",
+            "trigger": "ArrowDown"
+        }
+    ],
+    "uxSpec": [],
+    "ariaSpec": []
+}

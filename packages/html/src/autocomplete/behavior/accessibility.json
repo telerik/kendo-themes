@@ -1,0 +1,77 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-autocomplete .k-input-inner",
+            "attribute": "role",
+            "value": "combobox",
+            "usage": "Announces the autocomplete input."
+        },
+        {
+            "selector": ".k-autocomplete .k-input-inner",
+            "attribute": "aria-haspopup",
+            "value": "listbox",
+            "usage": "Indicates the component has a listbox popup."
+        },
+        {
+            "selector": ".k-autocomplete .k-input-inner",
+            "attribute": "aria-expanded",
+            "usage": "Announces the popup visibility."
+        },
+        {
+            "selector": ".k-autocomplete .k-input-inner",
+            "attribute": "aria-label",
+            "usage": "Accessible name for the autocomplete."
+        },
+        {
+            "selector": ".k-autocomplete.k-disabled .k-input-inner",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Rendered when the autocomplete is disabled.",
+            "nativeAttribute": "disabled"
+        },
+        {
+            "selector": ".k-autocomplete-popup .k-list-content, .k-autocomplete-popup .k-list-ul",
+            "attribute": "role",
+            "value": "listbox",
+            "usage": "Popup list has listbox role."
+        },
+        {
+            "selector": ".k-autocomplete-popup .k-list-ul[role=\"listbox\"], .k-autocomplete-popup .k-list-content[role=\"listbox\"]",
+            "attribute": [
+                "aria-label",
+                "aria-labelledby"
+            ],
+            "usage": "Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby."
+        },
+        {
+            "selector": ".k-autocomplete-popup .k-list-item",
+            "attribute": "role",
+            "value": "option",
+            "usage": "Each list item is an option."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses the matched item.",
+            "trigger": "Typing in the input"
+        },
+        {
+            "behavior": "Opens the popup.",
+            "trigger": "Alt/Opt(Mac) + ArrowDown"
+        },
+        {
+            "behavior": "Closes the popup.",
+            "trigger": "Alt/Opt(Mac) + ArrowUp or Escape"
+        },
+        {
+            "behavior": "Resets the value in the input when the popup is closed.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Triggers the `change` event.",
+            "trigger": "Enter"
+        }
+    ],
+    "uxSpec": []
+}

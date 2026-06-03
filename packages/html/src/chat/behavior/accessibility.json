@@ -1,0 +1,120 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-message-list",
+            "attribute": "role",
+            "value": "log",
+            "usage": "The role of the Chat message list must imply that there is a log (list) of messages."
+        },
+        {
+            "selector": ".k-message-list",
+            "attribute": "aria-label",
+            "usage": "Announces the purpose of the Chat message list."
+        },
+        {
+            "selector": ".k-message-list",
+            "attribute": "aria-live",
+            "value": "polite",
+            "usage": "Announces new messages in the Chat message list."
+        },
+        {
+            "selector": ".k-bubble",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The Chat bubble must be focusable."
+        },
+        {
+            "selector": ".k-bubble .k-typing-indicator",
+            "attribute": "tabindex",
+            "value": "-1",
+            "usage": "The Chat bubble typing indicator should not be focusable."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": "role",
+            "value": "button",
+            "usage": "The expandable indicator must have an appropriate role."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "The expandable indicator must be properly labelled."
+        },
+        {
+            "selector": ".k-bubble-expandable-indicator",
+            "attribute": "tabindex",
+            "value": "0",
+            "usage": "The expandable indicator must be part of the page tabsequence."
+        },
+        {
+            "selector": ".k-message-reference>.k-button",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "The reference close button must be properly labelled."
+        },
+        {
+            "selector": ".k-message-reference>.k-button",
+            "attribute": "role",
+            "value": "button",
+            "usage": "The reference close button must have an appropriate role.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-prompt-box-affix>.k-button",
+            "attribute": "role",
+            "value": "button",
+            "usage": "The buttons must have appropriate role.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-prompt-box-affix>.k-button",
+            "attribute": [
+                "aria-label",
+                "title"
+            ],
+            "usage": "The buttons must be properly labelled."
+        },
+        {
+            "selector": ".k-prompt-box-affix>.k-button.k-disabled",
+            "attribute": "disabled",
+            "usage": "Announces the send action as disabled when necessary."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Selects and focuses the previous Chat bubble",
+            "trigger": "ArrowUp"
+        },
+        {
+            "behavior": "Selects and focuses the next Chat bubble",
+            "trigger": "ArrowDown"
+        },
+        {
+            "behavior": "Selects and focuses the first Chat bubble",
+            "trigger": "Home"
+        },
+        {
+            "behavior": "Selects and focuses the last Chat bubble",
+            "trigger": "End"
+        },
+        {
+            "behavior": "Triggers a click action on the element.",
+            "trigger": "Enter or Space"
+        },
+        {
+            "behavior": "Sends the message.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Start a new line in the textarea message box.",
+            "trigger": "Shift + Enter"
+        }
+    ],
+    "uxSpec": []
+}

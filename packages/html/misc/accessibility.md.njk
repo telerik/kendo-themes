@@ -1,0 +1,37 @@
+# {{ name }} Accessibility
+
+{% if ariaSpec and ariaSpec.length -%}
+## ARIA Attributes
+
+The following table lists the ARIA attributes applied to the {{ name }} component:
+
+| Selector | Attribute | Usage |
+| --- | --- | --- |
+{% for rule in ariaSpec -%}
+| `{{ rule.selector }}` | {% if rule.attribute is string %}`{{ rule.attribute }}`{% else %}`{{ rule.attribute | join("` / `") }}`{% endif %}{% if rule.nativeAttribute %} (or `{{ rule.nativeAttribute }}` natively){% endif %}{% if rule.value is string %} = `{{ rule.value }}`{% elif rule.value %} = `{{ rule.value | join("` / `") }}`{% endif %} | {{ rule.usage }} |
+{% endfor %}
+{% endif -%}
+
+{% if kbSpec and kbSpec.length -%}
+## Keyboard Navigation
+
+The following table lists the keyboard shortcuts supported by the {{ name }} component:
+
+| Trigger | Behavior |
+| --- | --- |
+{% for rule in kbSpec -%}
+| `{{ rule.trigger }}` | {{ rule.behavior }} |
+{% endfor %}
+{% endif -%}
+
+{% if uxSpec and uxSpec.length -%}
+## UX Behavior
+
+The following table describes the interaction behavior of the {{ name }} component:
+
+| Trigger | Behavior |
+| --- | --- |
+{% for rule in uxSpec -%}
+| {{ rule.trigger }} | {{ rule.behavior }} |
+{% endfor %}
+{% endif -%}

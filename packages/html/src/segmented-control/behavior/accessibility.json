@@ -1,0 +1,51 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "ariaSpec": [
+        {
+            "selector": ".k-segmented-control",
+            "attribute": "role",
+            "value": "group",
+            "usage": "Sets the proper role for the group of buttons."
+        },
+        {
+            "selector": ".k-segmented-control-button",
+            "attribute": "role",
+            "value": "button",
+            "usage": "Each button must have the appropriate button role.",
+            "nativeElement": "button"
+        },
+        {
+            "selector": ".k-segmented-control-button.k-selected",
+            "attribute": "aria-pressed",
+            "value": "true",
+            "usage": "Only the selected button within the group will have this attribute set to true."
+        },
+        {
+            "selector": ".k-segmented-control-button.k-disabled",
+            "attribute": "aria-disabled",
+            "value": "true",
+            "usage": "Indicates that the button is disabled and cannot be interacted with."
+        },
+        {
+            "selector": ".k-segmented-control-thumb",
+            "attribute": "aria-hidden",
+            "value": "true",
+            "usage": "The thumb is purely decorative and should be hidden from screen readers."
+        }
+    ],
+    "kbSpec": [
+        {
+            "behavior": "Focuses the next button in the control. If the focus is on the last button, focuses the next focusable element on the page.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Focuses the previous button in the control. If the focus is on the first button, focuses the previous focusable element before the Segmented Control.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Activates the focused button and selects it.",
+            "trigger": "Enter or Space"
+        }
+    ],
+    "uxSpec": []
+}
