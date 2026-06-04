@@ -11,6 +11,8 @@ jobs:
 
   run:
     runs-on: ubuntu-latest
+    # Phase 2 (future): switch to the pinned GHCR image for font-deterministic capture:
+    #   container: ghcr.io/telerik/kendo-visual:1
 
     strategy:
       matrix:
@@ -18,17 +20,10 @@ jobs:
 
     steps:
 
-      - name: Setup Firefox
-        run: |
-          sudo wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
-          sudo tar xJf /tmp/firefox.tar.bz2 -C /opt
-          sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
-
-      - name: Print Firefox version
-        run: firefox --version
-
       - name: Checkout branch
         uses: actions/checkout@v7
+        # Checkout provides packages/html/shared/index.html and packages/html/assets/
+        # which the capture server needs but are not in the html-dist artifact.
 
       - name: Setup node
         id: setup-node
@@ -47,16 +42,20 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
       - name: Download artifacts
         uses: actions/download-artifact@v8
         with:
           path: .tmp
 
       - name: Unpack artifacts
+        # Restores packages/html/dist (html-dist.tar) and packages/*/dist/all.css (theme tars)
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
       - name: Create screenshots
-        run: ./build/create-screenshots.sh ${{ matrix.theme }}
+        run: node scripts/capture.mjs --themes ${{ matrix.theme }} --components '*'
 
       - name: Pack screenshots
         run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
@@ -66,3 +65,4 @@ jobs:
         with:
           name: screenshots-${{ matrix.theme }}
           path: screenshots-${{ matrix.theme }}.tar
+
