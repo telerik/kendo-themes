@@ -109,7 +109,7 @@ export async function capture({
 
     async function worker() {
         const page = await browser.newPage({
-            viewport: { width: 1280, height: 720 },
+            viewport: { width: 1024, height: 768 },
             deviceScaleFactor: 1,
         });
 
