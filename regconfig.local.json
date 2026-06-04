@@ -1,0 +1,11 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "tests/_output",
+    "thresholdRate": 0.001,
+    "matchingThreshold": 0.05,
+    "enableAntialias": true,
+    "ximgdiff": { "invocationType": "client" }
+  },
+  "plugins": {}
+}
