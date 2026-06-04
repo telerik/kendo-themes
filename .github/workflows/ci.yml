@@ -36,15 +36,19 @@ jobs:
       force-render: NO
       upload-policy: conditionally
 
+  build-html:
+    name: Build HTML devkit
+    uses: ./.github/workflows/_build-html.yml
+
   create-screenshots:
     name: Create screenshots
     uses: ./.github/workflows/_create-screenshots.yml
-    needs: [ compile-themes, render-test-pages ]
+    needs: [ compile-themes, build-html ]
 
 
   visual-regression:
     name: Visual regression
-    needs: [ render-test-pages, create-screenshots ]
+    needs: [ create-screenshots ]
     uses: ./.github/workflows/_visual-regression.yml
 
 

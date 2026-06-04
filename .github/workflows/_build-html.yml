@@ -1,0 +1,45 @@
+name: Build HTML devkit
+
+on:
+  workflow_call:
+
+concurrency:
+  group: build-html-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v6
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v5
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: npm ci --no-audit --no-fund
+
+      - name: Build HTML devkit test pages
+        run: npm run build:tests
+
+      - name: Pack HTML dist
+        run: tar -cf html-dist.tar packages/html/dist
+
+      - name: Upload HTML dist
+        uses: actions/upload-artifact@v7
+        with:
+          name: html-dist
+          path: html-dist.tar

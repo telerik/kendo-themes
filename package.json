@@ -92,7 +92,8 @@
     "test:visual": "reg-suit run",
     "test:visual:save": "node ./scripts/visual-local.mjs --save",
     "test:visual:local": "node ./scripts/visual-local.mjs",
-    "test:visual:dev": "node ./scripts/visual-dev.mjs"
+    "test:visual:dev": "node ./scripts/visual-dev.mjs",
+    "test:visual:docker": "docker run --rm -v \"${PWD}:/work\" -w /work ghcr.io/telerik/kendo-visual:1 node scripts/capture.mjs --themes meridian --components '*'"
   },
   "engines": {
     "node": "^24 || ^25"
