@@ -297,6 +297,7 @@
 
 // Dataviz
 @use "./dataviz/index.scss" as *;
+@use "./diagram/_index.scss" as *;
 @use "./map/index.scss" as *;
 @use "./orgchart/index.scss" as *;
 @use "./signature/index.scss" as *;
@@ -474,6 +475,7 @@
 
     // Dataviz
     @include kendo-dataviz--styles();
+    @include kendo-diagram--styles();
     @include kendo-map--styles();
     @include kendo-orgchart--styles();
     @include kendo-signature--styles();
