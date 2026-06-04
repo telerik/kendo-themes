@@ -11,22 +11,22 @@ position: 9
 
 
 
-### `k-color-luminance`
+### `k-border-radius`
 
-Calculate the relative luminance for a color.
+Returns a CSS variable reference for a border-radius token.
 
 
 #### Syntax
 
 ```scss
-k-color-luminance($color) // => Number
+k-border-radius($key) // => String
 ```
 
 #### Parameters
 
 
-`<Color> $color`
-: The color to calculate the relative luminance for.
+`<String> $key`
+: The border-radius key from $kendo-border-radii.
 
 
 
@@ -34,162 +34,9 @@ k-color-luminance($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L574-L580
-@function k-color-luminance($color) {
-    $red: list.nth( $_linear-channel-values, k-color-red( $color ) + 1 );
-    $green: list.nth( $_linear-channel-values, k-color-green( $color ) + 1 );
-    $blue: list.nth( $_linear-channel-values, k-color-blue( $color ) + 1 );
-
-    @return .2126 * $red + .7152 * $green + .0722 * $blue;
-}
-```
-
-### `k-color-contrast-ratio`
-
-Calculates contrast ratio between two colors
-
-
-#### Syntax
-
-```scss
-k-color-contrast-ratio($background, $foreground) // => Number
-```
-
-#### Parameters
-
-
-`<Color> $background`
-: The background color
-
-`<Color> $foreground`
-: The foreground color
-
-
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L591-L596
-@function k-color-contrast-ratio($background, $foreground) {
-    $backLum: k-color-luminance( $background ) + .05;
-    $foreLum: k-color-luminance( $foreground ) + .05;
-
-    @return math.div( math.max( $backLum, $foreLum ), math.min( $backLum, $foreLum ) );
-}
-```
-
-### `k-is-dark`
-
-Checks if a color is dark
-
-
-#### Syntax
-
-```scss
-k-is-dark($color) // => Boolean
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to check
-
-
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L603-L605
-@function k-is-dark($color) {
-    @return if( k-color-luminance( $color ) < .5, true, false );
-}
-```
-
-### `k-is-light`
-
-Checks if a color is light
-
-
-#### Syntax
-
-```scss
-k-is-light($color) // => Boolean
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to check
-
-
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L612-L614
-@function k-is-light($color) {
-    @return if( k-color-luminance( $color ) < .5, false, true );
-}
-```
-
-### `k-contrast-color`
-
-Calculates the contrast ratio between a background color and a foreground color.
-If the contrast ratio is not high enough, it will return the color with the highest contrast ratio.
-
-
-#### Syntax
-
-```scss
-k-contrast-color($background, $dark, $light, $min-ratio) // => Color
-```
-
-#### Parameters
-
-
-`<Color> $background`
-: The background color
-
-`<Color> $dark`
-: The dark color to use as a fallback
-
-`<Color> $light`
-: The light color to use as a fallback
-
-`<Number> $min-ratio`
-: The minimum contrast ratio to reach
-
-
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L626-L645
-@function k-contrast-color($background, $dark, $light, $min-ratio) {
-    $foregrounds: $light, $dark, #ffffff, #000000;
-    $max-ratio: 0;
-    $max-ratio-color: null;
-
-    @each $color in $foregrounds {
-        $contrast-ratio: k-color-contrast-ratio( $background, $color );
-
-        @if ( $contrast-ratio > $min-ratio ) {
-            @return $color;
-        } @else if ( $contrast-ratio > $max-ratio ) {
-            $max-ratio: $contrast-ratio;
-            $max-ratio-color: $color;
-        }
-    }
-
-    @warn "Found no color leading to #{$min-ratio}:1 contrast ratio against #{$background}...";
-
-    @return $max-ratio-color;
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/border-radii/index.scss#L59-L61
+@function k-border-radius($key) {
+    @return var(--kendo-border-radius-#{$key});
 }
 ```
 
@@ -370,101 +217,56 @@ k-color($key) // => String
 }
 ```
 
-### `k-color-tint`
+### `k-elevation`
 
-Makes a color lighter by mixing it with white
+Returns a CSS variable reference for an elevation shadow level.
 
 
 #### Syntax
 
 ```scss
-k-color-tint($color, $level) // => Color
+k-elevation($level) // => String
 ```
 
 #### Parameters
 
 
-`<Color> $color`
-: The color to lighten
-
 `<Number> $level`
-: The amount to lighten the color
+: The elevation level key from $kendo-elevation.
 
 
-#### Examples
-
-```scss
-// Usage
-@debug k-color-tint( #f00, 1 ); // => #ff1a1a
-```
 
 
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L183-L185
-@function k-color-tint($color, $level) {
-    @return k-color-level( $color, -$level );
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/elevation/index.scss#L43-L45
+@function k-elevation($level) {
+    @return var(--kendo-elevation-#{$level});
 }
 ```
 
-### `k-color-shade`
+### `k-elevation-bg`
 
-Makes a color darker by mixing it with black
+Returns an elevated background color expression using oklch relative color syntax.
+The lightness and chroma are increased per elevation level, but only when the
+base color is in the appropriate light/dark range.
 
 
 #### Syntax
 
 ```scss
-k-color-shade($color, $level) // => Color
+k-elevation-bg($level, $color) // => String
 ```
 
 #### Parameters
 
-
-`<Color> $color`
-: The color to darken
 
 `<Number> $level`
-: The amount to darken the color
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-color-shade( #f00, 1 ); // => #e60000
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L196-L198
-@function k-color-shade($color, $level) {
-    @return k-color-level( $color, $level );
-}
-```
-
-### `k-try-shade`
-
-Shades the color in light themes and tints it in dark themes
-
-
-#### Syntax
-
-```scss
-k-try-shade($color, $level) // => Color
-```
-
-#### Parameters
-
+: The elevation level that drives lightness and chroma increase.
 
 `<Color> $color`
-: The color to shade or tint
-
-`<Number> $level`
-: The amount to shade or tint the color
+: The base background color.
 
 
 
@@ -472,167 +274,10 @@ k-try-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L206-L214
-@function k-try-shade($color, $level) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
-
-    @if $_dark-theme {
-        @return k-color-tint( $color, $level );
-    }
-
-    @return k-color-shade( $color, $level );
-}
-```
-
-### `k-try-tint`
-
-Tints the color in light themes and shades it in dark themes
-
-
-#### Syntax
-
-```scss
-k-try-tint($color, $level) // => Color
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to tint or shade
-
-`<Number> $level`
-: The amount to tint or shade the color
-
-
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L222-L230
-@function k-try-tint($color, $level) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
-
-    @if $_dark-theme {
-        @return k-color-shade( $color, $level );
-    }
-
-    @return k-color-tint( $color, $level );
-}
-```
-
-### `k-try-darken`
-
-Darkens the color in light themes and lightens it in dark themes
-
-
-#### Syntax
-
-```scss
-k-try-darken($color, $level) // => Color
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to darken or lighten
-
-`<Number> $level`
-: The amount to darken or lighten the color
-
-
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L238-L245
-@function k-try-darken($color, $level) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
-
-    @if $_dark-theme {
-        @return k-color-lighten( $color, $amount );
-    }
-    @return k-color-darken( $color, $amount );
-}
-```
-
-### `k-try-lighten`
-
-Lightens the color in light themes and darkens it in dark themes
-
-
-#### Syntax
-
-```scss
-k-try-lighten($color, $level) // => Color
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to lighten or darken
-
-`<Number> $level`
-: The amount to lighten or darken the color
-
-
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L253-L260
-@function k-try-lighten($color, $level) {
-    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
-
-    @if $_dark-theme {
-        @return k-color-darken( $color, $amount );
-    }
-    @return k-color-lighten( $color, $amount );
-}
-```
-
-### `k-rgba-to-mix`
-
-Converts a color with alpha to solid color mixed with a background color
-
-
-#### Syntax
-
-```scss
-k-rgba-to-mix($color, $bg) // => Color
-```
-
-#### Parameters
-
-
-`<Color> $color`
-: The color to convert
-
-`<Color> $bg`
-: The background color
-
-
-#### Examples
-
-```scss
-// Usage
-@debug k-rgba-to-mix( rgba( #f00, 0.5 ), #fff ); // => #ff8080
-```
-
-
-#### Source
-
-```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L271-L275
-@function k-rgba-to-mix($color, $bg) {
-    $percent: color.alpha( $color ) * 100%;
-
-    @return k-color-mix( rgba( $color, 1 ), $bg, $percent );
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/elevation/index.scss#L60-L63
+@function k-elevation-bg($level, $color) {
+    $_result: "oklch(from #{$color} calc(l + #{$level} * #{$kendo-elevation-bg-lightness-step} * clamp(0, (0.5 - l) * 99999, 1)) calc(c + #{$level} * #{$kendo-elevation-bg-chroma-step} * clamp(0, (0.5 - l) * 99999, 1)) h)";
+    @return #{$_result};
 }
 ```
 
@@ -665,7 +310,7 @@ k-color-red($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L16-L21
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L17-L22
 @function k-color-red($color) {
     @if meta.function-exists("channel", "color") {
         @return math.round(color.channel( $color, "red" ));
@@ -703,7 +348,7 @@ k-color-green($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L29-L34
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L31-L36
 @function k-color-green($color) {
     @if meta.function-exists("channel", "color") {
         @return math.round(color.channel( $color, "green" ));
@@ -741,7 +386,7 @@ k-color-blue($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L42-L47
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L45-L50
 @function k-color-blue($color) {
     @if meta.function-exists("channel", "color") {
         @return math.round(color.channel( $color, "blue" ));
@@ -779,7 +424,7 @@ k-color-hue($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L55-L60
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L59-L64
 @function k-color-hue($color) {
     @if meta.function-exists("channel", "color") {
         @return color.channel( $color, "hue" );
@@ -817,7 +462,7 @@ k-color-saturation($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L68-L73
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L73-L78
 @function k-color-saturation($color) {
     @if meta.function-exists("channel", "color") {
         @return color.channel( $color, "saturation" );
@@ -855,7 +500,7 @@ k-color-lightness($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L81-L86
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L87-L92
 @function k-color-lightness($color) {
     @if meta.function-exists("channel", "color") {
         @return color.channel( $color, "lightness" );
@@ -899,7 +544,7 @@ k-color-mix($color1, $color2, $weight) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L96-L98
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L103-L105
 @function k-color-mix($color1, $color2, $weight) {
     @return color.mix( $color1, $color2, $weight );
 }
@@ -937,7 +582,7 @@ k-color-darken($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L107-L109
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L115-L117
 @function k-color-darken($color, $amount) {
     @return color.adjust( $color, $lightness: - $amount );
 }
@@ -975,7 +620,7 @@ k-color-lighten($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L118-L120
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L127-L129
 @function k-color-lighten($color, $amount) {
     @return color.adjust( $color, $lightness: $amount );
 }
@@ -1013,7 +658,7 @@ k-color-adjust-hue($color, $degrees) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L129-L131
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L139-L141
 @function k-color-adjust-hue($color, $degrees) {
     @return color.adjust( $color, $hue: $degrees );
 }
@@ -1051,7 +696,7 @@ k-color-saturate($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L140-L142
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L151-L153
 @function k-color-saturate($color, $amount) {
     @return color.adjust( $color, $saturation: $amount );
 }
@@ -1089,9 +734,508 @@ k-color-desaturate($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L151-L153
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L163-L165
 @function k-color-desaturate($color, $amount) {
     @return color.adjust( $color, $saturation: - $amount );
+}
+```
+
+### `k-color-level`
+
+Mixes a color with white or black based on a level value.
+Negative levels tint toward white, positive levels shade toward black.
+
+
+#### Syntax
+
+```scss
+k-color-level($color, $level, $_is-dark-theme) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to adjust.
+
+`<Number> $level`
+: Shade/tint level. Negative = tint, positive = shade. Accepts numeric steps or percentages.
+
+`<Boolean> $_is-dark-theme`
+: Internal dark-theme flag, controls step size.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L174-L191
+@function k-color-level($color, $level, $_is-dark-theme) {
+    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+    $_color-level-step: if( $_dark-theme, $kendo-dark-color-level-step, $kendo-light-color-level-step );
+
+    @if ( $level == 0 ) or ( $level == 0% ) {
+        @return $color;
+    }
+
+    $base: if( $level < 0, #ffffff, #000000 );
+    $level: math.abs( $level );
+
+
+    @if ( math.unit($level) == "%" ) {
+        @return k-color-mix( $base, $color, $level );
+    }
+
+    @return k-color-mix( $base, $color, math.max( 0%, math.min( 100%, $level * $_color-level-step ) ) );
+}
+```
+
+### `k-color-tint`
+
+Makes a color lighter by mixing it with white
+
+
+#### Syntax
+
+```scss
+k-color-tint($color, $level) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to lighten
+
+`<Number> $level`
+: The amount to lighten the color
+
+
+#### Examples
+
+```scss
+// Usage
+@debug k-color-tint( #f00, 1 ); // => #ff1a1a
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L202-L204
+@function k-color-tint($color, $level) {
+    @return k-color-level( $color, -$level );
+}
+```
+
+### `k-color-shade`
+
+Makes a color darker by mixing it with black
+
+
+#### Syntax
+
+```scss
+k-color-shade($color, $level) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to darken
+
+`<Number> $level`
+: The amount to darken the color
+
+
+#### Examples
+
+```scss
+// Usage
+@debug k-color-shade( #f00, 1 ); // => #e60000
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L215-L217
+@function k-color-shade($color, $level) {
+    @return k-color-level( $color, $level );
+}
+```
+
+### `k-try-shade`
+
+Shades the color in light themes and tints it in dark themes
+
+
+#### Syntax
+
+```scss
+k-try-shade($color, $level) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to shade or tint
+
+`<Number> $level`
+: The amount to shade or tint the color
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L225-L233
+@function k-try-shade($color, $level) {
+    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+
+    @if $_dark-theme {
+        @return k-color-tint( $color, $level );
+    }
+
+    @return k-color-shade( $color, $level );
+}
+```
+
+### `k-try-tint`
+
+Tints the color in light themes and shades it in dark themes
+
+
+#### Syntax
+
+```scss
+k-try-tint($color, $level) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to tint or shade
+
+`<Number> $level`
+: The amount to tint or shade the color
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L241-L249
+@function k-try-tint($color, $level) {
+    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+
+    @if $_dark-theme {
+        @return k-color-shade( $color, $level );
+    }
+
+    @return k-color-tint( $color, $level );
+}
+```
+
+### `k-try-darken`
+
+Darkens the color in light themes and lightens it in dark themes
+
+
+#### Syntax
+
+```scss
+k-try-darken($color, $level) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to darken or lighten
+
+`<Number> $level`
+: The amount to darken or lighten the color
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L257-L264
+@function k-try-darken($color, $level) {
+    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+
+    @if $_dark-theme {
+        @return k-color-lighten( $color, $amount );
+    }
+    @return k-color-darken( $color, $amount );
+}
+```
+
+### `k-try-lighten`
+
+Lightens the color in light themes and darkens it in dark themes
+
+
+#### Syntax
+
+```scss
+k-try-lighten($color, $level) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to lighten or darken
+
+`<Number> $level`
+: The amount to lighten or darken the color
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L272-L279
+@function k-try-lighten($color, $level) {
+    $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
+
+    @if $_dark-theme {
+        @return k-color-darken( $color, $amount );
+    }
+    @return k-color-lighten( $color, $amount );
+}
+```
+
+### `k-rgba-to-mix`
+
+Converts a color with alpha to solid color mixed with a background color
+
+
+#### Syntax
+
+```scss
+k-rgba-to-mix($color, $bg) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to convert
+
+`<Color> $bg`
+: The background color
+
+
+#### Examples
+
+```scss
+// Usage
+@debug k-rgba-to-mix( rgba( #f00, 0.5 ), #fff ); // => #ff8080
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L290-L294
+@function k-rgba-to-mix($color, $bg) {
+    $percent: color.alpha( $color ) * 100%;
+
+    @return k-color-mix( rgba( $color, 1 ), $bg, $percent );
+}
+```
+
+### `k-color-luminance`
+
+Calculate the relative luminance for a color.
+
+
+#### Syntax
+
+```scss
+k-color-luminance($color) // => Number
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to calculate the relative luminance for.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L593-L599
+@function k-color-luminance($color) {
+    $red: list.nth( $_linear-channel-values, k-color-red( $color ) + 1 );
+    $green: list.nth( $_linear-channel-values, k-color-green( $color ) + 1 );
+    $blue: list.nth( $_linear-channel-values, k-color-blue( $color ) + 1 );
+
+    @return .2126 * $red + .7152 * $green + .0722 * $blue;
+}
+```
+
+### `k-color-contrast-ratio`
+
+Calculates contrast ratio between two colors
+
+
+#### Syntax
+
+```scss
+k-color-contrast-ratio($background, $foreground) // => Number
+```
+
+#### Parameters
+
+
+`<Color> $background`
+: The background color
+
+`<Color> $foreground`
+: The foreground color
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L610-L615
+@function k-color-contrast-ratio($background, $foreground) {
+    $backLum: k-color-luminance( $background ) + .05;
+    $foreLum: k-color-luminance( $foreground ) + .05;
+
+    @return math.div( math.max( $backLum, $foreLum ), math.min( $backLum, $foreLum ) );
+}
+```
+
+### `k-is-dark`
+
+Checks if a color is dark
+
+
+#### Syntax
+
+```scss
+k-is-dark($color) // => Boolean
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to check
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L622-L624
+@function k-is-dark($color) {
+    @return if( k-color-luminance( $color ) < .5, true, false );
+}
+```
+
+### `k-is-light`
+
+Checks if a color is light
+
+
+#### Syntax
+
+```scss
+k-is-light($color) // => Boolean
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The color to check
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L631-L633
+@function k-is-light($color) {
+    @return if( k-color-luminance( $color ) < .5, false, true );
+}
+```
+
+### `k-contrast-color`
+
+Calculates the contrast ratio between a background color and a foreground color.
+If the contrast ratio is not high enough, it will return the color with the highest contrast ratio.
+
+
+#### Syntax
+
+```scss
+k-contrast-color($background, $dark, $light, $min-ratio) // => Color
+```
+
+#### Parameters
+
+
+`<Color> $background`
+: The background color
+
+`<Color> $dark`
+: The dark color to use as a fallback
+
+`<Color> $light`
+: The light color to use as a fallback
+
+`<Number> $min-ratio`
+: The minimum contrast ratio to reach
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.scss#L645-L664
+@function k-contrast-color($background, $dark, $light, $min-ratio) {
+    $foregrounds: $light, $dark, #ffffff, #000000;
+    $max-ratio: 0;
+    $max-ratio-color: null;
+
+    @each $color in $foregrounds {
+        $contrast-ratio: k-color-contrast-ratio( $background, $color );
+
+        @if ( $contrast-ratio > $min-ratio ) {
+            @return $color;
+        } @else if ( $contrast-ratio > $max-ratio ) {
+            $max-ratio: $contrast-ratio;
+            $max-ratio-color: $color;
+        }
+    }
+
+    @warn "Found no color leading to #{$min-ratio}:1 contrast ratio against #{$background}...";
+
+    @return $max-ratio-color;
 }
 ```
 
@@ -1123,7 +1267,7 @@ k-when-default($default, $current) // => String | Null
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_default.scss#L11-L16
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_default.scss#L12-L17
 @function k-when-default($default, $current) {
     @if meta.type-of($current) == "list" {
     @return if(list.index($current, $default) != null, "&,", null);
@@ -1168,7 +1312,7 @@ $foo: "baz";
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_lang.scss#L12-L14
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_lang.scss#L13-L15
 @function k-if-var($var, $fallback) {
     @return if( $var != null, $var, $fallback );
 }
@@ -1207,7 +1351,7 @@ k-list-includes($list, $value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.scss#L11-L13
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.scss#L12-L14
 @function k-list-includes($list, $value) {
     @return list.index($list, $value) != null;
 }
@@ -1242,7 +1386,7 @@ k-list-reverse($list) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.scss#L21-L36
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.scss#L23-L38
 @function k-list-reverse($list) {
     $result: ();
 
@@ -1282,7 +1426,6 @@ k-map-get($map, $key) // =>
 : The key to get the value for.
 
 
-
 #### Examples
 
 ```scss
@@ -1294,7 +1437,7 @@ k-map-get($map, $key) // =>
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L10-L15
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L11-L16
 @function k-map-get($map, $key) {
     @each $key in $keys {
         $map: map.get($map, $key); // stylelint-disable-line
@@ -1335,7 +1478,7 @@ k-map-merge($map, $args) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L24-L29
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L26-L31
 @function k-map-merge($map, $args) {
     @each $arg in $args {
         $map: map.merge($map, $arg); // stylelint-disable-line
@@ -1373,7 +1516,7 @@ k-map-deep-merge($maps) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L37-L59
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L40-L62
 @function k-map-deep-merge($maps) {
     $merged: ();
 
@@ -1434,7 +1577,7 @@ k-map-set($map, $key, $value) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L69-L76
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L73-L80
 @function k-map-set($map, $key, $value) {
     @return k-map-merge(
         $map,
@@ -1474,7 +1617,7 @@ k-map-negate($map) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L84-L99
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.scss#L89-L104
 @function k-map-negate($map) {
     $_map-neg: ();
 
@@ -1530,7 +1673,7 @@ k-math-clamp($number, $min, $max) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L14-L16
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L15-L17
 @function k-math-clamp($number, $min, $max) {
     @return math.max($min, math.min($max, $number));
 }
@@ -1568,7 +1711,7 @@ k-math-pow($x, $n) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L25-L43
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L27-L45
 @function k-math-pow($x, $n) {
     $ret: 1;
 
@@ -1623,7 +1766,7 @@ k-math-round($number, $precision) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L53-L61
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L56-L64
 @function k-math-round($number, $precision) {
     @if ($precision == 0) {
         @return math.round($number);
@@ -1664,7 +1807,7 @@ k-math-strip-unit($number) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L69-L75
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.scss#L73-L79
 @function k-math-strip-unit($number) {
     @if (meta.type-of($number) == "number") and not math.unitless($number) {
         @return math.div($number, 1 * math.unit($number));
@@ -1704,7 +1847,7 @@ k-meta-is-number($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L16-L18
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L17-L19
 @function k-meta-is-number($value) {
     @return meta.type-of($value) == "number";
 }
@@ -1740,7 +1883,7 @@ k-meta-is-integer($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L29-L31
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L31-L33
 @function k-meta-is-integer($value) {
     @return k-meta-is-number($value) and k-math-round($value) == $value;
 }
@@ -1776,7 +1919,7 @@ k-meta-is-time($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L42-L44
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L45-L47
 @function k-meta-is-time($value) {
     @return k-meta-is-number($value) and string.index("ms" "s", math.unit($value)) != null;
 }
@@ -1812,7 +1955,7 @@ k-meta-is-duration($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L55-L57
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L59-L61
 @function k-meta-is-duration($value) {
     @return k-meta-is-time($value);
 }
@@ -1848,7 +1991,7 @@ k-meta-is-angle($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L68-L70
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L73-L75
 @function k-meta-is-angle($value) {
     @return k-meta-is-number($value) and string.index("deg" "rad" "grad" "turn", math.unit($value)) != null;
 }
@@ -1884,7 +2027,7 @@ k-meta-is-frequency($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L81-L83
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L87-L89
 @function k-meta-is-frequency($value) {
     @return k-meta-is-number($value) and string.index("Hz" "kHz", math.unit($value)) != null;
 }
@@ -1921,7 +2064,7 @@ k-meta-is-relative-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L96-L98
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L103-L105
 @function k-meta-is-relative-length($value) {
     @return k-meta-is-number($value) and string.index("em" "ex" "ch" "rem" "vw" "vh" "vmin" "vmax", math.unit($value)) != null;
 }
@@ -1957,7 +2100,7 @@ k-meta-is-absolute-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L109-L111
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L117-L119
 @function k-meta-is-absolute-length($value) {
     @return k-meta-is-number($value) and string.index("cm" "mm" "in" "px" "pt" "pc", math.unit($value)) != null;
 }
@@ -1993,7 +2136,7 @@ k-meta-is-percentage($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L122-L124
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L131-L133
 @function k-meta-is-percentage($value) {
     @return k-meta-is-number($value) and math.unit($value) == "%";
 }
@@ -2030,7 +2173,7 @@ k-meta-is-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L136-L138
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L146-L148
 @function k-meta-is-length($value) {
     @return k-meta-is-relative-length($value) or k-meta-is-absolute-length($value);
 }
@@ -2066,7 +2209,7 @@ k-meta-is-resolution($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L149-L151
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L160-L162
 @function k-meta-is-resolution($value) {
     @return k-meta-is-number($value) and string.index("dpi" "dpcm" "dppx", math.unit($value)) != null;
 }
@@ -2101,7 +2244,7 @@ k-meta-is-position($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L161-L163
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.scss#L173-L175
 @function k-meta-is-position($value) {
     @return k-meta-is-length($value) or k-meta-is-percentage($value) or string.index("top" "right" "bottom" "left" "center", $value) != null;
 }
@@ -2143,7 +2286,7 @@ k-string-replace($string, $search, $replace) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.scss#L30-L42
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.scss#L31-L43
 @function k-string-replace($string, $search, $replace) {
     @if meta.type-of( $string ) == number {
         $string: $string + "";
@@ -2153,6 +2296,47 @@ k-string-replace($string, $search, $replace) // => String
 
     @if $index {
         @return string.slice( $string, 1, $index - 1 ) + $replace + k-string-replace( string.slice( $string, $index + string.length( $search ) ), $search, $replace );
+    }
+
+    @return $string;
+}
+```
+
+### `k-escape-svg`
+
+URL-encodes special SVG characters in a data URI string so it can be safely embedded in CSS.
+Only processes strings that start with "data:image/svg+xml".
+
+
+#### Syntax
+
+```scss
+k-escape-svg($string) // => String
+```
+
+#### Parameters
+
+
+`<String> $string`
+: The SVG data URI string to encode.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.scss#L62-L75
+@function k-escape-svg($string) {
+    @if string.index($string, "data:image/svg+xml") {
+        @each $char, $encoded in $_kendo-svg-escaped-characters {
+            // Do not escape the url brackets
+            @if string.index($string, "url(") == 1 {
+                $string: url("#{k-string-replace(string.slice($string, 6, -3), $char, $encoded)}");
+            } @else {
+                $string: k-string-replace($string, $char, $encoded);
+            }
+        }
     }
 
     @return $string;
@@ -2182,7 +2366,7 @@ k-escape-class-name($text) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.scss#L74-L82
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.scss#L81-L89
 @function k-escape-class-name($text) {
     $_text: $text;
 
@@ -2191,6 +2375,185 @@ k-escape-class-name($text) // => String
     }
 
     @return $_text;
+}
+```
+
+### `k-easing`
+
+Returns a CSS variable reference for an easing token.
+
+
+#### Syntax
+
+```scss
+k-easing($key) // => String
+```
+
+#### Parameters
+
+
+`<String> $key`
+: The easing key from $kendo-easings.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/motion/index.scss#L181-L184
+@function k-easing($key) {
+    $easing: map.get($kendo-easings, $key);
+    @return var(--kendo-easing-#{$key});
+}
+```
+
+### `k-duration`
+
+Returns a CSS variable reference for a duration token.
+
+
+#### Syntax
+
+```scss
+k-duration($key) // => String
+```
+
+#### Parameters
+
+
+`<String> $key`
+: The duration key from $kendo-durations.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/motion/index.scss#L190-L193
+@function k-duration($key) {
+    $_duration: map.get($kendo-durations, $key);
+    @return var(--kendo-duration-#{$key});
+}
+```
+
+### `k-transition`
+
+Returns a CSS variable reference for a transition token.
+
+
+#### Syntax
+
+```scss
+k-transition($key) // => String
+```
+
+#### Parameters
+
+
+`<String> $key`
+: The transition key from $kendo-transitions.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/motion/index.scss#L199-L201
+@function k-transition($key) {
+    @return var(--kendo-transition-#{$key});
+}
+```
+
+### `k-spacing`
+
+Returns a CSS variable reference for a spacing step.
+
+
+#### Syntax
+
+```scss
+k-spacing($step) // => String
+```
+
+#### Parameters
+
+
+`<Number | String> $step`
+: The spacing step key from $kendo-spacing.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/spacing/index.scss#L56-L59
+@function k-spacing($step) {
+    $_step: k-escape-class-name( $step );
+    @return var(--kendo-spacing-#{$_step});
+}
+```
+
+### `k-translucency-bg`
+
+Returns an oklch color expression with translucency applied via a CSS variable.
+
+
+#### Syntax
+
+```scss
+k-translucency-bg($color) // => String
+```
+
+#### Parameters
+
+
+`<Color> $color`
+: The base color to apply translucency to.
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/translucency/index.scss#L7-L10
+@function k-translucency-bg($color) {
+    $_result: "oklch(from #{$color} l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))";
+    @return #{$_result};
+}
+```
+
+### `k-translucency-blur`
+
+Returns a blur filter expression scaled by a translucency level.
+
+
+#### Syntax
+
+```scss
+k-translucency-blur($level) // => String
+```
+
+#### Parameters
+
+
+`<Number> $level`
+: The blur intensity multiplier (default: 1).
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/translucency/index.scss#L19-L22
+@function k-translucency-blur($level) {
+    $_result: "blur(calc(#{$kendo-translucency-blur-base} + calc(#{$level} * #{$kendo-translucency-blur-step})))";
+    @return #{$_result};
 }
 ```
 
@@ -2223,7 +2586,7 @@ k-z-index($layer, $Number, $Balancing) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/z-index/index.scss#L28-L36
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/z-index/index.scss#L29-L37
 @function k-z-index($layer, $Number, $Balancing) {
     $layer-value: map.get($kendo-z-layers, $layer);
 
