@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.3...v14.2.0-dev.0) (2026-06-04)
+
+
+### Bug Fixes
+
+* **html:** correct scheduler templates ([d74704c](https://github.com/telerik/kendo-themes/commit/d74704c64b44f3ac8649228dae53be450a7a02d2))
+
+
+### Features
+
+* **html:** add diagram selection tool test ([a97ce8f](https://github.com/telerik/kendo-themes/commit/a97ce8ffadb51ce3706576e528cabeb6eba94166))
+
+
+
+
+
 ## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
 
 

@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.3...v14.2.0-dev.0) (2026-06-04)
+
+
+### Bug Fixes
+
+* **expansion-panel:** expander title text transform ([6bfa411](https://github.com/telerik/kendo-themes/commit/6bfa41122658695ffd37d4a9f5ca5dcc7f30698b))
+* **grid:** sticky borders have different color when states are applied ([9ee2a3e](https://github.com/telerik/kendo-themes/commit/9ee2a3e9bd2a46586f97666a93a52da0a8e71b7d))
+* **html:** correct scheduler templates ([d74704c](https://github.com/telerik/kendo-themes/commit/d74704c64b44f3ac8649228dae53be450a7a02d2))
+* **loader:** update the loader sm size in meridian ([796bec5](https://github.com/telerik/kendo-themes/commit/796bec54b7bf3097e8b4021019ca74e9ec9198ae))
+* **meridian:** prevent group footer double borders ([1c2ccd2](https://github.com/telerik/kendo-themes/commit/1c2ccd2a97f56d93f24f344ed5a48f894faf5dca))
+* remove per component scrollbar-related variables ([7108ec7](https://github.com/telerik/kendo-themes/commit/7108ec74ab619b8ee9af04d63984937466143eb0))
+* syntax issues in compiled css ([e4ee915](https://github.com/telerik/kendo-themes/commit/e4ee9153d4185c3b5d5187f822c0de26bd0aeed1))
+* update the sizing of the loading icon to match the icon size ([7b8e444](https://github.com/telerik/kendo-themes/commit/7b8e44402c379b7f5e7e725076fb9bc2758e0fe5))
+
+
+### Features
+
+* **diagram:** add diagram selection tool styles ([b321345](https://github.com/telerik/kendo-themes/commit/b3213452e870f65f771193ce0c6a962a94abbde7))
+* **html:** add diagram selection tool test ([a97ce8f](https://github.com/telerik/kendo-themes/commit/a97ce8ffadb51ce3706576e528cabeb6eba94166))
+* introduce scrollbar styles to k-body ([f9f0358](https://github.com/telerik/kendo-themes/commit/f9f035895524cfa617d75c346c80f968b97531ae))
+
+
+
+
+
 ## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
 
 

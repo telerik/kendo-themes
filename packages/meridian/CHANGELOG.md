@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.3...v14.2.0-dev.0) (2026-06-04)
+
+
+### Bug Fixes
+
+* **loader:** update the loader sm size in meridian ([796bec5](https://github.com/telerik/kendo-themes/commit/796bec54b7bf3097e8b4021019ca74e9ec9198ae))
+* **meridian:** prevent group footer double borders ([1c2ccd2](https://github.com/telerik/kendo-themes/commit/1c2ccd2a97f56d93f24f344ed5a48f894faf5dca))
+* remove per component scrollbar-related variables ([7108ec7](https://github.com/telerik/kendo-themes/commit/7108ec74ab619b8ee9af04d63984937466143eb0))
+* syntax issues in compiled css ([e4ee915](https://github.com/telerik/kendo-themes/commit/e4ee9153d4185c3b5d5187f822c0de26bd0aeed1))
+
+
+### Features
+
+* **diagram:** add diagram selection tool styles ([b321345](https://github.com/telerik/kendo-themes/commit/b3213452e870f65f771193ce0c6a962a94abbde7))
+
+
+
+
+
 ## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
 
 **Note:** Version bump only for package @progress/kendo-theme-meridian
