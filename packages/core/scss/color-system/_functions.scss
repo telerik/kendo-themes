@@ -90,7 +90,7 @@
 /// @param {String} $theme - The theme the colors will be generated for
 /// @return {Map} - A map with the generated keys and values
 ///
-/// @group color-system
+/// @group functions
 @function k-generate-color-variations( $name, $color, $theme: null ) {
     $result: ();
 
@@ -212,7 +212,7 @@
 /// @param {String} $key - The name of a color/key in the $kendo-colors map
 /// @return {String} - CSS variable with the actual color as a fallback
 ///
-/// @group color-system
+/// @group functions
 @function k-color($key) {
     @return var(--kendo-color-#{$key});
 }

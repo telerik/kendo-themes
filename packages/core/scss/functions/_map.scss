@@ -4,6 +4,7 @@
 /// Returns the value at `$key` in `$map`.
 /// @param {Map} $map - The map to get the value from.
 /// @param {Any} $key - The key to get the value for.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-map-get( ( "foo": "bar" ), "foo" ); // => "bar"
@@ -18,6 +19,7 @@
 /// @param {Map} $map - The map to merge.
 /// @param {Map} $args - The map to merge into `$map`.
 /// @return {Map} - A map with the keys and values from `$map` and `$args`.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-map-merge( ( "foo": "bar" ), ( "baz": "qux" ) ); // => ( "foo": "bar", "baz": "qux" )
@@ -31,6 +33,7 @@
 /// Returns a deep-map with the keys and values from `$map` and `$args`.
 /// @param {Map} $maps - The maps to deep-merge.
 /// @return {Map} - A map with the keys and values from `$map` and `$args`.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-map-deep-merge( ( "foo": ("bar": "baz", "baz": "qux" ) ), ( "foo": ("bar": "foo") ) ); // => ( "foo": ("bar": "foo", "baz": "qux" ))
@@ -63,6 +66,7 @@
 /// @param {Any} $key - The key to set the value for.
 /// @param {Any} $value - The value to set.
 /// @return {Map} - A map with the key and value set.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-map-set( ( "foo": "bar" ), "baz", "qux" ); // => ( "foo": "bar", "baz": "qux" )
@@ -78,6 +82,7 @@
 /// Returns negative values of a number or numbers in a list.
 /// @param {Map} $map - The map to get the values from.
 /// @return {Map} - A comma separated list of the values in `$map`.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-map-negate( ( 0: 0, 1: 1px, 2: 2px ) ); // => ("-1": -1px, "-2": -2px)

@@ -8,6 +8,7 @@
 /// @param {Number} $min - The minimum value.
 /// @param {Number} $max - The maximum value.
 /// @return {Number} - The clamped number.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-math-clamp( 10, 0, 5 ); // => 5
@@ -19,6 +20,7 @@
 /// @param {Number} $x - The base.
 /// @param {Number} $n - The exponent.
 /// @return {Number} - The result of raising `$x` to the power of `$n`.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-math-pow( 2, 3 ); // => 8
@@ -47,6 +49,7 @@
 /// @param {Number} $number - The number to round.
 /// @param {Number} $precision - The number of decimal places to round to.
 /// @return {Number} - The rounded number.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-math-round( 10.123456789, 3 ); // => 10.123
@@ -63,6 +66,7 @@
 /// Remove the unit from a number.
 /// @param {Number} $number - The number to remove the unit from.
 /// @return {Number} - The unitless number.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-math-strip-unit( 10px ); // => 10
