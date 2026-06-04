@@ -22,6 +22,6 @@ debug.log
 .nx/cache
 .nx/workspace-data
 
-# Generated a11y test reports (not tracked; screenshots in tests/_output/ ARE tracked)
-tests/_output/*.json
-
+# Visual regression (reg-suit manages snapshots on gh-pages; local working dirs are throwaway)
+tests/_output/
+.reg/

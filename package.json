@@ -40,9 +40,14 @@
     "sassdoc": "^2.7.4",
     "nunjucks": "^3.2.3",
     "nx": "^22.7.8",
+    "playwright": "^1.60.0",
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
     "postcss-selector-parser": "^7.1.0",
+    "reg-cli": "^0.18.16",
+    "reg-keygen-git-hash-plugin": "^0.14.5",
+    "reg-publish-gh-pages-plugin": "^0.2.2",
+    "reg-suit": "^0.14.5",
     "sass": "1.100.0",
     "sass-embedded": "^1.93.3",
     "semver": "^7.3.7",
@@ -91,7 +96,11 @@
     "release:version": "npx nx release version",
     "release:changelog": "npx nx release changelog",
     "release:publish": "npx nx release publish",
-    "release:prerelease": "npx nx release version --preid dev"
+    "release:prerelease": "npx nx release version --preid dev",
+    "test:visual": "reg-suit run",
+    "test:visual:save": "node ./scripts/visual-local.mjs --save",
+    "test:visual:local": "node ./scripts/visual-local.mjs",
+    "test:visual:dev": "node ./scripts/visual-dev.mjs"
   },
   "engines": {
     "node": "^24 || ^25",
