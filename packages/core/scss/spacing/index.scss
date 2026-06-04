@@ -49,6 +49,10 @@ $kendo-spacing: $default-spacing !default;
 $kendo-spacing: map.merge($default-spacing, $kendo-spacing);
 
 
+/// Returns a CSS variable reference for a spacing step.
+/// @param {Number | String} $step - The spacing step key from $kendo-spacing.
+/// @return {String} CSS variable reference for the given spacing step.
+/// @group functions
 @function k-spacing($step) {
     $_step: k-escape-class-name( $step );
     @return var(--kendo-spacing-#{$_step});

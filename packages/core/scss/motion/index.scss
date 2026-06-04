@@ -174,16 +174,28 @@ $kendo-durations: map.merge($default-durations, $kendo-durations);
 $kendo-transitions: $default-transitions !default;
 $kendo-transitions: map.merge($default-transitions, $kendo-transitions);
 
+/// Returns a CSS variable reference for an easing token.
+/// @param {String} $key - The easing key from $kendo-easings.
+/// @return {String} CSS variable reference for the given easing token.
+/// @group functions
 @function k-easing($key) {
     $easing: map.get($kendo-easings, $key);
     @return var(--kendo-easing-#{$key});
 }
 
+/// Returns a CSS variable reference for a duration token.
+/// @param {String} $key - The duration key from $kendo-durations.
+/// @return {String} CSS variable reference for the given duration token.
+/// @group functions
 @function k-duration($key) {
     $_duration: map.get($kendo-durations, $key);
     @return var(--kendo-duration-#{$key});
 }
 
+/// Returns a CSS variable reference for a transition token.
+/// @param {String} $key - The transition key from $kendo-transitions.
+/// @return {String} CSS variable reference for the given transition token.
+/// @group functions
 @function k-transition($key) {
     @return var(--kendo-transition-#{$key});
 }

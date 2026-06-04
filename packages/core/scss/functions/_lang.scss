@@ -3,6 +3,7 @@
 /// @param {Any} $var - The variable to check.
 /// @param {Any} $fallback - The fallback value.
 /// @return {Any} - The value of the variable or the fallback value.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   $foo: null;
