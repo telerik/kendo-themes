@@ -8,6 +8,7 @@ const themeDir = path.resolve(__dirname, "../packages", theme);
 const themeScssDir = path.resolve(themeDir, "scss");
 const nodeModulesDir = path.resolve(__dirname, "../node_modules");
 const themeMetadataDir = path.resolve(themeDir, "dist", "meta", "sassdoc-data.json");
+const coreMetadataDir = path.resolve(__dirname, "../packages/core/dist/meta/sassdoc-raw-data.json");
 
 interface Variable {
     context: {
@@ -26,6 +27,26 @@ interface SassDocData {
 const data: SassDocData = JSON.parse(fs.readFileSync(themeMetadataDir, 'utf8'));
 
 // #region helpers
+/**
+ * Returns the names of all public k-* functions tagged with @group functions
+ * from core's sassdoc raw data.
+ */
+export function getCssApiFunctions(): string[] {
+    const raw = JSON.parse(fs.readFileSync(coreMetadataDir, "utf8")) as Array<{
+        context: { type: string; name: string };
+        access: string;
+        group: string[];
+    }>;
+    return raw
+        .filter(
+            (item) =>
+                item.context.type === "function" &&
+                item.access === "public" &&
+                item.group.includes("functions")
+        )
+        .map((item) => item.context.name);
+}
+
 function writeResultToDist(result: string, file: string): void {
     const distDir = path.resolve(__dirname, theme, "dist");
     const outputPath = path.join(distDir, `${file}.css`);
