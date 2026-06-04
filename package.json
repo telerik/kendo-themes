@@ -89,7 +89,7 @@
     "release:version": "npx nx release version",
     "release:changelog": "npx nx release changelog",
     "release:publish": "npx nx release publish",
-    "release:prerelease": "npx nx release version --specifier prerelease"
+    "release:prerelease": "npx nx release version --preid dev"
   },
   "engines": {
     "node": "^24 || ^25"
