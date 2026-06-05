@@ -22,6 +22,7 @@ $_kendo-escape-class-name: (
 /// @param {String} $search - The substring to look for.
 /// @param {String} $replace - The replacement string.
 /// @return {String} - The resulting string.
+/// @group functions
 ///
 /// @link https://www.sassmeister.com/gist/1b4f2da5527830088e4d
 ///
@@ -53,6 +54,11 @@ $_kendo-escape-class-name: (
 }
 
 // See https://codepen.io/kevinweber/pen/dXWoRw
+/// URL-encodes special SVG characters in a data URI string so it can be safely embedded in CSS.
+/// Only processes strings that start with "data:image/svg+xml".
+/// @param {String} $string - The SVG data URI string to encode.
+/// @return {String} - The URL-encoded string.
+/// @group functions
 @function k-escape-svg($string) {
     @if string.index($string, "data:image/svg+xml") {
         @each $char, $encoded in $_kendo-svg-escaped-characters {
@@ -71,6 +77,7 @@ $_kendo-escape-class-name: (
 /// Escapes special characters in a class name
 /// @param {String} $text - The string to escape
 /// @return {String} - The escaped string
+/// @group functions
 @function k-escape-class-name( $text ) {
     $_text: $text;
 
