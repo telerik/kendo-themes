@@ -68,6 +68,7 @@
             $_group-label-line-height: map.get( $size-props, item-group-label-line-height );
             $_filter-padding-x: map.get( $size-props, filter-padding-x );
             $_filter-padding-y: map.get( $size-props, filter-padding-y );
+            $_sticky-header-padding-y: map.get( $size-props, sticky-header-padding-y );
 
             #{k-when-default($kendo-list-default-size, $size)}
             &.k-list-#{$size} {
@@ -80,6 +81,22 @@
                     padding-inline: $_header-padding-x;
                     font-size: $_header-font-size;
                     line-height: $_header-line-height;
+                }
+
+                // Sticky header
+                .k-list-sticky-header {
+                    padding-block-end: $_sticky-header-padding-y;
+                }
+
+                .k-list-sticky-header + .k-list-content {
+                    padding-block-start: $_sticky-header-padding-y;
+                }
+
+                .k-list-sticky-header-item {
+                    padding-block: $_item-padding-y;
+                    padding-inline: $_item-padding-x;
+                    font-size: $_item-font-size;
+                    line-height: $_item-line-height;
                 }
 
                 .k-list-filter {
@@ -152,6 +169,19 @@
         flex: none;
         overflow: hidden;
         text-overflow: ellipsis;
+        cursor: pointer;
+    }
+
+    .k-list-sticky-header:has(+ .k-list-group-sticky-header) {
+        border-block-end: 1px solid;
+    }
+
+    .k-list-sticky-header-item {
+        border-radius: $kendo-list-item-border-radius;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: $kendo-list-item-gap;
         cursor: pointer;
     }
 

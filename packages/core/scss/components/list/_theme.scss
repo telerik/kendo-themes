@@ -31,6 +31,41 @@
     }
 
 
+    // Sticky header
+    .k-list-sticky-header {
+        @include fill(
+            $kendo-list-item-text,
+            $kendo-list-item-bg,
+            $kendo-list-header-border,
+        );
+        @include box-shadow( $kendo-list-sticky-header-shadow );
+
+        &:has(+ .k-list-group-sticky-header) {
+            @include box-shadow( none );
+            border-color: $kendo-list-header-border;
+        }
+    }
+
+    .k-list-sticky-header-item {
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-list-item-hover-text,
+                $kendo-list-item-hover-bg,
+            );
+        }
+
+        &:focus-within,
+        &.k-focus {
+            @include fill(
+                $kendo-list-item-focus-text,
+                $kendo-list-item-focus-bg,
+            );
+            @include focus-indicator( $kendo-list-item-focus-shadow, true );
+        }
+    }
+
+
     // List item
     .k-list-item,
     .k-list-custom-value {

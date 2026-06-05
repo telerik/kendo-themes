@@ -4,6 +4,7 @@ export * from './list-item.spec';
 export * from './list-content';
 export * from './list-ul';
 export * from './list-header';
+export * from './list-select-all';
 export * from './list-group';
 export * from './list-group-item';
 export * from './list-option-label';

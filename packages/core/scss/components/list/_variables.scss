@@ -24,6 +24,10 @@ $kendo-list-sm-header-padding-y: null !default;
 $kendo-list-md-header-padding-y: null !default;
 $kendo-list-lg-header-padding-y: null !default;
 
+$kendo-list-sm-sticky-header-padding-y: null !default;
+$kendo-list-md-sticky-header-padding-y: null !default;
+$kendo-list-lg-sticky-header-padding-y: null !default;
+
 $kendo-list-header-border-width: null !default;
 
 $kendo-list-header-font-size: null !default;
@@ -128,7 +132,8 @@ $kendo-list-sizes: (
         item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-sm-line-height,
         filter-padding-x: $kendo-list-sm-filter-padding-x,
-        filter-padding-y: $kendo-list-sm-filter-padding-y
+        filter-padding-y: $kendo-list-sm-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-sm-sticky-header-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -150,7 +155,8 @@ $kendo-list-sizes: (
         item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-md-line-height,
         filter-padding-x: $kendo-list-md-filter-padding-x,
-        filter-padding-y: $kendo-list-md-filter-padding-y
+        filter-padding-y: $kendo-list-md-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-md-sticky-header-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -172,7 +178,8 @@ $kendo-list-sizes: (
         item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-lg-line-height,
         filter-padding-x: $kendo-list-lg-filter-padding-x,
-        filter-padding-y: $kendo-list-lg-filter-padding-y
+        filter-padding-y: $kendo-list-lg-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-lg-sticky-header-padding-y
     )
 ) !default;
 
@@ -186,6 +193,8 @@ $kendo-list-header-bg: null !default;
 $kendo-list-header-text: null !default;
 $kendo-list-header-border: null !default;
 $kendo-list-header-shadow: null !default;
+
+$kendo-list-sticky-header-shadow: null !default;
 
 
 $kendo-list-item-bg: null !default;
