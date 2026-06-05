@@ -115,6 +115,20 @@ npm run docs              # Generate SassDoc
 npm run lint:styles       # Run Stylelint
 ```
 
+## SCSS Function Documentation
+
+- For every public `k-*` SCSS function in `packages/core/**`, add SassDoc `@group functions` so function discovery remains centralized and unit static checks can read metadata from one place.
+
+```scss
+/// Returns a CSS variable reference for a spacing step.
+/// @param {Number | String} $step - The spacing step key from $kendo-spacing.
+/// @return {String} CSS variable reference for the given spacing step.
+/// @group functions
+@function k-spacing($step) {
+    @return var(--kendo-spacing-#{$step});
+}
+```
+
 ## Related Documentation
 
 - Root instructions: `../../.github/copilot-instructions.md`
