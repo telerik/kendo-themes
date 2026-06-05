@@ -7,7 +7,19 @@
     @include kendo-card--theme-base();
 
     .k-card {
-        backdrop-filter: k-translucency-blur(2);
+        isolation: isolate;
+        background-color: transparent;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-color: $kendo-card-bg;
+            backdrop-filter: k-translucency-blur(2);
+            border-radius: inherit;
+            pointer-events: none;
+        }
 
         &:focus,
         &.k-focus {
@@ -17,6 +29,10 @@
                 $outline-width: $kendo-card-focus-outline-width,
                 $outline-offset: $kendo-card-focus-outline-offset
             );
+        }
+
+        .k-card-callout {
+            background-color: $kendo-card-bg;
         }
     }
 }
