@@ -21,6 +21,7 @@ export type KendoListProps = KendoListOptions & {
     virtualization?: boolean;
     children?: React.ReactNode;
     header?: React.ReactNode;
+    selectAll?: React.ReactNode;
     optionLabel?: React.ReactNode;
     customValue?: React.ReactNode;
     noData?: React.ReactNode;
@@ -42,6 +43,7 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
         virtualization,
         children,
         header,
+        selectAll,
         optionLabel,
         customValue,
         noData,
@@ -69,6 +71,7 @@ export const List: KendoComponent<KendoListProps & KendoListState & React.HTMLAt
                 }
             )}>
             {optionLabel}
+            {selectAll}
             {customValue}
             {header && <ListHeader>{header}</ListHeader>}
             {children ? children : (noData !== undefined ? noData : <NoData live>No data found.</NoData>)}
