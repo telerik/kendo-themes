@@ -51,7 +51,8 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-sm-line-height,
         filter-padding-x: $kendo-list-sm-filter-padding-x,
-        filter-padding-y: $kendo-list-sm-filter-padding-y
+        filter-padding-y: $kendo-list-sm-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-sm-sticky-header-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -73,7 +74,8 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-md-line-height,
         filter-padding-x: $kendo-list-md-filter-padding-x,
-        filter-padding-y: $kendo-list-md-filter-padding-y
+        filter-padding-y: $kendo-list-md-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-md-sticky-header-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -95,7 +97,8 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-lg-line-height,
         filter-padding-x: $kendo-list-lg-filter-padding-x,
-        filter-padding-y: $kendo-list-lg-filter-padding-y
+        filter-padding-y: $kendo-list-lg-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-lg-sticky-header-padding-y
     )
 )</code></td>
     <td></td>

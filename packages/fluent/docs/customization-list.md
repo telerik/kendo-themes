@@ -188,6 +188,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-sm-sticky-header-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-sm-sticky-header-padding-y, #{k-spacing(0.5)} )</code></td>
+    <td><code>var(--kendo-list-sm-sticky-header-padding-y, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-md-sticky-header-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-md-sticky-header-padding-y, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-list-md-sticky-header-padding-y, var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-lg-sticky-header-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-lg-sticky-header-padding-y, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-list-lg-sticky-header-padding-y, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-header-border-width</td>
     <td>String</td>
     <td><code>var( --kendo-list-header-border-width, 0 )</code></td>
@@ -858,6 +888,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-sticky-header-shadow</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-sticky-header-shadow, #{0 2px 4px 0 rgba(0, 0, 0, 0.08)} )</code></td>
+    <td><code>var(--kendo-list-sticky-header-shadow, 0 2px 4px 0 rgba(0, 0, 0, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-item-selected-bg</td>
     <td>String</td>
     <td><code>var( --kendo-list-item-selected-bg, #{color-mix(in srgb, k-color(on-app-surface) 12%, transparent)} )</code></td>
@@ -1031,7 +1071,8 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-sm-line-height,
         filter-padding-x: $kendo-list-sm-filter-padding-x,
-        filter-padding-y: $kendo-list-sm-filter-padding-y
+        filter-padding-y: $kendo-list-sm-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-sm-sticky-header-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -1053,7 +1094,8 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-md-line-height,
         filter-padding-x: $kendo-list-md-filter-padding-x,
-        filter-padding-y: $kendo-list-md-filter-padding-y
+        filter-padding-y: $kendo-list-md-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-md-sticky-header-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -1075,10 +1117,11 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-lg-line-height,
         filter-padding-x: $kendo-list-lg-filter-padding-x,
-        filter-padding-y: $kendo-list-lg-filter-padding-y
+        filter-padding-y: $kendo-list-lg-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-lg-sticky-header-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-list-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-sm-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-sm-header-padding-x, var(--kendo-spacing-1))","header-padding-y":"var(--kendo-list-sm-header-padding-y, var(--kendo-spacing-1))","header-font-size":"var(--kendo-list-sm-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-sm-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1))","item-padding-y":"var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1))","item-font-size":"var(--kendo-list-sm-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-sm-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-sm-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-sm-group-item-padding-y, var(--kendo-spacing-1\\.5))","group-item-font-size":"var(--kendo-list-sm-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-sm-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-sm-padding-x, var(--kendo-spacing-0\\.5))","item-group-label-padding-y":"var(--kendo-list-item-group-label-sm-padding-y, var(--kendo-spacing-0\\.5))","item-group-label-font-size":"var(--kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-sm-filter-padding-x, var(--kendo-spacing-1))","filter-padding-y":"var(--kendo-list-sm-filter-padding-y, var(--kendo-spacing-1))"</li><li>md: "font-size":"var(--kendo-list-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-md-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-md-header-padding-x, var(--kendo-spacing-1\\.5))","header-padding-y":"var(--kendo-list-md-header-padding-y, var(--kendo-spacing-1\\.5))","header-font-size":"var(--kendo-list-md-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-md-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5))","item-padding-y":"var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5))","item-font-size":"var(--kendo-list-md-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-md-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-md-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-md-group-item-padding-y, var(--kendo-spacing-2))","group-item-font-size":"var(--kendo-list-md-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-md-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-md-padding-x, var(--kendo-spacing-1))","item-group-label-padding-y":"var(--kendo-list-item-group-label-md-padding-y, var(--kendo-spacing-1))","item-group-label-font-size":"var(--kendo-list-item-group-label-md-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-md-filter-padding-x, var(--kendo-spacing-1\\.5))","filter-padding-y":"var(--kendo-list-md-filter-padding-y, var(--kendo-spacing-1\\.5))"</li><li>lg: "font-size":"var(--kendo-list-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-lg-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-lg-header-padding-x, var(--kendo-spacing-2\\.5))","header-padding-y":"var(--kendo-list-lg-header-padding-y, var(--kendo-spacing-2\\.5))","header-font-size":"var(--kendo-list-lg-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-lg-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5))","item-padding-y":"var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5))","item-font-size":"var(--kendo-list-lg-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-lg-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-lg-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-lg-group-item-padding-y, var(--kendo-spacing-2\\.5))","group-item-font-size":"var(--kendo-list-lg-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-lg-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-lg-padding-x, var(--kendo-spacing-1\\.5))","item-group-label-padding-y":"var(--kendo-list-item-group-label-lg-padding-y, var(--kendo-spacing-1\\.5))","item-group-label-font-size":"var(--kendo-list-item-group-label-lg-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-lg-filter-padding-x, var(--kendo-spacing-2\\.5))","filter-padding-y":"var(--kendo-list-lg-filter-padding-y, calc(var(--kendo-spacing-2) + 1px))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-list-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-sm-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-sm-header-padding-x, var(--kendo-spacing-1))","header-padding-y":"var(--kendo-list-sm-header-padding-y, var(--kendo-spacing-1))","header-font-size":"var(--kendo-list-sm-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-sm-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1))","item-padding-y":"var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1))","item-font-size":"var(--kendo-list-sm-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-sm-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-sm-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-sm-group-item-padding-y, var(--kendo-spacing-1\\.5))","group-item-font-size":"var(--kendo-list-sm-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-sm-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-sm-padding-x, var(--kendo-spacing-0\\.5))","item-group-label-padding-y":"var(--kendo-list-item-group-label-sm-padding-y, var(--kendo-spacing-0\\.5))","item-group-label-font-size":"var(--kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-sm-filter-padding-x, var(--kendo-spacing-1))","filter-padding-y":"var(--kendo-list-sm-filter-padding-y, var(--kendo-spacing-1))","sticky-header-padding-y":"var(--kendo-list-sm-sticky-header-padding-y, var(--kendo-spacing-0\\.5))"</li><li>md: "font-size":"var(--kendo-list-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-md-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-md-header-padding-x, var(--kendo-spacing-1\\.5))","header-padding-y":"var(--kendo-list-md-header-padding-y, var(--kendo-spacing-1\\.5))","header-font-size":"var(--kendo-list-md-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-md-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5))","item-padding-y":"var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5))","item-font-size":"var(--kendo-list-md-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-md-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-md-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-md-group-item-padding-y, var(--kendo-spacing-2))","group-item-font-size":"var(--kendo-list-md-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-md-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-md-padding-x, var(--kendo-spacing-1))","item-group-label-padding-y":"var(--kendo-list-item-group-label-md-padding-y, var(--kendo-spacing-1))","item-group-label-font-size":"var(--kendo-list-item-group-label-md-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-md-filter-padding-x, var(--kendo-spacing-1\\.5))","filter-padding-y":"var(--kendo-list-md-filter-padding-y, var(--kendo-spacing-1\\.5))","sticky-header-padding-y":"var(--kendo-list-md-sticky-header-padding-y, var(--kendo-spacing-1))"</li><li>lg: "font-size":"var(--kendo-list-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-lg-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-lg-header-padding-x, var(--kendo-spacing-2\\.5))","header-padding-y":"var(--kendo-list-lg-header-padding-y, var(--kendo-spacing-2\\.5))","header-font-size":"var(--kendo-list-lg-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-lg-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5))","item-padding-y":"var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5))","item-font-size":"var(--kendo-list-lg-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-lg-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-lg-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-lg-group-item-padding-y, var(--kendo-spacing-2\\.5))","group-item-font-size":"var(--kendo-list-lg-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-lg-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-lg-padding-x, var(--kendo-spacing-1\\.5))","item-group-label-padding-y":"var(--kendo-list-item-group-label-lg-padding-y, var(--kendo-spacing-1\\.5))","item-group-label-font-size":"var(--kendo-list-item-group-label-lg-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-lg-filter-padding-x, var(--kendo-spacing-2\\.5))","filter-padding-y":"var(--kendo-list-lg-filter-padding-y, calc(var(--kendo-spacing-2) + 1px))","sticky-header-padding-y":"var(--kendo-list-lg-sticky-header-padding-y, var(--kendo-spacing-1\\.5))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the List.</div></div>
