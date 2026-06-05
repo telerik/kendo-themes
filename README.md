@@ -1,6 +1,6 @@
 # Kendo UI Themes Monorepo
 
-`kendo-themes` is a [lerna](https://github.com/lerna/lerna/) managed monorepo project for all Kendo UI themes that are used across the Kendo UI suites and Telerik UI for Blazor. The themes are built with sass using scss syntax. The syntax is compatible with both `node-sass` and `dart-sass`, as we currently do not use the sass module system. Browser-specific properties are generated at build-time through [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
+`kendo-themes` is an [Nx](https://nx.dev/)-managed monorepo for all Kendo UI themes that are used across the Kendo UI suites and Telerik UI for Blazor. The themes are built with sass using scss syntax. The syntax is compatible with both `node-sass` and `dart-sass`, as we currently do not use the sass module system. Browser-specific properties are generated at build-time through [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
 
 ## Setup
 

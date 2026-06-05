@@ -6,11 +6,16 @@ on:
       release-type:
         description: "Release type"
         required: true
-        default: "stable"
+        default: "dev"
         type: choice
         options:
-          - stable
           - dev
+          - stable
+      dry-run:
+        description: "Dry run"
+        required: false
+        default: false
+        type: boolean
   workflow_run:
     workflows:
       - "CI Weekly"
@@ -21,6 +26,7 @@ on:
 
 env:
   RELEASE_TYPE: ${{ github.event_name == 'workflow_run' && 'dev' || inputs.release-type }}
+  DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry-run) && '--dry-run' || '' }}
 
 jobs:
   publish:
@@ -29,7 +35,7 @@ jobs:
 
     permissions:
       id-token: write # Required by npm OIDC trusted publishing
-      contents: write # Allows lerna to create tags
+      contents: write # Allows nx release to create tags and GitHub releases
       packages: read
 
     steps:
@@ -76,21 +82,34 @@ jobs:
           npm run sass:dist
           npm run docs
 
-      - name: Lerna publish (stable)
+      - name: Nx release (stable)
         if: env.RELEASE_TYPE == 'stable'
         run: |
-          npx lerna publish --conventional-commits --conventional-graduate --create-release github --force-publish --exact
+          npm run release:version -- ${{ env.DRY_RUN }}
+          if [[ -z "${{ env.DRY_RUN }}" ]]; then
+            STABLE_VERSION=$(jq -r '.version' packages/core/package.json)
+            npm run release:changelog -- "$STABLE_VERSION"
+            npm run release:publish
+          fi
         env:
-          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Lerna publish (dev)
+      - name: Nx release (dev)
         if: env.RELEASE_TYPE == 'dev'
         run: |
-          npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
+          npm run release:prerelease -- --preid dev ${{ env.DRY_RUN }}
+          if [[ -z "${{ env.DRY_RUN }}" ]]; then
+            DEV_VERSION=$(jq -r '.version' packages/core/package.json)
+            npm run release:changelog -- "$DEV_VERSION"
+            npm run release:publish -- --tag dev
+          fi
         env:
-          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Mark checks as successful
+        if: env.DRY_RUN == ''
         run: |
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
@@ -98,7 +117,11 @@ jobs:
           GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Push to GitHub
-        if: env.RELEASE_TYPE == 'stable'
+        if: env.DRY_RUN == ''
         run: |
-          git push origin master --tags --quiet > /dev/null 2>&1
-          git push origin master:develop --quiet > /dev/null 2>&1
+          if [[ "${{ env.RELEASE_TYPE }}" == 'stable' ]]; then
+            git push origin master --tags --quiet > /dev/null 2>&1
+            git push origin master:develop --quiet > /dev/null 2>&1
+          else
+            git push origin develop --tags --quiet > /dev/null 2>&1
+          fi
