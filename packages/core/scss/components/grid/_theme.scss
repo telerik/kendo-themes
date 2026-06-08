@@ -59,23 +59,23 @@
         }
 
         // Selected state
-        .k-table-td.k-selected,
-        .k-table-row.k-selected > .k-table-td {
+        .k-table-td.k-selected:not(.k-group-cell),
+        .k-table-row.k-selected > .k-table-td:not(.k-group-cell) {
             background-color: $kendo-grid-selected-bg;
             color: $kendo-grid-selected-text;
         }
 
         // Highlighted state
-        .k-table-td.k-highlighted,
-        .k-table-row.k-highlighted > .k-table-td {
+        .k-table-td.k-highlighted:not(.k-group-cell),
+        .k-table-row.k-highlighted > .k-table-td:not(.k-group-cell) {
             background-color: $kendo-grid-highlighted-bg;
         }
 
         // Highlighted Selected state
-        .k-table-td.k-highlighted.k-selected,
-        .k-table-row.k-highlighted.k-selected > .k-table-td,
-        .k-table-row.k-highlighted > .k-table-td.k-selected,
-        .k-table-row.k-selected > .k-table-td.k-highlighted {
+        .k-table-td.k-highlighted.k-selected:not(.k-group-cell, .k-grid-content-sticky),
+        .k-table-row.k-highlighted.k-selected > .k-table-td:not(.k-group-cell, .k-grid-content-sticky),
+        .k-table-row.k-highlighted > .k-table-td.k-selected:not(.k-group-cell, .k-grid-content-sticky),
+        .k-table-row.k-selected > .k-table-td.k-highlighted:not(.k-group-cell, .k-grid-content-sticky) {
             background-color: $kendo-grid-selected-highlighted-bg;
         }
 

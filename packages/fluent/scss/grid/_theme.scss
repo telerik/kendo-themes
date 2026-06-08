@@ -35,8 +35,8 @@
         }
 
         // Selected state
-        .k-table-td.k-selected,
-        .k-table-row.k-selected > .k-table-td {
+        .k-table-td.k-selected:not(.k-group-cell),
+        .k-table-row.k-selected > .k-table-td:not(.k-group-cell) {
             border-block-color: $kendo-grid-selected-border;
         }
 
