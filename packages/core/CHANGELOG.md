@@ -1,3 +1,26 @@
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+- introduce scrollbar styles to k-body ([f9f0358955](https://github.com/telerik/kendo-themes/commit/f9f0358955))
+
+### 🩹 Fixes
+
+- syntax issues in compiled css ([e4ee9153d4](https://github.com/telerik/kendo-themes/commit/e4ee9153d4))
+- update the sizing of the loading icon to match the icon size ([7b8e44402c](https://github.com/telerik/kendo-themes/commit/7b8e44402c))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- **grid:** sticky borders have different color when states are applied ([9ee2a3e9bd](https://github.com/telerik/kendo-themes/commit/9ee2a3e9bd))
+- window border is being cut when larger border radius is set ([3bcf420115](https://github.com/telerik/kendo-themes/commit/3bcf420115))
+- **textarea:** rounded full should be less rounded ([f3093d53e0](https://github.com/telerik/kendo-themes/commit/f3093d53e0))
+- **grid:** column menu item alignment ([bae5dc95c2](https://github.com/telerik/kendo-themes/commit/bae5dc95c2))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
