@@ -1,5 +1,6 @@
 import { ChipAction } from "../chip-action";
 import { Chip, KendoChipProps } from "../chip.spec";
+import { CHIP_DEMO_AVATAR_IMAGE } from '../constants';
 
 const states = Chip.states;
 const defaults = Chip.defaultOptions;
@@ -40,7 +41,7 @@ export const ChipDemo = (
         break;
       case 'avatar':
         additionalProps.showAvatar = mods?.[modifier] ? true : false;
-        additionalProps.avatarImage = mods?.[modifier] ? "https://demos.telerik.com/kendo-ui/content/web/Customers/RICSU.jpg" : undefined;
+        additionalProps.avatarImage = mods?.[modifier] ? CHIP_DEMO_AVATAR_IMAGE : undefined;
         break;
       case 'more-options':
         if (!additionalProps.actions) {
