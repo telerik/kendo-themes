@@ -25,15 +25,18 @@ const variants = [
 const modifiers = [
     {
         name: 'label',
-        title: 'Labels'
+        title: 'Labels',
+        default: true,
     },
     {
         name: 'tick',
-        title: 'Ticks'
+        title: 'Ticks',
+        default: true,
     },
     {
         name: 'button',
-        title: 'Side Buttons'
+        title: 'Side Buttons',
+        default: true,
     },
 ];
 
