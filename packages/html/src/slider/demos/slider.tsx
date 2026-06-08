@@ -42,9 +42,10 @@ export const SliderDemo = (
         modifiers?: { [key: (typeof modifiers)[number]['name']]: boolean };
     }
 ) => {
-    const { variant, modifiers: mods, ...other } = { ...defaults, ...props };
+    const { variant, modifiers: mods, ...other } = props;
 
-    let additionalProps: any = {};
+    let label = defaults.label;
+    let additionalProps: Pick<KendoSliderProps, 'showButtons' | 'showTicks'> = {};
 
     Object.keys(mods || {}).forEach((modifier) => {
         switch (modifier) {
@@ -53,7 +54,7 @@ export const SliderDemo = (
                 break;
             }
             case 'label': {
-                additionalProps.label = mods?.[modifier] ? true : false;
+                label = mods?.[modifier] ? true : false;
                 break;
             }
             case 'tick': {
@@ -62,14 +63,12 @@ export const SliderDemo = (
             }
         }
     });
-
-    const { label = true, showButtons, showTicks } = additionalProps;
     const style = { "--kendo-slider-start": 0, "--kendo-slider-end": 60 } as React.CSSProperties;
 
     switch (variant) {
         case 'vertical':
             return (
-                <SliderVertical showTicks={showTicks} showButtons={showButtons} style={{ height: "300px", ...style }} {...other}>
+                <SliderVertical style={{ height: "300px", ...style }} {...other} {...additionalProps}>
                     <SliderTick label={label} large orientation="vertical" text="0" style={{ position: "absolute", bottom: "0%" }} />
                     <SliderTick label={label} large orientation="vertical" text="2" style={{ position: "absolute", bottom: "25%" }} />
                     <SliderTick label={label} large orientation="vertical" text="4" style={{ position: "absolute", bottom: "50%" }} />
@@ -80,7 +79,7 @@ export const SliderDemo = (
         case 'horizontal':
         default:
             return (
-                <SliderNormal showTicks={showTicks} showButtons={showButtons} style={{ width: "400px", ...style }} {...other}>
+                <SliderNormal style={{ width: "400px", ...style }} {...other} {...additionalProps}>
                     <SliderTick label={label} large orientation="horizontal" text="0" style={{ position: "absolute", left: "0%" }} />
                     <SliderTick label={label} large orientation="horizontal" text="2" style={{ position: "absolute", left: "25%" }} />
                     <SliderTick label={label} large orientation="horizontal" text="4" style={{ position: "absolute", left: "50%" }} />
