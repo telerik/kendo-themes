@@ -18,6 +18,17 @@
         .k-master-row .k-grid-content-sticky {
             border-block-end-color: $kendo-grid-header-border;
         }
+
+        .k-master-row .k-group-cell {
+            border-block-color: transparent;
+        }
+
+        .k-detail-row,
+        .k-master-row {
+            .k-group-cell + :not(.k-group-cell) {
+                border-inline-start-color: k-color(border);
+            }
+        }
     }
 
     .k-grid-header {

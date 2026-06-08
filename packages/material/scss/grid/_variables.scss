@@ -287,7 +287,7 @@ $kendo-grid-selection-aggregates-font-weight: var(--kendo-font-weight-bold) !def
 
 /// The background color of the Grid row.
 /// @group grid
-$kendo-grid-grouping-row-bg: transparent !default;
+$kendo-grid-grouping-row-bg: k-color(surface) !default;
 
 /// The background color of the Grid grouping header.
 /// @group grid
