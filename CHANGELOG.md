@@ -1,3 +1,11 @@
+## 14.2.0-dev.1 (2026-06-08)
+
+### 🩹 Fixes
+
+- **meridian:** move card backdrop-filter to ::before to fix dialog scoping ([3b6e9bdb6a](https://github.com/telerik/kendo-themes/commit/3b6e9bdb6a))
+- **pager:** revert previous/next icons from chevron to caret-alt ([97c68e7831](https://github.com/telerik/kendo-themes/commit/97c68e7831))
+- **timeline:** match card callout background to card color ([fcbf62335e](https://github.com/telerik/kendo-themes/commit/fcbf62335e))
+
 ## 14.2.0-0 (2026-06-08)
 
 ### 🚀 Features

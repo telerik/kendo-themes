@@ -1,3 +1,14 @@
+## 14.2.0-dev.1 (2026-06-08)
+
+### 🩹 Fixes
+
+- **pager:** revert previous/next icons from chevron to caret-alt ([97c68e7831](https://github.com/telerik/kendo-themes/commit/97c68e7831))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
 ## 14.2.0-0 (2026-06-08)
 
 ### 🚀 Features
