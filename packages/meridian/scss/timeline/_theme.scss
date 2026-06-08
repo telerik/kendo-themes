@@ -6,8 +6,11 @@
 @mixin kendo-timeline--theme() {
     @include kendo-timeline--theme-base();
 
-    .k-timeline-card .k-card {
-        background-color: k-color(surface-alt);
+    .k-timeline-card {
+        .k-card,
+        .k-card-callout {
+            background-color: k-color(surface-alt);
+        }
     }
 
     .k-timeline-track-item.k-focus .k-timeline-circle {
