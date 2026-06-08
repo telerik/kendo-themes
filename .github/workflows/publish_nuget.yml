@@ -58,7 +58,7 @@ jobs:
 
       - name: Pack nuget
         run: |
-          npx nx run-many -t nuget-pack
+          npx nx run-many -t nuget-pack --parallel=1
 
       - name: Push nuget
         run: |
