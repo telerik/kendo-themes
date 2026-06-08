@@ -2,6 +2,7 @@ import { ChipList, KendoChipListProps } from '../chip-list.spec';
 import { ChipNormal } from '../templates/chip-normal';
 import { ChipAction } from '../chip-action';
 import Chip, { KendoChipProps } from '../chip.spec';
+import { CHIP_DEMO_AVATAR_IMAGE } from '../constants';
 
 const options = {
   ...Chip.options,
@@ -42,12 +43,13 @@ export const ChipListDemo = (props:
   const hasIcon = modifiers?.icon;
   const hasActions = modifiers?.actions;
   const hasAvatar = modifiers?.avatar;
+  const avatarImage = hasAvatar ? CHIP_DEMO_AVATAR_IMAGE : undefined;
 
   return (
     <ChipList size={other.size}  className={className}>
-      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
-      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar}>Chip</ChipNormal>
+      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar} avatarImage={avatarImage}>Chip</ChipNormal>
+      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar} avatarImage={avatarImage}>Chip</ChipNormal>
+      <ChipNormal {...other} role="option" aria-selected="false" aria-pressed={undefined} icon={hasIcon ? "star" : undefined} actions={hasActions ? <ChipAction type="remove" /> : undefined} showAvatar={hasAvatar} avatarImage={avatarImage}>Chip</ChipNormal>
     </ChipList>
   );
 }
