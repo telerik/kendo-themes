@@ -1,3 +1,22 @@
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- **html:** add diagram selection tool test ([a97ce8ffad](https://github.com/telerik/kendo-themes/commit/a97ce8ffad))
+
+### 🩹 Fixes
+
+- **html:** correct scheduler templates ([d74704c64b](https://github.com/telerik/kendo-themes/commit/d74704c64b))
+- **html:** component accessibility fixes ([d3bd96f696](https://github.com/telerik/kendo-themes/commit/d3bd96f696))
+- **html:** remove wrong classes from calendar ([faea5acab9](https://github.com/telerik/kendo-themes/commit/faea5acab9))
+- **html:** grid group actions menu rendering ([4473f2b51b](https://github.com/telerik/kendo-themes/commit/4473f2b51b))
+
+### ❤️ Thank You
+
+- dtopalov
+- Teya Veselinova
+- zhpenkov
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

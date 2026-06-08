@@ -1,3 +1,20 @@
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+
+### 🩹 Fixes
+
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- add relative colors to theme swatches ([04e314e734](https://github.com/telerik/kendo-themes/commit/04e314e734))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

@@ -1,3 +1,33 @@
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- introduce scrollbar styles to k-body ([f9f0358955](https://github.com/telerik/kendo-themes/commit/f9f0358955))
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+- **html:** add diagram selection tool test ([a97ce8ffad](https://github.com/telerik/kendo-themes/commit/a97ce8ffad))
+
+### 🩹 Fixes
+
+- window border is being cut when larger border radius is set ([3bcf420115](https://github.com/telerik/kendo-themes/commit/3bcf420115))
+- add relative colors to theme swatches ([04e314e734](https://github.com/telerik/kendo-themes/commit/04e314e734))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- update the sizing of the loading icon to match the icon size ([7b8e44402c](https://github.com/telerik/kendo-themes/commit/7b8e44402c))
+- syntax issues in compiled css ([e4ee9153d4](https://github.com/telerik/kendo-themes/commit/e4ee9153d4))
+- **expansion-panel:** expander title text transform ([6bfa411226](https://github.com/telerik/kendo-themes/commit/6bfa411226))
+- **grid:** column menu item alignment ([bae5dc95c2](https://github.com/telerik/kendo-themes/commit/bae5dc95c2))
+- **grid:** sticky borders have different color when states are applied ([9ee2a3e9bd](https://github.com/telerik/kendo-themes/commit/9ee2a3e9bd))
+- **html:** grid group actions menu rendering ([4473f2b51b](https://github.com/telerik/kendo-themes/commit/4473f2b51b))
+- **html:** remove wrong classes from calendar ([faea5acab9](https://github.com/telerik/kendo-themes/commit/faea5acab9))
+- **html:** component accessibility fixes ([d3bd96f696](https://github.com/telerik/kendo-themes/commit/d3bd96f696))
+- **html:** correct scheduler templates ([d74704c64b](https://github.com/telerik/kendo-themes/commit/d74704c64b))
+- **loader:** update the loader sm size in meridian ([796bec54b7](https://github.com/telerik/kendo-themes/commit/796bec54b7))
+- **meridian:** prevent calendar from jumping when changing the months ([f55d32d034](https://github.com/telerik/kendo-themes/commit/f55d32d034))
+- **meridian:** scheduler agenda view misalignment ([d0d9cce273](https://github.com/telerik/kendo-themes/commit/d0d9cce273))
+- **meridian:** prevent group footer double borders ([1c2ccd2a97](https://github.com/telerik/kendo-themes/commit/1c2ccd2a97))
+- **meridian:** move card backdrop-filter to ::before to fix dialog scoping ([3b6e9bdb6a](https://github.com/telerik/kendo-themes/commit/3b6e9bdb6a))
+- **textarea:** rounded full should be less rounded ([f3093d53e0](https://github.com/telerik/kendo-themes/commit/f3093d53e0))
+- **timeline:** match card callout background to card color ([fcbf62335e](https://github.com/telerik/kendo-themes/commit/fcbf62335e))
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

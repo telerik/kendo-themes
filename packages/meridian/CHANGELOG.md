@@ -1,3 +1,26 @@
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+
+### 🩹 Fixes
+
+- **meridian:** move card backdrop-filter to ::before to fix dialog scoping ([3b6e9bdb6a](https://github.com/telerik/kendo-themes/commit/3b6e9bdb6a))
+- **timeline:** match card callout background to card color ([fcbf62335e](https://github.com/telerik/kendo-themes/commit/fcbf62335e))
+- syntax issues in compiled css ([e4ee9153d4](https://github.com/telerik/kendo-themes/commit/e4ee9153d4))
+- **loader:** update the loader sm size in meridian ([796bec54b7](https://github.com/telerik/kendo-themes/commit/796bec54b7))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- **meridian:** prevent group footer double borders ([1c2ccd2a97](https://github.com/telerik/kendo-themes/commit/1c2ccd2a97))
+- **meridian:** scheduler agenda view misalignment ([d0d9cce273](https://github.com/telerik/kendo-themes/commit/d0d9cce273))
+- **meridian:** prevent calendar from jumping when changing the months ([f55d32d034](https://github.com/telerik/kendo-themes/commit/f55d32d034))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
