@@ -98,7 +98,7 @@ jobs:
       - name: Nx release (dev)
         if: env.RELEASE_TYPE == 'dev'
         run: |
-          npm run release:prerelease -- --preid dev ${{ env.DRY_RUN }}
+          npm run release:prerelease -- ${{ env.DRY_RUN }}
           if [[ -z "${{ env.DRY_RUN }}" ]]; then
             DEV_VERSION=$(jq -r '.version' packages/core/package.json)
             npm run release:changelog -- "$DEV_VERSION"
