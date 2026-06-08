@@ -413,8 +413,8 @@
         }
 
         // Highlighted state
-        .k-table-td.k-highlighted,
-        .k-table-row.k-highlighted > .k-table-td {
+        .k-table-td.k-highlighted:not(.k-group-cell),
+        .k-table-row.k-highlighted > .k-table-td:not(.k-group-cell) {
             font-weight: $kendo-grid-highlighted-font-weight;
         }
 
