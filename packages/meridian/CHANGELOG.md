@@ -1,3 +1,13 @@
+## 14.2.0-dev.2 (2026-06-09)
+
+### 🚀 Features
+
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
 ## 14.2.0-dev.1 (2026-06-08)
 
 ### 🩹 Fixes

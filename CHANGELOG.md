@@ -1,3 +1,14 @@
+## 14.2.0-dev.2 (2026-06-09)
+
+### 🚀 Features
+
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+
+### 🩹 Fixes
+
+- **grid:** grid selection styles spilling over grouping column cells ([097f4c730d](https://github.com/telerik/kendo-themes/commit/097f4c730d))
+- **material:** grouping rows and group cells do not match design ([19a1af4cbc](https://github.com/telerik/kendo-themes/commit/19a1af4cbc))
+
 ## 14.2.0-dev.1 (2026-06-08)
 
 ### 🩹 Fixes

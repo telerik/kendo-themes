@@ -1,3 +1,18 @@
+## 14.2.0-dev.2 (2026-06-09)
+
+### 🚀 Features
+
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+
+### 🩹 Fixes
+
+- **material:** grouping rows and group cells do not match design ([19a1af4cbc](https://github.com/telerik/kendo-themes/commit/19a1af4cbc))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+
 ## 14.2.0-dev.1 (2026-06-08)
 
 This was a version bump only for @progress/kendo-theme-material to align it with other projects, there were no code changes.

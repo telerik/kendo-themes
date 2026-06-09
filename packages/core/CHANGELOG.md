@@ -1,3 +1,18 @@
+## 14.2.0-dev.2 (2026-06-09)
+
+### 🚀 Features
+
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+
+### 🩹 Fixes
+
+- **grid:** grid selection styles spilling over grouping column cells ([097f4c730d](https://github.com/telerik/kendo-themes/commit/097f4c730d))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+
 ## 14.2.0-dev.1 (2026-06-08)
 
 This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
