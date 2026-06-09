@@ -41,10 +41,10 @@ export default () =>(
                             <TableTbody>
                                 <TableRow className="k-table-group-row k-grouping-row">
                                     <TableTd colspan={4}>
-                                        <p className="k-reset">
+                                        <div className="k-grouping-row-content">
                                             <Icon icon="chevron-down" />
-                                            Name: Chai
-                                        </p>
+                                            <span className="k-grouping-row-text">Name: Chai</span>
+                                        </div>
                                     </TableTd>
                                 </TableRow>
                                 <TableRow className="k-master-row" selected>
@@ -55,10 +55,10 @@ export default () =>(
                                 </TableRow>
                                 <TableRow className="k-table-group-row k-grouping-row">
                                     <TableTd colspan={4}>
-                                        <p className="k-reset">
+                                        <div className="k-grouping-row-content">
                                             <Icon icon="chevron-down" />
-                                            Name: Chang
-                                        </p>
+                                            <span className="k-grouping-row-text">Name: Chang</span>
+                                        </div>
                                     </TableTd>
                                 </TableRow>
                                 <TableRow className="k-master-row" alt>

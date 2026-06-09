@@ -171,20 +171,20 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={3}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                ID: 1
-                                            </p>
+                                                <span className="k-grouping-row-text">ID: 1</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={2} >
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
                                                  {/* grouping header template */}
                                                 Country: Germany
-                                            </p>
+                                            </div>
                                             <div className="k-grid-column-template">
                                                 <div className="k-column-template-item">
                                                     {/* grouping header column template */}
@@ -235,10 +235,10 @@ export default () =>(
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={2}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-right" />
-                                                Country: Mexico
-                                            </p>
+                                                <span className="k-grouping-row-text">Country: Mexico</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                 </TableTbody>

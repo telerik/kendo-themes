@@ -33,14 +33,9 @@
             border-block-end-width: 0;
         }
 
-        .k-grouping-row + .k-table-row .k-table-td {
-            border-block-start-width: $kendo-grid-grouping-row-border-width-y;
-        }
-
-        .k-grouping-row .k-group-cell,
-        .k-grouping-row + .k-table-row .k-group-cell {
+        .k-grouping-row .k-group-cell {
             border-block-width: 0;
-            border-inline-end-width: 1px;
+            border-inline-width: 0;
         }
 
         .k-group-footer .k-table-td {
@@ -67,6 +62,12 @@
                     padding-block-start: calc( #{$_cell-padding-y} - #{$kendo-grid-row-resizer-height} );
                     padding-block-end: $_cell-padding-y;
                 }
+            }
+        }
+
+        .k-master-row:has(+ .k-detail-row) {
+            > .k-table-td:not(.k-group-cell) {
+                border-block-end-width: 0;
             }
         }
     }
@@ -180,7 +181,11 @@
     // Master row
     .k-master-row .k-group-cell {
         border-block-width: 0;
-        border-inline-end-width: $kendo-grid-border-width;
+    }
+
+    .k-detail-row .k-group-cell + :not(.k-group-cell),
+    .k-master-row .k-group-cell + :not(.k-group-cell) {
+        border-inline-start: 1px solid;
     }
 
     .k-master-row.k-expanded .k-table-td {

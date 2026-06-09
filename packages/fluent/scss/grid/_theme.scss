@@ -59,6 +59,13 @@
         .k-table-row.k-selected > .k-table-td.k-grid-content-sticky {
             border-inline-color: $kendo-grid-sticky-border;
         }
+
+        .k-detail-row,
+        .k-master-row {
+            .k-group-cell + :not(.k-group-cell) {
+                border-inline-start-color: $kendo-grid-border;
+            }
+        }
     }
 
     // Grid header

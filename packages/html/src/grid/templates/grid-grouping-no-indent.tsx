@@ -3,7 +3,7 @@ import { Chip, ChipList, ChipAction } from '../../chip';
 import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableRow, TableTd, TableTbody } from '../../table';
 
-export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) => (
+export const GridGroupingNoIndent = ({ dropClue, contentClassName, ...other }: any) => (
     <Grid _renderAriaRoot
         groupingHeader={(
             <GridGroupingHeader dropClue={dropClue} role="toolbar" aria-label="Grouping">
@@ -29,16 +29,14 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable role="none">
                             <colgroup>
-                                <col className="k-group-col"/><col className="k-group-col"/><col /><col /><col /><col />
+                                <col /><col /><col /><col />
                             </colgroup>
                             <TableThead role="rowgroup">
                                 <TableRow role="row">
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" role="presentation"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell" role="presentation"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="ID" role="columnheader"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="Name" role="columnheader"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="Price" role="columnheader"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="Category" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="ID" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Name" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Price" role="columnheader"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Category" role="columnheader"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -48,11 +46,11 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                     <GridContent className={contentClassName}>
                         <GridTable role="none">
                             <colgroup>
-                                <col className="k-group-col"/><col className="k-group-col"/><col /><col /><col /><col />
+                                <col /><col /><col /><col />
                             </colgroup>
                             <TableTbody role="rowgroup">
                                 <TableRow className="k-table-group-row k-grouping-row" role="row">
-                                    <TableTd colspan={6} role="gridcell" aria-expanded="true">
+                                    <TableTd colspan={4} role="gridcell" aria-expanded="true">
                                         <div className="k-grouping-row-content">
                                             <Icon icon="chevron-down" />
                                             <span className="k-grouping-row-text">ID: 1</span>
@@ -60,32 +58,35 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                                     </TableTd>
                                 </TableRow>
                                 <TableRow className="k-table-group-row k-grouping-row" role="row">
-                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
-                                    <TableTd colspan={5} role="gridcell" aria-expanded="true">
+                                    <TableTd colspan={4} role="gridcell" aria-expanded="true" style={{ '--kendo-grid-grouping-level': 1 } as React.CSSProperties}>
                                         <div className="k-grouping-row-content">
                                             <Icon icon="chevron-down" />
                                             <span className="k-grouping-row-text">Name: Chai</span>
                                         </div>
                                     </TableTd>
                                 </TableRow>
+                                <TableRow className="k-table-group-row k-grouping-row" role="row">
+                                    <TableTd colspan={4} role="gridcell" aria-expanded="true" style={{ '--kendo-grid-grouping-level': 2 } as React.CSSProperties}>
+                                        <div className="k-grouping-row-content">
+                                            <Icon icon="chevron-down" />
+                                            <span className="k-grouping-row-text">Category: Beverages</span>
+                                        </div>
+                                    </TableTd>
+                                </TableRow>
                                 <TableRow className="k-master-row" role="row">
-                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
-                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
-                                    <TableTd colspan={0} role="gridcell">1</TableTd>
-                                    <TableTd colspan={0} role="gridcell">Chai</TableTd>
-                                    <TableTd colspan={0} role="gridcell">$18.00</TableTd>
-                                    <TableTd colspan={0} role="gridcell">Beverages</TableTd>
+                                    <TableTd role="gridcell">1</TableTd>
+                                    <TableTd role="gridcell">Chai</TableTd>
+                                    <TableTd role="gridcell">$18.00</TableTd>
+                                    <TableTd role="gridcell">Beverages</TableTd>
                                 </TableRow>
                                 <TableRow className="k-master-row" role="row" alt>
-                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
-                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
-                                    <TableTd colspan={0} role="gridcell">3</TableTd>
-                                    <TableTd colspan={0} role="gridcell">Aniseed Syrup</TableTd>
-                                    <TableTd colspan={0} role="gridcell">$10.00</TableTd>
-                                    <TableTd colspan={0} role="gridcell">Condiments</TableTd>
+                                    <TableTd role="gridcell">3</TableTd>
+                                    <TableTd role="gridcell">Aniseed Syrup</TableTd>
+                                    <TableTd role="gridcell">$10.00</TableTd>
+                                    <TableTd role="gridcell">Beverages</TableTd>
                                 </TableRow>
                                 <TableRow className="k-table-group-row k-grouping-row" role="row">
-                                    <TableTd colspan={6} role="gridcell" aria-expanded="false">
+                                    <TableTd colspan={4} role="gridcell" aria-expanded="false">
                                         <div className="k-grouping-row-content">
                                             <Icon icon="chevron-right" />
                                             <span className="k-grouping-row-text">ID: 2</span>
