@@ -66,7 +66,7 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow className="k-table-group-row k-grouping-row" role="row">
                                         <TableTd colspan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon icon="chevron-down" />Lehmanns Marktstand</p>
+                                            <div className="k-grouping-row-content"><Icon icon="chevron-down" /><span className="k-grouping-row-text">Lehmanns Marktstand</span></div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row">
@@ -91,7 +91,7 @@ export default () =>(
                                     </TableRow>
                                     <TableRow className="k-table-group-row k-grouping-row" role="row">
                                         <TableTd colspan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon icon="chevron-down" />Split Rail Beer &amp; Ale</p>
+                                            <div className="k-grouping-row-content"><Icon icon="chevron-down" /><span className="k-grouping-row-text">Split Rail Beer &amp; Ale</span></div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row">
@@ -116,7 +116,7 @@ export default () =>(
                                     </TableRow>
                                     <TableRow className="k-table-group-row k-grouping-row" role="row">
                                         <TableTd colspan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon icon="chevron-down" />Wartian Herkku</p>
+                                            <div className="k-grouping-row-content"><Icon icon="chevron-down" /><span className="k-grouping-row-text">Wartian Herkku</span></div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row">

@@ -54,10 +54,10 @@ export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
                             <TableTbody role="rowgroup">
                                 <TableRow className="k-table-group-row k-grouping-row" role="row" aria-rowindex={2}>
                                     <TableTd colspan={4} role="gridcell" aria-expanded={false} tabIndex={-1} aria-colindex={1}>
-                                        <p className="k-reset">
+                                        <div className="k-grouping-row-content">
                                             <Icon icon="chevron-right" />
-                                            Rating 3/5
-                                        </p>
+                                            <span className="k-grouping-row-text">Rating 3/5</span>
+                                        </div>
                                     </TableTd>
                                 </TableRow>
                             </TableTbody>
@@ -73,10 +73,10 @@ export const GridWithStickyGrouping = ({ contentClassName, ...other }: any) => (
                             <TableTbody role="rowgroup">
                                 <TableRow className="k-table-group-row k-grouping-row" role="row" aria-rowindex={2}>
                                     <TableTd colspan={4} role="gridcell" aria-expanded="true">
-                                        <p className="k-reset">
+                                        <div className="k-grouping-row-content">
                                             <Icon icon="chevron-down" />
-                                            Rating 5/5
-                                        </p>
+                                            <span className="k-grouping-row-text">Rating 5/5</span>
+                                        </div>
                                     </TableTd>
                                 </TableRow>
                                 <TableRow className="k-master-row" role="row" aria-rowindex={3}>

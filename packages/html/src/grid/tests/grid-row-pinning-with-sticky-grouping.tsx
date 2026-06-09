@@ -63,10 +63,10 @@ export default () => (
                 <TableTbody>
                   <TableRow className="k-table-group-row k-grouping-row">
                     <TableTd colspan={7}>
-                      <p className="k-reset">
+                      <div className="k-grouping-row-content">
                         <Icon icon="unpin" className="k-action-icon" />
                         Rating 1/5
-                      </p>
+                      </div>
                     </TableTd>
                   </TableRow>
                 </TableTbody>
@@ -84,10 +84,10 @@ export default () => (
                 <TableTbody>
                   <TableRow className="k-table-group-row k-grouping-row">
                     <TableTd colspan={7}>
-                      <p className="k-reset">
+                      <div className="k-grouping-row-content">
                         <Icon icon="chevron-right" />
-                        Rating 3/5
-                      </p>
+                        <span className="k-grouping-row-text">Rating 3/5</span>
+                      </div>
                     </TableTd>
                   </TableRow>
                 </TableTbody>

@@ -469,7 +469,13 @@ $kendo-grid-hierarchy-col-width: 32px !default;
 
 /// The grouping border top of the Grid row.
 /// @group grid
-$kendo-grid-grouping-row-border-top: 0px !default;
+$kendo-grid-grouping-row-border-top: 1px !default;
+/// The indent size for nested grouping rows.
+/// @group grid
+$kendo-grid-grouping-indent-size: k-spacing(6) !default;
+/// The margin at the end of the checkbox in grouping rows.
+/// @group grid
+$kendo-grid-grouping-row-checkbox-margin-end: k-spacing(3) !default;
 /// The vertical border of the Grid footer.
 /// @group grid
 $kendo-grid-group-footer-border-y: 1px !default;
@@ -658,6 +664,8 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
     $kendo-grid-drag-cell-width: $kendo-grid-drag-cell-width,
     $kendo-grid-hierarchy-col-width: $kendo-grid-hierarchy-col-width,
     $kendo-grid-grouping-row-border-top: $kendo-grid-grouping-row-border-top,
+    $kendo-grid-grouping-indent-size: $kendo-grid-grouping-indent-size,
+    $kendo-grid-grouping-row-checkbox-margin-end: $kendo-grid-grouping-row-checkbox-margin-end,
     $kendo-grid-group-footer-border-y: $kendo-grid-group-footer-border-y,
     $kendo-grid-row-resizer-hover-bg: $kendo-grid-row-resizer-hover-bg,
     $kendo-grid-row-resizer-active-bg: $kendo-grid-row-resizer-active-bg,

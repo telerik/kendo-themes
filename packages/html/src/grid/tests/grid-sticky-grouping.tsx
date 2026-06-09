@@ -70,10 +70,10 @@ export default () => (
               <TableTbody>
                 <TableRow className="k-table-group-row k-grouping-row">
                   <TableTd colspan={9}>
-                    <p className="k-reset">
+                    <div className="k-grouping-row-content">
                       <Icon icon="chevron-right" />
-                      Rating 3/5
-                    </p>
+                      <span className="k-grouping-row-text">Rating 3/5</span>
+                    </div>
                   </TableTd>
                 </TableRow>
               </TableTbody>
@@ -94,10 +94,10 @@ export default () => (
               <TableTbody>
                 <TableRow className="k-table-group-row k-grouping-row">
                   <TableTd colspan={9}>
-                    <p className="k-reset">
+                    <div className="k-grouping-row-content">
                       <Icon icon="chevron-down" />
-                      Rating 5/5
-                    </p>
+                      <span className="k-grouping-row-text">Rating 5/5</span>
+                    </div>
                   </TableTd>
                 </TableRow>
                 <TableRow className="k-master-row">
@@ -168,10 +168,10 @@ export default () => (
                 </TableRow>
                 <TableRow className="k-table-group-row k-grouping-row">
                   <TableTd colspan={9}>
-                    <p className="k-reset">
+                    <div className="k-grouping-row-content">
                       <Icon icon="chevron-down" />
-                      Rating 5/5
-                    </p>
+                      <span className="k-grouping-row-text">Rating 5/5</span>
+                    </div>
                   </TableTd>
                 </TableRow>
                 <TableRow className="k-master-row">
@@ -242,10 +242,10 @@ export default () => (
                 </TableRow>
                 <TableRow className="k-table-group-row k-grouping-row">
                   <TableTd colspan={9}>
-                    <p className="k-reset">
+                    <div className="k-grouping-row-content">
                       <Icon icon="chevron-down" />
-                      Rating 2/5
-                    </p>
+                      <span className="k-grouping-row-text">Rating 2/5</span>
+                    </div>
                   </TableTd>
                 </TableRow>
                 <TableRow className="k-master-row">
