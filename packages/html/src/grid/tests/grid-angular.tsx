@@ -89,7 +89,7 @@ export default () =>(
                                         <GridHeaderCell columnTitle="Hover" menu="filter" hover></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Focus" menu="filter" focus></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Active" menu="filter" active></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="Sorted" menu="filter" sortable></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Sorted" menu="filter" sortable sorted></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>

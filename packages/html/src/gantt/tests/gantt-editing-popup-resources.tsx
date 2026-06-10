@@ -61,8 +61,8 @@ export default () =>(
                                                         </span>
                                                         <label className="k-checkbox-label"></label>
                                                     </GridHeaderCell>
-                                                    <GridHeaderCell menu="filter" columnTitle="Resources" sortable></GridHeaderCell>
-                                                    <GridHeaderCell menu="filter" columnTitle="Units" sortable></GridHeaderCell>
+                                                    <GridHeaderCell menu="filter" columnTitle="Resources" sortable sorted></GridHeaderCell>
+                                                    <GridHeaderCell menu="filter" columnTitle="Units" sortable sorted></GridHeaderCell>
                                                 </TableRow>
                                             </TableThead>
                                         </GridHeaderTable>

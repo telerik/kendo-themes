@@ -4,7 +4,7 @@ import { Popup } from '../../popup';
 import { ColumnMenuNormal } from '../../column-menu';
 import { nextId } from '../../misc';
 
-export const GridWithColumnMenuOpen = ({ contentClassName, sortable, resizable, ...other }: any) => {
+export const GridWithColumnMenuOpen = ({ contentClassName, sortable, sorted, resizable, ...other }: any) => {
     const columnMenuPopupId = nextId('grid-colmenu-popup');
 
     return (
@@ -25,6 +25,7 @@ export const GridWithColumnMenuOpen = ({ contentClassName, sortable, resizable, 
                                     <TableRow role="row">
                                         <GridHeaderCell
                                             sortable={sortable}
+                                            sorted={sorted}
                                             resizable={resizable}
                                             rowspan={1}
                                             colspan={1}
@@ -36,8 +37,8 @@ export const GridWithColumnMenuOpen = ({ contentClassName, sortable, resizable, 
                                             aria-expanded="true"
                                             aria-controls={columnMenuPopupId}
                                         ></GridHeaderCell>
-                                        <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Name" filterable role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
-                                        <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Category" filterable role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                        <GridHeaderCell sortable={sortable} sorted={sorted} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Name" filterable role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                        <GridHeaderCell sortable={sortable} sorted={sorted} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Category" filterable role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>

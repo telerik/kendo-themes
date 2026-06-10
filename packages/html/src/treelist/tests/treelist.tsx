@@ -117,7 +117,7 @@ export default () =>(
                                 <TableThead>
                                     <TableRow>
                                         <GridHeaderCell columnTitle="Name"></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="Position" sortable></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Position" sortable sorted></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Hire Date"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>

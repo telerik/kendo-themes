@@ -156,7 +156,7 @@ export default () => (
                                             <TableRow>
                                                 <GridHeaderCell columnTitle="Header Name 1"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header Name 2"></GridHeaderCell>
-                                                <GridHeaderCell columnTitle="Header Name 3" sortable sortIcon="sort-asc-small"></GridHeaderCell>
+                                                <GridHeaderCell columnTitle="Header Name 3" sortable sorted sortIcon="sort-asc-small"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header Name 4"></GridHeaderCell>
                                             </TableRow>
                                         </TableThead>
@@ -250,8 +250,8 @@ export default () => (
                                             <TableRow>
                                                 <GridHeaderCell columnTitle="Header Name 1"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header Name 2"></GridHeaderCell>
-                                                <GridHeaderCell columnTitle="Header Name 3" sortable sortIcon="sort-asc-small" sortOrder={1}></GridHeaderCell>
-                                                <GridHeaderCell columnTitle="Header Name 4" sortable sortIcon="sort-desc-small" sortOrder={2}></GridHeaderCell>
+                                                <GridHeaderCell columnTitle="Header Name 3" sortable sorted sortIcon="sort-asc-small" sortOrder={1}></GridHeaderCell>
+                                                <GridHeaderCell columnTitle="Header Name 4" sortable sorted sortIcon="sort-desc-small" sortOrder={2}></GridHeaderCell>
                                             </TableRow>
                                         </TableThead>
                                     </GridHeaderTable>

@@ -15,6 +15,7 @@ const states = [
 export type KendoGridHeaderCellProps = KendoTableThProps & {
     menu?: "filter" | "column";
     sortable?: boolean;
+    sorted?: boolean;
     filterable?: boolean;
     sticky?: boolean;
     resizable?: boolean;
@@ -39,6 +40,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
     const {
         menu,
         sortable,
+        sorted,
         filterable,
         sticky,
         resizable,
@@ -60,7 +62,8 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
                 GRIDHEADERCELL_CLASSNAME,
                 {
                     [`k-filterable`]: menu || filterable,
-                    [`k-sorted`]: sortable,
+                    [`k-sortable`]: sortable,
+                    [`k-sorted`]: sorted,
                     [`k-grid-header-sticky`]: sticky,
                     [`k-touch-action-none`]: resizable
                 },

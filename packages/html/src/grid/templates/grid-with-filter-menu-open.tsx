@@ -4,7 +4,7 @@ import { Popup } from '../../popup';
 import { FilterMenuNormal } from '../../column-menu';
 import { nextId } from '../../misc';
 
-export const GridWithFilterMenuOpen = ({ contentClassName, sortable, resizable, ...other }: any) => {
+export const GridWithFilterMenuOpen = ({ contentClassName, sortable, sorted, resizable, ...other }: any) => {
     const filterPopupId = nextId('grid-filter-popup');
 
     return (
@@ -25,6 +25,7 @@ export const GridWithFilterMenuOpen = ({ contentClassName, sortable, resizable, 
                                     <TableRow role="row">
                                         <GridHeaderCell
                                             sortable={sortable}
+                                            sorted={sorted}
                                             resizable={resizable}
                                             rowspan={1}
                                             colspan={1}
@@ -35,8 +36,8 @@ export const GridWithFilterMenuOpen = ({ contentClassName, sortable, resizable, 
                                             aria-expanded="true"
                                             aria-controls={filterPopupId}
                                         ></GridHeaderCell>
-                                        <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="City" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
-                                        <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="Title" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                        <GridHeaderCell sortable={sortable} sorted={sorted} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="City" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                        <GridHeaderCell sortable={sortable} sorted={sorted} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="Title" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
