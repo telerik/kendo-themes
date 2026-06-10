@@ -32,7 +32,7 @@ export default () =>(
                                 <TableThead>
                                     <TableRow>
                                         <GridHeaderCell rowspan={1} columnTitle="Order ID"></GridHeaderCell>
-                                        <GridHeaderCell sortable sortIcon="sort-desc-small" sortOrder={1} rowspan={1} columnTitle="Ship Name"></GridHeaderCell>
+                                        <GridHeaderCell sortable sorted sortIcon="sort-desc-small" sortOrder={1} rowspan={1} columnTitle="Ship Name"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -45,7 +45,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow>
-                                        <GridHeaderCell sortable sortOrder={2} rowspan={1} columnTitle="Ship Country"></GridHeaderCell>
+                                        <GridHeaderCell sortable sorted sortOrder={2} rowspan={1} columnTitle="Ship Country"></GridHeaderCell>
                                         <GridHeaderCell rowspan={1} columnTitle="Ship City"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>

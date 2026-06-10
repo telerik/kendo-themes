@@ -87,7 +87,7 @@ export default () =>(
                                     <GridHeaderCell colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell colspan={1} sortable menu="filter" columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} sortable sorted menu="filter" columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -154,7 +154,7 @@ export default () =>(
                                     <GridHeaderCell resizable colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell resizable sortable colspan={1} menu="filter" columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell resizable sortable sorted colspan={1} menu="filter" columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell resizable colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>

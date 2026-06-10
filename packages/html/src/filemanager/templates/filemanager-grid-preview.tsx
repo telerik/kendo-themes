@@ -64,7 +64,7 @@ export const FileManagerGridPreview = (props) => (
                                     </colgroup>
                                     <TableThead>
                                         <TableRow>
-                                            <GridHeaderCell sortable columnTitle="Name"></GridHeaderCell>
+                                            <GridHeaderCell sortable sorted columnTitle="Name"></GridHeaderCell>
                                             <GridHeaderCell columnTitle="Date Created"></GridHeaderCell>
                                             <GridHeaderCell columnTitle="File Size"></GridHeaderCell>
                                         </TableRow>

@@ -178,10 +178,16 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 outline: 0;
+                cursor: default;
             }
 
             .k-table-th > .k-link:focus {
                 text-decoration: none;
+            }
+
+            .k-sortable > .k-link,
+            .k-sortable .k-cell-inner > .k-link {
+                cursor: pointer;
             }
 
             .k-grid-filter,
@@ -203,6 +209,8 @@
             }
 
             .k-cell-inner > .k-link {
+                cursor: default;
+
                 > .k-sort-icon {
                     vertical-align: text-top;
                     margin-inline-start: $kendo-grid-sorted-icon-spacing;
