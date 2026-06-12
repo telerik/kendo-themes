@@ -25,5 +25,11 @@
             "trigger": "Enter or Space"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Authoring Practices: Button Pattern",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/"
+        }
+    ]
 }

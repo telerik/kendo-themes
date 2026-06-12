@@ -1,8 +1,14 @@
 # Tabstrip Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Tabstrip component:
+Out of the box, the Telerik and Kendo UI Tabstrip provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Tabstrip is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -16,7 +22,7 @@ The following table lists the ARIA attributes applied to the Tabstrip component:
 | `.k-tabstrip-content` | `aria-labelledby` | Refers to the tab element that controls the panel. |
 | `.k-tabstrip-scrollable .k-button` | `aria-hidden` = `true` | Scroll buttons are hidden from assistive technologies. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Tabstrip component:
 
@@ -30,3 +36,22 @@ The following table lists the keyboard shortcuts supported by the Tabstrip compo
 | `Home` | Moves focus to and activates the first tab. |
 | `End` | Moves focus to and activates the last tab. |
 | `Delete or Backspace` | Removes the focused tab from the tab list. |
+
+### Testing
+
+The Tabstrip has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Tabstrip has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA specification for tablist](https://www.w3.org/TR/wai-aria-1.2/#tablist)
+- [WAI-ARIA practices: TabList example](https://www.w3.org/WAI/ARIA/apg/example-index/tabs/tabs-automatic.html)

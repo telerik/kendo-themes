@@ -36,5 +36,11 @@
             "trigger": "Space or Enter"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "ARIA practices Navigation",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#navigation"
+        }
+    ]
 }

@@ -116,5 +116,11 @@
             "trigger": "Shift + Enter"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for log",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#log"
+        }
+    ]
 }

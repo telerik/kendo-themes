@@ -138,5 +138,11 @@
             "trigger": "Enter"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Authoring Practices: ListBox Pattern",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/listbox/"
+        }
+    ]
 }

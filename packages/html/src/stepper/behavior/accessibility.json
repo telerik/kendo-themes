@@ -55,5 +55,11 @@
             "trigger": "Space or Enter"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for navigation",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#navigation"
+        }
+    ]
 }

@@ -146,5 +146,15 @@
             "trigger": "ArrowUp"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for combobox",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#combobox"
+        },
+        {
+            "text": "WAI-ARIA specification for listbox",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#listbox"
+        }
+    ]
 }

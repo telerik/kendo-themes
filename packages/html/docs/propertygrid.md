@@ -1,8 +1,14 @@
 # Propertygrid Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Propertygrid component:
+Out of the box, the Telerik and Kendo UI Propertygrid provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Propertygrid is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -21,7 +27,7 @@ The following table lists the ARIA attributes applied to the Propertygrid compon
 | `.k-grid-content>table>tbody>tr:not(.k-hidden)` | `aria-expanded` | Set on the currently expanded row(s). |
 | `.k-treelist-toggle[class*="i-chevron-down"],.k-treelist-toggle[class*="i-chevron-right"]` | `aria-hidden` = `true` | Removes the expand/collapse icon from the accessibility tree. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Propertygrid component:
 
@@ -42,3 +48,21 @@ The following table lists the keyboard shortcuts supported by the Propertygrid c
 | `Shift + Tab` | Moves to the previous editor in the row (closing current editor). If focus is already on the first editable cell on the row, focus is moved to the last editable cell on the previous row, and it's editor is opened. |
 | `Enter` | Commits changes for the edited item, and moves focus back to the edited cell. |
 | `Escape` | Cancels the edit. The focus goes to the current cell. |
+
+### Testing
+
+The Propertygrid has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Propertygrid has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA specification for tree grid](https://www.w3.org/TR/wai-aria-1.2/#treegrid)

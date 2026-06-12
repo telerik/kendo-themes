@@ -97,5 +97,11 @@
         }
     ],
     "uxSpec": [],
-    "kbSpec": []
+    "kbSpec": [],
+    "resources": [
+        {
+            "text": "ARIA practices Date Picker Dialog Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html"
+        }
+    ]
 }

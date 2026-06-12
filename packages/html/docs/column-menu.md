@@ -1,8 +1,14 @@
 # ColumnMenu Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the ColumnMenu component:
+Out of the box, the Telerik and Kendo UI ColumnMenu provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The ColumnMenu is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -17,7 +23,7 @@ The following table lists the ARIA attributes applied to the ColumnMenu componen
 | `.k-column-list .k-column-list-item` | `role` = `option` | Sets the option role of the list item. |
 | `.k-column-list .k-column-list-item` | `aria-checked` = `true` / `false` | Sets the checked state of list item. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the ColumnMenu component:
 
@@ -30,3 +36,21 @@ The following table lists the keyboard shortcuts supported by the ColumnMenu com
 | `ArrowDown or ArrowUp` | Moves the focus to the next/previous item when focus is in the ColumnChooser list of options. |
 | `Space` | Toggles the checked state of the focused ColumnChooser option. |
 | `Escape` | When focus is inside a sub-view, returns to the main view and focuses the item that opened the sub-view. When focus is on the main view, closes the ActionSheet and returns focus to the element from which the menu was opened. |
+
+### Testing
+
+The ColumnMenu has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The ColumnMenu has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [MDN reference for the dialog role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role)

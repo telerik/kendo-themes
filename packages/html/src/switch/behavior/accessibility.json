@@ -62,5 +62,11 @@
             "trigger": "Space"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Specification for the Switch",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#switch"
+        }
+    ]
 }

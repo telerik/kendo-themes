@@ -83,5 +83,11 @@
             "trigger": "Space"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "ARIA practices Navigation Treeview Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/treeview/treeview-navigation.html"
+        }
+    ]
 }

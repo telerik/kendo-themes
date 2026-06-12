@@ -27,5 +27,15 @@
         }
     ],
     "uxSpec": [],
-    "kbSpec": []
+    "kbSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA spec: Role Alert",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#alert"
+        },
+        {
+            "text": "ARIA Practices: Alert",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/alert/"
+        }
+    ]
 }

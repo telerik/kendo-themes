@@ -113,5 +113,15 @@
             "trigger": "Escape"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "ARIA practices: TreeView Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/"
+        },
+        {
+            "text": "ARIA practices: Select-Only Combobox Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html"
+        }
+    ]
 }

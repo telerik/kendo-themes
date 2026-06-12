@@ -43,5 +43,11 @@
             "trigger": "Enter"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "ARIA practices: BreadCrumb Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/breadcrumb/index.html"
+        }
+    ]
 }

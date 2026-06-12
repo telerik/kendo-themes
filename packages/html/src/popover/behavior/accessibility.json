@@ -39,5 +39,19 @@
             "trigger": "Escape"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for tooltip",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/"
+        },
+        {
+            "text": "MDN description for tooltip role",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role"
+        },
+        {
+            "text": "MDN description for dialog role",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role"
+        }
+    ]
 }

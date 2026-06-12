@@ -117,5 +117,11 @@
         }
     ],
     "uxSpec": [],
-    "kbSpec": []
+    "kbSpec": [],
+    "resources": [
+        {
+            "text": "ARIA practices File Directory Treeview Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/treeview/treeview-1/treeview-1a.html"
+        }
+    ]
 }

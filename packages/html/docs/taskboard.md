@@ -1,8 +1,14 @@
 # Taskboard Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Taskboard component:
+Out of the box, the Telerik and Kendo UI Taskboard provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Taskboard is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -22,7 +28,7 @@ The following table lists the ARIA attributes applied to the Taskboard component
 | `.k-taskboard-edit-pane .k-form` | `role` = `form` | The edit Form needs the appropriate role. |
 | `.k-taskboard-edit-pane .k-form` | `aria-labelledby` | The TaskBoard edit form must be labeled by the header text of the pane. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Taskboard component:
 
@@ -46,3 +52,21 @@ The following table lists the keyboard shortcuts supported by the Taskboard comp
 | `Escape` | Closes the pane and returns focus to the element that opened it. |
 | `Tab` | Moves focus to the next field or action in the pane. |
 | `Shift + Tab` | Moves focus to the previous field or action in the pane. |
+
+### Testing
+
+The Taskboard has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Taskboard has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA spec: Role List](https://www.w3.org/TR/wai-aria-1.2/#listt)

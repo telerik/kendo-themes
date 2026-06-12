@@ -1,8 +1,14 @@
 # Menu Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Menu component:
+Out of the box, the Telerik and Kendo UI Menu provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Menu is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -20,7 +26,7 @@ The following table lists the ARIA attributes applied to the Menu component:
 | `.k-menu-item` | `aria-controls` = `ul.k-menu-group id` | Points to the ID of the submenu. Only present when the item controls a submenu element. |
 | `.k-menu-popup .k-menu-group` | `id` | Each nested menu has a deterministic id linked to the parent aria-controls. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Menu component:
 
@@ -40,3 +46,21 @@ The following table lists the keyboard shortcuts supported by the Menu component
 | `ArrowDown` | Focuses the next item. |
 | `ArrowLeft` | (For root items) opens the item and focuses the last child.; (For child items) closes and focuses the parent. |
 | `ArrowRight` | If the item has children, opens the item and focuses the first child. For child items without children, focuses and opens the next root item. |
+
+### Testing
+
+The Menu has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Menu has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [ARIA patterns Menu](https://www.w3.org/WAI/ARIA/apg/patterns/menu/)

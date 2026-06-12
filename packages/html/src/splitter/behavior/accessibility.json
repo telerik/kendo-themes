@@ -72,5 +72,15 @@
             "trigger": "Tab"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for separator",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#separator"
+        },
+        {
+            "text": "MDN reference for the separator role",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/separator_role"
+        }
+    ]
 }

@@ -1,8 +1,14 @@
 # Treelist Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Treelist component:
+Out of the box, the Telerik and Kendo UI Treelist provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Treelist is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -54,10 +60,28 @@ The following table lists the ARIA attributes applied to the Treelist component:
 | `.k-grid-lockedcolumns .k-grid-content td` | `role` = `gridcell` | Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns. |
 | `.k-drag-cell` | `aria-label` | Must be present in a Drag Row scenario on the cell containing the drag handle. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Treelist component:
 
 | Trigger | Behavior |
 | --- | --- |
 | `Enter` | In expandable and non-editable cell - expands or collapses the item. |
+
+### Testing
+
+The Treelist has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Treelist has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA specification for tree grid](https://www.w3.org/TR/wai-aria-1.2/#treegrid)

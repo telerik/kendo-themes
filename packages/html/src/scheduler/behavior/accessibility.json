@@ -210,5 +210,15 @@
             "trigger": "ArrowDown"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for grid",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#grid"
+        },
+        {
+            "text": "WAI-ARIA specification for application",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#application"
+        }
+    ]
 }

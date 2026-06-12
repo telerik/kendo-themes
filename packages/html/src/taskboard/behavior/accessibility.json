@@ -173,5 +173,11 @@
             "trigger": "Shift + Tab"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA spec: Role List",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#listt"
+        }
+    ]
 }

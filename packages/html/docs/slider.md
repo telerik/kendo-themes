@@ -1,8 +1,14 @@
 # Slider Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Slider component:
+Out of the box, the Telerik and Kendo UI Slider provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Slider is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -23,7 +29,7 @@ The following table lists the ARIA attributes applied to the Slider component:
 | `.k-slider .k-tick` | `role` = `presentation` | Removes semantic meaning from individual tick elements. Ticks are visual-only markers. |
 | `.k-slider .k-tick` | `title` | Represents the value associated with the respective tick. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Slider component:
 
@@ -35,3 +41,21 @@ The following table lists the keyboard shortcuts supported by the Slider compone
 | `End` | Sets value to the Max value. |
 | `PageUp` | Increases value by large step. |
 | `PageDown` | Decreases value by large step. |
+
+### Testing
+
+The Slider has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Slider has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA specification for slider](https://www.w3.org/TR/wai-aria-1.2/#slider)

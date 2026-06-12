@@ -24,5 +24,15 @@
             "trigger": "Alt/Opt(Mac) + ArrowUp"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI ARIA specification for combobox",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#combobox"
+        },
+        {
+            "text": "ARIA practices Date Picker Dialog Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html"
+        }
+    ]
 }

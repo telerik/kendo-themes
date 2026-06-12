@@ -47,5 +47,15 @@
             "trigger": "Enter or Space"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA `button` Role Specification",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#button"
+        },
+        {
+            "text": "WAI-ARIA `group` Role Specification",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#group"
+        }
+    ]
 }

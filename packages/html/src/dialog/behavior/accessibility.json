@@ -37,5 +37,11 @@
             "trigger": "Escape"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "ARIA practices Modal Dialog Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/"
+        }
+    ]
 }

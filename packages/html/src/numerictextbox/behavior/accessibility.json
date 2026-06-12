@@ -78,5 +78,11 @@
             "trigger": "ArrowDown"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Authoring Practices: Spinbutton Pattern",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/"
+        }
+    ]
 }

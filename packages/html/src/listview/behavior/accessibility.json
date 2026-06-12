@@ -76,5 +76,15 @@
             "trigger": "Escape"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Specification: List",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#list"
+        },
+        {
+            "text": "WAI-ARIA Specification: Listitem",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#listitem"
+        }
+    ]
 }

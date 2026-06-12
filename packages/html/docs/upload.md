@@ -1,8 +1,14 @@
 # Upload Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Upload component:
+Out of the box, the Telerik and Kendo UI Upload provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Upload is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -17,7 +23,7 @@ The following table lists the ARIA attributes applied to the Upload component:
 | `.k-upload .k-upload-actions .k-upload-action` | `aria-label` | Provides accessible names for the file action buttons. |
 | `.k-upload .k-upload-actions .k-upload-action` | `tabindex` = `-1` | The list file action buttons are not focusable elements. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Upload component:
 
@@ -31,3 +37,21 @@ The following table lists the keyboard shortcuts supported by the Upload compone
 | `Escape` | Cancels the upload of the highlighted file when the focus is on a file list item |
 | `Space` | When Chunk upload is enabled Start or Pause the highlighted file upload |
 | `Delete` | Removes the highlighted file when the focus is on a file list item. Focus is moved to the next file (if present), previous file (if there is no next and there is previous), or is returned to the Select Files button if the last file from the list is deleted. |
+
+### Testing
+
+The Upload has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Upload has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA Practices](https://www.w3.org/WAI/ARIA/apg/)

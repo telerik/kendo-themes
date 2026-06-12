@@ -59,5 +59,11 @@
             "behavior": "Moves focus to the next checkbox."
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Authoring Practices: CheckBox Pattern",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/"
+        }
+    ]
 }

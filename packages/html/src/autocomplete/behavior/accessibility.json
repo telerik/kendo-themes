@@ -73,5 +73,15 @@
             "trigger": "Enter"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Authoring Practices: Editable Combobox With Both List and Inline Autocomplete Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html"
+        },
+        {
+            "text": "WAI-ARIA Authoring Practices: Editable Combobox With List Autocomplete Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html"
+        }
+    ]
 }

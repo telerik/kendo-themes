@@ -24,5 +24,11 @@
         }
     ],
     "uxSpec": [],
-    "kbSpec": []
+    "kbSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Authoring Practices: Navigation Menu Button Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/menu-button/menu-button-links.html"
+        }
+    ]
 }

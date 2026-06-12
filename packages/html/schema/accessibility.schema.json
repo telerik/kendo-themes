@@ -4,6 +4,18 @@
   "additionalProperties": false,
   "properties": {
     "$schema": { "type": "string" },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "url"],
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
     "ariaSpec": {
       "type": "array",
       "items": {

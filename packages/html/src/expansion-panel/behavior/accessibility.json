@@ -49,5 +49,11 @@
             "trigger": "Space"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "ARIA Practices: Accordion Pattern",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/accordion/"
+        }
+    ]
 }

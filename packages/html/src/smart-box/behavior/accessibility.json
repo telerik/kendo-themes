@@ -145,5 +145,15 @@
             "trigger": "Escape"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "ARIA Authoring Practices Guide",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/"
+        },
+        {
+            "text": "ARIA Authoring Practices: Combobox Pattern",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/"
+        }
+    ]
 }

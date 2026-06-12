@@ -68,5 +68,11 @@
             "trigger": "End"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for slider",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#slider"
+        }
+    ]
 }

@@ -61,5 +61,15 @@
         }
     ],
     "uxSpec": [],
-    "kbSpec": []
+    "kbSpec": [],
+    "resources": [
+        {
+            "text": "ARIA Practices: Carousel",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/carousel/"
+        },
+        {
+            "text": "ARIA Practices: Carousel Example with Buttons",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/carousel/carousel-1-prev-next.html"
+        }
+    ]
 }

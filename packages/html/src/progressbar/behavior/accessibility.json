@@ -32,5 +32,15 @@
         }
     ],
     "uxSpec": [],
-    "kbSpec": []
+    "kbSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for progressbar",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#progressbar"
+        },
+        {
+            "text": "MDN reference for the progressbar role",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/progressbar_role#associated_wai-aria_roles_states_and_properties"
+        }
+    ]
 }

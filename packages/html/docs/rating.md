@@ -1,8 +1,14 @@
 # Rating Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Rating component:
+Out of the box, the Telerik and Kendo UI Rating provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Rating is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -15,7 +21,7 @@ The following table lists the ARIA attributes applied to the Rating component:
 | `.k-rating.k-disabled` | `aria-disabled` = `true` | Rendered only when the Rating is disabled. |
 | `.k-rating.k-readonly` | `aria-readonly` = `true` | Rendered only when the Rating is readonly. Readonly ratings remain focusable but their value cannot be changed. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Rating component:
 
@@ -25,3 +31,21 @@ The following table lists the keyboard shortcuts supported by the Rating compone
 | `ArrowUp or ArrowRight` | Increases value by one rating step. |
 | `Home` | Sets value to the Min available value in the Rating. |
 | `End` | Sets value to the Max available value in the Rating. |
+
+### Testing
+
+The Rating has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Rating has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA specification for slider](https://www.w3.org/TR/wai-aria-1.2/#slider)

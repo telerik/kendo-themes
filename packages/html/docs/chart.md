@@ -1,6 +1,12 @@
 # Chart Accessibility
 
-## Keyboard Navigation
+## Accessibility Support
+
+Out of the box, the Telerik and Kendo UI Chart provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Chart is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Chart component:
 
@@ -30,3 +36,22 @@ The following table lists the keyboard shortcuts supported by the Chart componen
 | `ArrowDown or ArrowRight (legend)` | Move focus to the next legend item. Cycles to the first item at the end. |
 | `Enter (legend)` | Toggles the series visibility similar to the click action. |
 | `Escape (legend)` | Moves the focus to the root element of the chart. |
+
+### Testing
+
+The Chart has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Chart has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0/)
+- [Accessibility Style Guide: SVGs](https://a11y-style-guide.com/style-guide/section-media.html#kssref-media-svgs)

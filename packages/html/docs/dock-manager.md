@@ -1,15 +1,21 @@
 # DockManager Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the DockManager component:
+Out of the box, the Telerik and Kendo UI DockManager provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The DockManager is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
 | `.k-dock-manager` | `role` = `application` | Indicates that the DockManager has its own keyboard navigation implemented. |
 | `.k-dock-manager` | `aria-live` = `polite` | Defines dynamic content changes within the DockManager container. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the DockManager component:
 
@@ -26,3 +32,17 @@ The following table lists the keyboard shortcuts supported by the DockManager co
 | `Control/Cmd(Mac) + Shift + ArrowDown` | Docks the active pane to the global bottom. |
 | `Control/Cmd(Mac) + Shift + ArrowLeft` | Docks the active pane to the global left. |
 | `Control/Cmd(Mac) + Shift + ArrowRight` | Docks the active pane to the global right. |
+
+### Testing
+
+The DockManager has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The DockManager has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |

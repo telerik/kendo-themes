@@ -1,8 +1,14 @@
 # Timeline Accessibility
 
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the Timeline component:
+Out of the box, the Telerik and Kendo UI Timeline provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The Timeline is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
+
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -21,7 +27,7 @@ The following table lists the ARIA attributes applied to the Timeline component:
 | `.k-timeline.k-timeline-collapsible .k-collapsed .k-card` | `aria-expanded` = `false` | Collapsed cards announce their collapsed state. |
 | `.k-timeline.k-timeline-collapsible .k-timeline-card:not(.k-collapsed) .k-card` | `aria-expanded` = `true` | Expanded cards announce their expanded state. |
 
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the Timeline component:
 
@@ -35,3 +41,22 @@ The following table lists the keyboard shortcuts supported by the Timeline compo
 | `Tab` | Focuses the next item (button) in the Timeline. |
 | `Enter` | If expandable, expands/collapses the currently focused item. |
 | `Space` | If expandable, expands/collapses the currently focused item. |
+
+### Testing
+
+The Timeline has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The Timeline has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+### Resources
+
+- [WAI-ARIA specification for tablist](https://www.w3.org/TR/wai-aria-1.2/#tablist)
+- [WAI-ARIA practices: TabList example](https://www.w3.org/WAI/ARIA/apg/example-index/tabs/tabs-automatic.html)

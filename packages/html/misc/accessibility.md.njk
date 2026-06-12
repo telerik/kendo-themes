@@ -1,9 +1,15 @@
 # {{ name }} Accessibility
 
-{% if ariaSpec and ariaSpec.length -%}
-## ARIA Attributes
+## Accessibility Support
 
-The following table lists the ARIA attributes applied to the {{ name }} component:
+Out of the box, the Telerik and Kendo UI {{ name }} provides extensive accessibility support and enables users with disabilities to acquire complete control over its features.
+
+The {{ name }} is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices{% if kbSpec and kbSpec.length %} for implementing the [keyboard navigation](#keyboard-navigation){% endif %}{% if kbSpec and kbSpec.length %} and provides options for managing its focus{% endif %} and is tested against the most popular screen readers.
+
+{% if ariaSpec and ariaSpec.length -%}
+### WAI-ARIA
+
+This section lists the selectors, attributes, and behavior patterns supported by the component and its composite elements, if any.
 
 | Selector | Attribute | Usage |
 | --- | --- | --- |
@@ -13,7 +19,7 @@ The following table lists the ARIA attributes applied to the {{ name }} componen
 {% endif -%}
 
 {% if kbSpec and kbSpec.length -%}
-## Keyboard Navigation
+### Keyboard Navigation
 
 The following table lists the keyboard shortcuts supported by the {{ name }} component:
 
@@ -25,7 +31,7 @@ The following table lists the keyboard shortcuts supported by the {{ name }} com
 {% endif -%}
 
 {% if uxSpec and uxSpec.length -%}
-## UX Behavior
+### UX Behavior
 
 The following table describes the interaction behavior of the {{ name }} component:
 
@@ -33,5 +39,27 @@ The following table describes the interaction behavior of the {{ name }} compone
 | --- | --- |
 {% for rule in uxSpec -%}
 | {{ rule.trigger }} | {{ rule.behavior }} |
+{% endfor %}
+{% endif -%}
+
+### Testing
+
+The {{ name }} has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
+
+### Screen Readers
+
+The {{ name }} has been tested with the following screen readers and browsers combinations:
+
+| Environment | Tool |
+| --- | --- |
+| Firefox | NVDA |
+| Chrome | JAWS |
+| Microsoft Edge | JAWS |
+
+{% if resources and resources.length -%}
+### Resources
+
+{% for resource in resources -%}
+- [{{ resource.text }}]({{ resource.url }})
 {% endfor %}
 {% endif -%}

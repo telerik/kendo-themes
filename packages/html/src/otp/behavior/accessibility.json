@@ -82,5 +82,11 @@
             "trigger": "Delete"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Specification for the TextBox",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#textbox"
+        }
+    ]
 }

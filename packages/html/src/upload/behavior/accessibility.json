@@ -92,5 +92,11 @@
             "trigger": "Delete"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Practices",
+            "url": "https://www.w3.org/WAI/ARIA/apg/"
+        }
+    ]
 }

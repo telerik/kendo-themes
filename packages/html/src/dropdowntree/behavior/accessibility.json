@@ -77,5 +77,15 @@
             "trigger": "Tab"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Authoring Practices: TreeView Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/"
+        },
+        {
+            "text": "WAI-ARIA Authoring Practices: Select-Only Combobox Example",
+            "url": "https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html"
+        }
+    ]
 }

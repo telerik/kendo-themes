@@ -139,5 +139,11 @@
             "trigger": "ArrowRight"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "ARIA patterns Menu",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menu/"
+        }
+    ]
 }

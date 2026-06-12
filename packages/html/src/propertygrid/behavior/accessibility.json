@@ -142,5 +142,11 @@
             "trigger": "Escape"
         }
     ],
-    "uxSpec": []
+    "uxSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA specification for tree grid",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/#treegrid"
+        }
+    ]
 }

@@ -85,5 +85,11 @@
             "trigger": "Enter or Space",
             "behavior": "Clicks (activates) the currently active `menuitem` element and closes the popup."
         }
+    ],
+    "resources": [
+        {
+            "text": "WAI-ARIA Authoring Practices: Menu Button Pattern.",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/"
+        }
     ]
 }

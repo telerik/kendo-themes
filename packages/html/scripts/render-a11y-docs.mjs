@@ -26,6 +26,7 @@ for (const file of files.sort()) {
     const ariaSpec = json.ariaSpec || [];
     const kbSpec = json.kbSpec || [];
     const uxSpec = json.uxSpec || [];
+    const resources = json.resources || [];
 
     if (!ariaSpec.length && !kbSpec.length && !uxSpec.length) {
         continue;
@@ -35,7 +36,8 @@ for (const file of files.sort()) {
         name: toPascalCase(component),
         ariaSpec,
         kbSpec,
-        uxSpec
+        uxSpec,
+        resources
     });
 
     writeFileSync(join(outDir, `${component}.md`), md.trim() + '\n');
