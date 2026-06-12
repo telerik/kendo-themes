@@ -8,6 +8,10 @@ on:
 env:
   COMMENT_TITLE: "## Packages Report"
   UPDATING_MESSAGE: "Generating... ⚠️"
+permissions:
+  contents: read
+  actions: write
+  pull-requests: write
 
 jobs:
   post-status-comment:
