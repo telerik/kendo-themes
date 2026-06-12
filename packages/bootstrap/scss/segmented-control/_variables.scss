@@ -62,7 +62,7 @@ $kendo-segmented-control-thumb-shadow: none !default;
 $kendo-segmented-control-thumb-bg: k-color(surface-alt) !default;
 /// The text color of the Segmented Control thumb.
 /// @group segmented-control
-$kendo-segmented-control-thumb-text: $kendo-segmented-control-text !default;
+$kendo-segmented-control-thumb-text: k-color(on-app-surface) !default;
 
 
 /// The horizontal padding of the small Segmented Control button.
