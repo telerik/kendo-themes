@@ -29228,8 +29228,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-segmented-control-thumb-text</td>
     <td>String</td>
-    <td><code>$kendo-segmented-control-text</code></td>
-    <td><code>var(--kendo-color-on-base)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Segmented Control thumb.</div></div>
