@@ -47,6 +47,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ render-test-pages, create-screenshots ]
 
+    permissions:
+      contents: write
+      actions: read
+
     outputs:
       snapshot_sha: ${{ steps.snapshot_sha.outputs.sha }}
 
