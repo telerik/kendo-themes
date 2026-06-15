@@ -259,6 +259,16 @@ $kendo-grid-header-text: var( --kendo-grid-header-text, #{$kendo-table-header-te
 /// @group grid
 $kendo-grid-header-border: var( --kendo-grid-header-border, #{$kendo-table-header-border} ) !default;
 
+/// The background color of Grid add row.
+/// @group grid
+$kendo-grid-add-row-bg: var( --kendo-grid-add-row-bg, #{$kendo-table-header-bg} ) !default;
+/// The text color of Grid add row.
+/// @group grid
+$kendo-grid-add-row-text: var( --kendo-grid-add-row-text, #{$kendo-table-header-text} ) !default;
+/// The border color of Grid add row.
+/// @group grid
+$kendo-grid-add-row-border: var( --kendo-grid-add-row-border, #{$kendo-table-header-border} ) !default;
+
 /// The background color of Grid footer.
 /// @group grid
 $kendo-grid-footer-bg: var( --kendo-grid-footer-bg, #{$kendo-table-footer-bg} ) !default;
@@ -641,6 +651,9 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
     $kendo-grid-header-bg: $kendo-grid-header-bg,
     $kendo-grid-header-text: $kendo-grid-header-text,
     $kendo-grid-header-border: $kendo-grid-header-border,
+    $kendo-grid-add-row-bg: $kendo-grid-add-row-bg,
+    $kendo-grid-add-row-text: $kendo-grid-add-row-text,
+    $kendo-grid-add-row-border: $kendo-grid-add-row-border,
     $kendo-grid-footer-bg: $kendo-grid-footer-bg,
     $kendo-grid-footer-text: $kendo-grid-footer-text,
     $kendo-grid-footer-border: $kendo-grid-footer-border,
