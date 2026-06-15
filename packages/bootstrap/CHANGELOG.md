@@ -1,3 +1,13 @@
+## 14.2.0-dev.3 (2026-06-15)
+
+### 🩹 Fixes
+
+- **bootstrap:** selected segmented control button text in urban swatch ([2389110e72](https://github.com/telerik/kendo-themes/commit/2389110e72))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.2.0-dev.2 (2026-06-09)
 
 ### 🚀 Features
