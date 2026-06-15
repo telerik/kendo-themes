@@ -668,6 +668,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-add-row-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid add row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-add-row-text</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid add row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-add-row-border</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid add row.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-header-bg</code></td>
