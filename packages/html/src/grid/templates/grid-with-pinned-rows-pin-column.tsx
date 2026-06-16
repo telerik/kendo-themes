@@ -56,7 +56,7 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
                                     </colgroup>
                                     {/* Raw <tbody> used here so aria-label and role are rendered in the DOM.
                                         TableTbody does not spread HTML attributes. */}
-                                    <tbody className="k-table-tbody" role="rowgroup" aria-label="Top pinned rows">
+                                    <tbody className="k-table-tbody" aria-label="Top pinned rows">
                                         <TableRow className="k-master-row" role="row" aria-rowindex={1}>
                                             {/* Pin column cell — announces context menu; icon is decorative */}
                                             <TableTd role="gridcell" aria-colindex={1} aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="true">

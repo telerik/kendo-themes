@@ -50,7 +50,7 @@ export const GridWithPinnedRows = ({ contentClassName, ...other }: any) => {
                                     </colgroup>
                                     {/* Raw <tbody> used here so aria-label and role are rendered in the DOM.
                                         TableTbody does not spread HTML attributes. */}
-                                    <tbody className="k-table-tbody" role="rowgroup" aria-label="Top pinned rows">
+                                    <tbody className="k-table-tbody" aria-label="Top pinned rows">
                                         <TableRow className="k-master-row" role="row" aria-rowindex={1} selected aria-selected="true">
                                             <TableTd role="gridcell" aria-colindex={1} aria-selected="true" aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="true">Shelden Greyes</TableTd>
                                             <TableTd role="gridcell" aria-colindex={2} aria-selected="true" aria-haspopup="menu" aria-controls={ctxMenuId} aria-expanded="false">Operator</TableTd>

@@ -25,9 +25,8 @@ export const CalendarTableHead = (
     return (
         <thead
             {...other}
-            className={classNames(props.className, CALENDARTABLEHEAD_CLASSNAME)}
-            role="rowgroup">
-            <tr className="k-calendar-tr" role="row">
+            className={classNames(props.className, CALENDARTABLEHEAD_CLASSNAME)}>
+            <tr className="k-calendar-tr">
                 {showWeek && <CalendarCell weekCell headerCell text="W" /> }
                 {cellsText.map((text, index) => <CalendarCell key={index} text={text} headerCell />)}
             </tr>

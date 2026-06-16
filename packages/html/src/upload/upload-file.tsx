@@ -41,7 +41,6 @@ export const UploadFile = (
                     [`k-file-${status}`]: status,
                 }
             )}
-            role="listitem"
             tabIndex={0}
         >
             <div className="k-file-single">

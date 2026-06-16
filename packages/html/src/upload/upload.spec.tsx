@@ -70,7 +70,7 @@ export const Upload: KendoComponent<KendoUploadProps & KendoUploadState & React.
                 filesId={uploadFilesId}
             />
             {hasFiles &&
-                <ul className="k-upload-files" role="list" id={uploadFilesId}>
+                <ul className="k-upload-files" id={uploadFilesId}>
                     {props.children}
                 </ul>
             }

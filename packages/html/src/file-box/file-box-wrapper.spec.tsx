@@ -22,7 +22,6 @@ export const FileBoxWrapper = (
 
     return (
         <ul
-            role="list"
             aria-label="Attached files"
             {...other}
             className={classNames(

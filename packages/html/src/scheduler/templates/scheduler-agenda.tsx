@@ -35,8 +35,8 @@ export const SchedulerAgenda = ({ style, ...props }: any) => (
                     <td>
                         <SchedulerHeader>
                             <SchedulerTable role="none">
-                                <tbody role="rowgroup">
-                                    <tr role="row">
+                                <tbody>
+                                    <tr>
                                         <SchedulerCell as="th" className="k-scheduler-datecolumn" role="columnheader">Date</SchedulerCell>
                                         <SchedulerCell as="th" className="k-scheduler-timecolumn" role="columnheader">Time</SchedulerCell>
                                         <SchedulerCell as="th" role="columnheader">Event</SchedulerCell>
@@ -50,8 +50,8 @@ export const SchedulerAgenda = ({ style, ...props }: any) => (
                     <td>
                         <SchedulerContent>
                             <SchedulerTable role="none">
-                                <tbody role="rowgroup">
-                                    <tr role="row">
+                                <tbody>
+                                    <tr>
                                         <SchedulerCell as="td" className="k-scheduler-datecolumn k-first k-selected" role="rowheader" aria-selected="true">
                                             <strong className="k-scheduler-agendaday">13</strong>
                                             <em className="k-scheduler-agendaweek">Monday</em>
@@ -64,7 +64,7 @@ export const SchedulerAgenda = ({ style, ...props }: any) => (
                                             <SchedulerTask text="Task 1 Title" closable />
                                         </SchedulerCell>
                                     </tr>
-                                    <tr role="row">
+                                    <tr>
                                         <SchedulerCell as="td" className="k-scheduler-datecolumn k-first" role="rowheader">
                                             <strong className="k-scheduler-agendaday">14</strong>
                                             <em className="k-scheduler-agendaweek">Tuesday</em>
@@ -77,7 +77,7 @@ export const SchedulerAgenda = ({ style, ...props }: any) => (
                                             <SchedulerTask text="Task 2 Title" closable />
                                         </SchedulerCell>
                                     </tr>
-                                    <tr role="row">
+                                    <tr>
                                         <SchedulerCell as="td" className="k-scheduler-datecolumn k-first" role="rowheader">
                                             <strong className="k-scheduler-agendaday">15</strong>
                                             <em className="k-scheduler-agendaweek">Wednesday</em>
@@ -90,7 +90,7 @@ export const SchedulerAgenda = ({ style, ...props }: any) => (
                                             <SchedulerTask text="Task 3 Title" closable />
                                         </SchedulerCell>
                                     </tr>
-                                    <tr role="row">
+                                    <tr>
                                         <SchedulerCell as="td" className="k-scheduler-datecolumn k-first" role="rowheader">
                                             <strong className="k-scheduler-agendaday">16</strong>
                                             <em className="k-scheduler-agendaweek">Wednesday</em>

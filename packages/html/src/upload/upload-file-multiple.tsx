@@ -35,7 +35,6 @@ export const UploadFileMultiple = (
                     [`k-file-${status}`]: status,
                 },
             )}
-            role="listitem"
             tabIndex={0}
         >
             <div className="k-file-multiple">
