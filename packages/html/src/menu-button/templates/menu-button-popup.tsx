@@ -9,7 +9,7 @@ export const MenuButtonPopup = (props) => {
         <>
             <MenuButton expanded aria-controls={listId} {...props}>button</MenuButton>
             <Popup className="k-menu-popup">
-                <MenuList id={listId}>
+                <MenuList id={listId} role={undefined}>
                     <MenuListItem first text="Menu Item"></MenuListItem>
                     <MenuListItem text="Menu Item"></MenuListItem>
                     <MenuListItem last text="Menu Item"></MenuListItem>
