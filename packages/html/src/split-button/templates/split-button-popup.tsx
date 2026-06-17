@@ -10,7 +10,7 @@ export const SplitButtonPopup = (props) => {
             opened={true}
             popupId={listId}
             popup={
-                <MenuList id={listId}>
+                <MenuList id={listId} role={undefined}>
                     <MenuListItem first text="Menu Item"></MenuListItem>
                     <MenuListItem text="Menu Item"></MenuListItem>
                     <MenuListItem last text="Menu Item"></MenuListItem>
