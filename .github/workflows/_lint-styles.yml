@@ -33,8 +33,7 @@ jobs:
 
       - name: Install
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
+        uses: telerik/actions/npm-ci@master
 
       - name: Lint styles
         run: |

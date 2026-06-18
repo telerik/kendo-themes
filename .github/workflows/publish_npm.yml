@@ -75,7 +75,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install
-        run: npm ci --no-audit --no-fund
+        uses: telerik/actions/npm-ci@master
 
       - name: Build themes for dist
         run: |

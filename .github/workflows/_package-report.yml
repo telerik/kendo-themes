@@ -77,8 +77,7 @@ jobs:
           key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
 
       - name: Install PR dependencies
-        run: |
-          npm ci --no-audit --no-fund
+        uses: telerik/actions/npm-ci@master
 
       - name: Measure time and size
         run: |
@@ -151,8 +150,7 @@ jobs:
 
       - name: Install develop dependencies
         if: steps.cache-develop-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
+        uses: telerik/actions/npm-ci@master
 
       - name: Measure time and size
         run: |
