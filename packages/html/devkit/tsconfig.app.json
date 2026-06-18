@@ -1,0 +1,30 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "composite": true,
+        "target": "es2020",
+        "lib": ["es2020", "dom", "dom.iterable"],
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "noEmit": true,
+        "strictFunctionTypes": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "strictNullChecks": true
+    },
+    "include": [
+        "context.tsx",
+        "main.tsx",
+        "lib/**/*.ts",
+        "ui/**/*.tsx",
+        "types/**/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "vite.config.ts"
+    ]
+}
