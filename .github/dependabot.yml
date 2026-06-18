@@ -1,17 +1,9 @@
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-registries:
-  harness-npm:
-    type: npm-registry
-    url: https://pkg.harness.io/pkg/ct8onj8YTdaXtKaFsYCRLg/org-devtools-npm/npm/
-    token: ${{secrets.NPM_REGISTRY_TOKEN}}
-    replaces-base: true
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    registries:
-      - harness-npm
     cooldown:
       default-days: 14
     schedule:
