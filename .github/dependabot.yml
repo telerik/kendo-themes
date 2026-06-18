@@ -11,6 +11,8 @@ updates:
     directory: "/"
     registries:
       - harness-npm
+    cooldown:
+      default-days: 14
     schedule:
       interval: "monthly"
     target-branch: "develop"
