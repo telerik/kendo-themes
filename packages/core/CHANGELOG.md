@@ -1,3 +1,14 @@
+## 14.2.0-dev.3 (2026-06-15)
+
+### 🩹 Fixes
+
+- **popup:** inherit border-radius for coloreditor inside popup ([47bcc75865](https://github.com/telerik/kendo-themes/commit/47bcc75865))
+- **grid:** remove ellipsis from checkbox/radio cells ([440d6434f5](https://github.com/telerik/kendo-themes/commit/440d6434f5))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.2.0-dev.2 (2026-06-09)
 
 ### 🚀 Features

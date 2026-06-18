@@ -1,3 +1,7 @@
+## 14.2.0-dev.3 (2026-06-15)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
 ## 14.2.0-dev.2 (2026-06-09)
 
 ### 🚀 Features
