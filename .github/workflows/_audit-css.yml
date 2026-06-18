@@ -37,7 +37,7 @@ jobs:
           npm ci --no-audit --no-fund
 
       - name: Download compiled themes artifact
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           name: themes
 
