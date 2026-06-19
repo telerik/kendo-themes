@@ -1,247 +1,247 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid k-grid-cols-9">
-        <span></span>
-        <span class="col-2">Rectangle</span>
-        <span class="col-2">Rounded</span>
-        <span class="col-2">Pill</span>
-        <span class="col">Circle</span>
-        <span class="col">Dot</span>
-        <span>undefined</span>
-        <span>
-            <span class="k-badge k-badge-outline k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-rounded-full"></span>
-        </span>
-        <span>base</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-base k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-base k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-base k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-base k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-base k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-base k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-base k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-base k-rounded-full"></span>
-        </span>
-        <span>primary</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-primary k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-primary k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-primary k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-primary k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-primary k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-primary k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-primary k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-primary k-rounded-full"></span>
-        </span>
-        <span>secondary</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-secondary k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-secondary k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-secondary k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-secondary k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-secondary k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-secondary k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-secondary k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-secondary k-rounded-full"></span>
-        </span>
-        <span>tertiary</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full"></span>
-        </span>
-        <span>info</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-info k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-info k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-info k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-info k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-info k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-info k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-info k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-info k-rounded-full"></span>
-        </span>
-        <span>success</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-success k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-success k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-success k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-success k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-success k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-success k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-success k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-success k-rounded-full"></span>
-        </span>
-        <span>warning</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-warning k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-warning k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-warning k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-warning k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-warning k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-warning k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-warning k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-warning k-rounded-full"></span>
-        </span>
-        <span>error</span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-error k-rounded-none">Rectangle</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-error k-rounded-none"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-error k-rounded-md">Rounded</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-error k-rounded-md"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-error k-rounded-full">Pill</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-error k-rounded-full"></span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-error k-rounded-full">1</span>
-        </span>
-        <span>
-            <span class="k-badge k-badge-outline k-badge-error k-rounded-full"></span>
-        </span>
-    </div>
-</body>
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid k-grid-cols-9">
+            <span></span>
+            <span class="col-2">Rectangle</span>
+            <span class="col-2">Rounded</span>
+            <span class="col-2">Pill</span>
+            <span class="col">Circle</span>
+            <span class="col">Dot</span>
+            <span>undefined</span>
+            <span>
+                <span class="k-badge k-badge-outline k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-rounded-full"></span>
+            </span>
+            <span>base</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-base k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-base k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-base k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-base k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-base k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-base k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-base k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-base k-rounded-full"></span>
+            </span>
+            <span>primary</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-primary k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-primary k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-primary k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-primary k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-primary k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-primary k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-primary k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-primary k-rounded-full"></span>
+            </span>
+            <span>secondary</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-secondary k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-secondary k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-secondary k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-secondary k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-secondary k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-secondary k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-secondary k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-secondary k-rounded-full"></span>
+            </span>
+            <span>tertiary</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-tertiary k-rounded-full"></span>
+            </span>
+            <span>info</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-info k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-info k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-info k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-info k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-info k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-info k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-info k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-info k-rounded-full"></span>
+            </span>
+            <span>success</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-success k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-success k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-success k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-success k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-success k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-success k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-success k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-success k-rounded-full"></span>
+            </span>
+            <span>warning</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-warning k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-warning k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-warning k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-warning k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-warning k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-warning k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-warning k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-warning k-rounded-full"></span>
+            </span>
+            <span>error</span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-error k-rounded-none">Rectangle</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-error k-rounded-none"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-error k-rounded-md">Rounded</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-error k-rounded-md"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-error k-rounded-full">Pill</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-error k-rounded-full"></span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-error k-rounded-full">1</span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-outline k-badge-error k-rounded-full"></span>
+            </span>
+        </div>
+    </body>
 </html>
