@@ -25,5 +25,3 @@ debug.log
 # Generated a11y test reports (not tracked; screenshots in tests/_output/ ARE tracked)
 tests/_output/*.json
 
-# Local npm registry config (not committed)
-.npmrc
