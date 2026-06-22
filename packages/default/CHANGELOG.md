@@ -1,3 +1,18 @@
+## 14.2.0-dev.4 (2026-06-22)
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- zhpenkov
+
 ## 14.2.0-dev.3 (2026-06-15)
 
 This was a version bump only for @progress/kendo-theme-default to align it with other projects, there were no code changes.
