@@ -12,15 +12,9 @@
             @each $name in $kendo-badge-theme-colors {
                 #{k-when-default($kendo-badge-default-theme-color, $name)}
                 &.k-badge-#{$name} {
-                    @if ($name == "base") {
-                        background: none;
-                        color: k-color(on-app-surface);
-                        border-color: transparent;
-                    } @else {
-                        border-color: k-color(#{$name});
-                        color: k-color(on-#{$name});
-                        background-color: k-color(#{$name});
-                    }
+                    border-color: k-color(#{$name});
+                    color: k-color(on-#{$name});
+                    background-color: k-color(#{$name});
                 }
             }
         }
@@ -28,18 +22,13 @@
         // Outline badges
         #{k-when-default($kendo-badge-default-fill-mode, "outline")}
         &.k-badge-outline {
-            color: k-color(base-on-surface);
             border-color: currentColor;
             background-color: transparent;
 
             @each $name in $kendo-badge-theme-colors {
                 #{k-when-default($kendo-badge-default-theme-color, $name)}
                 &.k-badge-#{$name} {
-                    @if ($name == "base") {
-                        color: k-color(on-app-surface);
-                    } @else {
-                        color: k-color(#{$name}-on-surface);
-                    }
+                    color: k-color(#{$name}-on-surface);
                 }
             }
         }
