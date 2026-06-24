@@ -1,3 +1,7 @@
+## 14.2.0-dev.5 (2026-06-24)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
 ## 14.2.0-dev.4 (2026-06-22)
 
 ### 🩹 Fixes

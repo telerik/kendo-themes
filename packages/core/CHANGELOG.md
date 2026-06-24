@@ -1,3 +1,18 @@
+## 14.2.0-dev.5 (2026-06-24)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+
+### 🩹 Fixes
+
+- revert spreadsheet scroller z-index ([f7cc6afeba](https://github.com/telerik/kendo-themes/commit/f7cc6afeba))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+- zhpenkov
+
 ## 14.2.0-dev.4 (2026-06-22)
 
 ### 🩹 Fixes
