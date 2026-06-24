@@ -103,6 +103,10 @@
             }
         }
 
+        .k-table-row:not(.k-grouping-row, .k-group-footer):has(+ .k-grouping-row) > .k-table-td {
+            border-block-end-color: $kendo-grid-border;
+        }
+
         // Locked columns
         .k-grid-content-locked {
             border-color: $kendo-grid-sticky-header-border;
@@ -189,6 +193,14 @@
                 .k-grid-row-sticky {
                     background-color: $kendo-grid-sticky-alt-bg;
                 }
+            }
+        }
+
+        .k-detail-row,
+        .k-master-row:has(+ .k-table-group-row),
+        .k-master-row:has(+ .k-detail-row) {
+            > .k-grid-content-sticky {
+                border-block-end-color: $kendo-grid-border;
             }
         }
 

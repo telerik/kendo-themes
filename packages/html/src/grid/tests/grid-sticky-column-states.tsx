@@ -207,11 +207,11 @@ export default () => (
                                     <TableTbody>
                                         <TableRow className="k-table-group-row k-grouping-row">
                                             <TableTd colspan={6}>
-                                                <p className="k-reset">
+                                                <div className="k-grouping-row-content">
                                                     <Icon icon="chevron-down" />
                                                     <span>Placeholder: X &nbsp;</span>
                                                     <span>placeholder</span>
-                                                </p>
+                                                </div>
                                             </TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row">
