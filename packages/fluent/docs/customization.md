@@ -1248,8 +1248,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-badge-bg, k-color(surface-alt) )</code></td>
-    <td><code>var(--kendo-badge-bg, var(--kendo-color-surface-alt))</code></td>
+    <td><code>var( --kendo-badge-bg, k-color(base) )</code></td>
+    <td><code>var(--kendo-badge-bg, var(--kendo-color-base))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Badge.</div></div>
@@ -1258,8 +1258,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-text</td>
     <td>String</td>
-    <td><code>var( --kendo-badge-text, k-color(on-app-surface) )</code></td>
-    <td><code>var(--kendo-badge-text, var(--kendo-color-on-app-surface))</code></td>
+    <td><code>var( --kendo-badge-text, k-color(on-base) )</code></td>
+    <td><code>var(--kendo-badge-text, var(--kendo-color-on-base))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Badge.</div></div>
@@ -1268,8 +1268,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-border</td>
     <td>String</td>
-    <td><code>var( --kendo-badge-border, color-mix(in srgb, k-color(border) 16%, transparent) )</code></td>
-    <td><code>var(--kendo-badge-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
+    <td><code>var( --kendo-badge-border, k-color(base) )</code></td>
+    <td><code>var(--kendo-badge-border, var(--kendo-color-base))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Badge.</div></div>
