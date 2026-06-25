@@ -269,9 +269,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>List</td>
+    <td><code>0 1px 2px 0 rgba(56, 66, 80, 0.05)</code></td>
+    <td><code>(0 1px 2px 0 rgba(56, 66, 80, 0.05))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Input components.</div></div>
@@ -349,9 +349,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
@@ -529,9 +529,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-focus-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
@@ -629,9 +629,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-focus-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
