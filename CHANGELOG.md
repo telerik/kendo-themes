@@ -1,3 +1,9 @@
+## 14.2.0-dev.6 (2026-06-25)
+
+### 🩹 Fixes
+
+- **badge:** update base badge colors ([97760f8b24](https://github.com/telerik/kendo-themes/commit/97760f8b24))
+
 ## 14.2.0-dev.5 (2026-06-24)
 
 ### 🚀 Features
