@@ -92,7 +92,7 @@ $kendo-input-text: k-color(on-app-surface) !default;
 $kendo-input-border: k-color(border) !default;
 /// The shadow of the Input components.
 /// @group input
-$kendo-input-shadow: null !default;
+$kendo-input-shadow: 0 1px 2px 0 rgba(56, 66, 80, 0.05) !default;
 
 /// The background color of the hovered Input components.
 /// @group input
@@ -118,7 +118,7 @@ $kendo-input-focus-text: null !default;
 $kendo-input-focus-border: $kendo-input-hover-border !default;
 /// The shadow of the focused Input components.
 /// @group input
-$kendo-input-focus-shadow: null !default;
+$kendo-input-focus-shadow: none !default;
 /// The outline color of the focused Input components.
 /// @group input
 $kendo-input-focus-outline-color: k-color(subtle) !default;
@@ -298,7 +298,7 @@ $kendo-picker-border: $kendo-input-border !default;
 $kendo-picker-gradient: null !default;
 /// The shadow of the Picker components.
 /// @group picker
-$kendo-picker-shadow: null !default;
+$kendo-picker-shadow: 0 1px 2px 0 rgba(56, 66, 80, 0.05) !default;
 
 /// The background color of the hovered Picker components.
 /// @group picker
