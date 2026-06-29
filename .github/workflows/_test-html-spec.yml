@@ -16,6 +16,8 @@ jobs:
 
       - name: Checkout branch
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Setup node
         id: setup-node
@@ -45,14 +47,11 @@ jobs:
             nx-cache-refs/heads/develop-
             nx-cache-
 
-      - name: Build scripts
+      - name: Build and check types
         run: |
-          npm run build
-
-      - name: Check types
-        run: |
+          npx nx affected -t build
           npm run typecheck -w packages/html
 
-      - name: Run Jest tests
+      - name: Run tests
         run: |
-          npm run test:html
+          npx nx affected -t test

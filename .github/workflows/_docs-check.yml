@@ -56,4 +56,4 @@ jobs:
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
       - name: Check docs
-        run: npm run docs:check
+        run: npx nx affected -t docs:check

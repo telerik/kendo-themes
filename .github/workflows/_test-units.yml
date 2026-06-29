@@ -20,6 +20,8 @@ jobs:
 
       - name: Checkout branch
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Setup node
         id: setup-node
@@ -51,11 +53,11 @@ jobs:
 
       - name: Build test assets
         run: |
-          npm run sass --prefix packages/core
-          npm run docs --prefix packages/core
-          npm run sass --prefix packages/${{matrix.theme}}
-          npm run docs --prefix packages/${{matrix.theme}}
+          npx nx run @progress/kendo-theme-core:sass
+          npx nx run @progress/kendo-theme-core:docs
+          npx nx run @progress/kendo-theme-${{matrix.theme}}:sass
+          npx nx run @progress/kendo-theme-${{matrix.theme}}:docs
 
-      - name: Run Jest tests
+      - name: Run unit tests
         run: |
           npm run test:${{matrix.theme}} --prefix units
