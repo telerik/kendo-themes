@@ -113,13 +113,13 @@ jobs:
 
       - name: Measure develop branch
         run: |
-          git stash --include-untracked || true
-          git checkout origin/develop
+          # Save PR results before switching branches
+          cp pr-data.txt /tmp/pr-data.txt
 
-          # Reinstall if lockfile differs
-          if ! git diff HEAD --quiet -- package-lock.json 2>/dev/null; then
-            npm ci --no-audit --no-fund
-          fi
+          git checkout origin/develop -- packages/${{ matrix.package }}/scss packages/${{ matrix.package }}/package.json 2>/dev/null || git checkout origin/develop
+
+          # Reinstall if lockfile differs between branches
+          npm ci --no-audit --no-fund 2>/dev/null || true
 
           times=()
           for i in {1..3}; do
@@ -149,7 +149,8 @@ jobs:
 
           echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> develop-data.txt
 
-          git checkout - 2>/dev/null || true
+          # Restore PR data
+          cp /tmp/pr-data.txt pr-data.txt
 
       - name: Upload data
         uses: actions/upload-artifact@v7
