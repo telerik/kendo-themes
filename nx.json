@@ -52,6 +52,9 @@
       ],
       "outputs": [
         "{projectRoot}/dist/**"
+      ],
+      "dependsOn": [
+        "build"
       ]
     },
     "sass": {
@@ -63,6 +66,9 @@
       ],
       "outputs": [
         "{projectRoot}/dist/**/*.css"
+      ],
+      "dependsOn": [
+        "^sass"
       ]
     },
     "sass:dist": {
@@ -75,6 +81,9 @@
       "outputs": [
         "{projectRoot}/dist/**/*.css",
         "{projectRoot}/dist/**/*.scss"
+      ],
+      "dependsOn": [
+        "^sass:dist"
       ]
     },
     "docs": {
