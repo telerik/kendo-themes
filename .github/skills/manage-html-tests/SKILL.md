@@ -168,6 +168,7 @@ Check that the compiled test output renders correctly — confirm no JSX/TS erro
 
 ## Gotchas
 
+- **Only edit `.tsx` source files** in `packages/html/src/{component}/tests/`. Never edit the compiled `.html` files in the root `tests/` folder — those are auto-generated build output from `npm run build:tests`.
 - Each test file must have a **default export** (not named) — the build system expects `export default`.
 - Tests render to static HTML — no interactivity, event handlers, or React hooks.
 - State classes (hover, focus, etc.) are applied via props, not CSS pseudo-classes — the test renders the _appearance_ of that state.

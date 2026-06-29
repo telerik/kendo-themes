@@ -151,6 +151,7 @@ The file naming uses either `{component}-{variant}.tsx` or `{variant}-{component
 
 ## Gotchas
 
+- **Only edit `.tsx` source files** in `packages/html/src/{component}/templates/`. Never edit the compiled `.html` files in the root `tests/` folder — those are auto-generated build output.
 - Templates import from the **spec file** (`../{component}.spec`), not from the component index — this avoids circular dependencies.
 - Some older templates import from `..` (the index). Both work, but prefer importing from the spec directly for new templates.
 - Templates must be **stateless** — no React hooks, no event handlers, no side effects. They render static HTML.

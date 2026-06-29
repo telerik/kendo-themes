@@ -238,6 +238,7 @@ When updating an existing spec (adding states, options, or props):
 
 ## Gotchas
 
+- **Only edit `.tsx` source files** in `packages/html/src/`. Never edit the compiled `.html` files in the root `tests/` folder — those are auto-generated build output.
 - Import helpers from `../misc` — this module exports `classNames`, `optionClassNames`, `stateClassNames`, `States`, `Size`, `Roundness`, `FillMode`, `ThemeColor`, and other enums.
 - Import `KendoComponent` and `KendoBaseProps` from `../_types/component`.
 - The `as` prop (via `KendoBaseProps`) allows changing the root element at usage time.
