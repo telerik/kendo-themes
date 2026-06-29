@@ -24,25 +24,48 @@
   "targetDefaults": {
     "lint": {
       "cache": true,
+      "inputs": [
+        "ts-sources",
+        "scss-sources"
+      ],
       "executor": "nx:run-script",
       "options": {
         "script": "lint"
       }
     },
     "build": {
-      "cache": true
+      "cache": true,
+      "inputs": [
+        "ts-sources",
+        "{projectRoot}/scripts/**/*.{js,mjs}",
+        "{projectRoot}/tsconfig.json"
+      ]
     },
     "build:tests": {
-      "cache": true
+      "cache": true,
+      "inputs": [
+        "ts-sources",
+        "{projectRoot}/scripts/**/*.{js,mjs}"
+      ]
     },
     "sass": {
       "cache": true,
+      "inputs": [
+        "scss-sources",
+        "global-scss",
+        "config-files"
+      ],
       "outputs": [
         "{projectRoot}/dist/**/*.css"
       ]
     },
     "sass:dist": {
       "cache": true,
+      "inputs": [
+        "scss-sources",
+        "global-scss",
+        "config-files"
+      ],
       "outputs": [
         "{projectRoot}/dist/**/*.css",
         "{projectRoot}/dist/**/*.scss"
@@ -50,6 +73,9 @@
     },
     "docs": {
       "cache": true,
+      "inputs": [
+        "scss-sources"
+      ],
       "dependsOn": [
         "^docs"
       ]
