@@ -108,6 +108,17 @@
         "script": "docs:check"
       }
     },
+    "test": {
+      "cache": true,
+      "inputs": [
+        "ts-sources",
+        "scss-sources",
+        "{projectRoot}/vitest.config.*"
+      ],
+      "dependsOn": [
+        "^build"
+      ]
+    },
     "nx-release-publish": {
       "options": {
         "access": "public"
