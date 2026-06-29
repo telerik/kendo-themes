@@ -39,6 +39,16 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
+      - name: Use cache for Nx
+        uses: actions/cache@v5
+        with:
+          path: .nx/cache
+          key: nx-cache-${{ github.ref }}-${{ github.sha }}
+          restore-keys: |
+            nx-cache-${{ github.ref }}-
+            nx-cache-refs/heads/develop-
+            nx-cache-
+
       - name: Build test assets
         run: |
           npm run sass --prefix packages/core
