@@ -92,7 +92,8 @@
         "scss-sources"
       ],
       "outputs": [
-        "{projectRoot}/docs/**"
+        "{projectRoot}/docs/**",
+        "{projectRoot}/dist/meta/**"
       ],
       "dependsOn": [
         "^docs"

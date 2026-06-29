@@ -11,7 +11,8 @@
     "./packages/material",
     "./packages/fluent",
     "./packages/meridian",
-    "./packages/utils"
+    "./packages/utils",
+    "./units"
   ],
   "devDependencies": {
     "@commitlint/cli": "20.1.0",

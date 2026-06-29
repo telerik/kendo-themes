@@ -1,6 +1,7 @@
 {
-  "name": "units",
-  "version": "1.0.0",
+  "name": "@progress/kendo-themes-units",
+  "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "test:default": "vitest run default",
@@ -11,5 +12,23 @@
     "test:meridian": "vitest run meridian",
     "test": "vitest run",
     "test:watch": "vitest"
+  },
+  "nx": {
+    "targets": {
+      "test": {
+        "dependsOn": [
+          "^docs"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "@progress/kendo-theme-core": "*",
+    "@progress/kendo-theme-default": "*",
+    "@progress/kendo-theme-bootstrap": "*",
+    "@progress/kendo-theme-material": "*",
+    "@progress/kendo-theme-classic": "*",
+    "@progress/kendo-theme-fluent": "*",
+    "@progress/kendo-theme-meridian": "*"
   }
 }
