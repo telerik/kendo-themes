@@ -50,8 +50,8 @@ jobs:
               });
             }
 
-  extract-pr-data:
-    name: Extract PR Data
+  extract-data:
+    name: Extract Data
     runs-on: ubuntu-latest
     needs: post-status-comment
     strategy:
@@ -76,15 +76,15 @@ jobs:
           path: node_modules
           key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
 
-      - name: Install PR dependencies
+      - name: Install dependencies
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: |
           npm ci --no-audit --no-fund
 
-      - name: Measure time and size
+      - name: Measure PR branch
         run: |
-          # Run 5 times to get median with decimal precision
           times=()
-          for i in {1..5}; do
+          for i in {1..3}; do
             start_time=$(date +%s.%N)
             if [ "${{ matrix.package }}" = "html" ]; then
               npm run build --prefix packages/${{ matrix.package }}
@@ -96,9 +96,8 @@ jobs:
             times+=($elapsed)
           done
 
-          # Sort times and get median (middle value)
           IFS=$'\n' sorted_times=($(sort -n <<<"${times[*]}"))
-          build_time=${sorted_times[2]}
+          build_time=${sorted_times[1]}
 
           if [ "${{ matrix.package }}" = "html" ]; then
             size=$(du -sb packages/${{ matrix.package }}/dist | awk '{printf "%.2f", $1/(1024*1024)}')
@@ -110,55 +109,20 @@ jobs:
             gzip_size=$(gzip -c packages/${{ matrix.package }}/dist/all.css | wc -c | awk '{printf "%.2f", $1/1024}')
           fi
 
-          echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> data.txt
+          echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> pr-data.txt
 
-      - name: Upload PR data
-        uses: actions/upload-artifact@v7
-        with:
-          name: pr-data-${{ matrix.package }}
-          path: data.txt
-
-  extract-develop-data:
-    name: Extract Develop Data
-    runs-on: ubuntu-latest
-    needs: post-status-comment
-    strategy:
-      matrix:
-        package: [core, default, classic, bootstrap, material, fluent, meridian, utils, html]
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-
-      - name: Checkout develop branch
+      - name: Measure develop branch
         run: |
-          git fetch origin develop
+          git stash --include-untracked || true
           git checkout origin/develop
 
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24.x
+          # Reinstall if lockfile differs
+          if ! git diff HEAD --quiet -- package-lock.json 2>/dev/null; then
+            npm ci --no-audit --no-fund
+          fi
 
-      - name: Use cache for develop node_modules
-        id: cache-develop-node_modules
-        uses: actions/cache@v5
-        with:
-          path: node_modules
-          key: develop-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install develop dependencies
-        if: steps.cache-develop-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
-
-      - name: Measure time and size
-        run: |
-          # Run 5 times to get median with decimal precision
           times=()
-          for i in {1..5}; do
+          for i in {1..3}; do
             start_time=$(date +%s.%N)
             if [ "${{ matrix.package }}" = "html" ]; then
               npm run build --prefix packages/${{ matrix.package }}
@@ -170,9 +134,8 @@ jobs:
             times+=($elapsed)
           done
 
-          # Sort times and get median (middle value)
           IFS=$'\n' sorted_times=($(sort -n <<<"${times[*]}"))
-          build_time=${sorted_times[2]}
+          build_time=${sorted_times[1]}
 
           if [ "${{ matrix.package }}" = "html" ]; then
             size=$(du -sb packages/${{ matrix.package }}/dist | awk '{printf "%.2f", $1/(1024*1024)}')
@@ -184,20 +147,23 @@ jobs:
             gzip_size=$(gzip -c packages/${{ matrix.package }}/dist/all.css | wc -c | awk '{printf "%.2f", $1/1024}')
           fi
 
-          echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> data.txt
+          echo "${{ matrix.package }}:$size:$gzip_size:$build_time" >> develop-data.txt
 
-      - name: Upload Develop data
+          git checkout - 2>/dev/null || true
+
+      - name: Upload data
         uses: actions/upload-artifact@v7
         with:
-          name: develop-data-${{ matrix.package }}
-          path: data.txt
+          name: report-data-${{ matrix.package }}
+          path: |
+            pr-data.txt
+            develop-data.txt
 
   generate-report:
     name: Generate Report
     runs-on: ubuntu-latest
     needs:
-      - extract-pr-data
-      - extract-develop-data
+      - extract-data
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v8
@@ -212,8 +178,8 @@ jobs:
           time_row="| **Compile Time** "
 
           for package in core default classic bootstrap material fluent meridian utils html; do
-            pr_file="pr-data-$package/data.txt"
-            develop_file="develop-data-$package/data.txt"
+            pr_file="report-data-$package/pr-data.txt"
+            develop_file="report-data-$package/develop-data.txt"
 
             if [[ ! -f "$pr_file" || ! -f "$develop_file" ]]; then
               size_row+="| N/A "

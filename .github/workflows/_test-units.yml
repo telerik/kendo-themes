@@ -54,11 +54,18 @@ jobs:
             nx-cache-refs/heads/develop-
             nx-cache-
 
-      - name: Build test assets
+      - name: Download compiled themes
+        uses: actions/download-artifact@v8
+        with:
+          name: themes
+          path: .tmp
+
+      - name: Unpack compiled themes
+        run: tar -xf .tmp/themes.tar
+
+      - name: Build docs
         run: |
-          npx nx run @progress/kendo-theme-core:sass
           npx nx run @progress/kendo-theme-core:docs
-          npx nx run @progress/kendo-theme-${{matrix.theme}}:sass
           npx nx run @progress/kendo-theme-${{matrix.theme}}:docs
 
       - name: Run unit tests

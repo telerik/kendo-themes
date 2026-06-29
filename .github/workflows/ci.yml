@@ -242,6 +242,7 @@ jobs:
 
   test-units:
     name: Test units
+    needs: [ compile-themes ]
     uses: ./.github/workflows/_test-units.yml
 
   ci-test-units:
