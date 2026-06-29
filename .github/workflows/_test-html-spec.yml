@@ -19,6 +19,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Fetch base branch
+        run: git fetch origin develop
+
       - name: Setup node
         id: setup-node
         uses: actions/setup-node@v6
