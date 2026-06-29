@@ -27,13 +27,20 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
 
             <span>No checkbox</span>
+            <span>Selected</span>
             <span>All checked</span>
-            <span>Grouping</span>
 
             <div>
                 <MultiSelectSelectAll
                     placeholder="MultiSelect..."
                     selectAllProps={{ showCheckbox: false }}
+                />
+            </div>
+            <div>
+                <MultiSelectSelectAll
+                    placeholder="MultiSelect..."
+                    selectAllProps={{ showCheckbox: false, selected: true }}
+                    listItemProps={{ showCheckbox: false, selected: true }}
                 />
             </div>
             <div>
@@ -48,6 +55,11 @@ export default () =>(
                     }
                 />
             </div>
+
+            <span>Grouping</span>
+            <span>Filtering</span>
+            <span>Custom Value</span>
+
             <div>
                 <MultiSelectSelectAllGrouping
                     selectAllProps={{ checked: true }}
@@ -55,11 +67,6 @@ export default () =>(
                     tags={<Chip text="12 items selected" actions={<ChipAction type="remove" />} />}
                 />
             </div>
-
-            <span>Filtering</span>
-            <span>Custom Value</span>
-            <span>Virtualization</span>
-
             <div>
                 <MultiSelectSelectAllFiltering
                     placeholder="MultiSelect..."
@@ -70,6 +77,11 @@ export default () =>(
             <div>
                 <MultiSelectSelectAllCustomValue selectAllProps={{}} />
             </div>
+
+            <span>Virtualization</span>
+            <span></span>
+            <span></span>
+
             <div>
                 <MultiSelectSelectAllVirtual
                     placeholder="MultiSelect..."
@@ -78,6 +90,8 @@ export default () =>(
                     listItemProps={{ showCheckbox: true }}
                 />
             </div>
+            <div></div>
+            <div></div>
         </div>
     </>
 );

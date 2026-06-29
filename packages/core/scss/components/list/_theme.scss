@@ -46,27 +46,9 @@
         }
     }
 
-    .k-list-sticky-header-item {
-        &:hover,
-        &.k-hover {
-            @include fill(
-                $kendo-list-item-hover-text,
-                $kendo-list-item-hover-bg,
-            );
-        }
-
-        &:focus-within,
-        &.k-focus {
-            @include fill(
-                $kendo-list-item-focus-text,
-                $kendo-list-item-focus-bg,
-            );
-            @include focus-indicator( $kendo-list-item-focus-shadow, true );
-        }
-    }
-
 
     // List item
+    .k-list-sticky-header-item,
     .k-list-item,
     .k-list-custom-value {
         @include fill(
