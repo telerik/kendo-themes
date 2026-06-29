@@ -39,6 +39,9 @@
         "ts-sources",
         "{projectRoot}/scripts/**/*.{js,mjs}",
         "{projectRoot}/tsconfig.json"
+      ],
+      "outputs": [
+        "{projectRoot}/dist/**"
       ]
     },
     "build:tests": {
@@ -46,6 +49,9 @@
       "inputs": [
         "ts-sources",
         "{projectRoot}/scripts/**/*.{js,mjs}"
+      ],
+      "outputs": [
+        "{projectRoot}/dist/**"
       ]
     },
     "sass": {
@@ -75,6 +81,9 @@
       "cache": true,
       "inputs": [
         "scss-sources"
+      ],
+      "outputs": [
+        "{projectRoot}/docs/**"
       ],
       "dependsOn": [
         "^docs"
