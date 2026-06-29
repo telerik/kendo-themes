@@ -96,7 +96,8 @@
         "{projectRoot}/dist/meta/**"
       ],
       "dependsOn": [
-        "^docs"
+        "^docs",
+        "sass"
       ]
     },
     "docs:check": {
