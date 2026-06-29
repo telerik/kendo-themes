@@ -1,3 +1,39 @@
+## 14.2.0 (2026-06-29)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+- introduce scrollbar styles to k-body ([f9f0358955](https://github.com/telerik/kendo-themes/commit/f9f0358955))
+
+### 🩹 Fixes
+
+- **badge:** update base badge colors ([97760f8b24](https://github.com/telerik/kendo-themes/commit/97760f8b24))
+- revert spreadsheet scroller z-index ([f7cc6afeba](https://github.com/telerik/kendo-themes/commit/f7cc6afeba))
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+- **popup:** inherit border-radius for coloreditor inside popup ([47bcc75865](https://github.com/telerik/kendo-themes/commit/47bcc75865))
+- **grid:** remove ellipsis from checkbox/radio cells ([440d6434f5](https://github.com/telerik/kendo-themes/commit/440d6434f5))
+- **grid:** grid selection styles spilling over grouping column cells ([097f4c730d](https://github.com/telerik/kendo-themes/commit/097f4c730d))
+- syntax issues in compiled css ([e4ee9153d4](https://github.com/telerik/kendo-themes/commit/e4ee9153d4))
+- update the sizing of the loading icon to match the icon size ([7b8e44402c](https://github.com/telerik/kendo-themes/commit/7b8e44402c))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- **grid:** sticky borders have different color when states are applied ([9ee2a3e9bd](https://github.com/telerik/kendo-themes/commit/9ee2a3e9bd))
+- window border is being cut when larger border radius is set ([3bcf420115](https://github.com/telerik/kendo-themes/commit/3bcf420115))
+- **textarea:** rounded full should be less rounded ([f3093d53e0](https://github.com/telerik/kendo-themes/commit/f3093d53e0))
+- **grid:** column menu item alignment ([bae5dc95c2](https://github.com/telerik/kendo-themes/commit/bae5dc95c2))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
 ## 14.2.0-dev.6 (2026-06-25)
 
 ### 🩹 Fixes

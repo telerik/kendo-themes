@@ -1,3 +1,30 @@
+## 14.2.0 (2026-06-29)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+- **html:** add diagram selection tool test ([a97ce8ffad](https://github.com/telerik/kendo-themes/commit/a97ce8ffad))
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **pager:** revert previous/next icons from chevron to caret-alt ([97c68e7831](https://github.com/telerik/kendo-themes/commit/97c68e7831))
+- **html:** correct scheduler templates ([d74704c64b](https://github.com/telerik/kendo-themes/commit/d74704c64b))
+- **html:** component accessibility fixes ([d3bd96f696](https://github.com/telerik/kendo-themes/commit/d3bd96f696))
+- **html:** remove wrong classes from calendar ([faea5acab9](https://github.com/telerik/kendo-themes/commit/faea5acab9))
+- **html:** grid group actions menu rendering ([4473f2b51b](https://github.com/telerik/kendo-themes/commit/4473f2b51b))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- dtopalov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
 ## 14.2.0-dev.6 (2026-06-25)
 
 This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
