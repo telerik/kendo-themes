@@ -13,14 +13,8 @@
         @each $name in $kendo-appbar-theme-colors {
             #{k-when-default($kendo-appbar-default-theme-color, $name)}
             &.k-appbar-#{$name} {
-                @if $name == "inherit" {
-                    color: inherit;
-                    background-color: inherit;
-
-                } @else {
-                    color: k-color(on-#{$name});
-                    background-color: k-color(#{$name});
-                }
+                color: k-color(on-#{$name});
+                background-color: k-color(#{$name});
             }
         }
     }
