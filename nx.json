@@ -4,6 +4,23 @@
   "workspaceLayout": {
     "libsDir": "packages"
   },
+  "namedInputs": {
+    "scss-sources": [
+      "{projectRoot}/scss/**/*.scss",
+      "{projectRoot}/lib/**/*.json"
+    ],
+    "ts-sources": [
+      "{projectRoot}/src/**/*.ts",
+      "{projectRoot}/src/**/*.tsx"
+    ],
+    "config-files": [
+      "{workspaceRoot}/postcss.config.js",
+      "{workspaceRoot}/.browserslistrc"
+    ],
+    "global-scss": [
+      "{workspaceRoot}/packages/core/scss/**/*.scss"
+    ]
+  },
   "targetDefaults": {
     "lint": {
       "cache": true,
