@@ -16,11 +16,6 @@ jobs:
 
       - name: Checkout branch
         uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-
-      - name: Fetch base branch
-        run: git fetch origin develop
 
       - name: Setup node
         id: setup-node
@@ -52,9 +47,9 @@ jobs:
 
       - name: Build and check types
         run: |
-          npx nx affected -t build
+          npx nx run @progress/kendo-themes-html:build
           npm run typecheck -w packages/html
 
       - name: Run tests
         run: |
-          npx nx affected -t test
+          npx nx run @progress/kendo-themes-html:test
