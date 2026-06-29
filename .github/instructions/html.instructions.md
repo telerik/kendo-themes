@@ -116,6 +116,10 @@ export default () => (
 - Export test utilities
 - Maintain clean import paths
 
+## Important: Source Files Only
+
+**Only edit `.tsx` source files** in `packages/html/src/`. Never edit the compiled `.html` files in the root `tests/` folder — those are auto-generated build output from `npm run build:tests` and will be overwritten.
+
 ## Coding Standards
 
 ### TypeScript
