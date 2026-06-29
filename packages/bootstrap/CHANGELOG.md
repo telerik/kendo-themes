@@ -1,3 +1,30 @@
+## 14.2.0 (2026-06-29)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+- **bootstrap:** selected segmented control button text in urban swatch ([2389110e72](https://github.com/telerik/kendo-themes/commit/2389110e72))
+- **expansion-panel:** expander title text transform ([6bfa411226](https://github.com/telerik/kendo-themes/commit/6bfa411226))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- add relative colors to theme swatches ([04e314e734](https://github.com/telerik/kendo-themes/commit/04e314e734))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
 ## 14.2.0-dev.6 (2026-06-25)
 
 This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
