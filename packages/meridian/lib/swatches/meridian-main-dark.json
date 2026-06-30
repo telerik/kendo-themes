@@ -99,7 +99,7 @@
                 "base-on-surface": {
                     "name": "Base On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-base) l c h) 25%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 75%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-base) clamp(0.05, (0.65 - l) * 99999, 0.951) 0.0063 calc(h - 9.77))\"}"
                 },
                 "primary-subtle": {
                     "name": "Primary Subtle",
@@ -149,7 +149,7 @@
                 "primary-on-surface": {
                     "name": "Primary On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-primary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-primary) clamp(0.05, (0.919 - l) * 99999, 0.9501) 0.0097 calc(h - 0.08))\"}"
                 },
                 "secondary-subtle": {
                     "name": "Secondary Subtle",
@@ -199,7 +199,7 @@
                 "secondary-on-surface": {
                     "name": "Secondary On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-secondary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-secondary) clamp(0.0798, (0.65 - l) * 99999, 0.9202) 0.0394 calc(h + 6.61))\"}"
                 },
                 "tertiary-subtle": {
                     "name": "Tertiary Subtle",
@@ -249,7 +249,7 @@
                 "tertiary-on-surface": {
                     "name": "Tertiary On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-tertiary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-tertiary) clamp(0.1165, (0.65 - l) * 99999, 0.8835) 0.0625 calc(h + 0.02))\"}"
                 },
                 "info-subtle": {
                     "name": "Info Subtle",
@@ -299,7 +299,7 @@
                 "info-on-surface": {
                     "name": "Info On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-info) l c h) 70%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 30%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-info) clamp(0.2678, (0.65 - l) * 99999, 0.7322) 0.0934 calc(h - 9.64))\"}"
                 },
                 "success-subtle": {
                     "name": "Success Subtle",
@@ -349,7 +349,7 @@
                 "success-on-surface": {
                     "name": "Success On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-success) l c h) 70%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 30%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-success) clamp(0.2653, (0.65 - l) * 99999, 0.7347) 0.0912 calc(h + 7.06))\"}"
                 },
                 "warning-subtle": {
                     "name": "Warning Subtle",
@@ -399,7 +399,7 @@
                 "warning-on-surface": {
                     "name": "Warning On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-warning) l c h) 60%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 40%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-warning) clamp(0.099, (0.9 - l) * 99999, 0.901) 0.1711 calc(h + 1.26))\"}"
                 },
                 "error-subtle": {
                     "name": "Error Subtle",
@@ -449,7 +449,7 @@
                 "error-on-surface": {
                     "name": "Error On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-error) l c h) 60%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 40%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-error) clamp(0.2319, (0.65 - l) * 99999, 0.7681) 0.1019 calc(h - 13.16))\"}"
                 },
                 "inverse-subtle": {
                     "name": "Inverse Subtle",
@@ -499,7 +499,7 @@
                 "inverse-on-surface": {
                     "name": "Inverse On Surface",
                     "type": "color",
-                    "value": "#{\"color-mix(in oklch, oklch(from var(--kendo-color-inverse) l c h) 0%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 100%)\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-inverse) clamp(0.05, (1.001 - l) * 99999, 0.951) 0.0063 h)\"}"
                 },
                 "series-a": {
                     "name": "Series A",
