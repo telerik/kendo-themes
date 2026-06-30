@@ -29,8 +29,8 @@
     </style>
     <div id="test-area" class="k-d-grid">
         <span>No checkbox</span>
+        <span>Selected</span>
         <span>All checked</span>
-        <span>Grouping</span>
         <div>
             <span selectallprops="[object Object]" class="k-multiselect k-input">
                 <div class="k-input-values">
@@ -74,7 +74,47 @@
         <div>
             <span selectallprops="[object Object]" listitemprops="[object Object]" class="k-multiselect k-input">
                 <div class="k-input-values">
-                    <div id="k-ms-2-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                    <div id="k-ms-2-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-2-listbox" aria-autocomplete="list" aria-label="Select items" class="k-input-inner" placeholder="MultiSelect..." autocomplete="off" type="text" value="">
+                </div>
+            </span>
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
+                <div class="k-child-animation-container">
+                    <div class="k-list-container k-multiselect-popup k-popup">
+                        <div class="k-list">
+                            <div class="k-list-sticky-header">
+                                <div class="k-list-sticky-header-item k-selected">
+                                    <span class="k-list-item-text">Select all</span>
+                                </div>
+                            </div>
+                            <div class="k-list-content">
+                                <ul aria-label="Options" id="k-ms-listbox-2" role="listbox" class="k-list-ul">
+                                    <li id="k-ms-sa-item-6" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                        <span class="k-list-item-text">Option 1</span>
+                                    </li>
+                                    <li id="k-ms-sa-item-7" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                        <span class="k-list-item-text">Option 2</span>
+                                    </li>
+                                    <li id="k-ms-sa-item-8" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                        <span class="k-list-item-text">Option 3</span>
+                                    </li>
+                                    <li id="k-ms-sa-item-9" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                        <span class="k-list-item-text">Option 4</span>
+                                    </li>
+                                    <li id="k-ms-sa-item-10" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                        <span class="k-list-item-text">Option 5</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span selectallprops="[object Object]" listitemprops="[object Object]" class="k-multiselect k-input">
+                <div class="k-input-values">
+                    <div id="k-ms-3-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
                         <div class="k-chip" role="button" aria-pressed="false">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Option 1</span>
@@ -92,86 +132,6 @@
                         <div class="k-chip" role="button" aria-pressed="false">
                             <span class="k-chip-content">
                                 <span class="k-chip-label">Option 2</span>
-                            </span>
-                            <span class="k-chip-actions">
-                                <span class="k-chip-action k-chip-remove-action">
-                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-2-listbox" aria-autocomplete="list" aria-describedby="k-ms-2-taglist" aria-label="Select items" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                </div>
-                <span class="k-clear-value">
-                    <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </span>
-            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
-                <div class="k-child-animation-container">
-                    <div class="k-list-container k-multiselect-popup k-popup">
-                        <div class="k-list">
-                            <div class="k-list-sticky-header">
-                                <div class="k-list-sticky-header-item">
-                                    <span class="k-checkbox-wrap">
-                                        <input aria-label="Select all" class="k-checkbox k-checked" type="checkbox" checked="">
-                                    </span>
-                                    <span class="k-list-item-text">Select all</span>
-                                </div>
-                            </div>
-                            <div class="k-list-content">
-                                <ul aria-label="Options" id="k-ms-listbox-2" role="listbox" class="k-list-ul">
-                                    <li id="k-ms-sa-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
-                                        </span>
-                                        <span class="k-list-item-text">Option 1</span>
-                                    </li>
-                                    <li id="k-ms-sa-item-7" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
-                                        </span>
-                                        <span class="k-list-item-text">Option 2</span>
-                                    </li>
-                                    <li id="k-ms-sa-item-8" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
-                                        </span>
-                                        <span class="k-list-item-text">Option 3</span>
-                                    </li>
-                                    <li id="k-ms-sa-item-9" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
-                                        </span>
-                                        <span class="k-list-item-text">Option 4</span>
-                                    </li>
-                                    <li id="k-ms-sa-item-10" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-checkbox-wrap">
-                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
-                                        </span>
-                                        <span class="k-list-item-text">Option 5</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <span selectallprops="[object Object]" listitemprops="[object Object]" class="k-multiselect k-input">
-                <div class="k-input-values">
-                    <div id="k-ms-3-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
-                        <div class="k-chip" role="button" aria-pressed="false">
-                            <span class="k-chip-content">
-                                <span class="k-chip-label">12 items selected</span>
                             </span>
                             <span class="k-chip-actions">
                                 <span class="k-chip-action k-chip-remove-action">
@@ -206,10 +166,93 @@
                                     <span class="k-list-item-text">Select all</span>
                                 </div>
                             </div>
+                            <div class="k-list-content">
+                                <ul aria-label="Options" id="k-ms-listbox-3" role="listbox" class="k-list-ul">
+                                    <li id="k-ms-sa-item-11" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                        <span class="k-checkbox-wrap">
+                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                        </span>
+                                        <span class="k-list-item-text">Option 1</span>
+                                    </li>
+                                    <li id="k-ms-sa-item-12" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                        <span class="k-checkbox-wrap">
+                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                        </span>
+                                        <span class="k-list-item-text">Option 2</span>
+                                    </li>
+                                    <li id="k-ms-sa-item-13" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                        <span class="k-checkbox-wrap">
+                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                        </span>
+                                        <span class="k-list-item-text">Option 3</span>
+                                    </li>
+                                    <li id="k-ms-sa-item-14" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                        <span class="k-checkbox-wrap">
+                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                        </span>
+                                        <span class="k-list-item-text">Option 4</span>
+                                    </li>
+                                    <li id="k-ms-sa-item-15" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                        <span class="k-checkbox-wrap">
+                                            <input class="k-checkbox k-checked" type="checkbox" checked="">
+                                        </span>
+                                        <span class="k-list-item-text">Option 5</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span>Grouping</span>
+        <span>Filtering</span>
+        <span>Custom Value</span>
+        <div>
+            <span selectallprops="[object Object]" listitemprops="[object Object]" class="k-multiselect k-input">
+                <div class="k-input-values">
+                    <div id="k-ms-4-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                        <div class="k-chip" role="button" aria-pressed="false">
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">12 items selected</span>
+                            </span>
+                            <span class="k-chip-actions">
+                                <span class="k-chip-action k-chip-remove-action">
+                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-4-listbox" aria-autocomplete="list" aria-describedby="k-ms-4-taglist" aria-label="Select items" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                </div>
+                <span class="k-clear-value">
+                    <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
+                <div class="k-child-animation-container">
+                    <div class="k-list-container k-multiselect-popup k-popup">
+                        <div class="k-list">
+                            <div class="k-list-sticky-header">
+                                <div class="k-list-sticky-header-item">
+                                    <span class="k-checkbox-wrap">
+                                        <input aria-label="Select all" class="k-checkbox k-checked" type="checkbox" checked="">
+                                    </span>
+                                    <span class="k-list-item-text">Select all</span>
+                                </div>
+                            </div>
                             <div class="k-list-group-sticky-header">
                                 <div class="k-list-header-text">Group 1</div>
                             </div>
-                            <div class="k-list-content" role="listbox" id="k-ms-listbox-3" aria-label="Options">
+                            <div class="k-list-content" role="listbox" id="k-ms-listbox-4" aria-label="Options">
                                 <ul aria-labelledby="k-ms-sag-group-1" role="group" class="k-list-ul">
                                     <li id="k-ms-sag-group-1" role="presentation" class="k-list-group-item">
                                         <span class="k-list-item-text">Group 1</span>
@@ -250,14 +293,11 @@
                 </div>
             </div>
         </div>
-        <span>Filtering</span>
-        <span>Custom Value</span>
-        <span>Virtualization</span>
         <div>
             <span selectallprops="[object Object]" listitemprops="[object Object]" class="k-multiselect k-input">
                 <div class="k-input-values">
-                    <div id="k-ms-4-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-4-listbox" aria-autocomplete="list" aria-label="Select items" class="k-input-inner" placeholder="MultiSelect..." autocomplete="off" type="text" value="">
+                    <div id="k-ms-5-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-5-listbox" aria-autocomplete="list" aria-label="Select items" class="k-input-inner" placeholder="MultiSelect..." autocomplete="off" type="text" value="">
                 </div>
             </span>
             <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
@@ -283,7 +323,7 @@
                                 </div>
                             </div>
                             <div class="k-list-content">
-                                <ul aria-label="Options" id="k-ms-listbox-4" role="listbox" class="k-list-ul">
+                                <ul aria-label="Options" id="k-ms-listbox-5" role="listbox" class="k-list-ul">
                                     <li id="k-ms-saf-item-1" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-checkbox-wrap">
                                             <input class="k-checkbox" type="checkbox">
@@ -324,8 +364,8 @@
         <div>
             <span selectallprops="[object Object]" class="k-multiselect k-input">
                 <div class="k-input-values">
-                    <div id="k-ms-5-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-5-listbox" aria-autocomplete="list" aria-label="Select items" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom Option">
+                    <div id="k-ms-6-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-6-listbox" aria-autocomplete="list" aria-label="Select items" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Custom Option">
                 </div>
             </span>
             <div class="k-animation-container k-animation-container-shown" role="region" aria-label="MultiSelect suggestions">
@@ -365,11 +405,14 @@
                 </div>
             </div>
         </div>
+        <span>Virtualization</span>
+        <span></span>
+        <span></span>
         <div>
             <span selectallprops="[object Object]" listitemprops="[object Object]" class="k-multiselect k-input k-loading">
                 <div class="k-input-values">
-                    <div id="k-ms-6-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
-                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-6-listbox" aria-autocomplete="list" aria-busy="true" aria-label="Select items" class="k-input-inner" placeholder="MultiSelect..." autocomplete="off" type="text" value="">
+                    <div id="k-ms-7-taglist" class="k-chip-list" role="listbox" aria-label="chip list" aria-orientation="horizontal"></div>
+                    <input role="combobox" aria-haspopup="listbox" aria-expanded="true" aria-controls="k-ms-7-listbox" aria-autocomplete="list" aria-busy="true" aria-label="Select items" class="k-input-inner" placeholder="MultiSelect..." autocomplete="off" type="text" value="">
                 </div>
                 <span class="k-input-loading-icon k-icon k-i-loading"></span>
             </span>
@@ -386,7 +429,7 @@
                                 </div>
                             </div>
                             <div class="k-list-content">
-                                <ul aria-label="Options" id="k-ms-listbox-5" role="listbox" class="k-list-ul">
+                                <ul aria-label="Options" id="k-ms-listbox-6" role="listbox" class="k-list-ul">
                                     <li id="k-ms-sav-item-6" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-checkbox-wrap">
                                             <input class="k-checkbox" type="checkbox">
@@ -427,6 +470,8 @@
                 </div>
             </div>
         </div>
+        <div></div>
+        <div></div>
     </div>
 </body>
 </html>

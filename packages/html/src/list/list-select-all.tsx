@@ -6,6 +6,7 @@ const LIST_SELECTALL_CLASSNAME = `k-list-sticky-header`;
 const states = [
     States.hover,
     States.focus,
+    States.selected,
 ];
 
 const options = {};
@@ -33,6 +34,7 @@ export const ListSelectAll = (
         indeterminate,
         hover,
         focus,
+        selected,
         ...other
     } = props;
 
@@ -46,7 +48,7 @@ export const ListSelectAll = (
         >
             <div className={classNames(
                 `${LIST_SELECTALL_CLASSNAME}-item`,
-                stateClassNames(`${LIST_SELECTALL_CLASSNAME}-item`, { hover, focus }),
+                stateClassNames(`${LIST_SELECTALL_CLASSNAME}-item`, { hover, focus, selected }),
             )}>
                 {showCheckbox && <Checkbox checked={checked} indeterminate={indeterminate} aria-label={label} />}
                 <span className="k-list-item-text">{label}</span>
