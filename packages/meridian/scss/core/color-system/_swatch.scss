@@ -86,7 +86,7 @@ $_default-colors: (
     warning-emphasis: #{"oklch(from var(--kendo-color-warning) calc(l + 0.0283) calc(c - 0.0228) calc(h + 1.42))"},
     warning-on-subtle: #{"oklch(from var(--kendo-color-warning) calc(l - 0.5998) calc(c - 0.1574) calc(h + 162.13))"},
     on-warning: #{"oklch(from var(--kendo-color-warning) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 162.13))"},
-    warning-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-warning) l c h) 65%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 35%)"},
+    warning-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-warning) l c h) 60%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 40%)"},
     // Error
     error-subtle: #{"oklch(from var(--kendo-color-error) calc(l + 0.3868) calc(c - 0.1565) calc(h - 14.72))"},
     error-subtle-hover: #{"oklch(from var(--kendo-color-error) calc(l + 0.3203) calc(c - 0.1250) calc(h - 13.80))"},
@@ -97,7 +97,7 @@ $_default-colors: (
     error-emphasis: #{"oklch(from var(--kendo-color-error) calc(l + 0.1479) calc(c - 0.0349) calc(h - 9.11))"},
     error-on-subtle: #{"oklch(from var(--kendo-color-error) calc(l - 0.18) calc(c - 0.0490) calc(h - 0.16))"},
     on-error: #{"oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)"},
-    error-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-error) l c h) 65%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 35%)"},
+    error-on-surface: #{"color-mix(in oklch, oklch(from var(--kendo-color-error) l c h) 60%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 40%)"},
     // Inverse
     inverse-subtle: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))"},
     inverse-subtle-hover: #{"oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))"},
@@ -374,4 +374,3 @@ $_default-colors: (
 /// @prop {Color} series-f-subtler - The subtler series F color variable.
 $kendo-colors: $_default-colors !default;
 $kendo-colors: map.merge($kendo-colors, $_default-colors) !default;
-
