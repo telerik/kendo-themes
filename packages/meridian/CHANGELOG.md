@@ -1,3 +1,25 @@
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **meridian:** add ambient box-shadow to solid inputs and pickers ([6f8a16546e](https://github.com/telerik/kendo-themes/commit/6f8a16546e))
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **dock-manager:** adjust border-radius in meridian ([147ac9b7b8](https://github.com/telerik/kendo-themes/commit/147ac9b7b8))
+- **meridian:** add focus state to list-sticky-header-item ([8d0b4a665b](https://github.com/telerik/kendo-themes/commit/8d0b4a665b))
+- **meridian:** align dark swatch on-surface variables with color-mix formulas ([e79cd94491](https://github.com/telerik/kendo-themes/commit/e79cd94491))
+- **meridian:** reduce warning/error on-surface color-mix ratios for a11y contrast ([4853f7d419](https://github.com/telerik/kendo-themes/commit/4853f7d419))
+- **meridian:** adjust on-surface color-mix ratios for info, success, warning, error, inverse ([add53fb206](https://github.com/telerik/kendo-themes/commit/add53fb206))
+- **color-system:** use oklch clamp flip for on-surface variables in meridian ([5c13486e07](https://github.com/telerik/kendo-themes/commit/5c13486e07))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- Teya Veselinova
+
 ## 14.2.0 (2026-06-29)
 
 ### 🚀 Features
