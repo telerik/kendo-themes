@@ -43,7 +43,7 @@ jobs:
 
       - id: matrix
         run: |
-          echo "MATRIX=$(jq -n --argjson maxChunks ${{ inputs.max-chunks }} '{include: [range(0; $maxChunks)]}')" >> $GITHUB_OUTPUT
+          echo "MATRIX=$([ $(seq -s ', ' ${{inputs.max-chunks}})])" >> $GITHUB_OUTPUT
 
       - name: Check for differences in packages/html
         run: |
