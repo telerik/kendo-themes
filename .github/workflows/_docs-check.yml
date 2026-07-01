@@ -44,11 +44,12 @@ jobs:
         uses: actions/cache@v5
         with:
           path: .nx/cache
-          key: nx-cache-${{ github.ref }}-${{ github.sha }}
+          key: nx-docs-check-${{ github.ref }}-${{ github.sha }}
           restore-keys: |
-            nx-cache-${{ github.ref }}-
-            nx-cache-refs/heads/develop-
-            nx-cache-
+            nx-compile-themes-${{ github.ref }}-${{ github.sha }}
+            nx-docs-check-${{ github.ref }}-
+            nx-docs-check-refs/heads/develop-
+            nx-docs-check-
 
       - name: Download artifacts
         uses: actions/download-artifact@v8

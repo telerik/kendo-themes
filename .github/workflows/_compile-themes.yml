@@ -39,11 +39,11 @@ jobs:
         uses: actions/cache@v5
         with:
           path: .nx/cache
-          key: nx-cache-${{ github.ref }}-${{ github.sha }}
+          key: nx-compile-themes-${{ github.ref }}-${{ github.sha }}
           restore-keys: |
-            nx-cache-${{ github.ref }}-
-            nx-cache-refs/heads/develop-
-            nx-cache-
+            nx-compile-themes-${{ github.ref }}-
+            nx-compile-themes-refs/heads/develop-
+            nx-compile-themes-
 
       - name: Build test assets
         run: |
