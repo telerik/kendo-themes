@@ -18,6 +18,11 @@ on:
         required: false
         type: string
         default: 'conditionally'
+      max-chunks:
+        description: 'Maximum number of chunks to split the test pages into'
+        required: false
+        type: number
+        default: 4
 
 concurrency:
   group: render-test-pages-${{ github.ref }}
@@ -29,11 +34,16 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       should-render: ${{ steps.should-render.outputs.SHOULD_RENDER }}
+      chunk-matrix: ${{ steps.should-render.outputs.MATRIX }}
 
     steps:
 
       - name: Checkout branch
         uses: actions/checkout@v6
+
+      - id: matrix
+        run: |
+          echo "MATRIX=$(jq -n --argjson maxChunks ${{ inputs.max-chunks }} '{include: [range(0; $maxChunks)]}')" >> $GITHUB_OUTPUT
 
       - name: Check for differences in packages/html
         run: |
@@ -73,6 +83,10 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ needs.verify.outputs.should-render == 'YES' }}
     needs: [ verify ]
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{fromJson(needs.verify.outputs.chunk-matrix).include}}
 
     steps:
 
@@ -131,6 +145,8 @@ jobs:
       - name: Update markup snapshots
         env:
           HEADLESS: 'true'
+          MAX_CUNKS: ${{ inputs.max-chunks }}
+          CURRENT_CHUNK: ${{ matrix.chunk }}
         run: |
           npm run test:render-test-pages
 
@@ -173,6 +189,6 @@ jobs:
         if: ${{ inputs.upload-policy != 'never' }}
         uses: actions/upload-artifact@v7
         with:
-          name: test-pages
+          name: test-pages-${{ matrix.chunk }}
           path: test-pages.tar
           if-no-files-found: warn
