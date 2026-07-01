@@ -5,6 +5,7 @@
 @mixin kendo-list--theme() {
     @include kendo-list--theme-base();
 
+    .k-list-sticky-header-item,
     .k-list-item,
     .k-list-custom-value {
         // Focus
