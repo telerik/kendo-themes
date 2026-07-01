@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       should-render: ${{ steps.should-render.outputs.SHOULD_RENDER }}
-      chunk-matrix: ${{ steps.should-render.outputs.MATRIX }}
+      chunk-matrix: ${{ steps.matrix.outputs.MATRIX }}
 
     steps:
 
@@ -43,7 +43,7 @@ jobs:
 
       - id: matrix
         run: |
-          echo "MATRIX=$([ $(seq -s ', ' ${{inputs.max-chunks}})])" >> $GITHUB_OUTPUT
+          echo "MATRIX=$(jq -cn --argjson n ${{ inputs.max-chunks }} '{include: [range(1; $n + 1) ]}')" >> $GITHUB_OUTPUT
 
       - name: Check for differences in packages/html
         run: |
@@ -145,7 +145,7 @@ jobs:
       - name: Update markup snapshots
         env:
           HEADLESS: 'true'
-          MAX_CUNKS: ${{ inputs.max-chunks }}
+          MAX_CHUNKS: ${{ inputs.max-chunks }}
           CURRENT_CHUNK: ${{ matrix.chunk }}
         run: |
           npm run test:render-test-pages
