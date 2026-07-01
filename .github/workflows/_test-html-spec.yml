@@ -42,7 +42,6 @@ jobs:
           key: nx-test-html-spec-${{ github.ref }}-${{ github.sha }}
           restore-keys: |
             nx-test-html-spec-${{ github.ref }}-
-            nx-test-html-spec-refs/heads/develop-
             nx-test-html-spec-
 
       - name: Build and check types

@@ -51,8 +51,7 @@ jobs:
           key: nx-test-units-${{ matrix.theme }}-${{ github.ref }}-${{ github.sha }}
           restore-keys: |
             nx-compile-themes-${{ github.ref }}-${{ github.sha }}
-            nx-test-units-${{ matrix.theme }}-${{ github.ref }}-
-            nx-test-units-${{ matrix.theme }}-refs/heads/develop-
+            nx-test-units-${{ matrix.theme }}-${{ github.ref }}-git 
             nx-test-units-${{ matrix.theme }}-
 
       - name: Download compiled themes

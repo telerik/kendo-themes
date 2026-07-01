@@ -48,7 +48,6 @@ jobs:
           restore-keys: |
             nx-compile-themes-${{ github.ref }}-${{ github.sha }}
             nx-docs-check-${{ github.ref }}-
-            nx-docs-check-refs/heads/develop-
             nx-docs-check-
 
       - name: Download artifacts

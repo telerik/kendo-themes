@@ -42,7 +42,6 @@ jobs:
           key: nx-compile-themes-${{ github.ref }}-${{ github.sha }}
           restore-keys: |
             nx-compile-themes-${{ github.ref }}-
-            nx-compile-themes-refs/heads/develop-
             nx-compile-themes-
 
       - name: Build test assets
