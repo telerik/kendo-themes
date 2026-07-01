@@ -115,6 +115,16 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
+      - name: Use cache for Nx
+        uses: actions/cache@v5
+        with:
+          path: .nx/cache
+          key: nx-render-test-pages-${{ github.ref }}-${{ github.sha }}
+          restore-keys: |
+            nx-render-test-pages-${{ github.ref }}-
+            nx-render-test-pages-refs/heads/develop-
+            nx-render-test-pages-
+
       - name: Build test assets
         run: |
           npm run build:tests
