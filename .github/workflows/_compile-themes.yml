@@ -49,14 +49,20 @@ jobs:
         run: |
           npm run sass
 
+      - name: Build core docs
+        run: |
+          npx nx run @progress/kendo-themes-core:docs
+
       - name: Build Meridian swatches
         run: |
-          npm --workspace=@progress/kendo-theme-meridian run sass:dist
+          npx nx run @progress/kendo-theme-meridian:sass:dist
 
       - name: Pack themes
         run: |
           tar -cf themes.tar \
             packages/core/dist/all.css \
+            packages/core/docs \
+            packages/core/dist/meta \
             packages/default/dist/all.css \
             packages/bootstrap/dist/all.css \
             packages/classic/dist/all.css \

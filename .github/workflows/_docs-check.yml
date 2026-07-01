@@ -59,5 +59,8 @@ jobs:
       - name: Unpack artifacts
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
+      - name: Show affected projects
+        run: npx nx show projects --affected --base=origin/develop
+
       - name: Check docs
         run: npx nx affected -t docs:check
