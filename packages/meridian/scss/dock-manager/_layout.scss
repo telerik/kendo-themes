@@ -1,10 +1,17 @@
 @use "@progress/kendo-theme-core/scss/components/dock-manager/_layout.scss" as *;
+@use "../core/mixins/index.scss" as *;
 
 @mixin kendo-dock-manager--layout() {
     @include kendo-dock-manager--layout-base();
     @include kendo-dock-navigator--layout();
 
     .k-dock-manager-toolbar {
-        border-radius: 0;
+        @include border-left-radius-only( inherit );
+        @include border-right-radius-only( 0 );
+
+        & + .k-dock-manager-pane-container {
+            @include border-left-radius-only( 0 );
+            @include border-right-radius-only( inherit );
+        }
     }
 }
