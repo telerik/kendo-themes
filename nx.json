@@ -22,17 +22,6 @@
     ]
   },
   "targetDefaults": {
-    "lint": {
-      "cache": true,
-      "inputs": [
-        "ts-sources",
-        "scss-sources"
-      ],
-      "executor": "nx:run-script",
-      "options": {
-        "script": "lint"
-      }
-    },
     "build": {
       "cache": true,
       "inputs": [
