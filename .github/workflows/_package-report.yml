@@ -119,7 +119,10 @@ jobs:
           git checkout origin/develop -- packages/${{ matrix.package }}/scss packages/${{ matrix.package }}/package.json 2>/dev/null || git checkout origin/develop
 
           # Reinstall if lockfile differs between branches
-          npm ci --no-audit --no-fund 2>/dev/null || true
+          if ! git diff --quiet origin/develop -- package-lock.json; then
+            echo "package-lock.json differs between branches. Reinstalling dependencies..."
+            npm ci --no-audit --no-fund
+          fi
 
           times=()
           for i in {1..3}; do
