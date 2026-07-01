@@ -16,9 +16,15 @@
   "nx": {
     "targets": {
       "test": {
-        "dependsOn": [
-          "^docs"
-        ]
+        "inputs": [
+          "{projectRoot}/**/*.{ts,js}",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/vitest.config.*",
+          "^scss-sources",
+          {"dependentTasksOutputFiles": "**/dist/meta/**"},
+          "{workspaceRoot}/packages/html/src/**/*.spec.tsx"
+        ],
+        "dependsOn": ["^docs"]
       }
     }
   },

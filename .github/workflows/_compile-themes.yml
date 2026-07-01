@@ -50,11 +50,11 @@ jobs:
 
       - name: Build core docs
         run: |
-          npx nx run @progress/kendo-themes-core:docs
+          npx nx run @progress/kendo-theme-core:docs
 
       - name: Build Meridian swatches
         run: |
-          npx nx run @progress/kendo-theme-meridian:sass:dist
+          npx nx run @progress/kendo-theme-meridian:sass:dist --exclude-task-dependencies
 
       - name: Pack themes
         run: |

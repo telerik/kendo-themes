@@ -51,7 +51,7 @@ jobs:
           key: nx-test-units-${{ matrix.theme }}-${{ github.ref }}-${{ github.sha }}
           restore-keys: |
             nx-compile-themes-${{ github.ref }}-${{ github.sha }}
-            nx-test-units-${{ matrix.theme }}-${{ github.ref }}-git 
+            nx-test-units-${{ matrix.theme }}-${{ github.ref }}
             nx-test-units-${{ matrix.theme }}-
 
       - name: Download compiled themes
@@ -69,4 +69,4 @@ jobs:
 
       - name: Run unit tests
         run: |
-          npx nx run @progress/kendo-theme-units:test -- ${{ matrix.theme }}
+          npx nx run @progress/kendo-themes-units:test --exclude-task-dependencies -- ${{ matrix.theme }}
