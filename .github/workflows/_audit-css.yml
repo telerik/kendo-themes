@@ -21,15 +21,8 @@ jobs:
       - name: Setup and Install dependencies
         uses: ./.github/actions/setup
 
-      - name: Download compiled themes artifact
-        uses: actions/download-artifact@v8
-        with:
-          name: themes
-
-      - name: Extract compiled themes
-        run: |
-          tar -xf themes.tar
+      - name: Nx Cache
+        uses: ./.github/actions/nx-cache
 
       - name: Run CSS compliance audit
-        run: |
-          node scripts/audit-css.mjs all
+        run: npx nx run workspace:audit:css -- all

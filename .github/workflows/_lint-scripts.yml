@@ -23,4 +23,4 @@ jobs:
 
       - name: Lint scripts
         run: |
-          npm run lint:scripts
+          npx nx run workspace:lint:scripts

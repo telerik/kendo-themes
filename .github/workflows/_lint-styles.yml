@@ -23,5 +23,5 @@ jobs:
 
       - name: Lint styles
         run: |
-          npm run lint:styles
+          npx nx run workspace:lint:styles
 

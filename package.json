@@ -108,5 +108,49 @@
     "@types/react": "19.2.15",
     "nwsapi": "2.2.23",
     "vite": "8.0.14"
+  },
+  "nx": {
+    "name": "workspace",
+    "targets": {
+      "lint:scripts": {
+        "cache": true,
+        "inputs": [
+          "sharedGlobals",
+          "{workspaceRoot}/**/*.{ts,tsx,js,jsx,mjs}",
+          "{workspaceRoot}/eslint.config.js"
+        ]
+      },
+      "lint:styles": {
+        "cache": true,
+        "inputs": [
+          "sharedGlobals",
+          "{workspaceRoot}/packages/**/*.scss",
+          "{workspaceRoot}/.stylelintrc*"
+        ]
+      },
+      "audit:css": {
+        "cache": true,
+        "inputs": [
+          "sharedGlobals",
+          "{workspaceRoot}/scripts/audit-css.mjs",
+          { "dependentTasksOutputFiles": "**/dist/**/*.css" }
+        ]
+      },
+      "test:render-test-pages": {
+        "cache": false,
+        "dependsOn": ["@progress/kendo-themes-html:build:tests"]
+      },
+      "implicitDependencies": [
+        "@progress/kendo-theme-core",
+        "@progress/kendo-themes-utils",
+        "@progress/kendo-theme-default",
+        "@progress/kendo-theme-bootstrap",
+        "@progress/kendo-theme-material",
+        "@progress/kendo-theme-classic",
+        "@progress/kendo-theme-fluent",
+        "@progress/kendo-theme-meridian",
+        "@progress/kendo-themes-html"
+      ]
+    }
   }
 }
