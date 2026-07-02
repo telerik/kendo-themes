@@ -14,7 +14,7 @@ export const MultiSelectGroupingCustomValue = ({ value="Custom value", ...other 
             aria-label="Select options"
             opened
             popup={
-                <List header="Group 1" customValue={<ListCustomValue text={`Use "${value}"`}/>}>
+                <List screenReaders header="Group 1" customValue={<ListCustomValue text={`Use "${value}"`}/>}>
                     <ListContent grouping listboxId={listboxId} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>

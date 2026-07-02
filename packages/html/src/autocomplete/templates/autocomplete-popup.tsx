@@ -15,7 +15,7 @@ export const AutocompletePopup = (props) => {
             opened
             activeDescendant={item1Id}
             popup={
-                <List>
+                <List screenReaders>
                     <ListContent listboxId={`${acId}-listbox`} aria-label="Suggestions">
                         <ListItem id={item0Id} selected>Selected item</ListItem>
                         <ListItem id={item1Id} focus>Focused item</ListItem>

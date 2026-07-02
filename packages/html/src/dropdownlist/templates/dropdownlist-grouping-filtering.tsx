@@ -19,7 +19,7 @@ export const DropdownListGroupingFiltering = (props) => {
                     <div className="k-list-filter">
                         <Searchbox aria-label="Search" />
                     </div>
-                    <List header="Group 1">
+                    <List screenReaders header="Group 1">
                         <ListContent grouping listboxId={listboxId} aria-label="Options">
                             <ListUl role="group" aria-labelledby={group1Id}>
                                 <ListGroupItem id={group1Id}>Group 1</ListGroupItem>

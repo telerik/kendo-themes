@@ -13,7 +13,7 @@ export const ComboboxGroupingModernCustomValue = ({ value="Custom value", ...oth
             opened
             popup={
                 <>
-                    <List header="Group 1" customValue={<ListCustomValue text={`Use "${value}"`}/>} >
+                    <List screenReaders header="Group 1" customValue={<ListCustomValue text={`Use "${value}"`}/>} >
                         <ListContent grouping listboxId={`${cbId}-listbox`} aria-label="Options">
                             <ListUl role="group" aria-labelledby={group1Id}>
                                 <ListGroupItem id={group1Id}>Group 1</ListGroupItem>

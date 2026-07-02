@@ -8,7 +8,7 @@ export const AutocompleteCustomValue = ({ value="Custom value", ...other }: any)
         aria-label="Search options"
         opened
         popup={
-            <List customValue={<ListCustomValue text={`Use "${value}"`}/>} >
+            <List screenReaders customValue={<ListCustomValue text={`Use "${value}"`}/>} >
                 <ListContent aria-label="Options">
                     <ListItem>List item</ListItem>
                     <ListItem>List item</ListItem>

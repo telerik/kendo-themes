@@ -14,7 +14,7 @@ export const MultiSelectGroupingVirtualCustomValue = ({ value="Custom value", ..
             aria-label="Select options"
             opened
             popup={
-                <List header="Group 1" virtualization customValue={<ListCustomValue text={`Use "${value}"`}/>}>
+                <List screenReaders header="Group 1" virtualization customValue={<ListCustomValue text={`Use "${value}"`}/>}>
                     <ListContent grouping virtualization listboxId={listboxId} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>

@@ -13,7 +13,7 @@ export const DropdownListFiltering = (props) => (
                 <div className="k-list-filter">
                     <Searchbox aria-label="Search" />
                 </div>
-                <List>
+                <List screenReaders>
                     <ListContent aria-label="Options">
                         <ListItem>List item</ListItem>
                         <ListItem>List item</ListItem>
