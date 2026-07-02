@@ -23,32 +23,11 @@ jobs:
       - name: Fetch base branch
         run: git fetch origin develop
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: '24'
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
-        with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
-
-      - name: Use cache for Nx
-        uses: actions/cache@v5
-        with:
-          path: .nx/cache
-          key: nx-docs-check-${{ github.ref }}-${{ github.sha }}
-          restore-keys: |
-            nx-compile-themes-${{ github.ref }}-${{ github.sha }}
-            nx-docs-check-${{ github.ref }}-
-            nx-docs-check-
+      - name: Nx Cache
+        uses: ./.github/actions/nx-cache
 
       - name: Download artifacts
         uses: actions/download-artifact@v8

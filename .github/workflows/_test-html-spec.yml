@@ -17,32 +17,14 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v6
 
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24.x
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
+      - name: Nx Cache
+        uses: ./.github/actions/nx-cache
         with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
-
-      - name: Use cache for Nx
-        uses: actions/cache@v5
-        with:
-          path: .nx/cache
-          key: nx-test-html-spec-${{ github.ref }}-${{ github.sha }}
-          restore-keys: |
-            nx-test-html-spec-${{ github.ref }}-
-            nx-test-html-spec-
+          save: 'true'
+          key-suffix: html-spec
 
       - name: Build and check types
         run: |

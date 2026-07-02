@@ -1,0 +1,32 @@
+name: Nx cache
+description: Restore (and optionally save) the Nx cache
+inputs:
+  save:
+    description: 'true = restore+save (producer), false = restore only (consumer)'
+    default: 'false'
+  key-suffix:
+    description: Unique suffix to append to the cache key (e.g. for different jobs in the same workflow)
+    default: ${{ github.job }}
+runs:
+  using: 'composite'
+  steps:
+    - name: Restore and save Nx cache
+      if: inputs.save == 'true'
+      uses: actions/cache@v5
+      with:
+        path: .nx/cache
+        key: nx-${{ github.sha }}-${{ inputs.key-suffix }}
+        restore-keys: |
+          nx-${{ github.sha }}-
+          nx-
+
+    - name: Restore Nx cache
+      if: inputs.save != 'true'
+      id: cache-nx
+      uses: actions/cache/restore@v5
+      with:
+        path: .nx/cache
+        key: nx-${{ github.sha }}-${{ inputs.key-suffix }}
+        restore-keys: |
+          nx-${{ github.sha }}-
+          nx-

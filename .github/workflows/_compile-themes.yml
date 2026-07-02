@@ -17,40 +17,22 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v6
 
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24.x
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
+      - name: Nx Cache
+        uses: ./.github/actions/nx-cache
         with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+          save: 'true'
+          key-suffix: compile-themes
 
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+      - name: Build themes
         run: |
-          npm ci --no-audit --no-fund
-
-      - name: Use cache for Nx
-        uses: actions/cache@v5
-        with:
-          path: .nx/cache
-          key: nx-compile-themes-${{ github.ref }}-${{ github.sha }}
-          restore-keys: |
-            nx-compile-themes-${{ github.ref }}-
-            nx-compile-themes-
-
-      - name: Build test assets
-        run: |
-          npm run sass
+          npx nx run-many -t sass
 
       - name: Build core docs
         run: |
-          npx nx run @progress/kendo-theme-core:docs
+          npx nx run-many -t docs
 
       - name: Build Meridian swatches
         run: |

@@ -26,33 +26,11 @@ jobs:
       - name: Fetch base branch
         run: git fetch origin develop
 
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24.x
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
-        with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
-
-      - name: Use cache for Nx
-        uses: actions/cache@v5
-        with:
-          path: .nx/cache
-          key: nx-test-units-${{ matrix.theme }}-${{ github.ref }}-${{ github.sha }}
-          restore-keys: |
-            nx-compile-themes-${{ github.ref }}-${{ github.sha }}
-            nx-test-units-${{ matrix.theme }}-${{ github.ref }}
-            nx-test-units-${{ matrix.theme }}-
+      - name: Nx Cache
+        uses: ./.github/actions/nx-cache
 
       - name: Download compiled themes
         uses: actions/download-artifact@v8
@@ -63,10 +41,6 @@ jobs:
       - name: Unpack compiled themes
         run: tar -xf .tmp/themes.tar
 
-      - name: Build docs
-        run: |
-          npx nx run @progress/kendo-theme-${{matrix.theme}}:docs
-
       - name: Run unit tests
         run: |
-          npx nx run @progress/kendo-themes-units:test --exclude-task-dependencies -- ${{ matrix.theme }}
+          npx nx run @progress/kendo-themes-units:test -- ${{ matrix.theme }}

@@ -3,11 +3,6 @@ name: Render test pages
 on:
   workflow_call:
     inputs:
-      node-version:
-        description: 'Version of node to use'
-        required: false
-        type: number
-        default: 24
       force-render:
         description: 'Always render images, regardless of git changes'
         required: false
@@ -78,6 +73,22 @@ jobs:
             echo "Test pages will NOT be rendered"
           fi
 
+      - name: Setup and Install dependencies
+        if: ${{ steps.should-render.outputs.SHOULD_RENDER == 'YES' }}
+        uses: ./.github/actions/setup
+
+      - name: Nx Cache
+        if: ${{ steps.should-render.outputs.SHOULD_RENDER == 'YES' }}
+        uses: ./.github/actions/nx-cache
+        with:
+          save: 'true'
+          key-suffix: render-verify
+
+      - name: Build test assets
+        if: ${{ steps.should-render.outputs.SHOULD_RENDER == 'YES' }}
+        run: |
+          npx nx run @progress/kendo-themes-html:build:tests
+
 
   run:
     runs-on: ubuntu-latest
@@ -111,36 +122,15 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v6
 
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ inputs.node-version }}
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
-        with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
-
-      - name: Use cache for Nx
-        uses: actions/cache@v5
-        with:
-          path: .nx/cache
-          key: nx-render-test-pages-${{ github.ref }}-${{ github.sha }}
-          restore-keys: |
-            nx-render-test-pages-${{ github.ref }}-
-            nx-render-test-pages-
+      - name: Nx Cache
+        uses: ./.github/actions/nx-cache
 
       - name: Build test assets
         run: |
-          npm run build:tests
+          npx nx run @progress/kendo-themes-html:build:tests
 
       - name: Update markup snapshots
         env:
