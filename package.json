@@ -111,7 +111,7 @@
   },
   "nx": {
     "name": "workspace",
-    "includeScripts": [
+    "includedScripts": [
       "lint:scripts",
       "lint:styles",
       "audit:css",
