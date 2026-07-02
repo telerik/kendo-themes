@@ -50,21 +50,21 @@ $kendo-table-lg-cell-padding-y: k-spacing(2.5) !default;
 
 /// The font size of the Table for small size.
 /// @group table
-$kendo-table-sm-font-size: var(--kendo-font-size) !default;
+$kendo-table-sm-font-size: if($kendo-table-font-size != null, $kendo-table-font-size, var(--kendo-font-size)) !default;
 /// The line height of the Table for small size.
 /// @group table
 $kendo-table-sm-line-height: var(--kendo-line-height) !default;
 
 /// The font size of the Table for medium size.
 /// @group table
-$kendo-table-md-font-size: var(--kendo-font-size) !default;
+$kendo-table-md-font-size: if($kendo-table-font-size != null, $kendo-table-font-size, var(--kendo-font-size)) !default;
 /// The line height of the Table for medium size.
 /// @group table
 $kendo-table-md-line-height: var(--kendo-line-height) !default;
 
 /// The font size of the Table for large size.
 /// @group table
-$kendo-table-lg-font-size: var(--kendo-font-size) !default;
+$kendo-table-lg-font-size: if($kendo-table-font-size != null, $kendo-table-font-size, var(--kendo-font-size)) !default;
 /// The line height of the Table for large size.
 /// @group table
 $kendo-table-lg-line-height: var(--kendo-line-height) !default;
