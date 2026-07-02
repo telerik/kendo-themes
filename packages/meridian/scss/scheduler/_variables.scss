@@ -194,10 +194,10 @@ $kendo-scheduler-tooltip-padding-y: k-spacing(2) !default;
 $kendo-scheduler-tooltip-border-width: 0 !default;
 /// The background color of the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-bg: k-color(on-primary) !default;
+$kendo-scheduler-tooltip-bg: null !default;
 /// The text color of the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-text: k-color(on-app-surface) !default;
+$kendo-scheduler-tooltip-text: null !default;
 /// The border color of the Scheduler Tooltip.
 /// @group scheduler
 $kendo-scheduler-tooltip-border: null !default;
