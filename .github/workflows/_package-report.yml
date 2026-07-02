@@ -63,7 +63,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: ./.github/actions/setup
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
       - name: Measure PR branch
         run: |
@@ -100,7 +101,11 @@ jobs:
           # Save PR results before switching branches
           cp pr-data.txt /tmp/pr-data.txt
 
-          git checkout origin/develop -- packages/${{ matrix.package }}/scss packages/${{ matrix.package }}/package.json 2>/dev/null || git checkout origin/develop
+          if [ "${{ matrix.package }}" = "html" ]; then
+            git checkout origin/develop -- packages/${{ matrix.package }}/src packages/${{ matrix.package }}/package.json
+          else
+            git checkout origin/develop -- packages/${{ matrix.package }}/scss packages/${{ matrix.package }}/package.json
+          fi
 
           # Reinstall if lockfile differs between branches
           if ! git diff --quiet origin/develop -- package-lock.json; then
