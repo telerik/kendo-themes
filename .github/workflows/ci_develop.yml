@@ -27,8 +27,8 @@ jobs:
         with:
           save: 'true'
           key-suffix: warm
-      - name: Build all cachable targets
-        run: npx nx run-many -t sass, sass:dist,docs,build,build:tests,workspace:lint:scripts,workspace:lint:styles
+      - name: Build all cacheable targets
+        run: npx nx run-many -t sass,sass:dist,docs,build,build:tests,lint:scripts,lint:styles
 
 
   lint-scripts:

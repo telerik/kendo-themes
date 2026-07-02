@@ -111,6 +111,12 @@
   },
   "nx": {
     "name": "workspace",
+    "includeScripts": [
+      "lint:scripts",
+      "lint:styles",
+      "audit:css",
+      "test:render-test-pages"
+    ],
     "targets": {
       "lint:scripts": {
         "cache": true,
@@ -125,6 +131,7 @@
         "inputs": [
           "sharedGlobals",
           "{workspaceRoot}/packages/**/*.scss",
+          "{workspaceRoot}/lib/**/*.scss",
           "{workspaceRoot}/.stylelintrc*"
         ]
       },
@@ -134,23 +141,26 @@
           "sharedGlobals",
           "{workspaceRoot}/scripts/audit-css.mjs",
           { "dependentTasksOutputFiles": "**/dist/**/*.css" }
+        ],
+        "dependsOn": [
+          "^sass"
         ]
       },
       "test:render-test-pages": {
         "cache": false,
         "dependsOn": ["@progress/kendo-themes-html:build:tests"]
-      },
-      "implicitDependencies": [
-        "@progress/kendo-theme-core",
-        "@progress/kendo-themes-utils",
-        "@progress/kendo-theme-default",
-        "@progress/kendo-theme-bootstrap",
-        "@progress/kendo-theme-material",
-        "@progress/kendo-theme-classic",
-        "@progress/kendo-theme-fluent",
-        "@progress/kendo-theme-meridian",
-        "@progress/kendo-themes-html"
-      ]
-    }
+      }
+    },
+    "implicitDependencies": [
+      "@progress/kendo-theme-core",
+      "@progress/kendo-theme-utils",
+      "@progress/kendo-theme-default",
+      "@progress/kendo-theme-bootstrap",
+      "@progress/kendo-theme-material",
+      "@progress/kendo-theme-classic",
+      "@progress/kendo-theme-fluent",
+      "@progress/kendo-theme-meridian",
+      "@progress/kendo-themes-html"
+    ]
   }
 }
