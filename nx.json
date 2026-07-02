@@ -5,6 +5,9 @@
     "libsDir": "packages"
   },
   "namedInputs": {
+    "sharedGlobals": [
+      { "runtime": "node --version"}
+    ],
     "scss-sources": [
       "{projectRoot}/scss/**/*.scss",
       "{projectRoot}/lib/**/*.json"
@@ -25,6 +28,7 @@
     "build": {
       "cache": true,
       "inputs": [
+        "sharedGlobals",
         "ts-sources",
         "{projectRoot}/scripts/**/*.{js,mjs}",
         "{projectRoot}/tsconfig.json"
@@ -36,8 +40,11 @@
     "build:tests": {
       "cache": true,
       "inputs": [
+        "sharedGlobals",
         "ts-sources",
-        "{projectRoot}/scripts/**/*.{js,mjs}"
+        "{projectRoot}/scripts/**/*.{js,mjs}",
+        "{projectRoot}/tsconfig.json",
+        "{projectRoot}/shared/**"
       ],
       "outputs": [
         "{projectRoot}/dist/**"
@@ -49,6 +56,7 @@
     "sass": {
       "cache": true,
       "inputs": [
+        "sharedGlobals",
         "scss-sources",
         "global-scss",
         "config-files"
@@ -63,9 +71,11 @@
     "sass:dist": {
       "cache": true,
       "inputs": [
+        "sharedGlobals",
         "scss-sources",
         "global-scss",
-        "config-files"
+        "config-files",
+        "{workspaceRoot}/gulpfile.js"
       ],
       "outputs": [
         "{projectRoot}/dist/**/*.css",
@@ -78,7 +88,14 @@
     "docs": {
       "cache": true,
       "inputs": [
-        "scss-sources"
+        "sharedGlobals",
+        "scss-sources",
+        "{projectRoot}/.sassdocrc",
+        "{workspaceRoot}/scripts/sassdoc.js",
+        "{workspaceRoot}/scripts/resolve-variables.js",
+        "{workspaceRoot}/sassdoc/**/*",
+        "{workspaceRoot}/lib/variables.scss",
+        { "dependentTasksOutputFiles": "**/dist/meta/sassdoc-raw-data.json" }
       ],
       "outputs": [
         "{projectRoot}/docs/**",
@@ -102,12 +119,10 @@
     "test": {
       "cache": true,
       "inputs": [
+        "sharedGlobals",
         "ts-sources",
         "scss-sources",
         "{projectRoot}/vitest.config.*"
-      ],
-      "dependsOn": [
-        "^build"
       ]
     },
     "nx-release-publish": {

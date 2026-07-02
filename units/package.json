@@ -17,6 +17,7 @@
     "targets": {
       "test": {
         "inputs": [
+          "sharedGlobals",
           "{projectRoot}/**/*.{ts,js}",
           "{projectRoot}/tsconfig.json",
           "{projectRoot}/vitest.config.*",
