@@ -73,23 +73,6 @@ jobs:
             echo "Test pages will NOT be rendered"
           fi
 
-      - name: Setup and Install dependencies
-        if: ${{ steps.should-render.outputs.SHOULD_RENDER == 'YES' }}
-        uses: ./.github/actions/setup
-
-      - name: Nx Cache
-        if: ${{ steps.should-render.outputs.SHOULD_RENDER == 'YES' }}
-        uses: ./.github/actions/nx-cache
-        with:
-          save: 'true'
-          key-suffix: render-verify
-
-      - name: Build test assets
-        if: ${{ steps.should-render.outputs.SHOULD_RENDER == 'YES' }}
-        run: |
-          npx nx run @progress/kendo-themes-html:build:tests
-
-
   run:
     runs-on: ubuntu-latest
     if: ${{ needs.verify.outputs.should-render == 'YES' }}
@@ -124,9 +107,6 @@ jobs:
 
       - name: Setup and Install dependencies
         uses: ./.github/actions/setup
-
-      - name: Nx Cache
-        uses: ./.github/actions/nx-cache
 
       - name: Build test assets
         run: |

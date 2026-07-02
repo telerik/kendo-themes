@@ -29,9 +29,6 @@ jobs:
       - name: Setup and Install dependencies
         uses: ./.github/actions/setup
 
-      - name: Nx Cache
-        uses: ./.github/actions/nx-cache
-
       - name: Download compiled themes
         uses: actions/download-artifact@v8
         with:
@@ -43,4 +40,4 @@ jobs:
 
       - name: Run unit tests
         run: |
-          npx nx run @progress/kendo-themes-units:test -- ${{ matrix.theme }}
+          npx nx run @progress/kendo-themes-units:test --exclude-task-dependencies -- ${{ matrix.theme }}

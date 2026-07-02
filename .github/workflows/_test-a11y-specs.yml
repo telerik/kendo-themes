@@ -25,9 +25,6 @@ jobs:
       - name: Setup and Install dependencies
         uses: ./.github/actions/setup
 
-      - name: Nx Cache
-        uses: ./.github/actions/nx-cache
-
       - name: Download artifacts
         uses: actions/download-artifact@v8
         with:

@@ -20,12 +20,6 @@ jobs:
       - name: Setup and Install dependencies
         uses: ./.github/actions/setup
 
-      - name: Nx Cache
-        uses: ./.github/actions/nx-cache
-        with:
-          save: 'true'
-          key-suffix: compile-themes
-
       - name: Build themes
         run: |
           npx nx run-many -t sass
@@ -41,18 +35,11 @@ jobs:
       - name: Pack themes
         run: |
           tar -cf themes.tar \
-            packages/core/dist/all.css \
             packages/core/docs \
-            packages/core/dist/meta \
-            packages/default/dist/all.css \
-            packages/bootstrap/dist/all.css \
-            packages/classic/dist/all.css \
-            packages/fluent/dist/all.css \
-            packages/material/dist/all.css \
-            packages/meridian/dist/all.css \
+            packages/*/dist/all.css \
+            packages/*/dist/meta \
             packages/meridian/dist/meridian-main.css \
             packages/meridian/dist/meridian-main-dark.css \
-            packages/utils/dist/all.css
 
       - name: Upload themes
         uses: actions/upload-artifact@v7

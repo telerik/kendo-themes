@@ -20,12 +20,6 @@ jobs:
       - name: Setup and Install dependencies
         uses: ./.github/actions/setup
 
-      - name: Nx Cache
-        uses: ./.github/actions/nx-cache
-        with:
-          save: 'true'
-          key-suffix: html-spec
-
       - name: Build and check types
         run: |
           npx nx run @progress/kendo-themes-html:build
