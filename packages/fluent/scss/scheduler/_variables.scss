@@ -260,6 +260,10 @@ $kendo-scheduler-more-btn-height: var( --kendo-scheduler-more-btn-height, 13px )
 /// The color of the Scheduler marquee.
 /// @group scheduler
 $kendo-scheduler-marquee-color: var( --kendo-scheduler-marquee-color, k-color(primary) ) !default;
+
+/// The spacing between icon and text in Scheduler navigation items.
+/// @group scheduler
+$kendo-scheduler-nav-item-icon-spacing: var( --kendo-scheduler-nav-item-icon-spacing, #{k-spacing(2)} ) !default;
 // Adaptive
 $kendo-scheduler-adaptive-bg: var( --kendo-scheduler-adaptive-bg, #{k-color(surface-alt)} ) !default;
 $kendo-scheduler-adaptive-text: var( --kendo-scheduler-adaptive-text, #{k-color(on-app-surface)} ) !default;
@@ -349,6 +353,7 @@ $kendo-scheduler-adaptive-subtle-text: var( --kendo-scheduler-adaptive-subtle-te
     $kendo-scheduler-tooltip-event-border-radius: $kendo-scheduler-tooltip-event-border-radius,
     $kendo-scheduler-tooltip-event-gap: $kendo-scheduler-tooltip-event-gap,
     $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-callout-color,
+    $kendo-scheduler-nav-item-icon-spacing: $kendo-scheduler-nav-item-icon-spacing,
     $kendo-scheduler-adaptive-bg: $kendo-scheduler-adaptive-bg,
     $kendo-scheduler-adaptive-text: $kendo-scheduler-adaptive-text,
     $kendo-scheduler-adaptive-border: $kendo-scheduler-adaptive-border,

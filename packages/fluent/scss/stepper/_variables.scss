@@ -37,6 +37,10 @@ $kendo-stepper-label-padding-y: var( --kendo-stepper-label-padding-y, k-spacing(
 /// @group stepper
 $kendo-stepper-label-border-radius: var( --kendo-stepper-label-border-radius, k-border-radius(xxl) ) !default;
 
+/// The spacing between icon and text in Stepper labels.
+/// @group stepper
+$kendo-stepper-label-icon-spacing: var( --kendo-stepper-label-icon-spacing, #{k-spacing(2)} ) !default;
+
 /// The horizontal padding of the Stepper content.
 /// @group stepper
 $kendo-stepper-inline-content-padding-x: var( --kendo-stepper-inline-content-padding-x, k-spacing(5) ) !default;
@@ -208,6 +212,7 @@ $kendo-stepper-content-transition-timing-function: var( --kendo-stepper-content-
     $kendo-stepper-label-padding-x: $kendo-stepper-label-padding-x,
     $kendo-stepper-label-padding-y: $kendo-stepper-label-padding-y,
     $kendo-stepper-label-border-radius: $kendo-stepper-label-border-radius,
+    $kendo-stepper-label-icon-spacing: $kendo-stepper-label-icon-spacing,
     $kendo-stepper-border-width: $kendo-stepper-border-width,
     $kendo-stepper-inline-content-padding-x: $kendo-stepper-inline-content-padding-x,
     $kendo-stepper-inline-content-padding-y: $kendo-stepper-inline-content-padding-y,

@@ -79,6 +79,10 @@ $kendo-tabstrip-item-border-radius: k-border-radius(xl) !default;
 /// The gap between the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-gap: k-spacing(0) !default;
+
+/// The spacing between icon and text in TabStrip tab items.
+/// @group tabstrip
+$kendo-tabstrip-item-icon-spacing: k-spacing(1) !default;
 /// The horizontal spacing of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-spacing-x: k-spacing(1) !default;
@@ -240,6 +244,7 @@ $kendo-tabstrip-item-focus-outline-offset: 3px !default;
     $kendo-tabstrip-item-border-width: $kendo-tabstrip-item-border-width,
     $kendo-tabstrip-item-border-radius: $kendo-tabstrip-item-border-radius,
     $kendo-tabstrip-item-gap: $kendo-tabstrip-item-gap,
+    $kendo-tabstrip-item-icon-spacing: $kendo-tabstrip-item-icon-spacing,
     $kendo-tabstrip-item-spacing-x: $kendo-tabstrip-item-spacing-x,
     $kendo-tabstrip-sm-item-padding-x: $kendo-tabstrip-sm-item-padding-x,
     $kendo-tabstrip-sm-item-padding-y: $kendo-tabstrip-sm-item-padding-y,

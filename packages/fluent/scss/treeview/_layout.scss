@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/treeview/_layout.scss" as *;
 
@@ -12,18 +13,18 @@
     }
 
     .k-treeview-toggle .k-icon {
-        padding: var( --kendo-icon-padding, k-spacing(1) );
+        padding: k-spacing(1);
     }
 
     .k-treeview-loading {
-        margin-inline-end: var( --kendo-icon-spacing, k-spacing(2) );
+        margin-inline-end: $kendo-treeview-item-icon-spacing;
     }
 
     .k-treeview-leaf {
         .k-icon,
         .k-image,
         .k-sprite {
-            margin-inline-end: var( --kendo-icon-spacing, k-spacing(2) );
+            margin-inline-end: $kendo-treeview-item-icon-spacing;
         }
     }
 }

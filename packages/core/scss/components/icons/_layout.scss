@@ -1,9 +1,6 @@
 @use "./_variables.scss" as *;
-
-@use "@progress/kendo-svg-icons/scss/index.scss" as * with (
-    $ki-icon-size: $kendo-icon-size,
-    $ki-icon-default-size: $kendo-icon-default-size
-);
+@use "../../spacing/index.scss" as *;
+@use "@progress/kendo-svg-icons/scss/index.scss" as *;
 
 @mixin kendo-icon--layout-base() {
 
@@ -58,7 +55,7 @@
 
     .k-icon-action {
         display: inline-flex;
-        padding: $kendo-icon-padding;
+        padding: k-spacing(1);
         line-height: 1;
         align-items: center;
         vertical-align: middle;

@@ -10,6 +10,10 @@ $kendo-tooltip-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-padding-x: k-spacing(2) !default;
+
+/// The spacing between icon and tooltip text/button.
+/// @group tooltip
+$kendo-tooltip-icon-spacing: k-spacing(1) !default;
 /// The width of the border around the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border-width: 0px !default;
@@ -63,6 +67,7 @@ $kendo-tooltip-theme: tooltip-theme( $kendo-tooltip-theme-colors ) !default;
 @forward "@progress/kendo-theme-core/scss/components/tooltip/_variables.scss" with (
     $kendo-tooltip-padding-y: $kendo-tooltip-padding-y,
     $kendo-tooltip-padding-x: $kendo-tooltip-padding-x,
+    $kendo-tooltip-icon-spacing: $kendo-tooltip-icon-spacing,
     $kendo-tooltip-border-width: $kendo-tooltip-border-width,
     $kendo-tooltip-border-radius: $kendo-tooltip-border-radius,
     $kendo-tooltip-font-family: $kendo-tooltip-font-family,

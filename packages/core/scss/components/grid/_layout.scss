@@ -216,7 +216,7 @@
             .k-sort-order {
                 display: inline-block;
                 vertical-align: top;
-                height: $kendo-icon-size;
+                height: $ki-icon-size;
                 font-size: $kendo-grid-sorting-index-font-size;
                 margin-block-start: $kendo-grid-sorting-index-spacing-y;
                 margin-inline-start: $kendo-grid-sorting-index-spacing-x;
@@ -326,8 +326,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( ( $kendo-icon-size / 2 ) - #{$kendo-grid-cell-padding-x} );
-            margin-inline-end: calc( $kendo-icon-size / 2 );
+            margin-inline-start: calc( ( $ki-icon-size / 2 ) - #{$kendo-grid-cell-padding-x} );
+            margin-inline-end: calc( $ki-icon-size / 2 );
             text-decoration: none;
         }
 
@@ -1156,7 +1156,7 @@
                 }
 
                 .k-grouping-row .k-icon {
-                    margin-inline-start: calc( ( $kendo-icon-size / 2 ) - #{$_cell-padding-x} );
+                    margin-inline-start: calc( ( $ki-icon-size / 2 ) - #{$_cell-padding-x} );
                 }
 
                 .k-grouping-dropclue {
@@ -1232,8 +1232,8 @@
 
                 > .k-svg-icon > svg,
                 > .k-icon-wrapper-host svg {
-                    width: $kendo-icon-size-md;
-                    height: $kendo-icon-size-md;
+                    width: var(--kendo-icon-size-md, #{$ki-icon-size-md});
+                    height: var(--kendo-icon-size-md, #{$ki-icon-size-md});
                 }
             }
         }
@@ -1656,7 +1656,7 @@
         > .k-icon,
         > .k-icon-wrapper-host .k-icon,
         > .k-expander-indicator {
-            margin-inline-end: $kendo-icon-spacing;
+            margin-inline-end: $kendo-grid-column-menu-icon-spacing;
         }
     }
 

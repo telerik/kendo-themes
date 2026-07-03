@@ -114,11 +114,11 @@
 
                 &:has(.k-list-item-icon) .k-list-item,
                 &:has(.k-list-item-icon) .k-list-group-item {
-                    padding-inline-start:  calc( #{$kendo-icon-size} + $_item-padding-x + #{$kendo-list-item-gap} );
+                    padding-inline-start:  calc( #{$ki-icon-size} + $_item-padding-x + #{$kendo-list-item-gap} );
                 }
 
                 .k-list-item:has(.k-list-item-icon) .k-list-item-description {
-                    padding-inline-start:  calc( #{$kendo-icon-size} + #{$kendo-list-item-gap});
+                    padding-inline-start:  calc( #{$ki-icon-size} + #{$kendo-list-item-gap});
                 }
 
                 .k-list-item:has(.k-list-item-icon),

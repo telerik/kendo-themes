@@ -653,8 +653,8 @@
 
     // PivotGrid toggle icon
     .k-pivotgrid-toggle {
-        margin-block: calc( #{$kendo-icon-padding} * -1 );
-        padding: $kendo-icon-padding;
+        margin-block: calc( #{k-spacing(1)} * -1 );
+        padding: k-spacing(1);
         box-sizing: content-box;
         cursor: pointer;
     }
