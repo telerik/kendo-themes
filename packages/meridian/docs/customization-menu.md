@@ -458,6 +458,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-expand-arrow-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing used for the menu expand arrow negative offset.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-separator-margin-inline</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
