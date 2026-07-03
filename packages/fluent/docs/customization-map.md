@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-width</td>
     <td>String</td>
-    <td><code>var( --kendo-map-navigator-width, calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) )</code></td>
-    <td><code>var(--kendo-map-navigator-width, calc(var(--kendo-icon-size, 1rem) * 3 + var(--kendo-map-navigator-padding, var(--kendo-spacing-0\.5)) * 2))</code></td>
+    <td><code>var( --kendo-map-navigator-width, calc( #{$kendo-icon-size} * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) )</code></td>
+    <td><code>var(--kendo-map-navigator-width, calc(1rem * 3 + var(--kendo-map-navigator-padding, var(--kendo-spacing-0\.5)) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>

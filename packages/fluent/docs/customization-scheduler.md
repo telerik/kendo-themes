@@ -797,6 +797,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler marquee.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-scheduler-nav-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-nav-item-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-scheduler-nav-item-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Scheduler navigation items.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

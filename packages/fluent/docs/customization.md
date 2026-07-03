@@ -1930,8 +1930,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>String</td>
-    <td><code>var( --kendo-bottom-nav-item-min-height, calc( var( --kendo-icon-size, 1.5rem ) * 2 + (#{$kendo-bottom-nav-item-padding-y} * 2) ) )</code></td>
-    <td><code>var(--kendo-bottom-nav-item-min-height, calc(var(--kendo-icon-size, 1.5rem) * 2 + var(--kendo-bottom-nav-item-padding-y, var(--kendo-spacing-0\.5)) * 2))</code></td>
+    <td><code>var( --kendo-bottom-nav-item-min-height, calc( #{$ki-icon-size-xl} * 2 + (#{$kendo-bottom-nav-item-padding-y} * 2) ) )</code></td>
+    <td><code>var(--kendo-bottom-nav-item-min-height, calc(calc(1rem * 1.5) * 2 + var(--kendo-bottom-nav-item-padding-y, var(--kendo-spacing-0\.5)) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>
@@ -12620,8 +12620,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-mini-initial-width</td>
     <td>Calculation</td>
-    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + 2 * #{$kendo-drawer-items-padding-x} + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(2 * var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4)) + 2 * var(--kendo-drawer-items-padding-x, var(--kendo-spacing-2\.5)) + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + 2 * #{$kendo-drawer-items-padding-x} + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(2 * var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4)) + 2 * var(--kendo-drawer-items-padding-x, var(--kendo-spacing-2\.5)) + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial width of the mini Drawer.</div></div>
@@ -14495,6 +14495,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the columns in the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-file-manager-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-file-manager-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon spacing in FileManager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -17406,8 +17416,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-header-menu-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-header-menu-spacing, var(--kendo-icon-spacing, .5rem) )</code></td>
-    <td><code>var(--kendo-grid-header-menu-spacing, var(--kendo-icon-spacing, 0.5rem))</code></td>
+    <td><code>var( --kendo-grid-header-menu-spacing, #{$kendo-icon-spacing} )</code></td>
+    <td><code>var(--kendo-grid-header-menu-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The menu spacing of the Grid header.</div></div>
@@ -17746,8 +17756,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sort-icon-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-sort-icon-spacing, var(--kendo-icon-lg-spacing, .5rem) )</code></td>
-    <td><code>var(--kendo-grid-sort-icon-spacing, var(--kendo-icon-lg-spacing, 0.5rem))</code></td>
+    <td><code>var( --kendo-grid-sort-icon-spacing, #{$kendo-icon-spacing} )</code></td>
+    <td><code>var(--kendo-grid-sort-icon-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid sort icon.</div></div>
@@ -18001,6 +18011,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid column menu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-column-menu-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-grid-column-menu-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-grid-column-menu-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Grid column menu items.</div></div>
     </td>
 </tr>
 <tr>
@@ -18286,8 +18306,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-drag-cell-width</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-drag-cell-width, calc( var( --kendo-icon-size, 1rem ) * 2.25 ) )</code></td>
-    <td><code>var(--kendo-grid-drag-cell-width, calc(var(--kendo-icon-size, 1rem) * 2.25))</code></td>
+    <td><code>var( --kendo-grid-drag-cell-width, calc( #{$kendo-icon-size} * 2.25 ) )</code></td>
+    <td><code>var(--kendo-grid-drag-cell-width, calc(1rem * 2.25))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Grid drag cell.</div></div>
@@ -18296,8 +18316,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-hierarchy-col-width</td>
     <td>String</td>
-    <td><code>var( --kendo-grid-hierarchy-col-width, calc( var( --kendo-icon-size, 1rem ) * 2 ) )</code></td>
-    <td><code>var(--kendo-grid-hierarchy-col-width, calc(var(--kendo-icon-size, 1rem) * 2))</code></td>
+    <td><code>var( --kendo-grid-hierarchy-col-width, calc( #{$kendo-icon-size} * 2 ) )</code></td>
+    <td><code>var(--kendo-grid-hierarchy-col-width, calc(1rem * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Grid hierarchy cell.</div></div>
@@ -18536,76 +18556,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Icons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-xs</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * .75 )</code></td>
-    <td><code>calc(var(--kendo-icon-size, 1rem) * 0.75)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The xs size of the Icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-sm</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size-sm, 1rem ) * .875 )</code></td>
-    <td><code>calc(var(--kendo-icon-size-sm, 1rem) * 0.875)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sm size of the Icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-md</td>
-    <td>Number</td>
-    <td><code>1rem</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The md size of the Icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-lg</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size-lg, 1rem ) * 1.25 )</code></td>
-    <td><code>calc(var(--kendo-icon-size-lg, 1rem) * 1.25)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The lg size of the Icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-xl</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * 1.5 )</code></td>
-    <td><code>calc(var(--kendo-icon-size, 1rem) * 1.5)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The xl size of the Icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-xxl</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size-xxl, 1rem ) * 2 )</code></td>
-    <td><code>calc(var(--kendo-icon-size-xxl, 1rem) * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The xxl size of the Icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-xxxl</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size-xxxl, 1rem ) * 3 )</code></td>
-    <td><code>calc(var(--kendo-icon-size-xxxl, 1rem) * 3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The xxxl size of the Icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -19677,7 +19627,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + calc( #{$kendo-input-md-padding-y} * 2 ) ),
+        icon-size: calc( #{$kendo-icon-size} + calc( #{$kendo-input-md-padding-y} * 2 ) ),
         button-padding-x: $kendo-input-sm-padding-y,
         button-padding-y: $kendo-input-sm-padding-y,
         button-width: $kendo-input-sm-button-width
@@ -19687,7 +19637,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + calc( #{$kendo-input-sm-padding-y} * 2 ) ),
+        icon-size: calc( #{$kendo-icon-size} + calc( #{$kendo-input-sm-padding-y} * 2 ) ),
         button-padding-x: $kendo-input-md-padding-y,
         button-padding-y: $kendo-input-md-padding-y,
         button-width: $kendo-input-md-button-width
@@ -19697,13 +19647,13 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-input-lg-padding-y,
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + calc( #{$kendo-input-lg-padding-y} * 2 ) ),
+        icon-size: calc( #{$kendo-icon-size} + calc( #{$kendo-input-lg-padding-y} * 2 ) ),
         button-padding-x: $kendo-input-lg-padding-y,
         button-padding-y: $kendo-input-lg-padding-y,
         button-width: $kendo-input-lg-button-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-width":"calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5))","padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","font-size":"var(--kendo-input-font-size, var(--kendo-font-size))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height))","icon-size":"calc(var(--kendo-icon-size, 1rem) + calc(var(--kendo-spacing-0\\.5) + 1px) * 2)","button-padding-x":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","button-padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","button-width":"calc(var(--kendo-line-height) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","icon-size":"calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-2) * 2)","button-padding-x":"var(--kendo-spacing-2)","button-padding-y":"var(--kendo-spacing-2)","button-width":"calc(var(--kendo-line-height-sm) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2)) + 1px) * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","icon-size":"calc(1rem + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-width":"calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5))","padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","font-size":"var(--kendo-input-font-size, var(--kendo-font-size))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height))","icon-size":"calc(1rem + calc(var(--kendo-spacing-0\\.5) + 1px) * 2)","button-padding-x":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","button-padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","button-width":"calc(var(--kendo-line-height) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","icon-size":"calc(1rem + var(--kendo-spacing-2) * 2)","button-padding-x":"var(--kendo-spacing-2)","button-padding-y":"var(--kendo-spacing-2)","button-width":"calc(var(--kendo-line-height-sm) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2)) + 1px) * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
@@ -22132,8 +22082,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-width</td>
     <td>String</td>
-    <td><code>var( --kendo-map-navigator-width, calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) )</code></td>
-    <td><code>var(--kendo-map-navigator-width, calc(var(--kendo-icon-size, 1rem) * 3 + var(--kendo-map-navigator-padding, var(--kendo-spacing-0\.5)) * 2))</code></td>
+    <td><code>var( --kendo-map-navigator-width, calc( #{$kendo-icon-size} * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) )</code></td>
+    <td><code>var(--kendo-map-navigator-width, calc(1rem * 3 + var(--kendo-map-navigator-padding, var(--kendo-spacing-0\.5)) * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>
@@ -22632,11 +22582,21 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-icon-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-item-icon-spacing, var( --kendo-icon-spacing, .5rem ) )</code></td>
-    <td><code>var(--kendo-menu-item-icon-spacing, var(--kendo-icon-spacing, 0.5rem))</code></td>
+    <td><code>var( --kendo-menu-item-icon-spacing, #{$kendo-icon-spacing} )</code></td>
+    <td><code>var(--kendo-menu-item-icon-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Menu item text and icons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-expand-arrow-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-menu-expand-arrow-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-menu-expand-arrow-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing used for the menu expand arrow negative offset.</div></div>
     </td>
 </tr>
 <tr>
@@ -23032,8 +22992,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the small Menu popup item.</div></div>
@@ -23042,8 +23002,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-md-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-menu-popup-md-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( calc( #{$kendo-menu-popup-md-item-padding-x} * 2 ) + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the medium Menu popup item.</div></div>
@@ -23052,8 +23012,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-lg-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 ) + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the large Menu popup item.</div></div>
@@ -23092,8 +23052,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) )</code></td>
-    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))))</code></td>
+    <td><code>calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-sm-item-padding-x}) )</code></td>
+    <td><code>calc(-1 * (1rem + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the small Menu popup item expand icon.</div></div>
@@ -23102,8 +23062,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-item-icon-md-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-md-item-padding-x}) )</code></td>
-    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))</code></td>
+    <td><code>calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-md-item-padding-x}) )</code></td>
+    <td><code>calc(-1 * (1rem + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the medium Menu popup item expand icon.</div></div>
@@ -23112,8 +23072,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-lg-item-icon-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-lg-item-padding-x}) )</code></td>
-    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))))</code></td>
+    <td><code>calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-lg-item-padding-x}) )</code></td>
+    <td><code>calc(-1 * (1rem + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the large Menu popup item expand icon.</div></div>
@@ -23301,7 +23261,7 @@ The following table lists the available variables for customizing the Fluent the
         item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1)))","item-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))))"</li><li>md: "font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5)))","item-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))"</li><li>lg: "font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg))","line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5)))","item-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1)))","item-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))))"</li><li>md: "font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5)))","item-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))"</li><li>lg: "font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg))","line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5)))","item-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Menu group.</div></div>
@@ -24811,8 +24771,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-matches-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-pdf-viewer-search-panel-matches-spacing, var( --kendo-icon-spacing, .5rem ) )</code></td>
-    <td><code>var(--kendo-pdf-viewer-search-panel-matches-spacing, var(--kendo-icon-spacing, 0.5rem))</code></td>
+    <td><code>var( --kendo-pdf-viewer-search-panel-matches-spacing, #{$kendo-icon-spacing} )</code></td>
+    <td><code>var(--kendo-pdf-viewer-search-panel-matches-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the matches container in the PDFViewer search panel.</div></div>
@@ -25480,8 +25440,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-header-padding-x-start</td>
     <td>String</td>
-    <td><code>var( --kendo-panelbar-header-padding-x-start, calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) ) )</code></td>
-    <td><code>var(--kendo-panelbar-header-padding-x-start, calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2\.5)) * 2 + var(--kendo-icon-size, 1rem)))</code></td>
+    <td><code>var( --kendo-panelbar-header-padding-x-start, calc( #{$kendo-panelbar-icon-spacing} * 2 + #{$kendo-icon-size} ) )</code></td>
+    <td><code>var(--kendo-panelbar-header-padding-x-start, calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2\.5)) * 2 + 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal start padding of the PanelBar header.</div></div>
@@ -25510,8 +25470,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-item-padding-x-start</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2\.5)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( #{$kendo-panelbar-icon-spacing} * 2 + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2\.5)) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar items.</div></div>
@@ -25535,6 +25495,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-panelbar-item-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-panelbar-item-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -29806,6 +29776,16 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler marquee.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-scheduler-nav-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-nav-item-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-scheduler-nav-item-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Scheduler navigation items.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -32491,8 +32471,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-menu-padding-left</td>
     <td>String</td>
-    <td><code>var( --kendo-filter-menu-padding-left, calc( var( --kendo-icon-size, 1rem ) + 2 * k-spacing(1) ) )</code></td>
-    <td><code>var(--kendo-filter-menu-padding-left, calc(var(--kendo-icon-size, 1rem) + 2 * var(--kendo-spacing-1)))</code></td>
+    <td><code>var( --kendo-filter-menu-padding-left, calc( #{$kendo-icon-size} + 2 * k-spacing(1) ) )</code></td>
+    <td><code>var(--kendo-filter-menu-padding-left, calc(1rem + 2 * var(--kendo-spacing-1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left padding of the Spreadsheet sheets menu.</div></div>
@@ -32876,6 +32856,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-stepper-label-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-stepper-label-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Stepper labels.</div></div>
     </td>
 </tr>
 <tr>
@@ -35119,6 +35109,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the TabStrip items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tabstrip-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-tabstrip-item-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-tabstrip-item-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in TabStrip tab items.</div></div>
     </td>
 </tr>
 <tr>
@@ -37480,6 +37480,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-toolbar-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-toolbar-item-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-toolbar-item-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Toolbar items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-toolbar-sm-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-sm-separator-height, #{$kendo-button-sm-calc-size} )</code></td>
@@ -37799,6 +37809,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-tooltip-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-tooltip-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-tooltip-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and tooltip text/button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tooltip-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-tooltip-padding-y, #{k-spacing(1.5)} )</code></td>
@@ -38036,6 +38056,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-treeview-item-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-treeview-item-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -40124,8 +40154,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-icon-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-upload-icon-spacing, var( --kendo-icon-spacing, .5rem ) )</code></td>
-    <td><code>var(--kendo-upload-icon-spacing, var(--kendo-icon-spacing, 0.5rem))</code></td>
+    <td><code>var( --kendo-upload-icon-spacing, #{$kendo-icon-spacing} )</code></td>
+    <td><code>var(--kendo-upload-icon-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the Upload status icon.</div></div>

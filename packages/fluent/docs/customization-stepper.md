@@ -138,6 +138,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-stepper-label-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-stepper-label-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-stepper-label-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Stepper labels.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-stepper-inline-content-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-stepper-inline-content-padding-x, k-spacing(5) )</code></td>

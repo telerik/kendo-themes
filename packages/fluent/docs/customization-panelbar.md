@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-padding-x-start</td>
     <td>String</td>
-    <td><code>var( --kendo-panelbar-header-padding-x-start, calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) ) )</code></td>
-    <td><code>var(--kendo-panelbar-header-padding-x-start, calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2\.5)) * 2 + var(--kendo-icon-size, 1rem)))</code></td>
+    <td><code>var( --kendo-panelbar-header-padding-x-start, calc( #{$kendo-panelbar-icon-spacing} * 2 + #{$kendo-icon-size} ) )</code></td>
+    <td><code>var(--kendo-panelbar-header-padding-x-start, calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2\.5)) * 2 + 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal start padding of the PanelBar header.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-padding-x-start</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2\.5)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( #{$kendo-panelbar-icon-spacing} * 2 + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2\.5)) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar items.</div></div>
@@ -165,6 +165,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-panelbar-item-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-panelbar-item-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in PanelBar items.</div></div>
     </td>
 </tr>
 <tr>

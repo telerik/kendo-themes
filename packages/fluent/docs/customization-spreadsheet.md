@@ -640,8 +640,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-filter-menu-padding-left</td>
     <td>String</td>
-    <td><code>var( --kendo-filter-menu-padding-left, calc( var( --kendo-icon-size, 1rem ) + 2 * k-spacing(1) ) )</code></td>
-    <td><code>var(--kendo-filter-menu-padding-left, calc(var(--kendo-icon-size, 1rem) + 2 * var(--kendo-spacing-1)))</code></td>
+    <td><code>var( --kendo-filter-menu-padding-left, calc( #{$kendo-icon-size} + 2 * k-spacing(1) ) )</code></td>
+    <td><code>var(--kendo-filter-menu-padding-left, calc(1rem + 2 * var(--kendo-spacing-1)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left padding of the Spreadsheet sheets menu.</div></div>
