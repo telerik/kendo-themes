@@ -1,6 +1,7 @@
 @use "sass:color";
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
 @use "../input/_variables.scss" as *;
 @use "../core/spacing/_index.scss" as *;
@@ -210,7 +211,7 @@ $kendo-spreadsheet-sheets-remove-inline-end: var( --kendo-spreadsheet-sheets-rem
 
 /// The left padding of the Spreadsheet sheets menu.
 /// @group spreadsheet
-$kendo-filter-menu-padding-left: var( --kendo-filter-menu-padding-left, calc( var( --kendo-icon-size, 1rem ) + 2 * k-spacing(1) ) ) !default;
+$kendo-filter-menu-padding-left: var( --kendo-filter-menu-padding-left, calc( #{$kendo-icon-size} + 2 * k-spacing(1) ) ) !default;
 
 /// The padding of the Spreadsheet filter.
 /// @group spreadsheet

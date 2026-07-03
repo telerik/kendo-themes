@@ -183,7 +183,7 @@
         }
 
         .k-upload-files .k-file-info {
-            min-height: $kendo-icon-size-xxl;
+            min-height: var(--kendo-icon-size-xxl, #{$ki-icon-size-xxl});
             display: block;
             overflow: hidden;
             flex: 1 0 0;
@@ -192,7 +192,7 @@
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-info {
             margin-inline-start: $kendo-upload-file-info-margin;
-            min-height: $kendo-icon-size-xxl;
+            min-height: var(--kendo-icon-size-xxl, #{$ki-icon-size-xxl});
             display: block;
             overflow: hidden;
             flex: 1 0 0;

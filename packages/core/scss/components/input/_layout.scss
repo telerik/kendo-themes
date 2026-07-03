@@ -361,7 +361,7 @@
         border-style: solid;
         border-color: inherit;
         border-width: 0 0 0 1px;
-        height: $kendo-icon-size;
+        height: $ki-icon-size;
         align-self: center;
 
         &-horizontal {
@@ -448,7 +448,7 @@
     .k-input-loading-icon {
         width: 1em;
         height: 1em;
-        font-size: $kendo-icon-size;
+        font-size: $ki-icon-size;
     }
 
     // Input with SVG icon
@@ -457,38 +457,38 @@
     .k-input-loading-icon {
         &.k-svg-icon > svg,
         &.k-icon-md > svg {
-            width: $kendo-icon-size-md;
-            height: $kendo-icon-size-md;
+            width: var(--kendo-icon-size-md, #{$ki-icon-size-md});
+            height: var(--kendo-icon-size-md, #{$ki-icon-size-md});
         }
 
         &.k-icon-xs > svg {
-            width: $kendo-icon-size-xs;
-            height: $kendo-icon-size-xs;
+            width: var(--kendo-icon-size-xs, #{$ki-icon-size-xs});
+            height: var(--kendo-icon-size-xs, #{$ki-icon-size-xs});
         }
 
         &.k-icon-sm > svg {
-            width: $kendo-icon-size-sm;
-            height: $kendo-icon-size-sm;
+            width: var(--kendo-icon-size-sm, #{$ki-icon-size-sm});
+            height: var(--kendo-icon-size-sm, #{$ki-icon-size-sm});
         }
 
         &.k-icon-lg > svg {
-            width: $kendo-icon-size-lg;
-            height: $kendo-icon-size-lg;
+            width: var(--kendo-icon-size-lg, #{$ki-icon-size-lg});
+            height: var(--kendo-icon-size-lg, #{$ki-icon-size-lg});
         }
 
         &.k-icon-xl > svg {
-            width: $kendo-icon-size-xl;
-            height: $kendo-icon-size-xl;
+            width: var(--kendo-icon-size-xl, #{$ki-icon-size-xl});
+            height: var(--kendo-icon-size-xl, #{$ki-icon-size-xl});
         }
 
         &.k-icon-xxl > svg {
-            width: $kendo-icon-size-xxl;
-            height: $kendo-icon-size-xxl;
+            width: var(--kendo-icon-size-xxl, #{$ki-icon-size-xxl});
+            height: var(--kendo-icon-size-xxl, #{$ki-icon-size-xxl});
         }
 
         &.k-icon-xxxl > svg {
-            width: $kendo-icon-size-xxxl;
-            height: $kendo-icon-size-xxxl;
+            width: var(--kendo-icon-size-xxxl, #{$ki-icon-size-xxxl});
+            height: var(--kendo-icon-size-xxxl, #{$ki-icon-size-xxxl});
         }
     }
 

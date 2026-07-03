@@ -262,6 +262,10 @@ $kendo-scheduler-marquee-label-inset-x: k-spacing(1) !default;
 /// @group scheduler
 $kendo-scheduler-marquee-label-inset-y: k-spacing(0.5) !default;
 
+/// The spacing between icon and text in Scheduler navigation items.
+/// @group scheduler
+$kendo-scheduler-nav-item-icon-spacing: k-spacing(1) !default;
+
 /// The background color of the Scheduler header.
 /// @group scheduler
 $kendo-scheduler-header-bg: k-color(surface) !default;
@@ -363,6 +367,7 @@ $kendo-scheduler-adaptive-subtle-text: k-color(on-app-surface) !default;
     $kendo-scheduler-indicators-margin: $kendo-scheduler-indicators-margin,
     $kendo-scheduler-marquee-label-inset-x: $kendo-scheduler-marquee-label-inset-x,
     $kendo-scheduler-marquee-label-inset-y: $kendo-scheduler-marquee-label-inset-y,
+    $kendo-scheduler-nav-item-icon-spacing: $kendo-scheduler-nav-item-icon-spacing,
     $kendo-scheduler-header-bg: $kendo-scheduler-header-bg,
     $kendo-scheduler-adaptive-bg: $kendo-scheduler-adaptive-bg,
     $kendo-scheduler-adaptive-text: $kendo-scheduler-adaptive-text,

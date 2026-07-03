@@ -13,8 +13,8 @@
             min-height: calc( #{$kendo-fab-font-size} * #{$kendo-fab-line-height} );
 
             > svg {
-                width: $kendo-icon-size-md;
-                height: $kendo-icon-size-md;
+                width: var(--kendo-icon-size-md, #{$ki-icon-size-md});
+                height: var(--kendo-icon-size-md, #{$ki-icon-size-md});
             }
         }
     }

@@ -137,7 +137,7 @@
 
         // File preview
         .k-file-preview {
-            margin-inline-end: $kendo-icon-spacing;
+            margin-inline-end: $kendo-file-manager-icon-spacing;
             display: inline-flex;
             flex-direction: row;
             vertical-align: middle;
@@ -159,7 +159,7 @@
     .k-filemanager-preview {
         padding: calc( #{$kendo-file-manager-preview-padding-y} * 3) $kendo-file-manager-preview-padding-x $kendo-file-manager-preview-padding-y;
         width: $kendo-file-manager-preview-width;
-        min-height: calc( calc( #{$kendo-file-manager-preview-padding-y} * 4 ) + calc( #{$kendo-icon-size-xxxl} * 2 ) + calc( #{$kendo-file-manager-preview-spacing} * 3 ) );
+        min-height: calc( calc( #{$kendo-file-manager-preview-padding-y} * 4 ) + calc( var(--kendo-icon-size-xxxl, #{$ki-icon-size-xxxl}) * 2 ) + calc( #{$kendo-file-manager-preview-spacing} * 3 ) );
         border-width: 0;
         border-inline-start-width: $kendo-file-manager-preview-border-width;
         border-style: solid;
@@ -236,7 +236,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: $kendo-icon-spacing;
+        gap: $kendo-file-manager-icon-spacing;
     }
 
 }

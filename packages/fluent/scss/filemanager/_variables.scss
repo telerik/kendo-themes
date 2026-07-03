@@ -164,6 +164,10 @@ $kendo-file-manager-preview-spacing: $kendo-file-manager-spacer !default;
 /// The gap between the columns in the FileManager preview.
 /// @group file-manager
 $kendo-file-manager-preview-column-gap: var( --kendo-file-manager-preview-column-gap, #{k-spacing(1)} ) !default;
+
+/// The icon spacing in FileManager items.
+/// @group file-manager
+$kendo-file-manager-icon-spacing: var( --kendo-file-manager-icon-spacing, #{k-spacing(2)} ) !default;
 /// The background color of the FileManager preview.
 /// @group file-manager
 $kendo-file-manager-preview-bg: var( --kendo-file-manager-preview-bg, transparent ) !default;
@@ -230,6 +234,7 @@ $kendo-file-manager-preview-icon-border: var( --kendo-file-manager-preview-icon-
     $kendo-file-manager-preview-border-width: $kendo-file-manager-preview-border-width,
     $kendo-file-manager-preview-spacing: $kendo-file-manager-preview-spacing,
     $kendo-file-manager-preview-column-gap: $kendo-file-manager-preview-column-gap,
+    $kendo-file-manager-icon-spacing: $kendo-file-manager-icon-spacing,
     $kendo-file-manager-preview-bg: $kendo-file-manager-preview-bg,
     $kendo-file-manager-preview-text: $kendo-file-manager-preview-text,
     $kendo-file-manager-preview-border: $kendo-file-manager-preview-border,

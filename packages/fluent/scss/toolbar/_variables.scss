@@ -41,6 +41,10 @@ $kendo-toolbar-md-spacing: var( --kendo-toolbar-md-spacing, #{k-spacing(3)} ) !d
 /// @group toolbar
 $kendo-toolbar-lg-spacing: var( --kendo-toolbar-lg-spacing, #{k-spacing(3)} ) !default;
 
+/// The spacing between icon and text in Toolbar items.
+/// @group toolbar
+$kendo-toolbar-item-icon-spacing: var( --kendo-toolbar-item-icon-spacing, #{k-spacing(2)} ) !default;
+
 /// The height of the small Toolbar button separator.
 /// @group toolbar
 $kendo-toolbar-sm-separator-height: var( --kendo-toolbar-sm-separator-height, #{$kendo-button-sm-calc-size} ) !default;
@@ -141,6 +145,7 @@ $kendo-floating-toolbar-border-radius: var( --kendo-floating-toolbar-border-radi
     $kendo-toolbar-sm-spacing: $kendo-toolbar-sm-spacing,
     $kendo-toolbar-md-spacing: $kendo-toolbar-md-spacing,
     $kendo-toolbar-lg-spacing: $kendo-toolbar-lg-spacing,
+    $kendo-toolbar-item-icon-spacing: $kendo-toolbar-item-icon-spacing,
     $kendo-toolbar-sm-separator-height: $kendo-toolbar-sm-separator-height,
     $kendo-toolbar-md-separator-height: $kendo-toolbar-md-separator-height,
     $kendo-toolbar-lg-separator-height: $kendo-toolbar-lg-separator-height,

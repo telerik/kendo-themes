@@ -42,12 +42,6 @@
 
                 .k-segmented-control-button-icon {
                     min-height: calc( #{$_font-size} * #{$_line-height} );
-
-                    &.k-svg-icon > svg {
-                        width: $kendo-icon-size-md;
-                        height: $kendo-icon-size-md;
-                    }
-
                 }
             }
         }

@@ -9,27 +9,6 @@ $kendo-icon-default-size: "md" !default;
 /// The default size of the Icons.
 /// @group icon
 $kendo-icon-size: 1rem !default;
-/// The xs size of the Icon.
-/// @group icon
-$kendo-icon-size-xs: calc( var( --kendo-icon-size, 1rem ) * .75 ) !default;
-/// The sm size of the Icon.
-/// @group icon
-$kendo-icon-size-sm: calc( var( --kendo-icon-size-sm, 1rem ) * .875 ) !default;
-/// The md size of the Icon.
-/// @group icon
-$kendo-icon-size-md: 1rem !default;
-/// The lg size of the Icon.
-/// @group icon
-$kendo-icon-size-lg: calc( var( --kendo-icon-size-lg, 1rem ) * 1.25 ) !default;
-/// The xl size of the Icon.
-/// @group icon
-$kendo-icon-size-xl: calc( var( --kendo-icon-size, 1rem ) * 1.5 ) !default;
-/// The xxl size of the Icon.
-/// @group icon
-$kendo-icon-size-xxl: calc( var( --kendo-icon-size-xxl, 1rem ) * 2 ) !default;
-/// The xxxl size of the Icon.
-/// @group icon
-$kendo-icon-size-xxxl: calc( var( --kendo-icon-size-xxxl, 1rem ) * 3 ) !default;
 
 /// The spacing around the Icons.
 /// @group icon
@@ -48,28 +27,8 @@ $kendo-action-icon-color: var( --kendo-action-icon-color, #{k-color( primary-on-
 @forward "@progress/kendo-theme-core/scss/components/icons/_variables.scss" with (
     $kendo-icon-default-size: $kendo-icon-default-size,
     $kendo-icon-size: $kendo-icon-size,
-    $kendo-icon-size-xs: $kendo-icon-size-xs,
-    $kendo-icon-size-sm: $kendo-icon-size-sm,
-    $kendo-icon-size-md: $kendo-icon-size-md,
-    $kendo-icon-size-lg: $kendo-icon-size-lg,
-    $kendo-icon-size-xl: $kendo-icon-size-xl,
-    $kendo-icon-size-xxl: $kendo-icon-size-xxl,
-    $kendo-icon-size-xxxl: $kendo-icon-size-xxxl,
     $kendo-icon-spacing: $kendo-icon-spacing,
     $kendo-icon-padding: $kendo-icon-padding,
     $kendo-accent-icon-color: $kendo-accent-icon-color,
     $kendo-action-icon-color: $kendo-action-icon-color
 );
-
-:root {
-    --kendo-icon-size: var( --kendo-icon-size, 1rem );
-    --kendo-icon-size-xs: #{$kendo-icon-size-xs};
-    --kendo-icon-size-sm: #{$kendo-icon-size-sm};
-    --kendo-icon-size-md: #{$kendo-icon-size-md};
-    --kendo-icon-size-lg: #{$kendo-icon-size-lg};
-    --kendo-icon-size-xl: #{$kendo-icon-size-xl};
-    --kendo-icon-size-xxl: #{$kendo-icon-size-xxl};
-    --kendo-icon-size-xxxl: #{$kendo-icon-size-xxxl};
-    --kendo-icon-spacing: #{$kendo-icon-spacing};
-    --kendo-icon-padding: #{$kendo-icon-padding};
-}

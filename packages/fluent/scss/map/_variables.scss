@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../core/spacing/_index.scss" as *;
 
@@ -41,7 +42,7 @@ $kendo-map-navigator-margin-y: var( --kendo-map-navigator-margin-y, k-spacing(4)
 $kendo-map-navigator-padding: var( --kendo-map-navigator-padding, k-spacing(0.5) ) !default;
 /// The width of the Map navigator.
 /// @group map
-$kendo-map-navigator-width: var( --kendo-map-navigator-width, calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) ) !default;
+$kendo-map-navigator-width: var( --kendo-map-navigator-width, calc( #{$kendo-icon-size} * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) ) !default;
 /// The border width of the Map navigator.
 /// @group map
 $kendo-map-navigator-border-width: var( --kendo-map-navigator-border-width, 1px ) !default;

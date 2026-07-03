@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../dropzone/_variables.scss" as *;
 
@@ -83,7 +84,7 @@ $kendo-pdf-viewer-search-panel-border: var( --kendo-pdf-viewer-search-panel-bord
 $kendo-pdf-viewer-search-panel-shadow: var( --kendo-pdf-viewer-search-panel-shadow, none ) !default;
 /// The spacing of the matches container in the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-matches-spacing: var( --kendo-pdf-viewer-search-panel-matches-spacing, var( --kendo-icon-spacing, .5rem ) ) !default;
+$kendo-pdf-viewer-search-panel-matches-spacing: var( --kendo-pdf-viewer-search-panel-matches-spacing, #{$kendo-icon-spacing} ) !default;
 /// The vertical margin of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-margin-y: var( --kendo-pdf-viewer-search-panel-margin-y ,calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 )) !default;

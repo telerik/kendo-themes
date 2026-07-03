@@ -245,7 +245,7 @@ $kendo-grid-header-font-size: var( --kendo-grid-header-font-size, inherit ) !def
 $kendo-grid-header-font-weight: var( --kendo-grid-header-font-weight, var(--kendo-font-weight-normal) ) !default;
 /// The menu spacing of the Grid header.
 /// @group grid
-$kendo-grid-header-menu-spacing: var( --kendo-grid-header-menu-spacing, var(--kendo-icon-spacing, .5rem) ) !default;
+$kendo-grid-header-menu-spacing: var( --kendo-grid-header-menu-spacing, #{$kendo-icon-spacing} ) !default;
 /// The border width of the first cell in the Grid header.
 /// @group grid
 $kendo-grid-header-first-border-width: var( --kendo-grid-header-first-border-width, #{$kendo-grid-border-width} ) !default;
@@ -356,7 +356,7 @@ $kendo-grid-sort-index-font-size: var( --kendo-grid-sort-index-font-size, var(--
 $kendo-grid-sort-index-spacing-x: var( --kendo-grid-sort-index-spacing-x, #{k-spacing(0.5)} ) !default;
 /// The spacing of the Grid sort icon.
 /// @group grid
-$kendo-grid-sort-icon-spacing: var( --kendo-grid-sort-icon-spacing, var(--kendo-icon-lg-spacing, .5rem) ) !default;
+$kendo-grid-sort-icon-spacing: var( --kendo-grid-sort-icon-spacing, #{$kendo-icon-spacing} ) !default;
 /// The text color of the Grid sort indicator.
 /// @group grid
 $kendo-grid-sort-indicator-text: var( --kendo-grid-sort-indicator-text, k-color(on-app-surface) ) !default;
@@ -443,6 +443,10 @@ $kendo-grid-column-menu-max-width: var( --kendo-grid-column-menu-max-width, 320p
 /// The spacing of the Grid column menu.
 /// @group grid
 $kendo-grid-column-menu-spacing: var( --kendo-grid-column-menu-spacing, #{k-spacing(2)} ) !default;
+
+/// The spacing between icon and text in Grid column menu items.
+/// @group grid
+$kendo-grid-column-menu-icon-spacing: var( --kendo-grid-column-menu-icon-spacing, #{k-spacing(2)} ) !default;
 /// The focus shadow of the Grid column menu.
 /// @group grid
 $kendo-grid-column-menu-shadow: var( --kendo-grid-column-menu-shadow, k-elevation(4) ) !default;
@@ -538,10 +542,10 @@ $kendo-grid-column-menu-tabbed-bg: var( --kendo-grid-column-menu-tabbed-bg, k-co
 
 /// The default width of the Grid drag cell.
 /// @group grid
-$kendo-grid-drag-cell-width: var( --kendo-grid-drag-cell-width, calc( var( --kendo-icon-size, 1rem ) * 2.25 ) ) !default;
+$kendo-grid-drag-cell-width: var( --kendo-grid-drag-cell-width, calc( #{$kendo-icon-size} * 2.25 ) ) !default;
 /// The default width of the Grid hierarchy cell.
 /// @group grid
-$kendo-grid-hierarchy-col-width: var( --kendo-grid-hierarchy-col-width, calc( var( --kendo-icon-size, 1rem ) * 2 ) ) !default;
+$kendo-grid-hierarchy-col-width: var( --kendo-grid-hierarchy-col-width, calc( #{$kendo-icon-size} * 2 ) ) !default;
 
 /// The background color of the Grid row resize indicator.
 /// @group grid
@@ -650,6 +654,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
     $kendo-grid-header-font-size: $kendo-grid-header-font-size,
     $kendo-grid-header-first-border: $kendo-grid-header-first-border-width,
     $kendo-grid-header-menu-icon-spacing: $kendo-grid-header-menu-spacing,
+    $kendo-grid-column-menu-icon-spacing: $kendo-grid-column-menu-icon-spacing,
     $kendo-grid-toolbar-border-width: $kendo-grid-toolbar-border-width,
     $kendo-grid-bg: $kendo-grid-bg,
     $kendo-grid-text: $kendo-grid-text,

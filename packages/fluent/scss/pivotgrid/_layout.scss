@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/pivotgrid/_layout.scss" as *;
 
@@ -109,7 +110,7 @@
     }
 
     .k-pivotgrid-toggle {
-        margin-block: calc( var( --kendo-icon-padding ) * -1 );
-        padding: var( --kendo-icon-padding, .25rem );
+        margin-block: calc( #{k-spacing(1)} * -1 );
+        padding: k-spacing(1);
     }
 }
