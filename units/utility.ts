@@ -2,6 +2,7 @@ import * as sass from "sass";
 import * as fs from "fs";
 import * as path from "path";
 import { describe, it, expect } from "vitest";
+import { initCompiler } from "sass-embedded";
 
 const theme = process.env.THEME as string;
 const themeDir = path.resolve(__dirname, "../packages", theme);
@@ -9,6 +10,8 @@ const themeScssDir = path.resolve(themeDir, "scss");
 const nodeModulesDir = path.resolve(__dirname, "../node_modules");
 const themeMetadataDir = path.resolve(themeDir, "dist", "meta", "sassdoc-data.json");
 const coreMetadataDir = path.resolve(__dirname, "../packages/core/dist/meta/sassdoc-raw-data.json");
+
+const compiler = initCompiler();
 
 interface Variable {
     context: {
@@ -56,8 +59,9 @@ function writeResultToDist(result: string, file: string): void {
 }
 
 function compileSassString(sassString: string): string {
-    return sass.compileString(sassString, {
+    return compiler.compileString(sassString, {
         loadPaths: [themeScssDir, nodeModulesDir],
+        quietDeps: true
     }).css;
 }
 

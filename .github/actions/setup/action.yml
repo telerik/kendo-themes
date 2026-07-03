@@ -1,0 +1,30 @@
+name: Setup node and install
+description: Setup node, restore root node_modules, npm ci on miss
+inputs:
+  node-version:
+    description: Node version to setup
+    default: '24.x'
+outputs:
+  node-version:
+    description: Node version that was resolved
+    value: ${{ steps.setup-node.outputs.node-version }}
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Node
+      id: setup-node
+      uses: actions/setup-node@v6
+      with:
+        node-version: ${{ inputs.node-version }}
+
+    - name: Use cache for root node_modules
+      id: cache-root-node-modules
+      uses: actions/cache@v5
+      with:
+        path: node_modules
+        key: root-node-modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+    - name: Install root node_modules
+      if: steps.cache-root-node-modules.outputs.cache-hit != 'true'
+      shell: bash
+      run: npm ci --no-audit --no-fund

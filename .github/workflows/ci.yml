@@ -199,7 +199,7 @@ jobs:
     needs: [ compile-themes, render-test-pages ]
     uses: ./.github/workflows/_test-contrast.yml
     with:
-      max-chunks: 4
+      max-chunks: 8
 
   ci-a11y:
     name: Status check > A11y
@@ -242,6 +242,7 @@ jobs:
 
   test-units:
     name: Test units
+    needs: [ compile-themes ]
     uses: ./.github/workflows/_test-units.yml
 
   ci-test-units:

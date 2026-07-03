@@ -1,40 +1,109 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "defaultBase": "develop",
+  "defaultBase": "origin/develop",
   "workspaceLayout": {
     "libsDir": "packages"
   },
+  "namedInputs": {
+    "sharedGlobals": [
+      { "runtime": "node --version"}
+    ],
+    "scss-sources": [
+      "{projectRoot}/scss/**/*.scss",
+      "{projectRoot}/lib/**/*.json"
+    ],
+    "ts-sources": [
+      "{projectRoot}/src/**/*.ts",
+      "{projectRoot}/src/**/*.tsx"
+    ],
+    "config-files": [
+      "{workspaceRoot}/postcss.config.js",
+      "{workspaceRoot}/.browserslistrc"
+    ],
+    "global-scss": [
+      "{workspaceRoot}/packages/core/scss/**/*.scss"
+    ]
+  },
   "targetDefaults": {
-    "lint": {
-      "cache": true,
-      "executor": "nx:run-script",
-      "options": {
-        "script": "lint"
-      }
-    },
     "build": {
-      "cache": true
+      "cache": true,
+      "inputs": [
+        "sharedGlobals",
+        "ts-sources",
+        "{projectRoot}/scripts/**/*.{js,mjs}",
+        "{projectRoot}/tsconfig.json"
+      ],
+      "outputs": [
+        "{projectRoot}/dist/**"
+      ]
     },
     "build:tests": {
-      "cache": true
+      "cache": true,
+      "inputs": [
+        "sharedGlobals",
+        "ts-sources",
+        "{projectRoot}/scripts/**/*.{js,mjs}",
+        "{projectRoot}/tsconfig.json",
+        "{projectRoot}/shared/**"
+      ],
+      "outputs": [
+        "{projectRoot}/dist/**"
+      ],
+      "dependsOn": [
+        "build"
+      ]
     },
     "sass": {
       "cache": true,
+      "inputs": [
+        "sharedGlobals",
+        "scss-sources",
+        "global-scss",
+        "config-files"
+      ],
       "outputs": [
         "{projectRoot}/dist/**/*.css"
+      ],
+      "dependsOn": [
+        "^sass"
       ]
     },
     "sass:dist": {
       "cache": true,
+      "inputs": [
+        "sharedGlobals",
+        "scss-sources",
+        "global-scss",
+        "config-files",
+        "{workspaceRoot}/gulpfile.js"
+      ],
       "outputs": [
         "{projectRoot}/dist/**/*.css",
         "{projectRoot}/dist/**/*.scss"
+      ],
+      "dependsOn": [
+        "^sass:dist"
       ]
     },
     "docs": {
       "cache": true,
+      "inputs": [
+        "sharedGlobals",
+        "scss-sources",
+        "{projectRoot}/.sassdocrc",
+        "{workspaceRoot}/scripts/sassdoc.js",
+        "{workspaceRoot}/scripts/resolve-variables.js",
+        "{workspaceRoot}/sassdoc/**/*",
+        "{workspaceRoot}/lib/variables.scss",
+        { "dependentTasksOutputFiles": "**/dist/meta/sassdoc-raw-data.json" }
+      ],
+      "outputs": [
+        "{projectRoot}/docs/**",
+        "{projectRoot}/dist/meta/**"
+      ],
       "dependsOn": [
-        "^docs"
+        "^docs",
+        "sass"
       ]
     },
     "docs:check": {
@@ -46,6 +115,15 @@
       "options": {
         "script": "docs:check"
       }
+    },
+    "test": {
+      "cache": true,
+      "inputs": [
+        "sharedGlobals",
+        "ts-sources",
+        "scss-sources",
+        "{projectRoot}/vitest.config.*"
+      ]
     },
     "nx-release-publish": {
       "options": {

@@ -20,22 +20,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: '24'
+      - name: Fetch base branch
+        run: git fetch origin develop
 
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
-        with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
       - name: Download artifacts
         uses: actions/download-artifact@v8
@@ -45,5 +34,8 @@ jobs:
       - name: Unpack artifacts
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
+      - name: Show affected projects
+        run: npx nx show projects --affected --base=origin/develop
+
       - name: Check docs
-        run: npm run docs:check
+        run: npx nx affected -t docs:check

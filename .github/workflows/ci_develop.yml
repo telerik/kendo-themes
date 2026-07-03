@@ -16,7 +16,6 @@ jobs:
     name: Prime cache
     uses: ./.github/workflows/_prime-cache.yml
 
-
   lint-scripts:
     name: Lint scripts
     uses: ./.github/workflows/_lint-scripts.yml

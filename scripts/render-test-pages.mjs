@@ -16,6 +16,19 @@ const COMPONENT_PAGE_EXT = 'app.js';
 const componentArg = process.argv[2];
 const componentFilter = componentArg ? `${componentArg}` : null;
 
+const MAX_CHUNKS = Number(process.env.MAX_CHUNKS) || 1;
+const CURRENT_CHUNK = (Number(process.env.CURRENT_CHUNK) || 1) - 1;
+
+function arrayChunks(array, chunkCount){
+    if ( chunkCount < 1 ) { return [array]; }
+    const size = Math.ceil(array.length / chunkCount);
+    const out = [];
+    for ( let i = 0; i < array.length; i+=size ) {
+        out.push(array.slice(i, i + size));
+    }
+    return out;
+}
+
 function pathUrl(url) {
     return `http://${HOST}:${PORT}/${path.dirname(url).replace('./', '')}`;
 }
@@ -61,9 +74,10 @@ server.listen(PORT, HOST, async() => {
     }
 
     const pages = files.map(path => [ path, pathUrl(path) ]);
+    const chunk = arrayChunks(pages, MAX_CHUNKS)[CURRENT_CHUNK] || [];
 
-    for (let i = 0; i < pages.length; i++) {
-        const [ filePath, url ] = pages[i];
+    for (let i = 0; i < chunk.length; i++) {
+        const [ filePath, url ] = chunk[i];
 
         await loadUrl(browser, url);
 

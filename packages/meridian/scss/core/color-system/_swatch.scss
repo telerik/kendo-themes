@@ -25,7 +25,7 @@ $_default-colors: (
     primary-subtle: #{"oklch(from var(--kendo-color-primary) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39))"},
     primary-subtle-hover: #{"oklch(from var(--kendo-color-primary) calc(l + 0.5784) calc(c - 0.0295) calc(h - 4.47))"},
     primary-subtle-active: #{"oklch(from var(--kendo-color-primary) calc(l + 0.5571) calc(c - 0.0265) calc(h - 1.78))"},
-    primary: oklch(37.17% 0.0392 257.29deg),
+    primary: oklch(71.029% 0.14516 162.442deg),
     primary-hover: #{"oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.0922, (0.35 - l) * 99999, 0.0922))) calc(c - 0.0023) calc(h + 2.74))"},
     primary-active: #{"oklch(from var(--kendo-color-primary) max(0.20, calc(l + clamp(-0.1640, (0.35 - l) * 99999, 0.1640))) calc(c + 0.0007) calc(h + 8.47))"},
     primary-emphasis: #{"oklch(from var(--kendo-color-primary) calc(l + 0.4973) calc(c - 0.0193) calc(h - 4.39))"},

@@ -3,11 +3,6 @@ name: Render test pages
 on:
   workflow_call:
     inputs:
-      node-version:
-        description: 'Version of node to use'
-        required: false
-        type: number
-        default: 24
       force-render:
         description: 'Always render images, regardless of git changes'
         required: false
@@ -18,6 +13,11 @@ on:
         required: false
         type: string
         default: 'conditionally'
+      max-chunks:
+        description: 'Maximum number of chunks to split the test pages into'
+        required: false
+        type: number
+        default: 4
 
 concurrency:
   group: render-test-pages-${{ github.ref }}
@@ -29,11 +29,16 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       should-render: ${{ steps.should-render.outputs.SHOULD_RENDER }}
+      chunk-matrix: ${{ steps.matrix.outputs.MATRIX }}
 
     steps:
 
       - name: Checkout branch
         uses: actions/checkout@v6
+
+      - id: matrix
+        run: |
+          echo "MATRIX=$(jq -cn --argjson n ${{ inputs.max-chunks }} '{include: [range(1; $n + 1) ]}')" >> $GITHUB_OUTPUT
 
       - name: Check for differences in packages/html
         run: |
@@ -68,51 +73,50 @@ jobs:
             echo "Test pages will NOT be rendered"
           fi
 
-
   run:
     runs-on: ubuntu-latest
     if: ${{ needs.verify.outputs.should-render == 'YES' }}
     needs: [ verify ]
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{fromJson(needs.verify.outputs.chunk-matrix).include}}
 
     steps:
 
+      - name: Cache Firefox
+        id: cache-firefox
+        uses: actions/cache@v5
+        with:
+          path: /opt/firefox
+          key: firefox-latest-linux64
+
+      - name: Download Firefox
+        if: steps.cache-firefox.outputs.cache-hit != 'true'
+        run: |
+          sudo wget -q -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
+          sudo tar xJf /tmp/firefox.tar.bz2 -C /opt
+
       - name: Setup Firefox
         run: |
-          sudo wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
-          sudo tar xJf /tmp/firefox.tar.bz2 -C /opt
-          sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
-
-      - name: Print Firefox version
-        run: firefox --version
+          sudo ln -sf /opt/firefox/firefox /usr/local/bin/firefox
+          firefox --version
 
       - name: Checkout branch
         uses: actions/checkout@v6
 
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ inputs.node-version }}
-
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
-        with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --no-audit --no-fund
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
       - name: Build test assets
         run: |
-          npm run build:tests
+          npx nx run @progress/kendo-themes-html:build:tests
 
       - name: Update markup snapshots
         env:
           HEADLESS: 'true'
+          MAX_CHUNKS: ${{ inputs.max-chunks }}
+          CURRENT_CHUNK: ${{ matrix.chunk }}
         run: |
           npm run test:render-test-pages
 
@@ -155,6 +159,6 @@ jobs:
         if: ${{ inputs.upload-policy != 'never' }}
         uses: actions/upload-artifact@v7
         with:
-          name: test-pages
+          name: test-pages-${{ matrix.chunk }}
           path: test-pages.tar
           if-no-files-found: warn

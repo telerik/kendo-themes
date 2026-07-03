@@ -17,45 +17,29 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v6
 
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24.x
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
 
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
-        with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+      - name: Build themes
         run: |
-          npm ci --no-audit --no-fund
+          npx nx run-many -t sass
 
-      - name: Build test assets
+      - name: Build core docs
         run: |
-          npm run sass
+          npx nx run-many -t docs
 
       - name: Build Meridian swatches
         run: |
-          npm --workspace=@progress/kendo-theme-meridian run sass:dist
+          npx nx run @progress/kendo-theme-meridian:sass:dist --exclude-task-dependencies
 
       - name: Pack themes
         run: |
           tar -cf themes.tar \
-            packages/core/dist/all.css \
-            packages/default/dist/all.css \
-            packages/bootstrap/dist/all.css \
-            packages/classic/dist/all.css \
-            packages/fluent/dist/all.css \
-            packages/material/dist/all.css \
-            packages/meridian/dist/all.css \
+            packages/core/docs \
+            packages/*/dist/all.css \
+            packages/*/dist/meta \
             packages/meridian/dist/meridian-main.css \
             packages/meridian/dist/meridian-main-dark.css \
-            packages/utils/dist/all.css
 
       - name: Upload themes
         uses: actions/upload-artifact@v7

@@ -21,31 +21,18 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v6
 
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v6
+      - name: Setup and Install dependencies
+        uses: ./.github/actions/setup
+
+      - name: Download compiled themes
+        uses: actions/download-artifact@v8
         with:
-          node-version: 24.x
+          name: themes
+          path: .tmp
 
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v5
-        with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+      - name: Unpack compiled themes
+        run: tar -xf .tmp/themes.tar
 
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+      - name: Run unit tests
         run: |
-          npm ci --no-audit --no-fund
-
-      - name: Build test assets
-        run: |
-          npm run sass --prefix packages/core
-          npm run docs --prefix packages/core
-          npm run sass --prefix packages/${{matrix.theme}}
-          npm run docs --prefix packages/${{matrix.theme}}
-
-      - name: Run Jest tests
-        run: |
-          npm run test:${{matrix.theme}} --prefix units
+          npx nx run @progress/kendo-themes-units:test --exclude-task-dependencies -- ${{ matrix.theme }}
