@@ -1,3 +1,9 @@
+## 14.4.0-dev.0 (2026-07-06)
+
+### 🚀 Features
+
+- **list:** add accessibility spec ([b5f510e572](https://github.com/telerik/kendo-themes/commit/b5f510e572))
+
 ## 14.3.0 (2026-07-01)
 
 ### 🚀 Features
