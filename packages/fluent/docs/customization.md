@@ -15354,36 +15354,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-label-font-size</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-font-size, inherit)</code></td>
-    <td><code>var(--kendo-label-font-size, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form label.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-font-weight</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-font-weight, inherit)</code></td>
-    <td><code>var(--kendo-label-font-weight, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Form label.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-line-height</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-line-height, inherit)</code></td>
-    <td><code>var(--kendo-label-line-height, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form label.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-form-hint-font-size</td>
     <td>String</td>
     <td><code>var(--kendo-form-hint-font-size, var(--kendo-font-size-sm))</code></td>
@@ -15541,46 +15511,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-optional-margin-x</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-optional-margin-x, #{k-spacing(1.5)})</code></td>
-    <td><code>var(--kendo-label-optional-margin-x, var(--kendo-spacing-1\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the optional label in the Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-optional-font-size</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
-    <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the optional label in the Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-optional-font-style</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
-    <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional label in the Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-optional-font-weight</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
-    <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the optional label in the Form.</div></div>
     </td>
 </tr>
 <tr>
@@ -19577,6 +19507,276 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered Input clear value icon.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Label
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-label-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>var(--kendo-label-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-font-family</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>var(--kendo-label-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-label-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-font-weight, var(--kendo-font-weight-semibold) )</code></td>
+    <td><code>var(--kendo-label-font-weight, var(--kendo-font-weight-semibold))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-letter-spacing</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-text, #{k-color(subtle)} )</code></td>
+    <td><code>var(--kendo-label-text, var(--kendo-color-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-disabled-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-disabled-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>var(--kendo-label-disabled-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-margin-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-optional-margin-x, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-label-optional-margin-x, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the optional label indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-optional-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the optional label indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-style</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-optional-font-style, normal )</code></td>
+    <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional label indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-label-optional-font-weight, inherit )</code></td>
+    <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the optional label indicator.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Link
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-link-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-text, #{k-color(primary)} )</code></td>
+    <td><code>var(--kendo-link-text, var(--kendo-color-primary))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-hover-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-hover-text, #{k-color(primary-hover)} )</code></td>
+    <td><code>var(--kendo-link-hover-text, var(--kendo-color-primary-hover))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-focus-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-focus-text, #{k-color(primary)} )</code></td>
+    <td><code>var(--kendo-link-focus-text, var(--kendo-color-primary))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-visited-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-visited-text, #{k-color(primary-active)} )</code></td>
+    <td><code>var(--kendo-link-visited-text, var(--kendo-color-primary-active))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The visited text color of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-disabled-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-disabled-text, #{k-color(on-app-surface)} )</code></td>
+    <td><code>var(--kendo-link-disabled-text, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-font-size, var(--kendo-font-size) )</code></td>
+    <td><code>var(--kendo-link-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-font-family</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-font-family, var(--kendo-font-family) )</code></td>
+    <td><code>var(--kendo-link-font-family, var(--kendo-font-family))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-link-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-link-font-weight, var(--kendo-font-weight-normal) )</code></td>
+    <td><code>var(--kendo-link-font-weight, var(--kendo-font-weight-normal))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-letter-spacing</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-text-decoration</td>
+    <td>String</td>
+    <td><code>underline</code></td>
+    <td><code>underline</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text decoration of the Link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-hover-text-decoration</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text decoration of the Link.</div></div>
     </td>
 </tr>
 </tbody>
