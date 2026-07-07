@@ -1,0 +1,30 @@
+@use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-link--theme-base() {
+
+    .k-link {
+        @include fill( $color: $kendo-link-text );
+
+        &:hover,
+        &.k-hover {
+            @include fill( $color: $kendo-link-hover-text );
+        }
+
+        &:focus-visible,
+        &.k-focus {
+            @include fill( $color: $kendo-link-focus-text );
+        }
+
+        &:visited {
+            @include fill( $color: $kendo-link-visited-text );
+        }
+
+        &.k-disabled,
+        &:disabled {
+            @include fill( $color: $kendo-link-disabled-text );
+        }
+    }
+
+}
