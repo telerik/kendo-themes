@@ -1,0 +1,267 @@
+# DS Abstraction — Exploration Notes
+
+> **Purpose:** Explore how to abstract the Kendo Design System into a form that AI coding and design agents can consume effectively.
+
+---
+
+## Session 1 — 2026-06-30: Framing the Problem
+
+### Key Question
+
+Can the Kendo Design System exist as a **standalone, implementation-agnostic asset** — separate from any specific component library (Kendo React, Angular, Blazor, etc.)?
+
+### The Architectural Fork
+
+We identified two possible meanings of "abstracting" the DS:
+
+- **A) DS = components.** The design system includes the actual component implementation. Abstracting means detaching styling from behavior (the "headless UI" path).
+- **B) DS = standalone specification.** The design system is an abstract asset. Specific component libraries (Kendo React, Kendo Angular, or even a customer's own components) are projections/implementations of it.
+
+**Decision: We're exploring path B.**
+
+### Core Insight
+
+The Kendo Design System's value isn't just "well-built components" — it's **well-designed decisions**: interaction patterns, accessibility contracts, spacing systems, state management, composition rules. Components are just one delivery vehicle for those decisions.
+
+### Use Case
+
+End users apply the **Kendo Design System** to their **own component suite**. An agent could be told: *"Build me a form using MY component library, but follow the Kendo Design System"* — and it would know the spacing, states, interaction patterns, accessibility contracts, and composition rules.
+
+### What's In Scope (Design Decisions)
+
+| Category | Example |
+|---|---|
+| **Behaviors** | "A date picker constrains keyboard navigation to valid dates" |
+| **States** | "Error state uses `token.color.error` with a 4px left border" |
+| **Design Tokens** | Spacing, color, typography as abstract references |
+| **Accessibility Contracts** | "Data grids must announce sort changes to screen readers" |
+| **Composition Rules** | "Forms group related fields with 16px vertical rhythm" |
+| **Interaction Patterns** | "Dropdowns dismiss on outside click and Escape key" |
+
+### What's Out of Scope (Implementation Details)
+
+- Framework-specific props (`onChange`, `@Output`, etc.)
+- CSS class names (`k-invalid`, `k-button-primary`)
+- Import paths (`@progress/kendo-react-*`)
+- Concrete DOM structure or markup
+
+### Open Questions
+
+- What **format** should this abstraction take? (Markdown? JSON schema? Both?)
+- Should it be **testable/validatable** — can an agent check if a custom component correctly implements the Kendo DS spec?
+- **Who authors** this asset? Design team? Engineering? Auto-generated from existing docs?
+- How does an agent **bridge** from the abstract spec to a specific component library at code-generation time?
+- What's the **delivery mechanism** for agents? (DESIGN.md? MCP plugin? Copilot Skill? RAG?)
+
+---
+
+## Session 2 — 2026-06-30: Distribution & Packaging (Plugin Research)
+
+### Key Question
+
+How do we **distribute** the Kendo Design System to AI agents? What's the right delivery mechanism?
+
+### Research Subjects
+
+- **Impeccable** (`pbakaus/impeccable`) — Design quality skill for AI coding agents
+- **gstack** (`garrytan/gstack`) — Full SDLC workflow framework by Garry Tan (YC)
+
+### Definitions: Plugin vs Skill vs DESIGN.md
+
+| Concept | What it is | Role |
+|---------|-----------|------|
+| **Skill** | A Markdown file (SKILL.md) that teaches the AI how to do something | The content — instructions, procedures, commands |
+| **Plugin** | A packaged bundle with a manifest (`.claude-plugin/plugin.json`) | The distribution format — versioning, marketplace, namespacing |
+| **DESIGN.md** | A design system spec at the project root | Passive context — the AI reads it automatically for all interactions |
+
+**Key insight:** You install plugins; you use skills. Plugins are containers, skills are the tools inside. A plugin doesn't add capability beyond what skills/hooks already provide — it's purely a distribution wrapper (like npm packages vs raw JS files).
+
+### Findings: How Impeccable & gstack Compare
+
+| | Impeccable | gstack |
+|---|---|---|
+| Scope | Design quality only | Full SDLC process |
+| Is a plugin? | ✅ Yes (`.claude-plugin` manifest) | ❌ No (skills folder via git clone) |
+| Distribution | `npx install`, marketplace, git submodule | `git clone` + `./setup` script |
+| DESIGN.md approach | Generated per-project (`/impeccable init`) | N/A |
+| Multi-tool support | 11 AI tools (Claude, Cursor, Codex, Gemini, etc.) | 10 AI tools |
+
+gstack is a plugin in spirit, just not in packaging. It predates/developed alongside the marketplace system and solved distribution its own way.
+
+### Decision: Layered Architecture
+
+For Kendo, we don't generate DESIGN.md per-project (Impeccable's approach). Our design system IS the product — we impose it, consumers customize on top.
+
+**Two layers:**
+
+```
+Plugin (we control, always up to date):
+  └── skills/kendo/DESIGN.md       ← Kendo base: components, patterns, tokens, anti-patterns
+
+Project root (consumer controls):
+  └── DESIGN.md                    ← Their overrides: brand colors, fonts, spacing, voice
+```
+
+The skill instructs the AI: "Read Kendo base first, then apply project-level overrides."
+
+**Why this wins:**
+- Kendo updates (new components, patterns) flow through to consumers automatically
+- Users customize brand freely via project-level overrides
+- Plugin never becomes obsolete — always provides the foundation
+- Same mental model as Kendo theming today (we ship components, they apply CSS variables)
+
+### Recommended Plugin Structure
+
+```
+kendo-design/
+├── .claude-plugin/
+│   └── plugin.json            ← metadata + dependency on kendo-themes
+├── skills/
+│   └── kendo/
+│       ├── SKILL.md           ← instructions + future commands (audit, migrate, etc.)
+│       └── DESIGN.md          ← Kendo base spec (components, tokens, patterns)
+```
+
+### Plugin Dependencies
+
+Plugins can declare dependencies on other plugins:
+
+```json
+{
+  "name": "kendo-design",
+  "version": "1.0.0",
+  "dependencies": ["kendo-themes"]
+}
+```
+
+- `kendo-themes` (existing skill for ready-made styles, no components) → publish as standalone plugin
+- Installing `kendo-design` auto-pulls `kendo-themes`
+- Users can install `kendo-themes` independently if they only want styles
+
+### Growth Path
+
+| Phase | What we ship | Value |
+|-------|-------------|-------|
+| **Now** | DESIGN.md inside a plugin shell | Passive context — AI defaults to Kendo |
+| **Next** | Add commands: `/kendo audit`, `/kendo migrate`, `/kendo component` | Active capabilities |
+| **Later** | Hooks (auto-lint on save), agents, monitors | Automated enforcement |
+
+**Why start as a plugin even with just DESIGN.md:**
+- Cost today = one `plugin.json` file
+- Cost of retrofitting later = restructuring, re-distributing, breaking users
+
+### Multi-Theme Strategy
+
+**Context:** Kendo's design system is theme-based. Themes (Default, Material, Bootstrap, Fluent, etc.) are all equally preferred — there's no "primary" and "secondary." DESIGN.md has no standard schema and no built-in multi-theme support; it's freeform.
+
+**Decision: One complete DESIGN.md per theme (Option A)**
+
+Each theme file is a self-contained, standalone spec — includes everything (tokens, behaviors, a11y, composition rules). The consumer picks one, copies it to their project root, and customizes from there.
+
+```
+Plugin:
+├── skills/kendo/
+│   ├── SKILL.md                 ← init command: "which theme?" → copies it
+│   └── themes/
+│       ├── default.md           ← Complete, self-contained DESIGN.md
+│       ├── material.md
+│       ├── bootstrap.md
+│       └── fluent.md
+
+Consumer's project root (after /kendo init):
+└── DESIGN.md                    ← Copied from chosen theme, now theirs to customize
+```
+
+**Why Option A over layered approach (base + overlay):**
+- Simplest mental model: pick one file, copy it, done
+- No "load base then overlay" indirection for the AI to handle
+- Consumer sees one complete source of truth
+- Easy to understand what you're getting
+
+**Managing duplication (internal concern, invisible to consumer):**
+
+Each theme file repeats shared content (behaviors, a11y, composition). Internally, we maintain DRY sources and compose at build time:
+
+```
+Source (our repo):                    Built output (in plugin):
+  base.md                               themes/default.md    ← base + default tokens
+  + themes/default-tokens.md            themes/material.md   ← base + material tokens
+  + themes/material-tokens.md           themes/bootstrap.md  ← base + bootstrap tokens
+  + themes/bootstrap-tokens.md          themes/fluent.md     ← base + fluent tokens
+```
+
+Consumer gets a clean standalone file. We maintain composable sources. Updates to shared behavior (e.g., new component spec) propagate to all themes via the build step.
+
+### Open Questions (from this session)
+
+- What goes in each theme DESIGN.md? (tokens, component catalog, anti-patterns, usage guidance?)
+- What commands would be most valuable first? (`/kendo audit`? `/kendo generate`? `/kendo migrate`?)
+- Should we support multi-tool distribution beyond Claude Code? (Cursor, Codex, Gemini CLI)
+- How does `kendo-themes` relate? Does it need its own plugin manifest?
+- Can we auto-detect if a project already has a DESIGN.md and skip/merge intelligently?
+- How do we handle theme updates after a consumer has customized their copy?
+
+---
+
+## Session 3 — 2026-07-06: DESIGN.md Adoption & Identity Framing
+
+### DESIGN.md Adoption Status
+
+The Google DESIGN.md specification (open-sourced April 2026) is already the de facto standard for describing visual identity to AI coding agents. Native support confirmed in:
+
+- **Google Stitch** — originated here
+- **Claude Code** — reads from project root
+- **Cursor** — reads from project root
+- **GitHub Copilot** — reads from project root
+- **Gemini** — native via Stitch
+
+Agents look for `DESIGN.md` at the project root (same convention as `README.md`). No plugin/skill infrastructure is required for the file to be consumed.
+
+### Implication for Our Approach
+
+**DESIGN.md alone delivers ~90% of the value.** A consumer who drops our DESIGN.md in their project root gets design system enforcement from any major AI agent — zero plugin overhead.
+
+The SKILL.md becomes a **distribution/packaging mechanism**, not a requirement:
+- Bundling DESIGN.md into an installable plugin with `/kendo init`
+- Theme selection (meridian vs material vs bootstrap at init time)
+- Explaining kendo-themes coordination when both are present
+
+### Key Insight: Visual Identity Framing
+
+**Q:** Is the Kendo Design System the consumer's visual identity?
+**A:** Yes — always.
+
+The Kendo Design System = the **rules, rhythm, structure, and patterns**.
+Themes = the **values that fill those rules**.
+
+Swapping `color.primary` from one value to another doesn't create a different design system — it's still the Kendo DS wearing different clothes. The 4px rhythm, 3-tier elevation, state expression model — those are the DS.
+
+Consumer scenarios (refined):
+1. **Out-of-the-box** (e.g. Meridian) → our tokens + our rules = our DS ✅
+2. **Custom theme** → their tokens + our rules = still our DS ✅
+3. **Custom DS on Kendo components** → their rules + their tokens = NOT our target ❌
+
+### Multi-Theme Simplification
+
+This framing confirms: each DESIGN.md variant (meridian, material, bootstrap, fluent, classic) differs **only in YAML frontmatter tokens**. The markdown body (rules, rationale, Do's and Don'ts) is **identical** across all themes — because the rules ARE the design system, regardless of color palette.
+
+### Decisions Made
+
+| # | Decision | Rationale |
+|---|----------|-----------|
+| 1 | DESIGN.md is self-sufficient | Industry-standard, all major agents support it natively |
+| 2 | SKILL.md = optional distribution layer | Adds init workflow and theme coordination, not core value |
+| 3 | Kendo DS = rules (invariant across themes) | Tokens change per theme; structure/patterns/guardrails don't |
+| 4 | Consumer always inherits our visual identity | Even with custom tokens, they're using our DS — not building their own |
+| 5 | Multi-theme = same body, different frontmatter | DRY by design — one source of truth for rules |
+
+### Open Questions (from this session)
+
+- How do we package the "body stays the same, frontmatter varies" multi-theme build?
+- Should DESIGN.md ship as part of `@progress/kendo-theme-*` npm packages?
+- Do we provide a CLI/script for consumers to generate a custom-theme DESIGN.md from a base?
+- What's the minimum viable DESIGN.md body content for first validation?
+
+---
+
+*Next: flesh out multi-theme DESIGN.md generation strategy, or validate current draft end-to-end.*

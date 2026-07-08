@@ -1,0 +1,5 @@
+# Eval results (generated per run)
+results/
+
+# Environment secrets
+.env

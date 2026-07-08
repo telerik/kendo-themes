@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "./scripts/init.sh",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}
