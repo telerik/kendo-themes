@@ -115,25 +115,23 @@
 
 
     // Loader spinner 3
+    // Uses transform-only animation to run on the compositor thread,
+    // ensuring the animation continues even when the main thread is blocked.
     @keyframes spinner-3-segment {
         0% {
-            inset-block-start: 0;
-            inset-inline-start: 50%;
+            transform: translate( calc( var( --_canvas-w ) * 0.5 ), 0px ) translate( -50%, -50% );
         }
 
         33.3333% {
-            inset-block-start: 100%;
-            inset-inline-start: 0;
+            transform: translate( 0px, var( --_canvas-h ) ) translate( -50%, -50% );
         }
 
         66.6666% {
-            inset-block-start: 100%;
-            inset-inline-start: 100%;
+            transform: translate( var( --_canvas-w ), var( --_canvas-h ) ) translate( -50%, -50% );
         }
 
         100% {
-            inset-block-start: 0;
-            inset-inline-start: 50%;
+            transform: translate( calc( var( --_canvas-w ) * 0.5 ), 0px ) translate( -50%, -50% );
         }
     }
 
@@ -147,23 +145,15 @@
         // * compensate by setting margin on all sides half a dot size
 
         .k-loader-segment {
-            transform: translate( -50%, -50% );
-        }
-        .k-loader-segment:nth-child(1) {
             top: 0;
-            left: 50%;
+            left: 0;
+            will-change: transform;
             animation: spinner-3-segment 2s ease infinite;
         }
         .k-loader-segment:nth-child(2) {
-            top: 100%;
-            left: 0;
-            animation: spinner-3-segment 2s ease infinite;
             animation-delay: calc( -2s / 3 );
         }
         .k-loader-segment:nth-child(3) {
-            top: 100%;
-            left: 100%;
-            animation: spinner-3-segment 2s ease infinite;
             animation-delay: calc( -4s / 3 );
         }
 
@@ -171,27 +161,33 @@
         #{k-when-default($kendo-loader-default-size, "sm")}
         &.k-loader-sm {
             .k-loader-canvas {
+                --_canvas-w: calc( #{$kendo-loader-sm-spinner-3-width} - #{$kendo-loader-sm-segment-size} );
+                --_canvas-h: calc( #{$kendo-loader-sm-spinner-3-height} - #{$kendo-loader-sm-segment-size} );
                 margin: calc( #{$kendo-loader-sm-segment-size} / 2 );
-                width: calc( #{$kendo-loader-sm-spinner-3-width} - #{$kendo-loader-sm-segment-size} );
-                height: calc( #{$kendo-loader-sm-spinner-3-height} - #{$kendo-loader-sm-segment-size} );
+                width: var( --_canvas-w );
+                height: var( --_canvas-h );
             }
         }
 
         #{k-when-default($kendo-loader-default-size, "md")}
         &.k-loader-md {
             .k-loader-canvas {
-                margin: calc( #{ $kendo-loader-md-segment-size} / 2 );
-                width: calc( #{$kendo-loader-md-spinner-3-width} - #{$kendo-loader-md-segment-size} );
-                height: calc( #{$kendo-loader-md-spinner-3-height} - #{$kendo-loader-md-segment-size} );
+                --_canvas-w: calc( #{$kendo-loader-md-spinner-3-width} - #{$kendo-loader-md-segment-size} );
+                --_canvas-h: calc( #{$kendo-loader-md-spinner-3-height} - #{$kendo-loader-md-segment-size} );
+                margin: calc( #{$kendo-loader-md-segment-size} / 2 );
+                width: var( --_canvas-w );
+                height: var( --_canvas-h );
             }
         }
 
         #{k-when-default($kendo-loader-default-size, "lg")}
         &.k-loader-lg {
             .k-loader-canvas {
+                --_canvas-w: calc( #{$kendo-loader-lg-spinner-3-width} - #{$kendo-loader-lg-segment-size} );
+                --_canvas-h: calc( #{$kendo-loader-lg-spinner-3-height} - #{$kendo-loader-lg-segment-size} );
                 margin: calc( #{$kendo-loader-lg-segment-size} / 2 );
-                width: calc( #{$kendo-loader-lg-spinner-3-width} - #{$kendo-loader-lg-segment-size} );
-                height: calc( #{$kendo-loader-lg-spinner-3-height} - #{$kendo-loader-lg-segment-size} );
+                width: var( --_canvas-w );
+                height: var( --_canvas-h );
             }
         }
     }
