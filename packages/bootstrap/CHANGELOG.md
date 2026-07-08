@@ -1,3 +1,29 @@
+## 14.4.0-dev.0 (2026-07-06)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.3.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
 ## 14.2.0 (2026-06-29)
 
 ### 🚀 Features

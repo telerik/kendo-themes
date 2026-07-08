@@ -1,3 +1,47 @@
+## 14.4.0-dev.0 (2026-07-06)
+
+### 🚀 Features
+
+- **list:** add accessibility spec ([b5f510e572](https://github.com/telerik/kendo-themes/commit/b5f510e572))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.3.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **meridian:** add focus state to list-sticky-header-item ([8d0b4a665b](https://github.com/telerik/kendo-themes/commit/8d0b4a665b))
+- **list:** add selected state to k-list-sticky-header-item ([ca23530a33](https://github.com/telerik/kendo-themes/commit/ca23530a33))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- Teya Veselinova
+
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **meridian:** add focus state to list-sticky-header-item ([8d0b4a665b](https://github.com/telerik/kendo-themes/commit/8d0b4a665b))
+- **list:** add selected state to k-list-sticky-header-item ([ca23530a33](https://github.com/telerik/kendo-themes/commit/ca23530a33))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- Teya Veselinova
+
 ## 14.2.0 (2026-06-29)
 
 ### 🚀 Features

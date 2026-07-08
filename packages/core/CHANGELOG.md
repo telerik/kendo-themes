@@ -1,3 +1,45 @@
+## 14.4.0-dev.0 (2026-07-06)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
+## 14.3.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **dock-manager:** adjust border-radius in meridian ([147ac9b7b8](https://github.com/telerik/kendo-themes/commit/147ac9b7b8))
+- **stepper:** steps should have cursor pointer set by default ([214b336844](https://github.com/telerik/kendo-themes/commit/214b336844))
+- **list:** add selected state to k-list-sticky-header-item ([ca23530a33](https://github.com/telerik/kendo-themes/commit/ca23530a33))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **dock-manager:** adjust border-radius in meridian ([147ac9b7b8](https://github.com/telerik/kendo-themes/commit/147ac9b7b8))
+- **stepper:** steps should have cursor pointer set by default ([214b336844](https://github.com/telerik/kendo-themes/commit/214b336844))
+- **list:** add selected state to k-list-sticky-header-item ([ca23530a33](https://github.com/telerik/kendo-themes/commit/ca23530a33))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+
 ## 14.2.0 (2026-06-29)
 
 ### 🚀 Features

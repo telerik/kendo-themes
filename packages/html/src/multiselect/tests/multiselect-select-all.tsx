@@ -39,7 +39,7 @@ export default () =>(
             <div>
                 <MultiSelectSelectAll
                     placeholder="MultiSelect..."
-                    selectAllProps={{ showCheckbox: false, selected: true }}
+                    selectAllProps={{ showCheckbox: false, selected: true, focus: true }}
                     listItemProps={{ showCheckbox: false, selected: true }}
                 />
             </div>
