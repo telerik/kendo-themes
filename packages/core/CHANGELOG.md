@@ -1,3 +1,14 @@
+## 14.4.0-dev.1 (2026-07-08)
+
+### 🩹 Fixes
+
+- **loader:** use transform-only keyframes for spinner-3 and spinner-4 ([cc40b8c18b](https://github.com/telerik/kendo-themes/commit/cc40b8c18b))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
 ## 14.4.0-dev.0 (2026-07-06)
 
 This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.

@@ -1,3 +1,9 @@
+## 14.4.0-dev.1 (2026-07-08)
+
+### 🩹 Fixes
+
+- **loader:** use transform-only keyframes for spinner-3 and spinner-4 ([cc40b8c18b](https://github.com/telerik/kendo-themes/commit/cc40b8c18b))
+
 ## 14.4.0-dev.0 (2026-07-06)
 
 ### 🚀 Features
