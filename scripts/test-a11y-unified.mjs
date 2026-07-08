@@ -457,7 +457,7 @@ function wrapInHtmlPage(componentHtml) {
 <head>
     <meta charset="utf-8">
     <title>A11y Test</title>
-    <link rel="stylesheet" href="http://${HOST}:${PORT}/packages/default/dist/default-ocean-blue-a11y.css">
+    <link rel="stylesheet" href="http://${HOST}:${PORT}/packages/meridian/dist/meridian-main.css">
 </head>
 <body class="k-body">
     <div id="test-area">${componentHtml}</div>
