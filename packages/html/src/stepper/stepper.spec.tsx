@@ -15,6 +15,9 @@ export type KendoStepperProps = {
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="navigation"} The landmark role navigation must be assigned to the component.
+ */
 export const Stepper: KendoComponent<KendoStepperProps & React.HTMLAttributes<HTMLElement>> = (
     props: KendoStepperProps & React.HTMLAttributes<HTMLElement>
 ) => {
@@ -46,23 +49,13 @@ Stepper.moduleName = STEPPER_MODULE_NAME;
 Stepper.folderName = STEPPER_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * Stepper uses a nav landmark with ordered list of navigation items.
+ * @keyboard {Shift + Tab} Focuses previous link.
+ * @keyboard {Tab} Focuses next link.
+ * @keyboard {Home} Focuses first link.
+ * @keyboard {End} Focuses last link.
+ * @keyboard {Space or Enter} Activates the currently focused link.
  *
- * - nav: aria-label="Stepper"
- * - Step links: tabindex management via roving tabindex
- * - Current step: aria-current="step"
- * - Disabled steps: aria-disabled="true"
+ * @see https://www.w3.org/TR/wai-aria-1.2/#navigation WAI-ARIA specification for navigation
  */
-Stepper.ariaSpec = {
-    selector: '.k-stepper',
-    rules: [
-        { selector: '.k-stepper', attribute: 'role=navigation or nodeName=nav', usage: 'The landmark role navigation must be assigned to the component.' },
-        { selector: '.k-step.k-disabled>.k-step-link', attribute: 'aria-disabled=true', usage: 'A disabled (inactive) link.' },
-        { selector: '.k-step-current>.k-step-link', attribute: 'aria-current=step', usage: 'The currently selected link.' },
-        { selector: '.k-step.k-focus .k-step-link', attribute: 'tabindex=0', usage: 'Focused step link is in the tab order.' },
-        { selector: '.k-step:not(.k-focus) .k-step-link', attribute: 'tabindex=-1', usage: 'Non-focused step links are removed from tab order.' },
-    ]
-};
 
 export default Stepper;

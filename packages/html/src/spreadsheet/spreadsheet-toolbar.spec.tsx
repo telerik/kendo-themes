@@ -1,0 +1,44 @@
+import { KendoToolbarProps, Toolbar } from '../toolbar';
+import { classNames } from '../misc';
+
+export const SPREADSHEETTOOLBAR_CLASSNAME = `k-spreadsheet-toolbar`;
+
+const states = [];
+
+const options = {};
+
+const defaultOptions = {};
+
+export const SpreadsheetToolbar = (
+    props: KendoToolbarProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        children,
+        ...other
+    } = props;
+
+    return (
+        <Toolbar
+            {...other}
+            resizable
+            className={classNames(
+                props.className,
+                SPREADSHEETTOOLBAR_CLASSNAME,
+            )}
+            fillMode="flat"
+            aria-label={other['aria-label'] || "Spreadsheet toolbar"}
+        >
+            {children}
+        </Toolbar>
+    );
+};
+
+SpreadsheetToolbar.states = states;
+SpreadsheetToolbar.options = options;
+SpreadsheetToolbar.className = SPREADSHEETTOOLBAR_CLASSNAME;
+SpreadsheetToolbar.moduleName = null;
+SpreadsheetToolbar.folderName = null;
+SpreadsheetToolbar.defaultOptions = defaultOptions;
+
+export default SpreadsheetToolbar;

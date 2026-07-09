@@ -1,7 +1,7 @@
 import { Drawer, KendoDrawerProps } from '../drawer.spec';
 import { DrawerContent } from '../drawer-content.spec';
 import { DrawerItem } from '../drawer-item.spec';
-import { DrawerItemSeparator } from '../drawer-item-separator';
+import { DrawerItemSeparator } from '../drawer-item-separator.spec';
 import { DrawerNormal } from '../templates/drawer-normal';
 import { DrawerMini } from '../templates/drawer-mini';
 

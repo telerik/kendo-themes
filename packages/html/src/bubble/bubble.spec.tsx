@@ -4,8 +4,6 @@ import { classNames, stateClassNames, States } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { BUBBLE_FOLDER_NAME, BUBBLE_MODULE_NAME } from './constants';
-
-
 export const BUBBLE_CLASSNAME = `k-bubble`;
 
 const states = [
@@ -28,6 +26,12 @@ const defaultOptions = {
     expanded: false
 };
 
+/**
+ * @aria {tabindex="0"} The Chat bubble must be focusable.
+ * @aria {role="button"} The expandable indicator must have an appropriate role.
+ * @aria {aria-label|title} The expandable indicator must be properly labelled.
+ * @aria {tabindex="0"} The expandable indicator must be part of the page tabsequence.
+ */
 export const Bubble: KendoComponent<KendoBubbleProps &
         KendoBubbleState &
         React.HTMLAttributes<HTMLDivElement>> = (
@@ -82,15 +86,5 @@ Bubble.className = BUBBLE_CLASSNAME;
 Bubble.defaultOptions = defaultOptions;
 Bubble.moduleName = BUBBLE_MODULE_NAME;
 Bubble.folderName = BUBBLE_FOLDER_NAME;
-
-Bubble.ariaSpec = {
-    selector: '.k-bubble',
-    rules: [
-        { selector: '.k-bubble', attribute: 'tabindex=0', usage: 'The Chat bubble must be focusable.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'role=button', usage: 'The expandable indicator must have an appropriate role.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'aria-label or title', usage: 'The expandable indicator must be properly labelled.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'tabindex=0', usage: 'The expandable indicator must be part of the page tabsequence.' },
-    ]
-};
 
 export default Bubble;

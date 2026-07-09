@@ -1,206 +1,204 @@
-# ariaSpec Reference
+# Accessibility Annotation Reference
 
-Complete reference for building `ariaSpec` rules on HTML spec components. The agent should read this file during Step 2 of the accessibility procedure.
+Reference for the JSDoc accessibility annotation system used in HTML package spec files.
 
-## ariaSpec structure
+## Overview
 
-```tsx
-Component.ariaSpec = {
-    selector: '.k-component',    // Root CSS selector for the component
-    rules: [                      // Array of ARIA attribute rules
-        {
-            selector: string,     // CSS selector targeting the element
-            attribute: string,    // ARIA attribute(s) and expected value(s)
-            usage: string,        // Human-readable explanation
-        },
-    ]
-};
+Accessibility documentation is embedded directly in component spec files as structured JSDoc tags. No separate data files, no static properties on components — the spec rendering IS the accessibility specification.
+
+```
+packages/html/src/[component]/[component].spec.tsx
 ```
 
-## Rule format patterns
+## The two JSDoc blocks
 
-### Simple required attribute
+Every component has (or should have) two JSDoc blocks related to accessibility:
 
-```tsx
-{ selector: '.k-button', attribute: 'role=button or nodeName=button', usage: 'The button role is implicit from the native <button> element.' }
-```
+### 1. Component block (before `export const X: KendoComponent`)
 
-### Conditional attribute (state-dependent)
-
-Use parenthetical conditions to indicate when the attribute applies:
+Contains `@aria` and `@ux` tags:
 
 ```tsx
-{ selector: '.k-button', attribute: 'aria-pressed (when togglable)', usage: 'Indicates the pressed state of a toggle button.' }
-{ selector: '.k-button', attribute: 'disabled (when disabled)', usage: 'Rendered when the button is disabled.' }
-{ selector: '.k-combobox > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the combobox is in an invalid state.' }
+/**
+ * @aria {role="combobox"} Announces the input as a combobox widget.
+ * @aria {aria-haspopup="listbox"} Indicates a listbox popup is available.
+ * @aria {aria-expanded="true"|"false"} Announces popup visibility state.
+ * @aria {aria-label|aria-labelledby} Required accessible name.
+ * @aria {aria-disabled="true"} Rendered only when the component is disabled.
+ * @ux {Popup} Opens on focus or when the user types.
+ */
+export const Autocomplete: KendoComponent<...>
 ```
 
-### Alternative attributes (OR)
+### 2. Bottom block (before `export default`)
 
-When multiple attributes satisfy the same requirement:
+Contains `@keyboard` and `@see` tags:
 
 ```tsx
-{ selector: '.k-checkbox', attribute: 'role=checkbox or type=checkbox', usage: 'Announces the checkbox role.' }
-{ selector: '.k-checkbox', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'Accessible name requirement.' }
-{ selector: '.k-checkbox', attribute: 'disabled or aria-disabled=true (when disabled)', usage: 'For native use disabled, for custom use aria-disabled.' }
+/**
+ * @keyboard {Alt + ArrowDown} Opens the suggestion popup.
+ * @keyboard {Escape} Closes the popup.
+ * @keyboard {Enter} Selects the focused suggestion.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/combobox/ WAI-ARIA Combobox Pattern
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html WCAG 4.1.2 Name, Role, Value — combobox must have accessible name
+ */
+
+export default Autocomplete;
 ```
 
-### ID-reference attributes
+---
 
-For attributes that reference another element's ID:
+## Tag format
+
+All tags use `{label} description` — curly braces contain the machine-readable value, space-separated description follows:
+
+```
+@aria {aria-pressed="true"|"false"} Indicates the pressed state of a toggle button.
+@keyboard {Shift + Tab} Moves focus to the previous element.
+@ux {Fixed position} Stays visible while the user scrolls.
+@see https://url Display text for the link
+```
+
+---
+
+## `@aria` patterns
+
+### Always-present attribute
+```tsx
+@aria {role="listbox"} Specifies the role of the popup list.
+@aria {tabindex="0"} The element must be focusable.
+```
+
+### Alternative attributes (use `|`)
+```tsx
+@aria {aria-label|aria-labelledby} Required accessible name.
+@aria {aria-label|aria-labelledby|title} Accessible name for the Rating element.
+```
+
+### State-dependent (include value context)
+```tsx
+@aria {aria-expanded="true"|"false"} Announces popup visibility to assistive technologies.
+@aria {aria-disabled="true"} Rendered only when the component is disabled.
+@aria {aria-selected="true"} Set on the currently selected item(s).
+@aria {aria-checked="true"|"false"|"mixed"} Announces the checked state.
+```
+
+### Implicit from native element
+```tsx
+@aria {role="button"} Implicit from the native <button> element; no explicit role needed.
+@aria {role="navigation"} Implicit from the native <nav> element.
+```
+
+### ID references
+```tsx
+@aria {aria-controls} Points to the listbox id when popup is open.
+@aria {aria-activedescendant} Points to the focused item when popup is open.
+@aria {aria-describedby} Points to the hint or error message element.
+@aria {id} Referenced by aria-controls on the input.
+```
+
+### Decorative elements
+```tsx
+@aria {aria-hidden="true"} The icon is decorative; hidden from assistive technologies.
+@aria {focusable="false"} Prevents the SVG from receiving focus in IE/Edge.
+```
+
+---
+
+## `@keyboard` trigger format
+
+Uses `KeyboardEvent.key` names:
+
+| Pattern | Example |
+|---------|---------|
+| Single key | `{Enter}`, `{Space}`, `{Escape}`, `{Tab}` |
+| Arrow key | `{ArrowDown}`, `{ArrowUp}`, `{ArrowLeft}`, `{ArrowRight}` |
+| Combination | `{Shift + Tab}`, `{Alt + ArrowDown}`, `{Control + Space}` |
+| Alternatives | `{Enter or Space}`, `{ArrowUp or ArrowLeft}` |
+| Platform variants | `{Control/Cmd(Mac) + Home}`, `{Alt/Opt(Mac) + ArrowDown}` |
+| Typing | `{Typing in the input}` |
+
+---
+
+## `@see` WCAG Understanding URLs
+
+```
+https://www.w3.org/WAI/WCAG22/Understanding/{slug}.html
+```
+
+| Criterion | Slug | Common use |
+|-----------|------|-----------|
+| 1.1.1 Non-text Content | `non-text-content` | Images, icons |
+| 1.3.1 Info and Relationships | `info-and-relationships` | Form labels |
+| 1.4.3 Contrast (Minimum) | `contrast-minimum` | Color |
+| 2.1.1 Keyboard | `keyboard` | Keyboard access |
+| 2.4.3 Focus Order | `focus-order` | Tab sequence |
+| 4.1.2 Name, Role, Value | `name-role-value` | Interactive elements |
+| 4.1.3 Status Messages | `status-messages` | Live regions |
+
+Format: `@see https://www.w3.org/WAI/WCAG22/Understanding/{slug}.html WCAG {N.N.N} {Name} — {component context}`
+
+---
+
+## Sub-component annotations
+
+Complex components split across multiple spec files. Each spec gets its own `@aria` block covering only what it renders.
+
+**Example: TabStrip**
+
+`tabstrip.spec.tsx`:
+```tsx
+/**
+ * @aria {role="tablist"} Container for tab elements.
+ * @aria {aria-orientation="vertical"} Set on the tablist when the tabstrip is vertical.
+ */
+export const TabStrip: KendoComponent<...>
+```
+
+`tabstrip-item.spec.tsx`:
+```tsx
+/**
+ * @aria {role="tab"} Specifies the role for each tab item.
+ * @aria {aria-selected="true"|"false"} Indicates the active tab.
+ * @aria {aria-controls} Points to the tabpanel id for this tab.
+ */
+export const TabStripItem: KendoComponent<...>
+```
+
+`tabstrip-content.spec.tsx`:
+```tsx
+/**
+ * @aria {role="tabpanel"} Container for the content of each tab.
+ * @aria {aria-labelledby} Points to the tab that controls this panel.
+ * @aria {tabindex="0"} Keeps the tabpanel in the page tab sequence.
+ */
+export const TabStripContent: KendoComponent<...>
+```
+
+---
+
+## Full example: Button
 
 ```tsx
-{ selector: '.k-combobox > .k-input-inner', attribute: 'aria-controls=${id}-listbox (when open)', usage: 'Points to the listbox element when popup is open.' }
-{ selector: '.k-tabstrip-content[aria-labelledby]', attribute: 'aria-labelledby', usage: 'Refers to the tab element that controls the panel.' }
+/**
+ * @aria {role="button"} Implicit from the native <button> element; no explicit role needed.
+ * @aria {aria-label} Required on icon-only buttons; pass via HTML attributes.
+ * @aria {disabled} Native boolean attribute; removes from tab sequence and marks unavailable.
+ * @aria {aria-pressed="true"|"false"} Indicates the pressed state of a toggle button.
+ * @aria {aria-disabled="true"} Announces as disabled while keeping the button focusable.
+ */
+export const Button: KendoComponent<...>
+
+Button.states = states;
+Button.options = options;
+Button.folderName = BUTTON_FOLDER_NAME;
+
+/**
+ * @keyboard {Enter or Space} Triggers a click action on the Button.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/button/ WAI-ARIA Authoring Practices: Button Pattern
+ */
+
+export default Button;
 ```
-
-### State-scoped selectors
-
-When a rule only applies to elements in a specific state:
-
-```tsx
-{ selector: '.k-combobox.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'When combobox is disabled.' }
-{ selector: '.k-tabstrip .k-tabstrip-item.k-active', attribute: 'aria-selected=true', usage: 'Announces selected tab.' }
-{ selector: '.k-tabstrip .k-tabstrip-item.k-active[aria-controls]', attribute: 'aria-controls', usage: 'Only when tab controls a panel.' }
-```
-
-### Composite component selectors
-
-For components embedded inside a parent:
-
-```tsx
-{ selector: '.k-combobox-popup .k-list-content, .k-combobox-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list container.' }
-{ selector: '.k-combobox-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' }
-```
-
-## Complete examples
-
-### Simple component — Button
-
-```tsx
-Button.ariaSpec = {
-    selector: '.k-button',
-    rules: [
-        { selector: '.k-button', attribute: 'role=button or nodeName=button', usage: 'The button role is implicit from the native <button> element.' },
-        { selector: '.k-button', attribute: 'aria-label (when icon-only)', usage: 'Required for icon-only buttons that have no visible text.' },
-        { selector: '.k-button', attribute: 'aria-pressed (when togglable)', usage: 'Indicates the pressed state of a toggle button.' },
-        { selector: '.k-button', attribute: 'disabled (when disabled)', usage: 'Rendered when the button is disabled.' },
-    ]
-};
-```
-
-### Form component — Checkbox
-
-```tsx
-Checkbox.ariaSpec = {
-    selector: '.k-checkbox',
-    rules: [
-        { selector: '.k-checkbox', attribute: 'role=checkbox or type=checkbox', usage: 'Announces the checkbox role of the element.' },
-        { selector: '.k-checkbox', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name.' },
-        { selector: '.k-checkbox', attribute: 'aria-checked=true/false/mixed or checked', usage: 'For native checkboxes the browser handles state. aria-checked for custom implementations.' },
-        { selector: '.k-checkbox', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message.' },
-        { selector: '.k-checkbox', attribute: 'disabled or aria-disabled=true (when disabled)', usage: 'For native use disabled, for custom use aria-disabled.' },
-        { selector: '.k-invalid, .ng-invalid', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered in a form when validation fails.' },
-    ]
-};
-```
-
-### Composite component — TabStrip
-
-```tsx
-TabStrip.ariaSpec = {
-    selector: '.k-tabstrip',
-    rules: [
-        { selector: '.k-tabstrip-items', attribute: 'role=tablist', usage: 'Indicates the tablist role.' },
-        { selector: '.k-tabstrip.k-tabstrip-left .k-tabstrip-items,.k-tabstrip.k-tabstrip-right .k-tabstrip-items', attribute: 'aria-orientation=vertical', usage: 'Vertical orientation.' },
-        { selector: '.k-tabstrip-item', attribute: 'role=tab', usage: 'The tab li element.' },
-        { selector: '.k-tabstrip .k-tabstrip-item.k-active', attribute: 'aria-selected=true', usage: 'The selected tab.' },
-        { selector: '.k-tabstrip-content', attribute: 'role=tabpanel', usage: 'The content area.' },
-        { selector: '.k-tabstrip .k-tabstrip-item.k-active[aria-controls]', attribute: 'aria-controls', usage: 'Relation between tab and panel.' },
-        { selector: '.k-tabstrip-content[aria-labelledby]', attribute: 'aria-labelledby', usage: 'Refers to the controlling tab.' },
-        { selector: '.k-tabstrip-scrollable .k-button', attribute: 'aria-hidden=true', usage: 'Scroll buttons hidden from AT.' },
-    ]
-};
-```
-
-### Rich composite — Combobox
-
-```tsx
-Combobox.ariaSpec = {
-    selector: '.k-combobox',
-    rules: [
-        { selector: '.k-combobox > .k-input-inner', attribute: 'role=combobox', usage: 'Identifies the input as a combobox.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Has a listbox popup.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-expanded', usage: 'Whether the popup is open.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-controls=${id}-listbox (when open)', usage: 'Points to the listbox.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-activedescendant (when open)', usage: 'Points to focused listbox item.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-autocomplete=list|both|inline (when has autocomplete)', usage: 'Autocomplete behavior.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Invalid state.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'aria-busy=true (when loading)', usage: 'Loading state.' },
-        { selector: '.k-combobox > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'Accessible name.' },
-        { selector: '.k-combobox.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Disabled state.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'role=button or nodeName=button', usage: 'Dropdown toggle.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'aria-label', usage: 'Accessible name for toggle.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'tabindex=-1', usage: 'Not in tab order.' },
-        { selector: '.k-combobox-popup .k-list-content, .k-combobox-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list container.' },
-        { selector: '.k-combobox-popup .k-list-item', attribute: 'role=option', usage: 'Each item is an option.' },
-        { selector: '.k-combobox-popup .k-list-item', attribute: 'aria-selected (when selectable)', usage: 'Selected state.' },
-        { selector: '.k-combobox-popup .k-no-data', attribute: 'aria-live=polite', usage: 'Announces no-data.' },
-    ]
-};
-```
-
-## TSX attribute patterns
-
-### Import `nextId` for dynamic IDs
-
-```tsx
-import { nextId } from '../../misc';
-```
-
-### Cross-referenced IDs (must use shared variable)
-
-```tsx
-// ✅ GOOD — same variable ensures IDs match
-const panelId = nextId('tabpanel');
-const tabId = nextId('tab');
-<li role="tab" id={tabId} aria-controls={panelId}>Tab</li>
-<div role="tabpanel" id={panelId} aria-labelledby={tabId}>Content</div>
-```
-
-### Conditional attributes
-
-```tsx
-// Boolean toggle
-aria-expanded={opened ? 'true' : 'false'}
-
-// Present only when truthy (omit when false)
-aria-disabled={disabled ? 'true' : undefined}
-
-// Spread for complex conditions
-{...(loading && { 'aria-busy': 'true' })}
-
-// Controls reference only when open
-aria-controls={opened ? `${id}-listbox` : undefined}
-```
-
-### Icon-only accessible name
-
-```tsx
-<Button icon="close" aria-label="Close dialog" />
-```
-
-## Template coverage checklist
-
-Ensure templates exist for these states (create new templates if missing):
-
-| State | Template purpose | Typical rules covered |
-|-------|-----------------|----------------------|
-| Default | Base rendering | `role`, `aria-label`, structural attributes |
-| Disabled | `disabled`/`aria-disabled` | `disabled`, `aria-disabled=true` |
-| Selected | `aria-selected`, `aria-pressed` | Selection-related rules |
-| Expanded/Open | `aria-expanded`, `aria-controls` | Popup/dropdown rules |
-| Focused | `tabindex`, `aria-activedescendant` | Focus management rules |
-| Invalid | `aria-invalid` | Validation rules |
-| Loading | `aria-busy` | Loading state rules |
-| Icon-only | `aria-label` | Accessible name for icon-only variants |

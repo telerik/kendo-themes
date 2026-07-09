@@ -31,6 +31,10 @@ export type KendoSchedulerEventProps = {
     eventSuffix?: React.JSX.Element | null;
 };
 
+/**
+ * @aria {role="button"} Indicating that the event element is interactive.
+ * @aria {aria-label} Label containing the title, start, and end date of the appointment.
+ */
 export const SchedulerEvent: KendoComponent<KendoSchedulerEventProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerEventProps &
         React.HTMLAttributes<HTMLDivElement>

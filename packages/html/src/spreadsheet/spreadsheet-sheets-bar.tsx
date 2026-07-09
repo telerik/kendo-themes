@@ -1,7 +1,7 @@
 import { Button } from '../button/button.spec';
 import { MenuButton } from '../menu-button/menu-button.spec';
 import { TabStrip } from '../tabstrip/tabstrip.spec';
-import { TabStripItem } from '../tabstrip/tabstrip-item';
+import { TabStripItem } from '../tabstrip/tabstrip-item.spec';
 import { classNames, nextId } from '../misc';
 
 export const SPREADSHEETSHEETSBAR_CLASSNAME = `k-spreadsheet-sheets-bar`;

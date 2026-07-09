@@ -99,4 +99,15 @@ Captcha.defaultOptions = defaultOptions;
 Captcha.moduleName = CAPTCHA_MODULE_NAME;
 Captcha.folderName = CAPTCHA_FOLDER_NAME;
 
+/**
+ * @keyboard {Tab} Navigates to the next Captcha element.
+ * @keyboard {Shift + Tab} Navigates to the previous Captcha Element.
+ * @keyboard {Enter} Presses the focused Captcha button.
+ * @keyboard {Space} Presses the focused Captcha button.
+ * @keyboard {ArrowUp} Increases the Audio control volume.
+ * @keyboard {ArrowDown} Decreases the Audio control volume.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#textbox WAI-ARIA specification for textbox
+ */
+
 export default Captcha;

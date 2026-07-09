@@ -1,6 +1,6 @@
 import { TaskBoard, KendoTaskBoardProps } from '../taskboard.spec';
-import { TaskBoardCard } from '../taskboard-card';
-import { TaskBoardColumn } from '../taskboard-column';
+import { TaskBoardCard } from '../taskboard-card.spec';
+import { TaskBoardColumn } from '../taskboard-column.spec';
 import { TaskBoardNormal } from '../templates/taskboard-normal';
 import { CardBody, CardHeader } from '../../card';
 

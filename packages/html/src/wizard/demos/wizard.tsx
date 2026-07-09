@@ -1,5 +1,5 @@
 import { Wizard, KendoWizardProps } from '../wizard.spec';
-import { WizardStep } from '../wizard-step';
+import { WizardStep } from '../wizard-step.spec';
 import { WizardSteps } from '../wizard-steps';
 import { WizardNormal } from '../templates/wizard-normal';
 import { WizardVertical } from '../templates/wizard-vertical';

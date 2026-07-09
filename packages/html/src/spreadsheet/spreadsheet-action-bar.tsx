@@ -11,9 +11,8 @@ const options = {};
 export type KendoSpreadsheetActionBarProps = {
     formula?: React.JSX.Element | string;
     cellName?: string;
-    /** @aria When true, renders the formula list popup in expanded state. */
     formulaExpanded?: boolean;
-    /** @aria Custom formula list items to render when expanded. */
+    /** Custom formula list items to render when expanded. */
     formulaListItems?: React.JSX.Element;
 };
 
@@ -33,6 +32,9 @@ const defaultOptions = {
     cellName: "B6"
 };
 
+/**
+ * @aria {aria-expanded="true"} When true, the formula list popup is in expanded state.
+ */
 export const SpreadsheetActionBar = (
     props: KendoSpreadsheetActionBarProps &
         React.HTMLAttributes<HTMLDivElement>

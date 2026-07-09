@@ -88,6 +88,14 @@ const defaultOptions = {
     annotationsToolbar: defaultAnnotationsToolbar,
 };
 
+/**
+ * @aria {tabindex="0"} Defines the focusable page container element.
+ * @aria {aria-label} Describes the purpose of the focusable container.
+ * @aria {role="document"} Defines that content should be evaluated in reader mode by assistive technologies.
+ * @aria {aria-haspopup="dialog"} Describes that the Search tool button opens a dialog element.
+ * @aria {role="dialog"} Describes the role of the Search panel.
+ * @aria {aria-label} Label for the Search panel, same label as the Search tool.
+ */
 export const PDFViewer: KendoComponent<KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -160,18 +168,11 @@ PDFViewer.moduleName = PDF_VIEWER_MODULE_NAME;
 PDFViewer.folderName = PDF_VIEWER_FOLDER_NAME;
 
 /**
- * @see Toolbar ariaSpec for the PDF viewer toolbar
+ * @keyboard {ArrowUp} Scrolls up the container.
+ * @keyboard {ArrowDown} Scrolls down the container.
+ * @keyboard {PageUp} Scrolls up the container.
+ * @keyboard {PageDown} Scrolls down the container.
+ * @keyboard {Shift + Tab} Returns focus to the toolbar.
  */
-PDFViewer.ariaSpec = {
-    selector: '.k-pdf-viewer',
-    rules: [
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'tabindex=0', usage: 'Defines the focusable page container element.' },
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'aria-label', usage: 'Describes the purpose of the focusable container.' },
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'role=document', usage: 'Defines that content should be evaluated in reader mode by assistive technologies.' },
-        { selector: '.k-pdf-viewer .k-toolbar .k-button:has([class*="i-search"])', attribute: 'aria-haspopup=dialog', usage: 'Describes that the Search tool button opens a dialog element.' },
-        { selector: '.k-pdf-viewer .k-canvas .k-search-panel', attribute: 'role=dialog', usage: 'Describes the role of the Search panel.' },
-        { selector: '.k-pdf-viewer .k-canvas .k-search-panel', attribute: 'aria-label', usage: 'Label for the Search panel, same label as the Search tool.' },
-    ]
-};
 
 export default PDFViewer;

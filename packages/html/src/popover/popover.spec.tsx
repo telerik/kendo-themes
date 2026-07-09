@@ -15,11 +15,15 @@ export type KendoPopoverProps = {
     callout?: null | 'top' | 'bottom' | 'left' | 'right';
     title?: string;
     body?: React.JSX.Element | React.JSX.Element[];
-    /** @aria id - required so the trigger element can reference it via aria-describedby */
     id?: string;
 };
 
-
+/**
+ * @aria {role="dialog"} Announces the dialog role when the popover contains focusable elements. Use role=tooltip when it does not.
+ * @aria {aria-labelledby} Links the popover container with the popover header element when there is focusable content.
+ * @aria {aria-describedby} Links the popover container with the popover body element when there is focusable content.
+ * @aria {id} required so the trigger element can reference it via aria-describedby
+ */
 export const Popover: KendoComponent<KendoPopoverProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPopoverProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -68,17 +72,12 @@ Popover.defaultOptions = defaultOptions;
 Popover.moduleName = POPOVER_MODULE_NAME;
 Popover.folderName = POPOVER_FOLDER_NAME;
 
-Popover.ariaSpec = {
-    selector: '.k-popover',
-    implicitRole: 'dialog',
-    rules: [
-        { selector: '.k-popover', attribute: 'role=dialog', usage: 'Announces the dialog role when the popover contains focusable elements. Use role=tooltip when it does not.' },
-        { selector: '.k-popover', attribute: 'id', usage: 'The element needs an id to be associated with the aria-describedby attribute of the trigger element.' },
-        { selector: '.k-popover', attribute: 'aria-labelledby', usage: 'Links the popover container with the popover header element when there is focusable content.' },
-        { selector: '.k-popover', attribute: 'aria-describedby', usage: 'Links the popover container with the popover body element when there is focusable content.' },
-        { selector: '.k-popover-header', attribute: 'id', usage: 'Links the popover header with the popover container via aria-labelledby.' },
-        { selector: '.k-popover-body', attribute: 'id', usage: 'Links the popover body with the popover container via aria-describedby.' },
-    ]
-};
+/**
+ * @keyboard {Escape} Dismisses the Popover.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/ WAI-ARIA specification for tooltip
+ * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role MDN description for tooltip role
+ * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role MDN description for dialog role
+ */
 
 export default Popover;

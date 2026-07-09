@@ -1,9 +1,9 @@
 import { PivotGrid, KendoPivotGridProps } from '../pivotgrid.spec';
-import { PivotGridConfiguratorButton } from '../pivotgrid-configurator-button';
-import { PivotGridConfigurator } from '../pivotgrid-configurator';
+import { PivotGridConfiguratorButton } from '../pivotgrid-configurator-button.spec';
+import { PivotGridConfigurator } from '../pivotgrid-configurator.spec';
 import { PivotGridCell } from '../pivotgrid-cell';
 import { PivotGridRow } from '../pivotgrid-row';
-import { PivotGridTable } from '../pivotgrid-table';
+import { PivotGridTable } from '../pivotgrid-table.spec';
 import { PivotGridTbody } from '../pivotgrid-tbody';
 import { PivotGridNormal } from '../templates/pivotgrid-normal';
 import { Chip, ChipAction, ChipList } from '../../chip';

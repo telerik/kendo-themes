@@ -10,14 +10,11 @@ const states = [];
 
 const options = {};
 
-
 export type KendoHorizontalTimelineEventProps = {
     content?: string | React.JSX.Element;
     title?: string;
     subtitle?: string;
-    /** @aria aria-label for the tabpanel */
     ariaLabel?: string;
-    /** @aria tabIndex for active tabpanel */
     panelTabIndex?: number;
 };
 
@@ -27,6 +24,10 @@ const defaultOptions = {
     content: "Event content"
 };
 
+/**
+ * @aria {aria-label} for the tabpanel
+ * @aria {tabindex} Tab index for the active tabpanel.
+ */
 export const HorizontalTimelineEvent: KendoComponent<KendoHorizontalTimelineEventProps & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoHorizontalTimelineEventProps &
         React.HTMLAttributes<HTMLLIElement>

@@ -1,4 +1,4 @@
-import SplitterSplitbar from '../splitter-splitbar';
+import SplitterSplitbar from '../splitter-splitbar.spec';
 import Splitter from '../splitter.spec';
 
 const style = `

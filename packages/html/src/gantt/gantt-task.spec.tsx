@@ -17,6 +17,9 @@ const defaultOptions = {
     type: "single"
 };
 
+/**
+ * @aria {aria-hidden="true"} The progress drag handle is decorative.
+ */
 export const GanttTask: KendoComponent<KendoGanttTaskProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttTaskProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -26,7 +29,6 @@ export const GanttTask: KendoComponent<KendoGanttTaskProps & React.HTMLAttribute
         ariaLevel,
         ...other
     } = props;
-
 
     return (
         <div

@@ -29,13 +29,18 @@ export type KendoListItemProps = {
     description?: string;
     /**
      * Unique identifier for the list item. Required for aria-activedescendant navigation.
-     * @aria id - Used by aria-activedescendant on the combobox/listbox
      */
     id?: string;
 };
 
 export type KendoListItemState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="option"} Each list item is an option in the listbox.
+ * @aria {aria-selected} Indicates the selected state of the option.
+ * @aria {aria-hidden="true"} Decorative icons are hidden from assistive technology.
+ * @aria {id} Used by aria-activedescendant on the combobox/listbox
+ */
 export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoListItemProps &
         KendoListItemState &
@@ -103,23 +108,5 @@ ListItem.className = LISTITEM_CLASSNAME;
 ListItem.defaultOptions = defaultOptions;
 ListItem.moduleName = LIST_MODULE_NAME;
 ListItem.folderName = LIST_FOLDER_NAME;
-
-/**
- * Accessibility specification for ListItem.
- * @accessibility
- * - Regular items: role="option" with aria-selected
- * - Group headers: role="presentation" with id for aria-labelledby reference
- * - Icons are decorative: aria-hidden="true"
- */
-ListItem.ariaSpec = {
-    selector: '.k-list-item',
-    rules: [
-        { selector: '.k-list-item', attribute: 'role=option', usage: 'Each list item is an option in the listbox.' },
-        { selector: '.k-list-item', attribute: 'id', usage: 'ID for aria-activedescendant reference.' },
-        { selector: '.k-list-item', attribute: 'aria-selected (when selectable)', usage: 'Indicates the selected state of the option.' },
-        { selector: '.k-list-group-item', attribute: 'role=presentation', usage: 'Group headers are presentational, not selectable options.' },
-        { selector: '.k-list-item-icon', attribute: 'aria-hidden=true', usage: 'Decorative icons are hidden from assistive technology.' },
-    ]
-};
 
 export default ListItem;

@@ -1,6 +1,6 @@
 import { Orgchart, KendoOrgchartProps } from '../orgchart.spec';
 import { OrgchartNode } from '../orgchart-node';
-import { OrgchartGroup } from '../orgchart-group';
+import { OrgchartGroup } from '../orgchart-group.spec';
 import { OrgchartNodeGroup } from '../orgchart-node-group';
 import { OrgchartVertical } from '../templates/orgchart-vertical';
 import { OrgchartGroupVertical } from '../templates/orgchart-group-vertical';

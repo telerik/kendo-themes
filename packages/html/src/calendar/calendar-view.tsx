@@ -5,9 +5,7 @@ const CALENDARVIEW_CLASSNAME = `k-calendar-view`;
 export type KendoCalendarViewProps = {
     orientation?: 'vertical' | 'horizontal',
     calendarView?: 'month' | 'year' | 'decade' | 'century';
-    /** @aria When true, this view acts as the grid root (multiview/range calendar) */
     gridRole?: boolean;
-    /** @aria aria-labelledby pointing to the calendar title */
     ariaLabelledBy?: string;
 };
 
@@ -16,6 +14,10 @@ const defaultOptions = {
     calendarView: 'month'
 } as const;
 
+/**
+ * @aria {role="grid"} When true, this view acts as the grid root (multiview/range calendar).
+ * @aria {aria-labelledby} pointing to the calendar title
+ */
 export const CalendarView = (
     props: KendoCalendarViewProps &
         React.HTMLAttributes<HTMLDivElement>

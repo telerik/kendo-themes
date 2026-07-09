@@ -40,7 +40,6 @@ export type KendoSearchboxProps = KendoSearchboxOptions & {
     placeholder?: string;
     showIcon?: boolean;
     icon?: string;
-    /** @aria Accessible name for the inner input element */
     'aria-label'?: string;
 };
 
@@ -74,7 +73,6 @@ export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState
         'aria-label': ariaLabel,
         ...other
     } = props;
-
 
     return (
         <Input

@@ -57,12 +57,10 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     dir?: 'ltr' | 'rtl';
     /**
      * Unique identifier for the dropdowntree. Used to generate related IDs.
-     * @aria Controls aria-controls references
      */
     id?: string;
     /**
      * ID of the treeview element in the popup.
-     * @aria aria-controls - Points to treeview when popup is open
      */
     treeviewId?: string;
 };
@@ -74,6 +72,18 @@ const defaultOptions = {
     arrowIconName: 'chevron-down'
 };
 
+/**
+ * @aria {role="combobox"} Announces the dropdown tree element.
+ * @aria {aria-haspopup="tree"} Indicates the presence of a tree popup.
+ * @aria {aria-expanded} Announces the popup visibility state.
+ * @aria {aria-label} Accessible name for the dropdown tree.
+ * @aria {tabindex="0"} The element must be focusable.
+ * @aria {aria-disabled="true"} Rendered when the dropdown tree is disabled.
+ * @aria {aria-label} Accessible name for the dropdown button.
+ * @aria {tabindex="-1"} The button must not be focusable.
+ * @aria {id} Referenced by aria-controls on the input.
+ * @aria {aria-controls} Points to treeview when popup is open
+ */
 export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdownTreeState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDropdownTreeProps &
         KendoDropdownTreeState &
@@ -113,7 +123,6 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
     } = props;
 
     const innerSpanId = id ? `${id}-value` : undefined;
-
 
     return (
         <>
@@ -231,20 +240,16 @@ DropdownTree.moduleName = DROPDOWNTREE_MODULE_NAME;
 DropdownTree.folderName = DROPDOWNTREE_FOLDER_NAME;
 
 /**
- * @see Treeview ariaSpec for the tree in the popup
- * @see ActionSheet ariaSpec for adaptive mode
+ * @keyboard {ArrowDown} Selects the next available item.
+ * @keyboard {ArrowUp} Selects the previous available item.
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens the popup.
+ * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} `Closes the popup.
+ * @keyboard {Enter} Selects and confirms the focused item.
+ * @keyboard {Escape} Clears the value when the popup is not open.
+ * @keyboard {Tab} Closes the actionsheet and focuses the next focusable element.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/ WAI-ARIA Authoring Practices: TreeView Example
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html WAI-ARIA Authoring Practices: Select-Only Combobox Example
  */
-DropdownTree.ariaSpec = {
-    rules: [
-        { selector: '.k-dropdowntree', attribute: 'role=combobox', usage: 'Announces the dropdown tree element.' },
-        { selector: '.k-dropdowntree', attribute: 'aria-haspopup=tree', usage: 'Indicates the presence of a tree popup.' },
-        { selector: '.k-dropdowntree', attribute: 'aria-expanded', usage: 'Announces the popup visibility state.' },
-        { selector: '.k-dropdowntree', attribute: 'aria-label', usage: 'Accessible name for the dropdown tree.' },
-        { selector: '.k-dropdowntree', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-dropdowntree.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered when the dropdown tree is disabled.' },
-        { selector: '.k-dropdowntree .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
-        { selector: '.k-dropdowntree .k-input-button', attribute: 'tabindex=-1', usage: 'The button must not be focusable.' },
-    ]
-};
 
 export default DropdownTree;

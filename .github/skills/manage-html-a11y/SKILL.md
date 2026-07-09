@@ -1,6 +1,6 @@
 ---
 name: manage-html-a11y
-description: Create or update ARIA accessibility attributes and tests for a Kendo UI component. Reads the ARIA reference doc, builds ariaSpec rules on the HTML spec, applies attributes to TSX templates, and validates with the a11y test runner until all violations and coverage gaps are resolved. Use this skill when the user wants to add accessibility support, fix ARIA violations, update ariaSpec rules, or ensure a component is WCAG 2.2 Level AA compliant.
+description: Create or update ARIA accessibility annotations and validate WCAG compliance for a Kendo UI component. Reads the component spec, writes @aria/@keyboard/@ux/@see JSDoc annotations, applies attributes to TSX templates, and validates with the axe-core test runner. Use this skill when the user wants to add accessibility support, fix ARIA violations, document keyboard shortcuts, or ensure WCAG 2.2 Level AA compliance.
 argument-hint: "[component] e.g. button, checkbox, grid"
 compatibility: Requires Node.js with npm, and a built HTML package
 metadata:
@@ -9,211 +9,227 @@ metadata:
 
 # Add Accessibility
 
-Apply WAI-ARIA attributes to a component's HTML spec and validate WCAG 2.2 Level AA compliance.
+Document ARIA attributes as JSDoc annotations in component specs and validate WCAG 2.2 Level AA compliance.
 
-> **See also:** The [accessibility prompt](../../prompts/accessibility.prompt.md) contains the same workflow as a standalone prompt. This skill and the prompt share the same patterns and rules — use whichever invocation method is convenient.
+> **See also:** The [accessibility prompt](../../prompts/accessibility.prompt.md) contains the same workflow as a standalone prompt.
 
 ## When to use
 
-When the user asks to "add accessibility", "add ARIA", "fix a11y violations", "make component accessible", or update `ariaSpec` rules for a component. Also when a component has no `ariaSpec` yet and needs one.
+When the user asks to "add accessibility", "add ARIA", "fix a11y", "document keyboard navigation", "add @aria annotations", or ensure a component is WCAG 2.2 Level AA compliant.
 
 ## Inputs
 
 | Input | Required | Description |
 |-------|----------|-------------|
 | **Component name** | Yes | kebab-case, e.g., `checkbox`, `date-picker`, `grid` |
-| **Scope** | No | `spec` (ariaSpec rules only), `apply` (spec + attributes), `full` (audit + report). Default: `full` |
-| **Sub-component** | No | Specific part, e.g., "just the header" for grid |
+| **Scope** | No | `annotations` (add @aria/@keyboard), `apply` (annotations + JSX attrs), `full` (audit + validate). Default: `full` |
 
-If no component name is given, ask. Everything else can be inferred from existing files.
+---
+
+## Architecture
+
+**The spec rendering IS the accessibility specification.** ARIA attributes are applied directly in the JSX render function. The `@aria` JSDoc annotations document what the component renders — they are not a test target.
+
+The test runner (`npm run test:a11y`) only validates WCAG compliance via axe-core in JSDOM — no browser required. There is no ARIA rule comparison against a spec list.
+
+---
+
+## JSDoc annotation system
+
+All accessibility documentation lives in the spec file as structured JSDoc tags.
+
+### Two JSDoc blocks per component
+
+```
+[imports]
+[type definitions]
+
+/**                           ← COMPONENT BLOCK
+ * @aria {attr} desc          ← ARIA attributes this component renders
+ * @ux {feature} desc         ← UX interaction behaviors
+ */
+export const ComponentName: KendoComponent<...>
+
+[render function]
+
+ComponentName.states = ...
+ComponentName.options = ...
+ComponentName.folderName = ...
+
+/**                           ← BOTTOM BLOCK
+ * @keyboard {trigger} desc   ← Keyboard shortcuts
+ * @see https://url text      ← WAI-ARIA specs, WCAG references
+ */
+
+export default ComponentName;
+```
+
+### Tag reference
+
+#### `@aria` — ARIA attributes (component block)
+
+```tsx
+@aria {role="combobox"} Announces the input as a combobox widget.
+@aria {aria-haspopup="listbox"} Indicates a listbox popup is available.
+@aria {aria-expanded="true"|"false"} Announces popup visibility state.
+@aria {aria-label|aria-labelledby} Required accessible name.
+@aria {aria-disabled="true"} Rendered only when the component is disabled.
+@aria {aria-controls} Points to the listbox id when popup is open.
+```
+
+Rules:
+- One tag per distinct attribute
+- `|` for alternatives: `{aria-label|aria-labelledby}`
+- Include value context: `{aria-expanded="true"|"false"}`
+- State-dependent: `{aria-disabled="true"} Rendered only when disabled`
+- Sub-components each get their own `@aria` annotations
+
+#### `@ux` — UX behaviors (component block)
+
+```tsx
+@ux {Fixed position} Stays visible while the user scrolls the page.
+@ux {Item selection} Clicking an item transfers focus and selection to it.
+```
+
+#### `@keyboard` — Keyboard shortcuts (bottom block)
+
+Uses `KeyboardEvent.key` names:
+```tsx
+@keyboard {Tab} Moves focus to the next focusable element.
+@keyboard {Shift + Tab} Moves focus to the previous element.
+@keyboard {Enter or Space} Activates the focused item.
+@keyboard {Alt + ArrowDown} Opens the popup.
+@keyboard {Control/Cmd(Mac) + Home} Moves focus to the first item.
+```
+
+#### `@see` — References (bottom block)
+
+```tsx
+@see https://www.w3.org/WAI/ARIA/apg/patterns/combobox/ WAI-ARIA Combobox Pattern
+@see https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html WCAG 4.1.2 Name, Role, Value — combobox must have accessible name
+```
+
+WCAG Understanding page URLs:
+- `1.1.1` → `/non-text-content.html`
+- `1.3.1` → `/info-and-relationships.html`
+- `4.1.2` → `/name-role-value.html`
+- `4.1.3` → `/status-messages.html`
+
+---
 
 ## Procedure
 
 ### Step 1: Gather context
 
-Read all relevant source files to understand the component's structure:
-
-1. **Component spec** — `packages/html/src/{component}/{component}.spec.tsx`
-2. **Templates** — `packages/html/src/{component}/templates/*.tsx`
-3. **Sub-component specs** — any related `.spec.tsx` files in the same directory (e.g., `tabstrip-item.spec.tsx`)
-4. **Reference component** — find a similar component that already has `ariaSpec.rules` and use it as a pattern reference (good examples: `button`, `checkbox`, `combobox`, `tabstrip`)
-
-Note the component's:
-- Rendered HTML structure (element types, class names, nesting)
-- Interactive elements (buttons, inputs, links)
-- States (disabled, selected, expanded, focused, etc.)
-- Sub-components embedded in templates
-
-### Step 2: Build `ariaSpec.rules`
-
-The `ariaSpec` static object on the spec component is the **single source of truth** for ARIA testing. Create or update it.
-
-Create rules based on:
-- WAI-ARIA 1.2 Authoring Practices and WCAG 2.2
-- The component's rendered HTML and interactive behavior
-- Specs from similar components
-
-Read [references/ariaspec-reference.md](references/ariaspec-reference.md) for complete format details, rule patterns, and examples from real components (Button, Checkbox, TabStrip, Combobox).
-
-**Format:**
-
-```tsx
-Component.ariaSpec = {
-    selector: '.k-component',
-    rules: [
-        { selector: '.k-component', attribute: 'role=button', usage: 'Required' },
-        { selector: '.k-component', attribute: 'aria-label or aria-labelledby', usage: 'Required when icon-only' },
-        { selector: '.k-component', attribute: 'aria-disabled=true (when disabled)', usage: 'When disabled' },
-    ]
-};
+```
+packages/html/src/[component]/
+├── [component].spec.tsx       ← main spec
+├── [sub-component].spec.tsx   ← sub-component specs (if any)
+├── templates/*.tsx            ← what actually renders
+└── index.ts
 ```
 
-**Selector validation — always verify against actual rendered HTML:**
+Read the spec(s) and templates. Identify:
+- What HTML elements and CSS classes are rendered
+- Which elements are interactive
+- What states exist (disabled, selected, expanded, etc.)
+- Whether sub-components have their own spec files
 
-- CSS class selectors must match what the component actually renders (check `className`, `stateClassNames()` output)
-- Child `>` vs descendant ` ` selectors must match actual nesting depth
-- For icon selectors, use `[class*="i-icon-name"]` instead of `.k-svg-i-icon-name` to match both SVG and font icon modes
-- Conditional attributes (e.g., `aria-controls`) may need a selector guard like `[aria-controls]`
+Good reference components to review: `autocomplete`, `button`, `combobox`, `tabstrip`
 
-**Composite components:** complex components that embed others (e.g., Grid contains Pager, Toolbar) must include child component rules adapted to the parent's DOM structure.
+### Step 2: Add `@aria` annotations
 
-### Step 3: Apply ARIA attributes to TSX files
+Add/update the component JSDoc block before `export const X: KendoComponent`.
 
-Edit `.spec.tsx` and `templates/*.tsx` following these rules:
+What to annotate:
+- **Role** — implicit from `<button>`, `<nav>`, `<input>` OR explicit `role=`
+- **Accessible name** — `aria-label`, `aria-labelledby`, `title`
+- **State** — `aria-expanded`, `aria-disabled`, `aria-selected`, `aria-checked`, `aria-pressed`
+- **Range values** — `aria-valuenow`, `aria-valuemin`, `aria-valuemax`
+- **ID references** — `aria-controls`, `aria-describedby`, `aria-activedescendant`
+- **Ownership** — `aria-owns`
 
-**Placement:** ARIA attributes always go after the `className` prop.
+**Sub-components** (separate `.spec.tsx` files) get their own `@aria` block covering only what they render. Example: `tabstrip.spec.tsx` has `@aria {role="tablist"}`, while `tabstrip-item.spec.tsx` has `@aria {role="tab"}`.
+
+### Step 3: Apply ARIA attributes in JSX
+
+Rules:
+- **Semantic HTML first** — `<button>` over `<div role="button">`
+- **Attributes after `className`**
+- **Conditional values** — use `undefined` to omit: `aria-expanded={opened ? 'true' : 'false'}`
+- **Icon-only elements** — require `aria-label`
+- **`disabled` propagation** — pass to all interactive children
+- **Dynamic IDs** — use `nextId(prefix)` from `misc`; use a variable when two elements reference the same ID
 
 ```tsx
-// ✅ GOOD
-<button className="k-button" role="button" aria-label="Close">
-
-// ❌ BAD
-<button role="button" className="k-button">
-```
-
-**Semantic HTML first:** prefer `<button>` over `<div role="button">`.
-
-**Conditional values:**
-```tsx
-<button
-    className="k-button"
+// ✅ Correct attribute placement and conditional values
+<input
+    className="k-input-inner"
+    role="combobox"
     aria-expanded={opened ? 'true' : 'false'}
+    aria-controls={opened ? `${id}-listbox` : undefined}
+    aria-label={ariaLabel}
     aria-disabled={disabled ? 'true' : undefined}
 />
 ```
 
-**Dynamic IDs — use `nextId()` from misc:**
-```tsx
-import { nextId } from '../../misc';
+### Step 4: Add `@keyboard` and `@see` to the bottom block
 
-// Cross-referenced IDs — same variable for both elements
-const groupId = nextId('group');
-<ListUl aria-labelledby={groupId}>
-    <ListGroupItem id={groupId}>Group</ListGroupItem>
+After all static property assignments, add the bottom JSDoc block:
+
+```tsx
+ComponentName.folderName = FOLDER_NAME;
+
+/**
+ * @keyboard {ArrowDown} Moves focus to the next item.
+ * @keyboard {Escape} Closes the popup.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/combobox/ WAI-ARIA Combobox Pattern
+ */
+
+export default ComponentName;
 ```
 
-**Icon-only buttons:** always require `aria-label`.
-
-**No structural changes:** only add attributes — never add or remove HTML elements.
-
-**Verify spec HTML matches real product HTML** — don't introduce element type mismatches (e.g., using `<button>` where the product uses `<span class="k-button">`).
-
-**Do not modify `tests/` folder** unless specifically needed for missing coverage.
-
-**Add TSDoc on ARIA-relevant props:**
-```tsx
-export type KendoComponentProps = {
-    /** @aria aria-pressed="true" when selected */
-    selected?: boolean;
-};
-```
-
-### Step 4: Ensure full template coverage
-
-After adding rules, every rule must be testable by at least one template:
-
-1. Run the a11y tests (see Step 5) and check for **coverage gaps** — rules whose selector never matched any element in any template
-2. For each gap, create a new template that renders the component in the required state:
-   - **Disabled** → for `aria-disabled` rules
-   - **Selected/Active** → for `aria-selected`, `aria-pressed` rules
-   - **Expanded** → for `aria-expanded`, `aria-controls`, popup rules
-   - **Focused** → for `tabindex=0` on focused items
-3. Export new templates from the component's `index.ts`
-4. Re-run until: **0 ARIA violations, 0 WCAG violations, 0 coverage gaps**
-
-### Step 5: Validate iteratively
-
-Run after every edit round:
+### Step 5: Validate WCAG compliance
 
 ```bash
-npm run build --prefix packages/html && npm run test:a11y {component}
+npm run build --prefix packages/html
+npm run test:a11y [component]
 ```
 
-The test runner performs:
-- **ARIA validation** — checks `ariaSpec.rules` against rendered HTML (JSDOM)
-- **WCAG validation** — runs axe-core against rendered templates in a browser
-- **Coverage check** — reports rules that no template exercises
+**Target: 0 violations.**
 
-Fix violations and re-run until clean. Also run type checking:
+For each violation:
+1. Read the axe-core rule description
+2. Fix the HTML structure or add missing attributes
+3. Create additional templates for states that need coverage
+4. Re-run until clean
 
 ```bash
-npm run typecheck --prefix packages/html
+npm run test:a11y [component] -- --build     # Build first then test
 ```
 
-## WCAG 2.2 Quick Reference
+### Step 6: Regenerate docs
 
-Key criteria to verify: 1.1.1 (non-text content `alt`/`aria-hidden`), 1.3.1 (semantic structure), 2.1.1 (keyboard operable), 2.4.3 (logical focus order), 2.4.6 (descriptive labels), 3.3.1 (error identification in text), 4.1.2 (name/role/value on all UI components). Target Level AA compliance.
-
-## Audit Report Format
-
-When scope is `full`, produce a report:
-
-```markdown
-## Accessibility Audit: [component]
-
-### Summary
-- **Status:** Pass / Fail / Partial
-- **WCAG Level:** A / AA
-- **Issues found:** N
-
-### Issues
-
-| Severity | Selector | Issue | Fix |
-|----------|----------|-------|-----|
-| Critical | `.k-chip` | Missing `role=option` inside listbox | Add `role="option"` |
-| Major    | `.k-chip .k-icon` | Decorative icon not hidden | Add `aria-hidden="true"` |
-
-### Applied Fixes
-- Added `role="option"` to `.k-chip` when inside `.k-chip-list`
-- Added `aria-hidden="true"` to all `.k-icon` decorative elements
-
-### Remaining Manual Checks
-- Focus order validation (visual test required)
-- Screen reader announcement testing
+```bash
+npm run build --prefix packages/html
+npm run docs --prefix packages/html
 ```
 
-## Known acceptable violations
+Verify `packages/html/docs/[component].md` shows correct sections:
+- **Component Style Options** — from `Component.options` (auto-generated)
+- **ARIA Attributes** — from `@aria` annotations
+- **Keyboard Navigation** — from `@keyboard` annotations
+- **UX Behavior** — from `@ux` annotations
+- **Resources** — from `@see` annotations
 
-These are out of scope — note but don't try to fix:
-- `label` — form labels provided by consuming apps
-- `target-size` (2.5.8) — controlled by product implementations
-- jQuery legacy specs — excluded from compliance testing
+---
 
-## Must-fix violations
+## Commands reference
 
-Always resolve these:
-- `button-name` — buttons without accessible text
-- `aria-valid-attr-value` — invalid ARIA attribute values
-- `aria-required-attr` — missing required ARIA attributes
-- Any other axe-core WCAG 2.2 Level AA violations
-
-## Gotchas
-
-- The `ariaSpec.rules` array is the **single source of truth** — the test runner reads it directly. Legacy fields (`requiredAttributes`, `childSelectors`) are still supported as fallback but should be migrated to `rules`.
-- Templates render to **static HTML** — no interactivity. State classes (hover, focus) are applied via props, not CSS pseudo-classes.
-- The `npm run test:a11y` command requires the HTML package to be built first (`npm run build --prefix packages/html`).
-- For `--affected` mode, the runner detects changes via git — useful for testing only what you changed: `npm run test:a11y -- --affected`.
-- Use `--verbose` for detailed output: `npm run test:a11y {component} -- --verbose`.
-- Composite components (Grid, Scheduler, FileManager) are the hardest — they embed many sub-components and need extensive rule sets.
-- `nextId()` produces IDs like `k-{prefix}-1`, `k-{prefix}-2` — never hardcode sequential IDs.
-- When cross-referencing IDs (`aria-labelledby`, `aria-controls`), always store `nextId()` in a variable and use that variable in both the referencing and target elements.
+```bash
+npm run test:a11y                         # All components
+npm run test:a11y button                  # One component
+npm run test:a11y -- --build              # Build HTML package first
+npm run docs --prefix packages/html       # Regenerate all docs
+```

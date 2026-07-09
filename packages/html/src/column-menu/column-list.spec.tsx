@@ -19,6 +19,11 @@ export type KendoColumnListProps = KendoColumnListOptions;
 const defaultOptions = {
 };
 
+/**
+ * @aria {role="listbox"} Sets the listbox role of the list of columns wrapper.
+ * @aria {aria-multiselectable="true"} Specifies that the list is multiselectable.
+ * @aria {aria-label} Accessible name for the column list.
+ */
 export const ColumnList: KendoComponent<KendoColumnListProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColumnListProps &
         React.HTMLAttributes<HTMLDivElement>

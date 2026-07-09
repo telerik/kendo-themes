@@ -16,6 +16,9 @@ const defaultOptions = {
     orientation: "horizontal"
 };
 
+/**
+ * @aria {aria-hidden="true"} Dependency connector lines are decorative.
+ */
 export const GanttLine: KendoComponent<KendoGanttLineProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttLineProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -24,7 +27,6 @@ export const GanttLine: KendoComponent<KendoGanttLineProps & React.HTMLAttribute
         orientation = defaultOptions.orientation,
         ...other
     } = props;
-
 
     return (
         <div

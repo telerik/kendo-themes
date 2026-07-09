@@ -15,7 +15,6 @@ const states = [
 
 const options = {};
 
-
 export type KendoMenuListItemProps = {
     text?: string;
     icon?: string;
@@ -27,7 +26,6 @@ export type KendoMenuListItemProps = {
     dir?: "rtl" | "ltr";
     children?: React.JSX.Element[];
     popup?: React.JSX.Element;
-    /** @aria aria-expanded state for expandable items */
     expanded?: boolean;
 };
 
@@ -38,6 +36,9 @@ const defaultOptions = {
     iconPosition: 'before'
 } as const;
 
+/**
+ * @aria {aria-expanded} state for expandable items
+ */
 export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuListItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoMenuListItemProps &
         KendoMenuListItemState &

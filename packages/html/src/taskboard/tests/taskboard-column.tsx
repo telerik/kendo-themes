@@ -1,8 +1,8 @@
 import { Button } from '../../button';
 import { CardBody, CardHeader } from '../../card';
 import { Textbox } from '../../textbox';
-import TaskBoardCard from '../taskboard-card';
-import TaskBoardColumn from '../taskboard-column';
+import TaskBoardCard from '../taskboard-card.spec';
+import TaskBoardColumn from '../taskboard-column.spec';
 import TaskBoard from '../taskboard.spec';
 
 const style = `

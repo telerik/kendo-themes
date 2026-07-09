@@ -12,6 +12,10 @@ export type KendoSchedulerToolbarProps = KendoToolbarProps & {
     footer?: boolean
 };
 
+/**
+ * @aria {role="toolbar"} Follows Toolbar spec: sets the component role.
+ * @aria {aria-label|title} Follows Toolbar spec: each toolbar must have a label specifying its purpose.
+ */
 export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -56,3 +60,4 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
 SchedulerToolbar.className = className;
 SchedulerToolbar.moduleName = SCHEDULER_MODULE_NAME;
 SchedulerToolbar.folderName = SCHEDULER_FOLDER_NAME;
+

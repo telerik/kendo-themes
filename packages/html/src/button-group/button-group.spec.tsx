@@ -24,6 +24,11 @@ export type KendoButtonGroupState = { [K in (typeof states)[number]]?: boolean }
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="group"} Sets the proper role for the group of buttons.
+ * @aria {aria-disabled="true"} The attribute is rendered only when the entire button group is disabled.
+ * @aria {aria-pressed} Specifies the current state of the ButtonGroup. Only the selected button within the group will have this attribute set to true.
+ */
 export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGroupState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoButtonGroupProps &
         KendoButtonGroupState &
@@ -68,20 +73,12 @@ ButtonGroup.moduleName = BUTTON_GROUP_MODULE_NAME;
 ButtonGroup.folderName = BUTTON_GROUP_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * ButtonGroup implements the WAI-ARIA group pattern.
+ * @keyboard {Tab} Focuses the next button in the group. If the focus is on the last button, focuses the next focusable element on the page.
+ * @keyboard {Shift + Tab} Focuses the previous button in the group. If the focus is on the first button, focuses the previous focusable element before the ButtonGorup.
+ * @keyboard {Enter or Space} Triggers a click action on the button.
  *
- * - Container: role="group"
- * - When disabled: aria-disabled="true"
- * - Child buttons: aria-pressed for toggle state
+ * @see https://www.w3.org/TR/wai-aria-1.2/#button WAI-ARIA `button` Role Specification
+ * @see https://www.w3.org/TR/wai-aria-1.2/#group WAI-ARIA `group` Role Specification
  */
-ButtonGroup.ariaSpec = {
-    selector: '.k-button-group',
-    rules: [
-        { selector: '.k-button-group:not(.k-split-button)', attribute: 'role=group', usage: 'Sets the proper role for the group of buttons.' },
-        { selector: '.k-button-group.k-disabled', attribute: 'aria-disabled=true', usage: 'The attribute is rendered only when the entire button group is disabled.' },
-        { selector: '.k-button-group:not(.k-split-button):not(.k-scheduler-navigation):not(.k-zoom-control) .k-button', attribute: 'aria-pressed (when selected)', usage: 'Specifies the current state of the ButtonGroup. Only the selected button within the group will have this attribute set to true.' },
-    ]
-};
 
 export default ButtonGroup;

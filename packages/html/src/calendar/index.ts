@@ -4,7 +4,7 @@ export * from './calendar-cell';
 export * from './calendar-header';
 export * from './calendar-footer';
 export * from './calendar-table';
-export * from './calendar-table-head';
+export * from './calendar-table-head.spec';
 export * from './calendar-view';
 export * from './calendar-navigation.spec';
 export * from './calendar-infinite.spec';

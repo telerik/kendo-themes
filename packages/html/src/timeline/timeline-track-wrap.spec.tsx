@@ -6,6 +6,9 @@ import { KendoComponent } from '../_types/component';
 import { TIMELINE_FOLDER_NAME, TIMELINE_MODULE_NAME } from './constants';
 export const TIMELINETRACKWRAP_CLASSNAME = `k-timeline-track-wrap`;
 
+/**
+ * @aria {role="tablist"} Indicates the tablist role for the scrollable wrap element.
+ */
 export const TimelineTrackWrap: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {

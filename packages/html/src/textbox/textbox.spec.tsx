@@ -57,6 +57,13 @@ const defaultOptions = {
     separators: true
 };
 
+/**
+ * @aria {role="textbox"} Describes the role of the component.
+ * @aria {aria-label|aria-labelledby} The input requires an accessible name (provided by consuming app).
+ * @aria {aria-invalid="true"} Rendered when the TextBox is in an invalid state.
+ * @aria {aria-describedby} Points to the hint or error message for the input.
+ * @aria {aria-disabled="true"} Rendered when the TextBox is disabled.
+ */
 export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoTextboxProps &
         KendoTextboxState &
@@ -87,7 +94,6 @@ export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omi
         'aria-describedby': ariaDescribedBy,
         ...other
     } = props;
-
 
     return (
         <Input
@@ -143,21 +149,7 @@ Textbox.moduleName = TEXTBOX_MODULE_NAME;
 Textbox.folderName = TEXTBOX_FOLDER_NAME;
 
 /**
- * Accessibility specification for Textbox.
- * @accessibility
- * - Uses semantic `<input>` element (role="textbox" implicit)
- * - Requires accessible name via label, aria-label, or aria-labelledby
- * - Disabled state uses native disabled attribute
+ * @see https://www.w3.org/TR/wai-aria-1.2/#textbox WAI-ARIA Specification for the TextBox
  */
-Textbox.ariaSpec = {
-    selector: '.k-textbox',
-    rules: [
-        { selector: '.k-textbox > .k-input-inner', attribute: 'role=textbox or nodeName=input', usage: 'Describes the role of the component.' },
-        { selector: '.k-textbox > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name (provided by consuming app).' },
-        { selector: '.k-textbox > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the TextBox is in an invalid state.' },
-        { selector: '.k-textbox > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message for the input.' },
-        { selector: '.k-textbox.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the TextBox is disabled.' },
-    ]
-};
 
 export default Textbox;

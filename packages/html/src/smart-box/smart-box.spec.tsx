@@ -9,7 +9,6 @@ import {
 import { Popup } from '../popup';
 import { KendoComponent } from '../_types/component';
 import { SMART_BOX_FOLDER_NAME, SMART_BOX_MODULE_NAME } from './constants';
-
 export const SMART_BOX_CLASSNAME = `k-smart-box`;
 
 const states = [
@@ -39,13 +38,9 @@ export type KendoSmartBoxProps = KendoSmartBoxOptions & {
     popup?: React.JSX.Element;
     opened?: boolean;
     processing?: boolean;
-    /** @aria aria-label for the combobox input */
     inputAriaLabel?: string;
-    /** @aria aria-controls referencing the popup listbox ID */
     inputAriaControls?: string;
-    /** @aria aria-activedescendant referencing the focused list item */
     inputAriaActiveDescendant?: string;
-    /** @aria aria-autocomplete behavior */
     inputAriaAutocomplete?: 'list' | 'both' | 'inline' | 'none';
 };
 
@@ -55,6 +50,16 @@ const defaultOptions = {
     separators: true
 };
 
+/**
+ * @aria {role="combobox"} Announces the combobox role for the SmartBox input.
+ * @aria {aria-expanded} Indicates whether the suggestion popup is currently visible.
+ * @aria {aria-haspopup="listbox"} Indicates that the SmartBox has a popup listbox with suggestions.
+ * @aria {aria-hidden="true"} Decorative icons in the prefix area are hidden from screen readers.
+ * @aria {aria-label} for the combobox input
+ * @aria {aria-controls} referencing the popup listbox ID
+ * @aria {aria-activedescendant} referencing the focused list item
+ * @aria {aria-autocomplete} behavior
+ */
 export const SmartBox: KendoComponent<KendoSmartBoxProps & KendoSmartBoxState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoSmartBoxProps &
         KendoSmartBoxState &
@@ -136,29 +141,24 @@ SmartBox.moduleName = SMART_BOX_MODULE_NAME;
 SmartBox.folderName = SMART_BOX_FOLDER_NAME;
 
 /**
- * @see List ariaSpec for popup listbox content
- * @see SpeechToTextButton ariaSpec for voice input button
- * @see Button ariaSpec for base button accessibility
+ * @keyboard {ArrowDown} Opens the suggestion popup if closed, or moves focus to the next suggestion in the list.
+ * @keyboard {ArrowUp} Opens the suggestion popup if closed, or moves focus to the previous suggestion in the list.
+ * @keyboard {Enter} Selects the currently highlighted suggestion (if any) and submits the input.
+ * @keyboard {Escape} Closes the suggestion popup if open, or clears the input field.
+ * @keyboard {Home} When the popup is open, moves focus to the first suggestion in the list.
+ * @keyboard {End} When the popup is open, moves focus to the last suggestion in the list.
+ * @keyboard {Alt + ArrowDown} Opens the suggestion popup (alternative method).
+ * @keyboard {Alt + ArrowUp} Closes the suggestion popup (alternative method).
+ * @keyboard {Enter or Space} Triggers a click action on the button (e.g., start voice input, send input, stop processing).
+ * @keyboard {ArrowDown} Moves focus to the next suggestion in the list.
+ * @keyboard {ArrowUp} Moves focus to the previous suggestion in the list.
+ * @keyboard {Home} Moves focus to the first suggestion in the list.
+ * @keyboard {End} Moves focus to the last suggestion in the list.
+ * @keyboard {Enter} Selects the focused suggestion and closes the popup.
+ * @keyboard {Escape} Closes the popup and returns focus to the input field.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/ ARIA Authoring Practices Guide
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/combobox/ ARIA Authoring Practices: Combobox Pattern
  */
-SmartBox.ariaSpec = {
-    selector: '.k-smart-box',
-    rules: [
-        { selector: '.k-smart-box .k-input-inner', attribute: 'role=combobox', usage: 'Announces the combobox role for the SmartBox input.' },
-        { selector: '.k-smart-box .k-input-inner', attribute: 'aria-label or aria-labelledby', usage: 'Provides an accessible label for the SmartBox (e.g., "AI-powered search").' },
-        { selector: '.k-smart-box .k-input-inner', attribute: 'aria-expanded', usage: 'Indicates whether the suggestion popup is currently visible.' },
-        { selector: '.k-smart-box .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates that the SmartBox has a popup listbox with suggestions.' },
-        { selector: '.k-smart-box .k-input-inner', attribute: 'aria-controls (when present)', usage: 'References the ID of the popup listbox element when the popup is open.' },
-        { selector: '.k-smart-box .k-input-inner', attribute: 'aria-autocomplete (when present)', usage: 'Indicates the autocomplete behavior of the input field.' },
-        { selector: '.k-smart-box .k-input-inner', attribute: 'aria-activedescendant (when present)', usage: 'When the popup is open and keyboard navigation is active, references the ID of the currently focused list item.' },
-        { selector: '.k-smart-box .k-input-prefix .k-icon', attribute: 'aria-hidden=true', usage: 'Decorative icons in the prefix area are hidden from screen readers.' },
-        { selector: '.k-smart-box .k-input-suffix .k-button', attribute: 'aria-label', usage: 'Suffix buttons must have accessible labels describing their function (e.g., "Start voice input", "Send prompt").' },
-        { selector: '.k-smart-box .k-smart-box-send', attribute: 'aria-label', usage: 'The send button must be labelled to indicate its current action (e.g., "Send" or "Stop processing").' },
-        { selector: '.k-smart-box .k-smart-box-send.k-disabled', attribute: 'disabled or aria-disabled=true', usage: 'Indicates the button is disabled when there is no input or processing is not active.' },
-        { selector: '.k-smart-box .k-smart-box-send.k-processing', attribute: 'aria-pressed=true', usage: 'Indicates that processing is in progress. The button changes function to stop processing.' },
-        // Live region rules (not tested in HTML specs - implemented by consuming applications):
-        // { selector: '[data-suggestions-status]', attribute: 'aria-live=polite', usage: 'Use a visually hidden live region to announce status changes.' },
-        // { selector: '[data-suggestions-status]', attribute: 'aria-atomic=true', usage: 'Determines whether the entire region is announced on updates.' },
-    ]
-};
 
 export default SmartBox;

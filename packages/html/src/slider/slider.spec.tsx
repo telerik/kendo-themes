@@ -53,29 +53,23 @@ const defaultOptions = {
 /**
  * Slider component - range input with drag handle(s).
  *
- * @accessibility
- * - Drag handle uses `role="slider"` with `aria-valuenow`, `aria-valuemin`, `aria-valuemax`
- * - Uses `tabindex="0"` on drag handle to make it focusable (removed when disabled)
- * - Must have accessible name via `aria-label`, `aria-labelledby`, or `title` on drag handle
- * - Increase/decrease buttons have `tabindex="-1"` and `title` (auxiliary controls, excluded from tab order)
- * - Vertical sliders have `aria-orientation="vertical"`
- * - Gradient sliders in 2D color pickers use `aria-orientation="undefined"` (direction indeterminate)
- * - Uses `aria-disabled="true"` on drag handle when disabled
- * - Uses `aria-readonly="true"` on drag handle when readonly
- *
- * @example
- * ```tsx
- * // Basic slider
- * <Slider value={50} min={0} max={100} aria-label="Volume" />
- *
- * // Vertical slider
- * <Slider orientation="vertical" value={75} aria-label="Brightness" />
- *
- * // 2D gradient slider (color picker canvas)
- * <Slider type="gradient" gradientType="2d" aria-label="Color selector" />
- * ```
- *
- * @wcag 4.1.2 Name, Role, Value - slider must have accessible name and value
+
+ * @aria {role="slider"} Sets the proper role for Slider.
+ * @aria {aria-label|aria-labelledby|title} The Slider needs an accessible name to be assigned to it.
+ * @aria {aria-invalid="true"} Rendered only when the Slider is in a form and announces the invalid state.
+ * @aria {aria-valuenow} Specifies the currently selected value in the Slider.
+ * @aria {aria-valuemin} Specifies the minimum available value in the Slider.
+ * @aria {aria-valuemax} Specifies the maximum available value in the Slider.
+ * @aria {aria-valuetext} Specifies a human-readable text alternative to the numeric value. Provided by consuming applications.
+ * @aria {tabindex="0"} The element must be focusable. Disabled sliders are removed from tab order.
+ * @aria {aria-orientation="vertical"} Present only when slider is vertical.
+ * @aria {aria-disabled="true"} Rendered only when the Slider is disabled.
+ * @aria {aria-readonly="true"} Rendered only when the Slider is readonly. Readonly sliders remain focusable but their value cannot be changed.
+ * @aria {tabindex="-1"} Excludes the buttons from the natural tab order. Keyboard users use arrow keys on the drag handle.
+ * @aria {title} Provides a tooltip describing the button action (e.g., "Decrease" or "Increase").
+ * @aria {aria-hidden="true"} Hides the tick list from assistive technologies. Tick values are redundant with the drag handle value attributes.
+ * @aria {role="presentation"} Removes semantic meaning from individual tick elements. Ticks are visual-only markers.
+ * @aria {title} Represents the value associated with the respective tick.
  */
 
 export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.HTMLAttributes<HTMLDivElement>> = (
@@ -215,28 +209,16 @@ Slider.moduleName = SLIDER_MODULE_NAME;
 Slider.folderName = SLIDER_FOLDER_NAME;
 
 /**
- * Accessibility specification for Slider.
+ * @keyboard {ArrowDown or ArrowLeft} Decreases value by small step.
+ * @keyboard {ArrowUp or ArrowRight} Increases value by small step.
+ * @keyboard {Home} Sets value to the Min value.
+ * @keyboard {End} Sets value to the Max value.
+ * @keyboard {PageUp} Increases value by large step.
+ * @keyboard {PageDown} Decreases value by large step.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#slider WAI-ARIA specification for slider
+
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html WCAG 4.1.2 Name, Role, Value — slider must have accessible name and value
  */
-Slider.ariaSpec = {
-    selector: '.k-slider',
-    rules: [
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'role=slider', usage: 'Sets the proper role for Slider.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-label or aria-labelledby or title', usage: 'The Slider needs an accessible name to be assigned to it.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered only when the Slider is in a form and announces the invalid state.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-valuenow', usage: 'Specifies the currently selected value in the Slider.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-valuemin', usage: 'Specifies the minimum available value in the Slider.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-valuemax', usage: 'Specifies the maximum available value in the Slider.' },
-        { selector: '.k-slider .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-valuetext (when has text alternative)', usage: 'Specifies a human-readable text alternative to the numeric value. Provided by consuming applications.' },
-        { selector: '.k-slider:not(.k-disabled) .k-draghandle:not(.k-hsv-draghandle)', attribute: 'tabindex=0', usage: 'The element must be focusable. Disabled sliders are removed from tab order.' },
-        { selector: '.k-slider-vertical .k-draghandle', attribute: 'aria-orientation=vertical (when vertical)', usage: 'Present only when slider is vertical.' },
-        { selector: '.k-slider.k-disabled .k-draghandle:not(.k-hsv-draghandle)', attribute: 'aria-disabled=true', usage: 'Rendered only when the Slider is disabled.' },
-        { selector: '.k-slider.k-readonly .k-draghandle', attribute: 'aria-readonly=true (when readonly)', usage: 'Rendered only when the Slider is readonly. Readonly sliders remain focusable but their value cannot be changed.' },
-        { selector: '.k-slider .k-button', attribute: 'tabindex=-1', usage: 'Excludes the buttons from the natural tab order. Keyboard users use arrow keys on the drag handle.' },
-        { selector: '.k-slider .k-button', attribute: 'title', usage: 'Provides a tooltip describing the button action (e.g., "Decrease" or "Increase").' },
-        { selector: '.k-slider .k-slider-items', attribute: 'aria-hidden=true', usage: 'Hides the tick list from assistive technologies. Tick values are redundant with the drag handle value attributes.' },
-        { selector: '.k-slider .k-tick', attribute: 'role=presentation', usage: 'Removes semantic meaning from individual tick elements. Ticks are visual-only markers.' },
-        { selector: '.k-slider .k-tick', attribute: 'title', usage: 'Represents the value associated with the respective tick.' },
-    ]
-};
 
 export default Slider;

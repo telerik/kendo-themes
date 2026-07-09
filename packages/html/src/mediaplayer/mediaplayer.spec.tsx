@@ -21,6 +21,14 @@ const defaultOptions = {
     title: "Media player title",
 };
 
+/**
+ * @aria {aria-label} Specifies label for the play/pause button.
+ * @aria {aria-pressed} Specifies whether play is active or not.
+ * @aria {aria-label} Specifies label for the mute button.
+ * @aria {aria-pressed} Specifies whether mute is active or not.
+ * @aria {aria-label} Specifies label for the full screen button.
+ * @aria {aria-pressed} Specifies whether full screen is active or not.
+ */
 export const MediaPlayer: KendoComponent<KendoMediaPlayerProps & KendoMediaPlayerState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMediaPlayerProps &
         KendoMediaPlayerState &
@@ -60,19 +68,16 @@ MediaPlayer.moduleName = MEDIAPLAYER_MODULE_NAME;
 MediaPlayer.folderName = MEDIAPLAYER_FOLDER_NAME;
 
 /**
- * @see Toolbar ariaSpec for the media player toolbar
- * @see Slider ariaSpec for the seekbar and volume sliders
+ * @keyboard {ArrowRight} Seek forward.
+ * @keyboard {ArrowLeft} Seek backward.
+ * @keyboard {ArrowUp} Increase the volume.
+ * @keyboard {ArrowDown} Decrease the volume.
+ * @keyboard {Control + 1} Decrease the video quality.
+ * @keyboard {Control + 2} Increase the video quality.
+ * @keyboard {F} Open and close the full screen.
+ * @keyboard {M} Mute and Unmute the sound.
+ * @keyboard {Space} Play and Pause the video.
+ * @keyboard {Escape} Close the full screen.
  */
-MediaPlayer.ariaSpec = {
-    selector: '.k-mediaplayer',
-    rules: [
-        { selector: '.k-play-button', attribute: 'aria-label', usage: 'Specifies label for the play/pause button.' },
-        { selector: '.k-play-button', attribute: 'aria-pressed', usage: 'Specifies whether play is active or not.' },
-        { selector: '.k-volume-button', attribute: 'aria-label', usage: 'Specifies label for the mute button.' },
-        { selector: '.k-volume-button', attribute: 'aria-pressed', usage: 'Specifies whether mute is active or not.' },
-        { selector: '.k-fullscreen-button', attribute: 'aria-label', usage: 'Specifies label for the full screen button.' },
-        { selector: '.k-fullscreen-button', attribute: 'aria-pressed', usage: 'Specifies whether full screen is active or not.' },
-    ]
-};
 
 export default MediaPlayer;

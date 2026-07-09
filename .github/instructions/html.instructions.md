@@ -151,15 +151,46 @@ npm start               # Start dev server
 
 ## Accessibility
 
-All components must be WCAG 2.2 Level AA compliant. ARIA attributes are applied directly in `.spec.tsx` and `templates/*.tsx` files.
+All components must be WCAG 2.2 Level AA compliant. Accessibility is documented via structured JSDoc annotations in each `.spec.tsx` file.
 
-For applying ARIA to a component, use the `/accessibility` prompt — it contains the full workflow, rules, and patterns.
+### Annotation conventions
 
-Quick reference:
-- ARIA specs are defined as `ariaSpec.rules` on each component's `.spec.tsx` (single source of truth)
-- Edit only `.spec.tsx` and `templates/*.tsx` (avoid `tests/` unless needed for coverage)
-- Validate: `npm run test:a11y [component]`
-- Completed components with `ariaSpec` serve as reference for new work
+**Component JSDoc block** (before `export const X: KendoComponent`):
+```tsx
+/**
+ * @aria {role="combobox"} Announces the input as a combobox widget.
+ * @aria {aria-expanded="true"|"false"} Announces popup visibility state.
+ * @aria {aria-label|aria-labelledby} Required accessible name.
+ * @ux {Popup} Opens on focus or when the user types.
+ */
+export const Autocomplete: KendoComponent<...>
+```
+
+**Bottom JSDoc block** (before `export default`):
+```tsx
+/**
+ * @keyboard {Alt + ArrowDown} Opens the suggestion popup.
+ * @keyboard {Escape} Closes the popup.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/combobox/ WAI-ARIA Combobox Pattern
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html WCAG 4.1.2 Name, Role, Value — combobox must have accessible name
+ */
+
+export default Autocomplete;
+```
+
+### Tag summary
+
+| Tag | Location | Format |
+|-----|----------|--------|
+| `@aria` | Component block | `@aria {attribute="value"} Description` |
+| `@ux` | Component block | `@ux {Feature name} Description` |
+| `@keyboard` | Bottom block | `@keyboard {Trigger} Description` |
+| `@see` | Bottom block | `@see https://url Display text` |
+
+- The `@aria` annotations are read by `npm run docs` to generate the **ARIA Attributes** section in `docs/[component].md`
+- WCAG validation: `npm run test:a11y [component]` (axe-core in JSDOM, target: 0 violations)
+- Full workflow: use the `/accessibility` prompt or the `manage-html-a11y` skill
 
 ## Related Documentation
 

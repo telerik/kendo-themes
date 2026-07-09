@@ -61,23 +61,34 @@ export type KendoDropdownGridProps = KendoDropdownGridOptions & {
     adaptiveSubtitle?: string;
     /**
      * Unique identifier for the dropdowngrid. Used to generate related IDs.
-     * @aria Controls aria-controls references
      */
     id?: string;
     /**
      * Autocomplete behavior: 'list', 'both', or 'inline'.
-     * @aria aria-autocomplete - Indicates autocomplete type
      */
     ariaAutocomplete?: 'list' | 'both' | 'inline' | 'none';
     /**
      * ID of the currently focused/active item in the table list.
-     * @aria aria-activedescendant - Points to focused item when popup is open
      */
     activeDescendant?: string;
 };
 
 export type KendoDropdownGridState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="combobox"} Identifies the input as a combobox.
+ * @aria {aria-haspopup="listbox"} Indicates the combobox has a listbox popup.
+ * @aria {aria-expanded} Indicates whether the popup is open.
+ * @aria {aria-label} Accessible name for the combobox.
+ * @aria {aria-label} Accessible name for the dropdown button.
+ * @aria {tabindex="-1"} Dropdown button is not in the tab order.
+ * @aria {role="listbox"} Table list has listbox role.
+ * @aria {aria-label|aria-labelledby} Table listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.
+ * @aria {role="option"} Each table row is an option.
+ * @aria {id} Referenced by aria-controls on the input.
+ * @aria {aria-autocomplete} Indicates autocomplete type
+ * @aria {aria-activedescendant} Points to focused item when popup is open
+ */
 export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdownGridState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDropdownGridProps &
         KendoDropdownGridState &
@@ -114,7 +125,6 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
     } = props;
 
     const tableListId = id ? `${id}-table-list` : undefined;
-
 
     return (
         <>
@@ -279,20 +289,12 @@ DropdownGrid.moduleName = DROPDOWNGRID_MODULE_NAME;
 DropdownGrid.folderName = DROPDOWNGRID_FOLDER_NAME;
 
 /**
- * @see ActionSheet ariaSpec for adaptive mode
+ * @keyboard {ArrowDown} Selects the next available item.
+ * @keyboard {ArrowUp} Selects the previous available item.
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens pop up
+ * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} Closes popup
+ * @keyboard {Escape} Clears the value if popup is not visible
+ * @keyboard {Tab} Closes the actionsheet and focuses the next focusable element.
  */
-DropdownGrid.ariaSpec = {
-    rules: [
-        { selector: '.k-combobox .k-input-inner', attribute: 'role=combobox', usage: 'Identifies the input as a combobox.' },
-        { selector: '.k-combobox .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the combobox has a listbox popup.' },
-        { selector: '.k-combobox .k-input-inner', attribute: 'aria-expanded', usage: 'Indicates whether the popup is open.' },
-        { selector: '.k-combobox .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the combobox.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
-        { selector: '.k-combobox .k-input-button', attribute: 'tabindex=-1', usage: 'Dropdown button is not in the tab order.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list', attribute: 'role=listbox', usage: 'Table list has listbox role.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Table listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-dropdowngrid-popup .k-table-list .k-table-row', attribute: 'role=option', usage: 'Each table row is an option.' },
-    ]
-};
 
 export default DropdownGrid;

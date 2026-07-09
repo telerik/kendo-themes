@@ -1,4 +1,4 @@
-import { TaskBoardPane } from './taskboard-pane';
+import { TaskBoardPane } from './taskboard-pane.spec';
 import { TaskBoardToolbar } from './taskboard-toolbar';
 import { Button } from '../button';
 import { FormNormal, FormField } from '../form';
@@ -39,6 +39,11 @@ const defaultOptions = {
 
 export type KendoTaskBoardState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="application"} The TaskBoard has role=application as its inner navigation requires the use of arrows.
+ * @aria {role="form"} The edit Form needs the appropriate role.
+ * @aria {aria-labelledby} The TaskBoard edit form must be labeled by the header text of the pane.
+ */
 export const TaskBoard: KendoComponent<KendoTaskBoardProps & KendoTaskBoardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTaskBoardProps & KendoTaskBoardState & React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -105,52 +110,26 @@ TaskBoard.moduleName = TASKBOARD_MODULE_NAME;
 TaskBoard.folderName = TASKBOARD_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * TaskBoard is a composite component with columns (lists), cards (list items),
- * action buttons, and an edit pane with a form.
+ * @keyboard {Tab} Navigates through the TaskBoard tab stops - the ToolBar, each Column, column action buttons, each Card, popup items, and pane fields/buttons.
+ * @keyboard {ArrowLeft} Focuses the previous column or a card in the previous column.
+ * @keyboard {ArrowRight} Focuses the next column or a card in the next column.
+ * @keyboard {ArrowUp} Focuses the previous card.
+ * @keyboard {ArrowDown} Focuses the next card.
+ * @keyboard {Enter} Selects the focused card.
+ * @keyboard {Delete} Deletes the currently focused item. When focus is on a card, deletes the card. When focus is on a column, deletes the column. If delete confirmation is enabled, opens a confirmation dialog instead of deleting immediately.
+ * @keyboard {Control + E} Puts the focused card or column in edit mode.
+ * @keyboard {Control + A} Creates a new card or column. Creating a card is blocked when the target column has reached its WIP limit.
+ * @keyboard {Enter or Space} Activates the focused popup action.
+ * @keyboard {ArrowUp} Moves focus to the previous popup item.
+ * @keyboard {ArrowDown} Moves focus to the next popup item.
+ * @keyboard {Escape} Closes the popup and returns focus to the actions button.
+ * @keyboard {Enter} When focus is in the title field, saves the current changes.
+ * @keyboard {Control + Enter} When focus is in the description field, saves the current changes.
+ * @keyboard {Escape} Closes the pane and returns focus to the element that opened it.
+ * @keyboard {Tab} Moves focus to the next field or action in the pane.
+ * @keyboard {Shift + Tab} Moves focus to the previous field or action in the pane.
  *
- * - Root: role="application" (uses arrow key navigation)
- * - Columns: role="list", tabindex=0, aria-labelledby
- * - Cards: role="listitem", tabindex=0
- * - Column action buttons: icon-only, need aria-label or title
- * - Card menu button: icon-only, needs aria-label or title
- * - Pane close button: icon-only, needs aria-label or title
- * - Edit form: role="form", aria-labelledby pane header
+ * @see https://www.w3.org/TR/wai-aria-1.2/#listt WAI-ARIA spec: Role List
  */
-TaskBoard.ariaSpec = {
-    selector: '.k-taskboard',
-    rules: [
-        // TaskBoard root
-        { selector: '.k-taskboard', attribute: 'role=application', usage: 'The TaskBoard has role=application as its inner navigation requires the use of arrows.' },
-
-        // Columns
-        { selector: '.k-taskboard-column-cards-container', attribute: 'role=list', usage: 'The TaskBoard Column cards container is a collection of list items.' },
-        { selector: '.k-taskboard-column-cards-container', attribute: 'tabindex=0', usage: 'The TaskBoard Column cards container must be focusable.' },
-        { selector: '.k-taskboard-column-cards-container', attribute: 'aria-labelledby', usage: 'The TaskBoard Column cards container must be labelled by its column header.' },
-
-        // Column action buttons
-        { selector: '.k-taskboard-column-header-actions > .k-button', attribute: 'role=button or nodeName=button', usage: 'The TaskBoard Column actions are buttons.' },
-        { selector: '.k-taskboard-column-header-actions > .k-button', attribute: 'aria-label or title', usage: 'Each action must have an accessible name as they are represented by icons.' },
-
-        // Column intermediate container
-        { selector: '.k-taskboard-column-cards', attribute: 'role=presentation', usage: 'The cards inner container must not break the list-listitem relationship.' },
-
-        // Cards
-        { selector: '.k-taskboard-card', attribute: 'role=listitem', usage: 'The TaskBoard Tasks (cards) are list items.' },
-        { selector: '.k-taskboard-card', attribute: 'tabindex=0', usage: 'The TaskBoard Card must be focusable.' },
-
-        // Card menu button
-        { selector: '.k-taskboard-card-menu-button', attribute: 'role=button or nodeName=button', usage: 'The TaskBoard card menu element must be a button.' },
-        { selector: '.k-taskboard-card-menu-button', attribute: 'aria-label or title', usage: 'The menu button must have an accessible name as it is represented by an icon.' },
-
-        // Pane close button
-        { selector: '.k-taskboard-pane-header-actions > .k-button', attribute: 'role=button or nodeName=button', usage: 'The TaskBoard edit form close element must be a button.' },
-        { selector: '.k-taskboard-pane-header-actions > .k-button', attribute: 'aria-label or title', usage: 'The edit form close button must have an accessible name.' },
-
-        // Edit form
-        { selector: '.k-taskboard-edit-pane .k-form', attribute: 'role=form', usage: 'The edit Form needs the appropriate role.' },
-        { selector: '.k-taskboard-edit-pane .k-form', attribute: 'aria-labelledby', usage: 'The TaskBoard edit form must be labeled by the header text of the pane.' },
-    ]
-};
 
 export default TaskBoard;

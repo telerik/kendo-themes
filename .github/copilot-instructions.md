@@ -180,8 +180,7 @@ ARIA specifications are defined as `ariaSpec.rules` on TSX spec components (sing
 Use the `/accessibility` prompt for the full workflow and rules. Key commands:
 
 ```bash
-npm run test:a11y [component]           # Validate ARIA + WCAG (recommended)
-npm run test:a11y:affected              # Test only git-changed components
+npm run test:a11y [component]           # Validate WCAG compliance (axe-core, no browser needed)
 npm run test:contrast                   # Validate color contrast ratios
 ```
 

@@ -48,12 +48,10 @@ const defaultOptions = {
 /**
  * SvgIcon component - renders decorative SVG-based icons.
  *
- * @accessibility
- * - Always renders `aria-hidden="true"` as icons are decorative
- * - Inner SVG also has `aria-hidden` and `focusable="false"`
- * - Screen readers will skip this element entirely
+ * @aria {aria-hidden="true"} The SVG icon is decorative; hidden from assistive technologies.
+ * @aria {focusable="false"} Prevents the SVG from receiving focus in IE/Edge.
  *
- * @wcag 1.1.1 Non-text Content - decorative images hidden from AT
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html WCAG 1.1.1 Non — text Content - decorative images hidden from AT
  */
 export const SvgIcon = (
     props: SvgIconProps & React.HTMLAttributes<HTMLOrSVGElement>

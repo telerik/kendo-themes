@@ -36,7 +36,6 @@ export const AnimationContainer: KendoComponent<KendoAnimationContainerProps & R
         ...other
     } = props;
 
-
     return (
         <div
             {...other}
