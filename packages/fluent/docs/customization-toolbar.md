@@ -378,6 +378,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-floating-toolbar-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-floating-toolbar-border-radius, #{k-border-radius(md)} )</code></td>
+    <td><code>var(--kendo-floating-toolbar-border-radius, var(--kendo-border-radius-md))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the floating Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-toolbar-sizes</td>
     <td>Map</td>
     <td><code>(
