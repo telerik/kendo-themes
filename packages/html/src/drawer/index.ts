@@ -4,7 +4,7 @@ export * from './drawer-container.spec';
 export * from './drawer-overlay.spec';
 export * from './drawer-content.spec';
 export * from './drawer-item.spec';
-export * from './drawer-item-separator';
+export * from './drawer-item-separator.spec';
 
 export * from './templates/drawer-normal';
 export * from './templates/drawer-mini';

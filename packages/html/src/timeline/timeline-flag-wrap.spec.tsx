@@ -19,6 +19,10 @@ const defaultOptions = {
     year: "2020",
 };
 
+/**
+ * @aria {role="none"} The flag-wrap items have semantics removed.
+ * @aria {aria-hidden="true"} Flag-wrap items are hidden from the accessibility tree.
+ */
 export const TimelineFlagWrap: KendoComponent<KendoFlagWrapProps & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoFlagWrapProps &
         React.HTMLAttributes<HTMLLIElement>

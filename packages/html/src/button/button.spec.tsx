@@ -51,13 +51,11 @@ export type KendoButtonProps = KendoButtonOptions & {
   arrowIconName?: string;
   /**
    * When true, the button acts as a toggle button with aria-pressed attribute.
-   * @aria aria-pressed="true"|"false" based on selected state
    */
   togglable?: boolean;
   /**
    * When true, the button is visually disabled and announced as disabled to AT,
    * but remains focusable (no native `disabled` attribute).
-   * @aria aria-disabled="true" and k-disabled class without native disabled
    */
   ariaDisabled?: boolean;
 };
@@ -72,21 +70,12 @@ const defaultOptions = {
 /**
  * Button component - interactive button element.
  *
- * @accessibility
- * - Uses semantic `<button>` element (role="button" is implicit)
- * - Icon-only buttons MUST have `aria-label` prop for accessible name
- * - Disabled state uses native `disabled` attribute
- *
- * @example
- * ```tsx
- * // Text button - accessible name from content
- * <Button>Save</Button>
- *
- * // Icon-only button - requires aria-label
- * <Button icon="close" aria-label="Close dialog" />
- * ```
- *
- * @wcag 4.1.2 Name, Role, Value - button must have accessible name
+
+ * @aria {role="button"} The button role is implicit from the native <button> element.
+ * @aria {aria-label} Required for icon-only buttons that have no visible text.
+ * @aria {disabled} Rendered when the button is disabled.
+ * @aria {aria-pressed="true"|"false"} Indicates the pressed state; "true" when selected, "false" otherwise.
+ * @aria {aria-disabled="true"} Announces as disabled to AT while keeping it in the tab sequence.
  */
 export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoButtonProps &
@@ -186,16 +175,9 @@ Button.moduleName = BUTTON_MODULE_NAME;
 Button.folderName = BUTTON_FOLDER_NAME;
 
 /**
- * Accessibility specification for Button.
+ * @keyboard {Enter or Space} Triggers a click action on the Button.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/button/ WAI-ARIA Authoring Practices: Button Pattern
  */
-Button.ariaSpec = {
-    selector: '.k-button',
-    rules: [
-        { selector: '.k-button', attribute: 'role=button or nodeName=button', usage: 'The button role is implicit from the native <button> element.' },
-        { selector: '.k-button', attribute: 'aria-label (when icon-only)', usage: 'Required for icon-only buttons that have no visible text.' },
-        { selector: '.k-button', attribute: 'aria-pressed (when togglable)', usage: 'Indicates the pressed state of a toggle button.' },
-        { selector: '.k-button', attribute: 'disabled (when disabled)', usage: 'Rendered when the button is disabled.' },
-    ]
-};
 
 export default Button;

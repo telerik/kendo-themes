@@ -21,7 +21,6 @@ export const pickerOptions = {
     fillMode: [ FillMode.undefined, FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-
 export type PickerState = { [K in (typeof pickerStates)[number]]?: boolean };
 
 export type PickerOptions = {

@@ -7,20 +7,22 @@ const states = [];
 const defaultOptions = {};
 
 export type KendoTimelineCardProps = KendoCardProps & {
-    /** @aria role for the card element (button for vertical, tabpanel for horizontal) */
     ariaRole?: string;
-    /** @aria aria-describedby pointing to the date element */
     ariaDescribedBy?: string;
-    /** @aria aria-live region for vertical cards */
     ariaLive?: 'polite' | 'off';
-    /** @aria aria-expanded for collapsible vertical cards */
     ariaExpanded?: boolean;
-    /** @aria aria-label for horizontal tabpanel */
     ariaLabel?: string;
-    /** @aria tab index for focusable cards */
     cardTabIndex?: number;
 };
 
+/**
+ * @aria {role} for the card element (button for vertical, tabpanel for horizontal)
+ * @aria {aria-describedby} pointing to the date element
+ * @aria {aria-live} region for vertical cards
+ * @aria {aria-expanded} for collapsible vertical cards
+ * @aria {aria-label} for horizontal tabpanel
+ * @aria {tabindex} Tab index for focusable cards.
+ */
 export const TimelineCard = (
     props:
     KendoTimelineCardProps &

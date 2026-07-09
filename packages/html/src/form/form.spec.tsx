@@ -96,5 +96,12 @@ Form.defaultOptions = defaultOptions;
 Form.moduleName = FORM_MODULE_NAME;
 Form.folderName = FORM_FOLDER_NAME;
 
+/**
+ * @keyboard {Shift + Tab} Moves focus to the previous focusable element.
+ * @keyboard {Tab} Moves focus to the next focusable element.
+ * @keyboard {Space} Triggers the default action of the focused element for the Space key.
+ * @keyboard {Enter} Triggers the default action of the focused element for the Enter key.
+ */
+
 export default Form;
 

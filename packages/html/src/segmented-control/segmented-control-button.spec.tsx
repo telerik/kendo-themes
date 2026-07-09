@@ -27,6 +27,11 @@ export type KendoSegmentedControlButtonState = { [K in (typeof states)[number]]?
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="button"} Each button must have the appropriate button role.
+ * @aria {aria-pressed="true"} Only the selected button within the group will have this attribute set to true.
+ * @aria {aria-disabled="true"} Indicates that the button is disabled and cannot be interacted with.
+ */
 export const SegmentedControlButton: KendoComponent<KendoSegmentedControlButtonProps & KendoSegmentedControlButtonState & Omit<React.HTMLAttributes<HTMLButtonElement>, 'children'>> = (
     props: KendoSegmentedControlButtonProps &
         KendoSegmentedControlButtonState &

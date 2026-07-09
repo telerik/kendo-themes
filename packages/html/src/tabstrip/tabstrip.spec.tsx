@@ -1,9 +1,8 @@
 import { Icon } from '../icon';
 import { MenuButton } from '../menu-button';
 import { classNames, FillMode, optionClassNames, Size } from '../misc';
-import TabStripItems from './tabstrip-items';
+import TabStripItems from './tabstrip-items.spec';
 import TabStripItemsWrapper from './tabstrip-items-wrapper';
-
 import { KendoComponent } from '../_types/component';
 import { TABSTRIP_FOLDER_NAME, TABSTRIP_MODULE_NAME } from './constants';
 export const TABSTRIP_CLASSNAME = `k-tabstrip`;
@@ -22,7 +21,6 @@ export type KendoTabStripProps = KendoTabStripOptions & {
     position?: "top" | "bottom" | "left" | "right";
     tabAlignment?: "start" | "center" | "end" | "justify" | "stretched";
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
-    /** @aria Optional id applied to the TabStripItems (ul) element for aria-controls references. */
     tabStripItemsId?: string;
     scrollable?: boolean;
     scrollButtons?: "around" | "start" | "end" | "hidden";
@@ -37,6 +35,10 @@ const defaultOptions = {
     scrollButtons: "around"
 };
 
+/**
+ * @aria {aria-hidden="true"} Scroll buttons are hidden from assistive technologies.
+ * @aria {id} Optional; applied to the TabStripItems element, referenced by tab aria-controls.
+ */
 export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTabStripProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -181,27 +183,17 @@ TabStrip.moduleName = TABSTRIP_MODULE_NAME;
 TabStrip.folderName = TABSTRIP_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * TabStrip implements the WAI-ARIA tabs pattern.
+ * @keyboard {ArrowUp or ArrowDown} Activates the previous/next tab (vertical orientation). Navigation wraps — when end is reached the first tab is focused, when start is reached the last tab is focused.
+ * @keyboard {ArrowLeft or ArrowRight} Activates the previous/next tab (horizontal orientation). Navigation wraps — when end is reached the first tab is focused, when start is reached the last tab is focused.
+ * @keyboard {Tab} Moves focus to the content of the active tab. Roving tabindex — only the active tab has tabindex=0, remaining tabs have tabindex=-1.
+ * @keyboard {Shift + Tab} Moves focus back to the active tab from the panel.
+ * @keyboard {Enter} Activates the focused tab (when automatic selection is disabled).
+ * @keyboard {Home} Moves focus to and activates the first tab.
+ * @keyboard {End} Moves focus to and activates the last tab.
+ * @keyboard {Delete or Backspace} Removes the focused tab from the tab list.
  *
- * - TabList: role="tablist", aria-orientation="vertical" for left/right position
- * - Tab items: role="tab", aria-selected="true" for active tab
- * - Tab content: role="tabpanel"
- * - Scroll buttons: aria-hidden="true"
+ * @see https://www.w3.org/TR/wai-aria-1.2/#tablist WAI-ARIA specification for tablist
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/tabs/tabs-automatic.html WAI-ARIA practices: TabList example
  */
-TabStrip.ariaSpec = {
-    selector: '.k-tabstrip',
-    rules: [
-        { selector: '.k-tabstrip-items', attribute: 'role=tablist', usage: 'Indicates the tablist role for the ul element.' },
-        { selector: '.k-tabstrip.k-tabstrip-left .k-tabstrip-items,.k-tabstrip.k-tabstrip-right .k-tabstrip-items', attribute: 'aria-orientation=vertical', usage: 'Indicates the orientation when vertical.' },
-        { selector: '.k-tabstrip-item', attribute: 'role=tab', usage: 'The tab li element.' },
-        { selector: '.k-tabstrip .k-tabstrip-item.k-active', attribute: 'aria-selected=true', usage: 'Announces the selected state of the tab.' },
-        { selector: '.k-tabstrip-content', attribute: 'role=tabpanel', usage: 'The content div of the tab.' },
-        { selector: '.k-tabstrip .k-tabstrip-item.k-active', attribute: 'aria-controls (when present)', usage: 'Announces the relation between the panel and active tab. Only present when tab controls a specific panel.' },
-        { selector: '.k-tabstrip-content', attribute: 'aria-hidden=true (when not active)', usage: 'Only if the component implements a feature to control whether the content should be persisted.' },
-        { selector: '.k-tabstrip-content', attribute: 'aria-labelledby (when present)', usage: 'Refers to the tab element that controls the panel. Only present when panel has an associated tab.' },
-        { selector: '.k-tabstrip-scrollable .k-button', attribute: 'aria-hidden=true', usage: 'Scroll buttons are hidden from assistive technologies.' },
-    ]
-};
 
 export default TabStrip;

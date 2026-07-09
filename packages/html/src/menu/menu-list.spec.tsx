@@ -17,6 +17,10 @@ export type KendoMenuListOptions = {
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="menu"} The role of the nested menu displayed in a popup.
+ * @aria {id} Each nested menu has a deterministic id linked to the parent aria-controls.
+ */
 export const MenuList: KendoComponent<KendoMenuListOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuListOptions &
         React.HTMLAttributes<HTMLUListElement>

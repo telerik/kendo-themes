@@ -24,7 +24,6 @@ export type KendoActionSheetProps = {
     side?: 'top' | 'right' | 'bottom' | 'left';
     /**
      * Unique identifier for the ActionSheet. Used for aria-labelledby.
-     * @aria aria-labelledby references ${id}-title
      */
     id?: string;
 }
@@ -36,6 +35,13 @@ const defaultOptions = {
     overlay: true
 };
 
+/**
+ * @aria {role="dialog"} Announces the dialog role of the component.
+ * @aria {aria-hidden="true"|\"false"} Announces the hidden state of the ActionSheet container.
+ * @aria {aria-modal="true"} Announces that the action sheet is modal.
+ * @aria {id} Used to associate the title with the action sheet wrapper element.
+ * @aria {aria-labelledby} references ${id}-title
+ */
 export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoActionSheetProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -100,25 +106,12 @@ ActionSheet.moduleName = ACTION_SHEET_MODULE_NAME;
 ActionSheet.folderName = ACTION_SHEET_FOLDER_NAME;
 
 /**
- * Accessibility specification for ActionSheet.
+ * @keyboard {Escape} Dismisses the ActionSheet.
+ * @keyboard {Tab} Moves focus to the next focusable item.
+ * @keyboard {Shift + Tab} Moves focus to the previous focusable item.
+ * @keyboard {Enter} Triggers the action associated with the currently focused item.
  *
- * @accessibility
- * - Has role="dialog" with aria-modal="true" when overlay is enabled
- * - aria-labelledby references the title element
- * - Content is arbitrary; components using ActionSheet in adaptive mode
- *   are responsible for their internal content's ARIA attributes
- *
- * @wcag 4.1.2 Name, Role, Value - dialog pattern with labeled title
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/ ARIA practices Modal Dialog Example
  */
-ActionSheet.ariaSpec = {
-    selector: '.k-actionsheet',
-    rules: [
-        { selector: '.k-actionsheet', attribute: 'role=dialog', usage: 'Announces the dialog role of the component.' },
-        { selector: '.k-actionsheet', attribute: 'aria-labelledby (when has title)', usage: 'Associates the title of the action sheet.' },
-        { selector: '.k-actionsheet', attribute: 'aria-hidden=true/false (when hidden)', usage: 'Announces the hidden state of the ActionSheet container.' },
-        { selector: '.k-actionsheet', attribute: 'aria-modal=true (when modal)', usage: 'Announces that the action sheet is modal.' },
-        { selector: '.k-actionsheet .k-actionsheet-title', attribute: 'id', usage: 'Used to associate the title with the action sheet wrapper element.' },
-    ]
-};
 
 export default ActionSheet;

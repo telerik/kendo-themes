@@ -11,6 +11,17 @@ const options = {};
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="menu"} The context menu implements the menu role.
+ * @aria {role="menuitem"} Announces the Menu item role.
+ * @aria {aria-haspopup="menu"} Indicates a popup menu is associated with the item.
+ * @aria {aria-expanded="true"|\"false"} Indicates whether the submenu is expanded.
+ * @aria {aria-disabled="true"} Informs assistive technologies that a Menu item is disabled.
+ * @aria {aria-hidden="true"} Expand arrow elements are hidden from assistive technologies.
+ * @aria {tabindex="0"} The focused item has tabindex 0.
+ * @aria {aria-controls="ul.k-menu-group id"} Points to the ID of the submenu.
+ * @aria {id} Each nested menu has an id linked to parent aria-controls.
+ */
 export const ContextMenu: KendoComponent<KendoMenuListOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuListOptions &
         React.HTMLAttributes<HTMLUListElement>
@@ -42,25 +53,19 @@ ContextMenu.moduleName = CONTEXT_MENU_MODULE_NAME;
 ContextMenu.folderName = CONTEXT_MENU_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * ContextMenu implements the WAI-ARIA menu pattern.
+ * @keyboard {Shift + F10} When applied to a target, the command opens the ContextMenu.
+ * @keyboard {ArrowUp} Focuses the previous item.
+ * @keyboard {ArrowDown} Focuses the next item.
+ * @keyboard {ArrowLeft} (For root items) opens the item and focuses the last child.; (For child items) closes and focuses the parent.
+ * @keyboard {ArrowRight} If the item has children, opens the item and focuses the first child. For child items without children, focuses and opens the next root item.
+ * @keyboard {Escape} Closes the ContextMenu and returns the focus to the target.
+ * @keyboard {Home} Focuses the first item.
+ * @keyboard {End} Focuses the last item.
+ * @keyboard {Enter} Selects the focused item. If the item has children, opens the item and focuses the first child. If the item does not have children and has a URL, navigates to the specified URL.
+ * @keyboard {Space} Selects the focused item. If the item has children, opens the item and focuses the first child. If the item does not have children and has a URL, navigates to the specified URL.
+ * @keyboard {Alphanumeric character} Focuses the next item with text starting with the character.
  *
- * - Uses role="menu" on the root element
- * - Items use role="menuitem" (inherited from MenuListItem)
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/menu/ ARIA patterns Menu
  */
-ContextMenu.ariaSpec = {
-    selector: '.k-context-menu',
-    rules: [
-        { selector: '.k-context-menu', attribute: 'role=menu', usage: 'The context menu implements the menu role.' },
-        { selector: '.k-menu-item', attribute: 'role=menuitem', usage: 'Announces the Menu item role.' },
-        { selector: '.k-menu-item', attribute: 'aria-haspopup=menu (when present)', usage: 'Indicates a popup menu is associated with the item.' },
-        { selector: '.k-menu-item', attribute: 'aria-expanded=true/false (when present)', usage: 'Indicates whether the submenu is expanded.' },
-        { selector: '.k-menu-item.k-disabled', attribute: 'aria-disabled=true', usage: 'Informs assistive technologies that a Menu item is disabled.' },
-        { selector: '.k-menu-expand-arrow', attribute: 'aria-hidden=true', usage: 'Expand arrow elements are hidden from assistive technologies.' },
-        { selector: '.k-menu-item.k-focus', attribute: 'tabindex=0', usage: 'The focused item has tabindex 0.' },
-        { selector: '.k-menu-item', attribute: 'aria-controls=ul.k-menu-group id (when present)', usage: 'Points to the ID of the submenu.' },
-        { selector: '.k-menu-popup .k-menu-group', attribute: 'id', usage: 'Each nested menu has an id linked to parent aria-controls.' },
-    ]
-};
 
 export default ContextMenu;

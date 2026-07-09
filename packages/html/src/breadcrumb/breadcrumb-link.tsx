@@ -12,12 +12,14 @@ export type KendoBreadcrumbLinkProps = {
     root?: boolean;
     icon?: boolean;
     icontext?: boolean;
-    /** @aria Last item in breadcrumb gets aria-current="page" and aria-disabled="true" */
     last?: boolean;
 };
 
 export type KendoBreadcrumbLinkState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {aria-current="page"} Applied to the last breadcrumb item; also adds aria-disabled="true".
+ */
 export const BreadcrumbLink = (
     props: KendoBreadcrumbLinkProps &
     KendoBreadcrumbLinkState &

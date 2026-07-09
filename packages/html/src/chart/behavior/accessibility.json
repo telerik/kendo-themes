@@ -1,0 +1,113 @@
+{
+    "$schema": "../../../schema/accessibility.schema.json",
+    "kbSpec": [
+        {
+            "behavior": "Moves focus to the Legend items, focusing the first legend item. If legend is not available, moves focus to the next focusable element on the page.",
+            "trigger": "Tab"
+        },
+        {
+            "behavior": "Moves focus to the previous focusable element on the page.",
+            "trigger": "Shift + Tab"
+        },
+        {
+            "behavior": "Based on the chart type, the arrow keys move through points or series.",
+            "trigger": "Arrow Keys"
+        },
+        {
+            "behavior": "Triggers the click action for the series point or legend item.",
+            "trigger": "Enter"
+        },
+        {
+            "behavior": "Closes the series tooltip if it was open. A second press will move the focus to the root element of the chart.",
+            "trigger": "Escape"
+        },
+        {
+            "behavior": "Move through the different series. Stacked Bar/Column and Line/Area charts move focus to next/previous series item based on coordinates. Regular Bar charts move focus according to datasource order.",
+            "trigger": "ArrowUp or ArrowDown (categorical)"
+        },
+        {
+            "behavior": "Move through the points in the series.",
+            "trigger": "ArrowLeft or ArrowRight (categorical)"
+        },
+        {
+            "behavior": "Move to the outer series.",
+            "trigger": "ArrowUp (donut)"
+        },
+        {
+            "behavior": "Move to inner series.",
+            "trigger": "ArrowDown (donut)"
+        },
+        {
+            "behavior": "Move through the points of the series in a clockwise direction.",
+            "trigger": "ArrowRight (donut/pie)"
+        },
+        {
+            "behavior": "Move through the points of the series in an anti-clockwise direction.",
+            "trigger": "ArrowLeft (donut/pie)"
+        },
+        {
+            "behavior": "Move through the series in datasource order.",
+            "trigger": "ArrowUp or ArrowDown (scatter/polar)"
+        },
+        {
+            "behavior": "Move through items in the current series.",
+            "trigger": "ArrowLeft or ArrowRight (scatter/polar)"
+        },
+        {
+            "behavior": "Move through the items in the chart.",
+            "trigger": "ArrowUp or ArrowDown (funnel)"
+        },
+        {
+            "behavior": "Move in a clockwise/anti-clockwise manner through series.",
+            "trigger": "ArrowUp or ArrowDown (radar column)"
+        },
+        {
+            "behavior": "Move to next/previous series point based on value — Up moves away from center, Down moves towards center.",
+            "trigger": "ArrowUp or ArrowDown (radar line/area)"
+        },
+        {
+            "behavior": "Move through the points of the series in a clockwise direction.",
+            "trigger": "ArrowRight (radar)"
+        },
+        {
+            "behavior": "Move through the points of the series in an anti-clockwise direction.",
+            "trigger": "ArrowLeft (radar)"
+        },
+        {
+            "behavior": "Move focus to the next focusable element on the page.",
+            "trigger": "Tab (legend)"
+        },
+        {
+            "behavior": "Move focus to the chart area, focusing the first point in the first series.",
+            "trigger": "Shift + Tab (legend)"
+        },
+        {
+            "behavior": "Move focus to the previous legend item. Cycles to the last item at the beginning.",
+            "trigger": "ArrowUp or ArrowLeft (legend)"
+        },
+        {
+            "behavior": "Move focus to the next legend item. Cycles to the first item at the end.",
+            "trigger": "ArrowDown or ArrowRight (legend)"
+        },
+        {
+            "behavior": "Toggles the series visibility similar to the click action.",
+            "trigger": "Enter (legend)"
+        },
+        {
+            "behavior": "Moves the focus to the root element of the chart.",
+            "trigger": "Escape (legend)"
+        }
+    ],
+    "uxSpec": [],
+    "ariaSpec": [],
+    "resources": [
+        {
+            "text": "WAI-ARIA Graphics Module",
+            "url": "https://www.w3.org/TR/graphics-aria-1.0/"
+        },
+        {
+            "text": "Accessibility Style Guide: SVGs",
+            "url": "https://a11y-style-guide.com/style-guide/section-media.html#kssref-media-svgs"
+        }
+    ]
+}

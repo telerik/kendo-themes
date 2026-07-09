@@ -1,7 +1,6 @@
 import { classNames } from '../misc';
 import { Window, KendoWindowProps } from '../window';
 
-
 import { KendoComponent } from '../_types/component';
 import { CHART_WIZARD_FOLDER_NAME, CHART_WIZARD_MODULE_NAME } from './constants';
 export const CHARTWIZARD_CLASSNAME = `k-chart-wizard`;
@@ -54,9 +53,9 @@ ChartWizard.folderName = CHART_WIZARD_FOLDER_NAME;
  * Each sub-component implements its own ARIA spec.
  * No custom rules are needed at the ChartWizard level.
  */
-ChartWizard.ariaSpec = {
-    selector: '.k-chart-wizard',
-    rules: []
-};
+/**
+ * @keyboard {Tab} Navigates the content in the ChartWizard - the Window, Export button, Chart, Splitter, TabStrip tabs and content, each ExpansionPanel, each Chart type button.
+ * @keyboard {Enter} Triggers click event on the focused button.
+ */
 
 export default ChartWizard;

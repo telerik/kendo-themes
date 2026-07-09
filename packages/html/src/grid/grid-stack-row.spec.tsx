@@ -8,7 +8,6 @@ export type KendoGridStackRowProps = {
     cols?: number;
 };
 
-
 export const GridStackRow: KendoComponent<KendoGridStackRowProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridStackRowProps &
         React.HTMLAttributes<HTMLDivElement>

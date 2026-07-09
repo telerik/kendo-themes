@@ -2,7 +2,6 @@ import { classNames, stateClassNames } from "../misc";
 
 import { KendoComponent } from '../_types/component';
 import { CARD_FOLDER_NAME, CARD_MODULE_NAME } from './constants';
-
 export const CARD_LIST_CLASSNAME = `k-card-list`;
 
 const states = [];
@@ -17,6 +16,13 @@ export type KendoCardListProps = KendoCardListOptions & {};
 
 export type KendoCardListState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="list"} The card list container announces its list role.
+ * @aria {role="listitem"} Each card in the list has the listitem role.
+ * @aria {tabindex="0"} The card is focusable when navigatable.
+ * @aria {aria-describedby=".k-card-title id"} Associate the card to its title element.
+ * @aria {aria-keyshortcuts="Enter"} Announces the Enter key for navigation inside the card.
+ */
 export const CardList: KendoComponent<KendoCardListProps & KendoCardListState & React.HTMLAttributes<HTMLDivElement>> = (props: KendoCardListProps & KendoCardListState & React.HTMLAttributes<HTMLDivElement>) => {
   const { ...other } = props;
 
@@ -33,22 +39,5 @@ CardList.className = CARD_LIST_CLASSNAME;
 CardList.defaultOptions = defaultOptions;
 CardList.moduleName = CARD_MODULE_NAME;
 CardList.folderName = CARD_FOLDER_NAME;
-
-/**
- * Accessibility specification for CardList.
- *
- * @wcag 1.3.1 Info and Relationships - list container for cards
- * @see Card.ariaSpec for card-level rules when inside a list
- */
-CardList.ariaSpec = {
-    selector: '.k-card-list',
-    rules: [
-        { selector: '.k-card-list', attribute: 'role=list', usage: 'The card list container announces its list role.' },
-        { selector: '.k-card-list .k-card', attribute: 'role=listitem', usage: 'Each card in the list has the listitem role.' },
-        { selector: '.k-card-list .k-card', attribute: 'tabindex=0', usage: 'The card is focusable when navigatable.' },
-        { selector: '.k-card-list .k-card', attribute: 'aria-describedby=.k-card-title id', usage: 'Associate the card to its title element.' },
-        { selector: '.k-card-list .k-card', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces the Enter key for navigation inside the card.' },
-    ]
-};
 
 export default CardList;

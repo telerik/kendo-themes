@@ -19,6 +19,9 @@ export type KendoTileLayoutProps = {
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="list"} Sets list role to the TileLayout wrapper.
+ */
 export const TileLayout: KendoComponent<KendoTileLayoutProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTileLayoutProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
@@ -59,26 +62,16 @@ TileLayout.moduleName = TILELAYOUT_MODULE_NAME;
 TileLayout.folderName = TILELAYOUT_FOLDER_NAME;
 
 /**
- * Accessibility specification for TileLayout.
- *
- * @accessibility
- * - Container has role=list
- * - Items have role=listitem with tabindex=0
- * - Items have aria-keyshortcuts for drag-and-drop
- * - Item header title has id linked via aria-labelledby
- *
- * @wcag 4.1.2 Name, Role, Value - list pattern for tile items
+ * @keyboard {Tab} Move focus to the next tile. If focus is on the last tile, focus the next focusable element on the page.
+ * @keyboard {Shift + Tab} Move focus to the previous tile. If focus is on the first tile, focus the previous focusable element before the TileLayout.
+ * @keyboard {Enter} Focuses the first focusable element within the tile. Focus is trapped and wrapped within the tile content and follows its natural Tab sequence.
+ * @keyboard {Escape} Moves focus back to the TileLayout item wrapper when it is on a focusable element within the tile content.
+ * @keyboard {Shift + ArrowRight} Reorders the focused tile with the next one (if such exists).
+ * @keyboard {Shift + ArrowLeft} Reorders the focused tile with the previous one (if such exists).
+ * @keyboard {Control/Cmd(Mac) + ArrowRight} Increments the focused tile width with one column (to a maximum of the preset columns count).
+ * @keyboard {Control/Cmd(Mac) + ArrowLeft} Decrements the focused tile width with one column (to a minimum of 1).
+ * @keyboard {Control/Cmd(Mac) + ArrowDown} Increments the focused item height with one row (to a maximum of the preset rows count if such option exists).
+ * @keyboard {Control/Cmd(Mac) + ArrowUp} Decrements the focused item height with one row (to a minimum of 1).
  */
-TileLayout.ariaSpec = {
-    selector: '.k-tilelayout',
-    rules: [
-        { selector: '.k-tilelayout', attribute: 'role=list', usage: 'Sets list role to the TileLayout wrapper.' },
-        { selector: '.k-tilelayout-item', attribute: 'role=listitem', usage: 'Sets listitem role to the TileLayout items.' },
-        { selector: '.k-tilelayout-item', attribute: 'aria-labelledby', usage: 'Associates the focusable item wrapper with the respective header text element.' },
-        { selector: '.k-tilelayout-item', attribute: 'tabindex=0', usage: 'Makes the item wrapper element focusable.' },
-        { selector: '.k-tilelayout-item', attribute: 'aria-keyshortcuts=Enter', usage: 'Announces Enter as an available key shortcut when the item is focused.' },
-        { selector: '.k-tilelayout-item-header .k-card-title', attribute: 'id', usage: 'Unique identifier to link the header text element to the focusable wrapper.' },
-    ]
-};
 
 export default TileLayout;

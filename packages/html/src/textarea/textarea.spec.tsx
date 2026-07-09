@@ -55,6 +55,14 @@ const defaultOptions = {
     suffixSeparator: true
 } as const;
 
+/**
+ * @aria {role="textbox"} Describes the role of the component.
+ * @aria {aria-label|aria-labelledby} The textarea requires an accessible name (provided by consuming app).
+ * @aria {aria-multiline="true"} Required on role=textbox to indicate multi-line behavior. Implicit on native <textarea>, so not needed there.
+ * @aria {aria-invalid="true"} Rendered only when the TextArea is in a form and announces the invalid state.
+ * @aria {aria-describedby} Points to the hint or error message for the textarea.
+ * @aria {aria-disabled="true"} Rendered only when the TextArea is disabled.
+ */
 export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoTextareaProps &
         KendoTextareaState &
@@ -85,7 +93,6 @@ export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & 
         'aria-describedby': ariaDescribedBy,
         ...other
     } = props;
-
 
     return (
         <Input
@@ -166,22 +173,7 @@ Textarea.moduleName = TEXTAREA_MODULE_NAME;
 Textarea.folderName = TEXTAREA_FOLDER_NAME;
 
 /**
- * Accessibility specification for Textarea.
- * @accessibility
- * - Uses semantic `<textarea>` element (role="textbox" implicit, multiline)
- * - Requires accessible name via label, aria-label, or aria-labelledby
- * - Disabled state uses native disabled attribute
+ * @see https://www.w3.org/TR/wai-aria-1.2/#textbox WAI-ARIA Specification for the TextBox
  */
-Textarea.ariaSpec = {
-    selector: '.k-textarea',
-    rules: [
-        { selector: '.k-textarea > .k-input-inner', attribute: 'role=textbox or nodeName=textarea', usage: 'Describes the role of the component.' },
-        { selector: '.k-textarea > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The textarea requires an accessible name (provided by consuming app).' },
-        { selector: '.k-textarea > .k-input-inner', attribute: 'aria-multiline=true (when role=textbox)', usage: 'Required on role=textbox to indicate multi-line behavior. Implicit on native <textarea>, so not needed there.' },
-        { selector: '.k-textarea > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered only when the TextArea is in a form and announces the invalid state.' },
-        { selector: '.k-textarea > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message for the textarea.' },
-        { selector: '.k-textarea.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered only when the TextArea is disabled.' },
-    ]
-};
 
 export default Textarea;

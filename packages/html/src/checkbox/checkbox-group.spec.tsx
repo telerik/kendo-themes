@@ -16,6 +16,9 @@ const defaultOptions = {
     layout: 'vertical',
 };
 
+/**
+ * @aria {aria-invalid="true"} Rendered only when the CheckBox is in a form and announces the invalid state.
+ */
 export const CheckboxGroup: KendoComponent<KendoCheckboxGroupProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoCheckboxGroupProps &
         React.HTMLAttributes<HTMLUListElement>

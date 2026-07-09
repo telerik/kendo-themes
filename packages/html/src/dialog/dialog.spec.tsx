@@ -27,6 +27,12 @@ export type KendoDialogProps = KendoDialogOptions & {
     modal?: boolean;
 };
 
+/**
+ * @aria {role="dialog"|\"alertdialog"} Announces the dialog or alertdialog role of the component.
+ * @aria {aria-labelledby} Associate the title of the dialog.
+ * @aria {aria-describedby} Associate the dialog content to the wrap element.
+ * @aria {aria-modal="true"} Announces that the dialog is modal. Attribute is added only when the dialog is modal.
+ */
 export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDialogProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -92,23 +98,10 @@ Dialog.moduleName = DIALOG_MODULE_NAME;
 Dialog.folderName = DIALOG_FOLDER_NAME;
 
 /**
- * Accessibility specification for Dialog.
+ * @keyboard {Tab} Focus is moved between the elements in the dialog and is trapped into the component.
+ * @keyboard {Escape} Closes the dialog. When the dialog is modal, the focus should be returned to the element that triggered the open.
  *
- * @accessibility
- * - Dialog has role=dialog with aria-labelledby and aria-describedby
- * - Modal dialogs have aria-modal=true
- * - Action buttons have aria-label
- *
- * @wcag 4.1.2 Name, Role, Value - dialog pattern
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/ ARIA practices Modal Dialog Example
  */
-Dialog.ariaSpec = {
-    selector: '.k-dialog',
-    rules: [
-        { selector: '.k-dialog', attribute: 'role=dialog or role=alertdialog', usage: 'Announces the dialog or alertdialog role of the component.' },
-        { selector: '.k-dialog', attribute: 'aria-labelledby', usage: 'Associate the title of the dialog.' },
-        { selector: '.k-dialog', attribute: 'aria-describedby', usage: 'Associate the dialog content to the wrap element.' },
-        { selector: '.k-overlay + .k-dialog', attribute: 'aria-modal=true', usage: 'Announces that the dialog is modal. Attribute is added only when the dialog is modal.' },
-    ]
-};
 
 export default Dialog;

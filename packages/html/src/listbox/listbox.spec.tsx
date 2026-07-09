@@ -23,11 +23,8 @@ export type KendoListBoxProps = KendoListBoxOptions & {
     actionsPosition?: 'left' | 'right' | 'top' | 'bottom';
     actions?: string[];
     dir?: 'ltr' | 'rtl';
-    /** @aria aria-label for the listbox element */
     'aria-label'?: string;
-    /** @aria aria-multiselectable when multiple selection is enabled */
     multiselectable?: boolean;
-    /** @aria ID for the listbox element, referenced by toolbar aria-controls */
     id?: string;
 };
 
@@ -37,6 +34,16 @@ const defaultOptions = {
     actionsPosition: 'left'
 } as const;
 
+/**
+ * @aria {role="listbox"} Specifies the role of the ListBox list element.
+ * @aria {role="option"} Specifies the role of the ListBox item element.
+ * @aria {aria-selected="true"|\"false"} Set to true if the item is selected.
+ * @aria {tabindex} The focused listbox item should have tabindex 0, all others -1.
+ * @aria {role="toolbar"} The toolbar is a collection of command buttons.
+ * @aria {aria-controls} Points to the id of the listbox element being controlled.
+ * @aria {aria-multiselectable} when multiple selection is enabled
+ * @aria {id} ID for the listbox element; referenced by the toolbar aria-controls.
+ */
 export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListBoxProps &
         KendoListBoxState &
@@ -128,27 +135,27 @@ ListBox.moduleName = LISTBOX_MODULE_NAME;
 ListBox.folderName = LISTBOX_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * ListBox implements the WAI-ARIA listbox pattern.
+ * @keyboard {F10} Focuses the ListBox toolbar (the last focused or the first button in it).
+ * @keyboard {Space} Selects the focused ListBox Item
+ * @keyboard {ArrowUp} Selects the previous item.
+ * @keyboard {ArrowDown} Selects the next item.
+ * @keyboard {Control/Cmd(Mac) + Space} Selects or deselects an item.
+ * @keyboard {Shift + ArrowUp} Adds the previous item to the selected items.
+ * @keyboard {Shift + ArrowDown} Adds the next item to the selected items.
+ * @keyboard {Control/Cmd(Mac) + ArrowUp} Moves the focus to the previous item.
+ * @keyboard {Control/Cmd(Mac) + ArrowDown} Moves the focus to the next item.
+ * @keyboard {Delete} Deletes the selected items.
+ * @keyboard {Control/Cmd(Mac) + ArrowRight} Adds the selected items to the connected ListBox.
+ * @keyboard {Control/Cmd(Mac) + ArrowLeft} Adds the selected items from the connected ListBox to the current one.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowUp} Shifts the selected items upwards.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowDown} Shifts the selected items downwards.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowRight} Transfers all items to the connected ListBox.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowLeft} Transfers all items from the connected ListBox.
+ * @keyboard {ArrowRight or ArrowDown} Focuses the next button in the toolbar.
+ * @keyboard {ArrowLeft or ArrowUp} Focuses the previous button in the toolbar.
+ * @keyboard {Enter} Executes the currenly focused button command if enabled.
  *
- * - List: role="listbox" with aria-label and optional aria-multiselectable
- * - Items: role="option" with aria-selected and tabindex
- * - Toolbar: role="toolbar" with aria-label and aria-controls
- * - Toolbar buttons have aria-label for accessible names
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/listbox/ WAI-ARIA Authoring Practices: ListBox Pattern
  */
-ListBox.ariaSpec = {
-    selector: '.k-listbox',
-    rules: [
-        { selector: '.k-listbox .k-list-ul', attribute: 'role=listbox', usage: 'Specifies the role of the ListBox list element.' },
-        { selector: '.k-listbox .k-list-ul', attribute: 'aria-label or aria-labelledby', usage: 'Adds a label to the list element of the ListBox.' },
-        { selector: '.k-listbox .k-list-item', attribute: 'role=option', usage: 'Specifies the role of the ListBox item element.' },
-        { selector: '.k-listbox .k-list-item', attribute: 'aria-selected=true/false', usage: 'Set to true if the item is selected.' },
-        { selector: '.k-listbox .k-list-item', attribute: 'tabindex', usage: 'The focused listbox item should have tabindex 0, all others -1.' },
-        { selector: '.k-listbox-actions', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons.' },
-        { selector: '.k-listbox-actions', attribute: 'aria-label', usage: 'Clarifies the purpose of the toolbar.' },
-        { selector: '.k-listbox-actions', attribute: 'aria-controls (when present)', usage: 'Points to the id of the listbox element being controlled.' },
-        { selector: '.k-listbox-actions .k-button', attribute: 'aria-label or title', usage: 'All buttons in the toolbar must have labels.' },
-    ]
-};
 
 export default ListBox;

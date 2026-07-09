@@ -126,18 +126,12 @@ Chip.moduleName = CHIP_MODULE_NAME;
 Chip.folderName = CHIP_FOLDER_NAME;
 
 /**
- * Accessibility specification for Chip (standalone, outside of ChipList).
+ * @keyboard {ArrowRight} Focuses the next chip in the chiplist.
+ * @keyboard {ArrowLeft} Focuses the previous chip in the group.
+ * @keyboard {Enter or Space} Triggers a click action on the Chip.
+ * @keyboard {Delete or Backspace} Removes the Chip when a delete action is configured.
  *
- * @wcag 4.1.2 Name, Role, Value - button pattern with toggle
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/button/ WAI-ARIA Authoring Practices: Button Pattern
  */
-Chip.ariaSpec = {
-    selector: '.k-chip',
-    rules: [
-        { selector: '*:not(.k-chip-list) > .k-chip', attribute: 'role=button', usage: 'Announces that the chip acts as a button when standalone.' },
-        { selector: '*:not(.k-chip-list) > .k-chip.k-selected', attribute: 'aria-pressed=true', usage: 'Announces that the Chip has been selected.' },
-        { selector: '*:not(.k-chip-list) > .k-chip:not(.k-selected)', attribute: 'aria-pressed=false', usage: 'Announces that the Chip has not been selected.' },
-        { selector: '.k-chip', attribute: 'aria-disabled=true (when disabled)', usage: 'Announces that the Chip is disabled.' },
-    ]
-};
 
 export default Chip;

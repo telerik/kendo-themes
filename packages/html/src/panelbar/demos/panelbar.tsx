@@ -1,7 +1,7 @@
 import { PanelBar } from '../panelbar.spec';
 import { PanelBarContent } from '../panelbar-content';
-import { PanelBarGroup } from '../panelbar-group';
-import { PanelBarItem } from '../panelbar-item';
+import { PanelBarGroup } from '../panelbar-group.spec';
+import { PanelBarItem } from '../panelbar-item.spec';
 import { PanelBarNormal } from '../templates/panelbar-normal';
 import { PanelBarExpandGroup } from '../templates/panelbar-expand-group';
 

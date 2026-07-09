@@ -16,7 +16,7 @@ export type KendoActionSheetHeaderProps = {
     adaptive?: boolean;
     /**
      * ID for the title element, used by aria-labelledby on the ActionSheet.
-     * @aria Referenced by aria-labelledby on the ActionSheet dialog
+     * @aria {id} Referenced via aria-labelledby on the ActionSheet dialog.
      */
     titleId?: string;
 }

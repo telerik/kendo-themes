@@ -3,12 +3,14 @@ import { classNames } from '../misc';
 export const CALENDARINFINITETABLE_CLASSNAME = `k-calendar-table`;
 
 export type KendoCalendarInfiniteTableProps = {
-    /** @aria Override the default role ("none") for this table */
     tableRole?: string;
-    /** @aria aria-labelledby when table acts as grid */
     ariaLabelledBy?: string;
 };
 
+/**
+ * @aria {role} Overrides the default role ("none") for this table element.
+ * @aria {aria-labelledby} when table acts as grid
+ */
 export const CalendarInfiniteTable = (
     props: KendoCalendarInfiniteTableProps &
         React.HTMLAttributes<HTMLTableElement>

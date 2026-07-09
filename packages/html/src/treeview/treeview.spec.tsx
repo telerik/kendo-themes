@@ -26,6 +26,10 @@ export type KendoTreeviewState = { [K in (typeof states)[number]]?: boolean };
 const defaultOptions = {
 };
 
+/**
+ * @aria {role="tree"} The root list element of the treeview.
+ * @aria {role="group"} The ul element that wraps child nodes.
+ */
 export const Treeview: KendoComponent<KendoTreeviewProps & KendoTreeviewState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTreeviewProps &
         KendoTreeviewState &
@@ -69,26 +73,18 @@ Treeview.moduleName = TREEVIEW_MODULE_NAME;
 Treeview.folderName = TREEVIEW_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * Treeview implements the WAI-ARIA tree pattern.
+ * @keyboard {Enter} Selects the focused tree view item when the selection mode is single or multiple. When the selection mode is multiple and there are other selected items, they get deselected.
+ * @keyboard {Space} Checks the checkbox of the TreeView node.
+ * @keyboard {ArrowUp} Goes to the previous tree node. The focus is moved to the previous node and its tabindex is set to `0`.
+ * @keyboard {ArrowDown} Goes to the next tree node. The focus is moved to the next node and its tabindex is set to `0`.
+ * @keyboard {ArrowLeft} If the node is expanded, collapses it and the focus remains on the item. If the node is collapsed, the focus is moved to its parent.
+ * @keyboard {ArrowRight} If the node is collapsed, expands it and the focus remains on the item. If the node is expanded, the focus is moved to the first child node.
+ * @keyboard {Home} Moves the focus to the first node in the tree without opening or closing a node.
+ * @keyboard {End} Moves the focus to the last node in the tree that is focusable without opening a node.
+ * @keyboard {Control/Cmd(Mac) + Enter} Selects the focused item. When the item is already selected, it gets deselected.
+ * @keyboard {Printable Characters} Typing `M` or any other printable character focuses the next or the first item in the list.
  *
- * - Root list (.k-treeview-lines): role="tree"
- * - Child groups: role="group"
- * - Items: role="treeitem" with aria-expanded, aria-selected, aria-checked
- * - Checkboxes: aria-label matching item text, tabindex=-1 (not keyboard-focusable)
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/treeview/treeview-1/treeview-1a.html WAI-ARIA Authoring Practices: File Directory Treeview Example
  */
-Treeview.ariaSpec = {
-    selector: '.k-treeview',
-    rules: [
-        { selector: '.k-treeview-lines', attribute: 'role=tree', usage: 'The root list element of the treeview.' },
-        { selector: '.k-treeview-group:not(.k-treeview-lines)', attribute: 'role=group', usage: 'The ul element that wraps child nodes.' },
-        { selector: '.k-treeview-item', attribute: 'role=treeitem', usage: 'The li element rendered for a tree node.' },
-        { selector: '.k-treeview-item', attribute: 'aria-expanded=true/false (when present)', usage: 'Announces the expanded state of the node.' },
-        { selector: '.k-treeview-item', attribute: 'aria-checked=true/false (when present)', usage: 'Announces the checked state of the node when checkboxes are enabled.' },
-        { selector: '.k-treeview-item', attribute: 'aria-selected=true (when present)', usage: 'Announces the selected state of the node when selection is enabled.' },
-        { selector: '.k-treeview-item .k-checkbox', attribute: 'aria-label', usage: 'The checkbox input must have an accessible name matching the treeview item text.' },
-        { selector: '.k-treeview-item .k-checkbox', attribute: 'tabindex=-1', usage: 'The checkbox input must not be in the tab order. Keyboard interaction is handled by the treeitem.' },
-    ]
-};
 
 export default Treeview;

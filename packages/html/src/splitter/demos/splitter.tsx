@@ -1,5 +1,5 @@
 import { Splitter, KendoSplitterProps } from '../splitter.spec';
-import { SplitterPane } from '../splitter-pane';
+import { SplitterPane } from '../splitter-pane.spec';
 
 const options = Splitter.options;
 const states = Splitter.states;

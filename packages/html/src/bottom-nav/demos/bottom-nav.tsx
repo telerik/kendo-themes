@@ -1,5 +1,5 @@
 import { BottomNav, KendoBottomNavProps } from '../bottom-nav.spec';
-import { BottomNavItem } from '../bottom-nav-item';
+import { BottomNavItem } from '../bottom-nav-item.spec';
 import { BottomNavNormal } from '../templates/bottom-nav-normal';
 
 const options = BottomNav.options;

@@ -1,4 +1,4 @@
-import { CalendarTableHead } from './calendar-table-head';
+import { CalendarTableHead } from './calendar-table-head.spec';
 import { CalendarTbody } from './calendar-tbody.spec';
 import { classNames } from '../misc';
 
@@ -8,14 +8,16 @@ export type KendoCalendarTableProps = {
     calendarCaption?: string;
     showTableHead?: boolean;
     showWeek?: boolean;
-    /** @aria aria-labelledby pointing to the calendar title */
     ariaLabelledBy?: string;
-    /** @aria aria-activedescendant pointing to focused cell */
     ariaActiveDescendant?: string;
-    /** @aria When true, this table acts as the grid root (standard calendar) */
     gridRole?: boolean;
 };
 
+/**
+ * @aria {aria-labelledby} pointing to the calendar title
+ * @aria {aria-activedescendant} pointing to focused cell
+ * @aria {role="grid"} When true, this table acts as the grid root (standard calendar).
+ */
 export const CalendarTable = (
     props: KendoCalendarTableProps &
         React.HTMLAttributes<HTMLDivElement>

@@ -38,7 +38,6 @@ export const Appbar: KendoComponent<KendoAppbarProps & React.HTMLAttributes<HTML
         ...other
     } = props;
 
-
     return (
         <div
             {...other}
@@ -64,15 +63,4 @@ Appbar.className = APPBAR_CLASSNAME;
 Appbar.defaultOptions = defaultOptions;
 Appbar.moduleName = APPBAR_MODULE_NAME;
 Appbar.folderName = APPBAR_FOLDER_NAME;
-
-/**
- * @ariaSpec
- * AppBar is a container for elements and does not implement specific WAI-ARIA attributes.
- * Child elements should implement their own accessibility patterns.
- */
-Appbar.ariaSpec = {
-    selector: '.k-appbar',
-    rules: []
-};
-
 export default Appbar;

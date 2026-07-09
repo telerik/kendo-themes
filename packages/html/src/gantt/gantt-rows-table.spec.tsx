@@ -5,6 +5,9 @@ import { KendoComponent } from '../_types/component';
 import { GANTT_FOLDER_NAME, GANTT_MODULE_NAME } from './constants';
 export const GANTTROWSTABLE_CLASSNAME = `k-gantt-rows`;
 
+/**
+ * @aria {role="presentation"} The rows grid is presentational.
+ */
 export const GanttRowsTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
     props: KendoTableOptions &
         React.HTMLAttributes<HTMLTableElement>
@@ -24,3 +27,4 @@ export const GanttRowsTable: KendoComponent<KendoTableOptions & React.HTMLAttrib
 GanttRowsTable.className = GANTTROWSTABLE_CLASSNAME;
 GanttRowsTable.moduleName = GANTT_MODULE_NAME;
 GanttRowsTable.folderName = GANTT_FOLDER_NAME;
+

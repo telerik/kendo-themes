@@ -1,0 +1,90 @@
+import { Icon } from '../icon';
+import { classNames, stateClassNames, States } from '../misc';
+
+const SPLITTERSPLITBAR_CLASSNAME = 'k-splitbar';
+
+const states = [
+    States.hover,
+    States.focus,
+];
+
+const options = {};
+
+export type KendoSplitterSplitbarProps = {
+    orientation?: "horizontal" | "vertical";
+    draggable?: boolean,
+    collapsePrev?: boolean;
+    collapseNext?: boolean;
+    ariaLabel?: string;
+};
+
+export type KendoSplitterSplitbarState = { [K in (typeof states)[number]]?: boolean };
+
+const defaultOptions = {
+    orientation: "horizontal",
+    draggable: true,
+};
+
+export const SplitterSplitbar = (
+    props: KendoSplitterSplitbarProps &
+        KendoSplitterSplitbarState &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        hover,
+        focus,
+        orientation = defaultOptions.orientation,
+        draggable = defaultOptions.draggable,
+        collapsePrev,
+        collapseNext,
+        ariaLabel,
+        ...other
+    } = props;
+
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                SPLITTERSPLITBAR_CLASSNAME,
+                stateClassNames(SPLITTERSPLITBAR_CLASSNAME, {
+                    hover,
+                    focus,
+                }),
+                {
+                    [`${SPLITTERSPLITBAR_CLASSNAME}-${orientation}`]: orientation,
+                    [`${SPLITTERSPLITBAR_CLASSNAME}-draggable-${orientation}`]: draggable,
+                    [`${SPLITTERSPLITBAR_CLASSNAME}-static-${orientation}`]: !draggable && !collapsePrev && !collapseNext,
+                },
+            )}
+            role="separator"
+            aria-label={ariaLabel}
+            {...(orientation === 'horizontal' && { 'aria-orientation': 'vertical' })}
+            aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown">
+            {collapsePrev &&
+                <>
+                    <div className="k-collapse-prev">
+                        <Icon icon={`chevron-${orientation === "horizontal" ? 'left' : 'up'}`} size="xsmall"></Icon>
+                    </div>
+                </>
+            }
+            <div className="k-resize-handle" aria-hidden="true"></div>
+            {collapseNext &&
+                <>
+                    <div className="k-collapse-next">
+                        <Icon icon={`chevron-${orientation === "horizontal" ? "right" : "down"}`} size="xsmall"></Icon>
+                    </div>
+                </>
+            }
+        </div>
+    );
+};
+
+SplitterSplitbar.states = states;
+SplitterSplitbar.options = options;
+SplitterSplitbar.className = SPLITTERSPLITBAR_CLASSNAME;
+SplitterSplitbar.moduleName = null;
+SplitterSplitbar.folderName = null;
+SplitterSplitbar.defaultOptions = defaultOptions;
+
+export default SplitterSplitbar;

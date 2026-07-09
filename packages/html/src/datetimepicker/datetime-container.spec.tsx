@@ -15,6 +15,10 @@ export type KendoDateTimeContainerOptions = {};
 
 export type KendoDateTimeContainerProps = KendoDateTimeContainerOptions & {};
 
+/**
+ * @aria {aria-invalid="true"} Rendered only when the picker is in form and announces invalid state.
+ * @aria {aria-disabled="true"} Rendered only when the picker is disabled.
+ */
 export const DateTimeContainer: KendoComponent<KendoDateTimeContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDateTimeContainerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {

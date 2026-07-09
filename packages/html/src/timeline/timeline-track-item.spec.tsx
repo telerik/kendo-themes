@@ -11,14 +11,17 @@ const states = [
 export type KendoTimelineTrackItemOptions = {
     children?: React.JSX.Element | React.JSX.Element[];
     content?: string;
-    /** @aria aria-selected="true" when tab is selected/focused */
     ariaSelected?: boolean;
-    /** @aria aria-describedby points to the tabpanel */
     ariaDescribedBy?: string;
 };
 
 export type KendoTimelineTrackItemState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="tab"} Individual tab element on the track.
+ * @aria {aria-selected="true"} when tab is selected/focused
+ * @aria {aria-describedby} points to the tabpanel
+ */
 export const TimelineTrackItem: KendoComponent<KendoTimelineTrackItemOptions & KendoTimelineTrackItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoTimelineTrackItemOptions &
         KendoTimelineTrackItemState &

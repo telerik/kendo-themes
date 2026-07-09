@@ -5,6 +5,9 @@ import { KendoComponent } from '../_types/component';
 import { GANTT_FOLDER_NAME, GANTT_MODULE_NAME } from './constants';
 export const GANTTTASKSTABLE_CLASSNAME = `k-gantt-tasks`;
 
+/**
+ * @aria {role="presentation"} The tasks table is presentational.
+ */
 export const GanttTasksTable: KendoComponent<KendoTableOptions & React.HTMLAttributes<HTMLTableElement>> = (
     props: KendoTableOptions &
         React.HTMLAttributes<HTMLTableElement>
@@ -24,3 +27,4 @@ export const GanttTasksTable: KendoComponent<KendoTableOptions & React.HTMLAttri
 GanttTasksTable.className = GANTTTASKSTABLE_CLASSNAME;
 GanttTasksTable.moduleName = GANTT_MODULE_NAME;
 GanttTasksTable.folderName = GANTT_FOLDER_NAME;
+

@@ -24,6 +24,10 @@ export type KendoWindowProps = KendoWindowOptions & {
     actionButtonsAlign?: "start" | "end" | "center" | "stretched";
 };
 
+/**
+ * @aria {role="dialog"} Announces the dialog role of the component.
+ * @aria {aria-labelledby} Associate the title of the dialog.
+ */
 export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoWindowProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -105,20 +109,16 @@ Window.moduleName = WINDOW_MODULE_NAME;
 Window.folderName = WINDOW_FOLDER_NAME;
 
 /**
- * Accessibility specification for Window.
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Minimizes or restores the state, if the focused element is the window
+ * @keyboard {Alt/Opt(Mac) + ArrowUp} Maximizes or restores the state, if the focused element is the window
+ * @keyboard {Arrow Keys} Move the window to the respective direction (UP
+ * @keyboard {Control/Cmd(Mac) + ArrowUp} Decreases the height of the window triggering the resizing capabilities. Applicable only when the component is resizable.
+ * @keyboard {Control/Cmd(Mac) + ArrowDown} Increases the height of the window triggering the resizing capabilities. Applicable only when the component is resizable.
+ * @keyboard {Control/Cmd(Mac) + ArrowLeft} Decreases the width of the window triggering the resizing capabilities. Applicable only when the component is resizable.
+ * @keyboard {Control/Cmd(Mac) + ArrowRight} Increases the width of the window triggering the resizing capabilities. Applicable only when the component is resizable.
+ * @keyboard {Escape} Closes the window. When the window is modal, the focus should be returned to the element that triggered the open.
  *
- * @accessibility
- * - Window has role=dialog with aria-labelledby pointing to title
- * - Action buttons have aria-label for accessible name
- *
- * @wcag 4.1.2 Name, Role, Value - dialog pattern
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/ ARIA practices Modal Dialog Example
  */
-Window.ariaSpec = {
-    selector: '.k-window',
-    rules: [
-        { selector: '.k-window:not(.k-dialog)', attribute: 'role=dialog', usage: 'Announces the dialog role of the component.' },
-        { selector: '.k-window:not(.k-dialog)', attribute: 'aria-labelledby', usage: 'Associate the title of the dialog.' },
-    ]
-};
 
 export default Window;

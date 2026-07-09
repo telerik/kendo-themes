@@ -5,8 +5,8 @@ import { ColorPicker } from '../colorpicker/colorpicker.spec';
 import { DropdownList } from '../dropdownlist/dropdownlist.spec';
 import { MenuButton } from '../menu-button/menu-button.spec';
 import { MenuItem } from '../menu/menu-item.spec';
-import { SpreadsheetMenu } from './spreadsheet-menu';
-import { SpreadsheetToolbar } from './spreadsheet-toolbar';
+import { SpreadsheetMenu } from './spreadsheet-menu.spec';
+import { SpreadsheetToolbar } from './spreadsheet-toolbar.spec';
 import { ToolbarItem } from '../toolbar/toolbar-item.spec';
 import { ToolbarSeparator } from '../toolbar/toolbar-separator';
 

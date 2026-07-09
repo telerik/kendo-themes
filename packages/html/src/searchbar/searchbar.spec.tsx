@@ -24,7 +24,6 @@ export const SearchBar: KendoComponent<KendoSearchBarProps & React.HTMLAttribute
         ...other
     } = props;
 
-
     return (
         <span
             {...other}

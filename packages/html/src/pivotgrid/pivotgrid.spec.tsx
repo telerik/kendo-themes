@@ -1,5 +1,5 @@
 import { classNames, nextId } from '../misc';
-import PivotGridConfiguratorButton from './pivotgrid-configurator-button';
+import PivotGridConfiguratorButton from './pivotgrid-configurator-button.spec';
 import React from 'react';
 
 import { KendoComponent } from '../_types/component';
@@ -30,6 +30,10 @@ const defaultOptions = {
     configuratorPosition: "right"
 };
 
+/**
+ * @aria {role="grid"} The role specifies the element is a Data Grid.
+ * @aria {id} Sets a unique identifier for the cell to be referenced from the first column header row aria-owns attribute.
+ */
 export const PivotGrid: KendoComponent<KendoPivotGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPivotGridProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -86,59 +90,32 @@ PivotGrid.defaultOptions = defaultOptions;
 PivotGrid.moduleName = PIVOTGRID_MODULE_NAME;
 PivotGrid.folderName = PIVOTGRID_FOLDER_NAME;
 
-PivotGrid.ariaSpec = {
-    selector: '.k-pivotgrid',
-    rules: [
-        // ── Grid Element ──
-        { selector: '.k-pivotgrid', attribute: 'role=grid', usage: 'The role specifies the element is a Data Grid.' },
-
-        // ── Empty Cell ──
-        { selector: '.k-pivotgrid-empty-cell th', attribute: 'id', usage: 'Sets a unique identifier for the cell to be referenced from the first column header row aria-owns attribute.' },
-
-        // ── Column Headers ──
-        { selector: '.k-pivotgrid-column-headers>.k-pivotgrid-table', attribute: 'role=none', usage: 'Negates the default semantic role of the <table> element.' },
-        { selector: '.k-pivotgrid-column-headers>.k-pivotgrid-table>tbody', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-pivotgrid-column-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-pivotgrid-column-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row:first-child', attribute: 'aria-owns', usage: 'Lists the IDs of the empty cell and all cells in the first column headers row to construct the a11y tree.' },
-        { selector: '.k-pivotgrid-column-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row>th', attribute: 'role=columnheader', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-pivotgrid-column-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row>th', attribute: 'aria-expanded (when expandable)', usage: 'Indicates the current expanded state of the header.' },
-        { selector: '.k-pivotgrid-column-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row>th', attribute: 'id', usage: 'Unique and deterministic identifier, used to associate the header cell with respective data cells.' },
-
-        // ── Toggle Icons ──
-        { selector: '[class*="i-chevron-up"]', attribute: 'aria-hidden=true', usage: 'Excludes the collapse icon from the screen reader output.' },
-        { selector: '[class*="i-chevron-down"]', attribute: 'aria-hidden=true', usage: 'Excludes the expand icon from the screen reader output.' },
-
-        // ── Row Headers ──
-        { selector: '.k-pivotgrid-row-headers>.k-pivotgrid-table', attribute: 'role=none', usage: 'Negates the default semantic role of the <table> element.' },
-        { selector: '.k-pivotgrid-row-headers>.k-pivotgrid-table>tbody', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-pivotgrid-row-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-pivotgrid-row-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row', attribute: 'aria-owns (when present)', usage: 'Used to associate row header cells with the corresponding data cells.' },
-        { selector: '.k-pivotgrid-row-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row>th', attribute: 'role=rowheader', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-pivotgrid-row-headers>.k-pivotgrid-table>tbody>.k-pivotgrid-row>th', attribute: 'aria-expanded (when expandable)', usage: 'Indicates the current expanded state of the header.' },
-
-        // ── Grid Data Table ──
-        { selector: '.k-pivotgrid-values>.k-pivotgrid-table', attribute: 'role=none', usage: 'Negates the default semantic role of the <table> element.' },
-        { selector: '.k-pivotgrid-values>.k-pivotgrid-table>tbody', attribute: 'role=none', usage: 'The contained rows are associated with their headers through alternative mechanics.' },
-        { selector: '.k-pivotgrid-values>.k-pivotgrid-table>tbody>.k-pivotgrid-row', attribute: 'role=none', usage: 'The rows are associated with their headers through alternative mechanics.' },
-        { selector: '.k-pivotgrid-values>.k-pivotgrid-table>tbody>.k-pivotgrid-row>td', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-pivotgrid-values>.k-pivotgrid-table>tbody>.k-pivotgrid-row>td', attribute: 'id', usage: 'Unique and deterministic identifier, used to associate the data cell with respective row header cells.' },
-        { selector: '.k-pivotgrid-values>.k-pivotgrid-table>tbody>.k-pivotgrid-row>td', attribute: 'aria-describedby (when present)', usage: 'Used to associate the data cells with the respective column header cells.' },
-
-        // ── Configurator Button ──
-        { selector: '.k-pivotgrid-configurator-button', attribute: 'aria-hidden=true', usage: 'Hide the element from assistive technologies.' },
-
-        // ── Configurator Dialog ──
-        { selector: '.k-pivotgrid-configurator', attribute: 'role=dialog', usage: 'The role specifies the element is a dialog.' },
-        { selector: '.k-pivotgrid-configurator', attribute: 'aria-hidden (when closed)', usage: 'Specifies whether the configurator is visible if it is still in the DOM when closed.' },
-        { selector: '.k-pivotgrid-configurator', attribute: 'aria-labelledby', usage: 'Associates the configurator wrapper with its internal header element.' },
-
-        // ── Configurator Internal Elements ──
-        { selector: '.k-pivotgrid-configurator-header-text', attribute: 'id', usage: 'Unique identifier used to associate the header text with elements that reference it as a label.' },
-        { selector: '.k-pivotgrid-configurator-content .k-label', attribute: 'id', usage: 'Unique identifier used to associate the label text with elements that reference it as a label.' },
-        { selector: '.k-pivotgrid-configurator-actions .k-button.k-disabled', attribute: 'aria-disabled=true (when disabled)', usage: 'Announces the non-interactive state of the configurator Cancel and Apply buttons.' },
-        { selector: '.k-fields-list-wrapper .k-treeview', attribute: 'aria-labelledby', usage: 'Associates the fields chooser TreeView with the Fields section and Configurator header texts.' },
-        { selector: '.k-pivotgrid-configurator-content .k-chip-list', attribute: 'aria-labelledby', usage: 'Associates the chip lists with their respective section label and Configurator header texts.' },
-    ]
-};
+/**
+ * @keyboard {ArrowRight} Moves focus one cell to the right (if any)
+ * @keyboard {ArrowLeft} Moves focus one cell to the left (if any)
+ * @keyboard {ArrowDown} Moves focus one cell down (if any)
+ * @keyboard {ArrowUp} Moves focus one cell up (if any)
+ * @keyboard {Home} Moves focus to the first cell in the row that contains focus.
+ * @keyboard {End} Moves focus to the last cell in the row that contains focus.
+ * @keyboard {Control/Cmd(Mac) + Home} Moves focus to the first (top-left) data cell in the grid.
+ * @keyboard {Control/Cmd(Mac) + End} Moves focus to the last cell in the last row of the Grid.
+ * @keyboard {o} Opens the configurator when available.
+ * @keyboard {Escape} Closes the configurator when available and open.
+ * @keyboard {Enter or Space} If the header cell is expandable, toggles the current expanded state.
+ * @keyboard {Escape} Closes the Configurator and returns focus to the last focused PivotGrid table cell (or the first cell).
+ * @keyboard {Tab} Focuses the next focusable element or the first focusable element, if the focus is on the last focusable element.
+ * @keyboard {Shift + Tab} Focuses the previous focusable element or the last focusable element, if the focus is on the first focusable element.
+ * @keyboard {Backspace or Delete} Applicable when a Chip is focused. Removes the Chip, and the previous focusable element is focused.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowLeft or ArrowRight} Applicable when a Chip is focused. Switches the Chip with the next/previous one from the same section (if one is available).
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowUp or ArrowDown} Applicable when a Chip is focused. Moves a Chip from the Rows section to the Columns one or vice-versa.
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens the Chip menu for the focused Chip. Focus goes to the first menu element is trapped in the menu popup.
+ * @keyboard {Escape} Closes the menu and returns the focus to the Chip that triggered it.
+ * @keyboard {Tab} Focuses the next focusable menu element or the first focusable element, if the focus is on the last focusable element.
+ * @keyboard {Shift + Tab} Focuses the previous focusable element or the last focusable element, if the focus is on the first focusable element.
+ * @keyboard {Enter} Triggers the default action associated with the focused menu item.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#grid WAI-ARIA specification for grid
+ * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role WAI-ARIA specification for dialog
+ */
 
 export default PivotGrid;

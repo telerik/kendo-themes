@@ -17,7 +17,6 @@ export type KendoCalendarHeaderProps = {
     size?: (typeof options.size)[number] | null;
     orientation?: 'vertical' | 'horizontal';
     dir?: 'ltr' | 'rtl';
-    /** @aria id for the title button, used for aria-labelledby from the grid */
     titleId?: string;
 };
 
@@ -28,6 +27,9 @@ const defaultOptions = {
     orientation: 'horizontal'
 };
 
+/**
+ * @aria {id} for the title button, used for aria-labelledby from the grid
+ */
 export const CalendarHeader = (
     props: KendoCalendarHeaderProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -79,7 +81,6 @@ export const CalendarHeader = (
         </div>
     );
 };
-
 
 CalendarHeader.options = options;
 CalendarHeader.className = CALENDARHEADER_CLASSNAME;

@@ -1,7 +1,7 @@
 import { Prompt } from '../prompt.spec';
 import { PromptContent } from '../prompt-content';
 import { PromptView } from '../prompt-view';
-import { PromptSendButton } from '../prompt-send-button';
+import { PromptSendButton } from '../prompt-send-button.spec';
 import { ActionButtons } from '../../action-buttons';
 import { IconButton, IconTextButton } from '../../button';
 import { Card, CardBody } from '../../card';

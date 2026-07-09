@@ -58,6 +58,18 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
 
 export type KendoDatePickerState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="combobox"} The input element follows the combobox specification.
+ * @aria {aria-haspopup="grid"} Indicates the component has a Calendar Popup that implements role=grid.
+ * @aria {aria-expanded="true"|\"false"} Announces whether the Popup is visible or not.
+ * @aria {aria-controls} Points to the popup element.
+ * @aria {aria-label|aria-labelledby} The input needs an accessible name.
+ * @aria {aria-invalid="true"} Rendered only when the picker is in form and announces invalid state.
+ * @aria {aria-disabled="true"} Rendered only when the picker is disabled.
+ * @aria {tabindex="-1"} Button element must not be focusable.
+ * @aria {aria-label} The button needs an accessible name.
+ * @aria {aria-disabled} Rendered only when the picker is disabled.
+ */
 export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDatePickerProps &
         KendoDatePickerState &
@@ -87,7 +99,6 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
         dir,
         ...other
     } = props;
-
 
     const popupId = nextId('datepicker-popup');
 
@@ -173,31 +184,13 @@ DatePicker.moduleName = DATEPICKER_MODULE_NAME;
 DatePicker.folderName = DATEPICKER_FOLDER_NAME;
 
 /**
- * Accessibility specification for DatePicker.
+ * @keyboard {Escape} Closes the popup
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens the popup
+ * @keyboard {Alt/Opt(Mac) + ArrowUp} Closes the popup
+ * @keyboard {Tab} Closes the actionsheet and focuses the next focusable element.
  *
- * @accessibility
- * - Input has role=combobox with aria-haspopup=grid
- * - aria-expanded indicates popup visibility
- * - Icon button has tabindex=-1 and aria-label
- * - Calendar popup follows Calendar ARIA spec
- * - Adaptive mode follows ActionSheet ARIA spec
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern for date selection
+ * @see https://www.w3.org/TR/wai-aria-1.2/#combobox WAI ARIA specification for combobox
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html ARIA practices Date Picker Dialog Example
  */
-DatePicker.ariaSpec = {
-    selector: '.k-datepicker',
-    rules: [
-        { selector: '.k-datepicker .k-input-inner', attribute: 'role=combobox', usage: 'The input element follows the combobox specification.' },
-        { selector: '.k-datepicker .k-input-inner', attribute: 'aria-haspopup=grid', usage: 'Indicates the component has a Calendar Popup that implements role=grid.' },
-        { selector: '.k-datepicker .k-input-inner', attribute: 'aria-expanded=true/false', usage: 'Announces whether the Popup is visible or not.' },
-        { selector: '.k-datepicker .k-input-inner', attribute: 'aria-controls (when open)', usage: 'Points to the popup element.' },
-        { selector: '.k-datepicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'The input needs an accessible name.' },
-        { selector: '.k-invalid .k-input-inner', attribute: 'aria-invalid=true', usage: 'Rendered only when the picker is in form and announces invalid state.' },
-        { selector: '.k-disabled .k-input-inner', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-datepicker .k-input-button', attribute: 'tabindex=-1', usage: 'Button element must not be focusable.' },
-        { selector: '.k-datepicker .k-input-button', attribute: 'aria-label', usage: 'The button needs an accessible name.' },
-        { selector: '.k-datepicker.k-disabled .k-button', attribute: 'disabled or aria-disabled', usage: 'Rendered only when the picker is disabled.' },
-    ]
-};
 
 export default DatePicker;

@@ -7,10 +7,12 @@ export type KendoTreeviewGroupProps = {
     children?: React.ReactNode;
     dir?: 'ltr' | 'rtl';
     level?: number;
-    /** @aria role - "tree" for root, "group" for nested */
     role?: string;
 };
 
+/**
+ * @aria {role} "tree" for root, "group" for nested
+ */
 export const TreeviewGroup = (
     props: KendoTreeviewGroupProps &
     React.HTMLAttributes<HTMLUListElement>

@@ -32,6 +32,23 @@ const defaultOptions = {
     calendarView: 'month'
 } as const;
 
+/**
+ * @aria {role="grid"} Specifies the role of the multi-view calendar wrapper.
+ * @aria {aria-labelledby} Pointing to the k-calendar-title element.
+ * @aria {tabindex="0"} Makes the grid focusable.
+ * @aria {role="none"} Inner tables have role removed — content belongs to single grid.
+ * @aria {role="rowgroup"} Explicit rowgroup role.
+ * @aria {role="row"} Explicit row role.
+ * @aria {role="columnheader"} Column header for day names.
+ * @aria {scope="col"} Specifies the header applies to a column.
+ * @aria {aria-label} Full name of the day of the week.
+ * @aria {role="gridcell"} Date cells in the calendar body.
+ * @aria {aria-selected="true"} Indicates the selected date.
+ * @aria {aria-disabled="true"} Indicates a disabled date.
+ * @aria {tabindex="-1"} Navigation buttons are not focusable.
+ * @aria {tabindex="-1"} Title button is not focusable.
+ * @aria {tabindex="-1"} Today link is not focusable.
+ */
 export const MultiViewCalendar: KendoComponent<KendoMultiViewCalendarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMultiViewCalendarProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -73,36 +90,7 @@ MultiViewCalendar.moduleName = MULTIVIEWCALENDAR_MODULE_NAME;
 MultiViewCalendar.folderName = MULTIVIEWCALENDAR_FOLDER_NAME;
 
 /**
- * Accessibility specification for MultiViewCalendar.
- *
- * @accessibility
- * - .k-calendar-view gets role=grid with aria-labelledby
- * - Inner tables have role=none (semantics belong to the single grid)
- * - All thead/tbody/tr/th/td elements have explicit roles
- * - Navigation buttons have tabindex=-1
- *
- * @wcag 4.1.2 Name, Role, Value - grid pattern for multi-month date selection
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html ARIA practices Date Picker Dialog Example
  */
-MultiViewCalendar.ariaSpec = {
-    selector: '.k-calendar-range',
-    rules: [
-        { selector: '.k-calendar-range .k-calendar-view', attribute: 'role=grid', usage: 'Specifies the role of the multi-view calendar wrapper.' },
-        { selector: '.k-calendar-range .k-calendar-view', attribute: 'aria-labelledby', usage: 'Pointing to the k-calendar-title element.' },
-        { selector: '.k-calendar-range .k-calendar-view', attribute: 'tabindex=0', usage: 'Makes the grid focusable.' },
-        { selector: '.k-calendar-range .k-calendar-table', attribute: 'role=none', usage: 'Inner tables have role removed — content belongs to single grid.' },
-        { selector: '.k-calendar-thead', attribute: 'role=rowgroup', usage: 'Explicit rowgroup role.' },
-        { selector: '.k-calendar-tbody', attribute: 'role=rowgroup', usage: 'Explicit rowgroup role.' },
-        { selector: '.k-calendar-tr', attribute: 'role=row', usage: 'Explicit row role.' },
-        { selector: '.k-calendar-thead .k-calendar-th', attribute: 'role=columnheader', usage: 'Column header for day names.' },
-        { selector: '.k-calendar-thead .k-calendar-th', attribute: 'scope=col', usage: 'Specifies the header applies to a column.' },
-        { selector: '.k-calendar-thead .k-calendar-th', attribute: 'aria-label', usage: 'Full name of the day of the week.' },
-        { selector: '.k-calendar-td:not(.k-alt):not(.k-empty)', attribute: 'role=gridcell', usage: 'Date cells in the calendar body.' },
-        { selector: '.k-calendar-td.k-selected', attribute: 'aria-selected=true', usage: 'Indicates the selected date.' },
-        { selector: '.k-calendar-td.k-disabled', attribute: 'aria-disabled=true', usage: 'Indicates a disabled date.' },
-        { selector: '.k-calendar-nav-prev,.k-calendar-nav-next', attribute: 'tabindex=-1', usage: 'Navigation buttons are not focusable.' },
-        { selector: '.k-calendar-title', attribute: 'tabindex=-1', usage: 'Title button is not focusable.' },
-        { selector: '.k-calendar-nav-today', attribute: 'tabindex=-1', usage: 'Today link is not focusable.' },
-    ]
-};
 
 export default MultiViewCalendar;

@@ -21,7 +21,6 @@ export type KendoProgressBarProps = {
     reverse?: boolean;
     value?: string;
     width?: string;
-    /** @aria aria-label - accessible name for the progressbar */
     ariaLabel?: string;
 };
 
@@ -36,6 +35,13 @@ const defaultOptions = {
     value: "0"
 };
 
+/**
+ * @aria {role="progressbar"} Sets the proper role for ProgressBar.
+ * @aria {aria-valuenow} Required if the value is not indeterminate. Decimal value between aria-valuemin and aria-valuemax.
+ * @aria {aria-valuemin} Minimum value. Defaults to 0.
+ * @aria {aria-valuemax} Maximum value. Defaults to 100.
+ * @aria {aria-label} accessible name for the progressbar
+ */
 export const ProgressBar: KendoComponent<KendoProgressBarProps & KendoProgressBarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoProgressBarProps &
         KendoProgressBarState &
@@ -113,16 +119,9 @@ ProgressBar.defaultOptions = defaultOptions;
 ProgressBar.moduleName = PROGRESSBAR_MODULE_NAME;
 ProgressBar.folderName = PROGRESSBAR_FOLDER_NAME;
 
-ProgressBar.ariaSpec = {
-    selector: '.k-progressbar',
-    implicitRole: 'progressbar',
-    rules: [
-        { selector: '.k-progressbar', attribute: 'role=progressbar', usage: 'Sets the proper role for ProgressBar.' },
-        { selector: '.k-progressbar', attribute: 'aria-label or aria-labelledby', usage: 'The ProgressBar needs an accessible name to be assigned to it.' },
-        { selector: '.k-progressbar:not(.k-progressbar-indeterminate)', attribute: 'aria-valuenow', usage: 'Required if the value is not indeterminate. Decimal value between aria-valuemin and aria-valuemax.' },
-        { selector: '.k-progressbar', attribute: 'aria-valuemin', usage: 'Minimum value. Defaults to 0.' },
-        { selector: '.k-progressbar', attribute: 'aria-valuemax', usage: 'Maximum value. Defaults to 100.' },
-    ]
-};
+/**
+ * @see https://www.w3.org/TR/wai-aria-1.2/#progressbar WAI-ARIA specification for progressbar
+ * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/progressbar_role#associated_wai-aria_roles_states_and_properties MDN reference for the progressbar role
+ */
 
 export default ProgressBar;

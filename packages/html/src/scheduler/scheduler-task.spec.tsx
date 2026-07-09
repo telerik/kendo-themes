@@ -1,7 +1,6 @@
 import { classNames } from '../misc';
 import Icon from '../icon/icon.spec';
 
-
 import { KendoComponent } from '../_types/component';
 import { SCHEDULER_FOLDER_NAME, SCHEDULER_MODULE_NAME } from './constants';
 const className = 'k-task';
@@ -13,7 +12,6 @@ const options = {};
 const defaultOptions = {
     markStyle: { backgroundColor: "gold" },
 };
-
 
 export type KendoSchedulerTaskProps = {
     text?: string;
@@ -52,7 +50,6 @@ export const SchedulerTask: KendoComponent<KendoSchedulerTaskProps & React.HTMLA
         </div>
     );
 };
-
 
 SchedulerTask.states = states;
 SchedulerTask.options = options;

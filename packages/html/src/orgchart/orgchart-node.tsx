@@ -16,17 +16,12 @@ export type KendoOrgchartNodeProps = {
     buttonIcon?: "plus" | "minus";
     avatar?: string;
     avatarType?: string;
-    /** @aria alt text for avatar image */
     avatarAlt?: string;
-    /** @aria aria-level for treeitem */
     ariaLevel?: number;
-    /** @aria aria-expanded for nodes with subitems */
     ariaExpanded?: boolean;
-    /** @aria aria-owns target group id */
     ariaOwns?: string;
-    /** @aria Whether node has focus (k-focus class + aria-selected=true) */
     focus?: boolean;
-    /** @aria Whether to show the card menu button */
+    /** Whether to show the card menu button */
     menuButton?: boolean;
 };
 
@@ -35,6 +30,13 @@ const defaultOptions = {
     details: true,
 };
 
+/**
+ * @aria {alt} Alt text for the avatar image.
+ * @aria {aria-level} for treeitem
+ * @aria {aria-expanded} for nodes with subitems
+ * @aria {aria-owns} target group id
+ * @aria {aria-selected="true"} Indicates the node is focused/selected.
+ */
 export const OrgchartNode = (
     props: KendoOrgchartNodeProps &
         React.HTMLAttributes<HTMLDivElement>

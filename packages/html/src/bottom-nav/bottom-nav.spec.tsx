@@ -39,6 +39,9 @@ const defaultOptions = {
     border: false
 };
 
+/**
+ * @aria {role="navigation"} The landmark role navigation must be assigned to the bottom navigation.
+ */
 export const BottomNav: KendoComponent<KendoBottomNavProps & KendoBottomNavState & React.HTMLAttributes<HTMLElement>> = (
     props: KendoBottomNavProps &
         KendoBottomNavState &
@@ -86,20 +89,18 @@ BottomNav.moduleName = BOTTOM_NAV_MODULE_NAME;
 BottomNav.folderName = BOTTOM_NAV_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * BottomNav uses nav landmark with navigation items.
+ * @ux {Fixed position} Rendered at the bottom of the viewport and stays visible while the user scrolls.
+ * @ux {Sticky position} Sticks to the bottom edge of its scroll container when the user scrolls past it.
+ * @ux {Absolute position} Positioned at the bottom of its nearest positioned ancestor, scrolls with the page.
+ * @ux {Item selection} The active item receives the `k-selected` class. Clicking another item transfers selection to it.
+ * @ux {Disabled state} When disabled, the component and all its items are non-interactive and visually dimmed.
+ * @ux {Border} An optional top border separates the navigation from the page content above it.
  *
- * - nav: aria-label="Bottom navigation"
- * - Items: implicit link role via <a> or explicit role="link"
- * - Selected item: aria-current="true"
+ * @keyboard {Shift + Tab} Focuses previous link.
+ * @keyboard {Tab} Focuses next link.
+ * @keyboard {Space or Enter} Activates the currently focused link.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#navigation ARIA practices Navigation
  */
-BottomNav.ariaSpec = {
-    selector: '.k-bottom-nav',
-    rules: [
-        { selector: '.k-bottom-nav', attribute: 'role=navigation or nodeName=nav', usage: 'The landmark role navigation must be assigned to the bottom navigation.' },
-        { selector: '.k-bottom-nav-item', attribute: 'role=link or nodeName=a', usage: 'Associate the link purpose of the bottom navigation items.' },
-        { selector: '.k-bottom-nav-item.k-selected', attribute: 'aria-current=true', usage: 'Indicates the selected navigation item.' },
-    ]
-};
 
 export default BottomNav;
