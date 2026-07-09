@@ -12,7 +12,6 @@ export type KendoSpreadsheetActionBarProps = {
     formula?: React.JSX.Element | string;
     cellName?: string;
     formulaExpanded?: boolean;
-    /** Custom formula list items to render when expanded. */
     formulaListItems?: React.JSX.Element;
 };
 

@@ -49,14 +49,7 @@ export type KendoButtonProps = KendoButtonOptions & {
   iconClassName?: string;
   showArrow?: boolean;
   arrowIconName?: string;
-  /**
-   * When true, the button acts as a toggle button with aria-pressed attribute.
-   */
   togglable?: boolean;
-  /**
-   * When true, the button is visually disabled and announced as disabled to AT,
-   * but remains focusable (no native `disabled` attribute).
-   */
   ariaDisabled?: boolean;
 };
 

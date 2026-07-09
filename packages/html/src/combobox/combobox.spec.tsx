@@ -54,17 +54,8 @@ export type KendoComboboxProps = KendoComboboxOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveCustomValue?: boolean;
-    /**
-     * Unique identifier for the combobox. Used to generate related IDs.
-     */
     id?: string;
-    /**
-     * Autocomplete behavior: 'list' for filtering, 'both' for filtering + suggest, 'inline' for suggest only.
-     */
     autocomplete?: 'list' | 'both' | 'inline' | 'none';
-    /**
-     * ID of the currently focused/active item in the listbox.
-     */
     activeDescendant?: string;
 };
 

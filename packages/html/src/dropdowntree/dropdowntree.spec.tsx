@@ -55,13 +55,7 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     adaptiveSubtitle?: string;
     adaptiveFilter?: boolean;
     dir?: 'ltr' | 'rtl';
-    /**
-     * Unique identifier for the dropdowntree. Used to generate related IDs.
-     */
     id?: string;
-    /**
-     * ID of the treeview element in the popup.
-     */
     treeviewId?: string;
 };
 

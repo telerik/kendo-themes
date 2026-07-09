@@ -16,18 +16,8 @@ export type KendoPopupProps = {
         left: number | string;
     };
     animationStyle?: React.CSSProperties;
-    /**
-     * Class name for the animation container (e.g., "k-combobox-popup-container").
-     * Used when popup is appended to body and needs a landmark role.
-     */
     containerClassName?: string;
-    /**
-     * Role for the animation container. Use "region" when appended to body.
-     */
     containerRole?: string;
-    /**
-     * Aria label for the animation container when it has role="region".
-     */
     containerAriaLabel?: string;
 };
 

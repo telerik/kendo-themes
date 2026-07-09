@@ -58,13 +58,7 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveCustomValue?: boolean;
-    /**
-     * Unique identifier for the multiselect. Used to generate related IDs.
-     */
     id?: string;
-    /**
-     * ID of the currently focused/active item in the listbox.
-     */
     activeDescendant?: string;
 };
 

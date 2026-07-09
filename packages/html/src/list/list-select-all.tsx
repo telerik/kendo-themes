@@ -22,6 +22,12 @@ export type KendoListSelectAllProps = {
 
 export type KendoListSelectAllState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {aria-label} Provides accessible name for the select-all item or checkbox.
+ * @aria {aria-selected="true"|"false"} Indicates selected state when no checkbox is present.
+ * @ux {Fixed position} Stays visible at the top of the list while the user scrolls.
+ * @ux {Select all} Toggles selection of all items in the list.
+ */
 export const ListSelectAll = (
     props: KendoListSelectAllProps &
     KendoListSelectAllState &
@@ -69,20 +75,12 @@ ListSelectAll.className = LIST_SELECTALL_CLASSNAME;
 ListSelectAll.defaultOptions = defaultOptions;
 
 /**
- * Accessibility specification for ListSelectAll.
+ * @keyboard {Space} Toggles selection of all items when the select-all item is focused.
+ * @keyboard {Tab} Moves focus to the next focusable element.
+ * @keyboard {Shift + Tab} Moves focus to the previous focusable element.
  *
- * @accessibility
- * - With checkbox: the checkbox provides the interactive toggle with aria-label for accessible name
- * - Without checkbox: the item gets aria-selected for assistive tech
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/listbox/ WAI-ARIA Listbox Pattern
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html WCAG 4.1.2 Name, Role, Value
  */
-ListSelectAll.ariaSpec = {
-    selector: '.k-list-sticky-header',
-    rules: [
-        { selector: '.k-list-sticky-header-item .k-checkbox', attribute: 'aria-label', usage: 'Provides accessible name for the select-all checkbox.' },
-        { selector: '.k-list-sticky-header-item', attribute: 'aria-label', usage: 'Provides accessible name for the select-all item.' },
-        { selector: '.k-list-sticky-header-item', attribute: 'tabindex=0', usage: 'Makes the select-all item focusable.' },
-        { selector: '.k-list-sticky-header-item', attribute: 'aria-selected', usage: 'Indicates selected state when no checkbox is present.' },
-    ]
-};
 
 export default ListSelectAll;

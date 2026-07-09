@@ -14,15 +14,15 @@ export type KendoActionSheetHeaderProps = {
     inputValue?: string;
     inputPlaceholder?: string;
     adaptive?: boolean;
-    /**
-     * ID for the title element, used by aria-labelledby on the ActionSheet.
-     * @aria {id} Referenced via aria-labelledby on the ActionSheet dialog.
-     */
     titleId?: string;
 }
 
 const defaultOptions = {};
 
+/**
+ * ID for the title element, used by aria-labelledby on the ActionSheet.
+ * @aria {id} Referenced via aria-labelledby on the ActionSheet dialog.
+ */
 export const ActionSheetHeader = (
     props: KendoActionSheetHeaderProps &
         React.HTMLAttributes<HTMLDivElement>

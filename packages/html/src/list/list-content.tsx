@@ -5,7 +5,6 @@ const className = `k-list-content`;
 
 export type KendoListContentProps = {
     virtualization?: boolean;
-    /** When true, content gets role="listbox" and child ULs get role="group". */
     grouping?: boolean;
     'aria-label'?: string;
     'aria-labelledby'?: string;

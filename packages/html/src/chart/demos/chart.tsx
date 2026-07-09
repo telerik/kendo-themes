@@ -1,3 +1,5 @@
+import Chart from "../chart.spec";
+
 const options = {};
 const states = [];
 const variants = [];
@@ -6,17 +8,12 @@ const modifiers = [];
 
 export const ChartDemo = () => {
     return (
-        <div className="k-chart" style={{ position: "relative", width: "660px", height: "400px" }}>
-            <div
-                className="k-chart-surface"
-                tabIndex={0}
-                role="graphics-document document"
-                aria-roledescription="Units sold"
-                style={{ position: "relative", touchAction: "none" }}
-            >
-                {areaChartSVG}
-            </div>
-        </div>
+        <Chart
+            ariaRoleDescription="Units sold"
+            style={{ position: "relative", width: "660px", height: "400px" }}
+        >
+            {areaChartSVG}
+        </Chart>
     );
 }
 
