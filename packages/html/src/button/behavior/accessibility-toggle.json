@@ -1,8 +1,0 @@
-{
-    "kbSpec": [
-        {
-            "shortcut": "Enter \\ Space",
-            "behavior": "Selects/Deselects the button"
-        }
-    ]
-}

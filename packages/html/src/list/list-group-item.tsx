@@ -4,9 +4,6 @@ import { classNames } from '../misc';
 const className = `k-list-group-item`;
 
 export type ListGroupItemProps = {
-    /**
-     * Icon to display before the group label.
-     */
     groupIconName?: string;
 };
 

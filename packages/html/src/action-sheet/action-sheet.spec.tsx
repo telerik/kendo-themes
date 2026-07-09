@@ -22,9 +22,6 @@ export type KendoActionSheetProps = {
     overlay?: boolean;
     template?: React.JSX.Element | React.JSX.Element[];
     side?: 'top' | 'right' | 'bottom' | 'left';
-    /**
-     * Unique identifier for the ActionSheet. Used for aria-labelledby.
-     */
     id?: string;
 }
 

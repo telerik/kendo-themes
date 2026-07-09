@@ -55,13 +55,7 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveFilter?: boolean;
-    /**
-     * Unique identifier for the multiselecttree. Used to generate related IDs.
-     */
     id?: string;
-    /**
-     * ID of the treeview element in the popup.
-     */
     treeviewId?: string;
 };
 

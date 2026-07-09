@@ -16,9 +16,6 @@ export type KendoActionSheetViewProps = {
     footer?: React.ReactElement<typeof ActionSheetFooter>;
     adaptive?: boolean;
     animated?: boolean;
-    /**
-     * ID for the title element, used by aria-labelledby on the ActionSheet.
-     */
     titleId?: string;
 }
 

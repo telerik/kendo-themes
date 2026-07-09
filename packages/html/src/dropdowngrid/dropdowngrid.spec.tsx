@@ -59,17 +59,8 @@ export type KendoDropdownGridProps = KendoDropdownGridOptions & {
     adaptiveSettings?: KendoActionSheetProps;
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
-    /**
-     * Unique identifier for the dropdowngrid. Used to generate related IDs.
-     */
     id?: string;
-    /**
-     * Autocomplete behavior: 'list', 'both', or 'inline'.
-     */
     ariaAutocomplete?: 'list' | 'both' | 'inline' | 'none';
-    /**
-     * ID of the currently focused/active item in the table list.
-     */
     activeDescendant?: string;
 };
 

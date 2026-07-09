@@ -54,13 +54,7 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveFilter?: boolean;
-    /**
-     * Unique identifier for the dropdownlist. Used to generate related IDs.
-     */
     id?: string;
-    /**
-     * ID of the currently focused/active item in the listbox.
-     */
     activeDescendant?: string;
 };
 

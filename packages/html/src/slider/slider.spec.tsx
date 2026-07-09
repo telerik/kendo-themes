@@ -18,7 +18,6 @@ const options = {};
 export type KendoSliderProps = {
     type?: 'single' | 'range' | 'gradient';
     orientation?: 'horizontal' | 'vertical';
-    /** For gradient sliders in 2D canvas pickers - direction cannot be determined */
     gradientType?: '1d' | '2d';
     dir?: 'ltr' | 'rtl';
     handlePosition?: 'start' | 'end';
@@ -28,9 +27,7 @@ export type KendoSliderProps = {
     value?: number;
     min?: number;
     max?: number;
-    /** For range slider - the start value */
     startValue?: number;
-    /** For range slider - the end value */
     endValue?: number;
 };
 

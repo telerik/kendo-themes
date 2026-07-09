@@ -27,9 +27,6 @@ export type KendoListItemProps = {
     showCheckbox?: boolean;
     actions?: React.JSX.Element;
     description?: string;
-    /**
-     * Unique identifier for the list item. Required for aria-activedescendant navigation.
-     */
     id?: string;
 };
 

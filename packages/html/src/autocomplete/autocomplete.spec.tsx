@@ -54,17 +54,8 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveCustomValue?: boolean;
-    /**
-     * Unique identifier for the autocomplete. Used to generate related IDs.
-     */
     id?: string;
-    /**
-     * Autocomplete behavior: 'list', 'both', or 'inline'.
-     */
     autocomplete?: 'list' | 'both' | 'inline' | 'none';
-    /**
-     * ID of the currently focused/active item in the listbox.
-     */
     activeDescendant?: string;
 };
 

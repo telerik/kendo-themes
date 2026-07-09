@@ -21,7 +21,6 @@ export type KendoOrgchartNodeProps = {
     ariaExpanded?: boolean;
     ariaOwns?: string;
     focus?: boolean;
-    /** Whether to show the card menu button */
     menuButton?: boolean;
 };
 
