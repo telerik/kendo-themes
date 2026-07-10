@@ -1,4 +1,4 @@
-# Daterangepicker Accessibility
+# Daterangepicker Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,19 @@ The Daterangepicker is compliant with the [Web Content Accessibility Guidelines 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-daterangepicker` element.
 
 #### ARIA Attributes
 
@@ -29,6 +37,15 @@ The Daterangepicker is compliant with the [Web Content Accessibility Guidelines 
 | `Escape` | Closes the popup |
 | `Alt/Opt(Mac) + ArrowDown` | Opens the popup |
 | `Alt/Opt(Mac) + ArrowUp` | Closes the popup |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Range selection | Start and end dates are chosen via two inputs linked to a shared popup calendar. |
+| Linked calendars | Both calendar months advance together as the user navigates. |
+| Inline mode | Can be rendered as an always-visible calendar without a popup. |
+| Disabled state | When disabled, both inputs are non-interactive. |
 
 ### Testing
 
@@ -48,3 +65,7 @@ The Daterangepicker has been tested with the following screen readers and browse
 
 - [WAI ARIA specification for combobox](https://www.w3.org/TR/wai-aria-1.2/#combobox)
 - [ARIA practices Date Picker Dialog Example](https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/daterangepicker/`](https://github.com/telerik/kendo-themes/tree/develop/tests/daterangepicker/).

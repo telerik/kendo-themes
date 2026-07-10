@@ -41,6 +41,10 @@ const defaultOptions = {
  * @aria {tabindex="0"} The focused item has tabindex 0.
  * @aria {aria-controls="ul.k-menu-group id"} Points to the ID of the submenu. Only present when the item controls a submenu element.
  * @aria {aria-expanded} state for expandable items
+ * @ux {Action trigger} Clicking the item executes its associated action or navigates to its link.
+ * @ux {Submenu indicator} Displays an arrow when the item has a nested submenu.
+ * @ux {Disabled state} When disabled, the item is non-interactive.
+ * @ux {Separator} A horizontal line variant visually divides groups of items.
  */
 export const MenuItem: KendoComponent<KendoMenuItemProps & KendoMenuItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoMenuItemProps &

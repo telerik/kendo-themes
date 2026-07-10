@@ -1,4 +1,4 @@
-# Progressbar Accessibility
+# Progressbar Specification
 
 ## Accessibility Support
 
@@ -8,19 +8,45 @@ The Progressbar is compliant with the [Web Content Accessibility Guidelines (WCA
 
 ### ChunkProgressBar
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+| `indeterminate` | `k-indeterminate` |
+
+These CSS classes are applied to the `k-chunk-progressbar` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |
 | --- | --- |
 | `aria-label` | accessible name for the progressbar |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Segmented fill | Progress is shown as a series of discrete filled chunks. |
+| Chunk count | The number of chunks is configurable. |
+| Orientation | Can be rendered horizontally or vertically. |
+
 ### ProgressBar
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `orientation` | `horizontal`, `vertical` | `horizontal` |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+| `indeterminate` | `k-indeterminate` |
+
+These CSS classes are applied to the `k-progressbar` element.
 
 #### ARIA Attributes
 
@@ -31,6 +57,15 @@ The Progressbar is compliant with the [Web Content Accessibility Guidelines (WCA
 | `aria-valuemin` | Minimum value. Defaults to 0. |
 | `aria-valuemax` | Maximum value. Defaults to 100. |
 | `aria-label` | accessible name for the progressbar |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Fill animation | The bar animates from 0 to the current value when first displayed. |
+| Value label | Optionally shows the percentage or a custom text label inside the bar. |
+| Indeterminate | Displays a looping animation when the final value is unknown. |
+| Orientation | Can be rendered horizontally or vertically. |
 
 ### Testing
 
@@ -50,3 +85,7 @@ The Progressbar has been tested with the following screen readers and browsers c
 
 - [WAI-ARIA specification for progressbar](https://www.w3.org/TR/wai-aria-1.2/#progressbar)
 - [MDN reference for the progressbar role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/progressbar_role#associated_wai-aria_roles_states_and_properties)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/progressbar/`](https://github.com/telerik/kendo-themes/tree/develop/tests/progressbar/).

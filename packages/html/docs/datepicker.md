@@ -1,4 +1,4 @@
-# Datepicker Accessibility
+# Datepicker Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Datepicker is compliant with the [Web Content Accessibility Guidelines (WCAG
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-datepicker` element.
 
 #### ARIA Attributes
 
@@ -40,6 +55,16 @@ The Datepicker is compliant with the [Web Content Accessibility Guidelines (WCAG
 | `Alt/Opt(Mac) + ArrowUp` | Closes the popup |
 | `Tab` | Closes the actionsheet and focuses the next focusable element. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Calendar popup | A calendar opens when the calendar button is clicked. |
+| Direct input | The date can also be typed directly into the input field. |
+| Formatted value | The selected date is formatted according to the configured locale. |
+| Min / Max | Selection can be restricted to a configurable date range. |
+| Disabled state | When disabled, the input and popup button are non-interactive. |
+
 ### Testing
 
 The Datepicker has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -58,3 +83,7 @@ The Datepicker has been tested with the following screen readers and browsers co
 
 - [WAI ARIA specification for combobox](https://www.w3.org/TR/wai-aria-1.2/#combobox)
 - [ARIA practices Date Picker Dialog Example](https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/datepicker/`](https://github.com/telerik/kendo-themes/tree/develop/tests/datepicker/).

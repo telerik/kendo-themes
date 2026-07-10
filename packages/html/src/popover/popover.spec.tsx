@@ -23,6 +23,10 @@ export type KendoPopoverProps = {
  * @aria {aria-labelledby} Links the popover container with the popover header element when there is focusable content.
  * @aria {aria-describedby} Links the popover container with the popover body element when there is focusable content.
  * @aria {id} required so the trigger element can reference it via aria-describedby
+ * @ux {Trigger} Opens when the target element is clicked, hovered, or focused.
+ * @ux {Auto-positioning} Automatically flips or shifts to stay within the viewport.
+ * @ux {Dismiss} Closes when clicking outside the popover or pressing Escape.
+ * @ux {Arrow} An optional pointer arrow visually connects the popover to its trigger.
  */
 export const Popover: KendoComponent<KendoPopoverProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPopoverProps &

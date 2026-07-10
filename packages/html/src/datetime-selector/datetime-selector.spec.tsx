@@ -35,6 +35,9 @@ const defaultOptions = {
  * @aria {aria-label} Describes the date/time selector purpose.
  * @aria {role="group"} The segmented control acts as a group for Date/Time selection.
  * @aria {aria-pressed} Indicates which option is currently active.
+ * @ux {Date / Time tabs} Segmented control switches between date and time selection views.
+ * @ux {Scroll columns} Each time unit is shown in a scrollable column for touch-friendly selection.
+ * @ux {OK / Cancel} Action buttons confirm or discard the selection.
  */
 export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDateTimeSelectorProps &

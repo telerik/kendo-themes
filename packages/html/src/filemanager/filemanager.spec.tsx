@@ -51,6 +51,11 @@ const defaultOptions = {
 
 /**
  * @aria {tabindex="0"} The element must be focusable, so that its content would be communicated to the users.
+ * @ux {Folder tree} A tree panel on the left lets the user navigate the directory hierarchy.
+ * @ux {Content view} The main panel lists the files and folders of the selected directory.
+ * @ux {Breadcrumb} A breadcrumb trail shows the current path and allows navigation.
+ * @ux {View toggle} Switches between grid (icon) and list file views.
+ * @ux {Toolbar} Provides actions such as New Folder, Upload, Delete, and Rename.
  */
 export const FileManager: KendoComponent<KendoFileManagerProps & KendoFileManagerState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFileManagerProps &

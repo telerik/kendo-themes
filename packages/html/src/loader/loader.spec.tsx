@@ -42,8 +42,10 @@ const defaultOptions = {
  * @aria {role="status"} Live region that announces the loading state to assistive technologies.
  * @aria {aria-label} Accessible name for the loader (default: "Loading").
  * @aria {aria-live="polite"} Polite announcements of loading state changes.
- *
 
+ * @ux {Indeterminate progress} Displays a looping animation to signal ongoing background work.
+ * @ux {Sizes} Available in small, medium, and large sizes.
+ * @ux {Theme colors} Can be styled with any of the theme palette colors.
  */
 export const Loader: KendoComponent<KendoLoaderProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoLoaderProps &

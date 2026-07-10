@@ -21,6 +21,10 @@ const defaultOptions = {};
 
 /**
  * @aria {role="list"} Sets list role to the TileLayout wrapper.
+ * @ux {Tiles} Content areas are organized as resizable tiles in a grid.
+ * @ux {Drag and drop} Tiles are reordered by dragging their header.
+ * @ux {Resize} Tile dimensions are adjusted by dragging the resize handle at the tile corner.
+ * @ux {Gap} Configurable spacing is applied uniformly between tiles.
  */
 export const TileLayout: KendoComponent<KendoTileLayoutProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTileLayoutProps & React.HTMLAttributes<HTMLSpanElement>

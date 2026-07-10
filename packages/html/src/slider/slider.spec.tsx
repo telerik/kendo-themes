@@ -67,6 +67,11 @@ const defaultOptions = {
  * @aria {aria-hidden="true"} Hides the tick list from assistive technologies. Tick values are redundant with the drag handle value attributes.
  * @aria {role="presentation"} Removes semantic meaning from individual tick elements. Ticks are visual-only markers.
  * @aria {title} Represents the value associated with the respective tick.
+ * @ux {Drag} The handle is dragged along the track to change the value.
+ * @ux {Click} Clicking on the track moves the handle to that position.
+ * @ux {Range mode} Two handles define a start and end value when range selection is enabled.
+ * @ux {Tick marks} Optional tick marks indicate fixed value intervals along the track.
+ * @ux {Disabled state} When disabled, the handle cannot be moved.
  */
 
 export const Slider: KendoComponent<KendoSliderProps & KendoSliderState & React.HTMLAttributes<HTMLDivElement>> = (

@@ -1,4 +1,4 @@
-# Chip Accessibility
+# Chip Specification
 
 ## Accessibility Support
 
@@ -10,12 +10,24 @@ The Chip is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `outline` | — |
 | `themeColor` | `base`, `success`, `warning`, `error`, `info` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-chip` element.
 
 #### Keyboard Navigation
 
@@ -26,11 +38,20 @@ The Chip is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `Enter or Space` | Triggers a click action on the Chip. |
 | `Delete or Backspace` | Removes the Chip when a delete action is configured. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Selection | Can be toggled to a selected/active state by clicking. |
+| Removable | An optional remove icon allows the chip to be dismissed. |
+| Icon or avatar | Can display an icon or avatar image alongside the label. |
+| Disabled state | When disabled, the chip is non-interactive. |
+
 ### ChipList
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -46,6 +67,14 @@ The Chip is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `aria-keyshortcuts="Enter Delete"` | Announces the Delete action along with the default Enter key. |
 | `aria-multiselectable="true"` | Indicates multiple selections are allowed. |
 | `aria-label` | Accessible name for the chip list; required when role="listbox". |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Chip group | Renders a horizontal or wrapping collection of chip elements. |
+| Selection | Supports single or multi-selection across the chips in the list. |
+| Add chip | Can include an add-chip control to allow the user to create new chips. |
 
 ### Testing
 
@@ -64,3 +93,7 @@ The Chip has been tested with the following screen readers and browsers combinat
 ### Resources
 
 - [WAI-ARIA Authoring Practices: Button Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/chip/`](https://github.com/telerik/kendo-themes/tree/develop/tests/chip/).

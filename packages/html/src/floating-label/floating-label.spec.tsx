@@ -24,6 +24,10 @@ export type KendoFloatingLabelProps = {
     optional?: boolean;
 };
 
+/**
+ * @ux {Animated label} The label starts inside the input field and floats above it when the field is focused or has a value.
+ * @ux {Placeholder replacement} Acts as both the visible placeholder and the label before the field is filled.
+ */
 export const FloatingLabel: KendoComponent<FloatingLabelState & KendoFloatingLabelProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: FloatingLabelState & KendoFloatingLabelProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {

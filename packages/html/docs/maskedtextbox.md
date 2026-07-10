@@ -1,4 +1,4 @@
-# Maskedtextbox Accessibility
+# Maskedtextbox Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Maskedtextbox is compliant with the [Web Content Accessibility Guidelines (W
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-maskedtextbox` element.
 
 #### ARIA Attributes
 
@@ -26,6 +41,15 @@ The Maskedtextbox is compliant with the [Web Content Accessibility Guidelines (W
 | `aria-invalid="true"` | Rendered when the MaskedTextBox is in an invalid state. |
 | `aria-describedby` | Points to the hint or error message. |
 | `aria-disabled="true"` | Rendered when the MaskedTextBox is disabled. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Mask pattern | Formats input according to a configurable pattern (e.g., phone numbers, dates). |
+| Prompt character | Unfilled mask positions are shown with a placeholder character (default: underscore). |
+| Auto-advance | Focus moves to the next mask segment as each one is filled. |
+| Disabled state | When disabled, the input is non-interactive. |
 
 ### Testing
 
@@ -40,3 +64,7 @@ The Maskedtextbox has been tested with the following screen readers and browsers
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/maskedtextbox/`](https://github.com/telerik/kendo-themes/tree/develop/tests/maskedtextbox/).

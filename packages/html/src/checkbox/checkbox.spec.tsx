@@ -40,6 +40,10 @@ const defaultOptions = {};
  * @aria {aria-describedby} Points to the hint or error message for the checkbox.
  * @aria {aria-disabled="true"} For native checkboxes use the HTML disabled attribute. aria-disabled for custom implementations.
  * @aria {role} override for the wrapper span (e.g., role="none" in Treeview context)
+ * @ux {Toggle} Clicking toggles between checked and unchecked states.
+ * @ux {Indeterminate} Can be set to an indeterminate (partial-selection) state programmatically.
+ * @ux {Label} An associated label element describes the purpose of the checkbox.
+ * @ux {Disabled state} When disabled, the checkbox cannot be toggled.
  */
 export const Checkbox: KendoComponent<CheckboxProps & CheckboxState & React.HTMLAttributes<HTMLInputElement>> = (
     props: CheckboxProps & CheckboxState & React.HTMLAttributes<HTMLInputElement>

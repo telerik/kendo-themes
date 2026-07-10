@@ -55,6 +55,9 @@ const defaultOptions = {
  *
 
  * @aria {alt} Images inside Avatar must have alt text for screen readers.
+ * @ux {Image display} Shows a user profile photo or custom image inside a circular container.
+ * @ux {Initials fallback} Displays the user's initials when no image is provided.
+ * @ux {Sizes} Available in extra-small, small, medium, large, and extra-large sizes.
  */
 export const Avatar: KendoComponent<KendoAvatarProps & KendoAvatarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoAvatarProps &

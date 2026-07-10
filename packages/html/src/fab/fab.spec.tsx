@@ -48,6 +48,10 @@ const defaultOptions = {
  * @aria {role="button"} Omitted if the <button> DOM element is used.
  * @aria {aria-label|title} The attribute must be present when no text is initially visible in the button.
  * @aria {aria-disabled="true"} Rendered only when the button is disabled.
+ * @ux {Fixed position} Floats over the page content at a configurable viewport corner.
+ * @ux {Action list} Can expand to reveal a list of secondary action buttons.
+ * @ux {Icon} Displays a single icon representing the primary action.
+ * @ux {Disabled state} When disabled, the button and its action list are non-interactive.
  */
 export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps & KendoFloatingActionButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoFloatingActionButtonProps &

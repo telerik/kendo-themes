@@ -77,6 +77,11 @@ const defaultOptions = {
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-autocomplete} Indicates autocomplete type
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @ux {Popup} Opens a suggestion list when the user starts typing.
+ * @ux {Filtering} Narrows the suggestion list as the user types.
+ * @ux {Selection} Choosing a suggestion fills the input and closes the popup.
+ * @ux {Placeholder} Displays hint text inside the input when it is empty.
+ * @ux {Disabled state} When disabled, the input is non-interactive and visually dimmed.
  */
 export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocompleteState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoAutocompleteProps &

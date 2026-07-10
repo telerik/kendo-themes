@@ -1,4 +1,4 @@
-# Notification Accessibility
+# Notification Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Notification is compliant with the [Web Content Accessibility Guidelines (WC
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `success`, `warning`, `error`, `info`, `inverse` | — |
 
@@ -22,6 +22,15 @@ The Notification is compliant with the [Web Content Accessibility Guidelines (WC
 | `aria-live="polite"` | The aria-live value must be polite so it will not obscure other essential information. |
 | `aria-describedby=".k-notification-content id"` | Used so that the content of the Notification will be announced by assistive technologies. |
 | `aria-hidden="true"` | The close button icon should not be present in the accessibility tree. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Auto-dismiss | Disappears automatically after a configurable timeout. |
+| Viewport position | Can be anchored to any corner of the viewport. |
+| Status variants | Supports info, success, warning, and error types. |
+| Stacking | Multiple notifications stack and can be dismissed independently. |
 
 ### Testing
 
@@ -41,3 +50,7 @@ The Notification has been tested with the following screen readers and browsers 
 
 - [WAI-ARIA spec: Role Alert](https://www.w3.org/TR/wai-aria-1.2/#alert)
 - [ARIA Practices: Alert](https://www.w3.org/WAI/ARIA/apg/patterns/alert/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/notification/`](https://github.com/telerik/kendo-themes/tree/develop/tests/notification/).

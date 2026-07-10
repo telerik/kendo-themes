@@ -15,6 +15,11 @@ export type KendoTaskBoardCardProps = {
 
 const defaultOptions = {};
 
+/**
+ * @ux {Draggable} Cards are dragged to another column to change their workflow status.
+ * @ux {Edit} Clicking the card opens an edit form for the card details.
+ * @ux {Header and body} Displays a title and optional content or metadata.
+ */
 export const TaskBoardCard = (
     props: KendoTaskBoardCardProps &
         KendoCardProps & KendoCardOptions & KendoCardState &

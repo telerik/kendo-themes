@@ -1,4 +1,4 @@
-# ButtonGroup Accessibility
+# ButtonGroup Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,17 @@ The ButtonGroup is compliant with the [Web Content Accessibility Guidelines (WCA
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `fillMode` | `solid`, `flat`, `outline`, `clear`, `link` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-button-group` element.
 
 #### ARIA Attributes
 
@@ -29,6 +37,14 @@ The ButtonGroup is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Tab` | Focuses the next button in the group. If the focus is on the last button, focuses the next focusable element on the page. |
 | `Shift + Tab` | Focuses the previous button in the group. If the focus is on the first button, focuses the previous focusable element before the ButtonGorup. |
 | `Enter or Space` | Triggers a click action on the button. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Exclusive selection | Only one button in the group can be active at a time. |
+| Multi-select | Multiple buttons can be active simultaneously when configured. |
+| Disabled group | When the group is disabled, all buttons are non-interactive. |
 
 ### Testing
 
@@ -48,3 +64,7 @@ The ButtonGroup has been tested with the following screen readers and browsers c
 
 - [WAI-ARIA `button` Role Specification](https://www.w3.org/TR/wai-aria-1.2/#button)
 - [WAI-ARIA `group` Role Specification](https://www.w3.org/TR/wai-aria-1.2/#group)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/button-group/`](https://github.com/telerik/kendo-themes/tree/develop/tests/button-group/).

@@ -1,4 +1,4 @@
-# Treeview Accessibility
+# Treeview Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Treeview is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -36,7 +36,28 @@ The Treeview is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `Control/Cmd(Mac) + Enter` | Selects the focused item. When the item is already selected, it gets deselected. |
 | `Printable Characters` | Typing `M` or any other printable character focuses the next or the first item in the list. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Expand / Collapse | Nodes with children can be expanded to reveal them. |
+| Selection | A node is selected by clicking its label. |
+| Multi-select | Multiple nodes can be selected with Ctrl/Shift click. |
+| Checkboxes | Optional checkboxes provide hierarchical multi-selection with parent/child propagation. |
+| Drag and drop | Nodes can be dragged to a new position within the tree. |
+
 ### TreeviewItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-treeview-item` element.
 
 #### ARIA Attributes
 
@@ -48,6 +69,15 @@ The Treeview is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `aria-label` | The checkbox input must have an accessible name matching the treeview item text. |
 | `tabindex="-1"` | The checkbox input must not be in the tab order. Keyboard interaction is handled by the treeitem. |
 | `aria-selected="true"` | when node is selected |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Expand / Collapse | A toggle arrow reveals or hides the node's children. |
+| Selection | Clicking the label selects the node. |
+| Checkbox | An optional checkbox enables hierarchical multi-selection. |
+| Drag handle | Allows the node to be dragged to a new position within the tree. |
 
 ### Testing
 
@@ -66,3 +96,7 @@ The Treeview has been tested with the following screen readers and browsers comb
 ### Resources
 
 - [WAI-ARIA Authoring Practices: File Directory Treeview Example](https://www.w3.org/WAI/ARIA/apg/example-index/treeview/treeview-1/treeview-1a.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/treeview/`](https://github.com/telerik/kendo-themes/tree/develop/tests/treeview/).

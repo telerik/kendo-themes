@@ -40,6 +40,10 @@ const defaultOptions = {
  * @aria {aria-label} Specifies label for the Previous/Next button.
  * @aria {aria-controls} Points to the id of the items container element.
  * @aria {aria-live="polite"} Identifies a hidden element as a live region in the polite state.
+ * @ux {Paged scrolling} Advances one item at a time on swipe or arrow-button click.
+ * @ux {Navigation arrows} Previous and next buttons navigate between pages.
+ * @ux {Pager dots} Indicator dots show the current page and total page count.
+ * @ux {Auto-play} Cycles through items automatically at a configurable interval.
  */
 export const ScrollView: KendoComponent<KendoScrollViewProps> = (
     props: KendoScrollViewProps

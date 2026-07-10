@@ -1,4 +1,4 @@
-# BottomNav Accessibility
+# BottomNav Specification
 
 ## Accessibility Support
 
@@ -10,10 +10,18 @@ The BottomNav is compliant with the [Web Content Accessibility Guidelines (WCAG)
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `fillMode` | `solid`, `flat` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `inverse` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-bottom-nav` element.
 
 #### ARIA Attributes
 
@@ -66,3 +74,7 @@ The BottomNav has been tested with the following screen readers and browsers com
 ### Resources
 
 - [ARIA practices Navigation](https://www.w3.org/TR/wai-aria-1.2/#navigation)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/bottom-nav/`](https://github.com/telerik/kendo-themes/tree/develop/tests/bottom-nav/).

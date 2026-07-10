@@ -1,4 +1,4 @@
-# Chat Accessibility
+# Chat Specification
 
 ## Accessibility Support
 
@@ -20,6 +20,16 @@ The Chat is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `Enter` | Sends the message. |
 | `Shift + Enter` | Start a new line in the textarea message box. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Message list | Displays a scrollable list of messages from the user and the agent. |
+| Input | A text input at the bottom lets the user compose and send messages. |
+| Toolbar | An optional toolbar above the input provides additional actions. |
+| Typing indicator | Shows an animated indicator while the other party is responding. |
+| Suggestions | Displays quick-reply suggestion chips above the input. |
+
 ### Testing
 
 The Chat has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -37,3 +47,7 @@ The Chat has been tested with the following screen readers and browsers combinat
 ### Resources
 
 - [WAI-ARIA specification for log](https://www.w3.org/TR/wai-aria-1.2/#log)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/chat/`](https://github.com/telerik/kendo-themes/tree/develop/tests/chat/).

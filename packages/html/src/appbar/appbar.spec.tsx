@@ -27,6 +27,11 @@ export type KendoAppbarProps = KendoAppbarOptions & {
     position?: 'top' | 'bottom';
 };
 
+/**
+ * @ux {Application header} Renders as the primary header bar of the application.
+ * @ux {Sticky positioning} Stays fixed at the top of the viewport as the user scrolls.
+ * @ux {Sections} Divided into start, center, and end sections for flexible content placement.
+ */
 export const Appbar: KendoComponent<KendoAppbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoAppbarProps &
         React.HTMLAttributes<HTMLDivElement>

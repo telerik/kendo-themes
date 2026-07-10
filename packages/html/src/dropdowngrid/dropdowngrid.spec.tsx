@@ -79,6 +79,10 @@ export type KendoDropdownGridState = { [K in (typeof states)[number]]?: boolean 
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-autocomplete} Indicates autocomplete type
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @ux {Grid popup} A data grid opens in a popup when the control is activated.
+ * @ux {Row selection} Clicking a grid row selects it and fills the input field.
+ * @ux {Filtering} The input field filters the displayed rows as the user types.
+ * @ux {Placeholder} Displays hint text when no row is selected.
  */
 export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdownGridState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDropdownGridProps &

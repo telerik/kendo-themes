@@ -30,6 +30,11 @@ const defaultOptions = {
     iconPosition: "before",
 };
 
+/**
+ * @ux {Tab activation} Clicking the tab header activates it and shows its content panel.
+ * @ux {Close button} An optional × button removes the tab from the strip.
+ * @ux {Disabled state} When disabled, the tab cannot be activated.
+ */
 export const TabStripItem = (
     props: KendoTabStripItemProps &
         KendoTabStripItemState &

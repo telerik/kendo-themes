@@ -40,6 +40,9 @@ const defaultOptions = {};
  * @aria {aria-describedby} Points to the hint or error message for the radio.
  * @aria {aria-disabled="true"} Rendered only when the radio input is disabled.
  * @aria {aria-invalid="true"} Rendered only when the radio button is in a form and announces the invalid state.
+ * @ux {Exclusive selection} Selecting a radio button deselects all others in the group.
+ * @ux {Label} An associated label describes the option the radio button represents.
+ * @ux {Disabled state} When disabled, the radio button is non-interactive.
  */
 export const RadioButton: KendoComponent<RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLInputElement>> = (
     props: RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLInputElement>

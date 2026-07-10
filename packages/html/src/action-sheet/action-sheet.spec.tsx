@@ -38,6 +38,11 @@ const defaultOptions = {
  * @aria {aria-modal="true"} Announces that the action sheet is modal.
  * @aria {id} Used to associate the title with the action sheet wrapper element.
  * @aria {aria-labelledby} references ${id}-title
+ * @ux {Overlay} Renders over the page content and prevents interaction with the rest of the UI.
+ * @ux {Side} Can be anchored to any edge of the screen: top, right, bottom, or left.
+ * @ux {Title and subtitle} Optionally renders a title and subtitle to describe the available actions.
+ * @ux {Items} Each action item consists of a label and an optional icon.
+ * @ux {Dismiss} Closes when the user taps the overlay backdrop or presses Escape.
  */
 export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoActionSheetProps &

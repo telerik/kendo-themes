@@ -1,4 +1,4 @@
-# Avatar Accessibility
+# Avatar Specification
 
 ## Accessibility Support
 
@@ -10,18 +10,38 @@ The Avatar is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `outline` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary` | — |
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-avatar` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |
 | --- | --- |
 | `alt` | Images inside Avatar must have alt text for screen readers. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Image display | Shows a user profile photo or custom image inside a circular container. |
+| Initials fallback | Displays the user's initials when no image is provided. |
+| Sizes | Available in extra-small, small, medium, large, and extra-large sizes. |
 
 ### Testing
 
@@ -40,3 +60,7 @@ The Avatar has been tested with the following screen readers and browsers combin
 ### Resources
 
 - [WCAG 1.1.1 Non — text Content - images must have text alternatives](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/avatar/`](https://github.com/telerik/kendo-themes/tree/develop/tests/avatar/).

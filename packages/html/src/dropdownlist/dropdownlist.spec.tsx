@@ -79,6 +79,11 @@ const defaultOptions = {
  * @aria {role="option"} Each list item is an option.
  * @aria {id} Referenced by aria-controls and aria-activedescendant on the input.
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @ux {Popup} Clicking the control opens a scrollable list of options.
+ * @ux {Selection} Clicking an option selects it and closes the popup.
+ * @ux {Filtering} The list can be filtered when the user types.
+ * @ux {Placeholder} Displays hint text when no option is selected.
+ * @ux {Disabled state} When disabled, the control is non-interactive.
  */
 export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdownListState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoDropdownListProps &

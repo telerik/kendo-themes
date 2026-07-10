@@ -1,4 +1,4 @@
-# Breadcrumb Accessibility
+# Breadcrumb Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,17 @@ The Breadcrumb is compliant with the [Web Content Accessibility Guidelines (WCAG
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-breadcrumb` element.
 
 #### ARIA Attributes
 
@@ -31,6 +39,15 @@ The Breadcrumb is compliant with the [Web Content Accessibility Guidelines (WCAG
 | `Tab or Shift + Tab` | Focuses next and previous breadcrumb items. The focusable element is the element with either `a` tag, or `role=\"link\"` |
 | `Enter` | Selects the Bredcrumb item, and navigates to it (if navigatable). |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Navigation trail | Shows the current page location within the application hierarchy. |
+| Collapsing | Collapses middle items into an ellipsis when space is limited. |
+| Last item | The last item represents the current page and is non-interactive. |
+| Root icon | Optionally displays a home icon as the first item. |
+
 ### Testing
 
 The Breadcrumb has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -48,3 +65,7 @@ The Breadcrumb has been tested with the following screen readers and browsers co
 ### Resources
 
 - [ARIA practices: BreadCrumb Example](https://www.w3.org/WAI/ARIA/apg/example-index/breadcrumb/index.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/breadcrumb/`](https://github.com/telerik/kendo-themes/tree/develop/tests/breadcrumb/).

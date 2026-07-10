@@ -62,6 +62,11 @@ const defaultOptions = {
  * @aria {aria-valuemin} Required by the slider role.
  * @aria {aria-valuemax} Required by the slider role.
  * @aria {aria-label} Must provide the name of the channel (red, green, blue, or alpha).
+ * @ux {Gradient canvas} A 2D canvas lets the user pick a color by clicking or dragging.
+ * @ux {Hue slider} A slider below the canvas adjusts the hue.
+ * @ux {Opacity slider} A slider adjusts the alpha channel of the selected color.
+ * @ux {Hex input} A text input accepts a hex color code directly.
+ * @ux {RGBA inputs} Individual inputs accept red, green, blue, and alpha values.
  */
 export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorGradientState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColorGradientProps &

@@ -1,4 +1,4 @@
-# Dropdownlist Accessibility
+# Dropdownlist Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Dropdownlist is compliant with the [Web Content Accessibility Guidelines (WC
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-dropdownlist` element.
 
 #### ARIA Attributes
 
@@ -49,6 +64,16 @@ The Dropdownlist is compliant with the [Web Content Accessibility Guidelines (WC
 | `Printable Characters` | Typing "M" or any other printable character should select the next or first item in the list. Swiftly typing should capture multiple printable characters after the first one. |
 | `Tab` | Closes the actionsheet and focuses the next focusable element. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Popup | Clicking the control opens a scrollable list of options. |
+| Selection | Clicking an option selects it and closes the popup. |
+| Filtering | The list can be filtered when the user types. |
+| Placeholder | Displays hint text when no option is selected. |
+| Disabled state | When disabled, the control is non-interactive. |
+
 ### Testing
 
 The Dropdownlist has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -66,3 +91,7 @@ The Dropdownlist has been tested with the following screen readers and browsers 
 ### Resources
 
 - [WAI-ARIA Authoring Practices: Select-Only Combobox Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/dropdownlist/`](https://github.com/telerik/kendo-themes/tree/develop/tests/dropdownlist/).

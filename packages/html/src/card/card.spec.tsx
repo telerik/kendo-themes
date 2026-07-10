@@ -25,6 +25,12 @@ export type KendoCardProps = KendoCardOptions & {
 
 export type KendoCardState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @ux {Content container} Groups related content in a visually elevated surface.
+ * @ux {Header and footer} Optional header and footer sections hold titles and actions.
+ * @ux {Media} Supports an image or other media element at the top of the card.
+ * @ux {Actions} Optional action buttons are placed in the card body or footer.
+ */
 export const Card: KendoComponent<KendoCardProps & KendoCardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCardProps &
         KendoCardState &

@@ -1,4 +1,4 @@
-# Tooltip Accessibility
+# Tooltip Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Tooltip is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `themeColor` | `base`, `inverse`, `info`, `success`, `warning`, `error` | — |
 
@@ -28,6 +28,15 @@ The Tooltip is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 | Trigger | Behavior |
 | --- | --- |
 | `Escape` | Dismisses the Tooltip. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Hover trigger | Appears when the cursor hovers over the target element. |
+| Focus trigger | Also appears when the target receives keyboard focus. |
+| Auto-positioning | Automatically repositions to remain within the viewport. |
+| Delay | Configurable show and hide delays prevent flickering. |
 
 ### Testing
 
@@ -47,3 +56,7 @@ The Tooltip has been tested with the following screen readers and browsers combi
 
 - [WAI-ARIA specification for tooltip](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/)
 - [MDN description for tooltip role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/tooltip/`](https://github.com/telerik/kendo-themes/tree/develop/tests/tooltip/).

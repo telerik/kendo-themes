@@ -32,6 +32,9 @@ const defaultOptions = {
 /**
  * Skeleton component - displays placeholder loading indicators.
  *
+ * @ux {Shape variants} Available in text, rectangle, and circle shapes to mirror real content.
+ * @ux {Animation} A shimmer or pulse animation plays while content is loading.
+ * @ux {Composition} Multiple skeleton elements compose a placeholder that approximates the actual layout.
  */
 export const Skeleton: KendoComponent<KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>

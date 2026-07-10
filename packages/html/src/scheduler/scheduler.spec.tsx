@@ -27,6 +27,17 @@ export type KendoSchedulerProps = {
  * @aria {role="grid"} The main table of the Agenda view must indicate it is a Data Grid.
  * @aria {role="none"|\"presentation"} The <tbody> element must have its semantics removed.
  * @aria {role="none"|\"presentation"} All <table> elements within the Scheduler must have their semantic role removed.
+ * @ux {Multiple views} Switches between day, week, month, agenda, and timeline views.
+ * @ux {View switcher} Views are accessible via a ButtonGroup or a DropDown in the toolbar.
+ * @ux {Navigation} Previous and next buttons move to the adjacent time period.
+ * @ux {Today button} A button jumps the view back to the current date instantly.
+ * @ux {Calendar navigation} A calendar button opens a date picker for jumping to any date.
+ * @ux {Business hours} A toggle switches the view between business hours and full day.
+ * @ux {Resource grouping} Events can be grouped by resource (e.g., room or person) across applicable views.
+ * @ux {Event creation} Clicking an empty time slot opens a dialog to create a new event.
+ * @ux {Event editing} Clicking an existing event opens an edit form.
+ * @ux {Drag and drop} Events can be dragged to a different time slot.
+ * @ux {Resize} Dragging an event's edge adjusts its duration.
  */
 export const Scheduler: KendoComponent<KendoSchedulerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerProps & React.HTMLAttributes<HTMLDivElement>

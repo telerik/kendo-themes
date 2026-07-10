@@ -1,4 +1,4 @@
-# Form Accessibility
+# Form Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Form is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -22,6 +22,16 @@ The Form is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `Tab` | Moves focus to the next focusable element. |
 | `Space` | Triggers the default action of the focused element for the Space key. |
 | `Enter` | Triggers the default action of the focused element for the Enter key. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Validation | Validates field values on change or submit and shows inline error messages. |
+| Labels | Each field has an associated label that describes its purpose. |
+| Hint | Optional hint text below a field provides additional guidance. |
+| Required indicator | Required fields are visually marked with an asterisk. |
+| Layout | Supports horizontal (label beside field) and vertical (label above field) layouts. |
 
 ### Testing
 
@@ -36,3 +46,7 @@ The Form has been tested with the following screen readers and browsers combinat
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/form/`](https://github.com/telerik/kendo-themes/tree/develop/tests/form/).

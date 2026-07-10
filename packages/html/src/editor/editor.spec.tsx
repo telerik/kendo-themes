@@ -26,6 +26,13 @@ const defaultOptions = {
 
 export type KendoEditorState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @ux {Toolbar} A formatting toolbar provides commands for styling content.
+ * @ux {Rich content} Supports formatted text, hyperlinks, images, and tables.
+ * @ux {Paste cleanup} Automatically cleans up formatting when pasting from external sources.
+ * @ux {Source view} A toggle button switches between rich-text and raw HTML views.
+ * @ux {Disabled state} When disabled, the content area is read-only.
+ */
 export const Editor: KendoComponent<KendoEditorState & KendoEditorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoEditorState &
         KendoEditorProps &

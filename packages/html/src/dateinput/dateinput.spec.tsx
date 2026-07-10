@@ -55,6 +55,11 @@ const defaultOptions = {
  * @aria {aria-describedby} Points to the hint or error message.
  * @aria {aria-readonly="true"} Rendered when the DateInput is readonly.
  * @aria {aria-disabled="true"} Rendered when the DateInput is disabled.
+ * @ux {Segment editing} Each date part (day, month, year) is focused and edited independently.
+ * @ux {Spin} Arrow keys increment or decrement the focused date segment.
+ * @ux {Format placeholder} The expected date format is shown as placeholder text.
+ * @ux {Validation} Invalid values trigger an error visual state.
+ * @ux {Disabled state} When disabled, the input is non-interactive.
  */
 export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDateInputProps &

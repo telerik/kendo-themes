@@ -46,6 +46,9 @@ const defaultOptions = {};
  * @aria {tabindex="0"} The element must be focusable. Disabled switches are removed from tab order.
  * @aria {aria-disabled="true"} Rendered only when the Switch is disabled.
  * @aria {aria-readonly="true"} Rendered only when the Switch is readonly. Readonly switches remain focusable but their value cannot be changed.
+ * @ux {Toggle} Clicking the switch flips between on and off states.
+ * @ux {Labels} Optional on/off labels inside the track reflect the current state.
+ * @ux {Disabled state} When disabled, the switch cannot be toggled.
  */
 export const Switch: KendoComponent<KendoSwitchProps & KendoSwitchState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSwitchProps &

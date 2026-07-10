@@ -1,4 +1,4 @@
-# Propertygrid Accessibility
+# Propertygrid Specification
 
 ## Accessibility Support
 
@@ -47,6 +47,15 @@ The Propertygrid is compliant with the [Web Content Accessibility Guidelines (WC
 | `Enter` | Commits changes for the edited item, and moves focus back to the edited cell. |
 | `Escape` | Cancels the edit. The focus goes to the current cell. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Property list | Displays properties and their current values in a two-column layout. |
+| Grouping | Properties are organized into collapsible category sections. |
+| Inline editing | Values are edited using appropriate input controls inline. |
+| Search | A search input filters the property list by name. |
+
 ### Testing
 
 The Propertygrid has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -64,3 +73,7 @@ The Propertygrid has been tested with the following screen readers and browsers 
 ### Resources
 
 - [WAI-ARIA specification for tree grid](https://www.w3.org/TR/wai-aria-1.2/#treegrid)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/propertygrid/`](https://github.com/telerik/kendo-themes/tree/develop/tests/propertygrid/).

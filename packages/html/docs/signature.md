@@ -1,4 +1,4 @@
-# Signature Accessibility
+# Signature Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,23 @@ The Signature is compliant with the [Web Content Accessibility Guidelines (WCAG)
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-signature` element.
 
 #### ARIA Attributes
 
@@ -31,6 +43,15 @@ The Signature is compliant with the [Web Content Accessibility Guidelines (WCAG)
 | --- | --- |
 | `Escape` | Closes the dialog if open. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Canvas drawing | The user draws their signature on a canvas area. |
+| Clear | A clear button resets the canvas to a blank state. |
+| Maximize | A maximize button expands the canvas for easier drawing. |
+| Minimize | A minimize button collapses the canvas back to its original size. |
+
 ### Testing
 
 The Signature has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -44,3 +65,7 @@ The Signature has been tested with the following screen readers and browsers com
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/signature/`](https://github.com/telerik/kendo-themes/tree/develop/tests/signature/).

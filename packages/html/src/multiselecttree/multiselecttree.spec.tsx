@@ -80,6 +80,10 @@ const defaultOptions = {
  * @aria {aria-selected="true"} Tags represent selected items and must have aria-selected=true.
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-controls} Points to treeview when popup is open
+ * @ux {Tree popup} A hierarchical tree opens in a popup.
+ * @ux {Checkboxes} Items are selected or deselected via checkboxes on each node.
+ * @ux {Tags} Selected items appear as removable chips in the input.
+ * @ux {Select all} A top-level checkbox selects or deselects all items at once.
  */
 export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMultiSelectTreeState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMultiSelectTreeProps &

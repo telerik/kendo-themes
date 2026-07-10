@@ -43,6 +43,10 @@ const defaultOptions = {
  * @aria {aria-controls} Points to the id of the listbox element being controlled.
  * @aria {aria-multiselectable} when multiple selection is enabled
  * @aria {id} ID for the listbox element; referenced by the toolbar aria-controls.
+ * @ux {Selection} Items are selected by clicking; multi-select with Ctrl/Shift.
+ * @ux {Reorder} Items are reordered using drag-and-drop or toolbar Up/Down buttons.
+ * @ux {Transfer} Items are moved between two listboxes with toolbar action buttons.
+ * @ux {Filtering} An optional search input filters the item list.
  */
 export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListBoxProps &

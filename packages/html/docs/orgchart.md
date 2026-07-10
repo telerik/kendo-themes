@@ -1,4 +1,4 @@
-# Orgchart Accessibility
+# Orgchart Specification
 
 ## Accessibility Support
 
@@ -30,6 +30,15 @@ The Orgchart is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `aria-hidden="true"` | Hides the button from assistive technology. |
 | `tabindex="-1"` | The expand/collapse button must not be part of the page tab sequence. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Node hierarchy | Renders organizational nodes in a top-down tree layout. |
+| Expand / Collapse | Branch nodes can be collapsed to hide their subtree. |
+| Edit mode | Nodes can be added, edited, and removed. |
+| Zoom and pan | The chart canvas supports zooming and panning. |
+
 ### OrgchartGroup
 
 #### ARIA Attributes
@@ -55,3 +64,7 @@ The Orgchart has been tested with the following screen readers and browsers comb
 ### Resources
 
 - [ARIA practices File Directory Treeview Example](https://www.w3.org/WAI/ARIA/apg/example-index/treeview/treeview-1/treeview-1a.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/orgchart/`](https://github.com/telerik/kendo-themes/tree/develop/tests/orgchart/).

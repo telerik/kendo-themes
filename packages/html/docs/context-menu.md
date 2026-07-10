@@ -1,4 +1,4 @@
-# ContextMenu Accessibility
+# ContextMenu Specification
 
 ## Accessibility Support
 
@@ -38,6 +38,14 @@ The ContextMenu is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Space` | Selects the focused item. If the item has children, opens the item and focuses the first child. If the item does not have children and has a URL, navigates to the specified URL. |
 | `Alphanumeric character` | Focuses the next item with text starting with the character. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Right-click trigger | Opens when the user right-clicks (or long-presses on touch) the target element. |
+| Submenus | Menu items can have submenus that open on hover. |
+| Dismiss | Closes when clicking outside the menu or pressing Escape. |
+
 ### Testing
 
 The ContextMenu has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -55,3 +63,7 @@ The ContextMenu has been tested with the following screen readers and browsers c
 ### Resources
 
 - [ARIA patterns Menu](https://www.w3.org/WAI/ARIA/apg/patterns/menu/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/context-menu/`](https://github.com/telerik/kendo-themes/tree/develop/tests/context-menu/).

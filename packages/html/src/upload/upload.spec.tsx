@@ -41,6 +41,11 @@ const uploadFilesId = 'upload-files-list';
  * @aria {aria-live="polite"} Announces the change in the upload status of the file.
  * @aria {aria-label} Provides accessible names for the file action buttons.
  * @aria {tabindex="-1"} The list file action buttons are not focusable elements.
+ * @ux {Drop zone} Files can be dragged and dropped onto the component to start the upload.
+ * @ux {Browse} A button opens the system file dialog to select files.
+ * @ux {Progress} Per-file progress bars show upload completion.
+ * @ux {Cancel} Individual file uploads can be cancelled while in progress.
+ * @ux {Validation} File type and size restrictions are enforced and violation messages are shown.
  */
 export const Upload: KendoComponent<KendoUploadProps & KendoUploadState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoUploadProps &

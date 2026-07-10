@@ -1,4 +1,4 @@
-# Popover Accessibility
+# Popover Specification
 
 ## Accessibility Support
 
@@ -23,6 +23,15 @@ The Popover is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 | --- | --- |
 | `Escape` | Dismisses the Popover. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Trigger | Opens when the target element is clicked, hovered, or focused. |
+| Auto-positioning | Automatically flips or shifts to stay within the viewport. |
+| Dismiss | Closes when clicking outside the popover or pressing Escape. |
+| Arrow | An optional pointer arrow visually connects the popover to its trigger. |
+
 ### Testing
 
 The Popover has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -42,3 +51,7 @@ The Popover has been tested with the following screen readers and browsers combi
 - [WAI-ARIA specification for tooltip](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/)
 - [MDN description for tooltip role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role)
 - [MDN description for dialog role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/popover/`](https://github.com/telerik/kendo-themes/tree/develop/tests/popover/).

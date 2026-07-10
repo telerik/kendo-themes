@@ -1,4 +1,4 @@
-# Menu Accessibility
+# Menu Specification
 
 ## Accessibility Support
 
@@ -37,7 +37,28 @@ The Menu is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `ArrowLeft` | (For root items) opens the item and focuses the last child.; (For child items) closes and focuses the parent. |
 | `ArrowRight` | If the item has children, opens the item and focuses the first child. For child items without children, focuses and opens the next root item. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Horizontal / Vertical | Can be rendered as a horizontal menu bar or a vertical sidebar. |
+| Submenus | Items with children open a flyout submenu on hover or click. |
+| Popup positioning | Submenus automatically flip when they would overflow the viewport. |
+| Disabled items | Individual items can be disabled and are skipped during keyboard navigation. |
+
 ### MenuItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-menu-item` element.
 
 #### ARIA Attributes
 
@@ -50,11 +71,20 @@ The Menu is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `aria-controls="ul.k-menu-group id"` | Points to the ID of the submenu. Only present when the item controls a submenu element. |
 | `aria-expanded` | state for expandable items |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Action trigger | Clicking the item executes its associated action or navigates to its link. |
+| Submenu indicator | Displays an arrow when the item has a nested submenu. |
+| Disabled state | When disabled, the item is non-interactive. |
+| Separator | A horizontal line variant visually divides groups of items. |
+
 ### MenuList
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -66,6 +96,18 @@ The Menu is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `id` | Each nested menu has a deterministic id linked to the parent aria-controls. |
 
 ### MenuListItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-menu-item` element.
 
 #### ARIA Attributes
 
@@ -90,3 +132,7 @@ The Menu has been tested with the following screen readers and browsers combinat
 ### Resources
 
 - [ARIA patterns Menu](https://www.w3.org/WAI/ARIA/apg/patterns/menu/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/menu/`](https://github.com/telerik/kendo-themes/tree/develop/tests/menu/).

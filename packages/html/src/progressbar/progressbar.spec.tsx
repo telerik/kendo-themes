@@ -41,6 +41,10 @@ const defaultOptions = {
  * @aria {aria-valuemin} Minimum value. Defaults to 0.
  * @aria {aria-valuemax} Maximum value. Defaults to 100.
  * @aria {aria-label} accessible name for the progressbar
+ * @ux {Fill animation} The bar animates from 0 to the current value when first displayed.
+ * @ux {Value label} Optionally shows the percentage or a custom text label inside the bar.
+ * @ux {Indeterminate} Displays a looping animation when the final value is unknown.
+ * @ux {Orientation} Can be rendered horizontally or vertically.
  */
 export const ProgressBar: KendoComponent<KendoProgressBarProps & KendoProgressBarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoProgressBarProps &

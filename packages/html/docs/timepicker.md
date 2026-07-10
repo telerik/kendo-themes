@@ -1,4 +1,4 @@
-# Timepicker Accessibility
+# Timepicker Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Timepicker is compliant with the [Web Content Accessibility Guidelines (WCAG
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-timepicker` element.
 
 #### ARIA Attributes
 
@@ -53,6 +68,15 @@ The Timepicker is compliant with the [Web Content Accessibility Guidelines (WCAG
 | `ArrowDown` | Selects next value in the carousel. |
 | `ArrowUp` | Selects previous value in the carousel. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Clock popup | Opens a time-selection popup when the clock button is clicked. |
+| Direct input | The time can also be typed directly into the input field. |
+| Step intervals | Configurable minute and second steps limit the selectable values. |
+| Disabled state | When disabled, the input and popup are non-interactive. |
+
 ### Testing
 
 The Timepicker has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -71,3 +95,7 @@ The Timepicker has been tested with the following screen readers and browsers co
 
 - [WAI-ARIA specification for combobox](https://www.w3.org/TR/wai-aria-1.2/#combobox)
 - [WAI-ARIA specification for listbox](https://www.w3.org/TR/wai-aria-1.2/#listbox)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/timepicker/`](https://github.com/telerik/kendo-themes/tree/develop/tests/timepicker/).

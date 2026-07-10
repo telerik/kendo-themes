@@ -27,6 +27,10 @@ const defaultOptions = {};
  * @aria {aria-colindex} Col number.
  * @aria {aria-expanded} Set on the currently expanded row(s).
  * @aria {aria-hidden="true"} Removes the expand/collapse icon from the accessibility tree.
+ * @ux {Property list} Displays properties and their current values in a two-column layout.
+ * @ux {Grouping} Properties are organized into collapsible category sections.
+ * @ux {Inline editing} Values are edited using appropriate input controls inline.
+ * @ux {Search} A search input filters the property list by name.
  */
 export const PropertyGrid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridProps &

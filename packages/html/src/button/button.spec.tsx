@@ -69,6 +69,10 @@ const defaultOptions = {
  * @aria {disabled} Rendered when the button is disabled.
  * @aria {aria-pressed="true"|"false"} Indicates the pressed state; "true" when selected, "false" otherwise.
  * @aria {aria-disabled="true"} Announces as disabled to AT while keeping it in the tab sequence.
+ * @ux {Click action} Triggers an action when clicked or activated via keyboard.
+ * @ux {Toggle} Can act as a toggle button with pressed/unpressed states when togglable.
+ * @ux {Icon} Can include an icon alongside or instead of text.
+ * @ux {Disabled state} When disabled, the button is non-interactive and visually dimmed.
  */
 export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoButtonProps &

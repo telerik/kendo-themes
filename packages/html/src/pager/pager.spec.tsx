@@ -65,6 +65,11 @@ const defaultOptions = {
  * @aria {aria-current="page"} Present on the currently selected page element.
  * @aria {aria-label|aria-labelledby} The DropDownList requires a label to specify its purpose.
  * @aria {aria-label} The input requires a label to specify its purpose.
+ * @ux {Page buttons} Numbered buttons navigate directly to a specific page.
+ * @ux {Next / Previous} Arrow buttons navigate to the adjacent page.
+ * @ux {First / Last} Buttons jump to the first or last page.
+ * @ux {Page size} A dropdown selects the number of items displayed per page.
+ * @ux {Item count} Displays the total number of records and the currently visible range.
  */
 export const Pager: KendoComponent<KendoPagerProps & KendoPagerState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPagerProps &

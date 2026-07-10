@@ -50,6 +50,8 @@ const defaultOptions = {
  * @aria {aria-multiline="true"} Indicates the auto-mode textarea supports multiple lines of text.
  * @aria {aria-label} The send/stop button is labelled to indicate its current action.
  * @aria {aria-live="polite"} Announces the change in status of the send/stop button.
+ *
+ * @ux dasdasdasd
  */
 export const PromptBox: KendoComponent<KendoPromptBoxProps & KendoPromptBoxState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPromptBoxProps & KendoPromptBoxState & React.HTMLAttributes<HTMLDivElement>

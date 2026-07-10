@@ -1,4 +1,4 @@
-# Pager Accessibility
+# Pager Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,18 @@ The Pager is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-pager` element.
 
 #### ARIA Attributes
 
@@ -48,6 +57,16 @@ The Pager is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 | `Shift + Tab` | Navigates to the previous focusable element in the Pager. If the current focus is on the first element, moves the focus to the last focusable item in the component. |
 | `Enter` | For button items, and Pager input executes the currently focused action (page change). |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Page buttons | Numbered buttons navigate directly to a specific page. |
+| Next / Previous | Arrow buttons navigate to the adjacent page. |
+| First / Last | Buttons jump to the first or last page. |
+| Page size | A dropdown selects the number of items displayed per page. |
+| Item count | Displays the total number of records and the currently visible range. |
+
 ### Testing
 
 The Pager has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -66,3 +85,7 @@ The Pager has been tested with the following screen readers and browsers combina
 
 - [WAI-ARIA Specification for Navigation](https://www.w3.org/TR/wai-aria-1.2/#navigation)
 - [Accessibility Style Guide: Pagination](https://a11y-style-guide.com/style-guide/section-navigation.html#kssref-navigation-pagination)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/pager/`](https://github.com/telerik/kendo-themes/tree/develop/tests/pager/).

@@ -1,4 +1,4 @@
-# Switch Accessibility
+# Switch Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,23 @@ The Switch is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `trackRounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `thumbRounded` | `none`, `small`, `medium`, `large`, `full` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `disabled` | `k-disabled` |
+| `readonly` | `k-readonly` |
+| `checked` | `k-checked` |
+
+These CSS classes are applied to the `k-switch` element.
 
 #### ARIA Attributes
 
@@ -36,6 +48,14 @@ The Switch is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | --- | --- |
 | `Space` | Toggles the checked state of the Switch. Works analogically to the checkbox. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Toggle | Clicking the switch flips between on and off states. |
+| Labels | Optional on/off labels inside the track reflect the current state. |
+| Disabled state | When disabled, the switch cannot be toggled. |
+
 ### Testing
 
 The Switch has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -54,3 +74,7 @@ The Switch has been tested with the following screen readers and browsers combin
 
 - [WAI-ARIA Specification for the Switch](https://www.w3.org/TR/wai-aria-1.2/#switch)
 - [WCAG 4.1.2 Name, Role, Value — switch must have accessible name and proper role](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/switch/`](https://github.com/telerik/kendo-themes/tree/develop/tests/switch/).

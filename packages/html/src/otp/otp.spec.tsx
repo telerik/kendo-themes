@@ -25,6 +25,10 @@ const defaultOptions = {};
  * @aria {role="group"} Sets the proper role for the OTP.
  * @aria {type="hidden"} The hidden input holding the OTP inputs value.
  * @aria {aria-hidden="true"} Hides the hidden input from assistive technologies.
+ * @ux {Auto-advance} Focus moves to the next input automatically after each character is entered.
+ * @ux {Paste} Pasting a code string fills all inputs at once.
+ * @ux {Separator} Groups of inputs can be visually separated by divider characters.
+ * @ux {Masked} Characters can be hidden like a password field.
  */
 export const OneTimePassword: KendoComponent<KendoOneTimePasswordOptions & KendoOneTimePasswordState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoOneTimePasswordOptions &

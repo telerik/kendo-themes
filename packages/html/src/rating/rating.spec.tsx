@@ -39,6 +39,11 @@ const defaultOptions = {
  * @aria {tabindex="0"} The element must be focusable. Disabled ratings are removed from tab order.
  * @aria {aria-disabled="true"} Rendered only when the Rating is disabled.
  * @aria {aria-readonly="true"} Rendered only when the Rating is readonly. Readonly ratings remain focusable but their value cannot be changed.
+ * @ux {Selection} Clicking an icon selects the corresponding rating value.
+ * @ux {Hover preview} Hovering over icons previews the rating value before committing.
+ * @ux {Half precision} Supports half-value increments when half-precision mode is enabled.
+ * @ux {Read-only} When read-only, the current rating is displayed but cannot be changed.
+ * @ux {Disabled state} When disabled, the rating cannot be changed.
  */
 
 export const Rating: KendoComponent<RatingState & RatingProps & React.HTMLAttributes<HTMLSpanElement>> = (

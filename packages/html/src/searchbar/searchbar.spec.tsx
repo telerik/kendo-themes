@@ -15,6 +15,10 @@ export type KendoSearchBarProps = {
     placeholder?: string;
 };
 
+/**
+ * @ux {Inline search} A compact search input for filtering lists or grids in place.
+ * @ux {Clear button} An × button removes the current search value.
+ */
 export const SearchBar: KendoComponent<KendoSearchBarProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSearchBarProps &
         React.HTMLAttributes<HTMLSpanElement>

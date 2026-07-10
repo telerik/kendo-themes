@@ -1,4 +1,4 @@
-# ExpansionPanel Accessibility
+# ExpansionPanel Specification
 
 ## Accessibility Support
 
@@ -7,6 +7,17 @@ Out of the box, the Telerik and Kendo UI ExpansionPanel provides extensive acces
 The ExpansionPanel is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
 
 ### ExpansionPanel
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `disabled` | `k-disabled` |
+| `expanded` | `k-expanded` |
+
+These CSS classes are applied to the `k-expander` element.
 
 #### ARIA Attributes
 
@@ -26,6 +37,14 @@ The ExpansionPanel is compliant with the [Web Content Accessibility Guidelines (
 | `Enter` | Expands and collapses the focused ExpansionPanel. |
 | `Space` | Expands and collapses the focused ExpansionPanel. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Collapse / Expand | Clicking the header toggles the content panel open and closed. |
+| Animation | Panel opening and closing is smoothly animated. |
+| Disabled state | When disabled, the panel header cannot be toggled. |
+
 ### Testing
 
 The ExpansionPanel has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -43,3 +62,7 @@ The ExpansionPanel has been tested with the following screen readers and browser
 ### Resources
 
 - [ARIA Practices: Accordion Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/expansion-panel/`](https://github.com/telerik/kendo-themes/tree/develop/tests/expansion-panel/).

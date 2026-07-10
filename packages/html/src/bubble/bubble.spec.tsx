@@ -31,6 +31,9 @@ const defaultOptions = {
  * @aria {role="button"} The expandable indicator must have an appropriate role.
  * @aria {aria-label|title} The expandable indicator must be properly labelled.
  * @aria {tabindex="0"} The expandable indicator must be part of the page tabsequence.
+ * @ux {Expand / Collapse} An expandable indicator lets the user toggle additional bubble content.
+ * @ux {Focusable} The bubble is keyboard-focusable and interactive.
+ * @ux {Chat context} Renders as a speech-bubble shape associated with a chat participant.
  */
 export const Bubble: KendoComponent<KendoBubbleProps &
         KendoBubbleState &

@@ -1,4 +1,4 @@
-# Radio Accessibility
+# Radio Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,23 @@ The Radio is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `checked` | `k-checked` |
+
+These CSS classes are applied to the `k-radio` element.
 
 #### ARIA Attributes
 
@@ -32,6 +46,14 @@ The Radio is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 | `ArrowUp or ArrowLeft` | Moves focus to the previous button and selects it. If the first button is focused, moves focus to the last. |
 | `ArrowDown or ArrowRight` | Moves the focus to the next button and selects it. If the last button is focused, moves the focus to the first one. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Exclusive selection | Selecting a radio button deselects all others in the group. |
+| Label | An associated label describes the option the radio button represents. |
+| Disabled state | When disabled, the radio button is non-interactive. |
+
 ### RadioGroup
 
 #### ARIA Attributes
@@ -39,6 +61,14 @@ The Radio is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 | Attribute | Description |
 | --- | --- |
 | `aria-invalid="true"` | Rendered only when the radio button is in a form and announces the invalid state. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Exclusive selection | Selecting one radio button automatically deselects all others in the group. |
+| Layout | Items can be arranged horizontally or vertically. |
+| Disabled group | When the group is disabled, all contained radio buttons are non-interactive. |
 
 ### Testing
 
@@ -59,3 +89,7 @@ The Radio has been tested with the following screen readers and browsers combina
 - [WAI-ARIA Authoring Practices: Radio Group Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/radio/)
 - [WCAG 4.1.2 Name, Role, Value — radio must have accessible name](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
 - [WCAG 1.3.1 Info and Relationships — label must be programmatically associated](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/radio/`](https://github.com/telerik/kendo-themes/tree/develop/tests/radio/).

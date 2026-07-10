@@ -1,4 +1,4 @@
-# PromptBox Accessibility
+# PromptBox Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,19 @@ The PromptBox is compliant with the [Web Content Accessibility Guidelines (WCAG)
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-prompt-box` element.
 
 #### ARIA Attributes
 
@@ -55,3 +65,7 @@ The PromptBox has been tested with the following screen readers and browsers com
 ### Resources
 
 - [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/patterns/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/prompt-box/`](https://github.com/telerik/kendo-themes/tree/develop/tests/prompt-box/).

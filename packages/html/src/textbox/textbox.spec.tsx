@@ -63,6 +63,10 @@ const defaultOptions = {
  * @aria {aria-invalid="true"} Rendered when the TextBox is in an invalid state.
  * @aria {aria-describedby} Points to the hint or error message for the input.
  * @aria {aria-disabled="true"} Rendered when the TextBox is disabled.
+ * @ux {Prefix / Suffix} Can embed icons, labels, or action buttons at either end of the input.
+ * @ux {Clear button} An optional × button clears the current value.
+ * @ux {Placeholder} Displays hint text when the field is empty.
+ * @ux {Disabled state} When disabled, the input is non-interactive.
  */
 export const Textbox: KendoComponent<KendoTextboxProps & KendoTextboxState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoTextboxProps &

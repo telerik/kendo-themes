@@ -36,6 +36,10 @@ const defaultOptions = {
  * @aria {role="presentation"} The expand/collapse button is decorative.
  * @aria {aria-hidden="true"} Hides the button from assistive technology.
  * @aria {tabindex="-1"} The expand/collapse button must not be part of the page tab sequence.
+ * @ux {Node hierarchy} Renders organizational nodes in a top-down tree layout.
+ * @ux {Expand / Collapse} Branch nodes can be collapsed to hide their subtree.
+ * @ux {Edit mode} Nodes can be added, edited, and removed.
+ * @ux {Zoom and pan} The chart canvas supports zooming and panning.
  */
 export const Orgchart: KendoComponent<KendoOrgchartProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoOrgchartProps &

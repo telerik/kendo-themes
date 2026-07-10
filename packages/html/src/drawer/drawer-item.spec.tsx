@@ -30,6 +30,11 @@ export type KendoDrawerItemProps = {
 
 export type KendoDrawerItemState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @ux {Selection} Clicking the item navigates or selects it, giving it the active state.
+ * @ux {Icon and label} Shows an icon beside a text label in expanded mode; icon-only in mini mode.
+ * @ux {Disabled state} When disabled, the item is non-interactive.
+ */
 export const DrawerItem: KendoComponent<KendoDrawerItemProps & KendoDrawerItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoDrawerItemProps &
         KendoDrawerItemState &

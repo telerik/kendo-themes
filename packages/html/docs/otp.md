@@ -1,4 +1,4 @@
-# Otp Accessibility
+# Otp Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,18 @@ The Otp is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 s
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `invalid` | `k-invalid` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-otp` element.
 
 #### ARIA Attributes
 
@@ -34,6 +43,15 @@ The Otp is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 s
 | `Backspace` | Deletes the value of the focused input and moves the focus on the previous input. (if any). |
 | `Delete` | Deletes the value of the focused input. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Auto-advance | Focus moves to the next input automatically after each character is entered. |
+| Paste | Pasting a code string fills all inputs at once. |
+| Separator | Groups of inputs can be visually separated by divider characters. |
+| Masked | Characters can be hidden like a password field. |
+
 ### Testing
 
 The Otp has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -51,3 +69,7 @@ The Otp has been tested with the following screen readers and browsers combinati
 ### Resources
 
 - [WAI-ARIA Specification for the TextBox](https://www.w3.org/TR/wai-aria-1.2/#textbox)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/otp/`](https://github.com/telerik/kendo-themes/tree/develop/tests/otp/).

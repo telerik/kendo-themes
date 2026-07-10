@@ -1,4 +1,4 @@
-# Treelist Accessibility
+# Treelist Specification
 
 ## Accessibility Support
 
@@ -60,6 +60,15 @@ The Treelist is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | --- | --- |
 | `Enter` | In expandable and non-editable cell - expands or collapses the item. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Expandable rows | Rows can have child rows revealed by expanding the parent. |
+| Sorting | Column headers are clicked to sort data ascending or descending. |
+| Filtering | Column filter inputs narrow the displayed rows. |
+| Row selection | Rows are selected by clicking. |
+
 ### Testing
 
 The Treelist has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -77,3 +86,7 @@ The Treelist has been tested with the following screen readers and browsers comb
 ### Resources
 
 - [WAI-ARIA specification for tree grid](https://www.w3.org/TR/wai-aria-1.2/#treegrid)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/treelist/`](https://github.com/telerik/kendo-themes/tree/develop/tests/treelist/).

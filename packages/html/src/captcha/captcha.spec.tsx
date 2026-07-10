@@ -27,6 +27,12 @@ export type KendoCaptchaProps = {
 
 export type KendoCaptchaState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @ux {Image challenge} Presents a visual challenge the user must solve to verify they are human.
+ * @ux {Audio alternative} An audio challenge can be requested for accessibility.
+ * @ux {Refresh} A reload button requests a new challenge image.
+ * @ux {Validation} The entered response is validated and feedback is shown inline.
+ */
 export const Captcha: KendoComponent<KendoCaptchaProps & KendoCaptchaState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCaptchaProps &
         KendoCaptchaState &

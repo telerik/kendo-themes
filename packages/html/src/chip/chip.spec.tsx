@@ -49,6 +49,12 @@ const defaultOptions = {
     avatarImage: "/packages/html/assets/avatar.jpg"
 };
 
+/**
+ * @ux {Selection} Can be toggled to a selected/active state by clicking.
+ * @ux {Removable} An optional remove icon allows the chip to be dismissed.
+ * @ux {Icon or avatar} Can display an icon or avatar image alongside the label.
+ * @ux {Disabled state} When disabled, the chip is non-interactive.
+ */
 export const Chip: KendoComponent<KendoChipProps & KendoChipState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChipProps &
         KendoChipState &

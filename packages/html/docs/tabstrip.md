@@ -1,4 +1,4 @@
-# Tabstrip Accessibility
+# Tabstrip Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Tabstrip is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -33,6 +33,16 @@ The Tabstrip is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `Home` | Moves focus to and activates the first tab. |
 | `End` | Moves focus to and activates the last tab. |
 | `Delete or Backspace` | Removes the focused tab from the tab list. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Tab activation | Clicking a tab header displays its associated content panel. |
+| Closable tabs | Tabs can include a close button to remove the tab. |
+| Overflow scrolling | When tabs overflow the header, scroll arrows appear. |
+| Disabled tabs | Individual tabs can be disabled and are non-interactive. |
+| Tab position | Tabs can be placed at the top, bottom, left, or right of the content area. |
 
 ### TabStripItems
 
@@ -60,3 +70,7 @@ The Tabstrip has been tested with the following screen readers and browsers comb
 
 - [WAI-ARIA specification for tablist](https://www.w3.org/TR/wai-aria-1.2/#tablist)
 - [WAI-ARIA practices: TabList example](https://www.w3.org/WAI/ARIA/apg/example-index/tabs/tabs-automatic.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/tabstrip/`](https://github.com/telerik/kendo-themes/tree/develop/tests/tabstrip/).

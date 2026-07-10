@@ -17,6 +17,10 @@ const defaultOptions = {};
 /**
  * @aria {role="tree"} The root element of the PanelBar has role tree.
  * @aria {aria-activedescendant} Points to the currently focused item
+ * @ux {Expand / Collapse} Clicking a panel header toggles its content section.
+ * @ux {Single expand} Can be configured so that only one panel is open at a time.
+ * @ux {Disabled items} Individual items can be disabled and cannot be toggled.
+ * @ux {Nested items} Items can contain nested sub-items forming a tree structure.
  */
 export const PanelBar: KendoComponent<KendoPanelBarProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoPanelBarProps & React.HTMLAttributes<HTMLUListElement>

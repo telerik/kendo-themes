@@ -61,6 +61,10 @@ const defaultOptions = {
  * @aria {role="list"} Announces the list role of the popup.
  * @aria {role="listitem"} Announces the listitem role of the popup items.
  * @aria {aria-expanded} state for the popup
+ * @ux {Primary action} The main button area triggers the default action.
+ * @ux {Dropdown} The arrow button opens a menu popup with additional actions.
+ * @ux {Item selection} Clicking a menu item triggers its action and closes the popup.
+ * @ux {Disabled state} When disabled, both the button and dropdown are non-interactive.
  */
 export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoMenuButtonProps &

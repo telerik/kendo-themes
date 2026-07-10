@@ -86,6 +86,12 @@ const defaultOptions = {
  * @aria {role="option"} Each list item is an option.
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @ux {Tags} Selected values appear as removable tag chips inside the input.
+ * @ux {Popup} Clicking the input or trigger opens a filterable dropdown list.
+ * @ux {Filtering} The list narrows as the user types in the input.
+ * @ux {Tag removal} Clicking a tag's × removes that value from the selection.
+ * @ux {Placeholder} Displays hint text when no values are selected.
+ * @ux {Disabled state} When disabled, tags cannot be added or removed.
  */
 export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelectState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMultiSelectProps &

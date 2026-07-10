@@ -1,4 +1,4 @@
-# Pivotgrid Accessibility
+# Pivotgrid Specification
 
 ## Accessibility Support
 
@@ -42,6 +42,15 @@ The Pivotgrid is compliant with the [Web Content Accessibility Guidelines (WCAG)
 | `Shift + Tab` | Focuses the previous focusable element or the last focusable element, if the focus is on the first focusable element. |
 | `Enter` | Triggers the default action associated with the focused menu item. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Configurator | A settings panel maps data fields to rows, columns, and measures. |
+| Expand / Collapse | Row and column header groups can be collapsed to summarize data. |
+| Totals | Subtotals and grand totals are automatically calculated and displayed. |
+| Field reorder | Fields can be dragged between the rows, columns, and filter areas. |
+
 ### Testing
 
 The Pivotgrid has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -60,3 +69,7 @@ The Pivotgrid has been tested with the following screen readers and browsers com
 
 - [WAI-ARIA specification for grid](https://www.w3.org/TR/wai-aria-1.2/#grid)
 - [WAI-ARIA specification for dialog](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/pivotgrid/`](https://github.com/telerik/kendo-themes/tree/develop/tests/pivotgrid/).

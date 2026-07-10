@@ -17,6 +17,10 @@ const defaultOptions = {};
  * @aria {role="button"} Indicates that the suggestion element is a button.
  * @aria {aria-label|title} The suggestion elements must be properly labelled.
  * @aria {tabindex="0"} The suggestion element should be focusable.
+ * @ux {Input area} A text input or textarea for entering the prompt text.
+ * @ux {Submit} A send button or Enter key submits the prompt.
+ * @ux {Suggestions} Pre-defined prompt suggestions are displayed above the input.
+ * @ux {Toolbar} An optional toolbar provides prompt-related actions.
  */
 export const Prompt: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props:

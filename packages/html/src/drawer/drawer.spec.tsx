@@ -33,6 +33,11 @@ export type KendoDrawerProps = {
 /**
  * @aria {role="menubar"} Indicates that the list of drawer items is a menubar.
  * @aria {aria-orientation="vertical"} Indicates that the orientation of the drawer is vertical.
+ * @ux {Overlay mode} The drawer slides in over the page content.
+ * @ux {Push mode} The drawer pushes the main content aside when open.
+ * @ux {Mini mode} Collapses to a narrow icon strip when closed.
+ * @ux {Position} Can be anchored to the left or right edge of the container.
+ * @ux {Backdrop} An optional semi-transparent overlay prevents interaction with the page while the drawer is open.
  */
 export const Drawer: KendoComponent<KendoDrawerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDrawerProps &

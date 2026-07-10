@@ -1,4 +1,4 @@
-# Splitter Accessibility
+# Splitter Specification
 
 ## Accessibility Support
 
@@ -23,6 +23,14 @@ The Splitter is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `Enter` | Toggles the collapsed state of the nearest collapsible pane. |
 | `Tab` | The key that allows focusing a splitter bar. Thus, all splitbars have `tabindex` and are included in the tab sequence. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Resizable panes | The separator between panes can be dragged to resize them. |
+| Collapse / Expand | Individual panes can be collapsed and expanded using toggle arrows. |
+| Orientation | Can be laid out horizontally (side-by-side) or vertically (stacked). |
+
 ### Testing
 
 The Splitter has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -41,3 +49,7 @@ The Splitter has been tested with the following screen readers and browsers comb
 
 - [WAI-ARIA specification for separator](https://www.w3.org/TR/wai-aria-1.2/#separator)
 - [MDN reference for the separator role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/separator_role)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/splitter/`](https://github.com/telerik/kendo-themes/tree/develop/tests/splitter/).

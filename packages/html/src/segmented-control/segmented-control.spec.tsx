@@ -25,6 +25,9 @@ export type KendoSegmentedControlState = { [K in (typeof states)[number]]?: bool
 /**
  * @aria {role="group"} Sets the proper role for the group of buttons.
  * @aria {aria-hidden="true"} The thumb is purely decorative and should be hidden from screen readers.
+ * @ux {Exclusive selection} Only one segment can be active at a time.
+ * @ux {Active indicator} The selected segment is visually highlighted.
+ * @ux {Disabled items} Individual segments can be disabled and are non-interactive.
  */
 export const SegmentedControl: KendoComponent<KendoSegmentedControlProps & KendoSegmentedControlState & React.HTMLAttributes<HTMLDivElement>> = (
     props:

@@ -50,6 +50,10 @@ const defaultOptions = {
  * @aria {aria-label|title} Icon-only button must have accessible text.
  * @aria {aria-expanded="true"|\"false"} Announces section popup visibility state.
  * @aria {aria-controls=".k-toolbar-popup .k-toolbar-items-list id"} Indicates the connection between the toggle button and the section popup.
+ * @ux {Actions} Contains buttons, inputs, and other interactive controls.
+ * @ux {Overflow menu} Controls that do not fit in the available space are moved to an overflow popup.
+ * @ux {Separator} Visual separators group related controls.
+ * @ux {Responsive} Automatically adapts visible controls based on available width.
  */
 export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoToolbarProps &

@@ -43,6 +43,11 @@ export type KendoTaskBoardState = { [K in (typeof states)[number]]?: boolean };
  * @aria {role="application"} The TaskBoard has role=application as its inner navigation requires the use of arrows.
  * @aria {role="form"} The edit Form needs the appropriate role.
  * @aria {aria-labelledby} The TaskBoard edit form must be labeled by the header text of the pane.
+ * @ux {Columns} Tasks are grouped into columns that represent workflow stages.
+ * @ux {Cards} Each task is displayed as a card with a title and optional metadata.
+ * @ux {Drag and drop} Cards are dragged between columns to update their status.
+ * @ux {Add card} Each column has an add button to create a new task.
+ * @ux {Edit card} Clicking a card opens an edit form for the task details.
  */
 export const TaskBoard: KendoComponent<KendoTaskBoardProps & KendoTaskBoardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTaskBoardProps & KendoTaskBoardState & React.HTMLAttributes<HTMLDivElement>

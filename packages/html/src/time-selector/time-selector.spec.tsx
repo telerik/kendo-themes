@@ -35,6 +35,9 @@ const defaultOptions = {
  * @aria {aria-label} Describes which time unit the column selects.
  * @aria {role="none"} Removes semantic meaning from the ul element.
  * @aria {role="option"} Each item in the time list is an option.
+ * @ux {Scroll columns} Hours, minutes, and seconds are shown in separate scrollable columns.
+ * @ux {Snap selection} Scrolling snaps to the nearest valid step value.
+ * @ux {AM / PM} An optional column toggles the 12-hour period.
  */
 export const TimeSelector: KendoComponent<KendoTimeSelectorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTimeSelectorProps &

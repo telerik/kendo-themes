@@ -1,4 +1,4 @@
-# Tilelayout Accessibility
+# Tilelayout Specification
 
 ## Accessibility Support
 
@@ -29,7 +29,24 @@ The Tilelayout is compliant with the [Web Content Accessibility Guidelines (WCAG
 | `Control/Cmd(Mac) + ArrowDown` | Increments the focused item height with one row (to a maximum of the preset rows count if such option exists). |
 | `Control/Cmd(Mac) + ArrowUp` | Decrements the focused item height with one row (to a minimum of 1). |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Tiles | Content areas are organized as resizable tiles in a grid. |
+| Drag and drop | Tiles are reordered by dragging their header. |
+| Resize | Tile dimensions are adjusted by dragging the resize handle at the tile corner. |
+| Gap | Configurable spacing is applied uniformly between tiles. |
+
 ### TileLayoutItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-tilelayout-item` element.
 
 #### ARIA Attributes
 
@@ -40,6 +57,14 @@ The Tilelayout is compliant with the [Web Content Accessibility Guidelines (WCAG
 | `tabindex="0"` | Makes the item wrapper element focusable. |
 | `aria-keyshortcuts="Enter"` | Announces Enter as an available key shortcut when the item is focused. |
 | `id` | Unique identifier to link the header text element to the focusable wrapper. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Drag handle | The tile header acts as a drag handle for repositioning within the layout. |
+| Resize handle | A corner handle lets the user resize the tile. |
+| Header | An optional header displays a title for the tile. |
 
 ### Testing
 
@@ -54,3 +79,7 @@ The Tilelayout has been tested with the following screen readers and browsers co
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/tilelayout/`](https://github.com/telerik/kendo-themes/tree/develop/tests/tilelayout/).

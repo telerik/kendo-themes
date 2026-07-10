@@ -18,6 +18,11 @@ const defaultOptions = {
     orientation: "horizontal",
 } as const;
 
+/**
+ * @ux {Resizable panes} The separator between panes can be dragged to resize them.
+ * @ux {Collapse / Expand} Individual panes can be collapsed and expanded using toggle arrows.
+ * @ux {Orientation} Can be laid out horizontally (side-by-side) or vertically (stacked).
+ */
 export const Splitter: KendoComponent<KendoSplitterProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSplitterProps &
         React.HTMLAttributes<HTMLDivElement>

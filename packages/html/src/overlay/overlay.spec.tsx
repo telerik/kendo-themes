@@ -14,6 +14,11 @@ export type KendoOverlayProps = KendoOverlayOptions;
 
 const defaultOptions = {};
 
+/**
+ * @ux {Backdrop} Renders a semi-transparent layer over the page content.
+ * @ux {Click-outside} Can trigger a close action on the associated dialog or panel when clicked.
+ * @ux {Scroll lock} Prevents the body from scrolling while the overlay is visible.
+ */
 export const Overlay: KendoComponent<KendoOverlayProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoOverlayProps &
         React.HTMLAttributes<HTMLDivElement>

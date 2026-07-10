@@ -1,4 +1,4 @@
-# Slider Accessibility
+# Slider Specification
 
 ## Accessibility Support
 
@@ -7,6 +7,18 @@ Out of the box, the Telerik and Kendo UI Slider provides extensive accessibility
 The Slider is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
 
 ### Slider
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `disabled` | `k-disabled` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-slider` element.
 
 #### ARIA Attributes
 
@@ -40,6 +52,16 @@ The Slider is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | `PageUp` | Increases value by large step. |
 | `PageDown` | Decreases value by large step. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Drag | The handle is dragged along the track to change the value. |
+| Click | Clicking on the track moves the handle to that position. |
+| Range mode | Two handles define a start and end value when range selection is enabled. |
+| Tick marks | Optional tick marks indicate fixed value intervals along the track. |
+| Disabled state | When disabled, the handle cannot be moved. |
+
 ### Testing
 
 The Slider has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -58,3 +80,7 @@ The Slider has been tested with the following screen readers and browsers combin
 
 - [WAI-ARIA specification for slider](https://www.w3.org/TR/wai-aria-1.2/#slider)
 - [WCAG 4.1.2 Name, Role, Value — slider must have accessible name and value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/slider/`](https://github.com/telerik/kendo-themes/tree/develop/tests/slider/).

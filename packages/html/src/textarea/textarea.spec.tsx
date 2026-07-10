@@ -62,6 +62,11 @@ const defaultOptions = {
  * @aria {aria-invalid="true"} Rendered only when the TextArea is in a form and announces the invalid state.
  * @aria {aria-describedby} Points to the hint or error message for the textarea.
  * @aria {aria-disabled="true"} Rendered only when the TextArea is disabled.
+ * @ux {Multi-line input} Accepts text across multiple lines.
+ * @ux {Auto-grow} Optionally expands vertically as the user types to fit the content.
+ * @ux {Character count} Optionally displays a remaining or total character count.
+ * @ux {Placeholder} Displays hint text when the field is empty.
+ * @ux {Disabled state} When disabled, the field is non-interactive.
  */
 export const Textarea: KendoComponent<KendoTextareaProps & KendoTextareaState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoTextareaProps &

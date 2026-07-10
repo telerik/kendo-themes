@@ -85,6 +85,11 @@ const defaultOptions = {
  * @aria {id} Referenced by aria-controls and aria-activedescendant on the input.
  * @aria {aria-autocomplete} Indicates autocomplete behavior to assistive technologies
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @ux {Editable input} The user can type to filter options or enter a custom value.
+ * @ux {Popup} Opens a dropdown list when the toggle button is clicked or when the user types.
+ * @ux {Selection} Choosing an option fills the input and closes the popup.
+ * @ux {Placeholder} Displays hint text when no value is selected.
+ * @ux {Disabled state} When disabled, the control is non-interactive.
  */
 export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoComboboxProps &

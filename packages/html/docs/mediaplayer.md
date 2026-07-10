@@ -1,4 +1,4 @@
-# Mediaplayer Accessibility
+# Mediaplayer Specification
 
 ## Accessibility Support
 
@@ -34,6 +34,16 @@ The Mediaplayer is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Space` | Play and Pause the video. |
 | `Escape` | Close the full screen. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Play / Pause | The primary button starts and pauses media playback. |
+| Seek | Clicking or dragging the progress bar seeks to a position in the media. |
+| Volume | A slider controls the audio level; a mute button toggles audio. |
+| Fullscreen | Expands the player to fill the viewport. |
+| Captions | Subtitle tracks can be toggled on or off. |
+
 ### Testing
 
 The Mediaplayer has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -47,3 +57,7 @@ The Mediaplayer has been tested with the following screen readers and browsers c
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/mediaplayer/`](https://github.com/telerik/kendo-themes/tree/develop/tests/mediaplayer/).

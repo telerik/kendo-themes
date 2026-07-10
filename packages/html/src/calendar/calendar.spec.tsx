@@ -45,6 +45,12 @@ const defaultOptions = {
  * @aria {tabindex="-1"} Title button is not focusable.
  * @aria {aria-label} Describes the title button purpose.
  * @aria {tabindex="-1"} Today link/button is not focusable.
+ * @ux {Month view} Displays a grid of days for the current month.
+ * @ux {Navigation} Arrow buttons navigate to the previous and next time period.
+ * @ux {View switching} Clicking the title switches between day, month, and year views.
+ * @ux {Date selection} Clicking a date cell selects it.
+ * @ux {Range selection} In range mode, the first and second click define start and end dates.
+ * @ux {Disabled dates} Individual dates can be disabled and are skipped during keyboard navigation.
  */
 export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCalendarProps &

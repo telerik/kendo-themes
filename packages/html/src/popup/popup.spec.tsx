@@ -28,6 +28,9 @@ const defaultOptions = {
 /**
  * @aria {role="region"} Required when popup container is appended to document body
  * @aria {aria-label} Required when container has role="region"
+ * @ux {Anchor alignment} Positions itself relative to an anchor element.
+ * @ux {Collision detection} Automatically flips or shifts to remain within the viewport.
+ * @ux {Dismiss} Closes when the user clicks outside or the owning component loses focus.
  */
 export const Popup: KendoComponent<KendoPopupProps & React.HTMLAttributes<HTMLDivElement>> = (
     props:

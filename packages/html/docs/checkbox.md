@@ -1,4 +1,4 @@
-# Checkbox Accessibility
+# Checkbox Specification
 
 ## Accessibility Support
 
@@ -10,10 +10,25 @@ The Checkbox is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `checked` | `k-checked` |
+| `indeterminate` | `k-indeterminate` |
+
+These CSS classes are applied to the `k-checkbox` element.
 
 #### ARIA Attributes
 
@@ -33,6 +48,15 @@ The Checkbox is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `Shift + Tab` | Moves focus to the previous checkbox. |
 | `ArrowDown or ArrowRight` | Moves focus to the next checkbox. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Toggle | Clicking toggles between checked and unchecked states. |
+| Indeterminate | Can be set to an indeterminate (partial-selection) state programmatically. |
+| Label | An associated label element describes the purpose of the checkbox. |
+| Disabled state | When disabled, the checkbox cannot be toggled. |
+
 ### CheckboxGroup
 
 #### ARIA Attributes
@@ -40,6 +64,14 @@ The Checkbox is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | Attribute | Description |
 | --- | --- |
 | `aria-invalid="true"` | Rendered only when the CheckBox is in a form and announces the invalid state. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Option set | Renders a labelled group of related checkboxes. |
+| Layout | Items can be arranged horizontally or vertically. |
+| Disabled group | When the group is disabled, all contained checkboxes are non-interactive. |
 
 ### Testing
 
@@ -58,3 +90,7 @@ The Checkbox has been tested with the following screen readers and browsers comb
 ### Resources
 
 - [WAI-ARIA Authoring Practices: CheckBox Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/checkbox/`](https://github.com/telerik/kendo-themes/tree/develop/tests/checkbox/).

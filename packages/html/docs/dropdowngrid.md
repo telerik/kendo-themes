@@ -1,4 +1,4 @@
-# Dropdowngrid Accessibility
+# Dropdowngrid Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Dropdowngrid is compliant with the [Web Content Accessibility Guidelines (WC
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-dropdowngrid` element.
 
 #### ARIA Attributes
 
@@ -44,6 +59,15 @@ The Dropdowngrid is compliant with the [Web Content Accessibility Guidelines (WC
 | `Escape` | Clears the value if popup is not visible |
 | `Tab` | Closes the actionsheet and focuses the next focusable element. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Grid popup | A data grid opens in a popup when the control is activated. |
+| Row selection | Clicking a grid row selects it and fills the input field. |
+| Filtering | The input field filters the displayed rows as the user types. |
+| Placeholder | Displays hint text when no row is selected. |
+
 ### Testing
 
 The Dropdowngrid has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -57,3 +81,7 @@ The Dropdowngrid has been tested with the following screen readers and browsers 
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/dropdowngrid/`](https://github.com/telerik/kendo-themes/tree/develop/tests/dropdowngrid/).

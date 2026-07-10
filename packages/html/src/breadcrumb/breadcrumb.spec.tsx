@@ -29,6 +29,10 @@ const defaultOptions = {
  * @aria {aria-current="page"} The last breadcrumb item points to the active page.
  * @aria {aria-disabled="true"} The last breadcrumb item is disabled.
  * @aria {aria-hidden="true"} Delimiter icon should not be accessed through assistive technology.
+ * @ux {Navigation trail} Shows the current page location within the application hierarchy.
+ * @ux {Collapsing} Collapses middle items into an ellipsis when space is limited.
+ * @ux {Last item} The last item represents the current page and is non-interactive.
+ * @ux {Root icon} Optionally displays a home icon as the first item.
  */
 export const Breadcrumb: KendoComponent<KendoBreadcrumbProps & KendoBreadcrumbState & React.HTMLAttributes<HTMLElement>> = (
     props: KendoBreadcrumbProps &

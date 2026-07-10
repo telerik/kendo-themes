@@ -29,6 +29,11 @@ const defaultOptions = {};
  * @aria {role="tablist"} Follows TabStrip spec: indicates the tablist role for the ul element.
  * @aria {role="tab"} Follows TabStrip spec: the tab li element.
  * @aria {aria-label|title} Follows DropDownButton spec: required when no text is visible in the tab menu button.
+ * @ux {Cell editing} Clicking a cell or pressing Enter activates it for editing.
+ * @ux {Range selection} Cells, rows, and columns are selected by clicking and dragging.
+ * @ux {Formula bar} Displays and edits the active cell's content or formula expression.
+ * @ux {Multiple sheets} Tabs at the bottom add, rename, and navigate between sheets.
+ * @ux {Toolbar formatting} The toolbar applies bold, color, alignment, and other styles to selected cells.
  */
 export const Spreadsheet: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props: React.HTMLAttributes<HTMLDivElement>

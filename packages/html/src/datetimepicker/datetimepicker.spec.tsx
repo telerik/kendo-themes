@@ -70,6 +70,10 @@ const defaultOptions = {
  * @aria {tabindex="-1"} Button element must not be focusable.
  * @aria {aria-label} The button needs an accessible name.
  * @aria {aria-disabled} Rendered only when the picker is disabled.
+ * @ux {Combined picker} A single popup contains both a date calendar and a time selector.
+ * @ux {Tab switching} The popup header switches between the date and time views.
+ * @ux {Direct input} Date and time can also be typed directly into the input.
+ * @ux {Disabled state} When disabled, the input and popup are non-interactive.
  */
 export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDateTimePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDateTimePickerProps &

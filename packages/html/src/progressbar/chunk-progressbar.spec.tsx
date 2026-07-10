@@ -32,6 +32,9 @@ const defaultOptions = {
 
 /**
  * @aria {aria-label} accessible name for the progressbar
+ * @ux {Segmented fill} Progress is shown as a series of discrete filled chunks.
+ * @ux {Chunk count} The number of chunks is configurable.
+ * @ux {Orientation} Can be rendered horizontally or vertically.
  */
 export const ChunkProgressBar: KendoComponent<KendoChunkProgressBarProps & KendoChunkProgressBarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChunkProgressBarProps &
