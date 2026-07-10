@@ -125,6 +125,10 @@ $kendo-toolbar-item-focus-outline-style: var( --kendo-toolbar-item-focus-outline
 /// @group toolbar
 $kendo-toolbar-item-focus-outline-color: var( --kendo-toolbar-item-focus-outline-color, #{k-color(base-emphasis)} ) !default;
 
+/// The border radius of the floating Toolbar.
+/// @group toolbar
+$kendo-floating-toolbar-border-radius: var( --kendo-floating-toolbar-border-radius, #{k-border-radius(md)} ) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/toolbar/_variables.scss" with (
     $kendo-toolbar-default-fill-mode: $kendo-toolbar-default-fill-mode,
     $kendo-toolbar-default-size: $kendo-toolbar-default-size,
@@ -158,4 +162,5 @@ $kendo-toolbar-item-focus-outline-color: var( --kendo-toolbar-item-focus-outline
     $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
     $kendo-toolbar-input-width: $kendo-toolbar-input-width,
     $kendo-toolbar-smart-box-min-width: $kendo-toolbar-smart-box-min-width,
+    $kendo-floating-toolbar-border-radius: $kendo-floating-toolbar-border-radius
 );

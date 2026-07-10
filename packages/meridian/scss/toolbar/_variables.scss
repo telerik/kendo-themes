@@ -149,6 +149,10 @@ $kendo-toolbar-overflow-button-padding-y: $kendo-menu-popup-md-item-padding-y !d
 /// @group toolbar
 $kendo-toolbar-overflow-button-padding-x: $kendo-menu-popup-md-item-padding-x !default;
 
+/// The border radius of the floating Toolbar.
+/// @group toolbar
+$kendo-floating-toolbar-border-radius: k-border-radius(xxl) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/toolbar/_variables.scss" with (
     $kendo-toolbar-default-fill-mode: $kendo-toolbar-default-fill-mode,
     $kendo-toolbar-default-size: $kendo-toolbar-default-size,
@@ -192,5 +196,6 @@ $kendo-toolbar-overflow-button-padding-x: $kendo-menu-popup-md-item-padding-x !d
     $kendo-toolbar-overflow-container-font-size: $kendo-toolbar-overflow-container-font-size,
     $kendo-toolbar-overflow-container-line-height: $kendo-toolbar-overflow-container-line-height,
     $kendo-toolbar-overflow-button-padding-y: $kendo-toolbar-overflow-button-padding-y,
-    $kendo-toolbar-overflow-button-padding-x: $kendo-toolbar-overflow-button-padding-x
+    $kendo-toolbar-overflow-button-padding-x: $kendo-toolbar-overflow-button-padding-x,
+    $kendo-floating-toolbar-border-radius: $kendo-floating-toolbar-border-radius
 );

@@ -272,7 +272,16 @@
         }
     }
 
-    .k-floating-toolbar,
+    .k-floating-toolbar {
+        max-width: fit-content;
+        border-radius: $kendo-floating-toolbar-border-radius;
+
+        .k-toolbar {
+            border-width: 0;
+            border-radius: inherit;
+        }
+    }
+
     .k-window-content:where(.editorToolbarWindow) { // stylelint-disable-line
         padding-block: $kendo-toolbar-md-padding-y !important; // stylelint-disable-line declaration-no-important
         padding-inline: $kendo-toolbar-md-padding-x !important; // stylelint-disable-line declaration-no-important
