@@ -36,6 +36,9 @@ const defaultOptions = {};
 /**
  * @aria {role="none"|"tab"} When true, renders with wizard tab pattern: role=none on li, role=tab on link.
  * @aria {aria-controls} for the step link, pointing to the associated tabpanel id
+ * @ux {State display} Renders as pending, active, completed, or error to communicate progress.
+ * @ux {Click navigation} A completed step can be clicked to return to it.
+ * @ux {Number or icon} Shows the step index or a custom icon inside the step indicator.
  */
 export const Step = (
     props: KendoStepProps & StepState &

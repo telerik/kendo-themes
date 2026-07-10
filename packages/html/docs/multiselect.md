@@ -1,4 +1,4 @@
-# Multiselect Accessibility
+# Multiselect Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Multiselect is compliant with the [Web Content Accessibility Guidelines (WCA
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-multiselect` element.
 
 #### ARIA Attributes
 
@@ -55,6 +70,17 @@ The Multiselect is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Control/Cmd(Mac) + Shift + End` | Creates a range selection from the currently focused item down to the end of the list. All items outside that range are deselected. |
 | `Control/Cmd(Mac) + A` | Selects all items present in the list. If all items are already selected, deselects them. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Tags | Selected values appear as removable tag chips inside the input. |
+| Popup | Clicking the input or trigger opens a filterable dropdown list. |
+| Filtering | The list narrows as the user types in the input. |
+| Tag removal | Clicking a tag's × removes that value from the selection. |
+| Placeholder | Displays hint text when no values are selected. |
+| Disabled state | When disabled, tags cannot be added or removed. |
+
 ### Testing
 
 The Multiselect has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -73,3 +99,7 @@ The Multiselect has been tested with the following screen readers and browsers c
 
 - [WAI-ARIA Authoring Practices: Select-Only Combobox Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html)
 - [WAI-ARIA Authoring Practices: Scrollable Listbox Example](https://www.w3.org/WAI/ARIA/apg/example-index/listbox/listbox-scrollable.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/multiselect/`](https://github.com/telerik/kendo-themes/tree/develop/tests/multiselect/).

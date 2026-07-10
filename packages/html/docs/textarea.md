@@ -1,4 +1,4 @@
-# Textarea Accessibility
+# Textarea Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,24 @@ The Textarea is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-textarea` element.
 
 #### ARIA Attributes
 
@@ -26,6 +39,16 @@ The Textarea is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `aria-invalid="true"` | Rendered only when the TextArea is in a form and announces the invalid state. |
 | `aria-describedby` | Points to the hint or error message for the textarea. |
 | `aria-disabled="true"` | Rendered only when the TextArea is disabled. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Multi-line input | Accepts text across multiple lines. |
+| Auto-grow | Optionally expands vertically as the user types to fit the content. |
+| Character count | Optionally displays a remaining or total character count. |
+| Placeholder | Displays hint text when the field is empty. |
+| Disabled state | When disabled, the field is non-interactive. |
 
 ### Testing
 
@@ -44,3 +67,7 @@ The Textarea has been tested with the following screen readers and browsers comb
 ### Resources
 
 - [WAI-ARIA Specification for the TextBox](https://www.w3.org/TR/wai-aria-1.2/#textbox)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/textarea/`](https://github.com/telerik/kendo-themes/tree/develop/tests/textarea/).

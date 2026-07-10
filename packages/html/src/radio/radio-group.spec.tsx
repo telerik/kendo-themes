@@ -18,6 +18,9 @@ const defaultOptions = {
 
 /**
  * @aria {aria-invalid="true"} Rendered only when the radio button is in a form and announces the invalid state.
+ * @ux {Exclusive selection} Selecting one radio button automatically deselects all others in the group.
+ * @ux {Layout} Items can be arranged horizontally or vertically.
+ * @ux {Disabled group} When the group is disabled, all contained radio buttons are non-interactive.
  */
 export const RadioGroup: KendoComponent<KendoRadioGroupProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoRadioGroupProps &

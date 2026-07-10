@@ -22,6 +22,13 @@ const defaultOptions = {
     contentPosition: "right",
 };
 
+/**
+ * @ux {Multi-step} Guides the user through a complex task split into discrete steps.
+ * @ux {Progress indicator} A stepper at the top shows completed, current, and upcoming steps.
+ * @ux {Navigation buttons} Back and Next buttons move between steps.
+ * @ux {Per-step validation} Each step can validate its inputs before the Next button is enabled.
+ * @ux {Step click} Previously completed steps can be revisited by clicking the step indicator.
+ */
 export const Wizard: KendoComponent<KendoWizardProps & KendoWizardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoWizardProps & KendoWizardState & React.HTMLAttributes<HTMLDivElement>
 ) => {

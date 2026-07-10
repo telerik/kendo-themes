@@ -18,6 +18,11 @@ const defaultOptions = {
 
 export type KendoTaskBoardColumnState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @ux {Status label} The column header indicates the name of the workflow stage.
+ * @ux {Add card} A button adds a new card to the column.
+ * @ux {Drop target} Accepts cards dragged from other columns.
+ */
 export const TaskBoardColumn = (
     props: KendoTaskBoardColumnProps & KendoTaskBoardColumnState & React.HTMLAttributes<HTMLDivElement>
 ) => {

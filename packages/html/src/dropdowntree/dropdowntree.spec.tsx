@@ -77,6 +77,10 @@ const defaultOptions = {
  * @aria {tabindex="-1"} The button must not be focusable.
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-controls} Points to treeview when popup is open
+ * @ux {Tree popup} A hierarchical tree opens in a popup when the control is clicked.
+ * @ux {Expand / Collapse} Tree nodes can be expanded to reveal children.
+ * @ux {Single selection} Clicking a leaf node selects it and closes the popup.
+ * @ux {Checkboxes} Multi-selection is supported via checkboxes on each node.
  */
 export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdownTreeState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDropdownTreeProps &

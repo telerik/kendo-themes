@@ -1,4 +1,4 @@
-# DockManager Accessibility
+# DockManager Specification
 
 ## Accessibility Support
 
@@ -31,6 +31,16 @@ The DockManager is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Control/Cmd(Mac) + Shift + ArrowLeft` | Docks the active pane to the global left. |
 | `Control/Cmd(Mac) + Shift + ArrowRight` | Docks the active pane to the global right. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Panels | Contains independent panels that can be docked to fixed positions or floated. |
+| Drag and drop | Panels are repositioned by dragging their tab headers. |
+| Tab groups | Multiple panels docked to the same position form a tabbed group. |
+| Floating panels | Panels can be detached and float freely above the layout. |
+| Resize | Panel sizes are adjusted by dragging the splitter between dock zones. |
+
 ### Testing
 
 The DockManager has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -44,3 +54,7 @@ The DockManager has been tested with the following screen readers and browsers c
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/dock-manager/`](https://github.com/telerik/kendo-themes/tree/develop/tests/dock-manager/).

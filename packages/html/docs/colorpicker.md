@@ -1,4 +1,4 @@
-# Colorpicker Accessibility
+# Colorpicker Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,24 @@ The Colorpicker is compliant with the [Web Content Accessibility Guidelines (WCA
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-colorpicker` element.
 
 #### ARIA Attributes
 
@@ -42,6 +55,15 @@ The Colorpicker is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Enter` | For button items, executes the currently focused button action. |
 | `Escape` | If any of the colorgradient elements are currently focused, bring focus back to the k-colorpicker element. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Popup | Opens a color picker popup when the swatch button is clicked. |
+| Color preview | The trigger button reflects the currently selected color. |
+| Flat mode | Can be rendered inline without a popup wrapper. |
+| Gradient and palette tabs | Tabs let the user switch between gradient picker and palette. |
+
 ### Testing
 
 The Colorpicker has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -55,3 +77,7 @@ The Colorpicker has been tested with the following screen readers and browsers c
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/colorpicker/`](https://github.com/telerik/kendo-themes/tree/develop/tests/colorpicker/).

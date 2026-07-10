@@ -28,6 +28,11 @@ export type KendoFileBoxProps = {
     showButton?: boolean;
 };
 
+/**
+ * @ux {File list} Displays each selected file with its name, size, and status.
+ * @ux {Remove} Each file item has a remove button to discard it from the list.
+ * @ux {Upload status} Visual indicators show whether each file is pending, uploading, or done.
+ */
 export const FileBox = (
     props: KendoFileBoxProps &
         React.HTMLAttributes<HTMLLIElement>

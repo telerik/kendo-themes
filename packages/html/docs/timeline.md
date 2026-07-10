@@ -1,4 +1,4 @@
-# Timeline Accessibility
+# Timeline Specification
 
 ## Accessibility Support
 
@@ -44,7 +44,25 @@ The Timeline is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `Enter` | If expandable, expands/collapses the currently focused item. |
 | `Space` | If expandable, expands/collapses the currently focused item. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Chronological events | Displays a list of events ordered by date. |
+| Expand / Collapse | Each event's detail content can be expanded or collapsed. |
+| Orientation | Can be rendered vertically (default) or horizontally. |
+| Alternating | In horizontal mode, event cards alternate between top and bottom placement. |
+
 ### TimelineFlagWrap
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+| `selected` | `k-selected` |
+
+These CSS classes are applied to the `k-timeline-flag-wrap` element.
 
 #### ARIA Attributes
 
@@ -54,6 +72,14 @@ The Timeline is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `aria-hidden="true"` | Flag-wrap items are hidden from the accessibility tree. |
 
 ### TimelineTrackItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-timeline-track-item` element.
 
 #### ARIA Attributes
 
@@ -97,3 +123,7 @@ The Timeline has been tested with the following screen readers and browsers comb
 
 - [WAI-ARIA specification for tablist](https://www.w3.org/TR/wai-aria-1.2/#tablist)
 - [WAI-ARIA practices: TabList example](https://www.w3.org/WAI/ARIA/apg/example-index/tabs/tabs-automatic.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/timeline/`](https://github.com/telerik/kendo-themes/tree/develop/tests/timeline/).

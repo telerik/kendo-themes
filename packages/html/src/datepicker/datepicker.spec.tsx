@@ -69,6 +69,11 @@ export type KendoDatePickerState = { [K in (typeof states)[number]]?: boolean };
  * @aria {tabindex="-1"} Button element must not be focusable.
  * @aria {aria-label} The button needs an accessible name.
  * @aria {aria-disabled} Rendered only when the picker is disabled.
+ * @ux {Calendar popup} A calendar opens when the calendar button is clicked.
+ * @ux {Direct input} The date can also be typed directly into the input field.
+ * @ux {Formatted value} The selected date is formatted according to the configured locale.
+ * @ux {Min / Max} Selection can be restricted to a configurable date range.
+ * @ux {Disabled state} When disabled, the input and popup button are non-interactive.
  */
 export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDatePickerProps &

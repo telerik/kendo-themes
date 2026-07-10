@@ -1,4 +1,4 @@
-# ChartWizard Accessibility
+# ChartWizard Specification
 
 ## Accessibility Support
 
@@ -15,6 +15,15 @@ The ChartWizard is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Tab` | Navigates the content in the ChartWizard - the Window, Export button, Chart, Splitter, TabStrip tabs and content, each ExpansionPanel, each Chart type button. |
 | `Enter` | Triggers click event on the focused button. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Multi-step | Guides the user through chart creation in a series of steps. |
+| Live preview | Displays a real-time preview of the chart as options are configured. |
+| Chart type selection | The user picks the desired chart type from a visual list. |
+| Data binding | Connects the chart to a data source in a dedicated step. |
+
 ### Testing
 
 The ChartWizard has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -28,3 +37,7 @@ The ChartWizard has been tested with the following screen readers and browsers c
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/chart-wizard/`](https://github.com/telerik/kendo-themes/tree/develop/tests/chart-wizard/).

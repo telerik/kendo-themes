@@ -41,6 +41,11 @@ const defaultOptions = {
     cutoutBorder: false,
 };
 
+/**
+ * @ux {Count indicator} Overlays a numeric count or short text label on another element.
+ * @ux {Positioning} Anchors to a corner of the host element.
+ * @ux {Cutout} An optional outline style visually separates the badge from its host.
+ */
 export const Badge: KendoComponent<KendoBadgeProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoBadgeProps &
         React.HTMLAttributes<HTMLSpanElement>

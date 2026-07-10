@@ -17,6 +17,11 @@ const defaultOptions = {};
 
 /**
  * @aria {role="navigation"} The landmark role navigation must be assigned to the component.
+ * @ux {Progress indicator} Shows the current step, completed steps, and upcoming steps.
+ * @ux {Click navigation} Previously completed steps can be revisited by clicking.
+ * @ux {Linear mode} In linear mode steps must be completed in order before proceeding.
+ * @ux {Labels} Each step has a descriptive label below its indicator.
+ * @ux {Error state} A step can display an error icon when its content has validation issues.
  */
 export const Stepper: KendoComponent<KendoStepperProps & React.HTMLAttributes<HTMLElement>> = (
     props: KendoStepperProps & React.HTMLAttributes<HTMLElement>

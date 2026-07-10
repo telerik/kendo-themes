@@ -1,4 +1,4 @@
-# Captcha Accessibility
+# Captcha Specification
 
 ## Accessibility Support
 
@@ -7,6 +7,17 @@ Out of the box, the Telerik and Kendo UI Captcha provides extensive accessibilit
 The Captcha is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
 
 ### Captcha
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `loading` | `k-loading` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-captcha` element.
 
 #### Keyboard Navigation
 
@@ -18,6 +29,15 @@ The Captcha is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 | `Space` | Presses the focused Captcha button. |
 | `ArrowUp` | Increases the Audio control volume. |
 | `ArrowDown` | Decreases the Audio control volume. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Image challenge | Presents a visual challenge the user must solve to verify they are human. |
+| Audio alternative | An audio challenge can be requested for accessibility. |
+| Refresh | A reload button requests a new challenge image. |
+| Validation | The entered response is validated and feedback is shown inline. |
 
 ### Testing
 
@@ -36,3 +56,7 @@ The Captcha has been tested with the following screen readers and browsers combi
 ### Resources
 
 - [WAI-ARIA specification for textbox](https://www.w3.org/TR/wai-aria-1.2/#textbox)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/captcha/`](https://github.com/telerik/kendo-themes/tree/develop/tests/captcha/).

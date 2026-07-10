@@ -39,6 +39,10 @@ const defaultOptions = {
 /**
  * @aria {role="listbox"} Content element role when selectable; items receive role="option".
  * @aria {aria-label} Accessible name for the content element; required when role="listbox".
+ * @ux {Item template} Each item is rendered with a custom template.
+ * @ux {Selection} Items can be selected by clicking.
+ * @ux {Paging} Content is paginated with a pager component.
+ * @ux {Inline editing} Items can be edited in-place via an edit template.
  */
 export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListViewProps &

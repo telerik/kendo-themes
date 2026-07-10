@@ -38,6 +38,11 @@ const defaultOptions = {
 /**
  * @aria {aria-hidden="true"} Scroll buttons are hidden from assistive technologies.
  * @aria {id} Optional; applied to the TabStripItems element, referenced by tab aria-controls.
+ * @ux {Tab activation} Clicking a tab header displays its associated content panel.
+ * @ux {Closable tabs} Tabs can include a close button to remove the tab.
+ * @ux {Overflow scrolling} When tabs overflow the header, scroll arrows appear.
+ * @ux {Disabled tabs} Individual tabs can be disabled and are non-interactive.
+ * @ux {Tab position} Tabs can be placed at the top, bottom, left, or right of the content area.
  */
 export const TabStrip: KendoComponent<KendoTabStripProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTabStripProps &

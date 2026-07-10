@@ -1,4 +1,4 @@
-# Dateinput Accessibility
+# Dateinput Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Dateinput is compliant with the [Web Content Accessibility Guidelines (WCAG)
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-dateinput` element.
 
 #### ARIA Attributes
 
@@ -38,6 +53,16 @@ The Dateinput is compliant with the [Web Content Accessibility Guidelines (WCAG)
 | `ArrowRight` | Moves to next date segment in the input. |
 | `Backspace or Delete` | Deletes value of the date segment. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Segment editing | Each date part (day, month, year) is focused and edited independently. |
+| Spin | Arrow keys increment or decrement the focused date segment. |
+| Format placeholder | The expected date format is shown as placeholder text. |
+| Validation | Invalid values trigger an error visual state. |
+| Disabled state | When disabled, the input is non-interactive. |
+
 ### Testing
 
 The Dateinput has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -55,3 +80,7 @@ The Dateinput has been tested with the following screen readers and browsers com
 ### Resources
 
 - [ARIA practices Date Picker Dialog Example](https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/dateinput/`](https://github.com/telerik/kendo-themes/tree/develop/tests/dateinput/).

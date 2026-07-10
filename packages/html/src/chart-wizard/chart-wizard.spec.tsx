@@ -11,6 +11,12 @@ const options = {};
 
 const defaultOptions = {};
 
+/**
+ * @ux {Multi-step} Guides the user through chart creation in a series of steps.
+ * @ux {Live preview} Displays a real-time preview of the chart as options are configured.
+ * @ux {Chart type selection} The user picks the desired chart type from a visual list.
+ * @ux {Data binding} Connects the chart to a data source in a dedicated step.
+ */
 export const ChartWizard: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoWindowProps &
         React.HTMLAttributes<HTMLDivElement>

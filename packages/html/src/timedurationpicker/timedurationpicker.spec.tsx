@@ -68,6 +68,9 @@ const defaultOptions = {
  * @aria {aria-label|aria-labelledby} The listbox needs an accessible name.
  * @aria {role="none"} The ul element semantic meaning must be removed.
  * @aria {role="option"} The available options must be marked as such.
+ * @ux {Segment editing} Each time unit (hours, minutes, seconds) is edited independently.
+ * @ux {Spin} Arrow keys increment or decrement the focused segment.
+ * @ux {Disabled state} When disabled, the input is non-interactive.
  */
 export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & KendoTimeDurationPickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTimeDurationPickerProps &

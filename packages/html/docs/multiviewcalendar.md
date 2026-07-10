@@ -1,4 +1,4 @@
-# Multiviewcalendar Accessibility
+# Multiviewcalendar Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Multiviewcalendar is compliant with the [Web Content Accessibility Guideline
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -34,6 +34,14 @@ The Multiviewcalendar is compliant with the [Web Content Accessibility Guideline
 | `tabindex="-1"` | Title button is not focusable. |
 | `tabindex="-1"` | Today link is not focusable. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Multiple months | Displays two or more months simultaneously for range selection. |
+| Range highlighting | Visually connects and highlights the selected date range across all views. |
+| Synchronized navigation | Clicking the previous or next arrow advances all calendar views together. |
+
 ### Testing
 
 The Multiviewcalendar has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -51,3 +59,7 @@ The Multiviewcalendar has been tested with the following screen readers and brow
 ### Resources
 
 - [ARIA practices Date Picker Dialog Example](https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/multiviewcalendar/`](https://github.com/telerik/kendo-themes/tree/develop/tests/multiviewcalendar/).

@@ -17,6 +17,10 @@ export type KendoChartProps = {
  * @aria {role="graphics-document document"} Identifies the chart surface as a graphics document for assistive technology.
  * @aria {aria-roledescription} Provides a human-readable description of the chart type (e.g. "Sales by year").
  * @aria {tabindex="0"} Makes the chart surface keyboard focusable.
+ * @ux {Tooltip} Shows data labels or values when hovering over data points or series.
+ * @ux {Legend} Identifies each series; clicking a legend item toggles its visibility.
+ * @ux {Zoom and pan} Supports mouse-wheel zoom and click-drag panning on large datasets.
+ * @ux {Export} Can export the chart as a PNG image or PDF document.
  */
 export const Chart: KendoComponent<KendoChartProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChartProps &

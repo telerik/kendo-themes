@@ -15,6 +15,11 @@ export type KendoFloatingToolbarOptions = {};
 
 export type KendoFloatingToolbarProps = KendoFloatingToolbarOptions & {};
 
+/**
+ * @ux {Contextual display} Appears near selected content (e.g., selected text in an editor).
+ * @ux {Floating position} Rendered as a floating layer above the page, not in the document flow.
+ * @ux {Action buttons} Contains formatting or context-specific action buttons.
+ */
 export const FloatingToolbar: KendoComponent<KendoFloatingToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFloatingToolbarProps & React.HTMLAttributes<HTMLDivElement>
 ) => {

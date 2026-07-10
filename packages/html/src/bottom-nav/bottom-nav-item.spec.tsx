@@ -24,6 +24,9 @@ const defaultOptions = {};
 /**
  * @aria {role="link"} Associate the link purpose of the bottom navigation items.
  * @aria {aria-current="true"} Indicates the selected navigation item.
+ * @ux {Selection} Clicking the item selects it and marks it as active.
+ * @ux {Icon and label} Displays an icon above a text label.
+ * @ux {Disabled state} When disabled, the item is non-interactive and visually dimmed.
  */
 export const BottomNavItem: KendoComponent<KendoBottomNavItemProps & KendoBottomNavItemState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoBottomNavItemProps &

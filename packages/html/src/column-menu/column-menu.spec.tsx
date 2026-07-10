@@ -22,6 +22,12 @@ const defaultOptions = {
     view: 'list'
 };
 
+/**
+ * @ux {Filter} Provides a filter form to narrow column data.
+ * @ux {Sort} Offers ascending and descending sort actions for the column.
+ * @ux {Column chooser} Allows hiding or showing individual columns.
+ * @ux {Lock / Unlock} Allows pinning a column to the left or right side of the grid.
+ */
 export const ColumnMenu: KendoComponent<KendoColumnMenuProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColumnMenuProps &
         React.HTMLAttributes<HTMLDivElement>

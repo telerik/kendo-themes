@@ -21,6 +21,10 @@ export type KendoSpeechToTextButtonProps = KendoButtonProps & KendoSpeechToTextB
  * @aria {role="button"} If the used element is not <button>, explicitly set its role to button.
  * @aria {aria-pressed} Announces the toggle behaviour of the button.
  * @aria {aria-label} Accessible name for the speech-to-text button.
+ * @ux {Recording} Pressing the button starts audio recording.
+ * @ux {Stop} Pressing the button again or after a silence timeout stops recording.
+ * @ux {Transcription} Converts the recorded audio into text.
+ * @ux {Status} Visual feedback indicates whether the button is idle, recording, or processing.
  */
 export const SpeechToTextButton: KendoComponent<KendoSpeechToTextButtonProps & KendoSpeechToTextButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoSpeechToTextButtonProps &

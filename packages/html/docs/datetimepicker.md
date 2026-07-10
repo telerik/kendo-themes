@@ -1,4 +1,4 @@
-# Datetimepicker Accessibility
+# Datetimepicker Specification
 
 ## Accessibility Support
 
@@ -19,11 +19,26 @@ The Datetimepicker is compliant with the [Web Content Accessibility Guidelines (
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-datetimepicker` element.
 
 #### ARIA Attributes
 
@@ -48,6 +63,15 @@ The Datetimepicker is compliant with the [Web Content Accessibility Guidelines (
 | `Alt/Opt(Mac) + ArrowDown` | Opens the dropdown and moves the focus to the displayed calendar. |
 | `Alt/Opt(Mac) + ArrowUp` | Closes the dropdown and moves the focus to the input element. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Combined picker | A single popup contains both a date calendar and a time selector. |
+| Tab switching | The popup header switches between the date and time views. |
+| Direct input | Date and time can also be typed directly into the input. |
+| Disabled state | When disabled, the input and popup are non-interactive. |
+
 ### Testing
 
 The Datetimepicker has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -67,3 +91,7 @@ The Datetimepicker has been tested with the following screen readers and browser
 - [WAI ARIA specification for combobox](https://www.w3.org/TR/wai-aria-1.2/#combobox)
 - [WAI ARIA specification for spinbutton](https://www.w3.org/TR/wai-aria-1.2/#spinbutton)
 - [ARIA practices Date Picker Dialog Example](https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/datetimepicker/`](https://github.com/telerik/kendo-themes/tree/develop/tests/datetimepicker/).

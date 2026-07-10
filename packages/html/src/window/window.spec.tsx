@@ -27,6 +27,11 @@ export type KendoWindowProps = KendoWindowOptions & {
 /**
  * @aria {role="dialog"} Announces the dialog role of the component.
  * @aria {aria-labelledby} Associate the title of the dialog.
+ * @ux {Draggable} The window is repositioned by dragging its title bar.
+ * @ux {Resizable} The window is resized by dragging its edges or corners.
+ * @ux {Minimize / Maximize} The window can be collapsed to only the title bar or expanded to fill the viewport.
+ * @ux {Close} The × button removes the window from the DOM.
+ * @ux {Stacking} Multiple open windows maintain correct z-index layering.
  */
 export const Window: KendoComponent<KendoWindowProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoWindowProps &

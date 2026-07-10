@@ -33,6 +33,10 @@ const defaultOptions = {
  * @aria {tabindex="-1"} Scroll buttons are removed from the tab sequence.
  * @aria {aria-label} Scroll buttons have an accessible label.
  * @aria {role="menu"|"menubar"} When true, renders as context menu (role="menu"); otherwise role="menubar".
+ * @ux {Horizontal / Vertical} Can be rendered as a horizontal menu bar or a vertical sidebar.
+ * @ux {Submenus} Items with children open a flyout submenu on hover or click.
+ * @ux {Popup positioning} Submenus automatically flip when they would overflow the viewport.
+ * @ux {Disabled items} Individual items can be disabled and are skipped during keyboard navigation.
  */
 export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuProps &

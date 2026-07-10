@@ -1,4 +1,4 @@
-# Dialog Accessibility
+# Dialog Specification
 
 ## Accessibility Support
 
@@ -24,6 +24,16 @@ The Dialog is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | `Tab` | Focus is moved between the elements in the dialog and is trapped into the component. |
 | `Escape` | Closes the dialog. When the dialog is modal, the focus should be returned to the element that triggered the open. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Modal overlay | Renders a backdrop that blocks interaction with the underlying page. |
+| Close button | An optional × button in the title bar dismisses the dialog. |
+| Action buttons | Footer buttons let the user confirm or cancel the operation. |
+| Draggable | The dialog can be repositioned by dragging its title bar. |
+| Resizable | The dialog can be resized by dragging its edges or corners. |
+
 ### Testing
 
 The Dialog has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -41,3 +51,7 @@ The Dialog has been tested with the following screen readers and browsers combin
 ### Resources
 
 - [ARIA practices Modal Dialog Example](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/dialog/`](https://github.com/telerik/kendo-themes/tree/develop/tests/dialog/).

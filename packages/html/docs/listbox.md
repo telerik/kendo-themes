@@ -1,4 +1,4 @@
-# Listbox Accessibility
+# Listbox Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,17 @@ The Listbox is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-listbox` element.
 
 #### ARIA Attributes
 
@@ -51,6 +59,15 @@ The Listbox is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 | `ArrowLeft or ArrowUp` | Focuses the previous button in the toolbar. |
 | `Enter` | Executes the currenly focused button command if enabled. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Selection | Items are selected by clicking; multi-select with Ctrl/Shift. |
+| Reorder | Items are reordered using drag-and-drop or toolbar Up/Down buttons. |
+| Transfer | Items are moved between two listboxes with toolbar action buttons. |
+| Filtering | An optional search input filters the item list. |
+
 ### Testing
 
 The Listbox has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -68,3 +85,7 @@ The Listbox has been tested with the following screen readers and browsers combi
 ### Resources
 
 - [WAI-ARIA Authoring Practices: ListBox Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/listbox/`](https://github.com/telerik/kendo-themes/tree/develop/tests/listbox/).

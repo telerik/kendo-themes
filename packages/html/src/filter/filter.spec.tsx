@@ -24,6 +24,11 @@ const defaultOptions = {};
  * @aria {role="group"} Represents a group of items in the Filter component.
  * @aria {role="toolbar"} The role represents a collection of tools.
  * @aria {aria-label} Specifies a label for the toolbar.
+ * @ux {Filter groups} Conditions are organized in groups with AND / OR logic operators.
+ * @ux {Add condition} A button adds a new filter condition to a group.
+ * @ux {Remove condition} Each condition has a remove button.
+ * @ux {Field selector} A dropdown selects the data field to filter on.
+ * @ux {Operator selector} A dropdown selects the comparison operator for the condition.
  */
 export const Filter: KendoComponent<KendoFilterProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFilterProps &

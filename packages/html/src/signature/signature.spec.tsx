@@ -38,6 +38,10 @@ const defaultOptions = {};
  * @aria {aria-label} Announces the purpose of the Signature.
  * @aria {nodeName="button"} Renders action as a button element.
  * @aria {aria-label} Announces the purpose of the action button.
+ * @ux {Canvas drawing} The user draws their signature on a canvas area.
+ * @ux {Clear} A clear button resets the canvas to a blank state.
+ * @ux {Maximize} A maximize button expands the canvas for easier drawing.
+ * @ux {Minimize} A minimize button collapses the canvas back to its original size.
  */
 export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSignatureProps &

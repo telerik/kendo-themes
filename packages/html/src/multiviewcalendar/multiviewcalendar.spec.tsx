@@ -48,6 +48,9 @@ const defaultOptions = {
  * @aria {tabindex="-1"} Navigation buttons are not focusable.
  * @aria {tabindex="-1"} Title button is not focusable.
  * @aria {tabindex="-1"} Today link is not focusable.
+ * @ux {Multiple months} Displays two or more months simultaneously for range selection.
+ * @ux {Range highlighting} Visually connects and highlights the selected date range across all views.
+ * @ux {Synchronized navigation} Clicking the previous or next arrow advances all calendar views together.
  */
 export const MultiViewCalendar: KendoComponent<KendoMultiViewCalendarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMultiViewCalendarProps &

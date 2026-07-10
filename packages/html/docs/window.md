@@ -1,4 +1,4 @@
-# Window Accessibility
+# Window Specification
 
 ## Accessibility Support
 
@@ -28,6 +28,16 @@ The Window is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | `Control/Cmd(Mac) + ArrowRight` | Increases the width of the window triggering the resizing capabilities. Applicable only when the component is resizable. |
 | `Escape` | Closes the window. When the window is modal, the focus should be returned to the element that triggered the open. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Draggable | The window is repositioned by dragging its title bar. |
+| Resizable | The window is resized by dragging its edges or corners. |
+| Minimize / Maximize | The window can be collapsed to only the title bar or expanded to fill the viewport. |
+| Close | The × button removes the window from the DOM. |
+| Stacking | Multiple open windows maintain correct z-index layering. |
+
 ### Testing
 
 The Window has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -45,3 +55,7 @@ The Window has been tested with the following screen readers and browsers combin
 ### Resources
 
 - [ARIA practices Modal Dialog Example](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/window/`](https://github.com/telerik/kendo-themes/tree/develop/tests/window/).

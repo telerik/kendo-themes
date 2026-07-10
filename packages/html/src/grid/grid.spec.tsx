@@ -48,6 +48,13 @@ const defaultOptions = {
  * @aria {aria-rowcount} Total number of rows; required for paging/virtual row scenarios.
  * @aria {id} ID for the .k-grid-aria-root element; referenced via aria-controls on toolbar and grouping header.
  * @aria {role="grid"|"treegrid"} Defaults to "grid"; overridden to "treegrid" for TreeList.
+ * @ux {Sorting} Clicking a column header sorts data ascending or descending.
+ * @ux {Filtering} Filter row inputs or column menu filter forms narrow displayed rows.
+ * @ux {Pagination} A pager at the bottom navigates between pages of data.
+ * @ux {Row selection} Rows can be selected by clicking; multi-select with Ctrl/Shift.
+ * @ux {Column resize} Column widths are adjusted by dragging the column border.
+ * @ux {Inline editing} Cells enter edit mode on click or keypress.
+ * @ux {Grouping} Rows can be grouped by a column value using drag-and-drop to the group panel.
  */
 export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridProps &

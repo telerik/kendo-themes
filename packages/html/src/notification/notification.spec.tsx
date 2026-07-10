@@ -42,6 +42,10 @@ const defaultOptions = {
  * @aria {aria-live="polite"} The aria-live value must be polite so it will not obscure other essential information.
  * @aria {aria-describedby=".k-notification-content id"} Used so that the content of the Notification will be announced by assistive technologies.
  * @aria {aria-hidden="true"} The close button icon should not be present in the accessibility tree.
+ * @ux {Auto-dismiss} Disappears automatically after a configurable timeout.
+ * @ux {Viewport position} Can be anchored to any corner of the viewport.
+ * @ux {Status variants} Supports info, success, warning, and error types.
+ * @ux {Stacking} Multiple notifications stack and can be dismissed independently.
  */
 export const Notification: KendoComponent<KendoNotificationProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoNotificationProps &

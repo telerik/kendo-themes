@@ -34,6 +34,9 @@ const defaultOptions = {};
  * @aria {tabindex="0"} The element should be focusable.
  * @aria {aria-disabled="true"} Rendered only when the ExpansionPanel is disabled.
  * @aria {id} Referenced via aria-controls on the header button to link it to the content panel.
+ * @ux {Collapse / Expand} Clicking the header toggles the content panel open and closed.
+ * @ux {Animation} Panel opening and closing is smoothly animated.
+ * @ux {Disabled state} When disabled, the panel header cannot be toggled.
  */
 export const ExpansionPanel: KendoComponent<KendoExpansionPanelProps & KendoExpansionPanelState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoExpansionPanelProps &

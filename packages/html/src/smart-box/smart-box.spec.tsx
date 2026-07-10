@@ -59,6 +59,9 @@ const defaultOptions = {
  * @aria {aria-controls} referencing the popup listbox ID
  * @aria {aria-activedescendant} referencing the focused list item
  * @aria {aria-autocomplete} behavior
+ * @ux {Suggestions} Displays context-aware suggestions as the user types.
+ * @ux {Token creation} Accepted suggestions are converted into inline tokens.
+ * @ux {Natural language} Parses free-form text input into structured filter criteria.
  */
 export const SmartBox: KendoComponent<KendoSmartBoxProps & KendoSmartBoxState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoSmartBoxProps &

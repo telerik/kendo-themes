@@ -61,6 +61,10 @@ const defaultOptions = {
  * @aria {aria-invalid="true"} Rendered when the MaskedTextBox is in an invalid state.
  * @aria {aria-describedby} Points to the hint or error message.
  * @aria {aria-disabled="true"} Rendered when the MaskedTextBox is disabled.
+ * @ux {Mask pattern} Formats input according to a configurable pattern (e.g., phone numbers, dates).
+ * @ux {Prompt character} Unfilled mask positions are shown with a placeholder character (default: underscore).
+ * @ux {Auto-advance} Focus moves to the next mask segment as each one is filled.
+ * @ux {Disabled state} When disabled, the input is non-interactive.
  */
 export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMaskedTextboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMaskedTextboxProps &

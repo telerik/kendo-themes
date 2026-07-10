@@ -1,4 +1,4 @@
-# Grid Accessibility
+# Grid Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Grid is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -117,6 +117,18 @@ The Grid is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `Control/Cmd(Mac) + Shift + ArrowDown` | Reorders the row with the next one when such is present. |
 | `Control/Cmd(Mac) + Shift + ArrowUp` | Reorders the row with the previous one when such is present. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Sorting | Clicking a column header sorts data ascending or descending. |
+| Filtering | Filter row inputs or column menu filter forms narrow displayed rows. |
+| Pagination | A pager at the bottom navigates between pages of data. |
+| Row selection | Rows can be selected by clicking; multi-select with Ctrl/Shift. |
+| Column resize | Column widths are adjusted by dragging the column border. |
+| Inline editing | Cells enter edit mode on click or keypress. |
+| Grouping | Rows can be grouped by a column value using drag-and-drop to the group panel. |
+
 ### GridContainer
 
 #### ARIA Attributes
@@ -180,6 +192,18 @@ The Grid is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `role="none"` | Non-locked header rows have their semantic role removed when locked columns exist. |
 | `role="columnheader"` | Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns. |
 
+### GridHeaderCell
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+
+These CSS classes are applied to the `k-header` element.
+
 ### GridPinnedContainer
 
 #### ARIA Attributes
@@ -200,6 +224,15 @@ The Grid is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `aria-expanded` | Indicates whether the context menu popup is open. |
 
 ### GridStackCell
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+| `selected` | `k-selected` |
+
+These CSS classes are applied to the `k-grid-stack-cell` element.
 
 #### ARIA Attributes
 
@@ -252,3 +285,7 @@ The Grid has been tested with the following screen readers and browsers combinat
 - [WAI-ARIA specification for grid](https://www.w3.org/TR/wai-aria-1.2/#grid)
 - [ARIA Authoring Practices: Grid Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/grid/)
 - [ARIA Authoring Practices: Data Grid](https://www.w3.org/WAI/ARIA/apg/patterns/grid/examples/dataGrids/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/grid/`](https://github.com/telerik/kendo-themes/tree/develop/tests/grid/).

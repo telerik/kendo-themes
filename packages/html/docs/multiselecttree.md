@@ -1,4 +1,4 @@
-# Multiselecttree Accessibility
+# Multiselecttree Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Multiselecttree is compliant with the [Web Content Accessibility Guidelines 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-multiselecttree` element.
 
 #### ARIA Attributes
 
@@ -49,6 +64,15 @@ The Multiselecttree is compliant with the [Web Content Accessibility Guidelines 
 | `Printable Characters` | Typing "M" or any other printable character should select the next or first item in the list |
 | `Escape` | Clears the value when the popup is not open. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Tree popup | A hierarchical tree opens in a popup. |
+| Checkboxes | Items are selected or deselected via checkboxes on each node. |
+| Tags | Selected items appear as removable chips in the input. |
+| Select all | A top-level checkbox selects or deselects all items at once. |
+
 ### Testing
 
 The Multiselecttree has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -67,3 +91,7 @@ The Multiselecttree has been tested with the following screen readers and browse
 
 - [ARIA practices: TreeView Example](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/)
 - [ARIA practices: Select-Only Combobox Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/multiselecttree/`](https://github.com/telerik/kendo-themes/tree/develop/tests/multiselecttree/).

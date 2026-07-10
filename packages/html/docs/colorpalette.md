@@ -1,4 +1,4 @@
-# Colorpalette Accessibility
+# Colorpalette Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,17 @@ The Colorpalette is compliant with the [Web Content Accessibility Guidelines (WC
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-colorpalette` element.
 
 #### ARIA Attributes
 
@@ -36,6 +44,14 @@ The Colorpalette is compliant with the [Web Content Accessibility Guidelines (WC
 | `ArrowLeft` | Focuses the next cell on the left. |
 | `Enter` | Selects the color from the currently focused cell. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Swatch grid | Displays a grid of color tiles to choose from. |
+| Selection | Clicking a swatch selects the color and marks it as active. |
+| Custom palette | Supports a developer-configured set of colors. |
+
 ### Testing
 
 The Colorpalette has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -49,3 +65,7 @@ The Colorpalette has been tested with the following screen readers and browsers 
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/colorpalette/`](https://github.com/telerik/kendo-themes/tree/develop/tests/colorpalette/).

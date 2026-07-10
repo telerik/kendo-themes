@@ -1,4 +1,4 @@
-# Table Accessibility
+# Table Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Table is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -18,15 +18,39 @@ The Table is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+### TableHeader
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-table-header` element.
+
+### TableHeaderWrap
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-table-header-wrap` element.
 
 ### TableList
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -43,3 +67,7 @@ The Table has been tested with the following screen readers and browsers combina
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/table/`](https://github.com/telerik/kendo-themes/tree/develop/tests/table/).

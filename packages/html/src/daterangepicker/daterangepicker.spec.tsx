@@ -45,6 +45,10 @@ export type KendoDateRangePickerState = { [K in (typeof states)[number]]?: boole
 
 /**
  * @aria {aria-label|aria-labelledby} Each date input needs an accessible name.
+ * @ux {Range selection} Start and end dates are chosen via two inputs linked to a shared popup calendar.
+ * @ux {Linked calendars} Both calendar months advance together as the user navigates.
+ * @ux {Inline mode} Can be rendered as an always-visible calendar without a popup.
+ * @ux {Disabled state} When disabled, both inputs are non-interactive.
  */
 export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDateRangePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDateRangePickerProps &

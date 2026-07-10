@@ -1,4 +1,4 @@
-# Scheduler Accessibility
+# Scheduler Specification
 
 ## Accessibility Support
 
@@ -41,6 +41,22 @@ The Scheduler is compliant with the [Web Content Accessibility Guidelines (WCAG)
 | `ArrowLeft or ArrowRight` | move focus through tools |
 | `ArrowDown` | moves focus to the selected (if present), or the first event (if any) in the view |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Multiple views | Switches between day, week, month, agenda, and timeline views. |
+| View switcher | Views are accessible via a ButtonGroup or a DropDown in the toolbar. |
+| Navigation | Previous and next buttons move to the adjacent time period. |
+| Today button | A button jumps the view back to the current date instantly. |
+| Calendar navigation | A calendar button opens a date picker for jumping to any date. |
+| Business hours | A toggle switches the view between business hours and full day. |
+| Resource grouping | Events can be grouped by resource (e.g., room or person) across applicable views. |
+| Event creation | Clicking an empty time slot opens a dialog to create a new event. |
+| Event editing | Clicking an existing event opens an edit form. |
+| Drag and drop | Events can be dragged to a different time slot. |
+| Resize | Dragging an event's edge adjusts its duration. |
+
 ### SchedulerBody
 
 #### ARIA Attributes
@@ -63,12 +79,31 @@ The Scheduler is compliant with the [Web Content Accessibility Guidelines (WCAG)
 
 ### SchedulerEvent
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `selected` | `k-selected` |
+
+These CSS classes are applied to the `k-event` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |
 | --- | --- |
 | `role="button"` | Indicating that the event element is interactive. |
 | `aria-label` | Label containing the title, start, and end date of the appointment. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Drag and drop | The event can be dragged to a different time slot or resource. |
+| Resize | Dragging the event's edge changes its start or end time. |
+| Edit on click | Clicking the event opens an edit form. |
+| Overflow indicator | A count badge shows when multiple events overlap in the same slot. |
 
 ### SchedulerTable
 
@@ -116,3 +151,7 @@ The Scheduler has been tested with the following screen readers and browsers com
 
 - [WAI-ARIA specification for grid](https://www.w3.org/TR/wai-aria-1.2/#grid)
 - [WAI-ARIA specification for application](https://www.w3.org/TR/wai-aria-1.2/#application)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/scheduler/`](https://github.com/telerik/kendo-themes/tree/develop/tests/scheduler/).

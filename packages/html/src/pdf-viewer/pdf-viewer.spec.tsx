@@ -95,6 +95,11 @@ const defaultOptions = {
  * @aria {aria-haspopup="dialog"} Describes that the Search tool button opens a dialog element.
  * @aria {role="dialog"} Describes the role of the Search panel.
  * @aria {aria-label} Label for the Search panel, same label as the Search tool.
+ * @ux {Page navigation} Previous and next buttons step through the document pages.
+ * @ux {Page jump} A numeric input allows jumping directly to a specific page.
+ * @ux {Zoom} Zoom in/out buttons and a zoom-level selector adjust the view scale.
+ * @ux {Text search} A search panel finds and highlights matching text in the document.
+ * @ux {Download} A toolbar button downloads the PDF file to the user's device.
  */
 export const PDFViewer: KendoComponent<KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>

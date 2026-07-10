@@ -1,4 +1,4 @@
-# SplitButton Accessibility
+# SplitButton Specification
 
 ## Accessibility Support
 
@@ -10,12 +10,24 @@ The SplitButton is compliant with the [Web Content Accessibility Guidelines (WCA
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline`, `clear`, `link` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `success`, `warning`, `error`, `info`, `inverse` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-split-button` element.
 
 #### ARIA Attributes
 
@@ -37,6 +49,14 @@ The SplitButton is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Enter` | Clicks (activates) the main button action. |
 | `Space` | Clicks (activates) the main button action. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Primary action | The main button area triggers the default action. |
+| Dropdown | The arrow button opens a popup with additional actions. |
+| Disabled state | When disabled, both the main button and dropdown are non-interactive. |
+
 ### Testing
 
 The SplitButton has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -50,3 +70,7 @@ The SplitButton has been tested with the following screen readers and browsers c
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/split-button/`](https://github.com/telerik/kendo-themes/tree/develop/tests/split-button/).

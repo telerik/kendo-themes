@@ -34,6 +34,10 @@ export type KendoSchedulerEventProps = {
 /**
  * @aria {role="button"} Indicating that the event element is interactive.
  * @aria {aria-label} Label containing the title, start, and end date of the appointment.
+ * @ux {Drag and drop} The event can be dragged to a different time slot or resource.
+ * @ux {Resize} Dragging the event's edge changes its start or end time.
+ * @ux {Edit on click} Clicking the event opens an edit form.
+ * @ux {Overflow indicator} A count badge shows when multiple events overlap in the same slot.
  */
 export const SchedulerEvent: KendoComponent<KendoSchedulerEventProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerEventProps &

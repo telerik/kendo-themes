@@ -1,4 +1,4 @@
-# Combobox Accessibility
+# Combobox Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Combobox is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `loading` | `k-loading` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-combobox` element.
 
 #### ARIA Attributes
 
@@ -51,6 +66,16 @@ The Combobox is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `Alt/Opt(Mac) + ArrowUp or Escape` | Closes the popup. |
 | `Escape` | If the popup is not visible, clears the value. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Editable input | The user can type to filter options or enter a custom value. |
+| Popup | Opens a dropdown list when the toggle button is clicked or when the user types. |
+| Selection | Choosing an option fills the input and closes the popup. |
+| Placeholder | Displays hint text when no value is selected. |
+| Disabled state | When disabled, the control is non-interactive. |
+
 ### Testing
 
 The Combobox has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -69,3 +94,7 @@ The Combobox has been tested with the following screen readers and browsers comb
 
 - [WAI-ARIA Authoring Practices: Editable Combobox With Both List and Inline Autocomplete Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html)
 - [WAI-ARIA Authoring Practices: Editable Combobox With List Autocomplete Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/combobox/`](https://github.com/telerik/kendo-themes/tree/develop/tests/combobox/).

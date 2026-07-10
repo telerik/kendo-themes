@@ -1,4 +1,4 @@
-# Button Accessibility
+# Button Specification
 
 ## Accessibility Support
 
@@ -10,12 +10,25 @@ The Button is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `xsmall`, `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline`, `clear`, `link` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `success`, `warning`, `error`, `info`, `inverse` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+| `generating` | `k-generating` |
+
+These CSS classes are applied to the `k-button` element.
 
 #### ARIA Attributes
 
@@ -32,6 +45,15 @@ The Button is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | Trigger | Behavior |
 | --- | --- |
 | `Enter or Space` | Triggers a click action on the Button. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Click action | Triggers an action when clicked or activated via keyboard. |
+| Toggle | Can act as a toggle button with pressed/unpressed states when togglable. |
+| Icon | Can include an icon alongside or instead of text. |
+| Disabled state | When disabled, the button is non-interactive and visually dimmed. |
 
 ### Testing
 
@@ -50,3 +72,7 @@ The Button has been tested with the following screen readers and browsers combin
 ### Resources
 
 - [WAI-ARIA Authoring Practices: Button Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/button/`](https://github.com/telerik/kendo-themes/tree/develop/tests/button/).

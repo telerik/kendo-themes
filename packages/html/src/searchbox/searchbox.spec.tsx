@@ -50,6 +50,11 @@ const defaultOptions = {
     icon: "search"
 };
 
+/**
+ * @ux {Search input} A styled input field dedicated to entering search queries.
+ * @ux {Search button} A magnifier button or Enter key submits the query.
+ * @ux {Clear button} An × button clears the current value.
+ */
 export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSearchboxProps &
         KendoSearchboxState &

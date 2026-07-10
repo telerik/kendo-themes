@@ -20,6 +20,11 @@ const defaultOptions = {};
 /**
  * @aria {role="img"} Indicates the canvas role as an image. Applicable when an image is loaded.
  * @aria {aria-label|aria-labelledby} Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded.
+ * @ux {Canvas} Renders the image on an editable canvas.
+ * @ux {Crop} A crop tool lets the user select and apply a cropping region.
+ * @ux {Pan and zoom} The canvas can be panned by dragging and zoomed with the mouse wheel.
+ * @ux {Undo / Redo} All edit operations can be undone and redone.
+ * @ux {Export} The edited image can be saved or downloaded.
  */
 export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoImageEditorProps &

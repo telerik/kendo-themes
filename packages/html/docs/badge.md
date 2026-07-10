@@ -1,4 +1,4 @@
-# Badge Accessibility
+# Badge Specification
 
 ## Accessibility Support
 
@@ -10,12 +10,20 @@ The Badge is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `outline` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `info`, `success`, `warning`, `error` | — |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Count indicator | Overlays a numeric count or short text label on another element. |
+| Positioning | Anchors to a corner of the host element. |
+| Cutout | An optional outline style visually separates the badge from its host. |
 
 ### Testing
 
@@ -30,3 +38,7 @@ The Badge has been tested with the following screen readers and browsers combina
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/badge/`](https://github.com/telerik/kendo-themes/tree/develop/tests/badge/).

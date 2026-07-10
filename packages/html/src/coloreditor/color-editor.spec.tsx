@@ -51,6 +51,10 @@ const defaultOptions = {
  * @aria {aria-disabled="true"} Rendered only when the FlatColorPicker is disabled.
  * @aria {role="none"} The inner ColorGradient must have its role removed.
  * @aria {tabindex="-1"} The inner ColorGradient must be removed from the page tab sequence.
+ * @ux {Tabbed views} Switches between a gradient picker and a palette picker via tabs.
+ * @ux {Hex and RGBA inputs} Text inputs allow direct entry of hex codes and RGBA channel values.
+ * @ux {Opacity slider} A slider controls the alpha channel of the selected color.
+ * @ux {Recent colors} Displays a row of recently used colors for quick reuse.
  */
 export const ColorEditor: KendoComponent<KendoColorEditorProps & KendoColorEditorState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColorEditorProps &

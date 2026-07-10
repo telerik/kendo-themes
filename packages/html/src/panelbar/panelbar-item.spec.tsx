@@ -33,6 +33,9 @@ const defaultOptions = {
 
 /**
  * @aria {aria-selected="true"} when selected
+ * @ux {Expand / Collapse} Clicking the header toggles the item's content section open or closed.
+ * @ux {Nested items} Can contain nested child items to form a multi-level accordion.
+ * @ux {Disabled state} When disabled, the item header cannot be toggled.
  */
 export const PanelBarItem = (
     props: KendoPanelBarItemProps &

@@ -1,4 +1,4 @@
-# Coloreditor Accessibility
+# Coloreditor Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,17 @@ The Coloreditor is compliant with the [Web Content Accessibility Guidelines (WCA
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-coloreditor` element.
 
 #### ARIA Attributes
 
@@ -24,6 +32,15 @@ The Coloreditor is compliant with the [Web Content Accessibility Guidelines (WCA
 | `aria-disabled="true"` | Rendered only when the FlatColorPicker is disabled. |
 | `role="none"` | The inner ColorGradient must have its role removed. |
 | `tabindex="-1"` | The inner ColorGradient must be removed from the page tab sequence. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Tabbed views | Switches between a gradient picker and a palette picker via tabs. |
+| Hex and RGBA inputs | Text inputs allow direct entry of hex codes and RGBA channel values. |
+| Opacity slider | A slider controls the alpha channel of the selected color. |
+| Recent colors | Displays a row of recently used colors for quick reuse. |
 
 ### Testing
 
@@ -38,3 +55,7 @@ The Coloreditor has been tested with the following screen readers and browsers c
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/coloreditor/`](https://github.com/telerik/kendo-themes/tree/develop/tests/coloreditor/).

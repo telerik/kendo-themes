@@ -1,4 +1,4 @@
-# Fab Accessibility
+# Fab Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,23 @@ The Fab is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 s
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-fab` element.
 
 #### ARIA Attributes
 
@@ -23,6 +35,15 @@ The Fab is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 s
 | `role="button"` | Omitted if the `<button>` DOM element is used. |
 | `aria-label|title` | The attribute must be present when no text is initially visible in the button. |
 | `aria-disabled="true"` | Rendered only when the button is disabled. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Fixed position | Floats over the page content at a configurable viewport corner. |
+| Action list | Can expand to reveal a list of secondary action buttons. |
+| Icon | Displays a single icon representing the primary action. |
+| Disabled state | When disabled, the button and its action list are non-interactive. |
 
 ### Testing
 
@@ -41,3 +62,7 @@ The Fab has been tested with the following screen readers and browsers combinati
 ### Resources
 
 - [WAI-ARIA Authoring Practices: Navigation Menu Button Example](https://www.w3.org/WAI/ARIA/apg/example-index/menu-button/menu-button-links.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/fab/`](https://github.com/telerik/kendo-themes/tree/develop/tests/fab/).

@@ -1,4 +1,4 @@
-# Calendar Accessibility
+# Calendar Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Calendar is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -34,11 +34,22 @@ The Calendar is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `Control/Cmd(Mac) + ArrowRight` | Navigates to the next period. |
 | `Control/Cmd(Mac) + ArrowLeft` | Navigates to the previous period. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Month view | Displays a grid of days for the current month. |
+| Navigation | Arrow buttons navigate to the previous and next time period. |
+| View switching | Clicking the title switches between day, month, and year views. |
+| Date selection | Clicking a date cell selects it. |
+| Range selection | In range mode, the first and second click define start and end dates. |
+| Disabled dates | Individual dates can be disabled and are skipped during keyboard navigation. |
+
 ### CalendarInfinite
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -92,3 +103,7 @@ The Calendar has been tested with the following screen readers and browsers comb
 ### Resources
 
 - [ARIA practices Date Picker Dialog Example](https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/calendar/`](https://github.com/telerik/kendo-themes/tree/develop/tests/calendar/).

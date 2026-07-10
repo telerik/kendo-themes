@@ -1,4 +1,4 @@
-# Prompt Accessibility
+# Prompt Specification
 
 ## Accessibility Support
 
@@ -29,6 +29,15 @@ The Prompt is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | `Enter` | Sends the message. |
 | `Shift + Enter` | Starts a new line in the textarea message box. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Input area | A text input or textarea for entering the prompt text. |
+| Submit | A send button or Enter key submits the prompt. |
+| Suggestions | Pre-defined prompt suggestions are displayed above the input. |
+| Toolbar | An optional toolbar provides prompt-related actions. |
+
 ### Testing
 
 The Prompt has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -42,3 +51,7 @@ The Prompt has been tested with the following screen readers and browsers combin
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/prompt/`](https://github.com/telerik/kendo-themes/tree/develop/tests/prompt/).

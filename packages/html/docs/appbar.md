@@ -1,4 +1,4 @@
-# Appbar Accessibility
+# Appbar Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,17 @@ The Appbar is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `inverse` | — |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Application header | Renders as the primary header bar of the application. |
+| Sticky positioning | Stays fixed at the top of the viewport as the user scrolls. |
+| Sections | Divided into start, center, and end sections for flexible content placement. |
 
 ### Testing
 
@@ -27,3 +35,7 @@ The Appbar has been tested with the following screen readers and browsers combin
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/appbar/`](https://github.com/telerik/kendo-themes/tree/develop/tests/appbar/).

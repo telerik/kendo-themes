@@ -1,4 +1,4 @@
-# Filter Accessibility
+# Filter Specification
 
 ## Accessibility Support
 
@@ -26,6 +26,16 @@ The Filter is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | `ArrowUp` | Focuses the previous item (FilterGroup or FilterExpression) in the `tree`. |
 | `ArrowDown` | Focuses the next item (FilterGroup or FilterExpression) in the `tree`. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Filter groups | Conditions are organized in groups with AND / OR logic operators. |
+| Add condition | A button adds a new filter condition to a group. |
+| Remove condition | Each condition has a remove button. |
+| Field selector | A dropdown selects the data field to filter on. |
+| Operator selector | A dropdown selects the comparison operator for the condition. |
+
 ### Testing
 
 The Filter has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -43,3 +53,7 @@ The Filter has been tested with the following screen readers and browsers combin
 ### Resources
 
 - [WAI-ARIA specification for toolbar](https://www.w3.org/TR/wai-aria-1.2/#toolbar)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/filter/`](https://github.com/telerik/kendo-themes/tree/develop/tests/filter/).

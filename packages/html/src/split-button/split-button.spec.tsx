@@ -65,6 +65,9 @@ const defaultOptions = {
  * @aria {role="listitem"} Announces the listitem role of the popup items.
  * @aria {aria-expanded="true"} when popup is visible
  * @aria {aria-controls} references the popup menu group id
+ * @ux {Primary action} The main button area triggers the default action.
+ * @ux {Dropdown} The arrow button opens a popup with additional actions.
+ * @ux {Disabled state} When disabled, both the main button and dropdown are non-interactive.
  */
 export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButtonState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSplitButtonProps &

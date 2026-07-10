@@ -1,4 +1,4 @@
-# Gantt Accessibility
+# Gantt Specification
 
 ## Accessibility Support
 
@@ -44,6 +44,16 @@ The Gantt is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 | `Alt/Opt(Mac) + ArrowRight` | The task is expanded, if it contains child tasks. The task should remain in focus and the timeline should be scrolled to it. |
 | `Alt/Opt(Mac) + ArrowLeft` | The task is collapsed, if it contains child tasks. The task should remain in focus and the timeline should be scrolled to it. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Task list | A tree list on the left side shows the hierarchy of tasks. |
+| Timeline | Task bars on the right represent duration on a time axis. |
+| Resize | Dragging a bar's edge changes the task duration. |
+| Drag | Dragging a bar horizontally changes the task start date. |
+| Dependencies | Connector lines visualize dependencies between tasks. |
+
 ### GanttColumnsTable
 
 #### ARIA Attributes
@@ -80,6 +90,15 @@ The Gantt is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 | --- | --- |
 | `aria-hidden="true"` | The progress drag handle is decorative. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Bar representation | Renders the task as a horizontal bar whose width represents duration. |
+| Drag | The bar can be dragged horizontally to change the task start date. |
+| Resize | Dragging the bar's right edge changes the task end date. |
+| Progress handle | A drag handle inside the bar adjusts the completion percentage. |
+
 ### GanttTaskDot
 
 #### ARIA Attributes
@@ -109,3 +128,7 @@ The Gantt has been tested with the following screen readers and browsers combina
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/gantt/`](https://github.com/telerik/kendo-themes/tree/develop/tests/gantt/).

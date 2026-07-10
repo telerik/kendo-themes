@@ -1,4 +1,4 @@
-# Spreadsheet Accessibility
+# Spreadsheet Specification
 
 ## Accessibility Support
 
@@ -75,6 +75,16 @@ The Spreadsheet is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Shift + Tab` | Moves the focus to the previous focusable element in the Sheets Bar. If the first element is focused, pressing Tab will move the focus to the Sheet area. |
 | `Alt/Opt(Mac) + ArrowDown` | Opens the actions DropDownButton popup for the current active tab. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Cell editing | Clicking a cell or pressing Enter activates it for editing. |
+| Range selection | Cells, rows, and columns are selected by clicking and dragging. |
+| Formula bar | Displays and edits the active cell's content or formula expression. |
+| Multiple sheets | Tabs at the bottom add, rename, and navigate between sheets. |
+| Toolbar formatting | The toolbar applies bold, color, alignment, and other styles to selected cells. |
+
 ### Testing
 
 The Spreadsheet has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -88,3 +98,7 @@ The Spreadsheet has been tested with the following screen readers and browsers c
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/spreadsheet/`](https://github.com/telerik/kendo-themes/tree/develop/tests/spreadsheet/).

@@ -28,6 +28,11 @@ const defaultOptions = {
  * @aria {aria-pressed} Specifies whether mute is active or not.
  * @aria {aria-label} Specifies label for the full screen button.
  * @aria {aria-pressed} Specifies whether full screen is active or not.
+ * @ux {Play / Pause} The primary button starts and pauses media playback.
+ * @ux {Seek} Clicking or dragging the progress bar seeks to a position in the media.
+ * @ux {Volume} A slider controls the audio level; a mute button toggles audio.
+ * @ux {Fullscreen} Expands the player to fill the viewport.
+ * @ux {Captions} Subtitle tracks can be toggled on or off.
  */
 export const MediaPlayer: KendoComponent<KendoMediaPlayerProps & KendoMediaPlayerState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMediaPlayerProps &

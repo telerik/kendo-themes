@@ -31,6 +31,8 @@ const defaultOptions = {};
  * @aria {role="button"} Each button must have the appropriate button role.
  * @aria {aria-pressed="true"} Only the selected button within the group will have this attribute set to true.
  * @aria {aria-disabled="true"} Indicates that the button is disabled and cannot be interacted with.
+ * @ux {Selection} Clicking this button selects it and automatically deselects the others.
+ * @ux {Disabled state} When disabled, this segment cannot be activated.
  */
 export const SegmentedControlButton: KendoComponent<KendoSegmentedControlButtonProps & KendoSegmentedControlButtonState & Omit<React.HTMLAttributes<HTMLButtonElement>, 'children'>> = (
     props: KendoSegmentedControlButtonProps &

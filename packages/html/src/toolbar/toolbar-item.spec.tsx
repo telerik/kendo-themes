@@ -14,6 +14,10 @@ const defaultOptions = {};
 
 export type KendoToolbarItemState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @ux {Overflow handling} Moves to the overflow popup when the toolbar runs out of space.
+ * @ux {Template} Renders a button, separator, or any custom control based on its type.
+ */
 export const ToolbarItem: KendoComponent<KendoToolbarItemState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoToolbarItemState &
         React.HTMLAttributes<HTMLDivElement>

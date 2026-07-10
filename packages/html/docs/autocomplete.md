@@ -1,4 +1,4 @@
-# Autocomplete Accessibility
+# Autocomplete Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Autocomplete is compliant with the [Web Content Accessibility Guidelines (WC
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-autocomplete` element.
 
 #### ARIA Attributes
 
@@ -42,6 +57,16 @@ The Autocomplete is compliant with the [Web Content Accessibility Guidelines (WC
 | `Escape` | Resets the value in the input when the popup is closed. |
 | `Enter` | Triggers the `change` event. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Popup | Opens a suggestion list when the user starts typing. |
+| Filtering | Narrows the suggestion list as the user types. |
+| Selection | Choosing a suggestion fills the input and closes the popup. |
+| Placeholder | Displays hint text inside the input when it is empty. |
+| Disabled state | When disabled, the input is non-interactive and visually dimmed. |
+
 ### Testing
 
 The Autocomplete has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -60,3 +85,7 @@ The Autocomplete has been tested with the following screen readers and browsers 
 
 - [WAI-ARIA Authoring Practices: Editable Combobox With Both List and Inline Autocomplete Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html)
 - [WAI-ARIA Authoring Practices: Editable Combobox With List Autocomplete Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/autocomplete/`](https://github.com/telerik/kendo-themes/tree/develop/tests/autocomplete/).

@@ -1,4 +1,4 @@
-# Stepper Accessibility
+# Stepper Specification
 
 ## Accessibility Support
 
@@ -23,6 +23,16 @@ The Stepper is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 | `Home` | Focuses first link. |
 | `End` | Focuses last link. |
 | `Space or Enter` | Activates the currently focused link. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Progress indicator | Shows the current step, completed steps, and upcoming steps. |
+| Click navigation | Previously completed steps can be revisited by clicking. |
+| Linear mode | In linear mode steps must be completed in order before proceeding. |
+| Labels | Each step has a descriptive label below its indicator. |
+| Error state | A step can display an error icon when its content has validation issues. |
 
 ### Step
 
@@ -50,3 +60,7 @@ The Stepper has been tested with the following screen readers and browsers combi
 ### Resources
 
 - [WAI-ARIA specification for navigation](https://www.w3.org/TR/wai-aria-1.2/#navigation)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/stepper/`](https://github.com/telerik/kendo-themes/tree/develop/tests/stepper/).

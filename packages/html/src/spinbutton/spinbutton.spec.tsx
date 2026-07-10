@@ -30,6 +30,11 @@ const defaultOptions = {
     decreaseLabel: 'Decrease value'
 };
 
+/**
+ * @ux {Increment / Decrement} Up and down buttons step the value by the configured amount.
+ * @ux {Direct input} The value can also be typed directly into the field.
+ * @ux {Min / Max} The value is clamped to a configurable range.
+ */
 export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoSpinButtonProps &
         React.HTMLAttributes<HTMLButtonElement>

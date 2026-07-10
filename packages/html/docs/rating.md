@@ -1,4 +1,4 @@
-# Rating Accessibility
+# Rating Specification
 
 ## Accessibility Support
 
@@ -7,6 +7,15 @@ Out of the box, the Telerik and Kendo UI Rating provides extensive accessibility
 The Rating is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
 
 ### Rating
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-rating` element.
 
 #### ARIA Attributes
 
@@ -30,6 +39,16 @@ The Rating is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | `Home` | Sets value to the Min available value in the Rating. |
 | `End` | Sets value to the Max available value in the Rating. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Selection | Clicking an icon selects the corresponding rating value. |
+| Hover preview | Hovering over icons previews the rating value before committing. |
+| Half precision | Supports half-value increments when half-precision mode is enabled. |
+| Read-only | When read-only, the current rating is displayed but cannot be changed. |
+| Disabled state | When disabled, the rating cannot be changed. |
+
 ### Testing
 
 The Rating has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -48,3 +67,7 @@ The Rating has been tested with the following screen readers and browsers combin
 
 - [WAI-ARIA specification for slider](https://www.w3.org/TR/wai-aria-1.2/#slider)
 - [WCAG 4.1.2 Name, Role, Value — slider must have accessible name and value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/rating/`](https://github.com/telerik/kendo-themes/tree/develop/tests/rating/).

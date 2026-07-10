@@ -1,4 +1,4 @@
-# Timedurationpicker Accessibility
+# Timedurationpicker Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,26 @@ The Timedurationpicker is compliant with the [Web Content Accessibility Guidelin
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `loading` | `k-loading` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-timedurationpicker` element.
 
 #### ARIA Attributes
 
@@ -53,6 +68,14 @@ The Timedurationpicker is compliant with the [Web Content Accessibility Guidelin
 | `ArrowDown` | Selects next value in the carousel. |
 | `ArrowUp` | Selects previous value in the carousel. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Segment editing | Each time unit (hours, minutes, seconds) is edited independently. |
+| Spin | Arrow keys increment or decrement the focused segment. |
+| Disabled state | When disabled, the input is non-interactive. |
+
 ### Testing
 
 The Timedurationpicker has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -71,3 +94,7 @@ The Timedurationpicker has been tested with the following screen readers and bro
 
 - [WAI-ARIA specification for combobox](https://www.w3.org/TR/wai-aria-1.2/#combobox)
 - [WAI-ARIA specification for listbox](https://www.w3.org/TR/wai-aria-1.2/#listbox)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/timedurationpicker/`](https://github.com/telerik/kendo-themes/tree/develop/tests/timedurationpicker/).

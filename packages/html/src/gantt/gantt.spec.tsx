@@ -28,6 +28,11 @@ const defaultOptions = {};
  * @aria {aria-hidden="true"} The progress indicator is decorative.
  * @aria {aria-hidden="true"} Task action buttons are hidden from the accessibility tree.
  * @aria {aria-hidden="true"} Dependency lines are decorative.
+ * @ux {Task list} A tree list on the left side shows the hierarchy of tasks.
+ * @ux {Timeline} Task bars on the right represent duration on a time axis.
+ * @ux {Resize} Dragging a bar's edge changes the task duration.
+ * @ux {Drag} Dragging a bar horizontally changes the task start date.
+ * @ux {Dependencies} Connector lines visualize dependencies between tasks.
  */
 export const Gantt: KendoComponent<KendoGanttProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttProps &

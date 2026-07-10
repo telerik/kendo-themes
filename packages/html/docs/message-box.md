@@ -1,4 +1,4 @@
-# MessageBox Accessibility
+# MessageBox Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,17 @@ The MessageBox is compliant with the [Web Content Accessibility Guidelines (WCAG
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `success`, `warning`, `error`, `info`, `inverse` | — |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Status variants | Available in info, success, warning, and error styles with matching colors and icons. |
+| Dismissible | An optional close button lets the user dismiss the message. |
+| Icon | Displays an icon matching the severity of the message. |
 
 ### Testing
 
@@ -27,3 +35,7 @@ The MessageBox has been tested with the following screen readers and browsers co
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/message-box/`](https://github.com/telerik/kendo-themes/tree/develop/tests/message-box/).

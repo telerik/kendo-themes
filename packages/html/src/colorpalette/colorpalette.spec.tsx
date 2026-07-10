@@ -38,6 +38,9 @@ const defaultOptions = {
  * @aria {aria-disabled="true"} Rendered only when the ColorPalette is disabled.
  * @aria {role="none"|\"presentation"} Negates the default role of the table element.
  * @aria {role="row"} Required as the semantic role of the parent table has been removed.
+ * @ux {Swatch grid} Displays a grid of color tiles to choose from.
+ * @ux {Selection} Clicking a swatch selects the color and marks it as active.
+ * @ux {Custom palette} Supports a developer-configured set of colors.
  */
 export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPaletteState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColorPaletteProps &

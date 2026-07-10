@@ -47,6 +47,12 @@ export type KendoChatMessageProps = {
 
 export type KendoChatMessageState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @ux {Sender display} Shows the sender's avatar and name alongside the message.
+ * @ux {Timestamp} Displays the time the message was sent.
+ * @ux {Bubble layout} Message text is rendered inside a visually distinct bubble.
+ * @ux {Attachments} Can display attached files, images, or suggestion chips.
+ */
 export const ChatMessage = (
     props: KendoChatMessageProps &
         KendoChatMessageState &

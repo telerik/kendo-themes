@@ -41,6 +41,10 @@ const defaultOptions = {
  * @aria {role="button"} The close button needs an explicit button role.
  * @aria {aria-label} The close button needs an accessible name.
  * @aria {id} required so the trigger element can reference it via aria-describedby
+ * @ux {Hover trigger} Appears when the cursor hovers over the target element.
+ * @ux {Focus trigger} Also appears when the target receives keyboard focus.
+ * @ux {Auto-positioning} Automatically repositions to remain within the viewport.
+ * @ux {Delay} Configurable show and hide delays prevent flickering.
  */
 export const Tooltip: KendoComponent<KendoTooltipProps & Omit<React.HTMLAttributes<HTMLDivElement>, 'content'>> = (
     props: KendoTooltipProps &

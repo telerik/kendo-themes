@@ -1,4 +1,4 @@
-# Toolbar Accessibility
+# Toolbar Specification
 
 ## Accessibility Support
 
@@ -6,14 +6,32 @@ Out of the box, the Telerik and Kendo UI Toolbar provides extensive accessibilit
 
 The Toolbar is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
 
+### FloatingToolbar
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Contextual display | Appears near selected content (e.g., selected text in an editor). |
+| Floating position | Rendered as a floating layer above the page, not in the document flow. |
+| Action buttons | Contains formatting or context-specific action buttons. |
+
 ### Toolbar
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `fillMode` | `solid`, `outline`, `flat` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-toolbar` element.
 
 #### ARIA Attributes
 
@@ -42,11 +60,37 @@ The Toolbar is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 | `Alt + ArrowDown` | Opens the currently active SplitButton, DropDownButton, or CommandOverflow. |
 | `Alt + ArrowUp` | Closes the currently active SplitButton, DropDownButton, or CommandOverflow. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Actions | Contains buttons, inputs, and other interactive controls. |
+| Overflow menu | Controls that do not fit in the available space are moved to an overflow popup. |
+| Separator | Visual separators group related controls. |
+| Responsive | Automatically adapts visible controls based on available width. |
+
+### ToolbarItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-toolbar-item` element.
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Overflow handling | Moves to the overflow popup when the toolbar runs out of space. |
+| Template | Renders a button, separator, or any custom control based on its type. |
+
 ### ToolbarPopup
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `fillMode` | `solid`, `outline`, `flat` | — |
@@ -77,3 +121,7 @@ The Toolbar has been tested with the following screen readers and browsers combi
 ### Resources
 
 - [WAI-ARIA Specification for the ToolBar](https://www.w3.org/TR/wai-aria-1.2/#toolbar)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/toolbar/`](https://github.com/telerik/kendo-themes/tree/develop/tests/toolbar/).

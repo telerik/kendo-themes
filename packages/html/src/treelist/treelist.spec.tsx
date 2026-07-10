@@ -53,6 +53,10 @@ const defaultOptions = {};
  * @aria {role="columnheader"} Non-locked header cells retain columnheader role so they are announced correctly when owned via aria-owns.
  * @aria {role="gridcell"} Non-locked data cells retain gridcell role so they are announced correctly when owned via aria-owns.
  * @aria {aria-label} Must be present in a Drag Row scenario on the cell containing the drag handle.
+ * @ux {Expandable rows} Rows can have child rows revealed by expanding the parent.
+ * @ux {Sorting} Column headers are clicked to sort data ascending or descending.
+ * @ux {Filtering} Column filter inputs narrow the displayed rows.
+ * @ux {Row selection} Rows are selected by clicking.
  */
 export const TreeList: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridProps &

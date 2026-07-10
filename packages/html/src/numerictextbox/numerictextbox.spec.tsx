@@ -67,6 +67,11 @@ const defaultOptions = {
  * @aria {aria-disabled="true"} Rendered when the NumericTextBox is disabled.
  * @aria {role="button"} Describes the role of the spin buttons.
  * @aria {aria-label} The button element requires discernible text.
+ * @ux {Spin buttons} Up and down arrow buttons increment and decrement the value.
+ * @ux {Min / Max} Enforces a configurable minimum and maximum value.
+ * @ux {Step} The increment step size is configurable.
+ * @ux {Format} The value is displayed using the configured number format.
+ * @ux {Disabled state} When disabled, the input and spin buttons are non-interactive.
  */
 export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNumericTextboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoNumericTextboxProps &

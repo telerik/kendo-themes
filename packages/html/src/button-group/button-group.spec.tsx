@@ -28,6 +28,9 @@ const defaultOptions = {};
  * @aria {role="group"} Sets the proper role for the group of buttons.
  * @aria {aria-disabled="true"} The attribute is rendered only when the entire button group is disabled.
  * @aria {aria-pressed} Specifies the current state of the ButtonGroup. Only the selected button within the group will have this attribute set to true.
+ * @ux {Exclusive selection} Only one button in the group can be active at a time.
+ * @ux {Multi-select} Multiple buttons can be active simultaneously when configured.
+ * @ux {Disabled group} When the group is disabled, all buttons are non-interactive.
  */
 export const ButtonGroup: KendoComponent<KendoButtonGroupProps & KendoButtonGroupState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoButtonGroupProps &

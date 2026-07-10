@@ -18,6 +18,9 @@ const defaultOptions = {
 
 /**
  * @aria {aria-invalid="true"} Rendered only when the CheckBox is in a form and announces the invalid state.
+ * @ux {Option set} Renders a labelled group of related checkboxes.
+ * @ux {Layout} Items can be arranged horizontally or vertically.
+ * @ux {Disabled group} When the group is disabled, all contained checkboxes are non-interactive.
  */
 export const CheckboxGroup: KendoComponent<KendoCheckboxGroupProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoCheckboxGroupProps &

@@ -1,4 +1,4 @@
-# SpeechToTextButton Accessibility
+# SpeechToTextButton Specification
 
 ## Accessibility Support
 
@@ -10,12 +10,25 @@ The SpeechToTextButton is compliant with the [Web Content Accessibility Guidelin
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `xsmall`, `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline`, `clear`, `link` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `success`, `warning`, `error`, `info`, `inverse` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+| `generating` | `k-generating` |
+
+These CSS classes are applied to the `k-speech-to-text-button` element.
 
 #### ARIA Attributes
 
@@ -30,6 +43,15 @@ The SpeechToTextButton is compliant with the [Web Content Accessibility Guidelin
 | Trigger | Behavior |
 | --- | --- |
 | `Enter or Space` | Triggers a click action on the Button. Toggles the active listening state of the Button. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Recording | Pressing the button starts audio recording. |
+| Stop | Pressing the button again or after a silence timeout stops recording. |
+| Transcription | Converts the recorded audio into text. |
+| Status | Visual feedback indicates whether the button is idle, recording, or processing. |
 
 ### Testing
 
@@ -48,3 +70,7 @@ The SpeechToTextButton has been tested with the following screen readers and bro
 ### Resources
 
 - [WAI-ARIA Authoring Practices: Button Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/speech-to-text-button/`](https://github.com/telerik/kendo-themes/tree/develop/tests/speech-to-text-button/).

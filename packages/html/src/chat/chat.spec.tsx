@@ -35,6 +35,13 @@ const defaultOptions = {
     tools: defaultTools,
 };
 
+/**
+ * @ux {Message list} Displays a scrollable list of messages from the user and the agent.
+ * @ux {Input} A text input at the bottom lets the user compose and send messages.
+ * @ux {Toolbar} An optional toolbar above the input provides additional actions.
+ * @ux {Typing indicator} Shows an animated indicator while the other party is responding.
+ * @ux {Suggestions} Displays quick-reply suggestion chips above the input.
+ */
 export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChatProps &
         React.HTMLAttributes<HTMLDivElement>

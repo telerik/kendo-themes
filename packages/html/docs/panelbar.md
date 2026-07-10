@@ -1,4 +1,4 @@
-# Panelbar Accessibility
+# Panelbar Specification
 
 ## Accessibility Support
 
@@ -27,6 +27,15 @@ The Panelbar is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `End` | Moves focus to the last item in the PanelBar that is focusable without expanding an item. |
 | `Enter` | Selects the focused item and toggles the item if it is expandable. It also triggers its action (click or opening url). |
 | `Space` | Selects the focused item and toggles the item if it is expandable. It also triggers its action (click or opening url). |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Expand / Collapse | Clicking a panel header toggles its content section. |
+| Single expand | Can be configured so that only one panel is open at a time. |
+| Disabled items | Individual items can be disabled and cannot be toggled. |
+| Nested items | Items can contain nested sub-items forming a tree structure. |
 
 ### PanelBarGroup
 
@@ -61,3 +70,7 @@ The Panelbar has been tested with the following screen readers and browsers comb
 ### Resources
 
 - [ARIA practices Navigation Treeview Example](https://www.w3.org/WAI/ARIA/apg/example-index/treeview/treeview-navigation.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/panelbar/`](https://github.com/telerik/kendo-themes/tree/develop/tests/panelbar/).

@@ -18,6 +18,10 @@ const defaultOptions = {
     dir: 'ltr'
 };
 
+/**
+ * @ux {Group header} Renders a non-interactive header above a set of related list items.
+ * @ux {Sticky header} The group header sticks to the top of the scroll container while scrolling through its items.
+ */
 export const ListGroup: KendoComponent<KendoListGroupOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoListGroupOptions &
         React.HTMLAttributes<HTMLUListElement>

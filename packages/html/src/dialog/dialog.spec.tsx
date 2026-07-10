@@ -32,6 +32,11 @@ export type KendoDialogProps = KendoDialogOptions & {
  * @aria {aria-labelledby} Associate the title of the dialog.
  * @aria {aria-describedby} Associate the dialog content to the wrap element.
  * @aria {aria-modal="true"} Announces that the dialog is modal. Attribute is added only when the dialog is modal.
+ * @ux {Modal overlay} Renders a backdrop that blocks interaction with the underlying page.
+ * @ux {Close button} An optional × button in the title bar dismisses the dialog.
+ * @ux {Action buttons} Footer buttons let the user confirm or cancel the operation.
+ * @ux {Draggable} The dialog can be repositioned by dragging its title bar.
+ * @ux {Resizable} The dialog can be resized by dragging its edges or corners.
  */
 export const Dialog: KendoComponent<KendoDialogProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDialogProps &

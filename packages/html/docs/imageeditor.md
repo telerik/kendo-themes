@@ -1,4 +1,4 @@
-# Imageeditor Accessibility
+# Imageeditor Specification
 
 ## Accessibility Support
 
@@ -24,6 +24,16 @@ The Imageeditor is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Control + Z` | Undo the last modification performed on the image. |
 | `Control + Y` | Redo a modification performed on the image. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Canvas | Renders the image on an editable canvas. |
+| Crop | A crop tool lets the user select and apply a cropping region. |
+| Pan and zoom | The canvas can be panned by dragging and zoomed with the mouse wheel. |
+| Undo / Redo | All edit operations can be undone and redone. |
+| Export | The edited image can be saved or downloaded. |
+
 ### Testing
 
 The Imageeditor has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -41,3 +51,7 @@ The Imageeditor has been tested with the following screen readers and browsers c
 ### Resources
 
 - [HTML Canvas Accessibility](https://pauljadam.com/demos/canvas.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/imageeditor/`](https://github.com/telerik/kendo-themes/tree/develop/tests/imageeditor/).

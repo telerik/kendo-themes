@@ -1,4 +1,4 @@
-# Taskboard Accessibility
+# Taskboard Specification
 
 ## Accessibility Support
 
@@ -7,6 +7,14 @@ Out of the box, the Telerik and Kendo UI Taskboard provides extensive accessibil
 The Taskboard is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
 
 ### TaskBoard
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-taskboard` element.
 
 #### ARIA Attributes
 
@@ -39,6 +47,16 @@ The Taskboard is compliant with the [Web Content Accessibility Guidelines (WCAG)
 | `Tab` | Moves focus to the next field or action in the pane. |
 | `Shift + Tab` | Moves focus to the previous field or action in the pane. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Columns | Tasks are grouped into columns that represent workflow stages. |
+| Cards | Each task is displayed as a card with a title and optional metadata. |
+| Drag and drop | Cards are dragged between columns to update their status. |
+| Add card | Each column has an add button to create a new task. |
+| Edit card | Clicking a card opens an edit form for the task details. |
+
 ### Testing
 
 The Taskboard has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -56,3 +74,7 @@ The Taskboard has been tested with the following screen readers and browsers com
 ### Resources
 
 - [WAI-ARIA spec: Role List](https://www.w3.org/TR/wai-aria-1.2/#listt)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/taskboard/`](https://github.com/telerik/kendo-themes/tree/develop/tests/taskboard/).

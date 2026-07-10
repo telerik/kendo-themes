@@ -1,4 +1,4 @@
-# Colorgradient Accessibility
+# Colorgradient Specification
 
 ## Accessibility Support
 
@@ -10,9 +10,20 @@ The Colorgradient is compliant with the [Web Content Accessibility Guidelines (W
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `readonly` | `k-readonly` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-colorgradient` element.
 
 #### ARIA Attributes
 
@@ -51,6 +62,16 @@ The Colorgradient is compliant with the [Web Content Accessibility Guidelines (W
 | `Shift + ArrowLeft` | Moves slider left by small step. |
 | `Shift + ArrowRight` | Moves slider right by small step. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Gradient canvas | A 2D canvas lets the user pick a color by clicking or dragging. |
+| Hue slider | A slider below the canvas adjusts the hue. |
+| Opacity slider | A slider adjusts the alpha channel of the selected color. |
+| Hex input | A text input accepts a hex color code directly. |
+| RGBA inputs | Individual inputs accept red, green, blue, and alpha values. |
+
 ### Testing
 
 The Colorgradient has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -64,3 +85,7 @@ The Colorgradient has been tested with the following screen readers and browsers
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/colorgradient/`](https://github.com/telerik/kendo-themes/tree/develop/tests/colorgradient/).

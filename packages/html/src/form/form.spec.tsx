@@ -29,6 +29,13 @@ const defaultOptions = {
     tag: 'form' as const
 };
 
+/**
+ * @ux {Validation} Validates field values on change or submit and shows inline error messages.
+ * @ux {Labels} Each field has an associated label that describes its purpose.
+ * @ux {Hint} Optional hint text below a field provides additional guidance.
+ * @ux {Required indicator} Required fields are visually marked with an asterisk.
+ * @ux {Layout} Supports horizontal (label beside field) and vertical (label above field) layouts.
+ */
 export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFormProps &
         React.HTMLAttributes<HTMLDivElement>

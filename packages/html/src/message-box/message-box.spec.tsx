@@ -29,6 +29,11 @@ export type KendoMessageBoxProps = KendoMessageBoxOptions;
 
 const defaultOptions = {};
 
+/**
+ * @ux {Status variants} Available in info, success, warning, and error styles with matching colors and icons.
+ * @ux {Dismissible} An optional close button lets the user dismiss the message.
+ * @ux {Icon} Displays an icon matching the severity of the message.
+ */
 export const MessageBox: KendoComponent<KendoMessageBoxProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMessageBoxProps &
         React.HTMLAttributes<HTMLDivElement>

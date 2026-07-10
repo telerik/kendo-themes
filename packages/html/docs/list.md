@@ -1,4 +1,4 @@
-# List Accessibility
+# List Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The List is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 
@@ -21,6 +21,17 @@ The List is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | `role="presentation"` | Group headers are presentational, not selectable options. |
 
 ### ListItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-list-item` element.
 
 #### ARIA Attributes
 
@@ -44,3 +55,7 @@ The List has been tested with the following screen readers and browsers combinat
 | Firefox | NVDA |
 | Chrome | JAWS |
 | Microsoft Edge | JAWS |
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/list/`](https://github.com/telerik/kendo-themes/tree/develop/tests/list/).

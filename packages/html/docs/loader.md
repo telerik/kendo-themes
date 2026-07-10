@@ -1,4 +1,4 @@
-# Loader Accessibility
+# Loader Specification
 
 ## Accessibility Support
 
@@ -10,7 +10,7 @@ The Loader is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary` | — |
@@ -23,11 +23,19 @@ The Loader is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | `aria-label` | Accessible name for the loader (default: "Loading"). |
 | `aria-live="polite"` | Polite announcements of loading state changes. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Indeterminate progress | Displays a looping animation to signal ongoing background work. |
+| Sizes | Available in small, medium, and large sizes. |
+| Theme colors | Can be styled with any of the theme palette colors. |
+
 ### LoaderContainer
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary` | — |
@@ -58,3 +66,7 @@ The Loader has been tested with the following screen readers and browsers combin
 
 - [WCAG 4.1.3 Status Messages — loading states announced via live region](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
 - [WCAG 4.1.3 Status Messages — loading states announced via live region](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/loader/`](https://github.com/telerik/kendo-themes/tree/develop/tests/loader/).

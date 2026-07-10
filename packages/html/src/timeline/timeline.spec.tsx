@@ -29,6 +29,10 @@ const defaultOptions = {
  * @aria {tabindex="0"} Vertical timeline cards are focusable.
  * @aria {aria-expanded="false"} Collapsed cards announce their collapsed state.
  * @aria {aria-expanded="true"} Expanded cards announce their expanded state.
+ * @ux {Chronological events} Displays a list of events ordered by date.
+ * @ux {Expand / Collapse} Each event's detail content can be expanded or collapsed.
+ * @ux {Orientation} Can be rendered vertically (default) or horizontally.
+ * @ux {Alternating} In horizontal mode, event cards alternate between top and bottom placement.
  */
 export const Timeline: KendoComponent<KendoTimelineProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTimelineProps &

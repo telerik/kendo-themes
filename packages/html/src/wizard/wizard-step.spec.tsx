@@ -34,6 +34,9 @@ const defaultOptions = {
 
 /**
  * @aria {aria-label} for the tabpanel, e.g. "Step 2 of 3"
+ * @ux {Content panel} Renders the form content and any instructions for the step.
+ * @ux {Action buttons} Provides Back, Next, and optional submit/finish buttons.
+ * @ux {Validation gating} Prevents advancing to the next step until the current step's validation passes.
  */
 export const WizardStep = (
     props: KendoWizardStepProps & KendoWizardStepState & React.HTMLAttributes<HTMLDivElement>

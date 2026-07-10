@@ -1,4 +1,4 @@
-# SmartBox Accessibility
+# SmartBox Specification
 
 ## Accessibility Support
 
@@ -10,11 +10,21 @@ The SmartBox is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-smart-box` element.
 
 #### ARIA Attributes
 
@@ -49,6 +59,14 @@ The SmartBox is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | `Enter` | Selects the focused suggestion and closes the popup. |
 | `Escape` | Closes the popup and returns focus to the input field. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Suggestions | Displays context-aware suggestions as the user types. |
+| Token creation | Accepted suggestions are converted into inline tokens. |
+| Natural language | Parses free-form text input into structured filter criteria. |
+
 ### Testing
 
 The SmartBox has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -67,3 +85,7 @@ The SmartBox has been tested with the following screen readers and browsers comb
 
 - [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/patterns/)
 - [ARIA Authoring Practices: Combobox Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/smart-box/`](https://github.com/telerik/kendo-themes/tree/develop/tests/smart-box/).

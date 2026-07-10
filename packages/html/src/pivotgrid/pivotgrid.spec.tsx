@@ -33,6 +33,10 @@ const defaultOptions = {
 /**
  * @aria {role="grid"} The role specifies the element is a Data Grid.
  * @aria {id} Sets a unique identifier for the cell to be referenced from the first column header row aria-owns attribute.
+ * @ux {Configurator} A settings panel maps data fields to rows, columns, and measures.
+ * @ux {Expand / Collapse} Row and column header groups can be collapsed to summarize data.
+ * @ux {Totals} Subtotals and grand totals are automatically calculated and displayed.
+ * @ux {Field reorder} Fields can be dragged between the rows, columns, and filter areas.
  */
 export const PivotGrid: KendoComponent<KendoPivotGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPivotGridProps &

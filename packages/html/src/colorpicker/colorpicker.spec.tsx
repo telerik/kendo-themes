@@ -68,6 +68,10 @@ const defaultOptions = {
  * @aria {tabindex="0"} The element must be focusable.
  * @aria {aria-disabled="true"} Rendered only when the picker is disabled.
  * @aria {tabindex="-1"} The inner ColorGradient must be removed from the page tab sequence.
+ * @ux {Popup} Opens a color picker popup when the swatch button is clicked.
+ * @ux {Color preview} The trigger button reflects the currently selected color.
+ * @ux {Flat mode} Can be rendered inline without a popup wrapper.
+ * @ux {Gradient and palette tabs} Tabs let the user switch between gradient picker and palette.
  */
 export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoColorPickerProps &

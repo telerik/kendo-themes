@@ -29,6 +29,11 @@ const defaultOptions = {
 /**
  * @aria {role="tree"} The root list element of the treeview.
  * @aria {role="group"} The ul element that wraps child nodes.
+ * @ux {Expand / Collapse} Nodes with children can be expanded to reveal them.
+ * @ux {Selection} A node is selected by clicking its label.
+ * @ux {Multi-select} Multiple nodes can be selected with Ctrl/Shift click.
+ * @ux {Checkboxes} Optional checkboxes provide hierarchical multi-selection with parent/child propagation.
+ * @ux {Drag and drop} Nodes can be dragged to a new position within the tree.
  */
 export const Treeview: KendoComponent<KendoTreeviewProps & KendoTreeviewState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTreeviewProps &

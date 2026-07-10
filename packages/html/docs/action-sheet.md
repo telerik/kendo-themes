@@ -1,4 +1,4 @@
-# ActionSheet Accessibility
+# ActionSheet Specification
 
 ## Accessibility Support
 
@@ -27,6 +27,16 @@ The ActionSheet is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Shift + Tab` | Moves focus to the previous focusable item. |
 | `Enter` | Triggers the action associated with the currently focused item. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Overlay | Renders over the page content and prevents interaction with the rest of the UI. |
+| Side | Can be anchored to any edge of the screen: top, right, bottom, or left. |
+| Title and subtitle | Optionally renders a title and subtitle to describe the available actions. |
+| Items | Each action item consists of a label and an optional icon. |
+| Dismiss | Closes when the user taps the overlay backdrop or presses Escape. |
+
 ### Testing
 
 The ActionSheet has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -44,3 +54,7 @@ The ActionSheet has been tested with the following screen readers and browsers c
 ### Resources
 
 - [ARIA practices Modal Dialog Example](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/action-sheet/`](https://github.com/telerik/kendo-themes/tree/develop/tests/action-sheet/).

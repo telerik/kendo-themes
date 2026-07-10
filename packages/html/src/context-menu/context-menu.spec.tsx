@@ -21,6 +21,9 @@ const defaultOptions = {};
  * @aria {tabindex="0"} The focused item has tabindex 0.
  * @aria {aria-controls="ul.k-menu-group id"} Points to the ID of the submenu.
  * @aria {id} Each nested menu has an id linked to parent aria-controls.
+ * @ux {Right-click trigger} Opens when the user right-clicks (or long-presses on touch) the target element.
+ * @ux {Submenus} Menu items can have submenus that open on hover.
+ * @ux {Dismiss} Closes when clicking outside the menu or pressing Escape.
  */
 export const ContextMenu: KendoComponent<KendoMenuListOptions & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoMenuListOptions &

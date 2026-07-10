@@ -1,4 +1,4 @@
-# Scrollview Accessibility
+# Scrollview Specification
 
 ## Accessibility Support
 
@@ -23,6 +23,15 @@ The Scrollview is compliant with the [Web Content Accessibility Guidelines (WCAG
 | `aria-controls` | Points to the id of the items container element. |
 | `aria-live="polite"` | Identifies a hidden element as a live region in the polite state. |
 
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Paged scrolling | Advances one item at a time on swipe or arrow-button click. |
+| Navigation arrows | Previous and next buttons navigate between pages. |
+| Pager dots | Indicator dots show the current page and total page count. |
+| Auto-play | Cycles through items automatically at a configurable interval. |
+
 ### Testing
 
 The Scrollview has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
@@ -41,3 +50,7 @@ The Scrollview has been tested with the following screen readers and browsers co
 
 - [ARIA Practices: Carousel](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/)
 - [ARIA Practices: Carousel Example with Buttons](https://www.w3.org/WAI/ARIA/apg/example-index/carousel/carousel-1-prev-next.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/scrollview/`](https://github.com/telerik/kendo-themes/tree/develop/tests/scrollview/).
