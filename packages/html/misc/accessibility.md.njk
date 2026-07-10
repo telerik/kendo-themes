@@ -1,4 +1,4 @@
-# {{ name }} Accessibility
+# {{ name }} Specification
 
 ## Accessibility Support
 
@@ -12,11 +12,22 @@ The {{ name }} is compliant with the [Web Content Accessibility Guidelines (WCAG
 {% if comp.apiRows and comp.apiRows.length -%}
 #### Component Style Options
 
-| Option | Valid values | Default |
+| Option | Values | Default |
 | --- | --- | --- |
 {% for row in comp.apiRows -%}
 | `{{ row.option }}` | {{ row.values if row.values else '—' }} | {{ row.default if row.default else '—' }} |
 {% endfor %}
+{% endif -%}
+{% if comp.stateRows and comp.stateRows.length -%}
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+{% for row in comp.stateRows -%}
+| `{{ row.state }}` | `{{ row.cssClass }}` |
+{% endfor %}
+{% if comp.rootClass %}These CSS classes are applied to the `{{ comp.rootClass }}` element.
+{% endif %}
 {% endif -%}
 {% if comp.ariaAnnotations and comp.ariaAnnotations.length -%}
 #### ARIA Attributes
@@ -66,4 +77,9 @@ The {{ name }} has been tested with the following screen readers and browsers co
 {% for resource in resources -%}
 - [{{ resource.text }}]({{ resource.url }})
 {% endfor %}
+{% endif -%}
+{% if componentDir -%}
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/{{ componentDir }}/`](https://github.com/telerik/kendo-themes/tree/develop/tests/{{ componentDir }}/).
 {% endif -%}
