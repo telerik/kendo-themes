@@ -112,8 +112,20 @@ function buildPackageSpecMap() {
                     }
                 }
 
-                if (!apiRows.length && !kbSpec.length && !uxSpec.length && !ariaAnnotations.length) { continue; }
-                components.push({ name: match[1], isPrimary, apiRows, kbSpec, uxSpec, ariaAnnotations });
+                // States table from primary component only
+                const stateRows = [];
+                if (isPrimary && exp.states) {
+                    for (const state of exp.states) {
+                        if (state !== null && state !== undefined && state !== '') {
+                            stateRows.push({ state, cssClass: `k-${state}` });
+                        }
+                    }
+                }
+
+                const rootClass = (isPrimary && exp.className) ? exp.className : null;
+
+                if (!apiRows.length && !stateRows.length && !kbSpec.length && !uxSpec.length && !ariaAnnotations.length) { continue; }
+                components.push({ name: match[1], isPrimary, rootClass, apiRows, stateRows, kbSpec, uxSpec, ariaAnnotations });
             }
         }
 
@@ -148,6 +160,7 @@ for (const file of jsonFiles.sort()) {
 
     const md = nunjucks.renderString(template, {
         name,
+        componentDir: component,
         components,
         resources,
         hasKbSpec: kbSpec.length > 0
@@ -162,6 +175,7 @@ const packageSpecMap = buildPackageSpecMap();
 for (const [dir, { components, resources }] of [...packageSpecMap.entries()].sort()) {
     const md = nunjucks.renderString(template, {
         name: toPascalCase(dir),
+        componentDir: dir,
         components,
         resources,
         hasKbSpec: components.some(c => c.kbSpec.length > 0)
