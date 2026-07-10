@@ -112,8 +112,6 @@
             border-color: $kendo-toolbar-flat-border;
         }
     }
-
-    .k-floating-toolbar,
     .editorToolbarWindow.k-window-content { // stylelint-disable-line
         @include fill(
             $kendo-toolbar-text,
