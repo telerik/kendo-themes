@@ -5,7 +5,6 @@ import { DropzoneNormal } from '../dropzone';
 import { MenuButton } from '../menu-button';
 import { classNames, stateClassNames, States, } from '../misc';
 import { PagerInput } from '../pager';
-import { Textbox } from '../textbox';
 import { Toolbar, ToolbarSeparator } from '../toolbar';
 import { UploadNormal } from '../upload';
 
@@ -23,7 +22,6 @@ export type KendoPDFViewerProps = {
     toolbar?: React.JSX.Element;
     annotations?: boolean;
     annotationsToolbar?: React.JSX.Element;
-    showSearchPanel?: boolean;
     blank?: boolean;
 };
 
@@ -82,7 +80,6 @@ const defaultAnnotationsToolbar =
 
 const defaultOptions = {
     toolbar: defaultToolbar,
-    showSearchPanel: false,
     blank: false,
     annotations: false,
     annotationsToolbar: defaultAnnotationsToolbar,
@@ -107,7 +104,6 @@ export const PDFViewer: KendoComponent<KendoPDFViewerState & KendoPDFViewerProps
     const {
         disabled,
         toolbar = defaultOptions.toolbar,
-        showSearchPanel = defaultOptions.showSearchPanel,
         blank = defaultOptions.blank,
         annotations,
         annotationsToolbar = defaultOptions.annotationsToolbar,
@@ -130,25 +126,6 @@ export const PDFViewer: KendoComponent<KendoPDFViewerState & KendoPDFViewerProps
                 aria-label="PDF document"
                 role="document"
             >
-
-                {showSearchPanel &&
-                <div className="k-search-panel k-pos-sticky k-top-center" role="dialog" aria-label="Search">
-                    <Button fillMode="flat" icon="handle-drag" className="k-search-dialog-draghandle" aria-label="Drag handle" />
-                    <Textbox
-                        aria-label="Search text"
-                        suffix={
-                            <Button fillMode="flat" className="k-match-case-button" icon="convert-lowercase" aria-label="Match case" />
-                        }
-                    />
-                    <span className="k-search-matches">
-                        <span>0</span> of <span>0</span>
-                    </span>
-                    <Button fillMode="flat" icon="arrow-up" aria-label="Previous match" />
-                    <Button fillMode="flat" icon="arrow-down" aria-label="Next match" />
-                    <Button fillMode="flat" icon="x" aria-label="Close search" />
-                </div>
-                }
-
                 <div className="k-pdf-viewer-pages">
                     {blank
                         ?
