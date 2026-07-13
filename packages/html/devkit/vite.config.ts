@@ -14,6 +14,10 @@ const repoRoot = resolve(devkitDir, '../../..');
 // Packages under packages/* that are not selectable themes.
 const NON_THEME_PACKAGES = new Set(['utils', 'html']);
 
+// Packages whose SCSS changes should trigger a recompile of ALL themes (they are
+// design-system dependencies consumed by every theme via @use / @forward).
+const SOURCE_ONLY_PACKAGES = new Set(['core']);
+
 const execAsync = promisify(exec);
 const sassBin = resolve(repoRoot, 'node_modules/.bin/sass');
 
@@ -203,6 +207,32 @@ function swatchMapPlugin(): Plugin {
 function scssWatchPlugin(): Plugin {
     const pending = new Map<string, ReturnType<typeof setTimeout>>();
 
+    /** Returns all compilable theme packages (have scss/all.scss, are not utils/html/core). */
+    function getThemePackages(): string[] {
+        return globSync('packages/*/scss/all.scss', { cwd: repoRoot, posix: true })
+            .map((f) => f.split('/')[1])
+            .filter((pkg) => !NON_THEME_PACKAGES.has(pkg) && !SOURCE_ONLY_PACKAGES.has(pkg));
+    }
+
+    function scheduleRecompile(server: ViteDevServer, theme: string): void {
+        const existing = pending.get(theme);
+        if (existing) clearTimeout(existing);
+
+        pending.set(theme, setTimeout(async () => {
+            pending.delete(theme);
+            server.config.logger.info(`  → [kendo] recompiling ${theme}/all.css…`, { timestamp: true });
+
+            try {
+                await compileAllCss(theme);
+                server.config.logger.info(`  ✓ [kendo] ${theme}/all.css ready`, { timestamp: true });
+                // Notify any connected browser to hot-swap the CSS link
+                server.ws.send({ type: 'custom', event: 'kendo:css-update', data: { theme } });
+            } catch (err) {
+                server.config.logger.error(`  ✗ [kendo] ${theme} sass error:\n${execError(err)}`);
+            }
+        }, 300));
+    }
+
     return {
         name: 'devkit-scss-watch',
         apply: 'serve',
@@ -215,26 +245,19 @@ function scssWatchPlugin(): Plugin {
                 const m = normalised.match(/packages\/([^/]+)\/scss\//);
                 if (!m) return;
 
-                const theme = m[1];
-                if (NON_THEME_PACKAGES.has(theme)) return;
+                const pkg = m[1];
+                if (NON_THEME_PACKAGES.has(pkg)) return;
 
-                // Debounce rapid saves — only compile once per 300 ms quiet window
-                const existing = pending.get(theme);
-                if (existing) clearTimeout(existing);
+                // A change in a source-only package (e.g. core) affects every theme —
+                // recompile them all; otherwise only recompile the changed theme.
+                const themes = SOURCE_ONLY_PACKAGES.has(pkg) ? getThemePackages() : [pkg];
+                if (SOURCE_ONLY_PACKAGES.has(pkg)) {
+                    server.config.logger.info(`  → [kendo] core changed — scheduling recompile for all themes`, { timestamp: true });
+                }
 
-                pending.set(theme, setTimeout(async () => {
-                    pending.delete(theme);
-                    server.config.logger.info(`  → [kendo] recompiling ${theme}/all.css…`, { timestamp: true });
-
-                    try {
-                        await compileAllCss(theme);
-                        server.config.logger.info(`  ✓ [kendo] ${theme}/all.css ready`, { timestamp: true });
-                        // Notify any connected browser to hot-swap the CSS link
-                        server.ws.send({ type: 'custom', event: 'kendo:css-update', data: { theme } });
-                    } catch (err) {
-                        server.config.logger.error(`  ✗ [kendo] ${theme} sass error:\n${execError(err)}`);
-                    }
-                }, 300));
+                for (const theme of themes) {
+                    scheduleRecompile(server, theme);
+                }
             });
         },
     };
