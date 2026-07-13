@@ -1,4 +1,6 @@
-import { classNames } from '../misc';
+import { classNames, Size, FillMode  } from '../misc';
+import { Popup, KendoPopupProps } from '../popup';
+import { Toolbar, KendoToolbarOptions, KendoToolbarProps } from '../toolbar';
 
 import { KendoComponent } from '../_types/component';
 import { TOOLBAR_FOLDER_NAME, TOOLBAR_MODULE_NAME } from './constants';
@@ -7,13 +9,16 @@ export const FLOATING_TOOLBAR_CLASSNAME = `k-floating-toolbar`;
 
 const states = [];
 
-const options = {};
+const options = {
+    size: [Size.undefined, Size.small, Size.medium, Size.large],
+    fillMode: [FillMode.undefined, FillMode.solid, FillMode.outline, FillMode.flat],
+};
 
 const defaultOptions = {};
 
-export type KendoFloatingToolbarOptions = {};
+export type KendoFloatingToolbarOptions = KendoToolbarOptions;
 
-export type KendoFloatingToolbarProps = KendoFloatingToolbarOptions & {};
+export type KendoFloatingToolbarProps = KendoFloatingToolbarOptions & KendoPopupProps & KendoToolbarProps & {};
 
 /**
  * @ux {Contextual display} Appears near selected content (e.g., selected text in an editor).
@@ -24,18 +29,34 @@ export const FloatingToolbar: KendoComponent<KendoFloatingToolbarProps & React.H
     props: KendoFloatingToolbarProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        size,
+        fillMode,
+        resizable,
+        scrollable,
+        scrollButtons,
+        scrollingPosition,
+        section,
         ...other
     } = props;
 
     return (
-        <div
+        <Popup
             {...other}
             className={classNames(
                 props.className,
                 FLOATING_TOOLBAR_CLASSNAME,
             )}>
-            {props.children}
-        </div>
+            <Toolbar
+                size={size}
+                fillMode={fillMode}
+                resizable={resizable}
+                scrollable={scrollable}
+                scrollButtons={scrollButtons}
+                scrollingPosition={scrollingPosition}
+                section={section}>
+                    {props.children}
+            </Toolbar>
+        </Popup>
     );
 };
 
