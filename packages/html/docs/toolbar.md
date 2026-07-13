@@ -8,6 +8,13 @@ The Toolbar is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 
 ### FloatingToolbar
 
+#### Component Style Options
+
+| Option | Values | Default |
+| --- | --- | --- |
+| `size` | `small`, `medium`, `large` | — |
+| `fillMode` | `solid`, `outline`, `flat` | — |
+
 #### UX Behavior
 
 | Feature | Description |
