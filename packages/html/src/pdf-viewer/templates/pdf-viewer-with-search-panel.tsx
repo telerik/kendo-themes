@@ -16,11 +16,11 @@ export const PDFViewerWithSearchPanel = (props) => (
         {...props}
     />
     <FloatingToolbar fillMode="flat">
-        <Button aria-label="Drag handle" className="k-search-dialog-draghandle" fillMode="flat" icon="handle-drag"/>
+        <Button aria-label="Drag handle" className="k-search-dialog-draghandle" fillMode="flat" icon="handle-drag-dots"/>
         <ToolbarSeparator />
         <Textbox fillMode="flat" placeholder="Search" suffix={<Button aria-label="Match case" className="k-match-case-button" fillMode="flat" icon="convert-lowercase" />}  />
         <div className="k-search-matches">
-            of <span>0</span>
+           <span>0</span> of <span>0</span>
         </div>
         <ToolbarSeparator />
         <Button aria-label="Previous match" fillMode="flat" icon="arrow-up" />
