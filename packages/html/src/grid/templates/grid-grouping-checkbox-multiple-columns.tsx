@@ -13,7 +13,7 @@ export const GridGroupingCheckboxMultipleColumns = ({ contentClassName, ...other
                 <Button icon="filter">Filter</Button>
                 <Button icon="grid-layout" selected>Group</Button>
                 <span className="k-spacer" />
-                <Button icon="more-vertical" fillMode="flat" />
+                <Button icon="more-vertical" fillMode="flat" aria-label="More options" />
             </GridToolbar>
         )}
         groupingHeader={(
@@ -37,7 +37,7 @@ export const GridGroupingCheckboxMultipleColumns = ({ contentClassName, ...other
                             <TableRow role="row">
                                 <GridHeaderCell columnTitle="ID" role="columnheader"></GridHeaderCell>
                                 <GridHeaderCell columnTitle="Name" role="columnheader"></GridHeaderCell>
-                                <GridHeaderCell role="columnheader">
+                                <GridHeaderCell role="columnheader" accessibleLabel="Select all">
                                     <Checkbox />
                                 </GridHeaderCell>
                                 <GridHeaderCell columnTitle="Product ID" role="columnheader"></GridHeaderCell>

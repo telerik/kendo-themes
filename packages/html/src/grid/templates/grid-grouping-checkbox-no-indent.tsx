@@ -13,7 +13,7 @@ export const GridGroupingCheckboxNoIndent = ({ contentClassName, ...other }: any
                 <Button icon="filter">Filter</Button>
                 <Button icon="grid-layout" selected>Group</Button>
                 <span className="k-spacer" />
-                <Button icon="more-vertical" fillMode="flat" />
+                <Button icon="more-vertical" fillMode="flat" aria-label="More options" />
             </GridToolbar>
         )}
         groupingHeader={(
@@ -35,7 +35,7 @@ export const GridGroupingCheckboxNoIndent = ({ contentClassName, ...other }: any
                         </colgroup>
                         <TableThead role="rowgroup">
                             <TableRow role="row">
-                                <GridHeaderCell role="columnheader">
+                                <GridHeaderCell role="columnheader" accessibleLabel="Select all">
                                     <Checkbox />
                                 </GridHeaderCell>
                                 <GridHeaderCell columnTitle="ID" role="columnheader"></GridHeaderCell>
