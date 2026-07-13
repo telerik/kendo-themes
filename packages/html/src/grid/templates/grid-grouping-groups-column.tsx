@@ -13,7 +13,7 @@ export const GridGroupingGroupsColumn = ({ contentClassName, ...other }: any) =>
                 <Button icon="filter">Filter</Button>
                 <Button icon="grid-layout" selected>Group</Button>
                 <span className="k-spacer" />
-                <Button icon="more-vertical" fillMode="flat" />
+                <Button icon="more-vertical" fillMode="flat" aria-label="More options" />
             </GridToolbar>
         )}
         groupingHeader={(
