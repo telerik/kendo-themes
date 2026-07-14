@@ -7,25 +7,33 @@ description: Apply the Kendo Design System to any project — provides design to
 
 This skill provides the complete Kendo Design System specification.
 
-When this skill is active, follow the design system defined in `DESIGN.md` (located alongside this file) for all UI decisions — colors, typography, spacing, elevation, shapes, motion, and accessibility.
+## Spec resolution (precedence)
+
+1. **Project-local `DESIGN.md`** — if a `DESIGN.md` exists in the project root, treat it as the authoritative spec. It may override, extend, or remove rules from the plugin defaults.
+2. **Plugin-bundled spec** — otherwise, use the `DESIGN.md` located alongside this file.
+
+When a project-local DESIGN.md exists, it has **final say**. The user may have customized tokens (brand colors, preferred font, tighter spacing) and those choices override the defaults.
 
 ## What it provides
 
-- **Design tokens** — Colors (oklch), typography scale, spacing system, border radii, elevation shadows
-- **Visual guidelines** — How to apply tokens correctly, rhythm rules, nesting constraints
+- **Design principles** — How to apply spacing rhythm, elevation hierarchy, typography scale correctly
 - **Guardrails** — Do's and don'ts that prevent common design mistakes
 - **Accessibility contracts** — WCAG AA requirements, focus indicators, color-independence rules
+- **Token reference** — Colors (oklch), typography scale, spacing system, border radii, elevation shadows
 
 ## How to use
 
-Read `DESIGN.md` for the full specification. The YAML frontmatter contains machine-readable token values. The markdown body explains rationale and constraints.
+Read the resolved DESIGN.md (project-local first, plugin-bundled as fallback). The YAML frontmatter contains machine-readable token values. The markdown body explains rationale and constraints.
 
-When generating UI code:
-1. Use the semantic color tokens (primary, secondary, error, etc.) — never hard-code color values
-2. Follow the spacing scale (0.25rem base unit) — never use arbitrary pixel values
-3. Apply the typography scale (heading, body, label, code) — don't invent font sizes
-4. Respect elevation hierarchy — shadows only for floating elements
-5. Maintain WCAG AA contrast (4.5:1 text, 3:1 UI elements)
+When reviewing or generating UI code, enforce **design principles** (Category B) — not mere token syntax:
+1. Spacing lands on the 4px rhythm grid — the variable name doesn't matter, the value does
+2. Typography uses sizes from the defined scale — not arbitrary values
+3. Elevation signals floating layers only — cards in page flow use border/tonal contrast
+4. Colors resolve to semantic roles — not necessarily our variable names, but the intent matches
+5. Motion respects prefers-reduced-motion — durations stay within system presets
+6. WCAG AA contrast (4.5:1 text, 3:1 UI elements)
+
+**Important:** This skill is implementation-agnostic. An app using Tailwind `gap-2` (8px) is equally valid as `var(--kendo-spacing-2)` — both land on the 4px grid. Don't flag token naming; flag design principle violations.
 
 ## Relationship to Kendo Themes
 
