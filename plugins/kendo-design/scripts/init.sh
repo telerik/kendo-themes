@@ -2,13 +2,16 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Kendo Design System Plugin — Session Initialization
 # ─────────────────────────────────────────────────────────────────────────────
-# Copies DESIGN.md to the project root so the agent context picks it up.
+# Copies the default (Meridian) DESIGN.md to the project root so the agent
+# context picks it up. Meridian is the recommended default theme; a project can
+# replace this file (e.g. via `/kendo-design init`) with a theme-specific or
+# customized spec, which then takes precedence.
 # This runs as a sessionStart hook.
 # ─────────────────────────────────────────────────────────────────────────────
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PLUGIN_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-DESIGN_SRC="$PLUGIN_DIR/skills/kendo-design/references/DESIGN.md"
+DESIGN_SRC="$PLUGIN_DIR/skills/kendo-design/themes/meridian/DESIGN.md"
 
 # Read session info from stdin (JSON) to get the working directory
 # Fall back to PWD if no input available

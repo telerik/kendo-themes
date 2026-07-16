@@ -27,10 +27,18 @@ For `audit`/`modernize`/`generate`, delegate to the named agent (it carries the 
 
 ## Spec resolution (precedence)
 
-1. **Project-local `DESIGN.md`** — if a `DESIGN.md` exists in the project root, treat it as the authoritative spec. It may override, extend, or remove rules from the plugin defaults.
-2. **Plugin-bundled spec** — otherwise, use the `DESIGN.md` in the `references/` folder alongside this file (`references/DESIGN.md`).
+1. **Project-local `DESIGN.md`** — if a `DESIGN.md` exists in the project root, treat it as the authoritative spec. It may override, extend, or remove rules from the plugin defaults. This has **final say** — the user may have customized tokens (brand colors, preferred font, tighter spacing) and those choices win.
+2. **Bundled theme spec** — otherwise, select the theme-specific spec under `themes/<theme>/DESIGN.md` alongside this file (see theme selection below).
 
-When a project-local DESIGN.md exists, it has **final say**. The user may have customized tokens (brand colors, preferred font, tighter spacing) and those choices override the defaults.
+### Theme selection
+
+The bundled specs live in `themes/`, one folder per Kendo theme. To pick one:
+
+1. **Detect the project's theme** — check for an installed `@progress/kendo-theme-<name>` package, an imported swatch/CSS (e.g. `meridian-main.css`), or an explicit user choice.
+2. **Map to `themes/<theme>/DESIGN.md`.** Currently authored: **`meridian`** (the recommended default) and **`default`** (the original theme, now in maintenance mode).
+3. **Placeholders.** `bootstrap`, `material`, `fluent`, and `classic` are stubs with no token frontmatter yet. If the detected theme is a placeholder or can't be determined, fall back to **`themes/meridian/DESIGN.md`** — Meridian is the recommended default for any new or unknown project.
+
+> A sessionStart hook copies `themes/meridian/DESIGN.md` into the project root as `./DESIGN.md` so the spec is present passively. Running `/kendo-design init` regenerates that file tailored to the detected theme and the project's real brand values.
 
 ## What it provides
 
@@ -41,7 +49,7 @@ When a project-local DESIGN.md exists, it has **final say**. The user may have c
 
 ## How to use
 
-Read the resolved DESIGN.md (project-local `./DESIGN.md` first, plugin-bundled `references/DESIGN.md` as fallback). The YAML frontmatter contains machine-readable token values. The markdown body explains rationale and constraints.
+Read the resolved DESIGN.md (project-local `./DESIGN.md` first, then the bundled theme spec `themes/<theme>/DESIGN.md` — defaulting to `themes/meridian/DESIGN.md` — as fallback). The YAML frontmatter contains machine-readable token values. The markdown body explains rationale and constraints.
 
 When reviewing or generating UI code, enforce **design principles** (Category B) — not mere token syntax:
 1. Spacing lands on the 4px rhythm grid — the variable name doesn't matter, the value does

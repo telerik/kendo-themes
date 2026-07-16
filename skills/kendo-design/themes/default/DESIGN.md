@@ -1,90 +1,91 @@
 ---
 version: alpha
-name: Kendo
-description: The Kendo Design System — a modern, balanced visual identity for data-rich professional interfaces, built on perceptually uniform oklch color space.
+name: Kendo Default
+theme: default
+description: The Kendo Default theme — the original Kendo design language. As of theme v14.0.0 it is in maintenance mode and Meridian is the recommended default; existing Default-theme applications remain fully supported. A warm, high-energy identity anchored by a signature red-orange primary, built on perceptually uniform oklch color space.
 colors:
   app-surface: "oklch(100% 0 0deg)"
-  on-app-surface: "oklch(28.36% 0.0243 261.13deg)"
-  subtle: "oklch(55.44% 0.0407 257.42deg)"
-  surface: "oklch(98.46% 0.0017 247.84deg)"
+  on-app-surface: "oklch(36% 0 0deg)"
+  subtle: "oklch(51.03% 0 0deg)"
+  surface: "oklch(98.51% 0 0deg)"
   surface-alt: "oklch(100% 0 0deg)"
-  border: "oklch(79.5% 0.0197 255.55deg / 0.35)"
-  border-alt: "oklch(79.5% 0.0197 255.55deg / 0.5)"
-  base: "oklch(96.92% 0.0034 247.86deg)"
-  primary: "oklch(37.17% 0.0392 257.29deg)"
-  secondary: "oklch(54.53% 0.2124 275.85deg)"
-  tertiary: "oklch(83.18% 0.1046 310.19deg)"
-  info: "oklch(56.43% 0.131 241.46deg)"
-  success: "oklch(51.46% 0.1066 163.53deg)"
-  warning: "oklch(88.34% 0.1817 99deg)"
-  error: "oklch(51.01% 0.1951 14.31deg)"
-  inverse: "oklch(28.36% 0.0243 261.13deg)"
-  series: "oklch(54.53% 0.2124 275.85deg)"
+  border: "oklch(0% 0 0deg / 0.08)"
+  border-alt: "oklch(0% 0 0deg / 0.16)"
+  base: "oklch(97.02% 0 0deg)"
+  primary: "oklch(69.85% 0.1923 27.19deg)"
+  secondary: "oklch(51.03% 0 0deg)"
+  tertiary: "oklch(69.91% 0.157 238.99deg)"
+  info: "oklch(51.78% 0.2301 261.43deg)"
+  success: "oklch(67.45% 0.2171 139.99deg)"
+  warning: "oklch(84.22% 0.1727 84.58deg)"
+  error: "oklch(61.07% 0.2435 30.2deg)"
+  inverse: "oklch(36% 0 0deg)"
+  series: "oklch(69.85% 0.1923 27.19deg)"
 typography:
   body-md:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 1rem
     fontWeight: 400
     lineHeight: 1.5
   body-sm:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 0.875rem
     fontWeight: 400
     lineHeight: 1.4286
   body-xs:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 0.75rem
     fontWeight: 400
     lineHeight: 1.4286
   heading-xl:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 1.25rem
     fontWeight: 600
     lineHeight: 1.5
   heading-lg:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 1.125rem
     fontWeight: 600
     lineHeight: 1.5
   heading-md:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 1rem
     fontWeight: 600
     lineHeight: 1.5
   heading-sm:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 0.875rem
     fontWeight: 600
     lineHeight: 1.4286
   label-lg:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 1rem
     fontWeight: 500
     lineHeight: 1.5
   label-md:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 0.875rem
     fontWeight: 500
     lineHeight: 1.4286
   label-sm:
-    fontFamily: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
+    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
     fontSize: 0.75rem
     fontWeight: 500
     lineHeight: 1.4286
   code:
-    fontFamily: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+    fontFamily: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace
     fontSize: 0.875rem
     fontWeight: 400
     lineHeight: 1.4286
 rounded:
   none: 0px
-  xs: 0.125rem
-  sm: 0.25rem
-  md: 0.375rem
-  lg: 0.5rem
-  xl: 0.75rem
-  xxl: 1rem
-  xxxl: 1.5rem
+  xs: 0.0625rem
+  sm: 0.125rem
+  md: 0.25rem
+  lg: 0.375rem
+  xl: 0.5rem
+  xxl: 0.75rem
+  xxxl: 1rem
   full: 9999px
 spacing:
   base: 0.25rem
@@ -124,11 +125,13 @@ spacing:
   24: 6rem
 ---
 
-# Kendo Design System
+# Kendo Design System — Default Theme
+
+> **Status:** The Default theme is the original Kendo design language. As of theme **v14.0.0** it is in **maintenance mode** — no new visual features are planned, but it remains fully supported. **Meridian** is the recommended default for new projects. Migrate to Meridian when it fits your roadmap; if your application already ships on Default, this spec captures its rules.
 
 ## Overview
 
-The Kendo Design System is balanced, precise, and quietly confident. The aesthetic pairs cool-toned surfaces with high-contrast interactive elements and a vibrant secondary accent. It is built for data-rich professional applications that need to stay readable and uncluttered across complex layouts. Prioritize clarity and hierarchy: use color to signal state and function, not decoration.
+The Default theme is warm, confident, and energetic. The aesthetic pairs clean neutral surfaces with a signature red-orange primary that gives calls-to-action strong visual pull. It is built for data-rich professional applications that need clear hierarchy and unambiguous action affordances. Prioritize clarity and hierarchy: use color to signal state and function, not decoration.
 
 Colors are defined in oklch for perceptual uniformity. All derived color variants (hover, active, subtle, emphasis, on-color) are computed automatically from the base tokens at runtime — only base values need to be set.
 
@@ -139,33 +142,35 @@ The color system is built on **semantic tokens** — named roles that carry inte
 ### Surfaces & Structure
 
 - **app-surface** — The root application background. Pure white.
-- **surface** — Component surfaces: cards, panels, inputs. A barely-perceptible cool tint distinguishes it from the page.
+- **surface** — Component surfaces: cards, panels, inputs. A barely-perceptible neutral tint distinguishes it from the page.
 - **surface-alt** — Alternate surface (pure white, same as `app-surface`). Used inside components that already sit on a `surface` fill, creating a secondary level of contrast without introducing a new color.
-- **border** — Default borders at 35% opacity. Translucent so they layer on any surface.
-- **border-alt** — Stronger border variant at 50% opacity for emphasis.
+- **border** — Default borders as translucent black at 8% opacity, so they layer on any surface.
+- **border-alt** — Stronger border variant at 16% opacity for emphasis.
 - **base** — Neutral fill for non-semantic elements (toolbars, table headers, secondary buttons).
-- **subtle** — Muted text for placeholders, captions, and disabled labels.
-- **inverse** — Deep near-black for high-contrast inverted contexts.
+- **subtle** — Muted mid-gray text for placeholders, captions, and disabled labels.
+- **inverse** — Deep charcoal for high-contrast inverted contexts.
 
 ### Semantic Colors
 
 Each semantic color generates a full variant set: `-subtle`, `-subtle-hover`, `-subtle-active`, base, `-hover`, `-active`, `-emphasis`, `-on-subtle`, `on-{name}`, `-on-surface`. Only the base token is defined; the rest are derived.
 
-- **primary** `oklch(37.17% 0.0392 257.29deg)` — A deep, muted navy-slate. Used for the single most important action on a view and as the anchoring text color for headings.
-- **secondary** `oklch(54.53% 0.2124 275.85deg)` — A vibrant violet-blue. Used for secondary actions, active states, and accent elements.
-- **tertiary** `oklch(83.18% 0.1046 310.19deg)` — A light lilac-pink. Used for decorative highlights, tertiary actions, and badges.
-- **info** `oklch(56.43% 0.131 241.46deg)` — A mid-tone cerulean blue. Used for informational messages, links, and focus indicators.
-- **success** `oklch(51.46% 0.1066 163.53deg)` — A balanced teal-green. Used for positive outcomes, confirmations, and valid states.
-- **warning** `oklch(88.34% 0.1817 99deg)` — A high-lightness amber-gold. Used for caution messages and states requiring attention.
-- **error** `oklch(51.01% 0.1951 14.31deg)` — A saturated red-orange. Used for destructive actions, validation errors, and critical alerts.
+- **primary** `oklch(69.85% 0.1923 27.19deg)` — The signature Default red-orange. Used for the single most important action on a view and the theme's core brand accent.
+- **secondary** `oklch(51.03% 0 0deg)` — A neutral mid-gray. Used for secondary actions and low-emphasis controls.
+- **tertiary** `oklch(69.91% 0.157 238.99deg)` — A bright azure blue. Used for decorative highlights, tertiary actions, and badges.
+- **info** `oklch(51.78% 0.2301 261.43deg)` — A vivid blue. Used for informational messages, links, and focus indicators.
+- **success** `oklch(67.45% 0.2171 139.99deg)` — A bright green. Used for positive outcomes, confirmations, and valid states.
+- **warning** `oklch(84.22% 0.1727 84.58deg)` — A high-lightness amber-gold. Used for caution messages and states requiring attention.
+- **error** `oklch(61.07% 0.2435 30.2deg)` — A saturated red. Used for destructive actions, validation errors, and critical alerts.
+
+> Note the Default palette leans warm — `primary` and `error` share the red end of the spectrum. When both appear together (e.g., a destructive primary action), disambiguate with iconography and text, not color alone.
 
 ### Data Visualization (Series)
 
-Chart colors derive from a single `series` base (`oklch(54.53% 0.2124 275.85deg)`) which generates six evenly-distributed hues (`series-a` through `series-f`). Each series produces five variants: base, bold, bolder, subtle, subtler. Override `--kendo-color-series` to re-hue the entire palette at once.
+Chart colors derive from a single `series` base (`oklch(69.85% 0.1923 27.19deg)`) which generates six evenly-distributed hues (`series-a` through `series-f`). Each series produces five variants: base, bold, bolder, subtle, subtler. Override `--kendo-color-series` to re-hue the entire palette at once.
 
 ## Typography
 
-**Inter** is the primary typeface — a geometric sans-serif optimized for UI clarity at small sizes with a tall x-height and open apertures. A monospace stack (SFMono-Regular, Menlo, Monaco, Consolas) is used for code, data, and technical content.
+The Default theme uses the **system UI font stack** (`system-ui, -apple-system, "Segoe UI", Roboto, …`) rather than a bundled webfont — text renders in the platform's native typeface for fast, familiar reading. A monospace stack (SFMono-Regular, Menlo, Monaco, Consolas) is used for code, data, and technical content.
 
 The type scale is intentionally compact, ranging from `0.75rem` (12px) to `1.25rem` (20px), suited for data-dense professional interfaces. Larger display sizes are left to the consumer's brand typography.
 
@@ -227,39 +232,39 @@ Never use arbitrary pixel values. If `spacing-4` is too small and `spacing-8` is
 
 ## Elevation & Depth
 
-Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are subtle and used only where elements genuinely float above the page. The system defines **5 elevation levels** as box-shadow tokens:
+Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are used only where elements genuinely float above the page. The Default theme uses **neutral black shadows** across **5 elevation levels**:
 
 | Level | Value | Use |
 |---|---|---|
-| 1 | `0 0 4px 1px rgba(56,66,80,.05), 0 4px 6px -2px rgba(56,66,80,.06)` | Cards, inputs, inline surfaces |
-| 2 | `0 -1px 2px 0 rgba(56,66,80,.03), 0 4px 6px -2px rgba(56,66,80,.02), 0 12px 16px -4px rgba(56,66,80,.08)` | Popovers, dropdown menus |
-| 3 | `0 -1px 2px 0 rgba(56,66,80,.03), 0 8px 10px -4px rgba(56,66,80,.04), 0 16px 20px -4px rgba(56,66,80,.08)` | Floating panels, tooltips |
-| 4 | `0 -1px 2px 0 rgba(56,66,80,.03), 0 12px 14px -4px rgba(56,66,80,.04), 0 18px 24px -5px rgba(56,66,80,.08)` | Drawers, side panels |
-| 5 | `0 -1px 2px 0 rgba(56,66,80,.03), 0 16px 18px -6px rgba(56,66,80,.06), 0 20px 28px -6px rgba(56,66,80,.08)` | Modals, dialogs |
+| 1 | `0 2px 3px rgba(0,0,0,.04)` | Cards, inputs, inline surfaces |
+| 2 | `0 4px 6px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.12)` | Popovers, dropdown menus |
+| 3 | `0 6px 8px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.12)` | Floating panels, tooltips |
+| 4 | `0 8px 10px rgba(0,0,0,.12), 0 4px 16px rgba(0,0,0,.12)` | Drawers, side panels |
+| 5 | `0 14px 16px rgba(0,0,0,.24), 0 4px 16px rgba(0,0,0,.12)` | Modals, dialogs |
 
-Shadows use a warm-cool gray base (`rgb(56,66,80)`) at very low opacity — this keeps them neutral on any surface color. Each level adds progressive layers for physical depth without visual heaviness.
+Shadows use pure black (`rgb(0,0,0)`) at low opacity — neutral on any surface color. Each level increases blur, spread, and opacity for progressive depth. (Meridian, by contrast, uses a warm-cool gray shadow base with layered `-y` offsets; this is one of the clearest visual differences between the two themes.)
 
 ## Shapes
 
-The border-radius system derives from a single **base value of `0.375rem` (6px)**. All radius tokens are computed as multipliers of this base, so adjusting `--kendo-border-radius-base` rescales every corner consistently.
+The border-radius system derives from a single **base value of `0.25rem` (4px)**. All radius tokens are computed as multipliers of this base, so adjusting `--kendo-border-radius-base` rescales every corner consistently. The Default theme's 4px base gives it slightly crisper corners than Meridian's 6px base.
 
 ### Scale
 
 | Token | Computed | Use |
 |---|---|---|
 | `none` | 0px | Sharp corners (tables, toolbars, dividers) |
-| `xs` | 0.125rem (2px) | Checkboxes, micro-elements |
-| `sm` | 0.25rem (4px) | Chips, tags, compact controls |
-| `md` | 0.375rem (6px) | Buttons, inputs, cards — the everyday default |
-| `lg` | 0.5rem (8px) | Menus, dialog corners |
-| `xl` | 0.75rem (12px) | Modal containers, large cards |
-| `xxl` | 1rem (16px) | Feature panels, hero sections |
-| `xxxl` | 1.5rem (24px) | Full-bleed sections |
+| `xs` | 0.0625rem (1px) | Micro-elements |
+| `sm` | 0.125rem (2px) | Checkboxes, compact controls |
+| `md` | 0.25rem (4px) | Buttons, inputs, cards — the everyday default |
+| `lg` | 0.375rem (6px) | Menus, dialog corners |
+| `xl` | 0.5rem (8px) | Modal containers, large cards |
+| `xxl` | 0.75rem (12px) | Feature panels, hero sections |
+| `xxxl` | 1rem (16px) | Full-bleed sections |
 | `full` | 9999px | Pills, avatars, circular elements |
 
 ### Guidelines
 
-- **Default:** Components use `md` (6px) unless they have a specific reason for a different radius.
+- **Default:** Components use `md` (4px) unless they have a specific reason for a different radius.
 - **Consistency:** Keep one radius family per context. Don't mix sharp and rounded corners in the same toolbar or card group.
 - **Nesting:** Inner elements should use a radius smaller than or equal to their container.
 
@@ -345,11 +350,11 @@ All sizes derive from a 16px base (`--kendo-icon-size`). Change the base to resc
 - Do keep one border-radius family per view context.
 - Do honor `prefers-reduced-motion` — all motion tokens already respect it automatically.
 - Do ensure focus indicators are always visible and never color-only.
-- Do pair state colors with icons or text labels — never signal state with color alone.
+- Do pair state colors with icons or text labels — never signal state with color alone (especially important here, where `primary` and `error` are both warm reds).
 - Don't mix sharp (0px) and rounded corners on elements at the same hierarchy level.
 - Don't use `surface` and `app-surface` interchangeably — they serve different elevation roles.
 - Don't override derived color variants (hover, active, etc.) unless you need precise control — let the relative oklch system compute them.
 - Don't use elevation shadows on flat elements (e.g., inline text, list items) — shadows signal floating layers only.
 - Don't skip spacing steps for alignment — if `spacing-4` is too small and `spacing-8` is too large, use `spacing-6`, not an arbitrary value.
 - Don't rely on an icon alone for meaning — always pair with a text label.
-
+- Don't treat this as the recommended starting point for new projects — new work should adopt **Meridian**. Use this spec to keep existing Default-theme applications consistent.
