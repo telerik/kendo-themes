@@ -1,11 +1,29 @@
 ---
 name: kendo-design
-description: Apply the Kendo Design System to any project — provides design tokens, visual guidelines, spacing rhythm, and accessibility guardrails for data-rich professional interfaces.
+description: Apply the Kendo Design System to any project — provides design tokens, visual guidelines, spacing rhythm, and accessibility guardrails for data-rich professional interfaces. Invoke as `/kendo-design [init|audit|modernize|generate]`.
+user-invocable: true
 ---
 
 # Kendo Design System
 
-This skill provides the complete Kendo Design System specification.
+This skill provides the complete Kendo Design System specification. It works two ways:
+
+- **Passively** — auto-loaded whenever you generate or review UI. In that case ignore the routing below and go straight to [Spec resolution](#spec-resolution-precedence) and [How to use](#how-to-use).
+- **Explicitly** — invoked as `/kendo-design <subcommand> [target]`. Route on the first word of the arguments (see below).
+
+## Invocation routing
+
+When invoked with an explicit subcommand, do only that flow:
+
+| Subcommand | Action |
+| --- | --- |
+| `init` | Set up the project — read `references/init.md` and follow it end to end. Generates a tailored `DESIGN.md` at the project root. |
+| `audit` | Review code for Kendo DS compliance — hand off to the **`ds-audit`** agent. |
+| `modernize` | Refactor code to align with the Kendo DS — hand off to the **`ds-modernize`** agent. |
+| `generate` | Build new UI from the Kendo DS — hand off to the **`ds-generate`** agent. |
+| _(none / unrecognized)_ | Treat the arguments as a target and apply the spec to it using [How to use](#how-to-use). |
+
+For `audit`/`modernize`/`generate`, delegate to the named agent (it carries the full persona and multi-turn workflow) rather than inlining the flow here. If agent delegation is unavailable, fall back to applying the spec directly per [How to use](#how-to-use).
 
 ## Spec resolution (precedence)
 
