@@ -262,6 +262,84 @@ This framing confirms: each DESIGN.md variant (meridian, material, bootstrap, fl
 - Do we provide a CLI/script for consumers to generate a custom-theme DESIGN.md from a base?
 - What's the minimum viable DESIGN.md body content for first validation?
 
+
 ---
 
-*Next: flesh out multi-theme DESIGN.md generation strategy, or validate current draft end-to-end.*
+## Session 4 — 2026-07-16: Command Namespacing & Skill→Agent Delegation
+
+### Key Question
+
+Should DS operations be exposed as separate top-level slash commands (`/ds-init`, `/ds-audit`, …) or namespaced under a single Impeccable-style entry point (`/kendo-design <subcommand>`)?
+
+### Research: How Impeccable Does It
+
+- Impeccable = one `user-invocable: true` skill named `impeccable` + ~23 sub-commands passed as **free-text arguments** (`/impeccable init`, `/impeccable audit`). The skill name IS the namespace.
+- It splits concerns: PRODUCT.md (strategic) + DESIGN.md (visual tokens); has `init` (interview) and `document` (scan vs seed) flows.
+
+### CLI Behavior — Verified Against the Bundle
+
+Checked `@github/copilot` `app.js` directly (not guessed):
+
+| Finding | Evidence |
+|---|---|
+| Slash name = filename/skill-name minus `.md`, validated `^[a-zA-Z0-9][a-zA-Z0-9._\- ]*$`, ≤64 chars | `das()` fn |
+| **No plugin namespace is ever prepended** to command names | — |
+| `user-invocable` and `disable-model-invocation` are **independent** flags | a skill can auto-load AND be user-invocable |
+| Trailing text after a slash command is **free text** passed to the body | body routes on keywords |
+| **`argument-hint` is NOT parsed by Copilot CLI** (zero matches) — it's a Claude Code convention | grep of bundle |
+
+### Autocomplete Tradeoff (settled)
+
+- `/kendo-design` (the skill name) **autocompletes**; the subcommand (`init`) does **not** — it's typed from memory. No per-command arg schema exists, and `argument-hint` is ignored by Copilot CLI.
+- Discrete `/ds-*` commands would each fully autocomplete, but at the cost of a cluttered top-level namespace.
+- **Chose namespacing** (`/kendo-design <sub>`) for intuitive DX; accepted the no-subcommand-autocomplete cost. Impeccable makes the same tradeoff.
+
+### Architecture (implemented & verified)
+
+One entry point, `/kendo-design <subcommand>`:
+
+| Subcommand | How it runs |
+|---|---|
+| `init` | **Inline flow** — skill reads `references/init.md`, runs scan/seed, writes project-root `DESIGN.md` |
+| `audit` | **Delegates to `ds-audit` subagent** |
+| `modernize` | Delegates to `ds-modernize` subagent |
+| `generate` | Delegates to `ds-generate` subagent |
+| _(passive / no subcommand)_ | Auto-loads and enforces the spec when writing/reviewing UI |
+
+- `skills/kendo-design/SKILL.md` → `user-invocable: true` + compact routing table (passive behavior unchanged).
+- `commands/ds-init.md` → moved to `skills/kendo-design/references/init.md` (progressive disclosure). `commands/` dir dropped.
+
+### THE key finding: skill→agent delegation works natively
+
+Tested `/kendo-design audit` headless (`--yolo`) against a mock project with deliberate violations. Output showed the runtime spawn a namespaced subagent:
+
+```
+● Read (Kendo-design:ds-audit agent — Kendo DS compliance audit)
+  └ Completed
+```
+
+The `ds-audit` agent ran its full persona (caught contrast fails, off-grid spacing `13/27/7/5/9px`, off-scale type, hard-coded colors) and returned a structured report; the main session condensed it.
+
+**Implication:** we keep BOTH the tidy namespace AND the rich agent personas — no need to fold agent capabilities into the skill or flatten to a simpler orchestration. `modernize`/`generate` use the identical delegation path.
+
+`/kendo-design init` was also verified end-to-end: scan mode detected Meridian+React, **preserved the project's committed brand color (`#1a73e8`) and `Inter` font**, resolved the rest to Meridian tokens.
+
+### Decisions Made
+
+| # | Decision | Rationale |
+|---|----------|-----------|
+| 1 | Namespace under `/kendo-design <sub>` (retire `/ds-init`) | Intuitive, uncluttered DX; Impeccable-proven pattern |
+| 2 | Skill is `user-invocable: true` AND still auto-loads | Independent flags; no downside |
+| 3 | `init` runs inline; audit/modernize/generate delegate to agents | Verified delegation fires — personas preserved |
+| 4 | `argument-hint` not used | Copilot CLI ignores it |
+| 5 | Accept no subcommand autocomplete | Cost of namespacing; matches Impeccable |
+
+### Open Questions (from this session)
+
+- Do we keep thin `/ds-*` alias commands for power-user autocomplete, or fully retire them? (Currently retired.)
+- Should `init`'s seed-mode interview be shortened further, or is the current 3-question set right?
+- Same delegation confirmed for `audit` — spot-check `modernize`/`generate` before shipping, or trust the shared path?
+
+---
+
+*Next: exercise `modernize`/`generate` on a sample app, or finalize the multi-theme DESIGN.md build.*
