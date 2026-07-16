@@ -110,7 +110,7 @@ echo "╚═══════════════════════�
 echo ""
 
 # ── Ensure DESIGN.md is in target project (fallback if hook doesn't fire) ────
-DESIGN_SRC="$PLUGIN_DIR/skills/kendo-design/DESIGN.md"
+DESIGN_SRC="$PLUGIN_DIR/skills/kendo-design/references/DESIGN.md"
 DESIGN_PLACED=false
 if [ -f "$DESIGN_SRC" ] && [ ! -f "$TARGET_REPO/DESIGN.md" ]; then
     cp "$DESIGN_SRC" "$TARGET_REPO/DESIGN.md"

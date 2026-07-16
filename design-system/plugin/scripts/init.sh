@@ -8,7 +8,7 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PLUGIN_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-DESIGN_SRC="$PLUGIN_DIR/skills/kendo-design/DESIGN.md"
+DESIGN_SRC="$PLUGIN_DIR/skills/kendo-design/references/DESIGN.md"
 
 # Read session info from stdin (JSON) to get the working directory
 # Fall back to PWD if no input available

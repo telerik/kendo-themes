@@ -1,7 +1,7 @@
 {
   "name": "kendo-design",
   "description": "The Kendo Design System — a complete visual identity for data-rich professional interfaces. Provides design tokens, typography, spacing, color system, elevation, and guardrails that guide AI agents to generate consistent, accessible UI.",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": {
     "name": "Progress Software",
     "url": "https://www.telerik.com/design-system/docs"

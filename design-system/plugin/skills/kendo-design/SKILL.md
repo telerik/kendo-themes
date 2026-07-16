@@ -10,7 +10,7 @@ This skill provides the complete Kendo Design System specification.
 ## Spec resolution (precedence)
 
 1. **Project-local `DESIGN.md`** — if a `DESIGN.md` exists in the project root, treat it as the authoritative spec. It may override, extend, or remove rules from the plugin defaults.
-2. **Plugin-bundled spec** — otherwise, use the `DESIGN.md` located alongside this file.
+2. **Plugin-bundled spec** — otherwise, use the `DESIGN.md` in the `references/` folder alongside this file (`references/DESIGN.md`).
 
 When a project-local DESIGN.md exists, it has **final say**. The user may have customized tokens (brand colors, preferred font, tighter spacing) and those choices override the defaults.
 
@@ -23,7 +23,7 @@ When a project-local DESIGN.md exists, it has **final say**. The user may have c
 
 ## How to use
 
-Read the resolved DESIGN.md (project-local first, plugin-bundled as fallback). The YAML frontmatter contains machine-readable token values. The markdown body explains rationale and constraints.
+Read the resolved DESIGN.md (project-local `./DESIGN.md` first, plugin-bundled `references/DESIGN.md` as fallback). The YAML frontmatter contains machine-readable token values. The markdown body explains rationale and constraints.
 
 When reviewing or generating UI code, enforce **design principles** (Category B) — not mere token syntax:
 1. Spacing lands on the 4px rhythm grid — the variable name doesn't matter, the value does
